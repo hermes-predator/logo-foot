@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { Play } from 'lucide-react';
 
 interface GalleryItem {
   id: number;
@@ -31,8 +30,7 @@ const galleryItems: GalleryItem[] = [
 ];
 
 const ProductGallery = () => {
-  const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -40,41 +38,30 @@ const ProductGallery = () => {
         {galleryItems.map((item) => (
           <div
             key={item.id}
-            className="relative group cursor-pointer rounded-lg overflow-hidden"
-            onClick={() => {
-              setActiveItem(item);
-              setIsPlaying(true);
-            }}
+            className="relative rounded-lg overflow-hidden h-64"
+            onMouseEnter={() => setHoveredItem(item.id)}
+            onMouseLeave={() => setHoveredItem(null)}
           >
-            <img
-              src={item.imageUrl}
-              alt={item.title}
-              className="w-full h-64 object-cover image-hover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <Play className="w-12 h-12 text-white" />
-            </div>
+            {hoveredItem === item.id ? (
+              <video
+                src={item.videoUrl}
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <img
+                src={item.imageUrl}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+            )}
             <p className="text-center mt-2 text-sm text-gray-600">{item.title}</p>
           </div>
         ))}
       </div>
-
-      {activeItem && isPlaying && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center fade-in"
-             onClick={() => {
-               setActiveItem(null);
-               setIsPlaying(false);
-             }}>
-          <div className="relative w-full max-w-4xl mx-4">
-            <video
-              className="w-full rounded-lg"
-              controls
-              autoPlay
-              src={activeItem.videoUrl}
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

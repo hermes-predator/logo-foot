@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -38,7 +39,7 @@ const ProductGallery = () => {
         {galleryItems.map((item) => (
           <div
             key={item.id}
-            className="relative rounded-lg overflow-hidden h-64"
+            className="relative aspect-square rounded-lg overflow-hidden"
             onMouseEnter={() => setHoveredItem(item.id)}
             onMouseLeave={() => setHoveredItem(null)}
           >

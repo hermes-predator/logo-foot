@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Play } from 'lucide-react';
 
 interface GalleryItem {
   id: number;
@@ -52,11 +52,16 @@ const ProductGallery = () => {
                 playsInline
               />
             ) : (
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+              <>
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute bottom-2 right-2">
+                  <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                </div>
+              </>
             )}
             <p className="text-center mt-2 text-sm text-gray-600">{item.title}</p>
           </div>

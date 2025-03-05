@@ -91,7 +91,7 @@ const PaymentSection = () => {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12 text-center">
-      <h2 className="text-3xl font-bold mb-6">Prêt à commencer ?</h2>
+      <h2 className="text-3xl font-bold mb-6">Prêt à tout recevoir ?</h2>
       <p className="text-gray-600 mb-8">
         Accédez instantanément à ce contenu digital de haute valeur après paiement
       </p>

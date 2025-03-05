@@ -31,7 +31,7 @@ const Index = () => {
               <span className="text-sm font-medium text-purple-900">Collection Premium</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4">
               Logos des clubs de football
             </h1>
 

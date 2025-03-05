@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -61,69 +60,51 @@ const PaymentSection = () => {
     }
 
     setIsProcessing(true);
-    const amount = 20.00;
-    const checkoutId = 'football-pack-' + Date.now();
-
-    try {
-      window.SumUpCard.mount({
-        id: 'sumup-card',
-        amount: amount,
-        currency: 'EUR',
-        locale: 'fr-FR',
-        publicKey: SUMUP_PUBLIC_KEY,
-        merchantCode: MERCHANT_CODE,
-        checkoutId: checkoutId,
-        showAmount: true,
-        description: 'Pack Football Resources',
-        paymentDetails: {
-          email: '',
-          firstName: '',
-          lastName: ''
-        },
-        onResponse: (type, body) => {
-          console.log("Réponse SumUp:", type, body);
-          setIsProcessing(false);
-          
-          switch (type) {
-            case 'success':
-              toast({
-                title: "Paiement réussi !",
-                description: "Votre téléchargement va commencer automatiquement.",
-              });
-              handleDownload();
-              break;
-            case 'error':
-              toast({
-                title: "Erreur de paiement",
-                description: body.message || "Une erreur est survenue lors du paiement.",
-                variant: "destructive"
-              });
-              break;
-            case 'abort':
-              toast({
-                title: "Paiement annulé",
-                description: "Vous avez annulé le paiement.",
-                variant: "destructive"
-              });
-              break;
-            case 'sent':
-              console.log("Informations de carte envoyées", body);
-              break;
-            default:
-              console.log("Type de réponse non géré:", type);
-              break;
-          }
-        },
-      });
-    } catch (error) {
-      console.error("Erreur lors du montage de SumUp:", error);
-      setIsProcessing(false);
-      toast({
-        title: "Erreur",
-        description: "Une erreur est survenue lors de l'initialisation du paiement.",
-        variant: "destructive"
-      });
-    }
+    
+    window.SumUpCard.mount({
+      id: 'sumup-card',
+      amount: 20.00,
+      currency: 'EUR',
+      locale: 'fr-FR',
+      publicKey: SUMUP_PUBLIC_KEY,
+      merchantCode: MERCHANT_CODE,
+      showAmount: true,
+      description: 'Pack Football Resources',
+      onResponse: (type, body) => {
+        console.log("Réponse SumUp:", type, body);
+        setIsProcessing(false);
+        
+        switch (type) {
+          case 'success':
+            toast({
+              title: "Paiement réussi !",
+              description: "Votre téléchargement va commencer automatiquement.",
+            });
+            handleDownload();
+            break;
+          case 'error':
+            toast({
+              title: "Erreur de paiement",
+              description: body.message || "Une erreur est survenue lors du paiement.",
+              variant: "destructive"
+            });
+            break;
+          case 'abort':
+            toast({
+              title: "Paiement annulé",
+              description: "Vous avez annulé le paiement.",
+              variant: "destructive"
+            });
+            break;
+          case 'sent':
+            console.log("Informations de carte envoyées", body);
+            break;
+          default:
+            console.log("Type de réponse non géré:", type);
+            break;
+        }
+      },
+    });
   };
 
   return (

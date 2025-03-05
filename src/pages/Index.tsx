@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -19,7 +20,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8">
               Logos des clubs de football et bien plus
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700">

@@ -18,7 +18,7 @@ declare global {
   }
 }
 
-const SUMUP_PUBLIC_KEY = 'VOTRE_CLE_API_ICI';
+const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
 
 const PaymentSection = () => {
   const handleDownload = () => {

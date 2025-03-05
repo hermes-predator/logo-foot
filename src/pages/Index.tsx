@@ -11,7 +11,7 @@ const Index = () => {
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Votre Produit Digital
+              ⦗𝐗. 𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Une description captivante de votre produit digital et de sa valeur

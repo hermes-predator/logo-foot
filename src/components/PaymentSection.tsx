@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -13,6 +14,10 @@ declare global {
         locale: string;
         onResponse: (type: string, body: any) => void;
         publicKey: string;
+        checkoutId?: string;
+        merchantCode?: string;
+        showAmount?: boolean;
+        description?: string;
       }): void;
     };
   }
@@ -56,6 +61,8 @@ const PaymentSection = () => {
         currency: 'EUR',
         locale: 'fr-FR',
         publicKey: SUMUP_PUBLIC_KEY,
+        showAmount: true,
+        description: 'Pack Football Resources',
         onResponse: (type, body) => {
           console.log("Réponse SumUp:", type, body);
           switch (type) {

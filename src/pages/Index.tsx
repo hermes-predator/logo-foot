@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -85,8 +84,9 @@ const Index = () => {
                       </div>
 
                       <div className="pt-4 border-t">
-                        <p className="text-base">✚ Nos ressources sont uniformes, nommées et triées.</p>
-                        <p className="text-base">✚ Nos ressources ont un cadrage parfait.</p>
+                        <p className="text-base">✚ Nos ressources sont cadrées, uniformes, nommées et déjà triées.</p>
+                        <p className="text-base">✚ Couverture totale du football pour vos projets WEB.</p>
+                        <p className="text-base">✚ Directement stockable sur ordinateur ou cloud privé.</p>
                       </div>
                     </div>
                   </DialogDescription>

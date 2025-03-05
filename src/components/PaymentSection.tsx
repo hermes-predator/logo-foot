@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -12,10 +13,13 @@ declare global {
         currency: string;
         locale: string;
         onResponse: (type: string, body: any) => void;
+        publicKey: string; // Ajout de la clé API
       }): void;
     };
   }
 }
+
+const SUMUP_PUBLIC_KEY = 'VOTRE_CLE_API_ICI'; // Remplacez par votre clé API SumUp
 
 const PaymentSection = () => {
   const handlePayment = () => {
@@ -28,14 +32,14 @@ const PaymentSection = () => {
       return;
     }
 
-    // Montant en euros (par exemple 49.99€)
     const amount = 49.99;
 
     window.SumUpCard.mount({
-      id: 'sumup-card', // L'ID de l'élément où le formulaire de carte sera monté
+      id: 'sumup-card',
       amount: amount,
       currency: 'EUR',
       locale: 'fr-FR',
+      publicKey: SUMUP_PUBLIC_KEY, // Utilisation de la clé API
       onResponse: (type, body) => {
         switch (type) {
           case 'success':

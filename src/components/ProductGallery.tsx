@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -12,122 +11,122 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-    videoUrl: "https://example.com/video1.mp4",
+    imageUrl: "/images/image1.jpg",
+    videoUrl: "/videos/video1.mov",
     title: "Aperçu 1"
   },
   {
     id: 2,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    videoUrl: "https://example.com/video2.mp4",
+    imageUrl: "/images/image2.jpg",
+    videoUrl: "/videos/video2.mov",
     title: "Aperçu 2"
   },
   {
     id: 3,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    videoUrl: "https://example.com/video3.mp4",
+    imageUrl: "/images/image3.jpg",
+    videoUrl: "/videos/video3.mov",
     title: "Aperçu 3"
   },
   {
     id: 4,
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    videoUrl: "https://example.com/video4.mp4",
+    imageUrl: "/images/image4.jpg",
+    videoUrl: "/videos/video4.mov",
     title: "Aperçu 4"
   },
   {
     id: 5,
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    videoUrl: "https://example.com/video5.mp4",
+    imageUrl: "/images/image5.jpg",
+    videoUrl: "/videos/video5.mov",
     title: "Aperçu 5"
   },
   {
     id: 6,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-    videoUrl: "https://example.com/video6.mp4",
+    imageUrl: "/images/image6.jpg",
+    videoUrl: "/videos/video6.mov",
     title: "Aperçu 6"
   },
   {
     id: 7,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    videoUrl: "https://example.com/video7.mp4",
+    imageUrl: "/images/image7.jpg",
+    videoUrl: "/videos/video7.mov",
     title: "Aperçu 7"
   },
   {
     id: 8,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    videoUrl: "https://example.com/video8.mp4",
+    imageUrl: "/images/image8.jpg",
+    videoUrl: "/videos/video8.mov",
     title: "Aperçu 8"
   },
   {
     id: 9,
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    videoUrl: "https://example.com/video9.mp4",
+    imageUrl: "/images/image9.jpg",
+    videoUrl: "/videos/video9.mov",
     title: "Aperçu 9"
   },
   {
     id: 10,
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    videoUrl: "https://example.com/video10.mp4",
+    imageUrl: "/images/image10.jpg",
+    videoUrl: "/videos/video10.mov",
     title: "Aperçu 10"
   },
   {
     id: 11,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-    videoUrl: "https://example.com/video11.mp4",
+    imageUrl: "/images/image11.jpg",
+    videoUrl: "/videos/video11.mov",
     title: "Aperçu 11"
   },
   {
     id: 12,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    videoUrl: "https://example.com/video12.mp4",
+    imageUrl: "/images/image12.jpg",
+    videoUrl: "/videos/video12.mov",
     title: "Aperçu 12"
   },
   {
     id: 13,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    videoUrl: "https://example.com/video13.mp4",
+    imageUrl: "/images/image13.jpg",
+    videoUrl: "/videos/video13.mov",
     title: "Aperçu 13"
   },
   {
     id: 14,
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    videoUrl: "https://example.com/video14.mp4",
+    imageUrl: "/images/image14.jpg",
+    videoUrl: "/videos/video14.mov",
     title: "Aperçu 14"
   },
   {
     id: 15,
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    videoUrl: "https://example.com/video15.mp4",
+    imageUrl: "/images/image15.jpg",
+    videoUrl: "/videos/video15.mov",
     title: "Aperçu 15"
   },
   {
     id: 16,
-    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-    videoUrl: "https://example.com/video16.mp4",
+    imageUrl: "/images/image16.jpg",
+    videoUrl: "/videos/video16.mov",
     title: "Aperçu 16"
   },
   {
     id: 17,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    videoUrl: "https://example.com/video17.mp4",
+    imageUrl: "/images/image17.jpg",
+    videoUrl: "/videos/video17.mov",
     title: "Aperçu 17"
   },
   {
     id: 18,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    videoUrl: "https://example.com/video18.mp4",
+    imageUrl: "/images/image18.jpg",
+    videoUrl: "/videos/video18.mov",
     title: "Aperçu 18"
   },
   {
     id: 19,
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    videoUrl: "https://example.com/video19.mp4",
+    imageUrl: "/images/image19.jpg",
+    videoUrl: "/videos/video19.mov",
     title: "Aperçu 19"
   },
   {
     id: 20,
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    videoUrl: "https://example.com/video20.mp4",
+    imageUrl: "/images/image20.jpg",
+    videoUrl: "/videos/video20.mov",
     title: "Aperçu 20"
   }
 ];

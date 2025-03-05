@@ -1,6 +1,6 @@
 
-import { serve } from 'https://deno.land/std@0.168.0/http/server.ts'
-import { corsHeaders } from '../_shared/cors.ts'
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { corsHeaders } from "../_shared/cors.ts"
 
 const SUMUP_API_URL = 'https://api.sumup.com/v0.1'
 
@@ -11,24 +11,32 @@ serve(async (req) => {
 
   try {
     const { amount, currency, description } = await req.json()
+    const sumupKey = Deno.env.get('SUMUP_SECRET_KEY')
 
-    // Créer un checkout SumUp
+    if (!sumupKey) {
+      throw new Error('La clé API SumUp n\'est pas configurée')
+    }
+
+    // Création du checkout SumUp
     const checkoutResponse = await fetch(`${SUMUP_API_URL}/checkouts`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${Deno.env.get('SUMUP_SECRET_KEY')}`,
+        'Authorization': `Bearer ${sumupKey}`,
       },
       body: JSON.stringify({
         checkout_reference: `order_${Date.now()}`,
         amount,
         currency,
         description,
+        return_url: `${req.headers.get('origin') || ''}/payment-success`,
+        merchant_code: Deno.env.get('SUMUP_MERCHANT_CODE'),
       }),
     })
 
     if (!checkoutResponse.ok) {
-      throw new Error('Erreur lors de la création du checkout SumUp')
+      const errorData = await checkoutResponse.json()
+      throw new Error(errorData.message || 'Erreur lors de la création du checkout SumUp')
     }
 
     const checkoutData = await checkoutResponse.json()
@@ -36,21 +44,16 @@ serve(async (req) => {
     return new Response(
       JSON.stringify(checkoutData),
       {
-        headers: {
-          ...corsHeaders,
-          'Content-Type': 'application/json',
-        },
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         status: 200,
       },
     )
   } catch (error) {
+    console.error('Erreur de paiement:', error)
     return new Response(
       JSON.stringify({ error: error.message }),
       {
-        headers: {
-          ...corsHeaders,
-          'Content-Type': 'application/json',
-        },
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         status: 400,
       },
     )

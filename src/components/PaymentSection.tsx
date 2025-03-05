@@ -1,8 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
-import { toast } from './ui/use-toast';
+import { toast } from '@/hooks/use-toast';
 
 declare global {
   interface Window {
@@ -22,9 +21,9 @@ declare global {
   }
 }
 
-const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
-const MERCHANT_CODE = 'MLMLFVAH';
-const SUPABASE_FUNCTION_URL = 'https://votre-projet.supabase.co/functions/v1/handle-payment';
+const SUPABASE_FUNCTION_URL = 'https://votre-projet.supabase.co/functions/v1/handle-payment'
+const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD'
+const MERCHANT_CODE = 'MLMLFVAH'
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -57,7 +56,6 @@ const PaymentSection = () => {
     setIsProcessing(true);
 
     try {
-      // Initialiser le paiement via notre fonction edge Supabase
       const response = await fetch(SUPABASE_FUNCTION_URL, {
         method: 'POST',
         headers: {
@@ -86,7 +84,6 @@ const PaymentSection = () => {
         showAmount: true,
         description: 'Pack Football Resources',
         onResponse: (type, body) => {
-          console.log("Réponse SumUp:", type, body);
           setIsProcessing(false);
           
           switch (type) {
@@ -116,7 +113,6 @@ const PaymentSection = () => {
               break;
             default:
               console.log("Type de réponse non géré:", type);
-              break;
           }
         },
       });

@@ -10,7 +10,7 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = Array.from({ length: 60 }, (_, index) => ({
   id: index + 1,
-  imageUrl: `/images/image${index + 1}.jpg`,
+  imageUrl: `https://placehold.co/400x400?text=Logo+${index + 1}`,
   videoUrl: `/videos/video${index + 1}.mov`,
   title: `Aperçu ${index + 1}`
 }));

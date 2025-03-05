@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -49,11 +50,11 @@ const Index = () => {
                 <span className="text-sm font-medium text-gray-700">Ressources Vérifiées</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
-                <Lock className="w-5 h-5 text-blue-600" />
+                <Lock className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
-                <CheckCircle2 className="w-5 h-5 text-purple-600" />
+                <CheckCircle2 className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
               </div>
             </div>

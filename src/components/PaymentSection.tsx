@@ -18,6 +18,11 @@ declare global {
         merchantCode?: string;
         showAmount?: boolean;
         description?: string;
+        paymentDetails?: {
+          email?: string;
+          firstName?: string;
+          lastName?: string;
+        };
       }): void;
     };
   }
@@ -63,8 +68,13 @@ const PaymentSection = () => {
         publicKey: SUMUP_PUBLIC_KEY,
         showAmount: true,
         description: 'Pack Football Resources',
-        checkoutId: 'football-pack-' + Date.now(), // Ajout d'un ID unique
-        merchantCode: 'FRONTCLOUD', // Ajout du code marchand
+        checkoutId: 'football-pack-' + Date.now(),
+        merchantCode: 'FRONTCLOUD',
+        paymentDetails: {
+          email: 'customer@example.com',
+          firstName: 'Customer',
+          lastName: 'Name'
+        },
         onResponse: (type, body) => {
           console.log("Réponse SumUp:", type, body);
           switch (type) {

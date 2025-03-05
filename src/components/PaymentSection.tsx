@@ -5,8 +5,9 @@ import { Button } from './ui/button';
 
 const PaymentSection = () => {
   const handlePayment = () => {
-    // Rediriger vers le lien de paiement SumUp
-    window.location.href = 'https://sumup.link/football-resources';
+    // Rediriger vers le lien de paiement SumUp avec l'URL de retour
+    const returnUrl = `${window.location.origin}/payment-success`;
+    window.location.href = `https://sumup.link/football-resources?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (

@@ -2,11 +2,61 @@
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
+import { toast } from './ui/use-toast';
+
+declare global {
+  interface Window {
+    SumUpCard?: {
+      mount: ({
+        id,
+        amount,
+        currency,
+        locale,
+        onResponse: (type: string, body: any) => void,
+      }) => void;
+    };
+  }
+}
 
 const PaymentSection = () => {
   const handlePayment = () => {
-    // Intégration SumUp à implémenter
-    console.log('Initialisation du paiement SumUp');
+    if (!window.SumUpCard) {
+      toast({
+        title: "Erreur",
+        description: "Le système de paiement n'est pas chargé. Veuillez réessayer.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    // Montant en euros (par exemple 49.99€)
+    const amount = 49.99;
+
+    window.SumUpCard.mount({
+      id: 'sumup-card', // L'ID de l'élément où le formulaire de carte sera monté
+      amount: amount,
+      currency: 'EUR',
+      locale: 'fr-FR',
+      onResponse: (type, body) => {
+        switch (type) {
+          case 'success':
+            toast({
+              title: "Paiement réussi !",
+              description: "Merci pour votre achat.",
+            });
+            break;
+          case 'error':
+            toast({
+              title: "Erreur de paiement",
+              description: body.message || "Une erreur est survenue lors du paiement.",
+              variant: "destructive"
+            });
+            break;
+          default:
+            break;
+        }
+      },
+    });
   };
 
   return (
@@ -15,16 +65,19 @@ const PaymentSection = () => {
       <p className="text-gray-600 mb-8">
         Accédez instantanément à votre contenu digital après le paiement
       </p>
-      <Button
-        onClick={handlePayment}
-        className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-      >
-        <ShoppingCart className="mr-2 h-5 w-5" />
-        Acheter maintenant
-      </Button>
-      <p className="mt-4 text-sm text-gray-500">
-        Paiement sécurisé via SumUp
-      </p>
+      <div className="flex flex-col items-center gap-6">
+        <Button
+          onClick={handlePayment}
+          className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          <ShoppingCart className="mr-2 h-5 w-5" />
+          Payer {49.99}€
+        </Button>
+        <div id="sumup-card" className="w-full max-w-md"></div>
+        <p className="mt-4 text-sm text-gray-500">
+          Paiement sécurisé via SumUp
+        </p>
+      </div>
     </div>
   );
 };

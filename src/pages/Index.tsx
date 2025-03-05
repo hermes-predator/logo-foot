@@ -35,7 +35,7 @@ const Index = () => {
               Logos des clubs de football
             </h1>
 
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 italic">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 italic mt-6">
               ⦗FRONT-CLOUD⦘~ Football.zip
             </h2>
 

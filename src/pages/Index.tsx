@@ -6,9 +6,9 @@ import PaymentSection from '../components/PaymentSection';
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <main>
+      <main className="container mx-auto">
         {/* Hero Section */}
-        <section className="py-20 px-4">
+        <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩

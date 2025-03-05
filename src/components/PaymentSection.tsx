@@ -63,6 +63,8 @@ const PaymentSection = () => {
         publicKey: SUMUP_PUBLIC_KEY,
         showAmount: true,
         description: 'Pack Football Resources',
+        checkoutId: 'football-pack-' + Date.now(), // Ajout d'un ID unique
+        merchantCode: 'FRONTCLOUD', // Ajout du code marchand
         onResponse: (type, body) => {
           console.log("Réponse SumUp:", type, body);
           switch (type) {

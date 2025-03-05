@@ -14,7 +14,7 @@ const Index = () => {
               ⦗FRONT-CLOUD⦘~ Football.zip
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Le ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 est un fichier précieux à ajouter à votre patrimoine numérique si vous cherchez à obtenir TOUTES LES RESSOURCES DU FOOTBALL en un coup.
+              Ce fichier précieux vous permet d'obtenir une couverture complète des RESSOURCES DU FOOTBALL en un coup.
             </p>
             <div className="max-w-2xl mx-auto text-left space-y-2">
               <h3 className="text-base font-semibold mb-3">Important :</h3>

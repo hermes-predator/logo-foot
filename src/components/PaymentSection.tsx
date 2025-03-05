@@ -1,5 +1,6 @@
-import React from 'react';
-import { ShoppingCart, Download } from 'lucide-react';
+
+import React, { useEffect } from 'react';
+import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from './ui/use-toast';
 
@@ -21,6 +22,13 @@ declare global {
 const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
 
 const PaymentSection = () => {
+  useEffect(() => {
+    // Vérifie si le script SumUp est chargé
+    if (!window.SumUpCard) {
+      console.error("SumUp SDK n'est pas chargé");
+    }
+  }, []);
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/football-resources.zip';
@@ -31,6 +39,7 @@ const PaymentSection = () => {
   };
 
   const handlePayment = () => {
+    console.log("Tentative de paiement...");
     if (!window.SumUpCard) {
       toast({
         title: "Erreur",
@@ -42,33 +51,43 @@ const PaymentSection = () => {
 
     const amount = 49.99;
 
-    window.SumUpCard.mount({
-      id: 'sumup-card',
-      amount: amount,
-      currency: 'EUR',
-      locale: 'fr-FR',
-      publicKey: SUMUP_PUBLIC_KEY,
-      onResponse: (type, body) => {
-        switch (type) {
-          case 'success':
-            toast({
-              title: "Paiement réussi !",
-              description: "Votre téléchargement va commencer automatiquement.",
-            });
-            handleDownload();
-            break;
-          case 'error':
-            toast({
-              title: "Erreur de paiement",
-              description: body.message || "Une erreur est survenue lors du paiement.",
-              variant: "destructive"
-            });
-            break;
-          default:
-            break;
-        }
-      },
-    });
+    try {
+      window.SumUpCard.mount({
+        id: 'sumup-card',
+        amount: amount,
+        currency: 'EUR',
+        locale: 'fr-FR',
+        publicKey: SUMUP_PUBLIC_KEY,
+        onResponse: (type, body) => {
+          console.log("Réponse SumUp:", type, body);
+          switch (type) {
+            case 'success':
+              toast({
+                title: "Paiement réussi !",
+                description: "Votre téléchargement va commencer automatiquement.",
+              });
+              handleDownload();
+              break;
+            case 'error':
+              toast({
+                title: "Erreur de paiement",
+                description: body.message || "Une erreur est survenue lors du paiement.",
+                variant: "destructive"
+              });
+              break;
+            default:
+              break;
+          }
+        },
+      });
+    } catch (error) {
+      console.error("Erreur lors du montage de SumUp:", error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'initialisation du paiement.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
@@ -95,3 +114,4 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
+

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -94,7 +93,7 @@ const PaymentSection = () => {
     <div className="max-w-2xl mx-auto px-4 py-12 text-center">
       <h2 className="text-3xl font-bold mb-6">Prêt à commencer ?</h2>
       <p className="text-gray-600 mb-8">
-        Accédez instantanément à votre contenu digital après le paiement
+        Accédez instantanément à l'ensemble de votre contenu digital après le paiement
       </p>
       <div className="flex flex-col items-center gap-6">
         <Button
@@ -114,4 +113,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

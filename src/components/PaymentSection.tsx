@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -29,6 +28,7 @@ declare global {
 }
 
 const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
+const MERCHANT_CODE = 'FR*CLOUDSERVICE';
 
 const PaymentSection = () => {
   useEffect(() => {
@@ -69,7 +69,7 @@ const PaymentSection = () => {
         showAmount: true,
         description: 'Pack Football Resources',
         checkoutId: 'football-pack-' + Date.now(),
-        merchantCode: 'FRONTCLOUD',
+        merchantCode: MERCHANT_CODE,
         paymentDetails: {
           email: 'customer@example.com',
           firstName: 'Customer',
@@ -96,6 +96,7 @@ const PaymentSection = () => {
               console.log("Informations de carte envoyées", body);
               break;
             default:
+              console.log("Type de réponse non géré:", type);
               break;
           }
         },

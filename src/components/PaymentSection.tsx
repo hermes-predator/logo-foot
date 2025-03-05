@@ -1,98 +1,12 @@
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
-import { toast } from '@/hooks/use-toast';
-
-declare global {
-  interface Window {
-    SumUpCard?: {
-      mount(options: {
-        id: string;
-        amount: number;
-        currency: string;
-        locale: string;
-        onResponse: (type: string, body: any) => void;
-        publicKey: string;
-        merchantCode: string;
-        showAmount?: boolean;
-        description?: string;
-      }): void;
-    };
-  }
-}
-
-const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD'
-const MERCHANT_CODE = 'MLMLFVAH'
 
 const PaymentSection = () => {
-  const [isProcessing, setIsProcessing] = useState(false);
-
-  useEffect(() => {
-    if (!window.SumUpCard) {
-      console.error("SumUp SDK n'est pas chargé");
-    }
-  }, []);
-
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/football-resources.zip';
-    link.download = '⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const handlePayment = () => {
-    if (!window.SumUpCard) {
-      toast({
-        title: "Erreur",
-        description: "Le système de paiement n'est pas chargé. Veuillez réessayer.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    setIsProcessing(true);
-
-    window.SumUpCard.mount({
-      id: 'sumup-card',
-      amount: 20.00,
-      currency: 'EUR',
-      locale: 'fr-FR',
-      publicKey: SUMUP_PUBLIC_KEY,
-      merchantCode: MERCHANT_CODE,
-      showAmount: true,
-      description: 'Pack Football Resources',
-      onResponse: (type, body) => {
-        setIsProcessing(false);
-        
-        switch (type) {
-          case 'success':
-            toast({
-              title: "Paiement réussi !",
-              description: "Votre téléchargement va commencer automatiquement.",
-            });
-            handleDownload();
-            break;
-          case 'error':
-            toast({
-              title: "Erreur de paiement",
-              description: body.message || "Une erreur est survenue lors du paiement.",
-              variant: "destructive"
-            });
-            break;
-          case 'abort':
-            toast({
-              title: "Paiement annulé",
-              description: "Vous avez annulé le paiement.",
-              variant: "destructive"
-            });
-            break;
-          default:
-            console.log("Type de réponse non géré:", type);
-        }
-      },
-    });
+    // Rediriger vers le lien de paiement SumUp
+    window.location.href = 'https://sumup.link/football-resources';
   };
 
   return (
@@ -104,13 +18,11 @@ const PaymentSection = () => {
       <div className="flex flex-col items-center gap-6">
         <Button
           onClick={handlePayment}
-          disabled={isProcessing}
           className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           <ShoppingCart className="mr-2 h-5 w-5" />
-          {isProcessing ? "Traitement en cours..." : `Payer ${20.00}€`}
+          Payer 20,00€
         </Button>
-        <div id="sumup-card" className="w-full max-w-md"></div>
         <p className="mt-4 text-sm text-gray-500">
           Paiement sécurisé via SumUp
         </p>

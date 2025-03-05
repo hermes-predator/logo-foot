@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from './ui/use-toast';
@@ -31,6 +32,8 @@ const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
 const MERCHANT_CODE = 'MLMLFVAH';
 
 const PaymentSection = () => {
+  const [isProcessing, setIsProcessing] = useState(false);
+
   useEffect(() => {
     if (!window.SumUpCard) {
       console.error("SumUp SDK n'est pas chargé");
@@ -57,6 +60,7 @@ const PaymentSection = () => {
       return;
     }
 
+    setIsProcessing(true);
     const amount = 20.00;
     const checkoutId = 'football-pack-' + Date.now();
 
@@ -72,12 +76,14 @@ const PaymentSection = () => {
         showAmount: true,
         description: 'Pack Football Resources',
         paymentDetails: {
-          email: '',  // L'email sera saisi par l'utilisateur
-          firstName: '',  // Le prénom sera saisi par l'utilisateur
-          lastName: ''  // Le nom sera saisi par l'utilisateur
+          email: '',
+          firstName: '',
+          lastName: ''
         },
         onResponse: (type, body) => {
           console.log("Réponse SumUp:", type, body);
+          setIsProcessing(false);
+          
           switch (type) {
             case 'success':
               toast({
@@ -93,6 +99,13 @@ const PaymentSection = () => {
                 variant: "destructive"
               });
               break;
+            case 'abort':
+              toast({
+                title: "Paiement annulé",
+                description: "Vous avez annulé le paiement.",
+                variant: "destructive"
+              });
+              break;
             case 'sent':
               console.log("Informations de carte envoyées", body);
               break;
@@ -104,6 +117,7 @@ const PaymentSection = () => {
       });
     } catch (error) {
       console.error("Erreur lors du montage de SumUp:", error);
+      setIsProcessing(false);
       toast({
         title: "Erreur",
         description: "Une erreur est survenue lors de l'initialisation du paiement.",
@@ -121,10 +135,11 @@ const PaymentSection = () => {
       <div className="flex flex-col items-center gap-6">
         <Button
           onClick={handlePayment}
+          disabled={isProcessing}
           className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           <ShoppingCart className="mr-2 h-5 w-5" />
-          Payer {20.00}€
+          {isProcessing ? "Traitement en cours..." : `Payer ${20.00}€`}
         </Button>
         <div id="sumup-card" className="w-full max-w-md"></div>
         <p className="mt-4 text-sm text-gray-500">

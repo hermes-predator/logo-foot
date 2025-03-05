@@ -11,7 +11,7 @@ const Index = () => {
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩
+              ⦗FRONT-CLOUD⦘~ Football.zip
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Le ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 est un fichier précieux à ajouter à votre patrimoine numérique si vous cherchez à obtenir TOUTES LES RESSOURCES DU FOOTBALL en un coup.

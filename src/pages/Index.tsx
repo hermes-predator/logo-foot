@@ -39,7 +39,7 @@ const Index = () => {
             </h2>
 
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions etc... en format PNG transparent.
+              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions... en format PNG transparent.
             </p>
 
             {/* Badges de confiance */}

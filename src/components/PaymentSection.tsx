@@ -28,7 +28,7 @@ declare global {
 }
 
 const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
-const MERCHANT_CODE = 'FR*CLOUDSERVICE';
+const MERCHANT_CODE = 'MLMLFVAH';
 
 const PaymentSection = () => {
   useEffect(() => {

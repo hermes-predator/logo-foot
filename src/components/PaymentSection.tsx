@@ -1,13 +1,11 @@
-
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 
 const PaymentSection = () => {
   const handlePayment = () => {
-    // Rediriger vers le lien de paiement SumUp avec l'URL de retour
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://sumup.link/football-resources?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/QO1S2N88?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (

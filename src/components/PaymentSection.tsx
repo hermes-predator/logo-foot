@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -7,13 +6,13 @@ import { toast } from './ui/use-toast';
 declare global {
   interface Window {
     SumUpCard?: {
-      mount: ({
-        id,
-        amount,
-        currency,
-        locale,
-        onResponse: (type: string, body: any) => void,
-      }) => void;
+      mount(options: {
+        id: string;
+        amount: number;
+        currency: string;
+        locale: string;
+        onResponse: (type: string, body: any) => void;
+      }): void;
     };
   }
 }

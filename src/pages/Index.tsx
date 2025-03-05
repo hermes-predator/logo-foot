@@ -27,7 +27,7 @@ const Index = () => {
               ⦗FRONT-CLOUD⦘~ Football.zip
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              La plus grande collection de logos de clubs de foot en haute qualité. Plus de 8600 logos de clubs internationaux, les logos des compétitions etc... en format PNG transparent.
+              La plus grande collection de logos de clubs de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions etc... en format PNG transparent.
             </p>
             <Dialog>
               <DialogTrigger asChild>

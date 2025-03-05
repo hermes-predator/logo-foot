@@ -23,7 +23,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-8">
               Logos des clubs de football et bien plus
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 italic">
               ⦗FRONT-CLOUD⦘~ Football.zip
             </h2>
             <p className="text-lg text-gray-600 mb-8">

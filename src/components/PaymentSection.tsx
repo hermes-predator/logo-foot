@@ -48,7 +48,7 @@ const PaymentSection = () => {
       return;
     }
 
-    const amount = 49.99;
+    const amount = 20.00;
 
     try {
       window.SumUpCard.mount({
@@ -101,7 +101,7 @@ const PaymentSection = () => {
           className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           <ShoppingCart className="mr-2 h-5 w-5" />
-          Payer {49.99}€
+          Payer {20.00}€
         </Button>
         <div id="sumup-card" className="w-full max-w-md"></div>
         <p className="mt-4 text-sm text-gray-500">

@@ -21,10 +21,10 @@ const Index = () => {
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              ⦗FRONT-CLOUD⦘~ Football.zip
+              Logos de Clubs de Football - ⦗FRONT-CLOUD⦘~ Football.zip
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Obtenez une couverture complète des ressources numériques du football en un coup.
+              La plus grande collection de logos de clubs de foot en haute qualité. Plus de 8000 logos de clubs européens et internationaux en format PNG transparent.
             </p>
             <Dialog>
               <DialogTrigger asChild>

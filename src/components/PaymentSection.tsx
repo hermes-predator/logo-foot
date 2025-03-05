@@ -22,7 +22,6 @@ const SUMUP_PUBLIC_KEY = 'sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD';
 
 const PaymentSection = () => {
   useEffect(() => {
-    // Vérifie si le script SumUp est chargé
     if (!window.SumUpCard) {
       console.error("SumUp SDK n'est pas chargé");
     }

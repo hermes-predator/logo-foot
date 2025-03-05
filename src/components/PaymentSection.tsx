@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -76,19 +75,6 @@ const PaymentSection = () => {
           email: '',  // L'email sera saisi par l'utilisateur
           firstName: '',  // Le prénom sera saisi par l'utilisateur
           lastName: ''  // Le nom sera saisi par l'utilisateur
-        },
-        checkout: {
-          id: checkoutId,
-          description: 'Pack Football Resources',
-          amount: amount,
-          currency: 'EUR',
-          merchant: {
-            email: 'contact@example.com',
-            name: 'Football Resources Store'
-          },
-          customer: {
-            email: '',  // Sera rempli par l'utilisateur
-          }
         },
         onResponse: (type, body) => {
           console.log("Réponse SumUp:", type, body);

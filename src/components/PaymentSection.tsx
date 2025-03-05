@@ -13,15 +13,10 @@ declare global {
         locale: string;
         onResponse: (type: string, body: any) => void;
         publicKey: string;
-        checkoutId?: string;
         merchantCode?: string;
         showAmount?: boolean;
         description?: string;
-        paymentDetails?: {
-          email?: string;
-          firstName?: string;
-          lastName?: string;
-        };
+        checkoutId: string;
       }): void;
     };
   }
@@ -32,6 +27,7 @@ const MERCHANT_CODE = 'MLMLFVAH';
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
+  const [checkoutId, setCheckoutId] = useState<string | null>(null);
 
   useEffect(() => {
     if (!window.SumUpCard) {
@@ -48,7 +44,41 @@ const PaymentSection = () => {
     document.body.removeChild(link);
   };
 
-  const handlePayment = () => {
+  const createCheckout = async () => {
+    try {
+      const response = await fetch('https://api.sumup.com/v0.1/checkouts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${SUMUP_PUBLIC_KEY}`,
+        },
+        body: JSON.stringify({
+          merchant_code: MERCHANT_CODE,
+          amount: 20.00,
+          currency: 'EUR',
+          description: 'Pack Football Resources',
+        })
+      });
+
+      const data = await response.json();
+      if (data.id) {
+        setCheckoutId(data.id);
+        return data.id;
+      } else {
+        throw new Error('Pas de checkout ID reçu');
+      }
+    } catch (error) {
+      console.error("Erreur lors de la création du checkout:", error);
+      toast({
+        title: "Erreur",
+        description: "Impossible d'initialiser le paiement. Veuillez réessayer.",
+        variant: "destructive"
+      });
+      return null;
+    }
+  };
+
+  const handlePayment = async () => {
     console.log("Tentative de paiement...");
     if (!window.SumUpCard) {
       toast({
@@ -60,7 +90,13 @@ const PaymentSection = () => {
     }
 
     setIsProcessing(true);
-    
+
+    const checkoutId = await createCheckout();
+    if (!checkoutId) {
+      setIsProcessing(false);
+      return;
+    }
+
     window.SumUpCard.mount({
       id: 'sumup-card',
       amount: 20.00,
@@ -68,6 +104,7 @@ const PaymentSection = () => {
       locale: 'fr-FR',
       publicKey: SUMUP_PUBLIC_KEY,
       merchantCode: MERCHANT_CODE,
+      checkoutId: checkoutId,
       showAmount: true,
       description: 'Pack Football Resources',
       onResponse: (type, body) => {

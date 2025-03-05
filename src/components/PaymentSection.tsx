@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Download } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from './ui/use-toast';
 
@@ -13,15 +12,24 @@ declare global {
         currency: string;
         locale: string;
         onResponse: (type: string, body: any) => void;
-        publicKey: string; // Ajout de la clé API
+        publicKey: string;
       }): void;
     };
   }
 }
 
-const SUMUP_PUBLIC_KEY = 'VOTRE_CLE_API_ICI'; // Remplacez par votre clé API SumUp
+const SUMUP_PUBLIC_KEY = 'VOTRE_CLE_API_ICI';
 
 const PaymentSection = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/football-resources.zip';
+    link.download = '⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const handlePayment = () => {
     if (!window.SumUpCard) {
       toast({
@@ -39,14 +47,15 @@ const PaymentSection = () => {
       amount: amount,
       currency: 'EUR',
       locale: 'fr-FR',
-      publicKey: SUMUP_PUBLIC_KEY, // Utilisation de la clé API
+      publicKey: SUMUP_PUBLIC_KEY,
       onResponse: (type, body) => {
         switch (type) {
           case 'success':
             toast({
               title: "Paiement réussi !",
-              description: "Merci pour votre achat.",
+              description: "Votre téléchargement va commencer automatiquement.",
             });
+            handleDownload();
             break;
           case 'error':
             toast({

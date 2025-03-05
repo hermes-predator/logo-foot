@@ -20,9 +20,12 @@ const Index = () => {
         {/* Hero Section */}
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Logos de Clubs de Football - ⦗FRONT-CLOUD⦘~ Football.zip
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Logos des clubs de football et bien plus
             </h1>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-gray-700">
+              ⦗FRONT-CLOUD⦘~ Football.zip
+            </h2>
             <p className="text-lg text-gray-600 mb-8">
               La plus grande collection de logos de clubs de foot en haute qualité. Plus de 8000 logos de clubs européens et internationaux en format PNG transparent.
             </p>

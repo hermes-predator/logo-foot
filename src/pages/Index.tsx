@@ -2,7 +2,7 @@ import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import { Button } from "@/components/ui/button";
-import { Crown, Info } from "lucide-react";
+import { Crown, Info, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -41,6 +41,22 @@ const Index = () => {
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
               La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions etc... en format PNG transparent.
             </p>
+
+            {/* Badges de confiance */}
+            <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+                <ShieldCheck className="w-5 h-5 text-green-600" />
+                <span className="text-sm font-medium text-gray-700">Ressources Vérifiées</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+                <Lock className="w-5 h-5 text-blue-600" />
+                <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+                <CheckCircle2 className="w-5 h-5 text-purple-600" />
+                <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
+              </div>
+            </div>
 
             <div className="flex items-center justify-center gap-4 pt-4">
               <Dialog>

@@ -33,24 +33,59 @@ const Index = () => {
                   Plus d'informations
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
+              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
-                  <DialogTitle>Détails importants</DialogTitle>
-                  <DialogDescription>
-                    <ul className="space-y-2 mt-4">
-                      <li className="flex items-center gap-2">
-                        • Produits consultables (capture vidéo)
-                      </li>
-                      <li className="flex items-center gap-2">
-                        • Ressources cadrées, uniformes, nommées et triées
-                      </li>
-                      <li className="flex items-center gap-2">
-                        • Couverture totale du football pour vos projets WEB
-                      </li>
-                      <li className="flex items-center gap-2">
-                        • Directement stockable sur ordinateur ou cloud privé
-                      </li>
-                    </ul>
+                  <DialogTitle className="text-xl font-bold mb-4">Contenu du pack</DialogTitle>
+                  <DialogDescription className="text-left space-y-6">
+                    <p className="text-base font-medium">
+                      Le ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 est un fichier précieux à ajouter à votre patrimoine numérique.
+                    </p>
+
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="font-bold mb-2">𝐅.𝟎𝟏 – Logos de clubs de football</h3>
+                        <p>Format : PNG (fond transparent)</p>
+                        <p>Dimensions : 120px</p>
+                        <p>Sous-groupes : 60 collections</p>
+                        <p>Quantité totale : 8 062 ressources</p>
+                        
+                        <div className="mt-2">
+                          <p className="font-medium mb-1">Ref. sous-collections (quantité) :</p>
+                          <p className="text-sm leading-relaxed">
+                            Default (20) ; Albanie (70) ; Allemagne (450) ; Angleterre (450) ; Arabie Saoudite (80) ; Argentine (200) ; Arménie (40) ; Australie (80) ; Autriche (120) ; Azerbaïdjan (50) ; Belgique (160) ; Biélorussie (100) ; Bosnie-Herzégovine (80) ; Brésil (300) ; Bulgarie (100) ; Chypre (40) ; Croatie (120) ; Danemark (150) ; Écosse (120) ; Espagne (450) ; Estonie (40) ; États-Unis (300) ; Finlande (100) ; France (450) ; Géorgie (40) ; Gibraltar (12) ; Grèce (150) ; Hongrie (120) ; Iles Féroés (20) ; Irlande (100) ; Irlande du Nord (60) ; Islande (80) ; Israël (80) ; Italie (400) ; Kazakhstan (40) ; Kosovo (40) ; Lettonie (40) ; Lituanie (40) ; Luxembourg (80) ; Macédoine du Nord (40) ; Malte (60) ; Moldavie (50) ; Monténégro (40) ; Norvège (150) ; Pays-Bas (300) ; Pays de Galles (80) ; Pologne (150) ; Portugal (200) ; Qatar (20) ; République Tchèque (150) ; Roumanie (150) ; Russie (150) ; Serbie (120) ; Slovaquie (120) ; Slovénie (80) ; Suède (150) ; Suisse (150) ; Turquie (200) ; Ukraine (100) ; Sélections nationales de football (240).
+                          </p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h3 className="font-bold mb-2">𝐅.𝟎𝟐 – Compétitions de football</h3>
+                        <p>Format : PNG (fond transparent)</p>
+                        <p>Dimensions : 200px</p>
+                        <p>Sous-groupes : 1 collection</p>
+                        <p>Quantité totale : 100 ressources</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-bold mb-2">𝐅.𝟎𝟑 – Drapeaux mondiaux</h3>
+                        <p>Format : PNG (fond transparent)</p>
+                        <p>Dimensions : 256px</p>
+                        <p>Sous-groupes : 1 collection</p>
+                        <p>Quantité totale : 269 ressources</p>
+                      </div>
+
+                      <div>
+                        <h3 className="font-bold mb-2">𝐅.𝟎𝟒 – Couvertures - Instruments de football - wallet.Type</h3>
+                        <p>Format : PNG (fond transparent)</p>
+                        <p>Dimensions : 150px</p>
+                        <p>Sous-groupes : 3 collections</p>
+                        <p>Quantité totale : 217 ressources</p>
+                      </div>
+
+                      <div className="pt-4 border-t">
+                        <p className="text-base">✚ Nos ressources sont uniformes, nommées et triées.</p>
+                        <p className="text-base">✚ Nos ressources ont un cadrage parfait.</p>
+                      </div>
+                    </div>
                   </DialogDescription>
                 </DialogHeader>
               </DialogContent>

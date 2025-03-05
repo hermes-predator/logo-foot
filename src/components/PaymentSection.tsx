@@ -92,6 +92,9 @@ const PaymentSection = () => {
                 variant: "destructive"
               });
               break;
+            case 'sent':
+              console.log("Informations de carte envoyées", body);
+              break;
             default:
               break;
           }

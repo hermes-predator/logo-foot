@@ -48,7 +48,7 @@ const Index = () => {
             <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
               <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
                 <ShieldCheck className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Ressources uniformes</span>
+                <span className="text-sm font-medium text-gray-700">Ressources Uniformes</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
                 <Lock className="w-5 h-5 text-green-600" />

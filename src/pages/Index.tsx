@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
-        {/* Hero Section avec un design plus élégant */}
+        {/* Hero Section */}
         <section className="relative py-20 px-4 overflow-hidden">
           {/* Fond décoratif */}
           <div className="absolute inset-0 -z-10">
@@ -25,11 +25,13 @@ const Index = () => {
           </div>
 
           <div className="max-w-4xl mx-auto text-center space-y-8">
+            {/* Crown badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-purple-100 mb-6">
               <Crown className="w-5 h-5 text-purple-600" />
               <span className="text-sm font-medium text-purple-900">Collection Premium</span>
             </div>
 
+            {/* Title and subtitle */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
               Logos des clubs de football
             </h1>
@@ -39,7 +41,7 @@ const Index = () => {
             </h2>
 
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions... en format PNG transparent.
+              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8600 logos de clubs internationaux, les logos des compétitions... toute l'organisation dont vous avez besoin réuni dans un seul fichier.
             </p>
 
             {/* Badges de confiance */}

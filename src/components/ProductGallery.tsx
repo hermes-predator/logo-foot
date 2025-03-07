@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -12,7 +13,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => ({
   id: index + 1,
   imageUrl: `https://placehold.co/400x400?text=Logo+${index + 1}`,
   videoUrl: `/videos/video${index + 1}.mov`,
-  title: `Aperçu ${index + 1}`
+  title: `Logo officiel ${index + 1} - Collection complète logos clubs de foot`
 }));
 
 const ProductGallery = () => {
@@ -37,12 +38,13 @@ const ProductGallery = () => {
                   muted
                   loop
                   playsInline
+                  title={`Animation logo ${item.title}`}
                 />
               ) : (
                 <>
                   <img
                     src={item.imageUrl}
-                    alt={item.title}
+                    alt={`Logo vectoriel club de football ${item.title} - Format PNG transparent haute définition`}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                   <div className="absolute bottom-2 right-2">

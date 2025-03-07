@@ -10,6 +10,21 @@ const Footer = () => {
         <div className="flex justify-center gap-8 text-sm text-gray-600">
           <Dialog>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+              <MessageCircle className="w-4 h-4" />
+              Contact
+            </DialogTrigger>
+            <DialogContent className="max-w-md">
+              <DialogHeader>
+                <DialogTitle>Contactez-nous</DialogTitle>
+              </DialogHeader>
+              <div className="mt-4">
+                <ContactForm />
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog>
+            <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <FileText className="w-4 h-4" />
               Conditions générales de vente
             </DialogTrigger>
@@ -113,21 +128,6 @@ const Footer = () => {
                   <h3 className="font-semibold mb-2">Litiges</h3>
                   <p>En cas de litige, la législation française s'applique. Tout différend pourra être soumis aux tribunaux compétents.</p>
                 </section>
-              </div>
-            </DialogContent>
-          </Dialog>
-
-          <Dialog>
-            <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
-              <MessageCircle className="w-4 h-4" />
-              Contact
-            </DialogTrigger>
-            <DialogContent className="max-w-md">
-              <DialogHeader>
-                <DialogTitle>Contactez-nous</DialogTitle>
-              </DialogHeader>
-              <div className="mt-4">
-                <ContactForm />
               </div>
             </DialogContent>
           </Dialog>

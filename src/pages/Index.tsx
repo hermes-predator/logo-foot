@@ -3,7 +3,7 @@ import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
-import { Crown, FileText, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -65,7 +65,7 @@ const Index = () => {
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="gap-2">
-                    <FileText className="h-4 w-4 fill-current" />
+                    <Book className="h-4 w-4 fill-current" />
                     Descriptif complet
                   </Button>
                 </DialogTrigger>

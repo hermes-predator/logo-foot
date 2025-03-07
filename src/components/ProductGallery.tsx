@@ -13,19 +13,19 @@ interface GalleryItem {
 
 // Liste des pays pour le football
 const countries = [
-  'France', 'Angleterre', 'Espagne', 'Allemagne', 'Italie', 
-  'Portugal', 'Pays-Bas', 'Belgique', 'Suisse', 'Autriche',
-  'Écosse', 'Irlande', 'Pays de Galles', 'Danemark', 'Norvège',
-  'Suède', 'Finlande', 'Russie', 'Ukraine', 'Pologne',
-  'République Tchèque', 'Croatie', 'Serbie', 'Grèce', 'Turquie',
-  'Roumanie', 'Bulgarie', 'Hongrie', 'Slovaquie', 'Slovénie',
-  'Brésil', 'Argentine', 'Uruguay', 'Colombie', 'Chili',
-  'États-Unis', 'Mexique', 'Canada', 'Japon', 'Corée du Sud',
-  'Australie', 'Maroc', 'Égypte', 'Sénégal', 'Nigeria',
-  'Algérie', 'Tunisie', 'Côte d\'Ivoire', 'Ghana', 'Cameroun',
-  'Qatar', 'Arabie Saoudite', 'Émirats Arabes Unis', 'Iran', 'Irak',
-  'Chine', 'Inde', 'Indonésie', 'Thaïlande', 'Vietnam',
-  'Nouvelle-Zélande', 'Afrique du Sud', 'Kenya', 'Israël', 'Kazakhstan'
+  'Angleterre', 'Allemagne', 'Espagne', 'France', 'Italie',
+  'Brésil', 'États-Unis', 'Pays-Bas', 'Sélections Nationales', 'Argentine',
+  'Portugal', 'Turquie', 'Belgique', 'Danemark', 'Grèce',
+  'Norvège', 'Pologne', 'Roumanie', 'Russie', 'Suède',
+  'Suisse', 'République Tchèque', 'Autriche', 'Bulgarie', 'Croatie',
+  'Hongrie', 'Serbie', 'Slovaquie', 'Biélorussie', 'Écosse',
+  'Irlande', 'Pays de Galles', 'Finlande', 'Ukraine', 'Australie',
+  'Arabie Saoudite', 'Bosnie-Herzégovine', 'Islande', 'Israël', 'Luxembourg',
+  'Slovénie', 'Albanie', 'Irlande du Nord', 'Malte', 'Azerbaïdjan',
+  'Moldavie', 'Arménie', 'Chypre', 'Estonie', 'Géorgie',
+  'Kazakhstan', 'Kosovo', 'Lettonie', 'Lituanie', 'Macédoine du Nord',
+  'Monténégro', 'Default', 'Iles Féroés', 'Qatar', 'Gibraltar',
+  'Compétitions de football', 'Compétitions internationales', 'Coupes nationales', 'Championnats'
 ];
 
 // Format attendu des fichiers:

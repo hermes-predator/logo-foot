@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -28,14 +29,14 @@ const countries = [
 
 const getCountryDescription = (country: string) => {
   const countryAdjectives: { [key: string]: string } = {
-    'France': 'Françaises',
-    'Allemagne': 'Allemandes',
-    'Espagne': 'Espagnoles',
-    'Italie': 'Italiennes',
-    'Angleterre': 'Anglaises',
-    'Portugal': 'Portugaises',
-    'Brésil': 'Brésiliennes',
-    'Pays-Bas': 'Néerlandaises',
+    'France': 'Français',
+    'Allemagne': 'Allemands',
+    'Espagne': 'Espagnols',
+    'Italie': 'Italiens',
+    'Angleterre': 'Anglais',
+    'Portugal': 'Portugais',
+    'Brésil': 'Brésiliens',
+    'Pays-Bas': 'Néerlandais',
     'Belgique': 'Belges',
     // Pour les autres pays, on utilise directement le nom du pays
   };
@@ -51,7 +52,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
     videoUrl: `/videos/logo${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
-    altText: `Collection complète des équipes de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot - ${country}`,
+    altText: `Collection complète des logos de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot - ${country}`,
   };
 });
 

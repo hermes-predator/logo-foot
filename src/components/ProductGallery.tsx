@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -11,7 +10,6 @@ interface GalleryItem {
   altText: string;
 }
 
-// Liste des pays pour le football
 const countries = [
   'Angleterre', 'Allemagne', 'Espagne', 'France', 'Italie',
   'Brésil', 'États-Unis', 'Pays-Bas', 'Sélections Nationales', 'Argentine',
@@ -28,9 +26,6 @@ const countries = [
   'Compétitions de football', 'Compétitions internationales', 'Coupes nationales', 'Championnats'
 ];
 
-// Format attendu des fichiers:
-// - Images: /images/logo1.jpg, /images/logo2.jpg, etc.
-// - Vidéos: /videos/logo1.mov, /videos/logo2.mov, etc.
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
   const country = countries[index] || 'International';
   return {
@@ -39,7 +34,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
     videoUrl: `/videos/logo${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
-    altText: `Logo vectoriel club de football ${country} - Format HD transparent - Collection complète FRONT-CLOUD`,
+    altText: `Logo vectoriel club de football ${country} - Format HD transparent - Collection complète équipes de foot`,
   };
 });
 

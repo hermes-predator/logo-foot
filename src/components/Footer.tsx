@@ -17,8 +17,51 @@ const Footer = () => {
               <DialogHeader>
                 <DialogTitle>Conditions générales de vente</DialogTitle>
               </DialogHeader>
-              <div className="mt-4 text-sm">
-                <p>En attente du contenu des CGV...</p>
+              <div className="mt-4 text-sm space-y-4">
+                <section>
+                  <h3 className="font-semibold mb-2">Article 1 - Objet</h3>
+                  <p>Les présentes conditions générales de vente régissent la vente de ressources numériques (logos de football) par Hermès Ressources, SIRET 934 410 507 00016, à ses clients.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 2 - Prix</h3>
+                  <p>Les prix sont indiqués en euros TTC. Hermès Ressources se réserve le droit de modifier ses prix à tout moment, étant entendu que le prix affiché lors de la commande sera le seul applicable.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 3 - Produit</h3>
+                  <p>Le produit vendu est un fichier numérique contenant une collection de logos de football au format PNG. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 4 - Commande et Paiement</h3>
+                  <p>La commande devient effective au moment du paiement intégral. Le paiement s'effectue par carte bancaire via notre prestataire sécurisé SumUp.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 5 - Livraison</h3>
+                  <p>La livraison s'effectue immédiatement après le paiement par téléchargement numérique. Un lien de téléchargement est automatiquement fourni.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 6 - Droit de rétractation</h3>
+                  <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé après accord préalable exprès du consommateur.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 7 - Propriété intellectuelle</h3>
+                  <p>L'achat confère un droit d'utilisation personnel des ressources. La revente, la redistribution ou la modification des fichiers est interdite. Les logos contenus dans le pack sont la propriété de leurs détenteurs respectifs.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 8 - Protection des données</h3>
+                  <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits, contactez : sylvainbenoit62100@gmail.com</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 9 - Litiges</h3>
+                  <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire.</p>
+                </section>
               </div>
             </DialogContent>
           </Dialog>

@@ -65,7 +65,7 @@ const Index = () => {
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="gap-2">
-                    <Book className="h-4 w-4 fill-current" />
+                    <Book className="h-4 w-4" />
                     Descriptif complet
                   </Button>
                 </DialogTrigger>

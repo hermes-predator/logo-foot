@@ -9,10 +9,13 @@ interface GalleryItem {
   title: string;
 }
 
+// Format attendu des fichiers:
+// - Images: /images/logo1.jpg, /images/logo2.jpg, etc.
+// - Vidéos: /videos/logo1.mov, /videos/logo2.mov, etc.
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => ({
   id: index + 1,
-  imageUrl: `https://placehold.co/400x400?text=Logo+${index + 1}`,
-  videoUrl: `/videos/video${index + 1}.mov`,
+  imageUrl: `/images/logo${index + 1}.jpg`,
+  videoUrl: `/videos/logo${index + 1}.mov`,
   title: `Logo officiel ${index + 1} - Collection complète logos clubs de foot`
 }));
 

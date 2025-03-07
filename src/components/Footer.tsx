@@ -70,7 +70,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 8 - Protection des données</h3>
-                  <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits, contactez : sylvainbenoit62100@gmail.com</p>
+                  <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits, contactez : contact@logo-foot.com</p>
                 </section>
 
                 <section>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <p>Nom de l'entreprise : Hermès Ressources</p>
                   <p>Siège social : 35 rue Châteaubriand Calais 62100 FR</p>
                   <p>SIRET : 934 410 507 00016</p>
-                  <p>Contact : sylvainbenoit62100@gmail.com</p>
+                  <p>Contact : contact@logo-foot.com</p>
                 </section>
 
                 <section>
@@ -121,7 +121,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Données personnelles</h3>
-                  <p>Les informations collectées sont utilisées uniquement dans le cadre de la gestion des commandes et ne sont pas partagées avec des tiers. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en contactant sylvainbenoit62100@gmail.com.</p>
+                  <p>Les informations collectées sont utilisées uniquement dans le cadre de la gestion des commandes et ne sont pas partagées avec des tiers. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en contactant contact@logo-foot.com.</p>
                 </section>
 
                 <section>

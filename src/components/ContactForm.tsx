@@ -9,7 +9,7 @@ const ContactForm = () => {
       <p>Pour cela, nous vous invitons à joindre en pièce jointe une preuve d'achat pour nous aider à vous identifier :</p>
       <p className="flex items-center gap-2">
         <Mail className="w-4 h-4" />
-        <a href="mailto:sylvainbenoit62100@gmail.com" className="text-blue-600 hover:underline">sylvainbenoit62100@gmail.com</a>
+        <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
       </p>
     </div>
   );

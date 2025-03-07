@@ -1,12 +1,11 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Download, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
-  const [hasDownloaded, setHasDownloaded] = useState(false);
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -15,7 +14,6 @@ const PaymentSuccess = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    setHasDownloaded(true);
     
     toast({
       title: "Téléchargement démarré",
@@ -40,10 +38,9 @@ const PaymentSuccess = () => {
           onClick={handleDownload}
           size="lg"
           className="w-full max-w-sm mx-auto"
-          disabled={hasDownloaded}
         >
           <Download className="mr-2 h-5 w-5" />
-          {hasDownloaded ? "Fichier téléchargé" : "Télécharger le pack"}
+          Télécharger le pack
         </Button>
 
         <p className="text-sm text-gray-500">

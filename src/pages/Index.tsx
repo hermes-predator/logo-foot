@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -67,7 +66,7 @@ const Index = () => {
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="gap-2">
                     <Info className="h-4 w-4" />
-                    Plus d'informations
+                    Descriptif complet
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">

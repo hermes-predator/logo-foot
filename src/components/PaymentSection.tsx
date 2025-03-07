@@ -2,6 +2,7 @@
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
+import SecurityBadges from './SecurityBadges';
 
 const PaymentSection = () => {
   const handlePayment = () => {
@@ -26,6 +27,7 @@ const PaymentSection = () => {
         <p className="mt-4 text-sm text-gray-500">
           Paiement sécurisé via SumUp
         </p>
+        <SecurityBadges />
       </div>
     </div>
   );

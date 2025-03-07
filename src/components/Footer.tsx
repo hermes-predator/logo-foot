@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { FileText, Shield } from "lucide-react";
+import { FileText, Scroll } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -26,7 +25,7 @@ const Footer = () => {
 
           <Dialog>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
-              <Shield className="w-4 h-4" />
+              <Scroll className="w-4 h-4" />
               Mentions légales
             </DialogTrigger>
             <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">

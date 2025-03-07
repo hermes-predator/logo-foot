@@ -51,7 +51,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
     videoUrl: `/videos/logo${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
-    altText: `Collection complète des équipes de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot`,
+    altText: `Collection complète des équipes de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot - ${country}`,
   };
 });
 

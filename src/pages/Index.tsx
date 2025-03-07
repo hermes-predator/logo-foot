@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
+import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
 import { Crown, Info, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import {
@@ -136,6 +137,7 @@ const Index = () => {
         {/* Payment Section */}
         <PaymentSection />
       </main>
+      <Footer />
     </div>
   );
 };

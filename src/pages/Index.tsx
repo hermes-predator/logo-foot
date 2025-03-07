@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -106,7 +107,7 @@ const Index = () => {
                           <p>Format : PNG (fond transparent)</p>
                           <p>Dimensions : 256px</p>
                           <p>Sous-groupes : 1 collection</p>
-                          <p>Quantité totale : 269 ressources</p>
+                          <p>Quantité totale : 270 ressources</p>
                         </div>
 
                         <div>
@@ -114,7 +115,7 @@ const Index = () => {
                           <p>Format : PNG (fond transparent)</p>
                           <p>Dimensions : 150px</p>
                           <p>Sous-groupes : 3 collections</p>
-                          <p>Quantité totale : 217 ressources</p>
+                          <p>Quantité totale : 220 ressources</p>
                         </div>
 
                         <div className="pt-4 border-t">

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -9,35 +9,67 @@ import { useToast } from "@/components/ui/use-toast";
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const [sending, setSending] = React.useState(false);
+  const [sending, setSending] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSending(true);
     
-    // Simuler l'envoi
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const mailtoUrl = `mailto:sylvainbenoit62100@gmail.com?subject=Contact depuis le site - ${formData.name}&body=De: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    
+    window.location.href = mailtoUrl;
     
     toast({
-      title: "Message envoyé",
-      description: "Nous vous répondrons dans les plus brefs délais.",
+      title: "Redirection vers votre client mail",
+      description: "Votre client mail va s'ouvrir avec le message pré-rempli.",
     });
     
     setSending(false);
-    const form = e.target as HTMLFormElement;
-    form.reset();
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="space-y-2">
         <Label htmlFor="name">Nom</Label>
-        <Input id="name" required placeholder="Votre nom" />
+        <Input 
+          id="name" 
+          required 
+          placeholder="Votre nom"
+          value={formData.name}
+          onChange={handleChange}
+        />
       </div>
       
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" required placeholder="votre@email.com" />
+        <Input 
+          id="email" 
+          type="email" 
+          required 
+          placeholder="votre@email.com"
+          value={formData.email}
+          onChange={handleChange}
+        />
       </div>
       
       <div className="space-y-2">
@@ -47,6 +79,8 @@ const ContactForm = () => {
           required 
           placeholder="Votre message..."
           className="min-h-[100px]"
+          value={formData.message}
+          onChange={handleChange}
         />
       </div>
 

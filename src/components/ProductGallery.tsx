@@ -26,6 +26,23 @@ const countries = [
   'Compétitions de football', 'Compétitions internationales', 'Coupes nationales', 'Championnats'
 ];
 
+const getCountryDescription = (country: string) => {
+  const countryAdjectives: { [key: string]: string } = {
+    'France': 'Françaises',
+    'Allemagne': 'Allemandes',
+    'Espagne': 'Espagnoles',
+    'Italie': 'Italiennes',
+    'Angleterre': 'Anglaises',
+    'Portugal': 'Portugaises',
+    'Brésil': 'Brésiliennes',
+    'Pays-Bas': 'Néerlandaises',
+    'Belgique': 'Belges',
+    // Pour les autres pays, on utilise directement le nom du pays
+  };
+
+  return countryAdjectives[country] || `de ${country}`;
+};
+
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
   const country = countries[index] || 'International';
   return {
@@ -34,7 +51,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
     videoUrl: `/videos/logo${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
-    altText: `Logos des clubs de football ${country} - Format HD transparent - Collection complète équipes de foot`,
+    altText: `Collection complète des équipes de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot`,
   };
 });
 

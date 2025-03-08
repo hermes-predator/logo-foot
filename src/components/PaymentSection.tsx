@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, Download, Shield } from 'lucide-react';
 import { Button } from './ui/button';
@@ -15,7 +16,7 @@ const PaymentSection = () => {
           Prêt à tout recevoir ?
         </h2>
         <p className="text-gray-600 text-lg mb-8">
-          Recevez instantanément ce produit digital complet après paiement
+          Recevez-le instantanément après paiement
         </p>
       </div>
 

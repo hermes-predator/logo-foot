@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: number;
   title: string;
@@ -183,7 +182,7 @@ La qualité des logos est primordiale pour tout projet professionnel. En suivant
 - La forme ronde traditionnelle
 - L'adaptation moderne
 
-10. Logo du Paris Saint-Germain
+10. Logo du PSG
 - La Tour Eiffel centrale
 - Le berceau royal stylisé
 - Les couleurs de Paris
@@ -198,4 +197,3 @@ Ces logos sont devenus des symboles culturels qui dépassent le cadre du footbal
 Chacun de ces logos raconte une histoire unique et continue d'inspirer les designers du monde entier. Leur force réside dans leur capacité à rester pertinents tout en préservant leur essence historique.`
   }
 ];
-

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Download, Shield } from 'lucide-react';
 import { Button } from './ui/button';
@@ -25,7 +24,7 @@ const PaymentSection = () => {
           <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium">
             Pack Complet
           </div>
-          <h3 className="text-2xl font-bold mb-4 mt-6">Accès Immédiat</h3>
+          <h3 className="text-2xl font-bold mb-4 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
           <ul className="space-y-3 mb-8">
             <li className="flex items-center text-gray-600">
               <Shield className="h-5 w-5 mr-2 text-blue-500" />
@@ -61,4 +60,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

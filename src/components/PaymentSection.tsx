@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Download, Shield } from 'lucide-react';
 import { Button } from './ui/button';
@@ -29,7 +28,7 @@ const PaymentSection = () => {
           <ul className="space-y-3 mb-8">
             <li className="flex items-center text-gray-600">
               <Shield className="h-5 w-5 mr-2 text-blue-500" />
-              8 600 ressources
+              + de 8 600 ressources
             </li>
             <li className="flex items-center text-gray-600">
               <Download className="h-5 w-5 mr-2 text-blue-500" />

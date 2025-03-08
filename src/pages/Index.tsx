@@ -195,15 +195,15 @@ const Index = () => {
                         </div>
 
                         <div className="space-y-2 pt-6 border-t">
-                          <p className="flex items-center gap-2 text-[#8E9196]">
+                          <p className="flex items-center gap-2 text-[#403E43]">
                             <CheckCircle2 className="h-5 w-5" />
                             Ressources cadrées, uniformes, nommées et déjà triées
                           </p>
-                          <p className="flex items-center gap-2 text-[#8E9196]">
+                          <p className="flex items-center gap-2 text-[#403E43]">
                             <CheckCircle2 className="h-5 w-5" />
                             Couverture totale du football pour vos projets WEB
                           </p>
-                          <p className="flex items-center gap-2 text-[#8E9196]">
+                          <p className="flex items-center gap-2 text-[#403E43]">
                             <CheckCircle2 className="h-5 w-5" />
                             Directement stockable sur ordinateur ou cloud privé
                           </p>

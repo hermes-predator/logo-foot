@@ -2,6 +2,7 @@
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
+import CompetitionsSection from '../components/CompetitionsSection';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown } from "lucide-react";
@@ -228,6 +229,8 @@ const Index = () => {
         </section>
 
         <ProductGallery />
+        
+        <CompetitionsSection />
 
         <div id="payment-section">
           <PaymentSection />

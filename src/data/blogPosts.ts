@@ -8,55 +8,6 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 1,
-    title: "L'histoire des logos de football : évolution et signification",
-    excerpt: "Découvrez comment les logos de clubs de football ont évolué au fil des décennies et ce qu'ils représentent vraiment pour les supporters.",
-    date: "2024-02-15",
-    content: `Les logos des clubs de football sont bien plus que de simples symboles graphiques - ils représentent l'histoire, les valeurs et l'identité de chaque club. Dans cet article, nous explorons leur fascinante évolution.
-
-L'origine des logos de football
-
-La plupart des premiers logos de clubs de football, apparus au XIXe siècle, étaient inspirés des blasons héraldiques et des symboles locaux. Ces designs reflétaient souvent :
-- Les couleurs de la ville ou de la région
-- Les industries locales importantes
-- Les symboles historiques du territoire
-- Les initiales ou le nom complet du club
-
-L'évolution au fil des décennies
-
-1. Les années 1950-1960
-- Simplification des designs pour une meilleure reconnaissance
-- Introduction de mascottes et de symboles modernes
-- Utilisation accrue de la typographie
-
-2. Les années 1970-1980
-- Modernisation des logos classiques
-- Apparition des designs minimalistes
-- Importance croissante du marketing
-
-3. L'ère moderne (1990-aujourd'hui)
-- Adaptation aux supports digitaux
-- Versions simplifiées pour les réseaux sociaux
-- Équilibre entre tradition et modernité
-
-La signification des éléments communs
-
-• Les étoiles : Représentent souvent les titres majeurs remportés
-• Les animaux : Symbolisent la force, l'agilité ou l'histoire locale
-• Les couleurs : Porteuses de sens et d'identité pour les supporters
-• Les dates : Rappellent l'année de fondation et l'histoire du club
-
-L'importance du logo dans l'identité du club
-
-Le logo est crucial car il :
-- Crée un lien émotionnel avec les supporters
-- Représente l'histoire et les valeurs du club
-- Aide à la reconnaissance de la marque
-- Participe à la commercialisation des produits dérivés
-
-En conclusion, les logos de football sont des œuvres d'art qui racontent une histoire. Ils évoluent constamment tout en préservant l'essence de ce qui rend chaque club unique.`
-  },
-  {
     id: 2,
     title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution de référence pour vos ressources visuelles football",
     excerpt: "Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs sportifs en offrant une bibliothèque complète de logos et ressources visuelles football.",
@@ -145,6 +96,55 @@ Solutions sur mesure
 - Mises à jour régulières
 
 En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale pour toute organisation travaillant avec des ressources visuelles liées au football. Notre fichier combine performance, exhaustivité et facilité d'utilisation pour répondre aux besoins les plus exigeants du secteur.`,
+  },
+  {
+    id: 1,
+    title: "L'histoire des logos de football : évolution et signification",
+    excerpt: "Découvrez comment les logos de clubs de football ont évolué au fil des décennies et ce qu'ils représentent vraiment pour les supporters.",
+    date: "2024-02-15",
+    content: `Les logos des clubs de football sont bien plus que de simples symboles graphiques - ils représentent l'histoire, les valeurs et l'identité de chaque club. Dans cet article, nous explorons leur fascinante évolution.
+
+L'origine des logos de football
+
+La plupart des premiers logos de clubs de football, apparus au XIXe siècle, étaient inspirés des blasons héraldiques et des symboles locaux. Ces designs reflétaient souvent :
+- Les couleurs de la ville ou de la région
+- Les industries locales importantes
+- Les symboles historiques du territoire
+- Les initiales ou le nom complet du club
+
+L'évolution au fil des décennies
+
+1. Les années 1950-1960
+- Simplification des designs pour une meilleure reconnaissance
+- Introduction de mascottes et de symboles modernes
+- Utilisation accrue de la typographie
+
+2. Les années 1970-1980
+- Modernisation des logos classiques
+- Apparition des designs minimalistes
+- Importance croissante du marketing
+
+3. L'ère moderne (1990-aujourd'hui)
+- Adaptation aux supports digitaux
+- Versions simplifiées pour les réseaux sociaux
+- Équilibre entre tradition et modernité
+
+La signification des éléments communs
+
+• Les étoiles : Représentent souvent les titres majeurs remportés
+• Les animaux : Symbolisent la force, l'agilité ou l'histoire locale
+• Les couleurs : Porteuses de sens et d'identité pour les supporters
+• Les dates : Rappellent l'année de fondation et l'histoire du club
+
+L'importance du logo dans l'identité du club
+
+Le logo est crucial car il :
+- Crée un lien émotionnel avec les supporters
+- Représente l'histoire et les valeurs du club
+- Aide à la reconnaissance de la marque
+- Participe à la commercialisation des produits dérivés
+
+En conclusion, les logos de football sont des œuvres d'art qui racontent une histoire. Ils évoluent constamment tout en préservant l'essence de ce qui rend chaque club unique.`
   },
   {
     id: 3,

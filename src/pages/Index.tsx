@@ -1,10 +1,9 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ShoppingCart } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,

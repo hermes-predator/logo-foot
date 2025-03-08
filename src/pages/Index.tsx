@@ -1,9 +1,10 @@
+
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -14,6 +15,11 @@ import {
 } from "@/components/ui/dialog";
 
 const Index = () => {
+  const scrollToPayment = () => {
+    const paymentSection = document.querySelector('#payment-section');
+    paymentSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
@@ -208,13 +214,24 @@ const Index = () => {
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={scrollToPayment}
+                className="gap-2"
+              >
+                <ChevronDown className="h-4 w-4" />
+                Voir le prix
+              </Button>
             </div>
           </div>
         </section>
 
         <ProductGallery />
 
-        <PaymentSection />
+        <div id="payment-section">
+          <PaymentSection />
+        </div>
       </main>
       <Footer />
     </div>

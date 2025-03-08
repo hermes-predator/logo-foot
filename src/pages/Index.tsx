@@ -15,11 +15,9 @@ import {
 } from "@/components/ui/dialog";
 
 const Index = () => {
-  const handleScroll = () => {
-    const paymentSection = document.getElementById('payment-section');
-    if (paymentSection) {
-      paymentSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handlePayment = () => {
+    const returnUrl = `${window.location.origin}/payment-success`;
+    window.location.href = `https://pay.sumup.com/b2c/Q1XS12DX?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
@@ -218,17 +216,19 @@ const Index = () => {
               </Dialog>
 
               <Button
-                onClick={handleScroll}
-                size="icon"
+                onClick={handlePayment}
+                size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white"
               >
-                <ShoppingCart className="h-4 w-4" />
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Payer 20,00€
               </Button>
             </div>
           </div>
         </section>
 
         <ProductGallery />
+
         <PaymentSection />
       </main>
       <Footer />

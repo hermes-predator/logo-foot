@@ -157,11 +157,6 @@ Stockage et organisation sur Google Drive
 
 Pour une gestion optimale de vos logos :
 
-1. Structure recommandée
-- Créer un dossier principal "Logos Football"
-- Organiser par ligues/compétitions
-- Sous-dossiers par équipe
-
 2. Avantages du stockage sur Drive
 - Accessibilité multiplateforme
 - Synchronisation automatique

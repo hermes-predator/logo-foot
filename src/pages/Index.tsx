@@ -1,9 +1,10 @@
+
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ShoppingCart } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -14,6 +15,11 @@ import {
 } from "@/components/ui/dialog";
 
 const Index = () => {
+  const handlePayment = () => {
+    const returnUrl = `${window.location.origin}/payment-success`;
+    window.location.href = `https://pay.sumup.com/b2c/Q1XS12DX?return_url=${encodeURIComponent(returnUrl)}`;
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
@@ -208,6 +214,15 @@ const Index = () => {
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
+
+              <Button
+                onClick={handlePayment}
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white"
+              >
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Payer 20,00€
+              </Button>
             </div>
           </div>
         </section>

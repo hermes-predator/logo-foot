@@ -16,14 +16,14 @@ import {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
         {/* Hero Section */}
         <section className="relative py-20 px-4 overflow-hidden">
           {/* Fond décoratif */}
           <div className="absolute inset-0 -z-10">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-100/80 via-white to-blue-100/80 opacity-70" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(139,92,246,0.1),transparent_50%)]" />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-blue-50 opacity-70" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
           </div>
 
           <div className="max-w-4xl mx-auto text-center space-y-8">

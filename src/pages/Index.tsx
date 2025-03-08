@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -39,7 +38,7 @@ const Index = () => {
               Logos des clubs de football
             </h1>
 
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 italic mt-6">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6">
               ⦗FRONT-CLOUD⦘~ Football.zip
             </h2>
 

@@ -1,27 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "L'importance de la sécurité dans le cloud computing",
-    excerpt: "Dans un monde de plus en plus connecté, la sécurité des données dans le cloud devient primordiale. Découvrez les meilleures pratiques et les enjeux essentiels.",
-    date: "2024-02-15",
-  },
-  {
-    id: 2,
-    title: "Les tendances DevOps en 2024",
-    excerpt: "Le DevOps continue d'évoluer rapidement. Explorons ensemble les nouvelles tendances et technologies qui façonnent l'avenir du développement logiciel.",
-    date: "2024-02-10",
-  },
-  {
-    id: 3,
-    title: "Comment optimiser ses déploiements cloud",
-    excerpt: "Un guide pratique pour améliorer vos processus de déploiement et maximiser l'efficacité de vos applications dans le cloud.",
-    date: "2024-02-05",
-  }
-];
+import { blogPosts } from '../data/blogPosts';
 
 const Blog = () => {
   return (

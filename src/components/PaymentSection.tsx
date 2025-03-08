@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShoppingCart, Download, Shield } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+import { Button } from './ui/button';
 
 const PaymentSection = () => {
   const handlePayment = () => {

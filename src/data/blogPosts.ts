@@ -167,13 +167,6 @@ Les formats recommandés
 - Parfait pour l'impression
 - Compatible avec tous les navigateurs modernes
 
-Résolutions recommandées
-
-• Réseaux sociaux : minimum 500x500 pixels
-• Sites web : 1000x1000 pixels recommandé
-• Impression : format vectoriel conseillé
-• Applications mobiles : 250x250 pixels minimum
-
 Bonnes pratiques d'utilisation
 
 1. Respecter les zones de protection
@@ -208,6 +201,23 @@ Conseils pour un rendu optimal
 - Respecter la charte graphique
 - Adapter la taille au contexte
 - Garantir la cohérence visuelle
+
+Stockage et organisation sur Google Drive
+
+Pour une gestion optimale de vos logos :
+
+1. Structure recommandée
+- Créer un dossier principal "Logos Football"
+- Organiser par ligues/compétitions
+- Sous-dossiers par équipe
+- Séparer les versions (PNG/SVG)
+
+2. Avantages du stockage sur Drive
+- Accessibilité multiplateforme
+- Synchronisation automatique
+- Partage facile avec l'équipe
+- Sauvegarde sécurisée
+- Intégration avec les outils Google
 
 La qualité des logos est primordiale pour tout projet professionnel. En suivant ces recommandations, vous assurerez une utilisation optimale des logos de football dans vos créations.`
   },

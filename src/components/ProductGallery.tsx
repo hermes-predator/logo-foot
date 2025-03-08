@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -28,6 +27,39 @@ const countries = [
 ];
 
 const getCountryDescription = (country: string) => {
+  const countryChampionships: { [key: string]: string } = {
+    'France': 'Ligue 1',
+    'Allemagne': 'Bundesliga',
+    'Espagne': 'La Liga',
+    'Italie': 'Serie A',
+    'Angleterre': 'Premier League',
+    'Portugal': 'Liga Portugal',
+    'Brésil': 'Brasileirão',
+    'Pays-Bas': 'Eredivisie',
+    'Belgique': 'Pro League',
+    'Turquie': 'Süper Lig',
+    'Suisse': 'Super League',
+    'Écosse': 'Scottish Premiership',
+    'Autriche': 'Bundesliga',
+    'Grèce': 'Super League',
+    'Ukraine': 'Premier League',
+    'Russie': 'Premier Liga',
+    'Danemark': 'Superliga',
+    'Norvège': 'Eliteserien',
+    'Suède': 'Allsvenskan',
+    'Pologne': 'Ekstraklasa',
+    'République Tchèque': 'First League',
+    'Croatie': 'HNL',
+    'Serbie': 'Super Liga',
+    'Roumanie': 'Liga I',
+    'Hongrie': 'NB I',
+    'Bulgarie': 'First League',
+    'États-Unis': 'MLS',
+    'Argentine': 'Primera División',
+    'Australie': 'A-League',
+    'Arabie Saoudite': 'Saudi Pro League'
+  };
+
   const countryAdjectives: { [key: string]: string } = {
     'France': 'Français',
     'Allemagne': 'Allemands',
@@ -38,10 +70,12 @@ const getCountryDescription = (country: string) => {
     'Brésil': 'Brésiliens',
     'Pays-Bas': 'Néerlandais',
     'Belgique': 'Belges',
-    // Pour les autres pays, on utilise directement le nom du pays
   };
 
-  return countryAdjectives[country] || `de ${country}`;
+  const adjective = countryAdjectives[country] || `de ${country}`;
+  const championship = countryChampionships[country] ? ` de la ${countryChampionships[country]}` : '';
+
+  return `Collection complète des logos de foot ${adjective} - Format HD transparent - Collection complète équipes de foot${championship} - ${country}`;
 };
 
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
@@ -52,7 +86,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
     videoUrl: `/videos/logo${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
-    altText: `Collection complète des logos de foot ${getCountryDescription(country)} - Format HD transparent - Collection complète équipes de foot - ${country}`,
+    altText: getCountryDescription(country),
   };
 });
 

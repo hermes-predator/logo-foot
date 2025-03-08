@@ -68,7 +68,7 @@ const Index = () => {
                   <DialogHeader>
                     <DialogTitle className="text-2xl font-bold mb-4">Contenu du pack</DialogTitle>
                     <DialogDescription className="text-left space-y-6">
-                      <p className="text-lg font-medium text-purple-900">
+                      <p className="text-lg font-medium text-[#8E9196]">
                         Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique.
                       </p>
 

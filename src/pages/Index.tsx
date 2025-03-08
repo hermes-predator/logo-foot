@@ -166,21 +166,43 @@ const Index = () => {
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="space-y-2 pt-6 border-t">
-                        <p className="flex items-center gap-2 text-green-700">
-                          <CheckCircle2 className="h-5 w-5" />
-                          Ressources cadrées, uniformes, nommées et déjà triées
-                        </p>
-                        <p className="flex items-center gap-2 text-green-700">
-                          <CheckCircle2 className="h-5 w-5" />
-                          Couverture totale du football pour vos projets WEB
-                        </p>
-                        <p className="flex items-center gap-2 text-green-700">
-                          <CheckCircle2 className="h-5 w-5" />
-                          Directement stockable sur ordinateur ou cloud privé
-                        </p>
+                        <div className="space-y-4 p-4 rounded-lg bg-red-50/50">
+                          <h3 className="text-xl font-bold text-red-900">𝐅.𝟎𝟓 – Logos des bookmakers</h3>
+                          <div className="grid grid-cols-2 gap-4">
+                            <div>
+                              <p className="font-semibold">Format :</p>
+                              <p>PNG (fond transparent)</p>
+                            </div>
+                            <div>
+                              <p className="font-semibold">Dimensions :</p>
+                              <p>200px</p>
+                            </div>
+                            <div>
+                              <p className="font-semibold">Sous-groupes :</p>
+                              <p>1 collection</p>
+                            </div>
+                            <div>
+                              <p className="font-semibold">Quantité totale :</p>
+                              <p>20 ressources</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="space-y-2 pt-6 border-t">
+                          <p className="flex items-center gap-2 text-green-700">
+                            <CheckCircle2 className="h-5 w-5" />
+                            Ressources cadrées, uniformes, nommées et déjà triées
+                          </p>
+                          <p className="flex items-center gap-2 text-green-700">
+                            <CheckCircle2 className="h-5 w-5" />
+                            Couverture totale du football pour vos projets WEB
+                          </p>
+                          <p className="flex items-center gap-2 text-green-700">
+                            <CheckCircle2 className="h-5 w-5" />
+                            Directement stockable sur ordinateur ou cloud privé
+                          </p>
+                        </div>
                       </div>
                     </DialogDescription>
                   </DialogHeader>

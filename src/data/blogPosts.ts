@@ -61,7 +61,7 @@ En conclusion, les logos de football sont des œuvres d'art qui racontent une hi
     title: "Front Cloud Football : La solution ultime pour gérer vos ressources visuelles sportives",
     excerpt: "Découvrez comment Front Cloud Football révolutionne la gestion des logos et ressources de football avec une bibliothèque complète et des outils performants.",
     date: "2024-02-10",
-    content: `Front Cloud Football est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre plateforme peut transformer votre approche de la gestion des actifs sportifs.
+    content: `Front Cloud Football est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs sportifs.
 
 Une bibliothèque complète
 

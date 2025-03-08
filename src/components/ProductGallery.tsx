@@ -63,17 +63,21 @@ const ProductGallery = () => {
     <section className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {galleryItems.map((item) => (
+          {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className="relative aspect-square rounded-lg overflow-hidden"
+              className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-xl"
+              style={{
+                opacity: 0,
+                animation: `fadeIn 0.5s ease-out ${index * 0.1}s forwards`
+              }}
               onMouseEnter={() => setHoveredItem(item.id)}
               onMouseLeave={() => setHoveredItem(null)}
             >
               {hoveredItem === item.id ? (
                 <video
                   src={item.videoUrl}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out scale-105"
                   autoPlay
                   muted
                   loop
@@ -85,14 +89,16 @@ const ProductGallery = () => {
                   <img
                     src={item.imageUrl}
                     alt={item.altText}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-700 ease-out hover:scale-105"
                   />
-                  <div className="absolute bottom-2 right-2">
+                  <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
                     <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
                   </div>
                 </>
               )}
-              <p className="text-center mt-2 text-sm text-gray-600">{item.title}</p>
+              <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">
+                {item.title}
+              </p>
             </div>
           ))}
         </div>

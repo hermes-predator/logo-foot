@@ -22,7 +22,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
-        <section className="relative py-20 px-4 overflow-hidden">
+        <section className="relative pt-12 pb-20 px-4 overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />

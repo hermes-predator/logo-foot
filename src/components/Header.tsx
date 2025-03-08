@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="w-full py-4 px-6 bg-white/50 backdrop-blur-md border-b border-purple-100/20 sticky top-0 z-50">
-      <nav className="container mx-auto flex items-center justify-center gap-8">
+      <nav className="container mx-auto flex items-center justify-end gap-8">
         <Link 
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"

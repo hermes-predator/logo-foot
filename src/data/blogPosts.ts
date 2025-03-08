@@ -210,7 +210,6 @@ Pour une gestion optimale de vos logos :
 - Créer un dossier principal "Logos Football"
 - Organiser par ligues/compétitions
 - Sous-dossiers par équipe
-- Séparer les versions (PNG/SVG)
 
 2. Avantages du stockage sur Drive
 - Accessibilité multiplateforme
@@ -219,7 +218,7 @@ Pour une gestion optimale de vos logos :
 - Sauvegarde sécurisée
 - Intégration avec les outils Google
 
-La qualité des logos est primordiale pour tout projet professionnel. En suivant ces recommandations, vous assurerez une utilisation optimale des logos de football dans vos créations.`
+La qualité des logos est primordiale pour tout projet professionnel. En suivant ces recommandations, vous assurerez une utilisation optimale des logos de football dans vos créations.`,
   },
   {
     id: 4,

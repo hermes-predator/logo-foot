@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -18,22 +17,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main className="container mx-auto">
-        {/* Hero Section */}
         <section className="relative py-20 px-4 overflow-hidden">
-          {/* Fond décoratif */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-blue-50 opacity-70" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
           </div>
 
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Crown badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-purple-100 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-purple-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md mb-6">
               <Crown className="w-5 h-5 text-purple-600" />
               <span className="text-sm font-medium text-purple-900">Collection Premium</span>
             </div>
 
-            {/* Title and subtitle */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
               Logos des clubs de football
             </h1>
@@ -46,17 +41,16 @@ const Index = () => {
               La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de clubs de foot internationaux, les logos des compétitions... une couverture complète réunie dans un seul fichier arborescent.
             </p>
 
-            {/* Badges de confiance */}
             <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
                 <ShieldCheck className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
                 <Lock className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
                 <CheckCircle2 className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
               </div>
@@ -132,10 +126,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Gallery Section */}
         <ProductGallery />
 
-        {/* Payment Section */}
         <PaymentSection />
       </main>
       <Footer />

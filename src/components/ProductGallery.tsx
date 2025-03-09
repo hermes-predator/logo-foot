@@ -60,6 +60,29 @@ const getCountryDescription = (country: string) => {
     'Arabie Saoudite': 'Saudi Pro League'
   };
 
+  const countryAdjectives: { [key: string]: string } = {
+    'France': 'français',
+    'Allemagne': 'allemands',
+    'Espagne': 'espagnols',
+    'Italie': 'italiens',
+    'Angleterre': 'anglais',
+    'Portugal': 'portugais',
+    'Brésil': 'brésiliens',
+    'Pays-Bas': 'néerlandais',
+    'Belgique': 'belges',
+    'Turquie': 'turcs',
+    'Suisse': 'suisses',
+    'Écosse': 'écossais',
+    'Autriche': 'autrichiens',
+    'Grèce': 'grecs',
+    'Ukraine': 'ukrainiens',
+    'Russie': 'russes',
+    'Danemark': 'danois',
+    'Norvège': 'norvégiens',
+    'Suède': 'suédois',
+    'Pologne': 'polonais'
+  };
+
   if (country === 'Sélections Nationales') {
     return 'Collection complète des logos des sélections nationales de football - Format HD transparent - Tous les pays';
   }
@@ -68,12 +91,13 @@ const getCountryDescription = (country: string) => {
     return `Collection complète des logos ${country.toLowerCase()} - Format HD transparent`;
   }
 
+  const adjective = countryAdjectives[country] || `de ${country}`;
   const championship = countryChampionships[country];
   if (championship) {
-    return `Collection complète des logos de club de foot ${country} - Format HD transparent - Toutes les équipes de foot de la ${championship} - ${country}`;
+    return `Collection complète des logos de club de foot ${adjective} - Format HD transparent - Toutes les équipes de foot de la ${championship} - ${country}`;
   }
 
-  return `Collection complète des logos de foot ${country} - Format HD transparent - Toutes les équipes de foot - ${country}`;
+  return `Collection complète des logos de foot ${adjective} - Format HD transparent - Toutes les équipes de foot - ${country}`;
 };
 
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {

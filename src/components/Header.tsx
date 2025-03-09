@@ -11,7 +11,7 @@ const Header = () => {
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
           <FileArchive className="w-6 h-6 text-purple-600" />
-          <span className="font-medium">FRONT-CLOUD</span>
+          <span className="font-medium">logo-foot.com</span>
         </Link>
         
         <div className="flex items-center gap-8">

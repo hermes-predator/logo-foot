@@ -60,22 +60,20 @@ const getCountryDescription = (country: string) => {
     'Arabie Saoudite': 'Saudi Pro League'
   };
 
-  const countryAdjectives: { [key: string]: string } = {
-    'France': 'Français',
-    'Allemagne': 'Allemands',
-    'Espagne': 'Espagnols',
-    'Italie': 'Italiens',
-    'Angleterre': 'Anglais',
-    'Portugal': 'Portugais',
-    'Brésil': 'Brésiliens',
-    'Pays-Bas': 'Néerlandais',
-    'Belgique': 'Belges',
-  };
+  if (country === 'Sélections Nationales') {
+    return 'Collection complète des logos des sélections nationales de football - Format HD transparent - Tous les pays';
+  }
 
-  const adjective = countryAdjectives[country] || `de ${country}`;
-  const championship = countryChampionships[country] ? ` de la ${countryChampionships[country]}` : '';
+  if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
+    return `Collection complète des logos ${country.toLowerCase()} - Format HD transparent`;
+  }
 
-  return `Collection complète des logos de foot ${adjective} - Format HD transparent - Collection complète équipes de foot${championship} - ${country}`;
+  const championship = countryChampionships[country];
+  if (championship) {
+    return `Collection complète des logos de club de foot ${country} - Format HD transparent - Toutes les équipes de foot de la ${championship} - ${country}`;
+  }
+
+  return `Collection complète des logos de foot ${country} - Format HD transparent - Toutes les équipes de foot - ${country}`;
 };
 
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {

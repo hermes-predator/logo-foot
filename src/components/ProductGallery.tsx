@@ -99,16 +99,27 @@ const getCountryDescription = (country: string) => {
   }
 
   if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
-    return `Collection complète des logos ${country.toLowerCase()} - Format HD transparent`;
+    return `Collection des logos de ${country.toLowerCase()} - Format HD transparent - Tous les clubs de foot`;
   }
 
   const adjective = countryAdjectives[country] || `de ${country}`;
   const championship = countryChampionships[country];
   if (championship) {
-    return `Collection complète des logos de club de foot ${adjective} - Format HD transparent - Toutes les équipes de foot de la ${championship} - ${country}`;
+    return `Collection des logos des clubs de football ${adjective} - Format HD transparent - Logo club foot de la ${championship} - ${country}`;
   }
 
-  return `Collection complète des logos de foot ${adjective} - Format HD transparent - Toutes les équipes de foot - ${country}`;
+  return `Collection des logo de clubs de foot ${adjective} - Format HD transparent - Logo football ${country}`;
+};
+
+const getVideoTitle = (country: string) => {
+  if (country === 'Sélections Nationales') {
+    return 'Animation logos football des sélections nationales';
+  }
+  if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
+    return `Animation logo de ${country.toLowerCase()}`;
+  }
+  const championship = countryChampionships[country];
+  return championship ? `Animation logo foot ${championship} - Clubs de football` : `Animation logos de foot ${country} - Club de football`;
 };
 
 const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
@@ -126,17 +137,6 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
 const ProductGallery = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
-
-  const getVideoTitle = (country: string) => {
-    if (country === 'Sélections Nationales') {
-      return 'Animation logos des sélections nationales de football';
-    }
-    if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
-      return `Animation logos ${country.toLowerCase()}`;
-    }
-    const championship = countryChampionships[country];
-    return championship ? `Animation logo foot ${championship}` : `Animation logo foot ${country}`;
-  };
 
   return (
     <section className="container mx-auto px-4 py-12">

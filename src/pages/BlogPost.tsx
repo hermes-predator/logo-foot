@@ -12,8 +12,9 @@ const BlogPost = () => {
     return (
       <div className="container mx-auto py-20 px-4">
         <Helmet>
-          <title>Article non trouvé | Logo Foot</title>
-          <meta name="description" content="Cet article n'existe pas ou a été déplacé." />
+          <title>Article non trouvé | Logo Foot & Football</title>
+          <meta name="description" content="Cet article sur les logos et clubs de foot n'existe pas ou a été déplacé." />
+          <meta name="keywords" content="logo foot, logos football, club de foot, clubs de football" />
         </Helmet>
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Article non trouvé</h1>
@@ -28,12 +29,13 @@ const BlogPost = () => {
   return (
     <div className="container mx-auto py-20 px-4 max-w-3xl">
       <Helmet>
-        <title>{post.title} | Logo Foot</title>
+        <title>{post.title} | Logo Foot & Football</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={`${post.title} | Logo Foot`} />
+        <meta property="og:title" content={`${post.title} | Logo Foot & Football`} />
         <meta property="og:description" content={post.excerpt} />
-        <meta name="twitter:title" content={`${post.title} | Logo Foot`} />
+        <meta name="twitter:title" content={`${post.title} | Logo Foot & Football`} />
         <meta name="twitter:description" content={post.excerpt} />
+        <meta name="keywords" content="logo foot, logos football, club de foot, clubs de football, logo club, logos des clubs" />
       </Helmet>
       <article className="prose prose-purple lg:prose-lg mx-auto">
         <Link 

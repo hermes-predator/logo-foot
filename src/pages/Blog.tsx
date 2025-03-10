@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -7,18 +8,22 @@ const Blog = () => {
   return (
     <div className="container mx-auto py-20 px-4">
       <Helmet>
-        <title>Blog | Articles sur les Logos de Football | Logo Foot</title>
+        <title>Blog | Logo Foot & Football | Articles sur les Clubs de Football</title>
         <meta 
           name="description" 
-          content="Découvrez nos articles sur les logos de football : histoire, design, signification et évolution des emblèmes des plus grands clubs de football." 
+          content="Découvrez nos articles sur le foot : histoire des logos et clubs de football, design des emblèmes, signification et évolution des logos des plus grands clubs." 
         />
         <meta 
           property="og:title" 
-          content="Blog | Articles sur les Logos de Football | Logo Foot" 
+          content="Blog | Logo Foot & Football | Articles sur les Clubs de Football" 
         />
         <meta 
           property="og:description" 
-          content="Découvrez nos articles sur les logos de football : histoire, design, signification et évolution des emblèmes des plus grands clubs de football." 
+          content="Découvrez nos articles sur le foot : histoire des logos et clubs de football, design des emblèmes, signification et évolution des logos des plus grands clubs." 
+        />
+        <meta 
+          name="keywords" 
+          content="logo foot, logos football, club de foot, clubs de football, logo club, logos des clubs, article foot, article football, histoire logo, histoire club"
         />
       </Helmet>
       <h1 className="text-4xl font-bold text-gray-800 mb-12">Articles</h1>

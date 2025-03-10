@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 const PaymentSection = () => {
   const handlePayment = () => {
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/Q1XS12DX?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/QRLWEQON?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
@@ -65,3 +65,4 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { FileText, Scroll, MessageCircle } from "lucide-react";
+import { FileText, Scroll, MessageCircle, HelpCircle } from "lucide-react";
 import ContactForm from './ContactForm';
 
 const Footer = () => {
@@ -127,6 +127,54 @@ const Footer = () => {
                 <section>
                   <h3 className="font-semibold mb-2">Litiges</h3>
                   <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Tout différend pourra être soumis aux tribunaux compétents.</p>
+                </section>
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog>
+            <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+              <HelpCircle className="w-4 h-4" />
+              FAQ
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Questions fréquentes</DialogTitle>
+              </DialogHeader>
+              <div className="mt-4 text-sm space-y-6">
+                <section>
+                  <h3 className="font-semibold mb-2">Que contient exactement le pack de logos ?</h3>
+                  <p>Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, les logos des compétitions majeures, et des drapeaux nationaux. Tous les fichiers sont en format PNG avec fond transparent.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Comment se déroule le téléchargement ?</h3>
+                  <p>Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à votre fichier ZIP contenant tous les logos.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Dans quel format sont les logos ?</h3>
+                  <p>Tous les logos sont au format PNG avec fond transparent. Les logos de clubs sont en 120px, les logos de compétitions en 200px, et les drapeaux en 256px.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Puis-je utiliser ces logos pour mon site web ?</h3>
+                  <p>Oui, les logos peuvent être utilisés pour des projets web personnels. Cependant, gardez à l'esprit que les logos sont la propriété de leurs détenteurs respectifs.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Le paiement est-il sécurisé ?</h3>
+                  <p>Oui, nous utilisons SumUp, un prestataire de paiement sécurisé et certifié, pour traiter toutes les transactions.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Que faire si je rencontre un problème avec le téléchargement ?</h3>
+                  <p>En cas de problème, vous pouvez nous contacter via le formulaire de contact. Nous vous répondrons dans les plus brefs délais.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Les mises à jour sont-elles incluses ?</h3>
+                  <p>Les mises à jour majeures du pack ne sont pas incluses, mais vous serez informé par email lorsqu'une nouvelle version sera disponible.</p>
                 </section>
               </div>
             </DialogContent>

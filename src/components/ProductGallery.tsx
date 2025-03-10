@@ -32,40 +32,40 @@ const countries = [
   'Compétitions de football', 'Compétitions internationales', 'Coupes nationales', 'Championnats'
 ];
 
-const getCountryDescription = (country: string) => {
-  const countryChampionships: { [key: string]: string } = {
-    'France': 'Ligue 1',
-    'Allemagne': 'Bundesliga',
-    'Espagne': 'La Liga',
-    'Italie': 'Serie A',
-    'Angleterre': 'Premier League',
-    'Portugal': 'Liga Portugal',
-    'Brésil': 'Brasileirão',
-    'Pays-Bas': 'Eredivisie',
-    'Belgique': 'Pro League',
-    'Turquie': 'Süper Lig',
-    'Suisse': 'Super League',
-    'Écosse': 'Scottish Premiership',
-    'Autriche': 'Bundesliga',
-    'Grèce': 'Super League',
-    'Ukraine': 'Premier League',
-    'Russie': 'Premier Liga',
-    'Danemark': 'Superliga',
-    'Norvège': 'Eliteserien',
-    'Suède': 'Allsvenskan',
-    'Pologne': 'Ekstraklasa',
-    'République Tchèque': 'First League',
-    'Croatie': 'HNL',
-    'Serbie': 'Super Liga',
-    'Roumanie': 'Liga I',
-    'Hongrie': 'NB I',
-    'Bulgarie': 'First League',
-    'États-Unis': 'MLS',
-    'Argentine': 'Primera División',
-    'Australie': 'A-League',
-    'Arabie Saoudite': 'Saudi Pro League'
-  };
+const countryChampionships: { [key: string]: string } = {
+  'France': 'Ligue 1',
+  'Allemagne': 'Bundesliga',
+  'Espagne': 'La Liga',
+  'Italie': 'Serie A',
+  'Angleterre': 'Premier League',
+  'Portugal': 'Liga Portugal',
+  'Brésil': 'Brasileirão',
+  'Pays-Bas': 'Eredivisie',
+  'Belgique': 'Pro League',
+  'Turquie': 'Süper Lig',
+  'Suisse': 'Super League',
+  'Écosse': 'Scottish Premiership',
+  'Autriche': 'Bundesliga',
+  'Grèce': 'Super League',
+  'Ukraine': 'Premier League',
+  'Russie': 'Premier Liga',
+  'Danemark': 'Superliga',
+  'Norvège': 'Eliteserien',
+  'Suède': 'Allsvenskan',
+  'Pologne': 'Ekstraklasa',
+  'République Tchèque': 'First League',
+  'Croatie': 'HNL',
+  'Serbie': 'Super Liga',
+  'Roumanie': 'Liga I',
+  'Hongrie': 'NB I',
+  'Bulgarie': 'First League',
+  'États-Unis': 'MLS',
+  'Argentine': 'Primera División',
+  'Australie': 'A-League',
+  'Arabie Saoudite': 'Saudi Pro League'
+};
 
+const getCountryDescription = (country: string) => {
   const countryAdjectives: { [key: string]: string } = {
     'France': 'français',
     'Allemagne': 'allemands',
@@ -127,6 +127,17 @@ const ProductGallery = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
+  const getVideoTitle = (country: string) => {
+    if (country === 'Sélections Nationales') {
+      return 'Animation logos des sélections nationales de football';
+    }
+    if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
+      return `Animation logos ${country.toLowerCase()}`;
+    }
+    const championship = countryChampionships[country];
+    return championship ? `Animation logos ${championship}` : `Animation logos foot ${country}`;
+  };
+
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto">
@@ -154,7 +165,7 @@ const ProductGallery = () => {
                           muted
                           loop
                           playsInline
-                          title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
+                          title={getVideoTitle(item.country)}
                         />
                         <div className="absolute top-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
                           <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
@@ -185,7 +196,7 @@ const ProductGallery = () => {
                       controls
                       loop
                       playsInline
-                      title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
+                      title={getVideoTitle(item.country)}
                     />
                   </div>
                 </DialogContent>

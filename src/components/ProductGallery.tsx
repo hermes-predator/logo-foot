@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { Play } from 'lucide-react';
+import { Play, Maximize2 } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "./ui/dialog";
 
 interface GalleryItem {
   id: number;
@@ -151,6 +156,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
 
 const ProductGallery = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+  const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
   return (
     <section className="container mx-auto px-4 py-12">
@@ -167,30 +173,50 @@ const ProductGallery = () => {
               onMouseEnter={() => setHoveredItem(item.id)}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              {hoveredItem === item.id ? (
-                <div className="w-full h-full">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="w-full h-full text-left" onClick={() => setSelectedItem(item)}>
+                    {hoveredItem === item.id ? (
+                      <div className="w-full h-full">
+                        <video
+                          src={item.videoUrl}
+                          className="absolute inset-0 w-full h-full object-contain bg-gray-900"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
+                        />
+                        <div className="absolute top-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
+                          <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        <img
+                          src={item.imageUrl}
+                          alt={item.altText}
+                          className="w-full h-full object-contain"
+                        />
+                        <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
+                          <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                        </div>
+                      </>
+                    )}
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full h-[80vh] p-0 bg-gray-900">
                   <video
                     src={item.videoUrl}
-                    className="absolute inset-0 w-full h-full object-contain bg-gray-900"
+                    className="w-full h-full object-contain"
                     autoPlay
-                    muted
+                    controls
                     loop
                     playsInline
                     title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
                   />
-                </div>
-              ) : (
-                <>
-                  <img
-                    src={item.imageUrl}
-                    alt={item.altText}
-                    className="w-full h-full object-contain"
-                  />
-                  <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
-                    <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
-                  </div>
-                </>
-              )}
+                </DialogContent>
+              </Dialog>
               <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">
                 {item.title}
               </p>

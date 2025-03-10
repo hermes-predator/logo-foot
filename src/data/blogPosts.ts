@@ -10,9 +10,9 @@ export const blogPosts: BlogPost[] = [
   {
     id: 2,
     title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football",
-    excerpt: "⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques sportifs.",
+    excerpt: "⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques du football.",
     date: "2024-02-10",
-    content: `⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques sportifs.
+    content: `⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques du football.
 
 Une bibliothèque complète
 
@@ -29,8 +29,6 @@ Une bibliothèque complète
 - Emblèmes des fédérations
 - Mascottes officielles des clubs
 - Éléments graphiques des équipes
-- Typographies exclusives
-- Chartes graphiques complètes
 
 Performance et accessibilité
 
@@ -38,7 +36,7 @@ Performance et accessibilité
 - Fichier optimisé et compressé
 - Disponibilité mondiale garantie 
 - Compatibilité multi-plateformes
-- Sauvegarde sécurisée
+- Conçu pour le long terme
 
 2. Facilité d'utilisation
 - Organisation intuitive des dossiers

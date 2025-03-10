@@ -174,7 +174,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Les mises à jour sont-elles incluses ?</h3>
-                  <p>Les mises à jour majeures du pack ne sont pas incluses, mais vous serez informé par email lorsqu'une nouvelle version sera disponible.</p>
+                  <p>Les mises à jour majeures du pack ne sont pas incluses.</p>
                 </section>
               </div>
             </DialogContent>

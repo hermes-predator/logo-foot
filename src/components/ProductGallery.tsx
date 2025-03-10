@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -142,7 +143,7 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
   return {
     id: index + 1,
     imageUrl: `/public/images/logo${index + 1}.png`,
-    videoUrl: `/public/videos/logo${index + 1}.mov`,
+    videoUrl: `/public/videos/video${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
     altText: getCountryDescription(country),

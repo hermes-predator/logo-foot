@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
@@ -169,21 +168,23 @@ const ProductGallery = () => {
               onMouseLeave={() => setHoveredItem(null)}
             >
               {hoveredItem === item.id ? (
-                <video
-                  src={item.videoUrl}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out scale-105"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
-                />
+                <div className="w-full h-full">
+                  <video
+                    src={item.videoUrl}
+                    className="absolute inset-0 w-full h-full object-contain bg-gray-900"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
+                  />
+                </div>
               ) : (
                 <>
                   <img
                     src={item.imageUrl}
                     alt={item.altText}
-                    className="w-full h-full object-cover transition-all duration-700 ease-out hover:scale-105"
+                    className="w-full h-full object-contain"
                   />
                   <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
                     <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />

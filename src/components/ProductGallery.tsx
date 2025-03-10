@@ -135,7 +135,7 @@ const ProductGallery = () => {
       return `Animation logos ${country.toLowerCase()}`;
     }
     const championship = countryChampionships[country];
-    return championship ? `Animation logos ${championship}` : `Animation logos foot ${country}`;
+    return championship ? `Animation logo foot ${championship}` : `Animation logo foot ${country}`;
   };
 
   return (

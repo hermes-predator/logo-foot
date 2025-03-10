@@ -84,7 +84,7 @@ En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale p
   },
   {
     id: 5,
-    title: "L'histoire de Front Cloud : Des paris sportifs à la révolution des ressources football",
+    title: "L'histoire de Front Cloud : Des développeurs et un besoin de ressources pour construire le projet d'analyse autour des paris sportifs",
     excerpt: "Découvrez comment une équipe de développeurs passionnés de paris sportifs a créé une solution innovante pour la gestion des ressources visuelles du football.",
     date: "2024-02-01",
     content: `Notre histoire commence dans l'univers effervescent des paris sportifs, où une équipe de développeurs passionnés se réunissait chaque week-end pour suivre les matchs et tenter de prédire les résultats. Au fil du temps, nous avons constaté un défi récurrent : l'accès à des ressources visuelles de qualité pour nos projets de développement liés au football.

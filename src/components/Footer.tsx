@@ -154,7 +154,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Dans quel format sont les logos ?</h3>
-                  <p>Tous les logos sont au format PNG avec fond transparent. Les logos de clubs sont en 120px, les logos de compétitions en 200px, et les drapeaux en 256px.</p>
+                  <p>Tous les logos sont au format PNG avec fond transparent. Les logos de clubs sont en 120px, les logos de compétitions en 200px, les instruments de portefeuille en 150px, les logos des bookmakers en 200px et les drapeaux en 256px.</p>
                 </section>
 
                 <section>

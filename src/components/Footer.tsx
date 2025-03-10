@@ -171,11 +171,6 @@ const Footer = () => {
                   <h3 className="font-semibold mb-2">Que faire si je rencontre un problème avec le téléchargement ?</h3>
                   <p>En cas de problème, vous pouvez nous contacter par e-mail : contact@logo-foot.com. Nous vous répondrons dans les plus brefs délais.</p>
                 </section>
-
-                <section>
-                  <h3 className="font-semibold mb-2">Les mises à jour sont-elles incluses ?</h3>
-                  <p>Les mises à jour majeures du pack ne sont pas incluses.</p>
-                </section>
               </div>
             </DialogContent>
           </Dialog>

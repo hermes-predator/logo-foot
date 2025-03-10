@@ -178,7 +178,7 @@ const ProductGallery = () => {
                   <div className="relative w-full h-full p-4 flex items-center justify-center">
                     <video
                       src={item.videoUrl}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain outline-none"
                       autoPlay
                       controls
                       loop

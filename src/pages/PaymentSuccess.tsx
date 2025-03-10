@@ -9,7 +9,7 @@ const PaymentSuccess = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/public/football-resources.zip';
+    link.href = '/frontcloud-football.zip';
     link.download = 'frontcloud-football.zip';
     document.body.appendChild(link);
     link.click();

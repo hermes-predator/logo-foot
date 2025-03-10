@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Play, Maximize2 } from 'lucide-react';
+import { Play, Maximize2, X } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
+  DialogPrimitive,
 } from "./ui/dialog";
 
 interface GalleryItem {
@@ -173,11 +174,11 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900/95 backdrop-blur-sm rounded-xl overflow-hidden border-2 border-white/20">
+                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 rounded-xl overflow-hidden border border-white/30">
                   <div className="w-full h-full p-4 flex items-center justify-center">
                     <video
                       src={item.videoUrl}
-                      className="w-full h-full object-contain rounded-lg [&::-webkit-media-controls-panel]:bg-gray-800/80 [&::-webkit-media-controls-play-button]:text-white [&::-webkit-media-controls-timeline]:text-white [&::-webkit-media-controls-current-time-display]:text-white [&::-webkit-media-controls-time-remaining-display]:text-white border border-white/10"
+                      className="w-full h-full object-contain rounded-lg"
                       autoPlay
                       controls
                       loop
@@ -185,6 +186,10 @@ const ProductGallery = () => {
                       title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
                     />
                   </div>
+                  <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full bg-black/50 p-2 opacity-90 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+                    <X className="h-5 w-5 text-white" />
+                    <span className="sr-only">Fermer</span>
+                  </DialogPrimitive.Close>
                 </DialogContent>
               </Dialog>
               <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">

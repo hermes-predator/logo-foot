@@ -9,7 +9,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 2,
-    title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution de référence pour vos ressources liées au football",
+    title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football",
     excerpt: "⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques sportifs.",
     date: "2024-02-10",
     content: `⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques sportifs.

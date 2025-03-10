@@ -144,7 +144,7 @@ const Footer = () => {
               <div className="mt-4 text-sm space-y-6">
                 <section>
                   <h3 className="font-semibold mb-2">Que contient exactement le pack de logos ?</h3>
-                  <p>Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, les logos des compétitions majeures, et des drapeaux nationaux. Tous les fichiers sont en format PNG avec fond transparent.</p>
+                  <p>Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, les logos des compétitions majeures, les drapeaux nationaux, les logos des bookmakers et d'autres ressources très utiles. Tous les fichiers sont en format PNG avec fond transparent.</p>
                 </section>
 
                 <section>

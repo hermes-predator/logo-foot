@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Download, Shield, Wallet, Cloud } from 'lucide-react';
 import { Button } from './ui/button';
@@ -6,7 +5,7 @@ import { Button } from './ui/button';
 const PaymentSection = () => {
   const handlePayment = () => {
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/QRLWEQON?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/QF5AA1SQ?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
@@ -65,4 +64,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

@@ -115,8 +115,8 @@ const galleryItems: GalleryItem[] = Array.from({ length: 64 }, (_, index) => {
   const country = countries[index] || 'International';
   return {
     id: index + 1,
-    imageUrl: `/images/logo${index + 1}.png`,
-    videoUrl: `/videos/video${index + 1}.mov`,
+    imageUrl: `/public/images/logo${index + 1}.png`,
+    videoUrl: `/public/videos/video${index + 1}.mov`,
     country: country,
     title: `Logo ${country} - Collection officielle logos clubs de foot`,
     altText: getCountryDescription(country),

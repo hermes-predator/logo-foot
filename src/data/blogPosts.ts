@@ -335,7 +335,7 @@ Chacun de ces logos raconte une histoire unique et continue d'inspirer les desig
   },
   {
     id: 6,
-    title: "Les logos des championnats nationaux de football : Un reflet de l'identité culturelle",
+    title: "Les logos des équipes de foot de chaque championnat nationaux : Un reflet de l'identité culturelle",
     excerpt: "Découvrez comment les logos des clubs de Premier League, Ligue 1, Bundesliga, Serie A et Liga reflètent l'histoire et la culture de leurs pays respectifs.",
     date: "2024-02-16",
     content: `Les logos des clubs de football des différents championnats nationaux sont bien plus que de simples emblèmes - ils racontent l'histoire et l'identité culturelle de chaque pays. Explorons ensemble comment ces logos reflètent l'âme des plus grands championnats européens.

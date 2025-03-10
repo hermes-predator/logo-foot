@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, Download, Shield, Wallet } from 'lucide-react';
+import { ShoppingCart, Download, Shield, Wallet, Cloud } from 'lucide-react';
 import { Button } from './ui/button';
 
 const PaymentSection = () => {
@@ -33,6 +34,10 @@ const PaymentSection = () => {
             <li className="flex items-center text-gray-600">
               <Download className="h-5 w-5 mr-2 text-blue-500" />
               Accès instantané
+            </li>
+            <li className="flex items-center text-gray-600">
+              <Cloud className="h-5 w-5 mr-2 text-blue-500" />
+              Directement stockable
             </li>
             <li className="flex items-center text-gray-600">
               <Wallet className="h-5 w-5 mr-2 text-blue-500" />

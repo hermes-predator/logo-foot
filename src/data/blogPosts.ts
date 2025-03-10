@@ -41,6 +41,7 @@ Performance et accessibilité
 2. Facilité d'utilisation
 - Organisation intuitive des dossiers
 - Classification des ressources
+- Directement stockable sur ordinateur ou cloud privée
 
 Fonctionnalités avancées
 

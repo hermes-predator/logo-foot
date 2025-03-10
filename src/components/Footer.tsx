@@ -60,7 +60,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 6 - Droit de rétractation</h3>
-                  <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé après accord préalable exprès du consommateur.</p>
+                  <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de r��tractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé après accord préalable exprès du consommateur.</p>
                 </section>
 
                 <section>
@@ -150,11 +150,6 @@ const Footer = () => {
                 <section>
                   <h3 className="font-semibold mb-2">Comment se déroule le téléchargement ?</h3>
                   <p>Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à votre fichier ZIP contenant l'arborescence de dossiers et tous les logos en un coup.</p>
-                </section>
-
-                <section>
-                  <h3 className="font-semibold mb-2">Dans quel format sont les logos ?</h3>
-                  <p>Tous les logos sont au format PNG avec fond transparent. Les logos de clubs sont en 120px, les logos de compétitions en 200px, les instruments de portefeuille en 150px, les logos des bookmakers en 200px et les drapeaux en 256px.</p>
                 </section>
 
                 <section>

@@ -205,7 +205,7 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-4xl w-full h-[80vh] p-0 bg-gray-900">
+                <DialogContent className="max-w-[400px] w-full h-[400px] p-0 bg-gray-900">
                   <video
                     src={item.videoUrl}
                     className="w-full h-full object-contain"

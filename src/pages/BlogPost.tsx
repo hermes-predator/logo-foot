@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blogPosts';
 
 const BlogPost = () => {
@@ -10,6 +11,10 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="container mx-auto py-20 px-4">
+        <Helmet>
+          <title>Article non trouvé | Logo Foot</title>
+          <meta name="description" content="Cet article n'existe pas ou a été déplacé." />
+        </Helmet>
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Article non trouvé</h1>
           <Link to="/blog" className="text-purple-600 hover:text-purple-700">
@@ -22,6 +27,14 @@ const BlogPost = () => {
 
   return (
     <div className="container mx-auto py-20 px-4 max-w-3xl">
+      <Helmet>
+        <title>{post.title} | Logo Foot</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={`${post.title} | Logo Foot`} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta name="twitter:title" content={`${post.title} | Logo Foot`} />
+        <meta name="twitter:description" content={post.excerpt} />
+      </Helmet>
       <article className="prose prose-purple lg:prose-lg mx-auto">
         <Link 
           to="/blog"

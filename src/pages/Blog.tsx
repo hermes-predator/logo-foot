@@ -1,10 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blogPosts';
 
 const Blog = () => {
   return (
     <div className="container mx-auto py-20 px-4">
+      <Helmet>
+        <title>Blog | Articles sur les Logos de Football | Logo Foot</title>
+        <meta 
+          name="description" 
+          content="Découvrez nos articles sur les logos de football : histoire, design, signification et évolution des emblèmes des plus grands clubs de football." 
+        />
+        <meta 
+          property="og:title" 
+          content="Blog | Articles sur les Logos de Football | Logo Foot" 
+        />
+        <meta 
+          property="og:description" 
+          content="Découvrez nos articles sur les logos de football : histoire, design, signification et évolution des emblèmes des plus grands clubs de football." 
+        />
+      </Helmet>
       <h1 className="text-4xl font-bold text-gray-800 mb-12">Articles</h1>
       <div className="grid gap-8">
         {blogPosts.map((post) => (

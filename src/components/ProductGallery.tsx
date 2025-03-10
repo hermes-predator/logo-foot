@@ -174,7 +174,9 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 rounded-xl overflow-hidden border border-white/30">
+                <DialogContent 
+                  className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 rounded-xl overflow-hidden border border-white/30"
+                >
                   <div className="relative w-full h-full p-4 flex items-center justify-center">
                     <video
                       src={item.videoUrl}
@@ -185,10 +187,6 @@ const ProductGallery = () => {
                       playsInline
                       title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
                     />
-                    <DialogPrimitive.Close className="absolute left-6 top-6 rounded-full bg-black/70 p-2.5 opacity-90 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
-                      <X className="h-6 w-6 text-white" />
-                      <span className="sr-only">Fermer</span>
-                    </DialogPrimitive.Close>
                   </div>
                 </DialogContent>
               </Dialog>

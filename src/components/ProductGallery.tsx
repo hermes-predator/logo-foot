@@ -4,8 +4,8 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
-  DialogPrimitive,
 } from "./ui/dialog";
+import * as DialogPrimitive from "@radix-ui/react-dialog";
 
 interface GalleryItem {
   id: number;
@@ -175,7 +175,7 @@ const ProductGallery = () => {
                   </button>
                 </DialogTrigger>
                 <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 rounded-xl overflow-hidden border border-white/30">
-                  <div className="w-full h-full p-4 flex items-center justify-center">
+                  <div className="relative w-full h-full p-4 flex items-center justify-center">
                     <video
                       src={item.videoUrl}
                       className="w-full h-full object-contain rounded-lg"
@@ -185,11 +185,11 @@ const ProductGallery = () => {
                       playsInline
                       title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
                     />
+                    <DialogPrimitive.Close className="absolute left-6 top-6 rounded-full bg-black/70 p-2.5 opacity-90 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
+                      <X className="h-6 w-6 text-white" />
+                      <span className="sr-only">Fermer</span>
+                    </DialogPrimitive.Close>
                   </div>
-                  <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full bg-black/50 p-2 opacity-90 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-                    <X className="h-5 w-5 text-white" />
-                    <span className="sr-only">Fermer</span>
-                  </DialogPrimitive.Close>
                 </DialogContent>
               </Dialog>
               <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">

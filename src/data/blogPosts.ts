@@ -9,8 +9,8 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 2,
-    title: "L'histoire de Front Cloud : Des développeurs et un besoin de ressources pour construire le projet d'analyse des paris sportifs",
-    excerpt: "Découvrez comment une équipe de développeurs passionnés de paris sportifs a créé une solution innovante pour la gestion des ressources visuelles du football.",
+    title: "Front Cloud - Football.zip : La solution ultime pour la gestion de vos ressources footballistiques",
+    excerpt: "Découvrez comment une équipe de développeurs passionnés a créé une solution complète pour la gestion des logos et ressources visuelles du football.",
     date: "2024-02-10",
     content: `Notre histoire commence dans l'univers effervescent des paris sportifs, où une équipe de développeurs passionnés se réunissait chaque week-end pour suivre les matchs et tenter de prédire les résultats. Au fil du temps, nous avons constaté un défi récurrent : l'accès à des ressources visuelles de qualité pour nos projets de développement liés au football.
 

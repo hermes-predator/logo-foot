@@ -89,38 +89,6 @@ const getCountryDescription = (country: string) => {
     'Roumanie': 'roumains',
     'Hongrie': 'hongrois',
     'Bulgarie': 'bulgares',
-    'Croatie': 'croates',
-    'Serbie': 'serbes',
-    'Slovaquie': 'slovaques',
-    'Biélorussie': 'biélorusses',
-    'Irlande': 'irlandais',
-    'Pays de Galles': 'gallois',
-    'Finlande': 'finlandais',
-    'Australie': 'australiens',
-    'Arabie Saoudite': 'saoudiens',
-    'Bosnie-Herzégovine': 'bosniens',
-    'Islande': 'islandais',
-    'Israël': 'israéliens',
-    'Luxembourg': 'luxembourgeois',
-    'Slovénie': 'slovènes',
-    'Albanie': 'albanais',
-    'Irlande du Nord': 'nord-irlandais',
-    'Malte': 'maltais',
-    'Azerbaïdjan': 'azerbaïdjanais',
-    'Moldavie': 'moldaves',
-    'Arménie': 'arméniens',
-    'Chypre': 'chypriotes',
-    'Estonie': 'estoniens',
-    'Géorgie': 'géorgiens',
-    'Kazakhstan': 'kazakhs',
-    'Kosovo': 'kosovars',
-    'Lettonie': 'lettons',
-    'Lituanie': 'lituaniens',
-    'Macédoine du Nord': 'macédoniens',
-    'Monténégro': 'monténégrins',
-    'Iles Féroés': 'féroïens',
-    'Qatar': 'qataris',
-    'Gibraltar': 'gibraltariens',
     'États-Unis': 'américains',
     'Argentine': 'argentins'
   };
@@ -205,7 +173,7 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-[400px] w-full h-[400px] p-0 bg-gray-900">
+                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900">
                   <video
                     src={item.videoUrl}
                     className="w-full h-full object-contain"

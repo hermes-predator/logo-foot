@@ -149,7 +149,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Comment se déroule le téléchargement ?</h3>
-                  <p>Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à votre fichier ZIP contenant l'arborescence de dossiers et tous les logos.</p>
+                  <p>Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à votre fichier ZIP contenant l'arborescence de dossiers et tous les logos en un coup.</p>
                 </section>
 
                 <section>

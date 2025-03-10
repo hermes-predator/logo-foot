@@ -8,8 +8,57 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 1,
+    title: "L'histoire des logos des équipes de foot : évolution et signification",
+    excerpt: "Découvrez comment les logos de clubs de football ont évolué au fil des décennies et ce qu'ils représentent vraiment pour les supporters.",
+    date: "2024-02-15",
+    content: `Les logos des clubs de football sont bien plus que de simples symboles graphiques - ils représentent l'histoire, les valeurs et l'identité de chaque club. Dans cet article, nous explorons leur fascinante évolution.
+
+L'origine des logos de football
+
+La plupart des premiers logos de clubs de football, apparus au XIXe siècle, étaient inspirés des blasons héraldiques et des symboles locaux. Ces designs reflétaient souvent :
+- Les couleurs de la ville ou de la région
+- Les industries locales importantes
+- Les symboles historiques du territoire
+- Les initiales ou le nom complet du club
+
+L'évolution au fil des décennies
+
+1. Les années 1950-1960
+- Simplification des designs pour une meilleure reconnaissance
+- Introduction de mascottes et de symboles modernes
+- Utilisation accrue de la typographie
+
+2. Les années 1970-1980
+- Modernisation des logos classiques
+- Apparition des designs minimalistes
+- Importance croissante du marketing
+
+3. L'ère moderne (1990-aujourd'hui)
+- Adaptation aux supports digitaux
+- Versions simplifiées pour les réseaux sociaux
+- Équilibre entre tradition et modernité
+
+La signification des éléments communs
+
+• Les étoiles : Représentent souvent les titres majeurs remportés
+• Les animaux : Symbolisent la force, l'agilité ou l'histoire locale
+• Les couleurs : Porteuses de sens et d'identité pour les supporters
+• Les dates : Rappellent l'année de fondation et l'histoire du club
+
+L'importance du logo dans l'identité du club
+
+Le logo est crucial car il :
+- Crée un lien émotionnel avec les supporters
+- Représente l'histoire et les valeurs du club
+- Aide à la reconnaissance de la marque
+- Participe à la commercialisation des produits dérivés
+
+En conclusion, les logos de football sont des œuvres d'art qui racontent une histoire. Ils évoluent constamment tout en préservant l'essence de ce qui rend chaque club unique.`
+  },
+  {
     id: 2,
-    title: "Front Cloud - Football.zip : La solution ultime pour la gestion de vos ressources footballistiques",
+    title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football",
     excerpt: "Découvrez comment une équipe de développeurs passionnés a créé une solution complète pour la gestion des logos et ressources visuelles du football.",
     date: "2024-02-10",
     content: `⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football
@@ -72,126 +121,7 @@ Solutions sur mesure
 - Support technique 24/7
 - Mises à jour régulières
 
-En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale pour toute organisation travaillant avec des ressources visuelles liées aux logos de football. Notre fichier combine performance, exhaustivité et facilité d'utilisation pour répondre aux besoins les plus exigeants du secteur.`,
-  {
-    id: 5,
-    title: "L'histoire de Front Cloud : Des développeurs et un besoin de ressources pour construire le projet d'analyse autour des paris sportifs",
-    excerpt: "Découvrez comment une équipe de développeurs passionnés de paris sportifs a créé une solution innovante pour la gestion des ressources visuelles du football.",
-    date: "2024-02-01",
-    content: `Notre histoire commence dans l'univers effervescent des paris sportifs, où une équipe de développeurs passionnés se réunissait chaque week-end pour suivre les matchs et tenter de prédire les résultats. Au fil du temps, nous avons constaté un défi récurrent : l'accès à des ressources visuelles de qualité pour nos projets de développement liés au football.
-
-L'étincelle créatrice
-
-Notre équipe s'est constituée autour d'une passion commune pour :
-- Le développement web et mobile
-- L'analyse de données sportives
-- Les paris sportifs
-- Le football en général
-
-La naissance du projet
-
-Notre approche initiale consistait à :
-1. Collecter les données essentielles
-2. Structurer l'information
-3. Développer des algorithmes d'analyse
-4. Créer une interface utilisateur intuitive
-
-Les défis rencontrés
-
-Nous avons dû surmonter plusieurs obstacles :
-- La complexité des données sportives
-- La nécessité d'une mise à jour en temps réel
-- L'intégration de multiples sources d'information
-- La gestion de grandes quantités de données
-
-La solution Front Cloud
-
-Notre solution s'est articulée autour de plusieurs axes :
-
-1. Une architecture robuste
-- Base de données optimisée
-- API performante
-- Interface réactive
-- Système de cache efficace
-
-2. Des fonctionnalités avancées
-- Analyse statistique approfondie
-- Visualisation des données
-- Prédictions basées sur l'IA
-- Alertes personnalisées
-
-3. Une expérience utilisateur optimale
-- Navigation intuitive
-- Temps de chargement minimal
-- Personnalisation poussée
-- Support multiplateforme
-
-L'évolution constante
-
-Nous continuons à faire évoluer la plateforme avec :
-- De nouvelles fonctionnalités régulières
-- Des améliorations de performance
-- Une extension de la couverture des compétitions
-- Une optimisation continue des algorithmes
-
-Notre engagement pour l'avenir
-
-Nous restons déterminés à :
-- Maintenir l'excellence technique
-- Innover constamment
-- Écouter les retours utilisateurs
-- Améliorer continuellement notre service
-
-Front Cloud est devenu bien plus qu'un simple outil d'analyse - c'est une plateforme complète qui transforme la façon dont les passionnés de football et de paris sportifs interagissent avec les données sportives.`,
-  },
-  {
-    id: 1,
-    title: "L'histoire des logos des équipes de foot : évolution et signification",
-    excerpt: "Découvrez comment les logos de clubs de football ont évolué au fil des décennies et ce qu'ils représentent vraiment pour les supporters.",
-    date: "2024-02-15",
-    content: `Les logos des clubs de football sont bien plus que de simples symboles graphiques - ils représentent l'histoire, les valeurs et l'identité de chaque club. Dans cet article, nous explorons leur fascinante évolution.
-
-L'origine des logos de football
-
-La plupart des premiers logos de clubs de football, apparus au XIXe siècle, étaient inspirés des blasons héraldiques et des symboles locaux. Ces designs reflétaient souvent :
-- Les couleurs de la ville ou de la région
-- Les industries locales importantes
-- Les symboles historiques du territoire
-- Les initiales ou le nom complet du club
-
-L'évolution au fil des décennies
-
-1. Les années 1950-1960
-- Simplification des designs pour une meilleure reconnaissance
-- Introduction de mascottes et de symboles modernes
-- Utilisation accrue de la typographie
-
-2. Les années 1970-1980
-- Modernisation des logos classiques
-- Apparition des designs minimalistes
-- Importance croissante du marketing
-
-3. L'ère moderne (1990-aujourd'hui)
-- Adaptation aux supports digitaux
-- Versions simplifiées pour les réseaux sociaux
-- Équilibre entre tradition et modernité
-
-La signification des éléments communs
-
-• Les étoiles : Représentent souvent les titres majeurs remportés
-• Les animaux : Symbolisent la force, l'agilité ou l'histoire locale
-• Les couleurs : Porteuses de sens et d'identité pour les supporters
-• Les dates : Rappellent l'année de fondation et l'histoire du club
-
-L'importance du logo dans l'identité du club
-
-Le logo est crucial car il :
-- Crée un lien émotionnel avec les supporters
-- Représente l'histoire et les valeurs du club
-- Aide à la reconnaissance de la marque
-- Participe à la commercialisation des produits dérivés
-
-En conclusion, les logos de football sont des œuvres d'art qui racontent une histoire. Ils évoluent constamment tout en préservant l'essence de ce qui rend chaque club unique.`
+En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale pour toute organisation travaillant avec des ressources visuelles liées aux logos de football. Notre fichier combine performance, exhaustivité et facilité d'utilisation pour répondre aux besoins les plus exigeants du secteur.`
   },
   {
     id: 3,
@@ -260,7 +190,7 @@ Conseils pour un rendu optimal
 - Adapter la taille au contexte
 - Garantir la cohérence visuelle
 
-La qualité des logos est primordiale pour tout projet professionnel. En suivant ces recommandations, vous assurerez une utilisation optimale des logos de football dans vos créations.`,
+La qualité des logos est primordiale pour tout projet professionnel. En suivant ces recommandations, vous assurerez une utilisation optimale des logos de football dans vos créations.`
   },
   {
     id: 4,
@@ -336,6 +266,77 @@ Ces logos sont devenus des symboles culturels qui dépassent le cadre du footbal
 - L'évolution du design sportif
 
 Chacun de ces logos raconte une histoire unique et continue d'inspirer les designers du monde entier. Leur force réside dans leur capacité à rester pertinents tout en préservant leur essence historique.`
+  },
+  {
+    id: 5,
+    title: "L'histoire de Front Cloud : Des développeurs et un besoin de ressources pour construire le projet d'analyse autour des paris sportifs",
+    excerpt: "Découvrez comment une équipe de développeurs passionnés de paris sportifs a créé une solution innovante pour la gestion des ressources visuelles du football.",
+    date: "2024-02-01",
+    content: `Notre histoire commence dans l'univers effervescent des paris sportifs, où une équipe de développeurs passionnés se réunissait chaque week-end pour suivre les matchs et tenter de prédire les résultats. Au fil du temps, nous avons constaté un défi récurrent : l'accès à des ressources visuelles de qualité pour nos projets de développement liés au football.
+
+L'étincelle créatrice
+
+Notre équipe s'est constituée autour d'une passion commune pour :
+- Le développement web et mobile
+- L'analyse de données sportives
+- Les paris sportifs
+- Le football en général
+
+La naissance du projet
+
+Notre approche initiale consistait à :
+1. Collecter les données essentielles
+2. Structurer l'information
+3. Développer des algorithmes d'analyse
+4. Créer une interface utilisateur intuitive
+
+Les défis rencontrés
+
+Nous avons dû surmonter plusieurs obstacles :
+- La complexité des données sportives
+- La nécessité d'une mise à jour en temps réel
+- L'intégration de multiples sources d'information
+- La gestion de grandes quantités de données
+
+La solution Front Cloud
+
+Notre solution s'est articulée autour de plusieurs axes :
+
+1. Une architecture robuste
+- Base de données optimisée
+- API performante
+- Interface réactive
+- Système de cache efficace
+
+2. Des fonctionnalités avancées
+- Analyse statistique approfondie
+- Visualisation des données
+- Prédictions basées sur l'IA
+- Alertes personnalisées
+
+3. Une expérience utilisateur optimale
+- Navigation intuitive
+- Temps de chargement minimal
+- Personnalisation poussée
+- Support multiplateforme
+
+L'évolution constante
+
+Nous continuons à faire évoluer la plateforme avec :
+- De nouvelles fonctionnalités régulières
+- Des améliorations de performance
+- Une extension de la couverture des compétitions
+- Une optimisation continue des algorithmes
+
+Notre engagement pour l'avenir
+
+Nous restons déterminés à :
+- Maintenir l'excellence technique
+- Innover constamment
+- Écouter les retours utilisateurs
+- Améliorer continuellement notre service
+
+Front Cloud est devenu bien plus qu'un simple outil d'analyse - c'est une plateforme complète qui transforme la façon dont les passionnés de football et de paris sportifs interagissent avec les données sportives.`
   },
   {
     id: 6,

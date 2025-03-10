@@ -173,16 +173,18 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900/95 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10">
-                  <video
-                    src={item.videoUrl}
-                    className="w-full h-full object-contain"
-                    autoPlay
-                    controls
-                    loop
-                    playsInline
-                    title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
-                  />
+                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900/95 backdrop-blur-sm rounded-xl overflow-hidden border-2 border-white/20">
+                  <div className="w-full h-full p-4 flex items-center justify-center">
+                    <video
+                      src={item.videoUrl}
+                      className="w-full h-full object-contain rounded-lg [&::-webkit-media-controls-panel]:bg-gray-800/80 [&::-webkit-media-controls-play-button]:text-white [&::-webkit-media-controls-timeline]:text-white [&::-webkit-media-controls-current-time-display]:text-white [&::-webkit-media-controls-time-remaining-display]:text-white border border-white/10"
+                      autoPlay
+                      controls
+                      loop
+                      playsInline
+                      title={`Animation logo ${item.country} - Collection FRONT-CLOUD`}
+                    />
+                  </div>
                 </DialogContent>
               </Dialog>
               <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">

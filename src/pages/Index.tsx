@@ -43,7 +43,7 @@ const Index = () => {
             </h2>
 
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de clubs de foot internationaux, les logos des compétitions... une couverture complète réunie dans un seul fichier arborescent.
+              La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture complète réunie dans un seul fichier arborescent.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
@@ -238,3 +238,4 @@ const Index = () => {
 };
 
 export default Index;
+

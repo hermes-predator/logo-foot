@@ -159,7 +159,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Puis-je utiliser ces logos pour mon site web ?</h3>
-                  <p>Oui, les logos peuvent être utilisés pour des projets web personnels. Les ressources que nous fournissons ont été étudié pour ça. Vous recevez des ressources homogènes et optimisés pour cet usage.</p>
+                  <p>Oui, les logos peuvent être utilisés pour des projets web personnels. Les ressources que nous fournissons ont été étudié pour ça. Vous recevez des ressources homogènes et optimisées.</p>
                 </section>
 
                 <section>

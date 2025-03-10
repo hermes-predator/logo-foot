@@ -148,7 +148,7 @@ const ProductGallery = () => {
                       <div className="w-full h-full">
                         <video
                           src={item.videoUrl}
-                          className="absolute inset-0 w-full h-full object-contain bg-gray-900"
+                          className="absolute inset-0 w-full h-full object-contain bg-gray-900/95"
                           autoPlay
                           muted
                           loop
@@ -173,7 +173,7 @@ const ProductGallery = () => {
                     )}
                   </button>
                 </DialogTrigger>
-                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900">
+                <DialogContent className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900/95 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10">
                   <video
                     src={item.videoUrl}
                     className="w-full h-full object-contain"

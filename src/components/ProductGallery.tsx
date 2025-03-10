@@ -175,12 +175,12 @@ const ProductGallery = () => {
                   </button>
                 </DialogTrigger>
                 <DialogContent 
-                  className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 rounded-xl overflow-hidden border border-white/30"
+                  className="max-w-[500px] w-full h-[500px] p-0 bg-gray-900 overflow-hidden border border-white/30"
                 >
-                  <div className="relative w-full h-full p-4 flex items-center justify-center">
+                  <div className="w-full h-full">
                     <video
                       src={item.videoUrl}
-                      className="w-full h-full object-contain outline-none"
+                      className="w-full h-full object-cover"
                       autoPlay
                       controls
                       loop

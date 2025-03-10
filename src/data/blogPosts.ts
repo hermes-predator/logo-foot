@@ -342,7 +342,7 @@ Chacun de ces logos raconte une histoire unique et continue d'inspirer les desig
 
 Premier League : L'héritage britannique
 
-Les logos des clubs anglais se distinguent par :
+Les logos des clubs de foot anglais se distinguent par :
 - Une forte influence héraldique
 - Des symboles royaux et historiques
 - Des références à l'histoire industrielle
@@ -356,7 +356,7 @@ Exemples emblématiques :
 
 Ligue 1 : L'élégance à la française
 
-Les clubs français privilégient :
+Les logos des clubs de foot français privilégient :
 - Des designs épurés et modernes
 - Des symboles régionaux forts
 - Une palette de couleurs distinctive
@@ -370,7 +370,7 @@ Points notables :
 
 Bundesliga : Précision allemande
 
-Caractéristiques des logos allemands :
+Les logos des clubs de foot allemands se caractérisent par :
 - Designs techniques et structurés
 - Symboles industriels et urbains
 - Couleurs traditionnelles fortes
@@ -384,7 +384,7 @@ Exemples significatifs :
 
 Serie A : L'art italien
 
-Les clubs italiens mettent en avant :
+Les logos des clubs de foot italiens mettent en avant :
 - Des designs artistiques recherchés
 - Des symboles historiques romains
 - Des couleurs régionales fortes
@@ -398,7 +398,7 @@ Illustrations :
 
 La Liga : Passion espagnole
 
-Les logos espagnols se caractérisent par :
+Les logos des clubs de foot espagnols se caractérisent par :
 - Des symboles régionaux puissants
 - Des couleurs vives et passionnées
 - Des références culturelles fortes

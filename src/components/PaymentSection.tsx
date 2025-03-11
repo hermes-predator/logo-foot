@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ShoppingCart, Download, Shield, Wallet } from 'lucide-react';
+import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck } from 'lucide-react';
 import { Button } from './ui/button';
 
 const PaymentSection = () => {
@@ -18,6 +17,24 @@ const PaymentSection = () => {
         <p className="text-gray-600 text-lg mb-8">
           Recevez-le instantanément après paiement
         </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
+          <ShieldCheck className="w-8 h-8 text-blue-600 mb-3" />
+          <h3 className="font-semibold mb-2">Paiement Sécurisé</h3>
+          <p className="text-sm text-gray-600 text-center">Transactions protégées et sécurisées via SumUp</p>
+        </div>
+        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
+          <HandHeart className="w-8 h-8 text-blue-600 mb-3" />
+          <h3 className="font-semibold mb-2">Support Réactif</h3>
+          <p className="text-sm text-gray-600 text-center">Une équipe à votre écoute pour vous accompagner</p>
+        </div>
+        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
+          <CheckCheck className="w-8 h-8 text-blue-600 mb-3" />
+          <h3 className="font-semibold mb-2">Accès Immédiat</h3>
+          <p className="text-sm text-gray-600 text-center">Téléchargement instantané après paiement</p>
+        </div>
       </div>
 
       <div className="max-w-2xl mx-auto">
@@ -55,7 +72,7 @@ const PaymentSection = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <p className="text-sm text-gray-500 flex items-center justify-center gap-2">
+        <p className="text-base text-gray-500 flex items-center justify-center gap-2">
           <Shield className="h-4 w-4" />
           Paiement sécurisé via SumUp
         </p>

@@ -229,11 +229,11 @@ const Index = () => {
 
         <ProductGallery />
 
-        <Testimonials />
-
         <div id="payment-section">
           <PaymentSection />
         </div>
+
+        <Testimonials />
       </main>
       <Footer />
     </div>

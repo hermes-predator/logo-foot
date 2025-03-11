@@ -37,37 +37,39 @@ const PaymentSection = () => {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto">
-        <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-300">
-          <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium">
-            Pack Complet
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="md:col-span-3">
+          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium">
+              Pack Complet
+            </div>
+            <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center text-gray-600">
+                <Shield className="h-5 w-5 mr-3 text-blue-500" />
+                Fichier de + de 8 600 ressources
+              </li>
+              <li className="flex items-center text-gray-600">
+                <Download className="h-5 w-5 mr-3 text-blue-500" />
+                Accès instantané
+              </li>
+              <li className="flex items-center text-gray-600">
+                <Wallet className="h-5 w-5 mr-3 text-blue-500" />
+                Prix accessible
+              </li>
+            </ul>
+            <div className="mb-6">
+              <span className="text-3xl md:text-4xl font-bold">20,00€</span>
+              <span className="text-gray-500 ml-2">TVA incluse</span>
+            </div>
+            <Button
+              onClick={handlePayment}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300"
+            >
+              <ShoppingCart className="mr-2 h-5 w-5" />
+              Payer 20,00€
+            </Button>
           </div>
-          <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-center text-gray-600">
-              <Shield className="h-5 w-5 mr-3 text-blue-500" />
-              Fichier de + de 8 600 ressources
-            </li>
-            <li className="flex items-center text-gray-600">
-              <Download className="h-5 w-5 mr-3 text-blue-500" />
-              Accès instantané
-            </li>
-            <li className="flex items-center text-gray-600">
-              <Wallet className="h-5 w-5 mr-3 text-blue-500" />
-              Prix accessible
-            </li>
-          </ul>
-          <div className="mb-6">
-            <span className="text-3xl md:text-4xl font-bold">20,00€</span>
-            <span className="text-gray-500 ml-2">TVA incluse</span>
-          </div>
-          <Button
-            onClick={handlePayment}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300"
-          >
-            <ShoppingCart className="mr-2 h-5 w-5" />
-            Payer 20,00€
-          </Button>
         </div>
       </div>
 

@@ -55,7 +55,7 @@ const PaymentSection = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <p className="text-sm text-gray-500 flex items-center justify-center gap-2">
+        <p className="text-base text-gray-500 flex items-center justify-center gap-2">
           <Shield className="h-4 w-4" />
           Paiement sécurisé via SumUp
         </p>

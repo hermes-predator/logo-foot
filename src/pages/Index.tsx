@@ -12,6 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import Testimonials from '../components/Testimonials';
 
 const Index = () => {
   const scrollToPayment = () => {
@@ -228,6 +229,8 @@ const Index = () => {
 
         <ProductGallery />
 
+        <Testimonials />
+
         <div id="payment-section">
           <PaymentSection />
         </div>
@@ -238,4 +241,3 @@ const Index = () => {
 };
 
 export default Index;
-

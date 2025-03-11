@@ -19,7 +19,7 @@ const PaymentSection = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mb-4">
+      <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
           <ShieldCheck className="w-6 h-6 text-blue-600 mb-2" />
           <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>

@@ -1,5 +1,13 @@
+
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -19,6 +27,24 @@ const testimonials = [
     role: "Créateur de contenu sportif",
     content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
     rating: 5
+  },
+  {
+    name: "Sophie R.",
+    role: "Community Manager",
+    content: "Interface super intuitive et logos de grande qualité. Un vrai gain de temps pour mes publications !",
+    rating: 5
+  },
+  {
+    name: "Lucas F.",
+    role: "Journaliste sportif",
+    content: "Une ressource indispensable pour tout créateur de contenu sport. Service client au top !",
+    rating: 5
+  },
+  {
+    name: "Emma V.",
+    role: "Graphiste freelance",
+    content: "La meilleure collection de logos que j'ai pu trouver. Mise à jour régulière et qualité constante.",
+    rating: 5
   }
 ];
 
@@ -35,35 +61,45 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-            >
-              <div className="flex items-center gap-1 text-yellow-400 mb-2">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-600 italic mb-2 text-xs">
-                "{testimonial.content}"
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                  <MessageCircle className="w-3 h-3 text-blue-600" />
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-4xl mx-auto"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3">
+                <div className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                  <div className="flex items-center gap-1 text-yellow-400 mb-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-3 h-3 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-gray-600 italic mb-2 text-xs">
+                    "{testimonial.content}"
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                      <MessageCircle className="w-3 h-3 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
+                      <p className="text-[10px] text-gray-500">{testimonial.role}</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
-                  <p className="text-[10px] text-gray-500">{testimonial.role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-4" />
+          <CarouselNext className="hidden md:flex -right-4" />
+        </Carousel>
       </div>
     </section>
   );
 };
 
 export default Testimonials;
+

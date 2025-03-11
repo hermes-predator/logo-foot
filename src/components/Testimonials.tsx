@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -31,7 +30,7 @@ const testimonials = [
   {
     name: "Sophie R.",
     role: "Community Manager",
-    content: "Interface super intuitive et logos de grande qualité. Un vrai gain de temps pour mes publications !",
+    content: "Merci pour le gain de temps !",
     rating: 5
   },
   {
@@ -102,4 +101,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

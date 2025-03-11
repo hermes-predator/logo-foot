@@ -9,31 +9,31 @@ const PaymentSection = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-6 text-black">
+    <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-bold mb-4 text-black">
           Prêt à tout recevoir ?
         </h2>
-        <p className="text-gray-600 text-lg mb-8">
+        <p className="text-gray-600 text-lg mb-6">
           Recevez-le instantanément après paiement
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-12">
-        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
-          <ShieldCheck className="w-8 h-8 text-blue-600 mb-3" />
-          <h3 className="font-semibold mb-2">Paiement Sécurisé</h3>
-          <p className="text-sm text-gray-600 text-center">Transactions protégées et sécurisées via SumUp</p>
+      <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
+          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2" />
+          <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
+          <p className="text-xs text-gray-600 text-center">Transactions protégées via SumUp</p>
         </div>
-        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
-          <HandHeart className="w-8 h-8 text-blue-600 mb-3" />
-          <h3 className="font-semibold mb-2">Support Réactif</h3>
-          <p className="text-sm text-gray-600 text-center">Une équipe à votre écoute pour vous accompagner</p>
+        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
+          <HandHeart className="w-6 h-6 text-blue-600 mb-2" />
+          <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
+          <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
-        <div className="flex flex-col items-center p-6 bg-white/50 rounded-xl backdrop-blur-sm border border-blue-100">
-          <CheckCheck className="w-8 h-8 text-blue-600 mb-3" />
-          <h3 className="font-semibold mb-2">Accès Immédiat</h3>
-          <p className="text-sm text-gray-600 text-center">Téléchargement instantané après paiement</p>
+        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
+          <CheckCheck className="w-6 h-6 text-blue-600 mb-2" />
+          <h3 className="font-medium mb-1 text-sm">Accès Immédiat</h3>
+          <p className="text-xs text-gray-600 text-center">Téléchargement instantané</p>
         </div>
       </div>
 

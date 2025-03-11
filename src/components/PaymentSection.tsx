@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck } from 'lucide-react';
+import { ShoppingCart, Download, FileArchive, Wallet, ShieldCheck, HandHeart, CheckCheck } from 'lucide-react';
 import { Button } from './ui/button';
 
 const PaymentSection = () => {
@@ -46,7 +47,7 @@ const PaymentSection = () => {
             <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-gray-600">
-                <Shield className="h-5 w-5 mr-3 text-blue-500" />
+                <FileArchive className="h-5 w-5 mr-3 text-blue-500" />
                 Fichier de + de 8 600 ressources
               </li>
               <li className="flex items-center text-gray-600">

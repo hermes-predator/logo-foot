@@ -84,72 +84,6 @@ const Footer = () => {
 
           <Dialog>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
-              <HelpCircle className="w-4 h-4" />
-              FAQ
-            </DialogTrigger>
-            <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle>Questions fréquentes</DialogTitle>
-              </DialogHeader>
-              <div className="mt-4">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="contenu">
-                    <AccordionTrigger className="text-left">
-                      Que contient exactement le pack de logos ?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, 
-                      les logos des compétitions majeures, les drapeaux nationaux, les logos des bookmakers et d'autres 
-                      ressources très utiles. Tous les fichiers sont en format PNG avec fond transparent.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="telechargement">
-                    <AccordionTrigger className="text-left">
-                      Comment se déroule le téléchargement ?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à 
-                      votre fichier ZIP contenant l'arborescence de dossiers et tous les logos en un coup.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="utilisation">
-                    <AccordionTrigger className="text-left">
-                      Puis-je utiliser ces logos pour mon site web ?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      Oui, les logos peuvent être utilisés pour des projets web personnels. Les ressources que nous 
-                      fournissons ont été étudié pour cela. Vous recevez des ressources homogènes et optimisées.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="paiement">
-                    <AccordionTrigger className="text-left">
-                      Le paiement est-il sécurisé ?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      Oui, nous utilisons SumUp, un prestataire de paiement sécurisé et certifié, pour traiter 
-                      toutes les transactions.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="probleme">
-                    <AccordionTrigger className="text-left">
-                      Que faire si je rencontre un problème avec le téléchargement ?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      En cas de problème, vous pouvez nous contacter par e-mail : contact@logo-foot.com. 
-                      Nous vous répondrons dans les plus brefs délais.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            </DialogContent>
-          </Dialog>
-
-          <Dialog>
-            <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <Scroll className="w-4 h-4" />
               Mentions légales
             </DialogTrigger>
@@ -195,6 +129,62 @@ const Footer = () => {
                   <h3 className="font-semibold mb-2">Litiges</h3>
                   <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Tout différend pourra être soumis aux tribunaux compétents.</p>
                 </section>
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog>
+            <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+              <HelpCircle className="w-4 h-4" />
+              FAQ
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Questions fréquentes</DialogTitle>
+              </DialogHeader>
+              <div className="mt-4">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Que contient exactement le pack de logos ?</AccordionTrigger>
+                    <AccordionContent>
+                      Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, 
+                      les logos des compétitions majeures, les drapeaux nationaux, les logos des bookmakers et d'autres 
+                      ressources très utiles. Tous les fichiers sont en format PNG avec fond transparent.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
+                    <AccordionContent>
+                      Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à 
+                      votre fichier ZIP contenant l'arborescence de dossiers et tous les logos en un coup.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>Puis-je utiliser ces logos pour mon site web ?</AccordionTrigger>
+                    <AccordionContent>
+                      Oui, les logos peuvent être utilisés pour des projets web personnels. Les ressources que nous 
+                      fournissons ont été étudié pour cela. Vous recevez des ressources homogènes et optimisées.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
+                    <AccordionContent>
+                      Oui, nous utilisons SumUp, un prestataire de paiement sécurisé et certifié, pour traiter 
+                      toutes les transactions.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger>Que faire si je rencontre un problème avec le téléchargement ?</AccordionTrigger>
+                    <AccordionContent>
+                      En cas de problème, vous pouvez nous contacter par e-mail : contact@logo-foot.com. 
+                      Nous vous répondrons dans les plus brefs délais.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </DialogContent>
           </Dialog>

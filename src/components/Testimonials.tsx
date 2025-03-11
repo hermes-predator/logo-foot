@@ -25,9 +25,9 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-8 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
+    <section className="py-12 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients
           </h2>

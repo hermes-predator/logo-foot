@@ -1,3 +1,4 @@
+
 import {
   DialogContent,
   DialogHeader,
@@ -34,12 +35,12 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           />
         </div>
 
-        <div className="px-6 pb-6 pt-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
+        <div className="p-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent flex justify-center">
           <DialogClose asChild>
             <Button 
               variant="destructive"
               className={cn(
-                "w-full font-medium",
+                "px-8 font-medium",
                 "transition-all duration-200",
                 "hover:bg-red-600"
               )}

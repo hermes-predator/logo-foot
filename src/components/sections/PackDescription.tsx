@@ -1,11 +1,10 @@
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive, List } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <>
-      <p className="text-lg font-medium text-[#403E43] flex items-center gap-2 mb-6">
-        <FileArchive className="h-5 w-5 text-purple-600" />
+      <p className="text-lg font-medium text-[#403E43] mb-6">
         Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique.
       </p>
 
@@ -35,7 +34,7 @@ const PackDescription = () => {
           </div>
           <div className="mt-4">
             <p className="font-semibold text-purple-900 mb-2 flex items-center gap-2">
-              <Target className="h-5 w-5 text-purple-600" />
+              <List className="h-5 w-5 text-purple-600" />
               Collections incluses :
             </p>
             <p className="text-sm leading-relaxed text-purple-700 bg-white/50 rounded-lg p-4">

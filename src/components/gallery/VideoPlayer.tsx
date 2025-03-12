@@ -9,47 +9,52 @@ import {
 import { X } from "lucide-react";
 import { VideoPlayerProps } from "@/types/gallery";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   return (
-    <DialogContent className="w-[550px] overflow-hidden p-0 bg-gradient-to-br from-gray-900/95 via-gray-900 to-black border-none shadow-2xl rounded-xl">
-      <DialogHeader className="p-6 absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
-        <DialogTitle className="text-white font-medium text-xl">
-          {title}
-        </DialogTitle>
-        <DialogDescription className="text-gray-300 text-sm font-light">
-          Animation des logos de football {country}
-        </DialogDescription>
-      </DialogHeader>
-      
-      <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-900 to-black">
-        <video
-          src={videoUrl}
-          className={cn(
-            "w-full h-full object-contain",
-            "transition-opacity duration-300 ease-in-out"
-          )}
-          autoPlay
-          controls
-          loop
-          playsInline
-          title={title}
-        />
-      </div>
+    <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-900/95 via-gray-900 to-black">
+      <div className="flex flex-col h-full">
+        <DialogHeader className="p-6 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
+          <DialogTitle className="text-white font-medium text-xl">
+            {title}
+          </DialogTitle>
+          <DialogDescription className="text-gray-300 text-sm font-light">
+            Animation des logos de football {country}
+          </DialogDescription>
+        </DialogHeader>
+        
+        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-900 to-black">
+          <video
+            src={videoUrl}
+            className={cn(
+              "w-full h-full object-contain",
+              "transition-opacity duration-300 ease-in-out"
+            )}
+            autoPlay
+            controls
+            loop
+            playsInline
+            title={title}
+          />
+        </div>
 
-      <DialogClose className={cn(
-        "absolute top-4 right-4",
-        "p-2.5 rounded-full",
-        "bg-black/40 hover:bg-black/60",
-        "backdrop-blur-sm",
-        "border border-white/10",
-        "transition-all duration-200 ease-out",
-        "hover:scale-110",
-        "focus:outline-none focus:ring-2 focus:ring-white/20"
-      )}>
-        <X className="h-4 w-4 text-white/90" />
-        <span className="sr-only">Fermer</span>
-      </DialogClose>
+        <div className="p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex justify-center">
+          <DialogClose asChild>
+            <Button 
+              variant="outline" 
+              className={cn(
+                "bg-white/10 hover:bg-white/20 border-white/20",
+                "text-white font-medium",
+                "transition-all duration-200",
+                "px-8"
+              )}
+            >
+              Fermer
+            </Button>
+          </DialogClose>
+        </div>
+      </div>
     </DialogContent>
   );
 };

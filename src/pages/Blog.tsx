@@ -30,10 +30,16 @@ const Blog = () => {
       <BlogSchemaMarkup isBlogList />
       
       <div className="container mx-auto py-20 px-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">Articles sur les logos de foot</h1>
-        <p className="text-gray-600 mb-12 max-w-2xl">
-          Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification. Par logo-foot.com
-        </p>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 leading-tight">
+            Articles sur les logos de foot
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            Plongez dans l'univers fascinant des logos de football à travers nos articles approfondis. 
+            Découvrez l'histoire, l'évolution et la signification cachée derrière les emblèmes 
+            des plus grands clubs.
+          </p>
+        </div>
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (

@@ -6,31 +6,27 @@ import {
   DialogDescription,
   DialogClose,
 } from "../ui/dialog";
-import { X } from "lucide-react";
 import { VideoPlayerProps } from "@/types/gallery";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 
 const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   return (
-    <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-900/95 via-gray-900 to-black">
+    <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
-        <DialogHeader className="p-6 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
-          <DialogTitle className="text-white font-medium text-xl">
+        <DialogHeader className="p-6 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
+          <DialogTitle className="text-gray-800 font-medium text-xl">
             {title}
           </DialogTitle>
-          <DialogDescription className="text-gray-300 text-sm font-light">
+          <DialogDescription className="text-gray-600 text-sm font-light">
             Animation des logos de football {country}
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-900 to-black">
+        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center">
           <video
             src={videoUrl}
-            className={cn(
-              "w-full h-full object-contain",
-              "transition-opacity duration-300 ease-in-out"
-            )}
+            className="w-[550px] h-[550px] object-contain"
             autoPlay
             controls
             loop
@@ -39,15 +35,14 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           />
         </div>
 
-        <div className="p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex justify-center">
+        <div className="p-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent flex justify-center">
           <DialogClose asChild>
             <Button 
-              variant="outline" 
+              variant="destructive"
               className={cn(
-                "bg-white/10 hover:bg-white/20 border-white/20",
-                "text-white font-medium",
+                "px-8 font-medium",
                 "transition-all duration-200",
-                "px-8"
+                "hover:bg-red-600"
               )}
             >
               Fermer

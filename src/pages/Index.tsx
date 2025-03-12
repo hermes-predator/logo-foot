@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -219,7 +218,7 @@ const Index = () => {
                 variant="default"
                 size="lg"
                 onClick={scrollToPayment}
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2 animate-pulse hover:animate-none"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2"
               >
                 <ChevronDown className="h-4 w-4 animate-bounce" />
                 Voir le prix

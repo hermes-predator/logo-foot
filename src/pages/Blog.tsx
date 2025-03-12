@@ -55,7 +55,7 @@ const Blog = () => {
                 to={`/blog/${post.id}`} 
                 className="p-4 bg-gray-50 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center gap-1 group-hover:bg-gray-100 transition-colors w-full"
               >
-                Lire l'article complet
+                Lire l'article
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   className="h-4 w-4 transition-transform group-hover:translate-x-0.5" 

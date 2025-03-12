@@ -1,3 +1,4 @@
+
 import {
   DialogContent,
   DialogHeader,
@@ -13,8 +14,8 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   return (
     <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
-        <DialogHeader className="p-6 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
-          <DialogTitle className="text-gray-800 font-medium text-xl">
+        <DialogHeader className="p-4 pb-3 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
+          <DialogTitle className="text-gray-800 font-medium text-lg">
             {title}
           </DialogTitle>
           <DialogDescription className="text-gray-600 text-sm font-light">
@@ -56,3 +57,4 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
 };
 
 export default VideoPlayer;
+

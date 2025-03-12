@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { bookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -34,11 +35,17 @@ const Blog = () => {
           <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 leading-tight">
             Articles sur les logos de foot
           </h1>
-          <div className="bg-white/50 backdrop-blur-sm shadow-lg rounded-2xl p-8 border border-purple-100/20">
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification. 
-              Par logo-foot.com
-            </p>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-2xl transform rotate-1"></div>
+            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-purple-100">
+              <div className="flex items-center justify-center gap-3 mb-4 text-purple-600">
+                <bookOpen className="w-6 h-6" />
+                <span className="font-medium">Le Blog Logo-Foot</span>
+              </div>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification.
+              </p>
+            </div>
           </div>
         </div>
         

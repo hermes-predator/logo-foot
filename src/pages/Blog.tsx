@@ -37,7 +37,7 @@ const Blog = () => {
           </h1>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-indigo-500/10 to-purple-500/5 rounded-2xl blur-xl"></div>
-            <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-purple-100">
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/30">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="bg-purple-100 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />

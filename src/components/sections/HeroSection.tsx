@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -60,9 +59,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="flex items-center justify-center gap-4 pt-4">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Book className="h-4 w-4" />
-                Descriptif du ZIP
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="gap-2 bg-white/80 hover:bg-white/90 border-purple-200/50 shadow-sm hover:shadow-md transition-all duration-300 group"
+              >
+                <FileText className="h-5 w-5 text-purple-600 group-hover:scale-110 transition-transform duration-300" />
+                <span>
+                  Voir le contenu détaillé
+                  <span className="hidden md:inline"> du pack</span>
+                </span>
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">

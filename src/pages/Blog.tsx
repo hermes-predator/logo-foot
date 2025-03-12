@@ -30,9 +30,9 @@ const Blog = () => {
       <BlogSchemaMarkup isBlogList />
       
       <div className="container mx-auto py-20 px-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">Articles sur le Football</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-6">Articles sur les logos de foot</h1>
         <p className="text-gray-600 mb-12 max-w-2xl">
-          Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification.
+          Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification. Par logo-foot.com
         </p>
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

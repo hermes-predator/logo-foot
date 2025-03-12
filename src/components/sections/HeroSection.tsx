@@ -64,7 +64,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 size="lg" 
                 className="gap-2 bg-white/80 hover:bg-white/90 border-purple-200/50 shadow-sm hover:shadow-md transition-all duration-300 group"
               >
-                <Book className="h-5 w-5 text-purple-600 group-hover:scale-110 transition-transform duration-300" />
+                <Book className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 Descriptif du ZIP
               </Button>
             </DialogTrigger>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GalleryItem from './gallery/GalleryItem';
+import GallerySkeleton from './gallery/GallerySkeleton';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 
 const countries = [
@@ -111,19 +112,35 @@ const galleryItems: GalleryItemType[] = Array.from({ length: 64 }, (_, index) =>
 
 const ProductGallery = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simuler un temps de chargement pour montrer les skeletons
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {galleryItems.map((item) => (
-            <GalleryItem
-              key={item.id}
-              item={item}
-              onHover={setHoveredItem}
-              isHovered={hoveredItem === item.id}
-            />
-          ))}
+          {isLoading ? (
+            Array.from({ length: 12 }).map((_, index) => (
+              <GallerySkeleton key={index} />
+            ))
+          ) : (
+            galleryItems.map((item) => (
+              <GalleryItem
+                key={item.id}
+                item={item}
+                onHover={setHoveredItem}
+                isHovered={hoveredItem === item.id}
+              />
+            ))
+          )}
         </div>
       </div>
     </section>

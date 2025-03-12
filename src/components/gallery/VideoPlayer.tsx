@@ -1,4 +1,3 @@
-
 import {
   DialogContent,
   DialogHeader,
@@ -40,10 +39,11 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             <Button 
               variant="outline"
               className={cn(
-                "w-full font-medium bg-white/90 border-gray-200",
-                "hover:bg-white hover:border-gray-300",
-                "transition-all duration-200 shadow-sm",
-                "text-gray-600 hover:text-gray-800"
+                "w-full font-medium bg-gray-50/95 border-gray-200/80",
+                "hover:bg-white/95 hover:border-gray-300/90",
+                "transition-all duration-300 shadow-[0_2px_8px_-2px_rgba(0,0,0,0.08)]",
+                "text-gray-700 hover:text-gray-900",
+                "backdrop-blur-sm"
               )}
             >
               Fermer

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck, FileArchive } from 'lucide-react';
 import { Button } from './ui/button';
@@ -67,9 +66,10 @@ const PaymentSection = () => {
             </div>
             <Button
               onClick={handlePayment}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-500 transform hover:scale-[1.02] hover:shadow-lg active:scale-95 group"
+              className="w-full bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 hover:from-blue-700 hover:via-blue-600 hover:to-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-95 relative overflow-hidden group"
             >
-              <ShoppingCart className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
+              <span className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-blue-400/30 to-blue-400/0 animate-[shimmer_2s_infinite] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <ShoppingCart className="mr-2 h-5 w-5 transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-8deg]" />
               Payer 20,00€
             </Button>
           </div>

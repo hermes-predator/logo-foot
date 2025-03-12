@@ -1,3 +1,4 @@
+
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Play, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
@@ -17,10 +18,33 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
       'Espagne': 'La Liga',
       'Italie': 'Serie A',
       'Angleterre': 'Premier League',
-      // ... add other championships as needed
+      'Portugal': 'Liga Portugal',
+      'Pays-Bas': 'Eredivisie',
+      'Belgique': 'Pro League',
+      'Turquie': 'Süper Lig',
+      'Suisse': 'Super League',
+      'Écosse': 'Scottish Premiership',
+      'Autriche': 'Bundesliga',
+      'Grèce': 'Super League',
+      'Ukraine': 'Premier League',
+      'Russie': 'Premier Liga',
+      'Danemark': 'Superliga',
+      'Norvège': 'Eliteserien',
+      'Suède': 'Allsvenskan',
+      'Pologne': 'Ekstraklasa',
+      'République Tchèque': 'First League',
+      'Croatie': 'HNL',
+      'Serbie': 'Super Liga',
+      'Roumanie': 'Liga I',
+      'Hongrie': 'NB I',
+      'Bulgarie': 'First League',
+      'États-Unis': 'MLS',
+      'Argentine': 'Primera División',
+      'Australie': 'A-League',
+      'Arabie Saoudite': 'Saudi Pro League'
     };
     return championships[country] ? 
-      `Animation logo foot ${championships[country]}` : 
+      `Animation logo foot ${country} ${championships[country]}` : 
       `Animation logo foot ${country}`;
   };
 

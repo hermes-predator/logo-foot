@@ -38,11 +38,12 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
         <div className="p-4 pr-14 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogClose asChild>
             <Button 
-              variant="destructive"
+              variant="outline"
               className={cn(
-                "w-full font-medium",
-                "transition-all duration-200",
-                "hover:bg-red-600"
+                "w-full font-medium bg-white/90 border-gray-200",
+                "hover:bg-white hover:border-gray-300",
+                "transition-all duration-200 shadow-sm",
+                "text-gray-600 hover:text-gray-800"
               )}
             >
               Fermer

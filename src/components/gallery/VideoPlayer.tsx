@@ -13,11 +13,11 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   return (
     <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
-        <DialogHeader className="p-3 pb-2 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
-          <DialogTitle className="text-gray-800 font-medium text-base">
+        <DialogHeader className="p-2 pb-1.5 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
+          <DialogTitle className="text-gray-800 font-medium text-sm">
             {title}
           </DialogTitle>
-          <DialogDescription className="text-gray-600 text-xs font-light">
+          <DialogDescription className="text-gray-600 text-xs font-extralight">
             Animation des logos de football {country}
           </DialogDescription>
         </DialogHeader>

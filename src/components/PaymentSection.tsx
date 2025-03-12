@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck, FileArchive } from 'lucide-react';
 import { Button } from './ui/button';
@@ -47,20 +48,20 @@ const PaymentSection = () => {
             </div>
             <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
             <ul className="space-y-4 mb-8">
-              <li className="flex items-center text-gray-600 transition-all duration-300 hover:translate-x-1">
+              <li className="flex items-center text-gray-600">
                 <FileArchive className="h-5 w-5 mr-3 text-blue-500" />
                 Fichier de + de 8 600 ressources
               </li>
-              <li className="flex items-center text-gray-600 transition-all duration-300 hover:translate-x-1">
+              <li className="flex items-center text-gray-600">
                 <Download className="h-5 w-5 mr-3 text-blue-500" />
                 Téléchargement instantané
               </li>
-              <li className="flex items-center text-gray-600 transition-all duration-300 hover:translate-x-1">
+              <li className="flex items-center text-gray-600">
                 <Wallet className="h-5 w-5 mr-3 text-blue-500" />
                 Prix accessible
               </li>
             </ul>
-            <div className="mb-6 transition-all duration-300 hover:scale-[1.02]">
+            <div className="mb-6">
               <span className="text-3xl md:text-4xl font-bold">20,00€</span>
               <span className="text-gray-500 ml-2">TVA incluse</span>
             </div>

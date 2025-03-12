@@ -5,8 +5,8 @@ import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchiv
 const PackDescription = () => {
   return (
     <>
-      <p className="text-lg font-medium text-[#403E43] mb-6">
-        Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs dans vos projets paris sportifs.
+      <p className="text-lg font-medium text-gray-800 mb-6">
+        Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il peut vous apporter beaucoup de valeurs dans vos projets paris sportifs.
       </p>
 
       <div className="space-y-8">

@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 
 const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   return (
-    <DialogContent className="max-w-4xl w-[90vw] overflow-hidden p-0 bg-gradient-to-br from-gray-900/95 via-gray-900 to-black border-none shadow-2xl rounded-xl">
+    <DialogContent className="w-[550px] overflow-hidden p-0 bg-gradient-to-br from-gray-900/95 via-gray-900 to-black border-none shadow-2xl rounded-xl">
       <DialogHeader className="p-6 absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/90 via-black/50 to-transparent">
         <DialogTitle className="text-white font-medium text-xl">
           {title}
@@ -22,7 +22,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
         </DialogDescription>
       </DialogHeader>
       
-      <div className="relative w-full aspect-video bg-gradient-to-br from-gray-900 to-black">
+      <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-900 to-black">
         <video
           src={videoUrl}
           className={cn(

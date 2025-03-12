@@ -34,7 +34,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           />
         </div>
 
-        <div className="p-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
+        <div className="px-6 pb-6 pt-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogClose asChild>
             <Button 
               variant="destructive"

@@ -61,7 +61,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 6 - Droit de rétractation</h3>
-                  <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de r��tractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé après accord préalable exprès du consommateur.</p>
+                  <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé après accord préalable exprès du consommateur.</p>
                 </section>
 
                 <section>
@@ -145,43 +145,50 @@ const Footer = () => {
               <div className="mt-4">
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">
-                    <AccordionTrigger>Que contient exactement le pack de logos ?</AccordionTrigger>
+                    <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
                     <AccordionContent>
-                      Le pack contient plus de 8 600 logos de clubs de football, incluant les équipes de plus de 60 pays, 
-                      les logos des compétitions majeures, les drapeaux nationaux, les logos des bookmakers et d'autres 
-                      ressources très utiles. Tous les fichiers sont en format PNG avec fond transparent.
+                      Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
+                      Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
+                      Vous pouvez payer en toute confiance avec votre carte bancaire.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-2">
                     <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
                     <AccordionContent>
-                      Après votre paiement, vous recevez immédiatement un lien de téléchargement pour accéder à 
-                      votre fichier ZIP contenant l'arborescence de dossiers et tous les logos en un coup.
+                      C'est simple et instantané ! Après votre paiement, vous recevez immédiatement un lien de 
+                      téléchargement. Le fichier ZIP contenant tous les logos est disponible instantanément. 
+                      Par sécurité, nous vous envoyons également un e-mail avec le lien de téléchargement.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-3">
-                    <AccordionTrigger>Puis-je utiliser ces logos pour mon site web ?</AccordionTrigger>
+                    <AccordionTrigger>Que contient exactement le pack ?</AccordionTrigger>
                     <AccordionContent>
-                      Oui, les logos peuvent être utilisés pour des projets web personnels. Les ressources que nous 
-                      fournissons ont été étudié pour cela. Vous recevez des ressources homogènes et optimisées.
+                      Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
+                      • Les logos des clubs de plus de 60 pays
+                      • Les logos des principales compétitions
+                      • Les drapeaux nationaux
+                      • Les logos des bookmakers
+                      Tous les fichiers sont en PNG avec fond transparent, parfaitement optimisés pour une utilisation web.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-4">
-                    <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
+                    <AccordionTrigger>Comment puis-je utiliser ces logos ?</AccordionTrigger>
                     <AccordionContent>
-                      Oui, nous utilisons SumUp, un prestataire de paiement sécurisé et certifié, pour traiter 
-                      toutes les transactions.
+                      Les logos peuvent être utilisés pour vos projets web personnels. Notre pack est spécialement 
+                      conçu pour une utilisation web avec des fichiers optimisés et homogènes. Vous bénéficiez 
+                      d'une collection complète et professionnelle, prête à l'emploi.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-5">
-                    <AccordionTrigger>Que faire si je rencontre un problème avec le téléchargement ?</AccordionTrigger>
+                    <AccordionTrigger>Un problème ? Nous sommes là pour vous aider</AccordionTrigger>
                     <AccordionContent>
-                      En cas de problème, vous pouvez nous contacter par e-mail : contact@logo-foot.com. 
-                      Nous vous répondrons dans les plus brefs délais.
+                      Notre service client est disponible 7j/7 pour vous accompagner. En cas de question ou de 
+                      difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com. Nous vous 
+                      répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

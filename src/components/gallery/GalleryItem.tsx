@@ -48,6 +48,7 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
                   loop
                   playsInline
                   title={getVideoTitle(item.country)}
+                  loading="lazy"
                 />
                 <div className="absolute top-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
                   <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
@@ -59,6 +60,8 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
                   src={item.imageUrl}
                   alt={item.altText}
                   className="w-full h-full object-contain"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
                   <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />

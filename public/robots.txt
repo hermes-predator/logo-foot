@@ -1,6 +1,11 @@
 
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /sitemap.xml
 
+# Optimisation du crawl
+Crawl-delay: 1
+
+# Sitemap
 Sitemap: https://logo-foot.com/sitemap.xml
-

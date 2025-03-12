@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -13,9 +14,12 @@ const BlogPost = () => {
       <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
         <div className="container mx-auto py-20 px-4">
           <Helmet>
-            <title>Article non trouvé | Logo Foot & Football</title>
-            <meta name="description" content="Cet article sur les logos et clubs de foot n'existe pas ou a été déplacé." />
-            <meta name="keywords" content="logo foot, logos football, club de foot, clubs de football" />
+            <title>Article Non Trouvé | Blog Logo Foot</title>
+            <meta 
+              name="description" 
+              content="La page que vous recherchez n'existe pas ou a été déplacée. Découvrez nos autres articles sur l'histoire des logos de football." 
+            />
+            <meta name="robots" content="noindex, follow" />
           </Helmet>
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">Article non trouvé</h1>
@@ -31,13 +35,18 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
       <Helmet>
-        <title>{post.title} | Logo Foot & Football</title>
+        <title>{`${post.title} | Blog Logo Foot`}</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={`${post.title} | Logo Foot & Football`} />
+        <meta property="og:title" content={`${post.title} | Blog Logo Foot`} />
         <meta property="og:description" content={post.excerpt} />
-        <meta name="twitter:title" content={`${post.title} | Logo Foot & Football`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
+        <meta name="twitter:title" content={`${post.title} | Blog Logo Foot`} />
         <meta name="twitter:description" content={post.excerpt} />
-        <meta name="keywords" content="logo foot, logos football, club de foot, clubs de football, logo club, logos des clubs" />
+        <meta name="keywords" content={`${post.title.toLowerCase()}, logo foot, logos football, histoire logo foot, ${post.keywords || ''}`} />
+        <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:modified_time" content={post.date} />
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

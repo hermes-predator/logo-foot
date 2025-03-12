@@ -10,23 +10,26 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
       <Helmet>
-        <title>Blog | Logo Foot & Football | Articles sur les Clubs de Football</title>
+        <title>Blog Football : Histoire et Évolution des Logos des Clubs | Logo Foot</title>
         <meta 
           name="description" 
-          content="Découvrez nos articles sur le foot : histoire des logos et clubs de football, design des emblèmes, signification et évolution des logos des plus grands clubs." 
+          content="Découvrez l'histoire fascinante des logos de football à travers nos articles exclusifs. Histoire des emblèmes, évolution des designs et signification des logos des plus grands clubs." 
         />
         <meta 
           property="og:title" 
-          content="Blog | Logo Foot & Football | Articles sur les Clubs de Football" 
+          content="Blog Football : Histoire et Évolution des Logos des Clubs | Logo Foot" 
         />
         <meta 
           property="og:description" 
-          content="Découvrez nos articles sur le foot : histoire des logos et clubs de football, design des emblèmes, signification et évolution des logos des plus grands clubs." 
+          content="Plongez dans l'histoire des logos de football : articles détaillés sur l'évolution des emblèmes, leur signification et leur impact dans le monde du football." 
         />
         <meta 
           name="keywords" 
-          content="logo foot, logos football, club de foot, clubs de football, logo club, logos des clubs, article foot, article football, histoire logo, histoire club"
+          content="histoire logos football, évolution logos clubs, design logo foot, signification emblèmes foot, logos historiques football"
         />
+        <meta property="og:type" content="blog" />
+        <meta property="og:url" content="https://logo-foot.com/blog" />
+        <link rel="canonical" href="https://logo-foot.com/blog" />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       

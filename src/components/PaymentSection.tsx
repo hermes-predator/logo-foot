@@ -33,7 +33,7 @@ const PaymentSection = () => {
         <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
           <CheckCheck className="w-6 h-6 text-blue-600 mb-2" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
-          <p className="text-xs text-gray-600 text-center">Disponible immédiatement après paiement</p>
+          <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
       </div>
 

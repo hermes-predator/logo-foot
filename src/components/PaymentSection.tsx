@@ -33,7 +33,7 @@ const PaymentSection = () => {
         </div>
         <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100">
           <CheckCheck className="w-6 h-6 text-blue-600 mb-2" />
-          <h3 className="font-medium mb-1 text-sm">Accès Immédiat</h3>
+          <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Téléchargement instantané</p>
         </div>
       </div>
@@ -52,7 +52,7 @@ const PaymentSection = () => {
               </li>
               <li className="flex items-center text-gray-600">
                 <Download className="h-5 w-5 mr-3 text-blue-500" />
-                Accès instantané
+                Téléchargement instantané
               </li>
               <li className="flex items-center text-gray-600">
                 <Wallet className="h-5 w-5 mr-3 text-blue-500" />

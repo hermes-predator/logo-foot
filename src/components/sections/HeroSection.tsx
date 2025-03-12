@@ -64,11 +64,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 size="lg" 
                 className="gap-2 bg-white/80 hover:bg-white/90 border-purple-200/50 shadow-sm hover:shadow-md transition-all duration-300 group"
               >
-                <FileText className="h-5 w-5 text-purple-600 group-hover:scale-110 transition-transform duration-300" />
-                <span>
-                  Voir le contenu détaillé
-                  <span className="hidden md:inline"> du pack</span>
-                </span>
+                <Book className="h-5 w-5 text-purple-600 group-hover:scale-110 transition-transform duration-300" />
+                Descriptif du ZIP
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">

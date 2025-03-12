@@ -66,7 +66,7 @@ const PaymentSection = () => {
             </div>
             <Button
               onClick={handlePayment}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-95 group"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group"
             >
               <ShoppingCart className="mr-2 h-5 w-5 transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-8deg]" />
               Payer 20,00€

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck, FileArchive, RefreshCcw } from 'lucide-react';
 import { Button } from './ui/button';
@@ -45,10 +46,6 @@ const PaymentSection = () => {
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>
-            <div className="absolute top-0 left-0 bg-green-100 text-green-700 px-4 py-1 rounded-br-lg rounded-tl-xl text-sm font-medium flex items-center gap-2 animate-fade-in">
-              <RefreshCcw className="h-4 w-4" />
-              Satisfait ou remboursé
-            </div>
             <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
             <ul className="space-y-4 mb-8">
               <li className="flex items-center text-gray-600">
@@ -62,6 +59,10 @@ const PaymentSection = () => {
               <li className="flex items-center text-gray-600">
                 <Wallet className="h-5 w-5 mr-3 text-blue-500" />
                 Prix accessible
+              </li>
+              <li className="flex items-center text-gray-600">
+                <RefreshCcw className="h-5 w-5 mr-3 text-green-500" />
+                <span className="text-green-700 font-medium">Satisfait ou remboursé</span>
               </li>
             </ul>
             <div className="mb-6">

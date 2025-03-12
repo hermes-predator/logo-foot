@@ -36,11 +36,13 @@ const Blog = () => {
             Articles sur les logos de foot
           </h1>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-2xl"></div>
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-purple-100">
-              <div className="flex items-center justify-center gap-3 mb-4 text-purple-600">
-                <BookOpen className="w-6 h-6" />
-                <span className="font-medium">Le Blog Logo-Foot</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-indigo-500/10 to-purple-500/5 rounded-2xl blur-xl"></div>
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-purple-100">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="bg-purple-100 p-3 rounded-xl">
+                  <BookOpen className="w-6 h-6 text-purple-600" />
+                </div>
+                <span className="font-semibold text-purple-700">Le Blog Logo-Foot</span>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification.

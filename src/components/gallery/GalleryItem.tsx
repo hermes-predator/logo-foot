@@ -1,10 +1,12 @@
-
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Play, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { GalleryItemProps } from "@/types/gallery";
+import { useLazyLoading } from "@/hooks/useLazyLoading";
 
 const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
+  const { isInView, imgRef } = useLazyLoading();
+
   const getVideoTitle = (country: string) => {
     if (country === 'Sélections Nationales') {
       return 'Animation logos des sélections nationales de football';
@@ -79,9 +81,10 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
             ) : (
               <>
                 <img
-                  src={item.imageUrl}
+                  ref={imgRef}
+                  src={isInView ? item.imageUrl : '/placeholder.svg'}
                   alt={item.altText}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain transition-opacity duration-500"
                   loading="lazy"
                   decoding="async"
                 />

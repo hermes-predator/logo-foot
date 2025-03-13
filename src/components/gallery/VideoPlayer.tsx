@@ -23,10 +23,10 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center">
+        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center px-4">
           <video
             src={videoUrl}
-            className="w-[550px] h-[550px] object-contain"
+            className="w-full h-full object-contain"
             autoPlay
             controls
             loop
@@ -35,7 +35,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           />
         </div>
 
-        <div className="p-4 pr-14 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
+        <div className="p-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogClose asChild>
             <Button 
               variant="outline"

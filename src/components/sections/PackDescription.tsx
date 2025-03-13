@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive, List } from "lucide-react";
 
@@ -10,7 +9,7 @@ const PackDescription = () => {
       </p>
 
       <div className="space-y-8">
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-gray-50/80 to-gray-50/30 border border-gray-100/80">
+        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
             <FolderArchive className="h-5 w-5 text-gray-600" />
             𝐅.𝟎𝟏 – Logos de clubs de football

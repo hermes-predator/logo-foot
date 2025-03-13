@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check } from 'lucide-react';
 import { Button } from './ui/button';
@@ -26,7 +25,7 @@ const PaymentSection = () => {
   const features = [
     {
       icon: FileArchive,
-      text: "8 600+ logos de clubs de football"
+      text: "Fichier de + de 8 600 ressources"
     },
     {
       icon: Download,
@@ -116,14 +115,15 @@ const PaymentSection = () => {
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div>
-                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">20,00€</span>
+                <span className="text-3xl md:text-4xl font-bold text-black">20,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">
                 <RefreshCcw className="h-4 w-4 text-green-600" />
                 <Tooltip>
-                  <TooltipTrigger className="text-sm text-green-700 font-medium">
+                  <TooltipTrigger className="text-sm text-green-700 font-medium flex items-center gap-1">
                     Satisfait ou remboursé
+                    <HelpCircle className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
                     <p>Votre satisfaction est une priorité. Si vous n'êtes pas satisfait, contactez-nous dans les 10 jours suivant votre achat pour obtenir un remboursement complet.</p>

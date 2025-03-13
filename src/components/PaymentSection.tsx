@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Download, Shield, Wallet, ShieldCheck, HandHeart, CheckCheck, FileArchive, RefreshCcw } from 'lucide-react';
 import { Button } from './ui/button';
@@ -54,7 +53,7 @@ const PaymentSection = () => {
               </li>
               <li className="flex items-center text-gray-600">
                 <Download className="h-5 w-5 mr-3 text-blue-500" />
-                Téléchargement instantané
+                Gain de temps
               </li>
               <li className="flex items-center text-gray-600">
                 <Wallet className="h-5 w-5 mr-3 text-blue-500" />

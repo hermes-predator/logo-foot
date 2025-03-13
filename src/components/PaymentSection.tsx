@@ -72,7 +72,7 @@ const PaymentSection = () => {
                     <HelpCircle className="h-4 w-4 text-green-600" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
-                    <p>Votre satisfaction est notre priorité. Si vous n'êtes pas satisfait, contactez-nous dans les 10 jours suivant votre achat pour un remboursement complet.</p>
+                    <p>Votre satisfaction est notre priorité. Si vous n'êtes pas satisfait, contactez-nous dans les 10 jours suivant votre achat pour obtenir un remboursement complet.</p>
                   </TooltipContent>
                 </Tooltip>
               </li>

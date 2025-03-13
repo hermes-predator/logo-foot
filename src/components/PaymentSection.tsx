@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw } from 'lucide-react';
 import { Button } from './ui/button';
@@ -29,14 +28,14 @@ const PaymentSection = () => {
           <p className="text-xs text-gray-600 text-center">Transactions protégées via SumUp</p>
         </div>
         <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
-          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
-          <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
-          <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
-        </div>
-        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
           <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
+        </div>
+        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
+          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
+          <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
+          <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
       </div>
 

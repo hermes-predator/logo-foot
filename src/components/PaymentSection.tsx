@@ -57,7 +57,7 @@ const PaymentSection = () => {
                 Fichier de + de 8 600 ressources
               </li>
               <li className="flex items-center text-gray-600">
-                <Timer className="h-5 w-5 mr-3 text-blue-500" />
+                <Download className="h-5 w-5 mr-3 text-blue-500" />
                 Téléchargement instantané
               </li>
               <li className="flex items-center text-gray-600">

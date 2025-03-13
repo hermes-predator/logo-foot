@@ -92,11 +92,11 @@ const PaymentSection = () => {
 
             <div className="grid grid-cols-1 gap-4 mb-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3 text-gray-700">
-                  <div className="p-1.5 rounded-lg bg-blue-50">
-                    <feature.icon className="h-4 w-4 text-blue-600" />
+                <div key={index} className="flex items-center gap-4 text-gray-700">
+                  <div className="p-2 rounded-lg bg-blue-50">
+                    <feature.icon className="h-6 w-6 text-blue-600" />
                   </div>
-                  <span className="text-sm">{feature.text}</span>
+                  <span className="text-base">{feature.text}</span>
                 </div>
               ))}
             </div>

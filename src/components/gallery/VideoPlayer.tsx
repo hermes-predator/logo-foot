@@ -22,7 +22,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center pr-4">
+        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center pr-8">
           <video
             src={videoUrl}
             className="w-full h-full object-contain"

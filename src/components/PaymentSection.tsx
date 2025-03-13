@@ -65,7 +65,7 @@ const PaymentSection = () => {
                 Prix accessible
               </li>
               <li className="flex items-center text-gray-600">
-                <RefreshCcw className="h-5 w-5 mr-3 text-green-500" />
+                <RefreshCcw className="h-4 w-4 mr-3 text-green-500" />
                 <Tooltip>
                   <TooltipTrigger className="flex items-center gap-1">
                     <span className="text-green-700 font-medium">Satisfait ou remboursé</span>

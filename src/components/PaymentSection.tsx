@@ -1,6 +1,12 @@
+
 import React from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw } from 'lucide-react';
 import { Button } from './ui/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const PaymentSection = () => {
   const handlePayment = () => {
@@ -61,7 +67,14 @@ const PaymentSection = () => {
               </li>
               <li className="flex items-center text-gray-600">
                 <RefreshCcw className="h-5 w-5 mr-3 text-green-500" />
-                <span className="text-green-700 font-medium">Satisfait ou remboursé</span>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <span className="text-green-700 font-medium">Satisfait ou remboursé</span>
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-[200px]">
+                    <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat pour un remboursement complet.</p>
+                  </TooltipContent>
+                </Tooltip>
               </li>
             </ul>
             <div className="mb-6">

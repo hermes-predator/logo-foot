@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive, List } from "lucide-react";
 
 const PackDescription = () => {
   return (
-    <>
-      <p className="text-lg font-medium text-gray-800 mb-6">
+    <div className="space-y-6">
+      <p className="text-lg font-medium text-gray-800">
         Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs dans vos projets personnels.
       </p>
 
@@ -144,21 +145,21 @@ const PackDescription = () => {
         </div>
 
         <div className="space-y-2 pt-6 border-t">
-          <p className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" />
-            Ressources cadrées, uniformes, nommées et déjà triées
-          </p>
-          <p className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" />
-            Couverture totale du football pour vos projets WEB
-          </p>
-          <p className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" />
-            Directement stockable sur ordinateur ou cloud privé
-          </p>
+          <div className="flex items-center gap-2 text-[#403E43]">
+            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
+            <span>Ressources cadrées, uniformes, nommées et déjà triées</span>
+          </div>
+          <div className="flex items-center gap-2 text-[#403E43]">
+            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
+            <span>Couverture totale du football pour vos projets WEB</span>
+          </div>
+          <div className="flex items-center gap-2 text-[#403E43]">
+            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
+            <span>Directement stockable sur ordinateur ou cloud privé</span>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

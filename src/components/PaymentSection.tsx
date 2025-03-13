@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import {
@@ -7,9 +6,18 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { useToast } from "@/hooks/use-toast";
 
 const PaymentSection = () => {
+  const [isProcessing, setIsProcessing] = useState(false);
+  const { toast } = useToast();
+
   const handlePayment = () => {
+    setIsProcessing(true);
+    toast({
+      title: "Redirection vers le paiement",
+      description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
+    });
     const returnUrl = `${window.location.origin}/payment-success`;
     window.location.href = `https://pay.sumup.com/b2c/Q22XNC4J?return_url=${encodeURIComponent(returnUrl)}`;
   };
@@ -28,18 +36,30 @@ const PaymentSection = () => {
       </div>
 
       <div className="grid md:grid-cols-3 gap-6 mb-6">
-        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
-          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
+        <div 
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          role="article"
+          aria-label="Information sur le paiement sécurisé"
+        >
+          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
           <p className="text-xs text-gray-600 text-center">Transactions protégées via SumUp</p>
         </div>
-        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
-          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
+        <div 
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          role="article"
+          aria-label="Information sur le téléchargement instantané"
+        >
+          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
-        <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
-          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
+        <div 
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          role="article"
+          aria-label="Information sur le support client"
+        >
+          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
           <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
@@ -84,10 +104,12 @@ const PaymentSection = () => {
             </div>
             <Button
               onClick={handlePayment}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group"
+              disabled={isProcessing}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
+              aria-label="Payer 20,00€ avec paiement sécurisé"
             >
-              <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" />
-              Payer 20,00€
+              <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              {isProcessing ? "Redirection..." : "Payer 20,00€"}
             </Button>
           </div>
         </div>

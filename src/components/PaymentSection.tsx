@@ -34,22 +34,6 @@ const PaymentSection = () => {
     {
       icon: Wallet,
       text: "Prix accessible"
-    },
-    {
-      icon: Check,
-      text: "Format PNG avec fond transparent"
-    },
-    {
-      icon: Check,
-      text: "Triés par pays et championnats"
-    },
-    {
-      icon: Check,
-      text: "Logos des compétitions inclus"
-    },
-    {
-      icon: Check,
-      text: "Drapeaux des pays inclus"
     }
   ];
 
@@ -106,7 +90,7 @@ const PaymentSection = () => {
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 gap-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 text-gray-700">
                   <div className="p-1.5 rounded-lg bg-blue-50">

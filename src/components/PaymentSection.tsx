@@ -28,23 +28,20 @@ const PaymentSection = () => {
       text: "Fichier de + de 8 600 ressources"
     },
     {
-      icon: Download,
-      text: "Téléchargement instantané"
-    },
-    {
-      icon: Wallet,
-      text: "Prix accessible"
-    }
-  ];
-
-  const additionalFeatures = [
-    {
       icon: Check,
       text: "Contenu organisé"
     },
     {
+      icon: Download,
+      text: "Téléchargement instantané"
+    },
+    {
       icon: Check,
       text: "Haute qualité garantie"
+    },
+    {
+      icon: Wallet,
+      text: "Prix accessible"
     },
     {
       icon: Check,
@@ -110,14 +107,6 @@ const PaymentSection = () => {
                 <div key={index} className="flex items-center gap-4 text-gray-700">
                   <div className="p-1.5 rounded-lg bg-blue-50">
                     <feature.icon className="h-5 w-5 text-blue-600" />
-                  </div>
-                  <span className="text-[15px]">{feature.text}</span>
-                </div>
-              ))}
-              {additionalFeatures.map((feature, index) => (
-                <div key={`additional-${index}`} className="flex items-center gap-4 text-gray-700">
-                  <div className="p-1.5 rounded-lg bg-green-50">
-                    <feature.icon className="h-5 w-5 text-green-600" />
                   </div>
                   <span className="text-[15px]">{feature.text}</span>
                 </div>

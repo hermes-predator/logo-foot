@@ -72,8 +72,8 @@ const PaymentSection = () => {
                     <span className="text-green-700 font-medium">Satisfait ou remboursé</span>
                     <HelpCircle className="h-4 w-4 text-green-600" />
                   </TooltipTrigger>
-                  <TooltipContent className="max-w-[200px]">
-                    <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat pour un remboursement complet.</p>
+                  <TooltipContent className="max-w-[250px]">
+                    <p>Vous ne prenez aucun risque. Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat pour un remboursement complet.</p>
                   </TooltipContent>
                 </Tooltip>
               </li>

@@ -29,7 +29,9 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Contenu organisé"
+      text: "Contenu organisé",
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     },
     {
       icon: Download,
@@ -37,7 +39,9 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Haute qualité garantie"
+      text: "Haute qualité garantie",
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     },
     {
       icon: Wallet,
@@ -45,7 +49,9 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Mise à jour gratuite"
+      text: "Mise à jour gratuite",
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     }
   ];
 
@@ -105,8 +111,8 @@ const PaymentSection = () => {
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-4 text-gray-700">
-                  <div className="p-1.5 rounded-lg bg-blue-50">
-                    <feature.icon className="h-5 w-5 text-blue-600" />
+                  <div className={`p-1.5 rounded-lg ${feature.className || 'bg-blue-50'}`}>
+                    <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-blue-600'}`} />
                   </div>
                   <span className="text-[15px]">{feature.text}</span>
                 </div>

@@ -11,7 +11,7 @@ import {
 const PaymentSection = () => {
   const handlePayment = () => {
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/QEZ8JPZR?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/Q22XNC4J?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (

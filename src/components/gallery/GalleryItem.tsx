@@ -1,8 +1,10 @@
+
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Play, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { GalleryItemProps } from "@/types/gallery";
 import { useLazyLoading } from "@/hooks/useLazyLoading";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
   const { isInView, imgRef } = useLazyLoading();
@@ -80,6 +82,9 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
               </div>
             ) : (
               <>
+                {!isInView && (
+                  <Skeleton className="w-full h-full absolute inset-0" />
+                )}
                 <img
                   ref={imgRef}
                   src={isInView ? item.imageUrl : '/placeholder.svg'}

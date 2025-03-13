@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -22,11 +23,36 @@ const PaymentSection = () => {
     window.location.href = `https://pay.sumup.com/b2c/Q22XNC4J?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
+  const features = [
+    {
+      icon: FileArchive,
+      text: "8 600+ logos de clubs de football"
+    },
+    {
+      icon: Download,
+      text: "Téléchargement instantané après paiement"
+    },
+    {
+      icon: Check,
+      text: "Format PNG avec fond transparent"
+    },
+    {
+      icon: Check,
+      text: "Triés par pays et championnats"
+    },
+    {
+      icon: Check,
+      text: "Logos des compétitions inclus"
+    },
+    {
+      icon: Check,
+      text: "Drapeaux des pays inclus"
+    }
+  ];
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      <div 
-        className="text-center mb-8 animate-fade-in"
-      >
+      <div className="text-center mb-8 animate-fade-in">
         <h2 className="text-4xl font-bold mb-4 text-black">
           Prêt à tout recevoir ?
         </h2>
@@ -71,41 +97,45 @@ const PaymentSection = () => {
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>
-            <h3 className="text-2xl md:text-3xl font-extrabold mb-6 mt-6">⦗FRONT-CLOUD⦘~ Football.zip</h3>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center text-gray-600">
-                <FileArchive className="h-5 w-5 mr-3 text-blue-500" />
-                Fichier de + de 8 600 ressources
-              </li>
-              <li className="flex items-center text-gray-600">
-                <Download className="h-5 w-5 mr-3 text-blue-500" />
-                Téléchargement instantané
-              </li>
-              <li className="flex items-center text-gray-600">
-                <Wallet className="h-5 w-5 mr-3 text-blue-500" />
-                Prix accessible
-              </li>
-              <li className="flex items-center text-gray-600">
-                <RefreshCcw className="h-5 w-5 mr-3 text-green-500" />
+            
+            <div className="mb-8">
+              <h3 className="text-2xl md:text-3xl font-extrabold mb-2 mt-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3 text-gray-700">
+                  <div className="p-1.5 rounded-lg bg-blue-50">
+                    <feature.icon className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <span className="text-sm">{feature.text}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+              <div>
+                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">20,00€</span>
+                <span className="text-gray-500 ml-2">TVA incluse</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <RefreshCcw className="h-4 w-4 text-green-600" />
                 <Tooltip>
-                  <TooltipTrigger className="flex items-center gap-1">
-                    <span className="text-green-700 font-medium">Satisfait ou remboursé</span>
-                    <HelpCircle className="h-3 w-3 text-green-600" />
+                  <TooltipTrigger className="text-sm text-green-700 font-medium">
+                    Satisfait ou remboursé
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
                     <p>Votre satisfaction est une priorité. Si vous n'êtes pas satisfait, contactez-nous dans les 10 jours suivant votre achat pour obtenir un remboursement complet.</p>
                   </TooltipContent>
                 </Tooltip>
-              </li>
-            </ul>
-            <div className="mb-6">
-              <span className="text-3xl md:text-4xl font-bold">20,00€</span>
-              <span className="text-gray-500 ml-2">TVA incluse</span>
+              </div>
             </div>
+
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
               aria-label="Payer 20,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />

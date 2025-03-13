@@ -99,7 +99,7 @@ const PaymentSection = () => {
             </div>
             
             <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-extrabold mb-2 mt-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <h3 className="text-2xl md:text-3xl font-extrabold mb-2 mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
@@ -135,7 +135,7 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
               aria-label="Payer 20,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />

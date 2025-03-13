@@ -37,6 +37,21 @@ const PaymentSection = () => {
     }
   ];
 
+  const additionalFeatures = [
+    {
+      icon: Check,
+      text: "Contenu organisé"
+    },
+    {
+      icon: Check,
+      text: "Haute qualité garantie"
+    },
+    {
+      icon: Check,
+      text: "Mise à jour gratuite"
+    }
+  ];
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="text-center mb-8 animate-fade-in">
@@ -90,11 +105,19 @@ const PaymentSection = () => {
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 mb-8">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-4 text-gray-700">
                   <div className="p-1.5 rounded-lg bg-blue-50">
                     <feature.icon className="h-5 w-5 text-blue-600" />
+                  </div>
+                  <span className="text-[15px]">{feature.text}</span>
+                </div>
+              ))}
+              {additionalFeatures.map((feature, index) => (
+                <div key={`additional-${index}`} className="flex items-center gap-4 text-gray-700">
+                  <div className="p-1.5 rounded-lg bg-green-50">
+                    <feature.icon className="h-5 w-5 text-green-600" />
                   </div>
                   <span className="text-[15px]">{feature.text}</span>
                 </div>

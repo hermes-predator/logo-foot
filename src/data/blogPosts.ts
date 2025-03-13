@@ -1076,9 +1076,9 @@ En conclusion, les logos de Premier League sont des chefs-d'œuvre qui combinent
     title: "Les logos de Liga : L'art et la passion espagnole",
     excerpt: "Explorez la richesse des logos des clubs espagnols, où l'art, l'histoire régionale et la passion du football se rencontrent dans des designs uniques.",
     date: "2024-02-25",
-    content: `Les logos des clubs de Liga sont des œuvres d'art qui reflètent la richesse culturelle et l'histoire passionnée du football espagnol. Chaque emblème raconte une histoire unique de fierté régionale et de tradition.
+    content: `Les logos des clubs de La Liga sont des œuvres d'art qui reflètent la richesse culturelle et l'histoire passionnée du football espagnol. Chaque emblème raconte une histoire unique de fierté régionale et de tradition.
 
 Les géants historiques
 
 1. Real Madrid
-- La
+- La couronne royale

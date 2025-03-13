@@ -35,7 +35,7 @@ const PaymentSection = () => {
         </div>
         <div className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200">
           <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" />
-          <h3 className="font-medium mb-1 text-sm">Téléchargement immédiat</h3>
+          <h3 className="font-medium mb-1 text-sm">Téléchargement instantanée</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
       </div>

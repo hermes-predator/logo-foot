@@ -78,7 +78,9 @@ const getCountryDescription = (country: string) => {
     'Hongrie': 'hongrois',
     'Bulgarie': 'bulgares',
     'États-Unis': 'américains',
-    'Argentine': 'argentins'
+    'Argentine': 'argentins',
+    'Australie': 'australiens',
+    'Arabie Saoudite': 'saoudiens'
   };
 
   if (country === 'Sélections Nationales') {
@@ -86,16 +88,17 @@ const getCountryDescription = (country: string) => {
   }
 
   if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
-    return `Collection complète des logos ${country.toLowerCase()} - Format HD transparent`;
+    return `Collection complète des logos ${country.toLowerCase()} - Format HD transparent - ${country}`;
   }
 
   const adjective = countryAdjectives[country] || `de ${country}`;
   const championship = countryChampionships[country];
+  
   if (championship) {
     return `Collection complète des logos de club de foot ${adjective} - Format HD transparent - Toutes les équipes de foot de la ${championship} - ${country}`;
   }
 
-  return `Collection complète des logos de foot ${adjective} - Format HD transparent - Toutes les équipes de foot - ${country}`;
+  return `Collection complète des logos de club de foot ${adjective} - Format HD transparent - ${country}`;
 };
 
 const galleryItems: GalleryItemType[] = Array.from({ length: 64 }, (_, index) => {

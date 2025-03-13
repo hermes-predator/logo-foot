@@ -29,7 +29,11 @@ const PaymentSection = () => {
     },
     {
       icon: Download,
-      text: "Téléchargement instantané après paiement"
+      text: "Téléchargement instantané"
+    },
+    {
+      icon: Wallet,
+      text: "Prix accessible"
     },
     {
       icon: Check,

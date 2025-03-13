@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -10,7 +11,7 @@ import {
 const PaymentSection = () => {
   const handlePayment = () => {
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/QVGJP004?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/Q8UW1DA4?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (

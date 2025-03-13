@@ -58,7 +58,7 @@ const PaymentSection = () => {
               </li>
               <li className="flex items-center text-gray-600">
                 <Timer className="h-5 w-5 mr-3 text-blue-500" />
-                Gain de temps
+                Téléchargement instantané
               </li>
               <li className="flex items-center text-gray-600">
                 <Wallet className="h-5 w-5 mr-3 text-blue-500" />

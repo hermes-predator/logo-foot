@@ -49,7 +49,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Mise à jour gratuite",
+      text: "Valeur à votre actif",
       className: "bg-green-50",
       iconColor: "text-green-600"
     }

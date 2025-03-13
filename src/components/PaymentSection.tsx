@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check } from 'lucide-react';
 import { Button } from './ui/button';
@@ -19,7 +20,7 @@ const PaymentSection = () => {
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/Q22XNC4J?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/Q0BCRG5O?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   const features = [

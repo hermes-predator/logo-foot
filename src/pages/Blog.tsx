@@ -7,7 +7,7 @@ import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
 const Blog = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>Blog Football : Histoire et Évolution des Logos des Clubs | Logo Foot</title>
         <meta 
@@ -38,8 +38,8 @@ const Blog = () => {
             Articles sur les logos de foot
           </h1>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-indigo-500/20 to-purple-500/10 rounded-2xl blur-lg"></div>
-            <div className="relative bg-gradient-to-br from-white via-purple-50/50 to-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 rounded-2xl blur-lg"></div>
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-100">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="bg-purple-100/80 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />
@@ -57,11 +57,11 @@ const Blog = () => {
           {blogPosts.map((post) => (
             <article 
               key={post.id}
-              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-purple-100/20 overflow-hidden"
+              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 overflow-hidden"
             >
               <div className="p-6 flex-1">
                 <time className="text-sm text-gray-500">{post.date}</time>
-                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
+                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-gray-600 transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-3 mb-4">
@@ -71,7 +71,7 @@ const Blog = () => {
               
               <Link 
                 to={`/blog/${post.id}`} 
-                className="p-4 bg-gray-50 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center gap-1 group-hover:bg-gray-100 transition-colors w-full"
+                className="p-4 bg-gray-50 text-gray-700 hover:text-gray-900 font-medium inline-flex items-center gap-1 group-hover:bg-gray-100 transition-colors w-full"
               >
                 Lire l'article
                 <svg 

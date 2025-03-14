@@ -35,17 +35,17 @@ const Blog = () => {
       
       <div className="container mx-auto py-20 px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 leading-tight">
+          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Articles sur les logos de foot
           </h1>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-indigo-500/10 to-purple-500/5 rounded-2xl blur-xl"></div>
-            <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/30">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-indigo-500/20 to-purple-500/10 rounded-2xl blur-xl"></div>
+            <div className="relative bg-gradient-to-br from-white via-purple-50/50 to-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/50 shadow-xl">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="bg-purple-100 p-3 rounded-xl">
+                <div className="bg-purple-100/80 p-3 rounded-xl shadow-inner">
                   <BookOpen className="w-6 h-6 text-purple-600" />
                 </div>
-                <span className="font-semibold text-purple-700">Le Blog Logo-Foot</span>
+                <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Le Blog Logo-Foot</span>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification.

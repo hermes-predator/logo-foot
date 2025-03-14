@@ -67,7 +67,7 @@ const Blog = () => {
             >
               <div className="p-6 flex-1">
                 <time className="text-sm text-gray-600 font-medium">{post.date}</time>
-                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-gray-600 transition-colors">
+                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-3 mb-4">
@@ -77,7 +77,7 @@ const Blog = () => {
               
               <Link 
                 to={`/blog/${post.id}`} 
-                className="p-4 bg-gray-50 text-gray-600 hover:text-gray-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-gray-100/50 transition-colors w-full"
+                className="p-4 bg-purple-50 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-purple-100/50 transition-colors w-full"
               >
                 Lire l'article
                 <svg 

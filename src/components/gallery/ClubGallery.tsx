@@ -57,30 +57,34 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
       {!isLoading && totalPages > 1 && (
         <Pagination className="my-8">
-          <PaginationContent>
+          <PaginationContent className="gap-2">
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-10 h-10 p-0 flex items-center justify-center rounded-full bg-gray-50 border border-gray-200 shadow-sm hover:bg-primary hover:text-white transition-all duration-200 ${
+                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full bg-white border-2 border-gray-200 shadow-sm 
+                  hover:border-primary hover:bg-primary hover:text-white hover:scale-110
+                  active:scale-95 transition-all duration-300 ease-in-out ${
                   currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'
                 }`}
               >
-                <ChevronLeft className="h-5 w-5" />
+                <ChevronLeft className="h-6 w-6" />
               </PaginationLink>
             </PaginationItem>
 
             {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
                 {page === 'ellipsis' ? (
-                  <PaginationEllipsis className="text-gray-500" />
+                  <PaginationEllipsis className="text-gray-500 mx-1" />
                 ) : (
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className={`w-10 h-10 p-0 flex items-center justify-center rounded-full text-sm font-medium transition-all duration-200 cursor-pointer
+                    className={`w-12 h-12 p-0 flex items-center justify-center rounded-full text-base font-semibold 
+                      transition-all duration-300 ease-in-out cursor-pointer
+                      hover:scale-110 active:scale-95
                       ${currentPage === page 
-                        ? 'bg-primary text-white shadow-md' 
-                        : 'bg-gray-50 border border-gray-200 hover:bg-primary hover:text-white shadow-sm'
+                        ? 'bg-primary text-white shadow-lg border-2 border-primary scale-110' 
+                        : 'bg-white border-2 border-gray-200 hover:border-primary hover:bg-primary hover:text-white shadow-sm'
                       }`}
                   >
                     {page}
@@ -92,11 +96,13 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-10 h-10 p-0 flex items-center justify-center rounded-full bg-gray-50 border border-gray-200 shadow-sm hover:bg-primary hover:text-white transition-all duration-200 ${
+                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full bg-white border-2 border-gray-200 shadow-sm 
+                  hover:border-primary hover:bg-primary hover:text-white hover:scale-110
+                  active:scale-95 transition-all duration-300 ease-in-out ${
                   currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'
                 }`}
               >
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight className="h-6 w-6" />
               </PaginationLink>
             </PaginationItem>
           </PaginationContent>

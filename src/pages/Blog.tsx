@@ -68,10 +68,10 @@ const Blog = () => {
           {blogPosts.map((post) => (
             <article 
               key={post.id}
-              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden"
+              className="group flex flex-col bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden"
             >
               <div className="p-6 flex-1">
-                <time className="text-sm font-medium bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent px-3 py-1 rounded-full inline-block border border-blue-100">
+                <time className="text-sm font-medium text-gray-600 px-3 py-1.5 rounded-full inline-block border border-gray-200 shadow-sm bg-white">
                   {format(new Date(post.date), 'dd-MM-yyyy')}
                 </time>
                 <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">

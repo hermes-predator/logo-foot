@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -34,7 +33,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${post.title} | Blog Logo Foot`}</title>
         <meta name="description" content={post.excerpt} />
@@ -95,8 +94,8 @@ const BlogPost = () => {
             Retour aux articles
           </Link>
 
-          <article className="bg-white rounded-xl shadow-sm p-8 md:p-12">
-            <time className="inline-block px-4 py-1.5 rounded-full border border-blue-100 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent font-medium mb-6">
+          <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm p-8 md:p-12">
+            <time className="inline-block px-4 py-1.5 rounded-full border border-gray-200 shadow-sm bg-white text-gray-600 font-medium mb-6">
               {format(new Date(post.date), 'dd-MM-yyyy')}
             </time>
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>

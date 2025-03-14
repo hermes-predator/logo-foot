@@ -1,13 +1,14 @@
-
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Play, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { GalleryItemProps } from "@/types/gallery";
 import { useLazyLoading } from "@/hooks/useLazyLoading";
 import { Skeleton } from "@/components/ui/skeleton";
+import { getOptimizedImageUrl } from "@/utils/imageUtils";
 
 const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
   const { isInView, imgRef } = useLazyLoading();
+  const optimizedImageUrl = getOptimizedImageUrl(item.imageUrl);
 
   const getVideoTitle = (country: string) => {
     if (country === 'Sélections Nationales') {
@@ -87,7 +88,7 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
                 )}
                 <img
                   ref={imgRef}
-                  src={isInView ? item.imageUrl : '/placeholder.svg'}
+                  src={isInView ? optimizedImageUrl : '/placeholder.svg'}
                   alt={item.altText}
                   className="w-full h-full object-contain transition-opacity duration-500"
                   loading="lazy"

@@ -54,10 +54,10 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
 
   return (
     <div
-      className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-xl"
+      className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
       style={{
         opacity: 0,
-        animation: `fadeIn 0.5s ease-out ${item.id * 0.1}s forwards`
+        animation: `fadeIn 0.3s ease-out ${item.id * 0.05}s forwards`
       }}
       onMouseEnter={() => onHover(item.id)}
       onMouseLeave={() => onHover(null)}
@@ -76,7 +76,7 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
                   playsInline
                   title={getVideoTitle(item.country)}
                 />
-                <div className="absolute top-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
+                <div className="absolute top-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
                   <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
                 </div>
               </div>
@@ -89,11 +89,11 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
                   ref={imgRef}
                   src={isInView ? item.imageUrl : '/placeholder.svg'}
                   alt={item.altText}
-                  className="w-full h-full object-contain transition-opacity duration-500"
+                  className="w-full h-full object-contain transition-opacity duration-300"
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="absolute bottom-2 right-2 transform transition-all duration-300 ease-out hover:scale-110">
+                <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
                   <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
                 </div>
               </>
@@ -106,7 +106,7 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
           country={item.country}
         />
       </Dialog>
-      <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-300 hover:opacity-100 opacity-80">
+      <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80">
         {item.title}
       </p>
     </div>

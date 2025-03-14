@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check } from 'lucide-react';
 import { Button } from './ui/button';
@@ -133,7 +132,7 @@ const PaymentSection = () => {
                     <HelpCircle className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
-                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 7 jours suivant votre achat. Veuillez noter que la loi qui encadre les produits numériques ne nous oblige pas à vous proposer un retour. Cependant, si vous considérez que le produit ne répond pas à vos attentes. Nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 7 jours suivant votre achat. Veuillez noter que la loi qui encadre les produits numériques ne nous oblige pas à vous proposer un retour. Cependant, si le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur votre demande.</p>
                   </TooltipContent>
                 </Tooltip>
               </div>

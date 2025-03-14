@@ -22,7 +22,7 @@ const ProductGallery = () => {
         <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Logos des Clubs de Foot</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Plus de 8600 logos de clubs de football en haute qualité</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Plus de 8 600 logo foot des clubs de football en haute qualité</p>
             <ClubGallery items={clubItems} isLoading={isLoading} />
           </div>
 

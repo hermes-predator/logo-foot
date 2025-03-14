@@ -74,7 +74,7 @@ const countryChampionships: { [key: string]: string } = {
   'Iles Féroés': 'Premier League',
   'Qatar': 'Stars League',
   'Gibraltar': 'National League'
-};
+];
 
 const getCountryDescription = (country: string) => {
   const countryAdjectives: { [key: string]: string } = {
@@ -189,7 +189,7 @@ const ProductGallery = () => {
     <section className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto space-y-16">
         <div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Clubs de Football</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Clubs de Foot</h2>
           <ClubGallery items={clubItems} isLoading={isLoading} />
         </div>
 

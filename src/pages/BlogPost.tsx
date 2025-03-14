@@ -1,8 +1,7 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -75,9 +74,7 @@ const BlogPost = () => {
           </Link>
 
           <article className="bg-white rounded-xl shadow-sm p-8 md:p-12">
-            <time className="text-sm text-gray-500 block mb-4">
-              {format(new Date(post.date), 'dd/MM/yyyy', { locale: fr })}
-            </time>
+            <time className="text-sm text-gray-500 block mb-4">{post.date}</time>
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
             <div className="prose prose-purple lg:prose-lg mx-auto">
               {post.content.split('\n\n').map((paragraph, index) => (

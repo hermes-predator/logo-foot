@@ -20,12 +20,14 @@ const ProductGallery = () => {
     <section className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto space-y-16">
         <div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Clubs de Foot</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Logos des Clubs de Foot</h2>
+          <p className="text-gray-600 mb-8">Plus de 8600 logos de clubs de football en haute qualité</p>
           <ClubGallery items={clubItems} isLoading={isLoading} />
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Compétitions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Logos des Compétitions</h2>
+          <p className="text-gray-600 mb-8">Collection complète des logos des compétitions majeures</p>
           <CompetitionGallery items={competitionItems} isLoading={isLoading} />
         </div>
       </div>

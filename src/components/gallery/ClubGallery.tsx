@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -60,23 +61,27 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-10 h-10 p-0 flex items-center justify-center ${
-                  currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'
+                className={`w-10 h-10 p-0 flex items-center justify-center rounded-full bg-gray-50 border border-gray-200 shadow-sm hover:bg-primary hover:text-white transition-all duration-200 ${
+                  currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'
                 }`}
               >
-                <ChevronLeft className="h-4 w-4" />
+                <ChevronLeft className="h-5 w-5" />
               </PaginationLink>
             </PaginationItem>
 
             {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
                 {page === 'ellipsis' ? (
-                  <PaginationEllipsis />
+                  <PaginationEllipsis className="text-gray-500" />
                 ) : (
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className="w-10 h-10 p-0 flex items-center justify-center hover:scale-105 transition-transform"
+                    className={`w-10 h-10 p-0 flex items-center justify-center rounded-full text-sm font-medium transition-all duration-200 cursor-pointer
+                      ${currentPage === page 
+                        ? 'bg-primary text-white shadow-md' 
+                        : 'bg-gray-50 border border-gray-200 hover:bg-primary hover:text-white shadow-sm'
+                      }`}
                   >
                     {page}
                   </PaginationLink>
@@ -87,11 +92,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-10 h-10 p-0 flex items-center justify-center ${
-                  currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'
+                className={`w-10 h-10 p-0 flex items-center justify-center rounded-full bg-gray-50 border border-gray-200 shadow-sm hover:bg-primary hover:text-white transition-all duration-200 ${
+                  currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'
                 }`}
               >
-                <ChevronRight className="h-4 w-4" />
+                <ChevronRight className="h-5 w-5" />
               </PaginationLink>
             </PaginationItem>
           </PaginationContent>

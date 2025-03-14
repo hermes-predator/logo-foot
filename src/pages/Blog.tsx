@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -35,27 +34,25 @@ const Blog = () => {
       
       <div className="container mx-auto py-20 px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 text-purple-600 font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium mb-6">
             <Award className="w-4 h-4" />
             <span>Le Blog Référence des Logos de Football</span>
           </div>
           
           <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
-              Explorez l'Histoire
-            </span>
+            Explorez l'Histoire
             <br />
             des Logos du Football
           </h1>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-100/50 via-white to-purple-100/50 rounded-2xl blur-lg"></div>
-            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200">
               <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="bg-purple-100 p-3 rounded-xl">
+                <div className="bg-gray-100 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />
                 </div>
-                <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                <span className="font-semibold text-gray-800">
                   Le Blog Logo-Foot
                 </span>
               </div>
@@ -66,7 +63,7 @@ const Blog = () => {
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                  <div className="bg-gray-50/50 p-4 rounded-xl">
                     <div className="flex items-start gap-3">
                       <Book className="w-5 h-5 text-purple-600 mt-1" />
                       <div>
@@ -76,7 +73,7 @@ const Blog = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                  <div className="bg-gray-50/50 p-4 rounded-xl">
                     <div className="flex items-start gap-3">
                       <Star className="w-5 h-5 text-purple-600 mt-1" />
                       <div>
@@ -86,7 +83,7 @@ const Blog = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                  <div className="bg-gray-50/50 p-4 rounded-xl">
                     <div className="flex items-start gap-3">
                       <TrendingUp className="w-5 h-5 text-purple-600 mt-1" />
                       <div>

@@ -71,7 +71,7 @@ const Blog = () => {
               className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-purple-100/50 overflow-hidden"
             >
               <div className="p-6 flex-1">
-                <time className="text-sm text-gray-500 font-semibold inline-block px-3 py-1 rounded-md bg-gray-50 border border-gray-100">
+                <time className="text-sm font-medium text-purple-600 bg-purple-50 px-3 py-1 rounded-full inline-block">
                   {format(new Date(post.date), 'dd-MM-yyyy')}
                 </time>
                 <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">

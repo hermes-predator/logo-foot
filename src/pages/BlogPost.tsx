@@ -95,7 +95,7 @@ const BlogPost = () => {
           </Link>
 
           <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm p-8 md:p-12">
-            <time className="inline-block px-4 py-1.5 rounded-full border border-gray-200 shadow-sm bg-white text-gray-600 font-medium mb-6">
+            <time className="text-sm font-medium text-gray-500 mb-6 inline-block">
               {format(new Date(post.date), 'dd-MM-yyyy')}
             </time>
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>

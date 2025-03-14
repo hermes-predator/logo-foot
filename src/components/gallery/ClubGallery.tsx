@@ -60,7 +60,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-11 h-11 p-0 flex items-center justify-center rounded-full
+                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full
                   shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
                   backdrop-blur-[2px] bg-white/90
                   ${currentPage === 1 
@@ -80,7 +80,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className={`w-11 h-11 p-0 flex items-center justify-center rounded-full text-base
+                    className={`w-12 h-12 p-0 flex items-center justify-center rounded-full text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
                         ? 'bg-primary/95 text-white shadow-[0_6px_16px_rgba(59,130,246,0.25)] border border-primary/90' 
@@ -96,7 +96,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-11 h-11 p-0 flex items-center justify-center rounded-full
+                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full
                   shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
                   backdrop-blur-[2px] bg-white/90
                   ${currentPage === totalPages 

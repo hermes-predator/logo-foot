@@ -17,18 +17,20 @@ const ProductGallery = () => {
   }, []);
 
   return (
-    <section className="container mx-auto px-4 py-12">
-      <div className="max-w-7xl mx-auto space-y-16">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Logos des Clubs de Foot</h2>
-          <p className="text-gray-600 mb-8">Plus de 8600 logos de clubs de football en haute qualité</p>
-          <ClubGallery items={clubItems} isLoading={isLoading} />
-        </div>
+    <section className="w-full min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Logos des Clubs de Foot</h2>
+            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Plus de 8600 logos de clubs de football en haute qualité</p>
+            <ClubGallery items={clubItems} isLoading={isLoading} />
+          </div>
 
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Logos des Compétitions</h2>
-          <p className="text-gray-600 mb-8">Collection complète des logos des compétitions majeures</p>
-          <CompetitionGallery items={competitionItems} isLoading={isLoading} />
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Logos des Compétitions</h2>
+            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Collection complète des logos des compétitions majeures</p>
+            <CompetitionGallery items={competitionItems} isLoading={isLoading} />
+          </div>
         </div>
       </div>
     </section>

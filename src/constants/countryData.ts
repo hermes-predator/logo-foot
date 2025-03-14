@@ -1,5 +1,6 @@
+import { CountryName, CountryChampionship } from '@/types/countries';
 
-export const countries = [
+export const countries: CountryName[] = [
   'Angleterre', 'Allemagne', 'Espagne', 'France', 'Italie',
   'Brésil', 'États-Unis', 'Pays-Bas', 'Sélections Nationales', 'Argentine',
   'Portugal', 'Turquie', 'Belgique', 'Danemark', 'Grèce',
@@ -15,7 +16,7 @@ export const countries = [
   'Compétitions de football', 'Compétitions internationales', 'Coupes nationales', 'Championnats'
 ];
 
-export const countryChampionships: { [key: string]: string } = {
+export const countryChampionships: CountryChampionship = {
   'France': 'Ligue 1',
   'Allemagne': 'Bundesliga',
   'Espagne': 'La Liga',

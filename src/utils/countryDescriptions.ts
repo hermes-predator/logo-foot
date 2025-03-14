@@ -1,5 +1,7 @@
+import { CountryAdjective } from '@/types/countries';
+import { countryChampionships } from '@/constants/countryData';
 
-const countryAdjectives: { [key: string]: string } = {
+const countryAdjectives: CountryAdjective = {
   'France': 'français',
   'Allemagne': 'allemands',
   'Espagne': 'espagnols',
@@ -53,7 +55,7 @@ const countryAdjectives: { [key: string]: string } = {
   'Gibraltar': 'gibraltariens'
 };
 
-export const getCountryDescription = (country: string) => {
+export const getCountryDescription = (country: string): string => {
   if (country === 'Sélections Nationales') {
     return 'Collection complète des logos des sélections nationales de football - Format HD transparent - Tous les pays';
   }

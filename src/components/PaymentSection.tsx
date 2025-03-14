@@ -132,7 +132,7 @@ const PaymentSection = () => {
                     <HelpCircle className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
-                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 7 jours suivant votre achat. Veuillez noter que la loi encadrant les produits numériques ne nous oblige à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas. Nous pouvons émettre un ordre de remboursement intégral suite à votre demande.</p>
+                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat. Veuillez noter que la loi encadrant les produits numériques ne nous oblige à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas. Nous pouvons émettre un ordre de remboursement intégral suite à votre demande.</p>
                   </TooltipContent>
                 </Tooltip>
               </div>

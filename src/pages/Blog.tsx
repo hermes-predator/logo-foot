@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { BookOpen } from 'lucide-react';
+import { format } from 'date-fns';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -71,7 +72,7 @@ const Blog = () => {
             >
               <div className="p-6 flex-1">
                 <time className="text-sm text-gray-500 font-semibold inline-block px-3 py-1 rounded-md bg-gray-50 border border-gray-100">
-                  {post.date}
+                  {format(new Date(post.date), 'dd-MM-yyyy')}
                 </time>
                 <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
                   {post.title}

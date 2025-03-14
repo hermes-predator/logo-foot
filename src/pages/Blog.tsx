@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -39,10 +38,10 @@ const Blog = () => {
             Articles sur les logos de foot
           </h1>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-indigo-500/20 to-purple-500/10 rounded-2xl blur-xl"></div>
-            <div className="relative bg-gradient-to-br from-white via-purple-50/50 to-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/50 shadow-xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-indigo-500/20 to-purple-500/10 rounded-2xl blur-lg"></div>
+            <div className="relative bg-gradient-to-br from-white via-purple-50/50 to-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100/50">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="bg-purple-100/80 p-3 rounded-xl shadow-inner">
+                <div className="bg-purple-100/80 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />
                 </div>
                 <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Le Blog Logo-Foot</span>

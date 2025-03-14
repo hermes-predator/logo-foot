@@ -51,6 +51,27 @@ const BlogPost = () => {
       <BlogSchemaMarkup post={post} />
       
       <div className="container mx-auto py-20 px-4">
+        <Link 
+          to="/blog"
+          className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 mb-8 group"
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M15 19l-7-7 7-7" 
+            />
+          </svg>
+          Retour aux articles
+        </Link>
+
         <div className="max-w-3xl mx-auto">
           <Link 
             to="/blog"

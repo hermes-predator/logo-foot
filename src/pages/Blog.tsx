@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -56,7 +57,7 @@ const Blog = () => {
               
               <div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les emblèmes du football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir les histoires fascinantes qui se cachent derrière les logos des clubs.
+                  Bienvenue sur le blog Logo-Foot, votre source d'informations sur le logo de football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir les histoires fascinantes qui se cachent derrière les logos des clubs de foot.
                 </p>
               </div>
             </div>
@@ -108,3 +109,4 @@ const Blog = () => {
 };
 
 export default Blog;
+

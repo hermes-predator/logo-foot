@@ -27,8 +27,8 @@ const ProductGallery = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Autres ressources connexes</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Collection complète des logos des compétitions majeures</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Autres logos de foot connexes</h2>
+            <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Logos des compétitions de football majeures, logos des bookmakers...</p>
             <CompetitionGallery items={competitionItems} isLoading={isLoading} />
           </div>
         </div>

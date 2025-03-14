@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import ClubGallery from './gallery/ClubGallery';
 import CompetitionGallery from './gallery/CompetitionGallery';
@@ -28,7 +27,7 @@ const ProductGallery = () => {
 
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Autres logos de foot connexes</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de football majeures, logos des bookmakers...</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, logos des bookmakers...</p>
             <CompetitionGallery items={competitionItems} isLoading={isLoading} />
           </div>
         </div>
@@ -38,4 +37,3 @@ const ProductGallery = () => {
 };
 
 export default ProductGallery;
-

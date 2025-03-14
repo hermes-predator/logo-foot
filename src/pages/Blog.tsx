@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { BookOpen, Star, Book, Search } from 'lucide-react';
+import { BookOpen, Star, Book, Search, Award, TrendingUp } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -34,47 +34,65 @@ const Blog = () => {
       <BlogSchemaMarkup isBlogList />
       
       <div className="container mx-auto py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 text-purple-600 font-medium mb-6">
+            <Award className="w-4 h-4" />
+            <span>Le Blog Référence des Logos de Football</span>
+          </div>
+          
           <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Articles sur les logos de foot
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
+              Explorez l'Histoire
+            </span>
+            <br />
+            des Logos du Football
           </h1>
+
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 rounded-2xl blur-lg"></div>
-            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-100">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="bg-purple-100/80 p-3 rounded-xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-100/50 via-white to-purple-100/50 rounded-2xl blur-lg"></div>
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-100">
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="bg-purple-100 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />
                 </div>
-                <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Le Blog Logo-Foot</span>
+                <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  Le Blog Logo-Foot
+                </span>
               </div>
               
-              <div className="space-y-6">
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Plongez dans l'univers fascinant des logos de football à travers nos articles soigneusement rédigés. Découvrez l'histoire, l'évolution et la signification des emblèmes qui font la fierté des clubs.
+              <div className="space-y-8">
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les emblèmes du football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir les histoires fascinantes qui se cachent derrière les logos des clubs.
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-                  <div className="flex items-start gap-3">
-                    <Book className="w-5 h-5 text-gray-500 mt-1" />
-                    <div>
-                      <h3 className="font-medium text-gray-800">Histoires Détaillées</h3>
-                      <p className="text-sm text-gray-600">Explorez l'origine des logos les plus emblématiques</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                    <div className="flex items-start gap-3">
+                      <Book className="w-5 h-5 text-purple-600 mt-1" />
+                      <div>
+                        <h3 className="font-medium text-gray-800">Histoires Détaillées</h3>
+                        <p className="text-sm text-gray-600">L'origine passionnante de chaque emblème</p>
+                      </div>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <Star className="w-5 h-5 text-gray-500 mt-1" />
-                    <div>
-                      <h3 className="font-medium text-gray-800">Analyses Exclusives</h3>
-                      <p className="text-sm text-gray-600">Des insights uniques sur le design des emblèmes</p>
+                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                    <div className="flex items-start gap-3">
+                      <Star className="w-5 h-5 text-purple-600 mt-1" />
+                      <div>
+                        <h3 className="font-medium text-gray-800">Analyses Exclusives</h3>
+                        <p className="text-sm text-gray-600">Décryptage approfondi des designs</p>
+                      </div>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <Search className="w-5 h-5 text-gray-500 mt-1" />
-                    <div>
-                      <h3 className="font-medium text-gray-800">Recherches Approfondies</h3>
-                      <p className="text-sm text-gray-600">Des articles basés sur des sources fiables</p>
+                  <div className="bg-purple-50/50 p-4 rounded-xl">
+                    <div className="flex items-start gap-3">
+                      <TrendingUp className="w-5 h-5 text-purple-600 mt-1" />
+                      <div>
+                        <h3 className="font-medium text-gray-800">Évolutions & Tendances</h3>
+                        <p className="text-sm text-gray-600">Les transformations au fil du temps</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -87,11 +105,11 @@ const Blog = () => {
           {blogPosts.map((post) => (
             <article 
               key={post.id}
-              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 overflow-hidden"
+              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-purple-100/50 overflow-hidden"
             >
               <div className="p-6 flex-1">
-                <time className="text-sm text-gray-500">{post.date}</time>
-                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-gray-600 transition-colors">
+                <time className="text-sm text-purple-600 font-medium">{post.date}</time>
+                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-3 mb-4">
@@ -101,7 +119,7 @@ const Blog = () => {
               
               <Link 
                 to={`/blog/${post.id}`} 
-                className="p-4 bg-gray-50 text-gray-700 hover:text-gray-900 font-medium inline-flex items-center gap-1 group-hover:bg-gray-100 transition-colors w-full"
+                className="p-4 bg-purple-50 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-purple-100/50 transition-colors w-full"
               >
                 Lire l'article
                 <svg 

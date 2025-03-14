@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
 import GallerySkeleton from './GallerySkeleton';
-import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { 
+  Pagination, 
+  PaginationContent, 
+  PaginationItem, 
+  PaginationLink, 
+  PaginationEllipsis 
+} from "@/components/ui/pagination";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ClubGalleryProps {
   items: GalleryItemType[];
@@ -18,6 +25,15 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  const getVisiblePages = () => {
+    if (totalPages <= 5) return Array.from({ length: totalPages }, (_, i) => i + 1);
+    
+    if (currentPage <= 3) return [1, 2, 3, 4, 'ellipsis', totalPages];
+    if (currentPage >= totalPages - 2) return [1, 'ellipsis', totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    
+    return [1, 'ellipsis', currentPage - 1, currentPage, currentPage + 1, 'ellipsis', totalPages];
+  };
 
   return (
     <div className="space-y-8">
@@ -42,33 +58,41 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
         <Pagination className="my-8">
           <PaginationContent>
             <PaginationItem>
-              <PaginationPrevious 
+              <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`text-lg cursor-pointer ${currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+                className={`w-10 h-10 p-0 flex items-center justify-center ${
+                  currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'
+                }`}
               >
-                Précédent
-              </PaginationPrevious>
+                <ChevronLeft className="h-4 w-4" />
+              </PaginationLink>
             </PaginationItem>
 
-            {Array.from({ length: totalPages }).map((_, index) => (
+            {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
-                <PaginationLink
-                  onClick={() => setCurrentPage(index + 1)}
-                  isActive={currentPage === index + 1}
-                  className="text-lg cursor-pointer hover:scale-105 transition-transform"
-                >
-                  {index + 1}
-                </PaginationLink>
+                {page === 'ellipsis' ? (
+                  <PaginationEllipsis />
+                ) : (
+                  <PaginationLink
+                    onClick={() => setCurrentPage(page as number)}
+                    isActive={currentPage === page}
+                    className="w-10 h-10 p-0 flex items-center justify-center hover:scale-105 transition-transform"
+                  >
+                    {page}
+                  </PaginationLink>
+                )}
               </PaginationItem>
             ))}
 
             <PaginationItem>
-              <PaginationNext 
+              <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`text-lg cursor-pointer ${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+                className={`w-10 h-10 p-0 flex items-center justify-center ${
+                  currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'
+                }`}
               >
-                Suivant
-              </PaginationNext>
+                <ChevronRight className="h-4 w-4" />
+              </PaginationLink>
             </PaginationItem>
           </PaginationContent>
         </Pagination>

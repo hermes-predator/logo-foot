@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import GalleryItem from './gallery/GalleryItem';
-import GallerySkeleton from './gallery/GallerySkeleton';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
+import ClubGallery from './gallery/ClubGallery';
+import CompetitionGallery from './gallery/CompetitionGallery';
 
 const countries = [
   'Angleterre', 'Allemagne', 'Espagne', 'France', 'Italie',
@@ -149,7 +149,7 @@ const getCountryDescription = (country: string) => {
   return `Collection complète des logos de club de foot ${adjective} - Format HD transparent - ${country}`;
 };
 
-const galleryItems: GalleryItemType[] = Array.from({ length: 64 }, (_, index) => {
+const clubItems: GalleryItemType[] = Array.from({ length: 60 }, (_, index) => {
   const country = countries[index] || 'International';
   return {
     id: index + 1,
@@ -161,12 +161,23 @@ const galleryItems: GalleryItemType[] = Array.from({ length: 64 }, (_, index) =>
   };
 });
 
+const competitionItems: GalleryItemType[] = Array.from({ length: 4 }, (_, index) => {
+  const arrayIndex = index + 60;
+  const country = countries[arrayIndex] || 'International';
+  return {
+    id: arrayIndex + 1,
+    imageUrl: `/public/images/logo${arrayIndex + 1}.png`,
+    videoUrl: `/public/videos/video${arrayIndex + 1}.mov`,
+    country: country,
+    title: `Logo ${country} - Collection officielle logos clubs de foot`,
+    altText: getCountryDescription(country),
+  };
+});
+
 const ProductGallery = () => {
-  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simuler un temps de chargement pour montrer les skeletons
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -176,22 +187,15 @@ const ProductGallery = () => {
 
   return (
     <section className="container mx-auto px-4 py-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {isLoading ? (
-            Array.from({ length: 12 }).map((_, index) => (
-              <GallerySkeleton key={index} />
-            ))
-          ) : (
-            galleryItems.map((item) => (
-              <GalleryItem
-                key={item.id}
-                item={item}
-                onHover={setHoveredItem}
-                isHovered={hoveredItem === item.id}
-              />
-            ))
-          )}
+      <div className="max-w-7xl mx-auto space-y-16">
+        <div>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Clubs de Football</h2>
+          <ClubGallery items={clubItems} isLoading={isLoading} />
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Logos des Compétitions</h2>
+          <CompetitionGallery items={competitionItems} isLoading={isLoading} />
         </div>
       </div>
     </section>

@@ -55,35 +55,36 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
       </div>
 
       {!isLoading && totalPages > 1 && (
-        <Pagination className="my-12">
-          <PaginationContent className="gap-3">
+        <Pagination className="my-8">
+          <PaginationContent className="gap-2">
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white
-                  shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-all duration-300 border-2
+                className={`w-11 h-11 p-0 flex items-center justify-center rounded-full
+                  shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
+                  backdrop-blur-[2px] bg-white/90
                   ${currentPage === 1 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/80 hover:border-primary/90 hover:text-primary hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] cursor-pointer'
+                    : 'border-gray-200/60 hover:border-primary/80 hover:text-primary hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)] cursor-pointer'
                   }`}
               >
-                <ChevronLeft className="h-6 w-6 stroke-[2.5px]" />
+                <ChevronLeft className="h-5 w-5 stroke-[2px]" />
               </PaginationLink>
             </PaginationItem>
 
             {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
                 {page === 'ellipsis' ? (
-                  <PaginationEllipsis className="text-gray-400 mx-0.5" />
+                  <PaginationEllipsis className="text-gray-400 mx-0.5 text-sm" />
                 ) : (
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className={`w-14 h-14 p-0 flex items-center justify-center rounded-full text-lg
-                      transition-all duration-300 cursor-pointer font-medium backdrop-blur-sm
+                    className={`w-11 h-11 p-0 flex items-center justify-center rounded-full text-base
+                      transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-primary text-white shadow-[0_8px_16px_rgba(59,130,246,0.25)] border-2 border-primary/90' 
-                        : 'bg-white border-2 border-gray-200/80 hover:border-primary/90 hover:text-primary shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)]'
+                        ? 'bg-primary/95 text-white shadow-[0_6px_16px_rgba(59,130,246,0.25)] border border-primary/90' 
+                        : 'bg-white/90 border border-gray-200/60 hover:border-primary/80 hover:text-primary/90 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)]'
                       }`}
                   >
                     {page}
@@ -95,14 +96,15 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white
-                  shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-all duration-300 border-2
+                className={`w-11 h-11 p-0 flex items-center justify-center rounded-full
+                  shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
+                  backdrop-blur-[2px] bg-white/90
                   ${currentPage === totalPages 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/80 hover:border-primary/90 hover:text-primary hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] cursor-pointer'
+                    : 'border-gray-200/60 hover:border-primary/80 hover:text-primary hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)] cursor-pointer'
                   }`}
               >
-                <ChevronRight className="h-6 w-6 stroke-[2.5px]" />
+                <ChevronRight className="h-5 w-5 stroke-[2px]" />
               </PaginationLink>
             </PaginationItem>
           </PaginationContent>

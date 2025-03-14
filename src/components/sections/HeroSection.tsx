@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,6 +10,11 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -86,6 +91,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <ChevronDown className="h-4 w-4 animate-bounce" />
             Voir le prix
           </Button>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <RefreshCcw className="h-4 w-4 text-green-600" />
+          <Tooltip>
+            <TooltipTrigger className="text-sm text-green-700 font-medium flex items-center gap-1">
+              Satisfait ou remboursé
+              <HelpCircle className="h-4 w-4" />
+            </TooltipTrigger>
+            <TooltipContent className="max-w-[300px]">
+              <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 7 jours suivant votre achat. Veuillez noter que la loi qui encadre les produits numériques ne nous oblige à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas. Nous pouvons vous émettre un remboursement intégral.</p>
+            </TooltipContent>
+          </Tooltip>
         </div>
       </div>
     </section>

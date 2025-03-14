@@ -40,9 +40,9 @@ const Blog = () => {
           </div>
           
           <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Explorez l'Histoire
+            Articles sur les logos
             <br />
-            des Logos du Football
+            de foot
           </h1>
 
           <div className="relative">

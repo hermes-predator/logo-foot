@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -35,10 +34,6 @@ const Blog = () => {
       
       <div className="container mx-auto py-20 px-4">
         <div className="max-w-4xl mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium mb-6">
-            <span>Le Blog des Logos de Football</span>
-          </div>
-          
           <h1 className="text-5xl font-bold text-gray-900 mb-6 whitespace-nowrap">
             Articles sur les logos de foot
           </h1>
@@ -48,7 +43,7 @@ const Blog = () => {
             <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-8">
                 <div className="bg-gray-100 p-3 rounded-xl">
-                  <BookOpen className="w-6 h-6 text-purple-600" />
+                  <BookOpen className="w-6 h-6 text-gray-600" />
                 </div>
                 <span className="font-semibold text-gray-800">
                   Le Blog Logo-Foot
@@ -68,11 +63,11 @@ const Blog = () => {
           {blogPosts.map((post) => (
             <article 
               key={post.id}
-              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-purple-100/50 overflow-hidden"
+              className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200 overflow-hidden"
             >
               <div className="p-6 flex-1">
-                <time className="text-sm text-purple-600 font-medium">{post.date}</time>
-                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
+                <time className="text-sm text-gray-600 font-medium">{post.date}</time>
+                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-gray-600 transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-3 mb-4">
@@ -82,7 +77,7 @@ const Blog = () => {
               
               <Link 
                 to={`/blog/${post.id}`} 
-                className="p-4 bg-purple-50 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-purple-100/50 transition-colors w-full"
+                className="p-4 bg-gray-50 text-gray-600 hover:text-gray-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-gray-100/50 transition-colors w-full"
               >
                 Lire l'article
                 <svg 
@@ -109,4 +104,3 @@ const Blog = () => {
 };
 
 export default Blog;
-

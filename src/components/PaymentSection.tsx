@@ -133,7 +133,7 @@ const PaymentSection = () => {
                     <HelpCircle className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px]">
-                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 10 jours suivant votre achat pour obtenir un remboursement intégral.</p>
+                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 7 jours suivant votre achat. Veuillez noter que la loi qui encadre les produits numériques ne nous oblige à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas. Nous pouvons vous émettre un remboursement intégral.</p>
                   </TooltipContent>
                 </Tooltip>
               </div>

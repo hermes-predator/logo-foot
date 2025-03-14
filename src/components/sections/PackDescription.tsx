@@ -6,7 +6,7 @@ const PackDescription = () => {
   return (
     <div className="space-y-6">
       <p className="text-lg font-medium text-gray-800">
-        Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs dans vos projets personnels.
+        Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs et de confiance dans vos projets.
       </p>
 
       <div className="space-y-8">

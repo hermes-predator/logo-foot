@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -84,7 +83,7 @@ const Blog = () => {
               
               <Link 
                 to={`/blog/${post.id}`} 
-                className="p-4 bg-[#F1F0FB] text-purple-600 hover:text-purple-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-gray-100/80 transition-colors w-full"
+                className="p-4 bg-gray-100/80 text-purple-600 hover:text-purple-700 font-medium inline-flex items-center justify-center gap-1 group-hover:bg-[#F1F0FB] transition-colors w-full"
               >
                 Lire l'article
                 <svg 

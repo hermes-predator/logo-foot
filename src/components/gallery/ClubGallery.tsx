@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -61,30 +60,30 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white border-2 
-                  shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-colors duration-300
+                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white
+                  shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-all duration-300 border-2
                   ${currentPage === 1 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200 hover:border-primary hover:text-primary cursor-pointer'
+                    : 'border-gray-200/80 hover:border-primary/90 hover:text-primary hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] cursor-pointer'
                   }`}
               >
-                <ChevronLeft className="h-7 w-7" />
+                <ChevronLeft className="h-6 w-6 stroke-[2.5px]" />
               </PaginationLink>
             </PaginationItem>
 
             {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
                 {page === 'ellipsis' ? (
-                  <PaginationEllipsis className="text-gray-400 mx-1" />
+                  <PaginationEllipsis className="text-gray-400 mx-0.5" />
                 ) : (
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className={`w-14 h-14 p-0 flex items-center justify-center rounded-full text-lg font-medium 
-                      transition-all duration-300 cursor-pointer
+                    className={`w-14 h-14 p-0 flex items-center justify-center rounded-full text-lg
+                      transition-all duration-300 cursor-pointer font-medium backdrop-blur-sm
                       ${currentPage === page 
-                        ? 'bg-primary text-white shadow-[0_8px_16px_rgba(0,0,0,0.15)] border-2 border-primary' 
-                        : 'bg-white border-2 border-gray-200 hover:border-primary hover:text-primary shadow-[0_4px_12px_rgba(0,0,0,0.08)]'
+                        ? 'bg-primary text-white shadow-[0_8px_16px_rgba(59,130,246,0.25)] border-2 border-primary/90' 
+                        : 'bg-white border-2 border-gray-200/80 hover:border-primary/90 hover:text-primary shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)]'
                       }`}
                   >
                     {page}
@@ -96,14 +95,14 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white border-2 
-                  shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-colors duration-300
+                className={`w-14 h-14 p-0 flex items-center justify-center rounded-full bg-white
+                  shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-all duration-300 border-2
                   ${currentPage === totalPages 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200 hover:border-primary hover:text-primary cursor-pointer'
+                    : 'border-gray-200/80 hover:border-primary/90 hover:text-primary hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] cursor-pointer'
                   }`}
               >
-                <ChevronRight className="h-7 w-7" />
+                <ChevronRight className="h-6 w-6 stroke-[2.5px]" />
               </PaginationLink>
             </PaginationItem>
           </PaginationContent>

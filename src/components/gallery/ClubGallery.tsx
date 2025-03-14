@@ -41,11 +41,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
       {!isLoading && totalPages > 1 && (
         <Pagination className="my-8">
-          <PaginationContent>
+          <PaginationContent className="shadow-lg bg-white/80 backdrop-blur-sm rounded-lg p-2">
             <PaginationItem>
               <PaginationPrevious 
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`cursor-pointer ${currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+                className={`font-medium ${currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform hover:bg-gray-100'}`}
               >
                 Précédent
               </PaginationPrevious>
@@ -56,7 +56,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 <PaginationLink
                   onClick={() => setCurrentPage(index + 1)}
                   isActive={currentPage === index + 1}
-                  className="cursor-pointer hover:scale-105 transition-transform"
+                  className={`font-medium hover:scale-105 transition-transform ${
+                    currentPage === index + 1 
+                      ? 'bg-primary text-white shadow-md' 
+                      : 'hover:bg-gray-100'
+                  }`}
                 >
                   {index + 1}
                 </PaginationLink>
@@ -66,7 +70,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationNext 
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`cursor-pointer ${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+                className={`font-medium ${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform hover:bg-gray-100'}`}
               >
                 Suivant
               </PaginationNext>

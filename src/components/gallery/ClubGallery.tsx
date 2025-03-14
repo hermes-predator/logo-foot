@@ -45,8 +45,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationPrevious 
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={currentPage === 1 ? 'pointer-events-none opacity-50' : ''}
-              />
+                className={`cursor-pointer ${currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+              >
+                Précédent
+              </PaginationPrevious>
             </PaginationItem>
 
             {Array.from({ length: totalPages }).map((_, index) => (
@@ -54,6 +56,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 <PaginationLink
                   onClick={() => setCurrentPage(index + 1)}
                   isActive={currentPage === index + 1}
+                  className="cursor-pointer hover:scale-105 transition-transform"
                 >
                   {index + 1}
                 </PaginationLink>
@@ -63,8 +66,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationNext 
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
-              />
+                className={`cursor-pointer ${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:scale-105 transition-transform'}`}
+              >
+                Suivant
+              </PaginationNext>
             </PaginationItem>
           </PaginationContent>
         </Pagination>

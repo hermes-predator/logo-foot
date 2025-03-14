@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Star, Book, Search } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -40,15 +41,44 @@ const Blog = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 rounded-2xl blur-lg"></div>
             <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-100">
-              <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="flex items-center justify-center gap-3 mb-6">
                 <div className="bg-purple-100/80 p-3 rounded-xl">
                   <BookOpen className="w-6 h-6 text-purple-600" />
                 </div>
                 <span className="font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Le Blog Logo-Foot</span>
               </div>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Découvrez nos articles approfondis sur l'histoire des logos de football, leur évolution et leur signification.
-              </p>
+              
+              <div className="space-y-6">
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Plongez dans l'univers fascinant des logos de football à travers nos articles soigneusement rédigés. Découvrez l'histoire, l'évolution et la signification des emblèmes qui font la fierté des clubs.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                  <div className="flex items-start gap-3">
+                    <Book className="w-5 h-5 text-gray-500 mt-1" />
+                    <div>
+                      <h3 className="font-medium text-gray-800">Histoires Détaillées</h3>
+                      <p className="text-sm text-gray-600">Explorez l'origine des logos les plus emblématiques</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <Star className="w-5 h-5 text-gray-500 mt-1" />
+                    <div>
+                      <h3 className="font-medium text-gray-800">Analyses Exclusives</h3>
+                      <p className="text-sm text-gray-600">Des insights uniques sur le design des emblèmes</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <Search className="w-5 h-5 text-gray-500 mt-1" />
+                    <div>
+                      <h3 className="font-medium text-gray-800">Recherches Approfondies</h3>
+                      <p className="text-sm text-gray-600">Des articles basés sur des sources fiables</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { BookOpen, Star, Book, Search, TrendingUp } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
@@ -34,7 +33,7 @@ const Blog = () => {
       <BlogSchemaMarkup isBlogList />
       
       <div className="container mx-auto py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium mb-6">
             <span>Le Blog des Logos de Football</span>
           </div>
@@ -55,42 +54,10 @@ const Blog = () => {
                 </span>
               </div>
               
-              <div className="space-y-8">
-                <p className="text-lg text-gray-600 leading-relaxed text-left">
+              <div>
+                <p className="text-lg text-gray-600 leading-relaxed">
                   Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les emblèmes du football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir les histoires fascinantes qui se cachent derrière les logos des clubs.
                 </p>
-                
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="bg-gray-50/50 p-4 rounded-xl">
-                    <div className="flex items-start gap-3">
-                      <Book className="w-5 h-5 text-gray-500 mt-1" />
-                      <div>
-                        <h3 className="font-medium text-gray-800">Histoires Détaillées</h3>
-                        <p className="text-sm text-gray-600">L'origine passionnante de chaque emblème</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gray-50/50 p-4 rounded-xl">
-                    <div className="flex items-start gap-3">
-                      <Star className="w-5 h-5 text-gray-500 mt-1" />
-                      <div>
-                        <h3 className="font-medium text-gray-800">Analyses Exclusives</h3>
-                        <p className="text-sm text-gray-600">Décryptage approfondi des designs</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gray-50/50 p-4 rounded-xl">
-                    <div className="flex items-start gap-3">
-                      <TrendingUp className="w-5 h-5 text-gray-500 mt-1" />
-                      <div>
-                        <h3 className="font-medium text-gray-800">Évolutions & Tendances</h3>
-                        <p className="text-sm text-gray-600">Les transformations au fil du temps</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@ const ProductGallery = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Logos des Compétitions</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Autres ressources connexes</h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">Collection complète des logos des compétitions majeures</p>
             <CompetitionGallery items={competitionItems} isLoading={isLoading} />
           </div>
@@ -38,3 +38,4 @@ const ProductGallery = () => {
 };
 
 export default ProductGallery;
+

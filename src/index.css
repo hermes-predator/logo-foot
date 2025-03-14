@@ -76,11 +76,3 @@
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-
-.cursor-pointer:hover {
-  transform: scale(1.05);
-}
-
-button, a {
-  @apply cursor-pointer hover:scale-105 transition-transform duration-200;
-}

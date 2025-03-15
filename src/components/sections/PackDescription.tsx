@@ -1,15 +1,17 @@
-
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive, List } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <div className="space-y-6">
-      <p className="text-lg font-medium text-gray-800">
-        Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs et de confiance dans vos projets.
-      </p>
+      <div className="p-6 rounded-xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100/20 shadow-sm">
+        <p className="text-lg leading-relaxed text-gray-700 first-letter:text-3xl first-letter:font-semibold first-letter:text-purple-600 first-letter:mr-1 first-letter:float-left">
+          Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux qui enrichira votre patrimoine numérique. Conçu avec soin, il vous apportera une multitude de ressources de qualité pour sublimer vos projets et développer votre créativité avec confiance.
+        </p>
+      </div>
 
       <div className="space-y-8">
+        
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
             <FolderArchive className="h-5 w-5 text-gray-600" />
@@ -144,18 +146,18 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-2 pt-6 border-t">
-          <div className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
-            <span>Ressources cadrées, uniformes, nommées et déjà triées</span>
+        <div className="space-y-2 pt-6 border-t border-gray-100">
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
+            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+            <span className="text-sm">Ressources cadrées, uniformes, nommées et déjà triées</span>
           </div>
-          <div className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
-            <span>Couverture totale du football pour vos projets WEB</span>
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
+            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+            <span className="text-sm">Couverture totale du football pour vos projets WEB</span>
           </div>
-          <div className="flex items-center gap-2 text-[#403E43]">
-            <CheckCircle2 className="h-5 w-5 text-green-600" aria-hidden="true" />
-            <span>Directement stockable sur ordinateur ou cloud privé</span>
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
+            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+            <span className="text-sm">Directement stockable sur ordinateur ou cloud privé</span>
           </div>
         </div>
       </div>

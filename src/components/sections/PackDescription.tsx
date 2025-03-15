@@ -3,7 +3,7 @@ import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List
 
 const PackDescription = () => {
   return (
-    <div className="space-y-1"> {/* Reduced from space-y-6 to space-y-1 */}
+    <div className="space-y-1">
       <div className="p-6 bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
@@ -18,7 +18,7 @@ const PackDescription = () => {
         </div>
       </div>
 
-      <div className="space-y-1"> {/* Reduced from space-y-8 to space-y-1 */}
+      <div className="space-y-1">
         
         <div className="space-y-4 p-6 bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
@@ -154,12 +154,12 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-1 pt-6 border-t border-gray-100">
+        <div className="space-y-0.5 pt-6 border-t border-gray-100">
           <div className="flex items-center gap-3 text-[#403E43] p-2 rounded-lg hover:bg-gray-50/50 transition-colors group">
             <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
               <Sparkles className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
-            <span className="text-sm">Ressources cadrées, uniformes, nommées et déjà triées</span>
+            <span className="text-sm">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-3 text-[#403E43] p-2 rounded-lg hover:bg-gray-50/50 transition-colors group">
             <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">

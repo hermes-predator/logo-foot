@@ -1,11 +1,10 @@
-
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List, Info, Package } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <div className="space-y-6">
-      <div className="p-6 rounded-xl bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
+      <div className="p-6 rounded-lg bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
@@ -21,7 +20,7 @@ const PackDescription = () => {
 
       <div className="space-y-8">
         
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
+        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-gray-600" />
             𝐅.𝟎𝟏 – Logos de clubs de football
@@ -55,7 +54,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80">
+        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80">
           <h3 className="text-xl font-bold text-blue-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-blue-600" />
             𝐅.𝟎𝟐 – Compétitions de football
@@ -80,7 +79,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80">
+        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80">
           <h3 className="text-xl font-bold text-green-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-green-600" />
             𝐅.𝟎𝟑 – Drapeaux mondiaux
@@ -105,7 +104,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80">
+        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80">
           <h3 className="text-xl font-bold text-yellow-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-yellow-600" />
             𝐅.𝟎𝟒 – Couvertures - Instruments de football
@@ -130,7 +129,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80">
+        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80">
           <h3 className="text-xl font-bold text-red-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-red-600" />
             𝐅.𝟎𝟓 – Logos des bookmakers
@@ -156,16 +155,22 @@ const PackDescription = () => {
         </div>
 
         <div className="space-y-2 pt-6 border-t border-gray-100">
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
-            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
+              <Sparkles className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+            </div>
             <span className="text-sm">Ressources cadrées, uniformes, nommées et déjà triées</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
-            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
+              <Shield className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+            </div>
             <span className="text-sm">Couverture totale du football pour vos projets WEB</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors">
-            <CheckCircle2 className="h-5 w-5 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
+              <Folder className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+            </div>
             <span className="text-sm">Directement stockable sur ordinateur ou cloud privé</span>
           </div>
         </div>

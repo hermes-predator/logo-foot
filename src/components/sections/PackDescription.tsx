@@ -1,14 +1,25 @@
 
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List, Info, Package } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <div className="space-y-6">
       <div className="p-6 rounded-xl bg-gradient-to-br from-[#FEF7CD] to-[#F1F1F1] border border-yellow-100/20 shadow-sm">
-        <p className="text-base font-medium text-gray-800">
-          Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs et de confiance dans vos projets.
-        </p>
+        <div className="flex items-start space-x-4">
+          <div className="shrink-0 p-2 bg-yellow-100/50 rounded-lg">
+            <Package className="h-5 w-5 text-yellow-700" />
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center space-x-2">
+              <Info className="h-4 w-4 text-yellow-600" />
+              <span className="text-sm font-medium text-yellow-600">Information importante</span>
+            </div>
+            <p className="text-base font-medium text-gray-800">
+              Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs et de confiance dans vos projets.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="space-y-8">

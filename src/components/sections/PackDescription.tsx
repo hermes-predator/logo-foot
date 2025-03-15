@@ -154,20 +154,20 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-2 pt-6 border-t border-gray-100">
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+        <div className="space-y-1 pt-6 border-t border-gray-100">
+          <div className="flex items-center gap-3 text-[#403E43] p-2 rounded-lg hover:bg-gray-50/50 transition-colors group">
             <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
               <Sparkles className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm">Ressources cadrées, uniformes, nommées et déjà triées</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+          <div className="flex items-center gap-3 text-[#403E43] p-2 rounded-lg hover:bg-gray-50/50 transition-colors group">
             <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
               <Shield className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm">Couverture totale du football pour vos projets WEB</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+          <div className="flex items-center gap-3 text-[#403E43] p-2 rounded-lg hover:bg-gray-50/50 transition-colors group">
             <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
               <Folder className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>

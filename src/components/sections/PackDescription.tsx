@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
 const PackDescription = () => {
   return (
@@ -157,19 +157,19 @@ const PackDescription = () => {
         <div className="space-y-0 pt-4 border-t border-gray-100">
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
             <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <CheckCircle2 className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
             <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <CheckCircle2 className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
           </div>
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
             <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <CheckCircle2 className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

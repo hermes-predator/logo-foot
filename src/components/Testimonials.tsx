@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -49,9 +50,9 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
+    <section className="py-8 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
+        <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients
           </h2>
@@ -65,21 +66,21 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-4xl mx-auto mb-8"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3">
-                <div className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <div className="flex items-center gap-1 text-yellow-400 mb-2">
+                <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+                  <div className="flex items-center gap-1 text-yellow-400 mb-3">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-3 h-3 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-2 text-xs">
+                  <p className="text-gray-600 italic mb-4 flex-grow text-xs">
                     "{testimonial.content}"
                   </p>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 mt-auto">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
                       <MessageCircle className="w-3 h-3 text-blue-600" />
                     </div>
@@ -101,3 +102,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

@@ -4,7 +4,7 @@ import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List
 const PackDescription = () => {
   return (
     <div className="space-y-6">
-      <div className="p-6 rounded-lg bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
+      <div className="p-6 rounded-md bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
@@ -155,21 +155,21 @@ const PackDescription = () => {
         </div>
 
         <div className="space-y-2 pt-6 border-t border-gray-100">
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
-            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
-              <Sparkles className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
+              <Sparkles className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm">Ressources cadrées, uniformes, nommées et déjà triées</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
-            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
-              <Shield className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
+              <Shield className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm">Couverture totale du football pour vos projets WEB</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-purple-50/50 transition-colors group">
-            <div className="p-2 rounded-full bg-purple-100/50 group-hover:bg-purple-100 transition-colors">
-              <Folder className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-3 text-[#403E43] p-3 rounded-lg hover:bg-gray-50/50 transition-colors group">
+            <div className="p-2 rounded-full bg-gray-100/50 group-hover:bg-gray-100 transition-colors">
+              <Folder className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

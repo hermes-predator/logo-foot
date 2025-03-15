@@ -20,7 +20,7 @@ const PackDescription = () => {
 
       <div className="space-y-8">
         
-        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
+        <div className="space-y-4 p-6 rounded-md bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-gray-600" />
             𝐅.𝟎𝟏 – Logos de clubs de football
@@ -54,7 +54,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80">
+        <div className="space-y-4 p-6 rounded-md bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80">
           <h3 className="text-xl font-bold text-blue-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-blue-600" />
             𝐅.𝟎𝟐 – Compétitions de football
@@ -79,7 +79,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80">
+        <div className="space-y-4 p-6 rounded-md bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80">
           <h3 className="text-xl font-bold text-green-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-green-600" />
             𝐅.𝟎𝟑 – Drapeaux mondiaux
@@ -104,7 +104,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80">
+        <div className="space-y-4 p-6 rounded-md bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80">
           <h3 className="text-xl font-bold text-yellow-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-yellow-600" />
             𝐅.𝟎𝟒 – Couvertures - Instruments de football
@@ -129,7 +129,7 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-4 p-6 rounded-lg bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80">
+        <div className="space-y-4 p-6 rounded-md bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80">
           <h3 className="text-xl font-bold text-red-900 flex items-center gap-2">
             <Folder className="h-5 w-5 text-red-600" />
             𝐅.𝟎𝟓 – Logos des bookmakers

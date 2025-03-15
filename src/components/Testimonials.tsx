@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -49,7 +50,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
+    <section className="py-8 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
@@ -65,13 +66,13 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-4xl mx-auto mb-12"
+          className="w-full max-w-3xl mx-auto mb-8"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
-                <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[200px]">
-                  <div className="flex items-center gap-1 text-yellow-400 mb-3">
+                <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px]">
+                  <div className="flex items-center gap-1 text-yellow-400 mb-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-3 h-3 fill-current" />
                     ))}

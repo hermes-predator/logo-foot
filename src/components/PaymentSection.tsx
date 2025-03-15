@@ -29,7 +29,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Contenu organisé — Qualité garantie",
+      text: "Contenu organisé",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },
@@ -39,7 +39,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Stockable sur votre Google Drive",
+      text: "Haute qualité garantie",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },

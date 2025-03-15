@@ -156,20 +156,20 @@ const PackDescription = () => {
 
         <div className="space-y-0 pt-4 border-t border-gray-100">
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors">
-              <Sparkles className="h-4 w-4 text-blue-600 shrink-0" aria-hidden="true" />
+            <div className="p-2 rounded-full bg-gray-50 group-hover:bg-gray-100 transition-colors">
+              <Sparkles className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-green-50 group-hover:bg-green-100 transition-colors">
-              <Shield className="h-4 w-4 text-green-600 shrink-0" aria-hidden="true" />
+            <div className="p-2 rounded-full bg-gray-50 group-hover:bg-gray-100 transition-colors">
+              <Shield className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
           </div>
           <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-purple-50 group-hover:bg-purple-100 transition-colors">
-              <Folder className="h-4 w-4 text-purple-600 shrink-0" aria-hidden="true" />
+            <div className="p-2 rounded-full bg-gray-50 group-hover:bg-gray-100 transition-colors">
+              <Folder className="h-4 w-4 text-gray-600 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, FolderArchive, List } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List } from "lucide-react";
 
 const PackDescription = () => {
   return (
@@ -15,7 +14,7 @@ const PackDescription = () => {
         
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <FolderArchive className="h-5 w-5 text-gray-600" />
+            <Folder className="h-5 w-5 text-gray-600" />
             𝐅.𝟎𝟏 – Logos de clubs de football
           </h3>
           <div className="grid grid-cols-2 gap-4 bg-white/50 rounded-lg p-4">
@@ -49,7 +48,7 @@ const PackDescription = () => {
 
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80">
           <h3 className="text-xl font-bold text-blue-900 flex items-center gap-2">
-            <FolderArchive className="h-5 w-5 text-blue-600" />
+            <Folder className="h-5 w-5 text-blue-600" />
             𝐅.𝟎𝟐 – Compétitions de football
           </h3>
           <div className="grid grid-cols-2 gap-4 bg-white/50 rounded-lg p-4">
@@ -74,7 +73,7 @@ const PackDescription = () => {
 
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80">
           <h3 className="text-xl font-bold text-green-900 flex items-center gap-2">
-            <FolderArchive className="h-5 w-5 text-green-600" />
+            <Folder className="h-5 w-5 text-green-600" />
             𝐅.𝟎𝟑 – Drapeaux mondiaux
           </h3>
           <div className="grid grid-cols-2 gap-4 bg-white/50 rounded-lg p-4">
@@ -99,7 +98,7 @@ const PackDescription = () => {
 
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80">
           <h3 className="text-xl font-bold text-yellow-900 flex items-center gap-2">
-            <FolderArchive className="h-5 w-5 text-yellow-600" />
+            <Folder className="h-5 w-5 text-yellow-600" />
             𝐅.𝟎𝟒 – Couvertures - Instruments de football
           </h3>
           <div className="grid grid-cols-2 gap-4 bg-white/50 rounded-lg p-4">
@@ -124,7 +123,7 @@ const PackDescription = () => {
 
         <div className="space-y-4 p-6 rounded-xl bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80">
           <h3 className="text-xl font-bold text-red-900 flex items-center gap-2">
-            <FolderArchive className="h-5 w-5 text-red-600" />
+            <Folder className="h-5 w-5 text-red-600" />
             𝐅.𝟎𝟓 – Logos des bookmakers
           </h3>
           <div className="grid grid-cols-2 gap-4 bg-white/50 rounded-lg p-4">

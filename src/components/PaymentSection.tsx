@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check, Cloud, CloudUpload } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, BadgeCheck, Check, Cloud, CloudUpload } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -129,7 +130,7 @@ const PaymentSection = () => {
                 <Tooltip>
                   <TooltipTrigger className="text-sm text-green-700 font-medium flex items-center gap-1">
                     Satisfait ou remboursé
-                    <HelpCircle className="h-4 w-4" />
+                    <BadgeCheck className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm">
                     <p className="font-semibold">Votre satisfaction est importante.</p>

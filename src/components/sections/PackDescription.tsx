@@ -4,7 +4,7 @@ import { FileArchive, Inbox, FileText, Dices, Target, CheckCircle2, Folder, List
 const PackDescription = () => {
   return (
     <div className="space-y-6">
-      <div className="p-6 rounded-md bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm transition-all duration-200 hover:shadow-md">
+      <div className="p-6 rounded-md bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">

@@ -24,7 +24,7 @@ const PaymentSection = () => {
 
   const features = [
     {
-      icon: Check,
+      icon: FileArchive,
       text: "Fichier de + de 8 600 ressources"
     },
     {
@@ -34,7 +34,7 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Check,
+      icon: Download,
       text: "Téléchargement instantané"
     },
     {
@@ -44,7 +44,7 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Check,
+      icon: Wallet,
       text: "Prix accessible"
     },
     {

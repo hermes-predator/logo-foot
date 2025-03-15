@@ -24,7 +24,7 @@ const PaymentSection = () => {
 
   const features = [
     {
-      icon: FileArchive,
+      icon: Check,
       text: "Fichier de + de 8 600 ressources"
     },
     {
@@ -34,21 +34,21 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Download,
+      icon: Check,
       text: "Téléchargement instantané"
     },
     {
-      icon: CloudUpload,
+      icon: Check,
       text: "Stockable sur votre Google Drive",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },
     {
-      icon: Wallet,
+      icon: Check,
       text: "Prix accessible"
     },
     {
-      icon: Trophy,
+      icon: Check,
       text: "Valeur à votre actif",
       className: "bg-green-50",
       iconColor: "text-green-600"

@@ -131,8 +131,20 @@ const PaymentSection = () => {
                     Satisfait ou remboursé
                     <HelpCircle className="h-4 w-4" />
                   </TooltipTrigger>
-                  <TooltipContent className="max-w-[300px]">
-                    <p>Votre satisfaction est importante. Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat. Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas. Nous pouvons émettre un ordre de remboursement intégral sur demande. Pour cela, contactez-nous par-email en mentionnant votre nom et prénom, la date et l'heure d'achat et en joignant une preuve d'achat.</p>
+                  <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm">
+                    <p className="font-semibold">Votre satisfaction est importante.</p>
+                    <div className="space-y-2 text-gray-600">
+                      <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                      <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour. Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                      <p className="mt-4 text-gray-500 text-[13px]">
+                        Pour cela, contactez-nous par email en mentionnant :
+                        <ul className="list-disc ml-4 mt-1 space-y-1">
+                          <li>Votre nom et prénom</li>
+                          <li>La date et l'heure d'achat</li>
+                          <li>Une preuve d'achat</li>
+                        </ul>
+                      </p>
+                    </div>
                   </TooltipContent>
                 </Tooltip>
               </div>

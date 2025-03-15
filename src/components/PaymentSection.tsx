@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy } from 'lucide-react';
 import { Button } from './ui/button';
@@ -138,7 +139,7 @@ const PaymentSection = () => {
                       <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
                       <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
                       <p className="mt-4 text-gray-500 text-[13px]">
-                        Pour cela, contactez-nous par email en mentionnant :
+                        Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
                         <ul className="list-disc ml-4 mt-1 space-y-1">
                           <li>Votre nom et prénom</li>
                           <li>La date et l'heure d'achat</li>

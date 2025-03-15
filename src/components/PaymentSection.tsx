@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, BadgeCheck, Check, Cloud, CloudUpload } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -29,12 +29,6 @@ const PaymentSection = () => {
       text: "Fichier de + de 8 600 ressources"
     },
     {
-      icon: CloudUpload,
-      text: "Stockable sur votre Google Drive",
-      className: "bg-green-50",
-      iconColor: "text-green-600"
-    },
-    {
       icon: Download,
       text: "Téléchargement instantané"
     },
@@ -47,6 +41,12 @@ const PaymentSection = () => {
     {
       icon: Wallet,
       text: "Prix accessible"
+    },
+    {
+      icon: CloudUpload,
+      text: "Stockable sur votre Google Drive",
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     },
     {
       icon: Check,
@@ -130,7 +130,7 @@ const PaymentSection = () => {
                 <Tooltip>
                   <TooltipTrigger className="text-sm text-green-700 font-medium flex items-center gap-1">
                     Satisfait ou remboursé
-                    <BadgeCheck className="h-4 w-4" />
+                    <Info className="h-4 w-4" />
                   </TooltipTrigger>
                   <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm">
                     <p className="font-semibold">Votre satisfaction est importante.</p>

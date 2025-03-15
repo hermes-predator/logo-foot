@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check, Cloud } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, HelpCircle, Check, Cloud, CloudUpload } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -28,8 +28,8 @@ const PaymentSection = () => {
       text: "Fichier de + de 8 600 ressources"
     },
     {
-      icon: Cloud,
-      text: "Contenu organisé et stockable",
+      icon: CloudUpload,
+      text: "Stockable sur votre Google Drive",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },

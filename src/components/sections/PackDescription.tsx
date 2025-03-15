@@ -154,22 +154,22 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-0 pt-4 border-t border-gray-100">
-          <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+        <div className="space-y-0 pt-3 border-t border-gray-100">
+          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
+            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
+              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
+            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
+              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
           </div>
-          <div className="flex items-center gap-3 text-[#403E43] p-1.5 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-2 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-4 w-4 text-[#8E9196] shrink-0" aria-hidden="true" />
+          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
+            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
+              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

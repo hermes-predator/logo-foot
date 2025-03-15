@@ -28,14 +28,14 @@ const PaymentSection = () => {
       text: "Fichier de + de 8 600 ressources"
     },
     {
-      icon: Download,
-      text: "Téléchargement instantané"
-    },
-    {
       icon: Check,
       text: "Haute qualité garantie",
       className: "bg-green-50",
       iconColor: "text-green-600"
+    },
+    {
+      icon: Download,
+      text: "Téléchargement instantané"
     },
     {
       icon: CloudUpload,

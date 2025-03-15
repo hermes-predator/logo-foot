@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -49,7 +50,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-1 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
+    <section className="py-8 bg-gradient-to-b from-white to-blue-50/30 sticky top-[90vh] z-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
@@ -65,7 +66,7 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-3xl mx-auto mb-4"
+          className="w-full max-w-3xl mx-auto"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (

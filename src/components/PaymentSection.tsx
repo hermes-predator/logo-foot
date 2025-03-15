@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -48,7 +48,7 @@ const PaymentSection = () => {
       text: "Prix accessible"
     },
     {
-      icon: Check,
+      icon: Trophy,
       text: "Valeur à votre actif",
       className: "bg-green-50",
       iconColor: "text-green-600"

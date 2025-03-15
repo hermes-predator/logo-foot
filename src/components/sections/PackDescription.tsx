@@ -91,7 +91,7 @@ const PackDescription = () => {
             </div>
             <div>
               <p className="font-semibold text-green-900">Dimensions :</p>
-              <p className="text-green-700">256px</p>
+              <p className="text-green-700">200px</p>
             </div>
             <div>
               <p className="font-semibold text-green-900">Sous-groupes :</p>

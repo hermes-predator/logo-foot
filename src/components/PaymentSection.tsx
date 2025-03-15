@@ -29,7 +29,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Contenu prêt à l'emploi",
+      text: "Contenu organisé — Qualité garantie",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },

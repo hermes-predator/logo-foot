@@ -794,7 +794,7 @@ Applications Modernes
     id: 11,
     title: "Les Logos des Clubs Anglais : Histoire et Évolution de la Premier League",
     excerpt: "Découvrez l'histoire fascinante des logos des clubs de Premier League anglaise. De Manchester United à Liverpool, plongez dans l'héritage visuel du football anglais.",
-    date: "2024-02-15",
+    date: "2024-02-10",
     content: `Une exploration détaillée des logos emblématiques du football anglais, leur histoire et leur évolution au fil des années.
 
 Histoire et Tradition
@@ -847,7 +847,7 @@ Ces logos racontent l'histoire riche du football anglais, mêlant tradition et m
     id: 12,
     title: "Logos Liga : Guide Complet des Emblèmes du Football Espagnol",
     excerpt: "Analyse complète des logos de La Liga : histoire, design et signification des emblèmes des clubs espagnols de football, du Real Madrid au FC Barcelone.",
-    date: "2024-02-14",
+    date: "2024-02-09",
     content: `Plongée dans l'univers des logos du football espagnol, symboles d'une riche tradition footballistique.
 
 Grands Clubs Espagnols
@@ -905,7 +905,7 @@ Les logos de La Liga représentent parfaitement le mélange unique entre traditi
     id: 13,
     title: "Serie A : Les Plus Beaux Logos du Football Italien",
     excerpt: "Découvrez les emblèmes légendaires du calcio italien. Histoire et analyse des logos des plus grands clubs de Serie A, de la Juventus à l'AC Milan.",
-    date: "2024-02-13",
+    date: "2024-02-08",
     content: `Une analyse approfondie des logos emblématiques du football italien, symboles d'histoire et de passion.
 
 Clubs Historiques
@@ -963,7 +963,7 @@ Les logos de la Serie A reflètent la richesse culturelle et l'histoire passionn
     id: 14,
     title: "Bundesliga : L'Art des Logos du Football Allemand",
     excerpt: "Explorez les logos distinctifs de la Bundesliga allemande. Du Bayern Munich à Dortmund, découvrez l'histoire et le design des emblèmes du football allemand.",
-    date: "2024-02-12",
+    date: "2024-02-07",
     content: `Une exploration des logos emblématiques de la Bundesliga, reflets de la tradition et de la modernité du football allemand.
 
 Clubs Majeurs
@@ -1021,7 +1021,7 @@ Les logos de la Bundesliga incarnent l'efficacité et la précision caractérist
     id: 15,
     title: "Ligue 1 : Guide des Logos du Football Français",
     excerpt: "Histoire et analyse des logos des clubs de Ligue 1. Du PSG à l'OM, découvrez les emblèmes qui font l'identité du football français.",
-    date: "2024-02-11",
+    date: "2024-02-06",
     content: `Exploration détaillée des logos qui façonnent l'identité visuelle du football français.
 
 Clubs Historiques

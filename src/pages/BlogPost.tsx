@@ -9,6 +9,7 @@ import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
 import { BLOG_CATEGORIES } from '../types/blog';
+import BlogImage from '../components/blog/BlogImage';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -103,6 +104,14 @@ const BlogPost = () => {
             </div>
             
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
+            
+            {post.category === 'logos' && (
+              <BlogImage
+                src={`/images/logos/${post.id}.webp`}
+                alt={`Logo ${post.title.split(':')[0]}`}
+                className="mb-8"
+              />
+            )}
             
             <div className="prose prose-purple lg:prose-lg mx-auto">
               {post.content.split('\n\n').map((paragraph, index) => (

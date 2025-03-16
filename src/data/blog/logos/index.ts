@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -96,3 +97,4 @@ export const logoPosts: BlogPost[] = [
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés
 console.log('Nombre total d\'articles logos:', logoPosts.length);
 console.log('Articles logos chargés:', logoPosts.map(post => post.title));
+

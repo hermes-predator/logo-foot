@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -93,6 +94,13 @@ export const logoPosts: BlogPost[] = [
   tottenhamLogoPost
 ];
 
-// Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés
+// Logs détaillés pour le débogage
+console.log('************ DEBUG LOGS ARTICLES ************');
 console.log('Nombre total d\'articles logos:', logoPosts.length);
-console.log('Articles logos chargés:', logoPosts.map(post => post.title));
+console.log('Liste complète des articles:', logoPosts.map((post, index) => ({
+  index,
+  id: post.id,
+  title: post.title,
+  date: post.date
+})));
+console.log('******************************************');

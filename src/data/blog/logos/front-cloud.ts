@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const frontCloudPost: BlogPost = {
@@ -67,5 +68,6 @@ Solutions sur mesure
 
 En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale pour toute organisation travaillant avec des ressources visuelles liées aux logos de football. Notre fichier combine performance, exhaustivité et facilité d'utilisation pour répondre aux besoins les plus exigeants du secteur.`,
   keywords: "football.zip, logos football, ressources football, pack logos foot, logos clubs foot, écusson foot, télécharger logo foot, logos HD football",
-  category: 'logos'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

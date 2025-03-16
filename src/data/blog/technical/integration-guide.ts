@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const integrationGuide: BlogPost = {
@@ -81,5 +82,6 @@ Conclusion
 
 L'utilisation professionnelle des logos de football nécessite une approche méthodique et des outils adaptés pour garantir une qualité optimale sur tous les supports.`,
   keywords: "logos HD football, logos haute définition foot, intégration logos foot, logos football qualité, pack logo foot, écusson foot HD, guide technique logos",
-  category: 'technical'
+  category: 'technical',
+  subCategory: 'file-formats'
 };

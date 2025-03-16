@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
 import { Clock } from 'lucide-react';
-import { blogPosts } from '../data/blogPosts';
+import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';

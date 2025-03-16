@@ -1,5 +1,4 @@
-
-import { blogPosts } from "../data/blogPosts";
+import { blogPosts } from "../data/blog";
 
 export const generateSitemap = () => {
   const baseUrl = 'https://logo-foot.com';

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -12,6 +13,7 @@ import { BLOG_CATEGORIES } from '../types/blog';
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(post => post.id === Number(id));
+  const currentYear = new Date().getFullYear();
 
   if (!post) {
     return (
@@ -37,10 +39,26 @@ const BlogPost = () => {
   }
 
   const readingTime = useReadingTime(post.content);
-  const currentYear = new Date().getFullYear();
-  const metaTitle = `${post.title} | Logo Foot`;
-  const metaDescription = `${post.excerpt} Guide expert mis à jour en ${currentYear} sur les logos, écussons et emblèmes de football.`;
-  const enhancedKeywords = `${post.keywords}, logo foot, logos football, écusson foot, design football ${currentYear}`;
+  const categoryInfo = BLOG_CATEGORIES[post.category];
+  
+  // SEO Optimizations
+  const metaTitle = `${post.title} | Guide Expert Logo Foot ${currentYear}`;
+  const metaDescription = `${post.excerpt} Guide complet et analyse détaillée mis à jour en ${currentYear}. Tout savoir sur les logos, écussons et emblèmes du football.`;
+  const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "keywords": enhancedKeywords,
+    "articleSection": categoryInfo.name,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://logo-foot.com/blog/${post.id}`
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
@@ -61,8 +79,11 @@ const BlogPost = () => {
         <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:modified_time" content={post.date} />
-        <meta property="article:section" content="Football Logos" />
+        <meta property="article:section" content={categoryInfo.name} />
         <meta property="article:tag" content={post.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

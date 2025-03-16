@@ -6,6 +6,7 @@ import { minimalDesignGuide } from './minimal-design';
 import { motionDesignGuide } from './motion-design';
 import { typographyGuide } from './typography-guide';
 import { soccerGuidePost } from './soccer-guide';
+import { soccerBallGuide } from './soccer-ball-guide';
 
 export const technicalPosts: BlogPost[] = [
   designPrinciples,
@@ -13,6 +14,6 @@ export const technicalPosts: BlogPost[] = [
   minimalDesignGuide,
   motionDesignGuide,
   typographyGuide,
-  soccerGuidePost
+  soccerGuidePost,
+  soccerBallGuide
 ];
-

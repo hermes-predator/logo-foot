@@ -12,9 +12,8 @@ export const logoPosts: BlogPost[] = [
   frenchClubsPost,
   worldCupLogos,
   frontCloudPost,
-  clubHistoryPost,
+  clubHistoryPost, 
   nationalTeamsPost,
   serieAPost,
   portugueseLogosPost
 ];
-

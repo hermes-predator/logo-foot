@@ -5,11 +5,9 @@ import { technicalPosts } from './technical';
 import { historyPosts } from './history';
 import { analysisPosts } from './analysis';
 
-// Combine all blog posts and sort by date (most recent first)
 export const blogPosts: BlogPost[] = [
-  ...logoPosts,
-  ...technicalPosts,
-  ...historyPosts,
-  ...analysisPosts
+  ...logoPosts,           // 7 articles
+  ...technicalPosts,      // 1 article
+  ...historyPosts,        // 2 articles
+  ...analysisPosts        // 5 articles
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-

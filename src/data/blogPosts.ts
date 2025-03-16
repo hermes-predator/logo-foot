@@ -9,100 +9,6 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 16,
-    title: "Histoire et Évolution du Logo du PSG : De 1970 à 2024",
-    excerpt: "Découvrez l'histoire fascinante du logo du Paris Saint-Germain, son évolution depuis 1970 et sa transformation en symbole mondial du football français.",
-    date: "2024-02-13",
-    content: `L'Histoire du Logo du Paris Saint-Germain (PSG)
-
-Le Paris Saint-Germain, club emblématique de la capitale française, possède l'un des logos les plus reconnaissables du football mondial. Plongeons dans son histoire et son évolution.
-
-Les Origines (1970)
-
-• Premier Logo
-- Création en 1970
-- Inspiration du design : Tour Eiffel bleue
-- Berceau rouge stylisé (Saint-Germain-en-Laye)
-- Couleurs : Bleu, Rouge et Blanc
-- Design simple et élégant
-
-Évolution Majeure (1972)
-
-• Modifications Significatives
-- Intégration de la Tour Eiffel
-- Ajout du Lys (symbole royal)
-- Berceau plus prononcé
-- Couleurs traditionnelles maintenues
-- Style plus affirmé
-
-Modernisation (1990-2000)
-
-1. Changements Progressifs
-- Simplification des lignes
-- Tour Eiffel plus imposante
-- Équilibre des éléments
-- Lisibilité améliorée
-- Impact visuel renforcé
-
-2. Ajustements Techniques
-- Optimisation digitale
-- Adaptabilité supports
-- Merchandising développé
-- Recognition mondiale
-- Standards professionnels
-
-Version Actuelle
-
-• Caractéristiques
-- Tour Eiffel centrale
-- Fleur de Lys élégante
-- Berceau historique
-- Typographie moderne
-- Design épuré
-
-• Symbolisme
-- Histoire parisienne
-- Héritage royal
-- Racines Saint-Germain
-- Ambition moderne
-- Rayonnement international
-
-Impact Marketing
-
-1. Reconnaissance Mondiale
-- Marque globale
-- Merchandising puissant
-- Communication efficace
-- Identity forte
-- Prestige international
-
-2. Valeurs Véhiculées
-- Excellence sportive
-- Tradition française
-- Luxe parisien
-- Ambition mondiale
-- Heritage respecté
-
-Le logo du PSG aujourd'hui
-
-• Force du Design
-- Identité claire
-- Impact visuel fort
-- Reconnaissance immédiate
-- Modernité assumée
-- Heritage préservé
-
-• Utilisation Moderne
-- Digital first
-- Merchandising luxe
-- Communication globale
-- Supports variés
-- Adaptabilité totale
-
-Le logo du Paris Saint-Germain représente parfaitement l'évolution du club : de ses racines historiques françaises à son statut actuel de marque mondiale du football. Il incarne l'alliance réussie entre tradition et modernité, entre histoire parisienne et ambitions internationales.`,
-    keywords: "logo psg, paris saint-germain logo, histoire logo psg, évolution logo psg, emblème psg, design logo psg, logo paris saint germain, logo football paris",
-  },
-  {
     id: 1,
     title: "⦗FRONT-CLOUD⦘~ Football.zip : La Solution Complète Pour Vos Logos de Football [2024]",
     excerpt: "Découvrez Football.zip, la solution ultime pour gérer vos ressources visuelles de football. Pack complet de logos HD, emblèmes et écussons des plus grands clubs.",
@@ -241,6 +147,100 @@ Nous restons déterminés à :
 
 Front Cloud est devenu bien plus qu'un simple outil d'analyse - c'est une plateforme complète qui transforme la façon dont les passionnés de football et de paris sportifs interagissent avec les données sportives.`,
     keywords: "front cloud, histoire front cloud, développement football, paris sportifs, analyse football, plateforme football, intelligence artificielle football",
+  },
+  {
+    id: 16,
+    title: "Histoire et Évolution du Logo du PSG : De 1970 à 2024",
+    excerpt: "Découvrez l'histoire fascinante du logo du Paris Saint-Germain, son évolution depuis 1970 et sa transformation en symbole mondial du football français.",
+    date: "2024-02-13",
+    content: `L'Histoire du Logo du Paris Saint-Germain (PSG)
+
+Le Paris Saint-Germain, club emblématique de la capitale française, possède l'un des logos les plus reconnaissables du football mondial. Plongeons dans son histoire et son évolution.
+
+Les Origines (1970)
+
+• Premier Logo
+- Création en 1970
+- Inspiration du design : Tour Eiffel bleue
+- Berceau rouge stylisé (Saint-Germain-en-Laye)
+- Couleurs : Bleu, Rouge et Blanc
+- Design simple et élégant
+
+Évolution Majeure (1972)
+
+• Modifications Significatives
+- Intégration de la Tour Eiffel
+- Ajout du Lys (symbole royal)
+- Berceau plus prononcé
+- Couleurs traditionnelles maintenues
+- Style plus affirmé
+
+Modernisation (1990-2000)
+
+1. Changements Progressifs
+- Simplification des lignes
+- Tour Eiffel plus imposante
+- Équilibre des éléments
+- Lisibilité améliorée
+- Impact visuel renforcé
+
+2. Ajustements Techniques
+- Optimisation digitale
+- Adaptabilité supports
+- Merchandising développé
+- Recognition mondiale
+- Standards professionnels
+
+Version Actuelle
+
+• Caractéristiques
+- Tour Eiffel centrale
+- Fleur de Lys élégante
+- Berceau historique
+- Typographie moderne
+- Design épuré
+
+• Symbolisme
+- Histoire parisienne
+- Héritage royal
+- Racines Saint-Germain
+- Ambition moderne
+- Rayonnement international
+
+Impact Marketing
+
+1. Reconnaissance Mondiale
+- Marque globale
+- Merchandising puissant
+- Communication efficace
+- Identity forte
+- Prestige international
+
+2. Valeurs Véhiculées
+- Excellence sportive
+- Tradition française
+- Luxe parisien
+- Ambition mondiale
+- Heritage respecté
+
+Le logo du PSG aujourd'hui
+
+• Force du Design
+- Identité claire
+- Impact visuel fort
+- Reconnaissance immédiate
+- Modernité assumée
+- Heritage préservé
+
+• Utilisation Moderne
+- Digital first
+- Merchandising luxe
+- Communication globale
+- Supports variés
+- Adaptabilité totale
+
+Le logo du Paris Saint-Germain représente parfaitement l'évolution du club : de ses racines historiques françaises à son statut actuel de marque mondiale du football. Il incarne l'alliance réussie entre tradition et modernité, entre histoire parisienne et ambitions internationales.`,
+    keywords: "logo psg, paris saint-germain logo, histoire logo psg, évolution logo psg, emblème psg, design logo psg, logo paris saint germain, logo football paris",
   },
   {
     id: 3,

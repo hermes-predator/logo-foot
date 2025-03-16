@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
@@ -15,6 +14,14 @@ console.log('Analysis posts:', analysisPosts.length, 'articles');
 // Vérification des doublons
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
 
+// Log spécifique pour l'article Juventus
+console.log('\nRecherche article Juventus:');
+allPosts.forEach(post => {
+  if (post.title.toLowerCase().includes('juventus')) {
+    console.log(`Trouvé: ID ${post.id} - "${post.title}" dans la catégorie "${post.category}"`);
+  }
+});
+
 // Log détaillé des IDs de chaque catégorie
 console.log('\nIDs par catégorie:');
 console.log('Logo posts IDs:', logoPosts.map(post => post.id).sort((a, b) => a - b));
@@ -22,7 +29,7 @@ console.log('Technical posts IDs:', technicalPosts.map(post => post.id).sort((a,
 console.log('History posts IDs:', historyPosts.map(post => post.id).sort((a, b) => a - b));
 console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).sort((a, b) => a - b));
 
-// Analyse des doublons
+// Analyse des doublons avec plus de détails
 const idCount = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
@@ -35,7 +42,7 @@ Object.entries(idCount)
     const duplicates = allPosts.filter(post => post.id === Number(id));
     console.log(`\nID ${id} apparaît ${count} fois :`);
     duplicates.forEach(post => {
-      console.log(`- "${post.title}" dans la catégorie "${post.category}"`);
+      console.log(`- "${post.title}" dans la catégorie "${post.category}" - Date: ${post.date}`);
     });
   });
 
@@ -45,7 +52,7 @@ export const blogPosts: BlogPost[] = Array.from(
 )
 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Log final pour vérification
+// Log final
 console.log('\n************ ARTICLES FINAUX ************');
 console.log('Nombre total d\'articles après déduplication:', blogPosts.length);
 console.log('******************************************');

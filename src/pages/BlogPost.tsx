@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -32,21 +33,31 @@ const BlogPost = () => {
     );
   }
 
+  // Enrichir la meta description avec les mots-clés pertinents
+  const metaDescription = `${post.excerpt} Découvrez tout sur ${post.title.toLowerCase()}. Guide complet sur les logos foot, écussons et emblèmes de football.`;
+  
+  // Générer des mots-clés enrichis
+  const enhancedKeywords = `${post.title.toLowerCase()}, logo foot, logos football, écusson foot, ${post.keywords || ''}`;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${post.title} | Blog Logo Foot`}</title>
-        <meta name="description" content={post.excerpt} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:title" content={`${post.title} | Blog Logo Foot`} />
-        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${post.title} | Blog Logo Foot`} />
-        <meta name="twitter:description" content={post.excerpt} />
-        <meta name="keywords" content={`${post.title.toLowerCase()}, logo foot, logos football, histoire logo foot, ${post.keywords || ''}`} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="keywords" content={enhancedKeywords} />
+        <meta name="author" content="Logo Foot" />
         <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:modified_time" content={post.date} />
+        <meta property="article:section" content="Football Logos" />
+        <meta property="article:tag" content="Logo Foot" />
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

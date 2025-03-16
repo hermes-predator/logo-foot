@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
@@ -171,7 +172,7 @@ const PackDescription = () => {
             <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
               <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
             </div>
-            <span className="text-sm font-medium">Gain de Temps Garanti</span>
+            <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>
         </div>
       </div>
@@ -180,3 +181,4 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
+

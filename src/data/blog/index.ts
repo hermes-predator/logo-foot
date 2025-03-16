@@ -18,17 +18,6 @@ export const blogPosts: BlogPost[] = [
   ...analysisPosts        
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérification des IDs uniques et logging détaillé
-const ids = new Set();
-const duplicateIds = blogPosts.filter(post => {
-  if (ids.has(post.id)) {
-    console.warn('Duplicate ID found:', post.id, post.title);
-    return true;
-  }
-  ids.add(post.id);
-  return false;
-});
-
-console.log('Total unique posts:', blogPosts.length);
-console.log('Duplicate IDs:', duplicateIds.length);
-console.log('All blog posts:', blogPosts.map(post => ({id: post.id, title: post.title})));
+// Vérifions que tous les articles sont bien exportés
+console.log('Total des articles dans blogPosts:', blogPosts.length);
+console.log('Articles dans blogPosts:', blogPosts.map(post => ({id: post.id, title: post.title})));

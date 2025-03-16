@@ -9,11 +9,12 @@ import { portugueseLogosPost } from './portuguese-clubs';
 import { frenchClubsPost } from './french-clubs';
 
 export const logoPosts: BlogPost[] = [
-  frenchClubsPost,
+  worldCupLogos,
   frontCloudPost,
   clubHistoryPost,
   nationalTeamsPost,
-  worldCupLogos,
   serieAPost,
-  portugueseLogosPost
+  portugueseLogosPost,
+  frenchClubsPost
 ];
+

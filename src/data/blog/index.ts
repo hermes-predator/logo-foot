@@ -7,8 +7,9 @@ import { analysisPosts } from './analysis';
 
 // Combine all blog posts and sort by date (most recent first)
 export const blogPosts: BlogPost[] = [
+  ...analysisPosts,
   ...logoPosts,
   ...technicalPosts,
-  ...historyPosts,
-  ...analysisPosts
+  ...historyPosts
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+

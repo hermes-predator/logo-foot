@@ -17,3 +17,4 @@ export const logoPosts: BlogPost[] = [
   serieAPost,
   portugueseLogosPost
 ];
+

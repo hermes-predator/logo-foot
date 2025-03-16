@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -9,8 +10,11 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 
 const Blog = () => {
-  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts, 9); // Augmentons le nombre d'articles par page
   const currentYear = new Date().getFullYear();
+
+  console.log('Total blog posts:', blogPosts.length);
+  console.log('Current page items:', paginatedItems.length);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">

@@ -6,7 +6,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
-  BreadcrumbLink,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
@@ -33,7 +32,7 @@ const Breadcrumbs = () => {
         </BreadcrumbItem>
         
         {paths.map((path, index) => (
-          <React.Fragment key={path}>
+          <React.Fragment key={index}>
             <BreadcrumbSeparator>
               <ChevronRight className="h-4 w-4" />
             </BreadcrumbSeparator>

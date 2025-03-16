@@ -33,31 +33,39 @@ const BlogPost = () => {
     );
   }
 
-  // Enrichir la meta description avec les mots-clés pertinents
-  const metaDescription = `${post.excerpt} Découvrez tout sur ${post.title.toLowerCase()}. Guide complet sur les logos foot, écussons et emblèmes de football.`;
+  // Optimisation des meta descriptions avec les mots-clés ciblés
+  const metaDescription = `${post.excerpt} Découvrez notre analyse détaillée sur ${post.title.toLowerCase()}. Guide complet et conseils d'experts sur les logos de football, écussons et emblèmes de clubs.`;
   
-  // Générer des mots-clés enrichis
-  const enhancedKeywords = `${post.title.toLowerCase()}, logo foot, logos football, écusson foot, ${post.keywords || ''}`;
+  // Amélioration des mots-clés avec plus de variations pertinentes
+  const enhancedKeywords = `${post.title.toLowerCase()}, ${post.keywords || ''}, logo foot, logos football, écusson foot, emblème club foot, design football`;
+
+  // Titre optimisé pour le SEO
+  const seoTitle = `${post.title} | Expert Logo Foot & Football`;
+
+  // Titre optimisé pour les réseaux sociaux
+  const socialTitle = `${post.title} | Logo Foot - Guide Expert du Football`;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{`${post.title} | Blog Logo Foot`}</title>
+        <title>{seoTitle}</title>
         <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={`${post.title} | Blog Logo Foot`} />
+        <meta property="og:title" content={socialTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${post.title} | Blog Logo Foot`} />
+        <meta name="twitter:title" content={socialTitle} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="keywords" content={enhancedKeywords} />
-        <meta name="author" content="Logo Foot" />
+        <meta name="author" content="Expert Logo Foot" />
         <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:modified_time" content={post.date} />
-        <meta property="article:section" content="Football Logos" />
-        <meta property="article:tag" content="Logo Foot" />
+        <meta property="article:section" content="Logos Football" />
+        <meta property="article:tag" content="Logo Football" />
+        <meta property="og:site_name" content="Logo Foot" />
+        <meta property="og:locale" content="fr_FR" />
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -37,21 +36,20 @@ const BlogPost = () => {
   }
 
   const readingTime = useReadingTime(post.content);
-  const metaTitle = `${post.title} | Guide Expert Logo Foot 2024`;
-  const metaDescription = `${post.excerpt} Guide complet et analyse détaillée sur ${post.title.toLowerCase()}. Découvrez tout sur les logos et emblèmes du football.`;
-  const enhancedKeywords = `${post.keywords}, logo foot, logos football, écusson foot, design football, emblème club`;
+  const metaDescription = `${post.excerpt} Découvrez tout sur ${post.title.toLowerCase()}. Guide complet sur les logos foot, écussons et emblèmes de football.`;
+  const enhancedKeywords = `${post.title.toLowerCase()}, logo foot, logos football, écusson foot, ${post.keywords || ''}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{metaTitle}</title>
+        <title>{`${post.title} | Blog Logo Foot`}</title>
         <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={metaTitle} />
+        <meta property="og:title" content={`${post.title} | Blog Logo Foot`} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:title" content={`${post.title} | Blog Logo Foot`} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="keywords" content={enhancedKeywords} />
         <meta name="author" content="Logo Foot" />
@@ -60,8 +58,6 @@ const BlogPost = () => {
         <meta property="article:modified_time" content={post.date} />
         <meta property="article:section" content="Football Logos" />
         <meta property="article:tag" content="Logo Foot" />
-        <meta property="og:site_name" content="Logo Foot" />
-        <meta property="article:publisher" content="https://logo-foot.com" />
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

@@ -1044,5 +1044,209 @@ Conclusion
 
 Les écussons de football sont bien plus que de simples badges - ils sont l'âme visible des clubs et de leur histoire.`,
     keywords: "écusson foot, badge football, écusson club foot, badge club football"
+  },
+  {
+    id: 13,
+    title: "Les Meilleurs Outils de Création de Logo Foot [Guide 2024]",
+    excerpt: "Découvrez les meilleurs outils et logiciels pour créer des logos de football professionnels. Guide complet pour designers et clubs amateurs.",
+    date: "2024-02-23",
+    content: `Guide complet pour créer des logos de football professionnels avec les meilleurs outils disponibles.
+
+Outils de Design Professionnel
+
+1. Adobe Illustrator
+- Design vectoriel
+- Qualité professionnelle
+- Export multiple formats
+- Templates avancés
+
+2. Affinity Designer
+- Alternative abordable
+- Qualité professionnelle
+- Interface intuitive
+- Export flexible
+
+Outils en Ligne
+
+1. Solutions Web
+- Canva Pro
+- Figma
+- Sketch
+- Adobe Creative Cloud
+
+2. Spécificités Football
+- Templates sportifs
+- Bibliothèques d'icônes
+- Éléments football
+- Export optimisé
+
+Création Mobile
+
+1. Applications
+- Logo Maker Pro
+- Adobe Creative
+- Canva Mobile
+- Design Creator
+
+2. Fonctionnalités
+- Templates sport
+- Export haute qualité
+- Partage facile
+- Synchronisation cloud
+
+Best Practices
+
+1. Design
+- Simplicité visuelle
+- Impact graphique
+- Lisibilité maximale
+- Versatilité usage
+
+2. Technique
+- Format vectoriel
+- Export multiples
+- Backup régulier
+- Version control
+
+Conclusion
+
+Choisissez l'outil adapté à vos besoins et budget pour créer des logos football professionnels.`,
+    keywords: "création logo foot, outil logo football, design logo foot, logiciel logo foot"
+  },
+  {
+    id: 14,
+    title: "SVG vs PNG : Quel Format pour votre Logo de Football [Comparatif 2024]",
+    excerpt: "Analyse comparative détaillée entre les formats SVG et PNG pour les logos de football. Guide technique pour choisir le meilleur format selon vos besoins.",
+    date: "2024-02-24",
+    content: `Guide technique complet pour comprendre et choisir entre les formats SVG et PNG pour vos logos de football.
+
+Format SVG
+
+1. Avantages
+- Scalable vectoriel
+- Taille minimale
+- Qualité parfaite
+- Animation possible
+
+2. Utilisation
+- Sites responsive
+- Applications web
+- Design moderne
+- Performance web
+
+Format PNG
+
+1. Points Forts
+- Transparence alpha
+- Compatibilité large
+- Qualité bitmap
+- Usage universel
+
+2. Applications
+- Réseaux sociaux
+- Print simple
+- Email marketing
+- Support ancien
+
+Comparaison Technique
+
+1. Performance
+- Taille fichier
+- Chargement page
+- Résolution écran
+- Bande passante
+
+2. Compatibilité
+- Navigateurs web
+- Applications mobile
+- Systèmes anciens
+- Emails marketing
+
+Recommandations
+
+1. Choisir SVG
+- Sites modernes
+- Apps responsive
+- Design évolutif
+- Animation souhaitée
+
+2. Préférer PNG
+- Compatibilité large
+- Usage simple
+- Email marketing
+- Réseaux sociaux
+
+Conclusion
+
+Le choix entre SVG et PNG dépend de vos besoins spécifiques en termes d'usage et de compatibilité.`,
+    keywords: "format logo foot, svg vs png, logo football format, format logo club"
+  },
+  {
+    id: 15,
+    title: "Guide Animation des Logos de Football pour le Web [Tutoriel 2024]",
+    excerpt: "Apprenez à animer vos logos de football pour le web. Techniques avancées d'animation SVG et CSS pour créer des logos dynamiques et attractifs.",
+    date: "2024-02-25",
+    content: `Guide pratique pour animer vos logos de football et créer des designs dynamiques attrayants.
+
+Animation SVG
+
+1. Techniques
+- Animation native
+- SMIL animations
+- CSS animations
+- JavaScript control
+
+2. Effets
+- Rotation fluide
+- Fade élégant
+- Morph créatif
+- Path animation
+
+CSS Animations
+
+1. Propriétés
+- Transform
+- Transition
+- Keyframes
+- Animation
+
+2. Effets Spéciaux
+- Hover effects
+- Click animations
+- Scroll triggers
+- Loading states
+
+JavaScript Interactions
+
+1. Libraries
+- GSAP
+- Anime.js
+- Motion One
+- Lottie
+
+2. Contrôles
+- Timeline
+- Séquences
+- Triggers
+- Interactivité
+
+Performance Web
+
+1. Optimisation
+- Code minimal
+- Assets légers
+- Cache optimal
+- Loading smart
+
+2. Compatibilité
+- Cross-browser
+- Fallbacks
+- Mobile first
+- Progressive
+
+Conclusion
+
+L'animation des logos ajoute une dimension interactive captivante à votre présence web.`,
+    keywords: "animation logo foot, logo football animé, animation svg foot, logo dynamique foot"
   }
 ];

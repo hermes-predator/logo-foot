@@ -104,10 +104,10 @@ const BlogPost = () => {
             
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
             
-            {post.category === 'logos' && post.galleryImageId && (
+            {post.galleryImageId && (
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
-                alt={`Logo ${post.title.split(':')[0]}`}
+                alt={`${post.title.split(':')[0]}`}
                 className="mb-8"
               />
             )}

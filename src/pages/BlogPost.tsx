@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -105,9 +104,9 @@ const BlogPost = () => {
             
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
             
-            {post.category === 'logos' && (
+            {post.category === 'logos' && post.galleryImageId && (
               <BlogImage
-                src={`/public/images/logo${post.id}.png`}
+                src={`/public/images/logo${post.galleryImageId}.png`}
                 alt={`Logo ${post.title.split(':')[0]}`}
                 className="mb-8"
               />

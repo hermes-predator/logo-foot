@@ -1,4 +1,3 @@
-
 export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis';
 
 export interface BlogSubCategory {
@@ -17,6 +16,7 @@ export interface BlogPost {
   keywords?: string;
   category: BlogCategory;
   subCategory?: string; // Référence au slug de la sous-catégorie
+  galleryImageId?: number; // ID correspondant à l'image dans la galerie
 }
 
 export interface BlogCategoryInfo {
@@ -99,4 +99,3 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
     ]
   }
 };
-

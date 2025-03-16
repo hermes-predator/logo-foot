@@ -14,13 +14,13 @@ import { brazilianClubsPost } from './brazilian-clubs';
 import { belgianClubsPost } from './belgian-clubs';
 
 export const logoPosts: BlogPost[] = [
-  frenchClubsPost,
-  worldCupLogos,
   frontCloudPost,
-  clubHistoryPost, 
+  clubHistoryPost,
   nationalTeamsPost,
+  worldCupLogos,
   serieAPost,
   portugueseLogosPost,
+  frenchClubsPost,
   southAmericanClubsPost,
   africanClubsPost,
   germanClubsPost,

@@ -39,6 +39,7 @@ import { toulouseLogoPost } from './toulouse-logo';
 import { milanLogoPost } from './milan-logo';
 import { interMilanLogoPost } from './inter-milan-logo';
 import { chelseaLogoPost } from './chelsea-logo';
+import { saintEtienneLogoPost } from './saint-etienne-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -80,7 +81,8 @@ export const logoPosts: BlogPost[] = [
   toulouseLogoPost,
   milanLogoPost,
   interMilanLogoPost,
-  chelseaLogoPost
+  chelseaLogoPost,
+  saintEtienneLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

@@ -1233,107 +1233,116 @@ Un logo professionnel est accessible même pour les petits clubs.`,
   },
   {
     id: 24,
-    title: "Logo Vectoriel Football : Guide Complet des Formats Professionnels",
-    excerpt: "Tout savoir sur les logos vectoriels dans le football : avantages, formats, utilisation et conversion. Guide expert pour designers et clubs professionnels.",
-    date: "2024-02-05",
-    content: `Découvrez pourquoi le format vectoriel est essentiel pour les logos de football et comment l'utiliser efficacement.
+    title: "Logo, Écusson ou Badge : Comprendre les Différents Emblèmes du Football",
+    excerpt: "Découvrez les différences entre logo, écusson et badge dans le football. Guide complet sur la terminologie et l'histoire des emblèmes footballistiques.",
+    date: "2024-01-01",
+    content: `Guide détaillé sur les différentes formes d'emblèmes dans le football et leur signification historique.
 
-Format Vectoriel
+Définitions et Histoire
 
-1. Avantages
-- Qualité maximale
-- Mise à l'échelle infinie
-- Adaptation tous supports
-- Modification facile
+1. L'Écusson
+- Origine héraldique
+- Tradition militaire
+- Symboles nobiliaires
+- Héritage historique
 
-2. Applications
-- Maillots officiels
-- Produits dérivés
-- Signalétique stade
-- Communication digitale
+2. Le Logo
+- Design moderne
+- Approche marketing
+- Identité visuelle
+- Communication
 
-Formats Principaux
+3. Le Badge
+- Tradition anglaise
+- Culture supporter
+- Collection passion
+- Merchandising
 
-• Adobe Illustrator (AI)
-- Format professionnel
-- Edition complète
-- Compatibilité maximale
-- Standard industrie
+Évolution Historique
 
-• SVG
-- Web optimisé
-- Taille légère
-- Animation possible
-- Responsive design
+• Du Blason à l'Écusson
+- Tradition médiévale
+- Héraldique sportive
+- Symboles familiaux
+- Histoire locale
 
-Conversion et Usage
+• Modernisation
+- Logos contemporains
+- Design minimaliste
+- Marketing global
+- Digital first
 
-1. Méthodes
-- Vectorisation auto
-- Tracé manuel
-- Reconstruction
-- Optimisation
+Applications Pratiques
 
-2. Bonnes Pratiques
-- Sauvegarde sources
-- Versions multiples
-- Documentation
-- Archivage
+1. Usage Officiel
+- Documents club
+- Communication
+- Merchandising
+- Digital
 
-Le format vectoriel est indispensable pour une gestion professionnelle des logos de football.`,
-    keywords: "logo vectoriel foot, format ai football, svg football, vectorisation logo foot, illustrator football"
+2. Culture Supporter
+- Collections
+- Tradition
+- Passion
+- Identité
+
+L'importance de comprendre ces différences pour apprécier l'histoire riche du football.`,
+    keywords: "écusson foot, badge football, logo club foot, différence écusson logo, emblème foot, blason club football"
   },
   {
     id: 25,
-    title: "Écusson Football : Différence entre Badge, Logo et Emblème",
-    excerpt: "Comprendre les nuances entre écusson, badge, logo et emblème dans le football. Guide complet sur la terminologie et l'usage des symboles du football.",
-    date: "2024-02-04",
-    content: `Exploration détaillée des différents termes utilisés pour désigner les symboles visuels des clubs de football.
+    title: "Formats de Fichiers pour Logos de Football : Guide Technique Complet",
+    excerpt: "Guide technique sur les formats de fichiers pour logos de football. AI, EPS, SVG, PNG : quel format choisir pour quelle utilisation ?",
+    date: "2024-01-01",
+    content: `Guide complet sur les formats de fichiers pour les logos de football et leur utilisation optimale.
 
-Terminologie
+Formats Vectoriels
 
-1. Écusson
-- Origine héraldique
-- Usage traditionnel
-- Symbolisme fort
-- Application textile
+1. Adobe Illustrator (AI)
+- Format natif Adobe
+- Édition parfaite
+- Qualité maximale
+- Usage professionnel
 
-2. Badge
-- Aspect physique
-- Relief possible
-- Production série
-- Usage marketing
-
-3. Logo
-- Design moderne
+2. EPS
+- Compatibilité large
+- Standard impression
+- Qualité vectorielle
 - Usage universel
-- Identité visuelle
-- Version digitale
 
-4. Emblème
-- Portée symbolique
-- Histoire club
-- Tradition
-- Patrimoine
+3. SVG
+- Standard web
+- Responsive design
+- Performance web
+- Animation possible
 
-Utilisations Spécifiques
+Formats Bitmap
 
-• Applications Physiques
-- Maillots officiels
-- Equipements
-- Merchandising
-- Signalétique
+• PNG
+- Transparence
+- Web optimisé
+- Qualité digitale
+- Usage courant
 
-• Digital
-- Site web
-- Réseaux sociaux
-- Applications
-- Communication
+• Applications
+- Print vs Digital
+- Taille fichier
+- Compatibilité
+- Performance
 
-Chaque terme a son importance et son contexte d'utilisation spécifique dans l'univers du football.`,
-    keywords: "écusson foot, badge football, emblème club foot, différence logo écusson, terminologie football"
+Guide d'Utilisation
+
+1. Choix du Format
+- Usage prévu
+- Support final
+- Contraintes techniques
+- Budget disponible
+
+2. Bonnes Pratiques
+- Conversion propre
+- Qualité préservée
+- Backup fichiers
+- Versions multiples`,
+    keywords: "format logo foot, AI football logo, EPS logo foot, SVG logo football, PNG écusson foot, fichier logo football"
   },
   {
-    id: 26,
-    title: "Droits et Licences des Logos de Football : Guide Juridique",
-    excerpt: "Guide juridique complet sur l'utilisation des logos de football : droits d'auteur, licences, autor

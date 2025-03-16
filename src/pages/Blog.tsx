@@ -7,8 +7,20 @@ import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
+import { usePagination, ITEMS_PER_PAGE } from '../hooks/usePagination';
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 const Blog = () => {
+  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
@@ -71,8 +83,8 @@ const Blog = () => {
           </div>
         </div>
         
-        <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3" aria-label="Liste des articles">
-          {blogPosts.map((post) => (
+        <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12" aria-label="Liste des articles">
+          {paginatedItems.map((post) => (
             <article 
               key={post.id}
               className="group flex flex-col bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden"
@@ -117,6 +129,69 @@ const Blog = () => {
             </article>
           ))}
         </section>
+
+        <Pagination className="mt-8">
+          <PaginationContent>
+            {currentPage > 1 && (
+              <PaginationItem>
+                <PaginationPrevious 
+                  onClick={() => setCurrentPage(currentPage - 1)}
+                  className="cursor-pointer"
+                />
+              </PaginationItem>
+            )}
+            
+            {[...Array(totalPages)].map((_, index) => {
+              const pageNumber = index + 1;
+              
+              // Show ellipsis for large page ranges
+              if (totalPages > 7) {
+                if (
+                  pageNumber === 1 ||
+                  pageNumber === totalPages ||
+                  (pageNumber >= currentPage - 1 && pageNumber <= currentPage + 1)
+                ) {
+                  return (
+                    <PaginationItem key={pageNumber}>
+                      <PaginationLink
+                        onClick={() => setCurrentPage(pageNumber)}
+                        isActive={currentPage === pageNumber}
+                        className="cursor-pointer"
+                      >
+                        {pageNumber}
+                      </PaginationLink>
+                    </PaginationItem>
+                  );
+                } else if (pageNumber === currentPage - 2 || pageNumber === currentPage + 2) {
+                  return <PaginationEllipsis key={pageNumber} />;
+                }
+                return null;
+              }
+              
+              // Show all pages if total pages <= 7
+              return (
+                <PaginationItem key={pageNumber}>
+                  <PaginationLink
+                    onClick={() => setCurrentPage(pageNumber)}
+                    isActive={currentPage === pageNumber}
+                    className="cursor-pointer"
+                  >
+                    {pageNumber}
+                  </PaginationLink>
+                </PaginationItem>
+              );
+            })}
+            
+            {currentPage < totalPages && (
+              <PaginationItem>
+                <PaginationNext 
+                  onClick={() => setCurrentPage(currentPage + 1)}
+                  className="cursor-pointer"
+                />
+              </PaginationItem>
+            )}
+          </PaginationContent>
+        </Pagination>
       </main>
     </div>
   );

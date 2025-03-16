@@ -1,28 +1,24 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BlogPost } from '../types/blog';
 
 export const usePagination = (items: BlogPost[], itemsPerPage: number = 12) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(items.length / itemsPerPage);
   
-  // Use useEffect to handle page updates safely
-  useEffect(() => {
-    if (currentPage > totalPages) {
-      setCurrentPage(1);
-    }
-  }, [currentPage, totalPages]);
-
-  // Calculate paginated items after ensuring current page is valid
+  // Ensure current page is valid
+  const validCurrentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
+  
+  // Calculate paginated items
   const paginatedItems = items.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    (validCurrentPage - 1) * itemsPerPage,
+    validCurrentPage * itemsPerPage
   );
 
   console.log('Pagination debug:', {
     totalItems: items.length,
     itemsPerPage,
-    currentPage,
+    currentPage: validCurrentPage,
     totalPages,
     displayedItems: paginatedItems.length,
     firstItem: paginatedItems[0]?.title,
@@ -30,7 +26,7 @@ export const usePagination = (items: BlogPost[], itemsPerPage: number = 12) => {
   });
 
   return {
-    currentPage,
+    currentPage: validCurrentPage,
     setCurrentPage,
     totalPages,
     paginatedItems,

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -9,7 +10,7 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 
 const Blog = () => {
-  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts, 6);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -43,15 +44,19 @@ const Blog = () => {
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
-      <main className="container mx-auto py-20 px-4">
+      <main className="container mx-auto px-4 py-12">
         <Breadcrumbs />
         <BlogHeader />
-        <BlogArticleList articles={paginatedItems} />
-        <BlogPagination 
-          currentPage={currentPage}
-          totalPages={totalPages}
-          setCurrentPage={setCurrentPage}
-        />
+        <div className="mt-12">
+          <BlogArticleList articles={paginatedItems} />
+          {totalPages > 1 && (
+            <BlogPagination 
+              currentPage={currentPage}
+              totalPages={totalPages}
+              setCurrentPage={setCurrentPage}
+            />
+          )}
+        </div>
       </main>
     </div>
   );

@@ -107,7 +107,7 @@ const BlogPost = () => {
             
             {post.category === 'logos' && (
               <BlogImage
-                src={`/images/logos/${post.id}.webp`}
+                src={`/public/images/logo${post.id}.png`}
                 alt={`Logo ${post.title.split(':')[0]}`}
                 className="mb-8"
               />

@@ -19,6 +19,7 @@ import { bundesligaLogoPost } from './bundesliga-brand';
 import { serieALogoPost } from './serie-a-logo';
 import { psgLogoPost } from './psg-logo';
 import { omLogoPost } from './om-logo';
+import { mlsLogoPost } from './mls-logos';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -39,7 +40,8 @@ export const logoPosts: BlogPost[] = [
   bundesligaLogoPost,
   serieALogoPost,
   psgLogoPost,
-  omLogoPost
+  omLogoPost,
+  mlsLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

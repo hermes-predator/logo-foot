@@ -13,6 +13,9 @@ import { germanClubsPost } from './german-clubs';
 import { brazilianClubsPost } from './brazilian-clubs';
 import { belgianClubsPost } from './belgian-clubs';
 import { asianClubsPost } from './asian-clubs';
+import { ligue1LogoPost } from './ligue1-logo';
+import { premierLeagueLogoPost } from './premier-league-design';
+import { bundesligaLogoPost } from './bundesliga-brand';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -27,7 +30,10 @@ export const logoPosts: BlogPost[] = [
   germanClubsPost,
   brazilianClubsPost,
   belgianClubsPost,
-  asianClubsPost
+  asianClubsPost,
+  ligue1LogoPost,
+  premierLeagueLogoPost,
+  bundesligaLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

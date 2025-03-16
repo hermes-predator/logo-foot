@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -8,6 +7,7 @@ import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
+import { BLOG_CATEGORIES } from '../types/blog';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();

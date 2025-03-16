@@ -8,6 +8,7 @@ import { serieAPost } from './italian-serie-a';
 import { portugueseLogosPost } from './portuguese-clubs';
 import { frenchClubsPost } from './french-clubs';
 import { southAmericanClubsPost } from './south-american-clubs';
+import { africanClubsPost } from './african-clubs';
 
 export const logoPosts: BlogPost[] = [
   frenchClubsPost,
@@ -17,5 +18,6 @@ export const logoPosts: BlogPost[] = [
   nationalTeamsPost,
   serieAPost,
   portugueseLogosPost,
-  southAmericanClubsPost
+  southAmericanClubsPost,
+  africanClubsPost
 ];

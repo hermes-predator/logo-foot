@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -6,6 +5,8 @@ import { BookOpen } from 'lucide-react';
 import { format } from 'date-fns';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { useReadingTime } from '../hooks/useReadingTime';
 
 const Blog = () => {
   return (
@@ -38,6 +39,8 @@ const Blog = () => {
       <BlogSchemaMarkup isBlogList />
       
       <main className="container mx-auto py-20 px-4">
+        <Breadcrumbs />
+        
         <div className="max-w-4xl mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium mb-6">
             <span>Le Blog des Logos de Football</span>

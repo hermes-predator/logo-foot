@@ -1,10 +1,12 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
+import { Clock } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { useReadingTime } from '../hooks/useReadingTime';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -33,10 +35,8 @@ const BlogPost = () => {
     );
   }
 
-  // Enrichir la meta description avec les mots-clés pertinents
+  const readingTime = useReadingTime(post.content);
   const metaDescription = `${post.excerpt} Découvrez tout sur ${post.title.toLowerCase()}. Guide complet sur les logos foot, écussons et emblèmes de football.`;
-  
-  // Générer des mots-clés enrichis
   const enhancedKeywords = `${post.title.toLowerCase()}, logo foot, logos football, écusson foot, ${post.keywords || ''}`;
 
   return (
@@ -62,54 +62,22 @@ const BlogPost = () => {
       <BlogSchemaMarkup post={post} />
       
       <div className="container mx-auto py-20 px-4">
-        <Link 
-          to="/blog"
-          className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 mb-8 group"
-        >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M15 19l-7-7 7-7" 
-            />
-          </svg>
-          Retour aux articles
-        </Link>
-
+        <Breadcrumbs />
+        
         <div className="max-w-3xl mx-auto">
-          <Link 
-            to="/blog"
-            className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 mb-8 group"
-          >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M15 19l-7-7 7-7" 
-              />
-            </svg>
-            Retour aux articles
-          </Link>
-
           <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm p-8 md:p-12">
-            <time className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white mb-6">
-              {format(new Date(post.date), 'dd-MM-yyyy')}
-            </time>
+            <div className="flex items-center gap-4 mb-6">
+              <time className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white">
+                {format(new Date(post.date), 'dd-MM-yyyy')}
+              </time>
+              <div className="flex items-center gap-1 text-xs text-gray-600">
+                <Clock className="h-3.5 w-3.5" />
+                <span>{readingTime} min de lecture</span>
+              </div>
+            </div>
+            
             <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
+            
             <div className="prose prose-purple lg:prose-lg mx-auto">
               {post.content.split('\n\n').map((paragraph, index) => (
                 <p key={index} className="mb-6 text-gray-600 leading-relaxed">

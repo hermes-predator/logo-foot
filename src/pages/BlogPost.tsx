@@ -36,28 +36,32 @@ const BlogPost = () => {
   }
 
   const readingTime = useReadingTime(post.content);
-  const metaDescription = `${post.excerpt} Découvrez tout sur ${post.title.toLowerCase()}. Guide complet sur les logos foot, écussons et emblèmes de football.`;
-  const enhancedKeywords = `${post.title.toLowerCase()}, logo foot, logos football, écusson foot, ${post.keywords || ''}`;
+  const currentYear = new Date().getFullYear();
+  const metaTitle = `${post.title} | Logo Foot`;
+  const metaDescription = `${post.excerpt} Guide expert mis à jour en ${currentYear} sur les logos, écussons et emblèmes de football.`;
+  const enhancedKeywords = `${post.keywords}, logo foot, logos football, écusson foot, design football ${currentYear}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{`${post.title} | Blog Logo Foot`}</title>
+        <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={`${post.title} | Blog Logo Foot`} />
+        <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${post.title} | Blog Logo Foot`} />
+        <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="keywords" content={enhancedKeywords} />
         <meta name="author" content="Logo Foot" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="fr-FR" />
         <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:modified_time" content={post.date} />
         <meta property="article:section" content="Football Logos" />
-        <meta property="article:tag" content="Logo Foot" />
+        <meta property="article:tag" content={post.keywords} />
       </Helmet>
       <BlogSchemaMarkup post={post} />
       

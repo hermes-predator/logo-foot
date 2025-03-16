@@ -20,33 +20,36 @@ import {
 
 const Blog = () => {
   const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts);
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>Blog Logo Foot : Actualités & Guides sur les Logos du Football | Guide Complet 2024</title>
+        <title>{`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear} | Actualités & Analyses`}</title>
         <meta 
           name="description" 
-          content="Découvrez notre blog spécialisé sur les logos de football : histoire des emblèmes, évolution des designs, guides de création et actualités. Analyses détaillées et expertise depuis 2024." 
+          content={`Explorez notre guide complet sur les logos de football ${currentYear}. Histoire des emblèmes, analyse des designs, actualités et évolution des logos des plus grands clubs de football.`}
         />
         <meta 
           property="og:title" 
-          content="Blog Logo Foot : Actualités & Guides sur les Logos du Football | Guide Complet 2024" 
+          content={`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear} | Actualités & Analyses`}
         />
         <meta 
           property="og:description" 
-          content="Explorez l'univers fascinant des logos de football à travers nos articles experts : analyses, histoire, design et tendances. Le guide de référence pour tout savoir sur les emblèmes du football." 
+          content={`Découvrez notre expertise sur les logos de football : histoire des emblèmes, évolution des designs, guides de création et analyses détaillées. Le guide de référence ${currentYear} pour tout savoir sur les logos du football.`}
         />
         <meta 
           name="keywords" 
-          content="blog logo foot, articles football, logos clubs foot, design football, emblèmes foot, histoire logos football, guide logos foot, actualités logos foot"
+          content={`blog logo foot ${currentYear}, logos football, emblèmes foot, design football, histoire logos football, guide logos foot, actualités logos foot, écussons clubs, logos clubs professionnels`}
         />
         <meta property="og:type" content="blog" />
         <meta property="og:url" content="https://logo-foot.com/blog" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="fr-FR" />
         <link rel="canonical" href="https://logo-foot.com/blog" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog Logo Foot : Le Guide Complet des Logos du Football" />
-        <meta name="twitter:description" content="Plongez dans l'univers des logos de football : histoire, évolution, design et tendances des emblèmes qui font la richesse du football." />
+        <meta name="twitter:title" content={`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
+        <meta name="twitter:description" content={`Plongez dans l'univers des logos de football ${currentYear} : histoire, évolution, design et tendances des emblèmes qui font la richesse du football.`} />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       

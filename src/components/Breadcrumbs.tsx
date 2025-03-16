@@ -5,8 +5,8 @@ import { ChevronRight, Home } from 'lucide-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbList,
+  BreadcrumbLink,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
@@ -27,9 +27,9 @@ const Breadcrumbs = () => {
     <Breadcrumb className="mb-8">
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/">
+          <Link to="/" className="transition-colors hover:text-foreground">
             <Home className="h-4 w-4" />
-          </BreadcrumbLink>
+          </Link>
         </BreadcrumbItem>
         
         {paths.map((path, index) => (
@@ -38,12 +38,12 @@ const Breadcrumbs = () => {
               <ChevronRight className="h-4 w-4" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <BreadcrumbLink 
-                as={Link} 
+              <Link 
                 to={`/${paths.slice(0, index + 1).join('/')}`}
+                className="transition-colors hover:text-foreground"
               >
                 {generateBreadcrumbLabel(path)}
-              </BreadcrumbLink>
+              </Link>
             </BreadcrumbItem>
           </React.Fragment>
         ))}

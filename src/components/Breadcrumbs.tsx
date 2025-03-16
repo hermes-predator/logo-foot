@@ -1,54 +1,55 @@
 
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home } from 'lucide-react';
+import { ChevronRight, Home } from 'lucide-react';
 import {
   Breadcrumb,
-  BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbPage,
+  BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-const getBreadcrumbItems = (pathname: string) => {
-  const paths = pathname.split('/').filter(Boolean);
-  return paths.map((path, index) => {
-    const url = `/${paths.slice(0, index + 1).join('/')}`;
-    const label = path.charAt(0).toUpperCase() + path.slice(1);
-    return { path, url, label };
-  });
-};
-
-export default function Breadcrumbs() {
+const Breadcrumbs = () => {
   const location = useLocation();
-  const items = getBreadcrumbItems(location.pathname);
+  const paths = location.pathname.split('/').filter(path => path);
 
-  if (location.pathname === '/') return null;
+  const generateBreadcrumbLabel = (path: string) => {
+    switch(path) {
+      case 'blog':
+        return 'Blog';
+      default:
+        return path;
+    }
+  };
 
   return (
-    <Breadcrumb className="mb-6 px-6">
+    <Breadcrumb className="mb-8">
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link to="/" className="flex items-center gap-2">
-              <Home className="h-4 w-4" />
-              Accueil
-            </Link>
+          <BreadcrumbLink as={Link} to="/">
+            <Home className="h-4 w-4" />
           </BreadcrumbLink>
         </BreadcrumbItem>
-        {items.map((item, index) => (
-          <BreadcrumbItem key={item.url}>
-            <BreadcrumbSeparator />
-            {index === items.length - 1 ? (
-              <BreadcrumbPage>{item.label}</BreadcrumbPage>
-            ) : (
-              <BreadcrumbLink asChild>
-                <Link to={item.url}>{item.label}</Link>
+        
+        {paths.map((path, index) => (
+          <React.Fragment key={path}>
+            <BreadcrumbSeparator>
+              <ChevronRight className="h-4 w-4" />
+            </BreadcrumbSeparator>
+            <BreadcrumbItem>
+              <BreadcrumbLink 
+                as={Link} 
+                to={`/${paths.slice(0, index + 1).join('/')}`}
+              >
+                {generateBreadcrumbLabel(path)}
               </BreadcrumbLink>
-            )}
-          </BreadcrumbItem>
+            </BreadcrumbItem>
+          </React.Fragment>
         ))}
       </BreadcrumbList>
     </Breadcrumb>
   );
-}
+};
+
+export default Breadcrumbs;

@@ -24,6 +24,7 @@ import { monacoLogoPost } from './monaco-logo';
 import { rennesLogoPost } from './rennes-logo';
 import { lillLogoPost } from './lille-logo';
 import { lyonLogoPost } from './lyon-logo';
+import { niceLogoPost } from './nice-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -50,7 +51,8 @@ export const logoPosts: BlogPost[] = [
   monacoLogoPost,
   rennesLogoPost,
   lillLogoPost,
-  lyonLogoPost
+  lyonLogoPost,
+  niceLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

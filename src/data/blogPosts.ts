@@ -1350,4 +1350,4 @@ Conseils Pratiques
   {
     id: 19,
     title: "Intelligence Artificielle et Création de Logos de Football : Guide 2024",
-    excerpt: "Découvrez comment l'IA révolutionne la
+    excerpt: "Découvrez comment l'IA révolutionne la création de logos

@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     title: "⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football",
     excerpt: "Découvrez comment une équipe de développeurs passionnés a créé une solution complète pour la gestion des logos et ressources visuelles du football.",
-    date: "2024-02-15",
+    date: "2024-02-25",
     content: `⦗FRONT-CLOUD⦘~ Football.zip : La solution idéale pour vos ressources liées au football
 
 ⦗FRONT-CLOUD⦘~ Football.zip est la solution de référence pour accéder et gérer l'ensemble des ressources visuelles liées au football. Découvrez comment notre fichier peut transformer votre approche de la gestion des actifs numériques du football.
@@ -80,7 +80,7 @@ En conclusion, ⦗FRONT-CLOUD⦘~ Football.zip représente la solution idéale p
     id: 2,
     title: "L'histoire de Front Cloud : Des développeurs et un besoin de ressources pour construire le projet d'analyse autour des paris sportifs",
     excerpt: "Découvrez comment une équipe de développeurs passionnés de paris sportifs a créé une solution innovante pour la gestion des ressources visuelles du football.",
-    date: "2024-02-14",
+    date: "2024-02-24",
     content: `Notre histoire commence dans l'univers effervescent des paris sportifs, où une équipe de développeurs passionnés se réunissait chaque week-end pour suivre les matchs et tenter de prédire les résultats. Au fil du temps, nous avons constaté un défi récurrent : l'accès à des ressources visuelles de qualité pour nos projets de développement liés au football.
 
 L'étincelle créatrice
@@ -152,7 +152,7 @@ Front Cloud est devenu bien plus qu'un simple outil d'analyse - c'est une platef
     id: 3,
     title: "Les Logos de Football : Guide Complet des Emblèmes de Clubs [2024]",
     excerpt: "Découvrez notre guide détaillé sur les logos foot : histoire, signification et évolution des emblèmes de clubs de football. Une analyse approfondie des plus beaux écussons du football mondial.",
-    date: "2024-02-13",
+    date: "2024-02-23",
     content: `Les logos foot représentent l'âme et l'identité de chaque club de football. Ce guide complet vous fait découvrir l'histoire fascinante derrière ces emblèmes légendaires.
 
 L'Histoire des Logos Foot
@@ -236,7 +236,7 @@ Les logos foot sont des symboles intemporels qui transcendent le sport, racontan
     id: 4,
     title: "Comment Utiliser et Intégrer les Logos de Football en Haute Définition",
     excerpt: "Guide technique complet sur l'utilisation et l'intégration des logos de football HD dans vos projets. Découvrez les meilleures pratiques pour une qualité optimale.",
-    date: "2024-02-12",
+    date: "2024-02-22",
     content: `Guide pratique pour utiliser efficacement les logos de football haute définition dans vos projets digitaux et print.
 
 Formats et Résolutions
@@ -318,7 +318,7 @@ L'utilisation professionnelle des logos de football nécessite une approche mét
     id: 5,
     title: "Pack Logo Football : Guide des Ressources Visuelles pour les Clubs",
     excerpt: "Explorez notre pack complet de ressources visuelles pour les clubs de football. Logos, emblèmes et éléments graphiques optimisés pour tous vos besoins.",
-    date: "2024-02-11",
+    date: "2024-02-21",
     content: `Découvrez notre pack complet de ressources visuelles spécialement conçu pour répondre aux besoins des clubs de football et des professionnels du secteur.
 
 Contenu du Pack
@@ -400,7 +400,7 @@ Notre pack de ressources visuelles football offre une solution complète et prof
     id: 6,
     title: "Évolution des Logos de Football : De 1900 à Aujourd'hui",
     excerpt: "Un voyage à travers le temps explorant l'évolution des logos de football, des premiers emblèmes jusqu'aux designs modernes. Découvrez comment les logos ont façonné l'identité visuelle du football.",
-    date: "2024-02-10",
+    date: "2024-02-20",
     content: `L'histoire fascinante des logos de football, de leurs origines modestes aux designs contemporains sophistiqués.
 
 Les Origines (1900-1950)
@@ -478,7 +478,7 @@ L'Avenir des Logos
     id: 7,
     title: "Signification des Couleurs dans les Logos de Football",
     excerpt: "Analyse approfondie de la symbolique des couleurs dans les logos des clubs de football. Impact émotionnel, histoire et choix stratégiques derrière chaque teinte.",
-    date: "2024-02-09",
+    date: "2024-02-19",
     content: `La symbolique fascinante des couleurs dans l'univers des logos de football et leur impact sur l'identité des clubs.
 
 Psychologie des Couleurs
@@ -556,7 +556,7 @@ Stratégie Couleur
     id: 8,
     title: "Création et Design de Logo pour Club de Football : Guide Complet",
     excerpt: "Guide pratique pour créer un logo de club de football professionnel. Méthodologie, outils et conseils d'experts pour un design impactant et mémorable.",
-    date: "2024-02-08",
+    date: "2024-02-18",
     content: `Guide détaillé pour créer un logo de football professionnel et mémorable, de la conception à la réalisation.
 
 Méthodologie de Création
@@ -634,7 +634,7 @@ Validation et Tests
     id: 9,
     title: "Les Plus Beaux Logos de Football : Top 50 Mondial",
     excerpt: "Découvrez notre sélection des 50 plus beaux logos de clubs de football au monde. Analyse détaillée des designs, histoire et impact de ces emblèmes légendaires.",
-    date: "2024-02-07",
+    date: "2024-02-17",
     content: `Exploration des 50 plus beaux logos de football au monde, leur histoire et ce qui les rend uniques et mémorables.
 
 Top 10 International
@@ -716,7 +716,7 @@ Tendances Observées
     id: 10,
     title: "Vectorisation et Restauration de Logos de Football Anciens",
     excerpt: "Techniques et méthodes professionnelles pour vectoriser et restaurer les anciens logos de football. Guide pratique pour préserver le patrimoine visuel du football.",
-    date: "2024-02-06",
+    date: "2024-02-16",
     content: `Guide technique pour la vectorisation et la restauration professionnelle des logos de football historiques.
 
 Processus de Vectorisation
@@ -794,7 +794,7 @@ Applications Modernes
     id: 11,
     title: "Les Logos des Clubs Anglais : Histoire et Évolution de la Premier League",
     excerpt: "Découvrez l'histoire fascinante des logos des clubs de Premier League anglaise. De Manchester United à Liverpool, plongez dans l'héritage visuel du football anglais.",
-    date: "2024-02-05",
+    date: "2024-02-15",
     content: `Une exploration détaillée des logos emblématiques du football anglais, leur histoire et leur évolution au fil des années.
 
 Histoire et Tradition
@@ -847,7 +847,7 @@ Ces logos racontent l'histoire riche du football anglais, mêlant tradition et m
     id: 12,
     title: "Logos Liga : Guide Complet des Emblèmes du Football Espagnol",
     excerpt: "Analyse complète des logos de La Liga : histoire, design et signification des emblèmes des clubs espagnols de football, du Real Madrid au FC Barcelone.",
-    date: "2024-02-04",
+    date: "2024-02-14",
     content: `Plongée dans l'univers des logos du football espagnol, symboles d'une riche tradition footballistique.
 
 Grands Clubs Espagnols
@@ -905,7 +905,7 @@ Les logos de La Liga représentent parfaitement le mélange unique entre traditi
     id: 13,
     title: "Serie A : Les Plus Beaux Logos du Football Italien",
     excerpt: "Découvrez les emblèmes légendaires du calcio italien. Histoire et analyse des logos des plus grands clubs de Serie A, de la Juventus à l'AC Milan.",
-    date: "2024-02-03",
+    date: "2024-02-13",
     content: `Une analyse approfondie des logos emblématiques du football italien, symboles d'histoire et de passion.
 
 Clubs Historiques
@@ -963,7 +963,7 @@ Les logos de la Serie A reflètent la richesse culturelle et l'histoire passionn
     id: 14,
     title: "Bundesliga : L'Art des Logos du Football Allemand",
     excerpt: "Explorez les logos distinctifs de la Bundesliga allemande. Du Bayern Munich à Dortmund, découvrez l'histoire et le design des emblèmes du football allemand.",
-    date: "2024-02-02",
+    date: "2024-02-12",
     content: `Une exploration des logos emblématiques de la Bundesliga, reflets de la tradition et de la modernité du football allemand.
 
 Clubs Majeurs
@@ -1021,7 +1021,7 @@ Les logos de la Bundesliga incarnent l'efficacité et la précision caractérist
     id: 15,
     title: "Ligue 1 : Guide des Logos du Football Français",
     excerpt: "Histoire et analyse des logos des clubs de Ligue 1. Du PSG à l'OM, découvrez les emblèmes qui font l'identité du football français.",
-    date: "2024-02-01",
+    date: "2024-02-11",
     content: `Exploration détaillée des logos qui façonnent l'identité visuelle du football français.
 
 Clubs Historiques

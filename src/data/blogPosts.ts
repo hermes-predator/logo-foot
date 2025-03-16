@@ -1230,5 +1230,110 @@ Applications
 
 Un logo professionnel est accessible même pour les petits clubs.`,
     keywords: "logo club amateur, création logo football, design petit club, emblème club local, logo foot amateur"
-  }
-];
+  },
+  {
+    id: 24,
+    title: "Logo Vectoriel Football : Guide Complet des Formats Professionnels",
+    excerpt: "Tout savoir sur les logos vectoriels dans le football : avantages, formats, utilisation et conversion. Guide expert pour designers et clubs professionnels.",
+    date: "2024-02-05",
+    content: `Découvrez pourquoi le format vectoriel est essentiel pour les logos de football et comment l'utiliser efficacement.
+
+Format Vectoriel
+
+1. Avantages
+- Qualité maximale
+- Mise à l'échelle infinie
+- Adaptation tous supports
+- Modification facile
+
+2. Applications
+- Maillots officiels
+- Produits dérivés
+- Signalétique stade
+- Communication digitale
+
+Formats Principaux
+
+• Adobe Illustrator (AI)
+- Format professionnel
+- Edition complète
+- Compatibilité maximale
+- Standard industrie
+
+• SVG
+- Web optimisé
+- Taille légère
+- Animation possible
+- Responsive design
+
+Conversion et Usage
+
+1. Méthodes
+- Vectorisation auto
+- Tracé manuel
+- Reconstruction
+- Optimisation
+
+2. Bonnes Pratiques
+- Sauvegarde sources
+- Versions multiples
+- Documentation
+- Archivage
+
+Le format vectoriel est indispensable pour une gestion professionnelle des logos de football.`,
+    keywords: "logo vectoriel foot, format ai football, svg football, vectorisation logo foot, illustrator football"
+  },
+  {
+    id: 25,
+    title: "Écusson Football : Différence entre Badge, Logo et Emblème",
+    excerpt: "Comprendre les nuances entre écusson, badge, logo et emblème dans le football. Guide complet sur la terminologie et l'usage des symboles du football.",
+    date: "2024-02-04",
+    content: `Exploration détaillée des différents termes utilisés pour désigner les symboles visuels des clubs de football.
+
+Terminologie
+
+1. Écusson
+- Origine héraldique
+- Usage traditionnel
+- Symbolisme fort
+- Application textile
+
+2. Badge
+- Aspect physique
+- Relief possible
+- Production série
+- Usage marketing
+
+3. Logo
+- Design moderne
+- Usage universel
+- Identité visuelle
+- Version digitale
+
+4. Emblème
+- Portée symbolique
+- Histoire club
+- Tradition
+- Patrimoine
+
+Utilisations Spécifiques
+
+• Applications Physiques
+- Maillots officiels
+- Equipements
+- Merchandising
+- Signalétique
+
+• Digital
+- Site web
+- Réseaux sociaux
+- Applications
+- Communication
+
+Chaque terme a son importance et son contexte d'utilisation spécifique dans l'univers du football.`,
+    keywords: "écusson foot, badge football, emblème club foot, différence logo écusson, terminologie football"
+  },
+  {
+    id: 26,
+    title: "Droits et Licences des Logos de Football : Guide Juridique",
+    excerpt: "Guide juridique complet sur l'utilisation des logos de football : droits d'auteur, licences, autor

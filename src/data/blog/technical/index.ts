@@ -11,3 +11,5 @@ export const technicalPosts: BlogPost[] = [
   motionDesignGuide,
   minimalDesignGuide
 ];
+
+console.log('Verifying technical posts:', technicalPosts.map(post => post.title));

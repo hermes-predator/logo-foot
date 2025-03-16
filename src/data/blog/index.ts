@@ -5,11 +5,11 @@ import { technicalPosts } from './technical';
 import { historyPosts } from './history';
 import { analysisPosts } from './analysis';
 
-// Logs pour debug
-console.log('Logo posts:', logoPosts.length);          // devrait être 12
-console.log('Technical posts:', technicalPosts.length); // devrait être 4
-console.log('History posts:', historyPosts.length);    // devrait être 2
-console.log('Analysis posts:', analysisPosts.length);  // devrait être 6
+// Logs détaillés pour debug
+console.log('Logo posts:', logoPosts.length, logoPosts.map(post => post.title));
+console.log('Technical posts:', technicalPosts.length, technicalPosts.map(post => post.title));
+console.log('History posts:', historyPosts.length, historyPosts.map(post => post.title));
+console.log('Analysis posts:', analysisPosts.length, analysisPosts.map(post => post.title));
 
 export const blogPosts: BlogPost[] = [
   ...logoPosts,           
@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
   ...analysisPosts        
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérification des IDs uniques
+// Vérification des IDs uniques et logging détaillé
 const ids = new Set();
 const duplicateIds = blogPosts.filter(post => {
   if (ids.has(post.id)) {
@@ -31,3 +31,4 @@ const duplicateIds = blogPosts.filter(post => {
 
 console.log('Total unique posts:', blogPosts.length);
 console.log('Duplicate IDs:', duplicateIds.length);
+console.log('All blog posts:', blogPosts.map(post => ({id: post.id, title: post.title})));

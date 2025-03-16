@@ -27,3 +27,5 @@ export const logoPosts: BlogPost[] = [
   brazilianClubsPost,
   belgianClubsPost
 ];
+
+console.log('Verifying logo posts:', logoPosts.map(post => post.title));

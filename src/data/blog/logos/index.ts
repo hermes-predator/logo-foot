@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -17,6 +16,7 @@ import { ligue1LogoPost } from './ligue1-logo';
 import { premierLeagueLogoPost } from './premier-league-design';
 import { bundesligaLogoPost } from './bundesliga-brand';
 import { serieALogoPost } from './serie-a-logo';
+import { psgLogoPost } from './psg-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -35,7 +35,8 @@ export const logoPosts: BlogPost[] = [
   ligue1LogoPost,
   premierLeagueLogoPost,
   bundesligaLogoPost,
-  serieALogoPost
+  serieALogoPost,
+  psgLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

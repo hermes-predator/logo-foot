@@ -12,8 +12,8 @@ import { africanClubsPost } from './african-clubs';
 import { germanClubsPost } from './german-clubs';
 import { brazilianClubsPost } from './brazilian-clubs';
 import { belgianClubsPost } from './belgian-clubs';
+import { asianClubsPost } from './asian-clubs';
 
-// On s'assure d'inclure tous les articles dans le tableau
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
   clubHistoryPost,
@@ -26,7 +26,8 @@ export const logoPosts: BlogPost[] = [
   africanClubsPost,
   germanClubsPost,
   brazilianClubsPost,
-  belgianClubsPost
+  belgianClubsPost,
+  asianClubsPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

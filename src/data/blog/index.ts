@@ -24,8 +24,14 @@ if (allPosts.length !== uniqueIds.size) {
   console.log('Duplicate posts:', duplicates.map(post => ({id: post.id, title: post.title})));
 }
 
-export const blogPosts: BlogPost[] = [...allPosts]
+// Remove any duplicates before sorting
+const uniquePosts = Array.from(
+  allPosts.reduce((map, post) => map.set(post.id, post), new Map()).values()
+);
+
+export const blogPosts: BlogPost[] = uniquePosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 // Final validation of exported posts
 console.log('Final blogPosts array:', blogPosts.map(post => ({id: post.id, title: post.title, date: post.date})));
+

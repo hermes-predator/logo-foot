@@ -1074,5 +1074,262 @@ Design et Modernité
 
 Les logos de la Ligue 1 représentent la diversité et la richesse du football français.`,
     keywords: "logos Ligue 1, logos clubs français, PSG logo, OM logo, OL logo, logos football français"
-  }
-];
+  },
+  {
+    id: 16,
+    title: "L'Histoire des Logos de la Champions League et Europa League",
+    excerpt: "Découvrez l'évolution des logos des compétitions européennes de football. De la Coupe des Clubs Champions à la moderne Champions League.",
+    date: "2024-01-25",
+    content: `L'évolution des logos des compétitions européennes raconte l'histoire du football continental.
+
+Les Origines
+
+1. Champions League
+- Création initiale
+- Évolution visuelle
+- Design actuel
+- Impact marketing
+
+2. Europa League
+- Histoire visuelle
+- Changements majeurs
+- Identité moderne
+- Reconnaissance mondiale
+
+Design et Symbolisme
+
+• Éléments Iconiques
+- Étoiles Champions League
+- Symboles européens
+- Couleurs officielles
+- Design distinctif
+
+• Evolution Marketing
+- Impact commercial
+- Reconnaissance mondiale
+- Merchandising
+- Droits TV
+
+Les Logos en Action
+
+1. Applications
+- Diffusion TV
+- Supports marketing
+- Merchandising
+- Digital
+
+2. Impact Global
+- Reconnaissance mondiale
+- Influence culturelle
+- Prestige sportif
+- Heritage footballistique
+
+Les logos des compétitions européennes sont devenus des symboles puissants du football moderne.`,
+    keywords: "Champions League logo, Europa League logo, logos compétitions européennes, histoire logos UEFA"
+  },
+  {
+    id: 17,
+    title: "Copa Libertadores : Les Logos du Football Sud-Américain",
+    excerpt: "Explorez les emblèmes du football sud-américain à travers la Copa Libertadores. Histoire, design et signification des logos les plus emblématiques.",
+    date: "2024-01-20",
+    content: `Plongée dans l'univers des logos du football sud-américain à travers la Copa Libertadores.
+
+Histoire et Tradition
+
+1. Copa Libertadores
+- Création du logo
+- Évolution visuelle
+- Symbolisme
+- Impact continental
+
+2. Clubs Légendaires
+- Boca Juniors
+- River Plate
+- Santos
+- Peñarol
+
+Design Sud-Américain
+
+• Caractéristiques
+- Couleurs vives
+- Symbolisme local
+- Traditions
+- Culture football
+
+• Influence Culturelle
+- Identité locale
+- Passion football
+- Histoire clubs
+- Tradition visuelle
+
+Impact International
+
+1. Reconnaissance
+- Visibilité mondiale
+- Marketing
+- Merchandising
+- Digital
+
+2. Héritage
+- Tradition préservée
+- Histoire honorée
+- Culture transmise
+- Avenir assuré
+
+Les logos sud-américains incarnent la passion et la tradition du football continental.`,
+    keywords: "Copa Libertadores logo, logos sud-américains, emblèmes football Amérique du Sud, clubs sud-américains"
+  },
+  {
+    id: 18,
+    title: "Les Logos du Football Africain : CAN et Clubs Historiques",
+    excerpt: "Découvrez la richesse des logos du football africain. De la Coupe d'Afrique des Nations aux clubs légendaires du continent.",
+    date: "2024-01-15",
+    content: `Une exploration des logos emblématiques du football africain et leur signification culturelle.
+
+La CAN
+
+1. Évolution Historique
+- Création logo
+- Changements majeurs
+- Design moderne
+- Impact continental
+
+2. Symbolisme
+- Couleurs panafricaines
+- Motifs traditionnels
+- Unité continentale
+- Fierté africaine
+
+Clubs Légendaires
+
+• Afrique du Nord
+- Al Ahly
+- Zamalek
+- ES Tunis
+- Raja Casablanca
+
+• Afrique Subsaharienne
+- TP Mazembe
+- Enyimba
+- Asante Kotoko
+- Orlando Pirates
+
+Design et Culture
+
+1. Influences
+- Traditions locales
+- Art africain
+- Culture football
+- Modernité
+
+2. Impact
+- Reconnaissance
+- Identité visuelle
+- Marketing
+- Digital
+
+Les logos africains reflètent la richesse culturelle du football continental.`,
+    keywords: "logos football africain, CAN logo, clubs africains emblèmes, football Afrique logos"
+  },
+  {
+    id: 19,
+    title: "L'Évolution des Logos de la Coupe du Monde FIFA (1930-2026)",
+    excerpt: "Retracez l'histoire des logos de la Coupe du Monde de la FIFA, de l'Uruguay 1930 au Mondial 2026. Une évolution marquante du design sportif.",
+    date: "2024-01-10",
+    content: `L'histoire fascinante des logos de la Coupe du Monde FIFA, reflets de leur époque.
+
+Les Débuts (1930-1970)
+
+1. Premières Éditions
+- Uruguay 1930
+- Italie 1934
+- France 1938
+- Designs simples
+
+2. Après-Guerre
+- Brésil 1950
+- Suisse 1954
+- Suède 1958
+- Chili 1962
+
+Ère Moderne (1970-2000)
+
+• Innovation Design
+- Mexique 1970
+- Allemagne 1974
+- Argentine 1978
+- Espagne 1982
+
+• Evolution Graphique
+- Mexique 1986
+- Italie 1990
+- USA 1994
+- France 1998
+
+Ère Contemporaine
+
+1. XXIe Siècle
+- Corée/Japon 2002
+- Allemagne 2006
+- Afrique Sud 2010
+- Brésil 2014
+
+2. Dernières Éditions
+- Russie 2018
+- Qatar 2022
+- 2026 (à venir)
+- Evolution future
+
+Chaque logo raconte l'histoire de son époque et du pays hôte.`,
+    keywords: "logos Coupe du Monde, histoire logos FIFA, World Cup logos, évolution logos mondial"
+  },
+  {
+    id: 20,
+    title: "L'Impact Culturel des Logos de Football : Entre Tradition et Modernité",
+    excerpt: "Analyse de l'influence culturelle des logos de football dans la société moderne. Comment ces emblèmes transcendent le sport et deviennent des symboles culturels.",
+    date: "2024-01-05",
+    content: `L'influence profonde des logos de football sur la culture populaire et leur évolution sociétale.
+
+Impact Social
+
+1. Identité Collective
+- Appartenance
+- Fierté locale
+- Traditions
+- Communauté
+
+2. Culture Populaire
+- Mode
+- Art urbain
+- Digital
+- Médias
+
+Expression Culturelle
+
+• Art et Design
+- Influence artistique
+- Tendances design
+- Street art
+- Digital art
+
+• Mode et Lifestyle
+- Vêtements
+- Accessoires
+- Culture urbaine
+- Tendances
+
+Evolution Moderne
+
+1. Digital
+- Réseaux sociaux
+- Gaming
+- NFT
+- Métavers
+
+2. Marketing
+- Marques globales
+- Collaborations
+- Innovations
+- Futur
+
+Les logos de football

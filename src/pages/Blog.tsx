@@ -21,33 +21,29 @@ import {
 const Blog = () => {
   const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(blogPosts);
 
+  const metaTitle = "Blog Logo Foot : Guide Expert des Logos de Football 2024 | Analyse & Histoire";
+  const metaDescription = "Explorez notre blog spécialisé sur les logos de football : histoire, design, évolution et analyses détaillées. Plus de 15 articles experts sur les emblèmes du football mondial.";
+  const metaKeywords = "blog logo foot, logos football, emblèmes foot, histoire logos football, design foot, actualités logos foot, guide logos football 2024";
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>Blog Logo Foot : Actualités & Guides sur les Logos du Football | Guide Complet 2024</title>
-        <meta 
-          name="description" 
-          content="Découvrez notre blog spécialisé sur les logos de football : histoire des emblèmes, évolution des designs, guides de création et actualités. Analyses détaillées et expertise depuis 2024." 
-        />
-        <meta 
-          property="og:title" 
-          content="Blog Logo Foot : Actualités & Guides sur les Logos du Football | Guide Complet 2024" 
-        />
-        <meta 
-          property="og:description" 
-          content="Explorez l'univers fascinant des logos de football à travers nos articles experts : analyses, histoire, design et tendances. Le guide de référence pour tout savoir sur les emblèmes du football." 
-        />
-        <meta 
-          name="keywords" 
-          content="blog logo foot, articles football, logos clubs foot, design football, emblèmes foot, histoire logos football, guide logos foot, actualités logos foot"
-        />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="blog" />
         <meta property="og:url" content="https://logo-foot.com/blog" />
-        <link rel="canonical" href="https://logo-foot.com/blog" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog Logo Foot : Le Guide Complet des Logos du Football" />
-        <meta name="twitter:description" content="Plongez dans l'univers des logos de football : histoire, évolution, design et tendances des emblèmes qui font la richesse du football." />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords} />
+        <link rel="canonical" href="https://logo-foot.com/blog" />
+        <meta name="author" content="Logo Foot" />
+        <meta property="article:publisher" content="https://logo-foot.com" />
+        <meta property="og:site_name" content="Logo Foot" />
       </Helmet>
+      
       <BlogSchemaMarkup isBlogList />
       
       <main className="container mx-auto py-20 px-4">

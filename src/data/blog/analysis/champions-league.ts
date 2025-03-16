@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const championsLeagueAnalysis: BlogPost = {
@@ -6,6 +5,7 @@ export const championsLeagueAnalysis: BlogPost = {
   title: "Analyse des Logos en Ligue des Champions : Innovation et Tradition [2024]",
   excerpt: "Découvrez comment les clubs de la Ligue des Champions équilibrent tradition et modernité dans leurs identités visuelles. Focus sur les stratégies de marque en Europe.",
   date: "2024-03-05",
+  galleryImageId: 19,
   content: `Design et Branding en Ligue des Champions
 
 La plus prestigieuse compétition européenne présente un remarquable mélange de tradition et d'innovation dans ses identités visuelles.
@@ -68,4 +68,3 @@ Innovations UCL 2024
   keywords: "logos ligue des champions, design champions league, branding ucl, analyse logos europe, identité visuelle champions league",
   category: 'analysis'
 };
-

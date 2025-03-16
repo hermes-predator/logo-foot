@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -26,6 +27,7 @@ import { lillLogoPost } from './lille-logo';
 import { lyonLogoPost } from './lyon-logo';
 import { niceLogoPost } from './nice-logo';
 import { nantesLogoPost } from './nantes-logo';
+import { reimsLogoPost } from './reims-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -54,7 +56,8 @@ export const logoPosts: BlogPost[] = [
   lillLogoPost,
   lyonLogoPost,
   niceLogoPost,
-  nantesLogoPost
+  nantesLogoPost,
+  reimsLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

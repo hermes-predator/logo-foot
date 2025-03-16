@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <div className="space-y-0.5">
-      <div className="p-6 bg-gradient-to-br from-[#F6F6F7] to-[#E8E9EA] border border-gray-200/80 shadow-sm">
+      <div className="p-6 bg-gradient-to-br from-[#E8E9EA] to-[#DCDDE0] border border-gray-200/80 shadow-sm">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
@@ -180,3 +181,4 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
+

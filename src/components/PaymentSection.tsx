@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy } from 'lucide-react';
 import { Button } from './ui/button';
@@ -39,7 +40,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Haute qualité garantie",
+      text: "Gain de temps",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },
@@ -49,7 +50,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Gain de temps",
+      text: "Haute qualité garantie",
       className: "bg-green-50",
       iconColor: "text-green-600"
     }

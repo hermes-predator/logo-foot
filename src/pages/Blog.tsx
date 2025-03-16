@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { blogPosts } from '../data/blogPosts';
+import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { usePagination } from '../hooks/usePagination';

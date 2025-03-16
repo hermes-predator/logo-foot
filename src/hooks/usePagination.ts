@@ -1,14 +1,19 @@
 
 import { useState } from 'react';
-import { BlogPost } from '../data/blogPosts';
+import { BlogPost } from '../types/blog';
 
 export const ITEMS_PER_PAGE = 6;
 
-export const usePagination = (items: BlogPost[]) => {
+export const usePagination = (items: BlogPost[], category?: BlogPost['category']) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
+  
+  const filteredItems = category 
+    ? items.filter(item => item.category === category)
+    : items;
+    
+  const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
 
-  const paginatedItems = items.slice(
+  const paginatedItems = filteredItems.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -17,7 +22,7 @@ export const usePagination = (items: BlogPost[]) => {
     currentPage,
     setCurrentPage,
     totalPages,
-    paginatedItems
+    paginatedItems,
+    totalItems: filteredItems.length
   };
 };
-

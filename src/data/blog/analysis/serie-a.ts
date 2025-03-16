@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const serieAAnalysis: BlogPost = {
-  id: 14,
+  id: 7,
   title: "Analyse Marketing des Logos de Serie A : Stratégies de Marque 2024",
   excerpt: "Découvrez comment les clubs de Serie A modernisent leur identité visuelle et développent leur stratégie de marque pour conquérir le marché mondial.",
   date: "2024-02-15",

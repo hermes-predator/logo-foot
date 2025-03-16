@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -10,7 +9,7 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 
 const Blog = () => {
-  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts, 15);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
   const currentYear = new Date().getFullYear();
 
   console.log('Total blog posts:', blogPosts.length);

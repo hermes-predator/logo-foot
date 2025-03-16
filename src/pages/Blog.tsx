@@ -9,8 +9,23 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 
 const Blog = () => {
+  console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
+  console.log('BlogPosts details:', blogPosts.map(post => ({
+    id: post.id,
+    title: post.title,
+    category: post.category,
+    date: post.date
+  })));
+
   const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
   const currentYear = new Date().getFullYear();
+
+  console.log('Pagination details:', {
+    currentPage,
+    totalPages,
+    itemsPerPage: paginatedItems.length,
+    totalItems
+  });
 
   console.log('Total blog posts:', blogPosts.length);
   console.log('Current page items:', paginatedItems.length);

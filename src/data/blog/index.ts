@@ -1,58 +1,46 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
 import { historyPosts } from './history';
 import { analysisPosts } from './analysis';
 
-// Logs détaillés pour chaque catégorie avec comptage
-console.log('************ DEBUG LOGS CATEGORIES ************');
+// Detailed logging for article counts per category
+console.log('\n************ DETAILED BLOG POST ANALYSIS ************');
 console.log('Logo posts:', logoPosts.length, 'articles');
-console.log('Technical posts:', technicalPosts.length, 'articles');
-console.log('History posts:', historyPosts.length, 'articles');
-console.log('Analysis posts:', analysisPosts.length, 'articles');
+console.log('Logo posts IDs:', logoPosts.map(post => post.id).join(', '));
 
-// Vérification des doublons
+console.log('\nTechnical posts:', technicalPosts.length, 'articles');
+console.log('Technical posts IDs:', technicalPosts.map(post => post.id).join(', '));
+
+console.log('\nHistory posts:', historyPosts.length, 'articles');
+console.log('History posts IDs:', historyPosts.map(post => post.id).join(', '));
+
+console.log('\nAnalysis posts:', analysisPosts.length, 'articles');
+console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', '));
+
+// Check for duplicate IDs
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
-
-// Log spécifique pour l'article Juventus
-console.log('\nRecherche article Juventus:');
-allPosts.forEach(post => {
-  if (post.title.toLowerCase().includes('juventus')) {
-    console.log(`Trouvé: ID ${post.id} - "${post.title}" dans la catégorie "${post.category}"`);
-  }
-});
-
-// Log détaillé des IDs de chaque catégorie
-console.log('\nIDs par catégorie:');
-console.log('Logo posts IDs:', logoPosts.map(post => post.id).sort((a, b) => a - b));
-console.log('Technical posts IDs:', technicalPosts.map(post => post.id).sort((a, b) => a - b));
-console.log('History posts IDs:', historyPosts.map(post => post.id).sort((a, b) => a - b));
-console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).sort((a, b) => a - b));
-
-// Analyse des doublons avec plus de détails
-const idCount = allPosts.reduce((acc, post) => {
+const idCounts = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
 }, {} as Record<number, number>);
 
-console.log('\nArticles dupliqués :');
-Object.entries(idCount)
+console.log('\nDuplicate IDs found:');
+Object.entries(idCounts)
   .filter(([_, count]) => count > 1)
   .forEach(([id, count]) => {
     const duplicates = allPosts.filter(post => post.id === Number(id));
-    console.log(`\nID ${id} apparaît ${count} fois :`);
-    duplicates.forEach(post => {
-      console.log(`- "${post.title}" dans la catégorie "${post.category}" - Date: ${post.date}`);
-    });
+    console.log(`ID ${id} appears ${count} times in categories:`, 
+      duplicates.map(p => p.category).join(', '));
   });
 
-// Export des articles uniques et triés
+// Ensure unique IDs in final array
 export const blogPosts: BlogPost[] = Array.from(
   allPosts.reduce((map, post) => map.set(post.id, post), new Map()).values()
 )
 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Log final
-console.log('\n************ ARTICLES FINAUX ************');
-console.log('Nombre total d\'articles après déduplication:', blogPosts.length);
-console.log('******************************************');
+console.log('\nFinal unique posts count:', blogPosts.length);
+console.log('Final posts IDs:', blogPosts.map(post => post.id).sort((a, b) => a - b).join(', '));
+console.log('************************************************\n');

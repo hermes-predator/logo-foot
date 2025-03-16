@@ -1,10 +1,70 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, FileText, History, Library, Package2, TrendingUp } from 'lucide-react';
 import { format } from 'date-fns';
 import { blogPosts } from '../data/blogPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
+
+// Define categories and their icons
+const categories = {
+  technicalGuides: {
+    title: "Guides Techniques",
+    icon: FileText,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('guide') && 
+      (post.title.toLowerCase().includes('format') || post.title.toLowerCase().includes('technique')),
+  },
+  clubGuides: {
+    title: "Guides Clubs",
+    icon: BookOpen,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('guide') && 
+      post.title.toLowerCase().includes('club'),
+  },
+  historyArticles: {
+    title: "Histoire & Tradition",
+    icon: History,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('histoire') || 
+      post.title.toLowerCase().includes('emblème'),
+  },
+  collectionArticles: {
+    title: "Collections & Analyses",
+    icon: Library,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('collection') || 
+      post.title.toLowerCase().includes('top'),
+  },
+  productArticles: {
+    title: "Produits & Services",
+    icon: Package2,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('front-cloud') || 
+      post.title.toLowerCase().includes('football.zip'),
+  },
+  trendsArticles: {
+    title: "Tendances & Innovation",
+    icon: TrendingUp,
+    filter: (post: typeof blogPosts[0]) => 
+      post.title.toLowerCase().includes('tendance') || 
+      post.title.toLowerCase().includes('digital') ||
+      post.title.toLowerCase().includes('réseaux sociaux'),
+  },
+};
+
+// Group posts by category
+const groupedPosts = blogPosts.reduce((acc, post) => {
+  for (const [key, category] of Object.entries(categories)) {
+    if (category.filter(post)) {
+      if (!acc[key]) acc[key] = [];
+      acc[key].push(post);
+      return acc; // Post is assigned to first matching category
+    }
+  }
+  return acc;
+}, {} as Record<string, typeof blogPosts>);
 
 const Blog = () => {
   return (
@@ -63,48 +123,68 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post) => (
-            <article 
-              key={post.id}
-              className="group flex flex-col bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden"
-            >
-              <div className="p-6 flex-1">
-                <time className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white">
-                  {format(new Date(post.date), 'dd-MM-yyyy')}
-                </time>
-                <h2 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
-                  {post.title}
+
+        {Object.entries(categories).map(([key, category]) => {
+          const posts = groupedPosts[key] || [];
+          if (posts.length === 0) return null;
+
+          const Icon = category.icon;
+          
+          return (
+            <div key={key} className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="bg-purple-100 p-3 rounded-xl">
+                  <Icon className="w-6 h-6 text-purple-600" />
+                </div>
+                <h2 className="text-2xl font-semibold text-gray-800">
+                  {category.title}
                 </h2>
-                <p className="text-gray-600 line-clamp-3 mb-4">
-                  {post.excerpt}
-                </p>
               </div>
-              
-              <Link 
-                to={`/blog/${post.id}`} 
-                className="p-4 bg-gray-100/80 text-purple-600 font-medium inline-flex items-center justify-center gap-1 transition-colors w-full"
-              >
-                Lire l'article
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="h-4 w-4" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M9 5l7 7-7 7" 
-                  />
-                </svg>
-              </Link>
-            </article>
-          ))}
-        </div>
+
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {posts.map((post) => (
+                  <article 
+                    key={post.id}
+                    className="group flex flex-col bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden"
+                  >
+                    <div className="p-6 flex-1">
+                      <time className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white">
+                        {format(new Date(post.date), 'dd-MM-yyyy')}
+                      </time>
+                      <h3 className="text-xl font-semibold text-gray-800 mt-2 mb-3 group-hover:text-purple-600 transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-600 line-clamp-3 mb-4">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    
+                    <Link 
+                      to={`/blog/${post.id}`} 
+                      className="p-4 bg-gray-100/80 text-purple-600 font-medium inline-flex items-center justify-center gap-1 transition-colors w-full"
+                    >
+                      Lire l'article
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-4 w-4" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          strokeWidth={2} 
+                          d="M9 5l7 7-7 7" 
+                        />
+                      </svg>
+                    </Link>
+                  </article>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

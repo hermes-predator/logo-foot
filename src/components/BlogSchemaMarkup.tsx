@@ -1,8 +1,8 @@
 
-import { BlogPost } from "@/data/blogPosts";
+import { blogPosts } from "@/data/blogPosts";
 
 interface BlogSchemaMarkupProps {
-  post?: BlogPost;
+  post?: typeof blogPosts[0];
   isBlogList?: boolean;
 }
 

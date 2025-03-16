@@ -1230,5 +1230,120 @@ Applications
 
 Un logo professionnel est accessible même pour les petits clubs.`,
     keywords: "logo club amateur, création logo football, design petit club, emblème club local, logo foot amateur"
-  }
-];
+  },
+  {
+    id: 16,
+    title: "Comment choisir entre Écusson, Badge ou Logo pour son club de foot ?",
+    excerpt: "Guide comparatif détaillé entre écusson, badge et logo pour votre club de football. Découvrez les différences, avantages et utilisations spécifiques de chaque format.",
+    date: "2024-02-28",
+    content: `Comprendre les différences entre écusson, badge et logo pour faire le meilleur choix pour votre club.
+
+Définitions Claires
+
+1. L'Écusson
+- Origine héraldique
+- Style traditionnel
+- Symbolisme fort
+- Gravité historique
+
+2. Le Badge
+- Approche moderne
+- Design contemporain
+- Flexibilité visuelle
+- Impact immédiat
+
+3. Le Logo
+- Version polyvalente
+- Adaptabilité maximale
+- Usage multiplateforme
+- Déclinaisons faciles
+
+Critères de Choix
+
+• Image du Club
+- Histoire et tradition
+- Positionnement actuel
+- Public cible
+- Ambitions futures
+
+• Aspects Pratiques
+- Utilisations prévues
+- Supports variés
+- Budget disponible
+- Maintenance future
+
+Recommandations
+
+1. Clubs Historiques
+- Privilégier l'écusson
+- Conservation tradition
+- Respect histoire
+- Evolution subtile
+
+2. Nouveaux Clubs
+- Opter logo moderne
+- Design contemporain
+- Flexibilité maximale
+- Future-proof
+
+Guide de Décision
+
+• Analyse Besoins
+- Identité club
+- Usage principal
+- Public visé
+- Budget prévu
+
+• Conseils Pratiques
+- Test différents formats
+- Avis supporters
+- Consultation experts
+- Projection future
+
+Chaque option a ses avantages, le choix dépend de votre contexte spécifique.`,
+    keywords: "écusson foot, badge football, logo foot, différence écusson badge, logo club football, choix logo foot"
+  },
+  {
+    id: 17,
+    title: "Formats et Tailles : Guide Technique des Logos de Football",
+    excerpt: "Guide technique complet sur les formats et tailles de fichiers pour les logos de football. De PNG à SVG, découvrez comment optimiser vos logos pour chaque utilisation.",
+    date: "2024-02-27",
+    content: `Guide technique détaillé sur les formats et tailles optimales pour vos logos de football.
+
+Formats Essentiels
+
+1. Fichiers Bitmap
+- PNG transparent
+- JPEG haute qualité
+- TIFF professionnel
+- WebP optimisé
+
+2. Fichiers Vectoriels
+- SVG responsive
+- AI source
+- EPS pro
+- PDF vectoriel
+
+Tailles Recommandées
+
+• Usage Digital
+- Web : 72-150 dpi
+- Mobile : 144-300 dpi
+- Réseaux sociaux
+- Email signature
+
+• Usage Print
+- Petit format
+- Grand format
+- Textile
+- Signalétique
+
+Optimisation Fichiers
+
+1. Digital
+- Compression smart
+- Taille adaptée
+- Performance web
+- Qualité visuelle
+
+2

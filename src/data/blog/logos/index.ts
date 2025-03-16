@@ -6,6 +6,7 @@ import { nationalTeamsPost } from './national-teams';
 import { worldCupLogos } from './world-cup';
 import { serieAPost } from './italian-serie-a';
 import { portugueseLogosPost } from './portuguese-clubs';
+import { frenchClubsPost } from './french-clubs';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -13,5 +14,6 @@ export const logoPosts: BlogPost[] = [
   nationalTeamsPost,
   worldCupLogos,
   serieAPost,
-  portugueseLogosPost
+  portugueseLogosPost,
+  frenchClubsPost
 ];

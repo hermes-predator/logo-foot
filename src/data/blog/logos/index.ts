@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -20,6 +19,7 @@ import { serieALogoPost } from './serie-a-logo';
 import { psgLogoPost } from './psg-logo';
 import { omLogoPost } from './om-logo';
 import { mlsLogoPost } from './mls-logos';
+import { lensLogoPost } from './lens-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -41,7 +41,8 @@ export const logoPosts: BlogPost[] = [
   serieALogoPost,
   psgLogoPost,
   omLogoPost,
-  mlsLogoPost
+  mlsLogoPost,
+  lensLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

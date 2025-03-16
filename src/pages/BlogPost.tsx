@@ -106,7 +106,7 @@ const BlogPost = () => {
             
             {post.category === 'logos' && post.galleryImageId && (
               <BlogImage
-                src={`/public/images/logo${post.galleryImageId}.png`}
+                src={`/blog-images/${post.id}.png`}
                 alt={`Logo ${post.title.split(':')[0]}`}
                 className="mb-8"
               />

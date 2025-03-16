@@ -5,16 +5,17 @@ import { technicalPosts } from './technical';
 import { historyPosts } from './history';
 import { analysisPosts } from './analysis';
 
-console.log('Logo posts:', logoPosts.length);
-console.log('Technical posts:', technicalPosts.length);
-console.log('History posts:', historyPosts.length);
-console.log('Analysis posts:', analysisPosts.length);
+// Logs pour debug
+console.log('Logo posts:', logoPosts.length);          // devrait être 12
+console.log('Technical posts:', technicalPosts.length); // devrait être 4
+console.log('History posts:', historyPosts.length);    // devrait être 2
+console.log('Analysis posts:', analysisPosts.length);  // devrait être 6
 
 export const blogPosts: BlogPost[] = [
-  ...logoPosts,           // 7 articles
-  ...technicalPosts,      // 1 article
-  ...historyPosts,        // 2 articles
-  ...analysisPosts        // 5 articles
+  ...logoPosts,           
+  ...technicalPosts,      
+  ...historyPosts,        
+  ...analysisPosts        
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 // Vérification des IDs uniques
@@ -30,4 +31,3 @@ const duplicateIds = blogPosts.filter(post => {
 
 console.log('Total unique posts:', blogPosts.length);
 console.log('Duplicate IDs:', duplicateIds.length);
-

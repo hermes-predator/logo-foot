@@ -29,6 +29,7 @@ import { niceLogoPost } from './nice-logo';
 import { nantesLogoPost } from './nantes-logo';
 import { reimsLogoPost } from './reims-logo';
 import { brestLogoPost } from './brest-logo';
+import { realMadridLogoPost } from './real-madrid-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -59,7 +60,8 @@ export const logoPosts: BlogPost[] = [
   niceLogoPost,
   nantesLogoPost,
   reimsLogoPost,
-  brestLogoPost
+  brestLogoPost,
+  realMadridLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

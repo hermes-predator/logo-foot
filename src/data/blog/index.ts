@@ -15,38 +15,27 @@ console.log('Analysis posts:', analysisPosts.length, 'articles');
 // Vérification des doublons
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
 
-// Log détaillé de tous les articles avant déduplication
-console.log('\nListe complète des articles avant déduplication:');
-allPosts.forEach(post => {
-  console.log(`ID: ${post.id} - Title: ${post.title} - Category: ${post.category}`);
-});
+// Log détaillé des IDs de chaque catégorie
+console.log('\nIDs par catégorie:');
+console.log('Logo posts IDs:', logoPosts.map(post => post.id).sort((a, b) => a - b));
+console.log('Technical posts IDs:', technicalPosts.map(post => post.id).sort((a, b) => a - b));
+console.log('History posts IDs:', historyPosts.map(post => post.id).sort((a, b) => a - b));
+console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).sort((a, b) => a - b));
 
-const uniqueIds = new Set(allPosts.map(post => post.id));
-
-console.log('\nDétails pagination:');
-console.log('- Total articles (avec potentiels doublons):', allPosts.length);
-console.log('- Nombre d\'IDs uniques:', uniqueIds.size);
-console.log('- Nombre de doublons:', allPosts.length - uniqueIds.size);
-
-// Analyse détaillée des doublons
-const duplicatesAnalysis = allPosts.reduce((acc, post) => {
-  if (!acc[post.id]) {
-    acc[post.id] = [];
-  }
-  acc[post.id].push({
-    title: post.title,
-    category: post.category
-  });
+// Analyse des doublons
+const idCount = allPosts.reduce((acc, post) => {
+  acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
-}, {} as Record<number, Array<{title: string, category: string}>>);
+}, {} as Record<number, number>);
 
-console.log('\nAnalyse détaillée des doublons:');
-Object.entries(duplicatesAnalysis)
-  .filter(([_, occurrences]) => occurrences.length > 1)
-  .forEach(([id, occurrences]) => {
-    console.log(`\nID ${id} apparaît ${occurrences.length} fois:`);
-    occurrences.forEach((occurrence, index) => {
-      console.log(`  ${index + 1}. "${occurrence.title}" dans la catégorie "${occurrence.category}"`);
+console.log('\nArticles dupliqués :');
+Object.entries(idCount)
+  .filter(([_, count]) => count > 1)
+  .forEach(([id, count]) => {
+    const duplicates = allPosts.filter(post => post.id === Number(id));
+    console.log(`\nID ${id} apparaît ${count} fois :`);
+    duplicates.forEach(post => {
+      console.log(`- "${post.title}" dans la catégorie "${post.category}"`);
     });
   });
 

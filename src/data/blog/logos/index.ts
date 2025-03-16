@@ -34,6 +34,7 @@ import { liverpoolLogoPost } from './liverpool-logo';
 import { manchesterCityLogoPost } from './manchester-city-logo';
 import { bayernMunichLogoPost } from './bayern-munich-logo';
 import { dortmundLogoPost } from './dortmund-logo';
+import { juventusLogoPost } from './juventus-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -70,7 +71,8 @@ export const logoPosts: BlogPost[] = [
   liverpoolLogoPost,
   manchesterCityLogoPost,
   bayernMunichLogoPost,
-  dortmundLogoPost
+  dortmundLogoPost,
+  juventusLogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

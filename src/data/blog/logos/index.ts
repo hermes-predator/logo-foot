@@ -9,6 +9,9 @@ import { portugueseLogosPost } from './portuguese-clubs';
 import { frenchClubsPost } from './french-clubs';
 import { southAmericanClubsPost } from './south-american-clubs';
 import { africanClubsPost } from './african-clubs';
+import { germanClubsPost } from './german-clubs';
+import { brazilianClubsPost } from './brazilian-clubs';
+import { belgianClubsPost } from './belgian-clubs';
 
 export const logoPosts: BlogPost[] = [
   frenchClubsPost,
@@ -19,5 +22,8 @@ export const logoPosts: BlogPost[] = [
   serieAPost,
   portugueseLogosPost,
   southAmericanClubsPost,
-  africanClubsPost
+  africanClubsPost,
+  germanClubsPost,
+  brazilianClubsPost,
+  belgianClubsPost
 ];

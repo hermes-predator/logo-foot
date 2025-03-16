@@ -16,6 +16,7 @@ import { asianClubsPost } from './asian-clubs';
 import { ligue1LogoPost } from './ligue1-logo';
 import { premierLeagueLogoPost } from './premier-league-design';
 import { bundesligaLogoPost } from './bundesliga-brand';
+import { serieALogoPost } from './serie-a-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -33,7 +34,8 @@ export const logoPosts: BlogPost[] = [
   asianClubsPost,
   ligue1LogoPost,
   premierLeagueLogoPost,
-  bundesligaLogoPost
+  bundesligaLogoPost,
+  serieALogoPost
 ];
 
 // Ajout de logs détaillés pour vérifier que tous les articles sont bien chargés

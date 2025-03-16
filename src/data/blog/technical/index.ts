@@ -1,17 +1,18 @@
 
 import { BlogPost } from '../../../types/blog';
-import { designPrinciplesPost } from './design-principles';
-import { integrationGuidePost } from './integration-guide';
-import { minimalDesignPost } from './minimal-design';
-import { motionDesignPost } from './motion-design';
-import { typographyGuidePost } from './typography-guide';
+import { designPrinciples } from './design-principles';
+import { integrationGuide } from './integration-guide';
+import { minimalDesignGuide } from './minimal-design';
+import { motionDesignGuide } from './motion-design';
+import { typographyGuide } from './typography-guide';
 import { soccerGuidePost } from './soccer-guide';
 
 export const technicalPosts: BlogPost[] = [
-  designPrinciplesPost,
-  integrationGuidePost,
-  minimalDesignPost,
-  motionDesignPost,
-  typographyGuidePost,
+  designPrinciples,
+  integrationGuide,
+  minimalDesignGuide,
+  motionDesignGuide,
+  typographyGuide,
   soccerGuidePost
 ];
+

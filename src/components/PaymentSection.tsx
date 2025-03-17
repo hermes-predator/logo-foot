@@ -123,7 +123,7 @@ const PaymentSection = () => {
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div>
-                <span className="text-3xl md:text-4xl font-bold text-black">20,00€</span>
+                <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">
@@ -157,10 +157,10 @@ const PaymentSection = () => {
               onClick={handlePayment}
               disabled={isProcessing}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
-              aria-label="Payer 20,00€ avec paiement sécurisé"
+              aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Payer 20,00€"}
+              {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
           </div>
         </div>

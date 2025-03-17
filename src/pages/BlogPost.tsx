@@ -98,11 +98,19 @@ const BlogPost = () => {
       <p className="text-gray-600 leading-relaxed mb-6">{children}</p>
     ),
     // Add styling to headings if needed
+    h1: ({children}: {children: React.ReactNode}) => (
+      <h1 className="text-3xl font-bold text-gray-800 mt-10 mb-6">{children}</h1>
+    ),
     h2: ({children}: {children: React.ReactNode}) => (
       <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{children}</h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
       <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">{children}</h3>
+    ),
+    a: ({href, children}: {href: string; children: React.ReactNode}) => (
+      <Link to={href} className="text-purple-600 hover:text-purple-800 underline">
+        {children}
+      </Link>
     )
   };
 

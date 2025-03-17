@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -90,6 +91,21 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
+  // Define component customizations for ReactMarkdown
+  const markdownComponents = {
+    // Add styling to paragraphs
+    p: ({children}: {children: React.ReactNode}) => (
+      <p className="text-gray-600 leading-relaxed mb-6">{children}</p>
+    ),
+    // Add styling to headings if needed
+    h2: ({children}: {children: React.ReactNode}) => (
+      <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{children}</h2>
+    ),
+    h3: ({children}: {children: React.ReactNode}) => (
+      <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">{children}</h3>
+    )
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
@@ -157,7 +173,7 @@ const BlogPost = () => {
             )}
             
             <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
-              <ReactMarkdown className="text-gray-600 leading-relaxed">
+              <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>
             </div>

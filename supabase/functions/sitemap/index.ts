@@ -29,6 +29,8 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('équipe de france') ||
       post.title.toLowerCase().includes('champions league') ||
       post.title.toLowerCase().includes('ligue des champions') ||
+      post.title.toLowerCase().includes('europa league') ||
+      post.title.toLowerCase().includes('ligue europa') ||
       post.title.toLowerCase().includes('coupe du monde')
     );
     

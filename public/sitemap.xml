@@ -4,13 +4,13 @@
   <!-- Pages statiques -->
   <url>
     <loc>https://logo-foot.com/</loc>
-    <lastmod>2024-05-15</lastmod>
+    <lastmod>2024-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://logo-foot.com/blog</loc>
-    <lastmod>2024-05-15</lastmod>
+    <lastmod>2024-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -18,7 +18,7 @@
   <!-- Pages de catégories -->
   <url>
     <loc>https://logo-foot.com/blog/category/logos</loc>
-    <lastmod>2024-05-15</lastmod>
+    <lastmod>2024-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,6 +50,12 @@
   </url>
   
   <!-- Articles récents -->
+  <url>
+    <loc>https://logo-foot.com/blog/71</loc>
+    <lastmod>2024-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://logo-foot.com/blog/70</loc>
     <lastmod>2024-05-15</lastmod>

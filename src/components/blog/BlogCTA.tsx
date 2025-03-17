@@ -10,7 +10,7 @@ const BlogCTA = () => {
     <section className="w-full py-12">
       <div className="max-w-4xl mx-auto px-4 relative">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Tous les logos de foot en un seul téléchargement ?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Prêt à recevoir tous les logos de foot ?</h2>
           <p className="text-gray-500 max-w-2xl">Plus de 8 600 logos de football prêts à l'emploi, organisés par pays. Retrouvez également les logos des compétitions, les logos des bookmakers réunie dans un seul fichier arborescent.</p>
         </div>
         

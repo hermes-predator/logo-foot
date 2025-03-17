@@ -79,9 +79,8 @@ const BlogCTA = () => {
                 </div>
               </div>
               <div className="relative overflow-hidden md:w-1/3">
-                {/* Remplacer le div avec background-image par une balise img pour s'assurer que l'image s'affiche */}
                 <img 
-                  src="/lovable-uploads/a6bda7df-8f91-4102-a645-a9e7d735ffca.png"
+                  src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png"
                   alt="Exemple de logos de football" 
                   className="h-full w-full object-cover object-center min-h-[300px] transform hover:scale-105 transition-transform duration-500 cursor-pointer"
                 />

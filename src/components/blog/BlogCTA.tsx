@@ -11,7 +11,7 @@ const BlogCTA = () => {
       <div className="container max-w-4xl mx-auto px-4 relative">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-3">Prêt à recevoir tous les logos de foot ?</h2>
-          <p className="text-gray-500 text-base max-w-xl">Plus de 8 600 logos de football prêts à l'emploi réunie dans un seul fichier arborescent.</p>
+          <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">Plus de 8 600 logos de football prêts à l'emploi réunie dans un seul fichier arborescent.</p>
         </div>
         
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_70%)]"></div>
@@ -95,4 +95,3 @@ const BlogCTA = () => {
 };
 
 export default BlogCTA;
-

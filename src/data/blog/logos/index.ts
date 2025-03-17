@@ -54,6 +54,7 @@ import { metzLogoPost } from './metz-logo';
 import { winamaxLogoPost } from './winamax-logo';
 import { parisFCLogoPost } from './paris-fc-logo';
 import { westHamLogoPost } from './west-ham-logo';
+import { evertonLogoPost } from './everton-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -109,7 +110,8 @@ export const logoPosts: BlogPost[] = [
   metzLogoPost,
   winamaxLogoPost,
   parisFCLogoPost,
-  westHamLogoPost
+  westHamLogoPost,
+  evertonLogoPost
 ];
 
 // Logs détaillés pour le débogage

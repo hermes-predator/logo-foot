@@ -54,26 +54,26 @@ const BlogCTA = () => {
                   </li>
                 </ul>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <Button 
                     asChild 
-                    size="lg"
-                    className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-md hover:shadow-lg transition-all duration-300 w-full sm:w-auto"
+                    size="sm"
+                    className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto py-1.5 h-9"
                   >
                     <Link to="/">
-                      <Download className="h-4 w-4 mr-2" />
+                      <Download className="h-4 w-4 mr-1.5" />
                       Découvrir l'offre
                     </Link>
                   </Button>
                   <Button 
                     variant="outline" 
                     asChild 
-                    size="lg"
-                    className="border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 w-full sm:w-auto"
+                    size="sm"
+                    className="border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 w-full sm:w-auto py-1.5 h-9"
                   >
                     <Link to="/" className="gap-1">
                       En savoir plus
-                      <ArrowRight className="h-4 w-4 ml-2" />
+                      <ArrowRight className="h-4 w-4 ml-1.5" />
                     </Link>
                   </Button>
                 </div>

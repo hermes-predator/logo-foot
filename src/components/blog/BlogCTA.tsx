@@ -9,8 +9,8 @@ const BlogCTA = () => {
   return (
     <section className="w-full py-8">
       <div className="container max-w-4xl mx-auto px-4 relative">
-        <div className="flex flex-col items-center justify-center mb-6 text-center">
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">Prêt à recevoir tous les logos de foot ?</h2>
+        <div className="flex flex-col items-center justify-center mb-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-3">Prêt à recevoir tous les logos de foot ?</h2>
           <p className="text-gray-500 text-sm max-w-xl">Plus de 8 600 logos de football prêts à l'emploi réunie dans un seul fichier arborescent.</p>
         </div>
         
@@ -18,22 +18,22 @@ const BlogCTA = () => {
         <Card className="overflow-hidden border-gray-100 bg-white shadow-md hover:shadow-lg transition-all duration-300">
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">
-              <div className="p-4 md:p-6 md:w-2/3">
-                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-gray-100 text-gray-700 mb-3">
+              <div className="p-5 md:p-7 md:w-2/3">
+                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-gray-100 text-gray-700 mb-4">
                   <Star className="h-3 w-3 text-amber-500 fill-amber-400" />
                   <span className="text-xs font-medium">Collection Premium</span>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   <span className="font-mono">⦗FRONT-CLOUD⦘</span>~ Football.zip
                 </h3>
                 
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-gray-600 text-sm mb-5">
                   Découvrez notre pack exclusif de plus de <span className="font-semibold text-blue-700">8 600 logos</span> de football en haute qualité, 
                   parfaitement organisés. Une mine d'or pour vos projets qui vous apportera beaucoup de confiance.
                 </p>
                 
-                <ul className="space-y-2 mb-4 text-sm">
+                <ul className="space-y-3 mb-5 text-sm">
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
                       <ShieldCheck className="h-3 w-3" />

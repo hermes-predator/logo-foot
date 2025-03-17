@@ -76,14 +76,16 @@ const Blog = () => {
         <div className="mt-12">
           <BlogArticleList articles={paginatedItems} />
           {totalPages > 1 && (
-            <BlogPagination 
-              currentPage={currentPage}
-              totalPages={totalPages}
-              setCurrentPage={setCurrentPage}
-            />
+            <div className="px-4">
+              <BlogPagination 
+                currentPage={currentPage}
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
+              />
+            </div>
           )}
         </div>
-        <div className="mt-20">
+        <div className="mt-20 px-4">
           <BlogCTA />
         </div>
       </main>

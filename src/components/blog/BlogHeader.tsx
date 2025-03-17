@@ -4,7 +4,7 @@ import { BookOpen } from 'lucide-react';
 
 const BlogHeader = () => {
   return (
-    <div className="max-w-4xl mb-16">
+    <div className="max-w-4xl mb-16 pl-4">
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium mb-6">
         <span>Le Blog des Logos de Football</span>
       </div>

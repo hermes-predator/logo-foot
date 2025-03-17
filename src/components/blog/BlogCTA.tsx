@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, ShieldCheck, Zap, HelpCircle } from 'lucide-react';
+import { Download, ArrowRight, Star, ShieldCheck, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -9,9 +9,8 @@ const BlogCTA = () => {
   return (
     <section className="w-full py-12">
       <div className="max-w-4xl mx-auto px-4 relative">
-        <div className="flex items-center justify-center gap-2 mb-6">
-          <HelpCircle className="h-5 w-5 text-blue-500" />
-          <h2 className="text-xl font-medium text-gray-800">Vous voulez recevoir tous les logos en un coup ?</h2>
+        <div className="flex items-center justify-center mb-6">
+          <h2 className="text-2xl font-medium text-gray-800">Vous voulez recevoir tous les logos en un coup ?</h2>
         </div>
         
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_70%)]"></div>

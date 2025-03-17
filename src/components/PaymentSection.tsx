@@ -20,7 +20,8 @@ const PaymentSection = () => {
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
     const returnUrl = `${window.location.origin}/payment-success`;
-    window.location.href = `https://pay.sumup.com/b2c/QRHFXMWI?return_url=${encodeURIComponent(returnUrl)}`;
+    // Updated SumUp link
+    window.location.href = `https://pay.sumup.com/b2c/XLH8TGBJ?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   const features = [

@@ -21,7 +21,7 @@ const PaymentSection = () => {
     });
     const returnUrl = `${window.location.origin}/payment-success`;
     // Updated SumUp link
-    window.location.href = `https://pay.sumup.com/b2c/XLH8TGBJ?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   const features = [

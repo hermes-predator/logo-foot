@@ -10,6 +10,7 @@ import { useReadingTime } from '../hooks/useReadingTime';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import BlogCTA from '../components/blog/BlogCTA';
+import ReactMarkdown from 'react-markdown';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -156,11 +157,9 @@ const BlogPost = () => {
             )}
             
             <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
-              {post.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="mb-6 text-gray-600 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
+              <ReactMarkdown className="text-gray-600 leading-relaxed">
+                {post.content}
+              </ReactMarkdown>
             </div>
           </article>
           

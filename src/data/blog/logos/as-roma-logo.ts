@@ -7,7 +7,7 @@ export const asRomaLogoPost: BlogPost = {
   excerpt: "Découvrez l'histoire fascinante du logo de l'AS Roma : origines, évolution et symbolisme de l'écusson emblématique du club de la capitale italienne.",
   date: "2024-04-22",
   galleryImageId: 64,
-  content: `# Histoire et Évolution du Logo AS Roma
+  content: `Histoire et Évolution du Logo AS Roma
 
 L'emblème de l'AS Roma est l'un des plus reconnaissables et symboliques du football italien. Son évolution à travers le temps reflète l'histoire riche et la tradition profonde du club de la capitale italienne.
 

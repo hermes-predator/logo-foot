@@ -10,7 +10,7 @@ const BlogCTA = () => {
     <section className="w-full py-12">
       <div className="max-w-4xl mx-auto px-4 relative">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Vous voulez recevoir tous les logos en un coup ?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Voulez-vous recevoir tous les logos de foot en un coup ?</h2>
           <p className="text-gray-500 max-w-2xl">Plus de 8 600 logos de football prêts à l'emploi, organisés par pays et compétitions</p>
         </div>
         
@@ -20,7 +20,7 @@ const BlogCTA = () => {
             <div className="flex flex-col md:flex-row">
               <div className="p-6 md:p-8 md:w-2/3">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 mb-4 hover:bg-gray-200 transition-colors">
-                  <Star className="h-4 w-4 text-gray-600 fill-gray-400" />
+                  <Star className="h-4 w-4 text-amber-500 fill-amber-400" />
                   <span className="text-sm font-medium">Collection Premium</span>
                 </div>
                 

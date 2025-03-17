@@ -19,7 +19,7 @@ const BlogCTA = () => {
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">
               <div className="p-6 md:p-8 md:w-2/3">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 mb-4 hover:bg-gray-200 transition-colors">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 mb-4">
                   <Star className="h-4 w-4 text-amber-500 fill-amber-400" />
                   <span className="text-sm font-medium">Collection Premium</span>
                 </div>
@@ -34,23 +34,23 @@ const BlogCTA = () => {
                 </p>
                 
                 <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-3 text-gray-700 group cursor-pointer">
-                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-200 transition-colors">
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
                       <ShieldCheck className="h-4 w-4" />
                     </div>
-                    <span className="font-medium group-hover:text-blue-700 transition-colors">Logos PNG avec fond transparent</span>
+                    <span className="font-medium">Logos PNG avec fond transparent</span>
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 group cursor-pointer">
-                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-200 transition-colors">
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
                       <ShieldCheck className="h-4 w-4" />
                     </div>
-                    <span className="font-medium group-hover:text-blue-700 transition-colors">8 600+ ressources de haute qualité</span>
+                    <span className="font-medium">8 600+ ressources de haute qualité</span>
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 group cursor-pointer">
-                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-200 transition-colors">
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
                       <Zap className="h-4 w-4" />
                     </div>
-                    <span className="font-medium group-hover:text-blue-700 transition-colors">Accès immédiat après achat</span>
+                    <span className="font-medium">Accès immédiat après achat</span>
                   </li>
                 </ul>
                 

@@ -12,6 +12,28 @@ Deno.serve(async (req) => {
     console.log("Generating sitemap...");
     console.log(`Found ${blogPosts.length} total blog posts to include in sitemap`);
     
+    // Loguer les articles récemment ajoutés
+    const recentPosts = blogPosts
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 5);
+    
+    console.log("Recent posts being added to sitemap:");
+    recentPosts.forEach(post => {
+      console.log(`- ID ${post.id}: ${post.title} (${post.date})`);
+    });
+    
+    // Loguer les articles nationaux qui seront mis en avant
+    const nationalPosts = blogPosts.filter(post => 
+      post.subCategory === 'national-logos' || 
+      post.title.toLowerCase().includes('équipe nationale') ||
+      post.title.toLowerCase().includes('équipe de france')
+    );
+    
+    console.log(`Found ${nationalPosts.length} national team posts with higher priority:`);
+    nationalPosts.forEach(post => {
+      console.log(`- ID ${post.id}: ${post.title}`);
+    });
+    
     const sitemap = generateSitemap();
     const urlCount = sitemap.split('<url>').length - 1;
     

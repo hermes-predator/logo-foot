@@ -23,6 +23,9 @@ Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
+Allow: /blog-images/
+Allow: /gallery/
+Allow: /lovable-uploads/
 Crawl-delay: 1
 
 # Directives pour Bing
@@ -30,7 +33,7 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Directives pour spécifiques pour les images
+# Directives spécifiques pour les images
 User-agent: Googlebot-Image
 Allow: /blog-images/
 Allow: /gallery/
@@ -44,3 +47,12 @@ Crawl-delay: 1
 User-agent: Twitterbot
 Allow: /
 Crawl-delay: 1
+
+# Directives pour les pages importantes
+User-agent: *
+Allow: /blog/69 # Article Équipe de France
+Allow: /blog/68 # Article Ajax Amsterdam
+Allow: /blog/3  # Article Équipes Nationales
+
+# Hreflang tags info
+# hreflang: fr-fr - https://logo-foot.com/ - French (France) content

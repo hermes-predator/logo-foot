@@ -18,6 +18,20 @@ export const generateSitemap = () => {
     changefreq: 'monthly'
   }));
 
+  // Articles nationaux à mettre en avant avec priorité plus élevée
+  const featuredArticles = blogPosts
+    .filter(post => 
+      post.subCategory === 'national-logos' || 
+      post.title.toLowerCase().includes('équipe nationale') ||
+      post.title.toLowerCase().includes('équipe de france')
+    )
+    .map(post => ({
+      url: `/blog/${post.id}`,
+      priority: '0.8',
+      lastmod: post.date,
+      changefreq: 'weekly'
+    }));
+
   // Ajouter les pages de catégories
   const categoryPages = [
     { url: '/blog/category/logos', priority: '0.8', lastmod: today, changefreq: 'weekly' },
@@ -37,7 +51,28 @@ export const generateSitemap = () => {
     { url: '/gallery/country/netherlands', priority: '0.6', lastmod: today, changefreq: 'monthly' },
   ];
 
-  const allUrls = [...staticPages, ...categoryPages, ...countryPages, ...blogUrls];
+  // Créer une Map pour éviter les doublons d'URLs
+  const urlMap = new Map();
+  
+  // Ajouter tous les URLs dans la Map, en privilégiant les articles mis en avant
+  [...staticPages, ...categoryPages, ...countryPages].forEach(page => {
+    urlMap.set(page.url, page);
+  });
+  
+  // Ajouter les articles mis en avant (ils peuvent remplacer les versions standards)
+  featuredArticles.forEach(page => {
+    urlMap.set(page.url, page);
+  });
+  
+  // Ajouter les articles standards uniquement s'ils n'ont pas été remplacés par des featured
+  blogUrls.forEach(page => {
+    if (!urlMap.has(page.url)) {
+      urlMap.set(page.url, page);
+    }
+  });
+
+  // Convertir la Map en tableau
+  const allUrls = Array.from(urlMap.values());
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

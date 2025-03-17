@@ -51,12 +51,36 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Ensure unique IDs in final array
-export const blogPosts: BlogPost[] = Array.from(
-  allPosts.reduce((map, post) => map.set(post.id, post), new Map()).values()
-)
-.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+// Au lieu d'utiliser une Map qui écrase les doublons, conservons tous les articles 
+// mais assurons-nous que les IDs sont uniques en ajoutant un suffixe aux doublons
+const uniquePosts: BlogPost[] = [];
+const seenIds = new Set<number>();
 
+allPosts.forEach(post => {
+  if (!seenIds.has(post.id)) {
+    // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
+    uniquePosts.push(post);
+    seenIds.add(post.id);
+  } else {
+    // Si l'ID est un doublon, créez une copie avec un ID modifié
+    // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
+    const maxId = Math.max(...seenIds.values(), ...allPosts.map(p => p.id));
+    const newId = maxId + 1;
+    
+    // Créons une copie de l'article avec le nouvel ID
+    const newPost = { ...post, id: newId };
+    uniquePosts.push(newPost);
+    seenIds.add(newId);
+    
+    console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newId}`);
+  }
+});
+
+// Trier par date décroissante comme avant
+export const blogPosts: BlogPost[] = uniquePosts
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+// Vérifier que les articles problématiques sont bien présents
 console.log('\nFinal unique posts count:', blogPosts.length);
 console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
   blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),

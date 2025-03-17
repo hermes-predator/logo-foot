@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, ShieldCheck, Zap, Folder } from 'lucide-react';
+import { Download, ArrowRight, Star, ShieldCheck, Zap, Folder, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -35,14 +35,14 @@ const BlogCTA = () => {
                 
                 <ul className="space-y-3 mb-5 text-sm">
                   <li className="flex items-center gap-2 text-gray-700">
-                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
-                      <ShieldCheck className="h-3 w-3" />
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Logos PNG avec fond transparent</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
-                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
-                      <ShieldCheck className="h-3 w-3" />
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">8 600+ ressources de haute qualité</span>
                   </li>

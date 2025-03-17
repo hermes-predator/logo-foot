@@ -4,6 +4,8 @@ User-agent: *
 Allow: /
 Allow: /blog/
 Allow: /blog/category/
+Allow: /gallery/
+Allow: /gallery/country/
 Disallow: /private/
 Disallow: /admin/
 Disallow: /api/
@@ -25,5 +27,20 @@ Crawl-delay: 1
 
 # Directives pour Bing
 User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Directives pour spécifiques pour les images
+User-agent: Googlebot-Image
+Allow: /blog-images/
+Allow: /gallery/
+Allow: /lovable-uploads/
+
+# Directives pour les réseaux sociaux
+User-agent: Facebookexternalhit
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
 Allow: /
 Crawl-delay: 1

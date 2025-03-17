@@ -1,6 +1,7 @@
 
 import { generateSitemap } from '../../../src/utils/sitemapGenerator';
 import { corsHeaders } from '../_shared/cors';
+import { blogPosts } from '../../../src/data/blog';
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -9,8 +10,13 @@ Deno.serve(async (req) => {
 
   try {
     console.log("Generating sitemap...");
+    console.log(`Found ${blogPosts.length} total blog posts to include in sitemap`);
+    
     const sitemap = generateSitemap();
-    console.log(`Sitemap generated successfully with ${sitemap.split('<url>').length - 1} URLs`);
+    const urlCount = sitemap.split('<url>').length - 1;
+    
+    console.log(`Sitemap generated successfully with ${urlCount} URLs`);
+    console.log(`Latest blog post included: ID ${blogPosts[0].id} - ${blogPosts[0].title}`);
     
     return new Response(sitemap, {
       headers: {

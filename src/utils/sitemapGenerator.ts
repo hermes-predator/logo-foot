@@ -26,7 +26,18 @@ export const generateSitemap = () => {
     { url: '/blog/category/analysis', priority: '0.7', lastmod: today, changefreq: 'weekly' },
   ];
 
-  const allUrls = [...staticPages, ...categoryPages, ...blogUrls];
+  // Ajouter les pages pour les pays
+  const countryPages = [
+    { url: '/gallery/country/france', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/england', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/spain', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/italy', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/germany', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/portugal', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/netherlands', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+  ];
+
+  const allUrls = [...staticPages, ...categoryPages, ...countryPages, ...blogUrls];
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

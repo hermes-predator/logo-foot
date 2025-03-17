@@ -48,6 +48,7 @@ import { tottenhamLogoPost } from './tottenham-logo';
 import { lorientLogoPost } from './lorient-logo';
 import { astonVillaLogoPost } from './aston-villa-logo';
 import { leverkusenLogoPost } from './leverkusen-logo';
+import { manchesterUnitedLogoPost } from './manchester-united-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -97,7 +98,8 @@ export const logoPosts: BlogPost[] = [
   tottenhamLogoPost,
   lorientLogoPost,
   astonVillaLogoPost,
-  leverkusenLogoPost
+  leverkusenLogoPost,
+  manchesterUnitedLogoPost
 ];
 
 // Logs détaillés pour le débogage

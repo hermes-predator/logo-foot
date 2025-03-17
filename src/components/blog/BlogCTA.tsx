@@ -50,7 +50,7 @@ const BlogCTA = () => {
                     <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
                       <Zap className="h-4 w-4" />
                     </div>
-                    <span className="font-medium">Accès immédiat après achat</span>
+                    <span className="font-medium">Téléchargement instantané</span>
                   </li>
                 </ul>
                 

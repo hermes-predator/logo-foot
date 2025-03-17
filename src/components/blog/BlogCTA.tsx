@@ -62,7 +62,7 @@ const BlogCTA = () => {
                   >
                     <Link to="/">
                       <Download className="h-4 w-4 mr-1.5" />
-                      Découvrir l'offre
+                      Démarrer
                     </Link>
                   </Button>
                   <Button 

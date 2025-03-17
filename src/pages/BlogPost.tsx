@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -40,24 +41,52 @@ const BlogPost = () => {
 
   const readingTime = useReadingTime(post.content);
   const categoryInfo = BLOG_CATEGORIES[post.category];
+  const postDate = new Date(post.date);
+  const formattedDate = format(postDate, 'yyyy-MM-dd');
+  
+  // Extraire le sujet principal de l'article (premier mot du titre généralement)
+  const mainSubject = post.title.split(' ')[0].toLowerCase();
   
   // SEO Optimizations
   const metaTitle = `${post.title} | Guide Expert Logo Foot ${currentYear}`;
   const metaDescription = `${post.excerpt} Guide complet et analyse détaillée mis à jour en ${currentYear}. Tout savoir sur les logos, écussons et emblèmes du football.`;
-  const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel`;
+  const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel, football ${mainSubject}, logo ${mainSubject}`;
+  
+  // Définir l'URL de l'image OG
+  const ogImageUrl = post.galleryImageId 
+    ? `https://logo-foot.com/blog-images/${post.id}.png` 
+    : 'https://logo-foot.com/og-image.png';
+
+  const postUrl = `https://logo-foot.com/blog/${post.id}`;
+
+  // Données structurées améliorées
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": postUrl
+    },
     "headline": post.title,
     "description": post.excerpt,
+    "image": ogImageUrl,
+    "author": {
+      "@type": "Organization",
+      "name": "Logo Foot"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Logo Foot",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://logo-foot.com/favicon.ico"
+      }
+    },
     "datePublished": post.date,
     "dateModified": post.date,
     "keywords": enhancedKeywords,
     "articleSection": categoryInfo.name,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://logo-foot.com/blog/${post.id}`
-    }
+    "wordCount": post.content.split(' ').length.toString()
   };
 
   return (
@@ -65,22 +94,33 @@ const BlogPost = () => {
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={postUrl} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://logo-foot.com/blog/${post.id}`} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:site_name" content="Logo Foot" />
+        <meta property="article:published_time" content={formattedDate} />
+        <meta property="article:modified_time" content={formattedDate} />
+        <meta property="article:section" content={categoryInfo.name} />
+        <meta property="article:tag" content={post.keywords} />
+        
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={ogImageUrl} />
+        
+        {/* Autres métadonnées SEO */}
         <meta name="keywords" content={enhancedKeywords} />
         <meta name="author" content="Logo Foot" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
-        <link rel="canonical" href={`https://logo-foot.com/blog/${post.id}`} />
-        <meta property="article:published_time" content={post.date} />
-        <meta property="article:modified_time" content={post.date} />
-        <meta property="article:section" content={categoryInfo.name} />
-        <meta property="article:tag" content={post.keywords} />
+        <link rel="canonical" href={postUrl} />
+        
+        {/* Données structurées */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -93,7 +133,10 @@ const BlogPost = () => {
         <div className="max-w-3xl mx-auto">
           <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm p-8 md:p-12">
             <div className="flex items-center gap-4 mb-6">
-              <time className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white">
+              <time 
+                className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white"
+                dateTime={formattedDate}
+              >
                 {format(new Date(post.date), 'dd-MM-yyyy')}
               </time>
               <div className="flex items-center gap-1 text-xs text-gray-600">
@@ -102,7 +145,7 @@ const BlogPost = () => {
               </div>
             </div>
             
-            <h1 className="text-4xl font-bold text-gray-800 mb-8">{post.title}</h1>
+            <h1 className="text-4xl font-bold text-gray-800 mb-8" itemProp="headline">{post.title}</h1>
             
             {post.galleryImageId && (
               <BlogImage
@@ -112,7 +155,7 @@ const BlogPost = () => {
               />
             )}
             
-            <div className="prose prose-purple lg:prose-lg mx-auto">
+            <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
               {post.content.split('\n\n').map((paragraph, index) => (
                 <p key={index} className="mb-6 text-gray-600 leading-relaxed">
                   {paragraph}

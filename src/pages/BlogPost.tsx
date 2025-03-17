@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -10,6 +9,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
+import BlogCTA from '../components/blog/BlogCTA';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -163,6 +163,10 @@ const BlogPost = () => {
               ))}
             </div>
           </article>
+          
+          <div className="mt-12">
+            <BlogCTA />
+          </div>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import { usePagination } from '../hooks/usePagination';
 import BlogHeader from '../components/blog/BlogHeader';
 import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
+import BlogCTA from '../components/blog/BlogCTA';
 
 const Blog = () => {
   console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
@@ -81,6 +82,9 @@ const Blog = () => {
               setCurrentPage={setCurrentPage}
             />
           )}
+        </div>
+        <div className="mt-20">
+          <BlogCTA />
         </div>
       </main>
     </div>

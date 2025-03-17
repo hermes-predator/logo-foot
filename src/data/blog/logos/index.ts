@@ -58,6 +58,7 @@ import { evertonLogoPost } from './everton-logo';
 import { asRomaLogoPost } from './as-roma-logo';
 import { montpellierLogoPost } from './montpellier-logo';
 import { bournemouthLogoPost } from './bournemouth-logo';
+import { angersLogoPost } from './angers-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -117,7 +118,8 @@ export const logoPosts: BlogPost[] = [
   evertonLogoPost,
   asRomaLogoPost,
   montpellierLogoPost,
-  bournemouthLogoPost
+  bournemouthLogoPost,
+  angersLogoPost
 ];
 
 // Logs détaillés pour le débogage

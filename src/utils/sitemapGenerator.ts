@@ -18,12 +18,15 @@ export const generateSitemap = () => {
     changefreq: 'monthly'
   }));
 
-  // Articles nationaux à mettre en avant avec priorité plus élevée
+  // Articles mis en avant avec priorité plus élevée
   const featuredArticles = blogPosts
     .filter(post => 
       post.subCategory === 'national-logos' || 
       post.title.toLowerCase().includes('équipe nationale') ||
-      post.title.toLowerCase().includes('équipe de france')
+      post.title.toLowerCase().includes('équipe de france') ||
+      post.title.toLowerCase().includes('champions league') ||
+      post.title.toLowerCase().includes('ligue des champions') ||
+      post.title.toLowerCase().includes('coupe du monde')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

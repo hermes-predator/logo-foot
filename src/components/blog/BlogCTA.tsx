@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, ShieldCheck, Zap } from 'lucide-react';
+import { Download, ArrowRight, Star, ShieldCheck, Bookmark, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -28,7 +28,7 @@ const BlogCTA = () => {
                   <span className="font-mono">⦗FRONT-CLOUD⦘</span>~ Football.zip
                 </h3>
                 
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 line-clamp-3">
                   Découvrez notre pack exclusif de plus de <span className="font-semibold text-blue-700">8 600 logos</span> de football en haute qualité, 
                   parfaitement organisés. Une mine d'or pour vos projets qui vous apportera beaucoup de confiance.
                 </p>
@@ -36,19 +36,19 @@ const BlogCTA = () => {
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center gap-3 text-gray-700">
                     <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
-                      <ShieldCheck className="h-4 w-4" />
+                      <Heart className="h-4 w-4" />
                     </div>
                     <span className="font-medium">Logos PNG avec fond transparent</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-700">
                     <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
-                      <ShieldCheck className="h-4 w-4" />
+                      <Bookmark className="h-4 w-4" />
                     </div>
                     <span className="font-medium">8 600+ ressources de haute qualité</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-700">
                     <div className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600">
-                      <Zap className="h-4 w-4" />
+                      <Download className="h-4 w-4" />
                     </div>
                     <span className="font-medium">Téléchargement instantané</span>
                   </li>

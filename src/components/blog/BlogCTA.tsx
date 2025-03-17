@@ -47,14 +47,14 @@ const BlogCTA = () => {
                     <span className="font-medium">8 600+ ressources de haute qualité</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
-                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
-                      <Folder className="h-3 w-3" />
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Fichier consultable</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
-                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
-                      <Zap className="h-3 w-3" />
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Téléchargement instantané</span>
                   </li>

@@ -20,7 +20,7 @@ const BlogCTA = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                  La Plus Grande Collection de Logos de Football
+                  <span className="font-mono">⦗FRONT-CLOUD⦘</span>~ Football.zip
                 </h3>
                 
                 <p className="text-gray-600 mb-6">

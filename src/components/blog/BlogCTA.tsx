@@ -80,8 +80,8 @@ const BlogCTA = () => {
               </div>
               <div className="relative overflow-hidden md:w-1/3">
                 <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-                  alt="Collection de logos de football" 
+                  src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
+                  alt="Dossiers de football avec drapeaux de pays" 
                   className="h-full w-full object-cover object-center min-h-[300px] transform hover:scale-105 transition-transform duration-500 cursor-pointer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30"></div>

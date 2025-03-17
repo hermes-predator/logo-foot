@@ -8,7 +8,9 @@ Deno.serve(async (req) => {
   }
 
   try {
+    console.log("Generating sitemap...");
     const sitemap = generateSitemap();
+    console.log(`Sitemap generated successfully with ${sitemap.split('<url>').length - 1} URLs`);
     
     return new Response(sitemap, {
       headers: {
@@ -17,6 +19,7 @@ Deno.serve(async (req) => {
       },
     });
   } catch (error) {
+    console.error("Error generating sitemap:", error);
     return new Response(JSON.stringify({ error: error.message }), {
       headers: {
         ...corsHeaders,

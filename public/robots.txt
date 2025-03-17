@@ -1,11 +1,29 @@
 
+# Robots.txt pour Logo-Foot.com
 User-agent: *
 Allow: /
 Allow: /blog/
-Allow: /sitemap.xml
+Allow: /blog/category/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
 
-# Optimisation du crawl
+# Protection contre les crawlers trop agressifs
+Crawl-delay: 2
+
+# Sitemap principal
+Sitemap: https://logo-foot.com/sitemap.xml
+
+# Directives spécifiques pour Google
+User-agent: Googlebot
+Allow: /
 Crawl-delay: 1
 
-# Sitemap
-Sitemap: https://logo-foot.com/sitemap.xml
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 1
+
+# Directives pour Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

@@ -97,7 +97,7 @@ const BlogPost = () => {
     p: ({children}: {children: React.ReactNode}) => (
       <p className="text-gray-600 leading-relaxed mb-6">{children}</p>
     ),
-    // Add styling to headings if needed
+    // Add styling to headings
     h1: ({children}: {children: React.ReactNode}) => (
       <h1 className="text-3xl font-bold text-gray-800 mt-10 mb-6">{children}</h1>
     ),
@@ -107,11 +107,30 @@ const BlogPost = () => {
     h3: ({children}: {children: React.ReactNode}) => (
       <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">{children}</h3>
     ),
+    // Add styling to links
     a: ({href, children}: {href: string; children: React.ReactNode}) => (
       <Link to={href} className="text-purple-600 hover:text-purple-800 underline">
         {children}
       </Link>
-    )
+    ),
+    // Add styling to lists
+    ul: ({children}: {children: React.ReactNode}) => (
+      <ul className="list-disc pl-6 mb-6 text-gray-600">{children}</ul>
+    ),
+    ol: ({children}: {children: React.ReactNode}) => (
+      <ol className="list-decimal pl-6 mb-6 text-gray-600">{children}</ol>
+    ),
+    li: ({children}: {children: React.ReactNode}) => (
+      <li className="mb-2">{children}</li>
+    ),
+    // Add styling to blockquotes
+    blockquote: ({children}: {children: React.ReactNode}) => (
+      <blockquote className="border-l-4 border-purple-500 pl-4 italic my-6 text-gray-700">{children}</blockquote>
+    ),
+    // Add styling to code blocks
+    code: ({children}: {children: React.ReactNode}) => (
+      <code className="bg-gray-100 rounded px-1 py-0.5 text-sm font-mono">{children}</code>
+    ),
   };
 
   return (

@@ -82,7 +82,7 @@ const BlogCTA = () => {
                 <div 
                   className="h-full bg-cover bg-center transform hover:scale-105 transition-transform duration-500 cursor-pointer" 
                   style={{ 
-                    backgroundImage: "url('/blog-images/260.png')",
+                    backgroundImage: "url('/lovable-uploads/a6bda7df-8f91-4102-a645-a9e7d735ffca.png')",
                     minHeight: "300px"
                   }}
                 >

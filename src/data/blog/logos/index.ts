@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -56,6 +57,7 @@ import { westHamLogoPost } from './west-ham-logo';
 import { evertonLogoPost } from './everton-logo';
 import { asRomaLogoPost } from './as-roma-logo';
 import { montpellierLogoPost } from './montpellier-logo';
+import { bournemouthLogoPost } from './bournemouth-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -114,7 +116,8 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   evertonLogoPost,
   asRomaLogoPost,
-  montpellierLogoPost
+  montpellierLogoPost,
+  bournemouthLogoPost
 ];
 
 // Logs détaillés pour le débogage

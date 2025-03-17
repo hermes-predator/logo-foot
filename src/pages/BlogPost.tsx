@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -91,45 +90,73 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
-  // Define component customizations for ReactMarkdown
+  // Enhanced component customizations for ReactMarkdown with better typography and spacing
   const markdownComponents = {
-    // Add styling to paragraphs
+    // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
-      <p className="text-gray-600 leading-relaxed mb-6">{children}</p>
+      <p className="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">{children}</p>
     ),
-    // Add styling to headings
+    // Enhanced styling for headings with better hierarchy and spacing
     h1: ({children}: {children: React.ReactNode}) => (
-      <h1 className="text-3xl font-bold text-gray-800 mt-10 mb-6">{children}</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-12 mb-6 leading-tight">{children}</h1>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{children}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight">{children}</h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
-      <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">{children}</h3>
+      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">{children}</h3>
     ),
-    // Add styling to links
+    h4: ({children}: {children: React.ReactNode}) => (
+      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">{children}</h4>
+    ),
+    // Improved styling for links with better hover effects
     a: ({href, children}: {href: string; children: React.ReactNode}) => (
-      <Link to={href} className="text-purple-600 hover:text-purple-800 underline">
+      <Link to={href} className="text-purple-600 hover:text-purple-800 underline transition-colors duration-200">
         {children}
       </Link>
     ),
-    // Add styling to lists
+    // Enhanced styling for lists with better spacing and bullets
     ul: ({children}: {children: React.ReactNode}) => (
-      <ul className="list-disc pl-6 mb-6 text-gray-600">{children}</ul>
+      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-2">{children}</ul>
     ),
     ol: ({children}: {children: React.ReactNode}) => (
-      <ol className="list-decimal pl-6 mb-6 text-gray-600">{children}</ol>
+      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-2">{children}</ol>
     ),
     li: ({children}: {children: React.ReactNode}) => (
-      <li className="mb-2">{children}</li>
+      <li className="mb-2 pl-1">{children}</li>
     ),
-    // Add styling to blockquotes
+    // Enhanced styling for blockquotes with more distinct design
     blockquote: ({children}: {children: React.ReactNode}) => (
-      <blockquote className="border-l-4 border-purple-500 pl-4 italic my-6 text-gray-700">{children}</blockquote>
+      <blockquote className="border-l-4 border-purple-500 pl-4 py-2 italic my-6 text-gray-700 bg-purple-50/30 rounded-r">{children}</blockquote>
     ),
-    // Add styling to code blocks
+    // Better styling for code blocks
     code: ({children}: {children: React.ReactNode}) => (
-      <code className="bg-gray-100 rounded px-1 py-0.5 text-sm font-mono">{children}</code>
+      <code className="bg-gray-100 rounded px-1.5 py-0.5 text-sm font-mono text-purple-700">{children}</code>
+    ),
+    // Add styling for horizontal rules
+    hr: () => (
+      <hr className="my-8 border-t border-gray-200" />
+    ),
+    // Better table styling
+    table: ({children}: {children: React.ReactNode}) => (
+      <div className="overflow-x-auto mb-6">
+        <table className="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">{children}</table>
+      </div>
+    ),
+    thead: ({children}: {children: React.ReactNode}) => (
+      <thead className="bg-gray-50">{children}</thead>
+    ),
+    tbody: ({children}: {children: React.ReactNode}) => (
+      <tbody className="divide-y divide-gray-200">{children}</tbody>
+    ),
+    tr: ({children}: {children: React.ReactNode}) => (
+      <tr>{children}</tr>
+    ),
+    th: ({children}: {children: React.ReactNode}) => (
+      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{children}</th>
+    ),
+    td: ({children}: {children: React.ReactNode}) => (
+      <td className="px-4 py-3 text-sm text-gray-700">{children}</td>
     ),
   };
 
@@ -171,12 +198,12 @@ const BlogPost = () => {
       </Helmet>
       <BlogSchemaMarkup post={post} />
       
-      <div className="container mx-auto py-20 px-4">
+      <div className="container mx-auto py-12 md:py-20 px-4">
         <Breadcrumbs />
         
         <div className="max-w-3xl mx-auto">
-          <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-sm p-8 md:p-12">
-            <div className="flex items-center gap-4 mb-6">
+          <article className="bg-gradient-to-b from-white to-gray-50/30 rounded-xl shadow-md p-6 md:p-12">
+            <div className="flex flex-wrap items-center gap-4 mb-6">
               <time 
                 className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full inline-block border border-gray-200 shadow-sm bg-white"
                 dateTime={formattedDate}
@@ -187,15 +214,18 @@ const BlogPost = () => {
                 <Clock className="h-3.5 w-3.5" />
                 <span>{readingTime} min de lecture</span>
               </div>
+              <div className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">
+                {categoryInfo.name}
+              </div>
             </div>
             
-            <h1 className="text-4xl font-bold text-gray-800 mb-8" itemProp="headline">{post.title}</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight" itemProp="headline">{post.title}</h1>
             
             {post.galleryImageId && (
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-8"
+                className="mb-8 rounded-xl"
               />
             )}
             

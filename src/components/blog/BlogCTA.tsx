@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, ShieldCheck, Zap } from 'lucide-react';
+import { Download, ArrowRight, Star, ShieldCheck, Zap, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -45,6 +45,12 @@ const BlogCTA = () => {
                       <ShieldCheck className="h-3 w-3" />
                     </div>
                     <span className="font-medium">8 600+ ressources de haute qualité</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">
+                      <FileText className="h-3 w-3" />
+                    </div>
+                    <span className="font-medium">Fichier consultable</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 text-blue-600">

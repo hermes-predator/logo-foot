@@ -19,6 +19,22 @@ console.log('History posts IDs:', historyPosts.map(post => post.id).join(', '));
 console.log('\nAnalysis posts:', analysisPosts.length, 'articles');
 console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', '));
 
+// Vérification spécifique pour les articles Chelsea et Juventus
+const chelseaArticle = logoPosts.find(post => post.title.toLowerCase().includes('chelsea'));
+const juventusArticle = logoPosts.find(post => post.title.toLowerCase().includes('juventus'));
+
+console.log('\nArticle Chelsea:', chelseaArticle ? {
+  id: chelseaArticle.id,
+  title: chelseaArticle.title, 
+  category: chelseaArticle.category
+} : 'Non trouvé dans logoPosts');
+
+console.log('Article Juventus:', juventusArticle ? {
+  id: juventusArticle.id,
+  title: juventusArticle.title,
+  category: juventusArticle.category
+} : 'Non trouvé dans logoPosts');
+
 // Check for duplicate IDs
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
 const idCounts = allPosts.reduce((acc, post) => {
@@ -42,5 +58,9 @@ export const blogPosts: BlogPost[] = Array.from(
 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 console.log('\nFinal unique posts count:', blogPosts.length);
+console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
+  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
+  blogPosts.some(post => post.title.toLowerCase().includes('juventus'))
+);
 console.log('Final posts IDs:', blogPosts.map(post => post.id).sort((a, b) => a - b).join(', '));
 console.log('************************************************\n');

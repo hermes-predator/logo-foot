@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -10,12 +11,22 @@ import BlogPagination from '../components/blog/BlogPagination';
 
 const Blog = () => {
   console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
-  console.log('BlogPosts details:', blogPosts.map(post => ({
-    id: post.id,
-    title: post.title,
-    category: post.category,
-    date: post.date
-  })));
+  
+  // Log pour vérifier que les articles de Chelsea et Juventus sont bien présents
+  const chelseaArticle = blogPosts.find(post => post.title.toLowerCase().includes('chelsea'));
+  const juventusArticle = blogPosts.find(post => post.title.toLowerCase().includes('juventus'));
+  
+  console.log('Article Chelsea trouvé:', chelseaArticle ? {
+    id: chelseaArticle.id,
+    title: chelseaArticle.title,
+    date: chelseaArticle.date
+  } : 'Non trouvé');
+  
+  console.log('Article Juventus trouvé:', juventusArticle ? {
+    id: juventusArticle.id,
+    title: juventusArticle.title,
+    date: juventusArticle.date
+  } : 'Non trouvé');
 
   const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
   const currentYear = new Date().getFullYear();
@@ -26,10 +37,6 @@ const Blog = () => {
     itemsPerPage: paginatedItems.length,
     totalItems
   });
-
-  console.log('Total blog posts:', blogPosts.length);
-  console.log('Current page items:', paginatedItems.length);
-  console.log('Total pages:', totalPages);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">

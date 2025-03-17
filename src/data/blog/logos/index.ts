@@ -101,8 +101,10 @@ export const logoPosts: BlogPost[] = [
 // Logs détaillés pour le débogage
 console.log('************ DEBUG LOGS ARTICLES ************');
 console.log('Nombre total d\'articles logos:', logoPosts.length);
-console.log('Liste complète des articles:', logoPosts.map((post, index) => ({
-  index,
+console.log('Liste des articles juventus et chelsea:', logoPosts.filter(post => 
+  post.title.toLowerCase().includes('juventus') || 
+  post.title.toLowerCase().includes('chelsea')
+).map(post => ({
   id: post.id,
   title: post.title,
   date: post.date

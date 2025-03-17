@@ -15,6 +15,7 @@ export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
     validCurrentPage * itemsPerPage
   );
 
+  // Log all items for debugging
   console.log('Pagination debug:', {
     totalItems: items.length,
     itemsPerPage,
@@ -23,6 +24,15 @@ export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
     displayedItems: paginatedItems.length,
     firstItem: paginatedItems[0]?.title,
     lastItem: paginatedItems[paginatedItems.length - 1]?.title
+  });
+  
+  // Find articles that might be missing
+  const hasJuventus = items.some(item => item.title.toLowerCase().includes('juventus'));
+  const hasChelsea = items.some(item => item.title.toLowerCase().includes('chelsea'));
+  
+  console.log('Articles spécifiques présents dans la liste complète:', {
+    juventus: hasJuventus,
+    chelsea: hasChelsea,
   });
 
   return {

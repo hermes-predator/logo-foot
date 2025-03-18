@@ -80,7 +80,7 @@ const BlogCTA = () => {
                   </h3>
                   
                   <p className="text-gray-600 text-sm mb-5">
-                    Découvrez ce pack exclusif de plus de <span className="font-bold text-gray-700">8 600 logos de football</span> en haute qualité, parfaitement organisés.
+                    La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de <span className="font-bold text-gray-700">8 600</span> logos de club de foot internationaux, les logos des compétitions... une couverture complète réunie dans un seul fichier ZIP arborescent.
                   </p>
                   
                   <ul className="space-y-3 mb-5 text-sm">

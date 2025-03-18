@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,17 +25,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
     <section className="relative pt-12 pb-20 px-4 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-sky-50/40 to-white opacity-90" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.08),transparent_50%)]" />
       </div>
 
       <div className="max-w-4xl mx-auto text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-purple-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md mb-6">
-          <Crown className="w-5 h-5 text-purple-600" />
-          <span className="text-sm font-medium text-purple-900">Collection Premium</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-blue-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md mb-6">
+          <Crown className="w-5 h-5 text-blue-600" />
+          <span className="text-sm font-medium text-blue-900">Collection Premium</span>
         </div>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-blue-900 via-blue-700 to-sky-600 bg-clip-text text-transparent px-4 py-2">
           Logos des clubs de football
         </h1>
 
@@ -86,7 +87,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             variant="default"
             size="lg"
             onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2"
+            className="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2"
           >
             <ChevronDown className="h-4 w-4 animate-bounce" />
             Voir le prix

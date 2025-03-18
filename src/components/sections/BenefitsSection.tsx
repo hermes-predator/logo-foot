@@ -40,7 +40,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-blue-700 to-sky-800">
           Pourquoi choisir notre pack ?
         </h2>
         
@@ -51,12 +51,12 @@ const BenefitsSection = () => {
               className={`group p-6 rounded-xl bg-white/70 backdrop-blur-sm border ${
                 benefit.title === "Satisfait ou Remboursé" 
                   ? "border-green-200 bg-green-50/50" 
-                  : "border-purple-100"
-              } shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] hover:border-purple-200`}
+                  : "border-blue-100"
+              } shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] hover:border-blue-200`}
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-purple-50 to-blue-50 group-hover:from-purple-100 group-hover:to-blue-100 transition-colors">
-                  <benefit.icon className="w-6 h-6 text-purple-600 group-hover:text-purple-700 transition-colors" />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-blue-50 to-sky-50 group-hover:from-blue-100 group-hover:to-sky-100 transition-colors">
+                  <benefit.icon className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition-colors" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-gray-900 mb-2">

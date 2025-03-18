@@ -94,16 +94,13 @@ const BlogCTA = () => {
                   </Button>
                 </div>
               </div>
-              <div className="relative overflow-hidden md:w-1/3 group cursor-pointer">
+              <div className="relative overflow-hidden md:w-1/3">
                 <img 
                   src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
                   alt="Dossiers de football avec drapeaux de pays" 
-                  className="h-full w-full object-cover object-center min-h-[220px] transform transition-transform duration-700 group-hover:scale-110"
+                  className="h-full w-full object-cover object-center min-h-[220px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30 group-hover:opacity-0 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <span className="text-white text-sm font-medium px-3 py-1 bg-blue-900/70 rounded-full backdrop-blur-sm">Aperçu</span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30"></div>
               </div>
             </div>
           </CardContent>

@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock } from 'lucide-react';
+import { Clock, Download, ArrowRight } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -12,6 +12,7 @@ import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import BlogCTA from '../components/blog/BlogCTA';
 import ReactMarkdown from 'react-markdown';
+import { Button } from '@/components/ui/button';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -249,15 +250,31 @@ const BlogPost = () => {
               />
             )}
             
+            {/* BlogCTA (FrontCloud offer) positioned right after the image */}
+            <div className="mb-8">
+              <BlogCTA />
+            </div>
+            
             <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
               <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>
             </div>
             
-            {/* BlogCTA component moved to the end of the article */}
-            <div className="mt-12">
-              <BlogCTA />
+            {/* Purple download button at the end of the article */}
+            <div className="mt-12 flex justify-center">
+              <Button 
+                asChild 
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 
+                           py-6 px-6 text-lg font-semibold shadow-lg hover:shadow-xl 
+                           transform hover:scale-105 transition-all duration-300 group rounded-xl"
+              >
+                <Link to="/" className="flex items-center gap-3">
+                  <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
+                  <span className="text-white">Télécharger + 8 600 logos de foot en un seul fichier</span>
+                  <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </Button>
             </div>
           </article>
         </div>

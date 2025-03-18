@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -70,18 +71,18 @@ const Testimonials = () => {
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[160px]">
+                <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px]">
                   <div className="flex items-center gap-1 text-yellow-400 mb-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 fill-current" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-2 flex-grow text-xs">
+                  <p className="text-gray-600 italic mb-3 flex-grow text-sm">
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                      <MessageCircle className="w-3 h-3 text-blue-600" />
+                    <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
+                      <MessageCircle className="w-3.5 h-3.5 text-blue-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>

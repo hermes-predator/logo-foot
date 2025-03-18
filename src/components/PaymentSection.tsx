@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -101,7 +100,7 @@ const PaymentSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
           <div className="relative p-6 md:p-8 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
-            {/* Animated stars - in different positions */}
+            
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
               <Sparkle className="h-12 w-12" />
@@ -143,7 +142,7 @@ const PaymentSection = () => {
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
-              <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
+              <p className="text-gray-600">La plus grande collection de logos de football, parfaitement organisés</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">

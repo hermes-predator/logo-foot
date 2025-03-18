@@ -29,8 +29,8 @@ const BlogCTA = () => {
           <Sparkle className="h-12 w-12" />
         </div>
         
-        {/* Enhanced card with gold shine effect, animations, shadow but no blue hover border */}
-        <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 transform hover:-translate-y-1">
+        {/* Enhanced card with gold shine effect, animations, shadow and increased lift-up effect on hover */}
+        <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 transform hover:-translate-y-2">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/40 pointer-events-none"></div>
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">

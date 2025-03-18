@@ -23,6 +23,7 @@ import { brazilianClubsPost } from './brazilian-clubs';
 import { belgianClubsPost } from './belgian-clubs';
 import { asianClubsPost } from './asian-clubs';
 import { nationalTeamsPost } from './national-teams';
+import { galatasarayLogoPost } from './galatasaray-logo';
 
 // Export de tous les articles dans la catégorie logos
 export const logoPosts: BlogPost[] = [
@@ -49,4 +50,5 @@ export const logoPosts: BlogPost[] = [
   belgianClubsPost,
   asianClubsPost,
   nationalTeamsPost,
+  galatasarayLogoPost,
 ];

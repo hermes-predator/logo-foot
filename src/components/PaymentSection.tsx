@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -101,11 +100,7 @@ const PaymentSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
           <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
-            {/* Animated stars */}
-            <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
-              <Sparkle className="h-12 w-12" />
-            </div>
+            {/* Animated stars - removed top left star */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
               <Sparkle className="h-12 w-12" />
@@ -151,9 +146,7 @@ const PaymentSection = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-[#f1f9f1] via-[#e1f7e5] to-[#edfaf4] border border-emerald-100 hover:border-emerald-200 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px]">
-                        <div className="relative p-1 rounded-full bg-gradient-to-r from-[#7bed9f] to-[#2ed573]">
-                          <RefreshCcw className="h-3.5 w-3.5 text-white group-hover:rotate-180 transition-transform duration-500" />
-                        </div>
+                        <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                         <span className="text-sm font-medium whitespace-nowrap bg-gradient-to-r from-emerald-600 to-green-700 text-transparent bg-clip-text">
                           Satisfait ou remboursé
                         </span>
@@ -205,4 +198,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

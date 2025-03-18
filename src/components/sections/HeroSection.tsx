@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, FileVideo } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -49,7 +49,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
-            <ShieldCheck className="w-5 h-5 text-green-600" />
+            <FileVideo className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
@@ -57,7 +57,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md">
-            <CheckCircle2 className="w-5 h-5 text-green-600" />
+            <Download className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
         </div>

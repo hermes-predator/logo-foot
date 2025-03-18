@@ -99,7 +99,7 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
+          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
             {/* Animated stars */}
             <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>

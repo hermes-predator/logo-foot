@@ -29,13 +29,13 @@ const BlogCTA = () => {
           <Sparkle className="h-12 w-12" />
         </div>
         
-        {/* Enhanced card with gold shine effect, animations, shadow and border effects */}
-        <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 hover:border-blue-100 transform hover:-translate-y-1">
+        {/* Enhanced card with gold shine effect, animations, shadow but no blue hover border */}
+        <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 transform hover:-translate-y-1">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/40 pointer-events-none"></div>
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">
               <div className="p-5 md:p-7 md:w-2/3">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 text-amber-700 mb-4 border border-amber-100 shadow-sm">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-800 mb-4 border border-gray-200 shadow-sm">
                   <Star className="h-3.5 w-3.5 text-amber-500 fill-amber-400" />
                   <span className="text-xs font-medium">Collection Premium</span>
                 </div>
@@ -74,11 +74,10 @@ const BlogCTA = () => {
                   <Button 
                     asChild 
                     size="default"
-                    className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto relative overflow-hidden group"
+                    className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto relative"
                   >
                     <Link to="/">
-                      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400/0 via-blue-400/30 to-blue-400/0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
-                      <Download className="h-4 w-4 mr-0.5 group-hover:animate-bounce" style={{ animationDuration: '1s' }} />
+                      <Download className="h-4 w-4 mr-0.5" />
                       Démarrer
                     </Link>
                   </Button>

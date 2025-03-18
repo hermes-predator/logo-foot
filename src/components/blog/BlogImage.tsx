@@ -3,7 +3,7 @@ import React from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { Button } from '@/components/ui/button';
-import { Tag, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface BlogImageProps {
@@ -35,8 +35,8 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
           className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transition-all duration-300 group"
         >
           <Link to="/" className="flex items-center gap-2">
-            <Tag className="h-4 w-4 text-white group-hover:animate-pulse" />
-            <span>Accédez à tous les logos</span>
+            <Download className="h-4 w-4 text-white group-hover:animate-pulse" />
+            <span>Télécharger + 8 600 logos de foot</span>
             <ArrowRight className="h-4 w-4 text-white ml-1 group-hover:translate-x-1 transition-transform" />
           </Link>
         </Button>

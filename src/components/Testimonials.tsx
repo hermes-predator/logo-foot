@@ -72,7 +72,7 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-3xl mx-auto"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
@@ -99,8 +99,8 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-6" />
-          <CarouselNext className="hidden md:flex -right-6" />
+          <CarouselPrevious className="hidden md:flex -left-5" />
+          <CarouselNext className="hidden md:flex -right-5" />
         </Carousel>
       </div>
     </section>

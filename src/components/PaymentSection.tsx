@@ -146,29 +146,35 @@ const PaymentSection = () => {
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">
-                <RefreshCcw className="h-4 w-4 text-green-600" />
-                <Tooltip>
-                  <TooltipTrigger className="text-sm text-green-700 font-medium flex items-center gap-1">
-                    Satisfait ou remboursé
-                    <Info className="h-3.5 w-3.5" />
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm">
-                    <p className="font-semibold">Votre satisfaction est importante.</p>
-                    <div className="space-y-2 text-gray-600">
-                      <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                      <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
-                      <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                      <p className="mt-4 text-gray-500 text-[13px]">
-                        Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
-                        <ul className="list-disc ml-4 mt-1 space-y-1">
-                          <li>Votre nom et prénom</li>
-                          <li>La date et l'heure d'achat</li>
-                          <li>Une preuve d'achat</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </TooltipContent>
-                </Tooltip>
+                <div className="group">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 hover:border-green-200 transition-all duration-300">
+                        <RefreshCcw className="h-4 w-4 text-green-600 group-hover:rotate-180 transition-transform duration-500" />
+                        <span className="text-sm text-green-700 font-medium whitespace-nowrap">
+                          Satisfait ou remboursé
+                        </span>
+                        <Info className="h-3.5 w-3.5 text-green-600 group-hover:opacity-75 transition-opacity" />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-green-100 shadow-lg">
+                      <p className="font-semibold">Votre satisfaction est importante.</p>
+                      <div className="space-y-2 text-gray-600">
+                        <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                        <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
+                        <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                        <p className="mt-4 text-gray-500 text-[13px]">
+                          Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
+                          <ul className="list-disc ml-4 mt-1 space-y-1">
+                            <li>Votre nom et prénom</li>
+                            <li>La date et l'heure d'achat</li>
+                            <li>Une preuve d'achat</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               </div>
             </div>
 

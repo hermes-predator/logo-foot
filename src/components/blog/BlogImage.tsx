@@ -3,7 +3,7 @@ import React from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { Button } from '@/components/ui/button';
-import { Download, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface BlogImageProps {
@@ -29,15 +29,18 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
       </AspectRatio>
       <p className="mt-2 text-sm text-gray-500 text-center italic">{alt}</p>
       
-      <div className="mt-4 flex justify-center">
+      <div className="mt-5 flex justify-center">
         <Button 
           asChild 
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg transition-all duration-300 group"
+          className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 
+                     py-6 px-6 text-lg font-semibold shadow-lg hover:shadow-xl 
+                     transform hover:scale-105 transition-all duration-300 group rounded-xl"
         >
-          <Link to="/" className="flex items-center gap-2">
-            <Download className="h-4 w-4 text-white group-hover:animate-pulse" />
-            <span>Télécharger + 8 600 logos de foot</span>
-            <ArrowRight className="h-4 w-4 text-white ml-1 group-hover:translate-x-1 transition-transform" />
+          <Link to="/" className="flex items-center gap-3">
+            <Sparkles className="h-5 w-5 text-white animate-pulse" />
+            <span className="text-white">Télécharger + 8 600 logos de foot</span>
+            <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
+            <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />
           </Link>
         </Button>
       </div>

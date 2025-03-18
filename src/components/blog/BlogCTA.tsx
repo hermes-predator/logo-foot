@@ -30,7 +30,7 @@ const BlogCTA = () => {
                 
                 <p className="text-gray-600 text-sm mb-5">
                   Découvrez notre pack exclusif de plus de <span className="font-semibold text-blue-700">8 600 logos</span> de football en haute qualité, 
-                  parfaitement organisés. Une mine d'or pour vos projets qui vous apportera beaucoup de confiance.
+                  parfaitement organisés.
                 </p>
                 
                 <ul className="space-y-3 mb-5 text-sm">

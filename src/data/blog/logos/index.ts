@@ -1,5 +1,4 @@
 
-
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -38,6 +37,7 @@ import { bayernMunichLogoPost } from './bayern-munich-logo';
 import { dortmundLogoPost } from './dortmund-logo';
 import { juventusLogoPost } from './juventus-logo';
 import { toulouseLogoPost } from './toulouse-logo';
+import { toulouseFCLogoPost } from './toulouse-fc-logo';
 import { milanLogoPost } from './milan-logo';
 import { interMilanLogoPost } from './inter-milan-logo';
 import { chelseaLogoPost } from './chelsea-logo';
@@ -117,6 +117,7 @@ export const logoPosts: BlogPost[] = [
   dortmundLogoPost,
   juventusLogoPost,
   toulouseLogoPost,
+  toulouseFCLogoPost,
   milanLogoPost,
   interMilanLogoPost,
   chelseaLogoPost,
@@ -171,4 +172,3 @@ console.log('Liste des articles juventus et chelsea:', logoPosts.filter(post =>
   date: post.date
 })));
 console.log('******************************************');
-

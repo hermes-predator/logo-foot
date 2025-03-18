@@ -102,7 +102,7 @@ const Testimonials = () => {
         </div>
         
         {!isLoaded ? (
-          <div className="w-full max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="bg-white/60 p-5 rounded-lg shadow-sm animate-pulse h-[200px]"></div>
             ))}
@@ -113,11 +113,11 @@ const Testimonials = () => {
               align: "start",
               loop: true,
             }}
-            className="w-full max-w-3xl mx-auto"
+            className="w-full max-w-5xl mx-auto"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {visibleTestimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4 pb-4">
                   <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[210px] relative overflow-hidden">
                     <Quote className="absolute text-blue-100 w-16 h-16 -right-3 -top-3 opacity-30" />
                     <div className="flex items-center gap-1 text-yellow-400 mb-3">

@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const BlogCTA = () => {
   return (
     <section className="w-full py-12">
-      <div className="container max-w-4xl mx-auto px-4 relative">
+      <div className="container max-w-4xl mx-auto px-4 relative hover:-translate-y-1 transition-transform duration-300">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <h2 className="text-3xl font-bold text-black mb-3">Prêt à recevoir tous les logos de foot ?</h2>
           <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique.</p>

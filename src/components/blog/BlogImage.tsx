@@ -32,14 +32,14 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
       <div className="mt-5 flex justify-center">
         <Button 
           asChild 
-          className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 
                      py-6 px-6 text-lg font-semibold shadow-lg hover:shadow-xl 
                      transform hover:scale-105 transition-all duration-300 group rounded-xl"
         >
           <Link to="/" className="flex items-center gap-3">
             <Sparkles className="h-5 w-5 text-white animate-pulse" />
-            <span className="text-white">Télécharger + 8 600 logos de foot</span>
             <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
+            <span className="text-white">Télécharger + 8 600 logos de foot</span>
             <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />
           </Link>
         </Button>

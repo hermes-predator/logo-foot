@@ -1,40 +1,39 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BlogPost } from '../types/blog';
 
 export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(items.length / itemsPerPage);
   
-  // Ensure current page is valid
-  const validCurrentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
+  // Calcul du nombre total de pages
+  const totalPages = Math.max(1, Math.ceil(items.length / itemsPerPage));
+  
+  // Assurer que la page courante est valide
+  const [validCurrentPage, setValidCurrentPage] = useState(1);
+
+  useEffect(() => {
+    // Assurer que currentPage est dans les limites valides
+    setValidCurrentPage(Math.min(Math.max(1, currentPage), totalPages));
+  }, [currentPage, totalPages]);
   
   // Calculate paginated items
-  const paginatedItems = items.slice(
-    (validCurrentPage - 1) * itemsPerPage,
-    validCurrentPage * itemsPerPage
-  );
+  const startIndex = (validCurrentPage - 1) * itemsPerPage;
+  const paginatedItems = items.slice(startIndex, startIndex + itemsPerPage);
 
-  // Log all items for debugging
-  console.log('Pagination debug:', {
+  // Log détaillé pour le débogage
+  console.log('Pagination debug details:', {
     totalItems: items.length,
     itemsPerPage,
-    currentPage: validCurrentPage,
+    currentPage,
+    validCurrentPage,
     totalPages,
+    startIndex,
+    endIndex: startIndex + itemsPerPage,
     displayedItems: paginatedItems.length,
-    firstItem: paginatedItems[0]?.title,
-    lastItem: paginatedItems[paginatedItems.length - 1]?.title
+    firstItemId: paginatedItems[0]?.id,
+    lastItemId: paginatedItems[paginatedItems.length - 1]?.id
   });
   
-  // Find articles that might be missing
-  const hasJuventus = items.some(item => item.title.toLowerCase().includes('juventus'));
-  const hasChelsea = items.some(item => item.title.toLowerCase().includes('chelsea'));
-  
-  console.log('Articles spécifiques présents dans la liste complète:', {
-    juventus: hasJuventus,
-    chelsea: hasChelsea,
-  });
-
   return {
     currentPage: validCurrentPage,
     setCurrentPage,

@@ -40,7 +40,7 @@ const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisP
 const idCounts = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
-}, {} as Record<number, number>);
+}, {} as Record<string, number>);
 
 console.log('\nDuplicate IDs found:');
 Object.entries(idCounts)

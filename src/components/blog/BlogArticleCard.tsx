@@ -13,6 +13,14 @@ interface BlogArticleCardProps {
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
   
+  // Log pour débogage
+  console.log(`Rendering BlogArticleCard for post ID ${post.id}: ${post.title}`);
+  
+  if (!post || !post.id) {
+    console.error('Invalid post data:', post);
+    return null;
+  }
+  
   return (
     <article className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
       <div className="p-6 flex-1 flex flex-col">

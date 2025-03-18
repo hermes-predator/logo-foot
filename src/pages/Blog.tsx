@@ -11,11 +11,15 @@ import BlogPagination from '../components/blog/BlogPagination';
 import BlogCTA from '../components/blog/BlogCTA';
 
 const Blog = () => {
-  console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
+  console.log('Blog component rendering, blogPosts:', blogPosts.length, 'articles');
   
-  // Log pour vérifier que les articles de Chelsea et Juventus sont bien présents
+  // Log pour vérifier que les articles sont bien présents
+  console.log('IDs of first 5 articles:', blogPosts.slice(0, 5).map(post => post.id));
+  
+  // Log pour vérifier que des articles spécifiques sont présents
   const chelseaArticle = blogPosts.find(post => post.title.toLowerCase().includes('chelsea'));
   const juventusArticle = blogPosts.find(post => post.title.toLowerCase().includes('juventus'));
+  const galatasarayArticle = blogPosts.find(post => post.title.toLowerCase().includes('galatasaray'));
   
   console.log('Article Chelsea trouvé:', chelseaArticle ? {
     id: chelseaArticle.id,
@@ -29,6 +33,12 @@ const Blog = () => {
     date: juventusArticle.date
   } : 'Non trouvé');
 
+  console.log('Article Galatasaray trouvé:', galatasarayArticle ? {
+    id: galatasarayArticle.id,
+    title: galatasarayArticle.title,
+    date: galatasarayArticle.date
+  } : 'Non trouvé');
+
   const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
   const currentYear = new Date().getFullYear();
 
@@ -36,7 +46,8 @@ const Blog = () => {
     currentPage,
     totalPages,
     itemsPerPage: paginatedItems.length,
-    totalItems
+    totalItems: totalItems,
+    actualBlogPostsLength: blogPosts.length
   });
 
   return (
@@ -74,7 +85,13 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         <div className="mt-12">
-          <BlogArticleList articles={paginatedItems} />
+          {paginatedItems.length > 0 ? (
+            <BlogArticleList articles={paginatedItems} />
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-lg text-gray-600">Aucun article trouvé pour le moment.</p>
+            </div>
+          )}
           {totalPages > 1 && (
             <div className="px-4">
               <BlogPagination 

@@ -34,7 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-amber-400 to-yellow-300 gold-shine">
             <Crown className="w-4 h-4 text-white drop-shadow-sm" />
           </div>
-          <span className="text-sm font-medium text-gray-900">Collection Premium</span>
+          <span className="text-sm font-medium text-gray-800">Collection Premium</span>
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">

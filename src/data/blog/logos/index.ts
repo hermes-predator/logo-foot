@@ -80,6 +80,7 @@ import { celticGlasgowLogoPost } from './celtic-glasgow-logo';
 import { ligue2LogoPost } from './ligue2-logo';
 import { brazilLogoPost } from './brazil-logo';
 import { fenerbahceLogoPost } from './fenerbahce-logo';
+import { interMiamiLogoPost } from './inter-miami-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -161,7 +162,8 @@ export const logoPosts: BlogPost[] = [
   celticGlasgowLogoPost,
   ligue2LogoPost,
   brazilLogoPost,
-  fenerbahceLogoPost
+  fenerbahceLogoPost,
+  interMiamiLogoPost
 ];
 
 // Logs détaillés pour le débogage

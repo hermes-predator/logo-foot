@@ -16,29 +16,41 @@ const BlogCTA = () => {
         
         <div className="relative hover:-translate-y-2 transition-transform duration-300">
           {/* Additional sparkle effects with different animation durations and positions */}
-          <div className="absolute -top-8 right-12 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute -top-12 right-20 text-blue-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
-            <Sparkles className="h-8 w-8" />
+            <Sparkles className="h-10 w-10" />
           </div>
-          <div className="absolute -top-4 left-1/4 text-purple-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute -top-8 left-1/3 text-purple-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
-            <Sparkles className="h-8 w-8" />
+            <Sparkles className="h-9 w-9" />
           </div>
-          <div className="absolute top-1/2 -left-8 text-amber-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute top-1/2 -left-12 text-amber-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '3.5s', animationIterationCount: 'infinite' }}>
-            <Sparkles className="h-8 w-8" />
+            <Sparkles className="h-10 w-10" />
           </div>
-          <div className="absolute bottom-0 right-1/4 text-purple-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute bottom-0 right-1/3 text-purple-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '4s', animationIterationCount: 'infinite' }}>
-            <Sparkles className="h-8 w-8" />
+            <Sparkles className="h-10 w-10" />
           </div>
-          <div className="absolute top-1/3 -right-6 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute top-1/4 -right-10 text-blue-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '2.5s', animationIterationCount: 'infinite' }}>
+            <Sparkles className="h-10 w-10" />
+          </div>
+          <div className="absolute bottom-1/3 -left-8 text-amber-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4.5s', animationIterationCount: 'infinite' }}>
+            <Sparkles className="h-9 w-9" />
+          </div>
+          <div className="absolute top-3/4 right-1/4 text-blue-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
             <Sparkles className="h-8 w-8" />
           </div>
-          <div className="absolute bottom-1/4 -left-4 text-amber-400 opacity-20 animate-ping pointer-events-none" 
-               style={{ animationDuration: '4.5s', animationIterationCount: 'infinite' }}>
-            <Sparkles className="h-8 w-8" />
+          <div className="absolute bottom-1/2 left-1/5 text-amber-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.7s' }}>
+            <Sparkles className="h-7 w-7" />
+          </div>
+          <div className="absolute -bottom-10 right-2/5 text-blue-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+            <Sparkles className="h-9 w-9" />
           </div>
         
           {/* Animated background gradient */}
@@ -49,12 +61,20 @@ const BlogCTA = () => {
                }}></div>
           
           {/* Decorative elements with animation */}
-          <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+          <div className="absolute -top-6 -right-6 text-blue-400 opacity-30 animate-ping pointer-events-none" 
                style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
+            <Sparkle className="h-14 w-14" />
+          </div>
+          <div className="absolute -bottom-6 -left-6 text-blue-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+            <Sparkle className="h-14 w-14" />
+          </div>
+          <div className="absolute top-3/4 -right-8 text-purple-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.7s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
             <Sparkle className="h-12 w-12" />
           </div>
-          <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping pointer-events-none" 
-               style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+          <div className="absolute bottom-1/4 -left-10 text-amber-400 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.3s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
             <Sparkle className="h-12 w-12" />
           </div>
           

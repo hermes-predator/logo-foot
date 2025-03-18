@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download, ArrowRight, Star, Folder, Check, Sparkle, Sparkles } from 'lucide-react';
@@ -67,9 +68,8 @@ const BlogCTA = () => {
                 <div className="p-5 md:p-7 md:w-2/3 relative">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-800 mb-4 border border-gray-200 shadow-sm">
                     <div className="flex">
-                      {[...Array(5)].map((_, index) => (
-                        <Star key={index} className="h-3.5 w-3.5 text-amber-500 fill-amber-400" />
-                      ))}
+                      {/* Changed to display only one star instead of five */}
+                      <Star className="h-3.5 w-3.5 text-amber-500 fill-amber-400" />
                     </div>
                     <span className="text-xs font-medium">Collection Premium</span>
                   </div>

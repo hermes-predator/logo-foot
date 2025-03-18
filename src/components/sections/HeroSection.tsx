@@ -29,12 +29,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
       </div>
 
-      <div className="max-w-4xl mx-auto text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-md mb-6">
-          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-amber-400 to-yellow-300 gold-shine">
-            <Crown className="w-4 h-4 text-white drop-shadow-sm" />
-          </div>
-          <span className="text-sm font-medium text-gray-800">Collection Premium</span>
+      <div className="max-w-4xl mx-auto text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200 border border-gray-300 shadow-sm transition-all duration-300 hover:shadow-md mb-2">
+          <Crown className="w-5 h-5 text-amber-500" style={{ fill: '#F59E0B', fillOpacity: 0.3 }} />
+          <span className="text-sm font-medium text-gray-900">Collection Premium</span>
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">

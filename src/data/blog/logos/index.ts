@@ -88,6 +88,7 @@ import { feyenoordLogoPost } from './feyenoord-logo';
 import { germanyLogoPost } from './germany-logo';
 import { spainLogoPost } from './spain-logo';
 import { italyLogoPost } from './italy-logo';
+import { sportingLogoPost } from './sporting-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -177,7 +178,8 @@ export const logoPosts: BlogPost[] = [
   feyenoordLogoPost,
   germanyLogoPost,
   spainLogoPost,
-  italyLogoPost
+  italyLogoPost,
+  sportingLogoPost
 ];
 
 // Logs détaillés pour le débogage

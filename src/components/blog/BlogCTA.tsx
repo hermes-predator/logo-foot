@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download, ArrowRight, Star, Folder, Check, Sparkle } from 'lucide-react';
@@ -10,7 +11,7 @@ const BlogCTA = () => {
       <div className="container max-w-4xl mx-auto px-4">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <h2 className="text-3xl font-bold text-black mb-3">Prêt à recevoir tous les logos foot ?</h2>
-          <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique.</p>
+          <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique</p>
         </div>
         
         {/* Container with enhanced lift effect - increased from -translate-y-1 to -translate-y-2 */}

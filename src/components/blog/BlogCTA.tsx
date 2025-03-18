@@ -60,7 +60,7 @@ const BlogCTA = () => {
                     className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto"
                   >
                     <Link to="/">
-                      <Download className="h-4 w-4 mr-1" />
+                      <Download className="h-4 w-4 mr-0.5" />
                       Démarrer
                     </Link>
                   </Button>
@@ -70,9 +70,9 @@ const BlogCTA = () => {
                     size="default"
                     className="border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 w-full sm:w-auto"
                   >
-                    <Link to="/" className="gap-1">
+                    <Link to="/" className="gap-0.5">
                       En savoir plus
-                      <ArrowRight className="h-4 w-4 ml-1" />
+                      <ArrowRight className="h-4 w-4 ml-0.5" />
                     </Link>
                   </Button>
                 </div>

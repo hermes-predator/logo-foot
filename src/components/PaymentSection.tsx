@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -69,29 +70,29 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200 group"
           role="article"
           aria-label="Information sur le paiement sécurisé"
         >
-          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
           <p className="text-xs text-gray-600 text-center">Transactions protégées via SumUp</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200 group"
           role="article"
           aria-label="Information sur le téléchargement instantané"
         >
-          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200 group"
           role="article"
           aria-label="Information sur le support client"
         >
-          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
           <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
@@ -118,13 +119,14 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
+            <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>
             
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-2xl md:text-3xl font-extrabold mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                <Trophy className="h-6 w-6 text-blue-500" />
+                <h3 className="text-2xl md:text-3xl font-extrabold mt-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
@@ -142,7 +144,7 @@ const PaymentSection = () => {
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div className="flex items-center gap-2">
-                <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
+                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">10,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">
@@ -175,7 +177,7 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />

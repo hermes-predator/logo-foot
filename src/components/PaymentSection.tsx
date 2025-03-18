@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -58,12 +57,12 @@ const PaymentSection = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-4">
-      <div className="text-center mb-6 animate-fade-in">
-        <h2 className="text-4xl font-bold mb-3 text-black">
+    <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="text-center mb-8 animate-fade-in">
+        <h2 className="text-4xl font-bold mb-4 text-black">
           Prêt à tout recevoir ?
         </h2>
-        <p className="text-gray-600 text-lg mb-4">
+        <p className="text-gray-600 text-lg mb-6">
           Recevez-le instantanément après paiement
         </p>
       </div>
@@ -100,8 +99,18 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
-            {/* Animated stars - in different positions */}
+          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200 overflow-hidden">
+            {/* Shining effect overlay */}
+            <div 
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent)',
+                transform: 'translateX(-100%)',
+                animation: 'shine 3s infinite linear',
+              }}
+            />
+
+            {/* Original animated stars */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
               <Sparkle className="h-12 w-12" />
@@ -219,4 +228,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

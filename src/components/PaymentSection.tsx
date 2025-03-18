@@ -210,7 +210,7 @@ const PaymentSection = () => {
 
       <div className="mt-8 text-center">
         <p className="text-base text-gray-500 flex items-center justify-center gap-2 transition-all duration-300 hover:text-gray-600">
-          <Shield className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
+          <ShieldCheck className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
           Paiement sécurisé via SumUp
         </p>
       </div>

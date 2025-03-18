@@ -12,7 +12,7 @@ const PackDescription = () => {
               <span className="text-sm font-medium text-red-100">Information importante</span>
             </div>
             <p className="text-base font-medium text-gray-100">
-              Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique. Il vous apportera beaucoup de valeurs et de confiance dans vos projets.
+              Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine numérique.
             </p>
           </div>
         </div>

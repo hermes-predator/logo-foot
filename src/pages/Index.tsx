@@ -1,5 +1,5 @@
 
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';

@@ -14,9 +14,13 @@ const BlogCTA = () => {
         </div>
         
         <div className="relative hover:-translate-y-2 transition-transform duration-300">
-          {/* Additional sparkle effects */}
+          {/* Additional sparkle effects with different animation durations and positions */}
           <div className="absolute -top-8 right-12 text-blue-400 opacity-20 animate-ping pointer-events-none" 
                style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
+            <Sparkles className="h-8 w-8" />
+          </div>
+          <div className="absolute -top-4 left-1/4 text-purple-400 opacity-20 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
             <Sparkles className="h-8 w-8" />
           </div>
           <div className="absolute top-1/2 -left-8 text-amber-400 opacity-20 animate-ping pointer-events-none" 
@@ -27,15 +31,23 @@ const BlogCTA = () => {
                style={{ animationDuration: '4s', animationIterationCount: 'infinite' }}>
             <Sparkles className="h-8 w-8" />
           </div>
+          <div className="absolute top-1/3 -right-6 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+               style={{ animationDuration: '2.5s', animationIterationCount: 'infinite' }}>
+            <Sparkles className="h-8 w-8" />
+          </div>
+          <div className="absolute bottom-1/4 -left-4 text-amber-400 opacity-20 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4.5s', animationIterationCount: 'infinite' }}>
+            <Sparkles className="h-8 w-8" />
+          </div>
         
-          {/* Animated background gradient with pointer-events-none */}
+          {/* Animated background gradient */}
           <div className="absolute inset-0 -z-10 animate-pulse pointer-events-none" 
                style={{
                  background: 'radial-gradient(circle at center, rgba(59,130,246,0.15) 0%, transparent 70%)',
                  filter: 'blur(40px)',
                }}></div>
           
-          {/* Decorative elements with animation and pointer-events-none */}
+          {/* Decorative elements with animation */}
           <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping pointer-events-none" 
                style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
             <Sparkle className="h-12 w-12" />
@@ -45,6 +57,7 @@ const BlogCTA = () => {
             <Sparkle className="h-12 w-12" />
           </div>
           
+          {/* Main card component */}
           <Card className="overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 relative">
             {/* Gold shine effect with pointer-events-none */}
             <div className="gold-shine absolute inset-0 pointer-events-none"></div>

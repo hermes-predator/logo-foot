@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200 border border-gray-300 shadow-sm transition-all duration-300 hover:shadow-md mb-2">
-          <Crown className="w-5 h-5 text-amber-500" style={{ fill: '#F59E0B', fillOpacity: 0.3 }} />
+          <Crown className="w-5 h-5 text-yellow-600" style={{ fill: '#FFC107', fillOpacity: 0.7 }} />
           <span className="text-sm font-medium text-gray-900">Collection Premium</span>
         </div>
 

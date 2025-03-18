@@ -8,7 +8,7 @@ interface BlogArticleListProps {
 }
 
 const BlogArticleList = ({ articles }: BlogArticleListProps) => {
-  // Effet pour le débogage au chargement
+  // Debug effect on load
   useEffect(() => {
     console.log(`BlogArticleList rendering with ${articles?.length || 0} articles`);
     if (articles && articles.length > 0) {
@@ -22,7 +22,7 @@ const BlogArticleList = ({ articles }: BlogArticleListProps) => {
     }
   }, [articles]);
 
-  // Vérification de sécurité pour éviter les erreurs de rendu
+  // Safety check to prevent rendering errors
   if (!articles || articles.length === 0) {
     return (
       <section className="text-center py-12">

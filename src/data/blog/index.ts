@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
@@ -41,10 +42,10 @@ console.log('Article Galatasaray:', galatasarayArticle ? {
   category: galatasarayArticle.category
 } : 'Non trouvé dans logoPosts');
 
-// Rassembler tous les articles
+// Gather all blog posts from different categories
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
 
-// Vérifier les ID en double
+// Check for duplicate IDs and fix them
 const idCounts: Record<number, number> = {};
 const duplicateIds: number[] = [];
 
@@ -63,24 +64,35 @@ duplicateIds.forEach(id => {
     duplicates.map(p => p.category).join(', '));
 });
 
-// Créer une liste d'articles avec des ID uniques
+// Create a list of posts with unique IDs
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 let nextId = Math.max(...allPosts.map(post => post.id), 0) + 1;
 
 allPosts.forEach(post => {
   if (!seenIds.has(post.id)) {
-    // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
+    // If ID hasn't been seen yet, add the article as is
     uniquePosts.push({...post});
     seenIds.add(post.id);
   } else {
-    // Si l'ID est un doublon, créez une copie avec un ID modifié
+    // If ID is a duplicate, create a copy with a modified ID
     const newPost = { ...post, id: nextId++ };
     uniquePosts.push(newPost);
     console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newPost.id}`);
   }
 });
 
-// Trier par date décroissante
+// Sort by descending date
 export const blogPosts: BlogPost[] = uniquePosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+// Final verification
+console.log('\nFinal unique posts count:', blogPosts.length);
+console.log('Total posts (with duplicates):', allPosts.length);
+console.log('Specific articles present in final list:',
+  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')) ? 'Chelsea ✓' : 'Chelsea ✗',
+  blogPosts.some(post => post.title.toLowerCase().includes('juventus')) ? 'Juventus ✓' : 'Juventus ✗',
+  blogPosts.some(post => post.title.toLowerCase().includes('galatasaray')) ? 'Galatasaray ✓' : 'Galatasaray ✗'
+);
+console.log('Final posts IDs count:', new Set(blogPosts.map(post => post.id)).size);
+console.log('************************************************\n');

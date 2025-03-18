@@ -5,21 +5,32 @@ import { BlogPost } from '../types/blog';
 export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
   const [currentPage, setCurrentPage] = useState(1);
   
-  // Calcul du nombre total de pages de façon mémorisée
-  const totalPages = useMemo(() => Math.max(1, Math.ceil(items.length / itemsPerPage)), [items.length, itemsPerPage]);
+  // Calculate total pages in a memoized way
+  const totalPages = useMemo(() => 
+    Math.max(1, Math.ceil(items.length / itemsPerPage)), 
+    [items.length, itemsPerPage]
+  );
   
-  // Assurer que la page courante est valide de façon mémorisée
-  const validCurrentPage = useMemo(() => {
-    return Math.min(Math.max(1, currentPage), totalPages);
-  }, [currentPage, totalPages]);
+  // Ensure current page is valid in a memoized way
+  const validCurrentPage = useMemo(() => 
+    Math.min(Math.max(1, currentPage), totalPages),
+    [currentPage, totalPages]
+  );
   
-  // Calculer les éléments paginés de façon mémorisée
+  // Automatically adjust current page if it becomes invalid
+  useEffect(() => {
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages);
+    }
+  }, [totalPages, currentPage]);
+  
+  // Calculate paginated items in a memoized way
   const paginatedItems = useMemo(() => {
     const startIndex = (validCurrentPage - 1) * itemsPerPage;
     return items.slice(startIndex, startIndex + itemsPerPage);
   }, [items, validCurrentPage, itemsPerPage]);
 
-  // Log détaillé pour le débogage
+  // Detailed log for debugging
   useEffect(() => {
     console.log('Pagination debug details:', {
       totalItems: items.length,

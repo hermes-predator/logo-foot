@@ -270,7 +270,7 @@ const BlogPost = () => {
               >
                 <Link to="/" className="flex items-center gap-3">
                   <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
-                  <span className="text-white">Télécharger le zip de + de 8 600 logos de foot</span>
+                  <span className="text-white">Télécharger le zip de + 8 600 logos de foot</span>
                   <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />
                 </Link>
               </Button>

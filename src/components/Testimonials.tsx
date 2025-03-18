@@ -90,7 +90,7 @@ const Testimonials = () => {
               align: "center",
               loop: true,
             }}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full max-w-5xl mx-auto px-4"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {visibleTestimonials.map((testimonial, index) => (
@@ -118,8 +118,8 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-5" />
-            <CarouselNext className="hidden md:flex -right-5" />
+            <CarouselPrevious className="hidden md:flex -left-2" />
+            <CarouselNext className="hidden md:flex -right-2" />
           </Carousel>
         )}
       </div>

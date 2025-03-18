@@ -14,8 +14,8 @@ const BlogCTA = () => {
           <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique.</p>
         </div>
         
-        {/* Container with lift effect */}
-        <div className="relative hover:-translate-y-1 transition-transform duration-300">
+        {/* Container with enhanced lift effect - increased from -translate-y-1 to -translate-y-2 */}
+        <div className="relative hover:-translate-y-2 transition-transform duration-300">
           {/* Animated background gradient with pointer-events-none to avoid interfering with clicks */}
           <div className="absolute inset-0 -z-10 animate-pulse pointer-events-none" 
                style={{

@@ -76,6 +76,7 @@ import { napoliLogoPost } from './napoli-logo';
 import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 import { glasgowRangersLogoPost } from './glasgow-rangers-logo';
 import { celticGlasgowLogoPost } from './celtic-glasgow-logo';
+import { ligue2LogoPost } from './ligue2-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -144,7 +145,7 @@ export const logoPosts: BlogPost[] = [
   ajaxLogoPost,
   franceLogoPost,
   championsLeagueLogoPost,
-  europaLeagueLogoPost,
+  europaLogoPost,
   galatasarayLogoPost,
   englandLogoPost,
   atleticoMadridLogoPost,
@@ -153,7 +154,8 @@ export const logoPosts: BlogPost[] = [
   napoliLogoPost,
   rbLeipzigLogoPost,
   glasgowRangersLogoPost,
-  celticGlasgowLogoPost
+  celticGlasgowLogoPost,
+  ligue2LogoPost
 ];
 
 // Logs détaillés pour le débogage

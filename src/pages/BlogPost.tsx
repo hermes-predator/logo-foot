@@ -249,15 +249,15 @@ const BlogPost = () => {
               />
             )}
             
-            {/* BlogCTA component moved here, right after the main image */}
-            <div className="my-8">
-              <BlogCTA />
-            </div>
-            
             <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
               <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>
+            </div>
+            
+            {/* BlogCTA component moved to the end of the article */}
+            <div className="mt-12">
+              <BlogCTA />
             </div>
           </article>
         </div>

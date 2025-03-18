@@ -73,6 +73,7 @@ import { atleticoMadridLogoPost } from './atletico-madrid-logo';
 import { clermontFootLogoPost } from './clermont-foot-logo';
 import { laLigaLogoPost } from './la-liga-logo';
 import { napoliLogoPost } from './napoli-logo';
+import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -147,7 +148,8 @@ export const logoPosts: BlogPost[] = [
   atleticoMadridLogoPost,
   clermontFootLogoPost,
   laLigaLogoPost,
-  napoliLogoPost
+  napoliLogoPost,
+  rbLeipzigLogoPost
 ];
 
 // Logs détaillés pour le débogage

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BlogPost } from '../../types/blog';
 import BlogArticleCard from './BlogArticleCard';
 
@@ -8,16 +8,21 @@ interface BlogArticleListProps {
 }
 
 const BlogArticleList = ({ articles }: BlogArticleListProps) => {
-  // Ajout de logs pour le débogage
-  console.log(`BlogArticleList rendering with ${articles.length} articles`);
-  if (articles.length > 0) {
-    console.log('First article:', {
-      id: articles[0].id,
-      title: articles[0].title,
-      date: articles[0].date
-    });
-  }
+  // Effet pour le débogage au chargement
+  useEffect(() => {
+    console.log(`BlogArticleList rendering with ${articles?.length || 0} articles`);
+    if (articles && articles.length > 0) {
+      console.log('First article:', {
+        id: articles[0].id,
+        title: articles[0].title,
+        date: articles[0].date
+      });
+    } else {
+      console.log('No articles available to display');
+    }
+  }, [articles]);
 
+  // Vérification de sécurité pour éviter les erreurs de rendu
   if (!articles || articles.length === 0) {
     return (
       <section className="text-center py-12">

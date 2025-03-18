@@ -1,5 +1,5 @@
 
-import { BlogPost } from '../../types/blog';
+import { BlogPost } from '../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
 import { historyPosts } from './history';
@@ -22,6 +22,7 @@ console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', ')
 // Vérification spécifique pour les articles Chelsea et Juventus
 const chelseaArticle = logoPosts.find(post => post.title.toLowerCase().includes('chelsea'));
 const juventusArticle = logoPosts.find(post => post.title.toLowerCase().includes('juventus'));
+const galatasarayArticle = logoPosts.find(post => post.title.toLowerCase().includes('galatasaray'));
 
 console.log('\nArticle Chelsea:', chelseaArticle ? {
   id: chelseaArticle.id,
@@ -35,56 +36,63 @@ console.log('Article Juventus:', juventusArticle ? {
   category: juventusArticle.category
 } : 'Non trouvé dans logoPosts');
 
-// Check for duplicate IDs
+console.log('Article Galatasaray:', galatasarayArticle ? {
+  id: galatasarayArticle.id,
+  title: galatasarayArticle.title,
+  category: galatasarayArticle.category
+} : 'Non trouvé dans logoPosts');
+
+// Rassembler tous les articles
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
-const idCounts = allPosts.reduce((acc, post) => {
-  acc[post.id] = (acc[post.id] || 0) + 1;
-  return acc;
-}, {} as Record<string, number>);
 
-console.log('\nDuplicate IDs found:');
-Object.entries(idCounts)
-  .filter(([_, count]) => count > 1)
-  .forEach(([id, count]) => {
-    const duplicates = allPosts.filter(post => post.id === Number(id));
-    console.log(`ID ${id} appears ${count} times in categories:`, 
-      duplicates.map(p => p.category).join(', '));
-  });
+// Vérifier les ID en double
+const idCounts: Record<number, number> = {};
+const duplicateIds: number[] = [];
 
-// Au lieu d'utiliser une Map qui écrase les doublons, conservons tous les articles 
-// mais assurons-nous que les IDs sont uniques en ajoutant un suffixe aux doublons
+allPosts.forEach(post => {
+  const id = post.id;
+  idCounts[id] = (idCounts[id] || 0) + 1;
+  if (idCounts[id] > 1 && !duplicateIds.includes(id)) {
+    duplicateIds.push(id);
+  }
+});
+
+console.log('\nDuplicate IDs found:', duplicateIds.length > 0 ? duplicateIds.join(', ') : 'None');
+duplicateIds.forEach(id => {
+  const duplicates = allPosts.filter(post => post.id === id);
+  console.log(`ID ${id} appears ${idCounts[id]} times in categories:`, 
+    duplicates.map(p => p.category).join(', '));
+});
+
+// Créer une liste d'articles avec des ID uniques
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
+let nextId = Math.max(...allPosts.map(post => post.id), 0) + 1;
 
 allPosts.forEach(post => {
   if (!seenIds.has(post.id)) {
     // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
-    uniquePosts.push(post);
+    uniquePosts.push({...post});
     seenIds.add(post.id);
   } else {
     // Si l'ID est un doublon, créez une copie avec un ID modifié
-    // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
-    const maxId = Math.max(...Array.from(seenIds));
-    const newId = maxId + 1;
-    
-    // Créons une copie de l'article avec le nouvel ID
-    const newPost = { ...post, id: newId };
+    const newPost = { ...post, id: nextId++ };
     uniquePosts.push(newPost);
-    seenIds.add(newId);
-    
-    console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newId}`);
+    console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newPost.id}`);
   }
 });
 
-// Trier par date décroissante comme avant
+// Trier par date décroissante
 export const blogPosts: BlogPost[] = uniquePosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérifier que les articles problématiques sont bien présents
+// Vérification finale
 console.log('\nFinal unique posts count:', blogPosts.length);
-console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
-  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
-  blogPosts.some(post => post.title.toLowerCase().includes('juventus'))
+console.log('Total posts (avec doublons):', allPosts.length);
+console.log('Articles spécifiques présents dans la liste finale:',
+  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')) ? 'Chelsea ✓' : 'Chelsea ✗',
+  blogPosts.some(post => post.title.toLowerCase().includes('juventus')) ? 'Juventus ✓' : 'Juventus ✗',
+  blogPosts.some(post => post.title.toLowerCase().includes('galatasaray')) ? 'Galatasaray ✓' : 'Galatasaray ✗'
 );
-console.log('Final posts IDs:', blogPosts.map(post => post.id).sort((a, b) => a - b).join(', '));
+console.log('Final posts IDs count:', new Set(blogPosts.map(post => post.id)).size);
 console.log('************************************************\n');

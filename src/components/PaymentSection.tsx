@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Star, Sparkle } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -99,7 +99,7 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
+          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
             {/* Animated stars */}
             <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
@@ -118,9 +118,6 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Decorative background gradient with pointer-events-none */}
-            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30 pointer-events-none"></div>
-            
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>
@@ -128,13 +125,6 @@ const PaymentSection = () => {
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                <div className="flex -space-x-1">
-                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
-                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
-                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
-                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
-                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
-                </div>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
@@ -153,13 +143,6 @@ const PaymentSection = () => {
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div className="flex items-center gap-2">
                 <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
-                <div className="flex -space-x-1 ml-2">
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
-                </div>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">

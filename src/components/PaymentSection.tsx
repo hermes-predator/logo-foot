@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -149,16 +150,18 @@ const PaymentSection = () => {
                 <div className="group">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 hover:border-green-200 transition-all duration-300">
-                        <RefreshCcw className="h-4 w-4 text-green-600 group-hover:rotate-180 transition-transform duration-500" />
-                        <span className="text-sm text-green-700 font-medium whitespace-nowrap">
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-[#f1f9f1] via-[#e1f7e5] to-[#edfaf4] border border-emerald-100 hover:border-emerald-200 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px]">
+                        <div className="relative p-1 rounded-full bg-gradient-to-r from-[#7bed9f] to-[#2ed573]">
+                          <RefreshCcw className="h-3.5 w-3.5 text-white group-hover:rotate-180 transition-transform duration-500" />
+                        </div>
+                        <span className="text-sm font-medium whitespace-nowrap bg-gradient-to-r from-emerald-600 to-green-700 text-transparent bg-clip-text">
                           Satisfait ou remboursé
                         </span>
-                        <Info className="h-3.5 w-3.5 text-green-600 group-hover:opacity-75 transition-opacity" />
+                        <Info className="h-3.5 w-3.5 text-emerald-500 group-hover:opacity-75 transition-opacity" />
                       </div>
                     </TooltipTrigger>
-                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-green-100 shadow-lg">
-                      <p className="font-semibold">Votre satisfaction est importante.</p>
+                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-emerald-100 shadow-lg rounded-lg">
+                      <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
                       <div className="space-y-2 text-gray-600">
                         <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
                         <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
@@ -202,3 +205,4 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
+

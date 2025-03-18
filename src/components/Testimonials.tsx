@@ -57,7 +57,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients
@@ -72,7 +72,7 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-3xl mx-auto"
+          className="w-full max-w-4xl mx-auto"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
@@ -99,8 +99,8 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-4" />
-          <CarouselNext className="hidden md:flex -right-4" />
+          <CarouselPrevious className="hidden md:flex -left-6" />
+          <CarouselNext className="hidden md:flex -right-6" />
         </Carousel>
       </div>
     </section>

@@ -16,6 +16,28 @@ const BlogCTA = () => {
         
         <div className="relative hover:-translate-y-2 transition-transform duration-300">
           {/* Additional sparkle effects with different animation durations and positions */}
+          <div className="absolute -top-8 -left-10 text-amber-500 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '0.4s' }}>
+            <Sparkle className="h-10 w-10" />
+          </div>
+          <div className="absolute -top-10 left-1/3 text-purple-500 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4.1s', animationIterationCount: 'infinite', animationDelay: '0.7s' }}>
+            <Sparkle className="h-12 w-12" />
+          </div>
+          <div className="absolute -top-12 right-1/4 text-blue-500 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.7s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
+            <Sparkle className="h-8 w-8" />
+          </div>
+          <div className="absolute -bottom-10 -right-6 text-amber-500 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '4.3s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
+            <Sparkle className="h-10 w-10" />
+          </div>
+          <div className="absolute -bottom-8 left-1/4 text-purple-500 opacity-30 animate-ping pointer-events-none" 
+               style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
+            <Sparkle className="h-8 w-8" />
+          </div>
+          
+          {/* More sparkle clusters with different sizes and colors */}
           <div className="absolute -top-8 right-12 text-blue-400 opacity-20 animate-ping pointer-events-none" 
                style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
             <Sparkles className="h-8 w-8" />
@@ -39,6 +61,16 @@ const BlogCTA = () => {
           <div className="absolute bottom-1/4 -left-4 text-amber-400 opacity-20 animate-ping pointer-events-none" 
                style={{ animationDuration: '4.5s', animationIterationCount: 'infinite' }}>
             <Sparkles className="h-8 w-8" />
+          </div>
+          
+          {/* Extra larger sparkles at corners for more dramatic effect */}
+          <div className="absolute -top-16 -left-16 text-amber-300 opacity-20 animate-ping pointer-events-none" 
+               style={{ animationDuration: '5s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+            <Sparkles className="h-16 w-16" />
+          </div>
+          <div className="absolute -bottom-16 -right-16 text-blue-300 opacity-20 animate-ping pointer-events-none" 
+               style={{ animationDuration: '5.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
+            <Sparkles className="h-16 w-16" />
           </div>
         
           {/* Animated background gradient */}

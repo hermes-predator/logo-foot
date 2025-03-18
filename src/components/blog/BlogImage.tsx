@@ -10,9 +10,10 @@ interface BlogImageProps {
   src: string;
   alt: string;
   className?: string;
+  isDefault?: boolean;
 }
 
-const BlogImage = ({ src, alt, className = "" }: BlogImageProps) => {
+const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
 
   return (
@@ -22,7 +23,7 @@ const BlogImage = ({ src, alt, className = "" }: BlogImageProps) => {
           ref={imgRef}
           src={isInView ? src : '/placeholder.svg'}
           alt={alt}
-          className={`w-full h-full object-cover ${className}`}
+          className={`w-full h-full object-cover ${isDefault ? 'opacity-90' : ''} ${className}`}
           loading="lazy"
         />
       </AspectRatio>

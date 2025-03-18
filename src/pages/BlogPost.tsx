@@ -45,7 +45,7 @@ const BlogPost = () => {
   const postDate = new Date(post.date);
   const formattedDate = format(postDate, 'yyyy-MM-dd');
   
-  // Extraire le sujet principal de l'article (premier mot du titre généralement)
+  // Extract the main subject from the title
   const mainSubject = post.title.split(' ')[0].toLowerCase();
   
   // SEO Optimizations
@@ -53,14 +53,14 @@ const BlogPost = () => {
   const metaDescription = `${post.excerpt} Guide complet et analyse détaillée mis à jour en ${currentYear}. Tout savoir sur les logos, écussons et emblèmes du football.`;
   const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel, football ${mainSubject}, logo ${mainSubject}`;
   
-  // Définir l'URL de l'image OG
+  // Define OG image URL - use default image if no galleryImageId
   const ogImageUrl = post.galleryImageId 
     ? `https://logo-foot.com/blog-images/${post.id}.png` 
     : 'https://logo-foot.com/og-image.png';
 
   const postUrl = `https://logo-foot.com/blog/${post.id}`;
 
-  // Données structurées améliorées
+  // Enhanced structured data
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -160,6 +160,18 @@ const BlogPost = () => {
     ),
   };
 
+  // Determine image source based on category if no galleryImageId
+  const getDefaultImageSrc = (category: string) => {
+    const categoryMap = {
+      'logos': '/blog-images/default-logos.png',
+      'history': '/blog-images/default-history.png',
+      'technical': '/blog-images/default-technical.png',
+      'analysis': '/blog-images/default-analysis.png'
+    };
+    
+    return categoryMap[category] || '/blog-images/default.png';
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
@@ -221,11 +233,18 @@ const BlogPost = () => {
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight" itemProp="headline">{post.title}</h1>
             
-            {post.galleryImageId && (
+            {post.galleryImageId ? (
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
                 alt={`${post.title.split(':')[0]}`}
                 className="mb-8 rounded-xl"
+              />
+            ) : (
+              <BlogImage
+                src={getDefaultImageSrc(post.category)}
+                alt={`${post.title.split(':')[0]}`}
+                className="mb-8 rounded-xl"
+                isDefault={true}
               />
             )}
             

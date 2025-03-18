@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, ShieldCheck, Zap, Folder, Check, Image } from 'lucide-react';
+import { Download, ArrowRight, Star, Zap, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -29,16 +29,15 @@ const BlogCTA = () => {
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-5">
-                  Découvrez notre pack exclusif de plus de <span className="font-semibold text-blue-700">8 600 logos</span> de football en haute qualité, 
-                  parfaitement organisés.
+                  Découvrez notre pack exclusif de plus de 8 600 logos de football en haute qualité, parfaitement organisés.
                 </p>
                 
                 <ul className="space-y-3 mb-5 text-sm">
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
-                      <Image className="h-3 w-3" />
+                      <Folder className="h-3 w-3" />
                     </div>
-                    <span className="font-medium">+ 8 600 logos PNG de haute qualité</span>
+                    <span className="font-medium">8600+ logos PNG de haute qualité</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">

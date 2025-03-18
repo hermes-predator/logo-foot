@@ -84,6 +84,7 @@ import { interMiamiLogoPost } from './inter-miami-logo';
 import { besiktasLogoPost } from './besiktas-logo';
 import { eredivisieLogoPost } from './eredivisie-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
+import { feyenoordLogoPost } from './feyenoord-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -169,7 +170,8 @@ export const logoPosts: BlogPost[] = [
   interMiamiLogoPost,
   besiktasLogoPost,
   eredivisieLogoPost,
-  strasbourgLogoPost
+  strasbourgLogoPost,
+  feyenoordLogoPost
 ];
 
 // Logs détaillés pour le débogage

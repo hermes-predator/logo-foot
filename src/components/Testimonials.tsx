@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// On limite à 3 témoignages les plus pertinents
 const testimonials = [
   {
     name: "Thomas D.",
@@ -27,6 +26,30 @@ const testimonials = [
     name: "Pierre M.",
     role: "Créateur de contenu sportif",
     content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
+    rating: 5
+  },
+  {
+    name: "Sophie R.",
+    role: "Community Manager",
+    content: "Merci pour le gain de temps !",
+    rating: 5
+  },
+  {
+    name: "Lucas F.",
+    role: "Journaliste sportif",
+    content: "Une ressource indispensable pour tout créateur de contenu sport. Service client au top !",
+    rating: 5
+  },
+  {
+    name: "Emma V.",
+    role: "Graphiste freelance",
+    content: "La meilleure collection de logos que j'ai pu trouver. Mise à jour régulière et qualité constante.",
+    rating: 5
+  },
+  {
+    name: "Alexandre G.",
+    role: "Analyste sportif",
+    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci encore à vous.",
     rating: 5
   }
 ];
@@ -79,7 +102,7 @@ const Testimonials = () => {
         </div>
         
         {!isLoaded ? (
-          <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="w-full max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="bg-white/60 p-5 rounded-lg shadow-sm animate-pulse h-[200px]"></div>
             ))}
@@ -87,15 +110,15 @@ const Testimonials = () => {
         ) : (
           <Carousel
             opts={{
-              align: "center",
+              align: "start",
               loop: true,
             }}
-            className="w-full max-w-5xl mx-auto px-4"
+            className="w-full max-w-3xl mx-auto"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {visibleTestimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 pb-4">
-                  <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[210px] relative overflow-hidden">
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
+                  <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[210px] relative overflow-hidden">
                     <Quote className="absolute text-blue-100 w-16 h-16 -right-3 -top-3 opacity-30" />
                     <div className="flex items-center gap-1 text-yellow-400 mb-3">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -118,8 +141,8 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-2" />
-            <CarouselNext className="hidden md:flex -right-2" />
+            <CarouselPrevious className="hidden md:flex -left-5" />
+            <CarouselNext className="hidden md:flex -right-5" />
           </Carousel>
         )}
       </div>

@@ -41,8 +41,8 @@ const BlogCTA = () => {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-800 mb-3 group">
-                  <span className="font-mono bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-500">⦗FRONT-CLOUD⦘</span>
-                  <span className="group-hover:text-blue-600 transition-colors duration-300">~ Football.zip</span>
+                  <span className="font-mono bg-clip-text text-black">⦗FRONT-CLOUD⦘</span>
+                  <span className="group-hover:text-blue-600 transition-colors duration-300 text-black">~ Football.zip</span>
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-5">

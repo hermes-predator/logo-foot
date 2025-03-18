@@ -1,5 +1,4 @@
-
-import { BlogPost } from '../types/blog';
+import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
 import { historyPosts } from './history';
@@ -85,14 +84,3 @@ allPosts.forEach(post => {
 // Trier par date décroissante
 export const blogPosts: BlogPost[] = uniquePosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-// Vérification finale
-console.log('\nFinal unique posts count:', blogPosts.length);
-console.log('Total posts (avec doublons):', allPosts.length);
-console.log('Articles spécifiques présents dans la liste finale:',
-  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')) ? 'Chelsea ✓' : 'Chelsea ✗',
-  blogPosts.some(post => post.title.toLowerCase().includes('juventus')) ? 'Juventus ✓' : 'Juventus ✗',
-  blogPosts.some(post => post.title.toLowerCase().includes('galatasaray')) ? 'Galatasaray ✓' : 'Galatasaray ✗'
-);
-console.log('Final posts IDs count:', new Set(blogPosts.map(post => post.id)).size);
-console.log('************************************************\n');

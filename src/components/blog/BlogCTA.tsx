@@ -103,8 +103,8 @@ const BlogCTA = () => {
                 </div>
                 <div className="relative overflow-hidden md:w-1/3">
                   <img 
-                    src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
-                    alt="Dossiers de football avec drapeaux de pays" 
+                    src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png"
+                    alt="Collection de logos de clubs de football" 
                     className="h-full w-full object-cover object-center min-h-[220px]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30 pointer-events-none"></div>

@@ -173,7 +173,7 @@ const PaymentSection = () => {
                         <Info className="h-3.5 w-3.5 text-emerald-500 group-hover:opacity-75 transition-opacity" />
                       </div>
                     </TooltipTrigger>
-                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-emerald-100 shadow-lg rounded-lg">
+                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
                       <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
                       <div className="space-y-2 text-gray-600">
                         <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>

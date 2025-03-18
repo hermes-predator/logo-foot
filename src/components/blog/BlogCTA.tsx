@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, Zap, Folder } from 'lucide-react';
+import { Download, ArrowRight, Star, Zap, Folder, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -11,7 +11,7 @@ const BlogCTA = () => {
       <div className="container max-w-4xl mx-auto px-4 relative">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-3">Prêt à recevoir tous les logos de foot ?</h2>
-          <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">+ <span className="font-bold">8 600 logos de football</span> réunie dans un fichier ZIP unique.</p>
+          <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">+ <span className="font-bold text-blue-500">8 600 logos de football</span> réunie dans un fichier ZIP unique.</p>
         </div>
         
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_70%)]"></div>
@@ -29,7 +29,7 @@ const BlogCTA = () => {
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-5">
-                  Découvrez notre pack exclusif de plus de <span className="font-bold">8 600 logos de football</span> en haute qualité, parfaitement organisés.
+                  Découvrez notre pack exclusif de plus de <span className="font-bold text-blue-500">8 600 logos de football</span> en haute qualité, parfaitement organisés.
                 </p>
                 
                 <ul className="space-y-3 mb-5 text-sm">
@@ -41,7 +41,7 @@ const BlogCTA = () => {
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
-                      <Folder className="h-3 w-3" />
+                      <CheckCircle className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Fichier consultable</span>
                   </li>

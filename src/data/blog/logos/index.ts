@@ -1,4 +1,5 @@
 
+
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -145,7 +146,7 @@ export const logoPosts: BlogPost[] = [
   ajaxLogoPost,
   franceLogoPost,
   championsLeagueLogoPost,
-  europaLogoPost,
+  europaLeagueLogoPost,
   galatasarayLogoPost,
   englandLogoPost,
   atleticoMadridLogoPost,
@@ -170,3 +171,4 @@ console.log('Liste des articles juventus et chelsea:', logoPosts.filter(post =>
   date: post.date
 })));
 console.log('******************************************');
+

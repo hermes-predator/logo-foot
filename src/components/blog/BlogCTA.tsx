@@ -64,7 +64,7 @@ const BlogCTA = () => {
                   <Button 
                     asChild 
                     size="sm"
-                    className="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto py-1 h-8 text-xs"
+                    className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto py-1 h-8 text-xs"
                   >
                     <Link to="/">
                       <Download className="h-3.5 w-3.5 mr-0.5" />

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, Zap, Folder, CheckCircle } from 'lucide-react';
+import { Download, ArrowRight, Star, Folder, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -41,13 +41,13 @@ const BlogCTA = () => {
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
-                      <CheckCircle className="h-3 w-3" />
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Fichier consultable</span>
                   </li>
                   <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600">
-                      <Zap className="h-3 w-3" />
+                      <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Téléchargement instantané</span>
                   </li>

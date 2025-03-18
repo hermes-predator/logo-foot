@@ -68,6 +68,7 @@ import { franceLogoPost } from './france-logo';
 import { championsLeagueLogoPost } from './champions-league-logo';
 import { europaLeagueLogoPost } from './europa-league-logo';
 import { galatasarayLogoPost } from './galatasaray-logo';
+import { englandLogoPost } from './england-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -137,7 +138,8 @@ export const logoPosts: BlogPost[] = [
   franceLogoPost,
   championsLeagueLogoPost,
   europaLeagueLogoPost,
-  galatasarayLogoPost
+  galatasarayLogoPost,
+  englandLogoPost
 ];
 
 // Logs détaillés pour le débogage

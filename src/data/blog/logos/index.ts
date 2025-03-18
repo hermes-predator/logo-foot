@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { frontCloudPost } from './front-cloud';
 import { clubHistoryPost } from './club-history';
@@ -81,6 +80,7 @@ import { ligue2LogoPost } from './ligue2-logo';
 import { brazilLogoPost } from './brazil-logo';
 import { fenerbahceLogoPost } from './fenerbahce-logo';
 import { interMiamiLogoPost } from './inter-miami-logo';
+import { besiktasLogoPost } from './besiktas-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -163,7 +163,8 @@ export const logoPosts: BlogPost[] = [
   ligue2LogoPost,
   brazilLogoPost,
   fenerbahceLogoPost,
-  interMiamiLogoPost
+  interMiamiLogoPost,
+  besiktasLogoPost
 ];
 
 // Logs détaillés pour le débogage

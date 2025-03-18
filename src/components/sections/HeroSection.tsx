@@ -30,11 +30,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
 
       <div className="max-w-4xl mx-auto text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-200 border border-amber-200/80 shadow-sm transition-all duration-300 hover:shadow-md mb-6">
-          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-amber-500 to-yellow-400">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-md mb-6">
+          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-amber-400 to-yellow-300 gold-shine">
             <Crown className="w-4 h-4 text-white drop-shadow-sm" />
           </div>
-          <span className="text-sm font-medium text-amber-900">Collection Premium</span>
+          <span className="text-sm font-medium text-gray-900">Collection Premium</span>
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">

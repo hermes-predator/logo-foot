@@ -50,19 +50,19 @@ const BlogCTA = () => {
                 </p>
                 
                 <ul className="space-y-3 mb-5 text-sm">
-                  <li className="flex items-center gap-2 text-gray-700 hover:translate-x-1 transition-transform duration-300 cursor-pointer">
+                  <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 shadow-sm">
                       <Folder className="h-3 w-3" />
                     </div>
                     <span className="font-medium">8600+ logos PNG de haute qualité</span>
                   </li>
-                  <li className="flex items-center gap-2 text-gray-700 hover:translate-x-1 transition-transform duration-300 cursor-pointer">
+                  <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 shadow-sm">
                       <Check className="h-3 w-3" />
                     </div>
                     <span className="font-medium">Fichier consultable</span>
                   </li>
-                  <li className="flex items-center gap-2 text-gray-700 hover:translate-x-1 transition-transform duration-300 cursor-pointer">
+                  <li className="flex items-center gap-2 text-gray-700">
                     <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-600 shadow-sm">
                       <Check className="h-3 w-3" />
                     </div>

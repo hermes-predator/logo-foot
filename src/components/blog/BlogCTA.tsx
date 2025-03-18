@@ -29,7 +29,7 @@ const BlogCTA = () => {
           <Sparkle className="h-12 w-12" />
         </div>
         
-        {/* Enhanced card with gold shine effect, animations, shadow but NO lift-up effect */}
+        {/* Card with gold shine effect but fixed interaction issues */}
         <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/40 pointer-events-none"></div>
           <CardContent className="p-0">
@@ -40,9 +40,9 @@ const BlogCTA = () => {
                   <span className="text-xs font-medium">Collection Premium</span>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   <span className="font-mono bg-clip-text text-black">⦗FRONT-CLOUD⦘</span>
-                  <span className="group-hover:text-blue-600 transition-colors duration-300 text-black">~ Football.zip</span>
+                  <span className="text-black">~ Football.zip</span>
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-5">
@@ -70,26 +70,27 @@ const BlogCTA = () => {
                   </li>
                 </ul>
                 
-                <div className="flex flex-col sm:flex-row gap-2">
+                {/* Buttons with fixed clickable areas */}
+                <div className="flex flex-col sm:flex-row gap-3">
                   <Button 
                     asChild 
-                    size="default"
                     className="bg-blue-600 hover:bg-blue-700 shadow-sm w-full sm:w-auto"
                   >
-                    <Link to="/">
-                      <Download className="h-4 w-4 mr-0.5 animate-bounce" />
-                      Démarrer
+                    <Link to="/" className="flex items-center justify-center gap-1.5">
+                      <span className="relative w-4 h-4 flex items-center justify-center">
+                        <Download className="h-4 w-4 animate-bounce" />
+                      </span>
+                      <span>Démarrer</span>
                     </Link>
                   </Button>
                   <Button 
                     variant="outline" 
                     asChild 
-                    size="default"
                     className="border-gray-200 hover:border-gray-300 hover:bg-gray-50 w-full sm:w-auto"
                   >
-                    <Link to="/">
-                      En savoir plus
-                      <ArrowRight className="h-4 w-4 ml-0.5" />
+                    <Link to="/" className="flex items-center justify-center gap-1.5">
+                      <span>En savoir plus</span>
+                      <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
@@ -100,7 +101,7 @@ const BlogCTA = () => {
                   alt="Dossiers de football avec drapeaux de pays" 
                   className="h-full w-full object-cover object-center min-h-[220px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30 pointer-events-none"></div>
               </div>
             </div>
           </CardContent>

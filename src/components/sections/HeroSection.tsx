@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -29,9 +30,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
 
       <div className="max-w-4xl mx-auto text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-purple-200/50 shadow-sm transition-all duration-300 hover:bg-white/40 hover:shadow-md mb-6">
-          <Crown className="w-5 h-5 text-purple-600" />
-          <span className="text-sm font-medium text-purple-900">Collection Premium</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-200 border border-amber-200/80 shadow-sm transition-all duration-300 hover:shadow-md mb-6">
+          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-amber-500 to-yellow-400">
+            <Crown className="w-4 h-4 text-white drop-shadow-sm" />
+          </div>
+          <span className="text-sm font-medium text-amber-900">Collection Premium</span>
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">

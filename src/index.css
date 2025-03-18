@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,4 +76,36 @@
 .cursor-pointer {
   cursor: pointer;
   transition: transform 0.2s ease;
+}
+
+/* Gold shine effect */
+.gold-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.1) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: rotate(30deg);
+  animation: goldShimmer 4s infinite linear;
+}
+
+@keyframes goldShimmer {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
 }

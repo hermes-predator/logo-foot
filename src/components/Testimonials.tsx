@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { MessageCircle, Star } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { MessageCircle, Star, Quote } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -55,53 +55,96 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [visibleTestimonials, setVisibleTestimonials] = useState([]);
+
+  // Chargement différé des témoignages
+  useEffect(() => {
+    const loadTestimonials = () => {
+      // Simuler un délai minimal pour éviter le flash de contenu
+      setTimeout(() => {
+        setVisibleTestimonials(testimonials);
+        setIsLoaded(true);
+      }, 100);
+    };
+
+    // Observer pour charger les témoignages quand la section est proche du viewport
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        loadTestimonials();
+        observer.disconnect();
+      }
+    }, { rootMargin: '200px' });
+
+    const section = document.getElementById('testimonials-section');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
+    <section 
+      id="testimonials-section" 
+      className="pt-10 pb-2 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10"
+    >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-1">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">
             Ce qu'en pensent nos clients
           </h2>
-          <p className="text-gray-600 text-xs">
+          <p className="text-gray-600 text-sm">
             Des centaines de créateurs de contenu nous font confiance
           </p>
         </div>
         
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-3xl mx-auto"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
-                <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px]">
-                  <div className="flex items-center gap-1 text-yellow-400 mb-2">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 italic mb-3 flex-grow text-sm">
-                    "{testimonial.content}"
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
-                      <MessageCircle className="w-3.5 h-3.5 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
-                      <p className="text-[10px] text-gray-500">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
+        {!isLoaded ? (
+          <div className="w-full max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[...Array(3)].map((_, i) => (
+              <div key={i} className="bg-white/60 p-5 rounded-lg shadow-sm animate-pulse h-[200px]"></div>
             ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-4" />
-          <CarouselNext className="hidden md:flex -right-4" />
-        </Carousel>
+          </div>
+        ) : (
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-3xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {visibleTestimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
+                  <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[210px] relative overflow-hidden">
+                    <Quote className="absolute text-blue-100 w-16 h-16 -right-3 -top-3 opacity-30" />
+                    <div className="flex items-center gap-1 text-yellow-400 mb-3">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-gray-600 italic mb-4 flex-grow text-sm leading-relaxed">
+                      "{testimonial.content}"
+                    </p>
+                    <div className="flex items-center gap-3 mt-auto">
+                      <div className="w-8 h-8 rounded-full bg-blue-100/70 flex items-center justify-center">
+                        <MessageCircle className="w-4 h-4 text-blue-600" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
+                        <p className="text-xs text-gray-500">{testimonial.role}</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-5" />
+            <CarouselNext className="hidden md:flex -right-5" />
+          </Carousel>
+        )}
       </div>
     </section>
   );

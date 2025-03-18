@@ -86,6 +86,7 @@ import { eredivisieLogoPost } from './eredivisie-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
 import { feyenoordLogoPost } from './feyenoord-logo';
 import { germanyLogoPost } from './germany-logo';
+import { spainLogoPost } from './spain-logo';
 
 export const logoPosts: BlogPost[] = [
   frontCloudPost,
@@ -173,7 +174,8 @@ export const logoPosts: BlogPost[] = [
   eredivisieLogoPost,
   strasbourgLogoPost,
   feyenoordLogoPost,
-  germanyLogoPost
+  germanyLogoPost,
+  spainLogoPost
 ];
 
 // Logs détaillés pour le débogage

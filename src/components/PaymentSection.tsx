@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -100,7 +101,7 @@ const PaymentSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
           <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
-            {/* Animated stars - removed top left star */}
+            {/* Animated stars - in different positions */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
               <Sparkle className="h-12 w-12" />
@@ -111,6 +112,14 @@ const PaymentSection = () => {
             </div>
             <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
+              <Sparkle className="h-8 w-8" />
+            </div>
+            <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
+              <Sparkle className="h-10 w-10" />
+            </div>
+            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
             

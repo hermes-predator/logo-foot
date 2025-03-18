@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Star } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -106,7 +105,16 @@ const PaymentSection = () => {
             </div>
             
             <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-extrabold mb-2 mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-2xl md:text-3xl font-extrabold mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                <div className="flex -space-x-1">
+                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+                  <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+                </div>
+              </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
@@ -122,8 +130,15 @@ const PaymentSection = () => {
             </div>
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
-              <div>
+              <div className="flex items-center gap-2">
                 <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
+                <div className="flex -space-x-1 ml-2">
+                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                </div>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">

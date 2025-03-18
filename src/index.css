@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -78,9 +77,8 @@
   transition: transform 0.2s ease;
 }
 
-/* Gold shine effect */
+/* Gold shine effect with improved positioning */
 .gold-shine {
-  position: relative;
   overflow: hidden;
 }
 
@@ -99,6 +97,7 @@
   );
   transform: rotate(30deg);
   animation: goldShimmer 4s infinite linear;
+  pointer-events: none;
 }
 
 @keyframes goldShimmer {
@@ -108,4 +107,17 @@
   100% {
     transform: translateX(100%) rotate(30deg);
   }
+}
+
+/* Ensure buttons have proper cursor */
+a, button, .cursor-pointer, [role="button"] {
+  cursor: pointer !important;
+}
+
+/* Ensure links within buttons maintain pointer cursor */
+button a, a button {
+  cursor: pointer !important; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

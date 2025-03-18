@@ -14,27 +14,31 @@ const BlogCTA = () => {
           <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique.</p>
         </div>
         
-        {/* Animated background gradient */}
-        <div className="absolute inset-0 -z-10 animate-pulse" 
+        {/* Animated background gradient with pointer-events-none to avoid interfering with clicks */}
+        <div className="absolute inset-0 -z-10 animate-pulse pointer-events-none" 
              style={{
                background: 'radial-gradient(circle at center, rgba(59,130,246,0.15) 0%, transparent 70%)',
                filter: 'blur(40px)',
              }}></div>
         
-        {/* Decorative elements with animation */}
-        <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping" style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
+        {/* Decorative elements with animation and pointer-events-none */}
+        <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+             style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
           <Sparkle className="h-12 w-12" />
         </div>
-        <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+        <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping pointer-events-none" 
+             style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
           <Sparkle className="h-12 w-12" />
         </div>
         
-        {/* Card with gold shine effect but fixed interaction issues */}
-        <Card className="gold-shine overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50">
+        {/* Card with pointer-events ensured for interactive elements */}
+        <Card className="overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 relative">
+          {/* Gold shine effect with pointer-events-none */}
+          <div className="gold-shine absolute inset-0 pointer-events-none"></div>
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/40 pointer-events-none"></div>
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">
-              <div className="p-5 md:p-7 md:w-2/3">
+              <div className="p-5 md:p-7 md:w-2/3 relative">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-800 mb-4 border border-gray-200 shadow-sm">
                   <Star className="h-3.5 w-3.5 text-amber-500 fill-amber-400" />
                   <span className="text-xs font-medium">Collection Premium</span>
@@ -70,14 +74,14 @@ const BlogCTA = () => {
                   </li>
                 </ul>
                 
-                {/* Buttons with fixed clickable areas */}
-                <div className="flex flex-col sm:flex-row gap-3">
+                {/* Buttons with improved click interactions */}
+                <div className="flex flex-col sm:flex-row gap-3 relative z-10">
                   <Button 
                     asChild 
                     className="bg-blue-600 hover:bg-blue-700 shadow-sm w-full sm:w-auto"
                   >
-                    <Link to="/" className="flex items-center justify-center gap-1.5">
-                      <span className="relative w-4 h-4 flex items-center justify-center">
+                    <Link to="/" className="flex items-center justify-center gap-1.5 w-full">
+                      <span className="inline-flex items-center justify-center">
                         <Download className="h-4 w-4 animate-bounce" />
                       </span>
                       <span>Démarrer</span>
@@ -88,7 +92,7 @@ const BlogCTA = () => {
                     asChild 
                     className="border-gray-200 hover:border-gray-300 hover:bg-gray-50 w-full sm:w-auto"
                   >
-                    <Link to="/" className="flex items-center justify-center gap-1.5">
+                    <Link to="/" className="flex items-center justify-center gap-1.5 w-full">
                       <span>En savoir plus</span>
                       <ArrowRight className="h-4 w-4" />
                     </Link>

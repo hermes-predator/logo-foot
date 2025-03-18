@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Star } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Star, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -100,6 +100,27 @@ const PaymentSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
           <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
+            {/* Animated stars */}
+            <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
+              <Sparkle className="h-12 w-12" />
+            </div>
+            <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
+              <Sparkle className="h-12 w-12" />
+            </div>
+            <div className="absolute top-1/2 -left-6 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
+              <Sparkle className="h-8 w-8" />
+            </div>
+            <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
+              <Sparkle className="h-8 w-8" />
+            </div>
+            
+            {/* Decorative background gradient with pointer-events-none */}
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/10 to-blue-900/30 pointer-events-none"></div>
+            
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>

@@ -109,13 +109,6 @@ const PaymentSection = () => {
                 animation: 'shine 3s infinite linear',
               }}
             />
-            <style jsx>{`
-              @keyframes shine {
-                100% {
-                  transform: translateX(100%);
-                }
-              }
-            `}</style>
 
             {/* Original animated stars */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 

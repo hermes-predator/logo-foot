@@ -3,7 +3,7 @@ import React from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { Button } from '@/components/ui/button';
-import { Download, ArrowRight, Sparkles } from 'lucide-react';
+import { Download, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface BlogImageProps {
@@ -37,7 +37,6 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
                      transform hover:scale-105 transition-all duration-300 group rounded-xl"
         >
           <Link to="/" className="flex items-center gap-3">
-            <Sparkles className="h-5 w-5 text-white animate-pulse" />
             <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
             <span className="text-white">Télécharger + 8 600 logos de foot</span>
             <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />

@@ -27,9 +27,8 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
           loading="lazy"
         />
       </AspectRatio>
-      <p className="mt-2 text-sm text-gray-500 text-center italic">{alt}</p>
       
-      <div className="mt-5 flex justify-center">
+      <div className="mt-5 mb-2 flex justify-center">
         <Button 
           asChild 
           className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 
@@ -43,6 +42,8 @@ const BlogImage = ({ src, alt, className = "", isDefault = false }: BlogImagePro
           </Link>
         </Button>
       </div>
+      
+      <p className="mt-2 text-sm text-gray-500 text-center italic">{alt}</p>
     </div>
   );
 };

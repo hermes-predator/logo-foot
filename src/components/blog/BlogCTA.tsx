@@ -131,7 +131,7 @@ const BlogCTA = () => {
                 </div>
                 <div className="relative overflow-hidden md:w-1/3">
                   <img 
-                    src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png"
+                    src="/lovable-uploads/81f57759-cc4e-457d-a95d-251dfa7958de.png"
                     alt="Collection de logos de clubs de football" 
                     className="h-full w-full object-cover object-center min-h-[220px]"
                   />

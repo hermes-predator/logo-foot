@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
@@ -11,44 +11,33 @@ import BlogPagination from '../components/blog/BlogPagination';
 import BlogCTA from '../components/blog/BlogCTA';
 
 const Blog = () => {
-  // Debug log au chargement de la page
-  useEffect(() => {
-    console.log('Blog component rendering, blogPosts:', blogPosts.length, 'articles');
-    
-    // Log pour vérifier que les articles sont bien présents
-    console.log('IDs of first 5 articles:', blogPosts.slice(0, 5).map(post => post.id));
-    
-    // Log pour vérifier que des articles spécifiques sont présents
-    const chelseaArticle = blogPosts.find(post => post.title.toLowerCase().includes('chelsea'));
-    const juventusArticle = blogPosts.find(post => post.title.toLowerCase().includes('juventus'));
-    const galatasarayArticle = blogPosts.find(post => post.title.toLowerCase().includes('galatasaray'));
-    
-    console.log('Articles importants trouvés:', 
-      chelseaArticle ? 'Chelsea ✓' : 'Chelsea ✗',
-      juventusArticle ? 'Juventus ✓' : 'Juventus ✗', 
-      galatasarayArticle ? 'Galatasaray ✓' : 'Galatasaray ✗'
-    );
-  }, []);
+  console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
+  
+  // Log pour vérifier que les articles de Chelsea et Juventus sont bien présents
+  const chelseaArticle = blogPosts.find(post => post.title.toLowerCase().includes('chelsea'));
+  const juventusArticle = blogPosts.find(post => post.title.toLowerCase().includes('juventus'));
+  
+  console.log('Article Chelsea trouvé:', chelseaArticle ? {
+    id: chelseaArticle.id,
+    title: chelseaArticle.title,
+    date: chelseaArticle.date
+  } : 'Non trouvé');
+  
+  console.log('Article Juventus trouvé:', juventusArticle ? {
+    id: juventusArticle.id,
+    title: juventusArticle.title,
+    date: juventusArticle.date
+  } : 'Non trouvé');
 
-  // Vérification de sécurité pour les articles de blog
-  const validBlogPosts = Array.isArray(blogPosts) && blogPosts.length > 0 
-    ? blogPosts 
-    : [];
-
-  // Utilisation du hook de pagination avec mémoisation
-  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(validBlogPosts);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
   const currentYear = new Date().getFullYear();
 
-  // Debug log au changement des états de pagination
-  useEffect(() => {
-    console.log('Pagination details:', {
-      currentPage,
-      totalPages,
-      itemsPerPage: paginatedItems.length,
-      totalItems: totalItems,
-      actualBlogPostsLength: validBlogPosts.length
-    });
-  }, [currentPage, totalPages, paginatedItems, totalItems, validBlogPosts.length]);
+  console.log('Pagination details:', {
+    currentPage,
+    totalPages,
+    itemsPerPage: paginatedItems.length,
+    totalItems
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
@@ -85,19 +74,7 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         <div className="mt-12">
-          {paginatedItems.length > 0 ? (
-            <BlogArticleList articles={paginatedItems} />
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-lg text-gray-600">Aucun article trouvé pour le moment.</p>
-              <p className="text-sm text-gray-500 mt-2">
-                {validBlogPosts.length > 0 
-                  ? "Problème avec la pagination, veuillez réessayer." 
-                  : "Aucun article n'est disponible dans notre base de données."
-                }
-              </p>
-            </div>
-          )}
+          <BlogArticleList articles={paginatedItems} />
           {totalPages > 1 && (
             <div className="px-4">
               <BlogPagination 

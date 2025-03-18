@@ -11,17 +11,7 @@ interface BlogArticleCardProps {
 }
 
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
-  // Vérification de sécurité des données
-  if (!post || typeof post !== 'object' || !post.id) {
-    console.error('Invalid post data:', post);
-    return null;
-  }
-  
-  // Log pour débogage
-  console.log(`Rendering BlogArticleCard for post ID ${post.id}: ${post.title}`);
-  
-  const readingTime = useReadingTime(post.content || '');
-  const safeDate = post.date && typeof post.date === 'string' ? post.date : new Date().toISOString();
+  const readingTime = useReadingTime(post.content);
   
   return (
     <article className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
@@ -29,9 +19,9 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
         <div className="flex items-center gap-4 mb-4">
           <time 
             className="text-xs font-medium text-gray-600 px-2 py-1 rounded-full border border-gray-200 bg-gray-50"
-            dateTime={safeDate}
+            dateTime={post.date}
           >
-            {format(new Date(safeDate), 'dd MMM yyyy')}
+            {format(new Date(post.date), 'dd MMM yyyy')}
           </time>
           <div className="flex items-center gap-1 text-xs text-gray-500">
             <Clock className="h-3.5 w-3.5" />
@@ -40,17 +30,17 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
         </div>
         
         <h3 className="text-xl font-semibold text-gray-800 mb-3 line-clamp-2 flex-none group-hover:text-purple-600 transition-colors">
-          {post.title || 'Article sans titre'}
+          {post.title}
         </h3>
         
         <p className="text-gray-600 line-clamp-3 mb-4 flex-1">
-          {post.excerpt || 'Aucun extrait disponible pour cet article.'}
+          {post.excerpt}
         </p>
         
         <Link 
           to={`/blog/${post.id}`} 
           className="inline-flex items-center gap-2 text-purple-600 font-medium hover:text-purple-700 transition-colors"
-          aria-label={`Lire l'article : ${post.title || 'Article sans titre'}`}
+          aria-label={`Lire l'article : ${post.title}`}
         >
           Lire l'article
           <svg 

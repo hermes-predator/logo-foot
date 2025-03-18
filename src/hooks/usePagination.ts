@@ -1,51 +1,40 @@
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState } from 'react';
 import { BlogPost } from '../types/blog';
 
 export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(items.length / itemsPerPage);
   
-  // Calculate total pages in a memoized way
-  const totalPages = useMemo(() => 
-    Math.max(1, Math.ceil(items.length / itemsPerPage)), 
-    [items.length, itemsPerPage]
+  // Ensure current page is valid
+  const validCurrentPage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
+  
+  // Calculate paginated items
+  const paginatedItems = items.slice(
+    (validCurrentPage - 1) * itemsPerPage,
+    validCurrentPage * itemsPerPage
   );
-  
-  // Ensure current page is valid in a memoized way
-  const validCurrentPage = useMemo(() => 
-    Math.min(Math.max(1, currentPage), totalPages),
-    [currentPage, totalPages]
-  );
-  
-  // Automatically adjust current page if it becomes invalid
-  useEffect(() => {
-    if (currentPage > totalPages) {
-      setCurrentPage(totalPages);
-    }
-  }, [totalPages, currentPage]);
-  
-  // Calculate paginated items in a memoized way
-  const paginatedItems = useMemo(() => {
-    const startIndex = (validCurrentPage - 1) * itemsPerPage;
-    return items.slice(startIndex, startIndex + itemsPerPage);
-  }, [items, validCurrentPage, itemsPerPage]);
 
-  // Detailed log for debugging
-  useEffect(() => {
-    console.log('Pagination debug details:', {
-      totalItems: items.length,
-      itemsPerPage,
-      currentPage,
-      validCurrentPage,
-      totalPages,
-      startIndex: (validCurrentPage - 1) * itemsPerPage,
-      endIndex: (validCurrentPage - 1) * itemsPerPage + itemsPerPage,
-      displayedItems: paginatedItems.length,
-      firstItemId: paginatedItems[0]?.id,
-      lastItemId: paginatedItems[paginatedItems.length - 1]?.id
-    });
-  }, [items.length, itemsPerPage, currentPage, validCurrentPage, totalPages, paginatedItems]);
+  // Log all items for debugging
+  console.log('Pagination debug:', {
+    totalItems: items.length,
+    itemsPerPage,
+    currentPage: validCurrentPage,
+    totalPages,
+    displayedItems: paginatedItems.length,
+    firstItem: paginatedItems[0]?.title,
+    lastItem: paginatedItems[paginatedItems.length - 1]?.title
+  });
   
+  // Find articles that might be missing
+  const hasJuventus = items.some(item => item.title.toLowerCase().includes('juventus'));
+  const hasChelsea = items.some(item => item.title.toLowerCase().includes('chelsea'));
+  
+  console.log('Articles spécifiques présents dans la liste complète:', {
+    juventus: hasJuventus,
+    chelsea: hasChelsea,
+  });
+
   return {
     currentPage: validCurrentPage,
     setCurrentPage,

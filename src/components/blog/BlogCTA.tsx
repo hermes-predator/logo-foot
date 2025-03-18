@@ -1,21 +1,32 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Download, ArrowRight, Star, Folder, Check } from 'lucide-react';
+import { Download, ArrowRight, Star, Folder, Check, Sparkle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const BlogCTA = () => {
   return (
-    <section className="w-full py-8">
+    <section className="w-full py-12">
       <div className="container max-w-4xl mx-auto px-4 relative">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-3">Prêt à recevoir tous les logos de foot ?</h2>
           <p className="text-gray-500 text-base max-w-3xl mx-auto whitespace-nowrap overflow-hidden text-overflow-ellipsis">8 600+ logos de football réunie dans un fichier ZIP unique.</p>
         </div>
         
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_70%)]"></div>
-        <Card className="overflow-hidden border-gray-100 bg-white shadow-md hover:shadow-lg transition-all duration-300">
+        {/* Enhanced background gradient */}
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12),transparent_80%)]"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute -top-4 -right-4 text-blue-400 opacity-20 rotate-12">
+          <Sparkle className="h-12 w-12" />
+        </div>
+        <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 -rotate-12">
+          <Sparkle className="h-12 w-12" />
+        </div>
+        
+        {/* Enhanced card with animation, shadow and border effects */}
+        <Card className="overflow-hidden border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-500 rounded-xl border-2 border-gray-50 hover:border-blue-100 transform hover:-translate-y-1">
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/40 pointer-events-none"></div>
           <CardContent className="p-0">
             <div className="flex flex-col md:flex-row">
               <div className="p-5 md:p-7 md:w-2/3">

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Sparkles } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -102,63 +102,37 @@ const PaymentSection = () => {
         <div className="md:col-span-3">
           <div className="relative p-6 md:p-8 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
             {/* Animated stars - in different positions */}
-            <div className="absolute -top-10 -right-10 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}>
-              <Sparkle className="h-16 w-16" />
-            </div>
-            <div className="absolute -bottom-8 -left-8 text-blue-400 opacity-30 animate-ping" 
+            <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
-              <Sparkle className="h-14 w-14" />
+              <Sparkle className="h-12 w-12" />
             </div>
-            <div className="absolute top-1/3 -left-12 text-purple-400 opacity-30 animate-ping" 
+            <div className="absolute top-1/2 -left-6 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute top-2/3 -right-10 text-amber-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
-              <Sparkle className="h-12 w-12" />
-            </div>
-            <div className="absolute bottom-1/4 -right-8 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
-              <Sparkle className="h-12 w-12" />
-            </div>
-            <div className="absolute -bottom-10 right-1/4 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute top-1/2 -left-14 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute -bottom-12 left-1/3 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
-              <Sparkle className="h-12 w-12" />
+            <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
+              <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute top-1/4 -right-14 text-amber-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.9s', animationIterationCount: 'infinite', animationDelay: '1.8s' }}>
+            <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
               <Sparkle className="h-10 w-10" />
             </div>
-            
-            {/* Additional Sparkles elements */}
-            <div className="absolute -top-6 left-1/4 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.3s', animationIterationCount: 'infinite' }}>
-              <Sparkles className="h-12 w-12" />
+            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
+              <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute top-1/2 right-1/3 text-purple-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '4.1s', animationIterationCount: 'infinite', animationDelay: '0.7s' }}>
-              <Sparkles className="h-10 w-10" />
+            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
+              <Sparkle className="h-6 w-6" />
             </div>
-            <div className="absolute bottom-1/3 left-2/5 text-amber-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.7s', animationIterationCount: 'infinite', animationDelay: '1.3s' }}>
-              <Sparkles className="h-11 w-11" />
+            <div className="absolute -bottom-8 left-1/3 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
+              <Sparkle className="h-10 w-10" />
             </div>
-            <div className="absolute -top-8 right-2/5 text-blue-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '4.3s', animationIterationCount: 'infinite', animationDelay: '0.9s' }}>
-              <Sparkles className="h-9 w-9" />
-            </div>
-            <div className="absolute -bottom-8 right-1/5 text-purple-400 opacity-30 animate-ping" 
-                 style={{ animationDuration: '3.4s', animationIterationCount: 'infinite', animationDelay: '0.4s' }}>
-              <Sparkles className="h-10 w-10" />
+            <div className="absolute top-1/4 -left-10 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.9s', animationIterationCount: 'infinite', animationDelay: '1.8s' }}>
+              <Sparkle className="h-8 w-8" />
             </div>
             
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">

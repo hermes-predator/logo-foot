@@ -99,7 +99,7 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-8 md:p-10 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200 overflow-hidden">
+          <div className="relative p-6 md:p-8 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200 overflow-hidden">
             {/* Shining effect overlay */}
             <div 
               className="absolute inset-0 pointer-events-none"
@@ -148,9 +148,9 @@ const PaymentSection = () => {
               Pack Complet
             </div>
             
-            <div className="mb-8">
-              <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-2xl md:text-3xl font-extrabold mt-6 text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+            <div className="mb-6">
+              <div className="flex items-center gap-2">
+                <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>

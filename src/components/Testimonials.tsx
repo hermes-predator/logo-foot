@@ -45,6 +45,12 @@ const testimonials = [
     role: "Graphiste freelance",
     content: "La meilleure collection de logos que j'ai pu trouver. Mise à jour régulière et qualité constante.",
     rating: 5
+  },
+  {
+    name: "Alexandre G.",
+    role: "Analyste sportif",
+    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci encore à vous.",
+    rating: 5
   }
 ];
 

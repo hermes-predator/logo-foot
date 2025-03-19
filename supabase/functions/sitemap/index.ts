@@ -32,6 +32,8 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('europa league') ||
       post.title.toLowerCase().includes('ligue europa') ||
       post.title.toLowerCase().includes('coupe du monde') ||
+      post.title.toLowerCase().includes('argentine') ||
+      post.title.toLowerCase().includes('argentina') ||
       post.title.toLowerCase().includes('belgique') ||
       post.title.toLowerCase().includes('pays bas') ||
       post.title.toLowerCase().includes('autriche') ||

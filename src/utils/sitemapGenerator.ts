@@ -26,7 +26,17 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('équipe de france') ||
       post.title.toLowerCase().includes('champions league') ||
       post.title.toLowerCase().includes('ligue des champions') ||
-      post.title.toLowerCase().includes('coupe du monde')
+      post.title.toLowerCase().includes('coupe du monde') ||
+      post.title.toLowerCase().includes('argentine') ||
+      post.title.toLowerCase().includes('argentina') ||
+      post.title.toLowerCase().includes('belgique') ||
+      post.title.toLowerCase().includes('pays bas') ||
+      post.title.toLowerCase().includes('autriche') ||
+      post.title.toLowerCase().includes('psg') ||
+      post.title.toLowerCase().includes('paris saint-germain') ||
+      post.title.toLowerCase().includes('paris saint germain') ||
+      post.title.toLowerCase().includes('paris sg') ||
+      post.title.toLowerCase().includes('logo paris')
     )
     .map(post => ({
       url: `/blog/${post.id}`,
@@ -52,6 +62,7 @@ export const generateSitemap = () => {
     { url: '/gallery/country/germany', priority: '0.6', lastmod: today, changefreq: 'monthly' },
     { url: '/gallery/country/portugal', priority: '0.6', lastmod: today, changefreq: 'monthly' },
     { url: '/gallery/country/netherlands', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/argentina', priority: '0.6', lastmod: today, changefreq: 'monthly' },
   ];
 
   // Créer une Map pour éviter les doublons d'URLs

@@ -29,7 +29,7 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Sophie R.",
+    name: "Yassine B.",
     role: "Community Manager",
     content: "Merci pour le gain de temps !",
     rating: 5

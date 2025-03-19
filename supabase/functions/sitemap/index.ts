@@ -1,3 +1,4 @@
+
 import { generateSitemap } from '../../../src/utils/sitemapGenerator';
 import { corsHeaders } from '../_shared/cors';
 import { blogPosts } from '../../../src/data/blog';
@@ -70,7 +71,9 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('reims') ||
       post.title.toLowerCase().includes('stade de reims') ||
       post.title.toLowerCase().includes('fc nantes') ||
-      post.title.toLowerCase().includes('nantes')
+      post.title.toLowerCase().includes('nantes') ||
+      post.title.toLowerCase().includes('nice') ||
+      post.title.toLowerCase().includes('ogc nice')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);

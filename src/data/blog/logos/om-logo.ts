@@ -33,7 +33,8 @@ Un Impact Culturel Majeur
 La Force d'un Symbol Intemporel
 
 Aujourd'hui, le logo de l'OM continue d'évoluer dans son utilisation, notamment sur les supports digitaux, tout en conservant son essence. Il incarne parfaitement l'alliance entre tradition et modernité, entre passion locale et rayonnement international, faisant de lui l'un des logos les plus emblématiques du football mondial.`,
-  keywords: "logo om, om logo, logo om png, logo olympique de marseille, ecusson om, embleme om, marseille logo, logo marseille",
+  keywords: "logo om, om logo, logo marseille, marseille logo, logo om png, logo de l'om, marseillais logo, om logo png, logo olympique de marseille, logo de marseille, logo olympique marseille, foot logo om, logo marseille foot, logo olympique de marseille png, ecusson om, embleme om",
   category: 'logos',
-  subCategory: 'club-logos'
+  subCategory: 'club-logos',
+  galleryImageId: 37
 };

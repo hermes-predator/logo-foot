@@ -57,6 +57,12 @@ const testimonials = [
     role: "Freelance",
     content: "Excellent pour le prix. Je suis entièrement satisfait. Merci !",
     rating: 5
+  },
+  {
+    name: "Jean M.",
+    role: "Non renseigné",
+    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
+    rating: 5
   }
 ];
 

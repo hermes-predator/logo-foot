@@ -41,7 +41,8 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('paris saint-germain') ||
       post.title.toLowerCase().includes('paris saint germain') ||
       post.title.toLowerCase().includes('paris sg') ||
-      post.title.toLowerCase().includes('logo paris')
+      post.title.toLowerCase().includes('logo paris') ||
+      post.title.toLowerCase().includes('albiceleste')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);

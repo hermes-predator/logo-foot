@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
@@ -157,20 +158,20 @@ const PackDescription = () => {
 
         <div className="space-y-0 pt-3 border-t border-gray-100">
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
           </div>
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#F1F1F1] group-hover:bg-[#E8E9EA] transition-colors">
-              <Check className="h-3.5 w-3.5 text-[#8E9196] shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

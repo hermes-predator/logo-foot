@@ -33,7 +33,8 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('ligue europa') ||
       post.title.toLowerCase().includes('coupe du monde') ||
       post.title.toLowerCase().includes('belgique') ||
-      post.title.toLowerCase().includes('pays bas')
+      post.title.toLowerCase().includes('pays bas') ||
+      post.title.toLowerCase().includes('autriche')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);

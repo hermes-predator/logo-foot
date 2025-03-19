@@ -202,6 +202,37 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     ],
     "award": ["UEFA Champions League (1964, 1965, 2010)"]
   } : {};
+  
+  // Pour Aston Villa, ajoutons des données spécifiques
+  const isAstonVilla = post.title.toLowerCase().includes('aston villa') || 
+                       post.title.toLowerCase().includes('villa');
+  
+  const astonVillaSpecificData = isAstonVilla ? {
+    "description": "L'Aston Villa Football Club est un club de football anglais basé à Birmingham, fondé en 1874.",
+    "location": {
+      "@type": "Place",
+      "name": "Birmingham, Angleterre",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Birmingham",
+        "addressCountry": "GB"
+      }
+    },
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Premier League"
+    },
+    "foundingDate": "1874-11-21",
+    "alternateName": ["Villa", "The Villans", "The Lions", "The Claret and Blue Army"],
+    "url": "https://www.avfc.co.uk/",
+    "sameAs": [
+      "https://fr.wikipedia.org/wiki/Aston_Villa_Football_Club",
+      "https://www.facebook.com/avfcofficial/",
+      "https://twitter.com/AVFCOfficial",
+      "https://www.instagram.com/avfcofficial/"
+    ],
+    "award": ["UEFA Champions League (1982)"]
+  } : {};
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -257,6 +288,12 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
       "mainEntity": {
         ...additionalEntity,
         ...interMilanSpecificData
+      }
+    } : {}),
+    ...(isAstonVilla && additionalEntity ? { 
+      "mainEntity": {
+        ...additionalEntity,
+        ...astonVillaSpecificData
       }
     } : {})
   };

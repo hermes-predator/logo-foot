@@ -51,6 +51,12 @@ const testimonials = [
     role: "Analyste sportif",
     content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci encore à vous.",
     rating: 5
+  },
+  {
+    name: "Nicolas P.",
+    role: "Freelance",
+    content: "Excellent pour le prix. Je suis entièrement satisfait. Merci !",
+    rating: 5
   }
 ];
 

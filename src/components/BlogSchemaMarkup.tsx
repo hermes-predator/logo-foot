@@ -77,19 +77,35 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
   } : null;
 
   // Pour le PSG spécifiquement, ajoutons des données plus riches
-  const isPSG = post.title.toLowerCase().includes('psg') || post.title.toLowerCase().includes('paris saint-germain');
+  const isPSG = post.title.toLowerCase().includes('psg') || 
+                post.title.toLowerCase().includes('paris saint-germain') ||
+                post.title.toLowerCase().includes('paris saint germain') ||
+                post.title.toLowerCase().includes('paris sg');
   
   const psgSpecificData = isPSG ? {
     "description": "Le Paris Saint-Germain Football Club est un club de football français basé à Paris, fondé en 1970.",
     "location": {
       "@type": "Place",
-      "name": "Paris, France"
+      "name": "Paris, France",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      }
     },
     "memberOf": {
       "@type": "SportsOrganization",
       "name": "Ligue 1"
     },
-    "foundingDate": "1970-08-12"
+    "foundingDate": "1970-08-12",
+    "alternateName": ["PSG", "Paris SG", "Paris Saint-Germain FC"],
+    "url": "https://www.psg.fr/",
+    "sameAs": [
+      "https://fr.wikipedia.org/wiki/Paris_Saint-Germain_Football_Club",
+      "https://www.facebook.com/PSG/",
+      "https://twitter.com/PSG_inside",
+      "https://www.instagram.com/psg/"
+    ]
   } : {};
 
   const articleSchema = {

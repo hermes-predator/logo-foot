@@ -39,6 +39,7 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('paris saint germain') ||
       post.title.toLowerCase().includes('paris sg') ||
       post.title.toLowerCase().includes('logo paris') ||
+      post.title.toLowerCase().includes('albiceleste') ||
       post.title.toLowerCase().includes('om') ||
       post.title.toLowerCase().includes('olympique de marseille') ||
       post.title.toLowerCase().includes('marseille') ||
@@ -46,7 +47,9 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('madrid') ||
       post.title.toLowerCase().includes('fc barcelone') ||
       post.title.toLowerCase().includes('barcelone') ||
-      post.title.toLowerCase().includes('barcelona')
+      post.title.toLowerCase().includes('barcelona') ||
+      post.title.toLowerCase().includes('arsenal') ||
+      post.title.toLowerCase().includes('gunners')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

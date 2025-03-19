@@ -1,4 +1,3 @@
-
 import { BlogPost } from "../types/blog";
 
 interface BlogSchemaMarkupProps {
@@ -139,6 +138,37 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     ],
     "award": ["UEFA Champions League (1993)"]
   } : {};
+  
+  // Pour la Juventus, ajoutons des données spécifiques
+  const isJuventus = post.title.toLowerCase().includes('juventus') || 
+                     post.title.toLowerCase().includes('juve');
+  
+  const juventusSpecificData = isJuventus ? {
+    "description": "La Juventus Football Club est un club de football italien basé à Turin, fondé en 1897.",
+    "location": {
+      "@type": "Place",
+      "name": "Turin, Italie",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Turin",
+        "addressCountry": "IT"
+      }
+    },
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Serie A"
+    },
+    "foundingDate": "1897-11-01",
+    "alternateName": ["Juve", "La Vecchia Signora", "Les Bianconeri", "La Madama"],
+    "url": "https://www.juventus.com/",
+    "sameAs": [
+      "https://fr.wikipedia.org/wiki/Juventus_Football_Club",
+      "https://www.facebook.com/Juventus/",
+      "https://twitter.com/juventusfc",
+      "https://www.instagram.com/juventus/"
+    ],
+    "award": ["UEFA Champions League (1985, 1996)"]
+  } : {};
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -182,6 +212,12 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
       "mainEntity": {
         ...additionalEntity,
         ...omSpecificData
+      }
+    } : {}),
+    ...(isJuventus && additionalEntity ? { 
+      "mainEntity": {
+        ...additionalEntity,
+        ...juventusSpecificData
       }
     } : {})
   };

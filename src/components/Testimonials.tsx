@@ -43,7 +43,7 @@ const testimonials = [
   {
     name: "Emma V.",
     role: "Graphiste freelance",
-    content: "La meilleure collection de logos que j'ai pu trouver. Mise à jour régulière et qualité constante.",
+    content: "La meilleure collection de logos que j'ai pu trouver.",
     rating: 5
   },
   {

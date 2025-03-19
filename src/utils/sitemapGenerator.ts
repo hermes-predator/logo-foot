@@ -55,7 +55,9 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('rc lens') ||
       post.title.toLowerCase().includes('lens') ||
       post.title.toLowerCase().includes('as monaco') ||
-      post.title.toLowerCase().includes('monaco')
+      post.title.toLowerCase().includes('monaco') ||
+      post.title.toLowerCase().includes('stade rennais') ||
+      post.title.toLowerCase().includes('rennes')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

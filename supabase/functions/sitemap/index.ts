@@ -58,7 +58,9 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('rc lens') ||
       post.title.toLowerCase().includes('lens') ||
       post.title.toLowerCase().includes('as monaco') ||
-      post.title.toLowerCase().includes('monaco')
+      post.title.toLowerCase().includes('monaco') ||
+      post.title.toLowerCase().includes('stade rennais') ||
+      post.title.toLowerCase().includes('rennes')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);

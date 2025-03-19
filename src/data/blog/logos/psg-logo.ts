@@ -72,6 +72,6 @@ Que vous recherchiez le nouveau logo PSG, des versions historiques des logos du 
   keywords: "logo psg, psg logo, logo psg png, logo paris saint germain, psg logo png, logo du psg, nouveau logo psg, logos du psg, logo psg stylé, logo paris, paris saint germain logo, logo paris saint germain, logo paris sg",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: "psg-logo"
+  galleryImageId: 37  // Changed from string to number to match the expected type
 };
 

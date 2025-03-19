@@ -22,7 +22,7 @@ Deno.serve(async (req) => {
       console.log(`- ID ${post.id}: ${post.title} (${post.date})`);
     });
     
-    // Loguer les articles nationaux et de compétitions qui seront mis en avant
+    // Loguer les articles nationaux, de compétitions et clubs majeurs qui seront mis en avant
     const featuredPosts = blogPosts.filter(post => 
       post.subCategory === 'national-logos' || 
       post.title.toLowerCase().includes('équipe nationale') ||
@@ -34,7 +34,9 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('coupe du monde') ||
       post.title.toLowerCase().includes('belgique') ||
       post.title.toLowerCase().includes('pays bas') ||
-      post.title.toLowerCase().includes('autriche')
+      post.title.toLowerCase().includes('autriche') ||
+      post.title.toLowerCase().includes('psg') ||
+      post.title.toLowerCase().includes('paris saint-germain')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);

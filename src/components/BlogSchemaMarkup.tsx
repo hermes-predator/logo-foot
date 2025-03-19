@@ -58,6 +58,39 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
 
   // Récupérer les mots-clés sous forme de tableau
   const keywordsArray = post.keywords ? post.keywords.split(',').map(k => k.trim()) : [];
+  
+  // Déterminer si l'article concerne un logo de club ou d'équipe nationale
+  const isLogoArticle = post.category === 'logos';
+  const isClubLogo = post.subCategory === 'club-logos';
+  const isNationalTeamLogo = post.title.toLowerCase().includes('équipe nationale') || 
+                            post.title.toLowerCase().includes('national') ||
+                            post.subCategory === 'national-logos';
+  
+  // Déterminer le type d'entité supplémentaire à ajouter (SportsTeam ou SportsOrganization)
+  const additionalEntity = isLogoArticle ? {
+    "@type": isClubLogo ? "SportsTeam" : "SportsOrganization",
+    "name": post.title.split(':')[0].trim(),
+    "sport": "Soccer",
+    "logo": post.galleryImageId ? 
+      `https://logo-foot.com/api/gallery/image/${post.galleryImageId}` : 
+      "https://logo-foot.com/og-image.png"
+  } : null;
+
+  // Pour le PSG spécifiquement, ajoutons des données plus riches
+  const isPSG = post.title.toLowerCase().includes('psg') || post.title.toLowerCase().includes('paris saint-germain');
+  
+  const psgSpecificData = isPSG ? {
+    "description": "Le Paris Saint-Germain Football Club est un club de football français basé à Paris, fondé en 1970.",
+    "location": {
+      "@type": "Place",
+      "name": "Paris, France"
+    },
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Ligue 1"
+    },
+    "foundingDate": "1970-08-12"
+  } : {};
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -89,7 +122,14 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     "keywords": keywordsArray,
     "image": post.galleryImageId ? 
       `https://logo-foot.com/api/gallery/image/${post.galleryImageId}` : 
-      "https://logo-foot.com/og-image.png"
+      "https://logo-foot.com/og-image.png",
+    "about": additionalEntity ? [additionalEntity] : undefined,
+    ...(isPSG && additionalEntity ? { 
+      "mainEntity": {
+        ...additionalEntity,
+        ...psgSpecificData
+      }
+    } : {})
   };
 
   return (

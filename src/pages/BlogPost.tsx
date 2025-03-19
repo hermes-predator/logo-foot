@@ -47,12 +47,19 @@ const BlogPost = () => {
   const formattedDate = format(postDate, 'yyyy-MM-dd');
   
   // Extract the main subject from the title
-  const mainSubject = post.title.split(' ')[0].toLowerCase();
+  const mainSubject = post.title.split(' : ')[0].toLowerCase();
   
-  // SEO Optimizations
+  // SEO Optimizations - Enhanced for all the keywords
+  const subCategory = post.subCategory ? BLOG_CATEGORIES[post.category].subCategories.find(sc => sc.id === post.subCategory)?.name : '';
+  const keywordsFromTitle = post.title.toLowerCase().split(/[\s:,-]+/).filter(word => word.length > 3);
+  
   const metaTitle = `${post.title} | Guide Expert Logo Foot ${currentYear}`;
-  const metaDescription = `${post.excerpt} Guide complet et analyse détaillée mis à jour en ${currentYear}. Tout savoir sur les logos, écussons et emblèmes du football.`;
-  const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel, football ${mainSubject}, logo ${mainSubject}`;
+  
+  // Enhanced meta description with more keywords
+  const metaDescription = `${post.excerpt} Guide complet sur ${mainSubject} mis à jour en ${currentYear}. Histoire, analyse et évolution du ${post.keywords?.split(',')[0] || mainSubject}. Tout savoir sur les logos, écussons et emblèmes du football.`;
+  
+  // Enhanced keywords with current year
+  const enhancedKeywords = `${post.keywords}, logo foot ${currentYear}, logos football ${currentYear}, écusson foot, design football, football professionnel, football ${mainSubject}, logo ${mainSubject}, écusson ${mainSubject}`;
   
   // Define OG image URL - use default image if no galleryImageId
   const ogImageUrl = post.galleryImageId 
@@ -61,7 +68,7 @@ const BlogPost = () => {
 
   const postUrl = `https://logo-foot.com/blog/${post.id}`;
 
-  // Enhanced structured data
+  // Enhanced structured data with more detailed information
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -87,7 +94,7 @@ const BlogPost = () => {
     "datePublished": post.date,
     "dateModified": post.date,
     "keywords": enhancedKeywords,
-    "articleSection": categoryInfo.name,
+    "articleSection": categoryInfo.name + (subCategory ? ` - ${subCategory}` : ''),
     "wordCount": post.content.split(' ').length.toString()
   };
 
@@ -179,7 +186,7 @@ const BlogPost = () => {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
         
-        {/* Open Graph / Facebook */}
+        {/* Open Graph / Facebook - Enhanced for better social sharing */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={postUrl} />
         <meta property="og:title" content={metaTitle} />
@@ -189,7 +196,9 @@ const BlogPost = () => {
         <meta property="article:published_time" content={formattedDate} />
         <meta property="article:modified_time" content={formattedDate} />
         <meta property="article:section" content={categoryInfo.name} />
-        <meta property="article:tag" content={post.keywords} />
+        {post.keywords?.split(',').slice(0, 5).map((keyword, index) => (
+          <meta key={index} property="article:tag" content={keyword.trim()} />
+        ))}
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />

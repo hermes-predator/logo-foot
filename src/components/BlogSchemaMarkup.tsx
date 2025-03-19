@@ -56,6 +56,9 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
   // Extraire les headings h2 comme sections principales
   const sections = Array.from(post.content.matchAll(/## (.*?)(?:\n|$)/g)).map(match => match[1]);
 
+  // Récupérer les mots-clés sous forme de tableau
+  const keywordsArray = post.keywords ? post.keywords.split(',').map(k => k.trim()) : [];
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -83,7 +86,7 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
         "url": "https://logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png"
       }
     },
-    "keywords": post.keywords,
+    "keywords": keywordsArray,
     "image": post.galleryImageId ? 
       `https://logo-foot.com/api/gallery/image/${post.galleryImageId}` : 
       "https://logo-foot.com/og-image.png"

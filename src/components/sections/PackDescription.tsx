@@ -5,7 +5,7 @@ import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info,
 const PackDescription = () => {
   return (
     <div className="space-y-0.5">
-      <div className="p-6 bg-[#3A2323] border border-red-900/30 shadow-md rounded-t-md">
+      <div className="p-6 bg-[#452A2A] border border-red-900/30 shadow-md rounded-t-md">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
@@ -158,20 +158,20 @@ const PackDescription = () => {
 
         <div className="space-y-0 pt-3 border-t border-gray-100">
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
           </div>
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#3A2323] group-hover:bg-[#4A3333] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/80 shrink-0" aria-hidden="true" />
+            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
+              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
             </div>
             <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>

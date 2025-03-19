@@ -1,4 +1,3 @@
-
 import { blogPosts } from "../data/blog";
 
 export const generateSitemap = () => {
@@ -70,7 +69,10 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('fc nantes') ||
       post.title.toLowerCase().includes('nantes') ||
       post.title.toLowerCase().includes('nice') ||
-      post.title.toLowerCase().includes('ogc nice')
+      post.title.toLowerCase().includes('ogc nice') ||
+      post.title.toLowerCase().includes('ol') ||
+      post.title.toLowerCase().includes('olympique lyonnais') ||
+      post.title.toLowerCase().includes('lyon')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

@@ -141,40 +141,31 @@ const Footer = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                  <HelpCircle className="h-6 w-6 text-purple-600" />
-                  Questions fréquentes
-                </DialogTitle>
+                <DialogTitle>Questions fréquentes</DialogTitle>
               </DialogHeader>
-              <div className="mt-6 bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg border border-gray-100 shadow-sm">
+              <div className="mt-4">
                 <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="item-1" className="border-b border-gray-100 py-2">
-                    <AccordionTrigger className="text-gray-800 hover:text-purple-700 font-medium text-base">
-                      Le paiement est-il sécurisé ?
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-gray-50/50 p-4 rounded-md text-gray-700 leading-relaxed">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
+                    <AccordionContent>
                       Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
                       Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
                       Vous pouvez payer en toute confiance avec votre carte bancaire.
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="item-2" className="border-b border-gray-100 py-2">
-                    <AccordionTrigger className="text-gray-800 hover:text-purple-700 font-medium text-base">
-                      Comment se déroule le téléchargement ?
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-gray-50/50 p-4 rounded-md text-gray-700 leading-relaxed">
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
+                    <AccordionContent>
                       C'est simple et instantané ! Après votre paiement, vous recevez immédiatement un lien de 
                       téléchargement sur la page de confirmation. Le fichier ZIP contenant tous les logos est 
                       disponible instantanément.
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="item-3" className="border-b border-gray-100 py-2">
-                    <AccordionTrigger className="text-gray-800 hover:text-purple-700 font-medium text-base">
-                      Que contient exactement le pack ?
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-gray-50/50 p-4 rounded-md text-gray-700 leading-relaxed">
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>Que contient exactement le pack ?</AccordionTrigger>
+                    <AccordionContent>
                       Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
                       • Les logos des clubs de plus de 60 pays
                       • Les logos des principales compétitions
@@ -184,22 +175,18 @@ const Footer = () => {
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="item-4" className="border-b border-gray-100 py-2">
-                    <AccordionTrigger className="text-gray-800 hover:text-purple-700 font-medium text-base">
-                      Comment puis-je utiliser ces logos ?
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-gray-50/50 p-4 rounded-md text-gray-700 leading-relaxed">
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger>Comment puis-je utiliser ces logos ?</AccordionTrigger>
+                    <AccordionContent>
                       Les logos peuvent être utilisés pour vos projets web personnels. Notre pack est spécialement 
                       conçu pour une utilisation web avec des fichiers optimisés et homogènes. Vous bénéficiez 
                       d'une collection complète et professionnelle, prête à l'emploi.
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="item-5" className="border-b-0 py-2">
-                    <AccordionTrigger className="text-gray-800 hover:text-purple-700 font-medium text-base">
-                      Un problème ? Nous sommes là pour vous aider
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-green-50/50 p-4 rounded-md text-gray-700 leading-relaxed border-l-4 border-green-200">
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger>Un problème ? Nous sommes là pour vous aider</AccordionTrigger>
+                    <AccordionContent>
                       Notre service client est disponible 7j/7 pour vous accompagner. En cas de question ou de 
                       difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com. Nous vous 
                       répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.

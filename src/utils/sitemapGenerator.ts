@@ -57,7 +57,9 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('as monaco') ||
       post.title.toLowerCase().includes('monaco') ||
       post.title.toLowerCase().includes('stade rennais') ||
-      post.title.toLowerCase().includes('rennes')
+      post.title.toLowerCase().includes('rennes') ||
+      post.title.toLowerCase().includes('bayern munich') ||
+      post.title.toLowerCase().includes('bayern')
     )
     .map(post => ({
       url: `/blog/${post.id}`,
@@ -121,3 +123,4 @@ ${allUrls.map(page => `  <url>
 
   return sitemapXml;
 };
+

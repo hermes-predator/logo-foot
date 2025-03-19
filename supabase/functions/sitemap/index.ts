@@ -60,7 +60,9 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('as monaco') ||
       post.title.toLowerCase().includes('monaco') ||
       post.title.toLowerCase().includes('stade rennais') ||
-      post.title.toLowerCase().includes('rennes')
+      post.title.toLowerCase().includes('rennes') ||
+      post.title.toLowerCase().includes('bayern munich') ||
+      post.title.toLowerCase().includes('bayern')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);
@@ -91,3 +93,4 @@ Deno.serve(async (req) => {
     });
   }
 });
+

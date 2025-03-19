@@ -66,7 +66,9 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('brest') ||
       post.title.toLowerCase().includes('stade brestois') ||
       post.title.toLowerCase().includes('reims') ||
-      post.title.toLowerCase().includes('stade de reims')
+      post.title.toLowerCase().includes('stade de reims') ||
+      post.title.toLowerCase().includes('fc nantes') ||
+      post.title.toLowerCase().includes('nantes')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

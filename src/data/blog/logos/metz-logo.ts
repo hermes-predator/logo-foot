@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const metzLogoPost: BlogPost = {
-  id: a59,
+  id: 59,
   title: "Logo FC Metz : Histoire et Evolution de l'Emblème Grenat [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Metz : origines, évolution et symbolisme de l'emblème emblématique du club lorrain.",
   date: "2024-04-09",

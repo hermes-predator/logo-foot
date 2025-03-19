@@ -92,6 +92,25 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     "foundingDate": "1970-08-12"
   } : {};
 
+  // Pour l'OM spécifiquement, ajoutons des données enrichies
+  const isOM = post.title.toLowerCase().includes('om') || 
+               post.title.toLowerCase().includes('olympique de marseille') || 
+               post.id === 38;
+  
+  const omSpecificData = isOM ? {
+    "description": "L'Olympique de Marseille est un club de football français basé à Marseille, fondé en 1899.",
+    "location": {
+      "@type": "Place",
+      "name": "Marseille, France"
+    },
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Ligue 1"
+    },
+    "foundingDate": "1899-08-31",
+    "award": ["Ligue des Champions 1993"]
+  } : {};
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -128,6 +147,12 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
       "mainEntity": {
         ...additionalEntity,
         ...psgSpecificData
+      }
+    } : {}),
+    ...(isOM && additionalEntity ? { 
+      "mainEntity": {
+        ...additionalEntity,
+        ...omSpecificData
       }
     } : {})
   };

@@ -12,7 +12,7 @@ const PackDescription = () => {
               <Info className="h-4 w-4 text-red-200/80" />
               <span className="text-sm font-medium text-red-100">Information importante</span>
             </div>
-            <div className="space-y-2 text-base font-medium text-gray-100">
+            <div className="space-y-2 text-base font-info italic text-gray-100">
               <p>Le ⦗FRONT-CLOUD⦘~ Football.zip est un fichier précieux à ajouter à votre patrimoine digital.</p>
               <p>Il vous apportera beaucoup de confiance dans vos projets.</p>
             </div>

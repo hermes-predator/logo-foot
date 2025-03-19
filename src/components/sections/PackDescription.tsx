@@ -5,7 +5,7 @@ import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info,
 const PackDescription = () => {
   return (
     <div className="space-y-0.5">
-      <div className="p-6 bg-[#2C1A1A] border border-red-900/30 shadow-md">
+      <div className="p-6 bg-[#3A2323] border border-red-900/30 shadow-md">
         <div className="flex items-start space-x-3">
           <div className="space-y-2">
             <div className="flex items-center space-x-2">

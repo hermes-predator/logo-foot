@@ -79,7 +79,8 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
   const isPSG = post.title.toLowerCase().includes('psg') || 
                 post.title.toLowerCase().includes('paris saint-germain') ||
                 post.title.toLowerCase().includes('paris saint germain') ||
-                post.title.toLowerCase().includes('paris sg');
+                post.title.toLowerCase().includes('paris sg') ||
+                post.title.toLowerCase().includes('logo paris');
   
   const psgSpecificData = isPSG ? {
     "description": "Le Paris Saint-Germain Football Club est un club de football français basé à Paris, fondé en 1970.",
@@ -169,6 +170,38 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     ],
     "award": ["UEFA Champions League (1985, 1996)"]
   } : {};
+  
+  // Pour l'Inter Milan, ajoutons des données spécifiques
+  const isInterMilan = post.title.toLowerCase().includes('inter milan') || 
+                       post.title.toLowerCase().includes('inter fc') ||
+                       post.title.toLowerCase().includes('fc inter');
+  
+  const interMilanSpecificData = isInterMilan ? {
+    "description": "L'Inter Milan (FC Internazionale Milano) est un club de football italien basé à Milan, fondé en 1908.",
+    "location": {
+      "@type": "Place",
+      "name": "Milan, Italie",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressCountry": "IT"
+      }
+    },
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "Serie A"
+    },
+    "foundingDate": "1908-03-09",
+    "alternateName": ["Inter", "Nerazzurri", "FC Internazionale Milano", "Inter FC"],
+    "url": "https://www.inter.it/",
+    "sameAs": [
+      "https://fr.wikipedia.org/wiki/Inter_Milan",
+      "https://www.facebook.com/Inter/",
+      "https://twitter.com/Inter",
+      "https://www.instagram.com/inter/"
+    ],
+    "award": ["UEFA Champions League (1964, 1965, 2010)"]
+  } : {};
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -218,6 +251,12 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
       "mainEntity": {
         ...additionalEntity,
         ...juventusSpecificData
+      }
+    } : {}),
+    ...(isInterMilan && additionalEntity ? { 
+      "mainEntity": {
+        ...additionalEntity,
+        ...interMilanSpecificData
       }
     } : {})
   };

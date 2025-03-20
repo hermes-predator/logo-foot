@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -188,34 +189,34 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Timer section */}
-            <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+            {/* Timer section - Reduced size */}
+            <div className="mb-6 p-3 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-orange-600 animate-pulse" />
-                  <span className="font-semibold text-gray-700">Cette offre expire dans:</span>
+                  <Clock className="h-4 w-4 text-orange-600 animate-pulse" />
+                  <span className="font-semibold text-gray-700 text-sm">Cette offre expire dans:</span>
                 </div>
                 
-                <div className="flex items-center gap-3 text-gray-800">
+                <div className="flex items-center gap-2 text-gray-800">
                   <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    <div className="bg-white w-8 h-8 rounded-md flex items-center justify-center text-base font-bold shadow-sm">
                       {String(timeLeft.hours).padStart(2, '0')}
                     </div>
-                    <span className="text-xs mt-1">Heures</span>
+                    <span className="text-xs mt-0.5">Heures</span>
                   </div>
-                  <span className="text-xl font-bold">:</span>
+                  <span className="text-lg font-bold">:</span>
                   <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    <div className="bg-white w-8 h-8 rounded-md flex items-center justify-center text-base font-bold shadow-sm">
                       {String(timeLeft.minutes).padStart(2, '0')}
                     </div>
-                    <span className="text-xs mt-1">Minutes</span>
+                    <span className="text-xs mt-0.5">Minutes</span>
                   </div>
-                  <span className="text-xl font-bold">:</span>
+                  <span className="text-lg font-bold">:</span>
                   <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    <div className="bg-white w-8 h-8 rounded-md flex items-center justify-center text-base font-bold shadow-sm">
                       {String(timeLeft.seconds).padStart(2, '0')}
                     </div>
-                    <span className="text-xs mt-1">Secondes</span>
+                    <span className="text-xs mt-0.5">Secondes</span>
                   </div>
                 </div>
               </div>

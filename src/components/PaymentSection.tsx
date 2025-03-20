@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock, Flame } from 'lucide-react';
+import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -169,14 +170,6 @@ const PaymentSection = () => {
               Pack Complet
             </div>
             
-            {/* Limited time offer badge */}
-            <div className="absolute top-0 left-0 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-tr-lg rounded-bl-xl text-sm font-medium animate-pulse">
-              <div className="flex items-center gap-1">
-                <Flame className="h-3.5 w-3.5" />
-                <span>Offre limitée</span>
-              </div>
-            </div>
-            
             {/* Content */}
             <div className="mb-6">
               <div className="flex items-center gap-2">
@@ -196,7 +189,7 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Timer section */}
+            {/* Timer section - GARDÉ */}
             <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
               <div className="flex flex-col md:flex-row items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
@@ -270,18 +263,12 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Obtenir mon pack maintenant"}
+              {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
-            
-            {/* Urgency message */}
-            <p className="text-center mt-3 text-orange-600 font-medium flex items-center justify-center gap-1">
-              <Flame className="h-4 w-4" />
-              <span>Plus que quelques packs disponibles à ce prix !</span>
-            </p>
           </div>
         </div>
       </div>

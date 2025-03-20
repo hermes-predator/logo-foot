@@ -171,7 +171,7 @@ const PaymentSection = () => {
                         <span className="text-sm font-medium whitespace-nowrap bg-gradient-to-r from-emerald-600 to-green-700 text-transparent bg-clip-text">
                           Satisfait ou remboursé
                         </span>
-                        <Info className="h-3.5 w-3.5 text-emerald-500 group-hover:opacity-75 transition-opacity" />
+                        {/* Removed Info icon here */}
                       </div>
                     </TooltipTrigger>
                     <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">

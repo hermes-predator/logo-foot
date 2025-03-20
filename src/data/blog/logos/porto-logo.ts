@@ -19,11 +19,11 @@ Le Futebol Clube do Porto, fondé en 1893, figure parmi les plus anciens clubs p
 
 Le dragon, symbole de la ville de Porto depuis des siècles, n'a pas été choisi au hasard :
 
-• **Lien avec l'Histoire de la Ville** : Le dragon est intimement lié à l'histoire et aux légendes de Porto, créant un pont entre le club et ses racines.
+Lien avec l'Histoire de la Ville : Le dragon est intimement lié à l'histoire et aux légendes de Porto, créant un pont entre le club et ses racines.
 
-• **Puissance et Protection** : Dans la mythologie, le dragon représente la force, la puissance et la protection - des valeurs chères au club.
+Puissance et Protection : Dans la mythologie, le dragon représente la force, la puissance et la protection - des valeurs chères au club.
 
-• **Intimidation** : Face à leurs adversaires, les "Dragões" (les Dragons) utilisent ce symbole comme un élément d'intimidation psychologique.
+Intimidation : Face à leurs adversaires, les "Dragões" (les Dragons) utilisent ce symbole comme un élément d'intimidation psychologique.
 
 ## L'Évolution du Logo au Fil des Décennies
 
@@ -53,10 +53,7 @@ Le logo contemporain du FC Porto est un chef-d'œuvre de design sportif :
 Au cœur du logo se trouve un dragon majestueux, représenté avec un grand réalisme et une posture agressive. Ses écailles détaillées et sa gueule ouverte symbolisent la férocité et l'esprit combatif du club.
 
 ### L'Écusson
-De forme traditionnelle, l'écusson encadre le dragon et contient plusieurs éléments symboliques :
-- Les rayures verticales bleues et blanches, rappelant les couleurs traditionnelles
-- Le ballon de football au centre, soulignant la vocation principale du club
-- Les initiales "FCP", discrètement intégrées
+De forme traditionnelle, l'écusson encadre le dragon et contient plusieurs éléments symboliques : les rayures verticales bleues et blanches, rappelant les couleurs traditionnelles, le ballon de football au centre, soulignant la vocation principale du club, et les initiales "FCP", discrètement intégrées.
 
 ### Les Couleurs
 Le bleu dominant symbolise la loyauté, la confiance et la stabilité. Le blanc apporte équilibre et pureté, tandis que les touches de noir ajoutent de la profondeur et de l'élégance.
@@ -79,8 +76,7 @@ Tout en évoluant subtilement pour s'adapter aux exigences modernes, le logo a s
 Dans le paysage des emblèmes portugais, celui du FC Porto se distingue par plusieurs caractéristiques :
 
 ### Face aux Rivaux Historiques
-- **Benfica** : Contrairement à l'aigle de Benfica qui survole l'écusson, le dragon de Porto est intégré à l'emblème, symbolisant un ancrage plus profond dans l'identité du club.
-- **Sporting CP** : Le lion du Sporting est statique et héraldique, tandis que le dragon de Porto semble prêt à bondir, illustrant deux approches différentes du jeu.
+Contrairement à l'aigle de Benfica qui survole l'écusson, le dragon de Porto est intégré à l'emblème, symbolisant un ancrage plus profond dans l'identité du club. Le lion du Sporting est statique et héraldique, tandis que le dragon de Porto semble prêt à bondir, illustrant deux approches différentes du jeu.
 
 ### Rayonnement International
 Le logo de Porto bénéficie d'une forte reconnaissance internationale, grâce notamment à la présence régulière du club dans les phases avancées des compétitions européennes.

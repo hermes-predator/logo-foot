@@ -23,11 +23,11 @@ Les succès européens des années 1960, avec les victoires en Coupe d'Europe de
 
 L'aigle qui domine le **logo benfica png** est bien plus qu'un simple élément graphique : c'est un symbole chargé de signification qui incarne parfaitement les valeurs et l'esprit du club. Majestueux et vigilant, l'aigle du **logo de benfica** représente :
 
-- **La Vision et l'Ambition** : Comme l'oiseau qui plane haut dans le ciel avec une vision claire de ses objectifs, le club aspire à l'excellence et aux plus hauts sommets.
+La Vision et l'Ambition : Comme l'oiseau qui plane haut dans le ciel avec une vision claire de ses objectifs, le club aspire à l'excellence et aux plus hauts sommets.
 
-- **La Puissance et la Détermination** : Les ailes déployées de l'aigle dans le **benfica fc logo** symbolisent la force et la volonté de surmonter tous les obstacles.
+La Puissance et la Détermination : Les ailes déployées de l'aigle dans le **benfica fc logo** symbolisent la force et la volonté de surmonter tous les obstacles.
 
-- **La Liberté et la Noblesse** : L'aigle est universellement reconnu comme un symbole royal, reflétant ainsi le statut prestigieux que le club a acquis au fil des décennies.
+La Liberté et la Noblesse : L'aigle est universellement reconnu comme un symbole royal, reflétant ainsi le statut prestigieux que le club a acquis au fil des décennies.
 
 La roue de bicyclette qui figure également sur le **logo benfica** rappelle les origines multisportives du club, tandis que le ruban portant la devise "E Pluribus Unum" ("De plusieurs, un seul") souligne l'importance de l'unité et de l'esprit collectif qui ont toujours caractérisé le Benfica.
 

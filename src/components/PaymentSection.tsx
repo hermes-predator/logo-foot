@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -187,9 +188,9 @@ const PaymentSection = () => {
                 <div className="group">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 border border-green-100 hover:bg-green-100 transition-colors">
-                        <RefreshCcw className="h-3.5 w-3.5 text-green-600" />
-                        <span className="text-sm font-medium whitespace-nowrap text-green-700">
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors cursor-pointer">
+                        <RefreshCcw className="h-3.5 w-3.5 text-gray-600" />
+                        <span className="text-sm font-medium whitespace-nowrap">
                           Satisfait ou remboursé
                         </span>
                       </div>

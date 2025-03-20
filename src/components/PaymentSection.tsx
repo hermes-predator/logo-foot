@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -188,7 +189,7 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Timer section - GARDÉ */}
+            {/* Timer section */}
             <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
               <div className="flex flex-col md:flex-row items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
@@ -230,12 +231,11 @@ const PaymentSection = () => {
                 <div className="group">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-[#f1f9f1] via-[#e1f7e5] to-[#edfaf4] border border-emerald-100 hover:border-emerald-200 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px]">
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-[#f1f9f1] via-[#e1f7e5] to-[#edfaf4] shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border-0">
                         <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                         <span className="text-sm font-medium whitespace-nowrap bg-gradient-to-r from-emerald-600 to-green-700 text-transparent bg-clip-text">
                           Satisfait ou remboursé
                         </span>
-                        {/* Removed Info icon here */}
                       </div>
                     </TooltipTrigger>
                     <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">

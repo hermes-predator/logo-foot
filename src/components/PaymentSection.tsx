@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -265,7 +264,7 @@ const PaymentSection = () => {
               className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
-              <ShoppingCart className="mr-2 h-7 w-7 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
           </div>

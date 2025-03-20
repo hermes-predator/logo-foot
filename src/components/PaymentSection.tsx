@@ -130,42 +130,8 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-6 md:p-8 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
-            {/* Animated stars - in different positions */}
-            <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
-              <Sparkle className="h-12 w-12" />
-            </div>
-            <div className="absolute top-1/2 -left-6 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
-              <Sparkle className="h-6 w-6" />
-            </div>
-            <div className="absolute -bottom-8 left-1/3 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute top-1/4 -left-10 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.9s', animationIterationCount: 'infinite', animationDelay: '1.8s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            
-            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
+          <div className="relative p-6 md:p-8 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all duration-500 ease-out">
+            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium">
               Pack Complet
             </div>
             
@@ -188,54 +154,44 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Timer section - GARDÉ */}
+            {/* Timer section - version épurée */}
             <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
               <div className="flex flex-col md:flex-row items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-orange-600 animate-pulse" />
+                  <Clock className="h-5 w-5 text-orange-600" />
                   <span className="font-semibold text-gray-700">Cette offre expire dans:</span>
                 </div>
                 
-                <div className="flex items-center gap-3 text-gray-800">
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
-                      {String(timeLeft.hours).padStart(2, '0')}
-                    </div>
-                    <span className="text-xs mt-1">Heures</span>
+                <div className="flex items-center gap-2 text-gray-800">
+                  <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    {String(timeLeft.hours).padStart(2, '0')}
                   </div>
                   <span className="text-xl font-bold">:</span>
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
-                      {String(timeLeft.minutes).padStart(2, '0')}
-                    </div>
-                    <span className="text-xs mt-1">Minutes</span>
+                  <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    {String(timeLeft.minutes).padStart(2, '0')}
                   </div>
                   <span className="text-xl font-bold">:</span>
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
-                      {String(timeLeft.seconds).padStart(2, '0')}
-                    </div>
-                    <span className="text-xs mt-1">Secondes</span>
+                  <div className="bg-white w-10 h-10 rounded-md flex items-center justify-center text-xl font-bold shadow-sm">
+                    {String(timeLeft.seconds).padStart(2, '0')}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gray-50 border border-gray-100">
               <div className="flex items-center gap-2">
                 <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div>
                 <div className="group">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-[#f1f9f1] via-[#e1f7e5] to-[#edfaf4] border border-emerald-100 hover:border-emerald-200 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px]">
-                        <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                        <span className="text-sm font-medium whitespace-nowrap bg-gradient-to-r from-emerald-600 to-green-700 text-transparent bg-clip-text">
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 border border-green-100 hover:bg-green-100 transition-colors">
+                        <RefreshCcw className="h-3.5 w-3.5 text-green-600" />
+                        <span className="text-sm font-medium whitespace-nowrap text-green-700">
                           Satisfait ou remboursé
                         </span>
-                        {/* Removed Info icon here */}
                       </div>
                     </TooltipTrigger>
                     <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
@@ -262,10 +218,10 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 shadow-sm hover:shadow-md border-0"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
-              <ShoppingCart className="mr-2 h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              <ShoppingCart className="mr-2 h-6 w-6" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
           </div>
@@ -273,8 +229,8 @@ const PaymentSection = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <p className="text-base text-gray-500 flex items-center justify-center gap-2 transition-all duration-300 hover:text-gray-600">
-          <ShieldCheck className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
+        <p className="text-base text-gray-500 flex items-center justify-center gap-2">
+          <ShieldCheck className="h-4 w-4" />
           Paiement sécurisé via SumUp
         </p>
       </div>

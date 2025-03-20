@@ -31,6 +31,7 @@ import { chelseaLogoPost } from './chelsea-logo';
 import { clermontFootLogoPost } from './clermont-foot-logo';
 import { clubHistoryPost } from './club-history';
 import { crystalPalaceLogoPost } from './crystal-palace-logo';
+import { dijonLogoPost } from './dijon-logo';
 import { dortmundLogoPost } from './dortmund-logo';
 import { englandLogoPost } from './england-logo';
 import { eredivisieLogoPost } from './eredivisie-logo';
@@ -93,7 +94,7 @@ import { strasbourgLogoPost } from './strasbourg-logo';
 import { tottenhamLogoPost } from './tottenham-logo';
 import { toulouseFCLogoPost } from './toulouse-fc-logo';
 import { toulouseLogoPost } from './toulouse-logo';
-import { troyesLogoPost } from './troyes-logo'; // Added import for Troyes logo post
+import { troyesLogoPost } from './troyes-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { winamaxLogoPost } from './winamax-logo';
 import { africanClubsPost } from './african-clubs';
@@ -129,6 +130,7 @@ export const logoPosts: BlogPost[] = [
   clermontFootLogoPost,
   clubHistoryPost,
   crystalPalaceLogoPost,
+  dijonLogoPost,
   dortmundLogoPost,
   englandLogoPost,
   eredivisieLogoPost,
@@ -191,7 +193,7 @@ export const logoPosts: BlogPost[] = [
   tottenhamLogoPost,
   toulouseFCLogoPost,
   toulouseLogoPost,
-  troyesLogoPost, // Added Troyes logo post to the array
+  troyesLogoPost,
   westHamLogoPost,
   winamaxLogoPost,
   africanClubsPost

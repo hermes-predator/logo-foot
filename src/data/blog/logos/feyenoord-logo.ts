@@ -19,11 +19,11 @@ Le Feyenoord Rotterdam, fondé en 1908, a développé au fil des décennies une 
 
 Les éléments qui composent l'emblème du Feyenoord ont une signification profonde :
 
-• **Les Initiales Entrelacées** : Les lettres "F" et "R" (**Feyenoord Rotterdam**) s'entrelacent de façon artistique, symbolisant l'unité et la force du club.
+Les Initiales Entrelacées : Les lettres "F" et "R" (**Feyenoord Rotterdam**) s'entrelacent de façon artistique, symbolisant l'unité et la force du club.
 
-• **Les Couleurs Rouge et Blanc** : Le rouge représente la passion et la détermination, tandis que le blanc évoque la pureté et l'intégrité sportive.
+Les Couleurs Rouge et Blanc : Le rouge représente la passion et la détermination, tandis que le blanc évoque la pureté et l'intégrité sportive.
 
-• **La Forme Circulaire** : Elle symbolise l'unité, la communauté et la continuité, valeurs chères au club et à ses supporters.
+La Forme Circulaire : Elle symbolise l'unité, la communauté et la continuité, valeurs chères au club et à ses supporters.
 
 ## L'Évolution du **Logo Feyenoord** à Travers les Époques
 
@@ -76,8 +76,8 @@ Le club a su maintenir l'essence de son identité visuelle tout en l'adaptant su
 Dans le panorama des emblèmes néerlandais, celui de Feyenoord se distingue par plusieurs caractéristiques :
 
 ### Face aux Rivaux Historiques
-- **Ajax Amsterdam** : Contrairement au visage stylisé du héros grec d'Ajax, le logo de Feyenoord mise sur la simplicité et la puissance des initiales.
-- **PSV Eindhoven** : Face aux bandes rouge et blanc horizontales du PSV, Feyenoord propose une approche plus minimaliste et calligraphique.
+**Ajax Amsterdam** : Contrairement au visage stylisé du héros grec d'Ajax, le logo de Feyenoord mise sur la simplicité et la puissance des initiales.
+**PSV Eindhoven** : Face aux bandes rouge et blanc horizontales du PSV, Feyenoord propose une approche plus minimaliste et calligraphique.
 
 ### Rayonnement International
 Parmi les logos du football néerlandais, celui de Feyenoord, avec celui de l'Ajax, jouit probablement de la plus grande reconnaissance internationale, fruit des succès européens du club et de sa base de supporters fidèle.
@@ -112,3 +112,4 @@ L'évolution mesurée de ce logo au fil des décennies illustre parfaitement com
   category: 'logos',
   subCategory: 'club-logos'
 };
+

@@ -5,9 +5,10 @@ import { TeamSpecificSchema } from "./TeamSpecificSchema";
 
 interface BlogPostSchemaProps {
   post: BlogPost;
+  imageUrl?: string;
 }
 
-export const BlogPostSchema = ({ post }: BlogPostSchemaProps) => {
+export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
   // Extract the main title from the content
   const mainTitle = post.content.match(/# (.*?)(?:\n|$)/)?.[1] || post.title;
   
@@ -29,9 +30,7 @@ export const BlogPostSchema = ({ post }: BlogPostSchemaProps) => {
     "@type": isClubLogo ? "SportsTeam" : "SportsOrganization",
     "name": post.title.split(':')[0].trim(),
     "sport": "Soccer",
-    "logo": post.galleryImageId ? 
-      `https://logo-foot.com/api/gallery/image/${post.galleryImageId}` : 
-      "https://logo-foot.com/og-image.png"
+    "logo": imageUrl || "https://logo-foot.com/og-image.png"
   } : null;
 
   // Determine if the post is about specific teams
@@ -69,6 +68,20 @@ export const BlogPostSchema = ({ post }: BlogPostSchemaProps) => {
     additionalEntity
   });
 
+  // Enhanced image object with more metadata
+  const imageObject = {
+    "@type": "ImageObject",
+    "url": imageUrl || "https://logo-foot.com/og-image.png",
+    "width": 800,
+    "height": 800,
+    "caption": post.title,
+    "name": post.title.split(':')[0].trim(),
+    "representativeOfPage": true,
+    "description": post.excerpt,
+    "contentUrl": imageUrl || "https://logo-foot.com/og-image.png",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  };
+
   // Construct the full schema
   const articleSchema = {
     "@context": "https://schema.org",
@@ -98,9 +111,7 @@ export const BlogPostSchema = ({ post }: BlogPostSchemaProps) => {
       }
     },
     "keywords": keywordsArray,
-    "image": post.galleryImageId ? 
-      `https://logo-foot.com/api/gallery/image/${post.galleryImageId}` : 
-      "https://logo-foot.com/og-image.png",
+    "image": imageObject,
     "about": additionalEntity ? [additionalEntity] : undefined,
     ...teamSpecificData
   };

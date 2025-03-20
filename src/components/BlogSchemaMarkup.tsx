@@ -21,7 +21,16 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
 
   if (!post) return null;
 
-  const articleSchema = BlogPostSchema({ post });
+  // Generate complete image URL for the schema
+  const imageUrl = post.galleryImageId ? 
+    `https://logo-foot.com/blog-images/${post.id}.png` : 
+    "https://logo-foot.com/og-image.png";
+
+  // Pass the imageUrl to the schema generator
+  const articleSchema = BlogPostSchema({ 
+    post,
+    imageUrl
+  });
 
   return (
     <script type="application/ld+json">

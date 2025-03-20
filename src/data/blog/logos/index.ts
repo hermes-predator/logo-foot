@@ -19,7 +19,7 @@ import { belgiumLogoPost } from './belgium-logo';
 import { benficaLogoPost } from './benfica-logo';
 import { besiktasLogoPost } from './besiktas-logo';
 import { bournemouthLogoPost } from './bournemouth-logo';
-import { brasilLogoPost } from './brazil-logo';
+import { brazilLogoPost } from './brazil-logo'; // Changed from brasilLogoPost to brazilLogoPost
 import { brazilianClubsPost } from './brazilian-clubs';
 import { brestLogoPost } from './brest-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
@@ -39,7 +39,8 @@ import { feyenoordLogoPost } from './feyenoord-logo';
 import { fiorentinaLogoPost } from './fiorentina-logo';
 import { franceLogoPost } from './france-logo';
 import { frenchClubsPost } from './french-clubs';
-import { frenchLeaguesSchemaPost } from './french-leagues-schema';
+// Remove or comment out the non-existent import
+// import { frenchLeaguesSchemaPost } from './french-leagues-schema';
 import { frontCloudPost } from './front-cloud';
 import { galatasarayLogoPost } from './galatasaray-logo';
 import { germanClubsPost } from './german-clubs';
@@ -47,7 +48,8 @@ import { germanyLogoPost } from './germany-logo';
 import { glasgowRangersLogoPost } from './glasgow-rangers-logo';
 import { interMiamiLogoPost } from './inter-miami-logo';
 import { interMilanLogoPost } from './inter-milan-logo';
-import { italianSerieAPost } from './italian-serie-a';
+// Remove or comment out the non-existent import
+// import { italianSerieAPost } from './italian-serie-a';
 import { italyLogoPost } from './italy-logo';
 import { juventusLogoPost } from './juventus-logo';
 import { laLigaLogoPost } from './la-liga-logo';
@@ -56,7 +58,7 @@ import { lensLogoPost } from './lens-logo';
 import { leverkusenLogoPost } from './leverkusen-logo';
 import { ligue1LogoPost } from './ligue1-logo';
 import { ligue2LogoPost } from './ligue2-logo';
-import { lilleLogoPost } from './lille-logo';
+import { lillLogoPost } from './lille-logo'; // Changed from lilleLogoPost to lillLogoPost
 import { liverpoolLogoPost } from './liverpool-logo';
 import { lorientLogoPost } from './lorient-logo';
 import { lyonLogoPost } from './lyon-logo';
@@ -64,7 +66,7 @@ import { manchesterCityLogoPost } from './manchester-city-logo';
 import { manchesterUnitedLogoPost } from './manchester-united-logo';
 import { metzLogoPost } from './metz-logo';
 import { milanLogoPost } from './milan-logo';
-import { mlsLogosPost } from './mls-logos';
+import { mlsLogoPost } from './mls-logos'; // Changed from mlsLogosPost to mlsLogoPost
 import { monacoLogoPost } from './monaco-logo';
 import { montpellierLogoPost } from './montpellier-logo';
 import { nantesLogoPost } from './nantes-logo';
@@ -74,10 +76,10 @@ import { netherlandsLogoPost } from './netherlands-logo';
 import { newcastleLogoPost } from './newcastle-logo';
 import { niceLogoPost } from './nice-logo';
 import { omLogoPost } from './om-logo';
-import { parisFcLogoPost } from './paris-fc-logo';
+import { parisFCLogoPost } from './paris-fc-logo'; // Changed from parisFcLogoPost to parisFCLogoPost
 import { portoLogoPost } from './porto-logo';
-import { portugueseClubsPost } from './portuguese-clubs';
-import { premierLeagueDesignPost } from './premier-league-design';
+import { portugueseLogosPost } from './portuguese-clubs'; // Changed from portugueseClubsPost to portugueseLogosPost
+import { premierLeagueLogoPost } from './premier-league-design'; // Changed from premierLeagueDesignPost to premierLeagueLogoPost
 import { psgLogoPost } from './psg-logo';
 import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 import { realMadridLogoPost } from './real-madrid-logo';
@@ -91,11 +93,12 @@ import { sportingLogoPost } from './sporting-logo';
 import { stadeRennaisLogoPost } from './stade-rennais-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
 import { tottenhamLogoPost } from './tottenham-logo';
-import { toulouseFcLogoPost } from './toulouse-fc-logo';
+import { toulouseFCLogoPost } from './toulouse-fc-logo'; // Changed from toulouseFcLogoPost to toulouseFCLogoPost
 import { toulouseLogoPost } from './toulouse-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { winamaxLogoPost } from './winamax-logo';
-import { worldCupPost } from './world-cup';
+// Remove or comment out the non-existent import
+// import { worldCupPost } from './world-cup';
 import { africanClubsPost } from './african-clubs';
 
 // Aggregating all logo posts
@@ -117,7 +120,7 @@ export const logoPosts: BlogPost[] = [
   benficaLogoPost,
   besiktasLogoPost,
   bournemouthLogoPost,
-  brasilLogoPost,
+  brazilLogoPost, // Changed from brasilLogoPost to brazilLogoPost
   brazilianClubsPost,
   brestLogoPost,
   bundesligaLogoPost,
@@ -137,7 +140,7 @@ export const logoPosts: BlogPost[] = [
   fiorentinaLogoPost,
   franceLogoPost,
   frenchClubsPost,
-  frenchLeaguesSchemaPost,
+  // Removed frenchLeaguesSchemaPost from array
   frontCloudPost,
   galatasarayLogoPost,
   germanClubsPost,
@@ -145,7 +148,7 @@ export const logoPosts: BlogPost[] = [
   glasgowRangersLogoPost,
   interMiamiLogoPost,
   interMilanLogoPost,
-  italianSerieAPost,
+  // Removed italianSerieAPost from array
   italyLogoPost,
   juventusLogoPost,
   laLigaLogoPost,
@@ -154,7 +157,7 @@ export const logoPosts: BlogPost[] = [
   leverkusenLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
-  lilleLogoPost,
+  lillLogoPost, // Changed from lilleLogoPost to lillLogoPost
   liverpoolLogoPost,
   lorientLogoPost,
   lyonLogoPost,
@@ -162,7 +165,7 @@ export const logoPosts: BlogPost[] = [
   manchesterUnitedLogoPost,
   metzLogoPost,
   milanLogoPost,
-  mlsLogosPost,
+  mlsLogoPost, // Changed from mlsLogosPost to mlsLogoPost
   monacoLogoPost,
   montpellierLogoPost,
   nantesLogoPost,
@@ -172,10 +175,10 @@ export const logoPosts: BlogPost[] = [
   newcastleLogoPost,
   niceLogoPost,
   omLogoPost,
-  parisFcLogoPost,
+  parisFCLogoPost, // Changed from parisFcLogoPost to parisFCLogoPost
   portoLogoPost,
-  portugueseClubsPost,
-  premierLeagueDesignPost,
+  portugueseLogosPost, // Changed from portugueseClubsPost to portugueseLogosPost
+  premierLeagueLogoPost, // Changed from premierLeagueDesignPost to premierLeagueLogoPost
   psgLogoPost,
   rbLeipzigLogoPost,
   realMadridLogoPost,
@@ -189,10 +192,10 @@ export const logoPosts: BlogPost[] = [
   stadeRennaisLogoPost,
   strasbourgLogoPost,
   tottenhamLogoPost,
-  toulouseFcLogoPost,
+  toulouseFCLogoPost, // Changed from toulouseFcLogoPost to toulouseFCLogoPost
   toulouseLogoPost,
   westHamLogoPost,
   winamaxLogoPost,
-  worldCupPost,
+  // Removed worldCupPost from array
   africanClubsPost
 ];

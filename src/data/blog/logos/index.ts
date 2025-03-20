@@ -12,6 +12,7 @@ import { astonVillaLogoPost } from './aston-villa-logo';
 import { atalantaLogoPost } from './atalanta-logo';
 import { atleticoMadridLogoPost } from './atletico-madrid-logo';
 import { austriaLogoPost } from './austria-logo';
+import { auxerreLogoPost } from './auxerre-logo';
 import { barcelonaLogoPost } from './barcelona-logo';
 import { bayernMunichLogoPost } from './bayern-munich-logo';
 import { belgianClubsPost } from './belgian-clubs';
@@ -19,7 +20,7 @@ import { belgiumLogoPost } from './belgium-logo';
 import { benficaLogoPost } from './benfica-logo';
 import { besiktasLogoPost } from './besiktas-logo';
 import { bournemouthLogoPost } from './bournemouth-logo';
-import { brazilLogoPost } from './brazil-logo'; // Changed from brasilLogoPost to brazilLogoPost
+import { brazilLogoPost } from './brazil-logo';
 import { brazilianClubsPost } from './brazilian-clubs';
 import { brestLogoPost } from './brest-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
@@ -113,6 +114,7 @@ export const logoPosts: BlogPost[] = [
   atalantaLogoPost,
   atleticoMadridLogoPost,
   austriaLogoPost,
+  auxerreLogoPost,
   barcelonaLogoPost,
   bayernMunichLogoPost,
   belgianClubsPost,
@@ -120,7 +122,7 @@ export const logoPosts: BlogPost[] = [
   benficaLogoPost,
   besiktasLogoPost,
   bournemouthLogoPost,
-  brazilLogoPost, // Changed from brasilLogoPost to brazilLogoPost
+  brazilLogoPost,
   brazilianClubsPost,
   brestLogoPost,
   bundesligaLogoPost,

@@ -39,7 +39,7 @@ import { evertonLogoPost } from './everton-logo';
 import { fenerbahceLogoPost } from './fenerbahce-logo';
 import { feyenoordLogoPost } from './feyenoord-logo'; // Added import for Feyenoord logo post
 import { fiorentinaLogoPost } from './fiorentina-logo';
-import { franceLogoPost } from './france-logo';
+import { franceLogoPost } from './france-logo'; // Added import for France logo post
 import { frenchClubsPost } from './french-clubs';
 // Remove or comment out the non-existent import
 // import { frenchLeaguesSchemaPost } from './french-leagues-schema';
@@ -142,7 +142,7 @@ export const logoPosts: BlogPost[] = [
   fenerbahceLogoPost,
   feyenoordLogoPost, // Added Feyenoord logo post to the array
   fiorentinaLogoPost,
-  franceLogoPost,
+  franceLogoPost, // Added France logo post to the array
   frenchClubsPost,
   // Removed frenchLeaguesSchemaPost from array
   frontCloudPost,

@@ -80,9 +80,6 @@ const Testimonials = () => {
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients
           </h2>
-          <p className="text-gray-600 text-xs">
-            Des centaines de créateurs de contenu nous font confiance
-          </p>
         </div>
         
         <Carousel

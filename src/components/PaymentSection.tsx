@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -8,7 +7,6 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { useToast } from "@/hooks/use-toast";
-import CustomerInfoForm, { CustomerInfo } from './CustomerInfoForm';
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -18,7 +16,6 @@ const PaymentSection = () => {
     seconds: 59
   });
   const { toast } = useToast();
-  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,29 +43,12 @@ const PaymentSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleShowForm = () => {
-    setShowForm(true);
-    
-    // Scroll to the form
-    setTimeout(() => {
-      const formElement = document.getElementById('payment-form');
-      if (formElement) {
-        formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 100);
-  };
-
-  const handlePayment = (customerInfo: CustomerInfo) => {
+  const handlePayment = () => {
     setIsProcessing(true);
     toast({
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
-    
-    // Store customer info in sessionStorage to retrieve on success page
-    sessionStorage.setItem('customerInfo', JSON.stringify(customerInfo));
-    sessionStorage.setItem('purchaseTimestamp', new Date().toISOString());
-    
     const returnUrl = `${window.location.origin}/payment-success`;
     // Updated SumUp link
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
@@ -278,25 +258,15 @@ const PaymentSection = () => {
               </div>
             </div>
 
-            {showForm ? (
-              <div id="payment-form" className="bg-white p-5 rounded-xl border border-blue-100 mb-6">
-                <h3 className="text-lg font-semibold mb-4">Vos informations</h3>
-                <CustomerInfoForm 
-                  onSubmit={handlePayment} 
-                  isLoading={isProcessing} 
-                  price="10,00€"
-                />
-              </div>
-            ) : (
-              <Button
-                onClick={handleShowForm}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
-                aria-label="Payer 10,00€ avec paiement sécurisé"
-              >
-                <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-                Commander maintenant
-              </Button>
-            )}
+            <Button
+              onClick={handlePayment}
+              disabled={isProcessing}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
+              aria-label="Payer 10,00€ avec paiement sécurisé"
+            >
+              <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              {isProcessing ? "Redirection..." : "Payer 10,00€"}
+            </Button>
           </div>
         </div>
       </div>

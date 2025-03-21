@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star, Users } from 'lucide-react';
 import {
@@ -77,9 +76,6 @@ const Testimonials = () => {
               Plus de 500 clients nous font confiance
             </p>
           </div>
-          <h2 className="text-xl font-bold text-gray-900 mb-1">
-            Ce qu'en pensent nos clients
-          </h2>
         </div>
         
         <Carousel

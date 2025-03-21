@@ -209,9 +209,9 @@ const PaymentSection = () => {
 
       <div className="mt-6 text-center">
         <div className="inline-flex items-center bg-white rounded-lg px-3 py-1.5 border border-gray-100 mx-auto">
-          <span className="text-gray-500 text-xs mr-1.5">Traitement sécurisé via</span>
+          <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
           <img 
-            src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" 
+            src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
             alt="SumUp Secure Payment" 
             className="h-5" 
           />

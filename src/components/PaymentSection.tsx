@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, Star } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -139,8 +139,14 @@ const PaymentSection = () => {
               Pack Complet
             </div>
             
+            {/* Indicateur de popularité */}
+            <div className="absolute top-0 left-0 bg-amber-100 text-amber-700 px-3 py-1 rounded-br-lg rounded-tl-xl text-xs font-medium animate-fade-in flex items-center gap-1.5">
+              <Users className="h-3.5 w-3.5" />
+              <span>210+ acheteurs satisfaits</span>
+            </div>
+            
             {/* Content */}
-            <div className="mb-6">
+            <div className="mt-6 mb-6">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
@@ -156,6 +162,26 @@ const PaymentSection = () => {
                   <span className="text-[15px]">{feature.text}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Badges de confiance */}
+            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5 mb-6 bg-gray-50/70 p-3 rounded-xl border border-gray-100">
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg shadow-sm">
+                <Star className="h-4 w-4 text-amber-500 fill-amber-500" />
+                <span className="text-xs font-medium">Avis 5/5</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg shadow-sm">
+                <ShieldCheck className="h-4 w-4 text-green-600" />
+                <span className="text-xs font-medium">Sécurisé</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg shadow-sm">
+                <Download className="h-4 w-4 text-blue-600" />
+                <span className="text-xs font-medium">Immédiat</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg shadow-sm">
+                <RefreshCcw className="h-4 w-4 text-emerald-600" />
+                <span className="text-xs font-medium">Garantie</span>
+              </div>
             </div>
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
@@ -198,12 +224,22 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 relative overflow-hidden"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
-              <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Payer 10,00€"}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-400/10 to-blue-500/0 animate-shine"></div>
+              <div className="flex items-center justify-center gap-3">
+                <Lock className="h-6 w-6 text-white/90" aria-hidden="true" /> 
+                {isProcessing ? "Redirection..." : "Payer 10,00€ en toute sécurité"}
+              </div>
             </Button>
+            
+            {/* Sécurité du paiement renforcée */}
+            <div className="mt-4 flex items-center justify-center gap-3 text-xs text-gray-500">
+              <img src="https://cdn.sumup.com/v3/img/logos/sumup-dark.svg" alt="SumUp" className="h-5" />
+              <Shield className="h-3.5 w-3.5" />
+              <span>Paiement sécurisé par carte bancaire</span>
+            </div>
           </div>
         </div>
       </div>
@@ -219,3 +255,4 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
+

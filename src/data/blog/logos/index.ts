@@ -3,6 +3,7 @@ import { BlogPost } from '../../../types/blog';
 
 // Individual Logo Post Imports
 import { ajaxLogoPost } from './ajax-logo';
+import { amiensLogoPost } from './amiens-logo';
 import { angersLogoPost } from './angers-logo';
 import { argentinaLogoPost } from './argentina-logo';
 import { arsenalLogoPost } from './arsenal-logo';
@@ -110,6 +111,7 @@ import { africanClubsPost } from './african-clubs';
 // Aggregating all logo posts
 export const logoPosts: BlogPost[] = [
   ajaxLogoPost,
+  amiensLogoPost,
   angersLogoPost,
   argentinaLogoPost,
   arsenalLogoPost,

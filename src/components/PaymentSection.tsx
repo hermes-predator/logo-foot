@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users } from 'lucide-react';
 import { Button } from './ui/button';
@@ -139,13 +138,7 @@ const PaymentSection = () => {
               Pack Complet
             </div>
             
-            {/* Trusted by 500+ clients badge */}
-            <div className="absolute top-0 left-0 bg-green-100 text-green-700 px-4 py-1 rounded-br-lg rounded-tl-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
-              <Users className="w-3.5 h-3.5" />
-              +500 clients satisfaits
-            </div>
             
-            {/* Content */}
             <div className="mb-6">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
@@ -212,7 +205,6 @@ const PaymentSection = () => {
             </Button>
           </div>
           
-          {/* Payment security message moved outside the container with more spacing */}
           <div className="flex justify-center mt-6">
             <div className="inline-flex items-center px-3 py-0.5">
               <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>

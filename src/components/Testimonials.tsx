@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MessageCircle, Star } from 'lucide-react';
+import { MessageCircle, Star, Users } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -71,6 +71,12 @@ const Testimonials = () => {
     <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
       <div className="w-full px-2">
         <div className="text-center mb-8">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Users className="w-4 h-4 text-blue-500" />
+            <p className="text-blue-600 font-semibold text-sm">
+              Plus de 500 clients nous font confiance
+            </p>
+          </div>
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients
           </h2>

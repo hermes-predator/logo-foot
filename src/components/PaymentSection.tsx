@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -136,6 +137,12 @@ const PaymentSection = () => {
             
             <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
+            </div>
+            
+            {/* Trusted by 500+ clients badge */}
+            <div className="absolute top-0 left-0 bg-green-100 text-green-700 px-4 py-1 rounded-br-lg rounded-tl-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
+              <Users className="w-3.5 h-3.5" />
+              +500 clients satisfaits
             </div>
             
             {/* Content */}

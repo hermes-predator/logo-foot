@@ -157,54 +157,39 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-col space-y-6 mb-6">
-              <div className="flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
-                  <div className="flex items-baseline">
-                    <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
-                    <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
-                  </div>
-                  
-                  {/* SumUp payment info - integrated in price text */}
-                  <div className="flex items-center mt-1 sm:mt-0 sm:ml-2">
-                    <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
-                    <img 
-                      src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-                      alt="SumUp Secure Payment" 
-                      className="h-4" 
-                    />
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-2">
-                  <div className="group">
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
-                          <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                          <span className="text-sm font-medium whitespace-nowrap text-emerald-700">
-                            Satisfait ou remboursé
-                          </span>
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
-                        <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
-                        <div className="space-y-2 text-gray-600">
-                          <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                          <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
-                          <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                          <p className="mt-4 text-gray-500 text-[13px]">
-                            Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
-                            <ul className="list-disc ml-4 mt-1 space-y-1">
-                              <li>Votre nom et prénom</li>
-                              <li>La date et l'heure d'achat</li>
-                              <li>Une preuve d'achat</li>
-                            </ul>
-                          </p>
-                        </div>
-                      </TooltipContent>
-                    </Tooltip>
-                  </div>
+            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+              <div className="flex items-center gap-2">
+                <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
+                <span className="text-gray-500 ml-2">TVA incluse</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="group">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 shadow-sm hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
+                        <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                        <span className="text-sm font-medium whitespace-nowrap text-emerald-700">
+                          Satisfait ou remboursé
+                        </span>
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
+                      <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
+                      <div className="space-y-2 text-gray-600">
+                        <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                        <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
+                        <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                        <p className="mt-4 text-gray-500 text-[13px]">
+                          Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
+                          <ul className="list-disc ml-4 mt-1 space-y-1">
+                            <li>Votre nom et prénom</li>
+                            <li>La date et l'heure d'achat</li>
+                            <li>Une preuve d'achat</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </TooltipContent>
+                  </Tooltip>
                 </div>
               </div>
             </div>
@@ -212,13 +197,24 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-7 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-6"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-6 text-center">
+        <div className="inline-flex items-center bg-white rounded-lg px-3 py-1.5 border border-gray-100 mx-auto">
+          <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
+          <img 
+            src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
+            alt="SumUp Secure Payment" 
+            className="h-5" 
+          />
         </div>
       </div>
     </div>

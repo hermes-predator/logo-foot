@@ -206,7 +206,7 @@ const PaymentSection = () => {
             </Button>
             
             <div className="flex justify-center mt-3 mb-0">
-              <div className="inline-flex items-center px-3 py-1 mx-auto">
+              <div className="inline-flex items-center px-3 py-0.5 mx-auto">
                 <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 

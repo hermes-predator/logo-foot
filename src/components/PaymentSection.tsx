@@ -198,12 +198,43 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 gold-shine relative overflow-hidden"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
+            
+            {/* Trust indicators and badges */}
+            <div className="mt-6 flex flex-col space-y-4">
+              <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-100">
+                  <div className="flex items-center">
+                    <span className="text-gray-500 text-sm mr-2">Traitement sécurisé par</span>
+                    <img 
+                      src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" 
+                      alt="SumUp Secure Payment" 
+                      className="h-8" 
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center gap-3 flex-wrap">
+                <div className="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full border border-gray-100 shadow-sm">
+                  <ShieldCheck className="h-4 w-4 text-blue-600" />
+                  <span className="text-xs text-gray-700 font-medium">Paiement sécurisé</span>
+                </div>
+                <div className="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full border border-gray-100 shadow-sm">
+                  <Download className="h-4 w-4 text-blue-600" />
+                  <span className="text-xs text-gray-700 font-medium">Téléchargement instantané</span>
+                </div>
+                <div className="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full border border-gray-100 shadow-sm">
+                  <Trophy className="h-4 w-4 text-amber-500" />
+                  <span className="text-xs text-gray-700 font-medium">210+ clients satisfaits</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

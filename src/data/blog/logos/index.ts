@@ -25,6 +25,7 @@ import { brazilLogoPost } from './brazil-logo';
 import { brazilianClubsPost } from './brazilian-clubs';
 import { brestLogoPost } from './brest-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
+import { caenLogoPost } from './caen-logo';
 import { celticGlasgowLogoPost } from './celtic-glasgow-logo';
 import { championsLeagueLogoPost } from './champions-league-logo';
 import { chelseaLogoPost } from './chelsea-logo';
@@ -127,6 +128,7 @@ export const logoPosts: BlogPost[] = [
   brazilianClubsPost,
   brestLogoPost,
   bundesligaLogoPost,
+  caenLogoPost,
   celticGlasgowLogoPost,
   championsLeagueLogoPost,
   chelseaLogoPost,

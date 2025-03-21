@@ -14,6 +14,7 @@ import { atleticoMadridLogoPost } from './atletico-madrid-logo';
 import { austriaLogoPost } from './austria-logo';
 import { auxerreLogoPost } from './auxerre-logo';
 import { barcelonaLogoPost } from './barcelona-logo';
+import { bastiaLogoPost } from './bastia-logo';
 import { bayernMunichLogoPost } from './bayern-munich-logo';
 import { belgianClubsPost } from './belgian-clubs';
 import { belgiumLogoPost } from './belgium-logo';
@@ -119,6 +120,7 @@ export const logoPosts: BlogPost[] = [
   austriaLogoPost,
   auxerreLogoPost,
   barcelonaLogoPost,
+  bastiaLogoPost,
   bayernMunichLogoPost,
   belgianClubsPost,
   belgiumLogoPost,

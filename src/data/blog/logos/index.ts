@@ -77,6 +77,7 @@ import { niceLogoPost } from './nice-logo';
 import { omLogoPost } from './om-logo';
 import { parisFCLogoPost } from './paris-fc-logo';
 import { portoLogoPost } from './porto-logo';
+import { portugalLogoPost } from './portugal-logo';
 import { portugueseLogosPost } from './portuguese-clubs';
 import { premierLeagueLogoPost } from './premier-league-design';
 import { psgLogoPost } from './psg-logo';
@@ -176,6 +177,7 @@ export const logoPosts: BlogPost[] = [
   omLogoPost,
   parisFCLogoPost,
   portoLogoPost,
+  portugalLogoPost,
   portugueseLogosPost,
   premierLeagueLogoPost,
   psgLogoPost,

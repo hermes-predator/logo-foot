@@ -209,13 +209,13 @@ const PaymentSection = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <div className="flex items-center justify-center bg-white rounded-lg px-4 py-2 shadow-sm border border-gray-100 max-w-md mx-auto">
+        <div className="flex items-center justify-center bg-white rounded-lg px-4 py-2 border border-gray-100 max-w-sm mx-auto">
           <div className="flex items-center">
             <span className="text-gray-500 text-sm mr-2">Traitement sécurisé via</span>
             <img 
               src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
               alt="SumUp Secure Payment" 
-              className="h-8" 
+              className="h-6" 
             />
           </div>
         </div>

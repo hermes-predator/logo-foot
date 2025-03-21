@@ -31,7 +31,7 @@ const PaymentSection = () => {
     },
     {
       icon: Check,
-      text: "Contenu parfaitement organisé",
+      text: "Contenu uniforme, nommé et trié",
       className: "bg-green-50",
       iconColor: "text-green-600"
     },

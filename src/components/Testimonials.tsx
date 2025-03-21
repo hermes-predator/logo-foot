@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star, Users } from 'lucide-react';
 import {
@@ -72,8 +71,8 @@ const Testimonials = () => {
       <div className="w-full px-2">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Users className="w-5 h-5 text-blue-500" />
-            <p className="text-blue-600 font-semibold text-base md:text-lg">
+            <Users className="w-4 h-4 text-blue-500" />
+            <p className="text-blue-600 font-semibold text-sm">
               Plus de 500 clients nous font confiance
             </p>
           </div>

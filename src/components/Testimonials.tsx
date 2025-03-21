@@ -68,8 +68,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
-      <div className="container mx-auto px-2">
+    <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
+      <div className="w-full px-2">
         <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
             Ce qu'en pensent nos clients

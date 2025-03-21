@@ -14,11 +14,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <main className="container mx-auto">
-        <HeroSection onScrollToPayment={scrollToPayment} />
-        <ProductGallery />
-        <div id="payment-section">
-          <PaymentSection />
+      <main>
+        <div className="container mx-auto">
+          <HeroSection onScrollToPayment={scrollToPayment} />
+          <ProductGallery />
+          <div id="payment-section">
+            <PaymentSection />
+          </div>
         </div>
         <Testimonials />
       </main>

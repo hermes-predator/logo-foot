@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -208,16 +207,14 @@ const PaymentSection = () => {
         </div>
       </div>
 
-      <div className="mt-8 text-center">
-        <div className="flex items-center justify-center bg-white rounded-lg px-4 py-2 border border-gray-100 max-w-sm mx-auto">
-          <div className="flex items-center">
-            <span className="text-gray-500 text-sm mr-2">Traitement sécurisé via</span>
-            <img 
-              src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-              alt="SumUp Secure Payment" 
-              className="h-6" 
-            />
-          </div>
+      <div className="mt-6 text-center">
+        <div className="inline-flex items-center bg-white rounded-lg px-3 py-1.5 border border-gray-100 mx-auto">
+          <span className="text-gray-500 text-xs mr-1.5">Traitement sécurisé via</span>
+          <img 
+            src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" 
+            alt="SumUp Secure Payment" 
+            className="h-5" 
+          />
         </div>
       </div>
     </div>

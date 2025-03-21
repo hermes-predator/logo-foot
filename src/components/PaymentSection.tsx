@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -160,10 +159,23 @@ const PaymentSection = () => {
 
             <div className="flex flex-col space-y-6 mb-6">
               <div className="flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
-                <div className="flex items-center gap-2">
-                  <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
-                  <span className="text-gray-500 ml-2">TVA incluse</span>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
+                    <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
+                  </div>
+                  
+                  {/* SumUp payment info - integrated in price text */}
+                  <div className="flex items-center mt-1 sm:mt-0 sm:ml-2">
+                    <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
+                    <img 
+                      src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
+                      alt="SumUp Secure Payment" 
+                      className="h-4" 
+                    />
+                  </div>
                 </div>
+                
                 <div className="flex items-center gap-2">
                   <div className="group">
                     <Tooltip>
@@ -193,18 +205,6 @@ const PaymentSection = () => {
                       </TooltipContent>
                     </Tooltip>
                   </div>
-                </div>
-              </div>
-              
-              {/* SumUp payment info - integrated in price container */}
-              <div className="text-center">
-                <div className="inline-flex items-center bg-white rounded-lg px-3 py-1.5 border border-gray-100 mx-auto">
-                  <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
-                  <img 
-                    src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-                    alt="SumUp Secure Payment" 
-                    className="h-5" 
-                  />
                 </div>
               </div>
             </div>

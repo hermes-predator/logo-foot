@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -203,18 +204,19 @@ const PaymentSection = () => {
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
+            
+            <div className="flex justify-center mt-6">
+              <div className="inline-flex items-center px-3 py-1.5 mx-auto">
+                <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
+                <img 
+                  src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
+                  alt="SumUp Secure Payment" 
+                  className="h-5" 
+                />
+              </div>
+            </div>
+            
           </div>
-        </div>
-      </div>
-
-      <div className="mt-6 text-center">
-        <div className="inline-flex items-center bg-white rounded-lg px-3 py-1.5 border border-gray-100 mx-auto">
-          <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
-          <img 
-            src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-            alt="SumUp Secure Payment" 
-            className="h-5" 
-          />
         </div>
       </div>
     </div>

@@ -206,8 +206,8 @@ const PaymentSection = () => {
             </Button>
           </div>
           
-          {/* Payment security message moved outside the container */}
-          <div className="flex justify-center mt-3">
+          {/* Payment security message moved outside the container with more spacing */}
+          <div className="flex justify-center mt-6">
             <div className="inline-flex items-center px-3 py-0.5">
               <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
               <img 

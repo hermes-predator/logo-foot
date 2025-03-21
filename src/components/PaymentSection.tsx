@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
@@ -100,7 +99,7 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-6 md:p-8 pb-0 pt-4 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
+          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
             {/* Animated stars - in different positions */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
@@ -140,14 +139,14 @@ const PaymentSection = () => {
             </div>
             
             {/* Content */}
-            <div className="mb-4">
+            <div className="mb-6">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-x-8 gap-y-3 mb-6">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-4 text-gray-700">
                   <div className={`p-1.5 rounded-lg ${feature.className || 'bg-blue-50'}`}>
@@ -158,7 +157,7 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            <div className="flex items-center justify-between p-3 mb-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div className="flex items-center gap-2">
                 <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
@@ -198,7 +197,7 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-5 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0 -mt-1"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
@@ -207,7 +206,7 @@ const PaymentSection = () => {
           </div>
           
           {/* Payment security message moved outside the container with more spacing */}
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-6">
             <div className="inline-flex items-center px-3 py-0.5">
               <span className="text-gray-500 text-xs mr-1.5">Paiement sécurisé via</span>
               <img 

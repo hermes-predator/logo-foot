@@ -94,7 +94,7 @@ const PaymentSection = () => {
         >
           <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
-          <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
+          <p className="text-xs text-gray-600 text-center">Une équipe disponible</p>
         </div>
       </div>
 

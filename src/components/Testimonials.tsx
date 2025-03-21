@@ -68,27 +68,27 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10 w-full">
-      <div className="text-center mb-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-1">
-          Ce qu'en pensent nos clients
-        </h2>
-        <p className="text-gray-600 text-xs">
-          Des centaines de créateurs de contenu nous font confiance
-        </p>
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
+      <div className="container mx-auto px-2">
+        <div className="text-center mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-1">
+            Ce qu'en pensent nos clients
+          </h2>
+          <p className="text-gray-600 text-xs">
+            Des centaines de créateurs de contenu nous font confiance
+          </p>
+        </div>
+        
         <Carousel
           opts={{
             align: "start",
             loop: true,
           }}
-          className="w-full"
+          className="w-full max-w-3xl mx-auto"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4 pb-4">
+              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
                 <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px]">
                   <div className="flex items-center gap-1 text-yellow-400 mb-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -111,10 +111,8 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="hidden md:block">
-            <CarouselPrevious className="-left-10" />
-            <CarouselNext className="-right-10" />
-          </div>
+          <CarouselPrevious className="hidden md:flex -left-5" />
+          <CarouselNext className="hidden md:flex -right-5" />
         </Carousel>
       </div>
     </section>

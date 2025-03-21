@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { ShoppingCart, Timer, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Clock } from 'lucide-react';
+
+import React, { useState } from 'react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -10,38 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 2,
-    minutes: 59,
-    seconds: 59
-  });
   const { toast } = useToast();
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        const newSeconds = prev.seconds - 1;
-        if (newSeconds >= 0) {
-          return { ...prev, seconds: newSeconds };
-        }
-        
-        const newMinutes = prev.minutes - 1;
-        if (newMinutes >= 0) {
-          return { ...prev, minutes: newMinutes, seconds: 59 };
-        }
-        
-        const newHours = prev.hours - 1;
-        if (newHours >= 0) {
-          return { hours: newHours, minutes: 59, seconds: 59 };
-        }
-        
-        // Reset timer when it reaches 0
-        return { hours: 2, minutes: 59, seconds: 59 };
-      });
-    }, 1000);
-    
-    return () => clearInterval(timer);
-  }, []);
 
   const handlePayment = () => {
     setIsProcessing(true);
@@ -186,39 +156,6 @@ const PaymentSection = () => {
                   <span className="text-[15px]">{feature.text}</span>
                 </div>
               ))}
-            </div>
-
-            {/* Timer section - Even smaller */}
-            <div className="mb-6 p-2 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 border border-orange-100">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-1.5">
-                <div className="flex items-center gap-1.5">
-                  <Clock className="h-3.5 w-3.5 text-orange-600 animate-pulse" />
-                  <span className="font-medium text-gray-700 text-xs">Expire dans:</span>
-                </div>
-                
-                <div className="flex items-center gap-1.5 text-gray-800">
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-7 h-7 rounded-md flex items-center justify-center text-sm font-bold shadow-sm">
-                      {String(timeLeft.hours).padStart(2, '0')}
-                    </div>
-                    <span className="text-[10px] mt-0.5">H</span>
-                  </div>
-                  <span className="text-sm font-bold">:</span>
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-7 h-7 rounded-md flex items-center justify-center text-sm font-bold shadow-sm">
-                      {String(timeLeft.minutes).padStart(2, '0')}
-                    </div>
-                    <span className="text-[10px] mt-0.5">M</span>
-                  </div>
-                  <span className="text-sm font-bold">:</span>
-                  <div className="flex flex-col items-center">
-                    <div className="bg-white w-7 h-7 rounded-md flex items-center justify-center text-sm font-bold shadow-sm">
-                      {String(timeLeft.seconds).padStart(2, '0')}
-                    </div>
-                    <span className="text-[10px] mt-0.5">S</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">

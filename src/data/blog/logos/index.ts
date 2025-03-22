@@ -111,6 +111,7 @@ import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { winamaxLogoPost } from './winamax-logo';
+import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { africanClubsPost } from './african-clubs';
 
 // Aggregating all logo posts
@@ -224,5 +225,6 @@ export const logoPosts: BlogPost[] = [
   watfordLogoPost,
   westHamLogoPost,
   winamaxLogoPost,
+  wolverhamptonLogoPost,
   africanClubsPost
 ];

@@ -143,7 +143,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 pt-4 border-t border-gray-100">
           <h4 className="text-sm font-semibold text-[#452A2A] mb-3 flex items-center">
-            <FileArchive className="h-4 w-4 mr-1.5 text-[#452A2A]" />
+            <FileArchive className="h-4 w-4 mr-1.5 text-black" />
             AVANTAGES DU FICHIER ZIP
           </h4>
           

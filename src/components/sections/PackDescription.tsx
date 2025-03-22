@@ -175,7 +175,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage - ordinateur local ou cloud privé</p>
+              <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage : ordinateur local ou services de cloud privé (Google Drive...)</p>
             </div>
             
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">

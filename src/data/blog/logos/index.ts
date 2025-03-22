@@ -110,6 +110,7 @@ import { spainLogoPost } from './spain-logo';
 import { sportingLogoPost } from './sporting-logo';
 import { stadeRennaisLogoPost } from './stade-rennais-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
+import { stuttgartLogoPost } from './stuttgart-logo';
 import { tottenhamLogoPost } from './tottenham-logo';
 import { toulouseFCLogoPost } from './toulouse-fc-logo';
 import { toulouseLogoPost } from './toulouse-logo';
@@ -232,6 +233,7 @@ export const logoPosts: BlogPost[] = [
   sportingLogoPost,
   stadeRennaisLogoPost,
   strasbourgLogoPost,
+  stuttgartLogoPost,
   tottenhamLogoPost,
   toulouseFCLogoPost,
   toulouseLogoPost,

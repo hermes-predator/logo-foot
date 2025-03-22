@@ -33,6 +33,7 @@ import { bundesligaLogoPost } from './bundesliga-brand';
 import { burnleyLogoPost } from './burnley-logo';
 import { caenLogoPost } from './caen-logo';
 import { celticGlasgowLogoPost } from './celtic-glasgow-logo';
+import { championshipLogoPost } from './championship-logo';
 import { championsLeagueLogoPost } from './champions-league-logo';
 import { chelseaLogoPost } from './chelsea-logo';
 import { clermontFootLogoPost } from './clermont-foot-logo';
@@ -154,6 +155,7 @@ export const logoPosts: BlogPost[] = [
   burnleyLogoPost,
   caenLogoPost,
   celticGlasgowLogoPost,
+  championshipLogoPost,
   championsLeagueLogoPost,
   chelseaLogoPost,
   clermontFootLogoPost,

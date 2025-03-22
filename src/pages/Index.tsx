@@ -5,6 +5,7 @@ import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import Testimonials from '../components/Testimonials';
+import PackDescription from '../components/sections/PackDescription';
 
 const Index = () => {
   const scrollToPayment = () => {
@@ -15,8 +16,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <HeroSection onScrollToPayment={scrollToPayment} />
+          <div className="my-8">
+            <PackDescription />
+          </div>
           <ProductGallery />
           <div id="payment-section">
             <PaymentSection />

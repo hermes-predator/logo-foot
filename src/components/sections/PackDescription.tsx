@@ -160,12 +160,6 @@ const PackDescription = () => {
             <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
               <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
             </div>
-            <span className="text-sm font-medium">Fichier parfaitement organisé</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
-            </div>
             <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
           </div>
           <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">

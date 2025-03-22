@@ -154,7 +154,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Logos cadrées, uniformes, nommées et triées pour un usage fiable et immédiat</p>
+              <p className="text-xs text-[#5D4545] pl-7">Logos recadrées, uniformes, nommées et triées pour un usage fiable et immédiat</p>
             </div>
             
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,6 +21,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
+  
   return (
     <section className="relative pt-12 pb-20 px-4 overflow-hidden">
       {/* Background effects */}
@@ -111,7 +111,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold mb-4">Contenu du pack</DialogTitle>
+                <DialogTitle className="text-2xl font-bold mb-4">Descriptif du fichier zip</DialogTitle>
                 <DialogDescription className="text-left space-y-6">
                   <PackDescription />
                 </DialogDescription>

@@ -100,6 +100,7 @@ import { portugalLogoPost } from './portugal-logo';
 import { portugueseLogosPost } from './portuguese-clubs';
 import { premierLeagueLogoPost } from './premier-league-design';
 import { psgLogoPost } from './psg-logo';
+import { psvEindhovenLogoPost } from './psv-eindhoven-logo';
 import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 import { realMadridLogoPost } from './real-madrid-logo';
 import { reimsLogoPost } from './reims-logo';
@@ -229,6 +230,7 @@ export const logoPosts: BlogPost[] = [
   portugueseLogosPost,
   premierLeagueLogoPost,
   psgLogoPost,
+  psvEindhovenLogoPost,
   rbLeipzigLogoPost,
   realMadridLogoPost,
   reimsLogoPost,

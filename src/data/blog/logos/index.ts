@@ -99,6 +99,7 @@ import { niortLogoPost } from './niort-logo';
 import { norwichLogoPost } from './norwich-logo';
 import { olympiakosLogoPost } from './olympiakos-logo';
 import { omLogoPost } from './om-logo';
+import { parmaLogoPost } from './parma-logo';
 import { parisFCLogoPost } from './paris-fc-logo';
 import { pauFCLogoPost } from './pau-fc-logo';
 import { portoLogoPost } from './porto-logo';
@@ -238,6 +239,7 @@ export const logoPosts: BlogPost[] = [
   norwichLogoPost,
   olympiakosLogoPost,
   omLogoPost,
+  parmaLogoPost,
   parisFCLogoPost,
   pauFCLogoPost,
   portoLogoPost,

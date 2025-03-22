@@ -80,6 +80,7 @@ import { netherlandsLogoPost } from './netherlands-logo';
 import { newcastleLogoPost } from './newcastle-logo';
 import { niceLogoPost } from './nice-logo';
 import { nimesLogoPost } from './nimes-logo';
+import { niortLogoPost } from './niort-logo';
 import { olympiakosLogoPost } from './olympiakos-logo';
 import { omLogoPost } from './om-logo';
 import { parisFCLogoPost } from './paris-fc-logo';
@@ -189,6 +190,7 @@ export const logoPosts: BlogPost[] = [
   newcastleLogoPost,
   niceLogoPost,
   nimesLogoPost,
+  niortLogoPost,
   olympiakosLogoPost,
   omLogoPost,
   parisFCLogoPost,

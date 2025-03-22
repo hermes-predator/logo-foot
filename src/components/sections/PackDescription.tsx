@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield, Zap } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Shield, Sparkles, Zap } from "lucide-react";
 
 const PackDescription = () => {
   return (
@@ -143,7 +143,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 pt-4 border-t border-gray-100">
           <h4 className="text-sm font-semibold text-[#452A2A] mb-3 flex items-center">
-            <Package className="h-4 w-4 mr-1.5 text-[#452A2A]" />
+            <FileArchive className="h-4 w-4 mr-1.5 text-[#452A2A]" />
             AVANTAGES DU FICHIER
           </h4>
           

@@ -43,6 +43,7 @@ import { clubHistoryPost } from './club-history';
 import { crystalPalaceLogoPost } from './crystal-palace-logo';
 import { dijonLogoPost } from './dijon-logo';
 import { dortmundLogoPost } from './dortmund-logo';
+import { eintrachtFrankfurtLogoPost } from './eintracht-frankfurt-logo';
 import { englandLogoPost } from './england-logo';
 import { eredivisieLogoPost } from './eredivisie-logo';
 import { europaLeagueLogoPost } from './europa-league-logo';
@@ -174,6 +175,7 @@ export const logoPosts: BlogPost[] = [
   crystalPalaceLogoPost,
   dijonLogoPost,
   dortmundLogoPost,
+  eintrachtFrankfurtLogoPost,
   englandLogoPost,
   eredivisieLogoPost,
   europaLeagueLogoPost,

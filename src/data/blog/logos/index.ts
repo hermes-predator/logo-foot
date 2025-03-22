@@ -54,6 +54,7 @@ import { galatasarayLogoPost } from './galatasaray-logo';
 import { germanClubsPost } from './german-clubs';
 import { germanyLogoPost } from './germany-logo';
 import { glasgowRangersLogoPost } from './glasgow-rangers-logo';
+import { grenobleLogoPost } from './grenoble-logo';
 import { interMiamiLogoPost } from './inter-miami-logo';
 import { interMilanLogoPost } from './inter-milan-logo';
 import { italyLogoPost } from './italy-logo';
@@ -174,6 +175,7 @@ export const logoPosts: BlogPost[] = [
   germanClubsPost,
   germanyLogoPost,
   glasgowRangersLogoPost,
+  grenobleLogoPost,
   interMiamiLogoPost,
   interMilanLogoPost,
   italyLogoPost,

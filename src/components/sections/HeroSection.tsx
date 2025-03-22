@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -112,8 +111,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold mb-2">Descriptif du fichier zip</DialogTitle>
-                <p className="text-sm text-gray-500 italic mb-4">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                <DialogTitle className="text-2xl font-bold mb-0">Descriptif du fichier zip</DialogTitle>
+                <p className="text-sm text-gray-500 italic mb-4">⦗FRONT-CLOUD⦗~ Football.zip</p>
                 <DialogDescription className="text-left space-y-6">
                   <PackDescription />
                 </DialogDescription>

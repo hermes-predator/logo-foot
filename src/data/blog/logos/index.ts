@@ -48,6 +48,7 @@ import { englandLogoPost } from './england-logo';
 import { eredivisieLogoPost } from './eredivisie-logo';
 import { europaLeagueLogoPost } from './europa-league-logo';
 import { evertonLogoPost } from './everton-logo';
+import { faCupLogoPost } from './fa-cup-logo';
 import { fenerbahceLogoPost } from './fenerbahce-logo';
 import { feyenoordLogoPost } from './feyenoord-logo';
 import { fiorentinaLogoPost } from './fiorentina-logo';
@@ -182,6 +183,7 @@ export const logoPosts: BlogPost[] = [
   eredivisieLogoPost,
   europaLeagueLogoPost,
   evertonLogoPost,
+  faCupLogoPost,
   fenerbahceLogoPost,
   feyenoordLogoPost,
   fiorentinaLogoPost,

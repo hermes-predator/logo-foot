@@ -1,12 +1,13 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield } from "lucide-react";
 
 const PackDescription = () => {
   return (
     <div className="space-y-0.5">
-      <div className="p-4 bg-[#452A2A] border border-red-900/30 shadow-md rounded-t-md">
+      <div className="p-3.5 bg-[#452A2A] border border-red-900/30 shadow-md rounded-t-md">
         <div className="flex items-start space-x-2.5">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <div className="flex items-center space-x-1.5">
               <Info className="h-3.5 w-3.5 text-red-200/80" />
               <span className="text-xs font-medium text-red-100">Information importante</span>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Package, Sparkles, Shield, Zap } from "lucide-react";
 
@@ -161,24 +162,44 @@ const PackDescription = () => {
           </h4>
           
           <div className="grid gap-3 md:grid-cols-2">
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md">
-              <span className="text-sm font-medium text-[#452A2A] block mb-1">Fichier parfaitement organisé</span>
-              <p className="text-xs text-[#5D4545]">Ressources cadrées, uniformes, nommées et triées pour un usage immédiat</p>
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Sparkles className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Ressources cadrées, uniformes, nommées et triées pour un usage immédiat</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md">
-              <span className="text-sm font-medium text-[#452A2A] block mb-1">Couverture football totale</span>
-              <p className="text-xs text-[#5D4545]">Tous les éléments nécessaires pour vos projets web liés au football</p>
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Target className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Couverture football totale</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Tous les éléments nécessaires pour vos projets web liés au football</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md">
-              <span className="text-sm font-medium text-[#452A2A] block mb-1">Stockage flexible</span>
-              <p className="text-xs text-[#5D4545]">Compatible avec tout système de stockage - ordinateur local ou cloud privé</p>
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Shield className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage - ordinateur local ou cloud privé</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md">
-              <span className="text-sm font-medium text-[#452A2A] block mb-1">Mise à jour régulière</span>
-              <p className="text-xs text-[#5D4545]">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Zap className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Mise à jour régulière</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
             </div>
           </div>
         </div>

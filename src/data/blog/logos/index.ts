@@ -52,6 +52,7 @@ import { franceLogoPost } from './france-logo';
 import { frenchClubsPost } from './french-clubs';
 import { frontCloudPost } from './front-cloud';
 import { galatasarayLogoPost } from './galatasaray-logo';
+import { genoaLogoPost } from './genoa-logo';
 import { germanClubsPost } from './german-clubs';
 import { germanyLogoPost } from './germany-logo';
 import { glasgowRangersLogoPost } from './glasgow-rangers-logo';
@@ -176,6 +177,7 @@ export const logoPosts: BlogPost[] = [
   frenchClubsPost,
   frontCloudPost,
   galatasarayLogoPost,
+  genoaLogoPost,
   germanClubsPost,
   germanyLogoPost,
   glasgowRangersLogoPost,

@@ -155,24 +155,42 @@ const PackDescription = () => {
           </div>
         </div>
 
-        <div className="space-y-0 pt-2 border-t border-gray-100">
-          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <h4 className="text-sm font-semibold text-[#452A2A] mb-3 flex items-center">
+            <Package className="h-4 w-4 mr-1.5 text-[#452A2A]" />
+            AVANTAGES ⦗FRONT-CLOUD⦘~
+          </h4>
+          
+          <div className="grid gap-3 md:grid-cols-3">
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Sparkles className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Ressources cadrées, uniformes, nommées et triées pour un usage immédiat</p>
             </div>
-            <span className="text-sm font-medium">Nos ressources sont cadrées, uniformes, nommées et déjà triées</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+            
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Target className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Couverture football totale</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Tous les éléments nécessaires pour vos projets web liés au football</p>
             </div>
-            <span className="text-sm font-medium">Couverture totale du football pour vos projets WEB</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-[#403E43] p-1 hover:bg-gray-50/50 transition-colors group bg-white/80">
-            <div className="p-1.5 rounded-full bg-[#4D3535] group-hover:bg-[#5D4545] transition-colors">
-              <Check className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+            
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                  <Shield className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
+              </div>
+              <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage - ordinateur local ou cloud privé</p>
             </div>
-            <span className="text-sm font-medium">Directement stockable sur ordinateur ou cloud privé</span>
           </div>
         </div>
       </div>

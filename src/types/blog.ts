@@ -41,6 +41,12 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
         name: "Logos des Équipes Nationales",
         description: "Histoire des écussons des sélections nationales",
         slug: "national-logos"
+      },
+      {
+        id: "competition-logos",
+        name: "Logos des Compétitions",
+        description: "Analyse des logos des grandes compétitions de football",
+        slug: "competition-logos"
       }
     ]
   },

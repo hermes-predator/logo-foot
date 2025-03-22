@@ -33,6 +33,7 @@ import { brestLogoPost } from './brest-logo';
 import { brightonLogoPost } from './brighton-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
 import { burnleyLogoPost } from './burnley-logo';
+import { cagliariLogoPost } from './cagliari-logo';
 import { caenLogoPost } from './caen-logo';
 import { celticGlasgowLogoPost } from './celtic-glasgow-logo';
 import { championshipLogoPost } from './championship-logo';
@@ -172,6 +173,7 @@ export const logoPosts: BlogPost[] = [
   bundesligaLogoPost,
   burnleyLogoPost,
   caenLogoPost,
+  cagliariLogoPost,
   celticGlasgowLogoPost,
   championshipLogoPost,
   championsLeagueLogoPost,

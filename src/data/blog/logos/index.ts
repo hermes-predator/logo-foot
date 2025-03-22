@@ -104,6 +104,7 @@ import { psgLogoPost } from './psg-logo';
 import { psvEindhovenLogoPost } from './psv-eindhoven-logo';
 import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 import { realMadridLogoPost } from './real-madrid-logo';
+import { redStarLogoPost } from './red-star-logo';
 import { reimsLogoPost } from './reims-logo';
 import { rennesLogoPost } from './rennes-logo';
 import { rodezLogoPost } from './rodez-logo';
@@ -236,6 +237,7 @@ export const logoPosts: BlogPost[] = [
   psvEindhovenLogoPost,
   rbLeipzigLogoPost,
   realMadridLogoPost,
+  redStarLogoPost,
   reimsLogoPost,
   rennesLogoPost,
   rodezLogoPost,

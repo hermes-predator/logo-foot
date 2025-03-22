@@ -23,6 +23,7 @@ import { belgianClubsPost } from './belgian-clubs';
 import { belgiumLogoPost } from './belgium-logo';
 import { benficaLogoPost } from './benfica-logo';
 import { besiktasLogoPost } from './besiktas-logo';
+import { bochumLogoPost } from './bochum-logo';
 import { bordeauxLogoPost } from './bordeaux-logo'; 
 import { bournemouthLogoPost } from './bournemouth-logo';
 import { brazilLogoPost } from './brazil-logo';
@@ -151,6 +152,7 @@ export const logoPosts: BlogPost[] = [
   belgiumLogoPost,
   benficaLogoPost,
   besiktasLogoPost,
+  bochumLogoPost,
   bordeauxLogoPost,
   bournemouthLogoPost,
   brazilLogoPost,

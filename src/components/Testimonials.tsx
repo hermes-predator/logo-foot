@@ -73,7 +73,7 @@ const Testimonials = () => {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Users className="w-5 h-5 text-blue-600" />
-            <p className="text-blue-600 font-semibold text-base md:text-lg">
+            <p className="text-blue-600 font-bold text-base md:text-lg">
               5 000+ clients nous font confiance
             </p>
           </div>
@@ -95,7 +95,7 @@ const Testimonials = () => {
                       <Star key={i} className="w-3.5 h-3.5 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-3 flex-grow text-sm">
+                  <p className="text-gray-600 italic mb-3 flex-grow text-sm font-medium">
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-2">
@@ -104,7 +104,7 @@ const Testimonials = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
-                      <p className="text-[10px] text-gray-500">{testimonial.role}</p>
+                      <p className="text-[10px] text-gray-500 font-medium">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>

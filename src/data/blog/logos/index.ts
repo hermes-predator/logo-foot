@@ -96,6 +96,7 @@ import { reimsLogoPost } from './reims-logo';
 import { rennesLogoPost } from './rennes-logo';
 import { saintEtienneLogoPost } from './saint-etienne-logo';
 import { serieALogoPost } from './serie-a-logo';
+import { southamptonLogoPost } from './southampton-logo';
 import { southAmericanClubsPost } from './south-american-clubs';
 import { spainLogoPost } from './spain-logo';
 import { sportingLogoPost } from './sporting-logo';
@@ -208,6 +209,7 @@ export const logoPosts: BlogPost[] = [
   rennesLogoPost,
   saintEtienneLogoPost,
   serieALogoPost,
+  southamptonLogoPost,
   southAmericanClubsPost,
   spainLogoPost,
   sportingLogoPost,

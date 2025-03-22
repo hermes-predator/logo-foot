@@ -102,6 +102,7 @@ import { rbLeipzigLogoPost } from './rb-leipzig-logo';
 import { realMadridLogoPost } from './real-madrid-logo';
 import { reimsLogoPost } from './reims-logo';
 import { rennesLogoPost } from './rennes-logo';
+import { rodezLogoPost } from './rodez-logo';
 import { saintEtienneLogoPost } from './saint-etienne-logo';
 import { serieALogoPost } from './serie-a-logo';
 import { sheffieldUnitedLogoPost } from './sheffield-united-logo';
@@ -110,6 +111,7 @@ import { southAmericanClubsPost } from './south-american-clubs';
 import { spainLogoPost } from './spain-logo';
 import { sportingLogoPost } from './sporting-logo';
 import { stadeRennaisLogoPost } from './stade-rennais-logo';
+import { stokeCityLogoPost } from './stoke-city-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
 import { stuttgartLogoPost } from './stuttgart-logo';
 import { torinoLogoPost } from './torino-logo';
@@ -227,6 +229,7 @@ export const logoPosts: BlogPost[] = [
   realMadridLogoPost,
   reimsLogoPost,
   rennesLogoPost,
+  rodezLogoPost,
   saintEtienneLogoPost,
   serieALogoPost,
   sheffieldUnitedLogoPost,
@@ -235,6 +238,7 @@ export const logoPosts: BlogPost[] = [
   spainLogoPost,
   sportingLogoPost,
   stadeRennaisLogoPost,
+  stokeCityLogoPost,
   strasbourgLogoPost,
   stuttgartLogoPost,
   torinoLogoPost,

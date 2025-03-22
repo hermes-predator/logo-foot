@@ -71,15 +71,11 @@ const Testimonials = () => {
     <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
       <div className="w-full px-2">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200/40 shadow-sm mb-3 hover:shadow-md transition-all duration-300">
-            <div className="flex items-center justify-center gap-2">
-              <div className="bg-gradient-to-br from-blue-500 to-blue-700 p-1.5 rounded-full shadow-inner">
-                <Users className="w-4 h-4 text-white" />
-              </div>
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 font-extrabold text-base md:text-lg">
-                5 000+ clients nous font confiance
-              </p>
-            </div>
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Users className="w-5 h-5 text-blue-600" />
+            <p className="text-blue-600 font-bold text-base md:text-lg">
+              5 000+ clients nous font confiance
+            </p>
           </div>
         </div>
         

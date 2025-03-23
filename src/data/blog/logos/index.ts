@@ -146,6 +146,7 @@ import { trabzonsporLogoPost } from './trabzonspor-logo';
 import { troyesLogoPost } from './troyes-logo';
 import { tropheeDesChampionsLogoPost } from './trophee-des-champions-logo';
 import { udineseLogoPost } from './udinese-logo';
+import { uruguayLogoPost } from './uruguay-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
 import { villarrealLogoPost } from './villarreal-logo';
 import { villarrealCfLogoPost } from './villarreal-cf-logo';
@@ -302,6 +303,7 @@ export const logoPosts: BlogPost[] = [
   troyesLogoPost,
   tropheeDesChampionsLogoPost,
   udineseLogoPost,
+  uruguayLogoPost,
   valenciennesLogoPost,
   villarrealLogoPost,
   villarrealCfLogoPost,

@@ -152,7 +152,7 @@ const PackDescription = () => {
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
                 <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Sparkles className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                  <Folder className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
               </div>

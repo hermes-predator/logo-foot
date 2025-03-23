@@ -9,7 +9,7 @@ const PackDescription = () => {
         
         <div className="space-y-3 p-4 bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80 transition-all duration-200 hover:shadow-md rounded-t-md">
           <h3 className="text-lg font-bold text-gray-900 flex items-center gap-1.5">
-            <Folder className="h-4 w-4 text-gray-600" />
+            <Folder className="h-4 w-4 text-black" />
             𝐅.𝟎𝟏 – Logos de clubs de football
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
@@ -32,7 +32,7 @@ const PackDescription = () => {
           </div>
           <div className="mt-3">
             <p className="font-semibold text-gray-900 mb-1.5 flex items-center gap-1.5">
-              <List className="h-4 w-4 text-gray-600" />
+              <List className="h-4 w-4 text-black" />
               Collections incluses :
             </p>
             <p className="text-xs leading-relaxed text-gray-700 bg-white/50 rounded-lg p-3">
@@ -43,7 +43,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 p-4 bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-lg font-bold text-blue-900 flex items-center gap-1.5">
-            <Folder className="h-4 w-4 text-blue-600" />
+            <Folder className="h-4 w-4 text-black" />
             𝐅.𝟎𝟐 – Compétitions de football
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
@@ -68,7 +68,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 p-4 bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-lg font-bold text-green-900 flex items-center gap-1.5">
-            <Folder className="h-4 w-4 text-green-600" />
+            <Folder className="h-4 w-4 text-black" />
             𝐅.𝟎𝟑 – Drapeaux mondiaux
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
@@ -93,7 +93,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 p-4 bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-lg font-bold text-yellow-900 flex items-center gap-1.5">
-            <Folder className="h-4 w-4 text-yellow-600" />
+            <Folder className="h-4 w-4 text-black" />
             𝐅.𝟎𝟒 – Couvertures - Instruments de football
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
@@ -118,7 +118,7 @@ const PackDescription = () => {
 
         <div className="space-y-3 p-4 bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-lg font-bold text-red-900 flex items-center gap-1.5">
-            <Folder className="h-4 w-4 text-red-600" />
+            <Folder className="h-4 w-4 text-black" />
             𝐅.𝟎𝟓 – Logos des bookmakers
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
@@ -152,7 +152,7 @@ const PackDescription = () => {
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
                 <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Folder className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                  <Folder className="h-3.5 w-3.5 text-black shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
               </div>
@@ -162,7 +162,7 @@ const PackDescription = () => {
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
                 <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Target className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                  <Target className="h-3.5 w-3.5 text-black shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Couverture totale du football</span>
               </div>
@@ -172,7 +172,7 @@ const PackDescription = () => {
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
                 <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Cloud className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                  <Cloud className="h-3.5 w-3.5 text-black shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
               </div>
@@ -182,7 +182,7 @@ const PackDescription = () => {
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
                 <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <RefreshCw className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                  <RefreshCw className="h-3.5 w-3.5 text-black shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Mise à jour régulière</span>
               </div>

@@ -24,7 +24,7 @@ import { belgiumLogoPost } from './belgium-logo';
 import { benficaLogoPost } from './benfica-logo';
 import { besiktasLogoPost } from './besiktas-logo';
 import { bochumLogoPost } from './bochum-logo';
-import { bolognaLogoPost } from './bologna-logo'; // New import
+import { bolognaLogoPost } from './bologna-logo'; 
 import { bordeauxLogoPost } from './bordeaux-logo'; 
 import { bournemouthLogoPost } from './bournemouth-logo';
 import { brazilLogoPost } from './brazil-logo';
@@ -123,6 +123,7 @@ import { redStarLogoPost } from './red-star-logo';
 import { reimsLogoPost } from './reims-logo';
 import { rennesLogoPost } from './rennes-logo';
 import { rodezLogoPost } from './rodez-logo';
+import { salernitanaLogoPost } from './salernitana-logo';
 import { saintEtienneLogoPost } from './saint-etienne-logo';
 import { sampdoriaLogoPost } from './sampdoria-logo';
 import { sassuoloLogoPost } from './sassuolo-logo';
@@ -176,7 +177,7 @@ export const logoPosts: BlogPost[] = [
   benficaLogoPost,
   besiktasLogoPost,
   bochumLogoPost,
-  bolognaLogoPost, // Added the new Bologna logo post
+  bolognaLogoPost,
   bordeauxLogoPost,
   bournemouthLogoPost,
   brazilLogoPost,
@@ -275,6 +276,7 @@ export const logoPosts: BlogPost[] = [
   reimsLogoPost,
   rennesLogoPost,
   rodezLogoPost,
+  salernitanaLogoPost,
   saintEtienneLogoPost,
   sampdoriaLogoPost,
   sassuoloLogoPost,

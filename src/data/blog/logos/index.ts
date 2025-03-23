@@ -146,6 +146,7 @@ import { troyesLogoPost } from './troyes-logo';
 import { tropheeDesChampionsLogoPost } from './trophee-des-champions-logo';
 import { udineseLogoPost } from './udinese-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
+import { villarrealLogoPost } from './villarreal-logo';
 import { watfordLogoPost } from './watford-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { winamaxLogoPost } from './winamax-logo';
@@ -299,6 +300,7 @@ export const logoPosts: BlogPost[] = [
   tropheeDesChampionsLogoPost,
   udineseLogoPost,
   valenciennesLogoPost,
+  villarrealLogoPost,
   watfordLogoPost,
   westHamLogoPost,
   winamaxLogoPost,

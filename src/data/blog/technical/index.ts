@@ -7,6 +7,7 @@ import { motionDesignGuide } from './motion-design';
 import { typographyGuide } from './typography-guide';
 import { soccerGuidePost } from './soccer-guide';
 import { soccerBallGuide } from './soccer-ball-guide';
+import { howToDrawSoccerBall } from './how-to-draw-soccer-ball';
 
 export const technicalPosts: BlogPost[] = [
   designPrinciples,
@@ -15,5 +16,6 @@ export const technicalPosts: BlogPost[] = [
   motionDesignGuide,
   typographyGuide,
   soccerGuidePost,
-  soccerBallGuide
+  soccerBallGuide,
+  howToDrawSoccerBall
 ];

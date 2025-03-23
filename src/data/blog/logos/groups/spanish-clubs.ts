@@ -7,6 +7,7 @@ import { barcelonaLogoPost } from '../barcelona-logo';
 import { celtaVigoLogoPost } from '../celta-vigo-logo';
 import { getafeLogoPost } from '../getafe-logo';
 import { majorqueLogoPost } from '../majorque-logo';
+import { rayoVallecanoLogoPost } from '../rayo-vallecano-logo';
 import { realBetisLogoPost } from '../real-betis-logo';
 import { realMadridLogoPost } from '../real-madrid-logo';
 import { villarrealLogoPost } from '../villarreal-logo';
@@ -19,6 +20,7 @@ export const spanishClubPosts: BlogPost[] = [
   celtaVigoLogoPost,
   getafeLogoPost,
   majorqueLogoPost,
+  rayoVallecanoLogoPost,
   realBetisLogoPost,
   realMadridLogoPost,
   villarrealLogoPost,

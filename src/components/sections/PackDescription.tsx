@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, Zap } from "lucide-react";
 
@@ -145,7 +144,7 @@ const PackDescription = () => {
         <div className="space-y-3 pt-8 mt-4 border-t border-gray-100">
           <h4 className="text-sm font-semibold text-black mb-3 flex items-center">
             <FileArchive className="h-4 w-4 mr-1.5 text-black" />
-            AVANTAGES DU FICHIER ZIP
+            AVANTAGES DU FICHIER
           </h4>
           
           <div className="grid gap-3 md:grid-cols-2">
@@ -196,4 +195,3 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
-

@@ -44,6 +44,7 @@ import { clermontFootLogoPost } from './clermont-foot-logo';
 import { clubHistoryPost } from './club-history';
 import { colombiaLogoPost } from './colombia-logo';
 import { crystalPalaceLogoPost } from './crystal-palace-logo';
+import { denmarkLogoPost } from './denmark-logo';
 import { dijonLogoPost } from './dijon-logo';
 import { dortmundLogoPost } from './dortmund-logo';
 import { dunkerqueLogoPost } from './dunkerque-logo';
@@ -204,6 +205,7 @@ export const logoPosts: BlogPost[] = [
   clubHistoryPost,
   colombiaLogoPost,
   crystalPalaceLogoPost,
+  denmarkLogoPost,
   dijonLogoPost,
   dortmundLogoPost,
   dunkerqueLogoPost,

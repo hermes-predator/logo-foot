@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 // Individual Logo Post Imports
@@ -158,7 +159,6 @@ import { winamaxLogoPost } from './winamax-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { africanClubsPost } from './african-clubs';
 import { worldCupLogoPost } from './world-cup-logo';
-import { colombiaLogoPost } from './colombia-logo';
 
 // Aggregating all logo posts
 export const logoPosts: BlogPost[] = [

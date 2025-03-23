@@ -5,6 +5,7 @@ import { BlogPost } from '../../../types/blog';
 import { acAjaccioLogoPost } from './ac-ajaccio-logo';
 import { ajaxLogoPost } from './ajax-logo';
 import { amiensLogoPost } from './amiens-logo';
+import { anderlechtLogoPost } from './anderlecht-logo';
 import { angersLogoPost } from './angers-logo';
 import { annecyLogoPost } from './annecy-logo';
 import { argentinaLogoPost } from './argentina-logo';
@@ -167,6 +168,7 @@ export const logoPosts: BlogPost[] = [
   acAjaccioLogoPost,
   ajaxLogoPost,
   amiensLogoPost,
+  anderlechtLogoPost,
   angersLogoPost,
   annecyLogoPost,
   argentinaLogoPost,

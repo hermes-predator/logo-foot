@@ -2,6 +2,7 @@
 import { BlogPost } from '../../../../types/blog';
 
 // Import national team logo posts
+import { algeriaLogoPost } from '../algeria-logo';
 import { argentinaLogoPost } from '../argentina-logo';
 import { austriaLogoPost } from '../austria-logo';
 import { belgiumLogoPost } from '../belgium-logo';
@@ -20,6 +21,7 @@ import { nationalTeamsPost } from '../national-teams';
 
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
+  algeriaLogoPost,
   argentinaLogoPost,
   austriaLogoPost,
   belgiumLogoPost,

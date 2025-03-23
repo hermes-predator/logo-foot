@@ -74,6 +74,7 @@ import { lavalLogoPost } from './laval-logo';
 import { lazioLogoPost } from './lazio-logo';
 import { leedsUnitedLogoPost } from './leeds-united-logo';
 import { lensLogoPost } from './lens-logo';
+import { lecceLogoPost } from './lecce-logo';
 import { leHavreLogoPost } from './le-havre-logo';
 import { leicesterLogoPost } from './leicester-logo';
 import { leverkusenLogoPost } from './leverkusen-logo';
@@ -218,6 +219,7 @@ export const logoPosts: BlogPost[] = [
   lazioLogoPost,
   leedsUnitedLogoPost,
   lensLogoPost,
+  lecceLogoPost,
   leHavreLogoPost,
   leicesterLogoPost,
   leverkusenLogoPost,

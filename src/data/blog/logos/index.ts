@@ -123,6 +123,7 @@ import { rennesLogoPost } from './rennes-logo';
 import { rodezLogoPost } from './rodez-logo';
 import { saintEtienneLogoPost } from './saint-etienne-logo';
 import { sampdoriaLogoPost } from './sampdoria-logo';
+import { sassuoloLogoPost } from './sassuolo-logo'; // New import
 import { serieALogoPost } from './serie-a-logo';
 import { sheffieldUnitedLogoPost } from './sheffield-united-logo';
 import { southamptonLogoPost } from './southampton-logo';
@@ -272,6 +273,7 @@ export const logoPosts: BlogPost[] = [
   rodezLogoPost,
   saintEtienneLogoPost,
   sampdoriaLogoPost,
+  sassuoloLogoPost, // Added the new Sassuolo logo post
   serieALogoPost,
   sheffieldUnitedLogoPost,
   southamptonLogoPost,

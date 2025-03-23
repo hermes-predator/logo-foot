@@ -92,6 +92,7 @@ import { metzLogoPost } from './metz-logo';
 import { milanLogoPost } from './milan-logo';
 import { mlsLogoPost } from './mls-logos';
 import { monacoLogoPost } from './monaco-logo';
+import { monzaLogoPost } from './monza-logo';
 import { montpellierLogoPost } from './montpellier-logo';
 import { nantesLogoPost } from './nantes-logo';
 import { napoliLogoPost } from './napoli-logo';
@@ -240,6 +241,7 @@ export const logoPosts: BlogPost[] = [
   milanLogoPost,
   mlsLogoPost,
   monacoLogoPost,
+  monzaLogoPost,
   montpellierLogoPost,
   nantesLogoPost,
   napoliLogoPost,

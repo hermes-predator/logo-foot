@@ -56,6 +56,7 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('gunners') ||
       post.title.toLowerCase().includes('ac milan') ||
       post.title.toLowerCase().includes('milan') ||
+      post.title.toLowerCase().includes('monza') ||
       post.title.toLowerCase().includes('rc lens') ||
       post.title.toLowerCase().includes('lens') ||
       post.title.toLowerCase().includes('as monaco') ||

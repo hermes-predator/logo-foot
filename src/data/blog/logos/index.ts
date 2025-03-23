@@ -95,6 +95,7 @@ import { montpellierLogoPost } from './montpellier-logo';
 import { nantesLogoPost } from './nantes-logo';
 import { napoliLogoPost } from './napoli-logo';
 import { nationalTeamsPost } from './national-teams';
+import { nationsLeagueLogoPost } from './nations-league-logo';
 import { netherlandsLogoPost } from './netherlands-logo';
 import { newcastleLogoPost } from './newcastle-logo';
 import { niceLogoPost } from './nice-logo';
@@ -240,6 +241,7 @@ export const logoPosts: BlogPost[] = [
   nantesLogoPost,
   napoliLogoPost,
   nationalTeamsPost,
+  nationsLeagueLogoPost,
   netherlandsLogoPost,
   newcastleLogoPost,
   niceLogoPost,

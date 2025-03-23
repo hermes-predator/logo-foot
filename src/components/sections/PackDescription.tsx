@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, Zap } from "lucide-react";
 
@@ -140,6 +141,7 @@ const PackDescription = () => {
           </div>
         </div>
 
+        {/* Ajout d'un saut de ligne avec une bordure top pour séparer visuellement */}
         <div className="space-y-3 pt-4 border-t border-gray-100">
           <h4 className="text-sm font-semibold text-black mb-3 flex items-center">
             <FileArchive className="h-4 w-4 mr-1.5 text-black" />

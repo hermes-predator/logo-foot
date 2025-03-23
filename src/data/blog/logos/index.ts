@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 // Individual Logo Post Imports
@@ -140,6 +139,7 @@ import { stadeRennaisLogoPost } from './stade-rennais-logo';
 import { stokeCityLogoPost } from './stoke-city-logo';
 import { strasbourgLogoPost } from './strasbourg-logo';
 import { stuttgartLogoPost } from './stuttgart-logo';
+import { sunderlandLogoPost } from './sunderland-logo';
 import { torinoLogoPost } from './torino-logo';
 import { tottenhamLogoPost } from './tottenham-logo';
 import { toulouseFCLogoPost } from './toulouse-fc-logo';
@@ -158,6 +158,7 @@ import { winamaxLogoPost } from './winamax-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { africanClubsPost } from './african-clubs';
 import { worldCupLogoPost } from './world-cup-logo';
+import { colombiaLogoPost } from './colombia-logo';
 
 // Aggregating all logo posts
 export const logoPosts: BlogPost[] = [
@@ -299,6 +300,7 @@ export const logoPosts: BlogPost[] = [
   stokeCityLogoPost,
   strasbourgLogoPost,
   stuttgartLogoPost,
+  sunderlandLogoPost,
   torinoLogoPost,
   tottenhamLogoPost,
   toulouseFCLogoPost,

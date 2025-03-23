@@ -149,9 +149,9 @@ const PackDescription = () => {
           </h4>
           
           <div className="grid gap-3 md:grid-cols-2">
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                <div className="p-1.5 rounded-full bg-[#452A2A]">
                   <Sparkles className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
@@ -159,9 +159,9 @@ const PackDescription = () => {
               <p className="text-xs text-[#5D4545] pl-7">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                <div className="p-1.5 rounded-full bg-[#452A2A]">
                   <Target className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Couverture totale du football</span>
@@ -169,9 +169,9 @@ const PackDescription = () => {
               <p className="text-xs text-[#5D4545] pl-7">Tous les éléments nécessaires pour vos projets web liés au football</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                <div className="p-1.5 rounded-full bg-[#452A2A]">
                   <Cloud className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
@@ -179,9 +179,9 @@ const PackDescription = () => {
               <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage : ordinateur local ou cloud privé (Google Drive...)</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20 transition-all duration-300 hover:shadow-md group">
+            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
               <div className="flex items-center gap-2.5 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A] group-hover:bg-[#5D4545] transition-colors">
+                <div className="p-1.5 rounded-full bg-[#452A2A]">
                   <Zap className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Mise à jour régulière</span>
@@ -196,3 +196,4 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
+

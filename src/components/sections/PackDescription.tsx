@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, Zap } from "lucide-react";
 
@@ -165,7 +166,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-[#452A2A]">Couverture totale du football</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Tous les éléments nécessaires pour vos projets web liés au football</p>
+              <p className="text-xs text-[#5D4545] pl-7">Tous les ressources nécessaires pour vos projets web liés au football</p>
             </div>
             
             <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">

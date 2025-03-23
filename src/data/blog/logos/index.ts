@@ -86,6 +86,7 @@ import { lillLogoPost } from './lille-logo';
 import { liverpoolLogoPost } from './liverpool-logo';
 import { lorientLogoPost } from './lorient-logo';
 import { lyonLogoPost } from './lyon-logo';
+import { majorqueLogoPost } from './majorque-logo';
 import { manchesterCityLogoPost } from './manchester-city-logo';
 import { manchesterUnitedLogoPost } from './manchester-united-logo';
 import { martiguesLogoPost } from './martigues-logo';
@@ -240,6 +241,7 @@ export const logoPosts: BlogPost[] = [
   liverpoolLogoPost,
   lorientLogoPost,
   lyonLogoPost,
+  majorqueLogoPost,
   manchesterCityLogoPost,
   manchesterUnitedLogoPost,
   martiguesLogoPost,

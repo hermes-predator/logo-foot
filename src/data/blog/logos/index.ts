@@ -109,6 +109,7 @@ import { omLogoPost } from './om-logo';
 import { parmaLogoPost } from './parma-logo';
 import { parisFCLogoPost } from './paris-fc-logo';
 import { pauFCLogoPost } from './pau-fc-logo';
+import { pisaLogoPost } from './pisa-logo'; // New import
 import { portoLogoPost } from './porto-logo';
 import { portugalLogoPost } from './portugal-logo';
 import { portugueseLogosPost } from './portuguese-clubs';
@@ -123,7 +124,7 @@ import { rennesLogoPost } from './rennes-logo';
 import { rodezLogoPost } from './rodez-logo';
 import { saintEtienneLogoPost } from './saint-etienne-logo';
 import { sampdoriaLogoPost } from './sampdoria-logo';
-import { sassuoloLogoPost } from './sassuolo-logo'; // New import
+import { sassuoloLogoPost } from './sassuolo-logo';
 import { serieALogoPost } from './serie-a-logo';
 import { sheffieldUnitedLogoPost } from './sheffield-united-logo';
 import { southamptonLogoPost } from './southampton-logo';
@@ -259,6 +260,7 @@ export const logoPosts: BlogPost[] = [
   parmaLogoPost,
   parisFCLogoPost,
   pauFCLogoPost,
+  pisaLogoPost, // Added the new Pisa logo post
   portoLogoPost,
   portugalLogoPost,
   portugueseLogosPost,
@@ -273,7 +275,7 @@ export const logoPosts: BlogPost[] = [
   rodezLogoPost,
   saintEtienneLogoPost,
   sampdoriaLogoPost,
-  sassuoloLogoPost, // Added the new Sassuolo logo post
+  sassuoloLogoPost,
   serieALogoPost,
   sheffieldUnitedLogoPost,
   southamptonLogoPost,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Folder, List, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
+import { Folder, List, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -177,7 +177,7 @@ const PackDescription = () => {
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                  <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>

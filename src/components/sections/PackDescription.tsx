@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -82,8 +81,9 @@ const PackDescription = () => {
         
       <Separator className="my-4 bg-red-100/50" />
 
-      {/* Redesigned advantages section with call-to-action integrated */}
-      <div className="space-y-4 pt-10 mt-6">
+      
+    
+    <div className="space-y-4 pt-10 mt-6">
         <h4 className="text-sm font-extrabold text-gray-800 mb-4">
           AVANTAGES DU FICHIER
         </h4>
@@ -127,14 +127,14 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Nous améliorons en continu la qualité du fichier car nous savons que nos clients l'aiment.</p>
+              <p className="text-xs text-gray-600 ml-10">Nous améliorons en continu la qualité du fichier car nous savons que nos clients l'adorent.</p>
             </div>
           
         </div>
         
-        {/* Call to Action placed after the 4 arguments */}
+        
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
-          {/* Decorative element in the top right corner - updated with file icon and ZIP text */}
+          
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
               <FileArchive className="h-3 w-3 text-white" />
@@ -161,7 +161,7 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          {/* Section des méthodes de paiement mises à jour avec la nouvelle image et le texte SumUp */}
+          
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">

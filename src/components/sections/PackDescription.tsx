@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -134,11 +134,11 @@ const PackDescription = () => {
         
         {/* Call to Action placed after the 4 arguments */}
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
-          {/* Decorative element in the top right corner - updated with filled star */}
+          {/* Decorative element in the top right corner - updated with file icon and ZIP text */}
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
-              <Star className="h-3 w-3 text-yellow-300" fill="currentColor" />
-              RARE
+              <FileArchive className="h-3 w-3 text-white" />
+              ZIP
             </div>
           </div>
           
@@ -176,7 +176,7 @@ const PackDescription = () => {
                 <img 
                   src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
                   alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                  className="h-16 object-contain" 
+                  className="h-5 object-contain" 
                 />
               </div>
             </div>

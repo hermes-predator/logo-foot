@@ -84,7 +84,7 @@ const PackDescription = () => {
 
       {/* Redesigned advantages section with call-to-action integrated */}
       <div className="space-y-4 pt-10 mt-6">
-        <h4 className="text-sm font-semibold text-gray-800 mb-4">
+        <h4 className="text-sm font-extrabold text-gray-800 mb-4">
           AVANTAGES DU FICHIER
         </h4>
         

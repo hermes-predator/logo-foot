@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -183,12 +184,32 @@ const PackDescription = () => {
           </div>
         </div>
 
-        {/* Redesigned advantages section with call-to-action integrated */}
+        {/* Redesigned advantages section with call-to-action integrated and moved up */}
         <div className="space-y-4 pt-10 mt-6">
           <h4 className="text-sm font-semibold text-gray-800 mb-4 flex items-center gap-2">
             <FileArchive className="h-4 w-4 text-gray-700" />
             AVANTAGES DU FICHIER
           </h4>
+          
+          {/* Call to Action moved up to be right below the heading */}
+          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mb-6">
+            <div className="text-center mb-5">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">Prêt à obtenir cette collection complète ?</h3>
+            </div>
+            
+            <Button 
+              onClick={scrollToPayment}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
+            >
+              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
+              Obtenir le pack complet pour seulement 10€
+              <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
+            </Button>
+            
+            <p className="text-xs text-center text-blue-600 mt-3">
+              Paiement sécurisé • Téléchargement instantané • Satisfaction garantie
+            </p>
+          </div>
           
           <div className="grid gap-4 md:grid-cols-2">
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
@@ -229,28 +250,6 @@ const PackDescription = () => {
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
-            </div>
-            
-            {/* Call to Action integrated in the advantages grid as a full width item */}
-            <div className="md:col-span-2 mt-4">
-              <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md">
-                <div className="text-center mb-5">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Prêt à obtenir cette collection complète ?</h3>
-                </div>
-                
-                <Button 
-                  onClick={scrollToPayment}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
-                >
-                  <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                  Obtenir le pack complet pour seulement 10€
-                  <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
-                </Button>
-                
-                <p className="text-xs text-center text-blue-600 mt-3">
-                  Paiement sécurisé • Téléchargement instantané • Satisfaction garantie
-                </p>
-              </div>
             </div>
           </div>
         </div>

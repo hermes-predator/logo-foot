@@ -22,6 +22,7 @@ import { portugalLogoPost } from '../portugal-logo';
 import { spainLogoPost } from '../spain-logo';
 import { tunisiaLogoPost } from '../tunisia-logo';
 import { uruguayLogoPost } from '../uruguay-logo';
+import { usaLogoPost } from '../usa-logo';
 import { nationalTeamsPost } from '../national-teams';
 
 // Group all national team logo posts
@@ -46,5 +47,6 @@ export const nationalTeamPosts: BlogPost[] = [
   spainLogoPost,
   tunisiaLogoPost,
   uruguayLogoPost,
+  usaLogoPost,
   nationalTeamsPost
 ];

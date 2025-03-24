@@ -1,15 +1,8 @@
 import React from 'react';
-import { Folder, List, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart, Globe } from "lucide-react";
+import { ShoppingCart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+import FolderCard from './folders/FolderCard';
 
 const PackDescription = () => {
   const scrollToPayment = () => {
@@ -20,140 +13,61 @@ const PackDescription = () => {
   return (
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
+        <FolderCard
+          title="𝐅.𝟎𝟏 – Logos de clubs de football"
+          colorScheme="gray"
+          items={[
+            { label: "Format", value: "PNG (fond transparent)" },
+            { label: "Dimensions", value: "120px" },
+            { label: "Sous-groupes", value: "60 collections" },
+            { label: "Quantité totale", value: "8 062 ressources" }
+          ]}
+          collections="Default (20) • Albanie (70) • Allemagne (450) • Angleterre (450) • Arabie Saoudite (80) • Argentine (200) • Arménie (40) • Australie (80) • Autriche (120) • Azerbaïdjan (50) • Belgique (160) • Biélorussie (100) • Bosnie-Herzégovine (80) • Brésil (300) • Bulgarie (100) • Chypre (40) • Croatie (120) • Danemark (150) • Écosse (120) • Espagne (450) • Estonie (40) • États-Unis (300) • Finlande (100) • France (450) • Géorgie (40) • Gibraltar (12) • Grèce (150) • Hongrie (120) • Iles Féroés (20) • Irlande (100) • Irlande du Nord (60) • Islande (80) • Israël (80) • Italie (400) • Kazakhstan (40) • Kosovo (40) • Lettonie (40) • Lituanie (40) • Luxembourg (80) • Macédoine du Nord (40) • Malte (60) • Moldavie (50) • Monténégro (40) • Norvège (150) • Pays-Bas (300) • Pays de Galles (80) • Pologne (150) • Portugal (200) • Qatar (20) • République Tchèque (150) • Roumanie (150) • Russie (150) • Serbie (120) • Slovaquie (120) • Slovénie (80) • Suède (150) • Suisse (150) • Turquie (200) • Ukraine (100) • Sélections nationales de football (240)"
+        />
         
-        <div className="space-y-3 p-4 bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80 transition-all duration-200 hover:shadow-md rounded-t-md">
-          <h3 className="text-lg font-bold text-gray-900 flex items-center gap-3">
-            <Folder className="h-4 w-4 text-gray-600" />
-            𝐅.𝟎𝟏 – Logos de clubs de football
-          </h3>
-          <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
-            <div>
-              <p className="font-semibold text-gray-900 text-sm">Format :</p>
-              <p className="text-gray-700 text-xs">PNG (fond transparent)</p>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-900 text-sm">Dimensions :</p>
-              <p className="text-gray-700 text-xs">120px</p>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-900 text-sm">Sous-groupes :</p>
-              <p className="text-gray-700 text-xs">60 collections</p>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-900 text-sm">Quantité totale :</p>
-              <p className="text-gray-700 text-xs">8 062 ressources</p>
-            </div>
-          </div>
-          <div className="mt-3">
-            <p className="font-semibold text-gray-900 mb-1.5 flex items-center gap-3">
-              <List className="h-4 w-4 text-gray-600" />
-              Collections incluses :
-            </p>
-            <p className="text-xs leading-relaxed text-gray-700 bg-white/50 rounded-lg p-3">
-              Default (20) • Albanie (70) • Allemagne (450) • Angleterre (450) • Arabie Saoudite (80) • Argentine (200) • Arménie (40) • Australie (80) • Autriche (120) • Azerbaïdjan (50) • Belgique (160) • Biélorussie (100) • Bosnie-Herzégovine (80) • Brésil (300) • Bulgarie (100) • Chypre (40) • Croatie (120) • Danemark (150) • Écosse (120) • Espagne (450) • Estonie (40) • États-Unis (300) • Finlande (100) • France (450) • Géorgie (40) • Gibraltar (12) • Grèce (150) • Hongrie (120) • Iles Féroés (20) • Irlande (100) • Irlande du Nord (60) • Islande (80) • Israël (80) • Italie (400) • Kazakhstan (40) • Kosovo (40) • Lettonie (40) • Lituanie (40) • Luxembourg (80) • Macédoine du Nord (40) • Malte (60) • Moldavie (50) • Monténégro (40) • Norvège (150) • Pays-Bas (300) • Pays de Galles (80) • Pologne (150) • Portugal (200) • Qatar (20) • République Tchèque (150) • Roumanie (150) • Russie (150) • Serbie (120) • Slovaquie (120) • Slovénie (80) • Suède (150) • Suisse (150) • Turquie (200) • Ukraine (100) • Sélections nationales de football (240)
-            </p>
-          </div>
-        </div>
+        <FolderCard
+          title="𝐅.𝟎𝟐 – Logos des compétitions de football"
+          colorScheme="blue"
+          items={[
+            { label: "Format", value: "PNG (fond transparent)" },
+            { label: "Dimensions", value: "200px" },
+            { label: "Sous-groupes", value: "1 collection" },
+            { label: "Quantité totale", value: "100 ressources" }
+          ]}
+        />
 
-        <div className="space-y-3 p-4 bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80 transition-all duration-200 hover:shadow-md">
-          <h3 className="text-lg font-bold text-blue-900 flex items-center gap-3">
-            <Folder className="h-4 w-4 text-blue-600" />
-            𝐅.𝟎𝟐 – Logos des compétitions de football
-          </h3>
-          <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
-            <div>
-              <p className="font-semibold text-blue-900 text-sm">Format :</p>
-              <p className="text-blue-700 text-xs">PNG (fond transparent)</p>
-            </div>
-            <div>
-              <p className="font-semibold text-blue-900 text-sm">Dimensions :</p>
-              <p className="text-blue-700 text-xs">200px</p>
-            </div>
-            <div>
-              <p className="font-semibold text-blue-900 text-sm">Sous-groupes :</p>
-              <p className="text-blue-700 text-xs">1 collection</p>
-            </div>
-            <div>
-              <p className="font-semibold text-blue-900 text-sm">Quantité totale :</p>
-              <p className="text-blue-700 text-xs">100 ressources</p>
-            </div>
-          </div>
-        </div>
+        <FolderCard
+          title="𝐅.𝟎𝟑 – Drapeaux mondiaux"
+          colorScheme="green"
+          items={[
+            { label: "Format", value: "PNG (fond transparent)" },
+            { label: "Dimensions", value: "200px" },
+            { label: "Sous-groupes", value: "1 collection" },
+            { label: "Quantité totale", value: "270 ressources" }
+          ]}
+        />
 
-        <div className="space-y-3 p-4 bg-gradient-to-br from-green-50/80 to-green-50/30 border border-green-100/80 transition-all duration-200 hover:shadow-md">
-          <h3 className="text-lg font-bold text-green-900 flex items-center gap-3">
-            <Folder className="h-4 w-4 text-green-600" />
-            𝐅.𝟎𝟑 – Drapeaux mondiaux
-          </h3>
-          <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
-            <div>
-              <p className="font-semibold text-green-900 text-sm">Format :</p>
-              <p className="text-green-700 text-xs">PNG (fond transparent)</p>
-            </div>
-            <div>
-              <p className="font-semibold text-green-900 text-sm">Dimensions :</p>
-              <p className="text-green-700 text-xs">200px</p>
-            </div>
-            <div>
-              <p className="font-semibold text-green-900 text-sm">Sous-groupes :</p>
-              <p className="text-green-700 text-xs">1 collection</p>
-            </div>
-            <div>
-              <p className="font-semibold text-green-900 text-sm">Quantité totale :</p>
-              <p className="text-green-700 text-xs">270 ressources</p>
-            </div>
-          </div>
-        </div>
+        <FolderCard
+          title="𝐅.𝟎𝟒 – Couvertures - Instruments de football"
+          colorScheme="yellow"
+          items={[
+            { label: "Format", value: "PNG (fond transparent)" },
+            { label: "Dimensions", value: "150px" },
+            { label: "Sous-groupes", value: "3 collections" },
+            { label: "Quantité totale", value: "220 ressources" }
+          ]}
+        />
 
-        <div className="space-y-3 p-4 bg-gradient-to-br from-yellow-50/80 to-yellow-50/30 border border-yellow-100/80 transition-all duration-200 hover:shadow-md">
-          <h3 className="text-lg font-bold text-yellow-900 flex items-center gap-3">
-            <Folder className="h-4 w-4 text-yellow-600" />
-            𝐅.𝟎𝟒 – Couvertures - Instruments de football
-          </h3>
-          <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
-            <div>
-              <p className="font-semibold text-yellow-900 text-sm">Format :</p>
-              <p className="text-yellow-700 text-xs">PNG (fond transparent)</p>
-            </div>
-            <div>
-              <p className="font-semibold text-yellow-900 text-sm">Dimensions :</p>
-              <p className="text-yellow-700 text-xs">150px</p>
-            </div>
-            <div>
-              <p className="font-semibold text-yellow-900 text-sm">Sous-groupes :</p>
-              <p className="text-yellow-700 text-xs">3 collections</p>
-            </div>
-            <div>
-              <p className="font-semibold text-yellow-900 text-sm">Quantité totale :</p>
-              <p className="text-yellow-700 text-xs">220 ressources</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-3 p-4 bg-gradient-to-br from-red-50/80 to-red-50/30 border border-red-100/80 transition-all duration-200 hover:shadow-md">
-          <h3 className="text-lg font-bold text-red-900 flex items-center gap-3">
-            <Folder className="h-4 w-4 text-red-600" />
-            𝐅.𝟎𝟓 – Logos des bookmakers
-          </h3>
-          <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
-            <div>
-              <p className="font-semibold text-red-900 text-sm">Format :</p>
-              <p className="text-red-700 text-xs">PNG (fond transparent)</p>
-            </div>
-            <div>
-              <p className="font-semibold text-red-900 text-sm">Dimensions :</p>
-              <p className="text-red-700 text-xs">200px</p>
-            </div>
-            <div>
-              <p className="font-semibold text-red-900 text-sm">Sous-groupes :</p>
-              <p className="text-red-700 text-xs">1 collection</p>
-            </div>
-            <div>
-              <p className="font-semibold text-red-900 text-sm">Quantité totale :</p>
-              <p className="text-red-700 text-xs">40 ressources</p>
-            </div>
-          </div>
-        </div>
+        <FolderCard
+          title="𝐅.𝟎𝟓 – Logos des bookmakers"
+          colorScheme="red"
+          items={[
+            { label: "Format", value: "PNG (fond transparent)" },
+            { label: "Dimensions", value: "200px" },
+            { label: "Sous-groupes", value: "1 collection" },
+            { label: "Quantité totale", value: "40 ressources" }
+          ]}
+        />
         
         <Separator className="my-4 bg-red-100/50" />
 

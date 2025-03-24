@@ -221,7 +221,7 @@ const PackDescription = () => {
             </Button>
             
             <p className="text-xs text-center text-blue-600 mt-3">
-              Paiement sécurisé • Téléchargement instantané • Satisfaction garantie
+              Paiement sécurisé via SumUp • Téléchargement instantané • Satisfaction garantie
             </p>
           </div>
         </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw } from "lucide-react";
 
@@ -140,52 +141,52 @@ const PackDescription = () => {
           </div>
         </div>
 
-        {/* Ajout d'un saut de ligne avec une bordure top pour séparer visuellement */}
-        <div className="space-y-3 pt-8 mt-4 border-t border-gray-100">
-          <h4 className="text-sm font-semibold text-black mb-3 flex items-center gap-3">
-            <FileArchive className="h-4 w-4 text-black" />
+        {/* Redesigned advantages section with more elegant and sober style */}
+        <div className="space-y-4 pt-10 mt-6 border-t border-gray-100">
+          <h4 className="text-sm font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <FileArchive className="h-4 w-4 text-gray-700" />
             AVANTAGES DU FICHIER
           </h4>
           
-          <div className="grid gap-3 md:grid-cols-2">
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Folder className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
+                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-[#452A2A]">Fichier parfaitement organisé</span>
+                <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat</p>
+              <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Target className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
+                  <Target className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-[#452A2A]">Couverture totale du football</span>
+                <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Tous les ressources nécessaires pour vos projets web liés au football</p>
+              <p className="text-xs text-gray-600 ml-10">Tous les ressources nécessaires pour vos projets web liés au football</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <Cloud className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
+                  <Cloud className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-[#452A2A]">Stockage flexible</span>
+                <span className="text-sm font-medium text-gray-800">Stockage flexible</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Compatible avec tout système de stockage : ordinateur local ou cloud privé (Google Drive...)</p>
+              <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé (Google Drive...)</p>
             </div>
             
-            <div className="bg-gradient-to-br from-[#452A2A]/10 to-[#6B4242]/5 p-3 rounded-lg border border-[#6B4242]/20">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-1.5 rounded-full bg-[#452A2A]">
-                  <RefreshCw className="h-3.5 w-3.5 text-red-200/90 shrink-0" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
+                  <RefreshCw className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-[#452A2A]">Mise à jour régulière</span>
+                <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-[#5D4545] pl-7">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
+              <p className="text-xs text-gray-600 ml-10">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
             </div>
           </div>
         </div>

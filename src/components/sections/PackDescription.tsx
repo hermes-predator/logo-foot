@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Archive } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -120,8 +121,20 @@ const PackDescription = () => {
             </div>
           </div>
           
-          {/* Call to Action placed after the 4 arguments */}
-          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6">
+          {/* Call to Action placed after the 4 arguments with ZIP icon in corner */}
+          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative overflow-hidden">
+            {/* ZIP file icon/tattoo in the top right corner */}
+            <div className="absolute -top-2 -right-2 transform rotate-12 opacity-95">
+              <div className="relative">
+                <div className="bg-blue-600 text-white p-2 pb-8 pt-5 w-20 flex flex-col items-center justify-center rounded-sm shadow-md transform skew-y-3">
+                  <Archive className="h-5 w-5 mb-1 text-white" />
+                  <span className="text-[10px] font-bold tracking-wide">ZIP</span>
+                  <div className="absolute bottom-0 left-0 right-0 h-3 bg-blue-700 z-10"></div>
+                </div>
+                <div className="absolute bottom-0 right-0 w-0 h-0 border-t-[8px] border-t-transparent border-r-[20px] border-r-blue-800 transform -rotate-[30deg] -translate-y-1"></div>
+              </div>
+            </div>
+            
             <div className="text-center mb-5">
               <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
             </div>

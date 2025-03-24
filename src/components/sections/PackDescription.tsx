@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -105,7 +106,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Stockage flexible</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé (Google Drive...)</p>
+              <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive</p>
             </div>
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">

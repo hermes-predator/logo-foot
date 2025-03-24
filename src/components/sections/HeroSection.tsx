@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -40,7 +39,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       <div className="absolute bottom-20 right-1/4 text-purple-400/20 animate-pulse" style={{ animationDuration: '7s', animationDelay: '1s' }}>
         <Sparkles className="h-10 w-10" />
       </div>
-
+      
       <div className="max-w-4xl mx-auto text-center space-y-6">
         {/* Premium Badge with enhanced animation */}
         <div 

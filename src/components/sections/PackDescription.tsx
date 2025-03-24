@@ -135,7 +135,7 @@ const PackDescription = () => {
             </div>
             <div>
               <p className="font-semibold text-red-900 text-sm">Quantité totale :</p>
-              <p className="text-red-700 text-xs">20 ressources</p>
+              <p className="text-red-700 text-xs">40 ressources</p>
             </div>
           </div>
         </div>

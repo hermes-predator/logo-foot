@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play } from "lucide-react";
+import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   AlertDialog,
@@ -11,6 +12,11 @@ import {
 } from "@/components/ui/alert-dialog";
 
 const PackDescription = () => {
+  const scrollToPayment = () => {
+    const paymentSection = document.querySelector('#payment-section');
+    paymentSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
@@ -225,6 +231,29 @@ const PackDescription = () => {
               </div>
               <p className="text-xs text-gray-600 ml-10">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
             </div>
+          </div>
+        </div>
+        
+        {/* Call to Action Button */}
+        <div className="mt-10 pt-8 border-t border-gray-100">
+          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md">
+            <div className="text-center mb-5">
+              <h3 className="text-xl font-bold text-blue-900 mb-2">Prêt à obtenir cette collection complète ?</h3>
+              <p className="text-blue-700 text-sm">Accédez à plus de 8 600 ressources pour vos projets web liés au football</p>
+            </div>
+            
+            <Button 
+              onClick={scrollToPayment}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
+            >
+              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
+              Obtenir le pack complet pour seulement 10€
+              <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
+            </Button>
+            
+            <p className="text-xs text-center text-blue-600 mt-3">
+              Paiement sécurisé • Téléchargement instantané • Satisfaction garantie
+            </p>
           </div>
         </div>
       </div>

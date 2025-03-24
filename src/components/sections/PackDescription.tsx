@@ -90,7 +90,7 @@ const PackDescription = () => {
         
         <div className="grid gap-4 md:grid-cols-2">
           
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
@@ -100,7 +100,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
@@ -110,7 +110,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-600 ml-10">Tous les ressources nécessaires pour vos projets web liés au football.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Cloud className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
@@ -120,7 +120,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <RefreshCw className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />

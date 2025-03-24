@@ -85,7 +85,9 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('toulouse') ||
       post.title.toLowerCase().includes('tfc') ||
       post.title.toLowerCase().includes('aston villa') ||
-      post.title.toLowerCase().includes('villa')
+      post.title.toLowerCase().includes('villa') ||
+      post.title.toLowerCase().includes('suisse') ||
+      post.title.toLowerCase().includes('logo suisse')
     )
     .map(post => ({
       url: `/blog/${post.id}`,
@@ -112,6 +114,7 @@ export const generateSitemap = () => {
     { url: '/gallery/country/portugal', priority: '0.6', lastmod: today, changefreq: 'monthly' },
     { url: '/gallery/country/netherlands', priority: '0.6', lastmod: today, changefreq: 'monthly' },
     { url: '/gallery/country/argentina', priority: '0.6', lastmod: today, changefreq: 'monthly' },
+    { url: '/gallery/country/switzerland', priority: '0.6', lastmod: today, changefreq: 'monthly' },
   ];
 
   // Créer une Map pour éviter les doublons d'URLs

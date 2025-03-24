@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import Testimonials from '../components/Testimonials';
 import BeforeAfterComparison from '../components/BeforeAfterComparison';
-import BenefitsSection from '../components/sections/BenefitsSection';
 
 const Index = () => {
   const scrollToPayment = () => {
@@ -28,7 +27,6 @@ const Index = () => {
             title="La différence de qualité est visible"
             description="Comparez la différence entre les logos gratuits de faible qualité et notre collection premium. Glissez pour voir la différence!"
           />
-          <BenefitsSection />
           <div id="payment-section">
             <PaymentSection />
           </div>

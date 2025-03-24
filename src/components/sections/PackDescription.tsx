@@ -86,7 +86,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat</p>
+              <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
@@ -96,7 +96,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Tous les ressources nécessaires pour vos projets web liés au football</p>
+              <p className="text-xs text-gray-600 ml-10">Tous les ressources nécessaires pour vos projets web liés au football.</p>
             </div>
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
@@ -106,7 +106,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Stockage flexible</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive</p>
+              <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
@@ -116,7 +116,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
+              <p className="text-xs text-gray-600 ml-10">Nouvelles ressources ajoutées lors des mises à jour saisonnières.</p>
             </div>
           </div>
           

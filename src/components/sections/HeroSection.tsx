@@ -100,6 +100,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
+          {/* Bouton "Voir la démo" déplacé ici */}
+          {onOpenDemo && (
+            <Button 
+              onClick={onOpenDemo}
+              variant="outline"
+              size="lg"
+              className="gap-2 hover:bg-gray-50 group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50"
+            >
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-1 group-hover:scale-110 transition-transform duration-300">
+                <Play className="h-4 w-4 fill-white text-white" />
+              </div>
+              Voir la démo
+            </Button>
+          )}
+          
           <Dialog>
             <DialogTrigger asChild>
               <Button 
@@ -121,21 +136,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
               </DialogHeader>
             </DialogContent>
           </Dialog>
-          
-          {/* Bouton "Voir la démo" ajouté ici */}
-          {onOpenDemo && (
-            <Button 
-              onClick={onOpenDemo}
-              variant="outline"
-              size="lg"
-              className="gap-2 hover:bg-gray-50 group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50"
-            >
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-1 group-hover:scale-110 transition-transform duration-300">
-                <Play className="h-4 w-4 fill-white text-white" />
-              </div>
-              Voir la démo
-            </Button>
-          )}
           
           <Button
             variant="default"

@@ -5,9 +5,9 @@ import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import Testimonials from '../components/Testimonials';
-import BeforeAfterComparison from '../components/BeforeAfterComparison';
 import { Button } from '../components/ui/button';
 import { Play } from 'lucide-react';
+import BeforeAfterComparison from '../components/BeforeAfterComparison';
 
 const Index = () => {
   const [demoDialogOpen, setDemoDialogOpen] = useState(false);
@@ -38,14 +38,7 @@ const Index = () => {
         <div className="container mx-auto">
           <HeroSection onScrollToPayment={scrollToPayment} />
           <ProductGallery />
-          <BeforeAfterComparison 
-            videoUrl="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
-            title="La différence de qualité est visible"
-            description="Découvrez la différence entre les logos gratuits de faible qualité et notre collection premium avec cette démonstration rapide."
-            showButton={false}
-            isDialogOpen={demoDialogOpen}
-            onDialogOpenChange={setDemoDialogOpen}
-          />
+          {/* La section BeforeAfterComparison a été supprimée ici */}
           <div id="payment-section">
             <PaymentSection />
           </div>
@@ -53,6 +46,16 @@ const Index = () => {
         <Testimonials />
       </main>
       <Footer />
+      
+      {/* On garde le composant BeforeAfterComparison mais seulement pour la boîte de dialogue */}
+      <BeforeAfterComparison 
+        videoUrl="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
+        title="La différence de qualité est visible"
+        description="Découvrez la différence entre les logos gratuits de faible qualité et notre collection premium avec cette démonstration rapide."
+        showButton={false}
+        isDialogOpen={demoDialogOpen}
+        onDialogOpenChange={setDemoDialogOpen}
+      />
     </div>
   );
 };

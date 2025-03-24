@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,51 +15,33 @@ const PackDescription = () => {
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
         
-        {/* Preview Video Button */}
-        <div className="flex justify-center mb-6">
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <Button 
-                variant="outline" 
-                className="group relative overflow-hidden border-gray-200 hover:border-gray-300 bg-white/80 backdrop-blur-sm shadow-sm hover:shadow transition-all duration-300"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/30 to-blue-50/30 opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative z-10 flex items-center gap-2">
-                  <div className="bg-purple-100 rounded-full p-1 group-hover:bg-purple-200 transition-colors duration-300">
-                    <Play className="h-3.5 w-3.5 text-purple-700 fill-purple-700" />
-                  </div>
-                  <span className="text-sm font-medium text-gray-800">Aperçu vidéo du contenu</span>
-                </div>
-              </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent className="max-w-4xl max-h-[80vh] overflow-hidden p-0 border-none bg-transparent shadow-2xl">
-              <div className="bg-gray-950/95 rounded-xl overflow-hidden">
-                <AlertDialogHeader className="p-4 bg-gradient-to-b from-gray-900 to-gray-950">
-                  <AlertDialogTitle className="text-white text-xl">Aperçu du contenu du pack</AlertDialogTitle>
-                  <AlertDialogDescription className="text-gray-400">
-                    Preview de l'organisation des fichiers et des logos inclus
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <div className="relative aspect-video w-full bg-black/80">
-                  <video 
-                    src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
-                    controls 
-                    autoPlay 
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      // Fallback to image if video fails to load
-                      const target = e.target as HTMLVideoElement;
-                      const img = document.createElement('img');
-                      img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
-                      img.alt = "Aperçu du contenu";
-                      img.className = "w-full h-full object-contain";
-                      target.parentNode?.replaceChild(img, target);
-                    }}
-                  />
-                </div>
-              </div>
-            </AlertDialogContent>
-          </AlertDialog>
+        {/* Preview Video - Directly embedded in the component */}
+        <div className="mb-8 overflow-hidden rounded-xl border border-gray-200/80 shadow-md">
+          <div className="bg-gray-950/95 rounded-t-xl overflow-hidden">
+            <div className="p-4 bg-gradient-to-b from-gray-900 to-gray-950">
+              <h3 className="text-white text-lg font-medium">Aperçu du contenu du pack</h3>
+              <p className="text-gray-400 text-sm">
+                Preview de l'organisation des fichiers et des logos inclus
+              </p>
+            </div>
+            <div className="relative aspect-video w-full bg-black/80">
+              <video 
+                src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
+                controls 
+                className="w-full h-full object-contain"
+                poster="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
+                onError={(e) => {
+                  // Fallback to image if video fails to load
+                  const target = e.target as HTMLVideoElement;
+                  const img = document.createElement('img');
+                  img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
+                  img.alt = "Aperçu du contenu";
+                  img.className = "w-full h-full object-contain";
+                  target.parentNode?.replaceChild(img, target);
+                }}
+              />
+            </div>
+          </div>
         </div>
         
         <div className="space-y-3 p-4 bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80 transition-all duration-200 hover:shadow-md rounded-t-md">

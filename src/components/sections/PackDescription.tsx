@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
+import { Folder, List, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   AlertDialog,
@@ -157,8 +157,7 @@ const PackDescription = () => {
 
         {/* Redesigned advantages section with call-to-action integrated */}
         <div className="space-y-4 pt-10 mt-6">
-          <h4 className="text-sm font-semibold text-gray-800 mb-4 flex items-center gap-2">
-            <FileArchive className="h-4 w-4 text-gray-700" />
+          <h4 className="text-sm font-semibold text-gray-800 mb-4">
             AVANTAGES DU FICHIER
           </h4>
           
@@ -176,7 +175,7 @@ const PackDescription = () => {
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Target className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>

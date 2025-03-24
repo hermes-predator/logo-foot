@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Archive, Package, Crown, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,6 +13,7 @@ const PackDescription = () => {
   return (
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
+        
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
@@ -121,29 +121,17 @@ const PackDescription = () => {
             </div>
           </div>
           
-          {/* Call to Action placed after the 4 arguments with ZIP icon in corner */}
+          {/* Call to Action section with Premium badge but without ZIP icon */}
           <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative overflow-hidden">
-            {/* Premium badge in the top right corner - now straight instead of rotated */}
+            {/* Premium badge in the top right corner - straight positioning */}
             <div className="absolute top-0 right-0 z-10">
               <div className="relative">
                 <div className="bg-blue-600 text-white px-3 py-1 shadow-md rounded-sm flex items-center gap-1.5">
                   <Star className="h-3 w-3 fill-yellow-300 text-yellow-300" aria-hidden="true" />
                   <span className="text-xs font-semibold tracking-wide">PREMIUM</span>
                 </div>
-                {/* Triangle decoration for the badge - adjusted for straight positioning */}
+                {/* Triangle decoration for the badge */}
                 <div className="absolute -bottom-1.5 -left-0 w-0 h-0 border-t-[6px] border-t-transparent border-r-[8px] border-r-blue-800"></div>
-              </div>
-            </div>
-            
-            {/* ZIP file icon/tattoo in the corner */}
-            <div className="absolute -top-2 -right-2 transform rotate-12 opacity-95">
-              <div className="relative">
-                <div className="bg-blue-600 text-white p-2 pb-8 pt-5 w-20 flex flex-col items-center justify-center rounded-sm shadow-md transform skew-y-3">
-                  <Archive className="h-5 w-5 mb-1 text-white" />
-                  <span className="text-[10px] font-bold tracking-wide">ZIP</span>
-                  <div className="absolute bottom-0 left-0 right-0 h-3 bg-blue-700 z-10"></div>
-                </div>
-                <div className="absolute bottom-0 right-0 w-0 h-0 border-t-[8px] border-t-transparent border-r-[20px] border-r-blue-800 transform -rotate-[30deg] -translate-y-1"></div>
               </div>
             </div>
             

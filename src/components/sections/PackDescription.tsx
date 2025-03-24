@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -175,7 +176,7 @@ const PackDescription = () => {
                 <img 
                   src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
                   alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                  className="h-5 object-contain" 
+                  className="h-16 object-contain" 
                 />
               </div>
             </div>

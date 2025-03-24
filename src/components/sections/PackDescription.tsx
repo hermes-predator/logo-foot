@@ -167,7 +167,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
                 Paiement sécurisé via
                 <img 
-                  src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
+                  src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                   alt="SumUp" 
                   className="h-4 object-contain" 
                 />

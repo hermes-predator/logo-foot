@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -121,7 +122,18 @@ const PackDescription = () => {
           </div>
           
           {/* Call to Action placed after the 4 arguments */}
-          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6">
+          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
+            {/* Decorative element in the top right corner */}
+            <div className="absolute -top-3 -right-3 z-10">
+              <div className="relative">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full blur-sm opacity-75 animate-pulse"></div>
+                <div className="relative bg-gradient-to-br from-amber-300 to-amber-500 text-white px-3 py-1 rounded-full font-semibold text-xs flex items-center gap-1 shadow-lg">
+                  <Sparkles className="h-3 w-3 text-white" />
+                  PREMIUM
+                </div>
+              </div>
+            </div>
+            
             <div className="text-center mb-5">
               <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
             </div>

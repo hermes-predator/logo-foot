@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -38,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
       <div className="absolute top-20 left-1/4 text-blue-400/20 animate-bounce" style={{ animationDuration: '5s' }}>
         <Sparkles className="h-8 w-8" />
       </div>
-      <div className="absolute bottom-20 right-1/4 text-purple-400/20 animate-bounce" style={{ animationDuration: '7s', animationDelay: '1s' }}>
+      <div className="absolute bottom-20 right-1/4 text-purple-400/20 animate-pulse" style={{ animationDuration: '7s', animationDelay: '1s' }}>
         <Sparkles className="h-10 w-10" />
       </div>
 
@@ -100,53 +99,51 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
-          {/* Bouton "Voir la démo" déplacé ici */}
-          {onOpenDemo && (
+        <Dialog>
+          <DialogTrigger asChild>
             <Button 
-              onClick={onOpenDemo}
-              variant="outline"
-              size="lg"
-              className="gap-2 hover:bg-gray-50 group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50"
+              variant="outline" 
+              size="lg" 
+              className="group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100"
             >
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-1 group-hover:scale-110 transition-transform duration-300">
-                <Play className="h-4 w-4 fill-white text-white" />
-              </div>
-              Voir la démo
+              <Book className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
+              Descriptif du ZIP
             </Button>
-          )}
-          
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="gap-2 hover:bg-gray-50 group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300"
-              >
-                <Book className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                Descriptif du ZIP
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold mb-0">Descriptif du fichier zip</DialogTitle>
-                <p className="text-sm text-gray-500 italic mb-8">⦗FRONT-CLOUD⦘~ Football.zip</p>
-                <DialogDescription className="text-left space-y-6">
-                  <PackDescription />
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
-          
-          <Button
-            variant="default"
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold mb-0">Descriptif du fichier zip</DialogTitle>
+              <p className="text-sm text-gray-500 italic mb-8">⦗FRONT-CLOUD⦘~ Football.zip</p>
+              <DialogDescription className="text-left space-y-6">
+                <PackDescription />
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
+
+        {onOpenDemo && (
+          <Button 
+            onClick={onOpenDemo}
+            variant="outline"
             size="lg"
-            onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2 hover:-translate-y-0.5"
+            className="group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-purple-50 to-blue-50 hover:from-purple-100 hover:to-blue-100"
           >
-            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '2s' }} />
-            Voir le prix
+            <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-full p-1 mr-2 group-hover:scale-110 transition-transform duration-300">
+              <Play className="h-4 w-4 fill-white text-white" />
+            </div>
+            Voir la démo
           </Button>
-        </div>
+        )}
+        
+        <Button
+          variant="default"
+          size="lg"
+          onClick={onScrollToPayment}
+          className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2 hover:-translate-y-0.5"
+        >
+          <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '2s' }} />
+          Voir le prix
+        </Button>
       </div>
     </section>
   );

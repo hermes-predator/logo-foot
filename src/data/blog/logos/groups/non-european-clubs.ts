@@ -8,9 +8,11 @@ import { asianClubsPost } from '../asian-clubs';
 import { brazilianClubsPost } from '../brazilian-clubs';
 import { southAmericanClubsPost } from '../south-american-clubs';
 import { mlsLogoPost } from '../mls-logos';
+import { flamengoLogoPost } from '../flamengo-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
+  flamengoLogoPost,
   interMiamiLogoPost,
   africanClubsPost,
   asianClubsPost,

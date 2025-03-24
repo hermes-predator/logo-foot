@@ -69,7 +69,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const colors = colorClasses[colorScheme];
 
   return (
-    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md`}>
+    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} rounded-t-lg transition-all duration-200 hover:shadow-md`}>
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
         <span className={colors.icon}>{icon}</span>
         {title}

@@ -31,7 +31,7 @@ const Index = () => {
       </main>
       <Footer />
       
-      {/* On garde le composant BeforeAfterComparison mais seulement pour la boîte de dialogue */}
+      {/* BeforeAfterComparison component for dialog */}
       <BeforeAfterComparison 
         videoUrl="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
         title="La différence de qualité est visible"

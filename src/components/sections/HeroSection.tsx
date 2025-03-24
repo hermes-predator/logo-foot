@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Play } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -19,10 +19,9 @@ import {
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
-  onOpenDemo?: () => void;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   
   return (
     <section className="relative pt-12 pb-20 px-4 overflow-hidden">

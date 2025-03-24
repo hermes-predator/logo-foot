@@ -15,7 +15,7 @@ const PackDescription = () => {
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
         <FolderCard
-          title="𝐅.𝟎𝟏 – Logos de clubs de football"
+          title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },

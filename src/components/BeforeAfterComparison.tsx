@@ -1,76 +1,27 @@
 
-import React, { useState, useRef, useEffect } from 'react';
-import { ArrowLeftRight, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Play, Sparkles } from 'lucide-react';
+import { Button } from './ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "./ui/dialog";
 
 interface BeforeAfterComparisonProps {
-  beforeImage: string;
-  afterImage: string;
-  beforeAlt: string;
-  afterAlt: string;
+  videoUrl?: string;
   title: string;
   description: string;
 }
 
 const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
-  beforeImage,
-  afterImage,
-  beforeAlt,
-  afterAlt,
+  videoUrl = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png", // Utilisez une image par défaut si pas de vidéo
   title,
   description
 }) => {
-  const [sliderPosition, setSliderPosition] = useState(50);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
-
-  const handleMouseDown = () => {
-    setIsDragging(true);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleTouchStart = () => {
-    setIsDragging(true);
-  };
-
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-  };
-
-  const handleMove = (clientX: number) => {
-    if (isDragging && containerRef.current) {
-      const containerRect = containerRef.current.getBoundingClientRect();
-      const containerWidth = containerRect.width;
-      const relativeX = clientX - containerRect.left;
-      const newPosition = Math.max(0, Math.min(100, (relativeX / containerWidth) * 100));
-      setSliderPosition(newPosition);
-    }
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    handleMove(e.clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    handleMove(e.touches[0].clientX);
-  };
-
-  useEffect(() => {
-    // Clean up event listeners on unmount
-    const handleGlobalMouseUp = () => {
-      setIsDragging(false);
-    };
-
-    document.addEventListener('mouseup', handleGlobalMouseUp);
-    document.addEventListener('touchend', handleGlobalMouseUp);
-
-    return () => {
-      document.removeEventListener('mouseup', handleGlobalMouseUp);
-      document.removeEventListener('touchend', handleGlobalMouseUp);
-    };
-  }, []);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   return (
     <div className="mb-12 mt-6">
@@ -83,73 +34,56 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
         </p>
       </div>
 
-      <div className="relative max-w-3xl mx-auto rounded-xl overflow-hidden shadow-md">
-        {/* Decorative elements */}
-        <div className="absolute -top-3 -left-3 text-purple-400/20 animate-pulse" style={{ animationDuration: '4s' }}>
-          <Sparkles className="h-8 w-8" />
-        </div>
-        <div className="absolute -bottom-3 -right-3 text-blue-400/20 animate-pulse" style={{ animationDuration: '5s' }}>
-          <Sparkles className="h-8 w-8" />
-        </div>
-
-        {/* Before/After container */}
-        <div 
-          ref={containerRef}
-          className="relative select-none h-[300px] md:h-[350px] bg-gray-100"
-          onMouseMove={handleMouseMove}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onTouchMove={handleTouchMove}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
+      <div className="flex justify-center">
+        <Button 
+          onClick={() => setDialogOpen(true)}
+          className="relative group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+          size="lg"
         >
-          {/* Before image (full width) */}
-          <div className="absolute inset-0 overflow-hidden">
-            <img 
-              src={beforeImage} 
-              alt={beforeAlt}
-              className="object-cover w-full h-full"
-            />
-            <div className="absolute top-3 left-3 bg-black/70 text-white px-2 py-0.5 rounded-lg text-xs font-medium">
-              AVANT
+          {/* Decorative elements */}
+          <div className="absolute -top-3 -left-3 text-purple-400/20 animate-pulse" style={{ animationDuration: '4s' }}>
+            <Sparkles className="h-6 w-6" />
+          </div>
+          <div className="absolute -bottom-3 -right-3 text-blue-400/20 animate-pulse" style={{ animationDuration: '5s' }}>
+            <Sparkles className="h-6 w-6" />
+          </div>
+          
+          <div className="flex items-center gap-3">
+            <div className="bg-white/20 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
+              <Play className="h-5 w-5 fill-white text-white" />
             </div>
+            <span className="font-medium">Voir la démonstration</span>
           </div>
-
-          {/* After image (partial width based on slider) */}
-          <div 
-            className="absolute inset-0 overflow-hidden"
-            style={{ width: `${sliderPosition}%` }}
-          >
-            <img 
-              src={afterImage} 
-              alt={afterAlt}
-              className="object-cover absolute top-0 right-0 h-full"
-              style={{ width: `${100 / (sliderPosition / 100)}%`, maxWidth: '100vw' }}
-            />
-            <div className="absolute top-3 right-3 bg-green-500/90 text-white px-2 py-0.5 rounded-lg text-xs font-medium">
-              APRÈS
-            </div>
-          </div>
-
-          {/* Slider control */}
-          <div 
-            className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
-            style={{ left: `${sliderPosition}%` }}
-          >
-            <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-blue-500">
-              <ArrowLeftRight className="h-4 w-4 text-blue-600" />
-            </div>
-          </div>
-
-          {/* Labels at the bottom */}
-          <div className="absolute bottom-3 left-3 bg-black/70 text-white px-2 py-0.5 rounded-lg text-xs opacity-70">
-            Qualité standard
-          </div>
-          <div className="absolute bottom-3 right-3 bg-green-500/90 text-white px-2 py-0.5 rounded-lg text-xs opacity-70">
-            Notre collection PREMIUM
-          </div>
-        </div>
+        </Button>
       </div>
+
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogContent className="max-w-4xl w-[90vw]">
+          <DialogHeader>
+            <DialogTitle>{title}</DialogTitle>
+            <DialogDescription>
+              Découvrez la différence de qualité entre les versions gratuites et premium
+            </DialogDescription>
+          </DialogHeader>
+          <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+            <video 
+              src={videoUrl} 
+              controls 
+              autoPlay 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // Fallback to image if video fails to load
+                const target = e.target as HTMLVideoElement;
+                const img = document.createElement('img');
+                img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
+                img.alt = "Aperçu de la collection";
+                img.className = "w-full h-full object-cover";
+                target.parentNode?.replaceChild(img, target);
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

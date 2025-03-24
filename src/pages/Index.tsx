@@ -20,12 +20,9 @@ const Index = () => {
           <HeroSection onScrollToPayment={scrollToPayment} />
           <ProductGallery />
           <BeforeAfterComparison 
-            beforeImage="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" 
-            afterImage="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png"
-            beforeAlt="Logo de qualité basique trouvable gratuitement" 
-            afterAlt="Logo haute qualité de notre collection premium"
+            videoUrl="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
             title="La différence de qualité est visible"
-            description="Comparez la différence entre les logos gratuits de faible qualité et notre collection premium. Glissez pour voir la différence!"
+            description="Découvrez la différence entre les logos gratuits de faible qualité et notre collection premium avec cette démonstration rapide."
           />
           <div id="payment-section">
             <PaymentSection />

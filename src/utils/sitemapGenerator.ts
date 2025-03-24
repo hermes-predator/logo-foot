@@ -53,6 +53,7 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('gunners') ||
       post.title.toLowerCase().includes('ac milan') ||
       post.title.toLowerCase().includes('milan') ||
+      post.title.toLowerCase().includes('monza') ||
       post.title.toLowerCase().includes('rc lens') ||
       post.title.toLowerCase().includes('lens') ||
       post.title.toLowerCase().includes('as monaco') ||
@@ -86,8 +87,15 @@ export const generateSitemap = () => {
       post.title.toLowerCase().includes('tfc') ||
       post.title.toLowerCase().includes('aston villa') ||
       post.title.toLowerCase().includes('villa') ||
+      post.title.toLowerCase().includes('sassuolo') ||
+      post.title.toLowerCase().includes('pisa') || 
+      post.title.toLowerCase().includes('pise') ||
+      post.title.toLowerCase().includes('bologna') ||
+      post.title.toLowerCase().includes('bologne') ||
       post.title.toLowerCase().includes('suisse') ||
-      post.title.toLowerCase().includes('logo suisse')
+      post.title.toLowerCase().includes('logo suisse') ||
+      post.title.toLowerCase().includes('danemark') ||
+      post.title.toLowerCase().includes('logo danemark')
     )
     .map(post => ({
       url: `/blog/${post.id}`,

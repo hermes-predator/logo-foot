@@ -142,7 +142,7 @@ const PackDescription = () => {
           </div>
           
           <div className="text-center mb-5">
-            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
+            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP rare ?</h3>
           </div>
           
           <DialogClose asChild>

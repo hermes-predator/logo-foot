@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -66,7 +65,7 @@ const PackDescription = () => {
             { label: "Format", value: "PNG (fond transparent)" },
             { label: "Dimensions", value: "200px" },
             { label: "Sous-groupes", value: "1 collection" },
-            { label: "Quantité totale", value: "40 ressources" }
+            { label: "Quantité totale", value: "50 ressources" }
           ]}
         />
         

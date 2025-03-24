@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -237,7 +236,6 @@ const PackDescription = () => {
               <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md">
                 <div className="text-center mb-5">
                   <h3 className="text-xl font-bold text-blue-900 mb-2">Prêt à obtenir cette collection complète ?</h3>
-                  <p className="text-blue-700 text-sm">Accédez à plus de 8 600 ressources pour vos projets web liés au football</p>
                 </div>
                 
                 <Button 

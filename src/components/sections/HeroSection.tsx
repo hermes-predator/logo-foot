@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Crown, FileText, ShieldCheck, Lock, CheckCircle2, ChevronDown, Folder, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -107,7 +106,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="group transition-all duration-300 hover:shadow-md bg-white border-gray-200 hover:border-gray-300 flex items-center relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 opacity-100 transition-opacity duration-300"></div>
-                <FileText className="h-4 w-4 mr-1 text-black transition-all duration-300 group-hover:scale-125" />
+                <Folder className="h-4 w-4 mr-1 text-black transition-all duration-300 group-hover:scale-125" />
                 <span className="relative z-10 font-medium">Descriptif du ZIP</span>
               </Button>
             </DialogTrigger>

@@ -32,3 +32,4 @@ export const spanishClubPosts: BlogPost[] = [
   villarrealLogoPost,
   villarrealCfLogoPost
 ];
+

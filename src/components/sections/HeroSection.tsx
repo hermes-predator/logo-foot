@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -128,7 +127,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             onClick={onScrollToPayment}
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base gap-2 hover:-translate-y-0.5"
           >
-            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '2s' }} />
+            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
             Voir le prix
           </Button>
         </div>
@@ -138,4 +137,3 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 };
 
 export default HeroSection;
-

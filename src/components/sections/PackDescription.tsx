@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Sparkles } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -125,10 +124,10 @@ const PackDescription = () => {
         
         {/* Call to Action placed after the 4 arguments */}
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
-          {/* Decorative element in the top right corner - updated to match container and yellow star */}
+          {/* Decorative element in the top right corner - updated with filled star */}
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
-              <Sparkles className="h-3 w-3 text-yellow-300" />
+              <Star className="h-3 w-3 text-yellow-300" fill="currentColor" />
               PREMIUM
             </div>
           </div>

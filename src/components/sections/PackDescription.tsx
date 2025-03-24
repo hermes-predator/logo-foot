@@ -161,12 +161,16 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          {/* Section des méthodes de paiement mises à jour avec la nouvelle image */}
+          {/* Section des méthodes de paiement mises à jour avec la nouvelle image et le texte SumUp */}
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">
-              <p className="text-xs text-gray-500 mb-1 flex items-center gap-1.5">
-                <CreditCard className="h-3.5 w-3.5" />
-                Moyens de paiement acceptés
+              <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
+                Paiement sécurisé via
+                <img 
+                  src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
+                  alt="SumUp" 
+                  className="h-4 object-contain" 
+                />
               </p>
               <div className="flex items-center justify-center">
                 <img 

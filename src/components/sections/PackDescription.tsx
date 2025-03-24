@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -124,14 +125,11 @@ const PackDescription = () => {
         
         {/* Call to Action placed after the 4 arguments */}
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
-          {/* Decorative element in the top right corner */}
-          <div className="absolute -top-3 -right-3 z-10">
-            <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full blur-sm opacity-75 animate-pulse"></div>
-              <div className="relative bg-gradient-to-br from-blue-500 to-blue-700 text-white px-3 py-1 rounded-full font-semibold text-xs flex items-center gap-1 shadow-lg">
-                <Sparkles className="h-3 w-3 text-white" />
-                PREMIUM
-              </div>
+          {/* Decorative element in the top right corner - updated to match container and yellow star */}
+          <div className="absolute top-0 right-0 z-10">
+            <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
+              <Sparkles className="h-3 w-3 text-yellow-300" />
+              PREMIUM
             </div>
           </div>
           

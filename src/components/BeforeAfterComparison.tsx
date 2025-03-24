@@ -73,7 +73,7 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
               <div className="bg-white/20 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
                 <Play className="h-5 w-5 fill-white text-white" />
               </div>
-              <span className="font-medium">Voir la démonstration</span>
+              <span className="font-medium">Aperçu</span>
             </div>
           </Button>
         </div>

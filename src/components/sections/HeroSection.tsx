@@ -110,7 +110,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
               <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-full p-1 mr-2 group-hover:scale-110 transition-transform duration-300">
                 <Play className="h-4 w-4 fill-white text-white" />
               </div>
-              Voir la démo
+              Aperçu
             </Button>
           )}
           

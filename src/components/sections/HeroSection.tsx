@@ -106,8 +106,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 size="lg" 
                 className="group transition-all duration-300 hover:shadow-md bg-white border-gray-200 hover:border-gray-300 flex items-center relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <Folder className="h-4 w-4 mr-2 text-blue-600 group-hover:text-purple-600 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 opacity-100 transition-opacity duration-300"></div>
+                <Folder className="h-4 w-4 mr-2 text-purple-600 transition-colors duration-300" />
                 <span className="relative z-10 font-medium">Descriptif du ZIP</span>
               </Button>
             </DialogTrigger>

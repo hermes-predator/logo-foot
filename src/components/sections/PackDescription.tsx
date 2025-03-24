@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -161,29 +160,19 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          {/* Ajout de la section des méthodes de paiement acceptées */}
+          {/* Section des méthodes de paiement mises à jour avec la nouvelle image */}
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5">
                 <CreditCard className="h-3.5 w-3.5" />
                 Moyens de paiement acceptés
               </p>
-              <div className="flex items-center justify-center gap-3">
-                <div className="flex items-center justify-center h-8 w-12 bg-white rounded shadow-sm border border-gray-200">
-                  <img src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" alt="Visa" className="h-5 object-contain" />
-                </div>
-                <div className="flex items-center justify-center h-8 w-12 bg-white rounded shadow-sm border border-gray-200">
-                  <img src="/lovable-uploads/81f57759-cc4e-457d-a95d-251dfa7958de.png" alt="Mastercard" className="h-5 object-contain" />
-                </div>
-                <div className="flex items-center justify-center h-8 w-12 bg-white rounded shadow-sm border border-gray-200">
-                  <img src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" alt="American Express" className="h-5 object-contain" />
-                </div>
-                <div className="flex items-center justify-center h-8 w-12 bg-white rounded shadow-sm border border-gray-200">
-                  <img src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" alt="Google Pay" className="h-5 object-contain" />
-                </div>
-                <div className="flex items-center justify-center h-8 w-12 bg-white rounded shadow-sm border border-gray-200">
-                  <img src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png" alt="Apple Pay" className="h-5 object-contain" />
-                </div>
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
+                  alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
+                  className="h-10 object-contain"
+                />
               </div>
             </div>
           </div>

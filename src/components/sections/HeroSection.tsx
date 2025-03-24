@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Play } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -121,7 +121,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
                 size="lg" 
                 className="group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100"
               >
-                <Book className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
+                <Folder className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
                 Descriptif du ZIP
               </Button>
             </DialogTrigger>

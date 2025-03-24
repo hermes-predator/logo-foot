@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -163,7 +164,7 @@ const PackDescription = () => {
           {/* Section des méthodes de paiement mises à jour avec la nouvelle image */}
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">
-              <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5">
+              <p className="text-xs text-gray-500 mb-2 flex items-center gap-1.5">
                 <CreditCard className="h-3.5 w-3.5" />
                 Moyens de paiement acceptés
               </p>

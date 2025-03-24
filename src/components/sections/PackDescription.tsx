@@ -38,7 +38,7 @@ const PackDescription = () => {
         />
 
         <FolderCard
-          title="𝐅.𝟎𝟑 – Drapeaux mondiaux"
+          title="𝐅.𝟎𝟑 – Logos des drapeaux mondiaux"
           colorScheme="green"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },

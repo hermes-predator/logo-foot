@@ -201,7 +201,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Accès aux nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
+              <p className="text-xs text-gray-600 ml-10">Nouvelles ressources ajoutées lors des mises à jour saisonnières</p>
             </div>
           </div>
           

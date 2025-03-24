@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,7 @@ const PackDescription = () => {
 
   return (
     <div className="space-y-0.5 mt-6">
-      <div className="space-y-0.5">
+      
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
@@ -71,15 +70,16 @@ const PackDescription = () => {
           ]}
         />
         
-        <Separator className="my-4 bg-red-100/50" />
+      <Separator className="my-4 bg-red-100/50" />
 
-        {/* Redesigned advantages section with call-to-action integrated */}
-        <div className="space-y-4 pt-10 mt-6">
-          <h4 className="text-sm font-semibold text-gray-800 mb-4">
-            AVANTAGES DU FICHIER
-          </h4>
+      {/* Redesigned advantages section with call-to-action integrated */}
+      <div className="space-y-4 pt-10 mt-6">
+        <h4 className="text-sm font-semibold text-gray-800 mb-4">
+          AVANTAGES DU FICHIER
+        </h4>
+        
+        <div className="grid gap-4 md:grid-cols-2">
           
-          <div className="grid gap-4 md:grid-cols-2">
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
@@ -119,38 +119,38 @@ const PackDescription = () => {
               </div>
               <p className="text-xs text-gray-600 ml-10">Nouvelles ressources ajoutées lors des mises à jour saisonnières.</p>
             </div>
-          </div>
           
-          {/* Call to Action placed after the 4 arguments */}
-          <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
-            {/* Decorative element in the top right corner */}
-            <div className="absolute -top-3 -right-3 z-10">
-              <div className="relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full blur-sm opacity-75 animate-pulse"></div>
-                <div className="relative bg-gradient-to-br from-amber-300 to-amber-500 text-white px-3 py-1 rounded-full font-semibold text-xs flex items-center gap-1 shadow-lg">
-                  <Sparkles className="h-3 w-3 text-white" />
-                  PREMIUM
-                </div>
+        </div>
+        
+        {/* Call to Action placed after the 4 arguments */}
+        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
+          {/* Decorative element in the top right corner */}
+          <div className="absolute -top-3 -right-3 z-10">
+            <div className="relative">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full blur-sm opacity-75 animate-pulse"></div>
+              <div className="relative bg-gradient-to-br from-blue-500 to-blue-700 text-white px-3 py-1 rounded-full font-semibold text-xs flex items-center gap-1 shadow-lg">
+                <Sparkles className="h-3 w-3 text-white" />
+                PREMIUM
               </div>
             </div>
-            
-            <div className="text-center mb-5">
-              <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
-            </div>
-            
-            <Button 
-              onClick={scrollToPayment}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
-            >
-              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-              Obtenez-le pour seulement 10€
-              <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
-            </Button>
-            
-            <p className="text-xs text-center text-blue-600 mt-3">
-              Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
-            </p>
           </div>
+          
+          <div className="text-center mb-5">
+            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
+          </div>
+          
+          <Button 
+            onClick={scrollToPayment}
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
+          >
+            <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
+            Obtenez-le pour seulement 10€
+            <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
+          </Button>
+          
+          <p className="text-xs text-center text-blue-600 mt-3">
+            Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
+          </p>
         </div>
       </div>
     </div>

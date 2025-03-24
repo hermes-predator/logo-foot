@@ -58,7 +58,7 @@ const PackDescription = () => {
         <div className="space-y-3 p-4 bg-gradient-to-br from-blue-50/80 to-blue-50/30 border border-blue-100/80 transition-all duration-200 hover:shadow-md">
           <h3 className="text-lg font-bold text-blue-900 flex items-center gap-3">
             <Folder className="h-4 w-4 text-blue-600" />
-            𝐅.𝟎𝟐 – Compétitions de football
+            𝐅.𝟎𝟐 – Logos des compétitions de football
           </h3>
           <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
             <div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileArchive, Inbox, FileText, Dices, Target, Check, Folder, List, Info, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,35 +20,6 @@ const PackDescription = () => {
   return (
     <div className="space-y-0.5 mt-6">
       <div className="space-y-0.5">
-        
-        {/* Preview Video - Directly embedded in the component */}
-        <div className="mb-8 overflow-hidden rounded-xl border border-gray-200/80 shadow-md">
-          <div className="bg-gray-950/95 rounded-t-xl overflow-hidden">
-            <div className="p-4 bg-gradient-to-b from-gray-900 to-gray-950">
-              <h3 className="text-white text-lg font-medium">Aperçu du contenu du pack</h3>
-              <p className="text-gray-400 text-sm">
-                Preview de l'organisation des fichiers et des logos inclus
-              </p>
-            </div>
-            <div className="relative aspect-video w-full bg-black/80">
-              <video 
-                src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
-                controls 
-                className="w-full h-full object-contain"
-                poster="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
-                onError={(e) => {
-                  // Fallback to image if video fails to load
-                  const target = e.target as HTMLVideoElement;
-                  const img = document.createElement('img');
-                  img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
-                  img.alt = "Aperçu du contenu";
-                  img.className = "w-full h-full object-contain";
-                  target.parentNode?.replaceChild(img, target);
-                }}
-              />
-            </div>
-          </div>
-        </div>
         
         <div className="space-y-3 p-4 bg-gradient-to-br from-gray-100/90 to-gray-100/50 border border-gray-200/80 transition-all duration-200 hover:shadow-md rounded-t-md">
           <h3 className="text-lg font-bold text-gray-900 flex items-center gap-3">

@@ -8,9 +8,16 @@ import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
 
 const PackDescription = () => {
-  const scrollToPayment = () => {
-    const paymentSection = document.querySelector('#payment-section');
-    paymentSection?.scrollIntoView({ behavior: 'smooth' });
+  const { toast } = useToast();
+  
+  const handlePayment = () => {
+    toast({
+      title: "Redirection vers le paiement",
+      description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
+    });
+    const returnUrl = `${window.location.origin}/payment-success`;
+    // Utilisation du lien SumUp direct
+    window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
@@ -141,7 +148,7 @@ const PackDescription = () => {
           
           <DialogClose asChild>
             <Button 
-              onClick={scrollToPayment}
+              onClick={handlePayment}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
             >
               <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />

@@ -13,6 +13,7 @@ interface FolderCardProps {
   colorScheme: 'gray' | 'blue' | 'green' | 'yellow' | 'red';
   items: FolderItemProps[];
   collections?: string;
+  isFirst?: boolean; // New prop to determine if it's the first card
 }
 
 const FolderCard: React.FC<FolderCardProps> = ({
@@ -21,6 +22,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   colorScheme = 'gray',
   items,
   collections,
+  isFirst = false, // Default to false
 }) => {
   // Map color schemes to tailwind classes
   const colorClasses = {
@@ -67,9 +69,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
   };
 
   const colors = colorClasses[colorScheme];
+  
+  // Add rounded-t-lg class only if it's the first card
+  const roundedClass = isFirst ? 'rounded-t-lg' : '';
 
   return (
-    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md`}>
+    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass}`}>
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
         <span className={colors.icon}>{icon}</span>
         {title}

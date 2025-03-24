@@ -128,7 +128,7 @@ const PackDescription = () => {
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
               <Star className="h-3 w-3 text-yellow-300" fill="currentColor" />
-              PREMIUM
+              RARE
             </div>
           </div>
           

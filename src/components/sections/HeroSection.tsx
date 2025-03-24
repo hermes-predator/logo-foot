@@ -100,20 +100,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
-          {onOpenDemo && (
-            <Button 
-              onClick={onOpenDemo}
-              variant="outline"
-              size="lg"
-              className="group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-purple-50 to-blue-50 hover:from-purple-100 hover:to-blue-100"
-            >
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-full p-1 mr-2 group-hover:scale-110 transition-transform duration-300">
-                <Play className="h-4 w-4 fill-white text-white" />
-              </div>
-              Aperçu
-            </Button>
-          )}
-          
           <Dialog>
             <DialogTrigger asChild>
               <Button 

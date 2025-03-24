@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
@@ -20,10 +21,8 @@ const Index = () => {
         <div className="container mx-auto">
           <HeroSection 
             onScrollToPayment={scrollToPayment} 
-            onOpenDemo={() => setDemoDialogOpen(true)}
           />
           <ProductGallery />
-          {/* La section BeforeAfterComparison a été supprimée ici */}
           <div id="payment-section">
             <PaymentSection />
           </div>

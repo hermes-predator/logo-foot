@@ -114,7 +114,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <div className="text-center pb-2 border-b border-gray-100">
-                  <DialogTitle className="text-2xl font-bold mb-1 bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-800 bg-clip-text text-transparent">
+                  <DialogTitle className="text-2xl font-bold mb-1 text-black">
                     Descriptif du fichier zip
                   </DialogTitle>
                   <div className="relative inline-flex items-center justify-center">

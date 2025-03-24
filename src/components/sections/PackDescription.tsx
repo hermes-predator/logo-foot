@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
+import { useToast } from "@/hooks/use-toast";
+import { DialogClose } from "@/components/ui/dialog";
 
 const PackDescription = () => {
   const scrollToPayment = () => {
@@ -136,14 +139,16 @@ const PackDescription = () => {
             <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
           </div>
           
-          <Button 
-            onClick={scrollToPayment}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
-          >
-            <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-            Obtenez-le pour seulement 10€
-            <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
-          </Button>
+          <DialogClose asChild>
+            <Button 
+              onClick={scrollToPayment}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
+            >
+              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
+              Obtenez-le pour seulement 10€
+              <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
+            </Button>
+          </DialogClose>
           
           <p className="text-xs text-center text-blue-600 mt-3">
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané

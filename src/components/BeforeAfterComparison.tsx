@@ -73,29 +73,29 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
   }, []);
 
   return (
-    <div className="mb-16 mt-8">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800">
+    <div className="mb-12 mt-6">
+      <div className="text-center mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800">
           {title}
         </h2>
-        <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
+        <p className="text-gray-600 mt-2 max-w-2xl mx-auto text-sm md:text-base">
           {description}
         </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div className="relative max-w-3xl mx-auto rounded-xl overflow-hidden shadow-md">
         {/* Decorative elements */}
-        <div className="absolute -top-4 -left-4 text-purple-400/20 animate-pulse" style={{ animationDuration: '4s' }}>
-          <Sparkles className="h-10 w-10" />
+        <div className="absolute -top-3 -left-3 text-purple-400/20 animate-pulse" style={{ animationDuration: '4s' }}>
+          <Sparkles className="h-8 w-8" />
         </div>
-        <div className="absolute -bottom-4 -right-4 text-blue-400/20 animate-pulse" style={{ animationDuration: '5s' }}>
-          <Sparkles className="h-10 w-10" />
+        <div className="absolute -bottom-3 -right-3 text-blue-400/20 animate-pulse" style={{ animationDuration: '5s' }}>
+          <Sparkles className="h-8 w-8" />
         </div>
 
         {/* Before/After container */}
         <div 
           ref={containerRef}
-          className="relative select-none h-[400px] md:h-[500px] bg-gray-100"
+          className="relative select-none h-[300px] md:h-[350px] bg-gray-100"
           onMouseMove={handleMouseMove}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
@@ -110,7 +110,7 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
               alt={beforeAlt}
               className="object-cover w-full h-full"
             />
-            <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg text-sm font-medium">
+            <div className="absolute top-3 left-3 bg-black/70 text-white px-2 py-0.5 rounded-lg text-xs font-medium">
               AVANT
             </div>
           </div>
@@ -126,7 +126,7 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
               className="object-cover absolute top-0 right-0 h-full"
               style={{ width: `${100 / (sliderPosition / 100)}%`, maxWidth: '100vw' }}
             />
-            <div className="absolute top-4 right-4 bg-green-500/90 text-white px-3 py-1 rounded-lg text-sm font-medium">
+            <div className="absolute top-3 right-3 bg-green-500/90 text-white px-2 py-0.5 rounded-lg text-xs font-medium">
               APRÈS
             </div>
           </div>
@@ -136,16 +136,16 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
             className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
             style={{ left: `${sliderPosition}%` }}
           >
-            <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-blue-500">
-              <ArrowLeftRight className="h-5 w-5 text-blue-600" />
+            <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-blue-500">
+              <ArrowLeftRight className="h-4 w-4 text-blue-600" />
             </div>
           </div>
 
           {/* Labels at the bottom */}
-          <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg text-sm opacity-70">
+          <div className="absolute bottom-3 left-3 bg-black/70 text-white px-2 py-0.5 rounded-lg text-xs opacity-70">
             Qualité standard
           </div>
-          <div className="absolute bottom-4 right-4 bg-green-500/90 text-white px-3 py-1 rounded-lg text-sm opacity-70">
+          <div className="absolute bottom-3 right-3 bg-green-500/90 text-white px-2 py-0.5 rounded-lg text-xs opacity-70">
             Notre collection PREMIUM
           </div>
         </div>

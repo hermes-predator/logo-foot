@@ -123,15 +123,15 @@ const PackDescription = () => {
           
           {/* Call to Action placed after the 4 arguments with ZIP icon in corner */}
           <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative overflow-hidden">
-            {/* Premium badge in the top right corner */}
-            <div className="absolute -top-1 -right-1 z-10">
+            {/* Premium badge in the top right corner - now straight instead of rotated */}
+            <div className="absolute top-0 right-0 z-10">
               <div className="relative">
-                <div className="bg-blue-600 text-white px-3 py-1 transform rotate-12 shadow-md rounded-sm flex items-center gap-1.5">
+                <div className="bg-blue-600 text-white px-3 py-1 shadow-md rounded-sm flex items-center gap-1.5">
                   <Star className="h-3 w-3 fill-yellow-300 text-yellow-300" aria-hidden="true" />
                   <span className="text-xs font-semibold tracking-wide">PREMIUM</span>
                 </div>
-                {/* Triangle decoration for the badge */}
-                <div className="absolute -bottom-1.5 -left-1.5 w-0 h-0 border-t-[6px] border-t-transparent border-r-[12px] border-r-blue-800"></div>
+                {/* Triangle decoration for the badge - adjusted for straight positioning */}
+                <div className="absolute -bottom-1.5 -left-0 w-0 h-0 border-t-[6px] border-t-transparent border-r-[8px] border-r-blue-800"></div>
               </div>
             </div>
             

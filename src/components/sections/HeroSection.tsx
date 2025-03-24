@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Book, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -18,9 +19,10 @@ import {
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
+  onOpenDemo?: () => void;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment, onOpenDemo }) => {
   
   return (
     <section className="relative pt-12 pb-20 px-4 overflow-hidden">
@@ -119,6 +121,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               </DialogHeader>
             </DialogContent>
           </Dialog>
+          
+          {/* Bouton "Voir la démo" ajouté ici */}
+          {onOpenDemo && (
+            <Button 
+              onClick={onOpenDemo}
+              variant="outline"
+              size="lg"
+              className="gap-2 hover:bg-gray-50 group transition-all duration-300 hover:shadow-md border-gray-200/70 hover:border-gray-300 bg-gradient-to-r from-blue-50 to-purple-50"
+            >
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-1 group-hover:scale-110 transition-transform duration-300">
+                <Play className="h-4 w-4 fill-white text-white" />
+              </div>
+              Voir la démo
+            </Button>
+          )}
           
           <Button
             variant="default"

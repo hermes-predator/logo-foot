@@ -1,12 +1,9 @@
-
 import React, { useState } from 'react';
 import ProductGallery from '../components/ProductGallery';
 import PaymentSection from '../components/PaymentSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import Testimonials from '../components/Testimonials';
-import { Button } from '../components/ui/button';
-import { Play } from 'lucide-react';
 import BeforeAfterComparison from '../components/BeforeAfterComparison';
 
 const Index = () => {
@@ -19,24 +16,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <div className="fixed top-20 right-6 z-30">
-        <Button
-          onClick={() => setDemoDialogOpen(true)}
-          className="relative group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          size="sm"
-        >
-          <div className="flex items-center gap-2 px-2 py-1">
-            <div className="bg-white/20 rounded-full p-1 group-hover:scale-110 transition-transform duration-300">
-              <Play className="h-3 w-3 fill-white text-white" />
-            </div>
-            <span className="font-medium text-xs">Voir la démo</span>
-          </div>
-        </Button>
-      </div>
-      
       <main>
         <div className="container mx-auto">
-          <HeroSection onScrollToPayment={scrollToPayment} />
+          <HeroSection 
+            onScrollToPayment={scrollToPayment} 
+            onOpenDemo={() => setDemoDialogOpen(true)}
+          />
           <ProductGallery />
           {/* La section BeforeAfterComparison a été supprimée ici */}
           <div id="payment-section">

@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Folder, List, Cloud, Sparkles, RefreshCw, Play, ArrowRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   AlertDialog,
   AlertDialogContent,
@@ -154,6 +154,8 @@ const PackDescription = () => {
             </div>
           </div>
         </div>
+        
+        <Separator className="my-4 bg-red-100/50" />
 
         {/* Redesigned advantages section with call-to-action integrated */}
         <div className="space-y-4 pt-10 mt-6">

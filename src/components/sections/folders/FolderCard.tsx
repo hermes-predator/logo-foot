@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Folder } from 'lucide-react';
+import { Folder, Package } from 'lucide-react';
 
 interface FolderItemProps {
   label: string;
@@ -33,6 +33,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-gray-600',
       label: 'text-gray-900',
       value: 'text-gray-700',
+      badge: 'from-gray-600 to-gray-700',
     },
     blue: {
       bg: 'from-blue-50/80 to-blue-50/30',
@@ -41,6 +42,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-blue-600',
       label: 'text-blue-900',
       value: 'text-blue-700',
+      badge: 'from-blue-500 to-blue-600',
     },
     green: {
       bg: 'from-green-50/80 to-green-50/30',
@@ -49,6 +51,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-green-600',
       label: 'text-green-900',
       value: 'text-green-700',
+      badge: 'from-green-500 to-green-600',
     },
     yellow: {
       bg: 'from-yellow-50/80 to-yellow-50/30',
@@ -57,6 +60,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-yellow-600',
       label: 'text-yellow-900',
       value: 'text-yellow-700',
+      badge: 'from-yellow-500 to-yellow-600',
     },
     red: {
       bg: 'from-red-50/80 to-red-50/30',
@@ -65,6 +69,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-red-600',
       label: 'text-red-900',
       value: 'text-red-700',
+      badge: 'from-red-500 to-red-600',
     },
   };
 
@@ -74,7 +79,19 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const roundedClass = isFirst ? 'rounded-t-lg' : '';
 
   return (
-    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass}`}>
+    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
+      {/* Decorative corner badge - only for the first card */}
+      {isFirst && (
+        <div className="absolute -top-2 -right-2 z-10">
+          <div className="relative">
+            <div className={`bg-gradient-to-r ${colors.badge} text-white text-xs font-bold py-1 px-2 rounded-sm shadow-sm transform rotate-12 flex items-center gap-1`}>
+              <Package className="h-3 w-3" />
+              <span className="text-[9px] tracking-tight">PREMIUM</span>
+            </div>
+          </div>
+        </div>
+      )}
+      
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
         <span className={colors.icon}>{icon}</span>
         {title}

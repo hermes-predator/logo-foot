@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -121,7 +120,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block mb-6 relative shadow-sm">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </span>
-                    <div className="absolute -bottom-2 w-3/4 h-0.5 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+                    <div className="absolute -bottom-2 w-3/4 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
                   </div>
                 </div>
                 <DialogDescription className="text-left space-y-6 pt-4">

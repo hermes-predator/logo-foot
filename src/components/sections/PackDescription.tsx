@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -123,7 +122,7 @@ const PackDescription = () => {
           {/* Call to Action placed after the 4 arguments */}
           <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6">
             <div className="text-center mb-5">
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
+              <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
             </div>
             
             <Button 

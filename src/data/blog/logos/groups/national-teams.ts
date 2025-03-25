@@ -4,6 +4,7 @@ import { BlogPost } from '../../../../types/blog';
 // Import national team logo posts
 import { algeriaLogoPost } from '../algeria-logo';
 import { argentinaLogoPost } from '../argentina-logo';
+import { australiaLogoPost } from '../australia-logo';
 import { austriaLogoPost } from '../austria-logo';
 import { belgiumLogoPost } from '../belgium-logo';
 import { brazilLogoPost } from '../brazil-logo';
@@ -34,6 +35,7 @@ import { nationalTeamsPost } from '../national-teams';
 export const nationalTeamPosts: BlogPost[] = [
   algeriaLogoPost,
   argentinaLogoPost,
+  australiaLogoPost,
   austriaLogoPost,
   belgiumLogoPost,
   brazilLogoPost,
@@ -60,4 +62,3 @@ export const nationalTeamPosts: BlogPost[] = [
   usaLogoPost,
   nationalTeamsPost
 ];
-

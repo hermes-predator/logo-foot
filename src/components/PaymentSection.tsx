@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -152,7 +151,7 @@ const PaymentSection = () => {
             </div>
             
             {/* Badge de personnes ayant récemment acheté - NOUVEAU */}
-            <div className="absolute -top-3 right-8 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
+            <div className="absolute -top-3 left-8 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes l'ont acheté récemment</span>
             </div>
@@ -269,4 +268,3 @@ const PaymentSection = () => {
 };
 
 export default PaymentSection;
-

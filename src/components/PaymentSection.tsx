@@ -164,7 +164,7 @@ const PaymentSection = () => {
                   <div>
                     {/* Prix normal barré */}
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="text-gray-500 text-lg line-through font-medium">35,00€</span>
+                      <span className="text-gray-500 text-lg line-through font-medium">40,00€</span>
                       <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
                     </div>
                     

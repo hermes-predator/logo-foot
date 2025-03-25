@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard, Lock } from 'lucide-react';
+import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -230,10 +230,6 @@ const PaymentSection = () => {
             </div>
             
             <div className="flex items-center gap-3">
-              <div className="flex items-center">
-                <CreditCard className="h-4 w-4 text-gray-700 mr-1" />
-                <span className="text-xs text-gray-700">:</span>
-              </div>
               <img 
                 src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
                 alt="Cartes de paiement acceptées" 

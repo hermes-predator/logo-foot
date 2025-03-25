@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
@@ -218,7 +219,7 @@ const PaymentSection = () => {
             <div className="flex items-center gap-3">
               <span className="text-xs text-gray-700">Cartes acceptées:</span>
               <img 
-                src="/lovable-uploads/81f57759-cc4e-457d-a95d-251dfa7958de.png" 
+                src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
                 alt="Cartes de paiement acceptées" 
                 className="h-5" 
               />

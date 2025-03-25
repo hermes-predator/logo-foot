@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
@@ -169,12 +170,12 @@ const PaymentSection = () => {
                       <span className="bg-red-200 text-red-800 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur */}
+                    {/* Nouveau prix mis en valeur avec effet brillant et plus d'emphase */}
                     <div className="flex items-center gap-2">
                       <div className="relative">
-                        <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
-                        {/* Effet brillant autour du prix */}
-                        <div className="absolute -inset-1 bg-blue-200 blur-md opacity-20 rounded-full"></div>
+                        <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10,00€</span>
+                        {/* Effet brillant amélioré autour du prix */}
+                        <div className="absolute -inset-3 bg-blue-300 blur-xl opacity-20 rounded-full animate-pulse"></div>
                       </div>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
                     </div>

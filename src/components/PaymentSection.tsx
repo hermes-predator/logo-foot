@@ -169,7 +169,7 @@ const PaymentSection = () => {
                     <TooltipTrigger asChild>
                       <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
                         <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                        <span className="text-sm font-semibold whitespace-nowrap text-emerald-700">
+                        <span className="text-sm whitespace-nowrap text-emerald-700">
                           Satisfait ou remboursé
                         </span>
                       </div>

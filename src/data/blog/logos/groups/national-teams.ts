@@ -23,6 +23,7 @@ import { netherlandsLogoPost } from '../netherlands-logo';
 import { nigeriaLogoPost } from '../nigeria-logo';
 import { portugalLogoPost } from '../portugal-logo';
 import { russiaLogoPost } from '../russia-logo';
+import { serbiaLogoPost } from '../serbia-logo';
 import { senegalLogoPost } from '../senegal-logo';
 import { spainLogoPost } from '../spain-logo';
 import { swedenLogoPost } from '../sweden-logo';
@@ -56,6 +57,7 @@ export const nationalTeamPosts: BlogPost[] = [
   nigeriaLogoPost,
   portugalLogoPost,
   russiaLogoPost,
+  serbiaLogoPost,
   senegalLogoPost,
   spainLogoPost,
   swedenLogoPost,

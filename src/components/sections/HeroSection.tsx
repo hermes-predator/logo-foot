@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - MODIFIED the Descriptif du ZIP button to not change color on hover */}
+        {/* CTA buttons with enhanced interactions - MODIFIED to make buttons slightly larger */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -102,7 +102,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+                className="group flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
                 <Folder size={16} className="mr-1 text-gray-800 transition-colors duration-300" />
@@ -133,7 +133,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             variant="default"
             size="lg"
             onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-6 py-2 h-auto"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
             Voir le prix
@@ -145,4 +145,3 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 };
 
 export default HeroSection;
-

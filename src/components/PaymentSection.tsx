@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard, BadgePercent, CircleDollarSign } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -158,40 +158,76 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
-              <div className="flex items-center gap-2">
-                <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
-                <span className="text-gray-500 ml-2">TVA incluse</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="group">
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
-                        <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                        <span className="text-sm whitespace-nowrap text-emerald-700">
-                          Satisfait ou remboursé
-                        </span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
-                      <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
-                      <div className="space-y-2 text-gray-600">
-                        <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                        <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
-                        <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                        <p className="mt-4 text-gray-500 text-[13px]">
-                          Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
-                          <ul className="list-disc ml-4 mt-1 space-y-1">
-                            <li>Votre nom et prénom</li>
-                            <li>La date et l'heure d'achat</li>
-                            <li>Une preuve d'achat</li>
-                          </ul>
-                        </p>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
+            {/* Amélioration de la présentation du prix avec comparaison */}
+            <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100/80 border border-blue-100 relative overflow-hidden">
+              {/* Badge économie */}
+              <div className="absolute -top-1 -right-1 bg-red-500 text-white px-4 py-1 rounded-bl-lg shadow-md transform rotate-2 z-10">
+                <div className="flex items-center gap-1">
+                  <BadgePercent className="h-4 w-4" />
+                  <span className="text-xs font-bold">-71% de réduction</span>
                 </div>
+              </div>
+              
+              {/* Effet lumineux sur le badge */}
+              <div className="absolute -top-1 -right-1 bg-red-400 text-white px-4 py-1 rounded-bl-lg opacity-0 animate-pulse" 
+                   style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
+              </div>
+              
+              <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+                <div className="flex flex-col md:flex-row items-center gap-3">
+                  <div>
+                    {/* Prix normal barré */}
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <span className="text-gray-500 text-lg line-through font-medium">35,00€</span>
+                      <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-semibold">Prix normal</span>
+                    </div>
+                    
+                    {/* Nouveau prix mis en valeur */}
+                    <div className="flex items-center gap-2">
+                      <div className="relative">
+                        <span className="text-3xl md:text-4xl font-bold text-blue-700">10,00€</span>
+                        {/* Effet brillant autour du prix */}
+                        <div className="absolute -inset-1 bg-blue-200 blur-md opacity-20 rounded-full"></div>
+                      </div>
+                      <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
+                    </div>
+                  </div>
+                  
+                  {/* Information sur l'économie */}
+                  <div className="flex items-center gap-1 px-3 py-1.5 bg-green-50 rounded-md text-green-700 text-sm font-medium border border-green-100 mt-2 md:mt-0">
+                    <CircleDollarSign className="h-4 w-4" />
+                    <span>Économisez 25€ aujourd'hui</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group">
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
+                      <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                      <span className="text-sm whitespace-nowrap text-emerald-700">
+                        Satisfait ou remboursé
+                      </span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
+                    <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
+                    <div className="space-y-2 text-gray-600">
+                      <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                      <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
+                      <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                      <p className="mt-4 text-gray-500 text-[13px]">
+                        Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
+                        <ul className="list-disc ml-4 mt-1 space-y-1">
+                          <li>Votre nom et prénom</li>
+                          <li>La date et l'heure d'achat</li>
+                          <li>Une preuve d'achat</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
 

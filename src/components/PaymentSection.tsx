@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -25,7 +26,7 @@ const PaymentSection = () => {
 
   const features = [
     {
-      icon: FileArchive,
+      icon: Folder,
       text: "Fichier de 8 600+ ressources"
     },
     {

@@ -171,7 +171,7 @@ const PaymentSection = () => {
                     {/* Nouveau prix mis en valeur */}
                     <div className="flex items-center gap-2">
                       <div className="relative">
-                        <span className="text-3xl md:text-4xl font-bold text-blue-700">10,00€</span>
+                        <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
                         {/* Effet brillant autour du prix */}
                         <div className="absolute -inset-1 bg-blue-200 blur-md opacity-20 rounded-full"></div>
                       </div>

@@ -55,7 +55,7 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     }
   ];
-
+  
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <div className="text-center mb-6 animate-fade-in">
@@ -134,10 +134,11 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
-              Pack Complet
+            {/* Bannière de confiance avec nombre d'utilisateurs au lieu de "Pack Complet" */}
+            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
+              <Users className="h-3.5 w-3.5" />
+              <span>2,736+ acheteurs satisfaits</span>
             </div>
-            
             
             <div className="mb-6">
               <div className="flex items-center gap-2">

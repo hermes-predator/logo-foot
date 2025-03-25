@@ -151,8 +151,8 @@ const PaymentSection = () => {
               <span>4,000 commandes</span>
             </div>
             
-            {/* Badge de personnes ayant récemment acheté - NOUVEAU */}
-            <div className="absolute -top-3 left-8 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
+            {/* Badge de personnes ayant récemment acheté - REPOSITIONNÉ */}
+            <div className="absolute top-0 left-0 bg-orange-500 text-white px-3 py-1.5 rounded-br-lg rounded-tl-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes l'ont acheté récemment</span>
             </div>

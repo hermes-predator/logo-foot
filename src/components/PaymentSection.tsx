@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart, Timer } from 'lucide-react';
 import { Button } from './ui/button';
 import {
@@ -11,7 +11,16 @@ import { Separator } from "./ui/separator";
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
+  const [recentBuyers, setRecentBuyers] = useState(0);
   const { toast } = useToast();
+
+  // Simuler un nombre aléatoire de personnes ayant récemment acheté
+  useEffect(() => {
+    const minBuyers = 12;
+    const maxBuyers = 25;
+    const randomBuyers = Math.floor(Math.random() * (maxBuyers - minBuyers + 1)) + minBuyers;
+    setRecentBuyers(randomBuyers);
+  }, []);
 
   const handlePayment = () => {
     setIsProcessing(true);
@@ -139,6 +148,12 @@ const PaymentSection = () => {
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
               <Users className="h-3.5 w-3.5" />
               <span>4,000+ clients satisfaits</span>
+            </div>
+            
+            {/* Badge de personnes ayant récemment acheté - NOUVEAU */}
+            <div className="absolute -top-3 right-8 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
+              <Users className="h-3 w-3" />
+              <span>{recentBuyers} personnes l'ont acheté récemment</span>
             </div>
             
             <div className="mb-6">

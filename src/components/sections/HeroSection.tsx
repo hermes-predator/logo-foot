@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '0.2s' }}
         >
-          Logos des clubs de football
+          <span className="font-extrabold">Logo Écosse</span> Football
         </h1>
 
         {/* Subtitle with enhanced styling */}
@@ -64,7 +64,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '0.4s' }}
         >
-          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</span>
+          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ <strong>Logo Écosse</strong> Foot.zip</span>
         </h2>
 
         {/* Description with improved readability */}
@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '0.6s' }}
         >
-          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
+          Découvrez notre collection complète de <strong>logos Écosse</strong> football en haute qualité. Des emblèmes officiels du championnat écossais aux <strong>logos foot Écosse</strong> des clubs historiques, tous disponibles en format <strong>PNG</strong> transparent. Téléchargez le <strong>logo Écosse foot PNG</strong> et bien plus dans notre pack exclusif.
         </p>
 
         {/* Trust badges with improved hover effects */}
@@ -82,7 +82,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         >
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
+            <span className="text-sm font-medium text-gray-700">Fichiers <strong>Écosse Logo PNG</strong></span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Lock className="w-5 h-5 text-green-600" />
@@ -90,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Download className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
+            <span className="text-sm font-medium text-gray-700">4,000+ clients satisfaits</span>
           </div>
         </div>
 
@@ -106,18 +106,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
                 <Folder size={16} className="mr-1 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-medium text-sm text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                <span className="relative z-10 font-medium text-sm text-gray-800 transition-colors duration-300"><strong>Logo Foot Écosse</strong></span>
               </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <div className="text-center pb-2 border-b border-gray-100">
                   <DialogTitle className="text-2xl font-bold mb-1 text-black">
-                    Descriptif du ZIP
+                    <strong>Logo Écosse Foot</strong> - Collection Officielle
                   </DialogTitle>
                   <div className="relative inline-flex items-center justify-center">
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block mb-6 relative shadow-sm">
-                      ⦗FRONT-CLOUD⦘~ Football.zip
+                      ⦗FRONT-CLOUD⦘~ <strong>Écosse Logo Foot</strong>.zip
                     </span>
                     <div className="absolute -bottom-2 w-3/4 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
                   </div>
@@ -136,7 +136,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
-            Voir le prix
+            <strong>Foot Logo Écosse</strong>
           </Button>
         </div>
       </div>

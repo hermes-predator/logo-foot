@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
+import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart, Timer } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -210,6 +210,12 @@ const PaymentSection = () => {
                   </TooltipContent>
                 </Tooltip>
               </div>
+            </div>
+
+            {/* Badge de temps de téléchargement */}
+            <div className="absolute -top-3 left-8 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
+              <Timer className="h-3 w-3" />
+              <span>Prêt en moins de 2 minutes</span>
             </div>
 
             <Button

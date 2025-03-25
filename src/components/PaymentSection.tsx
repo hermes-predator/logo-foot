@@ -32,8 +32,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Fichier organisé",
-      className: "bg-purple-50",
-      iconColor: "text-purple-600"
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     },
     {
       icon: Download,
@@ -42,8 +42,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Gain de temps",
-      className: "bg-purple-50",
-      iconColor: "text-purple-600"
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     },
     {
       icon: Wallet,
@@ -52,8 +52,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Valeur à votre actif",
-      className: "bg-purple-50",
-      iconColor: "text-purple-600"
+      className: "bg-green-50",
+      iconColor: "text-green-600"
     }
   ];
 
@@ -70,29 +70,29 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
-          className="flex flex-col items-center p-4 bg-gradient-to-br from-purple-50 to-blue-50/70 rounded-lg backdrop-blur-sm border border-purple-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-purple-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
           role="article"
           aria-label="Information sur le paiement sécurisé"
         >
-          <ShieldCheck className="w-6 h-6 text-purple-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
           <p className="text-xs text-gray-600 text-center">Transactions via SumUp</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-gradient-to-br from-purple-50 to-blue-50/70 rounded-lg backdrop-blur-sm border border-purple-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-purple-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
           role="article"
           aria-label="Information sur le téléchargement instantané"
         >
-          <Download className="w-6 h-6 text-purple-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-gradient-to-br from-purple-50 to-blue-50/70 rounded-lg backdrop-blur-sm border border-purple-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-purple-200"
+          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
           role="article"
           aria-label="Information sur le support client"
         >
-          <HandHeart className="w-6 h-6 text-purple-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
           <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
@@ -100,49 +100,49 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-purple-200 bg-gradient-to-b from-purple-50/50 via-blue-50/30 to-white shadow-md hover:shadow-xl transition-all duration-500 ease-out hover:scale-[1.01] hover:border-purple-300">
+          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
             {/* Animated stars - in different positions */}
-            <div className="absolute -bottom-4 -left-4 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
               <Sparkle className="h-12 w-12" />
             </div>
-            <div className="absolute top-1/2 -left-6 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute top-1/2 -left-6 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute top-1/2 -right-6 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute bottom-1/3 -right-4 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
               <Sparkle className="h-10 w-10" />
             </div>
-            <div className="absolute -bottom-6 right-1/4 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
-            <div className="absolute bottom-2/3 -left-8 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
               <Sparkle className="h-6 w-6" />
             </div>
-            <div className="absolute -bottom-8 left-1/3 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute -bottom-8 left-1/3 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
               <Sparkle className="h-10 w-10" />
             </div>
-            <div className="absolute top-1/4 -left-10 text-purple-400 opacity-20 animate-ping" 
+            <div className="absolute top-1/4 -left-10 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '3.9s', animationIterationCount: 'infinite', animationDelay: '1.8s' }}>
               <Sparkle className="h-8 w-8" />
             </div>
             
-            <div className="absolute top-0 right-0 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in shadow-sm">
+            <div className="absolute top-0 right-0 bg-blue-100 text-blue-700 px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in">
               Pack Complet
             </div>
             
             
             <div className="mb-6">
               <div className="flex items-center gap-2">
-                <h3 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
@@ -150,24 +150,24 @@ const PaymentSection = () => {
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-4 text-gray-700">
-                  <div className={`p-1.5 rounded-lg ${feature.className || 'bg-gradient-to-br from-purple-50 to-blue-50'}`}>
-                    <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-purple-600'}`} />
+                  <div className={`p-1.5 rounded-lg ${feature.className || 'bg-blue-50'}`}>
+                    <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-blue-600'}`} />
                   </div>
                   <span className="text-[15px]">{feature.text}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-100 shadow-inner">
+            <div className="flex items-center justify-between p-4 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
               <div className="flex items-center gap-2">
-                <span className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-indigo-700">10,00€</span>
+                <span className="text-3xl md:text-4xl font-bold text-black">10,00€</span>
                 <span className="text-gray-500 ml-2">TVA incluse</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="group">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-green-50 to-emerald-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
+                      <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
                         <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                         <span className="text-sm whitespace-nowrap text-emerald-700">
                           Satisfait ou remboursé
@@ -198,7 +198,7 @@ const PaymentSection = () => {
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
               aria-label="Payer 10,00€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />

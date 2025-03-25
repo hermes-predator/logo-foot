@@ -239,7 +239,7 @@ const PaymentSection = () => {
               <img 
                 src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
                 alt="Cartes de paiement acceptées" 
-                className="h-8" 
+                className="h-12" 
               />
             </div>
           </div>

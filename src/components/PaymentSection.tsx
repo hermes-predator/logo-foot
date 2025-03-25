@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard, Lock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -182,7 +183,7 @@ const PaymentSection = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
-                      <HandHeart className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                      <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                       <span className="text-sm whitespace-nowrap text-emerald-700">
                         Satisfait ou remboursé
                       </span>

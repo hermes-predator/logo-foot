@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -233,8 +232,11 @@ const PaymentSection = () => {
                 className="h-5" 
               />
             </div>
-            
-            <Separator orientation="vertical" className="h-5 bg-gray-300 mx-1" />
+        
+            {/* Point décoratif au lieu du séparateur */}
+            <div className="flex items-center justify-center">
+              <div className="h-2 w-2 rounded-full bg-blue-500 mx-3"></div>
+            </div>
             
             <div className="flex items-center gap-3">
               <img 

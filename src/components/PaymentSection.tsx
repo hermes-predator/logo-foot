@@ -35,8 +35,8 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Download,
-      text: "Téléchargement instantané"
+      icon: Wallet,
+      text: "Prix accessible"
     },
     {
       icon: Check,
@@ -45,8 +45,8 @@ const PaymentSection = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Wallet,
-      text: "Prix accessible"
+      icon: Download,
+      text: "Téléchargement instantané"
     },
     {
       icon: Check,

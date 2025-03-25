@@ -137,7 +137,7 @@ const PaymentSection = () => {
             {/* Bannière de confiance avec nombre d'utilisateurs - UPDATED TEXT HERE */}
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
               <Users className="h-3.5 w-3.5" />
-              <span>4 000+ clients satisfaits</span>
+              <span>4,000+ clients satisfaits</span>
             </div>
             
             <div className="mb-6">

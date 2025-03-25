@@ -223,7 +223,7 @@ const PaymentSection = () => {
             </Button>
           </div>
           
-          <div className="flex items-center justify-center mt-6 flex-wrap gap-4">
+          <div className="flex items-center justify-center mt-6 flex-wrap gap-2">
             <div className="inline-flex items-center gap-2">
               <span className="text-sm text-gray-700">Paiement sécurisé</span>
               <img 
@@ -233,9 +233,9 @@ const PaymentSection = () => {
               />
             </div>
         
-            {/* Point décoratif au lieu du séparateur - gris et encore plus petit */}
+            {/* Point décoratif au lieu du séparateur - gris et très petit avec moins d'espace */}
             <div className="flex items-center justify-center">
-              <div className="h-1 w-1 rounded-full bg-gray-400 mx-3"></div>
+              <div className="h-1 w-1 rounded-full bg-gray-400 mx-1.5"></div>
             </div>
             
             <div className="flex items-center gap-3">

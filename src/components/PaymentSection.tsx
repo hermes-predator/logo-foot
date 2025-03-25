@@ -233,9 +233,9 @@ const PaymentSection = () => {
               />
             </div>
         
-            {/* Point décoratif au lieu du séparateur - gris et plus petit */}
+            {/* Point décoratif au lieu du séparateur - gris et encore plus petit */}
             <div className="flex items-center justify-center">
-              <div className="h-1.5 w-1.5 rounded-full bg-gray-400 mx-3"></div>
+              <div className="h-1 w-1 rounded-full bg-gray-400 mx-3"></div>
             </div>
             
             <div className="flex items-center gap-3">

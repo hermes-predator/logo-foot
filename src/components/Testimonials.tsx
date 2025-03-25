@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star, Users } from 'lucide-react';
 import {
@@ -70,14 +69,6 @@ const Testimonials = () => {
   return (
     <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
       <div className="w-full px-2">
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <Users className="w-5 h-5 text-blue-600" />
-            <p className="text-blue-600 font-bold text-base md:text-lg">
-              5 000+ clients nous font confiance
-            </p>
-          </div>
-        </div>
         
         <Carousel
           opts={{

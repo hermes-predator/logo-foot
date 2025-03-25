@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -147,7 +148,7 @@ const PaymentSection = () => {
             {/* Bannière de confiance avec nombre d'utilisateurs - MODIFIED TEXT HERE */}
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
               <Users className="h-3.5 w-3.5" />
-              <span>4,000+ clients</span>
+              <span>4,000+ commandes</span>
             </div>
             
             {/* Badge de personnes ayant récemment acheté - NOUVEAU */}

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -7,6 +8,7 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { useToast } from "@/hooks/use-toast";
+import { Separator } from "./ui/separator";
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -222,6 +224,7 @@ const PaymentSection = () => {
           <div className="flex items-center justify-center mt-6 flex-wrap gap-4">
             <div className="inline-flex items-center gap-2">
               <span className="text-sm text-gray-700">Paiement sécurisé via</span>
+              <Separator orientation="vertical" className="h-5 bg-gray-300 mx-1" />
               <img 
                 src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                 alt="SumUp Secure Payment" 

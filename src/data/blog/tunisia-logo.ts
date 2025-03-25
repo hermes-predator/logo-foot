@@ -1,5 +1,4 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from '../../types/blog';
 
 export const tunisiaLogoPost: BlogPost = {
   id: 159,

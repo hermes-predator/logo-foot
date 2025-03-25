@@ -206,8 +206,8 @@ const PaymentSection = () => {
             </Button>
           </div>
           
-          <div className="flex flex-col items-center mt-6 space-y-3">
-            <div className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-100 shadow-sm">
+          <div className="flex items-center justify-center mt-6 flex-wrap gap-4">
+            <div className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-green-600" />
               <span className="text-sm text-gray-700">Paiement sécurisé via</span>
               <img 
@@ -217,34 +217,13 @@ const PaymentSection = () => {
               />
             </div>
             
-            <div className="flex flex-wrap justify-center items-center gap-3 py-2">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-100 shadow-sm">
-                <CreditCard className="h-4 w-4 text-blue-600" />
-                <span className="text-xs text-gray-700">Cartes acceptées</span>
-              </div>
-              
-              <div className="flex items-center gap-2 px-3 py-1">
-                <img 
-                  src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" 
-                  alt="Visa" 
-                  className="h-7" 
-                />
-                <img 
-                  src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png" 
-                  alt="Mastercard" 
-                  className="h-7" 
-                />
-                <img 
-                  src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" 
-                  alt="American Express" 
-                  className="h-7" 
-                />
-                <img 
-                  src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" 
-                  alt="Apple Pay" 
-                  className="h-7" 
-                />
-              </div>
+            <div className="flex items-center gap-3">
+              <CreditCard className="h-4 w-4 text-blue-600" />
+              <span className="text-xs text-gray-700">Cartes acceptées:</span>
+              <img src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" alt="Visa" className="h-5" />
+              <img src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png" alt="Mastercard" className="h-5" />
+              <img src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" alt="American Express" className="h-5" />
+              <img src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" alt="Apple Pay" className="h-5" />
             </div>
           </div>
         </div>

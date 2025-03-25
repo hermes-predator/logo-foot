@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, FileArchive } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -107,15 +107,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="group transition-all duration-300 hover:shadow-md bg-white border-gray-200 hover:border-gray-300 flex items-center relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 opacity-100 transition-opacity duration-300"></div>
-                <Folder className="h-4 w-4 mr-1 text-gray-700 group-hover:text-gray-700 transition-all duration-300 group-hover:scale-125" />
-                <span className="relative z-10 font-medium">Descriptif du fichier</span>
+                <FileArchive className="h-4 w-4 mr-1 text-gray-700 group-hover:text-gray-700 transition-all duration-300 group-hover:scale-125" />
+                <span className="relative z-10 font-medium">Descriptif du ZIP</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <div className="text-center pb-2 border-b border-gray-100">
                   <DialogTitle className="text-2xl font-bold mb-1 text-black">
-                    Descriptif du fichier
+                    Descriptif du ZIP
                   </DialogTitle>
                   <div className="relative inline-flex items-center justify-center">
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block mb-6 relative shadow-sm">

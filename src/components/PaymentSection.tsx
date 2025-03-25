@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard, BadgePercent, CircleDollarSign } from 'lucide-react';
+import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -158,21 +158,8 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Amélioration de la présentation du prix avec comparaison */}
+            {/* Prix simplifié avec prix barré */}
             <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100/80 border border-blue-100 relative overflow-hidden">
-              {/* Badge économie */}
-              <div className="absolute -top-1 -right-1 bg-red-500 text-white px-4 py-1 rounded-bl-lg shadow-md transform rotate-2 z-10">
-                <div className="flex items-center gap-1">
-                  <BadgePercent className="h-4 w-4" />
-                  <span className="text-xs font-bold">-71% de réduction</span>
-                </div>
-              </div>
-              
-              {/* Effet lumineux sur le badge */}
-              <div className="absolute -top-1 -right-1 bg-red-400 text-white px-4 py-1 rounded-bl-lg opacity-0 animate-pulse" 
-                   style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
-              </div>
-              
               <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
                 <div className="flex flex-col md:flex-row items-center gap-3">
                   <div>
@@ -191,12 +178,6 @@ const PaymentSection = () => {
                       </div>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
                     </div>
-                  </div>
-                  
-                  {/* Information sur l'économie */}
-                  <div className="flex items-center gap-1 px-3 py-1.5 bg-green-50 rounded-md text-green-700 text-sm font-medium border border-green-100 mt-2 md:mt-0">
-                    <CircleDollarSign className="h-4 w-4" />
-                    <span>Économisez 25€ aujourd'hui</span>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard, Lock } from 'lucide-react';
 import { Button } from './ui/button';
@@ -135,10 +134,10 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Bannière de confiance avec nombre d'utilisateurs au lieu de "Pack Complet" */}
+            {/* Bannière de confiance avec nombre d'utilisateurs - UPDATED TEXT HERE */}
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
               <Users className="h-3.5 w-3.5" />
-              <span>2,736+ acheteurs satisfaits</span>
+              <span>2,736+ clients satisfaits</span>
             </div>
             
             <div className="mb-6">

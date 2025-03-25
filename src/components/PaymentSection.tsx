@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, FileArchive, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
@@ -208,7 +207,6 @@ const PaymentSection = () => {
           
           <div className="flex items-center justify-center mt-6 flex-wrap gap-4">
             <div className="inline-flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-green-600" />
               <span className="text-sm text-gray-700">Paiement sécurisé via</span>
               <img 
                 src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
@@ -218,12 +216,12 @@ const PaymentSection = () => {
             </div>
             
             <div className="flex items-center gap-3">
-              <CreditCard className="h-4 w-4 text-blue-600" />
               <span className="text-xs text-gray-700">Cartes acceptées:</span>
-              <img src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png" alt="Visa" className="h-5" />
-              <img src="/lovable-uploads/99e16506-d368-4b20-9efa-77f3c4870bf7.png" alt="Mastercard" className="h-5" />
-              <img src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" alt="American Express" className="h-5" />
-              <img src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" alt="Apple Pay" className="h-5" />
+              <img 
+                src="/lovable-uploads/81f57759-cc4e-457d-a95d-251dfa7958de.png" 
+                alt="Cartes de paiement acceptées" 
+                className="h-5" 
+              />
             </div>
           </div>
         </div>

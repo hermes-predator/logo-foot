@@ -222,7 +222,7 @@ const PaymentSection = () => {
           
           <div className="flex items-center justify-center mt-6 flex-wrap gap-4">
             <div className="inline-flex items-center gap-2">
-              <span className="text-sm text-gray-700">Paiement sécurisé via</span>
+              <span className="text-sm text-gray-700">Paiement sécurisé</span>
               <img 
                 src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                 alt="SumUp Secure Payment" 

@@ -169,13 +169,9 @@ const PaymentSection = () => {
                       <span className="bg-red-200 text-red-800 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur avec effet brillant et plus d'emphase */}
+                    {/* Nouveau prix mis en valeur - MODIFIÉ: taille réduite et effet de brillance supprimé */}
                     <div className="flex items-center gap-2">
-                      <div className="relative">
-                        <span className="text-5xl md:text-6xl font-extrabold text-black drop-shadow-sm">10,00€</span>
-                        {/* Effet brillant amélioré autour du prix */}
-                        <div className="absolute -inset-3 bg-blue-300 blur-xl opacity-30 rounded-full animate-pulse"></div>
-                      </div>
+                      <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10,00€</span>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
                     </div>
                   </div>

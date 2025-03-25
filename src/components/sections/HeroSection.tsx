@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions */}
+        {/* CTA buttons with enhanced interactions - MODIFIED the Descriptif du ZIP button to not change color on hover */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -104,9 +104,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               <button 
                 className="group flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80 transition-opacity duration-300 group-hover:opacity-100"></div>
-                <Folder size={18} className="mr-1 text-gray-800 group-hover:text-purple-700 transition-colors duration-300" />
-                <span className="relative z-10 font-medium text-gray-800 group-hover:text-gray-900 transition-colors duration-300">Descriptif du ZIP</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
+                <Folder size={18} className="mr-1 text-gray-800 transition-colors duration-300" />
+                <span className="relative z-10 font-medium text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">

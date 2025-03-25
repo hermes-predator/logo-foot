@@ -90,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Download className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
+            <span className="text-sm font-medium text-gray-700">4,000+ clients satisfaits</span>
           </div>
         </div>
 

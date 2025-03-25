@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
@@ -166,7 +165,7 @@ const PaymentSection = () => {
                     {/* Prix normal barré */}
                     <div className="flex items-center gap-2 mb-0.5">
                       <span className="text-gray-500 text-lg line-through font-medium">35,00€</span>
-                      <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-semibold">Prix normal</span>
+                      <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
                     {/* Nouveau prix mis en valeur */}

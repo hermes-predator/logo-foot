@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, FileArchive } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -105,25 +105,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="group flex items-center gap-2 px-4 py-2 bg-white rounded-md border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 opacity-100 transition-opacity duration-300"></div>
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="#ea384c" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                  className="mr-1"
-                >
-                  <path d="M14.5 22H18a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <path d="M2.97 13.12c-.6.36-.97 1.02-.97 1.74v3.28c0 .72.37 1.38.97 1.74l3 1.83c.63.39 1.43.39 2.06 0l3-1.83c.6-.36.97-1.02.97-1.74v-3.28c0-.72-.37-1.38-.97-1.74l-3-1.83a1.97 1.97 0 0 0-2.06 0l-3 1.83Z" />
-                  <path d="m7 16.5-3.07-1.82" />
-                  <path d="m7 16.5 3.07-1.82" />
-                  <path d="M7 16.5v3.5" />
-                </svg>
+                <Folder size={16} className="mr-1 text-black" />
                 <span className="relative z-10 font-medium text-black">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>

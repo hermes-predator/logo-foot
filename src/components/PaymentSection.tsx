@@ -76,7 +76,7 @@ const PaymentSection = () => {
           Recevez-le instantanément après paiement
         </p>
       </div>
-
+      
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
           className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
@@ -144,10 +144,10 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Bannière de confiance avec nombre d'utilisateurs - MODIFIED NUMBER HERE */}
+            {/* Bannière de confiance avec nombre d'utilisateurs - MODIFIED TEXT HERE */}
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-medium animate-fade-in flex items-center gap-1.5">
               <Users className="h-3.5 w-3.5" />
-              <span>4,000+ clients satisfaits</span>
+              <span>4,000+ clients</span>
             </div>
             
             {/* Badge de personnes ayant récemment acheté - NOUVEAU */}

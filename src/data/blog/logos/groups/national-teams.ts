@@ -11,6 +11,7 @@ import { brazilLogoPost } from '../brazil-logo';
 import { colombiaLogoPost } from '../colombia-logo';
 import { croatiaLogoPost } from '../croatia-logo';
 import { denmarkLogoPost } from '../denmark-logo';
+import { egyptLogoPost } from '../egypt-logo';
 import { englandLogoPost } from '../england-logo';
 import { franceLogoPost } from '../france-logo';
 import { germanyLogoPost } from '../germany-logo';
@@ -45,6 +46,7 @@ export const nationalTeamPosts: BlogPost[] = [
   colombiaLogoPost,
   croatiaLogoPost,
   denmarkLogoPost,
+  egyptLogoPost,
   englandLogoPost,
   franceLogoPost,
   germanyLogoPost,

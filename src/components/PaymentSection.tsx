@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, CreditCard } from 'lucide-react';
 import { Button } from './ui/button';
@@ -158,7 +159,7 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Prix simplifié avec prix barré */}
+            {/* Prix simplifié avec prix barré - Effet clignotant retiré et remplacé par un effet plus subtil */}
             <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100/80 border border-blue-100 relative overflow-hidden">
               <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
                 <div className="flex flex-col md:flex-row items-center gap-3">
@@ -169,12 +170,12 @@ const PaymentSection = () => {
                       <span className="bg-red-200 text-red-800 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur avec effet brillant et plus d'emphase */}
+                    {/* Nouveau prix avec effet plus subtil et gradient */}
                     <div className="flex items-center gap-2">
                       <div className="relative">
-                        <span className="text-5xl md:text-6xl font-extrabold text-black drop-shadow-sm">10,00€</span>
-                        {/* Effet brillant amélioré autour du prix */}
-                        <div className="absolute -inset-3 bg-blue-300 blur-xl opacity-30 rounded-full animate-pulse"></div>
+                        <span className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900 drop-shadow-sm">10,00€</span>
+                        {/* Effet de bordure subtil */}
+                        <div className="absolute -inset-1 border border-blue-200 rounded-lg opacity-25"></div>
                       </div>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
                     </div>

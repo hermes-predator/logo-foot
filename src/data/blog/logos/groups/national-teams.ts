@@ -38,6 +38,7 @@ import { hungaryLogoPost } from '../hungary-logo';
 import { ukraineLogoPost } from '../ukraine-logo';
 import { australiaLogoPost } from '../australia-logo';
 import { austriaLogoPost } from '../austria-logo';
+import { coteIvoireLogoPost } from '../cote-d-ivoire-logo';
 
 // Export all national team logo posts as a single array
 export const nationalTeamPosts: BlogPost[] = [
@@ -76,5 +77,6 @@ export const nationalTeamPosts: BlogPost[] = [
   hungaryLogoPost,
   ukraineLogoPost,
   australiaLogoPost,
-  austriaLogoPost
+  austriaLogoPost,
+  coteIvoireLogoPost
 ];

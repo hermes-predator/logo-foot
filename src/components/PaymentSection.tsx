@@ -160,18 +160,21 @@ const PaymentSection = () => {
               ))}
             </div>
 
-            {/* Prix simplifié avec prix barré */}
-            <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100/80 border border-blue-100 relative overflow-hidden">
+            {/* Prix simplifié avec prix barré - AMÉLIORÉ : style visuel du conteneur */}
+            <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 via-blue-50/80 to-sky-50/90 border border-blue-100 shadow-inner relative overflow-hidden">
+              {/* Effet de brillance subtil */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
+              
               <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
                 <div className="flex flex-col md:flex-row items-center gap-3">
                   <div>
                     {/* Prix normal barré */}
                     <div className="flex items-center gap-2 mb-0.5">
                       <span className="text-gray-500 text-lg line-through font-medium">40,00€</span>
-                      <span className="bg-red-200 text-red-800 px-2 py-0.5 rounded text-xs font-semibold">Valeur réelle</span>
+                      <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur - MODIFIÉ: taille réduite et effet de brillance supprimé */}
+                    {/* Nouveau prix mis en valeur */}
                     <div className="flex items-center gap-2">
                       <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10,00€</span>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
@@ -183,9 +186,9 @@ const PaymentSection = () => {
               <div className="group">
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-green-50 hover:shadow transition-all duration-300 transform hover:translate-y-[-1px] border border-transparent hover:border-green-200">
-                      <RefreshCcw className="h-3.5 w-3.5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                      <span className="text-sm whitespace-nowrap text-emerald-700">
+                    <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px] border border-green-200">
+                      <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                      <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
                         Satisfait ou remboursé
                       </span>
                     </div>
@@ -237,7 +240,7 @@ const PaymentSection = () => {
               <img 
                 src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
                 alt="Cartes de paiement acceptées" 
-                className="h-12" 
+                className="h-13" 
               />
             </div>
           </div>

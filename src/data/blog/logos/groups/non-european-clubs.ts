@@ -3,6 +3,7 @@ import { BlogPost } from '../../../../types/blog';
 
 // Import non-European club logo posts
 import { interMiamiLogoPost } from '../inter-miami-logo';
+import { losAngelesGalaxyLogoPost } from '../los-angeles-galaxy-logo';
 import { africanClubsPost } from '../african-clubs';
 import { asianClubsPost } from '../asian-clubs';
 import { brazilianClubsPost } from '../brazilian-clubs';
@@ -14,6 +15,7 @@ import { flamengoLogoPost } from '../flamengo-logo';
 export const nonEuropeanClubPosts: BlogPost[] = [
   flamengoLogoPost,
   interMiamiLogoPost,
+  losAngelesGalaxyLogoPost,
   africanClubsPost,
   asianClubsPost,
   brazilianClubsPost,

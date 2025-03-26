@@ -10,6 +10,7 @@ import { germanClubsPost as germanClubsOverviewPost } from '../german-clubs';
 import { portugueseLogosPost } from '../portuguese-clubs';
 import { winamaxLogoPost } from '../winamax-logo';
 import { unibetLogoPost } from '../unibet-logo';
+import { bwinLogoPost } from '../bwin-logo';
 import { footballLogosHistoryPost } from '../football-logos-history';
 
 // Group all general content posts
@@ -22,5 +23,6 @@ export const generalContentPosts: BlogPost[] = [
   portugueseLogosPost,
   winamaxLogoPost,
   unibetLogoPost,
+  bwinLogoPost,
   footballLogosHistoryPost
 ];

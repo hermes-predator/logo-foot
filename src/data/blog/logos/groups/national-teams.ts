@@ -41,6 +41,7 @@ import { hungaryLogoPost } from '../hungary-logo';
 import { australiaLogoPost } from '../australia-logo';
 import { japanLogoPost } from '../japan-logo';
 import { scotlandLogoPost } from '../scotland-logo';
+import { irelandLogoPost } from '../ireland-logo';
 import { nationalTeamsPost } from '../national-teams';
 
 // Consolidate all national team posts
@@ -55,7 +56,7 @@ export const nationalTeamPosts: BlogPost[] = [
   belgiumLogoPost,
   brazilLogoPost,
   argentinaLogoPost,
-  tunisiaLogoPost, // S'assurer que l'article sur la Tunisie est bien inclus
+  tunisiaLogoPost,
   algeriaLogoPost,
   moroccoLogoPost,
   senegalLogoPost,
@@ -84,5 +85,6 @@ export const nationalTeamPosts: BlogPost[] = [
   australiaLogoPost,
   japanLogoPost,
   scotlandLogoPost,
+  irelandLogoPost,
   nationalTeamsPost
 ];

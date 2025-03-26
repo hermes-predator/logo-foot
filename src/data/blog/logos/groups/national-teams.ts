@@ -1,96 +1,94 @@
 
 import { BlogPost } from '../../../../types/blog';
 
-// Import national team posts
-import { franceLogoPost } from '../france-logo';
-import { englandLogoPost } from '../england-logo';
-import { spainLogoPost } from '../spain-logo';
-import { germanyLogoPost } from '../germany-logo';
-import { italyLogoPost } from '../italy-logo';
-import { portugalLogoPost } from '../portugal-logo';
-import { netherlandsLogoPost } from '../netherlands-logo';
+// Import national team logo posts
+import { albaniaLogoPost } from '../albania-logo';
+import { algeriaLogoPost } from '../algeria-logo';
+import { argentinaLogoPost } from '../argentina-logo';
+import { australiaLogoPost } from '../australia-logo';
+import { austriaLogoPost } from '../austria-logo';
 import { belgiumLogoPost } from '../belgium-logo';
 import { brazilLogoPost } from '../brazil-logo';
-import { argentinaLogoPost } from '../argentina-logo';
-import { tunisiaLogoPost } from '../tunisia-logo';
-import { algeriaLogoPost } from '../algeria-logo';
-import { moroccoLogoPost } from '../morocco-logo';
-import { senegalLogoPost } from '../senegal-logo';
-import { cameroonLogoPost } from '../cameroon-logo';
-import { egyptLogoPost } from '../egypt-logo';
-import { maliLogoPost } from '../mali-logo';
-import { coteIvoireLogoPost } from '../cote-d-ivoire-logo';
-import { nigeriaLogoPost } from '../nigeria-logo';
-import { colombiaLogoPost } from '../colombia-logo';
-import { uruguayLogoPost } from '../uruguay-logo';
-import { mexicoLogoPost } from '../mexico-logo';
-import { usaLogoPost } from '../usa-logo';
-import { croatiaLogoPost } from '../croatia-logo';
-import { serbiaLogoPost } from '../serbia-logo';
-import { ukraineLogoPost } from '../ukraine-logo';
-import { russiaLogoPost } from '../russia-logo';
-import { polandLogoPost } from '../poland-logo';
-import { romaniaLogoPost } from '../romania-logo';
-import { slovakiaLogoPost } from '../slovakia-logo';
-import { swedenLogoPost } from '../sweden-logo';
-import { denmarkLogoPost } from '../denmark-logo';
-import { greeceLogoPost } from '../greece-logo';
-import { switzerlandLogoPost } from '../switzerland-logo';
-import { austriaLogoPost } from '../austria-logo';
-import { hungaryLogoPost } from '../hungary-logo';
-import { australiaLogoPost } from '../australia-logo';
-import { japanLogoPost } from '../japan-logo';
-import { scotlandLogoPost } from '../scotland-logo';
-import { irelandLogoPost } from '../ireland-logo';
-import { ghanaLogoPost } from '../ghana-logo';
-import { nationalTeamsPost } from '../national-teams';
-import { albaniaLogoPost } from '../albania-logo';
 import { burkinaFasoLogoPost } from '../burkina-faso-logo';
+import { cameroonLogoPost } from '../cameroon-logo';
+import { colombiaLogoPost } from '../colombia-logo';
+import { croatiaLogoPost } from '../croatia-logo';
+import { denmarkLogoPost } from '../denmark-logo';
+import { egyptLogoPost } from '../egypt-logo';
+import { englandLogoPost } from '../england-logo';
+import { franceLogoPost } from '../france-logo';
+import { germanyLogoPost } from '../germany-logo';
+import { ghanaLogoPost } from '../ghana-logo';
+import { greeceLogoPost } from '../greece-logo';
+import { hungaryLogoPost } from '../hungary-logo';
+import { irelandLogoPost } from '../ireland-logo';
+import { israelLogoPost } from '../israel-logo';
+import { italyLogoPost } from '../italy-logo';
+import { japanLogoPost } from '../japan-logo';
+import { maliLogoPost } from '../mali-logo';
+import { mexicoLogoPost } from '../mexico-logo';
+import { moroccoLogoPost } from '../morocco-logo';
+import { netherlandsLogoPost } from '../netherlands-logo';
+import { nigeriaLogoPost } from '../nigeria-logo';
+import { polandLogoPost } from '../poland-logo';
+import { portugalLogoPost } from '../portugal-logo';
+import { romaniaLogoPost } from '../romania-logo';
+import { russiaLogoPost } from '../russia-logo';
+import { scotlandLogoPost } from '../scotland-logo';
+import { senegalLogoPost } from '../senegal-logo';
+import { serbiaLogoPost } from '../serbia-logo';
+import { slovakiaLogoPost } from '../slovakia-logo';
+import { spainLogoPost } from '../spain-logo';
+import { swedenLogoPost } from '../sweden-logo';
+import { switzerlandLogoPost } from '../switzerland-logo';
+import { tunisiaLogoPost } from '../tunisia-logo';
+import { ukraineLogoPost } from '../ukraine-logo';
+import { uruguayLogoPost } from '../uruguay-logo';
+import { usaLogoPost } from '../usa-logo';
 
-// Consolidate all national team posts
+// Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
-  franceLogoPost,
-  englandLogoPost,
-  spainLogoPost,
-  germanyLogoPost,
-  italyLogoPost,
-  portugalLogoPost,
-  netherlandsLogoPost,
+  albaniaLogoPost,
+  algeriaLogoPost,
+  argentinaLogoPost,
+  australiaLogoPost,
+  austriaLogoPost,
   belgiumLogoPost,
   brazilLogoPost,
-  argentinaLogoPost,
-  tunisiaLogoPost,
-  algeriaLogoPost,
-  moroccoLogoPost,
-  senegalLogoPost,
+  burkinaFasoLogoPost,
   cameroonLogoPost,
-  egyptLogoPost,
-  maliLogoPost,
-  coteIvoireLogoPost,
-  nigeriaLogoPost,
   colombiaLogoPost,
-  uruguayLogoPost,
-  mexicoLogoPost,
-  usaLogoPost,
   croatiaLogoPost,
-  serbiaLogoPost,
-  ukraineLogoPost,
-  russiaLogoPost,
-  polandLogoPost,
-  romaniaLogoPost,
-  slovakiaLogoPost,
-  swedenLogoPost,
   denmarkLogoPost,
-  greeceLogoPost,
-  switzerlandLogoPost,
-  austriaLogoPost,
-  hungaryLogoPost,
-  australiaLogoPost,
-  japanLogoPost,
-  scotlandLogoPost,
-  irelandLogoPost,
+  egyptLogoPost,
+  englandLogoPost,
+  franceLogoPost,
+  germanyLogoPost,
   ghanaLogoPost,
-  nationalTeamsPost,
-  albaniaLogoPost,
-  burkinaFasoLogoPost
+  greeceLogoPost,
+  hungaryLogoPost,
+  irelandLogoPost,
+  israelLogoPost,
+  italyLogoPost,
+  japanLogoPost,
+  maliLogoPost,
+  mexicoLogoPost,
+  moroccoLogoPost,
+  netherlandsLogoPost,
+  nigeriaLogoPost,
+  polandLogoPost,
+  portugalLogoPost,
+  romaniaLogoPost,
+  russiaLogoPost,
+  scotlandLogoPost,
+  senegalLogoPost,
+  serbiaLogoPost,
+  slovakiaLogoPost,
+  spainLogoPost,
+  swedenLogoPost,
+  switzerlandLogoPost,
+  tunisiaLogoPost,
+  ukraineLogoPost,
+  uruguayLogoPost,
+  usaLogoPost
 ];

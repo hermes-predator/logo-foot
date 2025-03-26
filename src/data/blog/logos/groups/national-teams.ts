@@ -42,6 +42,7 @@ import { australiaLogoPost } from '../australia-logo';
 import { japanLogoPost } from '../japan-logo';
 import { scotlandLogoPost } from '../scotland-logo';
 import { irelandLogoPost } from '../ireland-logo';
+import { ghanaLogoPost } from '../ghana-logo';
 import { nationalTeamsPost } from '../national-teams';
 
 // Consolidate all national team posts
@@ -86,5 +87,6 @@ export const nationalTeamPosts: BlogPost[] = [
   japanLogoPost,
   scotlandLogoPost,
   irelandLogoPost,
+  ghanaLogoPost,
   nationalTeamsPost
 ];

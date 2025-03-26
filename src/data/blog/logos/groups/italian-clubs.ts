@@ -22,6 +22,7 @@ import { pisaLogoPost } from '../pisa-logo';
 import { salernitanaLogoPost } from '../salernitana-logo';
 import { sampdoriaLogoPost } from '../sampdoria-logo';
 import { sassuoloLogoPost } from '../sassuolo-logo';
+import { speziaLogoPost } from '../spezia-logo';
 import { torinoLogoPost } from '../torino-logo';
 import { udineseLogoPost } from '../udinese-logo';
 
@@ -47,6 +48,7 @@ export const italianClubPosts: BlogPost[] = [
   salernitanaLogoPost,
   sampdoriaLogoPost,
   sassuoloLogoPost,
+  speziaLogoPost,
   torinoLogoPost,
   udineseLogoPost
 ];

@@ -27,14 +27,27 @@ const BlogSchemaMarkup = ({ post, isBlogList }: BlogSchemaMarkupProps) => {
     "https://logo-foot.com/og-image.png";
 
   // Pass the imageUrl to the schema generator
-  const articleSchema = BlogPostSchema({ 
+  const schemaData = BlogPostSchema({ 
     post,
     imageUrl
   });
 
+  // Handle both single and multiple schema objects
+  if (Array.isArray(schemaData)) {
+    return (
+      <>
+        {schemaData.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
+      </>
+    );
+  }
+
   return (
     <script type="application/ld+json">
-      {JSON.stringify(articleSchema)}
+      {JSON.stringify(schemaData)}
     </script>
   );
 };

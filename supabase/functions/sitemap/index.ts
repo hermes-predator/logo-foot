@@ -100,7 +100,11 @@ Deno.serve(async (req) => {
       post.title.toLowerCase().includes('suisse') ||
       post.title.toLowerCase().includes('logo suisse') ||
       post.title.toLowerCase().includes('danemark') ||
-      post.title.toLowerCase().includes('logo danemark')
+      post.title.toLowerCase().includes('logo danemark') ||
+      post.title.toLowerCase().includes('spezia') ||
+      post.title.toLowerCase().includes('la spezia') ||
+      post.title.toLowerCase().includes('los angeles galaxy') ||
+      post.title.toLowerCase().includes('galaxy los angeles')
     );
     
     console.log(`Found ${featuredPosts.length} featured posts with higher priority:`);
@@ -108,7 +112,11 @@ Deno.serve(async (req) => {
       console.log(`- ID ${post.id}: ${post.title}`);
     });
     
-    const sitemap = generateSitemap();
+    // Générer le sitemap avec support pour les images et hreflang
+    const sitemap = generateSitemap({
+      includeImages: true,
+      includeHreflang: true
+    });
     const urlCount = sitemap.split('<url>').length - 1;
     
     console.log(`Sitemap generated successfully with ${urlCount} URLs`);

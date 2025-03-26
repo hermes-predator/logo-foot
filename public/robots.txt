@@ -48,7 +48,7 @@ User-agent: Twitterbot
 Allow: /
 Crawl-delay: 1
 
-# Directives pour les pages importantes
+# Priorités SEO pour articles importants
 User-agent: *
 Allow: /blog/71 # Article Europa League Logo
 Allow: /blog/70 # Article Champions League Logo
@@ -56,6 +56,13 @@ Allow: /blog/69 # Article Équipe de France
 Allow: /blog/68 # Article Ajax Amsterdam
 Allow: /blog/3  # Article Équipes Nationales
 Allow: /blog/17 # Article Coupe du Monde
+Allow: /blog/200 # Article Spezia Calcio
+Allow: /blog/15 # Article Juventus
+Allow: /blog/32 # Article Inter Milan
+Allow: /blog/23 # Article PSG
+Allow: /blog/45 # Article OM
+Allow: /blog/12 # Article Real Madrid
+Allow: /blog/8  # Article FC Barcelone
 
 # Hreflang tags info
 # hreflang: fr-fr - https://logo-foot.com/ - French (France) content

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Folder } from 'lucide-react';
+import { Folder, List } from 'lucide-react';
 
 interface FolderItemProps {
   label: string;
@@ -90,7 +89,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       {collections && (
         <div className="mt-3">
           <p className={`font-semibold ${colors.label} mb-1.5 flex items-center gap-3`}>
-            <Folder className={`h-4 w-4 ${colors.icon}`} />
+            <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :
           </p>
           <p className={`text-xs leading-relaxed ${colors.value} bg-white/50 rounded-lg p-3`}>

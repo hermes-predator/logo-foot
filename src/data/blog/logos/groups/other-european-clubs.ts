@@ -16,6 +16,7 @@ import { olympiakosLogoPost } from '../olympiakos-logo';
 import { portoLogoPost } from '../porto-logo';
 import { psvEindhovenLogoPost } from '../psv-eindhoven-logo';
 import { sportingLogoPost } from '../sporting-logo';
+import { sportingBragaLogoPost } from '../sporting-braga-logo';
 import { trabzonsporLogoPost } from '../trabzonspor-logo';
 
 // Group other European club logo posts
@@ -34,5 +35,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   portoLogoPost,
   psvEindhovenLogoPost,
   sportingLogoPost,
+  sportingBragaLogoPost,
   trabzonsporLogoPost
 ];

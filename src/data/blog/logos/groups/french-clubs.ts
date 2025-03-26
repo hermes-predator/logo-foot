@@ -5,6 +5,7 @@ import { BlogPost } from '../../../../types/blog';
 import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
 import { amiensLogoPost } from '../amiens-logo';
 import { ancienLogoPsgPost } from '../ancien-logo-psg';
+import { ancienLogoOmPost } from '../ancien-logo-om';
 import { angersLogoPost } from '../angers-logo';
 import { annecyLogoPost } from '../annecy-logo';
 import { auxerreLogoPost } from '../auxerre-logo';
@@ -52,6 +53,7 @@ export const frenchClubPosts: BlogPost[] = [
   acAjaccioLogoPost,
   amiensLogoPost,
   ancienLogoPsgPost,
+  ancienLogoOmPost,
   angersLogoPost,
   annecyLogoPost,
   auxerreLogoPost,
@@ -94,4 +96,3 @@ export const frenchClubPosts: BlogPost[] = [
   troyesLogoPost,
   valenciennesLogoPost
 ];
-

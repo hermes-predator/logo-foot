@@ -15,9 +15,11 @@ import { realMadridLogoPost } from '../real-madrid-logo';
 import { sevillaFcLogoPost } from '../sevilla-fc-logo';
 import { villarrealLogoPost } from '../villarreal-logo';
 import { villarrealCfLogoPost } from '../villarreal-cf-logo';
+import { athleticBilbaoLogoPost } from '../athletic-bilbao-logo';
 
 // Group all Spanish club logo posts
 export const spanishClubPosts: BlogPost[] = [
+  athleticBilbaoLogoPost,
   atleticoMadridLogoPost,
   barcelonaLogoPost,
   celtaVigoLogoPost,
@@ -32,4 +34,3 @@ export const spanishClubPosts: BlogPost[] = [
   villarrealLogoPost,
   villarrealCfLogoPost
 ];
-

@@ -20,6 +20,7 @@ import { grenobleLogoPost } from '../grenoble-logo';
 import { guingampLogoPost } from '../guingamp-logo';
 import { lavalLogoPost } from '../laval-logo';
 import { leHavreLogoPost } from '../le-havre-logo';
+import { leMansFCLogoPost } from '../le-mans-logo';
 import { lensLogoPost } from '../lens-logo';
 import { lillLogoPost } from '../lille-logo';
 import { lorientLogoPost } from '../lorient-logo';
@@ -68,6 +69,7 @@ export const frenchClubPosts: BlogPost[] = [
   guingampLogoPost,
   lavalLogoPost,
   leHavreLogoPost,
+  leMansFCLogoPost,
   lensLogoPost,
   lillLogoPost,
   lorientLogoPost,

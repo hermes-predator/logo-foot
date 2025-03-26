@@ -40,7 +40,7 @@ export const englishClubPosts: BlogPost[] = [
   chelseaLogoPost,
   crystalPalaceLogoPost,
   evertonLogoPost,
-  ipswichTownLogoPost, // Added Ipswich Town logo post
+  ipswichTownLogoPost,
   leedsUnitedLogoPost,
   leicesterLogoPost,
   liverpoolLogoPost,

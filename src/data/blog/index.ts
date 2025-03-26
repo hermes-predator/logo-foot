@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';

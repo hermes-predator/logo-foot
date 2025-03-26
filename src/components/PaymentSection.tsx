@@ -243,9 +243,9 @@ const PaymentSection = () => {
               />
             </div>
         
-            {/* Point décoratif au lieu du séparateur - même couleur que le texte */}
+            {/* Point décoratif avec une couleur grise plus claire */}
             <div className="flex items-center justify-center">
-              <div className="h-1 w-1 rounded-full bg-gray-700 mx-1.5"></div>
+              <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
             </div>
             
             <div className="flex items-center gap-3">

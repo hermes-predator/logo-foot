@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
@@ -10,33 +11,51 @@ import BlogPagination from '../components/blog/BlogPagination';
 import BlogCTA from '../components/blog/BlogCTA';
 
 const Blog = () => {
-  console.log('Initial blogPosts in Blog component:', blogPosts.length, 'articles');
+  const [isLoading, setIsLoading] = useState(true);
+  const [displayablePosts, setDisplayablePosts] = useState(blogPosts);
   
-  // Log pour vérifier que les articles de Chelsea et Juventus sont bien présents
-  const chelseaArticle = blogPosts.find(post => post.title.toLowerCase().includes('chelsea'));
-  const juventusArticle = blogPosts.find(post => post.title.toLowerCase().includes('juventus'));
-  
-  console.log('Article Chelsea trouvé:', chelseaArticle ? {
-    id: chelseaArticle.id,
-    title: chelseaArticle.title,
-    date: chelseaArticle.date
-  } : 'Non trouvé');
-  
-  console.log('Article Juventus trouvé:', juventusArticle ? {
-    id: juventusArticle.id,
-    title: juventusArticle.title,
-    date: juventusArticle.date
-  } : 'Non trouvé');
+  // Log the initial blog posts data
+  useEffect(() => {
+    console.log('Blog page loaded with', blogPosts.length, 'total posts');
+    
+    // Check for any posts with missing required fields
+    const invalidPosts = blogPosts.filter(post => 
+      !post.id || !post.title || !post.excerpt || !post.date || !post.content
+    );
+    
+    if (invalidPosts.length > 0) {
+      console.warn('Found', invalidPosts.length, 'posts with missing required fields:', 
+        invalidPosts.map(p => ({ id: p.id, title: p.title }))
+      );
+    }
+    
+    // Filter out any invalid posts for display
+    if (invalidPosts.length > 0) {
+      setDisplayablePosts(blogPosts.filter(post => 
+        post.id && post.title && post.excerpt && post.date && post.content
+      ));
+    }
+    
+    // Simulate loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
-  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(blogPosts);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(displayablePosts);
   const currentYear = new Date().getFullYear();
 
-  console.log('Pagination details:', {
-    currentPage,
-    totalPages,
-    itemsPerPage: paginatedItems.length,
-    totalItems
-  });
+  // Debug
+  useEffect(() => {
+    console.log('Pagination state:', {
+      currentPage,
+      totalPages,
+      itemsPerPage: paginatedItems.length,
+      totalItems
+    });
+  }, [currentPage, totalPages, paginatedItems, totalItems]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
@@ -73,7 +92,7 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         <div className="mt-12">
-          <BlogArticleList articles={paginatedItems} />
+          <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
           {totalPages > 1 && (
             <div className="px-4">
               <BlogPagination 

@@ -35,54 +35,68 @@ console.log('Article Juventus:', juventusArticle ? {
   category: juventusArticle.category
 } : 'Non trouvé dans logoPosts');
 
-// Combiner tous les articles dans un seul tableau
-const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
+// Combiner tous les articles dans un seul tableau pour analyse
+const allPostsForAnalysis = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
+console.log('\nTotal combined posts before deduplication:', allPostsForAnalysis.length);
 
 // Vérifier les doublons d'ID
-const idCounts = allPosts.reduce((acc, post) => {
+const idCounts = allPostsForAnalysis.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
 }, {} as Record<number, number>);
 
-console.log('\nDuplicate IDs found:');
-Object.entries(idCounts)
+const duplicateIds = Object.entries(idCounts)
   .filter(([_, count]) => count > 1)
-  .forEach(([id, count]) => {
-    const duplicates = allPosts.filter(post => post.id === Number(id));
-    console.log(`ID ${id} appears ${count} times in categories:`, 
-      duplicates.map(p => p.category).join(', '));
-  });
+  .map(([id]) => Number(id));
 
-// Préserver tous les articles en utilisant un Map pour garantir l'unicité des IDs
-// Cette méthode conserve le premier article avec un ID donné
-const uniquePostsMap = new Map<number, BlogPost>();
-
-// D'abord, ajouter tous les articles de logos car ils sont prioritaires
-logoPosts.forEach(post => {
-  if (!uniquePostsMap.has(post.id)) {
-    uniquePostsMap.set(post.id, post);
-  }
+console.log('\nDuplicate IDs found:', duplicateIds.length > 0 ? duplicateIds.join(', ') : 'None');
+duplicateIds.forEach(id => {
+  const duplicates = allPostsForAnalysis.filter(post => post.id === id);
+  console.log(`ID ${id} appears ${duplicates.length} times in categories:`, 
+    duplicates.map(p => `${p.category} (${p.title})`).join(', '));
 });
 
-// Ensuite ajouter les autres catégories, sans écraser les articles existants
-[...technicalPosts, ...historyPosts, ...analysisPosts].forEach(post => {
-  if (!uniquePostsMap.has(post.id)) {
-    uniquePostsMap.set(post.id, post);
+// Préserver TOUS les articles en assurant l'unicité des IDs
+// Au lieu d'utiliser un Map qui pourrait écraser des articles,
+// nous traitons chaque catégorie séparément pour garantir que tous les articles sont inclus
+const seenIds = new Set<number>();
+const finalPosts: BlogPost[] = [];
+
+// Function to add a post with a unique ID
+const addPostWithUniqueId = (post: BlogPost) => {
+  if (!seenIds.has(post.id)) {
+    // If ID is not yet seen, add as is
+    finalPosts.push(post);
+    seenIds.add(post.id);
   } else {
-    // Si un ID est déjà utilisé, trouver un nouvel ID unique
-    let newId = Math.max(...Array.from(uniquePostsMap.keys())) + 1;
+    // If ID is already used, find a new unique ID
+    let newId = Math.max(...Array.from(seenIds)) + 1;
     const newPost = { ...post, id: newId };
-    uniquePostsMap.set(newId, newPost);
+    finalPosts.push(newPost);
+    seenIds.add(newId);
     console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newId}`);
   }
-});
+};
 
-// Convertir le Map en tableau et trier par date
-export const blogPosts: BlogPost[] = Array.from(uniquePostsMap.values())
+// Process all categories separately to ensure all articles are included
+// Logos first, as they're most important
+logoPosts.forEach(post => addPostWithUniqueId(post));
+technicalPosts.forEach(post => addPostWithUniqueId(post));
+historyPosts.forEach(post => addPostWithUniqueId(post));
+analysisPosts.forEach(post => addPostWithUniqueId(post));
+
+// Tri par date décroissante (plus récent en premier)
+export const blogPosts: BlogPost[] = finalPosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérifier la présence des articles problématiques
+// Vérification finale
 console.log('\nFinal unique posts count:', blogPosts.length);
+console.log('Breakdown by category:');
+console.log('- Logos:', blogPosts.filter(p => p.category === 'logos').length);
+console.log('- Technical:', blogPosts.filter(p => p.category === 'technical').length);
+console.log('- History:', blogPosts.filter(p => p.category === 'history').length);
+console.log('- Analysis:', blogPosts.filter(p => p.category === 'analysis').length);
+
 console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
   blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
   blogPosts.some(post => post.title.toLowerCase().includes('juventus'))

@@ -111,18 +111,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <div className="text-center pb-2 border-b border-gray-100">
-                  <DialogTitle className="text-2xl font-bold mb-1 text-black">
+                <div className="text-center">
+                  <DialogTitle className="text-2xl font-bold mb-2 text-black">
                     Descriptif du ZIP
                   </DialogTitle>
                   <div className="relative inline-flex items-center justify-center">
-                    <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block mb-6 relative shadow-sm">
+                    <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </span>
-                    <div className="absolute -bottom-2 w-3/4 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
                   </div>
                 </div>
-                <DialogDescription className="text-left space-y-6 pt-4">
+                <DialogDescription className="text-left pt-2">
                   <PackDescription />
                 </DialogDescription>
               </DialogHeader>

@@ -45,6 +45,7 @@ import { irelandLogoPost } from '../ireland-logo';
 import { ghanaLogoPost } from '../ghana-logo';
 import { nationalTeamsPost } from '../national-teams';
 import { albaniaLogoPost } from '../albania-logo';
+import { burkinaFasoLogoPost } from '../burkina-faso-logo';
 
 // Consolidate all national team posts
 export const nationalTeamPosts: BlogPost[] = [
@@ -90,5 +91,6 @@ export const nationalTeamPosts: BlogPost[] = [
   irelandLogoPost,
   ghanaLogoPost,
   nationalTeamsPost,
-  albaniaLogoPost
+  albaniaLogoPost,
+  burkinaFasoLogoPost
 ];

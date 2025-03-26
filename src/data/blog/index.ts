@@ -35,8 +35,10 @@ console.log('Article Juventus:', juventusArticle ? {
   category: juventusArticle.category
 } : 'Non trouvé dans logoPosts');
 
-// Check for duplicate IDs
+// Combiner tous les articles dans un seul tableau
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
+
+// Vérifier les doublons d'ID
 const idCounts = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
@@ -51,36 +53,35 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Au lieu d'utiliser une Map qui écrase les doublons, conservons tous les articles 
-// mais assurons-nous que les IDs sont uniques en ajoutant un suffixe aux doublons
-const uniquePosts: BlogPost[] = [];
-const seenIds = new Set<number>();
+// Préserver tous les articles en utilisant un Map pour garantir l'unicité des IDs
+// Cette méthode conserve le premier article avec un ID donné
+const uniquePostsMap = new Map<number, BlogPost>();
 
-allPosts.forEach(post => {
-  if (!seenIds.has(post.id)) {
-    // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
-    uniquePosts.push(post);
-    seenIds.add(post.id);
+// D'abord, ajouter tous les articles de logos car ils sont prioritaires
+logoPosts.forEach(post => {
+  if (!uniquePostsMap.has(post.id)) {
+    uniquePostsMap.set(post.id, post);
+  }
+});
+
+// Ensuite ajouter les autres catégories, sans écraser les articles existants
+[...technicalPosts, ...historyPosts, ...analysisPosts].forEach(post => {
+  if (!uniquePostsMap.has(post.id)) {
+    uniquePostsMap.set(post.id, post);
   } else {
-    // Si l'ID est un doublon, créez une copie avec un ID modifié
-    // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
-    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
-    const newId = maxId + 1;
-    
-    // Créons une copie de l'article avec le nouvel ID
+    // Si un ID est déjà utilisé, trouver un nouvel ID unique
+    let newId = Math.max(...Array.from(uniquePostsMap.keys())) + 1;
     const newPost = { ...post, id: newId };
-    uniquePosts.push(newPost);
-    seenIds.add(newId);
-    
+    uniquePostsMap.set(newId, newPost);
     console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newId}`);
   }
 });
 
-// Trier par date décroissante comme avant
-export const blogPosts: BlogPost[] = uniquePosts
+// Convertir le Map en tableau et trier par date
+export const blogPosts: BlogPost[] = Array.from(uniquePostsMap.values())
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérifier que les articles problématiques sont bien présents
+// Vérifier la présence des articles problématiques
 console.log('\nFinal unique posts count:', blogPosts.length);
 console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
   blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),

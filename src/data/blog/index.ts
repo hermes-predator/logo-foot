@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
@@ -21,7 +22,6 @@ console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', ')
 // Vérification spécifique pour les articles Chelsea et Juventus
 const chelseaArticle = logoPosts.find(post => post.title.toLowerCase().includes('chelsea'));
 const juventusArticle = logoPosts.find(post => post.title.toLowerCase().includes('juventus'));
-const lemansArticle = logoPosts.find(post => post.title.toLowerCase().includes('le mans'));
 
 console.log('\nArticle Chelsea:', chelseaArticle ? {
   id: chelseaArticle.id,
@@ -33,12 +33,6 @@ console.log('Article Juventus:', juventusArticle ? {
   id: juventusArticle.id,
   title: juventusArticle.title,
   category: juventusArticle.category
-} : 'Non trouvé dans logoPosts');
-
-console.log('Article Le Mans:', lemansArticle ? {
-  id: lemansArticle.id,
-  title: lemansArticle.title,
-  category: lemansArticle.category
 } : 'Non trouvé dans logoPosts');
 
 // Check for duplicate IDs
@@ -62,21 +56,7 @@ Object.entries(idCounts)
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
-// Fonction pour filtrer les posts par catégorie
-const filterPostsByCategory = (posts: BlogPost[], category: string): BlogPost[] => {
-  return posts.filter(post => post.category === category);
-};
-
-// Traiter d'abord les posts de logos (priorité)
-const logoPostsFiltered = filterPostsByCategory(allPosts, 'logos');
-logoPostsFiltered.forEach(post => {
-  uniquePosts.push(post);
-  seenIds.add(post.id);
-});
-
-// Ensuite traiter les autres catégories et résoudre les conflits d'ID
-const nonLogoPosts = allPosts.filter(post => post.category !== 'logos');
-nonLogoPosts.forEach(post => {
+allPosts.forEach(post => {
   if (!seenIds.has(post.id)) {
     // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
     uniquePosts.push(post);
@@ -102,10 +82,9 @@ export const blogPosts: BlogPost[] = uniquePosts
 
 // Vérifier que les articles problématiques sont bien présents
 console.log('\nFinal unique posts count:', blogPosts.length);
-console.log('Les articles Chelsea, Juventus et Le Mans sont-ils dans la liste finale:',
+console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
   blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
-  blogPosts.some(post => post.title.toLowerCase().includes('juventus')),
-  blogPosts.some(post => post.title.toLowerCase().includes('le mans'))
+  blogPosts.some(post => post.title.toLowerCase().includes('juventus'))
 );
 console.log('Final posts IDs:', blogPosts.map(post => post.id).sort((a, b) => a - b).join(', '));
 console.log('************************************************\n');

@@ -3,16 +3,24 @@ import { BlogPost } from '../../../../types/blog';
 
 // Import general content posts
 import { clubHistoryPost } from '../club-history';
-import { footballLogosHistoryPost } from '../football-logos-history';
-import { frenchLeaguesSchemaPost } from '../french-leagues-schema';
 import { frontCloudPost } from '../front-cloud';
-import { logosEquipesFootPost } from '../logos-equipes-foot'; // Add import for the new post
+import { belgianClubsPost } from '../belgian-clubs';
+import { frenchClubsPost as frenchClubsOverviewPost } from '../french-clubs';
+import { germanClubsPost as germanClubsOverviewPost } from '../german-clubs';
+import { portugueseLogosPost } from '../portuguese-clubs';
+import { winamaxLogoPost } from '../winamax-logo';
+import { unibetLogoPost } from '../unibet-logo';
+import { footballLogosHistoryPost } from '../football-logos-history';
 
 // Group all general content posts
 export const generalContentPosts: BlogPost[] = [
   clubHistoryPost,
-  footballLogosHistoryPost,
-  frenchLeaguesSchemaPost,
   frontCloudPost,
-  logosEquipesFootPost  // Add the new post to the array
+  belgianClubsPost,
+  frenchClubsOverviewPost, 
+  germanClubsOverviewPost,
+  portugueseLogosPost,
+  winamaxLogoPost,
+  unibetLogoPost,
+  footballLogosHistoryPost
 ];

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, List } from 'lucide-react';
 
@@ -12,7 +13,8 @@ interface FolderCardProps {
   colorScheme: 'gray' | 'blue' | 'green' | 'yellow' | 'red';
   items: FolderItemProps[];
   collections?: string;
-  isFirst?: boolean; // New prop to determine if it's the first card
+  isFirst?: boolean;
+  decorativeIcon?: React.ReactNode; // New prop for the decorative icon
 }
 
 const FolderCard: React.FC<FolderCardProps> = ({
@@ -21,7 +23,8 @@ const FolderCard: React.FC<FolderCardProps> = ({
   colorScheme = 'gray',
   items,
   collections,
-  isFirst = false, // Default to false
+  isFirst = false,
+  decorativeIcon, // Add the decorative icon prop
 }) => {
   // Map color schemes to tailwind classes
   const colorClasses = {
@@ -32,6 +35,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-gray-600',
       label: 'text-gray-900',
       value: 'text-gray-700',
+      decorative: 'text-gray-400/80',
     },
     blue: {
       bg: 'from-blue-50/80 to-blue-50/30',
@@ -40,6 +44,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-blue-600',
       label: 'text-blue-900',
       value: 'text-blue-700',
+      decorative: 'text-blue-400/80',
     },
     green: {
       bg: 'from-green-50/80 to-green-50/30',
@@ -48,6 +53,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-green-600',
       label: 'text-green-900',
       value: 'text-green-700',
+      decorative: 'text-green-400/80',
     },
     yellow: {
       bg: 'from-yellow-50/80 to-yellow-50/30',
@@ -56,6 +62,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-yellow-600',
       label: 'text-yellow-900',
       value: 'text-yellow-700',
+      decorative: 'text-yellow-400/80',
     },
     red: {
       bg: 'from-red-50/80 to-red-50/30',
@@ -64,6 +71,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       icon: 'text-red-600',
       label: 'text-red-900',
       value: 'text-red-700',
+      decorative: 'text-red-400/80',
     },
   };
 
@@ -73,7 +81,14 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const roundedClass = isFirst ? 'rounded-t-lg' : '';
 
   return (
-    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass}`}>
+    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
+      {/* Decorative icon in top right corner */}
+      {decorativeIcon && (
+        <div className={`absolute top-2 right-2 ${colors.decorative} opacity-80`}>
+          {decorativeIcon}
+        </div>
+      )}
+      
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
         <span className={colors.icon}>{icon}</span>
         {title}

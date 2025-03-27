@@ -1,4 +1,5 @@
-import { BlogPost } from '../../types/blog';
+
+import { BlogPost } from '../../../types/blog';
 import { frenchClubPosts } from './groups/french-clubs';
 import { germanClubPosts } from './groups/german-clubs';
 import { englishClubPosts } from './groups/english-clubs';
@@ -7,8 +8,8 @@ import { italianClubPosts } from './groups/italian-clubs';
 import { otherEuropeanClubPosts } from './groups/other-european-clubs';
 import { nonEuropeanClubPosts } from './groups/non-european-clubs';
 import { generalContentPosts } from './groups/general-content';
-import { nationalTeamsPosts } from './groups/national-teams';
-import { competitionsPosts } from './groups/competitions';
+import { nationalTeamPosts } from './groups/national-teams';
+import { competitionPosts } from './groups/competitions';
 
 // Combine all logo posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -20,9 +21,14 @@ export const logoPosts: BlogPost[] = [
   ...otherEuropeanClubPosts,
   ...nonEuropeanClubPosts,
   ...generalContentPosts,
-  ...nationalTeamsPosts,
-  ...competitionsPosts
+  ...nationalTeamPosts,
+  ...competitionPosts
 ];
+
+// Import these from their respective locations rather than trying to reference them directly
+import { technicalPosts } from '../technical';
+import { historyPosts } from '../history';
+import { analysisPosts } from '../analysis';
 
 // Detailed logging for article counts per category
 console.log('\n************ DETAILED BLOG POST ANALYSIS ************');
@@ -70,8 +76,7 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Au lieu d'utiliser une Map qui écrase les doublons, conservons tous les articles 
-// mais assurons-nous que les IDs sont uniques en ajoutant un suffixe aux doublons
+// Fix the type issue with the '>' operator by explicitly casting types
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
@@ -83,7 +88,7 @@ allPosts.forEach(post => {
   } else {
     // Si l'ID est un doublon, créez une copie avec un ID modifié
     // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
-    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
+    const maxId = Math.max(...Array.from(seenIds).map(id => Number(id)), ...allPosts.map(p => p.id));
     const newId = maxId + 1;
     
     // Créons une copie de l'article avec le nouvel ID

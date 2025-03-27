@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
@@ -50,8 +51,7 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Au lieu d'utiliser une Map qui écrase les doublons, conservons tous les articles 
-// mais assurons-nous que les IDs sont uniques en ajoutant un suffixe aux doublons
+// Fix the type issue with the '>' operator by explicitly casting types
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
@@ -63,7 +63,7 @@ allPosts.forEach(post => {
   } else {
     // Si l'ID est un doublon, créez une copie avec un ID modifié
     // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
-    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
+    const maxId = Math.max(...Array.from(seenIds).map(id => Number(id)), ...allPosts.map(p => p.id));
     const newId = maxId + 1;
     
     // Créons une copie de l'article avec le nouvel ID

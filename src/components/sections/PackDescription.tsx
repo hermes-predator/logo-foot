@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -95,40 +96,40 @@ const PackDescription = () => {
         
         <div className="grid gap-4 md:grid-cols-2">
           
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
+                  <Folder className="h-3.5 w-3.5 text-gray-700 group-hover:text-blue-500 transition-colors duration-300" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
+                  <Globe className="h-3.5 w-3.5 text-gray-700 group-hover:text-blue-500 transition-colors duration-300" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Cloud className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
+                  <Cloud className="h-3.5 w-3.5 text-gray-700 group-hover:text-blue-500 transition-colors duration-300" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Stockage flexible</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
             
-            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
+            <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <RefreshCw className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
+                  <RefreshCw className="h-3.5 w-3.5 text-gray-700 group-hover:text-blue-500 transition-colors duration-300" aria-hidden="true" />
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
@@ -138,50 +139,54 @@ const PackDescription = () => {
         </div>
         
         
-        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
+        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-500 hover:shadow-md mt-6 relative overflow-hidden group animate-pulse" style={{ animationDuration: '4s' }}>
+          
+          {/* Animated background effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-100/0 via-blue-100/30 to-blue-100/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1500 ease-in-out"></div>
           
           <div className="absolute top-0 right-0 z-10">
-            <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
-              <FileArchive className="h-3 w-3 text-white" />
+            <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm group-hover:bg-blue-700 transition-colors duration-300">
+              <FileArchive className="h-3 w-3 text-white transition-transform duration-300 group-hover:rotate-[360deg]" />
               ZIP
             </div>
           </div>
           
-          <div className="text-center mb-5">
-            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique sur le marché ?</h3>
+          <div className="text-center mb-5 relative z-10">
+            <h3 className="text-xl font-bold text-black mb-2 transform transition-transform duration-300 group-hover:scale-105">Prêt à recevoir ce fichier ZIP unique sur le marché ?</h3>
           </div>
           
           <DialogClose asChild>
             <Button 
               onClick={handlePayment}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 active:scale-[0.98] group relative overflow-hidden"
             >
-              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-              Pour seulement 10€
+              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2.5s_infinite]"></span>
+              <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110" />
+              <span className="relative z-10">Pour seulement 10€</span>
               <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
             </Button>
           </DialogClose>
           
-          <p className="text-xs text-center text-blue-600 mt-3">
+          <p className="text-xs text-center text-blue-600 mt-3 relative z-10 group-hover:font-medium transition-all duration-300">
             Paiement sécurisé via SumUp • Téléchargement instantané • 4000+ clients satisfaits
           </p>
           
           
-          <div className="mt-5 pt-4 border-t border-blue-100">
-            <div className="flex flex-col items-center">
+          <div className="mt-5 pt-4 border-t border-blue-100 relative z-10">
+            <div className="flex flex-col items-center transform transition-transform duration-300 group-hover:scale-105">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
                 Paiement sécurisé via
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                   alt="SumUp" 
-                  className="h-4 object-contain" 
+                  className="h-4 object-contain transition-all duration-300 group-hover:brightness-110" 
                 />
               </p>
               <div className="flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
                   alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                  className="h-14 object-contain" 
+                  className="h-14 object-contain transition-all duration-300 group-hover:brightness-110" 
                 />
               </div>
             </div>

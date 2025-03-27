@@ -133,7 +133,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Nous améliorons en continu la qualité du fichier car nous savons que nos clients l'adorent.</p>
+              <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleur en continu.</p>
             </div>
           
         </div>
@@ -194,3 +194,4 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
+

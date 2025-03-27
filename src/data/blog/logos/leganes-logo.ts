@@ -26,7 +26,7 @@ Dans les premières versions du **logo de foot Leganés**, l'emblème était plu
 
 La modernisation la plus significative du **logo Leganés** est intervenue lors de la montée historique du club en première division espagnole en 2016. Cette refonte a permis d'épurer les lignes de l'écusson et de mettre davantage en valeur le crocodile, désormais stylisé et plus agressif, reflétant l'ambition renouvelée du club sur la scène nationale.
 
-Malgré ces évolutions, les concepteurs du **logo Leganés PNG** ont toujours pris soin de respecter l'héritage historique du club, préservant les couleurs emblématiques et les éléments graphiques qui résonnent avec l'identité locale de Leganés.
+Malgré ces évolutions, les concepteurs du **Leganés logo PNG** ont toujours pris soin de respecter l'héritage historique du club, préservant les couleurs emblématiques et les éléments graphiques qui résonnent avec l'identité locale de Leganés.
 
 ## Le **Logo Leganés** à l'Ère Digitale
 

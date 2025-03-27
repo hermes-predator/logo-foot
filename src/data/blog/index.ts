@@ -19,9 +19,10 @@ console.log('History posts IDs:', historyPosts.map(post => post.id).join(', '));
 console.log('\nAnalysis posts:', analysisPosts.length, 'articles');
 console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', '));
 
-// Vérification spécifique pour les articles Chelsea et Juventus
+// Verification for specific articles
 const chelseaArticle = logoPosts.find(post => post.title.toLowerCase().includes('chelsea'));
 const juventusArticle = logoPosts.find(post => post.title.toLowerCase().includes('juventus'));
+const alNassrArticle = logoPosts.find(post => post.title.toLowerCase().includes('al nassr'));
 
 console.log('\nArticle Chelsea:', chelseaArticle ? {
   id: chelseaArticle.id,
@@ -33,6 +34,12 @@ console.log('Article Juventus:', juventusArticle ? {
   id: juventusArticle.id,
   title: juventusArticle.title,
   category: juventusArticle.category
+} : 'Non trouvé dans logoPosts');
+
+console.log('Article Al Nassr:', alNassrArticle ? {
+  id: alNassrArticle.id,
+  title: alNassrArticle.title,
+  category: alNassrArticle.category
 } : 'Non trouvé dans logoPosts');
 
 // Check for duplicate IDs
@@ -51,7 +58,7 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Fix the type issue with the '>' operator by explicitly casting types
+// Fix duplicate IDs by assigning new unique IDs
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
@@ -71,15 +78,18 @@ allPosts.forEach(post => {
   }
 });
 
-// Trier par date décroissante comme avant
+// Sort by descending date
 export const blogPosts: BlogPost[] = uniquePosts
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Vérifier que les articles problématiques sont bien présents
+// Verification of final post collection
 console.log('\nFinal unique posts count:', blogPosts.length);
-console.log('Les articles Chelsea et Juventus sont-ils dans la liste finale:',
-  blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
-  blogPosts.some(post => post.title.toLowerCase().includes('juventus'))
+console.log('Articles check in final list:',
+  {
+    Chelsea: blogPosts.some(post => post.title.toLowerCase().includes('chelsea')),
+    Juventus: blogPosts.some(post => post.title.toLowerCase().includes('juventus')),
+    AlNassr: blogPosts.some(post => post.title.toLowerCase().includes('al nassr'))
+  }
 );
 console.log('Final posts IDs:', blogPosts.map(post => post.id).sort((a, b) => a - b).join(', '));
 console.log('************************************************\n');

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, List } from 'lucide-react';
 
@@ -77,14 +76,13 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   const colors = colorClasses[colorScheme];
   
-  // Add rounded-t-lg class only if it's the first card
   const roundedClass = isFirst ? 'rounded-t-lg' : '';
 
   return (
     <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
-      {/* Decorative icon in top right corner - further adjusted position */}
+      {/* Decorative icon in top right corner - moved further from edges */}
       {decorativeIcon && (
-        <div className={`absolute top-4 right-6 ${colors.decorative} opacity-80`}>
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-80`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { className: 'h-6 w-6' })}
         </div>
       )}

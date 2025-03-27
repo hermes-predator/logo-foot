@@ -82,9 +82,9 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
-      {/* Decorative icon in top right corner - adjusted position */}
+      {/* Decorative icon in top right corner - further adjusted position */}
       {decorativeIcon && (
-        <div className={`absolute top-3 right-4 ${colors.decorative} opacity-80`}>
+        <div className={`absolute top-4 right-6 ${colors.decorative} opacity-80`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { className: 'h-6 w-6' })}
         </div>
       )}

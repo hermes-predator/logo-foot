@@ -14,30 +14,9 @@ const Blog = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [displayablePosts, setDisplayablePosts] = useState(blogPosts);
   
-  // Extended logging to debug post issues
+  // Log the initial blog posts data
   useEffect(() => {
     console.log('Blog page loaded with', blogPosts.length, 'total posts');
-    console.log('Post categories breakdown:', 
-      blogPosts.reduce((acc, post) => {
-        acc[post.category] = (acc[post.category] || 0) + 1;
-        return acc;
-      }, {} as Record<string, number>)
-    );
-    
-    // Log the first and last 5 posts to check date sorting
-    console.log('First 5 posts:', blogPosts.slice(0, 5).map(p => ({
-      id: p.id,
-      title: p.title,
-      date: p.date,
-      category: p.category
-    })));
-    
-    console.log('Last 5 posts:', blogPosts.slice(-5).map(p => ({
-      id: p.id,
-      title: p.title,
-      date: p.date,
-      category: p.category
-    })));
     
     // Check for any posts with missing required fields
     const invalidPosts = blogPosts.filter(post => 

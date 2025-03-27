@@ -6,8 +6,9 @@ import { minimalDesignGuide } from './minimal-design';
 import { motionDesignGuide } from './motion-design';
 import { typographyGuide } from './typography-guide';
 import { soccerGuidePost } from './soccer-guide';
-import { soccerBallGuide } from './soccer-ball-guide';
+import {soccerBallGuide } from './soccer-ball-guide';
 import { howToDrawSoccerBall } from './how-to-draw-soccer-ball';
+import { coloringFootballLogos } from './coloring-football-logos';
 
 export const technicalPosts: BlogPost[] = [
   designPrinciples,
@@ -17,5 +18,6 @@ export const technicalPosts: BlogPost[] = [
   typographyGuide,
   soccerGuidePost,
   soccerBallGuide,
-  howToDrawSoccerBall
+  howToDrawSoccerBall,
+  coloringFootballLogos
 ];

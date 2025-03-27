@@ -1,5 +1,4 @@
-
-import { BlogPost } from '../../types/blog';
+import { BlogPost } from '../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
 import { historyPosts } from './history';
@@ -42,8 +41,15 @@ console.log('Article Al Nassr:', alNassrArticle ? {
   category: alNassrArticle.category
 } : 'Non trouvé dans logoPosts');
 
-// Check for duplicate IDs
+// Collect all posts first - important for accurate ID resolution
 const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
+console.log('\nTotal posts before deduplication:', allPosts.length);
+
+// Log the IDs to help debugging
+const allPostIds = allPosts.map(post => post.id).sort((a, b) => a - b);
+console.log('All post IDs before deduplication:', allPostIds.join(', '));
+
+// Check for duplicate IDs
 const idCounts = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;
@@ -58,25 +64,41 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
+// Keep track of posts with modified IDs for debugging
+const modifiedPosts: {originalId: number, newId: number, title: string}[] = [];
+
 // Fix duplicate IDs by assigning new unique IDs
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
 allPosts.forEach(post => {
+  if (!post.id) {
+    console.error('Post without ID found:', post.title);
+    return; // Skip posts without IDs
+  }
+  
   if (!seenIds.has(post.id)) {
     uniquePosts.push(post);
     seenIds.add(post.id);
   } else {
-    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
+    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id || 0));
     const newId = maxId + 1;
     
     const newPost = { ...post, id: newId };
     uniquePosts.push(newPost);
     seenIds.add(newId);
     
+    modifiedPosts.push({
+      originalId: post.id, 
+      newId: newId, 
+      title: post.title
+    });
+    
     console.log(`Fixed duplicate ID: Article "${post.title}" had ID ${post.id}, now has ID ${newId}`);
   }
 });
+
+console.log('\nPosts with modified IDs:', modifiedPosts);
 
 // Sort by descending date
 export const blogPosts: BlogPost[] = uniquePosts

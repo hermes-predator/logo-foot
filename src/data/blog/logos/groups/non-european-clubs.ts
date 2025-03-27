@@ -1,24 +1,8 @@
+import { BlogPost } from '../../../types/blog';
 
-import { BlogPost } from '../../../../types/blog';
+// Add the Al Nassr post to the non-European clubs array
+import { alNassrLogoPost } from '../al-nassr-logo';
 
-// Import non-European club logo posts
-import { interMiamiLogoPost } from '../inter-miami-logo';
-import { losAngelesGalaxyLogoPost } from '../los-angeles-galaxy-logo';
-import { africanClubsPost } from '../african-clubs';
-import { asianClubsPost } from '../asian-clubs';
-import { brazilianClubsPost } from '../brazilian-clubs';
-import { southAmericanClubsPost } from '../south-american-clubs';
-import { mlsLogoPost } from '../mls-logos';
-import { flamengoLogoPost } from '../flamengo-logo';
-
-// Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
-  flamengoLogoPost,
-  interMiamiLogoPost,
-  losAngelesGalaxyLogoPost,
-  africanClubsPost,
-  asianClubsPost,
-  brazilianClubsPost,
-  southAmericanClubsPost,
-  mlsLogoPost
+  alNassrLogoPost,
 ];

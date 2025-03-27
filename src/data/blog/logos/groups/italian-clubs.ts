@@ -26,6 +26,7 @@ import { sassuoloLogoPost } from '../sassuolo-logo';
 import { speziaLogoPost } from '../spezia-logo';
 import { torinoLogoPost } from '../torino-logo';
 import { udineseLogoPost } from '../udinese-logo';
+import { ancienLogoJuventusPost } from '../ancien-logo-juventus';
 
 // Group all Italian club logo posts
 export const italianClubPosts: BlogPost[] = [
@@ -40,6 +41,7 @@ export const italianClubPosts: BlogPost[] = [
   hellasVeronaLogoPost,
   interMilanLogoPost,
   juventusLogoPost,
+  ancienLogoJuventusPost,
   lazioLogoPost,
   lecceLogoPost,
   milanLogoPost,
@@ -54,3 +56,4 @@ export const italianClubPosts: BlogPost[] = [
   torinoLogoPost,
   udineseLogoPost
 ];
+

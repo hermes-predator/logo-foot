@@ -1,4 +1,5 @@
-import { BlogPost } from '../../../types/blog';
+
+import { BlogPost } from '../../../../types/blog';
 
 // Add the Al Nassr post to the non-European clubs array
 import { alNassrLogoPost } from '../al-nassr-logo';

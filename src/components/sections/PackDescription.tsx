@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -133,7 +132,7 @@ const PackDescription = () => {
                 </div>
                 <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
               </div>
-              <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleur en continu.</p>
+              <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleure en continu.</p>
             </div>
           
         </div>
@@ -194,4 +193,3 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
-

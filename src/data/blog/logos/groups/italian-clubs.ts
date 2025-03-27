@@ -5,6 +5,7 @@ import { BlogPost } from '../../../../types/blog';
 import { asRomaLogoPost } from '../as-roma-logo';
 import { atalantaLogoPost } from '../atalanta-logo';
 import { bolognaLogoPost } from '../bologna-logo';
+import { bresciaLogoPost } from '../brescia-logo';
 import { cagliariLogoPost } from '../cagliari-logo';
 import { empoliLogoPost } from '../empoli-logo';
 import { fiorentinaLogoPost } from '../fiorentina-logo';
@@ -13,6 +14,7 @@ import { genoaLogoPost } from '../genoa-logo';
 import { hellasVeronaLogoPost } from '../hellas-verona-logo';
 import { interMilanLogoPost } from '../inter-milan-logo';
 import { juventusLogoPost } from '../juventus-logo';
+import { ancienLogoJuventusPost } from '../ancien-logo-juventus';
 import { lazioLogoPost } from '../lazio-logo';
 import { lecceLogoPost } from '../lecce-logo';
 import { milanLogoPost } from '../milan-logo';
@@ -26,13 +28,13 @@ import { sassuoloLogoPost } from '../sassuolo-logo';
 import { speziaLogoPost } from '../spezia-logo';
 import { torinoLogoPost } from '../torino-logo';
 import { udineseLogoPost } from '../udinese-logo';
-import { ancienLogoJuventusPost } from '../ancien-logo-juventus';
 
 // Group all Italian club logo posts
 export const italianClubPosts: BlogPost[] = [
   asRomaLogoPost,
   atalantaLogoPost,
   bolognaLogoPost,
+  bresciaLogoPost,
   cagliariLogoPost,
   empoliLogoPost,
   fiorentinaLogoPost,

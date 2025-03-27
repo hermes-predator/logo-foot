@@ -164,7 +164,7 @@ const PackDescription = () => {
           </DialogClose>
           
           <p className="text-xs text-center text-blue-600 mt-3">
-            Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané • 4000+ clients satisfaits
+            Paiement sécurisé via SumUp • Téléchargement instantané • 4000+ clients satisfaits
           </p>
           
           

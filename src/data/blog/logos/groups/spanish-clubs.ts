@@ -9,6 +9,7 @@ import { elcheCfLogoPost } from '../elche-cf-logo';
 import { getafeLogoPost } from '../getafe-logo';
 import { gironaLogoPost } from '../girona-logo';
 import { lasPalmasLogoPost } from '../las-palmas-logo';
+import { leganesLogoPost } from '../leganes-logo';
 import { majorqueLogoPost } from '../majorque-logo';
 import { osasunaLogoPost } from '../osasuna-logo';
 import { rayoVallecanoLogoPost } from '../rayo-vallecano-logo';
@@ -30,6 +31,7 @@ export const spanishClubPosts: BlogPost[] = [
   getafeLogoPost,
   gironaLogoPost,
   lasPalmasLogoPost,
+  leganesLogoPost,
   majorqueLogoPost,
   osasunaLogoPost,
   rayoVallecanoLogoPost,

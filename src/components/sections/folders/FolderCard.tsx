@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, List } from 'lucide-react';
 
@@ -82,10 +81,10 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
-      {/* Decorative icon in top right corner */}
+      {/* Decorative icon in top right corner - updated to be smaller */}
       {decorativeIcon && (
         <div className={`absolute top-2 right-2 ${colors.decorative} opacity-80`}>
-          {decorativeIcon}
+          {React.cloneElement(decorativeIcon as React.ReactElement, { className: 'h-6 w-6' })}
         </div>
       )}
       

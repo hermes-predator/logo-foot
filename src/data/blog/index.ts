@@ -57,16 +57,12 @@ const seenIds = new Set<number>();
 
 allPosts.forEach(post => {
   if (!seenIds.has(post.id)) {
-    // Si l'ID n'a pas encore été vu, ajoutez l'article tel quel
     uniquePosts.push(post);
     seenIds.add(post.id);
   } else {
-    // Si l'ID est un doublon, créez une copie avec un ID modifié
-    // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
     const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
-    
-    // Créons une copie de l'article avec le nouvel ID
     const newId = maxId + 1;
+    
     const newPost = { ...post, id: newId };
     uniquePosts.push(newPost);
     seenIds.add(newId);

@@ -1,7 +1,7 @@
 
-import { BlogPost } from '../../types/blog';
-import { evolutionPost } from './evolution';
-import { premierLeaguePost } from './premier-league';
+import { BlogPost } from '../../../types/blog';
+import { evolutionHistory as evolutionPost } from './evolution';
+import { premierLeagueHistory as premierLeaguePost } from './premier-league';
 import { coupeFranceLogoPost } from './coupe-france-logo';
 import { cristianoRonaldoPost } from './cristiano-ronaldo';
 

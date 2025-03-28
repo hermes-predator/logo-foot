@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -157,7 +156,7 @@ const PackDescription = () => {
             >
               <div className="flex items-center justify-center w-full gap-4">
                 <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span className="text-center font-medium text-xl">Télécharger maintenant</span>
+                <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
                 <ArrowRight className="h-8 w-8 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>

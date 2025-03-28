@@ -121,6 +121,16 @@
   }
 }
 
+/* Add the slow blink animation for the ZIP badge */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
 /* Ensure buttons have proper cursor */
 a, button, .cursor-pointer, [role="button"] {
   cursor: pointer !important;

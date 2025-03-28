@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -98,7 +99,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
+                <span className="text-sm font-extrabold text-gray-800">Couverture totale du football</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
             </div>
@@ -108,7 +109,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
+                <span className="text-sm font-extrabold text-gray-800">Fichier parfaitement organisé</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
@@ -118,7 +119,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Cloud className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Stockage flexible</span>
+                <span className="text-sm font-extrabold text-gray-800">Stockage flexible</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
@@ -128,7 +129,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <RefreshCw className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Mise à jour régulière</span>
+                <span className="text-sm font-extrabold text-gray-800">Mise à jour régulière</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleure en continu.</p>
             </div>
@@ -155,9 +156,9 @@ const PackDescription = () => {
               className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-16"
             >
               <div className="flex items-center justify-center w-full gap-4">
-                <ShoppingCart className="h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span className="text-center font-medium text-lg">Télécharger maintenant pour seulement 10€</span>
-                <ArrowRight className="h-5 w-5 transition-all duration-300 group-hover:translate-x-1" />
+                <ShoppingCart className="h-7 w-7 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                <span className="text-center font-medium text-xl">Télécharger maintenant pour seulement 10€</span>
+                <ArrowRight className="h-6 w-6 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>
           </DialogClose>

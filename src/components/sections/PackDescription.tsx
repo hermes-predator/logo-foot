@@ -99,7 +99,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-extrabold text-gray-800">Couverture totale du football</span>
+                <span className="text-sm font-bold text-gray-800">Couverture totale du football</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
             </div>
@@ -109,7 +109,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-extrabold text-gray-800">Fichier parfaitement organisé</span>
+                <span className="text-sm font-bold text-gray-800">Fichier parfaitement organisé</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
@@ -119,7 +119,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <Cloud className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-extrabold text-gray-800">Stockage flexible</span>
+                <span className="text-sm font-bold text-gray-800">Stockage flexible</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
@@ -129,7 +129,7 @@ const PackDescription = () => {
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
                   <RefreshCw className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-extrabold text-gray-800">Mise à jour régulière</span>
+                <span className="text-sm font-bold text-gray-800">Mise à jour régulière</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleure en continu.</p>
             </div>

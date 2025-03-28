@@ -64,9 +64,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             controlsList="nodownload nofullscreen"
             disablePictureInPicture
           />
-          <div className="absolute top-2 right-3 text-[10px] text-gray-400 opacity-70">
-            © 2024 FootLogos
-          </div>
         </div>
 
         <div className="p-4 pr-14 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">

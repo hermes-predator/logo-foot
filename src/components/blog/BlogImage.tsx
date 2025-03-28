@@ -72,9 +72,6 @@ const BlogImage = ({
           onContextMenu={(e) => e.preventDefault()}
           draggable="false"
         />
-        <div className="absolute bottom-2 right-2 text-[8px] text-white bg-black/30 px-1 py-0.5 rounded">
-          © FootLogos
-        </div>
       </AspectRatio>
       <p className="mt-2 text-sm text-gray-500 text-center italic" itemProp="caption">{alt}</p>
       <meta itemProp="name" content={imageTitle} />

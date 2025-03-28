@@ -73,33 +73,26 @@ export function OptimizedImage({
             <span className="text-sm">Image unavailable</span>
           </div>
         ) : (
-          <>
-            <img
-              ref={imgRef}
-              src={shouldLoad ? imgSrc : '/placeholder.svg'}
-              alt={alt}
-              width={width}
-              height={height}
-              onLoad={handleLoad}
-              onError={handleError}
-              onContextMenu={(e) => e.preventDefault()}
-              draggable="false"
-              className={cn(
-                `w-full h-full transition-opacity duration-300 ${
-                  isLoaded ? 'opacity-100' : 'opacity-0'
-                }`,
-                `object-${objectFit}`,
-                className
-              )}
-              loading={priority ? 'eager' : 'lazy'}
-              decoding={priority ? 'sync' : 'async'}
-            />
-            {isLoaded && (
-              <div className="absolute bottom-1 right-1 text-[8px] text-white opacity-50 z-20 bg-black/20 px-1 rounded">
-                © FootLogos
-              </div>
+          <img
+            ref={imgRef}
+            src={shouldLoad ? imgSrc : '/placeholder.svg'}
+            alt={alt}
+            width={width}
+            height={height}
+            onLoad={handleLoad}
+            onError={handleError}
+            onContextMenu={(e) => e.preventDefault()}
+            draggable="false"
+            className={cn(
+              `w-full h-full transition-opacity duration-300 ${
+                isLoaded ? 'opacity-100' : 'opacity-0'
+              }`,
+              `object-${objectFit}`,
+              className
             )}
-          </>
+            loading={priority ? 'eager' : 'lazy'}
+            decoding={priority ? 'sync' : 'async'}
+          />
         )}
       </AspectRatio>
     </div>

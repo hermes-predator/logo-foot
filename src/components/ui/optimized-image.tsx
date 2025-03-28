@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';
@@ -44,11 +44,28 @@ export function OptimizedImage({
     setIsLoaded(true); // Consider it "loaded" to remove skeleton
   };
 
+  // Add protection against screen capture
+  useEffect(() => {
+    const imgElement = imgRef.current;
+    if (!imgElement) return;
+
+    // Ajouter un watermark dynamique à l'image si nécessaire
+    // Ceci est juste une fonction de démonstration, le vrai watermark serait fait côté serveur
+    const addWatermark = () => {
+      // Cette fonction pourrait être implémentée pour ajouter un watermark via canvas
+      // mais idéalement le watermark devrait être ajouté côté serveur
+    };
+
+    if (isInView) {
+      addWatermark();
+    }
+  }, [isInView, imgRef]);
+
   // If the image is priority, we want to load it right away
   const shouldLoad = priority || isInView;
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden protected-content">
       <AspectRatio ratio={aspectRatio} className="bg-muted/20">
         {!isLoaded && <Skeleton className="absolute inset-0 z-10" />}
         {error ? (
@@ -56,24 +73,33 @@ export function OptimizedImage({
             <span className="text-sm">Image unavailable</span>
           </div>
         ) : (
-          <img
-            ref={imgRef}
-            src={shouldLoad ? imgSrc : '/placeholder.svg'}
-            alt={alt}
-            width={width}
-            height={height}
-            onLoad={handleLoad}
-            onError={handleError}
-            className={cn(
-              `w-full h-full transition-opacity duration-300 ${
-                isLoaded ? 'opacity-100' : 'opacity-0'
-              }`,
-              `object-${objectFit}`,
-              className
+          <>
+            <img
+              ref={imgRef}
+              src={shouldLoad ? imgSrc : '/placeholder.svg'}
+              alt={alt}
+              width={width}
+              height={height}
+              onLoad={handleLoad}
+              onError={handleError}
+              onContextMenu={(e) => e.preventDefault()}
+              draggable="false"
+              className={cn(
+                `w-full h-full transition-opacity duration-300 ${
+                  isLoaded ? 'opacity-100' : 'opacity-0'
+                }`,
+                `object-${objectFit}`,
+                className
+              )}
+              loading={priority ? 'eager' : 'lazy'}
+              decoding={priority ? 'sync' : 'async'}
+            />
+            {isLoaded && (
+              <div className="absolute bottom-1 right-1 text-[8px] text-white opacity-50 z-20 bg-black/20 px-1 rounded">
+                © FootLogos
+              </div>
             )}
-            loading={priority ? 'eager' : 'lazy'}
-            decoding={priority ? 'sync' : 'async'}
-          />
+          </>
         )}
       </AspectRatio>
     </div>

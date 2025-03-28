@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
 
@@ -23,6 +23,7 @@ const BlogImage = ({
   title
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
+  const containerRef = useRef<HTMLDivElement>(null);
   
   // Ensure we have a proper title attribute for SEO
   const imageTitle = title || alt;
@@ -30,8 +31,33 @@ const BlogImage = ({
   // Extract the file name from the src for structured data
   const fileName = src.split('/').pop() || 'image';
 
+  // Protection supplémentaire contre le téléchargement
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const container = containerRef.current;
+
+    const handleDrag = (e: DragEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    container.addEventListener('dragstart', handleDrag as any);
+    container.addEventListener('contextmenu', handleContextMenu);
+
+    return () => {
+      container.removeEventListener('dragstart', handleDrag as any);
+      container.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+
   return (
-    <div className="my-8" itemScope itemType="https://schema.org/ImageObject">
+    <div className="my-8 protected-content" itemScope itemType="https://schema.org/ImageObject" ref={containerRef}>
       <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
@@ -43,7 +69,12 @@ const BlogImage = ({
           className={`w-full h-full object-cover ${isDefault ? 'opacity-90' : ''} ${className}`}
           loading="lazy"
           itemProp="contentUrl"
+          onContextMenu={(e) => e.preventDefault()}
+          draggable="false"
         />
+        <div className="absolute bottom-2 right-2 text-[8px] text-white bg-black/30 px-1 py-0.5 rounded">
+          © FootLogos
+        </div>
       </AspectRatio>
       <p className="mt-2 text-sm text-gray-500 text-center italic" itemProp="caption">{alt}</p>
       <meta itemProp="name" content={imageTitle} />

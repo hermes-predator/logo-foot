@@ -225,10 +225,10 @@ const PaymentSection = () => {
               onClick={handlePayment}
               disabled={isProcessing}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
-              aria-label="Télécharger instantanément pour 10,00€"
+              aria-label="Payer 10,00€ avec paiement sécurisé"
             >
-              <Download className="mr-2 h-8 w-8 transition-all duration-300 group-hover:translate-y-1" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Télécharger pour 10,00€"}
+              <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              {isProcessing ? "Redirection..." : "Payer 10,00€"}
             </Button>
           </div>
           

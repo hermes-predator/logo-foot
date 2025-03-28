@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - MODIFIED: Updated button text and design */}
+        {/* CTA buttons with enhanced interactions - MODIFIED to make buttons slightly larger */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -134,8 +134,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             onClick={onScrollToPayment}
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
-            <Download className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
-            Télécharger
+            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
+            Voir le prix
           </Button>
         </div>
       </div>

@@ -6,13 +6,10 @@ import { augsburgLogoPost } from '../augsburg-logo';
 import { bayernMunichLogoPost } from '../bayern-munich-logo';
 import { bochumLogoPost } from '../bochum-logo';
 import { borussiaMonchengladbachLogoPost } from '../borussia-mgladbach-logo';
-import { bundesliga2LogoPost } from '../bundesliga-2-brand';
-import { bundesligaLogoPost } from '../bundesliga-brand';
 import { cologneLogoPost } from '../cologne-logo';
 import { dortmundLogoPost } from '../dortmund-logo';
 import { eintrachtFrankfurtLogoPost } from '../eintracht-frankfurt-logo';
 import { fribourgLogoPost } from '../fribourg-logo';
-import { germanClubsPost } from '../german-clubs';
 import { hambourgSvLogoPost } from '../hambourg-sv-logo';
 import { heidenheimLogoPost } from '../heidenheim-logo';
 import { hoffenheimLogoPost } from '../hoffenheim-logo';
@@ -30,13 +27,10 @@ export const germanClubPosts: BlogPost[] = [
   bayernMunichLogoPost,
   bochumLogoPost,
   borussiaMonchengladbachLogoPost,
-  bundesliga2LogoPost,
-  bundesligaLogoPost,
   cologneLogoPost,
   dortmundLogoPost,
   eintrachtFrankfurtLogoPost,
   fribourgLogoPost,
-  germanClubsPost,
   hambourgSvLogoPost,
   heidenheimLogoPost,
   hoffenheimLogoPost,

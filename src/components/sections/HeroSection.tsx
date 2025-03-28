@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -111,9 +112,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <div className="text-center">
-                  <DialogTitle className="text-2xl font-bold mb-2 text-black">
-                    Descriptif du ZIP
-                  </DialogTitle>
+                  <div className="flex items-center justify-center gap-3 mb-2">
+                    <DialogTitle className="text-2xl font-bold text-black">
+                      Descriptif du ZIP
+                    </DialogTitle>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button 
+                          onClick={() => {
+                            const returnUrl = `${window.location.origin}/payment-success`;
+                            window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
+                          }}
+                          variant="outline" 
+                          size="sm" 
+                          className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
+                        >
+                          <Download className="h-3.5 w-3.5" />
+                          <span className="text-xs font-medium">Télécharger (10€)</span>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="text-xs">Accès immédiat après paiement</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
                   <div className="relative inline-flex items-center justify-center">
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
                       ⦗FRONT-CLOUD⦘~ Football.zip

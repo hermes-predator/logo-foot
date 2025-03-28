@@ -12,6 +12,7 @@ import { leverkusenLogoPost } from '../leverkusen-logo';
 import { rbLeipzigLogoPost } from '../rb-leipzig-logo';
 import { stuttgartLogoPost } from '../stuttgart-logo';
 import { unionBerlinLogoPost } from '../union-berlin-logo';
+import { wolfsburgLogoPost } from '../wolfsburg-logo';
 
 // Group all German club logo posts
 export const germanClubPosts: BlogPost[] = [
@@ -24,5 +25,6 @@ export const germanClubPosts: BlogPost[] = [
   leverkusenLogoPost,
   rbLeipzigLogoPost,
   stuttgartLogoPost,
-  unionBerlinLogoPost
+  unionBerlinLogoPost,
+  wolfsburgLogoPost
 ];

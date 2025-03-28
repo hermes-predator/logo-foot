@@ -152,22 +152,8 @@ const PackDescription = () => {
             </div>
           </div>
           
-          <div className="text-center mb-5 flex items-center justify-center gap-2">
+          <div className="text-center mb-5">
             <h3 className="text-xl font-bold text-black mb-0">Prêt à recevoir ce fichier ZIP unique ?</h3>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button 
-                  onClick={handlePayment}
-                  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1 bg-blue-50 px-2 py-1 rounded-full text-xs font-medium"
-                >
-                  <Download className="h-3 w-3" />
-                  Télécharger
-                </button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p className="text-xs">Accès immédiat après paiement</p>
-              </TooltipContent>
-            </Tooltip>
           </div>
           
           <DialogClose asChild>

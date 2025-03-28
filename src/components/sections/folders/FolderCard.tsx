@@ -95,21 +95,23 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
-      {/* Decorative icon in top right corner - with improved animation */}
+      {/* Decorative icon in top right corner - subtle animation without affecting text */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-all duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-3`}>
-          {React.cloneElement(decorativeIcon as React.ReactElement, { className: 'h-7 w-7' })}
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-all duration-300 group-hover:opacity-100`}>
+          {React.cloneElement(decorativeIcon as React.ReactElement, { 
+            className: 'h-7 w-7 transition-all duration-300 group-hover:filter group-hover:drop-shadow-md' 
+          })}
         </div>
       )}
       
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
-        <span className={`${colors.icon} transition-transform duration-300 group-hover:scale-110`}>{icon}</span>
-        <span className="transition-all duration-300 group-hover:translate-x-0.5">{title}</span>
+        <span className={`${colors.icon} transition-transform duration-300 group-hover:scale-110 group-hover:filter group-hover:drop-shadow-sm`}>{icon}</span>
+        <span>{title}</span>
       </h3>
       
       <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow-md`}>
         {items.map((item, index) => (
-          <div key={index} className="transition-all duration-300 group-hover:translate-y-[-2px]">
+          <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
             <p className={`${colors.value} text-xs`}>{item.value}</p>
           </div>
@@ -117,7 +119,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       </div>
       
       {collections && (
-        <div className="mt-1 transition-all duration-300 group-hover:translate-y-[-2px]">
+        <div className="mt-1">
           <p className={`font-semibold ${colors.label} mb-1 flex items-center gap-3`}>
             <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :

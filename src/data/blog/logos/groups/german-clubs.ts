@@ -16,6 +16,7 @@ import { hoffenheimLogoPost } from '../hoffenheim-logo';
 import { leverkusenLogoPost } from '../leverkusen-logo';
 import { paderbornLogoPost } from '../paderborn-logo';
 import { rbLeipzigLogoPost } from '../rb-leipzig-logo';
+import { sanktPauliLogoPost } from '../sankt-pauli-logo';
 import { schalke04LogoPost } from '../schalke-04-logo';
 import { stuttgartLogoPost } from '../stuttgart-logo';
 import { unionBerlinLogoPost } from '../union-berlin-logo';
@@ -37,6 +38,7 @@ export const germanClubPosts: BlogPost[] = [
   leverkusenLogoPost,
   paderbornLogoPost,
   rbLeipzigLogoPost,
+  sanktPauliLogoPost,
   schalke04LogoPost,
   stuttgartLogoPost,
   unionBerlinLogoPost,

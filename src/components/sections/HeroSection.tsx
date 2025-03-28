@@ -15,6 +15,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
+  TooltipProvider,
 } from "@/components/ui/tooltip";
 
 interface HeroSectionProps {
@@ -124,25 +125,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 </div>
                 
                 <div className="flex justify-end mb-2">
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button 
-                        onClick={() => {
-                          const returnUrl = `${window.location.origin}/payment-success`;
-                          window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
-                        }}
-                        variant="outline" 
-                        size="sm" 
-                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
-                      >
-                        <Download className="h-3.5 w-3.5" />
-                        <span className="text-xs font-medium">Télécharger (10€)</span>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p className="text-xs">Accès immédiat après paiement</p>
-                    </TooltipContent>
-                  </Tooltip>
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button 
+                          onClick={() => {
+                            const returnUrl = `${window.location.origin}/payment-success`;
+                            window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
+                          }}
+                          variant="outline" 
+                          size="sm" 
+                          className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
+                        >
+                          <Download className="h-3.5 w-3.5" />
+                          <span className="text-xs font-medium">Télécharger (10€)</span>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
+                        <p className="text-xs">Accès immédiat après paiement</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 
                 <DialogDescription className="text-left pt-0 mt-0">

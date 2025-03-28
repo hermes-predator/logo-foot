@@ -101,7 +101,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   
   const roundedTopClass = isFirst ? 'rounded-t-lg' : '';
   const roundedBottomClass = isLast ? 'rounded-b-lg' : '';
-  const borderClass = isLast ? '' : 'border-b-4 border-gray-100';
+  const borderClass = isLast ? '' : 'border-b-4 border-gray-200';
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>

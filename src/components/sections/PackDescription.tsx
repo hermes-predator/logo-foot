@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -86,12 +85,8 @@ const PackDescription = () => {
           decorativeIcon={<DollarSign />}
         />
       </div>
-        
-      <Separator className="my-4 bg-gray-200" />
-
-      
     
-    <div className="space-y-4 pt-6 mt-6">
+      <div className="space-y-4 pt-6 mt-6">
         <h4 className="text-sm font-extrabold text-gray-800 mb-4">
           AVANTAGES DU FICHIER
         </h4>

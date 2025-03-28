@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, List } from 'lucide-react';
 
@@ -34,11 +35,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
       border: 'border-gray-200/80',
       title: 'text-gray-900',
       icon: 'text-gray-700',
-      iconHover: 'text-gray-900',
+      iconHover: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      decorativeHover: 'text-gray-700',
+      decorativeHover: 'text-gray-600',
       itemBg: 'bg-white/90',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -47,11 +48,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
       border: 'border-gray-300/70',
       title: 'text-gray-900',
       icon: 'text-gray-700',
-      iconHover: 'text-gray-900',
+      iconHover: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      decorativeHover: 'text-gray-700',
+      decorativeHover: 'text-gray-600',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -60,11 +61,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
       border: 'border-gray-200/70',
       title: 'text-gray-900',
       icon: 'text-gray-700',
-      iconHover: 'text-gray-900',
+      iconHover: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      decorativeHover: 'text-gray-700',
+      decorativeHover: 'text-gray-600',
       itemBg: 'bg-white/90',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -73,11 +74,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
       border: 'border-gray-300/60',
       title: 'text-gray-900',
       icon: 'text-gray-700',
-      iconHover: 'text-gray-900',
+      iconHover: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      decorativeHover: 'text-gray-700',
+      decorativeHover: 'text-gray-600',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -86,11 +87,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
       border: 'border-gray-300/50',
       title: 'text-gray-900',
       icon: 'text-gray-700',
-      iconHover: 'text-gray-900',
+      iconHover: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      decorativeHover: 'text-gray-700',
+      decorativeHover: 'text-gray-600',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },

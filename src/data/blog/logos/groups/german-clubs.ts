@@ -6,6 +6,7 @@ import { bayernMunichLogoPost } from '../bayern-munich-logo';
 import { bochumLogoPost } from '../bochum-logo';
 import { dortmundLogoPost } from '../dortmund-logo';
 import { eintrachtFrankfurtLogoPost } from '../eintracht-frankfurt-logo';
+import { fribourgLogoPost } from '../fribourg-logo';
 import { leverkusenLogoPost } from '../leverkusen-logo';
 import { rbLeipzigLogoPost } from '../rb-leipzig-logo';
 import { stuttgartLogoPost } from '../stuttgart-logo';
@@ -17,6 +18,7 @@ export const germanClubPosts: BlogPost[] = [
   bochumLogoPost,
   dortmundLogoPost,
   eintrachtFrankfurtLogoPost,
+  fribourgLogoPost,
   leverkusenLogoPost,
   rbLeipzigLogoPost,
   stuttgartLogoPost,

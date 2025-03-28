@@ -2,6 +2,7 @@
 import { BlogPost } from '../../../../types/blog';
 
 // Import German club logo posts
+import { augsburgLogoPost } from '../augsburg-logo';
 import { bayernMunichLogoPost } from '../bayern-munich-logo';
 import { bochumLogoPost } from '../bochum-logo';
 import { dortmundLogoPost } from '../dortmund-logo';
@@ -16,6 +17,7 @@ import { wolfsburgLogoPost } from '../wolfsburg-logo';
 
 // Group all German club logo posts
 export const germanClubPosts: BlogPost[] = [
+  augsburgLogoPost,
   bayernMunichLogoPost,
   bochumLogoPost,
   dortmundLogoPost,

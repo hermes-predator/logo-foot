@@ -22,7 +22,7 @@ const PackDescription = () => {
 
   return (
     <div className="space-y-0.5 mt-3">
-      
+      <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
@@ -34,7 +34,7 @@ const PackDescription = () => {
           ]}
           collections="Default (20) • Albanie (70) • Allemagne (450) • Angleterre (450) • Arabie Saoudite (80) • Argentine (200) • Arménie (40) • Australie (80) • Autriche (120) • Azerbaïdjan (50) • Belgique (160) • Biélorussie (100) • Bosnie-Herzégovine (80) • Brésil (300) • Bulgarie (100) • Chypre (40) • Croatie (120) • Danemark (150) • Écosse (120) • Espagne (450) • Estonie (40) • États-Unis (300) • Finlande (100) • France (450) • Géorgie (40) • Gibraltar (12) • Grèce (150) • Hongrie (120) • Iles Féroés (20) • Irlande (100) • Irlande du Nord (60) • Islande (80) • Israël (80) • Italie (400) • Kazakhstan (40) • Kosovo (40) • Lettonie (40) • Lituanie (40) • Luxembourg (80) • Macédoine du Nord (40) • Malte (60) • Moldavie (50) • Monténégro (40) • Norvège (150) • Pays-Bas (300) • Pays de Galles (80) • Pologne (150) • Portugal (200) • Qatar (20) • République Tchèque (150) • Roumanie (150) • Russie (150) • Serbie (120) • Slovaquie (120) • Slovénie (80) • Suède (150) • Suisse (150) • Turquie (200) • Ukraine (100) • Sélections nationales de football (240)"
           isFirst={true}
-          decorativeIcon={<Shield />} // Shield icon for club logos
+          decorativeIcon={<Shield />}
         />
         
         <FolderCard
@@ -46,7 +46,7 @@ const PackDescription = () => {
             { label: "Sous-groupes", value: "1 collection" },
             { label: "Quantité totale", value: "100 ressources" }
           ]}
-          decorativeIcon={<Trophy />} // Trophy icon for competitions
+          decorativeIcon={<Trophy />}
         />
 
         <FolderCard
@@ -58,7 +58,7 @@ const PackDescription = () => {
             { label: "Sous-groupes", value: "1 collection" },
             { label: "Quantité totale", value: "270 ressources" }
           ]}
-          decorativeIcon={<Flag />} // Flag icon for country flags
+          decorativeIcon={<Flag />}
         />
 
         <FolderCard
@@ -70,7 +70,7 @@ const PackDescription = () => {
             { label: "Sous-groupes", value: "3 collections" },
             { label: "Quantité totale", value: "220 ressources" }
           ]}
-          decorativeIcon={<Image />} // Image icon for covers
+          decorativeIcon={<Image />}
         />
 
         <FolderCard
@@ -82,8 +82,10 @@ const PackDescription = () => {
             { label: "Sous-groupes", value: "1 collection" },
             { label: "Quantité totale", value: "50 ressources" }
           ]}
-          decorativeIcon={<DollarSign />} // Money icon for bookmakers
+          isLast={true}
+          decorativeIcon={<DollarSign />}
         />
+      </div>
         
       <Separator className="my-4 bg-gray-200" />
 

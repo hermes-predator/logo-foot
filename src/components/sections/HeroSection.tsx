@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -39,6 +39,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
       <div className="absolute bottom-20 right-1/4 text-purple-400/20 animate-pulse" style={{ animationDuration: '7s', animationDelay: '1s' }}>
         <Sparkles className="h-10 w-10" />
+      </div>
+      
+      {/* Decorative heart icon */}
+      <div className="absolute top-40 right-1/3 text-pink-400/30 animate-pulse" style={{ animationDuration: '6s' }}>
+        <Heart className="h-12 w-12" fill="#FFDEE2" />
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-6">

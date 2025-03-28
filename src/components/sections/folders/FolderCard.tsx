@@ -26,52 +26,57 @@ const FolderCard: React.FC<FolderCardProps> = ({
   isFirst = false,
   decorativeIcon,
 }) => {
-  // Map color schemes to tailwind classes - Harmonized to grayscale variations
+  // Map color schemes to tailwind classes - Improved grayscale variations with better contrast
   const colorClasses = {
     gray: {
       bg: 'from-gray-50/90 to-gray-50/50',
       border: 'border-gray-200/70',
       title: 'text-gray-800',
-      icon: 'text-gray-600',
+      icon: 'text-gray-700',
       label: 'text-gray-800',
-      value: 'text-gray-700',
+      value: 'text-gray-600',
       decorative: 'text-gray-400',
+      itemBg: 'bg-white/80'
     },
     blue: {
-      bg: 'from-gray-50/85 to-gray-50/45',
-      border: 'border-gray-200/65',
-      title: 'text-gray-800',
-      icon: 'text-gray-600',
+      bg: 'from-gray-100/90 to-gray-50/60',
+      border: 'border-gray-300/60',
+      title: 'text-gray-900',
+      icon: 'text-gray-700',
       label: 'text-gray-800',
-      value: 'text-gray-700',
-      decorative: 'text-gray-400',
+      value: 'text-gray-600',
+      decorative: 'text-gray-500',
+      itemBg: 'bg-white/90'
     },
     green: {
-      bg: 'from-gray-50/80 to-gray-50/40',
-      border: 'border-gray-200/60',
-      title: 'text-gray-800',
-      icon: 'text-gray-600',
+      bg: 'from-gray-50/95 to-gray-50/70',
+      border: 'border-gray-200/80',
+      title: 'text-gray-900',
+      icon: 'text-gray-800',
       label: 'text-gray-800',
-      value: 'text-gray-700',
+      value: 'text-gray-600',
       decorative: 'text-gray-400',
+      itemBg: 'bg-white/90'
     },
     yellow: {
-      bg: 'from-gray-50/75 to-gray-50/35',
-      border: 'border-gray-200/55',
-      title: 'text-gray-800',
-      icon: 'text-gray-600',
+      bg: 'from-gray-100/80 to-gray-50/50',
+      border: 'border-gray-200/70',
+      title: 'text-gray-900',
+      icon: 'text-gray-700',
       label: 'text-gray-800',
-      value: 'text-gray-700',
-      decorative: 'text-gray-400',
+      value: 'text-gray-600',
+      decorative: 'text-gray-500',
+      itemBg: 'bg-white/90'
     },
     red: {
-      bg: 'from-gray-50/70 to-gray-50/30',
-      border: 'border-gray-200/50',
-      title: 'text-gray-800',
-      icon: 'text-gray-600',
+      bg: 'from-gray-100/70 to-gray-50/40',
+      border: 'border-gray-300/50',
+      title: 'text-gray-900',
+      icon: 'text-gray-700',
       label: 'text-gray-800',
-      value: 'text-gray-700',
-      decorative: 'text-gray-400',
+      value: 'text-gray-600',
+      decorative: 'text-gray-500',
+      itemBg: 'bg-white/90'
     },
   };
 
@@ -92,7 +97,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         <span className={colors.icon}>{icon}</span>
         {title}
       </h3>
-      <div className="grid grid-cols-2 gap-3 bg-white/60 rounded-lg p-3">
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -106,7 +111,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
             <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed ${colors.value} bg-white/60 rounded-lg p-3`}>
+          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3 shadow-sm`}>
             {collections}
           </p>
         </div>

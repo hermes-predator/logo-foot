@@ -21,7 +21,7 @@ const PackDescription = () => {
   };
 
   return (
-    <div className="space-y-2 mt-6">
+    <div className="space-y-3 mt-6">
       
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
@@ -85,11 +85,11 @@ const PackDescription = () => {
           decorativeIcon={<DollarSign />} // Money icon for bookmakers
         />
         
-      <Separator className="my-4 bg-gray-100/50" />
+      <Separator className="my-6 bg-gray-200" />
 
       
     
-    <div className="space-y-4 pt-10 mt-6">
+    <div className="space-y-4 pt-6 mt-6">
         <h4 className="text-sm font-extrabold text-gray-800 mb-4">
           AVANTAGES DU FICHIER
         </h4>

@@ -34,10 +34,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
       bg: 'from-gray-50/95 to-gray-50/70',
       border: 'border-gray-200/80',
       title: 'text-gray-900',
-      icon: 'text-gray-800',
+      icon: 'text-gray-700',
+      iconHover: 'text-gray-900',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
+      decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/90',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -45,10 +47,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
       bg: 'from-gray-100/90 to-gray-50/60',
       border: 'border-gray-300/70',
       title: 'text-gray-900',
-      icon: 'text-gray-800',
+      icon: 'text-gray-700',
+      iconHover: 'text-gray-900',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
+      decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -56,10 +60,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
       bg: 'from-gray-50/90 to-gray-50/60',
       border: 'border-gray-200/70',
       title: 'text-gray-900',
-      icon: 'text-gray-800',
+      icon: 'text-gray-700',
+      iconHover: 'text-gray-900',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
+      decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/90',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -67,10 +73,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
       bg: 'from-gray-100/85 to-gray-50/50',
       border: 'border-gray-300/60',
       title: 'text-gray-900',
-      icon: 'text-gray-800',
+      icon: 'text-gray-700',
+      iconHover: 'text-gray-900',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
+      decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -78,10 +86,12 @@ const FolderCard: React.FC<FolderCardProps> = ({
       bg: 'from-gray-100/80 to-gray-50/40',
       border: 'border-gray-300/50',
       title: 'text-gray-900',
-      icon: 'text-gray-800',
+      icon: 'text-gray-700',
+      iconHover: 'text-gray-900',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
+      decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
       hoverBg: 'hover:bg-gray-100/80'
     },
@@ -95,21 +105,21 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
-      {/* Decorative icon in top right corner - very subtle animation without affecting text */}
+      {/* Decorative icon in top right corner - color transition on hover */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-all duration-300 group-hover:opacity-90`}>
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { 
-            className: 'h-7 w-7 transition-all duration-300 group-hover:filter group-hover:drop-shadow-sm' 
+            className: 'h-7 w-7 transition-colors duration-300' 
           })}
         </div>
       )}
       
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
-        <span className={`${colors.icon}`}>{icon}</span>
+        <span className={`${colors.icon} transition-colors duration-300 group-hover:${colors.iconHover}`}>{icon}</span>
         <span>{title}</span>
       </h3>
       
-      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow`}>
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -121,10 +131,10 @@ const FolderCard: React.FC<FolderCardProps> = ({
       {collections && (
         <div className="mt-1">
           <p className={`font-semibold ${colors.label} mb-1 flex items-center gap-3`}>
-            <List className={`h-4 w-4 ${colors.icon}`} />
+            <List className={`h-4 w-4 ${colors.icon} transition-colors duration-300 group-hover:${colors.iconHover}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow`}>
+          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3`}>
             {collections}
           </p>
         </div>

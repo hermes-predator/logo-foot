@@ -22,7 +22,7 @@ const PackDescription = () => {
 
   return (
     <div className="space-y-0.5 mt-3">
-      <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
+      <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm divide-y divide-gray-200/70">
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"

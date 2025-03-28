@@ -26,57 +26,57 @@ const FolderCard: React.FC<FolderCardProps> = ({
   isFirst = false,
   decorativeIcon,
 }) => {
-  // Map color schemes to tailwind classes - Improved grayscale variations with better contrast
+  // Map color schemes to tailwind classes - Enhanced grayscale for visual distinction
   const colorClasses = {
     gray: {
-      bg: 'from-gray-50/90 to-gray-50/50',
-      border: 'border-gray-200/70',
-      title: 'text-gray-800',
-      icon: 'text-gray-700',
-      label: 'text-gray-800',
-      value: 'text-gray-600',
-      decorative: 'text-gray-400',
-      itemBg: 'bg-white/80'
-    },
-    blue: {
-      bg: 'from-gray-100/90 to-gray-50/60',
-      border: 'border-gray-300/60',
-      title: 'text-gray-900',
-      icon: 'text-gray-700',
-      label: 'text-gray-800',
-      value: 'text-gray-600',
-      decorative: 'text-gray-500',
-      itemBg: 'bg-white/90'
-    },
-    green: {
       bg: 'from-gray-50/95 to-gray-50/70',
       border: 'border-gray-200/80',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
-      decorative: 'text-gray-400',
+      decorative: 'text-gray-500',
+      itemBg: 'bg-white/90'
+    },
+    blue: {
+      bg: 'from-gray-100/90 to-gray-50/60',
+      border: 'border-gray-300/70',
+      title: 'text-gray-900',
+      icon: 'text-gray-800',
+      label: 'text-gray-800',
+      value: 'text-gray-600',
+      decorative: 'text-gray-500',
+      itemBg: 'bg-white/95'
+    },
+    green: {
+      bg: 'from-gray-50/90 to-gray-50/60',
+      border: 'border-gray-200/70',
+      title: 'text-gray-900',
+      icon: 'text-gray-800',
+      label: 'text-gray-800',
+      value: 'text-gray-600',
+      decorative: 'text-gray-500',
       itemBg: 'bg-white/90'
     },
     yellow: {
-      bg: 'from-gray-100/80 to-gray-50/50',
-      border: 'border-gray-200/70',
+      bg: 'from-gray-100/85 to-gray-50/50',
+      border: 'border-gray-300/60',
       title: 'text-gray-900',
-      icon: 'text-gray-700',
+      icon: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/90'
+      itemBg: 'bg-white/95'
     },
     red: {
-      bg: 'from-gray-100/70 to-gray-50/40',
+      bg: 'from-gray-100/80 to-gray-50/40',
       border: 'border-gray-300/50',
       title: 'text-gray-900',
-      icon: 'text-gray-700',
+      icon: 'text-gray-800',
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/90'
+      itemBg: 'bg-white/95'
     },
   };
 

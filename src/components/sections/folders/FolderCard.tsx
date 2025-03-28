@@ -41,8 +41,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       decorative: 'text-gray-500',
       decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/90',
-      hoverBg: 'hover:bg-gray-100/80',
-      separator: 'bg-gray-300/90'
+      hoverBg: 'hover:bg-gray-100/80'
     },
     blue: {
       bg: 'from-gray-100/90 to-gray-50/60',
@@ -55,8 +54,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       decorative: 'text-gray-500',
       decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
-      hoverBg: 'hover:bg-gray-100/80',
-      separator: 'bg-gray-300/90'
+      hoverBg: 'hover:bg-gray-100/80'
     },
     green: {
       bg: 'from-gray-50/90 to-gray-50/60',
@@ -69,8 +67,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       decorative: 'text-gray-500',
       decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/90',
-      hoverBg: 'hover:bg-gray-100/80',
-      separator: 'bg-gray-300/90'
+      hoverBg: 'hover:bg-gray-100/80'
     },
     yellow: {
       bg: 'from-gray-100/85 to-gray-50/50',
@@ -83,8 +80,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       decorative: 'text-gray-500',
       decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
-      hoverBg: 'hover:bg-gray-100/80',
-      separator: 'bg-gray-300/90'
+      hoverBg: 'hover:bg-gray-100/80'
     },
     red: {
       bg: 'from-gray-100/80 to-gray-50/40',
@@ -97,8 +93,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       decorative: 'text-gray-500',
       decorativeHover: 'text-gray-700',
       itemBg: 'bg-white/95',
-      hoverBg: 'hover:bg-gray-100/80',
-      separator: 'bg-gray-300/90'
+      hoverBg: 'hover:bg-gray-100/80'
     },
   };
 
@@ -106,13 +101,13 @@ const FolderCard: React.FC<FolderCardProps> = ({
   
   const roundedTopClass = isFirst ? 'rounded-t-lg' : '';
   const roundedBottomClass = isLast ? 'rounded-b-lg' : '';
-  const borderBottomClass = isLast ? '' : 'after:block after:h-1 after:w-full after:absolute after:bottom-0 after:left-0 after:translate-y-full';
+  const borderClass = isLast ? 'border-b' : 'border-b border-gray-200/50';
 
   return (
-    <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group ${borderBottomClass} after:${colors.separator}`}>
+    <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
       {/* Decorative icon in top right corner - color transition on hover */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { 
             className: 'h-7 w-7 transition-colors duration-300' 
           })}

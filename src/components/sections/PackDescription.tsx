@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -152,7 +153,7 @@ const PackDescription = () => {
           <DialogClose asChild>
             <Button 
               onClick={handlePayment}
-              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white py-6 rounded-lg shadow-md border-b-[12px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-3 active:scale-[0.98] group"
+              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white py-6 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group"
             >
               <div className="flex items-center justify-center w-full gap-3">
                 <ShoppingCart className="h-5 w-5 transition-all duration-300 group-hover:rotate-[-8deg]" />

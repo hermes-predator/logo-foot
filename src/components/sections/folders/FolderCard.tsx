@@ -30,7 +30,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const colorClasses = {
     gray: {
       bg: 'from-gray-50/95 to-gray-50/70',
-      border: 'border-gray-200/80',
+      border: 'border-b border-gray-200/60',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
@@ -40,7 +40,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
     },
     blue: {
       bg: 'from-gray-100/90 to-gray-50/60',
-      border: 'border-gray-300/70',
+      border: 'border-b border-gray-300/70',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
@@ -50,7 +50,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
     },
     green: {
       bg: 'from-gray-50/90 to-gray-50/60',
-      border: 'border-gray-200/70',
+      border: 'border-b border-gray-200/70',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
@@ -60,7 +60,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
     },
     yellow: {
       bg: 'from-gray-100/85 to-gray-50/50',
-      border: 'border-gray-300/60',
+      border: 'border-b border-gray-300/60',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
@@ -70,7 +70,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
     },
     red: {
       bg: 'from-gray-100/80 to-gray-50/40',
-      border: 'border-gray-300/50',
+      border: 'border-b border-gray-300/50',
       title: 'text-gray-900',
       icon: 'text-gray-800',
       label: 'text-gray-800',
@@ -82,10 +82,11 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   const colors = colorClasses[colorScheme];
   
-  const roundedClass = isFirst ? 'rounded-t-lg' : '';
+  // Ajout de bordures seulement entre les éléments, pas autour
+  const borderClass = !isFirst ? colors.border : '';
 
   return (
-    <div className={`space-y-2 p-3 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
+    <div className={`p-3 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 hover:shadow-sm relative`}>
       {/* Decorative icon in top right corner - moved further from edges */}
       {decorativeIcon && (
         <div className={`absolute top-5 right-8 ${colors.decorative} opacity-80`}>

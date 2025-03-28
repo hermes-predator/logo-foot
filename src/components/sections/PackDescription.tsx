@@ -22,7 +22,7 @@ const PackDescription = () => {
 
   return (
     <div className="space-y-0.5 mt-3">
-      
+      <div className="space-y-0 border border-gray-200/80 rounded-lg overflow-hidden shadow-sm">
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
@@ -84,6 +84,7 @@ const PackDescription = () => {
           ]}
           decorativeIcon={<DollarSign />} // Money icon for bookmakers
         />
+      </div>
         
       <Separator className="my-4 bg-gray-200" />
 

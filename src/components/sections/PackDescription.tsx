@@ -99,9 +99,9 @@ const PackDescription = () => {
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                  <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
+                <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
             </div>
@@ -109,9 +109,9 @@ const PackDescription = () => {
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
-                  <Globe className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
+                  <Folder className="h-3.5 w-3.5 text-gray-700" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-medium text-gray-800">Couverture totale du football</span>
+                <span className="text-sm font-medium text-gray-800">Fichier parfaitement organisé</span>
               </div>
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
@@ -194,4 +194,3 @@ const PackDescription = () => {
 };
 
 export default PackDescription;
-

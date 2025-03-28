@@ -1,10 +1,16 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const PackDescription = () => {
   const { toast } = useToast();
@@ -146,8 +152,22 @@ const PackDescription = () => {
             </div>
           </div>
           
-          <div className="text-center mb-5">
-            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
+          <div className="text-center mb-5 flex items-center justify-center gap-2">
+            <h3 className="text-xl font-bold text-black mb-0">Prêt à recevoir ce fichier ZIP unique ?</h3>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button 
+                  onClick={handlePayment}
+                  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1 bg-blue-50 px-2 py-1 rounded-full text-xs font-medium"
+                >
+                  <Download className="h-3 w-3" />
+                  Télécharger
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-xs">Accès immédiat après paiement</p>
+              </TooltipContent>
+            </Tooltip>
           </div>
           
           <DialogClose asChild>

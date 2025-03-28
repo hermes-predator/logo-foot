@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -84,7 +85,7 @@ const PackDescription = () => {
           decorativeIcon={<DollarSign />} // Money icon for bookmakers
         />
         
-      <Separator className="my-4 bg-blue-100/50" />
+      <Separator className="my-4 bg-gray-100/50" />
 
       
     

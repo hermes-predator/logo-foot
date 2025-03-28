@@ -153,12 +153,12 @@ const PackDescription = () => {
           <DialogClose asChild>
             <Button 
               onClick={handlePayment}
-              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-md border-b-4 border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-1 active:scale-[0.98] group"
+              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-md border-b-[6px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-1 active:scale-[0.98] group"
             >
-              <div className="flex items-center justify-center w-full">
-                <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span>Télécharger maintenant pour seulement 10€</span>
-                <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
+              <div className="flex items-center justify-center w-full gap-2">
+                <ShoppingCart className="h-5 w-5 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                <span className="mx-1 text-center">Télécharger maintenant pour seulement 10€</span>
+                <ArrowRight className="h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>
           </DialogClose>

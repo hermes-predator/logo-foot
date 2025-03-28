@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -153,12 +152,12 @@ const PackDescription = () => {
           <DialogClose asChild>
             <Button 
               onClick={handlePayment}
-              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white py-6 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group"
+              className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white px-4 py-6 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group"
             >
-              <div className="flex items-center justify-center w-full gap-3">
-                <ShoppingCart className="h-5 w-5 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span className="text-center font-medium">Télécharger maintenant pour seulement 10€</span>
-                <ArrowRight className="h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
+              <div className="flex items-center justify-center w-full gap-4">
+                <ShoppingCart className="h-6 w-6 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                <span className="text-center font-medium text-lg flex items-center">Télécharger maintenant pour seulement 10€</span>
+                <ArrowRight className="h-5 w-5 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>
           </DialogClose>

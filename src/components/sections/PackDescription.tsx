@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -82,7 +83,7 @@ const PackDescription = () => {
             { label: "Quantité totale", value: "50 ressources" }
           ]}
           isLast={true}
-          decorativeIcon={<DollarSign />}
+          decorativeIcon={<Coins />}
         />
       </div>
     

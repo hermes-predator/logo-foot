@@ -145,8 +145,8 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Badge de personnes ayant récemment acheté - déplacé en haut à droite et maintenant en bleu */}
-            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-pulse">
+            {/* Badge de personnes ayant récemment acheté - avec animation blink au lieu de pulse */}
+            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[blink_3s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes l'ont acheté récemment</span>
             </div>

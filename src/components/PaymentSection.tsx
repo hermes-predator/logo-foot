@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -146,7 +145,7 @@ const PaymentSection = () => {
             </div>
             
             {/* Badge de personnes ayant récemment acheté - avec animation blink au lieu de pulse */}
-            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[blink_3s_ease-in-out_infinite]">
+            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[blink_2s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes l'ont acheté récemment</span>
             </div>

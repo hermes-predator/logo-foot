@@ -95,21 +95,21 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
-      {/* Decorative icon in top right corner - subtle animation without affecting text */}
+      {/* Decorative icon in top right corner - very subtle animation without affecting text */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-all duration-300 group-hover:opacity-100`}>
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-all duration-300 group-hover:opacity-90`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { 
-            className: 'h-7 w-7 transition-all duration-300 group-hover:filter group-hover:drop-shadow-md' 
+            className: 'h-7 w-7 transition-all duration-300 group-hover:filter group-hover:drop-shadow-sm' 
           })}
         </div>
       )}
       
       <h3 className={`text-lg font-bold ${colors.title} flex items-center gap-3`}>
-        <span className={`${colors.icon} transition-transform duration-300 group-hover:scale-110 group-hover:filter group-hover:drop-shadow-sm`}>{icon}</span>
+        <span className={`${colors.icon}`}>{icon}</span>
         <span>{title}</span>
       </h3>
       
-      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow-md`}>
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -124,7 +124,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
             <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow-md`}>
+          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3 shadow-sm transition-all duration-300 group-hover:shadow`}>
             {collections}
           </p>
         </div>

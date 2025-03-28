@@ -85,7 +85,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const roundedClass = isFirst ? 'rounded-t-lg' : '';
 
   return (
-    <div className={`space-y-3 p-4 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
+    <div className={`space-y-2.5 p-3.5 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
       {/* Decorative icon in top right corner - moved further from edges */}
       {decorativeIcon && (
         <div className={`absolute top-5 right-8 ${colors.decorative} opacity-80`}>
@@ -106,7 +106,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         ))}
       </div>
       {collections && (
-        <div className="mt-3">
+        <div className="mt-2">
           <p className={`font-semibold ${colors.label} mb-1.5 flex items-center gap-3`}>
             <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :

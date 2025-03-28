@@ -94,9 +94,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions and ADDED MORE MARGIN/PADDING to the download button */}
+        {/* CTA buttons with enhanced interactions - MODIFIED: reverted back to ChevronDown icon */}
         <div 
-          className="flex items-center justify-center gap-4 pt-8 pb-2 animate-fade-in"
+          className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
           <Dialog>
@@ -109,21 +109,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <span className="relative z-10 font-medium text-sm text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto p-4">
-              <DialogHeader className="pb-0 space-y-0">
+            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+              <DialogHeader className="pb-0">
                 <div className="flex flex-col mb-0">
-                  <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
+                  <DialogTitle className="text-2xl font-bold text-black text-left mb-1">
                     Descriptif du ZIP
                   </DialogTitle>
                   
-                  <div className="relative mb-1">
+                  <div className="relative mb-2">
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </span>
                   </div>
                 </div>
                 
-                <div className="flex justify-end mb-1">
+                <div className="flex justify-end mb-2">
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button 
@@ -145,7 +145,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </Tooltip>
                 </div>
                 
-                <DialogDescription className="text-left pt-0 mt-0 space-y-0">
+                <DialogDescription className="text-left pt-0 mt-0">
                   <PackDescription />
                 </DialogDescription>
               </DialogHeader>
@@ -156,7 +156,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             variant="default"
             size="lg"
             onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-3 h-auto mt-1"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
             Download

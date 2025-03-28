@@ -6,11 +6,14 @@ import { footballLogosHistoryPost } from '../football-logos-history';
 import { clubHistoryPost } from '../club-history';
 import { frontCloudPost } from '../front-cloud';
 import { footObsessionPost } from '../foot-obsession';
+import { stickersFootballPost } from '../stickers-football';
 
 // Group all general content posts
 export const generalContentPosts: BlogPost[] = [
   footballLogosHistoryPost,
   clubHistoryPost,
   frontCloudPost,
-  footObsessionPost
+  footObsessionPost,
+  stickersFootballPost
 ];
+

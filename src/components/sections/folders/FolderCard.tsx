@@ -14,7 +14,6 @@ interface FolderCardProps {
   items: FolderItemProps[];
   collections?: string;
   isFirst?: boolean;
-  isLast?: boolean;
   decorativeIcon?: React.ReactNode;
 }
 
@@ -25,7 +24,6 @@ const FolderCard: React.FC<FolderCardProps> = ({
   items,
   collections,
   isFirst = false,
-  isLast = false,
   decorativeIcon,
 }) => {
   // Map color schemes to tailwind classes - Enhanced grayscale for visual distinction
@@ -38,8 +36,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/90',
-      separator: 'border-gray-200/80'
+      itemBg: 'bg-white/90'
     },
     blue: {
       bg: 'from-gray-100/90 to-gray-50/60',
@@ -49,8 +46,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/95',
-      separator: 'border-gray-300/70'
+      itemBg: 'bg-white/95'
     },
     green: {
       bg: 'from-gray-50/90 to-gray-50/60',
@@ -60,8 +56,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/90',
-      separator: 'border-gray-200/70'
+      itemBg: 'bg-white/90'
     },
     yellow: {
       bg: 'from-gray-100/85 to-gray-50/50',
@@ -71,8 +66,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/95',
-      separator: 'border-gray-300/60'
+      itemBg: 'bg-white/95'
     },
     red: {
       bg: 'from-gray-100/80 to-gray-50/40',
@@ -82,22 +76,16 @@ const FolderCard: React.FC<FolderCardProps> = ({
       label: 'text-gray-800',
       value: 'text-gray-600',
       decorative: 'text-gray-500',
-      itemBg: 'bg-white/95',
-      separator: 'border-gray-300/50'
+      itemBg: 'bg-white/95'
     },
   };
 
   const colors = colorClasses[colorScheme];
   
-  // Apply rounded corners only to first and last items
   const roundedClass = isFirst ? 'rounded-t-lg' : '';
-  const roundedBottomClass = isLast ? 'rounded-b-lg' : '';
-  
-  // Create separation without space using border-bottom (except for last item)
-  const separatorClass = !isLast ? `border-b ${colors.separator}` : '';
 
   return (
-    <div className={`p-3 bg-gradient-to-br ${colors.bg} ${separatorClass} transition-all duration-200 hover:shadow-md ${roundedClass} ${roundedBottomClass} relative`}>
+    <div className={`space-y-2 p-3 bg-gradient-to-br ${colors.bg} border ${colors.border} transition-all duration-200 hover:shadow-md ${roundedClass} relative`}>
       {/* Decorative icon in top right corner - moved further from edges */}
       {decorativeIcon && (
         <div className={`absolute top-5 right-8 ${colors.decorative} opacity-80`}>
@@ -109,7 +97,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         <span className={colors.icon}>{icon}</span>
         {title}
       </h3>
-      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm mt-2`}>
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 shadow-sm`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>

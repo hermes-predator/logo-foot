@@ -101,13 +101,13 @@ const FolderCard: React.FC<FolderCardProps> = ({
   
   const roundedTopClass = isFirst ? 'rounded-t-lg' : '';
   const roundedBottomClass = isLast ? 'rounded-b-lg' : '';
-  const borderClass = isLast ? 'border-b' : 'border-b border-gray-200/50';
+  const borderClass = isLast ? '' : 'border-b-4 border-gray-100';
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
       {/* Decorative icon in top right corner - color transition on hover */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transform transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
+        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { 
             className: 'h-7 w-7 transition-colors duration-300' 
           })}

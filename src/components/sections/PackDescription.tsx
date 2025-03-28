@@ -20,6 +20,7 @@ const PackDescription = () => {
   };
 
   return (
+    
     <div className="space-y-0.5 mt-3">
       <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
         <FolderCard
@@ -146,7 +147,7 @@ const PackDescription = () => {
           </div>
           
           <div className="text-center mb-5">
-            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique sur le marché ?</h3>
+            <h3 className="text-xl font-bold text-black mb-2">Prêt à recevoir ce fichier ZIP unique ?</h3>
           </div>
           
           <DialogClose asChild>

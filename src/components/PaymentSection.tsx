@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
@@ -229,7 +228,7 @@ const PaymentSection = () => {
               aria-label="Télécharger instantanément pour 10,00€"
             >
               <Download className="mr-2 h-8 w-8 transition-all duration-300 group-hover:translate-y-1" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Télécharger instantanément pour 10,00€"}
+              {isProcessing ? "Redirection..." : "Télécharger pour 10,00€"}
             </Button>
           </div>
           

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -27,8 +26,9 @@ const PackDescription = () => {
 
   return (
     
-    <div className="space-y-0.5 mt-3">
+    <div className="space-y-0.5 mt-1">
       <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
+        
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"
@@ -93,8 +93,8 @@ const PackDescription = () => {
         />
       </div>
     
-      <div className="space-y-4 pt-6 mt-6">
-        <h4 className="text-sm font-extrabold text-gray-800 mb-4">
+      <div className="space-y-4 pt-5 mt-5">
+        <h4 className="text-sm font-extrabold text-gray-800 mb-3">
           AVANTAGES DU FICHIER
         </h4>
         
@@ -143,7 +143,7 @@ const PackDescription = () => {
         </div>
         
         
-        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-6 relative">
+        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
           
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm animate-[blink_3s_ease-in-out_infinite]">

@@ -157,7 +157,7 @@ const PackDescription = () => {
             >
               <div className="flex items-center justify-center w-full gap-4">
                 <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span className="text-center font-medium text-xl">Télécharger maintenant pour seulement 10€</span>
+                <span className="text-center font-medium text-xl">Télécharger maintenant</span>
                 <ArrowRight className="h-8 w-8 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>

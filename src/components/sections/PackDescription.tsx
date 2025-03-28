@@ -158,7 +158,7 @@ const PackDescription = () => {
               className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 active:scale-[0.98] group"
             >
               <ShoppingCart className="h-5 w-5 mr-2 transition-all duration-300 group-hover:rotate-[-8deg]" />
-              Pour seulement 10€
+              Télécharger maintenant pour seulement 10€
               <ArrowRight className="h-4 w-4 ml-2 transition-all duration-300 group-hover:translate-x-1" />
             </Button>
           </DialogClose>

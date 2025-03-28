@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, List } from 'lucide-react';
 
@@ -13,7 +14,7 @@ interface FolderCardProps {
   items: FolderItemProps[];
   collections?: string;
   isFirst?: boolean;
-  decorativeIcon?: React.ReactNode; // New prop for the decorative icon
+  decorativeIcon?: React.ReactNode;
 }
 
 const FolderCard: React.FC<FolderCardProps> = ({
@@ -23,54 +24,54 @@ const FolderCard: React.FC<FolderCardProps> = ({
   items,
   collections,
   isFirst = false,
-  decorativeIcon, // Add the decorative icon prop
+  decorativeIcon,
 }) => {
-  // Map color schemes to tailwind classes
+  // Map color schemes to tailwind classes - Harmonized to more subtle blue-based variations
   const colorClasses = {
     gray: {
-      bg: 'from-gray-100/90 to-gray-100/50',
-      border: 'border-gray-200/80',
-      title: 'text-gray-900',
-      icon: 'text-gray-600',
-      label: 'text-gray-900',
+      bg: 'from-gray-50/90 to-gray-50/50',
+      border: 'border-gray-200/70',
+      title: 'text-gray-800',
+      icon: 'text-blue-600',
+      label: 'text-gray-800',
       value: 'text-gray-700',
-      decorative: 'text-gray-400/80',
+      decorative: 'text-blue-300',
     },
     blue: {
       bg: 'from-blue-50/80 to-blue-50/30',
-      border: 'border-blue-100/80',
-      title: 'text-blue-900',
+      border: 'border-blue-100/70',
+      title: 'text-gray-800',
       icon: 'text-blue-600',
-      label: 'text-blue-900',
-      value: 'text-blue-700',
-      decorative: 'text-blue-400/80',
+      label: 'text-gray-800',
+      value: 'text-gray-700',
+      decorative: 'text-blue-400',
     },
     green: {
-      bg: 'from-green-50/80 to-green-50/30',
-      border: 'border-green-100/80',
-      title: 'text-green-900',
-      icon: 'text-green-600',
-      label: 'text-green-900',
-      value: 'text-green-700',
-      decorative: 'text-green-400/80',
+      bg: 'from-blue-50/60 to-blue-50/20',
+      border: 'border-blue-100/60',
+      title: 'text-gray-800',
+      icon: 'text-blue-600',
+      label: 'text-gray-800',
+      value: 'text-gray-700',
+      decorative: 'text-blue-300',
     },
     yellow: {
-      bg: 'from-yellow-50/80 to-yellow-50/30',
-      border: 'border-yellow-100/80',
-      title: 'text-yellow-900',
-      icon: 'text-yellow-600',
-      label: 'text-yellow-900',
-      value: 'text-yellow-700',
-      decorative: 'text-yellow-400/80',
+      bg: 'from-blue-50/70 to-blue-50/30',
+      border: 'border-blue-100/60',
+      title: 'text-gray-800',
+      icon: 'text-blue-600',
+      label: 'text-gray-800',
+      value: 'text-gray-700',
+      decorative: 'text-blue-300',
     },
     red: {
-      bg: 'from-red-50/80 to-red-50/30',
-      border: 'border-red-100/80',
-      title: 'text-red-900',
-      icon: 'text-red-600',
-      label: 'text-red-900',
-      value: 'text-red-700',
-      decorative: 'text-red-400/80',
+      bg: 'from-blue-50/80 to-blue-50/40',
+      border: 'border-blue-100/70',
+      title: 'text-gray-800',
+      icon: 'text-blue-600',
+      label: 'text-gray-800',
+      value: 'text-gray-700',
+      decorative: 'text-blue-400',
     },
   };
 
@@ -91,7 +92,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         <span className={colors.icon}>{icon}</span>
         {title}
       </h3>
-      <div className="grid grid-cols-2 gap-3 bg-white/50 rounded-lg p-3">
+      <div className="grid grid-cols-2 gap-3 bg-white/60 rounded-lg p-3">
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -105,7 +106,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
             <List className={`h-4 w-4 ${colors.icon}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed ${colors.value} bg-white/50 rounded-lg p-3`}>
+          <p className={`text-xs leading-relaxed ${colors.value} bg-white/60 rounded-lg p-3`}>
             {collections}
           </p>
         </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,7 +20,7 @@ const PackDescription = () => {
   };
 
   return (
-    <div className="space-y-0.5 mt-6">
+    <div className="space-y-2 mt-6">
       
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
@@ -85,7 +84,7 @@ const PackDescription = () => {
           decorativeIcon={<DollarSign />} // Money icon for bookmakers
         />
         
-      <Separator className="my-4 bg-red-100/50" />
+      <Separator className="my-4 bg-blue-100/50" />
 
       
     

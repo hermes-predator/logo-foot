@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -110,11 +111,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <div className="flex items-center justify-between mb-6">
-                  <DialogTitle className="text-2xl font-bold text-black text-left">
+                <div className="flex flex-col mb-2">
+                  <DialogTitle className="text-2xl font-bold text-black text-left mb-3">
                     Descriptif du ZIP
                   </DialogTitle>
                   
+                  <div className="relative mb-6">
+                    <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
+                      ⦗FRONT-CLOUD⦘~ Football.zip
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="flex justify-end mb-6">
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button 
@@ -135,13 +144,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     </TooltipContent>
                   </Tooltip>
                 </div>
-                  
-                <div className="relative inline-flex items-center justify-center">
-                  <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
-                    ⦗FRONT-CLOUD⦘~ Football.zip
-                  </span>
-                </div>
-                <DialogDescription className="text-left pt-2">
+                
+                <DialogDescription className="text-left">
                   <PackDescription />
                 </DialogDescription>
               </DialogHeader>

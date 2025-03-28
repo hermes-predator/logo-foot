@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -38,7 +39,7 @@ const PackDescription = () => {
         
         <FolderCard
           title="𝐅.𝟎𝟐 – Logos des compétitions de football"
-          colorScheme="blue"
+          colorScheme="gray"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },
             { label: "Dimensions", value: "200px" },
@@ -50,7 +51,7 @@ const PackDescription = () => {
 
         <FolderCard
           title="𝐅.𝟎𝟑 – Logos des drapeaux mondiaux"
-          colorScheme="green"
+          colorScheme="gray"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },
             { label: "Dimensions", value: "200px" },
@@ -62,7 +63,7 @@ const PackDescription = () => {
 
         <FolderCard
           title="𝐅.𝟎𝟒 – Couvertures - Instruments de football"
-          colorScheme="yellow"
+          colorScheme="gray"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },
             { label: "Dimensions", value: "150px" },
@@ -74,7 +75,7 @@ const PackDescription = () => {
 
         <FolderCard
           title="𝐅.𝟎𝟓 – Logos des bookmakers"
-          colorScheme="red"
+          colorScheme="gray"
           items={[
             { label: "Format", value: "PNG (fond transparent)" },
             { label: "Dimensions", value: "200px" },

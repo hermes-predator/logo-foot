@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, Moon, Sun, BookOpen } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -14,15 +15,11 @@ import FloatingCTA from '../components/blog/FloatingCTA';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { Switch } from '@/components/ui/switch';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(post => post.id === Number(id));
   const currentYear = new Date().getFullYear();
-  
-  // Mode sombre/clair
-  const [darkMode, setDarkMode] = useState(false);
   
   // Barre de progression
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -41,15 +38,6 @@ const BlogPost = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
-  // Appliquer le mode sombre/clair
-  useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
-    
-    return () => {
-      document.body.classList.remove('dark-mode');
-    };
-  }, [darkMode]);
 
   if (!post) {
     return (
@@ -212,7 +200,7 @@ const BlogPost = () => {
   };
   
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900 text-gray-200' : 'bg-gradient-to-b from-white to-gray-50/30'}`}>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       {/* Barre de progression fixe en haut */}
       <div className="fixed top-0 left-0 w-full h-1 z-50">
         <Progress value={scrollProgress} className="h-1 bg-gray-200" />
@@ -262,43 +250,33 @@ const BlogPost = () => {
         
         {/* Contrôles de lecture */}
         <div className="max-w-3xl mx-auto mb-4 flex justify-end items-center space-x-2">
-          <div className="flex items-center justify-end space-x-2 rounded-lg bg-white/80 dark:bg-gray-800/80 p-2 shadow-sm backdrop-blur-sm">
+          <div className="flex items-center justify-end space-x-2 rounded-lg bg-white/80 p-2 shadow-sm backdrop-blur-sm">
             <div className="flex items-center space-x-1">
-              <BookOpen className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-              <span className="text-xs text-gray-500 dark:text-gray-400">{post.content.length > 0 ? `~${post.content.length / 1000 | 0} min` : ''}</span>
-            </div>
-            <div className="flex items-center space-x-2 border-l pl-2 border-gray-200 dark:border-gray-700">
-              <span className="text-xs text-gray-500 dark:text-gray-400">Mode</span>
-              {darkMode ? <Moon className="h-4 w-4 text-gray-500" /> : <Sun className="h-4 w-4 text-amber-500" />}
-              <Switch 
-                checked={darkMode} 
-                onCheckedChange={setDarkMode} 
-                aria-label="Toggle dark mode"
-                className="data-[state=checked]:bg-gray-700"
-              />
+              <BookOpen className="h-4 w-4 text-gray-500" />
+              <span className="text-xs text-gray-500">{post.content.length > 0 ? `~${post.content.length / 1000 | 0} min` : ''}</span>
             </div>
           </div>
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <article className={`${darkMode ? 'bg-gray-800 shadow-xl' : 'bg-gradient-to-b from-white to-gray-50/30 shadow-md'} rounded-xl p-6 md:p-12 transition-colors duration-300`}>
+          <article className="bg-gradient-to-b from-white to-gray-50/30 shadow-md rounded-xl p-6 md:p-12">
             <div className="flex flex-wrap items-center gap-4 mb-6">
               <time 
-                className={`text-xs font-medium px-2 py-1 rounded-full inline-block border shadow-sm ${darkMode ? 'bg-gray-700 text-gray-300 border-gray-600' : 'bg-white text-gray-600 border-gray-200'}`}
+                className="text-xs font-medium px-2 py-1 rounded-full inline-block border shadow-sm bg-white text-gray-600 border-gray-200"
                 dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
               >
                 {format(new Date(post.date), 'dd-MM-yyyy')}
               </time>
-              <div className={`flex items-center gap-1 text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+              <div className="flex items-center gap-1 text-xs text-gray-600">
                 <Clock className="h-3.5 w-3.5" />
                 <span>{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
               </div>
-              <div className={`px-2 py-1 ${darkMode ? 'bg-purple-900/40 text-purple-300' : 'bg-purple-100 text-purple-800'} text-xs rounded-full`}>
+              <div className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">
                 {BLOG_CATEGORIES[post.category]?.name || post.category}
               </div>
             </div>
             
-            <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight ${darkMode ? 'text-white' : 'text-gray-800'}`} itemProp="headline">{post.title}</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-gray-800" itemProp="headline">{post.title}</h1>
             
             {post.galleryImageId ? (
               <BlogImage
@@ -320,48 +298,8 @@ const BlogPost = () => {
               <BlogCTA />
             </div>
             
-            <div className={`prose ${darkMode ? 'prose-invert' : 'prose-purple'} lg:prose-lg mx-auto`} itemProp="articleBody">
-              <ReactMarkdown components={{
-                ...markdownComponents,
-                p: ({children}) => (
-                  <p className={`text-base md:text-lg leading-relaxed mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{children}</p>
-                ),
-                h1: ({children}) => (
-                  <h1 className={`text-3xl md:text-4xl font-bold mt-12 mb-6 leading-tight ${darkMode ? 'text-white' : 'text-gray-800'}`}>{children}</h1>
-                ),
-                h2: ({children}) => (
-                  <h2 className={`text-2xl md:text-3xl font-bold mt-10 mb-5 leading-tight ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>{children}</h2>
-                ),
-                h3: ({children}) => (
-                  <h3 className={`text-xl md:text-2xl font-bold mt-8 mb-4 leading-tight ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>{children}</h3>
-                ),
-                h4: ({children}) => (
-                  <h4 className={`text-lg md:text-xl font-semibold mt-6 mb-3 ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>{children}</h4>
-                ),
-                a: ({href, children}) => (
-                  <Link to={href || "#"} className={`${darkMode ? 'text-purple-400 hover:text-purple-300' : 'text-purple-600 hover:text-purple-800'} underline transition-colors duration-200`}>
-                    {children}
-                  </Link>
-                ),
-                ul: ({children}) => (
-                  <ul className={`list-disc pl-6 mb-6 space-y-2 ml-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{children}</ul>
-                ),
-                ol: ({children}) => (
-                  <ol className={`list-decimal pl-6 mb-6 space-y-2 ml-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{children}</ol>
-                ),
-                li: ({children}) => (
-                  <li className="mb-2 pl-1">{children}</li>
-                ),
-                blockquote: ({children}) => (
-                  <blockquote className={`border-l-4 ${darkMode ? 'border-purple-400 bg-gray-700/30' : 'border-purple-500 bg-purple-50/30'} pl-4 py-2 italic my-6 rounded-r`}>{children}</blockquote>
-                ),
-                code: ({children}) => (
-                  <code className={`${darkMode ? 'bg-gray-700 text-purple-300' : 'bg-gray-100 text-purple-700'} rounded px-1.5 py-0.5 text-sm font-mono`}>{children}</code>
-                ),
-                hr: () => (
-                  <hr className={`my-8 border-t ${darkMode ? 'border-gray-700' : 'border-gray-200'}`} />
-                ),
-              }}>
+            <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
+              <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>
             </div>
@@ -370,15 +308,15 @@ const BlogPost = () => {
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
-                className={`${darkMode ? 'bg-gray-700 text-gray-200 border-gray-600 group-hover:bg-gray-600' : 'bg-white text-gray-800 border-gray-200'} 
+                className="bg-white text-gray-800 border-gray-200 
                          py-6 px-8 shadow-sm hover:shadow transition-shadow duration-200 
-                         group flex items-center gap-3 text-lg border`}
+                         group flex items-center gap-3 text-lg border"
                 variant="outline"
               >
                 <Link to="/" className="flex items-center gap-3">
-                  <Download className={`h-6 w-6 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`} />
+                  <Download className="h-6 w-6 text-gray-600" />
                   <span className="font-bold">Fichier ZIP de +8 600 logos de club de football</span>
-                  <ArrowRight className={`h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 ${darkMode ? 'text-gray-400' : 'text-gray-600'} transition-all duration-300 ease-out ml-0 group-hover:ml-1`} />
+                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>
             </div>

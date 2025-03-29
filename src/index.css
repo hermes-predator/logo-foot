@@ -37,15 +37,6 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* Dark mode styles */
-  body.dark-mode {
-    @apply bg-gray-900 text-gray-200;
-  }
-  
-  body.dark-mode .prose-invert {
-    @apply text-gray-200;
-  }
 }
 
 /* Reset des styles par défaut */

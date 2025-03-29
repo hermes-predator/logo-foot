@@ -168,7 +168,6 @@ const BlogPost = () => {
     ),
   };
 
-  // Determine image source based on category if no galleryImageId
   const getDefaultImageSrc = (category: string) => {
     const categoryMap = {
       'logos': '/blog-images/default-logos.png',
@@ -281,7 +280,7 @@ const BlogPost = () => {
               >
                 <Link to="/" className="flex items-center gap-3">
                   <Download className="h-6 w-6 text-gray-600" />
-                  <span className="font-medium">Fichier ZIP de +8 600 logos de club de football</span>
+                  <span className="font-bold">Fichier ZIP de +8 600 logos de club de football</span>
                   <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>

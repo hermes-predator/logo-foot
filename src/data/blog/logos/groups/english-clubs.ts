@@ -8,6 +8,7 @@ import { bournemouthLogoPost } from '../bournemouth-logo';
 import { brentfordLogoPost } from '../brentford-logo';
 import { brightonLogoPost } from '../brighton-logo';
 import { burnleyLogoPost } from '../burnley-logo';
+import { cardiffCityLogoPost } from '../cardiff-city-logo';
 import { chelseaLogoPost } from '../chelsea-logo';
 import { coventryCityLogoPost } from '../coventry-city-logo';
 import { crystalPalaceLogoPost } from '../crystal-palace-logo';
@@ -40,6 +41,7 @@ export const englishClubPosts: BlogPost[] = [
   brentfordLogoPost,
   brightonLogoPost,
   burnleyLogoPost,
+  cardiffCityLogoPost,
   chelseaLogoPost,
   coventryCityLogoPost,
   crystalPalaceLogoPost,

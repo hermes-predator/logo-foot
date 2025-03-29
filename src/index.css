@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,58 +78,6 @@
   100% {
     transform: translateX(100%);
   }
-}
-
-/* Title ornament animations */
-@keyframes ornamentPulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-}
-
-/* Apply the animation to heading ornaments */
-h1 svg, h2 svg, h3 svg, h4 svg {
-  animation: ornamentPulse 3s infinite ease-in-out;
-}
-
-/* Create staggered animations */
-h1 svg { animation-delay: 0s; }
-h2 svg { animation-delay: 0.5s; }
-h3 svg { animation-delay: 1s; }
-h4 svg { animation-delay: 1.5s; }
-
-/* Animate title underlines on hover */
-h1:hover .bg-gradient-to-r,
-h2:hover .bg-gradient-to-r,
-h3:hover .bg-gradient-to-r,
-h4:hover .bg-gradient-to-r {
-  background-size: 200% 200%;
-  animation: gradientShift 2s ease forwards;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-/* Enhance title underlines */
-h1 span.absolute,
-h2 span.absolute {
-  transition: width 0.5s ease;
-}
-
-h1:hover span.absolute,
-h2:hover span.absolute {
-  width: 50%;
 }
 
 /* Cursor effects */
@@ -252,13 +201,13 @@ blockquote {
 
 blockquote::before {
   content: """";
-  @apply absolute -left-2 -top-2 text-4xl text-purple-300 opacity-50 font-serif;
+  @apply absolute -left-2 -top-2 text-4xl text-gray-300 opacity-50 font-serif;
 }
 
 /* Enhanced list styling */
 ul.fancy-list li::before {
   content: "•";
-  @apply text-purple-500 inline-block w-4 -ml-4;
+  @apply text-gray-500 inline-block w-4 -ml-4;
 }
 
 /* Glass effect for cards */
@@ -273,11 +222,11 @@ ul.fancy-list li::before {
 
 /* Table of contents styling */
 .toc {
-  @apply bg-purple-50/50 p-4 rounded-lg mb-6 border border-purple-100;
+  @apply bg-gray-50/50 p-4 rounded-lg mb-6 border border-gray-100;
 }
 
 .toc-title {
-  @apply font-semibold text-lg mb-2 text-purple-800;
+  @apply font-semibold text-lg mb-2 text-gray-800;
 }
 
 .toc-list {
@@ -285,11 +234,11 @@ ul.fancy-list li::before {
 }
 
 .toc-item {
-  @apply pl-2 border-l-2 border-purple-200 hover:border-purple-500 transition-colors duration-200;
+  @apply pl-2 border-l-2 border-gray-200 hover:border-gray-500 transition-colors duration-200;
 }
 
 .toc-link {
-  @apply text-gray-700 hover:text-purple-700 no-underline block py-1 text-sm;
+  @apply text-gray-700 hover:text-gray-900 no-underline block py-1 text-sm;
 }
 
 /* Enhanced image captions */
@@ -299,12 +248,12 @@ ul.fancy-list li::before {
 
 /* Article section dividers */
 .section-divider {
-  @apply my-10 border-t-2 border-purple-100 relative;
+  @apply my-10 border-t-2 border-gray-100 relative;
 }
 
 .section-divider::after {
   content: "✦";
-  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-purple-300;
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-gray-300;
 }
 
 /* Code block styling */

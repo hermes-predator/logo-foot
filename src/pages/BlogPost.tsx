@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, BookMarked, Sparkles, Diamond, Award } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, BookMarked, Diamond, Sparkles, Award } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -130,13 +131,13 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
-  // Fonction pour sélectionner un ornement selon le type de titre
+  // Fonction pour sélectionner un ornement sobre selon le type de titre
   const getTitleOrnament = (level) => {
     switch(level) {
-      case 1: return <Sparkles className="h-6 w-6 text-purple-500" />;
-      case 2: return <Diamond className="h-5 w-5 text-blue-500" />;
-      case 3: return <BookMarked className="h-4 w-4 text-emerald-500" />;
-      case 4: return <Award className="h-4 w-4 text-amber-500" />;
+      case 1: return <Sparkles className="h-4 w-4 text-gray-400" />;
+      case 2: return <Diamond className="h-4 w-4 text-gray-400" />;
+      case 3: return <BookMarked className="h-3 w-3 text-gray-400" />;
+      case 4: return <Award className="h-3 w-3 text-gray-400" />;
       default: return null;
     }
   };
@@ -146,46 +147,44 @@ const BlogPost = () => {
     p: ({children}: {children: React.ReactNode}) => (
       <p className="text-gray-700 leading-7 mb-6 text-base md:text-lg">{children}</p>
     ),
-    // Enhanced styling for headings with better hierarchy, spacing and ornaments
+    // Sobres styling for headings with subtle ornaments
     h1: ({children}: {children: React.ReactNode}) => (
       <div className="relative">
-        <div className="absolute -left-10 top-3 hidden md:block">
+        <div className="absolute -left-8 top-3 hidden md:block opacity-60">
           {getTitleOrnament(1)}
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-purple-200 relative group">
-          <span className="relative bg-gradient-to-r from-purple-900 to-purple-500 bg-clip-text text-transparent">{children}</span>
-          <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-gradient-to-r from-purple-500 to-transparent rounded-full"></span>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
+          {children}
         </h1>
       </div>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
       <div className="relative">
-        <div className="absolute -left-8 top-3 hidden md:block">
+        <div className="absolute -left-7 top-2.5 hidden md:block opacity-60">
           {getTitleOrnament(2)}
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-4 border-blue-400 pl-3 py-1 flex items-center relative">
-          <span className="bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">{children}</span>
-          <span className="absolute bottom-0 left-4 w-1/4 h-0.5 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></span>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-2 border-gray-300 pl-3 py-1">
+          {children}
         </h2>
       </div>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
       <div className="relative">
-        <div className="absolute -left-7 top-2.5 hidden md:block">
+        <div className="absolute -left-6 top-2 hidden md:block opacity-60">
           {getTitleOrnament(3)}
         </div>
-        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight border-b border-dashed border-emerald-200 pb-1 flex items-center">
-          <span className="bg-gradient-to-r from-emerald-800 to-emerald-500 bg-clip-text text-transparent">{children}</span>
+        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">
+          {children}
         </h3>
       </div>
     ),
     h4: ({children}: {children: React.ReactNode}) => (
       <div className="relative">
-        <div className="absolute -left-6 top-2 hidden md:block">
+        <div className="absolute -left-5 top-1.5 hidden md:block opacity-60">
           {getTitleOrnament(4)}
         </div>
-        <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3 flex items-center">
-          <span className="bg-gradient-to-r from-amber-800 to-amber-500 bg-clip-text text-transparent">{children}</span>
+        <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">
+          {children}
         </h4>
       </div>
     ),
@@ -197,21 +196,21 @@ const BlogPost = () => {
     ),
     // Enhanced styling for lists with better spacing and bullets
     ul: ({children}: {children: React.ReactNode}) => (
-      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-purple-500">{children}</ul>
+      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-gray-400">{children}</ul>
     ),
     ol: ({children}: {children: React.ReactNode}) => (
-      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-purple-500">{children}</ol>
+      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-gray-400">{children}</ol>
     ),
     li: ({children}: {children: React.ReactNode}) => (
       <li className="mb-2 pl-1">{children}</li>
     ),
     // Enhanced styling for blockquotes with more distinct design
     blockquote: ({children}: {children: React.ReactNode}) => (
-      <blockquote className="border-l-4 border-purple-500 pl-4 py-2 italic my-6 text-gray-700 bg-purple-50/30 rounded-r">{children}</blockquote>
+      <blockquote className="border-l-4 border-gray-300 pl-4 py-2 italic my-6 text-gray-600 bg-gray-50/30 rounded-r">{children}</blockquote>
     ),
     // Better styling for code blocks
     code: ({children}: {children: React.ReactNode}) => (
-      <code className="bg-gray-100 rounded px-1.5 py-0.5 text-sm font-mono text-purple-700">{children}</code>
+      <code className="bg-gray-100 rounded px-1.5 py-0.5 text-sm font-mono text-gray-700">{children}</code>
     ),
     // Add styling for horizontal rules
     hr: () => (
@@ -340,12 +339,12 @@ const BlogPost = () => {
         
         <div className="max-w-3xl mx-auto">
           <article className="bg-white shadow-md rounded-xl p-6 md:p-10 transition-all duration-300">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent" itemProp="headline">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900" itemProp="headline">
               {post.title}
             </h1>
             
             {post.excerpt && (
-              <div className="mb-8 text-lg text-gray-600 font-light italic border-l-4 border-purple-200 pl-4 py-1">
+              <div className="mb-8 text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-4 py-1">
                 {post.excerpt}
               </div>
             )}
@@ -370,7 +369,7 @@ const BlogPost = () => {
               <BlogCTA />
             </div>
             
-            <div className="prose prose-purple lg:prose-lg mx-auto relative" itemProp="articleBody">
+            <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
               <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -274,7 +273,7 @@ const BlogPost = () => {
           <Card className="bg-white/80 backdrop-blur-sm p-4 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-purple-500" />
+                <Calendar className="h-4 w-4 text-gray-500" />
                 <time 
                   className="text-sm text-gray-600"
                   dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
@@ -284,12 +283,12 @@ const BlogPost = () => {
               </div>
               
               <div className="flex items-center gap-2">
-                <BookOpen className="h-4 w-4 text-purple-500" />
+                <BookOpen className="h-4 w-4 text-gray-500" />
                 <span className="text-sm text-gray-600">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
               </div>
               
               <div className="flex items-center gap-2">
-                <Tag className="h-4 w-4 text-purple-500" />
+                <Tag className="h-4 w-4 text-gray-500" />
                 <span className="text-sm font-medium text-purple-600">
                   {BLOG_CATEGORIES[post.category]?.name || post.category}
                 </span>

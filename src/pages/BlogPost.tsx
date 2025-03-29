@@ -281,7 +281,7 @@ const BlogPost = () => {
               >
                 <Link to="/" className="flex items-center gap-3">
                   <Download className="h-5 w-5 text-gray-600" />
-                  <span className="font-medium">Télécharger les logos</span>
+                  <span className="font-medium">Télécharger un fichier zip de + de 8 600 logos de foot</span>
                 </Link>
               </Button>
             </div>

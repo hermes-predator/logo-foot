@@ -10,6 +10,7 @@ import { useReadingTime } from '../hooks/useReadingTime';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import BlogCTA from '../components/blog/BlogCTA';
+import FloatingCTA from '../components/blog/FloatingCTA';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 
@@ -219,6 +220,7 @@ const BlogPost = () => {
         </script>
       </Helmet>
       <BlogSchemaMarkup post={post} />
+      <FloatingCTA />
       
       <div className="container mx-auto py-12 md:py-20 px-4">
         <Breadcrumbs />

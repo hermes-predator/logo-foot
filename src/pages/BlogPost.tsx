@@ -131,62 +131,31 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
-  // Fonction pour sélectionner un ornement sobre selon le type de titre
-  const getTitleOrnament = (level) => {
-    switch(level) {
-      case 1: return <Sparkles className="h-4 w-4 text-gray-400" />;
-      case 2: return <Diamond className="h-4 w-4 text-gray-400" />;
-      case 3: return <BookMarked className="h-3 w-3 text-gray-400" />;
-      case 4: return <Award className="h-3 w-3 text-gray-400" />;
-      default: return null;
-    }
-  };
-
   const markdownComponents = {
     // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
       <p className="text-gray-700 leading-7 mb-6 text-base md:text-lg">{children}</p>
     ),
-    // Sobres styling for headings with subtle ornaments
+    // Sobres styling for headings - removed the ornaments/icons
     h1: ({children}: {children: React.ReactNode}) => (
-      <div className="relative">
-        <div className="absolute -left-8 top-3 hidden md:block opacity-60">
-          {getTitleOrnament(1)}
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
-          {children}
-        </h1>
-      </div>
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
+        {children}
+      </h1>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <div className="relative">
-        <div className="absolute -left-7 top-2.5 hidden md:block opacity-60">
-          {getTitleOrnament(2)}
-        </div>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-2 border-gray-300 pl-3 py-1">
-          {children}
-        </h2>
-      </div>
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-2 border-gray-300 pl-3 py-1">
+        {children}
+      </h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
-      <div className="relative">
-        <div className="absolute -left-6 top-2 hidden md:block opacity-60">
-          {getTitleOrnament(3)}
-        </div>
-        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">
-          {children}
-        </h3>
-      </div>
+      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">
+        {children}
+      </h3>
     ),
     h4: ({children}: {children: React.ReactNode}) => (
-      <div className="relative">
-        <div className="absolute -left-5 top-1.5 hidden md:block opacity-60">
-          {getTitleOrnament(4)}
-        </div>
-        <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">
-          {children}
-        </h4>
-      </div>
+      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">
+        {children}
+      </h4>
     ),
     // Improved styling for links with better hover effects
     a: ({href, children}: {href: string; children: React.ReactNode}) => (

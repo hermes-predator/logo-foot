@@ -99,7 +99,6 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
-  // Enhanced component customizations for ReactMarkdown with better typography and spacing
   const markdownComponents = {
     // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
@@ -275,15 +274,14 @@ const BlogPost = () => {
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
-                className="bg-white hover:bg-white text-gray-800 border border-gray-200 
-                         py-5 px-6 shadow-sm hover:shadow transition-all duration-200 
-                         group relative overflow-hidden"
+                className="bg-white text-gray-800 border border-gray-200 
+                         py-5 px-6 shadow-sm hover:shadow transition-shadow duration-200 
+                         group flex items-center gap-3"
                 variant="outline"
               >
                 <Link to="/" className="flex items-center gap-3">
-                  <span className="absolute inset-0 w-3 bg-gradient-to-r from-purple-100 via-purple-100 to-transparent opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-300 ease-out"></span>
-                  <Download className="h-5 w-5 text-gray-600 relative z-10" />
-                  <span className="font-medium relative z-10">Fichier ZIP de +8 600 logos de club de football</span>
+                  <Download className="h-5 w-5 text-gray-600" />
+                  <span className="font-medium">Fichier ZIP de +8 600 logos de club de football</span>
                   <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-5 group-hover:w-5 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>

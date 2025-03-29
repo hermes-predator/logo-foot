@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -333,12 +332,12 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Restauration du bouton à son style original */}
+            {/* Mise à jour du texte du bouton comme demandé */}
             <div className="mt-12 flex justify-center">
               <Button asChild>
                 <Link to="/" className="flex items-center gap-3">
                   <Download className="h-4 w-4" />
-                  <span>Télécharger les logos de foot</span>
+                  <span>Fichier ZIP de +8 600 logos de club de football</span>
                 </Link>
               </Button>
             </div>

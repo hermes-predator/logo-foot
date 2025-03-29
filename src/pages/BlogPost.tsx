@@ -275,14 +275,14 @@ const BlogPost = () => {
               <Button 
                 asChild 
                 className="bg-white text-gray-800 border border-gray-200 
-                         py-5 px-6 shadow-sm hover:shadow transition-shadow duration-200 
-                         group flex items-center gap-3"
+                         py-6 px-8 shadow-sm hover:shadow transition-shadow duration-200 
+                         group flex items-center gap-3 text-lg"
                 variant="outline"
               >
                 <Link to="/" className="flex items-center gap-3">
-                  <Download className="h-5 w-5 text-gray-600" />
+                  <Download className="h-6 w-6 text-gray-600" />
                   <span className="font-medium">Fichier ZIP de +8 600 logos de club de football</span>
-                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-5 group-hover:w-5 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
+                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>
             </div>

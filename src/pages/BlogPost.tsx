@@ -48,6 +48,9 @@ const BlogPost = () => {
     }
   }, []);
 
+  // State for button hover
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
+
   if (!post) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
@@ -333,13 +336,19 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Apple-style button */}
+            {/* Apple-style button with lighter border radius and dynamic arrow */}
             <div className="mt-12 flex justify-center">
               <Link 
                 to="/" 
-                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-6 py-3 rounded-full border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2"
+                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-6 py-3 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
+                onMouseEnter={() => setIsButtonHovered(true)}
+                onMouseLeave={() => setIsButtonHovered(false)}
               >
-                <Download className="h-5 w-5" />
+                {isButtonHovered ? (
+                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                ) : (
+                  <Download className="h-5 w-5" />
+                )}
                 <span>Fichier ZIP de +8 600 logos de club de football</span>
               </Link>
             </div>

@@ -271,18 +271,17 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Purple download button at the end of the article */}
+            {/* Updated clean and professional download button */}
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 
-                           py-6 px-6 text-lg font-semibold shadow-lg hover:shadow-xl 
-                           transform hover:scale-105 transition-all duration-300 group rounded-xl"
+                className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 
+                         py-5 px-6 shadow-sm hover:shadow transition-all duration-200 group"
+                variant="outline"
               >
                 <Link to="/" className="flex items-center gap-3">
-                  <Download className="h-5 w-5 text-white group-hover:animate-bounce transition-all" />
-                  <span className="text-white">Télécharger le zip de + 8 600 logos de foot</span>
-                  <ArrowRight className="h-5 w-5 text-white ml-1 group-hover:translate-x-2 transition-transform" />
+                  <Download className="h-5 w-5 text-gray-600" />
+                  <span className="font-medium">Télécharger les logos</span>
                 </Link>
               </Button>
             </div>

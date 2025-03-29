@@ -271,7 +271,7 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Updated refined download button with subtle hover effect */}
+            {/* Updated refined download button with subtle hover effect but no color change */}
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
@@ -282,8 +282,8 @@ const BlogPost = () => {
               >
                 <Link to="/" className="flex items-center gap-3">
                   <span className="absolute inset-0 w-3 bg-gradient-to-r from-purple-100 via-purple-100 to-transparent opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-300 ease-out"></span>
-                  <Download className="h-5 w-5 text-gray-600 relative z-10 group-hover:text-gray-800 transition-colors" />
-                  <span className="font-medium relative z-10 group-hover:text-gray-900 transition-colors">Fichier ZIP de +8 600 logos de club de football</span>
+                  <Download className="h-5 w-5 text-gray-600 relative z-10" />
+                  <span className="font-medium relative z-10">Fichier ZIP de +8 600 logos de club de football</span>
                   <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-5 group-hover:w-5 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>

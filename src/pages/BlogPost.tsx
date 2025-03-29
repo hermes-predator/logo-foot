@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, BookMarked, Sparkles, Diamond, Award } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -131,23 +130,64 @@ const BlogPost = () => {
     "wordCount": post.content.split(' ').length.toString()
   };
 
+  // Fonction pour sélectionner un ornement selon le type de titre
+  const getTitleOrnament = (level) => {
+    switch(level) {
+      case 1: return <Sparkles className="h-6 w-6 text-purple-500" />;
+      case 2: return <Diamond className="h-5 w-5 text-blue-500" />;
+      case 3: return <BookMarked className="h-4 w-4 text-emerald-500" />;
+      case 4: return <Award className="h-4 w-4 text-amber-500" />;
+      default: return null;
+    }
+  };
+
   const markdownComponents = {
     // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
       <p className="text-gray-700 leading-7 mb-6 text-base md:text-lg">{children}</p>
     ),
-    // Enhanced styling for headings with better hierarchy and spacing
+    // Enhanced styling for headings with better hierarchy, spacing and ornaments
     h1: ({children}: {children: React.ReactNode}) => (
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-12 mb-6 leading-tight">{children}</h1>
+      <div className="relative">
+        <div className="absolute -left-10 top-3 hidden md:block">
+          {getTitleOrnament(1)}
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-purple-200 relative group">
+          <span className="relative bg-gradient-to-r from-purple-900 to-purple-500 bg-clip-text text-transparent">{children}</span>
+          <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-gradient-to-r from-purple-500 to-transparent rounded-full"></span>
+        </h1>
+      </div>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-4 border-purple-400 pl-3 py-1">{children}</h2>
+      <div className="relative">
+        <div className="absolute -left-8 top-3 hidden md:block">
+          {getTitleOrnament(2)}
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-4 border-blue-400 pl-3 py-1 flex items-center relative">
+          <span className="bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">{children}</span>
+          <span className="absolute bottom-0 left-4 w-1/4 h-0.5 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></span>
+        </h2>
+      </div>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
-      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">{children}</h3>
+      <div className="relative">
+        <div className="absolute -left-7 top-2.5 hidden md:block">
+          {getTitleOrnament(3)}
+        </div>
+        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight border-b border-dashed border-emerald-200 pb-1 flex items-center">
+          <span className="bg-gradient-to-r from-emerald-800 to-emerald-500 bg-clip-text text-transparent">{children}</span>
+        </h3>
+      </div>
     ),
     h4: ({children}: {children: React.ReactNode}) => (
-      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">{children}</h4>
+      <div className="relative">
+        <div className="absolute -left-6 top-2 hidden md:block">
+          {getTitleOrnament(4)}
+        </div>
+        <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3 flex items-center">
+          <span className="bg-gradient-to-r from-amber-800 to-amber-500 bg-clip-text text-transparent">{children}</span>
+        </h4>
+      </div>
     ),
     // Improved styling for links with better hover effects
     a: ({href, children}: {href: string; children: React.ReactNode}) => (
@@ -300,7 +340,7 @@ const BlogPost = () => {
         
         <div className="max-w-3xl mx-auto">
           <article className="bg-white shadow-md rounded-xl p-6 md:p-10 transition-all duration-300">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-800 transition-colors" itemProp="headline">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent" itemProp="headline">
               {post.title}
             </h1>
             
@@ -330,7 +370,7 @@ const BlogPost = () => {
               <BlogCTA />
             </div>
             
-            <div className="prose prose-purple lg:prose-lg mx-auto" itemProp="articleBody">
+            <div className="prose prose-purple lg:prose-lg mx-auto relative" itemProp="articleBody">
               <ReactMarkdown components={markdownComponents}>
                 {post.content}
               </ReactMarkdown>

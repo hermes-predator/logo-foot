@@ -20,6 +20,7 @@ import { lecceLogoPost } from '../lecce-logo';
 import { milanLogoPost } from '../milan-logo';
 import { monzaLogoPost } from '../monza-logo';
 import { napoliLogoPost } from '../napoli-logo';
+import { palermoLogoPost } from '../palermo-logo';
 import { parmaLogoPost } from '../parma-logo';
 import { pisaLogoPost } from '../pisa-logo';
 import { salernitanaLogoPost } from '../salernitana-logo';
@@ -49,6 +50,7 @@ export const italianClubPosts: BlogPost[] = [
   milanLogoPost,
   monzaLogoPost,
   napoliLogoPost,
+  palermoLogoPost,
   parmaLogoPost,
   pisaLogoPost,
   salernitanaLogoPost,

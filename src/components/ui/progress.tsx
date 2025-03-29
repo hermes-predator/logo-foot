@@ -25,10 +25,10 @@ const Progress = React.forwardRef<
   >
     <ProgressPrimitive.Indicator
       className={cn(
-        "flex-1 bg-primary transition-all",
+        "flex-1 transition-all",
         orientation === "horizontal" 
-          ? "h-full w-full" 
-          : "w-full"
+          ? "h-full w-full bg-primary" 
+          : "w-full bg-gradient-to-t from-purple-300 via-purple-500 to-purple-700"
       )}
       style={{ 
         transform: orientation === "horizontal" 

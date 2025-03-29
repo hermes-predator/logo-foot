@@ -201,9 +201,16 @@ const BlogPost = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30 relative">
-      {/* Barre de progression verticale sur le côté droit */}
+      {/* Barre de progression verticale améliorée sur le côté droit */}
       <div className="fixed right-0 top-0 h-full w-1 z-50 flex items-center">
-        <Progress value={scrollProgress} className="h-full w-1 bg-gray-200" orientation="vertical" />
+        <div className="h-full w-1 relative overflow-hidden rounded-full">
+          <div className="absolute inset-0 bg-gray-100/50 backdrop-blur-sm"></div>
+          <Progress 
+            value={scrollProgress} 
+            className="h-full w-1" 
+            orientation="vertical" 
+          />
+        </div>
       </div>
 
       <Helmet>

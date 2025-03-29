@@ -18,12 +18,14 @@ const FloatingCTA = () => {
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg py-3 px-4 md:px-6">
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
           <div className="flex items-center mb-3 sm:mb-0">
-            <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-pulse">
-              <Download className="h-5 w-5 text-white animate-bounce" />
-            </span>
-            <p className="text-white font-medium text-sm md:text-base">
-              <span className="font-bold">⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~</span> 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 : +8 600 logos de foot à télécharger
-            </p>
+            <Link to="/" className="group flex items-center">
+              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-pulse group-hover:bg-white/30 transition-colors">
+                <Download className="h-5 w-5 text-white animate-bounce" />
+              </span>
+              <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">
+                <span className="font-bold">⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~</span> 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 : +8 600 logos de foot à télécharger
+              </p>
+            </Link>
           </div>
           
           <div className="flex items-center gap-3">

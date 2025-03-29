@@ -24,6 +24,7 @@ import { sheffieldUnitedLogoPost } from '../sheffield-united-logo';
 import { southamptonLogoPost } from '../southampton-logo';
 import { stokeCityLogoPost } from '../stoke-city-logo';
 import { sunderlandLogoPost } from '../sunderland-logo';
+import { swanseaCityLogoPost } from '../swansea-city-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { watfordLogoPost } from '../watford-logo';
 import { westBromwichLogoPost } from '../west-bromwich-logo';
@@ -54,9 +55,11 @@ export const englishClubPosts: BlogPost[] = [
   southamptonLogoPost,
   stokeCityLogoPost,
   sunderlandLogoPost,
+  swanseaCityLogoPost,
   tottenhamLogoPost,
   watfordLogoPost,
   westBromwichLogoPost,
   westHamLogoPost,
   wolverhamptonLogoPost
 ];
+

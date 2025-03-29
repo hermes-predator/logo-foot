@@ -180,7 +180,7 @@ const BlogPost = () => {
     
     return categoryMap[category] || '/blog-images/default.png';
   };
-
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
@@ -275,7 +275,7 @@ const BlogPost = () => {
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
-                className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 
+                className="bg-white hover:bg-white text-gray-800 border border-gray-200 
                          py-5 px-6 shadow-sm hover:shadow transition-all duration-200 
                          group relative overflow-hidden"
                 variant="outline"

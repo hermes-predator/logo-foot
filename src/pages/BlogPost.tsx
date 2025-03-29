@@ -41,7 +41,7 @@ const BlogPost = () => {
       </div>
     );
   }
-
+  
   const readingTime = useReadingTime(post.content);
   const categoryInfo = BLOG_CATEGORIES[post.category];
   const postDate = new Date(post.date);
@@ -281,7 +281,7 @@ const BlogPost = () => {
               >
                 <Link to="/" className="flex items-center gap-3">
                   <Download className="h-5 w-5 text-gray-600" />
-                  <span className="font-medium">Télécharger un fichier zip de + de 8 600 logos de foot</span>
+                  <span className="font-medium">Fichier ZIP de +8 600 logos de club de football</span>
                 </Link>
               </Button>
             </div>

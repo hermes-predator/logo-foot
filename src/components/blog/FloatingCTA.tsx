@@ -1,34 +1,17 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Download, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingCTA = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
-
-  useEffect(() => {
-    // Show the floating bar after scrolling down 35% of the viewport height
-    const handleScroll = () => {
-      const scrollThreshold = window.innerHeight * 0.35;
-      if (window.scrollY > scrollThreshold && !dismissed) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [dismissed]);
 
   const handleDismiss = () => {
     setDismissed(true);
-    setIsVisible(false);
   };
 
-  if (!isVisible) return null;
+  if (dismissed) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 animate-fade-in">

@@ -36,9 +36,6 @@ const Header = () => {
           >
             <Home className="w-4 h-4" />
             <span>Accueil</span>
-            {isActive('/') && (
-              <div className="absolute bottom-[-1.25rem] w-full h-0.5 bg-purple-600 left-0"></div>
-            )}
           </Link>
           <Link 
             to="/blog" 
@@ -50,9 +47,6 @@ const Header = () => {
           >
             <BookOpen className="w-4 h-4" />
             <span>Blog</span>
-            {isActive('/blog') && (
-              <div className="absolute bottom-[-1.25rem] w-full h-0.5 bg-purple-600 left-0"></div>
-            )}
           </Link>
         </div>
       </nav>

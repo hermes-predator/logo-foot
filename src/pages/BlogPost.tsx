@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -15,6 +15,7 @@ import FloatingCTA from '../components/blog/FloatingCTA';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { Card } from '@/components/ui/card';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -37,6 +38,14 @@ const BlogPost = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+  }, []);
+
+  // Animation d'entrée pour le contenu
+  useEffect(() => {
+    const article = document.querySelector('article');
+    if (article) {
+      article.classList.add('fade-in');
+    }
   }, []);
 
   if (!post) {
@@ -122,14 +131,14 @@ const BlogPost = () => {
   const markdownComponents = {
     // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
-      <p className="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">{children}</p>
+      <p className="text-gray-700 leading-7 mb-6 text-base md:text-lg">{children}</p>
     ),
     // Enhanced styling for headings with better hierarchy and spacing
     h1: ({children}: {children: React.ReactNode}) => (
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-12 mb-6 leading-tight">{children}</h1>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight">{children}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-4 border-purple-400 pl-3 py-1">{children}</h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
       <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">{children}</h3>
@@ -139,16 +148,16 @@ const BlogPost = () => {
     ),
     // Improved styling for links with better hover effects
     a: ({href, children}: {href: string; children: React.ReactNode}) => (
-      <Link to={href} className="text-purple-600 hover:text-purple-800 underline transition-colors duration-200">
+      <Link to={href} className="text-purple-600 hover:text-purple-800 underline decoration-2 underline-offset-2 transition-colors duration-200">
         {children}
       </Link>
     ),
     // Enhanced styling for lists with better spacing and bullets
     ul: ({children}: {children: React.ReactNode}) => (
-      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-2">{children}</ul>
+      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-purple-500">{children}</ul>
     ),
     ol: ({children}: {children: React.ReactNode}) => (
-      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-2">{children}</ol>
+      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-purple-500">{children}</ol>
     ),
     li: ({children}: {children: React.ReactNode}) => (
       <li className="mb-2 pl-1">{children}</li>
@@ -167,15 +176,15 @@ const BlogPost = () => {
     ),
     // Better table styling
     table: ({children}: {children: React.ReactNode}) => (
-      <div className="overflow-x-auto mb-6">
-        <table className="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">{children}</table>
+      <div className="overflow-x-auto mb-8 rounded-lg border border-gray-200 shadow-sm">
+        <table className="min-w-full divide-y divide-gray-200">{children}</table>
       </div>
     ),
     thead: ({children}: {children: React.ReactNode}) => (
       <thead className="bg-gray-50">{children}</thead>
     ),
     tbody: ({children}: {children: React.ReactNode}) => (
-      <tbody className="divide-y divide-gray-200">{children}</tbody>
+      <tbody className="divide-y divide-gray-200 bg-white">{children}</tbody>
     ),
     tr: ({children}: {children: React.ReactNode}) => (
       <tr>{children}</tr>
@@ -257,53 +266,64 @@ const BlogPost = () => {
       <div className="container mx-auto py-12 md:py-20 px-4">
         <Breadcrumbs />
         
-        {/* Contrôles de lecture */}
-        <div className="max-w-3xl mx-auto mb-4 flex justify-end items-center space-x-2">
-          <div className="flex items-center justify-end space-x-2 rounded-lg bg-white/80 p-2 shadow-sm backdrop-blur-sm">
-            <div className="flex items-center space-x-1">
-              <BookOpen className="h-4 w-4 text-gray-500" />
-              <span className="text-xs text-gray-500">{post.content.length > 0 ? `~${post.content.length / 1000 | 0} min` : ''}</span>
+        {/* Info Card pour les informations de l'article */}
+        <div className="max-w-3xl mx-auto mb-6">
+          <Card className="bg-white/80 backdrop-blur-sm p-4 shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-2">
+                <Calendar className="h-4 w-4 text-purple-500" />
+                <time 
+                  className="text-sm text-gray-600"
+                  dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
+                >
+                  {format(new Date(post.date), 'dd MMMM yyyy')}
+                </time>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <BookOpen className="h-4 w-4 text-purple-500" />
+                <span className="text-sm text-gray-600">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <Tag className="h-4 w-4 text-purple-500" />
+                <span className="text-sm font-medium text-purple-600">
+                  {BLOG_CATEGORIES[post.category]?.name || post.category}
+                </span>
+              </div>
             </div>
-          </div>
+          </Card>
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <article className="bg-gradient-to-b from-white to-gray-50/30 shadow-md rounded-xl p-6 md:p-12">
-            <div className="flex flex-wrap items-center gap-4 mb-6">
-              <time 
-                className="text-xs font-medium px-2 py-1 rounded-full inline-block border shadow-sm bg-white text-gray-600 border-gray-200"
-                dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
-              >
-                {format(new Date(post.date), 'dd-MM-yyyy')}
-              </time>
-              <div className="flex items-center gap-1 text-xs text-gray-600">
-                <Clock className="h-3.5 w-3.5" />
-                <span>{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
-              </div>
-              <div className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">
-                {BLOG_CATEGORIES[post.category]?.name || post.category}
-              </div>
-            </div>
+          <article className="bg-white shadow-md rounded-xl p-6 md:p-10 transition-all duration-300">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-800 transition-colors" itemProp="headline">
+              {post.title}
+            </h1>
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-gray-800" itemProp="headline">{post.title}</h1>
+            {post.excerpt && (
+              <div className="mb-8 text-lg text-gray-600 font-light italic border-l-4 border-purple-200 pl-4 py-1">
+                {post.excerpt}
+              </div>
+            )}
             
             {post.galleryImageId ? (
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-8 rounded-xl"
+                className="mb-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
               />
             ) : (
               <BlogImage
                 src={getDefaultImageSrc(post.category)}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-8 rounded-xl"
+                className="mb-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
                 isDefault={true}
               />
             )}
             
             {/* BlogCTA (FrontCloud offer) positioned right after the image */}
-            <div className="mb-8">
+            <div className="mb-8 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
               <BlogCTA />
             </div>
             
@@ -313,21 +333,41 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Updated refined download button with subtle hover effect but no color change */}
+            {/* Updated refined download button with subtle hover effect */}
             <div className="mt-12 flex justify-center">
               <Button 
                 asChild 
-                className="bg-white text-gray-800 border-gray-200 
-                         py-6 px-8 shadow-sm hover:shadow transition-shadow duration-200 
-                         group flex items-center gap-3 text-lg border"
-                variant="outline"
+                className="bg-gradient-to-r from-purple-500 to-purple-700 text-white
+                         py-6 px-8 shadow-md hover:shadow-lg transition-all duration-300 
+                         group flex items-center gap-3 text-lg border-0 hover:scale-[1.02]"
               >
                 <Link to="/" className="flex items-center gap-3">
-                  <Download className="h-6 w-6 text-gray-600" />
+                  <Download className="h-6 w-6 text-white" />
                   <span className="font-bold">Fichier ZIP de +8 600 logos de club de football</span>
-                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-gray-600 transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
+                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-white transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
                 </Link>
               </Button>
+            </div>
+            
+            {/* Navigations entre articles */}
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {id && Number(id) > 1 && (
+                <Link 
+                  to={`/blog/${Number(id) - 1}`} 
+                  className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3"
+                >
+                  <ArrowRight className="h-5 w-5 rotate-180 text-purple-600" />
+                  <span className="text-sm font-medium text-gray-700">Article précédent</span>
+                </Link>
+              )}
+              
+              <Link 
+                to={`/blog/${Number(id) + 1}`} 
+                className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-end gap-3 md:ml-auto"
+              >
+                <span className="text-sm font-medium text-gray-700">Article suivant</span>
+                <ArrowRight className="h-5 w-5 text-purple-600" />
+              </Link>
             </div>
           </article>
         </div>

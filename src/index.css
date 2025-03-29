@@ -187,3 +187,79 @@ img, video {
   pointer-events: auto;
   z-index: 10;
 }
+
+/* Add smooth transitioning for all anchor tags */
+a {
+  @apply transition-all duration-300;
+}
+
+/* Enhance blockquote styling */
+blockquote {
+  @apply relative;
+}
+
+blockquote::before {
+  content: """";
+  @apply absolute -left-2 -top-2 text-4xl text-purple-300 opacity-50 font-serif;
+}
+
+/* Enhanced list styling */
+ul.fancy-list li::before {
+  content: "•";
+  @apply text-purple-500 inline-block w-4 -ml-4;
+}
+
+/* Glass effect for cards */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/50 shadow-sm;
+}
+
+/* Article card hover effect */
+.article-card {
+  @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+}
+
+/* Table of contents styling */
+.toc {
+  @apply bg-purple-50/50 p-4 rounded-lg mb-6 border border-purple-100;
+}
+
+.toc-title {
+  @apply font-semibold text-lg mb-2 text-purple-800;
+}
+
+.toc-list {
+  @apply list-none pl-0 space-y-1;
+}
+
+.toc-item {
+  @apply pl-2 border-l-2 border-purple-200 hover:border-purple-500 transition-colors duration-200;
+}
+
+.toc-link {
+  @apply text-gray-700 hover:text-purple-700 no-underline block py-1 text-sm;
+}
+
+/* Enhanced image captions */
+.image-caption {
+  @apply text-sm text-center text-gray-500 mt-2 italic;
+}
+
+/* Article section dividers */
+.section-divider {
+  @apply my-10 border-t-2 border-purple-100 relative;
+}
+
+.section-divider::after {
+  content: "✦";
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-purple-300;
+}
+
+/* Code block styling */
+pre {
+  @apply bg-gray-800 text-gray-100 p-4 rounded-md overflow-x-auto my-6;
+}
+
+pre code {
+  @apply bg-transparent text-inherit p-0;
+}

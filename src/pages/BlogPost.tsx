@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -332,17 +333,17 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Mise à jour du texte du bouton comme demandé */}
+            {/* Apple-style button */}
             <div className="mt-12 flex justify-center">
-              <Button asChild>
-                <Link to="/" className="flex items-center gap-3">
-                  <Download className="h-4 w-4" />
-                  <span>Fichier ZIP de +8 600 logos de club de football</span>
-                </Link>
-              </Button>
+              <Link 
+                to="/" 
+                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-6 py-3 rounded-full border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2"
+              >
+                <Download className="h-5 w-5" />
+                <span>Fichier ZIP de +8 600 logos de club de football</span>
+              </Link>
             </div>
             
-            {/* Suppression des boutons de navigation entre articles */}
           </article>
         </div>
       </div>

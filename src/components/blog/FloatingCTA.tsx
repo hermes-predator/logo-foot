@@ -22,7 +22,7 @@ const FloatingCTA = () => {
               <Download className="h-5 w-5 text-white" />
             </span>
             <p className="text-white font-medium text-sm md:text-base">
-              <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot à télécharger
+              <span className="font-bold">⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~</span> 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 : +8 600 logos de foot à télécharger
             </p>
           </div>
           
@@ -30,12 +30,12 @@ const FloatingCTA = () => {
             <Button 
               asChild
               variant="secondary" 
-              className="bg-white hover:bg-gray-100 text-purple-700 px-4 py-2 text-sm md:text-base group"
+              className="bg-white hover:bg-gray-100 px-4 py-2 text-sm md:text-base group"
               size="sm"
             >
               <Link to="/" className="flex items-center gap-2">
-                Télécharger maintenant
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <span className="text-blue-600">Télécharger maintenant</span>
+                <ArrowRight className="h-4 w-4 text-blue-600 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             

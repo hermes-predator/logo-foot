@@ -12,6 +12,7 @@ import { chelseaLogoPost } from '../chelsea-logo';
 import { coventryCityLogoPost } from '../coventry-city-logo';
 import { crystalPalaceLogoPost } from '../crystal-palace-logo';
 import { evertonLogoPost } from '../everton-logo';
+import { hullCityLogoPost } from '../hull-city-logo';
 import { ipswichTownLogoPost } from '../ipswich-town-logo';
 import { leedsUnitedLogoPost } from '../leeds-united-logo';
 import { leicesterLogoPost } from '../leicester-logo';
@@ -43,6 +44,7 @@ export const englishClubPosts: BlogPost[] = [
   coventryCityLogoPost,
   crystalPalaceLogoPost,
   evertonLogoPost,
+  hullCityLogoPost,
   ipswichTownLogoPost,
   leedsUnitedLogoPost,
   leicesterLogoPost,
@@ -62,4 +64,3 @@ export const englishClubPosts: BlogPost[] = [
   westHamLogoPost,
   wolverhamptonLogoPost
 ];
-

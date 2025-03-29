@@ -333,42 +333,17 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
             
-            {/* Updated refined download button with subtle hover effect */}
+            {/* Restauration du bouton à son style original */}
             <div className="mt-12 flex justify-center">
-              <Button 
-                asChild 
-                className="bg-gradient-to-r from-purple-500 to-purple-700 text-white
-                         py-6 px-8 shadow-md hover:shadow-lg transition-all duration-300 
-                         group flex items-center gap-3 text-lg border-0 hover:scale-[1.02]"
-              >
+              <Button asChild>
                 <Link to="/" className="flex items-center gap-3">
-                  <Download className="h-6 w-6 text-white" />
-                  <span className="font-bold">Fichier ZIP de +8 600 logos de club de football</span>
-                  <ArrowRight className="h-0 w-0 opacity-0 group-hover:h-6 group-hover:w-6 group-hover:opacity-100 text-white transition-all duration-300 ease-out ml-0 group-hover:ml-1" />
+                  <Download className="h-4 w-4" />
+                  <span>Télécharger les logos de foot</span>
                 </Link>
               </Button>
             </div>
             
-            {/* Navigations entre articles */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
-              {id && Number(id) > 1 && (
-                <Link 
-                  to={`/blog/${Number(id) - 1}`} 
-                  className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3"
-                >
-                  <ArrowRight className="h-5 w-5 rotate-180 text-purple-600" />
-                  <span className="text-sm font-medium text-gray-700">Article précédent</span>
-                </Link>
-              )}
-              
-              <Link 
-                to={`/blog/${Number(id) + 1}`} 
-                className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-end gap-3 md:ml-auto"
-              >
-                <span className="text-sm font-medium text-gray-700">Article suivant</span>
-                <ArrowRight className="h-5 w-5 text-purple-600" />
-              </Link>
-            </div>
+            {/* Suppression des boutons de navigation entre articles */}
           </article>
         </div>
       </div>

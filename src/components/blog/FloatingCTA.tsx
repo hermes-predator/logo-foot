@@ -22,7 +22,7 @@ const FloatingCTA = () => {
               <Download className="h-5 w-5 text-white" />
             </span>
             <p className="text-white font-medium text-sm md:text-base">
-              <span className="font-bold">⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~</span> 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩 : +8 600 logos de foot à télécharger
+              <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot à télécharger
             </p>
           </div>
           

@@ -289,7 +289,7 @@ const BlogPost = () => {
               
               <div className="flex items-center gap-2">
                 <Tag className="h-4 w-4 text-gray-500" />
-                <span className="text-sm font-medium text-purple-600">
+                <span className="text-sm font-medium text-gray-600">
                   {BLOG_CATEGORIES[post.category]?.name || post.category}
                 </span>
               </div>

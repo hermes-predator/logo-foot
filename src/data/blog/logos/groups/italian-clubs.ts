@@ -7,6 +7,7 @@ import { atalantaLogoPost } from '../atalanta-logo';
 import { bolognaLogoPost } from '../bologna-logo';
 import { bresciaLogoPost } from '../brescia-logo';
 import { cagliariLogoPost } from '../cagliari-logo';
+import { cremoneseLogoPost } from '../cremonese-logo';
 import { empoliLogoPost } from '../empoli-logo';
 import { fiorentinaLogoPost } from '../fiorentina-logo';
 import { frosinoneLogoPost } from '../frosinone-logo';
@@ -37,6 +38,7 @@ export const italianClubPosts: BlogPost[] = [
   bolognaLogoPost,
   bresciaLogoPost,
   cagliariLogoPost,
+  cremoneseLogoPost,
   empoliLogoPost,
   fiorentinaLogoPost,
   frosinoneLogoPost,

@@ -15,6 +15,7 @@ import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
+import RelatedPosts from '../components/blog/RelatedPosts';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -361,6 +362,12 @@ const BlogPost = () => {
             </div>
             
           </article>
+          
+          {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
+          <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
+            <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
+          </div>
+          
           {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
           <div className="h-24 md:h-28 w-full"></div>
         </div>

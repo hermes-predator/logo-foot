@@ -169,6 +169,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="h-4 w-4 transition-transform" 
                 style={{
                   animation: 'cartMove 1.5s ease-in-out infinite',
+                  fill: '#FFCA28',
+                  stroke: '#FFCA28',
                 }}
               />
               <style>{`

@@ -23,7 +23,7 @@ const Breadcrumbs = () => {
   };
 
   return (
-    <Breadcrumb className="pt-4 mb-8 pl-4">
+    <Breadcrumb className="pt-3 mb-4 pl-4">
       <BreadcrumbList>
         <BreadcrumbItem>
           <Link to="/" className="transition-colors hover:text-foreground">

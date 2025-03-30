@@ -88,10 +88,10 @@ const Blog = () => {
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
-      <main className="container mx-auto px-4 py-6">
+      <main className="container mx-auto px-4 py-3">
         <Breadcrumbs />
         <BlogHeader />
-        <div className="mt-6">
+        <div className="mt-4">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
           {totalPages > 1 && (
             <div className="px-4">
@@ -103,7 +103,7 @@ const Blog = () => {
             </div>
           )}
         </div>
-        <div className="mt-10 px-4">
+        <div className="mt-8 px-4">
           <BlogCTA />
         </div>
       </main>

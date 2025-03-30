@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -165,7 +164,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <Download className="h-4 w-4" />
-            Acheter maintenant
+            Achat rapide
           </Button>
         </div>
       </div>

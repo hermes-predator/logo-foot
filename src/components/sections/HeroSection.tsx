@@ -95,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - Shopping bag animation */}
+        {/* CTA buttons with enhanced interactions - New shopping bag animation */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -168,25 +168,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               <ShoppingBag 
                 className="h-4 w-4 transition-transform" 
                 style={{
-                  animation: 'bagBounce 1.5s ease-in-out infinite',
-                  fill: 'rgba(255, 193, 7, 0.5)',
-                  stroke: '#FFC107',
-                  strokeWidth: 2
+                  animation: 'bagFill 1.8s ease-in-out infinite',
                 }}
               />
               <style>{`
-                @keyframes bagBounce {
+                @keyframes bagFill {
                   0%, 100% { transform: translateY(0); }
-                  40% { transform: translateY(-3px); }
-                  60% { transform: translateY(2px); }
-                  75% { transform: scale(1.15) rotate(-5deg); }
-                  85% { transform: scale(1.05) rotate(5deg); }
-                  90% { transform: scale(1); }
+                  50% { transform: translateY(-2px) scale(1.1); }
+                  60% { transform: translateY(0) scale(1.05); }
+                  70% { transform: translateY(-1px) scale(1.03); }
+                  80% { transform: translateY(0) scale(1.01); }
                 }
               `}</style>
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/30 to-amber-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400/30 to-emerald-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '3s' }}></div>
             </div>
-            Achat Rapide
+            Acheter
           </Button>
         </div>
       </div>

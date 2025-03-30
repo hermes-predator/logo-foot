@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -169,7 +168,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="h-4 w-4 transition-transform" 
                 style={{
                   animation: 'cartMove 1.5s ease-in-out infinite',
-                  fill: '#FFC107',
                   stroke: '#FFC107'
                 }}
               />

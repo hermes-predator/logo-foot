@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -177,8 +176,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     <ShoppingCart 
                       className="h-4 w-4 transition-all animate-[cartMove_1.5s_ease-in-out_infinite]" 
                       style={{
-                        color: "#FFC107",
-                        filter: 'drop-shadow(0 0 3px rgba(255, 193, 7, 0.8))'
+                        color: "#FEF7CD",
+                        filter: 'drop-shadow(0 0 3px rgba(254, 247, 205, 0.8))'
                       }}
                     />
                   </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -170,7 +171,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   animation: 'bagFill 1.8s ease-in-out infinite',
                 }}
               />
-              <style jsx global>{`
+              <style>{`
                 @keyframes bagFill {
                   0%, 100% { transform: translateY(0); }
                   50% { transform: translateY(-2px) scale(1.1); }
@@ -181,7 +182,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               `}</style>
               <div className="absolute inset-0 bg-gradient-to-r from-green-400/30 to-emerald-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '3s' }}></div>
             </div>
-            Achat rapide
+            Acheter
           </Button>
         </div>
       </div>

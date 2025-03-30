@@ -156,37 +156,46 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogContent>
           </Dialog>
           
-          <Button
-            variant="default"
-            size="lg"
-            onClick={() => {
-              const returnUrl = `${window.location.origin}/payment-success`;
-              window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
-            }}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
-          >
-            <div className="relative">
-              <ShoppingCart 
-                className="h-4 w-4 transition-transform" 
-                style={{
-                  animation: 'cartMove 1.5s ease-in-out infinite',
-                  stroke: '#FFF0A0' // Couleur dorée modérée (entre jaune clair et or)
-                }}
-              />
-              <style>{`
-                @keyframes cartMove {
-                  0%, 100% { transform: translateX(0); }
-                  40% { transform: translateX(-2px); }
-                  60% { transform: translateX(3px) translateY(-1px); }
-                  75% { transform: translateX(1px) translateY(-1px); }
-                  85% { transform: scale(1.1); }
-                  90% { transform: scale(1); }
-                }
-              `}</style>
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/40 to-amber-200/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
-            </div>
-            Achat Rapide
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="default"
+                  size="lg"
+                  onClick={() => {
+                    const returnUrl = `${window.location.origin}/payment-success`;
+                    window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
+                  }}
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
+                >
+                  <div className="relative">
+                    <ShoppingCart 
+                      className="h-4 w-4 transition-transform" 
+                      style={{
+                        animation: 'cartMove 1.5s ease-in-out infinite',
+                        stroke: '#FFE6A0' // Couleur dorée modérée (entre jaune clair et or)
+                      }}
+                    />
+                    <style>{`
+                      @keyframes cartMove {
+                        0%, 100% { transform: translateX(0); }
+                        40% { transform: translateX(-2px); }
+                        60% { transform: translateX(3px) translateY(-1px); }
+                        75% { transform: translateX(1px) translateY(-1px); }
+                        85% { transform: scale(1.1); }
+                        90% { transform: scale(1); }
+                      }
+                    `}</style>
+                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/40 to-amber-200/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
+                  </div>
+                  Achat Rapide
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="bottom" align="center" className="bg-indigo-50 border border-indigo-100 text-indigo-700 font-medium shadow-md">
+                <p className="text-xs py-1">Accès immédiat à plus de 8700 ressources</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
     </section>

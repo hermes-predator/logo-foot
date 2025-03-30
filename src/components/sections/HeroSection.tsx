@@ -100,19 +100,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - ADDED: Buy Now button */}
+        {/* CTA buttons with optimized layout and visual hierarchy */}
         <div 
           className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
+          {/* Primary CTA - Buy Now Button */}
+          <Button
+            variant="default"
+            size="lg"
+            onClick={handleBuyNow}
+            className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base font-semibold gap-2 hover:-translate-y-1 px-8 py-3 h-auto order-1"
+          >
+            <ShoppingCart className="h-5 w-5" />
+            Acheter maintenant (10€)
+          </Button>
+          
+          {/* Secondary CTA - Detail Button */}
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+                className="w-full sm:w-auto group flex items-center justify-center gap-2 px-6 py-3 bg-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden order-3 sm:order-2"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
-                <Folder size={16} className="mr-1 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-medium text-sm text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                <Folder size={18} className="mr-1 text-gray-700 transition-colors duration-300" />
+                <span className="relative z-10 font-medium text-sm text-gray-700 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -160,26 +172,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogContent>
           </Dialog>
           
-          {/* New Buy Now Button */}
-          <Button
-            variant="default"
-            size="lg"
-            onClick={handleBuyNow}
-            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
-          >
-            <ShoppingCart className="h-4 w-4" />
-            Acheter maintenant (10€)
-          </Button>
-          
+          {/* Tertiary CTA - Scroll To Payment */}
           <Button
             variant="default"
             size="lg"
             onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
+            className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-6 py-2.5 h-auto order-2 sm:order-3"
           >
-            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
-            Download
+            <Download className="h-4 w-4 animate-bounce" style={{ animationDuration: '1.5s' }} />
+            Voir plus d'exemples
           </Button>
+        </div>
+        
+        {/* Price guarantee badge */}
+        <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 border border-green-100 text-green-700 text-sm font-medium animate-fade-in" style={{ animationDuration: '1s', animationDelay: '1.2s' }}>
+          <ShieldCheck className="w-4 h-4" />
+          <span>Satisfait ou remboursé sous 10 jours</span>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -22,6 +23,11 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
+  
+  const handleBuyNow = () => {
+    const returnUrl = `${window.location.origin}/payment-success`;
+    window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
+  };
   
   return (
     <section className="relative pt-12 pb-10 px-4 overflow-hidden">
@@ -94,9 +100,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - MODIFIED: reverted back to ChevronDown icon */}
+        {/* CTA buttons with enhanced interactions - ADDED: Buy Now button */}
         <div 
-          className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
           <Dialog>
@@ -153,6 +159,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               </DialogHeader>
             </DialogContent>
           </Dialog>
+          
+          {/* New Buy Now Button */}
+          <Button
+            variant="default"
+            size="lg"
+            onClick={handleBuyNow}
+            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
+          >
+            <ShoppingCart className="h-4 w-4" />
+            Acheter maintenant (10€)
+          </Button>
           
           <Button
             variant="default"

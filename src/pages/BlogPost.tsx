@@ -361,6 +361,8 @@ const BlogPost = () => {
             </div>
             
           </article>
+          {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
+          <div className="h-24 md:h-28 w-full"></div>
         </div>
       </div>
     </div>

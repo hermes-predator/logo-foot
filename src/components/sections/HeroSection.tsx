@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -187,7 +188,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     `}</style>
                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/40 to-amber-200/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
                   </div>
-                  Achat Rapide
+                  Achat rapide (10€)
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="top" align="center" className="bg-white border border-gray-300 text-black font-medium shadow-md">

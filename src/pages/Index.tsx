@@ -67,10 +67,18 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <main>
         <div className="container mx-auto">
-          <HeroSection 
-            onScrollToPayment={scrollToPayment} 
-          />
-          <ProductGallery />
+          {/* Reduced bottom padding on the hero section */}
+          <div className="pb-0">
+            <HeroSection 
+              onScrollToPayment={scrollToPayment} 
+            />
+          </div>
+          
+          {/* Reduced top padding on the ProductGallery */}
+          <div className="pt-2">
+            <ProductGallery />
+          </div>
+          
           <div id="payment-section">
             <PaymentSection />
           </div>

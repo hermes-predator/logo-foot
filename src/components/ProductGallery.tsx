@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import ClubGallery from './gallery/ClubGallery';
 import CompetitionGallery from './gallery/CompetitionGallery';
@@ -17,8 +18,8 @@ const ProductGallery = () => {
 
   return (
     <section className="w-full min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-8 sm:py-12">
-        <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
+      <div className="container mx-auto px-4 py-4 sm:py-8">
+        <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Logos des Clubs de Foot</h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6">Plus de 8 600 logo foot des clubs de football en haute qualité</p>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,7 +24,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   
   return (
-    <section className="relative pt-12 pb-20 px-4 overflow-hidden">
+    <section className="relative pt-12 pb-10 px-4 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />

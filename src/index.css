@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -139,7 +138,7 @@
   }
 }
 
-/* New shine effect animation for CTA buttons */
+/* Shine effect animation for CTA buttons */
 @keyframes shine {
   0% {
     left: -100%;

@@ -100,27 +100,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with optimized layout and visual hierarchy */}
+        {/* CTA buttons with reordered layout - "Descriptif du ZIP" first, "Acheter maintenant" second, third button removed */}
         <div 
           className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
         >
-          {/* Primary CTA - Buy Now Button */}
-          <Button
-            variant="default"
-            size="lg"
-            onClick={handleBuyNow}
-            className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base font-semibold gap-2 hover:-translate-y-1 px-8 py-3 h-auto order-1"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            Acheter maintenant (10€)
-          </Button>
-          
-          {/* Secondary CTA - Detail Button */}
+          {/* First CTA - Detail Button */}
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="w-full sm:w-auto group flex items-center justify-center gap-2 px-6 py-3 bg-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden order-3 sm:order-2"
+                className="w-full sm:w-auto group flex items-center justify-center gap-2 px-6 py-3 bg-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden order-1"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
                 <Folder size={18} className="mr-1 text-gray-700 transition-colors duration-300" />
@@ -172,15 +161,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogContent>
           </Dialog>
           
-          {/* Tertiary CTA - Scroll To Payment */}
+          {/* Second CTA - Buy Now Button */}
           <Button
             variant="default"
             size="lg"
-            onClick={onScrollToPayment}
-            className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-6 py-2.5 h-auto order-2 sm:order-3"
+            onClick={handleBuyNow}
+            className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 shadow-lg hover:shadow-xl transition-all duration-300 text-base font-semibold gap-2 hover:-translate-y-1 px-8 py-3 h-auto order-2"
           >
-            <Download className="h-4 w-4 animate-bounce" style={{ animationDuration: '1.5s' }} />
-            Voir plus d'exemples
+            <ShoppingCart className="h-5 w-5" />
+            Acheter maintenant (10€)
           </Button>
         </div>
         

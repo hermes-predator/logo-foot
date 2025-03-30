@@ -191,7 +191,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   Achat Rapide
                 </Button>
               </TooltipTrigger>
-              <TooltipContent side="top" align="center" className="bg-indigo-50 border border-indigo-100 text-indigo-700 font-medium shadow-md">
+              <TooltipContent side="top" align="center" className="bg-blue-100 border border-blue-200 text-black font-medium shadow-md">
                 <p className="text-xs py-1">Accès immédiat après paiement</p>
               </TooltipContent>
             </Tooltip>

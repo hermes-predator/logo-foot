@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, BookMarked, Diamond, Sparkles, Award } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -54,7 +54,7 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
-        <div className="container mx-auto py-20 px-4">
+        <div className="container mx-auto py-12 px-4">
           <Helmet>
             <title>Article Non Trouvé | Blog Logo Foot</title>
             <meta 
@@ -134,26 +134,26 @@ const BlogPost = () => {
   const markdownComponents = {
     // Add styling to paragraphs with improved line height and spacing
     p: ({children}: {children: React.ReactNode}) => (
-      <p className="text-gray-700 leading-7 mb-6 text-base md:text-lg">{children}</p>
+      <p className="text-gray-700 leading-7 mb-4 text-base md:text-lg">{children}</p>
     ),
     // Sobres styling for headings - removed the ornaments/icons
     h1: ({children}: {children: React.ReactNode}) => (
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-12 mb-6 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-8 mb-4 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
         {children}
       </h1>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight border-l-2 border-gray-300 pl-3 py-1">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-8 mb-4 leading-tight border-l-2 border-gray-300 pl-3 py-1">
         {children}
       </h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
-      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 leading-tight">
+      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-6 mb-3 leading-tight">
         {children}
       </h3>
     ),
     h4: ({children}: {children: React.ReactNode}) => (
-      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-6 mb-3">
+      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-5 mb-2">
         {children}
       </h4>
     ),
@@ -165,17 +165,17 @@ const BlogPost = () => {
     ),
     // Enhanced styling for lists with better spacing and bullets
     ul: ({children}: {children: React.ReactNode}) => (
-      <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-gray-400">{children}</ul>
+      <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1 ml-4 marker:text-gray-400">{children}</ul>
     ),
     ol: ({children}: {children: React.ReactNode}) => (
-      <ol className="list-decimal pl-6 mb-6 text-gray-700 space-y-2 ml-4 marker:text-gray-400">{children}</ol>
+      <ol className="list-decimal pl-6 mb-4 text-gray-700 space-y-1 ml-4 marker:text-gray-400">{children}</ol>
     ),
     li: ({children}: {children: React.ReactNode}) => (
-      <li className="mb-2 pl-1">{children}</li>
+      <li className="mb-1 pl-1">{children}</li>
     ),
     // Enhanced styling for blockquotes with more distinct design
     blockquote: ({children}: {children: React.ReactNode}) => (
-      <blockquote className="border-l-4 border-gray-300 pl-4 py-2 italic my-6 text-gray-600 bg-gray-50/30 rounded-r">{children}</blockquote>
+      <blockquote className="border-l-4 border-gray-300 pl-4 py-1 italic my-4 text-gray-600 bg-gray-50/30 rounded-r">{children}</blockquote>
     ),
     // Better styling for code blocks
     code: ({children}: {children: React.ReactNode}) => (
@@ -183,11 +183,11 @@ const BlogPost = () => {
     ),
     // Add styling for horizontal rules
     hr: () => (
-      <hr className="my-8 border-t border-gray-200" />
+      <hr className="my-6 border-t border-gray-200" />
     ),
     // Better table styling
     table: ({children}: {children: React.ReactNode}) => (
-      <div className="overflow-x-auto mb-8 rounded-lg border border-gray-200 shadow-sm">
+      <div className="overflow-x-auto mb-6 rounded-lg border border-gray-200 shadow-sm">
         <table className="min-w-full divide-y divide-gray-200">{children}</table>
       </div>
     ),
@@ -274,13 +274,13 @@ const BlogPost = () => {
       <BlogSchemaMarkup post={post} />
       <FloatingCTA />
       
-      <div className="container mx-auto py-12 md:py-20 px-4">
+      <div className="container mx-auto py-6 md:py-10 px-4">
         <Breadcrumbs />
         
-        {/* Info Card pour les informations de l'article */}
-        <div className="max-w-3xl mx-auto mb-6">
-          <Card className="bg-white/80 backdrop-blur-sm p-4 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-4">
+        {/* Info Card pour les informations de l'article - Placé plus haut et condensé */}
+        <div className="max-w-3xl mx-auto mb-4">
+          <Card className="bg-white/80 backdrop-blur-sm p-2 shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-gray-500" />
                 <time 
@@ -307,13 +307,13 @@ const BlogPost = () => {
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <article className="bg-white shadow-md rounded-xl p-6 md:p-10 transition-all duration-300">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900" itemProp="headline">
+          <article className="bg-white shadow-md rounded-xl p-4 md:p-6 transition-all duration-300">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900" itemProp="headline">
               {post.title}
             </h1>
             
             {post.excerpt && (
-              <div className="mb-8 text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-4 py-1">
+              <div className="mb-6 text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-4 py-1">
                 {post.excerpt}
               </div>
             )}
@@ -322,19 +322,19 @@ const BlogPost = () => {
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="mb-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
               />
             ) : (
               <BlogImage
                 src={getDefaultImageSrc(post.category)}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="mb-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
                 isDefault={true}
               />
             )}
             
             {/* BlogCTA (FrontCloud offer) positioned right after the image */}
-            <div className="mb-8 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
+            <div className="mb-6 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
               <BlogCTA />
             </div>
             
@@ -345,7 +345,7 @@ const BlogPost = () => {
             </div>
             
             {/* Apple-style button with lighter border radius and dynamic arrow */}
-            <div className="mt-12 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <Link 
                 to="/" 
                 className="bg-white text-blue-500 hover:text-blue-600 font-medium px-6 py-3 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"

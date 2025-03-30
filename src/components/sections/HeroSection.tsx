@@ -162,13 +162,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               const returnUrl = `${window.location.origin}/payment-success`;
               window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
             }}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <div className="relative">
               <ShoppingCart 
                 className="h-4 w-4 transition-transform" 
                 style={{
                   animation: 'cartMove 1.5s ease-in-out infinite',
+                  stroke: '#FFD700'
                 }}
               />
               <style>{`

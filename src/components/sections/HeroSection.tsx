@@ -183,7 +183,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               `}</style>
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/30 to-amber-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
             </div>
-            Acheter
+            Achat Rapide
           </Button>
         </div>
       </div>

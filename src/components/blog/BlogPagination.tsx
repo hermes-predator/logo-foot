@@ -18,7 +18,7 @@ interface BlogPaginationProps {
 
 const BlogPagination = ({ currentPage, totalPages, setCurrentPage }: BlogPaginationProps) => {
   return (
-    <Pagination className="mt-8">
+    <Pagination className="mt-6">
       <PaginationContent>
         {currentPage > 1 && (
           <PaginationItem>

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -95,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - Now using Download icon with animation */}
+        {/* CTA buttons with enhanced interactions - New shopping bag animation */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -165,8 +164,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <div className="relative">
-              <Download className="h-4 w-4 animate-bounce" style={{ animationDuration: '2s' }} />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-400/30 to-indigo-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '3s' }}></div>
+              <ShoppingBag 
+                className="h-4 w-4 transition-transform" 
+                style={{
+                  animation: 'bagFill 1.8s ease-in-out infinite',
+                }}
+              />
+              <style jsx global>{`
+                @keyframes bagFill {
+                  0%, 100% { transform: translateY(0); }
+                  50% { transform: translateY(-2px) scale(1.1); }
+                  60% { transform: translateY(0) scale(1.05); }
+                  70% { transform: translateY(-1px) scale(1.03); }
+                  80% { transform: translateY(0) scale(1.01); }
+                }
+              `}</style>
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400/30 to-emerald-400/30 rounded-full blur-sm animate-pulse" style={{ animationDuration: '3s' }}></div>
             </div>
             Achat rapide
           </Button>

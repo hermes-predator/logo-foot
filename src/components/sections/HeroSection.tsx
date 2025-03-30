@@ -177,7 +177,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     <ShoppingCart 
                       className="h-4 w-4 transition-all animate-[cartMove_1.5s_ease-in-out_infinite]" 
                       style={{
-                        filter: 'drop-shadow(0 0 3px rgba(255, 255, 128, 0.8))'
+                        color: "#FFC107",
+                        filter: 'drop-shadow(0 0 3px rgba(255, 193, 7, 0.8))'
                       }}
                     />
                   </div>

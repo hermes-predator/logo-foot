@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -132,28 +131,28 @@ const BlogPost = () => {
   };
 
   const markdownComponents = {
-    // Add styling to paragraphs with improved line height and spacing
+    // Reduced spacing for paragraphs
     p: ({children}: {children: React.ReactNode}) => (
-      <p className="text-gray-700 leading-7 mb-4 text-base md:text-lg">{children}</p>
+      <p className="text-gray-700 leading-7 mb-3 text-base md:text-lg">{children}</p>
     ),
-    // Sobres styling for headings - removed the ornaments/icons
+    // Reduced spacing for headings
     h1: ({children}: {children: React.ReactNode}) => (
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-8 mb-4 leading-tight pl-0 md:pl-2 pb-2 border-b border-gray-200">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-6 mb-3 leading-tight pl-0 md:pl-2 pb-1 border-b border-gray-200">
         {children}
       </h1>
     ),
     h2: ({children}: {children: React.ReactNode}) => (
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-8 mb-4 leading-tight border-l-2 border-gray-300 pl-3 py-1">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-6 mb-3 leading-tight border-l-2 border-gray-300 pl-3 py-1">
         {children}
       </h2>
     ),
     h3: ({children}: {children: React.ReactNode}) => (
-      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-6 mb-3 leading-tight">
+      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mt-5 mb-2 leading-tight">
         {children}
       </h3>
     ),
     h4: ({children}: {children: React.ReactNode}) => (
-      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-5 mb-2">
+      <h4 className="text-lg md:text-xl font-semibold text-gray-800 mt-4 mb-2">
         {children}
       </h4>
     ),
@@ -165,10 +164,10 @@ const BlogPost = () => {
     ),
     // Enhanced styling for lists with better spacing and bullets
     ul: ({children}: {children: React.ReactNode}) => (
-      <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1 ml-4 marker:text-gray-400">{children}</ul>
+      <ul className="list-disc pl-6 mb-3 text-gray-700 space-y-1 ml-3 marker:text-gray-400">{children}</ul>
     ),
     ol: ({children}: {children: React.ReactNode}) => (
-      <ol className="list-decimal pl-6 mb-4 text-gray-700 space-y-1 ml-4 marker:text-gray-400">{children}</ol>
+      <ol className="list-decimal pl-6 mb-3 text-gray-700 space-y-1 ml-3 marker:text-gray-400">{children}</ol>
     ),
     li: ({children}: {children: React.ReactNode}) => (
       <li className="mb-1 pl-1">{children}</li>
@@ -274,31 +273,31 @@ const BlogPost = () => {
       <BlogSchemaMarkup post={post} />
       <FloatingCTA />
       
-      <div className="container mx-auto py-6 md:py-10 px-4">
+      <div className="container mx-auto py-3 md:py-5 px-3">
         <Breadcrumbs />
         
-        {/* Info Card pour les informations de l'article - Placé plus haut et condensé */}
-        <div className="max-w-3xl mx-auto mb-4">
-          <Card className="bg-white/80 backdrop-blur-sm p-2 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-gray-500" />
+        {/* Info Card plus compact */}
+        <div className="max-w-3xl mx-auto mb-2">
+          <Card className="bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <div className="flex items-center gap-1.5">
+                <Calendar className="h-3.5 w-3.5 text-gray-500" />
                 <time 
-                  className="text-sm text-black"
+                  className="text-black"
                   dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
                 >
                   {format(new Date(post.date), 'dd MMMM yyyy')}
                 </time>
               </div>
               
-              <div className="flex items-center gap-2">
-                <BookOpen className="h-4 w-4 text-gray-500" />
-                <span className="text-sm text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
+              <div className="flex items-center gap-1.5">
+                <BookOpen className="h-3.5 w-3.5 text-gray-500" />
+                <span className="text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
               </div>
               
-              <div className="flex items-center gap-2">
-                <Tag className="h-4 w-4 text-gray-500" />
-                <span className="text-sm font-medium text-black">
+              <div className="flex items-center gap-1.5">
+                <Tag className="h-3.5 w-3.5 text-gray-500" />
+                <span className="font-medium text-black">
                   {BLOG_CATEGORIES[post.category]?.name || post.category}
                 </span>
               </div>
@@ -307,13 +306,13 @@ const BlogPost = () => {
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <article className="bg-white shadow-md rounded-xl p-4 md:p-6 transition-all duration-300">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900" itemProp="headline">
+          <article className="bg-white shadow-md rounded-xl p-3 md:p-5 transition-all duration-300">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight text-gray-900" itemProp="headline">
               {post.title}
             </h1>
             
             {post.excerpt && (
-              <div className="mb-6 text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-4 py-1">
+              <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-3 py-1">
                 {post.excerpt}
               </div>
             )}
@@ -322,19 +321,19 @@ const BlogPost = () => {
               <BlogImage
                 src={`/blog-images/${post.id}.png`}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
               />
             ) : (
               <BlogImage
                 src={getDefaultImageSrc(post.category)}
                 alt={`${post.title.split(':')[0]}`}
-                className="mb-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
                 isDefault={true}
               />
             )}
             
-            {/* BlogCTA (FrontCloud offer) positioned right after the image */}
-            <div className="mb-6 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
+            {/* BlogCTA (FrontCloud offer) positioned right after the image - with reduced vertical margin */}
+            <div className="mb-4 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
               <BlogCTA />
             </div>
             
@@ -345,10 +344,10 @@ const BlogPost = () => {
             </div>
             
             {/* Apple-style button with lighter border radius and dynamic arrow */}
-            <div className="mt-8 flex justify-center">
+            <div className="mt-5 flex justify-center">
               <Link 
                 to="/" 
-                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-6 py-3 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
+                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-5 py-2 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
                 onMouseEnter={() => setIsButtonHovered(true)}
                 onMouseLeave={() => setIsButtonHovered(false)}
               >

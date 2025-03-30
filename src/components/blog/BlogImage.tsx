@@ -57,7 +57,7 @@ const BlogImage = ({
   }, []);
 
   return (
-    <div className="my-8 protected-content" itemScope itemType="https://schema.org/ImageObject" ref={containerRef}>
+    <div className="my-5 protected-content" itemScope itemType="https://schema.org/ImageObject" ref={containerRef}>
       <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
@@ -73,7 +73,7 @@ const BlogImage = ({
           draggable="false"
         />
       </AspectRatio>
-      <p className="mt-2 text-sm text-gray-500 text-center italic" itemProp="caption">{alt}</p>
+      <p className="mt-1 text-xs text-gray-500 text-center italic" itemProp="caption">{alt}</p>
       <meta itemProp="name" content={imageTitle} />
       <meta itemProp="description" content={alt} />
       <meta itemProp="representativeOfPage" content={isDefault ? "false" : "true"} />

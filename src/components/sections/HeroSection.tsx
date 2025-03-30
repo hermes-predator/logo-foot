@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -169,7 +170,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 className="h-4 w-4 transition-transform" 
                 style={{
                   animation: 'cartMove 1.5s ease-in-out infinite',
-                  stroke: '#FFE6A0' // Couleur dorée légèrement plus foncée
+                  stroke: '#FFF0A0' // Couleur dorée modérée (entre jaune clair et or)
                 }}
               />
               <style>{`
@@ -182,7 +183,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   90% { transform: scale(1); }
                 }
               `}</style>
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-300/40 to-amber-300/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/40 to-amber-200/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
             </div>
             Achat Rapide
           </Button>

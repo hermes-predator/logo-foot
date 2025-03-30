@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, ChevronDown, FileText, RefreshCcw, HelpCircle, Download, Sparkles } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -94,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - MODIFIED: reverted back to ChevronDown icon */}
+        {/* CTA buttons with enhanced interactions - MODIFIED: Replaced ChevronDown icon with a main CTA button */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -157,11 +158,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <Button
             variant="default"
             size="lg"
-            onClick={onScrollToPayment}
+            onClick={() => {
+              const returnUrl = `${window.location.origin}/payment-success`;
+              window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
+            }}
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
-            <ChevronDown className="h-4 w-4 animate-bounce" style={{ animationDuration: '1s' }} />
-            Download
+            <Download className="h-4 w-4" />
+            Acheter maintenant
           </Button>
         </div>
       </div>

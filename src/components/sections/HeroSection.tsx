@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -95,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - New shopping cart animation */}
+        {/* CTA buttons with enhanced interactions - Shopping bag animation */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -165,19 +165,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-2 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
           >
             <div className="relative">
-              <ShoppingCart 
+              <ShoppingBag 
                 className="h-4 w-4 transition-transform" 
                 style={{
-                  animation: 'cartMove 1.5s ease-in-out infinite',
+                  animation: 'bagBounce 1.5s ease-in-out infinite',
+                  fill: 'rgba(255, 193, 7, 0.5)',
+                  stroke: '#FFC107',
+                  strokeWidth: 2
                 }}
               />
               <style>{`
-                @keyframes cartMove {
-                  0%, 100% { transform: translateX(0); }
-                  40% { transform: translateX(-2px); }
-                  60% { transform: translateX(3px) translateY(-1px); }
-                  75% { transform: translateX(1px) translateY(-1px); }
-                  85% { transform: scale(1.1); }
+                @keyframes bagBounce {
+                  0%, 100% { transform: translateY(0); }
+                  40% { transform: translateY(-3px); }
+                  60% { transform: translateY(2px); }
+                  75% { transform: scale(1.15) rotate(-5deg); }
+                  85% { transform: scale(1.05) rotate(5deg); }
                   90% { transform: scale(1); }
                 }
               `}</style>

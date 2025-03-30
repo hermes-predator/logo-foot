@@ -96,7 +96,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons with enhanced interactions - New shopping cart animation */}
+        {/* CTA buttons with enhanced interactions and NEW enhanced effects */}
         <div 
           className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
           style={{ animationDuration: '1s', animationDelay: '1s' }}
@@ -166,14 +166,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     const returnUrl = `${window.location.origin}/payment-success`;
                     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
                   }}
-                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto relative group overflow-hidden"
                 >
+                  {/* Enhanced pulsating halo effect */}
+                  <div className="absolute inset-0 bg-white/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  {/* Outer glow animation */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 animate-pulse transition-opacity duration-300" 
+                       style={{ animationDuration: '2s' }}></div>
+                  
+                  {/* Inner glow for the cart icon */}
                   <div className="relative">
                     <ShoppingCart 
-                      className="h-4 w-4 transition-transform" 
+                      className="h-4 w-4 transition-all" 
                       style={{
-                        animation: 'cartMove 1.5s ease-in-out infinite',
-                        stroke: '#FFE6A0' // Couleur dorée modérée (entre jaune clair et or)
+                        animation: 'cartMove 1.5s ease-in-out infinite, pulse 2s infinite',
+                        stroke: '#FFE6A0',
+                        filter: 'drop-shadow(0 0 3px rgba(255, 230, 160, 0.6))'
                       }}
                     />
                     <style>{`
@@ -185,10 +194,36 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                         85% { transform: scale(1.1); }
                         90% { transform: scale(1); }
                       }
+                      
+                      @keyframes pulse {
+                        0%, 100% { opacity: 1; }
+                        50% { opacity: 0.85; }
+                      }
+                      
+                      @keyframes glow {
+                        0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 230, 160, 0.6)); }
+                        50% { filter: drop-shadow(0 0 10px rgba(255, 230, 160, 0.8)); }
+                      }
                     `}</style>
-                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/40 to-amber-200/40 rounded-full blur-sm animate-pulse" style={{ animationDuration: '2s' }}></div>
                   </div>
-                  Achat rapide (10€)
+                  
+                  {/* Enhanced text with subtle animation */}
+                  <span className="relative z-10 font-medium tracking-wide group-hover:tracking-wider transition-all duration-300">
+                    Achat rapide (10€)
+                  </span>
+                  
+                  {/* Shine effect */}
+                  <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
+                  
+                  <style jsx>{`
+                    @keyframes shine {
+                      0% { left: -100%; opacity: 0.5; }
+                      100% { left: 100%; opacity: 0.3; }
+                    }
+                    .group:hover .animate-shine {
+                      animation: shine 1.3s ease-out infinite;
+                    }
+                  `}</style>
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="top" align="center" className="bg-white border border-gray-300 text-black font-medium shadow-md">

@@ -139,6 +139,22 @@
   }
 }
 
+/* New shine effect animation for CTA buttons */
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0.3;
+  }
+  100% {
+    left: 100%;
+    opacity: 0.3;
+  }
+}
+
+.animate-shine {
+  animation: shine 1.3s ease-out infinite;
+}
+
 /* Ensure buttons have proper cursor */
 a, button, .cursor-pointer, [role="button"] {
   cursor: pointer !important;

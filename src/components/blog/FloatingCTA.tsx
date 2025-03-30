@@ -1,18 +1,10 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, X } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingCTA = () => {
-  const [dismissed, setDismissed] = useState(false);
-
-  const handleDismiss = () => {
-    setDismissed(true);
-  };
-
-  if (dismissed) return null;
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 animate-fade-in">
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg py-3 px-4 md:px-6">
@@ -28,7 +20,7 @@ const FloatingCTA = () => {
             </Link>
           </div>
           
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <Button 
               asChild
               variant="secondary" 
@@ -40,14 +32,6 @@ const FloatingCTA = () => {
                 <ArrowRight className="h-4 w-4 text-blue-600 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            
-            <button 
-              onClick={handleDismiss} 
-              className="text-white/80 hover:text-white rounded-full p-1.5 hover:bg-white/10 transition-colors"
-              aria-label="Fermer"
-            >
-              <X className="h-4 w-4" />
-            </button>
           </div>
         </div>
       </div>

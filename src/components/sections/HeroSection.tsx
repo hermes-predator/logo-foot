@@ -172,13 +172,29 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 animate-pulse transition-opacity duration-300" 
                        style={{ animationDuration: '2s' }}></div>
 
-                  {/* Cart icon with subtle glow */}
-                  <ShoppingCart 
-                    className="h-4 w-4 transition-all" 
-                    style={{
-                      filter: 'drop-shadow(0 0 3px rgba(255, 230, 160, 0.6))'
-                    }}
-                  />
+                  {/* Inner glow for the cart icon with animation */}
+                  <div className="relative">
+                    <ShoppingCart 
+                      className="h-4 w-4 transition-all cart-animation" 
+                      style={{
+                        filter: 'drop-shadow(0 0 3px rgba(255, 230, 160, 0.6))'
+                      }}
+                    />
+                    <style jsx>{`
+                      @keyframes cartMove {
+                        0%, 100% { transform: translateX(0); }
+                        40% { transform: translateX(-2px); }
+                        60% { transform: translateX(3px) translateY(-1px); }
+                        75% { transform: translateX(1px) translateY(-1px); }
+                        85% { transform: scale(1.1); }
+                        90% { transform: scale(1); }
+                      }
+                      
+                      .cart-animation {
+                        animation: cartMove 1.5s ease-in-out infinite;
+                      }
+                    `}</style>
+                  </div>
                   
                   {/* Text with subtle animation */}
                   <span className="relative z-10 font-medium tracking-wide">

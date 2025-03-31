@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -191,7 +192,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   
                   {/* Text with updated text symbol */}
                   <span className="relative z-10 font-semibold tracking-wide">
-                    Achat rapide ~ 10€
+                    Achat rapide : 10€
                   </span>
                   
                   {/* Shine effect */}
@@ -199,7 +200,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-3">
-                <p className="text-xs font-medium text-gray-800 pb-2 border-b border-gray-100">Accès immédiat après paiement</p>
+                <p className="text-xs font-medium text-gray-800 pb-2 border-b border-gray-100">Accès au ZIP complet</p>
                 <div className="pt-2 flex flex-col gap-1.5">
                   <div className="flex items-center gap-1.5">
                     <span className="text-gray-400 text-[10px] w-4 text-center">1</span>

@@ -29,6 +29,7 @@ import { martiguesLogoPost } from '../martigues-logo';
 import { metzLogoPost } from '../metz-logo';
 import { monacoLogoPost } from '../monaco-logo';
 import { montpellierLogoPost } from '../montpellier-logo';
+import { nancyLogoPost } from '../nancy-logo';
 import { nantesLogoPost } from '../nantes-logo';
 import { niceLogoPost } from '../nice-logo';
 import { nimesLogoPost } from '../nimes-logo';
@@ -78,6 +79,7 @@ export const frenchClubPosts: BlogPost[] = [
   metzLogoPost,
   monacoLogoPost,
   montpellierLogoPost,
+  nancyLogoPost,
   nantesLogoPost,
   niceLogoPost,
   nimesLogoPost,

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,6 +23,13 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
+  // État pour contrôler l'animation des éléments
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  // Déclencher l'animation après le chargement de la page
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
   
   return (
     
@@ -46,8 +53,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       <div className="max-w-4xl mx-auto text-center space-y-6">
         {/* Premium Badge with enhanced animation */}
         <div 
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-all duration-300 hover:shadow-md mb-2 hover:-translate-y-0.5 animate-fade-in"
-          style={{ animationDuration: '0.8s' }}
+          className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-all duration-500 hover:shadow-md mb-2 hover:-translate-y-0.5 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '100ms' }}
         >
           <Crown className="w-5 h-5" style={{ fill: '#FFC107', stroke: '#FFC107' }} />
           <span className="text-sm font-medium text-gray-900">Collection Premium</span>
@@ -55,32 +62,32 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         {/* Main title with improved gradient */}
         <h1 
-          className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 animate-fade-in"
-          style={{ animationDuration: '1s', animationDelay: '0.2s' }}
+          className={`text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '200ms' }}
         >
           Logos des clubs de football
         </h1>
 
         {/* Subtitle with enhanced styling */}
         <h2 
-          className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6 animate-fade-in"
-          style={{ animationDuration: '1s', animationDelay: '0.4s' }}
+          className={`text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '300ms' }}
         >
           <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</span>
         </h2>
 
         {/* Description with improved readability */}
         <p 
-          className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in"
-          style={{ animationDuration: '1s', animationDelay: '0.6s' }}
+          className={`text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '400ms' }}
         >
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
         {/* Trust badges with improved hover effects */}
         <div 
-          className="flex flex-wrap items-center justify-center gap-6 mt-8 animate-fade-in"
-          style={{ animationDuration: '1s', animationDelay: '0.8s' }}
+          className={`flex flex-wrap items-center justify-center gap-6 mt-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '500ms' }}
         >
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
@@ -98,8 +105,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         {/* CTA buttons with enhanced interactions and updated effects */}
         <div 
-          className="flex items-center justify-center gap-4 pt-6 animate-fade-in"
-          style={{ animationDuration: '1s', animationDelay: '1s' }}
+          className={`flex items-center justify-center gap-4 pt-6 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          style={{ transitionDelay: '600ms' }}
         >
           <Dialog>
             <DialogTrigger asChild>

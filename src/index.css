@@ -71,6 +71,32 @@
   }
 }
 
+/* Animation d'entrée pour chaque élément avec un délai progressif */
+@keyframes elementFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.element-fade-in {
+  opacity: 0;
+  animation: elementFadeIn 0.7s ease-out forwards;
+}
+
+/* Animations avec délais différents pour créer un effet cascade */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart, CreditCard, Package, Mail } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -17,36 +17,12 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip";
-import { AdvancedTooltip, TooltipStep } from "@/components/ui/advanced-tooltip";
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
-  // Étapes du processus de paiement pour le tooltip avancé
-  const paymentSteps: TooltipStep[] = [
-    {
-      title: "Paiement sécurisé",
-      description: "Procédez à un paiement sécurisé via SumUp. Nous acceptons les cartes de crédit, PayPal et Apple Pay.",
-      icon: <CreditCard className="h-5 w-5 text-blue-600" />
-    },
-    {
-      title: "Téléchargement immédiat",
-      description: "Après confirmation du paiement, vous serez redirigé vers une page de téléchargement pour accéder instantanément à votre fichier.",
-      icon: <Download className="h-5 w-5 text-green-600" />
-    },
-    {
-      title: "Contenu complet",
-      description: "Le fichier ZIP contient plus de 8600 logos organisés par pays, compétition et club, prêts à l'emploi.",
-      icon: <Package className="h-5 w-5 text-purple-600" />
-    },
-    {
-      title: "Support disponible",
-      description: "Besoin d'aide ? Notre équipe est disponible par email pour répondre à toutes vos questions après l'achat.",
-      icon: <Mail className="h-5 w-5 text-amber-600" />
-    }
-  ];
   
   return (
     
@@ -180,46 +156,47 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </DialogContent>
           </Dialog>
           
-          {/* Remplacement du tooltip simple par notre AdvancedTooltip */}
-          <AdvancedTooltip 
-            steps={paymentSteps}
-            side="top"
-            align="center"
-            simpleTooltip="Accès immédiat après paiement"
-          >
-            <Button
-              variant="default"
-              size="lg"
-              onClick={() => {
-                const returnUrl = `${window.location.origin}/payment-success`;
-                window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
-              }}
-              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto relative group overflow-hidden"
-            >
-              {/* Outer glow animation */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 animate-pulse transition-opacity duration-300" 
-                    style={{ animationDuration: '2s' }}></div>
-
-              {/* Inner glow for the cart icon with animation */}
-              <div className="relative">
-                <ShoppingCart 
-                  className="h-4 w-4 transition-all animate-[cartMove_1.5s_ease-in-out_infinite]" 
-                  style={{
-                    color: "#FFE082",
-                    filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))'
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="default"
+                  size="lg"
+                  onClick={() => {
+                    const returnUrl = `${window.location.origin}/payment-success`;
+                    window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
                   }}
-                />
-              </div>
-              
-              {/* Text with subtle animation */}
-              <span className="relative z-10 font-medium tracking-wide">
-                Achat rapide (10€)
-              </span>
-              
-              {/* Shine effect */}
-              <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
-            </Button>
-          </AdvancedTooltip>
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto relative group overflow-hidden"
+                >
+                  {/* Outer glow animation */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 animate-pulse transition-opacity duration-300" 
+                       style={{ animationDuration: '2s' }}></div>
+
+                  {/* Inner glow for the cart icon with animation */}
+                  <div className="relative">
+                    <ShoppingCart 
+                      className="h-4 w-4 transition-all animate-[cartMove_1.5s_ease-in-out_infinite]" 
+                      style={{
+                        color: "#FFE082",
+                        filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))'
+                      }}
+                    />
+                  </div>
+                  
+                  {/* Text with subtle animation */}
+                  <span className="relative z-10 font-medium tracking-wide">
+                    Achat rapide (10€)
+                  </span>
+                  
+                  {/* Shine effect */}
+                  <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="top" align="center" className="bg-white border border-gray-300 text-black font-medium shadow-md">
+                <p className="text-xs py-1">Accès immédiat après paiement</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
     </section>

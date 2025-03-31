@@ -32,6 +32,7 @@ const Breadcrumbs = () => {
         </BreadcrumbItem>
         
         {paths.map((path, index) => (
+          // Only key should be passed to React.Fragment, not data-lov-id
           <React.Fragment key={index}>
             <BreadcrumbSeparator>
               <ChevronRight className="h-4 w-4" />

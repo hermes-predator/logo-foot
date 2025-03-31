@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, Info } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -16,6 +17,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
 import RelatedPosts from '../components/blog/RelatedPosts';
+import { AdvancedTooltip } from '@/components/ui/advanced-tooltip';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -346,19 +348,36 @@ const BlogPost = () => {
             
             {/* Apple-style button with lighter border radius and dynamic arrow */}
             <div className="mt-5 flex justify-center">
-              <Link 
-                to="/" 
-                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-5 py-2 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
+              <AdvancedTooltip
+                steps={[
+                  {
+                    title: "Collection complète",
+                    description: "Téléchargez un fichier ZIP organisé contenant plus de 8600 logos de clubs de football du monde entier.",
+                    icon: <Folder className="h-5 w-5 text-blue-600" />
+                  },
+                  {
+                    title: "Prêt à l'emploi",
+                    description: "Tous les logos sont en haute qualité, uniformes et prêts à être utilisés pour vos projets.",
+                    icon: <Download className="h-5 w-5 text-green-600" />
+                  }
+                ]}
+                simpleTooltip="Téléchargez +8600 logos en quelques clics"
+                side="top"
               >
-                {isButtonHovered ? (
-                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                ) : (
-                  <Download className="h-5 w-5" />
-                )}
-                <span>Fichier ZIP de +8 600 logos de club de football</span>
-              </Link>
+                <Link 
+                  to="/" 
+                  className="bg-white text-blue-500 hover:text-blue-600 font-medium px-5 py-2 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
+                  onMouseEnter={() => setIsButtonHovered(true)}
+                  onMouseLeave={() => setIsButtonHovered(false)}
+                >
+                  {isButtonHovered ? (
+                    <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  ) : (
+                    <Download className="h-5 w-5" />
+                  )}
+                  <span>Fichier ZIP de +8 600 logos de club de football</span>
+                </Link>
+              </AdvancedTooltip>
             </div>
             
           </article>

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -50,7 +49,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <Sparkles className="h-10 w-10" />
       </div>
       
-      <div className="max-w-4xl mx-auto text-left space-y-6">
+      <div className="max-w-4xl mx-auto text-center space-y-6">
         {/* Premium Badge with enhanced animation */}
         <div 
           className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-all duration-500 hover:shadow-md mb-2 hover:-translate-y-0.5 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -78,7 +77,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         {/* Description with improved readability */}
         <p 
-          className={`text-lg text-gray-600 max-w-2xl leading-relaxed transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           style={{ transitionDelay: '400ms' }}
         >
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
@@ -86,7 +85,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         {/* Trust badges with improved hover effects */}
         <div 
-          className={`flex flex-wrap items-start gap-6 mt-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`flex flex-wrap items-center justify-center gap-6 mt-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           style={{ transitionDelay: '500ms' }}
         >
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
@@ -105,7 +104,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
         {/* CTA buttons with enhanced interactions and updated effects */}
         <div 
-          className={`flex items-center justify-start gap-4 pt-6 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`flex items-center justify-center gap-4 pt-6 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           style={{ transitionDelay: '600ms' }}
         >
           <Dialog>
@@ -202,12 +201,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-3">
                 <p className="text-xs font-medium text-gray-800 pb-2 border-b border-gray-100">Accès immédiat après paiement</p>
                 <div className="pt-2 flex flex-col gap-1.5">
-                  <div className="flex items-start gap-1.5">
-                    <span className="text-gray-400 text-[10px] w-4 text-center pt-0.5">1</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-gray-400 text-[10px] w-4 text-center">1</span>
                     <span className="text-gray-500 text-xs">Paiement sécurisé via SumUp</span>
                   </div>
-                  <div className="flex items-start gap-1.5">
-                    <span className="text-gray-400 text-[10px] w-4 text-center pt-0.5">2</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-gray-400 text-[10px] w-4 text-center">2</span>
                     <span className="text-gray-500 text-xs flex flex-col">
                       <span>Téléchargement instantanée via</span>
                       <span>la page d'après-paiement</span>

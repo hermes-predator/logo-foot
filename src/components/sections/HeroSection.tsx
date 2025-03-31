@@ -203,11 +203,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <p className="text-xs font-medium text-gray-800 pb-2 border-b border-gray-100">Accès immédiat après paiement</p>
                 <div className="pt-2 flex flex-col gap-1.5">
                   <div className="flex items-center gap-1.5">
-                    <span className="text-gray-400 text-[10px]">1</span>
+                    <span className="text-gray-400 text-[10px] w-4 text-center">1</span>
                     <span className="text-gray-500 text-xs">Paiement sécurisé via SumUp</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-gray-400 text-[10px]">2</span>
+                    <span className="text-gray-400 text-[10px] w-4 text-center">2</span>
                     <span className="text-gray-500 text-xs">
                       Téléchargement instantanée via<br />
                       la page d'après-paiement

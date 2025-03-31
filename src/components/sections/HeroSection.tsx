@@ -115,7 +115,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
                 <Folder size={16} className="mr-1 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-medium text-sm text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                <span className="relative z-10 font-semibold text-sm text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -191,7 +191,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </div>
                   
                   {/* Text with subtle animation */}
-                  <span className="relative z-10 font-medium tracking-wide">
+                  <span className="relative z-10 font-semibold tracking-wide">
                     Achat rapide (10€)
                   </span>
                   

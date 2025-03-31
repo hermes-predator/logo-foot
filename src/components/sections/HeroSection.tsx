@@ -179,7 +179,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 animate-pulse transition-opacity duration-300" 
                        style={{ animationDuration: '2s' }}></div>
 
-                  {/* Inner glow for the cart icon with animation */}
+                  {/* Inner glow for the cart icon with updated bouncy animation */}
                   <div className="relative">
                     <ShoppingCart 
                       className="h-4 w-4 transition-all animate-[cartMove_1.5s_ease-in-out_infinite]" 

@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart, CreditCard, Package, Mail, CheckCircle2 } from 'lucide-react';
+import { Shield, Wallet, ShieldCheck, HandHeart, Download, Folder, RefreshCcw, Info, Check, Cloud, CloudUpload, Trophy, Sparkle, Users, Lock, ShoppingCart } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Tooltip,
@@ -9,7 +8,6 @@ import {
 } from "./ui/tooltip";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "./ui/separator";
-import { AdvancedTooltip, TooltipStep } from "@/components/ui/advanced-tooltip";
 
 const PaymentSection = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -34,30 +32,6 @@ const PaymentSection = () => {
     // Updated SumUp link
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
-
-  // Étapes du processus de paiement pour le tooltip avancé
-  const paymentSteps: TooltipStep[] = [
-    {
-      title: "Paiement simple et rapide",
-      description: "Le processus de paiement ne prend que quelques secondes. Aucun compte à créer, paiement direct et sécurisé.",
-      icon: <CreditCard className="h-5 w-5 text-blue-600" />
-    },
-    {
-      title: "Téléchargement instantané",
-      description: "Une fois votre paiement validé, vous accédez immédiatement à la page de téléchargement du fichier ZIP.",
-      icon: <Download className="h-5 w-5 text-green-600" />
-    },
-    {
-      title: "Fichier complet et organisé",
-      description: "Le ZIP contient plus de 8600 logos classés par pays, compétition et club. Tous les fichiers sont en haute qualité et prêts à l'emploi.",
-      icon: <Package className="h-5 w-5 text-purple-600" />
-    },
-    {
-      title: "Support après-vente",
-      description: "Un problème avec votre fichier? Notre équipe est disponible par email pour vous aider à résoudre tout souci technique.",
-      icon: <Mail className="h-5 w-5 text-amber-600" />
-    }
-  ];
 
   const features = [
     {
@@ -218,51 +192,44 @@ const PaymentSection = () => {
               </div>
               
               <div className="group">
-                <AdvancedTooltip
-                  steps={[
-                    {
-                      title: "Garantie de satisfaction",
-                      description: "Si vous n'êtes pas satisfait dans les 14 jours suivant l'achat, nous vous proposons un remboursement intégral.",
-                      icon: <CheckCircle2 className="h-5 w-5 text-emerald-600" />
-                    },
-                    {
-                      title: "Comment demander un remboursement",
-                      description: "Pour un remboursement, contactez-nous par email à contact@logo-foot.com avec votre nom, la date d'achat et une preuve de paiement.",
-                      icon: <Mail className="h-5 w-5 text-emerald-600" />
-                    }
-                  ]}
-                  side="bottom"
-                  align="end"
-                  simpleTooltip="Satisfait ou remboursé sous 14 jours"
-                  className="bg-white/90"
-                >
-                  <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px] border border-green-200">
-                    <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                    <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
-                      Satisfait ou remboursé
-                    </span>
-                  </div>
-                </AdvancedTooltip>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px] border border-green-200">
+                      <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                      <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
+                        Satisfait ou remboursé
+                      </span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
+                    <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
+                    <div className="space-y-2 text-gray-600">
+                      <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                      <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations juridiques à vous proposer un retour.</p>
+                      <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                      <p className="mt-4 text-gray-500 text-[13px]">
+                        Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
+                        <ul className="list-disc ml-4 mt-1 space-y-1">
+                          <li>Votre nom et prénom</li>
+                          <li>La date et l'heure d'achat</li>
+                          <li>Une preuve d'achat</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
 
-            <AdvancedTooltip
-              steps={paymentSteps}
-              side="top"
-              align="center"
-              simpleTooltip="Cliquez pour finaliser votre achat"
-              className="max-w-[300px]"
+            <Button
+              onClick={handlePayment}
+              disabled={isProcessing}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
+              aria-label="Payer 10,00€ avec paiement sécurisé"
             >
-              <Button
-                onClick={handlePayment}
-                disabled={isProcessing}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
-                aria-label="Payer 10,00€ avec paiement sécurisé"
-              >
-                <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-                {isProcessing ? "Redirection..." : "Payer 10,00€"}
-              </Button>
-            </AdvancedTooltip>
+              <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
+              {isProcessing ? "Redirection..." : "Payer 10,00€"}
+            </Button>
           </div>
           
           <div className="flex items-center justify-center mt-6 flex-wrap gap-2">

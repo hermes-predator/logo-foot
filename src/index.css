@@ -6,68 +6,73 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 224 71.4% 4.1%;
+
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 224 71.4% 4.1%;
+ 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 224 71.4% 4.1%;
+ 
+    --primary: 255 10% 10%;
+    --primary-foreground: 210 20% 98%;
+ 
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+ 
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+ 
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+ 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.75rem;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+ 
+    --radius: 0.5rem;
   }
-
-  * {
-    @apply border-border antialiased;
+ 
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+ 
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+ 
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+ 
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+ 
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+ 
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+ 
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+ 
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
   }
-
-  html {
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
-/* Reset des styles par défaut */
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.image-hover {
-  @apply transition-all duration-300 ease-in-out;
-}
-
-.image-hover:hover {
-  @apply scale-105;
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in;
-}
-
-@keyframes fadeIn {
+@keyframes shine {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-100%);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(200%);
   }
 }
 
@@ -80,56 +85,6 @@
   }
 }
 
-/* Cursor effects */
-.cursor-pointer {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-/* Gold shine effect with improved positioning */
-.gold-shine {
-  overflow: hidden;
-}
-
-.gold-shine::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    to right,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,0.1) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transform: rotate(30deg);
-  animation: goldShimmer 4s infinite linear;
-  pointer-events: none;
-}
-
-@keyframes goldShimmer {
-  0% {
-    transform: translateX(-100%) rotate(30deg);
-  }
-  100% {
-    transform: translateX(100%) rotate(30deg);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-/* Add the slow blink animation for the ZIP badge */
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -139,154 +94,61 @@
   }
 }
 
-/* Cart animation for the shopping icon */
 @keyframes cartMove {
-  0%, 100% { transform: translateX(0); }
-  40% { transform: translateX(-2px); }
-  60% { transform: translateX(3px) translateY(-1px); }
-  75% { transform: translateX(1px) translateY(-1px); }
-  85% { transform: scale(1.1); }
-  90% { transform: scale(1); }
-}
-
-/* Shine effect animation for CTA buttons */
-@keyframes shine {
   0% {
-    left: -100%;
-    opacity: 0.3;
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-2px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    transform: translateY(-1px) rotate(-3deg);
   }
   100% {
-    left: 100%;
-    opacity: 0.3;
+    transform: translateY(0) rotate(0);
   }
 }
 
-.animate-shine {
-  animation: shine 1.3s ease-out infinite;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Ensure buttons have proper cursor */
-a, button, .cursor-pointer, [role="button"] {
-  cursor: pointer !important;
+@layer components {
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+  
+  .group-hover\:animate-shine:hover {
+    animation: shine 1.5s infinite;
+  }
 }
 
-/* Ensure links within buttons maintain pointer cursor */
-button a, a button {
-  cursor: pointer !important; 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
-/* Protection contre le clic droit sur les images et vidéos */
-img, video {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-  pointer-events: none;
-}
-
-/* Classe spéciale pour réactiver les événements sur certaines images */
-.pointer-events-auto {
-  pointer-events: auto !important;
-}
-
-/* Protection supplémentaire pour les conteneurs d'images et vidéos */
-.protected-content {
+/* Styles spécifiques pour les vidéos */
+.videoIframe {
   position: relative;
 }
 
-.protected-content::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: transparent;
-  pointer-events: auto;
-  z-index: 10;
-}
-
-/* Add smooth transitioning for all anchor tags */
-a {
-  @apply transition-all duration-300;
-}
-
-/* Enhance blockquote styling */
-blockquote {
-  @apply relative;
-}
-
-blockquote::before {
-  content: """";
-  @apply absolute -left-2 -top-2 text-4xl text-gray-300 opacity-50 font-serif;
-}
-
-/* Enhanced list styling */
-ul.fancy-list li::before {
-  content: "•";
-  @apply text-gray-500 inline-block w-4 -ml-4;
-}
-
-/* Glass effect for cards */
-.glass-card {
-  @apply bg-white/80 backdrop-blur-sm border border-white/50 shadow-sm;
-}
-
-/* Article card hover effect */
-.article-card {
-  @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
-}
-
-/* Table of contents styling */
-.toc {
-  @apply bg-gray-50/50 p-4 rounded-lg mb-6 border border-gray-100;
-}
-
-.toc-title {
-  @apply font-semibold text-lg mb-2 text-gray-800;
-}
-
-.toc-list {
-  @apply list-none pl-0 space-y-1;
-}
-
-.toc-item {
-  @apply pl-2 border-l-2 border-gray-200 hover:border-gray-500 transition-colors duration-200;
-}
-
-.toc-link {
-  @apply text-gray-700 hover:text-gray-900 no-underline block py-1 text-sm;
-}
-
-/* Enhanced image captions */
-.image-caption {
-  @apply text-sm text-center text-gray-500 mt-2 italic;
-}
-
-/* Article section dividers */
-.section-divider {
-  @apply my-10 border-t-2 border-gray-100 relative;
-}
-
-.section-divider::after {
-  content: "✦";
-  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-gray-300;
-}
-
-/* Code block styling */
-pre {
-  @apply bg-gray-800 text-gray-100 p-4 rounded-md overflow-x-auto my-6;
-}
-
-pre code {
-  @apply bg-transparent text-inherit p-0;
+/* Styles pour les articles de blog */
+.fade-in {
+  animation: fade-in 1s ease-out forwards;
 }

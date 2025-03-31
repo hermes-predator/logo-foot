@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -206,9 +205,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     <span className="text-gray-400 text-[10px]">1</span>
                     <span className="text-gray-500 text-xs">Paiement via SumUp</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-gray-400 text-[10px]">2</span>
-                    <span className="text-gray-500 text-xs">Téléchargement instantanée via la page d'après-paiement</span>
+                  <div className="flex flex-col gap-1 pl-4">
+                    <span className="text-gray-400 text-[10px] self-start">2</span>
+                    <span className="text-gray-500 text-xs -mt-4 pl-4">
+                      Téléchargement instantanée via<br />
+                      la page d'après-paiement
+                    </span>
                   </div>
                 </div>
               </TooltipContent>

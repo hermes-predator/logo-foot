@@ -35,6 +35,7 @@ import { niceLogoPost } from '../nice-logo';
 import { nimesLogoPost } from '../nimes-logo';
 import { niortLogoPost } from '../niort-logo';
 import { omLogoPost } from '../om-logo';
+import { orleansLogoPost } from '../orleans-logo';
 import { parisFCLogoPost } from '../paris-fc-logo';
 import { pauFCLogoPost } from '../pau-fc-logo';
 import { psgLogoPost } from '../psg-logo';
@@ -85,6 +86,7 @@ export const frenchClubPosts: BlogPost[] = [
   nimesLogoPost,
   niortLogoPost,
   omLogoPost,
+  orleansLogoPost,
   parisFCLogoPost,
   pauFCLogoPost,
   psgLogoPost,

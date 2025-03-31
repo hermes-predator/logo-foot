@@ -190,9 +190,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     />
                   </div>
                   
-                  {/* Text with subtle animation */}
+                  {/* Text with subtle animation - UPDATED TEXT HERE */}
                   <span className="relative z-10 font-semibold tracking-wide">
-                    Achat rapide (10€)
+                    Achat rapide — 10€
                   </span>
                   
                   {/* Shine effect */}

@@ -199,12 +199,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent side="top" align="center" className="bg-white border border-gray-300 text-black font-medium shadow-md">
-                <p className="text-xs py-1 mb-2">Accès immédiat après paiement</p>
-                <ol className="text-xs text-left list-decimal pl-4 space-y-1">
-                  <li>Paiement via SumUp</li>
-                  <li>Téléchargement instantanée via la page d'après-paiement</li>
-                </ol>
+              <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-3">
+                <p className="text-xs font-medium text-gray-800 pb-2 border-b border-gray-100">Accès immédiat après paiement</p>
+                <div className="pt-2 flex flex-col gap-1.5">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-gray-400 text-[10px]">1</span>
+                    <span className="text-gray-500 text-xs">Paiement via SumUp</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-gray-400 text-[10px]">2</span>
+                    <span className="text-gray-500 text-xs">Téléchargement instantanée via la page d'après-paiement</span>
+                  </div>
+                </div>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

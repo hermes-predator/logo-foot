@@ -44,6 +44,7 @@ import { reimsLogoPost } from '../reims-logo';
 import { rennesLogoPost } from '../rennes-logo';
 import { rodezLogoPost } from '../rodez-logo';
 import { saintEtienneLogoPost } from '../saint-etienne-logo';
+import { sochauxLogoPost } from '../sochaux-logo';
 import { stadeRennaisLogoPost } from '../stade-rennais-logo';
 import { strasbourgLogoPost } from '../strasbourg-logo';
 import { toulouseFCLogoPost } from '../toulouse-fc-logo';
@@ -95,6 +96,7 @@ export const frenchClubPosts: BlogPost[] = [
   rennesLogoPost,
   rodezLogoPost,
   saintEtienneLogoPost,
+  sochauxLogoPost,
   stadeRennaisLogoPost,
   strasbourgLogoPost,
   toulouseFCLogoPost,

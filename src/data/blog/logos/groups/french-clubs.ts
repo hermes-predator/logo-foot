@@ -16,9 +16,9 @@ import { grenobleLogoPost } from '../grenoble-logo';
 import { guingampLogoPost } from '../guingamp-logo';
 import { lavalLogoPost } from '../laval-logo';
 import { leHavreLogoPost } from '../le-havre-logo';
-import { leMansLogoPost } from '../le-mans-logo';
+import { leMansFCLogoPost } from '../le-mans-logo';
 import { lensLogoPost } from '../lens-logo';
-import { lilleLogoPost } from '../lille-logo';
+import { lillLogoPost } from '../lille-logo';
 import { lorientLogoPost } from '../lorient-logo';
 import { lyonLogoPost } from '../lyon-logo';
 import { martiguesLogoPost } from '../martigues-logo';
@@ -31,8 +31,8 @@ import { niceLogoPost } from '../nice-logo';
 import { nimesLogoPost } from '../nimes-logo';
 import { niortLogoPost } from '../niort-logo';
 import { omLogoPost } from '../om-logo';
-import { parisLogoPost } from '../paris-fc-logo';
-import { pauLogoPost } from '../pau-logo';
+import { parisFCLogoPost } from '../paris-fc-logo';
+import { pauFCLogoPost } from '../pau-fc-logo';
 import { psgLogoPost } from '../psg-logo';
 import { redStarLogoPost } from '../red-star-logo';
 import { reimsLogoPost } from '../reims-logo';
@@ -61,9 +61,9 @@ export const frenchClubPosts: BlogPost[] = [
   guingampLogoPost,
   lavalLogoPost,
   leHavreLogoPost,
-  leMansLogoPost,
+  leMansFCLogoPost,
   lensLogoPost,
-  lilleLogoPost,
+  lillLogoPost,
   lorientLogoPost,
   lyonLogoPost,
   martiguesLogoPost,
@@ -76,8 +76,8 @@ export const frenchClubPosts: BlogPost[] = [
   nimesLogoPost,
   niortLogoPost,
   omLogoPost,
-  parisLogoPost,
-  pauLogoPost,
+  parisFCLogoPost,
+  pauFCLogoPost,
   psgLogoPost,
   redStarLogoPost,
   reimsLogoPost,

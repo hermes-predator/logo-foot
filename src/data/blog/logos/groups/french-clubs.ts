@@ -14,6 +14,7 @@ import { bordeauxLogoPost } from '../bordeaux-logo';
 import { brestLogoPost } from '../brest-logo';
 import { caenLogoPost } from '../caen-logo';
 import { clermontFootLogoPost } from '../clermont-foot-logo';
+import { concarneauLogoPost } from '../concarneau-logo';
 import { dijonLogoPost } from '../dijon-logo';
 import { dunkerqueLogoPost } from '../dunkerque-logo';
 import { grenobleLogoPost } from '../grenoble-logo';
@@ -66,6 +67,7 @@ export const frenchClubPosts: BlogPost[] = [
   brestLogoPost,
   caenLogoPost,
   clermontFootLogoPost,
+  concarneauLogoPost,
   dijonLogoPost,
   dunkerqueLogoPost,
   grenobleLogoPost,

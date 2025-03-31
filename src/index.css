@@ -164,19 +164,14 @@
   }
 }
 
-/* Cart animation for the shopping icon - enhanced dancing effect */
+/* Cart animation for the shopping icon - balanced dancing effect */
 @keyframes cartMove {
   0% { transform: translateY(0) rotate(0deg); }
-  10% { transform: translateY(-3px) rotate(5deg); }
-  20% { transform: translateY(-5px) rotate(-5deg); }
-  30% { transform: translateY(-3px) rotate(5deg); }
+  20% { transform: translateY(-3px) rotate(2deg); }
   40% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-2px) scale(1.1); }
-  60% { transform: translateY(1px) scale(0.95) rotate(-5deg); }
-  70% { transform: translateY(-1px) scale(1.05) rotate(5deg); }
-  80% { transform: scale(1) rotate(0deg); }
-  90% { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
+  60% { transform: translateY(-2px) scale(1.05); }
+  80% { transform: scale(1) rotate(-1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
 }
 
 /* Shine effect animation for CTA buttons */

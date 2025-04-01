@@ -12,10 +12,10 @@ interface RelatedPostsProps {
 }
 
 /**
- * Affiche une liste d'articles liés basée sur la catégorie et les mots-clés
+ * Affiche une liste d'articles liés basée sur la catégorie, les mots-clés et l'analyse contextuelle
  */
 const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
-  // Fonction pour calculer le score de pertinence entre deux articles
+  // Fonction améliorée pour calculer le score de pertinence entre deux articles
   const calculateRelevanceScore = (post: BlogPost): number => {
     if (post.id === currentPost.id) return -1; // Exclure l'article actuel
     
@@ -31,33 +31,95 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
       score += 3;
     }
     
-    // Correspondance de mots-clés
+    // Traitement optimisé des mots-clés
     const currentKeywords = currentPost.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
     const postKeywords = post.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
     
-    // Calculer les correspondances de mots-clés
-    currentKeywords.forEach(keyword => {
+    // Analyse du titre pour trouver des entités communes (noms propres, équipes, joueurs)
+    const currentTitle = currentPost.title.toLowerCase();
+    const postTitle = post.title.toLowerCase();
+    
+    // Identifier les segments communs potentiels (entités nommées)
+    const currentTitleSegments = currentTitle.split(/[:()-]/).map(s => s.trim());
+    const postTitleSegments = postTitle.split(/[:()-]/).map(s => s.trim());
+    
+    // Vérifier si des segments importants sont communs
+    for (const segment of currentTitleSegments) {
+      if (segment.length > 3 && postTitleSegments.some(s => s.includes(segment))) {
+        score += 4; // Forte correspondance thématique
+        break;
+      }
+    }
+    
+    // Calculer les correspondances de mots-clés avec pondération
+    const keywordMatchScore = currentKeywords.reduce((total, keyword) => {
+      // Base match: keyword exists in other post's keywords
       if (postKeywords.includes(keyword)) {
-        score += 1;
+        total += 1;
       }
       
-      // Vérifier si le mot-clé apparaît dans le titre
-      if (post.title.toLowerCase().includes(keyword)) {
-        score += 2;
+      // Title match: keyword appears in post title (more important)
+      if (postTitle.includes(keyword)) {
+        total += 2;
       }
-    });
+      
+      // Content match: keyword appears in post content (if possible to check)
+      if (post.content && post.content.toLowerCase().includes(keyword)) {
+        // Pondérer selon la fréquence d'apparition
+        const keywordRegex = new RegExp(keyword, 'gi');
+        const occurrences = (post.content.match(keywordRegex) || []).length;
+        total += Math.min(3, occurrences * 0.5); // Plafonner à 3 points
+      }
+      
+      return total;
+    }, 0);
+    
+    score += keywordMatchScore;
     
     // Bonus pour les articles récents (moins de 60 jours)
     const postDate = new Date(post.date);
     const daysDifference = (new Date().getTime() - postDate.getTime()) / (1000 * 3600 * 24);
     if (daysDifference < 60) {
+      score += 2;
+    } else if (daysDifference < 120) {
       score += 1;
+    }
+    
+    // Vérifier une éventuelle relation contextuelle (ex: même joueur, même équipe)
+    // Pour les articles d'analyse de joueurs ou de logos d'équipes
+    if (
+      (currentTitle.includes('analyse') && postTitle.includes('analyse')) ||
+      (currentTitle.includes('logo') && postTitle.includes('logo'))
+    ) {
+      // Recherche d'entité commune (nom d'équipe/joueur)
+      const commonEntity = findCommonEntity(currentTitle, postTitle);
+      if (commonEntity) {
+        score += 6; // Fort bonus pour les articles sur la même entité
+      }
     }
     
     return score;
   };
   
-  // Trouver les articles les plus pertinents
+  // Fonction utilitaire pour trouver une entité commune entre deux titres
+  const findCommonEntity = (title1: string, title2: string): string | null => {
+    // Liste des équipes et joueurs importants (pourrait être étendue)
+    const commonEntities = [
+      'real madrid', 'barcelona', 'psg', 'manchester city', 'bayern', 'juventus', 'liverpool',
+      'chelsea', 'milan', 'inter', 'dortmund', 'arsenal', 'atletico',
+      'messi', 'ronaldo', 'mbappe', 'haaland', 'neymar', 'wirtz', 'bellingham'
+    ];
+    
+    for (const entity of commonEntities) {
+      if (title1.includes(entity) && title2.includes(entity)) {
+        return entity;
+      }
+    }
+    
+    return null;
+  };
+  
+  // Trouver les articles les plus pertinents avec l'algorithme amélioré
   const relatedPosts = allPosts
     .map(post => ({ 
       post, 

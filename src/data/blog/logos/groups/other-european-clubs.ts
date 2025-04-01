@@ -1,5 +1,5 @@
 
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
 import { ajaxLogoPost } from '../ajax-logo';

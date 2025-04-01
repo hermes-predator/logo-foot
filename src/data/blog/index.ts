@@ -51,7 +51,7 @@ Object.entries(idCounts)
       duplicates.map(p => p.category).join(', '));
   });
 
-// Fix the type issue with the '>' operator by explicitly casting types
+// Fix the type issue by using explicitly typed variables
 const uniquePosts: BlogPost[] = [];
 const seenIds = new Set<number>();
 
@@ -63,7 +63,7 @@ allPosts.forEach(post => {
   } else {
     // Si l'ID est un doublon, créez une copie avec un ID modifié
     // Trouvons le plus grand ID existant pour éviter de nouveaux conflits
-    const maxId = Math.max(...Array.from(seenIds), ...allPosts.map(p => p.id));
+    const maxId = Math.max(...Array.from(seenIds));
     
     // Créons une copie de l'article avec le nouvel ID
     const newId = maxId + 1;

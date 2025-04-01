@@ -4,6 +4,8 @@ import { bundesligaAnalysis } from './bundesliga';
 import { championsLeagueAnalysis } from './champions-league';
 import { colorTheoryPost } from './color-theory';
 import { erlingHaalandPost } from './erling-haaland';
+import { florianWirtzPost } from './florian-wirtz';
+import { joaoNevesPost } from './joao-neves';
 import { kylianMbappePost } from './kylian-mbappe';
 import { laligaAnalysis } from './laliga';
 import { ligue1Analysis } from './ligue-1';
@@ -14,14 +16,15 @@ import { serieAAnalysis } from './serie-a';
 import { victorOsimhenPost } from './victor-osimhen';
 import { bradleyBarcolaPost } from './bradley-barcola';
 import { williamPachoPost } from './william-pacho';
-import { joaoNevesPost } from './joao-neves';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
   bundesligaAnalysis,
+  bradleyBarcolaPost,
   championsLeagueAnalysis,
   colorTheoryPost,
   erlingHaalandPost,
+  florianWirtzPost,
   joaoNevesPost,
   kylianMbappePost,
   laligaAnalysis,
@@ -31,6 +34,5 @@ export const analysisPosts: BlogPost[] = [
   premierLeagueAnalysis,
   serieAAnalysis,
   victorOsimhenPost,
-  bradleyBarcolaPost,
   williamPachoPost
 ];

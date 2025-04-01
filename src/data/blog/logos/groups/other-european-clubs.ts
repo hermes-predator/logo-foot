@@ -1,11 +1,9 @@
 
-import { BlogPost } from '../../../../types/blog';
+import { BlogPost } from '../../../types/blog';
 
 // Import other European club logo posts
 import { ajaxLogoPost } from '../ajax-logo';
 import { anderlechtLogoPost } from '../anderlecht-logo';
-import { benficaLogoPost } from '../benfica-logo';
-import { besiktasLogoPost } from '../besiktas-logo';
 import { celticGlasgowLogoPost } from '../celtic-glasgow-logo';
 import { copenhagenLogoPost } from '../copenhagen-logo';
 import { fenerbahceLogoPost } from '../fenerbahce-logo';
@@ -15,17 +13,16 @@ import { glasgowRangersLogoPost } from '../glasgow-rangers-logo';
 import { olympiakosLogoPost } from '../olympiakos-logo';
 import { portoLogoPost } from '../porto-logo';
 import { psvEindhovenLogoPost } from '../psv-eindhoven-logo';
+import { shakhtarDonetskLogoPost } from '../shakhtar-donetsk-logo';
 import { slaviaPragueLogoPost } from '../slavia-prague-logo';
 import { sportingLogoPost } from '../sporting-logo';
 import { sportingBragaLogoPost } from '../sporting-braga-logo';
 import { trabzonsporLogoPost } from '../trabzonspor-logo';
 
-// Group other European club logo posts
+// Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
   anderlechtLogoPost,
-  benficaLogoPost,
-  besiktasLogoPost,
   celticGlasgowLogoPost,
   copenhagenLogoPost,
   fenerbahceLogoPost,
@@ -35,6 +32,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   olympiakosLogoPost,
   portoLogoPost,
   psvEindhovenLogoPost,
+  shakhtarDonetskLogoPost,
   slaviaPragueLogoPost,
   sportingLogoPost,
   sportingBragaLogoPost,

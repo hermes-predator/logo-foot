@@ -164,7 +164,7 @@ const PackDescription = () => {
           
           <Separator className="my-2 bg-blue-100" />
           
-          <div className="py-1">
+          <div className="py-2">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
               <div className="flex items-center justify-center w-5 h-5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>

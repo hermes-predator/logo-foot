@@ -133,14 +133,6 @@ const PackDescription = () => {
         </div>
         
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
-          {/* Prix barré dans le coin supérieur droit */}
-          <div className="absolute -top-5 -right-5 z-20">
-            <div className="bg-red-500/90 text-white px-4 py-2 rounded-full font-bold text-xl flex items-center gap-1 shadow-lg rotate-12 relative">
-              <span className="absolute inset-x-0 top-1/2 h-1 bg-white/80 transform -translate-y-1/2 -rotate-12"></span>
-              <span>50€</span>
-            </div>
-          </div>
-          
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md animate-[fastBlink_1s_ease-in-out_infinite]">
               <Package className="h-3 w-3 text-white" />

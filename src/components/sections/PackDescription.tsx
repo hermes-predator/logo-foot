@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -149,7 +148,7 @@ const PackDescription = () => {
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md animate-[fastBlink_1s_ease-in-out_infinite]">
               <Users className="h-3 w-3 text-white" />
-              <span>19 acheteurs</span> récents
+              <span>19 achats</span> récents
             </div>
           </div>
           

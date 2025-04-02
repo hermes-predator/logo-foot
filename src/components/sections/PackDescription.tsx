@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -150,7 +151,12 @@ const PackDescription = () => {
             >
               <div className="flex items-center justify-center w-full gap-4">
                 <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
-                <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-medium line-through text-blue-200">50€</span>
+                    <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
+                  </div>
+                </div>
                 <ArrowRight className="h-8 w-8 transition-all duration-300 group-hover:translate-x-1" />
               </div>
             </Button>

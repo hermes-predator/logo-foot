@@ -177,7 +177,7 @@ const PackDescription = () => {
           
           <Separator className="my-2 bg-blue-100" />
           
-          <div className="mt-2">
+          <div className="mt-4">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
                 Paiement sécurisé via

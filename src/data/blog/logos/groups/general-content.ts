@@ -12,6 +12,7 @@ import { winamaxLogoPost } from '../winamax-logo';
 import { unibetLogoPost } from '../unibet-logo';
 import { bwinLogoPost } from '../bwin-logo';
 import { footballLogosHistoryPost } from '../football-logos-history';
+import { footballEmblemsPost } from '../football-emblems';
 
 // Group all general content posts
 export const generalContentPosts: BlogPost[] = [
@@ -24,5 +25,7 @@ export const generalContentPosts: BlogPost[] = [
   winamaxLogoPost,
   unibetLogoPost,
   bwinLogoPost,
-  footballLogosHistoryPost
+  footballLogosHistoryPost,
+  footballEmblemsPost
 ];
+

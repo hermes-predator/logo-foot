@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, FileArchive } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingCTA = () => {
@@ -11,7 +11,7 @@ const FloatingCTA = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
           <div className="flex items-center mb-3 sm:mb-0">
             <Link to="/" className="group flex items-center">
-              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-pulse group-hover:bg-white/30 transition-colors">
+              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-[blink_1.5s_ease-in-out_infinite] group-hover:bg-white/30 transition-colors">
                 <Download className="h-5 w-5 text-white animate-bounce" />
               </span>
               <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">
@@ -24,14 +24,10 @@ const FloatingCTA = () => {
             <Button 
               asChild
               variant="secondary" 
-              className="bg-white hover:bg-gray-100 px-4 py-2 text-sm md:text-base group relative"
+              className="bg-white hover:bg-gray-100 px-4 py-2 text-sm md:text-base group"
               size="sm"
             >
               <Link to="/" className="flex items-center gap-2">
-                <span className="absolute -top-3 -left-2 bg-blue-600 text-white px-2 py-0.5 rounded-tr-lg rounded-bl-lg text-xs flex items-center gap-1 shadow-sm animate-fast-blink">
-                  <FileArchive className="h-3 w-3 text-white" />
-                  ZIP
-                </span>
                 <span className="text-blue-600">Télécharger maintenant</span>
                 <ArrowRight className="h-4 w-4 text-blue-600 group-hover:translate-x-1 transition-transform" />
               </Link>

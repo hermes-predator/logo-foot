@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -134,6 +135,15 @@
   pointer-events: none;
 }
 
+@keyframes goldShimmer {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
+}
+
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -145,29 +155,16 @@
   }
 }
 
-/* Add the slow blink animation for the ZIP badge */
+/* Add the slow blink animation for the ZIP badge - Modification pour un blink plus rapide et plus engageant */
 @keyframes blink {
   0%, 100% {
     opacity: 1;
+    transform: scale(1);
   }
   50% {
     opacity: 0.7;
+    transform: scale(1.05);
   }
-}
-
-/* Add the fast blink animation for the floating CTA ZIP badge */
-@keyframes fastBlink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-
-/* Animation class for the fast blinking ZIP in floating CTA */
-.animate-fast-blink {
-  animation: fastBlink 0.8s ease-in-out infinite;
 }
 
 /* Cart animation for the shopping icon - balanced dancing effect */

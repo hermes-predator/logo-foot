@@ -14,11 +14,13 @@ import { feyenoordLogoPost } from '../feyenoord-logo';
 import { galatasarayLogoPost } from '../galatasaray-logo';
 import { genkLogoPost } from '../genk-logo';
 import { glasgowRangersLogoPost } from '../glasgow-rangers-logo';
+import { laGantoiseLogoPost } from '../la-gantoise-logo';
 import { olympiakosLogoPost } from '../olympiakos-logo';
 import { psvEindhovenLogoPost } from '../psv-eindhoven-logo';
 import { royalAntwerpLogoPost } from '../royal-antwerp-logo';
 import { shakhtarDonetskLogoPost } from '../shakhtar-donetsk-logo';
 import { slaviaPragueLogoPost } from '../slavia-prague-logo';
+import { standardDeLiegeLogoPost } from '../standard-de-liege-logo';
 import { trabzonsporLogoPost } from '../trabzonspor-logo';
 
 // Group all other European club logo posts
@@ -35,10 +37,12 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   galatasarayLogoPost,
   genkLogoPost,
   glasgowRangersLogoPost,
+  laGantoiseLogoPost,
   olympiakosLogoPost,
   psvEindhovenLogoPost,
   royalAntwerpLogoPost,
   shakhtarDonetskLogoPost,
   slaviaPragueLogoPost,
+  standardDeLiegeLogoPost,
   trabzonsporLogoPost
 ];

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
@@ -134,8 +134,8 @@ const PackDescription = () => {
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md animate-[fastBlink_1s_ease-in-out_infinite]">
-              <Users className="h-3 w-3 text-white" />
-              <span>19 achats</span> récents
+              <Package className="h-3 w-3 text-white" />
+              <span>ZIP</span>
             </div>
           </div>
           
@@ -165,7 +165,7 @@ const PackDescription = () => {
               <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
               <Users className="h-4 w-4 text-blue-600 relative z-10" />
             </div>
-            4000+ clients nous ont fait confiance
+            4000+ clients sont satisfaits
           </p>
           
           <div className="mt-5 pt-4 border-t border-blue-100">

@@ -17,6 +17,7 @@ import { serieAAnalysis } from './serie-a';
 import { victorOsimhenPost } from './victor-osimhen';
 import { bradleyBarcolaPost } from './bradley-barcola';
 import { williamPachoPost } from './william-pacho';
+import { rayanCherkiPost } from './rayan-cherki';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
@@ -34,6 +35,7 @@ export const analysisPosts: BlogPost[] = [
   lionelMessiPost,
   neymarPost,
   premierLeagueAnalysis,
+  rayanCherkiPost,
   serieAAnalysis,
   victorOsimhenPost,
   williamPachoPost

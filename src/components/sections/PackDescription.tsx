@@ -171,7 +171,7 @@ const PackDescription = () => {
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
                 <Users className="h-4 w-4 text-blue-600 relative z-10" />
               </div>
-              4000+ clients nous ont déjà fait confiance
+              4000+ clients nous ont fait confiance
             </p>
           </div>
           

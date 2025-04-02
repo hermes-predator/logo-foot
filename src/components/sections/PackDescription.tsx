@@ -144,7 +144,7 @@ const PackDescription = () => {
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md animate-[fastBlink_1s_ease-in-out_infinite]">
               <Package className="h-3 w-3 text-white" />
-              <span>ZIP</span>
+              <span>Valeur réel : 50€</span>
             </div>
           </div>
           

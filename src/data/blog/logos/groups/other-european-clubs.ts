@@ -6,6 +6,7 @@ import { ajaxLogoPost } from '../ajax-logo';
 import { anderlechtLogoPost } from '../anderlecht-logo';
 import { besiktasLogoPost } from '../besiktas-logo';
 import { celticGlasgowLogoPost } from '../celtic-glasgow-logo';
+import { cfrClujLogoPost } from '../cfr-cluj-logo';
 import { copenhagenLogoPost } from '../copenhagen-logo';
 import { dinamoZagrebLogoPost } from '../dinamo-zagreb-logo';
 import { feyenoordLogoPost } from '../feyenoord-logo';
@@ -23,6 +24,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   anderlechtLogoPost,
   besiktasLogoPost,
   celticGlasgowLogoPost,
+  cfrClujLogoPost,
   copenhagenLogoPost,
   dinamoZagrebLogoPost,
   feyenoordLogoPost,

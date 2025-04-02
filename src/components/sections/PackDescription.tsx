@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -177,7 +176,7 @@ const PackDescription = () => {
           
           <Separator className="my-2 bg-blue-100" />
           
-          <div className="mt-4">
+          <div className="mt-5">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
                 Paiement sécurisé via

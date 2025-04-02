@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -162,7 +163,7 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <Separator className="my-2 bg-blue-100" />
+          <Separator className="my-4 bg-blue-100" />
           
           <div className="py-2">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
@@ -174,11 +175,11 @@ const PackDescription = () => {
             </p>
           </div>
           
-          <Separator className="my-2 bg-blue-100" />
+          <Separator className="my-4 bg-blue-100" />
           
           <div className="mt-5">
-            <div className="flex flex-col items-center">
-              <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <p className="text-xs text-gray-500 flex items-center gap-1.5">
                 Paiement sécurisé via
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
@@ -186,11 +187,11 @@ const PackDescription = () => {
                   className="h-4 object-contain" 
                 />
               </p>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center">
                 <img 
                   src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
                   alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                  className="h-14 object-contain" 
+                  className="h-12 object-contain" 
                 />
               </div>
             </div>

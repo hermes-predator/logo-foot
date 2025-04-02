@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -170,7 +171,7 @@ const PackDescription = () => {
           </DialogClose>
           
           <p className="text-xs text-center text-blue-600 mt-3">
-            Paiement sécurisé via SumUp • Téléchargement instantané • 4000+ clients satisfaits
+            Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
           <div className="mt-5 pt-4 border-t border-blue-100">

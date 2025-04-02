@@ -168,11 +168,11 @@ const PackDescription = () => {
             </Button>
           </DialogClose>
           
-          <p className="text-xs text-center text-blue-600 mt-3">
+          <p className="text-xs text-center text-blue-600 mt-4 pt-2">
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
+          <p className="text-sm font-semibold text-blue-600 text-center mt-6 flex items-center justify-center gap-2">
             <div className="flex items-center justify-center w-5 h-5 relative">
               <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
               <Users className="h-4 w-4 text-blue-600 relative z-10" />

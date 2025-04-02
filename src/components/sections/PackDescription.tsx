@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,6 +19,7 @@ const PackDescription = () => {
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
+  
   return (
     <div className="space-y-0.5 mt-1">
       <FolderCard
@@ -163,9 +163,9 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <Separator className="my-4 bg-blue-100" />
+          <Separator className="my-2 bg-blue-100" />
           
-          <div className="py-2">
+          <div className="py-1">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
               <div className="flex items-center justify-center w-5 h-5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
@@ -175,7 +175,7 @@ const PackDescription = () => {
             </p>
           </div>
           
-          <Separator className="my-4 bg-blue-100" />
+          <Separator className="my-2 bg-blue-100" />
           
           <div className="mt-5">
             <div className="flex flex-wrap items-center justify-center gap-2">

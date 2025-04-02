@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -92,7 +93,6 @@ const PackDescription = () => {
           AVANTAGES DU FICHIER
         </h4>
         
-        
         <div className="grid gap-4 md:grid-cols-2">
           
             
@@ -139,6 +139,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleure en continu.</p>
             </div>
           
+        </div>
         
         
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
@@ -171,7 +172,7 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <p className="text-sm font-semibold text-blue-600 text-center mt-6 flex items-center justify-center gap-2">
+          <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
             <div className="flex items-center justify-center w-5 h-5 relative">
               <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
               <Users className="h-4 w-4 text-blue-600 relative z-10" />

@@ -153,7 +153,10 @@ const PackDescription = () => {
                 <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-medium line-through text-blue-200">50€</span>
+                    <span className="text-sm font-semibold line-through text-red-200 bg-red-500/10 px-2 py-0.5 rounded rotate-[-3deg] transform -translate-y-1 relative">
+                      <span className="absolute inset-x-0 top-1/2 h-0.5 bg-red-300/80 transform -translate-y-1/2"></span>
+                      50€
+                    </span>
                     <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
                   </div>
                 </div>

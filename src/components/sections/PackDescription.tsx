@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -182,12 +181,12 @@ const PackDescription = () => {
             <div className="flex flex-wrap items-center justify-center gap-2">
               <p className="text-xs text-gray-500 flex items-center gap-1.5">
                 Paiement sécurisé via
-                <Circle className="h-1.5 w-1.5 text-gray-400" />
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                   alt="SumUp" 
                   className="h-4 object-contain" 
                 />
+                <Circle className="h-1.5 w-1.5 text-gray-400" />
               </p>
               <div className="flex items-center">
                 <img 

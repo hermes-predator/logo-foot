@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -154,13 +155,15 @@
   }
 }
 
-/* Add the slow blink animation for the ZIP badge */
+/* Add the slow blink animation for the ZIP badge - Modification pour un blink plus rapide et plus engageant */
 @keyframes blink {
   0%, 100% {
     opacity: 1;
+    transform: scale(1);
   }
   50% {
     opacity: 0.7;
+    transform: scale(1.05);
   }
 }
 

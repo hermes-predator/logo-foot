@@ -11,7 +11,7 @@ const FloatingCTA = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
           <div className="flex items-center mb-3 sm:mb-0">
             <Link to="/" className="group flex items-center">
-              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-pulse group-hover:bg-white/30 transition-colors">
+              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 animate-[blink_1.5s_ease-in-out_infinite] group-hover:bg-white/30 transition-colors">
                 <Download className="h-5 w-5 text-white animate-bounce" />
               </span>
               <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">

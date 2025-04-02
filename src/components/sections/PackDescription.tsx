@@ -170,11 +170,10 @@ const PackDescription = () => {
           </p>
           
           <div className="flex items-center justify-center gap-1.5 mt-2.5">
-            <Users className="h-3.5 w-3.5 text-blue-600" />
-            <p className="text-xs font-semibold text-blue-600">
+            <Users className="h-4 w-4 text-blue-600" />
+            <p className="text-sm font-semibold text-blue-600">
               Plus de 4 000 clients nous ont fait confiance
             </p>
-            <Star className="h-3 w-3 text-yellow-500 ml-0.5" />
           </div>
           
           <div className="mt-5 pt-4 border-t border-blue-100">

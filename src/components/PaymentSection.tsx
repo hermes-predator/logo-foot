@@ -155,7 +155,7 @@ const PaymentSection = () => {
             {/* Badge de personnes ayant récemment acheté - mise à jour pour accélérer l'animation */}
             <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
-              <span>19 achats récents</span>
+              <span>19 personnes ont acheté récemment</span>
             </div>
             
             <div className="mb-6">

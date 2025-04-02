@@ -190,9 +190,9 @@ const PaymentSection = () => {
                       <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur - Changé le format à 9.00€ */}
+                    {/* Nouveau prix mis en valeur - Changé à 10€ */}
                     <div className="flex items-center gap-2">
-                      <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">9.00€</span>
+                      <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10€</span>
                       <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
                     </div>
                   </div>
@@ -233,10 +233,10 @@ const PaymentSection = () => {
               onClick={handlePayment}
               disabled={isProcessing}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
-              aria-label="Payer 9.00€ avec paiement sécurisé"
+              aria-label="Payer 10€ avec paiement sécurisé"
             >
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
-              {isProcessing ? "Redirection..." : "Payer 9.00€"}
+              {isProcessing ? "Redirection..." : "Payer 10€"}
             </Button>
           </div>
           

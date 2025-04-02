@@ -11,6 +11,7 @@ import { kylianMbappePost } from './kylian-mbappe';
 import { laligaAnalysis } from './laliga';
 import { ligue1Analysis } from './ligue-1';
 import { lionelMessiPost } from './lionel-messi';
+import { michaelOlisePost } from './michael-olise';
 import { neymarPost } from './neymar';
 import { premierLeagueAnalysis } from './premier-league';
 import { serieAAnalysis } from './serie-a';
@@ -34,6 +35,7 @@ export const analysisPosts: BlogPost[] = [
   laligaAnalysis,
   ligue1Analysis,
   lionelMessiPost,
+  michaelOlisePost,
   neymarPost,
   premierLeagueAnalysis,
   rayanCherkiPost,

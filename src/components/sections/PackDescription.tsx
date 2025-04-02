@@ -170,7 +170,11 @@ const PackDescription = () => {
           </p>
           
           <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
-            <Users className="h-5 w-5 text-blue-600" />
+            <div className="relative flex items-center justify-center">
+              <div className="absolute inset-0 bg-blue-100 opacity-70 rounded-full animate-pulse"></div>
+              <div className="absolute h-8 w-8 rounded-full border border-blue-300 animate-[pulse_2s_infinite_ease-in-out]"></div>
+              <Users className="h-5 w-5 text-blue-600 relative z-10" />
+            </div>
             Plus de 4 000 clients nous ont fait confiance
           </p>
           

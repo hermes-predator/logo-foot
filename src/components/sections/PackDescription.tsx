@@ -162,7 +162,7 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <Separator className="my-2 bg-blue-100" />
+          <Separator className="my-4 bg-blue-100" />
           
           <div className="py-1">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
@@ -174,7 +174,7 @@ const PackDescription = () => {
             </p>
           </div>
           
-          <Separator className="my-2 bg-blue-100" />
+          <Separator className="my-4 bg-blue-100" />
           
           <div className="mt-5">
             <div className="flex flex-col items-center">

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,7 +22,7 @@ const PackDescription = () => {
     
     <div className="space-y-0.5 mt-1">
       
-      <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
+      
         
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
@@ -87,8 +86,7 @@ const PackDescription = () => {
           isLast={true}
           decorativeIcon={<Coins />}
         />
-      </div>
-    
+      
       <div className="space-y-4 pt-5 mt-5">
         <h4 className="text-sm font-extrabold text-gray-800 mb-3">
           AVANTAGES DU FICHIER
@@ -96,6 +94,7 @@ const PackDescription = () => {
         
         <div className="grid gap-4 md:grid-cols-2">
           
+            
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
@@ -105,6 +104,7 @@ const PackDescription = () => {
               </div>
               <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
             </div>
+            
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
@@ -116,6 +116,7 @@ const PackDescription = () => {
               <p className="text-xs text-gray-600 ml-10">Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat.</p>
             </div>
             
+            
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-100">
@@ -125,6 +126,7 @@ const PackDescription = () => {
               </div>
               <p className="text-xs text-gray-600 ml-10">Compatible avec tout système de stockage : ordinateur local ou cloud privé - Google Drive.</p>
             </div>
+            
             
             <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
@@ -170,9 +172,9 @@ const PackDescription = () => {
           </p>
           
           <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
-            <div className="flex items-center justify-center w-7 h-7 relative">
+            <div className="flex items-center justify-center w-6 h-6 relative">
               <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-              <Users className="h-4.5 w-4.5 text-blue-600 relative z-10" />
+              <Users className="h-3.5 w-3.5 text-blue-600 relative z-10" />
             </div>
             4000+ clients nous ont fait confiance
           </p>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -163,15 +162,19 @@ const PackDescription = () => {
           
           <Separator className="my-4 bg-blue-100" />
           
-          <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
-            <div className="flex items-center justify-center w-5 h-5 relative">
-              <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-              <Users className="h-4 w-4 text-blue-600 relative z-10" />
-            </div>
-            4000+ clients nous ont déjà fait confiance
-          </p>
+          <div className="py-2">
+            <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center w-5 h-5 relative">
+                <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
+                <Users className="h-4 w-4 text-blue-600 relative z-10" />
+              </div>
+              4000+ clients nous ont déjà fait confiance
+            </p>
+          </div>
           
-          <div className="mt-5 pt-4 border-t border-blue-100">
+          <Separator className="my-4 bg-blue-100" />
+          
+          <div className="mt-4 pt-2">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
                 Paiement sécurisé via

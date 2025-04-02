@@ -147,9 +147,13 @@ const PackDescription = () => {
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
           
           <div className="absolute top-0 right-0 z-10">
-            <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm animate-[fastBlink_0.8s_ease-in-out_infinite]">
-              <FileArchive className="h-3 w-3 text-white" />
-              ZIP
+            <div className="bg-blue-600 text-white px-3 py-1 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-sm">
+              <div className="flex items-center justify-center gap-2">
+                <Users className="h-3 w-3 text-white" />
+                <p className="text-xs text-white font-medium">
+                  <span className="font-bold">37 acheteurs</span> récents
+                </p>
+              </div>
             </div>
           </div>
           
@@ -173,18 +177,6 @@ const PackDescription = () => {
           <p className="text-xs text-center text-blue-600 mt-3">
             Paiement sécurisé via SumUp • Téléchargement instantané • 4000+ clients satisfaits
           </p>
-          
-          {/* Recent buyers indicator */}
-          <div className="mt-4 pt-3 border-t border-blue-100/50">
-            <div className="flex items-center justify-center gap-2">
-              <div className="bg-blue-100/70 rounded-full p-1.5">
-                <Users className="h-4 w-4 text-blue-600" />
-              </div>
-              <p className="text-xs text-blue-700 font-medium">
-                <span className="font-bold">37 personnes</span> ont acheté ce pack récemment
-              </p>
-            </div>
-          </div>
           
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">

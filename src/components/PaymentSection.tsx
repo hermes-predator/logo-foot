@@ -135,6 +135,14 @@ const PaymentSection = () => {
                  style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
               <Sparkle className="h-6 w-6" />
             </div>
+            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
+              <Sparkle className="h-8 w-8" />
+            </div>
+            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
+                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
+              <Sparkle className="h-6 w-6" />
+            </div>
             <div className="absolute -bottom-8 left-1/3 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
               <Sparkle className="h-10 w-10" />
@@ -144,10 +152,10 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Badge de personnes ayant récemment acheté - avec animation blink au lieu de pulse */}
-            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[blink_2s_ease-in-out_infinite]">
+            {/* Badge de personnes ayant récemment acheté - mise à jour pour accélérer l'animation */}
+            <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
-              <span>{recentBuyers} personnes l'ont acheté récemment</span>
+              <span>19 personnes l'ont acheté récemment</span>
             </div>
             
             <div className="mb-6">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -149,7 +150,6 @@ const PackDescription = () => {
           
           <div className="text-center mb-4">
             <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP unique ?</h3>
-            <p className="text-sm text-blue-600 font-medium">Plus de 4 000 clients nous ont fait confiance</p>
           </div>
           
           <DialogClose asChild>
@@ -167,6 +167,11 @@ const PackDescription = () => {
           
           <p className="text-xs text-center text-blue-600 mt-3">
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
+          </p>
+          
+          <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
+            <Users className="h-5 w-5 text-blue-600" />
+            Plus de 4 000 clients nous ont fait confiance
           </p>
           
           <div className="mt-5 pt-4 border-t border-blue-100">

@@ -21,6 +21,7 @@ const PackDescription = () => {
   return (
     
     <div className="space-y-0.5 mt-1">
+      
       <div className="overflow-hidden rounded-lg border border-gray-200/80 shadow-sm">
         
         <FolderCard
@@ -166,6 +167,10 @@ const PackDescription = () => {
           
           <p className="text-xs text-center text-blue-600 mt-3">
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
+          </p>
+          
+          <p className="text-xs text-center text-blue-600 mt-1">
+            Plus de 4 000 clients nous ont fait confiance
           </p>
           
           <div className="mt-5 pt-4 border-t border-blue-100">

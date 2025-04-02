@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ArrowRight, Folder, Globe, Cloud, RefreshCw, Shield, Trophy, Flag, Image, Coins, Download, Users, Diamond, FileArchive } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, Diamond } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
@@ -149,7 +150,7 @@ const PackDescription = () => {
               className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-16"
             >
               <div className="flex items-center justify-center w-full gap-4">
-                <FileArchive className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
                 <div className="flex flex-col items-center">
                   <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
                 </div>

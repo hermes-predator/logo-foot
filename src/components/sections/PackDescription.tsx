@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
-import { Separator } from "@/components/ui/separator";
 
 const PackDescription = () => {
   const { toast } = useToast();
@@ -131,9 +130,6 @@ const PackDescription = () => {
             <p className="text-xs text-gray-600 ml-10">Nos clients adorent ce fichier, cela nous motive à apporter une valeur meilleure en continu.</p>
           </div>
         </div>
-        
-        <Separator className="my-5 bg-gray-100" />
-        <Separator className="mb-5 bg-gray-100" />
         
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
           <div className="absolute top-0 right-0 z-10">

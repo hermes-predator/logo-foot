@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -169,15 +168,6 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
-            <div className="relative flex items-center justify-center">
-              <div className="absolute inset-0 bg-blue-100 opacity-70 rounded-full animate-pulse"></div>
-              <div className="absolute h-8 w-8 rounded-full border border-blue-300 animate-[pulse_2s_infinite_ease-in-out]"></div>
-              <Users className="h-5 w-5 text-blue-600 relative z-10" />
-            </div>
-            Plus de 4 000 clients nous ont fait confiance
-          </p>
-          
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">
               <p className="text-xs text-gray-500 mb-1 flex items-center justify-center gap-1.5">
@@ -195,6 +185,14 @@ const PackDescription = () => {
                   className="h-14 object-contain" 
                 />
               </div>
+              
+              <p className="text-sm font-semibold text-blue-600 text-center mt-3 flex items-center justify-center gap-2">
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute h-6 w-6 rounded-full border-2 border-blue-200"></div>
+                  <Users className="h-4 w-4 text-blue-600 relative z-10" />
+                </div>
+                4000+ clients nous ont fait confiance
+              </p>
             </div>
           </div>
         </div>

@@ -169,9 +169,13 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <p className="text-xs text-center text-blue-600 mt-1">
-            Plus de 4 000 clients nous ont fait confiance
-          </p>
+          <div className="flex items-center justify-center gap-1.5 mt-2.5">
+            <Users className="h-3.5 w-3.5 text-blue-600" />
+            <p className="text-xs font-semibold text-blue-600">
+              Plus de 4 000 clients nous ont fait confiance
+            </p>
+            <Star className="h-3 w-3 text-yellow-500 ml-0.5" />
+          </div>
           
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">

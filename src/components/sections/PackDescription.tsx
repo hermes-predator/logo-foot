@@ -1,16 +1,9 @@
-
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info, Users, Check } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 const PackDescription = () => {
   const { toast } = useToast();
@@ -153,8 +146,9 @@ const PackDescription = () => {
             </div>
           </div>
           
-          <div className="text-center mb-5">
-            <h3 className="text-xl font-bold text-black mb-0">Prêt à recevoir ce fichier ZIP unique ?</h3>
+          <div className="text-center mb-4">
+            <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP unique ?</h3>
+            <p className="text-sm text-blue-600 font-medium">Plus de 4 000 clients nous ont fait confiance</p>
           </div>
           
           <DialogClose asChild>
@@ -191,48 +185,6 @@ const PackDescription = () => {
                   className="h-14 object-contain" 
                 />
               </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Nouvelle section de confiance des clients */}
-        <div className="mt-8 py-6">
-          <div className="text-center mb-6">
-            <h3 className="text-lg font-bold text-gray-800">Plus de 4 000 clients nous ont fait confiance</h3>
-            <p className="text-sm text-gray-600 mt-1">Rejoignez les milliers d'utilisateurs satisfaits de notre collection</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col items-center justify-center text-center">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 mb-3">
-                <Star className="h-5 w-5 text-amber-500" />
-              </div>
-              <p className="text-2xl font-bold text-gray-900">4.8/5</p>
-              <p className="text-xs text-gray-600 mt-1">Note moyenne</p>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col items-center justify-center text-center">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 mb-3">
-                <Users className="h-5 w-5 text-blue-600" />
-              </div>
-              <p className="text-2xl font-bold text-gray-900">4 000+</p>
-              <p className="text-xs text-gray-600 mt-1">Clients satisfaits</p>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col items-center justify-center text-center">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 mb-3">
-                <Download className="h-5 w-5 text-blue-600" />
-              </div>
-              <p className="text-2xl font-bold text-gray-900">8 600+</p>
-              <p className="text-xs text-gray-600 mt-1">Ressources</p>
-            </div>
-            
-            <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col items-center justify-center text-center">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 mb-3">
-                <Check className="h-5 w-5 text-green-600" />
-              </div>
-              <p className="text-2xl font-bold text-gray-900">100%</p>
-              <p className="text-xs text-gray-600 mt-1">Garantie satisfaction</p>
             </div>
           </div>
         </div>

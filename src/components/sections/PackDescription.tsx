@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
 
 const PackDescription = () => {
   const { toast } = useToast();
@@ -160,7 +161,9 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <p className="text-sm font-semibold text-blue-600 text-center mt-5 flex items-center justify-center gap-2">
+          <Separator className="my-4 bg-blue-100" />
+          
+          <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
             <div className="flex items-center justify-center w-5 h-5 relative">
               <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
               <Users className="h-4 w-4 text-blue-600 relative z-10" />

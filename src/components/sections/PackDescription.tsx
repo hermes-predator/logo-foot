@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, Diamond } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
@@ -135,7 +135,7 @@ const PackDescription = () => {
         <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-blue-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md animate-[fastBlink_1s_ease-in-out_infinite]">
-              <Diamond className="h-3 w-3 text-white" />
+              <BadgeDollarSign className="h-3 w-3 text-white" />
               <span>Valeur : 50€</span>
             </div>
           </div>
@@ -150,7 +150,7 @@ const PackDescription = () => {
               className="w-full md:w-4/5 mx-auto block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow-md border-b-[2px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-16"
             >
               <div className="flex items-center justify-center w-full gap-4">
-                <ShoppingCart className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                <FileArchive className="h-9 w-9 transition-all duration-300 group-hover:rotate-[-8deg]" />
                 <div className="flex flex-col items-center">
                   <span className="text-center font-medium text-xl">Télécharger maintenant pour 10€</span>
                 </div>

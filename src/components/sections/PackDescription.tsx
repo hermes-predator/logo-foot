@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, CreditCard, FileArchive, Shield, Trophy, Flag, Image, Coins, Download, Info, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import FolderCard from './folders/FolderCard';
@@ -173,6 +174,17 @@ const PackDescription = () => {
             Paiement sécurisé via SumUp • Téléchargement instantané • 4000+ clients satisfaits
           </p>
           
+          {/* Recent buyers indicator */}
+          <div className="mt-4 pt-3 border-t border-blue-100/50">
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-blue-100/70 rounded-full p-1.5">
+                <Users className="h-4 w-4 text-blue-600" />
+              </div>
+              <p className="text-xs text-blue-700 font-medium">
+                <span className="font-bold">37 personnes</span> ont acheté ce pack récemment
+              </p>
+            </div>
+          </div>
           
           <div className="mt-5 pt-4 border-t border-blue-100">
             <div className="flex flex-col items-center">

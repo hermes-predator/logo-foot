@@ -167,14 +167,14 @@ const PaymentSection = () => {
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
-            {/* Liste de caractéristiques améliorée avec meilleur contraste */}
-            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+            {/* Liste de caractéristiques - VERSION PLUS COMPACTE */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 mb-6">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-4 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-all">
-                  <div className={`p-2 rounded-full ${feature.className || 'bg-blue-100'}`}>
-                    <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-blue-600'}`} />
+                <div key={index} className="flex items-center gap-2 text-gray-700 hover:bg-gray-50 p-1.5 rounded-md transition-all">
+                  <div className={`p-1.5 rounded-full ${feature.className || 'bg-blue-100'}`}>
+                    <feature.icon className={`h-4 w-4 ${feature.iconColor || 'text-blue-600'}`} />
                   </div>
-                  <span className="text-[15px] font-medium">{feature.text}</span>
+                  <span className="text-[13px] font-medium">{feature.text}</span>
                 </div>
               ))}
             </div>

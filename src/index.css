@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,7 +49,7 @@
 }
 
 .image-hover {
-  @apply transition-all duration-300 ease-in-out;
+  @apply transition-transform duration-300 ease-in-out;
 }
 
 .image-hover:hover {
@@ -70,7 +71,7 @@
   }
 }
 
-/* Animation d'entrée pour chaque élément avec un délai progressif */
+/* Animation d'entrée pour chaque élément avec un délai progressif - optimisée pour utiliser opacity et transform uniquement */
 @keyframes elementFadeIn {
   0% {
     opacity: 0;
@@ -85,6 +86,7 @@
 .element-fade-in {
   opacity: 0;
   animation: elementFadeIn 0.7s ease-out forwards;
+  will-change: transform, opacity;
 }
 
 /* Animations avec délais différents pour créer un effet cascade */
@@ -96,6 +98,7 @@
 .delay-600 { animation-delay: 600ms; }
 .delay-700 { animation-delay: 700ms; }
 
+/* Animation de shimmer optimisée avec will-change */
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);
@@ -105,15 +108,16 @@
   }
 }
 
-/* Cursor effects */
+/* Cursor effects - optimisés */
 .cursor-pointer {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-/* Gold shine effect with improved positioning */
+/* Gold shine effect with improved positioning and performance */
 .gold-shine {
   overflow: hidden;
+  position: relative;
 }
 
 .gold-shine::after {
@@ -132,6 +136,7 @@
   transform: rotate(30deg);
   animation: goldShimmer 4s infinite linear;
   pointer-events: none;
+  will-change: transform;
 }
 
 @keyframes goldShimmer {
@@ -143,6 +148,7 @@
   }
 }
 
+/* Pulse animation optimisée avec will-change */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -154,7 +160,7 @@
   }
 }
 
-/* Add the slow blink animation for the ZIP badge */
+/* Blink animations optimisées pour n'utiliser que opacity */
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -164,17 +170,17 @@
   }
 }
 
-/* Cart animation for the shopping icon - balanced dancing effect */
+/* Cart animation - réduite à transform uniquement */
 @keyframes cartMove {
-  0% { transform: translateY(0) rotate(0deg); }
-  20% { transform: translateY(-3px) rotate(2deg); }
-  40% { transform: translateY(0) rotate(0deg); }
-  60% { transform: translateY(-2px) scale(1.05); }
-  80% { transform: scale(1) rotate(-1deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-3px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-2px); }
+  80% { transform: translateY(0); }
+  100% { transform: translateY(0); }
 }
 
-/* Shine effect animation for CTA buttons */
+/* Shine effect animation optimisée */
 @keyframes shine {
   0% {
     left: -100%;
@@ -187,8 +193,11 @@
 }
 
 .animate-shine {
+  position: relative;
+  overflow: hidden;
   animation: shine 2s ease-out infinite;
   animation-delay: 1s;
+  will-change: opacity;
 }
 
 /* Ensure buttons have proper cursor */
@@ -243,7 +252,7 @@ img, video {
 
 /* Add smooth transitioning for all anchor tags */
 a {
-  @apply transition-all duration-300;
+  @apply transition-colors duration-300;
 }
 
 /* Enhance blockquote styling */
@@ -267,9 +276,10 @@ ul.fancy-list li::before {
   @apply bg-white/80 backdrop-blur-sm border border-white/50 shadow-sm;
 }
 
-/* Article card hover effect */
+/* Article card hover effect - optimisé */
 .article-card {
-  @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  @apply transition-transform duration-300 hover:shadow-md hover:-translate-y-1;
+  will-change: transform;
 }
 
 /* Table of contents styling */

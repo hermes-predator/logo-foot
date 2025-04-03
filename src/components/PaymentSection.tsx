@@ -79,39 +79,39 @@ const PaymentSection = () => {
       </div>
       
       {/* Cards avec indicateurs de service améliorés avec meilleur contraste */}
-      <div className="grid md:grid-cols-3 gap-4 mb-5">
+      <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
-          className="flex flex-col items-center p-3.5 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le paiement sécurisé"
         >
-          <ShieldCheck className="w-6 h-6 text-blue-600 mb-1.5 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
-          <h3 className="font-medium mb-0.5 text-sm">Paiement Sécurisé</h3>
+          <ShieldCheck className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
           <p className="text-xs text-gray-600 text-center">Transactions via SumUp</p>
         </div>
         <div 
-          className="flex flex-col items-center p-3.5 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le téléchargement instantané"
         >
-          <Download className="w-6 h-6 text-blue-600 mb-1.5 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
-          <h3 className="font-medium mb-0.5 text-sm">Téléchargement instantané</h3>
+          <Download className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
         <div 
-          className="flex flex-col items-center p-3.5 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le support client"
         >
-          <HandHeart className="w-6 h-6 text-blue-600 mb-1.5 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
-          <h3 className="font-medium mb-0.5 text-sm">Support Réactif</h3>
+          <HandHeart className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
           <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-6 md:p-7 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
+          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
             {/* Animated stars - in different positions */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
@@ -160,21 +160,21 @@ const PaymentSection = () => {
               <span>{recentBuyers} personnes ont acheté récemment</span>
             </div>
             
-            <div className="mb-5">
+            <div className="mb-6">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
               </div>
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
-            {/* Liste de caractéristiques améliorée avec meilleur contraste - PLUS COMPACTE */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2.5 mb-6">
+            {/* Liste de caractéristiques améliorée avec meilleur contraste */}
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3 text-gray-700 hover:bg-gray-50 p-1.5 rounded-lg transition-all">
-                  <div className={`p-1.5 rounded-full ${feature.className || 'bg-blue-100'}`}>
-                    <feature.icon className={`h-4 w-4 ${feature.iconColor || 'text-blue-600'}`} />
+                <div key={index} className="flex items-center gap-4 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-all">
+                  <div className={`p-2 rounded-full ${feature.className || 'bg-blue-100'}`}>
+                    <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-blue-600'}`} />
                   </div>
-                  <span className="text-sm font-medium">{feature.text}</span>
+                  <span className="text-[15px] font-medium">{feature.text}</span>
                 </div>
               ))}
             </div>

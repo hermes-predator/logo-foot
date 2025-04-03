@@ -200,6 +200,70 @@
   will-change: opacity;
 }
 
+/* Star fade animations - Nouvelles animations optimisées pour les étoiles */
+@keyframes starFade1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) rotate(var(--star-rotate, 0deg));
+  }
+  20%, 80% {
+    opacity: 0.2;
+    transform: scale(1) rotate(var(--star-rotate, 0deg));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6) rotate(var(--star-rotate, 0deg));
+  }
+}
+
+@keyframes starFade2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) rotate(var(--star-rotate, 0deg));
+  }
+  30%, 70% {
+    opacity: 0.25;
+    transform: scale(1) rotate(var(--star-rotate, 0deg));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7) rotate(var(--star-rotate, 0deg));
+  }
+}
+
+@keyframes starFade3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(var(--star-rotate, 0deg));
+  }
+  25%, 75% {
+    opacity: 0.15;
+    transform: scale(1) rotate(var(--star-rotate, 0deg));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8) rotate(var(--star-rotate, 0deg));
+  }
+}
+
+.animate-star-fade-1 {
+  animation: starFade1 var(--star-duration, 4s) infinite ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.animate-star-fade-2 {
+  animation: starFade2 var(--star-duration, 4s) infinite ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.animate-star-fade-3 {
+  animation: starFade3 var(--star-duration, 4s) infinite ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  will-change: opacity, transform;
+}
+
 /* Ensure buttons have proper cursor */
 a, button, .cursor-pointer, [role="button"] {
   cursor: pointer !important;

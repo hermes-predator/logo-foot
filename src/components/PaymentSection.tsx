@@ -112,46 +112,43 @@ const PaymentSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
           <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
-            {/* Animated stars - in different positions */}
-            <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
-              <Sparkle className="h-12 w-12" />
-            </div>
-            <div className="absolute top-1/2 -left-6 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.5s', animationIterationCount: 'infinite', animationDelay: '0.5s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute top-1/2 -right-6 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.2s', animationIterationCount: 'infinite', animationDelay: '1.5s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4.2s', animationIterationCount: 'infinite', animationDelay: '2s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
-              <Sparkle className="h-6 w-6" />
-            </div>
-            <div className="absolute -bottom-6 right-1/4 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.8s', animationIterationCount: 'infinite', animationDelay: '0.8s' }}>
-              <Sparkle className="h-8 w-8" />
-            </div>
-            <div className="absolute bottom-2/3 -left-8 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.6s', animationIterationCount: 'infinite', animationDelay: '1.2s' }}>
-              <Sparkle className="h-6 w-6" />
-            </div>
-            <div className="absolute -bottom-8 left-1/3 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '4.5s', animationIterationCount: 'infinite', animationDelay: '0.3s' }}>
-              <Sparkle className="h-10 w-10" />
-            </div>
-            <div className="absolute top-1/4 -left-10 text-blue-400 opacity-20 animate-ping" 
-                 style={{ animationDuration: '3.9s', animationIterationCount: 'infinite', animationDelay: '1.8s' }}>
-              <Sparkle className="h-8 w-8" />
+            {/* Optimized star animations - Using CSS variables for more efficient rendering */}
+            <div className="stars-container absolute inset-0 overflow-hidden pointer-events-none">
+              {/* Star 1 */}
+              <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-0 animate-star-fade-1" 
+                   style={{ '--star-duration': '4s', '--star-delay': '0.2s' } as React.CSSProperties}>
+                <Sparkle className="h-12 w-12 transform rotate-15 filter drop-shadow-sm" />
+              </div>
+              
+              {/* Star 2 */}
+              <div className="absolute top-1/3 -left-8 text-blue-400 opacity-0 animate-star-fade-2"
+                   style={{ '--star-duration': '3.8s', '--star-delay': '0.5s' } as React.CSSProperties}>
+                <Sparkle className="h-10 w-10 transform -rotate-12" />
+              </div>
+              
+              {/* Star 3 */}
+              <div className="absolute top-1/4 -right-6 text-blue-400 opacity-0 animate-star-fade-1"
+                   style={{ '--star-duration': '4.2s', '--star-delay': '1.2s' } as React.CSSProperties}>
+                <Sparkle className="h-8 w-8 transform rotate-45" />
+              </div>
+              
+              {/* Star 4 */}
+              <div className="absolute bottom-1/3 -right-4 text-blue-400 opacity-0 animate-star-fade-3"
+                   style={{ '--star-duration': '3.6s', '--star-delay': '0.7s' } as React.CSSProperties}>
+                <Sparkle className="h-9 w-9 transform -rotate-20" />
+              </div>
+              
+              {/* Star 5 */}
+              <div className="absolute bottom-1/4 left-1/4 text-blue-400 opacity-0 animate-star-fade-2"
+                   style={{ '--star-duration': '4.4s', '--star-delay': '0.9s' } as React.CSSProperties}>
+                <Sparkle className="h-6 w-6 transform rotate-12" />
+              </div>
+              
+              {/* Star 6 */}
+              <div className="absolute top-1/4 right-1/4 text-blue-400 opacity-0 animate-star-fade-3"
+                   style={{ '--star-duration': '3.9s', '--star-delay': '1.6s' } as React.CSSProperties}>
+                <Sparkle className="h-7 w-7 transform -rotate-5" />
+              </div>
             </div>
             
             {/* Badge de personnes ayant récemment acheté - amélioration du contraste */}

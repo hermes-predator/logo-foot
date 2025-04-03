@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -119,7 +118,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                           className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
                         >
                           <Download className="h-3.5 w-3.5" />
-                          <span className="text-xs font-medium">Télécharger ce fichier (10€)</span>
+                          <span className="text-xs font-medium">Télécharger ce fichier (8€)</span>
                         </Button>
                       </TooltipTrigger>
                       <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
@@ -165,7 +164,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   
                   {/* Text with updated text symbol - Conservé */}
                   <span className="relative z-10 font-semibold tracking-wide">
-                    Achat rapide ~ 10€
+                    Achat rapide ~ 8€
                   </span>
                   
                   {/* Shine effect - Conservé */}

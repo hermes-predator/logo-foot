@@ -67,3 +67,4 @@ const PricingBlock = () => {
 };
 
 export default PricingBlock;
+

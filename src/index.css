@@ -187,7 +187,8 @@
 }
 
 .animate-shine {
-  animation: shine 1.3s ease-out infinite;
+  animation: shine 2s ease-out infinite;
+  animation-delay: 1s;
 }
 
 /* Ensure buttons have proper cursor */

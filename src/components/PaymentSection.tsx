@@ -42,8 +42,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Fichier organisé",
-      className: "bg-green-50",
-      iconColor: "text-green-600"
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     },
     {
       icon: Wallet,
@@ -52,8 +52,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Gain de temps",
-      className: "bg-green-50",
-      iconColor: "text-green-600"
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     },
     {
       icon: Download,
@@ -62,8 +62,8 @@ const PaymentSection = () => {
     {
       icon: Check,
       text: "Valeur à votre actif",
-      className: "bg-green-50",
-      iconColor: "text-green-600"
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-600"
     }
   ];
   
@@ -78,31 +78,32 @@ const PaymentSection = () => {
         </p>
       </div>
       
+      {/* Cards avec indicateurs de service améliorés avec meilleur contraste */}
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le paiement sécurisé"
         >
-          <ShieldCheck className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <ShieldCheck className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Paiement Sécurisé</h3>
           <p className="text-xs text-gray-600 text-center">Transactions via SumUp</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le téléchargement instantané"
         >
-          <Download className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <Download className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Téléchargement instantané</h3>
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-white/50 rounded-lg backdrop-blur-sm border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-200"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
           role="article"
           aria-label="Information sur le support client"
         >
-          <HandHeart className="w-6 h-6 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <HandHeart className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
           <h3 className="font-medium mb-1 text-sm">Support Réactif</h3>
           <p className="text-xs text-gray-600 text-center">Une équipe à votre écoute</p>
         </div>
@@ -110,7 +111,7 @@ const PaymentSection = () => {
 
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-3">
-          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-100 bg-gradient-to-b from-blue-50/50 to-white shadow-sm hover:shadow-md transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-200">
+          <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
             {/* Animated stars - in different positions */}
             <div className="absolute -bottom-4 -left-4 text-blue-400 opacity-20 animate-ping" 
                  style={{ animationDuration: '4s', animationIterationCount: 'infinite', animationDelay: '1s' }}>
@@ -153,7 +154,7 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Badge de personnes ayant récemment acheté - mise à jour de la couleur de bleu à vert */}
+            {/* Badge de personnes ayant récemment acheté - amélioration du contraste */}
             <div className="absolute top-0 right-0 bg-green-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes ont acheté récemment</span>
@@ -166,35 +167,39 @@ const PaymentSection = () => {
               <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
             </div>
 
+            {/* Liste de caractéristiques améliorée avec meilleur contraste */}
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-4 text-gray-700">
-                  <div className={`p-1.5 rounded-lg ${feature.className || 'bg-blue-50'}`}>
+                <div key={index} className="flex items-center gap-4 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-all">
+                  <div className={`p-2 rounded-full ${feature.className || 'bg-blue-100'}`}>
                     <feature.icon className={`h-5 w-5 ${feature.iconColor || 'text-blue-600'}`} />
                   </div>
-                  <span className="text-[15px]">{feature.text}</span>
+                  <span className="text-[15px] font-medium">{feature.text}</span>
                 </div>
               ))}
             </div>
 
-            {/* Prix simplifié avec prix barré - AMÉLIORÉ : style visuel du conteneur */}
-            <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 via-blue-50/80 to-sky-50/90 border border-blue-100 shadow-inner relative overflow-hidden">
-              {/* Effet de brillance subtil */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
+            {/* Prix simplifié avec prix barré - AMÉLIORÉ : style visuel du conteneur avec meilleur contraste */}
+            <div className="flex flex-col md:flex-row items-center justify-between p-5 mb-6 rounded-xl bg-gradient-to-r from-blue-50 via-blue-50/90 to-sky-50 border border-blue-200 shadow-inner relative overflow-hidden">
+              {/* Effet de brillance renforcé */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-shimmer"></div>
               
               <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
                 <div className="flex flex-col md:flex-row items-center gap-3">
                   <div>
-                    {/* Prix normal barré - Modifié de 40,00€ à 50,00€ */}
-                    <div className="flex items-center gap-2 mb-0.5">
+                    {/* Prix normal barré - Modifié pour un meilleur contraste */}
+                    <div className="flex items-center gap-2 mb-1">
                       <span className="text-gray-500 text-lg line-through font-medium">50,00€</span>
-                      <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold">Valeur réelle</span>
+                      <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200">Valeur réelle</span>
                     </div>
                     
-                    {/* Nouveau prix mis en valeur - Changé à 10€ */}
+                    {/* Nouveau prix mis en valeur avec meilleur contraste */}
                     <div className="flex items-center gap-2">
                       <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10€</span>
-                      <span className="text-gray-500 text-sm ml-1">TVA incluse</span>
+                      <div className="flex flex-col items-start ml-2">
+                        <span className="text-green-700 text-sm font-semibold whitespace-nowrap">80% de réduction</span>
+                        <span className="text-gray-500 text-sm whitespace-nowrap">TVA incluse</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -230,20 +235,24 @@ const PaymentSection = () => {
               </div>
             </div>
 
+            {/* Bouton principal avec meilleur contraste */}
             <Button
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-lg active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0"
+              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-xl active:scale-95 group disabled:opacity-75 disabled:cursor-not-allowed border-0 mb-0 relative overflow-hidden"
               aria-label="Payer 10€ avec paiement sécurisé"
             >
+              {/* Effet de brillance sur le bouton */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shine"></div>
+              
               <ShoppingCart className="mr-2 h-8 w-8 transition-all duration-300 group-hover:rotate-[-8deg]" aria-hidden="true" />
               {isProcessing ? "Redirection..." : "Payer 10€"}
             </Button>
           </div>
           
           <div className="flex items-center justify-center mt-6 flex-wrap gap-2">
-            <div className="inline-flex items-center gap-2">
-              <span className="text-sm text-gray-700">Paiement sécurisé</span>
+            <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg border border-gray-100">
+              <span className="text-sm text-gray-700 font-medium">Paiement sécurisé</span>
               <img 
                 src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                 alt="SumUp Secure Payment" 
@@ -256,7 +265,7 @@ const PaymentSection = () => {
               <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
             </div>
             
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 p-1.5 bg-gray-50 rounded-lg border border-gray-100">
               <img 
                 src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
                 alt="Cartes de paiement acceptées" 

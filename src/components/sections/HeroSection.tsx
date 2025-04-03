@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -63,17 +62,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
-        {/* Trust badges - Animation de démarrage supprimée mais animations au survol modifiées pour être plus subtiles */}
+        {/* Trust badges - Animation de démarrage supprimée mais animations au survol conservées */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-500 hover:bg-white/90 hover:shadow-md hover:-translate-y-0.5">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-500 hover:bg-white/90 hover:shadow-md hover:-translate-y-0.5">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Lock className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-500 hover:bg-white/90 hover:shadow-md hover:-translate-y-0.5">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Download className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>

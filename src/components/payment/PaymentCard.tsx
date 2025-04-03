@@ -14,14 +14,16 @@ interface PaymentCardProps {
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   return (
     <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300 overflow-hidden">
-      {/* Décorations de dossier à l'intérieur de l'offre */}
-      <div className="absolute -top-10 right-8 opacity-10 text-blue-900 transform -rotate-12 scale-[1.5]">
+      {/* Dossier décoratif dans le coin supérieur droit */}
+      <div className="absolute -top-4 -right-4 opacity-10 text-blue-900 transform -rotate-12 scale-[1.8]">
         <Folder size={100} />
       </div>
-      <div className="absolute top-20 left-10 opacity-10 text-blue-800 transform rotate-6 scale-[0.8]">
+      
+      {/* Autres éléments décoratifs moins visibles */}
+      <div className="absolute top-40 left-10 opacity-5 text-blue-800 transform rotate-6 scale-[0.8]">
         <FileText size={60} />
       </div>
-      <div className="absolute bottom-10 right-10 opacity-10 text-blue-700 transform -rotate-3">
+      <div className="absolute bottom-10 right-20 opacity-5 text-blue-700 transform -rotate-3">
         <Image size={70} />
       </div>
       

@@ -170,7 +170,7 @@
   }
 }
 
-/* Cart animation - réduite à transform uniquement */
+/* Cart animation - restaurée à l'animation originale */
 @keyframes cartMove {
   0% { transform: translateY(0); }
   20% { transform: translateY(-3px); }
@@ -180,7 +180,7 @@
   100% { transform: translateY(0); }
 }
 
-/* Shine effect animation optimisée */
+/* Shine effect animation - restaurée à l'original */
 @keyframes shine {
   0% {
     left: -100%;

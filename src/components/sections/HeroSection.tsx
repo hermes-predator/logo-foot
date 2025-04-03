@@ -74,12 +74,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Download className="w-5 h-5 text-green-600" />
+            <Download className="w-5 w-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
         </div>
 
-        {/* CTA buttons - Optimisés */}
+        {/* CTA buttons - Réintégration de l'animation originale du bouton "Achat Rapide" */}
         <div className="flex items-center justify-center gap-4 pt-6">
           <Dialog>
             <DialogTrigger asChild>
@@ -148,14 +148,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   }}
                   className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-sm gap-4 hover:-translate-y-0.5 px-7 py-2.5 h-auto relative group overflow-hidden"
                 >
-                  {/* Outer glow animation - optimisée */}
+                  {/* Outer glow animation - restaurée à l'original */}
                   <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
                        style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
 
-                  {/* Inner glow for the cart icon avec animation optimisée */}
+                  {/* Inner glow for the cart icon - restaurée à l'animation originale */}
                   <div className="relative">
                     <ShoppingCart 
-                      className="h-4 w-4 transition-transform will-change-transform" 
+                      className="h-4 w-4 transition-transform duration-300" 
                       style={{
                         color: "#FFE082",
                         filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))',
@@ -169,7 +169,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     Achat rapide ~ 8€
                   </span>
                   
-                  {/* Shine effect optimisé */}
+                  {/* Shine effect - restauré à l'original */}
                   <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
                 </Button>
               </TooltipTrigger>

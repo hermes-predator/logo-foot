@@ -154,8 +154,8 @@ const PaymentSection = () => {
               <Sparkle className="h-8 w-8" />
             </div>
             
-            {/* Badge de personnes ayant récemment acheté - amélioration du contraste */}
-            <div className="absolute top-0 right-0 bg-green-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
+            {/* Badge de personnes ayant récemment acheté - animation plus subtile */}
+            <div className="absolute top-0 right-0 bg-green-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-xs font-semibold shadow-md flex items-center gap-1.5 animate-[blink_3s_ease-in-out_infinite]">
               <Users className="h-3 w-3" />
               <span>{recentBuyers} personnes ont acheté récemment</span>
             </div>

@@ -70,11 +70,11 @@
   }
 }
 
-/* Animation d'entrée pour chaque élément avec un délai progressif */
+/* Animation d'entrée optimisées */
 @keyframes elementFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
@@ -84,24 +84,30 @@
 
 .element-fade-in {
   opacity: 0;
-  animation: elementFadeIn 0.7s ease-out forwards;
+  animation: elementFadeIn 0.5s ease-out forwards;
 }
 
-/* Animations avec délais différents pour créer un effet cascade */
+/* Délais d'animation optimisés */
 .delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-600 { animation-delay: 600ms; }
-.delay-700 { animation-delay: 700ms; }
+.delay-200 { animation-delay: 180ms; }
+.delay-300 { animation-delay: 260ms; }
+.delay-400 { animation-delay: 340ms; }
+.delay-500 { animation-delay: 420ms; }
+.delay-600 { animation-delay: 500ms; }
+.delay-700 { animation-delay: 580ms; }
 
+/* Effet de scintillement amélioré et optimisé */
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -143,14 +149,15 @@
   }
 }
 
+/* Animation de pulsation optimisée */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
     transform: scale(1);
   }
   50% {
-    opacity: 0.8;
-    transform: scale(1.05);
+    opacity: 0.9;
+    transform: scale(1.02);
   }
 }
 
@@ -160,35 +167,34 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.85;
   }
 }
 
 /* Cart animation for the shopping icon - balanced dancing effect */
 @keyframes cartMove {
-  0% { transform: translateY(0) rotate(0deg); }
-  20% { transform: translateY(-3px) rotate(2deg); }
-  40% { transform: translateY(0) rotate(0deg); }
-  60% { transform: translateY(-2px) scale(1.05); }
-  80% { transform: scale(1) rotate(-1deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-2px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-1px); }
+  100% { transform: translateY(0); }
 }
 
 /* Shine effect animation for CTA buttons */
 @keyframes shine {
   0% {
     left: -100%;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     left: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 
 .animate-shine {
-  animation: shine 2s ease-out infinite;
-  animation-delay: 1s;
+  animation: shine 2.5s ease-out infinite;
+  animation-delay: 0.5s;
 }
 
 /* Ensure buttons have proper cursor */
@@ -243,7 +249,7 @@ img, video {
 
 /* Add smooth transitioning for all anchor tags */
 a {
-  @apply transition-all duration-300;
+  @apply transition-all duration-200;
 }
 
 /* Enhance blockquote styling */
@@ -317,12 +323,12 @@ pre code {
   @apply bg-transparent text-inherit p-0;
 }
 
-/* Add the fast blink animation for the ZIP badge */
+/* Add the fast blink animation for the ZIP badge - optimisé */
 @keyframes fastBlink {
   0%, 100% {
     opacity: 1;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.85;
   }
 }

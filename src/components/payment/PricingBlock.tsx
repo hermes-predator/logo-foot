@@ -24,9 +24,9 @@ const PricingBlock = () => {
             
             {/* Nouveau prix mis en valeur avec meilleur contraste */}
             <div className="flex items-center gap-2">
-              <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">10€</span>
+              <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">8€</span>
               <div className="flex flex-col items-start ml-2">
-                <span className="text-green-700 text-sm font-semibold whitespace-nowrap">80% de réduction</span>
+                <span className="text-green-700 text-sm font-semibold whitespace-nowrap">84% de réduction</span>
                 <span className="text-gray-500 text-sm whitespace-nowrap">TVA incluse</span>
               </div>
             </div>

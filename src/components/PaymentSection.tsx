@@ -78,10 +78,10 @@ const PaymentSection = () => {
         </p>
       </div>
       
-      {/* Cards avec indicateurs de service améliorés avec meilleur contraste */}
+      {/* Cards avec indicateurs de service améliorés - Effet d'agrandissement allégé */}
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div 
-          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-blue-300"
           role="article"
           aria-label="Information sur le paiement sécurisé"
         >
@@ -90,7 +90,7 @@ const PaymentSection = () => {
           <p className="text-xs text-gray-600 text-center">Transactions via SumUp</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-blue-300"
           role="article"
           aria-label="Information sur le téléchargement instantané"
         >
@@ -99,7 +99,7 @@ const PaymentSection = () => {
           <p className="text-xs text-gray-600 text-center">Page d'après-paiement</p>
         </div>
         <div 
-          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-blue-300"
+          className="flex flex-col items-center p-4 bg-blue-50 rounded-lg backdrop-blur-sm border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] hover:border-blue-300"
           role="article"
           aria-label="Information sur le support client"
         >

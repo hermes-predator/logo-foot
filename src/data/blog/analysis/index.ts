@@ -20,6 +20,7 @@ import { bradleyBarcolaPost } from './bradley-barcola';
 import { williamPachoPost } from './william-pacho';
 import { rayanCherkiPost } from './rayan-cherki';
 import { vitinhaPost } from './vitinha';
+import { lamineYamalPost } from './lamine-yamal';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
@@ -33,6 +34,7 @@ export const analysisPosts: BlogPost[] = [
   joaoNevesPost,
   kylianMbappePost,
   laligaAnalysis,
+  lamineYamalPost,
   ligue1Analysis,
   lionelMessiPost,
   michaelOlisePost,

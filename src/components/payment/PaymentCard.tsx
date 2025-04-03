@@ -13,7 +13,7 @@ interface PaymentCardProps {
 
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   return (
-    <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300 overflow-hidden">
+    <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
       {/* Dossier décoratif dans le coin supérieur droit */}
       <div className="absolute top-16 right-6 opacity-10 text-blue-900 transform -rotate-12">
         <Folder size={80} />

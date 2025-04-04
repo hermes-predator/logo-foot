@@ -22,6 +22,8 @@ import { rayanCherkiPost } from './rayan-cherki';
 import { vitinhaPost } from './vitinha';
 import { lamineYamalPost } from './lamine-yamal';
 import { lamineYamal2Post } from './lamine-yamal-2';
+import { desireDouePost } from './desire-doue';
+import { kenanYildizPost } from './kenan-yildiz';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
@@ -30,9 +32,11 @@ export const analysisPosts: BlogPost[] = [
   bradleyBarcolaPost,
   championsLeagueAnalysis,
   colorTheoryPost,
+  desireDouePost,
   erlingHaalandPost,
   florianWirtzPost,
   joaoNevesPost,
+  kenanYildizPost,
   kylianMbappePost,
   laligaAnalysis,
   lamineYamalPost,
@@ -48,4 +52,3 @@ export const analysisPosts: BlogPost[] = [
   vitinhaPost,
   williamPachoPost
 ];
-

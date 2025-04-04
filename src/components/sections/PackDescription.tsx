@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -91,8 +92,7 @@ const PackDescription = () => {
       </div>
       
       <div className="space-y-4 pt-5 mt-5">
-        <h4 className="text-sm font-extrabold text-gray-800 mb-3 flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-amber-500" />
+        <h4 className="text-sm font-extrabold text-gray-800 mb-3">
           AVANTAGES DU FICHIER
         </h4>
         

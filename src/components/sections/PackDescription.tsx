@@ -221,8 +221,8 @@ const PackDescription = () => {
           </div>
         </div>
         
-        {/* Support contact simple */}
-        <div className="text-center text-sm text-blue-700 mt-5">
+        {/* Support contact simple - changed from blue to black */}
+        <div className="text-center text-sm text-gray-800 mt-5">
           <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
         </div>
       </div>

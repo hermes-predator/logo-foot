@@ -175,7 +175,7 @@ const PackDescription = () => {
             </p>
           </div>
           
-          <Separator className="mt-2 mb-4 bg-blue-100" />
+          <Separator className="mt-3 mb-4 bg-blue-100" />
           
           <div className="mt-6">
             <div className="flex flex-wrap items-center justify-center gap-2">

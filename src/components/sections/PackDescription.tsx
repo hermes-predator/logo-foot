@@ -161,7 +161,7 @@ const PackDescription = () => {
           </DialogClose>
           
           <p className="text-xs text-center text-blue-600 mt-3">
-            Paiement via SumUp • Satisfaction garantie • Téléchargement instantané
+            Paiement via SumUp • Téléchargement instantané
           </p>
           
           <Separator className="my-2 bg-blue-100" />
@@ -172,7 +172,7 @@ const PackDescription = () => {
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
                 <Users className="h-4 w-4 text-blue-600 relative z-10" />
               </div>
-              25 000+ clients nous ont fait confiance
+              25 000+ clients nous font confiance
             </p>
           </div>
           

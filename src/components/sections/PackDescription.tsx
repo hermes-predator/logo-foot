@@ -161,7 +161,7 @@ const PackDescription = () => {
           </DialogClose>
           
           <p className="text-xs text-center text-blue-600 mt-3">
-            Paiement sécurisé via SumUp • Satisfaction garantie • Téléchargement instantané
+            Paiement via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
           <Separator className="my-2 bg-blue-100" />
@@ -181,7 +181,7 @@ const PackDescription = () => {
           <div className="mt-5">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <p className="text-xs text-gray-500 flex items-center gap-1.5">
-                Paiement sécurisé via
+                Paiement via
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                   alt="SumUp" 

@@ -33,8 +33,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
       </div>
       
-      {/* Decorative elements avec animation optimisée - Sparkle repositionnée */}
-      <div className="absolute top-40 left-2/5 text-purple-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
+      {/* Decorative elements avec animation optimisée */}
+      <div className="absolute top-28 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
         <Sparkles className="h-8 w-8" />
       </div>
       <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>

@@ -29,6 +29,7 @@ import { victorOsimhenPost } from './victor-osimhen';
 import { vitinhaPost } from './vitinha';
 import { williamPachoPost } from './william-pacho';
 import { bradleyBarcolaPost } from './bradley-barcola';
+import { viniciusJuniorPost } from './vinicius-junior';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
@@ -59,6 +60,7 @@ export const analysisPosts: BlogPost[] = [
   rayanCherkiPost,
   serieAAnalysis,
   victorOsimhenPost,
+  viniciusJuniorPost,
   vitinhaPost,
   williamPachoPost
 ];

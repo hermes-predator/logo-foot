@@ -182,7 +182,7 @@ const PackDescription = () => {
             <div className="bg-white rounded-lg border border-gray-100 p-3">
               <div className="flex flex-wrap items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-gray-700">Paiement sécurisé via</span>
+                  <span className="text-sm font-medium text-gray-500">Paiement sécurisé via</span>
                   <img 
                     src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                     alt="SumUp" 

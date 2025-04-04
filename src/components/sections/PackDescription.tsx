@@ -180,7 +180,7 @@ const PackDescription = () => {
           <div className="mt-6">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <p className="text-xs text-gray-500 flex items-center gap-1.5">
-                Paiement via
+              <span className="font-medium">Paiement sécurisé via</span>
                 <img 
                   src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
                   alt="SumUp" 

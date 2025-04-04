@@ -8,6 +8,7 @@ import { colorTheoryPost } from './color-theory';
 import { desireDouePost } from './desire-doue';
 import { erlingHaalandPost } from './erling-haaland';
 import { florianWirtzPost } from './florian-wirtz';
+import { gabrielMartinelliPost } from './gabriel-martinelli';
 import { jamalMusialaPost } from './jamal-musiala';
 import { joaoNevesPost } from './joao-neves';
 import { kenanYildizPost } from './kenan-yildiz';
@@ -39,6 +40,7 @@ export const analysisPosts: BlogPost[] = [
   desireDouePost,
   erlingHaalandPost,
   florianWirtzPost,
+  gabrielMartinelliPost,
   jamalMusialaPost,
   joaoNevesPost,
   kenanYildizPost,

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -98,7 +99,7 @@ const PackDescription = () => {
               </div>
               <span className="text-sm font-semibold text-gray-800">Couverture totale du football</span>
             </div>
-            <p className="text-xs text-gray-600 ml-10">Gagnez en temps et confiance en obtenant toutes les ressources liés au football.</p>
+            <p className="text-xs text-gray-600 ml-10">Gagnez en confiance et temps en obtenant toutes les ressources liés au football.</p>
           </div>
           
           <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300">

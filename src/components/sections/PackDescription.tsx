@@ -221,23 +221,9 @@ const PackDescription = () => {
           </div>
         </div>
         
-        {/* FAQ minimaliste - déplacée en dessous du CTA */}
-        <div className="bg-blue-50/70 p-4 rounded-lg border border-blue-100 mb-2 mt-5">
-          <div className="flex items-center gap-2 text-sm font-medium text-blue-700 mb-2">
-            <HelpCircle className="h-4 w-4" />
-            <span>Questions fréquentes</span>
-          </div>
-          <div className="space-y-2">
-            <div className="text-xs text-blue-800/90">
-              <span className="font-medium">Format des fichiers :</span> PNG haute qualité avec fond transparent
-            </div>
-            <div className="text-xs text-blue-800/90">
-              <span className="font-medium">Livraison :</span> Téléchargement instantané après paiement
-            </div>
-            <div className="text-xs text-blue-800/90">
-              <span className="font-medium">Support :</span> Assistance par email 7j/7
-            </div>
-          </div>
+        {/* Support contact simple */}
+        <div className="text-center text-sm text-blue-700 mt-5">
+          <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
         </div>
       </div>
     </div>

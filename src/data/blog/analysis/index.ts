@@ -21,6 +21,7 @@ import { lionelMessiPost } from './lionel-messi';
 import { luisEnriquePost } from './luis-enrique';
 import { michaelOlisePost } from './michael-olise';
 import { neymarPost } from './neymar';
+import { philFodenPost } from './phil-foden';
 import { premierLeagueAnalysis } from './premier-league';
 import { rayanCherkiPost } from './rayan-cherki';
 import { serieAAnalysis } from './serie-a';
@@ -53,6 +54,7 @@ export const analysisPosts: BlogPost[] = [
   luisEnriquePost,
   michaelOlisePost,
   neymarPost,
+  philFodenPost,
   premierLeagueAnalysis,
   rayanCherkiPost,
   serieAAnalysis,

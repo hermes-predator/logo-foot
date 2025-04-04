@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -179,7 +180,7 @@ const PackDescription = () => {
           
           {/* Redesigned payment trust indicators section */}
           <div className="mt-4">
-            <div className="bg-white rounded-lg border border-gray-100 p-3 shadow-sm">
+            <div className="bg-white rounded-lg border border-gray-100 p-3">
               <div className="flex flex-wrap items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-medium text-gray-700">Paiement sécurisé via</span>

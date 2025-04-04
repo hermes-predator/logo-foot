@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -195,7 +194,7 @@ const PackDescription = () => {
                   <img 
                     src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
                     alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                    className="h-8 object-contain" 
+                    className="h-9 object-contain" 
                   />
                 </div>
               </div>

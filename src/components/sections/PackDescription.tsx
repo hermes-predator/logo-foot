@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -163,9 +164,9 @@ const PackDescription = () => {
             Paiement via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
-          <Separator className="mt-6 mb-4 bg-blue-100" />
+          <Separator className="mt-6 mb-3 bg-blue-100" />
           
-          <div className="py-1">
+          <div className="py-0.5">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
               <div className="flex items-center justify-center w-5 h-5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
@@ -175,7 +176,7 @@ const PackDescription = () => {
             </p>
           </div>
           
-          <Separator className="mt-3 mb-4 bg-blue-100" />
+          <Separator className="mt-2 mb-4 bg-blue-100" />
           
           <div className="mt-6">
             <div className="flex flex-wrap items-center justify-center gap-2">

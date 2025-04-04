@@ -177,23 +177,26 @@ const PackDescription = () => {
           
           <Separator className="mt-3 mb-4 bg-blue-100" />
           
-          <div className="mt-6">
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              <p className="text-xs text-gray-500 flex items-center gap-1.5">
-              <span className="font-medium">Paiement sécurisé via</span>
-                <img 
-                  src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-                  alt="SumUp" 
-                  className="h-4 object-contain" 
-                />
-                <Circle className="h-1.5 w-1.5 text-gray-400" />
-              </p>
-              <div className="flex items-center">
-                <img 
-                  src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
-                  alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                  className="h-12 object-contain" 
-                />
+          {/* Redesigned payment trust indicators section */}
+          <div className="mt-4">
+            <div className="bg-white rounded-lg border border-gray-100 p-3 shadow-sm">
+              <div className="flex flex-wrap items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-gray-700">Paiement sécurisé via</span>
+                  <img 
+                    src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
+                    alt="SumUp" 
+                    className="h-5 object-contain" 
+                  />
+                </div>
+                
+                <div className="flex items-center gap-3 ml-auto">
+                  <img 
+                    src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
+                    alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
+                    className="h-8 object-contain" 
+                  />
+                </div>
               </div>
             </div>
           </div>

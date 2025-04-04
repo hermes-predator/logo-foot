@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -168,9 +167,9 @@ const PackDescription = () => {
           
           <div className="py-0">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
-              <div className="flex items-center justify-center w-6 h-6 relative">
+              <div className="flex items-center justify-center w-5.5 h-5.5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-                <Users className="h-4.5 w-4.5 text-blue-600 relative z-10" />
+                <Users className="h-4.25 w-4.25 text-blue-600 relative z-10" />
               </div>
               25 000+ clients nous font confiance
             </p>

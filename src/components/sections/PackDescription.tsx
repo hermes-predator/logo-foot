@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,10 +25,6 @@ const PackDescription = () => {
     <div className="space-y-0.5 mt-1">
       {/* Section des dossiers avec leurs descriptions */}
       <div className="mb-6">
-        <h3 className="text-sm font-extrabold text-gray-800 mb-3 flex items-center gap-2">
-          <Folder className="h-4 w-4 text-blue-600" />
-          CONTENU DU FICHIER ZIP
-        </h3>
         
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"

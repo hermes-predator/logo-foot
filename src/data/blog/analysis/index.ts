@@ -16,6 +16,7 @@ import { lamineYamalPost } from './lamine-yamal';
 import { lamineYamal2Post } from './lamine-yamal-2';
 import { ligue1Analysis } from './ligue-1';
 import { lionelMessiPost } from './lionel-messi';
+import { luisEnriquePost } from './luis-enrique';
 import { michaelOlisePost } from './michael-olise';
 import { neymarPost } from './neymar';
 import { premierLeagueAnalysis } from './premier-league';
@@ -45,6 +46,7 @@ export const analysisPosts: BlogPost[] = [
   lamineYamal2Post,
   ligue1Analysis,
   lionelMessiPost,
+  luisEnriquePost,
   michaelOlisePost,
   neymarPost,
   premierLeagueAnalysis,

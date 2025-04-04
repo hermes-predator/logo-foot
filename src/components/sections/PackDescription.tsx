@@ -167,9 +167,9 @@ const PackDescription = () => {
           
           <div className="py-0">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
-              <div className="flex items-center justify-center w-5.5 h-5.5 relative">
+              <div className="flex items-center justify-center w-5 h-5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-                <Users className="h-4.25 w-4.25 text-blue-600 relative z-10" />
+                <Users className="h-4 w-4 text-blue-600 relative z-10" />
               </div>
               25 000+ clients nous font confiance
             </p>

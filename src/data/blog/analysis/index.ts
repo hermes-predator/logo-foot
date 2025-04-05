@@ -2,6 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 import { achrafHakimiPost } from './achraf-hakimi';
 import { ardaGulerPost } from './arda-guler';
+import { alejandroGarnachoPost } from './alejandro-garnacho';
 import { benjaminSeskoPost } from './benjamin-sesko';
 import { bundesligaAnalysis } from './bundesliga';
 import { championsLeagueAnalysis } from './champions-league';
@@ -31,10 +32,12 @@ import { vitinhaPost } from './vitinha';
 import { williamPachoPost } from './william-pacho';
 import { bradleyBarcolaPost } from './bradley-barcola';
 import { viniciusJuniorPost } from './vinicius-junior';
+import { xaviSimonsPost } from './xavi-simons';
 
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
   achrafHakimiPost,
+  alejandroGarnachoPost,
   ardaGulerPost,
   benjaminSeskoPost,
   bradleyBarcolaPost,
@@ -64,5 +67,6 @@ export const analysisPosts: BlogPost[] = [
   victorOsimhenPost,
   viniciusJuniorPost,
   vitinhaPost,
-  williamPachoPost
+  williamPachoPost,
+  xaviSimonsPost
 ];

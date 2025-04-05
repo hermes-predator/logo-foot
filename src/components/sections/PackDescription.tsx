@@ -179,7 +179,7 @@ const PackDescription = () => {
                 </DialogClose>
               </TooltipTrigger>
               <TooltipContent side="bottom" className="bg-blue-800 text-white">
-                <p>Accès immédiat en page d'après-paiement</p>
+                <p className="font-semibold">Téléchargement du fichier ZIP complet</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

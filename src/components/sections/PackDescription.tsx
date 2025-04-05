@@ -201,11 +201,11 @@ const PackDescription = () => {
                 25 000+ clients nous font confiance
               </p>
               
-              {/* Badge de Satisfaction Garantie dans le même format */}
-              <p className="text-sm font-semibold text-green-600 flex items-center gap-2">
+              {/* Badge de Satisfaction Garantie dans le même format et couleur bleue */}
+              <p className="text-sm font-semibold text-blue-600 flex items-center gap-2">
                 <div className="flex items-center justify-center w-5 h-5 relative">
-                  <div className="absolute inset-0 bg-green-100/80 rounded-full animate-pulse"></div>
-                  <Star className="h-4 w-4 text-green-600 fill-yellow-500 relative z-20" />
+                  <div className="absolute inset-0 bg-blue-100/80 rounded-full animate-pulse"></div>
+                  <Star className="h-4 w-4 text-blue-600 fill-blue-500 relative z-20" />
                 </div>
                 Satisfaction garantie
               </p>

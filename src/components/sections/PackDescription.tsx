@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -179,7 +178,7 @@ const PackDescription = () => {
                 </DialogClose>
               </TooltipTrigger>
               <TooltipContent side="bottom" className="bg-blue-800 text-white">
-                <p>Accès immédiat et permanent après paiement</p>
+                <p>Accès immédiat en page d'après-paiement</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

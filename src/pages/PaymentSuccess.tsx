@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Download, CheckCircle, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -36,7 +37,7 @@ const PaymentSuccess = () => {
               Merci pour votre confiance !
             </h1>
             <p className="text-gray-600 text-lg">
-              Votre pack de ressources est prêt à être téléchargé
+              Accès immédiat en page d'après-paiement
             </p>
           </div>
         </div>

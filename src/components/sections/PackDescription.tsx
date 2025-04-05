@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Badge } from "@/components/ui/badge";
 
 const PackDescription = () => {
   const { toast } = useToast();
@@ -190,13 +191,25 @@ const PackDescription = () => {
           <Separator className="mt-6 mb-3 bg-blue-100" />
           
           <div className="py-0 relative z-10">
-            <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
-              <div className="flex items-center justify-center w-5 h-5 relative">
-                <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-                <Users className="h-4 w-4 text-blue-600 relative z-20" />
+            <div className="flex items-center justify-center gap-4">
+              <p className="text-sm font-semibold text-blue-600 flex items-center gap-2">
+                <div className="flex items-center justify-center w-5 h-5 relative">
+                  <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
+                  <Users className="h-4 w-4 text-blue-600 relative z-20" />
+                </div>
+                25 000+ clients nous font confiance
+              </p>
+              
+              {/* Badge de Satisfaction Garantie */}
+              <div className="relative">
+                <Badge variant="outline" className="bg-green-50 border border-green-200 text-green-700 flex items-center gap-1.5 px-2.5 py-1 rounded-full shadow-sm">
+                  <Star className="h-3.5 w-3.5 text-yellow-500 fill-yellow-500" />
+                  <span className="font-medium text-xs">Satisfaction garantie</span>
+                </Badge>
+                {/* Effet de pulsation subtil */}
+                <span className="absolute inset-0 rounded-full bg-green-400/20 animate-pulse"></span>
               </div>
-              25 000+ clients nous font confiance
-            </p>
+            </div>
           </div>
           
           <Separator className="mt-3 mb-4 bg-blue-100" />

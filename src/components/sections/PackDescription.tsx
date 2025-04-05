@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle } from "lucide-react";
+import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
@@ -242,9 +243,26 @@ const PackDescription = () => {
         <div className="text-center text-sm text-gray-800 mt-5">
           <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
         </div>
+        
+        {/* Disclaimer légal */}
+        <div className="mt-8 p-4 border border-amber-200 bg-amber-50 rounded-lg">
+          <div className="flex items-start gap-3">
+            <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+            <div className="text-xs text-amber-800">
+              <p className="font-semibold mb-1">Disclaimer :</p>
+              <p>
+                Ce pack est un produit numérique destiné à un usage personnel, créatif ou éducatif. 
+                Il ne contient aucun fichier affilié à des marques officielles. 
+                Aucun logo n'est hébergé ou distribué en tant que fichier propriétaire sous licence. 
+                FRONT-CLOUD est une ressource indépendante.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default PackDescription;
+

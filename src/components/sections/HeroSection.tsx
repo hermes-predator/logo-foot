@@ -23,6 +23,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
+    
     <section className="relative pt-12 pb-10 px-4 overflow-hidden">
       {/* Background effects - Optimisés pour les performances */}
       <div className="absolute inset-0 -z-10">
@@ -186,7 +187,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     </span>
                   </div>
                   <div className="mt-1 flex items-center text-xs">
-                    <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 1 minute seulement</span>
+                    <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 2 minutes seulement</span>
                   </div>
                 </div>
               </TooltipContent>

@@ -1,6 +1,7 @@
 
 import { BlogPost } from '../../../types/blog';
 import { achrafHakimiPost } from './achraf-hakimi';
+import { ardaGulerPost } from './arda-guler';
 import { benjaminSeskoPost } from './benjamin-sesko';
 import { bundesligaAnalysis } from './bundesliga';
 import { championsLeagueAnalysis } from './champions-league';
@@ -34,6 +35,7 @@ import { viniciusJuniorPost } from './vinicius-junior';
 // Combine all analysis posts into a single array
 export const analysisPosts: BlogPost[] = [
   achrafHakimiPost,
+  ardaGulerPost,
   benjaminSeskoPost,
   bradleyBarcolaPost,
   bundesligaAnalysis,

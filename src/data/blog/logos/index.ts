@@ -15,6 +15,8 @@ import { otherEuropeanClubPosts } from './groups/other-european-clubs';
 import { portugueseClubPosts } from './groups/portuguese-clubs';
 import { southAmericanClubPosts } from './groups/south-american-clubs';
 import { spanishClubPosts } from './groups/spanish-clubs';
+import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
+import { psgUltrasPost } from './psg-ultras';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -32,5 +34,7 @@ export const logoPosts: BlogPost[] = [
   ...otherEuropeanClubPosts,
   ...portugueseClubPosts,
   ...southAmericanClubPosts,
-  ...spanishClubPosts
+  ...spanishClubPosts,
+  etoileRougeBelgradeLogoPost,
+  psgUltrasPost
 ];

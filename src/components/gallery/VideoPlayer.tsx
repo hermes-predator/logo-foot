@@ -175,8 +175,8 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             onPause={() => setIsPlaying(false)}
           />
           
-          {/* Contrôles personnalisés */}
-          <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-gray-800/40 to-transparent backdrop-blur-[1px] opacity-0 transition-opacity hover:opacity-100 flex flex-col gap-2">
+          {/* Contrôles personnalisés - Maintenant toujours visibles */}
+          <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-gray-800/40 to-transparent backdrop-blur-[1px] flex flex-col gap-2">
             <Slider 
               value={[progress]} 
               max={100} 

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -245,7 +246,7 @@ const PackDescription = () => {
             <div className="text-xs text-amber-800">
               <p className="font-semibold mb-1">Disclaimer :</p>
               <p>
-                Ce pack est un produit numérique destiné à un usage personnel, créatif ou éducatif. 
+                Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. 
                 Il ne contient aucun fichier affilié à des marques officielles. 
                 Aucun logo n'est hébergé ou distribué en tant que fichier propriétaire sous licence. 
                 FRONT-CLOUD est une ressource indépendante.

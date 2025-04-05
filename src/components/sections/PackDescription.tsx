@@ -247,7 +247,7 @@ const PackDescription = () => {
               <p>
                 Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. 
                 Il ne contient aucun fichier affilié à des marques officielles. 
-                Aucune ressources n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. 
+                Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. 
                 ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.
               </p>
             </div>

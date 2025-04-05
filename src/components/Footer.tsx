@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { FileText, Scroll, MessageCircle, HelpCircle } from "lucide-react";
+import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ContactForm from './ContactForm';
 
@@ -78,6 +78,21 @@ const Footer = () => {
                 <section>
                   <h3 className="font-semibold mb-2">Article 9 - Litiges</h3>
                   <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire.</p>
+                </section>
+                
+                <section className="mt-6 p-4 border border-amber-100 bg-amber-50 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <div className="text-xs text-amber-800">
+                      <p className="font-semibold mb-1">Article 10 - Disclaimer :</p>
+                      <p>
+                        Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. 
+                        Il ne contient aucun fichier affilié à des marques officielles. 
+                        Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. 
+                        ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.
+                      </p>
+                    </div>
+                  </div>
                 </section>
               </div>
             </DialogContent>

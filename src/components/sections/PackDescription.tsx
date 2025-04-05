@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -239,11 +238,6 @@ const PackDescription = () => {
           </div>
         </div>
         
-        {/* Support contact simple - changed from blue to black */}
-        <div className="text-center text-sm text-gray-800 mt-5">
-          <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
-        </div>
-        
         {/* Disclaimer légal */}
         <div className="mt-8 p-4 border border-amber-200 bg-amber-50 rounded-lg">
           <div className="flex items-start gap-3">
@@ -259,10 +253,14 @@ const PackDescription = () => {
             </div>
           </div>
         </div>
+        
+        {/* Support contact simple - changed from blue to black */}
+        <div className="text-center text-sm text-gray-800 mt-5">
+          <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
+        </div>
       </div>
     </div>
   );
 };
 
 export default PackDescription;
-

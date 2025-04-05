@@ -180,7 +180,7 @@ const PackDescription = () => {
                 </DialogClose>
               </TooltipTrigger>
               <TooltipContent side="bottom" className="bg-blue-800 text-white">
-                <p className="font-bold">Accès immédiat en page d'après-paiement</p>
+                <p className="font-semibold">Accès immédiat en page d'après-paiement</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

@@ -40,7 +40,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   }, []);
 
   return (
-    <DialogContent className="w-[550px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
+    <DialogContent className="w-[500px] overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
         <DialogHeader className="p-1 pb-1 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogTitle className="text-gray-800 font-medium text-xs">
@@ -51,7 +51,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-[550px] h-[550px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center pr-9 protected-content">
+        <div className="w-[500px] h-[500px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center pr-9 protected-content">
           <video
             src={videoUrl}
             className="w-full h-full object-contain"

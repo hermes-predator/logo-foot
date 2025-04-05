@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -191,22 +192,13 @@ const PackDescription = () => {
           <Separator className="mt-6 mb-3 bg-blue-100" />
           
           <div className="py-0 relative z-10">
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center">
               <p className="text-sm font-semibold text-blue-600 flex items-center gap-2">
                 <div className="flex items-center justify-center w-5 h-5 relative">
                   <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
                   <Users className="h-4 w-4 text-blue-600 relative z-20" />
                 </div>
                 25 000+ clients nous font confiance
-              </p>
-              
-              {/* Badge de Satisfaction Garantie dans le même format et couleur bleue */}
-              <p className="text-sm font-semibold text-blue-600 flex items-center gap-2">
-                <div className="flex items-center justify-center w-5 h-5 relative">
-                  <div className="absolute inset-0 bg-blue-100/80 rounded-full animate-pulse"></div>
-                  <Star className="h-4 w-4 text-blue-600 relative z-20" />
-                </div>
-                Satisfaction garantie
               </p>
             </div>
           </div>

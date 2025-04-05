@@ -180,7 +180,7 @@
   100% { transform: translateY(0); }
 }
 
-/* Shine effect animation - restaurée à l'original */
+/* Shine effect animation - améliorée avec des variations */
 @keyframes shine {
   0% {
     left: -100%;
@@ -192,12 +192,24 @@
   }
 }
 
+/* Nouvelle animation de brillance double direction */
+@keyframes doubleShine {
+  0% {
+    left: -100%;
+    opacity: 0.2;
+  }
+  100% {
+    left: 100%;
+    opacity: 0.1;
+  }
+}
+
 .animate-shine {
   position: relative;
   overflow: hidden;
   animation: shine 2s ease-out infinite;
   animation-delay: 1s;
-  will-change: opacity;
+  will-change: opacity, transform;
 }
 
 /* Ensure buttons have proper cursor */

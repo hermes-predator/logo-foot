@@ -139,7 +139,10 @@ const PackDescription = () => {
         </div>
         
         {/* Zone d'achat améliorée */}
-        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative">
+        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative overflow-hidden">
+          {/* Ajout d'un effet de brillance au fond */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-[shine_4s_ease-in-out_infinite] z-0"></div>
+          
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-green-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md">
               <Folder className="h-3 w-3 text-white" />
@@ -147,7 +150,7 @@ const PackDescription = () => {
             </div>
           </div>
           
-          <div className="text-center mb-4">
+          <div className="text-center mb-4 relative z-10">
             <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP unique ?</h3>
           </div>
           
@@ -157,17 +160,20 @@ const PackDescription = () => {
                 <DialogClose asChild>
                   <Button 
                     onClick={handlePayment}
-                    className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden"
+                    className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden z-10"
                   >
-                    {/* Effet de brillance sur le bouton */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shine"></div>
+                    {/* Effet de brillance amélioré sur le bouton */}
+                    <div className="absolute inset-0">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite] z-0"></div>
+                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-transparent animate-[shine_3.5s_ease-in-out_infinite_1s] z-0"></div>
+                    </div>
                     
-                    <div className="flex items-center justify-center w-full gap-4">
-                      <ShoppingCart className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg]" />
+                    <div className="flex items-center justify-center w-full gap-4 relative z-10">
+                      <ShoppingCart className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110" />
                       <div className="flex flex-col items-center">
                         <span className="text-center font-semibold text-2xl">Télécharger maintenant (8€)</span>
                       </div>
-                      <ArrowRight className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1" />
+                      <ArrowRight className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2" />
                     </div>
                   </Button>
                 </DialogClose>
@@ -178,17 +184,17 @@ const PackDescription = () => {
             </Tooltip>
           </TooltipProvider>
           
-          <p className="text-xs text-center text-blue-600 mt-3">
+          <p className="text-xs text-center text-blue-600 mt-3 relative z-10">
             Paiement via SumUp • Satisfaction garantie • Téléchargement instantané
           </p>
           
           <Separator className="mt-6 mb-3 bg-blue-100" />
           
-          <div className="py-0">
+          <div className="py-0 relative z-10">
             <p className="text-sm font-semibold text-blue-600 text-center flex items-center justify-center gap-2">
               <div className="flex items-center justify-center w-5 h-5 relative">
                 <div className="absolute inset-0 bg-blue-100/80 rounded-full"></div>
-                <Users className="h-4 w-4 text-blue-600 relative z-10" />
+                <Users className="h-4 w-4 text-blue-600 relative z-20" />
               </div>
               25 000+ clients nous font confiance
             </p>
@@ -197,7 +203,7 @@ const PackDescription = () => {
           <Separator className="mt-3 mb-4 bg-blue-100" />
           
           {/* Redesigned payment trust indicators section */}
-          <div className="mt-4">
+          <div className="mt-4 relative z-10">
             <div className="bg-white rounded-lg border border-gray-100 p-3">
               <div className="flex flex-wrap items-center justify-between">
                 <div className="flex items-center gap-2">

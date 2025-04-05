@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import {
   DialogContent,
@@ -237,7 +236,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </div>
         </div>
 
-        <div className="p-4 pr-14 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
+        <div className="p-4 px-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogClose asChild>
             <Button 
               variant="outline"

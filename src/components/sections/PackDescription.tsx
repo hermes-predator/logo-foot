@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -152,7 +151,7 @@ const PackDescription = () => {
           </div>
           
           <div className="text-center mb-4 relative z-10">
-            <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP unique ?</h3>
+            <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP ?</h3>
           </div>
           
           <TooltipProvider>

@@ -14,20 +14,20 @@ const TrustIndicators = () => {
         iconBgColor="bg-blue-100"
       />
       <TrustCard 
-        icon={<Download className="text-green-600" />}
+        icon={<Download className="text-blue-600" />}
         title="Téléchargement instantané"
         description="Page d'après-paiement"
-        color="bg-gradient-to-br from-green-50 to-green-100"
-        borderColor="border-green-200"
-        iconBgColor="bg-green-100"
+        color="bg-gradient-to-br from-blue-50 to-blue-100"
+        borderColor="border-blue-200"
+        iconBgColor="bg-blue-100"
       />
       <TrustCard 
-        icon={<HeartHandshake className="text-purple-600" />}
+        icon={<HeartHandshake className="text-blue-600" />}
         title="Support Réactif"
         description="Email : contact@logo-foot.com"
-        color="bg-gradient-to-br from-purple-50 to-purple-100"
-        borderColor="border-purple-200"
-        iconBgColor="bg-purple-100"
+        color="bg-gradient-to-br from-blue-50 to-blue-100"
+        borderColor="border-blue-200"
+        iconBgColor="bg-blue-100"
       />
     </div>
   );

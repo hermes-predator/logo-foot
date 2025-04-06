@@ -7,21 +7,17 @@ import { useLocation } from 'react-router-dom';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
-  const [customerEmail, setCustomerEmail] = useState<string>('');
   const [customerName, setCustomerName] = useState<string>('');
   const location = useLocation();
 
   useEffect(() => {
     // Récupérer les informations depuis les paramètres d'URL ou localStorage
     const params = new URLSearchParams(location.search);
-    const emailParam = params.get('email');
     const nameParam = params.get('name');
     
     // Priorité aux paramètres d'URL, puis localStorage
-    const email = emailParam || localStorage.getItem('customer_email') || '';
     const name = nameParam || localStorage.getItem('customer_name') || '';
     
-    setCustomerEmail(email);
     setCustomerName(name);
   }, [location]);
 
@@ -120,10 +116,6 @@ const PaymentSuccess = () => {
               <div><strong>Client:</strong></div>
               <div>${customerName}</div>
             </div>
-            <div class="info-row">
-              <div><strong>Email:</strong></div>
-              <div>${customerEmail}</div>
-            </div>
           </div>
           
           <div class="product">
@@ -198,14 +190,6 @@ const PaymentSuccess = () => {
           <div className="bg-green-50/50 rounded-xl p-4 border border-green-100">
             <p className="text-sm text-gray-700">
               Client : <span className="font-medium">{customerName}</span>
-            </p>
-          </div>
-        )}
-
-        {customerEmail && (
-          <div className="bg-blue-50/50 rounded-xl p-4 border border-blue-100">
-            <p className="text-sm text-gray-700">
-              Une copie sera également envoyée à : <span className="font-medium">{customerEmail}</span>
             </p>
           </div>
         )}

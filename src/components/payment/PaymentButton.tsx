@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, ArrowRight, Mail, User } from 'lucide-react';
+import { ShoppingCart, ArrowRight, User } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
@@ -13,22 +13,12 @@ import {
 
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
-  const [email, setEmail] = useState('');
   const [fullName, setFullName] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
   const { toast } = useToast();
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!email || !email.includes('@') || !email.includes('.')) {
-      toast({
-        title: "Email invalide",
-        description: "Veuillez entrer une adresse email valide.",
-        variant: "destructive",
-      });
-      return;
-    }
 
     if (!fullName || fullName.trim().length < 3) {
       toast({
@@ -40,7 +30,6 @@ const PaymentButton = () => {
     }
     
     // Store data in localStorage
-    localStorage.setItem('customer_email', email);
     localStorage.setItem('customer_name', fullName);
     setFormSubmitted(true);
     
@@ -51,10 +40,10 @@ const PaymentButton = () => {
   };
 
   const handlePayment = () => {
-    if (!formSubmitted && (!email || !fullName)) {
+    if (!formSubmitted && !fullName) {
       toast({
         title: "Informations requises",
-        description: "Veuillez d'abord compléter vos informations pour recevoir votre produit.",
+        description: "Veuillez d'abord compléter votre nom pour recevoir votre produit.",
         variant: "destructive",
       });
       return;
@@ -65,7 +54,7 @@ const PaymentButton = () => {
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
-    const returnUrl = `${window.location.origin}/payment-success?email=${encodeURIComponent(email)}&name=${encodeURIComponent(fullName)}`;
+    const returnUrl = `${window.location.origin}/payment-success?name=${encodeURIComponent(fullName)}`;
     // Updated SumUp link
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
@@ -90,22 +79,6 @@ const PaymentButton = () => {
             required
           />
           
-          <div className="flex items-center">
-            <Mail className="h-5 w-5 text-blue-600 mr-2" />
-            <label htmlFor="customer-email" className="font-medium text-gray-700">
-              Votre email pour recevoir votre produit
-            </label>
-          </div>
-          <Input
-            id="customer-email"
-            type="email"
-            placeholder="votre@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="bg-white border-blue-200 focus:border-blue-400"
-            required
-          />
-          
           <Button 
             type="submit" 
             className="bg-blue-600 hover:bg-blue-700 w-full"
@@ -120,13 +93,6 @@ const PaymentButton = () => {
             <div>
               <p className="font-medium text-green-700">Nom enregistré</p>
               <p className="text-green-600 text-sm">{fullName}</p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <Mail className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
-            <div>
-              <p className="font-medium text-green-700">Email enregistré</p>
-              <p className="text-green-600 text-sm truncate">{email}</p>
             </div>
           </div>
         </div>

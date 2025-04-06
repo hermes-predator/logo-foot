@@ -37,6 +37,7 @@ import { championsLeagueAnalysis } from './champions-league';
 import { colorTheoryPost } from './color-theory';
 import { williamSalibaPost } from './william-saliba';
 import { dynamoKievLogoPost } from './dynamo-kiev-logo';
+import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 
 export const analysisPosts: BlogPost[] = [
   kylianMbappePost,
@@ -73,5 +74,6 @@ export const analysisPosts: BlogPost[] = [
   championsLeagueAnalysis,
   colorTheoryPost,
   williamSalibaPost,
-  dynamoKievLogoPost
+  dynamoKievLogoPost,
+  mbappeEtSonFilsPost
 ];

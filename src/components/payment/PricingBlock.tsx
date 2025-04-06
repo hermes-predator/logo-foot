@@ -13,7 +13,7 @@ const PricingBlock = () => {
       {/* Effet de brillance renforcé */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-shimmer"></div>
       
-      <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+      <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4">
         <div className="flex flex-col md:flex-row items-center gap-3">
           <div>
             {/* Prix normal barré - Taille augmentée */}

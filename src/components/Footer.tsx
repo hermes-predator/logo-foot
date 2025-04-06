@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -70,12 +71,12 @@ const Footer = () => {
                 </section>
                 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 9 - Protection des données</h3>
-                  <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits, contactez : contact@logo-foot.com</p>
+                  <h3 className="font-semibold mb-2">Article 8 - Protection des données</h3>
+                  <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits de rétractation, contactez : contact@logo-foot.com</p>
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 10 - Litiges</h3>
+                  <h3 className="font-semibold mb-2">Article 9 - Litiges</h3>
                   <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire.</p>
                 </section>
               </div>

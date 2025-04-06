@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Download, BadgeCheck } from 'lucide-react';
+import { ShieldCheck, Download, HeartHandshake } from 'lucide-react';
 
 const TrustIndicators = () => {
   return (
@@ -22,7 +22,7 @@ const TrustIndicators = () => {
         iconBgColor="bg-blue-100"
       />
       <TrustCard 
-        icon={<BadgeCheck className="text-blue-600" size={18} />}
+        icon={<HeartHandshake className="text-blue-600" size={18} />}
         title="Support Réactif"
         description="Email : contact@logo-foot.com"
         color="bg-gradient-to-br from-blue-50 to-blue-100"

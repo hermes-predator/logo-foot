@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { ShieldCheck, Download, HandHeart } from 'lucide-react';
+import { ShieldCheck, Download, HandHeart, FileDown } from 'lucide-react';
 
 const TrustIndicators = () => {
   return (
-    <div className="grid md:grid-cols-3 gap-6 mb-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
       <TrustCard 
         icon={<ShieldCheck />}
         title="Paiement Sécurisé"
@@ -19,6 +19,11 @@ const TrustIndicators = () => {
         icon={<HandHeart />}
         title="Support Réactif"
         description="Email : contact@logo-foot.com"
+      />
+      <TrustCard 
+        icon={<FileDown />}
+        title="8,500+ Téléchargements"
+        description="Utilisateurs satisfaits"
       />
     </div>
   );

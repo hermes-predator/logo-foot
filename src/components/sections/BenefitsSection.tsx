@@ -48,10 +48,10 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`p-6 rounded-xl border transition-all duration-300 hover:shadow-md hover:scale-[1.02] ${
+              className={`p-6 rounded-xl transition-all duration-300 hover:shadow-md hover:scale-[1.02] ${
                 benefit.title === "Satisfait ou Remboursé" 
-                  ? "border-green-200 bg-green-50/50" 
-                  : "border-purple-100 bg-white/70 backdrop-blur-sm"
+                  ? "border border-green-200 bg-green-50/50" 
+                  : "border border-purple-100 bg-transparent backdrop-blur-sm"
               }`}
             >
               <div className="flex items-start gap-4">

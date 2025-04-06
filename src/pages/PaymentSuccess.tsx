@@ -6,12 +6,14 @@ import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Progress } from '@/components/ui/progress';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
   const [customerName, setCustomerName] = useState<string>('');
   const [isDownloading, setIsDownloading] = useState<boolean>(false);
   const [isGeneratingReceipt, setIsGeneratingReceipt] = useState<boolean>(false);
+  const [downloadProgress, setDownloadProgress] = useState<number>(0);
   const location = useLocation();
   const [orderId] = useState(() => `FC-${Date.now().toString().slice(-8)}`);
 
@@ -28,7 +30,7 @@ const PaymentSuccess = () => {
     // Afficher un toast de bienvenue
     if (name) {
       toast({
-        title: "Félicitations !",
+        title: "Confirmation",
         description: `Votre commande est prête, ${name}.`,
       });
     }
@@ -36,6 +38,18 @@ const PaymentSuccess = () => {
 
   const handleDownload = () => {
     setIsDownloading(true);
+    setDownloadProgress(0);
+    
+    // Simuler une progression du téléchargement
+    const interval = setInterval(() => {
+      setDownloadProgress(prev => {
+        if (prev >= 100) {
+          clearInterval(interval);
+          return 100;
+        }
+        return prev + 10;
+      });
+    }, 300);
     
     // Simuler un délai pour améliorer l'UX
     setTimeout(() => {
@@ -52,7 +66,9 @@ const PaymentSuccess = () => {
       });
       
       setIsDownloading(false);
-    }, 800);
+      clearInterval(interval);
+      setDownloadProgress(100);
+    }, 2500);
   };
 
   const generateReceipt = () => {
@@ -200,25 +216,20 @@ const PaymentSuccess = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center px-4 py-10">
-      <Card className="max-w-4xl w-full space-y-8 bg-white/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-purple-100/20">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
+      <Card className="max-w-4xl w-full space-y-8 bg-white rounded-lg p-8 shadow-md">
         {/* En-tête avec statut de commande */}
         <div className="text-center space-y-4">
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center justify-center animate-ping opacity-20">
-                <CheckCircle className="w-20 h-20 text-green-500" />
-              </div>
-              <CheckCircle className="w-20 h-20 text-green-500 relative" />
-            </div>
+            <CheckCircle className="w-16 h-16 text-green-600" />
           </div>
           
           <div className="space-y-2">
-            <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Paiement confirmé !
+            <h1 className="text-3xl font-bold text-gray-800">
+              Paiement confirmé
             </h1>
-            <p className="text-gray-600 text-lg max-w-md mx-auto">
-              Merci pour votre achat. Votre commande <span className="font-semibold text-purple-700">{orderId}</span> a été traitée avec succès.
+            <p className="text-gray-600 max-w-md mx-auto">
+              Merci pour votre achat. Votre commande <span className="font-semibold">{orderId}</span> a été traitée avec succès.
             </p>
           </div>
         </div>
@@ -227,9 +238,9 @@ const PaymentSuccess = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             {customerName && (
-              <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-5 border border-green-200">
-                <h3 className="font-medium text-green-800 mb-1 flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5" />
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h3 className="font-medium text-gray-800 mb-1 flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
                   Détails de commande
                 </h3>
                 <p className="text-gray-700">
@@ -241,23 +252,23 @@ const PaymentSuccess = () => {
               </div>
             )}
 
-            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
-              <h3 className="font-medium text-blue-800 mb-2">Contenu de votre pack</h3>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-medium text-gray-800 mb-2">Contenu de votre pack</h3>
               <ul className="text-gray-700 space-y-1">
                 <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-blue-600 shrink-0 mt-0.5">
+                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
                     <CheckCircle className="h-5 w-5" />
                   </div>
                   <span>+ 8600 logos de clubs de football en PNG</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-blue-600 shrink-0 mt-0.5">
+                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
                     <CheckCircle className="h-5 w-5" />
                   </div>
                   <span>Format haute qualité exploitable dans tous vos projets</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-blue-600 shrink-0 mt-0.5">
+                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
                     <CheckCircle className="h-5 w-5" />
                   </div>
                   <span>Accès immédiat via téléchargement ci-dessous</span>
@@ -265,8 +276,8 @@ const PaymentSuccess = () => {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-5 border border-purple-200">
-              <h3 className="font-medium text-purple-800 mb-2">Assistance disponible</h3>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-medium text-gray-800 mb-2">Assistance disponible</h3>
               <p className="text-gray-700 text-sm">
                 Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium">support@front-cloud.com</span>
               </p>
@@ -275,7 +286,7 @@ const PaymentSuccess = () => {
 
           {/* Section de téléchargement */}
           <div className="space-y-4">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-5 border border-gray-200">
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
               <h3 className="font-medium text-gray-800 mb-3">Téléchargement & Documents</h3>
               
               <div className="space-y-3">
@@ -283,7 +294,7 @@ const PaymentSuccess = () => {
                   onClick={handleDownload}
                   disabled={isDownloading}
                   size="lg"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md hover:shadow-lg transition-all duration-300 text-base py-5 h-auto"
+                  className="w-full bg-green-600 hover:bg-green-700 shadow-sm hover:shadow-md transition-all duration-300 text-base py-5 h-auto"
                 >
                   {isDownloading ? (
                     <><RotateCw className="mr-2 h-5 w-5 animate-spin" /> Préparation...</>
@@ -292,12 +303,19 @@ const PaymentSuccess = () => {
                   )}
                 </Button>
                 
+                {isDownloading && (
+                  <div className="w-full">
+                    <Progress value={downloadProgress} className="h-2 mb-1" />
+                    <p className="text-xs text-gray-500 text-right">{downloadProgress}%</p>
+                  </div>
+                )}
+                
                 <div className="grid grid-cols-2 gap-3">
                   <Button
                     onClick={generateReceipt}
                     disabled={isGeneratingReceipt}
                     variant="outline"
-                    className="border-purple-200 text-purple-700 hover:bg-purple-50 shadow-sm hover:shadow-md transition-all duration-300"
+                    className="border-gray-200 text-gray-700 hover:bg-gray-100 shadow-sm"
                   >
                     {isGeneratingReceipt ? (
                       <><RotateCw className="mr-1 h-4 w-4 animate-spin" /> Génération...</>
@@ -309,7 +327,7 @@ const PaymentSuccess = () => {
                   <Button
                     onClick={sendEmailCopy}
                     variant="outline"
-                    className="border-green-200 text-green-700 hover:bg-green-50 shadow-sm hover:shadow-md transition-all duration-300"
+                    className="border-gray-200 text-gray-700 hover:bg-gray-100 shadow-sm"
                   >
                     <Mail className="mr-1 h-4 w-4" /> Copie par email
                   </Button>
@@ -318,11 +336,11 @@ const PaymentSuccess = () => {
             </div>
             
             {/* Aperçu du produit */}
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-5 border border-blue-200">
-              <h3 className="font-medium text-blue-800 mb-2">Aperçu de votre pack</h3>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-medium text-gray-800 mb-2">Aperçu de votre pack</h3>
               <div className="rounded-lg overflow-hidden border border-gray-200">
                 <AspectRatio ratio={16 / 9}>
-                  <div className="flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-200 h-full w-full">
+                  <div className="flex items-center justify-center bg-white h-full w-full">
                     <img 
                       src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" 
                       alt="Aperçu du pack de logos" 
@@ -336,14 +354,14 @@ const PaymentSuccess = () => {
         </div>
         
         {/* Bannière cadeau */}
-        <div className="bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-5 border border-amber-200">
+        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <div className="shrink-0">
-              <Gift className="h-10 w-10 text-amber-500" />
+              <Gift className="h-10 w-10 text-gray-700" />
             </div>
             <div>
-              <h3 className="font-medium text-amber-800 text-lg">Un bonus spécial pour vous !</h3>
-              <p className="text-amber-700">
+              <h3 className="font-medium text-gray-800 text-lg">Un bonus spécial pour vous</h3>
+              <p className="text-gray-600">
                 Vous recevrez prochainement par email une mise à jour exclusive avec 200 logos supplémentaires.
               </p>
             </div>
@@ -353,17 +371,17 @@ const PaymentSuccess = () => {
         {/* Sécurité et garantie */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4">
           <div className="flex items-center gap-2">
-            <Shield className="h-4 w-4 text-green-600" />
+            <Shield className="h-4 w-4 text-gray-600" />
             <span>Paiement sécurisé</span>
           </div>
           <div className="hidden sm:block h-1 w-1 rounded-full bg-gray-300"></div>
           <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-green-600" />
+            <CheckCircle className="h-4 w-4 text-gray-600" />
             <span>Satisfaction garantie</span>
           </div>
           <div className="hidden sm:block h-1 w-1 rounded-full bg-gray-300"></div>
           <div className="flex items-center gap-2">
-            <Download className="h-4 w-4 text-green-600" />
+            <Download className="h-4 w-4 text-gray-600" />
             <span>Téléchargement instantané</span>
           </div>
         </div>

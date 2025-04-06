@@ -66,7 +66,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 7 - Clause de non-responsabilité</h3>
-                  <p>Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. Il ne contient aucun fichier affilié à des marques officielles. Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.</p>
+                  <p>Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. Il ne contient aucun fichier affilié à des marques officielles. Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence.<br />⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.</p>
                 </section>
                 
                 <section>

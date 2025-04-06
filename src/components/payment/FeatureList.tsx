@@ -28,7 +28,7 @@ const FeatureList = () => {
     },
     {
       icon: Check,
-      text: "Fichier organisé",
+      text: "Fichier parfaitement organisé",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

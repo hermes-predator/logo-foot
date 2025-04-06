@@ -63,10 +63,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
                 className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
                   shadow-sm transition-all duration-300 border
-                  backdrop-blur-[2px] bg-white/95
+                  backdrop-blur-[2px] bg-gradient-to-b from-white to-gray-50/95
                   ${currentPage === 1 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-300/70 hover:border-gray-800/60 hover:text-gray-900 hover:shadow-lg hover:shadow-gray-200/50 cursor-pointer'
+                    : 'border-gray-300/70 hover:border-gray-700/60 hover:text-gray-900 hover:shadow-md hover:shadow-gray-200/40 cursor-pointer'
                   }`}
               >
                 <ChevronLeft className="h-5 w-5 stroke-[2px]" />
@@ -84,8 +84,8 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     className={`w-11 h-11 p-0 flex items-center justify-center rounded-md text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-gradient-to-br from-gray-900/95 to-gray-800/95 text-white shadow-lg shadow-gray-300/20 border-0' 
-                        : 'bg-white/95 border border-gray-300/70 hover:border-gray-700/60 hover:text-gray-800 shadow-sm hover:shadow-lg hover:shadow-gray-200/30'
+                        ? 'bg-gradient-to-br from-gray-800/95 to-gray-700/95 text-white ring-1 ring-gray-600/30 shadow-md shadow-gray-400/10 border-0' 
+                        : 'bg-gradient-to-b from-white to-gray-50/95 border border-gray-300/70 hover:border-gray-600/60 hover:text-gray-800 shadow-sm hover:shadow-md hover:shadow-gray-200/30'
                       }`}
                   >
                     {page}
@@ -99,10 +99,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
                 className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
                   shadow-sm transition-all duration-300 border
-                  backdrop-blur-[2px] bg-white/95
+                  backdrop-blur-[2px] bg-gradient-to-b from-white to-gray-50/95
                   ${currentPage === totalPages 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-300/70 hover:border-gray-800/60 hover:text-gray-900 hover:shadow-lg hover:shadow-gray-200/50 cursor-pointer'
+                    : 'border-gray-300/70 hover:border-gray-700/60 hover:text-gray-900 hover:shadow-md hover:shadow-gray-200/40 cursor-pointer'
                   }`}
               >
                 <ChevronRight className="h-5 w-5 stroke-[2px]" />

@@ -30,9 +30,7 @@ const PaymentButton = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shine"></div>
       
       <div className="flex items-center justify-center relative z-10">
-        <div className="bg-white/20 rounded-full p-2 mr-3">
-          <ShoppingCart className="h-6 w-6 text-white" aria-hidden="true" />
-        </div>
+        <ShoppingCart className="h-6 w-6 text-white mr-3" aria-hidden="true" />
         <span className="font-semibold tracking-wide text-lg">
           {isProcessing ? "Redirection..." : "Payer 8€"}
         </span>

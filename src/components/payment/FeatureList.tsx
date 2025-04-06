@@ -34,7 +34,7 @@ const FeatureList = () => {
     },
     {
       icon: Wallet,
-      text: "Prix accessible"
+      text: "25 000+ clients satisfaits"
     },
     {
       icon: Check,

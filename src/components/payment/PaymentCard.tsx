@@ -1,17 +1,12 @@
 
 import React from 'react';
-import { Users, Folder } from 'lucide-react';
+import { Folder } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
-import RecentBuyersBadge from './RecentBuyersBadge';
 
-interface PaymentCardProps {
-  recentBuyers: number;
-}
-
-const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
+const PaymentCard = () => {
   return (
     <div className="relative p-6 md:p-8 pb-0 rounded-2xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01] hover:border-blue-300">
       {/* Dossier décoratif dans le coin supérieur droit */}
@@ -20,8 +15,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       </div>
       
       <SparkleEffects />
-      
-      <RecentBuyersBadge count={recentBuyers} />
       
       <div className="mb-6 relative z-10">
         <div className="flex items-center gap-2">

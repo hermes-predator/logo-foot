@@ -21,8 +21,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       
       <SparkleEffects />
       
-      <RecentBuyersBadge count={recentBuyers} />
-      
       <div className="mb-6 relative z-10">
         <div className="flex items-center gap-2">
           <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
@@ -33,6 +31,16 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       <div className="relative z-10">
         <FeatureList />
         <PricingBlock />
+        
+        {/* Le badge est maintenant placé ici, sous le bloc de prix */}
+        <div className="relative mt-4 mb-4">
+          <div className="flex justify-center">
+            <div className="inline-block">
+              <RecentBuyersBadge count={recentBuyers} />
+            </div>
+          </div>
+        </div>
+        
         <PaymentButton />
       </div>
     </div>

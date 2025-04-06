@@ -16,9 +16,9 @@ const PricingBlock = () => {
       <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
         <div className="flex flex-col md:flex-row items-center gap-3">
           <div>
-            {/* Prix normal barré - Modifié pour un meilleur contraste */}
+            {/* Prix normal barré - Taille augmentée */}
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-gray-500 text-lg line-through font-medium">50,00€</span>
+              <span className="text-gray-500 text-2xl line-through font-medium">50,00€</span>
               <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200">Valeur réelle</span>
             </div>
             

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -294,7 +293,7 @@ const PaymentSuccess = () => {
                   onClick={handleDownload}
                   disabled={isDownloading}
                   size="lg"
-                  className="w-full bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow-md transition-all duration-300 text-base py-5 h-auto"
+                  className="w-full bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow-md transition-all duration-300 text-lg py-5 h-auto"
                 >
                   {isDownloading ? (
                     <><RotateCw className="mr-2 h-5 w-5 animate-spin" /> Préparation...</>
@@ -352,4 +351,3 @@ const PaymentSuccess = () => {
 };
 
 export default PaymentSuccess;
-

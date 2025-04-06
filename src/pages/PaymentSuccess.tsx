@@ -1,10 +1,24 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import { useLocation } from 'react-router-dom';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
+  const [customerEmail, setCustomerEmail] = useState<string>('');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Récupérer l'email depuis les paramètres d'URL ou localStorage
+    const params = new URLSearchParams(location.search);
+    const emailParam = params.get('email');
+    
+    // Priorité à l'email dans l'URL, puis localStorage
+    const email = emailParam || localStorage.getItem('customer_email') || '';
+    setCustomerEmail(email);
+  }, [location]);
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -40,6 +54,14 @@ const PaymentSuccess = () => {
             </p>
           </div>
         </div>
+
+        {customerEmail && (
+          <div className="bg-blue-50/50 rounded-xl p-4 border border-blue-100">
+            <p className="text-sm text-gray-700">
+              Une copie sera également envoyée à : <span className="font-medium">{customerEmail}</span>
+            </p>
+          </div>
+        )}
 
         <div className="bg-purple-50/50 rounded-xl p-4 border border-purple-100">
           <div className="flex items-center gap-3 text-sm text-gray-600">

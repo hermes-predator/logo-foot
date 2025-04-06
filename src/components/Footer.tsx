@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -128,7 +127,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Litiges</h3>
-                  <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Tout différend pourra être soumis aux tribunaux compétents.</p>
+                  <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire.</p>
                 </section>
               </div>
             </DialogContent>

@@ -63,11 +63,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
                 className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
                   shadow-sm transition-all duration-300 border
-                  backdrop-blur-[2px] bg-gradient-to-b from-white to-gray-50/95
                   ${currentPage === 1 
-                    ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-300/70 hover:border-gray-700/60 hover:text-gray-900 hover:shadow-md hover:shadow-gray-200/40 cursor-pointer'
+                    ? 'opacity-50 cursor-not-allowed border-gray-100 bg-gray-50' 
+                    : 'border-gray-300/70 bg-gradient-to-b from-white to-gray-50/95 hover:border-gray-500 hover:bg-gradient-to-b hover:from-gray-50 hover:to-white hover:shadow-md hover:shadow-gray-200/30 cursor-pointer'
                   }`}
+                aria-disabled={currentPage === 1}
               >
                 <ChevronLeft className="h-5 w-5 stroke-[2px]" />
               </PaginationLink>
@@ -76,7 +76,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             {getVisiblePages().map((page, index) => (
               <PaginationItem key={index}>
                 {page === 'ellipsis' ? (
-                  <PaginationEllipsis className="text-gray-400 mx-0.5 text-sm" />
+                  <PaginationEllipsis className="text-gray-500 mx-0.5 text-sm" />
                 ) : (
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
@@ -84,8 +84,8 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     className={`w-11 h-11 p-0 flex items-center justify-center rounded-md text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-gradient-to-br from-gray-800/95 to-gray-700/95 text-white ring-1 ring-gray-600/30 shadow-md shadow-gray-400/10 border-0 hover:text-white' 
-                        : 'bg-gradient-to-b from-white to-gray-50/95 border border-gray-300/70 hover:border-gray-600/60 hover:text-gray-800 shadow-sm hover:shadow-md hover:shadow-gray-200/30'
+                        ? 'bg-gradient-to-br from-gray-800/95 to-gray-700/95 text-white ring-1 ring-gray-600/30 shadow-md shadow-gray-400/10 border-0 hover:text-white hover:ring-gray-500/40 hover:from-gray-700/95 hover:to-gray-600/95' 
+                        : 'bg-gradient-to-b from-white to-gray-50/95 border border-gray-300/70 hover:border-gray-500/60 hover:bg-gradient-to-b hover:from-gray-50 hover:to-white hover:text-gray-800 shadow-sm hover:shadow-md hover:shadow-gray-200/40'
                       }`}
                   >
                     {page}
@@ -99,11 +99,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
                 className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
                   shadow-sm transition-all duration-300 border
-                  backdrop-blur-[2px] bg-gradient-to-b from-white to-gray-50/95
                   ${currentPage === totalPages 
-                    ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-300/70 hover:border-gray-700/60 hover:text-gray-900 hover:shadow-md hover:shadow-gray-200/40 cursor-pointer'
+                    ? 'opacity-50 cursor-not-allowed border-gray-100 bg-gray-50' 
+                    : 'border-gray-300/70 bg-gradient-to-b from-white to-gray-50/95 hover:border-gray-500 hover:bg-gradient-to-b hover:from-gray-50 hover:to-white hover:shadow-md hover:shadow-gray-200/30 cursor-pointer'
                   }`}
+                aria-disabled={currentPage === totalPages}
               >
                 <ChevronRight className="h-5 w-5 stroke-[2px]" />
               </PaginationLink>

@@ -17,7 +17,7 @@ const TrustIndicators = () => {
       />
       <TrustCard 
         icon={<FileDown />}
-        title="8,500+ Téléchargements"
+        title="25,000+ Download"
         description="Utilisateurs satisfaits"
       />
       <TrustCard 

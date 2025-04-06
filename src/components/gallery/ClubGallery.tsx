@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -65,7 +66,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                   backdrop-blur-[2px] bg-white/90
                   ${currentPage === 1 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/60 hover:border-primary/80 hover:text-primary hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)] cursor-pointer'
+                    : 'border-gray-200/60 hover:border-gray-800/50 hover:text-gray-900 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] cursor-pointer'
                   }`}
               >
                 <ChevronLeft className="h-5 w-5 stroke-[2px]" />
@@ -83,8 +84,8 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     className={`w-12 h-12 p-0 flex items-center justify-center rounded-full text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-primary/95 text-white shadow-[0_6px_16px_rgba(59,130,246,0.25)] border border-primary/90' 
-                        : 'bg-white/90 border border-gray-200/60 hover:border-primary/80 hover:text-primary/90 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)]'
+                        ? 'bg-gray-900/95 text-white shadow-[0_6px_16px_rgba(0,0,0,0.2)] border border-gray-800/90' 
+                        : 'bg-white/90 border border-gray-200/60 hover:border-gray-700/60 hover:text-gray-800 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)]'
                       }`}
                   >
                     {page}
@@ -101,7 +102,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                   backdrop-blur-[2px] bg-white/90
                   ${currentPage === totalPages 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/60 hover:border-primary/80 hover:text-primary hover:shadow-[0_4px_12px_rgba(59,130,246,0.12)] cursor-pointer'
+                    : 'border-gray-200/60 hover:border-gray-800/50 hover:text-gray-900 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] cursor-pointer'
                   }`}
               >
                 <ChevronRight className="h-5 w-5 stroke-[2px]" />

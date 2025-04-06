@@ -8,12 +8,12 @@ import { erlingHaalandPost } from './erling-haaland';
 import { viniciusJuniorPost } from './vinicius-junior';
 import { neymarPost } from './neymar';
 import { lamineYamalPost } from './lamine-yamal';
-import { lamineYamalSecondPost } from './lamine-yamal-2';
+import { lamineYamal2Post } from './lamine-yamal-2';
 import { philFodenPost } from './phil-foden';
 import { jamalMusialaPost } from './jamal-musiala';
 import { florianWirtzPost } from './florian-wirtz';
 import { xaviSimonsPost } from './xavi-simons';
-import { desirerDouePost } from './desire-doue';
+import { desireDouePost } from './desire-doue';
 import { rayanCherkiPost } from './rayan-cherki';
 import { joaoNevesPost } from './joao-neves';
 import { michaelOlisePost } from './michael-olise';
@@ -28,12 +28,12 @@ import { vitinhaPost } from './vitinha';
 import { williamPachoPost } from './william-pacho';
 import { alejandroGarnachoPost } from './alejandro-garnacho';
 import { luisEnriquePost } from './luis-enrique';
-import { premierLeagueAnalysisPost } from './premier-league';
-import { ligueOneAnalysisPost } from './ligue-1';
-import { laLigaAnalysisPost } from './laliga';
-import { serieAAnalysisPost } from './serie-a';
-import { bundesligaAnalysisPost } from './bundesliga';
-import { championsLeagueAnalysisPost } from './champions-league';
+import { premierLeagueAnalysis } from './premier-league';
+import { ligue1Analysis } from './ligue-1';
+import { laligaAnalysis } from './laliga';
+import { serieAAnalysis } from './serie-a';
+import { bundesligaAnalysis } from './bundesliga';
+import { championsLeagueAnalysis } from './champions-league';
 import { colorTheoryPost } from './color-theory';
 import { williamSalibaPost } from './william-saliba';
 
@@ -44,12 +44,12 @@ export const analysisPosts: BlogPost[] = [
   viniciusJuniorPost,
   neymarPost,
   lamineYamalPost,
-  lamineYamalSecondPost,
+  lamineYamal2Post,
   philFodenPost,
   jamalMusialaPost,
   florianWirtzPost,
   xaviSimonsPost,
-  desirerDouePost,
+  desireDouePost,
   rayanCherkiPost,
   joaoNevesPost,
   michaelOlisePost,
@@ -64,12 +64,12 @@ export const analysisPosts: BlogPost[] = [
   williamPachoPost,
   alejandroGarnachoPost,
   luisEnriquePost,
-  premierLeagueAnalysisPost,
-  ligueOneAnalysisPost,
-  laLigaAnalysisPost,
-  serieAAnalysisPost,
-  bundesligaAnalysisPost,
-  championsLeagueAnalysisPost,
+  premierLeagueAnalysis,
+  ligue1Analysis,
+  laligaAnalysis,
+  serieAAnalysis,
+  bundesligaAnalysis,
+  championsLeagueAnalysis,
   colorTheoryPost,
   williamSalibaPost
 ];

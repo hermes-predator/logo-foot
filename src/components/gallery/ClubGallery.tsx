@@ -61,12 +61,12 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
-                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full
-                  shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
-                  backdrop-blur-[2px] bg-white/90
+                className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
+                  shadow-sm transition-all duration-300 border
+                  backdrop-blur-[2px] bg-white/95
                   ${currentPage === 1 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/60 hover:border-gray-800/50 hover:text-gray-900 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] cursor-pointer'
+                    : 'border-gray-300/70 hover:border-gray-800/60 hover:text-gray-900 hover:shadow-lg hover:shadow-gray-200/50 cursor-pointer'
                   }`}
               >
                 <ChevronLeft className="h-5 w-5 stroke-[2px]" />
@@ -81,11 +81,11 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                   <PaginationLink
                     onClick={() => setCurrentPage(page as number)}
                     isActive={currentPage === page}
-                    className={`w-12 h-12 p-0 flex items-center justify-center rounded-full text-base
+                    className={`w-11 h-11 p-0 flex items-center justify-center rounded-md text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-gray-900/95 text-white shadow-[0_6px_16px_rgba(0,0,0,0.2)] border border-gray-800/90' 
-                        : 'bg-white/90 border border-gray-200/60 hover:border-gray-700/60 hover:text-gray-800 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)]'
+                        ? 'bg-gradient-to-br from-gray-900/95 to-gray-800/95 text-white shadow-lg shadow-gray-300/20 border-0' 
+                        : 'bg-white/95 border border-gray-300/70 hover:border-gray-700/60 hover:text-gray-800 shadow-sm hover:shadow-lg hover:shadow-gray-200/30'
                       }`}
                   >
                     {page}
@@ -97,12 +97,12 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
             <PaginationItem>
               <PaginationLink
                 onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
-                className={`w-12 h-12 p-0 flex items-center justify-center rounded-full
-                  shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-300 border
-                  backdrop-blur-[2px] bg-white/90
+                className={`w-11 h-11 p-0 flex items-center justify-center rounded-md
+                  shadow-sm transition-all duration-300 border
+                  backdrop-blur-[2px] bg-white/95
                   ${currentPage === totalPages 
                     ? 'opacity-50 cursor-not-allowed border-gray-100' 
-                    : 'border-gray-200/60 hover:border-gray-800/50 hover:text-gray-900 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] cursor-pointer'
+                    : 'border-gray-300/70 hover:border-gray-800/60 hover:text-gray-900 hover:shadow-lg hover:shadow-gray-200/50 cursor-pointer'
                   }`}
               >
                 <ChevronRight className="h-5 w-5 stroke-[2px]" />

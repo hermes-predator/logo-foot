@@ -65,23 +65,23 @@ const Footer = () => {
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 7 - Propriété intellectuelle</h3>
+                  <h3 className="font-semibold mb-2">Article 7 - Disclaimer</h3>
+                  <p>Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. Il ne contient aucun fichier affilié à des marques officielles. Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.</p>
+                </section>
+                
+                <section>
+                  <h3 className="font-semibold mb-2">Article 8 - Propriété intellectuelle</h3>
                   <p>L'achat confère un droit d'utilisation personnel des ressources. La revente, la redistribution ou la modification des fichiers est interdite. Les logos contenus dans le pack sont la propriété de leurs détenteurs respectifs.</p>
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 8 - Protection des données</h3>
+                  <h3 className="font-semibold mb-2">Article 9 - Protection des données</h3>
                   <p>Les données personnelles collectées sont utilisées uniquement pour le traitement de la commande conformément au RGPD. Pour exercer vos droits, contactez : contact@logo-foot.com</p>
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 9 - Litiges</h3>
+                  <h3 className="font-semibold mb-2">Article 10 - Litiges</h3>
                   <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire.</p>
-                </section>
-                
-                <section>
-                  <h3 className="font-semibold mb-2">Article 10 - Disclaimer</h3>
-                  <p>Ce fichier est un produit numérique destiné à un usage personnel, créatif ou éducatif. Il ne contient aucun fichier affilié à des marques officielles. Aucune ressource n'est hébergée ou distribuée en tant que fichier propriétaire sous licence. ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante.</p>
                 </section>
               </div>
             </DialogContent>

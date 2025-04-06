@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, ArrowRight, Mail } from 'lucide-react';
+import { ShoppingCart, ArrowRight, Mail, User } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
@@ -14,10 +14,11 @@ import {
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [email, setEmail] = useState('');
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [fullName, setFullName] = useState('');
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email || !email.includes('@') || !email.includes('.')) {
@@ -28,22 +29,32 @@ const PaymentButton = () => {
       });
       return;
     }
+
+    if (!fullName || fullName.trim().length < 3) {
+      toast({
+        title: "Nom invalide",
+        description: "Veuillez entrer votre nom complet.",
+        variant: "destructive",
+      });
+      return;
+    }
     
-    // Store email in localStorage
+    // Store data in localStorage
     localStorage.setItem('customer_email', email);
-    setEmailSubmitted(true);
+    localStorage.setItem('customer_name', fullName);
+    setFormSubmitted(true);
     
     toast({
-      title: "Email enregistré",
+      title: "Informations enregistrées",
       description: "Vous pouvez maintenant finaliser votre commande.",
     });
   };
 
   const handlePayment = () => {
-    if (!emailSubmitted && (!email || !email.includes('@') || !email.includes('.'))) {
+    if (!formSubmitted && (!email || !fullName)) {
       toast({
-        title: "Email requis",
-        description: "Veuillez d'abord entrer votre email pour recevoir votre produit.",
+        title: "Informations requises",
+        description: "Veuillez d'abord compléter vos informations pour recevoir votre produit.",
         variant: "destructive",
       });
       return;
@@ -54,45 +65,69 @@ const PaymentButton = () => {
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
-    const returnUrl = `${window.location.origin}/payment-success?email=${encodeURIComponent(email)}`;
+    const returnUrl = `${window.location.origin}/payment-success?email=${encodeURIComponent(email)}&name=${encodeURIComponent(fullName)}`;
     // Updated SumUp link
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
     <div className="space-y-4">
-      {!emailSubmitted ? (
-        <form onSubmit={handleEmailSubmit} className="flex flex-col space-y-3">
+      {!formSubmitted ? (
+        <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4">
+          <div className="flex items-center">
+            <User className="h-5 w-5 text-blue-600 mr-2" />
+            <label htmlFor="customer-name" className="font-medium text-gray-700">
+              Votre nom complet pour le reçu
+            </label>
+          </div>
+          <Input
+            id="customer-name"
+            type="text"
+            placeholder="Jean Dupont"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            className="bg-white border-blue-200 focus:border-blue-400"
+            required
+          />
+          
           <div className="flex items-center">
             <Mail className="h-5 w-5 text-blue-600 mr-2" />
             <label htmlFor="customer-email" className="font-medium text-gray-700">
               Votre email pour recevoir votre produit
             </label>
           </div>
-          <div className="flex space-x-2">
-            <Input
-              id="customer-email"
-              type="email"
-              placeholder="votre@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 bg-white border-blue-200 focus:border-blue-400"
-              required
-            />
-            <Button 
-              type="submit" 
-              className="bg-blue-600 hover:bg-blue-700"
-            >
-              Valider
-            </Button>
-          </div>
+          <Input
+            id="customer-email"
+            type="email"
+            placeholder="votre@email.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="bg-white border-blue-200 focus:border-blue-400"
+            required
+          />
+          
+          <Button 
+            type="submit" 
+            className="bg-blue-600 hover:bg-blue-700 w-full"
+          >
+            Enregistrer mes informations
+          </Button>
         </form>
       ) : (
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3 flex items-start">
-          <Mail className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
-          <div>
-            <p className="font-medium text-green-700">Email enregistré</p>
-            <p className="text-green-600 text-sm truncate">{email}</p>
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3 space-y-2">
+          <div className="flex items-start">
+            <User className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
+            <div>
+              <p className="font-medium text-green-700">Nom enregistré</p>
+              <p className="text-green-600 text-sm">{fullName}</p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <Mail className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
+            <div>
+              <p className="font-medium text-green-700">Email enregistré</p>
+              <p className="text-green-600 text-sm truncate">{email}</p>
+            </div>
           </div>
         </div>
       )}

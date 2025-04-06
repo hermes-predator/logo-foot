@@ -156,9 +156,8 @@ const Footer = () => {
                   <AccordionItem value="item-2">
                     <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
                     <AccordionContent>
-                      C'est simple et instantané ! Après votre paiement, vous recevez immédiatement un lien de 
-                      téléchargement sur la page de confirmation. Le fichier ZIP contenant tous les logos est 
-                      disponible instantanément.
+                      C'est simple et instantané ! Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement. 
+                      Le fichier ZIP contenant tous les logos est disponible immédiatement.
                     </AccordionContent>
                   </AccordionItem>
 

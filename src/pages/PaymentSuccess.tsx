@@ -287,7 +287,7 @@ const PaymentSuccess = () => {
           {/* Section de téléchargement */}
           <div className="space-y-4">
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-medium text-gray-800 mb-3">Téléchargement & Documents</h3>
+              <h3 className="font-medium text-gray-800 mb-3">Téléchargements</h3>
               
               <div className="space-y-3">
                 <Button
@@ -352,3 +352,4 @@ const PaymentSuccess = () => {
 };
 
 export default PaymentSuccess;
+

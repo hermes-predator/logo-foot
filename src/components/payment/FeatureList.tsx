@@ -34,7 +34,7 @@ const FeatureList = () => {
     },
     {
       icon: Users,
-      text: "25 000+ clients satisfaits"
+      text: "Clients satisfaits 25 000+"
     },
     {
       icon: Check,

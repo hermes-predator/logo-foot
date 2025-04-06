@@ -14,89 +14,52 @@ import {
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [fullName, setFullName] = useState('');
-  const [formSubmitted, setFormSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
+  const handlePayment = () => {
+    // Validate name first
     if (!fullName || fullName.trim().length < 3) {
       toast({
         title: "Nom invalide",
-        description: "Veuillez entrer votre nom complet.",
+        description: "Veuillez entrer votre nom complet pour recevoir votre produit.",
         variant: "destructive",
       });
       return;
     }
     
-    // Store data in localStorage
+    // Store name in localStorage
     localStorage.setItem('customer_name', fullName);
-    setFormSubmitted(true);
-    
-    toast({
-      title: "Informations enregistrées",
-      description: "Vous pouvez maintenant finaliser votre commande.",
-    });
-  };
-
-  const handlePayment = () => {
-    if (!formSubmitted && !fullName) {
-      toast({
-        title: "Informations requises",
-        description: "Veuillez d'abord compléter votre nom pour recevoir votre produit.",
-        variant: "destructive",
-      });
-      return;
-    }
     
     setIsProcessing(true);
     toast({
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
+    
     const returnUrl = `${window.location.origin}/payment-success?name=${encodeURIComponent(fullName)}`;
-    // Updated SumUp link
+    // SumUp payment link
     window.location.href = `https://pay.sumup.com/b2c/QWBH42Z8?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
     <div className="space-y-4">
-      {!formSubmitted ? (
-        <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4">
-          <div className="flex items-center">
-            <User className="h-5 w-5 text-blue-600 mr-2" />
-            <label htmlFor="customer-name" className="font-medium text-gray-700">
-              Votre nom complet pour le reçu
-            </label>
-          </div>
-          <Input
-            id="customer-name"
-            type="text"
-            placeholder="Jean Dupont"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            className="bg-white border-blue-200 focus:border-blue-400"
-            required
-          />
-          
-          <Button 
-            type="submit" 
-            className="bg-blue-600 hover:bg-blue-700 w-full"
-          >
-            Enregistrer mes informations
-          </Button>
-        </form>
-      ) : (
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3 space-y-2">
-          <div className="flex items-start">
-            <User className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
-            <div>
-              <p className="font-medium text-green-700">Nom enregistré</p>
-              <p className="text-green-600 text-sm">{fullName}</p>
-            </div>
-          </div>
+      <div className="flex flex-col space-y-4">
+        <div className="flex items-center">
+          <User className="h-5 w-5 text-blue-600 mr-2" />
+          <label htmlFor="customer-name" className="font-medium text-gray-700">
+            Votre nom complet pour le reçu
+          </label>
         </div>
-      )}
+        <Input
+          id="customer-name"
+          type="text"
+          placeholder="Jean Dupont"
+          value={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+          className="bg-white border-blue-200 focus:border-blue-400"
+          required
+        />
+      </div>
       
       <TooltipProvider>
         <Tooltip>

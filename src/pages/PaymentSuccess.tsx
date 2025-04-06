@@ -1,5 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, RotateCw, Gift } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
@@ -268,7 +269,7 @@ const PaymentSuccess = () => {
                   onClick={handleDownload}
                   disabled={isDownloading}
                   size="lg"
-                  className="w-full bg-green-600 hover:bg-green-700 shadow-sm hover:shadow-md transition-all duration-300 text-base py-5 h-auto"
+                  className="w-full bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow-md transition-all duration-300 text-base py-5 h-auto"
                 >
                   {isDownloading ? (
                     <><RotateCw className="mr-2 h-5 w-5 animate-spin" /> Préparation...</>

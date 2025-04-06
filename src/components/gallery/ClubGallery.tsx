@@ -84,7 +84,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     className={`w-11 h-11 p-0 flex items-center justify-center rounded-md text-base
                       transition-all duration-300 cursor-pointer font-medium backdrop-blur-[2px]
                       ${currentPage === page 
-                        ? 'bg-gradient-to-br from-gray-800/95 to-gray-700/95 text-white ring-1 ring-gray-600/30 shadow-md shadow-gray-400/10 border-0' 
+                        ? 'bg-gradient-to-br from-gray-800/95 to-gray-700/95 text-white ring-1 ring-gray-600/30 shadow-md shadow-gray-400/10 border-0 hover:text-white' 
                         : 'bg-gradient-to-b from-white to-gray-50/95 border border-gray-300/70 hover:border-gray-600/60 hover:text-gray-800 shadow-sm hover:shadow-md hover:shadow-gray-200/30'
                       }`}
                   >

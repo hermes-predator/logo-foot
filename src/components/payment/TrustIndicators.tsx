@@ -16,14 +16,14 @@ const TrustIndicators = () => {
         description="Page d'après-paiement"
       />
       <TrustCard 
-        icon={<HandHeart />}
-        title="Support Réactif"
-        description="Email : contact@logo-foot.com"
-      />
-      <TrustCard 
         icon={<FileDown />}
         title="8,500+ Téléchargements"
         description="Utilisateurs satisfaits"
+      />
+      <TrustCard 
+        icon={<HandHeart />}
+        title="Support Réactif"
+        description="Email : contact@logo-foot.com"
       />
     </div>
   );

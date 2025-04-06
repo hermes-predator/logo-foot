@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -325,21 +324,6 @@ const PaymentSuccess = () => {
                   <span>Accès immédiat via téléchargement ci-dessus</span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        
-        {/* Bannière cadeau */}
-        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <div className="shrink-0">
-              <Gift className="h-10 w-10 text-gray-700" />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-800 text-lg">Un bonus spécial pour vous</h3>
-              <p className="text-gray-600">
-                Vous recevrez prochainement par email une mise à jour exclusive avec 200 logos supplémentaires.
-              </p>
             </div>
           </div>
         </div>

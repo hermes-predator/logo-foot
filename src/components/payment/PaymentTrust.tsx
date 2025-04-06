@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Download } from 'lucide-react';
 
 const PaymentTrust = () => {
   return (
@@ -24,6 +25,17 @@ const PaymentTrust = () => {
           alt="Cartes de paiement acceptées" 
           className="h-12" 
         />
+      </div>
+
+      {/* Point décoratif avec une couleur grise plus claire */}
+      <div className="flex items-center justify-center">
+        <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
+      </div>
+      
+      {/* Compteur de téléchargement */}
+      <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg border border-gray-100">
+        <Download className="h-4 w-4 text-blue-600" />
+        <span className="text-sm text-gray-700 font-medium">25 287 téléchargements ce mois-ci</span>
       </div>
     </div>
   );

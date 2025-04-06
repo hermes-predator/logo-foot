@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { RefreshCcw, Download } from 'lucide-react';
+import { RefreshCcw } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -34,41 +34,33 @@ const PricingBlock = () => {
         </div>
       </div>
       
-      <div className="flex flex-col items-center">
-        <div className="group mb-2">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px]">
-                <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-                <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
-                  Satisfait ou remboursé
-                </span>
-              </div>
-            </TooltipTrigger>
-            <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
-              <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
-              <div className="space-y-2 text-gray-600">
-                <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
-                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                <p className="mt-4 text-gray-500 text-[13px]">
-                  Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
-                  <ul className="list-disc ml-4 mt-1 space-y-1">
-                    <li>Votre nom et prénom</li>
-                    <li>La date et l'heure d'achat</li>
-                    <li>Une preuve d'achat</li>
-                  </ul>
-                </p>
-              </div>
-            </TooltipContent>
-          </Tooltip>
-        </div>
-        
-        {/* Compteur de téléchargement */}
-        <div className="flex items-center gap-1.5 text-blue-600 text-xs font-medium">
-          <Download className="h-3.5 w-3.5" />
-          <span>25 287 téléchargements ce mois-ci</span>
-        </div>
+      <div className="group">
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px]">
+              <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+              <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
+                Satisfait ou remboursé
+              </span>
+            </div>
+          </TooltipTrigger>
+          <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
+            <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
+            <div className="space-y-2 text-gray-600">
+              <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+              <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
+              <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+              <p className="mt-4 text-gray-500 text-[13px]">
+                Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
+                <ul className="list-disc ml-4 mt-1 space-y-1">
+                  <li>Votre nom et prénom</li>
+                  <li>La date et l'heure d'achat</li>
+                  <li>Une preuve d'achat</li>
+                </ul>
+              </p>
+            </div>
+          </TooltipContent>
+        </Tooltip>
       </div>
     </div>
   );

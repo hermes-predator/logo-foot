@@ -149,7 +149,7 @@ const Footer = () => {
                     <AccordionContent>
                       Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
                       Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
-                      Vous pouvez payer en toute confiance avec votre carte bancaire.
+                      Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
                     </AccordionContent>
                   </AccordionItem>
 

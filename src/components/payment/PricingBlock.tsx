@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { RefreshCcw, Users } from 'lucide-react';
+import { RefreshCcw } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -34,10 +34,10 @@ const PricingBlock = () => {
         </div>
       </div>
       
-      <div className="flex flex-col items-center">
+      <div className="group">
         <Tooltip>
           <TooltipTrigger asChild>
-            <div className="group flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px] mb-2">
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px]">
               <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
               <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
                 Satisfait ou remboursé
@@ -61,12 +61,6 @@ const PricingBlock = () => {
             </div>
           </TooltipContent>
         </Tooltip>
-        
-        {/* Nouvelle mention des utilisateurs satisfaits */}
-        <div className="flex items-center gap-1.5 text-sm text-gray-600">
-          <Users className="h-3.5 w-3.5 text-blue-600" />
-          <span>Plus de 25 000 utilisateurs satisfaits</span>
-        </div>
       </div>
     </div>
   );

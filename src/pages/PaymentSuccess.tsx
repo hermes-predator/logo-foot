@@ -1,11 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, Mail, RotateCw, Gift } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Progress } from '@/components/ui/progress';
 
 const PaymentSuccess = () => {
@@ -310,12 +308,12 @@ const PaymentSuccess = () => {
                   </div>
                 )}
                 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="w-full">
                   <Button
                     onClick={generateReceipt}
                     disabled={isGeneratingReceipt}
                     variant="outline"
-                    className="border-gray-200 text-gray-700 hover:bg-gray-100 shadow-sm"
+                    className="w-full border-gray-200 text-gray-700 hover:bg-gray-100 shadow-sm"
                   >
                     {isGeneratingReceipt ? (
                       <><RotateCw className="mr-1 h-4 w-4 animate-spin" /> Génération...</>
@@ -323,33 +321,11 @@ const PaymentSuccess = () => {
                       <><FileText className="mr-1 h-4 w-4" /> Reçu d'achat</>
                     )}
                   </Button>
-                  
-                  <Button
-                    onClick={sendEmailCopy}
-                    variant="outline"
-                    className="border-gray-200 text-gray-700 hover:bg-gray-100 shadow-sm"
-                  >
-                    <Mail className="mr-1 h-4 w-4" /> Copie par email
-                  </Button>
                 </div>
               </div>
             </div>
             
-            {/* Aperçu du produit */}
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-medium text-gray-800 mb-2">Aperçu de votre pack</h3>
-              <div className="rounded-lg overflow-hidden border border-gray-200">
-                <AspectRatio ratio={16 / 9}>
-                  <div className="flex items-center justify-center bg-white h-full w-full">
-                    <img 
-                      src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png" 
-                      alt="Aperçu du pack de logos" 
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </AspectRatio>
-              </div>
-            </div>
+            {/* Aperçu du produit supprimé */}
           </div>
         </div>
         

@@ -49,13 +49,13 @@ const FloatingCTA = () => {
               <Button 
                 asChild
                 variant="secondary" 
-                className="bg-orange-500 hover:bg-orange-400 w-full py-3 text-base group relative overflow-hidden border-2 border-white/30 shadow-lg shadow-orange-600/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
-                size="lg"
+                className="bg-white hover:bg-gray-100 w-full py-2 text-sm group relative overflow-hidden"
+                size="sm"
               >
                 <Link to="/" className="flex items-center justify-center gap-2">
-                  <span className="text-white font-bold relative z-10">Télécharger maintenant</span>
-                  <ArrowRight className="h-5 w-5 text-white transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
-                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shine" style={{ animationDuration: '1.8s' }}></span>
+                  <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
+                  <ArrowRight className="h-4 w-4 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Link>
               </Button>
             </div>
@@ -89,13 +89,13 @@ const FloatingCTA = () => {
                 <Button 
                   asChild
                   variant="secondary" 
-                  className="bg-orange-500 hover:bg-orange-400 px-6 py-3 text-base md:text-lg group relative overflow-hidden border-2 border-white/30 shadow-lg shadow-orange-600/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  className="bg-white hover:bg-gray-100 px-5 py-2.5 text-sm md:text-base group relative overflow-hidden"
                   size="lg"
                 >
-                  <Link to="/" className="flex items-center gap-3">
-                    <span className="text-white font-bold relative z-10">Télécharger maintenant</span>
-                    <ArrowRight className="h-5 w-5 md:h-6 md:w-6 text-white transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shine" style={{ animationDuration: '1.8s' }}></span>
+                  <Link to="/" className="flex items-center gap-2">
+                    <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
+                    <ArrowRight className="h-5 w-5 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>
               </div>

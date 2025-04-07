@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ShoppingCart, ArrowRight, User } from 'lucide-react';
+import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
@@ -44,8 +44,7 @@ const PaymentButton = () => {
   return (
     <div className="space-y-4">
       <div className="flex flex-col space-y-4">
-        <div className="flex items-center">
-          <User className="h-5 w-5 text-blue-600 mr-2" />
+        <div>
           <label htmlFor="customer-name" className="font-medium text-gray-700">
             Votre nom complet pour le reçu
           </label>

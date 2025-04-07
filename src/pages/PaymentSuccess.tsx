@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -73,152 +72,138 @@ const PaymentSuccess = () => {
   };
 
   const generateReceipt = () => {
+    // Définir l'état sur "en cours de génération"
     setIsGeneratingReceipt(true);
+    
+    // Afficher un toast pour indiquer que le processus démarre
+    toast({
+      title: "Génération du reçu",
+      description: "Préparation de votre reçu PDF en cours...",
+    });
     
     // Créer le contenu HTML du reçu
     const dateTime = new Date().toLocaleString('fr-FR');
     const receiptHTML = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <meta charset="utf-8">
-        <title>Reçu d'achat - FRONT-CLOUD</title>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-          }
-          .receipt {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-          }
-          .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-          }
-          .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #4a6cf7;
-          }
-          .info {
-            margin-bottom: 20px;
-          }
-          .info-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-          }
-          .product {
-            margin: 20px 0;
-            padding: 10px 0;
-            border-top: 1px solid #f0f0f0;
-            border-bottom: 1px solid #f0f0f0;
-          }
-          .total {
-            font-size: 18px;
-            font-weight: bold;
-            text-align: right;
-            margin-top: 20px;
-          }
-          .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #777;
-            text-align: center;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="receipt">
-          <div class="header">
-            <div class="logo">FRONT-CLOUD</div>
-            <div>Reçu d'achat</div>
+      <div class="receipt" style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <div class="header" style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">
+          <div class="logo" style="font-size: 24px; font-weight: bold; color: #4a6cf7;">FRONT-CLOUD</div>
+          <div>Reçu d'achat</div>
+        </div>
+        
+        <div class="info" style="margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div><strong>Numéro de commande:</strong></div>
+            <div>${orderId}</div>
           </div>
-          
-          <div class="info">
-            <div class="info-row">
-              <div><strong>Numéro de commande:</strong></div>
-              <div>${orderId}</div>
-            </div>
-            <div class="info-row">
-              <div><strong>Date:</strong></div>
-              <div>${dateTime}</div>
-            </div>
-            <div class="info-row">
-              <div><strong>Client:</strong></div>
-              <div>${customerName}</div>
-            </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div><strong>Date:</strong></div>
+            <div>${dateTime}</div>
           </div>
-          
-          <div class="product">
-            <div class="info-row">
-              <div><strong>Produit</strong></div>
-              <div><strong>Prix</strong></div>
-            </div>
-            <div class="info-row">
-              <div>Pack de ressources Football</div>
-              <div>8,00 €</div>
-            </div>
-            <div class="info-row">
-              <div>- Plus de 8600 logos de clubs de football</div>
-              <div></div>
-            </div>
-            <div class="info-row">
-              <div>- Format PNG haute qualité</div>
-              <div></div>
-            </div>
-          </div>
-          
-          <div class="total">Total: 8,00 €</div>
-          
-          <div class="footer">
-            <p>Merci pour votre confiance. Pour toute question, contactez notre service client.</p>
-            <p>© ${new Date().getFullYear()} FRONT-CLOUD - Tous droits réservés.</p>
-            <p>Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.</p>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div><strong>Client:</strong></div>
+            <div>${customerName || 'Client'}</div>
           </div>
         </div>
-      </body>
-      </html>
+        
+        <div class="product" style="margin: 20px 0; padding: 10px 0; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div><strong>Produit</strong></div>
+            <div><strong>Prix</strong></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div>Pack de ressources Football</div>
+            <div>8,00 €</div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div>- Plus de 8600 logos de clubs de football</div>
+            <div></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <div>- Format PNG haute qualité</div>
+            <div></div>
+          </div>
+        </div>
+        
+        <div style="font-size: 18px; font-weight: bold; text-align: right; margin-top: 20px;">Total: 8,00 €</div>
+        
+        <div style="margin-top: 30px; font-size: 12px; color: #777; text-align: center;">
+          <p>Merci pour votre confiance. Pour toute question, contactez notre service client.</p>
+          <p>© ${new Date().getFullYear()} FRONT-CLOUD - Tous droits réservés.</p>
+          <p>Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.</p>
+        </div>
+      </div>
     `;
     
     // Créer un élément temporaire pour le rendu HTML
     const receiptContainer = document.createElement('div');
     receiptContainer.innerHTML = receiptHTML;
-    receiptContainer.style.position = 'absolute';
+    receiptContainer.style.position = 'fixed';
     receiptContainer.style.left = '-9999px';
+    receiptContainer.style.top = '0';
     document.body.appendChild(receiptContainer);
     
-    // Utiliser html2canvas pour convertir le HTML en image
+    // Utiliser un délai court pour s'assurer que le DOM est mis à jour
     setTimeout(() => {
-      html2canvas(receiptContainer.firstChild as HTMLElement, { scale: 2 }).then((canvas) => {
-        // Créer un nouveau document PDF
-        const pdf = new jsPDF('p', 'mm', 'a4');
-        const imgData = canvas.toDataURL('image/png');
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+      try {
+        const receiptElement = receiptContainer.querySelector('.receipt');
         
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save(`recu-front-cloud-${orderId.slice(-6)}.pdf`);
+        if (!receiptElement) {
+          throw new Error("Élément du reçu introuvable");
+        }
         
-        // Nettoyer le DOM
-        document.body.removeChild(receiptContainer);
-        
-        toast({
-          title: "Reçu généré",
-          description: "Votre reçu PDF a été téléchargé.",
+        html2canvas(receiptElement, { 
+          scale: 2,
+          logging: true,
+          useCORS: true,
+          allowTaint: true
+        }).then((canvas) => {
+          try {
+            // Créer un nouveau document PDF
+            const pdf = new jsPDF('p', 'mm', 'a4');
+            const imgData = canvas.toDataURL('image/png');
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+            
+            pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+            pdf.save(`recu-front-cloud-${orderId.slice(-6)}.pdf`);
+            
+            toast({
+              title: "Reçu généré avec succès",
+              description: "Votre reçu PDF a été téléchargé.",
+            });
+          } catch (err) {
+            console.error("Erreur lors de la création du PDF:", err);
+            toast({
+              title: "Erreur de génération",
+              description: "Impossible de créer le PDF. Veuillez réessayer.",
+              variant: "destructive",
+            });
+          } finally {
+            // Nettoyer le DOM
+            document.body.removeChild(receiptContainer);
+            setIsGeneratingReceipt(false);
+          }
+        }).catch((err) => {
+          console.error("Erreur de rendu HTML:", err);
+          document.body.removeChild(receiptContainer);
+          setIsGeneratingReceipt(false);
+          toast({
+            title: "Erreur de génération",
+            description: "Impossible de créer le PDF. Veuillez réessayer.",
+            variant: "destructive",
+          });
         });
-        
+      } catch (err) {
+        console.error("Erreur initiale:", err);
+        document.body.removeChild(receiptContainer);
         setIsGeneratingReceipt(false);
-      });
-    }, 500); // Délai pour s'assurer que le HTML est correctement rendu
+        toast({
+          title: "Erreur de génération",
+          description: "Impossible de créer le PDF. Veuillez réessayer.",
+          variant: "destructive",
+        });
+      }
+    }, 100);
   };
 
   const sendEmailCopy = () => {

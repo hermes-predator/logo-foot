@@ -11,7 +11,7 @@ interface FeatureProps {
 
 const Feature = ({ icon: Icon, text, className, iconColor }: FeatureProps) => {
   return (
-    <div className="flex items-center gap-4 text-gray-700 p-2 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-sm">
+    <div className="flex items-center gap-4 text-gray-800 p-2 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-sm">
       <div className={`p-2 rounded-full ${className || 'bg-blue-100'}`}>
         <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>

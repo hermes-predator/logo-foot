@@ -28,7 +28,7 @@ const FloatingCTA = () => {
               size="sm"
             >
               <Link to="/" className="flex items-center gap-2">
-                <span className="text-blue-600">Télécharger maintenant</span>
+                <span className="text-blue-600 font-medium">Télécharger maintenant</span>
                 <ArrowRight className="h-4 w-4 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>

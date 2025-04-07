@@ -18,16 +18,16 @@ const PricingBlock = () => {
           <div>
             {/* Prix normal barré - Taille augmentée */}
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-gray-500 text-2xl line-through font-medium">50,00€</span>
+              <span className="text-gray-600 text-2xl line-through font-medium">50,00€</span>
               <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200">Valeur réelle</span>
             </div>
             
             {/* Nouveau prix mis en valeur avec meilleur contraste */}
             <div className="flex items-center gap-2">
-              <span className="text-4xl md:text-5xl font-extrabold text-black drop-shadow-sm">8€</span>
+              <span className="text-4xl md:text-5xl font-extrabold text-gray-900 drop-shadow-sm">8€</span>
               <div className="flex flex-col items-start ml-2">
                 <span className="text-green-700 text-sm font-semibold whitespace-nowrap">84% de réduction</span>
-                <span className="text-gray-500 text-sm whitespace-nowrap">TVA incluse</span>
+                <span className="text-gray-600 text-sm whitespace-nowrap">TVA incluse</span>
               </div>
             </div>
           </div>
@@ -39,18 +39,18 @@ const PricingBlock = () => {
           <TooltipTrigger asChild>
             <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-green-100 hover:bg-green-200 hover:shadow-md transition-all duration-300 transform hover:translate-y-[-1px]">
               <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-              <span className="text-sm whitespace-nowrap text-emerald-700 font-medium">
+              <span className="text-sm whitespace-nowrap text-emerald-800 font-medium">
                 Satisfait ou remboursé
               </span>
             </div>
           </TooltipTrigger>
           <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-100 shadow-lg rounded-lg">
             <p className="font-semibold text-emerald-700">Votre satisfaction est importante.</p>
-            <div className="space-y-2 text-gray-600">
+            <div className="space-y-2 text-gray-700">
               <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
               <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
               <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-              <p className="mt-4 text-gray-500 text-[13px]">
+              <p className="mt-4 text-gray-600 text-[13px]">
                 Pour cela, contactez-nous par email "contact@logo-foot.com" en mentionnant :
                 <ul className="list-disc ml-4 mt-1 space-y-1">
                   <li>Votre nom et prénom</li>

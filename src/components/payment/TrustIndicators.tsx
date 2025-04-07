@@ -40,8 +40,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       <div className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 hover:scale-110" aria-hidden="true">
         {icon}
       </div>
-      <h3 className="font-medium mb-1 text-sm">{title}</h3>
-      <p className="text-xs text-gray-600 text-center">{description}</p>
+      <h3 className="font-medium mb-1 text-sm text-gray-900">{title}</h3>
+      <p className="text-xs text-gray-700 text-center">{description}</p>
     </div>
   );
 };

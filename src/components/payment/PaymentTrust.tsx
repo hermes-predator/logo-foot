@@ -6,7 +6,7 @@ const PaymentTrust = () => {
   return (
     <div className="flex items-center justify-center mt-6 flex-wrap gap-2">
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
-        <span className="text-sm text-gray-700 font-medium">Paiement sécurisé</span>
+        <span className="text-sm text-gray-800 font-medium">Paiement sécurisé</span>
         <img 
           src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
           alt="SumUp Secure Payment" 
@@ -35,7 +35,7 @@ const PaymentTrust = () => {
       {/* Compteur de téléchargement */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
         <Download className="h-4 w-4 text-blue-600" />
-        <span className="text-sm text-gray-700 font-medium">25 287 téléchargements</span>
+        <span className="text-sm text-gray-800 font-medium">25 287 téléchargements</span>
       </div>
     </div>
   );

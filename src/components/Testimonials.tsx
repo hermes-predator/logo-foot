@@ -11,9 +11,9 @@ import {
 
 const testimonials = [
   {
-    name: "Thomas D.",
-    role: "Développeur Web",
-    content: "Une collection vraiment complète qui m'a fait gagner un temps fou sur mes projets. La qualité est au rendez-vous !",
+    name: "Pierre M.",
+    role: "Créateur de contenu sportif",
+    content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
     rating: 5
   },
   {
@@ -23,9 +23,9 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Pierre M.",
-    role: "Créateur de contenu sportif",
-    content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
+    name: "Thomas D.",
+    role: "Développeur Web",
+    content: "Une collection vraiment complète qui m'a fait gagner un temps fou sur mes projets. La qualité est au rendez-vous !",
     rating: 5
   },
   {

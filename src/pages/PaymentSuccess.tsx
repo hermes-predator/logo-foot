@@ -196,7 +196,7 @@ const PaymentSuccess = () => {
         // Paramètres de base
         doc.setFont("helvetica", "bold");
         doc.setFontSize(18);
-        doc.text("⦗FRONT-CLOUD⦘~ Football.zip", 105, 20, { align: "center" });
+        doc.text("FRONT-CLOUD ~ Football.zip", 105, 20, { align: "center" });
         
         doc.setFont("helvetica", "normal");
         doc.setFontSize(14);
@@ -216,9 +216,9 @@ const PaymentSuccess = () => {
         doc.text("Produit", 20, 80);
         doc.text("Prix", 170, 80);
         
-        // Produit
+        // Produit - utiliser une version compatible PDF du nom du produit
         doc.setFont("helvetica", "normal");
-        doc.text("⦗FRONT-CLOUD⦘~ Football.zip", 20, 90);
+        doc.text("FRONT-CLOUD ~ Football.zip", 20, 90);
         doc.text("8,00 €", 170, 90);
         
         // Ligne de séparation

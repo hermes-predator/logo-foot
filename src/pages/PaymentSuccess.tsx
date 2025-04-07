@@ -200,6 +200,7 @@ const PaymentSuccess = () => {
       toast({
         title: "Reçu généré",
         description: "Votre reçu a été téléchargé.",
+        icon: <CheckCircle className="h-5 w-5 text-green-500" />
       });
       
       setIsGeneratingReceipt(false);

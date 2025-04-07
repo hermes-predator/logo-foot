@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -272,7 +271,7 @@ const PaymentSuccess = () => {
                   {isDownloading ? (
                     <><RotateCw className="mr-2 h-5 w-5 animate-spin" /> Préparation...</>
                   ) : (
-                    <><Download className="mr-2 h-5 w-5" /> Télécharger le ZIP</>
+                    <><Download className="mr-2 h-5 w-5" /> Télécharger le fichier ZIP</>
                   )}
                 </Button>
                 

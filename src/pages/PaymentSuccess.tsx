@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
@@ -296,6 +296,19 @@ const PaymentSuccess = () => {
                       <><FileText className="mr-1 h-4 w-4" /> Reçu d'achat</>
                     )}
                   </Button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Nouveau conteneur d'avertissement ambré */}
+            <div className="bg-amber-50 rounded-lg p-5 border border-amber-200">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre pack maintenant</h3>
+                  <p className="text-amber-700 text-sm">
+                    Pour des raisons de sécurité, votre lien de téléchargement est temporaire. Assurez-vous de télécharger votre pack immédiatement pour éviter de le perdre.
+                  </p>
                 </div>
               </div>
             </div>

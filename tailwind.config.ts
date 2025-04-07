@@ -96,13 +96,30 @@ export default {
 				'shine': {
 					'0%': { left: '-100%', opacity: '0.3' },
 					'100%': { left: '100%', opacity: '0.3' }
+				},
+				'bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-25%)' }
+				},
+				'glow': {
+					'0%': { filter: 'brightness(100%)' },
+					'100%': { filter: 'brightness(150%) drop-shadow(0 0 3px rgba(255, 255, 255, 0.6))' }
+				},
+				'ping': {
+					'75%, 100%': {
+						transform: 'scale(1.5)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'shimmer': 'shimmer 2s infinite',
-				'shine': 'shine 2s ease-out infinite'
+				'shine': 'shine 2s ease-out infinite',
+				'ping': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+				'bounce': 'bounce 1s infinite',
+				'glow': 'glow 1.5s infinite alternate'
 			}
 		}
 	},

@@ -11,8 +11,14 @@ const FloatingCTA = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
           <div className="flex items-center mb-3 sm:mb-0">
             <Link to="/" className="group flex items-center">
-              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 group-hover:bg-white/30 transition-colors">
-                <Download className="h-5 w-5 text-white" style={{ animation: 'translateY 1.5s ease infinite' }} />
+              <span className="hidden md:inline-block bg-white/20 p-2 rounded-full mr-3 group-hover:bg-white/30 transition-colors relative overflow-hidden">
+                <Download 
+                  className="h-5 w-5 text-white animate-pulse" 
+                  style={{ 
+                    animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate'
+                  }} 
+                />
+                <span className="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
               </span>
               <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">
                 <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot dans un fichier ZIP arborescent

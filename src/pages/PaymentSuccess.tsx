@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -304,7 +305,7 @@ const PaymentSuccess = () => {
                 <div>
                   <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre pack maintenant</h3>
                   <p className="text-amber-700 text-sm">
-                    Assurez-vous de télécharger votre pack immédiatement afin d'éviter de le perdre.
+                    Assurez-vous de télécharger votre pack sans attendre afin d'éviter de le perdre.
                   </p>
                 </div>
               </div>

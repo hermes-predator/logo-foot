@@ -22,14 +22,15 @@ const FloatingCTA = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
           <div className="flex items-center mb-3 sm:mb-0">
             <Link to="/" className="group flex items-center">
-              <span className="hidden md:inline-block bg-white/20 p-2.5 rounded-full mr-3 group-hover:bg-white/30 transition-colors relative overflow-hidden">
+              <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                 <Download 
-                  className="h-6 w-6 text-white animate-pulse" 
+                  className="h-6 w-6 md:h-7 md:w-7 text-white animate-bounce" 
                   style={{ 
-                    animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate'
+                    animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
+                    filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
                   }} 
                 />
-                <span className="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
+                <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
               </span>
               <div className="relative">
                 <p className="text-white font-medium text-sm md:text-lg hover:text-white/90 transition-colors flex flex-col">

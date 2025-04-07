@@ -245,6 +245,9 @@ const PaymentSuccess = () => {
                 <p className="text-gray-700">
                   Client : <span className="font-medium">{customerName}</span>
                 </p>
+                <p className="text-gray-700">
+                  Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                </p>
                 <p className="text-gray-700 text-sm">
                   Date : <span className="font-medium">{new Date().toLocaleDateString('fr-FR')}</span>
                 </p>

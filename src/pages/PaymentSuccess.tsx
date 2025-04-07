@@ -375,7 +375,7 @@ const PaymentSuccess = () => {
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre fichier maintenant</h3>
+                  <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre fichier !</h3>
                   <p className="text-amber-700 text-sm">
                     Assurez-vous de télécharger votre fichier immédiatement afin d'éviter de le perdre.
                   </p>

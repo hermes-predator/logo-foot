@@ -1,5 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, RotateCw, FilePdf } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
@@ -333,7 +334,7 @@ const PaymentSuccess = () => {
                     {isGeneratingReceipt ? (
                       <><RotateCw className="mr-1 h-4 w-4 animate-spin" /> Génération...</>
                     ) : (
-                      <><FilePdf className="mr-1 h-4 w-4" /> Reçu d'achat (PDF)</>
+                      <><FileText className="mr-1 h-4 w-4" /> Reçu d'achat (PDF)</>
                     )}
                   </Button>
                 </div>

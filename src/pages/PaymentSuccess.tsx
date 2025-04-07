@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -137,7 +138,7 @@ const PaymentSuccess = () => {
         <body>
           <div class="receipt">
             <div class="header">
-              <div class="logo">FRONT-CLOUD</div>
+              <div class="logo">⦗FRONT-CLOUD⦘~ Football.zip</div>
               <div>Reçu d'achat</div>
             </div>
             

@@ -9,6 +9,7 @@ import BlogHeader from '../components/blog/BlogHeader';
 import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 import BlogCTA from '../components/blog/BlogCTA';
+import FloatingCTA from '../components/blog/FloatingCTA';
 
 const Blog = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -107,6 +108,9 @@ const Blog = () => {
           <BlogCTA />
         </div>
       </main>
+
+      {/* Add the FloatingCTA component */}
+      <FloatingCTA />
     </div>
   );
 };

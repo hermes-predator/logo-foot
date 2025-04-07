@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -243,36 +242,11 @@ const PaymentSuccess = () => {
                 <p className="text-gray-700">
                   Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </p>
-                <p className="text-gray-700 text-sm">
+                <p className="text-gray-700">
                   Date : <span className="font-medium">{new Date().toLocaleDateString('fr-FR')}</span>
                 </p>
               </div>
             )}
-            
-            {/* Contenu du pack déplacé ici, entre les deux conteneurs de gauche */}
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-bold text-gray-800 mb-2">Contenu de votre pack</h3>
-              <ul className="text-gray-700 space-y-1">
-                <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
-                    <CheckCircle className="h-5 w-5" />
-                  </div>
-                  <span>+ 8600 logos de clubs de football en PNG</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
-                    <CheckCircle className="h-5 w-5" />
-                  </div>
-                  <span>Format haute qualité exploitable dans tous vos projets</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="h-5 w-5 text-green-600 shrink-0 mt-0.5">
-                    <CheckCircle className="h-5 w-5" />
-                  </div>
-                  <span>Accès immédiat via téléchargement ci-dessus</span>
-                </li>
-              </ul>
-            </div>
 
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
               <h3 className="font-bold text-gray-800 mb-2">Assistance disponible</h3>

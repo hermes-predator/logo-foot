@@ -294,7 +294,7 @@ const PaymentSuccess = () => {
                   Taille : <span className="font-medium">63 Mo</span>
                 </p>
                 <p className="text-gray-700 py-1">
-                  Date : <span className="font-medium">{new Date().toLocaleDateString('fr-FR')}</span>
+                  Date : <span className="font-medium">{new Date().toLocaleString('fr-FR')}</span>
                 </p>
               </div>
             )}

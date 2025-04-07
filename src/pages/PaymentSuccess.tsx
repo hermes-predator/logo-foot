@@ -269,7 +269,7 @@ const PaymentSuccess = () => {
           
           <div className="space-y-2">
             <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
-              Paiement confirmé
+              Paiement confirmé <span className="text-green-600">8,00€</span>
             </h1>
             <p className="text-gray-600 max-w-md mx-auto">
               Merci pour votre achat. Votre commande <span className="font-semibold">{orderId}</span> a été traitée avec succès.

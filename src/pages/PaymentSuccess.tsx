@@ -340,7 +340,7 @@ const PaymentSuccess = () => {
                         variant={receiptFormat === 'html' ? "default" : "outline"} 
                         size="sm"
                         onClick={() => setReceiptFormat('html')}
-                        className={`text-xs h-7 px-2 ${receiptFormat === 'html' ? 'bg-green-600 hover:bg-green-700' : ''}`}
+                        className={`text-xs h-7 px-2 ${receiptFormat === 'html' ? 'bg-gray-600 hover:bg-gray-700' : ''}`}
                       >
                         HTML
                       </Button>
@@ -348,7 +348,7 @@ const PaymentSuccess = () => {
                         variant={receiptFormat === 'pdf' ? "default" : "outline"}
                         size="sm"
                         onClick={() => setReceiptFormat('pdf')}
-                        className={`text-xs h-7 px-2 ${receiptFormat === 'pdf' ? 'bg-orange-600 hover:bg-orange-700' : ''}`}
+                        className={`text-xs h-7 px-2 ${receiptFormat === 'pdf' ? 'bg-gray-600 hover:bg-gray-700' : ''}`}
                       >
                         PDF
                       </Button>

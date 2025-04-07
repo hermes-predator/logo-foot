@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -174,7 +175,7 @@ const PaymentSuccess = () => {
             
             <div class="footer">
               <p>Merci pour votre confiance. Pour toute question, contactez notre service client.</p>
-              <p>© ${new Date().getFullYear()} FRONT-CLOUD - Tous droits réservés.</p>
+              <p>© ${new Date().getFullYear()} LOGO-FOOT - Tous droits réservés.</p>
               <p>Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.</p>
             </div>
           </div>

@@ -272,7 +272,7 @@ const PaymentSuccess = () => {
                   {isDownloading ? (
                     <><RotateCw className="mr-2 h-5 w-5 animate-spin" /> Préparation...</>
                   ) : (
-                    <><Download className="mr-2 h-5 w-5" /> Télécharger mon pack</>
+                    <><Download className="mr-2 h-5 w-5" /> Télécharger le ZIP</>
                   )}
                 </Button>
                 

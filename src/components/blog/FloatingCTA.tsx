@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, X } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
   const [showAnimation, setShowAnimation] = useState(true);
-  const [isVisible, setIsVisible] = useState(true);
   const isMobile = useIsMobile();
   
   // Add a pulsing effect that starts a few seconds after page load
@@ -19,28 +18,13 @@ const FloatingCTA = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleClose = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsVisible(false);
-  };
-
-  if (!isVisible) return null;
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 animate-fade-in will-change-transform will-change-opacity">
       <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 shadow-lg py-3 md:py-4 px-3 md:px-6 border-t-2 border-white/20">
         <div className="container mx-auto">
           {/* Mobile layout - stacked vertically */}
           {isMobile ? (
-            <div className="relative">
-              <button 
-                onClick={handleClose} 
-                className="absolute -top-2 -right-2 bg-white/20 rounded-full p-1 hover:bg-white/30 transition-colors"
-                aria-label="Fermer"
-              >
-                <X className="h-4 w-4 text-white" />
-              </button>
-              
+            <div className="relative">              
               <div className="flex items-center mb-3">
                 <span className="inline-block bg-white/30 p-2 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                   <Download 
@@ -114,14 +98,6 @@ const FloatingCTA = () => {
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>
-                
-                <button 
-                  onClick={handleClose} 
-                  className="ml-2 bg-white/20 rounded-full p-1.5 hover:bg-white/30 transition-colors"
-                  aria-label="Fermer"
-                >
-                  <X className="h-4 w-4 text-white" />
-                </button>
               </div>
             </div>
           )}

@@ -48,7 +48,7 @@ const testimonials = [
   },
   {
     name: "Thomas D.",
-    role: "Développeur Web",
+    role: "Développeur",
     content: "Une collection vraiment complète qui m'a fait gagner un temps fou sur mes projets. La qualité est au rendez-vous !",
     rating: 5
   },

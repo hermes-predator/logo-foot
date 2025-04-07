@@ -271,9 +271,9 @@ const PaymentSuccess = () => {
                   className="w-full bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow-md transition-all duration-300 text-xl py-6 h-auto font-medium"
                 >
                   {isDownloading ? (
-                    <><RotateCw className="mr-2 h-6 w-6 animate-spin" /> Préparation...</>
+                    <><RotateCw className="mr-2 h-7 w-7 animate-spin" /> Préparation...</>
                   ) : (
-                    <><Download className="mr-2 h-6 w-6" /> Télécharger le fichier ZIP</>
+                    <><Download className="mr-2 h-7 w-7" /> Télécharger le fichier ZIP</>
                   )}
                 </Button>
                 

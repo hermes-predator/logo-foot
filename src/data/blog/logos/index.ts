@@ -25,7 +25,6 @@ import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
 import { villarrealCfLogoPost } from './villarreal-cf-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
-import { vitoriaGuimaraesLogoPost } from './vitoria-guimaraes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
 
@@ -43,7 +42,7 @@ export const logoPosts: BlogPost[] = [
   ...nationalTeamPosts,
   ...nonEuropeanClubPosts,
   ...otherEuropeanClubPosts,
-  ...portugueseClubPosts, // This now includes both boavistaLogoPost and estorilPraiaLogoPost
+  ...portugueseClubPosts, // This already includes vitoriaGuimaraesLogoPost
   ...southAmericanClubPosts,
   ...spanishClubPosts,
   etoileRougeBelgradeLogoPost,
@@ -56,8 +55,7 @@ export const logoPosts: BlogPost[] = [
   wolfsburgLogoPost,
   villarrealCfLogoPost,
   valenciennesLogoPost,
-  vitoriaGuimaraesLogoPost, // Removed duplicated import
   watfordLogoPost,
   wolverhamptonLogoPost
-  // Removed individual imports of boavistaLogoPost and estorilPraiaLogoPost
+  // Removed individual import of vitoriaGuimaraesLogoPost as it's already in portugueseClubPosts
 ];

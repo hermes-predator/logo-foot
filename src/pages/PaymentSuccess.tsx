@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -158,16 +157,8 @@ const PaymentSuccess = () => {
                 <div><strong>Prix</strong></div>
               </div>
               <div class="info-row">
-                <div>Pack de ressources Football</div>
+                <div>⦗FRONT-CLOUD⦘~ Football.zip</div>
                 <div>8,00 €</div>
-              </div>
-              <div class="info-row">
-                <div>- Plus de 8600 logos de clubs de football</div>
-                <div></div>
-              </div>
-              <div class="info-row">
-                <div>- Format PNG haute qualité</div>
-                <div></div>
               </div>
             </div>
             

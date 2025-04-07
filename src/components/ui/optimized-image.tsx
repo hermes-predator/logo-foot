@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Input } from "@/components/ui/input";
 import {
   Tooltip,
   TooltipContent,
@@ -13,53 +12,22 @@ import {
 
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
-  const [fullName, setFullName] = useState('');
   const { toast } = useToast();
 
   const handlePayment = () => {
-    // Validate name first
-    if (!fullName || fullName.trim().length < 3) {
-      toast({
-        title: "Nom invalide",
-        description: "Veuillez entrer votre nom complet pour recevoir votre produit.",
-        variant: "destructive",
-      });
-      return;
-    }
-    
-    // Store name in localStorage
-    localStorage.setItem('customer_name', fullName);
-    
     setIsProcessing(true);
     toast({
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
     
-    const returnUrl = `${window.location.origin}/payment-success?name=${encodeURIComponent(fullName)}`;
+    const returnUrl = `${window.location.origin}/payment-success`;
     // Nouveau lien SumUp pour les tests
     window.location.href = `https://pay.sumup.com/b2c/QXZTSY3T?return_url=${encodeURIComponent(returnUrl)}`;
   };
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col space-y-4">
-        <div>
-          <label htmlFor="customer-name" className="font-medium text-gray-700">
-            Votre nom complet pour générer votre ticket
-          </label>
-        </div>
-        <Input
-          id="customer-name"
-          type="text"
-          placeholder="Jean Dupont"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-          className="bg-white border-blue-200 focus:border-blue-400"
-          required
-        />
-      </div>
-      
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>

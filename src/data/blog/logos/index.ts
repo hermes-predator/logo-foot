@@ -29,6 +29,7 @@ import { vitoriaGuimaraesLogoPost } from './vitoria-guimaraes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { boavistaLogoPost } from './boavista-logo';
+import { estorilPraiaLogoPost } from './estoril-praia-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -60,5 +61,6 @@ export const logoPosts: BlogPost[] = [
   vitoriaGuimaraesLogoPost,
   watfordLogoPost,
   wolverhamptonLogoPost,
-  boavistaLogoPost
+  boavistaLogoPost,
+  estorilPraiaLogoPost
 ];

@@ -7,6 +7,8 @@ import { sportingBragaLogoPost } from '../sporting-braga-logo';
 import { vitoriaGuimaraesLogoPost } from '../vitoria-guimaraes-logo';
 import { rioAveLogoPost } from '../rio-ave-logo';
 import { famalicaoLogoPost } from '../famalicao-logo';
+import { boavistaLogoPost } from '../boavista-logo';
+import { estorilPraiaLogoPost } from '../estoril-praia-logo';
 
 // Group all Portuguese club logo posts
 export const portugueseClubPosts: BlogPost[] = [
@@ -16,5 +18,7 @@ export const portugueseClubPosts: BlogPost[] = [
   sportingBragaLogoPost,
   vitoriaGuimaraesLogoPost,
   rioAveLogoPost,
-  famalicaoLogoPost
+  famalicaoLogoPost,
+  boavistaLogoPost,
+  estorilPraiaLogoPost
 ];

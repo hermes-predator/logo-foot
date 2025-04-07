@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';
@@ -27,15 +27,29 @@ export function OptimizedImage({
   objectFit = 'cover',
 }: OptimizedImageProps) {
   const { isInView, imgRef } = useLazyLoading();
-  const [isLoaded, setIsLoaded] = React.useState(priority);
-  const [error, setError] = React.useState(false);
+  const [isLoaded, setIsLoaded] = useState(priority);
+  const [error, setError] = useState(false);
+  
+  // Resize and optimize image URL if it's on our domain
+  const optimizedSrc = useMemo(() => {
+    if (src.startsWith('/') || src.includes('logo-foot.com')) {
+      // Add query params to resize image if it's our own
+      return `${src}${src.includes('?') ? '&' : '?'}w=${width}&quality=80`;
+    }
+    return src;
+  }, [src, width]);
 
   // Generate webp version if the image is not already a webp
-  const isWebP = src.toLowerCase().endsWith('.webp');
-  const imgSrc = isWebP ? src : src;
+  const isWebP = optimizedSrc.toLowerCase().endsWith('.webp');
+  const imgSrc = isWebP ? optimizedSrc : optimizedSrc;
   
   const handleLoad = () => {
     setIsLoaded(true);
+    
+    // Report to analytics
+    if (window.performance && window.performance.mark) {
+      window.performance.mark(`image-loaded-${src.split('/').pop()}`);
+    }
   };
 
   const handleError = () => {

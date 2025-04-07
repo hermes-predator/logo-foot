@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -29,6 +30,7 @@ const PaymentSuccess = () => {
     toast({
       title: "Confirmation",
       description: "Votre commande est prête.",
+      icon: <CheckCircle className="h-5 w-5 text-green-500" />
     });
   }, [location, toast]);
 

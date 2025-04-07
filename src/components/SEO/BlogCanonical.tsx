@@ -61,8 +61,8 @@ const BlogCanonical: React.FC<BlogCanonicalProps> = ({
       {prevUrl && <link rel="prev" href={prevUrl} />}
       {nextUrl && <link rel="next" href={nextUrl} />}
       
-      <link rel="alternate" href={canonicalUrl} hreflang="fr" />
-      <link rel="alternate" href={canonicalUrl} hreflang="x-default" />
+      <link rel="alternate" href={canonicalUrl} hrefLang="fr" />
+      <link rel="alternate" href={canonicalUrl} hrefLang="x-default" />
     </Helmet>
   );
 };

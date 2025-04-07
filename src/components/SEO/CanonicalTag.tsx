@@ -34,8 +34,8 @@ const CanonicalTag: React.FC<CanonicalTagProps> = ({
       {/* Ajouter des balises hreflang si nécessaire pour le contenu multilingue */}
       {isDefault && (
         <>
-          <link rel="alternate" href={canonicalUrl} hreflang="fr" />
-          <link rel="alternate" href={canonicalUrl} hreflang="x-default" />
+          <link rel="alternate" href={canonicalUrl} hrefLang="fr" />
+          <link rel="alternate" href={canonicalUrl} hrefLang="x-default" />
         </>
       )}
     </Helmet>

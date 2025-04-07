@@ -29,10 +29,10 @@ const GlobalCanonical: React.FC = () => {
       {/* Les balises hreflang sont particulièrement importantes pour la page d'accueil */}
       {isHomepage && (
         <>
-          <link rel="alternate" href={canonicalUrl} hreflang="fr" />
-          <link rel="alternate" href={`${baseUrl}/en`} hreflang="en" />
-          <link rel="alternate" href={`${baseUrl}/ar`} hreflang="ar" />
-          <link rel="alternate" href={canonicalUrl} hreflang="x-default" />
+          <link rel="alternate" href={canonicalUrl} hrefLang="fr" />
+          <link rel="alternate" href={`${baseUrl}/en`} hrefLang="en" />
+          <link rel="alternate" href={`${baseUrl}/ar`} hrefLang="ar" />
+          <link rel="alternate" href={canonicalUrl} hrefLang="x-default" />
         </>
       )}
     </Helmet>

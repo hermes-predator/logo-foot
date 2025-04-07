@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -298,14 +297,14 @@ const PaymentSuccess = () => {
               </div>
             </div>
             
-            {/* Conteneur d'avertissement ambré */}
+            {/* Conteneur d'avertissement ambré avec texte modifié */}
             <div className="bg-amber-50 rounded-lg p-5 border border-amber-200">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre pack maintenant</h3>
                   <p className="text-amber-700 text-sm">
-                    Notre site ne dispose pas encore de système de sauvegarde de session. Assurez-vous de télécharger votre pack immédiatement afin d'éviter de le perdre.
+                    Assurez-vous de télécharger votre pack immédiatement afin d'éviter de le perdre.
                   </p>
                 </div>
               </div>

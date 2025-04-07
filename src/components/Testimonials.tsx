@@ -17,9 +17,9 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Marie L.",
-    role: "Designer UI/UX",
-    content: "Les logos sont parfaitement optimisés et uniformes. Exactement ce dont j'avais besoin pour mes maquettes.",
+    name: "Emma V.",
+    role: "Graphiste",
+    content: "La meilleure collection de logos que j'ai pu trouver.",
     rating: 5
   },
   {
@@ -41,9 +41,9 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Emma V.",
-    role: "Graphiste",
-    content: "La meilleure collection de logos que j'ai pu trouver.",
+    name: "Marie L.",
+    role: "Designer UI/UX",
+    content: "Les logos sont parfaitement optimisés et uniformes. Exactement ce dont j'avais besoin pour mes maquettes.",
     rating: 5
   },
   {

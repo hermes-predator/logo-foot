@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -16,6 +17,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
 import RelatedPosts from '../components/blog/RelatedPosts';
+import CanonicalTag from '../components/SEO/CanonicalTag';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -63,6 +65,7 @@ const BlogPost = () => {
             />
             <meta name="robots" content="noindex, follow" />
           </Helmet>
+          <CanonicalTag />
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">Article non trouvé</h1>
             <Link to="/blog" className="text-purple-600 hover:text-purple-700">
@@ -219,6 +222,9 @@ const BlogPost = () => {
     return categoryMap[category] || '/blog-images/default.png';
   };
   
+  // URL canonique pour cet article spécifique
+  const canonicalUrl = postUrl;
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30 relative">
       {/* Barre de progression verticale améliorée sur le côté droit */}
@@ -235,6 +241,8 @@ const BlogPost = () => {
         </div>
       </div>
 
+      <CanonicalTag url={canonicalUrl} isDefault={true} />
+      
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
@@ -264,7 +272,6 @@ const BlogPost = () => {
         <meta name="author" content="Logo Foot" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
-        <link rel="canonical" href={postUrl} />
         
         {/* Données structurées */}
         <script type="application/ld+json">

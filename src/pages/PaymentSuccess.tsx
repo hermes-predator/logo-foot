@@ -25,13 +25,11 @@ const PaymentSuccess = () => {
     
     setCustomerName(name);
     
-    // Afficher un toast de bienvenue
-    if (name) {
-      toast({
-        title: "Confirmation",
-        description: `Votre commande est prête, ${name}.`,
-      });
-    }
+    // Afficher un toast de bienvenue sans mentionner le nom du client
+    toast({
+      title: "Confirmation",
+      description: "Votre commande est prête.",
+    });
   }, [location, toast]);
 
   const handleDownload = () => {

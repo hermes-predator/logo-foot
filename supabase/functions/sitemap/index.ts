@@ -12,6 +12,24 @@ Deno.serve(async (req) => {
     console.log("Generating sitemap...");
     console.log(`Found ${blogPosts.length} total blog posts to include in sitemap`);
     
+    // Récupérer les options de l'URL si elles existent
+    const url = new URL(req.url);
+    const includeImages = url.searchParams.get('images') === 'true';
+    const includeHreflang = url.searchParams.get('hreflang') === 'true';
+    const includeLastmod = url.searchParams.get('lastmod') !== 'false';
+    const includePriority = url.searchParams.get('priority') !== 'false';
+    const includeNewsTag = url.searchParams.get('news') === 'true';
+    const compressOutput = url.searchParams.get('compress') === 'true';
+    
+    // Loguer les options utilisées pour la génération
+    console.log(`Options de génération: 
+      - Images: ${includeImages}
+      - Hreflang: ${includeHreflang}
+      - Lastmod: ${includeLastmod}
+      - Priority: ${includePriority}
+      - News tags: ${includeNewsTag}
+      - Compression: ${compressOutput}`);
+    
     // Loguer les articles récemment ajoutés
     const recentPosts = blogPosts
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -114,20 +132,30 @@ Deno.serve(async (req) => {
     
     // Générer le sitemap avec support pour les images et hreflang
     const sitemap = generateSitemap({
-      includeImages: true,
-      includeHreflang: true
+      includeImages,
+      includeHreflang,
+      includeLastmod,
+      includePriority,
+      priorityCalculation: true,
+      includeNewsTag,
+      compressOutput
     });
+    
     const urlCount = sitemap.split('<url>').length - 1;
     
     console.log(`Sitemap generated successfully with ${urlCount} URLs`);
     console.log(`Latest blog post included: ID ${blogPosts[0].id} - ${blogPosts[0].title}`);
     
-    return new Response(sitemap, {
-      headers: {
-        ...corsHeaders,
-        'Content-Type': 'application/xml',
-      },
-    });
+    // Ajouter les headers corrects pour le XML et le caching
+    const headers = {
+      ...corsHeaders,
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=3600', // Cache pendant 1 heure
+      'X-Robots-Tag': 'noindex',
+      'X-Content-Type-Options': 'nosniff',
+    };
+    
+    return new Response(sitemap, { headers });
   } catch (error) {
     console.error("Error generating sitemap:", error);
     return new Response(JSON.stringify({ error: error.message }), {

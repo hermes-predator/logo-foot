@@ -2,143 +2,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <!-- Pages statiques -->
   <url>
     <loc>https://logo-foot.com/</loc>
-    <lastmod>2024-07-16</lastmod>
+    <lastmod>2024-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/" />
+    <xhtml:link rel="alternate" hrefLang="en" href="https://logo-foot.com/en" />
+    <xhtml:link rel="alternate" hrefLang="ar" href="https://logo-foot.com/ar" />
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://logo-foot.com/" />
   </url>
   <url>
     <loc>https://logo-foot.com/blog</loc>
-    <lastmod>2024-07-16</lastmod>
+    <lastmod>2024-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog" />
+    <xhtml:link rel="alternate" hrefLang="en" href="https://logo-foot.com/en/blog" />
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://logo-foot.com/blog" />
   </url>
   
-  <!-- Pages de catégories -->
+  <!-- Pages de catégories avec images -->
   <url>
     <loc>https://logo-foot.com/blog/category/logos</loc>
-    <lastmod>2024-07-16</lastmod>
+    <lastmod>2024-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/category/logos" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/logos" />
+    <image:image>
+      <image:loc>https://logo-foot.com/blog-images/category-logos.png</image:loc>
+      <image:title>Logos de Football</image:title>
+      <image:caption>Collection de logos de clubs de football et équipes nationales</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://logo-foot.com/blog/category/technical</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/category/technical" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/technical" />
   </url>
   <url>
     <loc>https://logo-foot.com/blog/category/history</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/category/history" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/history" />
   </url>
   <url>
     <loc>https://logo-foot.com/blog/category/analysis</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/category/analysis" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/analysis" />
   </url>
   
-  <!-- Pages de pays -->
-  <url>
-    <loc>https://logo-foot.com/gallery/country/netherlands</loc>
-    <lastmod>2024-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/gallery/country/netherlands" />
-  </url>
+  <!-- Pages de pays avec méta-données améliorées -->
   <url>
     <loc>https://logo-foot.com/gallery/country/france</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/gallery/country/france" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/france" />
+    <image:image>
+      <image:loc>https://logo-foot.com/country-images/france.png</image:loc>
+      <image:title>Logos des clubs français</image:title>
+      <image:caption>Collection de logos des clubs de football français</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://logo-foot.com/gallery/country/italy</loc>
-    <lastmod>2024-07-15</lastmod>
+    <loc>https://logo-foot.com/gallery/country/england</loc>
+    <lastmod>2024-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/gallery/country/italy" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/england" />
+    <image:image>
+      <image:loc>https://logo-foot.com/country-images/england.png</image:loc>
+      <image:title>Logos des clubs anglais</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://logo-foot.com/gallery/country/spain</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/spain" />
+    <image:image>
+      <image:loc>https://logo-foot.com/country-images/spain.png</image:loc>
+      <image:title>Logos des clubs espagnols</image:title>
+    </image:image>
   </url>
   
-  <!-- Articles récents et importants -->
+  <!-- Articles récents avec tags news -->
   <url>
     <loc>https://logo-foot.com/blog/200</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/200" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/200" />
     <image:image>
       <image:loc>https://logo-foot.com/blog-images/200.png</image:loc>
       <image:title>Logo Spezia Calcio</image:title>
+      <image:caption>Histoire et évolution du logo du Spezia Calcio en Italie</image:caption>
     </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Logo Foot</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2024-08-12T08:00:00+01:00</news:publication_date>
+      <news:title>Logo Spezia Calcio: Histoire et Évolution</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://logo-foot.com/blog/71</loc>
-    <lastmod>2024-07-16</lastmod>
+    <lastmod>2024-08-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/71" />
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/71" />
     <image:image>
       <image:loc>https://logo-foot.com/blog-images/71.png</image:loc>
       <image:title>Logo Europa League</image:title>
+      <image:caption>L'histoire et l'évolution du logo de l'UEFA Europa League</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://logo-foot.com/blog/70</loc>
-    <lastmod>2024-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/70" />
-    <image:image>
-      <image:loc>https://logo-foot.com/blog-images/70.png</image:loc>
-      <image:title>Logo Champions League</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://logo-foot.com/blog/69</loc>
-    <lastmod>2024-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/69" />
-    <image:image>
-      <image:loc>https://logo-foot.com/blog-images/69.png</image:loc>
-      <image:title>Logo Équipe de France</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://logo-foot.com/blog/68</loc>
-    <lastmod>2024-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/68" />
-    <image:image>
-      <image:loc>https://logo-foot.com/blog-images/68.png</image:loc>
-      <image:title>Logo Ajax Amsterdam</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://logo-foot.com/blog/17</loc>
-    <lastmod>2024-07-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://logo-foot.com/blog/17" />
-    <image:image>
-      <image:loc>https://logo-foot.com/blog-images/17.png</image:loc>
-      <image:title>Logo Coupe du Monde</image:title>
-    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Logo Foot</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2024-08-16T10:00:00+01:00</news:publication_date>
+      <news:title>Logo Europa League: Histoire et Signification</news:title>
+    </news:news>
   </url>
   
-  <!-- Note: Ce fichier est une version statique de secours. Le sitemap complet et dynamique est généré via l'API Supabase. -->
+  <!-- Note explicative -->
+  <!-- Ce sitemap est une version statique de secours. Le sitemap complet et dynamique est généré via l'API Supabase à l'URL https://logo-foot.com/api/sitemap -->
 </urlset>

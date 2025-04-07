@@ -66,7 +66,7 @@ const testimonials = [
   },
   {
     name: "Abdou B.",
-    role: "Utilisateur",
+    role: "Non renseigné",
     content: "Le zip est parfait rien à dire, mais il manque un espace utilisateur. Je recommande cela dit",
     rating: 4
   }

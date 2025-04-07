@@ -18,6 +18,7 @@ import { nationsLeagueLogoPost } from '../nations-league-logo';
 import { championshipLogoPost } from '../championship-logo';
 import { eredivisieLogoPost } from '../eredivisie-logo';
 import { primeiraLigaPost } from '../primeira-liga-championship';
+import { coppaItaliaLogoPost } from '../coppa-italia-logo';
 
 // Group all competition logo posts
 export const competitionPosts: BlogPost[] = [
@@ -36,5 +37,6 @@ export const competitionPosts: BlogPost[] = [
   nationsLeagueLogoPost,
   championshipLogoPost,
   eredivisieLogoPost,
-  primeiraLigaPost
+  primeiraLigaPost,
+  coppaItaliaLogoPost
 ];

@@ -23,9 +23,9 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Thomas D.",
-    role: "Développeur Web",
-    content: "Une collection vraiment complète qui m'a fait gagner un temps fou sur mes projets. La qualité est au rendez-vous !",
+    name: "Alexandre G.",
+    role: "Analyste sportif",
+    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci encore à vous.",
     rating: 5
   },
   {
@@ -47,9 +47,9 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "Alexandre G.",
-    role: "Analyste sportif",
-    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci encore à vous.",
+    name: "Thomas D.",
+    role: "Développeur Web",
+    content: "Une collection vraiment complète qui m'a fait gagner un temps fou sur mes projets. La qualité est au rendez-vous !",
     rating: 5
   },
   {

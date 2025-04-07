@@ -239,7 +239,7 @@ const PaymentSuccess = () => {
               <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
                 <h3 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  Détails de commande
+                  Détails de votre commande
                 </h3>
                 <p className="text-gray-700">
                   Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>

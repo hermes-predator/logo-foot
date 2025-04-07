@@ -33,7 +33,8 @@ const FloatingCTA = () => {
               </span>
               <div className="relative">
                 <p className="text-white font-medium text-sm md:text-lg hover:text-white/90 transition-colors">
-                  <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot dans un fichier ZIP arborescent
+                  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-base md:text-xl">⦗FRONT-CLOUD⦘~ Football.zip</span>{' '}
+                  <span className="text-blue-100/90 font-light text-xs md:text-sm ml-1 italic">+8 600 logos de foot dans un fichier ZIP arborescent</span>
                 </p>
               </div>
             </Link>

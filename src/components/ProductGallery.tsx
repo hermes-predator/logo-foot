@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ClubGallery from './gallery/ClubGallery';
 import CompetitionGallery from './gallery/CompetitionGallery';
 import { generateGalleryItems } from '@/utils/galleryData';
+import { LazySection } from './ui/lazy-section';
 
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,14 +24,23 @@ const ProductGallery = () => {
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Logos des Clubs de Foot</h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6">Plus de 8 600 logo foot des clubs de football en haute qualité</p>
-            <ClubGallery items={clubItems} isLoading={isLoading} />
+            
+            <LazySection height="400px">
+              <ClubGallery items={clubItems} isLoading={isLoading} />
+            </LazySection>
           </div>
 
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Autres logos de foot connexes</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, logos des bookmakers...</p>
-            <CompetitionGallery items={competitionItems} isLoading={isLoading} />
-          </div>
+          <LazySection 
+            height="350px" 
+            className="pt-8"
+            rootMargin="200px"
+          >
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Autres logos de foot connexes</h2>
+              <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, logos des bookmakers...</p>
+              <CompetitionGallery items={competitionItems} isLoading={isLoading} />
+            </div>
+          </LazySection>
         </div>
       </div>
     </section>

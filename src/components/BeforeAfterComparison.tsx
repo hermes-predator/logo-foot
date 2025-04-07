@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Play, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
+import { useLazyElement } from '@/hooks/useLazyElement';
 import {
   Dialog,
   DialogContent,
@@ -30,6 +31,7 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
   onDialogOpenChange
 }) => {
   const [internalDialogOpen, setInternalDialogOpen] = useState(false);
+  const { isInView, elementRef } = useLazyElement();
   
   // Use either controlled or uncontrolled dialog state
   const dialogOpen = isDialogOpen !== undefined ? isDialogOpen : internalDialogOpen;
@@ -44,7 +46,7 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
   };
 
   return (
-    <div className="mb-12 mt-6">
+    <div className="mb-12 mt-6" ref={elementRef as React.RefObject<HTMLDivElement>}>
       <div className="text-center mb-6">
         <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-700 to-indigo-800">
           {title}
@@ -88,21 +90,27 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
             </DialogDescription>
           </DialogHeader>
           <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-            <video 
-              src={videoUrl} 
-              controls 
-              autoPlay 
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to image if video fails to load
-                const target = e.target as HTMLVideoElement;
-                const img = document.createElement('img');
-                img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
-                img.alt = "Aperçu de la collection";
-                img.className = "w-full h-full object-cover";
-                target.parentNode?.replaceChild(img, target);
-              }}
-            />
+            {isInView || dialogOpen ? (
+              <video 
+                src={videoUrl} 
+                controls 
+                autoPlay={dialogOpen}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback to image if video fails to load
+                  const target = e.target as HTMLVideoElement;
+                  const img = document.createElement('img');
+                  img.src = "/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png";
+                  img.alt = "Aperçu de la collection";
+                  img.className = "w-full h-full object-cover";
+                  target.parentNode?.replaceChild(img, target);
+                }}
+              />
+            ) : (
+              <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                <span className="text-gray-400">Chargement...</span>
+              </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>

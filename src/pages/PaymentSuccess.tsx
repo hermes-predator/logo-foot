@@ -61,7 +61,7 @@ const PaymentSuccess = () => {
       document.body.removeChild(link);
       
       toast({
-        title: "Téléchargement démarré",
+        title: "Téléchargement en cours",
         description: "Votre fichier va être téléchargé automatiquement.",
       });
       

@@ -26,14 +26,32 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
       score += 5;
     }
     
-    // Même sous-catégorie = score bonus
+    // Même sous-catégorie = score bonus très important
     if (post.subCategory && post.subCategory === currentPost.subCategory) {
-      score += 3;
+      score += 8; // Augmenté pour favoriser les articles de même sous-catégorie
     }
     
     // Traitement optimisé des mots-clés
     const currentKeywords = currentPost.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
     const postKeywords = post.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
+    
+    // Recherche de mots-clés communs avec pondération
+    for (const keyword of currentKeywords) {
+      if (postKeywords.includes(keyword)) {
+        score += 2; // Augmenté pour favoriser les correspondances de mots-clés exacts
+      }
+      
+      // Vérification des variations ou sous-chaînes des mots-clés
+      for (const postKeyword of postKeywords) {
+        if (keyword !== postKeyword) {
+          if (keyword.includes(postKeyword) || postKeyword.includes(keyword)) {
+            // Mots-clés partiellement communs (ex: "logo-real-madrid" et "real-madrid")
+            score += 1;
+            break;
+          }
+        }
+      }
+    }
     
     // Analyse du titre pour trouver des entités communes (noms propres, équipes, joueurs)
     const currentTitle = currentPost.title.toLowerCase();
@@ -51,72 +69,56 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
       }
     }
     
-    // Calculer les correspondances de mots-clés avec pondération
-    const keywordMatchScore = currentKeywords.reduce((total, keyword) => {
-      // Base match: keyword exists in other post's keywords
-      if (postKeywords.includes(keyword)) {
-        total += 1;
+    // Détection d'entités géographiques communes (pays, villes)
+    const countries = ['france', 'italie', 'espagne', 'allemagne', 'angleterre', 'portugal', 'brésil', 'argentine', 'pays-bas', 'belgique'];
+    for (const country of countries) {
+      if ((currentTitle.includes(country) || currentPost.content?.toLowerCase().includes(country)) && 
+          (postTitle.includes(country) || post.content?.toLowerCase().includes(country))) {
+        score += 3; // Bonus pour les articles concernant le même pays
+        break;
       }
-      
-      // Title match: keyword appears in post title (more important)
-      if (postTitle.includes(keyword)) {
-        total += 2;
-      }
-      
-      // Content match: keyword appears in post content (if possible to check)
-      if (post.content && post.content.toLowerCase().includes(keyword)) {
-        // Pondérer selon la fréquence d'apparition
-        const keywordRegex = new RegExp(keyword, 'gi');
-        const occurrences = (post.content.match(keywordRegex) || []).length;
-        total += Math.min(3, occurrences * 0.5); // Plafonner à 3 points
-      }
-      
-      return total;
-    }, 0);
+    }
     
-    score += keywordMatchScore;
+    // Détection de compétitions communes
+    const competitions = ['ligue 1', 'ligue 2', 'premier league', 'liga', 'serie a', 'bundesliga', 'champions league', 'europa league', 'coupe du monde'];
+    for (const competition of competitions) {
+      if ((currentTitle.includes(competition) || currentPost.content?.toLowerCase().includes(competition)) && 
+          (postTitle.includes(competition) || post.content?.toLowerCase().includes(competition))) {
+        score += 3; // Bonus pour les articles concernant la même compétition
+        break;
+      }
+    }
+    
+    // Détection de clubs communs majeurs
+    const clubs = ['psg', 'marseille', 'om', 'lyon', 'barcelona', 'real madrid', 'juventus', 'inter', 'milan', 'bayern', 'manchester'];
+    for (const club of clubs) {
+      if ((currentTitle.includes(club) || currentPost.content?.toLowerCase().includes(club)) && 
+          (postTitle.includes(club) || post.content?.toLowerCase().includes(club))) {
+        score += 4; // Bonus important pour les articles concernant le même club
+        break;
+      }
+    }
     
     // Bonus pour les articles récents (moins de 60 jours)
     const postDate = new Date(post.date);
     const daysDifference = (new Date().getTime() - postDate.getTime()) / (1000 * 3600 * 24);
-    if (daysDifference < 60) {
-      score += 2;
-    } else if (daysDifference < 120) {
-      score += 1;
+    if (daysDifference < 30) {
+      score += 3; // Bonus augmenté pour les articles très récents (< 1 mois)
+    } else if (daysDifference < 90) {
+      score += 1; // Bonus maintenu pour les articles récents (< 3 mois)
     }
     
-    // Vérifier une éventuelle relation contextuelle (ex: même joueur, même équipe)
-    // Pour les articles d'analyse de joueurs ou de logos d'équipes
-    if (
-      (currentTitle.includes('analyse') && postTitle.includes('analyse')) ||
-      (currentTitle.includes('logo') && postTitle.includes('logo'))
-    ) {
-      // Recherche d'entité commune (nom d'équipe/joueur)
-      const commonEntity = findCommonEntity(currentTitle, postTitle);
-      if (commonEntity) {
-        score += 6; // Fort bonus pour les articles sur la même entité
-      }
+    // Vérifier si l'article cible est mentionné dans l'article actuel (ou vice versa)
+    if (currentPost.content && post.id && currentPost.content.includes(`blog/${post.id}`)) {
+      score += 10; // Bonus majeur si l'article actuel lie déjà vers l'article cible
+    }
+    
+    // Vérification de la longueur des contenus pour privilégier les articles complets
+    if (post.content && post.content.length > 3000) {
+      score += 2; // Favoriser les articles détaillés
     }
     
     return score;
-  };
-  
-  // Fonction utilitaire pour trouver une entité commune entre deux titres
-  const findCommonEntity = (title1: string, title2: string): string | null => {
-    // Liste des équipes et joueurs importants (pourrait être étendue)
-    const commonEntities = [
-      'real madrid', 'barcelona', 'psg', 'manchester city', 'bayern', 'juventus', 'liverpool',
-      'chelsea', 'milan', 'inter', 'dortmund', 'arsenal', 'atletico',
-      'messi', 'ronaldo', 'mbappe', 'haaland', 'neymar', 'wirtz', 'bellingham'
-    ];
-    
-    for (const entity of commonEntities) {
-      if (title1.includes(entity) && title2.includes(entity)) {
-        return entity;
-      }
-    }
-    
-    return null;
   };
   
   // Trouver les articles les plus pertinents avec l'algorithme amélioré
@@ -142,7 +144,7 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {relatedPosts.map(post => (
-          <Card key={post.id} className="hover:shadow-md transition-shadow duration-200">
+          <Card key={post.id} className="hover:shadow-md transition-shadow duration-200 border border-gray-200">
             <CardContent className="p-4">
               <Link 
                 to={`/blog/${post.id}`} 

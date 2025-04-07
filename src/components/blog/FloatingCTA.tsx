@@ -15,7 +15,7 @@ const FloatingCTA = () => {
                 <Download className="h-5 w-5 text-white" style={{ animation: 'translateY 1.5s ease infinite' }} />
               </span>
               <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">
-                <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot à télécharger dans un fichier ZIP arborescent
+                <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot dans un fichier ZIP arborescent
               </p>
             </Link>
           </div>

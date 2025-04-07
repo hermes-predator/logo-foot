@@ -5,6 +5,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import { jsPDF } from 'jspdf';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
@@ -14,6 +15,8 @@ const PaymentSuccess = () => {
   const [downloadProgress, setDownloadProgress] = useState<number>(0);
   const location = useLocation();
   const [orderId] = useState(() => `FC-${Date.now().toString().slice(-8)}`);
+  
+  const [receiptFormat, setReceiptFormat] = useState<'html' | 'pdf'>('html');
 
   useEffect(() => {
     // Récupérer les informations depuis les paramètres d'URL ou localStorage
@@ -74,119 +77,171 @@ const PaymentSuccess = () => {
     // Simuler un délai pour améliorer l'UX
     setTimeout(() => {
       const dateTime = new Date().toLocaleString('fr-FR');
-      const receiptHTML = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <meta charset="utf-8">
-          <title>Reçu d'achat - FRONT-CLOUD</title>
-          <style>
-            body {
-              font-family: Arial, sans-serif;
-              line-height: 1.6;
-              color: #333;
-              max-width: 800px;
-              margin: 0 auto;
-              padding: 20px;
-            }
-            .receipt {
-              border: 1px solid #ddd;
-              padding: 20px;
-              border-radius: 5px;
-            }
-            .header {
-              text-align: center;
-              margin-bottom: 20px;
-              border-bottom: 2px solid #f0f0f0;
-              padding-bottom: 10px;
-            }
-            .logo {
-              font-size: 24px;
-              font-weight: bold;
-              color: #4a6cf7;
-            }
-            .info {
-              margin-bottom: 20px;
-            }
-            .info-row {
-              display: flex;
-              justify-content: space-between;
-              margin-bottom: 5px;
-            }
-            .product {
-              margin: 20px 0;
-              padding: 10px 0;
-              border-top: 1px solid #f0f0f0;
-              border-bottom: 1px solid #f0f0f0;
-            }
-            .total {
-              font-size: 18px;
-              font-weight: bold;
-              text-align: right;
-              margin-top: 20px;
-            }
-            .footer {
-              margin-top: 30px;
-              font-size: 12px;
-              color: #777;
-              text-align: center;
-            }
-          </style>
-        </head>
-        <body>
-          <div class="receipt">
-            <div class="header">
-              <div class="logo">⦗FRONT-CLOUD⦘~ Football.zip</div>
-              <div>Reçu d'achat</div>
-            </div>
-            
-            <div class="info">
-              <div class="info-row">
-                <div><strong>Numéro de commande:</strong></div>
-                <div>${orderId}</div>
+      
+      if (receiptFormat === 'html') {
+        // Générer le reçu HTML
+        const receiptHTML = `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Reçu d'achat - FRONT-CLOUD</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+              }
+              .receipt {
+                border: 1px solid #ddd;
+                padding: 20px;
+                border-radius: 5px;
+              }
+              .header {
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #f0f0f0;
+                padding-bottom: 10px;
+              }
+              .logo {
+                font-size: 24px;
+                font-weight: bold;
+                color: #4a6cf7;
+              }
+              .info {
+                margin-bottom: 20px;
+              }
+              .info-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+              }
+              .product {
+                margin: 20px 0;
+                padding: 10px 0;
+                border-top: 1px solid #f0f0f0;
+                border-bottom: 1px solid #f0f0f0;
+              }
+              .total {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: right;
+                margin-top: 20px;
+              }
+              .footer {
+                margin-top: 30px;
+                font-size: 12px;
+                color: #777;
+                text-align: center;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="receipt">
+              <div class="header">
+                <div class="logo">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                <div>Reçu d'achat</div>
               </div>
-              <div class="info-row">
-                <div><strong>Date:</strong></div>
-                <div>${dateTime}</div>
+              
+              <div class="info">
+                <div class="info-row">
+                  <div><strong>Numéro de commande:</strong></div>
+                  <div>${orderId}</div>
+                </div>
+                <div class="info-row">
+                  <div><strong>Date:</strong></div>
+                  <div>${dateTime}</div>
+                </div>
+              </div>
+              
+              <div class="product">
+                <div class="info-row">
+                  <div><strong>Produit</strong></div>
+                  <div><strong>Prix</strong></div>
+                </div>
+                <div class="info-row">
+                  <div>⦗FRONT-CLOUD⦘~ Football.zip</div>
+                  <div>8,00 €</div>
+                </div>
+              </div>
+              
+              <div class="total">Total: 8,00 €</div>
+              
+              <div class="footer">
+                <p>Merci pour votre confiance. Pour toute question, contactez notre service client : contact@logo-foot.com</p>
+                <p>© ${new Date().getFullYear()} LOGO-FOOT - Tous droits réservés.</p>
+                <p>Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.</p>
               </div>
             </div>
-            
-            <div class="product">
-              <div class="info-row">
-                <div><strong>Produit</strong></div>
-                <div><strong>Prix</strong></div>
-              </div>
-              <div class="info-row">
-                <div>⦗FRONT-CLOUD⦘~ Football.zip</div>
-                <div>8,00 €</div>
-              </div>
-            </div>
-            
-            <div class="total">Total: 8,00 €</div>
-            
-            <div class="footer">
-              <p>Merci pour votre confiance. Pour toute question, contactez notre service client : contact@logo-foot.com</p>
-              <p>© ${new Date().getFullYear()} LOGO-FOOT - Tous droits réservés.</p>
-              <p>Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.</p>
-            </div>
-          </div>
-        </body>
-        </html>
-      `;
+          </body>
+          </html>
+        `;
 
-      const blob = new Blob([receiptHTML], { type: 'text/html' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `recu-front-cloud-${orderId.slice(-6)}.html`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
+        const blob = new Blob([receiptHTML], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `recu-front-cloud-${orderId.slice(-6)}.html`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      } else {
+        // Générer le reçu PDF
+        const doc = new jsPDF();
+        
+        // Paramètres de base
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(18);
+        doc.text("⦗FRONT-CLOUD⦘~ Football.zip", 105, 20, { align: "center" });
+        
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(14);
+        doc.text("Reçu d'achat", 105, 30, { align: "center" });
+        
+        // Informations de commande
+        doc.setFontSize(11);
+        doc.text(`Numéro de commande: ${orderId}`, 20, 50);
+        doc.text(`Date: ${dateTime}`, 20, 60);
+        
+        // Ligne de séparation
+        doc.setDrawColor(220, 220, 220);
+        doc.line(20, 70, 190, 70);
+        
+        // En-têtes produit
+        doc.setFont("helvetica", "bold");
+        doc.text("Produit", 20, 80);
+        doc.text("Prix", 170, 80);
+        
+        // Produit
+        doc.setFont("helvetica", "normal");
+        doc.text("⦗FRONT-CLOUD⦘~ Football.zip", 20, 90);
+        doc.text("8,00 €", 170, 90);
+        
+        // Ligne de séparation
+        doc.line(20, 100, 190, 100);
+        
+        // Total
+        doc.setFont("helvetica", "bold");
+        doc.text("Total: 8,00 €", 170, 110);
+        
+        // Pied de page
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        doc.text("Merci pour votre confiance. Pour toute question, contactez notre service client : contact@logo-foot.com", 105, 240, { align: "center" });
+        doc.text(`© ${new Date().getFullYear()} LOGO-FOOT - Tous droits réservés.`, 105, 250, { align: "center" });
+        doc.text("Ce reçu a été généré automatiquement et ne constitue pas une facture officielle.", 105, 260, { align: "center" });
+        
+        // Enregistrer le PDF
+        doc.save(`recu-front-cloud-${orderId.slice(-6)}.pdf`);
+      }
       
       toast({
         title: "Reçu généré",
-        description: "Votre reçu a été téléchargé.",
+        description: `Votre reçu a été téléchargé en format ${receiptFormat.toUpperCase()}.`,
         icon: <CheckCircle className="h-5 w-5 text-green-500" />
       });
       
@@ -272,7 +327,28 @@ const PaymentSuccess = () => {
                   </div>
                 )}
                 
-                <div className="w-full">
+                <div className="w-full space-y-2">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-sm font-medium text-gray-700">Format du reçu:</span>
+                    <div className="flex items-center space-x-3">
+                      <Button 
+                        variant={receiptFormat === 'html' ? "default" : "outline"} 
+                        size="sm"
+                        onClick={() => setReceiptFormat('html')}
+                        className="text-xs h-7 px-2"
+                      >
+                        HTML
+                      </Button>
+                      <Button 
+                        variant={receiptFormat === 'pdf' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => setReceiptFormat('pdf')}
+                        className="text-xs h-7 px-2"
+                      >
+                        PDF
+                      </Button>
+                    </div>
+                  </div>
                   <Button
                     onClick={generateReceipt}
                     disabled={isGeneratingReceipt}

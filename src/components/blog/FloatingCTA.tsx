@@ -49,13 +49,13 @@ const FloatingCTA = () => {
               <Button 
                 asChild
                 variant="secondary" 
-                className="bg-white hover:bg-gray-100 w-full py-2 text-sm group relative overflow-hidden"
-                size="sm"
+                className="bg-orange-500 hover:bg-orange-600 w-full py-3 px-6 text-base md:text-lg group relative overflow-hidden border-2 border-white/70 shadow-lg hover:scale-[1.03] transition-all font-semibold"
+                size="lg"
               >
                 <Link to="/" className="flex items-center justify-center gap-2">
-                  <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
-                  <ArrowRight className="h-4 w-4 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
-                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+                  <span className="text-white font-medium relative z-10">Télécharger maintenant</span>
+                  <ArrowRight className="h-5 w-5 text-white transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Link>
               </Button>
             </div>
@@ -89,13 +89,13 @@ const FloatingCTA = () => {
                 <Button 
                   asChild
                   variant="secondary" 
-                  className="bg-white hover:bg-gray-100 px-5 py-2.5 text-sm md:text-base group relative overflow-hidden"
+                  className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-base md:text-xl group relative overflow-hidden border-2 border-white/70 shadow-lg hover:scale-[1.03] transition-all font-semibold"
                   size="lg"
                 >
-                  <Link to="/" className="flex items-center gap-2">
-                    <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
-                    <ArrowRight className="h-5 w-5 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+                  <Link to="/" className="flex items-center gap-3">
+                    <span className="text-white font-medium relative z-10">Télécharger maintenant</span>
+                    <ArrowRight className="h-6 w-6 text-white transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>
               </div>

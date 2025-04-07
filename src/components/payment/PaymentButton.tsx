@@ -46,7 +46,7 @@ const PaymentButton = () => {
       <div className="flex flex-col space-y-4">
         <div>
           <label htmlFor="customer-name" className="font-medium text-gray-700">
-            Votre nom complet pour le reçu
+            Votre nom complet pour générer votre ticket
           </label>
         </div>
         <Input

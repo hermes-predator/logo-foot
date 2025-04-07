@@ -4,7 +4,7 @@ import { Download } from 'lucide-react';
 
 const PaymentTrust = () => {
   return (
-    <div className="flex items-center justify-center mt-6 flex-wrap gap-2">
+    <div className="flex items-center justify-center mt-6 flex-wrap gap-2 p-3 border border-gray-200 rounded-lg">
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg border border-gray-200">
         <span className="text-sm text-gray-500 font-medium">Paiement sécurisé</span>
         <img 

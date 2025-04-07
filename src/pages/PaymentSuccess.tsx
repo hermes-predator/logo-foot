@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -242,9 +241,6 @@ const PaymentSuccess = () => {
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   Détails de commande
                 </h3>
-                <p className="text-gray-700">
-                  Client : <span className="font-medium">{customerName}</span>
-                </p>
                 <p className="text-gray-700">
                   Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </p>

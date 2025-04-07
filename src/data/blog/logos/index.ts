@@ -20,6 +20,15 @@ import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
 import { ancienLogoOmPost } from './ancien-logo-om';
 import { omLogoPost } from './om-logo';
+import { westHamLogoPost } from './west-ham-logo';
+import { westBromwichLogoPost } from './west-bromwich-logo';
+import { wolfsburgLogoPost } from './wolfsburg-logo';
+import { villarrealCfLogoPost } from './villarreal-cf-logo';
+import { valenciennesLogoPost } from './valenciennes-logo';
+import { vitoriaGuimaraesLogoPost } from './vitoria-guimaraes-logo';
+import { watfordLogoPost } from './watford-logo';
+import { wolverhamptonLogoPost } from './wolverhampton-logo';
+import { boavistaLogoPost } from './boavista-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -42,5 +51,14 @@ export const logoPosts: BlogPost[] = [
   psgUltrasPost,
   omUltrasPost,
   ancienLogoOmPost,
-  omLogoPost
+  omLogoPost,
+  westHamLogoPost,
+  westBromwichLogoPost,
+  wolfsburgLogoPost,
+  villarrealCfLogoPost,
+  valenciennesLogoPost,
+  vitoriaGuimaraesLogoPost,
+  watfordLogoPost,
+  wolverhamptonLogoPost,
+  boavistaLogoPost
 ];

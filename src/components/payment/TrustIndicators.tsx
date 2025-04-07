@@ -33,7 +33,7 @@ interface TrustCardProps {
 const TrustCard = ({ icon, title, description }: TrustCardProps) => {
   return (
     <div 
-      className="flex flex-col items-center p-4 bg-blue-50/80 backdrop-blur-sm rounded-lg border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:shadow-sm hover:scale-[1.02]"
+      className="flex flex-col items-center p-4 bg-blue-50/80 backdrop-blur-sm rounded-lg transition-all duration-300 hover:scale-[1.02]"
       role="article"
       aria-label={`Information sur ${title}`}
     >

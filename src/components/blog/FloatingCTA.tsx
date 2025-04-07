@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, BellRing, Sparkles } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingCTA = () => {
@@ -32,11 +32,6 @@ const FloatingCTA = () => {
                 <span className="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
               </span>
               <div className="relative">
-                {showAnimation && (
-                  <span className="absolute -top-2 -right-2 text-yellow-300">
-                    <Sparkles className="h-4 w-4 animate-pulse" />
-                  </span>
-                )}
                 <p className="text-white font-medium text-sm md:text-base hover:text-white/90 transition-colors">
                   <span className="font-bold">⦗FRONT-CLOUD⦘~</span> Football.zip : +8 600 logos de foot dans un fichier ZIP arborescent
                 </p>

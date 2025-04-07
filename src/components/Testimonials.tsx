@@ -12,7 +12,7 @@ import {
 const testimonials = [
   {
     name: "Pierre M.",
-    role: "Créateur de contenu sportif",
+    role: "Journaliste sportif",
     content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
     rating: 5
   },

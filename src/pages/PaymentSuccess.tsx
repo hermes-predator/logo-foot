@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -251,7 +252,7 @@ const PaymentSuccess = () => {
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
               <h3 className="font-bold text-gray-800 mb-2">Assistance disponible</h3>
               <p className="text-gray-700 text-sm">
-                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium">support@front-cloud.com</span>
+                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium">contact@logo-foot.com</span>
               </p>
             </div>
           </div>

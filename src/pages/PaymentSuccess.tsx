@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -149,10 +148,6 @@ const PaymentSuccess = () => {
               <div class="info-row">
                 <div><strong>Date:</strong></div>
                 <div>${dateTime}</div>
-              </div>
-              <div class="info-row">
-                <div><strong>Client:</strong></div>
-                <div>${customerName}</div>
               </div>
             </div>
             

@@ -1,17 +1,14 @@
-
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, RotateCw, User } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Input } from '@/components/ui/input';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
   const [customerName, setCustomerName] = useState<string>('');
-  const [receiptName, setReceiptName] = useState<string>('');
   const [isDownloading, setIsDownloading] = useState<boolean>(false);
   const [isGeneratingReceipt, setIsGeneratingReceipt] = useState<boolean>(false);
   const [downloadProgress, setDownloadProgress] = useState<number>(0);
@@ -27,7 +24,6 @@ const PaymentSuccess = () => {
     const name = nameParam || localStorage.getItem('customer_name') || '';
     
     setCustomerName(name);
-    setReceiptName(name); // Initialize receipt name with customer name
     
     // Afficher un toast de bienvenue
     if (name) {
@@ -74,16 +70,6 @@ const PaymentSuccess = () => {
   };
 
   const generateReceipt = () => {
-    // Verify if receipt name is provided
-    if (!receiptName.trim()) {
-      toast({
-        title: "Nom requis",
-        description: "Veuillez saisir votre nom complet pour le reçu.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
     setIsGeneratingReceipt(true);
     
     // Simuler un délai pour améliorer l'UX
@@ -166,7 +152,7 @@ const PaymentSuccess = () => {
               </div>
               <div class="info-row">
                 <div><strong>Client:</strong></div>
-                <div>${receiptName}</div>
+                <div>${customerName}</div>
               </div>
             </div>
             
@@ -323,24 +309,7 @@ const PaymentSuccess = () => {
                   </div>
                 )}
                 
-                <div className="space-y-3 mt-4">
-                  <div className="flex flex-col space-y-2">
-                    <div className="flex items-center">
-                      <User className="h-4 w-4 text-gray-600 mr-2" />
-                      <label htmlFor="receipt-name" className="text-sm font-medium text-gray-700">
-                        Votre nom complet pour le reçu
-                      </label>
-                    </div>
-                    <Input
-                      id="receipt-name"
-                      type="text"
-                      placeholder="Jean Dupont"
-                      value={receiptName}
-                      onChange={(e) => setReceiptName(e.target.value)}
-                      className="bg-white border-gray-200 focus:border-blue-400"
-                    />
-                  </div>
-                
+                <div className="w-full">
                   <Button
                     onClick={generateReceipt}
                     disabled={isGeneratingReceipt}
@@ -350,7 +319,7 @@ const PaymentSuccess = () => {
                     {isGeneratingReceipt ? (
                       <><RotateCw className="mr-1 h-4 w-4 animate-spin" /> Génération...</>
                     ) : (
-                      <><FileText className="mr-1 h-4 w-4" /> Générer reçu d'achat</>
+                      <><FileText className="mr-1 h-4 w-4" /> Reçu d'achat</>
                     )}
                   </Button>
                 </div>

@@ -79,27 +79,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Nouvel arrière-plan unifié avec dégradé et motif */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-purple-50 via-white to-blue-50">
-        {/* Effet de vague abstraite - top */}
-        <div className="absolute top-0 left-0 right-0 h-[300px] bg-gradient-to-b from-purple-100/30 to-transparent rounded-[100%] blur-3xl -translate-y-1/2 opacity-60" />
-        
-        {/* Effet de vague abstraite - bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-[400px] bg-gradient-to-t from-blue-100/40 to-transparent rounded-[100%] blur-3xl translate-y-1/3 opacity-60" />
-        
-        {/* Points subtils */}
-        <div className="absolute inset-0 mix-blend-overlay opacity-10" 
-             style={{
-               backgroundImage: 'radial-gradient(circle at 1px 1px, purple 1px, transparent 0)',
-               backgroundSize: '40px 40px'
-             }} />
-        
-        {/* Accent de couleur douce */}
-        <div className="absolute top-1/3 -right-40 w-96 h-96 rounded-full bg-indigo-200/20 blur-3xl" />
-        <div className="absolute bottom-1/4 -left-40 w-96 h-96 rounded-full bg-purple-200/20 blur-3xl" />
-      </div>
-      
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Helmet>
         {/* Meta descriptions améliorées */}
         <meta name="description" content={metaDescription} />

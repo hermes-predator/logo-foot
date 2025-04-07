@@ -34,7 +34,7 @@ const PaymentTrust = () => {
       
       {/* Compteur de téléchargement */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
-        <Download className="h-4 w-4 text-blue-600" />
+        <Download className="h-4 w-4 text-gray-800" />
         <span className="text-sm text-gray-800 font-medium">25 287 téléchargements</span>
       </div>
     </div>

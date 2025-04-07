@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -257,16 +258,18 @@ const PaymentSuccess = () => {
   };
   
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
-      <Card className="max-w-4xl w-full space-y-8 bg-white rounded-lg p-8 shadow-md">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 flex items-center justify-center px-4 py-10">
+      <Card className="max-w-4xl w-full space-y-8 bg-white rounded-lg p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
         {/* En-tête avec statut de commande */}
         <div className="text-center space-y-4">
           <div className="flex justify-center">
-            <CheckCircle className="w-16 h-16 text-green-600" />
+            <div className="bg-green-50 p-4 rounded-full">
+              <CheckCircle className="w-16 h-16 text-green-600" />
+            </div>
           </div>
           
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold text-gray-800">
+            <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
               Paiement confirmé
             </h1>
             <p className="text-gray-600 max-w-md mx-auto">
@@ -279,34 +282,34 @@ const PaymentSuccess = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             {customerName && (
-              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:border-gray-300 transition-colors shadow-sm">
                 <h3 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   Détails de votre commande
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 py-1">
                   Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 py-1">
                   Taille : <span className="font-medium">63 Mo</span>
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 py-1">
                   Date : <span className="font-medium">{new Date().toLocaleDateString('fr-FR')}</span>
                 </p>
               </div>
             )}
 
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:border-gray-300 transition-colors shadow-sm">
               <h3 className="font-bold text-gray-800 mb-2">Assistance</h3>
               <p className="text-gray-700 text-sm">
-                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium">contact@logo-foot.com</span>
+                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium text-blue-600 hover:underline">contact@logo-foot.com</span>
               </p>
             </div>
           </div>
 
           {/* Section de téléchargement */}
           <div className="space-y-4">
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:border-gray-300 transition-colors shadow-sm">
               <h3 className="font-bold text-gray-800 mb-3">Téléchargements</h3>
               
               <div className="space-y-3">
@@ -325,7 +328,7 @@ const PaymentSuccess = () => {
                 
                 {isDownloading && (
                   <div className="w-full">
-                    <Progress value={downloadProgress} className="h-2 mb-1" />
+                    <Progress value={downloadProgress} className="h-2 mb-1 bg-blue-100" />
                     <p className="text-xs text-gray-500 text-right">{downloadProgress}%</p>
                   </div>
                 )}
@@ -369,7 +372,7 @@ const PaymentSuccess = () => {
             </div>
             
             {/* Conteneur d'avertissement ambré avec texte modifié */}
-            <div className="bg-amber-50 rounded-lg p-5 border border-amber-200">
+            <div className="bg-amber-50 rounded-lg p-5 border border-amber-200 hover:border-amber-300 transition-colors shadow-sm">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                 <div>
@@ -384,18 +387,18 @@ const PaymentSuccess = () => {
         </div>
         
         {/* Sécurité et garantie */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-gray-100 pt-6">
+          <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <Shield className="h-4 w-4 text-gray-600" />
             <span>Paiement sécurisé</span>
           </div>
           <div className="hidden sm:block h-1 w-1 rounded-full bg-gray-300"></div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <CheckCircle className="h-4 w-4 text-gray-600" />
             <span>Satisfaction garantie</span>
           </div>
           <div className="hidden sm:block h-1 w-1 rounded-full bg-gray-300"></div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <Download className="h-4 w-4 text-gray-600" />
             <span>Téléchargement instantané</span>
           </div>

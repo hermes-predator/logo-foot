@@ -255,7 +255,7 @@ const PaymentSuccess = () => {
       description: "Une copie de votre téléchargement a été envoyée à votre adresse email.",
     });
   };
-
+  
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10">
       <Card className="max-w-4xl w-full space-y-8 bg-white rounded-lg p-8 shadow-md">
@@ -286,6 +286,9 @@ const PaymentSuccess = () => {
                 </h3>
                 <p className="text-gray-700">
                   Produit : <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                </p>
+                <p className="text-gray-700">
+                  Taille : <span className="font-medium">63 Mo</span>
                 </p>
                 <p className="text-gray-700">
                   Date : <span className="font-medium">{new Date().toLocaleDateString('fr-FR')}</span>

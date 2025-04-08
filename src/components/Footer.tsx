@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -76,7 +77,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 9 - Preuve d'achat et facturation</h3>
-                  <p>Une preuve d'achat (reçu) est automatiquement générée en format HTML ou PDF et mise à disposition du client immédiatement après le paiement. Hermès Ressources conserve un enregistrement de toutes les transactions pendant une durée de 10 ans conformément aux obligations légales. Vous pouvez demander une copie de votre reçu ou une facture formelle en contactant notre service client à contact@logo-foot.com. Dans le cadre de la dématérialisation des factures, aucune facture papier n'est envoyée par défaut.</p>
+                  <p>Une preuve d'achat (reçu) est automatiquement générée en format HTML ou PDF et mise à disposition du client immédiatement après le paiement. Hermès Ressources conserve un enregistrement de toutes les transactions pendant une durée de 10 ans conformément aux obligations légales. Dans le cadre de la dématérialisation des factures, aucune facture papier n'est envoyée par défaut.</p>
                 </section>
 
                 <section>

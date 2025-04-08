@@ -18,7 +18,7 @@ const BlogHeader = () => {
         <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-gray-200">
           <div className="flex items-center gap-3 mb-3">
             <div className="bg-gray-100 p-2 rounded-xl">
-              <BookOpen className="w-5 h-5 text-gray-700" />
+              <BookOpen className="w-5 h-5 text-purple-600" />
             </div>
             <h2 className="font-semibold text-gray-900">
               Le Blog Logo-Foot

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -9,7 +10,6 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
-import BlogCTA from '../components/blog/BlogCTA';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
@@ -435,10 +435,7 @@ const BlogPost = () => {
                 </div>
               )}
               
-              {/* BlogCTA (FrontCloud offer) positioned right after the image - with reduced vertical margin */}
-              <div className="mb-4 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
-                <BlogCTA />
-              </div>
+              {/* Note: BlogCTA component has been removed as requested */}
               
               <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
                 <ReactMarkdown components={markdownComponents}>
@@ -567,3 +564,4 @@ const BlogPost = () => {
 };
 
 export default BlogPost;
+

@@ -37,8 +37,8 @@ const BlogHeader = () => {
           <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-gray-900">Vous cherchez des logos de football ?</h3>
-                <p className="text-sm text-amber-800/80">Découvrez la plus grande collection réunie dans un fichier ZIP unique</p>
+                <h3 className="font-bold text-gray-900">Vous voulez tous les logos de football du monde en un coup ?</h3>
+                <p className="text-sm text-amber-800/80">Plus de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
               </div>
               <Button 
                 asChild 

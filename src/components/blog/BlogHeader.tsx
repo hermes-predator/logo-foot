@@ -42,7 +42,7 @@ const BlogHeader = () => {
               </div>
               <Button 
                 asChild 
-                className="bg-gray-900 hover:bg-black whitespace-nowrap text-white"
+                className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200"
               >
                 <Link to="/" className="flex items-center gap-2">
                   <span>En savoir plus</span>

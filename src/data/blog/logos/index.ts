@@ -28,6 +28,7 @@ import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { alAhliLogoPost } from './al-ahli-logo';
+import { alIttihadLogoPost } from './al-ittihad-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -58,6 +59,7 @@ export const logoPosts: BlogPost[] = [
   valenciennesLogoPost,
   watfordLogoPost,
   wolverhamptonLogoPost,
-  alAhliLogoPost
+  alAhliLogoPost,
+  alIttihadLogoPost
   // Removed individual import of vitoriaGuimaraesLogoPost as it's already in portugueseClubPosts
 ];

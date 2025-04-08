@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -87,7 +88,7 @@ const Blog = () => {
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
-      <main className="container mx-auto px-4 py-3 pb-64">
+      <main className="container mx-auto px-4 py-3 pb-80">
         <Breadcrumbs />
         <BlogHeader />
         <div className="mt-4">

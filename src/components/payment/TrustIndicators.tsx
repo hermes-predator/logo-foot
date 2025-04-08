@@ -33,11 +33,11 @@ interface TrustCardProps {
 const TrustCard = ({ icon, title, description }: TrustCardProps) => {
   return (
     <div 
-      className="flex flex-col items-center p-4 bg-blue-50/80 backdrop-blur-sm rounded-lg transition-all duration-300 hover:scale-[1.02]"
+      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] will-change-transform"
       role="article"
       aria-label={`Information sur ${title}`}
     >
-      <div className="w-7 h-7 text-blue-600 mb-2 transition-transform duration-300 hover:scale-110" aria-hidden="true">
+      <div className="w-8 h-8 text-blue-600 mb-2 transition-transform duration-300 transform hover:scale-110 flex items-center justify-center bg-blue-100/80 rounded-full p-1.5" aria-hidden="true">
         {icon}
       </div>
       <h3 className="font-medium mb-1 text-sm text-gray-900">{title}</h3>

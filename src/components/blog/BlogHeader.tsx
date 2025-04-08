@@ -33,16 +33,16 @@ const BlogHeader = () => {
             </p>
           </div>
           
-          {/* Ajout d'un CTA vers la page d'accueil */}
-          <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
+          {/* Modification du style du CTA avec des couleurs jaune ambré */}
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900">Vous cherchez des logos de football ?</h3>
-                <p className="text-sm text-gray-600">Accédez à notre collection complète de plus de 8600 logos en haute qualité</p>
+                <p className="text-sm text-amber-800/80">Accédez à notre collection complète de plus de 8600 logos en haute qualité</p>
               </div>
               <Button 
                 asChild 
-                className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap"
+                className="bg-amber-600 hover:bg-amber-700 whitespace-nowrap text-white"
               >
                 <Link to="/" className="flex items-center gap-2">
                   <span>En savoir plus</span>

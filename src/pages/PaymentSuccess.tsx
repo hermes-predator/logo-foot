@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -299,7 +298,7 @@ const PaymentSuccess = () => {
               </div>
             )}
 
-            <div className="backdrop-blur-sm rounded-xl p-6 border border-white/30 bg-white/40 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="backdrop-blur-sm rounded-xl p-6 border-2 border-gray-200 bg-white/40 shadow-sm transition-all duration-300">
               <h3 className="font-bold text-gray-800 mb-2">Assistance</h3>
               <p className="text-gray-700 text-sm">
                 Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium text-blue-600 hover:underline">contact@logo-foot.com</span>

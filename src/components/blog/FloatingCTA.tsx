@@ -47,7 +47,7 @@ const FloatingCTA = () => {
               <div className="flex items-center mb-3">
                 <span className="inline-block bg-white/30 p-2 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                   <Download 
-                    className="h-5 w-5 text-purple-300 animate-bounce" 
+                    className="h-5 w-5 text-white animate-bounce" 
                     style={{ 
                       animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
                       filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
@@ -85,7 +85,7 @@ const FloatingCTA = () => {
                 <Link to="/" className="group flex items-center">
                   <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                     <Download 
-                      className="h-6 w-6 md:h-7 md:w-7 text-purple-300 animate-bounce" 
+                      className="h-6 w-6 md:h-7 md:w-7 text-white animate-bounce" 
                       style={{ 
                         animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
                         filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'

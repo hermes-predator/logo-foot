@@ -38,6 +38,7 @@ import { colorTheoryPost } from './color-theory';
 import { williamSalibaPost } from './william-saliba';
 import { dynamoKievLogoPost } from './dynamo-kiev-logo';
 import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
+import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
 
 export const analysisPosts: BlogPost[] = [
   kylianMbappePost,
@@ -75,5 +76,6 @@ export const analysisPosts: BlogPost[] = [
   colorTheoryPost,
   williamSalibaPost,
   dynamoKievLogoPost,
-  mbappeEtSonFilsPost
+  mbappeEtSonFilsPost,
+  psgRumeursTransfertPost
 ];

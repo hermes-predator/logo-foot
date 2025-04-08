@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { jsPDF } from 'jspdf';
+import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
@@ -258,6 +259,9 @@ const PaymentSuccess = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50/60 to-gray-100/60 px-4 py-10">
+      {/* Confetti celebration component */}
+      <ConfettiCelebration duration={8000} />
+      
       <div className="max-w-4xl mx-auto w-full space-y-8">
         {/* En-tête avec statut de commande */}
         <div className="text-center space-y-4 bg-white/40 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-sm transition-all duration-300">

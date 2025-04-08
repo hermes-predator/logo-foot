@@ -308,7 +308,7 @@ const PaymentSuccess = () => {
 
           {/* Section de téléchargement */}
           <div className="space-y-4">
-            <div className="backdrop-blur-sm rounded-xl p-6 border border-white/30 bg-white/40 transition-all duration-300">
+            <div className="backdrop-blur-sm rounded-xl p-6 border border-gray-200 bg-white/40 transition-all duration-300">
               <h3 className="font-bold text-gray-800 mb-3">Téléchargements</h3>
               
               <div className="space-y-3">

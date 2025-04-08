@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -281,7 +282,7 @@ const PaymentSuccess = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             {customerName && (
-              <div className="backdrop-blur-sm rounded-xl p-6 border border-white/30 bg-white/40 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="backdrop-blur-sm rounded-xl p-6 border-2 border-gray-200 bg-white/40 shadow-sm transition-all duration-300">
                 <h3 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   Détails de votre commande

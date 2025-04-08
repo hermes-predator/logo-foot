@@ -28,9 +28,10 @@ const Breadcrumbs = () => {
         <BreadcrumbItem>
           <Link 
             to="/" 
-            className="flex items-center justify-center bg-gray-100 hover:bg-purple-100 w-8 h-8 rounded-full transition-colors duration-200 group shadow-sm hover:shadow"
+            className="flex items-center justify-center gap-2 bg-gray-100 hover:bg-purple-100 px-4 h-8 rounded-full transition-colors duration-200 group shadow-sm hover:shadow"
           >
             <Home className="h-4 w-4 text-gray-600 group-hover:text-purple-600" />
+            <span className="text-gray-700 group-hover:text-purple-700 font-medium text-sm">Accueil</span>
           </Link>
         </BreadcrumbItem>
         

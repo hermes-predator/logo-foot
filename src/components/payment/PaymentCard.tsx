@@ -13,7 +13,7 @@ interface PaymentCardProps {
 
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   return (
-    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50 to-white shadow-md hover:shadow-lg transition-all duration-500 ease-out hover:scale-[1.01]">
+    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white backdrop-blur-sm border border-blue-100/60 shadow-xl hover:shadow-2xl transition-all duration-500 ease-out hover:scale-[1.01]">
       {/* Dossier décoratif dans le coin supérieur droit */}
       <div className="absolute top-16 right-6 opacity-10 text-blue-900 transform -rotate-12">
         <Folder size={80} />
@@ -25,7 +25,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       
       <div className="mb-6 relative z-10">
         <div className="flex items-center gap-2">
-          <h3 className="text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+          <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>
         <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
       </div>

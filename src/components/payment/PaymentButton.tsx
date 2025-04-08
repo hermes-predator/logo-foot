@@ -34,7 +34,7 @@ const PaymentButton = () => {
             <Button 
               onClick={handlePayment}
               disabled={isProcessing}
-              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-6 text-lg rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden"
+              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-6 text-lg rounded-lg shadow-lg border-b-[3px] border-blue-800/70 hover:shadow-xl transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden"
               aria-label="Payer 8€ avec paiement sécurisé"
             >
               {/* Effet de brillance sur le bouton */}
@@ -54,7 +54,7 @@ const PaymentButton = () => {
               </div>
             </Button>
           </TooltipTrigger>
-          <TooltipContent side="top" className="bg-white/95 border border-gray-200 shadow-md p-3 whitespace-nowrap">
+          <TooltipContent side="top" className="bg-white/95 backdrop-blur-sm border border-gray-200/70 shadow-lg p-3 whitespace-nowrap">
             <p className="text-sm font-medium text-gray-800">Accès immédiat en page d'après-paiement</p>
           </TooltipContent>
         </Tooltip>

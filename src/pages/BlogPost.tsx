@@ -21,7 +21,7 @@ import CanonicalTag from '../components/SEO/CanonicalTag';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
-  const [post, setPost] = useState(blogPosts.find(item => item.id === id));
+  const [post, setPost] = useState(blogPosts.find(item => item.id === Number(id)));
   const [progress, setProgress] = useState(0);
   const [scrollPosition, setScrollPosition] = useState(0);
   const readingTime = useReadingTime(post?.content || '');
@@ -29,7 +29,7 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (id) {
-      const foundPost = blogPosts.find(item => item.id === id);
+      const foundPost = blogPosts.find(item => item.id === Number(id));
       setPost(foundPost);
     }
   }, [id]);
@@ -74,21 +74,30 @@ const BlogPost = () => {
     }, 3000);
   };
 
+  // Create excerpt for meta tags from post content if no excerpt exists
+  const metaDescription = post.excerpt || post.content.substring(0, 160).trim() + '...';
+  
+  // Assume galleryImageId is used to determine post image URL
+  const imageUrl = post.galleryImageId ? `/blog-images/${post.id}.png` : '/og-image.png';
+  
+  // Create keywords from category and subCategory if no keywords exist
+  const metaKeywords = post.keywords || `${post.category}, ${post.subCategory || ''}`;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>{post.title} - Logo-Foot</title>
-        <meta name="description" content={post.description} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.description} />
-        <meta property="og:image" content={post.imageUrl} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:section" content={post.category} />
-        <meta property="article:tag" content={post.tags.join(', ')} />
+        <meta property="article:tag" content={metaKeywords} />
       </Helmet>
       
-      <CanonicalTag slug={`/blog/${post.id}`} />
+      <CanonicalTag url={`/blog/${post.id}`} />
       <BlogSchemaMarkup post={post} />
       
       {/* Progress Bar */}
@@ -98,30 +107,23 @@ const BlogPost = () => {
       
       <main className="container mx-auto px-4 py-8 max-w-5xl">
         {/* Breadcrumbs */}
-        <Breadcrumbs
-          items={[
-            { label: 'Accueil', path: '/', Icon: Home },
-            { label: 'Blog', path: '/blog', Icon: BookOpen },
-            { label: BLOG_CATEGORIES[post.category] || post.category, path: `/blog?category=${post.category}` },
-            { label: post.title, path: `/blog/${post.id}`, current: true }
-          ]}
-          className="mb-6"
-        />
+        <Breadcrumbs />
         
         <article className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
           {/* Header avec image */}
           <div className="relative h-64 sm:h-80 md:h-96 overflow-hidden">
             <BlogImage 
-              src={post.imageUrl} 
+              src={imageUrl} 
               alt={post.title} 
               className="w-full h-full object-cover"
-              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
               <div className="text-white">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="bg-blue-600 text-white text-xs font-medium px-2.5 py-0.5 rounded">
-                    {BLOG_CATEGORIES[post.category] || post.category}
+                    {typeof BLOG_CATEGORIES[post.category] === 'object' 
+                      ? BLOG_CATEGORIES[post.category].name 
+                      : post.category}
                   </span>
                 </div>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-sm">
@@ -174,14 +176,14 @@ const BlogPost = () => {
           {/* Tags */}
           <div className="px-6 pb-6">
             <div className="flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
+              {post.keywords && post.keywords.split(',').map((tag) => (
                 <Link 
-                  key={tag} 
-                  to={`/blog?tag=${tag}`}
+                  key={tag.trim()} 
+                  to={`/blog?tag=${tag.trim()}`}
                   className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800 hover:bg-gray-200 transition-colors"
                 >
                   <Tag className="h-3.5 w-3.5" />
-                  {tag}
+                  {tag.trim()}
                 </Link>
               ))}
             </div>
@@ -189,7 +191,7 @@ const BlogPost = () => {
         </article>
         
         {/* Related Posts */}
-        <RelatedPosts currentPostId={post.id} category={post.category} tags={post.tags} />
+        <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
         
         {/* Floating CTA */}
         <FloatingCTA />

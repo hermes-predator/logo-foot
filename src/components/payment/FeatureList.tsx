@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Folder, Check, Users, Download } from 'lucide-react';
+import { Folder, Check, Wallet, Download } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -33,7 +33,7 @@ const FeatureList = () => {
       iconColor: "text-emerald-600"
     },
     {
-      icon: Users,
+      icon: Wallet,
       text: "Prix accessible"
     },
     {

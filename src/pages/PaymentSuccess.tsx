@@ -386,7 +386,7 @@ const PaymentSuccess = () => {
         </div>
         
         {/* Sécurité et garantie */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-white/30 pt-6 backdrop-blur-sm rounded-b-xl shadow-sm">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-white/30 pt-6 backdrop-blur-sm rounded-b-xl">
           <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <Shield className="h-4 w-4 text-gray-600" />
             <span>Paiement sécurisé</span>

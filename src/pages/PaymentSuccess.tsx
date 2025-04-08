@@ -258,7 +258,7 @@ const PaymentSuccess = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 flex items-center justify-center px-4 py-10">
-      <Card className="max-w-4xl w-full space-y-8 bg-white rounded-lg p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+      <Card className="max-w-4xl w-full space-y-8 bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-gray-100/50 hover:shadow-xl transition-shadow duration-300">
         {/* En-tête avec statut de commande */}
         <div className="text-center space-y-4">
           <div className="flex justify-center">

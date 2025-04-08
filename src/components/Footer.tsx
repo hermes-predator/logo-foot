@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -75,8 +76,18 @@ const Footer = () => {
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Article 9 - Litiges</h3>
-                  <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire.</p>
+                  <h3 className="font-semibold mb-2">Article 9 - Preuve d'achat et facturation</h3>
+                  <p>Une preuve d'achat (reçu) est automatiquement générée en format HTML ou PDF et mise à disposition du client immédiatement après le paiement. Hermès Ressources conserve un enregistrement de toutes les transactions pendant une durée de 10 ans conformément aux obligations légales. Vous pouvez demander une copie de votre reçu ou une facture formelle en contactant notre service client à contact@logo-foot.com. Dans le cadre de la dématérialisation des factures, aucune facture papier n'est envoyée par défaut.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 10 - Médiation de la consommation</h3>
+                  <p>Conformément aux dispositions du Code de la consommation concernant le règlement amiable des litiges, vous pouvez recourir au service de médiation proposé par Hermès Ressources. Le médiateur "droit de la consommation" ainsi proposé est MEDICYS. Ce dispositif de médiation peut être joint par voie électronique à contact@medicys.fr ou par voie postale : MEDICYS - Centre de médiation et règlement amiable des huissiers de justice - 73, Boulevard de Clichy, 75009 - Paris.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Article 11 - Litiges</h3>
+                  <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut de résolution amiable, tout litige relatif à l'interprétation ou à l'exécution des présentes CGV sera de la compétence exclusive des tribunaux du ressort de Calais, France.</p>
                 </section>
               </div>
             </DialogContent>
@@ -126,8 +137,13 @@ const Footer = () => {
                 </section>
 
                 <section>
+                  <h3 className="font-semibold mb-2">Conservation des données de transaction</h3>
+                  <p>Les données relatives aux transactions et preuves d'achat sont conservées de manière sécurisée pendant 10 ans conformément aux obligations légales commerciales et fiscales françaises. Ces données incluent l'identifiant de transaction, la date, le montant et le produit acheté. Une copie de votre reçu reste disponible sur demande à contact@logo-foot.com.</p>
+                </section>
+
+                <section>
                   <h3 className="font-semibold mb-2">Litiges</h3>
-                  <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire.</p>
+                  <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Le tribunal de commerce de Calais sera seul compétent en cas de litige non résolu à l'amiable.</p>
                 </section>
               </div>
             </DialogContent>
@@ -188,6 +204,17 @@ const Footer = () => {
                       Notre service client est disponible 7j/7 pour vous accompagner. En cas de question ou de 
                       difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com. Nous vous 
                       répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  <AccordionItem value="item-6">
+                    <AccordionTrigger>Comment obtenir ma facture ou preuve d'achat ?</AccordionTrigger>
+                    <AccordionContent>
+                      Un reçu au format HTML ou PDF est automatiquement généré après votre paiement et 
+                      disponible sur la page de confirmation. Vous pouvez le télécharger immédiatement. 
+                      Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous 
+                      à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons 
+                      dans un délai de 24h.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

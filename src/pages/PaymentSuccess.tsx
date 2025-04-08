@@ -377,7 +377,7 @@ const PaymentSuccess = () => {
                 <div>
                   <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre fichier !</h3>
                   <p className="text-amber-700 text-sm">
-                    Assurez-vous de télécharger votre fichier immédiatement afin d'éviter de le perdre. Pour toute assistance, contactez <a href="mailto:contact@logo-foot.com" className="font-medium hover:underline">contact@logo-foot.com</a>
+                    Assurez-vous de télécharger votre fichier immédiatement afin d'éviter de le perdre.
                   </p>
                 </div>
               </div>

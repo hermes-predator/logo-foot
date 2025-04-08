@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -12,7 +11,6 @@ import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import BlogCTA from '../components/blog/BlogCTA';
 import FloatingCTA from '../components/blog/FloatingCTA';
-import PopularPosts from '../components/blog/PopularPosts';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -556,7 +554,7 @@ const BlogPost = () => {
               </div>
               
               {/* Articles populaires */}
-              <PopularPosts posts={blogPosts} maxPosts={4} />
+              
             </div>
           </div>
         </div>

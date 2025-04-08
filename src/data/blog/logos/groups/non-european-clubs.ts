@@ -11,9 +11,11 @@ import { southAmericanClubsPost } from '../south-american-clubs';
 import { mlsLogoPost } from '../mls-logos';
 import { flamengoLogoPost } from '../flamengo-logo';
 import { alNassrLogoPost } from '../al-nassr-logo';
+import { alHilalLogoPost } from '../al-hilal-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
+  alHilalLogoPost,
   alNassrLogoPost,
   flamengoLogoPost,
   interMiamiLogoPost,

@@ -3,7 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Clock, Calendar, ExternalLink } from 'lucide-react';
+import { format } from 'date-fns';
 
 interface RelatedPostsProps {
   currentPost: BlogPost;
@@ -136,34 +137,74 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
     return null; // Ne rien afficher s'il n'y a pas d'articles liés
   }
   
+  // Ajout d'un lien "Voir tous les articles" vers la page principale du blog
+  const viewAllLink = (
+    <Link 
+      to="/blog" 
+      className="flex items-center justify-center gap-1.5 text-sm text-purple-600 font-medium hover:text-purple-800 transition-colors py-2 border-t border-gray-100 mt-3"
+    >
+      <span>Voir tous les articles</span>
+      <ExternalLink className="h-3.5 w-3.5" />
+    </Link>
+  );
+  
   return (
-    <div className="mt-10 mb-6">
-      <h3 className="text-xl font-bold mb-4 text-gray-800 border-b pb-2">
-        Articles liés
-      </h3>
+    <div className="mt-8 mb-6">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-xl font-bold text-gray-800 border-b-2 border-purple-200 inline-block pb-1">
+          Articles liés
+        </h3>
+        <Link to="/blog" className="text-sm text-purple-600 hover:text-purple-800 transition-colors">
+          Tous les articles →
+        </Link>
+      </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {relatedPosts.map(post => (
-          <Card key={post.id} className="hover:shadow-md transition-shadow duration-200 border border-gray-200">
+          <Card 
+            key={post.id} 
+            className="hover:shadow-md transition-all duration-200 border border-gray-200 hover:border-purple-200 group"
+          >
             <CardContent className="p-4">
               <Link 
                 to={`/blog/${post.id}`} 
                 className="block group"
               >
+                {/* Vignette avec catégorie */}
+                <div className="relative bg-gray-100 rounded-md mb-3 aspect-video overflow-hidden">
+                  <div className="absolute top-2 left-2 bg-white/80 backdrop-blur-sm text-xs px-2 py-0.5 rounded text-purple-700 font-medium shadow-sm">
+                    {post.subCategory || post.category}
+                  </div>
+                  {post.galleryImageId ? (
+                    <img
+                      src={`/blog-images/${post.id}.png`}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                      <span className="text-gray-400 text-xs">Image non disponible</span>
+                    </div>
+                  )}
+                </div>
+                
                 <h4 className="text-base font-semibold mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
                   {post.title}
                 </h4>
                 
-                <div className="flex items-center justify-between mt-2">
-                  <span className="text-xs text-gray-500">
-                    {new Date(post.date).toLocaleDateString('fr-FR', {
-                      year: 'numeric',
-                      month: 'short',
-                      day: 'numeric'
-                    })}
-                  </span>
+                <p className="text-xs text-gray-500 line-clamp-2 mb-2">
+                  {post.excerpt}
+                </p>
+                
+                <div className="flex items-center justify-between mt-2 text-xs text-gray-500">
+                  <div className="flex items-center gap-1">
+                    <Calendar className="h-3 w-3" />
+                    <time dateTime={post.date}>
+                      {format(new Date(post.date), 'dd MMM yyyy')}
+                    </time>
+                  </div>
                   
-                  <span className="text-purple-600 flex items-center gap-1 text-xs font-medium group-hover:translate-x-0.5 transition-transform">
+                  <span className="text-purple-600 flex items-center gap-1 font-medium group-hover:translate-x-0.5 transition-transform">
                     Lire <ArrowRight className="h-3 w-3" />
                   </span>
                 </div>
@@ -171,6 +212,17 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
             </CardContent>
           </Card>
         ))}
+      </div>
+      
+      {/* Lien "Voir tous les articles" centré en bas */}
+      <div className="text-center mt-4">
+        <Link 
+          to="/blog" 
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors text-sm font-medium"
+        >
+          <span>Découvrir plus d'articles</span>
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
       </div>
     </div>
   );

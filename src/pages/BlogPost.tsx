@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, Share2, Home, ChevronRight, ExternalLink } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -12,10 +11,12 @@ import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import BlogCTA from '../components/blog/BlogCTA';
 import FloatingCTA from '../components/blog/FloatingCTA';
+import PopularPosts from '../components/blog/PopularPosts';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
+import { toast } from '@/hooks/use-toast';
 import RelatedPosts from '../components/blog/RelatedPosts';
 import CanonicalTag from '../components/SEO/CanonicalTag';
 
@@ -27,12 +28,16 @@ const BlogPost = () => {
   // Barre de progression
   const [scrollProgress, setScrollProgress] = useState(0);
   
-  // Gestion du scroll pour la barre de progression
+  // État de la position de défilement pour les animations conditionnelles
+  const [scrollPosition, setScrollPosition] = useState(0);
+  
+  // Gestion du scroll pour la barre de progression et la position
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const progress = (window.scrollY / totalHeight) * 100;
       setScrollProgress(progress);
+      setScrollPosition(window.scrollY);
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -52,6 +57,47 @@ const BlogPost = () => {
 
   // State for button hover
   const [isButtonHovered, setIsButtonHovered] = useState(false);
+  
+  // Fonction pour partager l'article
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: post?.title || 'Article de blog Logo Foot',
+        text: post?.excerpt || 'Article intéressant sur les logos de football',
+        url: window.location.href,
+      })
+      .then(() => {
+        console.log('Partage réussi');
+      })
+      .catch(error => {
+        console.error('Erreur lors du partage:', error);
+        copyToClipboard();
+      });
+    } else {
+      copyToClipboard();
+    }
+  };
+  
+  // Copier l'URL dans le presse-papier
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(window.location.href).then(
+      () => {
+        toast({
+          title: "URL copiée",
+          description: "L'URL de cet article a été copiée dans votre presse-papier.",
+          duration: 3000,
+        });
+      },
+      () => {
+        toast({
+          title: "Échec de la copie",
+          description: "Impossible de copier l'URL dans le presse-papier.",
+          variant: "destructive",
+          duration: 3000,
+        });
+      }
+    );
+  };
 
   if (!post) {
     return (
@@ -223,7 +269,10 @@ const BlogPost = () => {
   };
   
   // URL canonique pour cet article spécifique
-  const canonicalUrl = postUrl;
+  const canonicalUrl = `https://logo-foot.com/blog/${post.id}`;
+  
+  // Détecter si l'utilisateur a défilé suffisamment pour afficher les CTA renforcés
+  const hasScrolledEnough = scrollPosition > 1000;
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30 relative">
@@ -282,102 +331,237 @@ const BlogPost = () => {
       <FloatingCTA />
       
       <div className="container mx-auto py-3 md:py-5 px-3">
-        <Breadcrumbs />
+        {/* Breadcrumbs améliorées avec lien d'accueil */}
+        <nav className="flex items-center text-sm mb-4 bg-white/70 backdrop-blur-sm py-2 px-4 rounded-full shadow-sm">
+          <Link to="/" className="text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1 font-medium">
+            <Home className="h-3.5 w-3.5" />
+            <span>Accueil</span>
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5 mx-2 text-gray-400" />
+          <Link to="/blog" className="text-gray-600 hover:text-purple-800 transition-colors">
+            Blog
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5 mx-2 text-gray-400" />
+          <span className="text-gray-800 font-medium truncate">{post.title.split(':')[0]}</span>
+        </nav>
         
-        {/* Info Card plus compact */}
-        <div className="max-w-3xl mx-auto mb-2">
-          <Card className="bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-              <div className="flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5 text-gray-500" />
-                <time 
-                  className="text-black"
-                  dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
+        <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+          {/* Colonne principale */}
+          <div className="lg:w-2/3">
+            {/* Info Card plus compact */}
+            <div className="mb-4">
+              <Card className="bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs p-2">
+                  <div className="flex items-center gap-1.5">
+                    <Calendar className="h-3.5 w-3.5 text-gray-500" />
+                    <time 
+                      className="text-black"
+                      dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
+                    >
+                      {format(new Date(post.date), 'dd MMMM yyyy')}
+                    </time>
+                  </div>
+                  
+                  <div className="flex items-center gap-1.5">
+                    <BookOpen className="h-3.5 w-3.5 text-gray-500" />
+                    <span className="text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-1.5">
+                    <Tag className="h-3.5 w-3.5 text-gray-500" />
+                    <span className="font-medium text-black">
+                      {BLOG_CATEGORIES[post.category]?.name || post.category}
+                    </span>
+                  </div>
+                  
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="p-1 h-auto text-gray-500 hover:text-purple-600"
+                    onClick={handleShare}
+                  >
+                    <div className="flex items-center gap-1.5">
+                      <Share2 className="h-3.5 w-3.5" />
+                      <span className="text-xs">Partager</span>
+                    </div>
+                  </Button>
+                </div>
+              </Card>
+            </div>
+            
+            <article className="bg-white shadow-md rounded-xl p-3 md:p-5 transition-all duration-300">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight text-gray-900" itemProp="headline">
+                {post.title}
+              </h1>
+              
+              {post.excerpt && (
+                <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-purple-200 pl-3 py-1">
+                  {post.excerpt}
+                </div>
+              )}
+              
+              {post.galleryImageId ? (
+                <BlogImage
+                  src={`/blog-images/${post.id}.png`}
+                  alt={`${post.title.split(':')[0]}`}
+                  className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                />
+              ) : (
+                <BlogImage
+                  src={getDefaultImageSrc(post.category)}
+                  alt={`${post.title.split(':')[0]}`}
+                  className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                  isDefault={true}
+                />
+              )}
+              
+              {/* Bouton CTA supérieur - plus visible après défilement */}
+              {hasScrolledEnough && (
+                <div className="my-6 bg-purple-50 border border-purple-100 rounded-lg p-4 shadow-sm">
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                      <h3 className="font-bold text-purple-900 mb-1">Accédez à notre pack complet</h3>
+                      <p className="text-sm text-purple-700">8600+ logos de football en haute qualité</p>
+                    </div>
+                    <Button 
+                      asChild 
+                      className="bg-purple-600 hover:bg-purple-700 shadow-sm px-4 py-2 w-full sm:w-auto animate-pulse"
+                    >
+                      <Link to="/" className="flex items-center justify-center gap-1.5">
+                        <Download className="h-4 w-4" />
+                        <span>Télécharger maintenant</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              )}
+              
+              {/* BlogCTA (FrontCloud offer) positioned right after the image - with reduced vertical margin */}
+              <div className="mb-4 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
+                <BlogCTA />
+              </div>
+              
+              <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
+                <ReactMarkdown components={markdownComponents}>
+                  {post.content}
+                </ReactMarkdown>
+              </div>
+              
+              {/* CTA de fin d'article amélioré */}
+              <div className="mt-8 mb-2 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-5 border border-purple-100 shadow-sm">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-lg mb-1">Vous avez aimé cet article ?</h3>
+                    <p className="text-gray-600">Découvrez notre pack complet de <strong>8600+ logos de football</strong> en haute qualité</p>
+                  </div>
+                  <Button 
+                    asChild 
+                    className="bg-purple-600 hover:bg-purple-700 shadow-md px-5 py-2.5 w-full md:w-auto"
+                  >
+                    <Link to="/" className="flex items-center justify-center gap-2">
+                      <Download className="h-5 w-5" />
+                      <span>Télécharger tous les logos</span>
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+              
+              {/* Partage et retour */}
+              <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-4 border-t border-gray-100">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="text-gray-600"
+                  onClick={handleShare}
                 >
-                  {format(new Date(post.date), 'dd MMMM yyyy')}
-                </time>
+                  <Share2 className="h-4 w-4 mr-2" />
+                  Partager cet article
+                </Button>
+                
+                <Link 
+                  to="/blog" 
+                  className="text-sm text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1.5"
+                >
+                  <span>Retour au blog</span>
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
-              
-              <div className="flex items-center gap-1.5">
-                <BookOpen className="h-3.5 w-3.5 text-gray-500" />
-                <span className="text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
-              </div>
-              
-              <div className="flex items-center gap-1.5">
-                <Tag className="h-3.5 w-3.5 text-gray-500" />
-                <span className="font-medium text-black">
-                  {BLOG_CATEGORIES[post.category]?.name || post.category}
-                </span>
-              </div>
+            </article>
+            
+            {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
+            <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
+              <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
             </div>
-          </Card>
-        </div>
-        
-        <div className="max-w-3xl mx-auto">
-          <article className="bg-white shadow-md rounded-xl p-3 md:p-5 transition-all duration-300">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight text-gray-900" itemProp="headline">
-              {post.title}
-            </h1>
-            
-            {post.excerpt && (
-              <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-gray-200 pl-3 py-1">
-                {post.excerpt}
-              </div>
-            )}
-            
-            {post.galleryImageId ? (
-              <BlogImage
-                src={`/blog-images/${post.id}.png`}
-                alt={`${post.title.split(':')[0]}`}
-                className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
-              />
-            ) : (
-              <BlogImage
-                src={getDefaultImageSrc(post.category)}
-                alt={`${post.title.split(':')[0]}`}
-                className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
-                isDefault={true}
-              />
-            )}
-            
-            {/* BlogCTA (FrontCloud offer) positioned right after the image - with reduced vertical margin */}
-            <div className="mb-4 hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
-              <BlogCTA />
-            </div>
-            
-            <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
-              <ReactMarkdown components={markdownComponents}>
-                {post.content}
-              </ReactMarkdown>
-            </div>
-            
-            {/* Apple-style button with lighter border radius and dynamic arrow */}
-            <div className="mt-5 flex justify-center">
-              <Link 
-                to="/" 
-                className="bg-white text-blue-500 hover:text-blue-600 font-medium px-5 py-2 rounded-md border border-gray-200 shadow-sm transition-all duration-300 hover:shadow flex items-center justify-center gap-2 group"
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
-              >
-                {isButtonHovered ? (
-                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                ) : (
-                  <Download className="h-5 w-5" />
-                )}
-                <span>Fichier ZIP de +8 600 logos de club de football</span>
-              </Link>
-            </div>
-            
-          </article>
-          
-          {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
-          <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
-            <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
           </div>
           
-          {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
-          <div className="h-24 md:h-28 w-full"></div>
+          {/* Colonne latérale */}
+          <div className="lg:w-1/3 space-y-6">
+            {/* Encart "Télécharger maintenant" */}
+            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 sticky top-24">
+              <h3 className="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
+                <Download className="h-5 w-5 text-purple-600" />
+                Téléchargement express
+              </h3>
+              
+              <div className="bg-purple-50 rounded-lg p-4 mb-4">
+                <h4 className="font-bold text-purple-900 mb-2 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="flex items-start gap-2">
+                    <div className="mt-0.5 flex-shrink-0">
+                      <Check className="h-4 w-4 text-green-600" />
+                    </div>
+                    <span className="text-sm text-gray-700">8600+ logos en haute qualité</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="mt-0.5 flex-shrink-0">
+                      <Check className="h-4 w-4 text-green-600" />
+                    </div>
+                    <span className="text-sm text-gray-700">Format PNG transparent</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="mt-0.5 flex-shrink-0">
+                      <Check className="h-4 w-4 text-green-600" />
+                    </div>
+                    <span className="text-sm text-gray-700">Livraison instantanée</span>
+                  </li>
+                </ul>
+                
+                {/* Prix avec réduction */}
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-gray-400 line-through text-sm">49.90€</span>
+                  <span className="text-xl font-bold text-purple-600">29.90€</span>
+                  <span className="bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded">-40%</span>
+                </div>
+                
+                <Button 
+                  asChild 
+                  className="w-full bg-purple-600 hover:bg-purple-700"
+                >
+                  <Link to="/" className="flex items-center justify-center gap-1.5">
+                    <Download className="h-4 w-4" />
+                    <span>Télécharger maintenant</span>
+                  </Link>
+                </Button>
+                
+                <div className="mt-3 text-center">
+                  <Link 
+                    to="/" 
+                    className="text-xs text-purple-700 hover:text-purple-800 transition-colors flex items-center justify-center gap-1"
+                  >
+                    <span>Voir tous les détails</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+              
+              {/* Articles populaires */}
+              <PopularPosts posts={blogPosts} maxPosts={4} />
+            </div>
+          </div>
         </div>
+        
+        {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
+        <div className="h-24 md:h-28 w-full"></div>
       </div>
     </div>
   );

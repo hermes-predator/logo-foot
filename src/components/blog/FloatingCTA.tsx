@@ -1,13 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
   const [showAnimation, setShowAnimation] = useState(true);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const isMobile = useIsMobile();
   
   // Add a smooth entrance animation and delay the appearance
@@ -22,44 +23,71 @@ const FloatingCTA = () => {
       setShowAnimation(true);
     }, 3000);
     
+    // Detect scroll to show enhanced version
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      // Show enhanced version after user has scrolled down a bit
+      if (scrollPosition > 300 && !hasScrolled) {
+        setHasScrolled(true);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    
     return () => {
       clearTimeout(showBannerTimer);
       clearTimeout(pulseTimer);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [hasScrolled]);
 
   if (!visible) return null;
 
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-700 ease-out will-change-transform will-change-opacity"
+      className={`fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-700 ease-out will-change-transform will-change-opacity ${
+        hasScrolled ? 'animate-bounce-subtle' : ''
+      }`}
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(100%)',
         animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
       }}
     >
-      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 shadow-lg py-3 md:py-4 px-3 md:px-6 border-t-2 border-white/20">
+      <div className={`bg-gradient-to-r ${
+        hasScrolled 
+          ? 'from-purple-600 via-blue-600 to-purple-700 shadow-lg shadow-purple-500/20' 
+          : 'from-purple-600 via-blue-600 to-purple-600'
+        } py-3 md:py-4 px-3 md:px-6 border-t-2 border-white/20`}>
         <div className="container mx-auto">
           {/* Mobile layout - stacked vertically */}
           {isMobile ? (
             <div className="relative">              
               <div className="flex items-center mb-3">
                 <span className="inline-block bg-white/30 p-2 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
-                  <Download 
-                    className="h-5 w-5 text-white animate-bounce" 
-                    style={{ 
-                      animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
-                      filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
-                    }} 
-                  />
+                  {hasScrolled ? (
+                    <Sparkles 
+                      className="h-5 w-5 text-white animate-pulse" 
+                      style={{ 
+                        filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
+                      }} 
+                    />
+                  ) : (
+                    <Download 
+                      className="h-5 w-5 text-white animate-bounce" 
+                      style={{ 
+                        animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
+                        filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
+                      }} 
+                    />
+                  )}
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
                 <div>
                   <p className="text-white font-medium flex flex-col">
                     <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</span>
                     <span className="text-blue-100/90 font-light text-xs italic">
-                      8 600+ logos de foot en un fichier
+                      {hasScrolled ? 'Offre spéciale • Accès immédiat' : '8 600+ logos de foot en un fichier'}
                     </span>
                   </p>
                 </div>
@@ -68,12 +96,22 @@ const FloatingCTA = () => {
               <Button 
                 asChild
                 variant="secondary" 
-                className="bg-white hover:bg-gray-100 w-full py-2 text-sm group relative overflow-hidden"
+                className={`w-full py-2 text-sm group relative overflow-hidden ${
+                  hasScrolled 
+                    ? 'bg-white/95 hover:bg-white shadow-md' 
+                    : 'bg-white hover:bg-gray-100'
+                }`}
                 size="sm"
               >
                 <Link to="/" className="flex items-center justify-center gap-2">
-                  <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
-                  <ArrowRight className="h-4 w-4 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                  <span className={`font-medium relative z-10 ${
+                    hasScrolled ? 'text-purple-600' : 'text-blue-600'
+                  }`}>
+                    {hasScrolled ? 'Télécharger maintenant' : 'Voir l\'offre'}
+                  </span>
+                  <ArrowRight className={`h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 ${
+                    hasScrolled ? 'text-purple-600' : 'text-blue-600'
+                  }`} />
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Link>
               </Button>
@@ -84,20 +122,31 @@ const FloatingCTA = () => {
               <div className="flex items-center">
                 <Link to="/" className="group flex items-center">
                   <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
-                    <Download 
-                      className="h-6 w-6 md:h-7 md:w-7 text-white animate-bounce" 
-                      style={{ 
-                        animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
-                        filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
-                      }} 
-                    />
+                    {hasScrolled ? (
+                      <Sparkles 
+                        className="h-6 w-6 md:h-7 md:w-7 text-white animate-pulse" 
+                        style={{ 
+                          filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
+                        }} 
+                      />
+                    ) : (
+                      <Download 
+                        className="h-6 w-6 md:h-7 md:w-7 text-white animate-bounce" 
+                        style={{ 
+                          animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
+                          filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
+                        }} 
+                      />
+                    )}
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
                   <div className="relative">
                     <p className="text-white font-medium text-sm md:text-lg hover:text-white/90 transition-colors flex flex-col">
                       <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-base md:text-2xl">⦗FRONT-CLOUD⦘~ Football.zip</span>
                       <span className="text-blue-100/90 font-light text-sm md:text-base italic">
-                        Un fichier ZIP arborescent contenant + de 8 600 logos de foot
+                        {hasScrolled 
+                          ? 'Téléchargement instantané • Accès à vie • Mise à jour gratuite' 
+                          : 'Un fichier ZIP arborescent contenant + de 8 600 logos de foot'}
                       </span>
                     </p>
                   </div>
@@ -108,12 +157,22 @@ const FloatingCTA = () => {
                 <Button 
                   asChild
                   variant="secondary" 
-                  className="bg-white hover:bg-gray-100 px-5 py-2.5 text-sm md:text-base group relative overflow-hidden"
+                  className={`px-5 py-2.5 text-sm md:text-base group relative overflow-hidden ${
+                    hasScrolled 
+                      ? 'bg-white/95 hover:bg-white shadow-md' 
+                      : 'bg-white hover:bg-gray-100'
+                  }`}
                   size="lg"
                 >
                   <Link to="/" className="flex items-center gap-2">
-                    <span className="text-blue-600 font-medium relative z-10">Télécharger maintenant</span>
-                    <ArrowRight className="h-5 w-5 text-blue-600 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10" />
+                    <span className={`font-medium relative z-10 ${
+                      hasScrolled ? 'text-purple-600' : 'text-blue-600'
+                    }`}>
+                      {hasScrolled ? 'Télécharger maintenant' : 'Voir l\'offre'}
+                    </span>
+                    <ArrowRight className={`h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 ${
+                      hasScrolled ? 'text-purple-600' : 'text-blue-600'
+                    }`} />
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>

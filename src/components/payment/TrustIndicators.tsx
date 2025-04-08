@@ -40,8 +40,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       {/* Effet de lumière subtil sur hover */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-100/30 to-blue-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
       
-      {/* Icône avec animation améliorée */}
-      <div className="w-10 h-10 text-blue-600 mb-3 flex items-center justify-center bg-blue-100/80 rounded-full p-2 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-blue-100 group-hover:text-blue-700 relative z-10" aria-hidden="true">
+      {/* Icône avec animation améliorée - suppression de l'effet scale */}
+      <div className="w-10 h-10 text-blue-600 mb-3 flex items-center justify-center bg-blue-100/80 rounded-full p-2 shadow-sm transition-all duration-300 group-hover:bg-blue-100 group-hover:text-blue-700 relative z-10" aria-hidden="true">
         {icon}
       </div>
       

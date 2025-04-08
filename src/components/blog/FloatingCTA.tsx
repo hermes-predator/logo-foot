@@ -66,7 +66,7 @@ const FloatingCTA = () => {
               >
                 <Link to="/" className="flex items-center justify-center gap-2">
                   <span className="font-medium relative z-10 text-blue-600">
-                    Voir l'offre
+                    Télécharger maintenant
                   </span>
                   <ArrowRight className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
@@ -108,7 +108,7 @@ const FloatingCTA = () => {
                 >
                   <Link to="/" className="flex items-center gap-2">
                     <span className="font-medium relative z-10 text-blue-600">
-                      Voir l'offre
+                      Télécharger maintenant
                     </span>
                     <ArrowRight className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>

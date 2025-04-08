@@ -3,7 +3,7 @@ import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { technicalPosts } from './technical';
 import { historyPosts } from './history';
-import { analysisPosts } from './analysis';
+import { analysisPost } from './analysis';
 
 // Detailed logging for article counts per category
 console.log('\n************ DETAILED BLOG POST ANALYSIS ************');
@@ -16,8 +16,8 @@ console.log('Technical posts IDs:', technicalPosts.map(post => post.id).join(', 
 console.log('\nHistory posts:', historyPosts.length, 'articles');
 console.log('History posts IDs:', historyPosts.map(post => post.id).join(', '));
 
-console.log('\nAnalysis posts:', analysisPosts.length, 'articles');
-console.log('Analysis posts IDs:', analysisPosts.map(post => post.id).join(', '));
+console.log('\nAnalysis posts:', analysisPost.length, 'articles');
+console.log('Analysis posts IDs:', analysisPost.map(post => post.id).join(', '));
 
 // Vérification spécifique pour les articles Chelsea et Juventus
 const chelseaArticle = logoPosts.find(post => post.title.toLowerCase().includes('chelsea'));
@@ -36,7 +36,7 @@ console.log('Article Juventus:', juventusArticle ? {
 } : 'Non trouvé dans logoPosts');
 
 // Check for duplicate IDs
-const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPosts];
+const allPosts = [...logoPosts, ...technicalPosts, ...historyPosts, ...analysisPost];
 const idCounts = allPosts.reduce((acc, post) => {
   acc[post.id] = (acc[post.id] || 0) + 1;
   return acc;

@@ -87,7 +87,7 @@ const Blog = () => {
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
-      <main className="container mx-auto px-4 py-3 pb-48">
+      <main className="container mx-auto px-4 py-3 pb-64">
         <Breadcrumbs />
         <BlogHeader />
         <div className="mt-4">

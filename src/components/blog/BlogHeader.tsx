@@ -38,7 +38,7 @@ const BlogHeader = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900">Vous cherchez des logos de football ?</h3>
-                <p className="text-sm text-amber-800/80">Accédez à la plus grande collection avec notre fichier ZIP complet</p>
+                <p className="text-sm text-amber-800/80">Accédez à la plus grande collection en un seul téléchargement avec notre fichier ZIP complet</p>
               </div>
               <Button 
                 asChild 

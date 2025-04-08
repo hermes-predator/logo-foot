@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import PaymentTitle from './PaymentTitle';
-import TrustIndicators from './payment/TrustIndicators';
+import TrustIndicators from './TrustIndicators';
 import { Skeleton } from '@/components/ui/skeleton';
 import { PerformanceWrapper } from '@/components/ui/performance-wrapper';
 
 // Chargement paresseux des composants non-critiques
-const PaymentCard = lazy(() => import('./payment/PaymentCard'));
-const PaymentTrust = lazy(() => import('./payment/PaymentTrust'));
+const PaymentCard = lazy(() => import('./PaymentCard'));
+const PaymentTrust = lazy(() => import('./PaymentTrust'));
 
 const PaymentSection = () => {
   const [recentBuyers, setRecentBuyers] = useState(0);

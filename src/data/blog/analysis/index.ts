@@ -1,87 +1,79 @@
 
 import { BlogPost } from '../../../types/blog';
 
-// Import analyses with proper import names - these files use Post suffix for exports
-import { colorTheoryPost } from './color-theory';
-import { championsLeagueAnalysis } from './champions-league';
-import { bundesligaAnalysis } from './bundesliga';
-import { laligaAnalysis } from './laliga';
-import { serieAAnalysis } from './serie-a';
-import { premierLeagueAnalysis } from './premier-league';
-import { ligue1Analysis } from './ligue-1';
-import { psgTransferts } from './psg-transferts';
-
-// Player analyses with correct export names
-import { mbappePost } from './kylian-mbappe';
-import { messiPost } from './lionel-messi';
+// Import des articles
+import { kylianMbappePost } from './kylian-mbappe';
+import { lionelMessiPost } from './lionel-messi';
+import { erlingHaalandPost } from './erling-haaland';
+import { viniciusJuniorPost } from './vinicius-junior';
 import { neymarPost } from './neymar';
-import { haalandPost } from './erling-haaland';
-import { fodenPost } from './phil-foden';
-import { mbappeSonPost } from './mbappe-et-son-fils';
 import { lamineYamalPost } from './lamine-yamal';
 import { lamineYamal2Post } from './lamine-yamal-2';
+import { philFodenPost } from './phil-foden';
 import { jamalMusialaPost } from './jamal-musiala';
 import { florianWirtzPost } from './florian-wirtz';
-import { joaoNevesPost } from './joao-neves';
+import { xaviSimonsPost } from './xavi-simons';
+import { desireDouePost } from './desire-doue';
 import { rayanCherkiPost } from './rayan-cherki';
-import { barcolaPost } from './bradley-barcola';
-import { gulerPost } from './arda-guler';
-import { garnachoPost } from './alejandro-garnacho';
+import { joaoNevesPost } from './joao-neves';
+import { michaelOlisePost } from './michael-olise';
+import { gabrielMartinelliPost } from './gabriel-martinelli';
+import { benjaminSeskoPost } from './benjamin-sesko';
+import { bradleyBarcolaPost } from './bradley-barcola';
+import { kenanYildizPost } from './kenan-yildiz';
+import { ardaGulerPost } from './arda-guler';
+import { victorOsimhenPost } from './victor-osimhen';
+import { achrafHakimiPost } from './achraf-hakimi';
 import { vitinhaPost } from './vitinha';
-import { martinelliPost } from './gabriel-martinelli';
-import { seskoPost } from './benjamin-sesko';
-import { olisePost } from './michael-olise';
-import { pachoPost } from './william-pacho';
-import { salibaPost } from './william-saliba';
-import { douePost } from './desire-doue';
-import { simonsPost } from './xavi-simons';
-import { viniJrPost } from './vinicius-junior';
-import { osimhenPost } from './victor-osimhen';
-import { yildizPost } from './kenan-yildiz';
+import { williamPachoPost } from './william-pacho';
+import { alejandroGarnachoPost } from './alejandro-garnacho';
 import { luisEnriquePost } from './luis-enrique';
-import { hakimiPost } from './achraf-hakimi';
-import { kyivLogoPost } from './dynamo-kiev-logo';
+import { premierLeagueAnalysis } from './premier-league';
+import { ligue1Analysis } from './ligue-1';
+import { laligaAnalysis } from './laliga';
+import { serieAAnalysis } from './serie-a';
+import { bundesligaAnalysis } from './bundesliga';
+import { championsLeagueAnalysis } from './champions-league';
+import { colorTheoryPost } from './color-theory';
+import { williamSalibaPost } from './william-saliba';
+import { dynamoKievLogoPost } from './dynamo-kiev-logo';
+import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 
-// Group all analysis posts
-export const analysisPost: BlogPost[] = [
-  psgTransferts,
-  ligue1Analysis,
-  championsLeagueAnalysis,
-  bundesligaAnalysis,
-  laligaAnalysis,
-  serieAAnalysis,
-  premierLeagueAnalysis,
-  colorTheoryPost,
-  mbappePost,
-  messiPost,
+export const analysisPosts: BlogPost[] = [
+  kylianMbappePost,
+  lionelMessiPost,
+  erlingHaalandPost,
+  viniciusJuniorPost,
   neymarPost,
-  haalandPost,
-  fodenPost,
-  mbappeSonPost,
   lamineYamalPost,
   lamineYamal2Post,
+  philFodenPost,
   jamalMusialaPost,
   florianWirtzPost,
-  joaoNevesPost,
+  xaviSimonsPost,
+  desireDouePost,
   rayanCherkiPost,
-  barcolaPost,
-  gulerPost,
-  garnachoPost,
+  joaoNevesPost,
+  michaelOlisePost,
+  gabrielMartinelliPost,
+  benjaminSeskoPost,
+  bradleyBarcolaPost,
+  kenanYildizPost,
+  ardaGulerPost,
+  victorOsimhenPost,
+  achrafHakimiPost,
   vitinhaPost,
-  martinelliPost,
-  seskoPost,
-  olisePost,
-  pachoPost,
-  salibaPost,
-  douePost,
-  simonsPost,
-  viniJrPost,
-  osimhenPost,
-  yildizPost,
+  williamPachoPost,
+  alejandroGarnachoPost,
   luisEnriquePost,
-  hakimiPost,
-  kyivLogoPost
+  premierLeagueAnalysis,
+  ligue1Analysis,
+  laligaAnalysis,
+  serieAAnalysis,
+  bundesligaAnalysis,
+  championsLeagueAnalysis,
+  colorTheoryPost,
+  williamSalibaPost,
+  dynamoKievLogoPost,
+  mbappeEtSonFilsPost
 ];
-
-// Add an alias for compatibility with other code using analysisPosts
-export { analysisPost as analysisPosts };

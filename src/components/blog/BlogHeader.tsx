@@ -19,7 +19,7 @@ const BlogHeader = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-100/50 via-white to-purple-100/50 rounded-2xl blur-lg"></div>
         <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-purple-100 shadow-sm">
           <div className="flex items-center gap-3 mb-3">
-            <div className="bg-purple-100 p-2 rounded-xl">
+            <div className="bg-gray-100 p-2 rounded-xl">
               <BookOpen className="w-5 h-5 text-purple-600" />
             </div>
             <h2 className="font-semibold text-gray-900">

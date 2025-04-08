@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -258,10 +257,10 @@ const PaymentSuccess = () => {
   };
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50/60 to-gray-100/60 flex items-center justify-center px-4 py-10">
-      <Card className="max-w-4xl w-full space-y-8 bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-md border border-white/30 hover:shadow-lg transition-all duration-300">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50/60 to-gray-100/60 px-4 py-10">
+      <div className="max-w-4xl mx-auto w-full space-y-8">
         {/* En-tête avec statut de commande */}
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-4 bg-white/30 backdrop-blur-sm rounded-xl p-8 border border-white/20">
           <div className="flex justify-center">
             <div className="bg-green-50 p-4 rounded-full">
               <CheckCircle className="w-16 h-16 text-green-600" />
@@ -282,7 +281,7 @@ const PaymentSuccess = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             {customerName && (
-              <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-5 border border-white/50 hover:border-gray-300 transition-colors shadow-sm">
+              <div className="backdrop-blur-sm rounded-xl p-6 border border-white/20 bg-white/30">
                 <h3 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   Détails de votre commande
@@ -299,7 +298,7 @@ const PaymentSuccess = () => {
               </div>
             )}
 
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-5 border border-white/50 hover:border-gray-300 transition-colors shadow-sm">
+            <div className="backdrop-blur-sm rounded-xl p-6 border border-white/20 bg-white/30">
               <h3 className="font-bold text-gray-800 mb-2">Assistance</h3>
               <p className="text-gray-700 text-sm">
                 Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium text-blue-600 hover:underline">contact@logo-foot.com</span>
@@ -309,7 +308,7 @@ const PaymentSuccess = () => {
 
           {/* Section de téléchargement */}
           <div className="space-y-4">
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-5 border border-white/50 hover:border-gray-300 transition-colors shadow-sm">
+            <div className="backdrop-blur-sm rounded-xl p-6 border border-white/20 bg-white/30">
               <h3 className="font-bold text-gray-800 mb-3">Téléchargements</h3>
               
               <div className="space-y-3">
@@ -372,7 +371,7 @@ const PaymentSuccess = () => {
             </div>
             
             {/* Conteneur d'avertissement ambré avec texte modifié */}
-            <div className="bg-amber-50/90 backdrop-blur-sm rounded-lg p-5 border border-amber-200/50 hover:border-amber-300 transition-colors shadow-sm">
+            <div className="backdrop-blur-sm rounded-xl p-6 border border-amber-200/30 bg-amber-50/40">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                 <div>
@@ -387,7 +386,7 @@ const PaymentSuccess = () => {
         </div>
         
         {/* Sécurité et garantie */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-gray-100/30 pt-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-white/20 pt-6 bg-white/20 backdrop-blur-sm rounded-b-xl">
           <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <Shield className="h-4 w-4 text-gray-600" />
             <span>Paiement sécurisé</span>
@@ -403,7 +402,7 @@ const PaymentSuccess = () => {
             <span>Téléchargement instantané</span>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

@@ -6,20 +6,39 @@ import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
+  const [visible, setVisible] = useState(false);
   const [showAnimation, setShowAnimation] = useState(true);
   const isMobile = useIsMobile();
   
-  // Add a pulsing effect that starts a few seconds after page load
+  // Add a smooth entrance animation and delay the appearance
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowAnimation(true);
-    }, 2000);
+    // Initial delay before showing the banner
+    const showBannerTimer = setTimeout(() => {
+      setVisible(true);
+    }, 1500);
     
-    return () => clearTimeout(timer);
+    // Add the pulsing effect a bit after showing the banner
+    const pulseTimer = setTimeout(() => {
+      setShowAnimation(true);
+    }, 3000);
+    
+    return () => {
+      clearTimeout(showBannerTimer);
+      clearTimeout(pulseTimer);
+    };
   }, []);
 
+  if (!visible) return null;
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 animate-fade-in will-change-transform will-change-opacity">
+    <div 
+      className="fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-700 ease-out will-change-transform will-change-opacity"
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(100%)',
+        animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
+      }}
+    >
       <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 shadow-lg py-3 md:py-4 px-3 md:px-6 border-t-2 border-white/20">
         <div className="container mx-auto">
           {/* Mobile layout - stacked vertically */}

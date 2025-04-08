@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BookOpen, ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -42,11 +42,10 @@ const BlogHeader = () => {
               </div>
               <Button 
                 asChild 
-                className="bg-purple-600 hover:bg-purple-700 whitespace-nowrap"
+                className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap"
               >
                 <Link to="/" className="flex items-center gap-2">
-                  <Download className="h-4 w-4" />
-                  <span>Voir l'offre</span>
+                  <span>En savoir plus</span>
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

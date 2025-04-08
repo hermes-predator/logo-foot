@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -387,7 +386,7 @@ const PaymentSuccess = () => {
         </div>
         
         {/* Sécurité et garantie */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-white/30 pt-6 bg-white/30 backdrop-blur-sm rounded-b-xl shadow-sm">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 p-4 mt-2 border-t border-white/30 pt-6 backdrop-blur-sm rounded-b-xl shadow-sm">
           <div className="flex items-center gap-2 hover:text-gray-800 transition-colors">
             <Shield className="h-4 w-4 text-gray-600" />
             <span>Paiement sécurisé</span>

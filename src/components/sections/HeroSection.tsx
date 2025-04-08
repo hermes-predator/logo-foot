@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -84,11 +85,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-2.5 px-7 py-3 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-transform duration-300 hover:shadow-md relative overflow-hidden"
+                className="group flex items-center gap-2.5 px-8 py-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-transform duration-300 hover:shadow-md relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
-                <Folder size={18} className="mr-1 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-semibold text-[15px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                <Folder size={20} className="mr-1 text-gray-800 transition-colors duration-300" />
+                <span className="relative z-10 font-semibold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -146,7 +147,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                     const returnUrl = `${window.location.origin}/payment-success`;
                     window.location.href = `https://pay.sumup.com/b2c/QVB0KC9U?return_url=${encodeURIComponent(returnUrl)}`;
                   }}
-                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-[16px] gap-4 hover:-translate-y-0.5 px-8 py-3 h-auto relative group overflow-hidden"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-[17px] gap-4 hover:-translate-y-0.5 px-9 py-4 h-auto relative group overflow-hidden"
                 >
                   {/* Outer glow animation - restaurée à l'original */}
                   <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
@@ -155,7 +156,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   {/* Inner glow for the cart icon - restaurée à l'animation originale */}
                   <div className="relative">
                     <ShoppingCart 
-                      className="h-5 w-5 transition-transform duration-300" 
+                      className="h-6 w-6 transition-transform duration-300" 
                       style={{
                         color: "#FFE082",
                         filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))',

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle } from 'lucide-react';
+import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useLocation } from 'react-router-dom';
@@ -301,7 +301,7 @@ const PaymentSuccess = () => {
             <div className="backdrop-blur-sm rounded-xl p-6 border border-gray-200 bg-white/40 transition-all duration-300">
               <h3 className="font-bold text-gray-800 mb-2">Assistance</h3>
               <p className="text-gray-700 text-sm">
-                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <span className="font-medium text-blue-600 hover:underline">contact@logo-foot.com</span>
+                Si vous avez besoin d'aide avec votre commande, n'hésitez pas à nous contacter à <a href="mailto:contact@logo-foot.com" className="font-medium text-blue-600 hover:underline">contact@logo-foot.com</a>
               </p>
             </div>
           </div>
@@ -377,7 +377,7 @@ const PaymentSuccess = () => {
                 <div>
                   <h3 className="font-bold text-amber-800 mb-1">Téléchargez votre fichier !</h3>
                   <p className="text-amber-700 text-sm">
-                    Assurez-vous de télécharger votre fichier immédiatement afin d'éviter de le perdre.
+                    Assurez-vous de télécharger votre fichier immédiatement afin d'éviter de le perdre. Pour toute assistance, contactez <a href="mailto:contact@logo-foot.com" className="font-medium hover:underline">contact@logo-foot.com</a>
                   </p>
                 </div>
               </div>

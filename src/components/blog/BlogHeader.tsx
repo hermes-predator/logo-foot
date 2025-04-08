@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   return (
@@ -29,6 +30,20 @@ const BlogHeader = () => {
             <p className="text-base text-gray-700 leading-relaxed">
               Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir l'histoire fascinante et l'évolution des identités visuelles qui font la richesse du football mondial.
             </p>
+          </div>
+          
+          {/* Ajouter un lien vers l'article sur les transferts du PSG */}
+          <div className="mt-4 bg-blue-50 p-3 rounded-lg border border-blue-100 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="bg-blue-600 p-1.5 rounded-full">
+                <BookOpen className="w-4 h-4 text-white" />
+              </div>
+              <span className="font-medium text-blue-800">Nouvel article : Analyse des transferts PSG</span>
+            </div>
+            <Link to="/blog/42" className="text-blue-600 hover:text-blue-800 flex items-center gap-1.5 text-sm font-medium">
+              <span>Lire l'article</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
       </div>

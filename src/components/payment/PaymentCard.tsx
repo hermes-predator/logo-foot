@@ -6,15 +6,23 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
+import { measurePerformance } from '@/lib/performance';
 
 interface PaymentCardProps {
   recentBuyers: number;
 }
 
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
+  // Utilisation de la fonction de mesure de performance
+  React.useEffect(() => {
+    measurePerformance('payment-card-render', () => {
+      // Simplement mesurer le temps de rendu
+    });
+  }, []);
+
   return (
-    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white backdrop-blur-sm border border-blue-100/60 shadow-xl hover:shadow-2xl transition-all duration-500 ease-out hover:scale-[1.01]">
-      {/* Dossier décoratif dans le coin supérieur droit */}
+    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
+      {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
       <div className="absolute top-16 right-6 opacity-10 text-blue-900 transform -rotate-12">
         <Folder size={80} />
       </div>

@@ -38,7 +38,7 @@ const FeatureList = () => {
     },
     {
       icon: Check,
-      text: "Gain de temps et confiance",
+      text: "Gain de confiance et de temps",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

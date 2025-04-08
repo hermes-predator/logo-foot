@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Download, CheckCircle, Shield, FileText, RotateCw, AlertTriangle, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -260,7 +261,7 @@ const PaymentSuccess = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50/60 to-gray-100/60 px-4 py-10">
       <div className="max-w-4xl mx-auto w-full space-y-8">
         {/* En-tête avec statut de commande */}
-        <div className="text-center space-y-4 bg-white/40 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="text-center space-y-4 bg-white/40 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-sm transition-all duration-300">
           <div className="flex justify-center">
             <div className="bg-green-50 p-4 rounded-full">
               <CheckCircle className="w-16 h-16 text-green-600" />

@@ -1,5 +1,5 @@
 
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from '../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
 import { brazilianClubPosts } from './groups/brazilian-clubs';
@@ -27,8 +27,9 @@ import { villarrealCfLogoPost } from './villarreal-cf-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
-import { alAhliLogoPost } from './al-ahli-logo';
-import { alIttihadLogoPost } from './al-ittihad-logo';
+// Suppression des importations individuelles qui sont déjà dans nonEuropeanClubPosts
+// import { alAhliLogoPost } from './al-ahli-logo';
+// import { alIttihadLogoPost } from './al-ittihad-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -42,9 +43,9 @@ export const logoPosts: BlogPost[] = [
   ...germanClubPosts,
   ...italianClubPosts,
   ...nationalTeamPosts,
-  ...nonEuropeanClubPosts,
+  ...nonEuropeanClubPosts, // Ceci inclut déjà alAhliLogoPost et alIttihadLogoPost
   ...otherEuropeanClubPosts,
-  ...portugueseClubPosts, // This already includes vitoriaGuimaraesLogoPost
+  ...portugueseClubPosts,
   ...southAmericanClubPosts,
   ...spanishClubPosts,
   etoileRougeBelgradeLogoPost,
@@ -58,8 +59,8 @@ export const logoPosts: BlogPost[] = [
   villarrealCfLogoPost,
   valenciennesLogoPost,
   watfordLogoPost,
-  wolverhamptonLogoPost,
-  alAhliLogoPost,
-  alIttihadLogoPost
-  // Removed individual import of vitoriaGuimaraesLogoPost as it's already in portugueseClubPosts
+  wolverhamptonLogoPost
+  // Suppression des références individuelles
+  // alAhliLogoPost,
+  // alIttihadLogoPost
 ];

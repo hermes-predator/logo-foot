@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -8,7 +7,6 @@ import { usePagination } from '../hooks/usePagination';
 import BlogHeader from '../components/blog/BlogHeader';
 import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
-import BlogCTA from '../components/blog/BlogCTA';
 import FloatingCTA from '../components/blog/FloatingCTA';
 
 const Blog = () => {
@@ -103,9 +101,6 @@ const Blog = () => {
               />
             </div>
           )}
-        </div>
-        <div className="mt-8 px-4">
-          <BlogCTA />
         </div>
       </main>
 

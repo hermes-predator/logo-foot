@@ -1,8 +1,23 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Download } from 'lucide-react';
 
 const PaymentTrust = () => {
+  const [downloadCount, setDownloadCount] = useState(25287);
+  
+  // Effet pour augmenter progressivement le nombre de téléchargements
+  useEffect(() => {
+    // Intervalle pour augmenter progressivement le nombre
+    const interval = setInterval(() => {
+      setDownloadCount(prevCount => {
+        // Augmenter de 1 toutes les quelques minutes
+        return prevCount + 1;
+      });
+    }, 3 * 60 * 1000); // Augmente toutes les 3 minutes
+    
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex items-center justify-center mt-6 flex-wrap gap-2">
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
@@ -32,10 +47,10 @@ const PaymentTrust = () => {
         <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
       </div>
       
-      {/* Compteur de téléchargement */}
+      {/* Compteur de téléchargement évolutif */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
         <Download className="h-4 w-4 text-gray-500" />
-        <span className="text-sm text-gray-500 font-medium">25 287 téléchargements</span>
+        <span className="text-sm text-gray-500 font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const BlogHeader = () => {
           </div>
           
           {/* Ajout d'un CTA vers la page d'accueil */}
-          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 border border-purple-100">
+          <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900">Vous cherchez des logos de football ?</h3>

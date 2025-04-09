@@ -41,6 +41,7 @@ import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
 import { bukayoSakaPost } from './bukayo-saka';
 
+// Définir la liste des articles d'analyse
 export const analysisPosts: BlogPost[] = [
   kylianMbappePost,
   lionelMessiPost,
@@ -81,3 +82,39 @@ export const analysisPosts: BlogPost[] = [
   psgRumeursTransfertPost,
   bukayoSakaPost
 ];
+
+// Liste des joueurs de football (identifiés par leur article dédié)
+export const footballPlayers = [
+  kylianMbappePost,
+  lionelMessiPost,
+  erlingHaalandPost,
+  viniciusJuniorPost,
+  neymarPost,
+  lamineYamalPost,
+  philFodenPost,
+  jamalMusialaPost,
+  florianWirtzPost,
+  xaviSimonsPost,
+  desireDouePost,
+  rayanCherkiPost,
+  joaoNevesPost,
+  michaelOlisePost,
+  gabrielMartinelliPost,
+  benjaminSeskoPost,
+  bradleyBarcolaPost,
+  kenanYildizPost,
+  ardaGulerPost,
+  victorOsimhenPost,
+  achrafHakimiPost,
+  vitinhaPost,
+  williamPachoPost,
+  alejandroGarnachoPost,
+  williamSalibaPost,
+  bukayoSakaPost
+];
+
+// Nombre de joueurs de football dans notre base de données
+export const footballPlayerCount = footballPlayers.length;
+
+// Afficher le nombre de joueurs dans la console pour vérification
+console.log(`Nombre de joueurs de football dans notre base de données : ${footballPlayerCount}`);

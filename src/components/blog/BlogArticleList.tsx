@@ -14,7 +14,7 @@ const BlogArticleList = ({ articles, isLoading = false }: BlogArticleListProps) 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 px-4">
         {[...Array(6)].map((_, i) => (
           <div 
-            key={i} 
+            key={`skeleton-${i}`} 
             className="h-60 bg-gray-100 animate-pulse rounded-xl"
             aria-hidden="true"
           />
@@ -37,7 +37,7 @@ const BlogArticleList = ({ articles, isLoading = false }: BlogArticleListProps) 
       aria-label="Liste des articles"
     >
       {articles.map((post) => (
-        <BlogArticleCard key={post.id} post={post} />
+        <BlogArticleCard key={`post-${post.id}`} post={post} />
       ))}
     </section>
   );

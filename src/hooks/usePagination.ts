@@ -23,7 +23,7 @@ export const usePagination = (items: BlogPost[], itemsPerPage: number = 9) => {
     
     // Calculate paginated items
     const startIndex = (validCurrentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, items.length);
     
     // Safely slice the array
     const newPaginatedItems = items.slice(startIndex, endIndex);

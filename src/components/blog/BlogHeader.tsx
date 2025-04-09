@@ -61,7 +61,7 @@ const BlogHeader = () => {
                 Technique
               </Link>
               <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
-                Analyses
+                Joueurs
               </Link>
               <Link to="/blog?category=pixel-art" className={getCategoryStyle('pixel-art')}>
                 Pixel Art

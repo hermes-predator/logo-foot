@@ -124,7 +124,19 @@ const Testimonials = () => {
               alt="Judge.me Reviews" 
               className="h-4" 
             />
-            <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés</span>
+            <div className="flex flex-col">
+              <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés</span>
+              <div className="flex items-center gap-1">
+                <div className="flex">
+                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+                </div>
+                <span className="text-[10px] font-semibold text-gray-600">4.9/5</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

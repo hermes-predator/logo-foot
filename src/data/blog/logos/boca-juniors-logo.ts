@@ -120,7 +120,6 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
 `,
   category: "logos",
   subCategory: "southAmericanClubs",
-  tags: ["Boca Juniors", "logos", "football", "Argentine", "club sud-américain"],
   keywords: "boca juniors logo, boca juniors logo png, logo boca junior, logo boca juniors, logo boca juniors png, logo boca junior png, boca junior logo png, boca juniors logos image, logo de foot boca junior",
   galleryImageId: 1,
 };

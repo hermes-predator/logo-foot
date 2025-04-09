@@ -1,13 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
   const isMobile = useIsMobile();
+  const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
   
   // Add a smooth entrance animation and delay the appearance
   useEffect(() => {
@@ -21,7 +23,22 @@ const FloatingCTA = () => {
     };
   }, []);
 
-  if (!visible) return null;
+  // Check if user has previously dismissed the banner in this session
+  useEffect(() => {
+    const sessionDismissed = sessionStorage.getItem('floatingCTADismissed');
+    if (sessionDismissed === 'true') {
+      setDismissed(true);
+    }
+  }, []);
+
+  const handleDismiss = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDismissed(true);
+    sessionStorage.setItem('floatingCTADismissed', 'true');
+  };
+
+  if (!visible || dismissed) return null;
 
   return (
     <div 
@@ -32,15 +49,24 @@ const FloatingCTA = () => {
         animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
       }}
     >
-      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-3 md:py-4 px-3 md:px-6 border-t-2 border-white/20">
-        <div className="container mx-auto">
-          {/* Mobile layout - stacked vertically */}
+      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">
+        <div className="container mx-auto relative">
+          {/* Close button */}
+          <button 
+            onClick={handleDismiss}
+            className="absolute right-1 top-1 md:right-2 md:top-2 p-1 rounded-full bg-white/20 hover:bg-white/30 transition-colors text-white"
+            aria-label="Fermer"
+          >
+            <X className="h-3 w-3 md:h-4 md:w-4" />
+          </button>
+          
+          {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (
-            <div className="relative">              
-              <div className="flex items-center mb-3">
-                <span className="inline-block bg-white/30 p-2 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
+            <div className="relative pr-6">              
+              <div className="flex items-center mb-2">
+                <span className={`inline-block bg-white/30 p-1.5 md:p-2 rounded-full mr-2 md:mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
                   <Download 
-                    className="h-5 w-5 text-white animate-bounce" 
+                    className="h-4 w-4 md:h-5 md:w-5 text-white animate-bounce" 
                     style={{ 
                       animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
                       filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
@@ -50,10 +76,12 @@ const FloatingCTA = () => {
                 </span>
                 <div>
                   <p className="text-white font-medium flex flex-col">
-                    <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                    <span className="text-blue-100/90 font-light text-xs italic">
-                      8 600+ logos de foot en un fichier
-                    </span>
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 ${isVerySmallScreen ? 'text-sm' : 'text-base md:text-lg'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    {!isVerySmallScreen && (
+                      <span className="text-blue-100/90 font-light text-xs italic">
+                        8 600+ logos de foot
+                      </span>
+                    )}
                   </p>
                 </div>
               </div>
@@ -61,14 +89,14 @@ const FloatingCTA = () => {
               <Button 
                 asChild
                 variant="secondary" 
-                className="w-full py-2 text-sm group relative overflow-hidden bg-white hover:bg-gray-100"
+                className="w-full py-1.5 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
                 size="sm"
               >
-                <Link to="/" className="flex items-center justify-center gap-2">
+                <Link to="/" className="flex items-center justify-center gap-1.5">
                   <span className="font-medium relative z-10 text-blue-600">
                     En savoir plus
                   </span>
-                  <ArrowRight className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
+                  <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Link>
               </Button>

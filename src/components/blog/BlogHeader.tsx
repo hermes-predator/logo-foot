@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,7 @@ const BlogHeader = () => {
       </div>
       
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
-        Articles sur le logo de foot et pixel art
+        Articles sur le logo de foot
       </h1>
 
       <div className="relative">
@@ -27,7 +26,7 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <p className="text-base text-gray-700 leading-relaxed">
-              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football, apprenez à créer vos propres designs en pixel art ou obtenez des conseils pour votre club.
+              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo pour votre club.
             </p>
           </div>
           

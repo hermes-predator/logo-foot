@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star, Users, Shield, CheckCircle } from 'lucide-react';
 import {
@@ -115,14 +116,19 @@ const Testimonials = () => {
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
         </Carousel>
         
-        {/* Enhanced official verified reviews label */}
+        {/* Judge.me verified reviews badge */}
         <div className="flex items-center justify-center mt-6">
           <div className="flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-2 rounded-full border border-blue-200 shadow-sm">
             <div className="relative">
               <Shield className="h-4 w-4 text-blue-600" />
               <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />
             </div>
-            <span className="text-sm font-semibold text-blue-700">Avis clients vérifiés</span>
+            <span className="text-sm font-semibold text-blue-700">Avis vérifiés par</span>
+            <img 
+              src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+              alt="Judge.me Reviews" 
+              className="h-5" 
+            />
             <Badge variant="outline" className="bg-green-100 text-green-800 text-[10px] px-1.5 border-green-200">
               100% authentiques
             </Badge>

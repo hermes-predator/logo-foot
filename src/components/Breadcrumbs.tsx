@@ -28,10 +28,10 @@ const Breadcrumbs = () => {
         <BreadcrumbItem>
           <Link 
             to="/" 
-            className="flex items-center justify-center gap-2 bg-gray-100 hover:bg-purple-100 px-4 h-8 rounded-full transition-colors duration-200 group shadow-sm hover:shadow"
+            className="flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 px-4 h-8 rounded-full transition-colors duration-200 group shadow-sm hover:shadow"
           >
-            <Home className="h-4 w-4 text-gray-600 group-hover:text-purple-600" />
-            <span className="text-gray-700 group-hover:text-purple-700 font-medium text-sm">Accueil</span>
+            <Home className="h-4 w-4 text-gray-600" />
+            <span className="text-gray-700 font-medium text-sm">Accueil</span>
           </Link>
         </BreadcrumbItem>
         
@@ -43,10 +43,10 @@ const Breadcrumbs = () => {
             <BreadcrumbItem>
               <Link 
                 to={`/${paths.slice(0, index + 1).join('/')}`}
-                className="px-3 py-1 bg-gray-100 hover:bg-purple-100 rounded-full text-gray-700 hover:text-purple-700 font-medium transition-all duration-200 shadow-sm hover:shadow flex items-center relative overflow-hidden group"
+                className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-700 font-medium transition-all duration-200 shadow-sm hover:shadow flex items-center relative overflow-hidden group"
               >
                 <span>{generateBreadcrumbLabel(path)}</span>
-                <span className="absolute inset-0 w-full h-full bg-purple-500/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                <span className="absolute inset-0 w-full h-full bg-gray-500/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
               </Link>
             </BreadcrumbItem>
           </React.Fragment>

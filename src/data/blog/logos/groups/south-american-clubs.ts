@@ -1,8 +1,14 @@
 
-import { BlogPost } from '../../../../types/blog';
-import { flamengoLogoPost } from '../flamengo-logo';
+import { BlogPost } from "../../../../types/blog";
 
-// Group all South American club logo posts
+// Import des articles existants de clubs sud-américains
+import { flamengoLogoPost } from '../flamengo-logo';
+import { bocaJuniorsLogoPost } from '../boca-juniors-logo';
+import { southAmericanClubsPost } from '../south-american-clubs';
+
+// Regroupement des posts de clubs sud-américains
 export const southAmericanClubPosts: BlogPost[] = [
-  flamengoLogoPost
+  bocaJuniorsLogoPost,
+  flamengoLogoPost,
+  southAmericanClubsPost
 ];

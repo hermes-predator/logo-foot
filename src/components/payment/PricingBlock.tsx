@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw } from 'lucide-react';
 import {
@@ -10,8 +9,8 @@ import {
 const PricingBlock = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden">
-      {/* Effet de verre simplifié - moins coûteux en performance */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
+      {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
+      <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
       
       <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-3">

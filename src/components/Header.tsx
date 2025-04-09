@@ -2,7 +2,6 @@
 import { Home, BookOpen, FileArchive } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import TranslateWidget from "./TranslateWidget";
 
 const Header = () => {
   const location = useLocation();
@@ -67,9 +66,6 @@ const Header = () => {
             <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
             <span>Blog</span>
           </Link>
-          
-          {/* Widget de traduction Google */}
-          <TranslateWidget />
         </div>
       </nav>
     </header>

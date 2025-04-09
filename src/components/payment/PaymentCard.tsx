@@ -22,9 +22,9 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   }, []);
 
   return (
-    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform overflow-hidden">
+    <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
       {/* Badge Google Drive épousant parfaitement le coin supérieur gauche */}
-      <div className="absolute -top-0.5 -left-0.5 z-20">
+      <div className="absolute -top-1 -left-1 z-20">
         <GoogleDriveBadge />
       </div>
       

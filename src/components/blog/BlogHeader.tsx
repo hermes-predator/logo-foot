@@ -34,6 +34,9 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <div className="flex flex-wrap gap-2">
+              <Link to="/blog" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+                Tout
+              </Link>
               <Link to="/blog?category=logos" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
                 Logos & Design
               </Link>

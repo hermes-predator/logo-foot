@@ -40,6 +40,7 @@ import { dynamoKievLogoPost } from './dynamo-kiev-logo';
 import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
 import { bukayoSakaPost } from './bukayo-saka';
+import { mathysTelPost } from './mathys-tel';
 
 // Définir la liste des articles d'analyse
 export const analysisPosts: BlogPost[] = [
@@ -80,7 +81,8 @@ export const analysisPosts: BlogPost[] = [
   dynamoKievLogoPost,
   mbappeEtSonFilsPost,
   psgRumeursTransfertPost,
-  bukayoSakaPost
+  bukayoSakaPost,
+  mathysTelPost
 ];
 
 // Liste des joueurs de football (identifiés par leur article dédié)
@@ -110,7 +112,8 @@ export const footballPlayers = [
   williamPachoPost,
   alejandroGarnachoPost,
   williamSalibaPost,
-  bukayoSakaPost
+  bukayoSakaPost,
+  mathysTelPost
 ];
 
 // Nombre de joueurs de football dans notre base de données

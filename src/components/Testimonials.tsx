@@ -76,13 +76,6 @@ const Testimonials = () => {
   return (
     <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
       <div className="w-full px-4 sm:px-2 relative">
-        <div className="flex items-center justify-center mb-4">
-          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100/70 shadow-sm">
-            <Users className="h-4 w-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Avis clients</span>
-          </div>
-        </div>
-        
         <Carousel
           opts={{
             align: "start",
@@ -121,6 +114,14 @@ const Testimonials = () => {
           <CarouselPrevious className="hidden md:flex -left-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
         </Carousel>
+        
+        {/* Moved the blue label with "Avis clients" to the bottom */}
+        <div className="flex items-center justify-center mt-6">
+          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100/70 shadow-sm">
+            <Users className="h-4 w-4 text-blue-600" />
+            <span className="text-sm font-medium text-blue-700">Avis clients</span>
+          </div>
+        </div>
       </div>
     </section>
   );

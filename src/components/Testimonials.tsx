@@ -75,7 +75,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
+    <section className="w-full pt-8 pb-0 bg-white sticky top-[95vh] z-10">
       <div className="w-full px-4 sm:px-2 relative">
         <Carousel
           opts={{
@@ -118,7 +118,7 @@ const Testimonials = () => {
         
         {/* Judge.me verified reviews badge */}
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-blue-200 shadow-sm">
+          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
             <div className="relative">
               <Shield className="h-4 w-4 text-blue-600" />
               <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />

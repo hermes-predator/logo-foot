@@ -11,7 +11,7 @@ import { portugueseClubPosts } from './groups/portuguese-clubs';
 import { otherEuropeanClubPosts } from './groups/other-european-clubs';
 import { southAmericanClubPosts } from './groups/south-american-clubs';
 import { nonEuropeanClubPosts } from './groups/non-european-clubs';
-import { africanClubPosts } from './groups/african-clubs';
+import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
 import { generalContentPosts } from './groups/general-content';
 
@@ -28,7 +28,7 @@ export const logoPosts: BlogPost[] = [
   ...otherEuropeanClubPosts,
   ...southAmericanClubPosts,
   ...nonEuropeanClubPosts,
-  ...africanClubPosts,
+  ...africanaClubPosts,
   ...asianClubPosts,
   ...generalContentPosts
 ];

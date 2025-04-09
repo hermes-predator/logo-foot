@@ -23,7 +23,7 @@ import { mlsLogoPost } from '../mls-logos';
 import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
 import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
 import { eredivisieLogoPost } from '../eredivisie-logo';
-import { primeiraLigaLogoPost } from '../primeira-liga-championship';
+import { primeiraLigaPost } from '../primeira-liga-championship';
 import { frenchLeaguesSchemaPost } from '../french-leagues-schema';
 import { d1ArkemaLogoPost } from '../d1-arkema-logo';
 
@@ -50,7 +50,7 @@ export const competitionsLogos: BlogPost[] = [
   chineseSuperLeagueLogoPost,
   saudiProLeagueLogoPost,
   eredivisieLogoPost,
-  primeiraLigaLogoPost,
+  primeiraLigaPost,
   frenchLeaguesSchemaPost,
   d1ArkemaLogoPost
 ];

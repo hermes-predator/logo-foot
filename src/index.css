@@ -356,6 +356,20 @@ pre code {
   @apply bg-transparent text-inherit p-0;
 }
 
+/* Add the fast blink animation for the badges */
+@keyframes fastBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fastBlink {
+  animation: fastBlink 1s ease-in-out infinite;
+}
+
 /* Add the fast blink animation for the ZIP badge */
 @keyframes fastBlink {
   0%, 100% {

@@ -110,6 +110,10 @@ export default {
 						transform: 'scale(1.5)',
 						opacity: '0'
 					}
+				},
+				'fastBlink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
 				}
 			},
 			animation: {
@@ -119,7 +123,8 @@ export default {
 				'shine': 'shine 2s ease-out infinite',
 				'ping': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
 				'bounce': 'bounce 1s infinite',
-				'glow': 'glow 1.5s infinite alternate'
+				'glow': 'glow 1.5s infinite alternate',
+				'fastBlink': 'fastBlink 1s ease-in-out infinite'
 			}
 		}
 	},

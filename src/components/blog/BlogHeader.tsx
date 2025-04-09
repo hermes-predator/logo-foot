@@ -52,7 +52,7 @@ const BlogHeader = () => {
                 Tout
               </Link>
               <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
-                Logos & Design
+                Logos
               </Link>
               <Link to="/blog?category=history" className={getCategoryStyle('history')}>
                 Histoire

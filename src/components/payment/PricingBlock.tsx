@@ -6,7 +6,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import GoogleDriveBadge from './GoogleDriveBadge';
 
 const PricingBlock = () => {
   return (
@@ -36,8 +35,6 @@ const PricingBlock = () => {
       </div>
       
       <div className="flex flex-col md:flex-row items-center gap-3 relative z-10">
-        <GoogleDriveBadge />
-        
         <div className="group">
           <Tooltip>
             <TooltipTrigger asChild>

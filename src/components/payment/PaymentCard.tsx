@@ -6,6 +6,7 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
+import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 
 interface PaymentCardProps {
@@ -22,6 +23,11 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
 
   return (
     <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
+      {/* Positionnement du badge Google Drive dans le coin supérieur gauche */}
+      <div className="absolute top-6 left-6 z-20">
+        <GoogleDriveBadge />
+      </div>
+      
       {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
       <div className="absolute top-16 right-6 opacity-10 text-blue-900 transform -rotate-12">
         <Folder size={80} />
@@ -30,7 +36,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       <SparkleEffects />
       <RecentBuyersBadge count={recentBuyers} />
       
-      <div className="mb-6 relative z-10">
+      <div className="mb-6 relative z-10 mt-8">
         <div className="flex items-center gap-2">
           <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>

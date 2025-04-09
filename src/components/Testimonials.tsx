@@ -125,7 +125,7 @@ const Testimonials = () => {
               className="h-4" 
             />
             <div className="flex flex-col">
-              <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés</span>
+              <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
               <div className="flex items-center gap-1">
                 <div className="flex">
                   <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />

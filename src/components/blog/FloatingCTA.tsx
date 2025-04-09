@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, X } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
   const isMobile = useIsMobile();
   const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
   
@@ -23,22 +22,7 @@ const FloatingCTA = () => {
     };
   }, []);
 
-  // Check if user has previously dismissed the banner in this session
-  useEffect(() => {
-    const sessionDismissed = sessionStorage.getItem('floatingCTADismissed');
-    if (sessionDismissed === 'true') {
-      setDismissed(true);
-    }
-  }, []);
-
-  const handleDismiss = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDismissed(true);
-    sessionStorage.setItem('floatingCTADismissed', 'true');
-  };
-
-  if (!visible || dismissed) return null;
+  if (!visible) return null;
 
   return (
     <div 
@@ -51,18 +35,9 @@ const FloatingCTA = () => {
     >
       <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">
         <div className="container mx-auto relative">
-          {/* Close button */}
-          <button 
-            onClick={handleDismiss}
-            className="absolute right-1 top-1 md:right-2 md:top-2 p-1 rounded-full bg-white/20 hover:bg-white/30 transition-colors text-white"
-            aria-label="Fermer"
-          >
-            <X className="h-3 w-3 md:h-4 md:w-4" />
-          </button>
-          
           {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (
-            <div className="relative pr-6">              
+            <div className="relative">              
               <div className="flex items-center mb-2">
                 <span className={`inline-block bg-white/30 p-1.5 md:p-2 rounded-full mr-2 md:mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
                   <Download 

@@ -2,9 +2,23 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 const BlogHeader = () => {
+  const [searchParams] = useSearchParams();
+  const activeCategory = searchParams.get('category');
+
+  // Fonction pour déterminer le style de la catégorie selon son état actif
+  const getCategoryStyle = (category: string | null) => {
+    if ((category === null && activeCategory === null) || 
+        (category === activeCategory)) {
+      // Style pour la catégorie active
+      return "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm transition-colors shadow-sm";
+    }
+    // Style pour les autres catégories
+    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
+  };
+
   return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
@@ -34,22 +48,22 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <div className="flex flex-wrap gap-2">
-              <Link to="/blog" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog" className={getCategoryStyle(null)}>
                 Tout
               </Link>
-              <Link to="/blog?category=logos" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
                 Logos & Design
               </Link>
-              <Link to="/blog?category=history" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog?category=history" className={getCategoryStyle('history')}>
                 Histoire
               </Link>
-              <Link to="/blog?category=technical" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog?category=technical" className={getCategoryStyle('technical')}>
                 Technique
               </Link>
-              <Link to="/blog?category=analysis" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
                 Analyses
               </Link>
-              <Link to="/blog?category=pixel-art" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+              <Link to="/blog?category=pixel-art" className={getCategoryStyle('pixel-art')}>
                 Pixel Art
               </Link>
             </div>

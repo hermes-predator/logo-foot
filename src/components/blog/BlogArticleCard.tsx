@@ -29,7 +29,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
           </div>
         </div>
         
-        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none transition-colors">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none">
           {post.title}
         </h3>
         
@@ -45,7 +45,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
           Lire l'article
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            className="h-3.5 w-3.5" 
+            className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" 
             fill="none" 
             viewBox="0 0 24 24" 
             stroke="currentColor"

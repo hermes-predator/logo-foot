@@ -75,7 +75,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full pt-8 pb-0 bg-gray-50 border-t sticky top-[95vh] z-10">
+    <section className="w-full pt-8 pb-0 bg-gray-50 sticky top-[95vh] z-10">
       <div className="w-full px-4 sm:px-2 relative">
         <Carousel
           opts={{

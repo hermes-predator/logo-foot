@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -330,19 +329,8 @@ const BlogPost = () => {
       <FloatingCTA />
       
       <div className="container mx-auto py-3 md:py-5 px-3">
-        {/* Breadcrumbs améliorées avec lien d'accueil */}
-        <nav className="flex items-center text-sm mb-4 bg-white/70 backdrop-blur-sm py-2 px-4 rounded-full shadow-sm">
-          <Link to="/" className="text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1 font-medium">
-            <Home className="h-3.5 w-3.5" />
-            <span>Accueil</span>
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 mx-2 text-gray-400" />
-          <Link to="/blog" className="text-gray-600 hover:text-purple-800 transition-colors">
-            Blog
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 mx-2 text-gray-400" />
-          <span className="text-gray-800 font-medium truncate">{post.title.split(':')[0]}</span>
-        </nav>
+        {/* Replace the custom breadcrumbs with the standard Breadcrumbs component */}
+        <Breadcrumbs />
         
         <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
           {/* Colonne principale */}
@@ -564,4 +552,3 @@ const BlogPost = () => {
 };
 
 export default BlogPost;
-

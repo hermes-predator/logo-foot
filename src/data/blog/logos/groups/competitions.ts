@@ -21,6 +21,7 @@ import { primeiraLigaPost } from '../primeira-liga-championship';
 import { coppaItaliaLogoPost } from '../coppa-italia-logo';
 import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
 import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
+import { d1ArkemaLogoPost } from '../d1-arkema-logo';
 
 // Group all competition logo posts
 export const competitionPosts: BlogPost[] = [
@@ -42,5 +43,6 @@ export const competitionPosts: BlogPost[] = [
   primeiraLigaPost,
   coppaItaliaLogoPost,
   chineseSuperLeagueLogoPost,
-  saudiProLeagueLogoPost
+  saudiProLeagueLogoPost,
+  d1ArkemaLogoPost
 ];

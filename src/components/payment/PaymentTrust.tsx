@@ -13,7 +13,7 @@ const PaymentTrust = () => {
         // Augmenter de 1 toutes les quelques minutes
         return prevCount + 1;
       });
-    }, 2 * 60 * 1000); // Augmente toutes les 2 minutes
+    }, 3 * 60 * 1000); // Augmente toutes les 3 minutes
     
     return () => clearInterval(interval);
   }, []);

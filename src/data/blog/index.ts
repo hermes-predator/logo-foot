@@ -7,57 +7,52 @@ import { analysisPosts } from './analysis';
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
-  // Création d'un Map pour détecter et résoudre les doublons
-  const idMap = new Map<number, number>(); // Map<ID, count>
-  const processedPosts: BlogPost[] = [];
-  let maxId = 0;
+  // Map pour stocker les posts par ID 
+  const idMap = new Map<number, BlogPost[]>();
   
-  // Premier passage pour trouver l'ID maximum et détecter les doublons
+  // Regrouper les posts par ID pour détecter les doublons
   posts.forEach(post => {
-    maxId = Math.max(maxId, post.id);
-    
-    // Compter combien de fois chaque ID apparaît
-    idMap.set(post.id, (idMap.get(post.id) || 0) + 1);
+    if (!idMap.has(post.id)) {
+      idMap.set(post.id, []);
+    }
+    idMap.get(post.id)?.push(post);
   });
   
-  // Deuxième passage pour réattribuer des IDs en cas de doublons
-  let nextUniqueId = maxId + 1;
-  const idRemap = new Map<number, number>(); // Pour suivre les réattributions d'ID
+  // Trouver l'ID maximum actuel
+  let maxId = Math.max(...posts.map(post => post.id));
+  const uniquePosts: BlogPost[] = [];
+  let duplicatesFound = 0;
   
-  posts.forEach(post => {
-    // Si c'est un ID en doublon et qu'il n'a pas encore été remappé
-    if (idMap.get(post.id) > 1 && !idRemap.has(post.id)) {
-      // Le premier post avec cet ID conserve son ID
-      idRemap.set(post.id, post.id);
-      processedPosts.push(post);
+  // Traiter chaque groupe d'ID
+  idMap.forEach((postsWithSameId, id) => {
+    if (postsWithSameId.length === 1) {
+      // Cas simple: ID unique, on garde tel quel
+      uniquePosts.push(postsWithSameId[0]);
+    } else {
+      // Cas avec doublons
+      duplicatesFound += postsWithSameId.length - 1;
       
-      // On réduit le compteur car un post avec cet ID a été traité
-      idMap.set(post.id, idMap.get(post.id) - 1);
-    } 
-    // Si c'est un ID en doublon déjà rencontré précédemment
-    else if (idMap.get(post.id) > 1) {
-      // On crée une copie du post avec un nouvel ID unique
-      const postWithNewId = {
-        ...post,
-        id: nextUniqueId
-      };
+      // Garder le premier post avec l'ID d'origine
+      uniquePosts.push(postsWithSameId[0]);
       
-      console.warn(`Doublon résolu: ID ${post.id} (${post.title}) → nouvel ID ${nextUniqueId}`);
-      nextUniqueId++;
-      
-      // On réduit le compteur car un post avec cet ID a été traité
-      idMap.set(post.id, idMap.get(post.id) - 1);
-      
-      processedPosts.push(postWithNewId);
-    } 
-    // Si c'est un ID unique ou la dernière occurrence d'un ID en doublon
-    else {
-      processedPosts.push(post);
+      // Réattribuer de nouveaux IDs aux doublons
+      for (let i = 1; i < postsWithSameId.length; i++) {
+        maxId++;
+        const newPost = {
+          ...postsWithSameId[i],
+          id: maxId
+        };
+        
+        console.warn(`Doublon résolu: ID ${postsWithSameId[i].id} (${postsWithSameId[i].title}) → nouvel ID ${maxId}`);
+        uniquePosts.push(newPost);
+      }
     }
   });
   
-  console.log(`Total d'articles avec IDs uniques: ${processedPosts.length}/${posts.length}`);
-  return processedPosts;
+  console.log(`Total d'articles avec IDs uniques: ${uniquePosts.length}/${posts.length}`);
+  console.log(`Nombre de doublons résolus: ${duplicatesFound}`);
+  
+  return uniquePosts;
 };
 
 // Combiner tous les articles et assurer des IDs uniques
@@ -75,3 +70,4 @@ blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 
 // Log pour débogage
 console.log(`Nombre total d'articles après traitement des doublons: ${blogPosts.length}`);
+

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, Grid3X3 } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -49,8 +49,7 @@ const BlogHeader = () => {
               <Link to="/blog?category=analysis" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
                 Analyses
               </Link>
-              <Link to="/blog?category=pixel-art" className="px-3 py-1 bg-purple-100 hover:bg-purple-200 rounded-full text-sm transition-colors flex items-center gap-1">
-                <Grid3X3 className="h-3 w-3" />
+              <Link to="/blog?category=pixel-art" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
                 Pixel Art
               </Link>
             </div>

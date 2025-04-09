@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Star, Users, Shield, CheckCircle } from 'lucide-react';
 import {
@@ -117,7 +118,7 @@ const Testimonials = () => {
         
         {/* Judge.me verified reviews badge */}
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-2 rounded-full border border-blue-200 shadow-sm">
+          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-blue-200 shadow-sm">
             <div className="relative">
               <Shield className="h-4 w-4 text-blue-600" />
               <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />

@@ -6,6 +6,7 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
+import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 
 interface PaymentCardProps {
@@ -28,7 +29,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       </div>
       
       <SparkleEffects />
-      
+      <GoogleDriveBadge />
       <RecentBuyersBadge count={recentBuyers} />
       
       <div className="mb-6 relative z-10">

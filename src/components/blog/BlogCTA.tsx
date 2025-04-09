@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Download, ArrowRight, Star, Folder, Check, Sparkle, Sparkles, Badge, ShieldCheck } from 'lucide-react';
@@ -117,13 +118,17 @@ const BlogCTA = () => {
                       className={`bg-purple-600 hover:bg-purple-700 shadow-sm w-full sm:w-auto ${
                         isHovered ? 'animate-pulse' : ''
                       }`}
+                      onClick={() => {
+                        const returnUrl = `${window.location.origin}/payment-success`;
+                        window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                      }}
                     >
-                      <Link to="/" className="flex items-center justify-center gap-1.5 w-full">
+                      <div className="flex items-center justify-center gap-1.5 w-full">
                         <span className="inline-flex items-center justify-center">
                           <Download className="h-4 w-4" />
                         </span>
                         <span>Télécharger maintenant</span>
-                      </Link>
+                      </div>
                     </Button>
                     <Button 
                       variant="outline" 

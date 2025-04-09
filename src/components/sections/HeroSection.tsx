@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -112,7 +113,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                         <Button 
                           onClick={() => {
                             const returnUrl = `${window.location.origin}/payment-success`;
-                            window.location.href = `https://pay.sumup.com/b2c/QVB0KC9U?return_url=${encodeURIComponent(returnUrl)}`;
+                            window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                           }}
                           variant="outline" 
                           size="sm" 
@@ -144,7 +145,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   size="lg"
                   onClick={() => {
                     const returnUrl = `${window.location.origin}/payment-success`;
-                    window.location.href = `https://pay.sumup.com/b2c/QVB0KC9U?return_url=${encodeURIComponent(returnUrl)}`;
+                    window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                   }}
                   className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-[17px] gap-4 hover:-translate-y-0.5 px-9 py-4 h-auto relative group overflow-hidden"
                 >

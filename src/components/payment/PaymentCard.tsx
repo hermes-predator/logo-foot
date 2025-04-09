@@ -23,11 +23,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
 
   return (
     <div className="relative p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
-      {/* Positionnement du badge Google Drive dans le coin supérieur gauche */}
-      <div className="absolute top-6 left-6 z-20">
-        <GoogleDriveBadge />
-      </div>
-      
       {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
       <div className="absolute top-16 right-6 opacity-10 text-blue-900 transform -rotate-12">
         <Folder size={80} />
@@ -41,6 +36,11 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>
         <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
+        
+        {/* Google Drive Badge déplacé ici, juste en dessous de la description */}
+        <div className="mt-2">
+          <GoogleDriveBadge />
+        </div>
       </div>
 
       <div className="relative z-10">

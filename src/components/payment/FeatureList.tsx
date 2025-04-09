@@ -55,7 +55,7 @@ const FeatureList = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+    <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8 pt-6 mt-3">
       {features.map((feature, index) => (
         <Feature 
           key={index} 

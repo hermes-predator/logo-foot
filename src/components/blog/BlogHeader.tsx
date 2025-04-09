@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, Grid3X3 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+
 const BlogHeader = () => {
   return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
@@ -27,8 +28,29 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <p className="text-base text-gray-700 leading-relaxed">
-              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football, apprenez à créer votre propre logo ou découvrez l'univers du pixel art foot.
+              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football, apprenez à créer votre propre logo ou découvrez l'univers du <Link to="/blog?category=pixel-art" className="text-purple-600 hover:underline">pixel art foot</Link>.
             </p>
+          </div>
+          
+          <div className="mb-4">
+            <div className="flex flex-wrap gap-2">
+              <Link to="/blog?category=logos" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+                Logos & Design
+              </Link>
+              <Link to="/blog?category=history" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+                Histoire
+              </Link>
+              <Link to="/blog?category=technical" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+                Technique
+              </Link>
+              <Link to="/blog?category=analysis" className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors">
+                Analyses
+              </Link>
+              <Link to="/blog?category=pixel-art" className="px-3 py-1 bg-purple-100 hover:bg-purple-200 rounded-full text-sm transition-colors flex items-center gap-1">
+                <Grid3X3 className="h-3 w-3" />
+                Pixel Art
+              </Link>
+            </div>
           </div>
           
           {/* Modification du style du CTA avec des couleurs jaune ambré */}
@@ -51,4 +73,5 @@ const BlogHeader = () => {
       </div>
     </div>;
 };
+
 export default BlogHeader;

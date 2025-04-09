@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
+import { BlogCategory, BLOG_CATEGORIES } from '../types/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { usePagination } from '../hooks/usePagination';
@@ -9,12 +10,37 @@ import BlogHeader from '../components/blog/BlogHeader';
 import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 import FloatingCTA from '../components/blog/FloatingCTA';
+import { useSearchParams } from 'react-router-dom';
 
 const Blog = () => {
+  const [searchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category');
   const [isLoading, setIsLoading] = useState(true);
-  const [displayablePosts, setDisplayablePosts] = useState(blogPosts);
+  const [filteredPosts, setFilteredPosts] = useState(blogPosts);
   
-  // Log the initial blog posts data
+  // Filter posts based on URL parameters
+  useEffect(() => {
+    setIsLoading(true);
+    
+    if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
+      const categoryPosts = blogPosts.filter(
+        post => post.category === categoryParam as BlogCategory
+      );
+      setFilteredPosts(categoryPosts);
+      console.log(`Filtered to ${categoryPosts.length} posts in category: ${categoryParam}`);
+    } else {
+      setFilteredPosts(blogPosts);
+    }
+    
+    // Simulate loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+    
+    return () => clearTimeout(timer);
+  }, [categoryParam]);
+  
+  // Check for invalid posts
   useEffect(() => {
     console.log('Blog page loaded with', blogPosts.length, 'total posts');
     
@@ -28,69 +54,72 @@ const Blog = () => {
         invalidPosts.map(p => ({ id: p.id, title: p.title }))
       );
     }
-    
-    // Filter out any invalid posts for display
-    if (invalidPosts.length > 0) {
-      setDisplayablePosts(blogPosts.filter(post => 
-        post.id && post.title && post.excerpt && post.date && post.content
-      ));
-    }
-    
-    // Simulate loading
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-    
-    return () => clearTimeout(timer);
   }, []);
 
-  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(displayablePosts);
+  const { currentPage, setCurrentPage, totalPages, paginatedItems, totalItems } = usePagination(filteredPosts);
   const currentYear = new Date().getFullYear();
 
-  // Debug
-  useEffect(() => {
-    console.log('Pagination state:', {
-      currentPage,
-      totalPages,
-      itemsPerPage: paginatedItems.length,
-      totalItems
-    });
-  }, [currentPage, totalPages, paginatedItems, totalItems]);
+  // Get the category title for the page
+  const categoryTitle = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
+    ? BLOG_CATEGORIES[categoryParam as BlogCategory].name 
+    : "Tous les articles";
+
+  // Get the category description
+  const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory]
+    ? BLOG_CATEGORIES[categoryParam as BlogCategory].description
+    : "Explorez tous nos articles sur les logos de football";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear} | Actualités & Analyses`}</title>
+        <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta 
           name="description" 
-          content={`Explorez notre guide complet sur les logos de football ${currentYear}. Histoire des emblèmes, analyse des designs, actualités et évolution des logos des plus grands clubs de football.`}
+          content={`${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`}
         />
         <meta 
           property="og:title" 
-          content={`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear} | Actualités & Analyses`}
+          content={`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}
         />
         <meta 
           property="og:description" 
-          content={`Découvrez notre expertise sur les logos de football : histoire des emblèmes, évolution des designs, guides de création et analyses détaillées. Le guide de référence ${currentYear} pour tout savoir sur les logos du football.`}
+          content={categoryDescription}
         />
         <meta 
           name="keywords" 
-          content={`blog logo foot ${currentYear}, logos football, emblèmes foot, design football, histoire logos football, guide logos foot, actualités logos foot, écussons clubs, logos clubs professionnels`}
+          content={`blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot, ${categoryParam === 'pixel-art' ? 'pixel art foot, pixel art maillot de foot, pixel art logo foot' : 'actualités logos foot'}`}
         />
         <meta property="og:type" content="blog" />
-        <meta property="og:url" content="https://logo-foot.com/blog" />
+        <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="fr-FR" />
-        <link rel="canonical" href="https://logo-foot.com/blog" />
+        <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
-        <meta name="twitter:description" content={`Plongez dans l'univers des logos de football ${currentYear} : histoire, évolution, design et tendances des emblèmes qui font la richesse du football.`} />
+        <meta name="twitter:title" content={`${categoryTitle} | Blog Logo Foot ${currentYear}`} />
+        <meta name="twitter:description" content={categoryDescription} />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
       <main className="container mx-auto px-4 py-3 pb-80">
         <Breadcrumbs />
         <BlogHeader />
+        
+        {categoryParam && (
+          <div className="pl-4 mb-6">
+            <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
+            <p className="text-gray-600">{categoryDescription}</p>
+            {categoryParam === 'pixel-art' && (
+              <div className="mt-3 p-3 bg-purple-50 rounded-lg border border-purple-100">
+                <p className="text-sm text-purple-800">
+                  Découvrez notre collection d'articles sur le <strong>pixel art foot</strong>, 
+                  avec des tutoriels pour créer vos propres <strong>logos foot pixel art</strong> et 
+                  <strong> pixel art maillot de foot</strong>.
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+        
         <div className="mt-4">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
           {totalPages > 1 && (

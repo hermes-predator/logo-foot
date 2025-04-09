@@ -1,4 +1,5 @@
-export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis';
+
+export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art';
 
 export interface BlogSubCategory {
   id: string;
@@ -101,6 +102,30 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
         name: "Études de Cas",
         description: "Analyses détaillées de rebranding",
         slug: "case-studies"
+      }
+    ]
+  },
+  "pixel-art": {
+    name: "Pixel Art",
+    description: "Création et design de pixel art sur le thème du football",
+    subCategories: [
+      {
+        id: "team-pixel-art",
+        name: "Équipes en Pixel Art",
+        description: "Représentations pixel art des équipes de football",
+        slug: "team-pixel-art"
+      },
+      {
+        id: "pixel-art-tutorials",
+        name: "Tutoriels Pixel Art",
+        description: "Guides et tutoriels pour créer votre propre pixel art de football",
+        slug: "pixel-art-tutorials"
+      },
+      {
+        id: "pixel-art-collections",
+        name: "Collections Pixel Art",
+        description: "Collections thématiques de pixel art footballistique",
+        slug: "pixel-art-collections"
       }
     ]
   }

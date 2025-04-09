@@ -4,6 +4,7 @@ import { logoPosts } from './logos';
 import { historyPosts } from './history';
 import { technicalPosts } from './technical';
 import { analysisPosts } from './analysis';
+import { pixelArtPosts } from './pixel-art';
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
@@ -56,12 +57,13 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
 };
 
 // Combiner tous les articles et assurer des IDs uniques
-const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts];
+const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
 console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
 console.log(`- logoPosts: ${logoPosts.length}`);
 console.log(`- historyPosts: ${historyPosts.length}`);
 console.log(`- technicalPosts: ${technicalPosts.length}`);
 console.log(`- analysisPosts: ${analysisPosts.length}`);
+console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
 
 export const blogPosts = ensureUniqueIds(allPosts);
 
@@ -70,4 +72,3 @@ blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 
 // Log pour débogage
 console.log(`Nombre total d'articles après traitement des doublons: ${blogPosts.length}`);
-

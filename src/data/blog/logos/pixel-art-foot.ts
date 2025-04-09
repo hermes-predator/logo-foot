@@ -164,6 +164,6 @@ Pour un débutant, une grille de 32×32 ou 64×64 pixels est idéale. Les artist
 Absolument ! De nombreux jeux indépendants de football utilisent le pixel art pour leur esthétique. Ce style graphique permet de créer des jeux au charme rétro tout en nécessitant moins de ressources qu'un rendu 3D détaillé.
 `,
   keywords: "pixel art foot, pixel art maillot de foot, pixel art logo foot, logo foot pixel art, pixel art de foot, pixel art foot facile",
-  category: "logos",
-  subCategory: "design-guidelines"
+  category: "pixel-art",
+  subCategory: "pixel-art-tutorials"
 };

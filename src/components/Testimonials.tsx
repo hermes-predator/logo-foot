@@ -115,18 +115,15 @@ const Testimonials = () => {
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
         </Carousel>
         
-        {/* Judge.me verified reviews badge */}
+        {/* Judge.me verified reviews badge - Simplified */}
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200">
-            <div className="relative">
-              <Shield className="h-4 w-4 text-blue-600" />
-              <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />
-            </div>
-            <span className="text-sm font-semibold text-gray-600">Avis vérifiés par</span>
+          <div className="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-md border border-gray-200 hover:border-gray-300 transition-colors">
+            <Shield className="h-3.5 w-3.5 text-blue-600" />
+            <span className="text-xs font-medium text-gray-600">Avis vérifiés par</span>
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-5" 
+              className="h-4" 
             />
           </div>
         </div>

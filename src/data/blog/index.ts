@@ -1,11 +1,12 @@
+
 import { BlogPost } from '../../types/blog';
-import { logosPosts } from './logos';
+import { logoPosts } from './logos';
 import { historyPosts } from './history';
 import { technicalPosts } from './technical';
 import { analysisPosts } from './analysis';
 
 export const blogPosts: BlogPost[] = [
-  ...logosPosts,
+  ...logoPosts,
   ...historyPosts,
   ...technicalPosts,
   ...analysisPosts

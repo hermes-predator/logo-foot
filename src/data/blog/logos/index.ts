@@ -1,66 +1,39 @@
 
-import { BlogPost } from '../../../types/blog';
-import { africanaClubPosts } from './groups/african-clubs';
-import { asianClubPosts } from './groups/asian-clubs';
-import { brazilianClubPosts } from './groups/brazilian-clubs';
-import { competitionPosts } from './groups/competitions';
-import { englishClubPosts } from './groups/english-clubs';
-import { frenchClubPosts } from './groups/french-clubs';
-import { generalContentPosts } from './groups/general-content';
-import { germanClubPosts } from './groups/german-clubs';
-import { italianClubPosts } from './groups/italian-clubs';
-import { nationalTeamPosts } from './groups/national-teams';
-import { nonEuropeanClubPosts } from './groups/non-european-clubs';
-import { otherEuropeanClubPosts } from './groups/other-european-clubs';
-import { portugueseClubPosts } from './groups/portuguese-clubs';
-import { southAmericanClubPosts } from './groups/south-american-clubs';
-import { spanishClubPosts } from './groups/spanish-clubs';
-import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
-import { psgUltrasPost } from './psg-ultras';
-import { omUltrasPost } from './om-ultras';
-import { ancienLogoOmPost } from './ancien-logo-om';
-import { omLogoPost } from './om-logo';
-import { westHamLogoPost } from './west-ham-logo';
-import { westBromwichLogoPost } from './west-bromwich-logo';
-import { wolfsburgLogoPost } from './wolfsburg-logo';
-import { villarrealCfLogoPost } from './villarreal-cf-logo';
-import { valenciennesLogoPost } from './valenciennes-logo';
-import { watfordLogoPost } from './watford-logo';
-import { wolverhamptonLogoPost } from './wolverhampton-logo';
-// Suppression des importations individuelles qui sont déjà dans nonEuropeanClubPosts
-// import { alAhliLogoPost } from './al-ahli-logo';
-// import { alIttihadLogoPost } from './al-ittihad-logo';
+import { BlogPost } from '../../types/blog';
+import { logosClubs } from './groups/french-clubs';
+import { nationalTeams } from './groups/national-teams';
+import { competitionsLogos } from './groups/competitions';
+import { englishClubs } from './groups/english-clubs';
+import { spanishClubs } from './groups/spanish-clubs';
+import { italianClubs } from './groups/italian-clubs';
+import { germanClubs } from './groups/german-clubs';
+import { portugueseClubs } from './groups/portuguese-clubs';
+import { otherEuropeanClubs } from './groups/other-european-clubs';
+import { southAmericanClubs } from './groups/south-american-clubs';
+import { nonEuropeanClubs } from './groups/non-european-clubs';
+import { africanClubs } from './groups/african-clubs';
+import { asianClubs } from './groups/asian-clubs';
+import { generalContent } from './groups/general-content';
+import { d1ArkemaLogoPost } from './d1-arkema-logo';
 
-// Combine all logo-related posts into a single array
+// Combiner tous les articles sur les logos
 export const logoPosts: BlogPost[] = [
-  ...africanaClubPosts,
-  ...asianClubPosts,
-  ...brazilianClubPosts,
-  ...competitionPosts,
-  ...englishClubPosts,
-  ...frenchClubPosts,
-  ...generalContentPosts,
-  ...germanClubPosts,
-  ...italianClubPosts,
-  ...nationalTeamPosts,
-  ...nonEuropeanClubPosts, // Ceci inclut déjà alAhliLogoPost et alIttihadLogoPost
-  ...otherEuropeanClubPosts,
-  ...portugueseClubPosts,
-  ...southAmericanClubPosts,
-  ...spanishClubPosts,
-  etoileRougeBelgradeLogoPost,
-  psgUltrasPost,
-  omUltrasPost,
-  ancienLogoOmPost,
-  omLogoPost,
-  westHamLogoPost,
-  westBromwichLogoPost,
-  wolfsburgLogoPost,
-  villarrealCfLogoPost,
-  valenciennesLogoPost,
-  watfordLogoPost,
-  wolverhamptonLogoPost
-  // Suppression des références individuelles
-  // alAhliLogoPost,
-  // alIttihadLogoPost
+  ...logosClubs,
+  ...nationalTeams,
+  ...competitionsLogos,
+  ...englishClubs,
+  ...spanishClubs,
+  ...italianClubs,
+  ...germanClubs,
+  ...portugueseClubs,
+  ...otherEuropeanClubs,
+  ...southAmericanClubs,
+  ...nonEuropeanClubs,
+  ...africanClubs,
+  ...asianClubs,
+  ...generalContent,
+  d1ArkemaLogoPost
 ];
+
+// Afficher le nombre total d'articles sur les logos
+console.log(`Nombre total d'articles sur les logos: ${logoPosts.length}`);

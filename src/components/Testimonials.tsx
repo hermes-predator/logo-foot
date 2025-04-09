@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star, Users, Shield, CheckCircle } from 'lucide-react';
 import {
@@ -129,9 +128,6 @@ const Testimonials = () => {
               alt="Judge.me Reviews" 
               className="h-5" 
             />
-            <Badge variant="outline" className="bg-green-100 text-green-800 text-[10px] px-1.5 border-green-200">
-              100% authentiques
-            </Badge>
           </div>
         </div>
       </div>

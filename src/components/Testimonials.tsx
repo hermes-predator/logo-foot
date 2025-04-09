@@ -118,7 +118,7 @@ const Testimonials = () => {
         
         {/* Judge.me verified reviews badge - Premium & Discreet */}
         <div className="flex items-center justify-center mt-6">
-          <div className="inline-flex items-center gap-2.5 bg-white px-3.5 py-1.5 rounded-md border border-gray-100 shadow-sm hover:shadow transition-all duration-200">
+          <div className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200">
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 

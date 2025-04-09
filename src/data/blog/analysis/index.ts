@@ -41,6 +41,7 @@ import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
 import { bukayoSakaPost } from './bukayo-saka';
 import { mathysTelPost } from './mathys-tel';
+import { judeBellinghamPost } from './jude-bellingham';
 
 // Définir la liste des articles d'analyse
 export const analysisPosts: BlogPost[] = [
@@ -82,7 +83,8 @@ export const analysisPosts: BlogPost[] = [
   mbappeEtSonFilsPost,
   psgRumeursTransfertPost,
   bukayoSakaPost,
-  mathysTelPost
+  mathysTelPost,
+  judeBellinghamPost
 ];
 
 // Liste des joueurs de football (identifiés par leur article dédié)
@@ -113,7 +115,8 @@ export const footballPlayers = [
   alejandroGarnachoPost,
   williamSalibaPost,
   bukayoSakaPost,
-  mathysTelPost
+  mathysTelPost,
+  judeBellinghamPost
 ];
 
 // Nombre de joueurs de football dans notre base de données

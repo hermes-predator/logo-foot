@@ -6,14 +6,14 @@ import { BadgeCheck } from 'lucide-react';
 const GoogleDriveBadge = () => {
   return (
     <Badge 
-      className="inline-flex items-center gap-1.5 px-3 py-1.5 mt-4 bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200 shadow-sm hover:transform hover:scale-105 transition-all duration-300"
+      className="inline-flex items-center gap-2 px-4 py-2 mt-4 bg-blue-50 text-blue-600 border border-blue-200 shadow-sm"
     >
-      <BadgeCheck className="h-3.5 w-3.5" />
-      <span className="font-medium">Stockable sur Google Drive</span>
+      <BadgeCheck className="h-4 w-4" />
+      <span className="font-medium text-sm">Stockable sur Google Drive</span>
       <img 
         src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
         alt="Google Drive" 
-        className="h-4 ml-1" 
+        className="h-5 ml-1" 
       />
     </Badge>
   );

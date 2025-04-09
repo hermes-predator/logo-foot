@@ -5,12 +5,14 @@ import { BlogPost } from "../../../../types/blog";
 import { flamengoLogoPost } from '../flamengo-logo';
 import { bocaJuniorsLogoPost } from '../boca-juniors-logo';
 import { riverPlateLogoPost } from '../river-plate-logo';
+import { palmeirasLogoPost } from '../palmeiras-logo';
 import { southAmericanClubsPost } from '../south-american-clubs';
 
 // Regroupement des posts de clubs sud-américains
 export const southAmericanClubPosts: BlogPost[] = [
   bocaJuniorsLogoPost,
   flamengoLogoPost,
+  palmeirasLogoPost,
   riverPlateLogoPost,
   southAmericanClubsPost
 ];

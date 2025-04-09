@@ -29,7 +29,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       </div>
       
       <SparkleEffects />
-      <GoogleDriveBadge />
       <RecentBuyersBadge count={recentBuyers} />
       
       <div className="mb-6 relative z-10">
@@ -37,6 +36,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>
         <p className="text-gray-600">La plus grande collection de logos de football en haute qualité</p>
+        <GoogleDriveBadge />
       </div>
 
       <div className="relative z-10">

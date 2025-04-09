@@ -75,7 +75,13 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="w-full pt-8 pb-0 bg-gradient-to-b from-white to-blue-50/30 sticky top-[95vh] z-10">
-      <div className="w-full px-2">
+      <div className="w-full px-4 sm:px-2 relative">
+        <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100/70 shadow-sm">
+            <Users className="h-4 w-4 text-blue-600" />
+            <span className="text-sm font-medium text-blue-700">Avis clients</span>
+          </div>
+        </div>
         
         <Carousel
           opts={{
@@ -87,18 +93,21 @@ const Testimonials = () => {
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 pb-4">
-                <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px]">
+                <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col min-h-[180px] border border-gray-100 will-change-transform hover:translate-y-[-2px]">
                   <div className="flex items-center gap-1 text-yellow-400 mb-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                    {[...Array(5 - testimonial.rating)].map((_, i) => (
+                      <Star key={i + testimonial.rating} className="w-3.5 h-3.5 text-gray-200" />
                     ))}
                   </div>
                   <p className="text-gray-600 italic mb-3 flex-grow text-sm font-medium">
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
-                      <MessageCircle className="w-3.5 h-3.5 text-blue-600" />
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                      <MessageCircle className="w-3.5 h-3.5 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
@@ -109,8 +118,8 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-5" />
-          <CarouselNext className="hidden md:flex -right-5" />
+          <CarouselPrevious className="hidden md:flex -left-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
+          <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
         </Carousel>
       </div>
     </section>

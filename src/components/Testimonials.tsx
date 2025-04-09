@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { MessageCircle, Star, Users } from 'lucide-react';
+import { MessageCircle, Star, Users, Shield, CheckCircle } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -8,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Badge } from "@/components/ui/badge";
 
 const testimonials = [
   {
@@ -115,11 +115,17 @@ const Testimonials = () => {
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
         </Carousel>
         
-        {/* Moved the blue label with "Avis clients" to the bottom */}
+        {/* Enhanced official verified reviews label */}
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100/70 shadow-sm">
-            <Users className="h-4 w-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Avis clients</span>
+          <div className="flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-2 rounded-full border border-blue-200 shadow-sm">
+            <div className="relative">
+              <Shield className="h-4 w-4 text-blue-600" />
+              <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />
+            </div>
+            <span className="text-sm font-semibold text-blue-700">Avis clients vérifiés</span>
+            <Badge variant="outline" className="bg-green-100 text-green-800 text-[10px] px-1.5 border-green-200">
+              100% authentiques
+            </Badge>
           </div>
         </div>
       </div>

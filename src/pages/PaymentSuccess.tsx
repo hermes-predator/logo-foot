@@ -165,11 +165,11 @@ const PaymentSuccess = () => {
                 </div>
                 <div class="info-row">
                   <div>⦗FRONT-CLOUD⦘~ Football.zip</div>
-                  <div>8,00 €</div>
+                  <div>9,00 €</div>
                 </div>
               </div>
               
-              <div class="total">Total: 8,00 €</div>
+              <div class="total">Total: 9,00 €</div>
               
               <div class="footer">
                 <p>Merci pour votre confiance. Pour toute question, contactez notre service client : contact@logo-foot.com</p>
@@ -220,14 +220,14 @@ const PaymentSuccess = () => {
         // Produit - utiliser une version compatible PDF du nom du produit
         doc.setFont("helvetica", "normal");
         doc.text("FRONT-CLOUD ~ Football.zip", 20, 90);
-        doc.text("8,00 €", 170, 90);
+        doc.text("9,00 €", 170, 90);
         
         // Ligne de séparation
         doc.line(20, 100, 190, 100);
         
         // Total
         doc.setFont("helvetica", "bold");
-        doc.text("Total: 8,00 €", 170, 110);
+        doc.text("Total: 9,00 €", 170, 110);
         
         // Pied de page
         doc.setFont("helvetica", "normal");
@@ -273,7 +273,7 @@ const PaymentSuccess = () => {
           
           <div className="space-y-2">
             <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
-              Paiement confirmé <span className="text-green-600">8,00€</span>
+              Paiement confirmé <span className="text-green-600">9,00€</span>
             </h1>
             <p className="text-gray-600 max-w-md mx-auto">
               Merci pour votre achat. Votre commande <span className="font-semibold">{orderId}</span> a été traitée avec succès.

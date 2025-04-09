@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Download, ArrowRight, Star, Folder, Check, Sparkle, Sparkles, Badge, ShieldCheck } from 'lucide-react';
@@ -107,8 +106,8 @@ const BlogCTA = () => {
                   {/* Prix avec réduction */}
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-gray-400 line-through text-sm">49.90€</span>
-                    <span className="text-2xl font-bold text-purple-600">29.90€</span>
-                    <span className="bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded">-40%</span>
+                    <span className="text-2xl font-bold text-purple-600">9.00€</span>
+                    <span className="bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded">-82%</span>
                   </div>
                   
                   {/* Buttons with improved click interactions */}

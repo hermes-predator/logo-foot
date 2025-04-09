@@ -1,37 +1,66 @@
 
 import { BlogPost } from '../../../types/blog';
-import { frenchClubPosts } from './groups/french-clubs';
-import { nationalTeamPosts } from './groups/national-teams';
-import { competitionsLogos } from './groups/competitions';
-import { englishClubPosts } from './groups/english-clubs';
-import { spanishClubPosts } from './groups/spanish-clubs';
-import { italianClubPosts } from './groups/italian-clubs';
-import { germanClubPosts } from './groups/german-clubs';
-import { portugueseClubPosts } from './groups/portuguese-clubs';
-import { otherEuropeanClubPosts } from './groups/other-european-clubs';
-import { southAmericanClubPosts } from './groups/south-american-clubs';
-import { nonEuropeanClubPosts } from './groups/non-european-clubs';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
+import { brazilianClubPosts } from './groups/brazilian-clubs';
+import { competitionPosts } from './groups/competitions';
+import { englishClubPosts } from './groups/english-clubs';
+import { frenchClubPosts } from './groups/french-clubs';
 import { generalContentPosts } from './groups/general-content';
+import { germanClubPosts } from './groups/german-clubs';
+import { italianClubPosts } from './groups/italian-clubs';
+import { nationalTeamPosts } from './groups/national-teams';
+import { nonEuropeanClubPosts } from './groups/non-european-clubs';
+import { otherEuropeanClubPosts } from './groups/other-european-clubs';
+import { portugueseClubPosts } from './groups/portuguese-clubs';
+import { southAmericanClubPosts } from './groups/south-american-clubs';
+import { spanishClubPosts } from './groups/spanish-clubs';
+import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
+import { psgUltrasPost } from './psg-ultras';
+import { omUltrasPost } from './om-ultras';
+import { ancienLogoOmPost } from './ancien-logo-om';
+import { omLogoPost } from './om-logo';
+import { westHamLogoPost } from './west-ham-logo';
+import { westBromwichLogoPost } from './west-bromwich-logo';
+import { wolfsburgLogoPost } from './wolfsburg-logo';
+import { villarrealCfLogoPost } from './villarreal-cf-logo';
+import { valenciennesLogoPost } from './valenciennes-logo';
+import { watfordLogoPost } from './watford-logo';
+import { wolverhamptonLogoPost } from './wolverhampton-logo';
+// Suppression des importations individuelles qui sont déjà dans nonEuropeanClubPosts
+// import { alAhliLogoPost } from './al-ahli-logo';
+// import { alIttihadLogoPost } from './al-ittihad-logo';
 
-// Combiner tous les articles sur les logos
+// Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
-  ...frenchClubPosts,
-  ...nationalTeamPosts,
-  ...competitionsLogos,
-  ...englishClubPosts,
-  ...spanishClubPosts,
-  ...italianClubPosts,
-  ...germanClubPosts,
-  ...portugueseClubPosts,
-  ...otherEuropeanClubPosts,
-  ...southAmericanClubPosts,
-  ...nonEuropeanClubPosts,
   ...africanaClubPosts,
   ...asianClubPosts,
-  ...generalContentPosts
+  ...brazilianClubPosts,
+  ...competitionPosts,
+  ...englishClubPosts,
+  ...frenchClubPosts,
+  ...generalContentPosts,
+  ...germanClubPosts,
+  ...italianClubPosts,
+  ...nationalTeamPosts,
+  ...nonEuropeanClubPosts, // Ceci inclut déjà alAhliLogoPost et alIttihadLogoPost
+  ...otherEuropeanClubPosts,
+  ...portugueseClubPosts,
+  ...southAmericanClubPosts,
+  ...spanishClubPosts,
+  etoileRougeBelgradeLogoPost,
+  psgUltrasPost,
+  omUltrasPost,
+  ancienLogoOmPost,
+  omLogoPost,
+  westHamLogoPost,
+  westBromwichLogoPost,
+  wolfsburgLogoPost,
+  villarrealCfLogoPost,
+  valenciennesLogoPost,
+  watfordLogoPost,
+  wolverhamptonLogoPost
+  // Suppression des références individuelles
+  // alAhliLogoPost,
+  // alIttihadLogoPost
 ];
-
-// Afficher le nombre total d'articles sur les logos
-console.log(`Nombre total d'articles sur les logos: ${logoPosts.length}`);

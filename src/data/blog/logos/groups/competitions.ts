@@ -1,59 +1,46 @@
 
 import { BlogPost } from '../../../../types/blog';
+
+// Import competition logo posts
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
-import { premierLeagueLogoPost } from '../premier-league-design';
-import { serieALogoPost } from '../serie-a-logo';
-import { laLigaLogoPost } from '../la-liga-logo';
 import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
-import { bundesligaLogoPost } from '../bundesliga-brand';
-import { faCupLogoPost } from '../fa-cup-logo';
-import { coppaItaliaLogoPost } from '../coppa-italia-logo';
-import { canLogoPost } from '../can-logo';
+import { premierLeagueLogoPost } from '../premier-league-design';
+import { laLigaLogoPost } from '../la-liga-logo';
+import { serieALogoPost } from '../serie-a-logo';
 import { worldCupLogoPost } from '../world-cup-logo';
-import { worldCupPost } from '../world-cup';
-import { nationsLeagueLogoPost } from '../nations-league-logo';
+import { canLogoPost } from '../can-logo';
+import { faCupLogoPost } from '../fa-cup-logo';
+import { coupeFranceLogoPost } from '../../history/coupe-france-logo';
 import { tropheeDesChampionsLogoPost } from '../trophee-des-champions-logo';
-// Le fichier coupe-france-logo n'existe pas dans le dossier logos mais dans history
-// Supprimons cette ligne d'import et l'entrée correspondante dans le tableau
-// import { coupeFranceLogoPost } from '../coupe-france-logo';
+import { nationsLeagueLogoPost } from '../nations-league-logo';
 import { championshipLogoPost } from '../championship-logo';
-import { mlsLogoPost } from '../mls-logos';
-import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
-import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
 import { eredivisieLogoPost } from '../eredivisie-logo';
 import { primeiraLigaPost } from '../primeira-liga-championship';
-import { frenchLeaguesSchemaPost } from '../french-leagues-schema';
-import { d1ArkemaLogoPost } from '../d1-arkema-logo';
+import { coppaItaliaLogoPost } from '../coppa-italia-logo';
+import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
+import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
 
-// Articles sur les logos des compétitions de football
-export const competitionsLogos: BlogPost[] = [
+// Group all competition logo posts
+export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
   europaLeagueLogoPost,
-  premierLeagueLogoPost,
-  serieALogoPost,
-  laLigaLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
-  bundesligaLogoPost,
-  faCupLogoPost,
-  coppaItaliaLogoPost,
-  canLogoPost,
+  premierLeagueLogoPost,
+  laLigaLogoPost,
+  serieALogoPost,
   worldCupLogoPost,
-  worldCupPost,
-  nationsLeagueLogoPost,
+  canLogoPost,
+  faCupLogoPost,
+  coupeFranceLogoPost,
   tropheeDesChampionsLogoPost,
-  // coupeFranceLogoPost, // Supprimé car le fichier n'existe pas dans ce dossier
+  nationsLeagueLogoPost,
   championshipLogoPost,
-  mlsLogoPost,
-  chineseSuperLeagueLogoPost,
-  saudiProLeagueLogoPost,
   eredivisieLogoPost,
   primeiraLigaPost,
-  frenchLeaguesSchemaPost,
-  d1ArkemaLogoPost
+  coppaItaliaLogoPost,
+  chineseSuperLeagueLogoPost,
+  saudiProLeagueLogoPost
 ];
-
-// Log pour vérification
-console.log(`Nombre d'articles sur les logos de compétitions: ${competitionsLogos.length}`);

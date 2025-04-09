@@ -6,7 +6,7 @@ import { BadgeCheck } from 'lucide-react';
 const GoogleDriveBadge = () => {
   return (
     <Badge 
-      className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200 shadow-sm rounded-tl-none rounded-br-xl"
+      className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200 shadow-sm rounded-tr-md rounded-bl-md rounded-br-xl"
     >
       <BadgeCheck className="h-3.5 w-3.5" />
       <span className="font-medium">Compatible Google Drive</span>

@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const BlogHeader = () => {
-  return (
-    <div className="max-w-4xl mb-6 pl-4">
+  return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
       </div>
@@ -38,12 +35,9 @@ const BlogHeader = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
-                <p className="text-sm text-amber-800/80">+ de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
+                <p className="text-sm text-amber-800/80">Recevez + de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
               </div>
-              <Button 
-                asChild 
-                className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200"
-              >
+              <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200">
                 <Link to="/" className="flex items-center gap-2">
                   <Folder className="h-4 w-4" />
                   <span>Voir le fichier</span>
@@ -54,8 +48,6 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogHeader;

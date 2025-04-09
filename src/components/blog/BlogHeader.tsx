@@ -28,7 +28,7 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <p className="text-base text-gray-700 leading-relaxed">
-              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football, apprenez à créer votre propre logo ou découvrez l'univers du <Link to="/blog?category=pixel-art" className="text-purple-600 hover:underline">pixel art foot</Link>.
+              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.
             </p>
           </div>
           

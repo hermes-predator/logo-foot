@@ -106,8 +106,8 @@ const Testimonials = () => {
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                      <MessageCircle className="w-3.5 h-3.5 text-white" />
+                    <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
+                      <MessageCircle className="w-3.5 h-3.5 text-blue-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>

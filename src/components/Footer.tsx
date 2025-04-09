@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -138,7 +137,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Conservation des données de transaction</h3>
-                  <p>Les données relatives aux transactions et preuves d'achat sont conservées de manière sécurisée pendant 10 ans conformément aux obligations légales commerciales et fiscales françaises. Ces données incluent l'identifiant de transaction, la date, le montant et le produit acheté. Une copie de votre reçu reste disponible sur demande à contact@logo-foot.com.</p>
+                  <p>Les données relatives aux transactions et preuves d'achat sont conservées de manière sécurisée pendant 10 ans conformément aux obligations légales commerciales et fiscales françaises. Ces données incluent l'identifiant de transaction, la date, le montant et le produit acheté.</p>
                 </section>
 
                 <section>

@@ -31,7 +31,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       <SparkleEffects />
       <RecentBuyersBadge count={recentBuyers} />
       
-      <div className="mb-6 relative z-10 mt-4">
+      <div className="mb-6 relative z-10 mt-2">
         <div className="flex items-center gap-2">
           <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>

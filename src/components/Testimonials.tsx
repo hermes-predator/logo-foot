@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, Star, Users, Shield, CheckCircle } from 'lucide-react';
 import {
@@ -123,7 +122,7 @@ const Testimonials = () => {
               <Shield className="h-4 w-4 text-blue-600" />
               <CheckCircle className="h-2.5 w-2.5 text-green-600 absolute -right-0.5 -bottom-0.5 fill-white" />
             </div>
-            <span className="text-sm font-semibold text-black">Avis vérifiés par</span>
+            <span className="text-sm font-semibold text-gray-600">Avis vérifiés par</span>
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 

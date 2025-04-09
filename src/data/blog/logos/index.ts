@@ -27,9 +27,6 @@ import { villarrealCfLogoPost } from './villarreal-cf-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
-// Suppression des importations individuelles qui sont déjà dans nonEuropeanClubPosts
-// import { alAhliLogoPost } from './al-ahli-logo';
-// import { alIttihadLogoPost } from './al-ittihad-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -43,7 +40,7 @@ export const logoPosts: BlogPost[] = [
   ...germanClubPosts,
   ...italianClubPosts,
   ...nationalTeamPosts,
-  ...nonEuropeanClubPosts, // Ceci inclut déjà alAhliLogoPost et alIttihadLogoPost
+  ...nonEuropeanClubPosts,
   ...otherEuropeanClubPosts,
   ...portugueseClubPosts,
   ...southAmericanClubPosts,
@@ -60,7 +57,4 @@ export const logoPosts: BlogPost[] = [
   valenciennesLogoPost,
   watfordLogoPost,
   wolverhamptonLogoPost
-  // Suppression des références individuelles
-  // alAhliLogoPost,
-  // alIttihadLogoPost
 ];

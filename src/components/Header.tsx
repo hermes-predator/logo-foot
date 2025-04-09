@@ -1,9 +1,7 @@
 
-import { Home, BookOpen, FileArchive, Globe } from "lucide-react";
+import { Home, BookOpen, FileArchive } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import TranslateWidget from "./TranslateWidget";
 
 const Header = () => {
   const location = useLocation();
@@ -45,7 +43,7 @@ const Header = () => {
           <span className="font-medium">logo-foot.com</span>
         </Link>
         
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-8">
           <Link 
             to="/" 
             className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
@@ -68,19 +66,6 @@ const Header = () => {
             <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
             <span>Blog</span>
           </Link>
-          
-          {/* Widget de traduction */}
-          <Popover>
-            <PopoverTrigger asChild>
-              <button className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors px-3 py-2 rounded-md">
-                <Globe className="w-4 h-4" />
-                <span className="hidden sm:inline">Traduire</span>
-              </button>
-            </PopoverTrigger>
-            <PopoverContent className="p-2 max-w-[300px] w-auto" align="end">
-              <TranslateWidget />
-            </PopoverContent>
-          </Popover>
         </div>
       </nav>
     </header>

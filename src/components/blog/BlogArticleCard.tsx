@@ -29,7 +29,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
           </div>
         </div>
         
-        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none group-hover:text-purple-600 transition-colors">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none transition-colors">
           {post.title}
         </h3>
         

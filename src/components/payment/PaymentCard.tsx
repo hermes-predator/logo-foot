@@ -35,7 +35,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         <div className="flex items-center gap-2">
           <h3 className="text-2xl md:text-3xl font-extrabold text-black/90">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>
-        <p className="text-gray-600 mt-1">La plus grande collection de logos de football en haute qualité</p>
+        <p className="text-gray-600 mt-0">La plus grande collection de logos de football en haute qualité</p>
         
         {/* Google Drive Badge déplacé ici, juste en dessous de la description */}
         <div className="mt-2">

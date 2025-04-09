@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -54,14 +53,14 @@ const BlogHeader = () => {
               <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
                 Logos
               </Link>
+              <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
+                Joueurs
+              </Link>
               <Link to="/blog?category=history" className={getCategoryStyle('history')}>
                 Histoire
               </Link>
               <Link to="/blog?category=technical" className={getCategoryStyle('technical')}>
                 Technique
-              </Link>
-              <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
-                Joueurs
               </Link>
               <Link to="/blog?category=pixel-art" className={getCategoryStyle('pixel-art')}>
                 Pixel Art

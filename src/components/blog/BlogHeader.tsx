@@ -29,7 +29,7 @@ const BlogHeader = () => {
           
           <div className="mb-4">
             <p className="text-base text-gray-700 leading-relaxed">
-              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Chaque article est le fruit d'une recherche approfondie pour vous faire découvrir l'histoire fascinante et l'évolution des identités visuelles qui font la richesse du football mondial. Des grands clubs européens aux équipes slovaques comme le Slovan Bratislava, explorez l'art des logos de football, ou apprenez à créer votre propre logo pour votre club.
+              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Des grands clubs européens aux équipes slovaques comme le Slovan Bratislava, explorez l'art des logos de football, ou apprenez à créer votre propre logo pour votre club.
             </p>
           </div>
           

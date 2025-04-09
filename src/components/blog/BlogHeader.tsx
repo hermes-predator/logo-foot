@@ -46,7 +46,7 @@ const BlogHeader = () => {
               >
                 <Link to="/" className="flex items-center gap-2">
                   <Folder className="h-4 w-4" />
-                  <span>Découvrir</span>
+                  <span>Voir le fichier</span>
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

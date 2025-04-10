@@ -1,12 +1,14 @@
 
 import React from 'react';
-import { Mail, HeadphonesIcon, MessageCircle } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 
 const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
       <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
-        <MessageCircle className="w-4 h-4 text-blue-600" />
+        <div className="bg-blue-100 rounded-full p-1.5">
+          <MessageCircle className="w-4 h-4 text-blue-600" />
+        </div>
         Support disponible
       </h3>
       <p>Pour toute demande ou si vous avez des difficultés en passant commande, vous pouvez nous contacter.</p>

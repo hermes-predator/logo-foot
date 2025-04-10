@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
-import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, Share2, Home, ChevronRight, ExternalLink, Check } from 'lucide-react';
+import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, Share2, Home, ChevronRight, ExternalLink, Check, Folder } from 'lucide-react';
 import { blogPosts } from '../data/blog';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useReadingTime } from '../hooks/useReadingTime';
@@ -259,7 +258,7 @@ const BlogPost = () => {
             {/* Encart "Télécharger maintenant" */}
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 sticky top-24">
               <h3 className="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
-                <Download className="h-5 w-5 text-black" />
+                <Folder className="h-5 w-5 text-black" />
                 Téléchargement express
               </h3>
               

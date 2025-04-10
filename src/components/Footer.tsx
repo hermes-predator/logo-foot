@@ -210,7 +210,7 @@ const Footer = () => {
                       disponible sur la page de confirmation. Vous pouvez le télécharger immédiatement. 
                       Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous 
                       à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons 
-                      dans un délai de 24h.
+                      dans un délai de 48h.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

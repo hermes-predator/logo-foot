@@ -32,6 +32,7 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
+import { ballonDorLogoPost } from '../ballon-dor-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -65,5 +66,7 @@ export const competitionPosts: BlogPost[] = [
   ligaMxLogoPost,
   dflSupercupLogoPost,
   communityShieldLogoPost,
-  tacaDePortugalLogoPost
+  tacaDePortugalLogoPost,
+  ballonDorLogoPost
 ];
+

@@ -301,7 +301,7 @@ const BlogPost = () => {
                   >
                     <Link to="/" className="flex items-center justify-center gap-1.5">
                       <Folder className="h-4 w-4" />
-                      <span>Voir ce fichier</span>
+                      <span>Voir le fichier</span>
                     </Link>
                   </Button>
                   

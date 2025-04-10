@@ -244,7 +244,8 @@ button a, a button {
 
 /* Add group class support for hover effects */
 button, .btn, a.btn, [role="button"] {
-  @apply group;
+  @apply cursor-pointer;
+  /* We're applying the group class directly in HTML/JSX instead of using @apply */
 }
 
 /* Protection contre le clic droit sur les images et vidéos */

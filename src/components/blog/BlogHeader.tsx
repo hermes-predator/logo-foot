@@ -81,7 +81,7 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help">
+                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group">
                       <Link to="/" className="flex items-center gap-2">
                         <Folder className="h-4 w-4" />
                         <span>Voir le fichier</span>

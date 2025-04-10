@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import FolderCard from './folders/FolderCard';
 import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 
 const PackDescription = () => {
@@ -155,35 +154,33 @@ const PackDescription = () => {
             <h3 className="text-xl font-bold text-black mb-1">Prêt à recevoir ce fichier ZIP ?</h3>
           </div>
           
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <DialogClose asChild>
-                  <Button 
-                    onClick={handlePayment}
-                    className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden z-10"
-                  >
-                    {/* Effet de brillance amélioré sur le bouton */}
-                    <div className="absolute inset-0">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite] z-0"></div>
-                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-transparent animate-[shine_3.5s_ease-in-out_infinite_1s] z-0"></div>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <DialogClose asChild>
+                <Button 
+                  onClick={handlePayment}
+                  className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden z-10"
+                >
+                  {/* Effet de brillance amélioré sur le bouton */}
+                  <div className="absolute inset-0">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite] z-0"></div>
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-transparent animate-[shine_3.5s_ease-in-out_infinite_1s] z-0"></div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center w-full gap-4 relative z-10">
+                    <ShoppingCart className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110" />
+                    <div className="flex flex-col items-center">
+                      <span className="text-center font-semibold text-2xl">Télécharger maintenant (9€)</span>
                     </div>
-                    
-                    <div className="flex items-center justify-center w-full gap-4 relative z-10">
-                      <ShoppingCart className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110" />
-                      <div className="flex flex-col items-center">
-                        <span className="text-center font-semibold text-2xl">Télécharger maintenant (9€)</span>
-                      </div>
-                      <ArrowRight className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2" />
-                    </div>
-                  </Button>
-                </DialogClose>
-              </TooltipTrigger>
-              <TooltipContent side="bottom" className="bg-blue-800 text-white">
-                <p className="font-semibold">Accès immédiat en page d'après-paiement</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+                    <ArrowRight className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2" />
+                  </div>
+                </Button>
+              </DialogClose>
+            </TooltipTrigger>
+            <TooltipContent side="bottom" className="bg-blue-800 text-white">
+              <p className="font-semibold">Accès immédiat en page d'après-paiement</p>
+            </TooltipContent>
+          </Tooltip>
           
           <p className="text-xs text-center text-blue-600 mt-3 relative z-10">
             Paiement via SumUp • Satisfaction garantie • Téléchargement instantané

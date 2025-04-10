@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -138,39 +137,39 @@ const Testimonials = () => {
       onFocus={pauseAutoplay}
       onBlur={resumeAutoplay}
     >
-      <div className="w-full px-4 sm:px-2 relative">
-        {/* StructuredData for SEO */}
-        <script 
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": "Pack Complet de Logos de Football",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": formattedAvgRating,
-                "ratingCount": testimonials.length,
-                "reviewCount": "1034",
+      {/* StructuredData for SEO */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Pack Complet de Logos de Football",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": formattedAvgRating,
+              "ratingCount": testimonials.length,
+              "reviewCount": "1034",
+              "bestRating": "5"
+            },
+            "review": testimonials.map(t => ({
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": t.rating,
                 "bestRating": "5"
               },
-              "review": testimonials.map(t => ({
-                "@type": "Review",
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": t.rating,
-                  "bestRating": "5"
-                },
-                "author": {
-                  "@type": "Person",
-                  "name": t.name
-                },
-                "reviewBody": t.content
-              }))
-            })
-          }}
-        />
+              "author": {
+                "@type": "Person",
+                "name": t.name
+              },
+              "reviewBody": t.content
+            }))
+          })
+        }}
+      />
 
+      <div className="w-full px-4 sm:px-2 relative">
         <Carousel
           opts={{
             align: "start",

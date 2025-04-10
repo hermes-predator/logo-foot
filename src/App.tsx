@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from '@/components/ui/toaster';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import Header from './components/Header';
 import HreflangTags from './components/SEO/HreflangTags';
 import GlobalCanonical from './components/SEO/GlobalCanonical';
@@ -30,24 +31,26 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <HelmetProvider>
-        <Router>
-          {/* Balises SEO globales appliquées à toutes les pages */}
-          <GlobalCanonical />
-          <HreflangTags />
-          
-          <Header />
-          <Suspense fallback={<div className="min-h-screen bg-white flex items-center justify-center">Chargement...</div>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/category/:category" element={<Blog />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
-              <Route path="/payment-success" element={<PaymentSuccess />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-          <Toaster />
-        </Router>
+        <TooltipProvider>
+          <Router>
+            {/* Balises SEO globales appliquées à toutes les pages */}
+            <GlobalCanonical />
+            <HreflangTags />
+            
+            <Header />
+            <Suspense fallback={<div className="min-h-screen bg-white flex items-center justify-center">Chargement...</div>}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/category/:category" element={<Blog />} />
+                <Route path="/blog/:id" element={<BlogPost />} />
+                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+            <Toaster />
+          </Router>
+        </TooltipProvider>
       </HelmetProvider>
     </QueryClientProvider>
   );

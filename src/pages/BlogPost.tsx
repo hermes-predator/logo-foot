@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -178,7 +179,7 @@ const BlogPost = () => {
               </h1>
               
               {post.excerpt && (
-                <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-purple-200 pl-3 py-1">
+                <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-gray-800 pl-3 py-1">
                   {post.excerpt}
                 </div>
               )}

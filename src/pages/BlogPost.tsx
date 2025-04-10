@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -263,8 +262,8 @@ const BlogPost = () => {
                 Téléchargement express
               </h3>
               
-              <div className="bg-purple-50 rounded-lg p-4 mb-4">
-                <h4 className="font-bold text-purple-900 mb-2 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</h4>
+              <div className="bg-amber-50 rounded-lg p-4 mb-4">
+                <h4 className="font-bold text-amber-900 mb-2 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</h4>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start gap-2">
                     <div className="mt-0.5 flex-shrink-0">
@@ -286,16 +285,9 @@ const BlogPost = () => {
                   </li>
                 </ul>
                 
-                {/* Prix avec réduction */}
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-gray-400 line-through text-sm">49.90€</span>
-                  <span className="text-xl font-bold text-purple-600">29.90€</span>
-                  <span className="bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded">-40%</span>
-                </div>
-                
                 <Button 
                   asChild 
-                  className="w-full bg-purple-600 hover:bg-purple-700"
+                  className="w-full bg-amber-600 hover:bg-amber-700"
                 >
                   <Link to="/" className="flex items-center justify-center gap-1.5">
                     <Download className="h-4 w-4" />
@@ -306,7 +298,7 @@ const BlogPost = () => {
                 <div className="mt-3 text-center">
                   <Link 
                     to="/" 
-                    className="text-xs text-purple-700 hover:text-purple-800 transition-colors flex items-center justify-center gap-1"
+                    className="text-xs text-amber-700 hover:text-amber-800 transition-colors flex items-center justify-center gap-1"
                   >
                     <span>Voir tous les détails</span>
                     <ExternalLink className="h-3 w-3" />
@@ -327,7 +319,6 @@ const BlogPost = () => {
   );
 };
 
-// Fonction utilitaire pour les images par défaut en fonction de la catégorie
 const getDefaultImageSrc = (category: string) => {
   const categoryMap = {
     'logos': '/blog-images/default-logos.png',
@@ -339,7 +330,6 @@ const getDefaultImageSrc = (category: string) => {
   return categoryMap[category] || '/blog-images/default.png';
 };
 
-// Les composants markdown pour le rendu du contenu
 const markdownComponents = {
   // Reduced spacing for paragraphs
   p: ({children}: {children: React.ReactNode}) => (

@@ -1,7 +1,7 @@
 
 import { BlogPost } from "../types/blog";
 import { BlogListSchema } from "./schema/BlogListSchema";
-import { BlogPostSchema } from "./schema/BlogPostSchema";
+import { EnhancedBlogPostSchema } from "./schema/EnhancedBlogPostSchema";
 import { FAQPageSchema } from "./schema/FAQPageSchema";
 import { extractFAQs } from "../utils/faqExtractor";
 import { Helmet } from "react-helmet-async";
@@ -10,9 +10,17 @@ interface BlogSchemaMarkupProps {
   post?: BlogPost;
   isBlogList?: boolean;
   addBreadcrumbs?: boolean;
+  siteName?: string;
+  baseUrl?: string;
 }
 
-const BlogSchemaMarkup = ({ post, isBlogList, addBreadcrumbs = true }: BlogSchemaMarkupProps) => {
+const BlogSchemaMarkup = ({ 
+  post, 
+  isBlogList, 
+  addBreadcrumbs = true,
+  siteName = "Logo Foot",
+  baseUrl = "https://logo-foot.com"
+}: BlogSchemaMarkupProps) => {
   if (isBlogList) {
     const blogListSchema = BlogListSchema({ post });
     
@@ -27,29 +35,31 @@ const BlogSchemaMarkup = ({ post, isBlogList, addBreadcrumbs = true }: BlogSchem
 
   if (!post) return null;
 
-  // Generate complete image URL for the schema
+  // Générer l'URL complète de l'image pour le schéma
   const imageUrl = post.galleryImageId ? 
-    `https://logo-foot.com/blog-images/${post.id}.png` : 
-    "https://logo-foot.com/og-image.png";
+    `${baseUrl}/blog-images/${post.id}.png` : 
+    `${baseUrl}/og-image.png`;
 
-  // Pass the imageUrl to the schema generator
-  const schemaData = BlogPostSchema({ 
+  // Passer l'URL de l'image au générateur de schéma
+  const schemaData = EnhancedBlogPostSchema({ 
     post,
-    imageUrl
+    imageUrl,
+    siteName,
+    baseUrl
   });
 
-  // Extract FAQ sections from content if they exist
+  // Extraire les sections FAQ du contenu si elles existent
   const faqSections = extractFAQs(post.content);
   const hasFAQs = faqSections.length > 0;
 
-  // Create FAQ schema if FAQs are present
+  // Créer un schéma FAQ si des FAQs sont présentes
   const faqPageSchema = hasFAQs ? FAQPageSchema({ 
     faqSections,
-    mainEntity: `https://logo-foot.com/blog/${post.id}`,
+    mainEntity: `${baseUrl}/blog/${post.id}`,
     about: post.title.split(':')[0].trim()
   }) : null;
 
-  // Generate BreadcrumbList schema
+  // Générer le schéma BreadcrumbList
   const breadcrumbSchema = addBreadcrumbs ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -58,31 +68,47 @@ const BlogSchemaMarkup = ({ post, isBlogList, addBreadcrumbs = true }: BlogSchem
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://logo-foot.com"
+        "item": baseUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://logo-foot.com/blog"
+        "item": `${baseUrl}/blog`
       },
-      {
+      // Ajouter la catégorie si disponible
+      ...(post.category ? [{
         "@type": "ListItem",
         "position": 3,
+        "name": post.category.charAt(0).toUpperCase() + post.category.slice(1),
+        "item": `${baseUrl}/blog/category/${post.category}`
+      }] : []),
+      {
+        "@type": "ListItem",
+        "position": post.category ? 4 : 3,
         "name": post.title,
-        "item": `https://logo-foot.com/blog/${post.id}`
+        "item": `${baseUrl}/blog/${post.id}`
       }
     ]
   } : null;
 
-  // Handle both single and multiple schema objects
+  // Gérer à la fois les objets de schéma uniques et multiples
   return (
     <Helmet>
       <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
+        {Array.isArray(schemaData) 
+          ? JSON.stringify(schemaData[0])
+          : JSON.stringify(schemaData)
+        }
       </script>
       
-      {hasFAQs && (
+      {Array.isArray(schemaData) && schemaData.length > 1 && (
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData[1])}
+        </script>
+      )}
+      
+      {hasFAQs && !Array.isArray(schemaData) && (
         <script type="application/ld+json">
           {JSON.stringify(faqPageSchema)}
         </script>

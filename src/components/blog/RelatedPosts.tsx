@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -214,16 +213,7 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
         ))}
       </div>
       
-      {/* Lien "Voir tous les articles" centré en bas */}
-      <div className="text-center mt-4">
-        <Link 
-          to="/blog" 
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors text-sm font-medium"
-        >
-          <span>Découvrir plus d'articles</span>
-          <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
-      </div>
+      {/* Removing the "Découvrir plus d'articles" button */}
     </div>
   );
 };

@@ -30,6 +30,8 @@ import { wolverhamptonLogoPost } from './wolverhampton-logo';
 import { realMadridLogoPost } from './real-madrid-logo';
 import { cesenaLogoPost } from './cesena-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
+import { cittadellaLogoPost } from './cittadella-logo';
+import { reggianaLogoPost } from './reggiana-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -62,5 +64,7 @@ export const logoPosts: BlogPost[] = [
   wolverhamptonLogoPost,
   realMadridLogoPost,
   cesenaLogoPost,
-  cosenzaLogoPost
+  cosenzaLogoPost,
+  cittadellaLogoPost,
+  reggianaLogoPost
 ];

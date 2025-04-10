@@ -1,11 +1,14 @@
 
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, HeadphonesIcon } from 'lucide-react';
 
 const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
-      <h3 className="font-medium text-base text-gray-900">Support disponible</h3>
+      <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
+        <HeadphonesIcon className="w-4 h-4 text-blue-600" />
+        Support disponible
+      </h3>
       <p>Pour toute demande ou si vous avez des difficultés en passant commande, vous pouvez nous contacter.</p>
       <p>Pour cela, nous vous invitons à nous fournir quelques informations pour nous aider à vous identifier :</p>
       <ul className="list-disc ml-4 space-y-1">

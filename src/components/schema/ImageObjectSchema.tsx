@@ -2,15 +2,22 @@
 interface ImageObjectSchemaProps {
   imageUrl: string;
   title: string;
+  width?: number;
+  height?: number;
 }
 
-export const ImageObjectSchema = ({ imageUrl, title }: ImageObjectSchemaProps) => {
+export const ImageObjectSchema = ({ 
+  imageUrl, 
+  title,
+  width = 800,
+  height = 800
+}: ImageObjectSchemaProps) => {
   // Enhanced image object with more metadata
   return {
     "@type": "ImageObject",
     "url": imageUrl,
-    "width": 800,
-    "height": 800,
+    "width": width,
+    "height": height,
     "caption": title,
     "name": title.split(':')[0].trim(),
     "representativeOfPage": true,

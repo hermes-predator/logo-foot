@@ -31,7 +31,7 @@ const PaymentTrust = () => {
   
       {/* Point décoratif avec une couleur grise plus claire */}
       <div className="flex items-center justify-center">
-        <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
+        <div className="h-1 w-1 rounded-full bg-gray-200 mx-1.5"></div>
       </div>
       
       <div className="flex items-center gap-3 p-1.5 bg-gray-50 rounded-lg">
@@ -44,7 +44,7 @@ const PaymentTrust = () => {
 
       {/* Point décoratif avec une couleur grise plus claire */}
       <div className="flex items-center justify-center">
-        <div className="h-1 w-1 rounded-full bg-gray-300 mx-1.5"></div>
+        <div className="h-1 w-1 rounded-full bg-gray-200 mx-1.5"></div>
       </div>
       
       {/* Compteur de téléchargement évolutif */}

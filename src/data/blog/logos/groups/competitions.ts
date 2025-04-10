@@ -4,9 +4,9 @@ import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
 import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
-import { premierLeagueDesignPost } from '../premier-league-design';
+import { premierLeagueLogoPost } from '../premier-league-design';
 import { faCupLogoPost } from '../fa-cup-logo';
-import { bundesligaBrandPost } from '../bundesliga-brand';
+import { bundesligaLogoPost } from '../bundesliga-brand';
 import { copaDelReyLogoPost } from '../copa-del-rey-logo';
 import { worldCupLogoPost } from '../world-cup-logo';
 import { serieALogoPost } from '../serie-a-logo';
@@ -18,19 +18,19 @@ import { canLogoPost } from '../can-logo';
 import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
 import { eredivisieLogoPost } from '../eredivisie-logo';
 import { championshipLogoPost } from '../championship-logo';
-import { mlsLogosPost } from '../mls-logos';
+import { mlsLogoPost } from '../mls-logos';
 import { nationsLeagueLogoPost } from '../nations-league-logo';
 import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
-import { primeiraLigaChampionshipPost } from '../primeira-liga-championship';
+import { primeiraLigaPost } from '../primeira-liga-championship';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
   europaLeagueLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
-  premierLeagueDesignPost,
+  premierLeagueLogoPost,
   faCupLogoPost,
-  bundesligaBrandPost,
+  bundesligaLogoPost,
   copaDelReyLogoPost,
   worldCupLogoPost,
   serieALogoPost,
@@ -42,8 +42,8 @@ export const competitionPosts: BlogPost[] = [
   chineseSuperLeagueLogoPost,
   eredivisieLogoPost,
   championshipLogoPost,
-  mlsLogosPost,
+  mlsLogoPost,
   nationsLeagueLogoPost,
   saudiProLeagueLogoPost,
-  primeiraLigaChampionshipPost
+  primeiraLigaPost
 ];

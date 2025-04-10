@@ -30,6 +30,7 @@ import { eersteDivisieLogoPost } from '../eerste-divisie-logo';
 import { jupilerProLeagueLogoPost } from '../jupiler-pro-league-logo';
 import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
+import { communityShieldLogoPost } from '../community-shield-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -61,5 +62,6 @@ export const competitionPosts: BlogPost[] = [
   eersteDivisieLogoPost,
   jupilerProLeagueLogoPost,
   ligaMxLogoPost,
-  dflSupercupLogoPost
+  dflSupercupLogoPost,
+  communityShieldLogoPost
 ];

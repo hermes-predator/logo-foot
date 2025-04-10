@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -178,13 +177,10 @@ const Footer = () => {
                   </AccordionItem>
 
                   <AccordionItem value="item-3">
-                    <AccordionTrigger>Que contient exactement le pack ?</AccordionTrigger>
+                    <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
                     <AccordionContent>
-                      Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
-                      • Les logos des clubs de plus de 60 pays
-                      • Les logos des principales compétitions
-                      • Les drapeaux nationaux
-                      • Les logos des bookmakers
+                      Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant : 
+                      Les logos des clubs de plus de 60 pays • Les logos des principales compétitions • Les drapeaux nationaux • Les logos des bookmakers et bien plus... 
                       Tous les fichiers sont en PNG avec fond transparent, parfaitement optimisés pour une utilisation web.
                     </AccordionContent>
                   </AccordionItem>

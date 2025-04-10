@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
 import GallerySkeleton from './GallerySkeleton';
@@ -11,6 +11,8 @@ import {
   PaginationEllipsis 
 } from "@/components/ui/pagination";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ImageObjectSchema } from '../schema/ImageObjectSchema';
+import { Helmet } from 'react-helmet-async';
 
 interface ClubGalleryProps {
   items: GalleryItemType[];
@@ -26,6 +28,19 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  
+  // Générer les schémas JSON-LD pour les 3 premières images
+  const topThreeItems = items.slice(0, 3);
+  const imageSchemas = topThreeItems.map(item => 
+    ImageObjectSchema({
+      imageUrl: item.imageUrl,
+      title: item.title,
+      altText: item.altText,
+      authorName: "FRONT-CLOUD",
+      width: 800,
+      height: 800
+    })
+  );
 
   const getVisiblePages = () => {
     if (totalPages <= 5) return Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -38,6 +53,15 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
   return (
     <div className="space-y-8">
+      {/* Ajouter les schémas JSON-LD pour les 3 premières images */}
+      <Helmet>
+        {imageSchemas.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
+      </Helmet>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {isLoading ? (
           Array.from({ length: ITEMS_PER_PAGE }).map((_, index) => (
@@ -50,6 +74,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
               item={item}
               onHover={setHoveredItem}
               isHovered={hoveredItem === item.id}
+              isPriority={item.id <= 3} // Prioriser le chargement des 3 premières images
             />
           ))
         )}

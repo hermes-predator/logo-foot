@@ -4,6 +4,7 @@ import ClubGallery from './gallery/ClubGallery';
 import CompetitionGallery from './gallery/CompetitionGallery';
 import { generateGalleryItems } from '@/utils/galleryData';
 import { LazySection } from './ui/lazy-section';
+import { Helmet } from 'react-helmet-async';
 
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);

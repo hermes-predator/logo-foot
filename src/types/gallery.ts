@@ -8,14 +8,9 @@ export interface GalleryItem {
   altText: string;
 }
 
-export interface VideoPlayerProps {
-  videoUrl: string;
-  title: string;
-  country: string;
-}
-
 export interface GalleryItemProps {
   item: GalleryItem;
   onHover: (id: number | null) => void;
   isHovered: boolean;
+  isPriority?: boolean;
 }

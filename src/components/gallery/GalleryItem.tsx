@@ -6,7 +6,7 @@ import { GalleryItemProps } from "@/types/gallery";
 import { useLazyLoading } from "@/hooks/useLazyLoading";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
+const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryItemProps) => {
   const { isInView, imgRef } = useLazyLoading();
 
   const getVideoTitle = (country: string) => {
@@ -82,16 +82,17 @@ const GalleryItem = ({ item, onHover, isHovered }: GalleryItemProps) => {
               </div>
             ) : (
               <>
-                {!isInView && (
+                {!isInView && !isPriority && (
                   <Skeleton className="w-full h-full absolute inset-0" />
                 )}
                 <img
                   ref={imgRef}
-                  src={isInView ? item.imageUrl : '/placeholder.svg'}
+                  src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
                   alt={item.altText}
                   className="w-full h-full object-contain transition-opacity duration-300"
-                  loading="lazy"
-                  decoding="async"
+                  loading={isPriority ? "eager" : "lazy"}
+                  decoding={isPriority ? "sync" : "async"}
+                  itemProp={isPriority ? "image" : undefined}
                 />
                 <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
                   <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />

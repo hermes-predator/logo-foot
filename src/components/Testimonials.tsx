@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Emma V.",
-    role: "Designer Web",
+    role: "Non renseigné",
     content: "La meilleure collection de logos que j'ai pu trouver.",
     rating: 5
   },

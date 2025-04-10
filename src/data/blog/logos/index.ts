@@ -33,6 +33,8 @@ import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
+import { ligaMxLogoPost } from './liga-mx-logo';
+import { hajdukSplitLogoPost } from './hajduk-split-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -68,5 +70,7 @@ export const logoPosts: BlogPost[] = [
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
-  saudiFootballClubLogosPost
+  saudiFootballClubLogosPost,
+  ligaMxLogoPost,
+  hajdukSplitLogoPost
 ];

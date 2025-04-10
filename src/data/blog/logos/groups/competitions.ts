@@ -22,6 +22,7 @@ import { mlsLogoPost } from '../mls-logos';
 import { nationsLeagueLogoPost } from '../nations-league-logo';
 import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
 import { primeiraLigaPost } from '../primeira-liga-championship';
+import { supercopaDeEspanaLogoPost } from '../supercopa-de-espana-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -45,5 +46,6 @@ export const competitionPosts: BlogPost[] = [
   mlsLogoPost,
   nationsLeagueLogoPost,
   saudiProLeagueLogoPost,
-  primeiraLigaPost
+  primeiraLigaPost,
+  supercopaDeEspanaLogoPost
 ];

@@ -242,6 +242,11 @@ button a, a button {
   justify-content: center;
 }
 
+/* Add group class support for hover effects */
+button, .btn, a.btn, [role="button"] {
+  @apply group;
+}
+
 /* Protection contre le clic droit sur les images et vidéos */
 img, video {
   -webkit-user-select: none;

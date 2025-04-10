@@ -1,48 +1,49 @@
 
 import { BlogPost } from '../../../../types/blog';
+import { championsLeagueLogo } from '../champions-league-logo';
+import { europaLeagueLogo } from '../europa-league-logo';
+import { ligue1Logo } from '../ligue1-logo';
+import { ligue2Logo } from '../ligue2-logo';
+import { premierLeagueDesign } from '../premier-league-design';
+import { faCup } from '../fa-cup-logo';
+import { bundesligaBrand } from '../bundesliga-brand';
+import { copaDelReyLogoPost } from '../copa-del-rey-logo';
+import { worldCupLogo } from '../world-cup-logo';
+import { serieALogo } from '../serie-a-logo';
+import { laLigaLogo } from '../la-liga-logo';
+import { coppaItaliaLogo } from '../coppa-italia-logo';
+import { d1ArkemaLogo } from '../d1-arkema-logo';
+import { tropheeDesChampionsLogo } from '../trophee-des-champions-logo';
+import { canLogo } from '../can-logo';
+import { chineseSuperLeagueLogo } from '../chinese-super-league-logo';
+import { eredivisieLogo } from '../eredivisie-logo';
+import { championshipLogo } from '../championship-logo';
+import { mlsLogos } from '../mls-logos';
+import { nationLeagueLogo } from '../nations-league-logo';
+import { saudiProLeagueLogo } from '../saudi-pro-league-logo';
+import { primeiraLigaChampionship } from '../primeira-liga-championship';
 
-// Import competition logo posts
-import { championsLeagueLogoPost } from '../champions-league-logo';
-import { europaLeagueLogoPost } from '../europa-league-logo';
-import { ligue1LogoPost } from '../ligue1-logo';
-import { ligue2LogoPost } from '../ligue2-logo';
-import { premierLeagueLogoPost } from '../premier-league-design';
-import { laLigaLogoPost } from '../la-liga-logo';
-import { serieALogoPost } from '../serie-a-logo';
-import { worldCupLogoPost } from '../world-cup-logo';
-import { canLogoPost } from '../can-logo';
-import { faCupLogoPost } from '../fa-cup-logo';
-import { coupeFranceLogoPost } from '../../history/coupe-france-logo';
-import { tropheeDesChampionsLogoPost } from '../trophee-des-champions-logo';
-import { nationsLeagueLogoPost } from '../nations-league-logo';
-import { championshipLogoPost } from '../championship-logo';
-import { eredivisieLogoPost } from '../eredivisie-logo';
-import { primeiraLigaPost } from '../primeira-liga-championship';
-import { coppaItaliaLogoPost } from '../coppa-italia-logo';
-import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
-import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
-import { d1ArkemaLogoPost } from '../d1-arkema-logo';
-
-// Group all competition logo posts
 export const competitionPosts: BlogPost[] = [
-  championsLeagueLogoPost,
-  europaLeagueLogoPost,
-  ligue1LogoPost,
-  ligue2LogoPost,
-  premierLeagueLogoPost,
-  laLigaLogoPost,
-  serieALogoPost,
-  worldCupLogoPost,
-  canLogoPost,
-  faCupLogoPost,
-  coupeFranceLogoPost,
-  tropheeDesChampionsLogoPost,
-  nationsLeagueLogoPost,
-  championshipLogoPost,
-  eredivisieLogoPost,
-  primeiraLigaPost,
-  coppaItaliaLogoPost,
-  chineseSuperLeagueLogoPost,
-  saudiProLeagueLogoPost,
-  d1ArkemaLogoPost
+  championsLeagueLogo,
+  europaLeagueLogo,
+  ligue1Logo,
+  ligue2Logo,
+  premierLeagueDesign,
+  faCup,
+  bundesligaBrand,
+  copaDelReyLogoPost,
+  worldCupLogo,
+  serieALogo,
+  laLigaLogo,
+  coppaItaliaLogo,
+  d1ArkemaLogo,
+  tropheeDesChampionsLogo,
+  canLogo,
+  chineseSuperLeagueLogo,
+  eredivisieLogo,
+  championshipLogo,
+  mlsLogos,
+  nationLeagueLogo,
+  saudiProLeagueLogo,
+  primeiraLigaChampionship
 ];

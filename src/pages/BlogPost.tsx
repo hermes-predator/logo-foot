@@ -287,7 +287,7 @@ const BlogPost = () => {
                 
                 <Button 
                   asChild 
-                  className="w-full bg-amber-600 hover:bg-amber-700"
+                  className="w-full bg-white hover:bg-gray-50 text-black border border-gray-200"
                 >
                   <Link to="/" className="flex items-center justify-center gap-1.5">
                     <Download className="h-4 w-4" />

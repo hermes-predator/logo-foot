@@ -1,5 +1,5 @@
 
-import { BlogPost } from '../../types/blog';
+import { BlogPost } from '../../../types/blog';
 
 export const saudiFootballClubLogosPost: BlogPost = {
   id: 8701, // ID unique pour ce post

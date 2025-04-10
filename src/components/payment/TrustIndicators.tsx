@@ -17,7 +17,7 @@ const TrustIndicators = () => {
       />
       <TrustCard 
         icon={<HandHeart />}
-        title="Support Réactif"
+        title="Support Disponible"
         description="Email : contact@logo-foot.com"
       />
     </div>

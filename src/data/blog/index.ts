@@ -56,6 +56,15 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   return uniquePosts;
 };
 
+// Statistiques des articles par catégorie (pour vérification)
+const countByCategory = {
+  logos: logoPosts.length,
+  history: historyPosts.length,
+  technical: technicalPosts.length,
+  analysis: analysisPosts.length,
+  pixelArt: pixelArtPosts.length
+};
+
 // Combiner tous les articles et assurer des IDs uniques
 const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
 console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
@@ -72,3 +81,10 @@ blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 
 // Log pour débogage
 console.log(`Nombre total d'articles après traitement des doublons: ${blogPosts.length}`);
+
+// Afficher un message plus visible dans la console
+console.log('%c 📚 STATISTIQUES DU BLOG 📚', 'background: #3498db; color: white; font-size: 16px; padding: 5px;');
+console.log('%c Nombre total d\'articles: ' + blogPosts.length, 'font-size: 14px; font-weight: bold;');
+console.log('%c Répartition par catégorie:', 'font-size: 14px;');
+console.table(countByCategory);
+

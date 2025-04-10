@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -60,29 +61,6 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
           </script>
         ))}
       </Helmet>
-
-      {/* Mettre en valeur les 3 images phares en début de grille */}
-      {!isLoading && (
-        <div className="mb-8">
-          <div className="flex items-center mb-3">
-            <h3 className="text-xl font-semibold text-gray-800">Collections phares</h3>
-            <div className="ml-3 px-2 py-1 bg-red-600 text-white text-xs rounded-md font-bold">TOP</div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {topThreeItems.map((item) => (
-              <div key={`featured-${item.id}`} className="transform transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-xl rounded-lg overflow-hidden border-2 border-gray-200 hover:border-gray-400">
-                <GalleryItem
-                  key={item.id}
-                  item={item}
-                  onHover={setHoveredItem}
-                  isHovered={hoveredItem === item.id}
-                  isPriority={true} // Toujours prioritaire pour les 3 premières
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {isLoading ? (

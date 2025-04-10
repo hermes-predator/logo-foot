@@ -70,13 +70,13 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Loïc D.",
-    role: "Client vérifié",
+    role: "non vérifié",
     content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
     rating: 5
   },
   {
     name: "Abdou B.",
-    role: "Client vérifié",
+    role: "non vérifié",
     content: "Le zip est parfait rien à dire, mais il manque un espace utilisateur. Je recommande cela dit",
     rating: 4
   }

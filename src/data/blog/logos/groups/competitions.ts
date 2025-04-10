@@ -28,6 +28,8 @@ import { eflLeagueOneLogoPost } from '../efl-league-one-logo';
 import { knvbBekerLogoPost } from '../knvb-beker-logo';
 import { eersteDivisieLogoPost } from '../eerste-divisie-logo';
 import { jupilerProLeagueLogoPost } from '../jupiler-pro-league-logo';
+import { ligaMxLogoPost } from '../liga-mx-logo';
+import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -57,5 +59,7 @@ export const competitionPosts: BlogPost[] = [
   eflLeagueOneLogoPost,
   knvbBekerLogoPost,
   eersteDivisieLogoPost,
-  jupilerProLeagueLogoPost
+  jupilerProLeagueLogoPost,
+  ligaMxLogoPost,
+  dflSupercupLogoPost
 ];

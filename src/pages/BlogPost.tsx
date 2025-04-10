@@ -262,7 +262,7 @@ const BlogPost = () => {
               <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 sticky top-24">
                 <h3 className="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
                   <Folder className="h-5 w-5 text-black" />
-                  Téléchargement express
+                  Téléchargement rapide
                 </h3>
                 
                 <div className="bg-amber-50 rounded-lg p-4 mb-4">

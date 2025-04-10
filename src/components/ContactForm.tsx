@@ -12,7 +12,7 @@ const ContactForm = () => {
         Support disponible
       </h3>
       <p>Pour toute demande ou si vous avez des difficultés en passant commande, vous pouvez nous contacter.</p>
-      <p>Pour cela, nous vous invitons à nous fournir quelques informations pour nous aider à vous identifier :</p>
+      <p>Pour cela, nous vous invitons à fournir quelques informations pour nous aider à vous identifier :</p>
       <ul className="list-disc ml-4 space-y-1">
         <li>Votre nom et prénom</li>
         <li>La date et l'heure d'achat</li>

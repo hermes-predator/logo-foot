@@ -27,6 +27,9 @@ import { villarrealCfLogoPost } from './villarreal-cf-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 import { wolverhamptonLogoPost } from './wolverhampton-logo';
+import { realMadridLogoPost } from './real-madrid-logo';
+import { cesenaLogoPost } from './cesena-logo';
+import { cosenzaLogoPost } from './cosenza-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -56,5 +59,8 @@ export const logoPosts: BlogPost[] = [
   villarrealCfLogoPost,
   valenciennesLogoPost,
   watfordLogoPost,
-  wolverhamptonLogoPost
+  wolverhamptonLogoPost,
+  realMadridLogoPost,
+  cesenaLogoPost,
+  cosenzaLogoPost
 ];

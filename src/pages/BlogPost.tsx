@@ -17,6 +17,7 @@ import RelatedPosts from '../components/blog/RelatedPosts';
 import BlogPostSEO from './BlogPostSEO';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { OptimizedImage } from '@/components/ui/optimized-image';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -274,6 +275,18 @@ const BlogPost = () => {
                       <p className="text-sm">Collection complète de logos de football</p>
                     </TooltipContent>
                   </Tooltip>
+                  
+                  {/* Image d'aperçu de la galerie */}
+                  <div className="mb-4 rounded-lg overflow-hidden shadow-sm border border-amber-100">
+                    <img 
+                      src="/lovable-uploads/676cb646-fca3-4d6a-86ad-b4e909cb51bd.png" 
+                      alt="Aperçu des dossiers de logos par pays" 
+                      className="w-full h-auto"
+                      onContextMenu={(e) => e.preventDefault()}
+                      draggable="false"
+                    />
+                  </div>
+                  
                   <ul className="space-y-2 mb-4">
                     <li className="flex items-start gap-2">
                       <div className="mt-0.5 flex-shrink-0">

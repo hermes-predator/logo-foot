@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -171,7 +172,7 @@ const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps
               >
                 {/* Vignette avec catégorie */}
                 <div className="relative bg-gray-100 rounded-md mb-3 aspect-video overflow-hidden">
-                  <div className="absolute top-2 left-2 bg-white/80 backdrop-blur-sm text-xs px-2 py-0.5 rounded text-purple-700 font-medium shadow-sm">
+                  <div className="absolute top-2 left-2 bg-white/80 backdrop-blur-sm text-xs px-2 py-0.5 rounded text-gray-800 font-medium shadow-sm">
                     {post.subCategory || post.category}
                   </div>
                   {post.galleryImageId ? (

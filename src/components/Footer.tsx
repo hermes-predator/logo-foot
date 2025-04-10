@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -172,7 +173,7 @@ const Footer = () => {
                     <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
                     <AccordionContent>
                       C'est simple et instantané ! Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement. 
-                      Le fichier ZIP contenant tous les logos est disponible immédiatement.
+                      Le fichier ZIP est disponible immédiatement.
                     </AccordionContent>
                   </AccordionItem>
 

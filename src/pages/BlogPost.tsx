@@ -168,18 +168,6 @@ const BlogPost = () => {
                       {BLOG_CATEGORIES[post.category]?.name || post.category}
                     </span>
                   </div>
-                  
-                  <Button 
-                    variant="ghost" 
-                    size="sm" 
-                    className="p-1 h-auto text-gray-500 hover:text-purple-600"
-                    onClick={handleShare}
-                  >
-                    <div className="flex items-center gap-1.5">
-                      <Share2 className="h-3.5 w-3.5" />
-                      <span className="text-xs">Partager</span>
-                    </div>
-                  </Button>
                 </div>
               </Card>
             </div>
@@ -256,18 +244,8 @@ const BlogPost = () => {
                 </div>
               </div>
               
-              {/* Partage et retour */}
-              <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-4 border-t border-gray-100">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="text-gray-600"
-                  onClick={handleShare}
-                >
-                  <Share2 className="h-4 w-4 mr-2" />
-                  Partager cet article
-                </Button>
-                
+              {/* Retour */}
+              <div className="flex flex-wrap items-center justify-end gap-3 mt-6 pt-4 border-t border-gray-100">
                 <Link 
                   to="/blog" 
                   className="text-sm text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1.5"

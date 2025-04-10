@@ -26,6 +26,7 @@ import { supercopaDeEspanaLogoPost } from '../supercopa-de-espana-logo';
 import { dfbPokalLogoPost } from '../dfb-pokal-logo';
 import { eflLeagueOneLogoPost } from '../efl-league-one-logo';
 import { knvbBekerLogoPost } from '../knvb-beker-logo';
+import { eersteDivisieLogoPost } from '../eerste-divisie-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -53,5 +54,6 @@ export const competitionPosts: BlogPost[] = [
   supercopaDeEspanaLogoPost,
   dfbPokalLogoPost,
   eflLeagueOneLogoPost,
-  knvbBekerLogoPost
+  knvbBekerLogoPost,
+  eersteDivisieLogoPost
 ];

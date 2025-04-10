@@ -31,6 +31,7 @@ import { jupilerProLeagueLogoPost } from '../jupiler-pro-league-logo';
 import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
+import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -63,5 +64,6 @@ export const competitionPosts: BlogPost[] = [
   jupilerProLeagueLogoPost,
   ligaMxLogoPost,
   dflSupercupLogoPost,
-  communityShieldLogoPost
+  communityShieldLogoPost,
+  tacaDePortugalLogoPost
 ];

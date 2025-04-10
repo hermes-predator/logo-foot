@@ -264,7 +264,7 @@ const BlogPost = () => {
               </h3>
               
               <div className="bg-amber-50 rounded-lg p-4 mb-4">
-                <h4 className="font-bold text-black mb-2 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</h4>
+                <h4 className="font-bold text-black mb-2 text-sm">⦗FRONT-CLOUD⦘~ Football.zip</h4>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start gap-2">
                     <div className="mt-0.5 flex-shrink-0">

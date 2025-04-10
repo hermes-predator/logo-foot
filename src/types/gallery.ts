@@ -14,3 +14,9 @@ export interface GalleryItemProps {
   isHovered: boolean;
   isPriority?: boolean;
 }
+
+export interface VideoPlayerProps {
+  videoUrl: string;
+  title: string;
+  country: string;
+}

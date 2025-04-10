@@ -1,7 +1,10 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
@@ -75,13 +78,22 @@ const BlogHeader = () => {
                 <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
                 <p className="text-sm text-amber-800/80">Recevez + de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
               </div>
-              <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200">
-                <Link to="/" className="flex items-center gap-2">
-                  <Folder className="h-4 w-4" />
-                  <span>Voir le fichier</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help">
+                      <Link to="/" className="flex items-center gap-2">
+                        <Folder className="h-4 w-4" />
+                        <span>Voir le fichier</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
         </div>

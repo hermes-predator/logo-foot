@@ -1,4 +1,3 @@
-
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Play, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
@@ -64,7 +63,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     >
       <Dialog>
         <DialogTrigger asChild>
-          <button className="w-full h-full text-left">
+          <button 
+            className="w-full h-full text-left"
+            aria-label={`Voir ${item.title}`}
+          >
             {isHovered ? (
               <div className="w-full h-full">
                 <video
@@ -93,6 +95,9 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   loading={isPriority ? "eager" : "lazy"}
                   decoding={isPriority ? "sync" : "async"}
                   itemProp={isPriority ? "image" : undefined}
+                  fetchPriority={isPriority ? "high" : "auto"}
+                  data-caption={item.title}
+                  data-description={item.altText}
                 />
                 <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
                   <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />

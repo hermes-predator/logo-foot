@@ -18,8 +18,42 @@ const ProductGallery = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Récupérer les 3 premières images pour le SEO (best-sellers)
+  const bestSellerItems = clubItems.slice(0, 3);
+
   return (
     <section className="w-full min-h-screen bg-white">
+      <Helmet>
+        {/* Préchargement des images prioritaires pour Google */}
+        {bestSellerItems.map((item, index) => (
+          <link 
+            key={`preload-${index}`}
+            rel="preload" 
+            href={item.imageUrl} 
+            as="image"
+            // Pas d'attribut importance car non supporté sur le type HTMLLinkElement
+          />
+        ))}
+        
+        {/* Schéma LD+JSON pour les images (pour Google Images) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Logos des Clubs de Football - Collection Premium",
+            "description": "Plus de 8 600 logo foot des clubs de football en haute qualité",
+            "image": bestSellerItems.map(item => item.imageUrl),
+            "contentUrl": bestSellerItems.map(item => item.imageUrl),
+            "thumbnailUrl": bestSellerItems.map(item => item.imageUrl),
+            "about": {
+              "@type": "Thing",
+              "name": "Logos de Football",
+              "description": "Collection des logos de football officiels des grands clubs européens"
+            }
+          })}
+        </script>
+      </Helmet>
+
       <div className="container mx-auto px-4 py-4 sm:py-8">
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div>

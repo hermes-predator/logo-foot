@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -29,13 +28,13 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);
   
-  // Générer les schémas JSON-LD pour les 3 premières images
+  // Générer les schémas JSON-LD pour les 3 premières images (best-sellers)
   const topThreeItems = items.slice(0, 3);
-  const imageSchemas = topThreeItems.map(item => 
+  const imageSchemas = topThreeItems.map((item, index) => 
     ImageObjectSchema({
       imageUrl: item.imageUrl,
-      title: item.title,
-      altText: item.altText,
+      title: `Logo ${item.country} - Collection Premium ${index === 0 ? '(Premier League)' : index === 1 ? '(La Liga)' : '(Bundesliga)'}`,
+      altText: `Collection complète de logos de football de ${item.country} en haute qualité`,
       authorName: "FRONT-CLOUD",
       width: 800,
       height: 800
@@ -53,7 +52,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
   return (
     <div className="space-y-8">
-      {/* Ajouter les schémas JSON-LD pour les 3 premières images */}
+      {/* Ajouter les schémas JSON-LD enrichis pour les 3 premières images */}
       <Helmet>
         {imageSchemas.map((schema, index) => (
           <script key={index} type="application/ld+json">
@@ -61,6 +60,29 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
           </script>
         ))}
       </Helmet>
+
+      {/* Mettre en valeur les 3 images phares en début de grille */}
+      {!isLoading && (
+        <div className="mb-8">
+          <div className="flex items-center mb-3">
+            <h3 className="text-xl font-semibold text-gray-800">Collections phares</h3>
+            <div className="ml-3 px-2 py-1 bg-red-600 text-white text-xs rounded-md font-bold">TOP</div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {topThreeItems.map((item) => (
+              <div key={`featured-${item.id}`} className="transform transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-xl rounded-lg overflow-hidden border-2 border-gray-200 hover:border-gray-400">
+                <GalleryItem
+                  key={item.id}
+                  item={item}
+                  onHover={setHoveredItem}
+                  isHovered={hoveredItem === item.id}
+                  isPriority={true} // Toujours prioritaire pour les 3 premières
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {isLoading ? (

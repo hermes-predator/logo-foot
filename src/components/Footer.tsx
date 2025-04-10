@@ -180,7 +180,7 @@ const Footer = () => {
                     <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
                     <AccordionContent>
                       Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant : 
-                      Les logos des clubs de plus de 60 pays • Les logos des principales compétitions • Les drapeaux nationaux • Les logos des bookmakers et bien plus... 
+                      Les logos des clubs de football de plus de 60 pays • Les logos des principales compétitions • Les drapeaux nationaux • Les logos des bookmakers et bien plus... 
                       Tous les fichiers sont en PNG avec fond transparent, parfaitement optimisés pour une utilisation web.
                     </AccordionContent>
                   </AccordionItem>

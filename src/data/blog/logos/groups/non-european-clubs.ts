@@ -13,6 +13,7 @@ import { alNassrLogoPost } from '../al-nassr-logo';
 import { alHilalLogoPost } from '../al-hilal-logo';
 import { alAhliLogoPost } from '../al-ahli-logo';
 import { alIttihadLogoPost } from '../al-ittihad-logo';
+import { tigresUanlLogoPost } from '../tigres-uanl-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
@@ -20,6 +21,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   alNassrLogoPost,
   alAhliLogoPost,
   alIttihadLogoPost,
+  tigresUanlLogoPost,
   brazilianClubsPost,
   southAmericanClubsPost,
   interMiamiLogoPost,

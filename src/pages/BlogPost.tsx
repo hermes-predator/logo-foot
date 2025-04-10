@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -244,16 +245,7 @@ const BlogPost = () => {
                 </div>
               </div>
               
-              {/* Retour */}
-              <div className="flex flex-wrap items-center justify-end gap-3 mt-6 pt-4 border-t border-gray-100">
-                <Link 
-                  to="/blog" 
-                  className="text-sm text-purple-600 hover:text-purple-800 transition-colors flex items-center gap-1.5"
-                >
-                  <span>Retour au blog</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
+              {/* Supprimé: Lien "Retour au blog" */}
             </article>
             
             {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -16,6 +15,8 @@ import { Card } from '@/components/ui/card';
 import { toast } from '@/hooks/use-toast';
 import RelatedPosts from '../components/blog/RelatedPosts';
 import BlogPostSEO from './BlogPostSEO';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -117,206 +118,215 @@ const BlogPost = () => {
   const hasScrolledEnough = scrollPosition > 1000;
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30 relative">
-      {/* Intégrer le composant SEO */}
-      <BlogPostSEO />
-      
-      {/* Barre de progression verticale améliorée sur le côté droit */}
-      <div className="fixed right-0 top-0 h-full w-1 z-50 flex items-center">
-        <div className="h-full w-1 relative overflow-hidden rounded-full shadow-lg">
-          <div className="absolute inset-0 bg-white/30 backdrop-blur-md"></div>
-          <Progress 
-            value={scrollProgress} 
-            className="h-full w-1" 
-            orientation="vertical" 
-          />
-          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white/40 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white/40 to-transparent"></div>
-        </div>
-      </div>
-      
-      <FloatingCTA />
-      
-      <div className="container mx-auto py-3 md:py-5 px-3">
-        {/* Replace the custom breadcrumbs with the standard Breadcrumbs component */}
-        <Breadcrumbs />
+    <TooltipProvider>
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30 relative">
+        {/* Intégrer le composant SEO */}
+        <BlogPostSEO />
         
-        <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
-          {/* Colonne principale */}
-          <div className="lg:w-2/3">
-            {/* Info Card plus compact */}
-            <div className="mb-4">
-              <Card className="bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs p-2">
-                  <div className="flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5 text-gray-500" />
-                    <time 
-                      className="text-black"
-                      dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
-                    >
-                      {format(new Date(post.date), 'dd MMMM yyyy')}
-                    </time>
+        {/* Barre de progression verticale améliorée sur le côté droit */}
+        <div className="fixed right-0 top-0 h-full w-1 z-50 flex items-center">
+          <div className="h-full w-1 relative overflow-hidden rounded-full shadow-lg">
+            <div className="absolute inset-0 bg-white/30 backdrop-blur-md"></div>
+            <Progress 
+              value={scrollProgress} 
+              className="h-full w-1" 
+              orientation="vertical" 
+            />
+            <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white/40 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white/40 to-transparent"></div>
+          </div>
+        </div>
+        
+        <FloatingCTA />
+        
+        <div className="container mx-auto py-3 md:py-5 px-3">
+          {/* Replace the custom breadcrumbs with the standard Breadcrumbs component */}
+          <Breadcrumbs />
+          
+          <div className="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+            {/* Colonne principale */}
+            <div className="lg:w-2/3">
+              {/* Info Card plus compact */}
+              <div className="mb-4">
+                <Card className="bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs p-2">
+                    <div className="flex items-center gap-1.5">
+                      <Calendar className="h-3.5 w-3.5 text-gray-500" />
+                      <time 
+                        className="text-black"
+                        dateTime={format(new Date(post.date), 'yyyy-MM-dd')}
+                      >
+                        {format(new Date(post.date), 'dd MMMM yyyy')}
+                      </time>
+                    </div>
+                    
+                    <div className="flex items-center gap-1.5">
+                      <BookOpen className="h-3.5 w-3.5 text-gray-500" />
+                      <span className="text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-1.5">
+                      <Tag className="h-3.5 w-3.5 text-gray-500" />
+                      <span className="font-medium text-black">
+                        {BLOG_CATEGORIES[post.category]?.name || post.category}
+                      </span>
+                    </div>
                   </div>
-                  
-                  <div className="flex items-center gap-1.5">
-                    <BookOpen className="h-3.5 w-3.5 text-gray-500" />
-                    <span className="text-black">{post.content.length > 0 ? `${post.content.length / 1000 | 0} min de lecture` : ''}</span>
+                </Card>
+              </div>
+              
+              <article className="bg-white shadow-md rounded-xl p-3 md:p-5 transition-all duration-300">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight text-gray-900" itemProp="headline">
+                  {post.title}
+                </h1>
+                
+                {post.excerpt && (
+                  <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-gray-800 pl-3 py-1">
+                    {post.excerpt}
                   </div>
-                  
-                  <div className="flex items-center gap-1.5">
-                    <Tag className="h-3.5 w-3.5 text-gray-500" />
-                    <span className="font-medium text-black">
-                      {BLOG_CATEGORIES[post.category]?.name || post.category}
-                    </span>
+                )}
+                
+                {post.galleryImageId ? (
+                  <BlogImage
+                    src={`/blog-images/${post.id}.png`}
+                    alt={`${post.title.split(':')[0]}`}
+                    className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                  />
+                ) : (
+                  <BlogImage
+                    src={getDefaultImageSrc(post.category)}
+                    alt={`${post.title.split(':')[0]}`}
+                    className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                    isDefault={true}
+                  />
+                )}
+                
+                {/* Bouton CTA supérieur - plus visible après défilement */}
+                {hasScrolledEnough && (
+                  <div className="my-6 bg-purple-50 border border-purple-100 rounded-lg p-4 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div>
+                        <h3 className="font-bold text-purple-900 mb-1">Accédez à notre pack complet</h3>
+                        <p className="text-sm text-purple-700">8600+ logos de football en haute qualité</p>
+                      </div>
+                      <Button 
+                        asChild 
+                        className="bg-purple-600 hover:bg-purple-700 shadow-sm px-4 py-2 w-full sm:w-auto animate-pulse"
+                      >
+                        <Link to="/" className="flex items-center justify-center gap-1.5">
+                          <Download className="h-4 w-4" />
+                          <span>Télécharger maintenant</span>
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
+                )}
+                
+                <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
+                  <ReactMarkdown components={markdownComponents}>
+                    {post.content}
+                  </ReactMarkdown>
                 </div>
-              </Card>
-            </div>
-            
-            <article className="bg-white shadow-md rounded-xl p-3 md:p-5 transition-all duration-300">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight text-gray-900" itemProp="headline">
-                {post.title}
-              </h1>
-              
-              {post.excerpt && (
-                <div className="mb-4 text-base md:text-lg text-gray-600 font-light italic border-l-4 border-gray-800 pl-3 py-1">
-                  {post.excerpt}
-                </div>
-              )}
-              
-              {post.galleryImageId ? (
-                <BlogImage
-                  src={`/blog-images/${post.id}.png`}
-                  alt={`${post.title.split(':')[0]}`}
-                  className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
-                />
-              ) : (
-                <BlogImage
-                  src={getDefaultImageSrc(post.category)}
-                  alt={`${post.title.split(':')[0]}`}
-                  className="mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
-                  isDefault={true}
-                />
-              )}
-              
-              {/* Bouton CTA supérieur - plus visible après défilement */}
-              {hasScrolledEnough && (
-                <div className="my-6 bg-purple-50 border border-purple-100 rounded-lg p-4 shadow-sm">
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                
+                {/* CTA de fin d'article amélioré */}
+                <div className="mt-8 mb-2 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-5 border border-purple-100 shadow-sm">
+                  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <div>
-                      <h3 className="font-bold text-purple-900 mb-1">Accédez à notre pack complet</h3>
-                      <p className="text-sm text-purple-700">8600+ logos de football en haute qualité</p>
+                      <h3 className="font-bold text-gray-900 text-lg mb-1">Vous avez aimé cet article ?</h3>
+                      <p className="text-gray-600">Découvrez notre pack complet de <strong>8600+ logos de football</strong> en haute qualité</p>
                     </div>
                     <Button 
                       asChild 
-                      className="bg-purple-600 hover:bg-purple-700 shadow-sm px-4 py-2 w-full sm:w-auto animate-pulse"
+                      className="bg-purple-600 hover:bg-purple-700 shadow-md px-5 py-2.5 w-full md:w-auto"
                     >
-                      <Link to="/" className="flex items-center justify-center gap-1.5">
-                        <Download className="h-4 w-4" />
-                        <span>Télécharger maintenant</span>
+                      <Link to="/" className="flex items-center justify-center gap-2">
+                        <Download className="h-5 w-5" />
+                        <span>Télécharger tous les logos</span>
                       </Link>
                     </Button>
                   </div>
                 </div>
-              )}
+                
+                {/* Supprimé: Lien "Retour au blog" */}
+              </article>
               
-              <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
-                <ReactMarkdown components={markdownComponents}>
-                  {post.content}
-                </ReactMarkdown>
+              {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
+              <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
+                <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
               </div>
-              
-              {/* CTA de fin d'article amélioré */}
-              <div className="mt-8 mb-2 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-5 border border-purple-100 shadow-sm">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-lg mb-1">Vous avez aimé cet article ?</h3>
-                    <p className="text-gray-600">Découvrez notre pack complet de <strong>8600+ logos de football</strong> en haute qualité</p>
-                  </div>
+            </div>
+            
+            {/* Colonne latérale */}
+            <div className="lg:w-1/3 space-y-6">
+              {/* Encart "Télécharger maintenant" */}
+              <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 sticky top-24">
+                <h3 className="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
+                  <Folder className="h-5 w-5 text-black" />
+                  Téléchargement express
+                </h3>
+                
+                <div className="bg-amber-50 rounded-lg p-4 mb-4">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <h4 className="font-bold text-black mb-2 text-sm cursor-help">⦗FRONT-CLOUD⦘~ Football.zip</h4>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-sm">Collection complète de logos de football</p>
+                    </TooltipContent>
+                  </Tooltip>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-start gap-2">
+                      <div className="mt-0.5 flex-shrink-0">
+                        <Check className="h-4 w-4 text-green-600" />
+                      </div>
+                      <span className="text-sm text-gray-700">8600+ logos en haute qualité</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="mt-0.5 flex-shrink-0">
+                        <Check className="h-4 w-4 text-green-600" />
+                      </div>
+                      <span className="text-sm text-gray-700">Format PNG transparent</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="mt-0.5 flex-shrink-0">
+                        <Check className="h-4 w-4 text-green-600" />
+                      </div>
+                      <span className="text-sm text-gray-700">Livraison instantanée</span>
+                    </li>
+                  </ul>
+                  
                   <Button 
                     asChild 
-                    className="bg-purple-600 hover:bg-purple-700 shadow-md px-5 py-2.5 w-full md:w-auto"
+                    className="w-full bg-white hover:bg-gray-50 text-black border border-gray-200"
                   >
-                    <Link to="/" className="flex items-center justify-center gap-2">
-                      <Download className="h-5 w-5" />
-                      <span>Télécharger tous les logos</span>
+                    <Link to="/" className="flex items-center justify-center gap-1.5">
+                      <Folder className="h-4 w-4" />
+                      <span>Voir ce fichier</span>
                     </Link>
                   </Button>
+                  
+                  <div className="mt-3 text-center">
+                    <Link 
+                      to="/" 
+                      className="text-xs text-amber-700 hover:text-amber-800 transition-colors flex items-center justify-center gap-1"
+                    >
+                      <span>Voir tous les détails</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </Link>
+                  </div>
                 </div>
+                
+                {/* Articles populaires */}
+                
               </div>
-              
-              {/* Supprimé: Lien "Retour au blog" */}
-            </article>
-            
-            {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
-            <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
-              <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
             </div>
           </div>
           
-          {/* Colonne latérale */}
-          <div className="lg:w-1/3 space-y-6">
-            {/* Encart "Télécharger maintenant" */}
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 sticky top-24">
-              <h3 className="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
-                <Folder className="h-5 w-5 text-black" />
-                Téléchargement express
-              </h3>
-              
-              <div className="bg-amber-50 rounded-lg p-4 mb-4">
-                <h4 className="font-bold text-black mb-2 text-sm">⦗FRONT-CLOUD⦘~ Football.zip</h4>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start gap-2">
-                    <div className="mt-0.5 flex-shrink-0">
-                      <Check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-sm text-gray-700">8600+ logos en haute qualité</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="mt-0.5 flex-shrink-0">
-                      <Check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-sm text-gray-700">Format PNG transparent</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="mt-0.5 flex-shrink-0">
-                      <Check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-sm text-gray-700">Livraison instantanée</span>
-                  </li>
-                </ul>
-                
-                <Button 
-                  asChild 
-                  className="w-full bg-white hover:bg-gray-50 text-black border border-gray-200"
-                >
-                  <Link to="/" className="flex items-center justify-center gap-1.5">
-                    <Folder className="h-4 w-4" />
-                    <span>Voir ce fichier</span>
-                  </Link>
-                </Button>
-                
-                <div className="mt-3 text-center">
-                  <Link 
-                    to="/" 
-                    className="text-xs text-amber-700 hover:text-amber-800 transition-colors flex items-center justify-center gap-1"
-                  >
-                    <span>Voir tous les détails</span>
-                    <ExternalLink className="h-3 w-3" />
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Articles populaires */}
-              
-            </div>
-          </div>
+          {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
+          <div className="h-24 md:h-28 w-full"></div>
         </div>
-        
-        {/* Adding extra padding at the bottom to ensure content isn't hidden by the FloatingCTA */}
-        <div className="h-24 md:h-28 w-full"></div>
       </div>
-    </div>
+    </TooltipProvider>
   );
 };
 

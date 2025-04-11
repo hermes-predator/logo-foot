@@ -104,7 +104,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
   const borderClass = isLast ? '' : 'border-b-4 border-gray-200/80';
 
   return (
-    <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group`}>
+    <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group border border-gray-200/50 shadow-sm`}>
       {/* Decorative icon in top right corner - color transition on hover */}
       {decorativeIcon && (
         <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
@@ -119,7 +119,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         <span>{title}</span>
       </h3>
       
-      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3`}>
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 border border-gray-100/60`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -134,7 +134,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
             <List className={`h-4 w-4 ${colors.icon} transition-colors duration-300 group-hover:${colors.iconHover}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3`}>
+          <p className={`text-xs leading-relaxed ${colors.value} ${colors.itemBg} rounded-lg p-3 border border-gray-100/60`}>
             {collections}
           </p>
         </div>

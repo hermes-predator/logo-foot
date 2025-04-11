@@ -7,6 +7,7 @@ import { atleticoMadridLogoPost } from '../atletico-madrid-logo';
 import { athleticBilbaoLogoPost } from '../athletic-bilbao-logo';
 import { barcelonaLogoPost } from '../barcelona-logo';
 import { celtaVigoLogoPost } from '../celta-vigo-logo';
+import { eibarLogoPost } from '../eibar-logo';
 import { elcheCfLogoPost } from '../elche-cf-logo';
 import { espanyolLogoPost } from '../espanyol-logo';
 import { getafeLogoPost } from '../getafe-logo';
@@ -36,6 +37,7 @@ export const spanishClubPosts: BlogPost[] = [
   atleticoMadridLogoPost,
   barcelonaLogoPost,
   celtaVigoLogoPost,
+  eibarLogoPost,
   elcheCfLogoPost,
   espanyolLogoPost,
   getafeLogoPost,

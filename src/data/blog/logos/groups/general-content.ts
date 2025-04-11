@@ -14,7 +14,7 @@ import { logosFootballClubPost } from '../logos-football-club';
 import { logosTelechargerPost } from '../logos-telecharger';
 import { pngFootballPost } from '../png-football';
 import { pngFootballLogoPost } from '../png-football-logo';
-import { pack1001LogosFootPost } from '../1001-logos-foot-pdf';
+import { logosFootPdfPost } from '../1001-logos-foot-pdf';
 import { drapeauxLogoPost } from '../drapeaux-logo';
 
 // Group all general content logo posts
@@ -31,6 +31,6 @@ export const generalContentPosts: BlogPost[] = [
   logosTelechargerPost,
   pngFootballPost,
   pngFootballLogoPost,
-  pack1001LogosFootPost,
+  logosFootPdfPost,
   drapeauxLogoPost
 ];

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -105,8 +106,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </div>
                 </div>
                 
-                <div className="flex justify-between items-center mb-6">
-                  <div className="mt-4">
+                <div className="flex justify-between items-center mb-8">
+                  <div className="mt-5">
                     <GoogleDriveBadge />
                   </div>
                   <Tooltip>
@@ -118,7 +119,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                         }}
                         variant="outline" 
                         size="sm" 
-                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
+                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-3"
                       >
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>

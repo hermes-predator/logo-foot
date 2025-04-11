@@ -1,18 +1,15 @@
-
 import React, { useState, useEffect } from 'react';
 import ClubGallery from './gallery/ClubGallery';
 import CompetitionGallery from './gallery/CompetitionGallery';
 import { generateGalleryItems } from '@/utils/galleryData';
 import { LazySection } from './ui/lazy-section';
 import { Helmet } from 'react-helmet-async';
-
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
   const {
     clubItems,
     competitionItems
   } = generateGalleryItems();
-  
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -22,10 +19,6 @@ const ProductGallery = () => {
 
   // Récupérer les 3 premières images pour le SEO (best-sellers)
   const bestSellerItems = clubItems.slice(0, 3);
-  
-  // Liste des drapeaux disponibles pour améliorer le SEO pour les drapeaux
-  const flagsDescription = "Collection de drapeaux logo de plus de 200 pays et régions en format PNG transparent";
-  
   return <section className="w-full min-h-screen bg-white">
       <Helmet>
         {/* Préchargement des images prioritaires pour Google */}
@@ -47,23 +40,6 @@ const ProductGallery = () => {
             "@type": "Thing",
             "name": "Logos de Football",
             "description": "Collection des logos de football officiels des grands clubs européens"
-          }
-        })}
-        </script>
-        
-        {/* Schéma supplémentaire pour les drapeaux */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Dataset",
-          "name": "Drapeaux Logo - Collection Internationale",
-          "description": flagsDescription,
-          "keywords": "drapeau logo, drapeaux logo, logos drapeaux png, emblèmes nationaux",
-          "isAccessibleForFree": true,
-          "license": "https://logo-foot.com/license",
-          "creator": {
-            "@type": "Organization",
-            "name": "Logo Foot"
           }
         })}
         </script>
@@ -91,5 +67,4 @@ const ProductGallery = () => {
       </div>
     </section>;
 };
-
 export default ProductGallery;

@@ -33,6 +33,7 @@ import { trabzonsporLogoPost } from '../trabzonspor-logo';
 import { aekAthensLogoPost } from '../aek-athens-logo';
 import { ludogoretsLogoPost } from '../ludogorets-logo';
 import { qarabagLogoPost } from '../qarabag-logo';
+import { viktoriaPlzenLogoPost } from '../viktoria-plzen-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -66,5 +67,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   slaviaPragueLogoPost,
   slovanBratislavaLogoPost,
   standardDeLiegeLogoPost,
-  trabzonsporLogoPost
+  trabzonsporLogoPost,
+  viktoriaPlzenLogoPost
 ];

@@ -4,6 +4,7 @@ import { useLazyLoading } from '@/hooks/useLazyLoading';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';
 import { Skeleton } from './skeleton';
+import { generateSrcSet } from '@/lib/core-web-vitals';
 
 interface OptimizedImageProps {
   src: string;
@@ -30,6 +31,11 @@ export function OptimizedImage({
   const [isLoaded, setIsLoaded] = useState(priority);
   const [error, setError] = useState(false);
   
+  // Générer le srcSet pour différentes tailles d'écran
+  const { srcSet, sizes } = useMemo(() => 
+    generateSrcSet(src, [320, 640, 768, 1024, 1280, 1536, width], 80),
+  [src, width]);
+  
   // Resize and optimize image URL if it's on our domain
   const optimizedSrc = useMemo(() => {
     if (src.startsWith('/') || src.includes('logo-foot.com')) {
@@ -39,9 +45,8 @@ export function OptimizedImage({
     return src;
   }, [src, width]);
 
-  // Generate webp version if the image is not already a webp
-  const isWebP = optimizedSrc.toLowerCase().endsWith('.webp');
-  const imgSrc = isWebP ? optimizedSrc : optimizedSrc;
+  // Utiliser format moderne WebP si disponible
+  const imgSrc = optimizedSrc;
   
   const handleLoad = () => {
     setIsLoaded(true);
@@ -87,26 +92,34 @@ export function OptimizedImage({
             <span className="text-sm">Image unavailable</span>
           </div>
         ) : (
-          <img
-            ref={imgRef}
-            src={shouldLoad ? imgSrc : '/placeholder.svg'}
-            alt={alt}
-            width={width}
-            height={height}
-            onLoad={handleLoad}
-            onError={handleError}
-            onContextMenu={(e) => e.preventDefault()}
-            draggable="false"
-            className={cn(
-              `w-full h-full transition-opacity duration-300 ${
-                isLoaded ? 'opacity-100' : 'opacity-0'
-              }`,
-              `object-${objectFit}`,
-              className
-            )}
-            loading={priority ? 'eager' : 'lazy'}
-            decoding={priority ? 'sync' : 'async'}
-          />
+          <>
+            {/* Préchargement pour les images prioritaires */}
+            {priority && <link rel="preload" as="image" href={imgSrc} />}
+            
+            <img
+              ref={imgRef}
+              src={shouldLoad ? imgSrc : '/placeholder.svg'}
+              srcSet={shouldLoad ? srcSet : ''}
+              sizes={sizes}
+              alt={alt}
+              width={width}
+              height={height}
+              onLoad={handleLoad}
+              onError={handleError}
+              onContextMenu={(e) => e.preventDefault()}
+              draggable="false"
+              loading={priority ? 'eager' : 'lazy'}
+              decoding={priority ? 'sync' : 'async'}
+              fetchPriority={priority ? 'high' : 'auto'}
+              className={cn(
+                `w-full h-full transition-opacity duration-300 ${
+                  isLoaded ? 'opacity-100' : 'opacity-0'
+                }`,
+                `object-${objectFit}`,
+                className
+              )}
+            />
+          </>
         )}
       </AspectRatio>
     </div>

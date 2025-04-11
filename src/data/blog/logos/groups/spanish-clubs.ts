@@ -6,8 +6,10 @@ import { atleticoMadridLogoPost } from '../atletico-madrid-logo';
 import { barcelonaLogoPost } from '../barcelona-logo';
 import { celtaVigoLogoPost } from '../celta-vigo-logo';
 import { elcheCfLogoPost } from '../elche-cf-logo';
+import { espanyolLogoPost } from '../espanyol-logo';
 import { getafeLogoPost } from '../getafe-logo';
 import { gironaLogoPost } from '../girona-logo';
+import { huescaLogoPost } from '../huesca-logo';
 import { lasPalmasLogoPost } from '../las-palmas-logo';
 import { leganesLogoPost } from '../leganes-logo';
 import { majorqueLogoPost } from '../majorque-logo';
@@ -18,6 +20,7 @@ import { realMadridLogoPost } from '../real-madrid-logo';
 import { realSociedadLogoPost } from '../real-sociedad-logo';
 import { realValladolidLogoPost } from '../real-valladolid-logo';
 import { sevillaFcLogoPost } from '../sevilla-fc-logo';
+import { valenciaCfLogoPost } from '../valencia-cf-logo';
 import { villarrealCfLogoPost } from '../villarreal-cf-logo';
 import { athleticBilbaoLogoPost } from '../athletic-bilbao-logo';
 
@@ -28,8 +31,10 @@ export const spanishClubPosts: BlogPost[] = [
   barcelonaLogoPost,
   celtaVigoLogoPost,
   elcheCfLogoPost,
+  espanyolLogoPost,
   getafeLogoPost,
   gironaLogoPost,
+  huescaLogoPost,
   lasPalmasLogoPost,
   leganesLogoPost,
   majorqueLogoPost,
@@ -40,5 +45,6 @@ export const spanishClubPosts: BlogPost[] = [
   realSociedadLogoPost,
   realValladolidLogoPost,
   sevillaFcLogoPost,
+  valenciaCfLogoPost,
   villarrealCfLogoPost
 ];

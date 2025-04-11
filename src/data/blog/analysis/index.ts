@@ -4,7 +4,7 @@ import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
 import { premierLeagueAnalysis } from './premier-league';
 import { serieAAnalysis } from './serie-a';
 import { bundesligaAnalysis } from './bundesliga';
-import { laLigaAnalysis } from './laliga';
+import { laligaAnalysis } from './laliga';
 import { ligue1Analysis } from './ligue-1';
 import { championsLeagueAnalysis } from './champions-league';
 import { kylianMbappePost } from './kylian-mbappe';
@@ -48,7 +48,7 @@ export const analysisPosts: BlogPost[] = [
   premierLeagueAnalysis,
   serieAAnalysis, 
   bundesligaAnalysis,
-  laLigaAnalysis,
+  laligaAnalysis,
   ligue1Analysis,
   championsLeagueAnalysis,
   kylianMbappePost,

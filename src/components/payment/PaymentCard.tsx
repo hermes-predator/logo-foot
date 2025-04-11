@@ -40,8 +40,8 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         </div>
         <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"}`}>La plus grande collection de logos de football en haute qualité</p>
         
-        {/* Google Drive Badge déplacé ici, juste en dessous de la description */}
-        <div className="mt-1">
+        {/* Google Drive Badge déplacé ici, avec plus d'espace */}
+        <div className="mt-3">
           <GoogleDriveBadge />
         </div>
       </div>

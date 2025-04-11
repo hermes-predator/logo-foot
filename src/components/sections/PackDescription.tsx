@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -141,7 +142,7 @@ const PackDescription = () => {
         </div>
         
         {/* Zone d'achat améliorée */}
-        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-5 relative overflow-hidden">
+        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 shadow-sm transition-all duration-300 hover:shadow-md mt-8 relative overflow-hidden">
           {/* Ajout d'un effet de brillance au fond */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-[shine_4s_ease-in-out_infinite] z-0"></div>
           

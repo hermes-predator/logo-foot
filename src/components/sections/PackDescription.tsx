@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -30,6 +29,7 @@ const PackDescription = () => {
       <div className="mb-4">
         <h3 className="text-xl md:text-2xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         <p className="text-gray-600 font-medium">La plus grande collection de logos de football en haute qualité</p>
+        {/* Badge placé directement sous le titre */}
         <GoogleDriveBadge />
       </div>
       

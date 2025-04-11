@@ -6,7 +6,6 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
-import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 import { useIsSmallMobile } from '@/hooks/use-mobile';
 
@@ -39,11 +38,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <h3 className={`${isSmallMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
         </div>
         <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"}`}>La plus grande collection de logos de football en haute qualité</p>
-        
-        {/* Google Drive Badge déplacé ici, juste en dessous de la description */}
-        <div className="mt-1">
-          <GoogleDriveBadge />
-        </div>
       </div>
 
       <div className="relative z-10">

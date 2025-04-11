@@ -37,6 +37,7 @@ import { qarabagLogoPost } from '../qarabag-logo';
 import { viktoriaPlzenLogoPost } from '../viktoria-plzen-logo';
 import { laskLinzLogoPost } from '../lask-linz-logo';
 import { apoelNicosiaLogoPost } from '../apoel-nicosia-logo';
+import { nkMariborLogoPost } from '../nk-maribor-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -62,6 +63,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   laGantoiseLogoPost,
   laskLinzLogoPost,
   ludogoretsLogoPost,
+  nkMariborLogoPost,
   olympiakosLogoPost,
   panathinaikosLogoPost,
   partizanBelgradeLogoPost,

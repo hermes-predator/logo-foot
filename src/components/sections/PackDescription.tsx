@@ -33,8 +33,8 @@ const PackDescription = () => {
       
       {/* Section des dossiers avec leurs descriptions */}
       <div className="mb-6 relative">
-        {/* Positionnement du badge Google Drive près du premier dossier */}
-        <div className="absolute top-2 right-2 z-10">
+        {/* Positionnement du badge Google Drive à gauche du premier dossier */}
+        <div className="absolute top-2 left-[-120px] z-10">
           <GoogleDriveBadge />
         </div>
         

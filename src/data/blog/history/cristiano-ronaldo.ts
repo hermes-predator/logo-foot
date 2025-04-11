@@ -66,6 +66,6 @@ Son passage au **Real Madrid Cristiano Ronaldo** restera comme l'apogée d'une c
 
 Des ruelles de Madère aux plus grands stades du monde, le parcours de **Cristiano Ronaldo** incarne le rêve ultime de millions d'enfants passionnés de football. Sa capacité à transformer ses faiblesses en forces, à s'adapter constamment et à repousser les limites du vieillissement athlétique fait de lui bien plus qu'un footballeur d'exception – il est devenu une référence universelle d'excellence, de travail et de persévérance.`,
   keywords: "cristiano ronaldo, statistiques de cristiano ronaldo, cristiano ronaldo salaire, cristiano ronaldo âge, cristiano ronaldo jeune, cristiano ronaldo taille, real madrid cristiano ronaldo",
-  category: 'history',
+  category: 'analysis',
   subCategory: 'players'
 };

@@ -12,6 +12,7 @@ import { gironaLogoPost } from '../girona-logo';
 import { huescaLogoPost } from '../huesca-logo';
 import { lasPalmasLogoPost } from '../las-palmas-logo';
 import { leganesLogoPost } from '../leganes-logo';
+import { levanteUdLogoPost } from '../levante-ud-logo';
 import { majorqueLogoPost } from '../majorque-logo';
 import { osasunaLogoPost } from '../osasuna-logo';
 import { rayoVallecanoLogoPost } from '../rayo-vallecano-logo';
@@ -37,6 +38,7 @@ export const spanishClubPosts: BlogPost[] = [
   huescaLogoPost,
   lasPalmasLogoPost,
   leganesLogoPost,
+  levanteUdLogoPost,
   majorqueLogoPost,
   osasunaLogoPost,
   rayoVallecanoLogoPost,

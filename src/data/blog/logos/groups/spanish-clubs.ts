@@ -21,6 +21,7 @@ import { osasunaLogoPost } from '../osasuna-logo';
 import { rayoVallecanoLogoPost } from '../rayo-vallecano-logo';
 import { realBetisLogoPost } from '../real-betis-logo';
 import { realMadridLogoPost } from '../real-madrid-logo';
+import { realOviedoLogoPost } from '../real-oviedo-logo';
 import { realSociedadLogoPost } from '../real-sociedad-logo';
 import { realValladolidLogoPost } from '../real-valladolid-logo';
 import { sevillaFcLogoPost } from '../sevilla-fc-logo';
@@ -48,6 +49,7 @@ export const spanishClubPosts: BlogPost[] = [
   rayoVallecanoLogoPost,
   realBetisLogoPost,
   realMadridLogoPost,
+  realOviedoLogoPost,
   realSociedadLogoPost,
   realValladolidLogoPost,
   sevillaFcLogoPost,

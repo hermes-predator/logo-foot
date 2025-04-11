@@ -10,7 +10,7 @@ const GoogleDriveBadge = () => {
     >
       <BadgeCheck className="h-3.5 w-3.5" />
       <span className="font-medium text-xs">Stockable sur Google Drive</span>
-      <img src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" alt="Google Drive" className="h-4" />
+      <img src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" alt="Google Drive" className="h-5" />
     </Badge>
   );
 };

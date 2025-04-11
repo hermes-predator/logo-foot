@@ -15,6 +15,7 @@ import { huescaLogoPost } from '../huesca-logo';
 import { lasPalmasLogoPost } from '../las-palmas-logo';
 import { leganesLogoPost } from '../leganes-logo';
 import { levanteUdLogoPost } from '../levante-ud-logo';
+import { malagaLogoPost } from '../malaga-logo';
 import { majorqueLogoPost } from '../majorque-logo';
 import { mirandesLogoPost } from '../mirandes-logo';
 import { osasunaLogoPost } from '../osasuna-logo';
@@ -43,6 +44,7 @@ export const spanishClubPosts: BlogPost[] = [
   lasPalmasLogoPost,
   leganesLogoPost,
   levanteUdLogoPost,
+  malagaLogoPost,
   majorqueLogoPost,
   mirandesLogoPost,
   osasunaLogoPost,

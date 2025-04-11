@@ -95,18 +95,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader className="pb-0">
                 <div className="flex flex-col mb-0">
-                  <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
+                  <DialogTitle className="text-2xl font-bold text-black text-left mb-1">
                     Descriptif du ZIP
                   </DialogTitle>
                   
-                  <div className="relative mb-1">
+                  <div className="relative mb-2">
                     <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </span>
                   </div>
                 </div>
                 
-                <div className="flex justify-between items-center mb-2">
+                <div className="flex justify-between items-center mb-4">
                   <GoogleDriveBadge />
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -117,7 +117,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                         }}
                         variant="outline" 
                         size="sm" 
-                        className="h-8 bg-gray-50 hover:bg-gray-100 border-gray-200 text-gray-600 gap-1"
+                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1"
                       >
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>

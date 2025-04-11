@@ -28,7 +28,7 @@ const PackDescription = () => {
       {/* Titre du pack avec Google Drive Badge */}
       <div className="mb-4">
         <h3 className="text-xl md:text-2xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h3>
-        <p className="text-gray-600 font-medium">La plus grande collection de logos de football en haute qualité</p>
+        {/* Removed the subtitle text */}
       </div>
       
       {/* Section des dossiers avec leurs descriptions */}

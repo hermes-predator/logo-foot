@@ -1,16 +1,16 @@
 
 import { BlogPost } from '../../../types/blog';
 import { psgRumeursTransfertPost } from './psg-rumeurs-transfert';
-import { premierLeaguePost } from './premier-league';
-import { serieAPost } from './serie-a';
-import { bundesligaPost } from './bundesliga';
-import { laLigaPost } from './laliga';
-import { ligue1Post } from './ligue-1';
-import { championsLeaguePost } from './champions-league';
+import { premierLeagueAnalysis } from './premier-league';
+import { serieAAnalysis } from './serie-a';
+import { bundesligaAnalysis } from './bundesliga';
+import { laLigaAnalysis } from './laliga';
+import { ligue1Analysis } from './ligue-1';
+import { championsLeagueAnalysis } from './champions-league';
 import { kylianMbappePost } from './kylian-mbappe';
 import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
 import { victorOsimhenPost } from './victor-osimhen';
-import { dynameKievLogoPost } from './dynamo-kiev-logo';
+import { dynamoKievLogoPost } from './dynamo-kiev-logo';
 import { philFodenPost } from './phil-foden';
 import { neymarPost } from './neymar';
 import { lionelMessiPost } from './lionel-messi';
@@ -21,7 +21,7 @@ import { judeBellinghamPost } from './jude-bellingham';
 import { hugoEkitikePost } from './hugo-ekitike';
 import { williamSalibaPost } from './william-saliba';
 import { williamPachoPost } from './william-pacho';
-import { florentWirtzPost } from './florian-wirtz';
+import { florianWirtzPost } from './florian-wirtz';
 import { jamalMusialaPost } from './jamal-musiala';
 import { lamineYamalPost } from './lamine-yamal';
 import { lamineYamal2Post } from './lamine-yamal-2';
@@ -45,16 +45,16 @@ import { colorTheoryPost } from './color-theory';
 // Group all posts into a single array
 export const analysisPosts: BlogPost[] = [
   psgRumeursTransfertPost,
-  premierLeaguePost,
-  serieAPost, 
-  bundesligaPost,
-  laLigaPost,
-  ligue1Post,
-  championsLeaguePost,
+  premierLeagueAnalysis,
+  serieAAnalysis, 
+  bundesligaAnalysis,
+  laLigaAnalysis,
+  ligue1Analysis,
+  championsLeagueAnalysis,
   kylianMbappePost,
   mbappeEtSonFilsPost,
   victorOsimhenPost,
-  dynameKievLogoPost,
+  dynamoKievLogoPost,
   philFodenPost,
   neymarPost,
   lionelMessiPost,
@@ -65,7 +65,7 @@ export const analysisPosts: BlogPost[] = [
   hugoEkitikePost,
   williamSalibaPost,
   williamPachoPost,
-  florentWirtzPost,
+  florianWirtzPost,
   jamalMusialaPost,
   lamineYamalPost,
   lamineYamal2Post,

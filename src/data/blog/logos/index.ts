@@ -38,6 +38,7 @@ import { hajdukSplitLogoPost } from './hajduk-split-logo';
 import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
 import { cadizLogoPost } from './cadiz-logo';
+import { ludogoretsLogoPost } from './ludogorets-logo';
 // Supprimé l'import individuel de fcTwenteLogoPost car il est déjà dans otherEuropeanClubPosts
 
 // Combine all logo-related posts into a single array
@@ -79,6 +80,7 @@ export const logoPosts: BlogPost[] = [
   hajdukSplitLogoPost,
   tacaDePortugalLogoPost,
   ballonDorLogoPost,
-  cadizLogoPost
+  cadizLogoPost,
+  ludogoretsLogoPost
   // Supprimé fcTwenteLogoPost de la liste individuelle car il est déjà dans otherEuropeanClubPosts
 ];

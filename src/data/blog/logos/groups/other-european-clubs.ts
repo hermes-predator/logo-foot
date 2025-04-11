@@ -38,6 +38,7 @@ import { viktoriaPlzenLogoPost } from '../viktoria-plzen-logo';
 import { laskLinzLogoPost } from '../lask-linz-logo';
 import { apoelNicosiaLogoPost } from '../apoel-nicosia-logo';
 import { nkMariborLogoPost } from '../nk-maribor-logo';
+import { sheriffTiraspolLogoPost } from '../sheriff-tiraspol-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -71,6 +72,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   qarabagLogoPost,
   royalAntwerpLogoPost,
   shakhtarDonetskLogoPost,
+  sheriffTiraspolLogoPost,
   slaviaPragueLogoPost,
   slovanBratislavaLogoPost,
   spartaPragueLogoPost,

@@ -13,6 +13,7 @@ import { clubBrugesLogoPost } from '../club-bruges-logo';
 import { copenhagenLogoPost } from '../copenhagen-logo';
 import { dinamoZagrebLogoPost } from '../dinamo-zagreb-logo';
 import { fcTwenteLogoPost } from '../fc-twente-logo';
+import { ferencvarosLogoPost } from '../ferencvaros-logo';
 import { feyenoordLogoPost } from '../feyenoord-logo';
 import { galatasarayLogoPost } from '../galatasaray-logo';
 import { genkLogoPost } from '../genk-logo';
@@ -46,6 +47,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   copenhagenLogoPost,
   dinamoZagrebLogoPost,
   fcTwenteLogoPost,
+  ferencvarosLogoPost,
   feyenoordLogoPost,
   galatasarayLogoPost,
   genkLogoPost,
@@ -64,3 +66,4 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   standardDeLiegeLogoPost,
   trabzonsporLogoPost
 ];
+

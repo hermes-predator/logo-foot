@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -106,8 +105,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </div>
                 </div>
                 
-                <div className="flex justify-between items-center mb-4">
-                  <GoogleDriveBadge />
+                <div className="flex justify-between items-center mb-6">
+                  <div className="mt-4">
+                    <GoogleDriveBadge />
+                  </div>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button 

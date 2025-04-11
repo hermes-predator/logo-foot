@@ -2,7 +2,9 @@
 import { BlogPost } from '../../../../types/blog';
 
 // Import Spanish club logo posts
+import { almeriaLogoPost } from '../almeria-logo';
 import { atleticoMadridLogoPost } from '../atletico-madrid-logo';
+import { athleticBilbaoLogoPost } from '../athletic-bilbao-logo';
 import { barcelonaLogoPost } from '../barcelona-logo';
 import { celtaVigoLogoPost } from '../celta-vigo-logo';
 import { elcheCfLogoPost } from '../elche-cf-logo';
@@ -14,6 +16,7 @@ import { lasPalmasLogoPost } from '../las-palmas-logo';
 import { leganesLogoPost } from '../leganes-logo';
 import { levanteUdLogoPost } from '../levante-ud-logo';
 import { majorqueLogoPost } from '../majorque-logo';
+import { mirandesLogoPost } from '../mirandes-logo';
 import { osasunaLogoPost } from '../osasuna-logo';
 import { rayoVallecanoLogoPost } from '../rayo-vallecano-logo';
 import { realBetisLogoPost } from '../real-betis-logo';
@@ -23,10 +26,10 @@ import { realValladolidLogoPost } from '../real-valladolid-logo';
 import { sevillaFcLogoPost } from '../sevilla-fc-logo';
 import { valenciaCfLogoPost } from '../valencia-cf-logo';
 import { villarrealCfLogoPost } from '../villarreal-cf-logo';
-import { athleticBilbaoLogoPost } from '../athletic-bilbao-logo';
 
 // Group all Spanish club logo posts
 export const spanishClubPosts: BlogPost[] = [
+  almeriaLogoPost,
   athleticBilbaoLogoPost,
   atleticoMadridLogoPost,
   barcelonaLogoPost,
@@ -40,6 +43,7 @@ export const spanishClubPosts: BlogPost[] = [
   leganesLogoPost,
   levanteUdLogoPost,
   majorqueLogoPost,
+  mirandesLogoPost,
   osasunaLogoPost,
   rayoVallecanoLogoPost,
   realBetisLogoPost,

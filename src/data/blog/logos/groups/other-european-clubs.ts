@@ -19,6 +19,7 @@ import { glasgowRangersLogoPost } from '../glasgow-rangers-logo';
 import { istanbulBasaksehirLogoPost } from '../istanbul-basaksehir-logo';
 import { laGantoiseLogoPost } from '../la-gantoise-logo';
 import { olympiakosLogoPost } from '../olympiakos-logo';
+import { panathinaikosLogoPost } from '../panathinaikos-logo';
 import { psvEindhovenLogoPost } from '../psv-eindhoven-logo';
 import { royalAntwerpLogoPost } from '../royal-antwerp-logo';
 import { shakhtarDonetskLogoPost } from '../shakhtar-donetsk-logo';
@@ -48,6 +49,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   istanbulBasaksehirLogoPost,
   laGantoiseLogoPost,
   olympiakosLogoPost,
+  panathinaikosLogoPost,
   psvEindhovenLogoPost,
   royalAntwerpLogoPost,
   shakhtarDonetskLogoPost,

@@ -31,8 +31,9 @@ const PackDescription = () => {
         <p className="text-gray-600 font-medium">La plus grande collection de logos de football en haute qualité</p>
       </div>
       
-      {/* Positionnement du badge Google Drive au-dessus du premier dossier */}
-      <div className="mb-2">
+      {/* Badges Google Drive placés symétriquement */}
+      <div className="flex justify-between mb-2">
+        <GoogleDriveBadge />
         <GoogleDriveBadge />
       </div>
       

@@ -62,7 +62,11 @@ function App() {
     };
   }, []);
 
-  const isDev = import.meta.env.DEV;
+  // La bannière ne s'affiche maintenant qu'en mode développement 
+  // et uniquement si le paramètre showVitalsReporter est explicitement activé
+  // Pour facilement activer/désactiver en développement via l'URL
+  const showVitalsReporter = import.meta.env.DEV && 
+    (new URLSearchParams(window.location.search).get('debug') === 'vitals');
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -86,8 +90,8 @@ function App() {
             </OptimizedSuspense>
             <Toaster />
             
-            {/* Afficher le reporter de Web Vitals uniquement en développement */}
-            <WebVitalsReporter devMode={isDev} />
+            {/* Reporter web vitals uniquement si activé avec le paramètre debug=vitals */}
+            {showVitalsReporter && <WebVitalsReporter devMode={true} />}
           </Router>
         </TooltipProvider>
       </HelmetProvider>

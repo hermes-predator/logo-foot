@@ -7,7 +7,7 @@
   <!-- Pages statiques -->
   <url>
     <loc>https://logo-foot.com/</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/" />
@@ -33,12 +33,34 @@
   <!-- Reste du sitemap inchangé -->
   <url>
     <loc>https://logo-foot.com/blog</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-04-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog" />
     <xhtml:link rel="alternate" hrefLang="en" href="https://logo-foot.com/en/blog" />
     <xhtml:link rel="alternate" hrefLang="x-default" href="https://logo-foot.com/blog" />
+  </url>
+  
+  <!-- Nouvel article Hugo Ekitike -->
+  <url>
+    <loc>https://logo-foot.com/blog/61</loc>
+    <lastmod>2025-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/61" />
+    <image:image>
+      <image:loc>https://logo-foot.com/blog-images/hugo-ekitike.jpg</image:loc>
+      <image:title>Hugo Ekitike</image:title>
+      <image:caption>Hugo Ekitike, attaquant français évoluant à l'Eintracht Francfort</image:caption>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Logo Foot</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2025-04-10T10:00:00+01:00</news:publication_date>
+      <news:title>Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort</news:title>
+    </news:news>
   </url>
   
   <!-- Pages de catégories avec images -->
@@ -88,6 +110,20 @@
     <image:image>
       <image:loc>https://logo-foot.com/country-images/spain.png</image:loc>
       <image:title>Logos des clubs espagnols</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Ajout Allemagne pour l'article sur Hugo Ekitike -->
+  <url>
+    <loc>https://logo-foot.com/gallery/country/germany</loc>
+    <lastmod>2025-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/germany" />
+    <image:image>
+      <image:loc>https://logo-foot.com/country-images/germany.png</image:loc>
+      <image:title>Logos des clubs allemands</image:title>
+      <image:caption>Collection de logos des clubs de football allemands</image:caption>
     </image:image>
   </url>
   

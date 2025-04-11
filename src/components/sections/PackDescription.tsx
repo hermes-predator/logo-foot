@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -30,18 +29,6 @@ const PackDescription = () => {
       <div className="mb-4">
         <h3 className="text-xl md:text-2xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h3>
         <p className="text-gray-600 font-medium">La plus grande collection de logos de football en haute qualité</p>
-      </div>
-      
-      {/* Badge Google Drive et bouton de paiement placés symétriquement */}
-      <div className="flex justify-between items-center mb-4">
-        <GoogleDriveBadge />
-        <Button 
-          onClick={handlePayment}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-2 rounded-lg shadow-sm flex items-center gap-2 transition-all duration-300"
-        >
-          <ShoppingCart className="h-4 w-4" />
-          <span className="font-medium text-sm">Télécharger (9€)</span>
-        </Button>
       </div>
       
       {/* Section des dossiers avec leurs descriptions */}

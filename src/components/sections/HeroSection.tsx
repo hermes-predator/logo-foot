@@ -16,6 +16,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -105,7 +106,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </div>
                 </div>
                 
-                <div className="flex justify-end mb-2">
+                <div className="flex justify-between items-center mb-4">
+                  <GoogleDriveBadge />
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button 

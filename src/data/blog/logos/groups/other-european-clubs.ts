@@ -36,11 +36,13 @@ import { ludogoretsLogoPost } from '../ludogorets-logo';
 import { qarabagLogoPost } from '../qarabag-logo';
 import { viktoriaPlzenLogoPost } from '../viktoria-plzen-logo';
 import { laskLinzLogoPost } from '../lask-linz-logo';
+import { apoelNicosiaLogoPost } from '../apoel-nicosia-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
   anderlechtLogoPost,
+  apoelNicosiaLogoPost,
   azAlkmaarLogoPost,
   aekAthensLogoPost,
   besiktasLogoPost,

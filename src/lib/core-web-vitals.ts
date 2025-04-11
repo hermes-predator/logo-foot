@@ -21,6 +21,23 @@ interface WebVitalsOptions {
   debug?: boolean; // Afficher les logs en console
 }
 
+// Interface étendant PerformanceEntry pour les métriques spécifiques
+interface PerformanceEntryWithStart extends PerformanceEntry {
+  startTime: number;
+}
+
+// Interface pour First Input Delay
+interface FirstInputPerformanceEntry extends PerformanceEntry {
+  processingStart: number;
+  startTime: number;
+}
+
+// Interface pour Layout Shift
+interface LayoutShiftPerformanceEntry extends PerformanceEntry {
+  hadRecentInput?: boolean;
+  value?: number;
+}
+
 // Fonction pour observer et mesurer LCP (Largest Contentful Paint)
 export const measureLCP = (callback?: (value: number) => void) => {
   if (typeof window === 'undefined' || !('PerformanceObserver' in window)) return;
@@ -28,7 +45,7 @@ export const measureLCP = (callback?: (value: number) => void) => {
   try {
     const lcpObserver = new PerformanceObserver((entryList) => {
       const entries = entryList.getEntries();
-      const lastEntry = entries[entries.length - 1];
+      const lastEntry = entries[entries.length - 1] as PerformanceEntryWithStart;
       
       // Valeur LCP en millisecondes
       const lcpValue = lastEntry.startTime;
@@ -63,7 +80,7 @@ export const measureFID = (callback?: (value: number) => void) => {
   try {
     const fidObserver = new PerformanceObserver((entryList) => {
       const entries = entryList.getEntries();
-      const firstEntry = entries[0];
+      const firstEntry = entries[0] as FirstInputPerformanceEntry;
       
       // Valeur FID en millisecondes
       const fidValue = firstEntry.processingStart - firstEntry.startTime;
@@ -104,10 +121,10 @@ export const measureCLS = (callback?: (value: number) => void) => {
       
       entries.forEach(entry => {
         // Ne pas inclure les entrées qui ont 0 de layout shift
-        if (!(entry as any).hadRecentInput) {
-          const currentEntry = entry as PerformanceEntry;
+        const currentEntry = entry as LayoutShiftPerformanceEntry;
+        if (!currentEntry.hadRecentInput) {
           clsEntries.push(currentEntry);
-          clsValue += (currentEntry as any).value;
+          clsValue += currentEntry.value || 0;
         }
       });
       

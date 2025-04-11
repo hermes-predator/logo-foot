@@ -31,13 +31,13 @@ const PackDescription = () => {
         <p className="text-gray-600 font-medium">La plus grande collection de logos de football en haute qualité</p>
       </div>
       
+      {/* Positionnement du badge Google Drive au-dessus du premier dossier */}
+      <div className="mb-2">
+        <GoogleDriveBadge />
+      </div>
+      
       {/* Section des dossiers avec leurs descriptions */}
       <div className="mb-6 relative">
-        {/* Positionnement du badge Google Drive à gauche du premier dossier */}
-        <div className="absolute top-2 left-[-120px] z-10">
-          <GoogleDriveBadge />
-        </div>
-        
         <FolderCard
           title="𝐅.𝟎𝟏 – Logos des clubs de football"
           colorScheme="gray"

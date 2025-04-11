@@ -41,6 +41,7 @@ import { nkMariborLogoPost } from '../nk-maribor-logo';
 import { sheriffTiraspolLogoPost } from '../sheriff-tiraspol-logo';
 import { sturmGrazLogoPost } from '../sturm-graz-logo';
 import { steauaBucarestLogoPost } from '../steaua-bucarest-logo';
+import { lechPoznanLogoPost } from '../lech-poznan-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -65,6 +66,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   istanbulBasaksehirLogoPost,
   laGantoiseLogoPost,
   laskLinzLogoPost,
+  lechPoznanLogoPost,
   ludogoretsLogoPost,
   nkMariborLogoPost,
   olympiakosLogoPost,

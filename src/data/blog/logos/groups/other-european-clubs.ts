@@ -26,12 +26,14 @@ import { slaviaPragueLogoPost } from '../slavia-prague-logo';
 import { slovanBratislavaLogoPost } from '../slovan-bratislava-logo';
 import { standardDeLiegeLogoPost } from '../standard-de-liege-logo';
 import { trabzonsporLogoPost } from '../trabzonspor-logo';
+import { aekAthensLogoPost } from '../aek-athens-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
   anderlechtLogoPost,
   azAlkmaarLogoPost,
+  aekAthensLogoPost,
   besiktasLogoPost,
   celticGlasgowLogoPost,
   cfrClujLogoPost,

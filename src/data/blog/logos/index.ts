@@ -37,6 +37,7 @@ import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
 import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
+import { fcTwenteLogoPost } from './fc-twente-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -76,6 +77,6 @@ export const logoPosts: BlogPost[] = [
   ligaMxLogoPost,
   hajdukSplitLogoPost,
   tacaDePortugalLogoPost,
-  ballonDorLogoPost
+  ballonDorLogoPost,
+  fcTwenteLogoPost
 ];
-

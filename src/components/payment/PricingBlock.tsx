@@ -59,7 +59,12 @@ const PricingBlock = () => {
                   </ul>
                   <div className="flex items-center gap-1.5 mt-2 text-gray-600 font-medium">
                     <Mail className="h-4 w-4" />
-                    <span>contact@logo-foot.com</span>
+                    <a 
+                      href="mailto:contact@logo-foot.com" 
+                      className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
+                    >
+                      contact@logo-foot.com
+                    </a>
                   </div>
                 </p>
               </div>

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -37,9 +38,9 @@ import { hajdukSplitLogoPost } from './hajduk-split-logo';
 import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
 import { cadizLogoPost } from './cadiz-logo';
-// Supprimé l'import individuel de ludogoretsLogoPost car il est déjà inclus dans otherEuropeanClubPosts
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
+import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -81,5 +82,6 @@ export const logoPosts: BlogPost[] = [
   ballonDorLogoPost,
   cadizLogoPost,
   pixelArtPsgLogoPost,
-  dinamoTbilisiLogoPost
+  dinamoTbilisiLogoPost,
+  maccabiTelAvivLogoPost
 ];

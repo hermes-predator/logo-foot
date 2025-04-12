@@ -50,6 +50,5 @@ Le **logo Dinamo Tbilissi** raconte plus qu'une simple histoire de football. C'e
   date: '2024-04-12',
   keywords: '**logo Dinamo Tbilissi**, **dinamo tbilisi logo**, **dinamo tbilisi logo png**, football géorgien, histoire des logos, design de logo sportif',
   author: 'Front Cloud',
-  galleryImageId: 'dinamo-tbilisi-logo'
+  galleryImageId: 360 // Changed from string to number
 };
-

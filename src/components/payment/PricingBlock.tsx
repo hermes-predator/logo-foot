@@ -57,9 +57,9 @@ const PricingBlock = () => {
                     {['Votre nom et prénom', 'La date et l\'heure d\'achat', 'Une preuve d\'achat (reçu)'].map((item, index) => (
                       <li 
                         key={index} 
-                        className="flex items-center text-gray-500 bg-blue-50/50 px-3 py-1.5 rounded-md border border-blue-100/70 shadow-sm"
+                        className="flex items-center text-gray-400 bg-blue-50/30 px-3 py-1.5 rounded-md border border-blue-100/50 shadow-sm"
                       >
-                        <span className="mr-2 text-blue-500 font-bold">•</span>
+                        <span className="mr-2 text-blue-300 font-bold">•</span>
                         <span className="text-sm font-medium">{item}</span>
                       </li>
                     ))}

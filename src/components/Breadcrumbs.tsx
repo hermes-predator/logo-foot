@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
@@ -44,7 +45,7 @@ const Breadcrumbs = () => {
               className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 px-4 h-9 rounded-full transition-colors duration-200 group shadow-sm hover:shadow"
               aria-label="Accueil"
             >
-              <Home className="h-4 w-4 text-blue-600" />
+              <Home className="h-4 w-4 text-gray-700" />
               <span className="text-gray-700 font-medium text-sm">Accueil</span>
             </Link>
           </BreadcrumbItem>

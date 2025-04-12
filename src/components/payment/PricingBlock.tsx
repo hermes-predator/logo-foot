@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw } from 'lucide-react';
 import {
@@ -46,22 +45,25 @@ const PricingBlock = () => {
               </div>
             </TooltipTrigger>
             <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-              <p className="font-semibold text-emerald-700">Votre satisfaction est notre engagement.</p>
+              <p className="font-semibold text-emerald-700">Votre satisfaction est primordiale.</p>
               <div className="space-y-2 text-gray-700">
-                <p>14 jours pour vous convaincre. Si notre collection ne répond pas à vos attentes, nous vous remboursons intégralement.</p>
-                <p>🔒 Processus simple et transparent.</p>
-                <p>💡 Parce que votre confiance est notre priorité absolue.</p>
-                <div className="mt-4 text-gray-600 text-[13px] border-t border-gray-100 pt-2">
-                  <p className="font-semibold mb-1">Pour un remboursement :</p>
-                  <ul className="list-disc ml-4 space-y-1">
-                    <li>Contactez contact@logo-foot.com</li>
-                    <li>Incluez votre nom et date d'achat</li>
-                    <li>Joignez votre preuve d'achat</li>
+                <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
+                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                <div className="mt-4 text-gray-600 text-[13px] bg-blue-50/30 border-l-4 border-blue-400 pl-3 py-2 rounded-r-md">
+                  <p className="font-semibold mb-2 text-blue-800">Procédure de remboursement :</p>
+                  <ul className="list-disc ml-4 space-y-1 text-gray-700">
+                    <li>Contactez-nous par email "contact@logo-foot.com"</li>
+                    <li>Incluez :</li>
+                    <ul className="ml-4 list-[circle]">
+                      <li>Votre nom et prénom</li>
+                      <li>La date et l'heure d'achat</li>
+                      <li>Une preuve d'achat (reçu)</li>
+                    </ul>
                   </ul>
                 </div>
               </div>
             </TooltipContent>
-          </Tooltip>
         </div>
       </div>
     </div>

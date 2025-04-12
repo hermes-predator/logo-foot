@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -39,6 +38,7 @@ import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
 import { cadizLogoPost } from './cadiz-logo';
 // Supprimé l'import individuel de ludogoretsLogoPost car il est déjà inclus dans otherEuropeanClubPosts
+import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 
 // Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
@@ -79,6 +79,7 @@ export const logoPosts: BlogPost[] = [
   hajdukSplitLogoPost,
   tacaDePortugalLogoPost,
   ballonDorLogoPost,
-  cadizLogoPost
+  cadizLogoPost,
+  pixelArtPsgLogoPost
   // Supprimé ludogoretsLogoPost de la liste individuelle car il est déjà dans otherEuropeanClubPosts
 ];

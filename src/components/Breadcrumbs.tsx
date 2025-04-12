@@ -62,7 +62,7 @@ const Breadcrumbs = () => {
                 <BreadcrumbItem>
                   {isLast ? (
                     <span 
-                      className="px-3 py-1 bg-blue-100 rounded-full text-blue-800 font-medium flex items-center"
+                      className="px-3 py-1 bg-white rounded-full text-gray-800 font-medium flex items-center shadow-sm"
                       aria-current="page"
                     >
                       {label}
@@ -88,3 +88,4 @@ const Breadcrumbs = () => {
 };
 
 export default Breadcrumbs;
+

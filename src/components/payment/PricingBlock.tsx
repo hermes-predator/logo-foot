@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -53,11 +52,22 @@ const PricingBlock = () => {
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
                 <p className="mt-4 text-gray-600">
                   Pour cela, contactez-nous par email en incluant :
-                  <ul className="list-disc ml-4 mt-1 space-y-1">
-                    <li>Votre nom et prénom</li>
-                    <li>La date et l'heure d'achat</li>
-                    <li>Une preuve d'achat (reçu)</li>
-                  </ul>
+                  <div className="mt-2 p-3 bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg shadow-sm">
+                    <ul className="space-y-2">
+                      <li className="flex items-center gap-2 text-gray-800">
+                        <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        Votre nom et prénom
+                      </li>
+                      <li className="flex items-center gap-2 text-gray-800">
+                        <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        La date et l'heure d'achat
+                      </li>
+                      <li className="flex items-center gap-2 text-gray-800">
+                        <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        Une preuve d'achat (reçu)
+                      </li>
+                    </ul>
+                  </div>
                   <div className="flex items-center gap-1.5 mt-2 text-blue-600 font-medium">
                     <Mail className="h-4 w-4" />
                     <span>contact@logo-foot.com</span>

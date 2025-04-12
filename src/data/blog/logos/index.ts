@@ -47,6 +47,7 @@ import { commentCreerLogoFootballPost } from './comment-creer-logo-football';
 import { avranchesLogoPost } from './avranches-logo';
 import { footballLogosHistoryPost } from './football-logos-history';
 import { middlesbroughLogoPost } from './middlesbrough-logo';
+import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -96,5 +97,6 @@ export const logoPosts: BlogPost[] = [
   commentCreerLogoFootballPost,
   avranchesLogoPost,
   footballLogosHistoryPost,
-  middlesbroughLogoPost
+  middlesbroughLogoPost,
+  blackburnRoversLogoPost
 ];

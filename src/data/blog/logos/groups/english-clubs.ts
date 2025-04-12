@@ -36,8 +36,8 @@ import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 
 // New import
 import { middlesbroughLogoPost } from '../middlesbrough-logo';
+import { blackburnRoversLogoPost } from '../blackburn-rovers-logo';
 
-// Group all English club logo posts
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
   astonVillaLogoPost,
@@ -71,5 +71,6 @@ export const englishClubPosts: BlogPost[] = [
   westBromwichLogoPost,
   westHamLogoPost,
   wolverhamptonLogoPost,
-  middlesbroughLogoPost
+  middlesbroughLogoPost,
+  blackburnRoversLogoPost
 ];

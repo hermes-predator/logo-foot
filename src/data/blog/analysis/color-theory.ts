@@ -67,5 +67,5 @@ Tech Couleur Logo
 - Social fit
 - Web pro`,
   keywords: "couleur logo foot, palette écusson foot, design logo football, choix couleur foot, création logo foot",
-  category: 'players'
+  category: 'logos'
 };

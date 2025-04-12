@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const serieAAnalysis: BlogPost = {
@@ -32,5 +31,5 @@ La Serie A trace sa voie entre tradition et innovation. Les expériences en réa
 
 Au cœur de cette révolution, une certitude demeure : le football italien conserve cette touche d'élégance qui le caractérise depuis toujours. Les logos et les marques évoluent, mais la passion reste intacte, aussi brûlante que les fumigènes des ultras un soir de derby.`,
   keywords: "analyse marketing serie a, branding clubs italiens, stratégie digitale calcio, design logos serie a, marketing football italien",
-  category: 'players'
+  category: 'logos'
 };

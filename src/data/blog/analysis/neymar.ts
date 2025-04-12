@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const neymarPost: BlogPost = {
@@ -94,7 +93,5 @@ Pour d'autres, les **statistiques de Neymar** parlent d'elles-mêmes : plus de 4
 
 Quoi qu'il en soit, **Neymar** aura marqué son époque par un style unique, faisant rêver des millions de fans à travers le monde avec ses gestes techniques d'exception. Des plages de Santos aux stades ultramodernes d'Arabie Saoudite, en passant par le Camp Nou et le Parc des Princes, le "Joga Bonito" incarné par **Neymar Jr** continue d'inspirer toute une génération de jeunes footballeurs.`,
   keywords: "neymar, neymar jr, neymar al hilal, neymar psg, neymar santos, neymar age, neymar enfant, neymar gros, neymar salaire, neymar âge, salaire neymar, statistiques de neymar, age neymar, neymar barca, neymar club, neymar taille, photo neymar, taille neymar, maillot neymar, crampon neymar, image neymar, maillot santos neymar, neymar bresil, neymar en photo, neymar enfance, neymar femme, neymar football photos, neymar photoshoot, neymar prime, coupe de cheveux de neymar, maillot bresil neymar, neymar coupe de cheveux, neymar fils",
-  category: 'analysis',
-  subCategory: 'case-studies'
+  category: 'players'
 };
-

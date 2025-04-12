@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const xaviSimonsPost: BlogPost = {
@@ -81,6 +80,5 @@ Les projections sur son avenir sont unanimement positives. Sa polyvalence, sa te
 
 Que ce soit au PSG, à Leipzig ou dans un autre grand club européen, l'avenir de **Xavi Simons** s'annonce radieux. Les supporteurs de football peuvent se réjouir de pouvoir suivre l'évolution d'un talent aussi pur, dont la carrière ne fait que commencer mais promet déjà tant.`,
   keywords: "Xavi Simons, Xavi Simons PSG, Simons Xavi, statistiques de Xavi Simons, Xavi Simons origine, age Xavi Simons, PSG Xavi Simons, Xavi Simons dates d'inscription, Xavi Simons taille, Xavi Simons age, Xavi Simons Barcelona, Xavi Simons salaire, Xavi Simons stats, Xavi Simons équipes actuelles, Xavi Simons Barça, Xavi Simons club, Xavi Simons Leipzig, Xavi Simons parents, Xavi Simons Pays Bas, Xavi Simons numero, Xavi Simons transfert, Xavi Simons Barca, Xavi Simons club actuel, but Xavi Simons, maillot Xavi Simons, Xavi Simons blessure, Xavi Simons copine, matchs de Xavi Simons, où joue Xavi Simons, Xavi Simons poste, Xavi Simons PSV, salaire Xavi Simons",
-  category: 'analysis',
-  subCategory: 'players'
+  category: 'players'
 };

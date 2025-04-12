@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const rayanCherkiPost: BlogPost = {
@@ -129,8 +128,6 @@ En réalité, le prénom officiel du joueur est bien **Rayan Cherki** et non **R
 Les prochaines saisons seront déterminantes pour confirmer les immenses espoirs placés en lui. Que ce soit à Lyon, au **Rayan Cherki PSG** ou dans un autre grand club européen, l'avenir s'annonce radieux pour ce joyau du football français. De même, son choix entre l'équipe de France et l'**Rayan Cherki Algérie** sera un tournant majeur dans sa carrière internationale.
 
 Une chose est certaine : les amateurs de beau jeu continueront de suivre avec attention l'évolution de ce talent d'exception, dont les arabesques techniques et la vision du jeu promettent encore de nombreux moments de magie sur les terrains. **Rayan Cherki** a tout pour devenir l'une des figures majeures du football mondial dans les années à venir.`,
-  keywords: "rayan cherki, rayan cherki algerie, rayan cherki psg, rayan cherki algérie, statistiques de rayan cherki, rayane cherki, rayan cherki marseillaise, rayan cherki origine parents, rayan cherki origine, rayan cherki salaire, rayan cherki âge, rayan cherki agent",
-  category: 'analysis',
-  subCategory: undefined,
-  galleryImageId: undefined
+  keywords: "Rayan Cherki, Cherki Rayan, statistiques de Rayan Cherki, Rayan Cherki origine, age Rayan Cherki, PSG Rayan Cherki, Rayan Cherki dates d'inscription, Rayan Cherki taille, Rayan Cherki age, Rayan Cherki OL, Rayan Cherki salaire, Rayan Cherki stats, Rayan Cherki équipes actuelles, Rayan Cherki Lyon, Rayan Cherki club, Rayan Cherki marseillaise, Rayan Cherki parents, Rayan Cherki France, Rayan Cherki numero, Rayan Cherki transfert, Rayan Cherki algerie, Rayan Cherki club actuel, but Rayan Cherki, maillot Rayan Cherki, Rayan Cherki agent, Rayan Cherki origine parents, Rayan Cherki Algérie",
+  category: 'players'
 };

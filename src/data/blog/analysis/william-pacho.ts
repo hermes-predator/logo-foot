@@ -1,11 +1,10 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const williamPachoPost: BlogPost = {
-  id: 256,
-  title: "William Pacho : Analyse Complète du Défenseur Équatorien [Guide 2024]",
-  excerpt: "Découvrez notre analyse détaillée de William Pacho : son parcours, ses statistiques impressionnantes, sa technique défensive, son transfert potentiel au PSG et son impact grandissant dans le football européen.",
-  date: "2024-08-15",
+  id: 396,
+  title: "William Pacho : Le Roc Équatorien qui Séduit l'Europe [Analyse 2024]",
+  excerpt: "Découvrez notre analyse détaillée de William Pacho, sa technique défensive exceptionnelle, son parcours, ses statistiques et pourquoi les plus grands clubs européens se l'arrachent.",
+  date: "2024-06-02",
   content: `# Tout savoir sur **William Pacho** en 2024
 
 ## Qui est **William Pacho** : Parcours et ascension
@@ -99,7 +98,6 @@ Sur le plan technique, malgré ses qualités déjà impressionnantes, **William 
 Pour le football équatorien, l'émergence de **William Pacho** représente une source d'espoir et de fierté. Dans un pays qui cherche constamment à s'affirmer sur la scène footballistique internationale, disposer d'un représentant dans l'un des plus grands championnats européens constitue une vitrine précieuse et une source d'inspiration pour les jeunes générations.
 
 Qu'il poursuive son développement à Francfort ou qu'il relève un nouveau défi dans un club encore plus prestigieux, l'avenir s'annonce radieux pour **William Pacho**, défenseur complet et moderne qui semble posséder toutes les qualités nécessaires pour s'inscrire durablement parmi les références à son poste.`,
-  keywords: "william pacho, pacho william, william.pacho, william pacho transfermarkt, statistiques de william pacho, william pacho psg, william pacho taille, william pacho transfert, william pacho poste, défenseur équatorien, football équateur, bundesliga défenseur, eintracht francfort, défenseur central, talents sud-américains",
-  category: 'analysis',
-  subCategory: 'case-studies'
+  keywords: "william pacho, pacho eintracht, pacho equateur, pacho défenseur, pacho statistiques, pacho transfert, pacho psg, pacho premier league, pacho technique, pacho central, pacho copa america, pacho bundesliga, pacho antwerp, pacho independiente, pacho relance, pacho tacles, pacho aerial, pacho progression, pacho salaire, pacho potentiel",
+  category: 'players'
 };

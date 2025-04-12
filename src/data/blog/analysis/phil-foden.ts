@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const philFodenPost: BlogPost = {
@@ -63,5 +62,5 @@ L'avenir s'annonce radieux pour ce talent d'exception. Que ce soit avec Manchest
 
 Les **statistiques de phil foden**, son impact sur le jeu, sa maturité précoce et son potentiel encore inexploité laissent présager que nous n'avons encore vu qu'un aperçu des capacités de ce joueur d'exception. Le "Stockport Iniesta", comme le surnomment affectueusement les supporters de Manchester City, n'a certainement pas fini de nous surprendre.`,
   keywords: "phil foden, statistiques de phil foden, phil foden wife, phil foden femme, femme phil foden, phil foden enfants, phil foden haircut, coupe phil foden, phil foden age, phil foden âge, phil foden fils, phil foden taille, phil foden coupe de cheveux, fils phil foden, coupe de cheveux phil foden, coupe de phil foden, femme de phil foden, phil foden famille, phil foden salaire, maillot phil foden, phil foden gf, phil foden nudes, crampon phil foden",
-  category: 'analysis'
+  category: 'players'
 };

@@ -116,7 +116,6 @@ const BlogPost = () => {
   const postDate = new Date(post.date);
   
   // Détecter si l'utilisateur a défilé suffisamment pour afficher les CTA renforcés
-  const hasScrolledEnough = scrollPosition > 1000;
   
   return (
     <TooltipProvider>
@@ -202,26 +201,7 @@ const BlogPost = () => {
                   />
                 )}
                 
-                {/* Bouton CTA supérieur - plus visible après défilement */}
-                {hasScrolledEnough && (
-                  <div className="my-6 bg-purple-50 border border-purple-100 rounded-lg p-4 shadow-sm">
-                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                      <div>
-                        <h3 className="font-bold text-purple-900 mb-1">Accédez à notre pack complet</h3>
-                        <p className="text-sm text-purple-700">8600+ logos de football en haute qualité</p>
-                      </div>
-                      <Button 
-                        asChild 
-                        className="bg-purple-600 hover:bg-purple-700 shadow-sm px-4 py-2 w-full sm:w-auto animate-pulse"
-                      >
-                        <Link to="/" className="flex items-center justify-center gap-1.5">
-                          <Download className="h-4 w-4" />
-                          <span>Télécharger maintenant</span>
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                )}
+                
                 
                 <div className="prose prose-gray lg:prose-lg mx-auto relative" itemProp="articleBody">
                   <ReactMarkdown components={markdownComponents}>

@@ -1,5 +1,4 @@
-
-export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art';
+export type BlogCategory = 'logos' | 'history' | 'technical' | 'players' | 'pixel-art';
 
 export interface BlogSubCategory {
   id: string;
@@ -87,20 +86,20 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
       }
     ]
   },
-  analysis: {
-    name: "Analyses",
-    description: "Analyses des tendances et styles",
+  players: {
+    name: "Joueurs",
+    description: "Analyses et portraits de joueurs de football",
     subCategories: [
       {
         id: "trends",
         name: "Tendances",
-        description: "Les tendances actuelles du design de logo",
+        description: "Les tendances actuelles autour des joueurs",
         slug: "trends"
       },
       {
         id: "case-studies",
         name: "Études de Cas",
-        description: "Analyses détaillées de rebranding",
+        description: "Analyses détaillées de parcours de joueurs",
         slug: "case-studies"
       }
     ]

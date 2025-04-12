@@ -19,7 +19,6 @@ import { logoMaillotFootPost } from '../logo-maillot-foot';
 import { ecussonsFootballPost } from '../ecussons-football';
 import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
 import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
-import { commentCreerLogoFootballPost } from '../comment-creer-logo-football';
 
 // Group all general content posts
 export const generalContentPosts: BlogPost[] = [
@@ -39,6 +38,5 @@ export const generalContentPosts: BlogPost[] = [
   logoMaillotFootPost,
   ecussonsFootballPost,
   ecussonsClubFootEuropeenPost,
-  blasonsEquipesFootballPost,
-  commentCreerLogoFootballPost
+  blasonsEquipesFootballPost
 ];

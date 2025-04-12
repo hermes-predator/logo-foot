@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const commentCreerLogoFootballPost: BlogPost = {
@@ -165,6 +164,6 @@ La création d'un logo footballistique efficace est un équilibre délicat entre
 
 Que vous soyez designer professionnel ou passionné souhaitant créer l'identité visuelle de votre club local, ces principes vous guideront vers un résultat qui inspirera fierté et appartenance.`,
   keywords: "comment créer un logo de football, créer logo foot, design écusson football, conception emblème club, logo club foot création, identité visuelle football",
-  category: 'logos',
-  subCategory: 'design'
+  category: 'technical',
+  subCategory: 'design-guidelines'
 };

@@ -31,11 +31,11 @@ const BlogHeader = () => {
       </h1>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
-        <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50/40 via-white/60 to-blue-50/40 rounded-2xl blur-lg"></div>
+        <div className="relative bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-gray-200/80 shadow-md transition-all duration-300 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-3">
-            <div className="bg-gray-100 p-2 rounded-xl">
-              <BookOpen className="w-5 h-5 text-black" />
+            <div className="bg-blue-50 p-2 rounded-xl text-blue-600 transition-transform duration-300 group-hover:rotate-3">
+              <BookOpen className="w-5 h-5" />
             </div>
             <h2 className="font-semibold text-gray-900">
               Le Blog Logo-Foot
@@ -71,8 +71,7 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          {/* Modification du style du CTA avec des couleurs jaune ambré */}
-          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner transform transition-all duration-300 hover:scale-[1.01]">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
@@ -81,11 +80,12 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group">
+                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group relative overflow-hidden">
                       <Link to="/" className="flex items-center gap-2">
-                        <Folder className="h-4 w-4" />
+                        <Folder className="h-4 w-4 text-amber-500" />
                         <span>Voir le fichier</span>
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        <span className="absolute inset-0 w-full h-full bg-amber-100/30 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                       </Link>
                     </Button>
                   </TooltipTrigger>

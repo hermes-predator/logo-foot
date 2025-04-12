@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -18,6 +17,20 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
     }
     idMap.get(post.id)?.push(post);
   });
+  
+  // Nouveau log pour montrer explicitement les doublons
+  const duplicatePosts: BlogPost[] = [];
+  idMap.forEach((postsWithSameId, id) => {
+    if (postsWithSameId.length > 1) {
+      console.warn(`🚨 DOUBLON DÉTECTÉ - ID ${id}`);
+      postsWithSameId.forEach(post => {
+        console.warn(`  • "${post.title}"`);
+        duplicatePosts.push(post);
+      });
+    }
+  });
+
+  console.log(`📊 Nombre total de doublons : ${duplicatePosts.length}`);
   
   // Trouver l'ID maximum actuel
   let maxId = Math.max(...posts.map(post => post.id));
@@ -87,4 +100,3 @@ console.log('%c 📚 STATISTIQUES DU BLOG 📚', 'background: #3498db; color: wh
 console.log('%c Nombre total d\'articles: ' + blogPosts.length, 'font-size: 14px; font-weight: bold;');
 console.log('%c Répartition par catégorie:', 'font-size: 14px;');
 console.table(countByCategory);
-

@@ -7,7 +7,6 @@ import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { jsPDF } from 'jspdf';
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
-import DownloadProgress from '@/components/payment/DownloadProgress';
 
 const PaymentSuccess = () => {
   const { toast } = useToast();
@@ -15,8 +14,6 @@ const PaymentSuccess = () => {
   const [isDownloading, setIsDownloading] = useState<boolean>(false);
   const [isGeneratingReceipt, setIsGeneratingReceipt] = useState<boolean>(false);
   const [downloadProgress, setDownloadProgress] = useState<number>(0);
-  const [downloadStatus, setDownloadStatus] = useState<'idle' | 'downloading' | 'complete' | 'error'>('idle');
-  const [showProgress, setShowProgress] = useState<boolean>(false);
   const location = useLocation();
   const [orderId] = useState(() => `FC-${Date.now().toString().slice(-8)}`);
   
@@ -43,21 +40,12 @@ const PaymentSuccess = () => {
   const handleDownload = () => {
     setIsDownloading(true);
     setDownloadProgress(0);
-    setShowProgress(true);
-    setDownloadStatus('downloading');
     
     // Simuler une progression du téléchargement
     const interval = setInterval(() => {
       setDownloadProgress(prev => {
         if (prev >= 100) {
           clearInterval(interval);
-          setDownloadStatus('complete');
-          
-          // Cacher la barre de progression après un délai
-          setTimeout(() => {
-            setShowProgress(false);
-          }, 3000);
-          
           return 100;
         }
         return prev + 10;
@@ -79,6 +67,8 @@ const PaymentSuccess = () => {
       });
       
       setIsDownloading(false);
+      clearInterval(interval);
+      setDownloadProgress(100);
     }, 2500);
   };
 
@@ -271,14 +261,6 @@ const PaymentSuccess = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50/60 to-gray-100/60 px-4 py-10">
       {/* Confetti celebration component */}
       <ConfettiCelebration duration={8000} />
-      
-      {/* Barre de progression du téléchargement */}
-      {showProgress && (
-        <DownloadProgress
-          progress={downloadProgress}
-          status={downloadStatus}
-        />
-      )}
       
       <div className="max-w-4xl mx-auto w-full space-y-8">
         {/* En-tête avec statut de commande */}

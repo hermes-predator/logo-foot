@@ -8,16 +8,12 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import DownloadProgress from './DownloadProgress';
 
 // Importation paresseuse (lazy) des effets pour ne pas bloquer le rendu initial
 const ButtonEffects = lazy(() => import('./ButtonEffects'));
 
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
-  const [showProgress, setShowProgress] = useState(false);
-  const [downloadProgress, setDownloadProgress] = useState(0);
-  const [downloadStatus, setDownloadStatus] = useState<'idle' | 'downloading' | 'complete' | 'error'>('idle');
   const { toast } = useToast();
 
   const handlePayment = () => {
@@ -30,31 +26,6 @@ const PaymentButton = () => {
     const returnUrl = `${window.location.origin}/payment-success`;
     // Nouveau lien SumUp mis à jour
     window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-  };
-
-  // Fonction pour simuler un téléchargement (pour la démonstration)
-  const simulateDownload = () => {
-    setShowProgress(true);
-    setDownloadStatus('downloading');
-    setDownloadProgress(0);
-    
-    const interval = setInterval(() => {
-      setDownloadProgress(prev => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setDownloadStatus('complete');
-          
-          // Cacher la barre de progression après un délai
-          setTimeout(() => {
-            setShowProgress(false);
-            setDownloadStatus('idle');
-          }, 3000);
-          
-          return 100;
-        }
-        return prev + 5;
-      });
-    }, 300);
   };
 
   return (
@@ -87,26 +58,6 @@ const PaymentButton = () => {
           <p className="text-sm font-medium text-gray-800">Accès immédiat en page d'après-paiement</p>
         </TooltipContent>
       </Tooltip>
-      
-      {/* Bouton de démonstration pour afficher la barre de progression (à supprimer en production) */}
-      <div className="flex justify-center">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={simulateDownload}
-          className="text-xs text-gray-600"
-        >
-          Démonstration de la barre de progression
-        </Button>
-      </div>
-      
-      {/* Affichage de la barre de progression du téléchargement */}
-      {showProgress && (
-        <DownloadProgress
-          progress={downloadProgress}
-          status={downloadStatus}
-        />
-      )}
     </div>
   );
 };

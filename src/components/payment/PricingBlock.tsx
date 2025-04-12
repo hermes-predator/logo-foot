@@ -58,13 +58,14 @@ const PricingBlock = () => {
                     <li>Une preuve d'achat (reçu)</li>
                   </ul>
                   <div className="flex items-center gap-1.5 mt-2 text-gray-600 font-medium">
-                    <Mail className="h-4 w-4" />
+                    <Mail className="h-4 w-4 text-gray-500" />
                     <a 
                       href="mailto:contact@logo-foot.com" 
                       className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
                     >
                       contact@logo-foot.com
                     </a>
+                    <span className="ml-2 text-sm text-gray-800">= Votre satisfaction est certaine.</span>
                   </div>
                 </p>
               </div>

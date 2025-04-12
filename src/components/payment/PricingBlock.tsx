@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -53,10 +52,16 @@ const PricingBlock = () => {
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
                 <p className="mt-4 text-gray-600">
                   Pour cela, contactez-nous par email en incluant :
-                  <ul className="list-disc ml-4 mt-1 space-y-1">
-                    <li>Votre nom et prénom</li>
-                    <li>La date et l'heure d'achat</li>
-                    <li>Une preuve d'achat (reçu)</li>
+                  <ul className="list-none ml-4 mt-1 space-y-1">
+                    {['Votre nom et prénom', 'La date et l\'heure d\'achat', 'Une preuve d\'achat (reçu)'].map((item, index) => (
+                      <li 
+                        key={index} 
+                        className="flex items-center text-gray-500 bg-blue-50/50 px-3 py-1.5 rounded-md border border-blue-100/70 shadow-sm"
+                      >
+                        <span className="mr-2 text-blue-500 font-bold">•</span>
+                        <span className="text-sm font-medium">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                   <div className="flex items-center gap-1.5 mt-2 text-blue-600 font-medium">
                     <Mail className="h-4 w-4" />
@@ -65,7 +70,6 @@ const PricingBlock = () => {
                 </p>
               </div>
             </TooltipContent>
-          </Tooltip>
         </div>
       </div>
     </div>

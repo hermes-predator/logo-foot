@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -70,6 +71,7 @@ const PricingBlock = () => {
                 </p>
               </div>
             </TooltipContent>
+          </Tooltip>
         </div>
       </div>
     </div>

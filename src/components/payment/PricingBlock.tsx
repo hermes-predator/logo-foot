@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -45,10 +46,10 @@ const PricingBlock = () => {
               </div>
             </TooltipTrigger>
             <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-              <p className="font-semibold text-emerald-700">Votre satisfaction est primordiale.</p>
+              <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
               <div className="space-y-2 text-gray-700">
                 <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
+                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un retour.</p>
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
                 <p className="mt-4 text-gray-600">
                   Pour cela, contactez-nous par email en incluant :

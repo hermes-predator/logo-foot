@@ -35,7 +35,7 @@ const Breadcrumbs = () => {
   return (
     <nav 
       aria-label="Fil d'Ariane" 
-      className="pt-4 pb-2 px-4 md:px-6 mb-6 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 border-b border-gray-200 shadow-sm"
+      className="pt-4 pb-2 px-4 md:px-6 mb-6 bg-white border-b border-gray-200 shadow-sm"
     >
       <Breadcrumb>
         <BreadcrumbList className="flex-wrap">

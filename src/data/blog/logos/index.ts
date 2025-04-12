@@ -44,6 +44,7 @@ import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 import { rouenLogoPost } from './rouen-logo';
 import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
+import { commentCreerLogoFootballPost } from './comment-creer-logo-football';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -89,5 +90,6 @@ export const logoPosts: BlogPost[] = [
   maccabiTelAvivLogoPost,
   rouenLogoPost,
   usBoulogneLogoPost,
-  stadeBriochinLogoPost
+  stadeBriochinLogoPost,
+  commentCreerLogoFootballPost
 ];

@@ -52,6 +52,26 @@ import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
 import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
 
+// Fonction utilitaire pour vérifier les doublons dans la liste des articles
+const checkForDuplicates = (posts: BlogPost[]) => {
+  const seenIds = new Set<number>();
+  const duplicates: number[] = [];
+  
+  posts.forEach(post => {
+    if (seenIds.has(post.id)) {
+      duplicates.push(post.id);
+    } else {
+      seenIds.add(post.id);
+    }
+  });
+  
+  if (duplicates.length > 0) {
+    console.warn(`⚠️ Dans logoPosts, ${duplicates.length} doublons détectés: IDs ${duplicates.join(', ')}`);
+  }
+  
+  return duplicates.length === 0;
+};
+
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
   ...asianClubPosts,
@@ -73,13 +93,6 @@ export const logoPosts: BlogPost[] = [
   omUltrasPost,
   ancienLogoOmPost,
   omLogoPost,
-  westHamLogoPost,
-  westBromwichLogoPost,
-  wolfsburgLogoPost,
-  villarrealCfLogoPost,
-  valenciennesLogoPost,
-  watfordLogoPost,
-  wolverhamptonLogoPost,
   realMadridLogoPost,
   cesenaLogoPost,
   cosenzaLogoPost,
@@ -99,9 +112,11 @@ export const logoPosts: BlogPost[] = [
   stadeBriochinLogoPost,
   commentCreerLogoFootballPost,
   avranchesLogoPost,
-  footballLogosHistoryPost,
-  middlesbroughLogoPost,
-  blackburnRoversLogoPost,
-  derbyCountyLogoPost,
-  millwallLogoPost
+  footballLogosHistoryPost
+  // REMARQUE: Les logo posts spécifiques des clubs anglais sont déjà inclus via englishClubPosts
+  // Éviter d'ajouter ici westHamLogoPost, westBromwichLogoPost, watfordLogoPost, wolverhamptonLogoPost
+  // middlesbroughLogoPost, blackburnRoversLogoPost, derbyCountyLogoPost, millwallLogoPost
 ];
+
+// Vérifier les doublons
+checkForDuplicates(logoPosts);

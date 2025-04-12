@@ -35,11 +35,32 @@ import { westBromwichLogoPost } from '../west-bromwich-logo';
 import { westHamLogoPost } from '../west-ham-logo';
 import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 
-// New import
+// Imports des nouveaux posts (on s'assure qu'ils ne sont pas importés deux fois)
 import { middlesbroughLogoPost } from '../middlesbrough-logo';
 import { blackburnRoversLogoPost } from '../blackburn-rovers-logo';
 import { derbyCountyLogoPost } from '../derby-county-logo';
 import { millwallLogoPost } from '../millwall-logo';
+
+// Fonction utilitaire pour vérifier les doublons
+const verifyUniqueIds = () => {
+  const postIds = new Set<number>();
+  const duplicates: {id: number, post: BlogPost}[] = [];
+  
+  englishClubPosts.forEach(post => {
+    if (postIds.has(post.id)) {
+      duplicates.push({id: post.id, post});
+    } else {
+      postIds.add(post.id);
+    }
+  });
+  
+  if (duplicates.length > 0) {
+    console.warn('⚠️ Doublons détectés dans les clubs anglais:');
+    duplicates.forEach(dup => {
+      console.warn(` - ID ${dup.id}: "${dup.post.title}"`);
+    });
+  }
+};
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -79,3 +100,6 @@ export const englishClubPosts: BlogPost[] = [
   derbyCountyLogoPost,
   millwallLogoPost
 ];
+
+// Vérification des doublons au chargement du module
+verifyUniqueIds();

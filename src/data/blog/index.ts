@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -18,19 +19,27 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
     idMap.get(post.id)?.push(post);
   });
   
-  // Nouveau log pour montrer explicitement les doublons
-  const duplicatePosts: BlogPost[] = [];
+  // Afficher explicitement les doublons avec plus de détails
+  console.log('========== DÉTECTION DE DOUBLONS ==========');
+  let totalDuplicates = 0;
+  
   idMap.forEach((postsWithSameId, id) => {
     if (postsWithSameId.length > 1) {
       console.warn(`🚨 DOUBLON DÉTECTÉ - ID ${id}`);
-      postsWithSameId.forEach(post => {
-        console.warn(`  • "${post.title}"`);
-        duplicatePosts.push(post);
+      console.group('Articles avec le même ID:');
+      postsWithSameId.forEach((post, index) => {
+        console.warn(`  ${index + 1}. [ID: ${post.id}] "${post.title}" (Catégorie: ${post.category} / ${post.subCategory || 'N/A'})`);
+        totalDuplicates++;
       });
+      console.groupEnd();
     }
   });
-
-  console.log(`📊 Nombre total de doublons : ${duplicatePosts.length}`);
+  
+  if (totalDuplicates > 0) {
+    console.warn(`📊 Nombre total d'articles en doublon: ${totalDuplicates}`);
+  } else {
+    console.log('✅ Aucun doublon détecté');
+  }
   
   // Trouver l'ID maximum actuel
   let maxId = Math.max(...posts.map(post => post.id));
@@ -69,6 +78,31 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   return uniquePosts;
 };
 
+// Vérification des doublons potentiels dans chaque collection d'articles
+const checkDuplicatesInCollection = (collection: BlogPost[], name: string) => {
+  const ids = new Set<number>();
+  const duplicates: {id: number, title: string}[] = [];
+  
+  collection.forEach(post => {
+    if (ids.has(post.id)) {
+      duplicates.push({id: post.id, title: post.title});
+    } else {
+      ids.add(post.id);
+    }
+  });
+  
+  if (duplicates.length > 0) {
+    console.warn(`⚠️ Doublons trouvés dans la collection "${name}" (${duplicates.length}):`);
+    duplicates.forEach(dup => {
+      console.warn(`   - ID ${dup.id}: "${dup.title}"`);
+    });
+  } else {
+    console.log(`✅ Aucun doublon dans la collection "${name}"`);
+  }
+  
+  return duplicates.length;
+};
+
 // Statistiques des articles par catégorie (pour vérification)
 const countByCategory = {
   logos: logoPosts.length,
@@ -77,6 +111,14 @@ const countByCategory = {
   analysis: analysisPosts.length,
   pixelArt: pixelArtPosts.length
 };
+
+// Vérifier les doublons dans chaque collection
+console.log('---------- VÉRIFICATION DES COLLECTIONS ----------');
+checkDuplicatesInCollection(logoPosts, 'logoPosts');
+checkDuplicatesInCollection(historyPosts, 'historyPosts');
+checkDuplicatesInCollection(technicalPosts, 'technicalPosts');
+checkDuplicatesInCollection(analysisPosts, 'analysisPosts');
+checkDuplicatesInCollection(pixelArtPosts, 'pixelArtPosts');
 
 // Combiner tous les articles et assurer des IDs uniques
 const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];

@@ -133,7 +133,7 @@ const Blog = () => {
         <BlogHeader />
         
         {categoryParam && <div className="pl-4 mb-6">
-            <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
+            <h2 className="text-2xl font-bold mb-2">{categoryTitle || "Joueurs"}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
             {categoryParam === 'pixel-art'}
           </div>}

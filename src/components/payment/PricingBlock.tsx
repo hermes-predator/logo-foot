@@ -50,14 +50,14 @@ const PricingBlock = () => {
                 <p>Si vous êtes insatisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
                 <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un retour.</p>
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                <p className="mt-4 text-gray-600">
+                <div className="mt-4 text-gray-600">
                   Pour cela, contactez-nous par email en incluant :
-                  <ul className="list-disc ml-4 mt-1 space-y-1 text-gray-800">
+                  <ul className="list-disc ml-4 mt-2 space-y-2 text-gray-800">
                     <li>Votre nom et prénom</li>
                     <li>La date et l'heure d'achat</li>
                     <li>Votre preuve d'achat (reçu)</li>
                   </ul>
-                  <div className="flex items-center gap-1.5 mt-2 text-gray-600 font-medium">
+                  <div className="flex items-center gap-1.5 mt-3 text-gray-600 font-medium">
                     <Mail className="h-4 w-4" />
                     <a 
                       href="mailto:contact@logo-foot.com" 
@@ -66,7 +66,7 @@ const PricingBlock = () => {
                       contact@logo-foot.com
                     </a>
                   </div>
-                </p>
+                </div>
               </div>
             </TooltipContent>
           </Tooltip>

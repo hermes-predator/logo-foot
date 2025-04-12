@@ -229,25 +229,9 @@ const BlogPost = () => {
                   </ReactMarkdown>
                 </div>
                 
-                {/* CTA de fin d'article amélioré */}
-                <div className="mt-8 mb-2 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-5 border border-purple-100 shadow-sm">
-                  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div>
-                      <h3 className="font-bold text-gray-900 text-lg mb-1">Vous avez aimé cet article ?</h3>
-                      <p className="text-gray-600">Découvrez notre pack complet de <strong>8600+ logos de football</strong> en haute qualité</p>
-                    </div>
-                    <Button 
-                      asChild 
-                      className="bg-purple-600 hover:bg-purple-700 shadow-md px-5 py-2.5 w-full md:w-auto"
-                    >
-                      <Link to="/" className="flex items-center justify-center gap-2">
-                        <Download className="h-5 w-5" />
-                        <span>Télécharger tous les logos</span>
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-                
+                {/* CTA de fin d'article supprimé */}
+              
+              
                 {/* Supprimé: Lien "Retour au blog" */}
               </article>
               

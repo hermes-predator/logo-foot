@@ -6,13 +6,15 @@ import { pixelArtFootPost } from '../logos/pixel-art-foot';
 import { pixelArtFootGeneralPost } from './pixel-art-foot';
 import { pixelArtPsgLogoPost } from '../logos/pixel-art-psg-logo';
 import { manchesterCityPixelArtLogoPost } from './manchester-city-pixel-art-logo';
+import { pixelArtRealMadridLogoPost } from './pixel-art-real-madrid-logo';
 
 // Exporting all pixel art related posts
 export const pixelArtPosts: BlogPost[] = [
   pixelArtFootPost,
   pixelArtFootGeneralPost,
   pixelArtPsgLogoPost,
-  manchesterCityPixelArtLogoPost
+  manchesterCityPixelArtLogoPost,
+  pixelArtRealMadridLogoPost
 ];
 
 // For easier access to statistics

@@ -35,7 +35,7 @@ const Breadcrumbs = () => {
   return (
     <nav 
       aria-label="Fil d'Ariane" 
-      className="pt-4 pb-2 px-4 md:px-6 mb-6 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 border-b border-gray-200 shadow-sm"
+      className="pt-4 pb-2 px-4 md:px-6 mb-6 bg-white border-b border-gray-200 shadow-sm"
     >
       <Breadcrumb>
         <BreadcrumbList className="flex-wrap">
@@ -70,7 +70,7 @@ const Breadcrumbs = () => {
                   ) : (
                     <Link 
                       to={`/${paths.slice(0, index + 1).join('/')}`}
-                      className="px-3 py-1 bg-gray-50 hover:bg-gray-100 rounded-full text-gray-700 font-medium transition-all duration-200 shadow-sm hover:shadow flex items-center relative overflow-hidden group"
+                      className="px-3 py-1 bg-white hover:bg-gray-50 rounded-full text-gray-700 font-medium transition-all duration-200 shadow-sm hover:shadow flex items-center relative overflow-hidden group"
                       aria-label={`Aller à ${label}`}
                     >
                       <span>{label}</span>

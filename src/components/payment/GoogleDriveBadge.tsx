@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
-import { BadgeCheck, HelpCircle } from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 
 interface GoogleDriveBadgeProps {
   className?: string;
@@ -10,7 +10,7 @@ interface GoogleDriveBadgeProps {
 const GoogleDriveBadge = ({ className = '' }: GoogleDriveBadgeProps) => {
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 cursor-help ${className}`}
+      className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >
@@ -24,7 +24,6 @@ const GoogleDriveBadge = ({ className = '' }: GoogleDriveBadgeProps) => {
         width="60"
         height="24"
       />
-      <HelpCircle className="h-4 w-4 ml-1 text-gray-400" aria-hidden="true" />
     </Badge>
   );
 };

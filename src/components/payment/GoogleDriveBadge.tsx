@@ -19,7 +19,7 @@ const GoogleDriveBadge = ({ className = '' }: GoogleDriveBadgeProps) => {
       <img 
         src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
         alt="Google Drive" 
-        className="h-6" 
+        className="h-6 w-auto object-contain" 
         loading="lazy"
         width="60"
         height="24"

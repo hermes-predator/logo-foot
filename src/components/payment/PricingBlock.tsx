@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw } from 'lucide-react';
 import {
@@ -50,20 +51,17 @@ const PricingBlock = () => {
                 <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
                 <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                <div className="mt-4 text-gray-600 text-[13px] bg-blue-50/30 border-l-4 border-blue-400 pl-3 py-2 rounded-r-md">
-                  <p className="font-semibold mb-2 text-blue-800">Procédure de remboursement :</p>
-                  <ul className="list-disc ml-4 space-y-1 text-gray-700">
-                    <li>Contactez-nous par email "contact@logo-foot.com"</li>
-                    <li>Incluez :</li>
-                    <ul className="ml-4 list-[circle]">
-                      <li>Votre nom et prénom</li>
-                      <li>La date et l'heure d'achat</li>
-                      <li>Une preuve d'achat (reçu)</li>
-                    </ul>
+                <p className="mt-4 text-gray-600 text-[13px]">
+                  Pour cela, contactez-nous par email "contact@logo-foot.com" en incluant :
+                  <ul className="list-disc ml-4 mt-1 space-y-1">
+                    <li>Votre nom et prénom</li>
+                    <li>La date et l'heure d'achat</li>
+                    <li>Une preuve d'achat (reçu)</li>
                   </ul>
-                </div>
+                </p>
               </div>
             </TooltipContent>
+          </Tooltip>
         </div>
       </div>
     </div>

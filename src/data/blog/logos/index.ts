@@ -39,8 +39,8 @@ import { ballonDorLogoPost } from './ballon-dor-logo';
 import { cadizLogoPost } from './cadiz-logo';
 // Supprimé l'import individuel de ludogoretsLogoPost car il est déjà inclus dans otherEuropeanClubPosts
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
+import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 
-// Combine all logo-related posts into a single array
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
   ...asianClubPosts,
@@ -80,6 +80,6 @@ export const logoPosts: BlogPost[] = [
   tacaDePortugalLogoPost,
   ballonDorLogoPost,
   cadizLogoPost,
-  pixelArtPsgLogoPost
-  // Supprimé ludogoretsLogoPost de la liste individuelle car il est déjà dans otherEuropeanClubPosts
+  pixelArtPsgLogoPost,
+  dinamoTbilisiLogoPost
 ];

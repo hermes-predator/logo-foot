@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import English club logo posts
@@ -37,6 +38,7 @@ import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 // New import
 import { middlesbroughLogoPost } from '../middlesbrough-logo';
 import { blackburnRoversLogoPost } from '../blackburn-rovers-logo';
+import { derbyCountyLogoPost } from '../derby-county-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -72,5 +74,6 @@ export const englishClubPosts: BlogPost[] = [
   westHamLogoPost,
   wolverhamptonLogoPost,
   middlesbroughLogoPost,
-  blackburnRoversLogoPost
+  blackburnRoversLogoPost,
+  derbyCountyLogoPost
 ];

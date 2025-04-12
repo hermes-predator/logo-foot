@@ -42,6 +42,7 @@ import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 import { rouenLogoPost } from './rouen-logo';
+import { usBoulogneLogoPost } from './us-boulogne-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -85,5 +86,6 @@ export const logoPosts: BlogPost[] = [
   pixelArtPsgLogoPost,
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,
-  rouenLogoPost
+  rouenLogoPost,
+  usBoulogneLogoPost
 ];

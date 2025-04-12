@@ -3,10 +3,12 @@ import { BlogPost } from '../../../types/blog';
 
 // Import pixel art related posts
 import { pixelArtFootPost } from '../logos/pixel-art-foot';
+import { pixelArtFootGeneralPost } from './pixel-art-foot';
 
 // Exporting all pixel art related posts
 export const pixelArtPosts: BlogPost[] = [
-  pixelArtFootPost
+  pixelArtFootPost,
+  pixelArtFootGeneralPost
 ];
 
 // For easier access to statistics

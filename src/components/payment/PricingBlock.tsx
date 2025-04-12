@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw } from 'lucide-react';
 import {
@@ -45,24 +44,20 @@ const PricingBlock = () => {
                 </span>
               </div>
             </TooltipTrigger>
-            <TooltipContent className="max-w-[350px] p-0 border-none shadow-xl rounded-lg overflow-hidden">
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
-                <p className="font-semibold text-blue-800 mb-3">Votre satisfaction est primordiale.</p>
-                
-                <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                  <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
-                  <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                  
-                  <div className="mt-3 bg-white p-3 rounded-md border border-blue-100">
-                    <p className="font-semibold text-blue-700 mb-2">Pour cela, contactez-nous par email "contact@logo-foot.com" en incluant :</p>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                      <li>Votre nom et prénom</li>
-                      <li>La date et l'heure d'achat</li>
-                      <li>Une preuve d'achat (reçu)</li>
-                    </ul>
-                  </div>
-                </div>
+            <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
+              <p className="font-semibold text-emerald-700">Votre satisfaction est primordiale.</p>
+              <div className="space-y-2 text-gray-700">
+                <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
+                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                <p className="mt-4 text-gray-600 text-[13px]">
+                  Pour cela, contactez-nous par email "contact@logo-foot.com" en incluant :
+                  <ul className="list-disc ml-4 mt-1 space-y-1">
+                    <li>Votre nom et prénom</li>
+                    <li>La date et l'heure d'achat</li>
+                    <li>Une preuve d'achat (reçu)</li>
+                  </ul>
+                </p>
               </div>
             </TooltipContent>
           </Tooltip>

@@ -39,6 +39,7 @@ import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 import { middlesbroughLogoPost } from '../middlesbrough-logo';
 import { blackburnRoversLogoPost } from '../blackburn-rovers-logo';
 import { derbyCountyLogoPost } from '../derby-county-logo';
+import { millwallLogoPost } from '../millwall-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -75,5 +76,6 @@ export const englishClubPosts: BlogPost[] = [
   wolverhamptonLogoPost,
   middlesbroughLogoPost,
   blackburnRoversLogoPost,
-  derbyCountyLogoPost
+  derbyCountyLogoPost,
+  millwallLogoPost
 ];

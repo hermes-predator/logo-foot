@@ -91,7 +91,3 @@ Il est très proche de sa famille, qui joue un rôle important dans sa vie. Ses 
 **Désiré Doué** est sans aucun doute l'un des plus grands talents du football français. Son style de jeu, ses qualités techniques et sa mentalité font de lui un joueur exceptionnel. Son avenir est prometteur, et il est fort probable qu'il rejoigne un grand club européen dans les prochaines années.
 
 Que ce soit au **PSG**, au **Bayern** ou au **Real Madrid**, il a toutes les cartes en main pour devenir l'un des meilleurs joueurs du monde. Les amateurs de football attendent avec impatience de voir comment il va évoluer et quels sommets il va atteindre.
-`,
-  keywords: "désiré doué, doué rennes, doué france, statistiques doué, doué technique, doué dribble, doué transfert, doué psg, doué bayern, doué real madrid, doué talent, doué potentiel, doué formation, doué ligue 1, doué espoirs, doué euro, doué jeux olympiques, doué salaire, doué famille, doué avenir",
-  category: 'players'
-};

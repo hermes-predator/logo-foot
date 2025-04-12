@@ -96,6 +96,6 @@ Les logos des clubs de Premier League illustrent parfaitement l'équilibre déli
 
 L'avenir du design dans le football anglais semble clairement orienté vers des systèmes identitaires flexibles, permettant des adaptations contextuelles tout en maintenant une cohérence globale forte. Cette approche reflète la complexité croissante de l'écosystème médiatique dans lequel évoluent ces marques sportives d'envergure mondiale.`,
   keywords: "analyse logos premier league, design clubs anglais, marketing football anglais, branding premier league, identité visuelle football, logos clubs anglais, premier league football logos",
-  category: 'analysis',
+  category: 'players',
   galleryImageId: 5  // Adding gallery image reference for better visual presentation
 };

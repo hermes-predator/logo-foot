@@ -106,6 +106,6 @@ Si le jeune Français continue sur cette trajectoire, il pourrait bien devenir l
 Le football français tient assurément en **Mathys Tel** l'une de ses futures stars, capable de briller tant en club qu'en sélection nationale.
 `,
   keywords: "Mathys Tel, Bayern Munich, statistiques de Mathys Tel, Tel Mathys, Mathys Tel OM, Mathys Tel origine, Mathys Tel Bayern, Mathys Tel origine parents, Mathys Tel salaire, Mathys Tel FC 25, Mathys Tel PSG, Mathys Tel stats, Mathys Tel Arsenal, Mathys Tel famille, Mathys Tel fiche, Mathys Tel poste, salaire Mathys Tel, maillot Mathys Tel",
-  category: "analysis",
+  category: "players",
   subCategory: "case-studies"
 };

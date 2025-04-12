@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const bundesligaAnalysis: BlogPost = {
@@ -93,5 +94,5 @@ Futur du Design
 - Global reach
 - Digital transformation`,
   keywords: "design bundesliga, identité visuelle clubs allemands, branding football allemand, marketing bundesliga, analyse logos bundesliga",
-  category: 'analysis'
+  category: 'players'
 };

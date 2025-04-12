@@ -52,7 +52,7 @@ Le prochain mercato s'annonce crucial pour l'avenir du PSG. Les **transfert foot
 
 Les **psg rumeurs transfert** qui se concrétiseront donneront également des indications précieuses sur la vision à long terme des propriétaires qataris. Après plus d'une décennie d'investissements massifs, le projet sportif parisien semble entrer dans une nouvelle phase, plus mature et plus réfléchie.`,
   keywords: "psg rumeurs transfert, psg rumeurs transferts, transfert foot au psg, mercato psg, recrutement psg, transferts paris saint-germain, psg mercato rumeurs, psg actualités transferts, psg signature joueurs, transferts football psg",
-  category: 'analysis',
+  category: 'players',
   subCategory: 'club-analysis',
   galleryImageId: 50
 };

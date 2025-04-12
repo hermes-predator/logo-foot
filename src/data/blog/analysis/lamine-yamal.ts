@@ -78,7 +78,7 @@ Sa capacité d'adaptation, sa maturité et son talent brut laissent présager un
 
 Que ce soit par ses statistiques impressionnantes, son style de jeu élégant ou son impact immédiat au plus haut niveau, **lamine yamal** s'impose déjà comme une réalité du football mondial et non plus comme une simple promesse. Les prochaines années nous diront jusqu'où ce prodige pourra porter son immense talent, mais une chose est certaine : nous assistons à l'éclosion d'une future légende du football mondial.`,
   keywords: "lamine yamal, yamal lamine, statistiques de lamine yamal, lamine yamal origine, lamine yamal parents, lamine yamal barcelone, lamine yamal père, lamine yamal fc 24, lamine yamal et messi, matchs de lamine yamal, lamine yamal espagne, lamine yamal equipe nationale, lamine yamal salaire, lamine yamal taille, lamine yamal origines, lamine yamal stats, lamine yamal transfert, lamine yamal nationalité, lamine yamal instagram, lamine yamal interview, lamine yamal celebration, lamine yamal interview español",
-  category: 'analysis',
+  category: 'players',
   subCategory: undefined,
   galleryImageId: undefined
 };

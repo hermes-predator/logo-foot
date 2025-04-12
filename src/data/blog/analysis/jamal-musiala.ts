@@ -48,5 +48,5 @@ En quelques années seulement, **Jamal Musiala** s'est imposé comme l'un des jo
 
 Les **statistiques** impressionnantes et les performances éblouissantes de ce jeune prodige ne sont probablement que les prémices d'une carrière exceptionnelle qui s'annonce riche en succès et en moments de magie sur les terrains européens.`,
   keywords: "jamal musiala, jamal musiala origine, statistiques de jamal musiala, jamal musiala parents, jamal musiala âge, jamal.musiala, jamal musiala origine arabe, jamal musiala religion, origine jamal musiala, jamal musiala père, matchs de jamal musiala",
-  category: 'analysis'
+  category: 'players'
 };

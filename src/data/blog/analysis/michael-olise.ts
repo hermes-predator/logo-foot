@@ -64,7 +64,7 @@ Sa capacité d'adaptation, sa polyvalence tactique et sa maturité technique lai
 
 Que ce soit par ses statistiques impressionnantes, son style de jeu élégant ou son parcours atypique, **michael olise** a toutes les cartes en main pour marquer durablement l'histoire du football. Les prochaines années nous diront jusqu'où ce prodige pourra porter son talent exceptionnel, mais une chose est certaine : nous n'avons encore vu qu'un aperçu du potentiel immense de ce joueur d'exception.`,
   keywords: "michael olise, olise michael, statistiques de michael olise, michael olise origine, michael olise parents, michael olise bayern, michael olise mère, michael olise fc 24, michael olise père, michael.olise, matchs de michael olise, médailles de michael olise, michael olise france, michael olise parle français, michael olise âge, michael olise parent, michael olise stats, michael olise transfert, michael olise algerie, michael olise club, michael olise equipe de france, michael olise instagram, michael olise interview, michael olise nationalité, michael olise religion, michael olise salaire, michael olise algeria, michael olise celebration, michael olise interview francais, michael olise psg",
-  category: 'analysis',
+  category: 'players',
   subCategory: undefined,
   galleryImageId: undefined
 };

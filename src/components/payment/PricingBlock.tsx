@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -58,7 +57,7 @@ const PricingBlock = () => {
                     <li>La date et l'heure d'achat</li>
                     <li>Une preuve d'achat (reçu)</li>
                   </ul>
-                  <div className="flex items-center gap-1.5 mt-2 text-blue-600 font-medium">
+                  <div className="flex items-center gap-1.5 mt-2 text-gray-600 font-medium">
                     <Mail className="h-4 w-4" />
                     <span>contact@logo-foot.com</span>
                   </div>

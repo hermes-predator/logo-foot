@@ -16,7 +16,7 @@ const ContactForm = () => {
       <ul className="list-disc ml-4 space-y-1">
         <li>Votre nom et prénom</li>
         <li>La date et l'heure d'achat</li>
-        <li>La preuve d'achat (reçu)</li>
+        <li>Votre preuve d'achat (reçu)</li>
       </ul>
       <p className="flex items-center gap-2 mt-4">
         <Mail className="w-4 h-4" />

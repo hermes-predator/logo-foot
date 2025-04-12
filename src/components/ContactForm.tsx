@@ -18,17 +18,10 @@ const ContactForm = () => {
         <li className="font-medium tracking-tight">La date et l'heure d'achat</li>
         <li className="font-medium tracking-tight">Votre preuve d'achat (reçu)</li>
       </ul>
-      <div className="mt-4 bg-blue-50 rounded-lg p-3 border border-blue-100">
-        <p className="flex items-center gap-2 text-blue-700">
-          <Mail className="w-5 h-5 text-blue-600" />
-          <a 
-            href="mailto:contact@logo-foot.com" 
-            className="text-base font-semibold hover:underline tracking-wide"
-          >
-            contact@logo-foot.com
-          </a>
-        </p>
-      </div>
+      <p className="flex items-center gap-2 mt-4">
+        <Mail className="w-4 h-4" />
+        <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
+      </p>
     </div>
   );
 };

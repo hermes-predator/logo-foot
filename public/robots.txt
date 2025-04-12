@@ -1,5 +1,5 @@
 
-# Robots.txt pour Logo-Foot.com
+# Robots.txt pour Logo-Foot.com - Version 2.0 optimisée pour le référencement
 User-agent: *
 Allow: /
 Allow: /blog/
@@ -13,10 +13,11 @@ Disallow: /api/
 # Protection contre les crawlers trop agressifs
 Crawl-delay: 2
 
-# Sitemap principal
+# Sitemap principal et versions alternatives
 Sitemap: https://logo-foot.com/sitemap.xml
+Sitemap: https://logo-foot.com/api/sitemap
 
-# Directives spécifiques pour Google
+# Directive pour les moteurs de recherche majeurs
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -32,6 +33,16 @@ Crawl-delay: 1
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+# Directives pour Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Directives pour Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
 
 # Directives spécifiques pour les images
 User-agent: Googlebot-Image
@@ -63,6 +74,30 @@ Allow: /blog/23 # Article PSG
 Allow: /blog/45 # Article OM
 Allow: /blog/12 # Article Real Madrid
 Allow: /blog/8  # Article FC Barcelone
+Allow: /blog/345 # Article Panathinaikos
+Allow: /blog/344 # Article AEK Athens
+Allow: /blog/343 # Article FC Twente
+Allow: /blog/342 # Article AZ Alkmaar
+Allow: /blog/61 # Article Hugo Ekitike
+
+# Optimisation pour les catégories
+Allow: /blog/category/logos
+Allow: /blog/category/history
+Allow: /blog/category/technical
+Allow: /blog/category/pixel-art
+Allow: /blog/category/analysis
+
+# Optimisation pays
+Allow: /gallery/country/france
+Allow: /gallery/country/england
+Allow: /gallery/country/spain
+Allow: /gallery/country/germany
+Allow: /gallery/country/italy
+Allow: /gallery/country/netherlands
+Allow: /gallery/country/greece
+Allow: /gallery/country/portugal
 
 # Hreflang tags info
 # hreflang: fr-fr - https://logo-foot.com/ - French (France) content
+# hreflang: en - https://logo-foot.com/en - English content
+# hreflang: ar - https://logo-foot.com/ar - Arabic content

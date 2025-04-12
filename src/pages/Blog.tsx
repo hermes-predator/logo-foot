@@ -68,35 +68,77 @@ const Blog = () => {
   const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory]
     ? BLOG_CATEGORIES[categoryParam as BlogCategory].description
     : "Explorez tous nos articles sur les logos de football";
+    
+  // Générer des meta descriptions enrichies basées sur la catégorie
+  const getEnrichedDescription = () => {
+    const baseDescription = `${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`;
+    
+    if (categoryParam) {
+      switch(categoryParam) {
+        case 'logos':
+          return `${baseDescription} Retrouvez l'histoire et l'analyse des logos de clubs français, espagnols, anglais et des équipes nationales. ${filteredPosts.length} articles détaillés avec images haute qualité.`;
+        case 'history':
+          return `${baseDescription} Plongez dans l'histoire fascinante des emblèmes de football à travers les époques. Découvrez l'évolution des logos des plus grands clubs européens.`;
+        case 'technical':
+          return `${baseDescription} Guides techniques et tutoriels sur la création et l'optimisation de logos football. Conseils d'experts pour les designers et passionnés.`;
+        case 'pixel-art':
+          return `${baseDescription} Tout sur le pixel art foot: guides de création, exemples inspirants et techniques pour réaliser vos propres logos et maillots en pixel art.`;
+        default:
+          return baseDescription;
+      }
+    }
+    
+    return `${baseDescription} Notre blog regroupe ${totalItems} articles détaillés couvrant les logos des clubs de Ligue 1, Premier League, Liga, Bundesliga et des compétitions internationales.`;
+  };
+  
+  // Générer des mots-clés enrichis basés sur la catégorie
+  const getEnrichedKeywords = () => {
+    const baseKeywords = `blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot`;
+    
+    if (categoryParam) {
+      switch(categoryParam) {
+        case 'logos':
+          return `${baseKeywords}, collection logos foot, logos officiels clubs, écussons football, blasons foot, logos équipes nationales`;
+        case 'history':
+          return `${baseKeywords}, histoire emblèmes football, évolution logos clubs, origines écussons foot, logos historiques football`;
+        case 'technical':
+          return `${baseKeywords}, créer logo football, design emblème club, tutoriel logo foot, logiciel création écusson`;
+        case 'pixel-art':
+          return `${baseKeywords}, pixel art foot, pixel art maillot de foot, pixel art logo foot, création pixel art football`;
+        default:
+          return baseKeywords;
+      }
+    }
+    
+    return `${baseKeywords}, actualités logos foot, collection emblèmes football, guide écussons foot ${currentYear}`;
+  };
+  
+  const metaDescription = getEnrichedDescription();
+  const metaKeywords = getEnrichedKeywords();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
-        <meta 
-          name="description" 
-          content={`${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`}
-        />
-        <meta 
-          property="og:title" 
-          content={`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}
-        />
-        <meta 
-          property="og:description" 
-          content={categoryDescription}
-        />
-        <meta 
-          name="keywords" 
-          content={`blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot, ${categoryParam === 'pixel-art' ? 'pixel art foot, pixel art maillot de foot, pixel art logo foot' : 'actualités logos foot'}`}
-        />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords} />
         <meta property="og:type" content="blog" />
         <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
         <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${categoryTitle} | Blog Logo Foot ${currentYear}`} />
-        <meta name="twitter:description" content={categoryDescription} />
+        <meta name="twitter:description" content={metaDescription} />
+        
+        {/* Nouvelles balises meta pour l'accessibilité et le SEO */}
+        <meta property="article:section" content={categoryTitle} />
+        <meta property="article:tag" content={categoryParam || 'logos football'} />
+        <meta property="article:published_time" content={`${currentYear}-01-01T00:00:00+00:00`} />
+        <meta property="article:modified_time" content={new Date().toISOString()} />
+        <meta name="page-topic" content={`Logos de Football ${categoryParam ? '- ' + categoryTitle : ''}`} />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
@@ -120,7 +162,7 @@ const Blog = () => {
           </div>
         )}
         
-        <div className="mt-4">
+        <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
           {totalPages > 1 && (
             <div className="px-4">

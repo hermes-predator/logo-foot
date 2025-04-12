@@ -46,19 +46,19 @@ const PricingBlock = () => {
               </div>
             </TooltipTrigger>
             <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-              <p className="font-semibold text-emerald-700">Votre satisfaction est primordiale.</p>
+              <p className="font-semibold text-emerald-700">Votre satisfaction est notre engagement.</p>
               <div className="space-y-2 text-gray-700">
-                <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
-                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                <p className="mt-4 text-gray-600 text-[13px]">
-                  Pour cela, contactez-nous par email "contact@logo-foot.com" en incluant :
-                  <ul className="list-disc ml-4 mt-1 space-y-1">
-                    <li>Votre nom et prénom</li>
-                    <li>La date et l'heure d'achat</li>
-                    <li>Une preuve d'achat (reçu)</li>
+                <p>14 jours pour vous convaincre. Si notre collection ne répond pas à vos attentes, nous vous remboursons intégralement.</p>
+                <p>🔒 Processus simple et transparent.</p>
+                <p>💡 Parce que votre confiance est notre priorité absolue.</p>
+                <div className="mt-4 text-gray-600 text-[13px] border-t border-gray-100 pt-2">
+                  <p className="font-semibold mb-1">Pour un remboursement :</p>
+                  <ul className="list-disc ml-4 space-y-1">
+                    <li>Contactez contact@logo-foot.com</li>
+                    <li>Incluez votre nom et date d'achat</li>
+                    <li>Joignez votre preuve d'achat</li>
                   </ul>
-                </p>
+                </div>
               </div>
             </TooltipContent>
           </Tooltip>

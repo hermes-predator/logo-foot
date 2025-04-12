@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -30,11 +31,11 @@ const BlogHeader = () => {
       </h1>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-50/40 via-white/60 to-blue-50/40 rounded-2xl blur-lg"></div>
-        <div className="relative bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-gray-200/80 shadow-md transition-all duration-300 hover:shadow-lg">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
+        <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm">
           <div className="flex items-center gap-3 mb-3">
-            <div className="bg-blue-50 p-2 rounded-xl text-blue-600 transition-transform duration-300 group-hover:rotate-3">
-              <BookOpen className="w-5 h-5" />
+            <div className="bg-gray-100 p-2 rounded-xl">
+              <BookOpen className="w-5 h-5 text-black" />
             </div>
             <h2 className="font-semibold text-gray-900">
               Le Blog Logo-Foot
@@ -70,37 +71,31 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg group">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 transition-transform">
-            <div className="group-hover:translate-x-1 transition-transform duration-300">
-              <h3 className="font-bold text-gray-900 group-hover:text-amber-900 transition-colors">
-                Vous souhaitez obtenir tous les logos de football ?
-              </h3>
-              <p className="text-sm text-amber-800/80 group-hover:text-amber-900 transition-colors">
-                Recevez + de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé
-              </p>
+          {/* Modification du style du CTA avec des couleurs jaune ambré */}
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
+                <p className="text-sm text-amber-800/80">Recevez + de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
+              </div>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group">
+                      <Link to="/" className="flex items-center gap-2">
+                        <Folder className="h-4 w-4" />
+                        <span>Voir le fichier</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button 
-                    asChild 
-                    className="bg-white hover:bg-amber-100 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group/button relative overflow-hidden"
-                  >
-                    <Link to="/" className="flex items-center gap-2">
-                      <Folder className="h-4 w-4 text-amber-500 group-hover/button:rotate-6 transition-transform" />
-                      <span className="group-hover/button:translate-x-1 transition-transform">Voir le fichier</span>
-                      <ArrowRight className="h-4 w-4 group-hover/button:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
           </div>
-        </div>
         </div>
       </div>
     </div>;

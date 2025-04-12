@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { RefreshCcw } from 'lucide-react';
+import { RefreshCcw, Mail } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -50,13 +51,17 @@ const PricingBlock = () => {
                 <p>Si vous n'êtes pas satisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
                 <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à vous proposer un retour.</p>
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-                <p className="mt-4 text-gray-600 text-[13px]">
-                  Pour cela, contactez-nous par email "contact@logo-foot.com" en incluant :
+                <p className="mt-4 text-gray-600">
+                  Pour cela, contactez-nous par email en incluant :
                   <ul className="list-disc ml-4 mt-1 space-y-1">
                     <li>Votre nom et prénom</li>
                     <li>La date et l'heure d'achat</li>
                     <li>Une preuve d'achat (reçu)</li>
                   </ul>
+                  <div className="flex items-center gap-1.5 mt-2 text-blue-600 font-medium">
+                    <Mail className="h-4 w-4" />
+                    <span>contact@logo-foot.com</span>
+                  </div>
                 </p>
               </div>
             </TooltipContent>

@@ -38,6 +38,7 @@ import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
 import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
+// Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
@@ -51,7 +52,6 @@ import { middlesbroughLogoPost } from './middlesbrough-logo';
 import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
 import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
-import { birminghamCityLogoPost } from './birmingham-city-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -105,6 +105,6 @@ export const logoPosts: BlogPost[] = [
   middlesbroughLogoPost,
   blackburnRoversLogoPost,
   derbyCountyLogoPost,
-  millwallLogoPost,
-  birminghamCityLogoPost
+  millwallLogoPost
 ];
+

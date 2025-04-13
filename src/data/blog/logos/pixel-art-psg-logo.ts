@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtPsgLogoPost: BlogPost = {
-  id: 373, 
+  id: 373, // On garde cet ID unique
   title: "**Pixel Art Logo PSG** : Guide Ultime de Création et Histoire [2024]",
   date: "2025-04-12",
-  category: "pixel-art", // Changed from "logos" to "pixel-art"
-  subCategory: "team-pixel-art", // Using an existing subcategory from the blog type definition
+  category: "logos", // Revenu à la catégorie originale
+  subCategory: "club-logos",
   excerpt: "Découvrez l'art de créer des **pixel art logo foot PSG** uniques et captivants. Un guide complet pour transformer l'emblème parisien en une œuvre pixellisée mémorable.",
   content: `# Le **Pixel Art Foot PSG** : Une Nouvelle Dimension Artistique
 
@@ -81,6 +81,6 @@ Transformer les maillots emblématiques du PSG en **pixel art foot** :
 ## Conclusion : L'Art du **Pixel Art Foot**
 
 Le **pixel art logo foot PSG** transcende la simple représentation graphique. C'est un hommage à l'histoire du football, à l'ère numérique et à la créativité sans limites.`,
-  keywords: "pixel art foot psg, pixel art logo foot psg, pixel art foot, logo foot pixel art, pixel art foot facile, pixel art logo psg",
+  keywords: "**pixel art foot psg**, **pixel art logo foot psg**, **pixel art foot**, **logo foot pixel art**, **pixel art foot facile**, **pixel art logo psg**",
   galleryImageId: null
 };

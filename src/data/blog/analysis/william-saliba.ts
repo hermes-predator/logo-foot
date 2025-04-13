@@ -96,7 +96,7 @@ Soutenu par une **famille** unie, guidé par des valeurs fortes transmises par s
 Alors que sa carrière ne fait que commencer, les fans de football du monde entier attendent avec impatience de voir jusqu'où **William Saliba** pourra aller, tant ses qualités et son potentiel semblent illimités.
 `,
   keywords: "William Saliba, Saliba William, William Saliba origine, William Saliba parents, statistiques de William Saliba, pere William Saliba, William Saliba copine, William Saliba père, William Saliba équipes actuelles, pere de William Saliba, William Saliba pere, William Saliba religion, William Saliba âge, origine William Saliba, William Saliba taille, matchs de William Saliba, club William Saliba, parent William Saliba, William Saliba club, William Saliba famille, William Saliba mère",
-  category: "players",
+  category: "analysis",
   subCategory: "case-studies",
   galleryImageId: 234
 };

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -60,6 +61,11 @@ const Blog = () => {
         console.log(`- ID ${post.id}: "${post.title}" (Catégorie: ${post.category})`);
       });
     }
+
+    // Log pour vérifier la catégorie des articles sur les joueurs
+    const playerPosts = blogPosts.filter(post => post.category === 'analysis');
+    console.log(`Articles sur les joueurs: ${playerPosts.length}`);
+    
   }, []);
 
   const {
@@ -90,6 +96,8 @@ const Blog = () => {
           return `${baseDescription} Guides techniques et tutoriels sur la création et l'optimisation de logos football. Conseils d'experts pour les designers et passionnés.`;
         case 'pixel-art':
           return `${baseDescription} Tout sur le pixel art foot: guides de création, exemples inspirants et techniques pour réaliser vos propres logos et maillots en pixel art.`;
+        case 'analysis':
+          return `${baseDescription} Analyses détaillées des meilleurs joueurs de football: statistiques, parcours, style de jeu et évolution de carrière des stars du ballon rond.`;
         default:
           return baseDescription;
       }
@@ -110,6 +118,8 @@ const Blog = () => {
           return `${baseKeywords}, créer logo football, design emblème club, tutoriel logo foot, logiciel création écusson`;
         case 'pixel-art':
           return `${baseKeywords}, pixel art foot, pixel art maillot de foot, pixel art logo foot, création pixel art football`;
+        case 'analysis':
+          return `${baseKeywords}, joueurs football, statistiques joueurs, profils footballeurs, meilleurs joueurs, analyse tactique, transferts`;
         default:
           return baseKeywords;
       }

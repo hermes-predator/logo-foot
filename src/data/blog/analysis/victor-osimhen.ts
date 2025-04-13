@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const victorOsimhenPost: BlogPost = {
@@ -84,5 +85,5 @@ L'histoire de **Victor Osimhen** est celle d'un talent exceptionnel doublé d'un
 
 Que ce soit au PSG, en Premier League ou ailleurs, l'avenir de **Victor Osimhen** sera passionnant à suivre. Une chose est certaine : ce buteur d'exception n'a pas fini de faire parler de lui, tant par ses performances sportives que par son impact en dehors des terrains.`,
   keywords: "victor osimhen, statistiques de victor osimhen, victor osimhen psg, victor osimhen galatasaray, victor osimhen salaire, victor osimhen transfert, victor osimhen religion, osimhen victor, attaquant nigérian, buteur naples, football nigeria, transfert naples, mercato 2024, ligue des champions, serie a",
-  category: 'players'
+  category: 'analysis'
 };

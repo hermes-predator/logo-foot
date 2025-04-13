@@ -1,4 +1,5 @@
-export type BlogCategory = 'logos' | 'history' | 'technical' | 'players' | 'pixel-art';
+
+export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art';
 
 export interface BlogSubCategory {
   id: string;
@@ -86,7 +87,7 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
       }
     ]
   },
-  players: {
+  analysis: {
     name: "Joueurs",
     description: "Analyses et portraits de joueurs de football",
     subCategories: [

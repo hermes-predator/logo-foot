@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const vitinhaPost: BlogPost = {
@@ -47,5 +48,5 @@ Vitinha est un joueur exceptionnel, doté d'un talent rare et d'une mentalité i
 
 Son avenir s'annonce radieux, et il ne fait aucun doute qu'il continuera à impressionner les observateurs et à ravir les supporters par ses performances exceptionnelles. Vitinha est un joueur à suivre de très près, car il a tout pour devenir une légende du football portugais et mondial.`,
   keywords: "vitinha, vitinha psg, vitinha portugal, vitinha luis enrique, vitinha statistiques, vitinha technique, vitinha passes, vitinha porto, vitinha ligue 1, vitinha champions league, vitinha euro, vitinha tactique, vitinha milieu, vitinha comparaison, vitinha progression, vitinha style, vitinha salaire, vitinha transfert, vitinha sélection, vitinha avenir",
-  category: 'players'
+  category: 'analysis'
 };

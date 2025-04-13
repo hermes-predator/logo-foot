@@ -9,7 +9,7 @@ import { rioAveLogoPost } from '../rio-ave-logo';
 import { famalicaoLogoPost } from '../famalicao-logo';
 import { boavistaLogoPost } from '../boavista-logo';
 import { estorilPraiaLogoPost } from '../estoril-praia-logo';
-// Suppression de l'import de tacaDePortugalLogoPost pour éviter la duplication
+// Removed the import for tacaDePortugalLogoPost completely
 
 // Group all Portuguese club logo posts
 export const portugueseClubPosts: BlogPost[] = [
@@ -21,6 +21,6 @@ export const portugueseClubPosts: BlogPost[] = [
   rioAveLogoPost,
   famalicaoLogoPost,
   boavistaLogoPost,
-  estorilPraiaLogoPost,
-  // Suppression de tacaDePortugalLogoPost pour éviter la duplication
+  estorilPraiaLogoPost
+  // Removed tacaDePortugalLogoPost completely from the array
 ];

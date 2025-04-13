@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -35,8 +36,9 @@ import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
 import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
-import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
+// Removing direct import of tacaDePortugalLogoPost since it's already in competitionPosts
+// import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 // Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
@@ -53,6 +55,7 @@ import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
+import { tigresUanlLogoPost } from './tigres-uanl-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -91,7 +94,7 @@ export const logoPosts: BlogPost[] = [
   saudiFootballClubLogosPost,
   ligaMxLogoPost,
   hajdukSplitLogoPost,
-  tacaDePortugalLogoPost,
+  // Removed direct reference to tacaDePortugalLogoPost since it's included in competitionPosts
   ballonDorLogoPost,
   // Suppression de cadizLogoPost qui est déjà inclus via spanishClubPosts
   pixelArtPsgLogoPost,
@@ -108,5 +111,6 @@ export const logoPosts: BlogPost[] = [
   derbyCountyLogoPost,
   millwallLogoPost,
   boltonWanderersLogoPost,
-  wycombeWanderersLogoPost
+  wycombeWanderersLogoPost,
+  tigresUanlLogoPost
 ];

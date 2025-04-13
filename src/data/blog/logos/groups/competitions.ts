@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -31,7 +32,7 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
-// Retirer l'import direct du ballonDorLogoPost pour éviter les doublons
+// Removed the comment about ballonDorLogoPost to avoid confusion
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,

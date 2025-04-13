@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -68,4 +67,3 @@ export const competitionPosts: BlogPost[] = [
   communityShieldLogoPost,
   tacaDePortugalLogoPost
 ];
-

@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtPsgLogoPost: BlogPost = {
-  id: 373, // Fixed ID to ensure consistency
+  id: 373, 
   title: "**Pixel Art Logo PSG** : Guide Ultime de Création et Histoire [2024]",
   date: "2025-04-12",
   category: "pixel-art", // Changed from "logos" to "pixel-art"

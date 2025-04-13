@@ -18,7 +18,8 @@ import { spanishClubPosts } from './groups/spanish-clubs';
 import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
-import { ancienLogoOmPost } from './ancien-logo-om';
+// Remove the direct import and comment it out
+// import { ancienLogoOmPost } from './ancien-logo-om';
 import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
@@ -71,7 +72,8 @@ export const logoPosts: BlogPost[] = [
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
-  ancienLogoOmPost,
+  // Remove direct post reference
+  // ancienLogoOmPost,
   omLogoPost,
   westHamLogoPost,
   westBromwichLogoPost,
@@ -105,3 +107,4 @@ export const logoPosts: BlogPost[] = [
   derbyCountyLogoPost,
   millwallLogoPost
 ];
+

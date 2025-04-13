@@ -27,6 +27,7 @@ import { newcastleLogoPost } from '../newcastle-logo';
 import { norwichLogoPost } from '../norwich-logo';
 import { queensParkRangersLogoPost } from '../queens-park-rangers-logo';
 import { readingFcLogoPost } from '../reading-fc-logo';
+import { rotherhamUnitedLogoPost } from '../rotherham-united-logo';
 import { southamptonLogoPost } from '../southampton-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { westHamLogoPost } from '../west-ham-logo';
@@ -78,6 +79,7 @@ export const englishClubPosts: BlogPost[] = [
   norwichLogoPost,
   queensParkRangersLogoPost,
   readingFcLogoPost,
+  rotherhamUnitedLogoPost,
   southamptonLogoPost,
   tottenhamLogoPost,
   westHamLogoPost,

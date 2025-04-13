@@ -5,6 +5,7 @@ import { BlogPost } from '../../../../types/blog';
 import { arsenalLogoPost } from '../arsenal-logo';
 import { astonVillaLogoPost } from '../aston-villa-logo';
 import { birminghamCityLogoPost } from '../birmingham-city-logo';
+import { boltonWanderersLogoPost } from '../bolton-wanderers-logo';
 import { bournemouthLogoPost } from '../bournemouth-logo';
 import { brentfordLogoPost } from '../brentford-logo';
 import { brightonLogoPost } from '../brighton-logo';
@@ -51,6 +52,7 @@ export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
   astonVillaLogoPost,
   birminghamCityLogoPost,
+  boltonWanderersLogoPost,
   bournemouthLogoPost,
   brentfordLogoPost,
   brightonLogoPost,

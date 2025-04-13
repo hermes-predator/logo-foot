@@ -11,6 +11,7 @@ import { bournemouthLogoPost } from '../bournemouth-logo';
 import { brentfordLogoPost } from '../brentford-logo';
 import { brightonLogoPost } from '../brighton-logo';
 import { burnleyLogoPost } from '../burnley-logo';
+import { charltonAthleticLogoPost } from '../charlton-athletic-logo';
 import { chelseaLogoPost } from '../chelsea-logo';
 import { crystalPalaceLogoPost } from '../crystal-palace-logo';
 import { evertonLogoPost } from '../everton-logo';
@@ -30,6 +31,7 @@ import { southamptonLogoPost } from '../southampton-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { westHamLogoPost } from '../west-ham-logo';
 import { westBromwichLogoPost } from '../west-bromwich-logo';
+import { wiganAthleticLogoPost } from '../wigan-athletic-logo';
 import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 import { watfordLogoPost } from '../watford-logo';
 import { sheffieldUnitedLogoPost } from '../sheffield-united-logo';
@@ -62,6 +64,7 @@ export const englishClubPosts: BlogPost[] = [
   brentfordLogoPost,
   brightonLogoPost,
   burnleyLogoPost,
+  charltonAthleticLogoPost,
   chelseaLogoPost,
   crystalPalaceLogoPost,
   evertonLogoPost,
@@ -79,6 +82,7 @@ export const englishClubPosts: BlogPost[] = [
   tottenhamLogoPost,
   westHamLogoPost,
   westBromwichLogoPost,
+  wiganAthleticLogoPost,
   wolverhamptonLogoPost,
   watfordLogoPost,
   sheffieldUnitedLogoPost,

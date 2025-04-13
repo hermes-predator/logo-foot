@@ -4,6 +4,7 @@ import { BlogPost } from '../../../../types/blog';
 // Import des articles sur les logos des clubs anglais
 import { arsenalLogoPost } from '../arsenal-logo';
 import { astonVillaLogoPost } from '../aston-villa-logo';
+import { barnsleyLogoPost } from '../barnsley-logo';
 import { birminghamCityLogoPost } from '../birmingham-city-logo';
 import { boltonWanderersLogoPost } from '../bolton-wanderers-logo';
 import { bournemouthLogoPost } from '../bournemouth-logo';
@@ -54,6 +55,7 @@ import { wrexhamLogoPost } from '../wrexham-logo';
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
   astonVillaLogoPost,
+  barnsleyLogoPost,
   birminghamCityLogoPost,
   boltonWanderersLogoPost,
   bournemouthLogoPost,

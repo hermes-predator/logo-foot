@@ -142,5 +142,5 @@ Pour les supporters, qu'ils arborent fièrement le **Queens Park Rangers logo PN
   keywords: "queens park rangers fc logo, queens park rangers logo, queens park rangers logo png, logo club queens park rangers, logo queen park rangers, queen park rangers fts logo, queens park rangers new logo, qpr logo, qpr fc emblem, qpr badge, football logo london, championship club logo, hoops football logo",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 'qpr-logo'
+  galleryImageId: 403
 };

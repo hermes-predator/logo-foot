@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import non-European club logo posts
@@ -27,6 +26,7 @@ import { newYorkRedBullsLogoPost } from '../new-york-red-bulls-logo';
 import { orlandoCityLogoPost } from '../orlando-city-logo';
 import { sanJoseEarthquakesLogoPost } from '../san-jose-earthquakes-logo';
 import { columbusCrewLogoPost } from '../columbus-crew-logo';
+import { saoPauloLogoPost } from '../sao-paulo-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
@@ -55,4 +55,5 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   orlandoCityLogoPost,
   sanJoseEarthquakesLogoPost,
   columbusCrewLogoPost,
+  saoPauloLogoPost,
 ];

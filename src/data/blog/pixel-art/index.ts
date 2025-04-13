@@ -9,7 +9,7 @@ import { manchesterCityPixelArtLogoPost } from './manchester-city-pixel-art-logo
 import { pixelArtRealMadridLogoPost } from './pixel-art-real-madrid-logo';
 import { pixelArtOMLogoPost } from './pixel-art-om-logo';
 
-// Exporting all pixel art related posts, excluding article 9134
+// Exporting all pixel art related posts, explicitly filtering out article 9134
 export const pixelArtPosts: BlogPost[] = [
   pixelArtFootPost,
   pixelArtFootGeneralPost,
@@ -17,7 +17,7 @@ export const pixelArtPosts: BlogPost[] = [
   manchesterCityPixelArtLogoPost,
   pixelArtRealMadridLogoPost,
   pixelArtOMLogoPost
-];
+].filter(post => post.id !== 9134);
 
 // For easier access to statistics
 export const pixelArtPostCount = pixelArtPosts.length;

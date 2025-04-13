@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -120,7 +121,9 @@ console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
 // Vérifier les doublons de titre avant de traiter les IDs
 findDuplicateTitles(allPosts);
 
-export const blogPosts = ensureUniqueIds(allPosts);
+// Explicitement filtrer l'article 9134 avant d'appliquer la fonction ensureUniqueIds
+const filteredPosts = allPosts.filter(post => post.id !== 9134);
+export const blogPosts = ensureUniqueIds(filteredPosts);
 
 // Trier les articles par date (du plus récent au plus ancien)
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

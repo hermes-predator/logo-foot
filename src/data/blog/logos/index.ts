@@ -36,7 +36,6 @@ import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
 import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
-import { ballonDorLogoPost } from './ballon-dor-logo';
 // Removing direct import of tacaDePortugalLogoPost since it's already in competitionPosts
 // import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 // Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
@@ -56,6 +55,7 @@ import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
+import { ballonDorLogoPost } from './ballon-dor-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,

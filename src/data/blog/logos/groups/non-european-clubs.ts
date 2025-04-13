@@ -19,6 +19,7 @@ import { atlantaUnitedLogoPost } from '../atlanta-united-logo';
 import { newYorkCityFcLogoPost } from '../new-york-city-fc-logo';
 import { seattleSoundersLogoPost } from '../seattle-sounders-logo';
 import { coloradoRapidsLogoPost } from '../colorado-rapids-logo';
+import { realSaltLakeLogoPost } from '../real-salt-lake-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
@@ -32,6 +33,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   newYorkCityFcLogoPost,
   seattleSoundersLogoPost,
   coloradoRapidsLogoPost,
+  realSaltLakeLogoPost,
   brazilianClubsPost,
   southAmericanClubsPost,
   interMiamiLogoPost,

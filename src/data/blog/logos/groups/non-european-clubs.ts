@@ -21,6 +21,7 @@ import { coloradoRapidsLogoPost } from '../colorado-rapids-logo';
 import { realSaltLakeLogoPost } from '../real-salt-lake-logo';
 
 import { portlandTimbersLogoPost } from '../portland-timbers-logo';
+import { minnesotaUnitedLogoPost } from '../minnesota-united-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
@@ -43,4 +44,5 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   asianClubsPost,
   mlsLogoPost,
   portlandTimbersLogoPost,
+  minnesotaUnitedLogoPost,
 ];

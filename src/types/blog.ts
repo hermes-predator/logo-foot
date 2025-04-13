@@ -88,19 +88,19 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
     ]
   },
   analysis: {
-    name: "Joueurs",
-    description: "Analyses et portraits de joueurs de football",
+    name: "Analyses",
+    description: "Analyses tactiques et statistiques du football",
     subCategories: [
       {
         id: "trends",
         name: "Tendances",
-        description: "Les tendances actuelles autour des joueurs",
+        description: "Les tendances actuelles du football",
         slug: "trends"
       },
       {
         id: "case-studies",
         name: "Études de Cas",
-        description: "Analyses détaillées de parcours de joueurs",
+        description: "Analyses détaillées de tactiques et performances",
         slug: "case-studies"
       }
     ]

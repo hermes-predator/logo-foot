@@ -55,10 +55,10 @@ const BlogHeader = () => {
                 Logos
               </Link>
               <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
-                Joueurs
+                Analyses
               </Link>
               <Link to="/blog?category=players" className={getCategoryStyle('players')}>
-                Stars
+                Joueurs
               </Link>
               <Link to="/blog?category=history" className={getCategoryStyle('history')}>
                 Histoire

@@ -57,6 +57,7 @@ import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
+import { botafogoLogoPost } from './botafogo-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -114,5 +115,6 @@ export const logoPosts: BlogPost[] = [
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
-  tigresUanlLogoPost
+  tigresUanlLogoPost,
+  botafogoLogoPost
 ];

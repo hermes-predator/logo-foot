@@ -5,6 +5,7 @@ import { palmeirasLogoPost } from '../palmeiras-logo';
 import { brazilianClubsPost } from '../brazilian-clubs';
 import { saoPauloLogoPost } from '../sao-paulo-logo';
 import { corinthiansLogoPost } from '../corinthians-logo';
+import { botafogoLogoPost } from '../botafogo-logo';
 
 // Group all Brazilian club logo posts
 export const brazilianClubPosts: BlogPost[] = [
@@ -12,5 +13,6 @@ export const brazilianClubPosts: BlogPost[] = [
   palmeirasLogoPost,
   brazilianClubsPost,
   saoPauloLogoPost,
-  corinthiansLogoPost
+  corinthiansLogoPost,
+  botafogoLogoPost
 ];

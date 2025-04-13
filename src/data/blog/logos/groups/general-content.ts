@@ -4,9 +4,9 @@ import { frontCloudPost } from '../front-cloud';
 import { commentCreerLogoFootballPost } from '../comment-creer-logo-football';
 import { creerLogoFootPost } from '../creer-logo-foot';
 import { logoMaillotFootPost } from '../logo-maillot-foot';
-import { blasonsEquipesFootballPost } from '../blasons-equipes-football'; // Corrected import name
+import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
 import { footballEmblemsPost } from '../football-emblems';
-import { blasonEquipesFootballPost } from '../blasons-equipes-football';
+// Remove the duplicate import
 import { footballLogosHistoryPost } from '../football-logos-history';
 import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
 import { pixelArtFootPost } from '../pixel-art-foot';
@@ -17,9 +17,8 @@ export const generalContentPosts: BlogPost[] = [
   commentCreerLogoFootballPost,
   creerLogoFootPost,
   logoMaillotFootPost,
-  blasonsEquipesFootballPost, // Corrected variable name
+  blasonsEquipesFootballPost,
   footballEmblemsPost,
-  blasonEquipesFootballPost,
   footballLogosHistoryPost,
   ecussonsClubFootEuropeenPost,
   pixelArtFootPost,

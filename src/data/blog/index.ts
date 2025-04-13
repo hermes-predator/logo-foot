@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -69,6 +68,15 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   return uniquePosts;
 };
 
+// Mise à jour des statistiques des articles par catégorie
+const countByCategory = {
+  logos: logoPosts.length,
+  history: historyPosts.length,
+  technical: technicalPosts.length,
+  pixelArt: pixelArtPosts.length,
+  players: blogPosts.filter(post => post.category === 'players').length
+};
+
 // Vérifier aussi les doublons de titre pour aider à la détection
 const findDuplicateTitles = (posts: BlogPost[]) => {
   const titleMap = new Map<string, BlogPost[]>();
@@ -110,20 +118,10 @@ console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
 // Vérifier les doublons de titre avant de traiter les IDs
 findDuplicateTitles(allPosts);
 
-// Définir blogPosts AVANT de l'utiliser dans countByCategory
 export const blogPosts = ensureUniqueIds(allPosts);
 
 // Trier les articles par date (du plus récent au plus ancien)
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-// Mise à jour des statistiques des articles par catégorie
-const countByCategory = {
-  logos: logoPosts.length,
-  history: historyPosts.length,
-  technical: technicalPosts.length,
-  pixelArt: pixelArtPosts.length,
-  players: blogPosts.filter(post => post.category === 'players').length
-};
 
 // Log pour débogage
 console.log(`Nombre total d'articles après traitement des doublons: ${blogPosts.length}`);

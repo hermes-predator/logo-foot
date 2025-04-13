@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs anglais
@@ -25,7 +24,7 @@ import { westBromwichLogoPost } from '../west-bromwich-logo';
 import { wolverhamptonLogoPost } from '../wolverhampton-logo';
 import { watfordLogoPost } from '../watford-logo';
 import { sheffieldUnitedLogoPost } from '../sheffield-united-logo';
-import { lutontownLogoPost } from '../luton-town-logo';
+import { lutonTownLogoPost } from '../luton-town-logo';
 import { ipswichTownLogoPost } from '../ipswich-town-logo';
 import { portsmouthLogoPost } from '../portsmouth-logo';
 import { millwallLogoPost } from '../millwall-logo';
@@ -33,8 +32,8 @@ import { blackburnRoversLogoPost } from '../blackburn-rovers-logo';
 import { derbyCountyLogoPost } from '../derby-county-logo';
 import { middlesbroughLogoPost } from '../middlesbrough-logo';
 import { bristolCityLogoPost } from '../bristol-city-logo';
-import { coventryLogoPost } from '../coventry-city-logo';
-import { cardiffLogoPost } from '../cardiff-city-logo';
+import { coventryCityLogoPost } from '../coventry-city-logo';
+import { cardiffCityLogoPost } from '../cardiff-city-logo';
 import { swanseaCityLogoPost } from '../swansea-city-logo';
 import { hullCityLogoPost } from '../hull-city-logo';
 import { stokeCityLogoPost } from '../stoke-city-logo';
@@ -64,7 +63,7 @@ export const englishClubPosts: BlogPost[] = [
   wolverhamptonLogoPost,
   watfordLogoPost,
   sheffieldUnitedLogoPost,
-  lutontownLogoPost,
+  lutonTownLogoPost,
   ipswichTownLogoPost,
   portsmouthLogoPost,
   millwallLogoPost,
@@ -72,8 +71,8 @@ export const englishClubPosts: BlogPost[] = [
   derbyCountyLogoPost,
   middlesbroughLogoPost,
   bristolCityLogoPost,
-  coventryLogoPost,
-  cardiffLogoPost,
+  coventryCityLogoPost,
+  cardiffCityLogoPost,
   swanseaCityLogoPost,
   hullCityLogoPost,
   stokeCityLogoPost,

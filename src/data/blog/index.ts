@@ -1,7 +1,9 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
 import { technicalPosts } from './technical';
+import { analysisPosts } from './analysis';
 import { pixelArtPosts } from './pixel-art';
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
@@ -68,13 +70,13 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   return uniquePosts;
 };
 
-// Mise à jour des statistiques des articles par catégorie
+// Statistiques des articles par catégorie (pour vérification)
 const countByCategory = {
   logos: logoPosts.length,
   history: historyPosts.length,
   technical: technicalPosts.length,
-  pixelArt: pixelArtPosts.length,
-  players: blogPosts.filter(post => post.category === 'players').length
+  analysis: analysisPosts.length,
+  pixelArt: pixelArtPosts.length
 };
 
 // Vérifier aussi les doublons de titre pour aider à la détection
@@ -108,11 +110,12 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
 };
 
 // Combiner tous les articles et assurer des IDs uniques
-const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...pixelArtPosts];
+const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
 console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
 console.log(`- logoPosts: ${logoPosts.length}`);
 console.log(`- historyPosts: ${historyPosts.length}`);
 console.log(`- technicalPosts: ${technicalPosts.length}`);
+console.log(`- analysisPosts: ${analysisPosts.length}`);
 console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
 
 // Vérifier les doublons de titre avant de traiter les IDs

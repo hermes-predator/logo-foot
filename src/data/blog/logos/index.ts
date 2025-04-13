@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -17,8 +18,6 @@ import { spanishClubPosts } from './groups/spanish-clubs';
 import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
-// Remove the direct import and comment it out
-// import { ancienLogoOmPost } from './ancien-logo-om';
 import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
@@ -36,10 +35,7 @@ import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
 import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
-// Removing direct import of tacaDePortugalLogoPost since it's already in competitionPosts
-// import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
-// Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
-import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
+import { ballonDorLogoPost } from './ballon-dor-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 import { rouenLogoPost } from './rouen-logo';
@@ -55,7 +51,6 @@ import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
-import { ballonDorLogoPost } from './ballon-dor-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -76,8 +71,6 @@ export const logoPosts: BlogPost[] = [
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
-  // Remove direct post reference
-  // ancienLogoOmPost,
   omLogoPost,
   westHamLogoPost,
   westBromwichLogoPost,
@@ -95,10 +88,7 @@ export const logoPosts: BlogPost[] = [
   saudiFootballClubLogosPost,
   ligaMxLogoPost,
   hajdukSplitLogoPost,
-  // Removed direct reference to tacaDePortugalLogoPost since it's included in competitionPosts
   ballonDorLogoPost,
-  // Suppression de cadizLogoPost qui est déjà inclus via spanishClubPosts
-  pixelArtPsgLogoPost,
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,
   rouenLogoPost,

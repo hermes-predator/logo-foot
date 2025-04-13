@@ -4,8 +4,8 @@ export const pixelArtPsgLogoPost: BlogPost = {
   id: 373, // On garde cet ID unique
   title: "**Pixel Art Logo PSG** : Guide Ultime de Création et Histoire [2024]",
   date: "2025-04-12",
-  category: "logos", // Revenu à la catégorie originale
-  subCategory: "club-logos",
+  category: "pixel-art", // Changé en pixel-art
+  subCategory: "pixel-art-collections", // Utilisation d'une sous-catégorie existante de pixel-art
   excerpt: "Découvrez l'art de créer des **pixel art logo foot PSG** uniques et captivants. Un guide complet pour transformer l'emblème parisien en une œuvre pixellisée mémorable.",
   content: `# Le **Pixel Art Foot PSG** : Une Nouvelle Dimension Artistique
 

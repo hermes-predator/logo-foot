@@ -37,7 +37,7 @@ import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
 import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
-import { cadizLogoPost } from './cadiz-logo';
+// Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
@@ -90,7 +90,7 @@ export const logoPosts: BlogPost[] = [
   hajdukSplitLogoPost,
   tacaDePortugalLogoPost,
   ballonDorLogoPost,
-  cadizLogoPost,
+  // Suppression de cadizLogoPost qui est déjà inclus via spanishClubPosts
   pixelArtPsgLogoPost,
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,

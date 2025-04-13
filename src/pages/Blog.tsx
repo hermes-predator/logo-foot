@@ -10,6 +10,7 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import { useSearchParams } from 'react-router-dom';
+
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
@@ -46,7 +47,21 @@ const Blog = () => {
         title: p.title
       })));
     }
+
+    // Recherche spécifique de l'article Cadix pour voir s'il est présent en double
+    const cadixPosts = blogPosts.filter(post => 
+      post.title.toLowerCase().includes('cadix') || 
+      post.title.toLowerCase().includes('cadiz')
+    );
+    
+    if (cadixPosts.length > 0) {
+      console.log('Articles sur Cadix trouvés:', cadixPosts.length);
+      cadixPosts.forEach(post => {
+        console.log(`- ID ${post.id}: "${post.title}" (Catégorie: ${post.category})`);
+      });
+    }
   }, []);
+
   const {
     currentPage,
     setCurrentPage,
@@ -101,8 +116,10 @@ const Blog = () => {
     }
     return `${baseKeywords}, actualités logos foot, collection emblèmes football, guide écussons foot ${currentYear}`;
   };
+  
   const metaDescription = getEnrichedDescription();
   const metaKeywords = getEnrichedKeywords();
+  
   return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>

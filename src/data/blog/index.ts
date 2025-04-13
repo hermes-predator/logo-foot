@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -78,6 +79,36 @@ const countByCategory = {
   pixelArt: pixelArtPosts.length
 };
 
+// Vérifier aussi les doublons de titre pour aider à la détection
+const findDuplicateTitles = (posts: BlogPost[]) => {
+  const titleMap = new Map<string, BlogPost[]>();
+  
+  posts.forEach(post => {
+    const normalizedTitle = post.title.toLowerCase().trim();
+    if (!titleMap.has(normalizedTitle)) {
+      titleMap.set(normalizedTitle, []);
+    }
+    titleMap.get(normalizedTitle)?.push(post);
+  });
+  
+  console.log('🔍 Vérification des titres similaires:');
+  let titleDuplicatesFound = false;
+  
+  titleMap.forEach((postsWithSameTitle, title) => {
+    if (postsWithSameTitle.length > 1) {
+      titleDuplicatesFound = true;
+      console.warn(`🔴 Titres similaires détectés: "${title}"`);
+      postsWithSameTitle.forEach(post => {
+        console.warn(`   - ID ${post.id}: "${post.title}" (Catégorie: ${post.category})`);
+      });
+    }
+  });
+  
+  if (!titleDuplicatesFound) {
+    console.log('✅ Aucun titre en doublon détecté');
+  }
+};
+
 // Combiner tous les articles et assurer des IDs uniques
 const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
 console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
@@ -86,6 +117,9 @@ console.log(`- historyPosts: ${historyPosts.length}`);
 console.log(`- technicalPosts: ${technicalPosts.length}`);
 console.log(`- analysisPosts: ${analysisPosts.length}`);
 console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
+
+// Vérifier les doublons de titre avant de traiter les IDs
+findDuplicateTitles(allPosts);
 
 export const blogPosts = ensureUniqueIds(allPosts);
 

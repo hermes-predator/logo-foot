@@ -28,6 +28,7 @@ import { norwichLogoPost } from '../norwich-logo';
 import { queensParkRangersLogoPost } from '../queens-park-rangers-logo';
 import { readingFcLogoPost } from '../reading-fc-logo';
 import { rotherhamUnitedLogoPost } from '../rotherham-united-logo';
+import { stockportCountyLogoPost } from '../stockport-county-logo';
 import { southamptonLogoPost } from '../southampton-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { westHamLogoPost } from '../west-ham-logo';
@@ -80,6 +81,7 @@ export const englishClubPosts: BlogPost[] = [
   queensParkRangersLogoPost,
   readingFcLogoPost,
   rotherhamUnitedLogoPost,
+  stockportCountyLogoPost,
   southamptonLogoPost,
   tottenhamLogoPost,
   westHamLogoPost,
@@ -107,3 +109,4 @@ export const englishClubPosts: BlogPost[] = [
   wycombeWanderersLogoPost,
   wrexhamLogoPost
 ];
+

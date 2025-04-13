@@ -99,6 +99,5 @@ Contrairement à certains autres clubs gallois qui ont adopté des designs plus 
 Oui, le **Wrexham logo** est une marque déposée et protégée, particulièrement depuis que le club a gagné en popularité internationale.
 `,
   keywords: "logo wrexham, wrexham logo, wrexham new logo, logo design wrexham, wrexham, logo, football, design, dragon, pays de galles",
-  related: ["arsenal-logo", "liverpool-logo", "swansea-city-logo", "cardiff-city-logo"],
   readingTime: 12
 };

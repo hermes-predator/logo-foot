@@ -1,26 +1,42 @@
 
 import { BlogPost } from '../../../../types/blog';
-import { frontCloudPost } from '../front-cloud';
-import { commentCreerLogoFootballPost } from '../comment-creer-logo-football';
-import { creerLogoFootPost } from '../creer-logo-foot';
-import { logoMaillotFootPost } from '../logo-maillot-foot';
-import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
-import { footballEmblemsPost } from '../football-emblems';
-// Remove the duplicate import
-import { footballLogosHistoryPost } from '../football-logos-history';
-import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
-import { pixelArtFootPost } from '../pixel-art-foot';
-import { footballDesignPost } from '../football-design';
 
+// Import general content posts
+import { clubHistoryPost } from '../club-history';
+import { frontCloudPost } from '../front-cloud';
+import { belgianClubsPost } from '../belgian-clubs';
+import { frenchClubsPost as frenchClubsOverviewPost } from '../french-clubs';
+import { germanClubsPost as germanClubsOverviewPost } from '../german-clubs';
+import { portugueseLogosPost } from '../portuguese-clubs';
+import { winamaxLogoPost } from '../winamax-logo';
+import { unibetLogoPost } from '../unibet-logo';
+import { bwinLogoPost } from '../bwin-logo';
+import { footballLogosHistoryPost } from '../football-logos-history';
+import { footballEmblemsPost } from '../football-emblems';
+import { creerLogoFootPost } from '../creer-logo-foot';
+import { logosFootPdfPost } from '../1001-logos-foot-pdf';
+import { logoMaillotFootPost } from '../logo-maillot-foot';
+import { ecussonsFootballPost } from '../ecussons-football';
+import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
+import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
+
+// Group all general content posts
 export const generalContentPosts: BlogPost[] = [
+  clubHistoryPost,
   frontCloudPost,
-  commentCreerLogoFootballPost,
-  creerLogoFootPost,
-  logoMaillotFootPost,
-  blasonsEquipesFootballPost,
-  footballEmblemsPost,
+  belgianClubsPost,
+  frenchClubsOverviewPost, 
+  germanClubsOverviewPost,
+  portugueseLogosPost,
+  winamaxLogoPost,
+  unibetLogoPost,
+  bwinLogoPost,
   footballLogosHistoryPost,
+  footballEmblemsPost,
+  creerLogoFootPost,
+  logosFootPdfPost,
+  logoMaillotFootPost,
+  ecussonsFootballPost,
   ecussonsClubFootEuropeenPost,
-  pixelArtFootPost,
-  footballDesignPost
+  blasonsEquipesFootballPost
 ];

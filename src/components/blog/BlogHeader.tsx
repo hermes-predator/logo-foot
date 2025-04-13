@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -19,6 +18,7 @@ const BlogHeader = () => {
     // Style pour les autres catégories
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
+  
   return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
@@ -53,9 +53,6 @@ const BlogHeader = () => {
               </Link>
               <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
                 Logos
-              </Link>
-              <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
-                Analyses
               </Link>
               <Link to="/blog?category=players" className={getCategoryStyle('players')}>
                 Joueurs

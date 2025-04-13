@@ -57,6 +57,9 @@ const BlogHeader = () => {
               <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
                 Joueurs
               </Link>
+              <Link to="/blog?category=players" className={getCategoryStyle('players')}>
+                Stars
+              </Link>
               <Link to="/blog?category=history" className={getCategoryStyle('history')}>
                 Histoire
               </Link>
@@ -69,7 +72,6 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          {/* Modification du style du CTA avec des couleurs jaune ambré */}
           <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>

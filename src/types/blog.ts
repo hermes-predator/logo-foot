@@ -1,5 +1,5 @@
 
-export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art';
+export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art' | 'players';
 
 export interface BlogSubCategory {
   id: string;
@@ -102,6 +102,24 @@ export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
         name: "Études de Cas",
         description: "Analyses détaillées de parcours de joueurs",
         slug: "case-studies"
+      }
+    ]
+  },
+  "players": {
+    name: "Joueurs",
+    description: "Analyses et portraits de joueurs de football",
+    subCategories: [
+      {
+        id: "stars",
+        name: "Stars",
+        description: "Portraits des grandes stars du football",
+        slug: "stars"
+      },
+      {
+        id: "rising-talents",
+        name: "Talents Émergents",
+        description: "Analyses des jeunes talents prometteurs",
+        slug: "rising-talents"
       }
     ]
   },

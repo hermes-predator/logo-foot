@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -56,7 +57,6 @@ import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
-import { stevenageLogoPost } from './stevenage-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -114,6 +114,5 @@ export const logoPosts: BlogPost[] = [
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
-  tigresUanlLogoPost,
-  stevenageLogoPost
+  tigresUanlLogoPost
 ];

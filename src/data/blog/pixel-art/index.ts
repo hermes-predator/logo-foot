@@ -1,15 +1,17 @@
 
 import { BlogPost } from '../../../types/blog';
 
-// Imports des articles pixel art
+// Import pixel art related posts
+import { pixelArtFootPost } from '../logos/pixel-art-foot';
 import { pixelArtFootGeneralPost } from './pixel-art-foot';
 import { pixelArtPsgLogoPost } from '../logos/pixel-art-psg-logo';
 import { manchesterCityPixelArtLogoPost } from './manchester-city-pixel-art-logo';
 import { pixelArtRealMadridLogoPost } from './pixel-art-real-madrid-logo';
 import { pixelArtOMLogoPost } from './pixel-art-om-logo';
 
-// Exportation de tous les articles pixel art
+// Exporting all pixel art related posts
 export const pixelArtPosts: BlogPost[] = [
+  pixelArtFootPost,
   pixelArtFootGeneralPost,
   pixelArtPsgLogoPost,
   manchesterCityPixelArtLogoPost,
@@ -17,6 +19,9 @@ export const pixelArtPosts: BlogPost[] = [
   pixelArtOMLogoPost
 ];
 
+// For easier access to statistics
 export const pixelArtPostCount = pixelArtPosts.length;
 
-console.log(`Nombre d'articles Pixel Art : ${pixelArtPostCount}`);
+// Log the count for verification
+console.log(`Number of Pixel Art posts: ${pixelArtPostCount}`);
+

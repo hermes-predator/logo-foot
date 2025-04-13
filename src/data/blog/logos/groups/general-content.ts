@@ -1,42 +1,27 @@
 
 import { BlogPost } from '../../../../types/blog';
-
-// Import general content posts
-import { clubHistoryPost } from '../club-history';
 import { frontCloudPost } from '../front-cloud';
-import { belgianClubsPost } from '../belgian-clubs';
-import { frenchClubsPost as frenchClubsOverviewPost } from '../french-clubs';
-import { germanClubsPost as germanClubsOverviewPost } from '../german-clubs';
-import { portugueseLogosPost } from '../portuguese-clubs';
-import { winamaxLogoPost } from '../winamax-logo';
-import { unibetLogoPost } from '../unibet-logo';
-import { bwinLogoPost } from '../bwin-logo';
-import { footballLogosHistoryPost } from '../football-logos-history';
-import { footballEmblemsPost } from '../football-emblems';
+import { commentCreerLogoFootballPost } from '../comment-creer-logo-football';
 import { creerLogoFootPost } from '../creer-logo-foot';
-import { logosFootPdfPost } from '../1001-logos-foot-pdf';
 import { logoMaillotFootPost } from '../logo-maillot-foot';
 import { ecussonsFootballPost } from '../ecussons-football';
+import { footballEmblemsPost } from '../football-emblems';
+import { blasonEquipesFootballPost } from '../blasons-equipes-football';
+import { footballLogosHistoryPost } from '../football-logos-history';
 import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
-import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
+import { pixelArtFootPost } from '../pixel-art-foot';
+import { footballDesignPost } from '../football-design';
 
-// Group all general content posts
 export const generalContentPosts: BlogPost[] = [
-  clubHistoryPost,
   frontCloudPost,
-  belgianClubsPost,
-  frenchClubsOverviewPost, 
-  germanClubsOverviewPost,
-  portugueseLogosPost,
-  winamaxLogoPost,
-  unibetLogoPost,
-  bwinLogoPost,
-  footballLogosHistoryPost,
-  footballEmblemsPost,
+  commentCreerLogoFootballPost,
   creerLogoFootPost,
-  logosFootPdfPost,
   logoMaillotFootPost,
   ecussonsFootballPost,
+  footballEmblemsPost,
+  blasonEquipesFootballPost,
+  footballLogosHistoryPost,
   ecussonsClubFootEuropeenPost,
-  blasonsEquipesFootballPost
+  pixelArtFootPost,
+  footballDesignPost
 ];

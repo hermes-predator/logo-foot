@@ -4,22 +4,19 @@ import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
-
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
 
   // Fonction pour déterminer le style de la catégorie selon son état actif
   const getCategoryStyle = (category: string | null) => {
-    if ((category === null && activeCategory === null) || 
-        (category === activeCategory)) {
+    if (category === null && activeCategory === null || category === activeCategory) {
       // Style pour la catégorie active
       return "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm transition-colors shadow-sm";
     }
     // Style pour les autres catégories
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
-
   return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
@@ -55,7 +52,7 @@ const BlogHeader = () => {
               <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
                 Logos
               </Link>
-              <Link to="/blog?category=players" className={getCategoryStyle('players')}>
+              <Link to="/blog?category=analysis" className={getCategoryStyle('analysis')}>
                 Joueurs
               </Link>
               <Link to="/blog?category=history" className={getCategoryStyle('history')}>
@@ -74,7 +71,7 @@ const BlogHeader = () => {
           <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
+                <h3 className="font-bold text-gray-900">Recevez + de 8 600 logos réunis dans un fichier ZIP parfaitement organisé</h3>
                 <p className="text-sm text-amber-800/80">Recevez + de 8 600 logos réunis dans un fichier ZIP unique et parfaitement organisé</p>
               </div>
               <TooltipProvider>
@@ -99,5 +96,4 @@ const BlogHeader = () => {
       </div>
     </div>;
 };
-
 export default BlogHeader;

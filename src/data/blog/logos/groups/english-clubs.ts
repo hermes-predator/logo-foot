@@ -4,6 +4,7 @@ import { BlogPost } from '../../../../types/blog';
 // Import des articles sur les logos des clubs anglais
 import { arsenalLogoPost } from '../arsenal-logo';
 import { astonVillaLogoPost } from '../aston-villa-logo';
+import { birminghamCityLogoPost } from '../birmingham-city-logo';
 import { bournemouthLogoPost } from '../bournemouth-logo';
 import { brentfordLogoPost } from '../brentford-logo';
 import { brightonLogoPost } from '../brighton-logo';
@@ -11,12 +12,14 @@ import { burnleyLogoPost } from '../burnley-logo';
 import { chelseaLogoPost } from '../chelsea-logo';
 import { crystalPalaceLogoPost } from '../crystal-palace-logo';
 import { evertonLogoPost } from '../everton-logo';
+// import { fulhamLogoPost } from '../fulham-logo';
 import { leedsUnitedLogoPost } from '../leeds-united-logo';
 import { leicesterLogoPost } from '../leicester-logo';
 import { liverpoolLogoPost } from '../liverpool-logo';
 import { manchesterCityLogoPost } from '../manchester-city-logo';
 import { manchesterUnitedLogoPost } from '../manchester-united-logo';
 import { newcastleLogoPost } from '../newcastle-logo';
+// import { nottinghamForestLogoPost } from '../nottingham-forest-logo';
 import { norwichLogoPost } from '../norwich-logo';
 import { queensParkRangersLogoPost } from '../queens-park-rangers-logo';
 import { southamptonLogoPost } from '../southampton-logo';
@@ -46,6 +49,7 @@ import { prestonNorthEndLogoPost } from '../preston-north-end-logo';
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
   astonVillaLogoPost,
+  birminghamCityLogoPost,
   bournemouthLogoPost,
   brentfordLogoPost,
   brightonLogoPost,

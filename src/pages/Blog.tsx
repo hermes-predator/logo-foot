@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -49,21 +48,8 @@ const Blog = () => {
       })));
     }
 
-    // Recherche spécifique de l'article Cadix pour voir s'il est présent en double
-    const cadixPosts = blogPosts.filter(post => 
-      post.title.toLowerCase().includes('cadix') || 
-      post.title.toLowerCase().includes('cadiz')
-    );
-    
-    if (cadixPosts.length > 0) {
-      console.log('Articles sur Cadix trouvés:', cadixPosts.length);
-      cadixPosts.forEach(post => {
-        console.log(`- ID ${post.id}: "${post.title}" (Catégorie: ${post.category})`);
-      });
-    }
-
-    // Log pour vérifier la catégorie des articles sur les joueurs
-    const playerPosts = blogPosts.filter(post => post.category === 'analysis');
+    // Check for player category posts
+    const playerPosts = blogPosts.filter(post => post.category === 'players');
     console.log(`Articles sur les joueurs: ${playerPosts.length}`);
     
   }, []);

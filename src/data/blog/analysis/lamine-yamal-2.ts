@@ -49,6 +49,5 @@ Avec Lamine Yamal et Aitana Bonmatí, le FC Barcelone et la sélection espagnole
 
 Lamine Yamal et Aitana Bonmatí sont deux joyaux catalans qui dominent le football actuel. Leur talent, leur travail et leur humilité en font des modèles pour les jeunes générations. Il ne fait aucun doute qu'ils sont promis à un avenir radieux et qu'ils continueront à faire briller les couleurs du FC Barcelone et de la sélection espagnole pendant de nombreuses années.
 `,
-  keywords: "lamine yamal, aitana bonmati, fc barcelone, football catalan, la masia, comparaison yamal bonmati, espagne football, ballon d'or féminin, jeune talent masculin, champions barcelone, technique espagnole, formation barca, selection espagnole, football masculin feminin, stars catalanes, futur football espagnol",
   category: 'players'
 };

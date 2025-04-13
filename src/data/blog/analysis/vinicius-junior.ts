@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const viniciusJuniorPost: BlogPost = {
@@ -64,5 +63,5 @@ L'avenir s'annonce radieux pour le prodige brésilien qui n'a probablement pas e
 
 La relation privilégiée qu'il entretient avec les supporters madrilènes, qui voient en lui le digne héritier de légendes brésiliennes comme Ronaldo ou Roberto Carlos, témoigne de l'empreinte qu'il a déjà laissée dans l'histoire du club le plus titré d'Europe.`,
   keywords: "vinicius junior, vinicius junior origine africaine, vinicius junior stats, fond d'écran vinicius junior, vinicius junior et son fils, vinicius junior real madrid, psg vinicius junior, vinicius junior origine parents, fond d'écran vinicius junior 4k, vinicius junior age, vinicius junior et sa copine, junior vinicius, la maison de vinicius junior, pointure vinicius junior, agent de vinicius junior, vinicius junior coupe de cheveux, coloriage vinicius junior, crampon nike vinicius junior, crampon vinicius junior, photos de vinicius junior, vinicius junior celebration, coupe vinicius junior",
-  category: 'analysis'
+  category: 'players'
 };

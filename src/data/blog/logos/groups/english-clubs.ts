@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs anglais
@@ -17,6 +18,7 @@ import { manchesterCityLogoPost } from '../manchester-city-logo';
 import { manchesterUnitedLogoPost } from '../manchester-united-logo';
 import { newcastleLogoPost } from '../newcastle-logo';
 import { norwichLogoPost } from '../norwich-logo';
+import { queensParkRangersLogoPost } from '../queens-park-rangers-logo';
 import { southamptonLogoPost } from '../southampton-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { westHamLogoPost } from '../west-ham-logo';
@@ -56,6 +58,7 @@ export const englishClubPosts: BlogPost[] = [
   manchesterUnitedLogoPost,
   newcastleLogoPost,
   norwichLogoPost,
+  queensParkRangersLogoPost,
   southamptonLogoPost,
   tottenhamLogoPost,
   westHamLogoPost,

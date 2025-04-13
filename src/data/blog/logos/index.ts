@@ -40,7 +40,7 @@ import { hajdukSplitLogoPost } from './hajduk-split-logo';
 // Removing direct import of tacaDePortugalLogoPost since it's already in competitionPosts
 // import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
 // Suppression de l'import direct de cadizLogoPost car il est déjà inclus via spanishClubPosts
-import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
+// Remove pixelArtPsgLogoPost from here since it's now in pixel-art category
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 import { rouenLogoPost } from './rouen-logo';
@@ -99,7 +99,7 @@ export const logoPosts: BlogPost[] = [
   // Removed direct reference to tacaDePortugalLogoPost since it's included in competitionPosts
   ballonDorLogoPost,
   // Suppression de cadizLogoPost qui est déjà inclus via spanishClubPosts
-  pixelArtPsgLogoPost,
+  // Removed pixelArtPsgLogoPost since it's now in pixel-art category
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,
   rouenLogoPost,

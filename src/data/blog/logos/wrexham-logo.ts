@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const wrexhamLogoPost: BlogPost = {
@@ -6,10 +5,8 @@ export const wrexhamLogoPost: BlogPost = {
   title: "Logo Wrexham AFC : Histoire et Design du Symbole du Club Gallois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Wrexham AFC, son évolution à travers les années et la signification derrière le design emblématique du club gallois le plus ancien du pays.",
   date: "2024-04-13",
-  image: "/blog-images/wrexham-logo.png",
-  imageAlt: "Logo de Wrexham AFC - Histoire et évolution du symbole du club gallois",
-  category: "logos",
-  subCategory: "english-clubs",
+  // Removing the 'image' property as it's not in the BlogPost type
+  // Instead, we'll rely on the galleryImageId to reference the image
   content: `
 # L'histoire du **logo Wrexham** : Symbole d'un club historique
 
@@ -107,4 +104,3 @@ Oui, le **Wrexham logo** est une marque déposée et protégée, particulièreme
   related: ["arsenal-logo", "liverpool-logo", "swansea-city-logo", "cardiff-city-logo"],
   readingTime: 12
 };
-

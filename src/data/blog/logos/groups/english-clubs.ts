@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { birminghamCityLogoPost } from '../birmingham-city-logo';
 import { arsenalLogoPost } from '../arsenal-logo';
@@ -9,14 +10,16 @@ import { burnleyLogoPost } from '../burnley-logo';
 import { chelseaLogoPost } from '../chelsea-logo';
 import { crystalPalaceLogoPost } from '../crystal-palace-logo';
 import { evertonLogoPost } from '../everton-logo';
-import { fulhamLogoPost } from '../fulham-logo';
+// Comment out missing imports
+// import { fulhamLogoPost } from '../fulham-logo';
 import { leedsUnitedLogoPost } from '../leeds-united-logo';
 import { leicesterLogoPost } from '../leicester-logo';
 import { liverpoolLogoPost } from '../liverpool-logo';
 import { manchesterCityLogoPost } from '../manchester-city-logo';
 import { manchesterUnitedLogoPost } from '../manchester-united-logo';
 import { newcastleLogoPost } from '../newcastle-logo';
-import { nottinghamForestLogoPost } from '../nottingham-forest-logo';
+// Comment out missing imports
+// import { nottinghamForestLogoPost } from '../nottingham-forest-logo';
 import { southamptonLogoPost } from '../southampton-logo';
 import { tottenhamLogoPost } from '../tottenham-logo';
 import { westHamLogoPost } from '../west-ham-logo';
@@ -48,14 +51,16 @@ export const englishClubPosts: BlogPost[] = ensureProperCategories([
   chelseaLogoPost,
   crystalPalaceLogoPost,
   evertonLogoPost,
-  fulhamLogoPost,
+  // Remove missing posts from the array
+  // fulhamLogoPost,
   leedsUnitedLogoPost,
   leicesterLogoPost,
   liverpoolLogoPost,
   manchesterCityLogoPost,
   manchesterUnitedLogoPost,
   newcastleLogoPost,
-  nottinghamForestLogoPost,
+  // Remove missing posts from the array
+  // nottinghamForestLogoPost,
   southamptonLogoPost,
   tottenhamLogoPost,
   westHamLogoPost,

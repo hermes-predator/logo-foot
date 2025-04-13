@@ -4,7 +4,7 @@ import { frontCloudPost } from '../front-cloud';
 import { commentCreerLogoFootballPost } from '../comment-creer-logo-football';
 import { creerLogoFootPost } from '../creer-logo-foot';
 import { logoMaillotFootPost } from '../logo-maillot-foot';
-import { ecussonsFootballPost } from '../ecussons-football';
+import { blasonsEquipesFootballPost } from '../blasons-equipes-football'; // Corrected import name
 import { footballEmblemsPost } from '../football-emblems';
 import { blasonEquipesFootballPost } from '../blasons-equipes-football';
 import { footballLogosHistoryPost } from '../football-logos-history';
@@ -17,7 +17,7 @@ export const generalContentPosts: BlogPost[] = [
   commentCreerLogoFootballPost,
   creerLogoFootPost,
   logoMaillotFootPost,
-  ecussonsFootballPost,
+  blasonsEquipesFootballPost, // Corrected variable name
   footballEmblemsPost,
   blasonEquipesFootballPost,
   footballLogosHistoryPost,

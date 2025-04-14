@@ -13,6 +13,7 @@ import { fribourgLogoPost } from '../fribourg-logo';
 import { greutherFurthLogoPost } from '../greuther-furth-logo';
 import { hambourgSvLogoPost } from '../hambourg-sv-logo';
 import { heidenheimLogoPost } from '../heidenheim-logo';
+import { herthaBerlinLogoPost } from '../hertha-berlin-logo';
 import { hoffenheimLogoPost } from '../hoffenheim-logo';
 import { kaiserslauternLogoPost } from '../kaiserslautern-logo';
 import { leverkusenLogoPost } from '../leverkusen-logo';
@@ -39,6 +40,7 @@ export const germanClubPosts: BlogPost[] = [
   greutherFurthLogoPost,
   hambourgSvLogoPost,
   heidenheimLogoPost,
+  herthaBerlinLogoPost,
   hoffenheimLogoPost,
   kaiserslauternLogoPost,
   leverkusenLogoPost,
@@ -52,4 +54,3 @@ export const germanClubPosts: BlogPost[] = [
   wolfsburgLogoPost,
   hannover96LogoPost
 ];
-

@@ -26,10 +26,12 @@ import { stuttgartLogoPost } from '../stuttgart-logo';
 import { unionBerlinLogoPost } from '../union-berlin-logo';
 import { wolfsburgLogoPost } from '../wolfsburg-logo';
 import { hannover96LogoPost } from '../hannover-96-logo';
+import { arminiaBielefeldLogoPost } from '../arminia-bielefeld-logo';
 
 // Group all German club logo posts
 export const germanClubPosts: BlogPost[] = [
   augsburgLogoPost,
+  arminiaBielefeldLogoPost,
   bayernMunichLogoPost,
   bochumLogoPost,
   borussiaMonchengladbachLogoPost,

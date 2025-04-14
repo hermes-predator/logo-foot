@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import all existing German club logo posts
@@ -27,6 +28,7 @@ import { wolfsburgLogoPost } from '../wolfsburg-logo';
 import { hannover96LogoPost } from '../hannover-96-logo';
 import { arminiaBielefeldLogoPost } from '../arminia-bielefeld-logo';
 import { dynamoDresdenLogoPost } from '../dynamo-dresden-logo';
+import { sandhausenLogoPost } from '../sandhausen-logo';
 
 // Group all German club logo posts
 export const germanClubPosts: BlogPost[] = [
@@ -55,5 +57,6 @@ export const germanClubPosts: BlogPost[] = [
   wolfsburgLogoPost,
   hannover96LogoPost,
   dynamoDresdenLogoPost,
-  arminiaBielefeldLogoPost
+  arminiaBielefeldLogoPost,
+  sandhausenLogoPost
 ];

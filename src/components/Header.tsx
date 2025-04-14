@@ -1,7 +1,8 @@
 
-import { Home, BookOpen, FileArchive } from "lucide-react";
+import { Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import LogoFoot from "./ui/LogoFoot";
 
 const Header = () => {
   const location = useLocation();
@@ -39,8 +40,7 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
-          <FileArchive className="w-6 h-6 text-purple-600" />
-          <span className="font-medium">logo-foot.com</span>
+          <LogoFoot />
         </Link>
         
         <div className="flex items-center gap-8">

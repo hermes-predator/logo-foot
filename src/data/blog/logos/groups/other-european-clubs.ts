@@ -7,6 +7,7 @@ import { anderlechtLogoPost } from '../anderlecht-logo';
 import { azAlkmaarLogoPost } from '../az-alkmaar-logo';
 import { besiktasLogoPost } from '../besiktas-logo';
 import { bodoGlimtLogoPost } from '../bodo-glimt-logo';
+import { brondbyLogoPost } from '../brondby-logo';
 import { celticGlasgowLogoPost } from '../celtic-glasgow-logo';
 import { cfrClujLogoPost } from '../cfr-cluj-logo';
 import { clubBrugesLogoPost } from '../club-bruges-logo';
@@ -53,6 +54,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   aekAthensLogoPost,
   besiktasLogoPost,
   bodoGlimtLogoPost,
+  brondbyLogoPost,
   celticGlasgowLogoPost,
   cfrClujLogoPost,
   clubBrugesLogoPost,

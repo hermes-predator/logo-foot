@@ -20,9 +20,6 @@ const BlogHeader = () => {
   };
   
   return <div className="max-w-4xl mb-6 pl-4">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
-        <span>Le Blog des Logos de Football</span>
-      </div>
       
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot

@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
-
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
@@ -18,8 +17,10 @@ const BlogHeader = () => {
     // Style pour les autres catégories
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
-  
   return <div className="max-w-4xl mb-6 pl-4">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
+        
+      </div>
       
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
@@ -66,10 +67,10 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          <div className="bg-amber-50 rounded-xl p-5 border border-amber-200/70 shadow-inner py-6">
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200/70 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-gray-900 text-lg">Vous souhaitez obtenir tous les logos de football ?</h3>
+                <h3 className="font-bold text-gray-900">Vous souhaitez obtenir tous les logos de football ?</h3>
                 <p className="text-sm text-amber-800/80">
                   Recevez + de 8 600 logos réunis dans un fichier ZIP parfaitement organisé
                 </p>
@@ -77,11 +78,11 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group h-12 px-6 text-base">
+                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group">
                       <Link to="/" className="flex items-center gap-2">
-                        <Folder className="h-5 w-5" />
+                        <Folder className="h-4 w-4" />
                         <span>Voir le fichier</span>
-                        <ArrowRight className="h-5 w-5" />
+                        <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
                   </TooltipTrigger>
@@ -96,5 +97,4 @@ const BlogHeader = () => {
       </div>
     </div>;
 };
-
 export default BlogHeader;

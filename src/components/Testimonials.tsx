@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -38,9 +39,9 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Lucas F.",
-    role: "Journaliste sportif",
-    content: "Une ressource indispensable pour tout créateur de contenu sport. Service client au top !",
+    name: "Alexandre G.",
+    role: "Journaliste sportif", 
+    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci à vous.",
     rating: 5
   },
   {

@@ -32,9 +32,9 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Alexandre G.",
-    role: "Journaliste sportif",
-    content: "Ce pack m'a grandement aidé pour mon projet de paris sportifs, merci à vous.",
+    name: "Quentin D.",
+    role: "Non renseigné",
+    content: "Vaut son prix, très impressionné au moment de l'ouverture du fichier.",
     rating: 5
   },
   {

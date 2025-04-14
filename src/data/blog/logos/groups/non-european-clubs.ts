@@ -29,6 +29,7 @@ import { newYorkRedBullsLogoPost } from '../new-york-red-bulls-logo';
 import { orlandoCityLogoPost } from '../orlando-city-logo';
 import { sanJoseEarthquakesLogoPost } from '../san-jose-earthquakes-logo';
 import { columbusCrewLogoPost } from '../columbus-crew-logo';
+// Import sacramentoRepublicLogoPost but make sure it's not duplicated elsewhere
 import { sacramentoRepublicLogoPost } from '../sacramento-republic-logo';
 // Remove direct imports of the two teams that are already included via brazilianClubsPost and southAmericanClubsPost
 // import { saoPauloLogoPost } from '../sao-paulo-logo';

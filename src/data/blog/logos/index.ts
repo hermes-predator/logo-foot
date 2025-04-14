@@ -57,7 +57,8 @@ import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
-import { sacramentoRepublicLogoPost } from './sacramento-republic-logo';
+// Remove the direct import of sacramentoRepublicLogoPost since it's already in nonEuropeanClubPosts
+// import { sacramentoRepublicLogoPost } from './sacramento-republic-logo';
 // Remove the direct import of alEttifaqLogoPost since it's already included in asianClubPosts
 // import { alEttifaqLogoPost } from './al-ettifaq-logo';
 // Remove the direct import of botafogoLogoPost since it's already included in brazilianClubPosts
@@ -119,8 +120,9 @@ export const logoPosts: BlogPost[] = [
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
-  tigresUanlLogoPost,
-  sacramentoRepublicLogoPost
+  tigresUanlLogoPost
+  // Remove sacramentoRepublicLogoPost from direct inclusion since it's already in nonEuropeanClubPosts
+  // sacramentoRepublicLogoPost
   // Remove alEttifaqLogoPost from direct inclusion since it's already in asianClubPosts
   // alEttifaqLogoPost
   // Remove botafogoLogoPost from direct inclusion since it's already in brazilianClubPosts

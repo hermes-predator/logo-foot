@@ -1,10 +1,11 @@
 
 import { lazy, Suspense, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import HreflangTags from './components/SEO/HreflangTags';
 import GlobalCanonical from './components/SEO/GlobalCanonical';
@@ -45,6 +46,24 @@ const OptimizedSuspense = ({ children }: { children: React.ReactNode }) => (
   </Suspense>
 );
 
+// Composant pour gérer les animations de transition
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/category/:category" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 function App() {
   // Mesurer les Core Web Vitals au chargement de l'application
   useEffect(() => {
@@ -79,14 +98,7 @@ function App() {
             
             <Header />
             <OptimizedSuspense>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/category/:category" element={<Blog />} />
-                <Route path="/blog/:id" element={<BlogPost />} />
-                <Route path="/payment-success" element={<PaymentSuccess />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+              <AnimatedRoutes />
             </OptimizedSuspense>
             <Toaster />
             

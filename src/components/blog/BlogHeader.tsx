@@ -19,7 +19,7 @@ const BlogHeader = () => {
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
   
-  return <div className="max-w-4xl mb-6 pl-4">
+  return <div className="max-w-5xl mb-6 pl-4"> {/* Augmentation de max-w-4xl à max-w-5xl */}
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
       </div>

@@ -13,7 +13,8 @@ import { alNassrLogoPost } from '../al-nassr-logo';
 import { alHilalLogoPost } from '../al-hilal-logo';
 import { alAhliLogoPost } from '../al-ahli-logo';
 import { alIttihadLogoPost } from '../al-ittihad-logo';
-import { alEttifaqLogoPost } from '../al-ettifaq-logo';
+// Remove direct import of alEttifaqLogoPost since it's included via asianClubsPost
+// import { alEttifaqLogoPost } from '../al-ettifaq-logo';
 import { tigresUanlLogoPost } from '../tigres-uanl-logo';
 import { chicagoFireLogoPost } from '../chicago-fire-logo';
 import { atlantaUnitedLogoPost } from '../atlanta-united-logo';
@@ -38,7 +39,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   alNassrLogoPost,
   alAhliLogoPost,
   alIttihadLogoPost,
-  alEttifaqLogoPost,
+  // Remove alEttifaqLogoPost from here as it's already included in asianClubsPost
   tigresUanlLogoPost,
   chicagoFireLogoPost,
   atlantaUnitedLogoPost,

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -99,19 +100,16 @@ const PackDescription = () => {
         </h4>
         
         <div className="grid gap-4 md:grid-cols-2">
-          {/* Modification du premier élément avec un style plus marqué */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100/50 p-4 rounded-lg border border-blue-200/80 shadow-sm group hover:shadow-md transition-all duration-300 hover:border-blue-300 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/20 to-transparent animate-[shine_2.5s_ease-in-out_infinite] z-0"></div>
-            
-            <div className="flex items-center gap-3 mb-2 relative z-10">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors duration-300">
-                <Globe className="h-4 w-4 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" aria-hidden="true" />
+          <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300 hover:border-blue-200">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center justify-center w-7 h-7 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors duration-300">
+                <Globe className="h-3.5 w-3.5 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" aria-hidden="true" />
               </div>
-              <span className="text-sm font-semibold text-gray-800 group-hover:text-blue-900 transition-colors">Couverture totale du football</span>
+              <span className="text-sm font-semibold text-gray-800">Couverture totale du football</span>
             </div>
-            <p className="text-xs text-gray-600 ml-10 relative z-10">Gagnez en confiance et temps en obtenant toutes les ressources liés au football.</p>
+            <p className="text-xs text-gray-600 ml-10">Gagnez en confiance et temps en obtenant toutes les ressources liés au football.</p>
           </div>
-
+          
           <div className="bg-white p-4 rounded-lg border border-gray-200/80 shadow-sm group hover:shadow-md transition-all duration-300 hover:border-blue-200">
             <div className="flex items-center gap-3 mb-2">
               <div className="flex items-center justify-center w-7 h-7 rounded-full bg-blue-100 group-hover:bg-blue-200 transition-colors duration-300">

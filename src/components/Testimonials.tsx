@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Quentin D.",
     role: "Non renseigné",
-    content: "Très impressionné par la richesse du fichier, vaut son prix 👍🏼",
+    content: "Très impressionné par le fichier, vaut son prix 👍🏼",
     rating: 5
   },
   {

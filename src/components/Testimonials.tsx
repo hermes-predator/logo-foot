@@ -74,9 +74,9 @@ const testimonials: Testimonial[] = [
     rating: 4
   },
   {
-    name: "Quentin D.",
+    name: "Loïc D.",
     role: "Non renseigné",
-    content: "Vaut son prix, très impressionné au moment de l'ouverture du fichier.",
+    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
     rating: 5
   }
 ];

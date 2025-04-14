@@ -1,4 +1,5 @@
-import { BlogPost } from '../../../types/blog';
+
+import { BlogPost } from '../../../../types/blog';
 import { etoileRougeBelgradeLogoPost } from '../etoile-rouge-belgrade-logo';
 import { hajdukSplitLogoPost } from '../hajduk-split-logo';
 import { dinamoTbilisiLogoPost } from '../dinamo-tbilisi-logo';

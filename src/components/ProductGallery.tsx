@@ -59,7 +59,7 @@ const ProductGallery = () => {
           <LazySection height="350px" className="pt-8" rootMargin="200px">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Autres logos de foot connexes</h2>
-              <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, drapeaux mondiaux, bookmakers et bien plus...</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, drapeaux mondiaux, bookmakers et plus encore...</p>
               <CompetitionGallery items={competitionItems} isLoading={isLoading} />
             </div>
           </LazySection>

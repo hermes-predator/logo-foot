@@ -44,7 +44,7 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Marie L.",
+    name: "Emma L.", // Changed from "Marie L."
     role: "Freelance",
     content: "Tout est parfait, merci :)",
     rating: 5

@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Alexandre G.",
+    name: "Alex G.",  // Changed from "Alexandre G."
     role: "Community Manager", 
     content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
     rating: 5

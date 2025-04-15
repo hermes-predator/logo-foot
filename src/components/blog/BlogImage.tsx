@@ -58,7 +58,7 @@ const BlogImage = ({
 
   return (
     <div className="my-5 protected-content" itemScope itemType="https://schema.org/ImageObject" ref={containerRef}>
-      <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
+      <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
           src={isInView ? src : '/placeholder.svg'}

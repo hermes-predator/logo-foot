@@ -24,6 +24,14 @@ const Breadcrumbs = () => {
       case 'gallery':
         return 'Galerie de logos';
       default:
+        // Pour les slugs d'articles (contenant ID et titre), extraire le titre lisible
+        if (path.match(/^\d+-/)) {
+          return path
+            .replace(/^\d+-/, '')  // Supprimer l'ID au début
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+        }
         // Convertir les slugs en format plus lisible 
         return path
           .split('-')

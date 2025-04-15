@@ -37,7 +37,7 @@ export const BLOG_CATEGORIES = {
     ]
   },
   history: {
-    name: 'Histoire du Football',
+    name: 'Histoire',
     description: 'Plongez dans l\'histoire fascinante du football et de ses logos emblématiques à travers les époques.',
     subCategories: [
       { id: 'club-history', name: 'Histoire des Clubs' },

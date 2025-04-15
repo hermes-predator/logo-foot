@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -12,19 +13,15 @@ import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
  * Sépare les préoccupations de SEO du rendu UI
  */
 const BlogPostSEO: React.FC = () => {
-  const { id, slug } = useParams<{ id?: string, slug?: string }>();
-  
-  // Trouver le post par ID ou par slug
-  const post = blogPosts.find(
-    post => post.id === Number(id) || post.slug === slug
-  );
+  const { id } = useParams<{ id: string }>();
+  const post = blogPosts.find(post => post.id === Number(id));
   const currentYear = new Date().getFullYear();
   
   // Si aucun article n'est trouvé, retourner null
   if (!post) return null;
   
   // URL canonique pour cet article spécifique
-  const canonicalUrl = `https://logo-foot.com/blog/${post.slug || post.id}`;
+  const canonicalUrl = `https://logo-foot.com/blog/${post.id}`;
   
   // Extraire le sujet principal du titre
   const mainSubject = post.title.split(' : ')[0].toLowerCase();

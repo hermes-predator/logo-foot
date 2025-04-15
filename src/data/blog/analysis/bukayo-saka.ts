@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const bukayoSakaPost: BlogPost = {
@@ -38,7 +37,5 @@ Son humilité, son travail acharné et son professionnalisme font de lui un exem
 
 Les supporters d'Arsenal et de l'Angleterre peuvent se réjouir de pouvoir compter sur un joueur aussi talentueux et attachant. **Bukayo Saka** est bien plus qu'un simple footballeur, c'est un véritable modèle pour la jeunesse et une source d'inspiration pour tous les amoureux du ballon rond.`,
   keywords: "bukayo saka, saka arsenal, saka angleterre, statistiques de bukayo saka, saka premier league, saka arteta, saka technique, saka dribble, saka but, saka passe, saka euro, saka coupe du monde, saka jeune, saka salaire, saka contrat, saka transfert, saka famille, saka académie, saka hale end, saka potentiel",
-  category: 'players',
-  subCategory: 'player', // Ajout de la sous-catégorie manquante
-  galleryImageId: 32 // Ajout de l'ID de l'image de galerie manquant
+  category: 'players'
 };

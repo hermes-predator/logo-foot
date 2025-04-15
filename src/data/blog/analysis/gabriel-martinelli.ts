@@ -46,7 +46,5 @@ En quelques saisons seulement, **Gabriel Martinelli** est passé du statut de je
 
 Les **statistiques de Gabriel Martinelli** ne cessent de s'améliorer, et à mesure que sa carrière progresse, le monde du football observe avec fascination l'éclosion d'un talent qui pourrait marquer son époque. Que ce soit à Arsenal, au **PSG**, à **Barcelona** ou ailleurs, l'ailier brésilien possède tous les atouts pour s'imposer comme l'un des meilleurs joueurs de sa génération.`,
   keywords: "gabriel martinelli, gabrielle martinelli, statistiques de gabriel martinelli, martinelli gabriel, arsenal gabriel martinelli, gabriel martinelli arsenal, gabriel martinelli origine, gabriel martinelli position, gabriel martinelli psg, gabriel martinelli barcelona",
-  category: 'players',
-  subCategory: 'player', // Ajout de la sous-catégorie manquante
-  galleryImageId: 28 // Ajout de l'ID de l'image de galerie manquant
+  category: 'players'
 };

@@ -32,7 +32,5 @@ Vers un Futur Authentique
 
 Dans les stades modernes comme dans les bars traditionnels, les emblèmes des clubs continuent de faire battre le cœur des aficionados. La LaLiga prouve qu'il est possible de conquérir le monde digital tout en préservant l'âme du football espagnol. Les NFTs côtoient les écharpes traditionnelles, les filtres Instagram se mêlent aux chants ancestraux, créant une expérience unique où tradition et innovation dansent le même fandango.`,
   keywords: "logos laliga, design clubs espagnols, branding football espagnol, écusson real madrid, logo barcelona, identité visuelle atletico",
-  category: 'logos',
-  subCategory: 'competition-logos', // Ajout de la sous-catégorie manquante
-  galleryImageId: 9 // Ajout de l'ID de l'image de galerie manquant
+  category: 'players'
 };

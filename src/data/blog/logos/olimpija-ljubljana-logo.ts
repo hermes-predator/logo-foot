@@ -1,13 +1,10 @@
-import { BlogPost } from '../../../types/blog';
-import { slugify } from '../../../utils/slugify';
 
-const title = "Logo Olimpija Ljubljana : Histoire et Symbolique [2024]";
+import { BlogPost } from '../../../types/blog';
 
 export const olimpijaLjubljanalogoPost: BlogPost = {
   id: 433,
-  title: title,
-  slug: slugify(title),
-  excerpt: "Découvrez l'histoire fascinante du logo Olimpija Ljubljana, son évolution et sa signification profonde dans le football slovène.",
+  title: "**Logo Olimpija Ljubljana** : Histoire et Symbolique [2024]",
+  excerpt: "Découvrez l'histoire fascinante du **logo Olimpija Ljubljana**, son évolution et sa signification profonde dans le football slovène.",
   date: "2024-04-15",
   content: `# L'Histoire du **Logo Olimpija Ljubljana**
 

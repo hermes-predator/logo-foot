@@ -1,3 +1,11 @@
+export type BlogCategory = 'logos' | 'history' | 'technical' | 'analysis' | 'pixel-art' | 'players';
+
+export interface BlogSubCategory {
+  id: string;
+  name: string;
+  description: string;
+  slug: string;
+}
 
 export interface BlogPost {
   id: number;
@@ -5,67 +13,138 @@ export interface BlogPost {
   excerpt: string;
   date: string;
   content: string;
-  keywords: string;
-  category: string;
-  subCategory: string;
-  galleryImageId: number;
-  slug?: string;
+  keywords?: string;
+  category: BlogCategory;
+  subCategory?: string; // Référence au slug de la sous-catégorie
+  galleryImageId?: number; // ID correspondant à l'image dans la galerie
+  readingTime?: number;
 }
 
-// Structure de catégories pour le blog
-export interface BlogSubCategory {
-  id: string;
+export interface BlogCategoryInfo {
   name: string;
-  description?: string;
-}
-
-export interface BlogCategory {
-  id: string;
-  name: string;
-  description?: string;
+  description: string;
   subCategories: BlogSubCategory[];
 }
 
-// Définition des catégories et sous-catégories du blog
-export const BLOG_CATEGORIES: Record<string, BlogCategory> = {
-  'logos': {
-    id: 'logos',
-    name: 'Logos',
-    description: 'Analyses et actualités sur les logos de football',
+export const BLOG_CATEGORIES: Record<BlogCategory, BlogCategoryInfo> = {
+  logos: {
+    name: "Logos & Design",
+    description: "Collection et analyses des logos du football",
     subCategories: [
-      { id: 'club-logos', name: 'Logos de Clubs' },
-      { id: 'national-logos', name: 'Logos de Sélections' },
-      { id: 'competition-logos', name: 'Logos de Compétitions' }
+      {
+        id: "club-logos",
+        name: "Logos de Clubs",
+        description: "Analyses des logos des clubs professionnels",
+        slug: "club-logos"
+      },
+      {
+        id: "national-logos",
+        name: "Logos des Équipes Nationales",
+        description: "Histoire des écussons des sélections nationales",
+        slug: "national-logos"
+      },
+      {
+        id: "competition-logos",
+        name: "Logos des Compétitions",
+        description: "Analyse des logos des grandes compétitions de football",
+        slug: "competition-logos"
+      }
     ]
   },
-  'players': {
-    id: 'players',
-    name: 'Joueurs',
-    description: 'Analyses et actualités sur les joueurs de football',
+  history: {
+    name: "Histoire",
+    description: "L'histoire des identités visuelles du football",
     subCategories: [
-      { id: 'player', name: 'Joueur' },
-      { id: 'transfer', name: 'Transfert' },
-      { id: 'statistics', name: 'Statistiques' }
+      {
+        id: "evolution",
+        name: "Évolution des Logos",
+        description: "L'évolution des logos à travers le temps",
+        slug: "evolution"
+      },
+      {
+        id: "iconic-designs",
+        name: "Designs Iconiques",
+        description: "Les logos qui ont marqué l'histoire",
+        slug: "iconic-designs"
+      }
     ]
   },
-  'teams': {
-    id: 'teams',
-    name: 'Équipes',
-    description: 'Analyses et actualités sur les équipes de football',
+  technical: {
+    name: "Technique",
+    description: "Aspects techniques des logos de football",
     subCategories: [
-      { id: 'club', name: 'Club' },
-      { id: 'national', name: 'Sélection nationale' },
-      { id: 'history', name: 'Histoire' }
+      {
+        id: "design-guidelines",
+        name: "Guidelines",
+        description: "Guides et bonnes pratiques de design",
+        slug: "design-guidelines"
+      },
+      {
+        id: "file-formats",
+        name: "Formats de Fichiers",
+        description: "Tout sur les formats de logos",
+        slug: "file-formats"
+      }
     ]
   },
-  'competitions': {
-    id: 'competitions',
-    name: 'Compétitions',
-    description: 'Analyses et actualités sur les compétitions de football',
+  analysis: {
+    name: "Analyses",
+    description: "Analyses tactiques et statistiques du football",
     subCategories: [
-      { id: 'league', name: 'Championnat' },
-      { id: 'cup', name: 'Coupe' },
-      { id: 'international', name: 'International' }
+      {
+        id: "trends",
+        name: "Tendances",
+        description: "Les tendances actuelles du football",
+        slug: "trends"
+      },
+      {
+        id: "case-studies",
+        name: "Études de Cas",
+        description: "Analyses détaillées de tactiques et performances",
+        slug: "case-studies"
+      }
+    ]
+  },
+  "players": {
+    name: "Joueurs",
+    description: "Analyses et portraits de joueurs de football",
+    subCategories: [
+      {
+        id: "stars",
+        name: "Stars",
+        description: "Portraits des grandes stars du football",
+        slug: "stars"
+      },
+      {
+        id: "rising-talents",
+        name: "Talents Émergents",
+        description: "Analyses des jeunes talents prometteurs",
+        slug: "rising-talents"
+      }
+    ]
+  },
+  "pixel-art": {
+    name: "Pixel Art",
+    description: "Création et design de pixel art sur le thème du football",
+    subCategories: [
+      {
+        id: "team-pixel-art",
+        name: "Équipes en Pixel Art",
+        description: "Représentations pixel art des équipes de football",
+        slug: "team-pixel-art"
+      },
+      {
+        id: "pixel-art-tutorials",
+        name: "Tutoriels Pixel Art",
+        description: "Guides et tutoriels pour créer votre propre pixel art de football",
+        slug: "pixel-art-tutorials"
+      },
+      {
+        id: "pixel-art-collections",
+        name: "Collections Pixel Art",
+        description: "Collections thématiques de pixel art footballistique",
+        slug: "pixel-art-collections"
+      }
     ]
   }
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ligue1Analysis: BlogPost = {
@@ -81,6 +80,5 @@ Innovations Marketing
 - Web3 integration
 - Fan ownership`,
   keywords: "stratégie marque ligue 1, marketing clubs français, branding football français, innovation digitale football, design clubs ligue 1",
-  category: 'logos',
-  subCategory: 'competition-logos' // Ajout de la sous-catégorie manquante
+  category: 'logos'
 };

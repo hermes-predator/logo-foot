@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const judeBellinghamPost: BlogPost = {
@@ -53,7 +52,5 @@ Ces chiffres exceptionnels témoignent de sa polyvalence et de son impact imméd
 - Un volume de jeu impressionnant
 - Une efficacité devant le but
 
-Son aisance technique et sa compréhension tactique en font un joueur complet, capable d'exceller dans toutes les phases de jeu.`,
-  keywords: "jude bellingham, bellingham real madrid, bellingham angleterre, bellingham statistiques, bellingham technique",
-  galleryImageId: 60 // Ajout de l'ID de l'image de galerie manquant
+Son aisance technique et sa compréhension tactique en font un joueur complet, capable d'exceller dans toutes les phases de jeu.`
 };

@@ -1,4 +1,3 @@
-
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -56,7 +55,8 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/category/:category" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/blog/:id-:slug" element={<BlogPost />} />
+        <Route path="/blog/:id" element={<BlogPost />} /> {/* Gardé pour compatibilité */}
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

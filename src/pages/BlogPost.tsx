@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
 import { Clock, Download, ArrowRight, BookOpen, Calendar, Tag, Share2, Home, ChevronRight, ExternalLink, Check, Folder } from 'lucide-react';
 import { blogPosts } from '../data/blog';
@@ -18,11 +18,25 @@ import BlogPostSEO from './BlogPostSEO';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { OptimizedImage } from '@/components/ui/optimized-image';
+import { generatePostUrl } from '../utils/slugUtils';
 
 const BlogPost = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id, slug } = useParams<{ id: string; slug?: string }>();
+  const navigate = useNavigate();
   const post = blogPosts.find(post => post.id === Number(id));
   const currentYear = new Date().getFullYear();
+  
+  // Redirection vers l'URL canonique si nécessaire
+  useEffect(() => {
+    if (post) {
+      const canonicalUrl = generatePostUrl(post.id, post.title);
+      const currentUrl = `/blog/${id}${slug ? `-${slug}` : ''}`;
+      
+      if (currentUrl !== canonicalUrl) {
+        navigate(canonicalUrl, { replace: true });
+      }
+    }
+  }, [id, slug, post, navigate]);
   
   // Barre de progression
   const [scrollProgress, setScrollProgress] = useState(0);

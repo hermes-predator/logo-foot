@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
@@ -49,6 +50,7 @@ import { grasshopperLogoPost } from '../grasshopper-logo';
 import { lausanneSportLogoPost } from '../lausanne-sport-logo';
 import { neuchatelXamaxLogoPost } from '../neuchatel-xamax-logo';
 import { fcSionLogoPost } from '../fc-sion-logo';
+import { paokSaloniqueLogoPost } from '../paok-salonique-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -99,5 +101,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   servetteLogoPost,
   neuchatelXamaxLogoPost,
   fcSionLogoPost,
+  paokSaloniqueLogoPost,
   zurichLogoPost
 ];

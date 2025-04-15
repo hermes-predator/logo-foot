@@ -8,7 +8,10 @@ export function generateSlug(title: string): string {
     .replace(/[\u0300-\u036f]/g, '') // Enlève les accents
     .replace(/[^a-z0-9]+/g, '-') // Remplace les caractères spéciaux par des tirets
     .replace(/^-+|-+$/g, '') // Enlève les tirets au début et à la fin
-    .replace(/-{2,}/g, '-'); // Remplace les multiples tirets consécutifs par un seul
+    .replace(/-{2,}/g, '-') // Remplace les multiples tirets consécutifs par un seul
+    .split('-')
+    .slice(0, 10) // Limite à 10 mots pour garder l'URL courte
+    .join('-');
 }
 
 export function generatePostUrl(id: number, title: string): string {

@@ -9,7 +9,9 @@ export interface BlogPost {
   category: BlogCategory,
   subCategory?: string,
   galleryImageId?: number,
-  readingTime?: number
+  readingTime?: number,
+  previousPostId?: number,
+  nextPostId?: number
 }
 
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;

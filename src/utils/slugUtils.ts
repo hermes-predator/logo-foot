@@ -10,7 +10,12 @@ export function generateSlug(title: string): string {
     .replace(/^-+|-+$/g, '') // Enlève les tirets au début et à la fin
     .replace(/-{2,}/g, '-') // Remplace les multiples tirets consécutifs par un seul
     .split('-')
-    .slice(0, 4) // Limite à 4 mots pour garder l'URL plus courte
+    .filter(word => {
+      // Filtrer les mots vides ou trop courts (articles, prépositions)
+      const stopWords = ['de', 'du', 'des', 'le', 'la', 'les', 'un', 'une', 'et', 'ou', 'a'];
+      return word.length > 1 && !stopWords.includes(word);
+    })
+    .slice(0, 5) // Augmenté à 5 mots pour les titres avec mots-clés importants
     .join('-');
 }
 
@@ -59,5 +64,10 @@ export function isCanonicalPostUrl(url: string, title: string): boolean {
   if (!id) return false;
   
   const canonicalUrl = generatePostUrl(id, title);
-  return url === canonicalUrl;
+  
+  // Normaliser les URLs avant comparaison (enlever trailing slashes, etc.)
+  const normalizedUrl = url.replace(/\/$/, '');
+  const normalizedCanonicalUrl = canonicalUrl.replace(/\/$/, '');
+  
+  return normalizedUrl === normalizedCanonicalUrl;
 }

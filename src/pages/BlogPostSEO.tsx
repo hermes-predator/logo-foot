@@ -7,7 +7,7 @@ import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import CanonicalTag from '../components/SEO/CanonicalTag';
 import HreflangTags from '../components/SEO/HreflangTags';
 import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
-import { generatePostUrl } from '../utils/slugUtils';
+import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -25,6 +25,10 @@ const BlogPostSEO: React.FC = () => {
   
   // URL canonique pour cet article spécifique - utiliser la fonction de génération d'URL
   const canonicalUrl = `https://logo-foot.com${generatePostUrl(post.id, post.title)}`;
+  
+  // Vérifier si l'URL actuelle est l'URL canonique
+  const currentPath = window.location.pathname;
+  const isCanonical = isCanonicalPostUrl(currentPath, post.title);
   
   // Extraire le sujet principal du titre
   const mainSubject = post.title.split(' : ')[0].toLowerCase();
@@ -81,6 +85,14 @@ const BlogPostSEO: React.FC = () => {
         <meta name="citation_publication_date" content={post.date} />
         <meta name="citation_author" content="Logo Foot" />
         <meta name="citation_fulltext_html_url" content={canonicalUrl} />
+        
+        {/* Ajout de balises de pagination si nécessaire (articles en série) */}
+        {post.previousPostId && (
+          <link rel="prev" href={`https://logo-foot.com/blog/${post.previousPostId}`} />
+        )}
+        {post.nextPostId && (
+          <link rel="next" href={`https://logo-foot.com/blog/${post.nextPostId}`} />
+        )}
       </Helmet>
       
       <BlogSchemaMarkup post={post} />

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const bundesligaAnalysis: BlogPost = {
@@ -93,5 +94,7 @@ Futur du Design
 - Global reach
 - Digital transformation`,
   keywords: "design bundesliga, identité visuelle clubs allemands, branding football allemand, marketing bundesliga, analyse logos bundesliga",
-  category: 'logos'
+  category: 'logos',
+  subCategory: 'competition-logos', // Ajout de la sous-catégorie manquante
+  galleryImageId: 6 // Ajout de l'ID de l'image de galerie manquant
 };

@@ -46,6 +46,7 @@ import { youngBoysLogoPost } from '../young-boys-logo';
 import { zurichLogoPost } from '../zurich-logo';
 import { servetteLogoPost } from '../servette-logo';
 import { grasshopperLogoPost } from '../grasshopper-logo';
+import { lausanneSportLogoPost } from '../lausanne-sport-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -92,6 +93,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   viktoriaPlzenLogoPost,
   youngBoysLogoPost,
   grasshopperLogoPost,
+  lausanneSportLogoPost,
   servetteLogoPost,
   zurichLogoPost
 ];

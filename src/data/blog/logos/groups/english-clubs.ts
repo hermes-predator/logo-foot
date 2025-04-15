@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs anglais
@@ -56,7 +57,7 @@ import { wycombeWanderersLogoPost } from '../wycombe-wanderers-logo';
 import { wrexhamLogoPost } from '../wrexham-logo';
 // Remove any duplicate import for queensParkRangersLogoPost if it exists
 import { stevenageLogoPost } from '../stevenage-logo';
-import { burnleyLogoPost } from '../burnley-logo';
+// Supprimé l'import en doublon de burnleyLogoPost
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,

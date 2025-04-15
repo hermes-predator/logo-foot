@@ -14,7 +14,6 @@ import { useSearchParams } from 'react-router-dom';
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
-  const subCategoryParam = searchParams.get('subCategory');
   const [isLoading, setIsLoading] = useState(true);
   const [filteredPosts, setFilteredPosts] = useState(blogPosts);
 
@@ -28,12 +27,6 @@ const Blog = () => {
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
       postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
       console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
-      
-      // Further filter by subcategory if specified
-      if (subCategoryParam) {
-        postsToShow = postsToShow.filter(post => post.subCategory === subCategoryParam);
-        console.log(`Further filtered to ${postsToShow.length} posts in subCategory: ${subCategoryParam}`);
-      }
     }
     
     setFilteredPosts(postsToShow);
@@ -43,7 +36,7 @@ const Blog = () => {
       setIsLoading(false);
     }, 500);
     return () => clearTimeout(timer);
-  }, [categoryParam, subCategoryParam]);
+  }, [categoryParam]);
 
   // Check for invalid posts
   useEffect(() => {
@@ -77,14 +70,6 @@ const Blog = () => {
   const categoryTitle = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
     ? BLOG_CATEGORIES[categoryParam as BlogCategory].name 
     : "Tous les articles";
-
-  // Get the subcategory title if applicable
-  const subCategoryTitle = categoryParam && subCategoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
-    ? BLOG_CATEGORIES[categoryParam as BlogCategory].subCategories.find(sc => sc.id === subCategoryParam)?.name 
-    : null;
-
-  // Combine category and subcategory for display
-  const displayTitle = subCategoryTitle ? `${subCategoryTitle} - ${categoryTitle}` : categoryTitle;
   
   // Get the category description
   const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
@@ -94,10 +79,6 @@ const Blog = () => {
   // Générer des meta descriptions enrichies basées sur la catégorie
   const getEnrichedDescription = () => {
     const baseDescription = `${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`;
-    
-    if (subCategoryParam && categoryParam) {
-      return `${baseDescription} Cette section présente en détail les ${subCategoryTitle?.toLowerCase()} avec des analyses approfondies et des ressources de qualité.`;
-    }
     
     if (categoryParam) {
       switch (categoryParam) {
@@ -121,10 +102,6 @@ const Blog = () => {
   // Générer des mots-clés enrichis basés sur la catégorie
   const getEnrichedKeywords = () => {
     const baseKeywords = `blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot`;
-    
-    if (subCategoryParam && categoryParam) {
-      return `${baseKeywords}, ${subCategoryTitle?.toLowerCase()}, ${categoryTitle.toLowerCase()}, collection logos football, logos officiels`;
-    }
     
     if (categoryParam) {
       switch (categoryParam) {
@@ -150,26 +127,26 @@ const Blog = () => {
   
   return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{`${displayTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
+        <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={`${displayTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
+        <meta property="og:title" content={`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
         <meta property="og:description" content={metaDescription} />
         <meta name="keywords" content={metaKeywords} />
         <meta property="og:type" content="blog" />
-        <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}${subCategoryParam ? `&subCategory=${subCategoryParam}` : ''}` : ''}`} />
+        <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
-        <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}${subCategoryParam ? `&subCategory=${subCategoryParam}` : ''}` : ''}`} />
+        <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${displayTitle} | Blog Logo Foot ${currentYear}`} />
+        <meta name="twitter:title" content={`${categoryTitle} | Blog Logo Foot ${currentYear}`} />
         <meta name="twitter:description" content={metaDescription} />
         
         {/* Nouvelles balises meta pour l'accessibilité et le SEO */}
-        <meta property="article:section" content={displayTitle} />
-        <meta property="article:tag" content={subCategoryParam || categoryParam || 'logos football'} />
+        <meta property="article:section" content={categoryTitle} />
+        <meta property="article:tag" content={categoryParam || 'logos football'} />
         <meta property="article:published_time" content={`${currentYear}-01-01T00:00:00+00:00`} />
         <meta property="article:modified_time" content={new Date().toISOString()} />
-        <meta name="page-topic" content={`Logos de Football ${categoryParam ? '- ' + displayTitle : ''}`} />
+        <meta name="page-topic" content={`Logos de Football ${categoryParam ? '- ' + categoryTitle : ''}`} />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
@@ -178,15 +155,8 @@ const Blog = () => {
         <BlogHeader />
         
         {categoryParam && <div className="pl-4 mb-6">
-            <h2 className="text-2xl font-bold mb-2">{displayTitle}</h2>
+            <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
-            {subCategoryParam && (
-              <div className="mt-2">
-                <span className="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm">
-                  {subCategoryTitle}
-                </span>
-              </div>
-            )}
           </div>}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">

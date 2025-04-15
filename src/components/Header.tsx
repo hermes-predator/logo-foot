@@ -1,5 +1,5 @@
 
-import { FolderClosed } from "lucide-react";
+import { FolderClosed, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -76,4 +76,3 @@ const Header = () => {
 };
 
 export default Header;
-

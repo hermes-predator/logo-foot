@@ -9,6 +9,7 @@ import { estorilPraiaLogoPost } from '../estoril-praia-logo';
 import { famalicaoLogoPost } from '../famalicao-logo';
 import { rioAveLogoPost } from '../rio-ave-logo';
 import { aroucaLogoPost } from '../arouca-logo';
+import { gilVicenteLogoPost } from '../gil-vicente-logo';
 
 export const portugueseClubPosts: BlogPost[] = [
   benficaLogoPost,
@@ -19,5 +20,6 @@ export const portugueseClubPosts: BlogPost[] = [
   estorilPraiaLogoPost,
   famalicaoLogoPost,
   rioAveLogoPost,
-  aroucaLogoPost
+  aroucaLogoPost,
+  gilVicenteLogoPost
 ];

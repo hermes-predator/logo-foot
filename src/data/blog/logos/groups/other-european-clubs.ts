@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
@@ -44,6 +43,7 @@ import { sturmGrazLogoPost } from '../sturm-graz-logo';
 import { steauaBucarestLogoPost } from '../steaua-bucarest-logo';
 import { lechPoznanLogoPost } from '../lech-poznan-logo';
 import { youngBoysLogoPost } from '../young-boys-logo';
+import { zurichLogoPost } from '../zurich-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -88,5 +88,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   sturmGrazLogoPost,
   trabzonsporLogoPost,
   viktoriaPlzenLogoPost,
-  youngBoysLogoPost
+  youngBoysLogoPost,
+  zurichLogoPost
 ];

@@ -7,6 +7,7 @@ export interface BlogPost {
   content: string,
   keywords?: string,
   category: BlogCategory,
+  subCategory?: string, // Adding this back as optional to maintain backward compatibility
   galleryImageId?: number,
   readingTime?: number,
   previousPostId?: number,
@@ -37,4 +38,3 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
-

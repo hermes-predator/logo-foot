@@ -2,219 +2,131 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Clock, Calendar, ExternalLink } from 'lucide-react';
-import { format } from 'date-fns';
+import { BLOG_CATEGORIES } from '../../types/blog';
+import { formatDate } from '../../utils/dateUtils';
+import { TrendingUp, Star, Calendar } from 'lucide-react';
 
 interface RelatedPostsProps {
-  currentPost: BlogPost;
+  post: BlogPost;
   allPosts: BlogPost[];
-  maxPosts?: number;
 }
 
-/**
- * Affiche une liste d'articles liés basée sur la catégorie, les mots-clés et l'analyse contextuelle
- */
-const RelatedPosts = ({ currentPost, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
-  // Fonction améliorée pour calculer le score de pertinence entre deux articles
-  const calculateRelevanceScore = (post: BlogPost): number => {
-    if (post.id === currentPost.id) return -1; // Exclure l'article actuel
-    
-    let score = 0;
-    
-    // Même catégorie = score élevé
-    if (post.category === currentPost.category) {
-      score += 5;
-    }
-    
-    // Même sous-catégorie = score bonus très important
-    if (post.subCategory && post.subCategory === currentPost.subCategory) {
-      score += 8; // Augmenté pour favoriser les articles de même sous-catégorie
-    }
-    
-    // Traitement optimisé des mots-clés
-    const currentKeywords = currentPost.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
-    const postKeywords = post.keywords?.toLowerCase().split(',').map(k => k.trim()) || [];
-    
-    // Recherche de mots-clés communs avec pondération
-    for (const keyword of currentKeywords) {
-      if (postKeywords.includes(keyword)) {
-        score += 2; // Augmenté pour favoriser les correspondances de mots-clés exacts
-      }
-      
-      // Vérification des variations ou sous-chaînes des mots-clés
-      for (const postKeyword of postKeywords) {
-        if (keyword !== postKeyword) {
-          if (keyword.includes(postKeyword) || postKeyword.includes(keyword)) {
-            // Mots-clés partiellement communs (ex: "logo-real-madrid" et "real-madrid")
-            score += 1;
-            break;
-          }
-        }
-      }
-    }
-    
-    // Analyse du titre pour trouver des entités communes (noms propres, équipes, joueurs)
-    const currentTitle = currentPost.title.toLowerCase();
-    const postTitle = post.title.toLowerCase();
-    
-    // Identifier les segments communs potentiels (entités nommées)
-    const currentTitleSegments = currentTitle.split(/[:()-]/).map(s => s.trim());
-    const postTitleSegments = postTitle.split(/[:()-]/).map(s => s.trim());
-    
-    // Vérifier si des segments importants sont communs
-    for (const segment of currentTitleSegments) {
-      if (segment.length > 3 && postTitleSegments.some(s => s.includes(segment))) {
-        score += 4; // Forte correspondance thématique
-        break;
-      }
-    }
-    
-    // Détection d'entités géographiques communes (pays, villes)
-    const countries = ['france', 'italie', 'espagne', 'allemagne', 'angleterre', 'portugal', 'brésil', 'argentine', 'pays-bas', 'belgique'];
-    for (const country of countries) {
-      if ((currentTitle.includes(country) || currentPost.content?.toLowerCase().includes(country)) && 
-          (postTitle.includes(country) || post.content?.toLowerCase().includes(country))) {
-        score += 3; // Bonus pour les articles concernant le même pays
-        break;
-      }
-    }
-    
-    // Détection de compétitions communes
-    const competitions = ['ligue 1', 'ligue 2', 'premier league', 'liga', 'serie a', 'bundesliga', 'champions league', 'europa league', 'coupe du monde'];
-    for (const competition of competitions) {
-      if ((currentTitle.includes(competition) || currentPost.content?.toLowerCase().includes(competition)) && 
-          (postTitle.includes(competition) || post.content?.toLowerCase().includes(competition))) {
-        score += 3; // Bonus pour les articles concernant la même compétition
-        break;
-      }
-    }
-    
-    // Détection de clubs communs majeurs
-    const clubs = ['psg', 'marseille', 'om', 'lyon', 'barcelona', 'real madrid', 'juventus', 'inter', 'milan', 'bayern', 'manchester'];
-    for (const club of clubs) {
-      if ((currentTitle.includes(club) || currentPost.content?.toLowerCase().includes(club)) && 
-          (postTitle.includes(club) || post.content?.toLowerCase().includes(club))) {
-        score += 4; // Bonus important pour les articles concernant le même club
-        break;
-      }
-    }
-    
-    // Bonus pour les articles récents (moins de 60 jours)
-    const postDate = new Date(post.date);
-    const daysDifference = (new Date().getTime() - postDate.getTime()) / (1000 * 3600 * 24);
-    if (daysDifference < 30) {
-      score += 3; // Bonus augmenté pour les articles très récents (< 1 mois)
-    } else if (daysDifference < 90) {
-      score += 1; // Bonus maintenu pour les articles récents (< 3 mois)
-    }
-    
-    // Vérifier si l'article cible est mentionné dans l'article actuel (ou vice versa)
-    if (currentPost.content && post.id && currentPost.content.includes(`blog/${post.id}`)) {
-      score += 10; // Bonus majeur si l'article actuel lie déjà vers l'article cible
-    }
-    
-    // Vérification de la longueur des contenus pour privilégier les articles complets
-    if (post.content && post.content.length > 3000) {
-      score += 2; // Favoriser les articles détaillés
-    }
-    
-    return score;
-  };
+const RelatedPosts = ({ post, allPosts }: RelatedPostsProps) => {
+  // Filter out the current post
+  const otherPosts = allPosts.filter(p => p.id !== post.id);
   
-  // Trouver les articles les plus pertinents avec l'algorithme amélioré
-  const relatedPosts = allPosts
-    .map(post => ({ 
-      post, 
-      score: calculateRelevanceScore(post) 
-    }))
-    .filter(item => item.score > 0) // Uniquement les articles pertinents
-    .sort((a, b) => b.score - a.score) // Tri par score décroissant
-    .slice(0, maxPosts) // Limite au nombre maximum d'articles
-    .map(item => item.post); // Extraire juste les articles
-  
-  if (relatedPosts.length === 0) {
-    return null; // Ne rien afficher s'il n'y a pas d'articles liés
-  }
-  
-  // Ajout d'un lien "Voir tous les articles" vers la page principale du blog
-  const viewAllLink = (
-    <Link 
-      to="/blog" 
-      className="flex items-center justify-center gap-1.5 text-sm text-purple-600 font-medium hover:text-purple-800 transition-colors py-2 border-t border-gray-100 mt-3"
-    >
-      <span>Voir tous les articles</span>
-      <ExternalLink className="h-3.5 w-3.5" />
-    </Link>
+  // First, try to find posts with the same category AND subCategory (if it exists)
+  let similarPosts = otherPosts.filter(p => 
+    p.category === post.category && 
+    (post.subCategory && p.subCategory ? p.subCategory === post.subCategory : true)
   );
   
+  // If we don't have enough, add more from the same category regardless of subCategory
+  if (similarPosts.length < 3) {
+    const additionalPosts = otherPosts
+      .filter(p => p.category === post.category)
+      .filter(p => !similarPosts.find(sp => sp.id === p.id))
+      .slice(0, 3 - similarPosts.length);
+    
+    similarPosts = [...similarPosts, ...additionalPosts];
+  }
+  
+  // If we still don't have enough, add popular posts from any category
+  if (similarPosts.length < 3) {
+    const popularPosts = otherPosts
+      .filter(p => !similarPosts.find(sp => sp.id === p.id))
+      .sort((a, b) => {
+        // Priority to posts with galleryImageId (as a proxy for importance)
+        if (a.galleryImageId && !b.galleryImageId) return -1;
+        if (!a.galleryImageId && b.galleryImageId) return 1;
+        
+        // Then by date (more recent first)
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      })
+      .slice(0, 3 - similarPosts.length);
+    
+    similarPosts = [...similarPosts, ...popularPosts];
+  }
+  
+  // For navigation links (previous/next post)
+  // Check if specific IDs are defined, otherwise use related posts
+  const prevPost = post.previousPostId 
+    ? allPosts.find(p => p.id === post.previousPostId)
+    : similarPosts[0];
+    
+  const nextPost = post.nextPostId 
+    ? allPosts.find(p => p.id === post.nextPostId) 
+    : similarPosts[1];
+  
+  if (similarPosts.length === 0) {
+    return null;
+  }
+  
   return (
-    <div className="mt-8 mb-6">
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl font-bold text-gray-800 border-b-2 border-purple-200 inline-block pb-1">
-          Articles liés
-        </h3>
-        <Link to="/blog" className="text-sm text-purple-600 hover:text-purple-800 transition-colors">
-          Tous les articles →
-        </Link>
-      </div>
+    <div className="mt-8 pt-8 border-t border-gray-200">
+      <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {relatedPosts.map(post => (
-          <Card 
-            key={post.id} 
-            className="hover:shadow-md transition-all duration-200 border border-gray-200 hover:border-purple-200 group"
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {similarPosts.slice(0, 3).map(relatedPost => (
+          <Link 
+            key={relatedPost.id} 
+            to={`/blog/${relatedPost.id}`} 
+            className="group"
           >
-            <CardContent className="p-4">
-              <Link 
-                to={`/blog/${post.id}`} 
-                className="block group"
-              >
-                {/* Vignette avec catégorie */}
-                <div className="relative bg-gray-100 rounded-md mb-3 aspect-video overflow-hidden">
-                  <div className="absolute top-2 left-2 bg-white/80 backdrop-blur-sm text-xs px-2 py-0.5 rounded text-gray-800 font-medium shadow-sm">
-                    {post.subCategory || post.category}
-                  </div>
-                  {post.galleryImageId ? (
-                    <img
-                      src={`/blog-images/${post.id}.png`}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                      <span className="text-gray-400 text-xs">Image non disponible</span>
-                    </div>
-                  )}
-                </div>
-                
-                <h4 className="text-base font-semibold mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors">
-                  {post.title}
-                </h4>
-                
-                <p className="text-xs text-gray-500 line-clamp-2 mb-2">
-                  {post.excerpt}
-                </p>
-                
-                <div className="flex items-center justify-between mt-2 text-xs text-gray-500">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-3 w-3" />
-                    <time dateTime={post.date}>
-                      {format(new Date(post.date), 'dd MMM yyyy')}
-                    </time>
-                  </div>
-                  
-                  <span className="text-purple-600 flex items-center gap-1 font-medium group-hover:translate-x-0.5 transition-transform">
-                    Lire <ArrowRight className="h-3 w-3" />
-                  </span>
-                </div>
-              </Link>
-            </CardContent>
-          </Card>
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow p-4 h-full flex flex-col">
+              <div className="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                <span className="bg-gray-100 px-2 py-1 rounded-full">
+                  {BLOG_CATEGORIES[relatedPost.category].name}
+                </span>
+                <span className="flex items-center gap-1">
+                  <Calendar className="w-3 h-3" />
+                  {formatDate(relatedPost.date)}
+                </span>
+              </div>
+              
+              <h3 className="font-semibold text-base text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors">
+                {relatedPost.title.replace(/\*\*/g, '')}
+              </h3>
+              
+              <p className="text-sm text-gray-500 line-clamp-2 mb-3">
+                {relatedPost.excerpt.replace(/\*\*/g, '')}
+              </p>
+              
+              <div className="mt-auto pt-3 text-xs text-gray-500 flex items-center gap-2">
+                <TrendingUp className="w-3 h-3 text-green-500" />
+                <span>Article populaire</span>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
       
-      {/* Removing the "Découvrir plus d'articles" button */}
+      {/* Navigation between posts */}
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {prevPost && (
+          <Link to={`/blog/${prevPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div className="mt-1">
+              <Star className="w-4 h-4 text-amber-500" />
+            </div>
+            <div>
+              <span className="text-xs text-gray-500 block mb-1">Article précédent</span>
+              <h4 className="font-medium text-sm">{prevPost.title.replace(/\*\*/g, '')}</h4>
+            </div>
+          </Link>
+        )}
+        
+        {nextPost && (
+          <Link to={`/blog/${nextPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div className="mt-1">
+              <Star className="w-4 h-4 text-amber-500" />
+            </div>
+            <div>
+              <span className="text-xs text-gray-500 block mb-1">Article suivant</span>
+              <h4 className="font-medium text-sm">{nextPost.title.replace(/\*\*/g, '')}</h4>
+            </div>
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

@@ -34,8 +34,8 @@ export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
     "logo": imageUrl || "https://logo-foot.com/og-image.png"
   } : null;
 
-  // Get subCategory information
-  const subCategory = post.subCategory ? BLOG_CATEGORIES[post.category].subCategories.find(sc => sc.id === post.subCategory)?.name : '';
+  // We no longer use subCategory information since the structure was simplified
+  const subCategoryInfo = '';
 
   // Get team-specific schema data if applicable
   const teamSpecificData = TeamSpecificSchema({

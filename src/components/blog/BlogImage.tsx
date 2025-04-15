@@ -25,13 +25,9 @@ const BlogImage = ({
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);
   
-  // Ensure we have a proper title attribute for SEO
   const imageTitle = title || alt;
-  
-  // Extract the file name from the src for structured data
   const fileName = src.split('/').pop() || 'image';
 
-  // Protection supplémentaire contre le téléchargement
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -58,7 +54,7 @@ const BlogImage = ({
 
   return (
     <div className="my-5 protected-content" itemScope itemType="https://schema.org/ImageObject" ref={containerRef}>
-      <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
+      <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
           src={isInView ? src : '/placeholder.svg'}

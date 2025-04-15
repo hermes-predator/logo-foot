@@ -32,12 +32,17 @@ export function generatePostUrl(id: number, title: string): string {
 
 // Fonction pour extraire l'ID à partir d'une URL d'article
 export function extractPostIdFromUrl(url: string): number | null {
-  // Essaie de capturer l'ID de l'article à partir de différents formats possibles
-  // Format /blog/123-slug-de-l-article
-  const idWithSlugMatch = url.match(/\/blog\/(\d+)(?:-|$)/);
+  // Nettoyer l'URL (enlever le domaine si présent)
+  const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
   
-  if (idWithSlugMatch && idWithSlugMatch[1]) {
-    return parseInt(idWithSlugMatch[1], 10);
+  // Différents formats possibles: 
+  // 1. "123-slug-title"
+  // 2. "123"
+  // Extraire uniquement la partie numérique au début
+  const match = path.match(/^(\d+)(?:-|$)/);
+  
+  if (match && match[1]) {
+    return parseInt(match[1], 10);
   }
   
   return null;

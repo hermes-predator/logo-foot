@@ -18,25 +18,32 @@ import BlogPostSEO from './BlogPostSEO';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { OptimizedImage } from '@/components/ui/optimized-image';
-import { generatePostUrl } from '../utils/slugUtils';
+import { generatePostUrl, extractPostIdFromUrl } from '../utils/slugUtils';
 
 const BlogPost = () => {
-  const { id, slug } = useParams<{ id: string; slug?: string }>();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const post = blogPosts.find(post => post.id === Number(id));
+  
+  // Extraire l'ID numérique depuis les paramètres d'URL
+  const postId = id ? parseInt(id.split('-')[0], 10) : 0;
+  const post = blogPosts.find(post => post.id === postId);
+  
   const currentYear = new Date().getFullYear();
   
   // Redirection vers l'URL canonique si nécessaire
   useEffect(() => {
     if (post) {
       const canonicalUrl = generatePostUrl(post.id, post.title);
-      const currentUrl = `/blog/${id}${slug ? `-${slug}` : ''}`;
+      const currentPath = `/blog/${id}`;
       
-      if (currentUrl !== canonicalUrl) {
+      // Comparer les chemins uniquement (sans le domaine)
+      if (currentPath !== canonicalUrl) {
         navigate(canonicalUrl, { replace: true });
       }
+    } else {
+      console.error(`Article non trouvé avec l'ID: ${postId}`);
     }
-  }, [id, slug, post, navigate]);
+  }, [id, post, navigate]);
   
   // Barre de progression
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -117,6 +124,7 @@ const BlogPost = () => {
       <div className="min-h-screen bg-gradient-to-b from-white to-purple-50/30">
         <div className="container mx-auto py-12 px-4">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Article non trouvé</h1>
+          <p className="mb-4 text-gray-600">L'article que vous cherchez n'existe pas ou a été déplacé.</p>
           <Link to="/blog" className="text-purple-600 hover:text-purple-700">
             Retourner à la liste des articles
           </Link>

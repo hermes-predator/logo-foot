@@ -15,6 +15,7 @@ import { generatePostUrl } from '../utils/slugUtils';
  */
 const BlogPostSEO: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  // Extraire correctement l'ID numérique de l'URL
   const numericId = id ? parseInt(id.split('-')[0], 10) : 0;
   const post = blogPosts.find(post => post.id === numericId);
   const currentYear = new Date().getFullYear();

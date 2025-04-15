@@ -46,7 +46,7 @@ export const BLOG_CATEGORIES = {
     ]
   },
   technical: {
-    name: 'Techniques de Design',
+    name: 'Techniques',
     description: 'Guides et astuces pour comprendre et maîtriser les techniques de design de logos de football.',
     subCategories: [
       { id: 'design-tutorials', name: 'Tutoriels de Design' },

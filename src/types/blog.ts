@@ -55,7 +55,7 @@ export const BLOG_CATEGORIES = {
     ]
   },
   'pixel-art': {
-    name: 'Pixel Art Football',
+    name: 'Pixel Art',
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.',
     subCategories: [
       { id: 'pixel-tutorials', name: 'Tutoriels Pixel Art' },

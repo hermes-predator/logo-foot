@@ -58,6 +58,7 @@ import { olimpijaLjubljanalogoPost } from '../olimpija-ljubljana-logo';
 import { spartakMoscowLogoPost } from '../spartak-moscow-logo';
 import { krasnodarLogoPost } from '../krasnodar-logo';
 import { cskaMoscowLogoPost } from '../cska-moscow-logo';
+import { lokomotivMoscowLogoPost } from '../lokomotiv-moscow-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -117,5 +118,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   olimpijaLjubljanalogoPost,
   spartakMoscowLogoPost,
   krasnodarLogoPost,
-  cskaMoscowLogoPost
+  cskaMoscowLogoPost,
+  lokomotivMoscowLogoPost
 ];

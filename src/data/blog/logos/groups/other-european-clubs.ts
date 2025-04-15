@@ -52,6 +52,7 @@ import { fcSionLogoPost } from '../fc-sion-logo';
 import { paokSaloniqueLogoPost } from '../paok-salonique-logo';
 import { rosenborgLogoPost } from '../rosenborg-logo';
 import { malmoFFLogoPost } from '../malmo-ff-logo';
+import { spartakTrnavaLogoPost } from '../spartak-trnava-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -105,5 +106,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   paokSaloniqueLogoPost,
   zurichLogoPost,
   rosenborgLogoPost,
+  spartakTrnavaLogoPost,
   malmoFFLogoPost
 ];

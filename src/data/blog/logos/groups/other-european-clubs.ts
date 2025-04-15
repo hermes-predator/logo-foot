@@ -56,6 +56,7 @@ import { spartakTrnavaLogoPost } from '../spartak-trnava-logo';
 // Add the new import
 import { olimpijaLjubljanalogoPost } from '../olimpija-ljubljana-logo';
 import { spartakMoscowLogoPost } from '../spartak-moscow-logo';
+import { krasnodarLogoPost } from '../krasnodar-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -113,5 +114,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   malmoFFLogoPost,
   // Add the new post to the array
   olimpijaLjubljanalogoPost,
-  spartakMoscowLogoPost
+  spartakMoscowLogoPost,
+  krasnodarLogoPost
 ];

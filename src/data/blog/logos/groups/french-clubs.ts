@@ -13,6 +13,7 @@ import { bastiaLogoPost } from '../bastia-logo';
 import { bordeauxLogoPost } from '../bordeaux-logo';
 import { brestLogoPost } from '../brest-logo';
 import { caenLogoPost } from '../caen-logo';
+import { choletLogoPost } from '../cholet-logo';
 import { clermontFootLogoPost } from '../clermont-foot-logo';
 import { concarneauLogoPost } from '../concarneau-logo';
 import { dijonLogoPost } from '../dijon-logo';
@@ -66,6 +67,7 @@ export const frenchClubPosts: BlogPost[] = [
   bordeauxLogoPost,
   brestLogoPost,
   caenLogoPost,
+  choletLogoPost,
   clermontFootLogoPost,
   concarneauLogoPost,
   dijonLogoPost,

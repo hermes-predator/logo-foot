@@ -10,7 +10,7 @@ export function generateSlug(title: string): string {
     .replace(/^-+|-+$/g, '') // Enlève les tirets au début et à la fin
     .replace(/-{2,}/g, '-') // Remplace les multiples tirets consécutifs par un seul
     .split('-')
-    .slice(0, 10) // Limite à 10 mots pour garder l'URL courte
+    .slice(0, 4) // Limite à 4 mots pour garder l'URL plus courte
     .join('-');
 }
 

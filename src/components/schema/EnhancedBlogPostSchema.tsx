@@ -1,4 +1,3 @@
-
 import { BlogPost } from "../../types/blog";
 import { BLOG_CATEGORIES } from "../../types/blog";
 import { TeamSpecificSchema } from "./TeamSpecificSchema";
@@ -14,6 +13,8 @@ interface EnhancedBlogPostSchemaProps {
   publisherName?: string;
   authorName?: string;
   canonicalUrl?: string;
+  siteName?: string;
+  baseUrl?: string;
 }
 
 export const EnhancedBlogPostSchema = ({ 
@@ -22,7 +23,9 @@ export const EnhancedBlogPostSchema = ({
   publisherLogo = "https://logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png",
   publisherName = "FRONT-CLOUD",
   authorName = "FRONT-CLOUD",
-  canonicalUrl
+  canonicalUrl,
+  siteName = "Logo Foot",
+  baseUrl = "https://logo-foot.com"
 }: EnhancedBlogPostSchemaProps) => {
   // Extract the main title from the content
   const mainTitle = post.content.match(/# (.*?)(?:\n|$)/)?.[1] || post.title;

@@ -239,7 +239,7 @@ const BlogPost = () => {
               
               {/* Ajout du composant RelatedPosts pour améliorer le maillage interne */}
               <div className="mt-6 bg-white shadow-md rounded-xl p-3 md:p-5">
-                <RelatedPosts currentPost={post} allPosts={blogPosts} maxPosts={3} />
+                <RelatedPosts post={post} allPosts={blogPosts} maxPosts={3} />
               </div>
             </div>
             

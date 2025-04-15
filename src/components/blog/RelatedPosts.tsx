@@ -9,9 +9,10 @@ import { TrendingUp, Star, Calendar } from 'lucide-react';
 interface RelatedPostsProps {
   post: BlogPost;
   allPosts: BlogPost[];
+  maxPosts?: number;
 }
 
-const RelatedPosts = ({ post, allPosts }: RelatedPostsProps) => {
+const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   // Filter out the current post
   const otherPosts = allPosts.filter(p => p.id !== post.id);
   
@@ -22,17 +23,17 @@ const RelatedPosts = ({ post, allPosts }: RelatedPostsProps) => {
   );
   
   // If we don't have enough, add more from the same category regardless of subCategory
-  if (similarPosts.length < 3) {
+  if (similarPosts.length < maxPosts) {
     const additionalPosts = otherPosts
       .filter(p => p.category === post.category)
       .filter(p => !similarPosts.find(sp => sp.id === p.id))
-      .slice(0, 3 - similarPosts.length);
+      .slice(0, maxPosts - similarPosts.length);
     
     similarPosts = [...similarPosts, ...additionalPosts];
   }
   
   // If we still don't have enough, add popular posts from any category
-  if (similarPosts.length < 3) {
+  if (similarPosts.length < maxPosts) {
     const popularPosts = otherPosts
       .filter(p => !similarPosts.find(sp => sp.id === p.id))
       .sort((a, b) => {
@@ -43,7 +44,7 @@ const RelatedPosts = ({ post, allPosts }: RelatedPostsProps) => {
         // Then by date (more recent first)
         return new Date(b.date).getTime() - new Date(a.date).getTime();
       })
-      .slice(0, 3 - similarPosts.length);
+      .slice(0, maxPosts - similarPosts.length);
     
     similarPosts = [...similarPosts, ...popularPosts];
   }
@@ -67,7 +68,7 @@ const RelatedPosts = ({ post, allPosts }: RelatedPostsProps) => {
       <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {similarPosts.slice(0, 3).map(relatedPost => (
+        {similarPosts.slice(0, maxPosts).map(relatedPost => (
           <Link 
             key={relatedPost.id} 
             to={`/blog/${relatedPost.id}`} 

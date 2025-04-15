@@ -1,90 +1,108 @@
-import { BlogPost } from '../../../../types/blog';
-import { psgLogoPost } from '../psg-logo';
-import { olLogoPost } from '../ol-logo';
-import { asseLogoPost } from '../asse-logo';
-import { loscLogoPost } from '../losc-logo';
-import { fcNantesLogoPost } from '../fc-nantes-logo';
-import { rcLensLogoPost } from '../rc-lens-logo';
-import { ogcNiceLogoPost } from '../ogc-nice-logo';
-import { asMonacoLogoPost } from '../as-monaco-logo';
-import { stadeRennaisLogoPost } from '../stade-rennais-logo';
-import { bordeauxLogoPost } from '../bordeaux-logo';
-import { montpellierLogoPost } from '../montpellier-logo';
-import { toulouseFcLogoPost } from '../toulouse-fc-logo';
-import { stadeDeReimsLogoPost } from '../stade-de-reims-logo';
-import { scBastiaLogoPost } from '../sc-bastia-logo';
-import { evianThononGaillardLogoPost } from '../evian-thonon-gaillard-logo';
-import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
-import { dijonFcoLogoPost } from '../dijon-fco-logo';
-import { eaGuingampLogoPost } from '../ea-guingamp-logo';
-import { angersScoLogoPost } from '../angers-sco-logo';
-import { metzLogoPost } from '../metz-logo';
-import { amiensScLogoPost } from '../amiens-sc-logo';
-import { nimesOlympiqueLogoPost } from '../nimes-olympique-logo';
-import { brestLogoPost } from '../brest-logo';
-import { troyesLogoPost } from '../troyes-logo';
-import { clermontFootLogoPost } from '../clermont-foot-logo';
-import { ancienLogoPsgPost } from '../ancien-logo-psg';
-import { ancienLogoOlPost } from '../ancien-logo-ol';
-import { ancienLogoAssePost } from '../ancien-logo-asse';
-import { ancienLogoFcNantesPost } from '../ancien-logo-fc-nantes';
-import { ancienLogoMontpellierPost } from '../ancien-logo-montpellier';
-import { ancienLogoBordeauxPost } from '../ancien-logo-bordeaux';
-import { ancienLogoStadeRennaisPost } from '../ancien-logo-stade-rennais';
-import { ancienLogoToulousePost } from '../ancien-logo-toulouse';
-import { ancienLogoRcLensPost } from '../ancien-logo-rc-lens';
-import { ancienLogoMonacoPost } from '../ancien-logo-monaco';
-import { ancienLogoNicePost } from '../ancien-logo-nice';
-import { ancienLogoLillePost } from '../ancien-logo-lille';
-import { valenciennesLogoPost } from '../valenciennes-logo';
-import { rouenLogoPost } from '../rouen-logo';
-import { usBoulogneLogoPost } from '../us-boulogne-logo';
-import { stadeBriochinLogoPost } from '../stade-briochin-logo';
-import { avranchesLogoPost } from '../avranches-logo';
-import { choletLogoPost } from '../cholet-logo';
 
+import { BlogPost } from '../../../../types/blog';
+
+// Import French club logo posts
+import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
+import { amiensLogoPost } from '../amiens-logo';
+import { ancienLogoPsgPost } from '../ancien-logo-psg';
+import { ancienLogoOmPost } from '../ancien-logo-om';
+import { angersLogoPost } from '../angers-logo';
+import { annecyLogoPost } from '../annecy-logo';
+import { auxerreLogoPost } from '../auxerre-logo';
+import { bastiaLogoPost } from '../bastia-logo';
+import { bordeauxLogoPost } from '../bordeaux-logo';
+import { brestLogoPost } from '../brest-logo';
+import { caenLogoPost } from '../caen-logo';
+import { clermontFootLogoPost } from '../clermont-foot-logo';
+import { concarneauLogoPost } from '../concarneau-logo';
+import { dijonLogoPost } from '../dijon-logo';
+import { dunkerqueLogoPost } from '../dunkerque-logo';
+import { grenobleLogoPost } from '../grenoble-logo';
+import { guingampLogoPost } from '../guingamp-logo';
+import { lavalLogoPost } from '../laval-logo';
+import { leHavreLogoPost } from '../le-havre-logo';
+import { leMansFCLogoPost } from '../le-mans-logo';
+import { lensLogoPost } from '../lens-logo';
+import { lillLogoPost } from '../lille-logo';
+import { lorientLogoPost } from '../lorient-logo';
+import { lyonLogoPost } from '../lyon-logo';
+import { martiguesLogoPost } from '../martigues-logo';
+import { metzLogoPost } from '../metz-logo';
+import { monacoLogoPost } from '../monaco-logo';
+import { montpellierLogoPost } from '../montpellier-logo';
+import { nancyLogoPost } from '../nancy-logo';
+import { nantesLogoPost } from '../nantes-logo';
+import { niceLogoPost } from '../nice-logo';
+import { nimesLogoPost } from '../nimes-logo';
+import { niortLogoPost } from '../niort-logo';
+import { omLogoPost } from '../om-logo';
+import { orleansLogoPost } from '../orleans-logo';
+import { parisFCLogoPost } from '../paris-fc-logo';
+import { pauFCLogoPost } from '../pau-fc-logo';
+import { psgLogoPost } from '../psg-logo';
+import { redStarLogoPost } from '../red-star-logo';
+import { reimsLogoPost } from '../reims-logo';
+import { rennesLogoPost } from '../rennes-logo';
+import { rodezLogoPost } from '../rodez-logo';
+import { saintEtienneLogoPost } from '../saint-etienne-logo';
+import { sochauxLogoPost } from '../sochaux-logo';
+import { stadeRennaisLogoPost } from '../stade-rennais-logo';
+import { strasbourgLogoPost } from '../strasbourg-logo';
+import { toulouseFCLogoPost } from '../toulouse-fc-logo';
+import { toulouseLogoPost } from '../toulouse-logo';
+import { troyesLogoPost } from '../troyes-logo';
+import { valenciennesLogoPost } from '../valenciennes-logo';
+
+// Group all French club logo posts
 export const frenchClubPosts: BlogPost[] = [
-  psgLogoPost,
-  olLogoPost,
-  asseLogoPost,
-  loscLogoPost,
-  fcNantesLogoPost,
-  rcLensLogoPost,
-  ogcNiceLogoPost,
-  asMonacoLogoPost,
-  stadeRennaisLogoPost,
-  bordeauxLogoPost,
-  montpellierLogoPost,
-  toulouseFcLogoPost,
-  stadeDeReimsLogoPost,
-  scBastiaLogoPost,
-  evianThononGaillardLogoPost,
   acAjaccioLogoPost,
-  dijonFcoLogoPost,
-  eaGuingampLogoPost,
-  angersScoLogoPost,
-  metzLogoPost,
-  amiensScLogoPost,
-  nimesOlympiqueLogoPost,
-  brestLogoPost,
-  troyesLogoPost,
-  clermontFootLogoPost,
+  amiensLogoPost,
   ancienLogoPsgPost,
-  ancienLogoOlPost,
-  ancienLogoAssePost,
-  ancienLogoFcNantesPost,
-  ancienLogoMontpellierPost,
-  ancienLogoBordeauxPost,
-  ancienLogoStadeRennaisPost,
-  ancienLogoToulousePost,
-  ancienLogoRcLensPost,
-  ancienLogoMonacoPost,
-  ancienLogoNicePost,
-  ancienLogoLillePost,
-  valenciennesLogoPost,
-  rouenLogoPost,
-  usBoulogneLogoPost,
-  stadeBriochinLogoPost,
-  avranchesLogoPost,
-  choletLogoPost,
+  ancienLogoOmPost,
+  angersLogoPost,
+  annecyLogoPost,
+  auxerreLogoPost,
+  bastiaLogoPost,
+  bordeauxLogoPost,
+  brestLogoPost,
+  caenLogoPost,
+  clermontFootLogoPost,
+  concarneauLogoPost,
+  dijonLogoPost,
+  dunkerqueLogoPost,
+  grenobleLogoPost,
+  guingampLogoPost,
+  lavalLogoPost,
+  leHavreLogoPost,
+  leMansFCLogoPost,
+  lensLogoPost,
+  lillLogoPost,
+  lorientLogoPost,
+  lyonLogoPost,
+  martiguesLogoPost,
+  metzLogoPost,
+  monacoLogoPost,
+  montpellierLogoPost,
+  nancyLogoPost,
+  nantesLogoPost,
+  niceLogoPost,
+  nimesLogoPost,
+  niortLogoPost,
+  omLogoPost,
+  orleansLogoPost,
+  parisFCLogoPost,
+  pauFCLogoPost,
+  psgLogoPost,
+  redStarLogoPost,
+  reimsLogoPost,
+  rennesLogoPost,
+  rodezLogoPost,
+  saintEtienneLogoPost,
+  sochauxLogoPost,
+  stadeRennaisLogoPost,
+  strasbourgLogoPost,
+  toulouseFCLogoPost,
+  toulouseLogoPost,
+  troyesLogoPost,
+  valenciennesLogoPost
 ];

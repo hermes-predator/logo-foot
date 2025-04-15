@@ -65,6 +65,7 @@ import { dinamoMinskLogoPost } from '../dinamo-minsk-logo';
 
 import { legiaVarsovieLogoPost } from '../legia-varsovie-logo';
 import { bursasporLogoPost } from '../bursaspor-logo';
+import { konyasporLogoPost } from '../konyaspor-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -130,5 +131,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   bateBorisoVLogoPost,
   dinamoMinskLogoPost,
   legiaVarsovieLogoPost,
-  bursasporLogoPost
+  bursasporLogoPost,
+  konyasporLogoPost
 ];

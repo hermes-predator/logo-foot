@@ -3,24 +3,19 @@ import { BlogPost } from '../../../../types/blog';
 import { benficaLogoPost } from '../benfica-logo';
 import { portoLogoPost } from '../porto-logo';
 import { sportingLogoPost } from '../sporting-logo';
-import { sportingBragaLogoPost } from '../sporting-braga-logo';
-import { vitoriaGuimaraesLogoPost } from '../vitoria-guimaraes-logo';
-import { rioAveLogoPost } from '../rio-ave-logo';
-import { famalicaoLogoPost } from '../famalicao-logo';
+import { moreirenseLogoPost } from '../moreirense-logo';
 import { boavistaLogoPost } from '../boavista-logo';
 import { estorilPraiaLogoPost } from '../estoril-praia-logo';
-// Removed the import for tacaDePortugalLogoPost completely
+import { famalicaoLogoPost } from '../famalicao-logo';
+import { rioAveLogoPost } from '../rio-ave-logo';
 
-// Group all Portuguese club logo posts
 export const portugueseClubPosts: BlogPost[] = [
   benficaLogoPost,
   portoLogoPost,
   sportingLogoPost,
-  sportingBragaLogoPost,
-  vitoriaGuimaraesLogoPost,
-  rioAveLogoPost,
-  famalicaoLogoPost,
+  moreirenseLogoPost,
   boavistaLogoPost,
-  estorilPraiaLogoPost
-  // Removed tacaDePortugalLogoPost completely from the array
+  estorilPraiaLogoPost,
+  famalicaoLogoPost,
+  rioAveLogoPost
 ];

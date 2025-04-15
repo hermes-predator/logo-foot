@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const portugueseLogosPost: BlogPost = {
@@ -94,4 +93,3 @@ Qu'il s'agisse de l'aigle majestueux de Benfica, du dragon protecteur de Porto, 
   category: 'logos',
   subCategory: 'club-logos'
 };
-

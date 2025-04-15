@@ -44,6 +44,7 @@ import { steauaBucarestLogoPost } from '../steaua-bucarest-logo';
 import { lechPoznanLogoPost } from '../lech-poznan-logo';
 import { youngBoysLogoPost } from '../young-boys-logo';
 import { zurichLogoPost } from '../zurich-logo';
+import { servetteLogoPost } from '../servette-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -89,5 +90,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   trabzonsporLogoPost,
   viktoriaPlzenLogoPost,
   youngBoysLogoPost,
-  zurichLogoPost
+  zurichLogoPost,
+  servetteLogoPost
 ];

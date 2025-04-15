@@ -61,6 +61,7 @@ import { cskaMoscowLogoPost } from '../cska-moscow-logo';
 import { lokomotivMoscowLogoPost } from '../lokomotiv-moscow-logo';
 import { rubinKazanLogoPost } from '../rubin-kazan-logo';
 import { bateBorisoVLogoPost } from '../bate-borisov-logo';
+import { dinamoMinskLogoPost } from '../dinamo-minsk-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -123,5 +124,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   cskaMoscowLogoPost,
   lokomotivMoscowLogoPost,
   rubinKazanLogoPost,
-  bateBorisoVLogoPost
+  bateBorisoVLogoPost,
+  dinamoMinskLogoPost
 ];

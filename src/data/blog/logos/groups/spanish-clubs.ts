@@ -1,9 +1,9 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs espagnols
 import { barcelonaLogoPost } from '../barcelona-logo';
 import { realMadridLogoPost } from '../real-madrid-logo';
+import { ancienLogoRealMadridPost } from '../ancien-logo-real-madrid';
 import { atleticoMadridLogoPost } from '../atletico-madrid-logo';
 import { sevillaFcLogoPost } from '../sevilla-fc-logo';
 import { valenciaCfLogoPost } from '../valencia-cf-logo';
@@ -33,6 +33,7 @@ import { malagaLogoPost } from '../malaga-logo';
 export const spanishClubPosts: BlogPost[] = [
   barcelonaLogoPost,
   realMadridLogoPost,
+  ancienLogoRealMadridPost,
   atleticoMadridLogoPost,
   sevillaFcLogoPost,
   valenciaCfLogoPost,

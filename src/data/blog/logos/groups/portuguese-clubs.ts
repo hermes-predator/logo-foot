@@ -10,6 +10,7 @@ import { famalicaoLogoPost } from '../famalicao-logo';
 import { rioAveLogoPost } from '../rio-ave-logo';
 import { aroucaLogoPost } from '../arouca-logo';
 import { gilVicenteLogoPost } from '../gil-vicente-logo';
+import { farenseLogoPost } from '../farense-logo';
 
 export const portugueseClubPosts: BlogPost[] = [
   benficaLogoPost,
@@ -21,5 +22,7 @@ export const portugueseClubPosts: BlogPost[] = [
   famalicaoLogoPost,
   rioAveLogoPost,
   aroucaLogoPost,
-  gilVicenteLogoPost
+  gilVicenteLogoPost,
+  farenseLogoPost
 ];
+

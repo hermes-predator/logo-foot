@@ -47,6 +47,7 @@ import { zurichLogoPost } from '../zurich-logo';
 import { servetteLogoPost } from '../servette-logo';
 import { grasshopperLogoPost } from '../grasshopper-logo';
 import { lausanneSportLogoPost } from '../lausanne-sport-logo';
+import { neuchatelXamaxLogoPost } from '../neuchatel-xamax-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -95,5 +96,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   grasshopperLogoPost,
   lausanneSportLogoPost,
   servetteLogoPost,
+  neuchatelXamaxLogoPost,
   zurichLogoPost
 ];

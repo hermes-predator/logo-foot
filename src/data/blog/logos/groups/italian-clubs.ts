@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import Italian club logo posts
@@ -31,8 +30,8 @@ import { sassuoloLogoPost } from '../sassuolo-logo';
 import { speziaLogoPost } from '../spezia-logo';
 import { torinoLogoPost } from '../torino-logo';
 import { udineseLogoPost } from '../udinese-logo';
+import { ancienLogoInterMilanPost } from '../ancien-logo-inter-milan';
 
-// Group all Italian club logo posts
 export const italianClubPosts: BlogPost[] = [
   asRomaLogoPost,
   atalantaLogoPost,
@@ -62,5 +61,6 @@ export const italianClubPosts: BlogPost[] = [
   sassuoloLogoPost,
   speziaLogoPost,
   torinoLogoPost,
-  udineseLogoPost
+  udineseLogoPost,
+  ancienLogoInterMilanPost
 ];

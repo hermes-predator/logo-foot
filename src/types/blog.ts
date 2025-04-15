@@ -6,10 +6,13 @@ export interface BlogPost {
   date: string,
   content: string,
   keywords?: string,
-  category: keyof typeof BLOG_CATEGORIES,
+  category: BlogCategory,
   subCategory?: string,
-  galleryImageId?: number
+  galleryImageId?: number,
+  readingTime?: number
 }
+
+export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
 export const BLOG_CATEGORIES = {
   logos: {

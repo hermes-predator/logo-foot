@@ -51,6 +51,7 @@ import { neuchatelXamaxLogoPost } from '../neuchatel-xamax-logo';
 import { fcSionLogoPost } from '../fc-sion-logo';
 import { paokSaloniqueLogoPost } from '../paok-salonique-logo';
 import { rosenborgLogoPost } from '../rosenborg-logo';
+import { malmoFFLogoPost } from '../malmo-ff-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -103,5 +104,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   fcSionLogoPost,
   paokSaloniqueLogoPost,
   zurichLogoPost,
-  rosenborgLogoPost
+  rosenborgLogoPost,
+  malmoFFLogoPost
 ];

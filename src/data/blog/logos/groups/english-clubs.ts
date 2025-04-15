@@ -56,6 +56,7 @@ import { wycombeWanderersLogoPost } from '../wycombe-wanderers-logo';
 import { wrexhamLogoPost } from '../wrexham-logo';
 // Remove any duplicate import for queensParkRangersLogoPost if it exists
 import { stevenageLogoPost } from '../stevenage-logo';
+import { burnleyLogoPost } from '../burnley-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,

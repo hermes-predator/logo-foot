@@ -1,13 +1,16 @@
+
 import React from 'react';
-import { ArrowRight, BookOpen, Folder } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
+  const activeSubCategory = searchParams.get('subCategory');
 
   // Fonction pour déterminer le style de la catégorie selon son état actif
   const getCategoryStyle = (category: string | null) => {
@@ -17,6 +20,14 @@ const BlogHeader = () => {
     }
     // Style pour les autres catégories
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
+  };
+
+  // Fonction pour déterminer le style des sous-catégories
+  const getSubCategoryStyle = (subCategory: string) => {
+    if (subCategory === activeSubCategory) {
+      return "px-3 py-1 bg-primary/10 text-primary font-medium rounded-full text-xs transition-colors shadow-sm";
+    }
+    return "px-3 py-1 bg-gray-50 hover:bg-gray-100 rounded-full text-xs transition-colors";
   };
   
   return <div className="max-w-4xl mb-6 pl-4">
@@ -51,23 +62,39 @@ const BlogHeader = () => {
               <Link to="/blog" className={getCategoryStyle(null)}>
                 Tout
               </Link>
-              <Link to="/blog?category=logos" className={getCategoryStyle('logos')}>
-                Logos
-              </Link>
-              <Link to="/blog?category=players" className={getCategoryStyle('players')}>
-                Joueurs
-              </Link>
-              <Link to="/blog?category=history" className={getCategoryStyle('history')}>
-                Histoire
-              </Link>
-              <Link to="/blog?category=technical" className={getCategoryStyle('technical')}>
-                Technique
-              </Link>
-              <Link to="/blog?category=pixel-art" className={getCategoryStyle('pixel-art')}>
-                Pixel Art
-              </Link>
+              {Object.entries(BLOG_CATEGORIES).map(([key, category]) => (
+                <Link 
+                  key={key} 
+                  to={`/blog?category=${key}`} 
+                  className={getCategoryStyle(key)}
+                >
+                  {category.name}
+                </Link>
+              ))}
             </div>
           </div>
+          
+          {/* Affichage des sous-catégories si une catégorie est sélectionnée */}
+          {activeCategory && BLOG_CATEGORIES[activeCategory as keyof typeof BLOG_CATEGORIES] && 
+            BLOG_CATEGORIES[activeCategory as keyof typeof BLOG_CATEGORIES].subCategories.length > 0 && (
+            <div className="mt-2 mb-3 border-t border-gray-100 pt-3">
+              <div className="flex items-center gap-2 mb-2">
+                <ChevronDown className="h-3 w-3 text-gray-400" />
+                <span className="text-xs text-gray-500">Affiner par sous-catégorie</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {BLOG_CATEGORIES[activeCategory as keyof typeof BLOG_CATEGORIES].subCategories.map((subCategory) => (
+                  <Link 
+                    key={subCategory.id} 
+                    to={`/blog?category=${activeCategory}&subCategory=${subCategory.id}`} 
+                    className={getSubCategoryStyle(subCategory.id)}
+                  >
+                    {subCategory.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
           
           <div className="bg-amber-50 rounded-xl p-5 border border-amber-200/70 shadow-inner py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">

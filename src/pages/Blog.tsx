@@ -14,26 +14,36 @@ import { useSearchParams } from 'react-router-dom';
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const subCategoryParam = searchParams.get('subCategory');
   const [isLoading, setIsLoading] = useState(true);
   const [filteredPosts, setFilteredPosts] = useState(blogPosts);
 
   // Filter posts based on URL parameters
   useEffect(() => {
     setIsLoading(true);
+
+    let postsToShow = blogPosts;
+    
+    // Filter by main category if specified
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-      const categoryPosts = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
-      setFilteredPosts(categoryPosts);
-      console.log(`Filtered to ${categoryPosts.length} posts in category: ${categoryParam}`);
-    } else {
-      setFilteredPosts(blogPosts);
+      postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
+      console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
+      
+      // Further filter by subcategory if specified
+      if (subCategoryParam) {
+        postsToShow = postsToShow.filter(post => post.subCategory === subCategoryParam);
+        console.log(`Further filtered to ${postsToShow.length} posts in subCategory: ${subCategoryParam}`);
+      }
     }
+    
+    setFilteredPosts(postsToShow);
 
     // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 500);
     return () => clearTimeout(timer);
-  }, [categoryParam]);
+  }, [categoryParam, subCategoryParam]);
 
   // Check for invalid posts
   useEffect(() => {
@@ -64,14 +74,31 @@ const Blog = () => {
   const currentYear = new Date().getFullYear();
 
   // Get the category title for the page
-  const categoryTitle = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] ? BLOG_CATEGORIES[categoryParam as BlogCategory].name : "Tous les articles";
+  const categoryTitle = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
+    ? BLOG_CATEGORIES[categoryParam as BlogCategory].name 
+    : "Tous les articles";
 
+  // Get the subcategory title if applicable
+  const subCategoryTitle = categoryParam && subCategoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
+    ? BLOG_CATEGORIES[categoryParam as BlogCategory].subCategories.find(sc => sc.id === subCategoryParam)?.name 
+    : null;
+
+  // Combine category and subcategory for display
+  const displayTitle = subCategoryTitle ? `${subCategoryTitle} - ${categoryTitle}` : categoryTitle;
+  
   // Get the category description
-  const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] ? BLOG_CATEGORIES[categoryParam as BlogCategory].description : "Explorez tous nos articles sur les logos de football";
+  const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
+    ? BLOG_CATEGORIES[categoryParam as BlogCategory].description 
+    : "Explorez tous nos articles sur les logos de football";
 
   // Générer des meta descriptions enrichies basées sur la catégorie
   const getEnrichedDescription = () => {
     const baseDescription = `${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`;
+    
+    if (subCategoryParam && categoryParam) {
+      return `${baseDescription} Cette section présente en détail les ${subCategoryTitle?.toLowerCase()} avec des analyses approfondies et des ressources de qualité.`;
+    }
+    
     if (categoryParam) {
       switch (categoryParam) {
         case 'logos':
@@ -94,6 +121,11 @@ const Blog = () => {
   // Générer des mots-clés enrichis basés sur la catégorie
   const getEnrichedKeywords = () => {
     const baseKeywords = `blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot`;
+    
+    if (subCategoryParam && categoryParam) {
+      return `${baseKeywords}, ${subCategoryTitle?.toLowerCase()}, ${categoryTitle.toLowerCase()}, collection logos football, logos officiels`;
+    }
+    
     if (categoryParam) {
       switch (categoryParam) {
         case 'logos':
@@ -118,26 +150,26 @@ const Blog = () => {
   
   return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
-        <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
+        <title>{`${displayTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
+        <meta property="og:title" content={`${displayTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`} />
         <meta property="og:description" content={metaDescription} />
         <meta name="keywords" content={metaKeywords} />
         <meta property="og:type" content="blog" />
-        <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
+        <meta property="og:url" content={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}${subCategoryParam ? `&subCategory=${subCategoryParam}` : ''}` : ''}`} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
-        <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}` : ''}`} />
+        <link rel="canonical" href={`https://logo-foot.com/blog${categoryParam ? `?category=${categoryParam}${subCategoryParam ? `&subCategory=${subCategoryParam}` : ''}` : ''}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${categoryTitle} | Blog Logo Foot ${currentYear}`} />
+        <meta name="twitter:title" content={`${displayTitle} | Blog Logo Foot ${currentYear}`} />
         <meta name="twitter:description" content={metaDescription} />
         
         {/* Nouvelles balises meta pour l'accessibilité et le SEO */}
-        <meta property="article:section" content={categoryTitle} />
-        <meta property="article:tag" content={categoryParam || 'logos football'} />
+        <meta property="article:section" content={displayTitle} />
+        <meta property="article:tag" content={subCategoryParam || categoryParam || 'logos football'} />
         <meta property="article:published_time" content={`${currentYear}-01-01T00:00:00+00:00`} />
         <meta property="article:modified_time" content={new Date().toISOString()} />
-        <meta name="page-topic" content={`Logos de Football ${categoryParam ? '- ' + categoryTitle : ''}`} />
+        <meta name="page-topic" content={`Logos de Football ${categoryParam ? '- ' + displayTitle : ''}`} />
       </Helmet>
       <BlogSchemaMarkup isBlogList />
       
@@ -146,9 +178,15 @@ const Blog = () => {
         <BlogHeader />
         
         {categoryParam && <div className="pl-4 mb-6">
-            <h2 className="text-2xl font-bold mb-2">{categoryTitle || "Joueurs"}</h2>
+            <h2 className="text-2xl font-bold mb-2">{displayTitle}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
-            {categoryParam === 'pixel-art'}
+            {subCategoryParam && (
+              <div className="mt-2">
+                <span className="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm">
+                  {subCategoryTitle}
+                </span>
+              </div>
+            )}
           </div>}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">

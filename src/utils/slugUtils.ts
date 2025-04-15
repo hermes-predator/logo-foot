@@ -15,7 +15,7 @@ export function generateSlug(title: string): string {
       const stopWords = ['de', 'du', 'des', 'le', 'la', 'les', 'un', 'une', 'et', 'ou', 'a'];
       return word.length > 1 && !stopWords.includes(word);
     })
-    .slice(0, 5) // Augmenté à 5 mots pour les titres avec mots-clés importants
+    .slice(0, 3) // Limité à 3 mots comme demandé
     .join('-');
 }
 

@@ -1,4 +1,3 @@
-
 import { Folder, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -37,10 +36,10 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between gap-8">
         <Link 
           to="/" 
-          className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
+          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
         >
         <Folder 
-          className="w-6 h-6 text-gray-700 fill-purple-500/20" 
+          className="w-6 h-6 text-gray-800 fill-gray-900/10" 
           strokeWidth={1.5}
           absoluteStrokeWidth
         />
@@ -53,7 +52,7 @@ const Header = () => {
           className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
             isActive('/') 
               ? 'font-medium bg-gray-100/80' 
-              : 'text-gray-700 hover:text-purple-600'
+              : 'text-gray-700 hover:text-gray-900'
           }`}
         >
           <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
@@ -64,7 +63,7 @@ const Header = () => {
           className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
             isActive('/blog') 
               ? 'font-medium bg-gray-100/80' 
-              : 'text-gray-700 hover:text-purple-600'
+              : 'text-gray-700 hover:text-gray-900'
           }`}
         >
           <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />

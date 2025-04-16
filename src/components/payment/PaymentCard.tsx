@@ -10,6 +10,7 @@ import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 import { useIsSmallMobile } from '@/hooks/use-mobile';
 import PaymentCardBack from './PaymentCardBack';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface PaymentCardProps {
   recentBuyers: number;
@@ -41,13 +42,22 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           </div>
           
           {/* Bouton œil/retour dans le coin supérieur droit */}
-          <button 
-            onClick={handleFlip}
-            className="absolute top-[6.3rem] right-8 z-20 inline-flex items-center justify-center w-10 h-10 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
-            aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
-          >
-            <Eye className="h-4 w-4" />
-          </button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button 
+                  onClick={handleFlip}
+                  className="absolute top-[6.3rem] right-8 z-20 inline-flex items-center justify-center w-12 h-12 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
+                  aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
+                >
+                  <Eye className="h-6 w-6" />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Aperçu du fichier</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           
           {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
           

@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Eye, EyeOff, ArrowLeft } from 'lucide-react';
+import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
@@ -75,7 +74,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           </div>
         </div>
         
-        <PaymentCardBack />
+        <PaymentCardBack onFlipBack={handleFlip} />
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { ArrowLeft } from 'lucide-react';
 
-const PaymentCardBack = () => {
+interface PaymentCardBackProps {
+  onFlipBack: () => void;
+}
+
+const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoError, setVideoError] = useState(false);
 
@@ -17,6 +22,15 @@ const PaymentCardBack = () => {
 
   return (
     <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)]">
+      {/* Bouton de retour dans le coin supérieur droit */}
+      <button 
+        onClick={onFlipBack}
+        className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors duration-300 shadow-sm hover:shadow-md"
+        aria-label="Retour à la vue principale"
+      >
+        <ArrowLeft className="w-5 h-5 text-blue-600" />
+      </button>
+
       {!videoError ? (
         <video 
           ref={videoRef}

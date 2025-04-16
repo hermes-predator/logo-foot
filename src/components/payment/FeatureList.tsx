@@ -33,8 +33,8 @@ const FeatureList = () => {
       iconColor: "text-emerald-600"
     },
     {
-      icon: Star,  // Changed back to Star from Folder
-      text: "Fichier rare sur le marché",
+      icon: Star,
+      text: "Fichier unique sur le marché", // Updated text here
       className: "bg-blue-100",
       iconColor: "text-blue-600"
     },

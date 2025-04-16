@@ -43,7 +43,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Bouton œil/retour dans le coin supérieur droit */}
           <button 
             onClick={handleFlip}
-            className="absolute top-20 right-4 z-20 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors duration-300 shadow-sm hover:shadow-md"
+            className="absolute top-20 right-8 z-20 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors duration-300 shadow-sm hover:shadow-md"
             aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
           >
             <Eye className="w-5 h-5 text-blue-600" />

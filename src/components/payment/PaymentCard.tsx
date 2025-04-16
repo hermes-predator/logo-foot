@@ -42,26 +42,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             <Folder size={75} />
           </div>
           
-          {/* Bouton œil/retour dans le coin supérieur droit */}
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button 
-                  onClick={handleFlip}
-                  className="absolute top-[6.3rem] right-8 z-20 inline-flex items-center justify-center w-12 h-12 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
-                  aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
-                >
-                  <Eye className="h-5 w-5" />
-                </button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Aperçu du fichier</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-          
-          {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
-          
           <SparkleEffects />
           <RecentBuyersBadge count={recentBuyers} />
           

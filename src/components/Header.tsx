@@ -1,5 +1,4 @@
-
-import { Library, Home, BookOpen } from "lucide-react";
+import { Folder, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -39,7 +38,7 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
         >
-        <Library 
+        <Folder 
           className="w-6 h-6 text-gray-800 fill-gray-900/10" 
           strokeWidth={1.5}
           absoluteStrokeWidth

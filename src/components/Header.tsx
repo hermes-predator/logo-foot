@@ -38,40 +38,41 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
-          <Folder 
-            className="w-6 h-6 text-gray-700 fill-gray-700/20" 
-            strokeWidth={1.5}
-          />
-          <span className="font-medium">logo-foot.com</span>
+        <Folder 
+          className="w-6 h-6 text-gray-700 fill-gray-700/20 hover:scale-110 transition-transform" 
+          strokeWidth={1.5}
+          absoluteStrokeWidth
+        />
+        <span className="font-medium">logo-foot.com</span>
+      </Link>
+      
+      <div className="flex items-center gap-8">
+        <Link 
+          to="/" 
+          className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
+            isActive('/') 
+              ? 'font-medium bg-gray-100/80' 
+              : 'text-gray-700 hover:text-purple-600'
+          }`}
+        >
+          <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
+          <span>Accueil</span>
         </Link>
-        
-        <div className="flex items-center gap-8">
-          <Link 
-            to="/" 
-            className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
-              isActive('/') 
-                ? 'font-medium bg-gray-100/80' 
-                : 'text-gray-700 hover:text-purple-600'
-            }`}
-          >
-            <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
-            <span>Accueil</span>
-          </Link>
-          <Link 
-            to="/blog" 
-            className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
-              isActive('/blog') 
-                ? 'font-medium bg-gray-100/80' 
-                : 'text-gray-700 hover:text-purple-600'
-            }`}
-          >
-            <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
-            <span>Blog</span>
-          </Link>
-        </div>
-      </nav>
-    </header>
-  );
+        <Link 
+          to="/blog" 
+          className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
+            isActive('/blog') 
+              ? 'font-medium bg-gray-100/80' 
+              : 'text-gray-700 hover:text-purple-600'
+          }`}
+        >
+          <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
+          <span>Blog</span>
+        </Link>
+      </div>
+    </nav>
+  </header>
+);
 };
 
 export default Header;

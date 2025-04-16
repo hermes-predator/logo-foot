@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Users, Folder, Eye } from 'lucide-react';
+import { Users, Folder, Eye, Download } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
@@ -17,6 +17,7 @@ interface PaymentCardProps {
 
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [downloadCount, setDownloadCount] = React.useState(25287);
   
   React.useEffect(() => {
     measurePerformance('payment-card-render', () => {
@@ -64,6 +65,34 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             <FeatureList />
             <PricingBlock />
             <PaymentButton />
+            
+            {/* Payment trust indicators */}
+            <div className="bg-white/90 rounded-lg p-4 space-y-4 backdrop-blur-sm shadow-md mt-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-gray-500">Paiement sécurisé via</span>
+                  <img 
+                    src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
+                    alt="SumUp Secure Payment" 
+                    className="h-5 pointer-events-auto" 
+                  />
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/34a0dfdd-f40d-4cc1-bb23-6ad3f96a2281.png" 
+                  alt="Cartes de paiement acceptées" 
+                  className="h-10 pointer-events-auto" 
+                />
+              </div>
+              
+              {/* Compteur de téléchargement */}
+              <div className="flex items-center justify-center gap-2 p-1.5 bg-blue-50 rounded-lg">
+                <Download className="h-4 w-4 text-blue-600" />
+                <span className="text-sm text-blue-600 font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
+              </div>
+            </div>
           </div>
         </div>
 

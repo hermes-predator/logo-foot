@@ -3,7 +3,7 @@ import React from 'react';
 
 const PaymentCardBack = () => {
   return (
-    <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+    <div className="absolute inset-0 w-full h-full backface-hidden [transform:rotateY(180deg)]">
       <video 
         className="w-full h-full object-cover rounded-2xl"
         autoPlay 

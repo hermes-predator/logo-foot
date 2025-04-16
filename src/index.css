@@ -381,7 +381,8 @@ pre code {
   transform-style: preserve-3d;
 }
 
-[backface-visibility:hidden] {
+/* Fixed the improper attribute selector syntax */
+.backface-hidden {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

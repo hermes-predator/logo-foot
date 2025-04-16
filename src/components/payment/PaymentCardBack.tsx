@@ -9,7 +9,7 @@ interface PaymentCardBackProps {
 
 const PaymentCardBack = ({ onClose }: PaymentCardBackProps) => {
   return (
-    <div className="absolute inset-0 bg-white rounded-2xl p-4 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+    <div className="absolute inset-0 bg-white rounded-2xl p-4 [transform:rotateY(180deg)] backface-hidden">
       <div className="relative h-full">
         <Button
           variant="ghost"

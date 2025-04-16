@@ -28,13 +28,13 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Gain de confiance et de temps",
+      text: "Gain de temps conséquent",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },
     {
       icon: Star,
-      text: "Fichier unique sur le marché", // Updated text here
+      text: "Fichier unique sur le marché",
       className: "bg-blue-100",
       iconColor: "text-blue-600"
     },

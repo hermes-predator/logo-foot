@@ -70,6 +70,7 @@ import { gaziantepFkLogoPost } from '../gaziantep-fk-logo';
 import { sivassporLogoPost } from '../sivasspor-logo';
 import { antalyasporLogoPost } from '../antalyaspor-logo';
 import { jsKabylieLogoPost } from '../js-kabylie-logo';
+import { usmAlgerLogoPost } from '../usm-alger-logo';
 
 // Group all other European club logo posts
 export const otherEuropeanClubPosts: BlogPost[] = [
@@ -140,5 +141,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   gaziantepFkLogoPost,
   sivassporLogoPost,
   antalyasporLogoPost,
-  jsKabylieLogoPost
+  jsKabylieLogoPost,
+  usmAlgerLogoPost
 ];

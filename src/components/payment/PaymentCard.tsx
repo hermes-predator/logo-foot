@@ -38,7 +38,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-2 top-2 z-10 hover:bg-blue-50/80"
+            className="absolute right-2 top-4 z-10 hover:bg-blue-50/80"
             onClick={() => setIsFlipped(true)}
           >
             <Eye className="h-4 w-4" />

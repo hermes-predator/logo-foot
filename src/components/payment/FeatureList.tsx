@@ -37,7 +37,7 @@ const FeatureList = () => {
     },
     {
       icon: Check,
-      text: "Renforcement de votre patrimoine numérique",
+      text: "Renforcement de votre patrimoine digital",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

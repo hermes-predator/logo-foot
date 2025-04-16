@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -45,7 +46,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           </button>
           
           {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}
-          <div className="absolute top-14 right-5 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block">
+          <div className="absolute top-14 right-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block">
             <Folder size={75} />
           </div>
           

@@ -33,7 +33,7 @@ interface TrustCardProps {
 const TrustCard = ({ icon, title, description }: TrustCardProps) => {
   return (
     <div 
-      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-md hover:border-blue-200/70 will-change-transform group relative overflow-hidden"
+      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:border-blue-200/70 will-change-transform group relative overflow-hidden"
       role="article"
       aria-label={`Information sur ${title}`}
     >
@@ -41,7 +41,7 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-100/30 to-blue-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
       
       {/* Icône avec animation améliorée - suppression de l'effet scale */}
-      <div className="w-10 h-10 text-blue-600 mb-3 flex items-center justify-center bg-blue-100/80 rounded-full p-2 shadow-sm transition-all duration-300 group-hover:bg-blue-100 group-hover:text-blue-700 relative z-10" aria-hidden="true">
+      <div className="w-10 h-10 text-blue-600 mb-3 flex items-center justify-center bg-blue-100/80 rounded-full p-2 transition-all duration-300 group-hover:bg-blue-100 group-hover:text-blue-700 relative z-10" aria-hidden="true">
         {icon}
       </div>
       

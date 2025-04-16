@@ -1,3 +1,4 @@
+
 import { Folder, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -39,7 +40,7 @@ const Header = () => {
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
         <Folder 
-          className="w-6 h-6 text-gray-700 fill-gray-700/20 hover:scale-110 transition-transform" 
+          className="w-6 h-6 text-gray-700 fill-purple-500/20" 
           strokeWidth={1.5}
           absoluteStrokeWidth
         />
@@ -72,7 +73,7 @@ const Header = () => {
       </div>
     </nav>
   </header>
-);
+  );
 };
 
 export default Header;

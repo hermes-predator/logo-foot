@@ -1,5 +1,5 @@
 
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -8,9 +8,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
-// Importation paresseuse (lazy) des effets pour ne pas bloquer le rendu initial
-const ButtonEffects = lazy(() => import('./ButtonEffects'));
+import ButtonEffects from './ButtonEffects';
 
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -42,10 +40,8 @@ const PaymentButton = () => {
             aria-disabled={isProcessing}
             aria-describedby="payment-button-description"
           >
-            {/* Effet de brillance optimisé - chargé paresseusement */}
-            <Suspense fallback={null}>
-              <ButtonEffects />
-            </Suspense>
+            {/* Effet de brillance - maintenant importé directement sans lazy loading */}
+            <ButtonEffects />
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
               <ShoppingCart 

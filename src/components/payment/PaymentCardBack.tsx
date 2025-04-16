@@ -7,7 +7,7 @@ const PaymentCardBack = () => {
 
   return (
     <div className="absolute inset-0 w-full h-full backface-hidden [transform:rotateY(180deg)]">
-      <div className="w-full h-full bg-gradient-to-b from-purple-500 to-indigo-600 rounded-2xl overflow-hidden relative p-6 flex flex-col justify-between">
+      <div className="w-full h-full bg-gradient-to-b from-purple-500 to-indigo-600 rounded-2xl overflow-hidden relative">
         <video 
           className="absolute top-0 left-0 w-full h-full object-cover opacity-70"
           autoPlay 
@@ -19,10 +19,10 @@ const PaymentCardBack = () => {
           Votre navigateur ne supporte pas les vidéos.
         </video>
 
-        {/* Content overlay */}
-        <div className="relative z-10 flex-1 flex flex-col justify-end">
+        {/* Content overlay - positioned absolutely to ensure visibility */}
+        <div className="absolute inset-x-0 bottom-0 p-6 z-10">
           {/* Payment trust indicators */}
-          <div className="bg-white/90 rounded-lg p-4 space-y-4 backdrop-blur-sm">
+          <div className="bg-white/90 rounded-lg p-4 space-y-4 backdrop-blur-sm shadow-md">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium text-gray-500">Paiement sécurisé via</span>

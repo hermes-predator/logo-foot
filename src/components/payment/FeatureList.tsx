@@ -1,5 +1,5 @@
 import React from 'react';
-import { Folder, Check, Wallet, Download, Shield } from 'lucide-react';
+import { Folder, TrendingUp, Wallet, Download, Truck } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -26,7 +26,7 @@ const FeatureList = () => {
       text: "Fichier de 8 600+ ressources"
     },
     {
-      icon: Check,
+      icon: TrendingUp,
       text: "Gain de confiance et de temps",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
@@ -36,7 +36,7 @@ const FeatureList = () => {
       text: "Prix accessible"
     },
     {
-      icon: Check,
+      icon: Truck,
       text: "Renforcement de votre patrimoine digital",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
@@ -46,7 +46,7 @@ const FeatureList = () => {
       text: "Téléchargement instantané"
     },
     {
-      icon: Check,
+      icon: TrendingUp,
       text: "Valeur à votre actif",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"

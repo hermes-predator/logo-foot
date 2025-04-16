@@ -1,7 +1,7 @@
-import { Folder, Home, BookOpen } from "lucide-react";
+
+import { FolderClosed, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import FolderIcon from "./icons/FolderIcon";
 
 const Header = () => {
   const location = useLocation();
@@ -37,36 +37,39 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between gap-8">
         <Link 
           to="/" 
-          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+          className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
-          <FolderIcon className="w-6 h-6" />
+          <FolderClosed 
+            className="w-6 h-6 text-purple-600 fill-purple-100" 
+            strokeWidth={1.5}
+          />
           <span className="font-medium">logo-foot.com</span>
         </Link>
         
         <div className="flex items-center gap-8">
-        <Link 
-          to="/" 
-          className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
-            isActive('/') 
-              ? 'font-medium bg-gray-100/80' 
-              : 'text-gray-700 hover:text-gray-900'
-          }`}
-        >
-          <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
-          <span>Accueil</span>
-        </Link>
-        <Link 
-          to="/blog" 
-          className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
-            isActive('/blog') 
-              ? 'font-medium bg-gray-100/80' 
-              : 'text-gray-700 hover:text-gray-900'
-          }`}
-        >
-          <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
-          <span>Blog</span>
-        </Link>
-      </div>
+          <Link 
+            to="/" 
+            className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
+              isActive('/') 
+                ? 'font-medium bg-gray-100/80' 
+                : 'text-gray-700 hover:text-purple-600'
+            }`}
+          >
+            <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
+            <span>Accueil</span>
+          </Link>
+          <Link 
+            to="/blog" 
+            className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
+              isActive('/blog') 
+                ? 'font-medium bg-gray-100/80' 
+                : 'text-gray-700 hover:text-purple-600'
+            }`}
+          >
+            <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
+            <span>Blog</span>
+          </Link>
+        </div>
       </nav>
     </header>
   );

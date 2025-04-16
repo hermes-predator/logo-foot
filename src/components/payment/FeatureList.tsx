@@ -27,7 +27,7 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Gain de temps considérable",
+      text: "Gain de confiance et temps considérable",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

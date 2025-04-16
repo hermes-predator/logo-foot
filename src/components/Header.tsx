@@ -1,6 +1,7 @@
 import { Folder, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import FolderIcon from "./icons/FolderIcon";
 
 const Header = () => {
   const location = useLocation();
@@ -38,15 +39,11 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
         >
-        <Folder 
-          className="w-6 h-6 text-gray-800 fill-gray-900/10" 
-          strokeWidth={1.5}
-          absoluteStrokeWidth
-        />
-        <span className="font-medium">logo-foot.com</span>
-      </Link>
-      
-      <div className="flex items-center gap-8">
+          <FolderIcon className="w-6 h-6" />
+          <span className="font-medium">logo-foot.com</span>
+        </Link>
+        
+        <div className="flex items-center gap-8">
         <Link 
           to="/" 
           className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
@@ -70,8 +67,8 @@ const Header = () => {
           <span>Blog</span>
         </Link>
       </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
   );
 };
 

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Truck, Download, Zap } from 'lucide-react';
 
@@ -33,7 +34,7 @@ const FeatureList = () => {
     },
     {
       icon: Truck,
-      text: "Ressources optimisées et triées"  // Modification ici
+      text: "Pack à forte valeur d'usage"
     },
     {
       icon: TrendingUp,

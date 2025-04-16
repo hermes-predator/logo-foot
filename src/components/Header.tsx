@@ -1,7 +1,6 @@
 
-import { CustomFolderIcon } from './icons/CustomFolderIcon';
+import { FolderClosed, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, BookOpen } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -38,10 +37,10 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between gap-8">
         <Link 
           to="/" 
-          className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+          className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
-          <CustomFolderIcon 
-            className="text-black fill-gray-300" 
+          <FolderClosed 
+            className="w-6 h-6 text-purple-600 fill-purple-100" 
             strokeWidth={1.5}
           />
           <span className="font-medium">logo-foot.com</span>

@@ -1,19 +1,34 @@
 
 import React from 'react';
+import { X } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
-const PaymentCardBack = () => {
+interface PaymentCardBackProps {
+  onClose: () => void;
+}
+
+const PaymentCardBack = ({ onClose }: PaymentCardBackProps) => {
   return (
-    <div className="absolute inset-0 w-full h-full backface-hidden [transform:rotateY(180deg)]">
-      <div className="w-full h-full bg-gradient-to-b from-purple-500 to-indigo-600 rounded-2xl overflow-hidden relative">
+    <div className="absolute inset-0 bg-white rounded-2xl p-4 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+      <div className="relative h-full">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute right-0 top-0 z-10"
+          onClick={onClose}
+        >
+          <X className="h-4 w-4" />
+        </Button>
+        
         <video 
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-70"
-          autoPlay 
-          loop 
-          muted 
+          className="w-full h-full object-cover rounded-xl"
+          controls
+          autoPlay
+          muted
           playsInline
         >
-          <source src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas les vidéos.
+          <source src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </div>
     </div>

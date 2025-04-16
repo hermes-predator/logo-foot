@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -40,7 +41,7 @@ const PricingBlock = () => {
               <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 hover:shadow-sm transition-all duration-300 transform hover:translate-y-[-1px] border border-emerald-200/50">
                 <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                 <span className="text-sm whitespace-nowrap text-emerald-800 font-medium">
-                  Satisfait ou remboursé
+                  Satisfait ou Remboursé
                 </span>
               </div>
             </TooltipTrigger>

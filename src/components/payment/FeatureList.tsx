@@ -39,7 +39,7 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Renforcement de votre patrimoine digital",
+      text: "Renforcement de votre patrimoine",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

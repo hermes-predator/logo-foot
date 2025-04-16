@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
@@ -35,14 +36,14 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
     <div className="perspective-1000">
       <div className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
         <div className="relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
-          {/* Bouton œil dans le coin supérieur droit */}
+          {/* Bouton œil/retour dans le coin supérieur droit */}
           <button 
             onClick={handleFlip}
             className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors duration-300 shadow-sm hover:shadow-md"
-            aria-label={isFlipped ? "Masquer l'aperçu" : "Voir l'aperçu"}
+            aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
           >
             {isFlipped ? 
-              <EyeOff className="w-5 h-5 text-blue-600" /> : 
+              <ArrowLeft className="w-5 h-5 text-blue-600" /> : 
               <Eye className="w-5 h-5 text-blue-600" />
             }
           </button>

@@ -36,7 +36,7 @@ const FeatureList = () => {
       text: "Prix accessible"
     },
     {
-      icon: Shield,
+      icon: Check,
       text: "Renforcement de votre patrimoine numérique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"

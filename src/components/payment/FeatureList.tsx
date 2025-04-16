@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, Check, Wallet, Download } from 'lucide-react';
 
@@ -28,7 +27,7 @@ const FeatureList = () => {
     },
     {
       icon: Check,
-      text: "Fichier parfaitement organisé",
+      text: "Gain de confiance et de temps",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

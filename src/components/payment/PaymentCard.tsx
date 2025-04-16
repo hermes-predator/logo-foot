@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -70,32 +71,33 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             </div>
             <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"}`}>La plus grande collection de logos de football en haute qualité</p>
           
-          {/* Google Drive Badge et bouton œil ensemble */}
-          <div className="mt-3 flex items-center gap-2">
-            <GoogleDriveBadge />
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button 
-                    onClick={handleFlip}
-                    className="inline-flex items-center justify-center w-10 h-10 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
-                    aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
-                  >
-                    <Eye className="h-5 w-5" />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Aperçu du fichier</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            {/* Google Drive Badge et bouton œil ensemble */}
+            <div className="mt-3 flex items-center gap-2">
+              <GoogleDriveBadge />
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button 
+                      onClick={handleFlip}
+                      className="inline-flex items-center justify-center w-10 h-10 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
+                      aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
+                    >
+                      <Eye className="h-5 w-5" />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Aperçu du fichier</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
           </div>
-        </div>
 
-        <div className="relative z-10">
-          <FeatureList />
-          <PricingBlock />
-          <PaymentButton />
+          <div className="relative z-10">
+            <FeatureList />
+            <PricingBlock />
+            <PaymentButton />
+          </div>
         </div>
         
         <PaymentCardBack onFlipBack={handleFlip} />

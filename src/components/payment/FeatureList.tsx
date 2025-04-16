@@ -1,5 +1,5 @@
 import React from 'react';
-import { Folder, TrendingUp, Truck, Download, Zap } from 'lucide-react';
+import { Folder, TrendingUp, Truck, Download, Zap, Diamond } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -32,7 +32,7 @@ const FeatureList = () => {
       iconColor: "text-emerald-600"
     },
     {
-      icon: Truck,
+      icon: Diamond,  // Updated from Truck
       text: "Fichier à forte valeur d'usage"
     },
     {

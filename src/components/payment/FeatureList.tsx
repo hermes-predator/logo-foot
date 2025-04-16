@@ -28,7 +28,7 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Gain de temps considérable", // Changed back to this text
+      text: "Gain de temps considérable", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },
@@ -40,7 +40,7 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Renforcement de votre patrimoine",
+      text: "Renforcement de votre patrimoine digital", // Updated text here
       className: "bg-emerald-100",
       iconColor: "text-emerald-600"
     },

@@ -9,11 +9,11 @@ import {
 
 const PricingBlock = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden -mt-4">
+    <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden -mt-4 z-30">
       {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
       <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
       
-      <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-10">
+      <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40">
         <div className="flex flex-col md:flex-row items-center gap-3">
           <div>
             {/* Prix normal barré avec meilleur contraste */}
@@ -34,7 +34,7 @@ const PricingBlock = () => {
         </div>
       </div>
       
-      <div className="flex flex-col md:flex-row items-center gap-3 relative z-10">
+      <div className="flex flex-col md:flex-row items-center gap-3 relative z-50">
         <div className="group">
           <Tooltip>
             <TooltipTrigger asChild>
@@ -45,7 +45,7 @@ const PricingBlock = () => {
                 </span>
               </div>
             </TooltipTrigger>
-            <TooltipContent className="max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
+            <TooltipContent className="z-[9999] max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
               <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
               <div className="space-y-2 text-gray-700">
                 <p>Si vous êtes insatisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
@@ -78,3 +78,4 @@ const PricingBlock = () => {
 };
 
 export default PricingBlock;
+

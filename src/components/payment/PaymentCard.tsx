@@ -34,7 +34,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         }`}
       >
         {/* Face avant */}
-        <div className="relative p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out will-change-transform [backface-visibility:hidden]">
+        <div className="relative p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out will-change-transform backface-hidden">
           <Button
             variant="ghost"
             size="icon"

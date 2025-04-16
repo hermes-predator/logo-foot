@@ -21,7 +21,7 @@ const PaymentCardBack = () => {
         <video 
           ref={videoRef}
           className="w-full h-full object-cover rounded-2xl"
-          src="/lovable-uploads/front-cloud-preview.mp4"
+          src="/lovable-uploads/frontcloud-preview.mp4"
           autoPlay
           loop
           muted

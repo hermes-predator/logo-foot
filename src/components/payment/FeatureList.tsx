@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Wallet, Zap } from 'lucide-react';
 
@@ -32,7 +33,7 @@ const FeatureList = () => {
       iconColor: "text-emerald-600"
     },
     {
-      icon: Folder,
+      icon: Star,  // Changed back to Star from Folder
       text: "Fichier rare sur le marché",
       className: "bg-blue-100",
       iconColor: "text-blue-600"

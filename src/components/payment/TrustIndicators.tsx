@@ -12,7 +12,7 @@ const TrustIndicators = () => {
       />
       <TrustCard 
         icon={<Download />}
-        title="Téléchargement instantané"
+        title="Téléchargement Instantané"
         description="Page d'après-paiement"
       />
       <TrustCard 

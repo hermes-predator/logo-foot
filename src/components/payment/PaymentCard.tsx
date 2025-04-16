@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Users, Folder, Eye } from 'lucide-react';
 import FeatureList from './FeatureList';
@@ -26,7 +27,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   const isSmallMobile = useIsSmallMobile();
 
   return (
-    <div className="relative perspective-1000">
+    <div className="relative perspective-1000 w-full h-full">
       <button 
         onClick={() => setIsFlipped(prev => !prev)}
         className="absolute top-4 right-4 z-20 text-gray-600 hover:text-gray-800 transition-colors"
@@ -36,7 +37,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       </button>
 
       <div 
-        className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+        className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''} w-full h-full`}
       >
         {/* Front of the card */}
         <div className="relative p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform backface-hidden">

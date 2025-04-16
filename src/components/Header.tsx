@@ -39,7 +39,7 @@ const Header = () => {
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
           <FolderClosed 
-            className="w-6 h-6 text-black fill-gray-400/20" 
+            className="w-6 h-6 text-black fill-gray-400/15" 
             strokeWidth={1.5}
           />
           <span className="font-medium">logo-foot.com</span>

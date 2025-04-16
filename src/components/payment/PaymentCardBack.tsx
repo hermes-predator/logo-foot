@@ -12,6 +12,7 @@ const PaymentCardBack = () => {
         playsInline
       >
         <source src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
     </div>
   );

@@ -1,10 +1,7 @@
 
 import React from 'react';
-import { Download } from 'lucide-react';
 
 const PaymentCardBack = () => {
-  const [downloadCount, setDownloadCount] = React.useState(25287);
-
   return (
     <div className="absolute inset-0 w-full h-full backface-hidden [transform:rotateY(180deg)]">
       <div className="w-full h-full bg-gradient-to-b from-purple-500 to-indigo-600 rounded-2xl overflow-hidden relative">

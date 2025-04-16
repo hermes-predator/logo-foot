@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -42,10 +41,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-colors duration-300 shadow-sm hover:shadow-md"
             aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
           >
-            {isFlipped ? 
-              <ArrowLeft className="w-5 h-5 text-blue-600" /> : 
-              <Eye className="w-5 h-5 text-blue-600" />
-            }
+            <Eye className="w-5 h-5 text-blue-600" />
           </button>
           
           {/* Dossier décoratif dans le coin supérieur droit - position fixe pour réduire les calculs */}

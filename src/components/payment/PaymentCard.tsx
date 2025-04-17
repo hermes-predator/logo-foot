@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -36,8 +37,8 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
     <div className="perspective-1000">
       <div className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
         <div className="relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
-          {/* Dossier décoratif dans le coin supérieur gauche - position fixe pour réduire les calculs */}
-          <div className="absolute top-14 left-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block">
+          {/* Dossier décoratif dans le coin supérieur DROIT, position fixe pour réduire les calculs */}
+          <div className="absolute top-4 right-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block">
             <Folder size={75} />
           </div>
           
@@ -86,3 +87,4 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
 };
 
 export default PaymentCard;
+

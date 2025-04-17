@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -79,10 +78,9 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll || !carouselRef) return
 
-      // Properly access the DOM element from the ref
-      // The ref itself doesn't have a 'current' property in this context
-      // Instead, we can access the HTML element directly
-      const emblaNode = carouselRef.current as unknown as HTMLElement
+      // We need to access the DOM element, but EmblaViewportRefType doesn't have a 'current' property
+      // Instead, we access the element directly - carouselRef is already the element reference
+      const emblaNode = carouselRef as unknown as HTMLElement
       
       if (!emblaNode) return
       

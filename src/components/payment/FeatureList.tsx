@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -19,7 +18,7 @@ const Feature = ({ icon: Icon, text, description, className, iconColor }: Featur
       <div>
         <span className="text-[15px] font-medium">{text}</span>
         {description && (
-          <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[280px]">{description}</p>
+          <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[260px]">{description}</p>
         )}
       </div>
     </div>

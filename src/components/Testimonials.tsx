@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -6,10 +7,10 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import type { CarouselApi } from "@/components/ui/carousel";
 
 // Types for testimonial structure
 interface Testimonial {
@@ -170,7 +171,7 @@ const Testimonials = () => {
           opts={{
             align: "start",
             loop: true,
-            wheelScroll: true, // Enable trackpad/wheel scrolling
+            wheelScroll: true, // Using our custom wheelScroll option
           }}
           setApi={setApi}
           className="w-full max-w-3xl mx-auto"

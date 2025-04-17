@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -12,8 +13,13 @@ type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
 
+// Extended options with our custom wheelScroll property
+interface ExtendedCarouselOptions extends CarouselOptions {
+  wheelScroll?: boolean;
+}
+
 type CarouselProps = {
-  opts?: CarouselOptions
+  opts?: ExtendedCarouselOptions
   plugins?: CarouselPlugin
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
@@ -56,17 +62,37 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
+    // Extract wheelScroll from opts to avoid passing it directly to Embla
+    const { wheelScroll, ...emblaOpts } = opts || {}
+    
     const [carouselRef, api] = useEmblaCarousel(
       {
-        ...opts,
+        ...emblaOpts,
         axis: orientation === "horizontal" ? "x" : "y",
-        dragFree: opts?.wheelScroll ? true : opts?.dragFree,
-        containScroll: opts?.wheelScroll ? "trimSnaps" : opts?.containScroll,
       },
       plugins
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+
+    // Add wheel event handling for trackpad/mouse scrolling
+    React.useEffect(() => {
+      if (!api || !wheelScroll || !carouselRef) return
+
+      const handleWheel = (event: WheelEvent) => {
+        event.preventDefault()
+        // Delta multiplier controls the scroll speed
+        const deltaMultiplier = 0.75
+        // Scroll the carousel based on wheel delta
+        api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
+      }
+
+      carouselRef.addEventListener('wheel', handleWheel, { passive: false })
+      
+      return () => {
+        carouselRef.removeEventListener('wheel', handleWheel)
+      }
+    }, [api, wheelScroll, carouselRef])
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {

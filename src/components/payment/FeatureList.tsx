@@ -56,7 +56,7 @@ const FeatureList = () => {
     {
       icon: Wallet,
       text: "Prix accessible",
-      description: "Un prix réduit et accessible pour aider le plus grand nombre"
+      description: "Un prix réduit pour permettre au plus grand nombre d'en profiter"
     },
     {
       icon: TrendingUp,

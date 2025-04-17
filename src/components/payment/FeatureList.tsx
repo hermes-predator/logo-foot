@@ -51,7 +51,7 @@ const FeatureList = () => {
       text: "Renforcement de votre patrimoine digital",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Améliorez la qualité visuelle et professionnelle de vos créations"
+      description: "Renforcement du patrimoine digital"
     },
     {
       icon: Wallet,

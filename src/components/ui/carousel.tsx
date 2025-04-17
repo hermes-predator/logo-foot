@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -78,11 +79,11 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll || !carouselRef) return
 
-      // We need to access the DOM element, but EmblaViewportRefType doesn't have a 'current' property
-      // Instead, we access the element directly - carouselRef is already the element reference
-      const emblaNode = carouselRef as unknown as HTMLElement
+      // Get the actual DOM element from the Embla carousel
+      // This is key - we need to check if the viewport element exists
+      const emblaViewport = carouselRef.querySelector('.embla__viewport');
       
-      if (!emblaNode) return
+      if (!emblaViewport || !(emblaViewport instanceof HTMLElement)) return;
       
       const handleWheel = (event: WheelEvent) => {
         event.preventDefault()
@@ -90,10 +91,10 @@ const Carousel = React.forwardRef<
         api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
       }
 
-      emblaNode.addEventListener('wheel', handleWheel, { passive: false })
+      emblaViewport.addEventListener('wheel', handleWheel, { passive: false })
       
       return () => {
-        emblaNode.removeEventListener('wheel', handleWheel)
+        emblaViewport.removeEventListener('wheel', handleWheel)
       }
     }, [api, wheelScroll, carouselRef])
 

@@ -79,18 +79,21 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll || !carouselRef) return
 
+      // Get the actual DOM element from the ref
+      const viewportElement = carouselRef.current
+      
+      if (!viewportElement) return
+      
       const handleWheel = (event: WheelEvent) => {
         event.preventDefault()
-        // Delta multiplier controls the scroll speed
-        const deltaMultiplier = 0.75
         // Scroll the carousel based on wheel delta
         api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
       }
 
-      carouselRef.addEventListener('wheel', handleWheel, { passive: false })
+      viewportElement.addEventListener('wheel', handleWheel, { passive: false })
       
       return () => {
-        carouselRef.removeEventListener('wheel', handleWheel)
+        viewportElement.removeEventListener('wheel', handleWheel)
       }
     }, [api, wheelScroll, carouselRef])
 

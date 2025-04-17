@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,6 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
-
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
@@ -14,29 +12,27 @@ const BlogHeader = () => {
   // Fonction pour déterminer le style de la catégorie selon son état actif
   const getCategoryStyle = (category: string | null) => {
     if (category === null && activeCategory === null || category === activeCategory) {
-      // Style pour la catégorie active avec nouvelles couleurs
-      return "px-3 py-1 bg-gradient-to-r from-amber-500 to-pink-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm";
+      // Style pour la catégorie active
+      return "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm transition-colors shadow-sm";
     }
     // Style pour les autres catégories
     return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
-  
-  return (
-    <div className="max-w-4xl mb-6 pl-4">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-100/80 to-pink-100/80 text-gray-800 font-medium mb-3 shadow-sm">
+  return <div className="max-w-4xl mb-6 pl-4">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
       </div>
       
-      <h1 className="text-4xl font-bold bg-gradient-to-r from-amber-700 to-pink-700 bg-clip-text text-transparent mb-3">
+      <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
       </h1>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/30 via-white to-pink-100/30 rounded-2xl blur-lg"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
         <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm">
           <div className="flex items-center gap-3 mb-3">
-            <div className="bg-gradient-to-r from-amber-100 to-pink-100 p-2 rounded-xl">
-              <BookOpen className="w-5 h-5 text-gray-800" />
+            <div className="bg-gray-100 p-2 rounded-xl">
+              <BookOpen className="w-5 h-5 text-black" />
             </div>
             <h2 className="font-semibold text-gray-900">
               Le Blog Logo-Foot
@@ -60,7 +56,7 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-amber-50 to-pink-50 rounded-xl p-5 border border-amber-200/40 shadow-inner py-6">
+          <div className="bg-amber-50 rounded-xl p-5 border border-amber-200/70 shadow-inner py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-gray-900 text-lg">Vous cherchez tous les logos de football ?</h3>
@@ -86,8 +82,6 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogHeader;

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,31 +25,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
     
     <section className="relative pt-12 pb-10 px-4 overflow-hidden">
-      {/* Background effects - Nouvel arrière-plan avec dégradé */}
+      {/* Background effects - Optimisés pour les performances */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FEF7CD]/80 via-white to-[#FFDEE2]/70 opacity-90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(236,72,153,0.06),transparent_50%)]" />
-        <div className="absolute top-40 left-0 w-72 h-72 bg-amber-50/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 7s ease-in-out infinite' }} />
-        <div className="absolute top-60 right-0 w-96 h-96 bg-pink-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
+        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 7s ease-in-out infinite' }} />
+        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
       </div>
       
       {/* Decorative elements avec animation optimisée */}
-      <div className="absolute top-28 left-1/3 text-amber-400/30" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
+      <div className="absolute top-28 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
         <Sparkles className="h-8 w-8" />
       </div>
-      <div className="absolute bottom-20 right-1/4 text-pink-400/30" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
+      <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
         <Sparkles className="h-10 w-10" />
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-6">
-        {/* Premium Badge - Optimisé avec nouvelles couleurs */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-50 to-pink-50 border border-amber-200/50 shadow-sm transition-transform duration-300 hover:shadow-md mb-2 hover:-translate-y-0.5">
-          <Crown className="w-5 h-5" style={{ fill: '#F59E0B', stroke: '#F59E0B' }} />
+        {/* Premium Badge - Optimisé */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-transform duration-300 hover:shadow-md mb-2 hover:-translate-y-0.5">
+          <Crown className="w-5 h-5" style={{ fill: '#FFC107', stroke: '#FFC107' }} />
           <span className="text-sm font-medium text-gray-900">Collection Premium</span>
         </div>
 
-        {/* Main title avec nouveau dégradé */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-amber-600 via-orange-500 to-pink-500 bg-clip-text text-transparent px-4 py-2">
+        {/* Main title */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
           Logos des clubs de football
         </h1>
 
@@ -64,30 +63,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
-        {/* Trust badges avec nouvelles couleurs */}
+        {/* Trust badges - Animation optimisée */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-50/50 backdrop-blur-md border border-amber-200/30 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <CheckCircle2 className="w-5 h-5 text-amber-600" />
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <CheckCircle2 className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-pink-50/50 backdrop-blur-md border border-pink-200/30 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Lock className="w-5 h-5 text-pink-600" />
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <Lock className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-50/50 to-pink-50/50 backdrop-blur-md border border-amber-200/30 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Download className="w-5 w-5 text-orange-600" />
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <Download className="w-5 w-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
         </div>
 
-        {/* CTA buttons avec nouvelles couleurs */}
+        {/* CTA buttons - Taille augmentée et meilleur espacement */}
         <div className="flex items-center justify-center gap-5 pt-8">
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-2.5 px-8 py-4 bg-gradient-to-r from-amber-50 to-pink-50 rounded-lg border border-amber-200/50 hover:border-amber-300 transition-transform duration-300 hover:shadow-md relative overflow-hidden"
+                className="group flex items-center gap-2.5 px-8 py-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-transform duration-300 hover:shadow-md relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-50/40 to-pink-50/40 opacity-80"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
                 <Folder size={20} className="mr-1 text-gray-800 transition-colors duration-300" />
                 <span className="relative z-10 font-semibold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
@@ -119,7 +118,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                         }}
                         variant="outline" 
                         size="sm" 
-                        className="h-8 bg-pink-50 hover:bg-pink-100 border-pink-200 text-pink-600 gap-1 mt-4"
+                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4"
                       >
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
@@ -147,19 +146,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   const returnUrl = `${window.location.origin}/payment-success`;
                   window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                 }}
-                className="bg-gradient-to-r from-amber-500 to-pink-500 hover:from-amber-600 hover:to-pink-600 shadow-lg hover:shadow-xl transition-transform duration-300 text-[17px] gap-4 hover:-translate-y-0.5 px-9 py-4 h-auto relative group overflow-hidden"
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-[17px] gap-4 hover:-translate-y-0.5 px-9 py-4 h-auto relative group overflow-hidden"
               >
-                {/* Outer glow animation avec nouvelles couleurs */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400/20 via-pink-300/20 to-yellow-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
+                {/* Outer glow animation - restaurée à l'original */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
                      style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
 
-                {/* Inner glow for the cart icon avec nouvelles couleurs */}
+                {/* Inner glow for the cart icon - restaurée à l'animation originale */}
                 <div className="relative">
                   <ShoppingCart 
                     className="h-6 w-6 transition-transform duration-300" 
                     style={{
-                      color: "#FEF3C7",
-                      filter: 'drop-shadow(0 0 3px rgba(254, 243, 199, 0.8))',
+                      color: "#FFE082",
+                      filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))',
                       animation: 'cartMove 1.5s ease-in-out infinite'
                     }}
                   />
@@ -170,7 +169,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   Achat rapide ~ 9€
                 </span>
                 
-                {/* Shine effect avec nouvelles couleurs */}
+                {/* Shine effect - restauré à l'original */}
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
@@ -188,7 +187,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   </span>
                 </div>
                 <div className="mt-1 flex items-center text-xs">
-                  <span className="bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 2 minutes seulement</span>
+                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 2 minutes seulement</span>
                 </div>
               </div>
             </TooltipContent>

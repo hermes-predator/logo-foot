@@ -56,7 +56,7 @@ const FeatureList = () => {
     {
       icon: Wallet,
       text: "Prix accessible",
-      description: "Un investissement unique pour un accès illimité à toutes les ressources"
+      description: "Un prix réduit par rapport à sa valeur"
     },
     {
       icon: TrendingUp,

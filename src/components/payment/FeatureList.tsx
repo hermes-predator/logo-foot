@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Wallet, Zap } from 'lucide-react';
 
@@ -13,7 +12,7 @@ interface FeatureProps {
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
     <div className="flex items-center gap-4 text-gray-800 p-2 rounded-lg">
-      <div className={`p-2 rounded-full ${className || 'bg-white border border-gray-100 shadow-sm'}`}>
+      <div className={`p-2 rounded-full ${className || 'bg-blue-100'}`}>
         <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
       <div>
@@ -31,40 +30,38 @@ const FeatureList = () => {
     {
       icon: Folder,
       text: "Fichier de 8 600+ ressources",
-      description: "Une couverture totale du football que nous ajoutons à vos actifs",
-      className: "bg-white border border-gray-100 shadow-sm"
+      description: "Une couverture totale du football que nous ajoutons à vos actifs"
     },
     {
       icon: TrendingUp,
       text: "Gain de temps pour vos projets", 
-      className: "bg-white border border-gray-100 shadow-sm",
+      className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
     },
     {
       icon: Star,
       text: "Fichier unique sur le marché",
-      className: "bg-white border border-gray-100 shadow-sm",
+      className: "bg-blue-100",
       iconColor: "text-blue-600",
       description: "Un fichier trouvable nulle part ailleurs. N'hésitez pas à vous le procurer !"
     },
     {
       icon: TrendingUp,
       text: "Renforcement de votre patrimoine digital",
-      className: "bg-white border border-gray-100 shadow-sm",
+      className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Renforcement du patrimoine digital"
     },
     {
       icon: Wallet,
       text: "Prix accessible",
-      className: "bg-white border border-gray-100 shadow-sm",
       description: "Un tarif réduit pour permettre au plus grand nombre d'en profiter"
     },
     {
       icon: TrendingUp,
       text: "Valeur à votre actif",
-      className: "bg-white border border-gray-100 shadow-sm",
+      className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Une ressource pérenne qui conserve sa valeur dans le temps"
     }

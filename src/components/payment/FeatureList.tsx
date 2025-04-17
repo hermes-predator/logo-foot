@@ -1,5 +1,5 @@
 import React from 'react';
-import { Folder, TrendingUp, Star, HandHeart, Wallet, Zap } from 'lucide-react';
+import { Folder, TrendingUp, Star, Wallet, Zap } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -54,7 +54,7 @@ const FeatureList = () => {
       description: "Renforcement du patrimoine digital"
     },
     {
-      icon: HandHeart,
+      icon: Wallet,
       text: "Prix accessible",
       description: "Un tarif réduit pour permettre au plus grand nombre d'en profiter"
     },

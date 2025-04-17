@@ -1,5 +1,4 @@
-
-import { Folder, Home, BookOpen } from "lucide-react";
+import { FolderClosed, Home, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -39,8 +38,8 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
         >
-          <Folder 
-            className="w-6 h-6 text-black fill-black" 
+          <FolderClosed 
+            className="w-6 h-6 text-black fill-gray-400/15" 
             strokeWidth={1.5}
           />
           <span className="font-medium">logo-foot.com</span>

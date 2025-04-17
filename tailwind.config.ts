@@ -23,30 +23,36 @@ export default {
 				'info': ['Roboto', 'sans-serif'],
 			},
 			colors: {
+				primary: {
+					DEFAULT: 'var(--primary)',
+					light: 'var(--primary-light)',
+					dark: 'var(--primary-dark)',
+				},
+				secondary: {
+					DEFAULT: 'var(--secondary)',
+					light: 'var(--secondary-light)',
+				},
+				accent: {
+					DEFAULT: 'var(--accent)',
+					light: 'var(--accent-light)',
+				},
+				text: {
+					primary: 'var(--text-primary)',
+					secondary: 'var(--text-secondary)',
+				},
+				success: 'var(--success)',
+				error: 'var(--error)',
+				warning: 'var(--warning)',
+				
+				// Garder les valeurs existantes pour la compatibilité
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',

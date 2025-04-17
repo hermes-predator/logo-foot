@@ -33,7 +33,7 @@ const PaymentButton = () => {
           <Button 
             onClick={handlePayment}
             disabled={isProcessing}
-            className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-6 text-lg rounded-lg shadow-md border-b-[3px] border-blue-800/70 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden will-change-transform"
+            className="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white px-5 py-6 text-lg rounded-lg shadow-md border-b-[3px] border-primary-dark/70 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden will-change-transform"
             aria-label={isProcessing ? "Traitement en cours, veuillez patienter" : "Payer 9€ avec paiement sécurisé"}
             aria-live="polite"
             aria-busy={isProcessing}

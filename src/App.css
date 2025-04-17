@@ -6,3 +6,19 @@
   padding: 0;
   text-align: left;
 }
+
+/* Nouveaux dégradés */
+.bg-gradient-warm {
+  background: linear-gradient(135deg, #FEF7CD 0%, #FFDEE2 100%);
+}
+
+.bg-gradient-cta {
+  background: linear-gradient(to right, #F97316 0%, #D946EF 100%);
+}
+
+.text-gradient-warm {
+  background: linear-gradient(to right, #F59E0B, #EC4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -33,9 +33,9 @@ const FloatingCTA = () => {
         animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
       }}
     >
-      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">
+      <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">
         <div className="container mx-auto relative">
-          {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
+          {/* Mobile layout - stacked vertically */}
           {isMobile ? (
             <div className="relative">              
               <div className="flex items-center mb-2">
@@ -51,9 +51,9 @@ const FloatingCTA = () => {
                 </span>
                 <div>
                   <p className="text-white font-medium flex flex-col">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 ${isVerySmallScreen ? 'text-sm' : 'text-base md:text-lg'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-100 ${isVerySmallScreen ? 'text-sm' : 'text-base md:text-lg'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-xs italic">
+                      <span className="text-amber-100/90 font-light text-xs italic">
                         8 600+ logos de foot
                       </span>
                     )}
@@ -68,11 +68,11 @@ const FloatingCTA = () => {
                 size="sm"
               >
                 <Link to="/" className="flex items-center justify-center gap-1.5">
-                  <span className="font-medium relative z-10 text-blue-600">
+                  <span className="font-medium relative z-10 text-pink-600">
                     En savoir plus
                   </span>
-                  <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
-                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+                  <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-pink-600" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Link>
               </Button>
             </div>
@@ -93,8 +93,8 @@ const FloatingCTA = () => {
                   </span>
                   <div className="relative">
                     <p className="text-white font-medium text-sm md:text-lg hover:text-white/90 transition-colors flex flex-col">
-                      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-base md:text-2xl">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-blue-100/90 font-light text-sm md:text-base italic">
+                      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-100 text-base md:text-2xl">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-amber-100/90 font-light text-sm md:text-base italic">
                         Un fichier ZIP arborescent contenant + de 8 600 logos de foot
                       </span>
                     </p>
@@ -110,11 +110,11 @@ const FloatingCTA = () => {
                   size="lg"
                 >
                   <Link to="/" className="flex items-center gap-2">
-                    <span className="font-medium relative z-10 text-blue-600">
+                    <span className="font-medium relative z-10 text-pink-600">
                       En savoir plus
                     </span>
-                    <ArrowRight className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+                    <ArrowRight className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-pink-600" />
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>
               </div>

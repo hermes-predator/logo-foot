@@ -30,7 +30,7 @@ const FeatureList = () => {
     {
       icon: Folder,
       text: "Fichier de 8 600+ ressources",
-      description: "Une couverture totale du sujet du football"
+      description: "Une couverture totale du football à votre actif"
     },
     {
       icon: TrendingUp,

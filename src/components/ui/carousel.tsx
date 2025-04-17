@@ -81,14 +81,8 @@ const Carousel = React.forwardRef<
 
       // Wait for the DOM to be fully rendered
       const timer = setTimeout(() => {
-        // Get the DOM node directly from the ref
-        // We need to access the DOM element that the ref points to
-        const emblaNode = carouselRef?.root
-        
-        if (!emblaNode) return
-        
-        // Find the viewport element
-        const emblaViewport = emblaNode.querySelector('.embla__viewport') as HTMLElement | null
+        // The correct way to access the DOM element with embla carousel
+        const emblaViewport = carouselRef?.querySelector('.embla__viewport') as HTMLElement | null
         
         if (!emblaViewport) return
         

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Wallet, Zap } from 'lucide-react';
 
@@ -31,7 +30,7 @@ const FeatureList = () => {
     {
       icon: Folder,
       text: "Fichier de 8 600+ ressources",
-      description: "Bénéficiez d'une couverture totale du football que vous ajouterez à votre actif"
+      description: "Une couverture totale du football que vous ajouterez à votre actif"
     },
     {
       icon: TrendingUp,

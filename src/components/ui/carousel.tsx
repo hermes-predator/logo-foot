@@ -79,10 +79,12 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll || !carouselRef) return
 
-      // Get the actual DOM element from the ref
-      const viewportElement = carouselRef.current
+      // Properly access the DOM element from the ref
+      // The ref itself doesn't have a 'current' property in this context
+      // Instead, we can access the HTML element directly
+      const emblaNode = carouselRef.current as unknown as HTMLElement
       
-      if (!viewportElement) return
+      if (!emblaNode) return
       
       const handleWheel = (event: WheelEvent) => {
         event.preventDefault()
@@ -90,10 +92,10 @@ const Carousel = React.forwardRef<
         api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
       }
 
-      viewportElement.addEventListener('wheel', handleWheel, { passive: false })
+      emblaNode.addEventListener('wheel', handleWheel, { passive: false })
       
       return () => {
-        viewportElement.removeEventListener('wheel', handleWheel)
+        emblaNode.removeEventListener('wheel', handleWheel)
       }
     }, [api, wheelScroll, carouselRef])
 

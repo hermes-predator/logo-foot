@@ -105,9 +105,9 @@ const FolderCard: React.FC<FolderCardProps> = ({
 
   return (
     <div className={`space-y-2 p-4 bg-gradient-to-br ${colors.bg} ${borderClass} transition-all duration-200 ${colors.hoverBg} ${roundedTopClass} ${roundedBottomClass} relative group border border-gray-200/50 shadow-sm`}>
-      {/* Decorative icon in top right corner - color transition on hover */}
+      {/* Decorative icon now positioned on top right */}
       {decorativeIcon && (
-        <div className={`absolute top-5 right-8 ${colors.decorative} opacity-70 transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
+        <div className={`absolute top-4 right-4 ${colors.decorative} opacity-70 transition-colors duration-300 group-hover:${colors.decorativeHover} group-hover:opacity-90`}>
           {React.cloneElement(decorativeIcon as React.ReactElement, { 
             className: 'h-7 w-7 transition-colors duration-300' 
           })}
@@ -144,3 +144,4 @@ const FolderCard: React.FC<FolderCardProps> = ({
 };
 
 export default FolderCard;
+

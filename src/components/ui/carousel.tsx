@@ -79,9 +79,13 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll || !carouselRef) return
 
+      // TypeScript doesn't recognize carouselRef as having querySelector
+      // Let's safely cast it to an Element that has querySelector
+      const rootNode = carouselRef as unknown as Element;
+      if (!rootNode) return;
+      
       // Get the actual DOM element from the Embla carousel
-      // This is key - we need to check if the viewport element exists
-      const emblaViewport = carouselRef.querySelector('.embla__viewport');
+      const emblaViewport = rootNode.querySelector('.embla__viewport');
       
       if (!emblaViewport || !(emblaViewport instanceof HTMLElement)) return;
       

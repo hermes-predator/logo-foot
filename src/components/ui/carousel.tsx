@@ -82,7 +82,8 @@ const Carousel = React.forwardRef<
       // Wait for the DOM to be fully rendered
       const timer = setTimeout(() => {
         // Get the DOM node directly from the ref
-        const emblaNode = carouselRef.current as HTMLElement | null
+        // We need to access the DOM element that the ref points to
+        const emblaNode = carouselRef?.root
         
         if (!emblaNode) return
         

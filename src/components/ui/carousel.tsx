@@ -79,13 +79,15 @@ const Carousel = React.forwardRef<
     React.useEffect(() => {
       if (!api || !wheelScroll) return
 
-      // Wait for the ref to be available and DOM to be fully rendered
+      // Wait for the DOM to be fully rendered
       const timer = setTimeout(() => {
-        // Safely access the DOM element
-        if (!carouselRef.current) return
+        // The emblaNode is the element directly referenced by carouselRef
+        const emblaNode = carouselRef.current
+
+        if (!emblaNode) return
         
-        // The viewport is a child of the container
-        const emblaViewport = carouselRef.current.querySelector('.embla__viewport')
+        // The viewport is a child of the container with class 'embla__viewport'
+        const emblaViewport = emblaNode.querySelector('.embla__viewport')
         
         if (!emblaViewport || !(emblaViewport instanceof HTMLElement)) return
         

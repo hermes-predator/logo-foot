@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -18,6 +19,7 @@ interface PaymentCardProps {
 
 const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   
   // Utilisation de la fonction de mesure de performance
   React.useEffect(() => {
@@ -34,21 +36,40 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
 
   return (
     <div className="perspective-1000">
-      <div className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
-        <div className="relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:scale-[1.005] will-change-transform">
-          {/* Dossier décoratif dans le coin supérieur DROIT, position fixe pour réduire les calculs */}
-          <div className="absolute top-12 right-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block">
+      <div 
+        className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div 
+          className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
+            ${isHovered ? 'shadow-xl translate-y-[-4px]' : 'shadow-lg'} 
+            transition-all duration-500 ease-out hover:scale-[1.005] will-change-transform
+            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_5px_15px_rgba(0,0,100,0.09)] before:opacity-0 before:transition-opacity before:duration-500
+            ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
+          `}
+          style={{
+            boxShadow: isHovered ? 
+              '0 10px 25px -10px rgba(0, 0, 100, 0.12), 0 5px 10px -7px rgba(0, 0, 100, 0.06)' : 
+              '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)'
+          }}
+        >
+          {/* Effet de lueur subtil sur le bord supérieur */}
+          <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
+          
+          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile */}
+          <div className={`absolute top-12 right-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={75} />
           </div>
           
-          <SparkleEffects />
+          <SparkleEffects isHovered={isHovered} />
           <RecentBuyersBadge count={recentBuyers} />
           
           <div className="mb-3 sm:mb-4 relative z-10 mt-0">
             <div className="flex items-center gap-2">
-              <h3 className={`${isSmallMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <h3 className={`${isSmallMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'}`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
             </div>
-            <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"}`}>La plus grande collection de logos de football en haute qualité</p>
+            <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"} transition-colors duration-500 ${isHovered ? 'text-gray-700' : 'text-gray-600'}`}>La plus grande collection de logos de football en haute qualité</p>
           
             {/* Google Drive Badge et bouton œil ensemble */}
             <div className="mt-3 flex items-center gap-2">
@@ -58,10 +79,16 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipTrigger asChild>
                     <button 
                       onClick={handleFlip}
-                      className="inline-flex items-center justify-center w-11 h-11 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-colors duration-200 rounded-full"
+                      className="inline-flex items-center justify-center w-11 h-11 bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100/70 transition-all duration-300 rounded-full relative overflow-hidden group"
                       aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
                     >
-                      <Eye className="h-4 w-4" />
+                      {/* Effet de pulse subtil */}
+                      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-100/30 rounded-full transition-all duration-300"></span>
+                      {/* Cercle d'animation au clic */}
+                      <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
+                        <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                      </span>
+                      <Eye className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>

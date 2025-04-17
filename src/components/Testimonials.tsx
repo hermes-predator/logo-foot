@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import type { CarouselApi } from "@/components/ui/carousel";
 
 // Types for testimonial structure
 interface Testimonial {
@@ -85,7 +86,8 @@ const Testimonials = () => {
   const [visibleItems, setVisibleItems] = useState<number>(1);
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [autoplay, setAutoplay] = useState<boolean>(true);
-  const autoplayInterval = 5000; // 5 seconds
+  const [api, setApi] = useState<CarouselApi>();
+  const autoplayInterval = 5000;
 
   // Adjust visible items based on screen size
   useEffect(() => {
@@ -168,7 +170,9 @@ const Testimonials = () => {
           opts={{
             align: "start",
             loop: true,
+            wheelScroll: true, // Enable trackpad/wheel scrolling
           }}
+          setApi={setApi}
           className="w-full max-w-3xl mx-auto"
           aria-label="Témoignages clients"
         >

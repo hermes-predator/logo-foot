@@ -12,12 +12,8 @@ type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
 
-interface ExtendedCarouselOptions extends CarouselOptions {
-  wheelScroll?: boolean;
-}
-
 type CarouselProps = {
-  opts?: ExtendedCarouselOptions
+  opts?: CarouselOptions
   plugins?: CarouselPlugin
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
@@ -60,42 +56,15 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
-    const { wheelScroll, ...emblaOpts } = opts || {}
-    
     const [carouselRef, api] = useEmblaCarousel(
       {
-        ...emblaOpts,
+        ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
       },
       plugins
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
-
-    React.useEffect(() => {
-      if (!api || !wheelScroll) return
-
-      const timer = setTimeout(() => {
-        const emblaViewport = carouselRef.current?.querySelector('.embla__viewport') as HTMLElement | null
-        
-        if (!emblaViewport) return
-        
-        const handleWheel = (event: WheelEvent) => {
-          event.preventDefault()
-          api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
-        }
-
-        emblaViewport.addEventListener('wheel', handleWheel, { passive: false })
-        
-        return () => {
-          emblaViewport.removeEventListener('wheel', handleWheel)
-        }
-      }, 100)
-
-      return () => {
-        clearTimeout(timer)
-      }
-    }, [api, wheelScroll, carouselRef])
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -177,6 +146,7 @@ const Carousel = React.forwardRef<
     )
   }
 )
+Carousel.displayName = "Carousel"
 
 const CarouselContent = React.forwardRef<
   HTMLDivElement,

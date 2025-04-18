@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -63,7 +64,8 @@ import { louisvilleCityLogoPost } from './louisville-city-logo';
 // import { alEttifaqLogoPost } from './al-ettifaq-logo';
 // Remove the direct import of botafogoLogoPost since it's already included in brazilianClubPosts
 // import { botafogoLogoPost } from './botafogo-logo';
-import { burtonAlbionLogoPost } from './burton-albion-logo';
+// Suppression de l'import direct de burtonAlbionLogoPost pour éviter la duplication
+// import { burtonAlbionLogoPost } from './burton-albion-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -122,12 +124,13 @@ export const logoPosts: BlogPost[] = [
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
   tigresUanlLogoPost,
-  louisvilleCityLogoPost,
+  louisvilleCityLogoPost
   // Remove sacramentoRepublicLogoPost from direct inclusion since it's already in nonEuropeanClubPosts
   // sacramentoRepublicLogoPost
   // Remove alEttifaqLogoPost from direct inclusion since it's already in asianClubPosts
   // alEttifaqLogoPost
   // Remove botafogoLogoPost from direct inclusion since it's already in brazilianClubPosts
   // botafogoLogoPost
-  burtonAlbionLogoPost
+  // Suppression de burtonAlbionLogoPost de l'inclusion directe car il est déjà inclus via englishClubPosts
+  // burtonAlbionLogoPost
 ];

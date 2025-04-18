@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -171,7 +170,6 @@ const Testimonials = () => {
           opts={{
             align: "start",
             loop: true,
-            wheelScroll: true, // Using our custom wheelScroll option
           }}
           setApi={setApi}
           className="w-full max-w-3xl mx-auto"

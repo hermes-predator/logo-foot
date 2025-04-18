@@ -1,14 +1,12 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { psgLogoPost } from '../psg-logo';
 import { ancienLogoPsgPost } from '../ancien-logo-psg';
 import { omLogoPost } from '../om-logo';
 import { ancienLogoOmPost } from '../ancien-logo-om';
-import { asseLogoPost } from '../asse-logo';
-import { loscLogoPost } from '../losc-logo';
-import { olLogoPost } from '../ol-logo';
+// Removed missing imports
 import { monacoLogoPost } from '../monaco-logo';
-import { rcLensLogoPost } from '../rclens-logo';
-import { fcNantesLogoPost } from '../fc-nantes-logo';
+// Removed missing imports
 import { bordeauxLogoPost } from '../bordeaux-logo';
 import { rennesLogoPost } from '../rennes-logo';
 import { montpellierLogoPost } from '../montpellier-logo';
@@ -18,7 +16,7 @@ import { saintEtienneLogoPost } from '../saint-etienne-logo';
 import { bastiaLogoPost } from '../bastia-logo';
 import { auxerreLogoPost } from '../auxerre-logo';
 import { metzLogoPost } from '../metz-logo';
-import { sedanLogoPost } from '../sedan-logo';
+// Removed missing imports
 import { guingampLogoPost } from '../guingamp-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
 import { rouenLogoPost } from '../rouen-logo';
@@ -32,12 +30,12 @@ export const frenchClubPosts: BlogPost[] = [
   ancienLogoPsgPost,
   omLogoPost,
   ancienLogoOmPost,
-  asseLogoPost,
-  loscLogoPost,
-  olLogoPost,
+  // Removed missing asseLogoPost
+  // Removed missing loscLogoPost
+  // Removed missing olLogoPost
   monacoLogoPost,
-  rcLensLogoPost,
-  fcNantesLogoPost,
+  // Removed missing rcLensLogoPost
+  // Removed missing fcNantesLogoPost
   bordeauxLogoPost,
   rennesLogoPost,
   montpellierLogoPost,
@@ -47,7 +45,7 @@ export const frenchClubPosts: BlogPost[] = [
   bastiaLogoPost,
   auxerreLogoPost,
   metzLogoPost,
-  sedanLogoPost,
+  // Removed missing sedanLogoPost
   guingampLogoPost,
   valenciennesLogoPost,
   rouenLogoPost,

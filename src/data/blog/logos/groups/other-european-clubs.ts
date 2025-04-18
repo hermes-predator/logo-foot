@@ -73,6 +73,7 @@ import { jsKabylieLogoPost } from '../js-kabylie-logo';
 import { usmAlgerLogoPost } from '../usm-alger-logo';
 import { levskiSofiaLogoPost } from '../levski-sofia-logo';
 import { cskaSofiaLogoPost } from '../cska-sofia-logo';
+import { rijekaLogoPost } from '../rijeka-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -144,6 +145,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   antalyasporLogoPost,
   levskiSofiaLogoPost,
   cskaSofiaLogoPost,
+  rijekaLogoPost,
   jsKabylieLogoPost,
   usmAlgerLogoPost
 ];

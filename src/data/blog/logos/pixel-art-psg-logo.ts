@@ -1,11 +1,12 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtPsgLogoPost: BlogPost = {
-  id: 373, 
+  id: 9324, // Make sure this ID is unique and consistent
   title: "**Pixel Art Logo PSG** : Guide Ultime de Création et Histoire [2024]",
   date: "2025-04-12",
-  category: "pixel-art", // Changed from "logos" to "pixel-art"
-  subCategory: "team-pixel-art", // Using an existing subcategory from the blog type definition
+  category: "pixel-art", // Consistently categorize as pixel-art
+  subCategory: "team-pixel-art",
   excerpt: "Découvrez l'art de créer des **pixel art logo foot PSG** uniques et captivants. Un guide complet pour transformer l'emblème parisien en une œuvre pixellisée mémorable.",
   content: `# Le **Pixel Art Foot PSG** : Une Nouvelle Dimension Artistique
 

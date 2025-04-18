@@ -113,7 +113,7 @@ export const logoPosts: BlogPost[] = [
   // Removed direct reference to tacaDePortugalLogoPost since it's included in competitionPosts
   ballonDorLogoPost,
   // Suppression de cadizLogoPost qui est déjà inclus via spanishClubPosts
-  pixelArtPsgLogoPost,
+  pixelArtPsgLogoPost, // Keep this as it's the primary location for this post
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,
   rouenLogoPost,

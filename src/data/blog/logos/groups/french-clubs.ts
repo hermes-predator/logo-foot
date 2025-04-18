@@ -1,5 +1,6 @@
 import { BlogPost } from '../../../../types/blog';
 import { lePuyFootLogoPost } from '../le-puy-foot-logo';
+import { evianThononLogoPost } from '../evian-thonon-logo';
 
 // Import French club logo posts
 import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
@@ -106,5 +107,6 @@ export const frenchClubPosts: BlogPost[] = [
   toulouseLogoPost,
   troyesLogoPost,
   valenciennesLogoPost,
-  lePuyFootLogoPost
+  lePuyFootLogoPost,
+  evianThononLogoPost
 ];

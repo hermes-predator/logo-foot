@@ -67,6 +67,7 @@ import { louisvilleCityLogoPost } from './louisville-city-logo';
 // import { burtonAlbionLogoPost } from './burton-albion-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
+import { austinFcLogoPost } from './austin-fc-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -135,5 +136,6 @@ export const logoPosts: BlogPost[] = [
   // Suppression de burtonAlbionLogoPost de l'inclusion directe car il est déjà inclus via englishClubPosts
   // burtonAlbionLogoPost
   newEnglandRevolutionLogoPost,
-  fcDallasLogoPost
+  fcDallasLogoPost,
+  austinFcLogoPost
 ];

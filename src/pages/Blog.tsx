@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -125,7 +126,8 @@ const Blog = () => {
   const metaDescription = getEnrichedDescription();
   const metaKeywords = getEnrichedKeywords();
   
-  return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta name="description" content={metaDescription} />
@@ -154,21 +156,27 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         
-        {categoryParam && <div className="pl-4 mb-6">
+        {categoryParam && (
+          <div className="pl-4 mb-6">
             <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
-          </div>}
+          </div>
+        )}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
-          {totalPages > 1 && <div className="px-4">
+          {totalPages > 1 && (
+            <div className="px-4">
               <BlogPagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
-            </div>}
+            </div>
+          )}
         </div>
       </main>
 
       {/* Add the FloatingCTA component */}
       <FloatingCTA />
-    </div>;
+    </div>
+  );
 };
+
 export default Blog;

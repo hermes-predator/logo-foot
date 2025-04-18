@@ -1,5 +1,5 @@
-
 import { BlogPost } from '../../../../types/blog';
+import { lePuyFootLogoPost } from '../le-puy-foot-logo';
 
 // Import French club logo posts
 import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
@@ -54,7 +54,6 @@ import { toulouseLogoPost } from '../toulouse-logo';
 import { troyesLogoPost } from '../troyes-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
 
-// Group all French club logo posts
 export const frenchClubPosts: BlogPost[] = [
   acAjaccioLogoPost,
   amiensLogoPost,
@@ -106,5 +105,6 @@ export const frenchClubPosts: BlogPost[] = [
   toulouseFCLogoPost,
   toulouseLogoPost,
   troyesLogoPost,
-  valenciennesLogoPost
+  valenciennesLogoPost,
+  lePuyFootLogoPost
 ];

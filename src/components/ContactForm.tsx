@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Send } from 'lucide-react';
 
@@ -6,8 +5,8 @@ const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
       <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
-        <div className="bg-gray-200 rounded-md p-1.5">
-          <Send className="w-4 h-4 text-black" />
+        <div className="bg-blue-100 rounded-md p-1.5">
+          <Send className="w-4 h-4 text-blue-600" />
         </div>
         Support disponible
       </h3>

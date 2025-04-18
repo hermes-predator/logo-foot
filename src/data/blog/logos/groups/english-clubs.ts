@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs anglais
@@ -58,6 +57,8 @@ import { wrexhamLogoPost } from '../wrexham-logo';
 // Remove any duplicate import for queensParkRangersLogoPost if it exists
 import { stevenageLogoPost } from '../stevenage-logo';
 // Supprimé l'import en doublon de burnleyLogoPost
+// Add import for Burton Albion logo
+import { burtonAlbionLogoPost } from '../burton-albion-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -111,5 +112,6 @@ export const englishClubPosts: BlogPost[] = [
   prestonNorthEndLogoPost,
   wycombeWanderersLogoPost,
   wrexhamLogoPost,
-  stevenageLogoPost
+  stevenageLogoPost,
+  burtonAlbionLogoPost
 ];

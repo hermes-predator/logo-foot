@@ -65,6 +65,7 @@ import { saintPriestLogoPost } from '../saint-priest-logo';
 import { istresLogoPost } from '../istres-logo';
 import { bastiaBorgoLogoPost } from '../bastia-borgo-logo';
 import { vierzonLogoPost } from '../vierzon-logo';
+import { bourgoinjaillieuLogoPost } from '../bourgoin-jallieu-logo';
 
 export const frenchClubPosts: BlogPost[] = [
   acAjaccioLogoPost,
@@ -130,5 +131,6 @@ export const frenchClubPosts: BlogPost[] = [
   saintPriestLogoPost,
   istresLogoPost,
   bastiaBorgoLogoPost,
-  vierzonLogoPost
+  vierzonLogoPost,
+  bourgoinjaillieuLogoPost
 ];

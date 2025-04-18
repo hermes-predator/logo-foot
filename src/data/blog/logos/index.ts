@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -70,7 +71,6 @@ import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
 // Remove direct import of houstonDynamoLogoPost since it's already in nonEuropeanClubPosts
 // import { houstonDynamoLogoPost } from './houston-dynamo-logo';
-import { stadeMayennaisLogoPost } from './stade-mayennais-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -140,8 +140,7 @@ export const logoPosts: BlogPost[] = [
   // burtonAlbionLogoPost
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
-  austinFcLogoPost,
+  austinFcLogoPost
   // Remove direct inclusion of houstonDynamoLogoPost since it's already in nonEuropeanClubPosts
   // houstonDynamoLogoPost
-  stadeMayennaisLogoPost
 ];

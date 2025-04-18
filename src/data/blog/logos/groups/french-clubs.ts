@@ -57,6 +57,7 @@ import { toulouseFCLogoPost } from '../toulouse-fc-logo';
 import { toulouseLogoPost } from '../toulouse-logo';
 import { troyesLogoPost } from '../troyes-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
+import { raonEtapeLogoPost } from '../raon-l-etape-logo';
 
 export const frenchClubPosts: BlogPost[] = [
   acAjaccioLogoPost,
@@ -114,5 +115,6 @@ export const frenchClubPosts: BlogPost[] = [
   evianThononLogoPost,
   colomiersLogoPost,
   lesHerbiersLogoPost,
-  aubagneLogoPost
+  aubagneLogoPost,
+  raonEtapeLogoPost
 ];

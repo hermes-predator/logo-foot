@@ -18,9 +18,7 @@ const Logo = () => {
         <span className="text-lg font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
           logo-foot
         </span>
-        <span className="text-[10px] text-gray-600 -mt-1 tracking-widest lowercase font-semibold opacity-70 pl-0.5">
-          .com
-        </span>
+        <span className="text-[10px] text-gray-500 -mt-1 tracking-wider font-medium opacity-80">.com</span>
       </div>
     </div>
   );

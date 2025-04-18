@@ -10,7 +10,7 @@ const Logo = () => {
         <div className="relative flex items-center bg-white dark:bg-black rounded-lg ring-1 ring-gray-900/5 leading-none p-1.5">
           <Folder 
             className="w-5 h-5 text-purple-600" 
-            strokeWidth={2}
+            strokeWidth={2.5}
           />
         </div>
       </div>

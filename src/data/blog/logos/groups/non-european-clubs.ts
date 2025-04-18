@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import non-European club logo posts
@@ -38,9 +37,11 @@ import { louisvilleCityLogoPost } from '../louisville-city-logo';
 import { newEnglandRevolutionLogoPost } from '../new-england-revolution-logo';
 import { fcDallasLogoPost } from '../fc-dallas-logo';
 import { austinFcLogoPost } from '../austin-fc-logo';
+import { houstonDynamoLogoPost } from '../houston-dynamo-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
+  houstonDynamoLogoPost,
   alHilalLogoPost,
   alNassrLogoPost,
   alAhliLogoPost,

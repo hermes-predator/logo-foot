@@ -59,6 +59,7 @@ import { troyesLogoPost } from '../troyes-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
 import { raonEtapeLogoPost } from '../raon-l-etape-logo';
 import { bergeracLogoPost } from '../bergerac-logo';
+import { limonestLogoPost } from '../limonest-logo';
 
 export const frenchClubPosts: BlogPost[] = [
   acAjaccioLogoPost,
@@ -118,5 +119,6 @@ export const frenchClubPosts: BlogPost[] = [
   lesHerbiersLogoPost,
   aubagneLogoPost,
   raonEtapeLogoPost,
-  bergeracLogoPost
+  bergeracLogoPost,
+  limonestLogoPost
 ];

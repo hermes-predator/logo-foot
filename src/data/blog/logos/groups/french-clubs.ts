@@ -4,6 +4,7 @@ import { evianThononLogoPost } from '../evian-thonon-logo';
 import { colomiersLogoPost } from '../colomiers-logo';
 import { lesHerbiersLogoPost } from '../les-herbiers-logo';
 import { aubagneLogoPost } from '../aubagne-logo';
+import { stadeMayennaisLogoPost } from '../stade-mayennais-logo';
 
 // Import French club logo posts
 import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
@@ -132,5 +133,6 @@ export const frenchClubPosts: BlogPost[] = [
   istresLogoPost,
   bastiaBorgoLogoPost,
   vierzonLogoPost,
-  bourgoinjaillieuLogoPost
+  bourgoinjaillieuLogoPost,
+  stadeMayennaisLogoPost
 ];

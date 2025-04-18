@@ -35,6 +35,7 @@ import { louisvilleCityLogoPost } from '../louisville-city-logo';
 // import { saoPauloLogoPost } from '../sao-paulo-logo';
 // import { corinthiansLogoPost } from '../corinthians-logo';
 import { newEnglandRevolutionLogoPost } from '../new-england-revolution-logo';
+import { fcDallasLogoPost } from '../fc-dallas-logo';
 
 // Group non-European club logo posts
 export const nonEuropeanClubPosts: BlogPost[] = [
@@ -66,7 +67,8 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   columbusCrewLogoPost,
   sacramentoRepublicLogoPost,
   louisvilleCityLogoPost,
-  newEnglandRevolutionLogoPost
+  newEnglandRevolutionLogoPost,
+  fcDallasLogoPost
   // Remove individual entries as they're included via group imports
   // saoPauloLogoPost,
   // corinthiansLogoPost,

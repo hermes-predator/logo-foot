@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -13,7 +12,6 @@ type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
 
-// Extended options with our custom wheelScroll property
 interface ExtendedCarouselOptions extends CarouselOptions {
   wheelScroll?: boolean;
 }
@@ -62,7 +60,6 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
-    // Extract wheelScroll from opts to avoid passing it directly to Embla
     const { wheelScroll, ...emblaOpts } = opts || {}
     
     const [carouselRef, api] = useEmblaCarousel(
@@ -75,32 +72,24 @@ const Carousel = React.forwardRef<
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
 
-    // Add wheel event handling for trackpad/mouse scrolling
     React.useEffect(() => {
       if (!api || !wheelScroll) return
 
-      // Wait for the DOM to be fully rendered
-      const timer = setTimeout(() => {
-        // The correct way to access the DOM element with embla carousel
-        const emblaViewport = carouselRef?.querySelector('.embla__viewport') as HTMLElement | null
-        
-        if (!emblaViewport) return
-        
-        const handleWheel = (event: WheelEvent) => {
-          event.preventDefault()
-          // Scroll the carousel based on wheel delta
-          api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
-        }
+      const emblaRoot = carouselRef?.current
+      if (!emblaRoot) return
+      
+      const viewport = emblaRoot.querySelector('.embla__viewport') as HTMLElement
+      if (!viewport) return
+      
+      const handleWheel = (event: WheelEvent) => {
+        event.preventDefault()
+        api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
+      }
 
-        emblaViewport.addEventListener('wheel', handleWheel, { passive: false })
-        
-        return () => {
-          emblaViewport.removeEventListener('wheel', handleWheel)
-        }
-      }, 100) // Short delay to ensure DOM is ready
-
+      viewport.addEventListener('wheel', handleWheel, { passive: false })
+      
       return () => {
-        clearTimeout(timer)
+        viewport.removeEventListener('wheel', handleWheel)
       }
     }, [api, wheelScroll, carouselRef])
 

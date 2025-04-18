@@ -23,47 +23,48 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
-    
-    <section className="relative pt-12 pb-10 px-4 overflow-hidden">
-      {/* Background effects - Optimisés pour les performances */}
+    <section className="relative pt-16 pb-12 px-4 overflow-hidden">
+      {/* Améliorations des effets de fond */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
-        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 7s ease-in-out infinite' }} />
-        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.12),transparent_50%)]" />
+        <div className="absolute top-40 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDuration: '7s' }} />
+        <div className="absolute top-60 right-0 w-[32rem] h-[32rem] bg-purple-100/20 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDuration: '10s' }} />
       </div>
       
-      {/* Decorative elements avec animation optimisée */}
-      <div className="absolute top-28 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
-        <Sparkles className="h-8 w-8" />
-      </div>
-      <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
+      {/* Éléments décoratifs améliorés */}
+      <div className="absolute top-28 left-1/3 text-blue-400/30 animate-pulse" style={{ animationDuration: '5s' }}>
         <Sparkles className="h-10 w-10" />
       </div>
+      <div className="absolute bottom-20 right-1/4 text-purple-400/30 animate-pulse" style={{ animationDuration: '7s', animationDelay: '1s' }}>
+        <Sparkles className="h-12 w-12" />
+      </div>
       
-      <div className="max-w-4xl mx-auto text-center space-y-6">
-        {/* Premium Badge - Optimisé */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-transform duration-300 hover:shadow-md mb-2 hover:-translate-y-0.5">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Badge Premium amélioré */}
+        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-gray-50 to-white border border-gray-200/70 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 mb-3">
           <Crown className="w-5 h-5" style={{ fill: '#FFC107', stroke: '#FFC107' }} />
-          <span className="text-sm font-medium text-gray-900">Collection Premium</span>
+          <span className="text-sm font-semibold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">Collection Premium</span>
         </div>
 
-        {/* Main title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
+        {/* Titre principal amélioré */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">
           Logos des clubs de football
         </h1>
 
-        {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6">
-          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</span>
+        {/* Sous-titre amélioré */}
+        <h2 className="text-2xl md:text-3xl font-extrabold italic mt-6 relative">
+          <span className="bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">
+            ⦗FRONT-CLOUD⦘~ Football.zip
+          </span>
         </h2>
 
-        {/* Description */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        {/* Description améliorée */}
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-medium">
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
-        {/* Trust badges - Animation optimisée */}
+        {/* Badges de confiance améliorés */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
@@ -79,7 +80,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* CTA buttons - Taille augmentée et meilleur espacement */}
+        {/* Boutons CTA */}
         <div className="flex items-center justify-center gap-5 pt-8">
           <Dialog>
             <DialogTrigger asChild>

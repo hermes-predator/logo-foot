@@ -59,6 +59,7 @@ import { stevenageLogoPost } from '../stevenage-logo';
 // Supprimé l'import en doublon de burnleyLogoPost
 // Add import for Burton Albion logo
 import { burtonAlbionLogoPost } from '../burton-albion-logo';
+import { cambridgeUnitedLogoPost } from '../cambridge-united-logo';
 import { morecambeLogoPost } from '../morecambe-logo';
 
 export const englishClubPosts: BlogPost[] = [
@@ -114,6 +115,7 @@ export const englishClubPosts: BlogPost[] = [
   wycombeWanderersLogoPost,
   wrexhamLogoPost,
   stevenageLogoPost,
+  cambridgeUnitedLogoPost,
   morecambeLogoPost,
   burtonAlbionLogoPost
 ];

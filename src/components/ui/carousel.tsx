@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -13,7 +12,6 @@ type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
 
-// Extended options with our custom wheelScroll property
 interface ExtendedCarouselOptions extends CarouselOptions {
   wheelScroll?: boolean;
 }
@@ -62,7 +60,6 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
-    // Extract wheelScroll from opts to avoid passing it directly to Embla
     const { wheelScroll, ...emblaOpts } = opts || {}
     
     const [carouselRef, api] = useEmblaCarousel(
@@ -75,20 +72,16 @@ const Carousel = React.forwardRef<
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
 
-    // Add wheel event handling for trackpad/mouse scrolling
     React.useEffect(() => {
       if (!api || !wheelScroll) return
 
-      // Wait for the DOM to be fully rendered
       const timer = setTimeout(() => {
-        // The correct way to access the DOM element with embla carousel
-        const emblaViewport = carouselRef?.querySelector('.embla__viewport') as HTMLElement | null
+        const emblaViewport = carouselRef.current?.querySelector('.embla__viewport') as HTMLElement | null
         
         if (!emblaViewport) return
         
         const handleWheel = (event: WheelEvent) => {
           event.preventDefault()
-          // Scroll the carousel based on wheel delta
           api.scrollTo(api.selectedScrollSnap() + Math.sign(event.deltaY))
         }
 
@@ -97,7 +90,7 @@ const Carousel = React.forwardRef<
         return () => {
           emblaViewport.removeEventListener('wheel', handleWheel)
         }
-      }, 100) // Short delay to ensure DOM is ready
+      }, 100)
 
       return () => {
         clearTimeout(timer)
@@ -184,7 +177,6 @@ const Carousel = React.forwardRef<
     )
   }
 )
-Carousel.displayName = "Carousel"
 
 const CarouselContent = React.forwardRef<
   HTMLDivElement,

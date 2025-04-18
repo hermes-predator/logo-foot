@@ -1,6 +1,7 @@
-import { FolderClosed, Home, BookOpen } from "lucide-react";
+import { BookOpen, Home } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 const Header = () => {
   const location = useLocation();
@@ -36,36 +37,32 @@ const Header = () => {
       <nav className="container mx-auto flex items-center justify-between gap-8">
         <Link 
           to="/" 
-          className="flex items-center gap-2 text-gray-700 hover:text-purple-600 transition-colors"
+          className="hover:opacity-80 transition-opacity"
         >
-          <FolderClosed 
-            className="w-6 h-6 text-black fill-gray-400/15" 
-            strokeWidth={1.5}
-          />
-          <span className="font-medium">logo-foot.com</span>
+          <Logo />
         </Link>
         
         <div className="flex items-center gap-8">
           <Link 
             to="/" 
             className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
-              isActive('/') 
+              currentPath === '/' 
                 ? 'font-medium bg-gray-100/80' 
                 : 'text-gray-700 hover:text-purple-600'
             }`}
           >
-            <Home className={`w-4 h-4 ${isActive('/') ? 'text-gray-800' : ''}`} />
+            <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
             <span>Accueil</span>
           </Link>
           <Link 
             to="/blog" 
             className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
-              isActive('/blog') 
+              currentPath.startsWith('/blog') 
                 ? 'font-medium bg-gray-100/80' 
                 : 'text-gray-700 hover:text-purple-600'
             }`}
           >
-            <BookOpen className={`w-4 h-4 ${isActive('/blog') ? 'text-gray-800' : ''}`} />
+            <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
             <span>Blog</span>
           </Link>
         </div>

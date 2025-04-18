@@ -16,42 +16,19 @@ Le club a développé son identité visuelle en s'inspirant de l'héritage histo
 
 ### Symbolisme et Design
 
-Le **cambridge united logo png** contemporain intègre plusieurs éléments significatifs :
-
-1. Les Couleurs Ambre et Noir
-- Teintes historiques du club
-- Symboles de force et d'excellence
-
-2. Le 'U' Emblématique
-- Référence au surnom "The U's"
-- Design distinctif et mémorable
+Le **cambridge united logo png** contemporain intègre plusieurs éléments significatifs : les couleurs Ambre et Noir sont des teintes historiques du club, symboles de force et d'excellence. Le 'U' emblématique fait référence au surnom "The U's" et présente un design distinctif et mémorable.
 
 ## Évolution à Travers les Années
 
-Le **cambridge united logo** a connu plusieurs transformations majeures :
-
-1. Les Premiers Designs
-- Versions initiales épurées
-- Incorporation progressive d'éléments universitaires
-
-2. Modernisation
-- Adoption d'un style plus contemporain
-- Amélioration de la lisibilité et de l'impact visuel
+Le **cambridge united logo** a connu plusieurs transformations majeures. Les premiers designs étaient des versions initiales épurées avec une incorporation progressive d'éléments universitaires. La modernisation s'est traduite par l'adoption d'un style plus contemporain et l'amélioration de la lisibilité et de l'impact visuel.
 
 ### Applications du **Cambridge United Logo**
 
-Le **cambridge united logo png** est utilisé dans divers contextes :
-- Maillots et équipements officiels
-- Communications digitales
-- Merchandising
-- Signalétique de l'Abbey Stadium
+Le **cambridge united logo png** est utilisé dans divers contextes : maillots et équipements officiels, communications digitales, merchandising et signalétique de l'Abbey Stadium.
 
 ## Impact Local et Identité
 
-Le logo est devenu un symbole important pour la communauté de Cambridge, représentant :
-- La fierté locale
-- L'héritage universitaire
-- L'ambition sportive du club
+Le logo est devenu un symbole important pour la communauté de Cambridge, représentant la fierté locale, l'héritage universitaire et l'ambition sportive du club.
 
 ## Conclusion
 

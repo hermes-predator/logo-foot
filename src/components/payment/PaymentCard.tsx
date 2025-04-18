@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -12,6 +11,7 @@ import { measurePerformance } from '@/lib/performance';
 import { useIsSmallMobile } from '@/hooks/use-mobile';
 import PaymentCardBack from './PaymentCardBack';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import DynamicTestimonial from '../testimonials/DynamicTestimonial';
 
 interface PaymentCardProps {
   recentBuyers: number;
@@ -102,6 +102,12 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <div className="relative z-10">
             <FeatureList />
             <PricingBlock />
+            
+            {/* Ajout du composant de témoignages */}
+            <div className="mb-6 flex justify-center">
+              <DynamicTestimonial />
+            </div>
+            
             <PaymentButton />
           </div>
         </div>

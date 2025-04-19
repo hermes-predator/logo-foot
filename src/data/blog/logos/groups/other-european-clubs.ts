@@ -23,7 +23,7 @@ import { laGantoiseLogoPost } from '../la-gantoise-logo';
 import { olympiakosLogoPost } from '../olympiakos-logo';
 import { panathinaikosLogoPost } from '../panathinaikos-logo';
 import { partizanBelgradeLogoPost } from '../partizan-belgrade-logo';
-import { psvEindhovenPost } from '../psv-eindhoven-logo';
+import { psvEindhovenLogoPost } from '../psv-eindhoven-logo';
 import { royalAntwerpLogoPost } from '../royal-antwerp-logo';
 import { shakhtarDonetskLogoPost } from '../shakhtar-donetsk-logo';
 import { slaviaPragueLogoPost } from '../slavia-prague-logo';
@@ -80,7 +80,7 @@ import { courtraiLogoPost } from '../courtrai-logo';
 import { mechelenLogoPost } from '../mechelen-logo';
 import { fcUtrechtLogoPost } from '../fc-utrecht-logo';
 import { spartaRotterdamLogoPost } from '../sparta-rotterdam-logo';
-import { scHeerenveenPost } from '../sc-heerenveen-logo';
+import { scHeerenveenLogoPost } from '../sc-heerenveen-logo';
 import { goAheadEaglesLogoPost } from '../go-ahead-eagles-logo';
 import { heraclesAlmeloLogoPost } from '../heracles-almelo-logo';
 import { fortunaSittardLogoPost } from '../fortuna-sittard-logo';
@@ -88,7 +88,6 @@ import { fcGroningenLogoPost } from '../fc-groningen-logo';
 import { pecZwolleLogoPost } from '../pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from '../rkc-waalwijk-logo';
 import { nacBredaLogoPost } from '../nac-breda-logo';
-import { willemIILogoPost } from '../willem-ii-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -119,7 +118,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   olympiakosLogoPost,
   panathinaikosLogoPost,
   partizanBelgradeLogoPost,
-  psvEindhovenPost,
+  psvEindhovenLogoPost,
   qarabagLogoPost,
   royalAntwerpLogoPost,
   shakhtarDonetskLogoPost,
@@ -169,13 +168,12 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   jsKabylieLogoPost,
   usmAlgerLogoPost,
   spartaRotterdamLogoPost,
-  scHeerenveenPost,
+  scHeerenveenLogoPost,
   goAheadEaglesLogoPost,
   heraclesAlmeloLogoPost,
   fortunaSittardLogoPost,
   fcGroningenLogoPost,
   pecZwolleLogoPost,
   rkcWaalwijkLogoPost,
-  nacBredaLogoPost,
-  willemIILogoPost
+  nacBredaLogoPost
 ];

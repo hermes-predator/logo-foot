@@ -73,7 +73,6 @@ import { austinFcLogoPost } from './austin-fc-logo';
 import { pecZwolleLogoPost } from './pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
-import { willemIILogoPost } from './willem-ii-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -148,6 +147,5 @@ export const logoPosts: BlogPost[] = [
   // houstonDynamoLogoPost
   pecZwolleLogoPost,
   rkcWaalwijkLogoPost,
-  nacBredaLogoPost,
-  willemIILogoPost
+  nacBredaLogoPost
 ];

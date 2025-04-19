@@ -75,6 +75,7 @@ import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
 import { willemIiLogoPost } from './willem-ii-logo';
 import { almereCityLogoPost } from './almere-city-logo';
+import { westerloLogoPost } from './westerlo-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -152,4 +153,5 @@ export const logoPosts: BlogPost[] = [
   nacBredaLogoPost,
   willemIiLogoPost,
   almereCityLogoPost,
+  westerloLogoPost,
 ];

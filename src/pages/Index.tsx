@@ -9,7 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 // Lazy load components that aren't needed for initial render
 const LazyProductGallery = lazy(() => import('../components/ProductGallery'));
-const LazyPaymentSection = lazy(() => import('../components/PaymentSection'));
+const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSection'));
 const LazyTestimonials = lazy(() => import('../components/Testimonials'));
 
 const Index = () => {

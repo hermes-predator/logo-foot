@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -238,17 +237,22 @@ const Footer = () => {
               <div className="mt-4 p-4 border border-amber-200 bg-amber-50 rounded-lg">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <div className="text-xs text-amber-800 space-y-3">
+                  <div className="text-xs text-amber-800 space-y-6">
                     <p>Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.</p>
-                    
+
+
                     <p>⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.</p>
-                    
+
+
                     <p>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</p>
-                    
+
+
                     <p>Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.</p>
-                    
+
+
                     <p>Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.</p>
-                    
+
+
                     <p>Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernées dans le cadre de ses projets personnels.</p>
                   </div>
                 </div>
@@ -259,4 +263,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

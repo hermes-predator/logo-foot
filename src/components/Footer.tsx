@@ -239,11 +239,16 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                   <div className="text-xs text-amber-800">
-                    Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.<br />
-                    ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.<br />
-                    Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.<br />
-                    Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.<br />
-                    Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.<br />
+                    Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
+
+                    ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+
+                    Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+
+                    Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+
+                    Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.
+
                     Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernées dans le cadre de ses projets personnels.
                   </div>
                 </div>

@@ -79,9 +79,15 @@ export function WebVitalsReporter({ devMode = false }: { devMode?: boolean }) {
     });
     
     return () => {
-      lcpObserver?.disconnect();
-      fidObserver?.disconnect();
-      clsObserver?.disconnect();
+      if (lcpObserver && 'disconnect' in lcpObserver) {
+        lcpObserver.disconnect();
+      }
+      if (fidObserver && 'disconnect' in fidObserver) {
+        fidObserver.disconnect();
+      }
+      if (clsObserver && 'disconnect' in clsObserver) {
+        clsObserver.disconnect();
+      }
     };
   }, [devMode]);
 

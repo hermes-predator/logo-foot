@@ -109,7 +109,7 @@ const BlogImage = ({
           } ${isDefault ? 'opacity-90' : ''} ${className}`}
           loading={priority ? "eager" : "lazy"}
           decoding={priority ? "sync" : "async"}
-          fetchpriority={priority ? "high" : "auto"}
+          fetchPriority={priority ? "high" : "auto"}
           itemProp="contentUrl"
           onContextMenu={(e) => e.preventDefault()}
           draggable="false"

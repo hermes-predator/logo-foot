@@ -49,7 +49,7 @@ export const generateSrcSet = (
   };
 };
 
-// Ajouter les fonctions manquantes qui sont importées dans App.tsx
+// Fonction pour mesurer les Core Web Vitals
 export const measureCoreWebVitals = (options: { debug?: boolean } = {}): () => void => {
   const { debug = false } = options;
   
@@ -285,11 +285,11 @@ interface PerformanceEventTiming extends PerformanceEntry {
   processingStart: number;
 }
 
-// Déclaration pour window.dataLayer
+// FIX: Résoudre les conflits de déclarations en les définissant une seule fois
+// Nous supprimons la déclaration en double et gardons seulement celle dans vite-env.d.ts
 declare global {
   interface Window {
     dataLayer?: any[];
-    requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
-    cancelIdleCallback?: (handle: number) => void;
   }
 }
+

@@ -3,10 +3,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ContactForm from './ContactForm';
-
 const Footer = () => {
-  return (
-    <footer className="border-t mt-12 py-6 px-4">
+  return <footer className="border-t mt-12 py-6 px-4">
       <div className="container mx-auto">
         <div className="flex justify-center gap-8 text-sm text-gray-600">
           <Dialog>
@@ -67,7 +65,7 @@ const Footer = () => {
                 <section>
                   <h3 className="font-semibold mb-2">Article 7 - Clause de non-responsabilité</h3>
                   
-                  <p>Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.</p>
+                  <p>Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives. ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.</p>
                   
                   <p>⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.</p>
                   
@@ -240,11 +238,11 @@ const Footer = () => {
                   <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                   <div className="text-xs text-amber-800 space-y-6">
                     <p>
-                      Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.<br/><br/>
-                      ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.<br/><br/>
-                      Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.<br/><br/>
-                      Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.<br/><br/>
-                      Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.<br/><br/>
+                      Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.<br /><br />
+                      ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.<br /><br />
+                      Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.<br /><br />
+                      Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.<br /><br />
+                      Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.<br /><br />
                       Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernées dans le cadre de ses projets personnels.
                     </p>
                   </div>
@@ -254,8 +252,6 @@ const Footer = () => {
           </Dialog>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

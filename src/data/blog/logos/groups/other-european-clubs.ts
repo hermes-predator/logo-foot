@@ -76,6 +76,7 @@ import { cskaSofiaLogoPost } from '../cska-sofia-logo';
 import { rijekaLogoPost } from '../rijeka-logo';
 import { zulteWaregemLogoPost } from '../zulte-waregem-logo';
 import { charleroiLogoPost } from '../charleroi-logo';
+import { courtraiLogoPost } from '../courtrai-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -150,6 +151,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   rijekaLogoPost,
   zulteWaregemLogoPost,
   charleroiLogoPost,
+  courtraiLogoPost,
   jsKabylieLogoPost,
   usmAlgerLogoPost
 ];

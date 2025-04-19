@@ -1,5 +1,5 @@
 
-# Robots.txt pour Logo-Foot.com - Version 2.0 optimisée pour le référencement
+# Robots.txt pour Logo-Foot.com - Version 3.0 optimisée pour le référencement
 User-agent: *
 Allow: /
 Allow: /blog/
@@ -10,12 +10,11 @@ Disallow: /private/
 Disallow: /admin/
 Disallow: /api/
 
+# Sitemap Index
+Sitemap: https://logo-foot.com/sitemap-index.xml
+
 # Protection contre les crawlers trop agressifs
 Crawl-delay: 2
-
-# Sitemap principal et versions alternatives
-Sitemap: https://logo-foot.com/sitemap.xml
-Sitemap: https://logo-foot.com/api/sitemap
 
 # Directive pour les moteurs de recherche majeurs
 User-agent: Googlebot
@@ -44,60 +43,29 @@ User-agent: Baiduspider
 Allow: /
 Crawl-delay: 2
 
-# Directives spécifiques pour les images
-User-agent: Googlebot-Image
-Allow: /blog-images/
-Allow: /gallery/
-Allow: /lovable-uploads/
-
-# Directives pour les réseaux sociaux
-User-agent: Facebookexternalhit
-Allow: /
-Crawl-delay: 1
-
-User-agent: Twitterbot
-Allow: /
-Crawl-delay: 1
-
-# Priorités SEO pour articles importants
-User-agent: *
-Allow: /blog/71 # Article Europa League Logo
-Allow: /blog/70 # Article Champions League Logo
-Allow: /blog/69 # Article Équipe de France
-Allow: /blog/68 # Article Ajax Amsterdam
-Allow: /blog/3  # Article Équipes Nationales
-Allow: /blog/17 # Article Coupe du Monde
-Allow: /blog/200 # Article Spezia Calcio
-Allow: /blog/15 # Article Juventus
-Allow: /blog/32 # Article Inter Milan
-Allow: /blog/23 # Article PSG
-Allow: /blog/45 # Article OM
-Allow: /blog/12 # Article Real Madrid
-Allow: /blog/8  # Article FC Barcelone
-Allow: /blog/345 # Article Panathinaikos
-Allow: /blog/344 # Article AEK Athens
-Allow: /blog/343 # Article FC Twente
-Allow: /blog/342 # Article AZ Alkmaar
-Allow: /blog/61 # Article Hugo Ekitike
-
-# Optimisation pour les catégories
-Allow: /blog/category/logos
-Allow: /blog/category/history
-Allow: /blog/category/technical
-Allow: /blog/category/pixel-art
-Allow: /blog/category/analysis
-
-# Optimisation pays
-Allow: /gallery/country/france
-Allow: /gallery/country/england
-Allow: /gallery/country/spain
-Allow: /gallery/country/germany
-Allow: /gallery/country/italy
-Allow: /gallery/country/netherlands
-Allow: /gallery/country/greece
-Allow: /gallery/country/portugal
-
 # Hreflang tags info
 # hreflang: fr-fr - https://logo-foot.com/ - French (France) content
 # hreflang: en - https://logo-foot.com/en - English content
 # hreflang: ar - https://logo-foot.com/ar - Arabic content
+
+# Nouvelles directives pour optimiser l'exploration
+User-agent: *
+# Autoriser les principaux formats d'image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Exclure les URL en double et les paramètres non essentiels
+Disallow: /*?ref=
+Disallow: /*&ref=
+Disallow: /*?source=
+Disallow: /*&source=
+Disallow: /*?utm_*
+Disallow: /*&utm_*
+
+# Optimiser pour les ressources statiques
+Allow: /*.css$
+Allow: /*.js$
+Allow: /fonts/

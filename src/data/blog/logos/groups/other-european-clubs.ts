@@ -85,6 +85,7 @@ import { goAheadEaglesLogoPost } from '../go-ahead-eagles-logo';
 import { heraclesAlmeloLogoPost } from '../heracles-almelo-logo';
 import { fortunaSittardLogoPost } from '../fortuna-sittard-logo';
 import { fcGroningenLogoPost } from '../fc-groningen-logo';
+import { pecZwolleLogoPost } from '../pec-zwolle-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -169,5 +170,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   goAheadEaglesLogoPost,
   heraclesAlmeloLogoPost,
   fortunaSittardLogoPost,
-  fcGroningenLogoPost
+  fcGroningenLogoPost,
+  pecZwolleLogoPost
 ];

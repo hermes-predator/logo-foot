@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
@@ -92,8 +91,10 @@ import { nacBredaLogoPost } from '../nac-breda-logo';
 import { willemIiLogoPost } from '../willem-ii-logo';
 import { cercleBrugesLogoPost } from '../cercle-bruges-logo';
 import { unionSaintGilloiseLogoPost } from '../union-saint-gilloise-logo';
+import { aberdeenLogoPost } from '../aberdeen-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
+  aberdeenLogoPost,
   ajaxLogoPost,
   anderlechtLogoPost,
   apoelNicosiaLogoPost,
@@ -174,9 +175,9 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   spartaRotterdamLogoPost,
   scHeerenveenLogoPost,
   goAheadEaglesLogoPost,
-  heraclesAlmeloLogoPost,
   fortunaSittardLogoPost,
   fcGroningenLogoPost,
+  heraclesAlmeloLogoPost, // Fixed the incorrect reference
   pecZwolleLogoPost,
   rkcWaalwijkLogoPost,
   nacBredaLogoPost,

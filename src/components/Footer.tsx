@@ -3,10 +3,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ContactForm from './ContactForm';
-
 const Footer = () => {
-  return (
-    <footer className="border-t mt-12 py-6 px-4">
+  return <footer className="border-t mt-12 py-6 px-4">
       <div className="container mx-auto">
         <div className="flex justify-center gap-8 text-sm text-gray-600">
           <Dialog>
@@ -75,7 +73,7 @@ const Footer = () => {
                   
                   <p>Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.</p>
                   
-                  <p>Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.</p>
+                  
                   
                   <p>Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernées dans le cadre de ses projets personnels.</p>
                 </section>
@@ -257,8 +255,6 @@ const Footer = () => {
           </Dialog>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

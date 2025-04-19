@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
@@ -77,6 +78,7 @@ import { rijekaLogoPost } from '../rijeka-logo';
 import { zulteWaregemLogoPost } from '../zulte-waregem-logo';
 import { charleroiLogoPost } from '../charleroi-logo';
 import { courtraiLogoPost } from '../courtrai-logo';
+import { kvMechelenLogoPost } from '../kv-mechelen-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -152,6 +154,5 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   zulteWaregemLogoPost,
   charleroiLogoPost,
   courtraiLogoPost,
-  jsKabylieLogoPost,
-  usmAlgerLogoPost
+  kvMechelenLogoPost
 ];

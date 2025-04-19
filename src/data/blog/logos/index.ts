@@ -72,6 +72,7 @@ import { austinFcLogoPost } from './austin-fc-logo';
 // import { houstonDynamoLogoPost } from './houston-dynamo-logo';
 import { pecZwolleLogoPost } from './pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
+import { nacBredaLogoPost } from './nac-breda-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -145,5 +146,6 @@ export const logoPosts: BlogPost[] = [
   // Remove direct inclusion of houstonDynamoLogoPost since it's already in nonEuropeanClubPosts
   // houstonDynamoLogoPost
   pecZwolleLogoPost,
-  rkcWaalwijkLogoPost
+  rkcWaalwijkLogoPost,
+  nacBredaLogoPost
 ];

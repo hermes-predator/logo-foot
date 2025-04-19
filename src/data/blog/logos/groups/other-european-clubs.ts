@@ -80,7 +80,6 @@ import { courtraiLogoPost } from '../courtrai-logo';
 import { mechelenLogoPost } from '../mechelen-logo';
 import { fcUtrechtLogoPost } from '../fc-utrecht-logo';
 import { spartaRotterdamLogoPost } from '../sparta-rotterdam-logo';
-import { scHeerenveenLogoPost } from '../sc-heerenveen-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -160,6 +159,5 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   fcUtrechtLogoPost,
   jsKabylieLogoPost,
   usmAlgerLogoPost,
-  spartaRotterdamLogoPost,
-  scHeerenveenLogoPost
+  spartaRotterdamLogoPost
 ];

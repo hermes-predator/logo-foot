@@ -88,6 +88,7 @@ import { fcGroningenLogoPost } from '../fc-groningen-logo';
 import { pecZwolleLogoPost } from '../pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from '../rkc-waalwijk-logo';
 import { nacBredaLogoPost } from '../nac-breda-logo';
+import { willemIiLogoPost } from '../willem-ii-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -175,5 +176,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   fcGroningenLogoPost,
   pecZwolleLogoPost,
   rkcWaalwijkLogoPost,
-  nacBredaLogoPost
+  nacBredaLogoPost,
+  willemIiLogoPost
 ];

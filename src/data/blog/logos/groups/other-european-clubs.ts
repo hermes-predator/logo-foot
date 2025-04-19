@@ -77,7 +77,6 @@ import { rijekaLogoPost } from '../rijeka-logo';
 import { zulteWaregemLogoPost } from '../zulte-waregem-logo';
 import { charleroiLogoPost } from '../charleroi-logo';
 import { courtraiLogoPost } from '../courtrai-logo';
-import { mechelenLogoPost } from '../mechelen-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   ajaxLogoPost,
@@ -147,7 +146,12 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   gaziantepFkLogoPost,
   sivassporLogoPost,
   antalyasporLogoPost,
-  mechelenLogoPost,
+  levskiSofiaLogoPost,
+  cskaSofiaLogoPost,
+  rijekaLogoPost,
+  zulteWaregemLogoPost,
+  charleroiLogoPost,
+  courtraiLogoPost,
   jsKabylieLogoPost,
   usmAlgerLogoPost
 ];

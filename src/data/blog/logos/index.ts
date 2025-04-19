@@ -75,14 +75,13 @@ import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
 import { willemIiLogoPost } from './willem-ii-logo';
 import { dutchClubPosts } from './groups/dutch-clubs';
-import { ancienLogoOmPost } from './ancien-logo-om';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
   ...asianClubPosts,
   ...brazilianClubPosts,
   ...competitionPosts,
-  ...dutchClubPosts,
+  ...dutchClubPosts, // Add Dutch clubs
   ...englishClubPosts,
   ...frenchClubPosts,
   ...generalContentPosts,

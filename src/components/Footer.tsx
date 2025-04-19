@@ -111,61 +111,46 @@ Tout utilisateur est invité à respecter les droits de propriété intellectuel
                 <section>
                   <h3 className="font-semibold mb-2">Éditeur du site</h3>
                   <p>
-                    Le site logo-foot.com est édité par Hermès Ressources<br />
+                    Nom de l'entreprise : Hermès Ressources<br />
+                    Siège social : 35 rue Châteaubriand, 62100 Calais FR<br />
                     SIRET : 934 410 507 00016<br />
-                    Adresse : 7 rue de la Paix, 62100 Calais, France<br />
-                    Email : contact@logo-foot.com
+                    Contact : contact@logo-foot.com
                   </p>
-                </section>
-
-                <section>
-                  <h3 className="font-semibold mb-2">Directeur de la publication</h3>
-                  <p>Marc Lefebvre</p>
                 </section>
 
                 <section>
                   <h3 className="font-semibold mb-2">Hébergement</h3>
-                  <p>
-                    Ce site est hébergé par Vercel Inc.<br />
-                    Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789, USA<br />
-                    Téléphone : +1 (951) 383-6898
-                  </p>
+                  <p>Le site est hébergé par Hostinger, HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Activité</h3>
+                  <p>L'entreprise propose la vente de prestations de service commerciales et de produits digitaux téléchargeables.</p>
                 </section>
 
                 <section>
                   <h3 className="font-semibold mb-2">Propriété intellectuelle</h3>
-                  <p>
-                    L'ensemble des éléments constituant ce site (textes, graphismes, logiciels, photographies, images, vidéos, sons, plans, logos, marques, etc.) ainsi que le site lui-même, relèvent des lois françaises et internationales sur le droit d'auteur et la propriété intellectuelle.
-                  </p>
-                  <p className="mt-2">
-                    Ces éléments sont la propriété exclusive d'Hermès Ressources, à l'exception des éléments fournis par des partenaires ou clairement identifiés comme appartenant à des tiers.
-                  </p>
+                  <p>Tous les contenus présents sur ce site (textes, images, produits numériques) sont protégés par le droit d'auteur. Toute reproduction ou diffusion sans autorisation est interdite.</p>
+                </section>
+
+                <section>
+                  <h3 className="font-semibold mb-2">Droit de rétractation</h3>
+                  <p>Conformément à l'article L.221-28 du Code de la consommation, les produits numériques ne bénéficient pas du droit de rétractation dès lors qu'ils ont été téléchargés.</p>
                 </section>
 
                 <section>
                   <h3 className="font-semibold mb-2">Données personnelles</h3>
-                  <p>
-                    Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD - Règlement UE 2016/679), vous disposez d'un droit d'accès, de rectification, et d'effacement de vos données. Pour exercer ces droits, veuillez nous contacter à l'adresse : contact@logo-foot.com.
-                  </p>
+                  <p>Les informations collectées sont utilisées uniquement dans le cadre de la gestion des commandes et ne sont pas partagées avec des tiers. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en contactant contact@logo-foot.com.</p>
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Cookies</h3>
-                  <p>
-                    Ce site utilise des cookies pour améliorer l'expérience utilisateur. En navigant sur ce site, vous acceptez l'utilisation de ces cookies. Pour plus d'informations sur notre politique de cookies, contactez-nous.
-                  </p>
+                  <h3 className="font-semibold mb-2">Conservation des données de transaction</h3>
+                  <p>Les données relatives aux transactions et preuves d'achat sont conservées de manière sécurisée pendant 10 ans conformément aux obligations légales commerciales et fiscales françaises. Ces données incluent l'identifiant de transaction, la date, le montant et le produit acheté.</p>
                 </section>
 
                 <section>
-                  <h3 className="font-semibold mb-2">Divers</h3>
-                  <p>
-                    Hermès Ressources se réserve le droit de modifier les présentes mentions à tout moment. L'utilisateur est donc invité à les consulter régulièrement.
-                  </p>
-                </section>
-
-                <section>
-                  <h3 className="font-semibold mb-2">Dernière mise à jour</h3>
-                  <p>19 avril 2025</p>
+                  <h3 className="font-semibold mb-2">Litiges</h3>
+                  <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Le tribunal de commerce de Calais sera seul compétent en cas de litige non résolu à l'amiable.</p>
                 </section>
               </div>
             </DialogContent>

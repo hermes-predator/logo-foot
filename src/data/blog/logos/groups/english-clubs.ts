@@ -70,6 +70,7 @@ import { crawleyTownLogoPost } from '../crawley-town-logo';
 import { harrogateTownLogoPost } from '../harrogate-town-logo';
 
 import { walsallLogoPost } from '../walsall-logo';
+import { torquayUnitedLogoPost } from '../torquay-united-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -134,5 +135,6 @@ export const englishClubPosts: BlogPost[] = [
   tranmereRoversLogoPost,
   crawleyTownLogoPost,
   harrogateTownLogoPost,
-  walsallLogoPost
+  walsallLogoPost,
+  torquayUnitedLogoPost
 ];

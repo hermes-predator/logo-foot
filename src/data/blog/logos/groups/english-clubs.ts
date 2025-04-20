@@ -61,6 +61,7 @@ import { stevenageLogoPost } from '../stevenage-logo';
 import { burtonAlbionLogoPost } from '../burton-albion-logo';
 import { cambridgeUnitedLogoPost } from '../cambridge-united-logo';
 import { morecambeLogoPost } from '../morecambe-logo';
+import { fleetwoodTownLogoPost } from '../fleetwood-town-logo';
 
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
@@ -117,5 +118,6 @@ export const englishClubPosts: BlogPost[] = [
   stevenageLogoPost,
   cambridgeUnitedLogoPost,
   morecambeLogoPost,
-  burtonAlbionLogoPost
+  burtonAlbionLogoPost,
+  fleetwoodTownLogoPost
 ];

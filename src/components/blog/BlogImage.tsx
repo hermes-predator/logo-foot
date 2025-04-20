@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
@@ -29,8 +28,8 @@ const BlogImage = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const { optimizedSrc } = useImageOptimization({ 
     src, 
-    width, 
-    height, 
+    width: 800, // Force square dimensions
+    height: 800, // Force square dimensions
     quality: 80, 
     format: 'webp' 
   });
@@ -96,14 +95,14 @@ const BlogImage = ({
       ref={containerRef}
       id={imageId}
     >
-      <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
+      <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
           src={isInView || priority ? optimizedSrc : '/placeholder.svg'}
           alt={alt}
           title={imageTitle}
-          width={width}
-          height={height}
+          width={800}
+          height={800}
           className={`w-full h-full object-cover transition-opacity duration-300 ${
             isInView ? 'opacity-100' : 'opacity-0'
           } ${isDefault ? 'opacity-90' : ''} ${className}`}
@@ -115,8 +114,8 @@ const BlogImage = ({
           draggable="false"
         />
       </AspectRatio>
-      <meta itemProp="width" content={width.toString()} />
-      <meta itemProp="height" content={height.toString()} />
+      <meta itemProp="width" content="800" />
+      <meta itemProp="height" content="800" />
       <meta itemProp="name" content={imageTitle} />
       <meta itemProp="description" content={alt} />
       <meta itemProp="representativeOfPage" content={isDefault ? "false" : "true"} />

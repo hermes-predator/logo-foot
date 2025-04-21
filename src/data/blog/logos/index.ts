@@ -78,6 +78,7 @@ import { willemIiLogoPost } from './willem-ii-logo';
 import { almereCityLogoPost } from './almere-city-logo';
 import { westerloLogoPost } from './westerlo-logo';
 import { austriaWienLogoPost } from './austria-wien-logo';
+import { rapidWienLogoPost } from './rapid-wien-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -157,5 +158,6 @@ export const logoPosts: BlogPost[] = [
   willemIiLogoPost,
   almereCityLogoPost,
   westerloLogoPost,
-  austriaWienLogoPost
+  austriaWienLogoPost,
+  rapidWienLogoPost // Ajout de l’article Logo Rapid Wien
 ];

@@ -9,7 +9,7 @@ const ContactForm = () => {
         <div className="bg-blue-100 rounded-md p-1.5">
           <Mail className="w-4 h-4 text-blue-600" />
         </div>
-        Support disponible
+        Support clients
       </h3>
       <p>Pour toute demande ou si vous avez des questions, veuillez d'abord consulter la FAQ avant de nous contacter.</p>
       <p>Vous avez passé commande ? Veuillez nous fournir quelques informations pour nous aider à vous identifier :</p>

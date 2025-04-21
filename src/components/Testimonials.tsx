@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
-import { MessageCircle, Star } from 'lucide-react';
+import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -40,13 +39,13 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Alex G.",
+    name: "Alex G.",  // Changed from "Alexandre G."
     role: "Community Manager", 
     content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
     rating: 5
   },
   {
-    name: "Emma L.",
+    name: "Emma L.", // Changed from "Marie L."
     role: "Freelance",
     content: "Tout est parfait, merci :)",
     rating: 5
@@ -241,11 +240,11 @@ const Testimonials = () => {
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-7" 
+              className="h-6" 
               loading="lazy"
             />
             <div className="flex flex-col">
-              <span className="text-xs font-medium text-gray-700 tracking-wide">Derniers avis vérifiés basés sur 1034 avis</span>
+              <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
               <div className="flex items-center gap-1">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
                   <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
@@ -265,4 +264,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

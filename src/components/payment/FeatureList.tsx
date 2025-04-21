@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -57,7 +56,7 @@ const FeatureList = () => {
     {
       icon: Heart,
       text: "Prix accessible",
-      description: "Un tarif réduit pour permettre au plus grand nombre de s'équiper"
+      description: "Un tarif réduit pour permettre au plus grand nombre d'en disposer"
     },
     {
       icon: TrendingUp,

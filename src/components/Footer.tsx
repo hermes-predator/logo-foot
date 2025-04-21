@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -45,7 +46,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 3 - Produit</h3>
-                  <p>Le produit vendu est un fichier ZIP contenant une forte densité de collection et ressources numériques du football. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible.</p>
+                  <p>Le produit vendu est un fichier ZIP contenant une forte densité de collections et ressources numériques du football. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible.</p>
                 </section>
 
                 <section>
@@ -72,7 +73,7 @@ const Footer = () => {
 
 Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.<br /><br />
 
-Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernées dans le cadre de ses projets personnels.</p>
+Tout utilisateur est invité à respecter les droits de propriété intellectuelle des marques concernés dans le cadre de ses projets personnels.</p>
                 </section>
                 
                 <section>
@@ -257,3 +258,4 @@ Tout utilisateur est invité à respecter les droits de propriété intellectuel
 };
 
 export default Footer;
+

@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Pierre M.",
     role: "Développeur",
-    content: "Plus besoin de chercher pendant des heures les logos des clubs. Tout est là, bien organisé. Je recommande !",
+    content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé. Merci !",
     rating: 5
   },
   {

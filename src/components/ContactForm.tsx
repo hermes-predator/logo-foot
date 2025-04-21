@@ -27,7 +27,7 @@ const ContactForm = () => {
         <p className="text-xs text-gray-500 flex items-start gap-2">
           <ShieldCheck className="w-3 h-3 mt-0.5 flex-shrink-0 text-gray-400" />
           <span>
-            Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de ces données en nous contactant.
+            Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de ces données.
           </span>
         </p>
       </div>

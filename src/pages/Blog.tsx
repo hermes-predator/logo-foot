@@ -10,6 +10,7 @@ import BlogArticleList from '../components/blog/BlogArticleList';
 import BlogPagination from '../components/blog/BlogPagination';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import { useSearchParams } from 'react-router-dom';
+import LogoSubcategoriesBar from "../components/blog/LogoSubcategoriesBar";
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -153,11 +154,14 @@ const Blog = () => {
       <main className="container mx-auto px-4 py-3 pb-80">
         <Breadcrumbs />
         <BlogHeader />
-        
+        {/* Afficher la barre des sous-groupes seulement sur la racine sans catégorie principale */}
+        {!categoryParam && (
+          <LogoSubcategoriesBar />
+        )}
         {categoryParam && <div className="pl-4 mb-6">
-            <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
-            <p className="text-gray-600">{categoryDescription}</p>
-          </div>}
+          <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
+          <p className="text-gray-600">{categoryDescription}</p>
+        </div>}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />

@@ -55,7 +55,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 5 - Livraison</h3>
-                  <p>La livraison s'effectue immédiatement après le paiement par téléchargement numérique. Un lien de téléchargement est automatiquement fourni.</p>
+                  <p>La livraison s'effectue immédiatement après le paiement par téléchargement numérique. Un lien de téléchargement est automatiquement accessible.</p>
                 </section>
 
                 <section>

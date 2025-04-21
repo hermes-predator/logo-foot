@@ -73,12 +73,6 @@ const testimonials: Testimonial[] = [
     role: "Non renseigné",
     content: "Le zip est parfait rien à dire, mais il manque un espace utilisateur. Je recommande cela dit",
     rating: 4
-  },
-  {
-    name: "Loïc D.",
-    role: "Non renseigné",
-    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
-    rating: 5
   }
 ];
 

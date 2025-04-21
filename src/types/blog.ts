@@ -1,72 +1,40 @@
 
-export interface CountryChampionship {
-  [key: string]: string;
+export interface BlogPost {
+  id: number,
+  title: string,
+  excerpt: string,
+  date: string,
+  content: string,
+  keywords?: string,
+  category: BlogCategory,
+  subCategory?: string, // Adding this back as optional to maintain backward compatibility
+  galleryImageId?: number,
+  readingTime?: number,
+  previousPostId?: number,
+  nextPostId?: number
 }
 
-export interface CountryAdjective {
-  [key: string]: string;
-}
+export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
-export type CountryName = string;
-
-export type BlogCategory = 
-  | "logos"
-  | "french-logo"
-  | "english-logo"
-  | "history"
-  | "technical"
-  | "analysis"
-  | "pixel-art"
-  | "players";  // Ajout de la catégorie "players"
-
-// À jour : ajout des deux nouvelles catégories
-export const BLOG_CATEGORIES: Record<BlogCategory, { name: string; description: string }> = {
+export const BLOG_CATEGORIES = {
   logos: {
-    name: "Logos mixtes",
-    description: "Tous nos articles sur les logos de clubs et sélections, partout dans le monde"
+    name: 'Logos',
+    description: 'Découvrez notre collection de logos de football des plus grands clubs et équipes nationales.'
   },
-  "french-logo": {
-    name: "Clubs Français",
-    description: "Tous les articles sur les logos des clubs français (Ligue 1, Ligue 2, National, etc.)"
-  },
-  "english-logo": {
-    name: "Clubs Anglais",
-    description: "Tous les articles sur les logos des clubs anglais, du Big Six à la League Two"
+  players: {
+    name: 'Joueurs',
+    description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
   },
   history: {
-    name: "Histoire",
-    description: "Découvertes et récits sur l'évolution historique des logos d'équipes de football"
+    name: 'Histoire',
+    description: 'Plongez dans l\'histoire fascinante du football et de ses logos emblématiques à travers les époques.'
   },
   technical: {
-    name: "Technique & Création",
-    description: "Guides pratiques et techniques, conseils créatifs"
+    name: 'Techniques',
+    description: 'Guides et astuces pour comprendre et maîtriser les techniques de design de logos de football.'
   },
-  analysis: {
-    name: "Analyses de joueurs",
-    description: "Analyses sur les joueurs de foot et leur impact sur l'identité du club"
-  },
-  "pixel-art": {
-    name: "Pixel Art",
-    description: "Univers du logo version pixel art. Inspirations, réalisations et guides"
-  },
-  "players": {
-    name: "Joueurs",
-    description: "Articles dédiés aux joueurs de football, leur carrière et leurs performances"
+  'pixel-art': {
+    name: 'Pixel Art',
+    description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
-
-// Interface BlogPost avec readingTime ajouté
-export interface BlogPost {
-  id: number;
-  title: string;
-  excerpt: string;
-  date: string;
-  content: string;
-  keywords?: string;
-  category: BlogCategory;
-  subCategory?: string;
-  galleryImageId?: number | null;
-  previousPostId?: number;
-  nextPostId?: number;
-  readingTime?: number;
-}

@@ -72,8 +72,6 @@ import { harrogateTownLogoPost } from '../harrogate-town-logo';
 import { walsallLogoPost } from '../walsall-logo';
 import { torquayUnitedLogoPost } from '../torquay-united-logo';
 
-// Remplacer à la création de chaque article la clé category: 'logos' => category: 'english-logo'
-
 export const englishClubPosts: BlogPost[] = [
   arsenalLogoPost,
   astonVillaLogoPost,
@@ -139,4 +137,4 @@ export const englishClubPosts: BlogPost[] = [
   harrogateTownLogoPost,
   walsallLogoPost,
   torquayUnitedLogoPost
-].map(post => ({ ...post, category: 'english-logo' }));
+];

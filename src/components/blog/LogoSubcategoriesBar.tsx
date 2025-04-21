@@ -1,27 +1,39 @@
 
 import React from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { countries } from "@/constants/countryData";
 import { Folder } from "lucide-react";
+import { blogPosts } from "@/data/blog";
 
-const EXCLUDED_COUNTRIES = [
+// Liste des intitulés à exclure explicitement en plus des anomalies éventuelles
+const EXCLUDED_SUBCATEGORIES = [
   "Sélections Nationales",
   "Compétitions de football",
   "Compétitions internationales",
   "Coupes nationales",
   "Championnats",
-  "Default"
+  "Default",
+  undefined,
+  null,
+  "",
 ];
 
-// Affiche les sous-groupes pays/championnats pour la catégorie "Logos"
 const LogoSubcategoriesBar = () => {
   const [searchParams] = useSearchParams();
   const currentSub = searchParams.get("subCategory");
 
-  // Filtrer les pays pertinents (peut être adapté à la logique des logos uniquement)
-  const filteredCountries = countries.filter(
-    (c) => !EXCLUDED_COUNTRIES.includes(c)
-  );
+  // Extraire dynamiquement les sous-groupes utilisés dans les posts logos
+  const logoSubcategoriesSet = new Set<string>();
+  blogPosts
+    .filter((post) => post.category === "logos" && post.subCategory && !EXCLUDED_SUBCATEGORIES.includes(post.subCategory))
+    .forEach((post) => {
+      // Certains articles peuvent avoir des sous-groupes multiples séparés par virgule ou autre (optionnel)
+      if (typeof post.subCategory === "string") {
+        logoSubcategoriesSet.add(post.subCategory);
+      }
+    });
+
+  // Générer une liste unique et triée
+  const availableSubcategories = Array.from(logoSubcategoriesSet).sort((a, b) => a.localeCompare(b, "fr"));
 
   return (
     <div className="overflow-x-auto border-b border-gray-200 py-2 px-2 mb-5">
@@ -35,19 +47,19 @@ const LogoSubcategoriesBar = () => {
           }
         >
           <Folder className="inline-block mr-1 w-4 h-4" />
-          Tous les pays
+          Tous les sous-groupes
         </Link>
-        {filteredCountries.map((country) => (
+        {availableSubcategories.map((sub) => (
           <Link
-            key={country}
-            to={`/blog?category=logos&subCategory=${encodeURIComponent(country)}`}
+            key={sub}
+            to={`/blog?category=logos&subCategory=${encodeURIComponent(sub)}`}
             className={
-              currentSub === country
+              currentSub === sub
                 ? "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm"
                 : "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm"
             }
           >
-            {country}
+            {sub}
           </Link>
         ))}
       </div>

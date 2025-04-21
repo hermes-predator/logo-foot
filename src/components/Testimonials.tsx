@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -75,7 +74,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Loïc D.",
     role: "Non renseigné",
-    content: "Le zip est parfait rien à dire, mais il manque un espace utilisateur. Je recommande cela dit",
+    content: "Le ZIP est parfait rien à dire, mais attention de bien le télécharger immédiatement comme l'achat se fait en invité.",
     rating: 4
   }
 ];
@@ -254,4 +253,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

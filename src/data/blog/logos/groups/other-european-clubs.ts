@@ -95,10 +95,12 @@ import { aberdeenLogoPost } from '../aberdeen-logo';
 import { wolfsbergerAcLogoPost } from '../wolfsberger-ac-logo';
 import { adanaDemirsporLogoPost } from '../adana-demirspor-logo';
 import { alanyasporLogoPost } from '../alanyaspor-logo';
+import { samsungsporLogoPost } from '../samsunspor-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   adanaDemirsporLogoPost,
   alanyasporLogoPost,
+  samsungsporLogoPost,
   aberdeenLogoPost,
   ajaxLogoPost,
   anderlechtLogoPost,

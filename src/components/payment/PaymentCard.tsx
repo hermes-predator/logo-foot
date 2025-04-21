@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -21,7 +20,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   
-  // Utilisation de la fonction de mesure de performance
   React.useEffect(() => {
     measurePerformance('payment-card-render', () => {
       // Simplement mesurer le temps de rendu
@@ -44,17 +42,17 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         <div 
           className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
             ${isHovered ? 'shadow-xl' : 'shadow-lg'} 
-            transition-all duration-300 ease-out will-change-transform
-            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_5px_15px_rgba(0,0,100,0.09)] before:opacity-0 before:transition-opacity before:duration-300
+            transition-all duration-200 ease-out will-change-transform
+            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_5px_15px_rgba(0,0,100,0.09)] before:opacity-0 before:transition-opacity before:duration-200
             ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
           `}
           style={{
             boxShadow: isHovered ? 
               '0 10px 25px -10px rgba(0, 0, 100, 0.12), 0 5px 10px -7px rgba(0, 0, 100, 0.06)' : 
               '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
-            transform: isHovered ? 'translateY(-6px) scale(1.015)' : 'translateY(0) scale(1)',
+            transform: isHovered ? 'translateY(-5px) scale(1.01)' : 'translateY(0) scale(1)',
             transitionProperty: 'transform, box-shadow',
-            transitionDuration: '0.3s',
+            transitionDuration: '0.2s',
             transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
           }}
         >

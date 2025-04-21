@@ -1,3 +1,4 @@
+
 export interface CountryChampionship {
   [key: string]: string;
 }
@@ -15,9 +16,10 @@ export type BlogCategory =
   | "history"
   | "technical"
   | "analysis"
-  | "pixel-art";
+  | "pixel-art"
+  | "players";  // Ajout de la catégorie "players"
 
-// À jour : ajout des deux nouvelles catégories
+// À jour : ajout des deux nouvelles catégories
 export const BLOG_CATEGORIES: Record<BlogCategory, { name: string; description: string }> = {
   logos: {
     name: "Logos mixtes",
@@ -46,5 +48,24 @@ export const BLOG_CATEGORIES: Record<BlogCategory, { name: string; description: 
   "pixel-art": {
     name: "Pixel Art",
     description: "Univers du logo version pixel art. Inspirations, réalisations et guides"
+  },
+  "players": {
+    name: "Joueurs",
+    description: "Articles dédiés aux joueurs de football, leur carrière et leurs performances"
   }
 };
+
+// Ajout de l'interface BlogPost manquante
+export interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  content: string;
+  keywords?: string;
+  category: BlogCategory;
+  subCategory?: string;
+  galleryImageId?: number | null;
+  previousPostId?: number;
+  nextPostId?: number;
+}

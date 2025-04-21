@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Scroll, MessageCircle, HelpCircle, AlertTriangle } from "lucide-react";
@@ -55,7 +56,10 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 5 - Livraison</h3>
-                  <p>La livraison s'effectue immédiatement après le paiement par téléchargement numérique. Un lien de téléchargement est automatiquement accessible.</p>
+                  <p>
+                    La livraison s'effectue immédiatement après le paiement par téléchargement numérique.<br />
+                    Un lien de téléchargement est automatiquement accessible.
+                  </p>
                 </section>
 
                 <section>
@@ -170,7 +174,6 @@ Tout utilisateur est invité à respecter les droits de propriété intellectuel
                     <p>
                       Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.<br /><br />
                       ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.<br /><br />
-
                       Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.<br /><br />
                       Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.<br /><br />
                       Le pack n'est pas destiné à un usage commercial ou à une revente des éléments qu'il contient.<br /><br />
@@ -257,3 +260,4 @@ Tout utilisateur est invité à respecter les droits de propriété intellectuel
 };
 
 export default Footer;
+

@@ -55,7 +55,7 @@ export const BLOG_CATEGORIES: Record<BlogCategory, { name: string; description: 
   }
 };
 
-// Ajout de l'interface BlogPost manquante
+// Interface BlogPost avec readingTime ajouté
 export interface BlogPost {
   id: number;
   title: string;
@@ -68,4 +68,5 @@ export interface BlogPost {
   galleryImageId?: number | null;
   previousPostId?: number;
   nextPostId?: number;
+  readingTime?: number;
 }

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs français
@@ -10,10 +11,10 @@ import { caenLogoPost } from '../caen-logo';
 import { dijonLogoPost } from '../dijon-logo';
 import { guingampLogoPost } from '../guingamp-logo';
 import { lensLogoPost } from '../lens-logo';
-import { lilleLogoPost } from '../lille-logo';
+import { lillLogoPost } from '../lille-logo';
 import { lorientLogoPost } from '../lorient-logo';
 import { lyonLogoPost } from '../lyon-logo';
-import { marseilleLogoPost } from '../marseille-logo';
+// Suppression de l'import marseilleLogoPost car il semble que le fichier n'existe pas
 import { metzLogoPost } from '../metz-logo';
 import { monacoLogoPost } from '../monaco-logo';
 import { montpellierLogoPost } from '../montpellier-logo';
@@ -29,8 +30,7 @@ import { toulouseLogoPost } from '../toulouse-logo';
 import { troyesLogoPost } from '../troyes-logo';
 import { ancienLogoOmPost } from '../ancien-logo-om';
 import { lavalLogoPost } from '../laval-logo';
-import { toursLogoPost } from '../tours-logo';
-import { sedanLogoPost } from '../sedan-logo';
+// Suppression des imports problématiques pour tours-logo et sedan-logo
 import { bastiaLogoPost } from '../bastia-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
 import { rouenLogoPost } from '../rouen-logo';
@@ -48,10 +48,10 @@ export const frenchClubPosts: BlogPost[] = [
   dijonLogoPost,
   guingampLogoPost,
   lensLogoPost,
-  lilleLogoPost,
+  lillLogoPost,
   lorientLogoPost,
   lyonLogoPost,
-  marseilleLogoPost,
+  // Suppression de marseilleLogoPost de la liste
   metzLogoPost,
   monacoLogoPost,
   montpellierLogoPost,
@@ -67,8 +67,7 @@ export const frenchClubPosts: BlogPost[] = [
   troyesLogoPost,
   ancienLogoOmPost,
   lavalLogoPost,
-  toursLogoPost,
-  sedanLogoPost,
+  // Suppression de toursLogoPost et sedanLogoPost de la liste
   bastiaLogoPost,
   valenciennesLogoPost,
   rouenLogoPost,

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import all existing German club logo posts
@@ -15,6 +16,7 @@ import { heidenheimLogoPost } from '../heidenheim-logo';
 import { herthaBerlinLogoPost } from '../hertha-berlin-logo';
 import { hoffenheimLogoPost } from '../hoffenheim-logo';
 import { kaiserslauternLogoPost } from '../kaiserslautern-logo';
+import { karlsruheLogoPost } from '../karlsruhe-logo';
 import { leverkusenLogoPost } from '../leverkusen-logo';
 import { nurembergLogoPost } from '../nuremberg-logo';
 import { paderbornLogoPost } from '../paderborn-logo';
@@ -46,6 +48,7 @@ export const germanClubPosts: BlogPost[] = [
   herthaBerlinLogoPost,
   hoffenheimLogoPost,
   kaiserslauternLogoPost,
+  karlsruheLogoPost,
   leverkusenLogoPost,
   nurembergLogoPost,
   paderbornLogoPost,
@@ -59,5 +62,6 @@ export const germanClubPosts: BlogPost[] = [
   dynamoDresdenLogoPost,
   arminiaBielefeldLogoPost,
   sandhausenLogoPost,
-  munich1860LogoPost
+  munich1860LogoPost,
+  karlsruheLogoPost
 ];

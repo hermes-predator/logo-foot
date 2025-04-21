@@ -25,9 +25,9 @@ export const BLOG_CATEGORIES = {
     name: 'Joueurs',
     description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
   },
-  history: {
-    name: 'Histoire',
-    description: 'Plongez dans l\'histoire fascinante du football et de ses logos emblématiques à travers les époques.'
+  legacy: {
+    name: 'Histoire du football',
+    description: 'Articles historiques sur les logos et compétitions emblématiques du football à travers les époques.'
   },
   technical: {
     name: 'Techniques',

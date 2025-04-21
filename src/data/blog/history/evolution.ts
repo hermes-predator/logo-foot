@@ -77,5 +77,5 @@ L'Avenir des Logos
 - Identité préservée
 - Tradition respectée`,
   keywords: "histoire logos foot, évolution logos football, design logo football, emblèmes historiques foot, logos club football histoire, chronologie logos foot",
-  category: 'history'
+  category: 'legacy'
 };

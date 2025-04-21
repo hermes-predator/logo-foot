@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const premierLeagueHistory: BlogPost = {
@@ -14,7 +13,7 @@ En 1888, dans les brumes de l'Angleterre victorienne, naissait une compétition 
 
 Les Années Fondatrices (1888-1992)
 
-Ces premières années ont forgé l'âme du football anglais. Dans des stades de brique rouge, sur des pelouses souvent boueuses, les ouvriers venaient supporter leurs équipes chaque samedi après-midi. Preston North End, Aston Villa, Sheffield Wednesday... Ces noms résonnaient déjà comme les héros d'une nouvelle époque. Le football devenait plus qu'un jeu : une véritable passion populaire.
+Ces premières années ont forgé l'âme du football anglais. Dans des stades de brique rouge, sur des pelouses souvent boueuses, les ouvriers venaient supporter leurs équipes chaque samedi après-midi. Preston North End, Aston Villa, Sheffield Wednesday... Ces noms résonaient déjà comme les héros d'une nouvelle époque. Le football devenait plus qu'un jeu : une véritable passion populaire.
 
 La Naissance d'une Nouvelle Ère
 
@@ -38,6 +37,5 @@ La Premier League regarde vers l'avenir sans oublier ses racines. L'engagement c
 
 De Goodison Park à l'Etihad Stadium, des tribunes populaires aux loges VIP, l'histoire de la Premier League est celle d'une évolution constante, portée par la passion inébranlable des supporters anglais pour leur sport national.`,
   keywords: "histoire premier league, football league histoire, création premier league, clubs historiques anglais, évolution football anglais, histoire football angleterre",
-  category: 'history'
+  category: 'legacy'
 };
-

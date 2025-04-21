@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const coupeFranceLogoPost: BlogPost = {
@@ -94,6 +93,6 @@ Le **logo coupe de france** représente bien plus qu'un simple identifiant visue
 
 Cette capacité à évoluer tout en restant fidèle à ses racines fait du blason de la Coupe de France un exemple fascinant d'identité visuelle sportive, reflétant parfaitement les valeurs et l'histoire d'une compétition qui continue d'écrire certaines des plus belles pages du football français, avec une identité visuelle distinctive et authentique incarnée par son **coupe de france logo png**.`,
   keywords: "logo coupe de france, coupe de france logo, logo coupe de france png, coupe de france logo png, logo coupe de france de football, emblème coupe de france, histoire logo coupe de france, FFF coupe logo, design coupe de france",
-  category: 'history',
+  category: 'legacy',
   subCategory: 'iconic-designs'
 };

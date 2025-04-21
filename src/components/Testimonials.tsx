@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Yassine B.",
     role: "Community Manager",
-    content: "Ça m'a apporter beaucoup de confiance dans mon projet, merci pour le gain de temps",
+    content: "Ça m'a apporté beaucoup de confiance pour mon projet, merci pour le gain de temps",
     rating: 5
   },
   {
@@ -110,11 +110,11 @@ const Testimonials = () => {
   // Autoplay functionality
   useEffect(() => {
     if (!autoplay) return;
-    
+
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % testimonials.length);
     }, autoplayInterval);
-    
+
     return () => clearInterval(interval);
   }, [autoplay, testimonials.length]);
 
@@ -215,11 +215,11 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          
+
           {/* Navigation controls with improved visibility */}
           <CarouselPrevious className="hidden md:flex -left-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
-          
+
           {/* Mobile navigation indicators */}
           <div className="flex justify-center gap-1 mt-2 md:hidden">
             {testimonials.map((_, idx) => (
@@ -234,7 +234,7 @@ const Testimonials = () => {
             ))}
           </div>
         </Carousel>
-        
+
         {/* Reviews badge with enhanced visual appeal */}
         <div className="flex items-center justify-center mt-6">
           <div className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200 hover:border-gray-200">

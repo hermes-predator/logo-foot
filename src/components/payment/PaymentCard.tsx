@@ -7,7 +7,6 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
-import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 import { useIsSmallMobile } from '@/hooks/use-mobile';
 import PaymentCardBack from './PaymentCardBack';
@@ -43,22 +42,26 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       >
         <div 
           className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
-            ${isHovered ? 'shadow-xl translate-y-[-4px]' : 'shadow-lg'} 
-            transition-all duration-500 ease-out hover:scale-[1.005] will-change-transform
+            ${isHovered ? 'shadow-xl' : 'shadow-lg'} 
+            transition-all duration-500 ease-out will-change-transform
             before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_5px_15px_rgba(0,0,100,0.09)] before:opacity-0 before:transition-opacity before:duration-500
             ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
           `}
           style={{
             boxShadow: isHovered ? 
               '0 10px 25px -10px rgba(0, 0, 100, 0.12), 0 5px 10px -7px rgba(0, 0, 100, 0.06)' : 
-              '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)'
+              '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
+            transform: isHovered ? 'translateY(-4px)' : 'translateY(0)',
+            transitionProperty: 'transform, box-shadow',
+            transitionDuration: '0.5s',
+            transitionTimingFunction: 'ease-out'
           }}
         >
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
           {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile */}
-          <div className={`absolute top-12 right-10 opacity-10 text-blue-900 transform -rotate-12 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
+          <div className={`absolute top-12 right-10 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={75} />
           </div>
           

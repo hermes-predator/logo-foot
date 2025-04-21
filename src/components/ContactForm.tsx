@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Headphones, ShieldCheck } from 'lucide-react';
+import { Headphones, ShieldCheck, Mail } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -19,7 +19,7 @@ const ContactForm = () => {
         <li className="font-medium tracking-tight">Votre preuve d'achat (reçu)</li>
       </ul>
       <p className="flex items-center gap-2 mt-4">
-        <Headphones className="w-4 h-4" />
+        <Mail className="w-4 h-4" />
         <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
       </p>
       

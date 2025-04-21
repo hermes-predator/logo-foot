@@ -79,6 +79,7 @@ import { almereCityLogoPost } from './almere-city-logo';
 import { westerloLogoPost } from './westerlo-logo';
 import { austriaWienLogoPost } from './austria-wien-logo';
 import { rapidWienLogoPost } from './rapid-wien-logo';
+import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -159,5 +160,6 @@ export const logoPosts: BlogPost[] = [
   almereCityLogoPost,
   westerloLogoPost,
   austriaWienLogoPost,
-  rapidWienLogoPost // Ajout de l’article Logo Rapid Wien
+  rapidWienLogoPost,
+  redBullSalzburgLogoPost // Ajout de l’article Logo Red Bull Salzbourg
 ];

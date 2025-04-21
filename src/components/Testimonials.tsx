@@ -48,16 +48,17 @@ const testimonials: Testimonial[] = [
     content: "Très impressionné par le fichier, vaut largement son prix 👍🏼",
     rating: 5
   },
-  {
-    name: "Alex G.",
-    role: "Community Manager",
-    content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
-    rating: 5
-  },
+  // Alex G and Emma L swapped positions here
   {
     name: "Emma L.",
     role: "Freelance",
     content: "Tout est parfait, merci :)",
+    rating: 5
+  },
+  {
+    name: "Alex G.",
+    role: "Community Manager",
+    content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
     rating: 5
   },
   {

@@ -45,7 +45,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 3 - Produit</h3>
-                  <p>Le produit vendu est un fichier numérique contenant une collection de ressources du football au format ZIP. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible.</p>
+                  <p>Le produit vendu est un fichier ZIP contenant une forte densité de collection et ressources numériques du football. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible.</p>
                 </section>
 
                 <section>

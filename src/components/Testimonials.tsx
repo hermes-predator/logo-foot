@@ -240,7 +240,7 @@ const Testimonials = () => {
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-4" 
+              className="h-6" 
               loading="lazy"
             />
             <div className="flex flex-col">

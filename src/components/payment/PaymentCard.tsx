@@ -7,6 +7,7 @@ import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
+import GoogleDriveBadge from './GoogleDriveBadge';
 import { measurePerformance } from '@/lib/performance';
 import { useIsSmallMobile } from '@/hooks/use-mobile';
 import PaymentCardBack from './PaymentCardBack';

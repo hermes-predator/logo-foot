@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Shield } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -24,8 +24,11 @@ const ContactForm = () => {
       </p>
       
       <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded-md">
-        <p className="text-xs text-gray-500">
-          Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de ces données en nous contactant.
+        <p className="text-xs text-gray-500 flex items-start gap-2">
+          <Shield className="w-3 h-3 mt-0.5 flex-shrink-0 text-gray-400" />
+          <span>
+            Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression de ces données en nous contactant.
+          </span>
         </p>
       </div>
     </div>

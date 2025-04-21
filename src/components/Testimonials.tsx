@@ -21,15 +21,15 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Pierre M.",
-    role: "Développeur",
-    content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé. Merci !",
-    rating: 5
-  },
-  {
     name: "Florent P.",
     role: "Non renseigné",
     content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
+    rating: 5
+  },
+  {
+    name: "Pierre M.",
+    role: "Développeur",
+    content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé. Merci !",
     rating: 5
   },
   {

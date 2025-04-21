@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -34,7 +35,8 @@ import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
-import { ligaMxLogoPost } from './liga-mx-logo';
+// Suppression de l'import de ligaMxLogoPost car déjà présent dans competitionPosts
+// import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
 // Removing direct import of tacaDePortugalLogoPost since it's already in competitionPosts
 // import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
@@ -113,7 +115,8 @@ export const logoPosts: BlogPost[] = [
   cittadellaLogoPost,
   reggianaLogoPost,
   saudiFootballClubLogosPost,
-  ligaMxLogoPost,
+  // Suppression de l'entrée ligaMxLogoPost car déjà inclus via competitionPosts
+  // ligaMxLogoPost,
   hajdukSplitLogoPost,
   // Removed direct reference to tacaDePortugalLogoPost since it's included in competitionPosts
   ballonDorLogoPost,

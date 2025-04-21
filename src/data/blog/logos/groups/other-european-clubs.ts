@@ -92,6 +92,7 @@ import { willemIiLogoPost } from '../willem-ii-logo';
 import { cercleBrugesLogoPost } from '../cercle-bruges-logo';
 import { unionSaintGilloiseLogoPost } from '../union-saint-gilloise-logo';
 import { aberdeenLogoPost } from '../aberdeen-logo';
+import { wolfsbergerAcLogoPost } from '../wolfsberger-ac-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   aberdeenLogoPost,
@@ -183,5 +184,6 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   nacBredaLogoPost,
   willemIiLogoPost,
   cercleBrugesLogoPost,
-  unionSaintGilloiseLogoPost
+  unionSaintGilloiseLogoPost,
+  wolfsbergerAcLogoPost
 ];

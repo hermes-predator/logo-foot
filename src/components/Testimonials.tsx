@@ -1,3 +1,6 @@
+
+// Nous refaisons l'ordre du tableau pour que les 3 premiers avis soient : Pierre M., Yassine B., Quentin D.
+// Sylvain B. est toujours après Loïc D.
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star } from 'lucide-react';
 import {
@@ -18,17 +21,8 @@ interface Testimonial {
   rating: number;
 }
 
-// Reordered testimonials array following user's request:
-// - Florent P. moved before Pierre M.
-// - Alex G. and Emma L. swapped positions
-// - The first three testimonials remain: Pierre M., Yassine B., Quentin D.
+// Nouvelle ordre strictement respectant la demande :
 const testimonials: Testimonial[] = [
-  {
-    name: "Florent P.",
-    role: "Non renseigné",
-    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
-    rating: 5
-  },
   {
     name: "Pierre M.",
     role: "Développeur",
@@ -45,6 +39,12 @@ const testimonials: Testimonial[] = [
     name: "Quentin D.",
     role: "Non renseigné",
     content: "Très impressionné par le fichier, vaut largement son prix 👍🏼",
+    rating: 5
+  },
+  {
+    name: "Florent P.",
+    role: "Non renseigné",
+    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
     rating: 5
   },
   {
@@ -87,6 +87,7 @@ const testimonials: Testimonial[] = [
 
 const Testimonials = () => {
   const [visibleItems, setVisibleItems] = useState<number>(1);
+  // activeIndex initial à 0 pour démarrer sur Pierre M.
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [autoplay, setAutoplay] = useState<boolean>(true);
   const [api, setApi] = useState<CarouselApi>();
@@ -172,6 +173,8 @@ const Testimonials = () => {
           setApi={setApi}
           className="w-full max-w-3xl mx-auto"
           aria-label="Témoignages clients"
+          // For accessibility, controlling current slide visibility with activeIndex
+          // The carousel implementation handles internal state, so activeIndex is used for indicators
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
@@ -259,3 +262,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

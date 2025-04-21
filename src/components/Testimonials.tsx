@@ -76,6 +76,12 @@ const testimonials: Testimonial[] = [
     role: "Non renseigné",
     content: "Le ZIP est parfait rien à dire, mais attention de bien le télécharger immédiatement comme l'achat se fait en invité.",
     rating: 4
+  },
+  {
+    name: "Sylvain B.",
+    role: "Non renseigné",
+    content: "Un sentiment d'en avoir beaucoup eu pour mon argent. Je recommande !",
+    rating: 5
   }
 ];
 

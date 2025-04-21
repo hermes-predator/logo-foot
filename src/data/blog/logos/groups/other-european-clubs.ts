@@ -94,9 +94,11 @@ import { unionSaintGilloiseLogoPost } from '../union-saint-gilloise-logo';
 import { aberdeenLogoPost } from '../aberdeen-logo';
 import { wolfsbergerAcLogoPost } from '../wolfsberger-ac-logo';
 import { adanaDemirsporLogoPost } from '../adana-demirspor-logo';
+import { alanyasporLogoPost } from '../alanyaspor-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   adanaDemirsporLogoPost,
+  alanyasporLogoPost,
   aberdeenLogoPost,
   ajaxLogoPost,
   anderlechtLogoPost,

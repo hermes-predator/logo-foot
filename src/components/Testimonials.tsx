@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -29,7 +30,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Yassine B.",
     role: "Community Manager",
-    content: "Merci pour le gain de temps !",
+    content: "Ça m'a apporter beaucoup de confiance dans mon projet, merci pour le gain de temps",
     rating: 5
   },
   {
@@ -39,13 +40,13 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Alex G.",  // Changed from "Alexandre G."
-    role: "Community Manager", 
+    name: "Alex G.",
+    role: "Community Manager",
     content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
     rating: 5
   },
   {
-    name: "Emma L.", // Changed from "Marie L."
+    name: "Emma L.",
     role: "Freelance",
     content: "Tout est parfait, merci :)",
     rating: 5
@@ -264,3 +265,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

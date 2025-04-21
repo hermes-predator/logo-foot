@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -51,9 +50,9 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             boxShadow: isHovered ? 
               '0 10px 25px -10px rgba(0, 0, 100, 0.12), 0 5px 10px -7px rgba(0, 0, 100, 0.06)' : 
               '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
-            transform: isHovered ? 'translateY(-8px)' : 'translateY(0)', // Updated to -8px as requested
+            transform: isHovered ? 'translateY(-8px)' : 'translateY(0)',
             transitionProperty: 'transform, box-shadow',
-            transitionDuration: '0.1s',
+            transitionDuration: '0.08s', // Reduced from 0.1s to 0.08s
             transitionTimingFunction: 'ease-out'
           }}
         >

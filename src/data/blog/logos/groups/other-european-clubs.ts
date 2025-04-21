@@ -93,8 +93,10 @@ import { cercleBrugesLogoPost } from '../cercle-bruges-logo';
 import { unionSaintGilloiseLogoPost } from '../union-saint-gilloise-logo';
 import { aberdeenLogoPost } from '../aberdeen-logo';
 import { wolfsbergerAcLogoPost } from '../wolfsberger-ac-logo';
+import { adanaDemirsporLogoPost } from '../adana-demirspor-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
+  adanaDemirsporLogoPost,
   aberdeenLogoPost,
   ajaxLogoPost,
   anderlechtLogoPost,

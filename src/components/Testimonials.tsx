@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
-import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
+import { MessageCircle, Star } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -8,7 +9,6 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 // Types for testimonial structure
@@ -63,7 +63,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Thomas D.",
     role: "Non renseigné",
-    content: "Vraiment satisfait de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
+    content: "Vraiment heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
     rating: 5
   },
   {
@@ -87,7 +87,6 @@ const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi>();
   const autoplayInterval = 5000;
 
-  // Adjust visible items based on screen size
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
@@ -99,12 +98,11 @@ const Testimonials = () => {
       }
     };
 
-    handleResize(); // Initial call
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Autoplay functionality
   useEffect(() => {
     if (!autoplay) return;
 
@@ -113,13 +111,11 @@ const Testimonials = () => {
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [autoplay, testimonials.length]);
+  }, [autoplay]);
 
-  // Pause autoplay on hover or focus
   const pauseAutoplay = useCallback(() => setAutoplay(false), []);
   const resumeAutoplay = useCallback(() => setAutoplay(true), []);
 
-  // Calculate average rating
   const averageRating = testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length;
   const formattedAvgRating = averageRating.toFixed(1);
 
@@ -131,7 +127,6 @@ const Testimonials = () => {
       onFocus={pauseAutoplay}
       onBlur={resumeAutoplay}
     >
-      {/* StructuredData for SEO */}
       <script 
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -213,11 +208,9 @@ const Testimonials = () => {
             ))}
           </CarouselContent>
 
-          {/* Navigation controls with improved visibility */}
           <CarouselPrevious className="hidden md:flex -left-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
           <CarouselNext className="hidden md:flex -right-5 bg-white border border-gray-200 text-gray-700 hover:bg-gray-50" />
 
-          {/* Mobile navigation indicators */}
           <div className="flex justify-center gap-1 mt-2 md:hidden">
             {testimonials.map((_, idx) => (
               <button
@@ -232,7 +225,6 @@ const Testimonials = () => {
           </div>
         </Carousel>
 
-        {/* Reviews badge with enhanced visual appeal */}
         <div className="flex items-center justify-center mt-6">
           <div className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200 hover:border-gray-200">
             <img 
@@ -262,3 +254,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

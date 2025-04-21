@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -19,7 +20,17 @@ interface Testimonial {
   rating: number;
 }
 
+// Reordered testimonials array following user's request:
+// - Florent P. moved before Pierre M.
+// - Alex G. and Emma L. swapped positions
+// - The first three testimonials remain: Pierre M., Yassine B., Quentin D.
 const testimonials: Testimonial[] = [
+  {
+    name: "Florent P.",
+    role: "Non renseigné",
+    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
+    rating: 5
+  },
   {
     name: "Pierre M.",
     role: "Développeur",
@@ -36,12 +47,6 @@ const testimonials: Testimonial[] = [
     name: "Quentin D.",
     role: "Non renseigné",
     content: "Très impressionné par le fichier, vaut largement son prix 👍🏼",
-    rating: 5
-  },
-  {
-    name: "Florent P.",
-    role: "Non renseigné",
-    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
     rating: 5
   },
   {
@@ -258,3 +263,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

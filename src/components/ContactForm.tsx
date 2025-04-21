@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { Headphones, ShieldCheck } from 'lucide-react';
+import { Headset, ShieldCheck } from 'lucide-react';
 
 const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
       <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
         <div className="bg-blue-100 rounded-md p-1.5">
-          <Headphones className="w-4 h-4 text-blue-600" />
+          <Headset className="w-4 h-4 text-blue-600" />
         </div>
         Support Client
       </h3>
@@ -19,7 +19,7 @@ const ContactForm = () => {
         <li className="font-medium tracking-tight">Votre preuve d'achat (reçu)</li>
       </ul>
       <p className="flex items-center gap-2 mt-4">
-        <Headphones className="w-4 h-4" />
+        <Headset className="w-4 h-4" />
         <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
       </p>
       

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -15,6 +16,7 @@ import LogoSubcategoriesBar from "../components/blog/LogoSubcategoriesBar";
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const subCategoryParam = searchParams.get('subCategory');
   const [isLoading, setIsLoading] = useState(true);
   const [filteredPosts, setFilteredPosts] = useState(blogPosts);
 
@@ -30,6 +32,12 @@ const Blog = () => {
       console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
     }
     
+    // Filter by subcategory if specified
+    if (subCategoryParam) {
+      postsToShow = postsToShow.filter(post => post.subCategory === subCategoryParam);
+      console.log(`Filtered to ${postsToShow.length} posts in subcategory: ${subCategoryParam}`);
+    }
+    
     setFilteredPosts(postsToShow);
 
     // Simulate loading
@@ -37,7 +45,7 @@ const Blog = () => {
       setIsLoading(false);
     }, 500);
     return () => clearTimeout(timer);
-  }, [categoryParam]);
+  }, [categoryParam, subCategoryParam]);
 
   // Check for invalid posts
   useEffect(() => {
@@ -154,8 +162,8 @@ const Blog = () => {
       <main className="container mx-auto px-4 py-3 pb-80">
         <Breadcrumbs />
         <BlogHeader />
-        {/* Afficher la barre des sous-groupes seulement sur la racine sans catégorie principale */}
-        {!categoryParam && (
+        {/* Afficher la barre des sous-groupes seulement sur la racine ou quand la catégorie principale est "logos" */}
+        {(!categoryParam || categoryParam === 'logos') && (
           <LogoSubcategoriesBar />
         )}
         {categoryParam && <div className="pl-4 mb-6">

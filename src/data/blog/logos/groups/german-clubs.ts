@@ -62,6 +62,5 @@ export const germanClubPosts: BlogPost[] = [
   dynamoDresdenLogoPost,
   arminiaBielefeldLogoPost,
   sandhausenLogoPost,
-  munich1860LogoPost,
-  karlsruheLogoPost
+  munich1860LogoPost
 ];

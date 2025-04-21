@@ -46,7 +46,7 @@ const Footer = () => {
 
                 <section>
                   <h3 className="font-semibold mb-2">Article 3 - Produit</h3>
-                  <p>Le produit vendu est un fichier ZIP contenant une forte densité de collections et ressources numériques du football. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible en actionnant le bouton "Descriptif du ZIP".</p>
+                  <p>Le produit vendu est un fichier ZIP contenant une importante densité de collections et ressources numériques du football. Les caractéristiques essentielles sont décrites et présentées avec la plus grande exactitude possible en actionnant le bouton "Descriptif du ZIP".</p>
                 </section>
 
                 <section>
@@ -258,3 +258,4 @@ Tout utilisateur est invité à respecter les droits de propriété intellectuel
 };
 
 export default Footer;
+

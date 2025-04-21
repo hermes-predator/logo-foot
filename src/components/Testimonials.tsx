@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { MessageCircle, Star, Users, CheckCircle } from 'lucide-react';
 import {
@@ -54,7 +53,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Thomas D.",
     role: "Non renseigné",
-    content: "Top pour le prix !",
+    content: "Vraiment satisfait de mon achat, je l'ai ajouté sur mon Drive Google comme recommandé, et il sera très utile dans mon parcours.",
     rating: 5
   },
   {
@@ -265,4 +264,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

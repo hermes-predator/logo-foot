@@ -27,6 +27,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Florent P.",
+    role: "Non renseigné",
+    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
+    rating: 5
+  },
+  {
     name: "Yassine B.",
     role: "Community Manager",
     content: "Ça m'a apporté beaucoup de confiance pour mon projet, merci pour le gain de temps",
@@ -64,12 +70,6 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Loïc D.",
-    role: "Non renseigné",
-    content: "Le pack est très complet. Il s'intègre parfaitement à sur mon Drive Google. Très satisfait.",
-    rating: 5
-  },
-  {
-    name: "Abdou B.",
     role: "Non renseigné",
     content: "Le zip est parfait rien à dire, mais il manque un espace utilisateur. Je recommande cela dit",
     rating: 4

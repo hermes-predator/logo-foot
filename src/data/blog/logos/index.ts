@@ -27,7 +27,8 @@ import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 // Removed the duplicate wolverhampton import
 import { realMadridLogoPost } from './real-madrid-logo';
-import { cesenaLogoPost } from './cesena-logo';
+// Suppression du doublon cesenaLogoPost qui est déjà inclus dans italianClubPosts
+// import { cesenaLogoPost } from './cesena-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -95,7 +96,7 @@ export const logoPosts: BlogPost[] = [
   watfordLogoPost,
   // Removed duplicate wolverhampton logo post
   realMadridLogoPost,
-  cesenaLogoPost,
+  // Suppression du doublon cesenaLogoPost qui est déjà inclus dans italianClubPosts
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,

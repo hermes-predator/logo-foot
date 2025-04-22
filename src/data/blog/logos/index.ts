@@ -22,7 +22,8 @@ import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
-import { villarrealCfLogoPost } from './villarreal-cf-logo';
+// Removing this import as it's already part of spanishClubPosts
+// import { villarrealCfLogoPost } from './villarreal-cf-logo';
 // Removing this import as it's already part of frenchClubPosts
 // import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
@@ -92,7 +93,8 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
-  villarrealCfLogoPost,
+  // Remove this individual reference since it's already part of spanishClubPosts
+  // villarrealCfLogoPost,
   // Remove this individual reference since it's already part of frenchClubPosts
   // valenciennesLogoPost,
   watfordLogoPost,

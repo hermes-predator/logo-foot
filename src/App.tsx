@@ -1,3 +1,4 @@
+
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -11,12 +12,35 @@ import GlobalCanonical from './components/SEO/GlobalCanonical';
 import { measureCoreWebVitals, prefetchCriticalResources, optimizeFontLoading } from './lib/core-web-vitals';
 import { WebVitalsReporter } from './components/ui/web-vitals-reporter';
 
-// Lazy loading des pages pour améliorer les performances
-const Home = lazy(() => import('./pages/Index'));
-const Blog = lazy(() => import('./pages/Blog'));
-const BlogPost = lazy(() => import('./pages/BlogPost'));
-const NotFound = lazy(() => import('./pages/NotFound'));
-const PaymentSuccess = lazy(() => import('./pages/PaymentSuccess'));
+// Améliorer le lazy loading avec une stratégie de retry
+const retryLazyLoad = (componentImport) => {
+  return new Promise((resolve, reject) => {
+    // Retry loading up to 3 times with exponential backoff
+    const load = (retries = 0) => {
+      componentImport()
+        .then(resolve)
+        .catch((error) => {
+          if (retries < 3) {
+            const delay = Math.pow(2, retries) * 300; // Exponential backoff
+            console.warn(`Retry loading module (${retries + 1}/3) after ${delay}ms`);
+            setTimeout(() => load(retries + 1), delay);
+          } else {
+            console.error('Failed to load module after 3 retries', error);
+            reject(error);
+          }
+        });
+    };
+    
+    load();
+  });
+};
+
+// Lazy loading avec retry pour les composants de page
+const Home = lazy(() => retryLazyLoad(() => import('./pages/Index')));
+const Blog = lazy(() => retryLazyLoad(() => import('./pages/Blog')));
+const BlogPost = lazy(() => retryLazyLoad(() => import('./pages/BlogPost')));
+const NotFound = lazy(() => retryLazyLoad(() => import('./pages/NotFound')));
+const PaymentSuccess = lazy(() => retryLazyLoad(() => import('./pages/PaymentSuccess')));
 
 // Configuration du client de requête pour React Query
 const queryClient = new QueryClient({
@@ -75,6 +99,15 @@ function App() {
     
     // Optimiser le chargement des polices
     optimizeFontLoading();
+    
+    // Préchargement des composants principaux
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => {
+        // Précharger les composants principaux pendant le temps d'inactivité
+        import('./pages/Blog');
+        import('./pages/BlogPost');
+      });
+    }
     
     return () => {
       stopMeasuring();

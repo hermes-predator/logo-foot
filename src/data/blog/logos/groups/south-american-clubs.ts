@@ -9,6 +9,7 @@ import { velezSarsfieldLogoPost } from '../velez-sarsfield-logo';
 import { deportivoCaliLogoPost } from '../deportivo-cali-logo';
 import { rosarioCentralLogoPost } from '../rosario-central-logo';
 import { racingClubLogoPost } from '../racing-club-logo';
+import { argentinosJuniorsLogoPost } from '../argentinos-juniors-logo';
 
 // Regroupement des posts de clubs sud-américains
 export const southAmericanClubPosts: BlogPost[] = [
@@ -18,5 +19,6 @@ export const southAmericanClubPosts: BlogPost[] = [
   velezSarsfieldLogoPost,
   deportivoCaliLogoPost,
   rosarioCentralLogoPost,
-  racingClubLogoPost
+  racingClubLogoPost,
+  argentinosJuniorsLogoPost
 ];

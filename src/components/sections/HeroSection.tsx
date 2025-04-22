@@ -29,38 +29,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
-        
-        {/* New Blue Bubble */}
-        <div 
-          className="absolute top-40 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl -z-10" 
-          style={{ 
-            animation: 'pulse 7s ease-in-out infinite',
-            transform: 'translateX(-50%) translateY(-50%)'
-          }} 
-        />
-        
-        {/* New Green Bubble */}
-        <div 
-          className="absolute bottom-40 right-0 w-72 h-72 bg-emerald-100/20 rounded-full blur-3xl -z-10" 
-          style={{ 
-            animation: 'pulse 10s ease-in-out infinite',
-            transform: 'translateX(50%) translateY(50%)'
-          }} 
-        />
-        
-        {/* Existing background elements */}
-        <div className="absolute top-40 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
-          <Sparkles className="h-8 w-8" />
-        </div>
-        <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
-          <Sparkles className="h-10 w-10" />
-        </div>
+        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 7s ease-in-out infinite' }} />
+        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
       </div>
-
       
       {/* Decorative elements avec animation optimisée */}
-      
-      
+      <div className="absolute top-28 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
+        <Sparkles className="h-8 w-8" />
+      </div>
+      <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
+        <Sparkles className="h-10 w-10" />
+      </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-6">
         {/* Premium Badge - Optimisé */}

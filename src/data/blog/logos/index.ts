@@ -22,8 +22,8 @@ import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
-// Remove this individual reference since it's already part of spanishClubPosts
-// import { realMadridLogoPost } from './real-madrid-logo';
+// This import was commented out because it's already part of spanishClubPosts
+import { realMadridLogoPost } from './real-madrid-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -86,8 +86,8 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
-  // Ce logo est déjà inclus dans spanishClubPosts, pas besoin de l'ajouter individuellement
-  // realMadridLogoPost,
+  // Adding back the individual reference to ensure it appears in the blog
+  realMadridLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -127,4 +127,3 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
 ];
-

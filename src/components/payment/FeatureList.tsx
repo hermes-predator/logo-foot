@@ -13,26 +13,6 @@ interface FeatureProps {
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
     <div className="relative flex items-center gap-4 text-gray-800 p-2 rounded-lg">
-      {/* Blue bubble (top right) */}
-      <span
-        className="absolute -top-2 -right-2 w-7 h-7 rounded-full"
-        style={{
-          background: '#D3E4FD',
-          opacity: 0.55,
-          zIndex: 0,
-        }}
-        aria-hidden="true"
-      />
-      {/* Green bubble (bottom left) */}
-      <span
-        className="absolute bottom-0 -left-2 w-9 h-9 rounded-full"
-        style={{
-          background: '#F2FCE2',
-          opacity: 0.55,
-          zIndex: 0,
-        }}
-        aria-hidden="true"
-      />
       <div className={`relative z-10 p-2 rounded-full ${className || 'bg-blue-100'}`}>
         <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
@@ -86,15 +66,13 @@ const FeatureList = () => {
       iconColor: "text-emerald-600",
       description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     },
-    // Nouvelle bulle bleue (gauche)
     {
       icon: Zap,
       text: "Utilité multiple",
       className: "bg-blue-100",
       iconColor: "text-blue-700",
-      description: "Profitez d’une ressource idéale pour web, print, réseaux sociaux et merchandising"
+      description: "Profitez d'une ressource idéale pour web, print, réseaux sociaux et merchandising"
     },
-    // Nouvelle bulle verte (droite)
     {
       icon: Zap,
       text: "Optimisé pour la création",
@@ -122,4 +100,3 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
-

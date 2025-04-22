@@ -1,5 +1,5 @@
 
-import React, { memo } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import { Clock } from 'lucide-react';
@@ -10,9 +10,7 @@ interface BlogArticleCardProps {
   post: BlogPost;
 }
 
-// Utiliser memo pour éviter les re-renders inutiles
-const BlogArticleCard = memo(({ post }: BlogArticleCardProps) => {
-  // Cette valeur est calculée une seule fois par post
+const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
   
   return (
@@ -67,9 +65,6 @@ const BlogArticleCard = memo(({ post }: BlogArticleCardProps) => {
       </article>
     </Link>
   );
-});
-
-// Ajouter un displayName pour faciliter le débogage dans React DevTools
-BlogArticleCard.displayName = 'BlogArticleCard';
+};
 
 export default BlogArticleCard;

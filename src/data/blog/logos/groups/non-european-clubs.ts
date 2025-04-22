@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import non-European club logo posts
@@ -45,7 +46,8 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   alNassrLogoPost,
   alAhliLogoPost,
   alIttihadLogoPost,
-  // Remove tigresUanlLogoPost from here as it's already included in logos/index.ts
+  // Remove alEttifaqLogoPost from here as it's already included in asianClubsPost
+  tigresUanlLogoPost,
   chicagoFireLogoPost,
   atlantaUnitedLogoPost,
   newYorkCityFcLogoPost,
@@ -67,6 +69,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   sanJoseEarthquakesLogoPost,
   columbusCrewLogoPost,
   sacramentoRepublicLogoPost,
+  // Removing louisvilleCityLogoPost from here to avoid duplication
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,

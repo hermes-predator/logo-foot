@@ -1,5 +1,4 @@
-
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
 import { BlogCategory, BLOG_CATEGORIES } from '../types/blog';
@@ -16,20 +15,17 @@ const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   const [isLoading, setIsLoading] = useState(true);
-  const [filteredPosts, setFilteredPosts] = useState([]);
-
-  // Use useMemo to optimize the initial filtering of posts
-  const postsToFilter = useMemo(() => blogPosts, []);
+  const [filteredPosts, setFilteredPosts] = useState(blogPosts);
 
   // Filter posts based on URL parameters
   useEffect(() => {
     setIsLoading(true);
 
-    let postsToShow = postsToFilter;
+    let postsToShow = blogPosts;
     
     // Filter by main category if specified
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-      postsToShow = postsToFilter.filter(post => post.category === categoryParam as BlogCategory);
+      postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
       console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
     }
     
@@ -40,27 +36,26 @@ const Blog = () => {
       setIsLoading(false);
     }, 500);
     return () => clearTimeout(timer);
-  }, [categoryParam, postsToFilter]);
+  }, [categoryParam]);
 
-  // Optimization: Only check for invalid posts in development
+  // Check for invalid posts
   useEffect(() => {
-    if (import.meta.env.DEV) {
-      console.log('Blog page loaded with', postsToFilter.length, 'total posts');
+    console.log('Blog page loaded with', blogPosts.length, 'total posts');
 
-      // Check for any posts with missing required fields
-      const invalidPosts = postsToFilter.filter(post => !post.id || !post.title || !post.excerpt || !post.date || !post.content);
-      if (invalidPosts.length > 0) {
-        console.warn('Found', invalidPosts.length, 'posts with missing required fields:', invalidPosts.map(p => ({
-          id: p.id,
-          title: p.title
-        })));
-      }
-
-      // Check for player category posts
-      const playerPosts = postsToFilter.filter(post => post.category === 'players');
-      console.log(`Articles sur les joueurs: ${playerPosts.length}`);
+    // Check for any posts with missing required fields
+    const invalidPosts = blogPosts.filter(post => !post.id || !post.title || !post.excerpt || !post.date || !post.content);
+    if (invalidPosts.length > 0) {
+      console.warn('Found', invalidPosts.length, 'posts with missing required fields:', invalidPosts.map(p => ({
+        id: p.id,
+        title: p.title
+      })));
     }
-  }, [postsToFilter]);
+
+    // Check for player category posts
+    const playerPosts = blogPosts.filter(post => post.category === 'players');
+    console.log(`Articles sur les joueurs: ${playerPosts.length}`);
+    
+  }, []);
 
   const {
     currentPage,
@@ -130,8 +125,7 @@ const Blog = () => {
   const metaDescription = getEnrichedDescription();
   const metaKeywords = getEnrichedKeywords();
   
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
+  return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta name="description" content={metaDescription} />
@@ -160,27 +154,21 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         
-        {categoryParam && (
-          <div className="pl-4 mb-6">
+        {categoryParam && <div className="pl-4 mb-6">
             <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
-          </div>
-        )}
+          </div>}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
-          {totalPages > 1 && (
-            <div className="px-4">
+          {totalPages > 1 && <div className="px-4">
               <BlogPagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
-            </div>
-          )}
+            </div>}
         </div>
       </main>
 
       {/* Add the FloatingCTA component */}
       <FloatingCTA />
-    </div>
-  );
+    </div>;
 };
-
 export default Blog;

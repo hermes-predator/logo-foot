@@ -16,12 +16,7 @@ Le **logo de Rosario Central** trouve ses origines dans l'histoire ferroviaire d
 
 ## Un Design Chargé de Symbolisme
 
-Le **logo de foot Rosario Central Argentine** actuel est composé de plusieurs éléments significatifs :
-
-- Les couleurs bleu et or, emblématiques du club
-- Les initiales "CARC" (Club Atlético Rosario Central)
-- La forme distinctive qui rappelle les écussons traditionnels
-- Des éléments symboliques liés à l'histoire ferroviaire
+Le **logo de foot Rosario Central Argentine** actuel est composé de plusieurs éléments significatifs. Les couleurs bleu et or sont emblématiques du club et symbolisent son histoire. Les initiales "CARC" représentant Club Atlético Rosario Central sont soigneusement intégrées. La forme distinctive rappelle les écussons traditionnels, tandis que des éléments symboliques liés à l'histoire ferroviaire sont subtilement incorporés dans le design.
 
 ## Évolution à Travers les Époques
 

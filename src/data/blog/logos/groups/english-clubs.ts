@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import des articles sur les logos des clubs anglais
@@ -34,7 +35,8 @@ import { westHamLogoPost } from '../west-ham-logo';
 import { westBromwichLogoPost } from '../west-bromwich-logo';
 import { wiganAthleticLogoPost } from '../wigan-athletic-logo';
 import { wolverhamptonLogoPost } from '../wolverhampton-logo';
-import { watfordLogoPost } from '../watford-logo';
+// Suppression de l'import du watfordLogoPost pour éviter les doublons
+// import { watfordLogoPost } from '../watford-logo';
 import { sheffieldUnitedLogoPost } from '../sheffield-united-logo';
 import { lutonTownLogoPost } from '../luton-town-logo';
 import { ipswichTownLogoPost } from '../ipswich-town-logo';
@@ -104,7 +106,7 @@ export const englishClubPosts: BlogPost[] = [
   westBromwichLogoPost,
   wiganAthleticLogoPost,
   wolverhamptonLogoPost,
-  watfordLogoPost,
+  // Suppression du watfordLogoPost de cette liste pour éviter les doublons
   sheffieldUnitedLogoPost,
   lutonTownLogoPost,
   ipswichTownLogoPost,

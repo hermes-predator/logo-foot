@@ -4,7 +4,8 @@ import { BlogPost } from '../../../../types/blog';
 // Import Asian club logo posts
 import { alEttifaqLogoPost } from '../al-ettifaq-logo';
 import { alShababLogoPost } from '../al-shabab-logo';
-import { guangzhouLogoPost } from '../guangzhou-logo';
+// Suppression du doublon guangzhouLogoPost
+// import { guangzhouLogoPost } from '../guangzhou-logo';
 import { damacFcLogoPost } from '../damac-fc-logo';
 import { alKhaleejLogoPost } from '../al-khaleej-logo';
 
@@ -12,7 +13,7 @@ import { alKhaleejLogoPost } from '../al-khaleej-logo';
 export const asianClubPosts: BlogPost[] = [
   alEttifaqLogoPost,
   alShababLogoPost,
-  guangzhouLogoPost,
+  // guangzhouLogoPost, // Supprimé pour éviter le doublon
   damacFcLogoPost,
   alKhaleejLogoPost
 ];

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -12,11 +11,31 @@ interface FeatureProps {
 
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
-    <div className="flex items-center gap-4 text-gray-800 p-2 rounded-lg">
-      <div className={`p-2 rounded-full ${className || 'bg-blue-100'}`}>
+    <div className="relative flex items-center gap-4 text-gray-800 p-2 rounded-lg">
+      {/* Blue bubble (top right) */}
+      <span
+        className="absolute -top-2 -right-2 w-7 h-7 rounded-full"
+        style={{
+          background: '#D3E4FD',
+          opacity: 0.55,
+          zIndex: 0,
+        }}
+        aria-hidden="true"
+      />
+      {/* Green bubble (bottom left) */}
+      <span
+        className="absolute bottom-0 -left-2 w-9 h-9 rounded-full"
+        style={{
+          background: '#F2FCE2',
+          opacity: 0.55,
+          zIndex: 0,
+        }}
+        aria-hidden="true"
+      />
+      <div className={`relative z-10 p-2 rounded-full ${className || 'bg-blue-100'}`}>
         <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
-      <div>
+      <div className="relative z-10">
         <span className="text-[15px] font-medium">{text}</span>
         {description && (
           <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[240px]">{description}</p>

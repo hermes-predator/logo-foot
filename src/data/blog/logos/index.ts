@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -17,7 +18,6 @@ import { spanishClubPosts } from './groups/spanish-clubs';
 import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
-// import { ancienLogoOmPost } from './ancien-logo-om';
 import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
@@ -25,18 +25,15 @@ import { wolfsburgLogoPost } from './wolfsburg-logo';
 import { villarrealCfLogoPost } from './villarreal-cf-logo';
 import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
-import { wiganAthleticLogoPost } from './wigan-athletic-logo';
-import { wolverhamptonLogoPost } from './wolverhampton-logo';
+// Removed the duplicate wolverhampton import
 import { realMadridLogoPost } from './real-madrid-logo';
 import { cesenaLogoPost } from './cesena-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
-// import { ligaMxLogoPost } from './liga-mx-logo';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';
-// import { tacaDePortugalLogoPost } from './taca-de-portugal-logo';
-// import { cadizLogoPost } from './cadiz-logo';
+import { ballonDorLogoPost } from './ballon-dor-logo';
 import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
 import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
 import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
@@ -53,16 +50,10 @@ import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
-import { ballonDorLogoPost } from './ballon-dor-logo';
 import { louisvilleCityLogoPost } from './louisville-city-logo';
-// import { sacramentoRepublicLogoPost } from './sacramento-republic-logo';
-// import { alEttifaqLogoPost } from './al-ettifaq-logo';
-// import { botafogoLogoPost } from './botafogo-logo';
-// import { burtonAlbionLogoPost } from './burton-albion-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
-// import { houstonDynamoLogoPost } from './houston-dynamo-logo';
 import { pecZwolleLogoPost } from './pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
@@ -95,7 +86,6 @@ export const logoPosts: BlogPost[] = [
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
-  // ancienLogoOmPost,
   omLogoPost,
   westHamLogoPost,
   westBromwichLogoPost,
@@ -103,19 +93,15 @@ export const logoPosts: BlogPost[] = [
   villarrealCfLogoPost,
   valenciennesLogoPost,
   watfordLogoPost,
-  wiganAthleticLogoPost,
-  wolverhamptonLogoPost,
+  // Removed duplicate wolverhampton logo post
   realMadridLogoPost,
   cesenaLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
   saudiFootballClubLogosPost,
-  // ligaMxLogoPost,
   hajdukSplitLogoPost,
-  // tacaDePortugalLogoPost,
   ballonDorLogoPost,
-  // cadizLogoPost,
   pixelArtPsgLogoPost,
   dinamoTbilisiLogoPost,
   maccabiTelAvivLogoPost,
@@ -133,14 +119,9 @@ export const logoPosts: BlogPost[] = [
   wycombeWanderersLogoPost,
   tigresUanlLogoPost,
   louisvilleCityLogoPost,
-  // sacramentoRepublicLogoPost
-  // alEttifaqLogoPost
-  // botafogoLogoPost
-  // burtonAlbionLogoPost
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
-  // houstonDynamoLogoPost
   pecZwolleLogoPost,
   rkcWaalwijkLogoPost,
   nacBredaLogoPost,

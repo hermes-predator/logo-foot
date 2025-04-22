@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -30,7 +29,7 @@ import { realMadridLogoPost } from './real-madrid-logo';
 // Suppression du doublon cesenaLogoPost qui est déjà inclus dans italianClubPosts
 // import { cesenaLogoPost } from './cesena-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
-import { cittadellaLogoPost } from './cittadella-logo';
+import { cittadellaLogoPost } from './cittadellaLogoPost';
 import { reggianaLogoPost } from './reggiana-logo';
 import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
 import { hajdukSplitLogoPost } from './hajduk-split-logo';

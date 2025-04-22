@@ -97,12 +97,14 @@ import { adanaDemirsporLogoPost } from '../adana-demirspor-logo';
 import { alanyasporLogoPost } from '../alanyaspor-logo';
 import { samsungsporLogoPost } from '../samsunspor-logo';
 import { goztepeLogoPost } from '../goztepe-logo';
+import { mkeAnkaragucuLogoPost } from '../mke-ankaragucu-logo';
 
 export const otherEuropeanClubPosts: BlogPost[] = [
   adanaDemirsporLogoPost,
   alanyasporLogoPost,
   samsungsporLogoPost,
   goztepeLogoPost,
+  mkeAnkaragucuLogoPost,
   aberdeenLogoPost,
   ajaxLogoPost,
   anderlechtLogoPost,

@@ -74,6 +74,7 @@ import { rapidWienLogoPost } from './rapid-wien-logo';
 import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
+import { guangzhouLogoPost } from './guangzhou-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -151,4 +152,5 @@ export const logoPosts: BlogPost[] = [
   redBullSalzburgLogoPost,
   erzurumsporLogoPost,
   bandirmasporLogoPost,
+  guangzhouLogoPost,
 ];

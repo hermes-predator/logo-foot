@@ -4,11 +4,13 @@ import { BlogPost } from '../../../../types/blog';
 // Import Asian club logo posts
 import { alEttifaqLogoPost } from '../al-ettifaq-logo';
 import { alShababLogoPost } from '../al-shabab-logo';
+import { guangzhouLogoPost } from '../guangzhou-logo';
 
 // Group Asian club logo posts
 export const asianClubPosts: BlogPost[] = [
   alEttifaqLogoPost,
-  alShababLogoPost
+  alShababLogoPost,
+  guangzhouLogoPost
 ];
 
 // Export as single post for categorized views

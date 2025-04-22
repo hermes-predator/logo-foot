@@ -1,5 +1,5 @@
 
-import { BlogPost } from "../../../../types/blog";
+import { BlogPost } from '../../../../types/blog';
 
 // Import des articles existants de clubs sud-américains
 import { bocaJuniorsLogoPost } from '../boca-juniors-logo';
@@ -10,6 +10,7 @@ import { deportivoCaliLogoPost } from '../deportivo-cali-logo';
 import { rosarioCentralLogoPost } from '../rosario-central-logo';
 import { racingClubLogoPost } from '../racing-club-logo';
 import { argentinosJuniorsLogoPost } from '../argentinos-juniors-logo';
+import { godoyCruzLogoPost } from '../godoy-cruz-logo';
 
 // Regroupement des posts de clubs sud-américains
 export const southAmericanClubPosts: BlogPost[] = [
@@ -20,5 +21,6 @@ export const southAmericanClubPosts: BlogPost[] = [
   deportivoCaliLogoPost,
   rosarioCentralLogoPost,
   racingClubLogoPost,
-  argentinosJuniorsLogoPost
+  argentinosJuniorsLogoPost,
+  godoyCruzLogoPost
 ];

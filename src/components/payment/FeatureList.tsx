@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -84,6 +85,22 @@ const FeatureList = () => {
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
+    },
+    // Nouvelle bulle bleue (gauche)
+    {
+      icon: Zap,
+      text: "Utilité multiple",
+      className: "bg-blue-100",
+      iconColor: "text-blue-700",
+      description: "Profitez d’une ressource idéale pour web, print, réseaux sociaux et merchandising"
+    },
+    // Nouvelle bulle verte (droite)
+    {
+      icon: Zap,
+      text: "Optimisé pour la création",
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-700",
+      description: "Des logos uniformisés parfaits pour designers, créateurs et agences"
     }
   ];
 
@@ -105,3 +122,4 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
+

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import other European club logo posts
@@ -64,7 +63,7 @@ import { rubinKazanLogoPost } from '../rubin-kazan-logo';
 import { bateBorisoVLogoPost } from '../bate-borisov-logo';
 import { dinamoMinskLogoPost } from '../dinamo-minsk-logo';
 import { djurgardensIfLogoPost } from '../djurgardens-if-logo';
-
+import { ifkGoteborgLogoPost } from '../ifk-goteborg-logo';
 import { legiaVarsovieLogoPost } from '../legia-varsovie-logo';
 import { bursasporLogoPost } from '../bursaspor-logo';
 import { konyasporLogoPost } from '../konyaspor-logo';
@@ -170,6 +169,7 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   bateBorisoVLogoPost,
   dinamoMinskLogoPost,
   djurgardensIfLogoPost,
+  ifkGoteborgLogoPost,
   legiaVarsovieLogoPost,
   bursasporLogoPost,
   konyasporLogoPost,
@@ -200,4 +200,3 @@ export const otherEuropeanClubPosts: BlogPost[] = [
   unionSaintGilloiseLogoPost,
   wolfsbergerAcLogoPost
 ];
-

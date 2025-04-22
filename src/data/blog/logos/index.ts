@@ -22,15 +22,8 @@ import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
-// Removing this import as it's already part of spanishClubPosts
-// import { villarrealCfLogoPost } from './villarreal-cf-logo';
-// Removing this import as it's already part of frenchClubPosts
-// import { valenciennesLogoPost } from './valenciennes-logo';
-import { watfordLogoPost } from './watford-logo';
-// Removed the duplicate wolverhampton import
-import { realMadridLogoPost } from './real-madrid-logo';
-// Suppression du doublon cesenaLogoPost qui est déjà inclus dans italianClubPosts
-// import { cesenaLogoPost } from './cesena-logo';
+// Remove this individual reference since it's already part of spanishClubPosts
+// import { realMadridLogoPost } from './real-madrid-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -93,14 +86,8 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
-  // Remove this individual reference since it's already part of spanishClubPosts
-  // villarrealCfLogoPost,
-  // Remove this individual reference since it's already part of frenchClubPosts
-  // valenciennesLogoPost,
-  watfordLogoPost,
-  // Removed duplicate wolverhampton logo post
-  realMadridLogoPost,
-  // Suppression du doublon cesenaLogoPost qui est déjà inclus dans italianClubPosts
+  // Ce logo est déjà inclus dans spanishClubPosts, pas besoin de l'ajouter individuellement
+  // realMadridLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -140,3 +127,4 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
 ];
+

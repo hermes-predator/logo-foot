@@ -51,7 +51,7 @@ const FeatureList = () => {
       text: "Renforcement du patrimoine",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Augmentez la valeur de vos actifs digitaux avec notre fichier spécialisé"
+      description: "Augmentez la valeur de vos actifs digitaux avec notre fichier spécialisé (stockage)"
     },
     {
       icon: Heart,

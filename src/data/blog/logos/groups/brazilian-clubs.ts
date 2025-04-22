@@ -10,6 +10,7 @@ import { fluminenseLogoPost } from '../fluminense-logo';
 import { gremioLogoPost } from '../gremio-logo';
 import { fortalezaLogoPost } from '../fortaleza-logo';
 import { vascoLogoPost } from '../vasco-da-gama-logo';
+import { chapecoenseLogoPost } from '../chapecoense-logo';
 
 // Group all Brazilian club logo posts
 export const brazilianClubPosts: BlogPost[] = [
@@ -22,5 +23,7 @@ export const brazilianClubPosts: BlogPost[] = [
   fluminenseLogoPost,
   gremioLogoPost,
   fortalezaLogoPost,
-  vascoLogoPost
+  vascoLogoPost,
+  chapecoenseLogoPost
 ];
+

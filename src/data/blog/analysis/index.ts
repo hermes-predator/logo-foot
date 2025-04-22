@@ -8,7 +8,7 @@ import { laligaAnalysis } from './laliga';
 import { ligue1Analysis } from './ligue-1';
 import { championsLeagueAnalysis } from './champions-league';
 import { kylianMbappePost } from './kylian-mbappe';
-import { mbappeEtSonFilsPost } from './mbappe-et-son-fils';
+// Remove the import for mbappeEtSonFilsPost
 import { victorOsimhenPost } from './victor-osimhen';
 import { dynamoKievLogoPost } from './dynamo-kiev-logo';
 import { philFodenPost } from './phil-foden';
@@ -42,7 +42,7 @@ import { benjaminSeskoPost } from './benjamin-sesko';
 import { alejandroGarnachoPost } from './alejandro-garnacho';
 import { colorTheoryPost } from './color-theory';
 
-// Group all posts into a single array
+// Group all posts into a single array, excluding mbappeEtSonFilsPost
 export const analysisPosts: BlogPost[] = [
   psgRumeursTransfertPost,
   premierLeagueAnalysis,
@@ -52,7 +52,6 @@ export const analysisPosts: BlogPost[] = [
   ligue1Analysis,
   championsLeagueAnalysis,
   kylianMbappePost,
-  mbappeEtSonFilsPost,
   victorOsimhenPost,
   dynamoKievLogoPost,
   philFodenPost,

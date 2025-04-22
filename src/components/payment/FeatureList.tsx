@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -63,7 +64,7 @@ const FeatureList = () => {
       text: "Valeur à votre actif",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Une ressource pérenne qui conserve sa valeur dans le temps"
+      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     }
   ];
 

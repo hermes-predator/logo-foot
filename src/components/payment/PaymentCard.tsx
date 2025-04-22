@@ -90,7 +90,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                       <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
                         <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
                       </span>
-                      <Eye className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                      <Eye className="h-5 w-5" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>

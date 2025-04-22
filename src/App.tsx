@@ -1,4 +1,3 @@
-
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -11,9 +10,12 @@ import HreflangTags from './components/SEO/HreflangTags';
 import GlobalCanonical from './components/SEO/GlobalCanonical';
 import { measureCoreWebVitals, prefetchCriticalResources, optimizeFontLoading } from './lib/core-web-vitals';
 import { WebVitalsReporter } from './components/ui/web-vitals-reporter';
+import { ComponentType } from 'react';
 
-// Améliorer le lazy loading avec une stratégie de retry
-const retryLazyLoad = (componentImport) => {
+// Améliorer le lazy loading avec une stratégie de retry correctement typée
+const retryLazyLoad = <T extends ComponentType<any>>(
+  componentImport: () => Promise<{ default: T }>
+): Promise<{ default: T }> => {
   return new Promise((resolve, reject) => {
     // Retry loading up to 3 times with exponential backoff
     const load = (retries = 0) => {

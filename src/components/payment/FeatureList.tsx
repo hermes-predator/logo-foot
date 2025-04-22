@@ -56,7 +56,7 @@ const FeatureList = () => {
     {
       icon: Heart,
       text: "Prix accessible",
-      description: "Un tarif réduit pour permettre au plus grand nombre d'en disposer"
+      description: "Un tarif réduit pour booster votre parcours personnel à moindre frais"
     },
     {
       icon: TrendingUp,

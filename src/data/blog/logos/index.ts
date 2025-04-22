@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -6,7 +5,6 @@ import { brazilianClubPosts } from './groups/brazilian-clubs';
 import { competitionPosts } from './groups/competitions';
 import { englishClubPosts } from './groups/english-clubs';
 import { frenchClubPosts } from './groups/french-clubs';
-import { frenchCategorizedPosts, franceCategoryPost } from './groups/french-clubs-categorized';
 import { generalContentPosts } from './groups/general-content';
 import { germanClubPosts } from './groups/german-clubs';
 import { italianClubPosts } from './groups/italian-clubs';
@@ -77,17 +75,6 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
-import { d1ArkemaLogoPost } from './d1-arkema-logo';
-import { stadeMayennaisLogoPost } from './stade-mayennais-logo';
-import { brestLogoPost } from './brest-logo';
-import { metzLogoPost } from './metz-logo';
-import { grenobleLogoPost } from './grenoble-logo';
-import { rodezLogoPost } from './rodez-logo';
-import { dijonLogoPost } from './dijon-logo';
-import { niortLogoPost } from './niort-logo';
-import { martiguesLogoPost } from './martigues-logo';
-import { limonestLogoPost } from './limonest-logo';
-import { saintPriestLogoPost } from './saint-priest-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -96,7 +83,6 @@ export const logoPosts: BlogPost[] = [
   ...competitionPosts,
   ...englishClubPosts,
   ...frenchClubPosts,
-  ...frenchCategorizedPosts,
   ...generalContentPosts,
   ...germanClubPosts,
   ...italianClubPosts,
@@ -106,7 +92,6 @@ export const logoPosts: BlogPost[] = [
   ...portugueseClubPosts,
   ...southAmericanClubPosts,
   ...spanishClubPosts,
-  franceCategoryPost,
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
@@ -168,6 +153,4 @@ export const logoPosts: BlogPost[] = [
   erzurumsporLogoPost,
   bandirmasporLogoPost,
   guangzhouLogoPost,
-  d1ArkemaLogoPost,
-  stadeMayennaisLogoPost,
 ];

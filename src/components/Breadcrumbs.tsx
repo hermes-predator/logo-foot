@@ -13,7 +13,6 @@ const Breadcrumbs = () => {
   const location = useLocation();
   const paths = location.pathname.split('/').filter(path => path);
 
-  // Fonction améliorée pour générer des labels plus descriptifs et accessibles
   const generateBreadcrumbLabel = (path: string) => {
     // Transformer les slugs en labels plus lisibles
     switch(path) {
@@ -63,7 +62,8 @@ const Breadcrumbs = () => {
             const label = generateBreadcrumbLabel(path);
             
             return (
-              <React.Fragment key={index}>
+              // Ajout d'une clé unique pour résoudre le warning
+              <React.Fragment key={`breadcrumb-${index}-${path}`}>
                 <BreadcrumbSeparator aria-hidden="true">
                   <ChevronRight className="h-4 w-4 text-gray-400" />
                 </BreadcrumbSeparator>
@@ -96,3 +96,4 @@ const Breadcrumbs = () => {
 };
 
 export default Breadcrumbs;
+

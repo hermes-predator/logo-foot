@@ -50,8 +50,8 @@ import { middlesbroughLogoPost } from './middlesbrough-logo';
 import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
 import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
-import { boltonWanderersPost } from './bolton-wanderers-logo';
-import { wycombeWanderersPost } from './wycombe-wanderers-logo';
+import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
+import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
 import { ballonDorLogoPost } from './ballon-dor-logo';
 import { louisvilleCityLogoPost } from './louisville-city-logo';
@@ -127,8 +127,8 @@ export const logoPosts: BlogPost[] = [
   blackburnRoversLogoPost,
   derbyCountyLogoPost,
   millwallLogoPost,
-  boltonWanderersPost,
-  wycombeWanderersPost,
+  boltonWanderersLogoPost,
+  wycombeWanderersLogoPost,
   tigresUanlLogoPost,
   louisvilleCityLogoPost,
   // sacramentoRepublicLogoPost

@@ -36,18 +36,42 @@ export function OptimizedImage({
     generateSrcSet(src, [320, 640, 768, 1024, 1280, 1536, width], 80),
   [src, width]);
   
-  // Resize and optimize image URL if it's on our domain
+  // Optimize image URL with size and format parameters
   const optimizedSrc = useMemo(() => {
     if (src.startsWith('/') || src.includes('logo-foot.com')) {
-      // Add query params to resize image if it's our own
-      return `${src}${src.includes('?') ? '&' : '?'}w=${width}&quality=80`;
+      const params = new URLSearchParams();
+      params.append('w', width.toString());
+      params.append('q', '80');
+      params.append('auto', 'format');
+      
+      // Add WebP support if available
+      if (window.navigator.userAgent.includes('Chrome') || 
+          window.navigator.userAgent.includes('Firefox') || 
+          window.navigator.userAgent.includes('Safari')) {
+        params.append('fm', 'webp');
+      }
+      
+      const separator = src.includes('?') ? '&' : '?';
+      return `${src}${separator}${params.toString()}`;
     }
     return src;
   }, [src, width]);
 
-  // Utiliser format moderne WebP si disponible
-  const imgSrc = optimizedSrc;
-  
+  // Performance monitoring
+  useEffect(() => {
+    if (isLoaded && window.performance && window.performance.mark) {
+      window.performance.mark(`image-loaded-${src}`);
+      
+      // Report to analytics if needed
+      if (window.performance.getEntriesByName) {
+        const loadTime = window.performance.getEntriesByName(`image-loaded-${src}`)[0]?.duration;
+        if (loadTime && loadTime > 3000) {
+          console.warn(`Slow image load (${loadTime}ms):`, src);
+        }
+      }
+    }
+  }, [isLoaded, src]);
+
   const handleLoad = () => {
     setIsLoaded(true);
     
@@ -60,7 +84,7 @@ export function OptimizedImage({
   const handleError = () => {
     console.error(`Failed to load image: ${src}`);
     setError(true);
-    setIsLoaded(true); // Consider it "loaded" to remove skeleton
+    setIsLoaded(true);
   };
 
   // Add protection against screen capture
@@ -68,15 +92,8 @@ export function OptimizedImage({
     const imgElement = imgRef.current;
     if (!imgElement) return;
 
-    // Ajouter un watermark dynamique à l'image si nécessaire
-    // Ceci est juste une fonction de démonstration, le vrai watermark serait fait côté serveur
-    const addWatermark = () => {
-      // Cette fonction pourrait être implémentée pour ajouter un watermark via canvas
-      // mais idéalement le watermark devrait être ajouté côté serveur
-    };
-
     if (isInView) {
-      addWatermark();
+      // Protection logic here if needed
     }
   }, [isInView, imgRef]);
 
@@ -94,11 +111,11 @@ export function OptimizedImage({
         ) : (
           <>
             {/* Préchargement pour les images prioritaires */}
-            {priority && <link rel="preload" as="image" href={imgSrc} />}
+            {priority && <link rel="preload" as="image" href={optimizedSrc} />}
             
             <img
               ref={imgRef}
-              src={shouldLoad ? imgSrc : '/placeholder.svg'}
+              src={shouldLoad ? optimizedSrc : '/placeholder.svg'}
               srcSet={shouldLoad ? srcSet : ''}
               sizes={sizes}
               alt={alt}
@@ -106,8 +123,6 @@ export function OptimizedImage({
               height={height}
               onLoad={handleLoad}
               onError={handleError}
-              onContextMenu={(e) => e.preventDefault()}
-              draggable="false"
               loading={priority ? 'eager' : 'lazy'}
               decoding={priority ? 'sync' : 'async'}
               fetchPriority={priority ? 'high' : 'auto'}
@@ -118,6 +133,8 @@ export function OptimizedImage({
                 `object-${objectFit}`,
                 className
               )}
+              onContextMenu={(e) => e.preventDefault()}
+              draggable="false"
             />
           </>
         )}

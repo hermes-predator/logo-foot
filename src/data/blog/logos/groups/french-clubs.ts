@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { lePuyFootLogoPost } from '../le-puy-foot-logo';
 import { evianThononLogoPost } from '../evian-thonon-logo';

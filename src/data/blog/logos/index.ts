@@ -23,7 +23,8 @@ import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
 import { villarrealCfLogoPost } from './villarreal-cf-logo';
-import { valenciennesLogoPost } from './valenciennes-logo';
+// Removing this import as it's already part of frenchClubPosts
+// import { valenciennesLogoPost } from './valenciennes-logo';
 import { watfordLogoPost } from './watford-logo';
 // Removed the duplicate wolverhampton import
 import { realMadridLogoPost } from './real-madrid-logo';
@@ -92,7 +93,8 @@ export const logoPosts: BlogPost[] = [
   westBromwichLogoPost,
   wolfsburgLogoPost,
   villarrealCfLogoPost,
-  valenciennesLogoPost,
+  // Remove this individual reference since it's already part of frenchClubPosts
+  // valenciennesLogoPost,
   watfordLogoPost,
   // Removed duplicate wolverhampton logo post
   realMadridLogoPost,

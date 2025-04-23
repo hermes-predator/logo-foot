@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
 
@@ -83,7 +82,7 @@ const FeatureList = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-x-6 gap-y-3 mb-8 pt-6 mt-3">
+    <div className="grid md:grid-cols-2 gap-x-4 gap-y-2 mb-8 pt-6 mt-3">
       {features.map((feature, index) => (
         <Feature 
           key={index} 

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText } from "lucide-react";
@@ -50,7 +51,7 @@ const CGVDialog = () => (
           </p>
           <p className="mt-2">
             Cette garantie est optionnelle, non automatique et laissée à la discrétion exclusive de l'éditeur, après analyse de la situation. 
-            Toute demande de remboursement devra être adressée par e-mail à contact@logo-foot.com dans un délai de 7 jours suivant l'achat.
+            Toute demande de remboursement devra être adressée par e-mail à contact@logo-foot.com dans un délai de 14 jours suivant l'achat.
           </p>
           <p className="mt-2">
             Hermès Ressources se réserve le droit de refuser tout remboursement jugé abusif, injustifié ou ne répondant pas aux conditions 

@@ -59,8 +59,8 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile */}
-          <div className={`absolute top-12 right-10 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
+          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
+          <div className={`absolute top-16 right-10 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={75} />
           </div>
           

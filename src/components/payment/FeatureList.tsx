@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
 
@@ -12,12 +11,12 @@ interface FeatureProps {
 
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
-    <div className="relative flex items-center gap-3 text-gray-800 p-1.5 rounded-lg">
+    <div className="relative flex items-center gap-4 text-gray-800 p-2 rounded-lg">
       <div className={`relative z-10 p-2 rounded-full ${className || 'bg-blue-100'}`}>
-        <Icon className={`h-4 w-4 ${iconColor || 'text-blue-600'}`} />
+        <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
       <div className="relative z-10">
-        <span className="text-[14px] font-semibold">{text}</span>
+        <span className="text-[15px] font-semibold">{text}</span>
         {description && (
           <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[240px]">{description}</p>
         )}
@@ -56,7 +55,7 @@ const FeatureList = () => {
     },
     {
       icon: BadgeCheck,
-      text: "Fichier de haute qualité", 
+      text: "Fichier de haute qualité", // Updated text here
       className: "bg-blue-100",
       iconColor: "text-blue-700",
       description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat"
@@ -83,7 +82,7 @@ const FeatureList = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-x-4 gap-y-2 mb-8 pt-6 mt-3">
+    <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8 pt-6 mt-3">
       {features.map((feature, index) => (
         <Feature 
           key={index} 
@@ -100,4 +99,3 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
-

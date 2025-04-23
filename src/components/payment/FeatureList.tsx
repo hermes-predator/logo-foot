@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -75,10 +74,10 @@ const FeatureList = () => {
     },
     {
       icon: Zap,
-      text: "Optimisé pour la création",
+      text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-700",
-      description: "Gain de confiance : des logos uniformisés parfaits pour designers, créateurs et agences"
+      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     }
   ];
 

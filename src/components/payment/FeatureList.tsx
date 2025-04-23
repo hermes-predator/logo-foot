@@ -41,11 +41,11 @@ const FeatureList = () => {
       description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     },
     {
-      icon: Star,
-      text: "Fichier unique sur le marché",
+      icon: BadgeCheck,
+      text: "Haute qualité",
       className: "bg-blue-100",
-      iconColor: "text-blue-600",
-      description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
+      iconColor: "text-blue-700",
+      description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat"
     },
     {
       icon: TrendingUp,
@@ -55,11 +55,11 @@ const FeatureList = () => {
       description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
     },
     {
-      icon: BadgeCheck,
-      text: "Haute qualité",
+      icon: Star,
+      text: "Fichier unique sur le marché",
       className: "bg-blue-100",
-      iconColor: "text-blue-700",
-      description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat"
+      iconColor: "text-blue-600",
+      description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
     },
     {
       icon: TrendingUp,
@@ -100,3 +100,4 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
+

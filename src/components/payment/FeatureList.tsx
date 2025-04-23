@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
 
@@ -99,3 +100,4 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
+

@@ -78,7 +78,7 @@ const FeatureList = () => {
       text: "Optimisé pour la création",
       className: "bg-emerald-100",
       iconColor: "text-emerald-700",
-      description: "Des logos uniformisés parfaits pour designers, créateurs et agences"
+      description: "Gain de confiance : des logos uniformisés parfaits pour designers, créateurs et agences"
     }
   ];
 

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText } from "lucide-react";
@@ -44,17 +45,16 @@ const CGVDialog = () => (
         <section>
           <h3 className="font-semibold mb-2">Article 7 - Garantie "Satisfait ou remboursé"</h3>
           <p>
-            Bien que les produits numériques ne bénéficient pas du droit de rétractation légal dès lors qu'ils sont téléchargés 
-            (Article L.221-28 du Code de la consommation), Hermès Ressources propose à ses clients une garantie "Satisfait ou remboursé" 
-            dans un cadre strictement commercial.
+            Bien que les produits numériques ne soient légalement pas soumis au droit de rétractation une fois téléchargés (article L221-28 du Code de la consommation), 
+            Hermès Ressources propose, à titre commercial, une garantie "Satisfait ou Remboursé" sous conditions.
           </p>
           <p className="mt-2">
-            Cette garantie est optionnelle, non automatique et laissée à l'appréciation exclusive de l'éditeur, après analyse de la situation. 
-            Toute demande de remboursement devra être adressée par e-mail à contact@logo-foot.com dans un délai de 14 jours suivant l'achat.
+            Le client peut formuler une demande de remboursement motivée par e-mail dans un délai de 14 jours après l'achat. 
+            Chaque demande sera étudiée au cas par cas, et Hermès Ressources se réserve le droit de l'accepter ou de la refuser selon les éléments fournis.
           </p>
           <p className="mt-2">
-            Hermès Ressources se réserve le droit de refuser tout remboursement jugé abusif, injustifié ou ne répondant pas aux conditions 
-            de cette offre commerciale.
+            Cette garantie est optionnelle, non automatique et laissée à l'appréciation exclusive de Hermès Ressources. 
+            Elle ne constitue pas une obligation légale.
           </p>
         </section>
 
@@ -88,3 +88,4 @@ const CGVDialog = () => (
 );
 
 export default CGVDialog;
+

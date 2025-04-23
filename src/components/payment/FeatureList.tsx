@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -59,7 +58,7 @@ const FeatureList = () => {
       text: "Qualité professionnelle",
       className: "bg-blue-100",
       iconColor: "text-blue-700",
-      description: "Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat"
+      description: "Nos logos sont recadrés, uniformes, nommés et triés pour un usage fiable et immédiat"
     },
     {
       icon: TrendingUp,
@@ -100,4 +99,3 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
-

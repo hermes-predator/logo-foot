@@ -35,10 +35,10 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Gain de confiance",
+      text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
+      description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
     },
     {
       icon: Star,
@@ -49,10 +49,10 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Gain de temps", 
+      text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
+      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     },
     {
       icon: BadgeCheck,
@@ -100,3 +100,4 @@ const FeatureList = () => {
 
 export default FeatureList;
 export { Feature, type FeatureProps };
+

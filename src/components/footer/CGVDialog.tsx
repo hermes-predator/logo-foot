@@ -49,7 +49,7 @@ const CGVDialog = () => (
             dans un cadre strictement commercial.
           </p>
           <p className="mt-2">
-            Cette garantie est optionnelle, non automatique et laissée à la discrétion exclusive de l'éditeur, après analyse de la situation. 
+            Cette garantie est optionnelle, non automatique et laissée à l'appréciation exclusive de l'éditeur, après analyse de la situation. 
             Toute demande de remboursement devra être adressée par e-mail à contact@logo-foot.com dans un délai de 14 jours suivant l'achat.
           </p>
           <p className="mt-2">

@@ -58,7 +58,7 @@ const FeatureList = () => {
       text: "Fichier organisé",
       className: "bg-blue-100",
       iconColor: "text-blue-700",
-      description: "Qualité professionnelle"
+      description: "Logos recadrés, uniformes, nommés et triés pour un usage fiable et immédiat"
     },
     {
       icon: TrendingUp,

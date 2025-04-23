@@ -27,7 +27,8 @@ const CGVDialog = () => (
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 4 - Commande et Paiement</h3>
-          <p>La commande devient effective au moment du paiement intégral. Le paiement s'effectue par carte bancaire via notre prestataire sécurisé SumUp.</p>
+          <p>La commande devient effective au moment du paiement intégral.</p>
+          <p>Le paiement s'effectue par carte bancaire via notre prestataire sécurisé SumUp.</p>
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 5 - Livraison</h3>

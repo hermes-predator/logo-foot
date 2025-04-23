@@ -34,6 +34,13 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
+      text: "Gain de confiance",
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-600",
+      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
+    },
+    {
+      icon: TrendingUp,
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -45,13 +52,6 @@ const FeatureList = () => {
       className: "bg-blue-100",
       iconColor: "text-blue-600",
       description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
-    },
-    {
-      icon: TrendingUp,
-      text: "Gain de confiance",
-      className: "bg-emerald-100",
-      iconColor: "text-emerald-600",
-      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     },
     {
       icon: TrendingUp,

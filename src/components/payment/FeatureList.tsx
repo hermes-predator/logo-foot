@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, Medal } from 'lucide-react';
 
@@ -16,7 +17,7 @@ const Feature = ({ icon: Icon, text, description, className, iconColor }: Featur
         <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
       <div className="relative z-10">
-        <span className="text-[15px] font-medium">{text}</span>
+        <span className="text-[15px] font-semibold">{text}</span>
         {description && (
           <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[240px]">{description}</p>
         )}

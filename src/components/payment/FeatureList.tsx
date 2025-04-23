@@ -73,10 +73,10 @@ const FeatureList = () => {
       description: "Un tarif réduit pour permettre au plus grand nombre d'en disposer (partage)"
     },
     {
-      icon: Zap,
+      icon: TrendingUp,
       text: "Gain de confiance",
       className: "bg-emerald-100",
-      iconColor: "text-emerald-700",
+      iconColor: "text-emerald-600",
       description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
     }
   ];

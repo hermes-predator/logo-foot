@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Folder, TrendingUp, Star, Heart, Zap, Medal } from 'lucide-react';
+import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -55,7 +54,7 @@ const FeatureList = () => {
       description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
     },
     {
-      icon: Medal,
+      icon: BadgeCheck,
       text: "Qualité professionnelle",
       className: "bg-blue-100",
       iconColor: "text-blue-700",

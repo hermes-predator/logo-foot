@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap } from 'lucide-react';
 
@@ -55,18 +54,18 @@ const FeatureList = () => {
       description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
     },
     {
-      icon: TrendingUp,
-      text: "Renforcement du patrimoine",
-      className: "bg-emerald-100",
-      iconColor: "text-emerald-600",
-      description: "Augmentez la valeur de vos actifs digitaux en stockant notre fichier spécialisé"
-    },
-    {
       icon: Zap,
       text: "Utilité multiple",
       className: "bg-blue-100",
       iconColor: "text-blue-700",
       description: "Profitez d'une ressource idéale pour web, print, réseaux sociaux et merchandising"
+    },
+    {
+      icon: TrendingUp,
+      text: "Renforcement du patrimoine",
+      className: "bg-emerald-100",
+      iconColor: "text-emerald-600",
+      description: "Augmentez la valeur de vos actifs digitaux en stockant notre fichier spécialisé"
     },
     {
       icon: TrendingUp,

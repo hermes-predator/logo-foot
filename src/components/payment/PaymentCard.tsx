@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -74,7 +75,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-sm" : "font-medium"} transition-colors duration-500 ${isHovered ? 'text-gray-700' : 'text-gray-600'}`}>La plus grande collection de logos de football en haute qualité</p>
           
             {/* Google Drive Badge et bouton œil ensemble */}
-            <div className="mt-3 flex items-center gap-2">
+            <div className="mt-2 flex items-center gap-2">
               <GoogleDriveBadge />
               <TooltipProvider>
                 <Tooltip>
@@ -115,3 +116,4 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
 };
 
 export default PaymentCard;
+

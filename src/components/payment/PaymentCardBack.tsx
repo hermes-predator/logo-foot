@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 
@@ -58,7 +57,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
         <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center">
           <div className="text-4xl mb-4">🎬</div>
           <h3 className="text-xl font-bold text-blue-700 mb-2">Aperçu du fichier</h3>
-          <p className="text-gray-600">Découvrez un aperçu de : "⦗FRONT-CLOUD⦘~ Football.zip"</p>
+          <p className="text-gray-600">Visualisez un aperçu de : "⦗FRONT-CLOUD⦘~ Football.zip"</p>
           <div className="mt-6 grid grid-cols-3 gap-3">
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <div 
@@ -76,4 +75,3 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
 };
 
 export default PaymentCardBack;
-

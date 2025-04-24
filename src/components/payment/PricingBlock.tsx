@@ -60,7 +60,7 @@ const PricingBlock = () => {
                     <li>La date et l'heure d'achat</li>
                     <li>Votre preuve d'achat (reçu)</li>
                   </ul>
-                  <div className="flex items-center gap-1.5 mt-3 text-gray-600 font-medium">
+                  <div className="flex items-center gap-1.5 mt-3 text-gray-600 font-medium justify-center">
                     <Mail className="h-4 w-4" />
                     <a 
                       href="mailto:contact@logo-foot.com" 

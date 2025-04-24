@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -6,6 +7,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Separator } from "@/components/ui/separator";
+import CGVDialog from '../footer/CGVDialog';
 
 const PricingBlock = () => {
   return (
@@ -69,7 +71,9 @@ const PricingBlock = () => {
                   </div>
                   <Separator className="my-2" />
                   <p className="text-[10px] text-gray-400 text-center">
-                    Référence à l'Article 7 des CGV
+                    Référence à l'Article 7 des <CGVDialog>
+                      <span className="text-blue-500 hover:underline cursor-pointer">CGV</span>
+                    </CGVDialog>
                   </p>
                 </div>
               </div>

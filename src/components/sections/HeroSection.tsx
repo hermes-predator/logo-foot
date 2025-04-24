@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,16 +35,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       {/* Decorative elements avec animation optimisée */}
       <div 
         className="absolute top-28 left-1/3 text-blue-400/20 animate-floating"
-        style={{ animation: 'pulse 5s ease-in-out infinite' }}
+        style={{ animationDuration: '4s' }}
       >
         <Sparkles className="h-8 w-8" />
       </div>
       <div 
         className="absolute bottom-20 right-1/4 text-purple-400/20 animate-floating"
-        style={{ 
-          animation: 'pulse 7s ease-in-out infinite 1s',
-          animationDuration: '4s' // Customize floating animation duration for this element
-        }}
+        style={{ animationDuration: '6s' }}
       >
         <Sparkles className="h-10 w-10" />
       </div>

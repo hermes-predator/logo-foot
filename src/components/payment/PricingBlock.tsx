@@ -5,6 +5,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Separator } from "@/components/ui/separator";
 
 const PricingBlock = () => {
   return (
@@ -66,8 +67,9 @@ const PricingBlock = () => {
                       contact@logo-foot.com
                     </a>
                   </div>
-                  <p className="text-[10px] text-gray-400 mt-2 text-center">
-                    Veuillez vous référer à l'Article 7 des conditions générales de vente
+                  <Separator className="my-2" />
+                  <p className="text-[10px] text-gray-400 text-center">
+                    Veuillez vous référer à l'Article 7 des CGV
                   </p>
                 </div>
               </div>

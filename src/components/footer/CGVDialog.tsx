@@ -89,16 +89,8 @@ const CGVDialog = () => (
           <br />- Par voie postale : MEDICYS - Centre de médiation et règlement amiable des huissiers de justice - 73, Boulevard de Clichy, 75009 - Paris.
         </p>
         <p className="mt-2">
-            Plateforme européenne de règlement des litiges en ligne (ODR):
-            <a 
-              href="https://ec.europa.eu/consumers/odr" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline ml-1"
-            >
-              https://ec.europa.eu/consumers/odr
-            </a>
-          </p>
+          Plateforme européenne de règlement des litiges en ligne (ODR) : https://ec.europa.eu/consumers/odr
+        </p>
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 12 - Litiges</h3>

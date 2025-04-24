@@ -49,7 +49,7 @@ const PricingBlock = () => {
               <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
               <div className="space-y-2 text-gray-700">
                 <p>Si vous êtes insatisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (voir CGV).</p>
+                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (CGV).</p>
                 <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
                 <div className="mt-4 text-gray-600">
                   <p className="text-sm text-gray-500 mb-2">Pour cela, contactez-nous par email en incluant :</p>

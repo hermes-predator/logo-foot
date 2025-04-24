@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -38,41 +39,41 @@ const PricingBlock = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 hover:shadow-sm transition-all duration-300 transform hover:translate-y-[-1px] border border-emerald-200/50">
-              <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
-              <span className="text-sm whitespace-nowrap text-emerald-800 font-medium">
-                Satisfait ou Remboursé
-              </span>
-            </div>
-          </TooltipTrigger>
-          <TooltipContent className="z-[9999] max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-            <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
-            <div className="space-y-2 text-gray-700">
-              <p>Si vous êtes insatisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
-              <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (voir CGV).</p>
-              <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
-              <div className="mt-4 text-gray-600">
-                <p className="text-sm text-gray-500 mb-2">Pour cela, contactez-nous par email en incluant :</p>
-                <ul className="list-disc ml-4 mt-2 space-y-2 text-gray-500 text-sm">
-                  <li>Votre nom et prénom</li>
-                  <li>La date et l'heure d'achat</li>
-                  <li>Votre preuve d'achat (reçu)</li>
-                </ul>
-                <div className="flex items-center gap-1.5 mt-3 text-gray-600 font-medium">
-                  <Mail className="h-4 w-4" />
-                  <a 
-                    href="mailto:contact@logo-foot.com" 
-                    className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
-                  >
-                    contact@logo-foot.com
-                  </a>
+                <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                <span className="text-sm whitespace-nowrap text-emerald-800 font-medium">
+                  Satisfait ou Remboursé
+                </span>
+              </div>
+            </TooltipTrigger>
+            <TooltipContent className="z-[9999] max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
+              <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
+              <div className="space-y-2 text-gray-700">
+                <p>Si vous êtes insatisfait, contactez-nous dans les 14 jours suivant votre achat.</p>
+                <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (voir CGV).</p>
+                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous pouvons émettre un ordre de remboursement intégral sur demande.</p>
+                <div className="mt-4 text-gray-600">
+                  <p className="text-sm text-gray-500 mb-2">Pour cela, contactez-nous par email en incluant :</p>
+                  <ul className="list-disc ml-4 mt-2 space-y-2 text-gray-500 text-sm">
+                    <li>Votre nom et prénom</li>
+                    <li>La date et l'heure d'achat</li>
+                    <li>Votre preuve d'achat (reçu)</li>
+                  </ul>
+                  <div className="flex items-center gap-1.5 mt-3 text-gray-600 font-medium">
+                    <Mail className="h-4 w-4" />
+                    <a 
+                      href="mailto:contact@logo-foot.com" 
+                      className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
+                    >
+                      contact@logo-foot.com
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </TooltipContent>
-        </Tooltip>
+            </TooltipContent>
+          </Tooltip>
+        </div>
       </div>
     </div>
-    
   );
 };
 

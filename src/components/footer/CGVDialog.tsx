@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText } from "lucide-react";
@@ -44,13 +45,13 @@ const CGVDialog = () => (
         
         <section>
           <h3 className="font-semibold mb-2">Article 7 - Garantie "Satisfait ou remboursé"</h3>
-          <p>
-            Bien que les produits numériques ne soient légalement pas soumis au droit de rétractation une fois téléchargés (article L221-28 du Code de la consommation), 
-            Hermès Ressources propose, à titre commercial, une garantie "Satisfait ou Remboursé" sous conditions.
-          </p>
+          <p>Bien que les produits numériques ne soient légalement pas soumis au droit de rétractation une fois téléchargés (article L221-28 du Code de la consommation), Hermès Ressources propose, à titre commercial, une garantie "Satisfait ou Remboursé" sous conditions.</p>
           <p className="mt-2">
             Le client peut formuler une demande de remboursement motivée par e-mail dans un délai de 14 jours après l'achat. 
             Chaque demande sera étudiée au cas par cas, et Hermès Ressources se réserve le droit de l'accepter ou de la refuser selon les éléments fournis.
+          </p>
+          <p className="mt-2">
+            Hermès Ressources se réserve notamment le droit de refuser une demande en cas de téléchargement complet du fichier, d'usage manifeste du produit ou de tentative de fraude.
           </p>
           <p className="mt-2">
             Cette garantie est optionnelle, non automatique et laissée à l'appréciation exclusive de Hermès Ressources. 
@@ -90,3 +91,4 @@ const CGVDialog = () => (
 );
 
 export default CGVDialog;
+

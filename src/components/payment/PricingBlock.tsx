@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import { Footer } from "../Footer"; // Import the Footer to access CGVDialog
+import Footer from "../Footer"; // Fixed: changed from { Footer } to Footer
 
 const PricingBlock = () => {
   return (

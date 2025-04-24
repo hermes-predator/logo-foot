@@ -19,7 +19,7 @@ const CGVDialog = () => (
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 2 - Prix</h3>
-          <p>Les prix sont indiqués en EUR TTC. Hermès Ressources se réserve le droit de modifier ses prix à tout moment, étant entendu que le prix affiché lors de la commande sera le seul applicable.</p>
+          <p>Les prix sont indiqués en EURO TTC. Hermès Ressources se réserve le droit de modifier ses prix à tout moment, étant entendu que le prix affiché lors de la commande sera le seul applicable.</p>
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 3 - Produit</h3>

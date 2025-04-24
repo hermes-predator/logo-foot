@@ -111,8 +111,10 @@ export default {
 					}
 				},
 				'floating': {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-8px)' }
+          '0%': { transform: 'translateY(0px) rotate(0deg)' },
+          '25%': { transform: 'translateY(-4px) rotate(2deg)' },
+          '75%': { transform: 'translateY(4px) rotate(-2deg)' },
+          '100%': { transform: 'translateY(0px) rotate(0deg)' }
         }
 			},
 			animation: {
@@ -123,7 +125,7 @@ export default {
 				'ping': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
 				'bounce': 'bounce 1s infinite',
 				'glow': 'glow 1.5s infinite alternate',
-				'floating': 'floating 3s ease-in-out infinite'
+				'floating': 'floating 6s ease-in-out infinite',
 			}
 		}
 	},

@@ -80,11 +80,11 @@ const CGVDialog = () => (
           <h3 className="font-semibold mb-2">Article 11 - Médiation de la consommation</h3>
           <p>
             Conformément aux dispositions du Code de la consommation concernant le règlement amiable des litiges, 
-            vous pouvez recourir au service de médiation proposé par Hermès Ressources. 
-            Le médiateur "droit de la consommation" ainsi proposé est MEDICYS.
-          </p>
-          <p className="mt-2">
-            Ce dispositif de médiation peut être joint :
+            vous pouvez recourir au service de médiation proposé par Hermès Ressources.<br />
+          Le médiateur "droit de la consommation" ainsi proposé est MEDICYS.
+        </p>
+        <p className="mt-2">
+          Ce dispositif de médiation peut être joint :
           <br />- Par voie électronique à contact@medicys.fr
           <br />- Par voie postale : MEDICYS - Centre de médiation et règlement amiable des huissiers de justice - 73, Boulevard de Clichy, 75009 - Paris.
         </p>

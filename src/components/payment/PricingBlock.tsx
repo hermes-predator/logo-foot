@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -8,7 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import Footer from "../Footer"; // Fixed: changed from { Footer } to Footer
+import Footer from "../Footer";
 
 const PricingBlock = () => {
   return (
@@ -70,7 +69,7 @@ const PricingBlock = () => {
                       contact@logo-foot.com
                     </a>
                   </div>
-                  <Separator className="my-2" />
+                  <Separator className="my-4" />
                   <p className="text-[10px] text-gray-400 text-center">
                     Fait référence à l'Article 7 des CGV
                   </p>

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -110,7 +109,11 @@ export default {
 						transform: 'scale(1.5)',
 						opacity: '0'
 					}
-				}
+				},
+				'floating': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -119,7 +122,8 @@ export default {
 				'shine': 'shine 2s ease-out infinite',
 				'ping': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
 				'bounce': 'bounce 1s infinite',
-				'glow': 'glow 1.5s infinite alternate'
+				'glow': 'glow 1.5s infinite alternate',
+				'floating': 'floating 3s ease-in-out infinite'
 			}
 		}
 	},

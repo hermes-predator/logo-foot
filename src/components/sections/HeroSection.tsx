@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,6 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
-    
     <section className="relative pt-12 pb-10 px-4 overflow-hidden">
       {/* Background effects - Optimisés pour les performances */}
       <div className="absolute inset-0 -z-10">
@@ -34,10 +34,28 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
       
       {/* Decorative elements avec animation optimisée */}
-      <div className="absolute top-28 left-1/3 text-blue-400/20" style={{ animation: 'pulse 5s ease-in-out infinite' }}>
+      <div 
+        className="absolute top-28 left-1/3 text-blue-400/20"
+        style={{ 
+          animation: 'floating 3s ease-in-out infinite, pulse 5s ease-in-out infinite',
+          '@keyframes floating': {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-10px)' }
+          }
+        }}
+      >
         <Sparkles className="h-8 w-8" />
       </div>
-      <div className="absolute bottom-20 right-1/4 text-purple-400/20" style={{ animation: 'pulse 7s ease-in-out infinite 1s' }}>
+      <div 
+        className="absolute bottom-20 right-1/4 text-purple-400/20"
+        style={{ 
+          animation: 'floating 4s ease-in-out infinite, pulse 7s ease-in-out infinite 1s',
+          '@keyframes floating': {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-15px)' }
+          }
+        }}
+      >
         <Sparkles className="h-10 w-10" />
       </div>
       

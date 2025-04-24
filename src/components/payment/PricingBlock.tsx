@@ -69,7 +69,7 @@ const PricingBlock = () => {
                   </div>
                   <Separator className="my-2" />
                   <p className="text-[10px] text-gray-400 text-center">
-                    Veuillez vous référer à l'Article 7 des CGV
+                    Référence à l'Article 7 des CGV
                   </p>
                 </div>
               </div>

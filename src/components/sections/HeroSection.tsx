@@ -35,25 +35,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       
       {/* Decorative elements avec animation optimisée */}
       <div 
-        className="absolute top-28 left-1/3 text-blue-400/20"
-        style={{ 
-          animation: 'floating 3s ease-in-out infinite, pulse 5s ease-in-out infinite',
-          '@keyframes floating': {
-            '0%, 100%': { transform: 'translateY(0)' },
-            '50%': { transform: 'translateY(-10px)' }
-          }
-        }}
+        className="absolute top-28 left-1/3 text-blue-400/20 animate-floating"
+        style={{ animation: 'pulse 5s ease-in-out infinite' }}
       >
         <Sparkles className="h-8 w-8" />
       </div>
       <div 
-        className="absolute bottom-20 right-1/4 text-purple-400/20"
+        className="absolute bottom-20 right-1/4 text-purple-400/20 animate-floating"
         style={{ 
-          animation: 'floating 4s ease-in-out infinite, pulse 7s ease-in-out infinite 1s',
-          '@keyframes floating': {
-            '0%, 100%': { transform: 'translateY(0)' },
-            '50%': { transform: 'translateY(-15px)' }
-          }
+          animation: 'pulse 7s ease-in-out infinite 1s',
+          animationDuration: '4s' // Customize floating animation duration for this element
         }}
       >
         <Sparkles className="h-10 w-10" />

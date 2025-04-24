@@ -15,7 +15,7 @@ const CGVDialog = () => (
       <div className="mt-4 text-sm space-y-4">
         <section>
           <h3 className="font-semibold mb-2">Article 1 - Objet</h3>
-          <p>Les présentes conditions générales de vente régissent la vente de produits numériques par Hermès Ressources, SIRET 934 410 507 00016, à ses clients.</p>
+          <p>Les présentes conditions générales de vente régissent la vente de produits numériques via le site https://logo-foot.com, édité par Hermès Ressources, SIRET 934 410 507 00016, à ses clients.</p>
         </section>
         <section>
           <h3 className="font-semibold mb-2">Article 2 - Prix</h3>

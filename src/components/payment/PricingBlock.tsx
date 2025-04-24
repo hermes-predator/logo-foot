@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -53,7 +52,7 @@ const PricingBlock = () => {
               <div className="space-y-2 text-gray-700">
                 <p>Vous pouvez nous contacter par e-mail dans les 14 jours suivant votre achat.</p>
                 <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (CGV).</p>
-                <p>Cependant, si vous considérez que le produit ne vous convient pas, nous émettrons un ordre de remboursement intégral sur votre demande.</p>
+                <p>Cependant, si vous estimez que le produit ne vous convient pas, nous pouvons émettre un remboursement intégral, sur simple demande.</p>
                 <div className="mt-4 text-gray-600">
                   <p className="text-sm text-gray-500 mb-2">Pour cela, contactez-nous par e-mail en incluant :</p>
                   <ul className="list-disc ml-4 mt-2 space-y-2 text-gray-500 text-xs">

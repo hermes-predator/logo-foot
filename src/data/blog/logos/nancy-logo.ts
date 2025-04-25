@@ -106,5 +106,5 @@ L'emblème au chardon reste un symbole fort d'identification pour les supporters
 
 Le **logo as nancy foot** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
   keywords: "logo nancy, nancy logo, logo nancy foot, as nancy logo, as nancy lorraine logo, logo as nancy, logo as nancy lorraine, logo de nancy, nancy fc logo, logo nancy png, nancy logo png, nouveau logo nancy, as nancy football logo, as nancy logo foot, as nancy logo png",
-  category: 'logos'
+  category: "club-logos"
 };

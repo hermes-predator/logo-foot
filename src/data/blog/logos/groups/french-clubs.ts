@@ -5,9 +5,10 @@ import { psgLogoPost } from '../psg-logo';
 import { lyonLogoPost } from '../lyon-logo';
 import { bordeauxLogoPost } from '../bordeaux-logo';
 import { lilleLogoPost } from '../lille-logo';
-// Remove marseilleLogoPost import since the file doesn't exist
+// Remove non-existent imports
 import { monacoLogoPost } from '../monaco-logo';
-import { stEtienneLogoPost } from '../st-etienne-logo';
+// Replace st-etienne-logo with saint-etienne-logo which exists
+import { saintEtienneLogoPost } from '../saint-etienne-logo';
 import { nantesLogoPost } from '../nantes-logo';
 import { strasbourgLogoPost } from '../strasbourg-logo';
 import { lensLogoPost } from '../lens-logo';
@@ -63,9 +64,9 @@ export const frenchClubPosts: BlogPost[] = [
   lyonLogoPost,
   bordeauxLogoPost,
   lilleLogoPost,
-  // Remove marseilleLogoPost from the array
+  // Remove non-existent references
   monacoLogoPost,
-  stEtienneLogoPost,
+  saintEtienneLogoPost, // Using saintEtienneLogoPost instead of stEtienneLogoPost
   nantesLogoPost,
   strasbourgLogoPost,
   lensLogoPost,

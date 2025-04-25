@@ -1,5 +1,4 @@
 
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -23,8 +22,7 @@ import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
-// Remove this individual reference since it's already part of spanishClubPosts
-// import { realMadridLogoPost } from './real-madrid-logo';
+// Remove individual import of realMadridLogoPost since it's part of spanishClubPosts
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -64,9 +62,10 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { ancienLogoOMPost } from './ancien-logo-om';
+import { bursasporLogoPost } from './bursaspor-logo';
 
-// Update club logos category
-const clubLogoPosts = [
+// Define club logos posts
+const clubLogoPosts: BlogPost[] = [
   ...africanaClubPosts,
   ...asianClubPosts,
   ...brazilianClubPosts,
@@ -126,19 +125,12 @@ const clubLogoPosts = [
   erzurumsporLogoPost,
   bandirmasporLogoPost,
   guangzhouLogoPost,
-  ancienLogoOMPost
+  ancienLogoOMPost,
+  bursasporLogoPost
 ];
-
-// Update all club posts to use the 'club-logos' category
-for (const post of clubLogoPosts) {
-  if (post.category === 'logos') {
-    post.category = 'club-logos';
-  }
-}
 
 // Export all logo posts (combining club logos and national logos)
 export const logoPosts: BlogPost[] = [
   ...clubLogoPosts,
   ...nationalTeamPosts
 ];
-

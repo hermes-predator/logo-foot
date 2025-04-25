@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const serieALogoPost: BlogPost = {
@@ -115,6 +114,6 @@ Le **logo serie a** est bien plus qu'un simple emblème graphique : il est le ga
 
 Alors que le championnat italien continue d'écrire son histoire et de conquérir de nouvelles audiences internationales, son **logo serie a** restera un pilier fondamental de son identité et un symbole universellement reconnu d'excellence footballistique. Cette capacité à évoluer tout en préservant ses racines fait du **logo serie a** un cas d'étude fascinant dans l'univers des identités visuelles sportives.`,
   keywords: "serie a logo, italian serie a logo, italy serie a logo, logo serie a, logos serie a, italian serie a team logos, logo club serie a, logo png serie a, logo serie a png, logo serie a tim, logo série a, calcio logo, football italien logo",
-  category: 'logos',
-  subCategory: 'league-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

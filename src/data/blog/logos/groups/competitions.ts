@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -67,4 +66,8 @@ export const competitionPosts: BlogPost[] = [
   dflSupercupLogoPost,
   communityShieldLogoPost,
   tacaDePortugalLogoPost
-];
+].map(post => ({
+  ...post,
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
+}));

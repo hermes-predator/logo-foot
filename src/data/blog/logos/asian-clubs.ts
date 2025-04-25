@@ -66,6 +66,6 @@ Tendances Asiatiques
 - Métaverse ready
 - Digital assets`,
   keywords: "logo foot asiatique, j-league logo, k-league design, super league chinoise, football asiatique, logos clubs asiatiques",
-  category: 'club-logos',
-  subCategory: 'club-logos'
+  category: 'regional-logos',
+  subCategory: 'asian-clubs'
 };

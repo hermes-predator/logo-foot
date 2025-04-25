@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const clubHistoryPost: BlogPost = {
@@ -49,8 +50,7 @@ export const clubHistoryPost: BlogPost = {
 - Ils promeuvent des valeurs positives
 - Ils contribuent au développement local`,
   keywords: "histoire clubs football, origines clubs foot, évolution clubs sportifs, culture clubs football, identité clubs foot",
-  category: 'legacy',
+  category: 'history',
   subCategory: 'general',
   galleryImageId: 151
 };
-

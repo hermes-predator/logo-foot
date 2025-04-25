@@ -34,7 +34,6 @@ import { rouenLogoPost } from './rouen-logo';
 import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
-// Suppression de l'import de footballLogosHistoryPost ici
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
@@ -54,8 +53,6 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
-// Suppression de l'import bundesligaLogoPost pour éviter la duplication
-// Suppression de l'import de footballEmblemsPost si présent
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -92,8 +89,8 @@ export const logoPosts: BlogPost[] = [
   usBoulogneLogoPost,
   stadeBriochinLogoPost,
   avranchesLogoPost,
-  // Suppression de footballLogosHistoryPost ici
   boltonWanderersLogoPost,
+  wycombeWanderersLogoPost,
   tigresUanlLogoPost,
   louisvilleCityLogoPost,
   newEnglandRevolutionLogoPost,
@@ -111,6 +108,4 @@ export const logoPosts: BlogPost[] = [
   erzurumsporLogoPost,
   bandirmasporLogoPost,
   guangzhouLogoPost
-  // Suppression de bundesligaLogoPost ici pour éviter la duplication
-  // Assurez-vous que footballEmblemsPost est retiré de cette liste
 ];

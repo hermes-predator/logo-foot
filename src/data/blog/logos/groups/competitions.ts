@@ -33,6 +33,7 @@ import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
 import { allsvenskanLogoPost } from '../allsvenskan-logo';
 import { brasileiraoSerieALogoPost } from '../brasileirao-serie-a-logo';
+import { ekstraklasaLogoPost } from '../ekstraklasa-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -67,5 +68,6 @@ export const competitionPosts: BlogPost[] = [
   communityShieldLogoPost,
   tacaDePortugalLogoPost,
   allsvenskanLogoPost,
-  brasileiraoSerieALogoPost
+  brasileiraoSerieALogoPost,
+  ekstraklasaLogoPost
 ];

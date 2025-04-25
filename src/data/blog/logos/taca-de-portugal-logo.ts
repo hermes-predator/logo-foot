@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const tacaDePortugalLogoPost: BlogPost = {
@@ -67,6 +66,6 @@ Les campagnes marketing futures utiliseront probablement le **logo taca de portu
 
 Dans ce contexte d'évolution permanente, le **taça de portugal logo** continuera sans doute à représenter l'excellence du football portugais, servant de trait d'union entre le riche passé de cette compétition historique et son avenir prometteur dans un paysage footballistique en constante mutation.`,
   keywords: "logo taça de portugal, taca de portugal logo, taça de portugal logo, logo taca de portugal, logo taça de portugal png, coupe portugal logo, embleme taça de portugal, symbole taca de portugal, football portugais logo, federation portugaise logo",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

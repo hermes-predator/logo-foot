@@ -1,3 +1,4 @@
+
 export interface BlogPost {
   id: number,
   title: string,
@@ -23,6 +24,10 @@ export const BLOG_CATEGORIES = {
   'national-logos': {
     name: 'Logos des Nations',
     description: 'Explorez notre collection des logos et emblèmes des équipes nationales de football.'
+  },
+  'competition-logos': {
+    name: 'Logos des Compétitions',
+    description: 'Découvrez les logos officiels des plus grandes compétitions de football mondiales.'
   },
   players: {
     name: 'Joueurs',

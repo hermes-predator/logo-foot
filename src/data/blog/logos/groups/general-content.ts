@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import general content posts

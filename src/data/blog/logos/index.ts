@@ -61,7 +61,7 @@ export const logoPosts: BlogPost[] = [
   ...competitionPosts,
   ...englishClubPosts,
   ...frenchClubPosts,
-  ...generalContentPosts.filter(post => post.id !== 305), // Filter out ecussonsClubFootEuropeenPost which has ID 305
+  ...generalContentPosts,
   ...germanClubPosts,
   ...italianClubPosts,
   ...nationalTeamPosts,

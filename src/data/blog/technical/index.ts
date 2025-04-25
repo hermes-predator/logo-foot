@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { designPrinciples } from './design-principles';
 import { integrationGuide } from './integration-guide';
@@ -15,7 +14,7 @@ import { creerLogoFootPost } from '../logos/creer-logo-foot';
 import { colorTheoryPost } from '../analysis/color-theory';
 import { footballEmblemsPost } from '../logos/football-emblems';
 import { footballLogosHistoryPost } from '../logos/football-logos-history';
-import { blasonsEquipesFootballPost } from '../logos/blasons-equipes-football';
+import { blasonsEquipesFootballPost } from '../logos/blasons-equipes-football';  // New import
 import { ecussonsClubFootEuropeenPost } from '../logos/ecussons-club-foot-europeen';
 
 export const technicalPosts: BlogPost[] = [
@@ -34,6 +33,6 @@ export const technicalPosts: BlogPost[] = [
   colorTheoryPost,
   footballEmblemsPost,
   footballLogosHistoryPost,
-  blasonsEquipesFootballPost,
+  blasonsEquipesFootballPost,  // Add the new post
   ecussonsClubFootEuropeenPost,
 ];

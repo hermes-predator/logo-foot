@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -8,7 +9,8 @@ import { pixelArtPosts } from './pixel-art';
 // Import des articles à modifier
 import { laligaAnalysis } from './analysis/laliga';
 import { championsLeagueAnalysis } from './analysis/champions-league';
-import { ligue1Analysis } from './analysis/ligue1';
+// Fixing the import path - using ligue-1 with a hyphen instead of ligue1
+import { ligue1Analysis } from './analysis/ligue-1';
 import { bundesligaAnalysis } from './analysis/bundesliga';
 import { serieAAnalysis } from './analysis/serie-a';
 import { premierLeagueAnalysis } from './analysis/premier-league';

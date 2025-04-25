@@ -5,15 +5,23 @@ import { technicalPosts } from './technical';
 import { analysisPosts } from './analysis';
 import { pixelArtPosts } from './pixel-art';
 
-// Suppression de l'import de laligaAnalysis 
+// Import des articles à modifier
 import { laligaAnalysis } from './analysis/laliga';
+import { championsLeagueAnalysis } from './analysis/champions-league';
+import { ligue1Analysis } from './analysis/ligue1';
+import { bundesligaAnalysis } from './analysis/bundesliga';
+import { serieAAnalysis } from './analysis/serie-a';
+import { premierLeagueAnalysis } from './analysis/premier-league';
 
-// Modification pour remplacer laligaAnalysis
-const modifiedLaligaAnalysis: BlogPost = {
-  ...laligaAnalysis,
-  category: 'competition-logos', // Modification de la catégorie
-  subCategory: 'competition-logos' // Ajout du sous-catégorie
-};
+// Modification des articles pour la catégorie competition-logos
+const competitionArticles: BlogPost[] = [
+  { ...laligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...championsLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...ligue1Analysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...bundesligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...serieAAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' }
+];
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
@@ -79,13 +87,14 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   return uniquePosts;
 };
 
-// Statistiques des articles par catégorie (pour vérification)
+// Statistiques des articles par catégorie
 const countByCategory = {
   logos: logoPosts.length,
   history: historyPosts.length,
   technical: technicalPosts.length,
   analysis: analysisPosts.length,
-  'pixel-art': pixelArtPosts.length
+  'pixel-art': pixelArtPosts.length,
+  'competition-logos': competitionArticles.length
 };
 
 // Vérifier aussi les doublons de titre pour aider à la détection
@@ -123,8 +132,8 @@ const allPosts = [
   ...logoPosts,
   ...historyPosts,
   ...technicalPosts,
-  ...analysisPosts.filter(post => post.id !== laligaAnalysis.id), // Exclure l'ancien article
-  modifiedLaligaAnalysis, // Ajouter la version modifiée
+  ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),
+  ...competitionArticles,
   ...pixelArtPosts
 ];
 
@@ -132,7 +141,7 @@ const allPosts = [
 const filteredPosts = allPosts.filter(post => post.id !== 9134);
 export const blogPosts = ensureUniqueIds(filteredPosts);
 
-// Trier les articles par date (du plus récent au plus ancien)
+// Trier les articles par date
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 // Log pour débogage

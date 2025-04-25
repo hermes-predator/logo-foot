@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 // Removing the import for clubHistoryPost as it's already imported in logos/index.ts
 // import { clubHistoryPost } from '../logos/club-history';

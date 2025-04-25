@@ -40,7 +40,7 @@ import { ardaGulerPost } from './arda-guler';
 import { xaviSimonsPost } from './xavi-simons';
 import { benjaminSeskoPost } from './benjamin-sesko';
 import { alejandroGarnachoPost } from './alejandro-garnacho';
-import { colorTheoryPost } from './color-theory';
+// Ne pas importer colorTheoryPost car il est maintenant uniquement dans la catégorie technical
 
 // Group all posts into a single array, excluding mbappeEtSonFilsPost
 export const analysisPosts: BlogPost[] = [
@@ -82,6 +82,5 @@ export const analysisPosts: BlogPost[] = [
   ardaGulerPost,
   xaviSimonsPost,
   benjaminSeskoPost,
-  alejandroGarnachoPost,
-  colorTheoryPost
+  alejandroGarnachoPost
 ];

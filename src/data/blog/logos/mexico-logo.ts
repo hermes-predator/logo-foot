@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const mexicoLogoPost: BlogPost = {
@@ -74,7 +73,7 @@ Pour les générations futures de footballeurs et supporters mexicains, le **log
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons comme le **logo foot mexique**, l'emblème national du football mexicain a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'une nation nord-américaine à créer un symbole sportif puissant, durable et mondialement reconnu.`,
   keywords: "logo mexique, logo mexique foot, logo du mexique, logo foot mexique, mexique logo, equipe de foot mexique logo, logo club foot mexique",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 167
 };

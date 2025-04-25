@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const austriaWienLogoPost: BlogPost = {
@@ -22,7 +21,7 @@ Dans l’ensemble, le **logo austria wien** est plus qu’un simple insigne spor
 
 À travers ce **logo club football austria wienn** si reconnu, on découvre toute l’âme d’un grand club dont l’histoire ne cesse de s’écrire, année après année, sur les pelouses d’Autriche et d’Europe.`,
   keywords: "logo austria wien, austria wien logo, logo club football austria wienn, austria vienne logo png, logo austria de vienne, logo austria vienne, logo foot austria vienne",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
-  galleryImageId: undefined // remplir l'id image si disponible
+  galleryImageId: undefined
 };

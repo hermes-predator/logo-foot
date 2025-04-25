@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const bulgariaLogoPost: BlogPost = {
@@ -71,6 +70,6 @@ Le **Bulgarie foot logo** représente un parfait équilibre entre tradition et m
 
 Que l'avenir réserve au football bulgare, son **logo Bulgari PNG** restera un élément central de son identité, évoluant peut-être dans sa forme mais conservant toujours son essence et sa signification profonde pour le peuple bulgare.`,
   keywords: "logo bulgari, bulgari logo, logo bulgarie, bulgarie foot logo, bulgarie logo, logo bulgari png",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

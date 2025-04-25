@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const burkinaFasoLogoPost: BlogPost = {
@@ -31,7 +30,7 @@ Le **Burkina Faso foot logo** est riche en symbolisme:
 
 ## Évolution du **Burkina Faso logo**
 
-Au fil des années, le **Burkina Faso logo foot** a connu plusieurs transformations:
+Au fil des années, le **Burkina Faso foot logo** a connu plusieurs transformations:
 
 ### Période post-indépendance (1960-1984)
 Durant cette période, sous le nom de Haute-Volta, l'emblème sportif était différent du **logo Burkina Faso** actuel, mais conservait déjà certains éléments symboliques nationaux.
@@ -64,7 +63,7 @@ En comparant le **Burkina Faso logo** avec ceux d'autres nations africaines, on 
 
 ## Utilisation et promotion du **Burkina Faso foot logo**
 
-Le **Burkina Faso logo foot** est utilisé dans de nombreux contextes:
+Le **Burkina Faso foot logo** est utilisé dans de nombreux contextes:
 
 - Sur les maillots officiels de l'équipe nationale
 - Dans les communications de la Fédération Burkinabè de Football
@@ -107,8 +106,9 @@ Le **Burkina Faso logo png** en haute résolution est disponible sur le site off
 Le **logo du Burkina Faso** n'a pas subi de changement majeur récemment, mais des ajustements mineurs ont été apportés pour optimiser son utilisation digitale.
 
 **Quelles sont les différences entre l'ancien et le nouveau logo Burkina Faso?**
-Les principales différences entre l'ancien et le nouveau **Burkina Faso foot logo** concernent principalement la clarté des détails, la typographie et l'optimisation pour les plateformes digitales.`,
+Les principales différences entre l'ancien et le nouveau **Burkina Faso foot logo** concernent principalement la clarté des détails, la typographie et l'optimisation pour les plateformes digitales.
+`,
   keywords: "logo Burkina Faso, Burkina Faso foot logo, Burkina Faso logo, logo du Burkina Faso, Burkina Faso logo png, Burkina Faso foot logo png, Burkina Faso logo foot, équipe nationale, étalons, football africain, emblème sportif",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: 'national-logos',
+  galleryImageId: null
 };

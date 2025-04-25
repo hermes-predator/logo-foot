@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const japanLogoPost: BlogPost = {
@@ -66,7 +65,7 @@ Pour les générations futures de footballeurs et supporters japonais, le **japo
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo japon png**, l'emblème national du football japonais a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, rappelant qu'une nation peut conjuguer parfaitement respect des traditions et innovation visuelle pour créer un symbole sportif puissant et durable.`,
   keywords: "logo japon, japon logo, logo japon foot, logo de japon, logo du japon, logo foot japon, logo japon football, logo japon png, japon logo foot",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 164
 };

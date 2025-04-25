@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const osasunaLogoPost: BlogPost = {
@@ -64,7 +63,7 @@ Le **logo osasuna** représente bien plus qu'une simple identification visuelle 
 
 Des terrains de jeu aux plateformes digitales, le **osasuna logo png** continue de jouer un rôle crucial dans la connexion émotionnelle entre le club et ses supporters, démontrant la puissance durable d'un design authentique et significatif. Pour tous ceux qui s'intéressent à l'art des emblèmes sportifs, le **logo ca osasuna** offre un exemple éloquent de la manière dont un symbole visuel peut capturer l'âme d'une communauté sportive.`,
   keywords: "logo osasuna, logo osasuna png, osasuna logo, osasuna logo png, ca osasuna logo, osasuna fc logo, ca osasuna logo foot, logo ca osasuna, logo png osasuna",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: 'club-logos',
+  subCategory: 'spanish-clubs',
   galleryImageId: 160
 };

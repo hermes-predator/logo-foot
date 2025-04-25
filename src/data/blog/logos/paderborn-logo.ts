@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const paderbornLogoPost: BlogPost = {
@@ -58,7 +57,7 @@ Les tendances en matière de design de logos sportifs suggèrent une simplificat
 
 Quelle que soit son évolution future, le **paderborn logo png** restera un symbole important pour les supporters et un élément central de l'identité visuelle du club allemand, témoignant de son histoire unique et de ses ambitions dans le paysage footballistique allemand.`,
   keywords: "logo paderborn, paderborn logo, paderborn logo png, logo sc paderborn 07",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 91
 };

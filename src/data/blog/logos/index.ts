@@ -60,7 +60,8 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
-import { southAmericanClubsPost } from './south-american-clubs';
+// Remove the direct import of southAmericanClubsPost - this is causing the duplication
+// import { southAmericanClubsPost } from './south-american-clubs';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -123,5 +124,6 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
   bundesligaLogoPost,
-  southAmericanClubsPost
+  // Remove this individual entry as it's already included in southAmericanClubPosts
+  // southAmericanClubsPost
 ];

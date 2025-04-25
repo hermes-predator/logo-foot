@@ -11,6 +11,8 @@ import { fortalezaLogoPost } from '../fortaleza-logo';
 import { vascoLogoPost } from '../vasco-da-gama-logo';
 import { chapecoenseLogoPost } from '../chapecoense-logo';
 import { coritibaLogoPost } from '../coritiba-logo';
+// Remove the import of the general Brazilian clubs post to avoid duplication
+// import { brazilianClubsPost } from '../brazilian-clubs';
 
 // Group all Brazilian club logo posts
 export const brazilianClubPosts: BlogPost[] = [
@@ -25,4 +27,6 @@ export const brazilianClubPosts: BlogPost[] = [
   vascoLogoPost,
   chapecoenseLogoPost,
   coritibaLogoPost
+  // Remove it from here as well if it was included
+  // brazilianClubsPost
 ];

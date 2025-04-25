@@ -10,6 +10,7 @@ import { rosarioCentralLogoPost } from '../rosario-central-logo';
 import { racingClubLogoPost } from '../racing-club-logo';
 import { argentinosJuniorsLogoPost } from '../argentinos-juniors-logo';
 import { godoyCruzLogoPost } from '../godoy-cruz-logo';
+import { southAmericanClubsPost } from '../south-american-clubs';
 
 // Regroupement des posts de clubs sud-américains
 export const southAmericanClubPosts: BlogPost[] = [
@@ -20,5 +21,6 @@ export const southAmericanClubPosts: BlogPost[] = [
   rosarioCentralLogoPost,
   racingClubLogoPost,
   argentinosJuniorsLogoPost,
-  godoyCruzLogoPost
+  godoyCruzLogoPost,
+  southAmericanClubsPost  // Include the general article in the group
 ];

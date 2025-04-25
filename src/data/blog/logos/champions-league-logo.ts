@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const championsLeagueLogoPost: BlogPost = {
@@ -72,6 +71,5 @@ Malgré ces évolutions techniques inévitables, la force du **logo ligue des ch
 
 Le **logo uefa ligue des champions**, dans sa simplicité magistrale et sa force symbolique, transcende aujourd'hui largement le cadre sportif. Il est devenu l'emblème universel de l'excellence et de l'accomplissement, un symbole que les plus grands clubs européens rêvent d'arborer sur leur maillot. Son design intemporel continuera sans doute d'inspirer et de faire rêver les générations futures de passionnés de football à travers le monde entier.`,
   keywords: "logo champions league, champions league logo, logo uefa champions league, ucl logo, champions league emblem, logo ligue des champions",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: 'competition-logos'
 };

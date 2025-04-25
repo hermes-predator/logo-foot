@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const copaDelReyLogoPost: BlogPost = {
@@ -86,6 +85,6 @@ Le **logo Copa del Rey** est bien plus qu'un simple design graphique - c'est un 
 Que ce soit dans sa version standard ou dans la variante **logo Copa del Rey final** utilisée pour l'apothéose de la compétition, cet emblème continue de représenter l'excellence du football espagnol et l'importance culturelle de ce tournoi historique dans le paysage sportif national.
 `,
   keywords: "copa del rey logo, copa del rey logo png, logo copa del rey png, logo copa del rey, copa del rey final logo, coupe du roi espagne, football espagnol, rfef, trophée copa del rey, histoire copa del rey",
-  category: "logos",
-  subCategory: "competition-logos",
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

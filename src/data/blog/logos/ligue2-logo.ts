@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ligue2LogoPost: BlogPost = {
@@ -90,6 +89,6 @@ Le parcours du **logo ligue 2**, de ses origines modestes à sa version actuelle
 
 Le **logo ligue 2 bkt** d'aujourd'hui n'est pas simplement un symbole graphique, c'est la manifestation visuelle d'une compétition qui a gagné ses lettres de noblesse et s'affirme comme un championnat majeur du paysage footballistique français et européen.`,
   keywords: "logo ligue 2, ligue 2 logo, logo ligue 2 bkt, logo ligue 2 png, ligue 2 bkt logo, logo foot ligue 2, ligue 2 logo png, embleme ligue 2, écusson ligue 2, design ligue 2, ligue 2 football",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

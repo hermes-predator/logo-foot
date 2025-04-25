@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const worldCupLogoPost: BlogPost = {
@@ -52,7 +51,6 @@ Alors que le tournoi poursuit son développement et son expansion, le **logo cou
 Les futures évolutions du **logo coupe du monde 2026** s'inscriront probablement dans cette même philosophie d'équilibre entre tradition et innovation, avec le souci constant de représenter fidèlement les valeurs du tournoi et sa dimension véritablement internationale qui fait sa spécificité et sa grandeur incomparable.
 
 Pour les décennies à venir, **le logo de la coupe du monde 2026** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme de l'événement sportif le plus suivi de la planète.`,
-  keywords: "logo coupe du monde, coupe du monde logo, logo coupe du monde 2026, coupe du monde 2026 logo, coupe du monde logo png, le logo de la coupe du monde 2026, logo coupe du monde de foot, logo coupe du monde de football, logo coupe du monde foot",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

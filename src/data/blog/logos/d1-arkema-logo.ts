@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const d1ArkemaLogoPost: BlogPost = {
@@ -79,6 +78,6 @@ Le **logo D1 Arkema** a connu quelques ajustements mineurs depuis 2019, mais a c
 Les couleurs principales du **logo D1 Arkema PNG** représentent les couleurs nationales françaises et symbolisent l'excellence et le prestige du championnat.
 `,
   keywords: "D1 Arkema logo, logo D1 Arkema, D1 Arkema logo PNG, D1 féminine Arkema logo, logo D1 Arkema PNG, football féminin, championnat français, identité visuelle, design sportif",
-  category: "logos",
+  category: "competition-logos",
   subCategory: "competition-logos"
 };

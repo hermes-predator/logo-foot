@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const canLogoPost: BlogPost = {
@@ -54,12 +53,12 @@ Pour les designers et les responsables marketing de la CAF, le défi consistera 
 
 En conclusion, le **logo can** représente bien plus qu'une simple identité visuelle pour une compétition sportive. C'est un symbole puissant qui incarne l'esprit du football africain, avec ses traditions riches, sa diversité culturelle et ses aspirations pour l'avenir.
 
-À travers ses nombreuses itérations, le **can logo** a su évoluer tout en restant fidèle à ses racines, créant ainsi un héritage visuel qui transcende les générations. Le **can 2025 logo** s'inscrit dans cette continuité tout en apportant sa propre contribution distinctive à cette riche histoire.
+À travers ses nombreuses itérations, le **logo can** a su évoluer tout en restant fidèle à ses racines, créant ainsi un héritage visuel qui transcende les générations. Le **can 2025 logo** s'inscrit dans cette continuité tout en apportant sa propre contribution distinctive à cette riche histoire.
 
 Pour les millions de supporters à travers l'Afrique et au-delà, le **logo can png** est devenu un symbole d'appartenance et de passion partagée. Il représente non seulement l'excellence sportive, mais aussi la capacité unique du football à unir les peuples et à célébrer la diversité culturelle d'un continent entier.
 
-Alors que nous attendons avec impatience les futures éditions de ce tournoi emblématique, une chose est certaine : le **can logo png** continuera d'évoluer, d'inspirer et de captiver, tout comme le beau jeu qu'il représente si fièrement.`,
+Alors que nous attendons avec impatience les futures éditions de ce tournoi emblématique, une chose est certaine : le **logo can png** continuera d'évoluer, d'inspirer et de captiver, tout comme le beau jeu qu'il représente si fièrement.`,
   keywords: "logo can, logo can 2025, can logo, can 2025 logo, can logo png, logo can png",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

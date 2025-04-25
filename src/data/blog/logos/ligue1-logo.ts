@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ligue1LogoPost: BlogPost = {
@@ -58,7 +57,6 @@ Le **logo ligue 1** continuera certainement d'évoluer pour répondre aux enjeux
 Le défi principal pour les évolutions futures du **logo clubs ligue 1** sera de maintenir un équilibre subtil entre innovation et continuité. Chaque modification devra préserver les éléments qui font la force et la reconnaissance de cette identité visuelle, tout en l'adaptant aux nouvelles attentes des supporters et aux évolutions du paysage médiatique.
 
 Que ce soit dans sa version animée sur les écrans de télévision, sa déclinaison imprimée sur les produits officiels ou sa présence digitale optimisée, le **logo ligue 1** continuera d'incarner l'excellence du football français et son ambition de rayonner sur la scène internationale.`,
-  keywords: "logo ligue 1, ligue 1 logo, nouveau logo ligue 1, ligue 1 nouveau logo, logo ligue 1 png, logos ligue 1, logo club ligue 1, logo clubs ligue 1, ligue 1 logo png, logo foot ligue 1, logo de la ligue 1, nouveau logo de la ligue 1, ligue 1 france logo, logo de ligue 1",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

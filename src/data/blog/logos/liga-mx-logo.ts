@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ligaMxLogoPost: BlogPost = {
@@ -56,7 +55,6 @@ Alors que la Liga MX continue de se développer et d'accroître sa visibilité i
 Les campagnes marketing futures continueront probablement d'utiliser le **logo liga mx** comme pilier central de la communication de la ligue, renforçant ainsi sa reconnaissance à l'échelle mondiale et contribuant à positionner le championnat mexicain parmi les compétitions majeures du football international.
 
 Dans ce contexte d'expansion et de modernisation, le **liga mx logos** restera un symbole fort de l'identité footballistique mexicaine, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui ne cesse de gagner en prestige et en attractivité sur la scène mondiale du football.`,
-  keywords: "liga mx logo, liga mx logos, logos liga mx, liga mx logo png, la liga mx logo, liga mx logo transparent, logo liga mx, emblème liga mx, championnat mexicain logo, football mexicain symbole",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

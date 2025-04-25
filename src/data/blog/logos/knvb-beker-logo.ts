@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const knvbBekerLogoPost: BlogPost = {
@@ -84,6 +83,6 @@ Le **KNVB Beker Logo** a évolué pour devenir bien plus qu'un simple emblème d
 Que ce soit dans sa version physique ornant le trophée convoité ou dans sa forme numérique **KNVB Beker Logo PNG** sur les plateformes médiatiques, cet emblème continue de symboliser l'excellence du football néerlandais et l'importance culturelle de cette compétition historique dans le paysage sportif national et international.
 `,
   keywords: "knvb beker logo, knvb beker logo png, coupe des pays-bas, football néerlandais, knvb, trophée knvb beker, eredivisie, compétition néerlandaise, coupe néerlandaise, emblème knvb beker, design knvb beker",
-  category: "logos",
-  subCategory: "competition-logos",
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

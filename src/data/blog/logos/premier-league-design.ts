@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const premierLeagueLogoPost: BlogPost = {
@@ -173,7 +172,6 @@ Que ce soit dans sa version animée lors des diffusions télévisuelles suivies 
 
 À travers son évolution stratégique permanente et sa capacité remarquable d'adaptation aux environnements médiatiques émergents, le **logo premier league** illustre parfaitement comment une identité visuelle sportive peut transcender sa mission fondamentale pour devenir un actif stratégique inestimable, véritable pierre angulaire dans l'architecture globale du football contemporain.`,
   keywords: "football premier league logo, premier league football logos, english premier league logo, logo barclays premier league, premier league logo, logo premier league, logos premier league, premier league logo png, english premier league logo png, logo premier league png, logo premier league teams, premier league logo club, barclays premier league logo, barclays premier league logo png, logo de la premier league, logo club premier league, logo football premier league, logo premier league club",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };
-

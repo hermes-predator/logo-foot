@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -17,7 +18,6 @@ import { spanishClubPosts } from './groups/spanish-clubs';
 import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
-// Suppression de l'import de omLogoPost ici car il est déjà inclus via frenchClubPosts
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
@@ -35,9 +35,7 @@ import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
 import { footballLogosHistoryPost } from './football-logos-history';
-import { middlesbroughLogoPost } from './middlesbrough-logo';
 import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
-import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
@@ -79,7 +77,6 @@ export const logoPosts: BlogPost[] = [
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
-  // Suppression de omLogoPost ici car il est déjà inclus via frenchClubPosts
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
@@ -98,7 +95,6 @@ export const logoPosts: BlogPost[] = [
   avranchesLogoPost,
   footballLogosHistoryPost,
   blackburnRoversLogoPost,
-  derbyCountyLogoPost,
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
@@ -121,3 +117,4 @@ export const logoPosts: BlogPost[] = [
   guangzhouLogoPost,
   bundesligaLogoPost
 ];
+

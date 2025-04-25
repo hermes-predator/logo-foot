@@ -50,7 +50,7 @@ Le design actuel du **logo Olimpija Ljubljana** combine :
 
 Le **logo Olimpija Ljubljana** transcende le simple emblème sportif - c'est un symbole d'identité, de passion et d'histoire qui continue d'inspirer des générations de supporters.`,
   keywords: "olimpija ljubljana logo, logo olimpija ljubljana fc",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 433
 };

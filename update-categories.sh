@@ -1,51 +1,43 @@
 
 #!/bin/bash
 
-# Function to update club logo files
-update_club_logo_files() {
-  echo "Updating club logo files..."
+# Function to update all remaining logo files with the deprecated "logos" category
+update_remaining_logo_files() {
+  echo "Updating remaining logo files with deprecated 'logos' category..."
+  
+  # Update national team logos
   find src/data/blog/logos -type f -name "*.ts" | while read file; do
-    # Skip files we've already updated manually and ignore special files
-    if [[ $file == *"asian-clubs.ts" || $file == *"bandirmaspor-logo.ts" || $file == *"stevenage-logo.ts" || $file == *"belgian-clubs.ts" || $file == *"brazilian-clubs.ts" || $file == *"french-clubs.ts" || $file == *"south-american-clubs.ts" || $file == *"index.ts" ]]; then
+    # Skip files we've already processed or don't need to process
+    if [[ $file == *"groups/"* || $file == *"update-"* ]]; then
       continue
     fi
     
-    # Skip national team and competition logo files that are handled separately
-    if [[ $file == *"albania-logo.ts" || $file == *"algeria-logo.ts" || $file == *"switzerland-logo.ts" || $file == *"dinamo-tbilisi-logo.ts" || $file == *"australia-logo.ts" || $file == *"austria-logo.ts" ]]; then
-      sed -i 's/category: "logos"/category: "national-logos"/g' $file
-      echo "Updated $file to national-logos"
-      continue
-    fi
-
-    # Skip competition logo files
-    if grep -q 'category: "logos"' "$file" && (grep -q "champions league" "$file" || grep -q "europa league" "$file" || grep -q "coupe" "$file" || grep -q "trophy" "$file" || grep -q "competition" "$file"); then
-      sed -i 's/category: "logos"/category: "competition-logos"/g' $file
-      echo "Updated $file to competition-logos"
-      continue
-    fi
-    
-    # Update remaining files to club-logos
-    if grep -q 'category: "logos"' $file; then
-      sed -i 's/category: "logos"/category: "club-logos"/g' $file
+    # Check if file still has the deprecated "logos" category
+    if grep -q 'category: "logos"' "$file"; then
+      # Check if it's likely a national team logo
+      if grep -q -i 'national team\|équipe nationale\|national logo\|selection' "$file"; then
+        sed -i 's/category: "logos"/category: "national-logos"/g' "$file"
+        sed -i 's/subCategory: ".*"/subCategory: "national-logos"/g' "$file"
+        echo "Updated $file to national-logos"
+        continue
+      fi
+      
+      # Check if it's likely a competition logo
+      if grep -q -i 'champions league\|europa league\|coupe\|trophy\|competition\|championnat\|league\|copa\|bundesliga\|primera\|serie\|eredivisie\|premier league\|ligue' "$file"; then
+        sed -i 's/category: "logos"/category: "competition-logos"/g' "$file"
+        sed -i 's/subCategory: ".*"/subCategory: "competition-logos"/g' "$file"
+        echo "Updated $file to competition-logos"
+        continue
+      fi
+      
+      # All other logos are assumed to be club logos
+      sed -i 's/category: "logos"/category: "club-logos"/g' "$file"
       echo "Updated $file to club-logos"
     fi
   done
 }
 
-# Function to update analysis files
-update_analysis_files() {
-  echo "Updating analysis files..."
-  find src/data/blog/analysis -type f -name "*.ts" | while read file; do
-    # Update category from "logos" to appropriate category
-    if grep -q 'category: "logos"' $file; then
-      sed -i 's/category: "logos"/category: "club-logos"/g' $file
-      echo "Updated $file to club-logos"
-    fi
-  done
-}
+# Execute the function
+update_remaining_logo_files
 
-# Execute the functions
-update_club_logo_files
-update_analysis_files
-
-echo "Category update complete!"
+echo "Category update complete! All deprecated 'logos' categories have been updated."

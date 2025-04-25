@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const slovakiaLogoPost: BlogPost = {
@@ -52,7 +51,7 @@ Au-delà de sa dimension sportive, le **logo de la slovaquie** est devenu un pui
 
 Les joueurs qui portent fièrement le maillot orné du **logo slovaquie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays dont la passion pour le football ne cesse de grandir et dont le **logo club football slovaquie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo slovaquie, logo foot slovaquie, logo slovaquie foot, logo club foot slovaquie, logo club football slovaquie, logo de la slovaquie",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 165
 };

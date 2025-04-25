@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import general content posts
@@ -12,7 +13,6 @@ import { unibetLogoPost } from '../unibet-logo';
 import { bwinLogoPost } from '../bwin-logo';
 import { footballLogosHistoryPost } from '../football-logos-history';
 import { footballEmblemsPost } from '../football-emblems';
-// Remove creerLogoFootPost from this group since it's now only in technical category
 import { logosFootPdfPost } from '../1001-logos-foot-pdf';
 import { logoMaillotFootPost } from '../logo-maillot-foot';
 import { ecussonsFootballPost } from '../ecussons-football';

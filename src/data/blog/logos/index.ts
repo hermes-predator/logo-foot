@@ -39,8 +39,8 @@ import { commentCreerLogoFootballPost } from './comment-creer-logo-football';
 import { avranchesLogoPost } from './avranches-logo';
 import { footballLogosHistoryPost } from './football-logos-history';
 import { middlesbroughLogoPost } from './middlesbrough-logo';
-import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
-import { derbyCountyLogoPost } from './derby-county-logo';
+import { blackburnRoversPost } from './blackburn-rovers-logo';
+import { derbyCountyPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
@@ -62,6 +62,8 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
+
+// Remove the import for creerLogoFootPost
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -101,8 +103,8 @@ export const logoPosts: BlogPost[] = [
   avranchesLogoPost,
   footballLogosHistoryPost,
   middlesbroughLogoPost,
-  blackburnRoversLogoPost,
-  derbyCountyLogoPost,
+  blackburnRoversPost,
+  derbyCountyPost,
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,

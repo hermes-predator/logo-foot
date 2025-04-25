@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const alKhaleejLogoPost: BlogPost = {
@@ -38,6 +37,6 @@ Alors que le club continue son développement, le **Al Khaleej logo** reste un p
 
 Le **Al Khaleej logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'un club qui conjugue tradition et modernité, tout en portant fièrement les couleurs et les valeurs qui font sa force dans le football saoudien.`,
   keywords: "al khaleej logo, logo al khaleej, al khaleej logo png, logo png al khaleej, football saoudien, saudi pro league, design logo football",
-  category: "logos",
-  subCategory: "non-european-clubs"
+  category: 'club-logos',
+  subCategory: 'middle-eastern-clubs'
 };

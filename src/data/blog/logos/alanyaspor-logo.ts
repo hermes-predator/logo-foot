@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const alanyasporLogoPost: BlogPost = {
@@ -80,7 +79,7 @@ Le **alanyaspor eski logo** continue d'évoluer vers :
 - Respect de l'héritage
 - Innovation constante`,
   keywords: "logo alanyaspor, alanyaspor logo, alanyaspor logo png, alanyaspor eski logo, logo alanyaspor png, logo png alanyaspor, football turc, super lig",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: 'club-logos',
+  subCategory: 'turkish-clubs',
   galleryImageId: 571
 };

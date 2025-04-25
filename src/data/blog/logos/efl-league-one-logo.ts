@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const eflLeagueOneLogoPost: BlogPost = {
@@ -90,6 +89,6 @@ Le **EFL League One logo** a parcouru un long chemin depuis les premières versi
 Que ce soit dans sa version physique sur les maillots des joueurs ou dans sa forme numérique **logo League One PNG** sur les plateformes médiatiques, cet emblème continue de symboliser l'importance de cette compétition dans la structure pyramidale du football anglais et sa contribution significative à la richesse du paysage footballistique britannique.
 `,
   keywords: "efl league one logo, league one logo, logo league one, league one logo png, sky bet league one logo, logo efl league one, logo efl league one png, football anglais, troisième division, english football league, compétition anglaise, emblème league one",
-  category: "logos",
+  category: "competition-logos",
   subCategory: "competition-logos",
 };

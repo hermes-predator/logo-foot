@@ -1,3 +1,4 @@
+import { BlogPost } from './blog';
 
 export interface BlogPost {
   id: number,
@@ -18,7 +19,7 @@ export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
 export const BLOG_CATEGORIES = {
   'club-logos': {
-    name: 'Logos de clubs',
+    name: 'Logos de Clubs',
     description: 'Découvrez notre collection de logos de football des plus grands clubs du monde entier.'
   },
   'national-logos': {

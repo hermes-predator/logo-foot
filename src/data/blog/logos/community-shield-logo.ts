@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const communityShieldLogoPost: BlogPost = {
@@ -59,6 +58,6 @@ Les campagnes marketing futures continueront probablement d'utiliser le **logo c
 
 Dans ce contexte d'expansion et de modernisation, le **the fa community shield logo** restera un symbole fort de l'identité footballistique anglaise, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui continue de gagner en prestige et en attractivité sur la scène mondiale du football.`,
   keywords: "community shield logo, fa community shield logo, fa community shield logo png, community shield logo png, logo community shield, the fa community shield logo, supercoupe angleterre logo, community shield trophy logo, fa shield logo, english supercup logo",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

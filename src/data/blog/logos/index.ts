@@ -42,7 +42,8 @@ import { louisvilleCityLogoPost } from './louisville-city-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
-import { pecZwolleLogoPost } from './pec-zwolle-logo';
+// Suppression du doublon pecZwolleLogoPost - déjà inclus dans otherEuropeanClubPosts
+// import { pecZwolleLogoPost } from './pec-zwolle-logo';
 import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
 import { willemIiLogoPost } from './willem-ii-logo';
@@ -97,7 +98,7 @@ export const logoPosts: BlogPost[] = [
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
-  pecZwolleLogoPost,
+  // pecZwolleLogoPost, // Supprimé pour éviter le doublon avec otherEuropeanClubPosts
   rkcWaalwijkLogoPost,
   nacBredaLogoPost,
   willemIiLogoPost,

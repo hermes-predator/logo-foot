@@ -10,6 +10,13 @@ import { soccerBallGuide } from './soccer-ball-guide';
 import { howToDrawSoccerBall } from './how-to-draw-soccer-ball';
 import { coloringFootballLogos } from './coloring-football-logos';
 import { footballDesignGuide } from './football-design-guide';
+import { commentCreerLogoFootballPost } from '../logos/comment-creer-logo-football';
+import { creerLogoFootPost } from '../logos/creer-logo-foot';
+import { colorTheoryPost } from '../analysis/color-theory';
+import { footballEmblemsPost } from '../logos/football-emblems';
+import { footballLogosHistoryPost } from '../logos/football-logos-history';
+import { blasonsEquipesFootballPost } from '../logos/blasons-equipes-football';  // New import
+import { ecussonsClubFootEuropeenPost } from '../logos/ecussons-club-foot-europeen';
 import { logoMaillotFootPost } from './logo-maillot-foot';
 
 export const technicalPosts: BlogPost[] = [
@@ -23,5 +30,12 @@ export const technicalPosts: BlogPost[] = [
   howToDrawSoccerBall,
   coloringFootballLogos,
   footballDesignGuide,
-  logoMaillotFootPost
+  commentCreerLogoFootballPost,
+  creerLogoFootPost,
+  colorTheoryPost,
+  footballEmblemsPost,
+  footballLogosHistoryPost,
+  blasonsEquipesFootballPost,  // Add the new post
+  ecussonsClubFootEuropeenPost,
+  logoMaillotFootPost,
 ];

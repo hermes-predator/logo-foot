@@ -5,6 +5,8 @@
 chmod +x scripts/update-blog-categories.sh
 echo "Made update-blog-categories.sh executable."
 
-# Execute the script directly
+# Execute the script with proper permissions
 echo "Running update-blog-categories.sh..."
-./scripts/update-blog-categories.sh
+bash ./scripts/update-blog-categories.sh
+
+echo "Script execution completed!"

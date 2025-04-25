@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ecussonsClubFootEuropeenPost: BlogPost = {
@@ -114,6 +113,6 @@ Qu'il s'agisse des **écussons club de foot anglais** empreints de tradition, de
 
 Dans un football européen en constante évolution commerciale et médiatique, les **écussons des équipes de foot** demeurent des ancrages identitaires essentiels, reliant le passé glorieux des clubs à leur futur ambitieux.`,
   keywords: "écusson club de foot, écusson de club de foot, écusson des équipes de foot, écusson équipe de foot, écusson de foot, écusson club de foot anglais, écusson équipe de foot italie, écusson équipe de foot portugal, écusson club de foot européen",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'technical',
+  subCategory: 'design-guidelines'
 };

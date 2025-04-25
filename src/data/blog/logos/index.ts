@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -61,8 +60,6 @@ import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
 import { southAmericanClubsPost } from './south-american-clubs';
-// Import the article once, but don't include it twice
-import { brazilianClubsPost } from './brazilian-clubs';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -125,6 +122,5 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
   bundesligaLogoPost,
-  southAmericanClubsPost, // Include the general South American clubs post separately
-  brazilianClubsPost // Include the general Brazilian clubs post separately
+  southAmericanClubsPost
 ];

@@ -45,6 +45,6 @@ Au-delà de sa dimension sportive, le **logo roumanie** est devenu un puissant s
 
 Les joueurs qui portent fièrement le maillot orné du **logo roumanie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **logo club football roumanie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo roumanie foot, logo roumanie, roumanie logo, logo foot roumanie, football roumanie logo, logo club de foot roumanie, logo club foot roumanie, logo club football roumanie, logo equipe foot roumanie, logo federation football roumanie",
-  category: 'national-logos',  // Changed from 'logos' to 'national-logos'
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

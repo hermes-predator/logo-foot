@@ -32,6 +32,8 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
+// Explicitly remove the blasonsEquipesFootballPost import
+// import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -65,4 +67,5 @@ export const competitionPosts: BlogPost[] = [
   dflSupercupLogoPost,
   communityShieldLogoPost,
   tacaDePortugalLogoPost
+  // Removed blasonsEquipesFootballPost to avoid duplication
 ];

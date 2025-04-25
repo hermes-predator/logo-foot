@@ -1,13 +1,12 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const albaniaLogoPost: BlogPost = {
-  id: 202, // ID unique pour cet article
+  id: 202,
   title: "Logo Albanie : Histoire et Signification de l'Emblème des Aigles Rouges [2024]",
   excerpt: "Découvrez l'histoire complète du logo Albanie : origines, évolution et symbolisme de l'emblème des Aigles Rouges, équipe nationale emblématique des Balkans.",
   date: "2024-07-20",
-  category: "logos",
-  subCategory: "national-logos",
+  category: "national-logos", // Changed from "logos"
+  subCategory: "national-logos", // Kept the same
   galleryImageId: 202,
   keywords: "logo albanie, albanie foot logo, albanie logo, logo albanie foot, albanie logo foot, logo albanie png, logo foot albanie, emblème Albanie, écusson Albanie football, FSHF logo",
   content: `

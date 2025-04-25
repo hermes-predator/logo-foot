@@ -33,7 +33,6 @@ import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
-import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
 import { almereCityLogoPost } from './almere-city-logo';
@@ -79,7 +78,6 @@ export const logoPosts: BlogPost[] = [
   stadeBriochinLogoPost,
   avranchesLogoPost,
   boltonWanderersLogoPost,
-  newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
   almereCityLogoPost,
@@ -91,3 +89,4 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost
 ];
+

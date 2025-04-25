@@ -34,6 +34,6 @@ Le club a réussi à transcender les frontières régionales, faisant du **Godoy
 
 Plus qu'un simple logo, le **Godoy Cruz logo** est un récit visuel de l'histoire, de la passion et de l'identité d'un club qui continue d'inspirer des générations de supporters.`,
   keywords: "godoy cruz logo, logo de foot godoy cruz argentine, football argentin, club de mendoza, logo sportif",
-  category: "logos",
+  category: "club-logos",
   subCategory: "non-european-clubs"
 };

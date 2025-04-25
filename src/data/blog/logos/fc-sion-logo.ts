@@ -30,7 +30,7 @@ L'emblème actuel reflète parfaitement l'héritage historique du club tout en a
 
 Le logo est devenu un véritable symbole de la tradition footballistique suisse, représentant non seulement un club mais aussi toute une région et sa passion pour le football. Il incarne la fierté et l'attachement des supporters à leur club.`,
   keywords: "fc sion logo, fc sion logo png, logo fc sion, fc sion logo foot",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 425
 };

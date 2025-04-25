@@ -45,7 +45,7 @@ Dans le paysage de la MLS, le logo du Houston Dynamo s'est imposé comme :
 
 Le **houston dynamo logo** incarne parfaitement l'identité unique du club, son histoire riche et ses ambitions futures dans le football américain.`,
   keywords: "logo houston dynamo:20, houston dynamo logo:20, houston dynamo fc logo:10, houston dynamo logo png:10, logo dynamo houston:10",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'non-european-clubs',
   galleryImageId: 567
 };

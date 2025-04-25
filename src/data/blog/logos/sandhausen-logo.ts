@@ -40,7 +40,7 @@ Le logo dépasse le simple cadre sportif, devenant un symbole d'identité local 
 
 Le **logo sandhausen** représente plus qu'un simple emblème : c'est l'histoire d'un club, de ses supporters et de sa région.`,
   keywords: "logo sandhausen:10, logo sv sandhausen:10, logo de foot sandhausen:10",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'german-clubs',
   galleryImageId: null
 };

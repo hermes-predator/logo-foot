@@ -46,7 +46,7 @@ Dans le paysage de la MLS, le **austin fc logo** s'est rapidement forgé une ré
 
 Le **logo austin fc** symbolise l'avenir du football américain, incarnant à la fois l'identité unique d'Austin, son engagement communautaire et ses aspirations sportives ambitieuses.`,
   keywords: "logo austin fc:20, austin fc logo:20, austin fc logo png:20, fc austin logo:10, logo png austin fc:10",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'non-european-clubs',
   galleryImageId: 566
 };

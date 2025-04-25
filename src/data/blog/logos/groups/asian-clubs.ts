@@ -26,7 +26,7 @@ export const asianClubsPost: BlogPost = {
   date: "2025-04-14",
   content: "",
   keywords: "logos clubs asiatiques, écussons football asie, emblèmes clubs asiatiques, logos football japonais, logos football coréen, logos clubs chinois, logos football saoudien",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoRealMadridPost: BlogPost = {
@@ -77,7 +76,6 @@ Le **real madrid logo ancien** continue d'influencer :
 
 L'**ancien logo real madrid** reste un témoin précieux de l'histoire du club, incarnant les valeurs et l'évolution d'une institution qui a défini l'excellence dans le football mondial.`,
   keywords: "ancien logo real madrid, ancien logo du real madrid, logo real madrid ancien, real madrid ancien logo, real madrid logo ancien",
-  category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 438
+  category: "club-logos",
+  subCategory: "spanish-clubs"
 };

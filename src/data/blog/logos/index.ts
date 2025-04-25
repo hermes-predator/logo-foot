@@ -85,8 +85,6 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
-  // Ce logo est déjà inclus dans spanishClubPosts, pas besoin de l'ajouter individuellement
-  // realMadridLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -99,7 +97,6 @@ export const logoPosts: BlogPost[] = [
   rouenLogoPost,
   usBoulogneLogoPost,
   stadeBriochinLogoPost,
-  commentCreerLogoFootballPost,
   avranchesLogoPost,
   footballLogosHistoryPost,
   middlesbroughLogoPost,

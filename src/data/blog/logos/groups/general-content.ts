@@ -11,7 +11,7 @@ import { winamaxLogoPost } from '../winamax-logo';
 import { unibetLogoPost } from '../unibet-logo';
 import { bwinLogoPost } from '../bwin-logo';
 import { footballLogosHistoryPost } from '../football-logos-history';
-import { footballEmblemsPost } from '../football-emblems';
+// Suppression de l'import footballEmblemsPost ici
 import { logosFootPdfPost } from '../1001-logos-foot-pdf';
 import { logoMaillotFootPost } from '../logo-maillot-foot';
 import { ecussonsFootballPost } from '../ecussons-football';
@@ -29,7 +29,7 @@ export const generalContentPosts: BlogPost[] = [
   unibetLogoPost,
   bwinLogoPost,
   footballLogosHistoryPost,
-  footballEmblemsPost,
+  // Suppression de footballEmblemsPost de la liste des articles
   logosFootPdfPost,
   logoMaillotFootPost,
   ecussonsFootballPost,

@@ -12,6 +12,7 @@ import { ligue2LogoPost } from '../ligue2-logo';
 import { mlsLogosPost } from '../mls-logos';
 import { nationsLeagueLogoPost } from '../nations-league-logo';
 import { serieALogoPost } from '../serie-a-logo';
+import { premierLeagueLogoPost } from '../premier-league-logo';
 
 // Exporting available competition logos
 export const competitionLogos = [
@@ -26,5 +27,6 @@ export const competitionLogos = [
   ligue2LogoPost,
   mlsLogosPost,
   nationsLeagueLogoPost,
-  serieALogoPost
+  serieALogoPost,
+  premierLeagueLogoPost
 ];

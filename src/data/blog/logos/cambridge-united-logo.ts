@@ -34,7 +34,7 @@ Le logo est devenu un symbole important pour la communauté de Cambridge, repré
 
 Le **cambridge united logo** est bien plus qu'un simple emblème sportif - c'est un symbole qui capture l'essence d'une ville universitaire et de son club de football historique.`,
   keywords: "cambridge united logo:20, cambridge united logo png:10",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'english-clubs',
   galleryImageId: null
 };

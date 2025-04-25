@@ -77,7 +77,7 @@ Le **Charleroi logo** continue d'inspirer :
 
 Le **logo Charleroi foot** reste un symbole fort du football belge, incarnant à la fois tradition et modernité dans son expression visuelle.`,
   keywords: "logo charleroi, charleroi logo, logo charleroi foot, logo charleroi png, logo sporting charleroi, sporting charleroi logo, charleroi logo png, logo de charleroi, logo charleroi sc, logo de foot charleroi sc, logo du sporting de charleroi, rsc charleroi logo",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9330
 };

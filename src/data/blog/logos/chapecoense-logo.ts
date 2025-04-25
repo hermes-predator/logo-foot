@@ -38,6 +38,7 @@ Le **logo noir chapecoense** aujourd'hui symbolise un renouveau constant. Il ref
 
 Le **logo chapecoense** transcende son rôle d'emblème sportif pour devenir un symbole universel de résilience et d'espoir dans le football brésilien. Il continue d'inspirer les générations de supporters et de rappeler l'importance des valeurs humaines dans le sport.`,
   keywords: "logo chapecoense, chapecoense logo, chapecoense logo png, logo chapecoense png, logo noir chapecoense, football brésilien, club brésilien",
-  category: "logos",
-  subCategory: "brazilian-clubs"
+  category: 'club-logos',
+  subCategory: 'brazilian-clubs',
+  galleryImageId: 441
 };

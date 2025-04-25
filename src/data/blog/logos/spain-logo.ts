@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const spainLogoPost: BlogPost = {
@@ -185,6 +184,6 @@ Le **logo espagne** est bien plus qu'un simple emblème sportif – c'est un sym
 
 L'évolution de ce **logo equipe d'espagne** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo club foot espagne** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments nationaux intemporels.`,
   keywords: "logo espagne, espagne foot logo, logo espagne foot, espagne logo, logo espagne football, logo foot espagne, club foot espagne logo, espagne logo foot, logo de l'espagne, le logo de l'espagne, logo espagne png, logo d'espagne, logo equipe espagne, espagne logo png, logo club foot espagne, logo de espagne, logo equipe d'espagne, logo equipe de foot espagne, logo equipe foot espagne, logo football espagne",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

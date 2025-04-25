@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const italianSerieALogoPost: BlogPost = {
@@ -44,5 +45,7 @@ Aujourd'hui, le logo se retrouve sur de nombreux supports :
 
 Le logo de la Serie A représente l'âme et l'histoire d'une compétition profondément ancrée dans la culture footballistique italienne, incarnant à la fois tradition et ambition moderne.`,
   keywords: "logo serie a, serie a logo, championnat italien logo, ligue italienne logo",
-  galleryImageId: null
+  galleryImageId: null,
+  category: 'competition-logos',
+  subCategory: 'italian-competitions'
 };

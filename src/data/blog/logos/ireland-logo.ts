@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const irelandLogoPost: BlogPost = {
@@ -39,5 +40,7 @@ Grâce à ses performances en Coupe du Monde et en Championnat d'Europe, le **lo
 
 Le **logo irlande** est plus qu'un simple emblème - c'est un symbole qui incarne l'histoire, la tradition et les ambitions d'une nation passionnée de football.`,
   keywords: "logo irlande, irlande logo, logo équipe irlande, équipe irlande logo",
-  galleryImageId: 430
+  galleryImageId: 430,
+  category: 'national-logos',
+  subCategory: 'european-teams'
 };

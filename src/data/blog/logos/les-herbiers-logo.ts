@@ -2,40 +2,44 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lesHerbiersLogoPost: BlogPost = {
-  id: 94,
-  title: "**Logo Les Herbiers** : Histoire et Évolution Complète [2024]",
-  date: "2025-04-18",
-  category: "logos",
-  excerpt: "Découvrez l'histoire du **logo les herbiers foot**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo club de foot les herbiers**.",
-  content: `# Guide Complet du **Logo Les Herbiers**
+  id: 430,
+  title: "**Logo Les Herbiers** : Histoire et Design de l'Emblème Vendéen [2024]",
+  excerpt: "Découvrez l'histoire fascinante du **logo Les Herbiers**, son évolution et sa signification unique dans le football français.",
+  date: "2024-04-15",
+  content: `# L'Histoire du **Logo Les Herbiers**
 
-L'histoire du **logo les herbiers** représente l'identité visuelle d'un club important du football français. Cette analyse détaillée explore les différents aspects de cet emblème qui incarne les valeurs et l'histoire du club.
+Le **logo Les Herbiers** représente l'identité visuelle d'un club qui s'est fait connaître notamment lors de son parcours historique en Coupe de France. Ce **logo VHF** est bien plus qu'un simple emblème : c'est un symbole d'identité locale et de passion pour le football.
 
-## L'Histoire du **Logo Club Foot Les Herbiers**
+## Les Origines du **Logo Les Herbiers VF**
 
-Le **logo les herbiers foot** est profondément ancré dans l'histoire de la ville des Herbiers. L'emblème graphique du **club foot les herbiers logo** reflète l'attachement profond du club à son territoire, combinant des éléments symboliques locaux avec une identité visuelle forte et distinctive.
+Le **logo Les Herbiers** puise ses racines dans l'histoire du club et de la région vendéenne. Le design reflète l'identité et les valeurs du Vendée Les Herbiers Football.
 
-## Évolution du Design
+## Design et Symbolisme
 
-Le **logo les herbiers** témoigne d'une évolution constante dans l'identité visuelle du club. Cette transformation illustre la modernisation progressive de l'image du club tout en conservant ses racines historiques. Le **les herbiers logo png** actuel est le résultat d'années d'affinement et d'adaptation aux standards modernes du design sportif.
+Le **logo Les Herbiers VF** se compose d'éléments distinctifs :
+- Les couleurs rouge et noir emblématiques
+- Des éléments qui évoquent la tradition vendéenne
+- Un design qui allie tradition et modernité
 
-## Analyse du Design Contemporain
+### Une Identité Visuelle Forte
 
-Le design actuel du **logo club de foot les herbiers** représente l'essence même du club. Sa composition graphique intègre harmonieusement les couleurs traditionnelles du club avec des éléments symboliques forts. Chaque aspect du **foot logo les herbiers** a été soigneusement pensé pour transmettre les valeurs fondamentales du club.
+Chaque composant du logo a une signification particulière :
+- Le rouge symbolise la passion et l'énergie
+- Le noir évoque la force et la détermination
+- Le design global reflète l'ancrage territorial du club
 
-## Impact et Reconnaissance
+## Évolution à Travers les Années
 
-### Identité Visuelle Territoriale
+Le **logo Les Herbiers** a connu plusieurs transformations au fil du temps, adaptant son image tout en restant fidèle à ses racines.
 
-Le **les herbiers logo** est devenu un symbole de fierté locale, incarnant l'esprit sportif et l'identité culturelle de la ville. Il représente bien plus qu'un simple emblème sportif, c'est un véritable étendard pour toute une communauté.
+## Impact National
 
-### Applications et Utilisations
-
-Le logo s'adapte parfaitement à différents supports de communication, des maillots officiels aux supports digitaux. Sa polyvalence et sa lisibilité en font un élément de communication efficace pour le club.
+Suite à sa finale de Coupe de France en 2018 contre le PSG, le **logo Les Herbiers VF** a gagné en notoriété à l'échelle nationale, devenant un symbole de courage et de détermination pour les clubs amateurs.
 
 ## Conclusion
 
-Le **les herbiers foot logo** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club herbretais.`,
-  keywords: "les herbiers logo, logo les herbiers, logo les herbiers foot, club foot les herbiers logo, foot logo les herbiers, les herbiers foot logo, les herbiers logo png, logo club de foot les herbiers",
-  galleryImageId: null
+Le **logo Les Herbiers** est plus qu'un simple emblème - c'est un symbole qui incarne l'histoire, la tradition et les ambitions d'un club ancré dans son territoire.`,
+  keywords: "logo les herbiers, les herbiers logo, logo les herbiers vf, les herbiers vf logo",
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

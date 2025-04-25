@@ -1,75 +1,46 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const lePuyFootLogoPost: BlogPost = {
-  id: 557,
-  title: "Logo Le Puy Foot 43 : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Le Puy Foot 43, un symbole de la passion ardéchoise pour le football depuis des décennies.",
+  id: 430,
+  title: "**Logo Le Puy Foot** : Histoire et Design de l'Emblème Auvergnat [2024]",
+  excerpt: "Découvrez l'histoire fascinante du **logo Le Puy Foot**, son évolution et sa signification unique dans le football français.",
   date: "2024-04-15",
-  content: `# Histoire du **Logo Le Puy Foot 43**
+  content: `# L'Histoire du **Logo Le Puy Foot**
 
-Le **logo Le Puy Foot 43** représente l'identité visuelle d'un club emblématique de la région Auvergne-Rhône-Alpes. L'évolution du **logo Le Puy Foot** témoigne de l'histoire riche du club et de son ancrage territorial.
+Le **logo Le Puy Foot** représente l'identité visuelle d'un club emblématique du football amateur français. Ce **logo Le Puy** est bien plus qu'un simple emblème : c'est un symbole d'identité régionale et de passion pour le football.
 
-## Design et Symbolisme du **Logo Puy Foot 43**
+## Les Origines du **Logo Le Puy Foot 43**
 
-• Éléments Distinctifs
-- Les couleurs traditionnelles bleu et blanc
-- Le blason stylisé représentant la ville
-- Le sigle "LPF43" intégré au design
-- Les éléments graphiques symbolisant la région
+Le **logo Le Puy Foot** puise ses racines dans l'histoire du club et de la région. Le design reflète l'identité auvergnate et les valeurs du club.
 
-• Signification
-- Le bleu : couleur historique du club
-- Le blanc : pureté et excellence
-- Le blason : symbole de la ville du Puy-en-Velay
-- L'identité locale forte
+## Design et Symbolisme
 
-## Évolution à Travers le Temps
+Le **logo Le Puy Foot 43** se compose d'éléments distinctifs :
+- Les couleurs du club
+- Les références à la ville du Puy-en-Velay
+- Des éléments qui évoquent la région Auvergne
 
-Le **logo Le Puy Foot** a connu plusieurs modifications au fil des années, tout en conservant ses éléments distinctifs :
+### Une Identité Visuelle Forte
 
-• Versions Historiques
-- Design original des années 1950
-- Modernisation dans les années 1980
-- Refonte digitale des années 2000
-- Version contemporaine actuelle
+Chaque composant du logo a une signification particulière :
+- Les couleurs représentent l'identité du club
+- Les éléments graphiques évoquent le patrimoine local
+- Le design global symbolise l'unité et la détermination
 
-• Adaptations Modernes
-- Optimisation pour les supports digitaux
-- Respect des codes historiques
-- Amélioration de la lisibilité
-- Versatilité d'utilisation
+## Évolution à Travers les Années
 
-## Impact et Reconnaissance
+Le **logo Le Puy Foot** a connu plusieurs transformations au fil du temps, adaptant son image tout en restant fidèle à ses racines.
 
-Le **logo Le Puy Foot 43** est devenu un symbole fort :
+## Impact Régional
 
-• Identité Locale
-- Reconnaissance immédiate
-- Fierté des supporters
-- Ancrage territorial
-- Histoire du club
+Le **logo Le Puy Foot 43** est devenu un symbole important du football régional, représentant les valeurs et l'ambition d'un club en développement.
 
-• Communication
-- Merchandising
-- Réseaux sociaux
-- Documents officiels
-- Équipements sportifs
+## Conclusion
 
-## Utilisation et Déclinaisons
-
-Le **logo Le Puy Foot** s'adapte à différents usages :
-
-• Applications
-- Maillots officiels
-- Produits dérivés
-- Communication digitale
-- Signalétique du stade
-
-• Guidelines
-- Respect des proportions
-- Protection des zones
-- Utilisations autorisées
-- Variations permises`,
-  keywords: "logo le puy foot 43, logo le puy foot, logo puy foot 43, le puy foot logo, football le puy, club foot le puy, puy foot 43",
-  galleryImageId: null
+Le **logo Le Puy Foot** est plus qu'un simple emblème - c'est un symbole qui incarne l'histoire, la tradition et les ambitions d'un club ancré dans son territoire.`,
+  keywords: "logo le puy foot, le puy foot logo, logo le puy foot 43, le puy foot 43 logo",
+  galleryImageId: null,
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

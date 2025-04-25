@@ -1,73 +1,46 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const leHavreLogoPost: BlogPost = {
-  id: 436,
-  title: "**Logo Le Havre AC** : Histoire et Signification de l'Emblème Doyen [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Le Havre AC**, un symbole de fierté et de passion pour le club doyen. Une analyse détaillée de son design unique.",
-  date: "2024-04-22",
-  content: `# L'Histoire Fascinante du **Logo Le Havre AC**
+  id: 430,
+  title: "**Logo Le Havre AC** : Histoire et Design de l'Emblème Normand [2024]",
+  excerpt: "Découvrez l'histoire fascinante du **logo Le Havre AC**, son évolution et sa signification unique dans le football français.",
+  date: "2024-04-15",
+  content: `# L'Histoire du **Logo Le Havre AC**
 
-Le **logo Le Havre AC** incarne l'identité visuelle d'un club qui a marqué l'histoire du football français. Fondé en 1872, Le Havre Athletic Club arbore fièrement un **logo Le Havre AC** qui reflète son héritage et ses ambitions.
+Le **logo Le Havre AC** représente l'identité visuelle du plus ancien club de football français encore en activité. Ce **logo HAC** est bien plus qu'un simple emblème : c'est un symbole de tradition et d'histoire du football français.
 
 ## Les Origines du **Logo HAC**
 
-Le **logo HAC** puise ses racines dans l'histoire de la ville du Havre et de sa région. Les éléments distinctifs du design reflètent :
-
-• L'Histoire et les Traditions
-- Les couleurs ciel et marine historiques
-- L'héritage normand
-- L'identité culturelle locale
-- La fierté régionale
+Le **logo Le Havre** puise ses racines dans l'histoire du club, fondé en 1872. Le design reflète la riche histoire maritime de la ville et son importance dans l'histoire du football français.
 
 ## Design et Symbolisme
 
-Le **logo Le Havre AC** actuel se compose de plusieurs éléments significatifs :
+Le **logo HAC** se compose d'éléments distinctifs :
+- Les couleurs bleu ciel et marine emblématiques
+- L'écusson traditionnel
+- Des éléments qui font référence à l'identité havraise
 
-• Éléments Graphiques
-- Le ciel et marine dominant symbolisant la passion
-- Le blason stylisé
-- La forme distinctive
-- Les détails emblématiques
+### Une Identité Visuelle Forte
+
+Chaque composant du logo a une signification particulière :
+- Le bleu rappelle la mer et le ciel normand
+- L'écusson évoque la tradition et l'histoire
+- Les éléments graphiques soulignent l'ancienneté du club
 
 ## Évolution à Travers les Années
 
-Le **logo HAC** a connu plusieurs transformations :
+Le **logo Le Havre AC** a connu plusieurs transformations au fil du temps, mais a toujours conservé ses éléments essentiels. Cette évolution témoigne de la capacité du club à se moderniser tout en respectant son héritage.
 
-• Modernisation Progressive
-- Adaptations successives
-- Préservation de l'essence
-- Améliorations graphiques
-- Respect des traditions
+## Impact National
 
-• Design Contemporain
-- Version actuelle épurée
-- Identité visuelle forte
-- Lisibilité optimisée
-- Standards modernes
+En tant que doyen des clubs français, le **logo HAC** est un symbole important de l'histoire du football en France.
 
-## Reconnaissance et Impact
+## Conclusion
 
-Le **logo Le Havre AC** est devenu un symbole reconnu :
-
-• Rayonnement National
-- Visibilité accrue
-- Notoriété croissante
-- Image professionnelle
-- Identité distinctive
-
-## Applications et Utilisations
-
-L'emblème trouve de multiples applications :
-
-• Supports Variés
-- Maillots officiels
-- Communication digitale
-- Produits dérivés
-- Signalétique du stade
-
-## Héritage et Avenir
-
-Le **logo Le Havre AC** continue d'évoluer tout en préservant son essence historique, symbolisant la modernisation du club tout en honorant ses racines.`,
-  keywords: "le havre ac logo, logo le havre ac, french football club logo",
-  galleryImageId: null
+Le **logo Le Havre AC** est plus qu'un simple emblème - c'est un symbole qui incarne l'histoire, la tradition et les ambitions d'un club historique du football français.`,
+  keywords: "logo le havre ac, le havre ac logo, logo hac, hac logo",
+  galleryImageId: null,
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

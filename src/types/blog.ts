@@ -21,6 +21,10 @@ export const BLOG_CATEGORIES = {
     name: 'Logos',
     description: 'Découvrez notre collection de logos de football des plus grands clubs et équipes nationales.'
   },
+  'national-logos': {
+    name: 'Logos des Nations',
+    description: 'Explorez notre collection des logos et emblèmes des équipes nationales de football.'
+  },
   players: {
     name: 'Joueurs',
     description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
@@ -36,10 +40,5 @@ export const BLOG_CATEGORIES = {
   'pixel-art': {
     name: 'Pixel Art',
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
-  },
-  'national-logos': {
-    name: 'Logos des Nations',
-    description: 'Explorez notre collection des logos et emblèmes des équipes nationales de football.'
   }
 };
-

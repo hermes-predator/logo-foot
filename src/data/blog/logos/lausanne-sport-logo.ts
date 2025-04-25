@@ -31,6 +31,6 @@ Le **logo fc lausanne-sport** est devenu bien plus qu'un simple emblème : c'est
 Chaque version du logo raconte une partie de l'histoire du FC Lausanne-Sport, capturant l'esprit d'une équipe qui a traversé les décennies avec fierté et détermination.`,
   keywords: "lausanne sport logo, logo lausanne sport, fc lausanne sport logo, lausanne sport nouveau logo, logo fc lausanne sports, logo fc lausanne-sport",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'swiss-clubs',
   galleryImageId: 423
 };

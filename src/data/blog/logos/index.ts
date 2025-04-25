@@ -19,7 +19,6 @@ import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
 import { westHamLogoPost } from './west-ham-logo';
-import { westBromwichLogoPost } from './west-bromwich-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -34,9 +33,6 @@ import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
-import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
-import { tigresUanlLogoPost } from './tigres-uanl-logo';
-import { louisvilleCityLogoPost } from './louisville-city-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
@@ -69,7 +65,6 @@ export const logoPosts: BlogPost[] = [
   psgUltrasPost,
   omUltrasPost,
   westHamLogoPost,
-  westBromwichLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -84,9 +79,6 @@ export const logoPosts: BlogPost[] = [
   stadeBriochinLogoPost,
   avranchesLogoPost,
   boltonWanderersLogoPost,
-  wycombeWanderersLogoPost,
-  tigresUanlLogoPost,
-  louisvilleCityLogoPost,
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,

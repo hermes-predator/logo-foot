@@ -2,7 +2,8 @@
 import { BlogPost } from '../../../../types/blog';
 import { flamengoLogoPost } from '../flamengo-logo';
 import { palmeirasLogoPost } from '../palmeiras-logo';
-import { brazilianClubsPost } from '../brazilian-clubs';
+// Removing this import since it's already included directly in logos/index.ts
+// import { brazilianClubsPost } from '../brazilian-clubs';
 import { saoPauloLogoPost } from '../sao-paulo-logo';
 import { corinthiansLogoPost } from '../corinthians-logo';
 import { botafogoLogoPost } from '../botafogo-logo';
@@ -13,11 +14,11 @@ import { vascoLogoPost } from '../vasco-da-gama-logo';
 import { chapecoenseLogoPost } from '../chapecoense-logo';
 import { coritibaLogoPost } from '../coritiba-logo';
 
-// Group all Brazilian club logo posts
+// Group all Brazilian club logo posts - removing the brazilianClubsPost to avoid duplication
 export const brazilianClubPosts: BlogPost[] = [
   flamengoLogoPost,
   palmeirasLogoPost,
-  brazilianClubsPost,
+  // brazilianClubsPost, - removed to avoid duplication
   saoPauloLogoPost,
   corinthiansLogoPost,
   botafogoLogoPost,

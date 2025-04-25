@@ -19,6 +19,7 @@ import { ligue1LogoPost } from './ligue1-logo';
 import { italianSerieALogoPost } from './italian-serie-a';
 import { jupilerProLeagueLogoPost } from './jupiler-pro-league-logo';
 import { knvbBekerLogoPost } from './knvb-beker-logo';
+import { lilleLogoPost } from './lille-logo';
 
 export const allLogos = [
   // German Clubs
@@ -39,6 +40,7 @@ export const allLogos = [
   ajaxLogoPost,
   cercleBrugesLogoPost,
   lausanneSportLogoPost,
+  lilleLogoPost,
 
   // Competitions
   ligue1LogoPost,
@@ -46,3 +48,9 @@ export const allLogos = [
   jupilerProLeagueLogoPost,
   knvbBekerLogoPost
 ];
+
+export * from './groups/german-clubs';
+export * from './groups/french-clubs';
+export * from './groups/national-teams';
+export * from './groups/other-european-clubs';
+export * from './groups/spanish-clubs';

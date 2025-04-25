@@ -1,7 +1,7 @@
 
 import { BlogPost } from '../../../types/blog';
 
-export const lilleLogo: BlogPost = {
+export const lilleLogoPost: BlogPost = {
   id: 18,
   title: "Logo LOSC Lille : Histoire et Evolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo LOSC Lille, son évolution et sa symbolique unique dans le football français.",

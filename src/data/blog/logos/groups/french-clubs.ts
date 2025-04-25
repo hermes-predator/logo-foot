@@ -1,39 +1,26 @@
 
-import { BlogPost } from '../../../../types/blog';
-import { lillLogoPost } from '../lille-logo';
-import { concarneauLogoPost } from '../concarneau-logo';
-import { angersLogoPost } from '../angers-logo';
-import { acAjaccioLogoPost } from '../ac-ajaccio-logo';
+import { lilleLogoPost } from '../lille-logo';
+import { monacoLogoPost } from '../monaco-logo';
+import { lePuyFootLogoPost } from '../le-puy-foot-logo';
 import { leHavreLogoPost } from '../le-havre-logo';
-import { troyesLogoPost } from '../troyes-logo';
-import { parisFCLogoPost } from '../paris-fc-logo';
-import { stadeBriochinLogoPost } from '../stade-briochin-logo';
-import { bourgoinJallieuLogoPost } from '../bourgoin-jallieu-logo';
-import { colomiersLogoPost } from '../colomiers-logo';
+import { lesHerbiersLogoPost } from '../les-herbiers-logo';
+import { limonestLogoPost } from '../limonest-logo';
+import { martiguesLogoPost } from '../martigues-logo';
+import { metzLogoPost } from '../metz-logo';
+import { angersLogoPost } from '../angers-logo';
+import { amiensLogoPost } from '../amiens-logo';
 import { avrancheLogoPost } from '../avranches-logo';
-import { brestLogoPost } from '../brest-logo';
-import { caenLogoPost } from '../caen-logo';
-import { stadeMayennaisLogoPost } from '../stade-mayennais-logo';
-import { bergeracLogoPost } from '../bergerac-logo';
-import { annecyLogoPost } from '../annecy-logo';
-import { aubagneLogoPost } from '../aubagne-logo';
 
-export const frenchClubLogos: BlogPost[] = [
-  lillLogoPost,
-  concarneauLogoPost,
-  angersLogoPost,
-  acAjaccioLogoPost,
+export const frenchClubLogos = [
+  lilleLogoPost,
+  monacoLogoPost,
+  lePuyFootLogoPost,
   leHavreLogoPost,
-  troyesLogoPost,
-  parisFCLogoPost,
-  stadeBriochinLogoPost,
-  bourgoinJallieuLogoPost,
-  colomiersLogoPost,
-  avrancheLogoPost,
-  brestLogoPost,
-  caenLogoPost,
-  stadeMayennaisLogoPost,
-  bergeracLogoPost,
-  annecyLogoPost,
-  aubagneLogoPost
+  lesHerbiersLogoPost,
+  limonestLogoPost,
+  martiguesLogoPost,
+  metzLogoPost,
+  angersLogoPost,
+  amiensLogoPost,
+  avrancheLogoPost
 ];

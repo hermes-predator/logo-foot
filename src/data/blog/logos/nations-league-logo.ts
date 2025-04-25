@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const nationsLeagueLogoPost: BlogPost = {
@@ -87,6 +86,6 @@ Les futures itérations du **Ligue des Nations logo png** conserveront probablem
 
 Le **logo badge Ligue des Nations** restera ainsi un symbole fort de cette compétition innovante, continuant à représenter efficacement les valeurs de prestige et d'excellence qui définissent ce tournoi désormais incontournable du football européen.`,
   keywords: "logo Ligue des Nations, Ligue des Nations logo, Ligue des Nations logo png, logo Ligue des Nations png, Ligue des Nation logo, logo badge Ligue des Nations",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

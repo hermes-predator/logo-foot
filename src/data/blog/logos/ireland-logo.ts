@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const irelandLogoPost: BlogPost = {
@@ -48,7 +47,6 @@ Les jeunes joueurs qui rêvent de porter le maillot national s'identifient à ce
 
 Alors que le football irlandais continue d'écrire son histoire sur la scène internationale, le **logo irlande** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les **irlande equipe de foot logos** qui se succéderont dans le futur, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football irlandais.`,
   keywords: "logo irlande, irlande logo, logo irlandais, logo irlande foot, logo foot irlande, logo irlande du nord, club irlandais football logo, irlande equipe de foot logos",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 57
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

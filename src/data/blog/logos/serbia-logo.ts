@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const serbiaLogoPost: BlogPost = {
@@ -46,7 +45,6 @@ Au-delà de sa dimension sportive, le **logo serbie** est devenu un puissant sym
 
 Les joueurs qui portent fièrement le maillot orné du **logo serbie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **logo de serbie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo serbie, logo serbie foot, logo foot serbie, serbie logo, serb logo png, logo club serbie, logo de la serbie, logo de serbie, logo du football serbe",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 160
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const scotlandLogoPost: BlogPost = {
@@ -46,7 +45,6 @@ Au-delà de sa dimension sportive, le **logo ecosse foot** est devenu un puissan
 
 Les joueurs qui portent fièrement le maillot orné du **logo ecosse foot png** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football mondial et dont le **ecosse logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo ecosse, ecosse logo, logo ecosse foot, logo ecosse foot png, ecosse logo foot, logo foot ecosse, ecosse logo png, foot logo ecosse",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 162
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

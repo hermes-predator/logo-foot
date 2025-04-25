@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const egyptLogoPost: BlogPost = {
@@ -46,7 +45,6 @@ Au-delà de sa dimension sportive, le **logo egypte** est devenu un puissant sym
 
 Les joueurs qui portent fièrement le maillot orné du **egypte logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football africain et dont l'**egypt logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo egypte, egypt football logo, egypt logo, egypt logo png, egypte logo, egypte logo foot, egypte logo png, logo egypte foot, logo foot egypte, egypt football team logo",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 161
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ukraineLogoPost: BlogPost = {
@@ -46,7 +45,6 @@ Au-delà de sa dimension sportive, le **logo ukraine** est devenu un puissant sy
 
 Les joueurs qui portent fièrement le maillot orné du **ukraine football logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également les valeurs et l'espoir de toute une nation qui se reconnaît dans ce symbole emblématique.`,
   keywords: "logo ukraine, ukraine logo, logo ukraine foot, logo ukraine football, logo de l'ukraine, logo foot ukraine, ukraine football logo, ukraine logo foot, ukraine logo png, logo club ukraine",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 50
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

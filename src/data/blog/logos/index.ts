@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -53,7 +54,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
-import { bundesligaLogoPost } from './bundesliga-brand';
+// Suppression de l'import bundesligaLogoPost pour éviter la duplication
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -108,6 +109,6 @@ export const logoPosts: BlogPost[] = [
   redBullSalzburgLogoPost,
   erzurumsporLogoPost,
   bandirmasporLogoPost,
-  guangzhouLogoPost,
-  bundesligaLogoPost
+  guangzhouLogoPost
+  // Suppression de bundesligaLogoPost ici pour éviter la duplication
 ];

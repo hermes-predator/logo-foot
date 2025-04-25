@@ -69,7 +69,8 @@ L'emblème trouve de multiples applications :
 
 Le **logo FC Bourgoin-Jallieu** continue d'évoluer tout en préservant son essence historique, symbolisant la modernisation du club tout en honorant ses racines.`,
   keywords: "logo fc bourgoin-jallieu, fc bourgoin-jallieu logo, logo fcbj",
+  category: 'club-logos',
   subCategory: 'french-clubs',
-  galleryImageId: null,
+  galleryImageId: null
   
 };

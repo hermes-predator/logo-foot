@@ -56,7 +56,7 @@ export const creerLogoFootPost: BlogPost = {
 - Cohérence et harmonie
 - Adaptabilité et pérennité`,
   keywords: "créer logo foot, design blason foot, logo équipe football, conception logo club, identité visuelle foot",
-  category: 'design',
+  category: 'technical',
   subCategory: 'general',
   galleryImageId: 151
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const ghanaLogoPost: BlogPost = {
@@ -47,6 +48,7 @@ Les jeunes joueurs qui rêvent de porter le maillot national s'identifient à ce
 
 Alors que le football ghanéen continue d'écrire son histoire sur la scène internationale, le **ghana logo foot** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les futures versions du **logo foot ghana** qui se succéderont, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football ghanéen.`,
   keywords: "ghana football association logo, ghana football logo, ghana logo, logo foot ghana, logo ghana, logo ghana foot, ghana logo png, equipe foot ghana logo, ghana football federation logo, ghana logo foot, ghana national team logo",
-  category: 'national-logos',  // Changed from 'logos' to 'national-logos'
-  subCategory: 'national-logos'
+  category: 'logos',
+  subCategory: 'national-logos',
+  galleryImageId: 58
 };

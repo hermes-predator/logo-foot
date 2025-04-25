@@ -20,7 +20,8 @@ import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
-import { wolfsburgLogoPost } from './wolfsburg-logo';
+// Suppression du doublon wolfsburgLogoPost - déjà inclus dans germanClubPosts
+// import { wolfsburgLogoPost } from './wolfsburg-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -75,7 +76,7 @@ export const logoPosts: BlogPost[] = [
   omUltrasPost,
   westHamLogoPost,
   westBromwichLogoPost,
-  wolfsburgLogoPost,
+  // wolfsburgLogoPost, // Supprimé pour éviter le doublon avec germanClubPosts
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,

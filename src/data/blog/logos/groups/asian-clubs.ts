@@ -6,7 +6,8 @@ import { alEttifaqLogoPost } from '../al-ettifaq-logo';
 import { alShababLogoPost } from '../al-shabab-logo';
 // Suppression du doublon guangzhouLogoPost
 // import { guangzhouLogoPost } from '../guangzhou-logo';
-import { damacFcLogoPost } from '../damac-fc-logo';
+// Suppression du doublon damacFcLogoPost - déjà inclus dans nonEuropeanClubPosts
+// import { damacFcLogoPost } from '../damac-fc-logo';
 import { alKhaleejLogoPost } from '../al-khaleej-logo';
 
 // Group Asian club logo posts
@@ -14,7 +15,7 @@ export const asianClubPosts: BlogPost[] = [
   alEttifaqLogoPost,
   alShababLogoPost,
   // guangzhouLogoPost, // Supprimé pour éviter le doublon
-  damacFcLogoPost,
+  // damacFcLogoPost, // Supprimé pour éviter le doublon avec nonEuropeanClubPosts
   alKhaleejLogoPost
 ];
 

@@ -10,3 +10,4 @@ echo "Running direct-category-update.sh..."
 bash ./scripts/direct-category-update.sh
 
 echo "Direct update completed!"
+

@@ -19,3 +19,4 @@ if [ -f "$LOGOS_DIR/ballon-dor-logo.ts" ]; then
 fi
 
 echo "Direct category update completed!"
+

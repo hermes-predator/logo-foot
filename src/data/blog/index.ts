@@ -1,10 +1,19 @@
-
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
 import { technicalPosts } from './technical';
 import { analysisPosts } from './analysis';
 import { pixelArtPosts } from './pixel-art';
+
+// Suppression de l'import de laligaAnalysis 
+import { laligaAnalysis } from './analysis/laliga';
+
+// Modification pour remplacer laligaAnalysis
+const modifiedLaligaAnalysis: BlogPost = {
+  ...laligaAnalysis,
+  category: 'competition-logos', // Modification de la catégorie
+  subCategory: 'competition-logos' // Ajout du sous-catégorie
+};
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
@@ -76,7 +85,7 @@ const countByCategory = {
   history: historyPosts.length,
   technical: technicalPosts.length,
   analysis: analysisPosts.length,
-  pixelArt: pixelArtPosts.length
+  'pixel-art': pixelArtPosts.length
 };
 
 // Vérifier aussi les doublons de titre pour aider à la détection
@@ -109,17 +118,15 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
   }
 };
 
-// Combiner tous les articles et assurer des IDs uniques
-const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
-console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
-console.log(`- logoPosts: ${logoPosts.length}`);
-console.log(`- historyPosts: ${historyPosts.length}`);
-console.log(`- technicalPosts: ${technicalPosts.length}`);
-console.log(`- analysisPosts: ${analysisPosts.length}`);
-console.log(`- pixelArtPosts: ${pixelArtPosts.length}`);
-
-// Vérifier les doublons de titre avant de traiter les IDs
-findDuplicateTitles(allPosts);
+// Filtre explicite avant de traiter les IDs
+const allPosts = [
+  ...logoPosts,
+  ...historyPosts,
+  ...technicalPosts,
+  ...analysisPosts.filter(post => post.id !== laligaAnalysis.id), // Exclure l'ancien article
+  modifiedLaligaAnalysis, // Ajouter la version modifiée
+  ...pixelArtPosts
+];
 
 // Explicitement filtrer l'article 9134 avant d'appliquer la fonction ensureUniqueIds
 const filteredPosts = allPosts.filter(post => post.id !== 9134);

@@ -50,7 +50,7 @@ Le logo est devenu un symbole reconnu qui représente :
 
 Le logo de Heracles Almelo est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**logo heracles almelo**, **heracles almelo logo**, **logo heracles almelo png**",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9337
 };

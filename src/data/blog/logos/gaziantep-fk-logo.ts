@@ -74,7 +74,7 @@ Le **logo gaziantep** s'utilise sur de nombreux supports :
 - Adaptabilité multiformat
 - Protection de la marque`,
   keywords: "gaziantep fk logo, gaziantep logo, logo gaziantep fk",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 567
 };

@@ -1,4 +1,5 @@
 
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -31,7 +32,6 @@ import { rouenLogoPost } from './rouen-logo';
 import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
-import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { almereCityLogoPost } from './almere-city-logo';
 import { westerloLogoPost } from './westerlo-logo';
 import { austriaWienLogoPost } from './austria-wien-logo';
@@ -73,7 +73,6 @@ export const logoPosts: BlogPost[] = [
   usBoulogneLogoPost,
   stadeBriochinLogoPost,
   avranchesLogoPost,
-  boltonWanderersLogoPost,
   almereCityLogoPost,
   westerloLogoPost,
   austriaWienLogoPost,
@@ -83,3 +82,4 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost
 ];
+

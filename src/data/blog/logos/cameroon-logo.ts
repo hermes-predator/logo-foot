@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const cameroonLogoPost: BlogPost = {
@@ -52,7 +51,7 @@ Le **logo cameroun** a su évoluer au fil du temps tout en conservant son essenc
 
 Les joueurs qui portent fièrement le maillot orné du **cameroun logo foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football africain et dont le **logo des lions indomptables du cameroun** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo cameroun, logo du cameroun, cameroun foot logo, cameroun logo, cameroun logo foot, cameroun logo png, logo cameroun foot, logo foot cameroun, logo des lions indomptables du cameroun",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 164
 };

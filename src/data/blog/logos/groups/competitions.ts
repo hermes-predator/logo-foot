@@ -36,6 +36,7 @@ import { brasileiraoSerieALogoPost } from '../brasileirao-serie-a-logo';
 import { ekstraklasaLogoPost } from '../ekstraklasa-logo';
 import { eliteserienLogoPost } from '../eliteserien-logo';
 import { concacafLogoPost } from '../concacaf-logo';
+import { youthLeagueLogoPost } from '../youth-league-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -73,5 +74,6 @@ export const competitionPosts: BlogPost[] = [
   brasileiraoSerieALogoPost,
   ekstraklasaLogoPost,
   eliteserienLogoPost,
-  concacafLogoPost
+  concacafLogoPost,
+  youthLeagueLogoPost
 ];

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const southKoreaLogoPost: BlogPost = {
@@ -132,6 +131,6 @@ L'évolution de ce **corée du sud logo foot** illustre parfaitement comment un 
 
 Qu'il s'agisse du **logo corée du sud transparent** traditionnel ou de ses déclinaisons modernes, l'emblème des Guerriers Taeguk demeure l'un des designs sportifs les plus réussis et les plus reconnaissables du panorama footballistique asiatique contemporain.`,
   keywords: "logo corée du sud, corée du sud foot logo, logo corée du sud foot, corée du sud logo, corée du sud football logo, corée du sud logo foot, equipe de foot corée du sud logo, logo corée du sud transparent",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

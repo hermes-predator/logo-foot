@@ -33,7 +33,6 @@ import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
-import { fcDallasLogoPost } from './fc-dallas-logo';
 import { almereCityLogoPost } from './almere-city-logo';
 import { westerloLogoPost } from './westerlo-logo';
 import { austriaWienLogoPost } from './austria-wien-logo';
@@ -77,7 +76,6 @@ export const logoPosts: BlogPost[] = [
   stadeBriochinLogoPost,
   avranchesLogoPost,
   boltonWanderersLogoPost,
-  fcDallasLogoPost,
   almereCityLogoPost,
   westerloLogoPost,
   austriaWienLogoPost,
@@ -87,4 +85,3 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost
 ];
-

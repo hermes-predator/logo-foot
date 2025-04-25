@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const frontCloudPost: BlogPost = {
@@ -89,6 +90,6 @@ Comme un phare guidant les navires, votre logo éclairera l'avenir de votre club
 - Inspirez les générations futures
 - Créez un symbole intemporel`,
   keywords: "création logo foot, design logo football, conception écusson foot, logo club football, création écusson foot",
-  category: 'technical',
+  category: 'logos',
   subCategory: 'design'
 };

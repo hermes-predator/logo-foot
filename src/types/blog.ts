@@ -7,7 +7,7 @@ export interface BlogPost {
   content: string,
   keywords?: string,
   category: BlogCategory,
-  subCategory?: string, // Adding this back as optional to maintain backward compatibility
+  subCategory?: string,
   galleryImageId?: number,
   readingTime?: number,
   previousPostId?: number,
@@ -36,5 +36,10 @@ export const BLOG_CATEGORIES = {
   'pixel-art': {
     name: 'Pixel Art',
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
+  },
+  'national-logos': {
+    name: 'Logos des Nations',
+    description: 'Explorez notre collection des logos et emblèmes des équipes nationales de football.'
   }
 };
+

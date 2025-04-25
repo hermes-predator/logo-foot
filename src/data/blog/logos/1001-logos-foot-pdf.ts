@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const logosFootPdfPost: BlogPost = {
@@ -116,6 +115,6 @@ Pour des ressources de qualité professionnelle, notre pack premium de logos de 
 N'hésitez pas à nous contacter pour plus d'informations sur notre collection de logos de football et comment elle peut répondre à vos besoins spécifiques bien mieux que n'importe quelle compilation de **1001 logos des clubs de foot PDF**.
 `,
   keywords: "1001 logos des clubs de foot pdf, logos football pdf, collection logos football, télécharger logos foot, pack logos football, logos clubs football vectoriel, logos football haute qualité",
-  category: "logos",
+  category: "technical",
   subCategory: "technical-logos"
 };

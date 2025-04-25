@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const portugalLogoPost: BlogPost = {
@@ -25,7 +24,7 @@ L'Écu Stylisé : La forme générale du **logo portugal foot** rappelle les bla
 
 La Croix de l'Ordre du Christ : Cet élément historique présent sur le **logo du portugal** témoigne de l'importance de cette distinction honorifique dans l'histoire portugaise et rappelle l'ère des grandes découvertes.
 
-Les Quinas : Ces cinq écussons bleus présents sur le **logo portugais** représentent les cinq rois maures vaincus lors de la bataille d'Ourique en 1139, un événement fondateur de l'identité nationale.
+Les Quinas : Ces cinq écussons bleus présents sur le **logo portugais** représentent les cinq rois maures vaincus lors de la bataille d’Ourique en 1139, un événement fondateur de l'identité nationale.
 
 ## L'Évolution du **Logo Foot Portugal** à Travers les Époques
 
@@ -143,6 +142,6 @@ L'évolution mesurée de cet emblème au fil des décennies illustre parfaitemen
 
 Dans un monde du football où l'identité nationale est parfois diluée face à la mondialisation, l'emblème portugais rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde.`,
   keywords: "logo portugal, portugal logo, logo portugal foot, logo du portugal, logo portugais, logo foot portugal, portugal logo foot, logo portugal png, portugal foot logo, logo du portugal foot, logo equipe portugal, logo football portugal, logo portugal foot png, portugal football logo, portugal logo football, portugal logo png, portugal team logo",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: 'national-logos', // Updated from 'logos'
+  subCategory: 'national-logos' // Kept consistent with other national team logos
 };

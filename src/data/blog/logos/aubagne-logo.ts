@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const aubagneLogoPost: BlogPost = {
@@ -27,7 +26,7 @@ Le design actuel du **logo aubagne fc** représente l'essence même du club. Sa 
 
 ### Identité Visuelle Territoriale
 
-Le **aubagne logo** est devenu un symbole de fierté locale, incarnant l'esprit sportif et l'identité culturelle de la ville. Il représente bien plus qu'un simple emblème sportif, c'est un véritable étendard pour toute une communauté.
+Le **logo aubagne** est devenu un symbole de fierté locale, incarnant l'esprit sportif et l'identité culturelle de la ville. Il représente bien plus qu'un simple emblème sportif, c'est un véritable étendard pour toute une communauté.
 
 ### Applications et Utilisations
 
@@ -37,5 +36,7 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo fc aubagne** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club aubagnais.`,
   keywords: "logo aubagne, aubagne logo, logo aubagne fc, aubagne logo png, logo aubagne png, logo fc aubagne",
+  category: 'club-logos',
+  subCategory: 'french-clubs',
   galleryImageId: null
 };

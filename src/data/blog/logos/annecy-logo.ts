@@ -36,7 +36,7 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo Annecy FC** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du Annecy FC.`,
   keywords: "logo annecy, annecy logo, logo annecy fc, annecy fc logo, logo annecy png, annecy logo png",
-  galleryImageId: null,
   category: 'club-logos',
-  subCategory: 'french-clubs'
+  subCategory: 'french-clubs',
+  galleryImageId: null
 };

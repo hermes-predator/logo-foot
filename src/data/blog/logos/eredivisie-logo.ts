@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const eredivisieLogoPost: BlogPost = {
@@ -89,6 +88,6 @@ Dans un paysage footballistique mondial de plus en plus homogénéisé, l'identi
 
 Alors que le football continue sa transformation digitale accélérée, le **logo Eredivisie PNG** démontre qu'une identité visuelle forte et cohérente peut constituer un véritable actif stratégique dans la compétition mondiale que se livrent les ligues pour l'attention des fans et la valorisation médiatique.`,
   keywords: "eredivisie logo, logo eredivisie, eredivisie logo png, logo eredivisie png, ligue néerlandaise logo, football néerlandais logo, championnat pays-bas football",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

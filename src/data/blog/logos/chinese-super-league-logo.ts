@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const chineseSuperLeagueLogoPost: BlogPost = {
@@ -219,6 +218,6 @@ Pour les millions de fans qui suivent passionnément le **classement chinese sup
 
 Le **chinese super league logo** nous rappelle ainsi que dans l'univers du sport moderne, les symboles visuels ne sont pas de simples ornements, mais des vecteurs essentiels de sens, d'identité et d'émotion qui contribuent pleinement au récit collectif que représente le football.`,
   keywords: "china chinese super league, chinese football association super league, classement chinese super league, chinese super league, chinese super league football, matchs de chinese super league, chinese super league games, chinese super league logo, chinese super league results",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

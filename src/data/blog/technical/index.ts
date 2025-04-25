@@ -1,5 +1,5 @@
-
 import { BlogPost } from '../../../types/blog';
+import { clubHistoryPost } from '../logos/club-history';
 import { designPrinciples } from './design-principles';
 import { integrationGuide } from './integration-guide';
 import { minimalDesignGuide } from './minimal-design';
@@ -12,6 +12,7 @@ import { coloringFootballLogos } from './coloring-football-logos';
 import { footballDesignGuide } from './football-design-guide';
 
 export const technicalPosts: BlogPost[] = [
+  clubHistoryPost,
   designPrinciples,
   integrationGuide,
   minimalDesignGuide,

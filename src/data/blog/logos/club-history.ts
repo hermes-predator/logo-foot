@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const clubHistoryPost: BlogPost = {
@@ -120,6 +119,6 @@ Les **foot logo** d'aujourd'hui, avec leur équilibre délicat entre héritage e
 
 Alors que nous contemplons l'avenir des **logos foot**, une chose est certaine : quelle que soit leur forme future, ces symboles continueront de rassembler les générations, de susciter des émotions profondes et d'incarner les valeurs qui font la beauté universelle du football. Les **logos de foot** sont, et resteront, les témoins privilégiés de cette histoire d'amour entre un sport et ses passionnés.`,
   keywords: "logo foot, foot logo, histoire logo foot, écusson foot, design logo football, emblème club foot, évolution logo foot, logos foot, logos de foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'technical',
+  subCategory: 'design'
 };

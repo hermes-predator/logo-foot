@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -94,7 +93,6 @@ export const logoPosts: BlogPost[] = [
   stadeBriochinLogoPost,
   avranchesLogoPost,
   footballLogosHistoryPost,
-  blackburnRoversLogoPost,
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,
@@ -117,4 +115,3 @@ export const logoPosts: BlogPost[] = [
   guangzhouLogoPost,
   bundesligaLogoPost
 ];
-

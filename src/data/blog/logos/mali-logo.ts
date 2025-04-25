@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const maliLogoPost: BlogPost = {
@@ -5,6 +6,10 @@ export const maliLogoPost: BlogPost = {
   title: "Logo Mali : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Mali : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles.",
   date: "2024-05-31",
+  category: 'logos',
+  subCategory: 'national-logos',
+  galleryImageId: 165,
+  keywords: "logo mali, logo du mali, logo mali foot, logo republique du mali, logo mali football, mali foot logo, mali football logo, mali logo",
   content: `# L'Histoire Fascinante du **Logo Mali** Football
 
 Le **logo mali** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en traditions et en émotions. Le **logo du mali** représente l'âme d'un pays où le football est intimement lié à l'identité nationale et à la culture populaire.
@@ -49,9 +54,6 @@ La Fédération Malienne de Football utilise stratégiquement le **logo republiq
 
 Le **logo mali** a su évoluer au fil du temps tout en conservant son essence et sa symbolique forte. Cette capacité d'adaptation tout en préservant une continuité visuelle a permis au **logo mali football** de rester pertinent et de toucher différentes générations de supporters et de joueurs, créant ainsi un héritage visuel durable dans l'histoire du football malien.
 
-Les joueurs qui portent fièrement le maillot orné du **mali football logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football africain et dont le **logo du mali** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo mali, logo du mali, logo mali foot, logo republique du mali, logo mali football, mali foot logo, mali football logo, mali logo",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 165
+Les joueurs qui portent fièrement le maillot orné du **mali football logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football africain et dont le **logo du mali** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`
 };
+

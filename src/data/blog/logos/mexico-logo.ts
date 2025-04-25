@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const mexicoLogoPost: BlogPost = {
@@ -5,6 +6,10 @@ export const mexicoLogoPost: BlogPost = {
   title: "Logo Mexique : Histoire et Évolution de l'Emblème du Football Mexicain [2024]",
   excerpt: "Découvrez l'histoire complète du logo Mexique : des origines à aujourd'hui, évolution et signification de l'emblème de l'équipe nationale mexicaine, symbole du football mexicain.",
   date: "2024-06-01",
+  category: 'logos',
+  subCategory: 'national-logos',
+  galleryImageId: 167,
+  keywords: "logo mexique, logo mexique foot, logo du mexique, logo foot mexique, mexique logo, equipe de foot mexique logo, logo club foot mexique",
   content: `# L'Histoire Fascinante du **Logo Mexique**
 
 Le **logo mexique** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne la passion, la fierté et la riche tradition footballistique d'une nation qui a su s'imposer comme l'une des puissances majeures du football nord-américain. Dans cet article approfondi, nous explorons l'histoire captivante du **mexique logo** et découvrons ce qui fait de ce blason un emblème si spécial pour le peuple mexicain et les amateurs de football du monde entier.
@@ -71,9 +76,6 @@ Le **logo mexique** a parcouru un chemin remarquable, depuis ses premières inca
 
 Pour les générations futures de footballeurs et supporters mexicains, le **logo mexique foot** continuera d'incarner l'excellence, la persévérance et la fierté nationale. Alors que le football mexicain poursuit son développement vers de nouveaux sommets, son emblème distinctif restera le témoin visuel de cette aventure sportive exceptionnelle qui a déjà marqué l'histoire du football mondial.
 
-Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons comme le **logo foot mexique**, l'emblème national du football mexicain a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'une nation nord-américaine à créer un symbole sportif puissant, durable et mondialement reconnu.`,
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 167,
-  keywords: "logo mexique, logo mexique foot, logo du mexique, logo foot mexique, mexique logo, equipe de foot mexique logo, logo club foot mexique"
+Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons comme le **logo foot mexique**, l'emblème national du football mexicain a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'une nation nord-américaine à créer un symbole sportif puissant, durable et mondialement reconnu.`
 };
+

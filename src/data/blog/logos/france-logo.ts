@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const franceLogoPost: BlogPost = {
@@ -6,6 +7,9 @@ export const franceLogoPost: BlogPost = {
   excerpt: "Découvrez l'histoire fascinante du logo de l'Équipe de France de football : origines, évolution et symbolisme de l'emblème des Bleus qui a marqué l'histoire du football mondial.",
   date: "2024-05-31",
   galleryImageId: 88,
+  category: 'logos',
+  subCategory: 'national-logos',
+  keywords: "logo équipe de france, équipe de france logo, logos équipe de france, logo équipe de france foot, logo équipe de france png, équipe de france football logo, équipe de france logo png, logo équipe de france football, nouveau logo équipe de france, équipe de france de football logo, équipe de france foot logo",
   content: `# L'Histoire Fascinante du **Logo Équipe de France**
 
 Le **logo équipe de France** est bien plus qu'un simple emblème sportif. Symbole d'une nation entière, il incarne l'histoire glorieuse et les valeurs profondes d'une sélection qui a marqué le football mondial de son empreinte.
@@ -86,8 +90,6 @@ Des éditions limitées ou des variations temporaires du **équipe de France de 
 
 Le **logo équipe de France** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les valeurs et l'approche unique du football français. À travers son coq fier et ses étoiles de champion, il continue de représenter l'excellence et la passion d'une nation qui a profondément marqué l'histoire du football mondial.
 
-L'évolution mesurée du **équipe de France football logo** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo équipe de France foot** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par le coq gaulois qui continue de se dresser fièrement sur les terrains du monde entier.`,
-  category: 'logos',
-  subCategory: 'national-logos',
-  keywords: "logo équipe de france, équipe de france logo, logos équipe de france, logo équipe de france foot, logo équipe de france png, équipe de france football logo, équipe de france logo png, logo équipe de france football, nouveau logo équipe de france, équipe de france de football logo, équipe de france foot logo"
+L'évolution mesurée du **équipe de France football logo** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo équipe de France foot** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par le coq gaulois qui continue de se dresser fièrement sur les terrains du monde entier.`
 };
+

@@ -1,12 +1,12 @@
 
 #!/bin/bash
 
-# Make the direct update script executable
+# Rendre le script exécutable
 chmod +x scripts/direct-category-update.sh
-echo "Made direct-category-update.sh executable."
+echo "Script direct-category-update.sh rendu exécutable."
 
-# Execute the script directly
-echo "Running direct-category-update.sh..."
+# Exécuter le script
+echo "Mise à jour des catégories de logos..."
 ./scripts/direct-category-update.sh
 
-echo "Direct update completed!"
+echo "Mise à jour terminée !"

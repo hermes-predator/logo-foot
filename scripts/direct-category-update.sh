@@ -1,27 +1,27 @@
 
 #!/bin/bash
 
-echo "Starting direct category update for all logo files..."
+echo "Début de la mise à jour des catégories de logos..."
 
-# Directory for logo files
+# Répertoire des logos
 LOGOS_DIR="src/data/blog/logos"
 
-# Update all files with "logos" category to "club-logos" by default
-find $LOGOS_DIR -name "*.ts" -exec sed -i 's/category: *"logos"/category: "club-logos"/g' {} \;
-
-# National teams list
+# Liste des équipes nationales
 NATIONAL_TEAMS="albania|algeria|australia|austria|belgium|brazil|england|france|germany|italy"
 
-# For country files, update to national-logos
+# Mettre à jour tous les fichiers avec la catégorie "logos" par défaut
+find $LOGOS_DIR -name "*.ts" -exec sed -i '' 's/category: *"logos"/category: "club-logos"/g' {} \;
+
+# Pour les fichiers de pays, mettre à jour en "national-logos"
 find $LOGOS_DIR -type f -name "*-logo.ts" | grep -E "(${NATIONAL_TEAMS})" | while read file; do
-    sed -i 's/category: *"[^"]*"/category: "national-logos"/g' "$file"
-    echo "Updated $(basename "$file") to national-logos"
+    sed -i '' 's/category: *"[^"]*"/category: "national-logos"/g' "$file"
+    echo "Mis à jour $(basename "$file") en national-logos"
 done
 
-# For the ballon d'or file, update to competition-logos
+# Pour le fichier Ballon d'Or, mettre à jour en "competition-logos"
 if [ -f "$LOGOS_DIR/ballon-dor-logo.ts" ]; then
-    sed -i 's/category: *"[^"]*"/category: "competition-logos"/g' "$LOGOS_DIR/ballon-dor-logo.ts"
-    echo "Updated ballon-dor-logo.ts to competition-logos"
+    sed -i '' 's/category: *"[^"]*"/category: "competition-logos"/g' "$LOGOS_DIR/ballon-dor-logo.ts"
+    echo "Mis à jour ballon-dor-logo.ts en competition-logos"
 fi
 
-echo "Direct category update completed!"
+echo "Mise à jour des catégories de logos terminée !"

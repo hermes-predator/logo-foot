@@ -7,3 +7,4 @@ echo "Script update-blog-categories.sh rendu exécutable."
 
 # Exécuter le script
 bash scripts/update-blog-categories.sh
+

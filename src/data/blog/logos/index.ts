@@ -18,7 +18,6 @@ import { spanishClubPosts } from './groups/spanish-clubs';
 import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
 import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
-import { westHamLogoPost } from './west-ham-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -61,7 +60,6 @@ export const logoPosts: BlogPost[] = [
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,
-  westHamLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,

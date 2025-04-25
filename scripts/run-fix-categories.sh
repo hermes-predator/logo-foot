@@ -1,10 +1,10 @@
 
 #!/bin/bash
 
-# Make the fix script executable
-chmod +x scripts/fix-all-categories.sh
+# Make the JS script executable
+chmod +x scripts/fix-categories-script.js
 
 # Run the script
-./scripts/fix-all-categories.sh
+node scripts/fix-categories-script.js
 
-echo "All categories have been fixed!"
+echo "Categories fixed successfully!"

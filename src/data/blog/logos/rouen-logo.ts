@@ -77,6 +77,6 @@ Le FC Rouen continue de développer son identité visuelle :
 
 L'emblème du FC Rouen symbolise parfaitement l'alliance entre tradition normande et modernité, représentant fièrement l'identité d'un club historique du football français.`,
   keywords: "logo rouen, rouen logo, logo fc rouen, fc rouen logo, logo rouen foot, logo de rouen",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "club-logos",
+  galleryImageId: 543
 };

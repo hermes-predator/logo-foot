@@ -1,7 +1,7 @@
 
 import { BlogPost } from '../../../types/blog';
 
-export const avranchesLogoPost: BlogPost = {
+export const avrancheLogoPost: BlogPost = {
   id: 361,
   title: "**Logo US Avranches** : Histoire et Évolution de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo US Avranches**, son symbolisme unique et son évolution à travers les décennies du football français.",
@@ -48,7 +48,7 @@ Le **logo Avranches foot** a connu plusieurs métamorphoses :
 Le **logo Avranches** symbolise plus qu'un club : c'est l'expression d'une communauté, d'une région, d'une passion partagée.
   `,
   keywords: "**logo avranches**:20, **avranches logo**:10, **logo us avranches**:10, **us avranches logo**:10, **avranches foot logo**:10, **avranches logo foot**:10, **avranches logo png**:10, **avranches us logo**:10, **logo avranches png**:10",
-  category: 'club-logos',
-  subCategory: 'french-clubs',
+  category: "club-logos",
+  subCategory: "french-clubs",
   galleryImageId: 361
 };

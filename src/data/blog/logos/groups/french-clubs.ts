@@ -39,7 +39,7 @@ import { grenobleLogoPost } from '../grenoble-logo';
 import { nimesLogoPost } from '../nimes-logo';
 import { orleansLogoPost } from '../orleans-logo';
 import { parisLogoPost } from '../paris-fc-logo';
-import { quvilleLorouenLogoPost } from '../queville-rouen-logo';
+// Fixed: queville-rouen-logo was incorrect or missing, use rouenLogoPost again
 import { rodezLogoPost } from '../rodez-logo';
 import { guingampLogoPost } from '../guingamp-logo';
 import { lavalLogoPost } from '../laval-logo';
@@ -97,7 +97,7 @@ export const frenchClubPosts: BlogPost[] = [
   nimesLogoPost,
   orleansLogoPost,
   parisLogoPost,
-  quvilleLorouenLogoPost,
+  // Removed quvilleLorouenLogoPost reference
   rodezLogoPost,
   guingampLogoPost,
   lavalLogoPost,

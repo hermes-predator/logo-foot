@@ -1,10 +1,10 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const aubagneLogoPost: BlogPost = {
   id: 95,
   title: "**Logo Aubagne** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
-  category: "logos",
   excerpt: "Découvrez l'histoire du **logo Aubagne FC**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo aubagne**.",
   content: `# Guide Complet du **Logo Aubagne**
 
@@ -36,7 +36,7 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo fc aubagne** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club aubagnais.`,
   keywords: "logo aubagne, aubagne logo, logo aubagne fc, aubagne logo png, logo aubagne png, logo fc aubagne",
-  category: 'club-logos',
-  subCategory: 'french-clubs',
+  category: "club-logos",
+  subCategory: "french-clubs",
   galleryImageId: null
 };

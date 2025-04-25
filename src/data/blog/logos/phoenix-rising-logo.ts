@@ -34,7 +34,7 @@ Le logo est bien plus qu'un simple emblème sportif. Il est devenu un symbole d'
 
 Le **logo phoenix rising** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
   keywords: "phoenix rising logo:20, phoenix rising fc logo:10, rising phoenix logo:10, logo phoenix rising fc:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: 'club-logos',
+  subCategory: 'american-clubs',
   galleryImageId: null
 };

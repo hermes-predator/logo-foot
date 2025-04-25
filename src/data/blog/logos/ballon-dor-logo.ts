@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const ballonDorLogoPost: BlogPost = {
@@ -76,6 +77,6 @@ L'identité visuelle du Ballon d'Or s'exprime à travers :
 Le logo du Ballon d'Or est bien plus qu'un simple emblème - c'est le symbole de l'excellence footballistique mondiale, reconnaissable instantanément et porteur d'un héritage exceptionnel.`,
   keywords: "Ballon d'Or logo, logo Ballon d'Or, France Football logo, trophée Ballon d'Or, logo trophée football, design Ballon d'Or",
   category: 'competition-logos',
-  subCategory: 'competition-logos',
+  subCategory: 'awards',
   galleryImageId: 122
 };

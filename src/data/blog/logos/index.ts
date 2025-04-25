@@ -1,5 +1,3 @@
-
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -40,6 +38,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
+import { logoMaillotFootPost } from './logo-maillot-foot';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -82,4 +81,3 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost
 ];
-

@@ -16,6 +16,7 @@ import { footballEmblemsPost } from '../logos/football-emblems';
 import { footballLogosHistoryPost } from '../logos/football-logos-history';
 import { blasonsEquipesFootballPost } from '../logos/blasons-equipes-football';  // New import
 import { ecussonsClubFootEuropeenPost } from '../logos/ecussons-club-foot-europeen';
+import { logoMaillotFootPost } from './logo-maillot-foot';
 
 export const technicalPosts: BlogPost[] = [
   designPrinciples,
@@ -35,4 +36,5 @@ export const technicalPosts: BlogPost[] = [
   footballLogosHistoryPost,
   blasonsEquipesFootballPost,  // Add the new post
   ecussonsClubFootEuropeenPost,
+  logoMaillotFootPost,
 ];

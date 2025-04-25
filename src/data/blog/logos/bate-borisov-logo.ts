@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const bateBorisovLogoPost: BlogPost = {
@@ -51,4 +52,8 @@ Le **logo BATE Borisov PNG** est également très recherché sur internet par le
 
 Le **logo BATE Borisov** est bien plus qu'un simple dessin : c'est un symbole qui incarne l'histoire, les valeurs et les ambitions d'un club qui a su se hisser au sommet du football biélorusse et se faire connaître en Europe.
 
-À travers ses couleurs, ses formes et ses symboles, le **logo BATE** raconte l'histoire d'une équipe fière de ses racines, déterminée à réussir et toujours prête à relever de nouveaux défis.
+À travers ses couleurs, ses formes et ses symboles, le **logo BATE** raconte l'histoire d'une équipe fière de ses racines, déterminée à réussir et toujours prête à relever de nouveaux défis.`,
+  keywords: "logo bate borisov, bate borisov logo, logo bate, bate logo, borisov logo, logo football biélorusse",
+  category: 'club-logos',
+  subCategory: 'non-european-clubs'
+};

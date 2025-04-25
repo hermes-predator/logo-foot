@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const israelLogoPost: BlogPost = {
@@ -92,6 +91,6 @@ Le **logo Israël** représente bien plus qu'une simple marque visuelle pour une
 
 Alors que l'équipe nationale d'Israël continue de participer aux compétitions internationales, son **logo israel foot** reste un symbole de fierté nationale et d'aspiration sportive, facilement reconnaissable sur les terrains du monde entier.`,
   keywords: "logo Israël, israel logo, logo of israel, logo israel foot, israel football logo, logo israel png, israel logo foot, foot israel logo, israel equipe de foot logos, emblème Israël, football israélien, sélection Israël",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

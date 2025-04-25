@@ -46,6 +46,5 @@ Au-delà de sa dimension sportive, le **logo hongrie** est devenu un puissant sy
 Les joueurs qui portent fièrement le maillot orné du **logo hongrie de foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **hongrie foot logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo hongrie, hongrie logo, hongrie foot logo, hongrie logo foot, logo foot hongrie, logo hongrie foot, logo d'hongrie, logo hongrie de foot",
   category: 'national-logos',
-  subCategory: 'national-logos',
-  galleryImageId: 159
+  subCategory: 'national-logos'
 };

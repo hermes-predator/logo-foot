@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const dflSupercupLogoPost: BlogPost = {
@@ -57,6 +56,6 @@ Les campagnes marketing futures continueront probablement d'utiliser le **logo d
 
 Dans ce contexte d'expansion et de modernisation, le **dfl supercup logo png** restera un symbole fort de l'identité footballistique allemande, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui continue de gagner en prestige et en attractivité sur la scène mondiale du football.`,
   keywords: "dfl supercup logo, dfl supercup logo png, logo dfl supercup, supercoupe allemagne logo, bundesliga supercup emblème, football allemand logo, dfl logo, supercup allemagne design, emblème supercoupe allemande",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

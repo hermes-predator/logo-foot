@@ -74,7 +74,7 @@ Le **logo usm alger** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "**logo usm alger**:20, **usm alger logo**:20, **logo de l'usm alger**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: 'club-logos',
+  subCategory: 'african-clubs',
   galleryImageId: 571
 };

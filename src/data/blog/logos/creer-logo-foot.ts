@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const creerLogoFootPost: BlogPost = {
@@ -138,6 +137,6 @@ Avec les ressources gratuites disponibles aujourd'hui, chacun peut **créer un l
 
 Alors, prêt à **crée un logo de foot** qui marquera l'histoire de votre équipe et restera dans les mémoires des supporters ?`,
   keywords: "créer un logo de foot, comment créer un logo de foot, créer un logo club de foot, créer un logo club de foot gratuit, créer un logo de club de foot, créer un logo de foot gratuit, créer un logo pour un club de foot gratuit, comment crée un logo de foot, crée un logo de foot, crée un logo equipe de foot, créer un logo d'un club de foot",
-  category: 'logos',
+  category: 'technical',
   subCategory: 'design'
 };

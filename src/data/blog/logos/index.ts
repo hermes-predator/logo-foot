@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -33,7 +34,7 @@ import { rouenLogoPost } from './rouen-logo';
 import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
 import { avranchesLogoPost } from './avranches-logo';
-import { footballLogosHistoryPost } from './football-logos-history';
+// Suppression de l'import de footballLogosHistoryPost ici
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
 import { tigresUanlLogoPost } from './tigres-uanl-logo';
@@ -91,7 +92,7 @@ export const logoPosts: BlogPost[] = [
   usBoulogneLogoPost,
   stadeBriochinLogoPost,
   avranchesLogoPost,
-  footballLogosHistoryPost,
+  // Suppression de footballLogosHistoryPost ici
   boltonWanderersLogoPost,
   tigresUanlLogoPost,
   louisvilleCityLogoPost,

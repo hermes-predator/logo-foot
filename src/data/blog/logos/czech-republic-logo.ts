@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const czechRepublicLogoPost: BlogPost = {
@@ -6,6 +5,8 @@ export const czechRepublicLogoPost: BlogPost = {
   title: "Logo République Tchèque : Histoire et Symbolisme de l'Emblème du Football Tchèque",
   excerpt: "Découvrez l'histoire fascinante du logo de la République Tchèque : origines, évolution et symbolisme de cet emblème unique du football européen. Analyse complète du logo de la fédération tchèque.",
   date: "2024-05-14",
+  category: 'national-logos',
+  subCategory: 'national-logos',
   content: `# **Logo République Tchèque** : L'Histoire de l'Emblème du Football Tchèque
 
 ![**Logo République Tchèque**](https://logo-foot.com/blog-images/512.png)
@@ -121,7 +122,5 @@ Le **logo république tchèque** est bien plus qu'un simple emblème sportif - c
 Le **foot logo république tchèque** continuera sans doute d'évoluer, mais sa capacité à incarner simultanément l'héritage historique et les aspirations futures de la nation tchèque restera au cœur de sa force symbolique.
 
 Pour les supporters et les joueurs, le **logo république tchèque foot** représente non seulement une équipe de football, mais l'âme même d'un pays dont la passion pour ce sport traverse les générations.`,
-  keywords: "logo république tchèque, logo république tchèque foot, foot logo république tchèque, logo de foot de république tchèque, république tchèque logo foot",
-  category: 'logos',
-  subCategory: 'national-logos'
+  keywords: "logo république tchèque, logo république tchèque foot, foot logo république tchèque, logo de foot de république tchèque, république tchèque logo foot"
 };

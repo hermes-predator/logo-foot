@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const esperanceTunisLogoPost: BlogPost = {
@@ -47,7 +46,6 @@ Le design actuel du **logo Espérance Sportive de Tunis** combine :
 
 Le **logo Espérance de Tunis PNG** est plus qu'un simple emblème - c'est un symbole d'excellence et de tradition qui continue d'inspirer les générations de supporters tunisiens et africains.`,
   keywords: "esperance de tunis logo, esperance sportive de tunis logo, esperance sportive de tunis logo png, logo esperance de tunis, logo esperance sportive de tunis, logo espérance sportive de tunis, esperance de tunis logo png, espérance sportive de tunis logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 431
+  category: 'club-logos',
+  subCategory: 'african-clubs'
 };

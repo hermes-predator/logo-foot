@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const algeriaLogoPost: BlogPost = {
@@ -121,7 +120,7 @@ L'importance croissante des plateformes digitales pourrait conduire à de nouvel
 
 ### Rayonnement International
 
-Les succès futurs de la sélection nationale sur la scène internationale contribueront certainement à accroître encore la reconnaissance mondiale du **logo algérie foot**, consolidant son statut parmi les emblèmes footballistiques les plus emblématiques du continent africain.
+Les succès futurs de la sélection nationale sur la scène internationale contribueront certainement à accroître encore la reconnaissance mondiale du **logo algerie foot**, consolidant son statut parmi les emblèmes footballistiques les plus emblématiques du continent africain.
 
 ## Conclusion
 
@@ -131,6 +130,6 @@ L'évolution mesurée de ce **algerie logo foot** au fil des décennies illustre
 
 Dans un monde du football où l'identité nationale reste fondamentale malgré la mondialisation, le **logo algerie football** rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde, des stades algériens aux communautés de la diaspora.`,
   keywords: "logo algerie, algerie logo, logo algerie foot, logo algerie football, algerie foot logo, fennec algerie logo, logo algérie, algerie logo foot, logo foot algerie, logo de l'algérie, logo algerie foot png, algerie foot logo png, algerie logo png, algérie foot logo, algérie logo, algérie logo foot, le logo de l'algérie, logo algérie png, logo d'algérie",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

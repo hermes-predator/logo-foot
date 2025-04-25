@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const mlsLogoPost: BlogPost = {
@@ -79,7 +78,7 @@ L'avenir des logos MLS s'oriente vers plus d'innovation :
 
 La MLS continue de repousser les limites du design sportif, combinant héritage américain et influence internationale dans une identité visuelle en constante évolution.`,
   keywords: "logo mls, logo mls soccer, mls football logos, mls logo, major league soccer logo, football américain logo, soccer usa logo, logo club mls",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: 'competition-logos',
+  subCategory: 'competition-logos',
   galleryImageId: 39  // Adding gallery image reference for better visual presentation
 };

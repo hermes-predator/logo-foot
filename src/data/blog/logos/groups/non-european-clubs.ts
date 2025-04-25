@@ -8,7 +8,8 @@ import { africanClubsPost } from '../african-clubs';
 import { asianClubsPost } from '../asian-clubs';
 import { brazilianClubsPost } from '../brazilian-clubs';
 import { southAmericanClubsPost } from '../south-american-clubs';
-import { mlsLogoPost } from '../mls-logos';
+// Removing mlsLogoPost import as it's already in competitions group
+// import { mlsLogoPost } from '../mls-logos';
 import { alNassrLogoPost } from '../al-nassr-logo';
 import { alHilalLogoPost } from '../al-hilal-logo';
 import { alAhliLogoPost } from '../al-ahli-logo';
@@ -60,7 +61,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   losAngelesGalaxyLogoPost,
   africanClubsPost,
   asianClubsPost,
-  mlsLogoPost,
+  // Remove mlsLogoPost from here as it's already in competitions category
   portlandTimbersLogoPost,
   minnesotaUnitedLogoPost,
   newYorkRedBullsLogoPost,

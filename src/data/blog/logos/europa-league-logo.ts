@@ -92,6 +92,6 @@ Le **logo europa league**, par sa conception soignée et son évolution réfléc
 
 La présence du **logo uefa europa league png** continuera d'illuminer les soirées européennes, accompagnant les moments d'émotion et d'excellence que nous offre cette compétition devenue incontournable dans le paysage footballistique mondial. Et lorsque le **europa league logo 2025** sera éventuellement dévoilé, il portera sans doute l'héritage de cette identité visuelle qui a su capturer l'essence d'une compétition européenne prestigieuse.`,
   keywords: "logo europa league, europa league logo, logo uefa europa league, uel logo, europa league emblem, logo ligue europa, europa league logo 2025, logo europa league png, europa league logo png, logo de la europa league, logo png europa league, logo uefa europa league png",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

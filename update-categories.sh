@@ -10,14 +10,21 @@ update_club_logo_files() {
       continue
     fi
     
-    # Skip national team logo files that are handled separately
+    # Skip national team and competition logo files that are handled separately
     if [[ $file == *"albania-logo.ts" || $file == *"algeria-logo.ts" || $file == *"switzerland-logo.ts" || $file == *"dinamo-tbilisi-logo.ts" || $file == *"australia-logo.ts" || $file == *"austria-logo.ts" ]]; then
       sed -i 's/category: "logos"/category: "national-logos"/g' $file
       echo "Updated $file to national-logos"
       continue
     fi
+
+    # Skip competition logo files
+    if grep -q 'category: "logos"' "$file" && (grep -q "champions league" "$file" || grep -q "europa league" "$file" || grep -q "coupe" "$file" || grep -q "trophy" "$file" || grep -q "competition" "$file"); then
+      sed -i 's/category: "logos"/category: "competition-logos"/g' $file
+      echo "Updated $file to competition-logos"
+      continue
+    fi
     
-    # Update category from "logos" to "club-logos"
+    # Update remaining files to club-logos
     if grep -q 'category: "logos"' $file; then
       sed -i 's/category: "logos"/category: "club-logos"/g' $file
       echo "Updated $file to club-logos"
@@ -29,7 +36,7 @@ update_club_logo_files() {
 update_analysis_files() {
   echo "Updating analysis files..."
   find src/data/blog/analysis -type f -name "*.ts" | while read file; do
-    # Update category from "logos" to "club-logos"
+    # Update category from "logos" to appropriate category
     if grep -q 'category: "logos"' $file; then
       sed -i 's/category: "logos"/category: "club-logos"/g' $file
       echo "Updated $file to club-logos"

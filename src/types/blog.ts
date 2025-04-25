@@ -1,3 +1,4 @@
+
 import { BlogPost } from './blog';
 
 export interface BlogPost {
@@ -26,15 +27,19 @@ export const BLOG_CATEGORIES = {
     name: 'Logos de Nations',
     description: 'Explorez les emblèmes des équipes nationales de football et leur symbolisme.'
   },
-  players: {
+  'competition-logos': {
+    name: 'Logos de Compétitions',
+    description: 'Découvrez les logos des plus grandes compétitions de football : Champions League, Europa League, coupes nationales et internationales.'
+  },
+  'players': {
     name: 'Joueurs',
     description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
   },
-  legacy: {
+  'legacy': {
     name: 'Histoire du football',
     description: 'Articles historiques sur les logos et compétitions emblématiques du football à travers les époques.'
   },
-  technical: {
+  'technical': {
     name: 'Techniques',
     description: 'Guides et astuces pour comprendre et maîtriser les techniques de design de logos de football.'
   },
@@ -43,3 +48,4 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
+

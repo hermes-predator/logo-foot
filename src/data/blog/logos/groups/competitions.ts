@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -50,7 +51,7 @@ export const competitionPosts: BlogPost[] = [
   chineseSuperLeagueLogoPost,
   eredivisieLogoPost,
   championshipLogoPost,
-  eflLeagueOneLogoPost, // Ajout de l'article ici
+  eflLeagueOneLogoPost,
   mlsLogoPost,
   nationsLeagueLogoPost,
   saudiProLeagueLogoPost,
@@ -63,7 +64,5 @@ export const competitionPosts: BlogPost[] = [
   ligaMxLogoPost,
   dflSupercupLogoPost,
   communityShieldLogoPost,
-  tacaDePortugalLogoPost,
-  bundesligaLogoPost,
-  jupilerProLeagueLogoPost,
+  tacaDePortugalLogoPost
 ];

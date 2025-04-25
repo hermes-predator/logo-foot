@@ -4,92 +4,102 @@
 const fs = require('fs');
 const path = require('path');
 
-// Path to logos directory
+// Directory containing logo files
 const logosDir = path.join(__dirname, '../src/data/blog/logos');
 
-// Function to update a single file's category
+// Function to determine the appropriate category
+function determineCategory(content, filePath) {
+  const fileName = path.basename(filePath);
+  
+  // National teams - check for national identifiers
+  if (
+    content.includes('équipe nationale') || 
+    content.includes('national team') || 
+    content.includes('sélection') || 
+    content.includes('drapeau national') || 
+    content.includes('seleccion') || 
+    /\b(russia|spain|poland|france|germany|austria|australia|argentina|brazil|england|italy|morocco|senegal|tunisia|cameroon|algeria)\b/i.test(fileName) ||
+    fileName.includes('flag')
+  ) {
+    return 'national-logos';
+  }
+  
+  // Competition logos
+  if (
+    content.includes('champion league') || 
+    content.includes('europa league') || 
+    content.includes('coupe') || 
+    content.includes('cup') || 
+    content.includes('championnat') || 
+    content.includes('league') || 
+    content.includes('trophy') || 
+    content.includes('trophée') || 
+    content.includes('ballon d\'or') || 
+    content.includes('competition') || 
+    content.includes('copa') || 
+    content.includes('bundesliga') || 
+    content.includes('ligue') || 
+    content.includes('primera') || 
+    content.includes('serie') || 
+    content.includes('uefa') || 
+    content.includes('mundial') || 
+    content.includes('championship') || 
+    content.includes('world cup') || 
+    content.includes('premier league')
+  ) {
+    return 'competition-logos';
+  }
+  
+  // By default, consider it a club logo
+  return 'club-logos';
+}
+
+// Function to update a file's category
 function updateFileCategory(filePath) {
   try {
-    const content = fs.readFileSync(filePath, 'utf8');
+    let content = fs.readFileSync(filePath, 'utf8');
     
-    // Skip if file doesn't have "logos" category or is already updated
-    if (!content.includes('category: "logos"') && !content.includes("category: 'logos'")) {
-      return false;
+    // Skip files that don't have the old category
+    if (!content.includes('category: "logos"')) {
+      return;
     }
     
-    let updatedContent = content;
+    const newCategory = determineCategory(content, filePath);
     
-    // Check for national team logos
-    if (content.match(/national team|équipe nationale|national logo|selection|équipe de france|albanie|algérie|allemagne|angleterre|argentine|australie|autriche|belgique|brésil|cameroun|canada|chili|colombie|croatie|danemark|équateur|espagne|états-unis|france|ghana|iran|italie|japon|maroc|pays-bas|pologne|portugal|qatar|sénégal|serbie|suisse|tunisie|turquie|uruguay|usa|pays de galles/i)) {
-      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "national-logos"');
-      
-      // Also update subCategory if it's "logos"
-      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
-        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "national-logos"');
-      }
-    }
-    // Check for competition logos
-    else if (content.match(/champions league|europa league|coupe|trophy|competition|championnat|league|copa|bundesliga|primera|serie|eredivisie|premier league|ligue|ballon d.or|world cup|euro|can|copa|nations league/i)) {
-      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "competition-logos"');
-      
-      // Also update subCategory if it's "logos"
-      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
-        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "competition-logos"');
-      }
-    }
-    // Default case: club logos
-    else {
-      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "club-logos"');
-      
-      // Also update subCategory if it's "logos"
-      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
-        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "club-logos"');
-      }
-    }
+    // Replace the category
+    const updatedContent = content.replace(/category: *"logos"/g, `category: "${newCategory}"`);
+    
+    // Update subCategory if it exists and matches the old category
+    const finalContent = updatedContent.replace(/subCategory: *"logos"/g, `subCategory: "${newCategory}"`);
     
     // Write the updated content back to the file
-    if (updatedContent !== content) {
-      fs.writeFileSync(filePath, updatedContent, 'utf8');
-      return true;
-    }
-    
-    return false;
+    fs.writeFileSync(filePath, finalContent);
+    console.log(`Updated ${path.basename(filePath)} to ${newCategory}`);
   } catch (error) {
-    console.error(`Error updating file ${filePath}:`, error);
-    return false;
+    console.error(`Error processing ${filePath}:`, error.message);
   }
 }
 
-// Function to recursively process all files in a directory
+// Process all .ts files in the logos directory
 function processDirectory(dir) {
-  const files = fs.readdirSync(dir);
-  let updatedCount = 0;
+  const items = fs.readdirSync(dir);
   
-  for (const file of files) {
-    const filePath = path.join(dir, file);
-    const stats = fs.statSync(filePath);
+  for (const item of items) {
+    const itemPath = path.join(dir, item);
+    const stats = fs.statSync(itemPath);
     
     if (stats.isDirectory()) {
-      // Skip the groups directory to prevent conflicts
-      if (file !== 'groups') {
-        updatedCount += processDirectory(filePath);
+      // Skip the groups directory as needed
+      if (item !== 'groups') {
+        processDirectory(itemPath);
       }
-    } else if (file.endsWith('.ts')) {
-      if (updateFileCategory(filePath)) {
-        console.log(`Updated ${filePath}`);
-        updatedCount++;
-      }
+    } else if (item.endsWith('.ts')) {
+      updateFileCategory(itemPath);
     }
   }
-  
-  return updatedCount;
 }
 
-// Main function to execute the script
-function main() {
-  console.log('Starting category update process...');
-  const updatedCount = processDirectory(logosDir);
-  console.log(`Successfully updated ${updatedCount} files.`);
-}
-
-main();
+// Start processing
+console.log("Starting category fix for all logo files...");
+processDirectory(logosDir);
+console.log("Category fix completed!");

@@ -61,6 +61,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
+import { bundesligaLogoPost } from './bundesliga-brand';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,

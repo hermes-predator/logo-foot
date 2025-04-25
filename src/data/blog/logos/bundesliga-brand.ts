@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const bundesligaLogoPost: BlogPost = {
@@ -59,6 +58,6 @@ Que ce soit dans sa version imprimée sur les produits officiels, sa déclinaiso
 
 À mesure que la Bundesliga poursuit son développement international, son logo demeure un atout stratégique majeur, un symbole instantanément reconnaissable qui transcende les barrières linguistiques et culturelles pour unir des millions de passionnés autour d'une même passion : le football allemand dans toute sa splendeur.`,
   keywords: "logo bundesliga, bundesliga logo, bundesliga logo png, logos bundesliga, bundesliga logo club, bundesliga logo evolution, logo bundesliga club, logo bundesliga png, logo de bundesliga, logo de la bundesliga",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

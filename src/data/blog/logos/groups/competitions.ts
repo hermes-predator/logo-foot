@@ -31,6 +31,7 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
+import { bundesligaLogoPost } from '../bundesliga-brand';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -64,5 +65,5 @@ export const competitionPosts: BlogPost[] = [
   dflSupercupLogoPost,
   communityShieldLogoPost,
   tacaDePortugalLogoPost,
-  bundesligaLogoPost, // Ajout explicite du logo Bundesliga
+  bundesligaLogoPost,
 ];

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const italyLogoPost: BlogPost = {
@@ -6,6 +5,8 @@ export const italyLogoPost: BlogPost = {
   title: "Logo Italie : Histoire et Évolution de l'Emblème Azzurri [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Italie, son évolution au fil du temps et la signification des symboles qui représentent l'une des sélections les plus titrées du football mondial.",
   date: "2024-05-14",
+  category: 'national-logos',
+  subCategory: 'national-logos', 
   galleryImageId: 87,
   content: `# Logo Italie : L'Histoire de l'Emblème des Azzurri
 
@@ -131,6 +132,4 @@ L'évolution mesurée de cet emblème au fil des décennies illustre parfaitemen
 
 Dans un monde du football où l'identité nationale est parfois diluée face à la mondialisation, l'emblème italien rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde.`,
   keywords: "logo italie, italie logo, logo italie foot, logo foot italie, italie foot logo, italie logo foot, logo clubf foot italie, logo football italie, logo italie png, logo de italie, logo de l'italie, logo equipe d'italie, logo equipe de foot italie, logo equipe foot italie, logo equipe italie, azzurri logo, figc logo, squadra azzurra emblème",
-  category: 'logos',
-  subCategory: 'national-logos'
 };

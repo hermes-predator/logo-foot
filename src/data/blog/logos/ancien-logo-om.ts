@@ -80,4 +80,3 @@ L'**ancien logo om** demeure un témoin précieux de l'histoire du club, incarna
   category: "club-logos",
   subCategory: "french-clubs"
 };
-

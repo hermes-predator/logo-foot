@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const ghanaLogoPost: BlogPost = {
@@ -6,6 +5,9 @@ export const ghanaLogoPost: BlogPost = {
   title: "Logo Ghana : Histoire et Symbolisme de l'Emblème du Football Ghanéen [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Ghana : origines, évolution et signification de l'emblème qui représente la fierté du football ghanéen.",
   date: "2024-04-15",
+  category: 'national-logos',
+  subCategory: 'national-logos',
+  galleryImageId: 58,
   content: `# L'Histoire Fascinante du Logo Ghana de Football
 
 Le **logo ghana** représente bien plus qu'un simple emblème sportif : il incarne l'identité, l'histoire et la passion d'une nation pour le football. Plongeons dans l'univers captivant de ce **ghana logo** qui symbolise la fierté d'un peuple et son amour pour le ballon rond.
@@ -46,9 +48,7 @@ Au fil des générations, le **logo ghana** a su évoluer tout en conservant son
 
 Les jeunes joueurs qui rêvent de porter le maillot national s'identifient à ce **ghana national team logo** bien avant leurs débuts professionnels. Pour eux comme pour les vétérans du football ghanéen, cet emblème incarne l'essence même de leur passion pour le jeu et leur fierté nationale.
 
-Alors que le football ghanéen continue d'écrire son histoire sur la scène internationale, le **ghana logo foot** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les futures versions du **logo foot ghana** qui se succéderont, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football ghanéen.`,
+Alors que le football ghanéen continue d'écrire son histoire sur la scène internationale, le **ghana logo foot** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les futures versions du **logo foot ghana** qui se succéderont, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football ghanéen.`
+  ,
   keywords: "ghana football association logo, ghana football logo, ghana logo, logo foot ghana, logo ghana, logo ghana foot, ghana logo png, equipe foot ghana logo, ghana football federation logo, ghana logo foot, ghana national team logo",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 58
 };

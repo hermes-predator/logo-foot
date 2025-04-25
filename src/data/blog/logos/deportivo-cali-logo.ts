@@ -41,8 +41,7 @@ Le **logo Deportivo Cali** est devenu un symbole reconnaissable bien au-delà de
 
 Plus qu'un simple logo, le **logo Deportivo Cali** est un véritable récit visuel. Il capture l'essence d'un club qui a traversé l'histoire, défiant les obstacles et inspirant des générations de supporters.`,
   keywords: "logo deportivo cali, deportivo cali logo, logo png deportivo cali",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 427
 };
-

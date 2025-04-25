@@ -77,7 +77,7 @@ Le **logo foot Levski Sofia** continue d'influencer :
 
 Le **Levski Sofia logo** demeure un symbole puissant du football bulgare, conjuguant histoire et modernité dans son expression visuelle.`,
   keywords: "levski sofia logo, logo levski sofia, levski sofia logo png, logo foot levski sofia",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9326
 };

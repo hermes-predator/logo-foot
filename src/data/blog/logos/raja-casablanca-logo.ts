@@ -50,7 +50,7 @@ Le design actuel du **logo Raja de Casablanca** combine :
 
 Le **logo Raja Casablanca PNG** transcende le simple emblème sportif - c'est un symbole d'identité, de passion et d'histoire qui continue d'inspirer des générations de supporters.`,
   keywords: "logo de raja casablanca, logo raja casablanca, logo raja casablanca png, raja casablanca logo, raja casablanca logo png, logo du raja de casablanca, logo raja de casablanca",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 432
 };

@@ -74,7 +74,7 @@ Le **logo sivasspor** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "logo sivasspor, sivasspor logo, sivasspor logo png",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 568
 };

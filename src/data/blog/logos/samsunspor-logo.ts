@@ -70,7 +70,7 @@ Le **samsunspor logo** continue d'évoluer :
 - Respect des traditions
 - Vision d'avenir`,
   keywords: "logo samsunspor, samsunspor logo, logo samsunspor png, football turc, super lig, emblème club turc",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 572
 };

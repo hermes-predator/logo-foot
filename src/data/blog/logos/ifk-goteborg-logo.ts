@@ -49,7 +49,7 @@ Le **Göteborg logo** d'aujourd'hui combine habilement :
 ## Conclusion
 
 Le **logo Göteborg AIS** transcende son rôle d'emblème sportif pour devenir un véritable symbole culturel. Il continue d'inspirer les générations de supporters et représente l'essence même du football suédois.`,
-  category: "logos",
+  category: "club-logos",
   keywords: "göteborg logo, ifk göteborg logo, logo ifk göteborg, logo göteborg ais, football suédois, emblème göteborg, club suédois",
   subCategory: "other-european-clubs"
 };

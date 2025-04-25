@@ -74,7 +74,7 @@ Le **logo png dinamo minsk** s'utilise sur différents supports :
 - Adaptabilité aux supports
 - Protection de la marque`,
   keywords: "logo dinamo minsk, logo png dinamo minsk",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 563
 };

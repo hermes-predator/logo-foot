@@ -74,7 +74,7 @@ Le **logo foot CSKA Moscou** s'adapte à de nombreux supports :
 - Utilisations officielles
 - Versions autorisées`,
   keywords: "logo cska moscou, cska moscou logo, logo club foot cska moscou, logo cska moscou png, logo de foot cska moscou, logo foot cska moscou",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 559
 };

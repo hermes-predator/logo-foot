@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const usaLogoPost: BlogPost = {
@@ -66,7 +65,7 @@ Pour les générations futures de footballeurs et supporters américains, le **l
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo usa png**, l'emblème national du football américain a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, rappelant que la nation américaine peut conjuguer parfaitement respect des traditions et innovation visuelle pour créer un symbole sportif puissant et durable.`,
   keywords: "logo usa, usa logo, logo team usa, team usa logo, logo foot usa, logo football usa, logo usa png, logo des etats unis, logo etats unis, logo etats unis foot",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 165
 };

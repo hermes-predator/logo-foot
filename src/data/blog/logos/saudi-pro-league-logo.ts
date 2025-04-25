@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const saudiProLeagueLogoPost: BlogPost = {
@@ -119,6 +118,6 @@ Alors que la ligue continue d'attirer des talents mondiaux et d'accroître sa vi
 
 L'histoire du **logo Saudi Pro League** n'est certainement qu'à ses débuts, et ses prochaines évolutions reflèteront sans doute le parcours passionnant de cette compétition qui aspire à se hisser parmi les grandes ligues mondiales du football.`,
   keywords: "logo saudi pro league, saudi pro league logo, saudi pro league logo png, saudi pro league team logos, championnat saoudien, football saoudien, roshn saudi league, emblème football, design logo football",
-  category: 'logos',
-  subCategory: 'competitions'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

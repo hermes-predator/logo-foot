@@ -1,75 +1,56 @@
 
-import { BlogPost } from '../../../../types/blog';
+import { bundesligaLogoPost } from '../bundesliga-logo';
 import { championsLeagueLogoPost } from '../champions-league-logo';
+import { coupeDeFranceLogoPost } from '../coupe-de-france-logo';
+import { coupeDeLaLigueLogoPost } from '../coupe-de-la-ligue-logo';
+import { coupeDuMondeLogoPost } from '../coupe-du-monde-logo';
+import { copaAmericaLogoPost } from '../copa-america-logo';
+import { championship2022LogoPost } from '../championship-2022-logo';
+import { eredivisieLogoPost } from '../eredivisie-logo';
+import { euro2020LogoPost } from '../euro-2020-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
+import { faCupLogoPost } from '../fa-cup-logo';
+import { jupilerProLeagueLogoPost } from '../jupiler-pro-league-logo';
+import { knvbBekerLogoPost } from '../knvb-beker-logo';
+import { laLigaLogoPost } from '../la-liga-logo';
 import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
-import { premierLeagueLogoPost } from '../premier-league-design';
-import { faCupLogoPost } from '../fa-cup-logo';
-import { bundesligaLogoPost } from '../bundesliga-brand';
-import { copaDelReyLogoPost } from '../copa-del-rey-logo';
-import { worldCupLogoPost } from '../world-cup-logo';
-import { serieALogoPost } from '../serie-a-logo';
-import { laLigaLogoPost } from '../la-liga-logo';
-import { coppaItaliaLogoPost } from '../coppa-italia-logo';
-import { d1ArkemaLogoPost } from '../d1-arkema-logo';
-import { tropheeDesChampionsLogoPost } from '../trophee-des-champions-logo';
-import { canLogoPost } from '../can-logo';
-import { chineseSuperLeagueLogoPost } from '../chinese-super-league-logo';
-import { eredivisieLogoPost } from '../eredivisie-logo';
-import { championshipLogoPost } from '../championship-logo';
-import { mlsLogoPost } from '../mls-logos';
+import { ligueDesNationsLogoPost } from '../ligue-des-nations-logo';
+import { ligueConferenceLogoPost } from '../ligue-conference-logo';
+import { mundialClub2022LogoPost } from '../mundial-club-2022-logo';
 import { nationsLeagueLogoPost } from '../nations-league-logo';
-import { saudiProLeagueLogoPost } from '../saudi-pro-league-logo';
-import { primeiraLigaPost } from '../primeira-liga-championship';
-import { supercopaDeEspanaLogoPost } from '../supercopa-de-espana-logo';
-import { dfbPokalLogoPost } from '../dfb-pokal-logo';
-import { eflLeagueOneLogoPost } from '../efl-league-one-logo';
-import { knvbBekerLogoPost } from '../knvb-beker-logo';
-import { eersteDivisieLogoPost } from '../eerste-divisie-logo';
-import { jupilerProLeagueLogoPost } from '../jupiler-pro-league-logo';
-import { ligaMxLogoPost } from '../liga-mx-logo';
-import { dflSupercupLogoPost } from '../dfl-supercup-logo';
-import { communityShieldLogoPost } from '../community-shield-logo';
-import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
-import { ballonDorLogoPost } from '../ballon-dor-logo';
+import { mlsLogosPost } from '../mls-logos';
+import { premierLeagueLogoPost } from '../premier-league-logo';
+import { serieALogoPost } from '../serie-a-logo';
+import { superligaDanoisLogoPost } from '../superliga-danois-logo';
+import { tropheeDesChampionsLogoPost } from '../trophee-des-champions-logo';
+import { worldCup2022LogoPost } from '../world-cup-2022-logo';
 
-export const competitionPosts: BlogPost[] = [
+export const competitionLogos = [
+  bundesligaLogoPost,
   championsLeagueLogoPost,
+  coupeDeFranceLogoPost,
+  coupeDeLaLigueLogoPost,
+  coupeDuMondeLogoPost,
+  copaAmericaLogoPost,
+  championship2022LogoPost,
+  eredivisieLogoPost,
+  euro2020LogoPost,
   europaLeagueLogoPost,
+  faCupLogoPost,
+  jupilerProLeagueLogoPost,
+  knvbBekerLogoPost,
+  laLigaLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
-  premierLeagueLogoPost,
-  faCupLogoPost,
-  bundesligaLogoPost,
-  copaDelReyLogoPost,
-  worldCupLogoPost,
-  serieALogoPost,
-  laLigaLogoPost,
-  coppaItaliaLogoPost,
-  d1ArkemaLogoPost,
-  tropheeDesChampionsLogoPost,
-  canLogoPost,
-  chineseSuperLeagueLogoPost,
-  eredivisieLogoPost,
-  championshipLogoPost,
-  mlsLogoPost,
+  ligueDesNationsLogoPost,
+  ligueConferenceLogoPost,
+  mundialClub2022LogoPost,
   nationsLeagueLogoPost,
-  saudiProLeagueLogoPost,
-  primeiraLigaPost,
-  supercopaDeEspanaLogoPost,
-  dfbPokalLogoPost,
-  eflLeagueOneLogoPost,
-  knvbBekerLogoPost,
-  eersteDivisieLogoPost,
-  jupilerProLeagueLogoPost,
-  ligaMxLogoPost,
-  dflSupercupLogoPost,
-  communityShieldLogoPost,
-  tacaDePortugalLogoPost,
-  ballonDorLogoPost
-].map(post => ({
-  ...post,
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
-}));
+  mlsLogosPost,
+  premierLeagueLogoPost,
+  serieALogoPost,
+  superligaDanoisLogoPost,
+  tropheeDesChampionsLogoPost,
+  worldCup2022LogoPost
+];

@@ -6,7 +6,7 @@ export const munich1860LogoPost: BlogPost = {
   title: "**Logo Munich 1860** : Histoire et Évolution [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo TSV Munich 1860**, un des clubs les plus anciens d'Allemagne. Plongez dans l'évolution de cet emblème historique du football allemand.",
   date: "2024-04-21",
-  category: "logos",
+  category: "club-logos",
   content: `# Histoire du **Logo Munich 1860**
 
 Le **1860 Munich logo** est l'un des emblèmes les plus historiques du football allemand. Fondé en 1860, le club arbore fièrement un design qui reflète plus de 160 ans d'histoire et de tradition.
@@ -47,6 +47,6 @@ Le **logo TSV Munich 1860** continue d'inspirer. Il influence le design sportif 
 
 Le **Munich 1860 logo png** reste un symbole fort du football allemand, alliant tradition bavaroise et modernité dans son expression visuelle.`,
   keywords: "logo munich 1860, 1860 munich logo, 1860 munich logo foot, logo png munich 1860, logo tsv munich 1860, munich 1860 logo png, football allemand, bundesliga, tradition bavaroise",
-  subCategory: "club-logos",
+  subCategory: "german-clubs",
   galleryImageId: 468
 };

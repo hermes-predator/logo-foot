@@ -69,6 +69,6 @@ Le design actuel reflète :
 Le **KV Mechelen logo** reste un symbole fort du football belge, alliant histoire et modernité dans son expression visuelle.`,
   keywords: "logo mechelen, kv mechelen logo, logo mechelen png, mechelen logo png",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'other-european-clubs',
   galleryImageId: 9332
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const tropheeDesChampionsLogoPost: BlogPost = {
@@ -69,6 +68,6 @@ Les futures itérations du **logo du Trophée des Champions** conserveront certa
 
 Le **logo Trophée des Champions PNG** restera ainsi un symbole fort de cette compétition d'ouverture, continuant à représenter efficacement les valeurs d'excellence et de spectacle qui définissent ce rendez-vous désormais incontournable du football français, tant sur la scène nationale qu'internationale.`,
   keywords: "logo Trophée des Champions, Trophée des Champions logo, logo du Trophée des Champions, Trophée des Champions logo png, Trophées des Champions logo, logo Trophée des Champions png",
-  category: 'logos',
+  category: 'competition-logos',
   subCategory: 'competition-logos'
 };

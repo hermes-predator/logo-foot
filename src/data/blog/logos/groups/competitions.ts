@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -33,6 +32,7 @@ import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
 import { allsvenskanLogoPost } from '../allsvenskan-logo';
+import { brasileiraoSerieALogoPost } from '../brasileirao-serie-a-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -66,5 +66,6 @@ export const competitionPosts: BlogPost[] = [
   dflSupercupLogoPost,
   communityShieldLogoPost,
   tacaDePortugalLogoPost,
-  allsvenskanLogoPost
+  allsvenskanLogoPost,
+  brasileiraoSerieALogoPost
 ];

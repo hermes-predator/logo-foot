@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const greeceLogoPost: BlogPost = {
@@ -52,7 +51,7 @@ Au-delà de sa dimension sportive, le **logo grece** est devenu un puissant symb
 
 Les joueurs qui portent fièrement le maillot orné du **logo foot grece** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a non seulement contribué immensément à la civilisation mondiale, mais qui a aussi démontré sa capacité à atteindre les sommets du football mondial contre toute attente.`,
   keywords: "logo grece, logo club foot grec, logo club football grec, logo club grec, logo foot grece, club de foot grec logo",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 164
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const brazilLogoPost: BlogPost = {
@@ -49,6 +48,6 @@ Alors que la Seleção poursuit sa quête d'un sixième titre mondial, le **logo
 
 En définitive, peu d'emblèmes sportifs peuvent se targuer d'avoir atteint le statut culturel et l'impact émotionnel du **logo brésil football**. À travers ses étoiles dorées, ses couleurs vibrantes et son design distinctif, il raconte l'histoire d'un pays qui a transformé un sport en expression nationale, devenant au passage l'incarnation même de ce que le football peut offrir de plus beau et de plus inspirant.`,
   keywords: "logo brésil, logo du brésil, logo brésil football, logo brésil foot, brésil logo, le logo du brésil, logo brésil png, logo du brésil foot, logo foot brésil, brésil foot logo",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

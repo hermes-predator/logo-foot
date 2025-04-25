@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const uruguayLogoPost: BlogPost = {
@@ -46,7 +45,6 @@ Tout en conservant ses éléments fondamentaux, le **logo uruguay foot** continu
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo foot uruguay** un exemple remarquable de continuité dans le design sportif. Alors que de nombreuses fédérations optent pour des ruptures radicales dans leur identité visuelle, l'**uruguay logo png** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
   keywords: "logo uruguay foot, logo foot uruguay, logo uruguay, logo uruguay football, logo uruguay png, uruguay foot logo, uruguay football logo, uruguay logo, uruguay logo foot, uruguay logo png, uruguay soccer logo, logo uruguay futbol, uruguay logo football, uruguay png logo, equipe d'uruguay logo, logo club de foot uruguay, logo de l uruguay",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 154
+  category: 'national-logos',
+  subCategory: 'national-logos'
 };

@@ -2,9 +2,7 @@
 import { BlogPost } from '../../../../types/blog';
 
 // Import non-European club logo posts
-import { interMiamiLogoPost } from '../inter-miami-logo';
 import { losAngelesGalaxyLogoPost } from '../los-angeles-galaxy-logo';
-import { africanClubsPost } from '../african-clubs';
 import { asianClubsPost } from '../asian-clubs';
 import { alNassrLogoPost } from '../al-nassr-logo';
 import { alHilalLogoPost } from '../al-hilal-logo';
@@ -17,6 +15,7 @@ import { newYorkCityFcLogoPost } from '../new-york-city-fc-logo';
 import { seattleSoundersLogoPost } from '../seattle-sounders-logo';
 import { coloradoRapidsLogoPost } from '../colorado-rapids-logo';
 import { realSaltLakeLogoPost } from '../real-salt-lake-logo';
+import { interMiamiLogoPost } from '../inter-miami-logo';
 import { portlandTimbersLogoPost } from '../portland-timbers-logo';
 import { minnesotaUnitedLogoPost } from '../minnesota-united-logo';
 import { phoenixRisingLogoPost } from '../phoenix-rising-logo';
@@ -45,7 +44,6 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   realSaltLakeLogoPost,
   interMiamiLogoPost,
   losAngelesGalaxyLogoPost,
-  africanClubsPost,
   asianClubsPost,
   portlandTimbersLogoPost,
   minnesotaUnitedLogoPost,
@@ -61,4 +59,3 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   houstonDynamoLogoPost,
   damacFcLogoPost
 ];
-

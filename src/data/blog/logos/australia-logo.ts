@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const australiaLogoPost: BlogPost = {
@@ -46,6 +45,6 @@ Au-delà de sa dimension sportive, le **logo australie** est devenu un puissant 
 
 Les joueurs qui portent fièrement le maillot orné du **australie logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également les valeurs et l'espoir de toute une nation qui se reconnaît dans ce symbole emblématique qui continue d'écrire son histoire dans le football mondial.`,
   keywords: "logo australie, australie logo, logo australie foot, logo australie football, logo foot australie, australie foot logo, australie football logo",
-  category: 'national-logos',
+  category: 'national-logos',  // Changed from 'logos' to 'national-logos'
   subCategory: 'national-logos'
 };

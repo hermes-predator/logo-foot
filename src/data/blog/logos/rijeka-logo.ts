@@ -77,7 +77,7 @@ Le **logo HNK Rijeka** continue d'inspirer :
 
 Le **logo Rijeka** reste un symbole majeur du football croate, conjuguant tradition maritime et modernité dans son expression visuelle.`,
   keywords: "logo rijeka, rijeka logo, logo hnk rijeka, rijeka logo png",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9328
 };

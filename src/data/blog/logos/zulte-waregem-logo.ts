@@ -77,7 +77,7 @@ Le **logo foot Zulte Waregem** continue d'inspirer :
 
 Le **logo Zulte Waregem** reste un symbole fort du football belge, alliant tradition et modernité dans son expression visuelle.`,
   keywords: "logo zulte waregem, zulte waregem logo, logo de foot zulte waregem, logo foot zulte waregem, zulte waregem logo png",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9329
 };

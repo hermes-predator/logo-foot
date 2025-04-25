@@ -18,7 +18,7 @@ update_club_logo_files() {
     fi
     
     # Update category from "logos" to "club-logos"
-    if grep -q 'category: .logos.' $file; then
+    if grep -q 'category: "logos"' $file; then
       sed -i 's/category: "logos"/category: "club-logos"/g' $file
       echo "Updated $file to club-logos"
     fi
@@ -30,7 +30,7 @@ update_analysis_files() {
   echo "Updating analysis files..."
   find src/data/blog/analysis -type f -name "*.ts" | while read file; do
     # Update category from "logos" to "club-logos"
-    if grep -q 'category: .logos.' $file; then
+    if grep -q 'category: "logos"' $file; then
       sed -i 's/category: "logos"/category: "club-logos"/g' $file
       echo "Updated $file to club-logos"
     fi

@@ -34,7 +34,7 @@ Le **san jose earthquakes logo** est bien plus qu'un simple emblème sportif. Il
 
 Le **logo san jose earthquakes** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée.`,
   keywords: "san jose earthquakes logo:20, logo san jose earthquakes:10",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };

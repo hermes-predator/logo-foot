@@ -1,10 +1,9 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const jupilerProLeagueLogoPost: BlogPost = {
   id: 857,
   title: "Le **Jupiler Pro League Logo** : Histoire et Évolution de l'Emblème du Football Belge",
-  excerpt: "Découvrez l'histoire fascinante du **Jupiler Pro League Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design du championnat belge.",
+  excerpt: "Découvrez l'histoire et l'évolution du logo D1 Arkema, emblème du championnat de football féminin français. Analyse complète du design et des symboliques.",
   date: "2024-04-20",
   content: `
 # L'Histoire et l'Évolution du **Jupiler Pro League Logo**
@@ -101,6 +100,6 @@ Que ce soit dans sa version imprimée traditionnelle ou dans son format numériq
 Le **Jupiler Pro League logo PNG** n'est pas seulement un symbole graphique – c'est le visage d'un championnat qui a su se réinventer et s'imposer comme l'une des ligues les plus intéressantes d'Europe, attirant désormais l'attention des amateurs de football du monde entier.
 `,
   keywords: "jupiler pro league logo, logo jupiler pro league, jupiler pro league logo png, jupiler pro league logo vector, logo de foot jupiler pro league, championnat belge, football belge, première division belge, belgique football",
-  category: "logos",
-  subCategory: "competition-logos",
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

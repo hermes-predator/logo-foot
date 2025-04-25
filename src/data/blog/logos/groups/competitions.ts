@@ -65,4 +65,5 @@ export const competitionPosts: BlogPost[] = [
   communityShieldLogoPost,
   tacaDePortugalLogoPost,
   bundesligaLogoPost,
+  jupilerProLeagueLogoPost,
 ];

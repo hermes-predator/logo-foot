@@ -7,7 +7,7 @@ export interface BlogPost {
   content: string,
   keywords?: string,
   category: BlogCategory,
-  subCategory?: string, // Adding this back as optional to maintain backward compatibility
+  subCategory?: string, 
   galleryImageId?: number,
   readingTime?: number,
   previousPostId?: number,
@@ -22,7 +22,7 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez notre collection de logos de football des plus grands clubs du monde entier.'
   },
   'national-logos': {
-    name: 'Logos de sélections nationales',
+    name: 'Logos de Nations',
     description: 'Explorez les emblèmes des équipes nationales de football et leur symbolisme.'
   },
   players: {

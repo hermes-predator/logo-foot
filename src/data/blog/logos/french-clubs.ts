@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const frenchClubsPost: BlogPost = {
@@ -94,5 +95,5 @@ Tendances Design Ligue 1
 - Fan tokens
 - Digital merchandising`,
   keywords: "logo club foot francais, logo foot france, france foot logo, logo clubs français, logo ligue 1, logo foot png, logo equipe france",
-  category: 'logos'
+  category: 'club-logos'
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const dinamoTbilisiLogoPost: BlogPost = {
@@ -45,9 +44,9 @@ Les versions modernes du **logo Dinamo Tbilissi** mettent en valeur :
 
 Le **logo Dinamo Tbilissi** raconte plus qu'une simple histoire de football. C'est le récit d'une nation, de sa culture et de sa passion.
   `,
-  category: 'logos',
-  subCategory: 'national-teams',
+  category: 'club-logos',
+  subCategory: 'club-logos',
   date: '2024-04-12',
   keywords: '**logo Dinamo Tbilissi**, **dinamo tbilisi logo**, **dinamo tbilisi logo png**, football géorgien, histoire des logos, design de logo sportif',
-  galleryImageId: 360 // Changed from string to number
+  galleryImageId: 360
 };

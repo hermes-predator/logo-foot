@@ -15,7 +15,7 @@ export const historyPosts: BlogPost[] = [
 
 // Update to use legacy category
 for (const post of historyPosts) {
-  if (post.category === 'logos') {
+  if (post.category === 'club-logos' || post.category === 'national-logos') {
     post.category = 'legacy';
   }
 }

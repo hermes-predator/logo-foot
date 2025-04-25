@@ -80,6 +80,6 @@ Tendances Pro League
 - Métaverse ready
 - Digital merchandise`,
   keywords: "logo belgique foot, logos pro league, emblèmes foot belge, écusson club belge, design foot belge, logos clubs belges",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos'
 };

@@ -46,6 +46,6 @@ Innovation Visuelle : Motion design, digital assets, AR experiences, NFT collect
 
 Evolution Brand : Métaverse ready, fan tokens, digital merchandise, social innovation`,
   keywords: "logos football sud-américain, design boca juniors, logo river plate, emblème flamengo, écusson santos, logos clubs amérique sud",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos'
 };

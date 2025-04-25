@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const championsLeagueAnalysis: BlogPost = {
@@ -66,5 +67,5 @@ Innovations UCL 2024
 - Digital assets
 - Brand evolution`,
   keywords: "logos ligue des champions, design champions league, branding ucl, analyse logos europe, identité visuelle champions league",
-  category: 'logos'
+  category: 'club-logos'
 };

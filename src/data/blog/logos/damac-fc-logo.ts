@@ -34,7 +34,6 @@ Alors que le club continue son développement, le **logo Damac** reste un symbol
 
 Le **logo Damac** est bien plus qu'un simple emblème : c'est le symbole d'un club en pleine ascension dans le football saoudien. Sa présence forte et son design distinctif en font un élément clé de l'identité du club, reconnaissable instantanément par les supporters et respecté par les adversaires.`,
   keywords: "logo damac, damac logo, damac logo png, football saoudien, saudi pro league, emblème damac, design logo football, clubs saoudiens",
-  category: "logos",
+  category: "club-logos",
   subCategory: "non-european-clubs"
 };
-

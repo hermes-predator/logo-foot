@@ -1,7 +1,7 @@
 
 import { BlogPost } from '../../../types/blog';
 
-export const bundesligaBrandPost: BlogPost = {
+export const bundesligaLogoPost: BlogPost = {
   id: 99922,
   title: "Logo Bundesliga : Histoire, Signification et Fichiers PNG [2024]",
   excerpt: "Plongez dans l'histoire du logo Bundesliga, son évolution, sa signification et les raisons de son succès en Allemagne et à l'international.",

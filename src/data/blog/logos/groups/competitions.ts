@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -31,7 +32,7 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
-// Removed the comment about ballonDorLogoPost to avoid confusion
+import { ballonDorLogoPost } from '../ballon-dor-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -65,7 +66,8 @@ export const competitionPosts: BlogPost[] = [
   ligaMxLogoPost,
   dflSupercupLogoPost,
   communityShieldLogoPost,
-  tacaDePortugalLogoPost
+  tacaDePortugalLogoPost,
+  ballonDorLogoPost
 ].map(post => ({
   ...post,
   category: 'competition-logos',

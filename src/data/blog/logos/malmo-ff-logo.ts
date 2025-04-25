@@ -42,7 +42,7 @@ Le **malmo logo png** est reconnu bien au-delà des frontières suédoises. Grâ
 
 Le **logo club football malmo** est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition d'excellence qui continue d'inspirer les générations de supporters.`,
   keywords: "logo malmo, logo malmo ff, malmo logo, malmo logo png, logo club football malmo, logo foot malmo, malmo ff logo",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 429
 };

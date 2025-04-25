@@ -1,7 +1,5 @@
-
 import { BlogPost } from '../../../types/blog';
 import { clubHistoryPost } from '../logos/club-history';
-import { creerLogoFootPost } from '../logos/creer-logo-foot';
 import { designPrinciples } from './design-principles';
 import { integrationGuide } from './integration-guide';
 import { minimalDesignGuide } from './minimal-design';
@@ -15,7 +13,6 @@ import { footballDesignGuide } from './football-design-guide';
 
 export const technicalPosts: BlogPost[] = [
   clubHistoryPost,
-  creerLogoFootPost,
   designPrinciples,
   integrationGuide,
   minimalDesignGuide,

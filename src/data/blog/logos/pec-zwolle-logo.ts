@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const pecZwolleLogoPost: BlogPost = {
@@ -34,7 +33,7 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 
 Le logo de PEC Zwolle est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**logo pec zwolle**, **pec zwolle logo**, **zwolle logo**, **logo zwolle**, **logo de foot zwolle pays bas**",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "club-logos",
+  subCategory: 'other-european-clubs',
   galleryImageId: 9340
 };

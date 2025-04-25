@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const portlandTimbersLogoPost: BlogPost = {
@@ -34,7 +33,7 @@ Le **portland timbers logo png** est bien plus qu'un simple emblème sportif. Il
 
 Le **logo portland timbers** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
   keywords: "logo portland timbers:20, portland timbers logo:20, portland timbers logo png:10, logo de foot portland timbers:10, portland timbers logos:10",
-  category: 'logos',
+  category: "club-logos",
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };

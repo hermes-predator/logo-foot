@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const portoLogoPost: BlogPost = {
@@ -41,6 +40,6 @@ Au-delà de son rôle d'identification, le **logo porto** incarne les valeurs fo
 
 Alors que le club continue d'écrire son histoire, le **logo fc porto** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel au Portugal et dans le monde entier.`,
   keywords: "logo porto, porto logo, porto logos, fc porto logo, logo fc porto, logo porto foot, fc porto logo png, logo de porto, logo fc porto png, logo porto fc, logo porto png, porto fc logo, porto logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "club-logos",
+  subCategory: 'portuguese-clubs'
 };

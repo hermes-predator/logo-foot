@@ -11,25 +11,12 @@ import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
 import { mlsLogosPost } from '../mls-logos';
 import { nationsLeagueLogoPost } from '../nations-league-logo';
-import { premierLeagueLogoPost } from '../premier-league-logo';
 import { serieALogoPost } from '../serie-a-logo';
 
-// Suppression des imports indisponibles
-// bundesligaLogoPost, coupeDeFranceLogoPost, coupeDeLaLigueLogoPost, coupeDuMondeLogoPost,
-// copaAmericaLogoPost, championship2022LogoPost, euro2020LogoPost, ligueDesNationsLogoPost,
-// ligueConferenceLogoPost, mundialClub2022LogoPost, superligaDanoisLogoPost,
-// tropheeDesChampionsLogoPost, worldCup2022LogoPost
-
+// Exporting available competition logos
 export const competitionLogos = [
-  // bundesligaLogoPost,
   championsLeagueLogoPost,
-  // coupeDeFranceLogoPost,
-  // coupeDeLaLigueLogoPost,
-  // coupeDuMondeLogoPost,
-  // copaAmericaLogoPost,
-  // championship2022LogoPost,
   eredivisieLogoPost,
-  // euro2020LogoPost,
   europaLeagueLogoPost,
   faCupLogoPost,
   jupilerProLeagueLogoPost,
@@ -37,14 +24,7 @@ export const competitionLogos = [
   laLigaLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
-  // ligueDesNationsLogoPost,
-  // ligueConferenceLogoPost,
-  // mundialClub2022LogoPost,
-  nationsLeagueLogoPost,
   mlsLogosPost,
-  premierLeagueLogoPost,
-  serieALogoPost,
-  // superligaDanoisLogoPost,
-  // tropheeDesChampionsLogoPost,
-  // worldCup2022LogoPost
+  nationsLeagueLogoPost,
+  serieALogoPost
 ];

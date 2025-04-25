@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const omLogoPost: BlogPost = {
@@ -36,7 +35,7 @@ Aujourd'hui, le **marseillais logo** continue d'évoluer dans son utilisation, n
 
 Pour les supporters et collectionneurs, avoir le **logo OM PNG** ou le **logo Olympique de Marseille PNG** en haute définition permet d'afficher fièrement son attachement à ce club historique du football français, dont l'emblème transcende largement le cadre sportif.`,
   keywords: "logo om, om logo, logo marseille, marseille logo, logo om png, logo de l'om, marseillais logo, om logo png, logo olympique de marseille, logo de marseille, logo olympique marseille, foot logo om, logo marseille foot, logo olympique de marseille png, ecusson om, embleme om",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "club-logos",
+  subCategory: 'french-clubs',
   galleryImageId: 37
 };

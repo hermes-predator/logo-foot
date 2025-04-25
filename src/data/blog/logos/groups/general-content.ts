@@ -12,9 +12,7 @@ import { unibetLogoPost } from '../unibet-logo';
 import { bwinLogoPost } from '../bwin-logo';
 // Remove footballLogosHistoryPost from this file
 import { logosFootPdfPost } from '../1001-logos-foot-pdf';
-// Import from the new location in technical directory
-import { logoMaillotFootPost } from '../../technical/logo-maillot-foot';
-// Remove blasonsEquipesFootballPost from this file
+// Supprimé l'import de logoMaillotFootPost car il est maintenant dans le répertoire technique
 import { ecussonsFootballPost } from '../ecussons-football';
 import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';
 import { blasonsEquipesFootballPost } from '../blasons-equipes-football';
@@ -31,7 +29,7 @@ export const generalContentPosts: BlogPost[] = [
   bwinLogoPost,
   // Remove footballLogosHistoryPost from this array
   logosFootPdfPost,
-  logoMaillotFootPost,
+  // Supprimé logoMaillotFootPost de cet array
   ecussonsFootballPost,
   ecussonsClubFootEuropeenPost,
   blasonsEquipesFootballPost

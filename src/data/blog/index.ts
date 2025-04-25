@@ -139,8 +139,9 @@ const allPosts = [
   ...pixelArtPosts
 ];
 
-// Explicitement filtrer l'article 9134 avant d'appliquer la fonction ensureUniqueIds
-const filteredPosts = allPosts.filter(post => post.id !== 9134);
+// Explicitement filtrer l'article 9134 et l'article avec ID 257 (logoMaillotFoot) avant d'appliquer la fonction ensureUniqueIds
+// Cela évite les doublons de l'article "Logo Maillot de Foot"
+const filteredPosts = allPosts.filter(post => post.id !== 9134 && !(post.id === 257 && post.title.includes("Logo Maillot de Foot")));
 export const blogPosts = ensureUniqueIds(filteredPosts);
 
 // Trier les articles par date

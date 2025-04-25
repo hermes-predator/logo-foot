@@ -41,7 +41,6 @@ import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
-import { willemIiLogoPost } from './willem-ii-logo';
 import { almereCityLogoPost } from './almere-city-logo';
 import { westerloLogoPost } from './westerlo-logo';
 import { austriaWienLogoPost } from './austria-wien-logo';
@@ -92,8 +91,7 @@ export const logoPosts: BlogPost[] = [
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
-  // nacBredaLogoPost, // Supprimé pour éviter le doublon avec otherEuropeanClubPosts
-  willemIiLogoPost,
+  nacBredaLogoPost,
   almereCityLogoPost,
   westerloLogoPost,
   austriaWienLogoPost,
@@ -103,3 +101,4 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost
 ];
+

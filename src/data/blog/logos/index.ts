@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -19,8 +20,6 @@ import { psgUltrasPost } from './psg-ultras';
 import { omUltrasPost } from './om-ultras';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
-// Suppression du doublon wolfsburgLogoPost - déjà inclus dans germanClubPosts
-// import { wolfsburgLogoPost } from './wolfsburg-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -41,9 +40,6 @@ import { louisvilleCityLogoPost } from './louisville-city-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
 import { fcDallasLogoPost } from './fc-dallas-logo';
 import { austinFcLogoPost } from './austin-fc-logo';
-// Suppression du doublon pecZwolleLogoPost - déjà inclus dans otherEuropeanClubPosts
-// import { pecZwolleLogoPost } from './pec-zwolle-logo';
-import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
 import { nacBredaLogoPost } from './nac-breda-logo';
 import { willemIiLogoPost } from './willem-ii-logo';
 import { almereCityLogoPost } from './almere-city-logo';
@@ -76,7 +72,6 @@ export const logoPosts: BlogPost[] = [
   omUltrasPost,
   westHamLogoPost,
   westBromwichLogoPost,
-  // wolfsburgLogoPost, // Supprimé pour éviter le doublon avec germanClubPosts
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -97,8 +92,7 @@ export const logoPosts: BlogPost[] = [
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
-  // pecZwolleLogoPost, // Supprimé pour éviter le doublon avec otherEuropeanClubPosts
-  nacBredaLogoPost,
+  // nacBredaLogoPost, // Supprimé pour éviter le doublon avec otherEuropeanClubPosts
   willemIiLogoPost,
   almereCityLogoPost,
   westerloLogoPost,

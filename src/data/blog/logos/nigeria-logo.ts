@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const nigeriaLogoPost: BlogPost = {
@@ -6,6 +5,8 @@ export const nigeriaLogoPost: BlogPost = {
   title: "Logo Nigeria : Histoire et Design de l'Emblème des Super Eagles [2024]",
   excerpt: "Découvrez l'histoire complète du logo Nigeria : des origines à aujourd'hui, évolution et signification de l'emblème des Super Eagles, symbole du football nigérian.",
   date: "2024-05-29",
+  category: "national-logos", // Changed from 'logos'
+  subCategory: "national-logos", // Kept the same
   content: `# L'Histoire Fascinante du **Logo Nigeria**
 
 Le **nigeria logo** est bien plus qu'un simple emblème sportif : c'est un symbole de fierté nationale qui incarne l'histoire, la passion et l'excellence du football nigérian. Dans cet article complet, nous explorerons l'évolution captivante du **logo nigeria foot** et découvrirons ce qui en fait l'un des emblèmes les plus reconnaissables du football africain et mondial.
@@ -66,7 +67,7 @@ Pour les nouvelles générations de supporters et de joueurs, le **nigeria super
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses déclinaisons numériques comme le **nigeria logo png**, l'emblème des Super Eagles continuera sans doute à évoluer tout en préservant son essence distinctive. Cette évolution perpétuelle, ancrée dans un respect profond pour la tradition, garantit que le **logo nigeria foot** restera un symbole vibrant et pertinent pour les générations à venir.`,
   keywords: "nigeria logo, logo nigeria foot, nigeria foot logo, nigeria super eagles logo, logo nigeria football, logo nigeria png, nigeria football federation logo, nigeria football logo, nigeria football logo png, nigeria logo football, equipe foot nigeria logo, logo foot nigeria, logo nigeria",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 162
 };

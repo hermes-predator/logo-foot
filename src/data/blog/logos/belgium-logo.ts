@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const belgiumLogoPost: BlogPost = {
@@ -99,6 +98,6 @@ L'évolution de ce logo illustre parfaitement comment un symbole national peut s
 
 Qu'il s'agisse du **belgique logo** traditionnel ou de ses déclinaisons modernes, l'emblème des Diables Rouges demeure l'un des designs sportifs les plus réussis et les plus reconnaissables du panorama footballistique contemporain.`,
   keywords: "logo belgique, belgique logo, logo belgique foot, logo foot belgique, belgique foot logo, belgique logo foot, logo belgique foot png, emblème diables rouges, écusson belgique football, urbsfa logo",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos'
 };

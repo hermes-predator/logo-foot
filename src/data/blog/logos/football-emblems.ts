@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const footballEmblemsPost: BlogPost = {
@@ -315,8 +314,7 @@ Ce qui est certain, c'est que ces symboles visuels resteront au cœur de l'expé
 
 Dans un monde où l'attention est de plus en plus fragmentée et où les loyautés sont constamment remises en question, la capacité d'un **football emblem** à susciter instantanément un sentiment d'appartenance et de fierté demeure l'un des atouts les plus précieux du sport le plus populaire de la planète.`,
   keywords: "football club emblems, french football emblem, football emblem, football emblem design, embleme football",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: 'technical',  // Changement de 'logos' à 'technical'
+  subCategory: 'technical',  // Modification du sous-catégorie également
   galleryImageId: undefined
 };
-

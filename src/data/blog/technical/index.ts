@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 // Removing the import for clubHistoryPost as it's already imported in logos/index.ts
 // import { clubHistoryPost } from '../logos/club-history';
@@ -15,6 +14,7 @@ import { footballDesignGuide } from './football-design-guide';
 import { commentCreerLogoFootballPost } from '../logos/comment-creer-logo-football';
 import { creerLogoFootPost } from '../logos/creer-logo-foot';
 import { colorTheoryPost } from '../analysis/color-theory';
+import { footballEmblemsPost } from '../logos/football-emblems';  // Ajout de l'import
 
 export const technicalPosts: BlogPost[] = [
   // Removing clubHistoryPost to avoid duplication
@@ -30,5 +30,6 @@ export const technicalPosts: BlogPost[] = [
   footballDesignGuide,
   commentCreerLogoFootballPost,
   creerLogoFootPost,
-  colorTheoryPost
+  colorTheoryPost,
+  footballEmblemsPost,  // Ajout de l'article à la liste
 ];

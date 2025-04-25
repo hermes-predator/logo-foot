@@ -1,4 +1,5 @@
 
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -62,6 +63,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
+import { ancienLogoOMPost } from './ancien-logo-om';
 
 // Update club logos category
 const clubLogoPosts = [
@@ -123,7 +125,8 @@ const clubLogoPosts = [
   redBullSalzburgLogoPost,
   erzurumsporLogoPost,
   bandirmasporLogoPost,
-  guangzhouLogoPost
+  guangzhouLogoPost,
+  ancienLogoOMPost
 ];
 
 // Update all club posts to use the 'club-logos' category
@@ -138,3 +141,4 @@ export const logoPosts: BlogPost[] = [
   ...clubLogoPosts,
   ...nationalTeamPosts
 ];
+

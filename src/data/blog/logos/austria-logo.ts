@@ -1,12 +1,13 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const austriaLogoPost: BlogPost = {
-  id: 89, // Using a unique ID that's not already used
+  id: 89,
   title: "Logo Autriche : Histoire et Évolution de l'Emblème National du Football Autrichien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Autriche de football : origines, évolution et symbolisme de l'emblème rouge et blanc de la sélection autrichienne.",
   date: "2024-06-06",
   galleryImageId: 89,
+  category: 'national-logos',
+  subCategory: 'national-logos',
   content: `# Logo Autriche : L'Histoire de l'Emblème du Football Autrichien
 
 Dans l'univers des emblèmes nationaux de football, le **logo Autriche foot** se distingue par sa simplicité élégante et son fort symbolisme patriotique. Représentant une tradition footballistique riche et ancienne, cet emblème incarne parfaitement l'identité d'une nation dont l'influence sur l'histoire du football européen est considérable.
@@ -138,8 +139,5 @@ Le **logo Autriche** est bien plus qu'un simple emblème sportif – c'est un sy
 L'évolution de cet emblème illustre parfaitement comment un logo national peut se moderniser tout en préservant son essence historique. La force du logo autrichien réside précisément dans cette capacité à évoluer avec son temps tout en maintenant une continuité symbolique forte, incarnée par les couleurs nationales qui continuent de représenter fièrement les aspirations du football autrichien sur la scène internationale.
 
 Qu'il s'agisse de l'**Autriche logo** traditionnel ou de ses déclinaisons modernes, l'emblème de l'ÖFB demeure l'un des designs sportifs les plus reconnaissables et respectés du panorama footballistique européen, porteur d'une identité forte et d'un héritage exceptionnel.`,
-  keywords: "logo autriche foot, logo autriche, autriche logo, logo foot autriche, autriche foot logo, autriche logo foot, logo equipe autriche, ÖFB logo, écusson autriche foot, drapeau autriche football",
-  category: 'logos',
-  subCategory: 'national-logos'
+  keywords: "logo autriche foot, logo autriche, autriche logo, logo foot autriche, autriche foot logo, autriche logo foot, logo equipe autriche, ÖFB logo, écusson autriche foot, drapeau autriche football"
 };
-

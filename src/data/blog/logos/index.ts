@@ -3,7 +3,7 @@ import { borussiaMgladbachLogoPost } from './borussia-mgladbach-logo';
 import { bayernMunichLogoPost } from './bayern-munich-logo';
 import { dortmundLogoPost } from './dortmund-logo';
 import { schalke04LogoPost } from './schalke-04-logo';
-import { werderBremeLogoPost } from './werder-breme-logo';
+import { werderBremenLogoPost } from './werder-bremen-logo';
 import { hambourgSVLogoPost } from './hambourg-sv-logo';
 import { stuttgartLogoPost } from './stuttgart-logo';
 
@@ -26,7 +26,7 @@ export const allLogos = [
   bayernMunichLogoPost,
   dortmundLogoPost,
   schalke04LogoPost,
-  werderBremeLogoPost,
+  werderBremenLogoPost,
   hambourgSVLogoPost,
   stuttgartLogoPost,
 
@@ -46,4 +46,3 @@ export const allLogos = [
   jupilerProLeagueLogoPost,
   knvbBekerLogoPost
 ];
-

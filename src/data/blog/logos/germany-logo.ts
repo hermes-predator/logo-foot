@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const germanyLogoPost: BlogPost = {
@@ -6,6 +5,8 @@ export const germanyLogoPost: BlogPost = {
   title: "Logo Allemagne : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Allemagne, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus grandes nations du football.",
   date: "2024-05-12",
+  category: 'logos',
+  subCategory: 'national-logos',
   galleryImageId: 69,
   content: `# Logo Allemagne : L'Histoire de l'Emblème National Allemand
 
@@ -109,7 +110,4 @@ L'évolution mesurée de cet emblème au fil des décennies illustre parfaitemen
 
 Dans un monde du football où l'identité nationale est parfois diluée face à la mondialisation, l'emblème allemand rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde.`,
   keywords: "logo allemagne, allemagne logo, logo allemagne foot, logo foot allemagne, allemagne foot logo, logo football allemagne, allemagne logo foot, logo de l'allemagne, logo equipe allemagne, logo allemagne football, logo equipe allemagne foot, logo equipe d'allemagne, allemagne logo png",
-  category: 'logos',
-  subCategory: 'national-logos'
 };
-

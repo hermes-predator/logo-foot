@@ -2,14 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spainLogoPost: BlogPost = {
-  id: 99, 
+  id: 99, // Using a unique ID that's not already used
   title: "Logo Espagne : Histoire et Évolution de l'Emblème de La Roja [2024]",
   excerpt: "Découvrez l'histoire complète du logo Espagne, son évolution au fil des années et la symbolique derrière cette identité visuelle emblématique du football mondial.",
   date: "2024-05-31",
-  galleryImageId: 86, 
-  category: 'logos',
-  subCategory: 'national-logos',
-  keywords: "logo espagne, espagne foot logo, logo espagne foot, espagne logo, logo espagne football, logo foot espagne, club foot espagne logo, espagne logo foot, logo de l'espagne, le logo de l'espagne, logo espagne png, logo d'espagne, logo equipe espagne, espagne logo png, logo club foot espagne, logo de espagne, logo equipe d'espagne, logo equipe de foot espagne, logo equipe foot espagne, logo football espagne",
+  galleryImageId: 86, // Using the existing galleryImageId for Spain
   content: `# L'Histoire Fascinante du **Logo Espagne**
 
 Dans le monde du football international, certains emblèmes transcendent le simple cadre sportif pour devenir de véritables symboles nationaux. Le **logo espagne** fait indéniablement partie de ces écussons qui racontent l'histoire d'un pays et de sa passion pour le ballon rond.
@@ -186,6 +183,8 @@ Lors des grandes compétitions internationales, le **logo foot espagne** fait l'
 
 Le **logo espagne** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les valeurs et l'approche unique du football espagnol. À travers sa riche symbolique et son design équilibré entre tradition et modernité, le **logo de espagne** continue de représenter la grandeur d'une nation qui a profondément marqué l'histoire du football mondial.
 
-L'évolution de ce **logo equipe d'espagne** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo club foot espagne** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments nationaux intemporels.`
+L'évolution de ce **logo equipe d'espagne** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo club foot espagne** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments nationaux intemporels.`,
+  keywords: "logo espagne, espagne foot logo, logo espagne foot, espagne logo, logo espagne football, logo foot espagne, club foot espagne logo, espagne logo foot, logo de l'espagne, le logo de l'espagne, logo espagne png, logo d'espagne, logo equipe espagne, espagne logo png, logo club foot espagne, logo de espagne, logo equipe d'espagne, logo equipe de foot espagne, logo equipe foot espagne, logo football espagne",
+  category: 'logos',
+  subCategory: 'national-logos'
 };
-

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const colombiaLogoPost: BlogPost = {
@@ -45,7 +46,7 @@ Tout en conservant ses éléments fondamentaux, le **colombie logo** continue d'
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo colombie foot** un exemple remarquable de continuité dans le design sportif. Alors que de nombreuses fédérations optent pour des ruptures radicales dans leur identité visuelle, le **logo foot colombie** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
   keywords: "logo colombie foot, colombie logo, logo colombie, logo foot colombie, colombie logo foot",
-  category: 'national-logos',
+  category: 'logos',
   subCategory: 'national-logos',
   galleryImageId: 155
 };

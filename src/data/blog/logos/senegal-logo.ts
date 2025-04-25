@@ -6,10 +6,6 @@ export const senegalLogoPost: BlogPost = {
   title: "Logo Sénégal : Histoire et Design de l'Emblème des Lions de la Teranga [2024]",
   excerpt: "Découvrez l'histoire complète du logo Sénégal : des origines à aujourd'hui, évolution et signification de l'emblème des Lions de la Teranga, symbole du football sénégalais.",
   date: "2024-05-31",
-  category: 'logos',
-  subCategory: 'national-logos',
-  galleryImageId: 166,
-  keywords: "logo sénégal, logo du sénégal, logo république du sénégal, logo sénégal png, sénégal logo, logo de l'équipe de football du sénégal, logo foot sénégal, logo football sénégal, sénégal foot logo, équipe du sénégal de football logo, équipe foot sénégal logo",
   content: `# L'Histoire Fascinante du **Logo Sénégal**
 
 Le **logo sénégal** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne la fierté nationale, l'excellence et l'identité d'une nation africaine qui s'est imposée comme l'une des puissances majeures du football continental. Dans cet article approfondi, nous explorons l'histoire captivante du **sénégal logo** et découvrons ce qui fait de ce blason un emblème si spécial pour le peuple sénégalais et les amateurs de football du monde entier.
@@ -68,6 +64,9 @@ Le **logo sénégal** a parcouru un chemin remarquable, depuis ses premières in
 
 Pour les générations futures de footballeurs et supporters sénégalais, le **sénégal logo** continuera d'incarner l'excellence, la persévérance et la fierté nationale. Alors que le football sénégalais poursuit son développement vers de nouveaux sommets, son emblème distinctif restera le témoin visuel de cette aventure sportive exceptionnelle qui a déjà marqué l'histoire du football africain.
 
-Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo sénégal png**, l'emblème national du football sénégalais a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'une nation africaine à créer un symbole sportif puissant, durable et mondialement reconnu.`
+Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo sénégal png**, l'emblème national du football sénégalais a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'une nation africaine à créer un symbole sportif puissant, durable et mondialement reconnu.`,
+  keywords: "logo sénégal, logo du sénégal, logo république du sénégal, logo sénégal png, sénégal logo, logo de l'équipe de football du sénégal, logo foot sénégal, logo football sénégal, sénégal foot logo, équipe du sénégal de football logo, équipe foot sénégal logo",
+  category: 'logos',
+  subCategory: 'national-logos',
+  galleryImageId: 166
 };
-

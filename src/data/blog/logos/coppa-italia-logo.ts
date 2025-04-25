@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const coppaItaliaLogoPost: BlogPost = {
@@ -155,6 +154,6 @@ Son équilibre remarquable entre tradition et innovation fait du **logo coppa it
 
 Que ce soit dans sa version imprimée traditionnelle ou dans sa déclinaison numérique moderne, le **coppa italia logo** demeure un puissant vecteur d'émotions et de souvenirs pour des millions de supporters, incarnant parfaitement la devise non officielle mais profondément ressentie du football italien : "Più di un gioco" – plus qu'un jeu.`,
   keywords: "coppa italia logo, coppa italia logo png, logo coppa italia, logo coppa italia png, coppa italia logo vector, logo coppa italia calcio",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'competition-logos',
+  subCategory: 'competition-logos'
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const primeiraLigaPost: BlogPost = {
@@ -104,6 +103,6 @@ Le **championnat du Portugal de football** représente bien plus qu'une simple c
 
 Sa capacité à former des talents exceptionnels et à proposer un football attractif en fait une ligue suivie par les passionnés du monde entier. Le **Primeira Liga logo** symbolise cette tradition d'excellence qui perdure depuis près de 90 ans dans le **championnat portugais de football**.`,
   keywords: "championnat du Portugal de football, championnat de football portugais, classement équipe du Portugal de football, championnat de Portugal de football, championnat portugais de football, Primeira Liga logo, Primeira Liga, football portugais, liga portugal, football portugal",
-  category: 'logos',
-  subCategory: 'competition-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

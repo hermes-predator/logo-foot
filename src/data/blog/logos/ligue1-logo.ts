@@ -57,6 +57,6 @@ Le **logo ligue 1** continuera certainement d'évoluer pour répondre aux enjeux
 Le défi principal pour les évolutions futures du **logo clubs ligue 1** sera de maintenir un équilibre subtil entre innovation et continuité. Chaque modification devra préserver les éléments qui font la force et la reconnaissance de cette identité visuelle, tout en l'adaptant aux nouvelles attentes des supporters et aux évolutions du paysage médiatique.
 
 Que ce soit dans sa version animée sur les écrans de télévision, sa déclinaison imprimée sur les produits officiels ou sa présence digitale optimisée, le **logo ligue 1** continuera d'incarner l'excellence du football français et son ambition de rayonner sur la scène internationale.`,
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

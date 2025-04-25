@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const championshipLogoPost: BlogPost = {
@@ -55,6 +54,6 @@ Les **championship team logos** qui accompagnent l'emblème de la compétition f
 
 Alors que le Championship poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines dans le football anglais, fait du **logo championship** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football britannique.`,
   keywords: "logo championship, championship logo, championship team logos, efl championship logo, logo championship png, logo efl championship, the championship logo, football championship logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos"
 };

@@ -58,6 +58,6 @@ Le logo du Racing Club de Lens transcende sa simple fonction d'emblème sportif 
 
 Pour les passionnés de football et les amateurs de design, le logo RC Lens reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le logo lens png, le lens logo, le rc lens logo, le blason rc lens, l'écusson lens, le racing club lens logo, le logo lens foot, les lens logos, le logo de lens, le logo lens png, le logo rc lens png, et le logo rc lens 2024 continueront de faire briller les couleurs sang et or du club sur les terrains de football et au-delà.`,
   keywords: "logo lens, logo rc lens, lens logo, rc lens logo, blason rc lens, ecusson lens, racing club lens logo, logo lens foot, lens logos, logo de lens, logo lens png, logo rc lens png, rc lens nouveau logo, logo rc lens 2024, lens logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

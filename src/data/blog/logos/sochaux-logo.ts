@@ -112,5 +112,6 @@ L'emblème au lion reste un symbole fort d'identification pour les supporters et
 
 Le **logo Sochaux foot** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
   keywords: "logo sochaux, sochaux logo, logo fc sochaux, fc sochaux logo, logo de sochaux, logo sochaux foot, nouveau logo sochaux, sochaux foot logo, logo sochaux fc, logo sochaux png, sochaux logo png, fc sochaux logo png, fc sochaux montbeliard logo, fc sochaux montbéliard logo, foot sochaux logo, logo de foot sochaux, logo fc sochaux png",
-  category: 'logos'
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

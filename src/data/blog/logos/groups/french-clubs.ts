@@ -44,7 +44,7 @@ import { rodezLogoPost } from '../rodez-logo';
 import { guingampLogoPost } from '../guingamp-logo';
 import { lavalLogoPost } from '../laval-logo';
 import { bastiBorgoLogoPost } from '../bastia-borgo-logo';
-import { chateaurouxLogoPost } from '../chateauroux-logo';
+// Remove the chateaurouxLogoPost import as the file doesn't exist
 import { choletLogoPost } from '../cholet-logo';
 import { concarneuLogoPost } from '../concarneau-logo';
 import { dunkerqueLogoPost } from '../dunkerque-logo';
@@ -102,7 +102,7 @@ export const frenchClubPosts: BlogPost[] = [
   guingampLogoPost,
   lavalLogoPost,
   bastiBorgoLogoPost,
-  chateaurouxLogoPost,
+  // Remove chateaurouxLogoPost from the array as well
   choletLogoPost,
   concarneuLogoPost,
   dunkerqueLogoPost,

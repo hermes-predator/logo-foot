@@ -3,101 +3,93 @@
 
 const fs = require('fs');
 const path = require('path');
-const { promisify } = require('util');
 
-const readDir = promisify(fs.readdir);
-const readFile = promisify(fs.readFile);
-const writeFile = promisify(fs.writeFile);
-const stat = promisify(fs.stat);
+// Path to logos directory
+const logosDir = path.join(__dirname, '../src/data/blog/logos');
 
-const logoDir = path.join(__dirname, '../src/data/blog/logos');
+// Function to update a single file's category
+function updateFileCategory(filePath) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    
+    // Skip if file doesn't have "logos" category or is already updated
+    if (!content.includes('category: "logos"') && !content.includes("category: 'logos'")) {
+      return false;
+    }
+    
+    let updatedContent = content;
+    
+    // Check for national team logos
+    if (content.match(/national team|équipe nationale|national logo|selection|équipe de france|albanie|algérie|allemagne|angleterre|argentine|australie|autriche|belgique|brésil|cameroun|canada|chili|colombie|croatie|danemark|équateur|espagne|états-unis|france|ghana|iran|italie|japon|maroc|pays-bas|pologne|portugal|qatar|sénégal|serbie|suisse|tunisie|turquie|uruguay|usa|pays de galles/i)) {
+      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "national-logos"');
+      
+      // Also update subCategory if it's "logos"
+      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
+        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "national-logos"');
+      }
+    }
+    // Check for competition logos
+    else if (content.match(/champions league|europa league|coupe|trophy|competition|championnat|league|copa|bundesliga|primera|serie|eredivisie|premier league|ligue|ballon d.or|world cup|euro|can|copa|nations league/i)) {
+      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "competition-logos"');
+      
+      // Also update subCategory if it's "logos"
+      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
+        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "competition-logos"');
+      }
+    }
+    // Default case: club logos
+    else {
+      updatedContent = content.replace(/category: ['"]logos['"]/, 'category: "club-logos"');
+      
+      // Also update subCategory if it's "logos"
+      if (content.includes('subCategory: "logos"') || content.includes("subCategory: 'logos'")) {
+        updatedContent = updatedContent.replace(/subCategory: ['"]logos['"]/, 'subCategory: "club-logos"');
+      }
+    }
+    
+    // Write the updated content back to the file
+    if (updatedContent !== content) {
+      fs.writeFileSync(filePath, updatedContent, 'utf8');
+      return true;
+    }
+    
+    return false;
+  } catch (error) {
+    console.error(`Error updating file ${filePath}:`, error);
+    return false;
+  }
+}
 
-async function scanDirectory(dir) {
-  const entries = await readDir(dir);
+// Function to recursively process all files in a directory
+function processDirectory(dir) {
+  const files = fs.readdirSync(dir);
+  let updatedCount = 0;
   
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry);
-    const stats = await stat(fullPath);
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    const stats = fs.statSync(filePath);
     
     if (stats.isDirectory()) {
-      // Skip the groups directory
-      if (entry !== 'groups') {
-        await scanDirectory(fullPath);
+      // Skip the groups directory to prevent conflicts
+      if (file !== 'groups') {
+        updatedCount += processDirectory(filePath);
       }
-    } else if (entry.endsWith('.ts') && entry !== 'index.ts') {
-      await fixCategoryInFile(fullPath);
+    } else if (file.endsWith('.ts')) {
+      if (updateFileCategory(filePath)) {
+        console.log(`Updated ${filePath}`);
+        updatedCount++;
+      }
     }
   }
+  
+  return updatedCount;
 }
 
-async function fixCategoryInFile(filePath) {
-  try {
-    let content = await readFile(filePath, 'utf8');
-    
-    // Skip files that already have valid categories
-    if (
-      content.includes('category: "club-logos"') || 
-      content.includes('category: "national-logos"') || 
-      content.includes('category: "competition-logos"')
-    ) {
-      return;
-    }
-    
-    // Fix duplicate category property first
-    const categoryMatches = content.match(/category: *["'][a-z-]+["']/g);
-    if (categoryMatches && categoryMatches.length > 1) {
-      console.log(`Fixing duplicate category in ${filePath}`);
-      // Remove all but the first category
-      const lines = content.split('\n');
-      const newLines = [];
-      let foundFirst = false;
-      
-      for (const line of lines) {
-        if (line.includes('category:')) {
-          if (!foundFirst) {
-            newLines.push(line.replace(/category: *["'][a-z-]+["']/, 'category: "club-logos"'));
-            foundFirst = true;
-          }
-          // Skip other category lines
-        } else {
-          newLines.push(line);
-        }
-      }
-      
-      content = newLines.join('\n');
-    }
-    
-    // Determine the appropriate category based on the content
-    let newCategory = "club-logos"; // Default
-    
-    // Check for national team content
-    if (
-      /national team|équipe nationale|drapeau national|équipe d'|flag|sélection|diables rouges|weltmeister|bulgarie|burkina faso|cameroun|can/i.test(content)
-    ) {
-      newCategory = "national-logos";
-    } 
-    // Check for competition content
-    else if (
-      /competition|coupe|cup|league|trophy|champion|ligue|copa|bundesliga|primera|serie|eredivisie|premier league|ligue|mundial/i.test(content)
-    ) {
-      newCategory = "competition-logos";
-    }
-    
-    // Replace any "logos" category with the appropriate one
-    if (content.includes('category: "logos"')) {
-      content = content.replace(/category: *["']logos["']/, `category: "${newCategory}"`);
-      console.log(`Updated ${path.basename(filePath)} to ${newCategory}`);
-      await writeFile(filePath, content, 'utf8');
-    }
-  } catch (error) {
-    console.error(`Error processing ${filePath}:`, error);
-  }
+// Main function to execute the script
+function main() {
+  console.log('Starting category update process...');
+  const updatedCount = processDirectory(logosDir);
+  console.log(`Successfully updated ${updatedCount} files.`);
 }
 
-async function main() {
-  console.log('Starting to fix categories in logo files...');
-  await scanDirectory(logoDir);
-  console.log('Category fixes complete!');
-}
-
-main().catch(console.error);
+main();

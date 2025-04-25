@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const goztepeLogoPost: BlogPost = {
@@ -75,6 +74,6 @@ Le **logo sivasspor** s'exprime sur de multiples supports :
 - Protection visuelle`,
   keywords: "logo sivasspor, sivasspor logo, sivasspor logo png",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'turkish-clubs',
   galleryImageId: 573
 };

@@ -47,4 +47,3 @@ Le **logo Algérie** est un symbole de fierté nationale, représentant l'Algér
   subCategory: 'african-teams',
   galleryImageId: 359
 };
-

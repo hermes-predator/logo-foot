@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const zulteWaregemLogoPost: BlogPost = {
@@ -78,6 +77,6 @@ Le **logo foot Zulte Waregem** continue d'inspirer :
 Le **logo Zulte Waregem** reste un symbole fort du football belge, alliant tradition et modernité dans son expression visuelle.`,
   keywords: "logo zulte waregem, zulte waregem logo, logo de foot zulte waregem, logo foot zulte waregem, zulte waregem logo png",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'belgian-clubs',
   galleryImageId: 9329
 };

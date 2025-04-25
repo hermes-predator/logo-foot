@@ -1,10 +1,9 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const rajaCasablancaLogoPost: BlogPost = {
   id: 432,
   title: "**Logo Raja Casablanca** : Histoire et Symbolique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Raja Casablanca**, son évolution et sa signification profonde dans le football marocain et africain.",
+  excerpt: "Découvrez l'histoire fascinante du **logo Raja Casablanca**, son évolution et sa symbolique profonde dans le football marocain et africain.",
   date: "2024-04-15",
   content: `# L'Histoire du **Logo Raja Casablanca**
 
@@ -51,6 +50,6 @@ Le design actuel du **logo Raja de Casablanca** combine :
 Le **logo Raja Casablanca PNG** transcende le simple emblème sportif - c'est un symbole d'identité, de passion et d'histoire qui continue d'inspirer des générations de supporters.`,
   keywords: "logo de raja casablanca, logo raja casablanca, logo raja casablanca png, raja casablanca logo, raja casablanca logo png, logo du raja de casablanca, logo raja de casablanca",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'african-clubs',
   galleryImageId: 432
 };

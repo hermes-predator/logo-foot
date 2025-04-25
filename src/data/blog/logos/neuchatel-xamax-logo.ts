@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const neuchatelXamaxLogoPost: BlogPost = {
@@ -31,6 +30,6 @@ L'emblème actuel reflète parfaitement l'héritage historique du club tout en a
 Le logo est devenu un véritable symbole de la tradition footballistique suisse, représentant non seulement un club mais aussi toute une région et sa passion pour le football. Il incarne la fierté et l'attachement des supporters à leur club.`,
   keywords: "logo neuchatel xamax, neuchatel xamax logo, fc neuchatel xamax logo, logo fc neuchatel xamax, logo neuchatel xamax png",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'swiss-clubs',
   galleryImageId: 424
 };

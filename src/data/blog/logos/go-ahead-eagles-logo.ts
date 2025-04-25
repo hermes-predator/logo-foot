@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const goAheadEaglesLogoPost: BlogPost = {
@@ -8,24 +7,24 @@ export const goAheadEaglesLogoPost: BlogPost = {
   date: "2024-04-19",
   content: `# Histoire du **Logo Go Ahead Eagles**
 
-Le **logo go ahead eagles** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs historiques des Pays-Bas. Le **go ahead eagles logo** incarne la fierté et la tradition d'une institution profondément ancrée dans son histoire.
+Le **heerenveen logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs les plus emblématiques de la Frise, aux Pays-Bas. Le **logo heerenveen** incarne la fierté et la tradition d'une institution profondément ancrée dans sa région.
 
-## Les Origines du **Go Ahead Eagles Logo**
+## Les Origines du **SC Heerenveen Logo**
 
-Fondé en 1902, le **logo go ahead eagles png** a évolué au fil des décennies, reflétant l'histoire riche d'un club qui a su traverser les époques en conservant son essence et ses valeurs fondamentales.
+Fondé en 1920, le **sc heerenveen logo** a évolué au fil des décennies tout en conservant son essence et ses valeurs fondamentales. Le **logo sc heerenveen** reflète l'histoire riche d'un club qui a su s'imposer comme une référence du football néerlandais.
 
 ## Design et Symbolisme du Logo
 
-Le logo actuel se compose de plusieurs éléments significatifs :
-- L'aigle emblématique, symbole de force et de liberté
-- Les couleurs traditionnelles du club
-- Un design qui rappelle l'héritage historique
+Le **sc heerenveen logo png** actuel se compose de plusieurs éléments significatifs :
+- Les pommes d'eau emblématiques de la Frise
+- Les couleurs bleu et blanc traditionnelles
+- Le design distinctif qui rappelle l'héritage frison
 - L'année de fondation du club
 
 ### Une Identité Visuelle Forte
 
-Le logo représente :
-- La fierté de la ville de Deventer
+Le **logo de foot heerenveen pays bas** représente :
+- La fierté de la région de la Frise
 - L'identité culturelle unique du club
 - La tradition sportive
 - L'engagement communautaire
@@ -48,9 +47,9 @@ Le logo est devenu un symbole reconnu qui représente :
 
 ## Conclusion
 
-Le logo des Go Ahead Eagles est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
+Le logo du SC Heerenveen est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "logo go ahead eagles, go ahead eagles logo, logo go ahead eagles png",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'dutch-clubs',
   galleryImageId: 9336
 };

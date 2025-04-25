@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const belgianClubsPost: BlogPost = {
@@ -81,5 +80,5 @@ Tendances Pro League
 - Digital merchandise`,
   keywords: "logo belgique foot, logos pro league, emblèmes foot belge, écusson club belge, design foot belge, logos clubs belges",
   category: 'club-logos',
-  subCategory: 'club-logos'
+  subCategory: 'belgian-clubs'
 };

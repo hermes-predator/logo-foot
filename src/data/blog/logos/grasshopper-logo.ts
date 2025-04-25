@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const grasshopperLogoPost: BlogPost = {
@@ -35,6 +34,6 @@ Les **grasshoppers foot logo** ont su évoluer avec leur temps tout en préserva
 L'emblème de Grasshopper Club Zürich est plus qu'un simple logo : c'est un symbole qui unit des générations de supporters et incarne l'esprit d'un club légendaire du football suisse.`,
   keywords: "grasshopper logo, grasshopper logo png, logo grasshopper, logo grasshopper club zürich, fc zurich grasshopper logo, grasshoppers foot logo, grasshoppers zurich logo png, logo grasshopper zurich",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'swiss-clubs',
   galleryImageId: 422
 };

@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const columbusCrewLogoPost: BlogPost = {
@@ -35,6 +34,6 @@ Le **logo columbus crew** est bien plus qu'un simple emblème sportif. Il est de
 Le **columbus crew sc logo** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel, racontant l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
   keywords: "columbus crew logo:20, columbus crew sc logo:20, logo columbus crew:20, columbus crew logo png:10, columbus crew sc new logo:10",
   category: 'club-logos',
-  subCategory: 'non-european-clubs',
+  subCategory: 'american-clubs',
   galleryImageId: null
 };

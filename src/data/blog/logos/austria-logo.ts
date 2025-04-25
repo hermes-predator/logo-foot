@@ -45,4 +45,3 @@ Le **logo autriche** est plus qu'un simple emblème - c'est un symbole qui incar
   subCategory: 'national-teams',
   galleryImageId: 431
 };
-

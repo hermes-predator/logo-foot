@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const wolfsbergerAcLogoPost: BlogPost = {
@@ -45,5 +44,6 @@ Le logo est utilisé sur différents supports :
 ## Impact et Reconnaissance
 
 Le logo est devenu un symbole fort du football autrichien, reconnaissable instantanément par les supporters et les passionnés du football. Il incarne les valeurs du club : tradition, force et détermination.`,
-  keywords: "logo wolfsberger, logo foot wolfsberger ac, wolfsberger ac logo, logo wolfsberger ac, wolfsberger logo png, football autrichien, bundesliga autrichienne, WAC"
+  keywords: "logo wolfsberger, logo foot wolfsberger ac, wolfsberger ac logo, logo wolfsberger ac, wolfsberger logo png, football autrichien, bundesliga autrichienne, WAC",
+  subCategory: 'austrian-clubs'
 };

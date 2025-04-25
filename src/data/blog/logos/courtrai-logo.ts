@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const courtraiLogoPost: BlogPost = {
@@ -78,6 +77,6 @@ Le logo continue d'inspirer :
 Le **KV Courtrai logo** reste un symbole fort du football belge, alliant histoire et modernité dans son expression visuelle.`,
   keywords: "logo courtrai, kv courtrai logo, logo de foot courtrai, logo kv courtrai, logo kv courtrai png, logo png courtrai",
   category: 'club-logos',
-  subCategory: 'club-logos',
+  subCategory: 'belgian-clubs',
   galleryImageId: 9331
 };

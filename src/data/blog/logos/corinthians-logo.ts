@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const corinthiansLogoPost: BlogPost = {
@@ -35,6 +34,6 @@ Le **logo de foot corinthians** est bien plus qu'un simple emblème sportif. Il 
 Le **logos do corinthians png** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée.`,
   keywords: "corinthians logo:20, corinthians logo png:20, logo corinthians:20, logo corinthians png:20, logo do corinthians:20, logo do corinthians png:20, corinthians fc logo:10, corinthian logo:10, logo corinthians football:10, logo de foot corinthians:10, logo png corinthians:10, logos do corinthians png:10",
   category: 'club-logos',
-  subCategory: 'non-european-clubs',
+  subCategory: 'brazilian-clubs',
   galleryImageId: null
 };

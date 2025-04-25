@@ -50,7 +50,7 @@ Le logo est devenu un symbole reconnu qui représente :
 
 Le logo du SC Heerenveen est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "heerenveen logo, logo heerenveen, sc heerenveen logo, logo sc heerenveen, sc heerenveen logo png, logo de foot heerenveen pays bas",
-  category: 'logos',
+  category: 'club-logos',
   subCategory: 'club-logos',
   galleryImageId: 9335
 };

@@ -6,7 +6,7 @@ import { interMiamiLogoPost } from '../inter-miami-logo';
 import { losAngelesGalaxyLogoPost } from '../los-angeles-galaxy-logo';
 import { africanClubsPost } from '../african-clubs';
 import { asianClubsPost } from '../asian-clubs';
-import { brazilianClubsPost } from '../brazilian-clubs';
+// Remove the import of brazilianClubsPost since the file no longer exists
 import { southAmericanClubsPost } from '../south-american-clubs';
 // Removing mlsLogoPost import as it's already in competitions group
 // import { mlsLogoPost } from '../mls-logos';
@@ -34,13 +34,14 @@ import { columbusCrewLogoPost } from '../columbus-crew-logo';
 import { sacramentoRepublicLogoPost } from '../sacramento-republic-logo';
 // Removing louisvilleCityLogoPost from here since it's already included in logos/index.ts
 // import { louisvilleCityLogoPost } from '../louisville-city-logo';
-// Remove direct imports of the two teams that are already included via brazilianClubsPost and southAmericanClubsPost
+// Remove direct imports of the two teams that are already included via southAmericanClubsPost
 // import { saoPauloLogoPost } from '../sao-paulo-logo';
 // import { corinthiansLogoPost } from '../corinthians-logo';
 import { newEnglandRevolutionLogoPost } from '../new-england-revolution-logo';
 import { fcDallasLogoPost } from '../fc-dallas-logo';
 import { austinFcLogoPost } from '../austin-fc-logo';
 import { houstonDynamoLogoPost } from '../houston-dynamo-logo';
+import { damacFcLogoPost } from '../damac-fc-logo'; // Add the import for Damac FC
 
 export const nonEuropeanClubPosts: BlogPost[] = [
   alHilalLogoPost,
@@ -55,7 +56,7 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   seattleSoundersLogoPost,
   coloradoRapidsLogoPost,
   realSaltLakeLogoPost,
-  brazilianClubsPost,
+  // Remove the brazilianClubsPost reference
   southAmericanClubsPost,
   interMiamiLogoPost,
   losAngelesGalaxyLogoPost,
@@ -74,5 +75,6 @@ export const nonEuropeanClubPosts: BlogPost[] = [
   newEnglandRevolutionLogoPost,
   fcDallasLogoPost,
   austinFcLogoPost,
-  houstonDynamoLogoPost
+  houstonDynamoLogoPost,
+  damacFcLogoPost
 ];

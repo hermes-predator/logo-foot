@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const tunisiaLogoPost: BlogPost = {
@@ -67,7 +66,7 @@ Cette capacité à se réinventer tout en restant fidèle à ses racines fait du
 
 Le **logo tunisie** transcende son simple rôle d'identité visuelle pour devenir un véritable symbole national. À travers ses couleurs, ses formes et ses symboles, il raconte l'histoire d'une nation fière de son football et déterminée à se faire une place toujours plus importante sur la scène internationale. Que ce soit dans sa version officielle utilisée par la fédération ou dans ses déclinaisons numériques comme le **logo tunisie png**, l'emblème des Aigles de Carthage continue de faire battre le cœur des supporters tunisiens et de représenter dignement le pays à travers le monde.`,
   keywords: "logo tunisie, tunisie logo, logo tunisie foot, logo tunisie football, logo de la tunisie, logo de tunisie, logo equipe de foot tunisie, logo equipe national tunisie, logo equipe tunisie, logo foot tunisie, logo tunisie png, tunisie foot logo, tunisie logo foot",
-  category: 'logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   galleryImageId: 159
 };

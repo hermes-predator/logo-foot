@@ -1,12 +1,9 @@
 
 #!/bin/bash
 
-# Make the update script executable
+# Rendre le script exécutable
 chmod +x scripts/update-blog-categories.sh
-echo "Made update-blog-categories.sh executable."
+echo "Script update-blog-categories.sh rendu exécutable."
 
-# Execute the script with proper permissions
-echo "Running update-blog-categories.sh..."
-bash ./scripts/update-blog-categories.sh
-
-echo "Script execution completed!"
+# Exécuter le script
+bash scripts/update-blog-categories.sh

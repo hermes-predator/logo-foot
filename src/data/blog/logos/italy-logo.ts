@@ -6,6 +6,8 @@ export const italyLogoPost: BlogPost = {
   title: "Logo Italie : Histoire et Évolution de l'Emblème Azzurri [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Italie, son évolution au fil du temps et la signification des symboles qui représentent l'une des sélections les plus titrées du football mondial.",
   date: "2024-05-14",
+  category: 'national-logos', // Modification de la catégorie
+  subCategory: 'national-logos', // Ajout du sous-category
   galleryImageId: 87,
   content: `# Logo Italie : L'Histoire de l'Emblème des Azzurri
 

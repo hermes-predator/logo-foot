@@ -69,5 +69,7 @@ L'emblème trouve de multiples applications :
 
 Le **logo Genk** continue d'évoluer tout en préservant son essence historique, symbolisant la modernisation du club tout en honorant ses racines.`,
   keywords: "logo genk, krc genk logo, belgian football club logo",
+  category: 'club-logos',
+  subCategory: 'belgian-clubs',
   galleryImageId: null
 };

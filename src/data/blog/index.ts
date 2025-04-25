@@ -131,7 +131,7 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
 
 // Filtre explicite avant de traiter les IDs
 const allPosts = [
-  ...logoPosts,
+  ...logoPosts.filter(post => post.id !== 306), // Filter out the blasonsEquipesFootballPost from logoPosts
   ...historyPosts,
   ...technicalPosts,
   ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),

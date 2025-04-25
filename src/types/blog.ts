@@ -1,6 +1,4 @@
 
-import { BlogPost } from './blog';
-
 export interface BlogPost {
   id: number,
   title: string,

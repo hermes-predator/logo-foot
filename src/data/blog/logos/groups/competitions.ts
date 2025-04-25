@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -5,7 +6,7 @@ import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
 import { premierLeagueLogoPost } from '../premier-league-design';
 import { faCupLogoPost } from '../fa-cup-logo';
-import { bundesligaLogoPost } from '../bundesliga-brand'; // Déjà présent
+import { bundesligaLogoPost } from '../bundesliga-brand';
 import { copaDelReyLogoPost } from '../copa-del-rey-logo';
 import { worldCupLogoPost } from '../world-cup-logo';
 import { serieALogoPost } from '../serie-a-logo';
@@ -31,7 +32,6 @@ import { ligaMxLogoPost } from '../liga-mx-logo';
 import { dflSupercupLogoPost } from '../dfl-supercup-logo';
 import { communityShieldLogoPost } from '../community-shield-logo';
 import { tacaDePortugalLogoPost } from '../taca-de-portugal-logo';
-import { bundesligaLogoPost } from '../bundesliga-brand';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,

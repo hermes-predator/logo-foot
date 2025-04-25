@@ -6,6 +6,7 @@ export const choletLogoPost: BlogPost = {
   title: "Logo Cholet : Histoire et Évolution de l'Écusson du SO Cholet [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Cholet, un emblème qui représente la fierté du football des Mauges depuis des décennies.",
   date: "2024-04-15",
+  category: "logos",
   content: `# Histoire du **Logo Cholet**
 
 Le **logo Cholet** représente l'identité visuelle du SO Cholet, un club emblématique du football des Pays de la Loire. L'évolution du **Cholet foot logo** témoigne de l'histoire riche du club et de son ancrage territorial.
@@ -72,7 +73,5 @@ Le **Cholet football logo** s'adapte à différents usages :
 - Utilisations autorisées
 - Variations permises`,
   keywords: "logo cholet, cholet logo, cholet foot logo, cholet football logo, so cholet logo, football cholet, club foot cholet, cholet sport",
-  category: 'club-logos',
-  subCategory: 'french-clubs',
   galleryImageId: 556
 };

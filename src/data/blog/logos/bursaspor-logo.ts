@@ -74,7 +74,7 @@ Le **bursaspor logo** s'utilise sur différents supports :
 - Adaptabilité aux supports
 - Protection de la marque`,
   keywords: "bursaspor logo, logo bursaspor, logo bursaspor png",
-  category: "club-logos",
-  subCategory: "club-logos",
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 565
 };

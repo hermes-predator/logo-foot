@@ -1,3 +1,4 @@
+
 import { BlogPost } from "../../../types/blog";
 
 export const erzurumsporLogoPost: BlogPost = {
@@ -5,7 +6,7 @@ export const erzurumsporLogoPost: BlogPost = {
   title: "Logo Erzurumspor : Histoire et Signification de l'Emblème du Club Turc",
   excerpt: "Découvrez l'histoire fascinante derrière le logo d'Erzurumspor, un design qui reflète l'identité et la fierté du football turc.",
   date: "2024-04-22",
-  category: "club-logos",
+  category: "logos",
   content: `
 # Histoire et Analyse du Logo Erzurumspor
 
@@ -59,6 +60,5 @@ Aujourd'hui, le logo est utilisé sur :
 
 Le logo d'Erzurumspor est un excellent exemple de la façon dont un emblème sportif peut capturer l'essence d'une ville et de sa culture footballistique. Il continue d'évoluer tout en restant fidèle à ses racines historiques.
 `,
-  keywords: "erzurumspor logo, erzurumspor logo png, bb erzurumspor logo, logo football turc, emblème Erzurumspor, club football turquie, design logo football",
-  subCategory: 'turkish-clubs'
+  keywords: "erzurumspor logo, erzurumspor logo png, bb erzurumspor logo, logo football turc, emblème Erzurumspor, club football turquie, design logo football"
 };

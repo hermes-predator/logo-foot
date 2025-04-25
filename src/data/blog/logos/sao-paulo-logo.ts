@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const saoPauloLogoPost: BlogPost = {
@@ -33,7 +34,7 @@ Le **logo são paulo futebol clube** est bien plus qu'un simple emblème sportif
 
 Le **logo são paulo fc** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée, transcendant le simple statut d'emblème sportif.`,
   keywords: "são paulo logo:30, logo são paulo:20, logo do são paulo png:10, logo são paulo fc:10, são paulo fc logo:10, são paulo futebol clube logo:10",
-  category: 'club-logos',
-  subCategory: 'brazilian-clubs',
+  category: 'logos',
+  subCategory: 'non-european-clubs',
   galleryImageId: null
 };

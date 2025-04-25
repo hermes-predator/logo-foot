@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const morecambeLogoPost: BlogPost = {
@@ -33,7 +34,7 @@ Le logo est devenu un symbole important pour la communauté de Morecambe, repré
 
 Le **morecambe logo** est bien plus qu'un simple emblème sportif - c'est un symbole qui capture l'essence d'une ville côtière et de son club de football historique.`,
   keywords: "morecambe logo:20, logo morecambe:10, morecambe fc logo:10, morecambe logo png:10",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'english-clubs',
   galleryImageId: null
 };

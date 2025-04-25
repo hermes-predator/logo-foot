@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const dinamoMinskLogoPost: BlogPost = {
@@ -73,7 +74,7 @@ Le **logo png dinamo minsk** s'utilise sur différents supports :
 - Adaptabilité aux supports
 - Protection de la marque`,
   keywords: "logo dinamo minsk, logo png dinamo minsk",
-  category: 'club-logos',
-  subCategory: 'other-european-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 563
 };

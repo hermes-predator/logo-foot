@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const cskaSofiaLogoPost: BlogPost = {
@@ -76,7 +77,7 @@ Le **logo FK CSKA Sofia** continue d'inspirer :
 
 Le **CSKA Sofia logo** reste un symbole majeur du football bulgare, alliant tradition militaire et modernité dans son expression visuelle.`,
   keywords: "logo cska sofia, cska sofia logo, cska-sofia logo png, logo fk cska sofia",
-  category: 'club-logos',
-  subCategory: 'bulgarian-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 9327
 };

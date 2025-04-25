@@ -1,25 +1,77 @@
 
+import { BlogPost } from '../../../../types/blog';
+
+// Import non-European club logo posts
+import { interMiamiLogoPost } from '../inter-miami-logo';
+import { losAngelesGalaxyLogoPost } from '../los-angeles-galaxy-logo';
+import { africanClubsPost } from '../african-clubs';
+import { asianClubsPost } from '../asian-clubs';
+import { brazilianClubsPost } from '../brazilian-clubs';
+import { southAmericanClubsPost } from '../south-american-clubs';
+import { mlsLogoPost } from '../mls-logos';
+import { alNassrLogoPost } from '../al-nassr-logo';
+import { alHilalLogoPost } from '../al-hilal-logo';
+import { alAhliLogoPost } from '../al-ahli-logo';
+import { alIttihadLogoPost } from '../al-ittihad-logo';
+// Remove direct import of alEttifaqLogoPost since it's included via asianClubsPost
+// import { alEttifaqLogoPost } from '../al-ettifaq-logo';
+import { tigresUanlLogoPost } from '../tigres-uanl-logo';
+import { chicagoFireLogoPost } from '../chicago-fire-logo';
+import { atlantaUnitedLogoPost } from '../atlanta-united-logo';
 import { newYorkCityFcLogoPost } from '../new-york-city-fc-logo';
-import { newYorkRedBullsLogoPost } from '../new-york-red-bulls-logo';
-import { newEnglandRevolutionLogoPost } from '../new-england-revolution-logo';
-import { palmeirasLogoPost } from '../palmeiras-logo';
+import { seattleSoundersLogoPost } from '../seattle-sounders-logo';
+import { coloradoRapidsLogoPost } from '../colorado-rapids-logo';
+import { realSaltLakeLogoPost } from '../real-salt-lake-logo';
 import { portlandTimbersLogoPost } from '../portland-timbers-logo';
-import { mlsLogosPost } from '../mls-logos';
+import { minnesotaUnitedLogoPost } from '../minnesota-united-logo';
+import { phoenixRisingLogoPost } from '../phoenix-rising-logo';
+import { newYorkRedBullsLogoPost } from '../new-york-red-bulls-logo';
+import { orlandoCityLogoPost } from '../orlando-city-logo';
+import { sanJoseEarthquakesLogoPost } from '../san-jose-earthquakes-logo';
+import { columbusCrewLogoPost } from '../columbus-crew-logo';
+// Import sacramentoRepublicLogoPost but make sure it's not duplicated elsewhere
+import { sacramentoRepublicLogoPost } from '../sacramento-republic-logo';
+// Removing louisvilleCityLogoPost from here since it's already included in logos/index.ts
+// import { louisvilleCityLogoPost } from '../louisville-city-logo';
+// Remove direct imports of the two teams that are already included via brazilianClubsPost and southAmericanClubsPost
+// import { saoPauloLogoPost } from '../sao-paulo-logo';
+// import { corinthiansLogoPost } from '../corinthians-logo';
+import { newEnglandRevolutionLogoPost } from '../new-england-revolution-logo';
+import { fcDallasLogoPost } from '../fc-dallas-logo';
+import { austinFcLogoPost } from '../austin-fc-logo';
+import { houstonDynamoLogoPost } from '../houston-dynamo-logo';
 
-// Suppression des imports qui causent des erreurs
-// minneapolisUnionLogoPost, montrealImpactLogoPost, olimpiaAsuncionLogoPost, philadelphiaUnionLogoPost
-
-export const nonEuropeanClubLogos = [
-  // Suppression des imports qui causent des erreurs
-  // minneapolisUnionLogoPost,
-  // minnesotaUnitedLogoPost,
-  // montrealImpactLogoPost,
-  newEnglandRevolutionLogoPost,
+export const nonEuropeanClubPosts: BlogPost[] = [
+  alHilalLogoPost,
+  alNassrLogoPost,
+  alAhliLogoPost,
+  alIttihadLogoPost,
+  // Remove alEttifaqLogoPost from here as it's already included in asianClubsPost
+  tigresUanlLogoPost,
+  chicagoFireLogoPost,
+  atlantaUnitedLogoPost,
   newYorkCityFcLogoPost,
-  newYorkRedBullsLogoPost,
-  // olimpiaAsuncionLogoPost,
-  // philadelphiaUnionLogoPost,
-  palmeirasLogoPost,
+  seattleSoundersLogoPost,
+  coloradoRapidsLogoPost,
+  realSaltLakeLogoPost,
+  brazilianClubsPost,
+  southAmericanClubsPost,
+  interMiamiLogoPost,
+  losAngelesGalaxyLogoPost,
+  africanClubsPost,
+  asianClubsPost,
+  mlsLogoPost,
   portlandTimbersLogoPost,
-  mlsLogosPost
+  minnesotaUnitedLogoPost,
+  newYorkRedBullsLogoPost,
+  phoenixRisingLogoPost,
+  orlandoCityLogoPost,
+  sanJoseEarthquakesLogoPost,
+  columbusCrewLogoPost,
+  sacramentoRepublicLogoPost,
+  // Removing louisvilleCityLogoPost from here to avoid duplication
+  newEnglandRevolutionLogoPost,
+  fcDallasLogoPost,
+  austinFcLogoPost,
+  houstonDynamoLogoPost
 ];

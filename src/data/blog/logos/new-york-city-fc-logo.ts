@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const newYorkCityFcLogoPost: BlogPost = {
@@ -71,7 +72,8 @@ Le **logo new york city** illustre parfaitement comment une franchise sportive r
 
 Plus qu'un simple emblème, le **logo new york city png** est devenu un symbole d'appartenance pour une communauté de supporters en pleine croissance et un ambassadeur visuel pour la ville de New York dans l'univers du football international. Sa conception soignée et sa pertinence continue font du **new york city official logo** un cas d'étude fascinant dans le domaine du design sportif et un exemple que de nombreuses nouvelles franchises cherchent à suivre.`,
   keywords: "logo new york city:140, logo new york city fc:20, new york city fc logo:20, new york city football club logo:20, new york city logo:20, new york city logo png:20, new york city official logo:20, logo de new york city:10, logo de foot new york city:10",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };
+

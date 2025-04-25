@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const farenseLogoPost: BlogPost = {
@@ -67,7 +68,8 @@ Dans l'ère moderne du football, le **SC Farense logo** continue de :
 
 Le **logo Farense** est devenu un symbole reconnaissable du football portugais, incarnant l'histoire riche et les ambitions d'un club profondément ancré dans sa région.`,
   keywords: "farense logo, logo farense, logo sc farense, sc farense logo",
-  category: 'club-logos',
-  subCategory: 'portuguese-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 436
 };
+

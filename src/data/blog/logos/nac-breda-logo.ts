@@ -34,7 +34,7 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 
 Le logo de NAC Breda est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**logo nac breda**, **nac breda logo**, **logo de foot nac breda**",
-  category: 'club-logos',
-  subCategory: 'other-european-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 9342
 };

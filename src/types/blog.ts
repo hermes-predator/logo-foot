@@ -1,6 +1,4 @@
 
-import { BlogPost } from './blog';
-
 export interface BlogPost {
   id: number,
   title: string,
@@ -9,7 +7,7 @@ export interface BlogPost {
   content: string,
   keywords?: string,
   category: BlogCategory,
-  subCategory?: string, 
+  subCategory?: string, // Adding this back as optional to maintain backward compatibility
   galleryImageId?: number,
   readingTime?: number,
   previousPostId?: number,
@@ -19,27 +17,19 @@ export interface BlogPost {
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
 export const BLOG_CATEGORIES = {
-  'club-logos': {
-    name: 'Logos de Clubs',
-    description: 'Découvrez notre collection de logos de football des plus grands clubs du monde entier.'
+  logos: {
+    name: 'Logos',
+    description: 'Découvrez notre collection de logos de football des plus grands clubs et équipes nationales.'
   },
-  'national-logos': {
-    name: 'Logos de Nations',
-    description: 'Explorez les emblèmes des équipes nationales de football et leur symbolisme.'
-  },
-  'competition-logos': {
-    name: 'Logos de Compétitions',
-    description: 'Découvrez les logos des plus grandes compétitions de football : Champions League, Europa League, coupes nationales et internationales.'
-  },
-  'players': {
+  players: {
     name: 'Joueurs',
     description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
   },
-  'legacy': {
+  legacy: {
     name: 'Histoire du football',
     description: 'Articles historiques sur les logos et compétitions emblématiques du football à travers les époques.'
   },
-  'technical': {
+  technical: {
     name: 'Techniques',
     description: 'Guides et astuces pour comprendre et maîtriser les techniques de design de logos de football.'
   },
@@ -48,4 +38,3 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
-

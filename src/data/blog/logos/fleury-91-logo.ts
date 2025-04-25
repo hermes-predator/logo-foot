@@ -1,10 +1,11 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const fleuryLogoPost: BlogPost = {
   id: 99,
   title: "**Logo Fleury 91** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
-  category: "club-logos",
+  category: "logos",
   excerpt: "Découvrez l'histoire du **logo Fleury 91**, son évolution et sa signification. Guide complet sur l'emblème du **FC Fleury 91** avec analyse détaillée de son identité visuelle.",
   content: `# Guide Complet du **Logo Fleury 91**
 

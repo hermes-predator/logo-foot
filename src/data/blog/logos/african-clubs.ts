@@ -82,6 +82,6 @@ Tendances Design CAF
 
 Le futur du design africain combine richement tradition ancestrale et innovation digitale.`,
   keywords: "logos football africain, design clubs africains, emblèmes foot afrique, écusson al ahly, logo tp mazembe, design wydad, foot africain",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos'
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const portValeLogoPost: BlogPost = {
@@ -5,7 +6,7 @@ export const portValeLogoPost: BlogPost = {
   title: "**Logo Port Vale** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Port Vale FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Port Vale à travers les années.",
   date: "2024-04-20",
-  category: "club-logos",
+  category: "logos",
   content: `# L'Histoire Fascinante du **Logo Port Vale**
 
 Le **port vale logo** est bien plus qu'un simple emblème sportif, c'est le symbole d'une tradition footballistique profondément ancrée dans le comté de Staffordshire. À travers son histoire, le **port vale fc logo** est devenu un puissant vecteur d'identité pour toute une communauté de supporters passionnés.

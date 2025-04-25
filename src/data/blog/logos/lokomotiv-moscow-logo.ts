@@ -74,7 +74,7 @@ Le **logo foot lokomotiv moscou** s'utilise sur différents supports :
 - Versions adaptatives
 - Protection du design`,
   keywords: "logo foot lokomotiv moscou, logo lokomotiv moscou, logo lokomotiv moscou png, logo png lokomotiv moscou, lokomotiv moscou logo, lokomotiv moscou logo png",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos',
   galleryImageId: 560
 };

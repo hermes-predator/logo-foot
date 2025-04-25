@@ -34,7 +34,7 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 
 Le logo de FC Groningen est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**groningen logo**, **fc groningen logo**, **logo fc groningen**, **groningen logo png**, **fc groningen logos**, **logo de foot groningen pays bas**, **logo fc groningen png**",
-  category: 'club-logos',
-  subCategory: 'dutch-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 9339
 };

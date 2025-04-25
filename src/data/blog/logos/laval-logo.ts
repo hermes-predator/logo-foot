@@ -62,6 +62,6 @@ Alors que le Stade Lavallois continue d'écrire son histoire sur les terrains na
 
 Les prochaines évolutions du **laval logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
   keywords: "laval logo, logo laval, logo de laval, logo laval foot, laval logo png, logo laval png, logo stade lavallois, stade lavallois logo, stade lavallois logo png, image logo stade lavallois, logo stade lavallois png, stade lavallois logo png tranparent",
-  category: 'club-logos',
-  subCategory: 'french-clubs'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

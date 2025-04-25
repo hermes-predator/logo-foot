@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const dynamoKievLogoPost: BlogPost = {
@@ -66,5 +65,5 @@ Impact du Logo
 
 Le logo du Dynamo Kiev est un puissant vecteur d'identité et de fierté pour les supporters du club. Son histoire riche et son symbolisme fort en font un emblème incontournable du football ukrainien.`,
   keywords: "logo dynamo kiev, emblème dynamo kiev, symbole dynamo kiev, histoire logo dynamo kiev, signification logo dynamo kiev, écusson dynamo kiev, blason dynamo kiev, design logo dynamo kiev, évolution logo dynamo kiev, identité visuelle dynamo kiev, branding dynamo kiev, club ukrainien logo, football ukrainien emblème, héritage dynamo kiev, tradition dynamo kiev logo",
-  category: 'club-logos'
+  category: 'logos'
 };

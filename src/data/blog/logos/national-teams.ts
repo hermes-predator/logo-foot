@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const nationalTeamsPost: BlogPost = {
@@ -69,6 +68,6 @@ Innovations Design
 
 L'avenir des emblèmes nationaux continuera d'évoluer tout en préservant l'essence patriotique qui les caractérise.`,
   keywords: "logos équipes nationales, écusson sélection football, emblème équipe nationale, design maillot foot",
-  category: 'national-logos',
-  subCategory: 'general'
+  category: 'logos',
+  subCategory: 'national-logos'
 };

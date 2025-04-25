@@ -74,7 +74,7 @@ Le **logo krasnodar fc** s'adapte parfaitement à tous les supports :
 - Versions adaptables
 - Protection de la marque`,
   keywords: "krasnodar logo, logo krasnodar, fc krasnodar logo, krasnodar fc logo, logo de foot krasnodar russie, logo fk krasnodar, logo foot krasnodar, logo krasnodar fc",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos',
   galleryImageId: 558
 };

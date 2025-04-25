@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const stadeMayennaisLogoPost: BlogPost = {
@@ -76,7 +77,6 @@ Le **logo Stade Mayennais FC** continue d'influencer :
 
 Le **logo Stade Mayennais** demeure un symbole fort de l'identité du club, conjuguant tradition et modernité dans son expression visuelle.`,
   keywords: "logo stade mayennais, logo stade mayennais fc",
-  category: 'club-logos',
-  subCategory: 'french-clubs',
+  category: 'logos',
   galleryImageId: 9325
 };

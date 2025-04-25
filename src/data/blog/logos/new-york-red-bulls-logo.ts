@@ -34,7 +34,7 @@ Le **red bull new york logo** est bien plus qu'un simple emblème sportif. Il es
 
 Le **logo New York Red Bulls** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole d'identité et d'innovation. À travers ses lignes dynamiques et son symbolisme fort, il raconte l'histoire d'une équipe unique dans le paysage du football américain.`,
   keywords: "logo new york red bull:20, logo red bull new york:20, new york red bulls logo:20, new york red bulls logo png:20, new york red bull logo:10, new york red bull logo png:10, red bull new york logo:10",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };

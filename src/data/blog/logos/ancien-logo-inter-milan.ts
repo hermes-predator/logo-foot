@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoInterMilanPost: BlogPost = {
@@ -76,6 +77,7 @@ Le **logo inter milan ancien** continue d'inspirer :
 
 L'**ancien logo inter milan** demeure un témoin précieux de l'histoire du club, incarnant les valeurs et l'évolution d'une institution qui a profondément marqué le football mondial.`,
   keywords: "ancien logo inter milan, inter milan ancien logo, logo inter milan ancien, ancien logo de l'inter milan, inter milan logo ancien",
-  category: 'club-logos',
-  subCategory: 'italian-clubs'
+  category: 'logos',
+  subCategory: 'club-logos',
+  galleryImageId: 439
 };

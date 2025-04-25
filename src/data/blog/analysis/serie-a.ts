@@ -1,11 +1,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const serieAAnalysis: BlogPost = {
-  id: 5,
-  title: "Analyse Design des Logos de la Serie A : Art et Innovation [2024]",
-  excerpt: "Exploration des designs des logos de la Serie A italienne, entre tradition historique et innovation moderne. Focus sur les stratégies visuelles des plus grands clubs.",
-  date: "2024-02-18",
-  content: `Dans les ruelles de Turin, sur les places de Milan et dans les quartiers historiques de Rome, le football italien réinvente son image. La Serie A, berceau du catenaccio et du calcio romantique, embrasse aujourd'hui une révolution visuelle audacieuse qui bouleverse les codes traditionnels du football.
+  id: 7,
+  title: "Analyse Marketing des Logos de Serie A : Stratégies de Marque 2024",
+  excerpt: "Découvrez comment les clubs de Serie A modernisent leur identité visuelle et développent leur stratégie de marque pour conquérir le marché mondial.",
+  date: "2024-02-15",
+  content: `L'Innovation Italienne dans le Design Football
+
+Dans les ruelles de Turin, sur les places de Milan et dans les quartiers historiques de Rome, le football italien réinvente son image. La Serie A, berceau du catenaccio et du calcio romantique, embrasse aujourd'hui une révolution visuelle audacieuse qui bouleverse les codes traditionnels du football.
 
 La Métamorphose de la Juventus
 
@@ -28,6 +30,6 @@ L'Avenir du Design Football Italien
 La Serie A trace sa voie entre tradition et innovation. Les expériences en réalité augmentée font revivre les moments mythiques du calcio, pendant que les tokens des supporters donnent une nouvelle dimension à la passion des tifosi. Le design italien continue d'inspirer le monde du football, prouvant que la beauté du jeu peut aussi être visuelle.
 
 Au cœur de cette révolution, une certitude demeure : le football italien conserve cette touche d'élégance qui le caractérise depuis toujours. Les logos et les marques évoluent, mais la passion reste intacte, aussi brûlante que les fumigènes des ultras un soir de derby.`,
-  keywords: "design serie a, logos football italien, analyse emblèmes calcio, identité visuelle italie football, branding calcio, écussons football italien",
-  category: 'club-logos'
+  keywords: "analyse marketing serie a, branding clubs italiens, stratégie digitale calcio, design logos serie a, marketing football italien",
+  category: 'logos'
 };

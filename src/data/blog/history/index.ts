@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { evolutionHistory as evolutionPost } from './evolution';
 import { premierLeagueHistory as premierLeaguePost } from './premier-league';
@@ -10,12 +9,5 @@ export const historyPosts: BlogPost[] = [
   evolutionPost,
   premierLeaguePost,
   coupeFranceLogoPost
-  // Si vous souhaitez inclure cristianoRonaldoPost dans une autre catégorie, faites-le dans l'autre index
+  // Si vous souhaitez inclure cristianoRonaldoPost dans une autre catégorie, faites-le dans l’autre index
 ];
-
-// Update to use legacy category
-for (const post of historyPosts) {
-  if (post.category === 'club-logos' || post.category === 'national-logos' || post.category === 'legacy') {
-    post.category = 'legacy';
-  }
-}

@@ -62,6 +62,6 @@ Alors que l'USL Dunkerque continue d'écrire son histoire sur les terrains natio
 
 Les prochaines évolutions du **logo dunkerque** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
   keywords: "logo dunkerque, dunkerque logo, logo dunkerque foot, dunkerque fc logo, dunkerque foot logo, dunkerque logo png",
-  category: 'club-logos',
-  subCategory: 'french-clubs'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

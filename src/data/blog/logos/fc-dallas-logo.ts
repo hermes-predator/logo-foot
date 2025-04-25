@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const fcDallasLogoPost: BlogPost = {
@@ -41,7 +42,7 @@ Dans le paysage de la MLS, le **fc dallas logo png** s'est forgé une place part
 
 Le **dallas fc logo** demeure un symbole fort du football américain, incarnant à la fois l'histoire d'un club, l'identité d'une région et les aspirations d'une communauté passionnée.`,
   keywords: "dallas fc logo:20, fc dallas logo:20, fc dallas logo png:20, logo dallas fc:20",
-  category: 'club-logos',
-  subCategory: 'american-clubs',
+  category: 'logos',
+  subCategory: 'non-european-clubs',
   galleryImageId: 565
 };

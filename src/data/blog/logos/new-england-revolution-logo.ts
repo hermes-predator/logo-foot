@@ -42,7 +42,7 @@ Dans le paysage de la MLS, le **new england revolution logo png** s'est forgé u
 
 Le **new england revolution logo** demeure un symbole fort du football américain, incarnant à la fois l'histoire d'un club, l'identité d'une région et les aspirations d'une communauté passionnée.`,
   keywords: "logo new england revolution:20, new england revolution logo:20, new england revolution new logo:20, new england revolution logo png:10, new england revolution logos:10",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'non-european-clubs',
   galleryImageId: 564
 };

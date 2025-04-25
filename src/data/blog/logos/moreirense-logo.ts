@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const moreirenseLogoPost: BlogPost = {
@@ -61,7 +62,7 @@ Dans l'ère numérique moderne, le **logo Moreirense** continue de :
 
 Le **logo Moreirense** est devenu un symbole fort du football portugais, représentant la fierté d'une ville et l'ambition d'un club en constante évolution.`,
   keywords: "logo moreirense, moreirense fc logo, logo moreirense png, logo png moreirense",
-  category: 'club-logos',
-  subCategory: 'portuguese-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 433
 };

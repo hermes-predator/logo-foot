@@ -50,7 +50,7 @@ Le logo est devenu un symbole reconnu qui représente :
 
 Le logo de Fortuna Sittard est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**logo fortuna sittard**, **fortuna sittard logo**, **logo fortuna sittard png**",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos',
   galleryImageId: 9338
 };

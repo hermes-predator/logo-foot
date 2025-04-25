@@ -74,6 +74,6 @@ Le **supercopa de españa logo** a parcouru un long chemin depuis sa création, 
 Que ce soit dans sa version physique ornant le trophée convoité ou dans sa version numérique sur les plateformes médiatiques, le **logo supercopa de españa** continue de symboliser l'excellence du football espagnol et l'importance culturelle de cette compétition dans le paysage sportif national et international.
 `,
   keywords: "supercopa de españa logo, logo supercopa de españa, supercoupe d'espagne, compétition espagnole, rfef, trophée supercopa, football espagnol, supercoupe logo, supercopa emblème, design supercoupe",
-  category: "competition-logos",
+  category: "logos",
   subCategory: "competition-logos",
 };

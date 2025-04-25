@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const dudelangeLogoPost: BlogPost = {
@@ -67,7 +68,8 @@ Dans l'ère moderne du football, le **FC Dudelange logo PNG** continue de :
 
 Le **logo Dudelange** est devenu un symbole reconnaissable du football luxembourgeois, incarnant l'histoire riche et les ambitions d'un club profondément ancré dans sa région.`,
   keywords: "dudelange logo, dudelange fc logo, dudelange logo png, logo dudelange, logo fc dudelange, logo png dudelange",
-  category: 'club-logos',
-  subCategory: 'luxembourg-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 437
 };
+

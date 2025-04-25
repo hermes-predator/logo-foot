@@ -42,6 +42,6 @@ Si le **logo sporting club bastia** a su s'adapter aux exigences graphiques mode
 
 Aujourd'hui, alors que le club poursuit son aventure sportive, le **logo de bastia** continue de briller comme un phare d'identité corse dans le paysage du football français. Plus qu'un simple emblème sportif, le **bastia logo** reste un symbole vivant d'appartenance et de fierté qui transcende largement le cadre du football.`,
   keywords: "logo bastia, bastia logo, logo sc bastia, logo sporting club bastia, sc bastia logo, bastia logo png, logo bastia foot, logo de bastia, logo sc bastia png, sc bastia logo png, logo bastia png",
-  category: 'club-logos',
-  subCategory: 'french-clubs'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

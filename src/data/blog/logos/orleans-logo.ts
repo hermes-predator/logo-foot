@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const orleansLogoPost: BlogPost = {
@@ -112,5 +113,5 @@ Le **logo Orléans** représente bien plus qu'une simple identité graphique pou
 
 L'emblème aux couleurs rouge et jaune reste un symbole fort d'identification pour les supporters et incarne parfaitement l'esprit combatif et la fierté régionale qui caractérisent ce club du Centre-Val de Loire. Le **AS Orléans logo** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
   keywords: "logo orléans, orléans logo, as orléans logo, us orléans logo, logo us orléans, emblème orléans foot, écusson orléans, orléans fc logo, logo orléans football",
-  category: 'club-logos'
+  category: 'logos'
 };

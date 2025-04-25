@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const swedenLogoPost: BlogPost = {
@@ -45,7 +46,7 @@ Au-delà de sa dimension sportive, le **logo suede** est devenu un puissant symb
 
 Les joueurs qui portent fièrement le maillot orné du **logo suede foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **suede logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo suede, suede logo, logo suede foot, logo foot suede, logo club foot suede, equipe de foot suède logo, logo club football suede, logo suede football",
-  category: 'national-logos',
+  category: 'logos',
   subCategory: 'national-logos',
   galleryImageId: 52
 };

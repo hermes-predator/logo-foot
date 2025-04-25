@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const orlandoCityLogoPost: BlogPost = {
@@ -33,7 +34,7 @@ Le **orlando city fc logo** est bien plus qu'un simple emblème sportif. Il est 
 
 Le **orlando city new logo** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
   keywords: "logo orlando city:20, orlando city logo:20, orlando city logo png:20, orlando city sc logo:20, orlando city fc logo:10, orlando city new logo:10",
-  category: "club-logos",
+  category: 'logos',
   subCategory: 'non-european-clubs',
   galleryImageId: null
 };

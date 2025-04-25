@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const laLigaLogoPost: BlogPost = {
@@ -40,6 +41,6 @@ Au-delà de sa fonction d'identification, le **logo La Liga** incarne les valeur
 
 Alors que La Liga continue d'écrire son histoire et de renforcer sa position parmi les championnats d'élite, le **LaLiga logo** reste le témoin visuel de son héritage glorieux et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel mondial.`,
   keywords: "logo la liga, la liga logo, la liga logo png, logo de la liga, la liga nouveau logo, la liga logo png, logo la liga png, liga española logo, logo liga española, football espagnol logo, laliga santander logo, emblème liga, design football espagnol",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

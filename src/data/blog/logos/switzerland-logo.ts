@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const switzerlandLogoPost: BlogPost = {
@@ -68,6 +69,6 @@ Le **logo suisse png** est particulièrement utilisé pour les applications digi
 
 Cette perception positive renforce l'image de marque du **suisse foot logo** et contribue au rayonnement du football helvétique à l'échelle mondiale.`,
   keywords: "logo suisse, logo suisse foot, suisse logo, logo suisse football, logo foot suisse, suisse foot logo, logo club foot suisse, logo suisse png, équipe nationale suisse, croix suisse football, emblème suisse foot, drapeau suisse foot",
-  category: 'national-logos',
+  category: 'logos',
   subCategory: 'national-logos'
 };

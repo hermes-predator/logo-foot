@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const sivassporLogoPost: BlogPost = {
@@ -73,7 +74,7 @@ Le **logo sivasspor** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "logo sivasspor, sivasspor logo, sivasspor logo png",
-  category: 'club-logos',
-  subCategory: 'turkish-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 568
 };

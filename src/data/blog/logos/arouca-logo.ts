@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const aroucaLogoPost: BlogPost = {
@@ -67,6 +68,7 @@ Dans le contexte actuel du football, le **logo Arouca transparent** continue de 
 
 Le **logo Arouca** est devenu un symbole puissant du football portugais, incarnant l'histoire et les ambitions d'un club en constante évolution. Sa présence dans l'élite du football portugais témoigne du parcours remarquable du FC Arouca.`,
   keywords: "arouca logo, logo arouca, arouca logo png, fc arouca logo, logo arouca transparent, logo fc arouca",
-  category: 'club-logos',
-  subCategory: 'portuguese-clubs'
+  category: 'logos',
+  subCategory: 'club-logos',
+  galleryImageId: 434
 };

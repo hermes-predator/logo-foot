@@ -74,7 +74,7 @@ Le **konyaspor logo png** s'utilise sur de nombreux supports :
 - Adaptabilité multiformat
 - Protection de la marque`,
   keywords: "konyaspor logo, konyaspor logo png, logo konyaspor, logo de foot konyaspor turquie, logo foot konyaspor",
-  category: 'club-logos',
-  subCategory: 'turkish-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 566
 };

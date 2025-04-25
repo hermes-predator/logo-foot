@@ -53,5 +53,6 @@ Les éventuelles futures évolutions du **rodez logo png** s'inscriront probable
 
 Pour les décennies à venir, le **logo rodez** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club aveyronnais.`,
   keywords: "logo rodez, logo rodez foot, rodez logo, logo rodez png, rodez foot logo, rodez logo png",
-  category: "club-logos"
+  category: 'logos',
+  subCategory: 'club-logos'
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const gaziantepFkLogoPost: BlogPost = {
@@ -73,7 +74,7 @@ Le **logo gaziantep** s'utilise sur de nombreux supports :
 - Adaptabilité multiformat
 - Protection de la marque`,
   keywords: "gaziantep fk logo, gaziantep logo, logo gaziantep fk",
-  category: 'club-logos',
-  subCategory: 'turkish-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 567
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const adanaDemirsporLogoPost: BlogPost = {
@@ -68,8 +69,9 @@ L'emblème trouve de multiples applications :
 ## Héritage et Avenir
 
 Le **logo Adana Demirspor** continue d'évoluer tout en préservant son essence historique, symbolisant la modernisation du club tout en honorant ses racines.`,
-  keywords: "antalyaspor logo, logo antalyaspor, logo de foot antalyaspor turquie",
-  category: 'club-logos',
-  subCategory: 'turkish-clubs',
+  keywords: "logo adana demirspor, adana demirspor logo, adana demirspor logo png, football turc, super lig, emblème club turc",
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 570
 };
+

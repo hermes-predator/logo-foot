@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const polandLogoPost: BlogPost = {
@@ -51,7 +52,7 @@ Les **logo club de foot pologne** ont joué un rôle crucial dans le développem
 
 Cette réciprocité d'influence entre le **logo pologne foot** et les **logo club foot pologne** témoigne d'une culture footballistique intégrée où les différents niveaux du football polonais partagent des valeurs visuelles communes, renforçant ainsi l'identité nationale à travers un langage graphique cohérent qui transcende les rivalités locales.`,
   keywords: "logo pologne, logo pologne foot, logo foot pologne, pologne logo, logo de la pologne, logo pologne png, logo club de foot pologne, logo club foot pologne",
-  category: "national-logos",
-  subCategory: 'european-teams',
+  category: 'logos',
+  subCategory: 'national-logos',
   galleryImageId: 162
 };

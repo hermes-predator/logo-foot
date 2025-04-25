@@ -74,7 +74,8 @@ Le **logo js kabylie** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "js kabylie logo, logo js kabylie, logo png js kabylie",
-  category: 'club-logos',
-  subCategory: 'african-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 570
 };
+

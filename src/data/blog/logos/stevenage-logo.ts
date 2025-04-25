@@ -5,7 +5,7 @@ export const stevenageLogoPost: BlogPost = {
   id: 403,
   title: "**Logo Stevenage FC** : Histoire et Évolution de l'Emblème des Boro [2024]",
   date: "2025-04-13",
-  category: "club-logos",
+  category: "logos",
   subCategory: "english-clubs",
   excerpt: "Découvrez l'histoire fascinante du **logo Stevenage**, son évolution et la symbolique de cet emblème unique du football anglais.",
   content: `# **Logo Stevenage FC** : L'Histoire d'un Emblème Footballistique

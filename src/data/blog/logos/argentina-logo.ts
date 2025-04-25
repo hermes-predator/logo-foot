@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const argentinaLogoPost: BlogPost = {
@@ -75,7 +76,7 @@ Le **logo foot argentine** disponible en version png offre l'avantage de la tran
 
 Pour un usage respectueux de l'image de la sélection argentine, il est recommandé de se tourner vers ces canaux officiels plutôt que vers des sources tierces qui pourraient proposer des versions modifiées ou de qualité inférieure du **logo argentine**. Le respect de l'intégrité visuelle de l'emblème contribue à préserver sa valeur symbolique et son impact visuel unique dans l'univers du football mondial.`,
   keywords: "logo argentine, argentine logo, logo argentine foot, argentina logo, logo argentina, logo foot argentine, argentine foot logo, argentine logo foot, logo de l'argentine, argentina football logo, argentina logo png, argentine logo png",
-  category: 'national-logos',
+  category: 'logos',
   subCategory: 'national-logos',
   galleryImageId: 89
 };

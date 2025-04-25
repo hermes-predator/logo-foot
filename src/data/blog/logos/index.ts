@@ -1,86 +1,130 @@
 
-import { borussiaMgladbachLogoPost } from './borussia-mgladbach-logo';
-import { bayernMunichLogoPost } from './bayern-munich-logo';
-import { dortmundLogoPost } from './dortmund-logo';
-import { schalke04LogoPost } from './schalke-04-logo';
-import { werderBremenLogoPost } from './werder-bremen-logo';
-import { hambourgSVLogoPost } from './hambourg-sv-logo';
-import { stuttgartLogoPost } from './stuttgart-logo';
-
-import { algeriaLogoPost } from './algeria-logo';
-import { canLogoPost } from './can-logo';
-
-import { almereCityLogoPost } from './almere-city-logo';
-import { ajaxLogoPost } from './ajax-logo';
-import { cercleBrugesLogoPost } from './cercle-bruges-logo';
-import { lausanneSportLogoPost } from './lausanne-sport-logo';
-
-import { ligue1LogoPost } from './ligue1-logo';
-import { italianSerieALogoPost } from './italian-serie-a';
-import { jupilerProLeagueLogoPost } from './jupiler-pro-league-logo';
-import { knvbBekerLogoPost } from './knvb-beker-logo';
-import { lilleLogoPost } from './lille-logo';
-import { mechelenLogoPost } from './mechelen-logo';
-import { moroccoLogoPost } from './morocco-logo';
-import { netherlandsLogoPost } from './netherlands-logo';
-import { neuchatelXamaxLogoPost } from './neuchatel-xamax-logo';
-import { newcastleLogoPost } from './newcastle-logo';
+import { BlogPost } from '../../../types/blog';
+import { africanaClubPosts } from './groups/african-clubs';
+import { asianClubPosts } from './groups/asian-clubs';
+import { brazilianClubPosts } from './groups/brazilian-clubs';
+import { competitionPosts } from './groups/competitions';
+import { englishClubPosts } from './groups/english-clubs';
+import { frenchClubPosts } from './groups/french-clubs';
+import { generalContentPosts } from './groups/general-content';
+import { germanClubPosts } from './groups/german-clubs';
+import { italianClubPosts } from './groups/italian-clubs';
+import { nationalTeamPosts } from './groups/national-teams';
+import { nonEuropeanClubPosts } from './groups/non-european-clubs';
+import { otherEuropeanClubPosts } from './groups/other-european-clubs';
+import { portugueseClubPosts } from './groups/portuguese-clubs';
+import { southAmericanClubPosts } from './groups/south-american-clubs';
+import { spanishClubPosts } from './groups/spanish-clubs';
+import { etoileRougeBelgradeLogoPost } from './etoile-rouge-belgrade-logo';
+import { psgUltrasPost } from './psg-ultras';
+import { omUltrasPost } from './om-ultras';
+import { omLogoPost } from './om-logo';
+import { westHamLogoPost } from './west-ham-logo';
+import { westBromwichLogoPost } from './west-bromwich-logo';
+import { wolfsburgLogoPost } from './wolfsburg-logo';
+// Remove this individual reference since it's already part of spanishClubPosts
+// import { realMadridLogoPost } from './real-madrid-logo';
+import { cosenzaLogoPost } from './cosenza-logo';
+import { cittadellaLogoPost } from './cittadella-logo';
+import { reggianaLogoPost } from './reggiana-logo';
+import { saudiFootballClubLogosPost } from './saudi-football-club-logos';
+import { hajdukSplitLogoPost } from './hajduk-split-logo';
+import { ballonDorLogoPost } from './ballon-dor-logo';
+import { pixelArtPsgLogoPost } from './pixel-art-psg-logo';
+import { dinamoTbilisiLogoPost } from './dinamo-tbilisi-logo';
+import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
+import { rouenLogoPost } from './rouen-logo';
+import { usBoulogneLogoPost } from './us-boulogne-logo';
+import { stadeBriochinLogoPost } from './stade-briochin-logo';
+import { commentCreerLogoFootballPost } from './comment-creer-logo-football';
+import { avranchesLogoPost } from './avranches-logo';
+import { footballLogosHistoryPost } from './football-logos-history';
+import { middlesbroughLogoPost } from './middlesbrough-logo';
+import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
+import { derbyCountyLogoPost } from './derby-county-logo';
+import { millwallLogoPost } from './millwall-logo';
+import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
+import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
+import { tigresUanlLogoPost } from './tigres-uanl-logo';
+import { louisvilleCityLogoPost } from './louisville-city-logo';
 import { newEnglandRevolutionLogoPost } from './new-england-revolution-logo';
-import { newYorkCityFcLogoPost } from './new-york-city-fc-logo';
-import { newYorkRedBullsLogoPost } from './new-york-red-bulls-logo';
-import { niceLogoPost } from './nice-logo';
-import { nigeriaLogoPost } from './nigeria-logo';
-import { nimesLogoPost } from './nimes-logo';
-import { niortLogoPost } from './niort-logo';
+import { fcDallasLogoPost } from './fc-dallas-logo';
+import { austinFcLogoPost } from './austin-fc-logo';
+import { pecZwolleLogoPost } from './pec-zwolle-logo';
+import { rkcWaalwijkLogoPost } from './rkc-waalwijk-logo';
+import { nacBredaLogoPost } from './nac-breda-logo';
+import { willemIiLogoPost } from './willem-ii-logo';
+import { almereCityLogoPost } from './almere-city-logo';
+import { westerloLogoPost } from './westerlo-logo';
+import { austriaWienLogoPost } from './austria-wien-logo';
+import { rapidWienLogoPost } from './rapid-wien-logo';
+import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
+import { erzurumsporLogoPost } from './erzurumspor-logo';
+import { bandirmasporLogoPost } from './bandirmaspor-logo';
+import { guangzhouLogoPost } from './guangzhou-logo';
 
-// Collection de tous les logos
-export const allLogos = [
-  // German Clubs
-  borussiaMgladbachLogoPost,
-  bayernMunichLogoPost,
-  dortmundLogoPost,
-  schalke04LogoPost,
-  werderBremenLogoPost,
-  hambourgSVLogoPost,
-  stuttgartLogoPost,
-
-  // National Teams
-  algeriaLogoPost,
-  canLogoPost,
-  moroccoLogoPost,
-  netherlandsLogoPost,
-  nigeriaLogoPost,
-
-  // International Clubs
-  almereCityLogoPost,
-  ajaxLogoPost,
-  cercleBrugesLogoPost,
-  lausanneSportLogoPost,
-  lilleLogoPost,
-  mechelenLogoPost,
-  neuchatelXamaxLogoPost,
-  newcastleLogoPost,
+export const logoPosts: BlogPost[] = [
+  ...africanaClubPosts,
+  ...asianClubPosts,
+  ...brazilianClubPosts,
+  ...competitionPosts,
+  ...englishClubPosts,
+  ...frenchClubPosts,
+  ...generalContentPosts,
+  ...germanClubPosts,
+  ...italianClubPosts,
+  ...nationalTeamPosts,
+  ...nonEuropeanClubPosts,
+  ...otherEuropeanClubPosts,
+  ...portugueseClubPosts,
+  ...southAmericanClubPosts,
+  ...spanishClubPosts,
+  etoileRougeBelgradeLogoPost,
+  psgUltrasPost,
+  omUltrasPost,
+  omLogoPost,
+  westHamLogoPost,
+  westBromwichLogoPost,
+  wolfsburgLogoPost,
+  // Ce logo est déjà inclus dans spanishClubPosts, pas besoin de l'ajouter individuellement
+  // realMadridLogoPost,
+  cosenzaLogoPost,
+  cittadellaLogoPost,
+  reggianaLogoPost,
+  saudiFootballClubLogosPost,
+  hajdukSplitLogoPost,
+  ballonDorLogoPost,
+  pixelArtPsgLogoPost,
+  dinamoTbilisiLogoPost,
+  maccabiTelAvivLogoPost,
+  rouenLogoPost,
+  usBoulogneLogoPost,
+  stadeBriochinLogoPost,
+  commentCreerLogoFootballPost,
+  avranchesLogoPost,
+  footballLogosHistoryPost,
+  middlesbroughLogoPost,
+  blackburnRoversLogoPost,
+  derbyCountyLogoPost,
+  millwallLogoPost,
+  boltonWanderersLogoPost,
+  wycombeWanderersLogoPost,
+  tigresUanlLogoPost,
+  louisvilleCityLogoPost,
   newEnglandRevolutionLogoPost,
-  newYorkCityFcLogoPost,
-  newYorkRedBullsLogoPost,
-  niceLogoPost,
-  nimesLogoPost,
-  niortLogoPost,
-
-  // Competitions
-  ligue1LogoPost,
-  italianSerieALogoPost,
-  jupilerProLeagueLogoPost,
-  knvbBekerLogoPost
+  fcDallasLogoPost,
+  austinFcLogoPost,
+  pecZwolleLogoPost,
+  rkcWaalwijkLogoPost,
+  nacBredaLogoPost,
+  willemIiLogoPost,
+  almereCityLogoPost,
+  westerloLogoPost,
+  austriaWienLogoPost,
+  rapidWienLogoPost,
+  redBullSalzburgLogoPost,
+  erzurumsporLogoPost,
+  bandirmasporLogoPost,
+  guangzhouLogoPost,
 ];
 
-// Export tous les logos sous forme d'une collection (pour résoudre l'erreur d'importation)
-export const logoPosts = allLogos;
-
-// Export les groupes de logos spécifiques
-export * from './groups/german-clubs';
-export * from './groups/french-clubs';
-export * from './groups/national-teams';
-export * from './groups/other-european-clubs';
-export * from './groups/spanish-clubs';
-export * from './groups/non-european-clubs';

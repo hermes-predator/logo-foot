@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const barcelonaLogoPost: BlogPost = {
@@ -45,7 +46,7 @@ Pour la communauté mondiale des supporters du Barça, le **logo foot Barcelone*
 
 Qu'il soit arboré sur un maillot, un drapeau ou un écran de téléphone, le **logo du FC Barcelone** continue d'incarner des valeurs fortes et une histoire riche, faisant de cet emblème l'un des plus puissants et respectés du monde sportif.`,
   keywords: "logo barcelone, barcelone logo, logo fc barcelone, fc barcelone logo, barcelona logo, fc barcelona logo, logo du fc barcelone, logo barcelona, logo du barcelone, barcelone fc logo, barcelona logo png, logo barcelona png, logo barcelone fc, logo barcelone foot, logo foot barcelone, logo barcelone png",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos',
   galleryImageId: 50
 };

@@ -6,7 +6,7 @@ export const guangzhouLogoPost: BlogPost = {
   title: "**Logo Guangzhou FC** : Histoire et Évolution de l'Emblème Chinois [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Guangzhou**, un symbole emblématique du football chinois qui incarne la tradition et la modernité.",
   date: "2024-04-22",
-  category: "club-logos",
+  category: "logos",
   content: `
 # Le **Logo Guangzhou** : L'Histoire d'un Club Légendaire
 

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const psvEindhovenLogoPost: BlogPost = {
@@ -52,6 +53,6 @@ Les éventuelles futures évolutions du **logo psv eindhoven png** s'inscriront 
 
 Pour les décennies à venir, le **logo de foot psv eindhoven** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club dans le paysage footballistique européen.`,
   keywords: "logo psv eindhoven, psv eindhoven logo, logo psv eindhoven png, psv eindhoven logo png, logo de foot psv eindhoven, logo foot psv eindhoven",
-  category: "club-logos",
-  subCategory: 'other-european-clubs'
+  category: 'logos',
+  subCategory: 'club-logos'
 };

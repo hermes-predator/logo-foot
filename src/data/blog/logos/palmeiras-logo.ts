@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const palmeirasLogoPost: BlogPost = {
@@ -114,7 +115,7 @@ Que vous soyez un supporter passionné de Palmeiras ou simplement un amateur de 
 
 Pour les fans et les collectionneurs, posséder des images officielles du **logo palmeiras** ou des produits arborant le **palmeiras soccer logo** constitue une connexion tangible avec l'histoire riche et la tradition de la Sociedade Esportiva Palmeiras.
 `,
-  category: "club-logos",
+  category: "logos",
   subCategory: "southAmericanClubs",
   keywords: "logo palmeiras, palmeiras logo, palmeiras logo png, palmeiras soccer logo, logo del palmeiras",
   galleryImageId: 545,

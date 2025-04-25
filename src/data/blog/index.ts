@@ -72,9 +72,8 @@ const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
 
 // Statistiques des articles par catégorie (pour vérification)
 const countByCategory = {
-  'club-logos': logoPosts.filter(post => post.category === 'club-logos').length,
-  'national-logos': logoPosts.filter(post => post.category === 'national-logos').length,
-  legacy: historyPosts.length,
+  logos: logoPosts.length,
+  history: historyPosts.length,
   technical: technicalPosts.length,
   analysis: analysisPosts.length,
   pixelArt: pixelArtPosts.length
@@ -114,8 +113,6 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
 const allPosts = [...logoPosts, ...historyPosts, ...technicalPosts, ...analysisPosts, ...pixelArtPosts];
 console.log(`Nombre total d'articles avant traitement: ${allPosts.length}`);
 console.log(`- logoPosts: ${logoPosts.length}`);
-console.log(`  - club-logos: ${logoPosts.filter(post => post.category === 'club-logos').length}`);
-console.log(`  - national-logos: ${logoPosts.filter(post => post.category === 'national-logos').length}`);
 console.log(`- historyPosts: ${historyPosts.length}`);
 console.log(`- technicalPosts: ${technicalPosts.length}`);
 console.log(`- analysisPosts: ${analysisPosts.length}`);

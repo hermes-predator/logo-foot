@@ -80,6 +80,6 @@ Tendances Brasileirão
 - Métaverse ready
 - Digital merchandise`,
   keywords: "logo bresil foot, logos brasileirao, emblèmes foot brésil, écusson club brésilien, design foot brésilien, logos clubs brésiliens",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos'
 };

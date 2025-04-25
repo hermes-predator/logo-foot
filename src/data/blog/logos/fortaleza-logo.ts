@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const fortalezaLogoPost: BlogPost = {
@@ -41,7 +42,6 @@ Aujourd'hui, le **Fortaleza logo** est au cœur d'une stratégie de marque conte
 
 Le **logo Fortaleza** transcende son rôle d'emblème sportif pour devenir un symbole culturel fort. Il continue d'inspirer les générations de supporters et incarne les valeurs fondamentales du club : tradition, passion et excellence.`,
   keywords: "logo fortaleza, fortaleza logo, fortaleza logo png, logo do fortaleza, football brésilien, clube do ceara, emblème fortaleza",
-  category: 'club-logos',
-  subCategory: 'brazilian-clubs',
-  galleryImageId: null
+  category: "logos",
+  subCategory: "brazilian-clubs"
 };

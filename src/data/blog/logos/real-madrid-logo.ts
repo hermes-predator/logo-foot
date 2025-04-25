@@ -40,7 +40,7 @@ Au-delà de son rôle d'identification, le **logo Real Madrid** incarne les vale
 
 Alors que le club continue d'écrire son histoire, le **logo Real Madrid FC** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel mondial.`,
   keywords: "logo real madrid, real madrid logo, soccer real madrid logo, logo real madrid fc, real madrid logo football, real madrid football club logo, ecusson real madrid, blason real madrid, real madrid football logo, logo du real madrid, real madrid logo png, logo real madrid png, logo madrid real, logo de real madrid",
-  category: "club-logos",
-  subCategory: 'spanish-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 49
 };

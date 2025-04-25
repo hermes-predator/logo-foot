@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const cskaMoscowLogoPost: BlogPost = {
@@ -73,7 +74,7 @@ Le **logo foot CSKA Moscou** s'adapte à de nombreux supports :
 - Utilisations officielles
 - Versions autorisées`,
   keywords: "logo cska moscou, cska moscou logo, logo club foot cska moscou, logo cska moscou png, logo de foot cska moscou, logo foot cska moscou",
-  category: 'club-logos',
-  subCategory: 'russian-clubs',
+  category: 'logos',
+  subCategory: 'club-logos',
   galleryImageId: 559
 };

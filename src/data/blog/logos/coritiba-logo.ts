@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const coritibaLogoPost: BlogPost = {
@@ -27,7 +28,7 @@ Au fil des décennies, le **logo Coritiba** a connu plusieurs transformations su
 
 ## Un Symbole du Paraná
 
-Dans les rues de Curitiba et au-delà, le **logo Coritiba** est devenu bien plus qu'un simple emblème sportif. Il représente la fierté d'une région et l'identité d'une communauté passionnée de football.
+Dans les rues de Curitiba et au-delà, le **logo Coritiba** est devenu bien plus qu'un simple emblème sportif. Il représente la fierté d'une région, l'identité d'une communauté passionnée et l'histoire d'un club légendaire.
 
 ## Impact dans le Football Brésilien
 
@@ -41,6 +42,6 @@ Aujourd'hui, le **logo Coritiba** est au cœur d'une stratégie de marque modern
 
 Le **logo Coritiba** transcende son rôle d'emblème sportif pour devenir un symbole culturel fort. Il continue d'inspirer les générations de supporters et incarne les valeurs fondamentales du club : tradition, passion et excellence.`,
   keywords: "logo coritiba, coritiba logo, coritiba logo png, football brésilien, clube do paraná, emblème coritiba",
-  category: 'club-logos',
+  category: "logos",
   subCategory: "brazilian-clubs"
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const palermoLogoPost: BlogPost = {
@@ -78,6 +79,6 @@ Que vous soyez un supporter passionné du club sicilien ou simplement un amateur
 
 Dans la riche tapisserie des **logos tous les logos club foot** italiens, celui de Palerme continue de se distinguer par son originalité, son histoire et sa forte connexion avec l'identité sicilienne - garantissant sa place parmi les designs les plus reconnaissables dans l'univers visuel du calcio.`,
   keywords: "logo palerme, palerme logo, logo de foot palerme, logo equipe de foot de palerme, logo equipe de foot palerme, logo foot palerme, logo palerme italy, logo palerme png, logo png palerme, palerme fc nouveau logo, palerme logo png, tous les logo de foot, tous les logos de foot, logo de tous les club de foot, tous les logos des clubs de foot, tous les clubs de foot logo, logos tous les logos foot, logo de tous les club de foot nouveau, logo de tous les plus grand clubs de foot mondial, tous les logo de club de foot du monde, tous les logos de foot du monde, tous les clubs et logo de foot en europe",
-  category: 'club-logos',
+  category: 'logos',
   subCategory: 'club-logos'
 };

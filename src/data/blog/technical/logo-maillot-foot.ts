@@ -178,6 +178,6 @@ L'avenir verra probablement l'émergence de **logos sur maillot de foot** encore
 Pour les professionnels du design, du marketing sportif ou les passionnés de football, disposer d'une collection complète de **logos maillot de foot** de haute qualité est un atout inestimable. Notre pack premium offre précisément cette ressource, bien supérieure aux collections de PDF gratuites disponibles en ligne.
 `,
   keywords: "logo maillot de foot, logos maillot foot, logo sur maillot de foot, logos de maillot de foot, logos sur maillot de foot, écusson maillot, design maillot football, broderie logo football, logos clubs maillots",
-  category: 'logos',
+  category: 'technical',
   subCategory: 'technical-logos'
 };

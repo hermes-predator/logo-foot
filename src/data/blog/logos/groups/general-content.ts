@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import general content posts
@@ -11,7 +12,8 @@ import { unibetLogoPost } from '../unibet-logo';
 import { bwinLogoPost } from '../bwin-logo';
 // Remove footballLogosHistoryPost from this file
 import { logosFootPdfPost } from '../1001-logos-foot-pdf';
-import { logoMaillotFootPost } from '../logo-maillot-foot';
+// Import from the new location in technical directory
+import { logoMaillotFootPost } from '../../technical/logo-maillot-foot';
 // Remove blasonsEquipesFootballPost from this file
 import { ecussonsFootballPost } from '../ecussons-football';
 import { ecussonsClubFootEuropeenPost } from '../ecussons-club-foot-europeen';

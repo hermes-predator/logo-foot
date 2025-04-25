@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -38,7 +39,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
-import { logoMaillotFootPost } from './logo-maillot-foot';
+// Removed import of logoMaillotFootPost since it's now in the technical directory
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,

@@ -17,9 +17,13 @@ export interface BlogPost {
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
 export const BLOG_CATEGORIES = {
-  logos: {
-    name: 'Logos',
-    description: 'Découvrez notre collection de logos de football des plus grands clubs et équipes nationales.'
+  'club-logos': {
+    name: 'Logos de clubs',
+    description: 'Découvrez notre collection de logos de football des plus grands clubs du monde entier.'
+  },
+  'national-logos': {
+    name: 'Logos de sélections nationales',
+    description: 'Explorez les emblèmes des équipes nationales de football et leur symbolisme.'
   },
   players: {
     name: 'Joueurs',

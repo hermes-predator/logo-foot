@@ -63,7 +63,8 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 
-export const logoPosts: BlogPost[] = [
+// Update club logos category
+const clubLogoPosts = [
   ...africanaClubPosts,
   ...asianClubPosts,
   ...brazilianClubPosts,
@@ -73,7 +74,6 @@ export const logoPosts: BlogPost[] = [
   ...generalContentPosts,
   ...germanClubPosts,
   ...italianClubPosts,
-  ...nationalTeamPosts,
   ...nonEuropeanClubPosts,
   ...otherEuropeanClubPosts,
   ...portugueseClubPosts,
@@ -86,8 +86,6 @@ export const logoPosts: BlogPost[] = [
   westHamLogoPost,
   westBromwichLogoPost,
   wolfsburgLogoPost,
-  // Ce logo est déjà inclus dans spanishClubPosts, pas besoin de l'ajouter individuellement
-  // realMadridLogoPost,
   cosenzaLogoPost,
   cittadellaLogoPost,
   reggianaLogoPost,
@@ -125,6 +123,18 @@ export const logoPosts: BlogPost[] = [
   redBullSalzburgLogoPost,
   erzurumsporLogoPost,
   bandirmasporLogoPost,
-  guangzhouLogoPost,
+  guangzhouLogoPost
 ];
 
+// Update all club posts to use the 'club-logos' category
+for (const post of clubLogoPosts) {
+  if (post.category === 'logos') {
+    post.category = 'club-logos';
+  }
+}
+
+// Export all logo posts (combining club logos and national logos)
+export const logoPosts: BlogPost[] = [
+  ...clubLogoPosts,
+  ...nationalTeamPosts
+];

@@ -104,3 +104,11 @@ export const nationalTeamPosts: BlogPost[] = [
   uruguayLogoPost,
   usaLogoPost
 ];
+
+// Update all posts to use the 'national-logos' category
+for (const post of nationalTeamPosts) {
+  post.category = 'national-logos';
+  if (post.subCategory === 'national-logos' || !post.subCategory) {
+    post.subCategory = 'national-logos';
+  }
+}

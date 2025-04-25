@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const coteIvoireLogoPost: BlogPost = {
@@ -52,7 +51,7 @@ Le **logo cote d'ivoire** a su évoluer au fil du temps tout en conservant son e
 
 Les joueurs qui portent fièrement le maillot orné du **cote d'ivoire logo foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football africain et dont le **logo cote d'ivoire** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo cote d ivoire, logo cote d'ivoire foot, cote d'ivoire foot logo, cote d'ivoire logo, cote d'ivoire logo foot, logo cote d'ivoire, logo cote d'ivoire png, logo de cote d'ivoire, logo de la cote d'ivoire, logo foot cote d'ivoire",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 163
 };

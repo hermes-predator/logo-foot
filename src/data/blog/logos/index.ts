@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -21,8 +22,6 @@ import { omLogoPost } from './om-logo';
 import { westHamLogoPost } from './west-ham-logo';
 import { westBromwichLogoPost } from './west-bromwich-logo';
 import { wolfsburgLogoPost } from './wolfsburg-logo';
-// Remove this individual reference since it's already part of spanishClubPosts
-// import { realMadridLogoPost } from './real-madrid-logo';
 import { cosenzaLogoPost } from './cosenza-logo';
 import { cittadellaLogoPost } from './cittadella-logo';
 import { reggianaLogoPost } from './reggiana-logo';
@@ -35,12 +34,11 @@ import { maccabiTelAvivLogoPost } from './maccabi-tel-aviv-logo';
 import { rouenLogoPost } from './rouen-logo';
 import { usBoulogneLogoPost } from './us-boulogne-logo';
 import { stadeBriochinLogoPost } from './stade-briochin-logo';
-import { commentCreerLogoFootballPost } from './comment-creer-logo-football';
 import { avranchesLogoPost } from './avranches-logo';
 import { footballLogosHistoryPost } from './football-logos-history';
 import { middlesbroughLogoPost } from './middlesbrough-logo';
-import { blackburnRoversPost } from './blackburn-rovers-logo';
-import { derbyCountyPost } from './derby-county-logo';
+import { blackburnRoversLogoPost } from './blackburn-rovers-logo';
+import { derbyCountyLogoPost } from './derby-county-logo';
 import { millwallLogoPost } from './millwall-logo';
 import { boltonWanderersLogoPost } from './bolton-wanderers-logo';
 import { wycombeWanderersLogoPost } from './wycombe-wanderers-logo';
@@ -62,8 +60,6 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
-
-// Remove the import for creerLogoFootPost
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -103,8 +99,8 @@ export const logoPosts: BlogPost[] = [
   avranchesLogoPost,
   footballLogosHistoryPost,
   middlesbroughLogoPost,
-  blackburnRoversPost,
-  derbyCountyPost,
+  blackburnRoversLogoPost,
+  derbyCountyLogoPost,
   millwallLogoPost,
   boltonWanderersLogoPost,
   wycombeWanderersLogoPost,

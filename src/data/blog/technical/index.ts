@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { designPrinciples } from './design-principles';
 import { integrationGuide } from './integration-guide';
@@ -14,7 +13,8 @@ import { commentCreerLogoFootballPost } from '../logos/comment-creer-logo-footba
 import { creerLogoFootPost } from '../logos/creer-logo-foot';
 import { colorTheoryPost } from '../analysis/color-theory';
 import { footballEmblemsPost } from '../logos/football-emblems';
-import { footballLogosHistoryPost } from '../logos/football-logos-history';  // Ajout de l'import
+import { footballLogosHistoryPost } from '../logos/football-logos-history';
+import { blasonsEquipesFootballPost } from '../logos/blasons-equipes-football';  // New import
 
 export const technicalPosts: BlogPost[] = [
   designPrinciples,
@@ -31,5 +31,6 @@ export const technicalPosts: BlogPost[] = [
   creerLogoFootPost,
   colorTheoryPost,
   footballEmblemsPost,
-  footballLogosHistoryPost,  // Ajout de l'article
+  footballLogosHistoryPost,
+  blasonsEquipesFootballPost,  // Add the new post
 ];

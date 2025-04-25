@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const blasonsEquipesFootballPost: BlogPost = {
@@ -149,7 +148,6 @@ Qu'il s'agisse des **blasons club de foot anglais** chargés de tradition, des *
 
 Dans un sport en constante évolution commerciale et médiatique, les **blasons de foot** demeurent des ancrages identitaires essentiels, reliant le passé glorieux des clubs à leur futur ambitieux, tout en nourrissant la passion de millions de supporters à travers le monde.`,
   keywords: "blason équipe de foot, blason club de foot, blason de foot, blason equipe de foot anglaise, blason equipe de foot france, blason club de foot anglais, écusson foot, emblème football, logo club foot, histoire blason football",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'technical',
+  subCategory: 'design'
 };
-

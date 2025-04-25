@@ -1,10 +1,8 @@
 
 #!/bin/bash
 
-# Rendre le script exécutable
-chmod +x scripts/update-blog-categories.sh
-echo "Script update-blog-categories.sh rendu exécutable."
+# Rendre le script de mise à jour exécutable et l'exécuter
+chmod +x scripts/update-logo-categories.sh
+./scripts/update-logo-categories.sh
 
-# Exécuter le script
-bash scripts/update-blog-categories.sh
-
+echo "Script exécuté avec succès!"

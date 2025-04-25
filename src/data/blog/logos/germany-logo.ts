@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const germanyLogoPost: BlogPost = {
@@ -5,7 +6,7 @@ export const germanyLogoPost: BlogPost = {
   title: "Logo Allemagne : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Allemagne, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus grandes nations du football.",
   date: "2024-05-12",
-  category: 'logos',
+  category: 'national-logos',
   subCategory: 'national-logos',
   galleryImageId: 69,
   content: `# Logo Allemagne : L'Histoire de l'Emblème National Allemand

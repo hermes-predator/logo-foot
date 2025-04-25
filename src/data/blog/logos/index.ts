@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 import { africanaClubPosts } from './groups/african-clubs';
 import { asianClubPosts } from './groups/asian-clubs';
@@ -60,8 +59,8 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { bundesligaLogoPost } from './bundesliga-brand';
-// Remove the direct import of southAmericanClubsPost - this is causing the duplication
-// import { southAmericanClubsPost } from './south-american-clubs';
+import { southAmericanClubsPost } from './south-american-clubs';
+import { brazilianClubsPost } from './brazilian-clubs';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -124,6 +123,6 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
   bundesligaLogoPost,
-  // Remove this individual entry as it's already included in southAmericanClubPosts
-  // southAmericanClubsPost
+  southAmericanClubsPost, // Include the general South American clubs post separately
+  brazilianClubsPost // Include the general Brazilian clubs post separately
 ];

@@ -79,6 +79,6 @@ Son efficacité réside dans sa capacité à incarner à la fois l'héritage his
 
 Pour les supporters, le **logos nimes** représente un point de ralliement émotionnel, un symbole de fierté qui transcende les performances sportives fluctuantes pour incarner un attachement durable à des couleurs et à des valeurs. C'est cette dimension affective qui fait du **nimes olympique logo** non pas un simple emblème, mais un véritable patrimoine partagé.`,
   keywords: "logo nimes, logos nimes, logo nimes olympique, nimes logo, nimes olympique logo, logo nimes png, logo nimes foot, nimes logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

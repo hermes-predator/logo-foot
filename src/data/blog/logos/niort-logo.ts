@@ -52,6 +52,6 @@ Le **logo niort** transcende sa simple fonction d'emblème sportif pour devenir 
 
 Pour les passionnés de football et les amateurs de design, le **logo chamois niortais** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **niort logo** continuera de faire briller les couleurs bleues et blanches du club sur les terrains de football et au-delà.`,
   keywords: "logo niort, logo chamois niortais, chamois niortais logo, niort logo, chamois niort logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: 'club-logos',
+  subCategory: 'french-clubs'
 };

@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const ligue1LogoPost: BlogPost = {

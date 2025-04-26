@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 
 // Import national team logo posts
@@ -51,6 +50,7 @@ import { tunisiaLogoPost } from '../tunisia-logo';
 import { ukraineLogoPost } from '../ukraine-logo';
 import { uruguayLogoPost } from '../uruguay-logo';
 import { usaLogoPost } from '../usa-logo';
+import { turkeyLogoPost } from '../turkey-logo';
 
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
@@ -102,5 +102,6 @@ export const nationalTeamPosts: BlogPost[] = [
   tunisiaLogoPost,
   ukraineLogoPost,
   uruguayLogoPost,
-  usaLogoPost
+  usaLogoPost,
+  turkeyLogoPost,
 ];

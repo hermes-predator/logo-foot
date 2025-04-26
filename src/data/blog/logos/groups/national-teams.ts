@@ -72,6 +72,7 @@ import { peruLogoPost } from '../peru-logo';
 import { boliviaLogoPost } from '../bolivia-logo';
 import { rdCongoLogoPost } from '../rd-congo-logo';
 import { zambiaLogoPost } from '../zambia-logo';
+import { iranLogoPost } from '../iran-logo';
 
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
@@ -142,4 +143,5 @@ export const nationalTeamPosts: BlogPost[] = [
   boliviaLogoPost,
   rdCongoLogoPost,
   zambiaLogoPost,
+  iranLogoPost,
 ];

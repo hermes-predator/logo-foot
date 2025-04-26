@@ -22,7 +22,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
     >
       <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
         {post.galleryImageId && (
-          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl overflow-hidden border-l border-b border-gray-100/50">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl overflow-hidden border-l border-b border-gray-100/50 outline outline-1 outline-gray-200/50">
             <OptimizedImage
               src={`/images/gallery/${post.galleryImageId}.webp`}
               alt={post.title}

@@ -16,13 +16,21 @@ const DisclaimerDialog = () => (
           <div className="text-xs text-amber-800 space-y-6">
             <p>
               Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
+            </p>
 
+            <p>
               ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+            </p>
 
+            <p>
               Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+            </p>
 
+            <p>
               Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+            </p>
 
+            <p>
               ➔ Notre offre a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
             </p>
           </div>

@@ -48,12 +48,12 @@ const BlogHeader = () => {
           </div>
 
           <div className="mb-6">
-            <div className="inline-flex flex-wrap gap-2 p-0.5 bg-gray-50/50 rounded-lg shadow-inner border border-gray-100/80 px-3 py-2">
-              <Link to="/blog" className={`${getCategoryStyle(null)} ring-offset-1 focus:outline-none focus:ring-2 focus:ring-primary/30`}>
+            <div className="flex flex-wrap gap-2 p-0.5">
+              <Link to="/blog" className={getCategoryStyle(null)}>
                 Tout
               </Link>
               {categoriesToDisplay.map(([key, category]) => (
-                <Link key={key} to={`/blog?category=${key}`} className={`${getCategoryStyle(key)} ring-offset-1 focus:outline-none focus:ring-2 focus:ring-primary/30`}>
+                <Link key={key} to={`/blog?category=${key}`} className={getCategoryStyle(key)}>
                   {category.name}
                 </Link>
               ))}

@@ -13,9 +13,9 @@ const BlogHeader = () => {
 
   const getCategoryStyle = (category: string | null) => {
     if ((category === null && activeCategory === null) || category === activeCategory) {
-      return "px-3 py-1 bg-blue-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm hover:bg-blue-600";
+      return "px-3 py-1 bg-blue-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm";
     }
-    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
+    return "px-3 py-1 bg-white border border-blue-500/30 text-blue-600 hover:bg-blue-50 rounded-full text-sm transition-colors";
   };
 
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');

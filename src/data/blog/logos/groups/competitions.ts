@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -37,6 +38,7 @@ import { ekstraklasaLogoPost } from '../ekstraklasa-logo';
 import { eliteserienLogoPost } from '../eliteserien-logo';
 import { concacafLogoPost } from '../concacaf-logo';
 import { youthLeagueLogoPost } from '../youth-league-logo';
+import { europaConferenceLeagueLogoPost } from '../europa-conference-league-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -75,5 +77,6 @@ export const competitionPosts: BlogPost[] = [
   ekstraklasaLogoPost,
   eliteserienLogoPost,
   concacafLogoPost,
-  youthLeagueLogoPost
+  youthLeagueLogoPost,
+  europaConferenceLeagueLogoPost
 ];

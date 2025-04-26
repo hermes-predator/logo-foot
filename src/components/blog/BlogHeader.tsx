@@ -82,8 +82,8 @@ const BlogHeader = () => {
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        {/* Ajout de l'effet de survol avec la bande lumineuse */}
-                        <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
+                        {/* Effet de survol avec la bande lumineuse - animation optimisée */}
+                        <div className="absolute top-0 left-0 h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 transition-transform group-hover:animate-shine" />
                       </Link>
                     </Button>
                   </TooltipTrigger>

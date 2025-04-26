@@ -45,3 +45,4 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
+

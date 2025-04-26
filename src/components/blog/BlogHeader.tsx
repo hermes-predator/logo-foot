@@ -67,7 +67,7 @@ const BlogHeader = () => {
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-5 border border-amber-200/50 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-800 to-amber-600 text-lg">
+                <h3 className="font-bold text-black text-lg">
                   Vous cherchez tous les logos de football ?
                 </h3>
                 <p className="text-sm text-amber-700/90">

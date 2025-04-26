@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import national team logo posts
@@ -10,6 +11,7 @@ import { belgiumLogoPost } from '../belgium-logo';
 import { brazilLogoPost } from '../brazil-logo';
 import { bulgariaLogoPost } from '../bulgaria-logo';
 import { burkinaFasoLogoPost } from '../burkina-faso-logo';
+import { canadaLogoPost } from '../canada-logo';
 import { cameroonLogoPost } from '../cameroon-logo';
 import { chileLogoPost } from '../chile-logo';
 import { colombiaLogoPost } from '../colombia-logo';
@@ -63,6 +65,7 @@ export const nationalTeamPosts: BlogPost[] = [
   brazilLogoPost,
   bulgariaLogoPost,
   burkinaFasoLogoPost,
+  canadaLogoPost,
   cameroonLogoPost,
   chileLogoPost,
   colombiaLogoPost,

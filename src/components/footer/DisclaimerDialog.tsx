@@ -34,7 +34,7 @@ const DisclaimerDialog = () => (
             <Separator className="my-4 bg-amber-300/50" />
 
             <p>
-              ➔ Notre offre a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+              ➔ Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
             </p>
           </div>
         </div>

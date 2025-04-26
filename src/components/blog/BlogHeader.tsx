@@ -75,7 +75,7 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button 
                       asChild 
-                      className="bg-gradient-to-r from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden"
+                      className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden"
                     >
                       <Link to="/" className="flex items-center gap-2">
                         <Folder className="h-5 w-5 text-amber-600" />

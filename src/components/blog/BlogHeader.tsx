@@ -10,17 +10,13 @@ const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
 
-  // Fonction pour déterminer le style de la catégorie selon son état actif
   const getCategoryStyle = (category: string | null) => {
     if ((category === null && activeCategory === null) || category === activeCategory) {
-      // Style pour la catégorie active
-      return "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm transition-colors shadow-sm";
+      return "px-3 py-1 bg-gradient-to-br from-primary/10 to-primary/20 text-primary font-medium rounded-full text-sm transition-colors border border-primary/30 shadow-sm hover:bg-primary/15";
     }
-    // Style pour les autres catégories
-    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
+    return "px-3 py-1 bg-gray-100 hover:bg-gray-200/70 rounded-full text-sm transition-colors border border-gray-200/50 hover:border-primary/30";
   };
 
-  // Construire la liste des catégories à afficher (exclure legacy)
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
   return (

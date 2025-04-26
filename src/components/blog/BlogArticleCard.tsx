@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -21,17 +22,17 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
     >
       <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
         {post.galleryImageId ? (
-          <div className="absolute top-0 right-0 w-8 h-8 md:w-10 md:h-10 rounded-bl-xl overflow-hidden">
+          <div className="absolute top-0 right-0 w-10 h-10 md:w-12 md:h-12 rounded-bl-xl overflow-hidden">
             <OptimizedImage
               src={`/images/gallery/${post.galleryImageId}.webp`}
               alt={post.title}
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               className="w-full h-full object-cover"
             />
           </div>
         ) : (
-          <div className="absolute top-0 right-0 w-8 h-8 md:w-10 md:h-10 rounded-bl-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+          <div className="absolute top-0 right-0 w-10 h-10 md:w-12 md:h-12 rounded-bl-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
             <Image className="w-4 h-4 text-gray-400 opacity-50" />
           </div>
         )}

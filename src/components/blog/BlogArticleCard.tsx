@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import { Clock } from 'lucide-react';
 import { BlogPost } from '../../types/blog';
 import { useReadingTime } from '../../hooks/useReadingTime';
+import { OptimizedImage } from '../ui/optimized-image';
 
 interface BlogArticleCardProps {
   post: BlogPost;
@@ -19,7 +20,19 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
       className="block h-full"
       aria-label={`Lire l'article : ${post.title}`}
     >
-      <article className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
+      <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
+        {post.galleryImageId && (
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl overflow-hidden border-l border-b border-gray-100/50">
+            <OptimizedImage
+              src={`/images/gallery/${post.galleryImageId}.webp`}
+              alt={post.title}
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+        
         <div className="p-4 flex-1 flex flex-col">
           <div className="flex items-center gap-3 mb-3">
             <time 
@@ -34,11 +47,11 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
             </div>
           </div>
           
-          <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none">
+          <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 flex-none pr-20">
             {post.title}
           </h3>
           
-          <p className="text-sm text-gray-600 line-clamp-3 mb-3 flex-1">
+          <p className="text-sm text-gray-600 line-clamp-3 mb-3 flex-1 pr-16">
             {post.excerpt}
           </p>
           

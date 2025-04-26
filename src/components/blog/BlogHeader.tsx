@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -48,12 +49,12 @@ const BlogHeader = () => {
           </div>
 
           <div className="mb-6">
-            <div className="flex flex-wrap gap-2 p-0.5">
-              <Link to="/blog" className={getCategoryStyle(null)}>
+            <div className="inline-flex flex-wrap gap-2 p-0.5 bg-gray-50/50 rounded-lg shadow-inner border border-gray-100/80 px-3 py-2">
+              <Link to="/blog" className={`${getCategoryStyle(null)} ring-offset-1 focus:outline-none focus:ring-2 focus:ring-primary/30`}>
                 Tout
               </Link>
               {categoriesToDisplay.map(([key, category]) => (
-                <Link key={key} to={`/blog?category=${key}`} className={getCategoryStyle(key)}>
+                <Link key={key} to={`/blog?category=${key}`} className={`${getCategoryStyle(key)} ring-offset-1 focus:outline-none focus:ring-2 focus:ring-primary/30`}>
                   {category.name}
                 </Link>
               ))}

@@ -39,7 +39,7 @@ import { redBullSalzburgLogoPost } from './red-bull-salzburg-logo';
 import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
-// Removed import of logoMaillotFootPost since it's now in the technical directory
+import { copaSudamericanaLogoPost } from './copa-sudamericana-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -80,5 +80,6 @@ export const logoPosts: BlogPost[] = [
   redBullSalzburgLogoPost,
   erzurumsporLogoPost,
   bandirmasporLogoPost,
-  guangzhouLogoPost
+  guangzhouLogoPost,
+  copaSudamericanaLogoPost
 ];

@@ -84,7 +84,7 @@ const BlogHeader = () => {
                       </Link>
                     </Button>
                   </TooltipTrigger>
-                  <TooltipContent className="bg-gradient-to-r from-amber-100 to-orange-50 border border-amber-200/50">
+                  <TooltipContent className="bg-white border border-gray-200 text-gray-900">
                     <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
                   </TooltipContent>
                 </Tooltip>

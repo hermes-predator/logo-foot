@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const englandLogoPost: BlogPost = {
@@ -57,6 +56,6 @@ Le **logo angleterre** illustre parfaitement comment un symbole sportif peut tra
 
 Dans un monde où les identités visuelles sportives tendent parfois vers l'uniformisation et la simplification excessive, le **logo angleterre foot** se distingue par sa profondeur historique et sa puissance évocatrice. Ce **angleterre logo** continue de faire la fierté de millions de supporters qui voient dans ces trois lions bien plus qu'un simple écusson sportif : l'incarnation visuelle de leur passion nationale pour le football.`,
   keywords: "logo angleterre, angleterre logo, logo angleterre foot, logo angleterre football, logo foot angleterre, angleterre foot logo, angleterre logo foot, logo de l'angleterre, logo angleterre foot png, logo equipe angleterre foot, logo angleterre png, logo club foot angleterre, logo equipe de foot angleterre, logo equipe foot angleterre, three lions logo, emblème angleterre football, écusson angleterre, england football logo",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: 'logos', // J'ai laissé la catégorie à 'logos'
+  subCategory: 'national-logos' // J'ai ajouté explicitement le sous-catégorie 'national-logos'
 };

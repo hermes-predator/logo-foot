@@ -68,6 +68,8 @@ import { paraguayLogoPost } from '../paraguay-logo';
 import { venezuelaLogoPost } from '../venezuela-logo';
 import { peruLogoPost } from '../peru-logo';
 
+import { boliviaLogoPost } from '../bolivia-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -133,4 +135,5 @@ export const nationalTeamPosts: BlogPost[] = [
   paraguayLogoPost,
   venezuelaLogoPost,
   peruLogoPost,
+  boliviaLogoPost,
 ];

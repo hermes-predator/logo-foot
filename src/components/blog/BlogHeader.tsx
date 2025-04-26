@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -75,12 +76,14 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button 
                       asChild 
-                      className="bg-gradient-to-r from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base"
+                      className="bg-gradient-to-r from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden"
                     >
                       <Link to="/" className="flex items-center gap-2">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
+                        {/* Ajout de l'effet de survol avec la bande lumineuse */}
+                        <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
                       </Link>
                     </Button>
                   </TooltipTrigger>

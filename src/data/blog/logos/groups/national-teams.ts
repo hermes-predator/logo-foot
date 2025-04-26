@@ -64,6 +64,8 @@ import { sloveniaLogoPost } from '../slovenia-logo';
 // Importer le nouveau logo de la Finlande
 import { finlandLogoPost } from '../finland-logo';
 
+import { paraguayLogoPost } from '../paraguay-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -126,4 +128,5 @@ export const nationalTeamPosts: BlogPost[] = [
   southAfricaLogoPost,
   sloveniaLogoPost,
   finlandLogoPost,
+  paraguayLogoPost,
 ];

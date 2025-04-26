@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
-import { Clock } from 'lucide-react';
+import { Clock, Image } from 'lucide-react';
 import { BlogPost } from '../../types/blog';
 import { useReadingTime } from '../../hooks/useReadingTime';
 import { OptimizedImage } from '../ui/optimized-image';
@@ -21,7 +20,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
       aria-label={`Lire l'article : ${post.title}`}
     >
       <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
-        {post.galleryImageId && (
+        {post.galleryImageId ? (
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl overflow-hidden">
             <OptimizedImage
               src={`/images/gallery/${post.galleryImageId}.webp`}
@@ -30,6 +29,10 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
               height={128}
               className="w-full h-full object-cover"
             />
+          </div>
+        ) : (
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+            <Image className="w-12 h-12 text-gray-400 opacity-50" />
           </div>
         )}
         

@@ -31,7 +31,7 @@ const BlogHeader = () => {
 
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
-        <div className="relative bg-gradient-to-br from-white via-white/95 to-gray-50/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/80 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="relative bg-gradient-to-br from-white via-white/95 to-gray-50/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-lg transition-all duration-300">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />

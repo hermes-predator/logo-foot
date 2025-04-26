@@ -56,6 +56,7 @@ import { usaLogoPost } from '../usa-logo';
 import { turkeyLogoPost } from '../turkey-logo';
 import { walesLogoPost } from '../wales-logo';
 import { equateurLogoPost } from '../equateur-logo';
+import { icelandLogoPost } from '../iceland-logo';
 
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
@@ -113,4 +114,5 @@ export const nationalTeamPosts: BlogPost[] = [
   turkeyLogoPost,
   walesLogoPost,
   equateurLogoPost,
+  icelandLogoPost,
 ];

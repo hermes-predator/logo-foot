@@ -79,6 +79,9 @@ import { qatarLogoPost } from '../qatar-logo';
 // Import the new Iraq logo post
 import { iraqLogoPost } from '../iraq-logo';
 
+// Import Honduras logo post
+import { hondurasLogoPost } from '../honduras-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -151,4 +154,5 @@ export const nationalTeamPosts: BlogPost[] = [
   iranLogoPost,
   qatarLogoPost,
   iraqLogoPost,
+  hondurasLogoPost,
 ];

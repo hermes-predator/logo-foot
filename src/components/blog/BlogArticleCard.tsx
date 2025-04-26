@@ -22,18 +22,18 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
     >
       <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
         {post.galleryImageId ? (
-          <div className="absolute top-0 right-0 w-16 h-16 md:w-20 md:h-20 rounded-bl-xl overflow-hidden">
+          <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 rounded-bl-xl overflow-hidden">
             <OptimizedImage
               src={`/images/gallery/${post.galleryImageId}.webp`}
               alt={post.title}
-              width={80}
-              height={80}
+              width={64}
+              height={64}
               className="w-full h-full object-cover"
             />
           </div>
         ) : (
-          <div className="absolute top-0 right-0 w-16 h-16 md:w-20 md:h-20 rounded-bl-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
-            <Image className="w-8 h-8 text-gray-400 opacity-50" />
+          <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 rounded-bl-xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+            <Image className="w-6 h-6 text-gray-400 opacity-50" />
           </div>
         )}
         
@@ -85,3 +85,4 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
 };
 
 export default BlogArticleCard;
+

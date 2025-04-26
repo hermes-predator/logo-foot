@@ -1,9 +1,11 @@
+
 import { BlogPost } from '../../../../types/blog';
 
 // Import national team logo posts
 import { albaniaLogoPost } from '../albania-logo';
 import { algeriaLogoPost } from '../algeria-logo';
 import { argentinaLogoPost } from '../argentina-logo';
+import { armeniaLogoPost } from '../armenia-logo';
 import { australiaLogoPost } from '../australia-logo';
 import { austriaLogoPost } from '../austria-logo';
 import { belgiumLogoPost } from '../belgium-logo';
@@ -76,6 +78,7 @@ export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
   algeriaLogoPost,
   argentinaLogoPost,
+  armeniaLogoPost,
   australiaLogoPost,
   austriaLogoPost,
   belgiumLogoPost,
@@ -139,3 +142,4 @@ export const nationalTeamPosts: BlogPost[] = [
   boliviaLogoPost,
   rdCongoLogoPost,
 ];
+

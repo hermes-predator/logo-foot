@@ -81,8 +81,8 @@ const BlogHeader = () => {
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        {/* Effet de brillance amélioré et plus visible */}
-                        <div className="absolute top-0 left-0 h-full w-full z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 group-hover:animate-shine" />
+                        {/* Effet de brillance avec un contraste amélioré */}
+                        <div className="absolute top-0 left-0 h-full w-full z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-blue-100/40 to-transparent opacity-0 group-hover:animate-shine" />
                       </Link>
                     </Button>
                   </TooltipTrigger>

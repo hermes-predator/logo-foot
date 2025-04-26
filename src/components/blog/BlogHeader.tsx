@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -36,23 +35,23 @@ const BlogHeader = () => {
 
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
-        <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 shadow-sm">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="bg-gray-100 p-2 rounded-xl">
-              <BookOpen className="w-5 h-5 text-black" />
+        <div className="relative bg-gradient-to-br from-white via-white/95 to-gray-50/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/80 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="bg-gradient-to-br from-purple-100 to-white p-2 rounded-xl shadow-inner">
+              <BookOpen className="w-5 h-5 text-purple-700" />
             </div>
-            <h2 className="font-semibold text-gray-900">
+            <h2 className="font-semibold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
               Le Blog Logo-Foot
             </h2>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-5">
             <p className="text-base text-gray-700 leading-relaxed">
               Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.
             </p>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-6">
             <div className="flex flex-wrap gap-2">
               <Link to="/blog" className={getCategoryStyle(null)}>
                 Tout
@@ -65,24 +64,31 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-amber-50 rounded-xl p-5 border border-amber-200/70 shadow-inner py-6">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-5 border border-amber-200/50 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-gray-900 text-lg">Vous cherchez tous les logos de football ?</h3>
-                <p className="text-sm text-amber-800/80">Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé</p>
+                <h3 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-800 to-amber-600 text-lg">
+                  Vous cherchez tous les logos de football ?
+                </h3>
+                <p className="text-sm text-amber-700/90">
+                  Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé
+                </p>
               </div>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-gray-50 whitespace-nowrap text-gray-900 border border-gray-200 cursor-help group h-12 px-6 text-base">
+                    <Button 
+                      asChild 
+                      className="bg-gradient-to-r from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-900 border border-amber-200/50 shadow-sm hover:shadow group h-12 px-6 text-base"
+                    >
                       <Link to="/" className="flex items-center gap-2">
-                        <Folder className="h-5 w-5" />
+                        <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
-                        <ArrowRight className="h-5 w-5" />
+                        <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </Button>
                   </TooltipTrigger>
-                  <TooltipContent>
+                  <TooltipContent className="bg-gradient-to-r from-amber-100 to-orange-50 border border-amber-200/50">
                     <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
                   </TooltipContent>
                 </Tooltip>
@@ -96,4 +102,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

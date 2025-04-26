@@ -21,10 +21,10 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
       aria-label={`Lire l'article : ${post.title}`}
     >
       <article className="group relative flex flex-col bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden h-full">
-        {post.featuredImage && (
+        {post.galleryImageId && (
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 rounded-bl-xl overflow-hidden border-2 border-red-500 outline outline-4 outline-blue-300/50">
             <OptimizedImage
-              src={post.featuredImage}
+              src={`/images/gallery/${post.galleryImageId}.webp`}
               alt={post.title}
               width={128}
               height={128}

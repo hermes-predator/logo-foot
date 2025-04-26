@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../../types/blog';
 import { logoPosts } from './logos';
 import { historyPosts } from './history';
@@ -8,6 +9,7 @@ import { pixelArtPosts } from './pixel-art';
 // Import des articles à modifier
 import { laligaAnalysis } from './analysis/laliga';
 import { championsLeagueAnalysis } from './analysis/champions-league';
+// Fixing the import path - using ligue-1 with a hyphen instead of ligue1
 import { ligue1Analysis } from './analysis/ligue-1';
 import { bundesligaAnalysis } from './analysis/bundesliga';
 import { serieAAnalysis } from './analysis/serie-a';
@@ -15,60 +17,13 @@ import { premierLeagueAnalysis } from './analysis/premier-league';
 
 // Modification des articles pour la catégorie competition-logos
 const competitionArticles: BlogPost[] = [
-  { 
-    ...laligaAnalysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/laliga.webp' 
-  },
-  { 
-    ...championsLeagueAnalysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/champions-league.webp'
-  },
-  { 
-    ...ligue1Analysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/ligue1.webp'
-  },
-  { 
-    ...bundesligaAnalysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/bundesliga.webp'
-  },
-  { 
-    ...serieAAnalysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/serie-a.webp'
-  },
-  { 
-    ...premierLeagueAnalysis, 
-    category: 'competition-logos', 
-    subCategory: 'competition-logos',
-    featuredImage: '/images/gallery/premier-league.webp'
-  }
+  { ...laligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...championsLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...ligue1Analysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...bundesligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...serieAAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' }
 ];
-
-// Ajout des images pour quelques articles de test
-const addFeaturedImages = (posts: BlogPost[]): BlogPost[] => {
-  return posts.map((post, index) => {
-    // Ajoutons des images à quelques articles pour tester
-    if (index % 3 === 0) {
-      return {
-        ...post,
-        featuredImage: `/lovable-uploads/${index % 10 === 0 ? '0962b530-529a-4878-85cb-a1720e91e2ad.png' :
-                         index % 7 === 0 ? '0e31da73-efe5-4f8a-9edc-581fa5d23995.png' : 
-                         index % 5 === 0 ? '170059cc-f820-48d2-9a57-93c93a1ce8a7.png' :
-                         '229a8e75-4cd5-49d4-850f-82a71f5aa7da.png'}`
-      };
-    }
-    return post;
-  });
-};
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
@@ -176,12 +131,12 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
 
 // Filtre explicite avant de traiter les IDs
 const allPosts = [
-  ...addFeaturedImages(logoPosts.filter(post => post.id !== 306)),
-  ...addFeaturedImages(historyPosts),
-  ...addFeaturedImages(technicalPosts),
-  ...addFeaturedImages(analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id))),
+  ...logoPosts.filter(post => post.id !== 306), // Filter out the blasonsEquipesFootballPost from logoPosts
+  ...historyPosts,
+  ...technicalPosts,
+  ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),
   ...competitionArticles,
-  ...addFeaturedImages(pixelArtPosts)
+  ...pixelArtPosts
 ];
 
 // Explicitement filtrer l'article 9134 et l'article avec ID 257 (logoMaillotFoot) avant d'appliquer la fonction ensureUniqueIds
@@ -194,7 +149,6 @@ blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 
 // Log pour débogage
 console.log(`Nombre total d'articles après traitement des doublons: ${blogPosts.length}`);
-console.log(`Nombre d'articles avec images: ${blogPosts.filter(post => post.featuredImage).length}`);
 
 // Afficher un message plus visible dans la console
 console.log('%c 📚 STATISTIQUES DU BLOG 📚', 'background: #3498db; color: white; font-size: 16px; padding: 5px;');

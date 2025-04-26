@@ -15,7 +15,7 @@ const BlogHeader = () => {
     if ((category === null && activeCategory === null) || category === activeCategory) {
       return "px-3 py-1 bg-blue-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm";
     }
-    return "px-3 py-1 bg-white border border-blue-500/30 text-blue-600 hover:bg-blue-50 rounded-full text-sm transition-colors";
+    return "px-3 py-1 bg-white border border-blue-500/30 text-blue-600 hover:bg-blue-50 hover:border-blue-500/50 rounded-full text-sm transition-all duration-200 ease-in-out transform hover:scale-[1.02]";
   };
 
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');

@@ -10,13 +10,17 @@ const BlogHeader = () => {
   const [searchParams] = useSearchParams();
   const activeCategory = searchParams.get('category');
 
+  // Fonction pour déterminer le style de la catégorie selon son état actif
   const getCategoryStyle = (category: string | null) => {
     if ((category === null && activeCategory === null) || category === activeCategory) {
-      return "relative px-3 py-1 bg-primary text-white font-medium rounded-full text-xs transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 before:absolute before:inset-0 before:bg-white/10 before:rounded-full before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-300";
+      // Style pour la catégorie active
+      return "px-3 py-1 bg-primary text-white font-medium rounded-full text-sm transition-colors shadow-sm";
     }
-    return "relative px-3 py-1 bg-gray-100/80 hover:bg-gray-200/90 rounded-full text-xs transition-all duration-300 hover:shadow hover:-translate-y-0.5 active:translate-y-0";
+    // Style pour les autres catégories
+    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
 
+  // Construire la liste des catégories à afficher (exclure legacy)
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
   return (
@@ -48,7 +52,7 @@ const BlogHeader = () => {
           </div>
 
           <div className="mb-6">
-            <div className="flex flex-wrap gap-2 p-0.5">
+            <div className="flex flex-wrap gap-2">
               <Link to="/blog" className={getCategoryStyle(null)}>
                 Tout
               </Link>

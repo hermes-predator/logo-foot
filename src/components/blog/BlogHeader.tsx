@@ -81,7 +81,7 @@ const BlogHeader = () => {
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        <div className="absolute top-0 right-0 h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-gray-500/30 to-transparent opacity-50 group-hover:animate-shine" />
+                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-gray-200/20 to-gray-300/30 opacity-30 group-hover:opacity-60 group-hover:via-gray-500/40 group-hover:to-gray-500/50 group-hover:animate-shine transition-opacity duration-300" />
                       </Link>
                     </Button>
                   </TooltipTrigger>

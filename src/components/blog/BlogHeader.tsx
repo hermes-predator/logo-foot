@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,9 +13,9 @@ const BlogHeader = () => {
 
   const getCategoryStyle = (category: string | null) => {
     if ((category === null && activeCategory === null) || category === activeCategory) {
-      return "px-3 py-1 bg-gradient-to-br from-primary/10 to-primary/20 text-primary font-medium rounded-full text-sm transition-colors border border-primary/30 shadow-sm hover:bg-primary/15";
+      return "px-3 py-1 bg-blue-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm hover:bg-blue-600";
     }
-    return "px-3 py-1 bg-gray-100 hover:bg-gray-200/70 rounded-full text-sm transition-colors border border-gray-200/50 hover:border-primary/30";
+    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
   };
 
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');

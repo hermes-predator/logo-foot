@@ -97,6 +97,9 @@ import { latviaLogoPost } from '../latvia-logo';
 // Import the new Luxembourg logo post
 import { luxembourgLogoPost } from '../luxembourg-logo';
 
+// Import the new Belarus logo post
+import { belarusLogoPost } from '../belarus-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -176,4 +179,5 @@ export const nationalTeamPosts: BlogPost[] = [
   lithuaniaLogoPost,
   latviaLogoPost,
   luxembourgLogoPost,
+  belarusLogoPost,
 ];

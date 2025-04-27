@@ -37,10 +37,10 @@ const DisclaimerDialog = () => (
 
         <Separator className="bg-gray-200/30" />
 
-        <div className="mt-4 p-6 border-2 border-gray-200/50 bg-gradient-to-br from-gray-50 to-gray-50/50 rounded-xl shadow-inner">
+        <div className="mt-4 p-6 border-2 border-gray-100/50 bg-gradient-to-br from-gray-50 to-gray-50/50 rounded-xl shadow-inner">
           <div className="flex items-start gap-4">
-            <Info className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1" />
-            <div className="text-sm leading-relaxed text-gray-900/90 space-y-6">
+            <Info className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1" />
+            <div className="text-sm leading-relaxed text-gray-800/90 space-y-6">
               <p>
                 Ce fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
               </p>

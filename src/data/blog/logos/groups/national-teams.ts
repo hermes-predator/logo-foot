@@ -112,6 +112,9 @@ import { madagascarLogoPost } from '../madagascar-logo';
 // Import Tanzania logo post
 import { tanzaniaLogoPost } from '../tanzania-logo';
 
+// Import Guatemala logo post
+import { guatemalaLogoPost } from '../guatemala-logo';
+
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
   algeriaLogoPost,
@@ -195,4 +198,5 @@ export const nationalTeamPosts: BlogPost[] = [
   capeVerdeLogoPost,
   madagascarLogoPost,
   tanzaniaLogoPost,
+  guatemalaLogoPost,
 ];

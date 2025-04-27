@@ -1,8 +1,6 @@
-
-// Nous refaisons l'ordre du tableau pour que les 3 premiers avis soient : Pierre M., Yassine B., Quentin D.
-// Sylvain B. est toujours après Loïc D.
 import React, { useState, useEffect, useCallback } from 'react';
-import { MessageCircle, Star } from 'lucide-react';
+import { MessageCircle, Star, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import {
   Carousel,
   CarouselContent,
@@ -234,7 +232,12 @@ const Testimonials = () => {
         </Carousel>
 
         <div className="flex items-center justify-center mt-6">
-          <div className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200 hover:border-gray-200">
+          <a 
+            href="https://judge.me" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group"
+          >
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
@@ -254,7 +257,11 @@ const Testimonials = () => {
                 <span className="text-[10px] font-semibold text-gray-600">{formattedAvgRating}/5</span>
               </div>
             </div>
-          </div>
+            <ExternalLink 
+              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
+              aria-hidden="true"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -262,4 +269,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-

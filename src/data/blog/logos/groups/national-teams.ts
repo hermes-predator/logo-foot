@@ -106,6 +106,9 @@ import { cyprusLogoPost } from '../cyprus-logo';
 // Import Cape Verde logo post
 import { capeVerdeLogoPost } from '../cape-verde-logo';
 
+// Import Madagascar logo post
+import { madagascarLogoPost } from '../madagascar-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -188,4 +191,5 @@ export const nationalTeamPosts: BlogPost[] = [
   belarusLogoPost,
   cyprusLogoPost,
   capeVerdeLogoPost,
+  madagascarLogoPost,
 ];

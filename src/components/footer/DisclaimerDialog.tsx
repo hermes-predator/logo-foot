@@ -15,29 +15,21 @@ const DisclaimerDialog = () => (
         <div className="flex items-start gap-4">
           <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
           <div className="text-sm leading-relaxed text-amber-900/90 space-y-6">
-            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
-              <p>
-                Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
-              </p>
-            </div>
+            <p>
+              Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
+            </p>
 
-            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
-              <p>
-                ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
-              </p>
-            </div>
+            <p>
+              ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+            </p>
 
-            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
-              <p>
-                Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
-              </p>
-            </div>
+            <p>
+              Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+            </p>
 
-            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
-              <p>
-                Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
-              </p>
-            </div>
+            <p>
+              Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+            </p>
 
             <Separator className="my-6 bg-amber-200/30" />
 

@@ -43,6 +43,7 @@ import { copaLibertadoresLogoPost } from '../copa-libertadores-logo';
 import { copaSudamericanaLogoPost } from '../copa-sudamericana-logo';
 import { copaDoBasilLogoPost } from '../copa-do-brasil-logo';
 import { scottishCupLogoPost } from '../scottish-cup-logo';
+import { qatarStarsLeagueLogoPost } from '../qatar-stars-league-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -86,5 +87,6 @@ export const competitionPosts: BlogPost[] = [
   copaLibertadoresLogoPost,
   copaSudamericanaLogoPost,
   copaDoBasilLogoPost,
-  scottishCupLogoPost
+  scottishCupLogoPost,
+  qatarStarsLeagueLogoPost
 ];

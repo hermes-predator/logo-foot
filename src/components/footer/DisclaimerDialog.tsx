@@ -33,8 +33,8 @@ const DisclaimerDialog = () => (
 
             <Separator className="my-6 bg-amber-200/30" />
 
-            <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm ml-0 mr-0">
-              <p className="font-medium">
+            <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm">
+              <p className="font-medium text-left">
                 Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
               </p>
             </div>

@@ -21,16 +21,25 @@ const DisclaimerDialog = () => (
               </p>
 
               <ul className="space-y-4 pl-4">
-                <li className="relative pl-6 before:content-['•'] before:absolute before:left-0 before:text-amber-600 before:font-bold">
-                  <span className="font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span> est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+                <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
+                  <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <p className="mt-1 text-amber-900/80">
+                    Une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+                  </p>
                 </li>
 
-                <li className="relative pl-6 before:content-['•'] before:absolute before:left-0 before:text-amber-600 before:font-bold">
-                  Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+                <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
+                  <span className="font-semibold text-amber-800">Utilisation légale</span>
+                  <p className="mt-1 text-amber-900/80">
+                    Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+                  </p>
                 </li>
 
-                <li className="relative pl-6 before:content-['•'] before:absolute before:left-0 before:text-amber-600 before:font-bold">
-                  Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+                <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
+                  <span className="font-semibold text-amber-800">Clause de non-responsabilité</span>
+                  <p className="mt-1 text-amber-900/80">
+                    Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+                  </p>
                 </li>
               </ul>
             </div>

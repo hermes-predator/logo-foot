@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info } from "lucide-react";
@@ -47,10 +46,20 @@ const DisclaimerDialog = () => (
             </div>
           </div>
         </div>
+
+        <div className="mt-4 p-6 border-2 border-gray-200/50 bg-gradient-to-br from-gray-50 to-gray-50/50 rounded-xl shadow-inner">
+          <div className="flex items-start gap-4">
+            <Info className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1" />
+            <div className="text-sm leading-relaxed text-gray-900/90 space-y-6">
+              <p>
+                Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </DialogContent>
   </Dialog>
 );
 
 export default DisclaimerDialog;
-

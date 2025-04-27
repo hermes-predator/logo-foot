@@ -169,8 +169,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                       color: "#FFE082",
                       filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))',
                       animation: 'cartMove 1.5s ease-in-out infinite',
-                      width: '23px',
-                      height: '23px',
+                      width: '22px',
+                      height: '22px',
                       transform: 'scale(1.1)',
                       transition: 'transform 0.3s ease'
                     }}

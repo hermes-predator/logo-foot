@@ -37,12 +37,14 @@ const DisclaimerDialog = () => (
 
         <Separator className="bg-amber-200/30" />
 
-        <div className="p-6 bg-blue-100/50 backdrop-blur-sm rounded-xl border border-blue-200/50 shadow-sm">
+        <div className="mt-4 p-6 border-2 border-blue-200/50 bg-gradient-to-br from-blue-50 to-sky-50/50 rounded-xl shadow-inner">
           <div className="flex items-start gap-4">
             <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-            <p className="text-sm font-medium text-blue-900/90">
-              Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
-            </p>
+            <div className="text-sm leading-relaxed text-blue-900/90 space-y-6">
+              <p>
+                Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -51,3 +53,4 @@ const DisclaimerDialog = () => (
 );
 
 export default DisclaimerDialog;
+

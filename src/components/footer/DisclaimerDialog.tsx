@@ -11,31 +11,41 @@ const DisclaimerDialog = () => (
       Disclaimer
     </DialogTrigger>
     <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-      <div className="mt-4 p-4 border border-amber-200 bg-amber-50 rounded-lg">
-        <div className="flex items-start gap-3">
-          <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-          <div className="text-xs text-amber-800 space-y-6">
-            <p>
-              Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
-            </p>
+      <div className="mt-4 p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">
+        <div className="flex items-start gap-4">
+          <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+          <div className="text-sm leading-relaxed text-amber-900/90 space-y-6">
+            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
+              <p>
+                Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
+              </p>
+            </div>
 
-            <p>
-              ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
-            </p>
+            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
+              <p>
+                ⦗FRONT-CLOUD⦘~ Football.zip est une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+              </p>
+            </div>
 
-            <p>
-              Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
-            </p>
+            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
+              <p>
+                Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+              </p>
+            </div>
 
-            <p>
-              Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
-            </p>
+            <div className="bg-white/50 backdrop-blur-sm p-4 rounded-lg border border-amber-100/50">
+              <p>
+                Nous ne revendiquons aucune affiliation, partenariat ou validation de la part des clubs, compétitions ou organisations citées ou représentées.
+              </p>
+            </div>
 
-            <Separator className="my-4 bg-amber-300/50" />
+            <Separator className="my-6 bg-amber-200/30" />
 
-            <p>
-              ➔ Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
-            </p>
+            <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm">
+              <p className="font-medium">
+                ➔ Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+              </p>
+            </div>
           </div>
         </div>
       </div>

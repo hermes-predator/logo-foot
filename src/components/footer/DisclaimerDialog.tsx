@@ -1,6 +1,7 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { AlertTriangle, Info } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const DisclaimerDialog = () => (
@@ -34,7 +35,6 @@ const DisclaimerDialog = () => (
 
             <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm -ml-10 -mr-0">
               <p className="flex items-center gap-4 -ml-10 -mr-0">
-                <Info className="w-8 h-8 text-amber-600 flex-shrink-0" />
                 <span className="font-medium">
                   Notre fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
                 </span>

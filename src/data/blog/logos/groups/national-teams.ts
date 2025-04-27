@@ -1,4 +1,4 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from '../../../../types/blog';
 
 // Import national team logo posts
 import { albaniaLogoPost } from '../albania-logo';
@@ -91,8 +91,6 @@ import { estoniaLogoPost } from '../estonia-logo';
 
 import { lithuaniaLogoPost } from '../lithuania-logo';
 
-import { latviaLogoPost } from '../latvia-logo';
-
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -170,5 +168,4 @@ export const nationalTeamPosts: BlogPost[] = [
   saudiArabiaLogoPost,
   estoniaLogoPost,
   lithuaniaLogoPost,
-  latviaLogoPost,
 ];

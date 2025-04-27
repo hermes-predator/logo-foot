@@ -91,6 +91,9 @@ import { estoniaLogoPost } from '../estonia-logo';
 
 import { lithuaniaLogoPost } from '../lithuania-logo';
 
+// Importer logo lettonie
+import { latviaLogoPost } from '../latvia-logo';
+
 // Group all national team logo posts
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -168,4 +171,5 @@ export const nationalTeamPosts: BlogPost[] = [
   saudiArabiaLogoPost,
   estoniaLogoPost,
   lithuaniaLogoPost,
+  latviaLogoPost,
 ];

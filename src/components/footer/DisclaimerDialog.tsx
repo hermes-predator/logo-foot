@@ -33,7 +33,7 @@ const DisclaimerDialog = () => (
 
             <Separator className="my-6 bg-amber-200/30" />
 
-            <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm">
+            <div className="bg-amber-100/50 backdrop-blur-sm p-4 rounded-lg border border-amber-200/50 shadow-sm -ml-6 -mr-6 pl-6 pr-6">
               <p className="flex items-start gap-4">
                 <Info className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 <span className="font-medium">
@@ -49,3 +49,4 @@ const DisclaimerDialog = () => (
 );
 
 export default DisclaimerDialog;
+

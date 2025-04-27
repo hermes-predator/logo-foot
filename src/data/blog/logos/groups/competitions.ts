@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../../types/blog';
 import { championsLeagueLogoPost } from '../champions-league-logo';
 import { europaLeagueLogoPost } from '../europa-league-logo';
@@ -41,6 +40,7 @@ import { youthLeagueLogoPost } from '../youth-league-logo';
 import { europaConferenceLeagueLogoPost } from '../europa-conference-league-logo';
 import { copaLibertadoresLogoPost } from '../copa-libertadores-logo';
 import { copaSudamericanaLogoPost } from '../copa-sudamericana-logo';
+import { copaDoBasilLogoPost } from '../copa-do-brasil-logo';
 
 export const competitionPosts: BlogPost[] = [
   championsLeagueLogoPost,
@@ -82,5 +82,6 @@ export const competitionPosts: BlogPost[] = [
   youthLeagueLogoPost,
   europaConferenceLeagueLogoPost,
   copaLibertadoresLogoPost,
-  copaSudamericanaLogoPost
+  copaSudamericanaLogoPost,
+  copaDoBasilLogoPost
 ];

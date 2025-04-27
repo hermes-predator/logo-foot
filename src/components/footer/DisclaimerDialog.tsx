@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info } from "lucide-react";
@@ -11,7 +10,7 @@ const DisclaimerDialog = () => (
       Disclaimer
     </DialogTrigger>
     <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-      <div className="mt-4 p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">
+      <div className="mt-4 p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner -mx-6">
         <div className="flex items-start gap-4">
           <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
           <div className="text-sm leading-relaxed text-amber-900/90 space-y-6">
@@ -49,4 +48,3 @@ const DisclaimerDialog = () => (
 );
 
 export default DisclaimerDialog;
-

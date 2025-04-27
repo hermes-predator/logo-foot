@@ -35,7 +35,7 @@ const DisclaimerDialog = () => (
           </div>
         </div>
 
-        <Separator className="bg-amber-200/30" />
+        <Separator className="bg-gray-200/30" />
 
         <div className="mt-4 p-6 border-2 border-blue-200/50 bg-gradient-to-br from-blue-50 to-sky-50/50 rounded-xl shadow-inner">
           <div className="flex items-start gap-4">

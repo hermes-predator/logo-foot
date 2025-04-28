@@ -120,6 +120,7 @@ import { montenegroLogoPost } from '../montenegro-logo';
 import { angolaLogoPost } from '../angola-logo';
 
 import { bosniaLogoPost } from '../bosnia-logo';
+import { zimbabweLogoPost } from '../zimbabwe-logo';
 
 export const nationalTeamPosts: BlogPost[] = [
   albaniaLogoPost,
@@ -208,4 +209,5 @@ export const nationalTeamPosts: BlogPost[] = [
   montenegroLogoPost,
   angolaLogoPost,
   bosniaLogoPost,
+  zimbabweLogoPost,
 ];

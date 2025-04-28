@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -60,8 +59,12 @@ const PaymentButton = () => {
             </div>
           </Button>
         </TooltipTrigger>
-        <TooltipContent side="top" className="bg-white border border-gray-200/70 shadow-md p-3 whitespace-nowrap text-base" role="tooltip">
-          <p className="text-sm font-medium text-gray-800">Accès immédiat en page d'après-paiement</p>
+        <TooltipContent 
+          side="top" 
+          className="bg-white border border-gray-200/70 shadow-md p-4 whitespace-nowrap" 
+          role="tooltip"
+        >
+          <p className="text-lg font-medium text-gray-800">Accès immédiat en page d'après-paiement</p>
         </TooltipContent>
       </Tooltip>
       <div className="sr-only">

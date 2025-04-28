@@ -184,16 +184,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-3">
-              <p className="text-xs font-semibold text-gray-800 pb-2 border-b border-gray-100">Téléchargement du fichier ZIP complet</p>
+            <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-4">
+              <p className="text-base font-semibold text-gray-800 pb-2 border-b border-gray-100">Téléchargement du fichier ZIP complet</p>
               <div className="pt-2 flex flex-col gap-1.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-gray-400 text-[10px] w-4 text-center">1</span>
-                  <span className="text-gray-500 text-xs">Paiement sécurisé via SumUp</span>
+                  <span className="text-gray-500 text-sm">Paiement sécurisé via SumUp</span>
                 </div>
                 <div className="flex items-start gap-1.5">
                   <span className="text-gray-400 text-[10px] w-4 text-center">2</span>
-                  <span className="text-gray-500 text-xs text-left">
+                  <span className="text-gray-500 text-sm text-left">
                     Accès en page d'après-paiement
                   </span>
                 </div>

@@ -11,7 +11,7 @@ const ContactForm = () => {
         </div>
         Support Client
       </h3>
-      <p>Si vous avez des questions, veuillez d'abord consulter la FAQ avant de nous contacter.</p>
+      <p>Si vous avez des questions, veuillez d'abord consulter notre FAQ avant de nous contacter.</p>
       <p>Vous avez passé commande ? Veuillez joindre quelques informations pour nous aider à vous identifier :</p>
       <ul className="list-disc ml-4 space-y-1 text-gray-800">
         <li className="font-medium tracking-tight">Votre nom et prénom</li>

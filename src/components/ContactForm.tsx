@@ -11,6 +11,12 @@ const ContactForm = () => {
         </div>
         Support Client
       </h3>
+      
+      <p className="flex items-center gap-2">
+        <Mail className="w-4 h-4" />
+        <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
+      </p>
+      
       <p>Si vous avez des questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
       <p>Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
       
@@ -36,11 +42,6 @@ const ContactForm = () => {
           <span className="font-medium text-gray-800">Votre preuve d'achat (reçu)</span>
         </div>
       </div>
-      
-      <p className="flex items-center gap-2 mt-4">
-        <Mail className="w-4 h-4" />
-        <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
-      </p>
       
       <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded-md">
         <p className="text-xs text-gray-500 flex items-start gap-2">

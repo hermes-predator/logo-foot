@@ -12,7 +12,7 @@ const ContactForm = () => {
         Support Client
       </h3>
       
-      <p className="flex items-center gap-2">
+      <p className="flex items-center gap-2 -mt-2 mb-4">
         <Mail className="w-4 h-4" />
         <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
       </p>

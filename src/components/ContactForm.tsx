@@ -5,17 +5,19 @@ import { Headphones, ShieldCheck, Mail, User, Calendar, Receipt } from 'lucide-r
 const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
-      <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
-        <div className="bg-blue-100 rounded-md p-1.5">
-          <Headphones className="w-4 h-4 text-blue-600" />
+      <div className="space-y-1">
+        <h3 className="font-medium text-base text-gray-900 flex items-center gap-2">
+          <div className="bg-blue-100 rounded-md p-1.5">
+            <Headphones className="w-4 h-4 text-blue-600" />
+          </div>
+          Support Client
+        </h3>
+        
+        <div className="flex items-center gap-2">
+          <Mail className="w-4 h-4" />
+          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
         </div>
-        Support Client
-      </h3>
-      
-      <p className="flex items-center gap-2 -mt-2 mb-4">
-        <Mail className="w-4 h-4" />
-        <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
-      </p>
+      </div>
       
       <p>Si vous avez des questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
       <p>Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Headphones, ShieldCheck, Mail } from 'lucide-react';
+import { Headphones, ShieldCheck, Mail, User, Calendar, Receipt } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -13,11 +13,30 @@ const ContactForm = () => {
       </h3>
       <p>Si vous avez des questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
       <p>Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
-      <ul className="list-disc ml-4 space-y-1 text-gray-800">
-        <li className="font-medium tracking-tight">Votre nom et prénom</li>
-        <li className="font-medium tracking-tight">La date et l'heure d'achat</li>
-        <li className="font-medium tracking-tight">Votre preuve d'achat (reçu)</li>
-      </ul>
+      
+      <div className="space-y-3">
+        <div className="flex items-center gap-3 pl-1">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <User className="w-4 h-4 text-gray-600" />
+          </div>
+          <span className="font-medium text-gray-800">Votre nom et prénom</span>
+        </div>
+        
+        <div className="flex items-center gap-3 pl-1">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <Calendar className="w-4 h-4 text-gray-600" />
+          </div>
+          <span className="font-medium text-gray-800">La date et l'heure d'achat</span>
+        </div>
+        
+        <div className="flex items-center gap-3 pl-1">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <Receipt className="w-4 h-4 text-gray-600" />
+          </div>
+          <span className="font-medium text-gray-800">Votre preuve d'achat (reçu)</span>
+        </div>
+      </div>
+      
       <p className="flex items-center gap-2 mt-4">
         <Mail className="w-4 h-4" />
         <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>

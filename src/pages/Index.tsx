@@ -27,8 +27,8 @@ const Index = () => {
     price: "29.90"
   });
 
-  // Meta description dynamique avec plus de mots-clés ciblés
-  const metaDescription = "Téléchargez plus de 8600 logos de foot en haute qualité : écussons et emblèmes des équipes de Ligue 1, Premier League, Liga, Serie A, Bundesliga et équipes nationales. Format PNG transparent idéal pour créations graphiques, sites web, vidéos et supports marketing.";
+  // Meta description dynamique mise à jour
+  const metaDescription = "Téléchargez plus de 8600 logo club de foot en une seule fois. Collection complète de logo des équipes de foot européennes et internationales.";
 
   // Protection anti-copie au niveau de la page entière
   useEffect(() => {

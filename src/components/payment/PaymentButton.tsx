@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -40,29 +39,23 @@ const PaymentButton = () => {
             aria-disabled={isProcessing}
             aria-describedby="payment-button-description"
           >
-            {/* Effet de brillance - uniquement pour le bouton, pas pour les icones */}
+            {/* Effet de brillance - maintenant importé directement sans lazy loading */}
             <ButtonEffects />
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
-              <div className="flex-shrink-0">
-                <ShoppingCart 
-                  className="h-16 w-16 text-white"
-                  strokeWidth={2.5}
-                  aria-hidden="true"
-                />
-              </div>
+              <ShoppingCart 
+                className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110"
+                aria-hidden="true"
+              />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-2xl" id="payment-button-description">
                   {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
                 </span>
               </div>
-              <div className="flex-shrink-0">
-                <ArrowRight 
-                  className="h-14 w-14 text-white"
-                  strokeWidth={2.5}
-                  aria-hidden="true"
-                />
-              </div>
+              <ArrowRight 
+                className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2"
+                aria-hidden="true"
+              />
             </div>
           </Button>
         </TooltipTrigger>

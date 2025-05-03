@@ -40,25 +40,29 @@ const PaymentButton = () => {
             aria-disabled={isProcessing}
             aria-describedby="payment-button-description"
           >
-            {/* Effet de brillance - maintenu pour l'effet visuel */}
+            {/* Effet de brillance - uniquement pour le bouton, pas pour les icones */}
             <ButtonEffects />
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
-              <ShoppingCart 
-                className="h-16 w-16 text-white"
-                strokeWidth={2.5}
-                aria-hidden="true"
-              />
+              <div className="flex-shrink-0">
+                <ShoppingCart 
+                  className="h-16 w-16 text-white"
+                  strokeWidth={2.5}
+                  aria-hidden="true"
+                />
+              </div>
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-2xl" id="payment-button-description">
                   {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
                 </span>
               </div>
-              <ArrowRight 
-                className="h-14 w-14 text-white"
-                strokeWidth={2.5}
-                aria-hidden="true"
-              />
+              <div className="flex-shrink-0">
+                <ArrowRight 
+                  className="h-14 w-14 text-white"
+                  strokeWidth={2.5}
+                  aria-hidden="true"
+                />
+              </div>
             </div>
           </Button>
         </TooltipTrigger>

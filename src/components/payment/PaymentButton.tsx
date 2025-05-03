@@ -45,8 +45,8 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
               <ShoppingCart 
-                className="h-14 w-14 text-white/90 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:text-white"
-                strokeWidth={2.2}
+                className="h-16 w-16 text-white transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110"
+                strokeWidth={2.5}
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">
@@ -55,8 +55,8 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="h-12 w-12 text-white/90 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2 group-hover:text-white"
-                strokeWidth={2.2}
+                className="h-14 w-14 text-white transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2"
+                strokeWidth={2.5}
                 aria-hidden="true"
               />
             </div>

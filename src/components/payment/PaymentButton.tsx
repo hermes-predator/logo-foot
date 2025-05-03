@@ -40,12 +40,12 @@ const PaymentButton = () => {
             aria-disabled={isProcessing}
             aria-describedby="payment-button-description"
           >
-            {/* Effet de brillance - maintenant importé directement sans lazy loading */}
+            {/* Effet de brillance - maintenu pour l'effet visuel */}
             <ButtonEffects />
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
               <ShoppingCart 
-                className="h-16 w-16 text-white transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110"
+                className="h-16 w-16 text-white"
                 strokeWidth={2.5}
                 aria-hidden="true"
               />
@@ -55,7 +55,7 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="h-14 w-14 text-white transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2"
+                className="h-14 w-14 text-white"
                 strokeWidth={2.5}
                 aria-hidden="true"
               />

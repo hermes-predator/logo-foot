@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="text-sm text-gray-600 space-y-4">
       <div className="space-y-1">
-        <h3 className="font-medium text-lg text-gray-900 flex items-center gap-3">
+        <h3 className="font-medium text-lg text-gray-900 flex items-center gap-4">
           <div className="bg-blue-100 rounded-md p-2.5">
             <Mail className="w-6 h-6 text-blue-600" />
           </div>

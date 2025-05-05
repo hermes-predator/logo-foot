@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, Trophy, Award } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -65,12 +65,11 @@ const BlogHeader = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h3 className="font-bold text-black text-lg flex items-center gap-2">
-                  <Trophy className="h-5 w-5 text-amber-600 flex-shrink-0" />
+                  <Download className="h-5 w-5 text-amber-600 flex-shrink-0" />
                   Vous cherchez tous les logos de football ?
                 </h3>
-                <p className="text-sm text-amber-700/90 flex items-center gap-2 mt-1">
-                  <Award className="h-4 w-4 text-amber-600 flex-shrink-0" />
-                  <span>Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé</span>
+                <p className="text-sm text-amber-700/90 mt-1 ml-7">
+                  Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé
                 </p>
               </div>
               <TooltipProvider>

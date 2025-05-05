@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Mail, User, Calendar, Ticket } from 'lucide-react';
+import { ShieldCheck, Mail, User, Calendar, Ticket, Clock } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -27,7 +27,7 @@ const ContactForm = () => {
         
         <div className="flex items-center gap-3 pl-1">
           <div className="bg-gray-100 p-1.5 rounded-md">
-            <Calendar className="w-4 h-4 text-gray-600" />
+            <Clock className="w-4 h-4 text-gray-600" />
           </div>
           <span className="font-medium text-gray-800">La date et l'heure d'achat</span>
         </div>

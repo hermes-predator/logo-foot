@@ -44,7 +44,7 @@ const DisclaimerDialog = () => {
                   <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
                     <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
                     <p className="mt-1 text-amber-900/80 text-xs sm:text-sm">
-                      • Une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+                      • Une ressource indépendante, compilée et organisée.
                       
                       <br /><br />
                       • Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.

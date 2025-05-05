@@ -18,11 +18,11 @@ const Footer = () => {
           <Dialog>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <MessageCircle className="w-4 h-4" />
-              Contactez-nous
+              Support Client
             </DialogTrigger>
             <DialogContent className="max-w-md">
               <DialogHeader>
-                <DialogTitle>Contactez-nous</DialogTitle>
+                <DialogTitle>Support Client</DialogTitle>
               </DialogHeader>
               <div className="mt-4">
                 <ContactForm />

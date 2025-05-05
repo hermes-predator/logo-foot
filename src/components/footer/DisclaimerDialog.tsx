@@ -12,7 +12,7 @@ const DisclaimerDialog = () => (
     </DialogTrigger>
     <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
       <DialogHeader>
-        <DialogTitle className="text-xl font-semibold text-amber-800">Disclaimer</DialogTitle>
+        <DialogTitle className="text-xl font-semibold text-black">Disclaimer</DialogTitle>
       </DialogHeader>
       <div className="space-y-6">
         <div className="mt-4 p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">

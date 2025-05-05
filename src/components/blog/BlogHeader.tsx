@@ -64,16 +64,12 @@ const BlogHeader = () => {
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-5 border border-amber-200/50 shadow-inner">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-black text-lg flex items-start gap-2">
-                  <div className="flex-shrink-0 flex items-center h-full mt-0.5">
-                    <AlertTriangle className="h-5 w-5 text-amber-600" />
-                  </div>
-                  <div>
-                    <span>Vous cherchez tous les logos de football ?</span>
-                    <p className="text-sm text-amber-700/90 mt-1">
-                      Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé
-                    </p>
-                  </div>
+                <h3 className="font-bold text-black text-lg">
+                  <span>Vous cherchez tous les logos de football ?</span>
+                  <p className="text-sm text-amber-700/90 mt-1 flex items-center gap-2">
+                    <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0" />
+                    <span>Recevez + de 8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé</span>
+                  </p>
                 </h3>
               </div>
               <TooltipProvider>

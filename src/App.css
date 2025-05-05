@@ -1,4 +1,5 @@
 
+
 /* Reset des styles par défaut */
 #root {
   width: 100%;
@@ -6,3 +7,18 @@
   padding: 0;
   text-align: left;
 }
+
+/* Améliorations pour la responsivité globale */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+

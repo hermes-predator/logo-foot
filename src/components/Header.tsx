@@ -1,12 +1,16 @@
-import { BookOpen, Home } from "lucide-react";
+
+import { BookOpen, Home, Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Header = () => {
   const location = useLocation();
   const currentPath = location.pathname;
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   // Fonction pour déterminer si le lien est actif
   const isActive = (path: string) => {
@@ -26,15 +30,20 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Fermer le menu mobile quand on change de page
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [currentPath]);
+
   return (
     <header 
-      className={`w-full py-4 px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full py-4 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
           ? 'bg-white/70 shadow-sm' 
           : 'bg-white/50 border-purple-100/20'
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between gap-8">
+      <nav className="container mx-auto flex items-center justify-between gap-4 sm:gap-8">
         <Link 
           to="/" 
           className="hover:opacity-80 transition-opacity"
@@ -42,30 +51,71 @@ const Header = () => {
           <Logo />
         </Link>
         
-        <div className="flex items-center gap-8">
-          <Link 
-            to="/" 
-            className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
-              currentPath === '/' 
-                ? 'font-medium bg-gray-100/80' 
-                : 'text-gray-700 hover:text-purple-600'
-            }`}
-          >
-            <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
-            <span>Accueil</span>
-          </Link>
-          <Link 
-            to="/blog" 
-            className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
-              currentPath.startsWith('/blog') 
-                ? 'font-medium bg-gray-100/80' 
-                : 'text-gray-700 hover:text-purple-600'
-            }`}
-          >
-            <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
-            <span>Blog</span>
-          </Link>
-        </div>
+        {isMobile ? (
+          <>
+            <button 
+              aria-label="Menu" 
+              className="p-2 rounded-md text-gray-700 hover:bg-gray-100/80 transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+            
+            {mobileMenuOpen && (
+              <div className="absolute top-full left-0 right-0 bg-white shadow-md z-50 border-b border-gray-100 animate-in fade-in slide-in-from-top-5">
+                <div className="container mx-auto py-3 flex flex-col space-y-2">
+                  <Link 
+                    to="/" 
+                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                      currentPath === '/' 
+                        ? 'font-medium bg-gray-100/80' 
+                        : 'text-gray-700 hover:text-purple-600'
+                    }`}
+                  >
+                    <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
+                    <span>Accueil</span>
+                  </Link>
+                  <Link 
+                    to="/blog" 
+                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                      currentPath.startsWith('/blog') 
+                        ? 'font-medium bg-gray-100/80' 
+                        : 'text-gray-700 hover:text-purple-600'
+                    }`}
+                  >
+                    <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
+                    <span>Blog</span>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="flex items-center gap-6 sm:gap-8">
+            <Link 
+              to="/" 
+              className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
+                currentPath === '/' 
+                  ? 'font-medium bg-gray-100/80' 
+                  : 'text-gray-700 hover:text-purple-600'
+              }`}
+            >
+              <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
+              <span>Accueil</span>
+            </Link>
+            <Link 
+              to="/blog" 
+              className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
+                currentPath.startsWith('/blog') 
+                  ? 'font-medium bg-gray-100/80' 
+                  : 'text-gray-700 hover:text-purple-600'
+              }`}
+            >
+              <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
+              <span>Blog</span>
+            </Link>
+          </div>
+        )}
       </nav>
     </header>
   );

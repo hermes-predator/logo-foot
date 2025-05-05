@@ -9,6 +9,7 @@ const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
   const isMobile = useIsMobile();
   const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
+  const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 640;
   
   // Add a smooth entrance animation and delay the appearance
   useEffect(() => {
@@ -37,11 +38,11 @@ const FloatingCTA = () => {
         <div className="container mx-auto relative">
           {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (
-            <div className="relative">              
+            <div className="relative px-2">              
               <div className="flex items-center mb-2">
-                <span className={`inline-block bg-white/30 p-1.5 md:p-2 rounded-full mr-2 md:mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
+                <span className={`inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
                   <Download 
-                    className="h-4 w-4 md:h-5 md:w-5 text-white animate-bounce" 
+                    className="h-4 w-4 text-white animate-bounce" 
                     style={{ 
                       animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
                       filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
@@ -49,11 +50,11 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div>
+                <div className="flex-1 min-w-0">
                   <p className="text-white font-medium flex flex-col">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 ${isVerySmallScreen ? 'text-sm' : 'text-base md:text-lg'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate ${isVerySmallScreen ? 'text-xs' : 'text-sm'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-xs italic">
+                      <span className="text-blue-100/90 font-light text-xs italic truncate">
                         8 600+ logos de foot
                       </span>
                     )}
@@ -64,7 +65,7 @@ const FloatingCTA = () => {
               <Button 
                 asChild
                 variant="secondary" 
-                className="w-full py-1.5 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
+                className="w-full py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
                 size="sm"
               >
                 <Link to="/" className="flex items-center justify-center gap-1.5">
@@ -76,14 +77,43 @@ const FloatingCTA = () => {
                 </Link>
               </Button>
             </div>
+          ) : isSmallScreen ? (
+            // Small screen layout - more compact but still side by side
+            <div className="flex items-center justify-between px-3 gap-3">
+              <div className="flex items-center flex-1 min-w-0">
+                <span className="inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden">
+                  <Download 
+                    className="h-4 w-4 text-white animate-bounce" 
+                    style={{ animation: 'bounce 1.2s ease infinite' }} 
+                  />
+                </span>
+                <div className="truncate">
+                  <p className="text-white font-medium text-sm truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                </div>
+              </div>
+              
+              <Button 
+                asChild
+                variant="secondary" 
+                className="py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100 whitespace-nowrap"
+                size="sm"
+              >
+                <Link to="/" className="flex items-center gap-1.5">
+                  <span className="font-medium relative z-10 text-blue-600">
+                    En savoir plus
+                  </span>
+                  <ArrowRight className="h-3 w-3 relative z-10 text-blue-600" />
+                </Link>
+              </Button>
+            </div>
           ) : (
-            // Desktop layout - side by side
+            // Desktop layout - side by side with more details
             <div className="flex flex-row items-center justify-between">
               <div className="flex items-center">
                 <Link to="/" className="group flex items-center">
                   <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                     <Download 
-                      className="h-6 w-6 md:h-7 md:w-7 text-white animate-bounce" 
+                      className="h-5 w-5 lg:h-6 lg:w-6 text-white animate-bounce" 
                       style={{ 
                         animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
                         filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
@@ -92,9 +122,9 @@ const FloatingCTA = () => {
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
                   <div className="relative">
-                    <p className="text-white font-medium text-sm md:text-lg hover:text-white/90 transition-colors flex flex-col">
-                      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 text-base md:text-2xl">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-blue-100/90 font-light text-sm md:text-base italic">
+                    <p className="text-white font-medium text-sm md:text-base lg:text-lg hover:text-white/90 transition-colors flex flex-col">
+                      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-blue-100/90 font-light text-xs md:text-sm italic">
                         Un fichier ZIP arborescent contenant + de 8 600 logos de foot
                       </span>
                     </p>
@@ -106,14 +136,14 @@ const FloatingCTA = () => {
                 <Button 
                   asChild
                   variant="secondary" 
-                  className="px-5 py-2.5 text-sm md:text-base group relative overflow-hidden bg-white hover:bg-gray-100"
+                  className="px-4 md:px-5 py-2 text-sm md:text-base group relative overflow-hidden bg-white hover:bg-gray-100"
                   size="lg"
                 >
                   <Link to="/" className="flex items-center gap-2">
                     <span className="font-medium relative z-10 text-blue-600">
                       En savoir plus
                     </span>
-                    <ArrowRight className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
+                    <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>

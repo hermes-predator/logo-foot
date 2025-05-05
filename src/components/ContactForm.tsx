@@ -19,21 +19,21 @@ const ContactForm = () => {
       <p className="text-black leading-relaxed mb-2">Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
       
       <div className="space-y-4 ml-2">
-        <div className="flex items-center gap-4 pl-1 hover:bg-gray-50 p-1.5 rounded-md transition-colors">
+        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
           <div className="bg-gray-100 p-2 rounded-md">
             <User className="w-4 h-4 text-gray-600" />
           </div>
           <span className="font-medium text-gray-500">Votre nom et prénom</span>
         </div>
         
-        <div className="flex items-center gap-4 pl-1 hover:bg-gray-50 p-1.5 rounded-md transition-colors">
+        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
           <div className="bg-gray-100 p-2 rounded-md">
             <Clock className="w-4 h-4 text-gray-600" />
           </div>
           <span className="font-medium text-gray-500">La date et l'heure d'achat</span>
         </div>
         
-        <div className="flex items-center gap-4 pl-1 hover:bg-gray-50 p-1.5 rounded-md transition-colors">
+        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
           <div className="bg-gray-100 p-2 rounded-md">
             <Ticket className="w-4 h-4 text-gray-600" />
           </div>

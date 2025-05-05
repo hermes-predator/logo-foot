@@ -1,5 +1,6 @@
+
 import { Dialog, DialogTrigger } from "../ui/dialog";
-import { Play, Maximize2 } from "lucide-react";
+import { Eye, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { GalleryItemProps } from "@/types/gallery";
 import { useLazyLoading } from "@/hooks/useLazyLoading";
@@ -100,7 +101,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   data-description={item.altText}
                 />
                 <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
-                  <Play className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                  <Eye className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
                 </div>
               </>
             )}

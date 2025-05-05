@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { AlertTriangle, Info } from "lucide-react";
+import { AlertTriangle, Info, Check } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -44,10 +44,17 @@ const DisclaimerDialog = () => {
                   <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
                     <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
                     <p className="mt-1 text-amber-900/80 text-xs sm:text-sm">
-                      • Une ressource indépendante, compilée et organisée.
+                      <div className="flex items-start gap-2">
+                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <span>Une ressource indépendante, compilée et organisée.</span>
+                      </div>
                       
-                      <br /><br />
-                      • Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
+                      <br />
+                      
+                      <div className="flex items-start gap-2">
+                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
+                      </div>
                     </p>
                   </li>
                 </ul>

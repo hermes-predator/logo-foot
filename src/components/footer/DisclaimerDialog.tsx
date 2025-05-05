@@ -25,6 +25,9 @@ const DisclaimerDialog = () => (
                   <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <p className="mt-1 text-amber-900/80">
                     Une ressource indépendante, compilée et organisée à des fins d'archivage, de culture visuelle et de création.
+                    
+                    <br /><br />
+                    Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.
                   </p>
                 </li>
               </ul>

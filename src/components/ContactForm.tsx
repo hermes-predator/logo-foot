@@ -14,8 +14,8 @@ const ContactForm = () => {
         </h3>
       </div>
       
-      <p>En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
-      <p>Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
+      <p className="text-black">En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
+      <p className="text-black">Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
       
       <div className="space-y-3">
         <div className="flex items-center gap-3 pl-1">

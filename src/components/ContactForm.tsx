@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Mail, User, Calendar, Receipt } from 'lucide-react';
+import { ShieldCheck, Mail, User, Calendar, Ticket } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -34,7 +34,7 @@ const ContactForm = () => {
         
         <div className="flex items-center gap-3 pl-1">
           <div className="bg-gray-100 p-1.5 rounded-md">
-            <Receipt className="w-4 h-4 text-gray-600" />
+            <Ticket className="w-4 h-4 text-gray-600" />
           </div>
           <span className="font-medium text-gray-800">Votre preuve d'achat (reçu)</span>
         </div>
@@ -53,4 +53,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

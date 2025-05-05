@@ -19,6 +19,19 @@ const DisclaimerDialog = () => {
           <DialogTitle className="text-xl font-semibold text-black">Disclaimer</DialogTitle>
         </DialogHeader>
         <div className="space-y-6">
+          <div className="mt-4 p-4 sm:p-6 border-2 border-white/20 bg-white rounded-xl shadow-inner">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              <Info className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
+              <div className="text-sm leading-relaxed text-gray-800/90 space-y-6">
+                <p>
+                  Ce fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <Separator className="bg-gray-200/30" />
+
           <div className="mt-4 p-4 sm:p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
               <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
@@ -38,19 +51,6 @@ const DisclaimerDialog = () => {
                     </p>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <Separator className="bg-gray-200/30" />
-
-          <div className="mt-4 p-4 sm:p-6 border-2 border-white/20 bg-white rounded-xl shadow-inner">
-            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <Info className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
-              <div className="text-sm leading-relaxed text-gray-800/90 space-y-6">
-                <p>
-                  Ce fichier a pour objectif de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
-                </p>
               </div>
             </div>
           </div>

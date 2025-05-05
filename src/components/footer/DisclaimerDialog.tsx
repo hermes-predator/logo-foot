@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -11,6 +11,9 @@ const DisclaimerDialog = () => (
       Disclaimer
     </DialogTrigger>
     <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+      <DialogHeader>
+        <DialogTitle className="text-xl font-semibold text-amber-800">Disclaimer</DialogTitle>
+      </DialogHeader>
       <div className="space-y-6">
         <div className="mt-4 p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">
           <div className="flex items-start gap-4">

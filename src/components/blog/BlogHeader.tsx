@@ -70,7 +70,7 @@ const BlogHeader = () => {
                   </div>
                   <div className="flex items-center gap-2 mt-1">
                     <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
-                    <span className="text-sm text-amber-700/90 font-normal">Recevez + de 8 600 LOGOS réunis dans un fichier ZIP organisé</span>
+                    <span className="text-sm text-amber-700/90 font-medium">Recevez + de 8 600 LOGOS réunis dans un fichier ZIP organisé</span>
                   </div>
                 </h3>
               </div>

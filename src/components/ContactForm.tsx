@@ -22,21 +22,21 @@ const ContactForm = () => {
           <div className="bg-gray-100 p-1.5 rounded-md">
             <User className="w-4 h-4 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-800">Votre nom et prénom</span>
+          <span className="font-medium text-gray-500">Votre nom et prénom</span>
         </div>
         
         <div className="flex items-center gap-3 pl-1">
           <div className="bg-gray-100 p-1.5 rounded-md">
             <Clock className="w-4 h-4 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-800">La date et l'heure d'achat</span>
+          <span className="font-medium text-gray-500">La date et l'heure d'achat</span>
         </div>
         
         <div className="flex items-center gap-3 pl-1">
           <div className="bg-gray-100 p-1.5 rounded-md">
             <Ticket className="w-4 h-4 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-800">Votre preuve d'achat (reçu)</span>
+          <span className="font-medium text-gray-500">Votre preuve d'achat (reçu)</span>
         </div>
       </div>
       

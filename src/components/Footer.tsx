@@ -18,7 +18,7 @@ const Footer = () => {
           <Dialog>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <MessageCircle className="w-4 h-4" />
-              Support Client
+              Contactez-nous
             </DialogTrigger>
             <DialogContent className="max-w-md">
               <DialogHeader>

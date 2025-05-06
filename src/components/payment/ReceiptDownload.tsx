@@ -83,7 +83,7 @@ const ReceiptDownload = ({
     // Footer
     doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
-    doc.text("Merci pour votre achat chez FRONT-CLOUD", 105, 170, { align: "center" });
+    doc.text("Merci pour votre achat chez Logo-Foot", 105, 170, { align: "center" });
     doc.text("Pour toute question, contactez-nous à contact@logo-foot.com", 105, 180, { align: "center" });
     doc.text("logo-foot.com", 105, 190, { align: "center" });
     

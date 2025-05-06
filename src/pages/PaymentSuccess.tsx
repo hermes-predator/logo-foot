@@ -86,7 +86,7 @@ const PaymentSuccess = () => {
                     Avertissement
                   </h2>
                   <p className="text-amber-700">
-                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes en invité(e).
+                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes actuellement en invité(e).
                   </p>
                 </div>
               </div>

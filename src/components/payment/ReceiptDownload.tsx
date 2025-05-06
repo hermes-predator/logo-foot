@@ -94,10 +94,11 @@ const ReceiptDownload = ({
     <Button 
       onClick={generateReceipt}
       variant="outline" 
-      className="flex items-center gap-2 bg-white/80 hover:bg-white"
+      className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium rounded-md transition-all duration-300 hover:border-indigo-300 hover:text-indigo-600 shadow-sm group"
+      size="lg"
     >
-      <FileText className="h-4 w-4" />
-      Télécharger le reçu
+      <FileText className="h-4 w-4 mr-2 text-gray-500 group-hover:text-indigo-500 transition-colors" />
+      <span className="relative">Télécharger le reçu</span>
     </Button>
   );
 };

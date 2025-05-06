@@ -78,7 +78,7 @@ const FeatureList = () => {
       text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
+      description: "Recommandé pour les projets WEB impliquant de l'analyse sportive"
     }
   ];
 

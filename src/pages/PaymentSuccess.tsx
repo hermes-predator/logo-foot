@@ -151,9 +151,23 @@ const PaymentSuccess = () => {
                 <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Téléchargement
                 </h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-4">
                   Votre collection est prête à être téléchargée. Cliquez sur le bouton ci-dessous pour obtenir votre fichier ZIP.
                 </p>
+                
+                {/* Technical details about the file */}
+                <div className="bg-gray-50 p-4 rounded-md mb-6 border border-gray-100">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">Poids</p>
+                      <p className="font-medium text-gray-800">63 Mo</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500 mb-1">Taille</p>
+                      <p className="font-medium text-gray-800">8 774 éléments</p>
+                    </div>
+                  </div>
+                </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button

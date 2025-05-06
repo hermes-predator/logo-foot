@@ -1,7 +1,8 @@
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Check, Folder, FileText, Download } from "lucide-react";
+import { ShieldCheck, Check, Folder, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
@@ -176,7 +177,6 @@ const PaymentSuccess = () => {
                     size="lg"
                   >
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                    <Download className="h-8 w-8 mr-3" />
                     <span className="relative">Télécharger le fichier ZIP</span>
                   </Button>
                   

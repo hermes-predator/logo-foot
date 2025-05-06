@@ -1,11 +1,12 @@
+
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Download, CheckCircle } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 const PaymentSuccess = () => {
-  const router = useRouter();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -28,11 +29,11 @@ const PaymentSuccess = () => {
         </div>
         
         <Button 
-          onClick={() => window.location.href = "/"}
+          onClick={() => navigate('/')}
           className="w-full bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow-md transition-all duration-300 text-2xl py-6 h-auto font-medium"
         >
           <div className="flex items-center justify-center gap-3">
-            <Download className="h-7 w-7" /> {/* Icône agrandie, animation retirée */}
+            <Download className="h-7 w-7" /> {/* Icon size increased */}
             <span>Retour à l'accueil</span>
           </div>
         </Button>

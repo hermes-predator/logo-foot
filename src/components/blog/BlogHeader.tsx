@@ -71,7 +71,7 @@ const BlogHeader = () => {
                     </div>
                     <div className="flex flex-col">
                       <span>Vous cherchez tous les logos de football ?</span>
-                      <span className="text-sm text-amber-700/90 font-medium mt-1">Recevez +8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé</span>
+                      <span className="text-sm text-amber-700/90 font-medium mt-1">Recevez un fichier ZIP parfaitement organisé contenant + 8600 LOGOS</span>
                     </div>
                   </div>
                 </h3>

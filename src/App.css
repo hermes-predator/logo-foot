@@ -1,11 +1,73 @@
 
 
+
 /* Reset des styles par défaut */
 #root {
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: left;
+}
+
+/* Animation de flottement pour les éléments décoratifs */
+@keyframes floating {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Animation du panier */
+@keyframes cartMove {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-2px) scale(1.05);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Animation du pulse */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* Animation de brillance */
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* Classe pour animations */
+.animate-floating {
+  animation: floating 5s ease-in-out infinite;
+}
+
+.animate-shine {
+  animation: shine 1.5s ease-in-out infinite;
 }
 
 /* Améliorations pour la responsivité globale */

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,84 +24,84 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
-    <section className="relative pt-12 pb-10 px-4 overflow-hidden">
-      {/* Background effects - Optimisés pour les performances */}
+    <section className="relative pt-14 pb-12 px-4 overflow-hidden">
+      {/* Background effects - Améliorés */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/80 via-blue-50/40 to-white opacity-90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.08),transparent_50%)]" />
-        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 7s ease-in-out infinite' }} />
-        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 10s ease-in-out infinite' }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/90 via-blue-50/50 to-white opacity-95" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
+        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 8s ease-in-out infinite' }} />
+        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
       
       {/* Decorative elements avec animation optimisée */}
       <div 
-        className="absolute top-28 left-1/3 text-blue-400/20 animate-floating"
+        className="absolute top-28 left-1/3 text-blue-400/30 animate-floating"
         style={{ 
-          animationDuration: '7s',
+          animationDuration: '8s',
           animationDelay: '-2s'
         }}
       >
         <Sparkles className="h-8 w-8" />
       </div>
       <div 
-        className="absolute bottom-20 right-1/4 text-purple-400/20 animate-floating"
+        className="absolute bottom-20 right-1/4 text-purple-400/30 animate-floating"
         style={{ 
-          animationDuration: '8s',
+          animationDuration: '9s',
           animationDelay: '-1s'
         }}
       >
         <Sparkles className="h-10 w-10" />
       </div>
       
-      <div className="max-w-4xl mx-auto text-center space-y-6">
-        {/* Premium and Google Drive Badges side by side */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-2">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/70 shadow-sm transition-transform duration-300 hover:shadow-md hover:-translate-y-0.5">
+      <div className="max-w-4xl mx-auto text-center space-y-7">
+        {/* Premium and Google Drive Badges side by side - Amélioré */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-3">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/80 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-gray-300/80">
             <Crown className="w-5 h-5" style={{ fill: '#FFC107', stroke: '#FFC107' }} />
             <span className="text-sm font-medium text-gray-900">Collection Premium</span>
           </div>
           <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
         </div>
 
-        {/* Main title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2">
+        {/* Main title - Amélioré */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">
           Logos des clubs de football
         </h1>
 
-        {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-6">
-          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">⦗FRONT-CLOUD⦘~ Football.zip</span>
+        {/* Subtitle - Amélioré */}
+        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-5">
+          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">⦗FRONT-CLOUD⦘~ Football.zip</span>
         </h2>
 
-        {/* Description */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        {/* Description - Amélioré */}
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
-        {/* Trust badges - Animation optimisée */}
+        {/* Trust badges - Animation optimisée et améliorée */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Lock className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 backdrop-blur-md border border-gray-200/50 shadow-sm transition-transform duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Download className="w-5 w-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
         </div>
 
-        {/* CTA buttons - Taille augmentée et meilleur espacement */}
-        <div className="flex items-center justify-center gap-6 pt-8">
+        {/* CTA buttons - Spacing amélioré */}
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-10">
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-transform duration-300 hover:shadow-md relative overflow-hidden"
+                className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/40 to-blue-50/40 opacity-80"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
                 <Folder size={24} className="mr-2 text-gray-800 transition-colors duration-300" />
                 <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
@@ -160,17 +161,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   const returnUrl = `${window.location.origin}/payment-success`;
                   window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                 }}
-                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-transform duration-300 text-[19px] gap-5 hover:-translate-y-0.5 px-12 py-5 h-auto relative group overflow-hidden"
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[19px] gap-5 hover:-translate-y-0.5 px-12 py-5 h-auto relative group overflow-hidden"
               >
-                {/* Outer glow animation - restaurée à l'original */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-yellow-300/20 to-amber-400/20 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
+                {/* Outer glow animation - Améliorée */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
                      style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
 
                 <div className="relative">
                   <ShoppingCart 
                     style={{
                       color: "#FFE082",
-                      filter: 'drop-shadow(0 0 3px rgba(255, 224, 130, 0.8))',
+                      filter: 'drop-shadow(0 0 4px rgba(255, 224, 130, 0.8))',
                       animation: 'cartMove 1.5s ease-in-out infinite',
                       width: '22px',
                       height: '22px',
@@ -184,7 +185,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   Achat rapide ~ 9€
                 </span>
                 
-                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine" />
+                {/* Shine effect - Amélioré */}
+                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
             <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-4">

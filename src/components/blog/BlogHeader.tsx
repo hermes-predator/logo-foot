@@ -66,7 +66,9 @@ const BlogHeader = () => {
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
+                    <div className="bg-amber-100 p-1 rounded-md flex items-center justify-center">
+                      <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
+                    </div>
                     <span>Vous cherchez tous les logos de football ?</span>
                   </div>
                   <div className="pl-6 mt-1">

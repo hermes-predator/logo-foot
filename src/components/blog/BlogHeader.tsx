@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, Download } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -69,8 +69,8 @@ const BlogHeader = () => {
                     <span>Vous cherchez tous les logos de football ?</span>
                   </div>
                   <div className="flex items-center gap-2 mt-1">
-                    <Download className="h-4 w-4 text-amber-600 flex-shrink-0" />
-                    <span className="text-sm text-amber-700/90 font-medium">Téléchargez + de 8 600 LOGOS réunis dans un fichier ZIP organisé en un coup</span>
+                    <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
+                    <span className="text-sm text-amber-700/90 font-medium">Recevez + de 8 600 LOGOS réunis dans un fichier ZIP organisé</span>
                   </div>
                 </h3>
               </div>

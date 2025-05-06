@@ -78,16 +78,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
 
-        {/* Trust badges - Animation optimisée et améliorée */}
+        {/* Trust badges - Animation optimisée et améliorée - Remplacé "Paiement Sécurisé" par GoogleDriveBadge */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <CheckCircle2 className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Lock className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
-          </div>
+          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
             <Download className="w-5 w-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>

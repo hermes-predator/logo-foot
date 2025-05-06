@@ -1,6 +1,7 @@
 
 
 
+
 /* Reset des styles par défaut */
 #root {
   width: 100%;
@@ -48,16 +49,18 @@
   }
 }
 
-/* Animation de brillance */
+/* Animation de brillance - Améliorée */
 @keyframes shine {
-  from {
-    left: -100%;
+  0% {
+    left: -150%;
+    opacity: 0.1;
   }
   50% {
-    left: 100%;
+    opacity: 0.3; 
   }
-  to {
-    left: 100%;
+  100% {
+    left: 150%;
+    opacity: 0.1;
   }
 }
 
@@ -67,7 +70,7 @@
 }
 
 .animate-shine {
-  animation: shine 1.5s ease-in-out infinite;
+  animation: shine 2s ease-in-out infinite;
 }
 
 /* Améliorations pour la responsivité globale */
@@ -83,4 +86,5 @@
     font-size: 14px;
   }
 }
+
 

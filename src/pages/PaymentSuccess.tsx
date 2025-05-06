@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -120,6 +121,25 @@ const PaymentSuccess = () => {
               </div>
             </motion.div>
 
+            {/* Warning Section - Moved before Download Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25, duration: 0.5 }}
+              className="bg-amber-50 rounded-lg border border-amber-200"
+            >
+              <div className="p-6">
+                <div>
+                  <h2 className="text-xl font-bold text-amber-800 mb-2">
+                    Avertissement
+                  </h2>
+                  <p className="text-amber-700">
+                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes en invité(e).
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Download Section */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -151,25 +171,6 @@ const PaymentSuccess = () => {
                     price="9,00 €"
                     orderNumber={orderNumber}
                   />
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Warning Section - Modified */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35, duration: 0.5 }}
-              className="bg-amber-50 rounded-lg border border-amber-200"
-            >
-              <div className="p-6">
-                <div>
-                  <h2 className="text-xl font-bold text-amber-800 mb-2">
-                    Avertissement
-                  </h2>
-                  <p className="text-amber-700">
-                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes en invité(e).
-                  </p>
                 </div>
               </div>
             </motion.div>

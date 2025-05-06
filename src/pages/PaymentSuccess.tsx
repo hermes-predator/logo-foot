@@ -206,7 +206,7 @@ const PaymentSuccess = () => {
                     "Téléchargez le fichier ZIP en cliquant sur le bouton ci-dessus",
                     "Extrayez le contenu du fichier ZIP sur votre ordinateur",
                     "Accédez aux dossiers organisés par catégories pour trouver les logos",
-                    "Utilisez les logos dans vos projets selon les conditions d'utilisation"
+                    "Stockez le fichier sur votre Google Drive ou disque dur externe"
                   ].map((step, index) => (
                     <div key={index} className="flex items-start">
                       <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium mr-3 flex-shrink-0 mt-0.5">

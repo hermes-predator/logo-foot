@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -72,11 +73,30 @@ const PaymentSuccess = () => {
               </div>
             </motion.div>
 
-            {/* Order Details Section */}
+            {/* Warning Section - Moved before Order Summary Section */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
+              className="bg-amber-50 rounded-lg border border-amber-200"
+            >
+              <div className="p-6">
+                <div>
+                  <h2 className="text-xl font-bold text-amber-800 mb-2">
+                    Avertissement
+                  </h2>
+                  <p className="text-amber-700">
+                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes en invité(e).
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Order Details Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25, duration: 0.5 }}
               className="bg-white rounded-lg border border-gray-200"
             >
               <div className="p-6">
@@ -116,25 +136,6 @@ const PaymentSuccess = () => {
                     <span>Total</span>
                     <span className="font-bold text-lg">9,00 €</span>
                   </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Warning Section - Moved before Download Section */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25, duration: 0.5 }}
-              className="bg-amber-50 rounded-lg border border-amber-200"
-            >
-              <div className="p-6">
-                <div>
-                  <h2 className="text-xl font-bold text-amber-800 mb-2">
-                    Avertissement
-                  </h2>
-                  <p className="text-amber-700">
-                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes en invité(e).
-                  </p>
                 </div>
               </div>
             </motion.div>

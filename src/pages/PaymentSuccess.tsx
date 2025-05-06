@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -48,7 +47,7 @@ const PaymentSuccess = () => {
       title: "Téléchargement démarré !",
       description: "Votre fichier ZIP est en cours de téléchargement.",
       duration: 3000,
-      icon: <Download className="h-4 w-4 text-blue-500" />
+      icon: <Check className="h-4 w-4 text-blue-500" />
     });
   };
   
@@ -206,7 +205,6 @@ const PaymentSuccess = () => {
                     className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 hover:shadow-lg relative overflow-hidden group h-20 text-xl flex items-center justify-center"
                     size="lg"
                   >
-                    <Download className="h-8 w-8 mr-3 text-white" />
                     <span className="relative">Télécharger le fichier ZIP</span>
                   </Button>
                   
@@ -276,4 +274,3 @@ const PaymentSuccess = () => {
 };
 
 export default PaymentSuccess;
-

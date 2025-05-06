@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { Download, ShieldCheck, Check, Package, FileText } from "lucide-react";
+import { ShieldCheck, Check, Folder, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
@@ -104,7 +104,7 @@ const PaymentSuccess = () => {
                   <div className="flex justify-between items-center mb-4">
                     <div className="flex items-start">
                       <div className="w-12 h-12 bg-blue-100 rounded-md flex items-center justify-center mr-3">
-                        <Package className="h-6 w-6 text-blue-600" />
+                        <Folder className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h3>
@@ -130,8 +130,7 @@ const PaymentSuccess = () => {
               className="bg-white rounded-lg border border-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <Download className="h-5 w-5 mr-2 text-blue-500" />
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
                   Téléchargement
                 </h2>
                 <p className="text-gray-600 mb-6">
@@ -144,7 +143,6 @@ const PaymentSuccess = () => {
                     className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white py-2 px-4"
                     size="lg"
                   >
-                    <Download className="h-5 w-5 mr-2" />
                     Télécharger maintenant
                   </Button>
                   

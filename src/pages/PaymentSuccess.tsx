@@ -203,9 +203,10 @@ const PaymentSuccess = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     onClick={handleDownload}
-                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 hover:shadow-lg relative overflow-hidden group h-20 text-xl"
+                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 hover:shadow-lg relative overflow-hidden group h-20 text-xl flex items-center justify-center"
                     size="lg"
                   >
+                    <Download className="h-8 w-8 mr-3 text-white" />
                     <span className="relative">Télécharger le fichier ZIP</span>
                   </Button>
                   
@@ -275,3 +276,4 @@ const PaymentSuccess = () => {
 };
 
 export default PaymentSuccess;
+

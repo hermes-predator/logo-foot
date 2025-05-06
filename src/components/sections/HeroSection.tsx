@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -73,6 +74,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
         </p>
+
+        {/* Google Drive Badge - NOUVEAU */}
+        <div className="flex justify-center mt-2">
+          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
+        </div>
 
         {/* Trust badges - Animation optimisée */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">

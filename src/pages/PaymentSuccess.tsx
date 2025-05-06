@@ -11,10 +11,8 @@ const PaymentSuccess = () => {
   const [showConfetti, setShowConfetti] = useState(true);
   
   useEffect(() => {
-    // Pour nettoyer les confettis après un certain temps
     const timer = setTimeout(() => setShowConfetti(false), 8000);
     
-    // Mesurer la conversion
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'purchase', {
         transaction_id: `order_${Date.now()}`,
@@ -28,7 +26,6 @@ const PaymentSuccess = () => {
   }, []);
 
   const handleDownload = () => {
-    // Créer un lien vers le fichier et déclencher le téléchargement
     const link = document.createElement('a');
     link.href = '/frontcloud-football.zip';
     link.download = 'frontcloud-football.zip';
@@ -46,62 +43,109 @@ const PaymentSuccess = () => {
       
       {showConfetti && <ConfettiCelebration duration={8000} />}
       
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-16 px-4">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden"
-        >
-          <div className="relative">
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600"></div>
-          </div>
-          
-          <div className="p-8">
-            <div className="flex flex-col items-center justify-center text-center mb-8">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <ShieldCheck className="h-10 w-10 text-green-600" />
-              </div>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Paiement réussi !</h1>
-              <p className="text-gray-600">Votre fichier est prêt à être téléchargé</p>
-            </div>
-            
-            <div className="bg-blue-50 rounded-xl p-6 mb-8">
-              <h2 className="text-lg font-semibold text-gray-800 mb-3">Instructions :</h2>
-              <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-                <li>Cliquez sur le bouton "Télécharger maintenant" ci-dessous</li>
-                <li>Une fois téléchargé, extrayez le fichier ZIP</li>
-                <li>Vous pouvez maintenant utiliser les logos dans vos projets</li>
-                <li>Conservez ce reçu comme preuve d'achat</li>
-              </ol>
-            </div>
-            
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
-              <Button
-                onClick={handleDownload}
-                className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 flex items-center justify-center gap-2 py-6 px-8"
-              >
-                <Download className="h-5 w-5" />
-                Télécharger maintenant
-              </Button>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
+        <div className="container mx-auto px-4 py-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto"
+          >
+            {/* Carte principale */}
+            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+              {/* Bande décorative supérieure */}
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500"></div>
               
-              <ReceiptDownload 
-                purchaseDate={new Date()}
-                productName="FRONT-CLOUD Football.zip"
-                price="9,00 €"
-                orderNumber={`FC-${Date.now().toString().slice(-6)}`}
-              />
+              {/* En-tête avec motif géométrique */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 pt-16 pb-12 px-6 sm:px-12">
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <ShieldCheck className="h-12 w-12 text-white" />
+                  </div>
+                  <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-4 font-heading">
+                    Paiement réussi !
+                  </h1>
+                  <p className="text-lg text-gray-600 text-center max-w-lg">
+                    Merci pour votre confiance. Votre collection de logos est prête à être téléchargée.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Contenu principal */}
+              <div className="p-6 sm:p-12">
+                {/* Instructions */}
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                      <span className="text-blue-600 font-bold">1</span>
+                    </span>
+                    Instructions de téléchargement
+                  </h2>
+                  <ul className="space-y-4">
+                    {[
+                      "Cliquez sur le bouton « Télécharger maintenant » ci-dessous",
+                      "Une fois téléchargé, extrayez le fichier ZIP",
+                      "Vous pouvez maintenant utiliser les logos dans vos projets",
+                      "Conservez votre reçu comme preuve d'achat"
+                    ].map((step, index) => (
+                      <motion.li
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2 + index * 0.1 }}
+                        className="flex items-center text-gray-700"
+                      >
+                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                        {step}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Boutons d'action */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full sm:w-auto"
+                  >
+                    <Button
+                      onClick={handleDownload}
+                      className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-lg py-6 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    >
+                      <Download className="h-6 w-6 mr-2" />
+                      Télécharger maintenant
+                    </Button>
+                  </motion.div>
+                  
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <ReceiptDownload 
+                      purchaseDate={new Date()}
+                      productName="FRONT-CLOUD Football.zip"
+                      price="9,00 €"
+                      orderNumber={`FC-${Date.now().toString().slice(-6)}`}
+                    />
+                  </motion.div>
+                </div>
+
+                {/* Footer avec informations de sécurité */}
+                <div className="rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 border border-gray-100">
+                  <div className="flex items-center mb-4">
+                    <ShieldCheck className="h-5 w-5 text-green-500 mr-2" />
+                    <h3 className="font-semibold text-gray-800">Paiement sécurisé</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Votre transaction a été traitée de manière sécurisée. Pour toute question concernant votre achat, 
+                    n'hésitez pas à nous contacter à <span className="text-blue-600">support@front-cloud.fr</span>
+                  </p>
+                </div>
+              </div>
             </div>
-            
-            <div className="text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
-              <p className="flex items-center">
-                <ShieldCheck className="h-4 w-4 mr-2 text-green-600" />
-                <span>Votre paiement est sécurisé et chiffré.</span>
-              </p>
-              <p className="mt-2">Si vous rencontrez des problèmes avec votre téléchargement, veuillez nous contacter à support@front-cloud.fr</p>
-            </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </>
   );

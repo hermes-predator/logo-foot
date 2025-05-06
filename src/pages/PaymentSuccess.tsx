@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -7,30 +6,23 @@ import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import { Helmet } from 'react-helmet-async';
 
 const PaymentSuccess = () => {
-  const [paymentStatus, setPaymentStatus] = useState("processing");
+  const [paymentStatus, setPaymentStatus] = useState("success"); // Par défaut à "success"
   const [showConfetti, setShowConfetti] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Vérifier si l'utilisateur vient d'une transaction réussie
     const urlParams = new URLSearchParams(window.location.search);
     const status = urlParams.get('status');
     
-    if (status === 'success') {
+    if (status === 'success' || !status) {
       setPaymentStatus('success');
       setShowConfetti(true);
     } else if (status === 'pending') {
       setPaymentStatus('pending');
     } else if (status === 'cancelled') {
       setPaymentStatus('cancelled');
-    } else {
-      // Rediriger si accès direct sans statut
-      setTimeout(() => {
-        navigate('/');
-      }, 3000);
     }
 
-    // Désactiver le confetti après 5 secondes
     const timer = setTimeout(() => {
       setShowConfetti(false);
     }, 5000);

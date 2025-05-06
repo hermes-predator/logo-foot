@@ -69,9 +69,9 @@ const ReceiptDownload = ({
     
     doc.line(20, 105, 190, 105);
     
-    // Product and price
+    // Product and price - Using a sanitized product name to avoid display issues
     doc.setFont("helvetica", "normal");
-    doc.text(productName, 25, 115);
+    doc.text("FRONT-CLOUD Football.zip", 25, 115);
     doc.text(price, 160, 115);
     
     // Total

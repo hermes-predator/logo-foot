@@ -157,6 +157,7 @@ const PaymentSuccess = () => {
                 
                 {/* Technical details about the file */}
                 <div className="bg-gray-50 p-4 rounded-md mb-6 border border-gray-100">
+                  <h3 className="font-semibold text-gray-800 mb-3">⦗FRONT-CLOUD⦘~ Football.zip</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-gray-500 mb-1">Poids</p>
@@ -177,7 +178,7 @@ const PaymentSuccess = () => {
                   >
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     <Download className="h-5 w-5 mr-2" />
-                    <span className="relative">Télécharger ⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    <span className="relative">Télécharger maintenant</span>
                   </Button>
                   
                   <ReceiptDownload 

@@ -19,7 +19,7 @@ const PaymentSuccess = () => {
         transaction_id: `order_${Date.now()}`,
         value: 9.00,
         currency: 'EUR',
-        items: [{ item_name: 'Football Logos Collection' }]
+        items: [{ item_name: '⦗FRONT-CLOUD⦘~ Football.zip' }]
       });
     }
     
@@ -66,7 +66,7 @@ const PaymentSuccess = () => {
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 text-green-500" />
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-bold mb-3">Commande confirmée !</h1>
+                <h1 className="text-3xl sm:text-4xl font-bold mb-3">Paiement confirmé !</h1>
                 <p className="text-lg text-blue-100 max-w-md">
                   Merci pour votre confiance. Votre collection de logos est prête à être téléchargée.
                 </p>
@@ -107,7 +107,7 @@ const PaymentSuccess = () => {
                         <Package className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-900">Football Logos Collection</h3>
+                        <h3 className="font-medium text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h3>
                         <p className="text-sm text-gray-500">Package ZIP complet</p>
                       </div>
                     </div>
@@ -150,7 +150,7 @@ const PaymentSuccess = () => {
                   
                   <ReceiptDownload 
                     purchaseDate={orderDate}
-                    productName="FRONT-CLOUD Football.zip"
+                    productName="⦗FRONT-CLOUD⦘~ Football.zip"
                     price="9,00 €"
                     orderNumber={orderNumber}
                   />

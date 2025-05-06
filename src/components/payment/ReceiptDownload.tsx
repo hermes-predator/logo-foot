@@ -98,7 +98,7 @@ const ReceiptDownload = ({
       size="lg"
     >
       <FileText className="h-8 w-8 mr-3 text-gray-500 group-hover:text-indigo-500 transition-colors" />
-      <span className="relative">Télécharger le reçu</span>
+      <span className="relative">Télécharger votre reçu</span>
     </Button>
   );
 };

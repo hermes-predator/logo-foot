@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
 
@@ -55,7 +56,7 @@ const FeatureList = () => {
     },
     {
       icon: BadgeCheck,
-      text: "Fichier de haute qualité", // Updated text here
+      text: "Fichier de haute qualité", 
       className: "bg-blue-100",
       iconColor: "text-blue-700",
       description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat"
@@ -74,7 +75,7 @@ const FeatureList = () => {
     },
     {
       icon: TrendingUp,
-      text: "Valeur à votre actif",
+      text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"

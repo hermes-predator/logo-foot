@@ -1,8 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Check, Folder, FileText, Download } from "lucide-react";
+import { ShieldCheck, Check, Folder, FileText, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
@@ -152,6 +151,30 @@ const PaymentSuccess = () => {
                     price="9,00 €"
                     orderNumber={orderNumber}
                   />
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Warning Section - New */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35, duration: 0.5 }}
+              className="bg-amber-50 rounded-lg border border-amber-200"
+            >
+              <div className="p-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mr-3">
+                    <AlertTriangle className="h-6 w-6 text-amber-500" />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-bold text-amber-800 mb-2">
+                      Avertissement
+                    </h2>
+                    <p className="text-amber-700">
+                      Vous êtes en session invitée, Télécharger sans attendre votre fichier ZIP pour éviter de le perdre.
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>

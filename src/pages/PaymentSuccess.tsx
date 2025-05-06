@@ -81,8 +81,7 @@ const PaymentSuccess = () => {
               className="bg-white rounded-lg border border-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <FileText className="h-5 w-5 mr-2 text-blue-500" />
+                <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Récapitulatif de la commande
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4 mb-4 text-gray-700">
@@ -130,7 +129,7 @@ const PaymentSuccess = () => {
               className="bg-white rounded-lg border border-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Téléchargement
                 </h2>
                 <p className="text-gray-600 mb-6">
@@ -164,7 +163,7 @@ const PaymentSuccess = () => {
               className="bg-white rounded-lg border border-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4">Instructions d'utilisation</h2>
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Instructions d'utilisation</h2>
                 <div className="space-y-3">
                   {[
                     "Téléchargez le fichier ZIP en cliquant sur le bouton ci-dessus",
@@ -195,7 +194,7 @@ const PaymentSuccess = () => {
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-800 mb-2">Paiement sécurisé</h3>
+                  <h3 className="font-bold text-gray-800 mb-2">Paiement sécurisé</h3>
                   <p className="text-gray-600 text-sm">
                     Votre transaction a été traitée de manière sécurisée. Pour toute question concernant votre achat, 
                     n'hésitez pas à nous contacter à <span className="text-blue-600">support@front-cloud.fr</span>

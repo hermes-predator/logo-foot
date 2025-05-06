@@ -114,6 +114,9 @@ const PaymentSuccess = () => {
                       day: '2-digit',
                       month: '2-digit',
                       year: 'numeric'
+                    })} à {orderDate.toLocaleTimeString('fr-FR', {
+                      hour: '2-digit',
+                      minute: '2-digit'
                     })}</p>
                   </div>
                 </div>
@@ -231,7 +234,7 @@ const PaymentSuccess = () => {
                   <h3 className="font-bold text-gray-800 mb-2">Paiement sécurisé</h3>
                   <p className="text-gray-600 text-sm">
                     Votre transaction a été traitée de manière sécurisée. Pour toute question concernant votre achat, 
-                    n'hésitez pas à nous contacter à <span className="text-blue-600">support@front-cloud.fr</span>
+                    n'hésitez pas à nous contacter à <span className="text-blue-600">contact@logo-foot.com</span>
                   </p>
                 </div>
               </div>

@@ -2,11 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Check, Folder, FileText } from "lucide-react";
+import { ShieldCheck, Check, Folder, FileText, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
 import { Card, CardContent } from "@/components/ui/card";
+import { toast } from "@/components/ui/use-toast";
 
 const PaymentSuccess = () => {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -23,6 +24,14 @@ const PaymentSuccess = () => {
       });
     }
     
+    // Afficher un toast de bienvenue dès que la page est chargée
+    toast({
+      title: "Paiement confirmé !",
+      description: "Votre collection de logos est prête à être téléchargée.",
+      duration: 5000,
+      icon: <Check className="h-4 w-4 text-green-500" />
+    });
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,6 +42,24 @@ const PaymentSuccess = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    
+    // Afficher un toast après le téléchargement
+    toast({
+      title: "Téléchargement démarré !",
+      description: "Votre fichier ZIP est en cours de téléchargement.",
+      duration: 3000,
+      icon: <Download className="h-4 w-4 text-blue-500" />
+    });
+  };
+  
+  const handleReceiptDownload = () => {
+    // Toast pour le téléchargement du reçu
+    toast({
+      title: "Reçu téléchargé",
+      description: "Votre reçu d'achat a été téléchargé avec succès.",
+      duration: 3000,
+      icon: <FileText className="h-4 w-4 text-indigo-500" />
+    });
   };
   
   const orderDate = new Date();
@@ -187,6 +214,7 @@ const PaymentSuccess = () => {
                     productName="⦗FRONT-CLOUD⦘~ Football.zip"
                     price="9,00 €"
                     orderNumber={orderNumber}
+                    onDownloadComplete={handleReceiptDownload}
                   />
                 </div>
               </div>

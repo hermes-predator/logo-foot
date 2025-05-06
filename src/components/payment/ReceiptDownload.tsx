@@ -9,13 +9,15 @@ interface ReceiptDownloadProps {
   productName?: string;
   price?: string;
   orderNumber?: string;
+  onDownloadComplete?: () => void;
 }
 
 const ReceiptDownload = ({
   purchaseDate = new Date(),
   productName = "⦗FRONT-CLOUD⦘~ Football.zip",
   price = "9,00 €",
-  orderNumber = `FC-${Date.now().toString().slice(-6)}`
+  orderNumber = `FC-${Date.now().toString().slice(-6)}`,
+  onDownloadComplete
 }: ReceiptDownloadProps) => {
 
   const generateReceipt = () => {
@@ -89,6 +91,11 @@ const ReceiptDownload = ({
     
     // Save the PDF
     doc.save(`recu-front-cloud-${orderNumber}.pdf`);
+    
+    // Call the callback when download is complete
+    if (onDownloadComplete) {
+      onDownloadComplete();
+    }
   };
 
   return (

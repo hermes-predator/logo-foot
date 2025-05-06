@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { Download, ShieldCheck, Receipt } from "lucide-react";
+import { Download, ShieldCheck, Check, Package, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
+import { Card, CardContent } from "@/components/ui/card";
 
 const PaymentSuccess = () => {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -34,6 +35,9 @@ const PaymentSuccess = () => {
     document.body.removeChild(link);
   };
 
+  const orderDate = new Date();
+  const orderNumber = `FC-${Date.now().toString().slice(-6)}`;
+  
   return (
     <>
       <Helmet>
@@ -43,107 +47,164 @@ const PaymentSuccess = () => {
       
       {showConfetti && <ConfettiCelebration duration={8000} />}
       
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
-        <div className="container mx-auto px-4 py-16">
+      <div className="min-h-screen bg-gray-50 py-12">
+        <div className="container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto"
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl mx-auto space-y-6"
           >
-            {/* Carte principale */}
-            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
-              {/* Bande décorative supérieure */}
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500"></div>
-              
-              {/* En-tête avec motif géométrique */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 pt-16 pb-12 px-6 sm:px-12">
-                <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center mb-6 shadow-lg">
-                    <ShieldCheck className="h-12 w-12 text-white" />
+            {/* Header Section */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg p-8 text-center"
+            >
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
+                  <Check className="h-8 w-8 text-green-500" />
+                </div>
+                <h1 className="text-3xl sm:text-4xl font-bold mb-3">Commande confirmée !</h1>
+                <p className="text-lg text-blue-100 max-w-md">
+                  Merci pour votre confiance. Votre collection de logos est prête à être téléchargée.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Order Details Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
+              <div className="p-6">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                  <FileText className="h-5 w-5 mr-2 text-blue-500" />
+                  Récapitulatif de la commande
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-4 mb-4 text-gray-700">
+                  <div>
+                    <p className="text-sm text-gray-500">Numéro de commande</p>
+                    <p className="font-medium">{orderNumber}</p>
                   </div>
-                  <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-4 font-heading">
-                    Paiement réussi !
-                  </h1>
-                  <p className="text-lg text-gray-600 text-center max-w-lg">
-                    Merci pour votre confiance. Votre collection de logos est prête à être téléchargée.
-                  </p>
+                  <div>
+                    <p className="text-sm text-gray-500">Date</p>
+                    <p className="font-medium">{orderDate.toLocaleDateString('fr-FR', {
+                      day: '2-digit',
+                      month: '2-digit',
+                      year: 'numeric'
+                    })}</p>
+                  </div>
+                </div>
+                
+                <div className="border-t border-gray-200 my-4 pt-4">
+                  <div className="flex justify-between items-center mb-4">
+                    <div className="flex items-start">
+                      <div className="w-12 h-12 bg-blue-100 rounded-md flex items-center justify-center mr-3">
+                        <Package className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-gray-900">Football Logos Collection</h3>
+                        <p className="text-sm text-gray-500">Package ZIP complet</p>
+                      </div>
+                    </div>
+                    <span className="font-semibold">9,00 €</span>
+                  </div>
+                  
+                  <div className="border-t border-gray-200 pt-4 flex justify-between text-gray-700">
+                    <span>Total</span>
+                    <span className="font-bold text-lg">9,00 €</span>
+                  </div>
                 </div>
               </div>
-              
-              {/* Contenu principal */}
-              <div className="p-6 sm:p-12">
-                {/* Instructions */}
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
-                  <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-blue-600 font-bold">1</span>
-                    </span>
-                    Instructions de téléchargement
-                  </h2>
-                  <ul className="space-y-4">
-                    {[
-                      "Cliquez sur le bouton « Télécharger maintenant » ci-dessous",
-                      "Une fois téléchargé, extrayez le fichier ZIP",
-                      "Vous pouvez maintenant utiliser les logos dans vos projets",
-                      "Conservez votre reçu comme preuve d'achat"
-                    ].map((step, index) => (
-                      <motion.li
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.2 + index * 0.1 }}
-                        className="flex items-center text-gray-700"
-                      >
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                        {step}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div>
+            </motion.div>
 
-                {/* Boutons d'action */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full sm:w-auto"
+            {/* Download Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
+              <div className="p-6">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                  <Download className="h-5 w-5 mr-2 text-blue-500" />
+                  Téléchargement
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  Votre collection est prête à être téléchargée. Cliquez sur le bouton ci-dessous pour obtenir votre fichier ZIP.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button
+                    onClick={handleDownload}
+                    className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white py-2 px-4"
+                    size="lg"
                   >
-                    <Button
-                      onClick={handleDownload}
-                      className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-lg py-6 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                    >
-                      <Download className="h-6 w-6 mr-2" />
-                      Télécharger maintenant
-                    </Button>
-                  </motion.div>
+                    <Download className="h-5 w-5 mr-2" />
+                    Télécharger maintenant
+                  </Button>
                   
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <ReceiptDownload 
-                      purchaseDate={new Date()}
-                      productName="FRONT-CLOUD Football.zip"
-                      price="9,00 €"
-                      orderNumber={`FC-${Date.now().toString().slice(-6)}`}
-                    />
-                  </motion.div>
+                  <ReceiptDownload 
+                    purchaseDate={orderDate}
+                    productName="FRONT-CLOUD Football.zip"
+                    price="9,00 €"
+                    orderNumber={orderNumber}
+                  />
                 </div>
+              </div>
+            </motion.div>
 
-                {/* Footer avec informations de sécurité */}
-                <div className="rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <ShieldCheck className="h-5 w-5 text-green-500 mr-2" />
-                    <h3 className="font-semibold text-gray-800">Paiement sécurisé</h3>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+            {/* Instructions Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
+              <div className="p-6">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">Instructions d'utilisation</h2>
+                <div className="space-y-3">
+                  {[
+                    "Téléchargez le fichier ZIP en cliquant sur le bouton ci-dessus",
+                    "Extrayez le contenu du fichier ZIP sur votre ordinateur",
+                    "Accédez aux dossiers organisés par catégories pour trouver les logos",
+                    "Utilisez les logos dans vos projets selon les conditions d'utilisation"
+                  ].map((step, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium mr-3 flex-shrink-0 mt-0.5">
+                        {index + 1}
+                      </div>
+                      <p className="text-gray-700">{step}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Security Info */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
+              <div className="p-6 flex items-start">
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-4 flex-shrink-0">
+                  <ShieldCheck className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-2">Paiement sécurisé</h3>
+                  <p className="text-gray-600 text-sm">
                     Votre transaction a été traitée de manière sécurisée. Pour toute question concernant votre achat, 
                     n'hésitez pas à nous contacter à <span className="text-blue-600">support@front-cloud.fr</span>
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

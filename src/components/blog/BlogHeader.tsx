@@ -66,10 +66,10 @@ const BlogHeader = () => {
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-center gap-2">
+                    <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
                     <span>Vous cherchez tous les logos de football ?</span>
                   </div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
+                  <div className="pl-6 mt-1">
                     <span className="text-sm text-amber-700/90 font-medium">Recevez +8 600 LOGOS réunis dans un fichier ZIP parfaitement organisé</span>
                   </div>
                 </h3>

@@ -1,7 +1,7 @@
 
 /// <reference types="vite/client" />
 
-// Étendre l'interface Window pour inclure les fonctions de performance
+// Étendre l'interface Window pour inclure les fonctions de performance et Google Analytics
 interface Window {
   requestIdleCallback?: (
     callback: (deadline: {
@@ -11,6 +11,22 @@ interface Window {
     opts?: { timeout: number }
   ) => number;
   cancelIdleCallback?: (id: number) => void;
+  
+  // Google Analytics
+  gtag?: (
+    command: string,
+    action: string | Date,
+    params?: {
+      [key: string]: any;
+      transaction_id?: string;
+      value?: number;
+      currency?: string;
+      items?: Array<{
+        item_name?: string;
+        [key: string]: any;
+      }>;
+    }
+  ) => void;
 }
 
 // Étendre PerformanceEntry pour inclure les propriétés spécifiques du CLS

@@ -14,7 +14,7 @@ const GoogleDriveBadge = ({ className = '', variant = 'default' }: GoogleDriveBa
   
   const variantClasses = {
     default: "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100/70 hover:shadow-md hover:-translate-y-0.5 hover:border-gray-300/80",
-    hero: "bg-gray-50/95 text-gray-600 border-gray-200/90 hover:bg-gray-100/80 hover:shadow-md hover:-translate-y-0.5 hover:border-gray-300/90 transform hover:scale-105"
+    hero: "bg-gray-50/95 text-gray-600 border-gray-200/90 shadow-md transform scale-105 hover:bg-gray-100/80 hover:border-gray-300/90"
   };
   
   const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;

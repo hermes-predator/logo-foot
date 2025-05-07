@@ -102,7 +102,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto bg-white">
               <DialogHeader className="pb-0">
                 <div className="flex flex-col mb-0">
                   <DialogTitle className="text-2xl font-bold text-black text-left mb-0">

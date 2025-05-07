@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -54,12 +53,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">
-        {/* Premium Badge */}
+        {/* Google Drive Badge remplaçant le Premium Badge */}
         <div className="flex justify-center mb-3">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200/80 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-gray-300/80">
-            <Crown className="w-5 h-5" style={{ fill: '#FFC107', stroke: '#FFC107' }} />
-            <span className="text-sm font-medium text-gray-900">Collection Premium</span>
-          </div>
+          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
         </div>
 
         {/* Main title - Amélioré */}
@@ -72,11 +68,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">⦗FRONT-CLOUD⦘~ Football.zip</span>
         </h2>
         
-        {/* Google Drive Badge - Placé juste avant la description */}
-        <div className="flex justify-center">
-          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
-        </div>
-
         {/* Description - Amélioré */}
         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
           La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.

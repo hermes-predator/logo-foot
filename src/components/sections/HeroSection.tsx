@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -54,9 +53,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">
-        {/* Google Drive Badge remplaçant le Premium Badge - avec variant 'hero' unique */}
+        {/* Google Drive Badge remplaçant le Premium Badge */}
         <div className="flex justify-center mb-3">
-          <GoogleDriveBadge variant="hero" className="hero-specific-badge" />
+          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
         </div>
 
         {/* Main title - Amélioré */}
@@ -102,7 +101,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto bg-white">
+            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader className="pb-0">
                 <div className="flex flex-col mb-0">
                   <DialogTitle className="text-2xl font-bold text-black text-left mb-0">

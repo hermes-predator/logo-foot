@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
+import { Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -53,9 +54,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">
-        {/* Google Drive Badge remplaçant le Premium Badge */}
+        {/* Google Drive Badge remplaçant le Premium Badge - avec variant 'hero' unique */}
         <div className="flex justify-center mb-3">
-          <GoogleDriveBadge className="transform hover:scale-105 transition-transform duration-300" />
+          <GoogleDriveBadge variant="hero" className="hero-specific-badge" />
         </div>
 
         {/* Main title - Amélioré */}

@@ -5,15 +5,15 @@ import { BadgeCheck } from 'lucide-react';
 
 interface GoogleDriveBadgeProps {
   className?: string;
-  alwaysEnlarged?: boolean; // Nouvelle prop pour appliquer l'état de survol par défaut
+  alwaysEnlarged?: boolean; // Prop pour appliquer l'état de survol par défaut
 }
 
 const GoogleDriveBadge = ({ className = '', alwaysEnlarged = false }: GoogleDriveBadgeProps) => {
   return (
     <Badge 
       className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 
-        ${alwaysEnlarged ? 'scale-105 shadow-md' : 'hover:bg-gray-100/70 hover:shadow-md hover:-translate-y-0.5 hover:scale-105'} 
-        transition-all duration-300 hover:border-gray-300/80 ${className}`}
+        ${alwaysEnlarged ? 'scale-105' : 'hover:scale-105'} 
+        shadow-sm hover:shadow-md transition-all duration-300 hover:border-gray-300/80 ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >

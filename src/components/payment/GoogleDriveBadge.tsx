@@ -5,7 +5,7 @@ import { BadgeCheck } from 'lucide-react';
 
 interface GoogleDriveBadgeProps {
   className?: string;
-  alwaysEnlarged?: boolean; // Prop pour appliquer l'état de survol par défaut
+  alwaysEnlarged?: boolean; // Prop pour appliquer l'état agrandi par défaut
 }
 
 const GoogleDriveBadge = ({ className = '', alwaysEnlarged = false }: GoogleDriveBadgeProps) => {

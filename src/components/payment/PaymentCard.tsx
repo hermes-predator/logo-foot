@@ -87,8 +87,9 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[280px] rounded-lg shadow-lg">
-                    <p className="text-gray-700 font-medium text-sm leading-relaxed">
-                      Ce fichier est déjà parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement dans votre Google Drive et l'utiliser tel quel, sans aucune modification nécessaire.
+                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation Instantanée</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Ce fichier est prêt à l'emploi, immédiatement exploitable dans votre Drive. Structure parfaite, organisation optimale - aucune manipulation supplémentaire requise.
                     </p>
                   </TooltipContent>
                 </Tooltip>
@@ -112,7 +113,8 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Aperçu du fichier</p>
+                    <p className="font-bold text-sm">Prévisualisation</p>
+                    <p className="text-xs text-gray-500">Voir le contenu du fichier</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

@@ -87,7 +87,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   </TooltipTrigger>
                   <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[280px] rounded-lg shadow-lg">
                     <p className="text-gray-700 font-medium text-sm leading-relaxed">
-                      Ce fichier est organisé et prêt à l'emploi, vous pouvez le stocker directement dans votre Google Drive tel quel
+                      Ce fichier est déjà parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement dans votre Google Drive et l'utiliser tel quel, sans aucune modification nécessaire.
                     </p>
                   </TooltipContent>
                 </Tooltip>
@@ -112,21 +112,20 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipContent>
                     <p>Aperçu du fichier</p>
                   </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+                </TooltipProvider>
+              </div>
+            </div>
+
+            <div className="relative z-10">
+              <FeatureList />
+              <PricingBlock />
+              <PaymentButton />
             </div>
           </div>
-
-          <div className="relative z-10">
-            <FeatureList />
-            <PricingBlock />
-            <PaymentButton />
-          </div>
+          
+          <PaymentCardBack onFlipBack={handleFlip} />
         </div>
-        
-        <PaymentCardBack onFlipBack={handleFlip} />
       </div>
-    </div>
   );
 };
 

@@ -87,7 +87,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Vous pouvez stocker ce fichier sur Google Drive</p>
+                    <p>Ce fichier est organisé et prêt à l'emploi, vous pouvez le stocker directement dans votre Google Drive tel quel</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

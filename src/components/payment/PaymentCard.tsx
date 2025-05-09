@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -92,6 +93,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
+              
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -112,20 +114,21 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipContent>
                     <p>Aperçu du fichier</p>
                   </TooltipContent>
-                </TooltipProvider>
-              </div>
-            </div>
-
-            <div className="relative z-10">
-              <FeatureList />
-              <PricingBlock />
-              <PaymentButton />
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
-          
-          <PaymentCardBack onFlipBack={handleFlip} />
+
+          <div className="relative z-10">
+            <FeatureList />
+            <PricingBlock />
+            <PaymentButton />
+          </div>
         </div>
+        
+        <PaymentCardBack onFlipBack={handleFlip} />
       </div>
+    </div>
   );
 };
 

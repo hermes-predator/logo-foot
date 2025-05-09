@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -86,8 +85,10 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                       <GoogleDriveBadge cursorHelp={true} />
                     </div>
                   </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Ce fichier est organisé et prêt à l'emploi, vous pouvez le stocker directement dans votre Google Drive tel quel</p>
+                  <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[280px] rounded-lg shadow-lg">
+                    <p className="text-gray-700 font-medium text-sm leading-relaxed">
+                      Ce fichier est organisé et prêt à l'emploi, vous pouvez le stocker directement dans votre Google Drive tel quel
+                    </p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

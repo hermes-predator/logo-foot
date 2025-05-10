@@ -113,8 +113,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p className="font-bold text-sm">Prévisualisation</p>
-                    <p className="text-xs text-gray-500">Voir le contenu du fichier</p>
+                    <p>Aperçu</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

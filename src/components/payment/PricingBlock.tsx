@@ -13,12 +13,12 @@ import Footer from "../Footer";
 const PricingBlock = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/60 border border-blue-200/60 shadow-md relative overflow-hidden z-30">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-gradient-to-br from-white/90 via-blue-50/80 to-white/90 border border-blue-200/60 shadow-md relative overflow-hidden z-30">
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
-        <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/30 via-indigo-50/20 to-white/70"></div>
+        <div className="absolute inset-0 -top-2 bg-gradient-to-r from-white/70 via-blue-50/30 to-white/70"></div>
         
         {/* Bannière de promotion limitée avec texte statique - border-b supprimée */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-purple-50/70 py-1 text-center rounded-t-xl">
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50/80 via-indigo-100/70 to-blue-50/80 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-2 justify-center">
             <span className="text-gray-900 text-xs font-medium">Offre promotionnelle</span>
           </div>

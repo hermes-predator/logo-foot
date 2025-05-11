@@ -20,7 +20,7 @@ const PricingBlock = () => {
         {/* Bannière de promotion limitée avec texte statique */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-2 justify-center">
-            <span className="text-gray-900 text-xs font-medium">Offre spéciale</span>
+            <span className="text-gray-900 text-xs font-medium">Offre promotionnelle</span>
           </div>
         </div>
         

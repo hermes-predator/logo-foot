@@ -17,19 +17,19 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
         
-        {/* Bannière de promotion limitée - maintenant intégrée dans le bloc de prix */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 p-2 text-center rounded-t-xl">
-          <div className="flex items-center gap-2 justify-center">
-            <div className="flex items-center justify-center w-6 h-6 bg-blue-50 rounded-full text-blue-600">
-              <Clock className="h-3 w-3" />
+        {/* Bannière de promotion limitée - maintenant plus fine */}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
+          <div className="flex items-center gap-1 justify-center">
+            <div className="flex items-center justify-center w-4 h-4 bg-blue-50 rounded-full text-blue-600">
+              <Clock className="h-2 w-2" />
             </div>
-            <p className="text-gray-700 font-medium text-xs">
-              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> seulement • <span className="text-gray-500">Cette promotion se termine bientôt</span>
+            <p className="text-gray-700 text-xs">
+              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> • <span className="text-gray-500 text-[10px]">Se termine bientôt</span>
             </p>
           </div>
         </div>
         
-        <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40 mt-8">
+        <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40 mt-6">
           <div className="flex flex-col md:flex-row items-center gap-3">
             <div>
               {/* Prix normal barré avec meilleur contraste */}

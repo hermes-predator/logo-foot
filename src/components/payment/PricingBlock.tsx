@@ -47,7 +47,8 @@ const PricingBlock = () => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row items-center gap-3 relative z-50">
+        {/* J'ai ajouté mt-4 pour déplacer le bouton vers le bas et pt-2 pour l'éloigner un peu plus */}
+        <div className="flex flex-col md:flex-row items-center gap-3 relative z-50 mt-4 pt-2">
           <div className="group">
             <Tooltip>
               <TooltipTrigger asChild>

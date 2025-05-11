@@ -20,11 +20,11 @@ const PricingBlock = () => {
         {/* Bannière de promotion limitée - maintenant plus fine */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-1 justify-center">
-            <div className="flex items-center justify-center w-4 h-4 bg-blue-50 rounded-full text-gray-700">
+            <div className="flex items-center justify-center w-4 h-4 bg-blue-50 rounded-full text-blue-600">
               <Clock className="h-2 w-2" />
             </div>
-            <p className="text-gray-800 text-xs">
-              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-black">9€</span> • <span className="text-gray-600 text-[10px]">Se termine bientôt</span>
+            <p className="text-gray-700 text-xs">
+              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> • <span className="text-gray-500 text-[10px]">Se termine bientôt</span>
             </p>
           </div>
         </div>
@@ -35,14 +35,14 @@ const PricingBlock = () => {
               {/* Prix normal barré avec meilleur contraste */}
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-gray-500 text-2xl line-through font-medium">50,00€</span>
-                <span className="bg-red-100 text-gray-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200 shadow-sm">Valeur réelle</span>
+                <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200 shadow-sm">Valeur réelle</span>
               </div>
               
               {/* Nouveau prix avec meilleur contraste */}
               <div className="flex items-center gap-2">
-                <span className="text-4xl md:text-5xl font-extrabold text-black">9€</span>
+                <span className="text-4xl md:text-5xl font-extrabold text-gray-900">9€</span>
                 <div className="flex flex-col items-start ml-2">
-                  <span className="text-gray-800 text-sm font-bold whitespace-nowrap">82% de réduction</span>
+                  <span className="text-emerald-600 text-sm font-bold whitespace-nowrap">82% de réduction</span>
                   <span className="text-gray-600 text-sm whitespace-nowrap">TVA incluse</span>
                 </div>
               </div>
@@ -55,14 +55,14 @@ const PricingBlock = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 hover:shadow-sm transition-all duration-300 transform hover:translate-y-[-1px] border border-emerald-200/50 cursor-help">
-                  <RefreshCcw className="h-4 w-4 text-gray-700 group-hover:rotate-180 transition-transform duration-500" />
-                  <span className="text-sm whitespace-nowrap text-gray-900 font-medium">
+                  <RefreshCcw className="h-4 w-4 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
+                  <span className="text-sm whitespace-nowrap text-emerald-800 font-medium">
                     Satisfait ou Remboursé
                   </span>
                 </div>
               </TooltipTrigger>
               <TooltipContent className="z-[9999] max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-                <p className="font-semibold text-gray-900">Votre satisfaction est garantie.</p>
+                <p className="font-semibold text-emerald-700">Votre satisfaction est garantie.</p>
                 <div className="space-y-2 text-gray-700">
                   <p>Vous pouvez nous contacter par e-mail dans les 14 jours suivant votre achat.</p>
                   <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (CGV).</p>
@@ -78,7 +78,7 @@ const PricingBlock = () => {
                       <Mail className="h-4 w-4" />
                       <a 
                         href="mailto:contact@logo-foot.com" 
-                        className="text-gray-800 hover:underline hover:text-black transition-colors"
+                        className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
                       >
                         contact@logo-foot.com
                       </a>

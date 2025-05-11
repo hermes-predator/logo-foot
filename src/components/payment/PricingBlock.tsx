@@ -13,18 +13,18 @@ import Footer from "../Footer";
 const PricingBlock = () => {
   return (
     <>
-      {/* Bannière de promotion limitée - maintenant au-dessus du container de prix */}
-      <div className="bg-gradient-to-r from-amber-50 to-yellow-100 border border-amber-200 rounded-lg p-4 shadow-sm mb-4 w-full relative z-50">
-        <div className="flex items-center gap-3 justify-center">
-          <div className="flex items-center justify-center w-9 h-9 bg-amber-100 rounded-full text-amber-600">
-            <Clock className="h-5 w-5" />
+      {/* Bannière de promotion limitée - maintenant au-dessus du container de prix mais avec un style plus discret */}
+      <div className="bg-gradient-to-r from-gray-50 to-blue-50 border border-blue-100 rounded-lg p-3 shadow-sm mb-4 w-full relative z-50">
+        <div className="flex items-center gap-2 justify-center">
+          <div className="flex items-center justify-center w-8 h-8 bg-blue-50 rounded-full text-blue-600">
+            <Clock className="h-4 w-4" />
           </div>
           <div className="text-center">
-            <p className="text-amber-800 font-semibold text-sm">
-              Offre spéciale : <span className="line-through">50€</span> <span className="font-bold">9€</span> seulement
+            <p className="text-gray-700 font-medium text-sm">
+              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> seulement
             </p>
-            <p className="text-xs text-amber-700">
-              Cette promotion se termine bientôt ! Profitez-en maintenant
+            <p className="text-xs text-gray-500">
+              Cette promotion se termine bientôt
             </p>
           </div>
         </div>

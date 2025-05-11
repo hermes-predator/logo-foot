@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ShoppingCart, ArrowRight } from 'lucide-react';
+import { ShoppingCart, ArrowRight, Clock } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import {
@@ -27,6 +28,23 @@ const PaymentButton = () => {
 
   return (
     <div className="space-y-4">
+      {/* Bannière de promotion limitée */}
+      <div className="bg-gradient-to-r from-amber-50 to-yellow-100 border border-amber-200 rounded-lg p-4 shadow-sm mb-4">
+        <div className="flex items-center gap-3 justify-center">
+          <div className="flex items-center justify-center w-9 h-9 bg-amber-100 rounded-full text-amber-600">
+            <Clock className="h-5 w-5" />
+          </div>
+          <div className="text-center">
+            <p className="text-amber-800 font-semibold text-sm">
+              Offre spéciale : <span className="line-through">50€</span> <span className="font-bold">9€</span> seulement
+            </p>
+            <p className="text-xs text-amber-700">
+              Cette promotion se termine bientôt ! Profitez-en maintenant
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Tooltip>
         <TooltipTrigger asChild>
           <Button 

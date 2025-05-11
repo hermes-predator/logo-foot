@@ -1,44 +1,24 @@
 import React from 'react';
-import { ShieldCheck, Download, HandHeart, Clock } from 'lucide-react';
+import { ShieldCheck, Download, HandHeart } from 'lucide-react';
 
 const TrustIndicators = () => {
   return (
-    <div className="flex flex-col gap-4 mb-6">
-      {/* Bannière de promotion limitée */}
-      <div className="bg-gradient-to-r from-amber-50 to-yellow-100 border border-amber-200 rounded-lg p-4 shadow-sm">
-        <div className="flex items-center gap-3 justify-center">
-          <div className="flex items-center justify-center w-9 h-9 bg-amber-100 rounded-full text-amber-600">
-            <Clock className="h-5 w-5" />
-          </div>
-          <div className="text-center">
-            <p className="text-amber-800 font-semibold text-sm">
-              Offre spéciale : <span className="line-through">50€</span> <span className="font-bold">9€</span> seulement
-            </p>
-            <p className="text-xs text-amber-700">
-              Cette promotion se termine bientôt ! Profitez-en maintenant
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Indicateurs de confiance existants */}
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
-        <TrustCard 
-          icon={<ShieldCheck />}
-          title="Paiement Sécurisé"
-          description="Transactions via SumUp"
-        />
-        <TrustCard 
-          icon={<Download />}
-          title="Téléchargement Instantané"
-          description="Page d'après-paiement"
-        />
-        <TrustCard 
-          icon={<HandHeart />}
-          title="Support Disponible"
-          description="Email : contact@logo-foot.com"
-        />
-      </div>
+    <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-6">
+      <TrustCard 
+        icon={<ShieldCheck />}
+        title="Paiement Sécurisé"
+        description="Transactions via SumUp"
+      />
+      <TrustCard 
+        icon={<Download />}
+        title="Téléchargement Instantané"
+        description="Page d'après-paiement"
+      />
+      <TrustCard 
+        icon={<HandHeart />}
+        title="Support Disponible"
+        description="Email : contact@logo-foot.com"
+      />
     </div>
   );
 };

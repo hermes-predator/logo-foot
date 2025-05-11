@@ -6,17 +6,17 @@ const TrustIndicators = () => {
   return (
     <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-6">
       <TrustCard 
-        icon={<ShieldCheck />}
+        icon={<ShieldCheck className="text-gray-700" />}
         title="Paiement Sécurisé"
         description="Transactions via SumUp"
       />
       <TrustCard 
-        icon={<Download />}
+        icon={<Download className="text-gray-700" />}
         title="Téléchargement Instantané"
         description="Page d'après-paiement"
       />
       <TrustCard 
-        icon={<HandHeart />}
+        icon={<HandHeart className="text-gray-700" />}
         title="Support Disponible"
         description="Email : contact@logo-foot.com"
       />
@@ -41,7 +41,7 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-50/0 via-gray-200/30 to-gray-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
       
       {/* Icône avec style de survol appliqué par défaut et effet subtil */}
-      <div className="w-10 h-10 text-gray-700 mb-3 flex items-center justify-center bg-gray-100 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-gray-200/50" aria-hidden="true">
+      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gray-100 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-gray-200/50" aria-hidden="true">
         {icon}
       </div>
       

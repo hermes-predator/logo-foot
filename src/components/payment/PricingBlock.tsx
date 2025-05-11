@@ -13,28 +13,23 @@ import Footer from "../Footer";
 const PricingBlock = () => {
   return (
     <>
-      {/* Bannière de promotion limitée - maintenant au-dessus du container de prix mais avec un style plus discret */}
-      <div className="bg-gradient-to-r from-gray-50 to-blue-50 border border-blue-100 rounded-lg p-3 shadow-sm mb-4 w-full relative z-50">
-        <div className="flex items-center gap-2 justify-center">
-          <div className="flex items-center justify-center w-8 h-8 bg-blue-50 rounded-full text-blue-600">
-            <Clock className="h-4 w-4" />
-          </div>
-          <div className="text-center">
-            <p className="text-gray-700 font-medium text-sm">
-              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> seulement
-            </p>
-            <p className="text-xs text-gray-500">
-              Cette promotion se termine bientôt
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden -mt-4 z-30">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden z-30">
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
         
-        <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40">
+        {/* Bannière de promotion limitée - maintenant intégrée dans le bloc de prix */}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 p-2 text-center rounded-t-xl">
+          <div className="flex items-center gap-2 justify-center">
+            <div className="flex items-center justify-center w-6 h-6 bg-blue-50 rounded-full text-blue-600">
+              <Clock className="h-3 w-3" />
+            </div>
+            <p className="text-gray-700 font-medium text-xs">
+              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-blue-700">9€</span> seulement • <span className="text-gray-500">Cette promotion se termine bientôt</span>
+            </p>
+          </div>
+        </div>
+        
+        <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40 mt-8">
           <div className="flex flex-col md:flex-row items-center gap-3">
             <div>
               {/* Prix normal barré avec meilleur contraste */}

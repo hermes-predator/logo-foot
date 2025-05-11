@@ -17,10 +17,12 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-white/90 via-blue-50/20 to-white/90"></div>
         
-        {/* Bannière de promotion limitée avec texte statique */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50/60 via-blue-100/50 to-blue-50/60 py-1 text-center rounded-t-xl">
-          <div className="flex items-center gap-2 justify-center">
-            <span className="text-gray-900 text-xs font-medium">Offre promotionnelle</span>
+        {/* Bannière de promotion avec dégradé amélioré et effet lumineux */}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-500/20 via-blue-400/30 to-blue-500/20 py-1.5 text-center rounded-t-xl shadow-sm">
+          <div className="flex items-center gap-2 justify-center relative">
+            {/* Effet de brillance subtil */}
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine"></span>
+            <span className="text-blue-900 text-xs font-semibold tracking-wide">Offre promotionnelle</span>
           </div>
         </div>
         

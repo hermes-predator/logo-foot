@@ -17,14 +17,14 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
         
-        {/* Bannière de promotion limitée - avec textes noir et gris */}
+        {/* Bannière de promotion limitée - sans le prix */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-1 justify-center">
             <div className="flex items-center justify-center w-4 h-4 bg-blue-50 rounded-full text-blue-600">
               <Clock className="h-2 w-2" />
             </div>
             <p className="text-gray-900 text-xs">
-              Offre spéciale : <span className="line-through text-gray-500">50€</span> <span className="font-bold text-gray-900">9€</span> • <span className="text-gray-600 text-[10px]">Se termine bientôt</span>
+              Offre spéciale <span className="text-gray-600 text-[10px]">• Se termine bientôt</span>
             </p>
           </div>
         </div>

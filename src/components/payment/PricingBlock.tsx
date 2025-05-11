@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { RefreshCcw, Mail } from 'lucide-react';
+import { RefreshCcw, Mail, Clock } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -15,6 +15,23 @@ const PricingBlock = () => {
     <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-white border border-blue-200/60 shadow-md relative overflow-hidden -mt-4 z-30">
       {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
       <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
+      
+      {/* Bannière de promotion limitée - maintenant au-dessus des prix */}
+      <div className="bg-gradient-to-r from-amber-50 to-yellow-100 border border-amber-200 rounded-lg p-4 shadow-sm mb-4 w-full relative z-40">
+        <div className="flex items-center gap-3 justify-center">
+          <div className="flex items-center justify-center w-9 h-9 bg-amber-100 rounded-full text-amber-600">
+            <Clock className="h-5 w-5" />
+          </div>
+          <div className="text-center">
+            <p className="text-amber-800 font-semibold text-sm">
+              Offre spéciale : <span className="line-through">50€</span> <span className="font-bold">9€</span> seulement
+            </p>
+            <p className="text-xs text-amber-700">
+              Cette promotion se termine bientôt ! Profitez-en maintenant
+            </p>
+          </div>
+        </div>
+      </div>
       
       <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40">
         <div className="flex flex-col md:flex-row items-center gap-3">

@@ -22,7 +22,7 @@ const PricingBlock = () => {
           <div className="flex items-center gap-2 justify-center relative">
             {/* Effet de brillance subtil */}
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine"></span>
-            <span className="text-blue-900 text-xs font-semibold tracking-wide">Offre Promotionnelle</span>
+            <span className="text-blue-600 text-xs font-semibold tracking-wide">Offre Promotionnelle</span>
           </div>
         </div>
         
@@ -47,7 +47,7 @@ const PricingBlock = () => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row items-center gap-3 relative z-50">
+        <div className="flex flex-col md:flex-row items-center justify-center md:self-center gap-3 relative z-50">
           <div className="group">
             <Tooltip>
               <TooltipTrigger asChild>

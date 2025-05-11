@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { RefreshCcw, Mail, Clock } from 'lucide-react';
+import { RefreshCcw, Mail } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -9,6 +9,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import Footer from "../Footer";
+import CountdownTimer from './CountdownTimer';
 
 const PricingBlock = () => {
   return (
@@ -17,13 +18,12 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
         
-        {/* Bannière de promotion limitée - sans le prix et avec une icône clock plus grande sans bulle */}
+        {/* Bannière de promotion limitée avec le compte à rebours */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
-          <div className="flex items-center gap-2 justify-center">
-            <Clock className="h-3 w-3 text-gray-700" />
-            <p className="text-gray-900 text-xs">
-              Offre spéciale <span className="text-gray-600 text-[10px]">• Se termine bientôt</span>
-            </p>
+          <div className="flex items-center gap-3 justify-center">
+            <span className="text-gray-900 text-xs">Offre spéciale</span>
+            <CountdownTimer />
+            <span className="text-gray-600 text-[10px]">• Se termine bientôt</span>
           </div>
         </div>
         

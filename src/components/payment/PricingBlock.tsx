@@ -17,8 +17,8 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/40 to-white/90"></div>
         
-        {/* Bannière de promotion limitée avec texte statique */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
+        {/* Bannière de promotion limitée avec texte statique - border-b supprimée */}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-2 justify-center">
             <span className="text-gray-900 text-xs font-medium">Offre promotionnelle</span>
           </div>

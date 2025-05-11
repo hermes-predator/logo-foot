@@ -17,8 +17,8 @@ const PricingBlock = () => {
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
         <div className="absolute inset-0 -top-2 bg-gradient-to-r from-white/90 via-blue-50/20 to-white/90"></div>
         
-        {/* Bannière de promotion avec dégradé très clair - bleu au centre et blanc aux extrémités, légèrement plus foncé */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-white/95 via-blue-100/40 to-white/95 py-1.5 text-center rounded-t-xl border-b border-blue-100/20">
+        {/* Bannière de promotion avec dégradé très clair - bleu très clair aux extrémités et bleu au centre */}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50/30 via-blue-100/40 to-blue-50/30 py-1.5 text-center rounded-t-xl border-b border-blue-100/20">
           <div className="flex items-center gap-2 justify-center relative">
             {/* Effet de brillance subtil */}
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine"></span>

@@ -33,15 +33,15 @@ interface TrustCardProps {
 const TrustCard = ({ icon, title, description }: TrustCardProps) => {
   return (
     <div 
-      className="flex flex-col items-center p-4 bg-gradient-to-b from-purple-50/90 to-white border border-purple-100/60 rounded-lg transition-all duration-300 hover:border-purple-200/70 will-change-transform group relative overflow-hidden"
+      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg transition-all duration-300 hover:border-blue-200/70 will-change-transform group relative overflow-hidden"
       role="article"
       aria-label={`Information sur ${title}`}
     >
       {/* Effet de lumière subtil sur hover */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-50/0 via-purple-100/30 to-purple-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-100/30 to-blue-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
       
-      {/* Icône avec style de survol appliqué par défaut et effet subtil - couleur changée de bleu à violet */}
-      <div className="w-10 h-10 text-purple-700 mb-3 flex items-center justify-center bg-purple-50 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-purple-100/50" aria-hidden="true">
+      {/* Icône avec style de survol appliqué par défaut et effet subtil */}
+      <div className="w-10 h-10 text-blue-700 mb-3 flex items-center justify-center bg-blue-50 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-blue-100/50" aria-hidden="true">
         {icon}
       </div>
       

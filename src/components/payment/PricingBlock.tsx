@@ -20,7 +20,7 @@ const PricingBlock = () => {
         {/* Bannière de promotion limitée - sans le prix et avec une icône clock plus grande sans bulle */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-gray-50 to-blue-50 border-b border-blue-100 py-1 text-center rounded-t-xl">
           <div className="flex items-center gap-2 justify-center">
-            <Clock className="h-3 w-3 text-blue-600" />
+            <Clock className="h-3 w-3 text-gray-700" />
             <p className="text-gray-900 text-xs">
               Offre spéciale <span className="text-gray-600 text-[10px]">• Se termine bientôt</span>
             </p>

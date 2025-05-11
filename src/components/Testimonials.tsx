@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
-import { Star, ExternalLink, ThumbsUp } from 'lucide-react';
+import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
   Carousel,
@@ -203,7 +202,7 @@ const Testimonials = () => {
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
-                      <ThumbsUp className="w-3.5 h-3.5 text-blue-600" aria-hidden="true" />
+                      <UserRound className="w-3.5 h-3.5 text-blue-600" aria-hidden="true" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>

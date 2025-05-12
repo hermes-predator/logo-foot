@@ -34,24 +34,24 @@ const DisclaimerDialog = () => {
 
           <Separator className="bg-gray-200" />
 
-          <div className="mt-4 p-5 border border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-sm">
+          <div className="mt-4 p-5 border border-gray-200/50 bg-gradient-to-br from-gray-50 to-slate-50/50 rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
-              <div className="text-sm leading-relaxed text-amber-900/90 space-y-6">
+              <AlertTriangle className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
+              <div className="text-sm leading-relaxed text-gray-800 space-y-6">
                 <p>
                   Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
                 </p>
 
-                <div className="bg-gradient-to-r from-amber-100/80 to-amber-50/80 p-4 rounded-lg">
-                  <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                  <p className="mt-2 text-amber-900/80 text-xs sm:text-sm">
+                <div className="bg-gradient-to-r from-slate-100 to-gray-50 p-4 rounded-lg">
+                  <span className="font-semibold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <p className="mt-2 text-gray-700 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3">
-                      <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
                       <span>Une ressource indépendante, compilée et organisée.</span>
                     </div>
                     
                     <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
                       <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
                     </div>
                   </p>

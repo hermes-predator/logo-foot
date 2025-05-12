@@ -11,7 +11,7 @@ const Logo = () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <span className="text-lg font-bold text-black tracking-tight">
+        <span className="text-lg font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
           logo-foot
         </span>
         <span className="text-[10px] text-gray-500 -mt-1 tracking-wider font-semibold opacity-80">.com</span>

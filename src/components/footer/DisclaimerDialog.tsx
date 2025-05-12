@@ -23,7 +23,7 @@ const DisclaimerDialog = () => {
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <Info className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
+              <Info className="w-6 h-6 text-black flex-shrink-0 mt-1 mx-auto sm:mx-0" />
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p>
                   Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.

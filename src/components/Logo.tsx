@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <div className="flex items-center gap-2 font-medium">
       <div className="relative">
-        <div className="relative flex items-center justify-center bg-white dark:bg-black rounded-lg ring-1 ring-gray-900/5 shadow-sm leading-none p-3">
+        <div className="relative flex items-center justify-center bg-white dark:bg-black rounded-lg ring-1 ring-gray-900/5 shadow-sm leading-none p-3 animate-floating">
           <Folder size={26} className="text-purple-600" strokeWidth={2.25} />
         </div>
       </div>

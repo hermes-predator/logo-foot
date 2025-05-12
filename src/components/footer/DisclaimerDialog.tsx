@@ -42,22 +42,20 @@ const DisclaimerDialog = () => {
                   Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
                 </p>
 
-                <ul className="space-y-4 pl-0 sm:pl-4">
-                  <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
-                    <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                    <p className="mt-2 text-amber-900/80 text-xs sm:text-sm">
-                      <div className="flex items-start gap-2 mb-3">
-                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
-                        <span>Une ressource indépendante, compilée et organisée.</span>
-                      </div>
-                      
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
-                        <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
-                      </div>
-                    </p>
-                  </li>
-                </ul>
+                <div className="bg-gradient-to-r from-amber-100/80 to-amber-50/80 p-4 rounded-lg border border-amber-200/70 shadow-inner">
+                  <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <p className="mt-2 text-amber-900/80 text-xs sm:text-sm">
+                    <div className="flex items-start gap-2 mb-3">
+                      <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span>Une ressource indépendante, compilée et organisée.</span>
+                    </div>
+                    
+                    <div className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
+                    </div>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

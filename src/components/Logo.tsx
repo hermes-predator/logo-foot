@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Folder, Football } from 'lucide-react';
+import { Folder, Soccer } from 'lucide-react';
 
 const Logo = () => {
   return (
@@ -10,7 +10,7 @@ const Logo = () => {
         <div className="relative flex items-center bg-white dark:bg-black rounded-lg ring-1 ring-gray-900/5 leading-none p-1.5">
           <div className="flex items-center space-x-1">
             <Folder size={14} className="text-blue-600" />
-            <Football size={14} className="text-purple-600" />
+            <Soccer size={14} className="text-purple-600" />
           </div>
         </div>
       </div>

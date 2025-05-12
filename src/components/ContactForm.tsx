@@ -4,46 +4,46 @@ import { ShieldCheck, Mail, User, Calendar, Ticket, Clock } from 'lucide-react';
 
 const ContactForm = () => {
   return (
-    <div className="text-sm text-gray-600 space-y-6">
-      <div className="space-y-2">
-        <h3 className="font-medium text-lg text-gray-900 flex items-center gap-4">
-          <div className="bg-blue-100 rounded-md p-2.5">
-            <Mail className="w-6 h-6 text-blue-600" />
+    <div className="text-sm text-gray-600 space-y-4">
+      <div className="space-y-1">
+        <h3 className="font-medium text-lg text-gray-900 flex items-center gap-3">
+          <div className="bg-blue-100 rounded-md p-2">
+            <Mail className="w-5 h-5 text-blue-600" />
           </div>
           <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline">contact@logo-foot.com</a>
         </h3>
       </div>
       
-      <p className="text-black leading-relaxed">En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
+      <p className="text-black leading-tight text-sm">En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.</p>
       
-      <p className="text-black leading-relaxed mb-2">Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
+      <p className="text-black leading-tight text-sm">Vous avez passé commande ? Veuillez inclure quelques informations pour nous aider à vous identifier :</p>
       
-      <div className="space-y-4 ml-2">
-        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
-          <div className="bg-gray-100 p-2 rounded-md">
-            <User className="w-4 h-4 text-gray-600" />
+      <div className="space-y-2 ml-1">
+        <div className="flex items-center gap-3 pl-1 p-1 rounded-md">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <User className="w-3.5 h-3.5 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-500">Votre nom et prénom</span>
+          <span className="font-medium text-gray-500 text-sm">Votre nom et prénom</span>
         </div>
         
-        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
-          <div className="bg-gray-100 p-2 rounded-md">
-            <Clock className="w-4 h-4 text-gray-600" />
+        <div className="flex items-center gap-3 pl-1 p-1 rounded-md">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <Clock className="w-3.5 h-3.5 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-500">La date et l'heure d'achat</span>
+          <span className="font-medium text-gray-500 text-sm">La date et l'heure d'achat</span>
         </div>
         
-        <div className="flex items-center gap-4 pl-1 p-1.5 rounded-md">
-          <div className="bg-gray-100 p-2 rounded-md">
-            <Ticket className="w-4 h-4 text-gray-600" />
+        <div className="flex items-center gap-3 pl-1 p-1 rounded-md">
+          <div className="bg-gray-100 p-1.5 rounded-md">
+            <Ticket className="w-3.5 h-3.5 text-gray-600" />
           </div>
-          <span className="font-medium text-gray-500">Votre preuve d'achat (reçu)</span>
+          <span className="font-medium text-gray-500 text-sm">Votre preuve d'achat (reçu)</span>
         </div>
       </div>
       
-      <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-md">
-        <p className="text-xs text-gray-500 flex items-start gap-3 leading-relaxed">
-          <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-gray-400" />
+      <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded-md">
+        <p className="text-xs text-gray-500 flex items-start gap-2 leading-tight">
+          <ShieldCheck className="w-3 h-3 mt-0.5 flex-shrink-0 text-gray-400" />
           <span>
             Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression.
           </span>

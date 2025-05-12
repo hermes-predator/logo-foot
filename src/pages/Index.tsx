@@ -1,4 +1,3 @@
-
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
@@ -50,7 +49,7 @@ const Index = () => {
       if (
         target.tagName === 'IMG' || 
         target.tagName === 'VIDEO' ||
-        target.closest('.protected-content')
+        (target instanceof HTMLElement && target.closest('.protected-content'))
       ) {
         e.preventDefault();
         return false;
@@ -63,7 +62,7 @@ const Index = () => {
       if (
         target.tagName === 'IMG' || 
         target.tagName === 'VIDEO' ||
-        target.closest('.protected-content')
+        (target instanceof HTMLElement && target.closest('.protected-content'))
       ) {
         e.preventDefault();
         return false;
@@ -110,7 +109,7 @@ const Index = () => {
       }
     };
   }, []);
-
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Helmet>

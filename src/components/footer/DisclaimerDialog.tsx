@@ -14,15 +14,18 @@ const DisclaimerDialog = () => {
         <AlertTriangle className="w-4 h-4" />
         Disclaimer
       </DialogTrigger>
-      <DialogContent className={`max-w-2xl ${isMobile ? 'max-h-[90vh] px-4' : 'max-h-[80vh]'} overflow-y-auto`}>
+      <DialogContent className={`max-w-2xl ${isMobile ? 'max-h-[90vh] px-4' : 'max-h-[80vh]'} overflow-y-auto bg-gradient-to-b from-white to-gray-50 shadow-xl border-0`}>
         <DialogHeader>
-          <DialogTitle className="text-xl font-semibold text-black">Disclaimer</DialogTitle>
+          <DialogTitle className="text-xl font-bold text-gray-800 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-500" />
+            <span>Disclaimer légal</span>
+          </DialogTitle>
         </DialogHeader>
         <div className="space-y-6">
-          <div className="mt-4 p-4 sm:p-6 border-2 border-white/20 bg-white rounded-xl shadow-inner">
+          <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <Info className="w-6 h-6 text-gray-500 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
-              <div className="text-sm leading-relaxed text-gray-800/90 space-y-6">
+              <Info className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
+              <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p>
                   Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
                 </p>
@@ -30,9 +33,9 @@ const DisclaimerDialog = () => {
             </div>
           </div>
 
-          <Separator className="bg-gray-200/30" />
+          <Separator className="bg-gray-200" />
 
-          <div className="mt-4 p-4 sm:p-6 border-2 border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-inner">
+          <div className="mt-4 p-5 border border-amber-200/50 bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
               <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1 mx-auto sm:mx-0" />
               <div className="text-sm leading-relaxed text-amber-900/90 space-y-6">
@@ -43,16 +46,14 @@ const DisclaimerDialog = () => {
                 <ul className="space-y-4 pl-0 sm:pl-4">
                   <li className="relative pl-6 before:content-['✦'] before:absolute before:left-0 before:text-amber-600 before:font-bold before:text-lg">
                     <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                    <p className="mt-1 text-amber-900/80 text-xs sm:text-sm">
-                      <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <p className="mt-2 text-amber-900/80 text-xs sm:text-sm">
+                      <div className="flex items-start gap-2 mb-3">
+                        <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                         <span>Une ressource indépendante, compilée et organisée.</span>
                       </div>
                       
-                      <br />
-                      
                       <div className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                         <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
                       </div>
                     </p>

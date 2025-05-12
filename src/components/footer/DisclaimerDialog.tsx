@@ -42,7 +42,7 @@ const DisclaimerDialog = () => {
                   Ce fichier est un produit numérique mis à disposition à des fins strictement personnelles, éducatives ou créatives.
                 </p>
 
-                <div className="bg-gradient-to-r from-amber-100/80 to-amber-50/80 p-4 rounded-lg border border-amber-200/70 shadow-inner">
+                <div className="bg-gradient-to-r from-amber-100/80 to-amber-50/80 p-4 rounded-lg border border-amber-200/70">
                   <span className="font-semibold text-amber-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <p className="mt-2 text-amber-900/80 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3">

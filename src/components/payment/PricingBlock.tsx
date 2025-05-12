@@ -13,9 +13,9 @@ import Footer from "../Footer";
 const PricingBlock = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-gradient-to-br from-blue-50/95 via-blue-100/30 to-blue-50/90 border border-blue-200/40 shadow-md relative overflow-hidden z-30 hover:shadow-lg transition-shadow duration-300">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-gradient-to-br from-blue-50/95 to-blue-50/90 via-blue-100/30 border border-blue-200/40 shadow-md relative overflow-hidden z-30 hover:shadow-lg transition-shadow duration-300">
         {/* Effet de verre simplifié avec positionnement légèrement plus haut */}
-        <div className="absolute inset-0 -top-2 bg-gradient-to-r from-white/90 via-blue-50/30 to-white/90"></div>
+        <div className="absolute inset-0 -top-2 bg-gradient-to-r from-blue-50/30 via-blue-100/30 to-white/90"></div>
         
         {/* Bannière de promotion avec dégradé très clair - bleu très clair aux extrémités et bleu au centre */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50/30 via-blue-100/40 to-blue-50/30 py-1.5 text-center rounded-t-xl border-b border-blue-100/20">

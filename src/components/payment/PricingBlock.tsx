@@ -13,7 +13,7 @@ import Footer from "../Footer";
 const PricingBlock = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-transparent border-0 shadow-lg relative overflow-hidden z-30 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-6 rounded-xl bg-transparent border border-gray-100/40 shadow-lg relative overflow-hidden z-30 hover:shadow-xl transition-shadow duration-300">
         {/* Bannière de promotion avec dégradé du bleu au blanc, de gauche à droite - conservée en couleur */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-50 to-white py-1 text-center rounded-t-xl border-b border-blue-100/20">
           <div className="flex items-center gap-2 justify-start pl-8 relative">

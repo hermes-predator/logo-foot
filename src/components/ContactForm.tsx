@@ -15,7 +15,7 @@ const ContactForm = () => {
           </a>
         </h3>
         
-        <p className="text-black leading-relaxed text-sm border-l-2 border-blue-200 pl-3 py-0">
+        <p className="text-black leading-relaxed text-sm border-l-2 border-blue-200 pl-3 py-0 mt-3">
           En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.
         </p>
       </div>

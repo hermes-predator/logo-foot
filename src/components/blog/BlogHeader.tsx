@@ -54,7 +54,12 @@ const BlogHeader = () => {
                 Tout
               </Link>
               {categoriesToDisplay.map(([key, category]) => (
-                <Link key={key} to={`/blog?category=${key}`} className={getCategoryStyle(key)}>
+                <Link 
+                  key={key} 
+                  to={`/blog?category=${key}`} 
+                  className={getCategoryStyle(key)}
+                  preventScrollReset={false}
+                >
                   {category.name}
                 </Link>
               ))}

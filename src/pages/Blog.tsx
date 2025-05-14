@@ -20,6 +20,7 @@ const Blog = () => {
   // Filter posts based on URL parameters
   useEffect(() => {
     setIsLoading(true);
+    window.scrollTo(0, 0); // Scroll to top when category changes
 
     let postsToShow = blogPosts;
     
@@ -37,25 +38,6 @@ const Blog = () => {
     }, 500);
     return () => clearTimeout(timer);
   }, [categoryParam]);
-
-  // Check for invalid posts
-  useEffect(() => {
-    console.log('Blog page loaded with', blogPosts.length, 'total posts');
-
-    // Check for any posts with missing required fields
-    const invalidPosts = blogPosts.filter(post => !post.id || !post.title || !post.excerpt || !post.date || !post.content);
-    if (invalidPosts.length > 0) {
-      console.warn('Found', invalidPosts.length, 'posts with missing required fields:', invalidPosts.map(p => ({
-        id: p.id,
-        title: p.title
-      })));
-    }
-
-    // Check for player category posts
-    const playerPosts = blogPosts.filter(post => post.category === 'players');
-    console.log(`Articles sur les joueurs: ${playerPosts.length}`);
-    
-  }, []);
 
   const {
     currentPage,

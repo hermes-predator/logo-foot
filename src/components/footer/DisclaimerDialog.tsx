@@ -46,12 +46,12 @@ const DisclaimerDialog = () => {
                   <span className="font-semibold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <p className="mt-2 text-gray-700 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3">
-                      <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>Une ressource indépendante, compilée et organisée.</span>
                     </div>
                     
                     <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
                     </div>
                   </p>

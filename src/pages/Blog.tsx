@@ -20,31 +20,27 @@ const Blog = () => {
 
   // Filter posts based on URL parameters
   useEffect(() => {
-    console.log("Category changed to:", categoryParam);
+    console.log("Blog: Category changed to:", categoryParam);
     setIsLoading(true);
     
-    // Forcer le défilement vers le haut
-    window.scrollTo({
-      top: 0,
-      behavior: 'instant'
-    });
+    // Scroll to top when category changes
+    window.scrollTo(0, 0);
     
-    // Filtrage immédiat
+    // Apply category filter if specified
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-      console.log(`Filtering to category: ${categoryParam}`);
-      const filtered = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
-      console.log(`Filtered to ${filtered.length} posts in category: ${categoryParam}`);
-      setFilteredPosts(filtered);
+      setFilteredPosts(blogPosts.filter(post => post.category === categoryParam as BlogCategory));
+      console.log(`Blog: Filtered to category ${categoryParam}, showing ${filteredPosts.length} posts`);
     } else {
-      console.log("Showing all posts");
       setFilteredPosts(blogPosts);
+      console.log(`Blog: Showing all posts (${blogPosts.length})`);
     }
     
-    // Court délai pour assurer une transition visuelle
-    setTimeout(() => {
+    // Short delay to ensure UI transitions smoothly
+    const timer = setTimeout(() => {
       setIsLoading(false);
     }, 200);
     
+    return () => clearTimeout(timer);
   }, [categoryParam]);
 
   const {
@@ -54,6 +50,7 @@ const Blog = () => {
     paginatedItems,
     totalItems
   } = usePagination(filteredPosts);
+  
   const currentYear = new Date().getFullYear();
 
   // Get the category title for the page
@@ -161,4 +158,5 @@ const Blog = () => {
       <FloatingCTA />
     </div>;
 };
+
 export default Blog;

@@ -2,14 +2,13 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link, useSearchParams, useNavigate } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BlogHeader = () => {
   const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
   const activeCategory = searchParams.get('category');
 
   const getCategoryStyle = (category: string | null) => {
@@ -20,20 +19,6 @@ const BlogHeader = () => {
   };
 
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
-
-  const handleCategoryClick = (categoryKey: string | null) => {
-    console.log(`Clicked on category: ${categoryKey || 'all'}`);
-    
-    // Utiliser la navigation programmatique pour éviter les problèmes
-    if (categoryKey) {
-      navigate(`/blog?category=${categoryKey}`, { replace: true });
-    } else {
-      navigate('/blog', { replace: true });
-    }
-    
-    // Forcer le défilement vers le haut
-    window.scrollTo(0, 0);
-  };
 
   return (
     <div className="max-w-4xl mb-6 pl-4">
@@ -65,20 +50,26 @@ const BlogHeader = () => {
 
           <div className="mb-6">
             <div className="flex flex-wrap gap-2">
-              <button 
-                onClick={() => handleCategoryClick(null)} 
-                className={getCategoryStyle(null)}
+              <Link 
+                to="/blog" 
+                className={getCategoryStyle(null)} 
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 Tout
-              </button>
+              </Link>
               {categoriesToDisplay.map(([key, category]) => (
-                <button
-                  key={key}
-                  onClick={() => handleCategoryClick(key)}
+                <Link 
+                  key={key} 
+                  to={`/blog?category=${key}`} 
                   className={getCategoryStyle(key)}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {category.name}
-                </button>
+                </Link>
               ))}
             </div>
           </div>

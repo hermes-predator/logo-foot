@@ -6,17 +6,17 @@ const TrustIndicators = () => {
   return (
     <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-6">
       <TrustCard 
-        icon={<ShieldCheck className="text-gray-500" />}
+        icon={<ShieldCheck className="text-blue-500" />}
         title="Paiement Sécurisé"
         description="Transactions via SumUp"
       />
       <TrustCard 
-        icon={<Download className="text-gray-500" />}
+        icon={<Download className="text-blue-500" />}
         title="Téléchargement Instantané"
         description="Page d'après-paiement"
       />
       <TrustCard 
-        icon={<HandHeart className="text-gray-500" />}
+        icon={<HandHeart className="text-blue-500" />}
         title="Support Disponible"
         description="Email : contact@logo-foot.com"
       />

@@ -12,7 +12,7 @@ const Logo = () => {
       </div>
       <div className="flex flex-col">
         <span className="text-lg font-bold text-black">logo-foot</span>
-        <span className="text-sm text-gray-500 -mt-1">.com</span>
+        <span className="text-xs text-gray-500 -mt-1.5 tracking-wider font-medium">.com</span>
       </div>
     </div>
   );

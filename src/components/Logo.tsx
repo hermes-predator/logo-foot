@@ -11,7 +11,7 @@ const Logo = () => {
         </div>
       </div>
       <span className="text-lg font-bold text-black">
-        logo-foot
+        logo-foot<span className="text-gray-500">.com</span>
       </span>
     </div>
   );

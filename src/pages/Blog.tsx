@@ -20,19 +20,15 @@ const Blog = () => {
 
   // Filter posts based on URL parameters
   useEffect(() => {
-    console.log("Blog: Category changed to:", categoryParam);
+    // Set loading state while we filter
     setIsLoading(true);
     
-    // Scroll to top when category changes
-    window.scrollTo(0, 0);
-    
-    // Apply category filter if specified
+    // Apply category filter if specified and valid
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-      setFilteredPosts(blogPosts.filter(post => post.category === categoryParam as BlogCategory));
-      console.log(`Blog: Filtered to category ${categoryParam}, showing ${filteredPosts.length} posts`);
+      const filtered = [...blogPosts].filter(post => post.category === categoryParam as BlogCategory);
+      setFilteredPosts(filtered);
     } else {
-      setFilteredPosts(blogPosts);
-      console.log(`Blog: Showing all posts (${blogPosts.length})`);
+      setFilteredPosts([...blogPosts]);
     }
     
     // Short delay to ensure UI transitions smoothly
@@ -43,6 +39,7 @@ const Blog = () => {
     return () => clearTimeout(timer);
   }, [categoryParam]);
 
+  // Use pagination hook for the filtered posts
   const {
     currentPage,
     setCurrentPage,
@@ -63,7 +60,7 @@ const Blog = () => {
     ? BLOG_CATEGORIES[categoryParam as BlogCategory].description 
     : "Explorez tous nos articles sur les logos de football";
 
-  // Générer des meta descriptions enrichies basées sur la catégorie
+  // Generate enriched meta descriptions based on the category
   const getEnrichedDescription = () => {
     const baseDescription = `${categoryDescription}. Découvrez notre guide complet ${currentYear} sur les logos de football.`;
     
@@ -86,7 +83,7 @@ const Blog = () => {
     return `${baseDescription} Notre blog regroupe ${totalItems} articles détaillés couvrant les logos des clubs de Ligue 1, Premier League, Liga, Bundesliga et des compétitions internationales.`;
   };
 
-  // Générer des mots-clés enrichis basés sur la catégorie
+  // Generate enriched keywords based on the category
   const getEnrichedKeywords = () => {
     const baseKeywords = `blog logo foot ${currentYear}, logos football, ${categoryParam || 'emblèmes foot'}, design football, histoire logos football, guide logos foot`;
     
@@ -112,7 +109,8 @@ const Blog = () => {
   const metaDescription = getEnrichedDescription();
   const metaKeywords = getEnrichedKeywords();
   
-  return <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50/30">
       <Helmet>
         <title>{`${categoryTitle} | Blog Logo Foot : Guide Expert des Logos de Football ${currentYear}`}</title>
         <meta name="description" content={metaDescription} />
@@ -141,22 +139,27 @@ const Blog = () => {
         <Breadcrumbs />
         <BlogHeader />
         
-        {categoryParam && <div className="pl-4 mb-6">
+        {categoryParam && (
+          <div className="pl-4 mb-6">
             <h2 className="text-2xl font-bold mb-2">{categoryTitle}</h2>
             <p className="text-gray-600">{categoryDescription}</p>
-          </div>}
+          </div>
+        )}
         
         <div className="mt-4" id="articles-list" role="region" aria-label="Liste des articles">
           <BlogArticleList articles={paginatedItems} isLoading={isLoading} />
-          {totalPages > 1 && <div className="px-4">
+          {totalPages > 1 && (
+            <div className="px-4">
               <BlogPagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
-            </div>}
+            </div>
+          )}
         </div>
       </main>
 
       {/* Add the FloatingCTA component */}
       <FloatingCTA />
-    </div>;
+    </div>
+  );
 };
 
 export default Blog;

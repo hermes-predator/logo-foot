@@ -2,22 +2,13 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BlogHeader = () => {
-  const [searchParams] = useSearchParams();
-  const activeCategory = searchParams.get('category');
-
-  const getCategoryStyle = (category: string | null) => {
-    if ((category === null && activeCategory === null) || category === activeCategory) {
-      return "px-3 py-1 bg-blue-500 text-white font-medium rounded-full text-sm transition-colors shadow-sm hover:bg-blue-600";
-    }
-    return "px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors";
-  };
-
+  // Filtrer les catégories à afficher (exclure 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
   return (
@@ -52,7 +43,7 @@ const BlogHeader = () => {
             <div className="flex flex-wrap gap-2">
               <Link 
                 to="/blog" 
-                className={getCategoryStyle(null)} 
+                className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
                 onClick={() => {
                   window.scrollTo(0, 0);
                 }}
@@ -62,8 +53,8 @@ const BlogHeader = () => {
               {categoriesToDisplay.map(([key, category]) => (
                 <Link 
                   key={key} 
-                  to={`/blog?category=${key}`} 
-                  className={getCategoryStyle(key)}
+                  to={`/blog?category=${key}`}
+                  className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}

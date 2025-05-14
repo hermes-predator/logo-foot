@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShieldCheck, Mail, User, Calendar, Ticket, Clock } from 'lucide-react';
 
@@ -6,8 +7,8 @@ const ContactForm = () => {
     <div className="text-sm text-gray-600 space-y-6">
       <div className="space-y-2">
         <h3 className="font-medium text-lg text-gray-900 mb-2 flex items-center gap-2">
-          <div className="bg-blue-100 rounded-md p-2.5">
-            <Mail className="w-5 h-5 text-blue-600" />
+          <div className="bg-blue-100 rounded-md p-3">
+            <Mail className="w-6 h-6 text-blue-600" />
           </div>
           <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold">
             contact@logo-foot.com

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShieldCheck, Mail, User, Calendar, Ticket, Clock } from 'lucide-react';
 
@@ -15,9 +14,11 @@ const ContactForm = () => {
           </a>
         </h3>
         
-        <p className="text-black leading-relaxed text-sm border-l-2 border-blue-200 pl-3 py-0 mt-5">
-          En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.
-        </p>
+        <div className="pt-3">
+          <p className="text-black leading-relaxed text-sm border-l-2 border-blue-200 pl-3 py-0 mt-5">
+            En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.
+          </p>
+        </div>
       </div>
       
       <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">

@@ -10,7 +10,7 @@ const ContactForm = () => {
           <div className="bg-blue-100 rounded-md p-4">
             <Mail className="w-8 h-8 text-blue-600" />
           </div>
-          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold">
+          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold ml-2">
             contact@logo-foot.com
           </a>
         </h3>

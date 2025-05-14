@@ -8,7 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BlogHeader = () => {
-  // Filtrer les catégories à afficher (exclure 'legacy')
+  // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
   return (
@@ -41,26 +41,20 @@ const BlogHeader = () => {
 
           <div className="mb-6">
             <div className="flex flex-wrap gap-2">
-              <Link 
-                to="/blog" 
+              <a 
+                href="/blog" 
                 className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
               >
                 Tout
-              </Link>
+              </a>
               {categoriesToDisplay.map(([key, category]) => (
-                <Link 
+                <a 
                   key={key} 
-                  to={`/blog?category=${key}`}
+                  href={`/blog?category=${key}`}
                   className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
                 >
                   {category.name}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -87,12 +81,12 @@ const BlogHeader = () => {
                       asChild 
                       className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden"
                     >
-                      <Link to="/" className="flex items-center gap-2">
+                      <a href="/" className="flex items-center gap-2">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
                         <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-gray-200/20 to-gray-300/30 opacity-30 group-hover:opacity-40 group-hover:via-gray-500/30 group-hover:to-gray-500/40 group-hover:animate-shine transition-opacity duration-300" />
-                      </Link>
+                      </a>
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent className="bg-white border border-gray-200 text-gray-900">

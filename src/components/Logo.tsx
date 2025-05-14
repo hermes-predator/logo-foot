@@ -10,9 +10,10 @@ const Logo = () => {
           <Folder size={26} className="text-purple-600" strokeWidth={2.25} />
         </div>
       </div>
-      <span className="text-lg font-bold text-black">
-        logo-foot<span className="text-gray-500">.com</span>
-      </span>
+      <div className="flex flex-col">
+        <span className="text-lg font-bold text-black">logo-foot</span>
+        <span className="text-sm text-gray-500 -mt-1">.com</span>
+      </div>
     </div>
   );
 };

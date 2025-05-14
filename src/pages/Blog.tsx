@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -21,22 +22,20 @@ const Blog = () => {
   useEffect(() => {
     setIsLoading(true);
     window.scrollTo(0, 0); // Scroll to top when category changes
-
-    let postsToShow = blogPosts;
     
-    // Filter by main category if specified
-    if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-      postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
-      console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
-    }
-    
-    setFilteredPosts(postsToShow);
-
-    // Simulate loading
-    const timer = setTimeout(() => {
+    // Delay to ensure DOM is updated
+    setTimeout(() => {
+      let postsToShow = blogPosts;
+      
+      // Filter by main category if specified
+      if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
+        postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
+        console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
+      }
+      
+      setFilteredPosts(postsToShow);
       setIsLoading(false);
-    }, 500);
-    return () => clearTimeout(timer);
+    }, 100);
   }, [categoryParam]);
 
   const {

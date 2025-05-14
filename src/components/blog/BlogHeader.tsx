@@ -50,7 +50,7 @@ const BlogHeader = () => {
 
           <div className="mb-6">
             <div className="flex flex-wrap gap-2">
-              <Link to="/blog" className={getCategoryStyle(null)}>
+              <Link to="/blog" className={getCategoryStyle(null)} onClick={() => window.scrollTo(0, 0)}>
                 Tout
               </Link>
               {categoriesToDisplay.map(([key, category]) => (
@@ -58,7 +58,10 @@ const BlogHeader = () => {
                   key={key} 
                   to={`/blog?category=${key}`} 
                   className={getCategoryStyle(key)}
-                  preventScrollReset={false}
+                  onClick={() => {
+                    console.log(`Navigating to category: ${key}`);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {category.name}
                 </Link>

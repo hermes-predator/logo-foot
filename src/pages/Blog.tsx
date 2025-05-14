@@ -22,21 +22,25 @@ const Blog = () => {
   useEffect(() => {
     console.log("Category changed to:", categoryParam);
     setIsLoading(true);
-    window.scrollTo(0, 0); // Scroll to top when category changes
     
-    // Immediate filtering
-    let postsToShow = [...blogPosts]; // Create a fresh copy to avoid reference issues
+    // Forcer le défilement vers le haut
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
     
-    // Filter by main category if specified
+    // Filtrage immédiat
     if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
       console.log(`Filtering to category: ${categoryParam}`);
-      postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
-      console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
+      const filtered = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
+      console.log(`Filtered to ${filtered.length} posts in category: ${categoryParam}`);
+      setFilteredPosts(filtered);
+    } else {
+      console.log("Showing all posts");
+      setFilteredPosts(blogPosts);
     }
     
-    setFilteredPosts(postsToShow);
-    
-    // Small delay just to ensure UI updates properly
+    // Court délai pour assurer une transition visuelle
     setTimeout(() => {
       setIsLoading(false);
     }, 200);

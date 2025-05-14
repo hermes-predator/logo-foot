@@ -20,6 +20,11 @@ const BlogHeader = () => {
 
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
+  const handleCategoryClick = (categoryKey: string | null) => {
+    console.log(`Clicked on category: ${categoryKey || 'all'}`);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
@@ -50,7 +55,12 @@ const BlogHeader = () => {
 
           <div className="mb-6">
             <div className="flex flex-wrap gap-2">
-              <Link to="/blog" className={getCategoryStyle(null)} onClick={() => window.scrollTo(0, 0)}>
+              <Link 
+                to="/blog" 
+                className={getCategoryStyle(null)} 
+                onClick={() => handleCategoryClick(null)}
+                replace
+              >
                 Tout
               </Link>
               {categoriesToDisplay.map(([key, category]) => (
@@ -58,10 +68,8 @@ const BlogHeader = () => {
                   key={key} 
                   to={`/blog?category=${key}`} 
                   className={getCategoryStyle(key)}
-                  onClick={() => {
-                    console.log(`Navigating to category: ${key}`);
-                    window.scrollTo(0, 0);
-                  }}
+                  onClick={() => handleCategoryClick(key)}
+                  replace
                 >
                   {category.name}
                 </Link>

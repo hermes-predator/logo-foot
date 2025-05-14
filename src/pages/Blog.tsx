@@ -20,22 +20,27 @@ const Blog = () => {
 
   // Filter posts based on URL parameters
   useEffect(() => {
+    console.log("Category changed to:", categoryParam);
     setIsLoading(true);
     window.scrollTo(0, 0); // Scroll to top when category changes
     
-    // Delay to ensure DOM is updated
+    // Immediate filtering
+    let postsToShow = [...blogPosts]; // Create a fresh copy to avoid reference issues
+    
+    // Filter by main category if specified
+    if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
+      console.log(`Filtering to category: ${categoryParam}`);
+      postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
+      console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
+    }
+    
+    setFilteredPosts(postsToShow);
+    
+    // Small delay just to ensure UI updates properly
     setTimeout(() => {
-      let postsToShow = blogPosts;
-      
-      // Filter by main category if specified
-      if (categoryParam && Object.keys(BLOG_CATEGORIES).includes(categoryParam)) {
-        postsToShow = blogPosts.filter(post => post.category === categoryParam as BlogCategory);
-        console.log(`Filtered to ${postsToShow.length} posts in category: ${categoryParam}`);
-      }
-      
-      setFilteredPosts(postsToShow);
       setIsLoading(false);
-    }, 100);
+    }, 200);
+    
   }, [categoryParam]);
 
   const {

@@ -10,6 +10,10 @@ import { BLOG_CATEGORIES } from '@/types/blog';
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
+  
+  // Get current category from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentCategory = urlParams.get('category');
 
   return (
     <div className="max-w-4xl mb-6 pl-4">
@@ -43,7 +47,7 @@ const BlogHeader = () => {
             <div className="flex flex-wrap gap-2">
               <a 
                 href="/blog" 
-                className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
               >
                 Tout
               </a>
@@ -51,7 +55,7 @@ const BlogHeader = () => {
                 <a 
                   key={key} 
                   href={`/blog?category=${key}`}
-                  className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
+                  className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
                 >
                   {category.name}
                 </a>

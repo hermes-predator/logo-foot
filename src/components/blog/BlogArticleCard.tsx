@@ -12,7 +12,8 @@ interface BlogArticleCardProps {
 }
 
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
-  const readingTime = useReadingTime(post.content);
+  // Ensure content exists before calculating reading time
+  const readingTime = useReadingTime(post.content || '');
   
   return (
     <Link 

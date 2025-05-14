@@ -1,3 +1,4 @@
+
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -10,10 +11,10 @@ import HreflangTags from './components/SEO/HreflangTags';
 import GlobalCanonical from './components/SEO/GlobalCanonical';
 import { measureCoreWebVitals, prefetchCriticalResources, optimizeFontLoading } from './lib/core-web-vitals';
 import { WebVitalsReporter } from './components/ui/web-vitals-reporter';
+import Blog from './pages/Blog';
 
-// Lazy loading des pages pour améliorer les performances
+// Lazy loading for pages other than Blog to improve performance
 const Home = lazy(() => import('./pages/Index'));
-const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const PaymentSuccess = lazy(() => import('./pages/PaymentSuccess'));

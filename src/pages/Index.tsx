@@ -1,3 +1,4 @@
+
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
@@ -27,7 +28,7 @@ const Index = () => {
   });
 
   // Meta description dynamique mise à jour
-  const metaDescription = "Téléchargez plus de 8600 logo club de foot en une seule fois. Collection complète de logo des équipes de foot européennes et internationales.";
+  const metaDescription = "Recevez +8600 logo club de foot en un fichier organisé. Collection complète de logo des équipes de foot européennes et internationales.";
 
   // Protection anti-copie au niveau de la page entière
   useEffect(() => {

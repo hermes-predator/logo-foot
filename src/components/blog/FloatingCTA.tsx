@@ -154,7 +154,7 @@ const FloatingCTA = () => {
                     <p className="text-white font-medium flex flex-col">
                       <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
                       <span className="text-sm md:text-base text-blue-100/90 font-light italic">
-                        Un fichier ZIP arborescent contenant + de 8 600 logos de foot
+                        Un fichier ZIP contenant + de 8 600 logos de foot
                       </span>
                     </p>
                   </div>

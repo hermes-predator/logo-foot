@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
   const isMobile = useIsMobile();
   const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
   const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 640;
@@ -23,7 +24,13 @@ const FloatingCTA = () => {
     };
   }, []);
 
-  if (!visible) return null;
+  const handleDismiss = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDismissed(true);
+  };
+
+  if (!visible || dismissed) return null;
 
   return (
     <div 
@@ -34,7 +41,16 @@ const FloatingCTA = () => {
         animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
       }}
     >
-      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">
+      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20 relative">
+        {/* Close button */}
+        <button 
+          onClick={handleDismiss}
+          className="absolute top-1 right-1 md:top-2 md:right-2 p-1.5 rounded-full hover:bg-white/20 transition-colors flex items-center justify-center z-10"
+          aria-label="Fermer"
+        >
+          <X className="h-3 w-3 md:h-4 md:w-4 text-white/80 hover:text-white" />
+        </button>
+        
         <div className="container mx-auto relative">
           {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (

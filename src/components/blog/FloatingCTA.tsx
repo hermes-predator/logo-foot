@@ -59,9 +59,9 @@ const FloatingCTA = () => {
                 </span>
                 <div className="flex-1 min-w-0">
                   <p className="text-white font-medium flex flex-col">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate ${isVerySmallScreen ? 'text-xs' : 'text-sm'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-xs italic truncate">
+                      <span className="text-blue-100/90 font-light text-sm italic truncate">
                         8 600+ logos de foot
                       </span>
                     )}
@@ -106,7 +106,7 @@ const FloatingCTA = () => {
                   />
                 </span>
                 <div className="truncate">
-                  <p className="text-white font-medium text-sm truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                  <p className="text-white font-medium text-base truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
                 </div>
               </div>
               
@@ -151,9 +151,9 @@ const FloatingCTA = () => {
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
                   <div className="relative">
-                    <p className="text-white font-medium text-sm md:text-base lg:text-lg hover:text-white/90 transition-colors flex flex-col">
-                      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-blue-100/90 font-light text-xs md:text-sm italic">
+                    <p className="text-white font-medium flex flex-col">
+                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-sm md:text-base text-blue-100/90 font-light italic">
                         Un fichier ZIP arborescent contenant + de 8 600 logos de foot
                       </span>
                     </p>

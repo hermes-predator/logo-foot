@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
 import { BLOG_CATEGORIES } from '../../types/blog';
 import { formatDate } from '../../utils/dateUtils';
-import { TrendingUp, Star, Calendar } from 'lucide-react';
+import { TrendingUp, ArrowLeft, ArrowRight, Calendar } from 'lucide-react';
 
 interface RelatedPostsProps {
   post: BlogPost;
@@ -107,7 +107,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
         {prevPost && (
           <Link to={`/blog/${prevPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
             <div className="mt-1">
-              <Star className="w-4 h-4 text-amber-500" />
+              <ArrowLeft className="w-4 h-4 text-blue-500" />
             </div>
             <div>
               <span className="text-xs text-gray-500 block mb-1">Article précédent</span>
@@ -119,7 +119,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
         {nextPost && (
           <Link to={`/blog/${nextPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
             <div className="mt-1">
-              <Star className="w-4 h-4 text-amber-500" />
+              <ArrowRight className="w-4 h-4 text-blue-500" />
             </div>
             <div>
               <span className="text-xs text-gray-500 block mb-1">Article suivant</span>

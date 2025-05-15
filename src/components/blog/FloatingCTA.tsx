@@ -42,15 +42,6 @@ const FloatingCTA = () => {
       }}
     >
       <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20 relative">
-        {/* Close button */}
-        <button 
-          onClick={handleDismiss}
-          className="absolute top-1 right-1 md:top-2 md:right-2 p-1.5 rounded-full hover:bg-white/20 transition-colors flex items-center justify-center z-10"
-          aria-label="Fermer"
-        >
-          <X className="h-3 w-3 md:h-4 md:w-4 text-white/80 hover:text-white" />
-        </button>
-        
         <div className="container mx-auto relative">
           {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (
@@ -78,20 +69,31 @@ const FloatingCTA = () => {
                 </div>
               </div>
               
-              <Button 
-                asChild
-                variant="secondary" 
-                className="w-full py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
-                size="sm"
-              >
-                <Link to="/" className="flex items-center justify-center gap-1.5">
-                  <span className="font-medium relative z-10 text-blue-600">
-                    En savoir plus
-                  </span>
-                  <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
-                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
-                </Link>
-              </Button>
+              <div className="flex items-center w-full">
+                <Button 
+                  asChild
+                  variant="secondary" 
+                  className="w-full py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
+                  size="sm"
+                >
+                  <Link to="/" className="flex items-center justify-center gap-1.5">
+                    <span className="font-medium relative z-10 text-blue-600">
+                      En savoir plus
+                    </span>
+                    <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+                  </Link>
+                </Button>
+                
+                {/* Close button for mobile - now next to the "En savoir plus" button */}
+                <button 
+                  onClick={handleDismiss}
+                  className="ml-2 p-1.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+                  aria-label="Fermer"
+                >
+                  <X className="h-3 w-3 text-white" />
+                </button>
+              </div>
             </div>
           ) : isSmallScreen ? (
             // Small screen layout - more compact but still side by side
@@ -108,19 +110,30 @@ const FloatingCTA = () => {
                 </div>
               </div>
               
-              <Button 
-                asChild
-                variant="secondary" 
-                className="py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100 whitespace-nowrap"
-                size="sm"
-              >
-                <Link to="/" className="flex items-center gap-1.5">
-                  <span className="font-medium relative z-10 text-blue-600">
-                    En savoir plus
-                  </span>
-                  <ArrowRight className="h-3 w-3 relative z-10 text-blue-600" />
-                </Link>
-              </Button>
+              <div className="flex items-center">
+                <Button 
+                  asChild
+                  variant="secondary" 
+                  className="py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100 whitespace-nowrap"
+                  size="sm"
+                >
+                  <Link to="/" className="flex items-center gap-1.5">
+                    <span className="font-medium relative z-10 text-blue-600">
+                      En savoir plus
+                    </span>
+                    <ArrowRight className="h-3 w-3 relative z-10 text-blue-600" />
+                  </Link>
+                </Button>
+                
+                {/* Close button for small screens - right next to the button */}
+                <button 
+                  onClick={handleDismiss}
+                  className="ml-2 p-1.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+                  aria-label="Fermer"
+                >
+                  <X className="h-3 w-3 text-white" />
+                </button>
+              </div>
             </div>
           ) : (
             // Desktop layout - side by side with more details
@@ -163,6 +176,15 @@ const FloatingCTA = () => {
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                   </Link>
                 </Button>
+                
+                {/* Close button for desktop - right next to the button */}
+                <button 
+                  onClick={handleDismiss}
+                  className="ml-3 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+                  aria-label="Fermer"
+                >
+                  <X className="h-4 w-4 text-white" />
+                </button>
               </div>
             </div>
           )}

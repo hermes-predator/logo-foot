@@ -52,6 +52,16 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       `Animation logo foot ${country}`;
   };
 
+  // Fonction pour déterminer la description SEO appropriée
+  const getSeoDescription = (item: GalleryItemProps['item']) => {
+    // Pour les 3 derniers éléments (compétitions), utiliser la nouvelle description
+    if (item.id > 60) {
+      return "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+    }
+    // Pour les autres éléments, utiliser la description existante
+    return item.altText;
+  };
+
   return (
     <div
       className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
@@ -91,14 +101,14 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                 <img
                   ref={imgRef}
                   src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
-                  alt={item.altText}
+                  alt={getSeoDescription(item)}
                   className="w-full h-full object-contain transition-opacity duration-300"
                   loading={isPriority ? "eager" : "lazy"}
                   decoding={isPriority ? "sync" : "async"}
                   itemProp={isPriority ? "image" : undefined}
                   fetchPriority={isPriority ? "high" : "auto"}
                   data-caption={item.title}
-                  data-description={item.altText}
+                  data-description={getSeoDescription(item)}
                 />
                 <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
                   <Eye className="w-6 h-6 text-white drop-shadow-lg opacity-70" />

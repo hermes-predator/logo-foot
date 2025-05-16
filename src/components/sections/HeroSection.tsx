@@ -200,7 +200,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 </div>
                 <div className="mt-1 flex items-center gap-2">
                   <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 2 minutes seulement</span>
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">✅ Fiable et sécurisé</span>
+                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">✅ 100% fiable</span>
                 </div>
               </div>
             </TooltipContent>

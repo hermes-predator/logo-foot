@@ -20,8 +20,17 @@ export const generateGalleryItems = () => {
     const arrayIndex = index + 60;
     const country = countries[arrayIndex] || 'International';
     
-    // Replace the title for the collection items with the new text
-    const title = "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+    // Specific titles for collection items
+    let title = "";
+    if (arrayIndex + 1 === 61) {
+      title = "Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort";
+    } else if (arrayIndex + 1 === 62) {
+      title = "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+    } else if (arrayIndex + 1 === 63) {
+      title = "Collection complète des sélections nationales - Format HD transparent - Wallet.Type";
+    } else if (arrayIndex + 1 === 64) {
+      title = "Collection complète des drapeaux mondiaux - Format HD transparent";
+    }
     
     return {
       id: arrayIndex + 1,

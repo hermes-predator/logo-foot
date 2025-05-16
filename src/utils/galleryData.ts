@@ -19,12 +19,16 @@ export const generateGalleryItems = () => {
   const competitionItems: GalleryItem[] = Array.from({ length: 4 }, (_, index) => {
     const arrayIndex = index + 60;
     const country = countries[arrayIndex] || 'International';
+    
+    // Replace the title for the collection items with the new text
+    const title = "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+    
     return {
       id: arrayIndex + 1,
       imageUrl: `/public/images/logo${arrayIndex + 1}.png`,
       videoUrl: `/public/videos/video${arrayIndex + 1}.mov`,
       country: country,
-      title: `Logo ${country} - Collection officielle logos clubs de foot`,
+      title: title,
       altText: getCountryDescription(country),
     };
   });

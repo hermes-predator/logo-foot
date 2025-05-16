@@ -62,6 +62,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     if (item.id === 63) {
       return "Collection complète des sélections nationales - Format HD transparent - Wallet.Type";
     }
+    // Description spécifique pour l'article n°64
+    if (item.id === 64) {
+      return "Collection complète des drapeaux mondiaux - Format HD transparent";
+    }
     // Pour les autres éléments, utiliser la description existante
     return item.altText;
   };

@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         
         {/* Description - Amélioré avec la nouvelle formulation */}
         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
-          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP complet contenant +8600 LOGOS organisé par pays.
+          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP complet contenant +8600 LOGOS de Clubs de Football organisé par pays.
         </p>
 
         {/* Trust badges - Animation optimisée et améliorée */}

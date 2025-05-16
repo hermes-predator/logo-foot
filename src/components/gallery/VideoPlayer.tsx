@@ -142,6 +142,32 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     }
   };
 
+  // Déterminer la description appropriée en fonction du titre
+  const getVideoDescription = (title: string, country: string) => {
+    // Cas spécifiques pour les items 61, 62, 63 et 64
+    if (title.includes("Hugo Ekitike")) {
+      return "Le talent français qui s'impose à l'Eintracht Francfort";
+    }
+    if (title.includes("Collection complète des clubs de football")) {
+      return "Format HD transparent - Wallet.Type";
+    }
+    if (title.includes("Collection complète des sélections nationales")) {
+      return "Format HD transparent - Wallet.Type";
+    }
+    if (title.includes("Collection complète des drapeaux mondiaux")) {
+      return "Format HD transparent";
+    }
+    
+    // Description par défaut pour les autres éléments
+    if (country === 'Sélections Nationales') {
+      return `Animation logos des sélections nationales de football`;
+    }
+    if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
+      return `Animation des logos ${country.toLowerCase()}`;
+    }
+    return `Animation des logos de football ${country}`;
+  };
+
   return (
     <DialogContent className="max-w-[500px] w-full overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
@@ -150,7 +176,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             {title}
           </DialogTitle>
           <DialogDescription className="text-gray-600 text-[10px] font-extralight">
-            Animation des logos de football {country}
+            {getVideoDescription(title, country)}
           </DialogDescription>
         </DialogHeader>
         

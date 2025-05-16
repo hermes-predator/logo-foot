@@ -54,8 +54,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
 
   // Fonction pour déterminer la description SEO appropriée
   const getSeoDescription = (item: GalleryItemProps['item']) => {
-    // Pour les 3 derniers éléments (compétitions), utiliser la nouvelle description
-    if (item.id > 60) {
+    // Uniquement pour l'article n°62, utiliser la nouvelle description
+    if (item.id === 62) {
       return "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
     }
     // Pour les autres éléments, utiliser la description existante

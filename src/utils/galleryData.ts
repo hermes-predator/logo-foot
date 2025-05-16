@@ -25,11 +25,11 @@ export const generateGalleryItems = () => {
     if (arrayIndex + 1 === 61) {
       title = "Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort";
     } else if (arrayIndex + 1 === 62) {
-      title = "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+      title = "Collection complète des clubs de football populaire - PNG transparent - Wallet.Type";
     } else if (arrayIndex + 1 === 63) {
-      title = "Collection complète des sélections nationales - Format HD transparent - Wallet.Type";
+      title = "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
     } else if (arrayIndex + 1 === 64) {
-      title = "Collection complète des drapeaux mondiaux - Format HD transparent";
+      title = "Collection complète des drapeaux mondiaux - PNG transparent";
     }
     
     return {

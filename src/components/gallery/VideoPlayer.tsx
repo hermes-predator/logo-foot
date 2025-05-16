@@ -149,13 +149,13 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       return "Le talent français qui s'impose à l'Eintracht Francfort";
     }
     if (title.includes("Collection complète des clubs de football")) {
-      return "Format HD transparent - Wallet.Type";
+      return "PNG transparent - Wallet.Type";
     }
     if (title.includes("Collection complète des sélections nationales")) {
-      return "Format HD transparent - Wallet.Type";
+      return "PNG transparent - Wallet.Type";
     }
     if (title.includes("Collection complète des drapeaux mondiaux")) {
-      return "Format HD transparent";
+      return "PNG transparent";
     }
     
     // Description par défaut pour les autres éléments

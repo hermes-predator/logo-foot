@@ -12,13 +12,13 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   const getVideoTitle = (country: string) => {
     // Titres spécifiques pour les articles 62, 63 et 64
     if (item.id === 62) {
-      return 'Collection complète des clubs de football populaire - Format HD transparent';
+      return 'Collection complète des clubs de football populaire - PNG transparent - Wallet.Type';
     }
     if (item.id === 63) {
-      return 'Collection complète des sélections nationales - Format HD transparent';
+      return 'Collection complète des sélections nationales - PNG transparent - Wallet.Type';
     }
     if (item.id === 64) {
-      return 'Collection complète des drapeaux mondiaux - Format HD transparent';
+      return 'Collection complète des drapeaux mondiaux - PNG transparent';
     }
     // Titres pour les autres articles
     if (country === 'Sélections Nationales') {
@@ -67,15 +67,15 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   const getSeoDescription = (item: GalleryItemProps['item']) => {
     // Description spécifique pour l'article n°62
     if (item.id === 62) {
-      return "Collection complète des clubs de football populaire - Format HD transparent - Wallet.Type";
+      return "Collection complète des clubs de football populaire - PNG transparent - Wallet.Type";
     }
     // Description spécifique pour l'article n°63
     if (item.id === 63) {
-      return "Collection complète des sélections nationales - Format HD transparent - Wallet.Type";
+      return "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
     }
     // Description spécifique pour l'article n°64
     if (item.id === 64) {
-      return "Collection complète des drapeaux mondiaux - Format HD transparent";
+      return "Collection complète des drapeaux mondiaux - PNG transparent";
     }
     // Pour les autres éléments, utiliser la description existante
     return item.altText;

@@ -28,7 +28,7 @@ const Index = () => {
   });
 
   // Meta description dynamique mise à jour
-  const metaDescription = "Recevez +8600 logo club de foot en un fichier organisé. Collection complète de logo des équipes de foot européennes et internationales.";
+  const metaDescription = "Recevez +8600 logo club de foot en un fichier parfaitement organisé par pays. Collection complète de logo des équipes de foot du monde entier.";
 
   // Protection anti-copie au niveau de la page entière
   useEffect(() => {

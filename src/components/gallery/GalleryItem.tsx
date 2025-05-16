@@ -10,6 +10,17 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   const { isInView, imgRef } = useLazyLoading();
 
   const getVideoTitle = (country: string) => {
+    // Titres spécifiques pour les articles 62, 63 et 64
+    if (item.id === 62) {
+      return 'Collection complète des clubs de football populaire - Format HD transparent';
+    }
+    if (item.id === 63) {
+      return 'Collection complète des sélections nationales - Format HD transparent';
+    }
+    if (item.id === 64) {
+      return 'Collection complète des drapeaux mondiaux - Format HD transparent';
+    }
+    // Titres pour les autres articles
     if (country === 'Sélections Nationales') {
       return 'Animation logos des sélections nationales de football';
     }

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -72,7 +73,7 @@ const BlogHeader = () => {
                     </div>
                     <div className="flex flex-col">
                       <span>Vous cherchez tous les logos de football ?</span>
-                      <span className="text-sm text-amber-700/90 font-medium mt-1">Téléchargez un fichier ZIP tout-en-un et organisé contenant +8600 LOGOS</span>
+                      <span className="text-sm text-amber-700/90 font-medium mt-1">Téléchargez un fichier ZIP complet contenant +8600 LOGOS de Clubs de Football organisé par pays</span>
                     </div>
                   </div>
                 </h3>

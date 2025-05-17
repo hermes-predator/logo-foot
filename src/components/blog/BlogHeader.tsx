@@ -28,9 +28,7 @@ const BlogHeader = () => {
             <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />
             </div>
-            <h2 className="font-semibold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Le Blog Logo-Foot
-            </h2>
+            <h2 className="font-semibold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Blog Logo-Foot</h2>
           </div>
 
           <div className="mb-5">

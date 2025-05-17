@@ -55,7 +55,7 @@ const Blog = () => {
   // Get the category description
   const categoryDescription = categoryParam && BLOG_CATEGORIES[categoryParam as BlogCategory] 
     ? BLOG_CATEGORIES[categoryParam as BlogCategory].description 
-    : "Explorez tous nos articles sur les logos de football";
+    : "Découvrez notre collection de logos de football des plus grands clubs.";
 
   // Generate enriched meta descriptions based on the category
   const getEnrichedDescription = () => {

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,17 +5,14 @@ import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
-
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
-  
+
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-
-  return (
-    <div className="max-w-4xl mb-6 pl-4">
+  return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
       </div>
@@ -45,21 +41,12 @@ const BlogHeader = () => {
 
           <div className="mb-6">
             <div className="flex flex-wrap gap-2">
-              <a 
-                href="/blog" 
-                className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
-              >
+              <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
                 Tout
               </a>
-              {categoriesToDisplay.map(([key, category]) => (
-                <a 
-                  key={key} 
-                  href={`/blog?category=${key}`}
-                  className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
-                >
+              {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
                   {category.name}
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -69,11 +56,14 @@ const BlogHeader = () => {
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
                     <div className="bg-amber-100 p-3.5 rounded-md flex items-center justify-center mt-0.5">
-                      <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0" style={{ transform: 'scale(1.1)' }} />
+                      <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0" style={{
+                      transform: 'scale(1.1)'
+                    }} />
                     </div>
                     <div className="flex flex-col">
                       <span>Vous cherchez tous les logos de football ?</span>
-                      <span className="text-sm text-amber-700/90 font-medium mt-1">Téléchargez un fichier ZIP complet contenant +8600 LOGOS de Clubs de Football organisé par pays</span>
+                      <span className="text-sm text-amber-700/90 font-medium mt-1">Téléchargez notre fichier ZIP complet.
++ de 8600 LOGOS de Clubs de Foot organisé par pays</span>
                     </div>
                   </div>
                 </h3>
@@ -81,10 +71,7 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button 
-                      asChild 
-                      className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden"
-                    >
+                    <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden">
                       <a href="/" className="flex items-center gap-2">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
@@ -102,8 +89,6 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogHeader;

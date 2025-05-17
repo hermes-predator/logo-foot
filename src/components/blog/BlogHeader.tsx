@@ -63,7 +63,7 @@ const BlogHeader = () => {
                     <div className="flex flex-col">
                       <span>Vous cherchez tous les logos de football ?</span>
                       <span className="text-sm text-amber-700/90 font-medium mt-1">Téléchargez notre fichier ZIP complet en page d'accueil.
-+ de 8600 LOGOS de Clubs de Foot triés et organisés par pays. </span>
++ de 8600 LOGOS de Clubs de Foot organisés et triés par pays. </span>
                     </div>
                   </div>
                 </h3>

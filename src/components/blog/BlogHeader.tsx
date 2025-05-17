@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -35,9 +34,7 @@ const BlogHeader = () => {
           </div>
 
           <div className="mb-5">
-            <p className="text-base text-gray-700 leading-relaxed">
-              Bienvenue sur le blog Logo-Foot, votre source d'expertise sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.
-            </p>
+            <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos et emblèmes du football. Découvrez les plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.</p>
           </div>
 
           <div className="mb-6">
@@ -64,7 +61,7 @@ const BlogHeader = () => {
                     <div className="flex flex-col">
                       <span className="text-xl">Vous cherchez tous les logos de football ?</span>
                       <span className="text-sm text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
-<br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
+                      <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
                     </div>
                   </div>
                 </h3>

@@ -83,7 +83,7 @@ const BlogHeader = () => {
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gray-200/20 opacity-30 group-hover:opacity-40 group-hover:bg-gray-200/30 group-hover:animate-shine transition-opacity duration-300" />
+                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gray-200/20 opacity-30 group-hover:animate-shine transition-opacity duration-300" />
                       </a>
                     </Button>
                   </TooltipTrigger>
@@ -113,8 +113,17 @@ const BlogHeader = () => {
           100% { opacity: 0.85; }
         }
 
+        @keyframes shine {
+          0% { left: -100%; }
+          100% { left: 200%; }
+        }
+
         .animate-icon-floating {
           animation: floating 4s ease-in-out infinite, pulse 2.5s infinite ease-in-out;
+        }
+        
+        .animate-shine {
+          animation: shine 2s ease-in-out infinite;
         }
         `}
       </style>

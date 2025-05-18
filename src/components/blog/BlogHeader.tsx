@@ -25,10 +25,10 @@ const BlogHeader = () => {
       </h1>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-gray-100 rounded-2xl blur-lg"></div>
-        <div className="relative bg-white rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-md transition-all duration-300">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>
+        <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-2xl p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-gray-200 p-2 rounded-xl shadow-inner">
+            <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />
             </div>
             <h2 className="font-semibold text-gray-900">Blog Logo-Foot</h2>

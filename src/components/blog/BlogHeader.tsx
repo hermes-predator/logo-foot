@@ -26,7 +26,7 @@ const BlogHeader = () => {
 
       <div className="relative">
         <div className="absolute inset-0 bg-gray-100 rounded-2xl blur-lg"></div>
-        <div className="relative bg-white rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-lg transition-all duration-300">
+        <div className="relative bg-white rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-gray-200 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />
@@ -49,7 +49,7 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
+          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-hidden relative group">
             <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>

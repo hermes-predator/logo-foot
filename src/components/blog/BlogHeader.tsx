@@ -80,9 +80,25 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-9 py-4 text-base relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200 min-w-52">
                       <a href="/" className="flex items-center gap-2 relative">
-                        <Folder className="h-6 w-6 text-amber-600" />
+                        <Folder 
+                          className="text-amber-600" 
+                          style={{
+                            width: '24px',
+                            height: '24px',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease'
+                          }}
+                        />
                         <span className="font-medium text-lg">Voir le fichier</span>
-                        <ArrowRight className="h-6 w-6 text-amber-600 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight 
+                          className="text-amber-600 group-hover:translate-x-1 transition-transform" 
+                          style={{
+                            width: '24px',
+                            height: '24px',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease, translate 0.3s ease'
+                          }}
+                        />
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
                           <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                         </div>

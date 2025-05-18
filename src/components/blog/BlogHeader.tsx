@@ -105,7 +105,7 @@ const BlogHeader = () => {
                       </a>
                     </Button>
                   </TooltipTrigger>
-                  <TooltipContent className="bg-white border border-gray-200 text-gray-900">
+                  <TooltipContent className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3">
                     <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
                   </TooltipContent>
                 </Tooltip>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -32,7 +33,7 @@ const BlogHeader = () => {
           </div>
 
           <div className="mb-5">
-            <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football. Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.</p>
+            <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football. Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.</p>
           </div>
 
           <div className="mb-6">
@@ -46,13 +47,17 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-5 border border-amber-200/50 shadow-inner">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-5 border border-amber-200/70 shadow-md transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/30 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+              <div className="absolute -inset-x-full top-0 h-[1px] bg-gradient-to-r from-transparent via-amber-300/70 to-transparent opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
-                    <div className="bg-amber-100 p-3.5 rounded-md flex items-center justify-center mt-0.5">
-                      <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0" style={{
+                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200 transition-colors duration-300">
+                      <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-colors duration-300 animate-floating" style={{
                       transform: 'scale(1.1)'
                     }} />
                     </div>

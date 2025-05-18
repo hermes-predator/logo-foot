@@ -101,9 +101,9 @@ const BlogHeader = () => {
         {`
         @keyframes floating {
           0% { transform: translateY(0) rotate(-2deg) scale(1.1); }
-          25% { transform: translateY(-5px) rotate(0deg) scale(1.13); }
+          25% { transform: translateY(-3px) rotate(0deg) scale(1.13); }
           50% { transform: translateY(0) rotate(3deg) scale(1.16); }
-          75% { transform: translateY(3px) rotate(1deg) scale(1.13); }
+          75% { transform: translateY(2px) rotate(1deg) scale(1.13); }
           100% { transform: translateY(0) rotate(-2deg) scale(1.1); }
         }
         

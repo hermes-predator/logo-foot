@@ -75,43 +75,46 @@ const BlogHeader = () => {
                   </div>
                 </h3>
               </div>
-              <TooltipProvider delayDuration={300}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-9 py-4 text-base relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200 min-w-52">
-                      <a href="/" className="flex items-center gap-2 relative">
-                        <Folder 
-                          className="text-amber-600" 
-                          style={{
-                            width: '22px',
-                            height: '22px'
-                          }}
-                        />
-                        <span className="font-medium text-lg">Voir le fichier</span>
-                        <ArrowRight 
-                          className="text-amber-600 group-hover:translate-x-1 transition-transform" 
-                          style={{
-                            width: '22px',
-                            height: '22px'
-                          }}
-                        />
-                        <div className="absolute inset-0 w-full h-full overflow-hidden">
-                          <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
-                        </div>
-                      </a>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent 
-                    className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 z-[100]"
-                    sideOffset={10}
-                    side="top"
-                    align="center"
-                    avoidCollisions={true}
-                  >
-                    <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              <div className="static">
+                <TooltipProvider delayDuration={300}>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-9 py-4 text-base relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200 min-w-52">
+                        <a href="/" className="flex items-center gap-2 relative">
+                          <Folder 
+                            className="text-amber-600" 
+                            style={{
+                              width: '22px',
+                              height: '22px'
+                            }}
+                          />
+                          <span className="font-medium text-lg">Voir le fichier</span>
+                          <ArrowRight 
+                            className="text-amber-600 group-hover:translate-x-1 transition-transform" 
+                            style={{
+                              width: '22px',
+                              height: '22px'
+                            }}
+                          />
+                          <div className="absolute inset-0 w-full h-full overflow-hidden">
+                            <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                          </div>
+                        </a>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent 
+                      className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3"
+                      sideOffset={10}
+                      side="top"
+                      align="center"
+                      avoidCollisions={true}
+                      style={{ zIndex: 9999, position: 'fixed' }}
+                    >
+                      <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
             </div>
           </div>
         </div>

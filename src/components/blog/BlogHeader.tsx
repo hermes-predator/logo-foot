@@ -58,7 +58,7 @@ const BlogHeader = () => {
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
-                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
+                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
                       <div className="absolute inset-0 bg-amber-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                       <AlertTriangle 
                         className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
@@ -68,7 +68,7 @@ const BlogHeader = () => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-xl">Vous cherchez tous les logos de football ?</span>
+                      <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
                       <span className="text-sm text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
                       <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
                     </div>

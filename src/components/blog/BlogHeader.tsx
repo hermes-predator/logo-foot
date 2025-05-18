@@ -83,9 +83,9 @@ const BlogHeader = () => {
                         <Folder 
                           className="text-amber-600" 
                           style={{
-                            width: '24px',
-                            height: '24px',
-                            transform: 'scale(1.1)',
+                            width: '22px',
+                            height: '22px',
+                            transform: 'scale(1)',
                             transition: 'transform 0.3s ease'
                           }}
                         />
@@ -93,9 +93,9 @@ const BlogHeader = () => {
                         <ArrowRight 
                           className="text-amber-600 group-hover:translate-x-1 transition-transform" 
                           style={{
-                            width: '24px',
-                            height: '24px',
-                            transform: 'scale(1.1)',
+                            width: '22px',
+                            height: '22px',
+                            transform: 'scale(1)',
                             transition: 'transform 0.3s ease, translate 0.3s ease'
                           }}
                         />

@@ -78,13 +78,13 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 h-12 px-6 text-base relative overflow-hidden">
+                    <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 h-12 px-6 text-base relative overflow-hidden shadow-md hover:shadow-lg transition-all">
                       <a href="/" className="flex items-center gap-2 relative">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
-                          <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-200/40 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                          <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-200/60 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                         </div>
                       </a>
                     </Button>

@@ -25,13 +25,13 @@ const BlogHeader = () => {
       </h1>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-100/50 via-white to-gray-100/50 rounded-2xl blur-lg"></div>
-        <div className="relative bg-gradient-to-br from-white via-white/95 to-gray-50/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-lg transition-all duration-300">
+        <div className="absolute inset-0 bg-gray-100 rounded-2xl blur-lg"></div>
+        <div className="relative bg-white rounded-2xl p-6 border border-gray-200/80 shadow-md hover:shadow-lg transition-all duration-300">
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
+            <div className="bg-gray-200 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />
             </div>
-            <h2 className="font-semibold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Blog Logo-Foot</h2>
+            <h2 className="font-semibold text-gray-900">Blog Logo-Foot</h2>
           </div>
 
           <div className="mb-5">
@@ -49,17 +49,17 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-5 border border-amber-200/70 shadow-md transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/30 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 shadow-md transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
+            <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-              <div className="absolute -inset-x-full top-0 h-[1px] bg-gradient-to-r from-transparent via-amber-300/70 to-transparent opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
                     <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-tr from-amber-300/0 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <div className="absolute inset-0 bg-amber-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                       <AlertTriangle 
                         className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
                         style={{
@@ -83,7 +83,7 @@ const BlogHeader = () => {
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-gray-200/20 to-gray-300/30 opacity-30 group-hover:opacity-40 group-hover:via-gray-500/30 group-hover:to-gray-500/40 group-hover:animate-shine transition-opacity duration-300" />
+                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gray-200/20 opacity-30 group-hover:opacity-40 group-hover:bg-gray-200/30 group-hover:animate-shine transition-opacity duration-300" />
                       </a>
                     </Button>
                   </TooltipTrigger>

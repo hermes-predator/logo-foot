@@ -58,10 +58,10 @@ const BlogHeader = () => {
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
-                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200 transition-colors duration-300 relative overflow-hidden">
+                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-tr from-amber-300/0 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                       <AlertTriangle 
-                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-all duration-500 animate-icon-floating" 
+                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
                         style={{
                           transform: 'scale(1.1)'
                         }}

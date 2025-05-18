@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
+
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -13,6 +14,7 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
+  
   return <div className="max-w-4xl mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
@@ -59,10 +61,9 @@ const BlogHeader = () => {
                     <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200 transition-colors duration-300 relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-tr from-amber-300/0 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                       <AlertTriangle 
-                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-all duration-500" 
+                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-all duration-500 animate-icon-subtle-rotate" 
                         style={{
-                          transform: 'scale(1.1)',
-                          animation: 'pulse 2s infinite ease-in-out, subtle-rotate 5s infinite alternate'
+                          transform: 'scale(1.1)'
                         }}
                       />
                     </div>
@@ -96,7 +97,8 @@ const BlogHeader = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>
+        {`
         @keyframes subtle-rotate {
           0% { transform: rotate(-3deg) scale(1.1); }
           30% { transform: rotate(0deg) scale(1.15); }
@@ -109,7 +111,12 @@ const BlogHeader = () => {
           50% { opacity: 1; }
           100% { opacity: 0.9; }
         }
-      `}</style>
+
+        .animate-icon-subtle-rotate {
+          animation: pulse 2s infinite ease-in-out, subtle-rotate 5s infinite alternate;
+        }
+        `}
+      </style>
     </div>;
 };
 export default BlogHeader;

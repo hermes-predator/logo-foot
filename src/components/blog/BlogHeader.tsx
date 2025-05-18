@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -84,9 +83,7 @@ const BlogHeader = () => {
                           className="text-amber-600" 
                           style={{
                             width: '22px',
-                            height: '22px',
-                            transform: 'scale(1)',
-                            transition: 'transform 0.3s ease'
+                            height: '22px'
                           }}
                         />
                         <span className="font-medium text-lg">Voir le fichier</span>
@@ -94,9 +91,7 @@ const BlogHeader = () => {
                           className="text-amber-600 group-hover:translate-x-1 transition-transform" 
                           style={{
                             width: '22px',
-                            height: '22px',
-                            transform: 'scale(1)',
-                            transition: 'transform 0.3s ease, translate 0.3s ease'
+                            height: '22px'
                           }}
                         />
                         <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -105,7 +100,11 @@ const BlogHeader = () => {
                       </a>
                     </Button>
                   </TooltipTrigger>
-                  <TooltipContent className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3">
+                  <TooltipContent 
+                    className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 z-[100]"
+                    sideOffset={5}
+                    side="top"
+                  >
                     <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
                   </TooltipContent>
                 </Tooltip>

@@ -56,10 +56,15 @@ const BlogHeader = () => {
               <div>
                 <h3 className="font-bold text-black text-lg">
                   <div className="flex items-start gap-4">
-                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200 transition-colors duration-300">
-                      <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-colors duration-300 animate-floating" style={{
-                      transform: 'scale(1.1)'
-                    }} />
+                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 shadow-inner group-hover:bg-amber-200 transition-colors duration-300 relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-tr from-amber-300/0 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <AlertTriangle 
+                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-700 transition-all duration-500" 
+                        style={{
+                          transform: 'scale(1.1)',
+                          animation: 'pulse 2s infinite ease-in-out, subtle-rotate 5s infinite alternate'
+                        }}
+                      />
                     </div>
                     <div className="flex flex-col">
                       <span className="text-xl">Vous cherchez tous les logos de football ?</span>
@@ -90,6 +95,21 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes subtle-rotate {
+          0% { transform: rotate(-3deg) scale(1.1); }
+          30% { transform: rotate(0deg) scale(1.15); }
+          60% { transform: rotate(3deg) scale(1.1); }
+          100% { transform: rotate(0deg) scale(1.15); }
+        }
+        
+        @keyframes pulse {
+          0% { opacity: 0.9; }
+          50% { opacity: 1; }
+          100% { opacity: 0.9; }
+        }
+      `}</style>
     </div>;
 };
 export default BlogHeader;

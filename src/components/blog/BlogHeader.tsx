@@ -79,11 +79,13 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 h-12 px-6 text-base relative overflow-hidden">
-                      <a href="/" className="flex items-center gap-2">
+                      <a href="/" className="flex items-center gap-2 relative">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>
                         <ArrowRight className="h-5 w-5 text-amber-600 group-hover:translate-x-1 transition-transform" />
-                        <div className="absolute top-0 right-0 h-full w-1/3 z-5 block transform -skew-x-12 bg-gray-200/20 opacity-30 group-hover:animate-shine transition-opacity duration-300" />
+                        <div className="absolute inset-0 w-full h-full overflow-hidden">
+                          <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-200/40 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                        </div>
                       </a>
                     </Button>
                   </TooltipTrigger>
@@ -117,6 +119,11 @@ const BlogHeader = () => {
           0% { left: -100%; }
           100% { left: 200%; }
         }
+        
+        @keyframes shine-effect {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
 
         .animate-icon-floating {
           animation: floating 4s ease-in-out infinite, pulse 2.5s infinite ease-in-out;
@@ -124,6 +131,10 @@ const BlogHeader = () => {
         
         .animate-shine {
           animation: shine 2s ease-in-out infinite;
+        }
+        
+        .animate-shine-effect {
+          animation: shine-effect 1.2s ease-out;
         }
         `}
       </style>

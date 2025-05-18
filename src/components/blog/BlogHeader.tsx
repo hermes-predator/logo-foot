@@ -49,7 +49,7 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 shadow-md transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
+          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden relative group">
             <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -78,7 +78,7 @@ const BlogHeader = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 shadow-sm hover:shadow group h-12 px-6 text-base relative overflow-hidden">
+                    <Button asChild className="bg-white hover:bg-white/90 whitespace-nowrap text-gray-900 border border-gray-200 h-12 px-6 text-base relative overflow-hidden">
                       <a href="/" className="flex items-center gap-2">
                         <Folder className="h-5 w-5 text-amber-600" />
                         <span>Voir le fichier</span>

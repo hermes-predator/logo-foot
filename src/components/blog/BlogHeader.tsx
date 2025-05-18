@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -74,7 +75,7 @@ const BlogHeader = () => {
                   </div>
                 </h3>
               </div>
-              <TooltipProvider>
+              <TooltipProvider delayDuration={300}>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-9 py-4 text-base relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200 min-w-52">
@@ -102,8 +103,10 @@ const BlogHeader = () => {
                   </TooltipTrigger>
                   <TooltipContent 
                     className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 z-[100]"
-                    sideOffset={5}
+                    sideOffset={10}
                     side="top"
+                    align="center"
+                    avoidCollisions={true}
                   >
                     <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
                   </TooltipContent>

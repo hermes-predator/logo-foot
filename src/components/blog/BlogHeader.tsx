@@ -55,6 +55,7 @@ const BlogHeader = () => {
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
+            
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
               <div>
                 <h3 className="font-bold text-black text-lg">
@@ -116,8 +117,8 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Google Drive Badge moved inside the yellow block */}
-            <div className="mt-4 flex justify-center">
+            {/* Google Drive Badge placed below all content in the yellow block */}
+            <div className="mt-6 flex justify-center">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
           </div>

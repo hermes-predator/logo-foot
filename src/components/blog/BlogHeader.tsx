@@ -16,7 +16,8 @@ const BlogHeader = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
   
-  return <div className="max-w-[64rem] mb-6 pl-4">
+  return (
+    <div className="max-w-[64rem] mb-6 pl-4">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
         <span>Le Blog des Logos de Football</span>
       </div>
@@ -44,33 +45,34 @@ const BlogHeader = () => {
               <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
                 Tout
               </a>
-              {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
+              {categoriesToDisplay.map(([key, category]) => (
+                <a 
+                  key={key} 
+                  href={`/blog?category=${key}`} 
+                  className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
+                >
                   {category.name}
-                </a>)}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Placement du badge Google Drive au centre en haut du bloc jaune */}
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-30">
+          {/* Container for the yellow block with proper spacing for the badge */}
+          <div className="mt-8 relative">
+            {/* Google Drive Badge centered at the top */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-20">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             
-            <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-visible relative mt-2">
-              {/* Removed the "group" class from the parent div to fix the hover issue */}
-              <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-                <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-              
+            {/* Yellow alert block with appropriate padding to accommodate the badge */}
+            <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transition-all duration-300 mt-2">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
                 <div>
                   <h3 className="font-bold text-black text-lg">
                     <div className="flex items-start gap-4">
-                      <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
-                        <div className="absolute inset-0 bg-amber-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 transition-none relative overflow-hidden">
                         <AlertTriangle 
-                          className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
+                          className="h-7 w-7 text-amber-600 flex-shrink-0 transition-none animate-icon-floating" 
                           style={{
                             transform: 'scale(1.1)'
                           }}
@@ -78,8 +80,10 @@ const BlogHeader = () => {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
-                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
-                        <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
+                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
+                          Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
+                          <br />Obtenez toutes les ressources dans un fichier ZIP complet.
+                        </span>
                       </div>
                     </div>
                   </h3>
@@ -167,6 +171,8 @@ const BlogHeader = () => {
         }
         `}
       </style>
-    </div>;
+    </div>
+  );
 };
+
 export default BlogHeader;

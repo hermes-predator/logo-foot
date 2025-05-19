@@ -50,7 +50,8 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-visible relative group">
+          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-visible relative">
+            {/* Removed the "group" class from the parent div to fix the hover issue */}
             <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
               <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -118,7 +119,7 @@ const BlogHeader = () => {
             </div>
             
             {/* Google Drive Badge placed with symmetric spacing to match the text positioning */}
-            <div className="mt-5 flex justify-start pl-[72px]">
+            <div className="mt-5 flex justify-start pl-[72px] relative z-20">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
           </div>

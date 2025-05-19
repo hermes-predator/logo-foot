@@ -101,7 +101,7 @@ const BlogHeader = () => {
                                 height: '22px'
                               }}
                             />
-                            <span className="font-medium text-sm">Voir le fichier</span>
+                            <span className="font-medium text-base">Voir le fichier</span>
                             <ArrowRight 
                               className="text-amber-600 group-hover:translate-x-1 transition-transform" 
                               style={{

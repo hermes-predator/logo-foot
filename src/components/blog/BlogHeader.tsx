@@ -60,7 +60,7 @@ const BlogHeader = () => {
           {/* Container for the yellow block with mt-12 to lower it */}
           <div className="mt-12 relative">
             {/* Yellow alert block with the Google Drive Badge inside at the top center */}
-            <div className="bg-amber-100 rounded-xl p-5 pt-13 border border-amber-200/70 transition-all duration-300 mt-2 relative">
+            <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative">
               {/* Google Drive Badge centered at the top inside the yellow container */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -top-3">
                 <GoogleDriveBadge cursorHelp={true} />
@@ -118,7 +118,7 @@ const BlogHeader = () => {
                       <TooltipContent 
                         side="top" 
                         align="center"
-                        sideOffset={25}
+                        sideOffset={20}
                         className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 relative z-[1000]"
                       >
                         <p>⦗FRONT-CLOUD⦘~ Football.zip</p>

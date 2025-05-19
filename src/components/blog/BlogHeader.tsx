@@ -118,7 +118,7 @@ const BlogHeader = () => {
                       <TooltipContent 
                         side="top" 
                         align="center"
-                        sideOffset={8}
+                        sideOffset={6}
                         className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 relative z-[1000]"
                       >
                         <p>⦗FRONT-CLOUD⦘~ Football.zip</p>

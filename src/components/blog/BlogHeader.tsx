@@ -88,7 +88,7 @@ const BlogHeader = () => {
                     </div>
                   </h3>
                 </div>
-                <div className="relative">
+                <div className="relative pr-2">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>

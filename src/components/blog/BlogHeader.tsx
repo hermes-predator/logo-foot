@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -5,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
+import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -113,6 +115,11 @@ const BlogHeader = () => {
                 </TooltipProvider>
               </div>
             </div>
+          </div>
+
+          {/* Google Drive Badge ajouté ici */}
+          <div className="mt-4 flex justify-center">
+            <GoogleDriveBadge cursorHelp={true} />
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -117,7 +118,7 @@ const BlogHeader = () => {
                       <TooltipContent 
                         side="top" 
                         align="center"
-                        sideOffset={10}
+                        sideOffset={8}
                         className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 relative z-[1000]"
                       >
                         <p>⦗FRONT-CLOUD⦘~ Football.zip</p>

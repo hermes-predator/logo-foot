@@ -50,77 +50,79 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-visible relative">
-            {/* Removed the "group" class from the parent div to fix the hover issue */}
-            <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-              <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-              <div>
-                <h3 className="font-bold text-black text-lg">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
-                      <div className="absolute inset-0 bg-amber-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                      <AlertTriangle 
-                        className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
-                        style={{
-                          transform: 'scale(1.1)'
-                        }}
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
-                      <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
-                      <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
-                    </div>
-                  </div>
-                </h3>
-              </div>
-              <div className="relative">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200">
-                        <a href="/" className="flex items-center gap-3 relative">
-                          <Folder 
-                            className="text-amber-600" 
-                            style={{
-                              width: '22px',
-                              height: '22px'
-                            }}
-                          />
-                          <span className="font-medium text-sm">Voir le fichier</span>
-                          <ArrowRight 
-                            className="text-amber-600 group-hover:translate-x-1 transition-transform" 
-                            style={{
-                              width: '22px',
-                              height: '22px'
-                            }}
-                          />
-                          <div className="absolute inset-0 w-full h-full overflow-hidden">
-                            <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
-                          </div>
-                        </a>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent 
-                      side="top" 
-                      align="center"
-                      sideOffset={20}
-                      className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 relative z-[1000]"
-                    >
-                      <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </div>
-            </div>
-            
-            {/* Google Drive Badge placed with symmetric spacing to match the text positioning */}
-            <div className="mt-5 flex justify-start pl-[72px] relative z-20">
+          {/* Placement du badge Google Drive au centre en haut du bloc jaune */}
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-30">
               <GoogleDriveBadge cursorHelp={true} />
+            </div>
+            
+            <div className="bg-amber-100 rounded-xl p-5 border border-amber-200/70 transform transition-all duration-300 overflow-visible relative mt-2">
+              {/* Removed the "group" class from the parent div to fix the hover issue */}
+              <div className="absolute inset-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+                <div className="absolute -inset-x-full top-0 h-[1px] bg-amber-300/70 opacity-30 group-hover:animate-[shine_2s_ease-in-out_infinite] group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+                <div>
+                  <h3 className="font-bold text-black text-lg">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-0.5 group-hover:bg-amber-200/80 transition-none relative overflow-hidden">
+                        <div className="absolute inset-0 bg-amber-200/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <AlertTriangle 
+                          className="h-7 w-7 text-amber-600 flex-shrink-0 group-hover:text-amber-600 transition-none animate-icon-floating" 
+                          style={{
+                            transform: 'scale(1.1)'
+                          }}
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
+                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
+                        <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
+                      </div>
+                    </div>
+                  </h3>
+                </div>
+                <div className="relative">
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200">
+                          <a href="/" className="flex items-center gap-3 relative">
+                            <Folder 
+                              className="text-amber-600" 
+                              style={{
+                                width: '22px',
+                                height: '22px'
+                              }}
+                            />
+                            <span className="font-medium text-sm">Voir le fichier</span>
+                            <ArrowRight 
+                              className="text-amber-600 group-hover:translate-x-1 transition-transform" 
+                              style={{
+                                width: '22px',
+                                height: '22px'
+                              }}
+                            />
+                            <div className="absolute inset-0 w-full h-full overflow-hidden">
+                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                            </div>
+                          </a>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent 
+                        side="top" 
+                        align="center"
+                        sideOffset={20}
+                        className="bg-white border border-gray-200 text-gray-900 text-base font-medium py-2 px-3 relative z-[1000]"
+                      >
+                        <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </div>
+              </div>
             </div>
           </div>
         </div>

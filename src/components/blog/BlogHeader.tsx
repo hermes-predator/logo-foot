@@ -117,8 +117,8 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Google Drive Badge placed below all content in the yellow block */}
-            <div className="mt-6 flex justify-center">
+            {/* Google Drive Badge placed with symmetric spacing to match the text positioning */}
+            <div className="mt-5 flex justify-start pl-[72px]">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
           </div>

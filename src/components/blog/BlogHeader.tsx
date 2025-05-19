@@ -119,20 +119,17 @@ const BlogHeader = () => {
                         side="top" 
                         align="center"
                         sideOffset={4}
-                        className="bg-white border border-gray-200 text-gray-900 p-0 shadow-lg rounded-lg overflow-hidden max-w-[350px]"
+                        className="bg-white border border-gray-200 text-gray-900 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]"
                       >
                         <div className="flex flex-col">
-                          <div className="bg-amber-50 p-3 border-b border-amber-100 flex items-center gap-2">
-                            <Info className="h-4 w-4 text-amber-600" />
+                          <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
+                            <Info className="h-4 w-4 text-gray-600" />
                             <p className="font-semibold text-sm">Informations sur le fichier</p>
                           </div>
                           <div className="p-3">
                             <p className="text-sm mb-2"><span className="font-medium">Nom:</span> Football.zip</p>
                             <p className="text-sm mb-2"><span className="font-medium">Taille:</span> 250 Mo</p>
                             <p className="text-sm mb-2"><span className="font-medium">Contenu:</span> 8600+ logos au format PNG</p>
-                            <div className="mt-3 bg-blue-50 p-2 rounded-md border border-blue-100">
-                              <p className="text-xs text-blue-700">⭐ Compatible avec Google Drive et Dropbox</p>
-                            </div>
                           </div>
                         </div>
                       </TooltipContent>

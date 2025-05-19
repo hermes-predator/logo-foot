@@ -115,11 +115,11 @@ const BlogHeader = () => {
                 </TooltipProvider>
               </div>
             </div>
-          </div>
-
-          {/* Google Drive Badge ajouté ici */}
-          <div className="mt-4 flex justify-center">
-            <GoogleDriveBadge cursorHelp={true} />
+            
+            {/* Google Drive Badge moved inside the yellow block */}
+            <div className="mt-4 flex justify-center">
+              <GoogleDriveBadge cursorHelp={true} />
+            </div>
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@ const BlogHeader = () => {
           {/* Container for the yellow block with mt-12 to lower it */}
           <div className="mt-12 relative">
             {/* Yellow alert block with the Google Drive Badge inside at the top center */}
-            <div className="bg-amber-100 rounded-xl p-5 pt-13 border border-amber-200/70 transition-all duration-300 mt-2 relative">
+            <div className="bg-amber-100 rounded-xl p-5 pt-12 border border-amber-200/70 transition-all duration-300 mt-2 relative">
               {/* Google Drive Badge centered at the top inside the yellow container */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -top-3">
                 <GoogleDriveBadge cursorHelp={true} />

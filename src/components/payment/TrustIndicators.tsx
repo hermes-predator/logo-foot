@@ -45,8 +45,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
         {icon}
       </div>
       
-      {/* Texte avec meilleur contraste et lisibilité - Taille de police augmentée */}
-      <h3 className="font-medium mb-1.5 text-base text-gray-900 transition-colors duration-300">{title}</h3>
+      {/* Texte avec meilleur contraste et lisibilité */}
+      <h3 className="font-medium mb-1.5 text-sm text-gray-900 transition-colors duration-300">{title}</h3>
       <p className="text-xs text-gray-600 text-center transition-colors duration-300">{description}</p>
     </div>
   );

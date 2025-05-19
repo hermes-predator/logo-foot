@@ -69,7 +69,7 @@ const BlogHeader = () => {
                     </div>
                     <div className="flex flex-col">
                       <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
-                      <span className="text-sm text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
+                      <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
                       <br />Obtenez toutes les ressources dans un fichier ZIP complet.</span>
                     </div>
                   </div>

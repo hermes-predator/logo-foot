@@ -57,8 +57,8 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          {/* Container for the yellow block with more margin-top to lower it */}
-          <div className="mt-16 relative">
+          {/* Container for the yellow block with mt-12 to lower it */}
+          <div className="mt-12 relative">
             {/* Google Drive Badge centered at the top */}
             <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-20">
               <GoogleDriveBadge cursorHelp={true} />

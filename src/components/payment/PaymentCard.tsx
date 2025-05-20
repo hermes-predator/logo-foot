@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
-import { Folder } from 'lucide-react';
+import { Folder, Cloud, CloudSun } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
@@ -63,7 +63,20 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas - AUGMENTATION DE LA TAILLE */}
+          {/* Nuages décoratifs */}
+          <div className="absolute top-6 right-32 opacity-10 text-blue-300 hidden sm:block transform -rotate-6">
+            <Cloud size={45} />
+          </div>
+          
+          <div className="absolute top-24 right-20 opacity-15 text-blue-400 hidden sm:block transform rotate-6">
+            <CloudSun size={32} />
+          </div>
+          
+          <div className="absolute top-14 right-48 opacity-8 text-blue-200 hidden sm:block transform -rotate-3">
+            <Cloud size={28} />
+          </div>
+          
+          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
           <div className={`absolute top-14 right-8 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={95} />
           </div>

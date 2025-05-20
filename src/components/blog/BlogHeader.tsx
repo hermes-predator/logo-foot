@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -70,7 +69,7 @@ const BlogHeader = () => {
                 <div>
                   <h3 className="font-bold text-black text-lg">
                     <div className="flex items-start gap-4">
-                      <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-2.5 transition-none relative overflow-hidden">
+                      <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-4 transition-none relative overflow-hidden">
                         <AlertTriangle 
                           className="h-7 w-7 text-amber-600 flex-shrink-0 transition-none animate-icon-floating" 
                           style={{

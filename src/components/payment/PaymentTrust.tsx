@@ -47,7 +47,7 @@ const PaymentTrust = () => {
         <div className="h-1 w-1 rounded-full bg-gray-200 mx-1.5"></div>
       </div>
       
-      {/* Compteur de téléchargement évolutif avec icône stylisée */}
+      {/* Compteur de téléchargement évolutif avec icône stylisée - removed hover effects */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
         <div>
           <Download className="h-5 w-5 text-blue-700 stroke-[1.75px]" />

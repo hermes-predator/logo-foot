@@ -68,7 +68,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             <Cloud size={60} fill="white" strokeWidth={0} />
           </div>
           
-          <div className="absolute top-28 right-20 text-white hidden sm:block transform rotate-6 fill-current">
+          <div className="absolute top-28 right-40 text-white hidden sm:block transform rotate-6 fill-current">
             <Cloud size={50} fill="white" strokeWidth={0} />
           </div>
           

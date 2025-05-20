@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
@@ -5,9 +6,11 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import PackDescription from '../sections/PackDescription';
+
 interface PaymentCardBackProps {
   onFlipBack: () => void;
 }
+
 const PaymentCardBack = ({
   onFlipBack
 }: PaymentCardBackProps) => {
@@ -15,6 +18,7 @@ const PaymentCardBack = ({
   const [videoError, setVideoError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     // Make sure video plays when the component mounts
     if (videoRef.current) {
@@ -24,6 +28,7 @@ const PaymentCardBack = ({
       });
     }
   }, []);
+
   return <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)]" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       {/* Effet de lueur subtil sur le bord supérieur */}
       <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
@@ -62,7 +67,7 @@ const PaymentCardBack = ({
         </button>
       </div>
 
-      {!videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
+      {!videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
           <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             {/* État de préchargement */}
             {isLoading && <div className="absolute inset-0 bg-blue-50 flex flex-col items-center justify-center z-20">
@@ -93,7 +98,7 @@ const PaymentCardBack = ({
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du fichier ZIP</span>
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -142,10 +147,10 @@ const PaymentCardBack = ({
           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
         }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (9€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Achat rapide ~ 9€</span>
             </button>
           </div>
-        </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
+        </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
           <div className="aspect-square w-full max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
@@ -171,7 +176,7 @@ const PaymentCardBack = ({
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du fichier ZIP</span>
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -226,4 +231,5 @@ const PaymentCardBack = ({
         </div>}
     </div>;
 };
+
 export default PaymentCardBack;

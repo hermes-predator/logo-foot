@@ -51,8 +51,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
     >
       {/* Removed hover effects and transitions */}
       
-      {/* Icône avec style appliqué par défaut sans effet de survol */}
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 rounded-full p-2 relative z-10 shadow-sm border border-gray-200/50" aria-hidden="true">
+      {/* Icône avec style cloud-like - plus proche du blanc */}
+      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-white to-blue-50/80 rounded-full p-2 relative z-10 shadow-sm border border-blue-100/30" aria-hidden="true">
         {icon}
       </div>
       

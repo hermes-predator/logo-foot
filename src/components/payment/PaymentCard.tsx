@@ -63,25 +63,25 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Nuages décoratifs - plusieurs nuages de tailles différentes, regroupés à droite */}
-          <div className="absolute top-22 right-28 text-white hidden sm:block transform -rotate-6 fill-current">
+          {/* Groupe de nuages décoratifs regroupés pour créer un effet de ciel nuageux */}
+          <div className="absolute top-22 right-40 text-white hidden sm:block transform -rotate-6 fill-current">
             <Cloud size={60} fill="white" strokeWidth={0} />
           </div>
           
-          <div className="absolute top-28 right-20 text-white hidden sm:block transform rotate-6 fill-current">
+          <div className="absolute top-28 right-32 text-white hidden sm:block transform rotate-6 fill-current">
             <Cloud size={50} fill="white" strokeWidth={0} />
           </div>
           
-          {/* Nouveaux nuages de tailles différentes, tous positionnés à droite */}
-          <div className="absolute top-16 right-48 text-white hidden sm:block transform -rotate-3 fill-current">
+          {/* Nuages plus petits regroupés dans la même zone */}
+          <div className="absolute top-16 right-52 text-white hidden sm:block transform -rotate-3 fill-current">
             <Cloud size={35} fill="white" strokeWidth={0} />
           </div>
           
-          <div className="absolute top-36 right-36 text-white hidden sm:block transform rotate-2 fill-current">
+          <div className="absolute top-36 right-45 text-white hidden sm:block transform rotate-2 fill-current">
             <Cloud size={30} fill="white" strokeWidth={0} />
           </div>
           
-          <div className="absolute top-14 right-38 text-white hidden sm:block transform -rotate-5 fill-current">
+          <div className="absolute top-14 right-42 text-white hidden sm:block transform -rotate-5 fill-current">
             <Cloud size={25} fill="white" strokeWidth={0} />
           </div>
           

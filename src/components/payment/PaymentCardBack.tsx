@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Folder, LoaderCircle } from 'lucide-react';
+import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -56,7 +56,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       </button>
 
       {!videoError ? (
-        <div className="w-full h-full flex items-center justify-center p-4 pt-28">
+        <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
           <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             {/* État de préchargement */}
             {isLoading && (
@@ -87,9 +87,15 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               style={{ opacity: isLoading ? 0 : 1 }}
             />
           </div>
+
+          {/* Information sur la taille sous la vidéo */}
+          <div className="mt-4 flex items-center justify-center gap-2 bg-blue-50 py-2 px-4 rounded-full shadow-sm border border-blue-100">
+            <FileArchive className="h-4 w-4 text-blue-500" />
+            <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
+          </div>
         </div>
       ) : (
-        <div className="w-full h-full flex items-center justify-center p-4 pt-28">
+        <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
           <div className="aspect-square w-full max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
@@ -103,8 +109,10 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               <span className="font-semibold">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </p>
             
-            <div className="mt-4 text-sm text-blue-600/80">
-              63 Mo • 8 774 éléments
+            {/* Déplacé les informations sur la taille du fichier ici aussi */}
+            <div className="mt-6 flex items-center justify-center gap-2 bg-blue-100/50 py-2 px-5 rounded-full">
+              <FileArchive className="h-4 w-4 text-blue-500" />
+              <span className="text-sm font-medium text-blue-600">63 Mo • 8 774 éléments</span>
             </div>
           </div>
         </div>

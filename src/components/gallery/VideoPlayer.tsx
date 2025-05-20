@@ -169,7 +169,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   };
 
   return (
-    <DialogContent className="max-w-[500px] w-full overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
+    <DialogContent className="max-w-[540px] w-full overflow-hidden p-0 border-none shadow-2xl rounded-xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
         <DialogHeader className="p-1 pb-1 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogTitle className="text-gray-800 font-medium text-xs">
@@ -180,7 +180,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-full aspect-square max-w-[500px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative protected-content">
+        <div className="w-full aspect-square max-w-[540px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative protected-content">
           {loading && (
             <div className="absolute inset-0 flex items-center justify-center bg-gray-100/30 backdrop-blur-[1px] z-10">
               <Loader className="h-8 w-8 text-gray-600 animate-spin" />

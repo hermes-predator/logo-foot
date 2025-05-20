@@ -51,8 +51,8 @@ const ContactForm = () => {
         </div>
       </div>
       
-      {/* Mention RGPD (inchangée) */}
-      <div className="p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-md shadow-sm">
+      {/* Mention RGPD avec arrondis différents */}
+      <div className="p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl shadow-sm">
         <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-snug">
           <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
           <span>

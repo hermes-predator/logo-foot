@@ -75,7 +75,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             
             <FileArchive className="h-16 w-16 text-blue-400/70 mb-4" />
             
-            <h3 className="text-xl sm:text-2xl font-bold text-blue-700 mb-2 text-center">
+            <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 text-center">
               Aperçu du fichier
             </h3>
             

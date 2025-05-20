@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
-import { Folder, Cloud, CloudSun } from 'lucide-react';
+import { Folder, Cloud } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
@@ -63,16 +63,16 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Nuages décoratifs - repositionnés plus bas et plus à gauche */}
-          <div className="absolute top-32 right-44 opacity-10 text-blue-300 hidden sm:block transform -rotate-6">
+          {/* Nuages décoratifs - positionnés plus bas et vers la gauche mais un peu plus haut qu'avant */}
+          <div className="absolute top-22 right-44 opacity-10 text-blue-300 hidden sm:block transform -rotate-6">
             <Cloud size={45} />
           </div>
           
-          <div className="absolute top-48 right-28 opacity-15 text-blue-400 hidden sm:block transform rotate-6">
-            <CloudSun size={32} />
+          <div className="absolute top-32 right-28 opacity-15 text-blue-400 hidden sm:block transform rotate-6">
+            <Cloud size={32} />
           </div>
           
-          <div className="absolute top-36 right-64 opacity-8 text-blue-200 hidden sm:block transform -rotate-3">
+          <div className="absolute top-28 right-64 opacity-8 text-blue-200 hidden sm:block transform -rotate-3">
             <Cloud size={28} />
           </div>
           

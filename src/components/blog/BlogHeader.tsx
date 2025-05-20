@@ -92,25 +92,25 @@ const BlogHeader = () => {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <Button asChild className="bg-gradient-to-b from-white to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-gray-300 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-200 group">
+                        <Button asChild className="bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-800 border-0 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_6px_20px_-10px_rgba(0,0,0,0.3),0_8px_12px_-5px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1),inset_0_0_0_1px_rgba(255,255,255,0.5)] hover:shadow-[0_10px_25px_-12px_rgba(255,183,77,0.35),0_8px_15px_-4px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,1),inset_0_0_0_1px_rgba(255,255,255,0.8)] transition-all duration-300 group">
                           <a href="/" className="flex items-center gap-3 relative">
                             <Folder 
                               className="text-amber-600 transition-none" 
                               style={{
-                                width: '22px',
-                                height: '22px'
+                                width: "22px",
+                                height: "22px"
                               }}
                             />
                             <span className="font-medium text-base">Voir le fichier</span>
                             <ArrowRight 
                               className="text-amber-600 group-hover:translate-x-1 transition-transform" 
                               style={{
-                                width: '22px',
-                                height: '22px'
+                                width: "22px",
+                                height: "22px"
                               }}
                             />
                             <div className="absolute inset-0 w-full h-full overflow-hidden">
-                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-gray-300/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                             </div>
                           </a>
                         </Button>

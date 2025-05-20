@@ -63,16 +63,16 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Nuages décoratifs */}
-          <div className="absolute top-6 right-32 opacity-10 text-blue-300 hidden sm:block transform -rotate-6">
+          {/* Nuages décoratifs - repositionnés plus bas et plus à gauche */}
+          <div className="absolute top-32 right-44 opacity-10 text-blue-300 hidden sm:block transform -rotate-6">
             <Cloud size={45} />
           </div>
           
-          <div className="absolute top-24 right-20 opacity-15 text-blue-400 hidden sm:block transform rotate-6">
+          <div className="absolute top-48 right-28 opacity-15 text-blue-400 hidden sm:block transform rotate-6">
             <CloudSun size={32} />
           </div>
           
-          <div className="absolute top-14 right-48 opacity-8 text-blue-200 hidden sm:block transform -rotate-3">
+          <div className="absolute top-36 right-64 opacity-8 text-blue-200 hidden sm:block transform -rotate-3">
             <Cloud size={28} />
           </div>
           

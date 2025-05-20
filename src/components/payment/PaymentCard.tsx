@@ -73,7 +73,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           </div>
           
           {/* Nuages plus petits regroupés dans la même zone */}
-          <div className="absolute top-16 right-52 text-white hidden sm:block transform -rotate-3 fill-current">
+          <div className="absolute top-16 right-46 text-white hidden sm:block transform -rotate-3 fill-current">
             <Cloud size={35} fill="white" strokeWidth={0} />
           </div>
           

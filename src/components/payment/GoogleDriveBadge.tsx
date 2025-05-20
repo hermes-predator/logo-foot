@@ -23,7 +23,7 @@ const GoogleDriveBadge = ({
       aria-label="Compatible avec Google Drive"
     >
       <div className="bg-gradient-to-br from-green-600 to-green-400 bg-clip-text">
-        <BadgeCheck className="h-4 w-4 text-transparent" />
+        <BadgeCheck className="h-5 w-5 text-transparent" />
       </div>
       <span className="font-medium text-sm">Fichier stockable sur votre</span>
       <img 

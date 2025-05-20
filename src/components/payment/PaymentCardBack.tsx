@@ -1,6 +1,5 @@
-
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Folder, LoaderCircle, FileZip } from 'lucide-react';
+import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -73,7 +72,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               className="p-2 rounded-full bg-purple-50 text-purple-600 hover:bg-purple-100 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
               aria-label="Voir le descriptif du contenu"
             >
-              <FileZip className="w-4 h-4 text-purple-600" />
+              <FileArchive className="w-4 h-4 text-purple-600" />
               <span className="text-sm font-semibold whitespace-nowrap">Descriptif du ZIP</span>
               {/* Cercle d'animation au clic */}
               <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">

@@ -5,25 +5,20 @@ import { BadgeCheck } from 'lucide-react';
 
 interface GoogleDriveBadgeProps {
   className?: string;
-  alwaysEnlarged?: boolean; // Prop to apply the enlarged state by default
-  cursorHelp?: boolean; // Prop to control the cursor-help
+  alwaysEnlarged?: boolean; // Prop pour appliquer l'état agrandi par défaut
+  cursorHelp?: boolean; // Nouvelle prop pour contrôler le cursor-help
 }
 
 const GoogleDriveBadge = ({ 
   className = '', 
   alwaysEnlarged = false,
-  cursorHelp = false 
+  cursorHelp = false // Par défaut, pas de cursor-help
 }: GoogleDriveBadgeProps) => {
-  // Apply enhanced styling if alwaysEnlarged is true
-  const enhancedStyles = alwaysEnlarged ? 
-    'bg-white shadow-md border-blue-200/70 scale-105' : 
-    'bg-gray-50 border-gray-200';
-
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-4 py-2 ${enhancedStyles} text-gray-600
+      className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 
         shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)] 
-        transition-all duration-300 hover:bg-white hover:border-blue-200/70 hover:scale-105 ${cursorHelp ? 'cursor-help' : ''} ${className}`}
+        transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >

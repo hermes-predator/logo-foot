@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder, Cloud } from 'lucide-react';
@@ -69,6 +70,11 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           
           <div className="absolute top-28 right-36 text-white hidden sm:block transform rotate-6 fill-current">
             <Cloud size={50} fill="white" strokeWidth={0} />
+          </div>
+          
+          {/* Ajout du troisième nuage plus petit */}
+          <div className="absolute top-14 right-48 text-white hidden sm:block transform -rotate-3 fill-current animate-floating">
+            <Cloud size={35} fill="white" strokeWidth={0} />
           </div>
           
           {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}

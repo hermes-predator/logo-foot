@@ -92,28 +92,45 @@ const BlogHeader = () => {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <Button asChild className="bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-800 border-0 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_12px_24px_-8px_rgba(255,196,87,0.2),0_6px_12px_-6px_rgba(0,0,0,0.1),0_-8px_16px_-2px_rgba(255,248,240,0.8),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_18px_28px_-14px_rgba(255,196,87,0.4),0_10px_20px_-8px_rgba(255,183,77,0.25),0_-12px_16px_-4px_rgba(255,248,240,0.9),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-300 group before:content-[''] before:absolute before:bottom-0 before:left-[15%] before:w-[70%] before:h-10 before:bg-amber-100/20 before:blur-lg before:-mb-4 before:z-[-1] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-amber-100/80 after:to-transparent after:blur-sm">
+                        <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border-0 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_14px_28px_-8px_rgba(255,196,87,0.25),0_8px_16px_-6px_rgba(0,0,0,0.12),0_-10px_16px_0px_rgba(255,248,240,0.8),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_32px_-16px_rgba(255,196,87,0.45),0_12px_22px_-8px_rgba(255,183,77,0.3),0_-14px_20px_-4px_rgba(255,248,240,0.9),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 group before:content-[''] before:absolute before:bottom-0 before:left-[15%] before:w-[70%] before:h-12 before:bg-amber-100/25 before:blur-xl before:-mb-5 before:z-[-1] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-amber-200/90 after:to-transparent after:blur-sm">
                           <a href="/" className="flex items-center gap-3 relative">
+                            {/* Leaf elements around the button */}
                             <div className="absolute left-0 top-0 w-full h-full">
-                              <Leaf 
-                                className="absolute text-amber-500/20 -left-1 -top-3" 
-                                style={{
-                                  width: "12px",
-                                  height: "12px",
-                                  transform: "rotate(30deg)"
-                                }}
-                              />
-                              <Leaf 
-                                className="absolute text-amber-500/20 -right-1 -top-2" 
-                                style={{
-                                  width: "10px",
-                                  height: "10px",
-                                  transform: "rotate(-15deg)"
-                                }}
-                              />
+                              <div className="absolute -left-2 -top-4 animate-float-slow opacity-60">
+                                <Leaf 
+                                  className="text-amber-500/40 transform rotate-15"
+                                  style={{
+                                    width: "14px",
+                                    height: "14px",
+                                    filter: "drop-shadow(0 2px 3px rgba(253, 186, 116, 0.4))"
+                                  }}
+                                />
+                              </div>
+                              <div className="absolute left-[30%] -top-3 animate-float-medium delay-300 opacity-50">
+                                <Leaf 
+                                  className="text-amber-500/30"
+                                  style={{
+                                    width: "10px",
+                                    height: "10px",
+                                    transform: "rotate(45deg)",
+                                    filter: "drop-shadow(0 2px 2px rgba(253, 186, 116, 0.3))"
+                                  }}
+                                />
+                              </div>
+                              <div className="absolute -right-1 -top-3 animate-float-fast delay-150 opacity-70">
+                                <Leaf 
+                                  className="text-amber-500/40"
+                                  style={{
+                                    width: "12px",
+                                    height: "12px",
+                                    transform: "rotate(-20deg) scaleX(-1)",
+                                    filter: "drop-shadow(0 2px 3px rgba(253, 186, 116, 0.4))"
+                                  }}
+                                />
+                              </div>
                             </div>
                             <Folder 
-                              className="text-amber-600 transition-none" 
+                              className="text-amber-600 transition-none relative group-hover:animate-subtle-bounce" 
                               style={{
                                 width: "22px",
                                 height: "22px"
@@ -128,7 +145,7 @@ const BlogHeader = () => {
                               }}
                             />
                             <div className="absolute inset-0 w-full h-full overflow-hidden">
-                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                             </div>
                           </a>
                         </Button>
@@ -170,6 +187,29 @@ const BlogHeader = () => {
           100% { transform: translateY(0) rotate(0deg) scale(1.1); }
         }
         
+        @keyframes float-slow {
+          0% { transform: translateY(0) rotate(15deg); }
+          50% { transform: translateY(-4px) rotate(20deg); }
+          100% { transform: translateY(0) rotate(15deg); }
+        }
+        
+        @keyframes float-medium {
+          0% { transform: translateY(0) rotate(45deg); }
+          50% { transform: translateY(-3px) rotate(40deg); }
+          100% { transform: translateY(0) rotate(45deg); }
+        }
+        
+        @keyframes float-fast {
+          0% { transform: translateY(0) rotate(-20deg) scaleX(-1); }
+          50% { transform: translateY(-2px) rotate(-25deg) scaleX(-1); }
+          100% { transform: translateY(0) rotate(-20deg) scaleX(-1); }
+        }
+        
+        @keyframes subtle-bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-2px); }
+        }
+        
         @keyframes pulse {
           0% { opacity: 0.85; }
           50% { opacity: 1; }
@@ -195,6 +235,22 @@ const BlogHeader = () => {
 
         .animate-icon-floating {
           animation: floating 4s ease-in-out infinite, pulse 2.5s infinite ease-in-out;
+        }
+        
+        .animate-float-slow {
+          animation: float-slow 6s ease-in-out infinite;
+        }
+        
+        .animate-float-medium {
+          animation: float-medium 5s ease-in-out infinite;
+        }
+        
+        .animate-float-fast {
+          animation: float-fast 4s ease-in-out infinite;
+        }
+        
+        .animate-subtle-bounce {
+          animation: subtle-bounce 2s ease-in-out infinite;
         }
         
         .animate-shine {

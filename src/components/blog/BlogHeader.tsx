@@ -72,7 +72,7 @@ const BlogHeader = () => {
                     <div className="flex items-start gap-4 pl-3">
                       <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-4 transition-none relative overflow-hidden">
                         <AlertTriangle 
-                          className="h-7 w-7 text-amber-600 flex-shrink-0 transition-none animate-icon-floating" 
+                          className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" 
                           style={{
                             transform: 'scale(1.1)'
                           }}
@@ -95,7 +95,7 @@ const BlogHeader = () => {
                         <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
                           <a href="/" className="flex items-center gap-3 relative">
                             <Folder 
-                              className="text-amber-600 transition-transform group-hover:scale-110 duration-300" 
+                              className="text-amber-600" 
                               style={{
                                 width: "22px",
                                 height: "22px"

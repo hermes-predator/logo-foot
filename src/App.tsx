@@ -11,6 +11,7 @@ import BlogPostSEO from './pages/BlogPostSEO';
 import NotFound from './pages/NotFound';
 import PaymentSuccess from './pages/PaymentSuccess';
 import { Toaster } from "@/components/ui/toaster";
+import Header from './components/Header';
 
 // Créer un client pour React Query
 const queryClient = new QueryClient({
@@ -28,6 +29,7 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Router basename="/">
+            <Header />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<Blog />} />

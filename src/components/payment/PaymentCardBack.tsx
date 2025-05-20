@@ -44,8 +44,8 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       </button>
 
       {!videoError ? (
-        <div className="w-full h-full flex items-center justify-center p-6">
-          <div className="aspect-square w-full max-w-[480px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
+        <div className="w-full h-full flex items-center justify-center p-4">
+          <div className="aspect-square w-full max-w-[550px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             <video 
               ref={videoRef}
               className="w-full h-full object-cover transition-transform duration-500"
@@ -59,8 +59,8 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
           </div>
         </div>
       ) : (
-        <div className="w-full h-full flex items-center justify-center p-6">
-          <div className="aspect-square w-full max-w-[480px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
+        <div className="w-full h-full flex items-center justify-center p-4">
+          <div className="aspect-square w-full max-w-[550px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
             <FileArchive className="h-16 w-16 text-blue-400/70 mb-4" />

@@ -63,28 +63,6 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Groupe de nuages décoratifs regroupés pour créer un effet de ciel nuageux */}
-          <div className="absolute top-22 right-36 text-white hidden sm:block transform -rotate-6 fill-current">
-            <Cloud size={60} fill="white" strokeWidth={0} />
-          </div>
-          
-          <div className="absolute top-28 right-28 text-white hidden sm:block transform rotate-6 fill-current">
-            <Cloud size={50} fill="white" strokeWidth={0} />
-          </div>
-          
-          {/* Nuages plus petits regroupés dans la même zone */}
-          <div className="absolute top-16 right-32 text-white hidden sm:block transform -rotate-3 fill-current">
-            <Cloud size={35} fill="white" strokeWidth={0} />
-          </div>
-          
-          <div className="absolute top-36 right-40 text-white hidden sm:block transform rotate-2 fill-current">
-            <Cloud size={30} fill="white" strokeWidth={0} />
-          </div>
-          
-          <div className="absolute top-14 right-38 text-white hidden sm:block transform -rotate-5 fill-current">
-            <Cloud size={25} fill="white" strokeWidth={0} />
-          </div>
-          
           {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
           <div className={`absolute top-14 right-8 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={95} />

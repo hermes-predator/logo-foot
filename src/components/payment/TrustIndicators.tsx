@@ -6,17 +6,17 @@ const TrustIndicators = () => {
   return (
     <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-6">
       <TrustCard 
-        icon={<ShieldCheck className="text-gray-600" />}
+        icon={<ShieldCheck className="text-transparent bg-gradient-to-br from-gray-700 to-gray-400 bg-clip-text" />}
         title="Paiement Sécurisé"
         description="Transactions via SumUp"
       />
       <TrustCard 
-        icon={<Download className="text-gray-600" />}
+        icon={<Download className="text-transparent bg-gradient-to-br from-gray-700 to-gray-400 bg-clip-text" />}
         title="Téléchargement Instantané"
         description="Page d'après-paiement"
       />
       <TrustCard 
-        icon={<HandHeart className="text-gray-600" />}
+        icon={<HandHeart className="text-transparent bg-gradient-to-br from-gray-700 to-gray-400 bg-clip-text" />}
         title="Support Disponible"
         description="Email : contact@logo-foot.com"
       />
@@ -40,8 +40,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       {/* Effet de lumière subtil sur hover */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-100/30 to-blue-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
       
-      {/* Icône avec style de survol appliqué par défaut et effet subtil */}
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-blue-50 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-blue-100/50" aria-hidden="true">
+      {/* Icône avec style de survol appliqué par défaut et effet subtil - AJOUT DE DÉGRADÉ */}
+      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-gray-100 to-gray-50 rounded-full p-2 transition-all duration-300 relative z-10 shadow-sm border border-blue-100/50" aria-hidden="true">
         {icon}
       </div>
       

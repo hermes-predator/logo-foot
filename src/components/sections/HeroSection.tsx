@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -200,7 +199,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 </div>
                 <div className="mt-1 flex items-center gap-2">
                   <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">⏱️ 2 minutes seulement</span>
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">✅  Fiable à 100%</span>
+                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[10px] font-medium">✓  Fiable à 100%</span>
                 </div>
               </div>
             </TooltipContent>

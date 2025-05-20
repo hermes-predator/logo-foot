@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, FileArchive } from 'lucide-react';
+import { ArrowLeft, Folder } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
 
 interface PaymentCardBackProps {
@@ -73,7 +73,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
           <div className="aspect-square w-full max-w-[550px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
-            <FileArchive className="h-16 w-16 text-blue-400/70 mb-4" />
+            <Folder className="h-16 w-16 text-blue-400/70 mb-4" />
             
             <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 text-center">
               Aperçu du fichier

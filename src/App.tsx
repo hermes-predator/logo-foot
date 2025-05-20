@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 import Index from './pages/Index';
 import Blog from './pages/Blog';
@@ -25,17 +26,19 @@ const App = () => {
   return (
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
-        <Router basename="/">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
-            <Route path="/payment-success" element={<PaymentSuccess />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Router>
-        <Toaster />
+        <TooltipProvider>
+          <Router basename="/">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
+              <Route path="/payment-success" element={<PaymentSuccess />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Router>
+          <Toaster />
+        </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>
   );

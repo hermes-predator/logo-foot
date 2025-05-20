@@ -55,7 +55,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
 
       {!videoError ? (
         <div className="w-full h-full flex items-center justify-center p-4 pt-28">
-          <div className="aspect-square w-full max-w-[580px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
+          <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             <video 
               ref={videoRef}
               className="w-full h-full object-cover transition-transform duration-500"
@@ -70,7 +70,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
         </div>
       ) : (
         <div className="w-full h-full flex items-center justify-center p-4 pt-28">
-          <div className="aspect-square w-full max-w-[580px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
+          <div className="aspect-square w-full max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
             <Folder className="h-16 w-16 text-blue-400/70 mb-4" />

@@ -49,7 +49,7 @@ const PaymentTrust = () => {
       
       {/* Compteur de téléchargement évolutif avec style cloud-like */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gradient-to-b from-white to-gray-50/80 rounded-lg border border-gray-100/50 shadow-sm">
-        <div className="bg-gradient-to-b from-white to-blue-50/30 p-1 rounded-full border border-blue-50 shadow-sm">
+        <div className="bg-gradient-to-b from-white to-blue-50/20 p-1 rounded-full border border-blue-50/70 shadow-[0_2px_6px_rgba(0,0,100,0.08)]">
           <Download className="h-5 w-5 text-gray-600 stroke-[1.75px]" />
         </div>
         <span className="text-sm text-gray-500 font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>

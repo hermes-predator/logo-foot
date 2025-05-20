@@ -49,8 +49,8 @@ const TrustCard = ({ icon, title, description }: TrustCardProps) => {
       role="article"
       aria-label={`Information sur ${title}`}
     >
-      {/* Icon with very light cloud-like styling */}
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-white to-blue-50/30 rounded-full p-2 relative z-10 shadow-sm border border-blue-50" aria-hidden="true">
+      {/* Icon with enhanced cloud-like styling */}
+      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-white to-blue-50/20 rounded-full p-2 relative z-10 shadow-[0_2px_6px_rgba(0,0,100,0.08)] border border-blue-50/70" aria-hidden="true">
         {icon}
       </div>
       

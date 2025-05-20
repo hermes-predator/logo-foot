@@ -112,15 +112,19 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             />
           </div>
 
-          {/* Bouton Descriptif du ZIP en dessous de la vidéo */}
-          <div className="mt-4 flex justify-center">
+          {/* Information sur la taille sous la vidéo */}
+          <div className="mt-4 py-2 px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
+            <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
+          </div>
+
+          {/* Boutons de CTA et Descriptif du ZIP en dessous de la taille */}
+          <div className="mt-8 flex items-center gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
                 <button 
-                  className="group flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+                  className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <FileArchive size={20} className="text-gray-800 transition-colors duration-300" />
                   <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
               </DialogTrigger>
@@ -167,11 +171,17 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                 </DialogHeader>
               </DialogContent>
             </Dialog>
-          </div>
 
-          {/* Information sur la taille sous la vidéo */}
-          <div className="mt-4 py-2 px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
-            <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
+            <button 
+              onClick={() => {
+                const returnUrl = `${window.location.origin}/payment-success`;
+                window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+              }}
+              className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (9€)</span>
+            </button>
           </div>
         </div>
       ) : (
@@ -195,15 +205,14 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             </div>
           </div>
           
-          {/* Bouton Descriptif du ZIP en dessous de l'aperçu en cas d'erreur vidéo */}
-          <div className="mt-4 flex justify-center">
+          {/* Boutons de CTA et Descriptif du ZIP également disponibles en cas d'erreur vidéo */}
+          <div className="mt-8 flex items-center gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
                 <button 
-                  className="group flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+                  className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <FileArchive size={20} className="text-gray-800 transition-colors duration-300" />
                   <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
               </DialogTrigger>
@@ -250,6 +259,17 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                 </DialogHeader>
               </DialogContent>
             </Dialog>
+
+            <button 
+              onClick={() => {
+                const returnUrl = `${window.location.origin}/payment-success`;
+                window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+              }}
+              className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (9€)</span>
+            </button>
           </div>
         </div>
       )}

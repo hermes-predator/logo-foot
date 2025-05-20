@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder } from 'lucide-react';
@@ -83,7 +82,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <div>
-                      <GoogleDriveBadge cursorHelp={true} />
+                      <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg">

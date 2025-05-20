@@ -52,8 +52,8 @@ const ContactForm = () => {
       </div>
       
       {/* Mention RGPD avec arrondis différents */}
-      <div className="p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-t-none rounded-bl-sm rounded-br-xl shadow-sm">
-        <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-snug">
+      <div className="p-5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-t-none rounded-bl-sm rounded-br-xl shadow-sm">
+        <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-relaxed">
           <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
           <span>
             Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression.

@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Folder } from 'lucide-react';
+import { ArrowLeft, Folder, LoaderCircle } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface PaymentCardBackProps {
   onFlipBack: () => void;
@@ -11,6 +12,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoError, setVideoError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Make sure video plays when the component mounts
@@ -56,6 +58,21 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       {!videoError ? (
         <div className="w-full h-full flex items-center justify-center p-4 pt-28">
           <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
+            {/* État de préchargement */}
+            {isLoading && (
+              <div className="absolute inset-0 bg-blue-50 flex flex-col items-center justify-center z-20">
+                <div className="flex flex-col items-center">
+                  <LoaderCircle className="h-12 w-12 text-blue-500 animate-spin mb-4" />
+                  <div className="space-y-2 w-3/4 max-w-[300px]">
+                    <Skeleton className="h-3 w-full bg-blue-200/60" />
+                    <Skeleton className="h-3 w-11/12 bg-blue-200/60" />
+                    <Skeleton className="h-3 w-4/5 bg-blue-200/60" />
+                  </div>
+                  <p className="text-sm text-blue-600 mt-3 font-medium">Chargement de la prévisualisation...</p>
+                </div>
+              </div>
+            )}
+            
             <video 
               ref={videoRef}
               className="w-full h-full object-cover transition-transform duration-500"
@@ -65,6 +82,9 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               muted
               playsInline
               onError={() => setVideoError(true)}
+              onLoadedData={() => setIsLoading(false)}
+              onCanPlay={() => setIsLoading(false)}
+              style={{ opacity: isLoading ? 0 : 1 }}
             />
           </div>
         </div>

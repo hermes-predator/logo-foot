@@ -8,7 +8,7 @@ const TrustIndicators = () => {
       <TrustCard 
         icon={
           <div>
-            <ShieldCheck className="text-blue-700 stroke-[1.75px]" />
+            <ShieldCheck className="text-gray-600 stroke-[1.75px]" />
           </div>
         }
         title="Paiement Sécurisé"
@@ -17,7 +17,7 @@ const TrustIndicators = () => {
       <TrustCard 
         icon={
           <div>
-            <Download className="text-blue-700 stroke-[1.75px]" />
+            <Download className="text-gray-600 stroke-[1.75px]" />
           </div>
         }
         title="Téléchargement Instantané"
@@ -26,7 +26,7 @@ const TrustIndicators = () => {
       <TrustCard 
         icon={
           <div>
-            <HandHeart className="text-blue-700 stroke-[1.75px]" />
+            <HandHeart className="text-gray-600 stroke-[1.75px]" />
           </div>
         }
         title="Support Disponible"

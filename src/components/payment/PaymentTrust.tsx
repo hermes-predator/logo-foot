@@ -50,7 +50,7 @@ const PaymentTrust = () => {
       {/* Compteur de téléchargement évolutif avec icône stylisée - removed hover effects */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
         <div>
-          <Download className="h-5 w-5 text-blue-700 stroke-[1.75px]" />
+          <Download className="h-5 w-5 text-gray-600 stroke-[1.75px]" />
         </div>
         <span className="text-sm text-gray-500 font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
       </div>

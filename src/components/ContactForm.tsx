@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="space-y-0">
       {/* En-tête avec email de contact et informations sur les commandes combinés */}
-      <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-lg p-4 border border-gray-200">
+      <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-t-lg rounded-bl-lg rounded-br-none p-4 border border-gray-200 border-b-0">
         <h3 className="font-medium text-lg text-gray-900 mb-2 flex items-center gap-2">
           <div className="bg-blue-100 rounded-md p-3 shadow-sm">
             <Mail className="w-6 h-6 text-blue-600" />
@@ -52,7 +52,7 @@ const ContactForm = () => {
       </div>
       
       {/* Mention RGPD avec arrondis différents */}
-      <div className="mt-1 p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl shadow-sm">
+      <div className="p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-t-none rounded-bl-sm rounded-br-xl shadow-sm">
         <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-snug">
           <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
           <span>

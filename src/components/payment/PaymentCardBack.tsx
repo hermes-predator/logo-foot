@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Folder, LoaderCircle } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';

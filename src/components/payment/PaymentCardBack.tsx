@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, FileArchive } from 'lucide-react';
+import GoogleDriveBadge from './GoogleDriveBadge';
 
 interface PaymentCardBackProps {
   onFlipBack: () => void;
@@ -34,6 +35,9 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       <div className="absolute top-6 left-6 z-30">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h2>
         <p className="text-sm sm:text-base text-gray-700 mt-1">La plus grande collection de logos de football en haute qualité</p>
+        <div className="mt-3">
+          <GoogleDriveBadge cursorHelp={true} />
+        </div>
       </div>
       
       {/* Bouton de retour dans le coin supérieur droit */}

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder, Cloud } from 'lucide-react';
@@ -64,11 +63,11 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
           {/* Nuages décoratifs - 2 nuages blancs plus grands, déplacés vers la gauche */}
-          <div className="absolute top-22 right-72 text-white hidden sm:block transform -rotate-6 fill-current">
+          <div className="absolute top-22 right-60 text-white hidden sm:block transform -rotate-6 fill-current">
             <Cloud size={60} fill="white" strokeWidth={0} />
           </div>
           
-          <div className="absolute top-28 right-48 text-white hidden sm:block transform rotate-6 fill-current">
+          <div className="absolute top-28 right-36 text-white hidden sm:block transform rotate-6 fill-current">
             <Cloud size={50} fill="white" strokeWidth={0} />
           </div>
           

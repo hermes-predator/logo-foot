@@ -4,7 +4,7 @@ import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import PackDescription from '../sections/PackDescription';
 
 interface PaymentCardBackProps {
@@ -117,19 +117,54 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             <Dialog>
               <DialogTrigger asChild>
                 <button 
-                  className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
-                  aria-label="Voir le descriptif du contenu"
+                  className="group flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
                 >
-                  <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-                  <span className="text-sm font-medium text-blue-700">Descriptif du ZIP</span>
-                  {/* Cercle d'animation au clic */}
-                  <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                    <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
-                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
+                  <FileArchive size={20} className="text-gray-800 transition-colors duration-300" />
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
               </DialogTrigger>
-              <DialogContent className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-                <PackDescription />
+              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                <DialogHeader className="pb-0">
+                  <div className="flex flex-col mb-0">
+                    <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
+                      Descriptif du ZIP
+                    </DialogTitle>
+                    
+                    <div className="relative mt-1 mb-1">
+                      <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
+                        ⦗FRONT-CLOUD⦘~ Football.zip
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-between items-center mb-6">
+                    <div className="mt-4">
+                      <GoogleDriveBadge />
+                    </div>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button 
+                          onClick={() => {
+                            const returnUrl = `${window.location.origin}/payment-success`;
+                            window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                          }}
+                          className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4"
+                        >
+                          <FileArchive className="h-3.5 w-3.5" />
+                          <span>Télécharger ce fichier (9€)</span>
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
+                        <p className="text-xs">Accès immédiat après paiement</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
+                  
+                  <DialogDescription className="text-left pt-0 mt-0">
+                    <PackDescription />
+                  </DialogDescription>
+                </DialogHeader>
               </DialogContent>
             </Dialog>
           </div>
@@ -165,19 +200,54 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             <Dialog>
               <DialogTrigger asChild>
                 <button 
-                  className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
-                  aria-label="Voir le descriptif du contenu"
+                  className="group flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
                 >
-                  <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-                  <span className="text-sm font-medium text-blue-700">Descriptif du ZIP</span>
-                  {/* Cercle d'animation au clic */}
-                  <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                    <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
-                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
+                  <FileArchive size={20} className="text-gray-800 transition-colors duration-300" />
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
               </DialogTrigger>
-              <DialogContent className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-                <PackDescription />
+              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                <DialogHeader className="pb-0">
+                  <div className="flex flex-col mb-0">
+                    <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
+                      Descriptif du ZIP
+                    </DialogTitle>
+                    
+                    <div className="relative mt-1 mb-1">
+                      <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
+                        ⦗FRONT-CLOUD⦘~ Football.zip
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-between items-center mb-6">
+                    <div className="mt-4">
+                      <GoogleDriveBadge />
+                    </div>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button 
+                          onClick={() => {
+                            const returnUrl = `${window.location.origin}/payment-success`;
+                            window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                          }}
+                          className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4"
+                        >
+                          <FileArchive className="h-3.5 w-3.5" />
+                          <span>Télécharger ce fichier (9€)</span>
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
+                        <p className="text-xs">Accès immédiat après paiement</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
+                  
+                  <DialogDescription className="text-left pt-0 mt-0">
+                    <PackDescription />
+                  </DialogDescription>
+                </DialogHeader>
               </DialogContent>
             </Dialog>
           </div>

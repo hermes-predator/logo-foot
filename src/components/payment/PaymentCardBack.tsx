@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
+import { ArrowLeft, Folder, LoaderCircle } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -89,8 +89,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
           </div>
 
           {/* Information sur la taille sous la vidéo */}
-          <div className="mt-4 flex items-center justify-center gap-2 bg-blue-50 py-2 px-4 rounded-full shadow-sm border border-blue-100">
-            <FileArchive className="h-4 w-4 text-blue-500" />
+          <div className="mt-4 py-2 px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
             <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
           </div>
         </div>
@@ -109,9 +108,8 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               <span className="font-semibold">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </p>
             
-            {/* Déplacé les informations sur la taille du fichier ici aussi */}
-            <div className="mt-6 flex items-center justify-center gap-2 bg-blue-100/50 py-2 px-5 rounded-full">
-              <FileArchive className="h-4 w-4 text-blue-500" />
+            {/* Informations sur la taille du fichier modifiées */}
+            <div className="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-blue-100/40 via-blue-100/60 to-blue-100/40">
               <span className="text-sm font-medium text-blue-600">63 Mo • 8 774 éléments</span>
             </div>
           </div>

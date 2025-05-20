@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Mail, User, Calendar, Ticket } from 'lucide-react';
+import { ShieldCheck, Mail, User, Clock, Ticket } from 'lucide-react';
 
 const ContactForm = () => {
   return (

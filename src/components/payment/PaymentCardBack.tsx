@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
@@ -6,17 +5,16 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import PackDescription from '../sections/PackDescription';
-
 interface PaymentCardBackProps {
   onFlipBack: () => void;
 }
-
-const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
+const PaymentCardBack = ({
+  onFlipBack
+}: PaymentCardBackProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoError, setVideoError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     // Make sure video plays when the component mounts
     if (videoRef.current) {
@@ -26,13 +24,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       });
     }
   }, []);
-
-  return (
-    <div 
-      className="absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)]"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+  return <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)]" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       {/* Effet de lueur subtil sur le bord supérieur */}
       <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
       
@@ -48,12 +40,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                   <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
                 </div>
               </TooltipTrigger>
-              <TooltipContent 
-                className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg"
-                side="bottom" 
-                align="center"
-                sideOffset={5}
-              >
+              <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="bottom" align="center" sideOffset={5}>
                 <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
@@ -66,11 +53,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       
       {/* Bouton de retour dans le coin supérieur droit */}
       <div className="absolute top-4 right-4 z-20">
-        <button 
-          onClick={onFlipBack}
-          className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group"
-          aria-label="Retour à la vue principale"
-        >
+        <button onClick={onFlipBack} className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group" aria-label="Retour à la vue principale">
           {/* Cercle d'animation au clic */}
           <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
             <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
@@ -79,12 +62,10 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
         </button>
       </div>
 
-      {!videoError ? (
-        <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
+      {!videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
           <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             {/* État de préchargement */}
-            {isLoading && (
-              <div className="absolute inset-0 bg-blue-50 flex flex-col items-center justify-center z-20">
+            {isLoading && <div className="absolute inset-0 bg-blue-50 flex flex-col items-center justify-center z-20">
                 <div className="flex flex-col items-center">
                   <LoaderCircle className="h-12 w-12 text-blue-500 animate-spin mb-4" />
                   <div className="space-y-2 w-3/4 max-w-[300px]">
@@ -94,22 +75,11 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                   </div>
                   <p className="text-sm text-blue-600 mt-3 font-medium">Chargement de la prévisualisation...</p>
                 </div>
-              </div>
-            )}
+              </div>}
             
-            <video 
-              ref={videoRef}
-              className="w-full h-full object-cover transition-transform duration-500"
-              src="/videos/frontcloud-preview.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              onError={() => setVideoError(true)}
-              onLoadedData={() => setIsLoading(false)}
-              onCanPlay={() => setIsLoading(false)}
-              style={{ opacity: isLoading ? 0 : 1 }}
-            />
+            <video ref={videoRef} className="w-full h-full object-cover transition-transform duration-500" src="/videos/frontcloud-preview.mp4" autoPlay loop muted playsInline onError={() => setVideoError(true)} onLoadedData={() => setIsLoading(false)} onCanPlay={() => setIsLoading(false)} style={{
+          opacity: isLoading ? 0 : 1
+        }} />
           </div>
 
           {/* Information sur la taille sous la vidéo */}
@@ -121,9 +91,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
           <div className="mt-8 flex items-center gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
-                <button 
-                  className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
-                >
+                <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
                   <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
@@ -148,13 +116,10 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                     </div>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button 
-                          onClick={() => {
-                            const returnUrl = `${window.location.origin}/payment-success`;
-                            window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-                          }}
-                          className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4"
-                        >
+                        <button onClick={() => {
+                      const returnUrl = `${window.location.origin}/payment-success`;
+                      window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                    }} className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4">
                           <FileArchive className="h-3.5 w-3.5" />
                           <span>Télécharger ce fichier (9€)</span>
                         </button>
@@ -172,20 +137,15 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               </DialogContent>
             </Dialog>
 
-            <button 
-              onClick={() => {
-                const returnUrl = `${window.location.origin}/payment-success`;
-                window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-              }}
-              className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
-            >
+            <button onClick={() => {
+          const returnUrl = `${window.location.origin}/payment-success`;
+          window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+        }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (9€)</span>
             </button>
           </div>
-        </div>
-      ) : (
-        <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
+        </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-28">
           <div className="aspect-square w-full max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
@@ -209,9 +169,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
           <div className="mt-8 flex items-center gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
-                <button 
-                  className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
-                >
+                <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
                   <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
                 </button>
@@ -236,13 +194,10 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
                     </div>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button 
-                          onClick={() => {
-                            const returnUrl = `${window.location.origin}/payment-success`;
-                            window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-                          }}
-                          className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4"
-                        >
+                        <button onClick={() => {
+                      const returnUrl = `${window.location.origin}/payment-success`;
+                      window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                    }} className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4">
                           <FileArchive className="h-3.5 w-3.5" />
                           <span>Télécharger ce fichier (9€)</span>
                         </button>
@@ -260,21 +215,15 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
               </DialogContent>
             </Dialog>
 
-            <button 
-              onClick={() => {
-                const returnUrl = `${window.location.origin}/payment-success`;
-                window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-              }}
-              className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
-            >
+            <button onClick={() => {
+          const returnUrl = `${window.location.origin}/payment-success`;
+          window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+        }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (9€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Achat rapide ~ 9€</span>
             </button>
           </div>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
 export default PaymentCardBack;

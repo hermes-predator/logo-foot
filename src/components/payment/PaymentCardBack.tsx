@@ -64,28 +64,8 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
         </div>
       </div>
       
-      {/* Boutons dans le coin supérieur droit */}
-      <div className="absolute top-4 right-4 z-20 flex items-center gap-2">
-        {/* Bouton descriptif du ZIP */}
-        <Dialog>
-          <DialogTrigger asChild>
-            <button 
-              className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group"
-              aria-label="Voir le descriptif du contenu"
-            >
-              <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-              {/* Cercle d'animation au clic */}
-              <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
-              </span>
-            </button>
-          </DialogTrigger>
-          <DialogContent className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-            <PackDescription />
-          </DialogContent>
-        </Dialog>
-
-        {/* Bouton de retour */}
+      {/* Bouton de retour dans le coin supérieur droit */}
+      <div className="absolute top-4 right-4 z-20">
         <button 
           onClick={onFlipBack}
           className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group"
@@ -132,6 +112,28 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             />
           </div>
 
+          {/* Bouton Descriptif du ZIP en dessous de la vidéo */}
+          <div className="mt-4 flex justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <button 
+                  className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
+                  aria-label="Voir le descriptif du contenu"
+                >
+                  <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="text-sm font-medium text-blue-700">Descriptif du ZIP</span>
+                  {/* Cercle d'animation au clic */}
+                  <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
+                    <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                  </span>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+                <PackDescription />
+              </DialogContent>
+            </Dialog>
+          </div>
+
           {/* Information sur la taille sous la vidéo */}
           <div className="mt-4 py-2 px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
             <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
@@ -156,6 +158,28 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             <div className="mt-6 py-2 px-6 rounded-full bg-gradient-to-r from-blue-100/40 via-blue-100/60 to-blue-100/40">
               <span className="text-sm font-medium text-blue-600">63 Mo • 8 774 éléments</span>
             </div>
+          </div>
+          
+          {/* Bouton Descriptif du ZIP en dessous de l'aperçu en cas d'erreur vidéo */}
+          <div className="mt-4 flex justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <button 
+                  className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
+                  aria-label="Voir le descriptif du contenu"
+                >
+                  <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="text-sm font-medium text-blue-700">Descriptif du ZIP</span>
+                  {/* Cercle d'animation au clic */}
+                  <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
+                    <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                  </span>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+                <PackDescription />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       )}

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Folder, LoaderCircle, FileArchive } from 'lucide-react';
 import GoogleDriveBadge from './GoogleDriveBadge';
@@ -69,14 +70,13 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
         <Dialog>
           <DialogTrigger asChild>
             <button 
-              className="p-2 rounded-full bg-purple-50 text-purple-600 hover:bg-purple-100 transition-all duration-300 shadow-sm hover:shadow-md group flex items-center gap-2 px-4"
+              className="p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-md group"
               aria-label="Voir le descriptif du contenu"
             >
-              <FileArchive className="w-4 h-4 text-purple-600" />
-              <span className="text-sm font-semibold whitespace-nowrap">Descriptif du ZIP</span>
+              <FileArchive className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
               {/* Cercle d'animation au clic */}
               <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                <span className="absolute inset-0 rounded-full bg-purple-200/0 group-active:bg-purple-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
               </span>
             </button>
           </DialogTrigger>

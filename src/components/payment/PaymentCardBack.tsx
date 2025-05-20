@@ -30,6 +30,11 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
       {/* Effet de lueur subtil sur le bord supérieur */}
       <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
       
+      {/* Titre du fichier en grand dans le coin supérieur gauche */}
+      <div className="absolute top-6 left-6 z-30">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-blue-900/90">⦗FRONT-CLOUD⦘~ Football.zip</h2>
+      </div>
+      
       {/* Bouton de retour dans le coin supérieur droit */}
       <button 
         onClick={onFlipBack}

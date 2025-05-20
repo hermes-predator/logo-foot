@@ -45,15 +45,18 @@ interface TrustCardProps {
 const TrustCard = ({ icon, title, description }: TrustCardProps) => {
   return (
     <div 
-      className="flex flex-col items-center p-4 bg-gradient-to-b from-white to-blue-50/80 border border-blue-100/40 rounded-lg relative overflow-hidden shadow-sm"
+      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg relative overflow-hidden"
       role="article"
       aria-label={`Information sur ${title}`}
     >
-      {/* Icon with enhanced cloud-like styling */}
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-white to-blue-50/20 rounded-full p-2 relative z-10 shadow-[0_2px_6px_rgba(0,0,100,0.08)] border border-blue-50/70" aria-hidden="true">
+      {/* Removed hover effects and transitions */}
+      
+      {/* Icône avec style appliqué par défaut sans effet de survol */}
+      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 rounded-full p-2 relative z-10 shadow-sm border border-gray-200/50" aria-hidden="true">
         {icon}
       </div>
       
+      {/* Texte sans transition au survol */}
       <h3 className="font-semibold mb-1.5 text-sm text-gray-900">{title}</h3>
       <p className="text-xs text-gray-600 text-center">{description}</p>
     </div>

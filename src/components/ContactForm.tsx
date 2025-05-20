@@ -121,6 +121,34 @@ const ContactForm = () => {
         </div>
       </div>
       
+      {/* Informations sur les commandes - Déplacé avant le formulaire */}
+      <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 rounded-lg border border-gray-200 shadow-sm">
+        <p className="text-gray-800 font-medium mb-3">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+        
+        <div className="space-y-2.5 ml-1">
+          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
+              <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            </div>
+            <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
+          </div>
+          
+          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
+              <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            </div>
+            <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
+          </div>
+          
+          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
+              <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            </div>
+            <span className="font-medium text-gray-700 text-sm">Votre preuve d'achat (reçu)</span>
+          </div>
+        </div>
+      </div>
+      
       {/* Formulaire de contact */}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,34 +226,6 @@ const ContactForm = () => {
           )}
         </Button>
       </form>
-      
-      {/* Informations sur les commandes */}
-      <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 rounded-lg border border-gray-200 shadow-sm">
-        <p className="text-gray-800 font-medium mb-3">Vous avez passé commande ? Veuillez inclure ces informations :</p>
-        
-        <div className="space-y-2.5 ml-1">
-          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
-              <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
-            </div>
-            <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
-          </div>
-          
-          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
-              <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
-            </div>
-            <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
-          </div>
-          
-          <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-            <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
-              <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
-            </div>
-            <span className="font-medium text-gray-700 text-sm">Votre preuve d'achat (reçu)</span>
-          </div>
-        </div>
-      </div>
       
       {/* Mention RGPD */}
       <div className="p-3.5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 rounded-md shadow-sm">

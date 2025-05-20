@@ -190,17 +190,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               <div className="pt-2 flex flex-col gap-1.5">
                 <div className="flex items-center gap-1.5">
                   <span className="text-gray-400 text-[10px] w-4 text-center">1</span>
-                  <span className="text-gray-500 text-[13px]">Paiement sécurisé via SumUp</span>
+                  <span className="text-gray-500 text-[14px]">Paiement sécurisé via SumUp</span>
                 </div>
                 <div className="flex items-start gap-1.5">
                   <span className="text-gray-400 text-[10px] w-4 text-center">2</span>
-                  <span className="text-gray-500 text-[13px] text-left">
+                  <span className="text-gray-500 text-[14px] text-left">
                     Accès en page d'après-paiement
                   </span>
                 </div>
                 <div className="mt-1 flex items-center gap-2">
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[11px] font-medium">⏱️ 2 minutes seulement</span>
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[11px] font-medium">✓  Fiable à 100%</span>
+                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[12px] font-medium">⏱️ 2 minutes seulement</span>
+                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[12px] font-medium">✓  Fiable à 100%</span>
                 </div>
               </div>
             </TooltipContent>

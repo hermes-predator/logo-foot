@@ -124,12 +124,12 @@ const BlogHeader = () => {
                         <div className="flex flex-col">
                           <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
                             <Info className="h-4 w-4 text-gray-600" />
-                            <p className="font-semibold text-[13px]">Informations sur le fichier</p>
+                            <p className="font-semibold text-[14px]">Informations sur le fichier</p>
                           </div>
                           <div className="p-3">
-                            <p className="text-[13px] mb-2"><span className="font-medium">Nom:</span> Football.zip</p>
-                            <p className="text-[13px] mb-2"><span className="font-medium">Taille:</span> 250 Mo</p>
-                            <p className="text-[13px] mb-2"><span className="font-medium">Contenu:</span> 8600+ logos au format PNG</p>
+                            <p className="text-[14px] mb-2"><span className="font-medium">Nom:</span> Football.zip</p>
+                            <p className="text-[14px] mb-2"><span className="font-medium">Taille:</span> 250 Mo</p>
+                            <p className="text-[14px] mb-2"><span className="font-medium">Contenu:</span> 8600+ logos au format PNG</p>
                           </div>
                         </div>
                       </TooltipContent>

@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="space-y-6">
       {/* En-tête avec email de contact et informations sur les commandes combinés */}
-      <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-lg p-4 transition-all duration-300 hover:shadow-md border border-gray-200">
+      <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-lg p-4 border border-gray-200">
         <h3 className="font-medium text-lg text-gray-900 mb-2 flex items-center gap-2">
           <div className="bg-blue-100 rounded-md p-3 shadow-sm">
             <Mail className="w-6 h-6 text-blue-600" />
@@ -27,21 +27,21 @@ const ContactForm = () => {
           <p className="text-gray-800 font-medium mb-3">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2.5 ml-1">
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
               <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
               <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>

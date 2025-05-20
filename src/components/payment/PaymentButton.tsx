@@ -50,7 +50,7 @@ const PaymentButton = () => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-2xl" id="payment-button-description">
-                  {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
+                  {isProcessing ? "Redirection..." : "Achat rapide ~ 9€"}
                 </span>
               </div>
               <ArrowRight 

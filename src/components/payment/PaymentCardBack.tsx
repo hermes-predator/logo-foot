@@ -84,7 +84,7 @@ const PaymentCardBack = ({ onFlipBack }: PaymentCardBackProps) => {
             </p>
             
             <div className="mt-4 text-sm text-blue-600/80">
-              Format carré • 63 Mo • 8 774 éléments
+              63 Mo • 8 774 éléments
             </div>
           </div>
         </div>

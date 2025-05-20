@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Info } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Info, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -92,8 +92,26 @@ const BlogHeader = () => {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <Button asChild className="bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-800 border-0 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_6px_20px_-10px_rgba(0,0,0,0.3),0_8px_12px_-5px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1),inset_0_0_0_1px_rgba(255,255,255,0.5)] hover:shadow-[0_10px_25px_-12px_rgba(255,183,77,0.35),0_8px_15px_-4px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,1),inset_0_0_0_1px_rgba(255,255,255,0.8)] transition-all duration-300 group">
+                        <Button asChild className="bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-gray-100 whitespace-nowrap text-gray-800 border-0 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_12px_24px_-8px_rgba(255,196,87,0.2),0_6px_12px_-6px_rgba(0,0,0,0.1),0_-8px_16px_-2px_rgba(255,248,240,0.8),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_18px_28px_-14px_rgba(255,196,87,0.4),0_10px_20px_-8px_rgba(255,183,77,0.25),0_-12px_16px_-4px_rgba(255,248,240,0.9),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-300 group before:content-[''] before:absolute before:bottom-0 before:left-[15%] before:w-[70%] before:h-10 before:bg-amber-100/20 before:blur-lg before:-mb-4 before:z-[-1] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-amber-100/80 after:to-transparent after:blur-sm">
                           <a href="/" className="flex items-center gap-3 relative">
+                            <div className="absolute left-0 top-0 w-full h-full">
+                              <Leaf 
+                                className="absolute text-amber-500/20 -left-1 -top-3" 
+                                style={{
+                                  width: "12px",
+                                  height: "12px",
+                                  transform: "rotate(30deg)"
+                                }}
+                              />
+                              <Leaf 
+                                className="absolute text-amber-500/20 -right-1 -top-2" 
+                                style={{
+                                  width: "10px",
+                                  height: "10px",
+                                  transform: "rotate(-15deg)"
+                                }}
+                              />
+                            </div>
                             <Folder 
                               className="text-amber-600 transition-none" 
                               style={{

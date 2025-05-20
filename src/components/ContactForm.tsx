@@ -27,21 +27,21 @@ const ContactForm = () => {
           <p className="text-gray-800 font-medium mb-3">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2.5 ml-1">
-            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
               <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
               <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md bg-white/80 transition-colors group">
+            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-gray-200 p-2 rounded-md group-hover:bg-blue-100 transition-colors">
                 <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>

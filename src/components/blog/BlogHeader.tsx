@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -68,7 +69,7 @@ const BlogHeader = () => {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
                 <div>
                   <h3 className="font-bold text-black text-lg">
-                    <div className="flex items-start gap-4">
+                    <div className="flex items-start gap-4 pl-3">
                       <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-4 transition-none relative overflow-hidden">
                         <AlertTriangle 
                           className="h-7 w-7 text-amber-600 flex-shrink-0 transition-none animate-icon-floating" 
@@ -77,7 +78,7 @@ const BlogHeader = () => {
                           }}
                         />
                       </div>
-                      <div className="flex flex-col">
+                      <div className="flex flex-col pl-1">
                         <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
                         <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
                           Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
@@ -87,7 +88,7 @@ const BlogHeader = () => {
                     </div>
                   </h3>
                 </div>
-                <div className="relative pr-2">
+                <div className="relative pr-2 pl-3">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>

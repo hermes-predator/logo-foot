@@ -14,11 +14,13 @@ const GoogleDriveBadge = ({
   alwaysEnlarged = false,
   cursorHelp = false // Par défaut, pas de cursor-help
 }: GoogleDriveBadgeProps) => {
+  const hoverStyles = "shadow-[0_4px_10px_rgba(0,0,100,0.08)] bg-gray-50 border-gray-300/80";
+  
   return (
     <Badge 
       className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 
         shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)] 
-        transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 ${cursorHelp ? 'cursor-help' : ''} ${className}`}
+        transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 ${alwaysEnlarged ? hoverStyles : ''} ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >

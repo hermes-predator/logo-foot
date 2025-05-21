@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, FileArchive, Download } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -138,7 +138,6 @@ const BlogHeader = () => {
                       >
                         <div className="flex flex-col">
                           <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                            <FileArchive className="h-4 w-4 text-amber-600" />
                             <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
                           <div className="p-3">

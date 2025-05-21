@@ -141,7 +141,7 @@ const BlogHeader = () => {
                             <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
                           <div className="p-3">
-                            <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football</p>
+                            <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
                             <div className="flex items-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
@@ -211,4 +211,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

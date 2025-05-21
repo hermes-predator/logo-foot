@@ -143,7 +143,6 @@ const BlogHeader = () => {
                           <div className="p-3">
                             <div className="flex items-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
-                              <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200 px-2 py-1 text-xs font-medium">250 Mo</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-2">

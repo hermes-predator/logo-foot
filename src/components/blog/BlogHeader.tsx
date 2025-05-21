@@ -141,7 +141,7 @@ const BlogHeader = () => {
                             <p className="font-semibold text-[14px]">Informations sur le fichier</p>
                           </div>
                           <div className="p-3">
-                            <p className="text-[14px] mb-2"><span className="font-medium">Nom:</span> Football.zip</p>
+                            <p className="text-[14px] mb-2"><span className="font-medium">Nom:</span> FRONT-CLOUD ~ Football.zip</p>
                             <p className="text-[14px] mb-2"><span className="font-medium">Taille:</span> 250 Mo</p>
                             <p className="text-[14px] mb-2"><span className="font-medium">Contenu:</span> 8600+ logos au format PNG</p>
                           </div>

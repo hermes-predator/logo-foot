@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -44,8 +45,8 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          {/* Container for the yellow block with mt-6 to move it up */}
-          <div className="mt-6 relative">
+          {/* Container for the yellow block with mt-8 to move it down (changed from mt-6) */}
+          <div className="mt-8 relative">
             {/* Yellow alert block with the Google Drive Badge inside at the top center */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative">
               {/* Google Drive Badge centered at the top inside the yellow container */}

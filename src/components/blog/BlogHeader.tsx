@@ -70,9 +70,9 @@ const BlogHeader = () => {
             
             {/* Yellow alert block */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-              {/* Alert Triangle in the upper left corner */}
+              {/* Alert Triangle in the upper left corner - Removed shadow-md class */}
               <div className="absolute top-0 left-0" style={{ zIndex: 20 }}>
-                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none shadow-md">
+                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
                   <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                   transform: 'scale(1.1)'
                 }} />
@@ -184,4 +184,3 @@ const BlogHeader = () => {
     </div>;
 };
 export default BlogHeader;
-

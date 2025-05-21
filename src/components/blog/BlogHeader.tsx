@@ -81,7 +81,7 @@ const BlogHeader = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
                 <div>
-                  <h3 className="font-bold text-black text-lg pl-3">
+                  <h3 className="font-bold text-black text-lg pl-6"> {/* Added pl-6 for left padding */}
                     <div className="flex flex-col">
                       <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
                       <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">

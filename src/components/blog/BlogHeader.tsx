@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -140,9 +139,7 @@ const BlogHeader = () => {
                             <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
                           <div className="p-3">
-                            <p className="text-[14px] mb-2"><span className="font-medium">Nom:</span> FRONT-CLOUD ~ Football.zip</p>
-                            <p className="text-[14px] mb-2"><span className="font-medium">Taille:</span> 250 Mo</p>
-                            <p className="text-[14px] mb-2"><span className="font-medium">Contenu:</span> 8600+ logos au format PNG</p>
+                            <p className="text-[14px] mb-2"><span className="font-medium">Contenu:</span> Format : PNG</p>
                             <p className="text-[14px] mb-2"><span className="font-medium">Sous-jaccent:</span> 66 collections</p>
                             <p className="text-[14px]"><span className="font-medium">Quantité:</span> 8 774 logos</p>
                           </div>

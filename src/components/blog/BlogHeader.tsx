@@ -145,8 +145,14 @@ const BlogHeader = () => {
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                               <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200 px-2 py-1 text-xs font-medium">250 Mo</Badge>
                             </div>
-                            <p className="text-[14px] mb-2 flex items-center"><span className="font-medium">Sous-jaccent:</span> <span className="ml-1 text-gray-700">66 collections</span></p>
-                            <p className="text-[14px] flex items-center"><span className="font-medium">Quantité:</span> <span className="ml-1 text-gray-700">8 774 logos</span></p>
+                            <p className="text-[14px] mb-2 flex items-center">
+                              <span className="font-medium">Sous-jaccent:</span> 
+                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium ml-1">66 collections</Badge>
+                            </p>
+                            <p className="text-[14px] flex items-center">
+                              <span className="font-medium">Quantité:</span> 
+                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium ml-1">8 774 logos</Badge>
+                            </p>
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
                               <div className="flex items-center text-xs text-green-700 gap-1.5">
                                 <Download className="h-3.5 w-3.5" />

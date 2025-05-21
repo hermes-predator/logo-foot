@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,6 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
-
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -16,7 +14,6 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-  
   return <div className="max-w-[64rem] mb-6 pl-4">
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
@@ -50,7 +47,9 @@ const BlogHeader = () => {
           {/* Container for the yellow block */}
           <div className="mt-8 relative">
             {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{ zIndex: 30 }}>
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
+            zIndex: 30
+          }}>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -71,7 +70,9 @@ const BlogHeader = () => {
             {/* Yellow alert block */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
               {/* Alert Triangle in the upper left corner - Removed shadow-md class */}
-              <div className="absolute top-0 left-0" style={{ zIndex: 20 }}>
+              <div className="absolute top-0 left-0" style={{
+              zIndex: 20
+            }}>
                 <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
                   <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                   transform: 'scale(1.1)'
@@ -83,9 +84,9 @@ const BlogHeader = () => {
                 <div>
                   <h3 className="font-bold text-black text-lg pl-12"> {/* Increased padding from pl-6 to pl-12 */}
                     <div className="flex flex-col">
-                      <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
+                      <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
                       <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
-                        Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
+                        Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
                         <br />Obtenez toutes les ressources dans un fichier ZIP complet.
                       </span>
                     </div>

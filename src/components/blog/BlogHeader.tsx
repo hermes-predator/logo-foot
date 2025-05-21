@@ -49,34 +49,34 @@ const BlogHeader = () => {
 
           {/* Container for the yellow block */}
           <div className="mt-8 relative">
-            {/* Yellow alert block with the Google Drive Badge inside at the top center */}
+            {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{ zIndex: 30 }}>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div>
+                      <GoogleDriveBadge cursorHelp={true} />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
+                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
+            
+            {/* Yellow alert block */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-              {/* Alert Triangle in the upper left corner - modified to fit perfectly in the corner */}
-              <div className="absolute top-0 left-0">
+              {/* Alert Triangle in the upper left corner */}
+              <div className="absolute top-0 left-0" style={{ zIndex: 20 }}>
                 <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none shadow-md">
                   <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                   transform: 'scale(1.1)'
                 }} />
                 </div>
-              </div>
-              
-              {/* Google Drive Badge centered at the top inside the yellow container */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3 z-20">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div>
-                        <GoogleDriveBadge cursorHelp={true} />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
-                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                      </p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
               </div>
               
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">

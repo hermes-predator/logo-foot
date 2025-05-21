@@ -8,6 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
+
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -93,7 +94,7 @@ const BlogHeader = () => {
                     </div>
                   </h3>
                 </div>
-                <div className="relative pr-0 pl-2">
+                <div className="relative pr-4 pl-2">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>

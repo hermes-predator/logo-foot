@@ -155,7 +155,7 @@ const BlogHeader = () => {
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
                               <div className="flex items-center text-xs text-green-700 gap-1.5">
                                 <Download className="h-3.5 w-3.5" />
-                                <span>Téléchargement direct</span>
+                                <span>Téléchargement instantané</span>
                               </div>
                             </div>
                           </div>

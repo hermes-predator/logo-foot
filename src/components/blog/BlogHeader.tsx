@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -82,7 +83,7 @@ const BlogHeader = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
                 <div>
-                  <h3 className="font-bold text-black text-lg pl-12"> {/* Increased padding from pl-6 to pl-12 */}
+                  <h3 className="font-bold text-black text-lg pl-12">
                     <div className="flex flex-col">
                       <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
                       <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
@@ -92,7 +93,7 @@ const BlogHeader = () => {
                     </div>
                   </h3>
                 </div>
-                <div className="relative pr-2 pl-3">
+                <div className="relative pr-0 pl-2">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>

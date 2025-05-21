@@ -1,11 +1,13 @@
+
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Leaf, FileArchive, Download } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, FileArchive, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import { Badge } from '@/components/ui/badge';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -106,57 +108,58 @@ const BlogHeader = () => {
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
-                        <a href="/" className="flex items-center gap-3 relative">
-                          <Folder 
-                            className="text-amber-600" 
-                            style={{
-                              width: "22px",
-                              height: "22px"
-                            }}
-                          />
-                          <span className="font-medium text-base">Voir le fichier</span>
-                          <ArrowRight 
-                            className="text-amber-600 group-hover:translate-x-1 transition-transform" 
-                            style={{
-                              width: "22px",
-                              height: "22px"
-                            }}
-                          />
-                          <div className="absolute inset-0 w-full h-full overflow-hidden">
-                            <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                          <a href="/" className="flex items-center gap-3 relative">
+                            <Folder 
+                              className="text-amber-600" 
+                              style={{
+                                width: "22px",
+                                height: "22px"
+                              }}
+                            />
+                            <span className="font-medium text-base">Voir le fichier</span>
+                            <ArrowRight 
+                              className="text-amber-600 group-hover:translate-x-1 transition-transform" 
+                              style={{
+                                width: "22px",
+                                height: "22px"
+                              }}
+                            />
+                            <div className="absolute inset-0 w-full h-full overflow-hidden">
+                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                            </div>
+                          </a>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent 
+                        side="top" 
+                        align="center"
+                        sideOffset={4}
+                        className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]"
+                      >
+                        <div className="flex flex-col">
+                          <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
+                            <FileArchive className="h-4 w-4 text-amber-600" />
+                            <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
-                        </a>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent 
-                      side="top" 
-                      align="center"
-                      sideOffset={4}
-                      className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]"
-                    >
-                      <div className="flex flex-col">
-                        <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                          <FileArchive className="h-4 w-4 text-amber-600" />
-                          <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
-                        </div>
-                        <div className="p-3">
-                          <div className="flex items-center gap-2 mb-2">
-                            <span className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded font-medium">Format : PNG</span>
-                            <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-medium">250 Mo</span>
-                          </div>
-                          <p className="text-[14px] mb-2 flex items-center"><span className="font-medium">Sous-jaccent:</span> <span className="ml-1 text-gray-700">66 collections</span></p>
-                          <p className="text-[14px] flex items-center"><span className="font-medium">Quantité:</span> <span className="ml-1 text-gray-700">8 774 logos</span></p>
-                          <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
-                            <div className="flex items-center text-xs text-green-700 gap-1.5">
-                              <Download className="h-3.5 w-3.5" />
-                              <span>Téléchargement direct</span>
+                          <div className="p-3">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
+                              <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200 px-2 py-1 text-xs font-medium">250 Mo</Badge>
+                            </div>
+                            <p className="text-[14px] mb-2 flex items-center"><span className="font-medium">Sous-jaccent:</span> <span className="ml-1 text-gray-700">66 collections</span></p>
+                            <p className="text-[14px] flex items-center"><span className="font-medium">Quantité:</span> <span className="ml-1 text-gray-700">8 774 logos</span></p>
+                            <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
+                              <div className="flex items-center text-xs text-green-700 gap-1.5">
+                                <Download className="h-3.5 w-3.5" />
+                                <span>Téléchargement direct</span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </div>
               </div>
             </div>
           </div>

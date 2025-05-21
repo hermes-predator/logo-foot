@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,6 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
-
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -16,9 +14,7 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-  
-  return (
-    <div className="max-w-[64rem] mb-6 pl-4">
+  return <div className="max-w-[64rem] mb-6 pl-4">
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
       </h1>
@@ -30,7 +26,7 @@ const BlogHeader = () => {
             <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
               <BookOpen className="w-5 h-5 text-black" />
             </div>
-            <h2 className="font-semibold text-gray-900">Blog Logo-Foot</h2>
+            <h2 className="font-semibold text-gray-900">Le Blog des logos de football</h2>
           </div>
 
           <div className="mb-5">
@@ -42,15 +38,9 @@ const BlogHeader = () => {
               <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
                 Tout
               </a>
-              {categoriesToDisplay.map(([key, category]) => (
-                <a 
-                  key={key} 
-                  href={`/blog?category=${key}`} 
-                  className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
-                >
+              {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
                   {category.name}
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -82,12 +72,9 @@ const BlogHeader = () => {
                   <h3 className="font-bold text-black text-lg">
                     <div className="flex items-start gap-4 pl-3">
                       <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center mt-4 transition-none relative overflow-hidden">
-                        <AlertTriangle 
-                          className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" 
-                          style={{
-                            transform: 'scale(1.1)'
-                          }}
-                        />
+                        <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
+                        transform: 'scale(1.1)'
+                      }} />
                       </div>
                       <div className="flex flex-col pl-1">
                         <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
@@ -105,33 +92,22 @@ const BlogHeader = () => {
                       <TooltipTrigger asChild>
                         <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
                           <a href="/" className="flex items-center gap-3 relative">
-                            <Folder 
-                              className="text-amber-600" 
-                              style={{
-                                width: "22px",
-                                height: "22px"
-                              }}
-                            />
+                            <Folder className="text-amber-600" style={{
+                            width: "22px",
+                            height: "22px"
+                          }} />
                             <span className="font-medium text-base">Voir le fichier</span>
-                            <ArrowRight 
-                              className="text-amber-600 group-hover:translate-x-1 transition-transform" 
-                              style={{
-                                width: "22px",
-                                height: "22px"
-                              }}
-                            />
+                            <ArrowRight className="text-amber-600 group-hover:translate-x-1 transition-transform" style={{
+                            width: "22px",
+                            height: "22px"
+                          }} />
                             <div className="absolute inset-0 w-full h-full overflow-hidden">
                               <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                             </div>
                           </a>
                         </Button>
                       </TooltipTrigger>
-                      <TooltipContent 
-                        side="top" 
-                        align="center"
-                        sideOffset={4}
-                        className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]"
-                      >
+                      <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
                         <div className="flex flex-col">
                           <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
                             <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
@@ -200,8 +176,6 @@ const BlogHeader = () => {
         }
         `}
       </style>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogHeader;

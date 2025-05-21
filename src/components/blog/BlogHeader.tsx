@@ -63,7 +63,21 @@ const BlogHeader = () => {
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative">
               {/* Google Drive Badge centered at the top inside the yellow container */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -top-3">
-                <GoogleDriveBadge cursorHelp={true} />
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div>
+                        <GoogleDriveBadge cursorHelp={true} />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
+                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">

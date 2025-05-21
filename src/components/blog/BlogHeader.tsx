@@ -142,14 +142,14 @@ const BlogHeader = () => {
                           </div>
                           <div className="p-3">
                             <div className="flex items-center gap-2 mb-2">
-                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
-                            </div>
-                            <div className="flex flex-wrap gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
                             </div>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                             </div>
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
                               <div className="flex items-center text-xs text-green-700 gap-1.5">

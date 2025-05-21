@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -18,10 +19,6 @@ const BlogHeader = () => {
   
   return (
     <div className="max-w-[64rem] mb-6 pl-4">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/80 text-gray-800 font-medium mb-3 shadow-sm">
-        <span>Le Blog des Logos de Football</span>
-      </div>
-
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
       </h1>
@@ -57,8 +54,8 @@ const BlogHeader = () => {
             </div>
           </div>
 
-          {/* Container for the yellow block with mt-12 to lower it */}
-          <div className="mt-12 relative">
+          {/* Container for the yellow block with mt-6 to move it up */}
+          <div className="mt-6 relative">
             {/* Yellow alert block with the Google Drive Badge inside at the top center */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative">
               {/* Google Drive Badge centered at the top inside the yellow container */}

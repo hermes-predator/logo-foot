@@ -61,7 +61,7 @@ const BlogHeader = () => {
               </div>
               
               {/* Google Drive Badge centered at the top inside the yellow container */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3">
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3 z-10">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>

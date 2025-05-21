@@ -49,11 +49,11 @@ const BlogHeader = () => {
 
           {/* Container for the yellow block */}
           <div className="mt-8 relative">
-            {/* Yellow alert block with the Google Drive Badge inside at the top center and the AlertTriangle in the upper left */}
-            <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative">
-              {/* Alert Triangle in the upper left corner */}
-              <div className="absolute -top-4 -left-4">
-                <div className="bg-amber-200/80 p-3.5 rounded-md flex items-center justify-center transition-none relative overflow-hidden shadow-md">
+            {/* Yellow alert block with the Google Drive Badge inside at the top center */}
+            <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
+              {/* Alert Triangle in the upper left corner - modified to fit perfectly in the corner */}
+              <div className="absolute top-0 left-0">
+                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none shadow-md">
                   <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                   transform: 'scale(1.1)'
                 }} />

@@ -118,20 +118,20 @@ const BlogHeader = () => {
                       <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
                         <div className="flex flex-col">
                           <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                            <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                            <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
-                          <div className="p-3">
+                          <div className="p-3 text-center">
                             <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
-                            <div className="flex items-center gap-2 mb-2">
+                            <div className="flex items-center justify-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
                             </div>
-                            <div className="flex flex-wrap gap-2 mb-2">
+                            <div className="flex flex-wrap justify-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                             </div>
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
-                              <div className="flex items-center text-xs text-green-700 gap-1.5">
+                              <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
                                 <Download className="h-3.5 w-3.5" />
                                 <span>Télécharger maintenant</span>
                               </div>

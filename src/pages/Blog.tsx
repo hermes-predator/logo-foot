@@ -55,6 +55,19 @@ const Blog = () => {
     totalPages, 
     paginatedItems 
   } = usePagination(sortedPosts, POSTS_PER_PAGE);
+  
+  // Ajout du log pour montrer les slugs générés
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      // Uniquement en mode dev
+      console.debug('Format des URLs des articles:');
+      sortedPosts.slice(0, 3).forEach(post => {
+        import('../utils/slugUtils').then(({ generatePostUrl }) => {
+          console.debug(`${post.id} - ${post.title} => /blog/${post.id}-${generatePostUrl(post.id, post.title).split('/').pop()}`);
+        });
+      });
+    }
+  }, [sortedPosts]);
 
   return (
     <PageTransition>

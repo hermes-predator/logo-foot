@@ -9,7 +9,7 @@ export function generateSlug(title: string): string {
   ];
 
   // Normalisation et préparation du slug
-  const slug = title
+  const words = title
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '') // Enlève les accents
@@ -20,9 +20,13 @@ export function generateSlug(title: string): string {
     .filter(word => {
       // Filtrer les mots courts, vides et les stop words
       return word.length > 2 && !stopWords.includes(word);
-    })
-    .slice(0, 3) // Limité à 3 mots
-    .join('-');
+    });
+  
+  // Prendre exactement les 3 premiers mots significatifs
+  const selectedWords = words.slice(0, 3);
+  
+  // Former le slug final avec exactement 3 mots (ou moins si pas assez de mots significatifs)
+  const slug = selectedWords.join('-');
 
   // Garantir une longueur minimale et maximale
   return slug.length < 3 ? 'article' : 

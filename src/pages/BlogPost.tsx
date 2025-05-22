@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
 import { useReadingTime } from '../hooks/useReadingTime';
-import { extractPostIdFromUrl } from '../utils/slugUtils';
+import { extractPostIdFromUrl, generatePostUrl } from '../utils/slugUtils';
 import ReactMarkdown from 'react-markdown';
 import Footer from '../components/Footer';
 import { BookOpen, Calendar, Tag, Image } from 'lucide-react';
@@ -16,6 +16,7 @@ import BlogCTA from '../components/blog/BlogCTA';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import { ImageObjectSchema } from '../components/schema/ImageObjectSchema';
+import CanonicalTag from '../components/SEO/CanonicalTag';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -40,6 +41,24 @@ const BlogPost = () => {
   
   // Pour le temps de lecture
   const readingTime = post ? useReadingTime(post.content) : 0;
+  
+  // Vérifier si l'URL est canonique, sinon rediriger
+  useEffect(() => {
+    if (isClient && slug && post) {
+      const canonicalUrl = generatePostUrl(post.id, post.title);
+      const currentPath = `/blog/${slug}`;
+      
+      // Log pour débogage
+      console.debug('URL actuelle:', currentPath);
+      console.debug('URL canonique:', canonicalUrl);
+      
+      // Rediriger vers l'URL canonique si différente
+      if (canonicalUrl !== currentPath) {
+        console.debug('Redirection vers URL canonique');
+        navigate(canonicalUrl, { replace: true });
+      }
+    }
+  }, [post, navigate, isClient, slug]);
   
   // Rediriger vers 404 si l'article n'existe pas
   useEffect(() => {
@@ -78,6 +97,9 @@ const BlogPost = () => {
   const featuredImageUrl = post.galleryImageId 
     ? `/images/gallery/${post.galleryImageId}.webp` 
     : mainImage || "/og-image.png";
+    
+  // Définir l'URL canonique pour l'article
+  const canonicalUrl = post.id ? `https://logo-foot.com${generatePostUrl(post.id, post.title)}` : undefined;
 
   return (
     <PageTransition>
@@ -101,6 +123,9 @@ const BlogPost = () => {
           <meta name="image" content={featuredImageUrl} />
           <meta itemProp="image" content={featuredImageUrl} />
         </Helmet>
+        
+        {/* Tag canonique explicite */}
+        <CanonicalTag url={canonicalUrl} isDefault={true} />
         
         {/* Schema.org pour les images */}
         {mainImage && (

@@ -105,7 +105,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                       </div>
                       <div className="flex items-start gap-1.5">
                         <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Classés par 66 pays</span>
+                        
                       </div>
                       <div className="flex items-start gap-1.5">
                         <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />

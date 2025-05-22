@@ -10,6 +10,7 @@ import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
 import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import BackToButton from '../components/blog/BackToButton';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -53,19 +54,17 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
-      {/* Navigation améliorée avec bordure et fond pour meilleure visibilité */}
-      <div className="bg-white shadow-sm border-b border-gray-200 mb-6">
-        <div className="container mx-auto px-4 py-3 flex items-center gap-3">
-          <Link to="/blog">
-            <Button size="sm" variant="outline" className="flex items-center gap-1 bg-blue-500 text-white hover:bg-blue-600 border-none">
-              Blog
-            </Button>
-          </Link>
+      {/* Navigation améliorée avec un design plus visible */}
+      <div className="bg-white shadow-md border-b border-gray-200 mb-6">
+        <div className="container mx-auto px-4 py-4 flex items-center gap-4">
+          <BackToButton to="/blog" label="Blog" className="mb-0" />
           
-          <Link to="/blog" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+          <div className="flex items-center text-gray-600">
             <ArrowLeft className="h-4 w-4 mr-1" />
-            Retour au Blog
-          </Link>
+            <Link to="/blog" className="text-blue-600 hover:text-blue-800 font-medium">
+              Retour au Blog
+            </Link>
+          </div>
         </div>
       </div>
       

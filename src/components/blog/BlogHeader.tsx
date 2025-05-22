@@ -8,7 +8,6 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
-import BlogCountryGallery from './BlogCountryGallery';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -171,10 +170,6 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                 </div>
               </div>
             </div>
-            
-            {/* NOUVELLE SECTION GALERIE - Juste en-dessous du bloc jaune */}
-            <BlogCountryGallery className="mt-8" />
-            
           </div>
         </div>
       </div>

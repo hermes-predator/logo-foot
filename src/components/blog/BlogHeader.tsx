@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -17,11 +16,6 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-  
-  // Get the description for the current category
-  const currentCategoryDescription = currentCategory 
-    ? BLOG_CATEGORIES[currentCategory]?.description 
-    : "Découvrez notre collection d'articles sur les logos du football mondial, des analyses et des conseils techniques.";
   
   return <div className="container mx-auto px-4 mb-6">
       <div className="text-center">
@@ -53,13 +47,6 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </a>)}
               </div>
             </div>
-            
-            {/* Affichage de la description de la catégorie actuelle */}
-            {currentCategoryDescription && (
-              <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8">
-                <p className="text-sm text-blue-800">{currentCategoryDescription}</p>
-              </div>
-            )}
 
             {/* Container for the yellow block with improved attention-grabbing design */}
             <div className="mt-8 relative">

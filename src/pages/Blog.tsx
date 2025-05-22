@@ -14,6 +14,7 @@ import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import BlogPerformanceMonitor from '../components/blog/BlogPerformanceMonitor';
+import { BLOG_CATEGORIES } from '../types/blog';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -22,6 +23,11 @@ const Blog = () => {
 
   // Debug mode pour vérifier le chargement des articles
   useDebugBlog();
+  
+  // Get the description for the current category
+  const currentCategoryDescription = categoryParam 
+    ? BLOG_CATEGORIES[categoryParam]?.description 
+    : "Découvrez notre collection d'articles sur les logos du football mondial, des analyses et des conseils techniques.";
   
   useEffect(() => {
     const handleResize = () => {
@@ -91,8 +97,15 @@ const Blog = () => {
 
         {/* Header avec présentation du blog */}
         <BlogHeader />
-
+        
         <div className="container mx-auto px-4 pt-4 pb-12">
+          {/* Description de la catégorie actuelle */}
+          {currentCategoryDescription && (
+            <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-5xl mx-auto">
+              <p className="text-sm text-blue-800">{currentCategoryDescription}</p>
+            </div>
+          )}
+
           {/* Liste d'articles paginée */}
           <BlogArticleList articles={paginatedItems} />
 

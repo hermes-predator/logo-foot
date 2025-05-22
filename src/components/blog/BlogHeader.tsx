@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -31,7 +32,7 @@ const BlogHeader = () => {
 
             <div className="mb-5 text-center">
               <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football.<br /> 
-Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football<br /> ou apprenez à créer votre propre logo.</p>
+Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou créez votre propre logo.</p>
             </div>
 
             {/* Category selection section with added horizontal spacing for wider layout */}

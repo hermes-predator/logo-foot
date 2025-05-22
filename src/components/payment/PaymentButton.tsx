@@ -27,7 +27,7 @@ const PaymentButton = () => {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mt-6">
       <Tooltip>
         <TooltipTrigger asChild>
           <Button 

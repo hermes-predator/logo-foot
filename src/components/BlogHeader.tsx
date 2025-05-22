@@ -10,6 +10,7 @@ import {
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { carouselImages } from "@/data/carousel/carouselImages";
 import { toast } from "@/components/ui/use-toast";
+import { CheckCircle2 } from "lucide-react";
 
 export const BlogHeader = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -48,7 +49,9 @@ export const BlogHeader = () => {
       toast({
         title: "Carrousel prêt",
         description: `Les ${imagesLoaded} images sont chargées avec succès`,
-        variant: "success",
+        // Remplacé "success" par "default" avec un icône personnalisé pour indiquer le succès
+        variant: "default",
+        icon: <CheckCircle2 className="h-5 w-5 text-green-500" />,
       });
     }
   }, [imagesLoaded, carouselImages.length, isMounted]);
@@ -100,7 +103,10 @@ export const BlogHeader = () => {
           align: "start",
           startIndex: activeIndex
         }}
-        onSelect={(index) => setActiveIndex(index)}
+        // Correction ici: utiliser une fonction qui reçoit l'index et le définit
+        onSelect={(selectedIndex) => {
+          setActiveIndex(selectedIndex);
+        }}
       >
         <CarouselContent>
           {carouselImages.map((src, index) => (

@@ -148,12 +148,12 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Modify carousel to show two images by default */}
+                {/* Modified carousel to show two images by default with loop disabled */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  {/* Modified carousel implementation to show two images by default */}
-                  <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+                  {/* Modified carousel implementation to show two images by default with loop disabled */}
+                  <Carousel className="w-full" opts={{ align: "start", loop: false }}>
                     <CarouselContent className="-ml-2 md:-ml-4">
                       {/* First image */}
                       <CarouselItem className="pl-2 md:pl-4 basis-1/2">
@@ -249,4 +249,3 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
     </div>;
 };
 export default BlogHeader;
-

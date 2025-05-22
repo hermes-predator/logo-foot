@@ -6,6 +6,7 @@ import { Clock, Image } from 'lucide-react';
 import { BlogPost } from '../../types/blog';
 import { useReadingTime } from '../../hooks/useReadingTime';
 import { OptimizedImage } from '../ui/optimized-image';
+import { generatePostUrl } from '../../utils/slugUtils';
 
 interface BlogArticleCardProps {
   post: BlogPost;
@@ -13,10 +14,11 @@ interface BlogArticleCardProps {
 
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
+  const postUrl = generatePostUrl(post.id, post.title);
   
   return (
     <Link 
-      to={`/blog/${post.id}`}
+      to={postUrl}
       className="block h-full"
       aria-label={`Lire l'article : ${post.title}`}
     >

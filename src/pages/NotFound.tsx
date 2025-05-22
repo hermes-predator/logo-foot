@@ -1,16 +1,17 @@
 
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import PageTransition from "@/components/ui/page-transition";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Search } from "lucide-react";
+import { ArrowLeft, Search, AlertCircle } from "lucide-react";
 import { extractPostIdFromUrl } from "@/utils/slugUtils";
 import { blogPosts } from "@/data/blog";
 import { toast } from "@/components/ui/use-toast";
 
 const NotFound = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.error(
@@ -42,33 +43,36 @@ const NotFound = () => {
           console.log("Premiers 10 IDs:", firstTenIds);
           console.log("Derniers 10 IDs:", lastTenIds);
           
-          // Vérifier si l'ID existe dans les différentes catégories
-          const allCategories = ['logos', 'history', 'technical', 'analysis', 'pixel-art'];
-          allCategories.forEach(category => {
-            try {
-              const categoryPosts = require(`../data/blog/${category}/index.ts`).default || [];
-              const foundInCategory = categoryPosts.some((p: any) => p.id === postId);
-              if (foundInCategory) {
-                console.error(`L'article avec l'ID ${postId} existe dans la catégorie ${category} mais pas dans blogPosts`);
-              }
-            } catch (error) {
-              console.error(`Erreur en vérifiant la catégorie ${category}:`, error);
-            }
-          });
+          // Redirection vers la page blog principale après une courte pause
+          setTimeout(() => {
+            navigate('/blog');
+          }, 3000);
         } else {
           console.log(`Article avec ID ${postId} existe mais n'est pas accessible:`, post.title);
+          
+          // Tentative de redirection vers l'URL correcte
+          const correctPath = `/blog/${post.id}-${post.title.toLowerCase().replace(/ /g, '-')}`;
+          if (location.pathname !== correctPath) {
+            console.log("Tentative de redirection vers:", correctPath);
+            setTimeout(() => {
+              navigate(correctPath);
+            }, 2000);
+          }
         }
       }
     }
-  }, [location.pathname]);
+  }, [location.pathname, navigate]);
 
   return (
     <PageTransition>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100">
         <div className="text-center max-w-md px-4">
-          <h1 className="text-4xl font-bold mb-4 text-gray-800">Article non trouvé</h1>
+          <div className="mb-6 flex justify-center">
+            <AlertCircle className="h-16 w-16 text-red-500" />
+          </div>
+          <h1 className="text-4xl font-bold mb-4 text-gray-800">Page non trouvée</h1>
           <p className="text-xl text-gray-600 mb-6">
-            L'article que vous cherchez n'existe pas ou a été déplacé.
+            La page que vous cherchez n'existe pas ou a été déplacée.
           </p>
           <div className="space-y-4">
             <Button asChild className="bg-purple-600 hover:bg-purple-700">

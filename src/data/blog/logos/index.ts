@@ -42,6 +42,7 @@ import { guangzhouLogoPost } from './guangzhou-logo';
 import { copaSudamericanaLogoPost } from './copa-sudamericana-logo';
 import { bosniaLogoPost } from './bosnia-logo';
 import { lasPalmasLogoPost } from './las-palmas-logo';
+import { gilVicenteLogoPost } from './gil-vicente-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -85,5 +86,6 @@ export const logoPosts: BlogPost[] = [
   guangzhouLogoPost,
   copaSudamericanaLogoPost,
   bosniaLogoPost,
-  lasPalmasLogoPost
+  lasPalmasLogoPost,
+  gilVicenteLogoPost
 ];

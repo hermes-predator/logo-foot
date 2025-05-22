@@ -9,7 +9,6 @@ import { pixelArtPosts } from './pixel-art';
 // Import des articles à modifier
 import { laligaAnalysis } from './analysis/laliga';
 import { championsLeagueAnalysis } from './analysis/champions-league';
-// Fixing the import path - using ligue-1 with a hyphen instead of ligue1
 import { ligue1Analysis } from './analysis/ligue-1';
 import { bundesligaAnalysis } from './analysis/bundesliga';
 import { serieAAnalysis } from './analysis/serie-a';
@@ -134,7 +133,7 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
 
 // Filtre explicite avant de traiter les IDs
 const allPosts = [
-  ...logoPosts.filter(post => post.id !== 306), // Filter out the blasonsEquipesFootballPost from logoPosts
+  ...logoPosts,
   ...historyPosts,
   ...technicalPosts,
   ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),

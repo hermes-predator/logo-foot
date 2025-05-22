@@ -48,7 +48,7 @@ export function generatePostUrl(id: number, title: string): string {
   return `/blog/${id}-${slug}`;
 }
 
-// Fonction pour extraire l'ID à partir d'une URL d'article
+// Fonction améliorée pour extraire l'ID à partir d'une URL d'article
 export function extractPostIdFromUrl(url: string): number | null {
   try {
     // Nettoyer l'URL (enlever le domaine si présent)

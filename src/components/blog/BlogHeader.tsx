@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,6 @@ import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
 import { OptimizedImage } from '@/components/ui/optimized-image';
-
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -17,7 +15,6 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-  
   return <div className="container mx-auto px-4 mb-6">
       <div className="text-center">
         
@@ -54,7 +51,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
               {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
               zIndex: 30
-              }}>
+            }}>
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -80,11 +77,11 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                 {/* Alert Triangle in the upper left corner with improved animation */}
                 <div className="absolute top-0 left-0" style={{
                 zIndex: 20
-                }}>
+              }}>
                   <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
                     <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                     transform: 'scale(1.1)'
-                    }} />
+                  }} />
                   </div>
                 </div>
                 
@@ -129,12 +126,12 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                               <Folder className="text-white" style={{
                               width: "22px",
                               height: "22px"
-                              }} />
+                            }} />
                               <span className="font-medium text-base">Voir le fichier</span>
                               <ArrowRight className="text-white/90 group-hover:translate-x-1 transition-transform" style={{
                               width: "22px",
                               height: "22px"
-                              }} />
+                            }} />
                               <div className="absolute inset-0 w-full h-full overflow-hidden">
                                 <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                               </div>
@@ -172,15 +169,11 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
 
                 {/* Ajout de la section d'images des dossiers */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
-                  <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections par pays (format PNG, 120x120)</p>
+                  <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     {/* Première image - Premier groupe de pays */}
                     <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
-                      <img 
-                        src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png"
-                        alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales"
-                        className="w-full h-auto object-cover"
-                      />
+                      <img src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" className="w-full h-auto object-cover" />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
                         <p className="text-white text-xs text-center font-medium">Les collections principales</p>
                       </div>
@@ -188,11 +181,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                     
                     {/* Deuxième image - Second groupe de pays */}
                     <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
-                      <img 
-                        src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png"
-                        alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie"
-                        className="w-full h-auto object-cover"
-                      />
+                      <img src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" className="w-full h-auto object-cover" />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
                         <p className="text-white text-xs text-center font-medium">Les collections secondaires</p>
                       </div>
@@ -249,4 +238,3 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
     </div>;
 };
 export default BlogHeader;
-

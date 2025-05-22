@@ -92,6 +92,28 @@ const Blog = () => {
         <BlogHeader />
 
         <div className="container mx-auto px-4 pt-4 pb-12">
+          {/* Système de catégories déplacé ici, au-dessus des articles */}
+          <div className="flex flex-wrap justify-center gap-2 px-3 mb-6">
+            <a href="/blog" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${!categoryParam ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Tous
+            </a>
+            <a href="/blog?category=logos" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${categoryParam === 'logos' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Logos
+            </a>
+            <a href="/blog?category=technical" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${categoryParam === 'technical' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Techniques
+            </a>
+            <a href="/blog?category=analysis" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${categoryParam === 'analysis' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Analyses
+            </a>
+            <a href="/blog?category=history" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${categoryParam === 'history' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Histoire
+            </a>
+            <a href="/blog?category=pixel-art" className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${categoryParam === 'pixel-art' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'}`}>
+              Pixel Art
+            </a>
+          </div>
+
           {/* Liste d'articles paginée */}
           <BlogArticleList articles={paginatedItems} />
 

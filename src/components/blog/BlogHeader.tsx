@@ -8,6 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
+import { OptimizedImage } from '@/components/ui/optimized-image';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -168,6 +169,41 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                     </TooltipProvider>
                   </div>
                 </div>
+
+                {/* Ajout de la section d'images des dossiers */}
+                <div className="mt-6 pt-5 border-t border-amber-200/60">
+                  <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections par pays (format PNG, 120x120)</p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    {/* Première image - Premier groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png"
+                        alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales"
+                        className="w-full h-auto object-cover"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+                        <p className="text-white text-xs text-center font-medium">Les collections principales</p>
+                      </div>
+                    </div>
+                    
+                    {/* Deuxième image - Second groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png"
+                        alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie"
+                        className="w-full h-auto object-cover"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+                        <p className="text-white text-xs text-center font-medium">Les collections secondaires</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Légende explicative des images */}
+                  <div className="mt-3 text-center">
+                    <p className="text-xs text-amber-700/80 italic">Chaque collection contient tous les logos des clubs classés par pays, dans un dossier dédié</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,3 +249,4 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
     </div>;
 };
 export default BlogHeader;
+

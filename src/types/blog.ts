@@ -1,3 +1,4 @@
+
 export interface BlogPost {
   id: number,
   title: string,
@@ -10,7 +11,8 @@ export interface BlogPost {
   galleryImageId?: number,
   readingTime?: number,
   previousPostId?: number,
-  nextPostId?: number
+  nextPostId?: number,
+  coverImage?: string
 }
 
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;

@@ -15,6 +15,7 @@ interface OptimizedImageProps {
   aspectRatio?: number;
   priority?: boolean;
   objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+  hidden?: boolean;
 }
 
 export function OptimizedImage({
@@ -26,6 +27,7 @@ export function OptimizedImage({
   aspectRatio = 16 / 9,
   priority = false,
   objectFit = 'cover',
+  hidden = false,
 }: OptimizedImageProps) {
   const { isInView, imgRef } = useLazyLoading();
   const [isLoaded, setIsLoaded] = useState(priority);
@@ -96,6 +98,11 @@ export function OptimizedImage({
       // Protection logic here if needed
     }
   }, [isInView, imgRef]);
+
+  // If image should be hidden, don't render it
+  if (hidden) {
+    return null;
+  }
 
   // If the image is priority, we want to load it right away
   const shouldLoad = priority || isInView;

@@ -148,15 +148,15 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Remplacer l'affichage direct par un carrousel complet avec 3 images */}
+                {/* Modify carousel to show two images by default */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  {/* Implémentation du carrousel avec les trois images */}
-                  <Carousel className="w-full">
-                    <CarouselContent>
-                      {/* Première image - Premier groupe de pays */}
-                      <CarouselItem>
+                  {/* Modified carousel implementation to show two images by default */}
+                  <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+                    <CarouselContent className="-ml-2 md:-ml-4">
+                      {/* First image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
                         <div className="flex justify-center">
                           <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
                             <img 
@@ -168,8 +168,8 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                         </div>
                       </CarouselItem>
                       
-                      {/* Deuxième image - Second groupe de pays */}
-                      <CarouselItem>
+                      {/* Second image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
                         <div className="flex justify-center">
                           <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
                             <img 
@@ -181,8 +181,8 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                         </div>
                       </CarouselItem>
                       
-                      {/* Troisième image - Pays d'Europe de l'Est */}
-                      <CarouselItem>
+                      {/* Third image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
                         <div className="flex justify-center">
                           <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
                             <img 
@@ -249,3 +249,4 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
     </div>;
 };
 export default BlogHeader;
+

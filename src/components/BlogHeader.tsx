@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -9,23 +9,34 @@ import {
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { carouselImages } from "@/data/carousel/carouselImages";
+import { toast } from "@/components/ui/use-toast";
 
 export const BlogHeader = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setIsMounted(true);
-    // Log pour confirmer le chargement du composant
-    console.log("BlogHeader component mounted");
+    console.log("BlogHeader component mounted with new implementation");
+    
+    // Notification pour indiquer le début du chargement
+    toast({
+      title: "Chargement du carrousel",
+      description: `Tentative de chargement de ${carouselImages.length} images`,
+    });
   }, []);
 
   // Log pour confirmer que les images sont bien définies
   useEffect(() => {
     if (isMounted) {
-      console.log(`Carousel images loaded: ${carouselImages.length} images`);
+      console.log(`Version améliorée: ${carouselImages.length} images à charger`);
       carouselImages.forEach((src, index) => {
-        console.log(`Image ${index + 1}: ${src}`);
+        console.log(`Préparation image ${index + 1}: ${src}`);
+        // Préchargement des images pour s'assurer qu'elles sont dans le cache
+        const img = new Image();
+        img.src = src;
       });
     }
   }, [isMounted]);
@@ -33,12 +44,34 @@ export const BlogHeader = () => {
   // Suivi du chargement des images
   useEffect(() => {
     if (imagesLoaded === carouselImages.length && isMounted) {
-      console.log(`Toutes les ${imagesLoaded} images sont chargées avec succès`);
+      console.log(`✅ SUCCÈS: Les ${imagesLoaded} images sont chargées!`);
+      toast({
+        title: "Carrousel prêt",
+        description: `Les ${imagesLoaded} images sont chargées avec succès`,
+        variant: "success",
+      });
     }
   }, [imagesLoaded, carouselImages.length, isMounted]);
 
-  const handleImageLoad = () => {
+  const handleImageLoad = (index: number) => {
+    console.log(`✓ Image ${index + 1} chargée avec succès`);
     setImagesLoaded(prev => prev + 1);
+  };
+
+  const handleImageError = (index: number, src: string) => {
+    console.error(`✗ ERREUR: Impossible de charger l'image ${index + 1}: ${src}`);
+    toast({
+      title: "Erreur de chargement",
+      description: `L'image ${index + 1} n'a pas pu être chargée`,
+      variant: "destructive",
+    });
+  };
+
+  // Navigation manuelle du carrousel pour tester toutes les images
+  const goToNextSlide = () => {
+    const nextIndex = (activeIndex + 1) % carouselImages.length;
+    setActiveIndex(nextIndex);
+    console.log(`Navigation à l'image ${nextIndex + 1}`);
   };
 
   if (!isMounted) {
@@ -47,27 +80,44 @@ export const BlogHeader = () => {
 
   return (
     <div className="w-full max-w-5xl mx-auto overflow-hidden">
-      <p className="text-center mb-2 text-sm text-muted-foreground">
-        {imagesLoaded} / {carouselImages.length} images chargées
-      </p>
-      <Carousel className="w-full" opts={{ loop: true, align: "start" }}>
+      <div className="flex justify-between items-center mb-2">
+        <p className="text-sm text-muted-foreground">
+          {imagesLoaded} / {carouselImages.length} images chargées
+        </p>
+        <button 
+          onClick={goToNextSlide}
+          className="text-xs bg-muted px-2 py-1 rounded hover:bg-muted/80"
+        >
+          Tester l'image suivante
+        </button>
+      </div>
+      
+      <Carousel 
+        ref={carouselRef}
+        className="w-full" 
+        opts={{ 
+          loop: true, 
+          align: "start",
+          startIndex: activeIndex
+        }}
+        onSelect={(index) => setActiveIndex(index)}
+      >
         <CarouselContent>
           {carouselImages.map((src, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1">
+            <CarouselItem key={`carousel-item-${index}`}>
+              <div className="relative p-1">
+                {activeIndex === index && (
+                  <span className="absolute top-2 right-2 z-10 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                    Image {index + 1}/{carouselImages.length}
+                  </span>
+                )}
                 <AspectRatio ratio={16 / 9} className="bg-muted">
                   <img
                     src={src}
                     alt={`Carousel image ${index + 1}`}
                     className="rounded-md object-cover w-full h-full"
-                    onError={(e) => {
-                      console.error(`Error loading image ${index + 1}: ${src}`);
-                      e.currentTarget.src = '/placeholder.svg';
-                    }}
-                    onLoad={() => {
-                      console.log(`Image ${index + 1} loaded successfully`);
-                      handleImageLoad();
-                    }}
+                    onError={() => handleImageError(index, src)}
+                    onLoad={() => handleImageLoad(index)}
                   />
                 </AspectRatio>
               </div>

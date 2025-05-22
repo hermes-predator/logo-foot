@@ -33,7 +33,7 @@ const BlogHeader = () => {
 
             <div className="mb-5 text-center">
               <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football.<br /> 
-Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.</p>
+Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football<br /> ou apprenez à créer votre propre logo.</p>
             </div>
 
             {/* Category selection section with added horizontal spacing for wider layout */}
@@ -71,8 +71,8 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                 </TooltipProvider>
               </div>
               
-              {/* Yellow alert block with enhanced visual appeal */}
-              <div className="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-50 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden shadow-md hover:shadow-lg">
+              {/* Yellow alert block with enhanced visual appeal - REMOVED SHADOW */}
+              <div className="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-50 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
                 {/* Animated pulse effect in the background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_8s_ease-in-out_infinite] z-0"></div>
                 

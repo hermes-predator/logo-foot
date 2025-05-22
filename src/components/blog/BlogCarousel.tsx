@@ -20,7 +20,7 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
   const isMobile = useIsMobile();
   
   return (
-    <div className={cn("w-full max-w-[100vw] -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-12", className)}>
+    <div className={cn("w-full max-w-screen-2xl mx-auto md:-mx-8 lg:-mx-12", className)}>
       <Carousel
         opts={{
           align: "center",
@@ -35,11 +35,11 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
               key={index} 
               className="flex justify-center basis-full pl-2 md:pl-0"
             >
-              <div className="w-full h-full max-h-[85vh] overflow-hidden rounded-lg">
+              <div className="w-full h-full min-h-[300px] md:min-h-[400px] lg:min-h-[600px] max-h-[90vh] overflow-hidden rounded-lg">
                 <OptimizedImage 
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full hover:scale-105 transition-transform duration-500"
                   objectFit="contain"
                   priority={index === 0}
                 />
@@ -47,8 +47,8 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex left-0 sm:left-2 z-10" />
-        <CarouselNext className="hidden sm:flex right-0 sm:right-2 z-10" />
+        <CarouselPrevious className="hidden sm:flex left-0 sm:left-4 z-10" />
+        <CarouselNext className="hidden sm:flex right-0 sm:right-4 z-10" />
       </Carousel>
     </div>
   );

@@ -53,17 +53,16 @@ export function extractPostIdFromUrl(url: string): number | null {
   // Nettoyer l'URL (enlever le domaine si présent)
   const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
   
-  // Améliorer l'extraction pour gérer divers formats d'URL
-  // Format attendu: "123-slug-title" ou simplement "123"
+  // Différents formats possibles: 
+  // 1. "123-slug-title"
+  // 2. "123"
+  // Extraire uniquement la partie numérique au début
   const match = path.match(/^(\d+)(?:-|$)/);
   
   if (match && match[1]) {
-    const id = parseInt(match[1], 10);
-    console.log(`Extraction d'ID depuis URL: ${url} → ID=${id}`);
-    return id;
+    return parseInt(match[1], 10);
   }
   
-  console.error(`Échec de l'extraction d'ID depuis URL: ${url}`);
   return null;
 }
 

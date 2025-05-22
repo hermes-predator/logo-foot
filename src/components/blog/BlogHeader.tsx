@@ -21,8 +21,8 @@ const BlogHeader = () => {
     <div className="container mx-auto px-4 mb-6">
       <div className="text-center">
         
-        {/* Increased max-width from max-w-3xl to max-w-4xl to allow more horizontal space */}
-        <div className="max-w-4xl mx-auto relative">
+        {/* Increased max-width from max-w-4xl to max-w-5xl to allow even more horizontal space */}
+        <div className="max-w-5xl mx-auto relative">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>
           <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-2xl p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -42,7 +42,7 @@ const BlogHeader = () => {
 
             {/* Category selection section with added horizontal spacing for wider layout */}
             <div className="mb-6">
-              <div className="flex flex-wrap justify-center gap-2 px-2">
+              <div className="flex flex-wrap justify-center gap-2 px-3">
                 <a 
                   href="/blog" 
                   className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}

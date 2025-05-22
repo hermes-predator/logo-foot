@@ -9,6 +9,7 @@ import HreflangTags from '../components/SEO/HreflangTags';
 import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
 import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
 import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -52,8 +53,14 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
-      {/* Simple lien de retour au blog */}
-      <div className="container mx-auto px-4 pt-4">
+      {/* Navigation et bouton Blog */}
+      <div className="container mx-auto px-4 pt-4 flex items-center gap-3">
+        <Link to="/blog">
+          <Button size="sm" variant="outline" className="flex items-center gap-1 bg-blue-500 text-white hover:bg-blue-600 border-none">
+            Blog
+          </Button>
+        </Link>
+        
         <Link to="/blog" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
           <ArrowLeft className="h-4 w-4 mr-1" />
           Retour au Blog

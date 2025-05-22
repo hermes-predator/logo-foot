@@ -14,6 +14,8 @@ export const BlogHeader = () => {
 
   useEffect(() => {
     setIsMounted(true);
+    // Log pour confirmer le chargement du composant
+    console.log("BlogHeader component mounted");
   }, []);
 
   // Les images du carrousel
@@ -25,13 +27,23 @@ export const BlogHeader = () => {
     "/lovable-uploads/5aec79d7-9943-4bb4-90bd-c5f2679ddecf.png"  // Ajout de la nouvelle image en 5ème position
   ];
 
+  // Log pour confirmer que les images sont bien définies
+  useEffect(() => {
+    if (isMounted) {
+      console.log(`Carousel images loaded: ${carouselImages.length} images`);
+      carouselImages.forEach((src, index) => {
+        console.log(`Image ${index + 1}: ${src}`);
+      });
+    }
+  }, [isMounted]);
+
   if (!isMounted) {
     return null;
   }
 
   return (
     <div className="w-full max-w-5xl mx-auto overflow-hidden">
-      <Carousel className="w-full">
+      <Carousel className="w-full" opts={{ loop: true }}>
         <CarouselContent>
           {carouselImages.map((src, index) => (
             <CarouselItem key={index}>
@@ -41,6 +53,11 @@ export const BlogHeader = () => {
                     src={src}
                     alt={`Carousel image ${index + 1}`}
                     className="rounded-md object-cover w-full h-full"
+                    onError={(e) => {
+                      console.error(`Error loading image ${index + 1}: ${src}`);
+                      e.currentTarget.src = '/placeholder.svg';
+                    }}
+                    onLoad={() => console.log(`Image ${index + 1} loaded successfully`)}
                   />
                 </AspectRatio>
               </div>

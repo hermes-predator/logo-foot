@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
@@ -8,7 +8,7 @@ import CanonicalTag from '../components/SEO/CanonicalTag';
 import HreflangTags from '../components/SEO/HreflangTags';
 import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
 import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
-import { BackToButton } from '../components/blog';
+import { ArrowLeft } from 'lucide-react';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -52,9 +52,12 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
-      {/* Bouton Retour au Blog */}
+      {/* Simple lien de retour au blog */}
       <div className="container mx-auto px-4 pt-4">
-        <BackToButton to="/blog" label="Retour au Blog" />
+        <Link to="/blog" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+          <ArrowLeft className="h-4 w-4 mr-1" />
+          Retour au Blog
+        </Link>
       </div>
       
       <CanonicalTag url={canonicalUrl} isDefault={true} />

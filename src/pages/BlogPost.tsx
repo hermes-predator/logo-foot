@@ -11,6 +11,7 @@ import { defaultCover } from '../constants/defaults';
 import PageTransition from "@/components/ui/page-transition";
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
+import { BlogPost as BlogPostType } from '../types/blog';
 
 interface BlogPostProps {
   id: number;
@@ -49,12 +50,12 @@ export const BlogPostPage = ({ post }: { post: BlogPostProps }) => {
           <meta name="keywords" content={post.keywords} />
           <link rel="canonical" href={`https://logo-foot.com${postUrl}`} />
           <script type="application/ld+json">
-            {JSON.stringify(BlogArticleSchema({ post }))}
+            {JSON.stringify(BlogArticleSchema({ post: post as BlogPostType }))}
           </script>
         </Helmet>
 
         {/* Schema Markup amélioré */}
-        <BlogSchemaMarkup post={post} />
+        <BlogSchemaMarkup post={post as unknown as BlogPostType} />
 
         {/* Balises canoniques pour le SEO */}
         <BlogCanonical />

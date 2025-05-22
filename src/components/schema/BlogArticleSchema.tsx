@@ -2,7 +2,7 @@
 import { BlogPost } from "../../types/blog";
 
 interface BlogArticleSchemaProps {
-  post: BlogPost;
+  post: BlogPost | any; // Accept either BlogPost type or any to handle different post types
 }
 
 export const BlogArticleSchema = ({ post }: BlogArticleSchemaProps) => {
@@ -38,7 +38,7 @@ export const BlogArticleSchema = ({ post }: BlogArticleSchemaProps) => {
       "@type": "WebPage",
       "@id": postUrl
     },
-    "keywords": post.keywords,
+    "keywords": post.keywords || "",
     "articleSection": post.category,
     "copyrightYear": currentYear,
     "copyrightHolder": {

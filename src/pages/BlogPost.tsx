@@ -12,7 +12,6 @@ import RelatedPosts from '../components/blog/RelatedPosts';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 import BlogHeader from '../components/blog/BlogHeader';
 import PageTransition from "@/components/ui/page-transition";
-import BlogCTA from '../components/blog/BlogCTA';
 import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import { ImageObjectSchema } from '../components/schema/ImageObjectSchema';
@@ -255,11 +254,6 @@ const BlogPost = () => {
                 {post.content}
               </ReactMarkdown>
             </article>
-            
-            {/* CTA */}
-            <div className="px-6 md:px-8 pb-8">
-              <BlogCTA />
-            </div>
             
             {/* Related posts */}
             <div className="px-6 md:px-8 pb-8">

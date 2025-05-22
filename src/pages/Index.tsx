@@ -1,4 +1,3 @@
-
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
@@ -6,6 +5,7 @@ import HeroSection from '../components/sections/HeroSection';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
+import FloatingCTA from '../components/blog/FloatingCTA';
 
 // Lazy load components that aren't needed for initial render
 const LazyProductGallery = lazy(() => import('../components/ProductGallery'));
@@ -161,6 +161,9 @@ const Index = () => {
         </Suspense>
       </main>
       <Footer />
+      
+      {/* Affichage de la bannière flottante CTA */}
+      <FloatingCTA />
     </div>
   );
 };

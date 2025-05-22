@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -8,6 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
+import { OptimizedImage } from '@/components/ui/optimized-image';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -167,6 +168,23 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                       </Tooltip>
                     </TooltipProvider>
                   </div>
+                </div>
+                
+                {/* Preview image showing folders from different countries */}
+                <div className="mt-6 p-3 bg-gray-800/95 rounded-lg border border-gray-700 shadow-inner mx-auto max-w-4xl">
+                  <h4 className="text-center text-white/90 text-sm mb-3 flex items-center justify-center gap-2">
+                    <Trophy className="h-4 w-4 text-amber-400" />
+                    <span>Aperçu de la collection par pays</span>
+                  </h4>
+                  <OptimizedImage 
+                    src="/lovable-uploads/51b5be99-39d2-4526-9803-566ab15261d6.png" 
+                    alt="Aperçu de la collection de logos de football organisée par pays" 
+                    width={900}
+                    height={600}
+                    className="rounded-md shadow-xl border border-gray-700/50 mx-auto"
+                    priority={true}
+                  />
+                  <p className="text-center text-gray-300 text-xs mt-3">66 pays disponibles avec plus de 8600 logos au total en haute qualité</p>
                 </div>
               </div>
             </div>

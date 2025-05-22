@@ -9,6 +9,9 @@ import BlogHeader from '../components/blog/BlogHeader';
 import { BlogListSchema } from '../components/schema/BlogListSchema';
 import { useDebugBlog } from '../hooks/useDebugBlog';
 import PageTransition from "@/components/ui/page-transition";
+import BlogPagination from '../components/blog/BlogPagination';
+import { usePagination } from '../hooks/usePagination';
+import BlogCanonical from '../components/SEO/BlogCanonical';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -44,6 +47,15 @@ const Blog = () => {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
+  // Pagination
+  const POSTS_PER_PAGE = 9;
+  const { 
+    currentPage, 
+    setCurrentPage, 
+    totalPages, 
+    paginatedItems 
+  } = usePagination(sortedPosts, POSTS_PER_PAGE);
+
   return (
     <PageTransition>
       <div className="bg-gray-50 min-h-screen">
@@ -56,12 +68,29 @@ const Blog = () => {
           </script>
         </Helmet>
 
+        {/* Balises canoniques pour la pagination SEO */}
+        <BlogCanonical 
+          category={categoryParam || undefined}
+          page={currentPage}
+        />
+
         {/* Header avec présentation du blog */}
         <BlogHeader />
 
         <div className="container mx-auto px-4 pt-4 pb-12">
-          {/* Liste d'articles */}
-          <BlogArticleList articles={sortedPosts} />
+          {/* Liste d'articles paginée */}
+          <BlogArticleList articles={paginatedItems} />
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex justify-center mt-8">
+              <BlogPagination 
+                currentPage={currentPage}
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
+              />
+            </div>
+          )}
         </div>
 
         <Footer />

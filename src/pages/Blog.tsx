@@ -13,15 +13,12 @@ import BlogPagination from '../components/blog/BlogPagination';
 import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { useNavigate } from 'react-router-dom';
 import { BLOG_CATEGORIES } from '../types/blog';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-  const navigate = useNavigate();
 
   // Debug mode pour vérifier le chargement des articles
   useDebugBlog();
@@ -74,18 +71,6 @@ const Blog = () => {
     }
   }, [sortedPosts]);
 
-  // Gestion du changement de catégorie
-  const handleCategoryChange = (value: string) => {
-    if (value === "all") {
-      navigate('/blog');
-    } else {
-      navigate(`/blog?category=${value}`);
-    }
-  };
-
-  // Déterminer la valeur actuelle pour ToggleGroup
-  const currentValue = categoryParam || "all";
-
   return (
     <PageTransition>
       <div className="bg-gray-50 min-h-screen">
@@ -108,45 +93,6 @@ const Blog = () => {
         <BlogHeader />
 
         <div className="container mx-auto px-4 pt-4 pb-12">
-          {/* Système de catégories amélioré avec ToggleGroup */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-white p-2 rounded-lg shadow-md">
-              <ToggleGroup 
-                type="single" 
-                value={currentValue}
-                onValueChange={(value) => {
-                  if (value) handleCategoryChange(value);
-                }}
-                className="flex flex-wrap justify-center gap-1.5"
-              >
-                <ToggleGroupItem value="all" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Tous
-                </ToggleGroupItem>
-                <ToggleGroupItem value="logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Logos de Club
-                </ToggleGroupItem>
-                <ToggleGroupItem value="technical" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Techniques
-                </ToggleGroupItem>
-                <ToggleGroupItem value="analysis" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Analyses
-                </ToggleGroupItem>
-                <ToggleGroupItem value="legacy" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Histoire du football
-                </ToggleGroupItem>
-                <ToggleGroupItem value="pixel-art" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Pixel Art
-                </ToggleGroupItem>
-                <ToggleGroupItem value="national-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Logos de Nation
-                </ToggleGroupItem>
-                <ToggleGroupItem value="competition-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Logos de Compétition
-                </ToggleGroupItem>
-              </ToggleGroup>
-            </div>
-          </div>
-
           {/* Liste d'articles paginée */}
           <BlogArticleList articles={paginatedItems} />
 

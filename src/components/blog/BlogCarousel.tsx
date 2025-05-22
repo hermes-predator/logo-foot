@@ -19,7 +19,7 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
   const isMobile = useIsMobile();
   
   return (
-    <div className={cn("w-full", className)}>
+    <div className={cn("w-full max-w-5xl mx-auto", className)}>
       <Carousel
         opts={{
           align: "start",
@@ -37,11 +37,11 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
                 isMobile ? "basis-full" : "basis-1/2"
               )}
             >
-              <div className="w-full h-full overflow-hidden rounded-lg">
+              <div className="w-full aspect-square overflow-hidden rounded-lg">
                 <img 
                   src={image.src}
                   alt={image.alt}
-                  className="object-cover w-full h-[300px] sm:h-[400px] hover:scale-105 transition-transform duration-500"
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </CarouselItem>

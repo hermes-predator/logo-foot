@@ -14,6 +14,7 @@ import BlogHeader from '../components/blog/BlogHeader';
 import PageTransition from "@/components/ui/page-transition";
 import BlogCTA from '../components/blog/BlogCTA';
 import { BLOG_CATEGORIES } from '../types/blog';
+import BlogImage from '../components/blog/BlogImage';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -129,7 +130,12 @@ const BlogPost = () => {
             
             {/* Article content */}
             <article className="prose prose-lg max-w-none p-6 md:p-8">
-              <ReactMarkdown>
+              <ReactMarkdown components={{
+                img: ({node, ...props}) => {
+                  const { src, alt } = props;
+                  return <BlogImage src={src || ''} alt={alt || ''} />;
+                }
+              }}>
                 {post.content}
               </ReactMarkdown>
             </article>

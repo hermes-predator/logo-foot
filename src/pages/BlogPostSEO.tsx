@@ -8,6 +8,7 @@ import CanonicalTag from '../components/SEO/CanonicalTag';
 import HreflangTags from '../components/SEO/HreflangTags';
 import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
 import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
+import { BackToButton } from '../components/blog';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -51,6 +52,11 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
+      {/* Bouton Retour au Blog */}
+      <div className="container mx-auto px-4 pt-4">
+        <BackToButton to="/blog" label="Retour au Blog" />
+      </div>
+      
       <CanonicalTag url={canonicalUrl} isDefault={true} />
       
       <HreflangTags languages={languages} defaultLanguage="fr" />

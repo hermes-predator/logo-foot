@@ -16,6 +16,7 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
+  
   return <div className="max-w-[64rem] mb-6 pl-4">
       <h1 className="text-4xl font-bold text-gray-900 mb-3">
         Articles sur le logo de foot
@@ -48,53 +49,49 @@ const BlogHeader = () => {
 
           {/* Container for the yellow block */}
           <div className="mt-8 relative">
-            {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
-            zIndex: 30
-          }}>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div>
-                      <GoogleDriveBadge cursorHelp={true} />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
-                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </div>
-            
-            {/* Yellow alert block */}
+            {/* Yellow alert block with the Google Drive Badge inside at the top center */}
             <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-              {/* Alert Triangle in the upper left corner - Removed shadow-md class */}
-              <div className="absolute top-0 left-0" style={{
-              zIndex: 20
-            }}>
-                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
+              {/* Alert Triangle in the upper left corner - modified to fit perfectly in the corner */}
+              <div className="absolute top-0 left-0">
+                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none shadow-md">
                   <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                   transform: 'scale(1.1)'
                 }} />
                 </div>
               </div>
               
+              {/* Google Drive Badge centered at the top inside the yellow container */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div>
+                        <GoogleDriveBadge cursorHelp={true} />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
+                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+              
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
                 <div>
-                  <h3 className="font-bold text-black text-lg pl-12">
+                  <h3 className="font-bold text-black text-lg pl-3">
                     <div className="flex flex-col">
-                      <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
+                      <span className="text-2xl font-bold">Vous cherchez tous les logos de football ?</span>
                       <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
-                        Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
+                        Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Foot</u> organisés par pays.
                         <br />Obtenez toutes les ressources dans un fichier ZIP complet.
                       </span>
                     </div>
                   </h3>
                 </div>
-                <div className="relative pr-4 pl-2">
+                <div className="relative pr-2 pl-3">
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
@@ -118,22 +115,22 @@ const BlogHeader = () => {
                       <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
                         <div className="flex flex-col">
                           <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                            <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                            <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
-                          <div className="p-3 text-center">
+                          <div className="p-3">
                             <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
-                            <div className="flex items-center justify-center gap-2 mb-2">
+                            <div className="flex items-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
                             </div>
-                            <div className="flex flex-wrap justify-center gap-2 mb-2">
+                            <div className="flex flex-wrap gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                             </div>
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
-                              <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
+                              <div className="flex items-center text-xs text-green-700 gap-1.5">
                                 <Download className="h-3.5 w-3.5" />
-                                <span>Télécharger maintenant</span>
+                                <span>Téléchargement instantané</span>
                               </div>
                             </div>
                           </div>

@@ -12,7 +12,7 @@ const FAQDialog = () => (
     </DialogTrigger>
     <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
       <DialogHeader>
-        <DialogTitle className="text-xl font-bold text-gray-800">Questions fréquentes</DialogTitle>
+        <DialogTitle>Questions fréquentes</DialogTitle>
       </DialogHeader>
       <div className="mt-4">
         <Accordion type="single" collapsible className="w-full">

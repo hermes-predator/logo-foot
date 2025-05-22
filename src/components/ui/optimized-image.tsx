@@ -15,6 +15,7 @@ interface OptimizedImageProps {
   aspectRatio?: number;
   priority?: boolean;
   objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+  hidden?: boolean; // Nouvelle prop pour masquer l'image
 }
 
 export function OptimizedImage({
@@ -26,7 +27,11 @@ export function OptimizedImage({
   aspectRatio = 16 / 9,
   priority = false,
   objectFit = 'cover',
+  hidden = false, // Par défaut, l'image est visible
 }: OptimizedImageProps) {
+  // Si l'image est cachée, on ne rend rien
+  if (hidden) return null;
+
   const { isInView, imgRef } = useLazyLoading();
   const [isLoaded, setIsLoaded] = useState(priority);
   const [error, setError] = useState(false);

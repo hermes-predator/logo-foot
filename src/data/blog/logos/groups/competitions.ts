@@ -20,7 +20,7 @@ import { copaLibertadoresLogoPost } from '../copa-libertadores-logo';
 import { copaSudamericanaLogoPost } from '../copa-sudamericana-logo';
 import { copaDoBasilLogoPost } from '../copa-do-brasil-logo';
 import { brasileiraoSerieALogoPost } from '../brasileirao-serie-a-logo';
-import { premierLeagueDesignPost } from '../premier-league-design';
+import { premierLeagueLogoPost } from '../premier-league-design';
 import { ligue1LogoPost } from '../ligue1-logo';
 import { ligue2LogoPost } from '../ligue2-logo';
 import { serieALogoPost } from '../serie-a-logo';
@@ -67,7 +67,7 @@ export const competitionPosts: BlogPost[] = [
   copaSudamericanaLogoPost,
   copaDoBasilLogoPost,
   brasileiraoSerieALogoPost,
-  premierLeagueDesignPost,
+  premierLeagueLogoPost,
   ligue1LogoPost,
   ligue2LogoPost,
   serieALogoPost,

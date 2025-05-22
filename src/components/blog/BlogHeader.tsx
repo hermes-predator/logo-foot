@@ -148,30 +148,56 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Section des images - affichage direct des 2 images côte à côte au lieu d'un carrousel */}
+                {/* Remplacer l'affichage direct par un carrousel complet avec 3 images */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  {/* Conteneur flex pour afficher les deux images côte à côte au lieu d'un carousel */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    {/* Première image - Premier groupe de pays */}
-                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
-                      <img 
-                        src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
-                        alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
-                        className="w-full h-auto object-cover" 
-                      />
-                    </div>
+                  {/* Implémentation du carrousel avec les trois images */}
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {/* Première image - Premier groupe de pays */}
+                      <CarouselItem>
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
+                              alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                      
+                      {/* Deuxième image - Second groupe de pays */}
+                      <CarouselItem>
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
+                              alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                      
+                      {/* Troisième image - Pays d'Europe de l'Est */}
+                      <CarouselItem>
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/bac193c3-2fcc-4ee0-964c-7e2c1ad83890.png" 
+                              alt="Collections de logos: Russie, Suède, Suisse, Tchéquie, Autriche, Bulgarie, Croatie, Hongrie, Serbie" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
                     
-                    {/* Deuxième image - Second groupe de pays */}
-                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
-                      <img 
-                        src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
-                        alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
-                        className="w-full h-auto object-cover" 
-                      />
-                    </div>
-                  </div>
+                    <CarouselPrevious className="left-1" />
+                    <CarouselNext className="right-1" />
+                  </Carousel>
                   
                   {/* Légende explicative des images */}
                   <div className="mt-3 text-center">

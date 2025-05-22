@@ -148,44 +148,30 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Ajout du carrousel pour les images des dossiers */}
+                {/* Section des images - affichage direct des 2 images côte à côte au lieu d'un carrousel */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  <Carousel className="w-full max-w-4xl mx-auto relative" opts={{
-                    align: "start",
-                    loop: false,
-                  }}>
-                    <CarouselContent>
-                      {/* Première image - Premier groupe de pays - La plus importante */}
-                      <CarouselItem className="basis-full md:basis-full">
-                        <div className="rounded-lg overflow-hidden shadow-md h-auto">
-                          <img 
-                            src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
-                            alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
-                            className="w-full h-auto object-cover" 
-                          />
-                        </div>
-                      </CarouselItem>
-                      
-                      {/* Deuxième image - Second groupe de pays */}
-                      <CarouselItem className="basis-full md:basis-full">
-                        <div className="rounded-lg overflow-hidden shadow-md h-auto">
-                          <img 
-                            src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
-                            alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
-                            className="w-full h-auto object-cover" 
-                          />
-                        </div>
-                      </CarouselItem>
-                    </CarouselContent>
-                    
-                    {/* Flèches de navigation personnalisées pour le carousel */}
-                    <div className="flex gap-2 justify-center mt-4">
-                      <CarouselPrevious className="relative inset-0 translate-y-0 h-8 w-8 border-amber-200 bg-amber-50 hover:bg-amber-100 text-amber-700" />
-                      <CarouselNext className="relative inset-0 translate-y-0 h-8 w-8 border-amber-200 bg-amber-50 hover:bg-amber-100 text-amber-700" />
+                  {/* Conteneur flex pour afficher les deux images côte à côte au lieu d'un carousel */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    {/* Première image - Premier groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
+                        alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
+                        className="w-full h-auto object-cover" 
+                      />
                     </div>
-                  </Carousel>
+                    
+                    {/* Deuxième image - Second groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
+                        alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
+                        className="w-full h-auto object-cover" 
+                      />
+                    </div>
+                  </div>
                   
                   {/* Légende explicative des images */}
                   <div className="mt-3 text-center">

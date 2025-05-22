@@ -14,7 +14,12 @@ interface BlogArticleCardProps {
 
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
+  
+  // Générer l'URL avec l'ID et le titre de l'article pour garantir l'unicité
   const articleUrl = generatePostUrl(post.id, post.title);
+  
+  // Ajouter un log pour déboguer la génération d'URL
+  console.log(`Génération d'URL pour l'article ${post.id}: ${articleUrl}`);
   
   return (
     <Link 

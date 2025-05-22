@@ -50,17 +50,30 @@ export function generatePostUrl(id: number, title: string): string {
 
 // Fonction pour extraire l'ID à partir d'une URL d'article
 export function extractPostIdFromUrl(url: string): number | null {
-  // Nettoyer l'URL (enlever le domaine si présent)
-  const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
-  
-  // Extraire uniquement la partie numérique au début
-  const match = path.match(/^(\d+)(?:-|$)/);
-  
-  if (match && match[1]) {
-    return parseInt(match[1], 10);
+  try {
+    // Nettoyer l'URL (enlever le domaine si présent)
+    const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
+    
+    // Extraire uniquement la partie numérique au début
+    const match = path.match(/^(\d+)(?:-|$)/);
+    
+    if (match && match[1]) {
+      return parseInt(match[1], 10);
+    }
+    
+    // Si pas de match direct et l'URL contient des chiffres, essayer d'extraire
+    const numbersInUrl = path.match(/\d+/);
+    if (numbersInUrl && numbersInUrl[0]) {
+      console.log("Tentative d'extraction alternative d'ID:", numbersInUrl[0]);
+      return parseInt(numbersInUrl[0], 10);
+    }
+    
+    console.error("Impossible d'extraire un ID de l'URL:", url);
+    return null;
+  } catch (error) {
+    console.error("Erreur lors de l'extraction de l'ID:", error);
+    return null;
   }
-  
-  return null;
 }
 
 // Fonction pour vérifier si une URL d'article est dans le format canonique

@@ -14,6 +14,7 @@ import { ligue1Analysis } from './analysis/ligue-1';
 import { bundesligaAnalysis } from './analysis/bundesliga';
 import { serieAAnalysis } from './analysis/serie-a';
 import { premierLeagueAnalysis } from './analysis/premier-league';
+import { scottishCupLogoPost } from './logos/scottish-cup-logo';
 
 // Modification des articles pour la catégorie competition-logos
 const competitionArticles: BlogPost[] = [
@@ -22,7 +23,9 @@ const competitionArticles: BlogPost[] = [
   { ...ligue1Analysis, category: 'competition-logos', subCategory: 'competition-logos' },
   { ...bundesligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
   { ...serieAAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
-  { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' }
+  { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  // Ajout explicite de l'article scottishCupLogoPost
+  scottishCupLogoPost
 ];
 
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques

@@ -86,14 +86,6 @@ const Blog = () => {
   // Déterminer la valeur actuelle pour ToggleGroup
   const currentValue = categoryParam || "all";
 
-  // Helper function to safely get category name
-  const getCategoryName = (category: string) => {
-    if (BLOG_CATEGORIES[category] && BLOG_CATEGORIES[category].name) {
-      return BLOG_CATEGORIES[category].name;
-    }
-    return category.charAt(0).toUpperCase() + category.slice(1); // Fallback: capitalize the category key
-  };
-
   return (
     <PageTransition>
       <div className="bg-gray-50 min-h-screen">

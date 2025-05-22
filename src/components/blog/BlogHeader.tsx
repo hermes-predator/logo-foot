@@ -98,24 +98,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                     </h3>
                     
                     {/* Added benefit points with check marks */}
-                    <div className="mt-3 grid grid-cols-2 gap-2 text-sm text-left">
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Format PNG haute qualité</span>
-                      </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        
-                      </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Accès immédiat</span>
-                      </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Mise à jour régulière</span>
-                      </div>
-                    </div>
+                    
                   </div>
                   <div className="relative pr-4 pl-2">
                     <TooltipProvider>

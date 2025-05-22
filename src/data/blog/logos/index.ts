@@ -40,8 +40,6 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { copaSudamericanaLogoPost } from './copa-sudamericana-logo';
-import { qatarStarsLeagueLogoPost } from './qatar-stars-league-logo';
-import { d1ArkemaLogoPost } from './d1-arkema-logo';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -83,7 +81,5 @@ export const logoPosts: BlogPost[] = [
   erzurumsporLogoPost,
   bandirmasporLogoPost,
   guangzhouLogoPost,
-  copaSudamericanaLogoPost,
-  qatarStarsLeagueLogoPost,
-  d1ArkemaLogoPost
+  copaSudamericanaLogoPost
 ];

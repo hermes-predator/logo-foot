@@ -12,7 +12,6 @@ import NotFound from './pages/NotFound';
 import PaymentSuccess from './pages/PaymentSuccess';
 import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
-import Footer from './components/Footer';
 
 // Créer un client pour React Query
 const queryClient = new QueryClient({
@@ -39,7 +38,6 @@ const App = () => {
               <Route path="/payment-success" element={<PaymentSuccess />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-            <Footer />
           </Router>
           <Toaster />
         </TooltipProvider>

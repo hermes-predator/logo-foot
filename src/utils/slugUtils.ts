@@ -42,7 +42,7 @@ export function generatePostUrl(id: number, title: string): string {
   
   // Vérification supplémentaire pour s'assurer que le slug n'est pas vide
   if (!slug || slug === '') {
-    return `/blog/${id}`;
+    return `/blog/${id}-article`;
   }
   
   return `/blog/${id}-${slug}`;
@@ -50,11 +50,6 @@ export function generatePostUrl(id: number, title: string): string {
 
 // Fonction pour extraire l'ID à partir d'une URL d'article
 export function extractPostIdFromUrl(url: string): number | null {
-  // Si l'URL est simplement un nombre, retourner ce nombre directement
-  if (/^\d+$/.test(url)) {
-    return parseInt(url, 10);
-  }
-  
   // Nettoyer l'URL (enlever le domaine si présent)
   const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
   

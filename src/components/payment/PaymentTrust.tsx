@@ -47,11 +47,9 @@ const PaymentTrust = () => {
         <div className="h-1 w-1 rounded-full bg-gray-200 mx-1.5"></div>
       </div>
       
-      {/* Compteur de téléchargement évolutif avec icône style cloud-like - sans bordure */}
+      {/* Compteur de téléchargement évolutif avec juste l'icône */}
       <div className="inline-flex items-center gap-2 p-1.5 bg-gray-50 rounded-lg">
-        <div className="w-6 h-6 flex items-center justify-center bg-gradient-to-b from-white to-white/90 rounded-full p-1 shadow-sm">
-          <Download className="h-4 w-4 text-gray-600 stroke-[1.75px]" />
-        </div>
+        <Download className="h-4 w-4 text-gray-600 stroke-[1.75px]" />
         <span className="text-sm text-gray-500 font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
       </div>
     </div>

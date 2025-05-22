@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -20,9 +19,7 @@ const BlogHeader = () => {
   return (
     <div className="container mx-auto px-4 mb-6">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">
-          Articles sur le logo de foot
-        </h1>
+        
 
         <div className="max-w-3xl mx-auto relative">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>

@@ -193,6 +193,19 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                           </div>
                         </div>
                       </CarouselItem>
+                      
+                      {/* Fourth image - Newly added */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/923b6032-194e-45e0-8dbf-9b832712094d.png" 
+                              alt="Collections de logos: Slovaquie, Biélorussie, Écosse, Irlande, Pays de Galles, Finlande, Ukraine, Australie, Arabie Saoudite" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
                     </CarouselContent>
                     
                     <CarouselPrevious className="left-1" />

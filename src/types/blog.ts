@@ -15,6 +15,12 @@ export interface BlogPost {
   coverImage?: string
 }
 
+export interface BlogPostGroup {
+  category: string;
+  title: string;
+  posts: BlogPost[];
+}
+
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;
 
 export const BLOG_CATEGORIES = {
@@ -47,4 +53,3 @@ export const BLOG_CATEGORIES = {
     description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
   }
 };
-

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -22,6 +23,38 @@ const BlogPost = () => {
   const navigate = useNavigate();
   const [isClient, setIsClient] = useState(false);
   const [mainImage, setMainImage] = useState<string | null>(null);
+  const [imageFormat, setImageFormat] = useState<string>('webp');
+  
+  useEffect(() => {
+    setIsClient(true);
+    
+    // Vérifier si l'image en .png existe
+    if (typeof window !== 'undefined') {
+      const checkImageExistence = async (id: string) => {
+        try {
+          const pngResponse = await fetch(`/images/gallery/${id}.png`, { method: 'HEAD' });
+          if (pngResponse.ok) {
+            setImageFormat('png');
+            return;
+          }
+          
+          const webpResponse = await fetch(`/images/gallery/${id}.webp`, { method: 'HEAD' });
+          if (webpResponse.ok) {
+            setImageFormat('webp');
+          }
+        } catch (error) {
+          console.error('Erreur lors de la vérification de l\'image:', error);
+        }
+      };
+      
+      const postId = slug ? extractPostIdFromUrl(slug) : null;
+      const post = postId ? blogPosts.find(post => post.id === postId) : null;
+      
+      if (post?.galleryImageId) {
+        checkImageExistence(post.galleryImageId.toString());
+      }
+    }
+  }, [slug]);
   
   useEffect(() => {
     setIsClient(true);
@@ -94,7 +127,7 @@ const BlogPost = () => {
 
   // Création d'une image principale pour Google Images
   const featuredImageUrl = post.galleryImageId 
-    ? `/images/gallery/${post.galleryImageId}.webp` 
+    ? `/images/gallery/${post.galleryImageId}.${imageFormat}` 
     : mainImage || "/og-image.png";
     
   // Définir l'URL canonique pour l'article
@@ -202,7 +235,7 @@ const BlogPost = () => {
             {post.galleryImageId && (
               <div className="px-6 md:px-8 pt-6">
                 <BlogImage 
-                  src={`/images/gallery/${post.galleryImageId}.webp`} 
+                  src={`/images/gallery/${post.galleryImageId}.${imageFormat}`} 
                   alt={`Image principale: ${post.title}`}
                   priority={true}
                   title={post.title}

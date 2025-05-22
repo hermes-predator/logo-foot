@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
@@ -31,12 +32,18 @@ const BlogImage = ({
     width: 800, // Force square dimensions
     height: 800, // Force square dimensions
     quality: 80, 
-    format: 'webp' 
+    format: 'webp' // Cette valeur sera ignorée si l'image source est au format PNG
   });
   
   const imageTitle = title || alt;
   const fileName = src.split('/').pop() || 'image';
   const imageId = `img-${fileName.split('.')[0]}`;
+  
+  // Déterminer si l'image est un PNG
+  const isPng = src.toLowerCase().endsWith('.png');
+
+  // Si c'est un PNG, on n'applique pas la conversion WebP
+  const finalSrc = isPng ? src : optimizedSrc;
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -78,14 +85,14 @@ const BlogImage = ({
       const link = document.createElement('link');
       link.rel = 'preload';
       link.as = 'image';
-      link.href = optimizedSrc;
+      link.href = finalSrc;
       document.head.appendChild(link);
       
       return () => {
         document.head.removeChild(link);
       };
     }
-  }, [priority, optimizedSrc]);
+  }, [priority, finalSrc]);
 
   return (
     <div 
@@ -98,7 +105,7 @@ const BlogImage = ({
       <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
           ref={imgRef}
-          src={isInView || priority ? optimizedSrc : '/placeholder.svg'}
+          src={isInView || priority ? finalSrc : '/placeholder.svg'}
           alt={alt}
           title={imageTitle}
           width={800}

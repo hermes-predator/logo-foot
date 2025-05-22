@@ -23,8 +23,8 @@ const BlogHeader = () => {
         
         {/* Increased max-width from max-w-4xl to max-w-5xl to allow even more horizontal space */}
         <div className="max-w-5xl mx-auto relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>
-          <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-2xl p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-b-2xl rounded-t-none blur-lg"></div>
+          <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-b-2xl rounded-t-none p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
                 <BookOpen className="w-5 h-5 text-black" />

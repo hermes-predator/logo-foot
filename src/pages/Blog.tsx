@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -12,6 +11,7 @@ import PageTransition from "@/components/ui/page-transition";
 import BlogPagination from '../components/blog/BlogPagination';
 import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
+import FloatingCTA from '../components/blog/FloatingCTA';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -107,6 +107,9 @@ const Blog = () => {
         </div>
 
         <Footer />
+        
+        {/* Affichage de la bannière flottante CTA */}
+        <FloatingCTA />
       </div>
     </PageTransition>
   );

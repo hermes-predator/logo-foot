@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -16,6 +15,7 @@ import { BLOG_CATEGORIES } from '../types/blog';
 import BlogImage from '../components/blog/BlogImage';
 import { ImageObjectSchema } from '../components/schema/ImageObjectSchema';
 import CanonicalTag from '../components/SEO/CanonicalTag';
+import FloatingCTA from '../components/blog/FloatingCTA';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -263,6 +263,9 @@ const BlogPost = () => {
         </div>
         
         <Footer />
+        
+        {/* Affichage de la bannière flottante CTA */}
+        <FloatingCTA />
       </div>
     </PageTransition>
   );

@@ -92,7 +92,7 @@ const BlogHeader = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-                  <div className="text-center sm:text-left">
+                  <div className="text-center sm:text-left pl-4"> {/* Ajout de pl-4 ici pour décaler le texte */}
                     <h3 className="font-bold text-black text-lg">
                       <div className="flex flex-col">
                         <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>

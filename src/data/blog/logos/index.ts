@@ -5,6 +5,7 @@ import { asianClubPosts } from './groups/asian-clubs';
 import { brazilianClubPosts } from './groups/brazilian-clubs';
 import { competitionPosts } from './groups/competitions';
 import { englishClubPosts } from './groups/english-clubs';
+import { europeanCountriesGroup } from './groups/european-countries';
 import { frenchClubPosts } from './groups/french-clubs';
 import { generalContentPosts } from './groups/general-content';
 import { germanClubPosts } from './groups/german-clubs';
@@ -40,6 +41,7 @@ import { erzurumsporLogoPost } from './erzurumspor-logo';
 import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { copaSudamericanaLogoPost } from './copa-sudamericana-logo';
+import { europeanCountryFoldersPost } from './european-country-folders';
 
 export const logoPosts: BlogPost[] = [
   ...africanaClubPosts,
@@ -57,6 +59,7 @@ export const logoPosts: BlogPost[] = [
   ...portugueseClubPosts,
   ...southAmericanClubPosts,
   ...spanishClubPosts,
+  europeanCountryFoldersPost, // Ajout direct de l'article pour s'assurer qu'il est inclus
   etoileRougeBelgradeLogoPost,
   psgUltrasPost,
   omUltrasPost,

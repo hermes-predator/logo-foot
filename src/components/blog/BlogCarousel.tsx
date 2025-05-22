@@ -20,7 +20,7 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
   const isMobile = useIsMobile();
   
   return (
-    <div className={cn("w-full max-w-full mx-auto px-0", className)}>
+    <div className={cn("w-full max-w-[100vw] -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-12", className)}>
       <Carousel
         opts={{
           align: "center",
@@ -47,8 +47,8 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex left-2" />
-        <CarouselNext className="hidden sm:flex right-2" />
+        <CarouselPrevious className="hidden sm:flex left-0 sm:left-2 z-10" />
+        <CarouselNext className="hidden sm:flex right-0 sm:right-2 z-10" />
       </Carousel>
     </div>
   );

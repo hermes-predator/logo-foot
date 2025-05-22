@@ -61,7 +61,7 @@ const Blog = () => {
 
         <div className="container mx-auto px-4 pt-4 pb-12">
           {/* Liste d'articles */}
-          <BlogArticleList posts={sortedPosts} />
+          <BlogArticleList articles={sortedPosts} />
         </div>
 
         <Footer />

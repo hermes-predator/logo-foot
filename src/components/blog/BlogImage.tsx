@@ -45,6 +45,12 @@ const BlogImage = ({
   // Si c'est un PNG, on n'applique pas la conversion WebP
   const finalSrc = isPng ? src : optimizedSrc;
 
+  // Extraire les dimensions pour le structured data
+  const imageDimensions = {
+    width: width || 800,
+    height: height || 800
+  };
+
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -76,8 +82,19 @@ const BlogImage = ({
       if (window.performance && window.performance.mark) {
         window.performance.mark(`image-visible-${imageId}`);
       }
+
+      // Report to Largest Contentful Paint if this is an important image
+      if (priority && 'LargestContentfulPaint' in window) {
+        const observer = new PerformanceObserver((entryList) => {
+          const entries = entryList.getEntries();
+          const lastEntry = entries[entries.length - 1];
+          // Log LCP information for this image
+          console.debug(`LCP candidate: ${imageId}, time: ${lastEntry.startTime}`);
+        });
+        observer.observe({ type: 'largest-contentful-paint', buffered: true });
+      }
     }
-  }, [isInView, imageId]);
+  }, [isInView, imageId, priority]);
 
   // Préchargement pour les images prioritaires
   useEffect(() => {
@@ -86,6 +103,7 @@ const BlogImage = ({
       link.rel = 'preload';
       link.as = 'image';
       link.href = finalSrc;
+      link.fetchPriority = 'high';
       document.head.appendChild(link);
       
       return () => {
@@ -101,6 +119,7 @@ const BlogImage = ({
       itemType="https://schema.org/ImageObject" 
       ref={containerRef}
       id={imageId}
+      data-testid="blog-image"
     >
       <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
         <img
@@ -108,8 +127,8 @@ const BlogImage = ({
           src={isInView || priority ? finalSrc : '/placeholder.svg'}
           alt={alt}
           title={imageTitle}
-          width={800}
-          height={800}
+          width={imageDimensions.width}
+          height={imageDimensions.height}
           className={`w-full h-full object-cover transition-opacity duration-300 ${
             isInView ? 'opacity-100' : 'opacity-0'
           } ${isDefault ? 'opacity-90' : ''} ${className}`}
@@ -121,11 +140,14 @@ const BlogImage = ({
           draggable="false"
         />
       </AspectRatio>
-      <meta itemProp="width" content="800" />
-      <meta itemProp="height" content="800" />
+      <meta itemProp="width" content={imageDimensions.width.toString()} />
+      <meta itemProp="height" content={imageDimensions.height.toString()} />
       <meta itemProp="name" content={imageTitle} />
       <meta itemProp="description" content={alt} />
-      <meta itemProp="representativeOfPage" content={isDefault ? "false" : "true"} />
+      <meta itemProp="representativeOfPage" content={isDefault ? "true" : "false"} />
+      <meta itemProp="encodingFormat" content={isPng ? "image/png" : "image/webp"} />
+      <meta itemProp="uploadDate" content={new Date().toISOString()} />
+      <meta itemProp="copyrightYear" content={new Date().getFullYear().toString()} />
       <p className="mt-1 text-xs text-gray-500 text-center italic" itemProp="caption">{alt}</p>
     </div>
   );

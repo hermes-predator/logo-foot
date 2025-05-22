@@ -1,31 +1,31 @@
 
 import React from 'react';
+import { ScrollArea } from '../ui/scroll-area';
 import { Button } from '../ui/button';
-import { BLOG_CATEGORIES } from '@/types/blog';
 
 interface CategoriesMenuProps {
-  categories: {
-    [key: string]: {
-      name: string;
-      description: string;
-    };
-  };
+  categories: Record<string, { name: string; description: string }>;
+  onCategoryClick: (category: string) => void;
 }
 
-const CategoriesMenu: React.FC<CategoriesMenuProps> = ({ categories }) => {
+export const CategoriesMenu = ({ 
+  categories, 
+  onCategoryClick 
+}: CategoriesMenuProps) => {
   return (
-    <div className="flex flex-wrap gap-2 justify-center">
-      {Object.entries(categories).map(([key, category]) => (
-        <Button 
-          key={key}
-          variant="outline" 
-          className="bg-white/10 hover:bg-white/20 border-white/20"
-        >
-          {category.name}
-        </Button>
-      ))}
-    </div>
+    <ScrollArea className="pb-4">
+      <div className="flex flex-wrap gap-2">
+        {Object.entries(categories).map(([category, data]) => (
+          <Button
+            key={category}
+            variant="outline"
+            className="rounded-full text-sm font-medium whitespace-nowrap"
+            onClick={() => onCategoryClick(category)}
+          >
+            {data.name}
+          </Button>
+        ))}
+      </div>
+    </ScrollArea>
   );
 };
-
-export default CategoriesMenu;

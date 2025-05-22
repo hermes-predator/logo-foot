@@ -131,25 +131,25 @@ const Blog = () => {
                   Tous
                 </ToggleGroupItem>
                 <ToggleGroupItem value="logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('logos')}
+                  Logos de Club
                 </ToggleGroupItem>
                 <ToggleGroupItem value="technical" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('technical')}
+                  Techniques
                 </ToggleGroupItem>
                 <ToggleGroupItem value="analysis" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('analysis')}
+                  Analyses
                 </ToggleGroupItem>
                 <ToggleGroupItem value="legacy" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('legacy')}
+                  Histoire du football
                 </ToggleGroupItem>
                 <ToggleGroupItem value="pixel-art" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('pixel-art')}
+                  Pixel Art
                 </ToggleGroupItem>
                 <ToggleGroupItem value="national-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('national-logos')}
+                  Logos de Nation
                 </ToggleGroupItem>
                 <ToggleGroupItem value="competition-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {getCategoryName('competition-logos')}
+                  Logos de Compétition
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>

@@ -148,14 +148,14 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Section des images - affichage direct des 2 images côte à côte au lieu d'un carrousel */}
+                {/* Section des images - Maintenant avec 3 images */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  {/* Conteneur flex pour afficher les deux images côte à côte au lieu d'un carousel */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  {/* On utilise une grille responsive pour afficher les 3 images */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
                     {/* Première image - Premier groupe de pays */}
-                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                    <div className="relative rounded-lg overflow-hidden shadow-md h-auto mx-auto">
                       <img 
                         src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
                         alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
@@ -164,10 +164,19 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                     </div>
                     
                     {/* Deuxième image - Second groupe de pays */}
-                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                    <div className="relative rounded-lg overflow-hidden shadow-md h-auto mx-auto">
                       <img 
                         src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
                         alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
+                        className="w-full h-auto object-cover" 
+                      />
+                    </div>
+
+                    {/* Troisième image - Pays d'Europe de l'Est */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md h-auto mx-auto sm:col-span-2 lg:col-span-1">
+                      <img 
+                        src="/lovable-uploads/1e5b99db-1979-4c38-82f8-ba12eab3fc6a.png" 
+                        alt="Collections de logos: Russie, Suède, Suisse, Tchèquie, Autriche, Bulgarie, Croatie, Hongrie, Serbie" 
                         className="w-full h-auto object-cover" 
                       />
                     </div>

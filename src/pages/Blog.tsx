@@ -15,6 +15,7 @@ import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { useNavigate } from 'react-router-dom';
+import { BLOG_CATEGORIES } from '../types/blog';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -122,19 +123,25 @@ const Blog = () => {
                   Tous
                 </ToggleGroupItem>
                 <ToggleGroupItem value="logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Logos
+                  {BLOG_CATEGORIES['logos'].name}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="technical" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Techniques
+                  {BLOG_CATEGORIES['technical'].name}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="analysis" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Analyses
+                  {BLOG_CATEGORIES['analysis'].name}
                 </ToggleGroupItem>
-                <ToggleGroupItem value="history" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Histoire
+                <ToggleGroupItem value="legacy" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
+                  {BLOG_CATEGORIES['legacy'].name}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="pixel-art" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  Pixel Art
+                  {BLOG_CATEGORIES['pixel-art'].name}
+                </ToggleGroupItem>
+                <ToggleGroupItem value="national-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
+                  {BLOG_CATEGORIES['national-logos'].name}
+                </ToggleGroupItem>
+                <ToggleGroupItem value="competition-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
+                  {BLOG_CATEGORIES['competition-logos'].name}
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>

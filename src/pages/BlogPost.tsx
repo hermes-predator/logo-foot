@@ -125,6 +125,14 @@ const BlogPost = () => {
     }
   }, [post]);
   
+  // Extraction des mots-clés principaux pour optimisation des titres
+  const extractMainKeywords = (keywords?: string) => {
+    if (!keywords) return [];
+    return keywords.split(',').slice(0, 5).map(k => k.trim());
+  };
+  
+  const mainKeywords = post ? extractMainKeywords(post.keywords) : [];
+  
   // Si article non trouvé et client-side, afficher nothing (la redirection s'en occupera)
   if (!post && isClient) {
     return null;
@@ -264,7 +272,7 @@ const BlogPost = () => {
             )}
             
             {/* Article content avec style amélioré - Contenu principal, chargé immédiatement */}
-            <article className="prose prose-lg max-w-none p-6 md:p-8">
+            <article className="prose prose-lg max-w-none p-6 md:p-8" itemScope itemType="https://schema.org/Article">
               <ReactMarkdown
                 components={{
                   img: ({node, ...props}) => {
@@ -272,11 +280,41 @@ const BlogPost = () => {
                     return <BlogImage src={src || ''} alt={alt || ''} />;
                   },
                   h1: ({node, ...props}) => (
-                    <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4" {...props} />
+                    <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4" itemProp="headline" {...props} />
                   ),
-                  h2: ({node, ...props}) => (
-                    <h2 className="text-2xl font-bold text-gray-800 mt-6 mb-3" {...props} />
-                  ),
+                  h2: ({node, ...props}) => {
+                    // Extraction du texte du H2
+                    const headingText = props.children?.toString() || '';
+                    
+                    // Vérifier si ce H2 contient des mots-clés principaux et les mettre en évidence
+                    let enhancedText = headingText;
+                    mainKeywords.forEach(keyword => {
+                      if (headingText.toLowerCase().includes(keyword.toLowerCase()) && keyword.length > 3) {
+                        // Ne pas modifier les mots-clés déjà en gras
+                        if (!headingText.includes(`**${keyword}**`) && !headingText.includes(`**${keyword.toLowerCase()}**`)) {
+                          const regex = new RegExp(`(${keyword})`, 'gi');
+                          enhancedText = enhancedText.replace(regex, (match) => `${match}`);
+                        }
+                      }
+                    });
+                    
+                    // Création d'un ID pour le H2 basé sur le texte (pour les ancres)
+                    const headingId = headingText
+                      .toLowerCase()
+                      .replace(/[^\w\s-]/g, '') // Supprimer les caractères spéciaux
+                      .replace(/\s+/g, '-'); // Remplacer les espaces par des tirets
+                    
+                    return (
+                      <h2 
+                        id={headingId}
+                        className="text-2xl font-bold text-gray-800 mt-6 mb-3" 
+                        itemProp="articleSection"
+                        {...props}
+                      >
+                        {props.children}
+                      </h2>
+                    );
+                  },
                   h3: ({node, ...props}) => (
                     <h3 className="text-xl font-bold text-gray-800 mt-5 mb-3" {...props} />
                   ),
@@ -305,6 +343,32 @@ const BlogPost = () => {
               >
                 {post.content}
               </ReactMarkdown>
+              
+              {/* Table des matières générée automatiquement (cachée visuellement mais utile pour SEO) */}
+              <div className="sr-only" aria-hidden="true">
+                <h2>Table des matières</h2>
+                <nav aria-label="Table des matières">
+                  <ul>
+                    {post.content.match(/## (.*?)(?:\n|$)/g)?.map((heading, index) => {
+                      const headingText = heading.replace('## ', '').trim();
+                      const headingId = headingText
+                        .toLowerCase()
+                        .replace(/[^\w\s-]/g, '')
+                        .replace(/\s+/g, '-');
+                      return (
+                        <li key={index}>
+                          <a href={`#${headingId}`}>{headingText}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </nav>
+              </div>
+              
+              {/* Métadonnées structurées supplémentaires pour l'article */}
+              <meta itemProp="datePublished" content={post.date} />
+              <meta itemProp="author" content="Logo Foot" />
+              <meta itemProp="keywords" content={post.keywords} />
             </article>
             
             {/* Related posts - Non critique, chargé en lazy */}

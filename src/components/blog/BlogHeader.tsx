@@ -16,131 +16,142 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
-  return <div className="max-w-[64rem] mb-6 pl-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-3">
-        Articles sur le logo de foot
-      </h1>
+  
+  return (
+    <div className="container mx-auto px-4 mb-6">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          Articles sur le logo de foot
+        </h1>
 
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>
-        <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-2xl p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
-              <BookOpen className="w-5 h-5 text-black" />
+        <div className="max-w-3xl mx-auto relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-2xl blur-lg"></div>
+          <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-2xl p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
+                <BookOpen className="w-5 h-5 text-black" />
+              </div>
+              <h2 className="font-semibold text-gray-900">Le Blog des logos de football</h2>
             </div>
-            <h2 className="font-semibold text-gray-900">Le Blog des logos de football</h2>
-          </div>
 
-          <div className="mb-5">
-            <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football. Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football ou apprenez à créer votre propre logo.</p>
-          </div>
-
-          <div className="mb-6">
-            <div className="flex flex-wrap gap-2">
-              <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                Tout
-              </a>
-              {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                  {category.name}
-                </a>)}
+            <div className="mb-5 text-center">
+              <p className="text-base text-gray-700 leading-relaxed">
+                Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football. 
+                Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de 
+                football ou apprenez à créer votre propre logo.
+              </p>
             </div>
-          </div>
 
-          {/* Container for the yellow block */}
-          <div className="mt-8 relative">
-            {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
-            zIndex: 30
-          }}>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div>
-                      <GoogleDriveBadge cursorHelp={true} />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
-                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+            <div className="mb-6">
+              <div className="flex flex-wrap justify-center gap-2">
+                <a 
+                  href="/blog" 
+                  className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
+                >
+                  Tout
+                </a>
+                {categoriesToDisplay.map(([key, category]) => (
+                  <a 
+                    key={key} 
+                    href={`/blog?category=${key}`} 
+                    className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
+                  >
+                    {category.name}
+                  </a>
+                ))}
+              </div>
             </div>
-            
-            {/* Yellow alert block */}
-            <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-              {/* Alert Triangle in the upper left corner - Removed shadow-md class */}
-              <div className="absolute top-0 left-0" style={{
-              zIndex: 20
-            }}>
-                <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
-                  <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
-                  transform: 'scale(1.1)'
-                }} />
-                </div>
+
+            {/* Container for the yellow block */}
+            <div className="mt-8 relative">
+              {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{ zIndex: 30 }}>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div>
+                        <GoogleDriveBadge cursorHelp={true} />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
+                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-                <div>
-                  <h3 className="font-bold text-black text-lg pl-12">
-                    <div className="flex flex-col">
-                      <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
-                      <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
-                        Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
-                        <br />Obtenez toutes les ressources dans un fichier ZIP complet.
-                      </span>
-                    </div>
-                  </h3>
+              {/* Yellow alert block */}
+              <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
+                {/* Alert Triangle in the upper left corner */}
+                <div className="absolute top-0 left-0" style={{ zIndex: 20 }}>
+                  <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
+                    <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{ transform: 'scale(1.1)' }} />
+                  </div>
                 </div>
-                <div className="relative pr-4 pl-2">
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
-                          <a href="/" className="flex items-center gap-3 relative">
-                            <Folder className="text-amber-600" style={{
-                            width: "22px",
-                            height: "22px"
-                          }} />
-                            <span className="font-medium text-base">Voir le fichier</span>
-                            <ArrowRight className="text-amber-600 group-hover:translate-x-1 transition-transform" style={{
-                            width: "22px",
-                            height: "22px"
-                          }} />
-                            <div className="absolute inset-0 w-full h-full overflow-hidden">
-                              <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+                  <div className="text-center sm:text-left">
+                    <h3 className="font-bold text-black text-lg">
+                      <div className="flex flex-col">
+                        <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
+                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
+                          Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
+                          <br />Obtenez toutes les ressources dans un fichier ZIP complet.
+                        </span>
+                      </div>
+                    </h3>
+                  </div>
+                  <div className="relative pr-4 pl-2">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
+                            <a href="/" className="flex items-center gap-3 relative">
+                              <Folder 
+                                className="text-amber-600" 
+                                style={{ width: "22px", height: "22px" }}
+                              />
+                              <span className="font-medium text-base">Voir le fichier</span>
+                              <ArrowRight 
+                                className="text-amber-600 group-hover:translate-x-1 transition-transform" 
+                                style={{ width: "22px", height: "22px" }}
+                              />
+                              <div className="absolute inset-0 w-full h-full overflow-hidden">
+                                <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                              </div>
+                            </a>
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
+                          <div className="flex flex-col">
+                            <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
+                              <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
                             </div>
-                          </a>
-                        </Button>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
-                        <div className="flex flex-col">
-                          <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                            <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
-                          </div>
-                          <div className="p-3 text-center">
-                            <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
-                            <div className="flex items-center justify-center gap-2 mb-2">
-                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
-                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
-                            </div>
-                            <div className="flex flex-wrap justify-center gap-2 mb-2">
-                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
-                              <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
-                            </div>
-                            <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
-                              <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
-                                <Download className="h-3.5 w-3.5" />
-                                <span>Télécharger maintenant</span>
+                            <div className="p-3 text-center">
+                              <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
+                              <div className="flex items-center justify-center gap-2 mb-2">
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
+                              </div>
+                              <div className="flex flex-wrap justify-center gap-2 mb-2">
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
+                              </div>
+                              <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
+                                <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
+                                  <Download className="h-3.5 w-3.5" />
+                                  <span>Télécharger maintenant</span>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,6 +195,8 @@ const BlogHeader = () => {
         }
         `}
       </style>
-    </div>;
+    </div>
+  );
 };
+
 export default BlogHeader;

@@ -11,8 +11,8 @@ interface BlogImageProps {
   isDefault?: boolean;
   width?: number;
   height?: number;
+  title?: string;
   priority?: boolean;
-  hidden?: boolean;
 }
 
 const BlogImage = ({ 
@@ -22,8 +22,8 @@ const BlogImage = ({
   isDefault = false,
   width = 800,
   height = 800,
-  priority = false,
-  hidden = false
+  title,
+  priority = false
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ const BlogImage = ({
     format: 'webp' // Cette valeur sera ignorée si l'image source est au format PNG
   });
   
-  const imageTitle = alt;
+  const imageTitle = title || alt;
   const fileName = src.split('/').pop() || 'image';
   const imageId = `img-${fileName.split('.')[0]}`;
   
@@ -111,10 +111,6 @@ const BlogImage = ({
       };
     }
   }, [priority, finalSrc]);
-
-  if (hidden) {
-    return null;
-  }
 
   return (
     <div 

@@ -1,4 +1,3 @@
-
 import { CountryName, CountryChampionship } from '@/types/countries';
 
 export const countries: CountryName[] = [
@@ -73,6 +72,3 @@ export const countryChampionships: CountryChampionship = {
   'Qatar': 'Stars League',
   'Gibraltar': 'National League'
 };
-
-export const categories = ['Logos', 'Analyses', 'Histoire', 'Pixel Art', 'Technique'];
-export const coursesData = ['Apprendre Photoshop', 'Créer un logo', 'Design graphique'];

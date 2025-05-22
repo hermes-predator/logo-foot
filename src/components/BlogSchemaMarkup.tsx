@@ -7,7 +7,7 @@ import { extractFAQs } from "../utils/faqExtractor";
 import { Helmet } from "react-helmet-async";
 
 interface BlogSchemaMarkupProps {
-  post?: BlogPost | any; // Accept either BlogPost type or any to handle different post types
+  post?: BlogPost;
   isBlogList?: boolean;
   addBreadcrumbs?: boolean;
   siteName?: string;

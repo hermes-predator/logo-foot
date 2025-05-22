@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check, Trophy } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -8,7 +8,6 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
-import { OptimizedImage } from '@/components/ui/optimized-image';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
@@ -169,55 +168,6 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                     </TooltipProvider>
                   </div>
                 </div>
-                
-                {/* Preview images showing folders from different countries */}
-                <div className="mt-6 p-3 bg-gray-800/95 rounded-lg border border-gray-700 shadow-inner mx-auto max-w-4xl">
-                  <h4 className="text-center text-white/90 text-sm mb-3 flex items-center justify-center gap-2">
-                    <Trophy className="h-4 w-4 text-amber-400" />
-                    <span>Aperçu de la collection par pays</span>
-                  </h4>
-                  
-                  {/* Grid for the two images side by side */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* First image */}
-                    <div className="border border-gray-700/50 rounded-md overflow-hidden">
-                      <OptimizedImage 
-                        src="/lovable-uploads/a3bf3c12-7202-4344-b061-7fe12f1ca116.png" 
-                        alt="Aperçu des dossiers de logos de football - Set 1" 
-                        width={600}
-                        height={600}
-                        className="w-full h-auto"
-                        priority={true}
-                      />
-                    </div>
-                    
-                    {/* Second image */}
-                    <div className="border border-gray-700/50 rounded-md overflow-hidden">
-                      <OptimizedImage 
-                        src="/lovable-uploads/e4fdc9fa-6ed2-476a-bf78-ff7c416da34d.png" 
-                        alt="Aperçu des dossiers de logos de football - Set 2" 
-                        width={600}
-                        height={600}
-                        className="w-full h-auto"
-                        priority={true}
-                      />
-                    </div>
-                  </div>
-                  
-                  {/* Original image underneath */}
-                  <div className="mt-4 border border-gray-700/50 rounded-md overflow-hidden">
-                    <OptimizedImage 
-                      src="/lovable-uploads/51b5be99-39d2-4526-9803-566ab15261d6.png" 
-                      alt="Aperçu de la collection de logos de football organisée par pays" 
-                      width={900}
-                      height={600}
-                      className="rounded-md mx-auto w-full h-auto"
-                      priority={true}
-                    />
-                  </div>
-                  
-                  <p className="text-center text-gray-300 text-xs mt-3">66 pays disponibles avec plus de 8600 logos au total en haute qualité</p>
-                </div>
               </div>
             </div>
           </div>
@@ -263,4 +213,3 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
     </div>;
 };
 export default BlogHeader;
-

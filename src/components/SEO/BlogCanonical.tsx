@@ -7,7 +7,6 @@ interface BlogCanonicalProps {
   category?: string;
   page?: number;
   baseUrl?: string;
-  post?: any; // Make post optional to fix type error
 }
 
 /**
@@ -17,8 +16,7 @@ interface BlogCanonicalProps {
 const BlogCanonical: React.FC<BlogCanonicalProps> = ({
   category,
   page = 1,
-  baseUrl = 'https://logo-foot.com',
-  post // Added post parameter
+  baseUrl = 'https://logo-foot.com'
 }) => {
   const { pathname, search } = useLocation();
   

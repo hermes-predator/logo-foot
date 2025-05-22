@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -13,7 +12,6 @@ import BlogPagination from '../components/blog/BlogPagination';
 import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
-import CountryFolders from '../components/blog/CountryFolders';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -92,12 +90,7 @@ const Blog = () => {
         {/* Header avec présentation du blog */}
         <BlogHeader />
 
-        {/* Section des dossiers par pays */}
-        <div className="container mx-auto px-4 pt-4">
-          <CountryFolders />
-        </div>
-
-        <div className="container mx-auto px-4 pt-8 pb-12">
+        <div className="container mx-auto px-4 pt-4 pb-12">
           {/* Liste d'articles paginée */}
           <BlogArticleList articles={paginatedItems} />
 

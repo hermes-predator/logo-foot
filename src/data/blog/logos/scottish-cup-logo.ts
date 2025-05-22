@@ -2,10 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const scottishCupLogoPost: BlogPost = {
-  id: 462,
+  id: 462, // ID correct qui correspond à l'URL
   title: "**Scottish Cup Logo** : L'Histoire d'un Emblème Centenaire du Football Écossais",
   date: "2025-04-27",
-  category: "competition-logos",
+  category: "logos",
+  subCategory: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du **scottish cup logo**, symbole historique du plus ancien trophée de football au monde. Une analyse détaillée de son design emblématique et de son évolution.",
   content: `# L'Histoire du **Scottish Cup Logo** : Un Héritage Footballistique Unique
 
@@ -35,6 +36,5 @@ Le **scottish league cup logo** continue d'inspirer les nouvelles générations 
 
 Le **scottish cup logo** reste un témoignage vivant de l'histoire du football écossais. Son évolution reflète la capacité du football à s'adapter aux changements tout en préservant son héritage historique unique.`,
   keywords: "scottish cup logo, scottish cup logo png, scottish league cup logo, football écossais, coupe d'écosse",
-  subCategory: "competition-logos",
   galleryImageId: 462
 };

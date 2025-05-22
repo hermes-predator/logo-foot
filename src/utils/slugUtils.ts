@@ -54,19 +54,19 @@ export function extractPostIdFromUrl(url: string): number | null {
     // Nettoyer l'URL (enlever le domaine si présent)
     const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
     
-    // Différents formats possibles: 
-    // 1. "123-slug-title"
-    // 2. "123"
-    // Extraire uniquement la partie numérique au début
+    // Support pour différents formats d'URL possibles
+    // 1. Format standard: "123-slug-title"
+    // 2. Format simple: "123"
+    // 3. Format étendu avec nombres élevés comme "99961-scottish-cup-logo"
     const match = path.match(/^(\d+)(?:-|$)/);
     
     if (match && match[1]) {
-      return parseInt(match[1], 10);
+      const id = parseInt(match[1], 10);
+      console.log("ID extrait de l'URL:", id, "depuis le chemin:", path);
+      return id;
     }
     
-    // Si aucun ID numérique n'a été trouvé, tenter de récupérer la totalité du slug
     console.warn('Impossible d\'extraire l\'ID de l\'URL:', url);
-    
     return null;
   } catch (error) {
     console.error('Erreur lors de l\'extraction de l\'ID de l\'URL:', error);

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -140,19 +141,21 @@ const BlogHeader = () => {
                             <p className="font-semibold text-[14px]">⦗FRONT-CLOUD⦘~ Football.zip</p>
                           </div>
                           <div className="p-3">
-                            <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
+                            <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football</p>
                             <div className="flex items-center gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
                               <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
                             </div>
                             <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
                               <div className="flex items-center text-xs text-green-700 gap-1.5">
                                 <Download className="h-3.5 w-3.5" />
-                                <span>Téléchargement instantané</span>
+                                <span>Téléchargement direct</span>
                               </div>
                             </div>
                           </div>
@@ -208,3 +211,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

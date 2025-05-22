@@ -29,6 +29,9 @@ const Blog = () => {
     ? BLOG_CATEGORIES[categoryParam]?.description 
     : "Découvrez notre collection d'articles sur les logos du football mondial, des analyses et des conseils techniques.";
   
+  // Filter categories to display (exclude 'legacy')
+  const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
+
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -99,6 +102,18 @@ const Blog = () => {
         <BlogHeader />
         
         <div className="container mx-auto px-4 pt-4 pb-12">
+          {/* Category selection section avec design amélioré */}
+          <div className="mb-6 bg-white rounded-lg p-4 shadow-sm border border-gray-100 max-w-5xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-2 px-3">
+              <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!categoryParam ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
+                Tout
+              </a>
+              {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${categoryParam === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
+                  {category.name}
+                </a>)}
+            </div>
+          </div>
+          
           {/* Description de la catégorie actuelle */}
           {currentCategoryDescription && (
             <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-5xl mx-auto">

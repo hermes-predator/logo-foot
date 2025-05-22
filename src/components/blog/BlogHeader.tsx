@@ -37,16 +37,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
             </div>
 
             {/* Category selection section with added horizontal spacing for wider layout */}
-            <div className="mb-6">
-              <div className="flex flex-wrap justify-center gap-2 px-3">
-                <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                  Tout
-                </a>
-                {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                    {category.name}
-                  </a>)}
-              </div>
-            </div>
+            
 
             {/* Container for the yellow block with improved attention-grabbing design */}
             <div className="mt-8 relative">

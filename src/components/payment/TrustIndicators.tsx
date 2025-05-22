@@ -63,7 +63,7 @@ const TrustCard = ({ icon, title, description, hoverContent }: TrustCardProps) =
           <p className="text-xs text-gray-600 text-center">{description}</p>
         </div>
       </HoverCardTrigger>
-      <HoverCardContent className="w-64 p-4 bg-white border border-blue-100 shadow-lg rounded-lg" side="top">
+      <HoverCardContent className="w-64 p-4 bg-white shadow-lg rounded-lg border-0" side="top">
         <p className="text-sm text-gray-700">{hoverContent}</p>
       </HoverCardContent>
     </HoverCard>

@@ -17,6 +17,9 @@ import BlogImage from '../components/blog/BlogImage';
 import { ImageObjectSchema } from '../components/schema/ImageObjectSchema';
 import CanonicalTag from '../components/SEO/CanonicalTag';
 import FloatingCTA from '../components/blog/FloatingCTA';
+import { LazySection } from '@/components/ui/lazy-section';
+import { prefetchCriticalResources } from '@/lib/core-web-vitals';
+import { measurePerformance } from '@/lib/performance';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -24,6 +27,16 @@ const BlogPost = () => {
   const [isClient, setIsClient] = useState(false);
   const [mainImage, setMainImage] = useState<string | null>(null);
   const [imageFormat, setImageFormat] = useState<string>('webp');
+  
+  // Précharger les ressources critiques dès que possible
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Préchargement des ressources critiques pour la page
+      measurePerformance('preload-critical', () => {
+        prefetchCriticalResources();
+      });
+    }
+  }, []);
   
   useEffect(() => {
     setIsClient(true);
@@ -154,6 +167,12 @@ const BlogPost = () => {
           {/* Métadonnées améliorées pour Google Images */}
           <meta name="image" content={featuredImageUrl} />
           <meta itemProp="image" content={featuredImageUrl} />
+          
+          {/* Preloading pour l'image principale */}
+          <link rel="preload" href={featuredImageUrl} as="image" />
+          
+          {/* Preloading des polices essentielles */}
+          <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         </Helmet>
         
         {/* Tag canonique explicite */}
@@ -177,12 +196,12 @@ const BlogPost = () => {
         
         <BlogSchemaMarkup post={post} />
         
-        {/* Header de blog */}
+        {/* Header de blog - chargement immédiat car critique */}
         <BlogHeader />
         
         <div className="container mx-auto px-4 py-8">
           <main className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            {/* Article header */}
+            {/* Article header - critique, chargé immédiatement */}
             <header className="p-6 md:p-8 border-b border-gray-200">
               <div className="flex items-center gap-2 mb-4">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
@@ -231,7 +250,7 @@ const BlogPost = () => {
               </div>
             </header>
             
-            {/* Image principale mise en avant pour Google Images */}
+            {/* Image principale mise en avant pour Google Images - critique, chargée immédiatement */}
             {post.galleryImageId && (
               <div className="px-6 md:px-8 pt-6">
                 <BlogImage 
@@ -244,7 +263,7 @@ const BlogPost = () => {
               </div>
             )}
             
-            {/* Article content avec style amélioré */}
+            {/* Article content avec style amélioré - Contenu principal, chargé immédiatement */}
             <article className="prose prose-lg max-w-none p-6 md:p-8">
               <ReactMarkdown
                 components={{
@@ -288,17 +307,22 @@ const BlogPost = () => {
               </ReactMarkdown>
             </article>
             
-            {/* Related posts */}
-            <div className="px-6 md:px-8 pb-8">
+            {/* Related posts - Non critique, chargé en lazy */}
+            <LazySection height="300px" className="px-6 md:px-8 pb-8">
               <RelatedPosts post={post} allPosts={blogPosts} maxPosts={3} />
-            </div>
+            </LazySection>
           </main>
         </div>
         
-        <Footer />
+        {/* Footer - Non critique, chargé en lazy */}
+        <LazySection height="200px">
+          <Footer />
+        </LazySection>
         
-        {/* Affichage de la bannière flottante CTA */}
-        <FloatingCTA />
+        {/* Affichage de la bannière flottante CTA - Non critique, chargé en lazy */}
+        <LazySection height="0">
+          <FloatingCTA />
+        </LazySection>
       </div>
     </PageTransition>
   );

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -89,7 +88,7 @@ const Blog = () => {
         />
 
         {/* Header avec présentation du blog */}
-        <BlogHeader hideThirdImage={true} />
+        <BlogHeader />
 
         <div className="container mx-auto px-4 pt-4 pb-12">
           {/* Liste d'articles paginée */}

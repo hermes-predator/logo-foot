@@ -11,6 +11,7 @@ export function generateSlug(title: string): string {
   // Normalisation et préparation du slug
   const slug = title
     .toLowerCase()
+    .replace(/\*\*/g, '') // Enlever les marques de gras markdown **
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '') // Enlève les accents
     .replace(/[^a-z0-9]+/g, '-') // Remplace les caractères spéciaux par des tirets

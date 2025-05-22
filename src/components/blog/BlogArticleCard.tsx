@@ -33,6 +33,12 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
               width={44}
               height={44}
               className="w-full h-full object-cover rounded-bl-xl"
+              onError={(e) => {
+                // Fallback en cas d'échec du chargement
+                console.log(`Image non trouvée pour ID: ${post.galleryImageId}, article: ${post.title}`);
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none'; // Masquer l'image qui a échoué
+              }}
             />
           </div>
         ) : (

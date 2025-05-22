@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -9,22 +10,22 @@ import { BlogArticleSchema } from '../components/schema/BlogArticleSchema';
 import { defaultCover } from '../constants/defaults';
 import PageTransition from "@/components/ui/page-transition";
 import BlogCanonical from '../components/SEO/BlogCanonical';
+import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
-interface BlogPostPageProps {
-  post: {
-    id: number;
-    title: string;
-    date: string;
-    content: string;
-    category: string;
-    subCategory: string;
-    keywords: string;
-    galleryImageId?: number;
-    coverImage?: string;
-  };
+interface BlogPostProps {
+  id: number;
+  title: string;
+  date: string;
+  content: string;
+  category: string;
+  subCategory?: string;
+  keywords: string;
+  excerpt?: string;
+  galleryImageId?: number;
+  coverImage?: string;
 }
 
-export const BlogPostPage = ({ post }: BlogPostPageProps) => {
+export const BlogPostPage = ({ post }: { post: BlogPostProps }) => {
   const { id } = useParams<{ id: string }>();
   const postUrl = `/blog/${id}`;
 
@@ -44,16 +45,19 @@ export const BlogPostPage = ({ post }: BlogPostPageProps) => {
       <div className="bg-gray-50 min-h-screen">
         <Helmet>
           <title>{post.title} - Logo Foot</title>
-          <meta name="description" content={post.excerpt} />
+          <meta name="description" content={post.excerpt || ''} />
           <meta name="keywords" content={post.keywords} />
           <link rel="canonical" href={`https://logo-foot.com${postUrl}`} />
           <script type="application/ld+json">
-            {JSON.stringify(BlogArticleSchema({ post: post }))}
+            {JSON.stringify(BlogArticleSchema({ post }))}
           </script>
         </Helmet>
 
+        {/* Schema Markup amélioré */}
+        <BlogSchemaMarkup post={post} />
+
         {/* Balises canoniques pour le SEO */}
-        <BlogCanonical post={post} />
+        <BlogCanonical />
 
         {/* Header avec présentation du blog */}
         <BlogHeader />
@@ -89,7 +93,21 @@ const BlogPost = () => {
     );
   }
 
-  return <BlogPostPage post={post} />;
+  // Create compatible post object with required properties
+  const blogPostProps: BlogPostProps = {
+    id: post.id,
+    title: post.title,
+    date: post.date,
+    content: post.content,
+    category: post.category,
+    subCategory: post.subCategory || '',
+    keywords: post.keywords || '',
+    excerpt: post.excerpt || '',
+    galleryImageId: post.galleryImageId,
+    coverImage: post.coverImage
+  };
+
+  return <BlogPostPage post={blogPostProps} />;
 };
 
 export default BlogPost;

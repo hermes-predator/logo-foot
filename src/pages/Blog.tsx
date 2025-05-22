@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -13,7 +12,6 @@ import BlogPagination from '../components/blog/BlogPagination';
 import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
-import { BLOG_CATEGORIES } from '../types/blog';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();

@@ -190,7 +190,7 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                   
                   {/* Légende explicative des images */}
                   <div className="mt-3 text-center">
-                    <p className="text-xs text-amber-700/80 italic">Chaque collection contient tous les logos des clubs classés par pays, dans un dossier dédié</p>
+                    <p className="text-xs text-amber-700/80 italic">Chaque collection contient tous les logos des clubs classés par pays, dans un dossier ZIP</p>
                   </div>
                 </div>
               </div>

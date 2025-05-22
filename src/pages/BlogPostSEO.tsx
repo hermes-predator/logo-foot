@@ -8,9 +8,10 @@ import CanonicalTag from '../components/SEO/CanonicalTag';
 import HreflangTags from '../components/SEO/HreflangTags';
 import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
 import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import BackToButton from '../components/blog/BackToButton';
+import { formatDate } from '../utils/dateUtils';
 
 /**
  * Composant pour gérer uniquement le SEO d'un article de blog
@@ -54,15 +55,23 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
-      {/* Navigation améliorée avec un design plus visible */}
-      <div className="bg-white shadow-md border-b border-gray-200 mb-6">
-        <div className="container mx-auto px-4 py-4 flex items-center gap-4">
-          <BackToButton to="/blog" label="Blog" className="mb-0" />
+      {/* En-tête de l'article avec le titre et la date */}
+      <div className="bg-blue-50 py-8 mb-6">
+        <div className="container mx-auto px-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">{post.title}</h1>
+          {post.date && (
+            <div className="text-sm text-gray-600 mb-4">
+              {formatDate(post.date)}
+            </div>
+          )}
           
-          <div className="flex items-center text-gray-600">
-            <ArrowLeft className="h-4 w-4 mr-1" />
-            <Link to="/blog" className="text-blue-600 hover:text-blue-800 font-medium">
-              Retour au Blog
+          {/* Bouton de retour au blog en dessous du header */}
+          <div className="flex items-center gap-4 mt-4">
+            <BackToButton to="/blog" label="Blog" className="mb-0" />
+            
+            <Link to="/blog" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm">
+              <ArrowLeft className="h-4 w-4 mr-1" />
+              Retour à la liste des articles
             </Link>
           </div>
         </div>

@@ -187,14 +187,46 @@ const BlogPost = () => {
               </div>
             )}
             
-            {/* Article content */}
+            {/* Article content avec style amélioré */}
             <article className="prose prose-lg max-w-none p-6 md:p-8">
-              <ReactMarkdown components={{
-                img: ({node, ...props}) => {
-                  const { src, alt } = props;
-                  return <BlogImage src={src || ''} alt={alt || ''} />;
-                }
-              }}>
+              <ReactMarkdown
+                components={{
+                  img: ({node, ...props}) => {
+                    const { src, alt } = props;
+                    return <BlogImage src={src || ''} alt={alt || ''} />;
+                  },
+                  h1: ({node, ...props}) => (
+                    <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4" {...props} />
+                  ),
+                  h2: ({node, ...props}) => (
+                    <h2 className="text-2xl font-bold text-gray-800 mt-6 mb-3" {...props} />
+                  ),
+                  h3: ({node, ...props}) => (
+                    <h3 className="text-xl font-bold text-gray-800 mt-5 mb-3" {...props} />
+                  ),
+                  p: ({node, ...props}) => (
+                    <p className="text-gray-700 leading-relaxed mb-4" {...props} />
+                  ),
+                  ul: ({node, ...props}) => (
+                    <ul className="list-disc pl-5 mb-4 text-gray-700" {...props} />
+                  ),
+                  ol: ({node, ...props}) => (
+                    <ol className="list-decimal pl-5 mb-4 text-gray-700" {...props} />
+                  ),
+                  li: ({node, ...props}) => (
+                    <li className="mb-1 text-gray-700" {...props} />
+                  ),
+                  strong: ({node, ...props}) => (
+                    <strong className="font-bold text-gray-900" {...props} />
+                  ),
+                  blockquote: ({node, ...props}) => (
+                    <blockquote className="border-l-4 border-blue-500 pl-4 py-2 italic text-gray-700 my-4" {...props} />
+                  ),
+                  a: ({node, ...props}) => (
+                    <a className="text-blue-600 hover:text-blue-800 hover:underline" {...props} />
+                  )
+                }}
+              >
                 {post.content}
               </ReactMarkdown>
             </article>

@@ -1,36 +1,29 @@
 
 import React from 'react';
 import { ShieldCheck, Download, HandHeart } from 'lucide-react';
+import { Separator } from "@/components/ui/separator";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 const TrustIndicators = () => {
   return (
-    <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mb-6">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
       <TrustCard 
-        icon={
-          <div>
-            <ShieldCheck className="text-gray-600 stroke-[1.75px]" />
-          </div>
-        }
+        icon={<ShieldCheck className="text-blue-600" />}
         title="Paiement Sécurisé"
         description="Transactions via SumUp"
+        hoverContent="Notre système de paiement est entièrement sécurisé avec un cryptage SSL et respecte les normes PCI DSS."
       />
       <TrustCard 
-        icon={
-          <div>
-            <Download className="text-gray-600 stroke-[1.75px]" />
-          </div>
-        }
+        icon={<Download className="text-blue-600" />}
         title="Téléchargement Instantané"
         description="Page d'après-paiement"
+        hoverContent="Accédez immédiatement à votre fichier après paiement, sans délai d'attente ou procédure complexe."
       />
       <TrustCard 
-        icon={
-          <div>
-            <HandHeart className="text-gray-600 stroke-[1.75px]" />
-          </div>
-        }
+        icon={<HandHeart className="text-blue-600" />}
         title="Support Disponible"
         description="Email : contact@logo-foot.com"
+        hoverContent="Notre équipe de support est disponible pour répondre à vos questions et vous aider en cas de besoin."
       />
     </div>
   );
@@ -40,26 +33,40 @@ interface TrustCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
+  hoverContent: string;
 }
 
-const TrustCard = ({ icon, title, description }: TrustCardProps) => {
+const TrustCard = ({ icon, title, description, hoverContent }: TrustCardProps) => {
   return (
-    <div 
-      className="flex flex-col items-center p-4 bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 rounded-lg relative overflow-hidden"
-      role="article"
-      aria-label={`Information sur ${title}`}
-    >
-      {/* Removed hover effects and transitions */}
-      
-      {/* Icône avec style cloud-like - version claire avec bordure plus visible */}
-      <div className="w-10 h-10 mb-3 flex items-center justify-center bg-gradient-to-b from-white to-blue-50/10 rounded-full p-2 relative z-10 shadow-sm border border-blue-100/30" aria-hidden="true">
-        {icon}
-      </div>
-      
-      {/* Texte sans transition au survol */}
-      <h3 className="font-semibold mb-1.5 text-sm text-gray-900">{title}</h3>
-      <p className="text-xs text-gray-600 text-center">{description}</p>
-    </div>
+    <HoverCard>
+      <HoverCardTrigger asChild>
+        <div 
+          className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-blue-100 transition-all duration-300 hover:shadow-md hover:border-blue-200 cursor-pointer"
+          role="article"
+          aria-label={`Information sur ${title}`}
+        >
+          {/* Icône stylisée avec un effet de halo */}
+          <div className="mb-3 relative">
+            <div className="absolute inset-0 bg-blue-100 rounded-full blur-md opacity-20 scale-150"></div>
+            <div className="relative z-10 w-12 h-12 flex items-center justify-center bg-gradient-to-b from-blue-50 to-white rounded-full shadow-sm border border-blue-100">
+              {icon}
+            </div>
+          </div>
+          
+          {/* Séparateur décoratif */}
+          <Separator className="w-8 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
+          
+          {/* Titre avec style amélioré */}
+          <h3 className="font-semibold mb-1 text-gray-800 text-center">{title}</h3>
+          
+          {/* Description avec légère opacité */}
+          <p className="text-xs text-gray-600 text-center">{description}</p>
+        </div>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-64 p-4 bg-white border border-blue-100 shadow-lg rounded-lg">
+        <p className="text-sm text-gray-700">{hoverContent}</p>
+      </HoverCardContent>
+    </HoverCard>
   );
 };
 

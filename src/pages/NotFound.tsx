@@ -5,6 +5,8 @@ import PageTransition from "@/components/ui/page-transition";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { extractPostIdFromUrl } from "@/utils/slugUtils";
+import { blogPosts } from "@/data/blog";
 
 const NotFound = () => {
   const location = useLocation();
@@ -14,6 +16,29 @@ const NotFound = () => {
       "404 Error: User attempted to access non-existent route:",
       location.pathname
     );
+    
+    // Tentative de diagnostic si c'est une page d'article de blog
+    if (location.pathname.startsWith('/blog/')) {
+      const postId = extractPostIdFromUrl(location.pathname);
+      console.error(`Tentative d'accès à l'article ID: ${postId}`);
+      
+      if (postId) {
+        const post = blogPosts.find(p => p.id === postId);
+        if (!post) {
+          console.error(`L'article avec l'ID ${postId} n'existe pas dans blogPosts`);
+          
+          // Vérifier si l'ID existe dans les différentes catégories
+          const allCategories = ['logos', 'history', 'technical', 'analysis', 'pixel-art'];
+          allCategories.forEach(category => {
+            const categoryPosts = require(`../data/blog/${category}/index.ts`).default || [];
+            const foundInCategory = categoryPosts.some((p: any) => p.id === postId);
+            if (foundInCategory) {
+              console.error(`L'article avec l'ID ${postId} existe dans la catégorie ${category} mais pas dans blogPosts`);
+            }
+          });
+        }
+      }
+    }
   }, [location.pathname]);
 
   return (

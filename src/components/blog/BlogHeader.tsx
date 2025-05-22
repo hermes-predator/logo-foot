@@ -1,90 +1,264 @@
 
 import React from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { useIsMobile } from '@/hooks/use-mobile';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { BLOG_CATEGORIES } from '@/types/blog';
+import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import { Badge } from '@/components/ui/badge';
 import { OptimizedImage } from '@/components/ui/optimized-image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const BlogHeader = () => {
-  const isMobile = useIsMobile();
+  // Filter categories to display (exclude 'legacy')
+  const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
 
-  return (
-    <div className="bg-gradient-to-b from-blue-50 to-white border-b border-blue-100/50 py-8 px-4 sm:py-12">
-      <div className="container mx-auto max-w-5xl">
-        <div className="flex flex-col items-center text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
-            Blog Logo Foot
-          </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explorez notre collection d'articles sur les logos de football, découvrez leur histoire et signification
-          </p>
-        </div>
+  // Get current category from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentCategory = urlParams.get('category');
+  
+  return <div className="container mx-auto px-4 mb-6">
+      <div className="text-center">
         
-        {/* Carousel de présentation */}
-        <div className="mt-6 mb-8 relative max-w-4xl mx-auto">
-          <Carousel
-            opts={{ loop: true }}
-            className="w-full"
-          >
-            <CarouselContent>
-              <CarouselItem>
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png"
-                    alt="Collection de logos de football"
-                    priority
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-              <CarouselItem>
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png"
-                    alt="Histoire des logos de football européens"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-              <CarouselItem>
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/81f57759-cc4e-457d-a95d-251dfa7958de.png"
-                    alt="Évolution des logos de football"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-              <CarouselItem>
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/473f7b51-aeab-46c6-8dae-ae1850e2f111.png"
-                    alt="Logos de clubs de football africains"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-              <CarouselItem>
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png"
-                    alt="Logos des équipes nationales européennes"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-            </CarouselContent>
-            {!isMobile && (
-              <>
-                <CarouselPrevious className="left-2" />
-                <CarouselNext className="right-2" />
-              </>
-            )}
-          </Carousel>
+        {/* Increased max-width from max-w-4xl to max-w-5xl to allow even more horizontal space */}
+        <div className="max-w-5xl mx-auto relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-b-2xl rounded-t-none blur-lg"></div>
+          <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-b-2xl rounded-t-none p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
+                <BookOpen className="w-5 h-5 text-black" />
+              </div>
+              <h2 className="font-semibold text-gray-900">Le Blog des logos de football</h2>
+            </div>
+
+            <div className="mb-5 text-center">
+              <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football.<br /> 
+Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou créez votre propre logo.</p>
+            </div>
+
+            {/* Category selection section with added horizontal spacing for wider layout */}
+            
+
+            {/* Container for the yellow block with improved attention-grabbing design */}
+            <div className="mt-8 relative">
+              {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
+              zIndex: 30
+            }}>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div>
+                        <GoogleDriveBadge cursorHelp={true} />
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
+                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+              
+              {/* Yellow alert block with enhanced visual appeal - REMOVED SHADOW */}
+              <div className="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-50 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
+                {/* Animated pulse effect in the background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_8s_ease-in-out_infinite] z-0"></div>
+                
+                {/* Alert Triangle in the upper left corner with improved animation */}
+                <div className="absolute top-0 left-0" style={{
+                zIndex: 20
+              }}>
+                  <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
+                    <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
+                    transform: 'scale(1.1)'
+                  }} />
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+                  <div className="text-center sm:text-left pl-10">
+                    <h3 className="font-bold text-black text-lg">
+                      <div className="flex flex-col">
+                        <span className="text-2xl font-bold bg-gradient-to-r from-amber-700 to-amber-900 text-transparent bg-clip-text">Vous cherchez tous les logos de club de foot ?</span>
+                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
+                          Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
+                          <br />Obtenez toutes les ressources dans un fichier ZIP complet.
+                        </span>
+                      </div>
+                    </h3>
+                  </div>
+                  <div className="relative pr-4 pl-2">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button asChild className="bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 whitespace-nowrap text-white border border-amber-600/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-300 group">
+                            <a href="/" className="flex items-center gap-3 relative">
+                              <Folder className="text-white" style={{
+                              width: "22px",
+                              height: "22px"
+                            }} />
+                              <span className="font-medium text-base">Voir le fichier</span>
+                              <ArrowRight className="text-white/90 group-hover:translate-x-1 transition-transform" style={{
+                              width: "22px",
+                              height: "22px"
+                            }} />
+                              <div className="absolute inset-0 w-full h-full overflow-hidden">
+                                <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
+                              </div>
+                            </a>
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
+                          <div className="flex flex-col">
+                            <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
+                              <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                            </div>
+                            <div className="p-3 text-center">
+                              <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
+                              <div className="flex items-center justify-center gap-2 mb-2">
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
+                              </div>
+                              <div className="flex flex-wrap justify-center gap-2 mb-2">
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
+                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
+                              </div>
+                              <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
+                                <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
+                                  <Download className="h-3.5 w-3.5" />
+                                  <span>Télécharger maintenant</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
+                </div>
+
+                {/* Modified carousel to show two images by default with loop disabled */}
+                <div className="mt-6 pt-5 border-t border-amber-200/60">
+                  <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
+                  
+                  {/* Modified carousel implementation to show two images by default with loop disabled */}
+                  <Carousel className="w-full" opts={{ align: "start", loop: false }}>
+                    <CarouselContent className="-ml-2 md:-ml-4">
+                      {/* First image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
+                              alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                      
+                      {/* Second image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
+                              alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                      
+                      {/* Third image */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/bac193c3-2fcc-4ee0-964c-7e2c1ad83890.png" 
+                              alt="Collections de logos: Russie, Suède, Suisse, Tchéquie, Autriche, Bulgarie, Croatie, Hongrie, Serbie" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                      
+                      {/* Fourth image - Newly added */}
+                      <CarouselItem className="pl-2 md:pl-4 basis-1/2">
+                        <div className="flex justify-center">
+                          <div className="relative rounded-lg overflow-hidden shadow-md max-w-full h-auto">
+                            <img 
+                              src="/lovable-uploads/923b6032-194e-45e0-8dbf-9b832712094d.png" 
+                              alt="Collections de logos: Slovaquie, Biélorussie, Écosse, Irlande, Pays de Galles, Finlande, Ukraine, Australie, Arabie Saoudite" 
+                              className="w-full h-auto object-cover" 
+                            />
+                          </div>
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    
+                    <CarouselPrevious className="left-1" />
+                    <CarouselNext className="right-1" />
+                  </Carousel>
+                  
+                  {/* Légende explicative des images */}
+                  <div className="mt-3 text-center">
+                    <p className="text-xs text-amber-700/80 italic">Chaque collection contient tous les logos des clubs classés par pays, dans un dossier ZIP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
 
+      <style>
+        {`
+        @keyframes floating {
+          0% { transform: translateY(0) rotate(0deg) scale(1.1); }
+          25% { transform: translateY(-3px) rotate(0deg) scale(1.13); }
+          50% { transform: translateY(0) rotate(0deg) scale(1.16); }
+          75% { transform: translateY(2px) rotate(0deg) scale(1.13); }
+          100% { transform: translateY(0) rotate(0deg) scale(1.1); }
+        }
+        
+        @keyframes shine {
+          from {
+            left: -100%;
+          }
+          50% {
+            left: 100%;
+          }
+          to {
+            left: 100%;
+          }
+        }
+        
+        @keyframes shine-effect {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+
+        .animate-icon-floating {
+          animation: floating 4s ease-in-out infinite;
+        }
+        
+        .animate-shine-effect {
+          animation: shine-effect 1.2s ease-out;
+        }
+        `}
+      </style>
+    </div>;
+};
 export default BlogHeader;

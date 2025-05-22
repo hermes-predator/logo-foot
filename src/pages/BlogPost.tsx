@@ -5,6 +5,7 @@ import { blogPosts } from '../data/blog';
 import { extractPostIdFromUrl } from '../utils/slugUtils';
 import NotFound from './NotFound';
 import PageTransition from '@/components/ui/page-transition';
+import { toast } from 'sonner';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -26,6 +27,24 @@ const BlogPost = () => {
           setPost(foundPost);
         } else {
           console.error("Article non trouvé avec l'ID:", postId);
+          
+          // Essayons de trouver l'article par son titre dans le slug
+          const slugParts = slug.split('-').slice(1).join('-');
+          const possibleMatch = blogPosts.find(p => {
+            const postSlug = p.title.toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/[^a-z0-9]+/g, '-')
+              .includes(slugParts);
+            
+            return postSlug;
+          });
+          
+          if (possibleMatch) {
+            console.log("Article trouvé par correspondance de titre:", possibleMatch.title);
+            setPost(possibleMatch);
+            toast.info("Redirection vers l'article correspondant");
+          }
         }
       } else {
         console.error("Impossible d'extraire un ID valide du slug:", slug);

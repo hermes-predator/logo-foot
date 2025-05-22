@@ -55,9 +55,6 @@ export function extractPostIdFromUrl(url: string): number | null {
     const path = url.includes('/blog/') ? url.split('/blog/')[1] : url;
     
     // Support pour différents formats d'URL possibles
-    // 1. Format standard: "123-slug-title"
-    // 2. Format simple: "123"
-    // 3. Format étendu avec nombres élevés comme "99961-scottish-cup-logo"
     const match = path.match(/^(\d+)(?:-|$)/);
     
     if (match && match[1]) {

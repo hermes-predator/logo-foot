@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Download } from 'lucide-react';
+import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
@@ -8,6 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { BLOG_CATEGORIES } from '@/types/blog';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Badge } from '@/components/ui/badge';
+
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
@@ -15,6 +16,7 @@ const BlogHeader = () => {
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
   const currentCategory = urlParams.get('category');
+  
   return <div className="container mx-auto px-4 mb-6">
       <div className="text-center">
         
@@ -46,12 +48,12 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
               </div>
             </div>
 
-            {/* Container for the yellow block */}
+            {/* Container for the yellow block with improved attention-grabbing design */}
             <div className="mt-8 relative">
               {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
               zIndex: 30
-            }}>
+              }}>
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -69,46 +71,69 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de foot
                 </TooltipProvider>
               </div>
               
-              {/* Yellow alert block */}
-              <div className="bg-amber-100 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-                {/* Alert Triangle in the upper left corner */}
+              {/* Yellow alert block with enhanced visual appeal */}
+              <div className="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-50 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden shadow-md hover:shadow-lg">
+                {/* Animated pulse effect in the background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_8s_ease-in-out_infinite] z-0"></div>
+                
+                {/* Alert Triangle in the upper left corner with improved animation */}
                 <div className="absolute top-0 left-0" style={{
                 zIndex: 20
-              }}>
+                }}>
                   <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
                     <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
                     transform: 'scale(1.1)'
-                  }} />
+                    }} />
                   </div>
                 </div>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-                  <div className="text-center sm:text-left pl-10"> {/* Changement de pl-4 à pl-10 ici pour décaler davantage le texte */}
+                  <div className="text-center sm:text-left pl-10">
                     <h3 className="font-bold text-black text-lg">
                       <div className="flex flex-col">
-                        <span className="text-2xl font-bold">Vous cherchez tous les logos de club de foot ?</span>
+                        <span className="text-2xl font-bold bg-gradient-to-r from-amber-700 to-amber-900 text-transparent bg-clip-text">Vous cherchez tous les logos de club de foot ?</span>
                         <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
                           Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
                           <br />Obtenez toutes les ressources dans un fichier ZIP complet.
                         </span>
                       </div>
                     </h3>
+                    
+                    {/* Added benefit points with check marks */}
+                    <div className="mt-3 grid grid-cols-2 gap-2 text-sm text-left">
+                      <div className="flex items-start gap-1.5">
+                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                        <span className="text-amber-800/90">Format PNG haute qualité</span>
+                      </div>
+                      <div className="flex items-start gap-1.5">
+                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                        <span className="text-amber-800/90">Classés par 66 pays</span>
+                      </div>
+                      <div className="flex items-start gap-1.5">
+                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                        <span className="text-amber-800/90">Accès immédiat</span>
+                      </div>
+                      <div className="flex items-start gap-1.5">
+                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                        <span className="text-amber-800/90">Mise à jour régulière</span>
+                      </div>
+                    </div>
                   </div>
                   <div className="relative pr-4 pl-2">
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <Button asChild className="bg-gradient-to-b from-white via-gray-50 to-gray-100 hover:from-gray-50 hover:to-gray-200 whitespace-nowrap text-gray-800 border border-amber-200/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.8)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.9)] transition-all duration-300 group">
+                          <Button asChild className="bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 whitespace-nowrap text-white border border-amber-600/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-300 group">
                             <a href="/" className="flex items-center gap-3 relative">
-                              <Folder className="text-amber-600" style={{
+                              <Folder className="text-white" style={{
                               width: "22px",
                               height: "22px"
-                            }} />
+                              }} />
                               <span className="font-medium text-base">Voir le fichier</span>
-                              <ArrowRight className="text-amber-600 group-hover:translate-x-1 transition-transform" style={{
+                              <ArrowRight className="text-white/90 group-hover:translate-x-1 transition-transform" style={{
                               width: "22px",
                               height: "22px"
-                            }} />
+                              }} />
                               <div className="absolute inset-0 w-full h-full overflow-hidden">
                                 <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
                               </div>

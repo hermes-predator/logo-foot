@@ -1,3 +1,4 @@
+
 import { useNavigate } from 'react-router-dom';
 import { CategoriesMenu } from './CategoriesMenu';
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,7 @@ const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const displayedCategories = Object.keys(BLOG_CATEGORIES)
     .filter(key => key !== 'legacy')
-    .reduce((obj: any, key: string) => {
+    .reduce((obj: Record<string, { name: string; description: string }>, key: string) => {
       obj[key] = BLOG_CATEGORIES[key as keyof typeof BLOG_CATEGORIES];
       return obj;
     }, {});

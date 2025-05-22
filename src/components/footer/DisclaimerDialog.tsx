@@ -11,7 +11,7 @@ const DisclaimerDialog = () => {
   return (
     <Dialog>
       <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
-        <AlertTriangle className="w-4 h-4 text-blue-600" />
+        <AlertTriangle className="w-4 h-4" />
         Disclaimer
       </DialogTrigger>
       <DialogContent className={`max-w-2xl ${isMobile ? 'max-h-[90vh] px-4' : 'max-h-[80vh]'} overflow-y-auto bg-gradient-to-b from-white to-gray-50 shadow-xl border-0`}>

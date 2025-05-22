@@ -19,12 +19,12 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
   const isMobile = useIsMobile();
   
   return (
-    <div className={cn("w-full max-w-5xl mx-auto", className)}>
+    <div className={cn("w-full mx-auto", className)}>
       <Carousel
         opts={{
           align: "start",
           loop: true,
-          slidesToScroll: isMobile ? 1 : 2,
+          slidesToScroll: isMobile ? 1 : 1,
         }}
         className="w-full"
       >
@@ -34,7 +34,7 @@ const BlogCarousel = ({ images, className }: BlogCarouselProps) => {
               key={index} 
               className={cn(
                 "flex justify-center", 
-                isMobile ? "basis-full" : "basis-1/2"
+                isMobile ? "basis-full" : "basis-3/4 md:basis-2/3 lg:basis-1/2"
               )}
             >
               <div className="w-full aspect-square overflow-hidden rounded-lg">

@@ -41,7 +41,7 @@ import { bandirmasporLogoPost } from './bandirmaspor-logo';
 import { guangzhouLogoPost } from './guangzhou-logo';
 import { copaSudamericanaLogoPost } from './copa-sudamericana-logo';
 import { scottishCupLogoPost } from './scottish-cup-logo';
-import { worldCupPost } from './world-cup-logo';
+import { worldCupLogoPost } from './world-cup-logo';
 import { saoPauloLogoPost } from './sao-paulo-logo';
 import { qatarStarsLeagueLogoPost } from './qatar-stars-league-logo';
 
@@ -86,7 +86,7 @@ export const logoPosts: BlogPost[] = [
   bandirmasporLogoPost,
   guangzhouLogoPost,
   copaSudamericanaLogoPost,
-  worldCupPost,
+  worldCupLogoPost,
   saoPauloLogoPost,
   scottishCupLogoPost,
   qatarStarsLeagueLogoPost

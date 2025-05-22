@@ -16,12 +16,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const BlogHeader = () => {
   // Filter categories to display (exclude 'legacy')
   const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
-  const isMobile = useIsMobile();
 
   // Get current category from URL
   const urlParams = new URLSearchParams(window.location.search);
@@ -150,59 +148,29 @@ Découvrez les emblèmes des plus grands clubs, explorez l'art des logos ou cré
                   </div>
                 </div>
 
-                {/* Section des images - Maintenant avec un carrousel à 2 images visibles */}
+                {/* Section des images - affichage direct des 2 images côte à côte au lieu d'un carrousel */}
                 <div className="mt-6 pt-5 border-t border-amber-200/60">
                   <p className="text-center text-amber-800 font-medium mb-4">Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip</p>
                   
-                  {/* Implémentation du carrousel avec 2 images visibles simultanément */}
-                  <div className="relative mx-auto max-w-3xl px-4">
-                    <Carousel 
-                      opts={{
-                        align: "start",
-                        loop: true,
-                        slidesToScroll: 1,
-                      }}
-                      className="w-full"
-                    >
-                      <CarouselContent className="-ml-2 md:-ml-4">
-                        {/* Première image - Premier groupe de pays */}
-                        <CarouselItem className={isMobile ? "pl-2 md:pl-4 basis-full" : "pl-2 md:pl-4 basis-1/2"}>
-                          <div className="relative rounded-lg overflow-hidden shadow-md h-auto">
-                            <img 
-                              src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
-                              alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
-                              className="w-full h-auto object-cover" 
-                            />
-                          </div>
-                        </CarouselItem>
-                        
-                        {/* Deuxième image - Second groupe de pays */}
-                        <CarouselItem className={isMobile ? "pl-2 md:pl-4 basis-full" : "pl-2 md:pl-4 basis-1/2"}>
-                          <div className="relative rounded-lg overflow-hidden shadow-md h-auto">
-                            <img 
-                              src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
-                              alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
-                              className="w-full h-auto object-cover" 
-                            />
-                          </div>
-                        </CarouselItem>
-                        
-                        {/* Troisième image - Pays d'Europe de l'Est */}
-                        <CarouselItem className={isMobile ? "pl-2 md:pl-4 basis-full" : "pl-2 md:pl-4 basis-1/2"}>
-                          <div className="relative rounded-lg overflow-hidden shadow-md h-auto">
-                            <img 
-                              src="/lovable-uploads/1e5b99db-1979-4c38-82f8-ba12eab3fc6a.png" 
-                              alt="Collections de logos: Russie, Suède, Suisse, Tchèquie, Autriche, Bulgarie, Croatie, Hongrie, Serbie" 
-                              className="w-full h-auto object-cover" 
-                            />
-                          </div>
-                        </CarouselItem>
-                      </CarouselContent>
-                      
-                      {/* Boutons de navigation personnalisés */}
-                      <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white border-gray-200 text-gray-700" />
-                      <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white border-gray-200 text-gray-700" />
-                    </Carousel>
+                  {/* Conteneur flex pour afficher les deux images côte à côte au lieu d'un carousel */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    {/* Première image - Premier groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/e47a6810-ce15-4923-aaa6-7f01ad10481d.png" 
+                        alt="Collections de logos: Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas et équipes nationales" 
+                        className="w-full h-auto object-cover" 
+                      />
+                    </div>
+                    
+                    {/* Deuxième image - Second groupe de pays */}
+                    <div className="relative rounded-lg overflow-hidden shadow-md max-w-full sm:max-w-[48%] h-auto">
+                      <img 
+                        src="/lovable-uploads/d6aa1c61-5729-4033-a669-4573d524deed.png" 
+                        alt="Collections de logos: Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne et Roumanie" 
+                        className="w-full h-auto object-cover" 
+                      />
+                    </div>
                   </div>
                   
                   {/* Légende explicative des images */}

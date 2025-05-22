@@ -86,6 +86,14 @@ const Blog = () => {
   // Déterminer la valeur actuelle pour ToggleGroup
   const currentValue = categoryParam || "all";
 
+  // Helper function to safely get category name
+  const getCategoryName = (category: string) => {
+    if (BLOG_CATEGORIES[category] && BLOG_CATEGORIES[category].name) {
+      return BLOG_CATEGORIES[category].name;
+    }
+    return category.charAt(0).toUpperCase() + category.slice(1); // Fallback: capitalize the category key
+  };
+
   return (
     <PageTransition>
       <div className="bg-gray-50 min-h-screen">
@@ -123,25 +131,25 @@ const Blog = () => {
                   Tous
                 </ToggleGroupItem>
                 <ToggleGroupItem value="logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['logos'].name}
+                  {getCategoryName('logos')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="technical" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['technical'].name}
+                  {getCategoryName('technical')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="analysis" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['analysis'].name}
+                  {getCategoryName('analysis')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="legacy" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['legacy'].name}
+                  {getCategoryName('legacy')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="pixel-art" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['pixel-art'].name}
+                  {getCategoryName('pixel-art')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="national-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['national-logos'].name}
+                  {getCategoryName('national-logos')}
                 </ToggleGroupItem>
                 <ToggleGroupItem value="competition-logos" className="px-4 py-2 rounded-md text-sm font-medium data-[state=on]:bg-blue-600 data-[state=on]:text-white">
-                  {BLOG_CATEGORIES['competition-logos'].name}
+                  {getCategoryName('competition-logos')}
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>

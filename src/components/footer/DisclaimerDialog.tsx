@@ -16,10 +16,7 @@ const DisclaimerDialog = () => {
       </DialogTrigger>
       <DialogContent className={`max-w-2xl ${isMobile ? 'max-h-[90vh] px-4' : 'max-h-[80vh]'} overflow-y-auto bg-gradient-to-b from-white to-gray-50 shadow-xl border-0`}>
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-gray-800 flex items-center gap-3">
-            <div className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm">
-              <AlertTriangle className="w-5 h-5 text-amber-500" />
-            </div>
+          <DialogTitle className="text-xl font-bold text-gray-800">
             Disclaimer
           </DialogTitle>
         </DialogHeader>

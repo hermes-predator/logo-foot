@@ -6,6 +6,25 @@ import { technicalPosts } from './technical';
 import { analysisPosts } from './analysis';
 import { pixelArtPosts } from './pixel-art';
 
+// Import des articles à modifier
+import { laligaAnalysis } from './analysis/laliga';
+import { championsLeagueAnalysis } from './analysis/champions-league';
+// Fixing the import path - using ligue-1 with a hyphen instead of ligue1
+import { ligue1Analysis } from './analysis/ligue-1';
+import { bundesligaAnalysis } from './analysis/bundesliga';
+import { serieAAnalysis } from './analysis/serie-a';
+import { premierLeagueAnalysis } from './analysis/premier-league';
+
+// Modification des articles pour la catégorie competition-logos
+const competitionArticles: BlogPost[] = [
+  { ...laligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...championsLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...ligue1Analysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...bundesligaAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...serieAAnalysis, category: 'competition-logos', subCategory: 'competition-logos' },
+  { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' }
+];
+
 // Fonction pour vérifier les doublons d'ID et les résoudre en réattribuant des IDs uniques
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   // Map pour stocker les posts par ID 
@@ -76,7 +95,8 @@ const countByCategory = {
   history: historyPosts.length,
   technical: technicalPosts.length,
   analysis: analysisPosts.length,
-  'pixel-art': pixelArtPosts.length
+  'pixel-art': pixelArtPosts.length,
+  'competition-logos': competitionArticles.length
 };
 
 // Vérifier aussi les doublons de titre pour aider à la détection
@@ -109,16 +129,18 @@ const findDuplicateTitles = (posts: BlogPost[]) => {
   }
 };
 
-// Regrouper tous les articles sans les "competition-logos" qui sont déjà dans logoPosts
+// Filtre explicite avant de traiter les IDs
 const allPosts = [
-  ...logoPosts,
+  ...logoPosts.filter(post => post.id !== 306), // Filter out the blasonsEquipesFootballPost from logoPosts
   ...historyPosts,
   ...technicalPosts,
-  ...analysisPosts,
+  ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),
+  ...competitionArticles,
   ...pixelArtPosts
 ];
 
-// Filtrer les doublons connus
+// Explicitement filtrer l'article 9134 et l'article avec ID 257 (logoMaillotFoot) avant d'appliquer la fonction ensureUniqueIds
+// Cela évite les doublons de l'article "Logo Maillot de Foot"
 const filteredPosts = allPosts.filter(post => post.id !== 9134 && !(post.id === 257 && post.title.includes("Logo Maillot de Foot")));
 export const blogPosts = ensureUniqueIds(filteredPosts);
 

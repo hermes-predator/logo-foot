@@ -6,7 +6,6 @@ import { Clock, Image } from 'lucide-react';
 import { BlogPost } from '../../types/blog';
 import { useReadingTime } from '../../hooks/useReadingTime';
 import { OptimizedImage } from '../ui/optimized-image';
-import { generatePostUrl } from '../../utils/slugUtils';
 
 interface BlogArticleCardProps {
   post: BlogPost;
@@ -15,12 +14,9 @@ interface BlogArticleCardProps {
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
   
-  // Générer l'URL avec l'ID et le titre de l'article pour garantir l'unicité
-  const articleUrl = generatePostUrl(post.id, post.title);
-  
   return (
     <Link 
-      to={articleUrl}
+      to={`/blog/${post.id}`}
       className="block h-full"
       aria-label={`Lire l'article : ${post.title}`}
     >
@@ -33,12 +29,6 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
               width={44}
               height={44}
               className="w-full h-full object-cover rounded-bl-xl"
-              onError={(e) => {
-                // Fallback en cas d'échec du chargement
-                console.log(`Image non trouvée pour ID: ${post.galleryImageId}, article: ${post.title}`);
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none'; // Masquer l'image qui a échoué
-              }}
             />
           </div>
         ) : (

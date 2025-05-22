@@ -1,48 +1,97 @@
-export interface BlogPost {
-  id: number,
-  title: string,
-  excerpt: string,
-  date: string,
-  content: string,
-  keywords?: string,
-  category: BlogCategory,
-  subCategory?: string,
-  galleryImageId?: number,
-  readingTime?: number,
-  previousPostId?: number,
-  nextPostId?: number
+export interface BlogCategory {
+  name: string;
+  description: string;
 }
 
-export type BlogCategory = keyof typeof BLOG_CATEGORIES;
+export interface BlogCategories {
+  [key: string]: BlogCategory;
+}
 
-export const BLOG_CATEGORIES = {
-  'logos': {
-    name: 'Logos de Club',
-    description: 'Découvrez notre collection de logos de football des plus grands clubs et équipes nationales.'
+export const BLOG_CATEGORIES: BlogCategories = {
+  news: {
+    name: 'Actualités',
+    description: 'Dernières nouvelles et mises à jour sur les logos de football.'
   },
-  'national-logos': {
-    name: 'Logos de Nation', // Updated category name
-    description: 'Explorez notre collection des logos et emblèmes des équipes nationales de football.'
+  analysis: {
+    name: 'Analyses',
+    description: 'Analyses approfondies des logos de football et de leur signification.'
   },
-  'competition-logos': {
-    name: 'Logos de Compétition', // Updated category name
-    description: 'Découvrez les logos officiels des plus grandes compétitions de football mondiales.'
+  history: {
+    name: 'Histoire',
+    description: 'L\'histoire des logos de football à travers le temps.'
   },
-  players: {
-    name: 'Joueurs',
-    description: 'Analyses et actualités sur les plus grands joueurs de football du monde entier.'
+  design: {
+    name: 'Design',
+    description: 'Principes de design et tendances dans les logos de football.'
+  },
+  interviews: {
+    name: 'Interviews',
+    description: 'Interviews avec des designers et des experts en logos de football.'
+  },
+  national_teams: {
+    name: 'Équipes Nationales',
+    description: 'Logos des équipes nationales de football du monde entier.'
+  },
+  club_logos: {
+    name: 'Logos de Clubs',
+    description: 'Logos des clubs de football du monde entier.'
+  },
+  leagues: {
+    name: 'Ligues',
+    description: 'Logos des ligues de football du monde entier.'
+  },
+  retro: {
+    name: 'Rétro',
+    description: 'Logos de football rétro et classiques.'
+  },
+  creation: {
+    name: 'Création',
+    description: 'Comment créer un logo de football efficace.'
+  },
+  tutorial: {
+    name: 'Tutoriel',
+    description: 'Tutoriels pour créer des logos de football.'
+  },
+  ressources: {
+    name: 'Ressources',
+    description: 'Ressources utiles pour les designers de logos de football.'
+  },
+  inspiration: {
+    name: 'Inspiration',
+    description: 'Inspiration pour la création de logos de football.'
+  },
+  marketing: {
+    name: 'Marketing',
+    description: 'Marketing et branding dans le football à travers les logos.'
+  },
+  juridique: {
+    name: 'Juridique',
+    description: 'Aspects juridiques des logos de football.'
   },
   legacy: {
-    name: 'Histoire du football',
-    description: 'Articles historiques sur les logos et compétitions emblématiques du football à travers les époques.'
+    name: 'Legacy',
+    description: 'Anciens articles de blog'
   },
-  technical: {
-    name: 'Techniques',
-    description: 'Guides et astuces pour comprendre et maîtriser les techniques de design de logos de football.'
-  },
-  'pixel-art': {
-    name: 'Pixel Art',
-    description: 'Découvrez l\'art du pixel appliqué aux logos et emblèmes de football.'
+  national_logos: {
+    name: 'Logos Nationaux',
+    description: 'Logos des équipes nationales de football.'
   }
 };
 
+export interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  content: string;
+  category: string;
+  subCategory?: string;
+  keywords: string;
+  galleryImageId?: number;
+  coverImage?: string;
+}
+
+export interface FAQSection {
+  question: string;
+  answer: string;
+}

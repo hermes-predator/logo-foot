@@ -1,266 +1,301 @@
 
-import React from 'react';
-import { ArrowRight, BookOpen, Folder, AlertTriangle, Download, Check, Trophy } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React, { useState, useEffect } from 'react';
+import { Trophy, Search, ChevronRight, Users, Folder, Package, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import { BLOG_CATEGORIES } from '@/types/blog';
-import GoogleDriveBadge from '../payment/GoogleDriveBadge';
-import { Badge } from '@/components/ui/badge';
-import { OptimizedImage } from '@/components/ui/optimized-image';
+import { motion } from 'framer-motion';
+import { OptimizedImage } from '../ui/optimized-image';
+import BlogImage from './BlogImage';
+import { categories, coursesData } from '@/constants/countryData';
 
-const BlogHeader = () => {
-  // Filter categories to display (exclude 'legacy')
-  const categoriesToDisplay = Object.entries(BLOG_CATEGORIES).filter(([key]) => key !== 'legacy');
+// Fade in animation for elements
+const fadeIn = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0 }
+};
 
-  // Get current category from URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const currentCategory = urlParams.get('category');
+interface BlogHeaderProps {
+  title?: string;
+  category?: string;
+  animateTitle?: boolean;
+  imageId?: string | number;
+}
+
+const BlogHeader = ({ title, category, animateTitle = true, imageId }: BlogHeaderProps) => {
+  // If we have a title from props use it, otherwise use default
+  const headerTitle = title || "Logos de Football en PNG : Téléchargements Gratuits";
   
-  return <div className="container mx-auto px-4 mb-6">
-      <div className="text-center">
-        
-        {/* Increased max-width from max-w-4xl to max-w-5xl to allow even more horizontal space */}
-        <div className="max-w-5xl mx-auto relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-100/90 to-gray-50/80 rounded-b-2xl rounded-t-none blur-lg"></div>
-          <div className="relative bg-gradient-to-br from-white to-gray-50/90 rounded-b-2xl rounded-t-none p-7 border border-gray-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05),0_8px_10px_-6px_rgba(0,0,0,0.03)] backdrop-blur-sm hover:shadow-[0_20px_35px_-10px_rgba(0,0,0,0.08),0_10px_20px_-5px_rgba(0,0,0,0.04)] transition-all duration-500">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-2 rounded-xl shadow-inner">
-                <BookOpen className="w-5 h-5 text-black" />
-              </div>
-              <h2 className="font-semibold text-gray-900">Le Blog des logos de football</h2>
-            </div>
+  // Determine if this is the main blog page
+  const isMainBlogPage = !title || title === "Logos de Football en PNG : Téléchargements Gratuits";
+  
+  // State for the search input
+  const [searchText, setSearchText] = useState('');
+  const [searchFocused, setSearchFocused] = useState(false);
+  
+  // Determine category info for styling
+  const categoryInfo = category ? categories.find(cat => cat.id === category) : null;
+  const categoryColor = categoryInfo?.color || 'blue';
+  
+  // Background gradient and text colors based on category
+  const getBgGradient = () => {
+    if (category === 'logos') return 'from-blue-900 via-blue-800 to-blue-900';
+    if (category === 'analysis') return 'from-emerald-900 via-emerald-800 to-emerald-900';
+    if (category === 'technical') return 'from-violet-900 via-violet-800 to-violet-900';
+    if (category === 'history') return 'from-amber-900 via-amber-800 to-amber-900';
+    if (category === 'pixel-art') return 'from-fuchsia-900 via-fuchsia-800 to-fuchsia-900';
+    return 'from-gray-900 via-gray-800 to-gray-900';
+  };
+  
+  // Text colors that complement the background
+  const getTextColor = () => {
+    if (category === 'logos') return 'text-blue-400';
+    if (category === 'analysis') return 'text-emerald-400';
+    if (category === 'technical') return 'text-violet-400';
+    if (category === 'history') return 'text-amber-400';
+    if (category === 'pixel-art') return 'text-fuchsia-400';
+    return 'text-gray-400';
+  };
+  
+  // For highlighting the category name
+  const getCategoryHighlight = () => {
+    if (category === 'logos') return 'text-blue-300';
+    if (category === 'analysis') return 'text-emerald-300';
+    if (category === 'technical') return 'text-violet-300';
+    if (category === 'history') return 'text-amber-300';
+    if (category === 'pixel-art') return 'text-fuchsia-300';
+    return 'text-gray-300';
+  };
+  
+  // Button background that complements the header
+  const getButtonBg = () => {
+    if (category === 'logos') return 'bg-blue-600 hover:bg-blue-700';
+    if (category === 'analysis') return 'bg-emerald-600 hover:bg-emerald-700';
+    if (category === 'technical') return 'bg-violet-600 hover:bg-violet-700';
+    if (category === 'history') return 'bg-amber-600 hover:bg-amber-700';
+    if (category === 'pixel-art') return 'bg-fuchsia-600 hover:bg-fuchsia-700';
+    return 'bg-gray-600 hover:bg-gray-700';
+  };
 
-            <div className="mb-5 text-center">
-              <p className="text-base text-gray-700 leading-relaxed">Bienvenue sur le blog Logo-Foot, votre expert sur les logos de football.<br /> 
-Découvrez les emblèmes des plus grands clubs, explorez l'art des logos de football<br /> ou apprenez à créer votre propre logo.</p>
-            </div>
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1 + i * 0.1,
+        duration: 0.5,
+      }
+    })
+  };
+  
+  // Handler for search input changes
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(e.target.value);
+  };
+  
+  // Handler for search form submission
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Implement search functionality here
+    console.log("Searching for:", searchText);
+    setSearchText('');
+  };
 
-            {/* Category selection section with added horizontal spacing for wider layout */}
-            <div className="mb-6">
-              <div className="flex flex-wrap justify-center gap-2 px-3">
-                <a href="/blog" className={`px-3 py-1 rounded-full text-sm transition-colors ${!currentCategory ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                  Tout
-                </a>
-                {categoriesToDisplay.map(([key, category]) => <a key={key} href={`/blog?category=${key}`} className={`px-3 py-1 rounded-full text-sm transition-colors ${currentCategory === key ? 'bg-blue-500 text-white font-medium shadow-sm' : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}>
-                    {category.name}
-                  </a>)}
-              </div>
-            </div>
+  // Reset search when navigating
+  useEffect(() => {
+    setSearchText('');
+  }, [title]);
 
-            {/* Container for the yellow block with improved attention-grabbing design */}
-            <div className="mt-8 relative">
-              {/* Google Drive Badge positioned absolutely with higher z-index to ensure it's always visible */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3" style={{
-              zIndex: 30
-              }}>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <div>
-                        <GoogleDriveBadge cursorHelp={true} />
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="top" align="center" sideOffset={5}>
-                      <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                      </p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+  return (
+    <header className={`relative w-full overflow-hidden bg-gradient-to-b ${getBgGradient()} text-white`}>
+      <div className="absolute inset-0 bg-black/40"></div>
+      
+      {/* Header content */}
+      <div className="relative z-10 container mx-auto px-4 py-12 pt-16 md:py-16 md:pt-24">
+        <div className="max-w-5xl mx-auto">
+          {/* Breadcrumbs navigation */}
+          <nav className="mb-5 flex items-center text-sm text-gray-300">
+            <Link to="/" className="hover:text-white transition duration-200">Accueil</Link>
+            <ChevronRight className="h-4 w-4 mx-1" />
+            <Link to="/blog" className="hover:text-white transition duration-200">Blog</Link>
+            {category && (
+              <>
+                <ChevronRight className="h-4 w-4 mx-1" />
+                <Link to={`/blog/category/${category}`} className={`${getCategoryHighlight()} hover:text-white transition duration-200`}>
+                  {categoryInfo?.name || category}
+                </Link>
+              </>
+            )}
+            {title && !isMainBlogPage && (
+              <>
+                <ChevronRight className="h-4 w-4 mx-1" />
+                <span className="text-gray-300/80 truncate max-w-[200px] md:max-w-xs">
+                  {title.replace(/\*\*([^*]+)\*\*/g, '$1')}
+                </span>
+              </>
+            )}
+          </nav>
+          
+          {/* Title section */}
+          {animateTitle ? (
+            <motion.h1 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center md:text-left leading-tight"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              dangerouslySetInnerHTML={{ 
+                __html: headerTitle.replace(/\*\*([^*]+)\*\*/g, '<span class="text-yellow-400">$1</span>') 
+              }}
+            />
+          ) : (
+            <h1 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center md:text-left leading-tight"
+              dangerouslySetInnerHTML={{ 
+                __html: headerTitle.replace(/\*\*([^*]+)\*\*/g, '<span class="text-yellow-400">$1</span>') 
+              }}
+            />
+          )}
+          
+          {/* Search form */}
+          {isMainBlogPage && (
+            <motion.div 
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
+              transition={{ delay: 0.3 }}
+            >
+              <div className="mt-8 mb-10 max-w-xl mx-auto md:mx-0">
+                <form onSubmit={handleSearchSubmit} className="relative">
+                  <input
+                    type="text"
+                    placeholder="Rechercher un logo de club ou sélection..."
+                    value={searchText}
+                    onChange={handleSearchChange}
+                    onFocus={() => setSearchFocused(true)}
+                    onBlur={() => setSearchFocused(false)}
+                    className={`w-full px-5 py-3 rounded-lg pl-12 bg-gray-900/80 border ${
+                      searchFocused ? 'border-white/40 ring-2 ring-blue-500/30' : 'border-gray-700'
+                    } focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition duration-200 placeholder-gray-400`}
+                  />
+                  <Search className="absolute left-4 top-3.5 h-5 w-5 text-gray-400" />
+                  <button
+                    type="submit"
+                    className={`${getButtonBg()} px-6 py-3 rounded-r-lg absolute right-0 top-0 h-full text-white font-medium transition duration-200`}
+                  >
+                    Rechercher
+                  </button>
+                </form>
               </div>
               
-              {/* Yellow alert block with enhanced visual appeal - REMOVED SHADOW */}
-              <div className="bg-gradient-to-r from-amber-50 via-amber-100 to-amber-50 rounded-xl p-5 pt-14 border border-amber-200/70 transition-all duration-300 mt-2 relative overflow-hidden">
-                {/* Animated pulse effect in the background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_8s_ease-in-out_infinite] z-0"></div>
-                
-                {/* Alert Triangle in the upper left corner with improved animation */}
-                <div className="absolute top-0 left-0" style={{
-                zIndex: 20
-                }}>
-                  <div className="bg-amber-200/80 p-3.5 rounded-bl-none rounded-tr-none rounded-tl-xl rounded-br-2xl flex items-center justify-center transition-none">
-                    <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0 animate-icon-floating" style={{
-                    transform: 'scale(1.1)'
-                    }} />
-                  </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-                  <div className="text-center sm:text-left pl-10">
-                    <h3 className="font-bold text-black text-lg">
-                      <div className="flex flex-col">
-                        <span className="text-2xl font-bold bg-gradient-to-r from-amber-700 to-amber-900 text-transparent bg-clip-text">Vous cherchez tous les logos de club de foot ?</span>
-                        <span className="text-sm md:text-base text-amber-700/90 font-medium mt-1 leading-relaxed">
-                          Téléchargez <u className="font-semibold">+ de 8600 LOGOS de Clubs de Football</u> organisés par pays.
-                          <br />Obtenez toutes les ressources dans un fichier ZIP complet.
-                        </span>
+              {/* Main blog featured content */}
+              <div className="bg-gray-900/80 border border-gray-800 rounded-xl p-6 shadow-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h2 className="text-xl md:text-2xl font-bold mb-3">Explorer les Logos de Football</h2>
+                    <p className="text-gray-300 mb-4">
+                      Notre blog propose un large éventail de logos PNG de clubs et sélections nationales, classés par pays et compétitions. Téléchargez gratuitement vos logos préférés en haute qualité.
+                    </p>
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="flex items-center">
+                        <Users className="h-5 w-5 text-blue-400 mr-2" />
+                        <span className="text-gray-300">8600+ Logos</span>
                       </div>
-                    </h3>
-                    
-                    {/* Added benefit points with check marks */}
-                    <div className="mt-3 grid grid-cols-2 gap-2 text-sm text-left">
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Format PNG haute qualité</span>
+                      <div className="flex items-center">
+                        <Folder className="h-5 w-5 text-amber-400 mr-2" />
+                        <span className="text-gray-300">66 Pays</span>
                       </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Classés par 66 pays</span>
-                      </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Accès immédiat</span>
-                      </div>
-                      <div className="flex items-start gap-1.5">
-                        <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                        <span className="text-amber-800/90">Mise à jour régulière</span>
+                    </div>
+                    <div className="p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-md">
+                      <h3 className="flex items-center text-yellow-300 font-medium mb-2">
+                        <Package className="h-5 w-5 mr-2" />
+                        <span>Collection Complète</span>
+                      </h3>
+                      <p className="text-gray-300 text-sm">
+                        Téléchargez notre collection complète de 8600+ logos en PNG avec une qualité optimale, organisée par pays et compétitions.
+                      </p>
+                      <div className="mt-3">
+                        <a href="#collection" className="inline-flex items-center bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                          <Download className="h-4 w-4 mr-2" />
+                          Télécharger la Collection
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div className="relative pr-4 pl-2">
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <Button asChild className="bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 whitespace-nowrap text-white border border-amber-600/40 h-14 px-6 py-4 text-sm relative overflow-hidden shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] hover:shadow-[0_6px_16px_-4px_rgba(255,196,87,0.45),0_4px_12px_-2px_rgba(255,183,77,0.3),inset_0_1px_0_rgba(255,255,255,0.4)] transition-all duration-300 group">
-                            <a href="/" className="flex items-center gap-3 relative">
-                              <Folder className="text-white" style={{
-                              width: "22px",
-                              height: "22px"
-                              }} />
-                              <span className="font-medium text-base">Voir le fichier</span>
-                              <ArrowRight className="text-white/90 group-hover:translate-x-1 transition-transform" style={{
-                              width: "22px",
-                              height: "22px"
-                              }} />
-                              <div className="absolute inset-0 w-full h-full overflow-hidden">
-                                <div className="absolute top-0 -left-full h-full w-full bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine-effect"></div>
-                              </div>
-                            </a>
-                          </Button>
-                        </TooltipTrigger>
-                        <TooltipContent side="top" align="center" sideOffset={4} className="bg-white border border-gray-200 p-0 shadow-md rounded-lg overflow-hidden max-w-[300px]">
-                          <div className="flex flex-col">
-                            <div className="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-                              <p className="font-semibold text-[14px] text-center w-full">⦗FRONT-CLOUD⦘~ Football.zip</p>
-                            </div>
-                            <div className="p-3 text-center">
-                              <p className="text-xs text-gray-600 mb-2 italic">La plus grande collection de logos de clubs de football en haute qualité</p>
-                              <div className="flex items-center justify-center gap-2 mb-2">
-                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">1 fichier ZIP</Badge>
-                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">66 collections</Badge>
-                              </div>
-                              <div className="flex flex-wrap justify-center gap-2 mb-2">
-                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">8 774 logos</Badge>
-                                <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-200 px-2 py-1 text-xs font-medium">Format : PNG</Badge>
-                              </div>
-                              <div className="mt-3 pt-2 border-t border-dashed border-gray-200">
-                                <div className="flex items-center justify-center text-xs text-green-700 gap-1.5">
-                                  <Download className="h-3.5 w-3.5" />
-                                  <span>Télécharger maintenant</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </div>
-                </div>
-                
-                {/* Preview images showing folders from different countries */}
-                <div className="mt-6 p-3 bg-gray-800/95 rounded-lg border border-gray-700 shadow-inner mx-auto max-w-4xl">
-                  <h4 className="text-center text-white/90 text-sm mb-3 flex items-center justify-center gap-2">
-                    <Trophy className="h-4 w-4 text-amber-400" />
-                    <span>Aperçu de la collection par pays</span>
-                  </h4>
                   
-                  {/* Grid for the two images side by side */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* First image */}
-                    <div className="border border-gray-700/50 rounded-md overflow-hidden">
-                      <OptimizedImage 
-                        src="/lovable-uploads/a3bf3c12-7202-4344-b061-7fe12f1ca116.png" 
-                        alt="Aperçu des dossiers de logos de football - Set 1" 
-                        width={600}
-                        height={600}
-                        className="w-full h-auto"
-                        priority={true}
-                      />
+                  {/* Preview images showing folders from different countries */}
+                  <div className="mt-6 p-3 bg-gray-800/95 rounded-lg border border-gray-700 shadow-inner mx-auto max-w-4xl">
+                    <h4 className="text-center text-white/90 text-sm mb-3 flex items-center justify-center gap-2">
+                      <Trophy className="h-4 w-4 text-amber-400" />
+                      <span>Aperçu de la collection par pays</span>
+                    </h4>
+                    
+                    {/* Grid for the two images side by side */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* First image */}
+                      <div className="border border-gray-700/50 rounded-md overflow-hidden">
+                        <OptimizedImage 
+                          src="/lovable-uploads/a3bf3c12-7202-4344-b061-7fe12f1ca116.png" 
+                          alt="Aperçu des dossiers de logos de football - Set 1" 
+                          width={600}
+                          height={600}
+                          className="w-full h-auto"
+                          priority={true}
+                        />
+                      </div>
+                      
+                      {/* Second image */}
+                      <div className="border border-gray-700/50 rounded-md overflow-hidden">
+                        <OptimizedImage 
+                          src="/lovable-uploads/e4fdc9fa-6ed2-476a-bf78-ff7c416da34d.png" 
+                          alt="Aperçu des dossiers de logos de football - Set 2" 
+                          width={600}
+                          height={600}
+                          className="w-full h-auto"
+                          priority={true}
+                        />
+                      </div>
                     </div>
                     
-                    {/* Second image */}
-                    <div className="border border-gray-700/50 rounded-md overflow-hidden">
-                      <OptimizedImage 
-                        src="/lovable-uploads/e4fdc9fa-6ed2-476a-bf78-ff7c416da34d.png" 
-                        alt="Aperçu des dossiers de logos de football - Set 2" 
-                        width={600}
-                        height={600}
-                        className="w-full h-auto"
-                        priority={true}
-                      />
-                    </div>
+                    <p className="text-center text-gray-300 text-xs mt-3">66 pays disponibles avec plus de 8600 logos au total en haute qualité</p>
                   </div>
-                  
-                  {/* Original image underneath */}
-                  <div className="mt-4 border border-gray-700/50 rounded-md overflow-hidden">
-                    <OptimizedImage 
-                      src="/lovable-uploads/51b5be99-39d2-4526-9803-566ab15261d6.png" 
-                      alt="Aperçu de la collection de logos de football organisée par pays" 
-                      width={900}
-                      height={600}
-                      className="rounded-md mx-auto w-full h-auto"
-                      priority={true}
-                    />
-                  </div>
-                  
-                  <p className="text-center text-gray-300 text-xs mt-3">66 pays disponibles avec plus de 8600 logos au total en haute qualité</p>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          )}
+          
+          {/* Category specific content for non-main blog pages */}
+          {!isMainBlogPage && (
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
+              transition={{ delay: 0.2 }}
+            >
+              <p className={`text-lg ${getTextColor()} mb-8 max-w-3xl`}>
+                {categoryInfo?.description || ''}
+              </p>
+              
+              {/* Display the blog post image if available */}
+              {imageId && (
+                <div className="mt-4 mb-10">
+                  <BlogImage 
+                    src={`/api/images/${imageId}`}
+                    alt={title || 'Image de l\'article de blog'}
+                    priority={true}
+                    isDefault={true}
+                  />
+                </div>
+              )}
+            </motion.div>
+          )}
         </div>
       </div>
-
-      <style>
-        {`
-        @keyframes floating {
-          0% { transform: translateY(0) rotate(0deg) scale(1.1); }
-          25% { transform: translateY(-3px) rotate(0deg) scale(1.13); }
-          50% { transform: translateY(0) rotate(0deg) scale(1.16); }
-          75% { transform: translateY(2px) rotate(0deg) scale(1.13); }
-          100% { transform: translateY(0) rotate(0deg) scale(1.1); }
-        }
-        
-        @keyframes shine {
-          from {
-            left: -100%;
-          }
-          50% {
-            left: 100%;
-          }
-          to {
-            left: 100%;
-          }
-        }
-        
-        @keyframes shine-effect {
-          0% { transform: translateX(-100%); }
-          100% { transform: translateX(100%); }
-        }
-
-        .animate-icon-floating {
-          animation: floating 4s ease-in-out infinite;
-        }
-        
-        .animate-shine-effect {
-          animation: shine-effect 1.2s ease-out;
-        }
-        `}
-      </style>
-    </div>;
+      
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-purple-500/10 rounded-full blur-3xl"></div>
+      </div>
+    </header>
+  );
 };
 export default BlogHeader;
-

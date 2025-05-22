@@ -1,3 +1,4 @@
+
 import { CountryName, CountryChampionship } from '@/types/countries';
 
 export const countries: CountryName[] = [
@@ -72,3 +73,18 @@ export const countryChampionships: CountryChampionship = {
   'Qatar': 'Stars League',
   'Gibraltar': 'National League'
 };
+
+// Add the missing exports that are used in BlogHeader.tsx
+export const categories = [
+  { id: 'logos', name: 'Logos', color: 'blue', description: 'Découvrez notre collection de logos de football en haute qualité, prêts à télécharger en format PNG.' },
+  { id: 'analysis', name: 'Analyses', color: 'emerald', description: 'Analyses tactiques, statistiques et performances des équipes et joueurs.' },
+  { id: 'technical', name: 'Technique', color: 'violet', description: 'Guides techniques sur la création et modification de logos et designs footballistiques.' },
+  { id: 'history', name: 'Histoire', color: 'amber', description: 'L\'histoire des clubs, des compétitions et des moments marquants du football.' },
+  { id: 'pixel-art', name: 'Pixel Art', color: 'fuchsia', description: 'Logos et designs de football en style pixel art, parfaits pour les projets rétro.' }
+];
+
+export const coursesData = [
+  { id: 1, title: 'Design de Logos Football', description: 'Apprenez à créer des logos professionnels pour clubs de football', level: 'Intermédiaire' },
+  { id: 2, title: 'Analyse Tactique', description: 'Techniques d\'analyse des systèmes de jeu et formations', level: 'Avancé' },
+  { id: 3, title: 'Histoire du Football', description: 'L\'évolution du football à travers les époques', level: 'Débutant' }
+];

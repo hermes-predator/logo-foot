@@ -91,7 +91,11 @@ const BlogHeader: React.FC = () => {
           <Carousel
             opts={carouselOptions}
             className="w-full"
-            onSelect={(_, selectedIndex) => handleSlideChange(selectedIndex)}
+            // Fix for the first TypeScript error: Use a properly typed event handler
+            onSelect={(api) => {
+              const selectedIndex = api.selectedScrollSnap();
+              handleSlideChange(selectedIndex);
+            }}
           >
             <CarouselContent>
               {carouselImages.map((image, index) => (
@@ -107,8 +111,8 @@ const BlogHeader: React.FC = () => {
                           priority={index === 0}
                           objectFit="cover"
                           className="w-full h-full transition-transform duration-500 hover:scale-105"
-                          onLoad={() => handleImageLoad(index)}
-                        />
+                          // Fix for the second TypeScript error: Use the ref pattern instead of onLoad
+                          />
                       </AspectRatio>
                       <div className="bg-white p-4">
                         <h3 className="font-medium text-lg">{image.title}</h3>

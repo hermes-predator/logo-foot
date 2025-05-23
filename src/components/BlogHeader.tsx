@@ -7,6 +7,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 import { AspectRatio } from './ui/aspect-ratio';
 import { OptimizedImage } from './ui/optimized-image';
@@ -47,6 +48,7 @@ const BlogHeader: React.FC = () => {
   const isMobile = useIsMobile();
   const [activeIndex, setActiveIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(carouselImages.map(() => false));
+  const [api, setApi] = useState<CarouselApi>();
 
   // Gérer le chargement des images
   const handleImageLoad = (index: number) => {
@@ -75,6 +77,24 @@ const BlogHeader: React.FC = () => {
   const handleSlideChange = (index: number) => {
     setActiveIndex(index);
   };
+  
+  // Effect to listen to carousel changes
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const onSelect = () => {
+      setActiveIndex(api.selectedScrollSnap());
+    };
+
+    api.on("select", onSelect);
+    
+    // Cleanup
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
 
   return (
     <div className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12">
@@ -91,11 +111,7 @@ const BlogHeader: React.FC = () => {
           <Carousel
             opts={carouselOptions}
             className="w-full"
-            // Fix for the first TypeScript error: Use a properly typed event handler
-            onSelect={(api) => {
-              const selectedIndex = api.selectedScrollSnap();
-              handleSlideChange(selectedIndex);
-            }}
+            setApi={setApi}
           >
             <CarouselContent>
               {carouselImages.map((image, index) => (
@@ -111,8 +127,8 @@ const BlogHeader: React.FC = () => {
                           priority={index === 0}
                           objectFit="cover"
                           className="w-full h-full transition-transform duration-500 hover:scale-105"
-                          // Fix for the second TypeScript error: Use the ref pattern instead of onLoad
-                          />
+                          onLoad={() => handleImageLoad(index)}
+                        />
                       </AspectRatio>
                       <div className="bg-white p-4">
                         <h3 className="font-medium text-lg">{image.title}</h3>
@@ -129,7 +145,7 @@ const BlogHeader: React.FC = () => {
                   className={`w-2 h-2 rounded-full transition-all ${
                     activeIndex === index ? "bg-blue-600 w-4" : "bg-gray-300"
                   }`}
-                  onClick={() => handleSlideChange(index)}
+                  onClick={() => api?.scrollTo(index)}
                   aria-label={`Aller à l'image ${index + 1}`}
                 />
               ))}

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState, useMemo, useRef } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';
@@ -15,7 +15,6 @@ interface OptimizedImageProps {
   aspectRatio?: number;
   priority?: boolean;
   objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
-  onLoad?: () => void; // Add onLoad prop to the interface
 }
 
 export function OptimizedImage({
@@ -27,7 +26,6 @@ export function OptimizedImage({
   aspectRatio = 16 / 9,
   priority = false,
   objectFit = 'cover',
-  onLoad, // Add onLoad to props destructuring
 }: OptimizedImageProps) {
   const { isInView, imgRef } = useLazyLoading();
   const [isLoaded, setIsLoaded] = useState(priority);
@@ -76,11 +74,6 @@ export function OptimizedImage({
 
   const handleLoad = () => {
     setIsLoaded(true);
-    
-    // Call the onLoad callback if provided
-    if (onLoad) {
-      onLoad();
-    }
     
     // Report to analytics
     if (window.performance && window.performance.mark) {

@@ -68,7 +68,7 @@ const BlogHeader = () => {
             <div className="ml-4">
               <a 
                 href="#"
-                className="relative overflow-hidden inline-flex items-center gap-3 px-6 py-3 text-sm font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 border border-gray-100 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)]"
+                className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-4 text-base font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 border border-gray-100 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)]"
                 style={{
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
@@ -76,9 +76,9 @@ const BlogHeader = () => {
                 }}
               >
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white to-gray-50/90 opacity-0 hover:opacity-10 transition-opacity duration-200"></div>
-                <Folder className="h-5 w-5" />
+                <Folder className="h-6 w-6" />
                 Voir le fichier
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-6 w-6" />
               </a>
             </div>
           </div>

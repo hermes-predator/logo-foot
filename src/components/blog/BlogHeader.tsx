@@ -1,16 +1,38 @@
+
 import React, { useState } from 'react';
 import { Eye, Download, Sparkles } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
+import { useCarousel } from "../ui/carousel";
+
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
   const {
     clubItems
   } = generateGalleryItems();
 
   // Prendre les 8 premiers éléments pour le carrousel
   const carouselItems = clubItems.slice(0, 8);
-  return <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 rounded-xl shadow-lg">
+
+  React.useEffect(() => {
+    if (!carouselApi) {
+      return;
+    }
+
+    setCount(carouselApi.scrollSnapList().length);
+    setCurrent(carouselApi.selectedScrollSnap() + 1);
+
+    carouselApi.on("select", () => {
+      setCurrent(carouselApi.selectedScrollSnap() + 1);
+    });
+  }, [carouselApi]);
+
+  return (
+    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 rounded-xl shadow-lg">
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
@@ -34,30 +56,71 @@ const BlogHeader = () => {
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
           </h3>
           
-          <Carousel className="w-full max-w-5xl mx-auto">
+          <Carousel 
+            className="w-full max-w-5xl mx-auto"
+            setApi={setCarouselApi}
+          >
             <CarouselContent className="-ml-2 md:-ml-4">
-              {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div className="relative aspect-square rounded-lg overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onMouseEnter={() => setHoveredItem(item.id)} onMouseLeave={() => setHoveredItem(null)}>
-                    {hoveredItem === item.id ? <div className="w-full h-full">
-                        <video src={item.videoUrl} className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" autoPlay muted loop playsInline />
+              {carouselItems.map(item => (
+                <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div 
+                    className="relative aspect-square rounded-lg overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" 
+                    onMouseEnter={() => setHoveredItem(item.id)} 
+                    onMouseLeave={() => setHoveredItem(null)}
+                  >
+                    {hoveredItem === item.id ? (
+                      <div className="w-full h-full">
+                        <video 
+                          src={item.videoUrl} 
+                          className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" 
+                          autoPlay 
+                          muted 
+                          loop 
+                          playsInline 
+                        />
                         <div className="absolute top-2 right-2">
                           <Eye className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
                         </div>
-                      </div> : <>
-                        <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
+                      </div>
+                    ) : (
+                      <>
+                        <img 
+                          src={item.imageUrl} 
+                          alt={item.altText} 
+                          className="w-full h-full object-contain p-2" 
+                          loading="lazy" 
+                        />
                         <div className="absolute bottom-2 right-2">
                           <Eye className="w-5 h-5 text-gray-600 opacity-60" />
                         </div>
-                      </>}
+                      </>
+                    )}
                   </div>
                   <p className="text-center mt-2 text-sm text-gray-600 font-medium">
                     {item.country}
                   </p>
-                </CarouselItem>)}
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious className="left-0" />
             <CarouselNext className="right-0" />
           </Carousel>
+
+          {/* Indicateurs de navigation modernes */}
+          <div className="flex justify-center items-center gap-2 mt-6">
+            {Array.from({ length: count }, (_, index) => (
+              <button
+                key={index}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index + 1 === current
+                    ? 'bg-blue-600 w-8 h-2'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+                onClick={() => carouselApi?.scrollTo(index)}
+                aria-label={`Aller à la diapositive ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Badge de qualité */}
@@ -65,6 +128,8 @@ const BlogHeader = () => {
           
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default BlogHeader;

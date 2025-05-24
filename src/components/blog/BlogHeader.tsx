@@ -55,7 +55,7 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            <div className="text-left flex-1 pt-6 pl-8">
+            <div className="text-left flex-1 pt-6 pl-12">
               <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-3">
                 Vous cherchez tous les logos de club de foot ?
               </h2>

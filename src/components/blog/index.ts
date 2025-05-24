@@ -8,3 +8,5 @@ export { default as BlogPerformanceMonitor } from './BlogPerformanceMonitor';
 export { default as FloatingCTA } from './FloatingCTA';
 export { default as RelatedPosts } from './RelatedPosts';
 export { default as BackToButton } from './BackToButton';
+export { default as BlogCategorySelector } from './BlogCategorySelector';
+export { default as BlogContent } from './BlogContent';

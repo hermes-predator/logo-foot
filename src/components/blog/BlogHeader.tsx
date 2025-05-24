@@ -3,6 +3,8 @@ import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import { Link } from 'react-router-dom';
+
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
   const [carouselApi, setCarouselApi] = useState<any>(null);
@@ -63,7 +65,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-4">
-              <a href="#" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] group" style={{
+              <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] group" style={{
               borderRadius: '16px',
               background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
               boxShadow: '0 10px 25px -5px rgba(0, 0, 0, .05), 0 8px 10px -6px rgba(0, 0, 0, .03)',
@@ -76,7 +78,7 @@ const BlogHeader = () => {
                 <Folder className="h-6 w-6 relative z-10" />
                 <span className="relative z-10">Voir le fichier</span>
                 <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

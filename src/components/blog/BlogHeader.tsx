@@ -68,18 +68,35 @@ const BlogHeader = () => {
             <div className="ml-4">
               <a 
                 href="#"
-                className="group relative overflow-hidden inline-flex items-center gap-5 px-10 py-5 text-lg font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600"
+                className="group relative overflow-hidden inline-flex items-center gap-4 px-8 py-4 text-base font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_8px_25px_-8px_rgba(245,158,11,0.5),0_4px_12px_-2px_rgba(217,119,6,0.3),inset_0_1px_0_rgba(255,255,255,0.5)]"
                 style={{
-                  borderRadius: '18px',
-                  border: '1px solid rgba(251, 191, 36, 0.4)',
-                  boxShadow: '0 8px 20px -6px rgba(245, 158, 11, 0.3), 0 4px 12px -2px rgba(217, 119, 6, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
+                  borderRadius: '16px',
+                  background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
+                  border: '2px solid transparent',
+                  backgroundImage: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706), linear-gradient(45deg, #fbbf24, #f59e0b, #d97706, #fbbf24)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  boxShadow: '0 10px 25px -5px rgba(0, 0, 0, .05), 0 8px 10px -6px rgba(0, 0, 0, .03), inset 0 1px 0 rgba(255, 255, 255, 0.4)'
                 }}
               >
+                {/* Effet de brillance animé */}
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:animate-pulse"></div>
+                
+                {/* Effet de bordure animée */}
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+                     style={{
+                       background: 'conic-gradient(from 0deg, #fbbf24, #f59e0b, #d97706, #fbbf24)',
+                       padding: '2px',
+                       animation: 'spin 3s linear infinite'
+                     }}>
+                  <div className="h-full w-full rounded-2xl bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600"></div>
+                </div>
+                
                 {/* Contenu du bouton */}
-                <div className="relative z-10 flex items-center gap-5">
-                  <Folder className="h-7 w-7" />
+                <div className="relative z-10 flex items-center gap-4">
+                  <Folder className="h-6 w-6 group-hover:animate-pulse" />
                   Voir le fichier
-                  <ArrowRight className="h-7 w-7 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </a>
             </div>

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -48,7 +46,7 @@ const BlogHeader = () => {
               <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-2">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
-              <p className="text-lg text-orange-800 leading-relaxed mb-4">
+              <p className="text-lg text-orange-800 leading-relaxed mb-4 font-semibold">
                 Téléchargez <span className="font-bold text-orange-900">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays.<br />
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
@@ -146,4 +144,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

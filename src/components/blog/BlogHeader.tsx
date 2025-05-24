@@ -1,7 +1,5 @@
-
-
 import React, { useState } from 'react';
-import { Eye, Download } from 'lucide-react';
+import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
 
@@ -50,7 +48,7 @@ const BlogHeader = () => {
             
             <div className="ml-6">
               <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 whitespace-nowrap">
-                <Download className="h-5 w-5" />
+                <Folder className="h-5 w-5" />
                 Voir le fichier
               </button>
             </div>
@@ -140,4 +138,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

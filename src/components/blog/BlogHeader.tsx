@@ -66,11 +66,11 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-b from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-8 py-4 font-bold text-lg shadow-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap hover:shadow-xl transform hover:scale-[1.02] border border-orange-500/30" 
+              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg shadow-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap hover:shadow-xl transform hover:scale-[1.02] border border-orange-400/30" 
                 style={{
                   borderRadius: '16px',
-                  background: 'linear-gradient(to bottom, #fb923c, #f97316)',
-                  boxShadow: '0 4px 12px rgba(249, 115, 22, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+                  background: 'linear-gradient(to bottom, #fdba74, #fb923c)',
+                  boxShadow: '0 4px 12px rgba(251, 146, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
                 }}>
                 <Folder className="h-5 w-5" />
                 Voir le fichier

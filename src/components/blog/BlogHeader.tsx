@@ -37,20 +37,24 @@ const BlogHeader = () => {
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
           {/* Box ambrée pour le titre et le texte de description */}
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto text-left">
-            <h2 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
-              Vous cherchez tous les logos de club de foot ?
-            </h2>
-            <p className="text-lg text-amber-900 leading-relaxed">
-              Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays.<br />
-              Obtenez toutes les ressources dans un fichier ZIP complet.
-            </p>
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between">
+            <div className="text-left flex-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
+                Vous cherchez tous les logos de club de foot ?
+              </h2>
+              <p className="text-lg text-amber-900 leading-relaxed">
+                Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays.<br />
+                Obtenez toutes les ressources dans un fichier ZIP complet.
+              </p>
+            </div>
+            
+            <div className="ml-6">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 whitespace-nowrap">
+                <Download className="h-5 w-5" />
+                Voir le fichier
+              </button>
+            </div>
           </div>
-          
-          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 mx-auto">
-            <Download className="h-5 w-5" />
-            Voir le fichier
-          </button>
         </div>
 
         {/* Carrousel d'aperçu */}

@@ -82,7 +82,7 @@ const BlogHeader = () => {
         </div>
 
         {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
           {/* Titre de l'aperçu */}
           <h3 className="text-xl font-semibold text-orange-800 mb-6 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip

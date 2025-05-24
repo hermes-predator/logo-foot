@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -8,8 +9,8 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { AspectRatio } from './ui/aspect-ratio';
-import { OptimizedImage } from './ui/optimized-image';
+import { AspectRatio } from '../ui/aspect-ratio';
+import { OptimizedImage } from '../ui/optimized-image';
 import { useToast } from '@/hooks/use-toast';
 import { Check } from 'lucide-react';
 

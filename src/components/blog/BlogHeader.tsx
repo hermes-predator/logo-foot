@@ -8,8 +8,8 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { AspectRatio } from './ui/aspect-ratio';
-import { OptimizedImage } from './ui/optimized-image';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { OptimizedImage } from '@/components/ui/optimized-image';
 import { useToast } from '@/hooks/use-toast';
 import { Check } from 'lucide-react';
 
@@ -96,12 +96,9 @@ const BlogHeader: React.FC = () => {
   }, [api]);
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-white py-12 md:py-16">
-      <div className="w-full px-4 mb-6">
-        
-      </div>
-      <div className="w-full px-4 h-full flex flex-col justify-center">
-        <div className="text-center mb-12">
+    <div className="w-screen min-h-screen bg-gradient-to-b from-blue-50 to-white py-12 md:py-16">
+      <div className="w-full h-full flex flex-col justify-center">
+        <div className="text-center mb-12 px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">
             Les Plus Beaux Logos du Football
           </h1>
@@ -111,7 +108,7 @@ const BlogHeader: React.FC = () => {
           </p>
         </div>
         
-        <div className="w-full">
+        <div className="w-full px-4">
           <Carousel
             opts={carouselOptions}
             className="w-full"

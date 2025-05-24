@@ -15,15 +15,15 @@ export const CarouselNavigation: React.FC<CarouselNavigationProps> = ({
 }) => {
   return (
     <>
-      {/* Navigation dots - Plus visibles */}
-      <div className="flex items-center justify-center mt-8 space-x-4">
+      {/* Points de navigation - Plus visibles */}
+      <div className="flex items-center justify-center mt-8 space-x-3">
         {images.map((_, index) => (
           <button
             key={`dot-${index}`}
-            className={`w-6 h-6 rounded-full transition-all duration-300 border-3 shadow-lg ${
+            className={`w-4 h-4 rounded-full transition-all duration-300 border-2 ${
               activeIndex === index 
-                ? "bg-blue-600 border-blue-600 scale-125 shadow-blue-300" 
-                : "bg-white border-gray-500 hover:border-blue-500 hover:bg-blue-100 hover:scale-110"
+                ? "bg-blue-600 border-blue-600 scale-125" 
+                : "bg-white border-gray-400 hover:border-blue-500 hover:bg-blue-100"
             }`}
             onClick={() => api?.scrollTo(index)}
             aria-label={`Aller à l'image ${index + 1}`}

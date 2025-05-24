@@ -66,7 +66,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 font-bold text-base shadow-md border-2 border-orange-600 transition-all duration-200 flex items-center gap-2 whitespace-nowrap rounded-lg hover:shadow-lg transform hover:scale-105">
+              <button className="bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 hover:from-amber-500 hover:via-orange-500 hover:to-yellow-600 text-amber-900 px-6 py-3 font-bold text-base shadow-lg border border-amber-300 transition-all duration-300 flex items-center gap-2 whitespace-nowrap rounded-lg hover:shadow-xl transform hover:scale-105 hover:border-amber-400">
                 <Folder className="h-4 w-4" />
                 Voir le fichier
               </button>

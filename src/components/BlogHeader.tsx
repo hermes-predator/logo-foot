@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -97,17 +96,19 @@ const BlogHeader: React.FC = () => {
   }, [api]);
 
   return (
-    <div className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-          Les Plus Beaux Logos du Football
-        </h1>
-        <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
-          Découvrez notre collection des meilleurs logos de clubs et équipes nationales.
-          Des designs emblématiques qui ont marqué l'histoire du football mondial.
-        </p>
+    <div className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-white py-12 md:py-16">
+      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">
+            Les Plus Beaux Logos du Football
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Découvrez notre collection des meilleurs logos de clubs et équipes nationales.
+            Des designs emblématiques qui ont marqué l'histoire du football mondial.
+          </p>
+        </div>
         
-        <div className="max-w-4xl mx-auto my-10 px-4">
+        <div className="max-w-5xl mx-auto w-full">
           <Carousel
             opts={carouselOptions}
             className="w-full"
@@ -116,22 +117,22 @@ const BlogHeader: React.FC = () => {
             <CarouselContent>
               {carouselImages.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="p-1">
-                    <div className="overflow-hidden rounded-xl shadow-lg">
+                  <div className="p-2">
+                    <div className="overflow-hidden rounded-2xl shadow-2xl">
                       <AspectRatio ratio={16 / 9}>
                         <OptimizedImage
                           src={image.src}
                           alt={image.alt}
-                          width={800}
-                          height={450}
+                          width={1000}
+                          height={563}
                           priority={index === 0}
                           objectFit="cover"
                           className="w-full h-full transition-transform duration-500 hover:scale-105"
                           onLoad={() => handleImageLoad(index)}
                         />
                       </AspectRatio>
-                      <div className="bg-white p-4">
-                        <h3 className="font-medium text-lg">{image.title}</h3>
+                      <div className="bg-white p-6">
+                        <h3 className="font-semibold text-xl text-center">{image.title}</h3>
                       </div>
                     </div>
                   </div>
@@ -139,15 +140,15 @@ const BlogHeader: React.FC = () => {
               ))}
             </CarouselContent>
             
-            {/* Navigation dots */}
-            <div className="flex items-center justify-center mt-6 space-x-3">
+            {/* Navigation dots - Plus visibles */}
+            <div className="flex items-center justify-center mt-8 space-x-4">
               {carouselImages.map((_, index) => (
                 <button
                   key={`dot-${index}`}
-                  className={`w-4 h-4 rounded-full transition-all duration-300 border-2 ${
+                  className={`w-6 h-6 rounded-full transition-all duration-300 border-3 shadow-lg ${
                     activeIndex === index 
-                      ? "bg-blue-600 border-blue-600 scale-125" 
-                      : "bg-white border-gray-400 hover:border-blue-400 hover:bg-blue-50"
+                      ? "bg-blue-600 border-blue-600 scale-125 shadow-blue-300" 
+                      : "bg-white border-gray-500 hover:border-blue-500 hover:bg-blue-100 hover:scale-110"
                   }`}
                   onClick={() => api?.scrollTo(index)}
                   aria-label={`Aller à l'image ${index + 1}`}
@@ -155,9 +156,9 @@ const BlogHeader: React.FC = () => {
               ))}
             </div>
             
-            <div className="mt-6 flex justify-center gap-2">
-              <CarouselPrevious className="position-static" />
-              <CarouselNext className="position-static" />
+            <div className="mt-8 flex justify-center gap-4">
+              <CarouselPrevious className="position-static h-12 w-12" />
+              <CarouselNext className="position-static h-12 w-12" />
             </div>
           </Carousel>
         </div>

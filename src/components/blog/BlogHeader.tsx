@@ -1,5 +1,6 @@
 
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -38,7 +39,7 @@ const BlogHeader = () => {
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
           {/* Box ambrée pour le titre et le texte de description avec badge en haut */}
-          <div className="relative bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200/80 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+          <div className="relative bg-gradient-to-r from-amber-100 to-orange-100 border-2 border-amber-300 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl transition-all duration-500 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />
@@ -67,7 +68,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-300 transition-all duration-300 flex items-center gap-3 whitespace-nowrap rounded-xl hover:shadow-xl hover:scale-105">
+              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-300 transition-all duration-300 flex items-center gap-3 whitespace-nowrap rounded-xl hover:shadow-xl">
                 <Folder className="h-5 w-5" />
                 Voir le fichier
               </button>
@@ -158,4 +159,5 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+
 

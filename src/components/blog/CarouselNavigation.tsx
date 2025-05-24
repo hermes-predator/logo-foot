@@ -31,7 +31,14 @@ export const CarouselNavigation: React.FC<CarouselNavigationProps> = ({
         ))}
       </div>
       
-      <div className="mt-8 flex justify-center gap-4">
+      {/* Indicateur de position */}
+      <div className="flex items-center justify-center mt-4">
+        <div className="text-sm text-gray-600 bg-white/80 px-3 py-1 rounded-full shadow-md">
+          {activeIndex + 1} / {images.length}
+        </div>
+      </div>
+      
+      <div className="mt-6 flex justify-center gap-4">
         <CarouselPrevious className="position-static h-12 w-12" />
         <CarouselNext className="position-static h-12 w-12" />
       </div>

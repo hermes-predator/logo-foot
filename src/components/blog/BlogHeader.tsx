@@ -1,19 +1,101 @@
 
-import React from 'react';
-import { AlertTriangle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Eye, Download, Sparkles } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
+import { generateGalleryItems } from '@/utils/galleryData';
 
 const BlogHeader = () => {
+  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+  const { clubItems } = generateGalleryItems();
+  
+  // Prendre les 8 premiers éléments pour le carrousel
+  const carouselItems = clubItems.slice(0, 8);
+
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 mb-8 rounded-lg shadow-sm">
-      <div className="flex items-start space-x-4">
-        <AlertTriangle className="h-7 w-7 text-amber-600 flex-shrink-0" />
-        <div className="flex-1">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            🚧 Blog en Construction
+    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 rounded-xl shadow-lg">
+      <div className="max-w-6xl mx-auto">
+        {/* En-tête avec titre et description */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3">
+            <Sparkles className="h-8 w-8 text-yellow-500" />
+            Vous cherchez tous les logos de club de foot ?
           </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Notre section blog est actuellement en cours de développement. Nous travaillons dur pour vous proposer du contenu de qualité sur l'univers des logos de football. Revenez bientôt pour découvrir nos analyses, histoires et guides exclusifs !
+          <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
+            Téléchargez <span className="font-bold text-blue-600">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays. 
+            Obtenez toutes les ressources dans un fichier ZIP complet.
           </p>
+          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 mx-auto">
+            <Download className="h-5 w-5" />
+            Voir le fichier
+          </button>
+        </div>
+
+        {/* Carrousel d'aperçu */}
+        <div className="relative">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+            Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
+          </h3>
+          
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {carouselItems.map((item) => (
+                <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div
+                    className="relative aspect-square rounded-lg overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    onMouseEnter={() => setHoveredItem(item.id)}
+                    onMouseLeave={() => setHoveredItem(null)}
+                  >
+                    {hoveredItem === item.id ? (
+                      <div className="w-full h-full">
+                        <video
+                          src={item.videoUrl}
+                          className="absolute inset-0 w-full h-full object-contain bg-gray-900/95"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                        />
+                        <div className="absolute top-2 right-2">
+                          <Eye className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        <img
+                          src={item.imageUrl}
+                          alt={item.altText}
+                          className="w-full h-full object-contain p-2"
+                          loading="lazy"
+                        />
+                        <div className="absolute bottom-2 right-2">
+                          <Eye className="w-5 h-5 text-gray-600 opacity-60" />
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  <p className="text-center mt-2 text-sm text-gray-600 font-medium">
+                    {item.country}
+                  </p>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
+        </div>
+
+        {/* Badge de qualité */}
+        <div className="text-center mt-6">
+          <span className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+            <Sparkles className="h-4 w-4" />
+            Collection Premium • Format PNG Transparent • Haute Qualité
+          </span>
         </div>
       </div>
     </div>

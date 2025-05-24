@@ -105,15 +105,15 @@ const BlogHeader = () => {
             <CarouselNext className="right-0" />
           </Carousel>
 
-          {/* Indicateurs de navigation modernes */}
-          <div className="flex justify-center items-center gap-2 mt-6">
+          {/* Indicateurs de navigation modernes plus grands */}
+          <div className="flex justify-center items-center gap-3 mt-6">
             {Array.from({ length: count }, (_, index) => (
               <button
                 key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                className={`h-3 rounded-full transition-all duration-300 ${
                   index + 1 === current
-                    ? 'bg-blue-600 w-8 h-2'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-blue-600 w-12 h-3'
+                    : 'bg-gray-300 hover:bg-gray-400 w-3'
                 }`}
                 onClick={() => carouselApi?.scrollTo(index)}
                 aria-label={`Aller à la diapositive ${index + 1}`}

@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -44,8 +43,8 @@ const BlogHeader = () => {
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             
-            <div className="text-left flex-1 pt-6">
-              <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-3">
+            <div className="text-left flex-1 pt-8">
+              <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-5">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
               <p className="text-base text-orange-800 leading-relaxed mb-4 font-semibold">
@@ -55,7 +54,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-colors duration-300 flex items-center gap-3 whitespace-nowrap">
+              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-300 transition-all duration-300 flex items-center gap-3 whitespace-nowrap">
                 <Folder className="h-5 w-5" />
                 Voir le fichier
               </button>
@@ -146,4 +145,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -45,13 +44,13 @@ const BlogHeader = () => {
             
             {/* Bulle d'attention dans le coin supérieur gauche - style similaire à la référence */}
             <div className="absolute top-0 left-0 z-10">
-              <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 border-2 border-orange-300 text-orange-600 p-3 shadow-md rounded-2xl" style={{
+              <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-3 shadow-md rounded-2xl" style={{
                 borderTopLeftRadius: '0px',
                 borderTopRightRadius: '16px',
                 borderBottomLeftRadius: '0px',
                 borderBottomRightRadius: '16px'
               }}>
-                <AlertTriangle className="h-5 w-5" />
+                <AlertTriangle className="h-5 w-5" style={{ color: 'rgb(204, 124, 46)' }} />
               </div>
             </div>
             

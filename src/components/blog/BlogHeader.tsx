@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -67,7 +68,7 @@ const BlogHeader = () => {
             <div className="ml-4">
               <a 
                 href="#"
-                className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-4 text-base font-normal text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] group"
+                className="relative overflow-hidden inline-flex items-center gap-4 px-10 py-5 text-lg font-normal text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] group"
                 style={{
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',

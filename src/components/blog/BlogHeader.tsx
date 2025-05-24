@@ -66,7 +66,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg shadow-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap hover:shadow-xl border border-orange-400/30" 
+              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap border border-orange-400/30" 
                 style={{
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fdba74, #fb923c)',
@@ -81,7 +81,7 @@ const BlogHeader = () => {
         </div>
 
         {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-8 shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden" style={{borderRadius: '16px'}}>
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-8 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden" style={{borderRadius: '16px'}}>
           {/* Titre de l'aperçu */}
           <h3 className="text-xl font-semibold text-orange-800 mb-6 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip

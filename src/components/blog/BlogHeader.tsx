@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -31,7 +32,7 @@ const BlogHeader = () => {
   }, [carouselApi]);
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 shadow-lg overflow-visible">
+    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-8 mb-8 shadow-lg overflow-visible">
       <div className="max-w-6xl mx-auto overflow-visible">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8 pt-4 overflow-visible">

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -97,7 +98,7 @@ const BlogHeader: React.FC = () => {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-white py-12 md:py-16">
-      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+      <div className="w-full px-4 h-full flex flex-col justify-center">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">
             Les Plus Beaux Logos du Football
@@ -108,7 +109,7 @@ const BlogHeader: React.FC = () => {
           </p>
         </div>
         
-        <div className="max-w-5xl mx-auto w-full">
+        <div className="w-full">
           <Carousel
             opts={carouselOptions}
             className="w-full"
@@ -117,7 +118,7 @@ const BlogHeader: React.FC = () => {
             <CarouselContent>
               {carouselImages.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="p-2">
+                  <div className="px-4">
                     <div className="overflow-hidden rounded-2xl shadow-2xl">
                       <AspectRatio ratio={16 / 9}>
                         <OptimizedImage

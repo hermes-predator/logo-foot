@@ -4,11 +4,15 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import {
   Carousel,
   CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { CarouselImageItem } from './blog/CarouselImageItem';
-import { CarouselNavigation } from './blog/CarouselNavigation';
-import { useCarouselImages } from './blog/hooks/useCarouselImages';
+import { AspectRatio } from './ui/aspect-ratio';
+import { OptimizedImage } from './ui/optimized-image';
+import { useToast } from '@/hooks/use-toast';
+import { Check } from 'lucide-react';
 
 // Images pour le carousel
 const carouselImages = [
@@ -40,15 +44,38 @@ const carouselImages = [
 ];
 
 const BlogHeader: React.FC = () => {
+  const { toast } = useToast();
   const isMobile = useIsMobile();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(carouselImages.map(() => false));
   const [api, setApi] = useState<CarouselApi>();
-  const { imagesLoaded, handleImageLoad } = useCarouselImages(carouselImages.length);
+
+  // Gérer le chargement des images
+  const handleImageLoad = (index: number) => {
+    const newLoadedState = [...imagesLoaded];
+    newLoadedState[index] = true;
+    setImagesLoaded(newLoadedState);
+    
+    // Afficher un toast pour la dernière image (5e image)
+    if (index === 4) {
+      toast({
+        title: "Images chargées",
+        description: "Toutes les images du carrousel sont prêtes",
+        variant: "default",
+        icon: <Check className="h-4 w-4 text-green-500" />
+      });
+    }
+  };
 
   // Options du carousel
   const carouselOptions = {
     align: "start" as "start",
     loop: true
+  };
+
+  // Détecter le changement de slide actif
+  const handleSlideChange = (index: number) => {
+    setActiveIndex(index);
   };
   
   // Effect to listen to carousel changes
@@ -90,20 +117,50 @@ const BlogHeader: React.FC = () => {
           >
             <CarouselContent>
               {carouselImages.map((image, index) => (
-                <CarouselImageItem
-                  key={index}
-                  image={image}
-                  index={index}
-                  onImageLoad={handleImageLoad}
-                />
+                <CarouselItem key={index}>
+                  <div className="px-4">
+                    <div className="overflow-hidden rounded-2xl shadow-2xl">
+                      <AspectRatio ratio={16 / 9}>
+                        <OptimizedImage
+                          src={image.src}
+                          alt={image.alt}
+                          width={1000}
+                          height={563}
+                          priority={index === 0}
+                          objectFit="cover"
+                          className="w-full h-full transition-transform duration-500 hover:scale-105"
+                          onLoad={() => handleImageLoad(index)}
+                        />
+                      </AspectRatio>
+                      <div className="bg-white p-6">
+                        <h3 className="font-semibold text-xl text-center">{image.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
               ))}
             </CarouselContent>
             
-            <CarouselNavigation
-              images={carouselImages}
-              activeIndex={activeIndex}
-              api={api}
-            />
+            {/* Navigation dots - Plus visibles */}
+            <div className="flex items-center justify-center mt-8 space-x-4">
+              {carouselImages.map((_, index) => (
+                <button
+                  key={`dot-${index}`}
+                  className={`w-6 h-6 rounded-full transition-all duration-300 border-3 shadow-lg ${
+                    activeIndex === index 
+                      ? "bg-blue-600 border-blue-600 scale-125 shadow-blue-300" 
+                      : "bg-white border-gray-500 hover:border-blue-500 hover:bg-blue-100 hover:scale-110"
+                  }`}
+                  onClick={() => api?.scrollTo(index)}
+                  aria-label={`Aller à l'image ${index + 1}`}
+                />
+              ))}
+            </div>
+            
+            <div className="mt-8 flex justify-center gap-4">
+              <CarouselPrevious className="position-static h-12 w-12" />
+              <CarouselNext className="position-static h-12 w-12" />
+            </div>
           </Carousel>
         </div>
       </div>

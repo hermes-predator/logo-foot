@@ -37,7 +37,7 @@ const BlogHeader = () => {
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
           {/* Box d'appel à l'action avec couleurs similaires */}
-          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-6 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-lg hover:shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-20" style={{ filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))' }}>
+          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-lg hover:shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-20" style={{ filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))' }}>
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />
@@ -55,18 +55,18 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            <div className="text-left flex-1 pt-8">
-              <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-5">
+            <div className="text-left flex-1 pt-6">
+              <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-3">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
-              <p className="text-base text-orange-700 leading-relaxed mb-4 font-semibold">
+              <p className="text-base text-orange-700 leading-relaxed mb-3 font-semibold">
                 Téléchargez <span className="font-bold underline text-orange-800">+ de 8600 LOGOS de Clubs de Football</span> organisés par pays.<br />
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
             </div>
             
-            <div className="ml-6">
-              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap border border-orange-400/30" 
+            <div className="ml-4">
+              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 font-bold text-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap border border-orange-400/30" 
                 style={{
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fdba74, #fb923c)',
@@ -83,7 +83,7 @@ const BlogHeader = () => {
         {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
         <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
           {/* Titre de l'aperçu */}
-          <h3 className="text-sm font-medium text-gray-900 mb-6 text-center">
+          <h3 className="text-xs font-medium text-black mb-6 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
           </h3>
           

@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Link } from 'react-router-dom';
@@ -99,23 +101,30 @@ const BlogHeader = () => {
           </div>
           
           <div className="ml-4">
-            <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{
-            borderRadius: '12px',
-            background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
-            borderTop: '2px solid #fde047',
-            borderLeft: '2px solid #fde047',
-            borderRight: '2px solid #a16207',
-            borderBottom: '2px solid #a16207',
-            boxShadow: '0 4px 8px -2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
-            textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-          }}>
-              {/* Effet de brillance sur le bouton */}
-              <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[10px]"></div>
-              
-              <Folder className="h-6 w-6 relative z-10 drop-shadow-sm" />
-              <span className="relative z-10 font-semibold">Voir le fichier</span>
-              <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
-            </Link>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{
+                borderRadius: '12px',
+                background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
+                borderTop: '2px solid #fde047',
+                borderLeft: '2px solid #fde047',
+                borderRight: '2px solid #a16207',
+                borderBottom: '2px solid #a16207',
+                boxShadow: '0 4px 8px -2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
+                textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
+              }}>
+                  {/* Effet de brillance sur le bouton */}
+                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[10px]"></div>
+                  
+                  <Folder className="h-6 w-6 relative z-10 drop-shadow-sm" />
+                  <span className="relative z-10 font-semibold">Voir le fichier</span>
+                  <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Accédez au pack complet de logos de football</p>
+              </TooltipContent>
+            </Tooltip>
           </div>
         </div>
       </div>

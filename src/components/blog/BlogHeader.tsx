@@ -98,7 +98,7 @@ const BlogHeader = () => {
           <div className="relative">
             <Carousel className="w-full max-w-5xl mx-auto" setApi={setCarouselApi}>
               <CarouselContent className="-ml-2 md:-ml-4">
-                {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3">
+                {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
                     <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onMouseEnter={() => setHoveredItem(item.id)} onMouseLeave={() => setHoveredItem(null)}>
                       {hoveredItem === item.id ? <div className="w-full h-full">
                           <video src={item.videoUrl} className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" autoPlay muted loop playsInline />

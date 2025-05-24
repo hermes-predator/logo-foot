@@ -70,12 +70,12 @@ const BlogHeader = () => {
               <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{
               borderRadius: '12px',
               background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
-              borderTop: '2px solid #fcd34d',
-              borderLeft: '2px solid #fcd34d', 
-              borderRight: '2px solid #b45309',
-              borderBottom: '2px solid #b45309',
-              boxShadow: '0 3px 8px -2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-              textShadow: '0 1px 2px rgba(0, 0, 0, 0.2)'
+              borderTop: '2px solid #fde047',
+              borderLeft: '2px solid #fde047', 
+              borderRight: '2px solid #a16207',
+              borderBottom: '2px solid #a16207',
+              boxShadow: '0 4px 8px -2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
+              textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
             }}>
                 {/* Effet de brillance sur le bouton */}
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[10px]"></div>

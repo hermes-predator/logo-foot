@@ -73,14 +73,14 @@ const BlogHeader = () => {
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
                   boxShadow: '0 10px 25px -5px rgba(0, 0, 0, .05), 0 8px 10px -6px rgba(0, 0, 0, .03)',
-                  border: '2px solid transparent',
+                  border: '1px solid transparent',
                   backgroundClip: 'padding-box'
                 }}
               >
-                {/* Bordure animée alternée */}
-                <div className="absolute inset-0 rounded-[16px] p-[2px]">
-                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-300 opacity-60 animate-pulse"></div>
-                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-l from-orange-400 via-amber-500 to-orange-400 opacity-40 animate-[pulse_1.5s_ease-in-out_infinite_0.5s]"></div>
+                {/* Bordure animée alternée plus fine */}
+                <div className="absolute inset-0 rounded-[16px] p-[1px]">
+                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-300 opacity-40 animate-pulse"></div>
+                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-l from-orange-400 via-amber-500 to-orange-400 opacity-30 animate-[pulse_1.5s_ease-in-out_infinite_0.5s]"></div>
                 </div>
                 
                 {/* Effet de brillance sur le bouton */}

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Eye, Download, Sparkles } from 'lucide-react';
+import { Eye, Download } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
 
@@ -37,8 +37,7 @@ const BlogHeader = () => {
         <div className="text-center mb-8">
           {/* Box ambrée pour le titre et le texte de description */}
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4 flex items-center justify-center gap-3">
-              <Sparkles className="h-8 w-8 text-yellow-500" />
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
               Vous cherchez tous les logos de club de foot ?
             </h2>
             <p className="text-lg text-amber-900 leading-relaxed">

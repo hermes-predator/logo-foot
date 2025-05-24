@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -77,12 +76,6 @@ const BlogHeader = () => {
                   backgroundClip: 'padding-box'
                 }}
               >
-                {/* Bordure animée alternée plus fine */}
-                <div className="absolute inset-0 rounded-[16px] p-[1px]">
-                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-300 opacity-40 animate-pulse"></div>
-                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-l from-orange-400 via-amber-500 to-orange-400 opacity-30 animate-[pulse_1.5s_ease-in-out_infinite_0.5s]"></div>
-                </div>
-                
                 {/* Effet de brillance sur le bouton */}
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white to-gray-50/90 opacity-0 hover:opacity-10 transition-opacity duration-200 rounded-[16px]"></div>
                 

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Eye, Download, Sparkles } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
-import { useCarousel } from "../ui/carousel";
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -32,7 +31,7 @@ const BlogHeader = () => {
   }, [carouselApi]);
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 rounded-xl shadow-lg">
+    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 shadow-lg">
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">

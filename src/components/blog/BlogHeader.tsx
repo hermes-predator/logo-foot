@@ -43,6 +43,13 @@ const BlogHeader = () => {
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             
+            {/* Bulle d'attention dans le coin supérieur gauche */}
+            <div className="absolute -top-2 -left-2 z-10">
+              <div className="bg-red-500 text-white rounded-full p-1 shadow-lg animate-pulse">
+                <AlertTriangle className="h-4 w-4" />
+              </div>
+            </div>
+            
             <div className="text-left flex-1 pt-8">
               <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-5">
                 Vous cherchez tous les logos de club de foot ?
@@ -53,14 +60,7 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            <div className="ml-6 relative">
-              {/* Bulle d'attention dans le coin supérieur gauche */}
-              <div className="absolute -top-2 -left-2 z-10">
-                <div className="bg-red-500 text-white rounded-full p-1 shadow-lg animate-pulse">
-                  <AlertTriangle className="h-4 w-4" />
-                </div>
-              </div>
-              
+            <div className="ml-6">
               <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-300 transition-all duration-300 flex items-center gap-3 whitespace-nowrap rounded-xl">
                 <Folder className="h-5 w-5" />
                 Voir le fichier

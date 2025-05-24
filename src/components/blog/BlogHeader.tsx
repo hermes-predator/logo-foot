@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Eye, Folder, AlertTriangle } from 'lucide-react';
+import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
@@ -66,7 +66,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg shadow-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap hover:shadow-xl transform hover:scale-[1.02] border border-orange-400/30" 
+              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 font-bold text-lg shadow-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap hover:shadow-xl border border-orange-400/30" 
                 style={{
                   borderRadius: '16px',
                   background: 'linear-gradient(to bottom, #fdba74, #fb923c)',
@@ -74,6 +74,7 @@ const BlogHeader = () => {
                 }}>
                 <Folder className="h-5 w-5" />
                 Voir le fichier
+                <ArrowRight className="h-5 w-5" />
               </button>
             </div>
           </div>

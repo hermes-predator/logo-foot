@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -65,19 +66,19 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-4">
-              <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)] group" style={{
+              <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{
               borderRadius: '16px',
-              background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
-              boxShadow: '0 10px 25px -5px rgba(0, 0, 0, .05), 0 8px 10px -6px rgba(0, 0, 0, .03)',
-              border: '1px solid transparent',
-              backgroundClip: 'padding-box'
+              background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
+              border: '2px solid #b45309',
+              boxShadow: '0 6px 20px -6px rgba(217, 119, 6, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset',
+              textShadow: '0 1px 2px rgba(0, 0, 0, 0.1)'
             }}>
                 {/* Effet de brillance sur le bouton */}
-                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white to-gray-50/90 opacity-0 hover:opacity-10 transition-opacity duration-200 rounded-[16px]"></div>
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[14px]"></div>
                 
-                <Folder className="h-6 w-6 relative z-10" />
-                <span className="relative z-10">Voir le fichier</span>
-                <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1" />
+                <Folder className="h-6 w-6 relative z-10 drop-shadow-sm" />
+                <span className="relative z-10 font-semibold">Voir le fichier</span>
+                <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
               </Link>
             </div>
           </div>

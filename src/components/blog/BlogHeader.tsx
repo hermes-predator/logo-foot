@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -49,7 +47,7 @@ const BlogHeader = () => {
               <div className="p-3" style={{
                 backgroundColor: 'rgb(251, 234, 168)',
                 borderTopLeftRadius: '0px',
-                borderTopRightRadius: '16px',
+                borderTopRightRadius: '0px',
                 borderBottomLeftRadius: '0px',
                 borderBottomRightRadius: '16px'
               }}>
@@ -177,4 +175,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

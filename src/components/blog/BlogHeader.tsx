@@ -1,7 +1,9 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { generateGalleryItems } from '@/utils/galleryData';
+import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -40,10 +42,11 @@ const BlogHeader = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
-              <p className="text-lg text-amber-900 leading-relaxed">
+              <p className="text-lg text-amber-900 leading-relaxed mb-4">
                 Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays.<br />
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
+              <GoogleDriveBadge />
             </div>
             
             <div className="ml-6">

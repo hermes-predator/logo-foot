@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -8,15 +7,20 @@ import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
-  const [carouselApi, setCarouselApi] = useState<any>(null);
+  const [carouselApi, setCarouselApi = useState<any>(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
   const {
     clubItems
   } = generateGalleryItems();
 
-  // Prendre les 8 premiers éléments pour le carrousel
-  const carouselItems = clubItems.slice(0, 8);
+  // Prendre les 8 premiers éléments pour le carrousel avec des titres simplifiés
+  const carouselItems = clubItems.slice(0, 8).map((item, index) => ({
+    ...item,
+    title: `Collection des logos des équipes de foot ${index + 1}.`,
+    altText: `Collection des logos des équipes de foot ${index + 1}`
+  }));
+  
   React.useEffect(() => {
     if (!carouselApi) {
       return;
@@ -27,6 +31,7 @@ const BlogHeader = () => {
       setCurrent(carouselApi.selectedScrollSnap() + 1);
     });
   }, [carouselApi]);
+  
   return <div className="bg-white p-8 mb-8 shadow-sm overflow-visible">
       <div className="max-w-6xl mx-auto overflow-visible">
         {/* En-tête avec titre et description */}

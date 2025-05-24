@@ -39,10 +39,15 @@ const BlogHeader = () => {
             <Sparkles className="h-8 w-8 text-yellow-500" />
             Vous cherchez tous les logos de club de foot ?
           </h2>
-          <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
-            Téléchargez <span className="font-bold text-blue-600">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays. 
-            Obtenez toutes les ressources dans un fichier ZIP complet.
-          </p>
+          
+          {/* Box ambrée pour le texte de description */}
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-6 mb-6 max-w-4xl mx-auto">
+            <p className="text-lg text-amber-900 leading-relaxed">
+              Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays. 
+              Obtenez toutes les ressources dans un fichier ZIP complet.
+            </p>
+          </div>
+          
           <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 mx-auto">
             <Download className="h-5 w-5" />
             Voir le fichier

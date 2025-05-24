@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -98,14 +99,8 @@ const BlogHeader = () => {
                     <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onMouseEnter={() => setHoveredItem(item.id)} onMouseLeave={() => setHoveredItem(null)}>
                       {hoveredItem === item.id ? <div className="w-full h-full">
                           <video src={item.videoUrl} className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" autoPlay muted loop playsInline />
-                          <div className="absolute top-2 right-2">
-                            <Eye className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
-                          </div>
                         </div> : <>
                           <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
-                          <div className="absolute bottom-2 right-2">
-                            <Eye className="w-5 h-5 text-gray-600 opacity-60" />
-                          </div>
                         </>}
                     </div>
                     

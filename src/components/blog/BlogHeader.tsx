@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -36,9 +37,14 @@ const BlogHeader = () => {
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
-          {/* Box ambrée pour le titre et le texte de description */}
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between">
-            <div className="text-left flex-1">
+          {/* Box ambrée pour le titre et le texte de description avec badge en haut */}
+          <div className="relative bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between">
+            {/* Badge Google Drive positionné en haut au centre */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+              <GoogleDriveBadge />
+            </div>
+            
+            <div className="text-left flex-1 pt-4">
               <h2 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
@@ -46,7 +52,6 @@ const BlogHeader = () => {
                 Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays.<br />
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
-              <GoogleDriveBadge />
             </div>
             
             <div className="ml-6">
@@ -141,3 +146,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

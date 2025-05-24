@@ -60,7 +60,7 @@ const BlogHeader = () => {
     });
   }, [carouselApi]);
 
-  return <div className="bg-white p-8 mb-8 shadow-sm overflow-visible">
+  return <div className="bg-white p-8 mb-4 shadow-sm overflow-visible">
     <div className="max-w-6xl mx-auto overflow-visible">
       {/* En-tête avec titre et description */}
       <div className="text-center mb-8 pt-4 overflow-visible">
@@ -123,7 +123,7 @@ const BlogHeader = () => {
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
       <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
         {/* Titre de l'aperçu */}
-        <h3 className="font-medium text-orange-800 mb-4 text-center text-sm">
+        <h3 className="font-semibold text-orange-800 mb-4 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         
@@ -151,7 +151,7 @@ const BlogHeader = () => {
       </div>
 
       {/* Badge de qualité */}
-      <div className="text-center mt-6">
+      <div className="text-center mt-2">
           
       </div>
     </div>

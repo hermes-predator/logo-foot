@@ -39,7 +39,7 @@ const BlogHeader = () => {
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
           {/* Box ambrée pour le titre et le texte de description avec badge en haut */}
-          <div className="relative bg-gradient-to-r from-amber-100 to-orange-100 border-2 border-amber-300 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl transition-all duration-500 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+          <div className="relative bg-gradient-to-r from-amber-75 to-orange-75 border-2 border-amber-250 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl transition-all duration-500 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />

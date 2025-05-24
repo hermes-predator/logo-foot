@@ -32,12 +32,12 @@ const BlogHeader = () => {
   }, [carouselApi]);
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 shadow-lg">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/60 p-8 mb-8 shadow-lg overflow-visible">
+      <div className="max-w-6xl mx-auto overflow-visible">
         {/* En-tête avec titre et description */}
-        <div className="text-center mb-8 pt-4">
+        <div className="text-center mb-8 pt-4 overflow-visible">
           {/* Box d'appel à l'action avec couleurs similaires */}
-          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-lg hover:shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-20" style={{ filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))' }}>
+          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-lg hover:shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20" style={{ filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))' }}>
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />

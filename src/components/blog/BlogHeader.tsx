@@ -36,7 +36,7 @@ const BlogHeader = () => {
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
-          {/* Box inspirée de la référence avec couleurs similaires */}
+          {/* Box d'appel à l'action avec couleurs similaires */}
           <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
@@ -80,76 +80,80 @@ const BlogHeader = () => {
           </div>
         </div>
 
-        {/* Carrousel d'aperçu */}
-        <div className="relative">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+        {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-8 shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden" style={{borderRadius: '16px'}}>
+          {/* Titre de l'aperçu */}
+          <h3 className="text-xl font-semibold text-orange-800 mb-6 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
           </h3>
           
-          <Carousel 
-            className="w-full max-w-5xl mx-auto"
-            setApi={setCarouselApi}
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {carouselItems.map(item => (
-                <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div 
-                    className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" 
-                    onMouseEnter={() => setHoveredItem(item.id)} 
-                    onMouseLeave={() => setHoveredItem(null)}
-                  >
-                    {hoveredItem === item.id ? (
-                      <div className="w-full h-full">
-                        <video 
-                          src={item.videoUrl} 
-                          className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" 
-                          autoPlay 
-                          muted 
-                          loop 
-                          playsInline 
-                        />
-                        <div className="absolute top-2 right-2">
-                          <Eye className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
+          {/* Carrousel d'aperçu */}
+          <div className="relative">
+            <Carousel 
+              className="w-full max-w-5xl mx-auto"
+              setApi={setCarouselApi}
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {carouselItems.map(item => (
+                  <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <div 
+                      className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" 
+                      onMouseEnter={() => setHoveredItem(item.id)} 
+                      onMouseLeave={() => setHoveredItem(null)}
+                    >
+                      {hoveredItem === item.id ? (
+                        <div className="w-full h-full">
+                          <video 
+                            src={item.videoUrl} 
+                            className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" 
+                            autoPlay 
+                            muted 
+                            loop 
+                            playsInline 
+                          />
+                          <div className="absolute top-2 right-2">
+                            <Eye className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
+                          </div>
                         </div>
-                      </div>
-                    ) : (
-                      <>
-                        <img 
-                          src={item.imageUrl} 
-                          alt={item.altText} 
-                          className="w-full h-full object-contain p-2" 
-                          loading="lazy" 
-                        />
-                        <div className="absolute bottom-2 right-2">
-                          <Eye className="w-5 h-5 text-gray-600 opacity-60" />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                  <p className="text-center mt-2 text-sm text-gray-600 font-medium">
-                    {item.country}
-                  </p>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-0" />
-            <CarouselNext className="right-0" />
-          </Carousel>
+                      ) : (
+                        <>
+                          <img 
+                            src={item.imageUrl} 
+                            alt={item.altText} 
+                            className="w-full h-full object-contain p-2" 
+                            loading="lazy" 
+                          />
+                          <div className="absolute bottom-2 right-2">
+                            <Eye className="w-5 h-5 text-gray-600 opacity-60" />
+                          </div>
+                        </>
+                      )}
+                    </div>
+                    <p className="text-center mt-2 text-sm text-orange-700 font-medium">
+                      {item.country}
+                    </p>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-0" />
+              <CarouselNext className="right-0" />
+            </Carousel>
 
-          {/* Indicateurs de navigation modernes plus grands */}
-          <div className="flex justify-center items-center gap-3 mt-6">
-            {Array.from({ length: count }, (_, index) => (
-              <button
-                key={index}
-                className={`h-3 transition-all duration-300 ${
-                  index + 1 === current
-                    ? 'bg-blue-600 w-12 h-3'
-                    : 'bg-gray-300 hover:bg-gray-400 w-3'
-                }`}
-                onClick={() => carouselApi?.scrollTo(index)}
-                aria-label={`Aller à la diapositive ${index + 1}`}
-              />
-            ))}
+            {/* Indicateurs de navigation modernes plus grands */}
+            <div className="flex justify-center items-center gap-3 mt-6">
+              {Array.from({ length: count }, (_, index) => (
+                <button
+                  key={index}
+                  className={`h-3 transition-all duration-300 ${
+                    index + 1 === current
+                      ? 'bg-orange-600 w-12 h-3'
+                      : 'bg-orange-300 hover:bg-orange-400 w-3'
+                  }`}
+                  onClick={() => carouselApi?.scrollTo(index)}
+                  aria-label={`Aller à la diapositive ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 

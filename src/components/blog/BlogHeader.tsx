@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -7,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
-  const [carouselApi, setCarouselApi = useState<any>(null);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
   const {

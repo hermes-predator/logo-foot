@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -39,7 +38,7 @@ const BlogHeader = () => {
           {/* Box d'appel à l'action avec couleurs similaires */}
           <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-lg hover:shadow-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20" style={{ filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))' }}>
             {/* Badge Google Drive positionné en haut au centre */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Download } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -36,7 +37,7 @@ const BlogHeader = () => {
         <div className="text-center mb-8">
           {/* Box ambrée pour le titre et le texte de description */}
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4">
               Vous cherchez tous les logos de club de foot ?
             </h2>
             <p className="text-lg text-amber-900 leading-relaxed">

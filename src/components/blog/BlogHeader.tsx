@@ -11,16 +11,52 @@ const BlogHeader = () => {
   const [carouselApi, setCarouselApi] = useState<any>(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
-  const {
-    clubItems
-  } = generateGalleryItems();
 
-  // Prendre les 8 premiers éléments pour le carrousel avec des titres simplifiés
-  const carouselItems = clubItems.slice(0, 8).map((item, index) => ({
-    ...item,
-    title: `Collection des logos des équipes de foot ${index + 1}.`,
-    altText: `Collection des logos des équipes de foot ${index + 1}`
-  }));
+  // Images pour le carrousel dans l'ordre fourni par l'utilisateur
+  const carouselItems = [
+    {
+      id: 1,
+      imageUrl: '/lovable-uploads/5401e79e-0c75-471c-b89c-5f146818720b.png',
+      videoUrl: '/public/videos/video1.mov',
+      title: 'Collection des logos des équipes de foot 1.',
+      altText: 'Collection des logos des équipes de foot 1'
+    },
+    {
+      id: 2,
+      imageUrl: '/lovable-uploads/da6c4256-9645-4187-9378-9036eb2bea01.png',
+      videoUrl: '/public/videos/video2.mov',
+      title: 'Collection des logos des équipes de foot 2.',
+      altText: 'Collection des logos des équipes de foot 2'
+    },
+    {
+      id: 3,
+      imageUrl: '/lovable-uploads/741e3db9-8eff-4573-958f-1c6ddb91066a.png',
+      videoUrl: '/public/videos/video3.mov',
+      title: 'Collection des logos des équipes de foot 3.',
+      altText: 'Collection des logos des équipes de foot 3'
+    },
+    {
+      id: 4,
+      imageUrl: '/lovable-uploads/f36f0c41-aced-4ca4-afc3-39bfe2fd0951.png',
+      videoUrl: '/public/videos/video4.mov',
+      title: 'Collection des logos des équipes de foot 4.',
+      altText: 'Collection des logos des équipes de foot 4'
+    },
+    {
+      id: 5,
+      imageUrl: '/lovable-uploads/d7ac2a17-35fe-4ad2-be4d-bf8607f9647a.png',
+      videoUrl: '/public/videos/video5.mov',
+      title: 'Collection des logos des équipes de foot 5.',
+      altText: 'Collection des logos des équipes de foot 5'
+    },
+    {
+      id: 6,
+      imageUrl: '/lovable-uploads/ea858c6e-3a24-4219-864a-efa1334d6c7a.png',
+      videoUrl: '/public/videos/video6.mov',
+      title: 'Collection des logos des équipes de foot 6.',
+      altText: 'Collection des logos des équipes de foot 6'
+    }
+  ];
   
   React.useEffect(() => {
     if (!carouselApi) {

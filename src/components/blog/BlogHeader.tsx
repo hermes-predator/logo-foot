@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -88,7 +86,7 @@ const BlogHeader = () => {
         {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
         <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
           {/* Titre de l'aperçu */}
-          <h3 className="text-xs font-medium text-black mb-8 text-center">
+          <h3 className="text-xs font-medium text-black mb-4 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
           </h3>
           
@@ -128,4 +126,3 @@ const BlogHeader = () => {
     </div>;
 };
 export default BlogHeader;
-

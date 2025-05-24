@@ -66,16 +66,20 @@ const BlogHeader = () => {
             </div>
             
             <div className="ml-4">
-              <button className="bg-gradient-to-b from-orange-300 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 font-bold text-lg transition-all duration-200 flex items-center gap-3 whitespace-nowrap border border-orange-400/30" 
+              <a 
+                href="#"
+                className="relative overflow-hidden inline-flex items-center gap-3 px-6 py-3 text-sm font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 border border-gray-100 backdrop-blur-sm transition-all duration-200 hover:shadow-[0_4px_12px_-2px_rgba(255,196,87,0.3),0_3px_10px_-3px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.4)]"
                 style={{
                   borderRadius: '16px',
-                  background: 'linear-gradient(to bottom, #fdba74, #fb923c)',
-                  boxShadow: '0 4px 12px rgba(251, 146, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
-                }}>
+                  background: 'linear-gradient(to bottom, #fbbf24, #f59e0b, #d97706)',
+                  boxShadow: '0 10px 25px -5px rgba(0, 0, 0, .05), 0 8px 10px -6px rgba(0, 0, 0, .03)'
+                }}
+              >
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white to-gray-50/90 opacity-0 hover:opacity-10 transition-opacity duration-200"></div>
                 <Folder className="h-5 w-5" />
                 Voir le fichier
                 <ArrowRight className="h-5 w-5" />
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -37,16 +36,16 @@ const BlogHeader = () => {
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
-          {/* Box ambrée pour le titre et le texte de description avec badge en haut */}
-          <div className="relative bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200/80 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+          {/* Box inspirée de la référence avec couleurs similaires */}
+          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             
-            {/* Bulle d'attention dans le coin supérieur gauche */}
+            {/* Bulle d'attention dans le coin supérieur gauche - couleur orange comme la référence */}
             <div className="absolute top-0 left-0 z-10">
-              <div className="bg-red-500 text-white p-2 shadow-lg" style={{
+              <div className="bg-orange-500 text-white p-2 shadow-lg" style={{
                 borderTopLeftRadius: '0px',
                 borderTopRightRadius: '0px 16px',
                 borderBottomLeftRadius: '0px 16px',
@@ -57,17 +56,17 @@ const BlogHeader = () => {
             </div>
             
             <div className="text-left flex-1 pt-8">
-              <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-5">
+              <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-5">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
-              <p className="text-base text-orange-800 leading-relaxed mb-4 font-semibold">
-                Téléchargez <span className="font-bold underline text-orange-900">+ de 8600 LOGOS de Clubs de Football</span> organisés par pays.<br />
+              <p className="text-base text-orange-700 leading-relaxed mb-4 font-semibold">
+                Téléchargez <span className="font-bold underline text-orange-800">+ de 8600 LOGOS de Clubs de Football</span> organisés par pays.<br />
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
             </div>
             
             <div className="ml-6">
-              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-300 transition-all duration-300 flex items-center gap-3 whitespace-nowrap rounded-xl hover:shadow-xl hover:scale-105">
+              <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 font-semibold text-lg shadow-lg border border-orange-400 transition-all duration-300 flex items-center gap-3 whitespace-nowrap rounded-xl hover:shadow-xl hover:scale-105">
                 <Folder className="h-5 w-5" />
                 Voir le fichier
               </button>
@@ -158,4 +157,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -44,7 +45,12 @@ const BlogHeader = () => {
             
             {/* Bulle d'attention dans le coin supérieur gauche */}
             <div className="absolute top-0 left-0 z-10">
-              <div className="bg-red-500 text-white rounded-full p-1 shadow-lg animate-pulse">
+              <div className="bg-red-500 text-white p-2 shadow-lg animate-pulse" style={{
+                borderTopLeftRadius: '0px',
+                borderTopRightRadius: '0px 16px',
+                borderBottomLeftRadius: '0px 16px',
+                borderBottomRightRadius: '16px'
+              }}>
                 <AlertTriangle className="h-4 w-4" />
               </div>
             </div>

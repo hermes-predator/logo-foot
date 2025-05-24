@@ -68,7 +68,7 @@ const BlogHeader = () => {
             <div className="ml-4">
               <a 
                 href="#"
-                className="group relative overflow-hidden inline-flex items-center gap-5 px-8 py-5 text-lg font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600"
+                className="group relative overflow-hidden inline-flex items-center gap-5 px-10 py-5 text-lg font-medium text-white whitespace-nowrap bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600"
                 style={{
                   borderRadius: '18px',
                   border: '1px solid rgba(251, 191, 36, 0.4)',

@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -42,7 +39,7 @@ const BlogHeader = () => {
           <div className="relative bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-5xl mx-auto flex items-center justify-between">
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
-              <GoogleDriveBadge />
+              <GoogleDriveBadge cursorHelp={true} />
             </div>
             
             <div className="text-left flex-1 pt-4">
@@ -147,5 +144,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-
-

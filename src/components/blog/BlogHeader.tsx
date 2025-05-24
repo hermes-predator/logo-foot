@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -38,7 +37,7 @@ const BlogHeader = () => {
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
           {/* Box d'appel à l'action avec couleurs similaires */}
-          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-6 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+          <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 p-6 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-2xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-20" style={{ filter: 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15))' }}>
             {/* Badge Google Drive positionné en haut au centre */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
               <GoogleDriveBadge cursorHelp={true} />
@@ -82,7 +81,7 @@ const BlogHeader = () => {
         </div>
 
         {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden">
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
           {/* Titre de l'aperçu */}
           <h3 className="text-xl font-semibold text-orange-800 mb-6 text-center">
             Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
@@ -168,4 +167,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

@@ -138,18 +138,23 @@ const BlogHeader: React.FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex items-center justify-center mt-4 space-x-2">
+            
+            {/* Navigation dots */}
+            <div className="flex items-center justify-center mt-6 space-x-2">
               {carouselImages.map((_, index) => (
                 <button
                   key={`dot-${index}`}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    activeIndex === index ? "bg-blue-600 w-4" : "bg-gray-300"
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    activeIndex === index 
+                      ? "bg-blue-600 scale-110" 
+                      : "bg-gray-300 hover:bg-gray-400"
                   }`}
                   onClick={() => api?.scrollTo(index)}
                   aria-label={`Aller à l'image ${index + 1}`}
                 />
               ))}
             </div>
+            
             <div className="mt-4 flex justify-center gap-2">
               <CarouselPrevious className="position-static" />
               <CarouselNext className="position-static" />

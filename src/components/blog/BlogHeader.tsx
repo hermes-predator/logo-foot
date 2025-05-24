@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -44,7 +45,7 @@ const BlogHeader = () => {
             </div>
             
             <div className="text-left flex-1 pt-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-900 mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-orange-900 mb-4">
                 Vous cherchez tous les logos de club de foot ?
               </h2>
               <p className="text-lg text-orange-800 leading-relaxed mb-4">
@@ -145,3 +146,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

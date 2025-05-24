@@ -142,13 +142,8 @@ const BlogHeader = () => {
               <CarouselContent className="-ml-2 md:-ml-4">
                 {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
                     <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onMouseEnter={() => setHoveredItem(item.id)} onMouseLeave={() => setHoveredItem(null)}>
-                      {hoveredItem === item.id ? <div className="w-full h-full">
-                          <video src={item.videoUrl} className="absolute inset-0 w-full h-full object-contain bg-gray-900/95" autoPlay muted loop playsInline />
-                        </div> : <>
-                          <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
-                        </>}
+                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
                     </div>
-                    
                   </CarouselItem>)}
               </CarouselContent>
               <CarouselPrevious className="left-0" />

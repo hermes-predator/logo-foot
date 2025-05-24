@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -43,9 +44,9 @@ const BlogHeader = () => {
               <GoogleDriveBadge cursorHelp={true} />
             </div>
             
-            {/* Bulle d'attention dans le coin supérieur gauche - style similaire à la référence */}
+            {/* Bulle d'attention dans le coin supérieur gauche - forme parfaitement épousée */}
             <div className="absolute top-0 left-0 z-10">
-              <div className="p-3 shadow-md rounded-2xl" style={{
+              <div className="p-3" style={{
                 backgroundColor: 'rgb(251, 234, 168)',
                 borderTopLeftRadius: '0px',
                 borderTopRightRadius: '16px',
@@ -176,3 +177,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

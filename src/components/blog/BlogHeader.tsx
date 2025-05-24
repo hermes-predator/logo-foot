@@ -35,20 +35,19 @@ const BlogHeader = () => {
       <div className="max-w-6xl mx-auto">
         {/* En-tête avec titre et description */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3">
-            <Sparkles className="h-8 w-8 text-yellow-500" />
-            Vous cherchez tous les logos de club de foot ?
-          </h2>
-          
-          {/* Box ambrée pour le texte de description */}
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-6 mb-6 max-w-4xl mx-auto">
+          {/* Box ambrée pour le titre et le texte de description */}
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 p-6 mb-6 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4 flex items-center justify-center gap-3">
+              <Sparkles className="h-8 w-8 text-yellow-500" />
+              Vous cherchez tous les logos de club de foot ?
+            </h2>
             <p className="text-lg text-amber-900 leading-relaxed">
               Téléchargez <span className="font-bold text-amber-800">+ de 8600 LOGOS</span> de Clubs de Football organisés par pays. 
               Obtenez toutes les ressources dans un fichier ZIP complet.
             </p>
           </div>
           
-          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 mx-auto">
+          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 font-semibold text-lg shadow-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 mx-auto">
             <Download className="h-5 w-5" />
             Voir le fichier
           </button>
@@ -68,7 +67,7 @@ const BlogHeader = () => {
               {carouselItems.map(item => (
                 <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <div 
-                    className="relative aspect-square rounded-lg overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" 
+                    className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl" 
                     onMouseEnter={() => setHoveredItem(item.id)} 
                     onMouseLeave={() => setHoveredItem(null)}
                   >
@@ -115,7 +114,7 @@ const BlogHeader = () => {
             {Array.from({ length: count }, (_, index) => (
               <button
                 key={index}
-                className={`h-3 rounded-full transition-all duration-300 ${
+                className={`h-3 transition-all duration-300 ${
                   index + 1 === current
                     ? 'bg-blue-600 w-12 h-3'
                     : 'bg-gray-300 hover:bg-gray-400 w-3'

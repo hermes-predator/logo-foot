@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -141,9 +142,11 @@ const BlogHeader = () => {
           <Carousel className="w-full max-w-5xl mx-auto" setApi={setCarouselApi}>
             <CarouselContent className="-ml-2 md:-ml-4">
               {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
-                  <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md">
-                    <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
-                  </div>
+                  <Link to="/" className="block">
+                    <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
+                    </div>
+                  </Link>
                 </CarouselItem>)}
             </CarouselContent>
             <CarouselPrevious className="left-0" />

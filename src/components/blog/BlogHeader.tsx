@@ -153,11 +153,19 @@ const BlogHeader = () => {
             <CarouselNext className="right-0" />
           </Carousel>
 
-          {/* Indicateurs de navigation modernes plus grands */}
-          <div className="flex justify-center items-center gap-3 mt-6">
+          {/* Indicateurs de navigation améliorés et plus visibles */}
+          <div className="flex justify-center items-center gap-3 mt-8 bg-white/80 backdrop-blur-sm rounded-full py-3 px-6 mx-auto w-fit shadow-lg border border-gray-200/50">
             {Array.from({
             length: count
-          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 ${index + 1 === current ? 'bg-orange-600 w-12 h-3' : 'bg-orange-300 hover:bg-orange-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
+          }, (_, index) => <button key={index} className={`relative transition-all duration-300 rounded-full shadow-sm ${index + 1 === current 
+              ? 'bg-orange-600 w-12 h-4 shadow-md' 
+              : 'bg-orange-300/70 hover:bg-orange-400 w-4 h-4 hover:shadow-md hover:scale-110'
+            }`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`}>
+              {/* Effet de brillance sur l'indicateur actif */}
+              {index + 1 === current && (
+                <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent rounded-full opacity-50"></div>
+              )}
+            </button>)}
           </div>
         </div>
       </div>

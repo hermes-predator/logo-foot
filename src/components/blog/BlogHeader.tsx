@@ -92,11 +92,11 @@ const BlogHeader = () => {
           </div>
           
           <div className="text-left flex-1 pt-6 pl-12">
-            <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-1">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-1">
               Vous cherchez tous les logos de club de foot ?
             </h2>
-            <p className="text-base text-orange-700 leading-relaxed mb-3 font-semibold">
-              Téléchargez <span className="font-bold underline text-orange-700">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.<br />
+            <p className="text-base text-gray-700 leading-relaxed mb-3 font-semibold">
+              Téléchargez <span className="font-bold underline text-gray-800">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.<br />
               Obtenez toutes les ressources dans un fichier ZIP complet.
             </p>
           </div>
@@ -133,7 +133,7 @@ const BlogHeader = () => {
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
       <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
         {/* Titre de l'aperçu */}
-        <h3 className="font-semibold text-orange-800 mb-4 text-center text-sm">
+        <h3 className="font-semibold text-gray-800 mb-4 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         
@@ -157,7 +157,7 @@ const BlogHeader = () => {
           <div className="flex justify-center items-center gap-3 mt-6">
             {Array.from({
             length: count
-          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 ${index + 1 === current ? 'bg-orange-600 w-12 h-3' : 'bg-orange-300 hover:bg-orange-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
+          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 ${index + 1 === current ? 'bg-gray-700 w-12 h-3' : 'bg-gray-400 hover:bg-gray-500 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
           </div>
         </div>
       </div>

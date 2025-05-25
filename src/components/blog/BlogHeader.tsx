@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -100,7 +101,7 @@ const BlogHeader = () => {
             </p>
           </div>
           
-          <div className="ml-8">
+          <div className="mr-8">
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{

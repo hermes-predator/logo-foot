@@ -68,7 +68,7 @@ const BlogHeader = () => {
       {/* En-tête avec titre et description */}
       <div className="text-center mb-8 pt-4 overflow-visible">
         {/* Box d'appel à l'action avec couleurs similaires */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md hover:shadow-lg before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
           {/* Badge Google Drive positionné en haut au centre */}
@@ -96,7 +96,7 @@ const BlogHeader = () => {
               Vous cherchez tous les logos de club de foot ?
             </h2>
             <p className="text-base text-orange-700 leading-relaxed mb-3 font-semibold">
-              Téléchargez <span className="font-bold underline text-orange-700">+ de 8600 LOGOS de Clubs de Football</span> organisés par pays.<br />
+              Téléchargez <span className="font-bold underline text-orange-700">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.<br />
               Obtenez toutes les ressources dans un fichier ZIP complet.
             </p>
           </div>

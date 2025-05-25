@@ -55,6 +55,13 @@ const BlogPostSEO: React.FC = () => {
   
   return (
     <>
+      {/* Bouton de retour au blog en haut de la page */}
+      <div className="bg-white border-b border-gray-100 py-3">
+        <div className="container mx-auto px-4">
+          <BackToButton to="/blog" label="Retour au blog" />
+        </div>
+      </div>
+
       {/* En-tête de l'article avec le titre et la date */}
       <div className="bg-blue-50 py-8 mb-6">
         <div className="container mx-auto px-4">
@@ -64,16 +71,6 @@ const BlogPostSEO: React.FC = () => {
               {formatDate(post.date)}
             </div>
           )}
-          
-          {/* Bouton de retour au blog en dessous du header */}
-          <div className="flex items-center gap-4 mt-4">
-            <BackToButton to="/blog" label="Blog" className="mb-0" />
-            
-            <Link to="/blog" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm">
-              <ArrowLeft className="h-4 w-4 mr-1" />
-              Retour à la liste des articles
-            </Link>
-          </div>
         </div>
       </div>
       

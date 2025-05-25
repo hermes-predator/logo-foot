@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -52,6 +50,7 @@ const BlogHeader = () => {
     title: 'Collection des logos des équipes de foot 6.',
     altText: 'Collection des logos des équipes de foot 6'
   }];
+
   React.useEffect(() => {
     if (!carouselApi) {
       return;
@@ -68,7 +67,7 @@ const BlogHeader = () => {
       {/* En-tête avec titre et description */}
       <div className="text-center mb-8 pt-4 overflow-visible">
         {/* Box d'appel à l'action avec couleurs similaires */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md hover:shadow-lg before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20" style={{
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md hover:shadow-lg before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
           {/* Badge Google Drive positionné en haut au centre */}
@@ -80,7 +79,7 @@ const BlogHeader = () => {
           <div className="absolute top-0 left-0 z-10">
             <div className="p-3" style={{
             backgroundColor: 'rgb(251, 234, 168)',
-            borderTopLeftRadius: '0px',
+            borderTopLeftRadius: '8px',
             borderTopRightRadius: '0px',
             borderBottomLeftRadius: '0px',
             borderBottomRightRadius: '16px'
@@ -169,4 +168,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

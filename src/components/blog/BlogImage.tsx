@@ -13,6 +13,7 @@ interface BlogImageProps {
   height?: number;
   title?: string;
   priority?: boolean;
+  aspectRatio?: number;
 }
 
 const BlogImage = ({ 
@@ -21,18 +22,19 @@ const BlogImage = ({
   className = "", 
   isDefault = false,
   width = 800,
-  height = 800,
+  height = 600,
   title,
-  priority = false
+  priority = false,
+  aspectRatio = 16/9
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);
   const { optimizedSrc } = useImageOptimization({ 
     src, 
-    width: 800, // Force square dimensions
-    height: 800, // Force square dimensions
-    quality: 80, 
-    format: 'webp' // Cette valeur sera ignorée si l'image source est au format PNG
+    width, 
+    height, 
+    quality: 85, 
+    format: 'webp'
   });
   
   const imageTitle = title || alt;
@@ -48,7 +50,7 @@ const BlogImage = ({
   // Extraire les dimensions pour le structured data
   const imageDimensions = {
     width: width || 800,
-    height: height || 800
+    height: height || 600
   };
 
   useEffect(() => {
@@ -114,14 +116,14 @@ const BlogImage = ({
 
   return (
     <div 
-      className="my-5 protected-content" 
+      className="protected-content" 
       itemScope 
       itemType="https://schema.org/ImageObject" 
       ref={containerRef}
       id={imageId}
       data-testid="blog-image"
     >
-      <AspectRatio ratio={1} className="overflow-hidden rounded-lg shadow-md">
+      <AspectRatio ratio={aspectRatio} className="overflow-hidden rounded-lg shadow-md bg-gradient-to-br from-gray-100 to-gray-200">
         <img
           ref={imgRef}
           src={isInView || priority ? finalSrc : '/placeholder.svg'}
@@ -129,8 +131,8 @@ const BlogImage = ({
           title={imageTitle}
           width={imageDimensions.width}
           height={imageDimensions.height}
-          className={`w-full h-full object-cover transition-opacity duration-300 ${
-            isInView ? 'opacity-100' : 'opacity-0'
+          className={`w-full h-full object-cover transition-all duration-500 ${
+            isInView ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           } ${isDefault ? 'opacity-90' : ''} ${className}`}
           loading={priority ? "eager" : "lazy"}
           decoding={priority ? "sync" : "async"}
@@ -148,7 +150,11 @@ const BlogImage = ({
       <meta itemProp="encodingFormat" content={isPng ? "image/png" : "image/webp"} />
       <meta itemProp="uploadDate" content={new Date().toISOString()} />
       <meta itemProp="copyrightYear" content={new Date().getFullYear().toString()} />
-      <p className="mt-1 text-xs text-gray-500 text-center italic" itemProp="caption">{alt}</p>
+      
+      {/* Légende seulement pour les images d'article complet */}
+      {isDefault && (
+        <p className="mt-2 text-xs text-gray-500 text-center italic" itemProp="caption">{alt}</p>
+      )}
     </div>
   );
 };

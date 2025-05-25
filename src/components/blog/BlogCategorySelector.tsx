@@ -24,9 +24,9 @@ const BlogCategorySelector = ({
         <div className="flex flex-wrap justify-center gap-2 px-3 relative z-10">
           <a 
             href="/blog" 
-            className={`px-4 py-2 rounded-full text-sm transition-all ${!currentCategory 
-              ? 'bg-blue-500 text-white font-medium shadow-md transform hover:scale-105' 
-              : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300'}`}
+            className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${!currentCategory 
+              ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
+              : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
           >
             Tout
           </a>
@@ -35,9 +35,9 @@ const BlogCategorySelector = ({
             <a 
               key={key} 
               href={`/blog?category=${key}`} 
-              className={`px-4 py-2 rounded-full text-sm transition-all ${currentCategory === key 
-                ? 'bg-blue-500 text-white font-medium shadow-md transform hover:scale-105' 
-                : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300'}`}
+              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${currentCategory === key 
+                ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
+                : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
             >
               {category.name}
             </a>
@@ -47,7 +47,7 @@ const BlogCategorySelector = ({
       
       {/* Description de la catégorie actuelle */}
       {currentDescription && (
-        <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-5xl mx-auto">
+        <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-5xl mx-auto animate-fade-in">
           <p className="text-sm text-blue-800">{currentDescription}</p>
         </div>
       )}

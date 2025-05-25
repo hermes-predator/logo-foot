@@ -20,25 +20,13 @@ const BlogContent = ({
   paginatedItems 
 }: BlogContentProps) => {
   return (
-    <div className="space-y-12">
-      {/* En-tête de section avec meilleure typographie */}
-      <div className="text-center animate-fade-in">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-          Derniers Articles
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          {posts.length} article{posts.length > 1 ? 's' : ''} disponible{posts.length > 1 ? 's' : ''}
-        </p>
-      </div>
+    <>
+      {/* Liste d'articles paginée */}
+      <BlogArticleList articles={paginatedItems} />
 
-      {/* Liste d'articles paginée avec transition fluide */}
-      <div className="transition-all duration-500 ease-out">
-        <BlogArticleList articles={paginatedItems} />
-      </div>
-
-      {/* Pagination avec espacement amélioré */}
+      {/* Pagination */}
       {totalPages > 1 && (
-        <div className="flex justify-center pt-8">
+        <div className="flex justify-center mt-8">
           <BlogPagination 
             currentPage={currentPage}
             totalPages={totalPages}
@@ -46,7 +34,7 @@ const BlogContent = ({
           />
         </div>
       )}
-    </div>
+    </>
   );
 };
 

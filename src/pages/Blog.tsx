@@ -59,7 +59,7 @@ const Blog = () => {
 
   return (
     <PageTransition>
-      <div className="bg-gray-50 min-h-screen">
+      <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50/30 min-h-screen">
         <Helmet>
           <title>Blog - Logo Foot</title>
           <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
@@ -75,25 +75,41 @@ const Blog = () => {
           page={currentPage}
         />
 
-        {/* Header avec présentation du blog */}
-        <BlogHeader />
+        {/* Header avec présentation du blog - Amélioration de l'espacement */}
+        <div className="pb-8">
+          <BlogHeader />
+        </div>
         
-        <div className="container mx-auto px-4 pt-4 pb-12">
-          {/* Sélecteur de catégories */}
-          <BlogCategorySelector
-            categories={availableCategories}
-            currentCategory={categoryParam}
-            currentDescription={currentCategoryDescription}
-          />
+        <div className="container mx-auto px-4 pt-6 pb-16">
+          {/* Titre principal du blog avec meilleure typographie */}
+          <div className="text-center mb-12 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+              Blog Logo Foot
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Découvrez l'univers fascinant des logos de football, leur histoire et leur évolution
+            </p>
+          </div>
 
-          {/* Contenu principal du blog */}
-          <BlogContent
-            posts={posts}
-            currentPage={currentPage}
-            totalPages={totalPages}
-            setCurrentPage={setCurrentPage}
-            paginatedItems={paginatedItems}
-          />
+          {/* Sélecteur de catégories avec espacement amélioré */}
+          <div className="mb-16 transition-all duration-500 ease-out">
+            <BlogCategorySelector
+              categories={availableCategories}
+              currentCategory={categoryParam}
+              currentDescription={currentCategoryDescription}
+            />
+          </div>
+
+          {/* Contenu principal du blog avec espacement optimisé */}
+          <div className="transition-all duration-500 ease-out">
+            <BlogContent
+              posts={posts}
+              currentPage={currentPage}
+              totalPages={totalPages}
+              setCurrentPage={setCurrentPage}
+              paginatedItems={paginatedItems}
+            />
+          </div>
         </div>
 
         <Footer />

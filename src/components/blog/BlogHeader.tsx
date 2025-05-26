@@ -99,9 +99,18 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive repositionné en dessous de la description */}
+            {/* Badge Google Drive repositionné en dessous de la description avec tooltip */}
             <div className="mb-4">
-              <GoogleDriveBadge cursorHelp={true} />
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <div>
+                    <GoogleDriveBadge cursorHelp={true} />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Ce fichier ZIP peut être facilement stocké et organisé dans votre Google Drive pour un accès permanent à vos logos de football</p>
+                </TooltipContent>
+              </Tooltip>
             </div>
           </div>
           

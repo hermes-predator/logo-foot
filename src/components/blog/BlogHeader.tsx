@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -71,10 +70,6 @@ const BlogHeader = () => {
         <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-6 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
-          {/* Badge Google Drive positionné en haut au centre */}
-          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-            <GoogleDriveBadge cursorHelp={true} />
-          </div>
           
           {/* Bulle d'attention dans le coin supérieur gauche - forme parfaitement épousée */}
           <div className="absolute top-0 left-0 z-10">
@@ -105,7 +100,7 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          <div className="mr-5">
+          <div className="mr-5 flex flex-col items-center gap-3">
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
@@ -130,6 +125,9 @@ const BlogHeader = () => {
                 <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
               </TooltipContent>
             </Tooltip>
+            
+            {/* Badge Google Drive repositionné à côté du bouton */}
+            <GoogleDriveBadge cursorHelp={true} />
           </div>
         </div>
       </div>

@@ -97,9 +97,9 @@ const BlogHeader = () => {
             </h2>
             <div className="space-y-2 mb-4">
               <p className="text-base text-orange-600 leading-relaxed font-semibold">
-                Téléchargez <span className="font-bold text-amber-600 underline decoration-2 decoration-amber-400">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
+                Téléchargez <span className="font-bold text-orange-600 underline decoration-2 decoration-amber-400">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
               </p>
-              <p className="text-sm text-amber-600 font-medium">
+              <p className="text-sm text-orange-600 font-medium">
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
             </div>
@@ -137,7 +137,7 @@ const BlogHeader = () => {
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
       <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10 border-l-2 border-r-2 border-b-2 border-yellow-200 rounded-b-lg">
         {/* Titre de l'aperçu */}
-        <h3 className="font-semibold text-amber-700 mb-6 text-center text-sm">
+        <h3 className="font-semibold text-orange-600 mb-6 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         

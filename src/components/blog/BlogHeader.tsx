@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -99,9 +100,11 @@ const BlogHeader = () => {
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
             </div>
-            
-            {/* Badge Google Drive repositionné en dessous de la description avec tooltip */}
-            <div className="mb-4">
+          </div>
+          
+          <div className="mr-5 flex flex-col items-center gap-3">
+            {/* Badge Google Drive repositionné au-dessus du bouton avec tooltip */}
+            <div>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <div>
@@ -116,9 +119,7 @@ const BlogHeader = () => {
                 </TooltipContent>
               </Tooltip>
             </div>
-          </div>
-          
-          <div className="mr-5 flex flex-col items-center gap-3">
+            
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
@@ -188,3 +189,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

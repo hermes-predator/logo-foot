@@ -68,7 +68,7 @@ const BlogHeader = () => {
       {/* En-tête avec titre et description */}
       <div className="text-center mb-8 pt-4 overflow-visible">
         {/* Box d'appel à l'action avec couleurs similaires */}
-        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-4 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
+        <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-yellow-200 border-b-0 p-6 -mb-8 max-w-5xl mx-auto flex items-center justify-between shadow-md before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-visible z-20 rounded-t-lg" style={{
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
           {/* Badge Google Drive positionné en haut au centre */}
@@ -91,27 +91,31 @@ const BlogHeader = () => {
             </div>
           </div>
           
-          <div className="text-left flex-1 pt-6 pl-12">
-            <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-1">
+          <div className="text-left flex-1 pt-6 pl-12 pr-4">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 leading-tight">
               Vous cherchez tous les logos de club de foot ?
             </h2>
-            <p className="text-base text-orange-700 leading-relaxed mb-3 font-semibold">
-              Téléchargez <span className="font-bold underline text-orange-700">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.<br />
-              Obtenez toutes les ressources dans un fichier ZIP complet.
-            </p>
+            <div className="space-y-2 mb-4">
+              <p className="text-base text-gray-700 leading-relaxed font-semibold">
+                Téléchargez <span className="font-bold text-gray-800 underline decoration-2 decoration-amber-400">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
+              </p>
+              <p className="text-sm text-gray-600 font-medium">
+                Obtenez toutes les ressources dans un fichier ZIP complet.
+              </p>
+            </div>
           </div>
           
           <div className="mr-5">
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group" style={{
+                <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
                 borderRadius: '12px',
                 background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
                 borderTop: '2px solid #fde047',
                 borderLeft: '2px solid #fde047',
                 borderRight: '2px solid #a16207',
                 borderBottom: '2px solid #a16207',
-                boxShadow: '0 4px 8px -2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 6px 12px -2px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
                 textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
               }}>
                   {/* Effet de brillance sur le bouton */}
@@ -131,9 +135,9 @@ const BlogHeader = () => {
       </div>
 
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel */}
-      <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10">
+      <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10 border-l-2 border-r-2 border-b-2 border-yellow-200 rounded-b-lg">
         {/* Titre de l'aperçu */}
-        <h3 className="font-semibold text-orange-800 mb-4 text-center text-sm">
+        <h3 className="font-semibold text-gray-700 mb-6 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         
@@ -143,7 +147,7 @@ const BlogHeader = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
                   <Link to="/" className="block">
-                    <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                    <div className="relative aspect-square overflow-hidden bg-white border border-gray-200/60 shadow-md hover:shadow-lg transition-shadow cursor-pointer rounded-lg">
                       <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-2" loading="lazy" />
                     </div>
                   </Link>
@@ -157,7 +161,7 @@ const BlogHeader = () => {
           <div className="flex justify-center items-center gap-3 mt-6">
             {Array.from({
             length: count
-          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 ${index + 1 === current ? 'bg-orange-600 w-12 h-3' : 'bg-orange-300 hover:bg-orange-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
+          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 rounded-full ${index + 1 === current ? 'bg-amber-600 w-12 h-3' : 'bg-amber-300 hover:bg-amber-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
           </div>
         </div>
       </div>

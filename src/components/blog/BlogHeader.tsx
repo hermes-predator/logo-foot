@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -98,6 +99,11 @@ const BlogHeader = () => {
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
             </div>
+            
+            {/* Badge Google Drive repositionné en dessous de la description */}
+            <div className="mb-4">
+              <GoogleDriveBadge cursorHelp={true} />
+            </div>
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
@@ -125,9 +131,6 @@ const BlogHeader = () => {
                 <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
               </TooltipContent>
             </Tooltip>
-            
-            {/* Badge Google Drive repositionné à côté du bouton */}
-            <GoogleDriveBadge cursorHelp={true} />
           </div>
         </div>
       </div>

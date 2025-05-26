@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -107,8 +108,11 @@ const BlogHeader = () => {
                     <GoogleDriveBadge cursorHelp={true} />
                   </div>
                 </TooltipTrigger>
-                <TooltipContent>
-                  <p>Ce fichier ZIP peut être facilement stocké et organisé dans votre Google Drive pour un accès permanent à vos logos de football</p>
+                <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg">
+                  <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                  </p>
                 </TooltipContent>
               </Tooltip>
             </div>

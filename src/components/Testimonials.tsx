@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -182,30 +181,30 @@ const Testimonials = () => {
                 aria-label={`Témoignage de ${testimonial.name}`}
               >
                 <div 
-                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[220px] border border-gray-100 will-change-transform"
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform"
                   role="article"
                 >
                   <div 
-                    className="flex items-center gap-1 text-yellow-400 mb-4"
+                    className="flex items-center gap-1 text-yellow-400 mb-3"
                     aria-label={`Évaluation: ${testimonial.rating} sur 5 étoiles`}
                   >
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-current" aria-hidden="true" />
+                      <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />
                     ))}
                     {[...Array(5 - testimonial.rating)].map((_, i) => (
-                      <Star key={i + testimonial.rating} className="w-5 h-5 text-gray-200" aria-hidden="true" />
+                      <Star key={i + testimonial.rating} className="w-4 h-4 text-gray-200" aria-hidden="true" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-5 flex-grow text-lg font-medium leading-relaxed">
+                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium leading-relaxed">
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <UserRound className="w-5 h-5 text-blue-600" aria-hidden="true" />
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                      <UserRound className="w-4 h-4 text-blue-600" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900 text-base">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500 font-medium">{testimonial.role}</p>
+                      <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
+                      <p className="text-xs text-gray-500 font-medium">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>

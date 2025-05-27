@@ -112,7 +112,7 @@ const BlogHeader = () => {
                   side="top" 
                   align="start"
                   sideOffset={8}
-                  className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg z-50"
+                  className="bg-white border border-gray-200/50 p-3 max-w-[350px] rounded-lg shadow-lg z-50"
                 >
                   <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -144,7 +144,7 @@ const BlogHeader = () => {
                   <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
                 </Link>
               </TooltipTrigger>
-              <TooltipContent>
+              <TooltipContent className="bg-white border border-gray-200/50 p-3 rounded-lg shadow-lg">
                 <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
               </TooltipContent>
             </Tooltip>

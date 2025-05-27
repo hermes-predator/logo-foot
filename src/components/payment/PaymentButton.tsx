@@ -62,7 +62,7 @@ const PaymentButton = () => {
         </TooltipTrigger>
         <TooltipContent 
           side="top" 
-          className="bg-white border border-gray-200/70 shadow-md p-4 whitespace-nowrap" 
+          className="bg-white border border-gray-200/50 shadow-md p-4 whitespace-nowrap" 
           role="tooltip"
         >
           <p className="text-lg font-medium text-gray-800">Accès immédiat en page d'après-paiement</p>

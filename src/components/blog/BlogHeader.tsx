@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -174,11 +175,11 @@ const BlogHeader = () => {
             <CarouselNext className="right-0" />
           </Carousel>
 
-          {/* Indicateurs de navigation modernes plus grands */}
+          {/* Indicateurs de navigation modernes plus grands - couleur orange assortie */}
           <div className="flex justify-center items-center gap-3 mt-6">
             {Array.from({
             length: count
-          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 rounded-full ${index + 1 === current ? 'bg-amber-600 w-12 h-3' : 'bg-amber-300 hover:bg-amber-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
+          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 rounded-full ${index + 1 === current ? 'bg-orange-600 w-12 h-3' : 'bg-orange-300 hover:bg-orange-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
           </div>
         </div>
       </div>

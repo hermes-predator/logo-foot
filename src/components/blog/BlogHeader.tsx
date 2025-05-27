@@ -1,4 +1,6 @@
 
+
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -153,62 +155,50 @@ const BlogHeader = () => {
       </div>
 
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel - sans bordures */}
-      <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-6 md:p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10 rounded-b-lg">
+      <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10 rounded-b-lg">
         {/* Titre de l'aperçu */}
-        <h3 className="font-semibold text-orange-600 mb-8 text-center text-base">
+        <h3 className="font-semibold text-orange-600 mb-6 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         
-        {/* Carrousel d'aperçu avec images plus grandes */}
-        <div className="relative px-4 md:px-8">
-          <Carousel 
-            className="w-full max-w-5xl mx-auto" 
-            setApi={setCarouselApi}
-            opts={{
-              align: "start",
-              loop: true,
-              duration: 25
-            }}
-          >
-            <CarouselContent className="-ml-4 md:-ml-6">
-              {carouselItems.map(item => 
-                <CarouselItem key={item.id} className="pl-4 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3">
-                  <Link to="/" className="block group">
-                    <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-orange-200 group-hover:border-orange-300 group-hover:scale-[1.03] shadow-md">
-                      <img 
-                        src={item.imageUrl} 
-                        alt={item.altText} 
-                        className="w-full h-full object-contain p-4 md:p-6 transition-transform duration-300 group-hover:scale-105" 
-                        loading="lazy" 
-                      />
+        {/* Carrousel d'aperçu */}
+        <div className="relative">
+          <Carousel className="w-full max-w-5xl mx-auto" setApi={setCarouselApi}>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
+                  <Link to="/" className="block">
+                    <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg hover:shadow-md transition-shadow cursor-pointer">
+                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-4" loading="lazy" />
                     </div>
                   </Link>
-                </CarouselItem>
-              )}
+                </CarouselItem>)}
             </CarouselContent>
-            
-            {/* Boutons de navigation plus visibles */}
-            <CarouselPrevious className="left-2 md:-left-6 h-12 w-12 bg-white/90 backdrop-blur-sm border-2 border-orange-300 hover:bg-white hover:border-orange-400 shadow-xl transition-all duration-200 hover:scale-110" />
-            <CarouselNext className="right-2 md:-right-6 h-12 w-12 bg-white/90 backdrop-blur-sm border-2 border-orange-300 hover:bg-white hover:border-orange-400 shadow-xl transition-all duration-200 hover:scale-110" />
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
           </Carousel>
 
-          {/* Indicateurs de navigation plus visibles */}
-          <div className="flex justify-center items-center gap-3 mt-8">
+          {/* Indicateurs de navigation premium avec effets visuels avancés */}
+          <div className="flex justify-center items-center gap-2 mt-6">
             {Array.from({ length: count }, (_, index) => (
               <button 
                 key={index} 
-                className={`relative transition-all duration-300 ease-out rounded-full overflow-hidden group ${
+                className={`relative transition-all duration-500 ease-out rounded-full overflow-hidden group ${
                   index + 1 === current 
-                    ? 'w-10 h-3 bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg' 
-                    : 'w-3 h-3 bg-orange-300/70 hover:bg-orange-400 hover:scale-150 hover:shadow-md'
+                    ? 'w-12 h-3 bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg shadow-orange-200' 
+                    : 'w-3 h-3 bg-orange-300 hover:bg-orange-400 hover:scale-110 shadow-md hover:shadow-lg hover:shadow-orange-100'
                 }`}
                 onClick={() => carouselApi?.scrollTo(index)} 
                 aria-label={`Aller à la diapositive ${index + 1}`}
               >
                 {/* Effet de brillance pour l'indicateur actif */}
                 {index + 1 === current && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-pulse rounded-full" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
                 )}
+                
+                {/* Effet de pulsation pour les indicateurs inactifs au hover */}
+                <div className={`absolute inset-0 rounded-full transition-opacity duration-300 ${
+                  index + 1 !== current ? 'opacity-0 group-hover:opacity-100 bg-orange-400/50 animate-ping' : ''
+                }`} />
               </button>
             ))}
           </div>
@@ -224,3 +214,5 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+
+

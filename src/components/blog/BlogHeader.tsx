@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -80,9 +79,7 @@ const BlogHeader = () => {
             borderBottomLeftRadius: '0px',
             borderBottomRightRadius: '16px'
           }}>
-              <AlertTriangle className="h-5 w-5" style={{
-              color: 'rgb(204, 124, 46)'
-            }} />
+              <AlertTriangle className="h-5 w-5 text-orange-600" />
             </div>
           </div>
           

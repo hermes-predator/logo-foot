@@ -23,7 +23,7 @@ export function OptimizedImage({
   className,
   width = 800,
   height = 800,
-  aspectRatio = 16 / 9,
+  aspectRatio = 1, // Changé de 16/9 à 1 (carré)
   priority = false,
   objectFit = 'cover',
 }: OptimizedImageProps) {

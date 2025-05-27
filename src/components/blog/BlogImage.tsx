@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
@@ -22,10 +21,10 @@ const BlogImage = ({
   className = "", 
   isDefault = false,
   width = 800,
-  height = 600,
+  height = 800,
   title,
   priority = false,
-  aspectRatio = 16/9
+  aspectRatio = 1 // Changé de 16/9 à 1 (carré)
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);

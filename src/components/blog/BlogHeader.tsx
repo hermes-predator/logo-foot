@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -103,7 +104,7 @@ const BlogHeader = () => {
             <div className="mb-4 flex justify-start">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-100 transition-colors">
                     <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
                     <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
                     <img 
@@ -175,11 +176,30 @@ const BlogHeader = () => {
             <CarouselNext className="right-0" />
           </Carousel>
 
-          {/* Indicateurs de navigation modernes plus grands - couleur orange assortie */}
-          <div className="flex justify-center items-center gap-3 mt-6">
-            {Array.from({
-            length: count
-          }, (_, index) => <button key={index} className={`h-3 transition-all duration-300 rounded-full ${index + 1 === current ? 'bg-orange-600 w-12 h-3' : 'bg-orange-300 hover:bg-orange-400 w-3'}`} onClick={() => carouselApi?.scrollTo(index)} aria-label={`Aller à la diapositive ${index + 1}`} />)}
+          {/* Indicateurs de navigation premium avec effets visuels avancés */}
+          <div className="flex justify-center items-center gap-2 mt-6">
+            {Array.from({ length: count }, (_, index) => (
+              <button 
+                key={index} 
+                className={`relative transition-all duration-500 ease-out rounded-full overflow-hidden group ${
+                  index + 1 === current 
+                    ? 'w-12 h-3 bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg shadow-orange-200' 
+                    : 'w-3 h-3 bg-orange-300 hover:bg-orange-400 hover:scale-110 shadow-md hover:shadow-lg hover:shadow-orange-100'
+                }`}
+                onClick={() => carouselApi?.scrollTo(index)} 
+                aria-label={`Aller à la diapositive ${index + 1}`}
+              >
+                {/* Effet de brillance pour l'indicateur actif */}
+                {index + 1 === current && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+                )}
+                
+                {/* Effet de pulsation pour les indicateurs inactifs au hover */}
+                <div className={`absolute inset-0 rounded-full transition-opacity duration-300 ${
+                  index + 1 !== current ? 'opacity-0 group-hover:opacity-100 bg-orange-400/50 animate-ping' : ''
+                }`} />
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -193,3 +213,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

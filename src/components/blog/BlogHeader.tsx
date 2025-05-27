@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -141,8 +142,24 @@ const BlogHeader = () => {
                   <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
                 </Link>
               </TooltipTrigger>
-              <TooltipContent className="bg-white border border-gray-200/50 p-3 rounded-lg shadow-lg">
-                <p>⦗FRONT-CLOUD⦘~ Football.zip</p>
+              <TooltipContent className="bg-white border border-gray-200/50 p-4 rounded-lg shadow-lg max-w-xs">
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-gray-900 text-center border-b border-gray-200 pb-2">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                      1 fichier ZIP
+                    </div>
+                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                      66 collections
+                    </div>
+                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                      8 774 logos
+                    </div>
+                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                      Format PNG
+                    </div>
+                  </div>
+                </div>
               </TooltipContent>
             </Tooltip>
           </div>

@@ -100,18 +100,19 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive repositionné en dessous de la description avec tooltip */}
+            {/* Badge Google Drive repositionné en dessous de la description avec tooltip amélioré */}
             <div className="mb-4 flex justify-start">
-              <Tooltip>
+              <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
-                  <div>
+                  <div className="inline-block">
                     <GoogleDriveBadge cursorHelp={true} />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent 
                   side="top" 
                   align="start"
-                  className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg"
+                  sideOffset={8}
+                  className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg z-50"
                 >
                   <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
                   <p className="text-gray-600 text-sm leading-relaxed">

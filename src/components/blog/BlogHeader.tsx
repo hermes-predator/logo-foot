@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -99,17 +98,17 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive avec animations de survol stabilisées */}
+            {/* Badge Google Drive avec zone de hover stable */}
             <div className="mb-4 flex justify-start">
-              <Tooltip delayDuration={100}>
+              <Tooltip delayDuration={300}>
                 <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help transition-all duration-200 ease-in-out hover:bg-gray-100 hover:border-gray-300 hover:shadow-sm">
-                    <BadgeCheck className="h-4 w-4 text-green-600" aria-hidden="true" />
-                    <span className="font-medium text-sm">Fichier stockable sur votre</span>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help will-change-auto">
+                    <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
+                    <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
                     <img 
                       src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
                       alt="Google Drive" 
-                      className="h-6 w-auto object-contain"
+                      className="h-6 w-auto object-contain flex-shrink-0"
                       loading="lazy"
                       width="60"
                       height="24"

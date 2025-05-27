@@ -235,29 +235,29 @@ const Testimonials = () => {
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-5 bg-gray-50 px-8 py-4 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 group"
+            className="inline-flex items-center gap-3 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 group"
           >
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-10" 
+              className="h-6" 
               loading="lazy"
             />
             <div className="flex flex-col">
-              <span className="text-lg font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
+              <span className="text-sm font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
               <div className="flex items-center gap-2">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
                 </div>
-                <span className="text-base font-semibold text-gray-600">{formattedAvgRating}/5</span>
+                <span className="text-sm font-semibold text-gray-600">{formattedAvgRating}/5</span>
               </div>
             </div>
             <ExternalLink 
-              className="w-5 h-5 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
+              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
               aria-hidden="true"
             />
           </a>

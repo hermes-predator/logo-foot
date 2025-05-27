@@ -185,7 +185,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent side="top" align="center" className="bg-white/95 border border-gray-200 shadow-md p-4">
+            <TooltipContent side="top" align="center" className="bg-white border border-gray-200 shadow-md p-4">
               <p className="text-base font-semibold text-gray-800 pb-2 border-b border-gray-100">Téléchargement du fichier ZIP complet</p>
               <div className="pt-2 flex flex-col gap-1.5">
                 <div className="flex items-center gap-1.5">

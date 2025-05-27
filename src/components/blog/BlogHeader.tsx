@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -87,7 +88,7 @@ const BlogHeader = () => {
           
           <div className="text-left flex-1 pt-6 pl-12 pr-4">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-3 leading-tight">
-              Vous cherchez tous les logos de club de foot ?
+              Vous cherchez tous les logos de foot ?
             </h2>
             <div className="space-y-2 mb-4">
               <p className="text-base text-orange-600 leading-relaxed font-semibold">

@@ -1,10 +1,9 @@
 
 import React, { useState } from 'react';
-import { Eye, Folder, AlertTriangle, ArrowRight } from 'lucide-react';
+import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
-import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
@@ -100,12 +99,21 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive repositionné en dessous de la description avec tooltip amélioré */}
+            {/* Nouveau Badge Google Drive réimplémenté */}
             <div className="mb-4 flex justify-start">
               <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
-                  <div className="inline-block">
-                    <GoogleDriveBadge cursorHelp={true} />
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)] transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 cursor-help rounded-md">
+                    <BadgeCheck className="h-4 w-4 text-green-600" aria-hidden="true" />
+                    <span className="font-medium text-sm">Fichier stockable sur votre</span>
+                    <img 
+                      src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
+                      alt="Google Drive" 
+                      className="h-6 w-auto object-contain"
+                      loading="lazy"
+                      width="60"
+                      height="24"
+                    />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent 

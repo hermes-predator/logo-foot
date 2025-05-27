@@ -40,7 +40,7 @@ const Header = () => {
       className={`w-full py-4 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
           ? 'bg-white/70 shadow-sm' 
-          : 'bg-white/50 border-purple-100/20'
+          : 'bg-white/50 border-gray-100/20'
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between gap-4 sm:gap-8">
@@ -68,22 +68,22 @@ const Header = () => {
                     to="/" 
                     className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
                       currentPath === '/' 
-                        ? 'font-medium bg-gray-100/80' 
-                        : 'text-gray-700 hover:text-purple-600'
+                        ? 'font-medium bg-gray-100/80 text-black' 
+                        : 'text-gray-700 hover:text-black hover:bg-gray-50'
                     }`}
                   >
-                    <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
+                    <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-black' : ''}`} />
                     <span>Accueil</span>
                   </Link>
                   <Link 
                     to="/blog" 
                     className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
                       currentPath.startsWith('/blog') 
-                        ? 'font-medium bg-gray-100/80' 
-                        : 'text-gray-700 hover:text-purple-600'
+                        ? 'font-medium bg-gray-100/80 text-black' 
+                        : 'text-gray-700 hover:text-black hover:bg-gray-50'
                     }`}
                   >
-                    <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
+                    <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
                     <span>Blog</span>
                   </Link>
                 </div>
@@ -96,28 +96,28 @@ const Header = () => {
               to="/" 
               className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
                 currentPath === '/' 
-                  ? 'font-medium bg-gray-100/80' 
-                  : 'text-gray-700 hover:text-purple-600'
+                  ? 'font-medium bg-gray-100/80 text-black' 
+                  : 'text-gray-700 hover:text-black hover:bg-gray-50'
               }`}
             >
-              <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-gray-800' : ''}`} />
+              <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-black' : ''}`} />
               <span>Accueil</span>
             </Link>
             <Link 
               to="/blog" 
               className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
                 currentPath.startsWith('/blog') 
-                  ? 'font-medium bg-gray-100/80' 
-                  : 'text-gray-700 hover:text-purple-600'
+                  ? 'font-medium bg-gray-100/80 text-black' 
+                  : 'text-gray-700 hover:text-black hover:bg-gray-50'
               }`}
             >
-              <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-gray-800' : ''}`} />
+              <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
               <span>Blog</span>
             </Link>
           </div>
         )}
       </nav>
-    </header>
+    </Header>
   );
 };
 

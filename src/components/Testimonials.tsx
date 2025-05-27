@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -181,30 +182,30 @@ const Testimonials = () => {
                 aria-label={`Témoignage de ${testimonial.name}`}
               >
                 <div 
-                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-sm transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform"
+                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[220px] border border-gray-100 will-change-transform"
                   role="article"
                 >
                   <div 
-                    className="flex items-center gap-1 text-yellow-400 mb-3"
+                    className="flex items-center gap-1 text-yellow-400 mb-4"
                     aria-label={`Évaluation: ${testimonial.rating} sur 5 étoiles`}
                   >
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />
+                      <Star key={i} className="w-5 h-5 fill-current" aria-hidden="true" />
                     ))}
                     {[...Array(5 - testimonial.rating)].map((_, i) => (
-                      <Star key={i + testimonial.rating} className="w-4 h-4 text-gray-200" aria-hidden="true" />
+                      <Star key={i + testimonial.rating} className="w-5 h-5 text-gray-200" aria-hidden="true" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium">
+                  <p className="text-gray-600 italic mb-5 flex-grow text-lg font-medium leading-relaxed">
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                      <UserRound className="w-4 h-4 text-blue-600" aria-hidden="true" />
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <UserRound className="w-5 h-5 text-blue-600" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-gray-500 font-medium">{testimonial.role}</p>
+                      <p className="font-semibold text-gray-900 text-base">{testimonial.name}</p>
+                      <p className="text-sm text-gray-500 font-medium">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
@@ -234,29 +235,29 @@ const Testimonials = () => {
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-4 bg-gray-50 px-6 py-3 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group"
+            className="inline-flex items-center gap-5 bg-gray-50 px-8 py-4 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 group"
           >
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-8" 
+              className="h-10" 
               loading="lazy"
             />
             <div className="flex flex-col">
-              <span className="text-base font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
-              <div className="flex items-center gap-1.5">
+              <span className="text-lg font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
+              <div className="flex items-center gap-2">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-semibold text-gray-600">{formattedAvgRating}/5</span>
+                <span className="text-base font-semibold text-gray-600">{formattedAvgRating}/5</span>
               </div>
             </div>
             <ExternalLink 
-              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
+              className="w-5 h-5 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
               aria-hidden="true"
             />
           </a>

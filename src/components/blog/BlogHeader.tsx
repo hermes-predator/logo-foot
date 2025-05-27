@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -98,35 +99,23 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive avec zone de hover stable */}
+            {/* Badge Google Drive avec titre natif - plus de conflit de hover */}
             <div className="mb-4 flex justify-start">
-              <Tooltip delayDuration={300}>
-                <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help will-change-auto">
-                    <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
-                    <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
-                    <img 
-                      src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
-                      alt="Google Drive" 
-                      className="h-6 w-auto object-contain flex-shrink-0"
-                      loading="lazy"
-                      width="60"
-                      height="24"
-                    />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent 
-                  side="top" 
-                  align="start"
-                  sideOffset={8}
-                  className="bg-white border border-gray-200/50 p-3 max-w-[350px] rounded-lg shadow-lg z-50"
-                >
-                  <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                  </p>
-                </TooltipContent>
-              </Tooltip>
+              <div 
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help"
+                title="Utilisation immédiate : Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification."
+              >
+                <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
+                <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
+                <img 
+                  src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
+                  alt="Google Drive" 
+                  className="h-6 w-auto object-contain flex-shrink-0"
+                  loading="lazy"
+                  width="60"
+                  height="24"
+                />
+              </div>
             </div>
           </div>
           

@@ -169,10 +169,8 @@ const Testimonials = () => {
             loop: true,
           }}
           setApi={setApi}
-          className="w-full max-w-3xl mx-auto"
+          className="w-full max-w-4xl mx-auto"
           aria-label="Témoignages clients"
-          // For accessibility, controlling current slide visibility with activeIndex
-          // The carousel implementation handles internal state, so activeIndex is used for indicators
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial, index) => (
@@ -183,30 +181,30 @@ const Testimonials = () => {
                 aria-label={`Témoignage de ${testimonial.name}`}
               >
                 <div 
-                  className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[180px] border border-gray-100 will-change-transform hover:translate-y-[-2px]"
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-sm transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform"
                   role="article"
                 >
                   <div 
-                    className="flex items-center gap-1 text-yellow-400 mb-2"
+                    className="flex items-center gap-1 text-yellow-400 mb-3"
                     aria-label={`Évaluation: ${testimonial.rating} sur 5 étoiles`}
                   >
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" aria-hidden="true" />
+                      <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />
                     ))}
                     {[...Array(5 - testimonial.rating)].map((_, i) => (
-                      <Star key={i + testimonial.rating} className="w-3.5 h-3.5 text-gray-200" aria-hidden="true" />
+                      <Star key={i + testimonial.rating} className="w-4 h-4 text-gray-200" aria-hidden="true" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-3 flex-grow text-sm font-medium">
+                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium">
                     "{testimonial.content}"
                   </p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
-                      <UserRound className="w-3.5 h-3.5 text-blue-600" aria-hidden="true" />
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                      <UserRound className="w-4 h-4 text-blue-600" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900 text-xs">{testimonial.name}</p>
-                      <p className="text-[10px] text-gray-500 font-medium">{testimonial.role}</p>
+                      <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
+                      <p className="text-xs text-gray-500 font-medium">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
@@ -236,25 +234,25 @@ const Testimonials = () => {
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3.5 bg-gray-50 px-5 py-2.5 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-4 bg-gray-50 px-6 py-3 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group"
           >
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-7" 
+              className="h-8" 
               loading="lazy"
             />
             <div className="flex flex-col">
-              <span className="text-sm font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
+              <span className="text-base font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
               <div className="flex items-center gap-1.5">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
                 </div>
-                <span className="text-xs font-semibold text-gray-600">{formattedAvgRating}/5</span>
+                <span className="text-sm font-semibold text-gray-600">{formattedAvgRating}/5</span>
               </div>
             </div>
             <ExternalLink 

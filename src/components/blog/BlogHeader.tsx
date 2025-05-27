@@ -99,11 +99,11 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Nouveau Badge Google Drive réimplémenté */}
+            {/* Badge Google Drive avec animations de survol stabilisées */}
             <div className="mb-4 flex justify-start">
               <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)] transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 cursor-help rounded-md">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help transition-all duration-200 ease-in-out hover:bg-gray-100 hover:border-gray-300 hover:shadow-sm">
                     <BadgeCheck className="h-4 w-4 text-green-600" aria-hidden="true" />
                     <span className="font-medium text-sm">Fichier stockable sur votre</span>
                     <img 

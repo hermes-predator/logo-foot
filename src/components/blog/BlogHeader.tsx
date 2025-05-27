@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -159,6 +160,7 @@ const BlogHeader = () => {
                       Format PNG
                     </div>
                   </div>
+                  <p className="text-center text-sm text-gray-600 font-medium">Télécharger maintenant</p>
                 </div>
               </TooltipContent>
             </Tooltip>
@@ -226,3 +228,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

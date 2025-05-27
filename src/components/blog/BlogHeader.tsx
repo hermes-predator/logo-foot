@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -99,10 +100,10 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive avec titre natif - plus de conflit de hover */}
+            {/* Badge Google Drive avec titre natif seulement - pas de changement de curseur */}
             <div className="mb-4 flex justify-start">
               <div 
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-help"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md"
                 title="Utilisation immédiate : Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification."
               >
                 <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
@@ -189,3 +190,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

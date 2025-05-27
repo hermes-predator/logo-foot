@@ -110,7 +110,7 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent 
                   side="top" 
-                  align="center"
+                  align="start"
                   className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg"
                 >
                   <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>

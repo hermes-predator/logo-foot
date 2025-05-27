@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -231,30 +232,30 @@ const Testimonials = () => {
           </div>
         </Carousel>
 
-        <div className="flex items-center justify-center mt-6">
+        <div className="flex items-center justify-center mt-8">
           <a 
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-2.5 bg-gray-50 px-3.5 py-1.5 rounded-md border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group"
+            className="inline-flex items-center gap-3.5 bg-gray-50 px-5 py-2.5 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 hover:bg-gray-100 group shadow-sm hover:shadow-md"
           >
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-6" 
+              className="h-7" 
               loading="lazy"
             />
             <div className="flex flex-col">
-              <span className="text-xs font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
-              <div className="flex items-center gap-1">
+              <span className="text-sm font-medium text-gray-700 tracking-wide">Avis vérifiés basés sur 1034 avis</span>
+              <div className="flex items-center gap-1.5">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
                 </div>
-                <span className="text-[10px] font-semibold text-gray-600">{formattedAvgRating}/5</span>
+                <span className="text-xs font-semibold text-gray-600">{formattedAvgRating}/5</span>
               </div>
             </div>
             <ExternalLink 

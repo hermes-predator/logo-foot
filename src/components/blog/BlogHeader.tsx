@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -128,11 +129,11 @@ const BlogHeader = () => {
               <TooltipTrigger asChild>
                 <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
                 borderRadius: '12px',
-                background: 'linear-gradient(135deg, #d97706 0%, #b45309 50%, #92400e 100%)',
-                borderTop: '2px solid #f59e0b',
-                borderLeft: '2px solid #f59e0b',
-                borderRight: '2px solid #78350f',
-                borderBottom: '2px solid #78350f',
+                background: 'linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #9a3412 100%)',
+                borderTop: '2px solid #fb923c',
+                borderLeft: '2px solid #fb923c',
+                borderRight: '2px solid #7c2d12',
+                borderBottom: '2px solid #7c2d12',
                 boxShadow: '0 6px 12px -2px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
                 textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
               }}>
@@ -212,3 +213,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

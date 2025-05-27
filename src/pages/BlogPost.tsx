@@ -123,7 +123,7 @@ const BlogPost = () => {
             </div>
 
             {/* Articles similaires */}
-            <RelatedPosts currentPost={post} />
+            <RelatedPosts post={post} allPosts={blogPosts} />
           </div>
         </div>
 

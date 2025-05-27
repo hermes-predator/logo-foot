@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -94,7 +91,7 @@ const BlogHeader = () => {
             </h2>
             <div className="space-y-2 mb-4">
               <p className="text-base text-orange-600 leading-relaxed font-semibold">
-                Téléchargez <span className="font-bold text-orange-600 underline decoration-2 decoration-amber-400">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
+                Téléchargez <span className="font-bold text-orange-600 underline decoration-2 decoration-orange-600">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
               </p>
               <p className="text-sm text-orange-600 font-medium">
                 Obtenez toutes les ressources dans un fichier ZIP complet.
@@ -214,5 +211,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-
-

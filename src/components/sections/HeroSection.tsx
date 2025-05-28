@@ -17,6 +17,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import HeroTestimonialBadge from './HeroTestimonialBadge';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -68,6 +69,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-5">
           <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">⦗FRONT-CLOUD⦘~ Football.zip</span>
         </h2>
+
+        {/* Testimonial Badge - Nouveau */}
+        <div className="flex justify-center pt-2">
+          <HeroTestimonialBadge />
+        </div>
         
         {/* Description - Amélioré */}
         <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -235,29 +234,36 @@ const Testimonials = () => {
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 bg-gray-50 px-4 py-2 rounded-lg border border-gray-100 transition-all duration-200 hover:border-gray-200 group"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-gray-50 to-white px-5 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-gray-300 group relative overflow-hidden"
           >
+            {/* Effet de brillance subtil */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full group-hover:translate-x-full" />
+            
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-6" 
+              className="h-6 relative z-10" 
               loading="lazy"
             />
-            <div className="flex flex-col">
-              <span className="text-sm font-medium text-gray-700 tracking-wide">Évaluations certifiées • 1034 avis clients</span>
+            <div className="flex flex-col relative z-10">
+              <span className="text-sm font-semibold text-gray-800 tracking-wide bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
+                Avis vérifiés basés sur 1034 avis
+              </span>
               <div className="flex items-center gap-2">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-semibold text-gray-600">{formattedAvgRating}/5</span>
+                <span className="text-sm font-bold text-gray-700 bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
+                  {formattedAvgRating}/5
+                </span>
               </div>
             </div>
             <ExternalLink 
-              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity" 
+              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1 relative z-10" 
               aria-hidden="true"
             />
           </a>

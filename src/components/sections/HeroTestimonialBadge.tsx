@@ -6,17 +6,23 @@ const testimonials = [
   {
     name: "Pierre M.",
     content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé.",
-    rating: 5
+    rating: 5,
+    initials: "PM",
+    bgColor: "bg-blue-500"
   },
   {
     name: "Yassine B.",
     content: "Ça m'a apporté beaucoup de confiance pour mon projet, merci pour le gain de temps",
-    rating: 5
+    rating: 5,
+    initials: "YB",
+    bgColor: "bg-green-500"
   },
   {
     name: "Emma L.",
     content: "Tout est parfait, merci :)",
-    rating: 5
+    rating: 5,
+    initials: "EL",
+    bgColor: "bg-purple-500"
   }
 ];
 
@@ -35,6 +41,20 @@ const HeroTestimonialBadge = () => {
 
   return (
     <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-md border border-gray-200/80 transition-all duration-500 hover:shadow-lg">
+      {/* Avatars empilés */}
+      <div className="flex items-center -space-x-2">
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className={`w-8 h-8 rounded-full ${testimonial.bgColor} flex items-center justify-center text-white text-xs font-semibold border-2 border-white shadow-sm transition-transform duration-300 ${
+              index === currentIndex ? 'scale-110 z-10' : 'z-0'
+            }`}
+          >
+            {testimonial.initials}
+          </div>
+        ))}
+      </div>
+      
       {/* Logo Judge.me */}
       <div className="flex items-center gap-2">
         <img 

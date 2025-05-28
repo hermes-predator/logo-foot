@@ -56,7 +56,7 @@ const HeroTestimonialBadge = () => {
       </div>
       
       <div className="flex items-center gap-2 min-w-0">
-        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1]" />
         <div className="flex flex-col min-w-0">
           <p className="text-xs text-gray-600 truncate max-w-[180px] font-medium">
             {currentTestimonial.content}

@@ -61,9 +61,16 @@ const HeroTestimonialBadge = () => {
           <p className="text-xs text-gray-600 truncate max-w-[180px] font-medium">
             {currentTestimonial.content}
           </p>
-          <span className="text-[10px] text-gray-400 font-medium">
-            - {currentTestimonial.name}
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-[10px] text-gray-400 font-medium">
+              - {currentTestimonial.name}
+            </span>
+            <div className="flex items-center gap-0.5">
+              {[...Array(currentTestimonial.rating)].map((_, i) => (
+                <Star key={i} className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       

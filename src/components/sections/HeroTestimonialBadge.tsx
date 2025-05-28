@@ -77,18 +77,13 @@ const HeroTestimonialBadge = () => {
       <div className="h-4 w-px bg-gray-200" />
       
       {/* Logo Judge.me */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center">
         <img 
           src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
           alt="Judge.me" 
           className="h-4 w-auto" 
           loading="lazy"
         />
-        <div className="flex items-center gap-1">
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-          ))}
-        </div>
       </div>
     </div>
   );

@@ -264,7 +264,7 @@ const Testimonials = () => {
               </div>
             </div>
             <ExternalLink 
-              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1 relative z-10" 
+              className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10" 
               aria-hidden="true"
             />
           </a>

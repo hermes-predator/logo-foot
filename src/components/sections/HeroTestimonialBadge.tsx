@@ -46,7 +46,7 @@ const HeroTestimonialBadge = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className={`w-8 h-8 rounded-full ${testimonial.bgColor} flex items-center justify-center text-white text-xs font-semibold border-2 border-white shadow-sm transition-transform duration-300 ${
+            className={`w-8 h-8 rounded-full ${testimonial.bgColor} flex items-center justify-center text-white text-xs font-semibold border-2 border-white transition-transform duration-300 ${
               index === currentIndex ? 'scale-110 z-10' : 'z-0'
             }`}
           >
@@ -54,6 +54,20 @@ const HeroTestimonialBadge = () => {
           </div>
         ))}
       </div>
+      
+      <div className="flex items-center gap-2 min-w-0">
+        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col min-w-0">
+          <p className="text-xs text-gray-600 truncate max-w-[180px] font-medium">
+            {currentTestimonial.content}
+          </p>
+          <span className="text-[10px] text-gray-400 font-medium">
+            - {currentTestimonial.name}
+          </span>
+        </div>
+      </div>
+      
+      <div className="h-4 w-px bg-gray-200" />
       
       {/* Logo Judge.me */}
       <div className="flex items-center gap-2">
@@ -67,20 +81,6 @@ const HeroTestimonialBadge = () => {
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
           ))}
-        </div>
-      </div>
-      
-      <div className="h-4 w-px bg-gray-200" />
-      
-      <div className="flex items-center gap-2 min-w-0">
-        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
-        <div className="flex flex-col min-w-0">
-          <p className="text-xs text-gray-600 truncate max-w-[180px] font-medium">
-            {currentTestimonial.content}
-          </p>
-          <span className="text-[10px] text-gray-400 font-medium">
-            - {currentTestimonial.name}
-          </span>
         </div>
       </div>
     </div>

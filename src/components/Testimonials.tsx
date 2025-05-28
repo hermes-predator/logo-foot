@@ -247,7 +247,7 @@ const Testimonials = () => {
               loading="lazy"
             />
             <div className="flex flex-col relative z-10">
-              <span className="text-sm font-semibold text-gray-600 tracking-wide">
+              <span className="text-sm font-medium text-gray-600 tracking-wide">
                 Avis vérifiés basés sur 1034 avis
               </span>
               <div className="flex items-center gap-2">

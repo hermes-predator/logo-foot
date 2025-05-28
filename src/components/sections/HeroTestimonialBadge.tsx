@@ -40,7 +40,7 @@ const HeroTestimonialBadge = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-md border border-gray-200/80 transition-all duration-500 hover:shadow-lg">
+    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200/80 transition-all duration-500 hover:bg-white/95">
       {/* Avatars empilés */}
       <div className="flex items-center -space-x-2">
         {testimonials.map((testimonial, index) => (

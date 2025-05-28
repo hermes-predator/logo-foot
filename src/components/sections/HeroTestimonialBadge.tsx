@@ -81,7 +81,7 @@ const HeroTestimonialBadge = () => {
         <img 
           src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
           alt="Judge.me" 
-          className="h-5 w-auto" 
+          className="h-6 w-auto" 
           loading="lazy"
         />
       </div>

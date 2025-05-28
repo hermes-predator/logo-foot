@@ -34,11 +34,20 @@ const HeroTestimonialBadge = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-100/80 transition-all duration-500">
-      <div className="flex items-center gap-1">
-        {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />
-        ))}
+    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-md border border-gray-200/80 transition-all duration-500 hover:shadow-lg">
+      {/* Logo Judge.me */}
+      <div className="flex items-center gap-2">
+        <img 
+          src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+          alt="Judge.me" 
+          className="h-4 w-auto" 
+          loading="lazy"
+        />
+        <div className="flex items-center gap-1">
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
+          ))}
+        </div>
       </div>
       
       <div className="h-4 w-px bg-gray-200" />
@@ -46,7 +55,7 @@ const HeroTestimonialBadge = () => {
       <div className="flex items-center gap-2 min-w-0">
         <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
         <div className="flex flex-col min-w-0">
-          <p className="text-xs text-gray-600 truncate max-w-[200px] font-medium">
+          <p className="text-xs text-gray-600 truncate max-w-[180px] font-medium">
             {currentTestimonial.content}
           </p>
           <span className="text-[10px] text-gray-400 font-medium">

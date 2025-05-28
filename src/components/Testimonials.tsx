@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -242,7 +243,7 @@ const Testimonials = () => {
             <img 
               src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
               alt="Judge.me Reviews" 
-              className="h-6 relative z-10" 
+              className="h-7 relative z-10" 
               loading="lazy"
             />
             <div className="flex flex-col relative z-10">

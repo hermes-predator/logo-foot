@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -235,7 +234,7 @@ const Testimonials = () => {
             href="https://judge.me" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-gray-50 to-white px-5 py-3 rounded-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 group relative overflow-hidden"
+            className="inline-flex items-center gap-3 bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white px-5 py-3 rounded-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 group relative overflow-hidden"
           >
             {/* Effet de brillance subtil */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full group-hover:translate-x-full" />

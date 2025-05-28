@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -252,13 +251,13 @@ const Testimonials = () => {
               </span>
               <div className="flex items-center gap-2">
                 <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-3 h-3 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
+                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
                 </div>
-                <span className="text-sm font-bold text-gray-700 bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
+                <span className="text-base font-bold text-gray-700 bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
                   {formattedAvgRating}/5
                 </span>
               </div>

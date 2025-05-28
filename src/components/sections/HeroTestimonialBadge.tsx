@@ -40,7 +40,7 @@ const HeroTestimonialBadge = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50/80 to-emerald-50/75 backdrop-blur-sm rounded-full px-6 py-3 border border-green-150/65 transition-all duration-500 hover:from-green-50/90 hover:to-emerald-50/85 hover:border-green-150">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50/80 to-emerald-50/75 backdrop-blur-sm rounded-2xl px-6 py-4 border border-green-150/65 transition-all duration-500 hover:from-green-50/90 hover:to-emerald-50/85 hover:border-green-150 hover:scale-[1.02] transform">
       {/* Avatars empilés */}
       <div className="flex items-center -space-x-2">
         {testimonials.map((testimonial, index) => (

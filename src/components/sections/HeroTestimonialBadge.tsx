@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Star, Quote } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Yassine B.",
-    content: "Ça m'a apporté beaucoup de confiance pour mon projet, merci pour le gain de temps",
+    content: "Ça m'a apporté beaucoup de confiance pour mon projet de paris sportifs, merci pour le gain de temps",
     rating: 5,
     initials: "YB",
     bgColor: "bg-green-500"

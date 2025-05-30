@@ -48,7 +48,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Alex G.",
     role: "Community Manager",
-    content: "Ce fichier m'a beaucoup aidé pour mon projet de paris sportifs, merci à vous.",
+    content: "Vraiment très content de l'avoir acheter, je recommande Logo-foot.com ! Merci",
     rating: 5
   },
   {

@@ -100,7 +100,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipTrigger asChild>
                     <button 
                       onClick={handleFlip}
-                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-300/80 hover:bg-gray-100/70 hover:border-gray-300/80 transition-all duration-300 rounded-full relative overflow-hidden group shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)]"
+                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-300/80 hover:bg-gray-100/70 hover:border-gray-300/80 transition-all duration-300 rounded-full relative overflow-hidden group shadow-[0_4px_8px_rgba(0,0,0,0.12)] hover:shadow-[0_6px_14px_rgba(0,0,100,0.15)]"
                       aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
                     >
                       {/* Effet de pulse subtil */}

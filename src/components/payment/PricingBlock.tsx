@@ -18,7 +18,7 @@ const PricingBlock = () => {
           <div className="flex items-center gap-2 justify-start pl-8 relative">
             {/* Effet de brillance subtil */}
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine"></span>
-            <span className="text-blue-900 text-xs font-semibold tracking-wide">PROMOTION</span>
+            <span className="text-blue-900 text-xs font-bold tracking-wide">PROMOTION</span>
           </div>
         </div>
         

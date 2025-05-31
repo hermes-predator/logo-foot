@@ -2,7 +2,6 @@
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const DisclaimerDialog = () => {
@@ -33,8 +32,6 @@ const DisclaimerDialog = () => {
               </div>
             </div>
           </div>
-
-          <Separator className="bg-gray-200" />
 
           <div className="mt-4 p-5 border border-gray-200/50 bg-gradient-to-br from-gray-50 to-slate-50/50 rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">

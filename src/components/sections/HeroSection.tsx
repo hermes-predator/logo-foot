@@ -76,7 +76,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         </div>
 
         {/* CTA buttons - Spacing amélioré */}
-        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-7">
           <Dialog>
             <DialogTrigger asChild>
               <button 

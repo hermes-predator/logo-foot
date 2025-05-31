@@ -28,7 +28,7 @@ const PricingBlock = () => {
             <div>
               {/* Prix normal barré avec meilleur contraste */}
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-gray-500 text-2xl line-through font-medium">50,00€</span>
+                <span className="text-gray-500 text-2xl line-through font-medium">100,00€</span>
                 <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200 shadow-sm">Valeur réelle</span>
               </div>
               
@@ -36,7 +36,7 @@ const PricingBlock = () => {
               <div className="flex items-center gap-2">
                 <span className="text-4xl md:text-5xl font-extrabold text-gray-900">9€</span>
                 <div className="flex flex-col items-start ml-2">
-                  <span className="text-emerald-600 text-sm font-bold whitespace-nowrap">82% de réduction</span>
+                  <span className="text-emerald-600 text-sm font-bold whitespace-nowrap">91% de réduction</span>
                   <span className="text-gray-600 text-sm whitespace-nowrap">TVA incluse</span>
                 </div>
               </div>

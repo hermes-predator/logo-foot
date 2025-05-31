@@ -182,11 +182,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 {/* Étapes avec numérotation simple */}
                 <div className="space-y-2.5">
                   <div className="flex items-start gap-3">
-                    <span className="text-sm font-bold text-gray-700 mt-0.5">1.</span>
+                    <span className="text-sm font-bold text-gray-700 mt-0.5">1</span>
                     <span className="text-sm text-gray-600 leading-relaxed">Paiement sécurisé via SumUp</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-sm font-bold text-gray-700 mt-0.5">2.</span>
+                    <span className="text-sm font-bold text-gray-700 mt-0.5">2</span>
                     <span className="text-sm text-gray-600 leading-relaxed">Accès en page d'après-paiement</span>
                   </div>
                 </div>

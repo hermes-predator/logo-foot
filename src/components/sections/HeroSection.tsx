@@ -194,7 +194,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <TooltipContent side="top" align="center" className="bg-white border border-gray-200 shadow-md p-4 max-w-[300px]">
               <div className="space-y-3">
                 {/* Titre principal plus grand */}
-                <p className="text-lg font-bold text-gray-800 leading-tight">Téléchargement du fichier ZIP complet</p>
+                <p className="text-lg font-bold text-gray-800 leading-tight">Téléchargement ZIP complet</p>
                 
                 {/* Séparateur visuel */}
                 <div className="h-px bg-gray-200"></div>

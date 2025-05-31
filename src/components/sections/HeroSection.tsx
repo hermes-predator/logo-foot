@@ -34,26 +34,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
       
-      {/* Decorative elements avec animation optimisée */}
-      <div 
-        className="absolute top-28 left-1/3 text-blue-400/30 animate-floating"
-        style={{ 
-          animationDuration: '8s',
-          animationDelay: '-2s'
-        }}
-      >
-        <Sparkles className="h-8 w-8" />
-      </div>
-      <div 
-        className="absolute bottom-20 right-1/4 text-purple-400/30 animate-floating"
-        style={{ 
-          animationDuration: '9s',
-          animationDelay: '-1s'
-        }}
-      >
-        <Sparkles className="h-10 w-10" />
-      </div>
-      
       <div className="max-w-4xl mx-auto text-center space-y-7">
         {/* Google Drive Badge remplaçant le Premium Badge */}
         <div className="flex justify-center mb-3">
@@ -199,14 +179,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 {/* Séparateur visuel */}
                 <div className="h-px bg-gray-200"></div>
                 
-                {/* Étapes avec meilleure hiérarchie */}
+                {/* Étapes avec numérotation simple */}
                 <div className="space-y-2.5">
                   <div className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+                    <span className="text-sm font-bold text-gray-700 mt-0.5">1.</span>
                     <span className="text-sm text-gray-600 leading-relaxed">Paiement sécurisé via SumUp</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+                    <span className="text-sm font-bold text-gray-700 mt-0.5">2.</span>
                     <span className="text-sm text-gray-600 leading-relaxed">Accès en page d'après-paiement</span>
                   </div>
                 </div>

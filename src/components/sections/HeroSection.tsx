@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -170,7 +171,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent side="top" align="center" sideOffset={11} className="bg-white border border-gray-200 shadow-md p-4 max-w-[400px]">
+            <TooltipContent side="top" align="center" sideOffset={10} className="bg-white border border-gray-200 shadow-md p-4 max-w-[400px]">
               <div className="space-y-3">
                 {/* Titre principal plus grand */}
                 <p className="text-lg font-bold text-gray-800 leading-tight">Télécharger le fichier ZIP complet</p>

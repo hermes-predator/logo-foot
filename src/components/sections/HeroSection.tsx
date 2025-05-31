@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -76,7 +77,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         </div>
 
         {/* CTA buttons - Spacing amélioré */}
-        <div className="flex flex-wrap items-center justify-center gap-6 pt-7">
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
           <Dialog>
             <DialogTrigger asChild>
               <button 

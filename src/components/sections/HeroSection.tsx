@@ -191,22 +191,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent side="top" align="center" className="bg-white border border-gray-200 shadow-md p-4">
-              <p className="text-base font-semibold text-gray-800 pb-2 border-b border-gray-100">Téléchargement du fichier ZIP complet</p>
-              <div className="pt-2 flex flex-col gap-1.5">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-gray-400 text-[10px] w-4 text-center">1</span>
-                  <span className="text-gray-500 text-[14px]">Paiement sécurisé via SumUp</span>
+            <TooltipContent side="top" align="center" className="bg-white border border-gray-200 shadow-md p-4 max-w-[300px]">
+              <div className="space-y-3">
+                {/* Titre principal plus grand */}
+                <p className="text-lg font-bold text-gray-800 leading-tight">Téléchargement du fichier ZIP complet</p>
+                
+                {/* Séparateur visuel */}
+                <div className="h-px bg-gray-200"></div>
+                
+                {/* Étapes avec meilleure hiérarchie */}
+                <div className="space-y-2.5">
+                  <div className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+                    <span className="text-sm text-gray-600 leading-relaxed">Paiement sécurisé via SumUp</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-purple-100 text-purple-700 rounded-full text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+                    <span className="text-sm text-gray-600 leading-relaxed">Accès en page d'après-paiement</span>
+                  </div>
                 </div>
-                <div className="flex items-start gap-1.5">
-                  <span className="text-gray-400 text-[10px] w-4 text-center">2</span>
-                  <span className="text-gray-500 text-[14px] text-left">
-                    Accès en page d'après-paiement
-                  </span>
-                </div>
-                <div className="mt-1 flex items-center gap-2">
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[12px] font-medium">⏱️ 2 minutes seulement</span>
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[12px] font-medium">✓  Fiable à 100%</span>
+                
+                {/* Badges de confiance plus espacés */}
+                <div className="flex flex-wrap gap-2 pt-1">
+                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">⏱️ 2 minutes seulement</span>
+                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">✓ Fiable à 100%</span>
                 </div>
               </div>
             </TooltipContent>

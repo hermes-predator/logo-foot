@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -32,26 +32,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
         <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 8s ease-in-out infinite' }} />
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
-      </div>
-      
-      {/* Decorative elements avec animation optimisée */}
-      <div 
-        className="absolute top-28 left-1/3 text-blue-400/30 animate-floating"
-        style={{ 
-          animationDuration: '8s',
-          animationDelay: '-2s'
-        }}
-      >
-        <Sparkles className="h-8 w-8" />
-      </div>
-      <div 
-        className="absolute bottom-20 right-1/4 text-purple-400/30 animate-floating"
-        style={{ 
-          animationDuration: '9s',
-          animationDelay: '-1s'
-        }}
-      >
-        <Sparkles className="h-10 w-10" />
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">

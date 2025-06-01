@@ -481,3 +481,32 @@ pre code {
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+/* Animation floating améliorée - plus mobile et variée */
+@keyframes floating {
+  0% { 
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+    opacity: 0.3;
+  }
+  25% { 
+    transform: translateY(-15px) translateX(5px) rotate(90deg) scale(1.1);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translateY(-30px) translateX(-3px) rotate(180deg) scale(0.9);
+    opacity: 0.8;
+  }
+  75% { 
+    transform: translateY(-15px) translateX(-8px) rotate(270deg) scale(1.05);
+    opacity: 0.4;
+  }
+  100% { 
+    transform: translateY(0px) translateX(0px) rotate(360deg) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.animate-floating {
+  animation: floating 4s ease-in-out infinite;
+  will-change: transform, opacity;
+}

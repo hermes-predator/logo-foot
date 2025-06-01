@@ -63,12 +63,41 @@ const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
             className="relative group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
             size="lg"
           >
-            {/* Decorative elements */}
-            <div className="absolute -top-3 -left-3 text-purple-400/20 animate-pulse" style={{ animationDuration: '4s' }}>
+            {/* Sparkles avec animations améliorées */}
+            <div className="absolute -top-4 -left-4 text-purple-400/30 animate-floating" 
+                 style={{ 
+                   animationDuration: '3s',
+                   animationDelay: '0s'
+                 }}>
+              <Sparkles className="h-5 w-5" />
+            </div>
+            <div className="absolute -top-2 -right-5 text-blue-400/25 animate-floating" 
+                 style={{ 
+                   animationDuration: '4s',
+                   animationDelay: '1s'
+                 }}>
+              <Sparkles className="h-4 w-4" />
+            </div>
+            <div className="absolute -bottom-4 -right-3 text-purple-400/35 animate-floating" 
+                 style={{ 
+                   animationDuration: '3.5s',
+                   animationDelay: '0.5s'
+                 }}>
               <Sparkles className="h-6 w-6" />
             </div>
-            <div className="absolute -bottom-3 -right-3 text-blue-400/20 animate-pulse" style={{ animationDuration: '5s' }}>
-              <Sparkles className="h-6 w-6" />
+            <div className="absolute -bottom-2 -left-5 text-blue-400/20 animate-floating" 
+                 style={{ 
+                   animationDuration: '4.5s',
+                   animationDelay: '2s'
+                 }}>
+              <Sparkles className="h-4 w-4" />
+            </div>
+            <div className="absolute top-1 right-1 text-white/15 animate-floating" 
+                 style={{ 
+                   animationDuration: '5s',
+                   animationDelay: '1.5s'
+                 }}>
+              <Sparkles className="h-3 w-3" />
             </div>
             
             <div className="flex items-center gap-3">

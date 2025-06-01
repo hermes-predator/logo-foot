@@ -61,6 +61,19 @@ const BlogHeader = () => {
     });
   }, [carouselApi]);
 
+  // Effet pour la transition automatique très lente
+  React.useEffect(() => {
+    if (!carouselApi) {
+      return;
+    }
+
+    const autoPlay = setInterval(() => {
+      carouselApi.scrollNext();
+    }, 8000); // 8 secondes entre chaque transition - très lent
+
+    return () => clearInterval(autoPlay);
+  }, [carouselApi]);
+
   return <div className="bg-white p-8 mb-4 shadow-sm overflow-visible">
     <div className="max-w-6xl mx-auto overflow-visible">
       {/* En-tête avec titre et description */}

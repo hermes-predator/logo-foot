@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -13,7 +12,6 @@ const BlogHeader = () => {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 
-  // Images pour le carrousel dans l'ordre fourni par l'utilisateur
   const carouselItems = [{
     id: 1,
     imageUrl: '/lovable-uploads/5401e79e-0c75-471c-b89c-5f146818720b.png',
@@ -123,7 +121,7 @@ const BlogHeader = () => {
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
-            <div className="mt-6">
+            <div className="mt-8">
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,16 +33,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
 
-      {/* Sparkles flottants */}
+      {/* Sparkles flottants - repositionnés en périphérie */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <Sparkles className="absolute top-20 left-10 text-purple-300/40 w-6 h-6 animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }} />
-        <Sparkles className="absolute top-32 right-16 text-blue-300/40 w-5 h-5 animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }} />
-        <Sparkles className="absolute top-48 left-1/4 text-purple-400/30 w-4 h-4 animate-pulse" style={{ animationDelay: '2s', animationDuration: '3.5s' }} />
-        <Sparkles className="absolute top-64 right-1/3 text-blue-400/30 w-7 h-7 animate-pulse" style={{ animationDelay: '0.5s', animationDuration: '4.5s' }} />
-        <Sparkles className="absolute bottom-32 left-8 text-purple-300/40 w-5 h-5 animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3.2s' }} />
-        <Sparkles className="absolute bottom-48 right-12 text-blue-300/35 w-6 h-6 animate-pulse" style={{ animationDelay: '2.5s', animationDuration: '4.2s' }} />
-        <Sparkles className="absolute top-80 left-3/4 text-purple-400/25 w-4 h-4 animate-pulse" style={{ animationDelay: '3s', animationDuration: '3.8s' }} />
-        <Sparkles className="absolute bottom-20 right-1/4 text-blue-400/40 w-5 h-5 animate-pulse" style={{ animationDelay: '0.8s', animationDuration: '4.8s' }} />
+        <Sparkles className="absolute top-16 left-4 text-purple-300/40 w-5 h-5 animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }} />
+        <Sparkles className="absolute top-20 right-8 text-blue-300/40 w-4 h-4 animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }} />
+        <Sparkles className="absolute top-96 left-12 text-purple-400/30 w-6 h-6 animate-pulse" style={{ animationDelay: '2s', animationDuration: '3.5s' }} />
+        <Sparkles className="absolute top-80 right-6 text-blue-400/30 w-5 h-5 animate-pulse" style={{ animationDelay: '0.5s', animationDuration: '4.5s' }} />
+        <Sparkles className="absolute bottom-24 left-6 text-purple-300/40 w-4 h-4 animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3.2s' }} />
+        <Sparkles className="absolute bottom-32 right-10 text-blue-300/35 w-5 h-5 animate-pulse" style={{ animationDelay: '2.5s', animationDuration: '4.2s' }} />
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">

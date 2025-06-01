@@ -10,7 +10,7 @@ export const getBlogImagePath = (imageId: number): string => {
  * Génère le chemin d'une image de galerie à partir de son ID
  */
 export const getGalleryImagePath = (imageId: number): string => {
-  return `/images/gallery/logo${imageId}.png`;
+  return `/images/logo${imageId}.png`;
 };
 
 /**

@@ -8,7 +8,7 @@ export const generateGalleryItems = () => {
     const country = countries[index] || 'International';
     return {
       id: index + 1,
-      imageUrl: `/images/gallery/logo${index + 1}.png`,
+      imageUrl: `/images/logo${index + 1}.png`,
       videoUrl: `/videos/video${index + 1}.mov`,
       country: country,
       title: `Logo ${country} - Collection officielle logos clubs de foot`,
@@ -34,7 +34,7 @@ export const generateGalleryItems = () => {
     
     return {
       id: arrayIndex + 1,
-      imageUrl: `/images/gallery/logo${arrayIndex + 1}.png`,
+      imageUrl: `/images/logo${arrayIndex + 1}.png`,
       videoUrl: `/videos/video${arrayIndex + 1}.mov`,
       country: country,
       title: title,

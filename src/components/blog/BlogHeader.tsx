@@ -98,11 +98,11 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive avec Tooltip Radix UI */}
+            {/* Badge Google Drive avec Tooltip Radix UI - styles de survol supprimés */}
             <div className="mb-4 flex justify-start">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-100 transition-colors">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-pointer">
                     <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
                     <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
                     <img 

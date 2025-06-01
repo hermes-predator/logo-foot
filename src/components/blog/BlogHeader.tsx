@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -122,46 +123,48 @@ const BlogHeader = () => {
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
-                borderRadius: '12px',
-                background: 'linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%)',
-                borderTop: '2px solid #fbbf24',
-                borderLeft: '2px solid #fbbf24',
-                borderRight: '2px solid #dc2626',
-                borderBottom: '2px solid #dc2626',
-                boxShadow: '0 6px 12px -2px rgba(251, 146, 60, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
-                textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
-              }}>
-                  {/* Effet de brillance sur le bouton - plus clair au survol */}
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[10px]"></div>
-                  
-                  <Folder className="h-6 w-6 relative z-10 drop-shadow-sm" />
-                  <span className="relative z-10 font-semibold">Voir le fichier</span>
-                  <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent className="bg-white border border-gray-200/50 p-4 rounded-lg shadow-lg max-w-xs">
-                <div className="space-y-3">
-                  <h3 className="font-semibold text-gray-900 text-center border-b border-gray-200 pb-2">⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
-                      1 fichier ZIP
-                    </div>
-                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
-                      66 collections
-                    </div>
-                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
-                      8 774 logos
-                    </div>
-                    <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
-                      Format PNG
+            <div className="mt-6">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{
+                  borderRadius: '12px',
+                  background: 'linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%)',
+                  borderTop: '2px solid #fbbf24',
+                  borderLeft: '2px solid #fbbf24',
+                  borderRight: '2px solid #dc2626',
+                  borderBottom: '2px solid #dc2626',
+                  boxShadow: '0 6px 12px -2px rgba(251, 146, 60, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
+                  textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
+                }}>
+                    {/* Effet de brillance sur le bouton - plus clair au survol */}
+                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[10px]"></div>
+                    
+                    <Folder className="h-6 w-6 relative z-10 drop-shadow-sm" />
+                    <span className="relative z-10 font-semibold">Voir le fichier</span>
+                    <ArrowRight className="h-6 w-6 relative z-10 transition-transform duration-200 group-hover:translate-x-1 drop-shadow-sm" />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent className="bg-white border border-gray-200/50 p-4 rounded-lg shadow-lg max-w-xs">
+                  <div className="space-y-3">
+                    <h3 className="font-semibold text-gray-900 text-center border-b border-gray-200 pb-2">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                        1 fichier ZIP
+                      </div>
+                      <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                        66 collections
+                      </div>
+                      <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                        8 774 logos
+                      </div>
+                      <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium text-center">
+                        Format PNG
+                      </div>
                     </div>
                   </div>
-                </div>
-              </TooltipContent>
-            </Tooltip>
+                </TooltipContent>
+              </Tooltip>
+            </div>
             
             {/* Micro composant Judge.me placé en dessous du bouton */}
             <JudgeMeBadge />

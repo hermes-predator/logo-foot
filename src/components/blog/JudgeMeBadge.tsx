@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 
 const JudgeMeBadge = () => {
   return (
-    <div className="flex items-center gap-2 px-2 py-1 mt-1">
+    <div className="flex items-center gap-2 px-2 py-1 mt-2">
       <img 
         src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
         alt="Judge.me" 

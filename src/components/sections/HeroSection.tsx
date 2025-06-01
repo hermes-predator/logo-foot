@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,72 +35,102 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
 
-      {/* Sparkles brandés - disposition harmonieuse */}
+      {/* Sparkles brandés premium - effet de profondeur et hiérarchie */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Sparkles principales - gradient purple-blue */}
+        {/* Sparkles niveau 1 - Hero sparkles avec glow intense */}
         <Sparkles 
-          className="absolute top-20 left-[8%] text-purple-400/60 w-4 h-4 drop-shadow-sm" 
-          style={{ 
-            animation: 'floating 7s ease-in-out infinite',
-            filter: 'drop-shadow(0 0 4px rgba(168, 85, 247, 0.4))'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-32 right-[12%] text-indigo-400/50 w-5 h-5 drop-shadow-sm" 
-          style={{ 
-            animation: 'floating 9s ease-in-out infinite',
-            animationDelay: '1.5s',
-            filter: 'drop-shadow(0 0 6px rgba(99, 102, 241, 0.4))'
-          }} 
-        />
-        
-        {/* Sparkles secondaires - accent colors */}
-        <Sparkles 
-          className="absolute top-[45%] left-[5%] text-purple-300/40 w-3 h-3" 
-          style={{ 
-            animation: 'floating 6s ease-in-out infinite',
-            animationDelay: '3s',
-            filter: 'drop-shadow(0 0 3px rgba(196, 181, 253, 0.6))'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-[38%] right-[8%] text-blue-300/45 w-6 h-6 drop-shadow-sm" 
+          className="absolute top-16 left-[10%] text-purple-500/70 w-5 h-5" 
           style={{ 
             animation: 'floating 8s ease-in-out infinite',
-            animationDelay: '0.8s',
-            filter: 'drop-shadow(0 0 5px rgba(147, 197, 253, 0.5))'
-          }} 
-        />
-        
-        {/* Sparkles d'accent - plus subtiles */}
-        <Sparkles 
-          className="absolute bottom-[35%] left-[15%] text-indigo-200/35 w-3 h-3" 
-          style={{ 
-            animation: 'floating 5s ease-in-out infinite',
-            animationDelay: '2.2s'
+            filter: 'drop-shadow(0 0 8px rgba(168, 85, 247, 0.7)) drop-shadow(0 0 16px rgba(168, 85, 247, 0.3))',
+            transform: 'rotate(-15deg)'
           }} 
         />
         <Sparkles 
-          className="absolute bottom-[28%] right-[18%] text-purple-200/40 w-4 h-4" 
+          className="absolute top-28 right-[8%] text-indigo-500/60 w-6 h-6" 
           style={{ 
             animation: 'floating 10s ease-in-out infinite',
-            animationDelay: '4s'
+            animationDelay: '2s',
+            filter: 'drop-shadow(0 0 10px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 20px rgba(99, 102, 241, 0.2))',
+            transform: 'rotate(25deg)'
           }} 
         />
         
-        {/* Sparkles finales - effet de profondeur */}
+        {/* Sparkles niveau 2 - Support sparkles avec glow moyen */}
         <Sparkles 
-          className="absolute top-[65%] left-[25%] text-blue-400/30 w-3 h-3" 
+          className="absolute top-[42%] left-[7%] text-purple-400/55 w-4 h-4" 
           style={{ 
-            animation: 'floating 7.5s ease-in-out infinite',
-            animationDelay: '1s'
+            animation: 'floating 7s ease-in-out infinite',
+            animationDelay: '3.5s',
+            filter: 'drop-shadow(0 0 6px rgba(196, 181, 253, 0.8)) drop-shadow(0 0 12px rgba(196, 181, 253, 0.4))',
+            transform: 'rotate(45deg)'
           }} 
         />
         <Sparkles 
-          className="absolute top-[58%] right-[25%] text-purple-300/35 w-5 h-5" 
+          className="absolute top-[35%] right-[12%] text-blue-400/50 w-5 h-5" 
           style={{ 
-            animation: 'floating 6.5s ease-in-out infinite',
-            animationDelay: '2.8s'
+            animation: 'floating 9s ease-in-out infinite',
+            animationDelay: '1.2s',
+            filter: 'drop-shadow(0 0 7px rgba(147, 197, 253, 0.7)) drop-shadow(0 0 14px rgba(147, 197, 253, 0.3))',
+            transform: 'rotate(-30deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 3 - Accent sparkles avec glow subtil */}
+        <Sparkles 
+          className="absolute top-[60%] left-[20%] text-purple-300/45 w-3 h-3" 
+          style={{ 
+            animation: 'floating 6s ease-in-out infinite',
+            animationDelay: '5s',
+            filter: 'drop-shadow(0 0 4px rgba(216, 180, 254, 0.6))',
+            transform: 'rotate(60deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[52%] right-[22%] text-indigo-300/40 w-4 h-4" 
+          style={{ 
+            animation: 'floating 8.5s ease-in-out infinite',
+            animationDelay: '4.2s',
+            filter: 'drop-shadow(0 0 5px rgba(165, 180, 252, 0.5))',
+            transform: 'rotate(-45deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 4 - Background sparkles très subtils */}
+        <Sparkles 
+          className="absolute bottom-[25%] left-[15%] text-blue-200/35 w-3 h-3" 
+          style={{ 
+            animation: 'floating 5.5s ease-in-out infinite',
+            animationDelay: '2.8s',
+            filter: 'drop-shadow(0 0 3px rgba(191, 219, 254, 0.4))',
+            transform: 'rotate(15deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute bottom-[32%] right-[18%] text-purple-200/30 w-3 h-3" 
+          style={{ 
+            animation: 'floating 11s ease-in-out infinite',
+            animationDelay: '6s',
+            filter: 'drop-shadow(0 0 2px rgba(233, 213, 255, 0.4))',
+            transform: 'rotate(-60deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 5 - Micro sparkles pour texture */}
+        <Sparkles 
+          className="absolute top-[70%] left-[25%] text-indigo-100/25 w-2 h-2" 
+          style={{ 
+            animation: 'floating 4s ease-in-out infinite',
+            animationDelay: '3.8s',
+            transform: 'rotate(90deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[75%] right-[28%] text-purple-100/20 w-2 h-2" 
+          style={{ 
+            animation: 'floating 12s ease-in-out infinite',
+            animationDelay: '7.5s',
+            transform: 'rotate(-90deg)'
           }} 
         />
       </div>
@@ -276,3 +307,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 };
 
 export default HeroSection;
+

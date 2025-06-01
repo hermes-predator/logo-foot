@@ -19,7 +19,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     setError('Erreur lors du chargement de la vidéo');
   };
 
-  // Déterminer la description appropriée en fonction du titre
   const getVideoDescription = (title: string, country: string) => {
     if (title.includes("Hugo Ekitike")) {
       return "Le talent français qui s'impose à l'Eintracht Francfort";
@@ -68,6 +67,8 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             className="w-full h-full object-contain"
             controls
             playsInline
+            disablePictureInPicture
+            controlsList="nodownload nofullscreen"
             title={title}
             onError={handleError}
             preload="metadata"

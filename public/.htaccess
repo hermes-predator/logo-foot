@@ -21,7 +21,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteCond %{HTTP_REFERER} !^$
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?footlogos\.com [NC]
+  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?logo-foot\.com [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://localhost [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://127\.0\.0\.1 [NC]
   RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ [NC]
@@ -47,8 +47,8 @@
   # Empêche le navigateur de détecter le type MIME
   Header always set X-Content-Type-Options "nosniff"
   
-  # Politique de sécurité du contenu
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://cdn.gpteng.co; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self'"
+  # Politique de sécurité du contenu - mise à jour avec le bon domaine
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://cdn.gpteng.co; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; frame-ancestors 'self'"
   
   # Référer-Policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"

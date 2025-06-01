@@ -5,6 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
 import { Link } from 'react-router-dom';
+import ReassuranceBadge from './ReassuranceBadge';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -122,6 +123,9 @@ const BlogHeader = () => {
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
+            {/* Nouveau composant de réassurance */}
+            <ReassuranceBadge />
+            
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{

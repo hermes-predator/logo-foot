@@ -2,9 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
 import { AspectRatio } from '../ui/aspect-ratio';
 import { useImageOptimization } from '../../hooks/useImageOptimization';
+import { getBlogImagePath } from '../../utils/blogImagePaths';
 
 interface BlogImageProps {
-  src: string;
+  src?: string;
+  galleryImageId?: number;
   alt: string;
   className?: string;
   isDefault?: boolean;
@@ -16,7 +18,8 @@ interface BlogImageProps {
 }
 
 const BlogImage = ({ 
-  src, 
+  src,
+  galleryImageId,
   alt, 
   className = "", 
   isDefault = false,
@@ -24,12 +27,16 @@ const BlogImage = ({
   height = 800,
   title,
   priority = false,
-  aspectRatio = 1 // Changé de 16/9 à 1 (carré)
+  aspectRatio = 1
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);
+  
+  // Déterminer la source de l'image
+  const imageSrc = src || (galleryImageId ? getBlogImagePath(galleryImageId) : '/placeholder.svg');
+  
   const { optimizedSrc } = useImageOptimization({ 
-    src, 
+    src: imageSrc, 
     width, 
     height, 
     quality: 85, 
@@ -37,14 +44,14 @@ const BlogImage = ({
   });
   
   const imageTitle = title || alt;
-  const fileName = src.split('/').pop() || 'image';
+  const fileName = imageSrc.split('/').pop() || 'image';
   const imageId = `img-${fileName.split('.')[0]}`;
   
   // Déterminer si l'image est un PNG
-  const isPng = src.toLowerCase().endsWith('.png');
+  const isPng = imageSrc.toLowerCase().endsWith('.png');
 
   // Si c'est un PNG, on n'applique pas la conversion WebP
-  const finalSrc = isPng ? src : optimizedSrc;
+  const finalSrc = isPng ? imageSrc : optimizedSrc;
 
   // Extraire les dimensions pour le structured data
   const imageDimensions = {
@@ -150,7 +157,6 @@ const BlogImage = ({
       <meta itemProp="uploadDate" content={new Date().toISOString()} />
       <meta itemProp="copyrightYear" content={new Date().getFullYear().toString()} />
       
-      {/* Légende seulement pour les images d'article complet */}
       {isDefault && (
         <p className="mt-2 text-xs text-gray-500 text-center italic" itemProp="caption">{alt}</p>
       )}

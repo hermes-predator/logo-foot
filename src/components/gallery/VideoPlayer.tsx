@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 import {
   DialogContent,
@@ -19,6 +20,35 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   const [loading, setLoading] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.8);
+  const [error, setError] = useState<string | null>(null);
+
+  // Auto-démarrage de la vidéo à l'ouverture de la modal
+  useEffect(() => {
+    if (videoRef.current) {
+      const video = videoRef.current;
+      
+      // Tentative de lecture automatique
+      const playVideo = async () => {
+        try {
+          setError(null);
+          await video.play();
+          setIsPlaying(true);
+          console.log('Vidéo démarrée automatiquement');
+        } catch (err) {
+          console.warn('Lecture automatique échouée:', err);
+          setIsPlaying(false);
+          // Ne pas considérer cela comme une erreur, juste attendre une interaction utilisateur
+        }
+      };
+
+      // Attendre que les métadonnées soient chargées
+      video.addEventListener('loadedmetadata', playVideo);
+      
+      return () => {
+        video.removeEventListener('loadedmetadata', playVideo);
+      };
+    }
+  }, [videoUrl]);
 
   // Désactiver le clic droit sur l'ensemble de la fenêtre modale
   useEffect(() => {
@@ -27,9 +57,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       return false;
     };
 
-    // Ajouter un message de notification si quelqu'un tente de capturer la vidéo
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Bloquer les combinaisons de touches de capture d'écran
       if ((e.ctrlKey && (e.key === 'p' || e.key === 's')) || 
           (e.key === 'PrintScreen') || 
           (e.key === 'F12')) {
@@ -47,23 +75,35 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     };
   }, []);
 
-  // Gérer le chargement de la vidéo
+  // Gérer le chargement et les erreurs de la vidéo
   useEffect(() => {
     if (videoRef.current) {
       const video = videoRef.current;
       
-      const handleLoadedData = () => setLoading(false);
+      const handleLoadedData = () => {
+        setLoading(false);
+        console.log('Vidéo chargée avec succès');
+      };
+      
       const handleWaiting = () => setLoading(true);
       const handlePlaying = () => setLoading(false);
+      
+      const handleError = (e: Event) => {
+        console.error('Erreur de chargement vidéo:', e);
+        setError('Erreur lors du chargement de la vidéo');
+        setLoading(false);
+      };
       
       video.addEventListener('loadeddata', handleLoadedData);
       video.addEventListener('waiting', handleWaiting);
       video.addEventListener('playing', handlePlaying);
+      video.addEventListener('error', handleError);
       
       return () => {
         video.removeEventListener('loadeddata', handleLoadedData);
         video.removeEventListener('waiting', handleWaiting);
         video.removeEventListener('playing', handlePlaying);
+        video.removeEventListener('error', handleError);
       };
     }
   }, []);
@@ -94,16 +134,21 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     }
   }, []);
 
-  const togglePlay = () => {
+  const togglePlay = async () => {
     if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play().catch(error => {
-          console.error("Error playing video:", error);
-        });
+      try {
+        if (isPlaying) {
+          videoRef.current.pause();
+          setIsPlaying(false);
+        } else {
+          await videoRef.current.play();
+          setIsPlaying(true);
+        }
+        setError(null);
+      } catch (error) {
+        console.error("Erreur lors de la lecture:", error);
+        setError('Impossible de lire la vidéo');
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -144,7 +189,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
 
   // Déterminer la description appropriée en fonction du titre
   const getVideoDescription = (title: string, country: string) => {
-    // Cas spécifiques pour les items 61, 62, 63 et 64
     if (title.includes("Hugo Ekitike")) {
       return "Le talent français qui s'impose à l'Eintracht Francfort";
     }
@@ -158,7 +202,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       return "PNG transparent";
     }
     
-    // Description par défaut pour les autres éléments
     if (country === 'Sélections Nationales') {
       return `Animation logos des sélections nationales de football`;
     }
@@ -186,6 +229,15 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
               <Loader className="h-8 w-8 text-gray-600 animate-spin" />
             </div>
           )}
+
+          {error && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100/90 z-10">
+              <p className="text-red-600 text-sm mb-4">{error}</p>
+              <Button onClick={togglePlay} variant="outline" size="sm">
+                Réessayer
+              </Button>
+            </div>
+          )}
           
           <video
             ref={videoRef}
@@ -198,9 +250,10 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             disablePictureInPicture
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
+            preload="metadata"
           />
           
-          {/* Contrôles personnalisés - Maintenant toujours visibles */}
+          {/* Contrôles personnalisés */}
           <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-gray-800/40 to-transparent backdrop-blur-[1px] flex flex-col gap-2">
             <Slider 
               value={[progress]} 

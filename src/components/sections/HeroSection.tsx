@@ -1,23 +1,7 @@
 
-
 import React from 'react';
-import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import PackDescription from './PackDescription';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Download, Shield, Star, Sparkles } from 'lucide-react';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
 
 interface HeroSectionProps {
@@ -25,286 +9,167 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
+  // Système de sparkles à 6 niveaux avec effets harmonieux
+  const createSparkles = () => {
+    const sparkles = [];
+    
+    // Niveau 1: Sparkles principaux (grand impact)
+    const mainSparkles = [
+      { top: '15%', left: '10%', size: 8, color: 'text-purple-400', glow: 'drop-shadow-[0_0_8px_rgba(147,51,234,0.6)]', delay: '0s', rotation: '45deg' },
+      { top: '25%', right: '15%', size: 7, color: 'text-indigo-400', glow: 'drop-shadow-[0_0_6px_rgba(99,102,241,0.5)]', delay: '0.8s', rotation: '-30deg' },
+      { top: '45%', left: '8%', size: 6, color: 'text-blue-400', glow: 'drop-shadow-[0_0_4px_rgba(59,130,246,0.4)]', delay: '1.6s', rotation: '60deg' },
+    ];
+
+    // Niveau 2: Sparkles secondaires (support)
+    const secondarySparkles = [
+      { top: '20%', left: '25%', size: 5, color: 'text-purple-300', glow: 'drop-shadow-[0_0_6px_rgba(196,181,253,0.4)]', delay: '0.4s', rotation: '-15deg' },
+      { top: '35%', right: '25%', size: 5, color: 'text-indigo-300', glow: 'drop-shadow-[0_0_5px_rgba(165,180,252,0.4)]', delay: '1.2s', rotation: '75deg' },
+      { top: '55%', left: '20%', size: 4, color: 'text-blue-300', glow: 'drop-shadow-[0_0_4px_rgba(147,197,253,0.3)]', delay: '2.0s', rotation: '-45deg' },
+    ];
+
+    // Niveau 3: Sparkles d'ambiance (subtils)
+    const ambientSparkles = [
+      { top: '18%', left: '35%', size: 3, color: 'text-violet-200', glow: 'drop-shadow-[0_0_3px_rgba(221,214,254,0.3)]', delay: '0.6s', rotation: '90deg' },
+      { top: '30%', right: '35%', size: 3, color: 'text-purple-200', glow: 'drop-shadow-[0_0_3px_rgba(233,213,255,0.3)]', delay: '1.4s', rotation: '-60deg' },
+      { top: '50%', left: '35%', size: 3, color: 'text-indigo-200', glow: 'drop-shadow-[0_0_2px_rgba(199,210,254,0.2)]', delay: '2.2s', rotation: '120deg' },
+    ];
+
+    // Niveau 4: Micro sparkles (détails fins)
+    const microSparkles = [
+      { top: '12%', left: '45%', size: 2, color: 'text-slate-300', glow: 'drop-shadow-[0_0_2px_rgba(203,213,225,0.2)]', delay: '0.3s', rotation: '15deg' },
+      { top: '40%', right: '45%', size: 2, color: 'text-gray-300', glow: 'drop-shadow-[0_0_2px_rgba(209,213,219,0.2)]', delay: '1.1s', rotation: '-75deg' },
+      { top: '58%', left: '45%', size: 2, color: 'text-blue-200', glow: 'drop-shadow-[0_0_2px_rgba(191,219,254,0.2)]', delay: '1.9s', rotation: '105deg' },
+    ];
+
+    // Niveau 5: Sparkles de transition (mouvement fluide)
+    const transitionSparkles = [
+      { top: '22%', left: '55%', size: 4, color: 'text-purple-300', glow: 'drop-shadow-[0_0_4px_rgba(196,181,253,0.3)]', delay: '0.7s', rotation: '-90deg' },
+      { top: '42%', right: '55%', size: 4, color: 'text-indigo-300', glow: 'drop-shadow-[0_0_4px_rgba(165,180,252,0.3)]', delay: '1.5s', rotation: '30deg' },
+    ];
+
+    // Niveau 6: Sparkles de profondeur (arrière-plan)
+    const depthSparkles = [
+      { top: '28%', left: '65%', size: 3, color: 'text-violet-100', glow: 'drop-shadow-[0_0_1px_rgba(245,243,255,0.1)]', delay: '1.0s', rotation: '150deg' },
+      { top: '48%', right: '65%', size: 3, color: 'text-purple-100', glow: 'drop-shadow-[0_0_1px_rgba(250,245,255,0.1)]', delay: '1.8s', rotation: '-120deg' },
+    ];
+
+    [...mainSparkles, ...secondarySparkles, ...ambientSparkles, ...microSparkles, ...transitionSparkles, ...depthSparkles].forEach((sparkle, index) => {
+      sparkles.push(
+        <Sparkles
+          key={index}
+          className={`absolute ${sparkle.color} animate-floating opacity-80 hover:opacity-100 transition-all duration-1000 ease-in-out ${sparkle.glow}`}
+          style={{
+            top: sparkle.top,
+            left: sparkle.left,
+            right: sparkle.right,
+            width: `${sparkle.size * 4}px`,
+            height: `${sparkle.size * 4}px`,
+            animationDelay: sparkle.delay,
+            animationDuration: `${6 + (index % 3)}s`,
+            transform: `rotate(${sparkle.rotation})`,
+            filter: 'brightness(1.2) saturate(1.1)',
+          }}
+        />
+      );
+    });
+
+    return sparkles;
+  };
+
   return (
-    <section className="relative pt-14 pb-12 px-4 overflow-hidden">
-      {/* Background effects - Améliorés */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/90 via-blue-50/50 to-white opacity-95" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
-        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 8s ease-in-out infinite' }} />
-        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+      {/* Sparkles animés avec système harmonieux */}
+      <div className="absolute inset-0 pointer-events-none">
+        {createSparkles()}
       </div>
 
-      {/* Sparkles brandés premium - effet de profondeur et hiérarchie */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Sparkles niveau 1 - Hero sparkles avec glow intense */}
-        <Sparkles 
-          className="absolute top-16 left-[10%] text-purple-500/70 w-5 h-5" 
-          style={{ 
-            animation: 'floating 8s ease-in-out infinite',
-            filter: 'drop-shadow(0 0 8px rgba(168, 85, 247, 0.7)) drop-shadow(0 0 16px rgba(168, 85, 247, 0.3))',
-            transform: 'rotate(-15deg)'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-28 right-[8%] text-indigo-500/60 w-6 h-6" 
-          style={{ 
-            animation: 'floating 10s ease-in-out infinite',
-            animationDelay: '2s',
-            filter: 'drop-shadow(0 0 10px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 20px rgba(99, 102, 241, 0.2))',
-            transform: 'rotate(25deg)'
-          }} 
-        />
-        
-        {/* Sparkles niveau 2 - Support sparkles avec glow moyen */}
-        <Sparkles 
-          className="absolute top-[42%] left-[7%] text-purple-400/55 w-4 h-4" 
-          style={{ 
-            animation: 'floating 7s ease-in-out infinite',
-            animationDelay: '3.5s',
-            filter: 'drop-shadow(0 0 6px rgba(196, 181, 253, 0.8)) drop-shadow(0 0 12px rgba(196, 181, 253, 0.4))',
-            transform: 'rotate(45deg)'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-[35%] right-[12%] text-blue-400/50 w-5 h-5" 
-          style={{ 
-            animation: 'floating 9s ease-in-out infinite',
-            animationDelay: '1.2s',
-            filter: 'drop-shadow(0 0 7px rgba(147, 197, 253, 0.7)) drop-shadow(0 0 14px rgba(147, 197, 253, 0.3))',
-            transform: 'rotate(-30deg)'
-          }} 
-        />
-        
-        {/* Sparkles niveau 3 - Accent sparkles avec glow subtil */}
-        <Sparkles 
-          className="absolute top-[60%] left-[20%] text-purple-300/45 w-3 h-3" 
-          style={{ 
-            animation: 'floating 6s ease-in-out infinite',
-            animationDelay: '5s',
-            filter: 'drop-shadow(0 0 4px rgba(216, 180, 254, 0.6))',
-            transform: 'rotate(60deg)'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-[52%] right-[22%] text-indigo-300/40 w-4 h-4" 
-          style={{ 
-            animation: 'floating 8.5s ease-in-out infinite',
-            animationDelay: '4.2s',
-            filter: 'drop-shadow(0 0 5px rgba(165, 180, 252, 0.5))',
-            transform: 'rotate(-45deg)'
-          }} 
-        />
-        
-        {/* Sparkles niveau 4 - Background sparkles très subtils */}
-        <Sparkles 
-          className="absolute bottom-[25%] left-[15%] text-blue-200/35 w-3 h-3" 
-          style={{ 
-            animation: 'floating 5.5s ease-in-out infinite',
-            animationDelay: '2.8s',
-            filter: 'drop-shadow(0 0 3px rgba(191, 219, 254, 0.4))',
-            transform: 'rotate(15deg)'
-          }} 
-        />
-        <Sparkles 
-          className="absolute bottom-[32%] right-[18%] text-purple-200/30 w-3 h-3" 
-          style={{ 
-            animation: 'floating 11s ease-in-out infinite',
-            animationDelay: '6s',
-            filter: 'drop-shadow(0 0 2px rgba(233, 213, 255, 0.4))',
-            transform: 'rotate(-60deg)'
-          }} 
-        />
-        
-        {/* Sparkles niveau 5 - Micro sparkles pour texture */}
-        <Sparkles 
-          className="absolute top-[70%] left-[25%] text-indigo-100/25 w-2 h-2" 
-          style={{ 
-            animation: 'floating 4s ease-in-out infinite',
-            animationDelay: '3.8s',
-            transform: 'rotate(90deg)'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-[75%] right-[28%] text-purple-100/20 w-2 h-2" 
-          style={{ 
-            animation: 'floating 12s ease-in-out infinite',
-            animationDelay: '7.5s',
-            transform: 'rotate(-90deg)'
-          }} 
-        />
-      </div>
+      {/* Dégradé de fond amélioré */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-50/30 via-transparent to-indigo-50/30 pointer-events-none" />
       
-      <div className="max-w-4xl mx-auto text-center space-y-7">
-        {/* Google Drive Badge remplaçant le Premium Badge */}
-        <div className="flex justify-center mb-3">
-          <GoogleDriveBadge className="transform transition-transform duration-300" alwaysEnlarged={true} />
-        </div>
+      {/* Effet de lumière douce */}
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-purple-100/20 to-transparent rounded-full blur-3xl pointer-events-none" />
 
-        {/* Main title - Amélioré */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">
-          Logos des clubs de football
-        </h1>
-
-        {/* Subtitle - Amélioré */}
-        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-5">
-          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">⦗FRONT-CLOUD⦘~ Football.zip</span>
-        </h2>
-        
-        {/* Description - Amélioré */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
-          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
-        </p>
-
-        {/* Testimonial Badge - Déplacé ici après la description */}
-        <div className="flex justify-center pt-2">
+      {/* Contenu principal */}
+      <div className="relative z-10 container mx-auto px-4 pt-8 pb-16 h-full flex flex-col justify-center">
+        {/* Badge testimonial */}
+        <div className="flex justify-center mb-6">
           <HeroTestimonialBadge />
         </div>
 
-        {/* Trust badges - Animation optimisée et améliorée */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <CheckCircle2 className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
+        {/* Titre principal */}
+        <div className="text-center space-y-6 mb-12">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+            <span className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+              +8600 Logos
+            </span>
+            <br />
+            <span className="text-gray-800">de Football</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            La collection la plus complète de logos de football au monde. 
+            <span className="font-semibold text-indigo-600"> Tous les clubs, toutes les compétitions, parfaitement organisés.</span>
+          </p>
+        </div>
+
+        {/* Points clés */}
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm border border-purple-100">
+            <Shield className="w-5 h-5 text-purple-600" />
+            <span className="text-gray-700 font-medium">Qualité PNG HD</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Lock className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm border border-indigo-100">
+            <Star className="w-5 h-5 text-indigo-600" />
+            <span className="text-gray-700 font-medium">Organisé par pays</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Download className="w-5 w-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm border border-blue-100">
+            <Download className="w-5 h-5 text-blue-600" />
+            <span className="text-gray-700 font-medium">Téléchargement instantané</span>
           </div>
         </div>
 
-        {/* CTA buttons - Spacing amélioré */}
-        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
-          <Dialog>
-            <DialogTrigger asChild>
-              <button 
-                className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                <Folder size={24} className="mr-2 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
-              </button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-              <DialogHeader className="pb-0">
-                <div className="flex flex-col mb-0">
-                  <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
-                    Descriptif du ZIP
-                  </DialogTitle>
-                  
-                  <div className="relative mt-1 mb-1">
-                    <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
-                      ⦗FRONT-CLOUD⦘~ Football.zip
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="flex justify-between items-center mb-6">
-                  <div className="mt-4">
-                    <GoogleDriveBadge />
-                  </div>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Button 
-                        onClick={() => {
-                          const returnUrl = `${window.location.origin}/payment-success`;
-                          window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-                        }}
-                        variant="outline" 
-                        size="sm" 
-                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4"
-                      >
-                        <Download className="h-3.5 w-3.5" />
-                        <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
-                      <p className="text-xs">Accès immédiat après paiement</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </div>
-                
-                <DialogDescription className="text-left pt-0 mt-0">
-                  <PackDescription />
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
+        {/* Boutons d'action */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button 
+            onClick={onScrollToPayment}
+            size="lg" 
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            Obtenir la Collection Complète
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
           
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="default"
-                size="lg"
-                onClick={() => {
-                  const returnUrl = `${window.location.origin}/payment-success`;
-                  window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-                }}
-                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[19px] gap-5 hover:-translate-y-0.5 px-12 py-5 h-auto relative group overflow-hidden"
-              >
-                {/* Outer glow animation - Améliorée */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-                     style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="border-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+          >
+            Voir un Aperçu
+          </Button>
+        </div>
 
-                <div className="relative">
-                  <ShoppingCart 
-                    style={{
-                      color: "#FFE082",
-                      filter: 'drop-shadow(0 0 4px rgba(255, 224, 130, 0.8))',
-                      animation: 'cartMove 1.5s ease-in-out infinite',
-                      width: '22px',
-                      height: '22px',
-                      transform: 'scale(1.1)',
-                      transition: 'transform 0.3s ease'
-                    }}
-                  />
-                </div>
-                
-                <span className="relative z-10 font-bold tracking-wide">
-                  Achat rapide ~ 9€
-                </span>
-                
-                {/* Shine effect - Amélioré */}
-                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="top" align="center" sideOffset={10} className="bg-white border border-gray-200 shadow-md p-4 max-w-[400px]">
-              <div className="space-y-3">
-                {/* Titre principal plus grand */}
-                <p className="text-lg font-bold text-gray-800 leading-tight">Télécharger le fichier ZIP complet</p>
-                
-                {/* Séparateur visuel */}
-                <div className="h-px bg-gray-200"></div>
-                
-                {/* Étapes avec numérotation simple */}
-                <div className="space-y-2.5">
-                  <div className="flex items-start gap-3">
-                    <span className="text-sm font-bold text-gray-500 mt-0.5">1</span>
-                    <span className="text-sm text-gray-600 leading-relaxed">Paiement sécurisé via SumUp</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-sm font-bold text-gray-500 mt-0.5">2</span>
-                    <span className="text-sm text-gray-600 leading-relaxed">Accès en page d'après-paiement</span>
-                  </div>
-                </div>
-                
-                {/* Badges de confiance plus espacés */}
-                <div className="flex flex-wrap gap-2 pt-1">
-                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">⏱️ 2 minutes seulement</span>
-                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">✓ Fiable à 100%</span>
-                </div>
-              </div>
-            </TooltipContent>
-          </Tooltip>
+        {/* Statistiques */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">8600+</div>
+            <div className="text-gray-600 font-medium">Logos HD</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">200+</div>
+            <div className="text-gray-600 font-medium">Pays</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50+</div>
+            <div className="text-gray-600 font-medium">Compétitions</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">100%</div>
+            <div className="text-gray-600 font-medium">Organisé</div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
 export default HeroSection;
-

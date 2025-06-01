@@ -61,14 +61,19 @@ const BlogHeader = () => {
     });
   }, [carouselApi]);
 
-  // Effet pour la transition automatique très lente
+  // Effet pour la transition automatique très lente avec retour au début
   React.useEffect(() => {
     if (!carouselApi) {
       return;
     }
 
     const autoPlay = setInterval(() => {
-      carouselApi.scrollNext();
+      // Si on est à la dernière image, revenir au début
+      if (carouselApi.selectedScrollSnap() === carouselApi.scrollSnapList().length - 1) {
+        carouselApi.scrollTo(0);
+      } else {
+        carouselApi.scrollNext();
+      }
     }, 8000); // 8 secondes entre chaque transition - très lent
 
     return () => clearInterval(autoPlay);

@@ -113,9 +113,9 @@ export default {
 				},
 				'floating': {
           '0%': { transform: 'translateY(0px) rotate(0deg)' },
-          '25%': { transform: 'translateY(-15px) rotate(2deg)' },
-          '50%': { transform: 'translateY(-30px) rotate(0deg)' },
-          '75%': { transform: 'translateY(-15px) rotate(-2deg)' },
+          '25%': { transform: 'translateY(-25px) rotate(3deg)' },
+          '50%': { transform: 'translateY(-50px) rotate(0deg)' },
+          '75%': { transform: 'translateY(-25px) rotate(-3deg)' },
           '100%': { transform: 'translateY(0px) rotate(0deg)' }
         }
 			},

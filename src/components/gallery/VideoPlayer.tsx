@@ -22,34 +22,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   const [volume, setVolume] = useState(0.8);
   const [error, setError] = useState<string | null>(null);
 
-  // Auto-démarrage de la vidéo à l'ouverture de la modal
-  useEffect(() => {
-    if (videoRef.current) {
-      const video = videoRef.current;
-      
-      // Tentative de lecture automatique
-      const playVideo = async () => {
-        try {
-          setError(null);
-          await video.play();
-          setIsPlaying(true);
-          console.log('Vidéo démarrée automatiquement');
-        } catch (err) {
-          console.warn('Lecture automatique échouée:', err);
-          setIsPlaying(false);
-          // Ne pas considérer cela comme une erreur, juste attendre une interaction utilisateur
-        }
-      };
-
-      // Attendre que les métadonnées soient chargées
-      video.addEventListener('loadedmetadata', playVideo);
-      
-      return () => {
-        video.removeEventListener('loadedmetadata', playVideo);
-      };
-    }
-  }, [videoUrl]);
-
   // Désactiver le clic droit sur l'ensemble de la fenêtre modale
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => {

@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import {
   DialogContent,
   DialogHeader,
@@ -10,138 +10,13 @@ import {
 import { VideoPlayerProps } from "@/types/gallery";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
-import { Play, Pause, Volume2, VolumeX, Loader, Maximize } from "lucide-react";
-import { Slider } from "../ui/slider";
 
 const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(0.8);
   const [error, setError] = useState<string | null>(null);
 
-  // Gérer le chargement et les erreurs de la vidéo
-  useEffect(() => {
-    if (videoRef.current) {
-      const video = videoRef.current;
-      
-      const handleLoadedData = () => {
-        setLoading(false);
-        setError(null);
-        console.log('Vidéo chargée avec succès');
-      };
-      
-      const handleCanPlay = () => {
-        setLoading(false);
-        setError(null);
-      };
-      
-      const handleError = (e: Event) => {
-        console.error('Erreur de chargement vidéo:', e);
-        setError('Erreur lors du chargement de la vidéo');
-        setLoading(false);
-      };
-
-      const handleLoadStart = () => {
-        setLoading(true);
-        setError(null);
-      };
-      
-      video.addEventListener('loadeddata', handleLoadedData);
-      video.addEventListener('canplay', handleCanPlay);
-      video.addEventListener('error', handleError);
-      video.addEventListener('loadstart', handleLoadStart);
-      
-      return () => {
-        video.removeEventListener('loadeddata', handleLoadedData);
-        video.removeEventListener('canplay', handleCanPlay);
-        video.removeEventListener('error', handleError);
-        video.removeEventListener('loadstart', handleLoadStart);
-      };
-    }
-  }, []);
-
-  // Mettre à jour la progression de la vidéo
-  useEffect(() => {
-    if (videoRef.current) {
-      const video = videoRef.current;
-      
-      const handleTimeUpdate = () => {
-        if (video.duration) {
-          const progress = (video.currentTime / video.duration) * 100;
-          setProgress(progress);
-        }
-      };
-
-      const handleEnded = () => {
-        setIsPlaying(false);
-        setProgress(0);
-        if (video) video.currentTime = 0;
-      };
-      
-      video.addEventListener('timeupdate', handleTimeUpdate);
-      video.addEventListener('ended', handleEnded);
-      
-      return () => {
-        video.removeEventListener('timeupdate', handleTimeUpdate);
-        video.removeEventListener('ended', handleEnded);
-      };
-    }
-  }, []);
-
-  const togglePlay = async () => {
-    if (videoRef.current) {
-      try {
-        if (isPlaying) {
-          videoRef.current.pause();
-          setIsPlaying(false);
-        } else {
-          await videoRef.current.play();
-          setIsPlaying(true);
-        }
-        setError(null);
-      } catch (error) {
-        console.error("Erreur lors de la lecture:", error);
-        setError('Impossible de lire la vidéo');
-      }
-    }
-  };
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
-
-  const handleVolumeChange = (value: number[]) => {
-    const newVolume = value[0];
-    setVolume(newVolume);
-    if (videoRef.current) {
-      videoRef.current.volume = newVolume;
-      setIsMuted(newVolume === 0);
-    }
-  };
-
-  const handleProgressChange = (value: number[]) => {
-    const newProgress = value[0];
-    if (videoRef.current && videoRef.current.duration) {
-      const newTime = (videoRef.current.duration / 100) * newProgress;
-      videoRef.current.currentTime = newTime;
-      setProgress(newProgress);
-    }
-  };
-
-  const enterFullscreen = () => {
-    if (videoRef.current) {
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen().catch(err => {
-          console.error(`Erreur lors du passage en plein écran: ${err.message}`);
-        });
-      }
-    }
+  const handleError = () => {
+    setError('Erreur lors du chargement de la vidéo');
   };
 
   // Déterminer la description appropriée en fonction du titre
@@ -181,18 +56,9 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
         </DialogHeader>
         
         <div className="w-full aspect-square max-w-[540px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative">
-          {loading && (
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-100/30 backdrop-blur-[1px] z-10">
-              <Loader className="h-8 w-8 text-gray-600 animate-spin" />
-            </div>
-          )}
-
           {error && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100/90 z-10">
               <p className="text-red-600 text-sm mb-4">{error}</p>
-              <Button onClick={togglePlay} variant="outline" size="sm">
-                Réessayer
-              </Button>
             </div>
           )}
           
@@ -200,74 +66,12 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             ref={videoRef}
             src={videoUrl}
             className="w-full h-full object-contain"
+            controls
             playsInline
             title={title}
-            controls={false}
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
+            onError={handleError}
             preload="metadata"
           />
-          
-          {/* Contrôles personnalisés */}
-          <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-gray-800/40 to-transparent backdrop-blur-[1px] flex flex-col gap-2">
-            <Slider 
-              value={[progress]} 
-              max={100} 
-              step={0.1}
-              onValueChange={handleProgressChange}
-              className="cursor-pointer h-1"
-            />
-            
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  onClick={togglePlay}
-                  className="h-7 w-7 text-white hover:bg-white/20"
-                >
-                  {isPlaying ? 
-                    <Pause className="h-4 w-4" /> : 
-                    <Play className="h-4 w-4" />
-                  }
-                </Button>
-                
-                <div className="flex items-center">
-                  <Button 
-                    variant="ghost" 
-                    size="icon"
-                    onClick={toggleMute}
-                    className="h-7 w-7 text-white hover:bg-white/20"
-                  >
-                    {isMuted ? 
-                      <VolumeX className="h-4 w-4" /> : 
-                      <Volume2 className="h-4 w-4" />
-                    }
-                  </Button>
-                  
-                  <div className="w-14 flex items-center">
-                    <Slider
-                      value={[isMuted ? 0 : volume]}
-                      min={0}
-                      max={1}
-                      step={0.01}
-                      onValueChange={handleVolumeChange}
-                      className="cursor-pointer h-1"
-                    />
-                  </div>
-                </div>
-              </div>
-              
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={enterFullscreen}
-                className="h-7 w-7 text-white hover:bg-white/20"
-              >
-                <Maximize className="h-4 w-4" />
-              </Button>
-            </div>
-          </div>
         </div>
 
         <div className="p-4 px-4 bg-gradient-to-t from-gray-100/90 via-gray-50/50 to-transparent">

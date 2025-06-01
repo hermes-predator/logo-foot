@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -7,6 +5,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
 import { Link } from 'react-router-dom';
 import JudgeMeBadge from './JudgeMeBadge';
+import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -98,21 +97,12 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Badge Google Drive avec Tooltip Radix UI - styles de survol supprimés */}
+            {/* Badge Google Drive avec Tooltip - utilise le composant GoogleDriveBadge */}
             <div className="mb-4 flex justify-start">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md cursor-pointer">
-                    <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
-                    <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
-                    <img 
-                      src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
-                      alt="Google Drive" 
-                      className="h-6 w-auto object-contain flex-shrink-0"
-                      loading="lazy"
-                      width="60"
-                      height="24"
-                    />
+                  <div>
+                    <GoogleDriveBadge cursorHelp={true} />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-3 rounded-lg shadow-lg max-w-xs">
@@ -232,4 +222,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

@@ -123,7 +123,7 @@ const BlogHeader = () => {
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
-            <div className="mt-14">
+            <div className="mt-16">
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link to="/" className="relative overflow-hidden inline-flex items-center gap-4 px-8 py-5 text-lg font-normal text-white whitespace-nowrap transition-all duration-200 group shadow-lg hover:shadow-xl" style={{

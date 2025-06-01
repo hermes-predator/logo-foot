@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -74,7 +75,7 @@ const BlogHeader = () => {
       } else {
         carouselApi.scrollNext();
       }
-    }, 8000); // 8 secondes entre chaque transition - très lent
+    }, 7000); // 7 secondes entre chaque transition
 
     return () => clearInterval(autoPlay);
   }, [carouselApi]);

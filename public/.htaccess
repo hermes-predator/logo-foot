@@ -9,6 +9,14 @@
   RewriteRule . /index.html [L]
 </IfModule>
 
+# Force le bon type MIME pour les fichiers JavaScript
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/javascript .mjs
+  AddType text/css .css
+  AddType image/svg+xml .svg
+</IfModule>
+
 # Protection contre le hotlinking des images et vidéos
 <IfModule mod_rewrite.c>
   RewriteEngine on
@@ -40,7 +48,7 @@
   Header always set X-Content-Type-Options "nosniff"
   
   # Politique de sécurité du contenu
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self'"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://cdn.gpteng.co; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'self'"
   
   # Référer-Policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"

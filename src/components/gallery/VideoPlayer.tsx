@@ -22,31 +22,6 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   const [volume, setVolume] = useState(0.8);
   const [error, setError] = useState<string | null>(null);
 
-  // Désactiver le clic droit sur l'ensemble de la fenêtre modale
-  useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
-      e.preventDefault();
-      return false;
-    };
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey && (e.key === 'p' || e.key === 's')) || 
-          (e.key === 'PrintScreen') || 
-          (e.key === 'F12')) {
-        e.preventDefault();
-        return false;
-      }
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
   // Gérer le chargement et les erreurs de la vidéo
   useEffect(() => {
     if (videoRef.current) {
@@ -54,28 +29,36 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       
       const handleLoadedData = () => {
         setLoading(false);
+        setError(null);
         console.log('Vidéo chargée avec succès');
       };
       
-      const handleWaiting = () => setLoading(true);
-      const handlePlaying = () => setLoading(false);
+      const handleCanPlay = () => {
+        setLoading(false);
+        setError(null);
+      };
       
       const handleError = (e: Event) => {
         console.error('Erreur de chargement vidéo:', e);
         setError('Erreur lors du chargement de la vidéo');
         setLoading(false);
       };
+
+      const handleLoadStart = () => {
+        setLoading(true);
+        setError(null);
+      };
       
       video.addEventListener('loadeddata', handleLoadedData);
-      video.addEventListener('waiting', handleWaiting);
-      video.addEventListener('playing', handlePlaying);
+      video.addEventListener('canplay', handleCanPlay);
       video.addEventListener('error', handleError);
+      video.addEventListener('loadstart', handleLoadStart);
       
       return () => {
         video.removeEventListener('loadeddata', handleLoadedData);
-        video.removeEventListener('waiting', handleWaiting);
-        video.removeEventListener('playing', handlePlaying);
+        video.removeEventListener('canplay', handleCanPlay);
         video.removeEventListener('error', handleError);
+        video.removeEventListener('loadstart', handleLoadStart);
       };
     }
   }, []);
@@ -86,8 +69,10 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       const video = videoRef.current;
       
       const handleTimeUpdate = () => {
-        const progress = (video.currentTime / video.duration) * 100;
-        setProgress(progress);
+        if (video.duration) {
+          const progress = (video.currentTime / video.duration) * 100;
+          setProgress(progress);
+        }
       };
 
       const handleEnded = () => {
@@ -142,7 +127,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
 
   const handleProgressChange = (value: number[]) => {
     const newProgress = value[0];
-    if (videoRef.current) {
+    if (videoRef.current && videoRef.current.duration) {
       const newTime = (videoRef.current.duration / 100) * newProgress;
       videoRef.current.currentTime = newTime;
       setProgress(newProgress);
@@ -195,7 +180,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           </DialogDescription>
         </DialogHeader>
         
-        <div className="w-full aspect-square max-w-[540px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative protected-content">
+        <div className="w-full aspect-square max-w-[540px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative">
           {loading && (
             <div className="absolute inset-0 flex items-center justify-center bg-gray-100/30 backdrop-blur-[1px] z-10">
               <Loader className="h-8 w-8 text-gray-600 animate-spin" />
@@ -217,9 +202,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             className="w-full h-full object-contain"
             playsInline
             title={title}
-            onContextMenu={(e) => e.preventDefault()}
-            controlsList="nodownload nofullscreen"
-            disablePictureInPicture
+            controls={false}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
             preload="metadata"

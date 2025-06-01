@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -33,47 +34,72 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
 
-      {/* Sparkles flottants - repositionnés en périphérie avec mouvement vertical */}
+      {/* Sparkles brandés - disposition harmonieuse */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Sparkles principales - gradient purple-blue */}
         <Sparkles 
-          className="absolute top-16 left-4 text-purple-300/40 w-4 h-4" 
+          className="absolute top-20 left-[8%] text-purple-400/60 w-4 h-4 drop-shadow-sm" 
           style={{ 
-            animation: 'floating 6s ease-in-out infinite'
+            animation: 'floating 7s ease-in-out infinite',
+            filter: 'drop-shadow(0 0 4px rgba(168, 85, 247, 0.4))'
           }} 
         />
         <Sparkles 
-          className="absolute top-20 right-8 text-blue-300/40 w-3 h-3" 
+          className="absolute top-32 right-[12%] text-indigo-400/50 w-5 h-5 drop-shadow-sm" 
+          style={{ 
+            animation: 'floating 9s ease-in-out infinite',
+            animationDelay: '1.5s',
+            filter: 'drop-shadow(0 0 6px rgba(99, 102, 241, 0.4))'
+          }} 
+        />
+        
+        {/* Sparkles secondaires - accent colors */}
+        <Sparkles 
+          className="absolute top-[45%] left-[5%] text-purple-300/40 w-3 h-3" 
+          style={{ 
+            animation: 'floating 6s ease-in-out infinite',
+            animationDelay: '3s',
+            filter: 'drop-shadow(0 0 3px rgba(196, 181, 253, 0.6))'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[38%] right-[8%] text-blue-300/45 w-6 h-6 drop-shadow-sm" 
           style={{ 
             animation: 'floating 8s ease-in-out infinite',
+            animationDelay: '0.8s',
+            filter: 'drop-shadow(0 0 5px rgba(147, 197, 253, 0.5))'
+          }} 
+        />
+        
+        {/* Sparkles d'accent - plus subtiles */}
+        <Sparkles 
+          className="absolute bottom-[35%] left-[15%] text-indigo-200/35 w-3 h-3" 
+          style={{ 
+            animation: 'floating 5s ease-in-out infinite',
+            animationDelay: '2.2s'
+          }} 
+        />
+        <Sparkles 
+          className="absolute bottom-[28%] right-[18%] text-purple-200/40 w-4 h-4" 
+          style={{ 
+            animation: 'floating 10s ease-in-out infinite',
+            animationDelay: '4s'
+          }} 
+        />
+        
+        {/* Sparkles finales - effet de profondeur */}
+        <Sparkles 
+          className="absolute top-[65%] left-[25%] text-blue-400/30 w-3 h-3" 
+          style={{ 
+            animation: 'floating 7.5s ease-in-out infinite',
             animationDelay: '1s'
           }} 
         />
         <Sparkles 
-          className="absolute top-96 left-12 text-purple-400/30 w-5 h-5" 
+          className="absolute top-[58%] right-[25%] text-purple-300/35 w-5 h-5" 
           style={{ 
-            animation: 'floating 7s ease-in-out infinite',
-            animationDelay: '2s'
-          }} 
-        />
-        <Sparkles 
-          className="absolute top-80 right-6 text-blue-400/30 w-4 h-4" 
-          style={{ 
-            animation: 'floating 9s ease-in-out infinite',
-            animationDelay: '0.5s'
-          }} 
-        />
-        <Sparkles 
-          className="absolute bottom-24 left-6 text-purple-300/40 w-3 h-3" 
-          style={{ 
-            animation: 'floating 5s ease-in-out infinite',
-            animationDelay: '1.5s'
-          }} 
-        />
-        <Sparkles 
-          className="absolute bottom-32 right-10 text-blue-300/35 w-4 h-4" 
-          style={{ 
-            animation: 'floating 10s ease-in-out infinite',
-            animationDelay: '2.5s'
+            animation: 'floating 6.5s ease-in-out infinite',
+            animationDelay: '2.8s'
           }} 
         />
       </div>

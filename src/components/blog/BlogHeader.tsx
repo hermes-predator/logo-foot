@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -173,7 +174,7 @@ const BlogHeader = () => {
       {/* Nouvelle boîte jaune ambrée pour l'aperçu et le carrousel - sans bordures */}
       <div className="relative bg-gradient-to-r from-yellow-50 to-amber-50 p-8 max-w-5xl mx-auto before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:animate-shine overflow-hidden z-10 rounded-b-lg">
         {/* Titre de l'aperçu */}
-        <h3 className="font-semibold text-orange-600 mb-6 text-center text-sm">
+        <h3 className="font-semibold text-black mb-6 text-center text-sm">
           Aperçu de quelques collections de ⦗FRONT-CLOUD⦘~ Football.zip
         </h3>
         

@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { AlertTriangle, Info, Check } from "lucide-react";
+import { AlertTriangle, Info, Check, Folder } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const DisclaimerDialog = () => {
@@ -23,7 +23,7 @@ const DisclaimerDialog = () => {
           <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
               <div className="bg-transparent p-3 rounded-md border border-gray-200 shadow-sm flex-shrink-0 group-hover:bg-blue-100/30 transition-colors">
-                <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0" />
+                <Info className="w-6 h-6 text-blue-600 flex-shrink-0" />
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p>
@@ -36,7 +36,7 @@ const DisclaimerDialog = () => {
           <div className="mt-4 p-5 border border-gray-200/50 bg-gradient-to-br from-gray-50 to-slate-50/50 rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
               <div className="bg-transparent p-3 rounded-md border border-gray-200 shadow-sm flex-shrink-0 group-hover:bg-blue-100/30 transition-colors">
-                <AlertTriangle className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                <Folder className="w-6 h-6 text-blue-600 flex-shrink-0" />
               </div>
               <div className="text-sm leading-relaxed text-gray-800 space-y-6">
                 <p>

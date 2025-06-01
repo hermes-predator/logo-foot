@@ -64,7 +64,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
           <video
             ref={videoRef}
             src={videoUrl}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain pointer-events-auto"
             controls
             playsInline
             disablePictureInPicture
@@ -72,6 +72,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
             title={title}
             onError={handleError}
             preload="metadata"
+            style={{ pointerEvents: 'auto' }}
           />
         </div>
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,38 +33,49 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
 
-      {/* Sparkles flottants - repositionnés en périphérie avec mouvement */}
+      {/* Sparkles flottants - repositionnés en périphérie avec mouvement vertical */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <Sparkles className="absolute top-16 left-4 text-purple-300/40 w-4 h-4 animate-pulse" style={{ 
-          animationDelay: '0s', 
-          animationDuration: '3s',
-          animation: 'pulse 3s ease-in-out infinite, floating 6s ease-in-out infinite'
-        }} />
-        <Sparkles className="absolute top-20 right-8 text-blue-300/40 w-3 h-3 animate-pulse" style={{ 
-          animationDelay: '1s', 
-          animationDuration: '4s',
-          animation: 'pulse 4s ease-in-out infinite, floating 8s ease-in-out infinite reverse'
-        }} />
-        <Sparkles className="absolute top-96 left-12 text-purple-400/30 w-5 h-5 animate-pulse" style={{ 
-          animationDelay: '2s', 
-          animationDuration: '3.5s',
-          animation: 'pulse 3.5s ease-in-out infinite, floating 7s ease-in-out infinite'
-        }} />
-        <Sparkles className="absolute top-80 right-6 text-blue-400/30 w-4 h-4 animate-pulse" style={{ 
-          animationDelay: '0.5s', 
-          animationDuration: '4.5s',
-          animation: 'pulse 4.5s ease-in-out infinite, floating 9s ease-in-out infinite reverse'
-        }} />
-        <Sparkles className="absolute bottom-24 left-6 text-purple-300/40 w-3 h-3 animate-pulse" style={{ 
-          animationDelay: '1.5s', 
-          animationDuration: '3.2s',
-          animation: 'pulse 3.2s ease-in-out infinite, floating 5s ease-in-out infinite'
-        }} />
-        <Sparkles className="absolute bottom-32 right-10 text-blue-300/35 w-4 h-4 animate-pulse" style={{ 
-          animationDelay: '2.5s', 
-          animationDuration: '4.2s',
-          animation: 'pulse 4.2s ease-in-out infinite, floating 10s ease-in-out infinite reverse'
-        }} />
+        <Sparkles 
+          className="absolute top-16 left-4 text-purple-300/40 w-4 h-4" 
+          style={{ 
+            animation: 'floating 6s ease-in-out infinite'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-20 right-8 text-blue-300/40 w-3 h-3" 
+          style={{ 
+            animation: 'floating 8s ease-in-out infinite',
+            animationDelay: '1s'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-96 left-12 text-purple-400/30 w-5 h-5" 
+          style={{ 
+            animation: 'floating 7s ease-in-out infinite',
+            animationDelay: '2s'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-80 right-6 text-blue-400/30 w-4 h-4" 
+          style={{ 
+            animation: 'floating 9s ease-in-out infinite',
+            animationDelay: '0.5s'
+          }} 
+        />
+        <Sparkles 
+          className="absolute bottom-24 left-6 text-purple-300/40 w-3 h-3" 
+          style={{ 
+            animation: 'floating 5s ease-in-out infinite',
+            animationDelay: '1.5s'
+          }} 
+        />
+        <Sparkles 
+          className="absolute bottom-32 right-10 text-blue-300/35 w-4 h-4" 
+          style={{ 
+            animation: 'floating 10s ease-in-out infinite',
+            animationDelay: '2.5s'
+          }} 
+        />
       </div>
       
       <div className="max-w-4xl mx-auto text-center space-y-7">

@@ -1,5 +1,4 @@
 
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -74,4 +73,3 @@
   RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
   RewriteRule .* index.php [F,L]
 </IfModule>
-

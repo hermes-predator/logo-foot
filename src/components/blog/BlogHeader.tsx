@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
 import { Link } from 'react-router-dom';
-import ReassuranceBadge from './ReassuranceBadge';
+import JudgeMeBadge from './JudgeMeBadge';
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -123,8 +123,8 @@ const BlogHeader = () => {
           </div>
           
           <div className="mr-5 flex flex-col items-center gap-3">
-            {/* Nouveau composant de réassurance */}
-            <ReassuranceBadge />
+            {/* Micro composant Judge.me */}
+            <JudgeMeBadge />
             
             <Tooltip>
               <TooltipTrigger asChild>

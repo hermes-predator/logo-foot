@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Star } from 'lucide-react';
 
@@ -7,7 +8,7 @@ const JudgeMeBadge = () => {
       <img 
         src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
         alt="Judge.me" 
-        className="h-7 w-auto opacity-80" 
+        className="h-6 w-auto opacity-80" 
         loading="lazy"
       />
       <div className="flex items-center gap-1">

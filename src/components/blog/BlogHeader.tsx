@@ -206,8 +206,8 @@ const BlogHeader = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
                   <Link to="/" className="block">
-                    <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-orange-50 to-amber-50 hover:shadow-md transition-shadow cursor-pointer">
-                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-contain p-4 rounded-xl" loading="lazy" />
+                    <div className="relative aspect-square overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
+                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-cover rounded-xl" loading="lazy" />
                     </div>
                   </Link>
                 </CarouselItem>)}

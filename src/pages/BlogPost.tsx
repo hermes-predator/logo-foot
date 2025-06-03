@@ -154,7 +154,7 @@ const BlogPost: React.FC = () => {
                              prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:p-6 prose-pre:rounded-lg prose-pre:overflow-x-auto
                              prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:underline prose-a:decoration-2 prose-a:underline-offset-2
                              prose-img:rounded-lg prose-img:shadow-md
-                             [&>*:first-child]:first-letter:text-5xl [&>*:first-child]:first-letter:font-bold [&>*:first-child]:first-letter:text-gray-900 [&>*:first-child]:first-letter:float-left [&>*:first-child]:first-letter:mr-3 [&>*:first-child]:first-letter:mt-1">
+                             ">
                 <ReactMarkdown>{post.content}</ReactMarkdown>
               </div>
             </div>

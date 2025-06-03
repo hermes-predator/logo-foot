@@ -55,7 +55,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   }
   
   return (
-    <div className="mt-8 pt-8 border-t border-gray-200 mb-16">
+    <div className="mt-12 pt-6 border-t border-gray-200 mb-16">
       <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

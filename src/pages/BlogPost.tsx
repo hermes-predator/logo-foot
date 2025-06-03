@@ -161,7 +161,7 @@ const BlogPost: React.FC = () => {
           </article>
 
           {/* Articles similaires */}
-          <div className="mt-24">
+          <div className="mt-16">
             <RelatedPosts 
               post={post}
               allPosts={blogPosts}

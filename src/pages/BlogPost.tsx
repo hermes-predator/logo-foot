@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -171,7 +169,7 @@ const BlogPost: React.FC = () => {
           </article>
 
           {/* Articles similaires */}
-          <div className="mt-16">
+          <div className="mt-24">
             <RelatedPosts 
               post={post}
               allPosts={blogPosts}
@@ -188,4 +186,3 @@ const BlogPost: React.FC = () => {
 };
 
 export default BlogPost;
-

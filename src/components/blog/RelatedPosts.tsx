@@ -93,7 +93,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
         ))}
       </div>
       
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 mb-24">
         {prevPost && (
           <Link to={`/blog/${prevPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
             <div className="mt-1">

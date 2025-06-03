@@ -124,7 +124,19 @@ const BlogPost: React.FC = () => {
 
             {/* Contenu de l'article */}
             <div className="px-6 py-8">
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg prose-gray max-w-none 
+                             prose-headings:text-gray-900 prose-headings:font-bold
+                             prose-h1:text-3xl prose-h1:mb-6 prose-h1:mt-8
+                             prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-6
+                             prose-h3:text-xl prose-h3:mb-3 prose-h3:mt-5
+                             prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
+                             prose-strong:text-gray-900 prose-strong:font-semibold
+                             prose-em:text-gray-800
+                             prose-ul:my-4 prose-ol:my-4
+                             prose-li:text-gray-700 prose-li:mb-2
+                             prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-blue-50 prose-blockquote:p-4 prose-blockquote:my-6
+                             prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+                             prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:underline">
                 <ReactMarkdown>{post.content}</ReactMarkdown>
               </div>
             </div>

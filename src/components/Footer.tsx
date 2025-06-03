@@ -20,7 +20,7 @@ const Footer = () => {
               <MessageCircle className="w-4 h-4" />
               Contactez-nous
             </DialogTrigger>
-            <DialogContent className="max-w-md">
+            <DialogContent className="max-w-2xl w-full">
               <DialogHeader>
                 <DialogTitle className="text-xl font-bold text-gray-800">Support Client</DialogTitle>
               </DialogHeader>

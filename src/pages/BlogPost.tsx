@@ -111,7 +111,7 @@ const BlogPost: React.FC = () => {
             {post.galleryImageId && (
               <div className="px-6 py-4">
                 <BlogImage 
-                  imageId={post.galleryImageId} 
+                  galleryImageId={post.galleryImageId} 
                   alt={post.title}
                   className="w-full h-64 md:h-96 object-cover rounded-lg"
                 />
@@ -129,9 +129,9 @@ const BlogPost: React.FC = () => {
           {/* Articles similaires */}
           <div className="mt-12">
             <RelatedPosts 
-              currentPost={post}
-              posts={blogPosts}
-              maxRelated={3}
+              post={post}
+              allPosts={blogPosts}
+              maxPosts={3}
             />
           </div>
         </div>

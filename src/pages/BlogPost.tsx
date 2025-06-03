@@ -10,6 +10,7 @@ import BlogImage from '../components/blog/BlogImage';
 import RelatedPosts from '../components/blog/RelatedPosts';
 import BackToButton from '../components/blog/BackToButton';
 import BlogCategorySelector from '../components/blog/BlogCategorySelector';
+import BlogHeader from '../components/blog/BlogHeader';
 import { useBlogCategories } from '../hooks/useBlogCategories';
 import { formatDate } from '../utils/dateUtils';
 import ReactMarkdown from 'react-markdown';
@@ -67,6 +68,9 @@ const BlogPost: React.FC = () => {
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
       </Helmet>
+
+      {/* BlogHeader */}
+      <BlogHeader />
 
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-8">

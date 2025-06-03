@@ -156,15 +156,7 @@ const BlogPost: React.FC = () => {
               </div>
 
               {/* Séparateur de fin d'article */}
-              <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="flex items-center justify-center">
-                  <div className="flex space-x-2">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-200"></div>
-                    <div className="w-2 h-2 bg-blue-300 rounded-full animate-pulse delay-400"></div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </article>
 

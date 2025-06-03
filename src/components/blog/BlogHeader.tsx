@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -137,7 +136,7 @@ const BlogHeader = () => {
                   </div>
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-3 rounded-lg shadow-lg max-w-xs">
-                  <p className="text-sm">Utilisation immédiate : Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.</p>
+                  <p className="text-sm"><strong>Utilisation immédiate</strong> : Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.</p>
                 </TooltipContent>
               </Tooltip>
             </div>

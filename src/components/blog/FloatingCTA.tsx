@@ -8,21 +8,42 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState(false);
   const isMobile = useIsMobile();
   const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
   const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 640;
   
-  // Add a smooth entrance animation and delay the appearance
+  // Détection du scroll pour savoir si on est en bas de la page
   useEffect(() => {
-    // Initial delay before showing the banner
-    const showBannerTimer = setTimeout(() => {
-      setVisible(true);
-    }, 1500);
-    
-    return () => {
-      clearTimeout(showBannerTimer);
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      
+      // Considérer qu'on est "en bas" quand il reste moins de 200px à scroller
+      const isNearBottom = scrollTop + windowHeight >= docHeight - 200;
+      setIsAtBottom(isNearBottom);
     };
+
+    window.addEventListener('scroll', handleScroll);
+    // Vérifier immédiatement au cas où la page est déjà en bas
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Show banner with delay only when at bottom
+  useEffect(() => {
+    if (isAtBottom && !dismissed) {
+      const showBannerTimer = setTimeout(() => {
+        setVisible(true);
+      }, 500); // Délai réduit car on est déjà en bas
+      
+      return () => clearTimeout(showBannerTimer);
+    } else {
+      setVisible(false);
+    }
+  }, [isAtBottom, dismissed]);
 
   const handleDismiss = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -30,7 +51,7 @@ const FloatingCTA = () => {
     setDismissed(true);
   };
 
-  if (!visible || dismissed) return null;
+  if (!visible || dismissed || !isAtBottom) return null;
 
   return (
     <div 

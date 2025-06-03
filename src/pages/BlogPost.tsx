@@ -86,14 +86,16 @@ const BlogPost: React.FC = () => {
           <article className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
             {/* Image principale si disponible */}
             {post.galleryImageId && (
-              <div className="relative">
-                <BlogImage 
-                  galleryImageId={post.galleryImageId} 
-                  alt={post.title}
-                  className="w-full object-cover"
-                  priority={true}
-                  aspectRatio={1}
-                />
+              <div className="relative flex justify-center p-6">
+                <div className="w-full max-w-md">
+                  <BlogImage 
+                    galleryImageId={post.galleryImageId} 
+                    alt={post.title}
+                    className="w-full object-cover"
+                    priority={true}
+                    aspectRatio={1}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             )}

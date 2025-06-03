@@ -90,7 +90,7 @@ const BlogPost: React.FC = () => {
                 <BlogImage 
                   galleryImageId={post.galleryImageId} 
                   alt={post.title}
-                  className="w-full h-72 md:h-96 object-cover"
+                  className="w-full h-48 md:h-64 object-cover"
                   priority={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -154,9 +154,6 @@ const BlogPost: React.FC = () => {
                              [&>*:first-child]:first-letter:text-5xl [&>*:first-child]:first-letter:font-bold [&>*:first-child]:first-letter:text-gray-900 [&>*:first-child]:first-letter:float-left [&>*:first-child]:first-letter:mr-3 [&>*:first-child]:first-letter:mt-1">
                 <ReactMarkdown>{post.content}</ReactMarkdown>
               </div>
-
-              {/* Séparateur de fin d'article */}
-              
             </div>
           </article>
 

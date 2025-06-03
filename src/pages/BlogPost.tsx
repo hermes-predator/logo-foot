@@ -1,4 +1,5 @@
 
+
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -139,8 +140,8 @@ const BlogPost: React.FC = () => {
               <div className="prose prose-xl prose-gray max-w-none 
                              prose-headings:text-gray-900 prose-headings:font-bold prose-headings:tracking-tight
                              prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-12 prose-h1:border-b prose-h1:border-gray-200 prose-h1:pb-4
-                             prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-10 prose-h2:text-blue-900
-                             prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8 prose-h3:text-blue-800
+                             prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-10 prose-h2:text-gray-900
+                             prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8 prose-h3:text-gray-900
                              prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
                              prose-strong:text-gray-900 prose-strong:font-bold prose-strong:bg-yellow-100 prose-strong:px-1 prose-strong:rounded
                              prose-em:text-gray-800 prose-em:font-medium
@@ -187,3 +188,4 @@ const BlogPost: React.FC = () => {
 };
 
 export default BlogPost;
+

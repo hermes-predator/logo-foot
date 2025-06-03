@@ -198,7 +198,7 @@ const BlogHeader = () => {
         {/* Titre de l'aperçu avec mise en valeur subtile */}
         <h3 className="font-semibold text-gray-700 mb-6 text-center text-sm">
           Aperçu de quelques collections de{' '}
-          <span className="font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">
+          <span className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200">
             ⦗FRONT-CLOUD⦘~ Football.zip
           </span>
         </h3>

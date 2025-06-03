@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -92,6 +93,7 @@ const BlogPost: React.FC = () => {
                   alt={post.title}
                   className="w-full h-48 md:h-64 object-cover"
                   priority={true}
+                  aspectRatio={1}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>

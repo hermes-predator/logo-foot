@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 
 interface BlogCategorySelectorProps {
@@ -23,25 +22,36 @@ const BlogCategorySelector = ({
         <h2 className="text-lg font-semibold text-gray-800 mb-4 text-left">Catégories du blog</h2>
         
         <div className="flex flex-wrap justify-center gap-3 px-4 relative z-10">
-          <a 
-            href="/blog" 
-            className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${!currentCategory 
-              ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
-              : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
-          >
-            Tout
-          </a>
+          {!currentCategory ? (
+            <span className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap">
+              Tout
+            </span>
+          ) : (
+            <a 
+              href="/blog" 
+              className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
+            >
+              Tout
+            </a>
+          )}
           
           {categories.map(([key, category]) => (
-            <a 
-              key={key} 
-              href={`/blog?category=${key}`} 
-              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${currentCategory === key 
-                ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
-                : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
-            >
-              {category.name}
-            </a>
+            currentCategory === key ? (
+              <span 
+                key={key}
+                className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap"
+              >
+                {category.name}
+              </span>
+            ) : (
+              <a 
+                key={key} 
+                href={`/blog?category=${key}`} 
+                className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
+              >
+                {category.name}
+              </a>
+            )
           ))}
         </div>
       </div>
@@ -57,4 +67,3 @@ const BlogCategorySelector = ({
 };
 
 export default BlogCategorySelector;
-

@@ -11,8 +11,6 @@ import { generatePostUrl, isCanonicalPostUrl } from '../utils/slugUtils';
 import { ArrowLeft, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import BackToButton from '../components/blog/BackToButton';
-import BlogCategorySelector from '../components/blog/BlogCategorySelector';
-import { useBlogCategories } from '../hooks/useBlogCategories';
 import { formatDate } from '../utils/dateUtils';
 
 /**
@@ -25,9 +23,6 @@ const BlogPostSEO: React.FC = () => {
   const numericId = id ? parseInt(id.split('-')[0], 10) : 0;
   const post = blogPosts.find(post => post.id === numericId);
   const currentYear = new Date().getFullYear();
-  
-  // Hook pour les catégories
-  const { availableCategories, currentCategoryDescription } = useBlogCategories(post?.category);
   
   // Si aucun article n'est trouvé, retourner null
   if (!post) return null;
@@ -64,17 +59,6 @@ const BlogPostSEO: React.FC = () => {
       <div className="bg-white border-b border-gray-100 py-3">
         <div className="container mx-auto px-4">
           <BackToButton to="/blog" label="Retour au blog" />
-        </div>
-      </div>
-
-      {/* Sélecteur de catégories */}
-      <div className="bg-gray-50 py-6">
-        <div className="container mx-auto px-4">
-          <BlogCategorySelector 
-            categories={availableCategories}
-            currentCategory={post.category}
-            currentDescription={currentCategoryDescription}
-          />
         </div>
       </div>
 

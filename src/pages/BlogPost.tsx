@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -72,7 +73,7 @@ const BlogPost: React.FC = () => {
       <BlogHeader />
 
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <div className="container mx-auto px-4 py-8 max-w-6xl">
           {/* Sélecteur de catégories */}
           <div className="mb-12">
             <BlogCategorySelector 

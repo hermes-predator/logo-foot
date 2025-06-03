@@ -15,16 +15,16 @@ const BlogCategorySelector = ({
   return (
     <>
       {/* Category selection section */}
-      <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 shadow-md border border-blue-100 max-w-5xl mx-auto overflow-hidden relative">
+      <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border border-blue-100 max-w-6xl mx-auto overflow-hidden relative">
         <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full opacity-20 -mr-20 -mt-20"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10"></div>
         
-        <h2 className="text-base font-semibold text-gray-800 mb-3">Catégories du blog</h2>
+        <h2 className="text-lg font-semibold text-gray-800 mb-4 text-center">Catégories du blog</h2>
         
-        <div className="flex flex-wrap justify-center gap-2 px-2 relative z-10">
+        <div className="flex flex-wrap justify-center gap-3 px-4 relative z-10">
           <a 
             href="/blog" 
-            className={`px-3 py-1.5 rounded-full text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${!currentCategory 
+            className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${!currentCategory 
               ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
               : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
           >
@@ -35,7 +35,7 @@ const BlogCategorySelector = ({
             <a 
               key={key} 
               href={`/blog?category=${key}`} 
-              className={`px-3 py-1.5 rounded-full text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${currentCategory === key 
+              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap ${currentCategory === key 
                 ? 'bg-blue-500 text-white font-medium shadow-md hover:shadow-lg hover:bg-blue-600' 
                 : 'bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md'}`}
             >
@@ -47,7 +47,7 @@ const BlogCategorySelector = ({
       
       {/* Description de la catégorie actuelle */}
       {currentDescription && (
-        <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-5xl mx-auto animate-fade-in">
+        <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8 max-w-6xl mx-auto animate-fade-in">
           <p className="text-sm text-blue-800">{currentDescription}</p>
         </div>
       )}

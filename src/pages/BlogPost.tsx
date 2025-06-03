@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -96,7 +97,7 @@ const BlogPost: React.FC = () => {
                     aspectRatio={1}
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-100/10 to-transparent"></div>
               </div>
             )}
 

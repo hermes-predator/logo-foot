@@ -8,7 +8,6 @@ import { ArrowLeft, Clock, User, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import BlogImage from '../components/blog/BlogImage';
 import RelatedPosts from '../components/blog/RelatedPosts';
-import BackToButton from '../components/blog/BackToButton';
 import BlogCategorySelector from '../components/blog/BlogCategorySelector';
 import BlogHeader from '../components/blog/BlogHeader';
 import { useBlogCategories } from '../hooks/useBlogCategories';
@@ -74,9 +73,6 @@ const BlogPost: React.FC = () => {
 
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-8">
-          {/* Bouton de retour */}
-          <BackToButton to="/blog" label="Retour au blog" />
-
           {/* Sélecteur de catégories */}
           <div className="mb-8">
             <BlogCategorySelector 

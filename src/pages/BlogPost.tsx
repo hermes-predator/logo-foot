@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -92,7 +90,7 @@ const BlogPost: React.FC = () => {
                 <BlogImage 
                   galleryImageId={post.galleryImageId} 
                   alt={post.title}
-                  className="w-full h-32 md:h-40 object-cover"
+                  className="w-full object-cover"
                   priority={true}
                   aspectRatio={1}
                 />
@@ -178,4 +176,3 @@ const BlogPost: React.FC = () => {
 };
 
 export default BlogPost;
-

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -13,16 +12,13 @@ interface RelatedPostsProps {
 }
 
 const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
-  // Filter out the current post
   const otherPosts = allPosts.filter(p => p.id !== post.id);
   
-  // First, try to find posts with the same category AND subCategory (if it exists)
   let similarPosts = otherPosts.filter(p => 
     p.category === post.category && 
     (post.subCategory && p.subCategory ? p.subCategory === post.subCategory : true)
   );
   
-  // If we don't have enough, add more from the same category regardless of subCategory
   if (similarPosts.length < maxPosts) {
     const additionalPosts = otherPosts
       .filter(p => p.category === post.category)
@@ -32,16 +28,13 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
     similarPosts = [...similarPosts, ...additionalPosts];
   }
   
-  // If we still don't have enough, add popular posts from any category
   if (similarPosts.length < maxPosts) {
     const popularPosts = otherPosts
       .filter(p => !similarPosts.find(sp => sp.id === p.id))
       .sort((a, b) => {
-        // Priority to posts with galleryImageId (as a proxy for importance)
         if (a.galleryImageId && !b.galleryImageId) return -1;
         if (!a.galleryImageId && b.galleryImageId) return 1;
         
-        // Then by date (more recent first)
         return new Date(b.date).getTime() - new Date(a.date).getTime();
       })
       .slice(0, maxPosts - similarPosts.length);
@@ -49,8 +42,6 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
     similarPosts = [...similarPosts, ...popularPosts];
   }
   
-  // For navigation links (previous/next post)
-  // Check if specific IDs are defined, otherwise use related posts
   const prevPost = post.previousPostId 
     ? allPosts.find(p => p.id === post.previousPostId)
     : similarPosts[0];
@@ -64,7 +55,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   }
   
   return (
-    <div className="mt-8 pt-8 border-t border-gray-200">
+    <div className="mt-8 pt-8 border-t border-gray-200 mb-16">
       <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -102,8 +93,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
         ))}
       </div>
       
-      {/* Navigation between posts */}
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
         {prevPost && (
           <Link to={`/blog/${prevPost.id}`} className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
             <div className="mt-1">

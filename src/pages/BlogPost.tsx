@@ -119,15 +119,15 @@ const BlogPost: React.FC = () => {
               {/* Métadonnées de l'article */}
               <div className="flex flex-wrap items-center gap-8 text-sm text-gray-500 border-t border-gray-100 pt-6">
                 <div className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-blue-500" />
+                  <Calendar className="w-5 h-5 text-gray-500" />
                   <span className="font-medium">{formatDate(post.date)}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-green-500" />
+                  <Clock className="w-5 h-5 text-gray-500" />
                   <span className="font-medium">{readingTime} min de lecture</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <User className="w-5 h-5 text-purple-500" />
+                  <User className="w-5 h-5 text-gray-500" />
                   <span className="font-medium">Équipe Logo Foot</span>
                 </div>
               </div>

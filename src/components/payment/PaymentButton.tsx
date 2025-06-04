@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -40,7 +41,7 @@ const PaymentButton = () => {
               transition: 'box-shadow 0.3s ease, filter 0.3s ease'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.12), inset -1px 0 0 rgba(255, 255, 255, 0.12), 0 4px 8px rgba(0, 0, 0, 0.15)';
+              e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 1px 0 0 rgba(255, 255, 255, 0.12), inset -1px 0 0 rgba(255, 255, 255, 0.12), 0 4px 8px rgba(0, 0, 0, 0.15)';
               e.currentTarget.style.filter = 'drop-shadow(0 3px 6px rgba(59, 130, 246, 0.25))';
             }}
             onMouseLeave={(e) => {
@@ -90,3 +91,4 @@ const PaymentButton = () => {
 };
 
 export default PaymentButton;
+

@@ -1,86 +1,133 @@
-
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Plus, Sparkles, Trophy, Shield, Download } from 'lucide-react';
-import PricingBlock from './PricingBlock';
+import React, { useState } from 'react';
+import { Eye, ArrowLeft } from 'lucide-react';
+import { Folder, Cloud } from 'lucide-react';
+import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
-import TrustIndicators from './TrustIndicators';
-import GoogleDriveBadge from './GoogleDriveBadge';
+import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
+import RecentBuyersBadge from './RecentBuyersBadge';
+import GoogleDriveBadge from './GoogleDriveBadge';
+import { measurePerformance } from '@/lib/performance';
+import { useIsMobile, useIsSmallMobile } from '@/hooks/use-mobile';
+import PaymentCardBack from './PaymentCardBack';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
-const PaymentCard = () => {
-  const advantages = [
-    "8 600+ logos de clubs",
-    "Format PNG transparent",
-    "Organisation par pays",
-    "Téléchargement instantané",
-    "Usage libre et illimité"
-  ];
+interface PaymentCardProps {
+  recentBuyers: number;
+}
+
+const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  
+  React.useEffect(() => {
+    measurePerformance('payment-card-render', () => {
+      // Simplement mesurer le temps de rendu
+    });
+  }, []);
+
+  const isMobile = useIsMobile();
+  const isSmallMobile = useIsSmallMobile();
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
 
   return (
-    <div className="relative max-w-md mx-auto">
-      <SparkleEffects />
-      
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
+    <div className="perspective-1000 px-3 sm:px-0">
+      <div 
+        className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+        onMouseEnter={() => !isMobile && setIsHovered(true)}
+        onMouseLeave={() => !isMobile && setIsHovered(false)}
+        onTouchStart={() => isMobile && setIsHovered(true)}
+        onTouchEnd={() => isMobile && setTimeout(() => setIsHovered(false), 500)}
       >
-        {/* Header avec effet premium */}
-        <div className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 p-6 text-white">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shine"></div>
-          <div className="relative z-10">
-            <div className="flex items-center gap-2 mb-2">
-              <Trophy className="w-5 h-5 text-yellow-300" />
-              <span className="text-sm font-medium opacity-90">Pack Premium</span>
-            </div>
-            <h3 className="text-2xl font-bold mb-1">Collection Complète</h3>
-            <p className="text-blue-100 text-sm">Tous les logos de football</p>
-          </div>
-        </div>
-
-        {/* Contenu principal */}
-        <div className="p-6">
-          {/* Prix */}
-          <PricingBlock />
+        <div 
+          className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
+            ${isHovered ? 'shadow-2xl' : 'shadow-lg'} 
+            transition-shadow duration-100 ease-out will-change-transform
+            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_8px_30px_rgba(0,0,100,0.12)] before:opacity-0 before:transition-opacity before:duration-100
+            ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
+          `}
+          style={{
+            boxShadow: isHovered ? 
+              '0 20px 50px -15px rgba(0, 0, 100, 0.15), 0 10px 25px -10px rgba(0, 0, 100, 0.10)' : 
+              '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
+            transform: isHovered && !isMobile ? 'translateY(-12px)' : 'translateY(0)',
+            transitionProperty: 'transform, box-shadow',
+            transitionDuration: '0.1s',
+            transitionTimingFunction: 'ease-out'
+          }}
+        >
+          {/* Effet de lueur subtil sur le bord supérieur */}
+          <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Liste des avantages avec icônes Plus */}
-          <div className="space-y-3 mb-6">
-            {advantages.map((advantage, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="flex items-center gap-3"
-              >
-                <div className="flex-shrink-0 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                  <Plus className="w-3 h-3 text-white" strokeWidth={3} />
-                </div>
-                <span className="text-gray-700 text-sm font-medium">{advantage}</span>
-              </motion.div>
-            ))}
+          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
+          <div className={`absolute top-14 right-8 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
+            <Folder size={95} />
+          </div>
+          
+          <SparkleEffects isHovered={isHovered} />
+          <RecentBuyersBadge count={recentBuyers} />
+          
+          <div className="mb-3 sm:mb-4 relative z-10 mt-0">
+            <div className="flex items-center gap-2">
+              <h3 className={`${isSmallMobile ? "text-lg" : isMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'}`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
+            </div>
+            <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-xs" : isMobile ? "text-sm" : "font-medium"} transition-colors duration-500 ${isHovered ? 'text-gray-700' : 'text-gray-600'}`}>La plus grande collection de logos de football en haute qualité</p>
+          
+            {/* Google Drive Badge et bouton œil ensemble */}
+            <div className="mt-2 flex items-center gap-2">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div>
+                      <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-white border border-gray-200/50 p-3 max-w-[350px] rounded-lg shadow-lg">
+                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button 
+                      onClick={handleFlip}
+                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-300/80 hover:bg-gray-100/70 hover:border-gray-300/80 transition-all duration-300 rounded-full relative overflow-hidden group shadow-[0_3px_6px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.12)]"
+                      aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
+                    >
+                      {/* Effet de pulse subtil */}
+                      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-100/30 rounded-full transition-all duration-300"></span>
+                      {/* Cercle d'animation au clic */}
+                      <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
+                        <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                      </span>
+                      <Eye className="h-4 w-4 sm:h-5 sm:w-5" />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Aperçu</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
           </div>
 
-          {/* Badge Google Drive */}
-          <GoogleDriveBadge />
-
-          {/* Bouton de paiement */}
-          <PaymentButton />
-
-          {/* Indicateurs de confiance */}
-          <TrustIndicators />
-        </div>
-
-        {/* Footer sécurisé */}
-        <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
-            <Shield className="w-4 h-4 text-green-600" />
-            <span>Paiement 100% sécurisé</span>
+          <div className="relative z-10">
+            <FeatureList />
+            <PricingBlock />
+            <PaymentButton />
           </div>
         </div>
-      </motion.div>
+        
+        <PaymentCardBack onFlipBack={handleFlip} />
+      </div>
     </div>
   );
 };

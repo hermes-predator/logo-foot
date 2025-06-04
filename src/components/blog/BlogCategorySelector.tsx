@@ -1,16 +1,19 @@
 
 import React from 'react';
+import { Loader } from 'lucide-react';
 
 interface BlogCategorySelectorProps {
   categories: [string, any][];
   currentCategory?: string | null;
   currentDescription: string;
+  isLoading?: boolean;
 }
 
 const BlogCategorySelector = ({ 
   categories, 
   currentCategory, 
-  currentDescription 
+  currentDescription,
+  isLoading = false
 }: BlogCategorySelectorProps) => {
   return (
     <>
@@ -23,7 +26,8 @@ const BlogCategorySelector = ({
         
         <div className="flex flex-wrap justify-center gap-3 px-4 relative z-10">
           {!currentCategory ? (
-            <span className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap">
+            <span className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2">
+              {isLoading && <Loader className="w-3 h-3 animate-spin" />}
               Tout
             </span>
           ) : (
@@ -39,8 +43,9 @@ const BlogCategorySelector = ({
             currentCategory === key ? (
               <span 
                 key={key}
-                className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap"
+                className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2"
               >
+                {isLoading && <Loader className="w-3 h-3 animate-spin" />}
                 {category.name}
               </span>
             ) : (

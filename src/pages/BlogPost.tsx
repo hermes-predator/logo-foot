@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -12,12 +11,15 @@ import RelatedPosts from '../components/blog/RelatedPosts';
 import BlogCategorySelector from '../components/blog/BlogCategorySelector';
 import BlogHeader from '../components/blog/BlogHeader';
 import { useBlogCategories } from '../hooks/useBlogCategories';
+import { usePageTransition } from '../hooks/usePageTransition';
+import PageLoader from '../components/ui/page-loader';
 import { formatDate } from '../utils/dateUtils';
 import ReactMarkdown from 'react-markdown';
 import FloatingCTA from '../components/blog/FloatingCTA';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { isLoading: isPageLoading } = usePageTransition();
   
   // Extraire l'ID numérique du slug
   const numericId = slug ? parseInt(slug.split('-')[0], 10) : 0;
@@ -51,6 +53,11 @@ const BlogPost: React.FC = () => {
 
   return (
     <>
+      <PageLoader 
+        isVisible={isPageLoading} 
+        message="Chargement de l'article..." 
+      />
+      
       <Helmet>
         <title>{post.title} | Logo Foot</title>
         <meta name="description" content={post.excerpt} />

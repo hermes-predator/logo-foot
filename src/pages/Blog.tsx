@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -10,7 +9,9 @@ import { BlogListSchema } from '../components/schema/BlogListSchema';
 import { useDebugBlog } from '../hooks/useDebugBlog';
 import { useBlogPosts } from '../hooks/useBlogPosts';
 import { useBlogCategories } from '../hooks/useBlogCategories';
+import { usePageTransition } from '../hooks/usePageTransition';
 import PageTransition from "@/components/ui/page-transition";
+import PageLoader from "@/components/ui/page-loader";
 import { usePagination } from '../hooks/usePagination';
 import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
@@ -19,6 +20,7 @@ import BlogPerformanceMonitor from '../components/blog/BlogPerformanceMonitor';
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const { isLoading: isPageLoading } = usePageTransition();
 
   // Debug mode pour vérifier le chargement des articles
   useDebugBlog();
@@ -59,6 +61,11 @@ const Blog = () => {
 
   return (
     <PageTransition>
+      <PageLoader 
+        isVisible={isPageLoading || isLoading} 
+        message={categoryParam ? "Chargement de la catégorie..." : "Chargement du blog..."} 
+      />
+      
       <div className="bg-gray-50 min-h-screen">
         <Helmet>
           <title>Blog - Logo Foot</title>
@@ -84,6 +91,7 @@ const Blog = () => {
             categories={availableCategories}
             currentCategory={categoryParam}
             currentDescription={currentCategoryDescription}
+            isLoading={isLoading}
           />
 
           {/* Contenu principal du blog */}

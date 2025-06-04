@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Star, ExternalLink, UserRound } from 'lucide-react';
+import { Star, ExternalLink, UserRound, Quote, BadgeCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
   Carousel,
@@ -182,11 +182,24 @@ const Testimonials = () => {
                 aria-label={`Témoignage de ${testimonial.name}`}
               >
                 <div 
-                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform"
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform relative overflow-hidden group"
                   role="article"
                 >
+                  {/* Guillemets décoratifs en arrière-plan */}
+                  <div className="absolute top-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                    <Quote className="w-16 h-16 text-blue-500 rotate-12" aria-hidden="true" />
+                  </div>
+                  
+                  {/* Badge de vérification subtil */}
+                  <div className="absolute top-3 left-3 opacity-80">
+                    <div className="flex items-center gap-1 bg-green-50 border border-green-100 rounded-full px-2 py-1">
+                      <BadgeCheck className="w-3 h-3 text-green-600" aria-hidden="true" />
+                      <span className="text-xs text-green-700 font-medium">Vérifié</span>
+                    </div>
+                  </div>
+                  
                   <div 
-                    className="flex items-center gap-1 text-yellow-400 mb-3"
+                    className="flex items-center gap-1 text-yellow-400 mb-3 mt-8"
                     aria-label={`Évaluation: ${testimonial.rating} sur 5 étoiles`}
                   >
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -196,10 +209,10 @@ const Testimonials = () => {
                       <Star key={i + testimonial.rating} className="w-4 h-4 text-gray-200" aria-hidden="true" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium leading-relaxed">
+                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium leading-relaxed relative z-10">
                     "{testimonial.content}"
                   </p>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 relative z-10">
                     <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
                       <UserRound className="w-4 h-4 text-blue-600" aria-hidden="true" />
                     </div>

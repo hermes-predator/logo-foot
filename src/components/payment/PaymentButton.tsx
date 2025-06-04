@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -75,7 +73,8 @@ const PaymentButton = () => {
           </Button>
         </TooltipTrigger>
         <TooltipContent 
-          side="top" 
+          side="top"
+          sideOffset={16}
           className="bg-white border border-gray-200/50 shadow-md p-4 whitespace-nowrap" 
           role="tooltip"
         >
@@ -91,4 +90,3 @@ const PaymentButton = () => {
 };
 
 export default PaymentButton;
-

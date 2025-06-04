@@ -119,7 +119,7 @@ const BlogHeader = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <div className="relative">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-600 border border-gray-200 rounded-md">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-200 rounded-md">
                       <BadgeCheck className="h-4 w-4 text-green-600 flex-shrink-0" aria-hidden="true" />
                       <span className="font-medium text-sm whitespace-nowrap">Fichier stockable sur votre</span>
                       <img 

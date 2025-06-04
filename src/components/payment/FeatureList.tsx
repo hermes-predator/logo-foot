@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck } from 'lucide-react';
+import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck, Plus } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -34,7 +33,7 @@ const FeatureList = () => {
       description: "Une couverture totale du football que nous ajoutons à votre actif"
     },
     {
-      icon: TrendingUp,
+      icon: Plus,
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",

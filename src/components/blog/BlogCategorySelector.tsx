@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Loader } from 'lucide-react';
 
 interface BlogCategorySelectorProps {
@@ -31,12 +32,12 @@ const BlogCategorySelector = ({
               Tout
             </span>
           ) : (
-            <a 
-              href="/blog" 
+            <Link 
+              to="/blog" 
               className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
             >
               Tout
-            </a>
+            </Link>
           )}
           
           {categories.map(([key, category]) => (
@@ -49,13 +50,13 @@ const BlogCategorySelector = ({
                 {category.name}
               </span>
             ) : (
-              <a 
+              <Link 
                 key={key} 
-                href={`/blog?category=${key}`} 
+                to={`/blog?category=${key}`} 
                 className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
               >
                 {category.name}
-              </a>
+              </Link>
             )
           ))}
         </div>

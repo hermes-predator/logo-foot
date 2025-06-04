@@ -166,7 +166,7 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-4 rounded-lg shadow-lg max-w-xs">
                   <div className="space-y-3">
-                    <div className="bg-gray-100 text-gray-900 px-3 py-2 rounded-md text-center font-semibold border border-gray-200">
+                    <div className="bg-gray-100 text-gray-900 px-3 py-2 rounded-md text-center font-semibold border border-gray-200 w-full">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </div>
                     <div className="grid grid-cols-2 gap-2">

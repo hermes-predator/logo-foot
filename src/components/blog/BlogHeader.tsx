@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -166,7 +167,7 @@ const BlogHeader = () => {
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-0 rounded-lg shadow-lg max-w-xs overflow-hidden">
-                  <div className="bg-gray-100 text-gray-900 px-3 py-2 text-center font-semibold border-b border-gray-200">
+                  <div className="bg-gray-50 text-gray-900 px-3 py-2 text-center font-semibold border-b border-gray-200">
                     ⦗FRONT-CLOUD⦘~ Football.zip
                   </div>
                   <div className="p-4">
@@ -258,3 +259,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

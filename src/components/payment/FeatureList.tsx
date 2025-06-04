@@ -62,7 +62,7 @@ const FeatureList = () => {
       description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat"
     },
     {
-      icon: TrendingUp,
+      icon: Plus,
       text: "Renforcement du patrimoine",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",

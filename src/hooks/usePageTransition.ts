@@ -9,10 +9,11 @@ export const usePageTransition = () => {
   useEffect(() => {
     setIsLoading(true);
     
-    // Délai de chargement plus visible pour les transitions
+    // Délai plus long pour les articles de blog individuels
+    const isBlogPost = location.pathname.startsWith('/blog/') && location.pathname !== '/blog';
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 600);
+    }, isBlogPost ? 1000 : 600);
 
     return () => clearTimeout(timer);
   }, [location.pathname, location.search]);

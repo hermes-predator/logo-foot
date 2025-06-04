@@ -14,11 +14,8 @@ const PageLoader: React.FC<PageLoaderProps> = ({
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4 p-8 bg-white rounded-2xl shadow-lg border border-gray-200">
-        <Loader2 className="w-16 h-16 text-blue-500 animate-spin" />
-        <p className="text-gray-700 font-medium text-lg">{message}</p>
-      </div>
+    <div className="fixed inset-0 bg-white/80 backdrop-blur-sm z-50 flex items-center justify-center">
+      <Loader2 className="w-12 h-12 text-blue-500 animate-spin" />
     </div>
   );
 };

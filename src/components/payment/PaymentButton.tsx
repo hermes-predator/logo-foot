@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -92,4 +91,3 @@ const PaymentButton = () => {
 };
 
 export default PaymentButton;
-

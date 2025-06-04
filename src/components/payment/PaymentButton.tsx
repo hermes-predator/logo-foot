@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -74,7 +75,7 @@ const PaymentButton = () => {
         </TooltipTrigger>
         <TooltipContent 
           side="top"
-          sideOffset={16}
+          sideOffset={24}
           className="bg-white border border-gray-200/50 shadow-md p-4 whitespace-nowrap" 
           role="tooltip"
         >

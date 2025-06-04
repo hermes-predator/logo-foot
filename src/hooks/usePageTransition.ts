@@ -9,10 +9,10 @@ export const usePageTransition = () => {
   useEffect(() => {
     setIsLoading(true);
     
-    // Simuler un délai de chargement minimum pour l'expérience utilisateur
+    // Délai de chargement plus visible pour les transitions
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 300);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [location.pathname, location.search]);

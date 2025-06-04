@@ -33,10 +33,10 @@ const PaymentButton = () => {
           <Button 
             onClick={handlePayment}
             disabled={isProcessing}
-            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-5 py-6 text-lg rounded-xl border border-blue-400/50 hover:border-blue-300/60 border-b-[2px] border-b-blue-900/60 hover:border-b-blue-950/70 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/70 active:translate-y-[1px] active:scale-[0.98] group h-20 relative overflow-hidden will-change-transform shadow-md hover:shadow-lg"
+            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-5 py-6 text-lg rounded-xl border-2 border-blue-400/60 hover:border-blue-300/70 border-b-[3px] border-b-blue-900/70 hover:border-b-blue-950/80 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/80 active:translate-y-[2px] active:scale-[0.98] group h-20 relative overflow-hidden will-change-transform shadow-lg hover:shadow-xl"
             style={{
-              boxShadow: 'inset 0 0.5px 0 rgba(255, 255, 255, 0.2), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08)',
-              filter: 'drop-shadow(0 1px 3px rgba(59, 130, 246, 0.15))'
+              boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 2px 0 0 rgba(255, 255, 255, 0.15), inset -2px 0 0 rgba(255, 255, 255, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12)',
+              filter: 'drop-shadow(0 2px 4px rgba(59, 130, 246, 0.2))'
             }}
             aria-label={isProcessing ? "Traitement en cours, veuillez patienter" : "Payer 9€ avec paiement sécurisé"}
             aria-live="polite"

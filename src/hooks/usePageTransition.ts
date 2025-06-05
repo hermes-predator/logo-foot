@@ -13,7 +13,7 @@ export const usePageTransition = () => {
     const isBlogPost = location.pathname.startsWith('/blog/') && location.pathname !== '/blog';
     // Délai spécifique pour les changements de catégorie sur la page blog
     const isCategoryChange = location.pathname === '/blog' && location.search;
-    // Délai pour la navigation vers la page blog principale (sans paramètres)
+    // Pas de délai pour la navigation vers la page blog principale (sans paramètres)
     const isBlogMainPage = location.pathname === '/blog' && !location.search;
     
     let delay = 600; // délai par défaut
@@ -22,7 +22,7 @@ export const usePageTransition = () => {
     } else if (isCategoryChange) {
       delay = 800; // délai spécifique pour les catégories
     } else if (isBlogMainPage) {
-      delay = 700; // délai pour la page blog principale
+      delay = 0; // pas de délai pour la page blog principale
     }
     
     const timer = setTimeout(() => {

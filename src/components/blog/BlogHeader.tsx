@@ -99,8 +99,6 @@ const BlogHeader = () => {
             boxShadow: '0 2px 8px rgba(245, 158, 11, 0.3)'
           }}>
               <AlertTriangle className="h-5 w-5 text-white drop-shadow-sm group-hover:scale-110 transition-transform duration-200" />
-              {/* Petit point d'exclamation subtil */}
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
             </div>
           </div>
           

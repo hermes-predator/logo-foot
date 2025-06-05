@@ -79,7 +79,7 @@ const FloatingCTA = () => {
           {isMobile ? (
             <div className="relative px-2">              
               <div className="flex items-center mb-2">
-                <span className={`inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
+                <span className={`inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden flex-shrink-0 ${isVerySmallScreen ? 'hidden' : ''}`}>
                   <Folder 
                     className="h-4 w-4 text-white animate-bounce" 
                     style={{ 
@@ -89,7 +89,7 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 min-w-0 flex items-center">
                   <p className="text-white font-medium">
                     <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate block ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
@@ -100,6 +100,7 @@ const FloatingCTA = () => {
                   </p>
                 </div>
               </div>
+              
               
               <div className="flex items-center w-full">
                 <Button 
@@ -129,7 +130,7 @@ const FloatingCTA = () => {
             // Small screen layout - more compact but still side by side
             <div className="flex items-center justify-between px-3 gap-3">
               <div className="flex items-center flex-1 min-w-0">
-                <span className="inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden">
+                <span className="inline-block bg-white/30 p-1.5 rounded-full mr-3 relative overflow-hidden flex-shrink-0">
                   <Folder 
                     className="h-4 w-4 text-white animate-bounce" 
                     style={{ animation: 'bounce 1.2s ease infinite' }} 
@@ -139,6 +140,7 @@ const FloatingCTA = () => {
                   <p className="text-white font-medium text-base truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
                 </div>
               </div>
+              
               
               <div className="flex items-center">
                 <Button 
@@ -168,7 +170,7 @@ const FloatingCTA = () => {
             <div className="flex flex-row items-center justify-between">
               <div className="flex items-center">
                 <button onClick={handleNavigateToHome} className="group flex items-center">
-                  <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
+                  <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden flex-shrink-0">
                     <Folder 
                       className="h-5 w-5 lg:h-6 lg:w-6 text-white animate-bounce" 
                       style={{ 
@@ -178,7 +180,7 @@ const FloatingCTA = () => {
                     />
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
-                  <div className="relative">
+                  <div className="relative flex items-start flex-col">
                     <p className="text-white font-medium">
                       <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block">⦗FRONT-CLOUD⦘~ Football.zip</span>
                       <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block">
@@ -188,6 +190,7 @@ const FloatingCTA = () => {
                   </div>
                 </button>
               </div>
+              
               
               <div className="flex items-center">
                 <Button 

@@ -20,15 +20,24 @@ import FloatingCTA from '../components/blog/FloatingCTA';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  
+  // ✅ TOUS les hooks doivent être appelés avant les early returns
   const { isLoading: isPageLoading } = usePageTransition();
   
   // Extraire l'ID numérique du slug
   const numericId = slug ? parseInt(slug.split('-')[0], 10) : 0;
   const post = blogPosts.find(post => post.id === numericId);
 
-  // Hook pour les catégories
+  // Hook pour les catégories - appelé avant les early returns
   const { availableCategories, currentCategoryDescription } = useBlogCategories(post?.category);
 
+  // Gestion du scroll pour les articles - appelé avant les early returns
+  useEffect(() => {
+    // Pas de scroll automatique vers le haut pour préserver l'expérience utilisateur
+    // L'utilisateur reste à sa position actuelle sur la page
+  }, []);
+
+  // ✅ Maintenant on peut faire les early returns après tous les hooks
   // Si aucun article n'est trouvé, rediriger vers 404
   if (!post) {
     return <Navigate to="/404" replace />;
@@ -43,12 +52,6 @@ const BlogPost: React.FC = () => {
     const canonicalPath = generatePostUrl(post.id, post.title);
     return <Navigate to={canonicalPath} replace />;
   }
-
-  // Gestion du scroll pour les articles
-  useEffect(() => {
-    // Pas de scroll automatique vers le haut pour préserver l'expérience utilisateur
-    // L'utilisateur reste à sa position actuelle sur la page
-  }, []);
 
   // Calculer le temps de lecture estimé
   const wordsPerMinute = 200;

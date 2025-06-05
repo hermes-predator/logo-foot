@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -202,7 +201,11 @@ const BlogHeader = () => {
         {/* Titre de l'aperçu avec mise en valeur subtile */}
         <h3 className="font-semibold text-gray-700 mb-6 text-center text-sm">
           Aperçu de quelques collections :{' '}
-          <span className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200 animate-pulse" style={{ animationDuration: '3s' }}>
+          <span className="font-bold text-orange-600 px-1 py-0.5 rounded border border-orange-200 animate-pulse" style={{ 
+            animationDuration: '3s',
+            background: 'linear-gradient(0deg, rgb(254, 243, 199), rgb(253, 230, 138))',
+            animationName: 'backgroundPulse'
+          }}>
             ⦗FRONT-CLOUD⦘~ Football.zip
           </span>
         </h3>
@@ -256,6 +259,17 @@ const BlogHeader = () => {
           
       </div>
     </div>
+
+    <style jsx>{`
+      @keyframes backgroundPulse {
+        0%, 100% {
+          background: rgb(254, 243, 199);
+        }
+        50% {
+          background: rgb(253, 230, 138);
+        }
+      }
+    `}</style>
   </div>;
 };
 

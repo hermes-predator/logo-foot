@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -204,7 +205,7 @@ const BlogHeader = () => {
           <span 
             className="font-bold text-orange-600 px-1 py-0.5 rounded border border-orange-200"
             style={{ 
-              animation: 'backgroundPulse 2s ease-in-out infinite',
+              animation: 'backgroundPulse 1.5s ease-in-out infinite',
               background: 'transparent'
             }}
           >

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -206,7 +205,7 @@ const BlogHeader = () => {
             className="font-bold text-orange-600 px-1 py-0.5 rounded border border-orange-200"
             style={{ 
               animation: 'backgroundPulse 3s ease-in-out infinite',
-              background: 'rgb(254, 243, 199)'
+              background: 'transparent'
             }}
           >
             ⦗FRONT-CLOUD⦘~ Football.zip
@@ -267,10 +266,10 @@ const BlogHeader = () => {
       {`
         @keyframes backgroundPulse {
           0%, 100% {
-            background: rgb(254, 243, 199);
+            background: transparent;
           }
           50% {
-            background: rgb(253, 230, 138);
+            background: rgba(249, 115, 22, 0.15);
           }
         }
       `}

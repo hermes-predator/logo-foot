@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Folder, X } from 'lucide-react';
@@ -74,7 +75,7 @@ const FloatingCTA = () => {
         animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
       }}
     >
-      <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20 relative">
+      <div className="bg-gradient-to-r from-purple-600 via-blue-600 via-blue-600 to-purple-600 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20 relative">
         <div className="container mx-auto relative">
           {/* Mobile layout - stacked vertically (with extra compact version for very small screens) */}
           {isMobile ? (
@@ -225,3 +226,4 @@ const FloatingCTA = () => {
 };
 
 export default FloatingCTA;
+

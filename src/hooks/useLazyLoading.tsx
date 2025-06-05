@@ -4,14 +4,12 @@ import { useRef, useEffect, useState } from 'react';
 export const useLazyLoading = () => {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [isInView, setIsInView] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsInView(true);
-          setShouldLoad(true);
           // Désabonner une fois que l'image est chargée
           if (imgRef.current) {
             observer.unobserve(imgRef.current);
@@ -37,9 +35,5 @@ export const useLazyLoading = () => {
     };
   }, [imgRef.current]); // Ajouter imgRef.current comme dépendance
 
-  const handleLoad = () => {
-    setShouldLoad(true);
-  };
-
-  return { isInView, imgRef, shouldLoad, handleLoad };
+  return { isInView, imgRef };
 };

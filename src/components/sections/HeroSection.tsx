@@ -1,160 +1,305 @@
 
+
 import React from 'react';
-import { ArrowRight, FileArchive, Star, Shield, Clock } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import HeroTestimonialBadge from './HeroTestimonialBadge';
-import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import HeroTestimonialBadge from './HeroTestimonialBadge';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
 
-const HeroSection = ({ onScrollToPayment }: HeroSectionProps) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-8 sm:pt-12 pb-8 sm:pb-16 overflow-hidden">
-      {/* Éléments décoratifs de fond */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-50/10 to-purple-50/10 rounded-full blur-3xl"></div>
+    <section className="relative pt-14 pb-12 px-4 overflow-hidden">
+      {/* Background effects - Améliorés */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50/90 via-blue-50/50 to-white opacity-95" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(155,135,245,0.1),transparent_50%)]" />
+        <div className="absolute top-40 left-0 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 8s ease-in-out infinite' }} />
+        <div className="absolute top-60 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl -z-10" style={{ animation: 'pulse 12s ease-in-out infinite' }} />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-5xl mx-auto">
-          {/* Badge de témoignage */}
-          <div className="mb-6 sm:mb-8">
-            <HeroTestimonialBadge />
+      {/* Sparkles brandés premium - effet de profondeur et hiérarchie */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Sparkles niveau 1 - Hero sparkles avec glow intense */}
+        <Sparkles 
+          className="absolute top-16 left-[10%] text-purple-500/70 w-5 h-5" 
+          style={{ 
+            animation: 'floating 8s ease-in-out infinite',
+            filter: 'drop-shadow(0 0 8px rgba(168, 85, 247, 0.7)) drop-shadow(0 0 16px rgba(168, 85, 247, 0.3))',
+            transform: 'rotate(-15deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-28 right-[8%] text-indigo-500/60 w-6 h-6" 
+          style={{ 
+            animation: 'floating 10s ease-in-out infinite',
+            animationDelay: '2s',
+            filter: 'drop-shadow(0 0 10px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 20px rgba(99, 102, 241, 0.2))',
+            transform: 'rotate(25deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 2 - Support sparkles avec glow moyen */}
+        <Sparkles 
+          className="absolute top-[42%] left-[7%] text-purple-400/55 w-4 h-4" 
+          style={{ 
+            animation: 'floating 7s ease-in-out infinite',
+            animationDelay: '3.5s',
+            filter: 'drop-shadow(0 0 6px rgba(196, 181, 253, 0.8)) drop-shadow(0 0 12px rgba(196, 181, 253, 0.4))',
+            transform: 'rotate(45deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[35%] right-[12%] text-blue-400/50 w-5 h-5" 
+          style={{ 
+            animation: 'floating 9s ease-in-out infinite',
+            animationDelay: '1.2s',
+            filter: 'drop-shadow(0 0 7px rgba(147, 197, 253, 0.7)) drop-shadow(0 0 14px rgba(147, 197, 253, 0.3))',
+            transform: 'rotate(-30deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 3 - Accent sparkles avec glow subtil */}
+        <Sparkles 
+          className="absolute top-[60%] left-[20%] text-purple-300/45 w-3 h-3" 
+          style={{ 
+            animation: 'floating 6s ease-in-out infinite',
+            animationDelay: '5s',
+            filter: 'drop-shadow(0 0 4px rgba(216, 180, 254, 0.6))',
+            transform: 'rotate(60deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[52%] right-[22%] text-indigo-300/40 w-4 h-4" 
+          style={{ 
+            animation: 'floating 8.5s ease-in-out infinite',
+            animationDelay: '4.2s',
+            filter: 'drop-shadow(0 0 5px rgba(165, 180, 252, 0.5))',
+            transform: 'rotate(-45deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 4 - Background sparkles très subtils */}
+        <Sparkles 
+          className="absolute bottom-[25%] left-[15%] text-blue-200/35 w-3 h-3" 
+          style={{ 
+            animation: 'floating 5.5s ease-in-out infinite',
+            animationDelay: '2.8s',
+            filter: 'drop-shadow(0 0 3px rgba(191, 219, 254, 0.4))',
+            transform: 'rotate(15deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute bottom-[32%] right-[18%] text-purple-200/30 w-3 h-3" 
+          style={{ 
+            animation: 'floating 11s ease-in-out infinite',
+            animationDelay: '6s',
+            filter: 'drop-shadow(0 0 2px rgba(233, 213, 255, 0.4))',
+            transform: 'rotate(-60deg)'
+          }} 
+        />
+        
+        {/* Sparkles niveau 5 - Micro sparkles pour texture */}
+        <Sparkles 
+          className="absolute top-[70%] left-[25%] text-indigo-100/25 w-2 h-2" 
+          style={{ 
+            animation: 'floating 4s ease-in-out infinite',
+            animationDelay: '3.8s',
+            transform: 'rotate(90deg)'
+          }} 
+        />
+        <Sparkles 
+          className="absolute top-[75%] right-[28%] text-purple-100/20 w-2 h-2" 
+          style={{ 
+            animation: 'floating 12s ease-in-out infinite',
+            animationDelay: '7.5s',
+            transform: 'rotate(-90deg)'
+          }} 
+        />
+      </div>
+      
+      <div className="max-w-4xl mx-auto text-center space-y-7">
+        {/* Google Drive Badge remplaçant le Premium Badge */}
+        <div className="flex justify-center mb-3">
+          <GoogleDriveBadge className="transform transition-transform duration-300" alwaysEnlarged={true} />
+        </div>
+
+        {/* Main title - Amélioré */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">
+          Logos des clubs de football
+        </h1>
+
+        {/* Subtitle - Amélioré */}
+        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-5">
+          <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">⦗FRONT-CLOUD⦘~ Football.zip</span>
+        </h2>
+        
+        {/* Description - Amélioré */}
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
+          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
+        </p>
+
+        {/* Testimonial Badge - Déplacé ici après la description */}
+        <div className="flex justify-center pt-2">
+          <HeroTestimonialBadge />
+        </div>
+
+        {/* Trust badges - Animation optimisée et améliorée */}
+        <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <CheckCircle2 className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Fichiers Consultables</span>
           </div>
-
-          {/* Titre principal */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight tracking-tight">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-              +8 600 logos
-            </span>
-            <br />
-            <span className="text-gray-900">de football en</span>
-            <br />
-            <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              haute qualité
-            </span>
-          </h1>
-
-          {/* Sous-titre */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-10 leading-relaxed font-medium max-w-4xl mx-auto">
-            Recevez <strong className="text-gray-900">+ de 8 600 logos de football</strong> en un fichier parfaitement organisé par pays. 
-            <span className="block mt-2 text-base sm:text-lg text-gray-500">
-              Collection complète de logo des équipes de foot du monde entier.
-            </span>
-          </p>
-
-          {/* Points clés avec icônes */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 text-sm sm:text-base">
-            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-sm border border-gray-200/50">
-              <Star className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500 fill-current" />
-              <span className="font-medium text-gray-700">Qualité premium</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-sm border border-gray-200/50">
-              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
-              <span className="font-medium text-gray-700">Organisé par pays</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-sm border border-gray-200/50">
-              <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-blue-500" />
-              <span className="font-medium text-gray-700">Accès immédiat</span>
-            </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <Lock className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
-
-          {/* Nom du fichier et badge Google Drive */}
-          <div className="mb-8 sm:mb-10">
-            <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-white/80 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl shadow-lg border border-gray-200/50">
-              <span className="text-lg sm:text-xl font-bold text-gray-900 font-mono tracking-tight">
-                ⦗FRONT-CLOUD⦘~ Football.zip
-              </span>
-              <GoogleDriveBadge />
-            </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
+            <Download className="w-5 w-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
+        </div>
 
-          {/* Boutons d'action principaux - TAILLE AUGMENTÉE */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-12">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold bg-white/90 hover:bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-800 hover:text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-50/50 to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <span className="relative z-10">Descriptif du ZIP</span>
-                  <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 ml-2 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-                <DialogHeader className="pb-0">
-                  <div className="flex flex-col mb-0">
-                    <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
-                      Descriptif du ZIP
-                    </DialogTitle>
-                    
-                    <div className="relative mt-1 mb-1">
-                      <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
-                        ⦗FRONT-CLOUD⦘~ Football.zip
-                      </span>
-                    </div>
-                  </div>
+        {/* CTA buttons - Spacing amélioré */}
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
+          <Dialog>
+            <DialogTrigger asChild>
+              <button 
+                className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
+                <Folder size={24} className="mr-2 text-gray-800 transition-colors duration-300" />
+                <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+              </button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+              <DialogHeader className="pb-0">
+                <div className="flex flex-col mb-0">
+                  <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
+                    Descriptif du ZIP
+                  </DialogTitle>
                   
-                  <div className="flex justify-between items-center mb-6">
-                    <div className="mt-4">
-                      <GoogleDriveBadge />
-                    </div>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <button onClick={() => {
+                  <div className="relative mt-1 mb-1">
+                    <span className="text-sm font-mono tracking-tight bg-gray-800 px-3 py-1 rounded text-gray-100 inline-block relative shadow-sm">
+                      ⦗FRONT-CLOUD⦘~ Football.zip
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="flex justify-between items-center mb-6">
+                  <div className="mt-4">
+                    <GoogleDriveBadge />
+                  </div>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button 
+                        onClick={() => {
                           const returnUrl = `${window.location.origin}/payment-success`;
                           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-                        }} className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4">
-                          <FileArchive className="h-3.5 w-3.5" />
-                          <span>Télécharger ce fichier (9€)</span>
-                        </button>
-                      </TooltipTrigger>
-                      <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
-                        <p className="text-xs">Accès immédiat après paiement</p>
-                      </TooltipContent>
-                    </Tooltip>
+                        }}
+                        variant="outline" 
+                        size="sm" 
+                        className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4"
+                      >
+                        <Download className="h-3.5 w-3.5" />
+                        <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
+                      <p className="text-xs">Accès immédiat après paiement</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
+                
+                <DialogDescription className="text-left pt-0 mt-0">
+                  <PackDescription />
+                </DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
+          
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="default"
+                size="lg"
+                onClick={() => {
+                  const returnUrl = `${window.location.origin}/payment-success`;
+                  window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                }}
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[19px] gap-5 hover:-translate-y-0.5 px-12 py-5 h-auto relative group overflow-hidden"
+              >
+                {/* Outer glow animation - Améliorée */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
+                     style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
+
+                <div className="relative">
+                  <ShoppingCart 
+                    style={{
+                      color: "#FFE082",
+                      filter: 'drop-shadow(0 0 4px rgba(255, 224, 130, 0.8))',
+                      animation: 'cartMove 1.5s ease-in-out infinite',
+                      width: '22px',
+                      height: '22px',
+                      transform: 'scale(1.1)',
+                      transition: 'transform 0.3s ease'
+                    }}
+                  />
+                </div>
+                
+                <span className="relative z-10 font-bold tracking-wide">
+                  Achat rapide ~ 9€
+                </span>
+                
+                {/* Shine effect - Amélioré */}
+                <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-50 group-hover:animate-shine" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="top" align="center" sideOffset={10} className="bg-white border border-gray-200 shadow-md p-4 max-w-[400px]">
+              <div className="space-y-3">
+                {/* Titre principal plus grand */}
+                <p className="text-lg font-bold text-gray-800 leading-tight">Télécharger le fichier ZIP complet</p>
+                
+                {/* Séparateur visuel */}
+                <div className="h-px bg-gray-200"></div>
+                
+                {/* Étapes avec numérotation simple */}
+                <div className="space-y-2.5">
+                  <div className="flex items-start gap-3">
+                    <span className="text-sm font-bold text-gray-500 mt-0.5">1</span>
+                    <span className="text-sm text-gray-600 leading-relaxed">Paiement sécurisé via SumUp</span>
                   </div>
-                  
-                  <DialogDescription className="text-left pt-0 mt-0">
-                    <PackDescription />
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-
-            <Button 
-              onClick={() => {
-                const returnUrl = `${window.location.origin}/payment-success`;
-                window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
-              }}
-              size="lg"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 border-0 group relative overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10">Achat rapide (9€)</span>
-              <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 ml-2 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
-            </Button>
-          </div>
-
-          {/* Informations sur le fichier */}
-          <div className="text-center">
-            <p className="text-gray-500 text-sm sm:text-base mb-2">
-              <span className="font-semibold text-gray-700">63 Mo</span> • 
-              <span className="font-semibold text-gray-700 ml-1">8 774 éléments</span>
-            </p>
-            <p className="text-gray-400 text-xs sm:text-sm">
-              Fichier ZIP organisé et prêt à l'emploi
-            </p>
-          </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sm font-bold text-gray-500 mt-0.5">2</span>
+                    <span className="text-sm text-gray-600 leading-relaxed">Accès en page d'après-paiement</span>
+                  </div>
+                </div>
+                
+                {/* Badges de confiance plus espacés */}
+                <div className="flex flex-wrap gap-2 pt-1">
+                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">⏱️ 2 minutes seulement</span>
+                  <span className="bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-medium">✓ Fiable à 100%</span>
+                </div>
+              </div>
+            </TooltipContent>
+          </Tooltip>
         </div>
       </div>
     </section>
@@ -162,3 +307,4 @@ const HeroSection = ({ onScrollToPayment }: HeroSectionProps) => {
 };
 
 export default HeroSection;
+

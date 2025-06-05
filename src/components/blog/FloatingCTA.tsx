@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Folder, X } from 'lucide-react';
@@ -89,11 +90,11 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div className="flex-1 min-w-0">
-                  <p className="text-white font-medium m-0 p-0">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                <div className="flex-1 min-w-0 text-left">
+                  <p className="text-white font-medium m-0 p-0 text-left">
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 text-left ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-sm italic leading-relaxed block m-0 p-0">
+                      <span className="text-blue-100/90 font-light text-sm italic leading-relaxed block m-0 p-0 text-left">
                         <u className="font-medium">8 600+ logos de foot</u>
                       </span>
                     )}
@@ -136,8 +137,8 @@ const FloatingCTA = () => {
                     style={{ animation: 'bounce 1.2s ease infinite' }} 
                   />
                 </span>
-                <div className="truncate flex items-center">
-                  <p className="text-white font-medium text-base truncate m-0 p-0">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                <div className="truncate flex items-center text-left">
+                  <p className="text-white font-medium text-base truncate m-0 p-0 text-left">⦗FRONT-CLOUD⦘~ Football.zip</p>
                 </div>
               </div>
               
@@ -180,10 +181,10 @@ const FloatingCTA = () => {
                     />
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
-                  <div className="relative flex items-start flex-col">
-                    <p className="text-white font-medium m-0 p-0">
-                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block m-0 p-0">
+                  <div className="relative flex items-start flex-col text-left">
+                    <p className="text-white font-medium m-0 p-0 text-left">
+                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 text-left">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block m-0 p-0 text-left">
                         Un fichier ZIP contenant <u className="font-medium">+ de 8 600 logos de foot</u> organisés par pays
                       </span>
                     </p>

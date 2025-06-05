@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -89,16 +88,19 @@ const BlogHeader = () => {
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
           
-          {/* Bulle d'attention dans le coin supérieur gauche - forme parfaitement épousée */}
+          {/* Bulle d'attention dans le coin supérieur gauche - améliorée */}
           <div className="absolute top-0 left-0 z-10">
-            <div className="p-3" style={{
-            backgroundColor: 'rgb(251, 234, 168)',
+            <div className="relative p-3 group" style={{
+            background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b  100%)',
             borderTopLeftRadius: '8px',
             borderTopRightRadius: '0px',
             borderBottomLeftRadius: '0px',
-            borderBottomRightRadius: '16px'
+            borderBottomRightRadius: '16px',
+            boxShadow: '0 2px 8px rgba(245, 158, 11, 0.3)'
           }}>
-              <AlertTriangle className="h-5 w-5 text-orange-600" />
+              <AlertTriangle className="h-5 w-5 text-white drop-shadow-sm group-hover:scale-110 transition-transform duration-200" />
+              {/* Petit point d'exclamation subtil */}
+              <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
             </div>
           </div>
           
@@ -154,7 +156,7 @@ const BlogHeader = () => {
                   borderLeft: '2px solid #fbbf24',
                   borderRight: '2px solid #dc2626',
                   borderBottom: '2px solid #dc2626',
-                  boxShadow: '0 6px 12px -2px rgba(251, 146, 60, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
+                  boxShadow: '0 6px 12px -2px rgba(251, 146, 60, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
                   textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
                 }}>
                     {/* Effet de brillance sur le bouton - plus clair au survol */}

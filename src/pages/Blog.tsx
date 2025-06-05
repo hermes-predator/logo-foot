@@ -47,7 +47,7 @@ const Blog = () => {
     if (isCategoryChange && categorySectionRef.current) {
       // Scroll vers la section des catégories avec un offset pour laisser plus de marge
       const element = categorySectionRef.current;
-      const yOffset = -80; // Offset négatif pour remonter un peu plus haut
+      const yOffset = -120; // Offset négatif pour remonter un peu plus haut
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       
       window.scrollTo({

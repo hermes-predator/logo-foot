@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Download, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -12,6 +12,7 @@ const FloatingCTA = () => {
   const isMobile = useIsMobile();
   const isVerySmallScreen = typeof window !== 'undefined' && window.innerWidth < 360;
   const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 640;
+  const navigate = useNavigate();
   
   // Détection du scroll pour savoir si on est en bas de la page
   useEffect(() => {
@@ -49,6 +50,17 @@ const FloatingCTA = () => {
     e.preventDefault();
     e.stopPropagation();
     setDismissed(true);
+  };
+
+  const handleNavigateToHome = () => {
+    navigate('/');
+    // Scroll vers le haut après la navigation
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 100);
   };
 
   if (!visible || dismissed || !isAtBottom) return null;
@@ -92,18 +104,16 @@ const FloatingCTA = () => {
               
               <div className="flex items-center w-full">
                 <Button 
-                  asChild
+                  onClick={handleNavigateToHome}
                   variant="secondary" 
                   className="w-full py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100"
                   size="sm"
                 >
-                  <Link to="/" className="flex items-center justify-center gap-1.5">
-                    <span className="font-medium relative z-10 text-blue-600">
-                      En savoir plus
-                    </span>
-                    <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
-                  </Link>
+                  <span className="font-medium relative z-10 text-blue-600">
+                    En savoir plus
+                  </span>
+                  <ArrowRight className="h-3 w-3 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Button>
                 
                 {/* Close button for mobile - now next to the "En savoir plus" button */}
@@ -133,17 +143,15 @@ const FloatingCTA = () => {
               
               <div className="flex items-center">
                 <Button 
-                  asChild
+                  onClick={handleNavigateToHome}
                   variant="secondary" 
                   className="py-1 text-xs group relative overflow-hidden bg-white hover:bg-gray-100 whitespace-nowrap"
                   size="sm"
                 >
-                  <Link to="/" className="flex items-center gap-1.5">
-                    <span className="font-medium relative z-10 text-blue-600">
-                      En savoir plus
-                    </span>
-                    <ArrowRight className="h-3 w-3 relative z-10 text-blue-600" />
-                  </Link>
+                  <span className="font-medium relative z-10 text-blue-600">
+                    En savoir plus
+                  </span>
+                  <ArrowRight className="h-3 w-3 relative z-10 text-blue-600" />
                 </Button>
                 
                 {/* Close button for small screens - right next to the button */}
@@ -160,7 +168,7 @@ const FloatingCTA = () => {
             // Desktop layout - side by side with more details
             <div className="flex flex-row items-center justify-between">
               <div className="flex items-center">
-                <Link to="/" className="group flex items-center">
+                <button onClick={handleNavigateToHome} className="group flex items-center">
                   <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
                     <Download 
                       className="h-5 w-5 lg:h-6 lg:w-6 text-white animate-bounce" 
@@ -179,23 +187,21 @@ const FloatingCTA = () => {
                       </span>
                     </p>
                   </div>
-                </Link>
+                </button>
               </div>
               
               <div className="flex items-center">
                 <Button 
-                  asChild
+                  onClick={handleNavigateToHome}
                   variant="secondary" 
                   className="px-4 md:px-5 py-2 text-sm md:text-base group relative overflow-hidden bg-white hover:bg-gray-100"
                   size="lg"
                 >
-                  <Link to="/" className="flex items-center gap-2">
-                    <span className="font-medium relative z-10 text-blue-600">
-                      En savoir plus
-                    </span>
-                    <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
-                  </Link>
+                  <span className="font-medium relative z-10 text-blue-600">
+                    En savoir plus
+                  </span>
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-blue-600" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
                 </Button>
                 
                 {/* Close button for desktop - right next to the button */}

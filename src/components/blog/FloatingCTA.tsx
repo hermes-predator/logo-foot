@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Folder, X } from 'lucide-react';
@@ -89,7 +90,7 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 min-w-0 flex flex-col justify-center">
                   <p className="text-white font-medium flex flex-col">
                     <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
@@ -135,7 +136,7 @@ const FloatingCTA = () => {
                     style={{ animation: 'bounce 1.2s ease infinite' }} 
                   />
                 </span>
-                <div className="truncate">
+                <div className="truncate flex items-center">
                   <p className="text-white font-medium text-base truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
                 </div>
               </div>
@@ -178,7 +179,7 @@ const FloatingCTA = () => {
                     />
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
-                  <div className="relative">
+                  <div className="relative flex flex-col justify-center">
                     <p className="text-white font-medium flex flex-col">
                       <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
                       <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed">

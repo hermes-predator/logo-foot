@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -26,7 +27,7 @@ const Blog = () => {
   useDebugBlog();
   
   // Custom hooks pour la logique métier
-  const { posts, isLoading } = useBlogPosts(categoryParam);
+  const { posts, isLoading: isPostsLoading } = useBlogPosts(categoryParam);
   const { 
     availableCategories, 
     currentCategoryDescription 
@@ -59,10 +60,13 @@ const Blog = () => {
     }
   }, [posts]);
 
+  // Combiner les états de chargement
+  const isLoading = isPageLoading || isPostsLoading;
+
   return (
     <PageTransition>
       <PageLoader 
-        isVisible={isPageLoading || isLoading} 
+        isVisible={isLoading} 
         message={categoryParam ? "Chargement de la catégorie..." : "Chargement du blog..."} 
       />
       

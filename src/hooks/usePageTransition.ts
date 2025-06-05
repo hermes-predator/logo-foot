@@ -11,9 +11,19 @@ export const usePageTransition = () => {
     
     // Délai plus long pour les articles de blog individuels
     const isBlogPost = location.pathname.startsWith('/blog/') && location.pathname !== '/blog';
+    // Délai spécifique pour les changements de catégorie sur la page blog
+    const isCategoryChange = location.pathname === '/blog' && location.search;
+    
+    let delay = 600; // délai par défaut
+    if (isBlogPost) {
+      delay = 1000;
+    } else if (isCategoryChange) {
+      delay = 800; // délai spécifique pour les catégories
+    }
+    
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, isBlogPost ? 1000 : 600);
+    }, delay);
 
     return () => clearTimeout(timer);
   }, [location.pathname, location.search]);

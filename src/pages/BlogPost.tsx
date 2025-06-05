@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -42,6 +43,12 @@ const BlogPost: React.FC = () => {
     const canonicalPath = generatePostUrl(post.id, post.title);
     return <Navigate to={canonicalPath} replace />;
   }
+
+  // Gestion du scroll pour les articles
+  useEffect(() => {
+    // Pas de scroll automatique vers le haut pour préserver l'expérience utilisateur
+    // L'utilisateur reste à sa position actuelle sur la page
+  }, []);
 
   // Calculer le temps de lecture estimé
   const wordsPerMinute = 200;

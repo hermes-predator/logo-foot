@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -191,9 +192,9 @@ const Testimonials = () => {
                   
                   {/* Badge de vérification subtil */}
                   <div className="absolute top-3 left-3 opacity-80">
-                    <div className="flex items-center gap-1 bg-blue-50 border border-blue-100 rounded-full px-2 py-1">
-                      <CircleCheck className="w-3 h-3 text-blue-600" aria-hidden="true" />
-                      <span className="text-xs text-blue-700 font-medium">Vérifié</span>
+                    <div className="flex items-center gap-1 bg-gray-50 border border-gray-200 rounded-full px-2 py-1">
+                      <CircleCheck className="w-3 h-3 text-gray-600" aria-hidden="true" />
+                      <span className="text-xs text-gray-700 font-medium">Vérifié</span>
                     </div>
                   </div>
                   

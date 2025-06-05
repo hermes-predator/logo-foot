@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Folder, X } from 'lucide-react';
@@ -90,11 +89,11 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div className="flex-1 min-w-0 flex flex-col justify-center">
-                  <p className="text-white font-medium flex flex-col">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-white font-medium">
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate block ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-sm italic truncate leading-relaxed">
+                      <span className="text-blue-100/90 font-light text-sm italic truncate leading-relaxed block">
                         <u className="font-medium">8 600+ logos de foot</u>
                       </span>
                     )}
@@ -179,10 +178,10 @@ const FloatingCTA = () => {
                     />
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
-                  <div className="relative flex flex-col justify-center">
-                    <p className="text-white font-medium flex flex-col">
-                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed">
+                  <div className="relative">
+                    <p className="text-white font-medium">
+                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block">
                         Un fichier ZIP contenant <u className="font-medium">+ de 8 600 logos de foot</u> organisés par pays
                       </span>
                     </p>

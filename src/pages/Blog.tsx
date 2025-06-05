@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
@@ -20,7 +21,7 @@ import BlogPerformanceMonitor from '../components/blog/BlogPerformanceMonitor';
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
-  const { isLoading: isPageLoading, isCategoryChange } = usePageTransition();
+  const { isLoading: isPageLoading, isCategoryChange, skipTransition } = usePageTransition();
   const categorySectionRef = useRef<HTMLDivElement>(null);
 
   // Debug mode pour vérifier le chargement des articles
@@ -75,62 +76,66 @@ const Blog = () => {
   // Combiner les états de chargement
   const isLoading = isPageLoading || isPostsLoading;
 
+  const content = (
+    <div className="bg-gray-50 min-h-screen">
+      <Helmet>
+        <title>Blog - Logo Foot</title>
+        <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
+        <meta name="keywords" content="logo foot, logo football, écussons foot, club foot, logo équipe foot" />
+        <script type="application/ld+json">
+          {JSON.stringify(BlogListSchema({ post: posts[0] }))}
+        </script>
+      </Helmet>
+
+      {/* Balises canoniques pour la pagination SEO */}
+      <BlogCanonical 
+        category={categoryParam || undefined}
+        page={currentPage}
+      />
+
+      {/* Header avec présentation du blog */}
+      <BlogHeader />
+      
+      <div className="container mx-auto px-4 pt-4 pb-12">
+        {/* Sélecteur de catégories */}
+        <div ref={categorySectionRef}>
+          <BlogCategorySelector
+            categories={availableCategories}
+            currentCategory={categoryParam}
+            currentDescription={currentCategoryDescription}
+            isLoading={isLoading}
+          />
+        </div>
+
+        {/* Contenu principal du blog */}
+        <BlogContent
+          posts={posts}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          setCurrentPage={setCurrentPage}
+          paginatedItems={paginatedItems}
+        />
+      </div>
+
+      <Footer />
+      
+      {/* Affichage de la bannière flottante CTA */}
+      <FloatingCTA />
+      
+      {/* Moniteur de performance */}
+      <BlogPerformanceMonitor />
+    </div>
+  );
+
   return (
-    <PageTransition>
+    <>
       <PageLoader 
         isVisible={isLoading} 
         message={categoryParam ? "Chargement de la catégorie..." : "Chargement du blog..."} 
       />
       
-      <div className="bg-gray-50 min-h-screen">
-        <Helmet>
-          <title>Blog - Logo Foot</title>
-          <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
-          <meta name="keywords" content="logo foot, logo football, écussons foot, club foot, logo équipe foot" />
-          <script type="application/ld+json">
-            {JSON.stringify(BlogListSchema({ post: posts[0] }))}
-          </script>
-        </Helmet>
-
-        {/* Balises canoniques pour la pagination SEO */}
-        <BlogCanonical 
-          category={categoryParam || undefined}
-          page={currentPage}
-        />
-
-        {/* Header avec présentation du blog */}
-        <BlogHeader />
-        
-        <div className="container mx-auto px-4 pt-4 pb-12">
-          {/* Sélecteur de catégories */}
-          <div ref={categorySectionRef}>
-            <BlogCategorySelector
-              categories={availableCategories}
-              currentCategory={categoryParam}
-              currentDescription={currentCategoryDescription}
-              isLoading={isLoading}
-            />
-          </div>
-
-          {/* Contenu principal du blog */}
-          <BlogContent
-            posts={posts}
-            currentPage={currentPage}
-            totalPages={totalPages}
-            setCurrentPage={setCurrentPage}
-            paginatedItems={paginatedItems}
-          />
-        </div>
-
-        <Footer />
-        
-        {/* Affichage de la bannière flottante CTA */}
-        <FloatingCTA />
-        
-        {/* Moniteur de performance */}
-        <BlogPerformanceMonitor />
-      </div>
-    </PageTransition>
+      {skipTransition ? content : <PageTransition>{content}</PageTransition>}
+    </>
   );
 };
 

@@ -39,6 +39,7 @@ export const usePageTransition = () => {
     isLoading,
     startLoading,
     stopLoading,
-    isCategoryChange: location.pathname === '/blog' && location.search
+    isCategoryChange: location.pathname === '/blog' && location.search,
+    skipTransition: location.pathname === '/blog' && !location.search
   };
 };

@@ -22,7 +22,7 @@ const Footer = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl w-full">
               <DialogHeader>
-                <DialogTitle className="text-xl font-bold text-gray-800">Support Client</DialogTitle>
+                <DialogTitle className="text-xl font-bold text-gray-800">Contacter le service client</DialogTitle>
               </DialogHeader>
               <div className="mt-4">
                 <ContactForm />

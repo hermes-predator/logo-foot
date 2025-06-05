@@ -191,9 +191,9 @@ const Testimonials = () => {
                   
                   {/* Badge de vérification subtil */}
                   <div className="absolute top-3 left-3 opacity-80">
-                    <div className="flex items-center gap-1 bg-green-50 border border-green-100 rounded-full px-2 py-1">
-                      <CircleCheck className="w-3 h-3 text-green-600" aria-hidden="true" />
-                      <span className="text-xs text-green-700 font-medium">Vérifié</span>
+                    <div className="flex items-center gap-1 bg-blue-50 border border-blue-100 rounded-full px-2 py-1">
+                      <CircleCheck className="w-3 h-3 text-blue-600" aria-hidden="true" />
+                      <span className="text-xs text-blue-700 font-medium">Vérifié</span>
                     </div>
                   </div>
                   

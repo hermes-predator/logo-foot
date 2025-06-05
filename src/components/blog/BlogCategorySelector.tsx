@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Loader } from 'lucide-react';
+import { Loader, BookOpen } from 'lucide-react';
 
 interface BlogCategorySelectorProps {
   categories: [string, any][];
@@ -23,7 +22,10 @@ const BlogCategorySelector = ({
         <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full opacity-20 -mr-20 -mt-20"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10"></div>
         
-        <h2 className="text-lg font-semibold text-gray-800 mb-4 text-left">Catégories du blog</h2>
+        <h2 className="text-lg font-semibold text-gray-800 mb-4 text-left flex items-center gap-2">
+          <BookOpen className="h-5 w-5 text-blue-600" />
+          Catégories du blog
+        </h2>
         
         <div className="flex flex-wrap justify-center gap-3 px-4 relative z-10">
           {!currentCategory ? (

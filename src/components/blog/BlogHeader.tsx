@@ -6,6 +6,34 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { generateGalleryItems } from '@/utils/galleryData';
 import { Link } from 'react-router-dom';
 import JudgeMeBadge from './JudgeMeBadge';
+import { useLazyLoading } from '@/hooks/useLazyLoading';
+import { Skeleton } from '../ui/skeleton';
+
+// Composant pour une image de carrousel avec lazy loading
+const CarouselImage = ({ item, isPriority = false }: { item: any, isPriority?: boolean }) => {
+  const { isInView, imgRef } = useLazyLoading();
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <Link to="/" className="block">
+      <div className="relative aspect-square overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
+        {!isLoaded && <Skeleton className="absolute inset-0 w-full h-full" />}
+        <img 
+          ref={imgRef}
+          src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
+          alt={item.altText}
+          className={`w-full h-full object-cover rounded-xl transition-opacity duration-300 ${
+            isLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          loading={isPriority ? "eager" : "lazy"}
+          decoding={isPriority ? "sync" : "async"}
+          fetchPriority={isPriority ? "high" : "auto"}
+          onLoad={() => setIsLoaded(true)}
+        />
+      </div>
+    </Link>
+  );
+};
 
 const BlogHeader = () => {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -214,17 +242,16 @@ const BlogHeader = () => {
           </span>
         </h3>
         
-        {/* Carrousel d'aperçu */}
+        {/* Carrousel d'aperçu avec lazy loading */}
         <div className="relative">
           <Carousel className="w-full max-w-5xl mx-auto" setApi={setCarouselApi}>
             <CarouselContent className="-ml-2 md:-ml-4">
-              {carouselItems.map(item => (
+              {carouselItems.map((item, index) => (
                 <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
-                  <Link to="/" className="block">
-                    <div className="relative aspect-square overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
-                      <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-cover rounded-xl" loading="lazy" />
-                    </div>
-                  </Link>
+                  <CarouselImage 
+                    item={item} 
+                    isPriority={index < 2} // Seules les 2 premières images sont prioritaires
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>

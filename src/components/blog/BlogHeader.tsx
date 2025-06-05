@@ -206,7 +206,7 @@ const BlogHeader = () => {
           <span 
             className="font-bold text-orange-600 px-1 py-0.5 rounded border border-orange-200"
             style={{ 
-              animation: 'backgroundPulse 0.8s ease-in-out infinite',
+              animation: 'backgroundPulse 1s ease-in-out infinite',
               background: 'transparent'
             }}
           >

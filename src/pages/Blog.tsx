@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router-dom';
 import Footer from '../components/Footer';
@@ -22,6 +22,7 @@ const Blog = () => {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   const { isLoading: isPageLoading, isCategoryChange } = usePageTransition();
+  const categorySectionRef = useRef<HTMLDivElement>(null);
 
   // Debug mode pour vérifier le chargement des articles
   useDebugBlog();
@@ -43,8 +44,14 @@ const Blog = () => {
   } = usePagination(posts, POSTS_PER_PAGE);
 
   useEffect(() => {
-    // Scroll to top seulement pour les nouvelles visites de la page, pas pour les changements de catégorie
-    if (!isCategoryChange) {
+    if (isCategoryChange && categorySectionRef.current) {
+      // Scroll vers la section des catégories lors du changement de catégorie
+      categorySectionRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    } else if (!isCategoryChange) {
+      // Scroll to top seulement pour les nouvelles visites de la page
       window.scrollTo(0, 0);
     }
   }, [isCategoryChange]);
@@ -93,12 +100,14 @@ const Blog = () => {
         
         <div className="container mx-auto px-4 pt-4 pb-12">
           {/* Sélecteur de catégories */}
-          <BlogCategorySelector
-            categories={availableCategories}
-            currentCategory={categoryParam}
-            currentDescription={currentCategoryDescription}
-            isLoading={isLoading}
-          />
+          <div ref={categorySectionRef}>
+            <BlogCategorySelector
+              categories={availableCategories}
+              currentCategory={categoryParam}
+              currentDescription={currentCategoryDescription}
+              isLoading={isLoading}
+            />
+          </div>
 
           {/* Contenu principal du blog */}
           <BlogContent

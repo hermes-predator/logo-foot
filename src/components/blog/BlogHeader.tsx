@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -166,7 +167,9 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-0 rounded-lg shadow-lg max-w-xs overflow-hidden">
                   <div className="bg-gray-100 text-gray-900 px-3 py-2 text-center font-semibold border-b border-gray-200">
-                    ⦗FRONT-CLOUD⦘~ Football.zip
+                    <Link to="/" className="hover:text-gray-700 transition-colors">
+                      ⦗FRONT-CLOUD⦘~ Football.zip
+                    </Link>
                   </div>
                   <div className="p-4">
                     <div className="grid grid-cols-2 gap-2">
@@ -199,9 +202,9 @@ const BlogHeader = () => {
         {/* Titre de l'aperçu avec mise en valeur subtile */}
         <h3 className="font-semibold text-gray-700 mb-6 text-center text-sm">
           Aperçu de quelques collections :{' '}
-          <span className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200">
+          <Link to="/" className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200 hover:bg-orange-100 hover:text-orange-700 transition-colors">
             ⦗FRONT-CLOUD⦘~ Football.zip
-          </span>
+          </Link>
         </h3>
         
         {/* Carrousel d'aperçu */}

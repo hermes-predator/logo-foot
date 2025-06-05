@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Yassine B.",
-    content: "Ça m'a apporté beaucoup de confiance pour mon projet de paris sportifs, merci pour le gain de temps",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci pour le gain de temps",
     rating: 5,
     initials: "YB",
     bgColor: "bg-green-500"

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -31,7 +30,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Yassine B.",
     role: "Community Manager",
-    content: "Ça m'a apporté beaucoup de confiance pour mon projet de paris sportifs, merci pour le gain de temps",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci pour le gain de temps",
     rating: 5
   },
   {

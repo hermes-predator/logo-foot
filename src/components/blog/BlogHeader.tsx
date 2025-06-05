@@ -167,7 +167,7 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-0 rounded-lg shadow-lg max-w-xs overflow-hidden">
                   <div className="bg-gray-100 text-gray-900 px-3 py-2 text-center font-semibold border-b border-gray-200">
-                    <Link to="/" className="hover:text-gray-700 transition-colors">
+                    <Link to="/" className="block hover:text-gray-600 transition-colors duration-200">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </Link>
                   </div>
@@ -202,7 +202,7 @@ const BlogHeader = () => {
         {/* Titre de l'aperçu avec mise en valeur subtile */}
         <h3 className="font-semibold text-gray-700 mb-6 text-center text-sm">
           Aperçu de quelques collections :{' '}
-          <Link to="/" className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200 hover:bg-orange-100 hover:text-orange-700 transition-colors">
+          <Link to="/" className="font-bold text-orange-600 bg-orange-50 px-1 py-0.5 rounded border border-orange-200 hover:bg-orange-75 hover:border-orange-250 transition-all duration-200">
             ⦗FRONT-CLOUD⦘~ Football.zip
           </Link>
         </h3>

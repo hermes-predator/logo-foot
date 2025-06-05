@@ -21,7 +21,7 @@ const TrustIndicators = () => {
       />
       <TrustCard 
         icon={<HandHeart className="text-gray-600" />}
-        title="Support Disponible"
+        title="Service Client"
         description="Email : contact@logo-foot.com"
         hoverContent="Notre équipe de support est disponible pour répondre à vos questions et vous aider en cas de besoin."
       />

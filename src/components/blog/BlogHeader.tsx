@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Eye, Folder, AlertTriangle, ArrowRight, BadgeCheck } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
@@ -109,7 +107,7 @@ const BlogHeader = () => {
             </h2>
             <div className="space-y-2 mb-4">
               <p className="text-base text-orange-600 leading-relaxed font-semibold">
-                Téléchargez <span className="font-bold text-orange-600 underline decoration-2 decoration-orange-600">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
+                Téléchargez <Link to="/" className="font-bold text-orange-600 underline decoration-2 decoration-orange-600 hover:text-orange-700 transition-colors duration-200">+ de 8 600 LOGOS de Clubs de Football</Link> organisés par pays.
               </p>
               <p className="text-sm text-orange-600 font-medium">
                 Obtenez toutes les ressources dans un fichier ZIP complet.
@@ -168,7 +166,7 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent className="bg-white border border-gray-200/50 p-0 rounded-lg shadow-lg max-w-xs overflow-hidden">
                   <div className="bg-gray-100 text-gray-900 px-3 py-2 text-center font-semibold border-b border-gray-200">
-                    <span className="block animate-pulse" style={{ animationDuration: '3s' }}>
+                    <span className="block">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </span>
                   </div>
@@ -218,13 +216,15 @@ const BlogHeader = () => {
         <div className="relative">
           <Carousel className="w-full max-w-5xl mx-auto" setApi={setCarouselApi}>
             <CarouselContent className="-ml-2 md:-ml-4">
-              {carouselItems.map(item => <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
+              {carouselItems.map(item => (
+                <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-1/2">
                   <Link to="/" className="block">
                     <div className="relative aspect-square overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
                       <img src={item.imageUrl} alt={item.altText} className="w-full h-full object-cover rounded-xl" loading="lazy" />
                     </div>
                   </Link>
-                </CarouselItem>)}
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious className="left-0" />
             <CarouselNext className="right-0" />
@@ -280,4 +280,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

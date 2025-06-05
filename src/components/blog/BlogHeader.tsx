@@ -4,12 +4,16 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
 
 interface BlogHeaderProps {
-  images: string[];
-  title: string;
-  description: string;
+  images?: string[];
+  title?: string;
+  description?: string;
 }
 
-const BlogHeader: React.FC<BlogHeaderProps> = ({ images, title, description }) => {
+const BlogHeader: React.FC<BlogHeaderProps> = ({ 
+  images = ['/lovable-uploads/5401e79e-0c75-471c-b89c-5f146818720b.png'], 
+  title = "Blog Logo Foot", 
+  description = "Découvrez l'univers passionnant des logos de football" 
+}) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const { shouldLoad, handleLoad } = useLazyLoading();
 

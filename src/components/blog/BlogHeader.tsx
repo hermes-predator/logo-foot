@@ -88,15 +88,15 @@ const BlogHeader = () => {
         filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05))'
       }}>
           
-          {/* Bulle d'attention dans le coin supérieur gauche - améliorée */}
+          {/* Bulle d'attention dans le coin supérieur gauche - avec couleurs du bouton */}
           <div className="absolute top-0 left-0 z-10">
             <div className="relative p-3 group" style={{
-            background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b  100%)',
+            background: 'linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%)',
             borderTopLeftRadius: '8px',
             borderTopRightRadius: '0px',
             borderBottomLeftRadius: '0px',
             borderBottomRightRadius: '16px',
-            boxShadow: '0 2px 8px rgba(245, 158, 11, 0.3)'
+            boxShadow: '0 2px 8px rgba(251, 146, 60, 0.3)'
           }}>
               <AlertTriangle className="h-5 w-5 text-white drop-shadow-sm group-hover:scale-110 transition-transform duration-200" />
             </div>

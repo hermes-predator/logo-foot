@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Download, X } from 'lucide-react';
+import { ArrowRight, Folder, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -81,7 +80,7 @@ const FloatingCTA = () => {
             <div className="relative px-2">              
               <div className="flex items-center mb-2">
                 <span className={`inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden ${isVerySmallScreen ? 'hidden' : ''}`}>
-                  <Download 
+                  <Folder 
                     className="h-4 w-4 text-white animate-bounce" 
                     style={{ 
                       animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',
@@ -131,7 +130,7 @@ const FloatingCTA = () => {
             <div className="flex items-center justify-between px-3 gap-3">
               <div className="flex items-center flex-1 min-w-0">
                 <span className="inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden">
-                  <Download 
+                  <Folder 
                     className="h-4 w-4 text-white animate-bounce" 
                     style={{ animation: 'bounce 1.2s ease infinite' }} 
                   />
@@ -170,7 +169,7 @@ const FloatingCTA = () => {
               <div className="flex items-center">
                 <button onClick={handleNavigateToHome} className="group flex items-center">
                   <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden">
-                    <Download 
+                    <Folder 
                       className="h-5 w-5 lg:h-6 lg:w-6 text-white animate-bounce" 
                       style={{ 
                         animation: 'bounce 1.2s ease infinite, glow 1.5s ease-in-out infinite alternate',

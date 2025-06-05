@@ -89,11 +89,11 @@ const FloatingCTA = () => {
                   />
                   <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                 </span>
-                <div className="flex-1 min-w-0 flex items-center">
-                  <p className="text-white font-medium">
-                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 truncate block ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-white font-medium m-0 p-0">
+                    <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
                     {!isVerySmallScreen && (
-                      <span className="text-blue-100/90 font-light text-sm italic truncate leading-relaxed block">
+                      <span className="text-blue-100/90 font-light text-sm italic leading-relaxed block m-0 p-0">
                         <u className="font-medium">8 600+ logos de foot</u>
                       </span>
                     )}
@@ -137,7 +137,7 @@ const FloatingCTA = () => {
                   />
                 </span>
                 <div className="truncate flex items-center">
-                  <p className="text-white font-medium text-base truncate">⦗FRONT-CLOUD⦘~ Football.zip</p>
+                  <p className="text-white font-medium text-base truncate m-0 p-0">⦗FRONT-CLOUD⦘~ Football.zip</p>
                 </div>
               </div>
               
@@ -181,9 +181,9 @@ const FloatingCTA = () => {
                     <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
                   </span>
                   <div className="relative flex items-start flex-col">
-                    <p className="text-white font-medium">
-                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block">
+                    <p className="text-white font-medium m-0 p-0">
+                      <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                      <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block m-0 p-0">
                         Un fichier ZIP contenant <u className="font-medium">+ de 8 600 logos de foot</u> organisés par pays
                       </span>
                     </p>

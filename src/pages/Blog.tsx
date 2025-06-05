@@ -45,10 +45,14 @@ const Blog = () => {
 
   useEffect(() => {
     if (isCategoryChange && categorySectionRef.current) {
-      // Scroll vers la section des catégories lors du changement de catégorie
-      categorySectionRef.current.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start' 
+      // Scroll vers la section des catégories avec un offset pour laisser plus de marge
+      const element = categorySectionRef.current;
+      const yOffset = -80; // Offset négatif pour remonter un peu plus haut
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
       });
     } else if (!isCategoryChange) {
       // Scroll to top seulement pour les nouvelles visites de la page

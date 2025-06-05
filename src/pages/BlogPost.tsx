@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../data/blog';
@@ -20,6 +20,7 @@ import FloatingCTA from '../components/blog/FloatingCTA';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const categorySectionRef = useRef<HTMLDivElement>(null);
   
   // ✅ TOUS les hooks doivent être appelés avant les early returns
   const { isLoading: isPageLoading } = usePageTransition();
@@ -31,10 +32,19 @@ const BlogPost: React.FC = () => {
   // Hook pour les catégories - appelé avant les early returns
   const { availableCategories, currentCategoryDescription } = useBlogCategories(post?.category);
 
-  // Gestion du scroll pour les articles - appelé avant les early returns
+  // Gestion du scroll pour les articles - même comportement que pour les catégories
   useEffect(() => {
-    // Pas de scroll automatique vers le haut pour préserver l'expérience utilisateur
-    // L'utilisateur reste à sa position actuelle sur la page
+    if (categorySectionRef.current) {
+      // Scroll vers la section des catégories avec un offset pour laisser plus de marge
+      const element = categorySectionRef.current;
+      const yOffset = -100; // Offset négatif pour remonter un peu plus haut
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
   }, []);
 
   // ✅ Maintenant on peut faire les early returns après tous les hooks
@@ -92,7 +102,7 @@ const BlogPost: React.FC = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
           {/* Sélecteur de catégories */}
-          <div className="mb-12">
+          <div ref={categorySectionRef} className="mb-12">
             <BlogCategorySelector 
               categories={availableCategories}
               currentCategory={post.category}

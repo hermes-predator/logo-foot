@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,89 +8,93 @@ import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
-
 const PackDescription = () => {
-  const { toast } = useToast();
-  
+  const {
+    toast
+  } = useToast();
   const handlePayment = () => {
     toast({
       title: "Redirection vers le paiement",
-      description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
+      description: "Vous allez être redirigé vers notre page de paiement sécurisée."
     });
     const returnUrl = `${window.location.origin}/payment-success`;
     // Mise à jour du lien SumUp
     window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
   };
-
-  
-  return (
-    <div className="space-y-0.5 mt-1">
+  return <div className="space-y-0.5 mt-1">
       {/* Removed the title section completely */}
       
       {/* Section des dossiers avec leurs descriptions */}
       <div className="mb-6 relative">
-        <FolderCard
-          title="𝐅.𝟎𝟏 – Logos des clubs de football"
-          colorScheme="gray"
-          items={[
-            { label: "Format", value: "PNG (fond transparent)" },
-            { label: "Dimensions", value: "120px" },
-            { label: "Sous-groupes", value: "60 collections" },
-            { label: "Quantité totale", value: "8 062 ressources" }
-          ]}
-          collections="Default (20) • Albanie (70) • Allemagne (450) • Angleterre (450) • Arabie Saoudite (80) • Argentine (200) • Arménie (40) • Australie (80) • Autriche (120) • Azerbaïdjan (50) • Belgique (160) • Biélorussie (100) • Bosnie-Herzégovine (80) • Brésil (300) • Bulgarie (100) • Chypre (40) • Croatie (120) • Danemark (150) • Écosse (120) • Espagne (450) • Estonie (40) • États-Unis (300) • Finlande (100) • France (450) • Géorgie (40) • Gibraltar (12) • Grèce (150) • Hongrie (120) • Iles Féroés (20) • Irlande (100) • Irlande du Nord (60) • Islande (80) • Israël (80) • Italie (400) • Kazakhstan (40) • Kosovo (40) • Lettonie (40) • Lituanie (40) • Luxembourg (80) • Macédoine du Nord (40) • Malte (60) • Moldavie (50) • Monténégro (40) • Norvège (150) • Pays-Bas (300) • Pays de Galles (80) • Pologne (150) • Portugal (200) • Qatar (20) • République Tchèque (150) • Roumanie (150) • Russie (150) • Serbie (120) • Slovaquie (120) • Slovénie (80) • Suède (150) • Suisse (150) • Turquie (200) • Ukraine (100) • Sélections nationales de football (240)"
-          isFirst={true}
-          decorativeIcon={<Shield />}
-        />
+        <FolderCard title="𝐅.𝟎𝟏 – Logos des clubs de football" colorScheme="gray" items={[{
+        label: "Format",
+        value: "PNG (fond transparent)"
+      }, {
+        label: "Dimensions",
+        value: "120px"
+      }, {
+        label: "Sous-groupes",
+        value: "60 collections"
+      }, {
+        label: "Quantité totale",
+        value: "8 062 ressources"
+      }]} collections="Default (20) • Albanie (70) • Allemagne (450) • Angleterre (450) • Arabie Saoudite (80) • Argentine (200) • Arménie (40) • Australie (80) • Autriche (120) • Azerbaïdjan (50) • Belgique (160) • Biélorussie (100) • Bosnie-Herzégovine (80) • Brésil (300) • Bulgarie (100) • Chypre (40) • Croatie (120) • Danemark (150) • Écosse (120) • Espagne (450) • Estonie (40) • États-Unis (300) • Finlande (100) • France (450) • Géorgie (40) • Gibraltar (12) • Grèce (150) • Hongrie (120) • Iles Féroés (20) • Irlande (100) • Irlande du Nord (60) • Islande (80) • Israël (80) • Italie (400) • Kazakhstan (40) • Kosovo (40) • Lettonie (40) • Lituanie (40) • Luxembourg (80) • Macédoine du Nord (40) • Malte (60) • Moldavie (50) • Monténégro (40) • Norvège (150) • Pays-Bas (300) • Pays de Galles (80) • Pologne (150) • Portugal (200) • Qatar (20) • République Tchèque (150) • Roumanie (150) • Russie (150) • Serbie (120) • Slovaquie (120) • Slovénie (80) • Suède (150) • Suisse (150) • Turquie (200) • Ukraine (100) • Sélections nationales de football (240)" isFirst={true} decorativeIcon={<Shield />} />
         
-        <FolderCard
-          title="𝐅.𝟎𝟐 – Logos des compétitions de football"
-          colorScheme="gray"
-          items={[
-            { label: "Format", value: "PNG (fond transparent)" },
-            { label: "Dimensions", value: "200px" },
-            { label: "Sous-groupes", value: "1 collection" },
-            { label: "Quantité totale", value: "100 ressources" }
-          ]}
-          decorativeIcon={<Trophy />}
-        />
+        <FolderCard title="𝐅.𝟎𝟐 – Logos des compétitions de football" colorScheme="gray" items={[{
+        label: "Format",
+        value: "PNG (fond transparent)"
+      }, {
+        label: "Dimensions",
+        value: "200px"
+      }, {
+        label: "Sous-groupes",
+        value: "1 collection"
+      }, {
+        label: "Quantité totale",
+        value: "100 ressources"
+      }]} decorativeIcon={<Trophy />} />
 
-        <FolderCard
-          title="𝐅.𝟎𝟑 – Logos des drapeaux mondiaux"
-          colorScheme="gray"
-          items={[
-            { label: "Format", value: "PNG (fond transparent)" },
-            { label: "Dimensions", value: "200px" },
-            { label: "Sous-groupes", value: "1 collection" },
-            { label: "Quantité totale", value: "270 ressources" }
-          ]}
-          decorativeIcon={<Flag />}
-        />
+        <FolderCard title="𝐅.𝟎𝟑 – Logos des drapeaux mondiaux" colorScheme="gray" items={[{
+        label: "Format",
+        value: "PNG (fond transparent)"
+      }, {
+        label: "Dimensions",
+        value: "200px"
+      }, {
+        label: "Sous-groupes",
+        value: "1 collection"
+      }, {
+        label: "Quantité totale",
+        value: "270 ressources"
+      }]} decorativeIcon={<Flag />} />
 
-        <FolderCard
-          title="𝐅.𝟎𝟒 – Couvertures - Instruments de football"
-          colorScheme="gray"
-          items={[
-            { label: "Format", value: "PNG (fond transparent)" },
-            { label: "Dimensions", value: "150px" },
-            { label: "Sous-groupes", value: "3 collections" },
-            { label: "Quantité totale", value: "220 ressources" }
-          ]}
-          decorativeIcon={<Image />}
-        />
+        <FolderCard title="𝐅.𝟎𝟒 – Couvertures - Instruments de football" colorScheme="gray" items={[{
+        label: "Format",
+        value: "PNG (fond transparent)"
+      }, {
+        label: "Dimensions",
+        value: "150px"
+      }, {
+        label: "Sous-groupes",
+        value: "3 collections"
+      }, {
+        label: "Quantité totale",
+        value: "220 ressources"
+      }]} decorativeIcon={<Image />} />
 
-        <FolderCard
-          title="𝐅.𝟎𝟓 – Logos des bookmakers"
-          colorScheme="gray"
-          items={[
-            { label: "Format", value: "PNG (fond transparent)" },
-            { label: "Dimensions", value: "200px" },
-            { label: "Sous-groupes", value: "1 collection" },
-            { label: "Quantité totale", value: "50 ressources" }
-          ]}
-          isLast={true}
-          decorativeIcon={<Coins />}
-        />
+        <FolderCard title="𝐅.𝟎𝟓 – Logos des bookmakers" colorScheme="gray" items={[{
+        label: "Format",
+        value: "PNG (fond transparent)"
+      }, {
+        label: "Dimensions",
+        value: "200px"
+      }, {
+        label: "Sous-groupes",
+        value: "1 collection"
+      }, {
+        label: "Quantité totale",
+        value: "50 ressources"
+      }]} isLast={true} decorativeIcon={<Coins />} />
       </div>
       
       <div className="space-y-4 pt-5 mt-5">
@@ -149,7 +152,7 @@ const PackDescription = () => {
           <div className="absolute top-0 right-0 z-10">
             <div className="bg-green-600 text-white px-3 py-1.5 rounded-tr-xl rounded-bl-xl font-semibold text-xs flex items-center gap-1 shadow-md">
               <Folder className="h-3 w-3 text-white" />
-              <span>Valeur de 50€</span>
+              <span>Valeur de 100€</span>
             </div>
           </div>
           
@@ -160,10 +163,7 @@ const PackDescription = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <DialogClose asChild>
-                <Button 
-                  onClick={handlePayment}
-                  className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden z-10"
-                >
+                <Button onClick={handlePayment} className="w-full md:w-4/5 mx-auto block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-lg shadow-md border-b-[3px] border-blue-800 hover:shadow-lg transition-all duration-300 active:border-b-0 active:translate-y-0.5 active:scale-[0.99] group h-20 relative overflow-hidden z-10">
                   {/* Effet de brillance amélioré sur le bouton */}
                   <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite] z-0"></div>
@@ -211,19 +211,11 @@ const PackDescription = () => {
               <div className="flex flex-wrap items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-medium text-gray-500">Paiement sécurisé via</span>
-                  <img 
-                    src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" 
-                    alt="SumUp" 
-                    className="h-5 object-contain" 
-                  />
+                  <img src="/lovable-uploads/229a8e75-4cd5-49d4-850f-82a71f5aa7da.png" alt="SumUp" className="h-5 object-contain" />
                 </div>
                 
                 <div className="flex items-center gap-3 ml-auto">
-                  <img 
-                    src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" 
-                    alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" 
-                    className="h-11 object-contain" 
-                  />
+                  <img src="/lovable-uploads/170059cc-f820-48d2-9a57-93c93a1ce8a7.png" alt="Moyens de paiement acceptés: Visa, Mastercard, American Express, Apple Pay, Google Pay" className="h-11 object-contain" />
                 </div>
               </div>
             </div>
@@ -251,8 +243,6 @@ const PackDescription = () => {
           <p>Support : Assistance par email 7j/7 : <a href="mailto:contact@logo-foot.com" className="font-semibold hover:underline">contact@logo-foot.com</a></p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default PackDescription;

@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -81,7 +82,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
       </div>
 
       {!isLoading && totalPages > 1 && (
-        <Pagination className="mt-8">
+        <Pagination className="mt-12">
           <PaginationContent className="gap-2">
             <PaginationItem>
               <PaginationLink

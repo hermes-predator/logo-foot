@@ -93,8 +93,8 @@ const Blog = () => {
         page={currentPage}
       />
 
-      {/* Header avec présentation du blog et carrousel */}
-      <BlogHeader featuredPosts={posts} />
+      {/* Header avec présentation du blog */}
+      <BlogHeader />
       
       <div className="container mx-auto px-4 pt-4 pb-12">
         {/* Sélecteur de catégories */}

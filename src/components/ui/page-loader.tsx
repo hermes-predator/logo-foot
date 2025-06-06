@@ -27,7 +27,7 @@ const PageLoader: React.FC<PageLoaderProps> = ({
     >
       <div className="flex flex-col items-center gap-4">
         <Loader2 className="w-10 h-10 text-blue-500 animate-spin" />
-        <p className="text-sm text-gray-600 font-medium animate-pulse whitespace-nowrap">
+        <p className="text-sm text-gray-600 font-medium whitespace-nowrap">
           {message}
         </p>
       </div>

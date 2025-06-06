@@ -20,7 +20,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const categoryInfo = BLOG_CATEGORIES[post.category];
 
   return (
-    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 active:scale-[0.98] hover:border-blue-200">
+    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 active:scale-[0.98] hover:border-blue-200">
       <Link to={postUrl} className="block">
         <div className="relative overflow-hidden">
           <BlogImage 

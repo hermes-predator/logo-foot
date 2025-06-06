@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -93,9 +94,7 @@ const PaymentSuccess = () => {
                   <Check className="h-8 w-8 text-green-500" />
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">Paiement confirmé ! (9,00€)</h1>
-                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />
-Votre collection de logos<br />
-est prête à être téléchargée.</p>
+                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.</p>
               </div>
             </motion.div>
 
@@ -189,9 +188,6 @@ est prête à être téléchargée.</p>
                 <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Téléchargement
                 </h2>
-                <p className="text-gray-600 mb-4">
-                  Votre collection est prête à être téléchargée. Cliquez sur le bouton ci-dessous pour obtenir votre fichier ZIP.
-                </p>
                 
                 {/* Technical details about the file */}
                 <div className="bg-gray-50 p-4 rounded-md mb-6 border border-gray-100">

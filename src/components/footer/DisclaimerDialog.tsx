@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -43,7 +44,7 @@ const DisclaimerDialog = () => {
                 </p>
 
                 <div className="bg-gradient-to-r from-slate-100 to-gray-50 p-4 rounded-lg">
-                  <span className="font-semibold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <span className="font-semibold text-gray-800 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <p className="mt-2 text-gray-700 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3 group hover:bg-white/80 rounded-md p-2 transition-colors">
                       <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm group-hover:bg-blue-100/30 transition-colors">

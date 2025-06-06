@@ -15,7 +15,7 @@ const PageLoader: React.FC<PageLoaderProps> = ({
 
   return (
     <div 
-      className="fixed inset-0 bg-white/95 backdrop-blur-sm z-[9999] flex items-center justify-center"
+      className="fixed inset-0 bg-white z-[9999] flex items-center justify-center"
       style={{
         position: 'fixed',
         top: 0,

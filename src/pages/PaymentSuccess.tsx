@@ -186,9 +186,7 @@ est prête à être téléchargée.</p>
             duration: 0.5
           }} className="bg-white rounded-lg border border-gray-200">
               <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-4">
-                  Téléchargement
-                </h2>
+                
                 <p className="text-gray-600 mb-4">
                   Votre collection est prête à être téléchargée. Cliquez sur le bouton ci-dessous pour obtenir votre fichier ZIP.
                 </p>

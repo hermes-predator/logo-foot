@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -61,7 +62,7 @@ const PaymentButton = () => {
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">
-                <span className="text-center font-semibold text-2xl drop-shadow-sm" id="payment-button-description">
+                <span className="text-center font-semibold text-3xl drop-shadow-sm" id="payment-button-description">
                   {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
                 </span>
               </div>

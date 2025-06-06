@@ -93,7 +93,9 @@ const PaymentSuccess = () => {
                   <Check className="h-8 w-8 text-green-500" />
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">Paiement confirmé ! (9,00€)</h1>
-                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.</p>
+                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />
+Votre collection de logos<br />
+est prête à être téléchargée.</p>
               </div>
             </motion.div>
 
@@ -167,10 +169,7 @@ const PaymentSuccess = () => {
                     <span className="font-semibold">9,00 €</span>
                   </div>
                   
-                  <div className="border-t border-gray-200 pt-4 flex justify-between text-gray-700">
-                    <span>Total</span>
-                    <span className="font-bold text-lg">9,00 €</span>
-                  </div>
+                  
                 </div>
               </div>
             </motion.div>

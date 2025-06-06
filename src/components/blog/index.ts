@@ -1,9 +1,5 @@
 
 export { default as BlogHeader } from './BlogHeader';
-export { default as BlogHeroSection } from './BlogHeroSection';
-export { default as BlogStatsSection } from './BlogStatsSection';
-export { default as BlogCallToAction } from './BlogCallToAction';
-export { default as BlogBadges } from './BlogBadges';
 export { default as BlogArticleList } from './BlogArticleList';
 export { default as BlogArticleCard } from './BlogArticleCard';
 export { default as BlogImage } from './BlogImage';

@@ -46,3 +46,6 @@ export const BlogHeader = ({
     </div>
   );
 };
+
+// Add default export
+export default BlogHeader;

@@ -7,7 +7,7 @@ interface BlogPreviewCarouselProps {
 }
 
 export const BlogPreviewCarousel = ({ images = [] }: BlogPreviewCarouselProps) => {
-  const { isInView, imgRef, shouldLoad, handleLoad } = useLazyLoading();
+  const { isInView, shouldLoad } = useLazyLoading();
 
   if (images.length === 0) return null;
 
@@ -21,12 +21,11 @@ export const BlogPreviewCarousel = ({ images = [] }: BlogPreviewCarouselProps) =
           <div key={index} className="flex-shrink-0">
             <div className="w-32 h-32 bg-white rounded-lg shadow-md p-2 hover:shadow-lg transition-shadow duration-200">
               <OptimizedImage
-                ref={index === 0 ? imgRef : undefined}
                 src={shouldLoad ? image : ''}
                 alt={`Aperçu logo ${index + 1}`}
                 className="w-full h-full object-contain"
-                onLoad={handleLoad}
-                loading={index === 0 ? "eager" : "lazy"}
+                priority={index === 0}
+                aspectRatio={1}
               />
             </div>
           </div>

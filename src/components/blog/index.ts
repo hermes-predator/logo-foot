@@ -1,5 +1,5 @@
 
-export { default as BlogHeader } from './BlogHeader';
+export { BlogHeader as default } from './BlogHeader';
 export { default as BlogArticleList } from './BlogArticleList';
 export { default as BlogArticleCard } from './BlogArticleCard';
 export { default as BlogImage } from './BlogImage';

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -52,7 +51,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Ajouter les schémas JSON-LD enrichis pour les 3 premières images */}
       <Helmet>
         {imageSchemas.map((schema, index) => (
@@ -81,7 +80,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
       </div>
 
       {!isLoading && totalPages > 1 && (
-        <Pagination className="my-8">
+        <Pagination className="my-4">
           <PaginationContent className="gap-2">
             <PaginationItem>
               <PaginationLink

@@ -12,3 +12,4 @@ export { default as BlogCategorySelector } from './BlogCategorySelector';
 export { default as BlogContent } from './BlogContent';
 export { default as HeroBackground } from './HeroBackground';
 export { default as BlogHeroSection } from './BlogHeroSection';
+export { default as BlogPreviewCarousel } from './BlogPreviewCarousel';

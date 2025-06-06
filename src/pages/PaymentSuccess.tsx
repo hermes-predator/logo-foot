@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -93,7 +94,9 @@ const PaymentSuccess = () => {
                   <Check className="h-8 w-8 text-green-500" />
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">Paiement confirmé ! (9,00€)</h1>
-                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance. ⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.</p>
+                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />
+⦗FRONT-CLOUD⦘~ Football.zip<br />
+est prêt à être téléchargé.</p>
               </div>
             </motion.div>
 

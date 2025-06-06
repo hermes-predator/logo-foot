@@ -24,28 +24,28 @@ const ContactForm = () => {
         
         {/* Informations sur les commandes intégrées */}
         <div className="mt-4 pt-4 border-t border-gray-200">
-          <p className="text-gray-800 font-bold mb-3">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+          <p className="text-gray-800 font-bold mb-3 text-base">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
-          <div className="space-y-2.5 ml-1">
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+          <div className="space-y-3 ml-1">
+            <div className="flex items-center gap-3 p-3 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-2.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <User className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
+              <span className="font-medium text-gray-700 text-base">Votre nom et prénom</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <div className="flex items-center gap-3 p-3 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-2.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <Clock className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
+              <span className="font-medium text-gray-700 text-base">La date et l'heure d'achat</span>
             </div>
             
-            <div className="flex items-center gap-3 p-2 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <div className="flex items-center gap-3 p-3 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-2.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <Ticket className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">Votre preuve d'achat (reçu)</span>
+              <span className="font-medium text-gray-700 text-base">Votre preuve d'achat (reçu)</span>
             </div>
           </div>
         </div>

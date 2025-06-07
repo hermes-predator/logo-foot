@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const choletLogoPost: BlogPost = {
-  id: 556,
+  id: 56,
   title: "Logo Cholet : Histoire et Évolution de l'Écusson du SO Cholet [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Cholet, un emblème qui représente la fierté du football des Mauges depuis des décennies.",
   date: "2024-04-15",

@@ -56,7 +56,7 @@ const PaymentButton = () => {
             {/* Effet de brillance - maintenant importé directement sans lazy loading */}
             <ButtonEffects />
             
-            <div className="flex items-center justify-center w-full gap-5 relative z-10">
+            <div className="flex items-center justify-center w-full gap-7 relative z-10">
               <ShoppingCart 
                 className="drop-shadow-sm flex-shrink-0"
                 size={18}

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lionelMessiPost: BlogPost = {
-  id: 28,
+  id: 25,
   title: "Lionel Messi : Analyse Complète du Plus Grand Joueur de Tous les Temps",
   excerpt: "Découvrez notre analyse approfondie de Lionel Messi, sa carrière légendaire, ses records incroyables, son style de jeu unique et son impact sur l'histoire du football mondial.",
   date: "2024-04-02",

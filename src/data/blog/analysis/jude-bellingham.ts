@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const judeBellinghamPost: BlogPost = {
-  id: 12,
+  id: 18,
   title: "Jude Bellingham : L'étoile anglaise qui brille au Real Madrid",
   date: "2025-02-12",
   category: "players",

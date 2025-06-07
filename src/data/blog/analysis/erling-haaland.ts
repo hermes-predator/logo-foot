@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const erlingHaalandPost: BlogPost = {
-  id: 31,
+  id: 12,
   title: "Erling Haaland : Analyse Complète du Robot-Buteur de Manchester City",
   excerpt: "Découvrez notre analyse approfondie d'Erling Haaland, son parcours impressionnant, son style de jeu dévastateur, ses statistiques records et son impact sur le football moderne.",
   date: "2024-04-05",

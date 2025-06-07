@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bradleyBarcolaPost: BlogPost = {
-  id: 4,
+  id: 5,
   title: "Bradley Barcola : Analyse Complète de la Pépite Française du PSG",
   excerpt: "Découvrez Bradley Barcola, son parcours exceptionnel, ses statistiques, son style de jeu et pourquoi il est considéré comme l'un des talents les plus prometteurs du football français.",
   date: "2024-08-28",

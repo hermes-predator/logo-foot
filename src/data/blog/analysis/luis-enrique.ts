@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const luisEnriquePost: BlogPost = {
-  id: 113,
+  id: 26,
   title: "Luis Enrique : L'Architecte de la Renaissance du PSG [Analyse 2024]",
   excerpt: "Découvrez notre analyse approfondie de Luis Enrique, sa philosophie de jeu, ses méthodes d'entraînement et comment il transforme le Paris Saint-Germain en une équipe plus collective et conquérante.",
   date: "2024-06-15",

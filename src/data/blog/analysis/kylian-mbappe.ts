@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const kylianMbappePost: BlogPost = {
-  id: 14,
+  id: 20,
   title: "Kylian Mbappé : Analyse Complète du Phénomène Français",
   excerpt: "Découvrez notre analyse détaillée de Kylian Mbappé, son parcours exceptionnel, son style de jeu unique, ses statistiques impressionnantes et son avenir au sommet du football mondial.",
   date: "2024-04-01",

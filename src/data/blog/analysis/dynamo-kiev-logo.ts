@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dynamoKievLogoPost: BlogPost = {
-  id: 25,
+  id: 11,
   title: "Emblème du Dynamo Kiev : Histoire et Symbolisme du Logo Légendaire",
   excerpt: "Découvrez l'histoire fascinante du logo du Dynamo Kiev, son évolution à travers les décennies, sa signification profonde et son impact sur l'identité du club ukrainien.",
   date: "2024-03-25",

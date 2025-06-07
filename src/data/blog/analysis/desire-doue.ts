@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const desireDouePost: BlogPost = {
-  id: 7,
+  id: 10,
   title: "Désiré Doué : Analyse Complète du Prodige Français de Rennes",
   excerpt: "Découvrez l'analyse détaillée de Désiré Doué, son style de jeu, son parcours et son potentiel. Portrait complet d'un des plus grands talents du football français.",
   date: "2024-08-22",

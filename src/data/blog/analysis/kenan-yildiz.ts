@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const kenanYildizPost: BlogPost = {
-  id: 13,
+  id: 19,
   title: "Kenan Yıldız : Le Prodige Turc qui Brille à la Juventus",
   excerpt: "Découvrez l'analyse complète de Kenan Yıldız, son parcours atypique, ses qualités techniques exceptionnelles et pourquoi il est considéré comme l'avenir du football turc et italien.",
   date: "2024-06-27",

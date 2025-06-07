@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lamineYamalPost: BlogPost = {
-  id: 15,
+  id: 23,
   title: "Lamine Yamal : Analyse du Phénomène et son Parcours Extraordinaire [2024]",
   excerpt: "Découvrez l'analyse complète de Lamine Yamal, prodige du FC Barcelone, son parcours impressionnant, ses statistiques et tout ce qu'il faut savoir sur cette future star du football mondial.",
   date: "2024-05-28",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hugoEkitikePost: BlogPost = {
-  id: 61,
+  id: 15,
   title: "Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort",
   date: "2025-04-10",
   category: "players",

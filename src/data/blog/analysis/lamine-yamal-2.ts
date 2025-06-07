@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lamineYamal2Post: BlogPost = {
-  id: 16,
+  id: 22,
   title: "Lamine Yamal et Aitana Bonmatí : Les Joyaux Catalans qui Dominent le Football",
   excerpt: "Analyse comparative entre Lamine Yamal et Aitana Bonmatí, les deux stars du FC Barcelone qui brillent tant en club qu'en sélection espagnole, représentant le présent et l'avenir du football catalan.",
   date: "2024-04-15",

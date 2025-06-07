@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const sandhausenLogoPost: BlogPost = {
-  id: 428,
+  id: 40,
   title: "**Logo SV Sandhausen** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Sandhausen**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",

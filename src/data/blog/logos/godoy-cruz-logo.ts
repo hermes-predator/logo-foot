@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const godoyCruzLogoPost: BlogPost = {
-  id: 436,
+  id: 33,
   title: "**Godoy Cruz Logo** : Histoire et Symbolisme du Club Argentin [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **Godoy Cruz logo**, emblème emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de foot Godoy Cruz**.",
   date: "2024-04-22",

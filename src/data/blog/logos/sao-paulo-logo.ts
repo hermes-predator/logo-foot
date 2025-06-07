@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const saoPauloLogoPost: BlogPost = {
-  id: 417,
+  id: 36,
   title: "**Logo São Paulo FC** : Histoire et Design de l'Emblème Iconique du Football Brésilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo São Paulo**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
   date: "2025-04-13",

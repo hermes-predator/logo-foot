@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const jsKabylieLogoPost: BlogPost = {
-  id: 570,
+  id: 1003, // Changé de 570 à 1003 pour éviter les conflits
   title: "**Logo JS Kabylie** : Histoire et Évolution de l'Emblème du Club Algérien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo JS Kabylie**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
   date: "2024-04-16",
@@ -76,6 +76,5 @@ Le **logo js kabylie** s'exprime sur de multiples supports :
   keywords: "js kabylie logo, logo js kabylie, logo png js kabylie",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 570
+  galleryImageId: 1003
 };
-

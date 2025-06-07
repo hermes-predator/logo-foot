@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spainLogoPost: BlogPost = {
-  id: 99, // Using a unique ID that's not already used
+  id: 531, // Using a unique ID that's not already used
   title: "Logo Espagne : Histoire et Évolution de l'Emblème de La Roja [2024]",
   excerpt: "Découvrez l'histoire complète du logo Espagne, son évolution au fil des années et la symbolique derrière cette identité visuelle emblématique du football mondial.",
   date: "2024-05-31",
-  galleryImageId: 86, // Using the existing galleryImageId for Spain
+  galleryImageId: 531, // Using the existing galleryImageId for Spain
   content: `# L'Histoire Fascinante du **Logo Espagne**
 
 Dans le monde du football international, certains emblèmes transcendent le simple cadre sportif pour devenir de véritables symboles nationaux. Le **logo espagne** fait indéniablement partie de ces écussons qui racontent l'histoire d'un pays et de sa passion pour le ballon rond.

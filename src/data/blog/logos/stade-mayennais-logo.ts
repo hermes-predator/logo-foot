@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stadeMayennaisLogoPost: BlogPost = {
-  id: 63,
+  id: 540,
   title: "**Logo Stade Mayennais** : Histoire et Évolution [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Stade Mayennais FC**, son évolution à travers les époques et son importance dans l'identité du club mayennais.",
   date: "2024-04-18",

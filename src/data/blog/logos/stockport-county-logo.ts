@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stockportCountyLogoPost: BlogPost = {
-  id: 402,
+  id: 545,
   title: "**Stockport County Logo** : Histoire et Signification de l'Emblème [2024]",
   date: "2025-04-13",
   category: "logos",

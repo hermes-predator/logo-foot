@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sportingBragaLogoPost: BlogPost = {
-  id: 178,
+  id: 537,
   title: "Logo Sporting Braga : Histoire et Évolution de l'Emblème du Club Portugais [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Sporting Braga. Analyse détaillée de l'emblème, son évolution au fil des années et sa signification pour le club portugais.",
   date: "2024-05-15",

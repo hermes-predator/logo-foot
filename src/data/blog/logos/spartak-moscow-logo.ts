@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spartakMoscowLogoPost: BlogPost = {
-  id: 557,
+  id: 534,
   title: "**Logo Spartak Moscou** : Histoire et Symbolisme de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Spartak Moscou, un symbole emblématique du football russe qui incarne la tradition et la passion.",
   date: "2024-04-15",

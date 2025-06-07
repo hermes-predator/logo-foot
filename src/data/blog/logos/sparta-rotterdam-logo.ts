@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spartaRotterdamLogoPost: BlogPost = {
-  id: 9334,
+  id: 533,
   title: "**Logo Sparta Rotterdam** : Histoire et Évolution de l'Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Sparta Rotterdam logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

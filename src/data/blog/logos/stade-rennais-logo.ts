@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stadeRennaisLogoPost: BlogPost = {
-  id: 42,
+  id: 541,
   title: "Logo Stade Rennais : Histoire et Évolution du Symbole Breton [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Stade Rennais : ses origines, son évolution et sa signification dans l'identité du club breton.",
   date: "2024-03-25",
-  galleryImageId: 42,
+  galleryImageId: 541,
   content: `# L'Histoire Fascinante du **Logo Stade Rennais**
 
 Le **logo Stade Rennais** représente bien plus qu'un simple emblème pour ce club historique du football français. Véritable symbole d'identité régionale et sportive, le **logo du Stade Rennais** raconte une histoire riche qui s'étend sur plus d'un siècle. Dans cet article, nous explorons en détail l'évolution de cet emblème iconique du football breton.

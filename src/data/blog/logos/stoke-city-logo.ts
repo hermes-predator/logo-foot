@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stokeCityLogoPost: BlogPost = {
-  id: 82,
+  id: 546,
   title: "Logo Stoke City : Histoire et Évolution de l'Emblème des Potters [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Stoke City : des origines à aujourd'hui, évolution et signification de l'emblème emblématique des Potters.",
   date: "2024-04-20",
-  galleryImageId: 82,
+  galleryImageId: 546,
   content: `# L'Histoire Fascinante du **Logo Stoke City**
 
 Le **logo stoke city** est bien plus qu'un simple emblème sportif : c'est un symbole riche d'histoire qui représente le plus ancien club de Premier League. Fondé en 1863, Stoke City FC possède une identité visuelle emblématique qui a évolué tout en préservant son héritage historique.

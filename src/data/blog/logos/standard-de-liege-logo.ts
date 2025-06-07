@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const standardDeLiegeLogoPost: BlogPost = {
-  id: 307, // Unique ID for this article
+  id: 542, // Unique ID for this article
   title: "Logo Standard de Liège : Histoire et Signification de l'Emblème Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Standard de Liège, son design emblématique et son évolution au fil du temps. Téléchargez le logo Standard de Liège en haute définition.",
   date: "2024-07-30", // Publication date

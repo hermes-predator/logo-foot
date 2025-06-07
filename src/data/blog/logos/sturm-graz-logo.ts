@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sturmGrazLogoPost: BlogPost = {
-  id: 367, // ID unique pour cet article
+  id: 548, // ID unique pour cet article
   title: "Sturm Graz Logo : Histoire et Signification de l'Emblème Autrichien [2024]",
   date: "2025-04-11",
   category: "logos",

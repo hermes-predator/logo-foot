@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sportingLogoPost: BlogPost = {
-  id: 84, // Utilisation d'un ID unique qui n'est pas encore utilisé
+  id: 538, // Utilisation d'un ID unique qui n'est pas encore utilisé
   title: "Logo Sporting CP : Histoire et Symbolisme du Lion de Lisbonne [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Sporting CP, son évolution au fil du temps et la signification du lion emblématique qui représente fièrement le club portugais.",
   date: "2024-04-27",
-  galleryImageId: 84,
+  galleryImageId: 538,
   content: `# Logo Sporting CP : L'Histoire du Lion de Lisbonne
 
 Dans l'univers du football portugais, l'emblème du Sporting Clube de Portugal se distingue par son élégance et sa symbolique puissante. Le logo Sporting CP représente plus qu'un simple club de football : il incarne une institution sportive centenaire aux multiples facettes.

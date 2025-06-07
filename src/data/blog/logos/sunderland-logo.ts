@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sunderlandLogoPost: BlogPost = {
-  id: 157,
+  id: 550,
   title: "Logo Sunderland AFC : Histoire et Design de l'Emblème des Black Cats [2024]",
   excerpt: "Découvrez l'histoire complète du logo Sunderland AFC : des origines à aujourd'hui, évolution et signification de l'emblème du club historique anglais.",
   date: "2024-05-22",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stevenageLogoPost: BlogPost = {
-  id: 18,
+  id: 544,
   title: "**Logo Stevenage FC** : Histoire et Évolution de l'Emblème des Boro [2024]",
   date: "2025-04-13",
   category: "logos",

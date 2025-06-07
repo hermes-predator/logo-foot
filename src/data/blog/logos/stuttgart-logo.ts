@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stuttgartLogoPost: BlogPost = {
-  id: 131,
+  id: 549,
   title: "Logo Stuttgart : Histoire et Évolution de l'Emblème VfB [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Stuttgart, l'évolution de l'emblème du VfB Stuttgart et la signification de ses symboles emblématiques du club allemand.",
   date: "2024-05-25",

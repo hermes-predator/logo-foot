@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const stadeBriochinLogoPost: BlogPost = {
-  id: 545,
+  id: 539,
   title: "Logo Stade Briochin : Histoire et Symbolisme du Blason Breton [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade Briochin : des origines à aujourd'hui, l'évolution de l'emblème du club breton et sa signification culturelle.",
   date: "2024-04-14",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spartaPragueLogoPost: BlogPost = {
-  id: 362, // ID unique pour ce nouvel article
+  id: 532, // ID unique pour ce nouvel article
   title: "Sparta Prague Logo : Histoire et Signification du Blason Tchèque [2024]",
   date: "2025-04-11",
   category: "logos",

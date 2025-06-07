@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const speziaLogoPost: BlogPost = {
-  id: 200,
+  id: 536,
   title: "Logo Spezia Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Spezia Calcio : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-12",

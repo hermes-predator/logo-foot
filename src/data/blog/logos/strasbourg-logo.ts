@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const strasbourgLogoPost: BlogPost = {
-  id: 67,
+  id: 547,
   title: "Logo RC Strasbourg : Histoire et Évolution de l'Emblème Alsacien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo RC Strasbourg, son évolution au fil du temps et la signification des symboles alsaciens qui composent l'emblème emblématique du club.",
   date: "2024-05-08",
-  galleryImageId: 67,
+  galleryImageId: 547,
   content: `# L'Histoire Fascinante du **Logo Strasbourg**
 
 Le **logo strasbourg** est bien plus qu'un simple emblème sportif - c'est un symbole d'identité régionale profondément ancré dans la culture alsacienne. Reconnaissable à travers toute la France et au-delà, le **strasbourg logo** raconte l'histoire d'un club historique qui a su préserver son héritage tout en évoluant avec son temps.

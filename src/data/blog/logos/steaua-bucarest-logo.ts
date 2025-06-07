@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const steauaBucarestLogoPost: BlogPost = {
-  id: 368, // ID unique pour cet article
+  id: 543, // ID unique pour cet article
   title: "Steaua Bucarest Logo : Histoire et Signification de l'Emblème Roumain [2024]",
   date: "2025-04-11",
   category: "logos",

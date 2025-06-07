@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const spartakTrnavaLogoPost: BlogPost = {
-  id: 430,
+  id: 535,
   title: "**Logo Spartak Trnava** : Histoire et Évolution de l'Emblème Slovaque [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Spartak Trnava logo**, son évolution à travers les années et la symbolique derrière cet emblème historique du football slovaque.",
   date: "2024-04-15",

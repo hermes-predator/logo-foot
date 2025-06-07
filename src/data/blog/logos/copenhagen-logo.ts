@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const copenhagenLogoPost: BlogPost = {
-  id: 200,
+  id: 188,
   title: "Logo Copenhague : Histoire et Signification du FC Copenhague Logo [2024]",
   excerpt: "Découvrez l'histoire complète du logo FC Copenhague : origines, évolution et symbolisme de l'emblème du plus grand club danois de football.",
   date: "2024-04-07",

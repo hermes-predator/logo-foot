@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const clubBrugesLogoPost: BlogPost = {
-  id: 303, // ID unique pour ce nouvel article
+  id: 172, // ID unique pour ce nouvel article
   title: "Logo Club Bruges : Histoire et Évolution de l'Emblème du Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Club Bruges, ses origines et son évolution. Téléchargez le logo Club Bruges PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-26", // Date de publication

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cosenzaLogoPost: BlogPost = {
-  id: 166, // ID unique qui n'est pas déjà utilisé
+  id: 192, // ID unique qui n'est pas déjà utilisé
   title: "Logo Cosenza : Histoire et Évolution de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cosenza, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const commentCreerLogoFootballPost: BlogPost = {
-  id: 608,
+  id: 180,
   title: "Création Logo Foot : Guide Expert Design [2024]",
   excerpt: "Découvrez notre guide expert pour créer un logo de football professionnel. Techniques, outils et conseils pour concevoir un emblème de club unique et mémorable.",
   date: "2024-03-22",

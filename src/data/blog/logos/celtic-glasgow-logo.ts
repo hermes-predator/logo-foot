@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const celticGlasgowLogoPost: BlogPost = {
-  id: 73,
+  id: 155,
   title: "Logo Celtic Glasgow : Histoire et Evolution de l'Emblème Mythique Écossais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Celtic Glasgow : origines, évolution et symbolisme de l'emblème emblématique du club écossais à la riche tradition.",
   date: "2024-05-25",

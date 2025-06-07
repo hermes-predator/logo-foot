@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const chineseSuperLeagueLogoPost: BlogPost = {
-  id: 334, // Using a unique ID that hasn't been used yet
+  id: 168, // Using a unique ID that hasn't been used yet
   title: "Logo Chinese Super League : Histoire et Évolution de l'Emblème du Football Chinois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Chinese Super League : symboles, évolution et signification de l'emblème du championnat de football le plus prestigieux de Chine.",
   date: "2024-05-01",

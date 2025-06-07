@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const charltonAthleticLogoPost: BlogPost = {
-  id: 9056,
+  id: 164,
   title: "Logo Charlton Athletic : Histoire et Évolution de l'Emblème des Addicks [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Charlton Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique londonien.",
   date: "2024-04-13",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cardiffCityLogoPost: BlogPost = {
-  id: 169, // ID unique qui n'est pas déjà utilisé
+  id: 153, // ID unique qui n'est pas déjà utilisé
   title: "Logo Cardiff City FC : Histoire et Évolution de l'Emblème des Bluebirds [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cardiff City FC, ses origines galloises et l'évolution de cet emblème emblématique des Bluebirds dans cette analyse complète.",
   date: "2024-06-08",

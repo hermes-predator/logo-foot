@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const copaDoBasilLogoPost: BlogPost = {
-  id: 439,
+  id: 185,
   title: "**Logo da Copa do Brasil** : Histoire et Évolution du Design [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **copa do brasil logo**, son évolution à travers les époques et son impact sur l'identité visuelle du football brésilien.",
   date: "2024-04-27",

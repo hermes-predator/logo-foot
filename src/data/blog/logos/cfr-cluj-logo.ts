@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cfrClujLogoPost: BlogPost = {
-  id: 302, // ID unique pour ce nouvel article
+  id: 158, // ID unique pour ce nouvel article
   title: "Logo CFR Cluj : Histoire et Évolution de l'Emblème du Club Roumain",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo CFR Cluj, l'un des clubs de football les plus titrés de Roumanie. Téléchargez le logo CFR Cluj PNG.",
   date: "2024-07-25", // Date de publication

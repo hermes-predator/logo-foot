@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const colombiaLogoPost: BlogPost = {
-  id: 155,
+  id: 176,
   title: "Logo Colombie : Histoire et Design de l'Emblème du Football Colombien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Colombie : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-15",

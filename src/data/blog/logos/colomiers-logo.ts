@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const colomiersLogoPost: BlogPost = {
-  id: 93,
+  id: 177,
   title: "**Logo Colomiers** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

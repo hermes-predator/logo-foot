@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const concarneauLogoPost: BlogPost = {
-  id: 279,
+  id: 183,
   title: "Logo Concarneau : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Concarneau, ses symboles et sa signification. Une analyse complète de l'emblème du club breton de l'US Concarneau.",
   date: "2024-05-28",

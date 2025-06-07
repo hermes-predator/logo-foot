@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const capeVerdeLogoPost: BlogPost = {
-  id: 80, // Using a unique ID
+  id: 152, // Using a unique ID
   title: "**Logo Cap Vert** : L'Histoire de l'Emblème des Îles Bleues [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale cap-verdienne : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football cap-verdien.",
   date: "2025-04-27",

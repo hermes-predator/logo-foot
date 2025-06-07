@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cittadellaLogoPost: BlogPost = {
-  id: 167, // ID unique qui n'est pas déjà utilisé
+  id: 170, // ID unique qui n'est pas déjà utilisé
   title: "Logo Cittadella : Histoire et Évolution de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cittadella, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-11",

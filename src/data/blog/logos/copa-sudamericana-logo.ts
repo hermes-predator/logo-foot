@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const copaSudamericanaLogoPost: BlogPost = {
-  id: 462,
+  id: 187,
   title: "**Logo Copa Sudamericana** : Histoire et Symbolisme de l'Emblème du Football Sud-Américain",
   date: "2025-04-26",
   category: "competition-logos",

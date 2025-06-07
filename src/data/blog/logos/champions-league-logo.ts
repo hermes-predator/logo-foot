@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const championsLeagueLogoPost: BlogPost = {
-  id: 70,
+  id: 159,
   title: "Logo UEFA Champions League : Histoire & Design de l'Emblème Européen [2024]",
   excerpt: "Analyse complète du logo de l'UEFA Champions League : histoire, signification et évolution de l'emblème le plus prestigieux du football européen.",
   date: "2024-05-15",

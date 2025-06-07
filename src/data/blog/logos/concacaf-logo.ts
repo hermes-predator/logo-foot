@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const concacafLogoPost: BlogPost = {
-  id: 458,
+  id: 182,
   title: "**CONCACAF Logo** : Histoire et Évolution d'un Symbole du Football Nord-Américain",
   date: "2025-04-25",
   category: "competition-logos",

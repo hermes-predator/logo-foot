@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const columbusCrewLogoPost: BlogPost = {
-  id: 416,
+  id: 179,
   title: "**Logo Columbus Crew** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Columbus Crew**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

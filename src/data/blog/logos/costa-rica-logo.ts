@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const costaRicaLogoPost: BlogPost = {
-  id: 168,
+  id: 193,
   title: "**Logo Costa Rica** : Histoire et Évolution de l'Emblème des Ticos [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale costaricienne : des origines à aujourd'hui, évolution et signification de cet emblème d'Amérique centrale.",
   date: "2024-05-30",

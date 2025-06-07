@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const charlotteFcLogoPost: BlogPost = {
-  id: 51,
+  id: 163,
   title: "Logo Charlotte FC : Histoire et Design de l'Emblème Américain [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Charlotte FC : des origines à aujourd'hui, évolution et signification de l'emblème du club de MLS.",
   date: "2024-04-10",

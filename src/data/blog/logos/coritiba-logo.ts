@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coritibaLogoPost: BlogPost = {
-  id: 442,
+  id: 191,
   title: "**Logo Coritiba** : Histoire et Design de l'Emblème Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Coritiba**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Coritiba logo**.",
   date: "2024-04-22",

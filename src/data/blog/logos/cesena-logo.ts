@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cesenaLogoPost: BlogPost = {
-  id: 165, // ID unique qui n'est pas déjà utilisé
+  id: 157, // ID unique qui n'est pas déjà utilisé
   title: "Logo Cesena : Histoire et Évolution de l'Emblème du Club Romagnol [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cesena, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-04",

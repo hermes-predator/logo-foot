@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const corinthiansLogoPost: BlogPost = {
-  id: 57,
+  id: 190,
   title: "**Logo Corinthians** : Histoire et Design de l'Emblème Iconique du Football Brésilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Corinthians**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
   date: "2025-04-13",

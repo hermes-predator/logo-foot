@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coventryCityLogoPost: BlogPost = {
-  id: 166, // ID unique qui n'est pas déjà utilisé
+  id: 196, // ID unique qui n'est pas déjà utilisé
   title: "Logo Coventry City : Histoire et Évolution de l'Emblème des Sky Blues [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Coventry City, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coloradoRapidsLogoPost: BlogPost = {
-  id: 408,
+  id: 178,
   title: "**Logo Colorado Rapids** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Colorado Rapids**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

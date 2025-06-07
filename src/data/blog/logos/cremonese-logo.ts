@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cremoneseLogoPost: BlogPost = {
-  id: 164, // Using a unique ID that isn't already used
+  id: 199, // Using a unique ID that isn't already used
   title: "Logo Cremonese : Histoire et Évolution de l'Emblème Grigiorosso [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cremonese, son évolution et la signification des éléments qui composent l'emblème iconique du club lombard.",
   date: "2024-06-03",

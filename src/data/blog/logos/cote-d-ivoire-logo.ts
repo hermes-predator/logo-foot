@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coteIvoireLogoPost: BlogPost = {
-  id: 163,
+  id: 194,
   title: "**Logo Côte d'Ivoire** : Histoire et Évolution de l'Emblème des Éléphants [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale de Côte d'Ivoire : des origines à aujourd'hui, évolution et signification de l'emblème des Éléphants.",
   date: "2024-05-29",

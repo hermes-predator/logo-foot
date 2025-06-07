@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const chileLogoPost: BlogPost = {
-  id: 515,
+  id: 167,
   title: "Logo Chili : Histoire et Symbolisme de l'Emblème du Football Chilien",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale du Chili, sa symbolique et son évolution à travers les décennies dans cette analyse complète.",
   date: "2024-06-05",

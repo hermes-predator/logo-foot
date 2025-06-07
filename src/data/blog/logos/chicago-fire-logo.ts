@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const chicagoFireLogoPost: BlogPost = {
-  id: 404,
+  id: 166,
   title: "**Chicago Fire FC Logo** : Histoire et Design de l'Emblème Flamboyant [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Chicago Fire**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

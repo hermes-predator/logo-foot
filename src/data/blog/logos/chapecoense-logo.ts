@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const chapecoenseLogoPost: BlogPost = {
-  id: 441,
+  id: 161,
   title: "**Logo Chapecoense** : Histoire et Signification de l'Emblème du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire émouvante du **logo Chapecoense**, un symbole de résilience et de renaissance dans le football brésilien. Une analyse détaillée de l'évolution du **Chapecoense logo**.",
   date: "2024-04-22",

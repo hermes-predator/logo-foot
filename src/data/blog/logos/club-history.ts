@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const clubHistoryPost: BlogPost = {
-  id: 2,
+  id: 173,
   title: "Logo Foot : Histoire des Écussons de 1900 à 2024",
   excerpt: "Découvrez l'évolution des logos foot à travers l'histoire. Guide complet sur les origines et transformations des écussons de football.",
   date: "2024-02-27",

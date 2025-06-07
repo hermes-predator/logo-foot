@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const communityShieldLogoPost: BlogPost = {
-  id: 7,
+  id: 181,
   title: "Community Shield Logo : Histoire et Design de l'Emblème Britannique [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Community Shield : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Angleterre.",
   date: "2024-06-23",

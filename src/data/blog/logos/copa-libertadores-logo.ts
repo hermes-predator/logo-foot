@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const copaLibertadoresLogoPost: BlogPost = {
-  id: 461,
+  id: 186,
   title: "**Logo Copa Libertadores** : L'Emblème Mythique qui Raconte l'Âme du Football Sud-Américain",
   date: "2025-04-26",
   category: "competition-logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cologneLogoPost: BlogPost = {
-  id: 90,
+  id: 175,
   title: "Logo FC Cologne : Histoire et Design de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Cologne : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-10",

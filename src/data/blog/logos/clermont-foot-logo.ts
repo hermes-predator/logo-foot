@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const clermontFootLogoPost: BlogPost = {
-  id: 68,
+  id: 171,
   title: "Logo Clermont Foot : L'Évolution du Volcan Rouge et Bleu [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Clermont Foot, son évolution au fil du temps et la symbolique du volcan qui représente l'identité de ce club auvergnat de Ligue 1.",
   date: "2024-05-12",

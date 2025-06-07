@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const canadaLogoPost: BlogPost = {
-  id: 517,
+  id: 151,
   title: "**Logo Canada** : Le Symbole Dynamique du Football Canadien - Une Odyssée Visuelle de Passion et de Réussite [2024]",
   excerpt: "Plongez dans l'histoire épique du logo de l'équipe nationale canadienne de football, un emblème qui raconte plus qu'une simple identité visuelle - c'est le récit d'une nation qui transcende les frontières du sport.",
   date: "2024-05-15",

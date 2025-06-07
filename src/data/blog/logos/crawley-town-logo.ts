@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const crawleyTownLogoPost: BlogPost = {
-  id: 567,
+  id: 197,
   title: "**Logo Crawley Town** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Crawley Town FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Crawley Town à travers les années.",
   date: "2024-04-20",

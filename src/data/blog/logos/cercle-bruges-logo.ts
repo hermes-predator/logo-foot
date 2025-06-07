@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cercleBrugesLogoPost: BlogPost = {
-  id: 558,
+  id: 156,
   title: "**Logo Cercle Bruges** : Histoire et Design Complet de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Cercle de Bruges logo**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo Cercle Bruges KSV** et de son évolution.",
   date: "2024-04-19",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const croatiaLogoPost: BlogPost = {
-  id: 163,
+  id: 200,
   title: "Logo Croatie : Histoire et Design de l'Emblème à Damier [2024]",
   excerpt: "Découvrez l'histoire complète du logo Croatie : des origines à aujourd'hui, évolution et signification de l'emblème à damier rouge et blanc, symbole du football croate.",
   date: "2024-05-30",

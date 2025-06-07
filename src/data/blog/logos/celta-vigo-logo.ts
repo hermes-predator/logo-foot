@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const celtaVigoLogoPost: BlogPost = {
-  id: 73, // ID unique qui n'est pas déjà utilisé
+  id: 154, // ID unique qui n'est pas déjà utilisé
   title: "Logo Celta Vigo : Histoire et Design de l'Emblème Galicien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Celta Vigo : origines, symbolisme et évolution de l'emblème emblématique du club galicien de football espagnol.",
   date: "2024-05-17",

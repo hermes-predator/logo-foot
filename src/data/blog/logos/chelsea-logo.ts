@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const chelseaLogoPost: BlogPost = {
-  id: 55,
+  id: 165,
   title: "Logo Chelsea : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Chelsea : origines, évolution et signification de l'emblème emblématique du club londonien.",
   date: "2024-04-05",

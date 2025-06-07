@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const colchesterUnitedLogoPost: BlogPost = {
-  id: 564,
+  id: 174,
   title: "**Logo Colchester United** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Colchester United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Colchester United à travers les années.",
   date: "2024-04-20",

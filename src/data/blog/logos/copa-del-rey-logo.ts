@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const copaDelReyLogoPost: BlogPost = {
-  id: 851,
+  id: 184,
   title: "Logo Copa del Rey : Histoire et Signification de l'Emblème de la Coupe du Roi",
   excerpt: "Découvrez tout sur le logo de la Copa del Rey, son histoire, son évolution et sa signification. Analyse complète du design emblématique de la compétition de coupe espagnole la plus prestigieuse.",
   date: "2023-12-15",

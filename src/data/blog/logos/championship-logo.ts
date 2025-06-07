@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const championshipLogoPost: BlogPost = {
-  id: 70,
+  id: 160,
   title: "Logo Championship : Histoire et Design de l'Emblème de la Ligue Anglaise [2024]",
   excerpt: "Découvrez l'histoire complète du logo Championship : origines, évolution et symbolisme de l'emblème de la prestigieuse deuxième division anglaise.",
   date: "2024-05-15",

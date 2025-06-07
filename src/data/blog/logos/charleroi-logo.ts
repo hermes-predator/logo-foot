@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const charleroiLogoPost: BlogPost = {
-  id: 9330,
+  id: 162,
   title: "**Logo Charleroi** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Charleroi**, son évolution et sa symbolique. Un emblème qui représente la fierté du football wallon.",
   date: "2024-04-19",

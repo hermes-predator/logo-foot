@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coppaItaliaLogoPost: BlogPost = {
-  id: 333, // ID unique qui n'est pas encore utilisé
+  id: 189, // ID unique qui n'est pas encore utilisé
   title: "Logo Coppa Italia : Histoire et Symbolisme de l'Emblème du Football Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Coppa Italia : origines, évolution et signification des symboles de la prestigieuse coupe nationale italienne.",
   date: "2024-09-02",

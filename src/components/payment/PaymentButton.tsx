@@ -63,7 +63,7 @@ const PaymentButton = () => {
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">
-                <span className="text-center font-semibold text-[1.7rem] drop-shadow-sm" id="payment-button-description">
+                <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm" id="payment-button-description">
                   {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
                 </span>
               </div>

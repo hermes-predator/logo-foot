@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realValladolidLogoPost: BlogPost = {
-  id: 98, // Using a unique ID that isn't already used
+  id: 476, // Using a unique ID that isn't already used
   title: "Logo Real Valladolid : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo Real Valladolid : origines, signification et évolution de l'emblème emblématique du club espagnol au fil des années.",
   date: "2024-06-18",
-  galleryImageId: 98,
+  galleryImageId: 476,
   content: `# L'Histoire Fascinante du **Logo Real Valladolid**
 
 Le **real valladolid logo** est bien plus qu'un simple emblème sportif : c'est un symbole riche d'histoire qui incarne l'identité et les valeurs d'un club historique du football espagnol. Dans cet article, nous explorons en profondeur l'évolution et la signification du **logo real valladolid** à travers les décennies.

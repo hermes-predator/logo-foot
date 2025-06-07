@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const salernitanaLogoPost: BlogPost = {
-  id: 150,
+  id: 498,
   title: "Logo Salernitana : Histoire et Design de l'Emblème Italien [2025]",
   excerpt: "Découvrez l'histoire complète du logo Salernitana : des origines à aujourd'hui, évolution et signification de l'emblème de ce club historique du football italien.",
   date: "2024-04-20",

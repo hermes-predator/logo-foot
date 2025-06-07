@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realOviedoLogoPost: BlogPost = {
-  id: 352, // ID unique pour ce nouvel article
+  id: 473, // ID unique pour ce nouvel article
   title: "Logo Real Oviedo : Histoire et Évolution de l'Emblème Asturien [2024]",
   date: "2025-04-11",
   category: "logos",

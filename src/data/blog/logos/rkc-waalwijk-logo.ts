@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rkcWaalwijkLogoPost: BlogPost = {
-  id: 9341,
+  id: 485,
   title: "**Logo RKC Waalwijk** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **RKC Waalwijk logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

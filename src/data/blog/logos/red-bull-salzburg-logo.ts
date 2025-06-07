@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const redBullSalzburgLogoPost: BlogPost = {
-  id: 99923,
+  id: 477,
   title: "Logo Salzbourg : Histoire, Signification et Fichiers PNG du Club Red Bull [2024]",
   excerpt: "Plongez dans l’histoire du logo Salzbourg, aussi appelé logo Red Bull Salzbourg ou RB Salzbourg logo, avec tous les fichiers PNG et les secrets de son design.",
   date: "2024-04-21",

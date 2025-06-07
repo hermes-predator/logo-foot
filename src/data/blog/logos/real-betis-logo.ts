@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realBetisLogoPost: BlogPost = {
-  id: 157, // ID unique qui n'est pas déjà utilisé
+  id: 471, // ID unique qui n'est pas déjà utilisé
   title: "Logo Real Betis : Histoire et Design de l'Emblème Andalou [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Real Betis : des origines à aujourd'hui, évolution et signification de l'emblème vert et blanc du club andalou.",
   date: "2024-05-22",

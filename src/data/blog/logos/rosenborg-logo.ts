@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rosenborgLogoPost: BlogPost = {
-  id: 428,
+  id: 489,
   title: "**Logo Rosenborg** : Histoire et Signification de l'Emblème Norvégien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Rosenborg BK, son évolution et la signification de cet emblème emblématique du football norvégien.",
   date: "2024-04-15",

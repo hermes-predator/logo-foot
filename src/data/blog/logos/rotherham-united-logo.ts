@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rotherhamUnitedLogoPost: BlogPost = {
-  id: 401,
+  id: 490,
   title: "**Logo Rotherham United** : Histoire et Analyse Complète [2024]",
   date: "2025-04-13",
   category: "logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rijekaLogoPost: BlogPost = {
-  id: 62,
+  id: 482,
   title: "**Logo Rijeka** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Rijeka**, son évolution et sa symbolique. Un emblème qui représente la fierté du football croate et l'identité adriatique.",
   date: "2024-04-18",

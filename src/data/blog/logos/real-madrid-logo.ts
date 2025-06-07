@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realMadridLogoPost: BlogPost = {
-  id: 49,
+  id: 472,
   title: "Logo Real Madrid : Histoire et Design de l'Emblème Royal [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Real Madrid : des origines à aujourd'hui, évolution et signification de l'emblème du plus grand club de football.",
   date: "2024-03-31",

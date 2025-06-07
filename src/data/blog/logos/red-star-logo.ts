@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const redStarLogoPost: BlogPost = {
-  id: 110,
+  id: 478,
   title: "Logo Red Star : Histoire et Symbolisme de l'Étoile Rouge [2024]",
   excerpt: "Découvrez l'histoire complète du logo Red Star FC : origines, évolution et signification de l'emblème emblématique du club parisien historique.",
   date: "2024-06-01",
-  galleryImageId: 110,
+  galleryImageId: 478,
   content: `# L'Histoire Fascinante du **Logo Red Star**
 
 Le **red star logo** est bien plus qu'un simple emblème sportif : c'est un symbole historique qui raconte l'histoire d'un des plus anciens clubs de football français. Ce **star logo red** emblématique représente l'identité unique d'un club qui a su traverser les époques tout en préservant son âme authentique et son engagement envers ses racines populaires.

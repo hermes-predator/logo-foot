@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rouenLogoPost: BlogPost = {
-  id: 543,
+  id: 491,
   title: "Logo FC Rouen : Histoire et Évolution du Blason Normand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Rouen : des origines à aujourd'hui, l'évolution de l'emblème emblématique du club normand.",
   date: "2024-04-12",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rodezLogoPost: BlogPost = {
-  id: 83,
+  id: 486,
   title: "Logo Rodez : Histoire et Évolution de l'Emblème du RAF [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Rodez : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club aveyronnais.",
   date: "2024-04-21",
-  galleryImageId: 83,
+  galleryImageId: 486,
   content: `# L'Histoire Fascinante du **Logo Rodez**
 
 Le **logo rodez** est bien plus qu'un simple emblème sportif : c'est un symbole identitaire fort qui incarne l'histoire et les valeurs d'un club profondément ancré dans son territoire. Fondé en 1929, le Rodez Aveyron Football arbore un **logo rodez foot** distinctif qui a su évoluer au fil des décennies tout en préservant son essence.

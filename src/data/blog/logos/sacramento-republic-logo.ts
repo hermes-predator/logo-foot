@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sacramentoRepublicLogoPost: BlogPost = {
-  id: 9234,
+  id: 495,
   title: "Sacramento Republic Logo : Histoire et Signification de l'Emblème de MLS",
   excerpt: "Découvrez l'histoire fascinante du logo de Sacramento Republic FC, emblème distinctif de ce club américain avec sa symbolique californienne et son design moderne.",
   date: "2025-04-14",

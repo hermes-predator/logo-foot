@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rosarioCentralLogoPost: BlogPost = {
-  id: 433,
+  id: 488,
   title: "**Logo Rosario Central** : Histoire de l'Emblème Canaya [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Rosario Central**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **Rosario Central logo**.",
   date: "2024-04-22",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const royalAntwerpLogoPost: BlogPost = {
-  id: 305, // ID unique pour ce nouvel article
+  id: 492, // ID unique pour ce nouvel article
   title: "Logo Royal Antwerp : Histoire et Évolution de l'Emblème du Plus Ancien Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Royal Antwerp FC, son design emblématique et son évolution au fil du temps. Téléchargez le logo Royal Antwerp FC en haute définition.",
   date: "2024-07-28", // Date de publication

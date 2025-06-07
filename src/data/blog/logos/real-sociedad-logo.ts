@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realSociedadLogoPost: BlogPost = {
-  id: 99, // Using a unique ID that isn't already used
+  id: 475, // Using a unique ID that isn't already used
   title: "Logo Real Sociedad : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo Real Sociedad : origines, signification et évolution de l'emblème emblématique du club basque espagnol au fil des années.",
   date: "2024-06-19",
-  galleryImageId: 99,
+  galleryImageId: 475,
   content: `# L'Histoire Fascinante du **Logo Real Sociedad**
 
 Le **logo real sociedad** est bien plus qu'un simple emblème sportif : c'est un symbole riche d'histoire qui incarne l'identité et les valeurs d'un club emblématique du football espagnol. Dans cet article, nous explorons en profondeur l'évolution et la signification du **real sociedad logo** à travers les décennies.

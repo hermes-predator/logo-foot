@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const saintPriestLogoPost: BlogPost = {
-  id: 100,
+  id: 497,
   title: "**Logo AS Saint-Priest** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

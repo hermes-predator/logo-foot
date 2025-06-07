@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const russiaLogoPost: BlogPost = {
-  id: 159,
+  id: 494,
   title: "Logo Russie : Histoire et Design de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo Russie : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football.",
   date: "2024-05-26",

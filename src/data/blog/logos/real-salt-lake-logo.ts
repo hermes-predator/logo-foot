@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const realSaltLakeLogoPost: BlogPost = {
-  id: 409,
+  id: 474,
   title: "**Logo Real Salt Lake** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Real Salt Lake**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const samsungsporLogoPost: BlogPost = {
-  id: 572,
+  id: 500,
   title: "**Logo Samsunspor** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Samsunspor**, symbole emblématique du club turc, son évolution et sa signification à travers les années.",
   date: "2024-04-21",

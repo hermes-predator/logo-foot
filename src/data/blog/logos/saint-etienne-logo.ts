@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const saintEtienneLogoPost: BlogPost = {
-  id: 56,
+  id: 496,
   title: "Logo Saint-Étienne : Histoire de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire du logo de l'AS Saint-Étienne : évolution et symbolisme de l'emblème mythique des Verts, club le plus titré du football français.",
   date: "2024-04-06",
-  galleryImageId: 56,
+  galleryImageId: 496,
   content: `# L'Histoire Fascinante du **Logo Saint-Étienne**
 
 Le **logo saint etienne** est bien plus qu'un simple emblème sportif : c'est le symbole d'une ville, d'une région, et surtout d'une passion qui traverse les générations depuis plus d'un siècle. Emblème historique du football français, le **saint etienne logo** incarne les valeurs d'un club populaire et authentique dont l'histoire est intimement liée à l'identité industrielle de sa ville d'origine.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rioAveLogoPost: BlogPost = {
-  id: 330,
+  id: 483,
   title: "Logo Rio Ave : Histoire et Signification de l'Emblème du Club Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Rio Ave FC, son évolution à travers le temps et la signification des éléments qui composent l'emblème du club portugais.",
   date: "2024-09-01",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sampdoriaLogoPost: BlogPost = {
-  id: 121,
+  id: 499,
   title: "Logo Sampdoria : Histoire et Évolution de l'Emblème de Gênes [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Sampdoria : origines, évolution et symbolisme de l'emblème emblématique du club génois.",
   date: "2024-06-18",
-  galleryImageId: 121,
+  galleryImageId: 499,
   content: `# L'Histoire Fascinante du **logo sampdoria**
 
 Le **sampdoria logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions de la Ligurie. Ce **logo sampdoria** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football italien tout en restant fidèle à ses racines génoises.

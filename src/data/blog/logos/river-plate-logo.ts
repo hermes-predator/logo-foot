@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const riverPlateLogoPost: BlogPost = {
-  id: 544,
+  id: 484,
   title: "Logo River Plate : Histoire et Évolution de l'Emblème Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de River Plate, l'un des plus emblématiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",
   date: "2025-04-09",

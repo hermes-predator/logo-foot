@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rubinKazanLogoPost: BlogPost = {
-  id: 561,
+  id: 493,
   title: "**Rubin Kazan Logo** : Histoire et Design de l'Emblème Footballistique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Rubin Kazan**, un symbole emblématique qui représente la fierté du football russe et l'identité unique du club de Tatarie.",
   date: "2024-04-15",

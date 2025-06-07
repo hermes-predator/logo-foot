@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const reimsLogoPost: BlogPost = {
-  id: 47,
+  id: 480,
   title: "Logo Stade de Reims : Histoire et Design du Club Champenois [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade de Reims : origines, évolution et symbolisme de l'emblème emblématique du club champenois.",
   date: "2024-03-31",

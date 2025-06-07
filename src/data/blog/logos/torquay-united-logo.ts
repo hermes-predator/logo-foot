@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const torquayUnitedLogoPost: BlogPost = {
-  id: 570,
+  id: 559,
   title: "**Logo Torquay United** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Torquay United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Torquay United à travers les années.",
   date: "2024-04-20",

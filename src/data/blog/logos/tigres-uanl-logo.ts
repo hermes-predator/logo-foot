@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const tigresUanlLogoPost: BlogPost = {
-  id: 8953,
+  id: 557,
   title: "Logo Tigres UANL : Histoire et Analyse du Symbole Mexicain",
   excerpt: "Découvrez l'histoire et la signification du logo Tigres UANL, l'un des clubs les plus emblématiques du football mexicain. Analyse détaillée de son évolution et de son symbolisme.",
   date: "2025-04-07",

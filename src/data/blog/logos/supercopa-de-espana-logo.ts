@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const supercopaDeEspanaLogoPost: BlogPost = {
-  id: 852,
+  id: 551,
   title: "Supercopa de España Logo : Histoire et Symbolisme de l'Emblème Espagnol",
   excerpt: "Découvrez l'histoire fascinante du logo de la Supercopa de España, son évolution au fil des ans et la signification de ses éléments symboliques dans cette analyse complète.",
   date: "2024-04-10",

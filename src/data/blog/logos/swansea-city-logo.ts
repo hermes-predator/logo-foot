@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const swanseaCityLogoPost: BlogPost = {
-  id: 167, // ID unique qui n'est pas déjà utilisé
+  id: 552, // ID unique qui n'est pas déjà utilisé
   title: "Logo Swansea City FC : Histoire et Symbolisme des Swans [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Swansea City, son évolution emblématique et la signification de ses symboles distinctifs dans cette analyse complète.",
   date: "2024-06-06",

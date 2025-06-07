@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const swedenLogoPost: BlogPost = {
-  id: 52,
+  id: 553,
   title: "Logo Suède : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Suède : des origines à aujourd'hui, évolution et signification de l'emblème du football suédois.",
   date: "2024-04-03",

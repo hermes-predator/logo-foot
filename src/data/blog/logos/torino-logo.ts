@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const torinoLogoPost: BlogPost = {
-  id: 132,
+  id: 558,
   title: "Logo Torino FC : Histoire et Évolution de l'Emblème du Taureau [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Torino, son évolution à travers les époques et la signification du taureau emblématique qui représente ce club historique du football italien.",
   date: "2024-05-28",

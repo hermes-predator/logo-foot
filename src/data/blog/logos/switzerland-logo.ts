@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const switzerlandLogoPost: BlogPost = {
-  id: 78,
+  id: 554,
   title: "Le **Logo Suisse** de Football : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire et la signification du **logo suisse football**. Analyse complète du **logo foot suisse**, symbole d'excellence et de précision helvétique.",
   date: "2024-04-15",

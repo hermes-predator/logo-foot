@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const tacaDePortugalLogoPost: BlogPost = {
-  id: 193, // Keeping ID 193 as it seems to be the one referenced in the URL
+  id: 555, // Keeping ID 193 as it seems to be the one referenced in the URL
   title: "Logo Taça de Portugal : Histoire et Évolution du Symbole Emblématique [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Taça de Portugal : origines, évolution et signification de ce symbole emblématique du football portugais.",
   date: "2024-06-25",

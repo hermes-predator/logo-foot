@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const tottenhamLogoPost: BlogPost = {
-  id: 56,
+  id: 560,
   title: "Logo Tottenham : L'Histoire du Coq Légendaire des Spurs [2024]",
   excerpt: "Plongez dans l'histoire fascinante du logo Tottenham, symbole d'audace et de fierté. Découvrez l'évolution de l'emblème mythique des Spurs de Londres.",
   date: "2024-04-06",

@@ -24,6 +24,9 @@ const competitionArticles: BlogPost[] = [
   { ...premierLeagueAnalysis, category: 'competition-logos', subCategory: 'competition-logos' }
 ];
 
+// IDs des articles qui ont été déplacés vers competition-logos
+const competitionArticleIds = competitionArticles.map(article => article.id);
+
 // Fonction améliorée pour détecter et résoudre les doublons d'ID
 const ensureUniqueIds = (posts: BlogPost[]): BlogPost[] => {
   const idMap = new Map<number, BlogPost[]>();
@@ -87,7 +90,8 @@ const allPosts = [
   ),
   ...historyPosts,
   ...technicalPosts,
-  ...analysisPosts.filter(post => !competitionArticles.find(ca => ca.id === post.id)),
+  // Filtrer les analysisPosts en excluant ceux qui ont été déplacés vers competition-logos
+  ...analysisPosts.filter(post => !competitionArticleIds.includes(post.id)),
   ...competitionArticles,
   ...pixelArtPosts
 ];

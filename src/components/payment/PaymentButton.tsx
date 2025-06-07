@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -57,16 +58,18 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
               <ShoppingCart 
-                className="h-10 w-10 transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 drop-shadow-sm"
+                className="transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-125 drop-shadow-sm"
+                size={48}
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">
-                <span className="text-center font-semibold text-2xl drop-shadow-sm" id="payment-button-description">
+                <span className="text-center font-semibold text-3xl drop-shadow-sm" id="payment-button-description">
                   {isProcessing ? "Redirection..." : "Télécharger maintenant (9€)"}
                 </span>
               </div>
               <ArrowRight 
-                className="h-9 w-9 transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2 drop-shadow-sm"
+                className="transition-all duration-300 group-hover:translate-x-1 group-active:translate-x-2 drop-shadow-sm"
+                size={44}
                 aria-hidden="true"
               />
             </div>

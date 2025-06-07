@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const howToDrawSoccerBall: BlogPost = {
-  id: 159,
+  id: 617,
   title: "Comment Dessiner un Ballon de Foot : Guide Complet et Facile [2024]",
   excerpt: "Apprenez à dessiner un ballon de football facilement étape par étape avec notre guide détaillé : techniques professionnelles, astuces simples et méthodes pour créer un dessin de ballon réaliste.",
   date: "2024-05-28",

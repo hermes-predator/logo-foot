@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coloringFootballLogos: BlogPost = {
-  id: 41,
+  id: 614,
   title: "**Coloriage Logo Foot** : Techniques et Astuces [Guide 2024]",
   excerpt: "Guide complet pour réaliser des **coloriage logo foot** parfaits. Techniques, astuces et modèles pour **dessiner logo foot** de la Ligue 1 et des grands clubs européens.",
   date: "2024-03-25",

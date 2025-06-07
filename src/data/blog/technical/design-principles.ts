@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const designPrinciples: BlogPost = {
-  id: 21,
+  id: 615,
   title: "Principes de Design des Logos de Football : Guide Technique 2024",
   excerpt: "Guide technique complet sur les principes de design des logos de football. De la conception à l'application, maîtrisez les fondamentaux du design sportif.",
   date: "2024-03-04",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const motionDesignGuide: BlogPost = {
-  id: 22,
+  id: 621,
   title: "Motion Design pour Logos de Football : Guide Technique [2024]",
   excerpt: "Guide complet sur l'animation des logos de football. Découvrez les techniques et principes du motion design appliqués aux identités visuelles sportives.",
   date: "2024-03-07",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const footballDesignGuide: BlogPost = {
-  id: 402,
+  id: 616,
   title: "Guide Complet du Football Design : Principes et Tendances 2024",
   excerpt: "Découvrez les fondamentaux du football design moderne. Principes, tendances et méthodologies pour créer une identité visuelle percutante pour les clubs de football.",
   date: "2024-04-13",

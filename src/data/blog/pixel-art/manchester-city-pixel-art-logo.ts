@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const manchesterCityPixelArtLogoPost: BlogPost = {
-  id: 170,
+  id: 610,
   title: "**Pixel Art Logo Foot Manchester City** : Guide Complet de Création & Signification [2024]",
   date: "2025-04-12",
   category: "pixel-art",

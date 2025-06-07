@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtOMLogoPost: BlogPost = {
-  id: 91,
+  id: 612,
   title: "**Pixel Art Logo Foot Marseille** : Guide Complet & Histoire [2024]",
   date: "2025-04-12",
   category: "pixel-art",

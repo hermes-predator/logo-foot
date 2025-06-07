@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const logoMaillotFootPost: BlogPost = {
-  id: 257,
+  id: 619,
   title: "Logo Maillot de Foot : Guide Complet des Designs [2024]",
   excerpt: "Découvrez notre guide expert sur les logos de maillots de foot. Apprenez comment sont créés, positionnés et intégrés les logos sur les maillots de football professionnels.",
   date: "2024-04-09",

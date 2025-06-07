@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtFootGeneralPost: BlogPost = {
-  id: 372, // ID unique pour ce nouvel article
+  id: 611, // ID unique pour ce nouvel article
   title: "Guide Pixel Art Foot: Créations Rétro de Joueurs & Équipes [2024]",
   date: "2025-04-12",
   category: "pixel-art",

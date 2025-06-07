@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const typographyGuide: BlogPost = {
-  id: 68,
+  id: 624,
   title: "Guide Complet : Typographie des Logos de Football [2024]",
   excerpt: "Découvrez les secrets de la typographie dans les logos de football. Police de caractères, lisibilité et impact visuel pour un design de logo réussi.",
   date: "2024-03-13",
-  galleryImageId: 12,
+  galleryImageId: 624,
   content: `La Typographie dans les Logos de Football
 
 L'art de la typographie joue un rôle crucial dans l'identité visuelle des clubs.

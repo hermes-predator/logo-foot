@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const minimalDesignGuide: BlogPost = {
-  id: 24,
+  id: 620,
   title: "Design Minimaliste dans le Football : Guide Technique [2024]",
   excerpt: "Guide complet sur l'approche minimaliste dans le design des logos de football. De la Juventus à l'Inter Milan, découvrez les principes du minimalisme appliqué aux marques sportives.",
   date: "2024-03-09",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const integrationGuide: BlogPost = {
-  id: 27,
+  id: 618,
   title: "Intégration des Logos Football HD : Guide Technique Complet [2024]",
   excerpt: "Guide technique détaillé pour intégrer des logos de football HD dans vos projets. Optimisation, formats, résolutions et meilleures pratiques pour un rendu professionnel.",
   date: "2024-02-25",

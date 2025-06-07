@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtRealMadridLogoPost: BlogPost = {
-  id: 90,
+  id: 613,
   title: "**Pixel Art Logo Real Madrid** : Guide Complet & Histoire [2024]",
   date: "2025-04-12",
   category: "pixel-art",

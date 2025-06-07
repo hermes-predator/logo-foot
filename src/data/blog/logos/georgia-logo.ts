@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const georgiaLogoPost: BlogPost = {
-  id: 167,
+  id: 279,
   title: "**Logo Géorgie** : Histoire et Évolution de l'Emblème des Kremlin Warriors [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale géorgienne : des origines à aujourd'hui, évolution et signification de cet emblème du Caucase.",
   date: "2024-05-29",

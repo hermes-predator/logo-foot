@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const empoliLogoPost: BlogPost = {
-  id: 152,
+  id: 233,
   title: "Logo Empoli FC : Histoire et Design de l'Emblème Toscan [2024]",
   excerpt: "Découvrez l'histoire complète du logo Empoli FC : origines, évolution et signification de l'emblème du club toscan de Serie A.",
   date: "2024-06-29",

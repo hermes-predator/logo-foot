@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const genoaLogoPost: BlogPost = {
-  id: 133,
+  id: 278,
   title: "Logo Genoa FC : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Genoa FC : des origines à aujourd'hui, évolution et signification de l'emblème du plus ancien club de football italien.",
   date: "2024-05-29",

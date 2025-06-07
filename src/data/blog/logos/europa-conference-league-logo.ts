@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const europaConferenceLeagueLogoPost: BlogPost = {
-  id: 460,
+  id: 243,
   title: "**UEFA Europa Conference League Logo** : L'Histoire du Design de la Troisième Coupe d'Europe",
   date: "2025-04-26",
   category: "competition-logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const finlandLogoPost: BlogPost = {
-  id: 425,
+  id: 258,
   title: "**Logo Finlande** : Histoire et Évolution de l'Emblème des Aigles du Nord [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale finlandaise : des origines à aujourd'hui, évolution et signification de cet emblème unique du football nordique.",
   date: "2024-06-25",

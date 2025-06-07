@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dinamoTbilisiLogoPost: BlogPost = {
-  id: 34,
+  id: 215,
   title: "**Logo Dinamo Tbilissi** : Histoire et Évolution de l'Emblème Emblématique du Club Géorgien",
   excerpt: "Découvrez l'histoire fascinante du **logo Dinamo Tbilissi**, son symbolisme unique et son évolution à travers les décennies.",
   content: `

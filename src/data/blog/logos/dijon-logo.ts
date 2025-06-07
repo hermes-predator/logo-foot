@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dijonLogoPost: BlogPost = {
-  id: 90, // Using a unique ID that's not already used
+  id: 213, // Using a unique ID that's not already used
   title: "Logo Dijon : Histoire et Évolution de l'Emblème du DFCO [2024]",
   excerpt: "Découvrez l'histoire complète du logo Dijon FCO : origines, évolution et symbolisme de l'emblème bourguignon du football français.",
   date: "2024-06-08",

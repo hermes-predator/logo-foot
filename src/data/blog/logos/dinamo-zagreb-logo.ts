@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dinamoZagrebLogoPost: BlogPost = {
-  id: 98, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  id: 216, // Utilisation d'un ID unique qui n'est pas déjà utilisé
   title: "Logo Dinamo Zagreb : Histoire et Design de l'Emblème Croate [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Dinamo Zagreb : origines, évolution et symbolisme de l'emblème emblématique du club croate.",
   date: "2024-06-18",

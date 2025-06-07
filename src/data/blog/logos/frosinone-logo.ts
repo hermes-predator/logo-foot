@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const frosinoneLogoPost: BlogPost = {
-  id: 201, // ID unique pour cet article
+  id: 273, // ID unique pour cet article
   title: "Logo Frosinone Calcio : Histoire et Évolution de l'Emblème du Club Italien",
   date: "2024-07-18",
   category: "logos",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ghanaLogoPost: BlogPost = {
-  id: 58,
+  id: 283,
   title: "Logo Ghana : Histoire et Symbolisme de l'Emblème du Football Ghanéen [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Ghana : origines, évolution et signification de l'emblème qui représente la fierté du football ghanéen.",
   date: "2024-04-15",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const frontCloudPost: BlogPost = {
-  id: 1,
+  id: 272,
   title: "Création Logo Foot : Guide Expert Design [2024]",
   excerpt: "Guide complet pour créer un logo foot professionnel. Découvrez nos conseils d'experts pour concevoir l'écusson parfait pour votre club.",
   date: "2024-03-01",

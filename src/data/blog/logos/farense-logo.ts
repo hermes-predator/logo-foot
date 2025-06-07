@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const farenseLogoPost: BlogPost = {
-  id: 436,
+  id: 249,
   title: "**Farense Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Farense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",

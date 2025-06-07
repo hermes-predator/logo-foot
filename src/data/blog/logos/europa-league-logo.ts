@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const europaLeagueLogoPost: BlogPost = {
-  id: 71,
+  id: 244,
   title: "Logo UEFA Europa League : Histoire & Évolution de l'Emblème Européen [2024]",
   excerpt: "Analyse complète du logo de l'UEFA Europa League : histoire, signification et design de l'emblème prestigieux de la seconde compétition européenne.",
   date: "2024-05-16",

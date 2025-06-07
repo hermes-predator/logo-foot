@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const espanyolLogoPost: BlogPost = {
-  id: 346, // ID unique pour ce nouvel article
+  id: 238, // ID unique pour ce nouvel article
   title: "Logo RCD Espanyol : Histoire et Évolution de l'Emblème du Club Catalan",
   date: "2025-04-11",
   category: "logos",

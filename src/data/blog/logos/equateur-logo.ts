@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const equateurLogoPost: BlogPost = {
-  id: 165,
+  id: 235,
   title: "**Logo Équateur** : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale équatorienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain.",
   date: "2024-05-29",

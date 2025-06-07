@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eliteserienLogoPost: BlogPost = {
-  id: 457,
+  id: 232,
   title: "**Eliteserien Logo** : L'Histoire du Design du Championnat Norvégien",
   date: "2025-04-25",
   category: "competition-logos",

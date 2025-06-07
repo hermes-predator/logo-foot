@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gironaLogoPost: BlogPost = {
-  id: 101, // Using a unique ID that isn't already used
+  id: 285, // Using a unique ID that isn't already used
   title: "Logo Girona FC : Histoire et Évolution de l'Emblème du Club Catalan [2024]",
   excerpt: "Découvrez l'histoire complète du logo Girona FC : origines, signification et évolution de l'emblème emblématique du club catalan espagnol au fil des années.",
   date: "2024-06-22",

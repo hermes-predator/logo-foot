@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fortunaSittardLogoPost: BlogPost = {
-  id: 58,
+  id: 267,
   title: "**Logo Fortuna Sittard** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Fortuna Sittard logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

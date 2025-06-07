@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const genkLogoPost: BlogPost = {
-  id: 304, // ID unique pour ce nouvel article
+  id: 277, // ID unique pour ce nouvel article
   title: "Logo KRC Genk : Histoire et Évolution de l'Emblème du Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo KRC Genk, ses origines et son évolution. Téléchargez le logo Genk PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-27", // Date de publication

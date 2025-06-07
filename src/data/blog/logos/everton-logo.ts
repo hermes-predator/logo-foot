@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const evertonLogoPost: BlogPost = {
-  id: 63,
+  id: 245,
   title: "Logo Everton : Histoire et Evolution de l'Emblème des Toffees [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Everton FC : origines, évolution et symbolisme de l'emblème emblématique des Toffees de Liverpool.",
   date: "2024-04-13",

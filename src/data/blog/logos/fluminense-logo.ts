@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fluminenseLogoPost: BlogPost = {
-  id: 8,
+  id: 263,
   title: "**Fluminense Logo** : Histoire et Évolution de l'Emblème Carioca [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Fluminense**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Fluminense logo PNG**.",
   date: "2024-04-22",

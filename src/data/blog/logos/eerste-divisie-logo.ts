@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eersteDivisieLogoPost: BlogPost = {
-  id: 856,
+  id: 225,
   title: "L'**Eerste Divisie Logo** : Histoire et Évolution de l'Emblème du Second Niveau Néerlandais",
   excerpt: "Découvrez l'histoire fascinante de l'**Eerste Divisie Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la deuxième division néerlandaise.",
   date: "2024-04-18",

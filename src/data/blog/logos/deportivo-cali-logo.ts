@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const deportivoCaliLogoPost: BlogPost = {
-  id: 427,
+  id: 209,
   title: "**Logo Deportivo Cali** : Histoire et Design de l'Emblème Vert [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Deportivo Cali, son évolution et la signification de cet emblème emblématique du football colombien.",
   date: "2024-04-15",

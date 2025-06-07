@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fleetwoodTownLogoPost: BlogPost = {
-  id: 562,
+  id: 261,
   title: "**Logo Fleetwood Town** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Fleetwood Town FC logo**, symbole d'identité et de fierté du club anglais. Une analyse détaillée du **logo Fleetwood Town FC** à travers les années.",
   date: "2024-04-20",

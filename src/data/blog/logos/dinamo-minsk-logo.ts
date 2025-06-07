@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dinamoMinskLogoPost: BlogPost = {
-  id: 563,
+  id: 214,
   title: "**Dinamo Minsk Logo** : Histoire et Design de l'Emblème du Club Biélorusse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Dinamo Minsk**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club historique.",
   date: "2024-04-15", 

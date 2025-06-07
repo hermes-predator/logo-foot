@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const galatasarayLogoPost: BlogPost = {
-  id: 81,
+  id: 275,
   title: "Logo Galatasaray : Histoire et Évolution de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Galatasaray : origines, signification et évolution de cet emblème emblématique du football turc à travers les âges.",
   date: "2024-04-18",

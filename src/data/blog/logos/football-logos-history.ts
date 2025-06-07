@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const footballLogosHistoryPost: BlogPost = {
-  id: 162,
+  id: 265,
   title: "Tous les Logos de Foot : Histoire et Évolution des Emblèmes de Football [2024]",
   excerpt: "Découvrez l'histoire fascinante de tous les logos de foot : origines, évolution et signification des emblèmes qui représentent l'identité visuelle des clubs à travers le monde.",
   date: "2024-06-01",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fleuryLogoPost: BlogPost = {
-  id: 99,
+  id: 262,
   title: "**Logo Fleury 91** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

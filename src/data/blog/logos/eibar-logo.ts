@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eibarLogoPost: BlogPost = {
-  id: 354, // ID unique pour ce nouvel article
+  id: 228, // ID unique pour ce nouvel article
   title: "Logo SD Eibar : Histoire et Évolution de l'Emblème Basque [2024]",
   date: "2025-04-11",
   category: "logos",

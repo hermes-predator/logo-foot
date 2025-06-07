@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fcUtrechtLogoPost: BlogPost = {
-  id: 9333,
+  id: 254,
   title: "**Logo Utrecht** : Histoire et Évolution de l'Emblème du FC Utrecht [2024]",
   excerpt: "Découvrez l'histoire fascinante du **FC Utrecht logo**, son évolution et sa signification. Un symbole fort du football néerlandais qui incarne la fierté de toute une ville.",
   date: "2024-04-19",

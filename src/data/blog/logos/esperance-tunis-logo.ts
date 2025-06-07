@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const esperanceTunisLogoPost: BlogPost = {
-  id: 431,
+  id: 239,
   title: "**Logo Espérance Sportive de Tunis** : Histoire et Signification [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Espérance Sportive de Tunis**, son évolution et sa symbolique qui représente l'un des plus grands clubs d'Afrique.",
   date: "2024-04-15",

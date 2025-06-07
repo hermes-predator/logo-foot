@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const estorilPraiaLogoPost: BlogPost = {
-  id: 332, // ID unique qui n'est pas encore utilisé
+  id: 241, // ID unique qui n'est pas encore utilisé
   title: "Logo Estoril Praia : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Estoril Praia : origines, évolution et signification des symboles du club de football portugais.",
   date: "2024-09-01",

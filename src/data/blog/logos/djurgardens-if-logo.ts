@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const djurgardensIfLogoPost: BlogPost = {
-  id: 443,
+  id: 217,
   title: "**Logo Djurgårdens IF** : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Djurgårdens IF**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **Djurgården logo** et de son évolution.",
   date: "2024-04-22",

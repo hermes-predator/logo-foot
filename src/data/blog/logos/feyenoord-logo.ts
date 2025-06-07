@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const feyenoordLogoPost: BlogPost = {
-  id: 68,
+  id: 257,
   title: "Logo Feyenoord : Histoire et Symbolisme de l'Emblème de Rotterdam [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Feyenoord, son évolution au fil du temps et la signification des symboles qui représentent fièrement le club de Rotterdam.",
   date: "2024-05-10",

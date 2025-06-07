@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fcTwenteLogoPost: BlogPost = {
-  id: 343,
+  id: 253,
   title: "Logo FC Twente : Histoire et évolution de l'emblème du club des Pays-Bas",
   date: "2025-04-11",
   category: "logos",

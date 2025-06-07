@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gaziantepFkLogoPost: BlogPost = {
-  id: 567,
+  id: 276,
   title: "**Gaziantep FK Logo** : Histoire et Évolution de l'Emblème du Club Anatolien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Gaziantep FK logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",

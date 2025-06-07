@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fcDallasLogoPost: BlogPost = {
-  id: 565,
+  id: 250,
   title: "**FC Dallas Logo** : Histoire et Evolution de l'Emblème de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo FC Dallas**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",

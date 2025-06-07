@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const doncasterRoversLogoPost: BlogPost = {
-  id: 566,
+  id: 218,
   title: "**Logo Doncaster Rovers** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Doncaster Rovers FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Doncaster Rovers à travers les années.",
   date: "2024-04-20",

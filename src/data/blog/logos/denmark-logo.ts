@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const denmarkLogoPost: BlogPost = {
-  id: 158,
+  id: 208,
   title: "Logo Danemark : Histoire et Design de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo Danemark : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football scandinave.",
   date: "2024-05-24",

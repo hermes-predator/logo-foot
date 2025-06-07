@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ecussonsFootballPost: BlogPost = {
-  id: 304,
+  id: 224,
   title: "Écussons de Football : Histoire et Symboles des Clubs [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification des écussons de football. Analyse complète des symboles et des designs qui font l'identité visuelle des clubs de foot.",
   date: "2024-04-09",

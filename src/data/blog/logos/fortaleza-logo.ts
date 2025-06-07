@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fortalezaLogoPost: BlogPost = {
-  id: 439,
+  id: 266,
   title: "**Logo Fortaleza** : Histoire et Design de l'Emblème du Leão [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Fortaleza**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **logo do Fortaleza**.",
   date: "2024-04-22",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const flamengoLogoPost: BlogPost = {
-  id: 168,
+  id: 260,
   title: "Logo Flamengo : Histoire et Évolution de l'Emblème du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Flamengo : des origines à aujourd'hui, évolution et signification de l'emblème du club le plus populaire du Brésil, symbole du football brésilien.",
   date: "2024-06-02",

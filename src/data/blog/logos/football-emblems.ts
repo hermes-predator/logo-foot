@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const footballEmblemsPost: BlogPost = {
-  id: 331,
+  id: 264,
   title: "Football Emblems : Histoire et Signification des Écussons de Clubs [Guide 2024]",
   excerpt: "Découvrez l'histoire, la signification et l'évolution des emblèmes de football à travers les époques. Un guide complet sur les écussons qui définissent l'identité des clubs.",
   date: "2024-09-05",

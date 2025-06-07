@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dunkerqueLogoPost: BlogPost = {
-  id: 120,
+  id: 221,
   title: "Logo Dunkerque : Histoire et Évolution de l'Emblème du Nord [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'USL Dunkerque : origines, évolution et symbolisme de l'emblème emblématique du club nordiste.",
   date: "2024-06-17",

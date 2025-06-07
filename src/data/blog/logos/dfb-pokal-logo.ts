@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dfbPokalLogoPost: BlogPost = {
-  id: 853,
+  id: 211,
   title: "Le **DFB Pokal Logo** : Histoire et Symbolisme de la Coupe d'Allemagne",
   excerpt: "Découvrez l'histoire fascinante du **DFB Pokal Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la célèbre coupe allemande.",
   date: "2024-04-15",

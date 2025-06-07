@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ferencvarosLogoPost: BlogPost = {
-  id: 359, // Unique ID for this new article
+  id: 256, // Unique ID for this new article
   title: "Ferencváros Logo : Histoire et Signification de l'Emblème Hongrois [2024]",
   date: "2025-04-11",
   category: "logos",

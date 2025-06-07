@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dortmundLogoPost: BlogPost = {
-  id: 52,
+  id: 219,
   title: "Logo Borussia Dortmund : Histoire et Design de l'Emblème BVB [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Borussia Dortmund : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du BVB.",
   date: "2024-04-02",

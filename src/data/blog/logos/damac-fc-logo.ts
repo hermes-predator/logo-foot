@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const damacFcLogoPost: BlogPost = {
-  id: 431,
+  id: 207,
   title: "Logo Damac FC : Histoire et Évolution de l'Emblème du Club Saoudien",
   excerpt: "Découvrez l'histoire fascinante du logo Damac FC, l'un des clubs montants du football saoudien. Analyse complète de son design et de son évolution visuelle au fil des années.",
   date: "2024-04-22",

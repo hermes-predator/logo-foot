@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gabonLogoPost: BlogPost = {
-  id: 42,
+  id: 274,
   title: "**Logo Gabon Foot** : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire complète du **logo Gabon**, ses couleurs et sa signification. Analyse détaillée de l'évolution du **logo du Gabon** à travers les années et son impact sur l'identité footballistique nationale.",
   date: "2024-03-28",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const franceLogoPost: BlogPost = {
-  id: 88,
+  id: 268,
   title: "Logo Équipe de France : Histoire et Évolution de l'Emblème des Bleus [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'Équipe de France de football : origines, évolution et symbolisme de l'emblème des Bleus qui a marqué l'histoire du football mondial.",
   date: "2024-05-31",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cskaMoscowLogoPost: BlogPost = {
-  id: 559,
+  id: 202,
   title: "**CSKA Moscou Logo** : Histoire et Évolution de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo CSKA Moscou**, un symbole emblématique du football russe qui incarne la tradition militaire et sportive.",
   date: "2024-04-15",

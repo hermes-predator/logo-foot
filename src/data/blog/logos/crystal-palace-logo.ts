@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const crystalPalaceLogoPost: BlogPost = {
-  id: 64,
+  id: 201,
   title: "Logo Crystal Palace FC : Histoire et Evolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Crystal Palace FC, ses symboles et comment l'aigle emblématique est devenu l'identité visuelle du club londonien.",
   date: "2024-04-23",

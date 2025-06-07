@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fcGroningenLogoPost: BlogPost = {
-  id: 9339,
+  id: 251,
   title: "**Logo FC Groningen** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **FC Groningen logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

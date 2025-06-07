@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cyprusLogoPost: BlogPost = {
-  id: 79,
+  id: 204,
   title: "**Logo Chypre** : L'Histoire de l'Emblème des Aigles Méditerranéens [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale chypriote : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football chypriote.",
   date: "2025-04-27",

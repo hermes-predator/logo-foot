@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const derbyCountyLogoPost: BlogPost = {
-  id: 374,
+  id: 210,
   title: "**Logo Derby County FC** : Histoire et Évolution de l'Emblème des Rams [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Derby County**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

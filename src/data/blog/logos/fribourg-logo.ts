@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fribourgLogoPost: BlogPost = {
-  id: 64,
+  id: 271,
   title: "Logo SC Fribourg : Histoire et Symboles du Club de Bundesliga [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo SC Fribourg, emblème de ce club historique de la Bundesliga allemande. Analyse complète du design et de l'évolution de cet écusson emblématique.",
   date: "2024-04-16",

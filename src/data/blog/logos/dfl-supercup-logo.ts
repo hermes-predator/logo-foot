@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dflSupercupLogoPost: BlogPost = {
-  id: 191, // ID unique qui n'est pas déjà utilisé
+  id: 212, // ID unique qui n'est pas déjà utilisé
   title: "DFL Supercup Logo : Histoire et Évolution de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la DFL Supercup : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Allemagne.",
   date: "2024-06-22",

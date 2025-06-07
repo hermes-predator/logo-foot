@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const germanClubsPost: BlogPost = {
-  id: 25,
+  id: 280,
   title: "Logos du Football Allemand : Histoire et Design de la Bundesliga [2024]",
   excerpt: "Découvrez l'histoire des logos du football allemand. Du Bayern Munich à Dortmund, explorez l'évolution des emblèmes de la Bundesliga et leur signification.",
   date: "2024-03-10",

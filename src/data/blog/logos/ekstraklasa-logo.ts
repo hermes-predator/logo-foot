@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ekstraklasaLogoPost: BlogPost = {
-  id: 456,
+  id: 230,
   title: "**Ekstraklasa Logo** : Histoire et Evolution du Championnat Polonais de Football",
   date: "2025-04-25",
   category: "competition-logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const frenchLeaguesSchemaPost: BlogPost = {
-  id: 84,
+  id: 270,
   title: "Schéma des Ligues Françaises de Football : Structure et Organisation [2024]",
   excerpt: "Découvrez l'organisation pyramidale complète du football français: divisions, promotions, relégations et connections entre les différents niveaux du football hexagonal.",
   date: "2024-04-20",

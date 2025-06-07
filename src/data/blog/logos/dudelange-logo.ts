@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const dudelangeLogoPost: BlogPost = {
-  id: 437,
+  id: 220,
   title: "**Dudelange Logo** : Histoire et Symbolisme de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Dudelange**, son évolution et sa symbolique unique dans le football luxembourgeois.",
   date: "2024-04-15",

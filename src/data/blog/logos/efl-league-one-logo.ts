@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eflLeagueOneLogoPost: BlogPost = {
-  id: 854,
+  id: 226,
   title: "L'Histoire et le Symbolisme du **EFL League One Logo** au Fil des Années",
   excerpt: "Découvrez l'évolution fascinante du **logo League One** à travers les décennies, son design distinctif et sa signification dans le paysage footballistique anglais dans cette analyse complète.",
   date: "2024-04-15",

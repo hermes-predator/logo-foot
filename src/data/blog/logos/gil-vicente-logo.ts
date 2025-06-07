@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gilVicenteLogoPost: BlogPost = {
-  id: 435,
+  id: 284,
   title: "**Gil Vicente Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Gil Vicente**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const getafeLogoPost: BlogPost = {
-  id: 156,
+  id: 282,
   title: "Logo Getafe CF : Histoire et Design de l'Emblème Azulón [2024]",
   excerpt: "Découvrez l'histoire complète du logo Getafe CF : des origines à aujourd'hui, évolution et signification de l'emblème du club madrilène de Liga.",
   date: "2024-05-20",

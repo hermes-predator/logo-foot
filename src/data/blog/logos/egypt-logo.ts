@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const egyptLogoPost: BlogPost = {
-  id: 6,
+  id: 227,
   title: "Logo Egypte : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Egypte : des origines à aujourd'hui, évolution et signification de l'emblème du football égyptien.",
   date: "2024-05-27",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const evianThononLogoPost: BlogPost = {
-  id: 92,
+  id: 246,
   title: "**Logo Evian Thonon** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fiorentinaLogoPost: BlogPost = {
-  id: 58,
+  id: 259,
   title: "Logo Fiorentina : Histoire et Évolution du Symbole Violet [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Fiorentina : origines, évolution et signification de l'emblème emblématique du club de Florence.",
   date: "2024-04-08",

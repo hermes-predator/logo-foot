@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ecussonsClubFootEuropeenPost: BlogPost = {
-  id: 305,
+  id: 223,
   title: "Écussons Club de Foot Européen : Histoire et Design [Guide 2024]",
   excerpt: "Découvrez l'histoire et le design des écussons club de foot européens. Analyse complète des emblèmes anglais, italiens et portugais qui font l'identité visuelle du football.",
   date: "2024-04-10",

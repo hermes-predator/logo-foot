@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eredivisieLogoPost: BlogPost = {
-  id: 87,
+  id: 236,
   title: "Eredivisie Logo : Histoire et Évolution du Logo de la Ligue Néerlandaise [2024]",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Eredivisie, emblème du championnat de football néerlandais. Une analyse détaillée du design, des couleurs et de la symbolique du logo Eredivisie PNG à travers les époques.",
   date: "2024-06-02",

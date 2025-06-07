@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fenerbahceLogoPost: BlogPost = {
-  id: 84,
+  id: 255,
   title: "Logo Fenerbahçe : Histoire et Évolution de l'Emblème Turc [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Fenerbahçe : origines, symbolisme et évolution de l'emblème emblématique du club stambouliote.",
   date: "2024-04-19",

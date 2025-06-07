@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const elcheCfLogoPost: BlogPost = {
-  id: 406,
+  id: 231,
   title: "Logo Elche CF : Histoire et Symbolisme de l'Emblème du Club Espagnol",
   excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Elche CF. Analyse complète de l'emblème du club espagnol de La Liga.",
   date: "2024-07-05",

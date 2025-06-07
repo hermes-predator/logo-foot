@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const eintrachtFrankfurtLogoPost: BlogPost = {
-  id: 89,
+  id: 229,
   title: "Logo Eintracht Francfort : Histoire et Design de l'Aigle Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Eintracht Francfort : origines, évolution et symbolisme de l'emblème emblématique du club allemand.",
   date: "2024-05-21",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const faCupLogoPost: BlogPost = {
-  id: 112,
+  id: 247,
   title: "Logo FA Cup : Histoire et Design de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire complète du logo FA Cup : origines, évolution et signification de l'emblème emblématique de la plus ancienne compétition de football au monde.",
   date: "2024-06-03",

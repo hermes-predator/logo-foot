@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const famalicaoLogoPost: BlogPost = {
-  id: 409,
+  id: 248,
   title: "Logo Famalicão : Histoire et Signification du FC Famalicão [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification derrière le logo Famalicão, emblème du club portugais. Analyse complète des couleurs, symboles et évolution du FC Famalicão.",
   date: "2024-07-20",

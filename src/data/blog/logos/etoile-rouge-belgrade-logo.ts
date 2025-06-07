@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const etoileRougeBelgradeLogoPost: BlogPost = {
-  id: 111,
+  id: 242,
   title: "Logo Étoile Rouge de Belgrade : Histoire et Symbolisme du Club Serbe [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'Étoile Rouge de Belgrade : origines, évolution et signification de l'emblème emblématique du club serbe le plus titré.",
   date: "2024-06-05",

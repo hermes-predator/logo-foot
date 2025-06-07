@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const englandLogoPost: BlogPost = {
-  id: 82,
+  id: 234,
   title: "Logo Angleterre Football : Histoire et Évolution de l'Emblème des Three Lions [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe d'Angleterre : origines, signification et évolution de l'emblème emblématique des Three Lions à travers les époques.",
   date: "2024-04-19",

@@ -2,7 +2,7 @@
 import { BlogPost } from "../../../types/blog";
 
 export const erzurumsporLogoPost: BlogPost = {
-  id: 9133,
+  id: 237,
   title: "Logo Erzurumspor : Histoire et Signification de l'Emblème du Club Turc",
   excerpt: "Découvrez l'histoire fascinante derrière le logo d'Erzurumspor, un design qui reflète l'identité et la fierté du football turc.",
   date: "2024-04-22",

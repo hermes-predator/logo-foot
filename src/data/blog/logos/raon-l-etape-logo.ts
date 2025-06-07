@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const raonEtapeLogoPost: BlogPost = {
-  id: 96,
+  id: 465,
   title: "**Logo Raon l'Étape** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

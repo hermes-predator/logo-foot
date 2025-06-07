@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const readingFcLogoPost: BlogPost = {
-  id: 363,
+  id: 470,
   title: "**Reading FC Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Reading Football Club**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",

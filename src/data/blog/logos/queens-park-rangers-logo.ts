@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const queensParkRangersLogoPost: BlogPost = {
-  id: 403,
+  id: 462,
   title: "Queens Park Rangers FC Logo : Histoire et Évolution de l'Emblème Légendaire",
   excerpt: "Découvrez l'histoire fascinante du Queens Park Rangers logo, l'un des écussons les plus emblématiques du football anglais. Analyse complète, évolution historique et téléchargement PNG haute définition.",
   date: "2024-04-14",

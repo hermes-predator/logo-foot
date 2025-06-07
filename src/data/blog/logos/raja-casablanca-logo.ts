@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rajaCasablancaLogoPost: BlogPost = {
-  id: 432,
+  id: 464,
   title: "**Logo Raja Casablanca** : Histoire et Symbolique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Raja Casablanca**, son évolution et sa signification profonde dans le football marocain et africain.",
   date: "2024-04-15",

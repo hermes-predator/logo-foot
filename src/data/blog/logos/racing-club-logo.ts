@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const racingClubLogoPost: BlogPost = {
-  id: 434,
+  id: 463,
   title: "**Logo Racing Club** : Histoire et Évolution de l'Emblème Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Racing Club logo**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de Racing Club**.",
   date: "2024-04-22",

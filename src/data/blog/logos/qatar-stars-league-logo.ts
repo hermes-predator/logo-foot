@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const qatarStarsLeagueLogoPost: BlogPost = {
-  id: 463,
+  id: 461,
   title: "**Qatar Stars League Logo** : L'Évolution d'un Emblème du Football Qatari",
   date: "2025-04-27",
   category: "competition-logos",

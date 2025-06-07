@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rbLeipzigLogoPost: BlogPost = {
-  id: 71,
+  id: 468,
   title: "Logo Leipzig : Histoire et Design de l'Emblème RB Leipzig [2024]",
   excerpt: "Découvrez l'histoire complète du logo Leipzig (RB Leipzig), son évolution et la symbolique derrière l'écusson de ce club montant du football allemand.",
   date: "2024-05-15",
-  galleryImageId: 71,
+  galleryImageId: 468,
   content: `# L'Histoire Fascinante du **Logo Leipzig**
 
 Le **logo Leipzig** est devenu en peu de temps l'un des symboles les plus reconnaissables du football allemand moderne. Représentant le RB Leipzig, club fondé en 2009, cet emblème incarne parfaitement la montée fulgurante d'une équipe qui a bouleversé les codes traditionnels de la Bundesliga.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rapidWienLogoPost: BlogPost = {
-  id: 99922,
+  id: 466,
   title: "Logo Rapid Wien : Histoire, Signification et Évolution du Club Autrichien [2024]",
   excerpt: "Découvrez toute l’histoire et la symbolique du logo Rapid Wien, un blason incontournable du football viennois et européen, disponible en PNG haute qualité.",
   date: "2024-04-21",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rayoVallecanoLogoPost: BlogPost = {
-  id: 158, // ID unique qui n'est pas déjà utilisé
+  id: 467, // ID unique qui n'est pas déjà utilisé
   title: "Logo Rayo Vallecano : Histoire et Design de l'Emblème Madrilène [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Rayo Vallecano : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club de Vallecas.",
   date: "2024-05-24",

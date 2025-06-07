@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const palmeirasLogoPost: BlogPost = {
-  id: 545,
+  id: 9,
   title: "Logo Palmeiras : Histoire et Évolution de l'Emblème Brésilien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Palmeiras : origines, évolution et signification de l'emblème emblématique du club brésilien.",
   date: "2025-04-09",
@@ -118,5 +118,5 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
   category: "logos",
   subCategory: "southAmericanClubs",
   keywords: "logo palmeiras, palmeiras logo, palmeiras logo png, palmeiras soccer logo, logo del palmeiras",
-  galleryImageId: 545,
+  galleryImageId: 9,
 };

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const egyptLogoPost: BlogPost = {
-  id: 161,
+  id: 6,
   title: "Logo Egypte : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Egypte : des origines à aujourd'hui, évolution et signification de l'emblème du football égyptien.",
   date: "2024-05-27",
@@ -46,5 +47,6 @@ Au-delà de sa dimension sportive, le **logo egypte** est devenu un puissant sym
 Les joueurs qui portent fièrement le maillot orné du **egypte logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football africain et dont l'**egypt logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
   keywords: "logo egypte, egypt football logo, egypt logo, egypt logo png, egypte logo, egypte logo foot, egypte logo png, logo egypte foot, logo foot egypte, egypt football team logo",
   category: 'national-logos',
-  subCategory: 'national-logos'
+  subCategory: 'national-logos',
+  galleryImageId: 6
 };

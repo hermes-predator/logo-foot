@@ -2,7 +2,7 @@
 import { BlogPost } from "../../../types/blog";
 
 export const bandirmasporLogoPost: BlogPost = {
-  id: 9134,
+  id: 15,
   title: "**Bandırmaspor Logo** : Histoire et Signification de l'Emblème du Club Turc",
   excerpt: "Découvrez l'histoire fascinante du **logo Bandırmaspor**, un symbole qui incarne l'identité et la passion du football turc.",
   date: "2024-04-22",
@@ -48,5 +48,5 @@ Le **bandırmaspor logo** se caractérise par :
 Le **bandırmaspor logo** est plus qu'un simple emblème - c'est un récit visuel de passion, d'histoire et de communauté.
   `,
   keywords: "**bandırmaspor logo**, **bandırmaspor logo png**, logo football turc, design de logo sportif, emblème de club turc",
-  galleryImageId: 9134
+  galleryImageId: 15
 };

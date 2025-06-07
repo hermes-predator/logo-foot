@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const asianClubsPost: BlogPost = {
-  id: 29,
+  id: 13,
   title: "Logos du Football Asiatique : Innovation et Tradition [2024]",
   excerpt: "Explorez l'univers fascinant des logos du football asiatique. De la J-League aux clubs chinois, découvrez comment tradition et modernité se mêlent dans le design.",
   date: "2024-03-14",
@@ -67,5 +67,6 @@ Tendances Asiatiques
 - Digital assets`,
   keywords: "logo foot asiatique, j-league logo, k-league design, super league chinoise, football asiatique, logos clubs asiatiques",
   category: 'logos',
-  subCategory: 'club-logos'
+  subCategory: 'club-logos',
+  galleryImageId: 13
 };

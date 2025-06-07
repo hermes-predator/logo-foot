@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const worldCupLogoPost: BlogPost = {
-  id: 88,
+  id: 600,
   title: "Logo Coupe du Monde : Histoire et Évolution de l'Emblème du Football [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Coupe du Monde de football : des origines à 2026, évolution et signification de l'emblème emblématique du tournoi mondial.",
   date: "2024-05-20",
-  galleryImageId: 88,
+  galleryImageId: 600,
   content: `# L'Histoire Fascinante du **Logo Coupe du Monde**
 
 Le **logo coupe du monde** est bien plus qu'un simple emblème graphique : c'est un symbole universel qui incarne l'esprit de la plus grande compétition sportive planétaire. Le **coupe du monde logo** représente visuellement des valeurs d'unité, d'excellence et de passion qui transcendent les frontières culturelles et linguistiques à travers le monde entier.

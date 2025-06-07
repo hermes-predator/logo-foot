@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wiganAthleticLogoPost: BlogPost = {
-  id: 9057,
+  id: 594,
   title: "Logo Wigan Athletic : Histoire et Évolution de l'Emblème des Latics [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Wigan Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
-  galleryImageId: 9057,
+  galleryImageId: 594,
   content: `
 # L'histoire complète du **logo Wigan** : Symbole d'un club anglais historique
 

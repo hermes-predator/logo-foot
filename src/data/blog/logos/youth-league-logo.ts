@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const youthLeagueLogoPost: BlogPost = {
-  id: 459,
+  id: 605,
   title: "**UEFA Youth League Logo** : L'Histoire du Design de la Compétition des Jeunes Talents",
   date: "2025-04-25",
   category: "competition-logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const zulteWaregemLogoPost: BlogPost = {
-  id: 50,
+  id: 608,
   title: "**Logo Zulte Waregem** : Histoire et Signification [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Zulte Waregem**, son évolution et sa symbolique. Un emblème qui représente la fierté du football belge.",
   date: "2024-04-19",

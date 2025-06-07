@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const westerloLogoPost: BlogPost = {
-  id: 557,
+  id: 593,
   title: "**Logo Westerlo** : Histoire et Évolution de l'Emblème du KVC [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Westerlo**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo KVC Westerlo** et de son évolution.",
   date: "2024-04-19",

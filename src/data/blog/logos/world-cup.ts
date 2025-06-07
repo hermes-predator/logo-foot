@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const worldCupPost: BlogPost = {
-  id: 86,
+  id: 601,
   title: "Logo Coupe du Monde : Histoire et Évolution des Emblèmes de la FIFA [2024]",
   excerpt: "Découvrez l'histoire fascinante des logos de la Coupe du Monde de football : leur évolution, leur symbolisme et comment ils reflètent la culture des pays hôtes à travers les décennies.",
   date: "2024-04-22",
-  galleryImageId: 86,
+  galleryImageId: 601,
   content: `# L'Histoire Fascinante des **Logos Coupe du Monde** de Football
 
 Les **logos coupe du monde** de football sont bien plus que de simples identités visuelles : ils représentent l'esprit de la plus grande compétition sportive planétaire et capturent l'essence culturelle des pays hôtes. Ces **logos world cup** sont devenus au fil des décennies de véritables œuvres d'art qui transcendent le cadre sportif pour s'inscrire dans l'histoire du design et du football mondial.

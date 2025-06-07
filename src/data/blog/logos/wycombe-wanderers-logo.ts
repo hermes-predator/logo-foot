@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wycombeWanderersLogoPost: BlogPost = {
-  id: 366,
+  id: 603,
   title: "**Wycombe Wanderers Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Wycombe Wanderers**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",

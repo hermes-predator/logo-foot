@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wolfsburgLogoPost: BlogPost = {
-  id: 66,
+  id: 598,
   title: "Logo Wolfsburg : Histoire et Design du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo VfL Wolfsburg, emblème iconique du club de Bundesliga. Analyse complète du design et de l'évolution de cet écusson distinctif.",
   date: "2024-04-20",

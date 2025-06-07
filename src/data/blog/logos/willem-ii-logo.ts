@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const willemIiLogoPost: BlogPost = {
-  id: 9343,
+  id: 595,
   title: "**Logo Willem II** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Willem II logo**, son évolution et sa signification dans le football néerlandais.",
   date: "2024-04-19",

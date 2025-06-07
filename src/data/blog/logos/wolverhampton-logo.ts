@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wolverhamptonLogoPost: BlogPost = {
-  id: 96, // Using a unique ID that isn't already used
+  id: 599, // Using a unique ID that isn't already used
   title: "Logo Wolverhampton : Histoire et Design de l'Emblème des Wolves [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Wolverhampton Wanderers : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-14",
-  galleryImageId: 96,
+  galleryImageId: 599,
   content: `# L'Histoire Fascinante du **Logo Wolverhampton**
 
 Le **logo wolverhampton** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **wolverhampton wanderers logo** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté dans les West Midlands.

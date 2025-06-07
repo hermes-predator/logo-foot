@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const zimbabweLogoPost: BlogPost = {
-  id: 448,
+  id: 607,
   title: "**Logo Zimbabwe** : Histoire et Symbolisme des Warriors [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale zimbabwéenne : des origines à aujourd'hui, signification et évolution de cet emblème africain emblématique.",
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 448,
+  galleryImageId: 607,
   content: `# L'Histoire Fascinante du **Logo Zimbabwe**
 
 Le **zimbabwe logo** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation fière dont l'histoire footballistique reflète l'évolution du pays. Le **logo zimbabwe** incarne la force et les aspirations d'une équipe nationale qui s'est forgée une identité unique sur le continent africain.

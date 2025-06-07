@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const youngBoysLogoPost: BlogPost = {
-  id: 370, // ID unique pour cet article
+  id: 604, // ID unique pour cet article
   title: "BSC Young Boys Logo: Histoire et Évolution de l'Emblème du Club Suisse [2024]",
   date: "2025-04-11",
   category: "logos",

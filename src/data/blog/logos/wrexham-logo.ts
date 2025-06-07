@@ -1,13 +1,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wrexhamLogoPost: BlogPost = {
-  id: 9054,
+  id: 602,
   title: "Logo Wrexham AFC : Histoire et Design du Symbole du Club Gallois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Wrexham AFC, son évolution à travers les années et la signification derrière le design emblématique du club gallois le plus ancien du pays.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
-  galleryImageId: 9054,
+  galleryImageId: 602,
   content: `
 # L'histoire du **logo Wrexham** : Symbole d'un club historique
 

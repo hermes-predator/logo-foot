@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const zurichLogoPost: BlogPost = {
-  id: 420,
+  id: 609,
   title: "Logo Zurich : Histoire et Évolution de l'Emblème du FC Zurich [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Zurich, son évolution au fil des années et la signification de ses éléments emblématiques qui représentent l'identité du club suisse.",
   date: "2024-04-15",

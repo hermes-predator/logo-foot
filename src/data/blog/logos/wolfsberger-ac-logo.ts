@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const wolfsbergerAcLogoPost: BlogPost = {
-  id: 467,
+  id: 597,
   title: "Logo Wolfsberger AC : Histoire et Signification",
   excerpt: "Découvrez l'histoire fascinante derrière le logo du Wolfsberger AC, un des clubs les plus emblématiques du football autrichien.",
   date: "2024-04-21",

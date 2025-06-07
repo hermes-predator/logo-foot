@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const winamaxLogoPost: BlogPost = {
-  id: 60,
+  id: 596,
   title: "Logo Winamax : Histoire et Analyse du Design de la Marque de Paris Sportifs [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Winamax, comment la célèbre marque de paris sportifs a développé son identité visuelle distinctive au fil des années.",
   date: "2024-04-12",
-  galleryImageId: 60,
+  galleryImageId: 596,
   content: `L'Histoire Fascinante du Logo Winamax
 
 Le logo Winamax est devenu l'un des emblèmes les plus reconnaissables dans l'univers des paris sportifs en ligne en France. Cette identité visuelle forte symbolise non seulement une marque influente dans l'industrie du gambling, mais aussi un acteur majeur du sponsoring sportif, notamment dans le football français.

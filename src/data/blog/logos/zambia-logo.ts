@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const zambiaLogoPost: BlogPost = {
-  id: 432,
+  id: 606,
   title: "**Logo Zambie** : Histoire et Signification de l'Emblème des Chipolopolo [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale zambienne : des origines à aujourd'hui, évolution et signification de cet emblème emblématique du football africain.",
   date: "2024-07-02",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 432,
+  galleryImageId: 606,
   content: `# L'Histoire du **Logo Zambie** : Un Symbole de Fierté Nationale
 
 Le **logo zambie** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation passionnée de football, dont l'histoire est marquée par des moments de gloire et de résilience. Le **zambia logo** est devenu au fil des années un emblème reconnaissable qui incarne les aspirations et la fierté du football zambien.

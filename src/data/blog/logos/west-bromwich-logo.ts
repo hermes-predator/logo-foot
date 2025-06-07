@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const westBromwichLogoPost: BlogPost = {
-  id: 69, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  id: 591, // Utilisation d'un ID unique qui n'est pas déjà utilisé
   title: "Logo West Bromwich Albion : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de West Bromwich Albion: origines, signification et évolution de l'emblème emblématique des Baggies.",
   date: "2024-05-04",
-  galleryImageId: 69,
+  galleryImageId: 591,
   content: `# L'Histoire Fascinante du **Logo West Bromwich Albion**
 
 Le **west bromwich logo** est bien plus qu'un simple emblème sportif. Il représente l'identité profonde d'un club historique du football anglais, dont l'héritage remonte à la fin du XIXe siècle. Plongeons dans l'univers passionnant du **logo west bromwich** et découvrons comment ce symbole a évolué pour devenir l'icône qu'il est aujourd'hui.

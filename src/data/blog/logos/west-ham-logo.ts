@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const westHamLogoPost: BlogPost = {
-  id: 62,
+  id: 592,
   title: "Logo West Ham United : Histoire et Evolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de West Ham United, son évolution au fil des années et la signification de ses symboles emblématiques dans cette analyse détaillée.",
   date: "2024-04-15",
-  galleryImageId: 62,
+  galleryImageId: 592,
   content: `# L'Histoire Passionnante du **Logo West Ham United**
 
 Le **logo west ham** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité culturelle, de fierté ouvrière et d'histoire londonienne. En explorant en détail le **west ham logo**, nous découvrons un récit fascinant qui reflète les valeurs profondes d'un club emblématique de l'Est londonien.

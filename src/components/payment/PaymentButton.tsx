@@ -56,13 +56,13 @@ const PaymentButton = () => {
             {/* Effet de brillance - maintenant importé directement sans lazy loading */}
             <ButtonEffects />
             
-            <div className="flex items-center justify-center w-full gap-4 relative z-10">
+            <div className="flex items-center justify-center w-full gap-5 relative z-10">
               <ShoppingCart 
                 className="drop-shadow-sm flex-shrink-0"
-                size={22}
-                width={22}
-                height={22}
-                style={{ width: '22px', height: '22px', minWidth: '22px', minHeight: '22px' }}
+                size={20}
+                width={20}
+                height={20}
+                style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px' }}
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">

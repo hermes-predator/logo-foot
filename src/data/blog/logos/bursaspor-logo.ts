@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bursasporLogoPost: BlogPost = {
-  id: 55,
+  id: 142,
   title: "**Bursaspor Logo** : Histoire et Symbolique de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bursaspor**, un symbole emblématique qui représente la fierté du football turc et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 

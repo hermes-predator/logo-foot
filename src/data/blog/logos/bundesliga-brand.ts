@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bundesligaLogoPost: BlogPost = {
-  id: 33,
+  id: 139,
   title: "Logo Bundesliga : Analyse Design Football Allemand [2024]",
   excerpt: "Découvrez l'analyse complète du logo Bundesliga. Histoire, évolution et signification du symbole du championnat allemand de football.",
   date: "2024-03-20",

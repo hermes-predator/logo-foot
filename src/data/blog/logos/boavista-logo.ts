@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const boavistaLogoPost: BlogPost = {
-  id: 331, // Utiliser un ID unique qui n'est pas encore utilisé
+  id: 117, // Utiliser un ID unique qui n'est pas encore utilisé
   title: "Logo Boavista FC : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Boavista FC : origines, évolution et signification des symboles de l'emblème du club à l'échiquier noir et blanc.",
   date: "2024-08-31",

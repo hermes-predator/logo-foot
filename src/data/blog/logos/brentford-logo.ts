@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const brentfordLogoPost: BlogPost = {
-  id: 98, // Using a unique ID that hasn't been used yet
+  id: 132, // Using a unique ID that hasn't been used yet
   title: "Logo Brentford : Histoire et Design de l'Emblème des Bees [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brentford FC : origines, évolution et symbolisme de l'emblème emblématique du club londonien.",
   date: "2024-06-16",

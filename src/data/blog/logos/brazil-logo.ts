@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const brazilLogoPost: BlogPost = {
-  id: 83,
+  id: 131,
   title: "Logo Brésil : Histoire et Évolution de l'Emblème Auriverde [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la sélection brésilienne de football : origines, symbolisme et évolution d'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-04-17",

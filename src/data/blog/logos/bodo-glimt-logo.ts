@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bodoGlimtLogoPost: BlogPost = {
-  id: 358, // Unique ID for this new article
+  id: 120, // Unique ID for this new article
   title: "Bodø/Glimt Logo : Histoire et Signification de l'Emblème Norvégien [2024]",
   date: "2025-04-11",
   category: "logos",

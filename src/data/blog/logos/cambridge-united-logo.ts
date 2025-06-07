@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cambridgeUnitedLogoPost: BlogPost = {
-  id: 430,
+  id: 148,
   title: "**Logo Cambridge United** : Histoire et Design de l'Emblème des U's [2024]",
   excerpt: "Découvrez l'histoire fascinante du **cambridge united logo**, son évolution et la symbolique de cet emblème emblématique du football anglais.",
   date: "2025-04-18",

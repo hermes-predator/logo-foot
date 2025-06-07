@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bolognaLogoPost: BlogPost = {
-  id: 156,
+  id: 122,
   title: "Logo Bologne : Histoire et Évolution de l'Emblème du FC Bologna [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Bologne (Bologna FC) : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-05",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bosniaLogoPost: BlogPost = {
-  id: 447,
+  id: 126,
   title: "**Logo Bosnia** : Histoire et Évolution du Blason National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale de Bosnie-Herzégovine : des origines à aujourd'hui, signification et évolution de cet emblème balkanique.",
   date: "2024-04-27",

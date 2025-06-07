@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cagliariLogoPost: BlogPost = {
-  id: 116,
+  id: 147,
   title: "Logo Cagliari : Histoire et Évolution de l'Emblème Sarde [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Cagliari Calcio : origines, évolution et symbolisme de l'emblème emblématique du club sarde.",
   date: "2024-06-13",

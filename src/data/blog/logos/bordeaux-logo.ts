@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bordeauxLogoPost: BlogPost = {
-  id: 89, // Using an ID that's not yet used in the existing posts
+  id: 124, // Using an ID that's not yet used in the existing posts
   title: "Logo Girondins de Bordeaux : Histoire du Scapulaire Iconique [2024]",
   excerpt: "Découvrez l'histoire complète du logo des Girondins de Bordeaux : origines, évolutions et signification du célèbre scapulaire qui symbolise ce club historique du football français.",
   date: "2024-05-11",

@@ -2,7 +2,7 @@
 import { BlogPost } from "../../../types/blog";
 
 export const bocaJuniorsLogoPost: BlogPost = {
-  id: 543,
+  id: 118,
   title: "Boca Juniors Logo : Histoire, évolution et signification de l'emblème mythique",
   date: "2025-02-25",
   excerpt: "Découvrez l'histoire fascinante du logo de Boca Juniors, l'un des emblèmes les plus iconiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",

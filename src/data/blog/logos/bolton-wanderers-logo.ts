@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const boltonWanderersLogoPost: BlogPost = {
-  id: 364,
+  id: 123,
   title: "**Bolton Wanderers Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Bolton Wanderers logo**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",

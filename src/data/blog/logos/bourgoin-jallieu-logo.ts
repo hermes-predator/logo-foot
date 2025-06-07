@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bourgoinjaillieuLogoPost: BlogPost = {
-  id: 563,
+  id: 128,
   title: "**Logo Bourgoin-Jallieu** : Histoire et Evolution de l'Emblème Isérois [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bourgoin Jallieu**, son évolution et la symbolique de cet emblème emblématique du football isérois.",
   date: "2024-04-18",

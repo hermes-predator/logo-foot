@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const brightonLogoPost: BlogPost = {
-  id: 94, // Using a unique ID that isn't already used
+  id: 135, // Using a unique ID that isn't already used
   title: "Logo Brighton : Histoire et Design de l'Emblème des Seagulls [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brighton & Hove Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-12",

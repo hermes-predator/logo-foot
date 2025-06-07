@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bresciaLogoPost: BlogPost = {
-  id: 279,
+  id: 133,
   title: "Logo Brescia : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brescia Calcio : des origines à aujourd'hui, évolution et signification de cet emblème emblématique du football italien.",
   date: "2024-05-15",

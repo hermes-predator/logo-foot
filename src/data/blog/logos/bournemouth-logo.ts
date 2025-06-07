@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bournemouthLogoPost: BlogPost = {
-  id: 60,
+  id: 129,
   title: "Logo Bournemouth FC : Histoire et Évolution AFC Bournemouth [2024]",
   excerpt: "Découvrez l'histoire complète du logo AFC Bournemouth : évolution, design et symbolisme de l'emblème des Cherries depuis les origines jusqu'au design moderne.",
   date: "2024-04-09",

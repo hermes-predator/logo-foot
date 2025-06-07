@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const blackburnRoversLogoPost: BlogPost = {
-  id: 373,
+  id: 114,
   title: "**Logo Blackburn Rovers FC** : Histoire et Evolution de l'Emblème des Blues [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Blackburn Rovers**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

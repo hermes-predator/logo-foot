@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const borussiaMonchengladbachLogoPost: BlogPost = {
-  id: 93,
+  id: 125,
   title: "Logo Borussia Mönchengladbach : Histoire et Analyse du Design [2024]",
   excerpt: "Découvrez l'histoire complète du logo Borussia Mönchengladbach : origines, évolutions et signification de l'emblème du club allemand de football.",
   date: "2024-04-14",

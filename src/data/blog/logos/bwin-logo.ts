@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bwinLogoPost: BlogPost = {
-  id: 97, // Using a unique ID that isn't already used
+  id: 144, // Using a unique ID that isn't already used
   title: "Logo Bwin : Histoire et Design de l'Emblème du Bookmaker [2024]",
   excerpt: "Découvrez l'histoire complète du logo Bwin : origines, évolution et analyse du design de l'emblème emblématique du célèbre bookmaker sportif.",
   date: "2024-06-17",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bulgariaLogoPost: BlogPost = {
-  id: 272,
+  id: 138,
   title: "Analyse du Logo de la Bulgarie : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la sélection bulgare de football, ses couleurs emblématiques et son évolution à travers les années.",
   date: "2024-05-04",

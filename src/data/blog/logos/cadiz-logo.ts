@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cadizLogoPost: BlogPost = {
-  id: 355, // ID unique pour ce nouvel article
+  id: 145, // ID unique pour ce nouvel article
   title: "Logo Cadix : Histoire et Évolution de l'Emblème Andalou [2024]",
   date: "2025-04-11",
   category: "logos",

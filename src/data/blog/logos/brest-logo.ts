@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const brestLogoPost: BlogPost = {
-  id: 48,
+  id: 134,
   title: "Logo Stade Brestois : Histoire et Design de l'Emblème Breton [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade Brestois : origines, évolution et symbolisme de l'emblème emblématique du club finistérien.",
   date: "2024-03-31",

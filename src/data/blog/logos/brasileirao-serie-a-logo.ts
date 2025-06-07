@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const brasileiraoSerieALogoPost: BlogPost = {
-  id: 455,
+  id: 130,
   title: "Logo Brasileirão Série A : Histoire et Design du Plus Grand Championnat Sud-Américain",
   date: "2025-04-25",
   category: "competition-logos",

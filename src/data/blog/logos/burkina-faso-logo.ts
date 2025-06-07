@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const burkinaFasoLogoPost: BlogPost = {
-  id: 404,
+  id: 140,
   title: "Logo Burkina Faso : Histoire et Symbolisme de l'Emblème des Étalons",
   excerpt: "Tout ce que vous devez savoir sur le logo de l'équipe nationale du Burkina Faso. Découvrez l'histoire, la signification et l'évolution du blason des Étalons.",
   date: "2024-07-03",

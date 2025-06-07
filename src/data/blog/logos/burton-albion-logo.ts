@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const burtonAlbionLogoPost: BlogPost = {
-  id: 376, // Using a unique ID
+  id: 143, // Using a unique ID
   title: "**Logo Burton Albion** : Histoire et Design de l'Emblème des Brewers [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Burton Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-15",

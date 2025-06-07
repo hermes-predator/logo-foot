@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const blasonsEquipesFootballPost: BlogPost = {
-  id: 306,
+  id: 116,
   title: "Blasons Équipe de Foot : Histoire et Symbolisme [Guide Complet 2024]",
   excerpt: "Découvrez l'histoire fascinante des blasons équipe de foot à travers l'Europe. Analyse détaillée des symboles et designs qui définissent l'identité des clubs de football.",
   date: "2024-04-12",

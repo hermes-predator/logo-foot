@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const burnleyLogoPost: BlogPost = {
-  id: 62,
+  id: 141,
   title: "Logo Burnley : Histoire et Design de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Burnley : origines, évolution et symbolisme de l'emblème emblématique des Clarets.",
   date: "2024-04-14",

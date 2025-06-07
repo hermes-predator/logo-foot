@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cameroonLogoPost: BlogPost = {
-  id: 164,
+  id: 149,
   title: "Logo Cameroun : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Cameroun : des origines à aujourd'hui, évolution et signification de l'emblème des Lions Indomptables.",
   date: "2024-05-30",

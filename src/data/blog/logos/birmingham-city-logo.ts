@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const birminghamCityLogoPost: BlogPost = {
-  id: 362,
+  id: 113,
   title: "**Birmingham City Football Club Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Birmingham City**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const boliviaLogoPost: BlogPost = {
-  id: 429,
+  id: 121,
   title: "**Logo Bolivie** : Histoire et Signification de l'Emblème du Football Bolivien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale bolivienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-29",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bochumLogoPost: BlogPost = {
-  id: 85,
+  id: 119,
   title: "Logo VfL Bochum : Histoire et Évolution de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du VfL Bochum : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-23",

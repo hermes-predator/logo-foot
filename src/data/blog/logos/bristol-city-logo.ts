@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bristolCityLogoPost: BlogPost = {
-  id: 371,
+  id: 136,
   title: "**Logo Bristol City FC** : Histoire et Evolution de l'Emblème des Robins [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bristol City**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const blackpoolLogoPost: BlogPost = {
-  id: 403,
+  id: 115,
   title: "**Blackpool FC Logo** : Histoire et Évolution de l'Emblème des Tangerines [2024]",
   date: "2025-04-13",
   category: "logos",

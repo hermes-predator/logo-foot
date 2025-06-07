@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const botafogoLogoPost: BlogPost = {
-  id: 419,
+  id: 127,
   title: "**Logo Botafogo** : Histoire et Évolution de l'Emblème Légendaire du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Botafogo**, ses transformations et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire de Rio de Janeiro.",
   date: "2025-04-13",

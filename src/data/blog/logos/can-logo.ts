@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const canLogoPost: BlogPost = {
-  id: 88,
+  id: 150,
   title: "Logo CAN : Histoire et Design de l'Emblème de la Coupe d'Afrique [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo de la CAN 2025, son évolution, sa symbolique et comment l'emblème de la Coupe d'Afrique des Nations représente le football africain.",
   date: "2024-05-20",

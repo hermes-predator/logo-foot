@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const caenLogoPost: BlogPost = {
-  id: 87,
+  id: 146,
   title: "Logo Caen : Histoire et Design de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo SM Caen, son évolution, sa symbolique et comment l'écusson du Stade Malherbe représente l'identité normande.",
   date: "2024-05-16",

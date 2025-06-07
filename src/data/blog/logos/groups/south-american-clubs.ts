@@ -21,4 +21,3 @@ export const southAmericanClubPosts: BlogPost[] = [
   argentinosJuniorsLogoPost,
   godoyCruzLogoPost
 ];
-

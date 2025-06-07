@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const evolutionHistory: BlogPost = {
-  id: 4,
+  id: 28,
   title: "Histoire des Logos de Football : Évolution des Emblèmes de 1900 à 2024",
   excerpt: "Voyagez à travers l'histoire des logos de football depuis 1900. Découvrez l'évolution fascinante des emblèmes qui ont marqué l'identité visuelle du football.",
   date: "2024-02-23",

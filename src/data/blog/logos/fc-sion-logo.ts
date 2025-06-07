@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const fcSionLogoPost: BlogPost = {
-  id: 425,
+  id: 29,
   title: "**Logo FC Sion** : Histoire et Signématique de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de FC Sion, son évolution et la symbolique de cet emblème unique du football suisse.",
   date: "2024-04-15",

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const championsLeagueAnalysis: BlogPost = {
-  id: 19,
+  id: 17,
   title: "Analyse des Logos en Ligue des Champions : Innovation et Tradition [2024]",
   excerpt: "Découvrez comment les clubs de la Ligue des Champions équilibrent tradition et modernité dans leurs identités visuelles. Focus sur les stratégies de marque en Europe.",
   date: "2024-03-05",

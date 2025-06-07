@@ -25,4 +25,3 @@ export const portugueseClubPosts: BlogPost[] = [
   gilVicenteLogoPost,
   farenseLogoPost
 ];
-

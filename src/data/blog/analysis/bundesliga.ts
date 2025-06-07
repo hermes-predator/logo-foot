@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const bundesligaAnalysis: BlogPost = {
-  id: 6,
+  id: 26,
   title: "Design et Identité Visuelle en Bundesliga : Analyse 2024",
   excerpt: "Analyse approfondie du design et du branding des clubs de Bundesliga. Focus sur les stratégies visuelles et l'innovation marketing du football allemand.",
   date: "2024-02-16",

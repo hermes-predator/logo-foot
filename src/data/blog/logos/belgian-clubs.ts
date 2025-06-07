@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const belgianClubsPost: BlogPost = {
-  id: 27,
+  id: 19,
   title: "Logos du Football Belge : Design et Histoire [2024]",
   excerpt: "Explorez l'histoire des logos du football belge. D'Anderlecht au Club Bruges, découvrez l'évolution des emblèmes de la Jupiler Pro League.",
   date: "2024-03-12",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const asianClubsPost: BlogPost = {
-  id: 13,
+  id: 84,
   title: "Logos du Football Asiatique : Innovation et Tradition [2024]",
   excerpt: "Explorez l'univers fascinant des logos du football asiatique. De la J-League aux clubs chinois, découvrez comment tradition et modernité se mêlent dans le design.",
   date: "2024-03-14",

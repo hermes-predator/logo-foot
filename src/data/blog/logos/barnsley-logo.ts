@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const barnsleyLogoPost: BlogPost = {
-  id: 9055,
+  id: 102,
   title: "Logo Barnsley FC : Histoire et Évolution du Symbole des Tykes [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Barnsley FC, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
   date: "2024-04-13",

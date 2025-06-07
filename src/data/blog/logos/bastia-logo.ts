@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bastiaLogoPost: BlogPost = {
-  id: 72,
+  id: 104,
   title: "Logo Bastia : Histoire et Design de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire complète du logo du SC Bastia : évolution, symbolisme et design de l'emblème emblématique du club de football corse.",
   date: "2024-05-16",

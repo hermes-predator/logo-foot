@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const besiktasLogoPost: BlogPost = {
-  id: 86, // Using a unique ID that's not already used
+  id: 112, // Using a unique ID that's not already used
   title: "Logo Beşiktaş : Histoire et Design de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Beşiktaş : symbolisme, évolution et signification de l'emblème du club stambouliote, l'un des plus prestigieux de Turquie.",
   date: "2024-04-25",

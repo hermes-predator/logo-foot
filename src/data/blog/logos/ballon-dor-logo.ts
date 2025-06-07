@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ballonDorLogoPost: BlogPost = {
-  id: 9021,
+  id: 99,
   title: "Logo Ballon d'Or : Histoire et Évolution du Symbole du Football",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo Ballon d'Or, le symbole le plus prestigieux des récompenses individuelles du football mondial.",
   date: "2025-04-10",

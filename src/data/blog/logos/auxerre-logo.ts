@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const auxerreLogoPost: BlogPost = {
-  id: 65,
+  id: 96,
   title: "Logo AJ Auxerre : Histoire et Design de l'Emblème Bourguignon [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AJ Auxerre : évolution, signification et design de l'emblème du club bourguignon depuis sa création jusqu'à aujourd'hui.",
   date: "2024-05-02",

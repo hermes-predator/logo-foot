@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bastiaBorgoLogoPost: BlogPost = {
-  id: 561,
+  id: 103,
   title: "**Logo Bastia Borgo** : Histoire et Evolution de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bastia Borgo**, son évolution et la symbolique de cet emblème emblématique du football corse.",
   date: "2024-04-18",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const astonVillaLogoPost: BlogPost = {
-  id: 54,
+  id: 85,
   title: "Logo Aston Villa : Histoire et Evolution du Design Emblématique [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Aston Villa FC : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Birmingham.",
   date: "2024-04-05",

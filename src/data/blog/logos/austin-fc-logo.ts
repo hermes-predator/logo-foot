@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const austinFcLogoPost: BlogPost = {
-  id: 54,
+  id: 92,
   title: "**Logo Austin FC** : Histoire et Evolution de l'Emblème de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Austin FC**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",

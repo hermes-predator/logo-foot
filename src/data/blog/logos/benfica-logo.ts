@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const benficaLogoPost: BlogPost = {
-  id: 66,
+  id: 110,
   title: "Logo Benfica : Histoire et Symbolisme de l'Aigle Glorieux [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Benfica, son évolution au fil du temps et la signification de l'aigle emblématique qui représente fièrement le club portugais.",
   date: "2024-04-26",

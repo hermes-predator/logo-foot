@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const azAlkmaarLogoPost: BlogPost = {
-  id: 342,
+  id: 98,
   title: "Logo AZ Alkmaar : Histoire et évolution de l'emblème du club néerlandais",
   date: "2025-04-11",
   category: "logos",

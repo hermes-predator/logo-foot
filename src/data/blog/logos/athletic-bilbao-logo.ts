@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const athleticBilbaoLogoPost: BlogPost = {
-  id: 405,
+  id: 87,
   title: "Logo Athletic Bilbao : Histoire et Symbolisme de l'Emblème Basque",
   excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Athletic Bilbao. Analyse complète de l'emblème du club basque historique de la Liga.",
   date: "2024-07-04",

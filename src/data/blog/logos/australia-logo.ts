@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const australiaLogoPost: BlogPost = {
-  id: 51,
+  id: 93,
   title: "Logo Australie : Histoire et Signification de l'Emblème des Socceroos [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Australie : des origines à aujourd'hui, évolution et signification de l'emblème des Socceroos.",
   date: "2024-04-02",

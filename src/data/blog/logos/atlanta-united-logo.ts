@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const atlantaUnitedLogoPost: BlogPost = {
-  id: 405,
+  id: 88,
   title: "**Atlanta United Logo** : Histoire et Design de l'Emblème Emblématique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Atlanta United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

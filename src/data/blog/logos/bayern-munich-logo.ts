@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bayernMunichLogoPost: BlogPost = {
-  id: 51,
+  id: 106,
   title: "Logo Bayern Munich : Histoire et Evolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Bayern Munich : symboles, évolution et signification de l'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-03-31",

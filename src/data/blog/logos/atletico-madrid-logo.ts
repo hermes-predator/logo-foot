@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const atleticoMadridLogoPost: BlogPost = {
-  id: 67,
+  id: 89,
   title: "Logo Atlético Madrid : L'Histoire de l'Ours et l'Arbousier [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Atlético Madrid, son évolution au fil du temps et la signification de l'ours et l'arbousier qui symbolisent l'identité du club madrilène.",
   date: "2024-05-06",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const asRomaLogoPost: BlogPost = {
-  id: 64,
+  id: 83,
   title: "Logo AS Roma : Histoire et Evolution de l'Emblème Giallorossi [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'AS Roma : origines, évolution et symbolisme de l'écusson emblématique du club de la capitale italienne.",
   date: "2024-04-22",

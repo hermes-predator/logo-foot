@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bergeracLogoPost: BlogPost = {
-  id: 97,
+  id: 111,
   title: "**Logo Bergerac** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

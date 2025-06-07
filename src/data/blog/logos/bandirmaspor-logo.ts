@@ -2,7 +2,7 @@
 import { BlogPost } from "../../../types/blog";
 
 export const bandirmasporLogoPost: BlogPost = {
-  id: 15,
+  id: 100,
   title: "**Bandırmaspor Logo** : Histoire et Signification de l'Emblème du Club Turc",
   excerpt: "Découvrez l'histoire fascinante du **logo Bandırmaspor**, un symbole qui incarne l'identité et la passion du football turc.",
   date: "2024-04-22",

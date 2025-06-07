@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const belgiumLogoPost: BlogPost = {
-  id: 88, // Using a unique ID that's not already used
+  id: 109, // Using a unique ID that's not already used
   title: "Logo Belgique : Histoire et Évolution de l'Emblème des Diables Rouges [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Belgique : origines, évolution et symbolisme du célèbre écusson des Diables Rouges, l'une des sélections les plus talentueuses d'Europe.",
   date: "2024-06-05",

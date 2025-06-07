@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const avranchesLogoPost: BlogPost = {
-  id: 31,
+  id: 97,
   title: "**Logo US Avranches** : Histoire et Évolution de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo US Avranches**, son symbolisme unique et son évolution à travers les décennies du football français.",
   date: "2024-04-12",

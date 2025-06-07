@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const bateBorisoVLogoPost: BlogPost = {
-  id: 562,
+  id: 105,
   title: "**BATE Borisov Logo** : Histoire et Design de l'Emblème Footballistique Biélorusse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo BATE Borisov**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 

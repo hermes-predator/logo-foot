@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const atalantaLogoPost: BlogPost = {
-  id: 55,
+  id: 86,
   title: "Logo Atalanta : L'Histoire de la Déesse de Bergame [2024]",
   excerpt: "Plongez dans l'histoire fascinante du logo Atalanta, symbole mythologique du club de Bergame. Découvrez l'évolution de cet emblème légendaire du calcio italien.",
   date: "2024-04-05",

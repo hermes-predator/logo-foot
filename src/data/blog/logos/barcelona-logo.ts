@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const barcelonaLogoPost: BlogPost = {
-  id: 50,
+  id: 101,
   title: "Logo FC Barcelone : Histoire et Design de l'Emblème Catalan [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Barcelone : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club catalan.",
   date: "2024-04-02",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const aubagneLogoPost: BlogPost = {
-  id: 95,
+  id: 90,
   title: "**Logo Aubagne** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

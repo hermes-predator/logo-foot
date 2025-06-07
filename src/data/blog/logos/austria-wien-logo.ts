@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const austriaWienLogoPost: BlogPost = {
-  id: 99921,
+  id: 95,
   title: "Logo Austria Wien : Histoire, Signification et Design du Club Viennois [2024]",
   excerpt: "Plongez dans l’histoire du logo Austria Wien, son design unique et son symbole incontesté dans le football autrichien moderne.",
   date: "2024-04-21",

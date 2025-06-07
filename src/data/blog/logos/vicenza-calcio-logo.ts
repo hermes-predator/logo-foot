@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const vicenzaCalcioLogoPost: BlogPost = {
-  id: 50,
+  id: 583,
   title: "Logo Vicenza Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Vicenza Calcio : des origines à aujourd'hui, évolution et signification de l'emblème du club historique de Vénétie.",
   date: "2024-04-10",

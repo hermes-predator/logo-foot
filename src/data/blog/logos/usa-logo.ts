@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const usaLogoPost: BlogPost = {
-  id: 165,
+  id: 576,
   title: "Logo USA : Histoire et Évolution de l'Emblème de Team USA [2024]",
   excerpt: "Découvrez l'histoire complète du logo USA : des origines à aujourd'hui, évolution et signification de l'emblème de Team USA, symbole du football américain.",
   date: "2024-05-30",

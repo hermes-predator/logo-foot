@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const valenciaCfLogoPost: BlogPost = {
-  id: 347, // ID unique pour ce nouvel article
+  id: 578, // ID unique pour ce nouvel article
   title: "Logo Valence CF : Histoire et Symbolisme de l'Écusson Emblématique",
   date: "2025-04-11",
   category: "logos",

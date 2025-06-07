@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const turkeyLogoPost: BlogPost = {
-  id: 516,
+  id: 568,
   title: "Logo Turquie : Histoire et Symbolisme de l'Emblème du Football Turc",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale turque de football, ses origines et son évolution à travers les décennies dans cette analyse complète. Plongez dans les détails de cet emblème qui représente la fierté d'une nation.",
   date: "2024-06-06",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 516,
+  galleryImageId: 568,
   content: `# Histoire Fascinante du **Logo Turquie**
 
 Le **logo turquie** représente bien plus qu'un simple emblème sportif - c'est un puissant symbole qui incarne l'identité et la fierté d'une nation profondément passionnée de football. Le **turquie logo** raconte l'histoire d'un pays dont l'amour pour le ballon rond ne cesse de grandir et dont les performances sur la scène internationale ont marqué l'histoire du football. Cet emblème est le témoin silencieux des moments de gloire et de passion qui ont façonné le football turc.

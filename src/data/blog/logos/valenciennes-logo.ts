@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const valenciennesLogoPost: BlogPost = {
-  id: 88,
+  id: 579,
   title: "Logo Valenciennes : Histoire et Design de l'Emblème du VAFC [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Valenciennes FC, son évolution au fil des années et la signification des symboles qui représentent l'identité visuelle du club nordiste.",
   date: "2024-05-15",
-  galleryImageId: 88,
+  galleryImageId: 579,
   content: `# L'Histoire Fascinante du **Logo Valenciennes**
 
 Le **logo valenciennes** représente bien plus qu'un simple emblème sportif – c'est le symbole d'identité d'un club historique du football français. Reconnaissable par ses couleurs distinctives et son design caractéristique, le **valenciennes logo** incarne l'esprit et les valeurs d'une institution profondément ancrée dans le patrimoine sportif du Nord de la France.

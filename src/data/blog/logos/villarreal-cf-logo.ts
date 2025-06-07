@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const villarrealCfLogoPost: BlogPost = {
-  id: 153,
+  id: 586,
   title: "Logo Villarreal CF : Histoire et Évolution de l'Emblème du Sous-marin Jaune [2024]",
   excerpt: "Découvrez l'histoire complète du logo Villarreal CF : des origines à aujourd'hui, évolution et signification de l'emblème du Sous-marin Jaune de La Liga.",
   date: "2024-05-05",

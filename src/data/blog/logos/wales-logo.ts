@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const walesLogoPost: BlogPost = {
-  id: 164,
+  id: 588,
   title: "**Logo Pays de Galles** : Histoire et Évolution du Dragon Rouge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale galloise : des origines à aujourd'hui, évolution et signification de l'emblème du dragon rouge.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 164,
+  galleryImageId: 588,
   content: `# L'Histoire Fascinante du **Logo Pays de Galles**
 
 Le **pays de galles logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est intimement liée à son identité culturelle. Le **logo foot pays de galles** représente l'âme d'un pays où le football est devenu une véritable passion nationale.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const vascoLogoPost: BlogPost = {
-  id: 440,
+  id: 580,
   title: "**Logo Vasco da Gama** : Histoire et Design de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Vasco da Gama**, un symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Vasco da Gama logo**.",
   date: "2024-04-22",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const toulouseFCLogoPost: BlogPost = {
-  id: 76, // Updated to a unique ID
+  id: 561, // Updated to a unique ID
   title: "Logo Toulouse FC : Histoire et Évolution du Design Violet [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Toulouse Football Club : origines, symbolisme et évolution de l'emblème violet emblématique du club de la ville rose.",
   date: "2024-04-15",
-  galleryImageId: 76,
+  galleryImageId: 561,
   content: `# Histoire et Évolution du **Logo Toulouse FC**
 
 Le **logo toulouse** est bien plus qu'un simple emblème sportif - c'est un symbole d'identité régionale qui raconte l'histoire riche d'un club emblématique du Sud-Ouest français. À travers son design distinctif, le **toulouse logo** transmet l'essence même de la ville rose et sa passion pour le football.

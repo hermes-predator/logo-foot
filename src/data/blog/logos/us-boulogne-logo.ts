@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const usBoulogneLogoPost: BlogPost = {
-  id: 544,
+  id: 575,
   title: "Logo US Boulogne : Histoire et Symbolisme du Blason Nordiste [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'US Boulogne : des origines à aujourd'hui, toute l'évolution et la signification de l'emblème du club du Nord-Pas-de-Calais.",
   date: "2024-04-13",

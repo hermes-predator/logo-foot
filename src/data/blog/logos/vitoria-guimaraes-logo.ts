@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const vitoriaGuimaraesLogoPost: BlogPost = {
-  id: 329,
+  id: 587,
   title: "Logo Vitoria Guimaraes : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Vitoria Guimaraes : origines, évolution et signification du blason de ce club emblématique du football portugais.",
   date: "2024-08-30",

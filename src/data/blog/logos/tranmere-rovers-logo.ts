@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const tranmereRoversLogoPost: BlogPost = {
-  id: 565,
+  id: 564,
   title: "**Logo Tranmere Rovers** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Tranmere Rovers FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Tranmere Rovers à travers les années.",
   date: "2024-04-20",

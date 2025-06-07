@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ukraineLogoPost: BlogPost = {
-  id: 50,
+  id: 570,
   title: "Logo Ukraine : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ukraine : des origines à aujourd'hui, évolution et signification de l'emblème du football ukrainien.",
   date: "2024-04-01",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const unibetLogoPost: BlogPost = {
-  id: 159, // ID unique qui n'est pas déjà utilisé
+  id: 571, // ID unique qui n'est pas déjà utilisé
   title: "Logo Unibet : Histoire et Design de l'Emblème du Bookmaker [2024]",
   excerpt: "Découvrez l'histoire complète du logo Unibet : des origines à aujourd'hui, évolution et signification de l'emblème vert du célèbre bookmaker sportif.",
   date: "2024-05-26",

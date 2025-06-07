@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const uruguayLogoPost: BlogPost = {
-  id: 154,
+  id: 574,
   title: "Logo Uruguay : Histoire et Design de l'Emblème du Football Uruguayen [2024]",
   excerpt: "Découvrez l'histoire complète du logo Uruguay : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-10",

@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const tropheeDesChampionsLogoPost: BlogPost = {
-  id: 151,
+  id: 565,
   title: "Logo Trophée des Champions : Histoire et Design de l'Emblème LFP [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Trophée des Champions : origines, évolution et signification de l'emblème officiel de la compétition française.",
   date: "2024-06-28",
-  galleryImageId: 151,
+  galleryImageId: 565,
   content: `# L'Histoire Fascinante du **logo Trophée des Champions**
 
 Le **Trophée des Champions logo** est l'emblème officiel de la prestigieuse compétition qui ouvre traditionnellement la saison du football français. Ce match qui oppose le champion de France au vainqueur de la Coupe de France représente un événement majeur dans le calendrier sportif hexagonal, et son **logo du Trophée des Champions** est devenu au fil des années un symbole reconnaissable de l'excellence du football français.

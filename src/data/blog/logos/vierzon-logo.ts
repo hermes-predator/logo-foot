@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const vierzonLogoPost: BlogPost = {
-  id: 562,
+  id: 584,
   title: "**Logo Vierzon FC** : Histoire et Evolution de l'Emblème Régional [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Vierzon**, son évolution et la symbolique de cet emblème emblématique du football berrichon.",
   date: "2024-04-18",

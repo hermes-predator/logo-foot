@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const trabzonsporLogoPost: BlogPost = {
-  id: 68,
+  id: 563,
   title: "Trabzonspor Logo : Histoire et Évolution de l'Emblème Turc [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Trabzonspor : origines, signification et évolution de l'emblème du club emblématique de la Super Lig turque.",
   date: "2024-05-29",
-  galleryImageId: 68,
+  galleryImageId: 563,
   content: `# L'Histoire Fascinante du **Trabzonspor Logo**
 
 Le **trabzonspor logo** est l'un des emblèmes les plus reconnaissables du football turc, représentant un club historique qui a marqué la Super Lig de son empreinte. Depuis sa création, le **logo trabzonspor** s'est imposé comme un symbole de fierté pour la ville côtière de Trabzon et pour les supporters du club à travers le monde.

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const troyesLogoPost: BlogPost = {
-  id: 86,
+  id: 566,
   title: "Logo Troyes : Histoire et Design de l'Emblème Aubois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Troyes, son évolution au fil du temps et la signification des symboles qui représentent ce club historique de Champagne.",
   date: "2024-05-15",
-  galleryImageId: 86,
+  galleryImageId: 566,
   content: `# L'Histoire Fascinante du Logo Troyes
 
 Le **logo Troyes** est bien plus qu'un simple emblème : c'est un symbole identitaire qui représente l'histoire, la tradition et l'ambition d'un club aux racines profondes dans le football français. Explorons ensemble l'histoire captivante de ce **troyes logo** qui incarne l'âme d'une ville et d'une région entière.

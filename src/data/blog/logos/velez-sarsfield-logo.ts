@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const velezSarsfieldLogoPost: BlogPost = {
-  id: 420,
+  id: 581,
   title: "**Logo Velez Sarsfield** : Histoire et Évolution de l'Emblème du Club Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Velez Sarsfield**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire argentin.",
   date: "2025-04-14",

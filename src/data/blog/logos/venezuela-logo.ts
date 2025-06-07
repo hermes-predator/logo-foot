@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const venezuelaLogoPost: BlogPost = {
-  id: 427,
+  id: 582,
   title: "**Logo Venezuela** : Histoire et Signification de l'Emblème de la Vinotinto [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale vénézuélienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-27",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 427,
+  galleryImageId: 582,
   content: `# L'Histoire Fascinante du **Logo Venezuela**
 
 Le **logo venezuela** est bien plus qu'un simple emblème sportif - c'est le symbole d'une nation passionnée de football qui, malgré sa tradition plus baseballeure, développe une identité footballistique de plus en plus forte. Le **venezuela logo** raconte l'histoire d'un pays qui aspire à se faire une place parmi les grandes nations du football sud-américain.

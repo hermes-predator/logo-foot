@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const udineseLogoPost: BlogPost = {
-  id: 115,
+  id: 569,
   title: "Logo Udinese : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'Udinese : origines, évolution et symbolisme de l'emblème emblématique du club du Frioul-Vénétie julienne.",
   date: "2024-06-12",
-  galleryImageId: 115,
+  galleryImageId: 569,
   content: `# L'Histoire Fascinante du **Logo Udinese**
 
 Le **logo udinese** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions du nord-est italien. Ce **udinese logo** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football italien tout en restant fidèle à ses racines frioulanes.

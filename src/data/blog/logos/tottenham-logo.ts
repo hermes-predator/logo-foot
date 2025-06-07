@@ -6,7 +6,7 @@ export const tottenhamLogoPost: BlogPost = {
   title: "Logo Tottenham : L'Histoire du Coq Légendaire des Spurs [2024]",
   excerpt: "Plongez dans l'histoire fascinante du logo Tottenham, symbole d'audace et de fierté. Découvrez l'évolution de l'emblème mythique des Spurs de Londres.",
   date: "2024-04-06",
-  galleryImageId: 56,
+  galleryImageId: 560,
   content: `# L'Histoire Fascinante du **Logo Tottenham**
 
 Le **logo Tottenham** est bien plus qu'un simple emblème sportif : c'est le symbole d'une institution légendaire du football anglais et mondial. Depuis sa création en 1882, le **Tottenham Hotspur FC logo** a incarné l'esprit combatif et l'identité distinctive d'un club qui a profondément marqué l'histoire du football britannique et international.

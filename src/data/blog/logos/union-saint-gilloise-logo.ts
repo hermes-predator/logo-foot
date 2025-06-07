@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const unionSaintGilloiseLogoPost: BlogPost = {
-  id: 559,
+  id: 573,
   title: "**Logo Union Saint Gilloise** : Histoire et Design Complet de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Union Saint Gilloise**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo Royale Union Saint-Gilloise** et de son évolution.",
   date: "2024-04-19",

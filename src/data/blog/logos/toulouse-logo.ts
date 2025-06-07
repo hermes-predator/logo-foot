@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const toulouseLogoPost: BlogPost = {
-  id: 54,
+  id: 562,
   title: "Logo Toulouse FC : Histoire et Évolution du Design Violet [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Toulouse Football Club : de ses origines à aujourd'hui, l'évolution de l'emblème du club de la ville rose.",
   date: "2024-04-04",

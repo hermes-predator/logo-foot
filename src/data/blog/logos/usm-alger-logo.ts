@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const usmAlgerLogoPost: BlogPost = {
-  id: 1,
+  id: 577,
   title: "**Logo USM Alger** : Histoire et Évolution de l'Emblème du Club Algérien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo USM Alger**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
   date: "2024-04-16",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const watfordLogoPost: BlogPost = {
-  id: 93, // Using a unique ID that isn't already used
+  id: 590, // Using a unique ID that isn't already used
   title: "Logo Watford : Histoire et Design de l'Emblème des Hornets [2024]",
   excerpt: "Découvrez l'histoire complète du logo Watford FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-11",
-  galleryImageId: 93,
+  galleryImageId: 590,
   content: `# L'Histoire Fascinante du **Logo Watford**
 
 Le **watford logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **watford fc logo** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté.

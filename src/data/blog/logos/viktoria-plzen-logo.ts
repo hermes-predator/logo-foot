@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const viktoriaPlzenLogoPost: BlogPost = {
-  id: 361, // Unique ID for this new article
+  id: 585, // Unique ID for this new article
   title: "Viktoria Plzeň Logo : Histoire et Signification de l'Emblème Tchèque [2024]",
   date: "2025-04-11",
   category: "logos",

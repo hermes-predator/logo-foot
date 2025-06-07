@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const premierLeagueAnalysis: BlogPost = {
-  id: 5,
+  id: 31,
   title: "Analyse des Logos de Premier League : Design et Marketing [2024]",
   excerpt: "Découvrez l'analyse détaillée des logos des clubs de Premier League. Design, stratégie marketing et évolution des identités visuelles des clubs anglais.",
   date: "2024-02-18",

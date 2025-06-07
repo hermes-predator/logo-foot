@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const williamPachoPost: BlogPost = {
-  id: 396,
+  id: 38,
   title: "William Pacho : Le Roc Équatorien qui Séduit l'Europe [Analyse 2024]",
   excerpt: "Découvrez notre analyse détaillée de William Pacho, sa technique défensive exceptionnelle, son parcours, ses statistiques et pourquoi les plus grands clubs européens se l'arrachent.",
   date: "2024-06-02",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const williamSalibaPost: BlogPost = {
-  id: 398,
+  id: 39,
   title: "William Saliba : Parcours, Statistiques et Vie Personnelle du Défenseur d'Arsenal",
   excerpt: "Découvrez l'histoire complète de William Saliba, son parcours footballistique, ses statistiques impressionnantes, son origine, sa famille et tout ce que vous devez savoir sur le défenseur français d'Arsenal.",
   date: "2024-04-05",

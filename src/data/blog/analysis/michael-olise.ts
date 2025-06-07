@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const michaelOlisePost: BlogPost = {
-  id: 200,
+  id: 28,
   title: "Michael Olise : Analyse du Talent et Parcours du Prodige [2024]",
   excerpt: "Découvrez l'analyse complète de Michael Olise, son parcours, ses origines, ses statistiques impressionnantes et tout ce que vous devez savoir sur cette étoile montante du football européen.",
   date: "2024-05-15",

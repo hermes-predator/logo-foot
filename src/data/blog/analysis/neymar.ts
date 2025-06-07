@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const neymarPost: BlogPost = {
-  id: 252,
+  id: 29,
   title: "Neymar Jr : Biographie Complète, Carrière, Statistiques et Vie Personnelle [2024]",
   excerpt: "Découvrez notre analyse complète de Neymar Jr, sa carrière au Santos, Barcelone, PSG et Al-Hilal, ses statistiques impressionnantes, son salaire et sa vie personnelle.",
   date: "2024-06-18",

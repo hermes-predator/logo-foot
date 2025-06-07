@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const rayanCherkiPost: BlogPost = {
-  id: 327, // Numéro unique pour cet article
+  id: 33, // Numéro unique pour cet article
   title: "Rayan Cherki : Analyse Complète du Jeune Prodige du Football Français [2024]",
   excerpt: "Découvrez l'analyse détaillée de Rayan Cherki, son style de jeu, ses statistiques, son parcours et son potentiel. Un regard approfondi sur l'un des plus grands talents du football français.",
   date: "2024-08-25", // Date de publication

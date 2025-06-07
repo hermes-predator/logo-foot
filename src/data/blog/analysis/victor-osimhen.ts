@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const victorOsimhenPost: BlogPost = {
-  id: 250,
+  id: 35,
   title: "Victor Osimhen : Analyse Complète du Parcours et des Statistiques [2024]",
   excerpt: "Découvrez notre analyse approfondie de Victor Osimhen, ses statistiques impressionnantes, son parcours, ses rumeurs de transfert au PSG et à Galatasaray, son salaire actuel et ses origines.",
   date: "2024-06-01",

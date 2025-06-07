@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const philFodenPost: BlogPost = {
-  id: 29,
+  id: 30,
   title: "Phil Foden : Le Joyau de Manchester City et de l'Angleterre - Analyse Complète",
   excerpt: "Découvrez tout sur Phil Foden, le prodige anglais de Manchester City, son parcours, sa vie privée, ses statistiques impressionnantes et son influence grandissante dans le football mondial.",
   date: "2024-04-04",

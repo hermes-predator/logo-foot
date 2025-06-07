@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const xaviSimonsPost: BlogPost = {
-  id: 115,
+  id: 40,
   title: "Xavi Simons : Analyse Complète du Prodige Néerlandais du PSG et Leipzig [2024]",
   excerpt: "Découvrez tout sur Xavi Simons : son parcours, ses statistiques, son salaire, son style de jeu unique et son avenir prometteur. Portrait complet du talent qui impressionne l'Europe.",
   date: "2024-06-25",

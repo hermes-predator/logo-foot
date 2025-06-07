@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const psgRumeursTransfertPost: BlogPost = {
-  id: 123,
+  id: 32,
   title: "PSG Rumeurs Transfert : Toutes les Actualités du Mercato Parisien [2024]",
   excerpt: "Découvrez toutes les dernières rumeurs et informations sur les transferts du PSG : arrivées potentielles, départs annoncés et stratégie du club parisien pour le mercato.",
   date: "2024-04-08",

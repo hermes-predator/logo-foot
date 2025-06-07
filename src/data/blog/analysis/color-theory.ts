@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const colorTheoryPost: BlogPost = {
-  id: 66,
+  id: 6,
   title: "Couleurs Logo Foot : Guide Complet Design [2024]",
   excerpt: "Guide expert sur les couleurs des logos foot. Découvrez comment choisir les meilleures couleurs pour votre écusson de football professionnel.",
   date: "2024-03-15",

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const ardaGulerPost: BlogPost = {
-  id: 118,
+  id: 3,
   title: "Arda Güler : Le Prodige Turc qui Fascine le Real Madrid",
   excerpt: "Découvrez l'analyse complète d'Arda Güler, le talent précoce qui impressionne au Real Madrid et en équipe nationale turque. Portrait d'un des joueurs les plus prometteurs du football mondial.",
   date: "2024-06-28",

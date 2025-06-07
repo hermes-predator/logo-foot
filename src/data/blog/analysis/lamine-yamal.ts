@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lamineYamalPost: BlogPost = {
-  id: 201,
+  id: 15,
   title: "Lamine Yamal : Analyse du Phénomène et son Parcours Extraordinaire [2024]",
   excerpt: "Découvrez l'analyse complète de Lamine Yamal, prodige du FC Barcelone, son parcours impressionnant, ses statistiques et tout ce qu'il faut savoir sur cette future star du football mondial.",
   date: "2024-05-28",
@@ -68,17 +68,10 @@ Son style de jeu est caractérisé par :
 
 ## Perspectives d'Avenir
 
-À seulement 16 ans, l'avenir s'annonce radieux pour ce talent d'exception. Les experts s'accordent à dire que **lamine yamal** a le potentiel pour devenir l'un des meilleurs joueurs du monde dans les années à venir.
+À seulement 16 ans, l'avenir s'annonce radieux pour ce talent d'excepti
 
-Sa capacité d'adaptation, sa maturité et son talent brut laissent présager une carrière exceptionnelle, potentiellement jalonnée de Ballons d'Or et de titres majeurs. Le FC Barcelone, conscient du joyau qu'il possède, a sécurisé son avenir avec un contrat longue durée et une clause libératoire dissuasive.
 
-## Conclusion
-
-**Lamine Yamal** incarne parfaitement cette nouvelle génération de footballeurs qui bouscule tous les records de précocité. Son parcours fulgurant, ses origines diverses et son talent naturel font de lui un joueur fascinant à suivre.
-
-Que ce soit par ses statistiques impressionnantes, son style de jeu élégant ou son impact immédiat au plus haut niveau, **lamine yamal** s'impose déjà comme une réalité du football mondial et non plus comme une simple promesse. Les prochaines années nous diront jusqu'où ce prodige pourra porter son immense talent, mais une chose est certaine : nous assistons à l'éclosion d'une future légende du football mondial.`,
-  keywords: "lamine yamal, yamal lamine, statistiques de lamine yamal, lamine yamal origine, lamine yamal parents, lamine yamal barcelone, lamine yamal père, lamine yamal fc 24, lamine yamal et messi, matchs de lamine yamal, lamine yamal espagne, lamine yamal equipe nationale, lamine yamal salaire, lamine yamal taille, lamine yamal origines, lamine yamal stats, lamine yamal transfert, lamine yamal nationalité, lamine yamal instagram, lamine yamal interview, lamine yamal celebration, lamine yamal interview español",
-  category: 'players',
-  subCategory: undefined,
-  galleryImageId: undefined
+`,
+  keywords: "lamine yamal, lamine yamal origin, lamine yamal statistiques, lamine yamal barcelona, lamine yamal spain, lamine yamal parents, lamine yamal salary, lamine yamal transfer, lamine yamal height, lamine yamal messi, lamine yamal skills, lamine yamal age, lamine yamal goals, lamine yamal assists, lamine yamal record, lamine yamal euro, lamine yamal future, lamine yamal la masia, lamine yamal debut, lamine yamal celebration",
+  category: 'players'
 };

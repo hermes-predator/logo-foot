@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const alejandroGarnachoPost: BlogPost = {
-  id: 124,
+  id: 2,
   title: "Alejandro Garnacho : Le Nouveau Joyau de Manchester United et de l'Argentine",
   excerpt: "Découvrez l'analyse complète d'Alejandro Garnacho, sa technique éblouissante, son parcours, son potentiel et comment il devient rapidement l'un des joueurs les plus excitants de Premier League.",
   date: "2024-06-30",

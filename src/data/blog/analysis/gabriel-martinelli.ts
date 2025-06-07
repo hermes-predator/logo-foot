@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gabrielMartinelliPost: BlogPost = {
-  id: 28,
+  id: 9,
   title: "Gabriel Martinelli : Le Prodige Brésilien d'Arsenal Qui Enflamme la Premier League",
   excerpt: "Découvrez tout sur Gabriel Martinelli, son parcours exceptionnel, ses origines, ses statistiques impressionnantes et son avenir prometteur dans le monde du football.",
   date: "2024-04-04",

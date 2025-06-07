@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const joaoNevesPost: BlogPost = {
-  id: 116,
+  id: 11,
   title: "João Neves : Le Nouveau Joyau Portugais qui Illumine l'Europe",
   excerpt: "Découvrez l'analyse complète de João Neves, son parcours, ses qualités techniques exceptionnelles et pourquoi les plus grands clubs européens se battent pour le recruter.",
   date: "2024-06-26",

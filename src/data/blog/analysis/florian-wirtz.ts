@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const florianWirtzPost: BlogPost = {
-  id: 300,
+  id: 8,
   title: "Florian Wirtz : Analyse Complète du Prodige Allemand [2024]",
   excerpt: "Découvrez l'analyse complète de Florian Wirtz, sa carrière, ses statistiques, ses performances avec le Bayer Leverkusen et ses perspectives de transfert vers les plus grands clubs européens.",
   date: "2024-05-29",

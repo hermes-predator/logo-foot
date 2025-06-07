@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const desireDouePost: BlogPost = {
-  id: 326,
+  id: 7,
   title: "Désiré Doué : Analyse Complète du Prodige Français de Rennes",
   excerpt: "Découvrez l'analyse détaillée de Désiré Doué, son style de jeu, son parcours et son potentiel. Portrait complet d'un des plus grands talents du football français.",
   date: "2024-08-22",
@@ -95,4 +95,3 @@ Que ce soit au **PSG**, au **Bayern** ou au **Real Madrid**, il a toutes les car
   keywords: "désiré doué, doué rennes, doué france, statistiques doué, doué technique, doué dribble, doué transfert, doué psg, doué bayern, doué real madrid, doué talent, doué potentiel, doué formation, doué ligue 1, doué espoirs, doué euro, doué jeux olympiques, doué salaire, doué famille, doué avenir",
   category: 'players'
 };
-

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const achrafHakimiPost: BlogPost = {
-  id: 325,
+  id: 1,
   title: "Achraf Hakimi : Analyse Complète du Latéral Marocain du PSG [2024]",
   excerpt: "Découvrez l'analyse détaillée d'Achraf Hakimi, son parcours, ses qualités techniques, son impact au PSG et en équipe nationale du Maroc. Portrait complet d'un des meilleurs latéraux du monde.",
   date: "2024-08-20",

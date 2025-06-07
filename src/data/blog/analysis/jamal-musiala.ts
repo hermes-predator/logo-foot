@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const jamalMusialaPost: BlogPost = {
-  id: 27,
+  id: 10,
   title: "Jamal Musiala : Le Prodige du Bayern Munich Qui Révolutionne le Football",
   excerpt: "Découvrez l'ascension fulgurante de Jamal Musiala, son parcours unique, ses origines, ses statistiques impressionnantes et tout ce qui fait de ce jeune talent l'un des footballeurs les plus prometteurs de sa génération.",
   date: "2024-04-04",

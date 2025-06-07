@@ -102,12 +102,12 @@ export const blogPosts = ensureUniqueIds(allPosts);
 // Tri par date décroissante
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Statistiques finales
+// Statistiques finales - suppression de la catégorie 'analysis' qui n'existe plus
 const categoryStats = {
   logos: blogPosts.filter(p => p.category === 'logos').length,
   history: blogPosts.filter(p => p.category === 'legacy').length,
   technical: blogPosts.filter(p => p.category === 'technical').length,
-  analysis: blogPosts.filter(p => p.category === 'analysis').length,
+  players: blogPosts.filter(p => p.category === 'players').length,
   'pixel-art': blogPosts.filter(p => p.category === 'pixel-art').length,
   'competition-logos': blogPosts.filter(p => p.category === 'competition-logos').length
 };

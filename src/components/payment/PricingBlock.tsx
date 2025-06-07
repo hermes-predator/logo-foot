@@ -49,7 +49,7 @@ const PricingBlock = () => {
           <div className="group">
             <Tooltip>
               <TooltipTrigger asChild>
-                <div className="flex items-center gap-3 px-6 py-3.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 hover:shadow-sm transition-all duration-300 transform hover:translate-y-[-1px] border border-emerald-200/50 cursor-help">
+                <div className="flex items-center gap-3 px-4 py-3.5 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 hover:shadow-sm transition-all duration-300 transform hover:translate-y-[-1px] border border-emerald-200/50 cursor-help">
                   <RefreshCcw className="h-5 w-5 text-emerald-600 group-hover:rotate-180 transition-transform duration-500" />
                   <span className="text-base whitespace-nowrap text-emerald-800 font-semibold">
                     Satisfait ou Remboursé

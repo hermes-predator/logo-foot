@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pisaLogoPost: BlogPost = {
-  id: 155,
+  id: 443,
   title: "Logo Pisa : Histoire et Design de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Pisa : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-02",
-  galleryImageId: 155,
+  galleryImageId: 443,
   content: `# L'Histoire Fascinante du **Logo Pisa**
 
 Le **pisa logo** est l'un des emblèmes les plus distinctifs du football italien, représentant fièrement un club aux racines historiques profondes. Ce **logo pise** raconte l'histoire d'une équipe qui incarne l'identité et la passion d'une ville toscane célèbre dans le monde entier. Plongeons dans l'univers captivant du **pise logo** qui symbolise aujourd'hui l'ambition et la renaissance d'un club historique.

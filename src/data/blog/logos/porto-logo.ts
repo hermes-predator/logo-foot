@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const portoLogoPost: BlogPost = {
-  id: 67,
+  id: 449,
   title: "Logo FC Porto : Histoire et Symbolisme du Dragon Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo FC Porto, son évolution au fil des décennies et la signification du dragon emblématique qui symbolise la puissance du club portugais.",
   date: "2024-04-28",
-  galleryImageId: 67,
+  galleryImageId: 449,
   content: `# L'Histoire Passionnante du **Logo FC Porto**
 
 Le **logo porto** est bien plus qu'un simple emblème : c'est une icône légendaire qui représente l'excellence, la tradition et la grandeur du club le plus titré du football portugais. Plongeons dans l'histoire fascinante de ce **porto logo** qui est devenu un symbole universel du football d'élite lusitanien.

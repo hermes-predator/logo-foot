@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const psgUltrasPost: BlogPost = {
-  id: 112,
+  id: 457,
   title: "Ultras du PSG : Histoire des Supporters et Chants Emblématiques [2024]",
   excerpt: "Découvrez l'univers passionnant des ultras du PSG : leur histoire, leurs chants emblématiques, leurs traditions et leur rôle essentiel dans l'identité du club parisien.",
   date: "2024-06-10",
-  galleryImageId: 112,
+  galleryImageId: 457,
   content: `# L'histoire fascinante des **ultra du psg** : passion et dévotion
 
 Les **ultra du psg** représentent l'âme vibrante et passionnée du Paris Saint-Germain. Organisés, dévoués et impressionnants par leur ferveur, ils créent l'atmosphère électrique qui fait du Parc des Princes l'un des stades les plus intimidants d'Europe. Plongeons dans l'univers fascinant de ces supporters d'exception qui vivent et respirent pour leur club.

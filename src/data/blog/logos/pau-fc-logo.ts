@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pauFCLogoPost: BlogPost = {
-  id: 111,
+  id: 439,
   title: "Logo Pau FC : Histoire et Design de l'Emblème Béarnais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Pau FC : origines, évolution et signification de l'emblème emblématique du club béarnais.",
   date: "2024-06-02",
-  galleryImageId: 111,
+  galleryImageId: 439,
   content: `# L'Histoire Fascinante du **Logo Pau FC**
 
 Le **logo pau fc** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club ancré dans les traditions béarnaises. Ce **pau fc logo** emblématique représente le parcours remarquable d'une équipe qui a su gravir les échelons du football français tout en restant fidèle à ses racines pyrénéennes.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const phoenixRisingLogoPost: BlogPost = {
-  id: 412,
+  id: 442,
   title: "**Logo Phoenix Rising** : Histoire et Design de l'Emblème du Football Américain [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Phoenix Rising**, son évolution et la symbolique de cet emblème unique du football américain dans notre analyse détaillée.",
   date: "2025-04-13",

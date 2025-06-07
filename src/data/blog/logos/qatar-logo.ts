@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const qatarLogoPost: BlogPost = {
-  id: 832,
+  id: 460,
   title: "Logo Qatar : L'Histoire Fascinante de l'Emblème du Football Qatari",
   date: '2025-04-26',
   category: 'national-logos',

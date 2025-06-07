@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const qarabagLogoPost: BlogPost = {
-  id: 360, // Unique ID pour ce nouvel article
+  id: 459, // Unique ID pour ce nouvel article
   title: "Qarabag Logo : Histoire et Signification de l'Emblème Azerbaïdjanais [2024]",
   date: "2025-04-11",
   category: "logos",

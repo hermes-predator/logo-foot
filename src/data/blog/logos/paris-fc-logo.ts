@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const parisFCLogoPost: BlogPost = {
-  id: 61,
+  id: 436,
   title: "Logo Paris FC : Histoire et Évolution de l'Emblème du Club Parisien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Paris FC, son évolution au fil des années et la signification de ses éléments symboliques dans l'identité visuelle du club de la capitale.",
   date: "2024-04-14",
-  galleryImageId: 61,
+  galleryImageId: 436,
   content: `# L'Histoire Fascinante du **Logo Paris FC**
 
 Le **logo paris fc** est bien plus qu'un simple emblème sportif. Véritable symbole d'identité pour des milliers de supporters, il incarne l'histoire riche et les valeurs profondes d'un club qui représente une part importante du patrimoine footballistique de la capitale française.

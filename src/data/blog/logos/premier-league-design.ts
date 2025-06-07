@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const premierLeagueLogoPost: BlogPost = {
-  id: 32,
+  id: 453,
   title: "Football Premier League Logo : Histoire et Évolution du Logo Premiership [2024]",
   excerpt: "Analyse détaillée du logo Premier League (Premiership) et son évolution. Découvrez l'histoire, le design et la symbolique du logo English Premier League et son impact sur le football anglais.",
   date: "2024-05-29",
-  galleryImageId: 32,
+  galleryImageId: 453,
   content: `# L'Histoire Fascinante du **Football Premier League Logo**
 
 Le **football premier league logo** est bien plus qu'un simple emblème - c'est une icône sportive mondiale qui incarne l'excellence et le prestige du championnat le plus regardé au monde. Reconnaissable instantanément par des milliards de passionnés, le **premier league football logos** a su évoluer au fil des décennies tout en conservant son essence distinctive.

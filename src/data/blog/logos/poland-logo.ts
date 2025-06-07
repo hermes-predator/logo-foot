@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const polandLogoPost: BlogPost = {
-  id: 162,
+  id: 446,
   title: "Logo Pologne : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Pologne : des origines à aujourd'hui, évolution et signification de l'emblème du football polonais.",
   date: "2024-05-28",

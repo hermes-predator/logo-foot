@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const portugueseLogosPost: BlogPost = {
-  id: 291,
+  id: 452,
   title: "Logos des Clubs Portugais : Histoire et Évolution des Emblèmes [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante et l'évolution des logos des clubs portugais de football. Analyse complète des emblèmes des plus grands clubs du Portugal.",
   date: "2024-07-15",

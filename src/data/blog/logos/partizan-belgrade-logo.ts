@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const partizanBelgradeLogoPost: BlogPost = {
-  id: 356, // ID unique pour ce nouvel article
+  id: 438, // ID unique pour ce nouvel article
   title: "Logo Partizan Belgrade : Histoire et Évolution de l'Emblème Serbe [2024]",
   date: "2025-04-11",
   category: "logos",

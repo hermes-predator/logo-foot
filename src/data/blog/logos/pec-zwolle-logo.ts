@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pecZwolleLogoPost: BlogPost = {
-  id: 9340,
+  id: 440,
   title: "**Logo PEC Zwolle** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **PEC Zwolle logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

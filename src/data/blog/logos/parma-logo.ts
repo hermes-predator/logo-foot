@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const parmaLogoPost: BlogPost = {
-  id: 117,
+  id: 437,
   title: "Logo Parma Calcio : Histoire et Design de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Parma Calcio : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Parme.",
   date: "2024-06-14",
-  galleryImageId: 117,
+  galleryImageId: 437,
   content: `# L'Histoire Passionnante du **Logo Parma**
 
 Le **parma logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire riche d'un club profondément ancré dans les traditions du nord de l'Italie. Ce **parme logo** emblématique représente le parcours remarquable d'une équipe qui a marqué l'histoire du football italien tout en restant fidèle à ses racines émiliennes.

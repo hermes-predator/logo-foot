@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtPsgLogoPost: BlogPost = {
-  id: 9324, // Make sure this ID is unique and consistent
+  id: 445, // Make sure this ID is unique and consistent
   title: "**Pixel Art Logo PSG** : Guide Ultime de Création et Histoire [2024]",
   date: "2025-04-12",
   category: "pixel-art", // Consistently categorize as pixel-art

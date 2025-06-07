@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const prestonNorthEndLogoPost: BlogPost = {
-  id: 405,
+  id: 454,
   title: "Logo Preston North End : Histoire et Évolution d'un Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Preston North End, son évolution à travers les années et la signification de cet emblème pionnier du football anglais. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",

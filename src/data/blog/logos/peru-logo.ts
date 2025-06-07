@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const peruLogoPost: BlogPost = {
-  id: 428,
+  id: 441,
   title: "**Logo Pérou** : Histoire et Évolution de l'Emblème des Incas [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale péruvienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-28",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 428,
+  galleryImageId: 441,
   content: `# L'Histoire Fascinante du **Logo Pérou**
 
 Le **logo pérou** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation dont l'histoire footballistique est aussi riche que son héritage culturel. À travers son design distinctif, le **logo du pérou** raconte l'histoire d'un pays passionné de football, où chaque match de la sélection nationale est vécu comme un moment d'unité nationale.

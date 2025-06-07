@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const psvEindhovenLogoPost: BlogPost = {
-  id: 87,
+  id: 458,
   title: "Logo PSV Eindhoven : Histoire et Design de l'Emblème Néerlandais [2024]",
   excerpt: "Découvrez l'histoire complète du logo du PSV Eindhoven : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club néerlandais.",
   date: "2024-05-16",
-  galleryImageId: 87,
+  galleryImageId: 458,
   content: `# L'Histoire Fascinante du **Logo PSV Eindhoven**
 
 Le **logo psv eindhoven** est bien plus qu'un simple emblème sportif : c'est un symbole identitaire fort qui incarne l'histoire et les valeurs d'un club emblématique du football néerlandais. Le **psv eindhoven logo** représente visuellement une institution sportive qui a su évoluer tout en restant fidèle à ses racines et à sa tradition d'excellence.

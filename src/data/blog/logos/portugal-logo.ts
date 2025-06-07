@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const portugalLogoPost: BlogPost = {
-  id: 88,
+  id: 451,
   title: "Logo Portugal : Histoire et Évolution de l'Emblème de la Seleção [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Portugal, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus prestigieuses sélections du football européen.",
   date: "2024-05-16",
-  galleryImageId: 88,
+  galleryImageId: 451,
   content: `# Logo Portugal : L'Histoire de l'Emblème de la Seleção
 
 Dans l'univers des emblèmes nationaux du football, le **logo Portugal** se distingue par son élégance, son histoire riche et sa symbolique forte. Reconnaissable entre tous avec ses couleurs rouge et vert emblématiques et son design raffiné, cet écusson incarne l'excellence technique et la passion du football portugais.

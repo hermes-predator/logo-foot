@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const psgLogoPost: BlogPost = {
-  id: 37,
+  id: 456,
   title: "Logo PSG : Histoire et Évolution du Paris Saint-Germain [2024]",
   excerpt: "Histoire complète et détaillée du logo du PSG : origines, évolution et signification de l'emblème du Paris Saint-Germain. Téléchargez le logo PSG PNG stylé en haute résolution.",
   date: "2024-03-24",

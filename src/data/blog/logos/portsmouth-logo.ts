@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const portsmouthLogoPost: BlogPost = {
-  id: 59,
+  id: 450,
   title: "Logo Portsmouth : Histoire et Design de l'Emblème des Pompey [2024]",
   excerpt: "Découvrez l'histoire complète du logo Portsmouth FC : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais aux couleurs bleu et or.",
   date: "2024-04-13",
-  galleryImageId: 59,
+  galleryImageId: 450,
   content: `# L'Histoire Fascinante du **Logo Portsmouth**
 
 Le **portsmouth football logo** représente l'un des emblèmes les plus distinctifs du football anglais, reflétant à la fois la riche histoire maritime de la ville portuaire et la tradition du club fondé en 1898. Cet article vous plonge dans l'univers du **logo portsmouth** qui a traversé les décennies en s'adaptant aux évolutions tout en conservant son identité unique.

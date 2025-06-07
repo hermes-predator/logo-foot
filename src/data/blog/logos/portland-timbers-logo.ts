@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const portlandTimbersLogoPost: BlogPost = {
-  id: 410,
+  id: 448,
   title: "**Logo Portland Timbers** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Portland Timbers**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const pixelArtFootPost: BlogPost = {
-  id: 371, // ID unique pour cet article
+  id: 444, // ID unique pour cet article
   title: "Pixel Art Logo Foot France: L'Art Rétro des Emblèmes de la Ligue 1 [2024]",
   date: "2025-04-12",
   category: "pixel-art",

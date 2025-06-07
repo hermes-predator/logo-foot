@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cskaSofiaLogoPost: BlogPost = {
-  id: 49,
+  id: 65,
   title: "**CSKA Sofia Logo** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo CSKA Sofia**, son évolution et sa symbolique. Un emblème qui incarne la tradition militaire et l'excellence sportive bulgare.",
   date: "2024-04-18",

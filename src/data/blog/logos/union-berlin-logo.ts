@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const unionBerlinLogoPost: BlogPost = {
-  id: 42,
+  id: 60,
   title: "Logo FC Union Berlin : Histoire et Évolution d'un Symbole Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Union Berlin, symbole d'un club unique en Bundesliga. Analyse complète de son évolution et de sa signification culturelle.",
   date: "2024-04-15",

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const soccerGuidePost: BlogPost = {
-  id: 11,
+  id: 67,
   title: "Soccer vs Football: Understanding International Football Terms [2024]",
   excerpt: "Complete guide to understand soccer and football terminology differences between American and European football cultures.",
   date: "2024-03-22",

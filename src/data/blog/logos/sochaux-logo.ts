@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sochauxLogoPost: BlogPost = {
-  id: 278,
+  id: 527,
   title: "Logo FC Sochaux : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo FC Sochaux-Montbéliard, ses symboles et sa signification. Une analyse complète de l'emblème iconique du club franc-comtois.",
   date: "2024-04-14",
-  galleryImageId: 278,
+  galleryImageId: 527,
   content: `# **Logo FC Sochaux** : Histoire et Évolution
 
 Le **logo Sochaux** représente l'une des identités visuelles les plus emblématiques du football français. À travers son histoire centenaire, le **FC Sochaux logo** a connu plusieurs évolutions tout en conservant des éléments symboliques forts qui reflètent l'identité et les valeurs du club franc-comtois.

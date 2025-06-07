@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sheffieldUnitedLogoPost: BlogPost = {
-  id: 60,
+  id: 520,
   title: "Logo Sheffield United : Histoire et Design de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Sheffield United : origines, évolution et symbolisme de l'emblème emblématique des Blades.",
   date: "2024-04-10",
-  galleryImageId: 60,
+  galleryImageId: 520,
   content: `# L'Histoire Passionnante du **Logo Sheffield United**
 
 Le **sheffield united logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne plus de 130 ans d'histoire footballistique. Plongeons dans l'univers fascinant du **logo sheffield united**, un écusson qui raconte l'histoire d'un des plus anciens clubs professionnels du monde.

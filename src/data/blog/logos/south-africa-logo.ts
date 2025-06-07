@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const southAfricaLogoPost: BlogPost = {
-  id: 169,
+  id: 528,
   title: "**Logo Afrique du Sud** : Histoire et Évolution de l'Emblème des Bafana Bafana [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale sud-africaine : des origines à aujourd'hui, évolution et signification de cet emblème arc-en-ciel.",
   date: "2024-06-15",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 169,
+  galleryImageId: 528,
   content: `# L'Histoire Fascinante du **Logo Afrique du Sud**
 
 Le **logo afrique du sud** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation arc-en-ciel dont l'histoire footballistique est profondément ancrée dans les valeurs de résilience, d'unité et de transformation. Le **afrique du sud foot logo** incarne l'esprit d'un pays qui a su transcender ses divisions historiques à travers la passion du football.

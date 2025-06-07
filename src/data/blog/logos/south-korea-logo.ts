@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const southKoreaLogoPost: BlogPost = {
-  id: 511,
+  id: 529,
   title: "Logo Corée du Sud : Histoire et Symbolisme de l'Emblème du Football Coréen",
   excerpt: "Découvrez l'histoire fascinante du logo de la Corée du Sud : origines, évolution et symbolisme de cet emblème unique du football asiatique. Analyse complète du logo de la fédération coréenne.",
   date: "2024-05-12",

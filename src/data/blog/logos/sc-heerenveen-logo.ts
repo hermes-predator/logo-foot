@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const scHeerenveenLogoPost: BlogPost = {
-  id: 9335,
+  id: 509,
   title: "**Logo Heerenveen** : Histoire et Évolution de l'Emblème du SC Heerenveen [2024]",
   excerpt: "Découvrez l'histoire fascinante du **SC Heerenveen logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

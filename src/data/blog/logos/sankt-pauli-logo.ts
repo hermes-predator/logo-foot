@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sanktPauliLogoPost: BlogPost = {
-  id: 148,
+  id: 503,
   title: "Logo Sankt Pauli : Histoire et Symbolisme du FC St. Pauli",
   excerpt: "Découvrez l'histoire et la signification du logo Sankt Pauli, emblème de résistance et d'identité sociale du club allemand de Hambourg. Analyse complète de ce symbole fort du football allemand.",
   date: "2024-05-28",

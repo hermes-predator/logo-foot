@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const seattleSoundersLogoPost: BlogPost = {
-  id: 407,
+  id: 513,
   title: "**Logo Seattle Sounders** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Seattle Sounders**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const scottishCupLogoPost: BlogPost = {
-  id: 462,
+  id: 512,
   title: "**Scottish Cup Logo** : L'Histoire d'un Emblème Centenaire du Football Écossais",
   date: "2025-04-27",
   category: "competition-logos",

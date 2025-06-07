@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const saudiFootballClubLogosPost: BlogPost = {
-  id: 8701, // ID unique pour ce post
+  id: 507, // ID unique pour ce post
   title: "Les logos des clubs de football saoudiens : Histoire et évolution visuelle",
   excerpt: "Découvrez l'histoire fascinante des logos des clubs de football saoudiens, leur évolution au fil du temps et la signification symbolique derrière ces emblèmes iconiques.",
   date: "2025-04-08",

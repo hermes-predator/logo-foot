@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sheriffTiraspolLogoPost: BlogPost = {
-  id: 366, // ID unique pour cet article
+  id: 521, // ID unique pour cet article
   title: "Sheriff Tiraspol Logo : Histoire et Signification de l'Emblème Moldave [2024]",
   date: "2025-04-11",
   category: "logos",

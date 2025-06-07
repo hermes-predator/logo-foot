@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sloveniaLogoPost: BlogPost = {
-  id: 170,
+  id: 526,
   title: "**Logo Slovénie** : Histoire et Évolution de l'Emblème des Dragons [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale slovène : des origines à aujourd'hui, évolution et signification de cet emblème unique des Balkans.",
   date: "2024-06-20",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 170,
+  galleryImageId: 526,
   content: `# L'Histoire Fascinante du **Logo Slovénie**
 
 Le **logo slovenie** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation jeune mais fière, dont l'histoire footballistique reflète la détermination et l'esprit d'innovation. Le **slovenia logo** incarne l'identité d'un pays qui, depuis son indépendance, n'a cessé de progresser sur la scène footballistique internationale.

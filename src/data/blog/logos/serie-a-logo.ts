@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const serieALogoPost: BlogPost = {
-  id: 34,
+  id: 516,
   title: "Logo Serie A : Design & Histoire du Football Italien [2024]",
   excerpt: "Analyse complète du logo Serie A : histoire, évolution et signification du design du championnat italien de football.",
   date: "2024-03-21",
-  galleryImageId: 34,
+  galleryImageId: 516,
   content: `# L'Histoire Fascinante du **Logo Serie A**
 
 Le **logo Serie A** est l'un des symboles les plus emblématiques du football européen, représentant l'excellence et la passion du championnat italien. Dans cet article, nous explorons l'évolution, la signification et l'impact du **italian serie a logo** à travers les décennies, depuis ses origines jusqu'à sa version contemporaine.

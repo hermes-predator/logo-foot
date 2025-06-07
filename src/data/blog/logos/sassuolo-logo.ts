@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sassuoloLogoPost: BlogPost = {
-  id: 154,
+  id: 505,
   title: "Logo Sassuolo : Histoire et Design de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Sassuolo : origines, évolution et signification de l'emblème emblématique du club italien de Serie A.",
   date: "2024-07-01",
-  galleryImageId: 154,
+  galleryImageId: 505,
   content: `# L'Histoire Fascinante du **Logo Sassuolo**
 
 Le **sassuolo logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un club qui, en quelques décennies, est passé de l'anonymat des divisions inférieures aux projecteurs de la Serie A italienne. Plongeons dans l'univers captivant du **logo sassuolo** qui représente aujourd'hui un club ambitieux du football italien.

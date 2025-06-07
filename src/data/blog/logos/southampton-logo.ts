@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const southamptonLogoPost: BlogPost = {
-  id: 95, // Using a unique ID that isn't already used
+  id: 530, // Using a unique ID that isn't already used
   title: "Logo Southampton : Histoire et Design de l'Emblème des Saints [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Southampton FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-13",
-  galleryImageId: 95,
+  galleryImageId: 530,
   content: `# L'Histoire Fascinante du **Logo Southampton**
 
 Le **southampton logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **southampton football logo** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté sur la côte sud de l'Angleterre.

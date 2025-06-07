@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sevillaFcLogoPost: BlogPost = {
-  id: 161, // ID unique qui n'est pas déjà utilisé
+  id: 518, // ID unique qui n'est pas déjà utilisé
   title: "Logo FC Séville : Histoire et Design de l'Emblème Andalou [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Séville : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club andalou.",
   date: "2024-05-28",

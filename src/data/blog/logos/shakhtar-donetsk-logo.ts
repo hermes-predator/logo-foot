@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const shakhtarDonetskLogoPost: BlogPost = {
-  id: 280,
+  id: 519,
   title: "Logo Shakhtar Donetsk : Histoire et Design de l'Emblème Ukrainien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Shakhtar Donetsk : des origines à aujourd'hui, évolution et signification de l'emblème orange et noir du club ukrainien.",
   date: "2024-06-18",

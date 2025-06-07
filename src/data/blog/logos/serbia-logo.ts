@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const serbiaLogoPost: BlogPost = {
-  id: 160,
+  id: 515,
   title: "Logo Serbie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Serbie : des origines à aujourd'hui, évolution et signification de l'emblème du football serbe.",
   date: "2024-05-26",

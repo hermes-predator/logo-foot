@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const senegalLogoPost: BlogPost = {
-  id: 166,
+  id: 514,
   title: "Logo Sénégal : Histoire et Design de l'Emblème des Lions de la Teranga [2024]",
   excerpt: "Découvrez l'histoire complète du logo Sénégal : des origines à aujourd'hui, évolution et signification de l'emblème des Lions de la Teranga, symbole du football sénégalais.",
   date: "2024-05-31",

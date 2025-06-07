@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const slovanBratislavaLogoPost: BlogPost = {
-  id: 124,
+  id: 525,
   title: "Logo Slovan Bratislava : Histoire et Symbolisme de l'Emblème du Club Slovaque",
   excerpt: "Découvrez l'histoire et l'évolution du logo du Slovan Bratislava, le plus grand club de football slovaque, symbole de l'identité nationale et sportive du pays.",
   date: "2024-04-08",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const slaviaPragueLogoPost: BlogPost = {
-  id: 273,
+  id: 523,
   title: "Analyse du Logo du Slavia Prague : Histoire et Symbolisme [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Slavia Prague, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-05",

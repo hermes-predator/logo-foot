@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const servetteLogoPost: BlogPost = {
-  id: 421,
+  id: 517,
   title: "Logo Servette FC : Histoire et Signification de l'Emblème Genevois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Servette FC, son évolution depuis 1890 et la symbolique derrière l'emblème du plus ancien club de football suisse.",
   date: "2024-04-15",

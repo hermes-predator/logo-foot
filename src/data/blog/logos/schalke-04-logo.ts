@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const schalke04LogoPost: BlogPost = {
-  id: 92,
+  id: 510,
   title: "Logo Schalke 04 : Histoire et Design de l'Emblème Allemand FC Schalke 04 [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Schalke 04 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-12",

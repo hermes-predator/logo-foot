@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const sanJoseEarthquakesLogoPost: BlogPost = {
-  id: 35,
+  id: 501,
   title: "**Logo San Jose Earthquakes** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo San Jose Earthquakes**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

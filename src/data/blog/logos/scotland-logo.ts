@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const scotlandLogoPost: BlogPost = {
-  id: 162,
+  id: 511,
   title: "Logo Ecosse : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ecosse : des origines à aujourd'hui, évolution et signification de l'emblème du football écossais.",
   date: "2024-05-28",

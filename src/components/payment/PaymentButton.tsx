@@ -59,10 +59,10 @@ const PaymentButton = () => {
             <div className="flex items-center justify-center w-full gap-5 relative z-10">
               <ShoppingCart 
                 className="drop-shadow-sm flex-shrink-0"
-                size={20}
-                width={20}
-                height={20}
-                style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px' }}
+                size={18}
+                width={18}
+                height={18}
+                style={{ width: '18px', height: '18px', minWidth: '18px', minHeight: '18px' }}
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">

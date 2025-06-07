@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const armeniaLogoPost: BlogPost = {
-  id: 431,
+  id: 79,
   title: "**Logo Arménie** : Histoire et Signification de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale arménienne : des origines à aujourd'hui, évolution et signification de cet emblème unique du football caucasien.",
   date: "2024-07-01",

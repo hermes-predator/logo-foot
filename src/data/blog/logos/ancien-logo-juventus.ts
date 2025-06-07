@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoJuventusPost: BlogPost = {
-  id: 278,
+  id: 67,
   title: "Ancien Logo Juventus : Histoire et Évolution de l'Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante de l'ancien logo de la Juventus, son héritage emblématique et son évolution avant la révolution de 2017.",
   date: "2024-05-12",

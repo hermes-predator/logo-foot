@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const acAjaccioLogoPost: BlogPost = {
-  id: 91, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  id: 47, // Utilisation d'un ID unique qui n'est pas déjà utilisé
   title: "Logo AC Ajaccio : Histoire et Évolution de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AC Ajaccio : origines, évolution et symbolisme de l'emblème emblématique du club corse.",
   date: "2024-06-09",

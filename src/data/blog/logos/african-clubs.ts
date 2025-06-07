@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const africanClubsPost: BlogPost = {
-  id: 23,
+  id: 50,
   title: "Les Logos du Football Africain : Tradition et Modernité [2024]",
   excerpt: "Découvrez les designs uniques des logos du football africain. Des clubs historiques comme Al Ahly aux équipes émergentes, explorez l'art et l'identité du football continental.",
   date: "2024-03-08",

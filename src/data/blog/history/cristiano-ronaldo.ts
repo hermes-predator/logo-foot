@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const cristianoRonaldoPost: BlogPost = {
-  id: 69,
+  id: 42,
   title: "Cristiano Ronaldo : L'Histoire Complète d'une Légende du Football",
   excerpt: "Découvrez le parcours exceptionnel de Cristiano Ronaldo, de ses débuts modestes à Madère jusqu'à son statut de légende mondiale du football. Records, clubs, trophées et impact culturel d'un des plus grands joueurs de tous les temps.",
   date: "2024-03-01",

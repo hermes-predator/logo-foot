@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const algeriaLogoPost: BlogPost = {
-  id: 163, // Using a unique ID that's not already used
+  id: 61, // Using a unique ID that's not already used
   title: "Logo Algérie : Histoire et Évolution de l'Emblème des Fennecs [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Algérie : des origines à aujourd'hui, évolution et signification de l'emblème des Fennecs.",
   date: "2024-06-02", // Using a recent date

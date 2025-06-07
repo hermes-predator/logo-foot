@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const albaniaLogoPost: BlogPost = {
-  id: 202,
+  id: 60,
   title: "Logo Albanie : Histoire et Signification de l'Emblème des Aigles Rouges [2024]",
   excerpt: "Découvrez l'histoire complète du logo Albanie : origines, évolution et symbolisme de l'emblème des Aigles Rouges, équipe nationale emblématique des Balkans.",
   date: "2024-07-20",

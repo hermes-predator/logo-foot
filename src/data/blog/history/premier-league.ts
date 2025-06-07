@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const premierLeagueHistory: BlogPost = {
-  id: 11,
+  id: 44,
   title: "L'Histoire des Clubs de Premier League : De 1888 à 2024",
   excerpt: "Retracez l'histoire fascinante des clubs de Premier League depuis la création de la Football League en 1888 jusqu'à l'ère moderne du football anglais.",
   date: "2024-02-18",

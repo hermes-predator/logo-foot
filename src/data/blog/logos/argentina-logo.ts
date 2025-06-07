@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const argentinaLogoPost: BlogPost = {
-  id: 89,
+  id: 77,
   title: "Logo Argentine : Histoire et Évolution de l'Emblème de l'Albiceleste [2024]",
   excerpt: "Découvrez l'histoire complète du logo Argentine, son évolution et sa signification. Analyse détaillée de l'emblème de la sélection championne du monde et téléchargez le logo Argentine foot en PNG haute qualité.",
   date: "2024-05-28",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoInterMilanPost: BlogPost = {
-  id: 439,
+  id: 66,
   title: "**Ancien Logo Inter Milan** : L'Évolution d'une Icône du Calcio [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante de l'**ancien logo de l'Inter Milan**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
   date: "2024-04-15",

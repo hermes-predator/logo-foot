@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const adanaDemirsporLogoPost: BlogPost = {
-  id: 570,
+  id: 48,
   title: "**Logo Adana Demirspor** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Adana Demirspor**, un symbole d'identité et de fierté du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",

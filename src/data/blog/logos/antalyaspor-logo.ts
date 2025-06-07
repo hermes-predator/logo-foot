@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const antalyasporLogoPost: BlogPost = {
-  id: 569,
+  id: 75,
   title: "**Logo Antalyaspor** : Histoire et Évolution de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Antalyaspor**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",

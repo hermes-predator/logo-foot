@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const argentinosJuniorsLogoPost: BlogPost = {
-  id: 435,
+  id: 78,
   title: "**Logo Argentinos Juniors** : Histoire et Symbolisme [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **Argentinos Juniors logo**, emblème historique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo Argentinos Junior**.",
   date: "2024-04-22",

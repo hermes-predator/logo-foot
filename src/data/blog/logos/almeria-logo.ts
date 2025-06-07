@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const almeriaLogoPost: BlogPost = {
-  id: 351, // ID unique pour ce nouvel article
+  id: 64, // ID unique pour ce nouvel article
   title: "Logo Almeria : Histoire et Évolution de l'Emblème du Club Andalou [2024]",
   date: "2025-04-11",
   category: "logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alShababLogoPost: BlogPost = {
-  id: 2700,
+  id: 58,
   title: "Logo Al Shabab FC: Histoire, Signification et Evolution [2024]",
   excerpt: "Découvrez tout sur le logo d'Al Shabab FC, le club emblématique saoudien. Analyse complète de son design, son histoire et téléchargez le logo Al Shabab FC PNG en haute définition.",
   date: "2025-04-14",

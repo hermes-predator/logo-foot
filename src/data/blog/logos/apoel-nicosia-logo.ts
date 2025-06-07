@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const apoelNicosiaLogoPost: BlogPost = {
-  id: 364, // Unique ID for this new article
+  id: 76, // Unique ID for this new article
   title: "APOEL Nicosie Logo : Histoire et Signification de l'Emblème Chypriote [2024]",
   date: "2025-04-11",
   category: "logos",

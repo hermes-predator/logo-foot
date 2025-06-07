@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const arminiaBielefeldLogoPost: BlogPost = {
-  id: 426,
+  id: 80,
   title: "**Logo Arminia Bielefeld** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Arminia Bielefeld**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
   date: "2025-04-14",

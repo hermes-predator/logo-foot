@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const aekAthensLogoPost: BlogPost = {
-  id: 344,
+  id: 49,
   title: "Logo AEK Athens : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
   excerpt: "Découvrez l'histoire complète et la signification du logo de l'AEK Athènes : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",

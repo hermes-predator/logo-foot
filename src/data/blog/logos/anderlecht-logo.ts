@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const anderlechtLogoPost: BlogPost = {
-  id: 201,
+  id: 71,
   title: "Logo Anderlecht : Histoire et Signification du RSC Anderlecht Logo [2024]",
   excerpt: "Découvrez l'histoire complète du logo RSC Anderlecht : origines, évolution et symbolisme de l'emblème du club belge le plus titré.",
   date: "2024-04-10",

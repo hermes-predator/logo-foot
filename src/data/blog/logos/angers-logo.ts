@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const angersLogoPost: BlogPost = {
-  id: 63,
+  id: 72,
   title: "Logo Angers SCO : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Angers SCO, son symbolisme et comment l'emblème représente l'identité du club angevin au fil des années.",
   date: "2024-04-20",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const almereCityLogoPost: BlogPost = {
-  id: 91,
+  id: 63,
   title: "**Logo Almere City FC** : Histoire et Design Complet [2024]",
   date: "2025-04-19",
   category: "logos",

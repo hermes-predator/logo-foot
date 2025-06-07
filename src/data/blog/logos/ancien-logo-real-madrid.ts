@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoRealMadridPost: BlogPost = {
-  id: 438,
+  id: 70,
   title: "**Ancien Logo Real Madrid** : L'Évolution d'une Légende [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante de l'**ancien logo du Real Madrid**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
   date: "2024-04-15",

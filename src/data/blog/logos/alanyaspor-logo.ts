@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alanyasporLogoPost: BlogPost = {
-  id: 571,
+  id: 59,
   title: "**Logo Alanyaspor** : Histoire et Symbolisme de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Alanyaspor**, symbole d'identité du football turc moderne, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",

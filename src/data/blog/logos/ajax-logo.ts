@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ajaxLogoPost: BlogPost = {
-  id: 68,
+  id: 51,
   title: "Logo Ajax Amsterdam : Histoire et Symbolisme [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Ajax Amsterdam, son évolution au fil des années et la signification du célèbre portrait du héros grec Ajax.",
   date: "2024-05-01",

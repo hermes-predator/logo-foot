@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const logosFootPdfPost: BlogPost = {
-  id: 256,
+  id: 45,
   title: "1001 logos des clubs de foot PDF : Guide complet des ressources disponibles",
   excerpt: "Découvrez notre analyse des collections de logos de football au format PDF, leurs limites et pourquoi notre pack premium offre une meilleure alternative que les '1001 logos des clubs de foot PDF' gratuits.",
   date: "2023-10-18",

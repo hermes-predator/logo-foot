@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const annecyLogoPost: BlogPost = {
-  id: 84,
+  id: 74,
   title: "Logo Annecy : Histoire et Évolution de l'Emblème du FC Annecy [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Annecy : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club haut-savoyard.",
   date: "2024-04-22",

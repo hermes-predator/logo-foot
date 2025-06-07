@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const aberdeenLogoPost: BlogPost = {
-  id: 560,
+  id: 46,
   title: "**Aberdeen Logo** : Histoire et Evolution de l'Emblème Écossais [2024]",
   excerpt: "Découvrez l'histoire fascinante de l'**Aberdeen FC logo**, emblème iconique du football écossais. Une analyse détaillée du **Aberdeen Football Club logo** et de son évolution au fil des années.",
   date: "2024-04-19",

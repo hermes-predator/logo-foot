@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const allsvenskanLogoPost: BlogPost = {
-  id: 454,
+  id: 62,
   title: "Logo Allsvenskan : Histoire et Évolution du Design du Championnat Suédois",
   date: "2025-04-25",
   category: "competition-logos",

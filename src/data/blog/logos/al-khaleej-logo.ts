@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alKhaleejLogoPost: BlogPost = {
-  id: 432,
+  id: 56,
   title: "**Al Khaleej Logo** : L'Emblème d'un Club Ambitieux [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification du **Al Khaleej logo**, symbole d'un club en pleine ascension dans le football saoudien. Une analyse détaillée de son design unique.",
   date: "2024-04-22",

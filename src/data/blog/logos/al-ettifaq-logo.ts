@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alEttifaqLogoPost: BlogPost = {
-  id: 429,
+  id: 53,
   title: "**Logo Al Ettifaq** : Histoire et Évolution de l'Emblème du Club Saoudien [2024]",
   excerpt: "Plongez dans l'histoire fascinante du **logo Al Ettifaq**, ses transformations au fil des années et sa symbolique dans le football saoudien dans notre analyse détaillée de cet emblème distinctif.",
   date: "2025-04-14",

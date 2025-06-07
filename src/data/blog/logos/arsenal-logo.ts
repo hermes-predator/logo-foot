@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const arsenalLogoPost: BlogPost = {
-  id: 57,
+  id: 82,
   title: "Logo Arsenal : Histoire et Évolution du Célèbre Canon des Gunners [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Arsenal à travers les époques : origines, évolutions et signification du célèbre emblème des Gunners qui incarne l'identité du club londonien.",
   date: "2024-04-07",

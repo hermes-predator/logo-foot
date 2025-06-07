@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const coupeFranceLogoPost: BlogPost = {
-  id: 80,
+  id: 41,
   title: "Logo Coupe de France : Histoire et Évolution du Symbole Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Coupe de France de football. Origines, évolution et symbolisme de l'emblème de la plus ancienne compétition française.",
   date: "2024-04-15",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alAhliLogoPost: BlogPost = {
-  id: 239,
+  id: 52,
   title: "Logo Al Ahli : Histoire et Évolution de l'Emblème du Club Saoudien [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo Al Ahli, son évolution au fil des ans et la signification de ses symboles pour ce grand club saoudien.",
   date: "2025-04-08",

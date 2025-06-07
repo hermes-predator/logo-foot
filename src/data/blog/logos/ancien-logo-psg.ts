@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ancienLogoPsgPost: BlogPost = {
-  id: 166,
+  id: 69,
   title: "Ancien Logo PSG : Histoire et Évolution des Logos Historiques [2024]",
   excerpt: "Découvrez l'histoire complète des anciens logos du PSG : origines, évolution et signification des emblèmes historiques du Paris Saint-Germain depuis sa création.",
   date: "2024-06-01",

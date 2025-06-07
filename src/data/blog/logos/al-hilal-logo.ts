@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alHilalLogoPost: BlogPost = {
-  id: 238,
+  id: 54,
   title: "Le Logo Al-Hilal : Histoire et Design de l'Emblème du Géant Saoudien",
   excerpt: "Découvrez l'histoire et l'évolution du logo Al-Hilal, le plus grand club d'Arabie Saoudite. Analyse complète du design, des couleurs et de la signification de l'emblème du club.",
   date: "2024-04-07",

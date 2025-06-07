@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const alIttihadLogoPost: BlogPost = {
-  id: 240,
+  id: 55,
   title: "Logo Al-Ittihad : Histoire et Symboles de l'Emblème du Club Saoudien [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo Al-Ittihad, son évolution au fil des ans et la signification de ses symboles pour ce prestigieux club saoudien.",
   date: "2025-04-08",

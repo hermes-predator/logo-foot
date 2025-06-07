@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const angolaLogoPost: BlogPost = {
-  id: 446,
+  id: 73,
   title: "**Logo Angola** : Histoire et Symbolisme des Palancas Negras [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale angolaise : origines, évolution et signification de cet emblème africain emblématique.",
   date: "2024-04-27",

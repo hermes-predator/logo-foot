@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const amiensLogoPost: BlogPost = {
-  id: 74,
+  id: 65,
   title: "Logo Amiens : Histoire et Design de l'Emblème Picard [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Amiens SC : évolution, symbolisme et design de l'emblème emblématique du club picard, un des emblèmes les plus reconnaissables du football français.",
   date: "2024-05-18",

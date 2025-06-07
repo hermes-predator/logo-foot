@@ -6,7 +6,7 @@ export const gironaLogoPost: BlogPost = {
   title: "Logo Girona FC : Histoire et Évolution de l'Emblème du Club Catalan [2024]",
   excerpt: "Découvrez l'histoire complète du logo Girona FC : origines, signification et évolution de l'emblème emblématique du club catalan espagnol au fil des années.",
   date: "2024-06-22",
-  galleryImageId: 101,
+  galleryImageId: 285,
   content: `# L'Histoire Fascinante du **Logo Girona**
 
 Le **girona logo** représente bien plus qu'un simple emblème sportif : c'est un symbole riche d'histoire qui incarne l'identité et les valeurs d'un club catalan en pleine ascension. Dans cet article, nous explorons en profondeur l'évolution et la signification du **logo girona png** à travers les décennies.

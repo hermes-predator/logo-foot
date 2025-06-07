@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lasPalmasLogoPost: BlogPost = {
-  id: 160,
+  id: 339,
   title: "Logo Las Palmas : Histoire et Évolution de l'Emblème du Club Canarien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Las Palmas, ses significations et son évolution à travers les années. Analyse complète de l'emblème du club des îles Canaries.",
   date: "2024-05-27",

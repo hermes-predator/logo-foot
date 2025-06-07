@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lecceLogoPost: BlogPost = {
-  id: 122,
+  id: 348,
   title: "Logo Lecce : Histoire et Design de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'US Lecce : origines, évolution et symbolisme de l'emblème emblématique du club italien.",
   date: "2024-06-19",
-  galleryImageId: 122,
+  galleryImageId: 348,
   content: `# L'Histoire Fascinante du **logo lecce**
 
 Le **lecce logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui incarne l'histoire et la tradition du football des Pouilles. Ce **logo us lecce** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football italien tout en restant fidèle à ses racines locales.

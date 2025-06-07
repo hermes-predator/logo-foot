@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lavalLogoPost: BlogPost = {
-  id: 119,
+  id: 343,
   title: "Logo Stade Lavallois : Histoire et Évolution de l'Emblème Mayennais [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade Lavallois : origines, évolution et symbolisme de l'emblème emblématique du club mayennais.",
   date: "2024-06-16",
-  galleryImageId: 119,
+  galleryImageId: 343,
   content: `# L'Histoire Fascinante du **logo stade lavallois**
 
 Le **stade lavallois logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions de la Mayenne. Ce **logo stade lavallois** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football français tout en restant fidèle à ses racines.

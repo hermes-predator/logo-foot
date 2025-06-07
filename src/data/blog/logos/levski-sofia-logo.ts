@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const levskiSofiaLogoPost: BlogPost = {
-  id: 9326,
+  id: 358,
   title: "**Levski Sofia Logo** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Levski Sofia**, son évolution et sa symbolique. Un emblème qui incarne l'héritage du plus grand club bulgare.",
   date: "2024-04-18",

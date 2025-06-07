@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const kazakhstanLogoPost: BlogPost = {
-  id: 449,
+  id: 332,
   title: "**Logo Kazakhstan** : Histoire et Evolution du Blason National [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale kazakhe : origines, symbolisme et évolution de cet emblème unique d'Asie centrale.",
   date: "2024-04-28",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 449,
+  galleryImageId: 332,
   content: `# L'Histoire Captivante du **Logo Kazakhstan**
 
 Le **logo kazakhstan** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation émergente qui forge son identité à travers le football. Depuis son indépendance, le **kazakhstan football logo** est devenu un puissant vecteur d'unité nationale et de fierté pour ce vaste pays d'Asie centrale.

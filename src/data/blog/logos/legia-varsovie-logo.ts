@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const legiaVarsovieLogoPost: BlogPost = {
-  id: 564,
+  id: 352,
   title: "**Legia Varsovie Logo** : Histoire et Symbolique de l'Emblème du Club Polonais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Legia Varsovie**, un symbole emblématique qui représente la fierté du football polonais et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 

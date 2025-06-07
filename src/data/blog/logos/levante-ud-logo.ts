@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const levanteUdLogoPost: BlogPost = {
-  id: 349, // ID unique pour ce nouvel article
+  id: 356, // ID unique pour ce nouvel article
   title: "Logo Levante UD : Histoire et Symbolisme de l'Emblème Valencien",
   date: "2025-04-11",
   category: "logos",

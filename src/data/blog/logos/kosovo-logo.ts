@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const kosovoLogoPost: BlogPost = {
-  id: 510,
+  id: 335,
   title: "Logo Kosovo : Histoire et Symbolisme de l'Emblème National",
   excerpt: "Découvrez l'histoire et la signification du logo Kosovo pour l'équipe nationale de football. Analyse complète de ce symbole d'identité nationale et sportive.",
   date: "2024-05-10",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const jsKabylieLogoPost: BlogPost = {
-  id: 2,
+  id: 327,
   title: "**Logo JS Kabylie** : Histoire et Évolution de l'Emblème du Club Algérien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo JS Kabylie**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
   date: "2024-04-16",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const leverkusenLogoPost: BlogPost = {
-  id: 260,
+  id: 357,
   title: "Logo Bayer Leverkusen : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo du Bayer Leverkusen, l'un des clubs les plus emblématiques de Bundesliga. Analyse complète de son design et sa symbolique.",
   date: "2024-05-21",

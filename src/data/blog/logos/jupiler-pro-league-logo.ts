@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const jupilerProLeagueLogoPost: BlogPost = {
-  id: 857,
+  id: 328,
   title: "Le **Jupiler Pro League Logo** : Histoire et Évolution de l'Emblème du Football Belge",
   excerpt: "Découvrez l'histoire et l'évolution du logo D1 Arkema, emblème du championnat de football féminin français. Analyse complète du design et des symboliques.",
   date: "2024-04-20",

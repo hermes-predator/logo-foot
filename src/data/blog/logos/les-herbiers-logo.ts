@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lesHerbiersLogoPost: BlogPost = {
-  id: 94,
+  id: 355,
   title: "**Logo Les Herbiers** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   category: "logos",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const karlsruheLogoPost: BlogPost = {
-  id: 469,
+  id: 331,
   title: "**Logo Karlsruhe** : Histoire et Évolution de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Karlsruher SC**, un des clubs historiques du football allemand. Plongez dans l'évolution de cet emblème emblématique au fil des années.",
   date: "2024-04-21",

@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const laLigaLogoPost: BlogPost = {
-  id: 69,
+  id: 338,
   title: "Logo La Liga : L'Évolution de l'Emblème du Football Espagnol [2024]",
   excerpt: "Découvrez l'histoire complète du logo La Liga, son évolution au fil des années et la symbolique derrière l'identité visuelle de la prestigieuse ligue espagnole de football.",
   date: "2024-05-13",
-  galleryImageId: 69,
+  galleryImageId: 338,
   content: `# L'Histoire Fascinante du Logo La Liga
 
 Le **logo La Liga** est bien plus qu'un simple emblème : c'est un symbole culturel qui représente l'excellence, la passion et la grandeur du football espagnol. Explorons ensemble l'histoire captivante de ce **La Liga logo** qui incarne l'âme d'une compétition parmi les plus prestigieuses au monde.

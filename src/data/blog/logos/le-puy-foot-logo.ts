@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lePuyFootLogoPost: BlogPost = {
-  id: 91,
+  id: 347,
   title: "**Logo Le Puy Foot** : Histoire et Design Complet [2024]",
   date: "2025-04-18",
   category: "logos",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const japanLogoPost: BlogPost = {
-  id: 164,
+  id: 326,
   title: "Logo Japon : Histoire et Évolution de l'Emblème du Samurai Blue [2024]",
   excerpt: "Découvrez l'histoire complète du logo Japon : des origines à aujourd'hui, évolution et signification de l'emblème du Samurai Blue, symbole du football japonais.",
   date: "2024-05-30",

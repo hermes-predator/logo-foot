@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const leedsUnitedLogoPost: BlogPost = {
-  id: 61,
+  id: 350,
   title: "Logo Leeds United : Histoire et Design de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Leeds United : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-04-12",
-  galleryImageId: 61,
+  galleryImageId: 350,
   content: `# L'Histoire Passionnante du **Logo Leeds United**
 
 Le **leeds football logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne plus d'un siècle d'histoire footballistique. Plongeons dans l'univers fascinant du **logo leeds**, un écusson qui raconte l'histoire d'un des clubs les plus emblématiques d'Angleterre.

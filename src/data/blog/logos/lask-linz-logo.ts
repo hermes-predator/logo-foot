@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const laskLinzLogoPost: BlogPost = {
-  id: 363, // ID unique pour ce nouvel article
+  id: 340, // ID unique pour ce nouvel article
   title: "LASK Linz Logo : Histoire et Signification du Blason Autrichien [2024]",
   date: "2025-04-11",
   category: "logos",

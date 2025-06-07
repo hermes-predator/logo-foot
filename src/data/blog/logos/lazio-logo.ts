@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lazioLogoPost: BlogPost = {
-  id: 65,
+  id: 344,
   title: "Logo SS Lazio : Histoire et Évolution de l'Emblème du Club Romain [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Lazio Rome, son évolution à travers les années et la symbolique de l'aigle emblématique qui représente le club.",
   date: "2024-04-24",
-  galleryImageId: 65,
+  galleryImageId: 344,
   content: `# L'Histoire Fascinante du **Logo SS Lazio**
 
 Le **lazio logo** est bien plus qu'un simple emblème sportif : c'est une icône qui incarne l'histoire, les valeurs et la fierté du club romain depuis plus d'un siècle. Dans cet article, nous explorons l'évolution et la signification du **ss lazio logo**, symbole emblématique du football italien.

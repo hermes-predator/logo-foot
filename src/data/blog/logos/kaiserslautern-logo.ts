@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const kaiserslauternLogoPost: BlogPost = {
-  id: 421,
+  id: 330,
   title: "**Logo Kaiserslautern** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Kaiserslautern**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire allemand.",
   date: "2025-04-14",

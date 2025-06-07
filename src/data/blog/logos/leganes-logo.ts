@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const leganesLogoPost: BlogPost = {
-  id: 274,
+  id: 351,
   title: "Logo Leganés : Histoire et Symbolisme de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Leganés, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-06",

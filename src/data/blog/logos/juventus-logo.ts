@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const juventusLogoPost: BlogPost = {
-  id: 53,
+  id: 329,
   title: "Logo Juventus : Histoire Complète et Evolution du Design [2024]",
   excerpt: "Plongez dans l'histoire fascinante du logo Juventus, un voyage à travers le temps qui révèle comment un simple écusson est devenu l'un des symboles les plus audacieux du football moderne.",
   date: "2024-04-03",
-  galleryImageId: 53,
+  galleryImageId: 329,
   content: `# L'Histoire Fascinante du **Logo Juventus**
 
 Le **logo juventus** est bien plus qu'un simple emblème de football. C'est le symbole d'une institution sportive centenaire qui a su évoluer tout en préservant son âme. Le **juventus logo** représente l'histoire d'un club qui a marqué le football italien et européen de son empreinte indélébile.

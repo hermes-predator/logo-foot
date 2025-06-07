@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const latviaLogoPost: BlogPost = {
-  id: 76,
+  id: 341,
   title: "**Logo Lettonie** : L'Histoire de l'Emblème des Dragons Baltes [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale lettonne : des origines à aujourd'hui, évolution et signification de l'emblème du football balte.",
   date: "2025-04-27",

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const konyasporLogoPost: BlogPost = {
-  id: 3,
+  id: 334,
   title: "**Konyaspor Logo** : Histoire et Évolution de l'Emblème Anatolien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **konyaspor logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",

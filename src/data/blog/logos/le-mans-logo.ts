@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const leMansFCLogoPost: BlogPost = {
-  id: 176,
+  id: 346,
   title: "Logo Le Mans FC : Histoire et Évolution de l'Emblème Manceau [2024]",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo Le Mans FC. Analyse détaillée des couleurs, symboles et design de l'emblème du club sarthois.",
   date: "2024-05-12",

@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ligaMxLogoPost: BlogPost = {
-  id: 70,
+  id: 359,
   title: "Liga MX Logo : Histoire et Évolution de l'Emblème du Football Mexicain [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Liga MX : origines, évolution et signification de l'emblème emblématique du championnat mexicain de football.",
   date: "2024-05-10",
-  galleryImageId: 70,
+  galleryImageId: 359,
   content: `# L'Histoire Passionnante du **Liga MX Logo**
 
 Le **liga mx logo** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité et la passion du football mexicain. À travers son design distinctif et ses couleurs vibrantes, le **liga mx logos** représente l'essence même d'une compétition qui se classe parmi les championnats les plus suivis d'Amérique Latine.

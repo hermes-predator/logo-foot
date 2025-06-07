@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const knvbBekerLogoPost: BlogPost = {
-  id: 855,
+  id: 333,
   title: "Le **KNVB Beker Logo** : Histoire et Symbolisme de la Coupe des Pays-Bas",
   excerpt: "Découvrez l'histoire fascinante du **KNVB Beker Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la célèbre coupe néerlandaise.",
   date: "2024-04-10",

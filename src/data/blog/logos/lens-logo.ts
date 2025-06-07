@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lensLogoPost: BlogPost = {
-  id: 40,
+  id: 354,
   title: "Logo RC Lens : Histoire et Évolution du Blason Sang et Or [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Racing Club de Lens : origines, symbolisme et évolution de l'emblème emblématique du club nordiste.",
   date: "2024-03-27",

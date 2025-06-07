@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lechPoznanLogoPost: BlogPost = {
-  id: 369, // ID unique pour cet article
+  id: 349, // ID unique pour cet article
   title: "Lech Poznań Logo : Histoire et Évolution de l'Emblème du Club Polonais [2024]",
   date: "2025-04-11",
   category: "logos",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lausanneSportLogoPost: BlogPost = {
-  id: 37,
+  id: 342,
   title: "Logo FC Lausanne-Sport : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Lausanne-Sport, son évolution et la signification de son identité visuelle unique.",
   date: "2024-04-15",

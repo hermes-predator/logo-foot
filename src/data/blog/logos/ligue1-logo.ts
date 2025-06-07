@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ligue1LogoPost: BlogPost = {
-  id: 31,
+  id: 360,
   title: "Logo Ligue 1 : Histoire Complète et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Ligue 1 : son évolution à travers les époques, de la première division au partenariat avec Uber Eats. Analyse complète du design et de la symbolique.",
   date: "2024-03-18",
-  galleryImageId: 31,
+  galleryImageId: 360,
   content: `# L'Histoire Passionnante du **Logo Ligue 1**
 
 Le **logo ligue 1** est bien plus qu'un simple emblème sportif : c'est le symbole visuel du championnat de football français qui a su évoluer au fil des décennies pour représenter l'excellence et le prestige de la compétition. Cet article explore l'histoire fascinante du **ligue 1 logo** et son évolution pour devenir une icône reconnue du football mondial.

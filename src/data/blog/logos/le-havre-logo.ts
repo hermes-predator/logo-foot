@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const leHavreLogoPost: BlogPost = {
-  id: 73,
+  id: 345,
   title: "Logo Le Havre : Histoire et Design de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Havre AC : évolution, symbolisme et design de l'emblème emblématique du plus ancien club de football français.",
   date: "2024-05-17",

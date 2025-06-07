@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const laGantoiseLogoPost: BlogPost = {
-  id: 306, // Unique ID for this article
+  id: 337, // Unique ID for this article
   title: "Logo La Gantoise : Histoire et Signification de l'Emblème du KAA Gent [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo La Gantoise, son design emblématique et son évolution au fil du temps. Téléchargez le logo La Gantoise en haute définition.",
   date: "2024-07-29", // Publication date

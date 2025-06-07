@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const krasnodarLogoPost: BlogPost = {
-  id: 558,
+  id: 336,
   title: "**Krasnodar Logo** : Histoire et Évolution de l'Emblème du Club Russe [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Krasnodar**, son évolution et la symbolique unique de cet emblème emblématique du football russe.",
   date: "2024-04-15",

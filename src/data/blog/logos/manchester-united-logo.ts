@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const manchesterUnitedLogoPost: BlogPost = {
-  id: 58,
+  id: 382,
   title: "Logo Manchester United : Histoire et Evolution du Symbole des Red Devils [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Manchester United : origines, évolutions et symbolisme de l'emblème légendaire des Red Devils qui fait vibrer Old Trafford.",
   date: "2024-04-10",
-  galleryImageId: 58,
+  galleryImageId: 382,
   content: `# L'Histoire Fascinante du **Logo Manchester United**
 
 Le **manchester united logo** est bien plus qu'un simple emblème sportif. Véritable symbole d'identité pour des millions de supporters, il incarne l'histoire riche et les valeurs profondes d'un club devenu une institution sportive internationale.

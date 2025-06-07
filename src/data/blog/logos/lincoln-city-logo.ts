@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lincolnCityLogoPost: BlogPost = {
-  id: 561,
+  id: 364,
   title: "**Lincoln City Logo** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Lincoln City FC logo**, emblème iconique du football anglais. Une analyse détaillée du **Lincoln City Football Club logo** et de son évolution au fil des années.",
   date: "2024-04-20",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const mlsLogoPost: BlogPost = {
-  id: 39,
+  id: 393,
   title: "Logo MLS : Histoire et Design du Football Américain [2024]",
   excerpt: "Découvrez l'histoire complète des logos de la Major League Soccer (MLS) : évolution, design et symbolisme des emblèmes du football américain.",
   date: "2024-03-26",

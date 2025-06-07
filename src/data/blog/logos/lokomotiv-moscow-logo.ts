@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lokomotivMoscowLogoPost: BlogPost = {
-  id: 560,
+  id: 367,
   title: "**Lokomotiv Moscou Logo** : Histoire et Design de l'Emblème Ferroviaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Lokomotiv Moscou**, un symbole emblématique qui représente la fierté du football russe et son héritage ferroviaire unique.",
   date: "2024-04-15",

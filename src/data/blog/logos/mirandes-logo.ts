@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const mirandesLogoPost: BlogPost = {
-  id: 350, // ID unique pour ce nouvel article
+  id: 391, // ID unique pour ce nouvel article
   title: "Logo CD Mirandés : Histoire et Symbolisme de l'Emblème de Burgos [2024]",
   date: "2025-04-11",
   category: "logos",

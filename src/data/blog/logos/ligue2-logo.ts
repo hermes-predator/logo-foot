@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ligue2LogoPost: BlogPost = {
-  id: 75,
+  id: 361,
   title: "Logo Ligue 2 BKT : Histoire et Évolution du Design [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Ligue 2 BKT : origines, évolution et signification du design du deuxième échelon du football français.",
   date: "2024-04-10",
-  galleryImageId: 75,
+  galleryImageId: 361,
   content: `# L'Histoire Fascinante du **Logo Ligue 2**
 
 Le **logo ligue 2** est bien plus qu'un simple emblème de compétition. C'est le symbole d'un championnat qui a vu émerger certains des plus grands talents du football français. Découvrons ensemble l'histoire passionnante du **ligue 2 logo**, de ses origines à sa version actuelle sponsorisée par BKT.

@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const montenegroLogoPost: BlogPost = {
-  id: 445,
+  id: 395,
   title: "**Logo Monténégro** : Histoire et Évolution de l'Emblème des Faucons [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale monténégrine : des origines à aujourd'hui, évolution et signification de cet emblème balkanique.",
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 445,
+  galleryImageId: 395,
   content: `# L'Histoire Fascinante du **Logo Monténégro**
 
 Le **logo monténégro** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une jeune nation dont l'histoire footballistique est intimement liée à son indépendance récente. Le **logo du monténégro** incarne la fierté et les aspirations d'un pays qui, depuis 2006, écrit sa propre histoire sur la scène internationale du football.

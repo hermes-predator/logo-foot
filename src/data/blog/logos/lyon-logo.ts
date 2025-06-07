@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lyonLogoPost: BlogPost = {
-  id: 44,
+  id: 374,
   title: "Logo OL : Histoire et Design de l'Olympique Lyonnais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'Olympique Lyonnais : origines, évolution et symbolisme de l'emblème emblématique du club rhodanien.",
   date: "2024-03-31",

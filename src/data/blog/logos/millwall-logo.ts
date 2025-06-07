@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const millwallLogoPost: BlogPost = {
-  id: 375,
+  id: 389,
   title: "**Logo Millwall FC** : Histoire et Évolution de l'Emblème des Lions [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Millwall**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

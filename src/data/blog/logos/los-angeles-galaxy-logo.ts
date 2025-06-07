@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const losAngelesGalaxyLogoPost: BlogPost = {
-  id: 59,
+  id: 369,
   title: "Logo Los Angeles Galaxy : Histoire et Symbolisme de l'Emblème du Club Américain [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Los Angeles Galaxy : origines, évolution et signification de l'emblème qui représente la fierté du football américain en MLS.",
   date: "2024-04-16",

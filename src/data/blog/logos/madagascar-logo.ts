@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const madagascarLogoPost: BlogPost = {
-  id: 81,
+  id: 376,
   title: "**Logo Madagascar** : L'Histoire de l'Emblème des Barea [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale malgache : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football malgache.",
   date: "2025-04-27",

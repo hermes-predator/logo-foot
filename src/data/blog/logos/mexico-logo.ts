@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const mexicoLogoPost: BlogPost = {
-  id: 167,
+  id: 386,
   title: "Logo Mexique : Histoire et Évolution de l'Emblème du Football Mexicain [2024]",
   excerpt: "Découvrez l'histoire complète du logo Mexique : des origines à aujourd'hui, évolution et signification de l'emblème de l'équipe nationale mexicaine, symbole du football mexicain.",
   date: "2024-06-01",

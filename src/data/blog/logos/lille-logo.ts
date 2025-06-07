@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lillLogoPost: BlogPost = {
-  id: 43,
+  id: 362,
   title: "Logo LOSC : Histoire et Design de l'Emblème Lillois [2024]",
   excerpt: "Découvrez l'histoire complète du logo du LOSC : origines, évolution et symbolisme de l'emblème emblématique du club lillois à travers les années.",
   date: "2024-03-30",

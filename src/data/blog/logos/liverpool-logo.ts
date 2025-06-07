@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const liverpoolLogoPost: BlogPost = {
-  id: 49,
+  id: 366,
   title: "Logo Liverpool : Histoire et Design de l'Emblème des Reds [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Liverpool FC : origines, symbolisme et évolution de l'emblème mythique des Reds à travers les années.",
   date: "2024-03-31",

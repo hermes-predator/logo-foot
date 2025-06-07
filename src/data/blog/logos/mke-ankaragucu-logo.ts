@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const mkeAnkaragucuLogoPost: BlogPost = {
-  id: 574,
+  id: 392,
   title: "**Logo MKE Ankaragücü** : Histoire et Symbolisme de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo MKE Ankaragücü**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-22",

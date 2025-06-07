@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const manchesterCityLogoPost: BlogPost = {
-  id: 50,
+  id: 381,
   title: "Logo Manchester City : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Manchester City : origines, symbolisme et évolution de l'emblème emblématique des Citizens à travers les années.",
   date: "2024-03-31",

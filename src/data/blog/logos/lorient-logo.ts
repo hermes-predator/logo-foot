@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lorientLogoPost: BlogPost = {
-  id: 57,
+  id: 368,
   title: "Logo FC Lorient : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Lorient : des origines à aujourd'hui, l'évolution de l'emblème des Merlus et sa symbolique maritime.",
   date: "2024-04-07",
-  galleryImageId: 57,
+  galleryImageId: 368,
   content: `# L'Histoire Fascinante du **Logo Lorient**
 
 Le **logo lorient** est bien plus qu'un simple emblème sportif. Représentant l'identité visuelle d'un club emblématique de Bretagne, le **lorient logo** incarne l'âme maritime et la fierté d'une région passionnée de football.

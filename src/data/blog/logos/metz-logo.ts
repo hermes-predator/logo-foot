@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const metzLogoPost: BlogPost = {
-  id: 59,
+  id: 385,
   title: "Logo FC Metz : Histoire et Evolution de l'Emblème Grenat [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Metz : origines, évolution et symbolisme de l'emblème emblématique du club lorrain.",
   date: "2024-04-09",
-  galleryImageId: 59,
+  galleryImageId: 385,
   content: `# L'Histoire Passionnante du Logo FC Metz
 
 Le **logo fc metz** est bien plus qu'un simple emblème sportif. Véritable symbole de l'identité lorraine, il incarne l'histoire riche et les valeurs profondes d'un club historique du football français.

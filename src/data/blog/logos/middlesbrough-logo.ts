@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const middlesbroughLogoPost: BlogPost = {
-  id: 372,
+  id: 387,
   title: "**Logo Middlesbrough FC** : Histoire et Évolution de l'Emblème des Teessiders [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Middlesbrough**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

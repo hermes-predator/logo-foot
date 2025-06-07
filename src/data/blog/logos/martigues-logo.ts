@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const martiguesLogoPost: BlogPost = {
-  id: 118,
+  id: 383,
   title: "Logo Martigues : Histoire et Évolution de l'Emblème Provençal [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Martigues : origines, évolution et symbolisme de l'emblème emblématique du club provençal.",
   date: "2024-06-15",
-  galleryImageId: 118,
+  galleryImageId: 383,
   content: `# L'Histoire Fascinante du **logo martigues**
 
 Le **logo martigues** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions provençales. Ce **logo fc martigues** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football régional tout en restant fidèle à ses racines méditerranéennes.

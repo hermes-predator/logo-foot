@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const monacoLogoPost: BlogPost = {
-  id: 41,
+  id: 394,
   title: "Logo AS Monaco : Histoire du Blason Princier [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AS Monaco : origines, symbolisme et évolution de l'emblème mythique du club de la Principauté.",
   date: "2024-03-28",

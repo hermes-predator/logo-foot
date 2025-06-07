@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const majorqueLogoPost: BlogPost = {
-  id: 152,
+  id: 377,
   title: "Logo Majorque : Histoire et Design de l'Emblème Baléare [2024]",
   excerpt: "Découvrez l'histoire complète du logo Majorque : des origines à aujourd'hui, évolution et signification de l'emblème de ce club emblématique des Baléares.",
   date: "2024-04-30",

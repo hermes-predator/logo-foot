@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lithuaniaLogoPost: BlogPost = {
-  id: 75,
+  id: 365,
   title: "**Logo Lituanie** : L'Histoire de l'Emblème des Guerriers Baltes [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale lituanienne : des origines à aujourd'hui, évolution et signification de l'emblème du football balte.",
   date: "2025-04-27",

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const maliLogoPost: BlogPost = {
-  id: 165,
+  id: 379,
   title: "Logo Mali : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Mali : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles.",
   date: "2024-05-31",

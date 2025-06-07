@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const malagaLogoPost: BlogPost = {
-  id: 353, // ID unique pour ce nouvel article
+  id: 378, // ID unique pour ce nouvel article
   title: "Logo Malaga : Histoire et Évolution de l'Emblème Andalou [2024]",
   date: "2025-04-11",
   category: "logos",

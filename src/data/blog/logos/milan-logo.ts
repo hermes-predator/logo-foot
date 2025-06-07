@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const milanLogoPost: BlogPost = {
-  id: 53,
+  id: 388,
   title: "Logo AC Milan : Histoire et Évolution du Design Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo AC Milan : origines, évolution et signification de l'emblème mythique du club rossonero qui symbolise l'excellence italienne.",
   date: "2024-04-03",
-  galleryImageId: 53,
+  galleryImageId: 388,
   content: `# L'Histoire Fascinante du Logo AC Milan à Travers les Âges
 
 Dans les ruelles historiques de Milan, le **logo AC Milan** continue de faire vibrer les cœurs des tifosi. Depuis 1899, l'emblème du club le plus titré d'Europe raconte une histoire d'excellence, de passion et de grandeur italienne qui résonne bien au-delà des frontières de la Lombardie.

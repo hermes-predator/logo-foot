@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const maccabiTelAvivLogoPost: BlogPost = {
-  id: 361,
+  id: 375,
   title: "**Maccabi Tel Aviv Logo** : Histoire et Évolution de l'Emblème du Club Israélien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **maccabi tel aviv logo**, son symbolisme unique et son évolution à travers les décennies.",
   date: "2024-04-12", // Added the date property

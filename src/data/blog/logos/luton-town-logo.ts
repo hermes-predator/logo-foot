@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const lutonTownLogoPost: BlogPost = {
-  id: 370,
+  id: 372,
   title: "Logo Luton Town : Histoire et Évolution de l'Emblème des Hatters [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Luton Town, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",

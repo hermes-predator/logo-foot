@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const louisvilleCityLogoPost: BlogPost = {
-  id: 9235,
+  id: 370,
   title: "Louisville City Logo : Histoire et Design de l'Emblème du Club [2025]",
   excerpt: "Découvrez l'histoire et la signification du logo Louisville City FC, son évolution et sa symbolique. Analyse complète de l'emblème du club de football américain.",
   date: "2025-04-14",

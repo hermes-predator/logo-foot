@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ludogoretsLogoPost: BlogPost = {
-  id: 357, // ID unique pour ce nouvel article
+  id: 371, // ID unique pour ce nouvel article
   title: "Logo Ludogorets : Histoire et Évolution de l'Emblème Bulgare [2024]",
   date: "2025-04-11",
   category: "logos",

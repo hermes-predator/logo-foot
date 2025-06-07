@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const malmoFFLogoPost: BlogPost = {
-  id: 429,
+  id: 380,
   title: "**Logo Malmö FF** : Histoire et Évolution de l'Emblème Suédois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Malmö FF, son évolution et la symbolique derrière l'emblème du club le plus titré de Suède.",
   date: "2024-04-15",

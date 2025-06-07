@@ -6,7 +6,7 @@ export const ligue1Analysis: BlogPost = {
   title: "Stratégies de Marque en Ligue 1 : Analyse Marketing 2024",
   excerpt: "Étude approfondie des stratégies de marque des clubs de Ligue 1. Focus sur l'innovation digitale et le marketing international du football français.",
   date: "2024-02-14",
-  galleryImageId: 8,
+  galleryImageId: 24,
   content: `Marketing et Design en Ligue 1 : L'Innovation Française
 
 La Ligue 1 développe des stratégies de marque innovantes pour rayonner sur la scène internationale.

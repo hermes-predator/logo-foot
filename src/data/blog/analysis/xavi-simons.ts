@@ -5,7 +5,7 @@ export const xaviSimonsPost: BlogPost = {
   title: "Xavi Simons : Analyse Complète du Prodige Néerlandais du PSG et Leipzig [2024]",
   excerpt: "Découvrez tout sur Xavi Simons : son parcours, ses statistiques, son salaire, son style de jeu unique et son avenir prometteur. Portrait complet du talent qui impressionne l'Europe.",
   date: "2024-06-25",
-  galleryImageId: 115,
+  galleryImageId: 40,
   content: `# **Xavi Simons** : Le Joyau Néerlandais qui Brille en Europe
 
 **Xavi Simons** s'est imposé comme l'un des talents les plus prometteurs du football européen. À seulement 21 ans, ce milieu offensif néerlandais fascine par sa technique, sa vision du jeu et sa maturité précoce. Portrait d'un joueur dont le parcours atypique entre le **Barça**, le **PSG** et Leipzig intrigue autant qu'il impressionne.

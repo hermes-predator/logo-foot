@@ -6,7 +6,7 @@ export const colorTheoryPost: BlogPost = {
   title: "Couleurs Logo Foot : Guide Complet Design [2024]",
   excerpt: "Guide expert sur les couleurs des logos foot. Découvrez comment choisir les meilleures couleurs pour votre écusson de football professionnel.",
   date: "2024-03-15",
-  galleryImageId: 10,
+  galleryImageId: 9,
   content: `Guide Couleurs Logo Foot
 
 Les choix de couleurs impactent fortement l'efficacité d'un logo foot professionnel.

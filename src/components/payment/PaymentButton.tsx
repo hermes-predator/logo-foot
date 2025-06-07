@@ -58,7 +58,7 @@ const PaymentButton = () => {
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
               <ShoppingCart 
                 className="transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 drop-shadow-sm"
-                size={20}
+                size={24}
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">

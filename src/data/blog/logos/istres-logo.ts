@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const istresLogoPost: BlogPost = {
-  id: 439,
+  id: 323,
   title: "**Logo Istres FC** : Histoire et Evolution de l'Emblème Provençal [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Istres**, son évolution et la symbolique de cet emblème emblématique du football provençal.",
   date: "2024-04-18",

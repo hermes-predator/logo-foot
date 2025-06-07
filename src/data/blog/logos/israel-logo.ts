@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const israelLogoPost: BlogPost = {
-  id: 179,
+  id: 321,
   title: "Logo Israël : Histoire et Design de l'Emblème de la Sélection Nationale [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Israël : origines, évolution et signification de l'emblème officiel de la fédération israélienne de football.",
   date: "2024-05-20",

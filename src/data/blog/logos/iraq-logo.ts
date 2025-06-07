@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const iraqLogoPost: BlogPost = {
-  id: 833,
+  id: 319,
   title: "**Logo Iraq** : L'Histoire et le Symbolisme de l'Emblème du Football Irakien",
   date: '2025-04-26',
   category: 'national-logos',

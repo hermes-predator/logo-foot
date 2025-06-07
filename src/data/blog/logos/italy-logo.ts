@@ -1,13 +1,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const italyLogoPost: BlogPost = {
-  id: 87,
+  id: 325,
   title: "Logo Italie : Histoire et Évolution de l'Emblème Azzurri [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Italie, son évolution au fil du temps et la signification des symboles qui représentent l'une des sélections les plus titrées du football mondial.",
   date: "2024-05-14",
   category: 'national-logos',
   subCategory: 'national-logos', 
-  galleryImageId: 87,
+  galleryImageId: 325,
   content: `# Logo Italie : L'Histoire de l'Emblème des Azzurri
 
 Dans l'univers des emblèmes nationaux du football, le **logo Italie** se distingue par son élégance, son histoire riche et ses quatre étoiles symbolisant les triomphes en Coupe du Monde. Reconnaissable entre tous avec son bleu azur caractéristique et son design raffiné, cet écusson incarne l'excellence technique et la passion du calcio italien.

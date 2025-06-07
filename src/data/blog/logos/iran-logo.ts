@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const iranLogoPost: BlogPost = {
-  id: 831,
+  id: 318,
   title: "Logo Iran : Histoire et Symbolisme de l'Emblème du Football Iranien",
   date: '2025-04-26',
   category: 'national-logos',

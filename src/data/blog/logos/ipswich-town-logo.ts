@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ipswichTownLogoPost: BlogPost = {
-  id: 408,
+  id: 317,
   title: "Ipswich Town Logo : Histoire et Évolution de l'Emblème des Tractors Boys [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Ipswich Town : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais historique.",
   date: "2024-07-18",

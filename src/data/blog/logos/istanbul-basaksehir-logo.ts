@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const istanbulBasaksehirLogoPost: BlogPost = {
-  id: 345,
+  id: 322,
   title: "Logo Istanbul Basaksehir : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire complète du logo Istanbul Basaksehir : origines, évolution et signification de l'emblème du club turc qui a révolutionné le paysage footballistique d'Istanbul.",
   date: "2024-04-06",

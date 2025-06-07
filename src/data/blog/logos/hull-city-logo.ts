@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hullCityLogoPost: BlogPost = {
-  id: 168, // ID unique qui n'est pas déjà utilisé
+  id: 311, // ID unique qui n'est pas déjà utilisé
   title: "Logo Hull City : Histoire et Évolution de l'Emblème des Tigers [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Hull City, son évolution au fil des années et la signification de ses éléments distinctifs dans cette analyse complète.",
   date: "2024-06-07",

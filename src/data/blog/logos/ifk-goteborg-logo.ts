@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const ifkGoteborgLogoPost: BlogPost = {
-  id: 444,
+  id: 314,
   title: "**Göteborg Logo** : Histoire et Évolution de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **IFK Göteborg logo**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **logo IFK Göteborg** et de son évolution au fil des années.",
   date: "2024-04-22",

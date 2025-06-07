@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const interMiamiLogoPost: BlogPost = {
-  id: 85,
+  id: 315,
   title: "Logo Inter Miami : Histoire et Design de l'Emblème Rose [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Inter Miami : symbolisme, design et évolution de l'emblème rose distinctif du club de MLS fondé par David Beckham.",
   date: "2024-04-23",

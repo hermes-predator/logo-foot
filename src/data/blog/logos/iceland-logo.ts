@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const icelandLogoPost: BlogPost = {
-  id: 166,
+  id: 313,
   title: "**Logo Islande** : Histoire et Évolution de l'Emblème des Strákarnir okkar [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale islandaise : des origines à aujourd'hui, évolution et signification de cet emblème nordique.",
   date: "2024-05-29",

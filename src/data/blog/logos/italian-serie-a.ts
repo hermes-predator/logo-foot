@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const italianSerieAPost: BlogPost = {
-  id: 85,
+  id: 324,
   title: "Serie A Italienne : Histoire et Organisation du Championnat [2024]",
   excerpt: "Découvrez l'histoire fascinante de la Serie A italienne, son organisation actuelle, ses clubs emblématiques et son impact sur le football mondial.",
   date: "2024-04-21",
-  galleryImageId: 85,
+  galleryImageId: 324,
   content: `# **Serie A Italienne** : Histoire et Organisation du Plus Prestigieux Championnat d'Italie
 
 La **Serie A italienne** est universellement reconnue comme l'un des championnats de football les plus prestigieux au monde. Berceau de tactiques sophistiquées et de défenses de fer, la **Serie A Italie** a façonné l'histoire du football mondial tout en constituant la vitrine du **calcio italien**. Plongeons dans l'histoire fascinante et l'organisation actuelle du **championnat italien Serie A**.

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const irelandLogoPost: BlogPost = {
-  id: 57,
+  id: 320,
   title: "Logo Irlande : Histoire et Symbolisme de l'Emblème du Football Irlandais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Irlande : origines, évolution et signification de l'emblème qui représente la fierté du football irlandais.",
   date: "2024-04-14",

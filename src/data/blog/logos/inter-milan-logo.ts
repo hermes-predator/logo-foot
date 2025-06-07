@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const interMilanLogoPost: BlogPost = {
-  id: 54,
+  id: 316,
   title: "Logo Inter Milan : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'Inter Milan : origines, évolution et signification de l'emblème mythique du club nerazzurri.",
   date: "2024-04-04",
-  galleryImageId: 54,
+  galleryImageId: 316,
   content: `# L'Histoire Fascinante du **Logo Inter Milan**
 
 Le **logo inter milan** est bien plus qu'un simple emblème : c'est le symbole d'une institution légendaire du football italien et mondial. Au fil des décennies, le **inter milan logo** a évolué tout en conservant son essence nerazzurri distinctive qui fait sa renommée internationale.

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hungaryLogoPost: BlogPost = {
-  id: 159,
+  id: 312,
   title: "Logo Hongrie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Hongrie : des origines à aujourd'hui, évolution et signification de l'emblème du football hongrois.",
   date: "2024-05-25",

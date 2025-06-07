@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const monzaLogoPost: BlogPost = {
-  id: 153,
+  id: 397,
   title: "Logo Monza : Histoire et Design de l'Emblème Lombard [2024]",
   excerpt: "Découvrez l'histoire complète du logo Monza : origines, évolution et signification de l'emblème du club lombard récemment promu en Serie A.",
   date: "2024-06-30",
-  galleryImageId: 153,
+  galleryImageId: 397,
   content: `# L'Histoire Fascinante du **Logo Monza**
 
 Le **logo Monza** représente bien plus qu'un simple emblème : c'est le symbole d'identité d'un club historique du football italien qui incarne les valeurs et les traditions de la Lombardie. Plongeons dans l'histoire captivante de ce **monza logo** qui symbolise la fierté d'une ville entière.

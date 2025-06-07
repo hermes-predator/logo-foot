@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const montpellierLogoPost: BlogPost = {
-  id: 65,
+  id: 396,
   title: "Logo Montpellier HSC : Histoire et Évolution de l'Emblème Orange et Bleu [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Montpellier HSC : origines, évolution et symbolisme de l'écusson emblématique du club héraultais.",
   date: "2024-05-07",
-  galleryImageId: 65,
+  galleryImageId: 396,
   content: `# L'Histoire Fascinante du **Logo Montpellier**
 
 Le **logo montpellier** est bien plus qu'un simple emblème sportif, c'est le symbole d'identité d'un club profondément ancré dans sa région. Reconnaissable instantanément grâce à ses couleurs distinctives orange et bleu, le **montpellier logo** raconte l'histoire d'une équipe qui a su évoluer tout en restant fidèle à ses racines héraultaises.

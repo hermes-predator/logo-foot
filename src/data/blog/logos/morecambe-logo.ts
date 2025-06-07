@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const morecambeLogoPost: BlogPost = {
-  id: 429,
+  id: 398,
   title: "**Logo Morecambe FC** : Histoire et Design de l'Emblème des Shrimps [2024]",
   excerpt: "Découvrez l'histoire fascinante du **morecambe logo**, son évolution et la symbolique de cet emblème unique du football anglais.",
   date: "2025-04-18",

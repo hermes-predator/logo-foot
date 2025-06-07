@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const moroccoLogoPost: BlogPost = {
-  id: 79,
+  id: 400,
   title: "Le Logo du Maroc : Histoire et Symbolisme du Lion de l'Atlas",
   excerpt: "Découvrez l'évolution et la signification du logo de l'équipe nationale du Maroc de football, symbole de fierté et d'identité pour les Lions de l'Atlas.",
   date: "2024-03-08",
-  galleryImageId: 79,
+  galleryImageId: 400,
   content: `# Histoire et Symbolisme du **Logo Maroc**
 
 Le **logo Maroc** de football représente l'identité visuelle d'une des équipes les plus emblématiques du continent africain. Ce symbole, reconnaissable par sa forme distinctive et ses couleurs caractéristiques, incarne l'âme et les valeurs des Lions de l'Atlas.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nantesLogoPost: BlogPost = {
-  id: 46,
+  id: 404,
   title: "Logo FC Nantes : Histoire et Design du Mythique Canari [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Nantes : origines, évolution et symbolisme de l'emblème emblématique des Canaris.",
   date: "2024-03-31",

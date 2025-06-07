@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nancyLogoPost: BlogPost = {
-  id: 276,
+  id: 403,
   title: "Logo AS Nancy Lorraine : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo de l'AS Nancy Lorraine, ses symboles et sa signification. Analyse complète de l'emblème du club lorrain.",
   date: "2024-04-10",
-  galleryImageId: 276,
+  galleryImageId: 403,
   content: `# Logo AS Nancy Lorraine : Histoire et Évolution
 
 L'**AS Nancy Lorraine** possède une identité visuelle riche et emblématique qui reflète l'histoire et les valeurs de ce club historique du football français. Le **logo Nancy** est devenu au fil des décennies un symbole fort pour les supporters et un élément de fierté pour la ville.

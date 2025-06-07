@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const napoliLogoPost: BlogPost = {
-  id: 70,
+  id: 405,
   title: "Logo Napoli : Histoire de l'Emblème du SSC Napoli [2024]",
   excerpt: "Découvrez l'histoire complète du logo Napoli (SSC Napoli), son évolution et la symbolique derrière l'écusson de ce club emblématique du football italien.",
   date: "2024-05-14",
-  galleryImageId: 70,
+  galleryImageId: 405,
   content: `# L'Histoire Passionnante du **Logo Napoli**
 
 Le **logo Napoli** est bien plus qu'une simple identité visuelle pour les supporters du club italien. Cet emblème emblématique représente l'âme et l'histoire d'une ville entière, reflétant la passion napolitaine et l'héritage d'un des clubs les plus populaires d'Italie. Le **napoli logo** s'est imposé comme un symbole reconnaissable à travers le monde, évoquant immédiatement l'esprit combatif et la ferveur qui caractérisent le club parthénopéen.

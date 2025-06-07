@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const munich1860LogoPost: BlogPost = {
-  id: 468,
+  id: 401,
   title: "**Logo Munich 1860** : Histoire et Évolution [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo TSV Munich 1860**, un des clubs les plus anciens d'Allemagne. Plongez dans l'évolution de cet emblème historique du football allemand.",
   date: "2024-04-21",

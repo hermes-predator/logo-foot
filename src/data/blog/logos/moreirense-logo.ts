@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const moreirenseLogoPost: BlogPost = {
-  id: 433,
+  id: 399,
   title: "**Logo Moreirense** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Moreirense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",

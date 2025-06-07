@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nacBredaLogoPost: BlogPost = {
-  id: 9342,
+  id: 402,
   title: "**Logo NAC Breda** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **NAC Breda logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

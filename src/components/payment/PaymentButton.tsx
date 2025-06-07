@@ -58,7 +58,7 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-6 relative z-10">
               <ShoppingCart 
-                className="drop-shadow-sm flex-shrink-0"
+                className="drop-shadow-sm flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
                 size={18}
                 width={18}
                 height={18}
@@ -71,7 +71,7 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="drop-shadow-sm flex-shrink-0"
+                className="drop-shadow-sm flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1"
                 size={18}
                 width={18}
                 height={18}

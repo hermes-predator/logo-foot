@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const omLogoPost: BlogPost = {
-  id: 38,
+  id: 423,
   title: "Logo OM : Histoire et Évolution de l'Olympique de Marseille [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'OM : origines, signification et évolution de l'emblème de l'Olympique de Marseille à travers les années.",
   date: "2024-03-25",

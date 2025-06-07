@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const omUltrasPost: BlogPost = {
-  id: 408,
+  id: 424,
   title: "Ultras OM : Histoire et Culture des Groupes Ultras de Marseille [2024]",
   excerpt: "Découvrez l'histoire complète des Ultras OM : du virage sud aux commandos ultra, l'univers des supporters ultras de l'Olympique de Marseille, leur histoire, organisation et influence.",
   date: "2024-07-18",

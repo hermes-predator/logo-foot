@@ -1,11 +1,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nationsLeagueLogoPost: BlogPost = {
-  id: 150,
+  id: 407,
   title: "Logo Ligue des Nations : Histoire et Analyse de l'Emblème UEFA [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Ligue des Nations : origines, signification et évolution de l'emblème officiel de la compétition UEFA.",
   date: "2024-06-27",
-  galleryImageId: 150,
+  galleryImageId: 407,
   content: `# L'Histoire Fascinante du **logo Ligue des Nations**
 
 Le **logo Ligue des Nations** est devenu l'un des emblèmes les plus reconnaissables du football européen moderne. Créé pour représenter cette compétition novatrice lancée par l'UEFA en 2018, le **Ligue des Nations logo** incarne parfaitement les valeurs d'excellence et de compétitivité qui définissent ce tournoi international.

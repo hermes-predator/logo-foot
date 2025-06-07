@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const olympiakosLogoPost: BlogPost = {
-  id: 261,
+  id: 422,
   title: "Logo Olympiakos : Histoire et Évolution de l'Emblème Grec Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Olympiakos, son évolution à travers le temps et la signification des symboles qui composent l'emblème du club grec le plus titré.",
   date: "2024-05-22",

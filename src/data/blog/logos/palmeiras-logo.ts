@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const palmeirasLogoPost: BlogPost = {
-  id: 9,
+  id: 431,
   title: "Logo Palmeiras : Histoire et Évolution de l'Emblème Brésilien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Palmeiras : origines, évolution et signification de l'emblème emblématique du club brésilien.",
   date: "2025-04-09",

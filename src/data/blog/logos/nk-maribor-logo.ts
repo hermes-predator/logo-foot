@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nkMariborLogoPost: BlogPost = {
-  id: 365, // ID unique pour cet article
+  id: 418, // ID unique pour cet article
   title: "NK Maribor Logo : Histoire et Signification de l'Emblème Slovène [2024]",
   date: "2025-04-11",
   category: "logos",

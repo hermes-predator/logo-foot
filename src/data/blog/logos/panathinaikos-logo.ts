@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const panathinaikosLogoPost: BlogPost = {
-  id: 345,
+  id: 433,
   title: "Logo Panathinaikos : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
   excerpt: "Découvrez l'histoire complète et la signification du logo du Panathinaikos : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",

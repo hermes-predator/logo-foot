@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nationalTeamsPost: BlogPost = {
-  id: 59,
+  id: 406,
   title: "Les Logos des Équipes Nationales : Symboles et Identités",
   excerpt: "Analyse approfondie des logos des sélections nationales de football. Histoire, symbolisme et évolution des emblèmes qui représentent les nations du football.",
   date: "2024-02-26",
-  galleryImageId: 5,
+  galleryImageId: 406,
   content: `Les Logos des Équipes Nationales de Football
 
 Les emblèmes des équipes nationales sont des symboles puissants qui incarnent l'identité footballistique de chaque pays.

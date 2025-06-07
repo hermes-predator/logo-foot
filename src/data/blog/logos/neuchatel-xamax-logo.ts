@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const neuchatelXamaxLogoPost: BlogPost = {
-  id: 39,
+  id: 409,
   title: "Logo Neuchâtel Xamax : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Neuchâtel Xamax, son évolution au fil des années et la symbolique derrière cet emblème emblématique du football suisse.",
   date: "2024-04-15",

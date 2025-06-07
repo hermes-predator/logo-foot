@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const palermoLogoPost: BlogPost = {
-  id: 163, // ID unique qui n'est pas déjà utilisé
+  id: 430, // ID unique qui n'est pas déjà utilisé
   title: "Logo Palerme : Histoire et Évolution de l'Emblème Sicilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Palerme, son évolution au fil du temps et la signification des éléments qui composent l'identité visuelle du club sicilien.",
   date: "2024-06-02",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const orleansLogoPost: BlogPost = {
-  id: 277,
+  id: 426,
   title: "Logo AS Orléans : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo de l'AS Orléans, ses symboles et sa signification. Une analyse complète de l'emblème du club du Loiret.",
   date: "2024-04-12",
-  galleryImageId: 277,
+  galleryImageId: 426,
   content: `# **Logo AS Orléans** : Histoire et Évolution
 
 L'**AS Orléans logo** est bien plus qu'un simple emblème pour le club de football orléanais. Il représente l'identité visuelle d'une équipe ancrée dans l'histoire du football français et symbolise les valeurs et l'héritage de toute une région.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const paderbornLogoPost: BlogPost = {
-  id: 91,
+  id: 429,
   title: "Logo Paderborn : Histoire et Design de l'Emblème Allemand SC Paderborn 07 [2024]",
   excerpt: "Découvrez l'histoire complète du logo du SC Paderborn 07 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-11",

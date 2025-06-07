@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const orlandoCityLogoPost: BlogPost = {
-  id: 414,
+  id: 425,
   title: "**Logo Orlando City** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Orlando City**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

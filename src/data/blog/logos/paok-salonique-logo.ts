@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const paokSaloniqueLogoPost: BlogPost = {
-  id: 426,
+  id: 434,
   title: "**Logo PAOK Salonique** : Histoire et Symbolisme de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de PAOK Salonique, son évolution et la signification de cet emblème emblématique du football grec.",
   date: "2024-04-15",

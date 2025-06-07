@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const newYorkRedBullsLogoPost: BlogPost = {
-  id: 413,
+  id: 412,
   title: "**Logo New York Red Bulls** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo New York Red Bulls**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",

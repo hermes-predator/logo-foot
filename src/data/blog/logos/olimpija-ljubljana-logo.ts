@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const olimpijaLjubljanalogoPost: BlogPost = {
-  id: 32,
+  id: 421,
   title: "**Logo Olimpija Ljubljana** : Histoire et Symbolique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Olimpija Ljubljana**, son évolution et sa signification profonde dans le football slovène.",
   date: "2024-04-15",

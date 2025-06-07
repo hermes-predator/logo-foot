@@ -2,13 +2,13 @@
 import { BlogPost } from '../../../types/blog';
 
 export const paraguayLogoPost: BlogPost = {
-  id: 426,
+  id: 435,
   title: "**Logo Paraguay** : Histoire et Signification de l'Emblème de l'Albirroja [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale paraguayenne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-26",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 426,
+  galleryImageId: 435,
   content: `# L'Histoire Fascinante du **Logo Paraguay**
 
 Le **logo paraguay** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée de football, dont l'identité visuelle reflète la fierté et les traditions d'un peuple profondément attaché à ce sport. Le **paraguay logo** incarne l'esprit combatif et la détermination d'une équipe nationale qui a su marquer l'histoire du football sud-américain.

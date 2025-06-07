@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const panamaLogoPost: BlogPost = {
-  id: 835,
+  id: 432,
   title: "**Logo Panama** : L'Histoire et l'Évolution de l'Emblème des Canaleros [2024]",
   date: '2025-04-26',
   category: 'national-logos',

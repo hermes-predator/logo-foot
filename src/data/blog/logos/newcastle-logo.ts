@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const newcastleLogoPost: BlogPost = {
-  id: 59,
+  id: 413,
   title: "Logo Newcastle : L'Histoire des Magpies à Travers leur Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Newcastle United, un symbole d'identité et de fierté du Nord de l'Angleterre, de ses origines à aujourd'hui.",
   date: "2024-04-08",
-  galleryImageId: 59,
+  galleryImageId: 413,
   content: `# L'Histoire Fascinante du **Logo Newcastle United**
 
 Le **logo Newcastle** est bien plus qu'un simple emblème sportif - c'est le symbole d'une ville entière, d'une identité régionale forte et d'une passion footballistique qui traverse les générations. Cet écusson iconique aux couleurs noir et blanc raconte l'histoire riche d'un club profondément ancré dans le cœur du Nord-Est de l'Angleterre.

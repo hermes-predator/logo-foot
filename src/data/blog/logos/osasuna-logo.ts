@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const osasunaLogoPost: BlogPost = {
-  id: 160, // ID unique qui n'est pas déjà utilisé
+  id: 427, // ID unique qui n'est pas déjà utilisé
   title: "Logo Osasuna : Histoire et Design de l'Emblème du Club Navarrais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Osasuna : des origines à aujourd'hui, évolution et signification de l'emblème rouge du club emblématique de Pampelune.",
   date: "2024-05-27",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const norwichLogoPost: BlogPost = {
-  id: 99, // Using a unique ID that hasn't been used yet
+  id: 419, // Using a unique ID that hasn't been used yet
   title: "Logo Norwich : Histoire et Design de l'Emblème des Canaries [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Norwich City : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-17",
-  galleryImageId: 99,
+  galleryImageId: 419,
   content: `# L'Histoire Fascinante du **Logo Norwich**
 
 Le **norwich logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **logo norwich** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté dans l'est de l'Angleterre.

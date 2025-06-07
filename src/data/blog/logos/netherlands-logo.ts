@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const netherlandsLogoPost: BlogPost = {
-  id: 87, // Using a unique ID that's not already used
+  id: 408, // Using a unique ID that's not already used
   title: "Logo Pays-Bas : Histoire et Évolution de l'Emblème Oranje [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo des Pays-Bas : origines, évolution et symbolisme du célèbre lion orange qui représente la sélection néerlandaise de football.",
   date: "2024-05-30",

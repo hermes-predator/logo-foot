@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const niceLogoPost: BlogPost = {
-  id: 45,
+  id: 414,
   title: "Logo OGC Nice : Histoire et Design de l'Aigle Rouge et Noir [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'OGC Nice : origines, évolution et symbolisme de l'emblème emblématique du club azuréen.",
   date: "2024-03-31",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nimesLogoPost: BlogPost = {
-  id: 89,
+  id: 416,
   title: "Logo Nîmes : Histoire et Design de l'Emblème des Crocodiles [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Nîmes Olympique : évolution, signification et symbolisme de l'emblème emblématique du club gardois.",
   date: "2024-05-28",
-  galleryImageId: 89,
+  galleryImageId: 416,
   content: `# L'Histoire Fascinante du **Logo Nîmes**
 
 Le **logo nimes** est bien plus qu'un simple emblème sportif – c'est le symbole d'identité d'un club historique du football français. Reconnaissable par son crocodile caractéristique et ses couleurs rouge et blanc distinctives, le **nimes logo** incarne l'esprit et les valeurs d'une institution profondément ancrée dans le patrimoine sportif du sud de la France.

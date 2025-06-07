@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const niortLogoPost: BlogPost = {
-  id: 92, // Using a unique ID that isn't already used
+  id: 417, // Using a unique ID that isn't already used
   title: "Logo Niort : Histoire et Évolution de l'Emblème des Chamois [2024]",
   excerpt: "Découvrez l'histoire complète du logo des Chamois Niortais : origines, évolution et symbolisme de l'emblème emblématique du club deux-sévrien.",
   date: "2024-06-10",

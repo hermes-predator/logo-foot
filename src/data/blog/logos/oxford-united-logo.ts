@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const oxfordUnitedLogoPost: BlogPost = {
-  id: 404,
+  id: 428,
   title: "Oxford United FC Logo : Histoire et Évolution d'un Emblème Iconique",
   excerpt: "Découvrez l'histoire fascinante du logo Oxford United, son évolution à travers les années et l'importance de cet emblème pour le club. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",

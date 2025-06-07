@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const newEnglandRevolutionLogoPost: BlogPost = {
-  id: 564,
+  id: 410,
   title: "**New England Revolution Logo** : Histoire et Evolution de l'Emblème de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo New England Revolution**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",

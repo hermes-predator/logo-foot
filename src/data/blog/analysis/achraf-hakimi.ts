@@ -1,4 +1,3 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const achrafHakimiPost: BlogPost = {

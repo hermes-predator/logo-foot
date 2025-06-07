@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const usmAlgerLogoPost: BlogPost = {
-  id: 1004, // Nouvel ID unique
+  id: 1,
   title: "**Logo USM Alger** : Histoire et Évolution de l'Emblème du Club Algérien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo USM Alger**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
   date: "2024-04-16",
@@ -76,5 +76,5 @@ Le **logo usm alger** s'exprime sur de multiples supports :
   keywords: "usm alger logo, logo usm alger, logo png usm alger",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 1004
+  galleryImageId: 1
 };

@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const grasshopperLogoPost: BlogPost = {
-  id: 38,
+  id: 290,
   title: "Logo Grasshopper Club Zürich : Histoire et Symbolique de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Grasshopper Club Zürich, le club le plus titré de Suisse, et la signification de son emblème iconique.",
   date: "2024-04-15",

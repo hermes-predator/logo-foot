@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hondurasLogoPost: BlogPost = {
-  id: 834,
+  id: 307,
   title: "**Logo Honduras** : L'Histoire Fascinante de l'Emblème des Catrachos [2024]",
   date: '2025-04-26',
   category: 'national-logos',

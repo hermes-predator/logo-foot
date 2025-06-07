@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const huescaLogoPost: BlogPost = {
-  id: 348, // ID unique pour ce nouvel article
+  id: 310, // ID unique pour ce nouvel article
   title: "Logo SD Huesca : Histoire et Symbolisme de l'Emblème Aragonais",
   date: "2025-04-11",
   category: "logos",

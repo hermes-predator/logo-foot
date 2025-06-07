@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const greutherFurthLogoPost: BlogPost = {
-  id: 422,
+  id: 294,
   title: "**Logo Greuther Fürth** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Greuther Fürth**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",

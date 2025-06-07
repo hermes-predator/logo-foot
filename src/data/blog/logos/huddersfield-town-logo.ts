@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const huddersfieldTownLogoPost: BlogPost = {
-  id: 365,
+  id: 309,
   title: "**Huddersfield Town Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Huddersfield Town**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",

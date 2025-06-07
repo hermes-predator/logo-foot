@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const gremioLogoPost: BlogPost = {
-  id: 438,
+  id: 292,
   title: "**Grêmio Logo** : Histoire et Symbolisme de l'Emblème Gaúcho [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Grêmio**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Grêmio logo PNG**.",
   date: "2024-04-22",

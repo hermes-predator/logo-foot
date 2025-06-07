@@ -1,7 +1,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const houstonDynamoLogoPost: BlogPost = {
-  id: 41,
+  id: 308,
   title: "**Logo Houston Dynamo** : Histoire et Evolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **houston dynamo logo**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",

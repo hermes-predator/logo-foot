@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const heidenheimLogoPost: BlogPost = {
-  id: 68,
+  id: 302,
   title: "Logo FC Heidenheim : Histoire et Design du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo FC Heidenheim, l'emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-24",

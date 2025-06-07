@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hajdukSplitLogoPost: BlogPost = {
-  id: 190, // ID unique qui n'est pas déjà utilisé
+  id: 298, // ID unique qui n'est pas déjà utilisé
   title: "Hajduk Split Logo : Histoire et Évolution de l'Emblème Croate [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Hajduk Split : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de football croate.",
   date: "2024-06-20",
-  galleryImageId: 190,
+  galleryImageId: 298,
   content: `# L'Histoire Fascinante du **Hajduk Split Logo**
 
 Le **hajduk split logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale et culturelle qui transcende le cadre du football pour devenir une véritable icône croate. Plongeons dans l'histoire riche et passionnante de ce **hajduk split logo png** qui incarne la fierté d'une ville entière et d'une nation.

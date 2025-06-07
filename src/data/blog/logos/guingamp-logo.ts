@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const guingampLogoPost: BlogPost = {
-  id: 113,
+  id: 297,
   title: "Logo Guingamp : Histoire et Design de l'Emblème Breton [2024]",
   excerpt: "Découvrez l'histoire complète du logo Guingamp : origines, évolution et signification de l'emblème emblématique du club breton de l'En Avant.",
   date: "2024-06-04",
-  galleryImageId: 113,
+  galleryImageId: 297,
   content: `# L'Histoire Fascinante du **Logo Guingamp**
 
 Le **logo guingamp** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions bretonnes. Ce **logo en avant guingamp** emblématique représente le parcours remarquable d'une équipe qui a su gravir les échelons du football français tout en restant fidèle à ses racines.

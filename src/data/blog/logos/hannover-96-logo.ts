@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hannover96LogoPost: BlogPost = {
-  id: 424,
+  id: 300,
   title: "**Logo Hannover 96** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Hannover 96**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",

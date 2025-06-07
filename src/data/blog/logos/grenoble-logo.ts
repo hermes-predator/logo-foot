@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const grenobleLogoPost: BlogPost = {
-  id: 63,
+  id: 293,
   title: "Logo Grenoble : Histoire et Design de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Grenoble : origines, évolution et symbolisme de l'emblème emblématique du club isérois.",
   date: "2024-04-16",
-  galleryImageId: 63,
+  galleryImageId: 293,
   content: `# L'Histoire Passionnante du **Logo Grenoble**
 
 Le **logo grenoble** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club profondément ancré dans son territoire. Plongeons dans l'univers fascinant du **logos grenoble**, un écusson qui raconte l'histoire d'un club emblématique de l'Isère.

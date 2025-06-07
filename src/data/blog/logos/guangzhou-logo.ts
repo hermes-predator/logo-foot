@@ -2,7 +2,7 @@
 import { BlogPost } from "../../../types/blog";
 
 export const guangzhouLogoPost: BlogPost = {
-  id: 30,
+  id: 295,
   title: "**Logo Guangzhou FC** : Histoire et Évolution de l'Emblème Chinois [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Guangzhou**, un symbole emblématique du football chinois qui incarne la tradition et la modernité.",
   date: "2024-04-22",

@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const glasgowRangersLogoPost: BlogPost = {
-  id: 72,
+  id: 286,
   title: "Logo Glasgow Rangers : Histoire et Evolution de l'Emblème Écossais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Glasgow Rangers : origines, évolution et symbolisme de l'emblème emblématique du club écossais le plus titré.",
   date: "2024-05-20",
-  galleryImageId: 72,
+  galleryImageId: 286,
   content: `# Logo Glasgow Rangers : L'Histoire et le Design d'un Emblème Légendaire
 
 Le **logo Glasgow Rangers** représente l'un des clubs les plus titrés et historiques d'Écosse. Cet emblème, symbole d'une institution fondée en 1872, raconte l'histoire d'un géant du football britannique et européen dont l'identité visuelle s'est forgée à travers près de 150 ans d'histoire.

@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const harrogateTownLogoPost: BlogPost = {
-  id: 568,
+  id: 301,
   title: "**Logo Harrogate Town** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Harrogate Town FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Harrogate Town à travers les années.",
   date: "2024-04-20",

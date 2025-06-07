@@ -2,11 +2,11 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hellasVeronaLogoPost: BlogPost = {
-  id: 114,
+  id: 303,
   title: "Logo Hellas Verona : Histoire et Design de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Hellas Verona : origines, évolution et signification de l'emblème emblématique du club italien de Série A.",
   date: "2024-06-05",
-  galleryImageId: 114,
+  galleryImageId: 303,
   content: `# L'Histoire Fascinante du **Logo Hellas Verona**
 
 Le **hellas verona logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions du nord de l'Italie. Ce **hellas verona fc logo** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football italien tout en restant fidèle à ses racines.

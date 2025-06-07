@@ -1,8 +1,7 @@
-
 import { BlogPost } from '../../../types/blog';
 
 export const goAheadEaglesLogoPost: BlogPost = {
-  id: 52,
+  id: 287,
   title: "**Logo Go Ahead Eagles** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Go Ahead Eagles logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",

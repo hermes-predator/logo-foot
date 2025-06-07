@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hambourgSvLogoPost: BlogPost = {
-  id: 69,
+  id: 299,
   title: "Logo Hambourg SV : Histoire et Design du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo Hambourg SV, emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson historique.",
   date: "2024-04-25",

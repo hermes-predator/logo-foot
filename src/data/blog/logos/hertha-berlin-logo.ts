@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const herthaBerlinLogoPost: BlogPost = {
-  id: 425,
+  id: 305,
   title: "**Logo Hertha Berlin** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Hertha Berlin**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",

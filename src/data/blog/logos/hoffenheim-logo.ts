@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const hoffenheimLogoPost: BlogPost = {
-  id: 65,
+  id: 306,
   title: "Logo TSG Hoffenheim : Histoire et Évolution du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo TSG Hoffenheim, emblème moderne du football allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-18",

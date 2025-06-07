@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const goztepeLogoPost: BlogPost = {
-  id: 573,
+  id: 48,
   title: "**Göztepe Logo** : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire passionnante du **göztepe logo**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",

@@ -1,7 +1,8 @@
+
 import { BlogPost } from '../../../types/blog';
 
 export const frenchClubsPost: BlogPost = {
-  id: 18,
+  id: 44,
   title: "Histoire des Logos du Football Français : PSG, OM, OL et Plus [2024]",
   excerpt: "Découvrez l'histoire des logos du football français. Des blasons historiques aux designs modernes, explorez l'évolution des écussons de la Ligue 1.",
   date: "2024-03-01",

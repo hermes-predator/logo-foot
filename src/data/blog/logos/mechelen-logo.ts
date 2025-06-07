@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const mechelenLogoPost: BlogPost = {
-  id: 9332,
+  id: 45,
   title: "**Logo Mechelen** : Histoire et Design du KV Mechelen [2024]",
   excerpt: "Découvrez l'histoire fascinante du **KV Mechelen logo** et son évolution à travers les années. Un emblème qui symbolise la fierté du football belge.",
   date: "2024-04-19",

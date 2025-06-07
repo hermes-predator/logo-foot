@@ -2,7 +2,7 @@
 import { BlogPost } from '../../../types/blog';
 
 export const nationalTeamsPost: BlogPost = {
-  id: 5,
+  id: 43,
   title: "Les Logos des Équipes Nationales : Symboles et Identités",
   excerpt: "Analyse approfondie des logos des sélections nationales de football. Histoire, symbolisme et évolution des emblèmes qui représentent les nations du football.",
   date: "2024-02-26",

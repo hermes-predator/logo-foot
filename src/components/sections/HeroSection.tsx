@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -172,20 +171,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <span className="text-sm font-medium text-gray-700">Paiement Sécurisé</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/60 backdrop-blur-sm border border-gray-200/60 shadow-sm transition-all duration-300 hover:bg-white/90 hover:shadow-md hover:-translate-y-1">
-            <Download className="w-5 w-5 text-green-600" />
+            <Download className="w-5 h-5 text-green-600" />
             <span className="text-sm font-medium text-gray-700">Téléchargement Instantané</span>
           </div>
         </div>
 
         {/* CTA buttons - Spacing amélioré */}
-<button 
-  className="group flex items-center gap-3 px-16 py-8 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
->
-  <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-  <Folder size={28} className="mr-2 text-gray-800 transition-colors duration-300" />
-  <span className="relative z-10 font-bold text-[22px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
-</button>
-
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
+          <Dialog>
+            <DialogTrigger asChild>
+              <button 
+                className="group flex items-center gap-3 px-16 py-8 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
+                <Folder size={28} className="mr-2 text-gray-800 transition-colors duration-300" />
+                <span className="relative z-10 font-bold text-[22px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+              </button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader className="pb-0">
@@ -305,4 +306,3 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 };
 
 export default HeroSection;
-

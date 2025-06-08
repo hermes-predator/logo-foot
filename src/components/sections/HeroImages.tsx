@@ -7,10 +7,9 @@ const HeroImages = () => {
     <div className="grid md:grid-cols-2 gap-8 items-center">
       <div className="order-2 md:order-1">
         <VideoPlayer
-          src="/lovable-uploads/da6c4256-9645-4187-9378-9036eb2bea01.png"
-          videoSrc="/lovable-uploads/676cb646-fca3-4d6a-86ad-b4e909cb51bd.png"
-          alt="Aperçu du pack de logos de football"
-          className="rounded-xl shadow-2xl"
+          videoUrl="/lovable-uploads/676cb646-fca3-4d6a-86ad-b4e909cb51bd.png"
+          title="Aperçu du pack de logos de football"
+          country="Collection complète des clubs de football"
         />
       </div>
       <div className="order-1 md:order-2 space-y-6">

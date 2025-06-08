@@ -6,7 +6,7 @@ export const benficaLogoPost: BlogPost = {
   title: "Logo Benfica : Histoire et Symbolisme de l'Aigle Glorieux [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Benfica, son évolution au fil du temps et la signification de l'aigle emblématique qui représente fièrement le club portugais.",
   date: "2024-04-26",
-  galleryImageId: 66,
+  galleryImageId: 110,
   content: `# L'Histoire Fascinante du **Logo Benfica**
 
 Le **logo benfica** est bien plus qu'un simple emblème sportif : c'est une icône qui représente l'histoire, la tradition et l'excellence d'un club qui a marqué l'histoire du football européen. Dans cet article, nous explorons l'évolution et la signification du **benfica logo**, symbole légendaire du football portugais.

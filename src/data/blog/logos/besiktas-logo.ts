@@ -6,7 +6,7 @@ export const besiktasLogoPost: BlogPost = {
   title: "Logo Beşiktaş : Histoire et Design de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Beşiktaş : symbolisme, évolution et signification de l'emblème du club stambouliote, l'un des plus prestigieux de Turquie.",
   date: "2024-04-25",
-  galleryImageId: 86,
+  galleryImageId: 112,
   content: `# Histoire et Évolution du **Logo Beşiktaş** JK
 
 Parmi les logos emblématiques du football turc, celui de **Beşiktaş** occupe une place de choix. Cet article explore en détail l'histoire, le design et la symbolique de cet emblème qui représente l'un des clubs les plus populaires d'Istanbul et de Turquie.

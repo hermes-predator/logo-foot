@@ -15,7 +15,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Folder, ShoppingCart } from 'lucide-react';
-import Image from 'next/image';
 
 const HeroSection = ({ onScrollToPayment }: { onScrollToPayment: () => void }) => {
   return (
@@ -33,13 +32,12 @@ const HeroSection = ({ onScrollToPayment }: { onScrollToPayment: () => void }) =
 
         {/* Image mise en avant */}
         <div className="relative w-full max-w-3xl mx-auto mb-12 rounded-2xl overflow-hidden shadow-2xl">
-          <Image
+          <img
             src="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png"
             alt="Aperçu de la collection de logos de football"
+            className="w-full object-cover object-center"
             width={1200}
             height={600}
-            className="w-full object-cover object-center"
-            priority // Important pour le chargement initial
           />
         </div>
 

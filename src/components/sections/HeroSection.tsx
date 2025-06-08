@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Rocket } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -60,8 +61,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             <DialogTrigger asChild>
               <Button 
                 variant="outline" 
-                size="lg"
-                className="w-full sm:w-auto px-8 py-4 text-lg font-bold bg-gradient-to-r from-gray-50 to-white border-gray-200/80 hover:border-gray-300 hover:shadow-md relative overflow-hidden"
+                size="xl"
+                className="w-full sm:w-auto px-10 py-5 text-xl font-bold bg-gradient-to-r from-gray-50 to-white border-gray-200/80 hover:border-gray-300 hover:shadow-md relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
                 <span className="relative z-10 text-gray-800">Descriptif du ZIP</span>
@@ -110,8 +111,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
 
           <Button 
             onClick={onScrollToPayment}
-            size="lg"
-            className="w-full sm:w-auto px-8 py-4 text-lg font-bold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+            size="xl"
+            className="w-full sm:w-auto px-10 py-5 text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             <span className="relative z-10 text-white">Achat rapide (9€)</span>

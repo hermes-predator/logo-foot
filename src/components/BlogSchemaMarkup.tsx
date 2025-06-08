@@ -1,10 +1,10 @@
-
 import { BlogPost } from "../types/blog";
 import { BlogListSchema } from "./schema/BlogListSchema";
 import { EnhancedBlogPostSchema } from "./schema/EnhancedBlogPostSchema";
 import { FAQPageSchema } from "./schema/FAQPageSchema";
 import { extractFAQs } from "../utils/faqExtractor";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 interface BlogSchemaMarkupProps {
   post?: BlogPost;
@@ -21,6 +21,8 @@ const BlogSchemaMarkup = ({
   siteName = "Logo Foot",
   baseUrl = "https://logo-foot.com"
 }: BlogSchemaMarkupProps) => {
+  const location = useLocation();
+
   if (isBlogList) {
     const blogListSchema = BlogListSchema({ post });
     

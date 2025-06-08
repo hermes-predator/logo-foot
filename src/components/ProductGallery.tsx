@@ -49,7 +49,7 @@ const ProductGallery = () => {
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Logos des Clubs de Foot</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6">Plus de 8 600 logos de clubs de football uniformes, nommés et triés pars pays</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-6">Plus de 8 600 logos de clubs de football uniformes, nommés et triés par pays</p>
             
             <LazySection height="400px">
               <ClubGallery items={clubItems} isLoading={isLoading} />

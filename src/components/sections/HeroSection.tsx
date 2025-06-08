@@ -178,16 +178,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         </div>
 
         {/* CTA buttons - Spacing amélioré */}
-        <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
-          <Dialog>
-            <DialogTrigger asChild>
-              <button 
-                className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                <Folder size={24} className="mr-2 text-gray-800 transition-colors duration-300" />
-                <span className="relative z-10 font-bold text-[18px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
-              </button>
+<button 
+  className="group flex items-center gap-3 px-16 py-8 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+>
+  <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
+  <Folder size={28} className="mr-2 text-gray-800 transition-colors duration-300" />
+  <span className="relative z-10 font-bold text-[22px] text-gray-800 transition-colors duration-300">Descriptif du ZIP</span>
+</button>
+
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader className="pb-0">

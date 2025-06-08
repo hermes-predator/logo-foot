@@ -47,22 +47,22 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
   
   xml += '>\n';
   
-  // Pages statiques
+  // Pages statiques avec dates réalistes
   const staticPages = [
-    { url: 'https://logo-foot.com/', priority: '1.0', changefreq: 'weekly' },
-    { url: 'https://logo-foot.com/blog', priority: '0.8', changefreq: 'daily' },
-    { url: 'https://logo-foot.com/blog/category/logos', priority: '0.8', changefreq: 'weekly' },
-    { url: 'https://logo-foot.com/blog/category/technical', priority: '0.7', changefreq: 'weekly' },
-    { url: 'https://logo-foot.com/blog/category/history', priority: '0.7', changefreq: 'weekly' },
-    { url: 'https://logo-foot.com/blog/category/analysis', priority: '0.7', changefreq: 'weekly' },
-    { url: 'https://logo-foot.com/gallery/country/france', priority: '0.7', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/england', priority: '0.7', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/spain', priority: '0.7', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/italy', priority: '0.7', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/germany', priority: '0.7', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/netherlands', priority: '0.6', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/portugal', priority: '0.6', changefreq: 'monthly' },
-    { url: 'https://logo-foot.com/gallery/country/belgium', priority: '0.6', changefreq: 'monthly' },
+    { url: 'https://logo-foot.com/', priority: '1.0', changefreq: 'weekly', lastmod: today },
+    { url: 'https://logo-foot.com/blog', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { url: 'https://logo-foot.com/blog/category/logos', priority: '0.8', changefreq: 'weekly', lastmod: '2024-12-01' },
+    { url: 'https://logo-foot.com/blog/category/technical', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-15' },
+    { url: 'https://logo-foot.com/blog/category/history', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-10' },
+    { url: 'https://logo-foot.com/blog/category/analysis', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-20' },
+    { url: 'https://logo-foot.com/gallery/country/france', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/england', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/spain', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/italy', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/germany', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/netherlands', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/portugal', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://logo-foot.com/gallery/country/belgium', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
   ];
   
   // Ajouter les pages statiques
@@ -71,7 +71,7 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
     xml += `    <loc>${page.url}</loc>\n`;
     
     if (includeLastmod) {
-      xml += `    <lastmod>${today}</lastmod>\n`;
+      xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
     }
     
     xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
@@ -106,16 +106,14 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
     let changefreq = 'monthly';
     
     if (priorityCalculation) {
-      // Les articles récents ont une priorité plus élevée
       const postAge = new Date().getTime() - new Date(post.date).getTime();
-      const isRecent = postAge < 30 * 24 * 60 * 60 * 1000; // Moins de 30 jours
+      const isRecent = postAge < 30 * 24 * 60 * 60 * 1000;
       
       if (isRecent) {
         priority = '0.8';
         changefreq = 'weekly';
       }
       
-      // Les articles sur les grandes équipes/compétitions ont une priorité plus élevée
       const isHighPriority = 
         post.title.toLowerCase().includes('champions league') ||
         post.title.toLowerCase().includes('europa league') ||
@@ -164,7 +162,7 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
       xml += '    </image:image>\n';
     }
     
-    if (includeNewsTag && isPostRecent(post.date, 2)) { // Articles des 2 derniers jours
+    if (includeNewsTag && isPostRecent(post.date, 2)) {
       xml += '    <news:news>\n';
       xml += '      <news:publication>\n';
       xml += '        <news:name>Logo Foot</news:name>\n';
@@ -180,7 +178,6 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
   
   xml += '</urlset>';
   
-  // Compresser en minimisant l'espace
   if (compressOutput) {
     xml = xml.replace(/>\s+</g, '><').trim();
   }
@@ -201,4 +198,140 @@ const isPostRecent = (dateString: string, days: number = 2): boolean => {
 const formatDateForNews = (dateString: string): string => {
   const date = new Date(dateString);
   return date.toISOString();
+};
+
+// Nouvelle fonction pour générer des sitemaps spécialisés
+export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competitions' | 'countries' | 'categories') => {
+  const today = new Date().toISOString().split('T')[0];
+  
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+  xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml"\n';
+  xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
+  
+  switch (type) {
+    case 'main':
+      xml += generateMainPages(today);
+      break;
+    case 'clubs':
+      xml += generateClubPages(today);
+      break;
+    case 'competitions':
+      xml += generateCompetitionPages(today);
+      break;
+    case 'countries':
+      xml += generateCountryPages(today);
+      break;
+    case 'categories':
+      xml += generateCategoryPages(today);
+      break;
+  }
+  
+  xml += '</urlset>';
+  return xml;
+};
+
+// Fonctions utilitaires pour générer chaque type de sitemap
+const generateMainPages = (today: string) => {
+  return `  <url>
+    <loc>https://logo-foot.com/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/" />
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://logo-foot.com/" />
+  </url>
+  <url>
+    <loc>https://logo-foot.com/blog</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog" />
+  </url>
+  <url>
+    <loc>https://logo-foot.com/gallery</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+`;
+};
+
+const generateClubPages = (today: string) => {
+  // Récupérer les articles de clubs majeurs
+  const majorClubs = blogPosts.filter(post => 
+    post.title.toLowerCase().includes('real madrid') ||
+    post.title.toLowerCase().includes('barcelone') ||
+    post.title.toLowerCase().includes('psg') ||
+    post.title.toLowerCase().includes('marseille') ||
+    post.title.toLowerCase().includes('juventus') ||
+    post.title.toLowerCase().includes('manchester') ||
+    post.title.toLowerCase().includes('bayern') ||
+    post.title.toLowerCase().includes('liverpool') ||
+    post.title.toLowerCase().includes('arsenal')
+  ).slice(0, 20); // Limiter à 20 clubs majeurs
+  
+  return majorClubs.map(post => `  <url>
+    <loc>https://logo-foot.com/blog/${post.id}</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/${post.id}" />
+    <image:image>
+      <image:loc>https://logo-foot.com/blog-images/${post.id}.png</image:loc>
+      <image:title>${post.title.split(':')[0].trim()}</image:title>
+    </image:image>
+  </url>`).join('\n');
+};
+
+const generateCompetitionPages = (today: string) => {
+  const competitions = blogPosts.filter(post => 
+    post.category === 'competition-logos' ||
+    post.title.toLowerCase().includes('champions league') ||
+    post.title.toLowerCase().includes('europa league') ||
+    post.title.toLowerCase().includes('coupe du monde')
+  ).slice(0, 15);
+  
+  return competitions.map(post => `  <url>
+    <loc>https://logo-foot.com/blog/${post.id}</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/${post.id}" />
+  </url>`).join('\n');
+};
+
+const generateCountryPages = (today: string) => {
+  const countries = ['france', 'england', 'spain', 'italy', 'germany', 'netherlands', 'portugal', 'belgium'];
+  
+  return countries.map(country => `  <url>
+    <loc>https://logo-foot.com/gallery/country/${country}</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/${country}" />
+    <image:image>
+      <image:loc>https://logo-foot.com/country-images/${country}.png</image:loc>
+      <image:title>Logos des clubs ${country === 'france' ? 'français' : country === 'england' ? 'anglais' : country === 'spain' ? 'espagnols' : country}</image:title>
+    </image:image>
+  </url>`).join('\n');
+};
+
+const generateCategoryPages = (today: string) => {
+  const categories = [
+    { name: 'logos', priority: '0.8' },
+    { name: 'history', priority: '0.7' },
+    { name: 'technical', priority: '0.7' },
+    { name: 'analysis', priority: '0.7' },
+    { name: 'competition-logos', priority: '0.8' },
+    { name: 'pixel-art', priority: '0.6' }
+  ];
+  
+  return categories.map(cat => `  <url>
+    <loc>https://logo-foot.com/blog/category/${cat.name}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${cat.priority}</priority>
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/${cat.name}" />
+  </url>`).join('\n');
 };

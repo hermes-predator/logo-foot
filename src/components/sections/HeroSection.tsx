@@ -242,7 +242,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   const returnUrl = `${window.location.origin}/payment-success`;
                   window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                 }}
-                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-16 py-8 h-auto relative group overflow-hidden"
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-10 py-6 h-auto relative group overflow-hidden"
               >
                 {/* Outer glow animation - Améliorée */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" 

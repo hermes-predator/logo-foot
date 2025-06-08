@@ -8,7 +8,7 @@ export const angolaLogoPost: BlogPost = {
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 446,
+  galleryImageId: 73,
   content: `# L'Histoire Passionnante du **Logo Angola**
 
 Le **logo angola** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation fière dont l'histoire footballistique reflète la renaissance d'un pays. Le **angola logo** incarne la détermination et les aspirations d'une équipe nationale qui s'est forgée une identité unique sur le continent africain.

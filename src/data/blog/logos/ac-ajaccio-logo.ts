@@ -6,7 +6,7 @@ export const acAjaccioLogoPost: BlogPost = {
   title: "Logo AC Ajaccio : Histoire et Évolution de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AC Ajaccio : origines, évolution et symbolisme de l'emblème emblématique du club corse.",
   date: "2024-06-09",
-  galleryImageId: 91,
+  galleryImageId: 47,
   content: `# L'Histoire Fascinante du **AC Ajaccio Logo**
 
 Le **logo AC Ajaccio** est bien plus qu'un simple emblème sportif : c'est le symbole d'une identité insulaire forte et d'une passion footballistique ancrée dans le cœur de la Corse. Ce **ac ajaccio logo** représente l'histoire d'un club qui incarne fièrement les valeurs et les traditions de l'île de Beauté.

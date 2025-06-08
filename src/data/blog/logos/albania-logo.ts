@@ -7,7 +7,7 @@ export const albaniaLogoPost: BlogPost = {
   date: "2024-07-20",
   category: "national-logos", // Changed from "logos"
   subCategory: "national-logos", // Kept the same
-  galleryImageId: 202,
+  galleryImageId: 60,
   keywords: "logo albanie, albanie foot logo, albanie logo, logo albanie foot, albanie logo foot, logo albanie png, logo foot albanie, emblème Albanie, écusson Albanie football, FSHF logo",
   content: `
 # L'Histoire Fascinante du **Logo Albanie** : Symbole d'une Nation

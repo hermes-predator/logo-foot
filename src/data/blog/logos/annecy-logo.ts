@@ -6,7 +6,7 @@ export const annecyLogoPost: BlogPost = {
   title: "Logo Annecy : Histoire et Évolution de l'Emblème du FC Annecy [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Annecy : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club haut-savoyard.",
   date: "2024-04-22",
-  galleryImageId: 84,
+  galleryImageId: 74,
   content: `# L'Histoire Fascinante du **Logo Annecy**
 
 Le **logo annecy** représente bien plus qu'un simple emblème sportif : c'est un symbole identitaire fort qui incarne l'histoire et les valeurs d'un club profondément ancré dans son territoire alpin. Le **annecy logo** est le reflet visuel d'une institution sportive qui a su évoluer tout en restant fidèle à ses racines haut-savoyardes.

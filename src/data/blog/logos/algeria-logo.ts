@@ -5,7 +5,7 @@ export const algeriaLogoPost: BlogPost = {
   title: "Logo Algérie : Histoire et Évolution de l'Emblème des Fennecs [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Algérie : des origines à aujourd'hui, évolution et signification de l'emblème des Fennecs.",
   date: "2024-06-02", // Using a recent date
-  galleryImageId: 89, // Using an ID for the gallery image
+  galleryImageId: 61, // Using an ID for the gallery image
   content: `# L'Histoire Fascinante du **Logo Algérie**
 
 Le **logo algerie** est bien plus qu'un simple emblème sportif : c'est un symbole national qui représente la fierté, l'unité et la passion d'un peuple entier pour le football. Reconnaissable entre mille avec son fennec emblématique et ses couleurs vert et blanc caractéristiques, cet écusson incarne l'identité footballistique d'une nation aux riches traditions sportives.

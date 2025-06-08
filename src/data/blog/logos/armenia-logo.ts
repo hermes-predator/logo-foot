@@ -8,7 +8,7 @@ export const armeniaLogoPost: BlogPost = {
   date: "2024-07-01",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 431,
+  galleryImageId: 79,
   content: `# L'Histoire du **Logo Arménie** : Un Symbole d'Identité Nationale
 
 Le **logo armenie** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation fière de son héritage et déterminée à briller sur la scène footballistique internationale. À travers son histoire, le **armenie logo** a évolué pour devenir un puissant symbole qui unit les supporters autour des valeurs et des traditions du football arménien.

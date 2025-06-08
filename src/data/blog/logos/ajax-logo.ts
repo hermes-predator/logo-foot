@@ -6,7 +6,7 @@ export const ajaxLogoPost: BlogPost = {
   title: "Logo Ajax Amsterdam : Histoire et Symbolisme [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Ajax Amsterdam, son évolution au fil des années et la signification du célèbre portrait du héros grec Ajax.",
   date: "2024-05-01",
-  galleryImageId: 68,
+  galleryImageId: 51,
   content: `# L'Histoire Passionnante du **Logo Ajax Amsterdam**
 
 Le **logo ajax** est bien plus qu'un simple emblème : c'est une icône légendaire qui représente l'excellence, la tradition et la grandeur de l'un des clubs les plus titrés du football néerlandais. Plongeons dans l'histoire fascinante de ce **ajax amsterdam logo** qui est devenu un symbole universel du football d'élite européen.

@@ -180,7 +180,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className="group flex items-center gap-3 px-8 py-8 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
+                className="group flex items-center gap-3 px-10 py-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
                 <Folder size={28} className="mr-2 text-gray-800 transition-colors duration-300" />

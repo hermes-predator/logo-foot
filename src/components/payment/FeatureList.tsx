@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck, Plus } from 'lucide-react';
 
@@ -11,7 +10,7 @@ interface FeatureProps {
 }
 
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
-  const iconSize = Icon === Folder ? "h-4 w-4" : "h-4.5 w-4.5";
+  const iconSize = Icon === Folder ? "h-3.5 w-3.5" : "h-4.5 w-4.5";
   
   return (
     <div className="relative flex items-center gap-4 text-gray-800 p-2.5 rounded-lg">

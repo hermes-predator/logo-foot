@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder, Cloud } from 'lucide-react';
@@ -70,14 +71,14 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <SparkleEffects isHovered={isHovered} />
           <RecentBuyersBadge count={recentBuyers} />
           
-          <div className="mb-3 sm:mb-4 relative z-10 mt-0">
+          <div className="mb-2 relative z-10 mt-0">
             <div className="flex items-center gap-2">
               <h3 className={`${isSmallMobile ? "text-lg" : isMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'}`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
             </div>
             <p className={`text-gray-600 mt-0 ${isSmallMobile ? "text-xs" : isMobile ? "text-sm" : "font-medium"} transition-colors duration-500 ${isHovered ? 'text-gray-700' : 'text-gray-600'}`}>La plus grande collection de logos de football en haute qualité</p>
           
             {/* Google Drive Badge et bouton œil ensemble */}
-            <div className="mt-2 flex items-center gap-2">
+            <div className="mt-1.5 flex items-center gap-2">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

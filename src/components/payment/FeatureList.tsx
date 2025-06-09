@@ -10,12 +10,10 @@ interface FeatureProps {
 }
 
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
-  const iconSize = Icon === Folder ? "h-3.5 w-3.5" : "h-4.5 w-4.5";
-  
   return (
     <div className="relative flex items-center gap-4 text-gray-800 p-2.5 rounded-lg">
       <div className={`relative z-10 p-2 rounded-full ${className || 'bg-blue-100'}`}>
-        <Icon className={`${iconSize} ${iconColor || 'text-blue-600'}`} />
+        <Icon className={`h-4.5 w-4.5 ${iconColor || 'text-blue-600'}`} />
       </div>
       <div className="relative z-10">
         <span className="text-[15px] font-semibold">{text}</span>

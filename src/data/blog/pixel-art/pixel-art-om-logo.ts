@@ -5,6 +5,7 @@ export const pixelArtOMLogoPost: BlogPost = {
   id: 612,
   title: "**Pixel Art Logo Foot Marseille** : Guide Complet & Histoire [2024]",
   date: "2025-04-12",
+  galleryImageId: 612,
   category: "pixel-art",
   subCategory: "team-pixel-art",
   excerpt: "Découvrez l'art de créer un **pixel art foot OM** authentique. Guide détaillé pour capturer l'essence phocéenne du club marseillais en format pixellisé.",

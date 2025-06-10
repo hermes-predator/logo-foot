@@ -5,6 +5,7 @@ export const pixelArtRealMadridLogoPost: BlogPost = {
   id: 613,
   title: "**Pixel Art Logo Real Madrid** : Guide Complet & Histoire [2024]",
   date: "2025-04-12",
+  galleryImageId: 613,
   category: "pixel-art",
   subCategory: "team-pixel-art",
   excerpt: "Découvrez l'art de créer un **pixel art logo foot real madrid** authentique. Guide détaillé pour capturer l'essence royale du club espagnol en format pixellisé.",

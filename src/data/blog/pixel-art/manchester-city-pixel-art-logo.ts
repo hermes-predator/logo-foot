@@ -5,6 +5,7 @@ export const manchesterCityPixelArtLogoPost: BlogPost = {
   id: 610,
   title: "**Pixel Art Logo Foot Manchester City** : Guide Complet de Création & Signification [2024]",
   date: "2025-04-12",
+  galleryImageId: 610,
   category: "pixel-art",
   subCategory: "team-pixel-art",
   excerpt: "Découvrez l'art de créer un **pixel art logo foot manchester city** unique. Guide détaillé pour transformer l'emblème des Citizens en chef-d'œuvre pixellisé reconnaissable.",

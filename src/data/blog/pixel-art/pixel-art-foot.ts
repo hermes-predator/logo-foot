@@ -5,6 +5,7 @@ export const pixelArtFootGeneralPost: BlogPost = {
   id: 611, // ID unique pour ce nouvel article
   title: "Guide Pixel Art Foot: Créations Rétro de Joueurs & Équipes [2024]",
   date: "2025-04-12",
+  galleryImageId: 611,
   category: "pixel-art",
   excerpt: "Découvrez comment créer de superbes représentations en **pixel art foot** des joueurs et équipes de football. Notre guide complet vous montre les techniques, astuces et outils pour réaliser des créations rétro stylisées des stars du ballon rond.",
   content: `# Guide Complet du **Pixel Art Foot** : L'Art de Pixelliser le Football

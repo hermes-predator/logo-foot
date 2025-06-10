@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck, Plus } from 'lucide-react';
 
@@ -13,7 +12,7 @@ interface FeatureProps {
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
     <div className="relative flex items-center gap-4 text-gray-800 p-2.5 rounded-lg">
-      <div className={`relative z-10 p-3 rounded-full ${className || 'bg-blue-100'}`}>
+      <div className={`relative z-10 p-2.5 rounded-full ${className || 'bg-blue-100'}`}>
         <Icon className={`h-4 w-4 ${iconColor || 'text-blue-600'}`} />
       </div>
       <div className="relative z-10">

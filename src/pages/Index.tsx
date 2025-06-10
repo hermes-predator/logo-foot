@@ -1,3 +1,4 @@
+
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
@@ -17,7 +18,7 @@ const Index = () => {
     paymentSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Création des données structurées pour la page d'accueil
+  // Création des données structurées optimisées pour la page d'accueil
   const localBusinessData = LocalBusinessSchema({});
   const productData = ProductSchema({
     name: "Pack Complet de Logos de Football",
@@ -26,7 +27,7 @@ const Index = () => {
     price: "29.90"
   });
 
-  // Meta description dynamique mise à jour
+  // Meta description optimisée
   const metaDescription = "Recevez +8600 logo club de foot en un fichier parfaitement organisé par pays. Collection complète de logo des équipes de foot du monde entier.";
 
   // Protection anti-copie au niveau de la page entière
@@ -43,7 +44,6 @@ const Index = () => {
       }
     };
 
-    // Désactiver le clic droit global sur les images et vidéos
     const handleContextMenu = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (
@@ -56,7 +56,6 @@ const Index = () => {
       }
     };
 
-    // Empêcher la sélection du texte sur certains éléments
     const handleSelectStart = (e: Event) => {
       const target = e.target as HTMLElement;
       if (
@@ -85,7 +84,6 @@ const Index = () => {
     const idleCallback = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
     
     const handleIdleWork = () => {
-      // Précharger les ressources importantes mais non critiques pour l'affichage initial
       const prefetchLinks = [
         '/lovable-uploads/df5bc77f-e9a3-4fd7-b383-29dfce99bcd3.png',
         '/frontcloud-football.zip'
@@ -113,17 +111,44 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Helmet>
-        {/* Meta tags for performance */}
+        {/* Meta tags optimisées pour éviter les doublons */}
         <meta name="description" content={metaDescription} />
         <meta property="og:description" content={metaDescription} />
         <meta name="twitter:description" content={metaDescription} />
+        
+        {/* Canonical URL absolue */}
+        <link rel="canonical" href="https://logo-foot.com/" />
+        
+        {/* Performance hints */}
         <link rel="preconnect" href="https://logo-foot.com" />
         <link rel="dns-prefetch" href="https://logo-foot.com" />
-        
-        {/* Resource hints */}
         <link rel="preload" href="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" as="image" />
         
-        {/* Données structurées améliorées */}
+        {/* Données structurées spécifiques à la page d'accueil */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://logo-foot.com/#webpage",
+            "url": "https://logo-foot.com/",
+            "name": "Logo Foot - Collection de Logos de Football",
+            "description": metaDescription,
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://logo-foot.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://logo-foot.com/og-image.png"
+            },
+            "mainEntity": {
+              "@type": "Product",
+              "name": "Pack Complet de Logos de Football",
+              "description": "Collection de plus de 8600 logos de clubs de football"
+            }
+          })}
+        </script>
+        
         <script type="application/ld+json">
           {JSON.stringify(localBusinessData)}
         </script>
@@ -134,14 +159,12 @@ const Index = () => {
       
       <main>
         <div className="container mx-auto">
-          {/* HeroSection is critical and remains eagerly loaded */}
           <div className="pb-0">
             <HeroSection 
               onScrollToPayment={scrollToPayment} 
             />
           </div>
           
-          {/* Lazy load non-critical components with suspense fallbacks */}
           <div className="pt-2">
             <Suspense fallback={<Skeleton className="w-full h-96 rounded-lg" />}>
               <LazyProductGallery />

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -24,7 +23,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Pierre M.",
-    role: "Développeur",
+    role: "Community Manager",
     content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé. Merci !",
     rating: 5
   },

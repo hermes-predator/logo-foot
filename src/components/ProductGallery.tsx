@@ -61,7 +61,7 @@ const ProductGallery = () => {
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div className="relative">
             {/* Badge flottant discret */}
-            <div className="absolute top-2 right-0 z-10 transform translate-x-2 translate-y-2">
+            <div className="absolute top-2 right-0 z-10 transform translate-x-0 translate-y-2">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 animate-[fadeIn_0.8s_ease-out_2s_both]">
                 <Eye className="w-3 h-3 opacity-70" />
                 <span className="font-medium">Survolez les dossiers</span>

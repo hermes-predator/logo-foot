@@ -7,15 +7,13 @@ const ContactForm = () => {
       {/* En-tête avec email de contact et informations sur les commandes combinés */}
       <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-t-lg rounded-br-none p-4 border border-gray-200 border-b-0">
         <h3 className="font-medium text-xl text-gray-900 mb-2 flex items-center gap-2">
-          <div className="bg-blue-100 rounded-md p-3 shadow-sm">
+          <div className="bg-blue-100 rounded-md p-3 shadow-sm flex items-center gap-2">
             <Send className="w-7 h-7 text-blue-600" />
+            <MessageCircle className="w-7 h-7 text-blue-600" />
           </div>
-          <div className="flex items-center gap-2 ml-2">
-            <MessageCircle className="w-5 h-5 text-blue-600" />
-            <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-xl">
-              contact@logo-foot.com
-            </a>
-          </div>
+          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold ml-2 transition-colors duration-300 text-xl">
+            contact@logo-foot.com
+          </a>
         </h3>
         
         <div className="pt-2">

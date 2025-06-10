@@ -1,136 +1,141 @@
 
-import React, { useEffect, useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { useSearchParams } from 'react-router-dom';
+import Footer from '../components/Footer';
+import BlogHeader from '../components/blog/BlogHeader';
+import BlogCategorySelector from '../components/blog/BlogCategorySelector';
+import BlogContent from '../components/blog/BlogContent';
+import { BlogListSchema } from '../components/schema/BlogListSchema';
+import { useDebugBlog } from '../hooks/useDebugBlog';
 import { useBlogPosts } from '../hooks/useBlogPosts';
 import { useBlogCategories } from '../hooks/useBlogCategories';
-import { usePagination } from '../hooks/usePagination';
 import { usePageTransition } from '../hooks/usePageTransition';
-import BlogCategorySelector from '../components/blog/BlogCategorySelector';
-import BlogArticleList from '../components/blog/BlogArticleList';
-import BlogPagination from '../components/blog/BlogPagination';
-import PageLoader from '../components/ui/page-loader';
-import PageTransition from '../components/ui/page-transition';
+import PageTransition from "@/components/ui/page-transition";
+import PageLoader from "@/components/ui/page-loader";
+import { usePagination } from '../hooks/usePagination';
+import BlogCanonical from '../components/SEO/BlogCanonical';
 import FloatingCTA from '../components/blog/FloatingCTA';
-import { BlogListSchema } from '../components/schema/BlogListSchema';
+import BlogPerformanceMonitor from '../components/blog/BlogPerformanceMonitor';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
-  const category = searchParams.get('category');
-  const { posts, isLoading, totalPosts } = useBlogPosts(category);
-  const { availableCategories, currentCategoryDescription } = useBlogCategories(category);
-  const { currentPage, setCurrentPage, totalPages, paginatedItems } = usePagination(posts, 9);
-  const { isLoading: isTransitionLoading, skipTransition } = usePageTransition();
+  const categoryParam = searchParams.get('category');
+  const { isLoading: isPageLoading, isCategoryChange, skipTransition } = usePageTransition();
+  const categorySectionRef = useRef<HTMLDivElement>(null);
+
+  // Debug mode pour vérifier le chargement des articles
+  useDebugBlog();
+  
+  // Custom hooks pour la logique métier
+  const { posts, isLoading: isPostsLoading } = useBlogPosts(categoryParam);
+  const { 
+    availableCategories, 
+    currentCategoryDescription 
+  } = useBlogCategories(categoryParam);
+
+  // Pagination
+  const POSTS_PER_PAGE = 9;
+  const { 
+    currentPage, 
+    setCurrentPage, 
+    totalPages, 
+    paginatedItems 
+  } = usePagination(posts, POSTS_PER_PAGE);
 
   useEffect(() => {
-    setCurrentPage(1);
-  }, [category, setCurrentPage]);
-
-  const pageTitle = useMemo(() => {
-    if (category) {
-      const categoryInfo = availableCategories.find(([key]) => key === category);
-      return `${categoryInfo?.[1]?.name || 'Articles'} - Blog Logo Foot`;
+    if (isCategoryChange && categorySectionRef.current) {
+      // Scroll vers la section des catégories avec un offset pour laisser plus de marge
+      const element = categorySectionRef.current;
+      const yOffset = -100; // Offset négatif pour remonter un peu plus haut
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+    } else if (!isCategoryChange) {
+      // Scroll to top seulement pour les nouvelles visites de la page
+      window.scrollTo(0, 0);
     }
-    return 'Blog Logo Foot : Articles et Guides sur les Logos de Football';
-  }, [category, availableCategories]);
+  }, [isCategoryChange]);
 
-  const pageDescription = useMemo(() => {
-    if (category) {
-      return currentCategoryDescription;
+  // Ajout du log pour montrer les slugs générés
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      // Uniquement en mode dev
+      console.debug('Format des URLs des articles:');
+      posts.slice(0, 3).forEach(post => {
+        import('../utils/slugUtils').then(({ generatePostUrl }) => {
+          console.debug(`${post.id} - ${post.title} => /blog/${post.id}-${generatePostUrl(post.id, post.title).split('/').pop()}`);
+        });
+      });
     }
-    return 'Découvrez notre blog avec des articles détaillés sur les logos de football, l\'histoire des clubs, les analyses de design et les guides techniques.';
-  }, [category, currentCategoryDescription]);
+  }, [posts]);
 
-  const canonicalUrl = useMemo(() => {
-    const baseUrl = 'https://logo-foot.com/blog';
-    return category ? `${baseUrl}?category=${category}` : baseUrl;
-  }, [category]);
+  // Combiner les états de chargement
+  const isLoading = isPageLoading || isPostsLoading;
 
-  const structuredData = useMemo(() => {
-    return BlogListSchema({
-      post: paginatedItems[0] || undefined
-    });
-  }, [paginatedItems]);
-
-  if (isTransitionLoading && !skipTransition) {
-    return (
-      <PageLoader 
-        isVisible={true} 
-        message="Chargement des articles..." 
-      />
-    );
-  }
-
-  return (
-    <PageTransition>
+  const content = (
+    <div className="bg-gray-50 min-h-screen">
       <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <link rel="canonical" href={canonicalUrl} />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter */}
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={pageDescription} />
-        
-        {/* Structured Data */}
+        <title>Blog - Logo Foot</title>
+        <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
+        <meta name="keywords" content="logo foot, logo football, écussons foot, club foot, logo équipe foot" />
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(BlogListSchema({ post: posts[0] }))}
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4 py-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-8"
-          >
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              {category ? 
-                availableCategories.find(([key]) => key === category)?.[1]?.name || 'Articles' :
-                'Blog Logo Foot'
-              }
-            </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              {pageDescription}
-            </p>
-          </motion.div>
+      {/* Balises canoniques pour la pagination SEO */}
+      <BlogCanonical 
+        category={categoryParam || undefined}
+        page={currentPage}
+      />
 
-          <BlogCategorySelector 
+      {/* Header avec présentation du blog */}
+      <BlogHeader />
+      
+      <div className="container mx-auto px-4 pt-4 pb-12">
+        {/* Sélecteur de catégories */}
+        <div ref={categorySectionRef}>
+          <BlogCategorySelector
             categories={availableCategories}
-            currentCategory={category}
+            currentCategory={categoryParam}
             currentDescription={currentCategoryDescription}
             isLoading={isLoading}
           />
-          
-          {isLoading ? (
-            <div className="flex justify-center items-center py-12">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-            </div>
-          ) : (
-            <>
-              <BlogArticleList articles={paginatedItems} />
-              {totalPages > 1 && (
-                <BlogPagination
-                  currentPage={currentPage}
-                  totalPages={totalPages}
-                  setCurrentPage={setCurrentPage}
-                />
-              )}
-            </>
-          )}
         </div>
-        <FloatingCTA />
+
+        {/* Contenu principal du blog */}
+        <BlogContent
+          posts={posts}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          setCurrentPage={setCurrentPage}
+          paginatedItems={paginatedItems}
+        />
       </div>
-    </PageTransition>
+
+      <Footer />
+      
+      {/* Affichage de la bannière flottante CTA */}
+      <FloatingCTA />
+      
+      {/* Moniteur de performance */}
+      <BlogPerformanceMonitor />
+    </div>
+  );
+
+  return (
+    <>
+      <PageLoader 
+        isVisible={isLoading} 
+        message={categoryParam ? "Chargement de la catégorie..." : "Chargement du blog..."} 
+      />
+      
+      {skipTransition ? content : <PageTransition>{content}</PageTransition>}
+    </>
   );
 };
 

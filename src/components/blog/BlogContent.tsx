@@ -1,36 +1,40 @@
 
 import React from 'react';
 import { BlogPost } from '../../types/blog';
-import { motion } from 'framer-motion';
+import BlogArticleList from './BlogArticleList';
+import BlogPagination from './BlogPagination';
 
 interface BlogContentProps {
-  post: BlogPost;
+  posts: BlogPost[];
+  currentPage: number;
+  totalPages: number;
+  setCurrentPage: (page: number) => void;
+  paginatedItems: BlogPost[];
 }
 
-const BlogContent = ({ post }: BlogContentProps) => {
+const BlogContent = ({ 
+  posts, 
+  currentPage, 
+  totalPages, 
+  setCurrentPage, 
+  paginatedItems 
+}: BlogContentProps) => {
   return (
-    <motion.article 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="max-w-4xl mx-auto px-4 py-8"
-    >
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          {post.title}
-        </h1>
-        <p className="text-lg text-gray-600 mb-4">
-          {post.excerpt}
-        </p>
-        <time className="text-sm text-gray-500">
-          {new Date(post.date).toLocaleDateString('fr-FR')}
-        </time>
-      </header>
-      
-      <div className="prose prose-lg max-w-none">
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </div>
-    </motion.article>
+    <>
+      {/* Liste d'articles paginée */}
+      <BlogArticleList articles={paginatedItems} />
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex justify-center mt-8">
+          <BlogPagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            setCurrentPage={setCurrentPage}
+          />
+        </div>
+      )}
+    </>
   );
 };
 

@@ -126,7 +126,7 @@ const Testimonials = () => {
 
   return (
     <section 
-      className="w-full pt-8 pb-0 bg-gray-50 sticky top-[95vh] z-10"
+      className="w-full pt-8 pb-0 md:pb-0 bg-gray-50 sticky top-[95vh] z-10"
       onMouseEnter={pauseAutoplay}
       onMouseLeave={resumeAutoplay}
       onFocus={pauseAutoplay}
@@ -243,7 +243,7 @@ const Testimonials = () => {
           </div>
         </Carousel>
 
-        <div className="flex items-center justify-center mt-8">
+        <div className="flex items-center justify-center mt-8 mb-8 md:mb-0">
           <a 
             href="https://judge.me" 
             target="_blank" 

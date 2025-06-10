@@ -23,7 +23,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Pierre M.",
-    role: "Community Manager",
+    role: "Freelance",
     content: "Plus besoin de chercher pendant des heures les logo des équipes de foot. Tout est là, bien organisé. Merci !",
     rating: 5
   },

@@ -1,104 +1,59 @@
-import React from 'react';
+
+import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Shield } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { Scroll } from "lucide-react";
 
-const MentionsLegalesDialog = () => {
-  const isMobile = useIsMobile();
-
-  return (
-    <Dialog>
-      <DialogTrigger className={isMobile 
-        ? "flex items-center gap-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-all px-4 py-3 rounded-md text-left w-full"
-        : "hover:text-gray-900 transition-colors"
-      }>
-        {isMobile && <Shield className="w-4 h-4" />}
-        <span>Mentions légales</span>
-      </DialogTrigger>
-      <DialogContent className="max-w-4xl w-full max-h-[80vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-gray-800">Mentions Légales</DialogTitle>
-        </DialogHeader>
-        <div className="mt-4 space-y-4 text-sm">
+const MentionsLegalesDialog = () => (
+  <Dialog>
+    <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+      <Scroll className="w-4 h-4" />
+      Mentions légales
+    </DialogTrigger>
+    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+      <DialogHeader>
+        <DialogTitle className="text-xl font-bold text-gray-800">Mentions légales</DialogTitle>
+      </DialogHeader>
+      <div className="mt-4 text-sm space-y-4">
+        <section>
+          <h3 className="font-semibold mb-2">Éditeur du site</h3>
           <p>
-            <strong>Identification de l'éditeur du site</strong>
+            Nom de l'entreprise : Hermès Ressources<br />
+            Siège social : 35 rue Châteaubriand, 62100 Calais FR<br />
+            SIRET : 934 410 507 00016<br />
+            Contact : contact@logo-foot.com
           </p>
-          <p>
-            [Nom de l'éditeur]
-            [Adresse de l'éditeur]
-            [Numéro de téléphone de l'éditeur]
-            [Adresse e-mail de l'éditeur]
-          </p>
-
-          <p>
-            <strong>Directeur de la publication</strong>
-          </p>
-          <p>
-            [Nom du directeur de la publication]
-            [Adresse e-mail du directeur de la publication]
-          </p>
-
-          <p>
-            <strong>Hébergeur du site</strong>
-          </p>
-          <p>
-            [Nom de l'hébergeur]
-            [Adresse de l'hébergeur]
-            [Numéro de téléphone de l'hébergeur]
-          </p>
-
-          <p>
-            <strong>Propriété intellectuelle</strong>
-          </p>
-          <p>
-            L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
-          </p>
-
-          <p>
-            <strong>Marques et logos</strong>
-          </p>
-          <p>
-            Les marques et logos figurant sur ce site sont des marques déposées. Toute reproduction ou représentation totale ou partielle de ces marques ou logos, seules ou intégrées à d'autres éléments, sans l'autorisation expresse et préalable de [Nom de l'entreprise], est prohibée, et engagerait la responsabilité de l'utilisateur au sens des articles L.713-2 et L.713-3 du Code de la propriété intellectuelle.
-          </p>
-
-          <p>
-            <strong>Liens hypertextes</strong>
-          </p>
-          <p>
-            Les liens hypertextes mis en place dans le cadre du présent site web en direction d'autres ressources présentes sur le réseau Internet, ne sauraient engager la responsabilité de [Nom de l'entreprise].
-          </p>
-
-          <p>
-            <strong>Données personnelles</strong>
-          </p>
-          <p>
-            [Décrire la politique de confidentialité concernant la collecte et le traitement des données personnelles des utilisateurs du site, conformément au RGPD et à la législation applicable.]
-          </p>
-
-          <p>
-            <strong>Cookies</strong>
-          </p>
-          <p>
-            [Décrire l'utilisation des cookies sur le site, en informant les utilisateurs de leur finalité et de la possibilité de les désactiver.]
-          </p>
-
-          <p>
-            <strong>Responsabilité</strong>
-          </p>
-          <p>
-            [Nom de l'entreprise] met tout en œuvre pour offrir aux utilisateurs des informations et/ou des outils disponibles et vérifiés, mais ne saurait être tenue pour responsable des erreurs, d'une absence de disponibilité des informations et/ou de la présence de virus sur son site.
-          </p>
-
-          <p>
-            <strong>Droit applicable et juridiction compétente</strong>
-          </p>
-          <p>
-            Tout litige en relation avec l'utilisation du présent site est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de [Ville].
-          </p>
-        </div>
-      </DialogContent>
-    </Dialog>
-  );
-};
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Hébergement</h3>
+          <p>Le site est hébergé par Hostinger, HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Activité</h3>
+          <p>L'entreprise propose la vente de prestations de service commerciales et de produits digitaux téléchargeables.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Propriété intellectuelle</h3>
+          <p>Tous les contenus présents sur ce site (textes, images, produits numériques) sont protégés par le droit d'auteur. Toute reproduction ou diffusion sans autorisation est interdite.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Droit de rétractation</h3>
+          <p>Conformément à l'article L.221-28 du Code de la consommation, les produits numériques ne bénéficient pas du droit de rétractation dès lors qu'ils ont été téléchargés.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Données personnelles</h3>
+          <p>Les informations collectées sont utilisées uniquement dans le cadre de la gestion des commandes et ne sont pas partagées avec des tiers. Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en contactant contact@logo-foot.com.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Conservation des données de transaction</h3>
+          <p>Les données relatives aux transactions et preuves d'achat sont conservées de manière sécurisée pendant 10 ans conformément aux obligations légales commerciales et fiscales françaises. Ces données incluent l'identifiant de transaction, la date, le montant et le produit acheté.</p>
+        </section>
+        <section>
+          <h3 className="font-semibold mb-2">Litiges</h3>
+          <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Le tribunal de commerce de Calais sera seul compétent en cas de litige non résolu à l'amiable.</p>
+        </section>
+      </div>
+    </DialogContent>
+  </Dialog>
+);
 
 export default MentionsLegalesDialog;

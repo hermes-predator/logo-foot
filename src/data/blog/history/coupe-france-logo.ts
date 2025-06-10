@@ -5,7 +5,7 @@ export const coupeFranceLogoPost: BlogPost = {
   title: "Logo Coupe de France : Histoire et Évolution du Symbole Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Coupe de France de football. Origines, évolution et symbolisme de l'emblème de la plus ancienne compétition française.",
   date: "2024-04-15",
-  galleryImageId: 80,
+  galleryImageId: 41,
   content: `# L'Histoire Fascinante du **Logo Coupe de France**
 
 Le **logo coupe de france** est bien plus qu'un simple emblème sportif. Véritable symbole d'identité pour des millions de supporters, il incarne l'histoire riche et les valeurs profondes de la plus ancienne et emblématique compétition de football français.

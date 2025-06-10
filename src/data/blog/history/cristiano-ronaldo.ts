@@ -6,6 +6,7 @@ export const cristianoRonaldoPost: BlogPost = {
   title: "Cristiano Ronaldo : L'Histoire Complète d'une Légende du Football",
   excerpt: "Découvrez le parcours exceptionnel de Cristiano Ronaldo, de ses débuts modestes à Madère jusqu'à son statut de légende mondiale du football. Records, clubs, trophées et impact culturel d'un des plus grands joueurs de tous les temps.",
   date: "2024-03-01",
+  galleryImageId: 42,
   content: `# Cristiano Ronaldo : L'Ascension d'une Légende Intemporelle
 
 Peu de noms résonnent dans l'univers du football comme celui de **Cristiano Ronaldo**. De ses humbles débuts sur l'île de Madère à son statut d'icône planétaire, son parcours incarne l'excellence, la détermination et la longévité au plus haut niveau. Plongée dans l'histoire extraordinaire d'un des plus grands footballeurs de tous les temps.

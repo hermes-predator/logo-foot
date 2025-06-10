@@ -6,6 +6,7 @@ export const evolutionHistory: BlogPost = {
   title: "Histoire des Logos de Football : Évolution des Emblèmes de 1900 à 2024",
   excerpt: "Voyagez à travers l'histoire des logos de football depuis 1900. Découvrez l'évolution fascinante des emblèmes qui ont marqué l'identité visuelle du football.",
   date: "2024-02-23",
+  galleryImageId: 43,
   content: `L'histoire fascinante des logos de football, de leurs origines modestes aux designs contemporains sophistiqués.
 
 Les Origines (1900-1950)

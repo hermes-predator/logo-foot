@@ -53,6 +53,5 @@ Que son avenir s'écrive au **Bayer Leverkusen** ou dans l'un des grands clubs e
 
 Dans un football moderne qui valorise de plus en plus les créateurs de jeu polyvalents, **Florian Wirtz** représente le prototype parfait du milieu offensif de demain : technique, intelligent et décisif. Les prochaines années nous diront jusqu'où son immense talent pourra le porter, mais une chose est certaine : le monde du football n'a pas fini d'entendre parler de lui.`,
   keywords: "florian wirtz, statistiques de florian wirtz, wirtz florian, florian wirtz girlfriend, florian wirtz stats, florian wirtz transfermarkt, florian wirtz psg, florian wirtz transfert, florian wirtz allemagne, florian wirtz manchester city, matchs de florian wirtz, florian wirtz real madrid, florian wirtz âge, but florian wirtz, florian wirtz bayer leverkusen, florian wirtz blessure, florian wirtz salaire, florian wirtz barca",
-  category: 'players',
-  galleryImageId: 300
+  category: 'players'
 };

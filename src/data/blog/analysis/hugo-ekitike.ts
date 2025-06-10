@@ -102,6 +102,5 @@ Le **salaire** de **Hugo Ekitike** à l'**Eintracht Frankfurt** est estimé à e
 
 ### Comment s'est passé le transfert de Hugo Ekitike à Francfort ?
 Le **transfert** de **Hugo Ekitike** à **Francfort** s'est conclu sur un montant d'environ 16 millions d'euros, un investissement qui s'est révélé judicieux au vu de ses performances depuis son arrivée.`,
-  keywords: "Hugo Ekitike, statistiques de Hugo Ekitike, Hugo Ekitike origine, Hugo Ekitike transfert, Hugo Ekitike Eintracht Frankfurt, Hugo Ekitike Francfort, Hugo Ekitike salaire, Hugo Ekitike but, matchs de Hugo Ekitike, Hugo Ekitike stats, Hugo Ekitike mère, Hugo Ekitike agent, Hugo Ekitike Cameroun, Frankfurt Hugo Ekitike",
-  galleryImageId: null,
+  keywords: "Hugo Ekitike, statistiques de Hugo Ekitike, Hugo Ekitike origine, Hugo Ekitike transfert, Hugo Ekitike Eintracht Frankfurt, Hugo Ekitike Francfort, Hugo Ekitike salaire, Hugo Ekitike but, matchs de Hugo Ekitike, Hugo Ekitike stats, Hugo Ekitike mère, Hugo Ekitike agent, Hugo Ekitike Cameroun, Frankfurt Hugo Ekitike"
 };

@@ -62,7 +62,7 @@ const ProductGallery = () => {
           <div className="relative">
             {/* Badge flottant discret */}
             <div className="absolute top-0 right-0 z-10 transform translate-x-2 -translate-y-2">
-              <div className="bg-gradient-to-r from-blue-500/90 to-indigo-600/90 backdrop-blur-sm text-white text-xs px-3 py-2 rounded-full shadow-lg border border-white/20 flex items-center gap-2 animate-[fadeIn_0.8s_ease-out_2s_both,pulse_3s_ease-in-out_3s_infinite]">
+              <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full shadow-md border border-gray-200 flex items-center gap-2 animate-[fadeIn_0.8s_ease-out_2s_both]">
                 <MousePointer className="w-3 h-3" />
                 <span className="font-medium">Cliquez pour explorer</span>
                 <Eye className="w-3 h-3 opacity-70" />

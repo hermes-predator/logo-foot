@@ -5,6 +5,7 @@ export const benjaminSeskoPost: BlogPost = {
   title: "Benjamin Šeško : Le Géant Slovène qui Domine la Bundesliga",
   excerpt: "Découvrez l'analyse complète de Benjamin Šeško, l'attaquant slovène qui impressionne à Leipzig et attire l'attention des plus grands clubs européens. Portrait d'un buteur d'exception.",
   date: "2024-06-29",
+  galleryImageId: 4,
   content: `# **Benjamin Šeško** : L'Ascension d'un Prodige Slovène
 
 ## Découverte de **Benjamin Šeško** : Un Talent Précoce

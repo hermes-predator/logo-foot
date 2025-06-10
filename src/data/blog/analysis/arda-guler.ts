@@ -6,6 +6,7 @@ export const ardaGulerPost: BlogPost = {
   title: "Arda Güler : Le Prodige Turc qui Fascine le Real Madrid",
   excerpt: "Découvrez l'analyse complète d'Arda Güler, le talent précoce qui impressionne au Real Madrid et en équipe nationale turque. Portrait d'un des joueurs les plus prometteurs du football mondial.",
   date: "2024-06-28",
+  galleryImageId: 3,
   content: `# Arda Güler : Le Prodige Turc qui Fascine le Real Madrid
 
 ## Parcours et Débuts Prometteurs

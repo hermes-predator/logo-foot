@@ -6,6 +6,7 @@ export const alejandroGarnachoPost: BlogPost = {
   title: "Alejandro Garnacho : Le Nouveau Joyau de Manchester United et de l'Argentine",
   excerpt: "Découvrez l'analyse complète d'Alejandro Garnacho, sa technique éblouissante, son parcours, son potentiel et comment il devient rapidement l'un des joueurs les plus excitants de Premier League.",
   date: "2024-06-30",
+  galleryImageId: 2,
   content: `# Alejandro Garnacho : Le Nouveau Joyau de Manchester United et de l'Argentine
 
 ## L'ascension fulgurante d'un talent exceptionnel

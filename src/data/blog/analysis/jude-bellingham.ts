@@ -5,6 +5,7 @@ export const judeBellinghamPost: BlogPost = {
   id: 18,
   title: "Jude Bellingham : L'étoile anglaise qui brille au Real Madrid",
   date: "2025-02-12",
+  galleryImageId: 18,
   category: "players",
   excerpt: "Découvrez tout sur Jude Bellingham, la sensation anglaise du Real Madrid. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son impact sur le football mondial.",
   content: `# Jude Bellingham : Le phénomène anglais qui révolutionne le Real Madrid

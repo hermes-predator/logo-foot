@@ -6,6 +6,7 @@ export const joaoNevesPost: BlogPost = {
   title: "João Neves : Le Nouveau Joyau Portugais qui Illumine l'Europe",
   excerpt: "Découvrez l'analyse complète de João Neves, son parcours, ses qualités techniques exceptionnelles et pourquoi les plus grands clubs européens se battent pour le recruter.",
   date: "2024-06-26",
+  galleryImageId: 17,
   content: `# João Neves : Le Prodige Portugais Qui Affole l'Europe
 
 ## Parcours et Débuts Prometteurs

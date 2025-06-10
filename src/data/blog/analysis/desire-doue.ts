@@ -6,6 +6,7 @@ export const desireDouePost: BlogPost = {
   title: "Désiré Doué : Analyse Complète du Prodige Français de Rennes",
   excerpt: "Découvrez l'analyse détaillée de Désiré Doué, son style de jeu, son parcours et son potentiel. Portrait complet d'un des plus grands talents du football français.",
   date: "2024-08-22",
+  galleryImageId: 10,
   content: `# Désiré Doué : Portrait Complet d'un Talent Exceptionnel
 
 ## Introduction

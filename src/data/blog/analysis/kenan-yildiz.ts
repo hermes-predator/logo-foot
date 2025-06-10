@@ -6,6 +6,7 @@ export const kenanYildizPost: BlogPost = {
   title: "Kenan Yıldız : Le Prodige Turc qui Brille à la Juventus",
   excerpt: "Découvrez l'analyse complète de Kenan Yıldız, son parcours atypique, ses qualités techniques exceptionnelles et pourquoi il est considéré comme l'avenir du football turc et italien.",
   date: "2024-06-27",
+  galleryImageId: 19,
   content: `# Kenan Yıldız : L'Étoile Montante Turque Qui Fascine la Juventus
 
 ## Parcours et Origines de Kenan Yıldız

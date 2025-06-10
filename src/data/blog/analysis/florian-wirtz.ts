@@ -6,6 +6,7 @@ export const florianWirtzPost: BlogPost = {
   title: "Florian Wirtz : Analyse Complète du Prodige Allemand [2024]",
   excerpt: "Découvrez l'analyse complète de Florian Wirtz, sa carrière, ses statistiques, ses performances avec le Bayer Leverkusen et ses perspectives de transfert vers les plus grands clubs européens.",
   date: "2024-05-29",
+  galleryImageId: 13,
   content: `# Analyse Complète de **Florian Wirtz**, le Joyau du Football Allemand
 
 **Florian Wirtz** s'est imposé comme l'une des étoiles montantes les plus brillantes du football européen. À seulement 21 ans, ce milieu offensif allemand impressionne les observateurs du monde entier par sa technique, sa vision du jeu et sa maturité exceptionnelle. Plongeons dans l'univers de ce talent précoce qui fait déjà l'objet de convoitises des plus grands clubs européens.

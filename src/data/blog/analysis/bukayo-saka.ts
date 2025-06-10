@@ -6,6 +6,7 @@ export const bukayoSakaPost: BlogPost = {
   title: "Bukayo Saka : L'Étoile Montante d'Arsenal et de l'Angleterre",
   excerpt: "Analyse approfondie de Bukayo Saka, son parcours impressionnant, ses statistiques exceptionnelles et comment il est devenu l'un des meilleurs ailiers du football mondial.",
   date: "2024-04-06",
+  galleryImageId: 6,
   content: `# Bukayo Saka : Le Prodige d'Arsenal Qui Enflamme la Premier League
 
 ## L'ascension fulgurante d'un talent précoce

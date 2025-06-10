@@ -6,6 +6,7 @@ export const bundesligaAnalysis: BlogPost = {
   title: "Design et Identité Visuelle en Bundesliga : Analyse 2024",
   excerpt: "Analyse approfondie du design et du branding des clubs de Bundesliga. Focus sur les stratégies visuelles et l'innovation marketing du football allemand.",
   date: "2024-02-16",
+  galleryImageId: 7,
   content: `Design et Identité Visuelle en Bundesliga
 
 Exploration des stratégies de design et de branding des clubs allemands, entre tradition et innovation.

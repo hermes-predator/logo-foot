@@ -6,6 +6,7 @@ export const jamalMusialaPost: BlogPost = {
   title: "Jamal Musiala : Le Prodige du Bayern Munich Qui Révolutionne le Football",
   excerpt: "Découvrez l'ascension fulgurante de Jamal Musiala, son parcours unique, ses origines, ses statistiques impressionnantes et tout ce qui fait de ce jeune talent l'un des footballeurs les plus prometteurs de sa génération.",
   date: "2024-04-04",
+  galleryImageId: 16,
   content: `# Jamal Musiala : Le Diamant du Bayern Munich
 
 ## L'ascension fulgurante d'un talent hors du commun

@@ -5,6 +5,7 @@ export const achrafHakimiPost: BlogPost = {
   title: "Achraf Hakimi : Analyse Complète du Latéral Marocain du PSG [2024]",
   excerpt: "Découvrez l'analyse détaillée d'Achraf Hakimi, son parcours, ses qualités techniques, son impact au PSG et en équipe nationale du Maroc. Portrait complet d'un des meilleurs latéraux du monde.",
   date: "2024-08-20",
+  galleryImageId: 1,
   content: `# **Achraf Hakimi** : Le Talent Marocain qui Brille au PSG
 
 ## Parcours et Ascension d'un Latéral Moderne

@@ -5,6 +5,7 @@ export const erlingHaalandPost: BlogPost = {
   title: "Erling Haaland : Analyse Complète du Robot-Buteur de Manchester City",
   excerpt: "Découvrez notre analyse approfondie d'Erling Haaland, son parcours impressionnant, son style de jeu dévastateur, ses statistiques records et son impact sur le football moderne.",
   date: "2024-04-05",
+  galleryImageId: 12,
   content: `# Erling Haaland : La Machine à Buts Qui Redéfinit le Rôle d'Attaquant
 
 ## L'ascension fulgurante d'un cyborg du football

@@ -6,6 +6,7 @@ export const dynamoKievLogoPost: BlogPost = {
   title: "Emblème du Dynamo Kiev : Histoire et Symbolisme du Logo Légendaire",
   excerpt: "Découvrez l'histoire fascinante du logo du Dynamo Kiev, son évolution à travers les décennies, sa signification profonde et son impact sur l'identité du club ukrainien.",
   date: "2024-03-25",
+  galleryImageId: 11,
   content: `Histoire du Logo du Dynamo Kiev
 
 Le logo du Dynamo Kiev est bien plus qu'un simple symbole graphique. Il incarne l'histoire, les valeurs et l'identité d'un club légendaire du football ukrainien.

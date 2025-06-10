@@ -5,6 +5,7 @@ export const hugoEkitikePost: BlogPost = {
   id: 15,
   title: "Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort",
   date: "2025-04-10",
+  galleryImageId: 15,
   category: "players",
   subCategory: "player",
   excerpt: "Découvrez tout sur Hugo Ekitike, le jeune attaquant français qui brille à l'Eintracht Francfort. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son avenir prometteur.",

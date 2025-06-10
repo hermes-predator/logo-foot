@@ -12,7 +12,7 @@ import FAQDialog from './footer/FAQDialog';
 
 const Footer = () => {
   return (
-    <footer className="border-t mt-12 py-6 px-4">
+    <footer className="border-t mt-12 py-6 px-4 hidden sm:block">
       <div className="container mx-auto">
         <div className="flex justify-center gap-8 text-sm text-gray-600">
           <Dialog>

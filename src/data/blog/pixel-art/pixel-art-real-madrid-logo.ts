@@ -134,6 +134,5 @@ Pour accompagner ce guide écrit, voici les étapes clés qui seraient présent�
 Le **pixel art logo real madrid** représente bien plus qu'un simple exercice graphique. C'est une célébration de l'héritage du club à travers un médium artistique contemporain qui établit un pont entre l'histoire glorieuse du Real Madrid et la culture numérique moderne.
 
 Que vous soyez un supporter passionné, un artiste numérique ou simplement curieux de l'esthétique pixel art, la création d'un **pixel art foot real madrid** offre une expérience créative satisfaisante qui rend hommage à l'un des clubs les plus emblématiques du football mondial.`,
-  keywords: "pixel art logo real madrid, pixel art logo foot real madrid, pixel art real madrid, pixel art foot real madrid, logo foot real madrid, pixel art foot, logo real madrid",
-  galleryImageId: null
+  keywords: "pixel art logo real madrid, pixel art logo foot real madrid, pixel art real madrid, pixel art foot real madrid, logo foot real madrid, pixel art foot, logo real madrid"
 };

@@ -132,6 +132,5 @@ La création de **pixel art logo foot** est devenue une véritable sous-culture 
 Le **pixel art manchester city** représente plus qu'un simple exercice artistique – c'est une célébration de l'héritage du club à travers le prisme de la culture numérique. En transformant l'emblème moderne des Citizens en création pixellisée, les créateurs établissent un pont entre l'histoire riche du club et l'ère numérique contemporaine.
 
 Que vous soyez un supporter passionné, un artiste numérique ou simplement curieux de l'esthétique pixel art, la création d'un **pixel art logo foot manchester city** offre une façon unique et créative de célébrer l'identité de ce club emblématique de Premier League.`,
-  keywords: "pixel art logo foot manchester city, pixel art manchester city, pixel art logo manchester, logo foot manchester city, pixel art logo foot, logo pixel manchester city",
-  galleryImageId: null
+  keywords: "pixel art logo foot manchester city, pixel art manchester city, pixel art logo manchester, logo foot manchester city, pixel art logo foot, logo pixel manchester city"
 };

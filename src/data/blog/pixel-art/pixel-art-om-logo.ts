@@ -139,7 +139,5 @@ L'évolution du logo de l'Olympique de Marseille depuis sa création en 1899 off
 Le **pixel art logo foot marseille** représente bien plus qu'un simple exercice graphique. C'est une célébration de l'héritage du club à travers un médium artistique contemporain qui établit un pont entre l'histoire glorieuse de l'OM et la culture numérique moderne.
 
 Que vous soyez un supporter passionné, un artiste numérique ou simplement curieux de l'esthétique pixel art, la création d'un **pixel art foot OM** offre une expérience créative satisfaisante qui rend hommage à l'un des clubs les plus emblématiques du football français et mondial.`,
-  keywords: "pixel art logo foot marseille, pixel art foot om, pixel art om, pixel art logo foot om, logo foot marseille, pixel art foot, logo olympique de marseille",
-  galleryImageId: null
+  keywords: "pixel art logo foot marseille, pixel art foot om, pixel art om, pixel art logo foot om, logo foot marseille, pixel art foot, logo olympique de marseille"
 };
-

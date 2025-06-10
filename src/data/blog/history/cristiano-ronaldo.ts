@@ -83,6 +83,5 @@ Qu'on l'adore ou qu'on le critique, impossible de nier l'impact colossal de **Cr
 
 À l'approche de la fin de sa carrière, Ronaldo a déjà assuré son immortalité dans le panthéon du football mondial. Quand les lumières s'éteindront sur sa carrière de joueur, son influence continuera de rayonner, inspirant des générations de footballeurs qui rêveront d'imiter son parcours extraordinaire.`,
   keywords: "Cristiano Ronaldo, CR7, carrière Cristiano Ronaldo, trophées Ronaldo, Real Madrid Ronaldo, Manchester United Ronaldo, Juventus Ronaldo, Portugal Ronaldo, Al-Nassr, Ballon d'Or Ronaldo, records Cristiano Ronaldo",
-  category: 'players',
-  galleryImageId: 69  // ID de l'image dans la galerie, si applicable
+  category: 'players'
 };

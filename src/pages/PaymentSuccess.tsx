@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { CheckCircle, Download, Mail, ArrowLeft } from 'lucide-react';
@@ -37,7 +36,7 @@ const PaymentSuccess = () => {
         <meta name="twitter:description" content="Votre paiement a été confirmé avec succès ! Téléchargez immédiatement votre collection de +8600 logos de football." />
       </Helmet>
 
-      <ConfettiCelebration isActive={showConfetti} />
+      <ConfettiCelebration duration={5000} />
       
       <div className="min-h-screen bg-gradient-to-b from-green-50 to-white py-8 px-4">
         <div className="container mx-auto max-w-4xl">

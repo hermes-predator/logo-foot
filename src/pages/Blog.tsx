@@ -30,7 +30,7 @@ const Blog = () => {
   const pageTitle = useMemo(() => {
     if (category) {
       const categoryInfo = availableCategories.find(([key]) => key === category);
-      return `${categoryInfo?.[1]?.title || 'Articles'} - Blog Logo Foot`;
+      return `${categoryInfo?.[1]?.name || 'Articles'} - Blog Logo Foot`;
     }
     return 'Blog Logo Foot : Articles et Guides sur les Logos de Football';
   }, [category, availableCategories]);
@@ -49,13 +49,9 @@ const Blog = () => {
 
   const structuredData = useMemo(() => {
     return BlogListSchema({
-      posts: paginatedItems,
-      category: category || undefined,
-      totalPosts,
-      currentPage,
-      totalPages
+      post: paginatedItems[0] || undefined
     });
-  }, [paginatedItems, category, totalPosts, currentPage, totalPages]);
+  }, [paginatedItems]);
 
   if (isTransitionLoading && !skipTransition) {
     return (
@@ -99,7 +95,7 @@ const Blog = () => {
           >
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               {category ? 
-                availableCategories.find(([key]) => key === category)?.[1]?.title || 'Articles' :
+                availableCategories.find(([key]) => key === category)?.[1]?.name || 'Articles' :
                 'Blog Logo Foot'
               }
             </h1>
@@ -108,7 +104,12 @@ const Blog = () => {
             </p>
           </motion.div>
 
-          <BlogCategorySelector currentCategory={category} />
+          <BlogCategorySelector 
+            categories={availableCategories}
+            currentCategory={category}
+            currentDescription={currentCategoryDescription}
+            isLoading={isLoading}
+          />
           
           {isLoading ? (
             <div className="flex justify-center items-center py-12">
@@ -116,12 +117,12 @@ const Blog = () => {
             </div>
           ) : (
             <>
-              <BlogArticleList posts={paginatedItems} />
+              <BlogArticleList articles={paginatedItems} />
               {totalPages > 1 && (
                 <BlogPagination
                   currentPage={currentPage}
                   totalPages={totalPages}
-                  onPageChange={setCurrentPage}
+                  setCurrentPage={setCurrentPage}
                 />
               )}
             </>

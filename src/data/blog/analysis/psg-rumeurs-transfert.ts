@@ -5,6 +5,7 @@ export const psgRumeursTransfertPost: BlogPost = {
   title: "PSG Rumeurs Transfert : Toutes les Actualités du Mercato Parisien [2024]",
   excerpt: "Découvrez toutes les dernières rumeurs et informations sur les transferts du PSG : arrivées potentielles, départs annoncés et stratégie du club parisien pour le mercato.",
   date: "2024-04-08",
+  galleryImageId: 32,
   content: `# PSG Rumeurs Transfert : L'Actualité du Mercato Parisien
 
 Le Paris Saint-Germain est toujours au centre de l'attention médiatique concernant sa politique de recrutement. Les **psg rumeurs transfert** sont constamment scrutées par les supporters et les observateurs du football mondial. Dans cet article, nous analysons les dernières informations concernant le mercato parisien et les stratégies potentielles du club.

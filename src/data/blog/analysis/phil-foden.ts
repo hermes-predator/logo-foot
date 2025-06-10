@@ -5,6 +5,7 @@ export const philFodenPost: BlogPost = {
   title: "Phil Foden : Le Joyau de Manchester City et de l'Angleterre - Analyse Complète",
   excerpt: "Découvrez tout sur Phil Foden, le prodige anglais de Manchester City, son parcours, sa vie privée, ses statistiques impressionnantes et son influence grandissante dans le football mondial.",
   date: "2024-04-04",
+  galleryImageId: 30,
   content: `# Phil Foden : Le Génie de Manchester City Qui Révolutionne le Football Anglais
 
 ## L'ascension fulgurante d'un talent exceptionnel

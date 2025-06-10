@@ -5,6 +5,7 @@ export const lionelMessiPost: BlogPost = {
   title: "Lionel Messi : Analyse Complète du Plus Grand Joueur de Tous les Temps",
   excerpt: "Découvrez notre analyse approfondie de Lionel Messi, sa carrière légendaire, ses records incroyables, son style de jeu unique et son impact sur l'histoire du football mondial.",
   date: "2024-04-02",
+  galleryImageId: 25,
   content: `# Lionel Messi : Le Génie Qui a Réinventé le Football
 
 ## L'ascension d'une légende : Du FC Barcelone à l'Inter Miami

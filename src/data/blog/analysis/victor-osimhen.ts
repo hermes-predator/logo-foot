@@ -5,6 +5,7 @@ export const victorOsimhenPost: BlogPost = {
   title: "Victor Osimhen : Analyse Complète du Parcours et des Statistiques [2024]",
   excerpt: "Découvrez notre analyse approfondie de Victor Osimhen, ses statistiques impressionnantes, son parcours, ses rumeurs de transfert au PSG et à Galatasaray, son salaire actuel et ses origines.",
   date: "2024-06-01",
+  galleryImageId: 35,
   content: `# Tout savoir sur **Victor Osimhen** en 2024
 
 ## Qui est **Victor Osimhen** : Parcours et évolution

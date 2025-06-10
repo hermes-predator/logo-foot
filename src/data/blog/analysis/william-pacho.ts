@@ -5,6 +5,7 @@ export const williamPachoPost: BlogPost = {
   title: "William Pacho : Le Roc Équatorien qui Séduit l'Europe [Analyse 2024]",
   excerpt: "Découvrez notre analyse détaillée de William Pacho, sa technique défensive exceptionnelle, son parcours, ses statistiques et pourquoi les plus grands clubs européens se l'arrachent.",
   date: "2024-06-02",
+  galleryImageId: 38,
   content: `# Tout savoir sur **William Pacho** en 2024
 
 ## Qui est **William Pacho** : Parcours et ascension

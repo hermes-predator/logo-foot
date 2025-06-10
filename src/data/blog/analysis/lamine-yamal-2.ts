@@ -6,6 +6,7 @@ export const lamineYamal2Post: BlogPost = {
   title: "Lamine Yamal et Aitana Bonmatí : Les Joyaux Catalans qui Dominent le Football",
   excerpt: "Analyse comparative entre Lamine Yamal et Aitana Bonmatí, les deux stars du FC Barcelone qui brillent tant en club qu'en sélection espagnole, représentant le présent et l'avenir du football catalan.",
   date: "2024-04-15",
+  galleryImageId: 22,
   content: `# Lamine Yamal et Aitana Bonmatí : Les Nouveaux Visages du FC Barcelone
 
 Le FC Barcelone, club emblématique de Catalogne, est réputé pour son centre de formation d'excellence, La Masia, qui a vu éclore certains des plus grands talents de l'histoire du football. Aujourd'hui, deux jeunes prodiges incarnent le présent et l'avenir du club blaugrana : Lamine Yamal, étoile montante du football masculin, et Aitana Bonmatí, Ballon d'Or féminin en titre.

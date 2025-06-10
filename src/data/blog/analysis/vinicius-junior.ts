@@ -5,6 +5,7 @@ export const viniciusJuniorPost: BlogPost = {
   title: "Vinicius Junior : Le Prodige Brésilien du Real Madrid - Analyse Complète",
   excerpt: "Découvrez tout sur Vinicius Junior, son parcours fascinant, son style de jeu électrisant, ses statistiques impressionnantes et sa vie en dehors des terrains.",
   date: "2024-04-04",
+  galleryImageId: 36,
   content: `# Vinicius Junior : Le Phénomène Brésilien Qui Révolutionne le Football Mondial
 
 ## L'ascension fulgurante d'un talent inné

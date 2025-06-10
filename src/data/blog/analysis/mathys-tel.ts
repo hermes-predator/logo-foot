@@ -6,6 +6,7 @@ export const mathysTelPost: BlogPost = {
   title: "Mathys Tel : Le phénomène français qui illumine le Bayern Munich",
   excerpt: "Découvrez tout sur la carrière prometteuse de Mathys Tel, le jeune prodige français du Bayern Munich. Parcours, statistiques, origine et avenir de ce talent d'exception.",
   date: "2025-04-09T08:00:00Z",
+  galleryImageId: 27,
   content: `
 # Mathys Tel : Le nouveau joyau du football français
 

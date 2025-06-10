@@ -5,6 +5,7 @@ export const serieAAnalysis: BlogPost = {
   title: "Analyse Marketing des Logos de Serie A : Stratégies de Marque 2024",
   excerpt: "Découvrez comment les clubs de Serie A modernisent leur identité visuelle et développent leur stratégie de marque pour conquérir le marché mondial.",
   date: "2024-02-15",
+  galleryImageId: 34,
   content: `L'Innovation Italienne dans le Design Football
 
 Dans les ruelles de Turin, sur les places de Milan et dans les quartiers historiques de Rome, le football italien réinvente son image. La Serie A, berceau du catenaccio et du calcio romantique, embrasse aujourd'hui une révolution visuelle audacieuse qui bouleverse les codes traditionnels du football.

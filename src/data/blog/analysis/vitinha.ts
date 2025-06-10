@@ -6,6 +6,7 @@ export const vitinhaPost: BlogPost = {
   title: "Vitinha : Le Maestro Portugais qui Révolutionne le Milieu du PSG [2024]",
   excerpt: "Découvrez notre analyse approfondie de Vitinha, son parcours, son évolution technique et tactique au PSG, et comment il est devenu l'un des meilleurs milieux de terrain d'Europe.",
   date: "2024-06-10",
+  galleryImageId: 37,
   content: `# Vitinha : Le Maestro Portugais qui Révolutionne le Milieu du PSG [2024]
 
 ## Parcours et Débuts Prometteurs

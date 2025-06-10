@@ -5,6 +5,7 @@ export const neymarPost: BlogPost = {
   title: "Neymar Jr : Biographie Complète, Carrière, Statistiques et Vie Personnelle [2024]",
   excerpt: "Découvrez notre analyse complète de Neymar Jr, sa carrière au Santos, Barcelone, PSG et Al-Hilal, ses statistiques impressionnantes, son salaire et sa vie personnelle.",
   date: "2024-06-18",
+  galleryImageId: 29,
   content: `# Tout savoir sur **Neymar** en 2024
 
 ## La carrière exceptionnelle de **Neymar Jr**

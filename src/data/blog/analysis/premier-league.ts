@@ -5,6 +5,7 @@ export const premierLeagueAnalysis: BlogPost = {
   title: "Analyse des Logos de Premier League : Design et Marketing [2024]",
   excerpt: "Découvrez l'analyse détaillée des logos des clubs de Premier League. Design, stratégie marketing et évolution des identités visuelles des clubs anglais.",
   date: "2024-02-18",
+  galleryImageId: 31,
   content: `# Analyse des Identités Visuelles en Premier League
 
 La Premier League représente l'excellence du football mondial, et cette réputation se reflète parfaitement dans les identités visuelles sophistiquées de ses clubs. Pour une analyse détaillée du logo de la compétition elle-même, consultez notre article dédié : [Football Premier League Logo : Histoire et Évolution](/blog/32).

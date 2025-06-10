@@ -5,6 +5,7 @@ export const michaelOlisePost: BlogPost = {
   title: "Michael Olise : Analyse du Talent et Parcours du Prodige [2024]",
   excerpt: "Découvrez l'analyse complète de Michael Olise, son parcours, ses origines, ses statistiques impressionnantes et tout ce que vous devez savoir sur cette étoile montante du football européen.",
   date: "2024-05-15",
+  galleryImageId: 28,
   content: `# **Michael Olise** : Portrait d'un Talent Exceptionnel
 
 **Michael Olise** est l'une des révélations les plus excitantes du football européen ces dernières années. Avec un style de jeu élégant et une vision remarquable, les **statistiques de Michael Olise** témoignent d'un joueur au potentiel immense. Découvrons ensemble son parcours, ses origines et ce qui fait de lui l'un des joueurs les plus convoités d'Europe.

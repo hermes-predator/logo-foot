@@ -5,6 +5,7 @@ export const rayanCherkiPost: BlogPost = {
   title: "Rayan Cherki : Analyse Complète du Jeune Prodige du Football Français [2024]",
   excerpt: "Découvrez l'analyse détaillée de Rayan Cherki, son style de jeu, ses statistiques, son parcours et son potentiel. Un regard approfondi sur l'un des plus grands talents du football français.",
   date: "2024-08-25", // Date de publication
+  galleryImageId: 33,
   content: `# **Rayan Cherki** : Portrait Complet d'un Talent Exceptionnel
 
 ## Introduction au phénomène **Rayan Cherki**

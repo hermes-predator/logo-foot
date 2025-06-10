@@ -5,6 +5,7 @@ export const laligaAnalysis: BlogPost = {
   title: "LaLiga : Analyse des Logos et du Branding des Clubs Espagnols 2024",
   excerpt: "Découvrez l'évolution fascinante des logos des clubs de LaLiga, entre tradition royale et modernité digitale. Focus sur les stratégies de marque du football espagnol.",
   date: "2024-02-13",
+  galleryImageId: 21,
   content: `Dans les ruelles pavées de Madrid, sur les Ramblas de Barcelone ou au cœur de Séville, le football espagnol vit une révolution silencieuse. Les clubs de LaLiga, gardiens d'un héritage séculaire, réinventent leur identité visuelle pour conquérir le monde digital, tout en préservant leur âme profondément ancrée dans la culture locale.
 
 Le Real Madrid : L'Excellence Royale Réinventée

@@ -6,6 +6,7 @@ export const lamineYamalPost: BlogPost = {
   title: "Lamine Yamal : Analyse du Phénomène et son Parcours Extraordinaire [2024]",
   excerpt: "Découvrez l'analyse complète de Lamine Yamal, prodige du FC Barcelone, son parcours impressionnant, ses statistiques et tout ce qu'il faut savoir sur cette future star du football mondial.",
   date: "2024-05-28",
+  galleryImageId: 23,
   content: `# **Lamine Yamal** : L'Ascension Fulgurante d'un Prodige
 
 **Lamine Yamal** est considéré comme l'un des plus grands talents de sa génération. À seulement 16 ans, les **statistiques de Lamine Yamal** témoignent déjà d'un talent hors norme. Découvrons ensemble son parcours, ses origines et ce qui fait de lui l'un des joueurs les plus prometteurs du football mondial.

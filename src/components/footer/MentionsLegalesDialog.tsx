@@ -1,15 +1,22 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Scroll } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
-const MentionsLegalesDialog = () => (
-  <Dialog>
-    <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
-      <Scroll className="w-4 h-4" />
-      Mentions légales
-    </DialogTrigger>
-    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+const MentionsLegalesDialog = () => {
+  const isMobile = useIsMobile();
+  
+  return (
+    <Dialog>
+      <DialogTrigger className={`flex items-center gap-2 transition-colors ${
+        isMobile 
+          ? 'px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
+          : 'hover:text-gray-900'
+      }`}>
+        <Scroll className="w-4 h-4" />
+        <span>Mentions légales</span>
+      </DialogTrigger>
+      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
       <DialogHeader>
         <DialogTitle className="text-xl font-bold text-gray-800">Mentions légales</DialogTitle>
       </DialogHeader>
@@ -53,7 +60,8 @@ const MentionsLegalesDialog = () => (
         </section>
       </div>
     </DialogContent>
-  </Dialog>
-);
+    </Dialog>
+  );
+};
 
 export default MentionsLegalesDialog;

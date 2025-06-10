@@ -1,9 +1,15 @@
 
-import { BookOpen, Home, Menu } from "lucide-react";
+import { BookOpen, Home, Menu, MessageCircle, FileText, Scroll, AlertTriangle, HelpCircle } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import ContactForm from './ContactForm';
+import CGVDialog from './footer/CGVDialog';
+import MentionsLegalesDialog from './footer/MentionsLegalesDialog';
+import DisclaimerDialog from './footer/DisclaimerDialog';
+import FAQDialog from './footer/FAQDialog';
 
 const Header = () => {
   const location = useLocation();
@@ -86,6 +92,30 @@ const Header = () => {
                     <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
                     <span>Blog</span>
                   </Link>
+                  
+                  {/* Divider */}
+                  <div className="border-t border-gray-200 my-2"></div>
+                  
+                  {/* Footer links in mobile menu */}
+                  <Dialog>
+                    <DialogTrigger className="flex items-center gap-2 px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-all text-left">
+                      <MessageCircle className="w-4 h-4" />
+                      <span>Contactez-nous</span>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl w-full">
+                      <DialogHeader>
+                        <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                      </DialogHeader>
+                      <div className="mt-4">
+                        <ContactForm />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
+                  <CGVDialog />
+                  <MentionsLegalesDialog />
+                  <DisclaimerDialog />
+                  <FAQDialog />
                 </div>
               </div>
             )}

@@ -1,14 +1,13 @@
-
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
+import ProductGallery from '../components/ProductGallery';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
 
 // Lazy load components that aren't needed for initial render
-const LazyProductGallery = lazy(() => import('../components/ProductGallery'));
 const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSection'));
 const LazyTestimonials = lazy(() => import('../components/Testimonials'));
 
@@ -166,9 +165,7 @@ const Index = () => {
           </div>
           
           <div className="pt-2">
-            <Suspense fallback={<Skeleton className="w-full h-96 rounded-lg" />}>
-              <LazyProductGallery />
-            </Suspense>
+            <ProductGallery />
           </div>
           
           <div id="payment-section">

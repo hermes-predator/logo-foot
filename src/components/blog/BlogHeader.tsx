@@ -16,6 +16,7 @@ const BlogHeader = () => {
         <div className="absolute inset-0 bg-gradient-to-tl from-gray-800/50 via-transparent to-gray-900/40" 
              style={{
                background: 'linear-gradient(45deg, rgba(17,24,39,0.8) 0%, rgba(55,65,81,0.3) 25%, rgba(17,24,39,0.9) 50%, rgba(31,41,55,0.4) 75%, rgba(17,24,39,0.8) 100%)',
+               backgroundSize: '400% 400%',
                animation: 'gradientShift 8s ease-in-out infinite'
              }}></div>
       </div>
@@ -86,19 +87,15 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>
+        {`
         @keyframes gradientShift {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

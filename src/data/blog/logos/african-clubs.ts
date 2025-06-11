@@ -6,6 +6,7 @@ export const africanClubsPost: BlogPost = {
   title: "Les Logos du Football Africain : Tradition et Modernité [2024]",
   excerpt: "Découvrez les designs uniques des logos du football africain. Des clubs historiques comme Al Ahly aux équipes émergentes, explorez l'art et l'identité du football continental.",
   date: "2024-03-08",
+  galleryImageId: 50,
   content: `Design et Identité du Football Africain
 
 Le football africain présente une richesse visuelle unique, mêlant traditions ancestrales et design contemporain.

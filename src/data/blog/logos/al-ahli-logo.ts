@@ -6,6 +6,7 @@ export const alAhliLogoPost: BlogPost = {
   title: "Logo Al Ahli : Histoire et Évolution de l'Emblème du Club Saoudien [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo Al Ahli, son évolution au fil des ans et la signification de ses symboles pour ce grand club saoudien.",
   date: "2025-04-08",
+  galleryImageId: 52,
   content: `# L'Histoire Fascinante du Logo Al Ahli Saudi
 
 Le **logo Al Ahli** est bien plus qu'un simple emblème sportif : c'est un symbole de fierté nationale et d'excellence footballistique qui représente l'un des clubs les plus prestigieux d'Arabie Saoudite. Plongeons dans l'histoire captivante de ce **al ahly logo** qui est devenu une icône du football moyen-oriental.
@@ -44,5 +45,4 @@ Alors que le club poursuit son développement et sa quête de nouveaux succès, 
   keywords: "logo al ahli, al ahly logo, al ahly logo png, al ahli saudi logo club, logo al ahli sc, emblème al ahli, écusson al ahli, al ahli football logo, club al ahli logo, al ahli sc, al ahli saudi fc logo, logo du club al ahli, al ahli jeddah logo, saudi arabian club logos",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 239
 };

@@ -5,6 +5,7 @@ export const logosFootPdfPost: BlogPost = {
   title: "1001 logos des clubs de foot PDF : Guide complet des ressources disponibles",
   excerpt: "Découvrez notre analyse des collections de logos de football au format PDF, leurs limites et pourquoi notre pack premium offre une meilleure alternative que les '1001 logos des clubs de foot PDF' gratuits.",
   date: "2023-10-18",
+  galleryImageId: 45,
   content: `
 # **1001 logos des clubs de foot PDF** : Le guide définitif des ressources disponibles
 

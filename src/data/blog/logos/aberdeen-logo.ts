@@ -6,6 +6,7 @@ export const aberdeenLogoPost: BlogPost = {
   title: "**Aberdeen Logo** : Histoire et Evolution de l'Emblème Écossais [2024]",
   excerpt: "Découvrez l'histoire fascinante de l'**Aberdeen FC logo**, emblème iconique du football écossais. Une analyse détaillée du **Aberdeen Football Club logo** et de son évolution au fil des années.",
   date: "2024-04-19",
+  galleryImageId: 46,
   category: "logos",
   content: `# Histoire de l'**Aberdeen Logo**
 
@@ -55,6 +56,5 @@ Le **Logo Aberdeen FC** trouve diverses applications commerciales. Les maillots 
 
 L'**Aberdeen logo** demeure un symbole fort du football écossais, alliant histoire et modernité. L'**Aberdeen FC logo** continue d'évoluer tout en préservant son héritage centenaire, illustrant parfaitement l'équilibre entre tradition et innovation dans l'identité visuelle d'un club historique.`,
   keywords: "aberdeen logo, aberdeen fc logo, aberdeen football club logo, aberdeen logo png, logo aberdeen fc, football écossais, club écossais, identité visuelle",
-  galleryImageId: null
 };
 

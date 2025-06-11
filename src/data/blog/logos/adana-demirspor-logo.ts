@@ -6,6 +6,7 @@ export const adanaDemirsporLogoPost: BlogPost = {
   title: "**Logo Adana Demirspor** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Adana Demirspor**, un symbole d'identité et de fierté du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",
+  galleryImageId: 48,
   content: `# L'Histoire Fascinante du **Logo Adana Demirspor**
 
 Le **logo Adana Demirspor** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une institution historique du football turc. Le club, fondé en 1940, arbore fièrement un **Adana Demirspor logo** qui incarne l'esprit et les valeurs de cette équipe emblématique.
@@ -72,6 +73,5 @@ Le **logo Adana Demirspor** continue d'évoluer tout en préservant son essence 
   keywords: "logo adana demirspor, adana demirspor logo, adana demirspor logo png, football turc, super lig, emblème club turc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 570
 };
 

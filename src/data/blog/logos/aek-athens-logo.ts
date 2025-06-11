@@ -6,6 +6,7 @@ export const aekAthensLogoPost: BlogPost = {
   title: "Logo AEK Athens : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
   excerpt: "Découvrez l'histoire complète et la signification du logo de l'AEK Athènes : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",
+  galleryImageId: 49,
   content: `# L'Histoire Fascinante du **Logo AEK Athens**
 
 Le **AEK Athens logo** représente l'un des symboles les plus emblématiques du football grec et européen. Fondé en 1924 par des réfugiés grecs de Constantinople, l'Athletic Union of Constantinople (AEK) arbore un emblème chargé d'histoire et de signification qui reflète son héritage unique et sa mission sportive. Dans cet article, nous explorerons en profondeur l'histoire, l'évolution et la symbolique du **logo AEK Athènes**.
@@ -74,5 +75,4 @@ Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou en vers
   keywords: "aek athens logo, logo aek athens, aek athens logo png, aek athenes logo, aek athens fc logo, aek athens logo foot, aek athens png logo, aek athènes logo png, athènes aek logo, logo aek athenes, logo aek athènes, logo foot aek athenes, logo foot aek athènes, logo png aek athenes, logo png aek athens",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 344
 };

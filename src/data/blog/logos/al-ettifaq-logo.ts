@@ -6,6 +6,7 @@ export const alEttifaqLogoPost: BlogPost = {
   title: "**Logo Al Ettifaq** : Histoire et Évolution de l'Emblème du Club Saoudien [2024]",
   excerpt: "Plongez dans l'histoire fascinante du **logo Al Ettifaq**, ses transformations au fil des années et sa symbolique dans le football saoudien dans notre analyse détaillée de cet emblème distinctif.",
   date: "2025-04-14",
+  galleryImageId: 53,
   content: `# L'Histoire du **Logo Al Ettifaq**
 
 Le **logo al ettifaq** est l'un des emblèmes les plus reconnaissables du football saoudien, représentant un club avec une riche histoire et tradition. Sa conception distinctive capture l'essence du club et son héritage culturel profond.
@@ -62,5 +63,4 @@ En téléchargeant le **al ettifaq logo png**, les supporters peuvent facilement
   keywords: "al ettifaq logo png:20, logo al ettifaq:10, al-ettifaq club logo:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

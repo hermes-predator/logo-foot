@@ -6,6 +6,7 @@ export const alHilalLogoPost: BlogPost = {
   title: "Le Logo Al-Hilal : Histoire et Design de l'Emblème du Géant Saoudien",
   excerpt: "Découvrez l'histoire et l'évolution du logo Al-Hilal, le plus grand club d'Arabie Saoudite. Analyse complète du design, des couleurs et de la signification de l'emblème du club.",
   date: "2024-04-07",
+  galleryImageId: 54,
   content: `# **Logo Al-Hilal** : Histoire et Evolution du Symbole du Club Saoudien
 
 ## L'histoire fascinante du **logo Al Hilal**

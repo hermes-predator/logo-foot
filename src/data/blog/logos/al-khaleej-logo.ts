@@ -6,6 +6,7 @@ export const alKhaleejLogoPost: BlogPost = {
   title: "**Al Khaleej Logo** : L'Emblème d'un Club Ambitieux [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification du **Al Khaleej logo**, symbole d'un club en pleine ascension dans le football saoudien. Une analyse détaillée de son design unique.",
   date: "2024-04-22",
+  galleryImageId: 56,
   content: `# L'Histoire Fascinante du **Al Khaleej Logo**
 
 Le **Al Khaleej logo** incarne l'identité visuelle d'un club qui ne cesse de grandir dans le paysage footballistique saoudien. Fondé à Saihat, le club a développé une image de marque distinctive qui reflète son ambition et ses racines culturelles profondes.

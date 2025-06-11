@@ -6,6 +6,7 @@ export const alNassrLogoPost: BlogPost = {
   title: "Logo Al Nassr : Histoire et Évolution de l'Emblème Saoudien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Al Nassr : origines, signification et évolution de l'emblème du célèbre club saoudien de football. Analyse détaillée avec téléchargement PNG.",
   date: "2024-04-15",
+  galleryImageId: 57,
   content: `# L'Histoire Fascinante du Logo Al Nassr
 
 Le **logo Al Nassr** est devenu l'un des emblèmes les plus reconnaissables du football moyen-oriental. Cet article explore en détail l'histoire et le design de cet emblème iconique qui a gagné une notoriété mondiale, en particulier depuis l'arrivée de stars internationales dans le championnat saoudien.
@@ -56,5 +57,4 @@ La trajectoire future du **Al-Nassr logo** sera sans doute aussi fascinante que 
   keywords: "logo al nassr, al nassr logo, al nassr logo png, al-nassr fc logo, logo al nassr fc, logo al nassr png, logo de al nassr, al-nassr logo, football saoudien, emblème al nassr, club saoudien, design logo football",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 50
 };

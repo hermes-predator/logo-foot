@@ -6,6 +6,7 @@ export const alIttihadLogoPost: BlogPost = {
   title: "Logo Al-Ittihad : Histoire et Symboles de l'Emblème du Club Saoudien [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo Al-Ittihad, son évolution au fil des ans et la signification de ses symboles pour ce prestigieux club saoudien.",
   date: "2025-04-08",
+  galleryImageId: 55,
   content: `# L'Histoire Fascinante du **Logo Al-Ittihad**
 
 Le **al-ittihad logo** représente l'un des clubs de football les plus emblématiques et les plus titrés d'Arabie Saoudite. Fondé en 1927 à Djeddah, l'Al-Ittihad Club est considéré comme le plus ancien club du Royaume, et son emblème est le reflet de cette riche histoire et de cette tradition d'excellence sportive. Plongeons dans l'univers captivant du **logo al ittihad** qui est devenu un symbole incontournable du football moyen-oriental.
@@ -66,5 +67,4 @@ Alors que le club poursuit son développement et sa quête de nouveaux succès, 
   keywords: "al-ittihad logo, al-ittihad club logo, al-ittihad logo png, logo al ittihad, al ittihad logo, al ittihad new logo, al ittihad club logo, logo al ittihad png, emblème al-ittihad, écusson al-ittihad, tigres de l'asie logo, club saoudien logo, al-ittihad jeddah logo, saudi arabian club logos",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 240
 };

@@ -6,6 +6,7 @@ export const alShababLogoPost: BlogPost = {
   title: "Logo Al Shabab FC: Histoire, Signification et Evolution [2024]",
   excerpt: "Découvrez tout sur le logo d'Al Shabab FC, le club emblématique saoudien. Analyse complète de son design, son histoire et téléchargez le logo Al Shabab FC PNG en haute définition.",
   date: "2025-04-14",
+  galleryImageId: 58,
   content: `# L'histoire fascinante du **logo Al Shabab**
 
 Al Shabab FC est l'un des clubs les plus prestigieux de la Saudi Pro League, avec une identité visuelle reconnaissable et appréciée par les fans de football du monde entier. Fondé en 1947 à Riyadh, le club a développé une identité visuelle qui reflète son héritage et ses ambitions.
@@ -77,5 +78,4 @@ Le **logo Al Shabab** est bien plus qu'un simple emblème sportif - c'est un sym
   keywords: "logo Al Shabab, Al Shabab FC logo PNG, logo club saoudien, emblème Al Shabab, design logo football, Saudi Pro League logos, club football Riyadh",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

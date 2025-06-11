@@ -5,6 +5,7 @@ export const almeriaLogoPost: BlogPost = {
   id: 64, // ID unique pour ce nouvel article
   title: "Logo Almeria : Histoire et Évolution de l'Emblème du Club Andalou [2024]",
   date: "2025-04-11",
+  galleryImageId: 64,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Almeria, emblème du club andalou. Analyse complète des symboles et des couleurs du blason d'UD Almeria.",
@@ -101,5 +102,4 @@ Pour les habitants d'Almería et les supporters du club, le **ud almeria logo** 
 
 Le **almeria foot logo** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré sa jeunesse relative, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "almeria logo, almeria logo png, logo almeria, ud almeria logo, logo de almeria, almeria foot logo",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

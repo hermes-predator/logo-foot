@@ -5,6 +5,7 @@ export const allsvenskanLogoPost: BlogPost = {
   id: 62,
   title: "Logo Allsvenskan : Histoire et Évolution du Design du Championnat Suédois",
   date: "2025-04-25",
+  galleryImageId: 62,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo Allsvenskan, symbole du prestigieux championnat de football suédois. Une analyse détaillée de son design et de son évolution au fil des années.",
   content: `# Logo Allsvenskan : Histoire et Évolution du Design du Championnat Suédois

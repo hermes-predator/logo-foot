@@ -6,6 +6,7 @@ export const arminiaBielefeldLogoPost: BlogPost = {
   title: "**Logo Arminia Bielefeld** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Arminia Bielefeld**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
   date: "2025-04-14",
+  galleryImageId: 80,
   content: `# L'Histoire du **Logo Arminia Bielefeld**
 
 Le **arminia bielefeld logo** est l'un des emblèmes les plus distinctifs du football allemand. Avec son design unique et ses couleurs caractéristiques, le **logo arminia bielefeld** raconte l'histoire riche d'un club qui a connu des hauts et des bas tout au long de son existence.
@@ -95,5 +96,4 @@ Alors que le club traverse les différentes phases de son histoire sportive, ent
   keywords: "arminia bielefeld logo:20, logo arminia bielefeld:20, arminia bielefeld logo png:10, arminia bielefeld logos:10, logo de foot arminia bielefeld en allemagne:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

@@ -6,6 +6,7 @@ export const ancienLogoJuventusPost: BlogPost = {
   title: "Ancien Logo Juventus : Histoire et Évolution de l'Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante de l'ancien logo de la Juventus, son héritage emblématique et son évolution avant la révolution de 2017.",
   date: "2024-05-12",
+  galleryImageId: 67,
   content: `# L'Histoire Fascinante de l'**Ancien Logo Juventus**
 
 L'**ancien logo Juventus** est bien plus qu'un simple symbole disparu : c'est une pièce majeure du patrimoine du football mondial qui a représenté pendant des décennies l'une des institutions sportives les plus prestigieuses d'Europe. Plongeons dans l'univers fascinant du **juventus ancien logo** pour comprendre son évolution et sa signification historique.

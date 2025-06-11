@@ -6,6 +6,7 @@ export const argentinosJuniorsLogoPost: BlogPost = {
   title: "**Logo Argentinos Juniors** : Histoire et Symbolisme [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **Argentinos Juniors logo**, emblème historique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo Argentinos Junior**.",
   date: "2024-04-22",
+  galleryImageId: 78,
   content: `# L'Histoire du **Logo Argentinos Juniors**
 
 Le **logo Argentinos Juniors PNG** représente l'un des emblèmes les plus emblématiques du football argentin. Ce club historique, berceau de Diego Maradona, arbore fièrement un **logo de foot Argentinos Juniors Argentine** qui raconte une histoire riche de tradition et de passion.

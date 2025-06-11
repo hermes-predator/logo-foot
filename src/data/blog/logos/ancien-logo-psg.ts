@@ -6,6 +6,7 @@ export const ancienLogoPsgPost: BlogPost = {
   title: "Ancien Logo PSG : Histoire et Évolution des Logos Historiques [2024]",
   excerpt: "Découvrez l'histoire complète des anciens logos du PSG : origines, évolution et signification des emblèmes historiques du Paris Saint-Germain depuis sa création.",
   date: "2024-06-01",
+  galleryImageId: 69,
   content: `# L'Histoire Fascinante des **Ancien Logo PSG**
 
 L'évolution des **ancien logo psg** raconte l'histoire d'un club qui est passé d'une équipe locale parisienne à une marque mondiale du football. Chaque **logo psg ancien** représente une époque distincte de l'histoire du club, reflétant non seulement les changements esthétiques mais aussi les transformations profondes de l'identité du Paris Saint-Germain au fil des décennies.
@@ -66,6 +67,5 @@ La coexistence du logo moderne avec les références aux **psg ancien logo** ill
   keywords: "ancien logo psg, logo psg ancien, psg ancien logo, ancien logo du psg, drapeau psg ancien logo, psg logo ancien",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 166
 };
 

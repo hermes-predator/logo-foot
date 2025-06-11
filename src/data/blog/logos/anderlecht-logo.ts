@@ -6,6 +6,7 @@ export const anderlechtLogoPost: BlogPost = {
   title: "Logo Anderlecht : Histoire et Signification du RSC Anderlecht Logo [2024]",
   excerpt: "Découvrez l'histoire complète du logo RSC Anderlecht : origines, évolution et symbolisme de l'emblème du club belge le plus titré.",
   date: "2024-04-10",
+  galleryImageId: 71,
   content: `# L'Histoire Fascinante du **Logo Anderlecht**
 
 Le **anderlecht logo** représente l'un des clubs les plus prestigieux et titrés du football belge. Le Royal Sporting Club Anderlecht, fondé en 1908, arbore un emblème qui incarne son riche héritage et son identité profondément ancrée dans le paysage footballistique belge. Plongeons dans l'analyse détaillée du **logo anderlecht** et découvrons ce qui fait sa particularité.
@@ -52,5 +53,4 @@ En définitive, le **logo anderlecht** est bien plus qu'un simple emblème sport
   keywords: "anderlecht logo, logo anderlecht, anderlecht logo png, logo anderlecht png, logo rsc anderlecht, rsc anderlecht logo, rsc anderlecht logo png, anderlecht logo jpg, logo de foot anderlecht, logo foot anderlecht, logo png anderlecht",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 201
 };

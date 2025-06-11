@@ -5,6 +5,7 @@ export const argentinaLogoPost: BlogPost = {
   title: "Logo Argentine : Histoire et Évolution de l'Emblème de l'Albiceleste [2024]",
   excerpt: "Découvrez l'histoire complète du logo Argentine, son évolution et sa signification. Analyse détaillée de l'emblème de la sélection championne du monde et téléchargez le logo Argentine foot en PNG haute qualité.",
   date: "2024-05-28",
+  galleryImageId: 77,
   content: `# L'Histoire Passionnante du **Logo Argentine**
 
 Le **logo argentine** est bien plus qu'un simple emblème sportif : c'est un symbole national qui représente la passion d'un pays entier pour le football. Cet écusson emblématique de la fédération argentine de football (AFA) a traversé plusieurs décennies d'histoire, devenant l'un des logos les plus reconnaissables dans l'univers du football mondial. L'**argentina logo** représente un héritage footballistique exceptionnel, orné de trophées prestigieux et porté par des légendes du ballon rond.
@@ -77,5 +78,4 @@ Pour un usage respectueux de l'image de la sélection argentine, il est recomman
   keywords: "logo argentine, argentine logo, logo argentine foot, argentina logo, logo argentina, logo foot argentine, argentine foot logo, argentine logo foot, logo de l'argentine, argentina football logo, argentina logo png, argentine logo png",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 89
 };

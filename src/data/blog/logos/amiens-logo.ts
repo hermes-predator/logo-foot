@@ -6,6 +6,7 @@ export const amiensLogoPost: BlogPost = {
   title: "Logo Amiens : Histoire et Design de l'Emblème Picard [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Amiens SC : évolution, symbolisme et design de l'emblème emblématique du club picard, un des emblèmes les plus reconnaissables du football français.",
   date: "2024-05-18",
+  galleryImageId: 65,
   content: `# L'Histoire Fascinante du **Logo Amiens**
 
 Le **logo Amiens** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une région et l'incarnation visuelle de valeurs profondément ancrées dans le patrimoine picard. À travers son histoire, le **amiens logo** a su évoluer tout en préservant l'essence même du club qu'il représente fièrement.

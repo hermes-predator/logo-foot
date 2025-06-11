@@ -6,6 +6,7 @@ export const ancienLogoOmPost: BlogPost = {
   title: "Ancien Logo OM : Histoire et Évolution des Emblèmes Historiques de Marseille [2024]",
   excerpt: "Découvrez l'histoire complète de l'ancien logo OM : des origines à aujourd'hui, évolution et signification des emblèmes historiques de l'Olympique de Marseille.",
   date: "2024-07-17",
+  galleryImageId: 68,
   content: `# L'Histoire Fascinante des **Ancien Logo OM**
 
 L'**ancien logo OM** raconte l'histoire riche et passionnante de l'un des clubs les plus emblématiques du football français. Chaque **logo om ancien** représente une époque, une vision et une étape dans la construction de l'identité visuelle qui a façonné la légende olympienne. Plongeons dans cette fascinante évolution des emblèmes qui ont marqué les supporters marseillais à travers les générations.
@@ -103,5 +104,4 @@ Comme de nombreux clubs, l'OM a fait évoluer son **ancien logo de l'om** pour r
   keywords: "ancien logo om, logo om ancien, ancien logo de l'om, om ancien logo, om logo ancien, ancien logo l'om, logo de l om ancien, ancien logo marseille, ancien logo de marseille, logo marseille ancien",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 407
 };

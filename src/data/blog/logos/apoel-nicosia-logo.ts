@@ -5,6 +5,7 @@ export const apoelNicosiaLogoPost: BlogPost = {
   id: 76, // Unique ID for this new article
   title: "APOEL Nicosie Logo : Histoire et Signification de l'Emblème Chypriote [2024]",
   date: "2025-04-11",
+  galleryImageId: 76,
   category: "logos",
   subCategory: "other-european", // European clubs outside the top 5 leagues
   excerpt: "Découvrez l'histoire fascinante et la signification du logo APOEL Nicosie, emblème emblématique du club de football chypriote. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe historique de Chypre.",
@@ -157,5 +158,4 @@ La combinaison distinctive de bleu et de jaune, centrée sur un bouclier emblém
 
 À mesure que le club poursuit son ascension sportive, son emblème continuera d'évoluer tout en préservant l'essence qui en fait un design si particulier dans le paysage du football européen. Le **logo APOEL Nicosie PNG** reste ainsi un parfait exemple de la façon dont un emblème sportif peut incarner l'âme et l'histoire d'un club, d'une ville et d'une nation tout entière.`,
   keywords: "logo APOEL Nicosie, APOEL Nicosie logo png, logo APOEL Nicosie png, logo club APOEL Nicosie, logo foot APOEL Nicosie, APOEL Nicosie logo",
-  galleryImageId: null // To be replaced with the ID of the image when available
 };

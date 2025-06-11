@@ -6,6 +6,7 @@ export const antalyasporLogoPost: BlogPost = {
   title: "**Logo Antalyaspor** : Histoire et Évolution de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Antalyaspor**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
+  galleryImageId: 75,
   content: `# L'Histoire Fascinante du **Logo Antalyaspor**
 
 Le **logo antalyaspor** représente bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité et la fierté d'une ville entière. Le **logo Antalyaspor** raconte l'histoire d'un club qui s'est imposé comme l'une des forces majeures du football turc.
@@ -76,5 +77,4 @@ Le **logo antalyaspor** s'exprime sur de multiples supports :
   keywords: "antalyaspor logo, logo antalyaspor, logo de foot antalyaspor turquie",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 569
 };

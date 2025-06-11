@@ -6,6 +6,7 @@ export const angersLogoPost: BlogPost = {
   title: "Logo Angers SCO : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Angers SCO, son symbolisme et comment l'emblème représente l'identité du club angevin au fil des années.",
   date: "2024-04-20",
+  galleryImageId: 72,
   content: `# L'Histoire Fascinante du **Logo Angers**
 
 Le **logo angers** est l'un des emblèmes les plus emblématiques du football français, incarnant l'identité et les valeurs d'un club historique. Approfondissons l'histoire et les détails de ce symbole qui représente la fierté de toute une ville et de générations de supporters.
@@ -90,5 +91,4 @@ Le **logo angers** représente bien plus qu'un simple symbole graphique pour un 
   keywords: "logo angers, angers logo, logo angers sco, logo sco angers, angers sco logo, sco angers logo, angers fc logo, angers sco logo png, logo angers foot, logo angers png, angers logo foot, angers logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 63
 };

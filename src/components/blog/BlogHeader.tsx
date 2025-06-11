@@ -5,7 +5,7 @@ const BlogHeader = () => {
   return (
     <div className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="text-sm md:text-base text-gray-400 mb-2 text-center">Blog</div>
+        <div className="text-sm md:text-base text-gray-400 mb-8 text-center">Blog</div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Vous cherchez tous les logos de foot ?
         </h1>

@@ -9,7 +9,9 @@ const BlogHeader = () => {
           Blog Logo Foot
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-          Découvrez l'univers des logos de football : analyses, histoires et évolutions des emblèmes des plus grands clubs du monde
+          Vous cherchez tous les logos de foot ?<br />
+          Téléchargez + de 8 600 LOGOS de Clubs de Football organisés par pays.<br /><br />
+          Obtenez toutes les ressources dans un fichier ZIP complet.
         </p>
       </div>
     </div>

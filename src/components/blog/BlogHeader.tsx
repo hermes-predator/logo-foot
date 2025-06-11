@@ -47,7 +47,7 @@ const BlogHeader = () => {
                 <TooltipContent className="bg-gray-900 border-gray-700 text-white p-3">
                   <div className="text-sm">
                     <div className="font-semibold mb-2">⦗FRONT-CLOUD⦘~ Football.zip</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="grid grid-cols-2 gap-2">
                       <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                         1 fichier ZIP
                       </Badge>

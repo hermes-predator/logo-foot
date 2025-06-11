@@ -17,7 +17,7 @@ const BlogHeader = () => {
         </p>
         
         {/* Badge Google Drive */}
-        <div className="flex justify-center">
+        <div className="flex justify-start">
           <GoogleDriveBadge />
         </div>
       </div>

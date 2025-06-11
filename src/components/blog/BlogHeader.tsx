@@ -36,12 +36,11 @@ const BlogHeader = () => {
                 <TooltipTrigger asChild>
                   <Button 
                     variant="outline" 
-                    size="lg" 
-                    className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 transition-all duration-300"
+                    className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 transition-all duration-300 h-16 px-6 py-4 text-lg gap-3"
                   >
-                    <Folder className="h-5 w-5" />
+                    <Folder className="h-6 w-6" />
                     Voir le fichier
-                    <ArrowRight className="h-5 w-5" />
+                    <ArrowRight className="h-6 w-6" />
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent className="bg-gray-900 border-gray-700 text-white p-3">

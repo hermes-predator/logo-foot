@@ -2,6 +2,7 @@
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Folder, ArrowRight } from 'lucide-react';
 
@@ -45,11 +46,21 @@ const BlogHeader = () => {
                 </TooltipTrigger>
                 <TooltipContent className="bg-gray-900 border-gray-700 text-white p-3">
                   <div className="text-sm">
-                    <div className="font-semibold mb-1">⦗FRONT-CLOUD⦘~ Football.zip</div>
-                    <div>1 fichier ZIP</div>
-                    <div>66 collections</div>
-                    <div>8 774 logos</div>
-                    <div>Format PNG</div>
+                    <div className="font-semibold mb-2">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                        1 fichier ZIP
+                      </Badge>
+                      <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                        66 collections
+                      </Badge>
+                      <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                        8 774 logos
+                      </Badge>
+                      <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                        Format PNG
+                      </Badge>
+                    </div>
                   </div>
                 </TooltipContent>
               </Tooltip>

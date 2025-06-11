@@ -6,6 +6,7 @@ import BlogImage from './BlogImage';
 import { generatePostUrl } from '../../utils/slugUtils';
 import { formatDate } from '../../utils/dateUtils';
 import { useReadingTime } from '../../hooks/useReadingTime';
+import { useContextualImage } from '../../hooks/useContextualImage';
 import { BLOG_CATEGORIES } from '../../types/blog';
 import { Badge } from '../ui/badge';
 import { Clock, Folder } from 'lucide-react';
@@ -18,13 +19,20 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const postUrl = generatePostUrl(post.id, post.title);
   const readingTime = useReadingTime(post.content);
   const categoryInfo = BLOG_CATEGORIES[post.category];
+  
+  // Utiliser le hook pour gérer les deux types d'images
+  const { imageSrc } = useContextualImage({
+    customSrc: post.coverImage,
+    imageId: post.galleryImageId || undefined,
+    context: 'blog'
+  });
 
   return (
     <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 active:scale-[0.98] hover:border-blue-200">
       <Link to={postUrl} className="block">
         <div className="relative overflow-hidden">
           <BlogImage 
-            src={post.coverImage || '/placeholder.svg'}
+            src={imageSrc}
             alt={post.title}
             className="w-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
             aspectRatio={1}

@@ -109,12 +109,14 @@ const BlogHeader = () => {
       <div className="relative z-20 text-white text-center mb-8">
         <p className="text-base font-normal">
           Aperçu de quelques collections : 
-          <span className="inline-block ml-2 px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm"
-                style={{
-                  animation: 'blink 1s infinite'
-                }}>
-            ⦗FRONT-CLOUD⦘~ Football.zip
-          </span>
+          <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
+            <span className="px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300"
+                  style={{
+                    animation: 'blink 1s infinite'
+                  }}>
+              ⦗FRONT-CLOUD⦘~ Football.zip
+            </span>
+          </Link>
         </p>
       </div>
       

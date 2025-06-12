@@ -37,7 +37,7 @@ const BlogCategorySelector = ({
           ) : (
             <Link 
               to="/blog" 
-              className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
+              className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-md"
             >
               Tout
             </Link>
@@ -56,7 +56,7 @@ const BlogCategorySelector = ({
               <Link 
                 key={key} 
                 to={`/blog?category=${key}`} 
-                className="px-4 py-2 rounded-full text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 whitespace-nowrap bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 hover:border-gray-300 hover:shadow-md"
+                className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-md"
               >
                 {category.name}
               </Link>

@@ -33,7 +33,7 @@ const BlogHeaderCarousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-[1200px] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[1200px] mx-auto px-4">
+    <div className="w-full max-w-[1400px] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[1400px] mx-auto px-4">
       <Carousel
         opts={{
           align: "start",
@@ -43,15 +43,15 @@ const BlogHeaderCarousel = () => {
       >
         <CarouselContent>
           {carouselImages.map((image, index) => (
-            <CarouselItem key={index} className="basis-1/2">
-              <div className="p-2">
+            <CarouselItem key={index} className="basis-1/2 md:basis-1/3">
+              <div className="p-3">
                 <Link to="/" className="block">
                   <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-xl">
                     <OptimizedImage
                       src={image.src}
                       alt={image.alt}
-                      width={540}
-                      height={540}
+                      width={640}
+                      height={640}
                       aspectRatio={1}
                       className="w-full h-full object-cover drop-shadow-md"
                       priority={index < 3}

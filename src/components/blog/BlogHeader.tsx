@@ -37,13 +37,14 @@ const BlogHeader = () => {
               <h1 className="text-2xl md:text-3xl font-bold mb-3">
                 Vous cherchez tous les logos de foot ?
               </h1>
-              <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-3">
+              <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
-                <br />
-                <span className="text-sm font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
+              </p>
+              <p className="text-sm font-normal mb-3">
+                Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
               
               {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}

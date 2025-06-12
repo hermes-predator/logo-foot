@@ -98,26 +98,27 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Ligne de séparation */}
-      <div className="relative z-20 px-4">
-        <div className="container mx-auto">
-          <Separator className="bg-white/30 mb-4" />
+      {/* Ligne de séparation avec texte superposé */}
+      <div className="relative z-20 px-4 mb-8">
+        <div className="container mx-auto relative">
+          <Separator className="bg-white/30" />
+          {/* Texte centré sur la ligne */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="bg-gradient-to-r from-gray-900 via-black to-gray-800 px-4">
+              <p className="text-white text-base font-normal whitespace-nowrap">
+                Aperçu de quelques collections : 
+                <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
+                  <span className="px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300"
+                        style={{
+                          animation: 'blink 1s infinite'
+                        }}>
+                    ⦗FRONT-CLOUD⦘~ Football.zip
+                  </span>
+                </Link>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      {/* Texte d'aperçu des collections */}
-      <div className="relative z-20 text-white text-center mb-8">
-        <p className="text-base font-normal">
-          Aperçu de quelques collections : 
-          <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-            <span className="px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300"
-                  style={{
-                    animation: 'blink 1s infinite'
-                  }}>
-              ⦗FRONT-CLOUD⦘~ Football.zip
-            </span>
-          </Link>
-        </p>
       </div>
       
       {/* Carrousel en superposition qui déborde légèrement - remonté davantage */}

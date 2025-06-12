@@ -48,8 +48,8 @@ const BlogHeaderCarousel = () => {
                   <OptimizedImage
                     src={image.src}
                     alt={image.alt}
-                    width={550}
-                    height={550}
+                    width={580}
+                    height={580}
                     aspectRatio={1}
                     className="w-full h-full object-cover"
                     priority={index < 3}

@@ -40,7 +40,7 @@ const BlogHeader = () => {
               <p className="text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed mb-6">
                 Téléchargez <span className="font-bold underline">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
                 <br /><br />
-                Obtenez toutes les ressources dans un fichier ZIP complet.
+                <span className="text-sm md:text-base">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
               </p>
               
               {/* Badge Google Drive avec bords carrés et lien vers l'accueil */}

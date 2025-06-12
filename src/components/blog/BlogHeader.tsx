@@ -31,10 +31,10 @@ const BlogHeader = () => {
         <div className="container mx-auto px-4 pt-6 pb-16">
           <div className="text-sm md:text-base text-gray-400 mb-8 text-center">Blog</div>
           
-          <div className="flex flex-col gap-6">
-            {/* Contenu principal */}
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            {/* Contenu principal à gauche */}
             <div className="flex-1">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 Vous cherchez tous les logos de foot ?
               </h1>
               <p className="font-semibold text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed mb-6">
@@ -51,8 +51,8 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Bouton et badge en bas */}
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+            {/* Bouton et badge à droite */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-4">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

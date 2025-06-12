@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { OptimizedImage } from '@/components/ui/optimized-image';
@@ -35,7 +36,7 @@ const BlogHeaderCarousel = () => {
       <Carousel
         opts={{
           align: "start",
-          loop: true,
+          loop: false,
         }}
         className="w-full"
       >

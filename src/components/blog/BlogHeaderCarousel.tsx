@@ -85,20 +85,41 @@ const BlogHeaderCarousel = () => {
         <CarouselNext className="bg-white/20 border-white/30 text-white hover:bg-white/30" />
       </Carousel>
       
-      {/* Navigation indicators */}
-      <div className="flex justify-center items-center space-x-2 mt-4">
+      {/* Navigation indicators modernisés */}
+      <div className="flex justify-center items-center gap-3 mt-6">
         {Array.from({ length: count }, (_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            className={`group relative overflow-hidden transition-all duration-500 ease-out ${
               index + 1 === current
-                ? 'bg-white scale-125'
-                : 'bg-white/40 hover:bg-white/60'
+                ? 'w-8 h-3 bg-gradient-to-r from-white to-white/80 rounded-full shadow-lg'
+                : 'w-3 h-3 bg-white/30 hover:bg-white/50 rounded-full hover:scale-110'
             }`}
             onClick={() => api?.scrollTo(index)}
             aria-label={`Aller à la slide ${index + 1}`}
-          />
+          >
+            {/* Effet de brillance pour l'indicateur actif */}
+            {index + 1 === current && (
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out rounded-full" />
+            )}
+            
+            {/* Effet de pulse subtil pour l'indicateur actif */}
+            {index + 1 === current && (
+              <div className="absolute inset-0 bg-white/20 rounded-full animate-ping" />
+            )}
+          </button>
         ))}
+      </div>
+      
+      {/* Texte informatif modernisé */}
+      <div className="flex justify-center mt-4">
+        <div className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" />
+          <span className="text-white/80 text-sm font-medium">
+            {current} / {count}
+          </span>
+          <div className="w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+        </div>
       </div>
     </div>
   );

@@ -46,14 +46,14 @@ const BlogHeaderCarousel = () => {
             <CarouselItem key={index} className="basis-1/2">
               <div className="p-2">
                 <Link to="/" className="block">
-                  <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer">
+                  <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-xl">
                     <OptimizedImage
                       src={image.src}
                       alt={image.alt}
                       width={540}
                       height={540}
                       aspectRatio={1}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover drop-shadow-md"
                       priority={index < 3}
                     />
                   </div>

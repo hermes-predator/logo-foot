@@ -104,11 +104,11 @@ const BlogHeader = () => {
           <Separator className="bg-white/30" />
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-gradient-to-r from-gray-900 via-black to-gray-800 px-4">
+            <div className="bg-gradient-to-r from-gray-900 via-black to-gray-800 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm">
               <p className="text-white text-base font-normal whitespace-nowrap">
                 Aperçu de quelques collections : 
                 <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-                  <span className="px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300"
+                  <span className="px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300 shadow-md"
                         style={{
                           animation: 'blink 1s infinite'
                         }}>

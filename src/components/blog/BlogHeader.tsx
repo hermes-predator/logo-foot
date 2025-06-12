@@ -14,12 +14,12 @@ import { Link } from 'react-router-dom';
 const BlogHeader = () => {
   return (
     <div className="w-full relative overflow-hidden">
-      {/* Gradient gris-noir en arrière-plan */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900 to-black">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-gray-900/20 to-black/40 animate-pulse"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/60 via-transparent to-black/50" 
+      {/* Gradient gris-noir éclairci en arrière-plan */}
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-600/30 via-gray-700/20 to-gray-800/40 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-gray-700/60 via-transparent to-gray-800/50" 
              style={{
-               background: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(31,41,55,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(55,65,81,0.3) 75%, rgba(0,0,0,0.9) 100%)',
+               background: 'linear-gradient(45deg, rgba(55,65,81,0.9) 0%, rgba(75,85,99,0.4) 25%, rgba(55,65,81,0.8) 50%, rgba(107,114,128,0.3) 75%, rgba(55,65,81,0.9) 100%)',
                backgroundSize: '400% 400%',
                animation: 'gradientShift 8s ease-in-out infinite'
              }}></div>
@@ -104,7 +104,7 @@ const BlogHeader = () => {
           <Separator className="bg-white/30" />
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative bg-gradient-to-r from-gray-950 via-gray-900 to-black px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm overflow-hidden">
+            <div className="relative bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm overflow-hidden">
               {/* Effet de brillance qui traverse tout le container */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></div>
               <p className="text-white text-base font-normal whitespace-nowrap relative z-10">

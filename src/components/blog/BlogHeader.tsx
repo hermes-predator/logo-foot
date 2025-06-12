@@ -107,7 +107,7 @@ const BlogHeader = () => {
       <div className="relative z-20 text-white text-center mb-12">
         <p className="text-lg font-normal">
           Aperçu de quelques collections : 
-          <span className="inline-block ml-2 px-3 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20"
+          <span className="inline-block ml-2 px-2 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20 font-bold text-sm"
                 style={{
                   animation: 'blink 2s infinite'
                 }}>

@@ -33,7 +33,7 @@ const BlogHeader = () => {
           
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             {/* Contenu principal à gauche */}
-            <div className="flex-1">
+            <div className="flex-1 pl-4 lg:pl-8">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 Vous cherchez tous les logos de foot ?
               </h1>

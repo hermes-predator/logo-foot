@@ -86,7 +86,7 @@ const BlogHeaderCarousel = () => {
       </Carousel>
       
       {/* Navigation indicators modernisés */}
-      <div className="flex justify-center items-center gap-3 mt-8">
+      <div className="flex justify-center items-center gap-3 mt-8 mb-6">
         {Array.from({ length: count }, (_, index) => (
           <button
             key={index}

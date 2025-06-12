@@ -6,6 +6,7 @@ export const blackburnRoversLogoPost: BlogPost = {
   title: "**Logo Blackburn Rovers FC** : Histoire et Evolution de l'Emblème des Blues [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Blackburn Rovers**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 114,
   content: `# **Logo Blackburn Rovers FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
 
 Le **logo Blackburn Rovers** représente bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1875. Dans cet article approfondi, découvrez l'évolution fascinante du **Blackburn Rovers logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -49,5 +50,4 @@ L'emblème du **Blackburn Rovers FC** illustre remarquablement comment un logo s
   keywords: "blackburn logo:20, blackburn rovers fc logo:20, blackburn rovers logo:20, logo blackburn:20, logo blackburn rovers:20, blackburn club foot logo:10, blackburn foot logo:10, blackburn rovers new logo:10, logo blackburn fc:10, logo de foot blackburn:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 373
 };

@@ -5,6 +5,7 @@ export const bergeracLogoPost: BlogPost = {
   id: 111,
   title: "**Logo Bergerac** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 111,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo Bergerac**, son évolution et sa signification. Guide complet sur l'emblème du **Bergerac Périgord FC** avec analyse détaillée de son identité visuelle.",
   content: `# Guide Complet du **Logo Bergerac**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo bergerac** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du Bergerac Périgord FC.`,
   keywords: "logo bergerac, bergerac logo, logo bergerac foot, bergerac fc logo, bergerac logo png, bergerac perigord fc logo, fc bergerac logo, logo de bergerac",
-  galleryImageId: null
 };

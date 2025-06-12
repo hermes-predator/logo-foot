@@ -6,7 +6,7 @@ export const boavistaLogoPost: BlogPost = {
   title: "Logo Boavista FC : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Boavista FC : origines, évolution et signification des symboles de l'emblème du club à l'échiquier noir et blanc.",
   date: "2024-08-31",
-  galleryImageId: 331,
+  galleryImageId: 117,
   content: `# L'Histoire Emblématique du **Logo Boavista FC**
 
 Le **logo boavista fc** représente l'un des emblèmes les plus distinctifs et reconnaissables du football portugais. Avec son motif d'échiquier noir et blanc caractéristique, le **boavista logo** s'est imposé comme un symbole fort dans le paysage footballistique, non seulement au Portugal mais également sur la scène internationale.

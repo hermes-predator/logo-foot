@@ -5,6 +5,7 @@ export const azAlkmaarLogoPost: BlogPost = {
   id: 98,
   title: "Logo AZ Alkmaar : Histoire et évolution de l'emblème du club néerlandais",
   date: "2025-04-11",
+  galleryImageId: 98,
   category: "logos",
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire et l'évolution du logo AZ Alkmaar, l'un des clubs les plus emblématiques du football néerlandais. Analysez les symboles et les couleurs qui ont façonné l'identité visuelle de ce club historique.",
@@ -130,5 +131,4 @@ Les lettres "AZ" dans le **logo AZ Alkmaar** représentent "Alkmaar Zaanstreek",
 Oui, le **logo AZ Alkmaar PNG** a connu plusieurs évolutions, passant d'un design plus traditionnel à l'emblème moderne et minimaliste que nous connaissons aujourd'hui.
 `,
   keywords: "logo AZ Alkmaar, AZ Alkmaar logo, AZ Alkmaar logo PNG, logo AZ Alkmaar PNG, AZ Alkmaar logo foot, histoire logo AZ Alkmaar, emblème AZ Alkmaar, club néerlandais AZ, Eredivisie logo club, télécharger logo AZ Alkmaar",
-  galleryImageId: null,
 };

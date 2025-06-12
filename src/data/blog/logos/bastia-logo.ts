@@ -6,6 +6,7 @@ export const bastiaLogoPost: BlogPost = {
   title: "Logo Bastia : Histoire et Design de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire complète du logo du SC Bastia : évolution, symbolisme et design de l'emblème emblématique du club de football corse.",
   date: "2024-05-16",
+  galleryImageId: 104,
   content: `# L'Histoire Fascinante du **Logo Bastia**
 
 Le **bastia logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité, de fierté et d'appartenance pour toute une région. Véritable étendard du football corse, le **logo sc bastia** incarne l'histoire riche et mouvementée d'un club qui a su marquer l'histoire du football français et européen.

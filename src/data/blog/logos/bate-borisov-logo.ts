@@ -6,6 +6,7 @@ export const bateBorisoVLogoPost: BlogPost = {
   title: "**BATE Borisov Logo** : Histoire et Design de l'Emblème Footballistique Biélorusse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo BATE Borisov**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 
+  galleryImageId: 105,
   content: `# Histoire du **BATE Borisov Logo**
 
 Le **logo BATE Borisov** est l'emblème d'un club qui incarne la passion et l'histoire du football biélorusse moderne. Le **bate borisov logo** représente parfaitement l'identité unique d'une équipe qui a dominé le championnat national pendant de nombreuses années.
@@ -76,5 +77,4 @@ Le **logo foot bate borisov** s'utilise sur différents supports :
   keywords: "logo bate borisov, bate borisov logo, bate borisov logo png, logo fk bate borisov, logo foot bate borisov, logo png bate borisov",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 562
 };

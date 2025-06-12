@@ -6,6 +6,7 @@ export const ballonDorLogoPost: BlogPost = {
   title: "Logo Ballon d'Or : Histoire et Évolution du Symbole du Football",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo Ballon d'Or, le symbole le plus prestigieux des récompenses individuelles du football mondial.",
   date: "2025-04-10",
+  galleryImageId: 99,
   content: `# **Logo Ballon d'Or** : L'Emblème du Prestige Footballistique
 
 Le **ballon d'or logo** représente bien plus qu'un simple trophée dans l'univers du football. Il symbolise l'excellence, la perfection technique et l'élite mondiale du sport le plus populaire de la planète. Dans cet article, nous allons explorer l'histoire fascinante du **logo ballon d'or**, son évolution au fil des décennies et sa signification profonde pour les joueurs et les fans.

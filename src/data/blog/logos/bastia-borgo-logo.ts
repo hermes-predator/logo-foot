@@ -6,6 +6,7 @@ export const bastiaBorgoLogoPost: BlogPost = {
   title: "**Logo Bastia Borgo** : Histoire et Evolution de l'Emblème Corse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bastia Borgo**, son évolution et la symbolique de cet emblème emblématique du football corse.",
   date: "2024-04-18",
+  galleryImageId: 103,
   content: `# L'Histoire Fascinante du **Logo Bastia Borgo**
 
 Le **logo bastia borgo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité locale qui incarne l'histoire et les traditions du football corse. Le **bastia borgo foot logo** a su évoluer tout en conservant son authenticité et son ancrage territorial.
@@ -64,5 +65,4 @@ Le **logo fc bastia borgo** demeure un symbole fort du football corse, incarnant
   keywords: "logo bastia borgo:20, bastia borgo foot logo:10, bastia borgo logo:10, bastia borgo logo foot:10, bastia borgo logo png:10, logo fc bastia borgo:10",
   category: 'logos',
   subCategory: 'french-clubs',
-  galleryImageId: 561
 };

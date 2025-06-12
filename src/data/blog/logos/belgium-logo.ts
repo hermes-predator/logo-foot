@@ -5,7 +5,7 @@ export const belgiumLogoPost: BlogPost = {
   title: "Logo Belgique : Histoire et Évolution de l'Emblème des Diables Rouges [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Belgique : origines, évolution et symbolisme du célèbre écusson des Diables Rouges, l'une des sélections les plus talentueuses d'Europe.",
   date: "2024-06-05",
-  galleryImageId: 88,
+  galleryImageId: 109,
   content: `# Logo Belgique : L'Histoire de l'Emblème des Diables Rouges
 
 Dans le paysage des emblèmes nationaux du football, le **logo belgique** se distingue par son élégance et sa force symbolique. Ce symbole incarne parfaitement l'identité d'une équipe qui, ces dernières années, s'est imposée comme l'une des plus talentueuses de la scène internationale.

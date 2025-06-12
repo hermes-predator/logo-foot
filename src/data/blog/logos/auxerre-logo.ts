@@ -6,7 +6,7 @@ export const auxerreLogoPost: BlogPost = {
   title: "Logo AJ Auxerre : Histoire et Design de l'Emblème Bourguignon [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AJ Auxerre : évolution, signification et design de l'emblème du club bourguignon depuis sa création jusqu'à aujourd'hui.",
   date: "2024-05-02",
-  galleryImageId: 65,
+  galleryImageId: 96,
   content: `# L'Histoire Passionnante du **Logo AJ Auxerre**
 
 Le **logo auxerre** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'histoire, l'identité et les valeurs du club bourguignon depuis des décennies. Cet article explore en profondeur l'histoire et l'évolution du **auxerre logo**, devenu une icône du football français.

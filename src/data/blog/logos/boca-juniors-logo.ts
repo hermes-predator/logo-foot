@@ -5,6 +5,7 @@ export const bocaJuniorsLogoPost: BlogPost = {
   id: 118,
   title: "Boca Juniors Logo : Histoire, évolution et signification de l'emblème mythique",
   date: "2025-02-25",
+  galleryImageId: 118,
   excerpt: "Découvrez l'histoire fascinante du logo de Boca Juniors, l'un des emblèmes les plus iconiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",
   content: `
 # **Logo Boca Juniors** : Histoire et signification de l'emblème iconique
@@ -121,5 +122,4 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
   category: "logos",
   subCategory: "southAmericanClubs",
   keywords: "boca juniors logo, boca juniors logo png, logo boca junior, logo boca juniors, logo boca juniors png, logo boca junior png, boca junior logo png, boca juniors logos image, logo de foot boca junior",
-  galleryImageId: 1,
 };

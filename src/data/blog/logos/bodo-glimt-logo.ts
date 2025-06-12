@@ -5,6 +5,7 @@ export const bodoGlimtLogoPost: BlogPost = {
   id: 120, // Unique ID for this new article
   title: "Bodø/Glimt Logo : Histoire et Signification de l'Emblème Norvégien [2024]",
   date: "2025-04-11",
+  galleryImageId: 120,
   category: "logos",
   subCategory: "other-european", // European clubs outside the top 5 leagues
   excerpt: "Découvrez l'histoire fascinante et la signification du logo Bodø/Glimt, emblème du club norvégien. Une analyse complète des couleurs jaune et noir et des symboles qui définissent l'identité visuelle du champion de Norvège.",
@@ -147,5 +148,4 @@ Le **bodo glimt logo** représente parfaitement la trajectoire ascendante d'un c
 
 À travers son **logo png bodo glimt**, le club de Bodø/Glimt raconte une histoire fascinante: celle d'un club situé au-delà du cercle polaire arctique qui a réussi à rayonner sur la scène européenne tout en restant fidèle à ses valeurs et à son identité nordique. Cette capacité à concilier traditions et modernité, simplicité et signification profonde, fait du **bodo glimt logo** un cas d'étude fascinant dans le domaine des identités visuelles sportives.`,
   keywords: "bodo glimt logo, logo png bodo glimt",
-  galleryImageId: null // To be replaced with the image ID when available
 };

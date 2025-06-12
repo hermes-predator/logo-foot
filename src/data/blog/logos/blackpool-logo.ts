@@ -5,6 +5,7 @@ export const blackpoolLogoPost: BlogPost = {
   id: 115,
   title: "**Blackpool FC Logo** : Histoire et Évolution de l'Emblème des Tangerines [2024]",
   date: "2025-04-13",
+  galleryImageId: 115,
   category: "logos",
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire fascinante du **logo Blackpool**. Analyse détaillée de l'emblème emblématique du club anglais, symboles, couleurs et évolution du **Blackpool logo PNG** au fil des ans.",
@@ -98,5 +99,4 @@ Le **Blackpool FC logo** est bien plus qu'un simple dessin ou emblème - c'est u
 
 À travers ses différentes itérations, le **Blackpool football club logo** a évolué tout en conservant son essence, témoignant de la capacité du club à s'adapter aux changements tout en honorant ses racines. Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les produits dérivés officiels, le **logo Blackpool** continue de jouer un rôle central dans l'identité visuelle et émotionnelle de ce club historique du football anglais.`,
   keywords: "blackpool fc logo, blackpool logo, blackpool logo png, logo blackpool, blackpool football club logo, logo blackpool fc, blackpool fc design logo, logo equipe de foot blackpool, tangerines logo, logo football club, blackpool fc badge, english football club logos",
-  galleryImageId: null
 };

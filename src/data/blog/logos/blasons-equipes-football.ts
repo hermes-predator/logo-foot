@@ -5,6 +5,7 @@ export const blasonsEquipesFootballPost: BlogPost = {
   title: "Blasons Équipe de Foot : Histoire et Symbolisme [Guide Complet 2024]",
   excerpt: "Découvrez l'histoire fascinante des blasons équipe de foot à travers l'Europe. Analyse détaillée des symboles et designs qui définissent l'identité des clubs de football.",
   date: "2024-04-12",
+  galleryImageId: 116,
   content: `# Les Blasons Équipe de Foot : Symboles d'Histoire et d'Identité
 
 Les **blasons équipe de foot** sont bien plus que de simples logos décoratifs. Ils incarnent l'âme, l'histoire et l'identité des clubs qu'ils représentent. Dans cet article approfondi, nous explorons la riche tradition des **blasons club de foot** à travers l'Europe, en nous concentrant particulièrement sur l'Angleterre et la France.

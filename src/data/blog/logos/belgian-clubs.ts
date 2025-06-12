@@ -6,6 +6,7 @@ export const belgianClubsPost: BlogPost = {
   title: "Logos du Football Belge : Design et Histoire [2024]",
   excerpt: "Explorez l'histoire des logos du football belge. D'Anderlecht au Club Bruges, découvrez l'évolution des emblèmes de la Jupiler Pro League.",
   date: "2024-03-12",
+  galleryImageId: 108,
   content: `Design et Tradition en Belgique
 
 Le football belge possède une riche histoire en matière de design d'emblèmes sportifs.

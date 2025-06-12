@@ -8,7 +8,7 @@ export const barnsleyLogoPost: BlogPost = {
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
-  galleryImageId: 9055,
+  galleryImageId: 102,
   content: `
 # L'histoire complète du **logo Barnsley FC** : Symbole d'un club anglais historique
 

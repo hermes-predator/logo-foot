@@ -6,6 +6,7 @@ export const bayernMunichLogoPost: BlogPost = {
   title: "Logo Bayern Munich : Histoire et Evolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Bayern Munich : symboles, évolution et signification de l'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-03-31",
+  galleryImageId: 106,
   content: `# L'Histoire Impressionnante du **Bayern Munich Logo**
 
 Le **logo Bayern Munich** est bien plus qu'un simple emblème sportif : c'est un symbole d'excellence, de tradition bavaroise et d'ambition internationale. Plongeons dans l'histoire fascinante du **bayern logo** qui représente le club le plus titré d'Allemagne sur la scène mondiale.
@@ -66,6 +67,5 @@ Les générations futures de supporters continueront de s'identifier à ce symbo
   keywords: "logo bayern munich, bayern munich logo, logo bayern, bayern logo, logo of bayern munich, logos bayern munich, logos bayern, bayern logo png, logo du bayern, fc bayern logo, logo bayern png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 51
 };
 

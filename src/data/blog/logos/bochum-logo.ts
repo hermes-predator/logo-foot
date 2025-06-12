@@ -6,7 +6,7 @@ export const bochumLogoPost: BlogPost = {
   title: "Logo VfL Bochum : Histoire et Évolution de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du VfL Bochum : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-23",
-  galleryImageId: 85,
+  galleryImageId: 119,
   content: `# L'Histoire Fascinante du **Logo Bochum**
 
 Le **logo bochum** est bien plus qu'un simple emblème sportif : c'est un symbole identitaire fort qui incarne l'histoire et les valeurs d'un club profondément ancré dans la région industrielle de la Ruhr. Le **vfl bochum logo** représente visuellement une institution sportive qui a su évoluer tout en restant fidèle à ses racines ouvrières et à sa tradition minière.

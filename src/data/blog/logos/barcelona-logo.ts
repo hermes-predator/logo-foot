@@ -6,6 +6,7 @@ export const barcelonaLogoPost: BlogPost = {
   title: "Logo FC Barcelone : Histoire et Design de l'Emblème Catalan [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Barcelone : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club catalan.",
   date: "2024-04-02",
+  galleryImageId: 101,
   content: `# L'Histoire Fascinante du Logo FC Barcelone
 
 Le **logo Barcelone** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité culturelle, de fierté catalane et d'excellence footballistique. En examinant en détail le **FC Barcelone logo**, nous découvrons une histoire riche qui reflète les valeurs profondes d'un club devenu institution mondiale.
@@ -48,5 +49,4 @@ Qu'il soit arboré sur un maillot, un drapeau ou un écran de téléphone, le **
   keywords: "logo barcelone, barcelone logo, logo fc barcelone, fc barcelone logo, barcelona logo, fc barcelona logo, logo du fc barcelone, logo barcelona, logo du barcelone, barcelone fc logo, barcelona logo png, logo barcelona png, logo barcelone fc, logo barcelone foot, logo foot barcelone, logo barcelone png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 50
 };

@@ -6,6 +6,7 @@ export const belarusLogoPost: BlogPost = {
   title: "**Logo Biélorussie** : L'Histoire de l'Emblème des Ailes Blanches [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale biélorusse : des origines à aujourd'hui, évolution et signification de l'emblème qui incarne la fierté du football biélorusse.",
   date: "2025-04-27",
+  galleryImageId: 107,
   category: "national-logos",
   subCategory: "national-logos",
   keywords: "logo biélorussie, biélorussie foot logo, logo biélorussie foot, logo club biélorusse football",
@@ -34,5 +35,4 @@ La modernisation progressive du **logo biélorussie foot** témoigne de l'ambiti
 ## Conclusion
 
 Le **biélorussie foot logo** est bien plus qu'un simple emblème : c'est le témoin visuel d'une histoire footballistique en constante évolution. Il incarne la fierté d'une nation qui continue de progresser et de surprendre dans le monde du football international, portée par des valeurs d'excellence et de détermination qui font la fierté de tout un pays.`,
-  galleryImageId: 78
 };

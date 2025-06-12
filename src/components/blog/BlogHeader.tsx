@@ -30,24 +30,24 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-12 pb-8">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+        <div className="container mx-auto px-4 pt-8 pb-6">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 pl-4 lg:pl-8">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="flex-1 pl-2 lg:pl-6">
+              <h1 className="text-2xl md:text-3xl font-bold mb-3">
                 Vous cherchez tous les logos de foot ?
               </h1>
-              <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-4">
+              <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-3">
                 <span className="flex items-center gap-2">
-                  <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                  <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
                 <br />
-                <span className="text-sm md:text-base font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
+                <span className="text-sm font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
               </p>
               
               {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
-              <div className="flex justify-start mb-6">
+              <div className="flex justify-start mb-4">
                 <Link to="/">
                   <GoogleDriveBadge className="rounded-md" />
                 </Link>
@@ -55,17 +55,17 @@ const BlogHeader = () => {
             </div>
             
             {/* Bouton et badge à droite */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-4 pr-4 lg:pr-8">
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-3 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button 
                       variant="outline" 
-                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-20 px-8 py-5 text-xl gap-4"
+                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-16 px-6 py-4 text-lg gap-3"
                     >
-                      <Folder className="h-12 w-12" />
+                      <Folder className="h-8 w-8" />
                       Voir le fichier
-                      <ArrowRight className="h-10 w-10" />
+                      <ArrowRight className="h-6 w-6" />
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent className="bg-gray-900 border-gray-700 text-white p-3">
@@ -100,13 +100,13 @@ const BlogHeader = () => {
       {/* Ligne de séparation */}
       <div className="relative z-20 px-4">
         <div className="container mx-auto">
-          <Separator className="bg-white/30 mb-6" />
+          <Separator className="bg-white/30 mb-4" />
         </div>
       </div>
       
       {/* Texte d'aperçu des collections */}
-      <div className="relative z-20 text-white text-center mb-12">
-        <p className="text-lg font-normal">
+      <div className="relative z-20 text-white text-center mb-8">
+        <p className="text-base font-normal">
           Aperçu de quelques collections : 
           <span className="inline-block ml-2 px-2 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20 font-bold text-sm"
                 style={{
@@ -118,7 +118,7 @@ const BlogHeader = () => {
       </div>
       
       {/* Carrousel en superposition qui déborde légèrement */}
-      <div className="relative z-20 -mt-4 pb-8">
+      <div className="relative z-20 -mt-2 pb-6">
         <BlogHeaderCarousel />
       </div>
       

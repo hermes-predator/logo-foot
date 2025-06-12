@@ -32,7 +32,7 @@ const BlogHeaderCarousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div className="w-full max-w-7xl mx-auto px-4">
       <Carousel
         opts={{
           align: "start",
@@ -48,8 +48,8 @@ const BlogHeaderCarousel = () => {
                   <OptimizedImage
                     src={image.src}
                     alt={image.alt}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     aspectRatio={1}
                     className="w-full h-full object-cover"
                     priority={index < 3}

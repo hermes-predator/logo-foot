@@ -62,11 +62,11 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button 
                       variant="outline" 
-                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-20 px-8 py-5 text-xl gap-4"
+                      className="bg-gradient-to-r from-white/10 to-white/20 border-2 border-white/30 text-white hover:from-white/20 hover:to-white/30 hover:border-white/50 hover:text-white hover:shadow-lg transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-sm font-semibold"
                     >
-                      <Folder className="h-10 w-10" />
+                      <Folder className="h-10 w-10 group-hover:scale-110 transition-transform duration-200" />
                       Voir le fichier
-                      <ArrowRight className="h-8 w-8" />
+                      <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200" />
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-3">

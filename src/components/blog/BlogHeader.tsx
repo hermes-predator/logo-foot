@@ -3,6 +3,7 @@ import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
 import JudgeMeBadge from './JudgeMeBadge';
+import BlogHeaderCarousel from './BlogHeaderCarousel';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -28,7 +29,7 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-6 pb-16">
+        <div className="container mx-auto px-4 pt-6 pb-8">
           <div className="text-sm md:text-base text-gray-400 mb-8 text-center">Blog</div>
           
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
@@ -92,6 +93,11 @@ const BlogHeader = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Carrousel en superposition qui déborde légèrement */}
+      <div className="relative z-20 -mt-4 pb-8">
+        <BlogHeaderCarousel />
       </div>
       
       <style>

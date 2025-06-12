@@ -43,7 +43,7 @@ const BlogHeader = () => {
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
-              <p className="text-sm font-normal mb-4">
+              <p className="text-sm font-normal mb-5">
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
               
@@ -62,11 +62,11 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button 
                       variant="outline" 
-                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-16 px-6 py-4 text-lg gap-3"
+                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-20 px-8 py-5 text-xl gap-4"
                     >
-                      <Folder className="h-8 w-8" />
+                      <Folder className="h-10 w-10" />
                       Voir le fichier
-                      <ArrowRight className="h-6 w-6" />
+                      <ArrowRight className="h-8 w-8" />
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent className="bg-gray-900 border-gray-700 text-white p-3">

@@ -99,7 +99,7 @@ const BlogHeader = () => {
       </div>
       
       {/* Ligne de séparation avec texte superposé */}
-      <div className="relative z-20 px-4 mb-8">
+      <div className="relative z-20 px-4 mb-12">
         <div className="container mx-auto relative">
           <Separator className="bg-white/30" />
           {/* Texte centré sur la ligne */}

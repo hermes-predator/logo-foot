@@ -62,7 +62,7 @@ const BlogHeader = () => {
                       variant="outline" 
                       className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:border-white/30 hover:text-white transition-all duration-300 h-20 px-8 py-5 text-xl gap-4"
                     >
-                      <Folder className="h-10 w-10" />
+                      <Folder className="h-12 w-12" />
                       Voir le fichier
                       <ArrowRight className="h-10 w-10" />
                     </Button>

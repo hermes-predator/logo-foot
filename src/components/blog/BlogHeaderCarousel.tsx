@@ -2,6 +2,7 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { OptimizedImage } from '@/components/ui/optimized-image';
+import { Link } from 'react-router-dom';
 
 const BlogHeaderCarousel = () => {
   const carouselImages = [
@@ -44,17 +45,19 @@ const BlogHeaderCarousel = () => {
           {carouselImages.map((image, index) => (
             <CarouselItem key={index} className="basis-1/2">
               <div className="p-2">
-                <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm">
-                  <OptimizedImage
-                    src={image.src}
-                    alt={image.alt}
-                    width={540}
-                    height={540}
-                    aspectRatio={1}
-                    className="w-full h-full object-cover"
-                    priority={index < 3}
-                  />
-                </div>
+                <Link to="/" className="block">
+                  <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer">
+                    <OptimizedImage
+                      src={image.src}
+                      alt={image.alt}
+                      width={540}
+                      height={540}
+                      aspectRatio={1}
+                      className="w-full h-full object-cover"
+                      priority={index < 3}
+                    />
+                  </div>
+                </Link>
               </div>
             </CarouselItem>
           ))}

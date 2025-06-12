@@ -66,7 +66,7 @@ const BlogHeader = () => {
                     >
                       {/* Effet de brillance subtil */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                      <Folder className="h-10 w-10 group-hover:scale-110 transition-transform duration-200 relative z-10" />
+                      <Folder className="h-12 w-12 group-hover:scale-110 transition-transform duration-200 relative z-10" />
                       <span className="relative z-10">Voir le fichier</span>
                       <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                     </Button>

@@ -86,6 +86,5 @@ Qu'il s'agisse de sa version classique ou de sa déclinaison digitale en **borus
 Le **logo foot borussia m gladbach** reste ainsi un exemple parfait de la façon dont un symbole visuel peut transcender sa fonction première pour devenir un véritable marqueur culturel et identitaire, capable de fédérer des générations de supporters autour de valeurs et d'une passion communes.`,
   keywords: "borussia m'gladbach logo png, borussia m gladbach logo, borussia m'gladbach logo, logo foot borussia m gladbach, logo m'gladbach png",
   category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 93
+  subCategory: 'club-logos'
 };

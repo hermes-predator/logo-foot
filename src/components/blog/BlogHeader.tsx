@@ -37,10 +37,10 @@ const BlogHeader = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
                 Vous cherchez tous les logos de foot ?
               </h1>
-              <p className="font-semibold text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-4">
+              <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-4">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                  <span>Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
+                  <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
                 <br />
                 <span className="text-sm md:text-base font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>

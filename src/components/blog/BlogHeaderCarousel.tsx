@@ -32,7 +32,7 @@ const BlogHeaderCarousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div className="w-full max-w-[1200px] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[1200px] mx-auto px-4">
       <Carousel
         opts={{
           align: "start",

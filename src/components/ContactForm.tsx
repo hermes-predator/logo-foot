@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle } from 'lucide-react';
 
@@ -18,7 +19,7 @@ const ContactForm = () => {
         
         <div className="pt-2">
           <p className="text-gray-500 leading-relaxed text-sm border-l-2 border-blue-300 pl-3 py-1 mt-3 bg-blue-50/50">
-            En cas de questions, vous pouvez d'abord consulter notre FAQ avant de nous contacter.
+            En cas de questions, veuillez d'abord consulter notre FAQ avant de nous contacter.
           </p>
         </div>
         
@@ -65,3 +66,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

@@ -48,7 +48,7 @@ const BlogHeader = () => {
               </p>
               
               {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
-              <div className="flex justify-start mb-4">
+              <div className="flex justify-start mb-5">
                 <Link to="/">
                   <GoogleDriveBadge className="rounded-md" />
                 </Link>
@@ -118,8 +118,8 @@ const BlogHeader = () => {
         </p>
       </div>
       
-      {/* Carrousel en superposition qui déborde légèrement - remonté */}
-      <div className="relative z-20 -mt-4 pb-6">
+      {/* Carrousel en superposition qui déborde légèrement - remonté davantage */}
+      <div className="relative z-20 -mt-6 pb-6">
         <BlogHeaderCarousel />
       </div>
       

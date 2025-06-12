@@ -62,11 +62,13 @@ const BlogHeader = () => {
                   <TooltipTrigger asChild>
                     <Button 
                       variant="outline" 
-                      className="bg-gradient-to-r from-white/10 to-white/20 border-2 border-white/30 text-white hover:from-white/20 hover:to-white/30 hover:border-white/50 hover:text-white hover:shadow-lg transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-sm font-semibold"
+                      className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden"
                     >
-                      <Folder className="h-10 w-10 group-hover:scale-110 transition-transform duration-200" />
-                      Voir le fichier
-                      <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200" />
+                      {/* Effet de brillance subtil */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                      <Folder className="h-10 w-10 group-hover:scale-110 transition-transform duration-200 relative z-10" />
+                      <span className="relative z-10">Voir le fichier</span>
+                      <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-3">

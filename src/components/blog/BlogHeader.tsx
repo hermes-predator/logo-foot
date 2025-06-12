@@ -99,15 +99,18 @@ const BlogHeader = () => {
       {/* Ligne de séparation */}
       <div className="relative z-20 px-4">
         <div className="container mx-auto">
-          <Separator className="bg-orange-500/30 mb-6" />
+          <Separator className="bg-white/30 mb-6" />
         </div>
       </div>
       
       {/* Texte d'aperçu des collections */}
-      <div className="relative z-20 text-white text-center mb-8">
+      <div className="relative z-20 text-white text-center mb-12">
         <p className="text-lg font-normal">
           Aperçu de quelques collections : 
-          <span className="inline-block ml-2 px-3 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20">
+          <span className="inline-block ml-2 px-3 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20"
+                style={{
+                  animation: 'blink 2s infinite'
+                }}>
             ⦗FRONT-CLOUD⦘~ Football.zip
           </span>
         </p>
@@ -124,6 +127,11 @@ const BlogHeader = () => {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0.7; }
         }
         `}
       </style>

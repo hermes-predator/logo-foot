@@ -110,10 +110,7 @@ const BlogHeader = () => {
               <p className="text-white text-base font-normal whitespace-nowrap relative z-10">
                 Aperçu de quelques collections : 
                 <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-                  <span className="px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300 shadow-md"
-                        style={{
-                          animation: 'blink 1s infinite'
-                        }}>
+                  <span className="font-bold text-sm">
                     ⦗FRONT-CLOUD⦘~ Football.zip
                   </span>
                 </Link>
@@ -134,11 +131,6 @@ const BlogHeader = () => {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
-        }
-        
-        @keyframes blink {
-          0%, 50% { opacity: 1; }
-          51%, 100% { opacity: 0.7; }
         }
         
         @keyframes shimmer {

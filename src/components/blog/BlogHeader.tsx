@@ -118,8 +118,8 @@ const BlogHeader = () => {
         </p>
       </div>
       
-      {/* Carrousel en superposition qui déborde légèrement */}
-      <div className="relative z-20 -mt-2 pb-6">
+      {/* Carrousel en superposition qui déborde légèrement - remonté */}
+      <div className="relative z-20 -mt-4 pb-6">
         <BlogHeaderCarousel />
       </div>
       

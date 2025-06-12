@@ -108,11 +108,13 @@ const BlogHeader = () => {
               <p className="text-white text-base font-normal whitespace-nowrap">
                 Aperçu de quelques collections : 
                 <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-                  <span className="px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300 shadow-md"
+                  <span className="relative px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-all duration-300 shadow-md overflow-hidden"
                         style={{
                           animation: 'blink 1s infinite'
                         }}>
-                    ⦗FRONT-CLOUD⦘~ Football.zip
+                    {/* Effet de brillance qui traverse l'élément */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></span>
+                    <span className="relative z-10">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </span>
                 </Link>
               </p>
@@ -137,6 +139,11 @@ const BlogHeader = () => {
         @keyframes blink {
           0%, 50% { opacity: 1; }
           51%, 100% { opacity: 0.7; }
+        }
+        
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
         }
         `}
       </style>

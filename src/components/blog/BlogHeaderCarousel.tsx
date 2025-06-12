@@ -110,17 +110,6 @@ const BlogHeaderCarousel = () => {
           </button>
         ))}
       </div>
-      
-      {/* Texte informatif modernisé */}
-      <div className="flex justify-center mt-4">
-        <div className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-          <div className="w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" />
-          <span className="text-white/80 text-sm font-medium">
-            {current} / {count}
-          </span>
-          <div className="w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
-        </div>
-      </div>
     </div>
   );
 };

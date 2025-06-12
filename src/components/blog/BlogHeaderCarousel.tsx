@@ -1,10 +1,15 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import { Link } from 'react-router-dom';
+import type { CarouselApi } from '@/components/ui/carousel';
 
 const BlogHeaderCarousel = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
   const carouselImages = [
     {
       src: "/lovable-uploads/42eae4e6-1176-4a6a-b811-98f89e509603.png",
@@ -32,9 +37,23 @@ const BlogHeaderCarousel = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <div className="w-full max-w-[1400px] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[1400px] mx-auto px-4">
       <Carousel
+        setApi={setApi}
         opts={{
           align: "start",
           loop: false,
@@ -65,6 +84,22 @@ const BlogHeaderCarousel = () => {
         <CarouselPrevious className="bg-white/20 border-white/30 text-white hover:bg-white/30" />
         <CarouselNext className="bg-white/20 border-white/30 text-white hover:bg-white/30" />
       </Carousel>
+      
+      {/* Navigation indicators */}
+      <div className="flex justify-center items-center space-x-2 mt-4">
+        {Array.from({ length: count }, (_, index) => (
+          <button
+            key={index}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index + 1 === current
+                ? 'bg-white scale-125'
+                : 'bg-white/40 hover:bg-white/60'
+            }`}
+            onClick={() => api?.scrollTo(index)}
+            aria-label={`Aller à la slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

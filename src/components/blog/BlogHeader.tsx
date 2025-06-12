@@ -42,9 +42,9 @@ const BlogHeader = () => {
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
               
-              {/* Badge Google Drive */}
+              {/* Badge Google Drive avec bords carrés */}
               <div className="flex justify-start">
-                <GoogleDriveBadge />
+                <GoogleDriveBadge className="rounded-none" />
               </div>
             </div>
             

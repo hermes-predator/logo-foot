@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -30,22 +29,22 @@ const BlogHeader = () => {
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
         <div className="container mx-auto px-4 pt-6 pb-16">
-          <div className="text-sm md:text-base text-gray-400 mb-12 text-center">Blog</div>
+          <div className="text-sm md:text-base text-gray-400 mb-8 text-center">Blog</div>
           
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-4 lg:pl-8">
-              <h1 className="text-3xl md:text-4xl font-bold mb-8">
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">
                 Vous cherchez tous les logos de foot ?
               </h1>
-              <p className="font-semibold text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-10">
+              <p className="font-semibold text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-6">
                 Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.
                 <br /><br />
                 <span className="text-sm md:text-base font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
               </p>
               
               {/* Badge Google Drive avec bords carrés et lien vers l'accueil */}
-              <div className="flex justify-start">
+              <div className="flex justify-start mb-6">
                 <Link to="/">
                   <GoogleDriveBadge className="rounded-none" />
                 </Link>
@@ -109,4 +108,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

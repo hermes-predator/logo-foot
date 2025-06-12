@@ -30,7 +30,7 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-8 pb-6">
+        <div className="container mx-auto px-4 pt-8 pb-12">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
@@ -99,7 +99,7 @@ const BlogHeader = () => {
       </div>
       
       {/* Ligne de séparation avec texte superposé */}
-      <div className="relative z-20 px-4 mb-12">
+      <div className="relative z-20 px-4 mb-16">
         <div className="container mx-auto relative">
           <Separator className="bg-white/30" />
           {/* Texte centré sur la ligne */}

@@ -98,7 +98,10 @@ const BlogHeader = () => {
       {/* Texte d'aperçu des collections */}
       <div className="relative z-20 text-white text-center mb-4">
         <p className="text-lg font-semibold">
-          Aperçu de quelques collections : ⦗FRONT-CLOUD⦘~ Football.zip
+          Aperçu de quelques collections : 
+          <span className="inline-block ml-2 px-3 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20 animate-pulse">
+            ⦗FRONT-CLOUD⦘~ Football.zip
+          </span>
         </p>
       </div>
       

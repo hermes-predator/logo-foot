@@ -62,7 +62,7 @@ const BlogHeaderCarousel = () => {
       >
         <CarouselContent>
           {carouselImages.map((image, index) => (
-            <CarouselItem key={index} className="basis-1/2">
+            <CarouselItem key={index} className="basis-1/3">
               <div className="p-3">
                 <Link to="/" className="block">
                   <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-xl">

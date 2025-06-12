@@ -103,18 +103,11 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Nouvelle ligne de séparation blanche au-dessus du texte */}
-      <div className="relative z-20 px-4">
-        <div className="container mx-auto">
-          <Separator className="bg-white/30 mb-6" />
-        </div>
-      </div>
-      
       {/* Texte d'aperçu des collections */}
       <div className="relative z-20 text-white text-center mb-12">
         <p className="text-lg font-normal">
           Aperçu de quelques collections : 
-          <span className="inline-block ml-2 px-2 py-1 border-2 border-orange-500 rounded-sm bg-orange-500/20 font-bold text-sm"
+          <span className="inline-block ml-2 px-2 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20 font-bold text-sm"
                 style={{
                   animation: 'blink 2s infinite'
                 }}>

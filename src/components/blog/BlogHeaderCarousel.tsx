@@ -42,7 +42,7 @@ const BlogHeaderCarousel = () => {
       >
         <CarouselContent>
           {carouselImages.map((image, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/3">
               <div className="p-2">
                 <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 backdrop-blur-sm">
                   <OptimizedImage

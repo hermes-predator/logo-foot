@@ -31,10 +31,22 @@ const ReassuranceBadge = () => {
         </div>
       </div>
       
-      {/* Petite ligne de confiance */}
+      {/* Petite ligne de confiance avec élément clignotant modifié */}
       <p className="text-center text-sm text-gray-600 font-medium">
         ✓ Fichier organisé et prêt à l'emploi • ✓ Compatible tous supports • ✓ Satisfaction garantie
       </p>
+      
+      {/* Élément clignotant modifié */}
+      <div className="text-center mt-3">
+        <span 
+          className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-md font-bold text-sm shadow-md"
+          style={{
+            animation: 'fastBlink 0.8s ease-in-out infinite'
+          }}
+        >
+          ⦗FRONT-CLOUD⦘~ Football.zip
+        </span>
+      </div>
     </div>
   );
 };

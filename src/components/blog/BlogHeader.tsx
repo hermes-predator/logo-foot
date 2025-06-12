@@ -95,6 +95,13 @@ const BlogHeader = () => {
         </div>
       </div>
       
+      {/* Texte d'aperçu des collections */}
+      <div className="relative z-20 text-white text-center mb-4">
+        <p className="text-lg font-semibold">
+          Aperçu de quelques collections : ⦗FRONT-CLOUD⦘~ Football.zip
+        </p>
+      </div>
+      
       {/* Carrousel en superposition qui déborde légèrement */}
       <div className="relative z-20 -mt-4 pb-8">
         <BlogHeaderCarousel />

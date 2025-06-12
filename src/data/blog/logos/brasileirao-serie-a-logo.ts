@@ -5,6 +5,7 @@ export const brasileiraoSerieALogoPost: BlogPost = {
   id: 130,
   title: "Logo Brasileirão Série A : Histoire et Design du Plus Grand Championnat Sud-Américain",
   date: "2025-04-25",
+  galleryImageId: 130,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo du Brasileirão Série A, symbole du prestigieux championnat brésilien. Une analyse approfondie de son design unique et de son évolution au fil des années.",
   content: `# Logo Brasileirão Série A : Histoire et Design du Plus Grand Championnat Sud-Américain

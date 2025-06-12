@@ -6,6 +6,7 @@ export const celtaVigoLogoPost: BlogPost = {
   title: "Logo Celta Vigo : Histoire et Design de l'Emblème Galicien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Celta Vigo : origines, symbolisme et évolution de l'emblème emblématique du club galicien de football espagnol.",
   date: "2024-05-17",
+  galleryImageId: 154,
   content: `# L'Histoire Fascinante du **Logo Celta Vigo**
 
 Le **logo celta vigo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale, de fierté galicienne et d'appartenance à une culture football riche en traditions. Véritable étendard du football du nord-ouest de l'Espagne, le **celta de vigo logo** incarne une histoire riche qui mérite d'être explorée en profondeur.

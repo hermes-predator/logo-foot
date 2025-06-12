@@ -6,7 +6,7 @@ export const brentfordLogoPost: BlogPost = {
   title: "Logo Brentford : Histoire et Design de l'Emblème des Bees [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brentford FC : origines, évolution et symbolisme de l'emblème emblématique du club londonien.",
   date: "2024-06-16",
-  galleryImageId: 98,
+  galleryImageId: 132,
   content: `# L'Histoire Fascinante du **Logo Brentford**
 
 Le **brentford logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **logo brentford** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté dans l'ouest londonien.

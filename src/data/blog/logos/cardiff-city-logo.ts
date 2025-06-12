@@ -6,6 +6,7 @@ export const cardiffCityLogoPost: BlogPost = {
   title: "Logo Cardiff City FC : Histoire et Évolution de l'Emblème des Bluebirds [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cardiff City FC, ses origines galloises et l'évolution de cet emblème emblématique des Bluebirds dans cette analyse complète.",
   date: "2024-06-08",
+  galleryImageId: 153,
   content: `# L'Histoire Fascinante du **Cardiff City FC Logo** à Travers les Âges
 
 Le **cardiff city logo** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une identité galloise fière, d'une riche tradition footballistique et d'une communauté passionnée. Dans cet article, nous explorons l'évolution remarquable du **logo cardiff city** et sa signification culturelle pour ce club emblématique du Pays de Galles.

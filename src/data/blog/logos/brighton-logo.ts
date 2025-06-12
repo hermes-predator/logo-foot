@@ -6,7 +6,7 @@ export const brightonLogoPost: BlogPost = {
   title: "Logo Brighton : Histoire et Design de l'Emblème des Seagulls [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brighton & Hove Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-12",
-  galleryImageId: 94,
+  galleryImageId: 135,
   content: `# L'Histoire Fascinante du **Logo Brighton**
 
 Le **brighton logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle de valeurs profondément ancrées dans l'histoire du football anglais. À travers les décennies, le **brighton & hove albion logo** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté sur la côte sud de l'Angleterre.

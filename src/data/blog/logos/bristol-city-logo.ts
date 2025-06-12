@@ -6,6 +6,7 @@ export const bristolCityLogoPost: BlogPost = {
   title: "**Logo Bristol City FC** : Histoire et Evolution de l'Emblème des Robins [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bristol City**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 136,
   content: `# **Logo Bristol City FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
 
 Le **logo Bristol City** représente bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1894. Dans cet article approfondi, découvrez l'évolution fascinante du **Bristol City logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -83,5 +84,4 @@ En définitive, le **logo Bristol City** illustre remarquablement comment un emb
   keywords: "bristol city fc logo:20, bristol city football club logo:20, bristol city logo:20, logo bristol city:20, bristol city new logo:10, logo de foot bristol city angleterre:10, logo fc bristol city:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 371
 };

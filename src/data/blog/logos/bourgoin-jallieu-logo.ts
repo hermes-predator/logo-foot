@@ -6,6 +6,7 @@ export const bourgoinjaillieuLogoPost: BlogPost = {
   title: "**Logo Bourgoin-Jallieu** : Histoire et Evolution de l'Emblème Isérois [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bourgoin Jallieu**, son évolution et la symbolique de cet emblème emblématique du football isérois.",
   date: "2024-04-18",
+  galleryImageId: 128,
   content: `# L'Histoire Fascinante du **Logo Bourgoin Jallieu**
 
 Le **bourgoin jallieu logo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité locale qui incarne l'histoire et les traditions du football isérois. Le **logo bourgoin jallieu foot** a su évoluer tout en conservant son authenticité et son ancrage territorial.
@@ -64,5 +65,4 @@ Le **logo fc bourgoin jallieu** demeure un symbole fort du football isérois, in
   keywords: "logo bourgoin jallieu:30, bourgoin jallieu logo:30, logo bourgoin jallieu foot:10, fc bourgoin jallieu logo:10, football club bourgoin jallieu logo:10, logo fc bourgoin jallieu:10",
   category: 'logos',
   subCategory: 'french-clubs',
-  galleryImageId: 563
 };

@@ -5,7 +5,7 @@ export const bundesligaLogoPost: BlogPost = {
   title: "Logo Bundesliga : Analyse Design Football Allemand [2024]",
   excerpt: "Découvrez l'analyse complète du logo Bundesliga. Histoire, évolution et signification du symbole du championnat allemand de football.",
   date: "2024-03-20",
-  galleryImageId: 33,
+  galleryImageId: 139,
   content: `# L'Histoire Fascinante du **Logo Bundesliga**
 
 Le **logo bundesliga** est bien plus qu'un simple emblème sportif : c'est un symbole d'excellence et de précision qui incarne les valeurs fondamentales du football allemand. Plongeons dans l'histoire captivante de ce **bundesliga logo** qui est devenu l'un des symboles les plus reconnaissables du football européen.

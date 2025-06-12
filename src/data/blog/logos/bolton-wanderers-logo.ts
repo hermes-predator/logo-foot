@@ -6,6 +6,7 @@ export const boltonWanderersLogoPost: BlogPost = {
   title: "**Bolton Wanderers Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Bolton Wanderers logo**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
+  galleryImageId: 123,
   content: `
 # **Bolton Wanderers Logo** : Histoire et Symbolisme
 
@@ -77,5 +78,4 @@ Le **Bolton Wanderers logo** reste un symbole puissant qui transcende le simple 
   keywords: "**bolton wanderers logo**:20, **logo bolton wanderers**:20, **bolton wanderers logo png**:10",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 364
 };

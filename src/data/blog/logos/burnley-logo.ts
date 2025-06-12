@@ -6,7 +6,7 @@ export const burnleyLogoPost: BlogPost = {
   title: "Logo Burnley : Histoire et Design de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Burnley : origines, évolution et symbolisme de l'emblème emblématique des Clarets.",
   date: "2024-04-14",
-  galleryImageId: 62,
+  galleryImageId: 141,
   content: `# L'Histoire Passionnante du **Logo Burnley**
 
 Le **burnley logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne plus d'un siècle d'histoire footballistique. Plongeons dans l'univers fascinant du **logo burnley**, un écusson qui raconte l'histoire d'un des clubs historiques du football anglais.

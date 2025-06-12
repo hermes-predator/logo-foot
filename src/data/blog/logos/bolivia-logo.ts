@@ -8,7 +8,7 @@ export const boliviaLogoPost: BlogPost = {
   date: "2024-06-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 429,
+  galleryImageId: 121,
   content: `# L'Histoire du **Logo Bolivie** : Un Symbole d'Identité Nationale
 
 Le **bolivie logo** est bien plus qu'un simple emblème sportif - c'est l'incarnation de l'identité footballistique d'une nation qui, malgré les défis géographiques de l'altitude, a su développer une culture footballistique unique. À travers son histoire, le **bolivie foot logo** a évolué pour devenir un symbole puissant qui unit les supporters autour des valeurs et des traditions du football bolivien.

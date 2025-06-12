@@ -8,7 +8,7 @@ export const burtonAlbionLogoPost: BlogPost = {
   date: "2024-06-15",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 376,
+  galleryImageId: 143,
   content: `# L'Histoire Fascinante du **Logo Burton Albion**
 
 Le **burton albion logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une communauté et l'incarnation visuelle des valeurs d'un club unique dans le paysage du football anglais. À travers les décennies, le **logo burton albion** a su évoluer tout en préservant l'essence même du club qu'il représente avec fierté dans le Staffordshire.

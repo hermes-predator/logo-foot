@@ -6,6 +6,7 @@ export const cambridgeUnitedLogoPost: BlogPost = {
   title: "**Logo Cambridge United** : Histoire et Design de l'Emblème des U's [2024]",
   excerpt: "Découvrez l'histoire fascinante du **cambridge united logo**, son évolution et la symbolique de cet emblème emblématique du football anglais.",
   date: "2025-04-18",
+  galleryImageId: 148,
   content: `# L'Histoire Fascinante du **Logo Cambridge United**
 
 Le **cambridge united logo** est bien plus qu'un simple emblème sportif : c'est un symbole qui raconte l'histoire d'un club universitaire devenu une institution du football anglais. Fondé en 1912, Cambridge United arbore fièrement un **cambridge united logo png** qui reflète à la fois son héritage académique et ses ambitions sportives.
@@ -36,5 +37,4 @@ Le **cambridge united logo** est bien plus qu'un simple emblème sportif - c'est
   keywords: "cambridge united logo:20, cambridge united logo png:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: null
 };

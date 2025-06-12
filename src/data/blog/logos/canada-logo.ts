@@ -8,7 +8,7 @@ export const canadaLogoPost: BlogPost = {
   date: "2024-05-15",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 517,
+  galleryImageId: 151,
   content: `# **Logo Canada** : L'Emblème qui Redéfinit le Soccer Nord-Américain
 
 Le **canada logo** est bien plus qu'un simple dessin - c'est la narration graphique d'une transformation nationale dans le monde du football. Chaque ligne, chaque couleur raconte l'histoire d'une équipe qui a passé des décennies à construire sa légende, transformant progressivement la perception internationale du soccer canadien.

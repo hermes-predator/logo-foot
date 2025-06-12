@@ -7,7 +7,7 @@ export const burkinaFasoLogoPost: BlogPost = {
   date: "2024-07-03",
   category: "national-logos", // Changed from 'logos'
   subCategory: "national-logos", // Kept the same
-  galleryImageId: 404,
+  galleryImageId: 140,
   keywords: "logo Burkina Faso, Burkina Faso foot logo, Burkina Faso logo, logo du Burkina Faso, Burkina Faso logo png, Burkina Faso foot logo png, Burkina Faso logo foot, équipe nationale, étalons, football africain, emblème sportif",
   content: `# Logo Burkina Faso : Histoire et Symbolisme de l'Emblème des Étalons
 

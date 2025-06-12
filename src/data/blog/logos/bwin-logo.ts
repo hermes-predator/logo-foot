@@ -6,7 +6,7 @@ export const bwinLogoPost: BlogPost = {
   title: "Logo Bwin : Histoire et Design de l'Emblème du Bookmaker [2024]",
   excerpt: "Découvrez l'histoire complète du logo Bwin : origines, évolution et analyse du design de l'emblème emblématique du célèbre bookmaker sportif.",
   date: "2024-06-17",
-  galleryImageId: 97,
+  galleryImageId: 144,
   content: `# L'Histoire Fascinante du **Logo Bwin**
 
 Le **bwin logo** est bien plus qu'un simple emblème commercial : c'est un symbole reconnaissable instantanément dans l'univers des paris sportifs et du sponsoring footballistique. Plongeons dans l'histoire captivante de ce **logo bwin** qui a marqué le paysage du sport professionnel et est devenu synonyme d'innovation dans l'industrie des paris en ligne.

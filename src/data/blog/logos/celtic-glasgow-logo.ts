@@ -6,7 +6,7 @@ export const celticGlasgowLogoPost: BlogPost = {
   title: "Logo Celtic Glasgow : Histoire et Evolution de l'Emblème Mythique Écossais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Celtic Glasgow : origines, évolution et symbolisme de l'emblème emblématique du club écossais à la riche tradition.",
   date: "2024-05-25",
-  galleryImageId: 73,
+  galleryImageId: 155,
   content: `# L'Histoire Fascinante du **Logo Celtic Glasgow**
 
 Le **logo Celtic Glasgow** représente l'identité visuelle d'un club de football emblématique d'Écosse. Cet emblème iconique, avec son trèfle à quatre feuilles caractéristique, raconte l'histoire d'une institution fondée en 1887 et profondément ancrée dans la culture irlandaise et écossaise.

@@ -6,7 +6,7 @@ export const bournemouthLogoPost: BlogPost = {
   title: "Logo Bournemouth FC : Histoire et Évolution AFC Bournemouth [2024]",
   excerpt: "Découvrez l'histoire complète du logo AFC Bournemouth : évolution, design et symbolisme de l'emblème des Cherries depuis les origines jusqu'au design moderne.",
   date: "2024-04-09",
-  galleryImageId: 60,
+  galleryImageId: 129,
   content: `# L'Histoire Fascinante du **Bournemouth FC Logo**
 
 Le **bournemouth fc logo** est bien plus qu'un simple emblème sportif - c'est le symbole d'une ascension remarquable. De modeste club côtier à équipe de Premier League, le **bournemouth logo** raconte l'histoire inspirante d'un club qui a défié toutes les attentes pour se hisser parmi l'élite du football anglais.

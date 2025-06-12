@@ -6,6 +6,7 @@ export const brondbyLogoPost: BlogPost = {
   title: "Brøndby IF Logo : Histoire et Signification de l'Emblème Jaune et Bleu",
   excerpt: "Découvrez l'histoire fascinante du logo de Brøndby IF, emblème iconique du club danois avec ses couleurs jaune et bleu distinctives et sa symbolique profonde.",
   date: "2025-04-12",
+  galleryImageId: 137,
   content: `
 # L'Histoire du **Brøndby Logo** : Un Symbole de Fierté Danoise
 

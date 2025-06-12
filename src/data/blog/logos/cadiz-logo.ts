@@ -5,6 +5,7 @@ export const cadizLogoPost: BlogPost = {
   id: 145, // ID unique pour ce nouvel article
   title: "Logo Cadix : Histoire et Évolution de l'Emblème Andalou [2024]",
   date: "2025-04-11",
+  galleryImageId: 145,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Cadix, emblème du club andalou. Analyse complète des symboles et des couleurs du blason historique du Cádiz CF.",
@@ -101,5 +102,4 @@ Pour les habitants de Cadix et les supporters du club, le **logo cadix espagne**
 
 Le **cadix logo png** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré les difficultés traversées au fil des ans, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "logo cadix, cadix logo, cadix logo png, logo cadix cf, logo cadix espagne, logo png cadix",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

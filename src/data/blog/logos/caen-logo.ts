@@ -6,7 +6,7 @@ export const caenLogoPost: BlogPost = {
   title: "Logo Caen : Histoire et Design de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo SM Caen, son évolution, sa symbolique et comment l'écusson du Stade Malherbe représente l'identité normande.",
   date: "2024-05-16",
-  galleryImageId: 87,
+  galleryImageId: 146,
   content: `# L'Histoire Fascinante du **Logo Caen**
 
 Le **logo caen** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui incarne l'histoire, les valeurs et l'ambition d'un club historique du football français. Dans cet article approfondi, nous explorons l'univers fascinant du **logo sm caen** et décodons les éléments qui font de cet écusson un repère visuel puissant pour les supporters normands.

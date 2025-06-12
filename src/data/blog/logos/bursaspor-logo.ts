@@ -6,6 +6,7 @@ export const bursasporLogoPost: BlogPost = {
   title: "**Bursaspor Logo** : Histoire et Symbolique de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Bursaspor**, un symbole emblématique qui représente la fierté du football turc et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 
+  galleryImageId: 142,
   content: `# Histoire du **Bursaspor Logo**
 
 Le **bursaspor logo** est l'emblème d'un club qui incarne la passion et l'histoire du football turc moderne. Le **logo bursaspor png** représente parfaitement l'identité unique d'une équipe qui a marqué le football de sa région.
@@ -76,5 +77,4 @@ Le **bursaspor logo** s'utilise sur différents supports :
   keywords: "bursaspor logo, logo bursaspor, logo bursaspor png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 565
 };

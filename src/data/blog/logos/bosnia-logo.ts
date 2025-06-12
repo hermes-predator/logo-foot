@@ -8,7 +8,7 @@ export const bosniaLogoPost: BlogPost = {
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 447,
+  galleryImageId: 126,
   content: `# L'Histoire Fascinante du **Logo Bosnia**
 
 Le **bosnia logo** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une nation qui a su se relever et s'unir à travers le football. Le **logo bosnia** incarne la résilience et la détermination d'un peuple passionné qui a fait du football un vecteur d'unité nationale.

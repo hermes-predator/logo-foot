@@ -5,6 +5,7 @@ export const bulgariaLogoPost: BlogPost = {
   title: "Analyse du Logo de la Bulgarie : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la sélection bulgare de football, ses couleurs emblématiques et son évolution à travers les années.",
   date: "2024-05-04",
+  galleryImageId: 138,
   content: `# L'Histoire du **Logo Bulgarie** à Travers les Âges
 
 Le **logo Bulgarie** représente bien plus qu'un simple emblème national dans le monde du football. Ce symbole incarne l'identité, l'histoire et les aspirations d'une nation entière. Plongeons dans l'univers fascinant du **Bulgarie foot logo** et découvrons ensemble ses secrets.

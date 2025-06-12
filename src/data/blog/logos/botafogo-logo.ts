@@ -6,6 +6,7 @@ export const botafogoLogoPost: BlogPost = {
   title: "**Logo Botafogo** : Histoire et Évolution de l'Emblème Légendaire du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Botafogo**, ses transformations et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire de Rio de Janeiro.",
   date: "2025-04-13",
+  galleryImageId: 127,
   content: `# L'Histoire Fascinante du **Logo Botafogo**
 
 Le **botafogo logo** est l'un des emblèmes les plus emblématiques et reconnaissables du football brésilien. Cet écusson iconique, avec son étoile solitaire et son design distinctif en noir et blanc, raconte l'histoire riche d'un club qui a profondément marqué le paysage footballistique sud-américain.
@@ -73,5 +74,4 @@ Le **botafogo logo png** continuera sans doute d'évoluer subtilement pour répo
   keywords: "botafogo logo:20, logo botafogo:20, botafogo f.c logo:10, botafogo logo png:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

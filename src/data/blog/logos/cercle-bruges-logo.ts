@@ -6,6 +6,7 @@ export const cercleBrugesLogoPost: BlogPost = {
   title: "**Logo Cercle Bruges** : Histoire et Design Complet de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Cercle de Bruges logo**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo Cercle Bruges KSV** et de son évolution.",
   date: "2024-04-19",
+  galleryImageId: 156,
   category: "logos",
   content: `# Histoire du **Logo Cercle Bruges**
 
@@ -55,5 +56,4 @@ Le **logo Cercle Bruges KSV** trouve diverses applications commerciales. Les mai
 
 Le **logo Cercle de Bruges** demeure un symbole fort du football belge, alliant histoire et modernité. Le **Cercle Bruges logo** continue d'évoluer tout en préservant son héritage centenaire, illustrant parfaitement l'équilibre entre tradition et innovation dans l'identité visuelle d'un club historique.`,
   keywords: "logo cercle bruges, cercle de bruges logo, cercle bruges logo, cercle bruges nouveau logo, logo cercle bruges ksv, logo cercle de bruges, logo de foot cercle bruges, football belge, club belge, identité visuelle",
-  galleryImageId: null
 };

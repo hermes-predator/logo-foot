@@ -6,6 +6,7 @@ export const brestLogoPost: BlogPost = {
   title: "Logo Stade Brestois : Histoire et Design de l'Emblème Breton [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade Brestois : origines, évolution et symbolisme de l'emblème emblématique du club finistérien.",
   date: "2024-03-31",
+  galleryImageId: 134,
   content: `# L'Histoire Fascinante du **Logo Stade Brestois**
 
 Le **logo brest** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui incarne l'âme maritime et la fierté bretonne. Plongez dans l'univers visuel captivant du **brest logo**, un emblème qui a su évoluer tout en préservant ses racines profondes.
@@ -54,5 +55,4 @@ Alors que le Stade Brestois poursuit son développement sportif et institutionne
   keywords: "logo brest, brest logo, logo brest foot, logo brest png, logo stade brestois, stade brestois logo, logo stade brestois 29, logo stade brestois png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 48
 };

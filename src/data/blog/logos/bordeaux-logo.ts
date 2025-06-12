@@ -6,7 +6,7 @@ export const bordeauxLogoPost: BlogPost = {
   title: "Logo Girondins de Bordeaux : Histoire du Scapulaire Iconique [2024]",
   excerpt: "Découvrez l'histoire complète du logo des Girondins de Bordeaux : origines, évolutions et signification du célèbre scapulaire qui symbolise ce club historique du football français.",
   date: "2024-05-11",
-  galleryImageId: 89,
+  galleryImageId: 124,
   content: `# L'Histoire Fascinante du **Logo Bordeaux**
 
 Le **logo bordeaux** est l'un des emblèmes les plus reconnaissables du football français. Avec son design distinctif et ses couleurs emblématiques, le **bordeaux logo** raconte l'histoire d'un club prestigieux dont les racines plongent profondément dans l'identité culturelle de la région girondine. Dans cet article, nous explorons en détail l'évolution et la symbolique de cet emblème légendaire.

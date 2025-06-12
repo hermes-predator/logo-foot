@@ -6,6 +6,7 @@ export const borussiaMonchengladbachLogoPost: BlogPost = {
   title: "Logo Borussia Mönchengladbach : Histoire et Analyse du Design [2024]",
   excerpt: "Découvrez l'histoire complète du logo Borussia Mönchengladbach : origines, évolutions et signification de l'emblème du club allemand de football.",
   date: "2024-04-14",
+  galleryImageId: 125,
   content: `# L'Histoire Fascinante du **Logo Borussia M'Gladbach**
 
 Le **borussia m'gladbach logo** est l'un des symboles les plus emblématiques du football allemand. Représentant un club à l'histoire riche et prestigieuse, le **borussia m gladbach logo** incarne l'identité et les valeurs d'une institution qui a marqué l'histoire de la Bundesliga et du football européen.

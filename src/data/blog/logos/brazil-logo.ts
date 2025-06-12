@@ -5,7 +5,7 @@ export const brazilLogoPost: BlogPost = {
   title: "Logo Brésil : Histoire et Évolution de l'Emblème Auriverde [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la sélection brésilienne de football : origines, symbolisme et évolution d'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-04-17",
-  galleryImageId: 83,
+  galleryImageId: 131,
   content: `# L'Histoire Fascinante du **Logo Brésil**
 
 Le **logo brésil** est bien plus qu'un simple emblème sportif : c'est un symbole mondial d'excellence footballistique qui représente l'héritage incomparable de la nation la plus titrée en Coupe du Monde. Plongeons dans l'histoire captivante de ce **logo du brésil** qui incarne l'essence même du « jogo bonito ».

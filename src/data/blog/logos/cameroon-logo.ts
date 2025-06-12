@@ -5,6 +5,7 @@ export const cameroonLogoPost: BlogPost = {
   title: "Logo Cameroun : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Cameroun : des origines à aujourd'hui, évolution et signification de l'emblème des Lions Indomptables.",
   date: "2024-05-30",
+  galleryImageId: 149,
   content: `# L'Histoire Fascinante du **Logo Cameroun** Football
 
 Le **logo cameroun** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en traditions et en émotions. Le **logo du cameroun** représente l'âme d'un pays où le football est intimement lié à l'identité nationale et à la culture populaire.
@@ -53,5 +54,4 @@ Les joueurs qui portent fièrement le maillot orné du **cameroun logo foot** so
   keywords: "logo cameroun, logo du cameroun, cameroun foot logo, cameroun logo, cameroun logo foot, cameroun logo png, logo cameroun foot, logo foot cameroun, logo des lions indomptables du cameroun",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 164
 };

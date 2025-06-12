@@ -6,6 +6,7 @@ export const capeVerdeLogoPost: BlogPost = {
   title: "**Logo Cap Vert** : L'Histoire de l'Emblème des Îles Bleues [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale cap-verdienne : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football cap-verdien.",
   date: "2025-04-27",
+  galleryImageId: 152,
   category: "national-logos",
   subCategory: "national-logos",
   keywords: "logo cap vert, cap vert logo, cap vert foot logo, cap vert logo foot, cap vert team logo, federation cap vert logo, logo cap vert foot, logo equipe de foot du cap vert, logo foot cap vert, logo foot du cap vert, logos federation football cap vert",
@@ -36,5 +37,4 @@ Le **cap vert logo foot** est aujourd'hui reconnu bien au-delà des frontières 
 ## Conclusion
 
 Le **logo cap vert** est bien plus qu'un simple emblème : c'est le témoin visuel d'une histoire footballistique en constante évolution. Il incarne la fierté d'une nation qui, malgré sa taille modeste, continue de progresser et de surprendre dans le monde du football international, portée par des valeurs d'excellence et de détermination qui font la fierté de tout un pays.`,
-  galleryImageId: 80
 };

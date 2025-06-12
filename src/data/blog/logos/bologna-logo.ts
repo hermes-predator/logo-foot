@@ -6,7 +6,7 @@ export const bolognaLogoPost: BlogPost = {
   title: "Logo Bologne : Histoire et Évolution de l'Emblème du FC Bologna [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Bologne (Bologna FC) : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-05",
-  galleryImageId: 156,
+  galleryImageId: 122,
   content: `# L'Histoire Fascinante du **Logo Bologne**
 
 Le **logo bologne** est l'un des emblèmes les plus emblématiques et historiques du football italien. Représentant fièrement le **Bologna FC**, ce symbole visuel raconte l'histoire d'un club centenaire qui a profondément marqué le calcio italien. Plongeons dans l'univers captivant du **bologne logo** qui incarne l'identité d'une institution sportive ancrée dans la tradition.

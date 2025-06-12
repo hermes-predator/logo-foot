@@ -6,6 +6,7 @@ export const bresciaLogoPost: BlogPost = {
   title: "Logo Brescia : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Brescia Calcio : des origines à aujourd'hui, évolution et signification de cet emblème emblématique du football italien.",
   date: "2024-05-15",
+  galleryImageId: 133,
   content: `# L'Histoire Fascinante du **Logo Brescia**
 
 Le **logo Brescia** est bien plus qu'un simple emblème de club : c'est un symbole d'identité régionale et de fierté pour l'une des plus anciennes institutions footballistiques d'Italie. Dans cet article, nous explorons l'évolution captivante du **brescia calcio logo** à travers les décennies et sa signification profonde pour le club et ses supporters.

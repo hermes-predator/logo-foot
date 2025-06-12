@@ -5,6 +5,7 @@ export const canLogoPost: BlogPost = {
   title: "Logo CAN : Histoire et Design de l'Emblème de la Coupe d'Afrique [2025]",
   excerpt: "Découvrez l'histoire fascinante du logo de la CAN 2025, son évolution, sa symbolique et comment l'emblème de la Coupe d'Afrique des Nations représente le football africain.",
   date: "2024-05-20",
+  galleryImageId: 150,
   content: `# L'Histoire Fascinante du **Logo CAN**
 
 Le **logo can** est bien plus qu'un simple emblème sportif : c'est un symbole puissant qui représente l'excellence du football africain et la richesse culturelle d'un continent entier. Dans cet article détaillé, nous explorons l'histoire captivante du **logo can 2025** et décodons les éléments qui en font un chef-d'œuvre de design sportif.

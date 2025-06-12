@@ -104,17 +104,17 @@ const BlogHeader = () => {
           <Separator className="bg-white/30" />
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-gradient-to-r from-gray-900 via-black to-gray-800 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm">
-              <p className="text-white text-base font-normal whitespace-nowrap">
+            <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-800 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm overflow-hidden">
+              {/* Effet de brillance qui traverse tout le container */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></div>
+              <p className="text-white text-base font-normal whitespace-nowrap relative z-10">
                 Aperçu de quelques collections : 
                 <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-                  <span className="relative px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-all duration-300 shadow-md overflow-hidden"
+                  <span className="px-3 py-1 border-2 border-orange-500 rounded-full bg-orange-500/20 font-bold text-sm cursor-pointer hover:bg-orange-500/30 transition-colors duration-300 shadow-md"
                         style={{
                           animation: 'blink 1s infinite'
                         }}>
-                    {/* Effet de brillance qui traverse l'élément */}
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></span>
-                    <span className="relative z-10">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    ⦗FRONT-CLOUD⦘~ Football.zip
                   </span>
                 </Link>
               </p>

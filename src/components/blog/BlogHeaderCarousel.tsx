@@ -22,6 +22,18 @@ const BlogHeaderCarousel = () => {
     {
       src: "/lovable-uploads/437d5bd3-a26d-4459-970c-1297f805eb0b.png",
       alt: "Collections de logos - Image 3"
+    },
+    {
+      src: "/lovable-uploads/00cc641d-2544-4371-a712-0537f57f8887.png",
+      alt: "Collections de logos - Image 4"
+    },
+    {
+      src: "/lovable-uploads/90dcc6ef-0dc7-4a03-8e58-609f031c23c4.png",
+      alt: "Collections de logos - Image 5"
+    },
+    {
+      src: "/lovable-uploads/6bcd6dd7-6a9c-46cc-b20b-2d1e84099b58.png",
+      alt: "Collections de logos - Image 6"
     }
   ];
 

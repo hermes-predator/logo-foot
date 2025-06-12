@@ -5,7 +5,7 @@ export const austriaLogoPost: BlogPost = {
   title: "Logo Autriche : Histoire et Évolution de l'Emblème National du Football Autrichien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Autriche de football : origines, évolution et symbolisme de l'emblème rouge et blanc de la sélection autrichienne.",
   date: "2024-06-06",
-  galleryImageId: 89,
+  galleryImageId: 94,
   category: 'national-logos',
   subCategory: 'national-logos',
   content: `# Logo Autriche : L'Histoire de l'Emblème du Football Autrichien

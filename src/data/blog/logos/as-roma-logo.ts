@@ -6,7 +6,7 @@ export const asRomaLogoPost: BlogPost = {
   title: "Logo AS Roma : Histoire et Evolution de l'Emblème Giallorossi [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'AS Roma : origines, évolution et symbolisme de l'écusson emblématique du club de la capitale italienne.",
   date: "2024-04-22",
-  galleryImageId: 64,
+  galleryImageId: 83,
   content: `# L'Histoire Passionnante du **Logo AS Roma**
 
 Le **logo as roma** est bien plus qu'un simple emblème sportif : c'est une icône qui incarne l'âme de Rome, son histoire millénaire et la passion ardente de ses supporters. Cet article explore en profondeur l'histoire fascinante du **as roma logo** et sa place unique dans l'univers du football mondial.

@@ -6,7 +6,7 @@ export const astonVillaLogoPost: BlogPost = {
   title: "Logo Aston Villa : Histoire et Evolution du Design Emblématique [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Aston Villa FC : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Birmingham.",
   date: "2024-04-05",
-  galleryImageId: 54,
+  galleryImageId: 85,
   content: `# L'Histoire Fascinante du **Logo Aston Villa**
 
 Le **logo Aston Villa** est bien plus qu'un simple emblème sportif : c'est un symbole chargé d'histoire qui représente l'un des clubs fondateurs du football anglais. À travers les décennies, le **Aston Villa logo** a incarné la fierté et les traditions d'un club emblématique de Birmingham dont l'héritage remonte à 1874.

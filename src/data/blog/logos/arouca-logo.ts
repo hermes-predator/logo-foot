@@ -6,6 +6,7 @@ export const aroucaLogoPost: BlogPost = {
   title: "**Logo Arouca** : Histoire et Évolution de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Arouca**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
+  galleryImageId: 81,
   content: `# Histoire et Signification du **Logo Arouca**
 
 Le **logo Arouca** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une ville et d'une identité forgée à travers les années. Le Futebol Clube de Arouca, fondé en 1952, arbore un **FC Arouca logo** qui raconte l'histoire d'un club profondément ancré dans sa région.
@@ -70,5 +71,4 @@ Le **logo Arouca** est devenu un symbole puissant du football portugais, incarna
   keywords: "arouca logo, logo arouca, arouca logo png, fc arouca logo, logo arouca transparent, logo fc arouca",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 434
 };

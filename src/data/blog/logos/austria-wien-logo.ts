@@ -6,6 +6,7 @@ export const austriaWienLogoPost: BlogPost = {
   title: "Logo Austria Wien : Histoire, Signification et Design du Club Viennois [2024]",
   excerpt: "Plongez dans l’histoire du logo Austria Wien, son design unique et son symbole incontesté dans le football autrichien moderne.",
   date: "2024-04-21",
+  galleryImageId: 95,
   content: `# L’Histoire Captivante du **Logo Austria Wien**
 
 Parmi les clubs les plus emblématiques d’Autriche, l’**Austria Wien** occupe une place de choix, avec un **logo austria wien** qui attire l’attention des passionnés de football et des amateurs de design. L’**austria wien logo** n’est pas simplement une image : il raconte l’âme d’un club fondé en 1911 et dont l’identité a traversé chaque époque du football autrichien.
@@ -24,5 +25,4 @@ Dans l’ensemble, le **logo austria wien** est plus qu’un simple insigne spor
   keywords: "logo austria wien, austria wien logo, logo club football austria wienn, austria vienne logo png, logo austria de vienne, logo austria vienne, logo foot austria vienne",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: undefined // remplir l'id image si disponible
 };

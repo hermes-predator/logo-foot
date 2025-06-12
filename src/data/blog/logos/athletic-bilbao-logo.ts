@@ -6,6 +6,7 @@ export const athleticBilbaoLogoPost: BlogPost = {
   title: "Logo Athletic Bilbao : Histoire et Symbolisme de l'Emblème Basque",
   excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Athletic Bilbao. Analyse complète de l'emblème du club basque historique de la Liga.",
   date: "2024-07-04",
+  galleryImageId: 87,
   content: `# **Logo Athletic Bilbao** : Histoire et Symbolisme de l'Emblème Basque
 
 Le **Athletic Bilbao logo** est bien plus qu'un simple symbole pour un club de football - c'est l'incarnation de l'identité, des traditions et de la fierté du Pays basque. Reconnaissable par ses couleurs rouge et blanc distinctives, le **logo Bilbao** représente l'un des clubs les plus uniques et traditionnels du football européen. Dans cet article, nous analyserons en détail le **logo de Bilbao**, son histoire fascinante et sa signification culturelle profonde.

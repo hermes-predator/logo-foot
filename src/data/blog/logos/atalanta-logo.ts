@@ -6,7 +6,7 @@ export const atalantaLogoPost: BlogPost = {
   title: "Logo Atalanta : L'Histoire de la Déesse de Bergame [2024]",
   excerpt: "Plongez dans l'histoire fascinante du logo Atalanta, symbole mythologique du club de Bergame. Découvrez l'évolution de cet emblème légendaire du calcio italien.",
   date: "2024-04-05",
-  galleryImageId: 55,
+  galleryImageId: 86,
   content: `# L'Histoire Fascinante du **Logo Atalanta**
 
 Le **logo Atalanta** est bien plus qu'un simple emblème sportif : c'est un symbole chargé d'histoire qui représente l'un des clubs les plus emblématiques du football italien. À travers les décennies, l'**Atalanta logo** a incarné l'esprit combatif et les traditions d'un club de Bergame dont l'héritage s'enracine profondément dans la mythologie grecque.

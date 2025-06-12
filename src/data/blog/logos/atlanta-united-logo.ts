@@ -6,6 +6,7 @@ export const atlantaUnitedLogoPost: BlogPost = {
   title: "**Atlanta United Logo** : Histoire et Design de l'Emblème Emblématique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Atlanta United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 88,
   content: `# L'Histoire Fascinante du **Logo Atlanta United**
 
 Le **atlanta united logo** est devenu en quelques années seulement l'un des emblèmes les plus reconnaissables et appréciés de la Major League Soccer (MLS). Représentant l'identité forte d'une franchise créée en 2014 mais lancée en compétition en 2017, le **logo atlanta united** incarne parfaitement l'ambition et la modernité d'un club qui a rapidement conquis le cœur des supporters et marqué le paysage du football américain.
@@ -69,5 +70,4 @@ Plus qu'un simple emblème, le **logo atlanta united** est devenu un symbole de 
   keywords: "atlanta united logo:20, logo atlanta united:20, atlanta united fc logo:10, atlanta united fc logo png:10, atlanta united logo png:10, logo png atlanta united:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

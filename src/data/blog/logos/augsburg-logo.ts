@@ -6,6 +6,7 @@ export const augsburgLogoPost: BlogPost = {
   title: "Logo FC Augsburg : Histoire et Design du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo FC Augsburg, emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-22",
+  galleryImageId: 91,
   content: `# Histoire et Signification du Logo FC Augsburg
 
 Le **logo Augsburg** est l'emblème d'un club qui, malgré son arrivée relativement récente dans l'élite du football allemand, a su développer une identité visuelle forte et reconnaissable. Dans cet article, nous explorons en détail l'histoire, la symbolique et l'évolution du **Augsburg logo**, qui représente parfaitement les valeurs et l'identité de ce club de Bundesliga.
@@ -72,5 +73,4 @@ Dans un monde où l'identité visuelle joue un rôle de plus en plus important d
   keywords: "augsburg fc logo, augsburg logo, augsburg logo png, fc augsburg logo, logo fc augsburg, logo augsburg, logo augsburg png, logo football augsburg, logo png augsburg",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 67
 };

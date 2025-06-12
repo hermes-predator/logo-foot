@@ -6,7 +6,7 @@ export const atleticoMadridLogoPost: BlogPost = {
   title: "Logo Atlético Madrid : L'Histoire de l'Ours et l'Arbousier [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Atlético Madrid, son évolution au fil du temps et la signification de l'ours et l'arbousier qui symbolisent l'identité du club madrilène.",
   date: "2024-05-06",
-  galleryImageId: 67,
+  galleryImageId: 89,
   content: `# L'Histoire Passionnante du **Logo Atlético Madrid**
 
 Le **logo atletico madrid** est bien plus qu'un simple emblème sportif : c'est un symbole culturel qui raconte l'histoire d'un club emblématique de la capitale espagnole. À travers sa représentation distinctive de l'ours et l'arbousier, le **atletico madrid logo** transmet l'essence même de Madrid et sa riche tradition footballistique.

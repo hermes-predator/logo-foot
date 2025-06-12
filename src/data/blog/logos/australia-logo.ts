@@ -5,6 +5,7 @@ export const australiaLogoPost: BlogPost = {
   title: "Logo Australie : Histoire et Signification de l'Emblème des Socceroos [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Australie : des origines à aujourd'hui, évolution et signification de l'emblème des Socceroos.",
   date: "2024-04-02",
+  galleryImageId: 93,
   content: `# L'Histoire Fascinante du Logo Australie Football
 
 Le **logo australie** est bien plus qu'un simple emblème sportif : c'est un symbole national qui représente l'identité unique du football australien sur la scène internationale. L'emblème des Socceroos incarne à la fois la fierté nationale et les ambitions d'un pays dont la passion pour le ballon rond ne cesse de grandir.

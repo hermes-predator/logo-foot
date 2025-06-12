@@ -6,7 +6,7 @@ export const arsenalLogoPost: BlogPost = {
   title: "Logo Arsenal : Histoire et Évolution du Célèbre Canon des Gunners [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Arsenal à travers les époques : origines, évolutions et signification du célèbre emblème des Gunners qui incarne l'identité du club londonien.",
   date: "2024-04-07",
-  galleryImageId: 57,
+  galleryImageId: 82,
   content: `# L'Histoire Fascinante du Logo Arsenal à Travers les Âges
 
 Le **logo Arsenal** est bien plus qu'un simple emblème sportif – c'est le symbole d'une institution centenaire du football anglais et mondial. L'évolution de cet écusson légendaire raconte l'histoire même du club londonien, de ses valeurs et de son héritage.

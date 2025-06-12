@@ -2,6 +2,7 @@
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
+import JudgeMeBadge from './JudgeMeBadge';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -48,7 +49,7 @@ const BlogHeader = () => {
             </div>
             
             {/* Bouton à droite */}
-            <div className="lg:flex-shrink-0">
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-4">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -82,6 +83,9 @@ const BlogHeader = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
+              
+              {/* Badge Judge.me */}
+              <JudgeMeBadge />
             </div>
           </div>
         </div>

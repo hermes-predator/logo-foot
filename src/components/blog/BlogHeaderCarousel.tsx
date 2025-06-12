@@ -7,27 +7,27 @@ const BlogHeaderCarousel = () => {
   const carouselImages = [
     {
       src: "/lovable-uploads/42eae4e6-1176-4a6a-b811-98f89e509603.png",
-      alt: "Collections de logos - Angleterre, Allemagne, Espagne, France, Italie, Brésil, USA, Pays-Bas, National"
+      alt: "Collections de logos - Image 1"
     },
     {
       src: "/lovable-uploads/25a5462c-2f32-4a9a-8d6e-9c1f677fe604.png",
-      alt: "Collections de logos - Argentine, Portugal, Turquie, Belgique, Danemark, Grèce, Norvège, Pologne, Roumanie"
+      alt: "Collections de logos - Image 2"
     },
     {
       src: "/lovable-uploads/437d5bd3-a26d-4459-970c-1297f805eb0b.png",
-      alt: "Collections de logos - Russie, Suède, Suisse, Tchéquie, Autriche, Bulgarie, Croatie, Hongrie, Serbie"
+      alt: "Collections de logos - Image 3"
     },
     {
       src: "/lovable-uploads/00cc641d-2544-4371-a712-0537f57f8887.png",
-      alt: "Collections de logos - Slovaquie, Biélorussie, Écosse, Irlande, Pays de Galles, Finlande, Ukraine, Australie, Arabie Saoudite"
+      alt: "Collections de logos - Image 4"
     },
     {
       src: "/lovable-uploads/90dcc6ef-0dc7-4a03-8e58-609f031c23c4.png",
-      alt: "Collections de logos - Bosnie, Islande, Israël, Luxembourg, Slovénie, Albanie, Irlande-Nord, Malte, Azerbaïdjan"
+      alt: "Collections de logos - Image 5"
     },
     {
       src: "/lovable-uploads/6bcd6dd7-6a9c-46cc-b20b-2d1e84099b58.png",
-      alt: "Collections de logos - Moldavie, Arménie, Chypre, Estonie, Géorgie, Kazakhstan, Kosovo, Lettonie, Lituanie"
+      alt: "Collections de logos - Image 6"
     }
   ];
 
@@ -49,8 +49,8 @@ const BlogHeaderCarousel = () => {
                     src={image.src}
                     alt={image.alt}
                     width={400}
-                    height={300}
-                    aspectRatio={4/3}
+                    height={400}
+                    aspectRatio={1}
                     className="w-full h-full object-cover"
                     priority={index < 3}
                   />

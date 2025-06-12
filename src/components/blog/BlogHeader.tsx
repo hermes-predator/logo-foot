@@ -43,10 +43,10 @@ const BlogHeader = () => {
                 <span className="text-sm md:text-base font-normal">Obtenez toutes les ressources dans un fichier ZIP complet.</span>
               </p>
               
-              {/* Badge Google Drive avec bords carrés et lien vers l'accueil */}
+              {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
               <div className="flex justify-start mb-6">
                 <Link to="/">
-                  <GoogleDriveBadge className="rounded-none" />
+                  <GoogleDriveBadge className="rounded-md" />
                 </Link>
               </div>
             </div>

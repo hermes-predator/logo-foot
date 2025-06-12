@@ -96,8 +96,8 @@ const BlogHeader = () => {
       </div>
       
       {/* Texte d'aperçu des collections */}
-      <div className="relative z-20 text-white text-center mb-4">
-        <p className="text-lg font-semibold">
+      <div className="relative z-20 text-white text-center mb-8">
+        <p className="text-lg font-normal">
           Aperçu de quelques collections : 
           <span className="inline-block ml-2 px-3 py-1 border-2 border-orange-500 rounded-md bg-orange-500/20">
             ⦗FRONT-CLOUD⦘~ Football.zip

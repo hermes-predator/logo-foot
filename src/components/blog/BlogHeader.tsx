@@ -7,6 +7,7 @@ import BlogHeaderCarousel from './BlogHeaderCarousel';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Separator } from '@/components/ui/separator';
 import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -92,6 +93,13 @@ const BlogHeader = () => {
               <JudgeMeBadge />
             </div>
           </div>
+        </div>
+      </div>
+      
+      {/* Ligne de séparation */}
+      <div className="relative z-20 px-4">
+        <div className="container mx-auto">
+          <Separator className="bg-orange-500/30 mb-6" />
         </div>
       </div>
       

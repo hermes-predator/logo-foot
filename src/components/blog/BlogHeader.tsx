@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Folder, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   return (
@@ -42,9 +43,11 @@ const BlogHeader = () => {
                 Obtenez toutes les ressources dans un fichier ZIP complet.
               </p>
               
-              {/* Badge Google Drive avec bords carrés */}
+              {/* Badge Google Drive avec bords carrés et lien vers l'accueil */}
               <div className="flex justify-start">
-                <GoogleDriveBadge className="rounded-none" />
+                <Link to="/">
+                  <GoogleDriveBadge className="rounded-none" />
+                </Link>
               </div>
             </div>
             

@@ -6,6 +6,7 @@ export const portValeLogoPost: BlogPost = {
   title: "**Logo Port Vale** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Port Vale FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Port Vale à travers les années.",
   date: "2024-04-20",
+  galleryImageId: 447,
   category: "logos",
   content: `# L'Histoire Fascinante du **Logo Port Vale**
 
@@ -45,5 +46,4 @@ L'emblème est devenu un symbole de fierté pour les générations de supporters
 
 Le **port vale logo** est bien plus qu'un simple identifiant visuel : c'est le gardien d'une histoire riche, le symbole d'une communauté unie et le porte-étendard des ambitions du club. Son design équilibré entre tradition et modernité en fait un emblème intemporel qui continuera d'inspirer les générations futures de supporters.`,
   keywords: "logo port vale, port vale logo, port vale fc logo, port vale logo png",
-  galleryImageId: null
 };

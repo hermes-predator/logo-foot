@@ -5,6 +5,7 @@ export const partizanBelgradeLogoPost: BlogPost = {
   id: 438, // ID unique pour ce nouvel article
   title: "Logo Partizan Belgrade : Histoire et Évolution de l'Emblème Serbe [2024]",
   date: "2025-04-11",
+  galleryImageId: 438,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Partizan Belgrade, emblème du club serbe. Analyse complète des symboles et des couleurs du blason historique du FK Partizan.",
@@ -101,5 +102,4 @@ Pour les habitants de Belgrade et les supporters du club, le **logo partizan de 
 
 Le **fk partizan belgrade logo** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré les défis politiques et économiques traversés au fil des ans, a su se forger une place unique dans le paysage footballistique européen grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "logo partizan belgrade, partizan belgrade logo, partizan belgrade logo png, fk partizan belgrade logo, logo partizan de belgrade",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

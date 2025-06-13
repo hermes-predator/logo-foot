@@ -6,6 +6,7 @@ export const primeiraLigaPost: BlogPost = {
   title: "Championnat du Portugal de Football : Histoire et Évolution de la Primeira Liga [2024]",
   excerpt: "Découvrez l'histoire complète du championnat du Portugal de football. Analyse détaillée de la Primeira Liga, son classement, ses équipes emblématiques et son logo.",
   date: "2024-05-14",
+  galleryImageId: 455,
   content: `# L'Histoire et l'Évolution du **Championnat du Portugal de Football**
 
 ## La Primeira Liga : Premier Échelon du Football Portugais

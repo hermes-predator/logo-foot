@@ -6,6 +6,7 @@ export const panathinaikosLogoPost: BlogPost = {
   title: "Logo Panathinaikos : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
   excerpt: "Découvrez l'histoire complète et la signification du logo du Panathinaikos : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",
+  galleryImageId: 433,
   content: `# L'Histoire Fascinante du **Logo Panathinaikos**
 
 Le **logo Panathinaikos** est bien plus qu'un simple emblème sportif, c'est un symbole chargé d'histoire qui incarne les valeurs et l'identité d'un des clubs les plus prestigieux du football grec. Fondé en 1908, le Panathinaikos Athletic Club arbore fièrement un **panathinaikos logo** distinctif qui a traversé les époques tout en conservant son essence originelle. Dans cet article, plongeons dans l'histoire riche et l'évolution du **panathinaikos fc logo** qui continue de fasciner les amateurs de football du monde entier.
@@ -62,5 +63,4 @@ Que ce soit sur les terrains de football, dans les rues d'Athènes ou sur les é
   keywords: "logo panathinaikos, panathinaikos logo, panathinaikos fc logo, panathinaikos logo png, panathinaikos athènes logo png, panathinaikos foot logo, panathinaikos logo foot",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 345
 };

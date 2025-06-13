@@ -5,6 +5,7 @@ export const panamaLogoPost: BlogPost = {
   id: 432,
   title: "**Logo Panama** : L'Histoire et l'Évolution de l'Emblème des Canaleros [2024]",
   date: '2025-04-26',
+  galleryImageId: 432,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale du Panama : un symbole puissant qui représente l'identité et les ambitions du football panaméen.",
   content: `# L'Histoire Fascinante du **Logo Panama**

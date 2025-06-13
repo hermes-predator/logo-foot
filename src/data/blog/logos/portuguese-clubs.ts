@@ -5,6 +5,7 @@ export const portugueseLogosPost: BlogPost = {
   title: "Logos des Clubs Portugais : Histoire et Évolution des Emblèmes [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante et l'évolution des logos des clubs portugais de football. Analyse complète des emblèmes des plus grands clubs du Portugal.",
   date: "2024-07-15",
+  galleryImageId: 452,
   content: `# Histoire et Évolution des **Logos des Clubs Portugais** de Football
 
 Le Portugal, nation passionnée de football, possède une riche histoire d'identités visuelles à travers ses clubs. Les **logos des clubs portugais** racontent bien plus qu'une simple affiliation sportive - ils sont le reflet d'une culture, d'une région et d'une histoire souvent centenaire. Cet article vous propose un voyage fascinant à travers l'évolution et la signification des emblèmes des principaux clubs du championnat portugais.

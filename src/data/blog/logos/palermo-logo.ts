@@ -6,6 +6,7 @@ export const palermoLogoPost: BlogPost = {
   title: "Logo Palerme : Histoire et Évolution de l'Emblème Sicilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Palerme, son évolution au fil du temps et la signification des éléments qui composent l'identité visuelle du club sicilien.",
   date: "2024-06-02",
+  galleryImageId: 430,
   content: `# **Logo Palerme** : Histoire et Signification de l'Emblème du Club Sicilien
 
 Le **logo Palerme** est l'un des emblèmes les plus distinctifs du football italien, représentant fièrement les couleurs et l'identité de la capitale sicilienne. Dans cet article détaillé, nous explorerons l'histoire fascinante du **logo de foot Palerme**, son évolution au fil des décennies et sa signification culturelle et sportive.

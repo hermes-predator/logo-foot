@@ -6,6 +6,7 @@ export const omLogoPost: BlogPost = {
   title: "Logo OM : Histoire et Évolution de l'Olympique de Marseille [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'OM : origines, signification et évolution de l'emblème de l'Olympique de Marseille à travers les années.",
   date: "2024-03-25",
+  galleryImageId: 423,
   content: `# L'Histoire Passionnante du Logo de l'OM
 
 L'emblème de l'**Olympique de Marseille** est bien plus qu'un simple **logo OM** : c'est un symbole qui incarne l'âme d'une ville entière et la passion de millions de supporters à travers le monde. Plongeons dans l'histoire fascinante de ce **logo marseillais** mythique du football français.
@@ -38,5 +39,4 @@ Pour les supporters et collectionneurs, avoir le **logo OM PNG** ou le **logo Ol
   keywords: "logo om, om logo, logo marseille, marseille logo, logo om png, logo de l'om, marseillais logo, om logo png, logo olympique de marseille, logo de marseille, logo olympique marseille, foot logo om, logo marseille foot, logo olympique de marseille png, ecusson om, embleme om",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 37
 };

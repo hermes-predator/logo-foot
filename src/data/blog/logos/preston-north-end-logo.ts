@@ -6,6 +6,7 @@ export const prestonNorthEndLogoPost: BlogPost = {
   title: "Logo Preston North End : Histoire et Évolution d'un Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Preston North End, son évolution à travers les années et la signification de cet emblème pionnier du football anglais. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",
+  galleryImageId: 454,
   content: `# L'Histoire Emblématique du **Logo Preston North End**
 
 Le **preston north end logo** représente l'un des symboles les plus historiques du football anglais. Club fondateur de la Football League en 1888 et premier champion d'Angleterre de l'histoire, Preston North End possède une identité visuelle qui reflète son riche héritage et son statut pionnier dans le développement du football moderne.
@@ -142,5 +143,4 @@ En définitive, le **preston north end logo** incarne parfaitement l'âme d'un c
   keywords: "logo preston north end, preston north end logo, preston north end fc logo, logo de foot preston north end, emblème preston north end, pne logo, deepdale logo, lilywhites logo, football league founders logo, lancashire football club logo, championship team logo, oldest football club logo, agneau pascal logo foot, the invincibles logo",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 405
 };

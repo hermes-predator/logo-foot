@@ -5,6 +5,7 @@ export const polandLogoPost: BlogPost = {
   title: "Logo Pologne : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Pologne : des origines à aujourd'hui, évolution et signification de l'emblème du football polonais.",
   date: "2024-05-28",
+  galleryImageId: 446,
   content: `# L'Histoire Fascinante du **Logo Pologne** Football
 
 Le **logo pologne** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui incarne la fierté et la tradition du football polonais sur la scène internationale. L'évolution du **logo pologne foot** raconte l'histoire d'un pays dont la passion pour le ballon rond est profondément ancrée dans sa culture sportive.
@@ -53,5 +54,4 @@ Cette réciprocité d'influence entre le **logo pologne foot** et les **logo clu
   keywords: "logo pologne, logo pologne foot, logo foot pologne, pologne logo, logo de la pologne, logo pologne png, logo club de foot pologne, logo club foot pologne",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 162
 };

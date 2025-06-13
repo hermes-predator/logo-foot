@@ -6,6 +6,7 @@ export const pecZwolleLogoPost: BlogPost = {
   title: "**Logo PEC Zwolle** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **PEC Zwolle logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
+  galleryImageId: 440,
   content: `# Histoire du **Logo PEC Zwolle**
 
 Le **zwolle logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs historiques des Pays-Bas. Le **pec zwolle logo** incarne la fierté et la tradition d'une institution profondément ancrée dans son histoire.
@@ -36,5 +37,4 @@ Le logo de PEC Zwolle est bien plus qu'un simple emblème - c'est le témoin vis
   keywords: "**logo pec zwolle**, **pec zwolle logo**, **zwolle logo**, **logo zwolle**, **logo de foot zwolle pays bas**",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9340
 };

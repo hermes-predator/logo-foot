@@ -6,6 +6,7 @@ export const osasunaLogoPost: BlogPost = {
   title: "Logo Osasuna : Histoire et Design de l'Emblème du Club Navarrais [2024]",
   excerpt: "Découvrez l'histoire complète du logo Osasuna : des origines à aujourd'hui, évolution et signification de l'emblème rouge du club emblématique de Pampelune.",
   date: "2024-05-27",
+  galleryImageId: 427,
   content: `# L'Histoire Fascinante du **Logo Osasuna**
 
 Le **logo osasuna** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité culturelle qui représente à la fois le club de football et la fierté de toute une région, la Navarre. Dans cet article, nous explorerons l'histoire captivante du **osasuna logo** et découvrirons ce qui fait de ce blason un élément si important pour les supporters et la communauté locale.
@@ -66,5 +67,4 @@ Des terrains de jeu aux plateformes digitales, le **osasuna logo png** continue 
   keywords: "logo osasuna, logo osasuna png, osasuna logo, osasuna logo png, ca osasuna logo, osasuna fc logo, ca osasuna logo foot, logo ca osasuna, logo png osasuna",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 160
 };

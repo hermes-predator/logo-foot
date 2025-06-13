@@ -6,6 +6,7 @@ export const palmeirasLogoPost: BlogPost = {
   title: "Logo Palmeiras : Histoire et Évolution de l'Emblème Brésilien [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Palmeiras : origines, évolution et signification de l'emblème emblématique du club brésilien.",
   date: "2025-04-09",
+  galleryImageId: 431,
   content: `# L'Histoire Fascinante du **Logo Palmeiras**
 
 Le **logo Palmeiras** est l'un des symboles les plus emblématiques du football brésilien, représentant un club à l'histoire riche et aux succès nombreux. Dans cet article, nous explorerons l'évolution et la signification du **palmeiras logo** qui a accompagné le club depuis sa création jusqu'à aujourd'hui.
@@ -118,5 +119,4 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
   category: "logos",
   subCategory: "southAmericanClubs",
   keywords: "logo palmeiras, palmeiras logo, palmeiras logo png, palmeiras soccer logo, logo del palmeiras",
-  galleryImageId: 9,
 };

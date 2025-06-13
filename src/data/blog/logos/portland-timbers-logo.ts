@@ -6,6 +6,7 @@ export const portlandTimbersLogoPost: BlogPost = {
   title: "**Logo Portland Timbers** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Portland Timbers**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 448,
   content: `# L'Histoire Fascinante du **Logo Portland Timbers**
 
 Le **portland timbers logo** est l'un des emblèmes les plus distinctifs et représentatifs du football nord-américain. Depuis sa création, ce **logo portland timbers** incarne l'esprit de Portland et la culture unique du football dans le Pacifique Nord-Ouest des États-Unis.
@@ -36,5 +37,4 @@ Le **logo portland timbers** illustre parfaitement comment un design peut transc
   keywords: "logo portland timbers:20, portland timbers logo:20, portland timbers logo png:10, logo de foot portland timbers:10, portland timbers logos:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

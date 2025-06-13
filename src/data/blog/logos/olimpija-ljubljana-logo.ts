@@ -5,6 +5,7 @@ export const olimpijaLjubljanalogoPost: BlogPost = {
   title: "**Logo Olimpija Ljubljana** : Histoire et Symbolique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Olimpija Ljubljana**, son évolution et sa signification profonde dans le football slovène.",
   date: "2024-04-15",
+  galleryImageId: 421,
   content: `# L'Histoire du **Logo Olimpija Ljubljana**
 
 Le **logo Olimpija Ljubljana** est bien plus qu'un simple emblème - c'est le symbole d'un club de football historique slovène. Fondé en 1911, le club incarne l'histoire et la passion du football dans les Balkans.
@@ -51,5 +52,4 @@ Le **logo Olimpija Ljubljana** transcende le simple emblème sportif - c'est un 
   keywords: "olimpija ljubljana logo, logo olimpija ljubljana fc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 433
 };

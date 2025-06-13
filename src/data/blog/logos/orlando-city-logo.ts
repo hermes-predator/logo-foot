@@ -6,6 +6,7 @@ export const orlandoCityLogoPost: BlogPost = {
   title: "**Logo Orlando City** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Orlando City**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 425,
   content: `# L'Histoire Fascinante du **Logo Orlando City**
 
 Le **logo Orlando City** est l'un des emblèmes les plus distinctifs et colorés de la Major League Soccer (MLS). Depuis sa création, ce **orlando city logo** incarne non seulement l'identité d'une équipe de football, mais aussi l'esprit vibrant de la ville d'Orlando en Floride.
@@ -36,5 +37,4 @@ Le **orlando city new logo** illustre parfaitement comment un design peut transc
   keywords: "logo orlando city:20, orlando city logo:20, orlando city logo png:20, orlando city sc logo:20, orlando city fc logo:10, orlando city new logo:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

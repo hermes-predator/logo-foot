@@ -6,6 +6,7 @@ export const paderbornLogoPost: BlogPost = {
   title: "Logo Paderborn : Histoire et Design de l'Emblème Allemand SC Paderborn 07 [2024]",
   excerpt: "Découvrez l'histoire complète du logo du SC Paderborn 07 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-11",
+  galleryImageId: 429,
   content: `# L'Histoire Fascinante du Logo SC Paderborn 07
 
 Le **logo paderborn** est un symbole qui représente l'identité et l'histoire d'un club en constante évolution dans le paysage footballistique allemand. Plus qu'un simple écusson, le **paderborn logo** incarne les valeurs, les ambitions et le parcours unique de cette équipe de Rhénanie-du-Nord-Westphalie.
@@ -60,5 +61,4 @@ Quelle que soit son évolution future, le **paderborn logo png** restera un symb
   keywords: "logo paderborn, paderborn logo, paderborn logo png, logo sc paderborn 07",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 91
 };

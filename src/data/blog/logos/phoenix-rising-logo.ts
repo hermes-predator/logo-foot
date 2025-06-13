@@ -6,6 +6,7 @@ export const phoenixRisingLogoPost: BlogPost = {
   title: "**Logo Phoenix Rising** : Histoire et Design de l'Emblème du Football Américain [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Phoenix Rising**, son évolution et la symbolique de cet emblème unique du football américain dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 442,
   content: `# L'Histoire Fascinante du **Logo Phoenix Rising**
 
 Le **phoenix rising logo** est l'un des emblèmes les plus distinctifs du soccer américain, capturant l'essence du football dans l'ouest des États-Unis. Depuis sa création, ce **logo phoenix rising fc** incarne l'identité unique de Phoenix et de sa dynamique culturelle sportive.
@@ -36,5 +37,4 @@ Le **logo phoenix rising** illustre parfaitement comment un design peut transcen
   keywords: "phoenix rising logo:20, phoenix rising fc logo:10, rising phoenix logo:10, logo phoenix rising fc:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

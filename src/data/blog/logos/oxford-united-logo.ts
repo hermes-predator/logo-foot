@@ -6,6 +6,7 @@ export const oxfordUnitedLogoPost: BlogPost = {
   title: "Oxford United FC Logo : Histoire et Évolution d'un Emblème Iconique",
   excerpt: "Découvrez l'histoire fascinante du logo Oxford United, son évolution à travers les années et l'importance de cet emblème pour le club. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",
+  galleryImageId: 428,
   content: `# L'Histoire Emblématique du **Logo Oxford United**
 
 Le **logo Oxford United** représente l'un des symboles les plus reconnaissables du football anglais. Club historique fondé en 1893 sous le nom de Headington United avant de devenir Oxford United en 1960, les "U's" ont développé au fil des décennies une identité visuelle qui reflète parfaitement leur histoire et leurs valeurs.
@@ -163,5 +164,4 @@ Pour les supporters, qu'ils arborent fièrement le **oxford united logo png** su
   keywords: "logo oxford united, oxford united logo, oxford united fc logo png, oxford united logo png, oxford united badge, oxford united emblem, oxford united crest, yellow and blue logo, the u's logo, league one team logo, kassam stadium logo, headington united, football club logo, english football logo",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 404
 };

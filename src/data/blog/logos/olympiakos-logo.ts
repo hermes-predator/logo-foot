@@ -6,6 +6,7 @@ export const olympiakosLogoPost: BlogPost = {
   title: "Logo Olympiakos : Histoire et Évolution de l'Emblème Grec Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Olympiakos, son évolution à travers le temps et la signification des symboles qui composent l'emblème du club grec le plus titré.",
   date: "2024-05-22",
+  galleryImageId: 422,
   content: `# L'Histoire Fascinante du **Logo Olympiakos**
 
 Le **olympiakos logo** est bien plus qu'un simple emblème sportif – c'est le symbole visuel d'une institution centenaire du football grec et européen. L'évolution de cet écusson légendaire raconte l'histoire même du club du Pirée, de ses valeurs et de son héritage culturel profondément ancré dans l'identité grecque.
@@ -90,5 +91,4 @@ En définitive, le **logo olympiakos** représente bien plus qu'un simple design
   keywords: "logo olympiakos, olympiakos logo, logo olympiakos png, olympiakos logo png, logo foot olympiakos, logo olympiakos le pirée, olympiakos football logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 261
 };

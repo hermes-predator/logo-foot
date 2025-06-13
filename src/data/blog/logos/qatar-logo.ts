@@ -5,6 +5,7 @@ export const qatarLogoPost: BlogPost = {
   id: 460,
   title: "Logo Qatar : L'Histoire Fascinante de l'Emblème du Football Qatari",
   date: '2025-04-26',
+  galleryImageId: 460,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire et le symbolisme derrière le logo de la fédération qatarie de football, un emblème qui représente l'ambition et la tradition footballistique du pays.",
   content: `# Logo Qatar : L'Histoire Fascinante de l'Emblème du Football Qatari

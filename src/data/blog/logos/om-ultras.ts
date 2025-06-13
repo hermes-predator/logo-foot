@@ -6,6 +6,7 @@ export const omUltrasPost: BlogPost = {
   title: "Ultras OM : Histoire et Culture des Groupes Ultras de Marseille [2024]",
   excerpt: "Découvrez l'histoire complète des Ultras OM : du virage sud aux commandos ultra, l'univers des supporters ultras de l'Olympique de Marseille, leur histoire, organisation et influence.",
   date: "2024-07-18",
+  galleryImageId: 424,
   content: `# L'Histoire Passionnante des **Ultras OM**
 
 Les **ultras OM** constituent une part essentielle de l'identité de l'Olympique de Marseille. Bien plus que de simples supporters, ils représentent l'âme vibrante du stade Vélodrome et incarnent la passion marseillaise dans toute sa splendeur. Cet article plonge au cœur de ces groupes emblématiques qui font de chaque match à domicile un spectacle unique.
@@ -106,5 +107,4 @@ Qu'il s'agisse du **commando ultras om**, des South Winners ou des autres groupe
   keywords: "ultras om, ultra om, om ultras, om ultra, boutique ultras om, abonnement ultra om, boutique ultra om, drapeau om ultra, echarpe ultra om, echarpe ultras om, abonnement om ultras, abonnement om virage sud ultras, abonnement ultras om, boutique om ultras, chant ultra om, chant ultras om, chef des ultras om, chef ultra om, commando ultra om, commando ultras om, drapeau ultra om, groupe ultra om yankee, logo ultra om",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 408
 };

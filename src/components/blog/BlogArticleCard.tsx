@@ -34,7 +34,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
           <BlogImage 
             src={imageSrc}
             alt={post.title}
-            className="w-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+            className="w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-110"
             aspectRatio={1}
             width={400}
             height={400}

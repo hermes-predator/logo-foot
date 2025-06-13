@@ -6,6 +6,7 @@ export const fluminenseLogoPost: BlogPost = {
   title: "**Fluminense Logo** : Histoire et Évolution de l'Emblème Carioca [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Fluminense**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Fluminense logo PNG**.",
   date: "2024-04-22",
+  galleryImageId: 263,
   content: `# L'Histoire Fascinante du **Fluminense Logo**
 
 Le **Fluminense logo** représente l'une des identités visuelles les plus emblématiques du football brésilien. Fondé en 1902, le club de Rio de Janeiro arbore fièrement un **logo Fluminense PNG** qui raconte plus d'un siècle d'histoire et de traditions.
@@ -44,5 +45,4 @@ Le **Fluminense logo** est bien plus qu'un simple emblème sportif : c'est le sy
   keywords: "logo fluminense, fluminense logo, fluminense logo png, logo fluminense png, fluminense logo vector, logo de fluminense, logo fluminense fc, club foot logo fluminense, football brésilien, club brésilien",
   category: "logos",
   subCategory: "non-european-clubs",
-  galleryImageId: 8
 };

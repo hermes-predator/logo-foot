@@ -6,7 +6,7 @@ export const fiorentinaLogoPost: BlogPost = {
   title: "Logo Fiorentina : Histoire et Évolution du Symbole Violet [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Fiorentina : origines, évolution et signification de l'emblème emblématique du club de Florence.",
   date: "2024-04-08",
-  galleryImageId: 58,
+  galleryImageId: 259,
   content: `# L'Histoire Fascinante du **Logo Fiorentina**
 
 Le **logo fiorentina** est bien plus qu'un simple emblème sportif - c'est le symbole d'une institution historique du football italien. Depuis sa création en 1926, l'ACF Fiorentina a vu son identité visuelle évoluer considérablement, reflétant à la fois l'histoire de Florence et les ambitions du club.

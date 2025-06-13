@@ -5,6 +5,7 @@ export const fcTwenteLogoPost: BlogPost = {
   id: 253,
   title: "Logo FC Twente : Histoire et évolution de l'emblème du club des Pays-Bas",
   date: "2025-04-11",
+  galleryImageId: 253,
   category: "logos",
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire et l'évolution du logo FC Twente, l'un des clubs les plus emblématiques du football néerlandais. Analysez les symboles et les couleurs qui ont façonné l'identité visuelle de ce club historique.",
@@ -143,5 +144,4 @@ Le triangle au centre du **logo Twente** symbolise la force, la stabilité et la
 Oui, le **FC Twente logos** a connu plusieurs évolutions, passant d'un design relativement simple à l'emblème distinctif et moderne que nous connaissons aujourd'hui.
 `,
   keywords: "logo FC Twente, FC Twente logo, FC Twente logo PNG, FC Twente logos, logo Twente, Twente logo, logo foot Twente, emblème FC Twente, club néerlandais FC Twente, Eredivisie logo club, télécharger logo FC Twente, histoire logo FC Twente",
-  galleryImageId: null,
 };

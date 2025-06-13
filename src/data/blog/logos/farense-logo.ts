@@ -6,6 +6,7 @@ export const farenseLogoPost: BlogPost = {
   title: "**Farense Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Farense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
+  galleryImageId: 249,
   content: `# Histoire et Signification du **Farense Logo**
 
 Le **logo Farense** représente l'identité profonde d'un club historique du football portugais. Situé à Faro, dans l'Algarve, le Sporting Clube Farense arbore un **SC Farense logo** qui raconte l'histoire d'une région et d'une passion footballistique.
@@ -70,6 +71,5 @@ Le **logo Farense** est devenu un symbole reconnaissable du football portugais, 
   keywords: "farense logo, logo farense, logo sc farense, sc farense logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 436
 };
 

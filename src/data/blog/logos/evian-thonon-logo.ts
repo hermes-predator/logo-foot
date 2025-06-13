@@ -5,6 +5,7 @@ export const evianThononLogoPost: BlogPost = {
   id: 246,
   title: "**Logo Evian Thonon** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 246,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo evian thonon gaillard**, son évolution et sa signification. Guide complet sur l'emblème du club savoyard avec analyse détaillée du **thonon evian fc logo**.",
   content: `# Histoire du **Logo Evian Thonon**
@@ -65,5 +66,4 @@ Respecter les proportions, maintenir la lisibilité, choisir judicieusement les 
 
 Le **logo evian thonon gaillard** transcende sa fonction première. Il est le récit visuel d'un club, l'expression graphique d'une histoire, d'ambitions et d'un territoire. Sa conception méticuleuse et son évolution réfléchie en font bien plus qu'un simple emblème : un véritable patrimoine.`,
   keywords: "logo evian thonon, evian thonon gaillard logo, logo evian thonon gaillard, evian thonon foot logo png, logo thonon evian, logo thonon evian fc, thonon evian fc logo, thonon evian savoie foot logo, thonon evian savoie logo",
-  galleryImageId: null
 };

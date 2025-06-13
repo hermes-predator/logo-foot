@@ -5,6 +5,7 @@ export const fleuryLogoPost: BlogPost = {
   id: 262,
   title: "**Logo Fleury 91** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 262,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo Fleury 91**, son évolution et sa signification. Guide complet sur l'emblème du **FC Fleury 91** avec analyse détaillée de son identité visuelle.",
   content: `# Guide Complet du **Logo Fleury 91**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo Fleury 91** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du FC Fleury 91.`,
   keywords: "logo fleury 91, fc fleury 91 logo, logo fc fleury 91, fc fleury 91 logo png, logo fc fleury 91 png, logo fleury 91 foot, logo fleury 91 png",
-  galleryImageId: null
 };

@@ -6,7 +6,7 @@ export const frenchLeaguesSchemaPost: BlogPost = {
   title: "Schéma des Ligues Françaises de Football : Structure et Organisation [2024]",
   excerpt: "Découvrez l'organisation pyramidale complète du football français: divisions, promotions, relégations et connections entre les différents niveaux du football hexagonal.",
   date: "2024-04-20",
-  galleryImageId: 84,
+  galleryImageId: 270,
   content: `# Le **Schéma des Ligues Françaises** de Football : Une Organisation Pyramidale Complexe
 
 Le **schéma des ligues françaises** constitue l'une des structures les plus élaborées et respectées du football mondial. Cette organisation pyramidale du **football français** permet une circulation fluide entre les différents niveaux, offrant à chaque club, même le plus modeste, la possibilité théorique d'atteindre un jour l'élite. Examinons en détail cette **hiérarchie du football français** qui fait la fierté de la FFF.

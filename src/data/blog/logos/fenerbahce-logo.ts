@@ -6,7 +6,7 @@ export const fenerbahceLogoPost: BlogPost = {
   title: "Logo Fenerbahçe : Histoire et Évolution de l'Emblème Turc [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Fenerbahçe : origines, symbolisme et évolution de l'emblème emblématique du club stambouliote.",
   date: "2024-04-19",
-  galleryImageId: 84,
+  galleryImageId: 255,
   content: `# L'Histoire Fascinante du **Logo Fenerbahçe**
 
 Le **logo fenerbahce** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité culturelle qui représente l'un des clubs les plus prestigieux de Turquie. Plongeons dans l'histoire captivante de ce **fenerbahce logo** qui incarne l'essence même du football turc et de sa riche tradition.

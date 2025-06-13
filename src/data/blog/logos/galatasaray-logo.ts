@@ -6,7 +6,7 @@ export const galatasarayLogoPost: BlogPost = {
   title: "Logo Galatasaray : Histoire et Évolution de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Galatasaray : origines, signification et évolution de cet emblème emblématique du football turc à travers les âges.",
   date: "2024-04-18",
-  galleryImageId: 81,
+  galleryImageId: 275,
   content: `# L'Histoire Fascinante du **Logo Galatasaray**
 
 Le **logo galatasaray** est bien plus qu'un simple emblème pour l'un des clubs les plus prestigieux de Turquie. Il incarne une histoire riche, une passion ardente et une identité culturelle profondément ancrée dans le cœur des supporters du monde entier.

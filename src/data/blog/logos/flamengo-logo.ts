@@ -6,6 +6,7 @@ export const flamengoLogoPost: BlogPost = {
   title: "Logo Flamengo : Histoire et Évolution de l'Emblème du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Flamengo : des origines à aujourd'hui, évolution et signification de l'emblème du club le plus populaire du Brésil, symbole du football brésilien.",
   date: "2024-06-02",
+  galleryImageId: 260,
   content: `# L'Histoire Fascinante du **Flamengo Logo**
 
 Le **flamengo logo** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne la passion, la fierté et la riche tradition footballistique de l'un des clubs les plus populaires du Brésil et d'Amérique du Sud. Dans cet article approfondi, nous explorons l'histoire captivante du **logo flamengo** et découvrons ce qui fait de ce blason un emblème si spécial pour les millions de supporters du "Mengão" et les amateurs de football du monde entier.
@@ -76,5 +77,4 @@ Que ce soit dans sa version officielle utilisée par le club ou dans ses nombreu
   keywords: "flamengo logo, logo flamengo, flamengo logo png, logo de flamengo, logo flamengo fc, equipe de foot flamengo logo, flamengo football logo, logo club foot flamengo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 168
 };

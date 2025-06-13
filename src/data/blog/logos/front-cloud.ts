@@ -6,6 +6,7 @@ export const frontCloudPost: BlogPost = {
   title: "Création Logo Foot : Guide Expert Design [2024]",
   excerpt: "Guide complet pour créer un logo foot professionnel. Découvrez nos conseils d'experts pour concevoir l'écusson parfait pour votre club.",
   date: "2024-03-01",
+  galleryImageId: 272,
   content: `Imaginez-vous assis devant votre écran, prêt à donner vie à l'identité visuelle de votre club de football. La création d'un logo foot est un voyage passionnant, une aventure où chaque trait, chaque couleur raconte une histoire unique. Laissez-moi vous guider à travers ce processus créatif qui transformera votre vision en réalité.
 
 L'Art de Créer un Logo Football

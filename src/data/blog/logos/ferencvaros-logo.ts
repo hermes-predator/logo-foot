@@ -5,6 +5,7 @@ export const ferencvarosLogoPost: BlogPost = {
   id: 256, // Unique ID for this new article
   title: "Ferencváros Logo : Histoire et Signification de l'Emblème Hongrois [2024]",
   date: "2025-04-11",
+  galleryImageId: 256,
   category: "logos",
   subCategory: "other-european", // European clubs outside the top 5 leagues
   excerpt: "Découvrez l'histoire fascinante et la signification du logo Ferencváros, emblème du club hongrois. Une analyse complète des couleurs vert et blanc et des symboles qui définissent l'identité visuelle du champion de Hongrie.",
@@ -146,6 +147,5 @@ Le **logo ferencvaros** représente parfaitement le parcours d'un club historiqu
 
 À travers son **logo ferencvaros png**, le Ferencvárosi TC raconte une histoire fascinante: celle d'un club profondément ancré dans un quartier de Budapest qui a su devenir une référence nationale puis un ambassadeur du football hongrois sur la scène européenne. Cette capacité à incarner à la fois l'identité locale et les aspirations internationales fait du **logo club ferencvaros** un exemple remarquable d'identité visuelle sportive qui transcende les générations et les frontières.`,
   keywords: "ferencvaros logo png, logo ferencvaros, logo club ferencvaros, logo ferencvaros png",
-  galleryImageId: null // To be replaced with the image ID when available
 };
 

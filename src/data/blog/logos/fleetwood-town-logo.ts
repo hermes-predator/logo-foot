@@ -6,6 +6,7 @@ export const fleetwoodTownLogoPost: BlogPost = {
   title: "**Logo Fleetwood Town** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Fleetwood Town FC logo**, symbole d'identité et de fierté du club anglais. Une analyse détaillée du **logo Fleetwood Town FC** à travers les années.",
   date: "2024-04-20",
+  galleryImageId: 261,
   category: "logos",
   content: `# L'Histoire du **Logo Fleetwood Town**
 
@@ -55,6 +56,5 @@ L'emblème est devenu un atout marketing précieux. Il orne fièrement les maill
 
 Le **logo Fleetwood Town** symbolise parfaitement l'évolution d'un club ambitieux qui honore son héritage maritime tout en se projetant vers l'avenir. Son design équilibré entre tradition et modernité en fait un emblème reconnaissable et respecté dans le football anglais.`,
   keywords: "logo fleetwood town, fleetwood town fc logo, logo fleetwood town fc",
-  galleryImageId: null
 };
 

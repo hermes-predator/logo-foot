@@ -5,7 +5,7 @@ export const faCupLogoPost: BlogPost = {
   title: "Logo FA Cup : Histoire et Design de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire complète du logo FA Cup : origines, évolution et signification de l'emblème emblématique de la plus ancienne compétition de football au monde.",
   date: "2024-06-03",
-  galleryImageId: 112,
+  galleryImageId: 247,
   content: `# L'Histoire Fascinante du **Logo FA Cup**
 
 Le **fa cup logo** est bien plus qu'un simple emblème sportif : c'est un symbole historique qui représente la plus ancienne compétition de football au monde. Ce **logo fa cup** emblématique incarne l'héritage, la tradition et le prestige d'un tournoi qui a façonné l'histoire du football depuis sa création en 1871.

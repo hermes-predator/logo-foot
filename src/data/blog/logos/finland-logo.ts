@@ -8,7 +8,7 @@ export const finlandLogoPost: BlogPost = {
   date: "2024-06-25",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 425,
+  galleryImageId: 258,
   content: `# L'Histoire Fascinante du **Logo Finlande**
 
 Le **logo finlande** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière et déterminée, dont l'identité footballistique reflète la force et la résilience des peuples nordiques. Le **finlande logo** incarne l'esprit d'un pays qui, malgré sa taille modeste, aspire à se faire entendre sur la scène internationale du football.

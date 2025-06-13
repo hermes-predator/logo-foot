@@ -5,7 +5,7 @@ export const franceLogoPost: BlogPost = {
   title: "Logo Équipe de France : Histoire et Évolution de l'Emblème des Bleus [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'Équipe de France de football : origines, évolution et symbolisme de l'emblème des Bleus qui a marqué l'histoire du football mondial.",
   date: "2024-05-31",
-  galleryImageId: 88,
+  galleryImageId: 268,
   content: `# L'Histoire Fascinante du **Logo Équipe de France**
 
 Le **logo équipe de France** est bien plus qu'un simple emblème sportif. Symbole d'une nation entière, il incarne l'histoire glorieuse et les valeurs profondes d'une sélection qui a marqué le football mondial de son empreinte.

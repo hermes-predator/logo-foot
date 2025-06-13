@@ -6,6 +6,7 @@ export const famalicaoLogoPost: BlogPost = {
   title: "Logo Famalicão : Histoire et Signification du FC Famalicão [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification derrière le logo Famalicão, emblème du club portugais. Analyse complète des couleurs, symboles et évolution du FC Famalicão.",
   date: "2024-07-20",
+  galleryImageId: 248,
   content: `# Histoire et Évolution du **Logo Famalicão**
 
 Le **logo Famalicão** est bien plus qu'un simple emblème pour ce club portugais en pleine ascension. Il représente l'identité, l'histoire et les ambitions d'une équipe qui a su se faire une place dans l'élite du football lusitanien. Dans cet article, nous analysons en profondeur le **logo png Famalicão** et ce qu'il symbolise pour le club et ses supporters.
@@ -109,5 +110,4 @@ Le **logo png Famalicão** continuera de flotter fièrement au-dessus de l'Está
   keywords: "logo famalicao, famalicao logo, logo png famalicao",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 409
 };

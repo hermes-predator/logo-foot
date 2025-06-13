@@ -5,6 +5,7 @@ export const footballEmblemsPost: BlogPost = {
   title: "Football Emblems : Histoire et Signification des Écussons de Clubs [Guide 2024]",
   excerpt: "Découvrez l'histoire, la signification et l'évolution des emblèmes de football à travers les époques. Un guide complet sur les écussons qui définissent l'identité des clubs.",
   date: "2024-09-05",
+  galleryImageId: 264,
   content: `# L'Univers Fascinant des **Football Emblems** : Histoire et Symbolisme
 
 Les **football emblems** constituent l'une des expressions visuelles les plus puissantes de l'identité d'un club de football. Plus qu'un simple logo, un **emblème football** représente l'âme, l'histoire et les valeurs d'une institution sportive. Cet article explore l'univers riche et fascinant des écussons qui ornent fièrement les maillots des équipes du monde entier.
@@ -316,5 +317,4 @@ Dans un monde où l'attention est de plus en plus fragmentée et où les loyaut�
   keywords: "football club emblems, french football emblem, football emblem, football emblem design, embleme football",
   category: 'technical',  // Changement de 'logos' à 'technical'
   subCategory: 'technical',  // Modification du sous-catégorie également
-  galleryImageId: undefined
 };

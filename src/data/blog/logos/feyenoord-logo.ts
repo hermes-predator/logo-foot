@@ -6,7 +6,7 @@ export const feyenoordLogoPost: BlogPost = {
   title: "Logo Feyenoord : Histoire et Symbolisme de l'Emblème de Rotterdam [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Feyenoord, son évolution au fil du temps et la signification des symboles qui représentent fièrement le club de Rotterdam.",
   date: "2024-05-10",
-  galleryImageId: 68,
+  galleryImageId: 257,
   content: `# Logo Feyenoord : L'Histoire de l'Emblème de Rotterdam
 
 Dans le paysage du football néerlandais, un emblème se distingue par sa simplicité puissante et son histoire riche : le **logo Feyenoord**. Reconnaissable entre mille avec ses initiales entrelacées et ses couleurs rouge et blanc emblématiques, cet emblème incarne l'âme d'un club qui a marqué l'histoire du football européen.

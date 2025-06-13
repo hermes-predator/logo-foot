@@ -6,6 +6,7 @@ export const fortunaSittardLogoPost: BlogPost = {
   title: "**Logo Fortuna Sittard** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Fortuna Sittard logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
+  galleryImageId: 267,
   content: `# Histoire du **Logo Fortuna Sittard**
 
 Le **logo fortuna sittard** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs historiques des Pays-Bas. Le **fortuna sittard logo** incarne la fierté et la tradition d'une institution profondément ancrée dans son histoire.
@@ -52,5 +53,4 @@ Le logo de Fortuna Sittard est bien plus qu'un simple emblème - c'est le témoi
   keywords: "**logo fortuna sittard**, **fortuna sittard logo**, **logo fortuna sittard png**",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9338
 };

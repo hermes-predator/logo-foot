@@ -9,7 +9,7 @@ export const frosinoneLogoPost: BlogPost = {
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire et l'évolution du logo Frosinone Calcio, emblème du club de football italien de Serie A qui représente fièrement la ville de Frosinone.",
   keywords: "frosinone calcio logo, frosinone logo, logo frosinone, logo frosinone calcio, frosinone logo png, logo de foot frosinone, logo png frosinone, club italien, Serie A, canaris, jaune et bleu",
-  galleryImageId: 201,
+  galleryImageId: 273,
   content: `
 # L'Histoire du **Logo Frosinone Calcio** : Une Identité Visuelle Jaune et Bleue
 

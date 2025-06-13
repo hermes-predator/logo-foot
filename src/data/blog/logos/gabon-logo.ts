@@ -5,6 +5,7 @@ export const gabonLogoPost: BlogPost = {
   title: "**Logo Gabon Foot** : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire complète du **logo Gabon**, ses couleurs et sa signification. Analyse détaillée de l'évolution du **logo du Gabon** à travers les années et son impact sur l'identité footballistique nationale.",
   date: "2024-03-28",
+  galleryImageId: 274,
   category: 'national-logos',
   subCategory: 'national-logos',
   content: `# **Logo Gabon Foot** : Histoire et Symbolisme de l'Emblème National
@@ -138,5 +139,4 @@ Le **logo Gabon** de football transcende sa fonction première d'emblème sporti
 
 Alors que le **Gabon foot logo PNG** continue de circuler sur les plateformes numériques et que l'équipe nationale poursuit son parcours international, cet emblème reste au cœur de l'identité footballistique gabonaise, un point de ralliement pour les supporters et un symbole de fierté pour toute une nation.`,
   keywords: "logo gabon, logo du gabon, gabon logo, gabon foot logo, gabon football logo, logo gabon foot, gabon foot logo png, gabon logo png",
-  galleryImageId: 42
 };

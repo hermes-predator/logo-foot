@@ -5,6 +5,7 @@ export const footballLogosHistoryPost: BlogPost = {
   title: "Tous les Logos de Foot : Histoire et Évolution des Emblèmes de Football [2024]",
   excerpt: "Découvrez l'histoire fascinante de tous les logos de foot : origines, évolution et signification des emblèmes qui représentent l'identité visuelle des clubs à travers le monde.",
   date: "2024-06-01",
+  galleryImageId: 265,
   content: `# Guide Complet sur **Tous les Logos de Foot** en 2024
 
 Les **tous les logos de foot** représentent bien plus que de simples emblèmes sportifs : ils sont les gardiens visuels de l'identité et de l'histoire des clubs qu'ils symbolisent. Véritables œuvres d'art miniatures, ces **logo tous les logo de foot** racontent des histoires de passion, de tradition et d'appartenance qui résonnent avec des millions de supporters à travers le monde.

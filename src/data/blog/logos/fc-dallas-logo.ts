@@ -6,6 +6,7 @@ export const fcDallasLogoPost: BlogPost = {
   title: "**FC Dallas Logo** : Histoire et Evolution de l'Emblème de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo FC Dallas**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",
+  galleryImageId: 250,
   content: `# L'Histoire Fascinante du **Logo FC Dallas**
 
 Le **dallas fc logo** est bien plus qu'un simple emblème sportif : c'est un symbole de l'identité texane et de la passion du football américain. Le **fc dallas logo** a su évoluer tout en conservant son authenticité et son ancrage régional.
@@ -44,5 +45,4 @@ Le **dallas fc logo** demeure un symbole fort du football américain, incarnant 
   keywords: "dallas fc logo:20, fc dallas logo:20, fc dallas logo png:20, logo dallas fc:20",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: 565
 };

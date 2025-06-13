@@ -6,6 +6,7 @@ export const gremioLogoPost: BlogPost = {
   title: "**Grêmio Logo** : Histoire et Symbolisme de l'Emblème Gaúcho [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Grêmio**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Grêmio logo PNG**.",
   date: "2024-04-22",
+  galleryImageId: 292,
   content: `# L'Histoire Emblématique du **Grêmio Logo**
 
 Le **logo Grêmio** représente l'une des identités visuelles les plus prestigieuses du football brésilien. Fondé en 1903 à Porto Alegre, le club arbore fièrement un **logo Grêmio PNG** qui raconte plus d'un siècle de passion et de tradition.

@@ -6,6 +6,7 @@ export const genoaLogoPost: BlogPost = {
   title: "Logo Genoa FC : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Genoa FC : des origines à aujourd'hui, évolution et signification de l'emblème du plus ancien club de football italien.",
   date: "2024-05-29",
+  galleryImageId: 278,
   content: `# L'Histoire Fascinante du **Logo Genoa**
 
 Le **logo genoa** représente bien plus qu'un simple symbole sportif : c'est l'emblème du plus ancien club de football italien, porteur d'une histoire et d'une tradition uniques dans le paysage footballistique mondial. Plongeons dans l'univers fascinant du **genoa logo**, témoin de près de 130 ans d'histoire du football.
@@ -76,5 +77,4 @@ Pour les générations futures de supporters du Genoa, le **logo genoa png** con
   keywords: "genoa fc logo, genoa logo, logo genoa, logo genoa fc, genoa logo png, logo genoa png, genoa calcio logo, genoa fc logo png, logo genoa calcio, genoa logo foot, logo club genoa, logo de foot genoa",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 133
 };

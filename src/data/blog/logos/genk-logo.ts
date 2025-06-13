@@ -6,6 +6,7 @@ export const genkLogoPost: BlogPost = {
   title: "Logo KRC Genk : Histoire et Évolution de l'Emblème du Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo KRC Genk, ses origines et son évolution. Téléchargez le logo Genk PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-27", // Date de publication
+  galleryImageId: 277,
   content: `# L'Histoire Complète du **KRC Genk Logo**
 
 Le **krc genk logo** est l'un des emblèmes les plus reconnaissables du football belge contemporain. Représentant un club à l'identité forte et aux racines profondément ancrées dans la région minière du Limbourg, le **genk logo** témoigne d'une histoire riche et d'une évolution constante qui mérite d'être explorée en détail.
@@ -106,5 +107,4 @@ La force du **logo krc genk** réside finalement dans sa capacité à évoquer i
   keywords: "krc genk logo, genk logo, logo genk, logo krc genk, racing genk logo, logo genk png, genk fc logo png, logo de foot genk, logo krc genk png, logo png genk, logo racing genk",
   category: 'logos',
   subCategory: 'other-european-clubs',
-  galleryImageId: 304
 };

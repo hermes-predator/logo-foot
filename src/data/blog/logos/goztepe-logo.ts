@@ -6,6 +6,7 @@ export const goztepeLogoPost: BlogPost = {
   title: "**Göztepe Logo** : Histoire et Évolution de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire passionnante du **göztepe logo**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",
+  galleryImageId: 289,
   content: `# L'Histoire du **Göztepe Logo**
 
 Le **göztepe logo** représente l'un des emblèmes les plus emblématiques du football turc. Symbole d'une riche tradition sportive, le **göztepe logo** incarne l'identité et les valeurs d'un club historique d'Izmir.
@@ -72,5 +73,4 @@ Le **göztepe logo** continue d'évoluer :
   keywords: "göztepe logo, göztepe logo png, logo göztepe sk, football turc, super lig",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 573
 };

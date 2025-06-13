@@ -6,7 +6,7 @@ export const germanClubsPost: BlogPost = {
   title: "Logos du Football Allemand : Histoire et Design de la Bundesliga [2024]",
   excerpt: "Découvrez l'histoire des logos du football allemand. Du Bayern Munich à Dortmund, explorez l'évolution des emblèmes de la Bundesliga et leur signification.",
   date: "2024-03-10",
-  galleryImageId: 25, // Adding gallery image reference
+  galleryImageId: 280, // Adding gallery image reference
   content: `# Logos du Football Allemand : Tradition et Innovation
 
 L'Allemagne, terre de football par excellence, possède un riche patrimoine en matière de design de logos sportifs. La Bundesliga, avec son logo emblématique, constitue l'écrin dans lequel brillent les emblèmes des clubs les plus prestigieux d'Allemagne.

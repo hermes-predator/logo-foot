@@ -7,7 +7,7 @@ export const ghanaLogoPost: BlogPost = {
   date: "2024-04-15",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 58,
+  galleryImageId: 283,
   content: `# L'Histoire Fascinante du Logo Ghana de Football
 
 Le **logo ghana** représente bien plus qu'un simple emblème sportif : il incarne l'identité, l'histoire et la passion d'une nation pour le football. Plongeons dans l'univers captivant de ce **ghana logo** qui symbolise la fierté d'un peuple et son amour pour le ballon rond.

@@ -6,6 +6,7 @@ export const hannover96LogoPost: BlogPost = {
   title: "**Logo Hannover 96** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Hannover 96**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
+  galleryImageId: 300,
   content: `# L'Histoire Fascinante du **Logo Hannover 96**
 
 Le **logo Hannover 96** est l'un des emblèmes les plus distinctifs du football allemand. Cet écusson iconique, avec son design historique et ses couleurs rouge et blanc, raconte l'histoire riche d'un club qui a profondément marqué le paysage footballistique de Basse-Saxe.
@@ -64,6 +65,5 @@ Le **logo Hannover 96** continuera sans doute d'évoluer subtilement pour répon
   keywords: "logo hanovre:20, logo hanovre 96:10, logo hanovre 96 png:10, logo de hanovre en allemagne:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };
 

@@ -5,6 +5,7 @@ export const greeceLogoPost: BlogPost = {
   title: "Logo Grèce : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Grèce : des origines à aujourd'hui, évolution et signification de l'emblème du football grec.",
   date: "2024-05-30",
+  galleryImageId: 291,
   content: `# L'Histoire Fascinante du **Logo Grèce** Football
 
 Le **logo grece** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui incarne la fierté et la tradition du football hellénique sur la scène internationale. L'évolution du **logo foot grece** raconte l'histoire d'un pays dont la passion pour le ballon rond est profondément ancrée dans sa culture sportive, particulièrement depuis son triomphe historique à l'Euro 2004.
@@ -53,5 +54,4 @@ Les joueurs qui portent fièrement le maillot orné du **logo foot grece** sont 
   keywords: "logo grece, logo club foot grec, logo club football grec, logo club grec, logo foot grece, club de foot grec logo",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 164
 };

@@ -5,6 +5,7 @@ export const grasshopperLogoPost: BlogPost = {
   title: "Logo Grasshopper Club Zürich : Histoire et Symbolique de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Grasshopper Club Zürich, le club le plus titré de Suisse, et la signification de son emblème iconique.",
   date: "2024-04-15",
+  galleryImageId: 290,
   content: `# L'Histoire du Logo Grasshopper Club Zürich
 
 Le **grasshopper logo** est l'un des emblèmes les plus reconnaissables du football suisse. Le **logo grasshopper** représente l'histoire et le prestige du club le plus titré de Suisse, avec une riche tradition qui remonte à sa fondation en 1886.
@@ -35,5 +36,4 @@ L'emblème de Grasshopper Club Zürich est plus qu'un simple logo : c'est un sym
   keywords: "grasshopper logo, grasshopper logo png, logo grasshopper, logo grasshopper club zürich, fc zurich grasshopper logo, grasshoppers foot logo, grasshoppers zurich logo png, logo grasshopper zurich",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 422
 };

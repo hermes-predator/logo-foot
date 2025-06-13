@@ -6,6 +6,7 @@ export const gaziantepFkLogoPost: BlogPost = {
   title: "**Gaziantep FK Logo** : Histoire et Évolution de l'Emblème du Club Anatolien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Gaziantep FK logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
+  galleryImageId: 276,
   content: `# Histoire du **Gaziantep FK Logo**
 
 Le **gaziantep fk logo** représente l'identité d'un club dynamique de la région d'Anatolie. Le **logo gaziantep** incarne parfaitement l'histoire et les traditions de cette équipe qui fait la fierté de la ville de Gaziantep.
@@ -76,5 +77,4 @@ Le **logo gaziantep** s'utilise sur de nombreux supports :
   keywords: "gaziantep fk logo, gaziantep logo, logo gaziantep fk",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 567
 };

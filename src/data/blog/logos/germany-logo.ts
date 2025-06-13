@@ -8,7 +8,7 @@ export const germanyLogoPost: BlogPost = {
   date: "2024-05-12",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 69,
+  galleryImageId: 281,
   content: `# Logo Allemagne : L'Histoire de l'Emblème National Allemand
 
 Dans l'univers des emblèmes nationaux du football, le **logo Allemagne** se distingue par sa puissance symbolique et son histoire riche. Reconnaissable entre mille avec son aigle impérial et ses couleurs noir-rouge-or emblématiques, cet écusson incarne l'excellence et la tradition footballistique d'une nation quatre fois championne du monde.

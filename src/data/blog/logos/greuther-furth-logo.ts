@@ -6,6 +6,7 @@ export const greutherFurthLogoPost: BlogPost = {
   title: "**Logo Greuther Fürth** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Greuther Fürth**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",
+  galleryImageId: 294,
   content: `# L'Histoire Fascinante du **Logo Greuther Fürth**
 
 Le **logo Greuther Fürth** est l'un des emblèmes les plus distinctifs du football allemand. Cet écusson iconique, avec son trèfle emblématique et ses couleurs vert et blanc, raconte l'histoire riche d'un club qui a profondément marqué le paysage footballistique de Bavière.
@@ -75,5 +76,4 @@ Le **logo Greuther Fürth** continuera sans doute d'évoluer subtilement pour r�
   keywords: "logo greuther furth:20, greuther furth logo:20, greuther furth logo png:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

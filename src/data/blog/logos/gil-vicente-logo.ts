@@ -6,6 +6,7 @@ export const gilVicenteLogoPost: BlogPost = {
   title: "**Gil Vicente Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Gil Vicente**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
+  galleryImageId: 284,
   content: `# Histoire et Signification du **Gil Vicente Logo**
 
 Le **logo Gil Vicente** représente l'identité profonde d'un club historique du football portugais. Fondé en 1924, le Gil Vicente Futebol Clube arbore un **logo Gil Vicente FC** qui reflète près d'un siècle d'histoire et de tradition.
@@ -70,5 +71,4 @@ Le **logo Gil Vicente** est devenu un symbole reconnaissable du football portuga
   keywords: "gil vicente logo, logo gil vicente, logo de gil vicente, logo gil vicente fc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 435
 };

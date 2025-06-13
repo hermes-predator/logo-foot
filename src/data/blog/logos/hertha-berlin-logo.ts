@@ -6,6 +6,7 @@ export const herthaBerlinLogoPost: BlogPost = {
   title: "**Logo Hertha Berlin** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Hertha Berlin**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
+  galleryImageId: 305,
   content: `# L'Histoire Fascinante du **Logo Hertha Berlin**
 
 Le **hertha berlin logo** est l'un des emblèmes les plus reconnaissables du football allemand. Avec sa forme distinctive et ses couleurs bleu et blanc caractéristiques, le **hertha bsc logo** raconte l'histoire riche d'un club profondément ancré dans l'identité de la capitale allemande.
@@ -95,5 +96,4 @@ Alors que le club traverse les différentes phases de son histoire sportive, ent
   keywords: "hertha berlin logo:20, hertha berlin logo png:20, logo hertha berlin:20, logo hertha berlin png:10, logo hertha bsc berlin:10, logo foot hertha berlin:10, hertha bsc logo:20, logo hertha bsc:20, logo hertha bsc berlin:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

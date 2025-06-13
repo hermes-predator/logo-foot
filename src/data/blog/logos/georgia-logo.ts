@@ -8,7 +8,7 @@ export const georgiaLogoPost: BlogPost = {
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 167,
+  galleryImageId: 279,
   content: `# L'Histoire Fascinante du **Logo Géorgie**
 
 Le **géorgie logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en passion et en détermination. Le **georgia logo** incarne l'esprit d'un pays qui a su se faire remarquer sur la scène internationale du football malgré sa taille modeste.

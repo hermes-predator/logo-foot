@@ -6,6 +6,7 @@ export const getafeLogoPost: BlogPost = {
   title: "Logo Getafe CF : Histoire et Design de l'Emblème Azulón [2024]",
   excerpt: "Découvrez l'histoire complète du logo Getafe CF : des origines à aujourd'hui, évolution et signification de l'emblème du club madrilène de Liga.",
   date: "2024-05-20",
+  galleryImageId: 282,
   content: `# L'Histoire Fascinante du Logo Getafe
 
 Le **logo getafe** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité, les valeurs et l'histoire d'un club qui s'est progressivement imposé dans le paysage du football espagnol. Plongeons dans l'histoire captivante de ce **getafe logo** qui représente l'une des équipes les plus caractéristiques de la banlieue madrilène.
@@ -48,5 +49,4 @@ Cette capacité à se réinventer tout en restant fidèle à ses racines fait du
   keywords: "getafe logo, getafe logo png, logo getafe, logo getafe png, logo getafe cf, logo de foot getafe, logo getafe foot",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 156
 };

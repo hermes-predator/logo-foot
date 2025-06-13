@@ -5,6 +5,7 @@ export const godoyCruzLogoPost: BlogPost = {
   title: "**Godoy Cruz Logo** : Histoire et Symbolisme du Club Argentin [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **Godoy Cruz logo**, emblème emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de foot Godoy Cruz**.",
   date: "2024-04-22",
+  galleryImageId: 288,
   content: `# L'Histoire du **Godoy Cruz Logo**
 
 Le **Godoy Cruz logo** représente l'identité unique d'un club argentin passionné, originaire de Mendoza, une province connue pour sa richesse culturelle et sportive. Ce club, fondé en 1913, incarne la fierté et la détermination du football argentin.

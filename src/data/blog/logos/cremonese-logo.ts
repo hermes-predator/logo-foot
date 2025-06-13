@@ -6,6 +6,7 @@ export const cremoneseLogoPost: BlogPost = {
   title: "Logo Cremonese : Histoire et Évolution de l'Emblème Grigiorosso [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cremonese, son évolution et la signification des éléments qui composent l'emblème iconique du club lombard.",
   date: "2024-06-03",
+  galleryImageId: 199,
   content: `# L'Histoire Passionnante du **Cremonese Logo**
 
 Le **cremonese logo** est l'emblème d'un des clubs historiques de Lombardie qui incarne la passion et la tradition du football italien. Dans cet article, nous explorerons l'histoire fascinante de ce **cremonese calcio logo** qui représente fièrement l'identité d'une ville et de ses supporters.

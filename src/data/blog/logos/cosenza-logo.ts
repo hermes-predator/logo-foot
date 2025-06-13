@@ -6,6 +6,7 @@ export const cosenzaLogoPost: BlogPost = {
   title: "Logo Cosenza : Histoire et Évolution de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cosenza, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",
+  galleryImageId: 192,
   content: `# L'Histoire Fascinante du **Cosenza Logo** : Évolution et Symbolisme
 
 Le **cosenza logo** représente l'identité visuelle d'un club de football italien dont l'histoire remonte à plus d'un siècle. Dans cet article, nous explorerons en profondeur l'histoire, l'évolution et la signification symbolique du **logo cosenza calcio** qui incarne l'âme et les traditions de cette équipe emblématique de Calabre.

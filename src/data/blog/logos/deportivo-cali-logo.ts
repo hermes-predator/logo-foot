@@ -6,6 +6,7 @@ export const deportivoCaliLogoPost: BlogPost = {
   title: "**Logo Deportivo Cali** : Histoire et Design de l'Emblème Vert [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Deportivo Cali, son évolution et la signification de cet emblème emblématique du football colombien.",
   date: "2024-04-15",
+  galleryImageId: 209,
   content: `# L'Histoire Fascinante du **Logo Deportivo Cali**
 
 Le **logo Deportivo Cali** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité, de passion et d'histoire pour l'un des clubs les plus prestigieux de Colombie. Le **logo deportivo cali** incarne la fierté d'une ville et l'âme d'une institution footballistique centenaire.
@@ -43,6 +44,5 @@ Plus qu'un simple logo, le **logo Deportivo Cali** est un véritable récit visu
   keywords: "logo deportivo cali, deportivo cali logo, logo png deportivo cali",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 427
 };
 

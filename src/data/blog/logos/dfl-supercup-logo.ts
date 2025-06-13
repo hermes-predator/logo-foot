@@ -5,7 +5,7 @@ export const dflSupercupLogoPost: BlogPost = {
   title: "DFL Supercup Logo : Histoire et Évolution de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la DFL Supercup : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Allemagne.",
   date: "2024-06-22",
-  galleryImageId: 191,
+  galleryImageId: 212,
   content: `# L'Histoire Fascinante du **DFL Supercup Logo**
 
 Le **dfl supercup logo** est bien plus qu'un simple emblème sportif : c'est le symbole visuel d'une des compétitions les plus prestigieuses du football allemand. Ce trophée qui oppose chaque année le champion de Bundesliga au vainqueur de la Coupe d'Allemagne s'est doté d'une identité visuelle distinctive qui reflète parfaitement l'excellence et la tradition du football allemand.

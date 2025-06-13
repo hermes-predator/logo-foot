@@ -6,6 +6,7 @@ export const cskaSofiaLogoPost: BlogPost = {
   title: "**CSKA Sofia Logo** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo CSKA Sofia**, son évolution et sa symbolique. Un emblème qui incarne la tradition militaire et l'excellence sportive bulgare.",
   date: "2024-04-18",
+  galleryImageId: 203,
   content: `# Histoire du **CSKA Sofia Logo**
 
 Le **logo CSKA Sofia** représente l'un des clubs les plus titrés de Bulgarie. Cet emblème historique incarne parfaitement l'héritage militaire et la grandeur du football bulgare.
@@ -79,5 +80,4 @@ Le **CSKA Sofia logo** reste un symbole majeur du football bulgare, alliant trad
   keywords: "logo cska sofia, cska sofia logo, cska-sofia logo png, logo fk cska sofia",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9327
 };

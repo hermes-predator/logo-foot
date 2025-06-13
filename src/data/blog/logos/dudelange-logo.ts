@@ -6,6 +6,7 @@ export const dudelangeLogoPost: BlogPost = {
   title: "**Dudelange Logo** : Histoire et Symbolisme de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Dudelange**, son évolution et sa symbolique unique dans le football luxembourgeois.",
   date: "2024-04-15",
+  galleryImageId: 220,
   content: `# Histoire et Signification du **Dudelange Logo**
 
 Le **logo Dudelange** représente l'identité profonde d'un club historique du football luxembourgeois. Situé à Dudelange, le Football Club Swift de Dudelange arbore un **FC Dudelange logo** qui raconte l'histoire d'une région et d'une passion footballistique.
@@ -70,6 +71,5 @@ Le **logo Dudelange** est devenu un symbole reconnaissable du football luxembour
   keywords: "dudelange logo, dudelange fc logo, dudelange logo png, logo dudelange, logo fc dudelange, logo png dudelange",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 437
 };
 

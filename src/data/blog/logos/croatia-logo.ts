@@ -5,6 +5,7 @@ export const croatiaLogoPost: BlogPost = {
   title: "Logo Croatie : Histoire et Design de l'Emblème à Damier [2024]",
   excerpt: "Découvrez l'histoire complète du logo Croatie : des origines à aujourd'hui, évolution et signification de l'emblème à damier rouge et blanc, symbole du football croate.",
   date: "2024-05-30",
+  galleryImageId: 200,
   content: `# L'Histoire Fascinante du **Logo Croatie**
 
 Le **logo croatie** est bien plus qu'un simple emblème sportif : c'est un symbole national puissant qui incarne l'identité, la fierté et l'excellence du football croate sur la scène internationale. Dans cet article approfondi, nous explorons l'histoire captivante du **logo croatie foot** et découvrons ce qui en fait l'un des emblèmes les plus distinctifs et reconnaissables du football mondial.
@@ -65,5 +66,4 @@ Que ce soit dans sa version officielle utilisée par la fédération ou dans ses
   keywords: "logo croatie, logo croatie foot, croatie foot logo, croatie logo, logo croatie png, logo de la croatie, logo foot croatie, croatie logo png, logo croatie football, club foot croatie logo, club football logo croatie, equipe croatie football logo, equipe de croatie logo",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 163
 };

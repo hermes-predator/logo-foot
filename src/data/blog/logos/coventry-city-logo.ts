@@ -6,6 +6,7 @@ export const coventryCityLogoPost: BlogPost = {
   title: "Logo Coventry City : Histoire et Évolution de l'Emblème des Sky Blues [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Coventry City, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",
+  galleryImageId: 196,
   content: `# L'Histoire Captivante du **Coventry City Logo** à Travers les Décennies
 
 Le **coventry logo** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une identité collective, d'une histoire riche et d'une passion partagée par des générations de supporters. Dans cet article, nous explorerons en profondeur l'évolution fascinante du **logo coventry city** et sa signification culturelle pour le club et sa communauté.

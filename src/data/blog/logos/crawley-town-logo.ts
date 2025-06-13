@@ -6,6 +6,7 @@ export const crawleyTownLogoPost: BlogPost = {
   title: "**Logo Crawley Town** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Crawley Town FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Crawley Town à travers les années.",
   date: "2024-04-20",
+  galleryImageId: 197,
   category: "logos",
   subCategory: "english-clubs",
   content: `# L'Histoire Fascinante du **Logo Crawley Town**
@@ -46,5 +47,4 @@ L'emblème est devenu un symbole de fierté pour les générations de supporters
 
 Le **logo Crawley Town** est bien plus qu'un simple identifiant visuel : c'est le gardien d'une histoire riche, le symbole d'une communauté unie et le porte-étendard des ambitions du club. Son design équilibré entre tradition et modernité en fait un emblème intemporel qui continuera d'inspirer les générations futures de supporters.`,
   keywords: "**logo crawley town**:10, **crawley town logo**:10, **crawley town fc logo**:10, **logo crawley town png**:10",
-  galleryImageId: null
 };

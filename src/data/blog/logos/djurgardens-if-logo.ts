@@ -6,6 +6,7 @@ export const djurgardensIfLogoPost: BlogPost = {
   title: "**Logo Djurgårdens IF** : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Djurgårdens IF**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **Djurgården logo** et de son évolution.",
   date: "2024-04-22",
+  galleryImageId: 217,
   content: `# L'Histoire Fascinante du **Logo Djurgårdens IF**
 
 Le **Djurgårdens IF logo** représente l'un des emblèmes les plus reconnaissables du football suédois. Fondé en 1891, le club arbore fièrement un **logo Djurgårdens IF** qui incarne plus d'un siècle de tradition et d'excellence sportive.

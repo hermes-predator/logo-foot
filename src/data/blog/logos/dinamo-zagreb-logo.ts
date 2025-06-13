@@ -6,7 +6,7 @@ export const dinamoZagrebLogoPost: BlogPost = {
   title: "Logo Dinamo Zagreb : Histoire et Design de l'Emblème Croate [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Dinamo Zagreb : origines, évolution et symbolisme de l'emblème emblématique du club croate.",
   date: "2024-06-18",
-  galleryImageId: 98,
+  galleryImageId: 216,
   content: `# L'Histoire Fascinante du **Logo Dinamo Zagreb**
 
 Le **logo dinamo zagreb** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale, de tradition et de fierté pour le club le plus titré de Croatie. Plongeons dans l'histoire captivante de ce **dinamo zagreb logo** qui représente l'excellence du football croate depuis des décennies.

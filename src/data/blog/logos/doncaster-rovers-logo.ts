@@ -6,6 +6,7 @@ export const doncasterRoversLogoPost: BlogPost = {
   title: "**Logo Doncaster Rovers** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Doncaster Rovers FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Doncaster Rovers à travers les années.",
   date: "2024-04-20",
+  galleryImageId: 218,
   category: "logos",
   subCategory: "english-clubs",
   content: `# L'Histoire Fascinante du **Logo Doncaster Rovers**
@@ -46,5 +47,4 @@ L'emblème est devenu un symbole de fierté pour les générations de supporters
 
 Le **logo Doncaster Rovers** est bien plus qu'un simple identifiant visuel : c'est le gardien d'une histoire riche, le symbole d'une communauté unie et le porte-étendard des ambitions du club. Son design équilibré entre tradition et modernité en fait un emblème intemporel qui continuera d'inspirer les générations futures de supporters.`,
   keywords: "**doncaster rovers logo**:10, **logo doncaster rovers**:10, **doncaster rovers logo png**:10",
-  galleryImageId: null
 };

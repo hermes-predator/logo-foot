@@ -5,6 +5,7 @@ export const creerLogoFootPost: BlogPost = {
   title: "Comment Créer un Logo de Foot : Guide Professionnel [2024]",
   excerpt: "Guide complet pour créer un logo de foot professionnel. Découvrez comment concevoir gratuitement l'emblème parfait pour votre club de football.",
   date: "2024-04-10",
+  galleryImageId: 198,
   content: `# **Créer un Logo de Foot** : Guide Complet et Professionnel
 
 Vous souhaitez **créer un logo club de foot** qui marque les esprits et représente parfaitement l'identité de votre équipe ? Ce guide détaillé vous accompagne pas à pas pour **créer un logo de club de foot** professionnel, même si vous n'avez aucune expérience en design.

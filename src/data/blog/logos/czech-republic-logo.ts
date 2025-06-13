@@ -5,6 +5,7 @@ export const czechRepublicLogoPost: BlogPost = {
   title: "Logo République Tchèque : Histoire et Symbolisme de l'Emblème du Football Tchèque",
   excerpt: "Découvrez l'histoire fascinante du logo de la République Tchèque : origines, évolution et symbolisme de cet emblème unique du football européen. Analyse complète du logo de la fédération tchèque.",
   date: "2024-05-14",
+  galleryImageId: 205,
   category: 'national-logos',
   subCategory: 'national-logos',
   content: `# **Logo République Tchèque** : L'Histoire de l'Emblème du Football Tchèque

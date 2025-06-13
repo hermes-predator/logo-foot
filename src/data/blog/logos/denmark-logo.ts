@@ -5,7 +5,7 @@ export const denmarkLogoPost: BlogPost = {
   title: "Logo Danemark : Histoire et Design de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo Danemark : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football scandinave.",
   date: "2024-05-24",
-  galleryImageId: 158,
+  galleryImageId: 208,
   content: `# L'Histoire Fascinante du **Logo Danemark**
 
 Le **logo danemark** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité, les valeurs et l'histoire d'une nation qui a marqué le football européen de son empreinte. Plongeons dans l'histoire captivante de ce **logo danemark foot** qui représente l'une des sélections les plus respectées du football scandinave.

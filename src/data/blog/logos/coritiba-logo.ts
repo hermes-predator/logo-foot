@@ -6,6 +6,7 @@ export const coritibaLogoPost: BlogPost = {
   title: "**Logo Coritiba** : Histoire et Design de l'Emblème Emblématique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Coritiba**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Coritiba logo**.",
   date: "2024-04-22",
+  galleryImageId: 191,
   content: `# L'Histoire Passionnante du **Logo Coritiba**
 
 Le **Coritiba logo** représente l'une des identités visuelles les plus emblématiques du football brésilien. Fondé en 1909, le club arbore fièrement un **Coritiba logo PNG** qui incarne plus d'un siècle de tradition et de passion.

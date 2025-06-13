@@ -8,7 +8,7 @@ export const costaRicaLogoPost: BlogPost = {
   date: "2024-05-30",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 168,
+  galleryImageId: 193,
   content: `# L'Histoire Fascinante du **Logo Costa Rica**
 
 Le **costa rica logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée dont l'histoire footballistique est riche en courage et en détermination. Le **costa rica football logo** incarne l'esprit d'un pays qui a su se faire remarquer sur la scène internationale du football malgré sa taille modeste.

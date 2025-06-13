@@ -6,7 +6,7 @@ export const dortmundLogoPost: BlogPost = {
   title: "Logo Borussia Dortmund : Histoire et Design de l'Emblème BVB [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Borussia Dortmund : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du BVB.",
   date: "2024-04-02",
-  galleryImageId: 52,
+  galleryImageId: 219,
   content: `# L'Histoire Passionnante du **Logo Borussia Dortmund**
 
 Dans l'effervescence du Signal Iduna Park, le **dortmund logo** brille comme un phare dans la nuit allemande. Plus qu'un simple emblème, il incarne l'âme d'une ville entière et la passion débordante du "Mur Jaune", cette tribune mythique qui fait trembler l'Europe du football.

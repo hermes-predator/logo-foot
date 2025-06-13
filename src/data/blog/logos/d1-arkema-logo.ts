@@ -5,6 +5,7 @@ export const d1ArkemaLogoPost: BlogPost = {
   title: "D1 Arkema Logo : Histoire et évolution de l'identité visuelle du championnat féminin français",
   excerpt: "Découvrez l'histoire et l'évolution du logo D1 Arkema, emblème du championnat de football féminin français. Analyse complète du design et des symboliques.",
   date: "2023-08-25",
+  galleryImageId: 206,
   content: `
 # Histoire et évolution du **D1 Arkema Logo**
 

@@ -6,7 +6,7 @@ export const dunkerqueLogoPost: BlogPost = {
   title: "Logo Dunkerque : Histoire et Évolution de l'Emblème du Nord [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'USL Dunkerque : origines, évolution et symbolisme de l'emblème emblématique du club nordiste.",
   date: "2024-06-17",
-  galleryImageId: 120,
+  galleryImageId: 221,
   content: `# L'Histoire Fascinante du **logo dunkerque**
 
 Le **dunkerque logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui raconte l'histoire d'un club profondément ancré dans les traditions du Nord de la France. Ce **logo dunkerque** emblématique représente le parcours remarquable d'une équipe qui a su marquer l'histoire du football régional tout en restant fidèle à ses racines maritimes et portuaires.

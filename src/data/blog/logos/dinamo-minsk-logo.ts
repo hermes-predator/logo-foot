@@ -6,6 +6,7 @@ export const dinamoMinskLogoPost: BlogPost = {
   title: "**Dinamo Minsk Logo** : Histoire et Design de l'Emblème du Club Biélorusse [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Dinamo Minsk**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club historique.",
   date: "2024-04-15", 
+  galleryImageId: 214,
   content: `# Histoire du **Dinamo Minsk Logo**
 
 Le **logo Dinamo Minsk** est l'emblème d'un club qui incarne la passion et l'histoire du football biélorusse moderne. Le **logo dinamo minsk** représente parfaitement l'identité unique d'une équipe qui a marqué le football de son pays.
@@ -76,5 +77,4 @@ Le **logo png dinamo minsk** s'utilise sur différents supports :
   keywords: "logo dinamo minsk, logo png dinamo minsk",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 563
 };

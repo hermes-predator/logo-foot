@@ -8,7 +8,7 @@ export const coteIvoireLogoPost: BlogPost = {
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 163,
+  galleryImageId: 194,
   content: `# L'Histoire Fascinante du **Logo Côte d'Ivoire**
 
 Le **logo côte d'ivoire** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en traditions et en émotions. Le **côte d'ivoire logo** représente l'âme d'un pays où le football est intimement lié à l'identité nationale et à la culture populaire.

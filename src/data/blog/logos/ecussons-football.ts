@@ -6,6 +6,7 @@ export const ecussonsFootballPost: BlogPost = {
   title: "Écussons de Football : Histoire et Symboles des Clubs [Guide 2024]",
   excerpt: "Découvrez l'histoire et la signification des écussons de football. Analyse complète des symboles et des designs qui font l'identité visuelle des clubs de foot.",
   date: "2024-04-09",
+  galleryImageId: 224,
   content: `# L'Univers Fascinant des Écussons de Football
 
 Les **écussons de club de foot** sont bien plus que de simples logos. Ils représentent l'histoire, l'identité et les valeurs des clubs qu'ils symbolisent. Dans cet article, nous analysons en profondeur ces emblèmes qui suscitent tant de passion chez les supporters du monde entier.

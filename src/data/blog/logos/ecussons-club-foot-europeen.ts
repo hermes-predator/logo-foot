@@ -5,6 +5,7 @@ export const ecussonsClubFootEuropeenPost: BlogPost = {
   title: "Écussons Club de Foot Européen : Histoire et Design [Guide 2024]",
   excerpt: "Découvrez l'histoire et le design des écussons club de foot européens. Analyse complète des emblèmes anglais, italiens et portugais qui font l'identité visuelle du football.",
   date: "2024-04-10",
+  galleryImageId: 223,
   content: `# L'Art des Écussons Club de Foot Européen
 
 Les **écussons club de foot** représentent bien plus que de simples logos. Ils incarnent l'histoire, les valeurs et l'identité des équipes de football à travers l'Europe. Dans cet article, nous explorons les **écussons de club de foot** européens les plus emblématiques, en nous concentrant particulièrement sur l'Angleterre, l'Italie et le Portugal.

@@ -5,6 +5,7 @@ export const eersteDivisieLogoPost: BlogPost = {
   title: "L'**Eerste Divisie Logo** : Histoire et Évolution de l'Emblème du Second Niveau Néerlandais",
   excerpt: "Découvrez l'histoire fascinante de l'**Eerste Divisie Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la deuxième division néerlandaise.",
   date: "2024-04-18",
+  galleryImageId: 225,
   content: `
 # L'Histoire et l'Évolution de l'**Eerste Divisie Logo**
 

@@ -6,7 +6,7 @@ export const crystalPalaceLogoPost: BlogPost = {
   title: "Logo Crystal Palace FC : Histoire et Evolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Crystal Palace FC, ses symboles et comment l'aigle emblématique est devenu l'identité visuelle du club londonien.",
   date: "2024-04-23",
-  galleryImageId: 64,
+  galleryImageId: 201,
   content: `# L'Histoire Fascinante du **Logo Crystal Palace**
 
 Le **logo crystal palace** est bien plus qu'un simple emblème sportif : c'est une icône qui incarne l'identité unique et la fière histoire du club londonien. Cet article explore en profondeur l'histoire et l'évolution du **crystal palace logo**, symbole emblématique du football anglais.

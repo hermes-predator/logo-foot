@@ -6,6 +6,7 @@ export const derbyCountyLogoPost: BlogPost = {
   title: "**Logo Derby County FC** : Histoire et Évolution de l'Emblème des Rams [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Derby County**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 210,
   content: `# **Logo Derby County** : L'Histoire d'un Emblème Emblématique du Football Anglais
 
 Le **logo Derby County** représente bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1884. Dans cet article approfondi, découvrez l'évolution fascinante du **Derby County logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -59,5 +60,4 @@ L'emblème du **Derby County FC logo** illustre remarquablement comment un logo 
   keywords: "derby county fc logo:20, derby county football club logo:20, derby county logo:20, derby county logo png:20, logo derby county:20, logo derby county png:10, derby county logo download:10, logo derby county fc:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 374
 };

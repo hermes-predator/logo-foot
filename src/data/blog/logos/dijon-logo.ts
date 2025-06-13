@@ -6,7 +6,7 @@ export const dijonLogoPost: BlogPost = {
   title: "Logo Dijon : Histoire et Évolution de l'Emblème du DFCO [2024]",
   excerpt: "Découvrez l'histoire complète du logo Dijon FCO : origines, évolution et symbolisme de l'emblème bourguignon du football français.",
   date: "2024-06-08",
-  galleryImageId: 90,
+  galleryImageId: 213,
   content: `# L'Histoire Fascinante du **Logo Dijon**
 
 Le **dijon logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une identité régionale forte et d'une passion footballistique ancrée dans le cœur de la Bourgogne. Ce **logo dijon** représente l'histoire d'un club qui a su gravir les échelons du football français avec détermination et caractère.

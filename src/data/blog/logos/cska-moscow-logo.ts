@@ -6,6 +6,7 @@ export const cskaMoscowLogoPost: BlogPost = {
   title: "**CSKA Moscou Logo** : Histoire et Évolution de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo CSKA Moscou**, un symbole emblématique du football russe qui incarne la tradition militaire et sportive.",
   date: "2024-04-15",
+  galleryImageId: 202,
   content: `# Histoire du **CSKA Moscou Logo**
 
 Le **logo CSKA Moscou** est bien plus qu'un simple emblème : c'est un symbole qui raconte l'histoire d'un club légendaire du football russe. Le **cska moscou logo** représente l'identité d'une institution qui a marqué l'histoire du sport à Moscou et au-delà.
@@ -76,5 +77,4 @@ Le **logo foot CSKA Moscou** s'adapte à de nombreux supports :
   keywords: "logo cska moscou, cska moscou logo, logo club foot cska moscou, logo cska moscou png, logo de foot cska moscou, logo foot cska moscou",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 559
 };

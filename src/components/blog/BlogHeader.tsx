@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -75,9 +72,10 @@ const BlogHeader = () => {
                       </Button>
                     </Link>
                   </TooltipTrigger>
-                  <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-3">
+                  <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-4">
                     <div className="text-sm">
-                      <div className="font-semibold mb-2">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                      <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                      <Separator className="bg-gray-700 mb-3" />
                       <div className="grid grid-cols-2 gap-2">
                         <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                           1 fichier ZIP
@@ -150,5 +148,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-
-

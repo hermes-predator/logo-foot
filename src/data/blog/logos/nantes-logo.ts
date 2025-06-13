@@ -6,6 +6,7 @@ export const nantesLogoPost: BlogPost = {
   title: "Logo FC Nantes : Histoire et Design du Mythique Canari [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Nantes : origines, évolution et symbolisme de l'emblème emblématique des Canaris.",
   date: "2024-03-31",
+  galleryImageId: 404,
   content: `# L'Histoire Fascinante du **Logo FC Nantes**
 
 Le **logo fc nantes** est bien plus qu'un simple emblème sportif : c'est un véritable symbole d'identité régionale qui incarne l'histoire glorieuse et la tradition du football ligérien. Plongez dans l'univers visuel captivant du **fc nantes logo**, un écusson qui a su évoluer tout en préservant ses racines profondes.
@@ -54,5 +55,4 @@ Alors que le FC Nantes poursuit son développement sportif et institutionnel, so
   keywords: "logo fc nantes, fc nantes logo, logo du fc nantes, logos fc nantes, logo nantes, nantes logo, logo nantes foot, logo fc nantes png, logo de nantes, logo foot nantes",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 46
 };

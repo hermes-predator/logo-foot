@@ -6,6 +6,7 @@ export const moreirenseLogoPost: BlogPost = {
   title: "**Logo Moreirense** : Histoire et Design de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Moreirense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
+  galleryImageId: 399,
   content: `# L'Histoire Fascinante du **Logo Moreirense**
 
 Le **logo Moreirense** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une ville et d'une communauté passionnée de football. Fondé en 1938, le Moreirense Futebol Clube arbore un **Moreirense FC logo** qui incarne l'identité et les valeurs du club.
@@ -64,5 +65,4 @@ Le **logo Moreirense** est devenu un symbole fort du football portugais, représ
   keywords: "logo moreirense, moreirense fc logo, logo moreirense png, logo png moreirense",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 433
 };

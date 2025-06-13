@@ -6,6 +6,7 @@ export const morecambeLogoPost: BlogPost = {
   title: "**Logo Morecambe FC** : Histoire et Design de l'Emblème des Shrimps [2024]",
   excerpt: "Découvrez l'histoire fascinante du **morecambe logo**, son évolution et la symbolique de cet emblème unique du football anglais.",
   date: "2025-04-18",
+  galleryImageId: 398,
   content: `# L'Histoire Fascinante du **Logo Morecambe FC**
 
 Le **morecambe logo** est l'un des emblèmes les plus distinctifs du football anglais. Représentant fièrement les "Shrimps" (les Crevettes), le **morecambe fc logo** raconte l'histoire d'un club côtier unique qui a su gravir les échelons du football anglais.
@@ -36,5 +37,4 @@ Le **morecambe logo** est bien plus qu'un simple emblème sportif - c'est un sym
   keywords: "morecambe logo:20, logo morecambe:10, morecambe fc logo:10, morecambe logo png:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: null
 };

@@ -6,6 +6,7 @@ export const mechelenLogoPost: BlogPost = {
   title: "**Logo Mechelen** : Histoire et Design du KV Mechelen [2024]",
   excerpt: "Découvrez l'histoire fascinante du **KV Mechelen logo** et son évolution à travers les années. Un emblème qui symbolise la fierté du football belge.",
   date: "2024-04-19",
+  galleryImageId: 384,
   content: `# Histoire du **Logo Mechelen**
 
 Le **logo Mechelen** est un symbole emblématique du football belge, représentant l'identité et les valeurs d'un club historique. Le **KV Mechelen logo** incarne l'esprit combatif et la fierté locale.
@@ -70,5 +71,4 @@ Le **KV Mechelen logo** reste un symbole fort du football belge, alliant histoir
   keywords: "logo mechelen, kv mechelen logo, logo mechelen png, mechelen logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9332
 };

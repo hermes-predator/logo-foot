@@ -5,6 +5,7 @@ export const mirandesLogoPost: BlogPost = {
   id: 391, // ID unique pour ce nouvel article
   title: "Logo CD Mirandés : Histoire et Symbolisme de l'Emblème de Burgos [2024]",
   date: "2025-04-11",
+  galleryImageId: 391,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo CD Mirandés, club emblématique de Miranda de Ebro. Analyse complète des symboles et des couleurs du blason burgalais.",
@@ -101,5 +102,4 @@ Pour les habitants de Miranda de Ebro et les supporters du club, le **mirandes l
 
 Le **CD mirandes foot logo** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré sa taille modeste, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "logo mirandes, mirandes logo, cd mirandes foot logo, logo cd mirandés, mirandes cd logo, emblème mirandes, blason mirandes, club burgos logo, logo burgos foot",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

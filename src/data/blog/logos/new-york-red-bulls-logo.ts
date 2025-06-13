@@ -6,6 +6,7 @@ export const newYorkRedBullsLogoPost: BlogPost = {
   title: "**Logo New York Red Bulls** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo New York Red Bulls**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 412,
   content: `# L'Histoire Fascinante du **Logo New York Red Bulls**
 
 Le **logo New York Red Bulls** est l'un des emblèmes les plus distinctifs et reconnaissables de la Major League Soccer (MLS). Depuis sa création, ce **new york red bulls logo** incarne non seulement l'identité d'une équipe de football, mais aussi la marque mondiale de Red Bull.
@@ -36,5 +37,4 @@ Le **logo New York Red Bulls** illustre parfaitement comment un design peut tran
   keywords: "logo new york red bull:20, logo red bull new york:20, new york red bulls logo:20, new york red bulls logo png:20, new york red bull logo:10, new york red bull logo png:10, red bull new york logo:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

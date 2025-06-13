@@ -5,6 +5,7 @@ export const netherlandsLogoPost: BlogPost = {
   title: "Logo Pays-Bas : Histoire et Évolution de l'Emblème Oranje [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo des Pays-Bas : origines, évolution et symbolisme du célèbre lion orange qui représente la sélection néerlandaise de football.",
   date: "2024-05-30",
+  galleryImageId: 408,
   content: `# L'Histoire Fascinante du **Logo Pays-Bas**
 
 Le **logo pays bas** est bien plus qu'un simple emblème sportif. Véritable symbole d'identité pour des millions de supporters, il incarne l'histoire riche et les valeurs profondes d'une nation dont l'approche du football a révolutionné ce sport.
@@ -71,5 +72,4 @@ L'évolution de ce **logo pays bas foot** au fil des décennies illustre parfait
   keywords: "logo pays bas, logo pays bas foot, logo foot pays bas, logo club pays bas, pays bas logo, emblème pays bas, oranje logo, knvb logo, lion orange pays bas, pays bas foot logo, logo equipe de foot pays bas, logo du pays bas",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 87
 };

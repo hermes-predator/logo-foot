@@ -6,6 +6,7 @@ export const manchesterCityLogoPost: BlogPost = {
   title: "Logo Manchester City : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Manchester City : origines, symbolisme et évolution de l'emblème emblématique des Citizens à travers les années.",
   date: "2024-03-31",
+  galleryImageId: 381,
   content: `# L'Histoire Fascinante du **Logo Manchester City**
 
 Le **manchester city logo** est l'un des emblèmes les plus reconnaissables du football mondial. Cet article vous emmène à travers l'histoire captivante de cet écusson emblématique qui représente l'un des clubs les plus puissants d'Angleterre et d'Europe.
@@ -56,5 +57,4 @@ Le **man city logo** actuel semble parfaitement positionné pour accompagner le 
   keywords: "logo manchester city, manchester city logo, manchester city football club logo, manchester city fc logo, logos manchester city, logo de manchester city, ancien logo manchester city, manchester city logo png, logo manchester city png, logo manchester city style, man city fc logo, man city logo, logo man city, man city logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 50
 };

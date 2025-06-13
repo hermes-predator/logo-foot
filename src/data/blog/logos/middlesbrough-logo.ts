@@ -6,6 +6,7 @@ export const middlesbroughLogoPost: BlogPost = {
   title: "**Logo Middlesbrough FC** : Histoire et Évolution de l'Emblème des Teessiders [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Middlesbrough**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 387,
   content: `# **Logo Middlesbrough** : L'Histoire d'un Emblème Emblématique du Football Anglais
 
 Le **logo Middlesbrough** est bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1876. Dans cet article approfondi, découvrez l'évolution fascinante du **Middlesbrough logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -49,5 +50,4 @@ Le **logo Middlesbrough FC** illustre parfaitement comment un emblème sportif p
   keywords: "logo middlesbrough:20, middlesbrough fc logo:20, middlesbrough logo:20, middlesbrough logo png:20, logo design middlesbrough:10, logos middlesbrough fc:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 372
 };

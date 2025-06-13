@@ -5,6 +5,7 @@ export const neuchatelXamaxLogoPost: BlogPost = {
   title: "Logo Neuchâtel Xamax : Histoire et Signification de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Neuchâtel Xamax, son évolution au fil des années et la symbolique derrière cet emblème emblématique du football suisse.",
   date: "2024-04-15",
+  galleryImageId: 409,
   content: `# L'Histoire du Logo Neuchâtel Xamax
 
 Le **logo neuchatel xamax** représente l'un des clubs les plus emblématiques du football suisse. Le **neuchatel xamax logo** est devenu au fil des années un symbole de fierté pour toute une région, incarnant les valeurs et l'histoire riche du club.
@@ -31,5 +32,4 @@ Le logo est devenu un véritable symbole de la tradition footballistique suisse,
   keywords: "logo neuchatel xamax, neuchatel xamax logo, fc neuchatel xamax logo, logo fc neuchatel xamax, logo neuchatel xamax png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 424
 };

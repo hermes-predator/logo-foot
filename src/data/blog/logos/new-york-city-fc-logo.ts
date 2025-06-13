@@ -6,6 +6,7 @@ export const newYorkCityFcLogoPost: BlogPost = {
   title: "**Logo New York City FC** : Histoire et Design de l'Emblème Emblématique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo New York City**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 411,
   content: `# L'Histoire Fascinante du **Logo New York City FC**
 
 Le **logo new york city** est devenu l'un des emblèmes les plus reconnaissables de la Major League Soccer (MLS) depuis la création du club en 2013. Simple et élégant, le **logo new york city fc** capture parfaitement l'essence de la métropole américaine tout en s'inscrivant dans les codes visuels du football international.
@@ -74,6 +75,5 @@ Plus qu'un simple emblème, le **logo new york city png** est devenu un symbole 
   keywords: "logo new york city:140, logo new york city fc:20, new york city fc logo:20, new york city football club logo:20, new york city logo:20, new york city logo png:20, new york city official logo:20, logo de new york city:10, logo de foot new york city:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };
 

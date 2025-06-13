@@ -6,6 +6,7 @@ export const mkeAnkaragucuLogoPost: BlogPost = {
   title: "**Logo MKE Ankaragücü** : Histoire et Symbolisme de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo MKE Ankaragücü**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-22",
+  galleryImageId: 392,
   content: `# L'Histoire du **Logo MKE Ankaragücü**
 
 Le **logo MKE Ankaragücü** représente l'un des emblèmes les plus historiques du football turc. Basé à Ankara, la capitale turque, le club arbore un **MKE Ankaragücü logo** qui reflète sa riche histoire et son héritage industriel.
@@ -36,5 +37,4 @@ Le **logo MKE Ankaragücü png** poursuit son évolution constante. Entre adapta
   keywords: "logo MKE Ankaragücü, logo MKE Ankaragücü png, MKE Ankaragücü logo, football turc, super lig, ankara football",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 574
 };

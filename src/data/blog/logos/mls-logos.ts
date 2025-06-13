@@ -5,6 +5,7 @@ export const mlsLogoPost: BlogPost = {
   title: "Logo MLS : Histoire et Design du Football Américain [2024]",
   excerpt: "Découvrez l'histoire complète des logos de la Major League Soccer (MLS) : évolution, design et symbolisme des emblèmes du football américain.",
   date: "2024-03-26",
+  galleryImageId: 393,
   content: `# Logo MLS : Guide Complet des Emblèmes du Football Américain
 
 La Major League Soccer (MLS) représente l'élite du football nord-américain, avec une identité visuelle unique qui reflète le dynamisme du sport aux États-Unis. Son logo emblématique et ceux de ses clubs constituent un patrimoine visuel fascinant en constante évolution.
@@ -80,5 +81,4 @@ La MLS continue de repousser les limites du design sportif, combinant héritage 
   keywords: "logo mls, logo mls soccer, mls football logos, mls logo, major league soccer logo, football américain logo, soccer usa logo, logo club mls",
   category: 'competition-logos',
   subCategory: 'competition-logos',
-  galleryImageId: 39  // Adding gallery image reference for better visual presentation
 };

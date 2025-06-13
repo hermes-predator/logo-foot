@@ -6,6 +6,7 @@ export const monacoLogoPost: BlogPost = {
   title: "Logo AS Monaco : Histoire du Blason Princier [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'AS Monaco : origines, symbolisme et évolution de l'emblème mythique du club de la Principauté.",
   date: "2024-03-28",
+  galleryImageId: 394,
   content: `# Logo AS Monaco : L'Histoire Fascinante d'un Emblème Princier
 
 Le **logo AS Monaco** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'histoire, le prestige et l'élégance d'un club au destin unique. Plongeons dans l'univers fascinant du **monaco logo** qui représente l'une des institutions les plus prestigieuses du football européen.

@@ -6,6 +6,7 @@ export const niortLogoPost: BlogPost = {
   title: "Logo Niort : Histoire et Évolution de l'Emblème des Chamois [2024]",
   excerpt: "Découvrez l'histoire complète du logo des Chamois Niortais : origines, évolution et symbolisme de l'emblème emblématique du club deux-sévrien.",
   date: "2024-06-10",
+  galleryImageId: 417,
   content: `# L'Histoire Fascinante du **Logo Niort**
 
 Le **logo Niort** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité pour toute une région et l'incarnation visuelle de valeurs profondément ancrées dans le patrimoine deux-sévrien. À travers son histoire, le **niort logo** a su évoluer tout en préservant l'essence même du club qu'il représente fièrement.

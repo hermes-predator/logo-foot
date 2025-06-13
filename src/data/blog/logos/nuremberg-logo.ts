@@ -6,6 +6,7 @@ export const nurembergLogoPost: BlogPost = {
   title: "**Logo Nuremberg** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Nuremberg**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
+  galleryImageId: 420,
   content: `# L'Histoire Fascinante du **Logo Nuremberg**
 
 Le **logo Nuremberg** est l'un des emblèmes les plus emblématiques du football allemand. Cet écusson iconique, avec sa riche histoire et ses couleurs rouge et noir caractéristiques, raconte l'histoire d'un club qui a profondément marqué le paysage footballistique allemand.
@@ -79,5 +80,4 @@ Le **Nuremberg club foot logo** continuera sans doute d'évoluer subtilement pou
   keywords: "nuremberg logo:20, 1 fc nuremberg logo:10, fc nuremberg logo:10, logo 1 fc nuremberg:10, logo nuremberg foot:10, nuremberg club foot logo:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

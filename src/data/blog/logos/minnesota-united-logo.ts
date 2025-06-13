@@ -6,6 +6,7 @@ export const minnesotaUnitedLogoPost: BlogPost = {
   title: "**Logo Minnesota United** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Minnesota United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 390,
   content: `# L'Histoire Fascinante du **Logo Minnesota United**
 
 Le **minnesota united logo** est l'un des emblèmes les plus distinctifs de la Major League Soccer (MLS), capturant l'essence du football dans le nord des États-Unis. Depuis sa création, ce **logo minnesota united** incarne l'identité unique de Minneapolis et de sa riche culture sportive.
@@ -36,5 +37,4 @@ Le **logo minnesota united** illustre parfaitement comment un design peut transc
   keywords: "minnesota united logo:20, logo minnesota united:10, minnesota united fc logo:10, minnesota united logo png:10, logo de foot minnesota united:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

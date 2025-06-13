@@ -6,6 +6,7 @@ export const millwallLogoPost: BlogPost = {
   title: "**Logo Millwall FC** : Histoire et Évolution de l'Emblème des Lions [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Millwall**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 389,
   content: `# **Logo Millwall FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
 
 Le **logo Millwall** représente bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1885. Dans cet article approfondi, découvrez l'évolution fascinante du **Millwall FC logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -59,5 +60,4 @@ L'emblème du **Millwall FC logo** illustre remarquablement comment un logo spor
   keywords: "logo millwall:20, logo millwall fc:20, millwall fc logo:20, millwall logo:20, millwall logo png:20, millwall fc logo png:10, logo de foot millwall:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 375
 };

@@ -34,7 +34,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
               <h1 className="text-2xl md:text-3xl font-bold mb-3">
-                Vous cherchez tous les logos de foot ?
+                Vous voulez tous les logos de foot ?
               </h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">

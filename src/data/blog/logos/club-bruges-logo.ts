@@ -6,6 +6,7 @@ export const clubBrugesLogoPost: BlogPost = {
   title: "Logo Club Bruges : Histoire et Évolution de l'Emblème du Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Club Bruges, ses origines et son évolution. Téléchargez le logo Club Bruges PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-26", // Date de publication
+  galleryImageId: 172,
   content: `# L'Histoire Complète du **Logo Club Bruges**
 
 Le **club bruges logo** est l'un des emblèmes les plus reconnaissables du football belge. Symbole d'une institution sportive prestigieuse, le **logo club bruges** représente bien plus qu'un simple écusson - c'est l'incarnation visuelle d'une riche histoire et d'une identité culturelle profondément ancrée dans le patrimoine sportif de la Belgique.
@@ -104,5 +105,4 @@ Pour les générations de supporters passées, présentes et futures, le **logo 
   keywords: "club bruges logo, logo club bruges, club bruges logo png, logo club de bruges, logo png club bruges, écusson club bruges, histoire logo club bruges, emblème club bruges, télécharger logo club bruges",
   category: 'logos',
   subCategory: 'other-european-clubs',
-  galleryImageId: 303
 };

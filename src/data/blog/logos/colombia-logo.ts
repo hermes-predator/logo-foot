@@ -5,6 +5,7 @@ export const colombiaLogoPost: BlogPost = {
   title: "Logo Colombie : Histoire et Design de l'Emblème du Football Colombien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Colombie : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-15",
+  galleryImageId: 176,
   content: `# L'Histoire Fascinante du Logo Colombie
 
 Le **logo colombie foot** est bien plus qu'un simple emblème sportif : c'est un symbole national qui incarne l'histoire, la passion et l'excellence du football colombien. Plongeons dans l'histoire captivante de ce **logo foot colombie** qui représente l'une des nations les plus passionnantes du football sud-américain.
@@ -47,5 +48,4 @@ Cette capacité à se réinventer tout en restant fidèle à ses racines fait du
   keywords: "logo colombie foot, colombie logo, logo colombie, logo foot colombie, colombie logo foot",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 155
 };

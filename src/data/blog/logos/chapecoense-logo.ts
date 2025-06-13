@@ -6,6 +6,7 @@ export const chapecoenseLogoPost: BlogPost = {
   title: "**Logo Chapecoense** : Histoire et Signification de l'Emblème du Club Brésilien [2024]",
   excerpt: "Découvrez l'histoire émouvante du **logo Chapecoense**, un symbole de résilience et de renaissance dans le football brésilien. Une analyse détaillée de l'évolution du **Chapecoense logo**.",
   date: "2024-04-22",
+  galleryImageId: 161,
   content: `# L'Histoire Émouvante du **Logo Chapecoense**
 
 Le **Chapecoense logo** représente bien plus qu'une simple identité visuelle dans le football brésilien. Le **logo chapecoense png** est devenu un symbole de résilience et d'espoir, particulièrement après les événements tragiques de 2016.

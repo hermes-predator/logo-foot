@@ -6,6 +6,7 @@ export const commentCreerLogoFootballPost: BlogPost = {
   title: "Création Logo Foot : Guide Expert Design [2024]",
   excerpt: "Découvrez notre guide expert pour créer un logo de football professionnel. Techniques, outils et conseils pour concevoir un emblème de club unique et mémorable.",
   date: "2024-03-22",
+  galleryImageId: 180,
   content: `# Guide Expert pour la **Création de Logo Foot**
 
 La **création logo foot** est un art qui combine histoire, identité visuelle et stratégie de marque. Ce guide complet vous présente les étapes essentielles pour concevoir un emblème de football percutant et mémorable, que vous soyez un designer professionnel ou un passionné souhaitant créer l'identité visuelle de votre club.
@@ -115,5 +116,4 @@ Qu'il s'agisse d'une nouvelle **création logo club de foot** ou de la refonte d
   keywords: "création logo foot, création logo football, création logo club de foot, création de logo pour club de foot, design logo football, emblème club football, concevoir logo équipe foot",
   category: "technical",
   subCategory: "design",
-  galleryImageId: 608
 };

@@ -6,7 +6,7 @@ export const clermontFootLogoPost: BlogPost = {
   title: "Logo Clermont Foot : L'Évolution du Volcan Rouge et Bleu [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Clermont Foot, son évolution au fil du temps et la symbolique du volcan qui représente l'identité de ce club auvergnat de Ligue 1.",
   date: "2024-05-12",
-  galleryImageId: 68,
+  galleryImageId: 171,
   content: `# Logo Clermont Foot : L'Histoire du Volcan Auvergnat
 
 Dans le paysage du football français, certains emblèmes racontent l'histoire d'une région tout entière. C'est le cas du **logo Clermont Foot**, qui arbore fièrement les symboles de l'Auvergne et incarne l'identité d'un club en pleine ascension.

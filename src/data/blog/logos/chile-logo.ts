@@ -8,7 +8,7 @@ export const chileLogoPost: BlogPost = {
   date: "2024-06-05",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 515,
+  galleryImageId: 167,
   content: `# **Logo Chili** : L'Histoire de l'Emblème de La Roja
 
 Le **logo chili** représente bien plus qu'un simple emblème sportif - c'est un symbole d'identité nationale, de fierté et d'histoire footballistique riche. Dans cet article, nous explorerons en profondeur les origines, l'évolution et la signification du **logo du chili foot** qui accompagne l'équipe nationale chilienne, surnommée affectueusement "La Roja", à travers ses batailles sur les terrains internationaux.

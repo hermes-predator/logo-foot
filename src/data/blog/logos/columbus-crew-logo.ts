@@ -6,6 +6,7 @@ export const columbusCrewLogoPost: BlogPost = {
   title: "**Logo Columbus Crew** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Columbus Crew**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 179,
   content: `# L'Histoire Fascinante du **Logo Columbus Crew**
 
 Le **columbus crew logo** est l'un des emblèmes les plus distinctifs et historiques de la Major League Soccer (MLS). Depuis sa création, ce **logo columbus crew sc** incarne non seulement l'identité d'une équipe de football, mais aussi l'esprit industriel et dynamique de la ville de Columbus, Ohio.
@@ -36,5 +37,4 @@ Le **columbus crew sc logo** illustre parfaitement comment un design peut transc
   keywords: "columbus crew logo:20, columbus crew sc logo:20, logo columbus crew:20, columbus crew logo png:10, columbus crew sc new logo:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

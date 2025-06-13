@@ -5,7 +5,7 @@ export const coppaItaliaLogoPost: BlogPost = {
   title: "Logo Coppa Italia : Histoire et Symbolisme de l'Emblème du Football Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Coppa Italia : origines, évolution et signification des symboles de la prestigieuse coupe nationale italienne.",
   date: "2024-09-02",
-  galleryImageId: 333,
+  galleryImageId: 189,
   content: `# L'Histoire Fascinante du **Logo Coppa Italia**
 
 La **coppa italia logo** représente l'emblème officiel de la plus prestigieuse compétition de coupe nationale du football italien. Ce symbole visuel est devenu au fil des décennies une icône reconnaissable instantanément par les amateurs de football du monde entier, illustrant l'héritage riche et la tradition inégalée du calcio italien.

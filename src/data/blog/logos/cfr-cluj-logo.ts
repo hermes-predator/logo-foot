@@ -6,6 +6,7 @@ export const cfrClujLogoPost: BlogPost = {
   title: "Logo CFR Cluj : Histoire et Évolution de l'Emblème du Club Roumain",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo CFR Cluj, l'un des clubs de football les plus titrés de Roumanie. Téléchargez le logo CFR Cluj PNG.",
   date: "2024-07-25", // Date de publication
+  galleryImageId: 158,
   content: `# L'Histoire Fascinante du **Logo CFR Cluj**
 
 Le **CFR Cluj** est l'un des clubs de football les plus prestigieux de Roumanie avec une riche tradition qui se reflète parfaitement dans son emblème distinctif. Dans cet article, nous explorons en profondeur l'histoire et l'évolution du **logo CFR 1907 Cluj**, ses significations et comment il représente l'identité du club.
@@ -97,5 +98,4 @@ Pour les passionnés de football et de design, le **logo PNG CFR Cluj** reste un
   keywords: "logo cfr cluj, cfr cluj logo, logo cfr 1907 cluj, cfr cluj logo png, logo cfr cluj png, logo png cfr cluj, emblème cfr cluj, histoire logo cfr cluj, télécharger logo cfr cluj, évolution logo cfr cluj",
   category: 'logos',
   subCategory: 'european-clubs',
-  galleryImageId: 302
 };

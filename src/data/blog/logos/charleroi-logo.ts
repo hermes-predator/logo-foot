@@ -6,6 +6,7 @@ export const charleroiLogoPost: BlogPost = {
   title: "**Logo Charleroi** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Charleroi**, son évolution et sa symbolique. Un emblème qui représente la fierté du football wallon.",
   date: "2024-04-19",
+  galleryImageId: 162,
   content: `# Histoire du **Logo Charleroi**
 
 Le **Charleroi logo** est l'un des emblèmes les plus reconnaissables du football belge. Le **logo Charleroi foot** représente plus qu'un simple club : il incarne l'identité d'une ville et de sa passion pour le football.
@@ -79,5 +80,4 @@ Le **logo Charleroi foot** reste un symbole fort du football belge, incarnant à
   keywords: "logo charleroi, charleroi logo, logo charleroi foot, logo charleroi png, logo sporting charleroi, sporting charleroi logo, charleroi logo png, logo de charleroi, logo charleroi sc, logo de foot charleroi sc, logo du sporting de charleroi, rsc charleroi logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9330
 };

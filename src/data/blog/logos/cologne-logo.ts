@@ -6,6 +6,7 @@ export const cologneLogoPost: BlogPost = {
   title: "Logo FC Cologne : Histoire et Design de l'Emblème Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Cologne : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-10",
+  galleryImageId: 175,
   content: `# L'Histoire Fascinante du Logo FC Cologne
 
 Le **logo cologne** est l'un des emblèmes les plus reconnaissables du football allemand. Représentant l'identité et l'héritage d'un club historique de la Bundesliga, le **fc cologne logo** est bien plus qu'une simple marque visuelle – c'est un symbole de fierté pour toute une ville et ses supporters passionnés.
@@ -42,5 +43,4 @@ Alors que le club continue d'écrire son histoire sportive, le **fc cologne logo
   keywords: "cologne logo, cologne logo png, logo cologne, fc cologne logo, logo cologne foot, logo cologne format png, logo de cologne, logo de foot cologne en allemagne, logo fc cologne, logo foot cologne",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 90
 };

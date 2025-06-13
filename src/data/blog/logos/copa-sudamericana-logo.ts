@@ -5,6 +5,7 @@ export const copaSudamericanaLogoPost: BlogPost = {
   id: 187,
   title: "**Logo Copa Sudamericana** : Histoire et Symbolisme de l'Emblème du Football Sud-Américain",
   date: "2025-04-26",
+  galleryImageId: 187,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo de la Copa Sudamericana, une compétition prestigieuse qui incarne la passion du football sud-américain. Une analyse détaillée de son design emblématique et de sa signification historique.",
   content: `# Histoire et Évolution du **Logo Copa Sudamericana**

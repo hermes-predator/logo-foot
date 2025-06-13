@@ -8,7 +8,7 @@ export const charltonAthleticLogoPost: BlogPost = {
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
-  galleryImageId: 9056,
+  galleryImageId: 164,
   content: `
 # L'histoire complète du **logo Charlton** : Symbole d'un club londonien historique
 

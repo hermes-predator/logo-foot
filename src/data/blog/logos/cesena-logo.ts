@@ -6,6 +6,7 @@ export const cesenaLogoPost: BlogPost = {
   title: "Logo Cesena : Histoire et Évolution de l'Emblème du Club Romagnol [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cesena, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-04",
+  galleryImageId: 157,
   content: `# L'Histoire Fascinante du **Cesena Logo** : Évolution et Symbolisme
 
 Le **logo cesena** représente l'identité visuelle d'un club historique de football italien dont l'héritage remonte à plus d'un siècle. Dans cet article, nous explorerons en profondeur l'histoire, l'évolution et la signification symbolique du **cesena logo** qui incarne l'âme et les traditions de cette équipe emblématique de l'Émilie-Romagne.

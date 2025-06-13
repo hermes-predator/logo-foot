@@ -6,6 +6,7 @@ export const chicagoFireLogoPost: BlogPost = {
   title: "**Chicago Fire FC Logo** : Histoire et Design de l'Emblème Flamboyant [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Chicago Fire**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 166,
   content: `# L'Histoire Fascinante du **Logo Chicago Fire FC**
 
 Le **Chicago Fire logo** est bien plus qu'un simple emblème de club - c'est un symbole puissant qui incarne l'esprit et l'héritage d'une ville historiquement liée au feu. Dans cet article, nous explorons l'évolution remarquable du **logo de Chicago Fire** et sa signification profonde dans le paysage du football américain.
@@ -73,5 +74,4 @@ Pour les supporters comme pour les observateurs du football américain, le **log
   keywords: "chicago fire fc logo:20, chicago fire logo:20, chicago fire logo png:20, logo de chicago fire:20, chicago fire fc logo png:10, chicago fire fc new logo:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

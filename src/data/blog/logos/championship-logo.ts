@@ -6,7 +6,7 @@ export const championshipLogoPost: BlogPost = {
   title: "Logo Championship : Histoire et Design de l'Emblème de la Ligue Anglaise [2024]",
   excerpt: "Découvrez l'histoire complète du logo Championship : origines, évolution et symbolisme de l'emblème de la prestigieuse deuxième division anglaise.",
   date: "2024-05-15",
-  galleryImageId: 70,
+  galleryImageId: 160,
   content: `# L'Histoire Fascinante du **Logo Championship**
 
 Le **logo championship** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui représente l'une des compétitions de football les plus passionnantes et compétitives au monde. Plongeons dans l'univers captivant du **championship logo**, un écusson qui incarne l'essence même du football anglais de deuxième division.

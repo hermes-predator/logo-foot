@@ -5,6 +5,7 @@ export const colomiersLogoPost: BlogPost = {
   id: 177,
   title: "**Logo Colomiers** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 177,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo colomiers foot**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo us colomiers**.",
   content: `# Guide Complet du **Logo Colomiers**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo colomiers foot** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club columérin.`,
   keywords: "logo colomiers, colomiers logo, logo colomiers foot, logo us colomiers, colomiers foot nouveau logo, logo us colomiers png, logo usc colomiers football",
-  galleryImageId: null
 };

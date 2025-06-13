@@ -6,6 +6,7 @@ export const charlotteFcLogoPost: BlogPost = {
   title: "Logo Charlotte FC : Histoire et Design de l'Emblème Américain [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Charlotte FC : des origines à aujourd'hui, évolution et signification de l'emblème du club de MLS.",
   date: "2024-04-10",
+  galleryImageId: 163,
   content: `# L'Histoire Fascinante du Logo Charlotte FC
 
 Le **charlotte fc logo** est devenu en peu de temps l'un des emblèmes les plus reconnaissables de la Major League Soccer (MLS). Représentant la passion pour le football de toute une région, le **charlotte fc logo png** symbolise l'ambition et la modernité d'une franchise en pleine ascension. Plongeons dans l'histoire captivante de cet emblème qui incarne l'identité du football professionnel en Caroline du Nord.
@@ -38,5 +39,4 @@ En conclusion, le **charlotte fc logo** illustre parfaitement comment un design 
   keywords: "charlotte fc logo, charlotte fc logo png, charlotte fc emblème, blason charlotte fc, football charlotte, écusson charlotte fc, logo charlotte fc vectoriel, histoire logo charlotte fc, charlotte fc badge, mls charlotte logo, charlotte soccer logo, charlotte fc symbols, design logo charlotte fc, charlotte fc branding",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 51
 };

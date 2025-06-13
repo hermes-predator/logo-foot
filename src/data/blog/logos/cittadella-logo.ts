@@ -6,6 +6,7 @@ export const cittadellaLogoPost: BlogPost = {
   title: "Logo Cittadella : Histoire et Évolution de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Cittadella, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-11",
+  galleryImageId: 170,
   content: `# L'Histoire Fascinante du **Cittadella Logo** : Évolution et Symbolisme
 
 Le **cittadella logo** représente l'identité visuelle d'un club de football italien dont l'histoire est intimement liée à la ville fortifiée de Cittadella, dans la province de Padoue. Dans cet article, nous explorerons en profondeur l'histoire, l'évolution et la signification symbolique du **logo cittadella** qui incarne l'âme et les traditions de cette équipe emblématique de Vénétie.

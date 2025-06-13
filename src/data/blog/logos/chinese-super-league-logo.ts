@@ -5,7 +5,7 @@ export const chineseSuperLeagueLogoPost: BlogPost = {
   title: "Logo Chinese Super League : Histoire et Évolution de l'Emblème du Football Chinois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de la Chinese Super League : symboles, évolution et signification de l'emblème du championnat de football le plus prestigieux de Chine.",
   date: "2024-05-01",
-  galleryImageId: 334,
+  galleryImageId: 168,
   content: `# Histoire Fascinante du **Logo Chinese Super League**
 
 La **china chinese super league** représente le sommet du football professionnel en Chine, et son emblème visuel est devenu un symbole reconnaissable sur la scène mondiale du football. Cet article explore en profondeur l'histoire, l'évolution et la signification du **chinese super league logo**, ainsi que son impact culturel et commercial.

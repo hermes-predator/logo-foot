@@ -6,6 +6,7 @@ export const copaDoBasilLogoPost: BlogPost = {
   title: "**Logo da Copa do Brasil** : Histoire et Évolution du Design [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **copa do brasil logo**, son évolution à travers les époques et son impact sur l'identité visuelle du football brésilien.",
   date: "2024-04-27",
+  galleryImageId: 185,
   content: `# Histoire et Évolution du **Logo da Copa do Brasil**
 
 Le **logo da copa do brasil** représente l'une des compétitions les plus prestigieuses du football brésilien. Cette coupe nationale, créée en 1989, a vu son identité visuelle évoluer au fil des ans pour devenir un symbole reconnaissable du football sud-américain.
@@ -44,6 +45,5 @@ Le **copa do brasil logo** incarne parfaitement l'histoire et le prestige de cet
   keywords: "logo da copa do brasil, copa do brasil logo, logo copa do brasil, copa do brasill logo, logo copa do brasil png",
   category: 'competition-logos',
   subCategory: 'competition-logos',
-  galleryImageId: 439
 };
 

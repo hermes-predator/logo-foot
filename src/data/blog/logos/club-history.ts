@@ -5,6 +5,7 @@ export const clubHistoryPost: BlogPost = {
   title: "Logo Foot : Histoire des Écussons de 1900 à 2024",
   excerpt: "Découvrez l'évolution des logos foot à travers l'histoire. Guide complet sur les origines et transformations des écussons de football.",
   date: "2024-02-27",
+  galleryImageId: 173,
   content: `# L'Histoire Fascinante des **Logo Foot** à Travers les Âges
 
 ![Histoire des **Logo Foot**](https://logo-foot.com/blog-images/2.png)

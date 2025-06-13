@@ -5,6 +5,7 @@ export const concacafLogoPost: BlogPost = {
   id: 182,
   title: "**CONCACAF Logo** : Histoire et Évolution d'un Symbole du Football Nord-Américain",
   date: "2025-04-25",
+  galleryImageId: 182,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo de la CONCACAF, symbole du football nord et centre-américain. Une analyse détaillée de son design emblématique et de son évolution au fil des ans.",
   content: `# L'Histoire du **CONCACAF Logo** : Un Symbole d'Unité Continentale

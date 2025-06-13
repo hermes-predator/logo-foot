@@ -6,7 +6,7 @@ export const chelseaLogoPost: BlogPost = {
   title: "Logo Chelsea : Histoire et Evolution du Design [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Chelsea : origines, évolution et signification de l'emblème emblématique du club londonien.",
   date: "2024-04-05",
-  galleryImageId: 55,
+  galleryImageId: 165,
   content: `# L'Histoire Fascinante du **Logo Chelsea**
 
 Le **logo Chelsea** est bien plus qu'un simple emblème sportif : c'est le symbole d'une institution centenaire du football anglais et mondial. Depuis sa création en 1905, le **Chelsea FC** a vu son identité visuelle évoluer considérablement, reflétant les changements d'ère et la transformation du club en puissance mondiale du football.

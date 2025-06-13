@@ -6,6 +6,7 @@ export const coloradoRapidsLogoPost: BlogPost = {
   title: "**Logo Colorado Rapids** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Colorado Rapids**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 178,
   content: `# L'Histoire Fascinante du **Logo Colorado Rapids**
 
 Le **colorado rapids logo** est l'un des emblèmes les plus distinctifs et représentatifs de la Major League Soccer (MLS). Depuis sa création, ce **logo rapids colorado** a su évoluer tout en conservant son identité montagnarde qui reflète parfaitement l'esprit du Colorado et sa géographie spectaculaire.
@@ -74,5 +75,4 @@ Pour les supporters comme pour les observateurs du football américain, le **log
   keywords: "colorado rapids logo:20, colorado rapids logo png:10, logo colorado rapids:10, logo de foot colorado rapids:10, logo rapids colorado:10, mls logo colorado rapids:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

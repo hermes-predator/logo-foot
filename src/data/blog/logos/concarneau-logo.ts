@@ -6,7 +6,7 @@ export const concarneauLogoPost: BlogPost = {
   title: "Logo Concarneau : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo Concarneau, ses symboles et sa signification. Une analyse complète de l'emblème du club breton de l'US Concarneau.",
   date: "2024-05-28",
-  galleryImageId: 279,
+  galleryImageId: 183,
   content: `# **Logo Concarneau** : Histoire et Évolution
 
 Le **logo Concarneau** représente l'identité visuelle d'un club qui incarne les valeurs du football breton et symbolise l'attachement profond à sa région. À travers ses évolutions successives, le **Concarneau logo** raconte l'histoire d'un club authentique qui a su préserver ses racines tout en se modernisant.

@@ -5,7 +5,7 @@ export const communityShieldLogoPost: BlogPost = {
   title: "Community Shield Logo : Histoire et Design de l'Emblème Britannique [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Community Shield : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Angleterre.",
   date: "2024-06-23",
-  galleryImageId: 7,
+  galleryImageId: 181,
   content: `# L'Histoire Fascinante du **Community Shield Logo**
 
 Le **community shield logo** est bien plus qu'un simple emblème sportif : c'est un symbole emblématique qui représente l'ouverture traditionnelle de la saison de football anglais. Ce trophée qui oppose chaque année le champion de Premier League au vainqueur de la FA Cup s'est doté d'une identité visuelle distinctive qui reflète parfaitement le prestige et la tradition du football anglais.

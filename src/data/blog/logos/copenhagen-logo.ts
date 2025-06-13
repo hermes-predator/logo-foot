@@ -6,6 +6,7 @@ export const copenhagenLogoPost: BlogPost = {
   title: "Logo Copenhague : Histoire et Signification du FC Copenhague Logo [2024]",
   excerpt: "Découvrez l'histoire complète du logo FC Copenhague : origines, évolution et symbolisme de l'emblème du plus grand club danois de football.",
   date: "2024-04-07",
+  galleryImageId: 188,
   content: `# L'Histoire Fascinante du Logo Copenhague
 
 Le **logo Copenhague** représente l'un des clubs les plus prestigieux du football scandinave. Le FC Copenhague, fondé en 1992 suite à la fusion de deux clubs historiques, arbore un emblème qui incarne son identité et son héritage. Plongeons dans l'analyse détaillée du **logo FC Copenhague** et découvrons ce qui fait sa particularité.
@@ -44,5 +45,4 @@ Le **Copenhague logo** est plus qu'un simple symbole graphique : c'est le gardie
   keywords: "logo copenhague, copenhague logo, fc copenhague logo, logo fc copenhague, copenhague logo png, fc copenhague logo png, logo de foot copenhague",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 200
 };

@@ -6,6 +6,7 @@ export const corinthiansLogoPost: BlogPost = {
   title: "**Logo Corinthians** : Histoire et Design de l'Emblème Iconique du Football Brésilien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Corinthians**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 190,
   content: `# L'Histoire Fascinante du **Logo Corinthians**
 
 Le **corinthians logo** est l'un des emblèmes les plus reconnaissables et emblématiques du football brésilien. Depuis sa création, ce **logo do corinthians** incarne non seulement l'identité d'un club légendaire, mais aussi l'histoire et la passion du football à São Paulo.
@@ -36,5 +37,4 @@ Le **logos do corinthians png** illustre parfaitement comment un design peut rac
   keywords: "corinthians logo:20, corinthians logo png:20, logo corinthians:20, logo corinthians png:20, logo do corinthians:20, logo do corinthians png:20, corinthians fc logo:10, corinthian logo:10, logo corinthians football:10, logo de foot corinthians:10, logo png corinthians:10, logos do corinthians png:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

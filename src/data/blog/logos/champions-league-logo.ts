@@ -5,6 +5,7 @@ export const championsLeagueLogoPost: BlogPost = {
   title: "Logo UEFA Champions League : Histoire & Design de l'Emblème Européen [2024]",
   excerpt: "Analyse complète du logo de l'UEFA Champions League : histoire, signification et évolution de l'emblème le plus prestigieux du football européen.",
   date: "2024-05-15",
+  galleryImageId: 159,
   content: `# L'Histoire Fascinante du **Logo Ligue des Champions**
 
 Le **logo ligue des champions** est bien plus qu'un simple symbole graphique. Il est l'incarnation visuelle de l'excellence footballistique européenne, un emblème qui fait vibrer les cœurs des passionnés du monde entier chaque soir de match.

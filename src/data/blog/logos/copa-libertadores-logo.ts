@@ -5,6 +5,7 @@ export const copaLibertadoresLogoPost: BlogPost = {
   id: 186,
   title: "**Logo Copa Libertadores** : L'Emblème Mythique qui Raconte l'Âme du Football Sud-Américain",
   date: "2025-04-26",
+  galleryImageId: 186,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo de la Copa Libertadores, la plus prestigieuse compétition de clubs d'Amérique du Sud. Une analyse détaillée de son design emblématique et de sa signification historique.",
   content: `# La Saga Visuelle de la **Copa Libertadores** : Un Logo, Mille Histoires

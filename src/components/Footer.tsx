@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { MessageCircle } from "lucide-react";
 import ContactForm from './ContactForm';
 
@@ -23,6 +23,9 @@ const Footer = () => {
             <DialogContent className="max-w-2xl w-full">
               <DialogHeader>
                 <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                <DialogDescription>
+                  Formulaire de contact pour toute question ou demande d'assistance.
+                </DialogDescription>
               </DialogHeader>
               <div className="mt-4">
                 <ContactForm />

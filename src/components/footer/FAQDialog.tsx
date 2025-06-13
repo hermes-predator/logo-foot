@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -20,6 +21,9 @@ const FAQDialog = () => {
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold text-gray-800">Questions fréquentes</DialogTitle>
+          <DialogDescription>
+            Retrouvez les réponses aux questions les plus courantes concernant nos produits et services.
+          </DialogDescription>
         </DialogHeader>
         <div className="mt-4">
           <Accordion type="single" collapsible className="w-full">

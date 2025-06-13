@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import ContactForm from './ContactForm';
 import CGVDialog from './footer/CGVDialog';
 import MentionsLegalesDialog from './footer/MentionsLegalesDialog';
@@ -105,6 +105,9 @@ const Header = () => {
                     <DialogContent className="max-w-2xl w-full">
                       <DialogHeader>
                         <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                        <DialogDescription>
+                          Formulaire de contact pour toute question ou demande d'assistance.
+                        </DialogDescription>
                       </DialogHeader>
                       <div className="mt-4">
                         <ContactForm />

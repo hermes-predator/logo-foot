@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -22,6 +22,9 @@ const DisclaimerDialog = () => {
           <DialogTitle className="text-xl font-bold text-gray-800">
             Disclaimer
           </DialogTitle>
+          <DialogDescription>
+            Avertissement important concernant l'utilisation des ressources proposées dans notre collection.
+          </DialogDescription>
         </DialogHeader>
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">

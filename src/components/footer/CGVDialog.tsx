@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { FileText } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -19,6 +20,9 @@ const CGVDialog = () => {
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold text-gray-800">Conditions générales de vente</DialogTitle>
+          <DialogDescription>
+            Conditions régissant la vente de nos produits numériques et les droits et obligations de chaque partie.
+          </DialogDescription>
         </DialogHeader>
         <div className="mt-4 text-sm space-y-4">
           <section>

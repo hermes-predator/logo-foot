@@ -19,20 +19,24 @@ const FloatingCTAContainer = () => {
     }, 100);
   };
 
-  if (!visible || dismissed || !isAtBottom) return null;
+  if (dismissed) return null;
 
-  // Calculate transform with ultra-slow sliding effect - extreme gradual curve
-  const translateY = Math.max(0, (1 - Math.pow(scrollProgress, 0.08)) * 100);
-  // Ultra slow opacity fade-in that starts very late
-  const opacity = Math.min(1, Math.pow(scrollProgress, 0.2) * 2);
+  // Calcul du glissement progressif - plus on scroll vers le bas, plus la bannière monte
+  // scrollProgress va de 0 à 1 quand on approche du bas
+  // translateY va de 100% (complètement caché) à 0% (complètement visible)
+  const translateY = isAtBottom ? (1 - scrollProgress) * 100 : 100;
+  
+  // Opacité progressive aussi
+  const opacity = isAtBottom ? Math.min(1, scrollProgress * 1.5) : 0;
 
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-50 will-change-transform will-change-opacity"
+      className="fixed bottom-0 left-0 right-0 z-50"
       style={{
         transform: `translateY(${translateY}%)`,
         opacity: opacity,
-        transition: 'transform 6s cubic-bezier(0.05, 0.8, 0.05, 1), opacity 8s ease-out',
+        // Transition CSS très lente pour un glissement fluide
+        transition: 'transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.5s ease-out',
       }}
     >
       {/* Similar gradient to BlogHeader */}

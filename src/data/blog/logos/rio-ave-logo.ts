@@ -6,6 +6,7 @@ export const rioAveLogoPost: BlogPost = {
   title: "Logo Rio Ave : Histoire et Signification de l'Emblème du Club Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Rio Ave FC, son évolution à travers le temps et la signification des éléments qui composent l'emblème du club portugais.",
   date: "2024-09-01",
+  galleryImageId: 483,
   content: `# L'Histoire Fascinante du **Logo Rio Ave**
 
 Le **logo Rio Ave** représente l'une des institutions sportives les plus emblématiques du football portugais. Fondé en 1939 dans la ville de Vila do Conde, le Rio Ave Futebol Clube a développé au fil des décennies une identité visuelle distinctive qui reflète à la fois son héritage maritime et son ambition sportive.

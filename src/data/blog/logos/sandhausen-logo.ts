@@ -5,6 +5,7 @@ export const sandhausenLogoPost: BlogPost = {
   title: "**Logo SV Sandhausen** : Histoire et Design de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Sandhausen**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",
+  galleryImageId: 502,
   content: `# L'Histoire du **Logo SV Sandhausen**
 
 Le **logo sandhausen** est l'un des emblèmes représentatifs du football allemand, particulièrement connu dans les divisions inférieures du championnat. Avec son design distinctif, le **logo de foot sandhausen** raconte l'histoire d'un club ancré dans sa communauté locale.
@@ -41,5 +42,4 @@ Le **logo sandhausen** représente plus qu'un simple emblème : c'est l'histoire
   keywords: "logo sandhausen:10, logo sv sandhausen:10, logo de foot sandhausen:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

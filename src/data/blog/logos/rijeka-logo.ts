@@ -6,6 +6,7 @@ export const rijekaLogoPost: BlogPost = {
   title: "**Logo Rijeka** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Rijeka**, son évolution et sa symbolique. Un emblème qui représente la fierté du football croate et l'identité adriatique.",
   date: "2024-04-18",
+  galleryImageId: 482,
   content: `# Histoire du **Logo Rijeka**
 
 Le **logo Rijeka** représente l'un des clubs les plus importants de Croatie. Cet emblème symbolise la riche histoire maritime et footballistique de la ville de Rijeka.
@@ -79,5 +80,4 @@ Le **logo Rijeka** reste un symbole majeur du football croate, conjuguant tradit
   keywords: "logo rijeka, rijeka logo, logo hnk rijeka, rijeka logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9328
 };

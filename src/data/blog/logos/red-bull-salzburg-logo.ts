@@ -6,6 +6,7 @@ export const redBullSalzburgLogoPost: BlogPost = {
   title: "Logo Salzbourg : Histoire, Signification et Fichiers PNG du Club Red Bull [2024]",
   excerpt: "Plongez dans l’histoire du logo Salzbourg, aussi appelé logo Red Bull Salzbourg ou RB Salzbourg logo, avec tous les fichiers PNG et les secrets de son design.",
   date: "2024-04-21",
+  galleryImageId: 477,
   content: `# Tout savoir sur le **logo salzbourg**
 
 Le **logo salzbourg** symbolise l’ambition et l’identité plurielle d’un club devenu une référence en Autriche et en Europe. Depuis sa transformation en **red bull salzbourg logo**, le **salzbourg logo** attire autant les amateurs de design que les collectionneurs de **logo foot salzbourg**. Rares sont les clubs qui modifient aussi rapidement leur image, à l’instar de **rb salzbourg logo** qui a révolutionné la communication visuelle du football autrichien.
@@ -36,5 +37,4 @@ Que vous recherchiez l’évolution du **fc salzbourg logo**, la signification d
   keywords: "logo salzbourg, salzbourg logo, fc salzbourg logo, club foot logo red bull salzbourg, logo foot salzbourg, logo rb salzbourg, logo red bull salzbourg, logo redbull salzbourg, logo salzbourg foot, logo salzbourg football png, rb salzbourg logo, rb salzbourg logo png, red bull salzbourg logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: undefined
 };

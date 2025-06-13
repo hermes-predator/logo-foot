@@ -5,6 +5,7 @@ export const raonEtapeLogoPost: BlogPost = {
   id: 465,
   title: "**Logo Raon l'Étape** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 465,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo Raon l'Étape**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo de Raon l'Étape**.",
   content: `# Guide Complet du **Logo Raon l'Étape**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo us raon l'étape png** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club de Raon l'Étape.`,
   keywords: "raon l'etape logo, raon l'etape foot logo, logo us raon l'etape png, logo de raon l'etape",
-  galleryImageId: null
 };

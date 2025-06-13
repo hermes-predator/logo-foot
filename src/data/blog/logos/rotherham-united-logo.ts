@@ -5,6 +5,7 @@ export const rotherhamUnitedLogoPost: BlogPost = {
   id: 490,
   title: "**Logo Rotherham United** : Histoire et Analyse Complète [2024]",
   date: "2025-04-13",
+  galleryImageId: 490,
   category: "logos",
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire fascinante du **logo Rotherham United**. Analyse détaillée de l'écusson emblématique du club anglais, symboles, couleurs et évolution du **Rotherham United logo** au fil des ans.",
@@ -98,5 +99,4 @@ Le **logo Rotherham United** est bien plus qu'un simple dessin ou emblème - c'e
 
 À travers ses différentes itérations, le **logo Rotherham United** a évolué tout en conservant son essence, témoignant de la capacité du club à s'adapter aux changements tout en honorant ses racines. Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les produits dérivés officiels, le **Rotherham logo PNG** continue de jouer un rôle central dans l'identité visuelle et émotionnelle du club.`,
   keywords: "logo rotherham united, rotherham united logo, rotherham logo png, écusson rotherham, rotherham fc, millers logo, football logo design, english football club logos, yorkshire football clubs",
-  galleryImageId: null
 };

@@ -6,6 +6,7 @@ export const realMadridLogoPost: BlogPost = {
   title: "Logo Real Madrid : Histoire et Design de l'Emblème Royal [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Real Madrid : des origines à aujourd'hui, évolution et signification de l'emblème du plus grand club de football.",
   date: "2024-03-31",
+  galleryImageId: 472,
   content: `# L'Histoire Passionnante du Logo Real Madrid
 
 Le **logo Real Madrid** est bien plus qu'un simple emblème : c'est une icône mondiale qui représente l'excellence, la tradition et la grandeur du club le plus titré de l'histoire du football. Plongeons dans l'histoire fascinante de ce **real madrid logo** qui est devenu un symbole universel du football d'élite.
@@ -42,5 +43,4 @@ Alors que le club continue d'écrire son histoire, le **logo Real Madrid FC** re
   keywords: "logo real madrid, real madrid logo, soccer real madrid logo, logo real madrid fc, real madrid logo football, real madrid football club logo, ecusson real madrid, blason real madrid, real madrid football logo, logo du real madrid, real madrid logo png, logo real madrid png, logo madrid real, logo de real madrid",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 49
 };

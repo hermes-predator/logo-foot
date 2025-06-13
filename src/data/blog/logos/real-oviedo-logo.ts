@@ -5,6 +5,7 @@ export const realOviedoLogoPost: BlogPost = {
   id: 473, // ID unique pour ce nouvel article
   title: "Logo Real Oviedo : Histoire et Évolution de l'Emblème Asturien [2024]",
   date: "2025-04-11",
+  galleryImageId: 473,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Real Oviedo, emblème du club asturien. Analyse complète des symboles et des couleurs du blason historique des Carbayones.",
@@ -101,5 +102,4 @@ Pour les habitants d'Oviedo et les supporters du club, le **logo real oviedo** r
 
 Le **real oviedo logo** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré les difficultés traversées au fil des ans, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "logo real oviedo, real oviedo logo, emblème real oviedo, blason oviedo, écusson oviedo, club asturien logo",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

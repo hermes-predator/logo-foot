@@ -6,6 +6,7 @@ export const rouenLogoPost: BlogPost = {
   title: "Logo FC Rouen : Histoire et Évolution du Blason Normand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Rouen : des origines à aujourd'hui, l'évolution de l'emblème emblématique du club normand.",
   date: "2024-04-12",
+  galleryImageId: 491,
   content: `Guide Complet du **Logo FC Rouen**
 
 Le **logo Rouen** est l'un des plus emblématiques du football normand. Représentant fièrement l'identité du club depuis sa création, le **FC Rouen logo** a connu plusieurs évolutions tout en conservant ses éléments distinctifs qui font la fierté des supporters.

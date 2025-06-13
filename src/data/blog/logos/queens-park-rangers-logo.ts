@@ -6,6 +6,7 @@ export const queensParkRangersLogoPost: BlogPost = {
   title: "Queens Park Rangers FC Logo : Histoire et Évolution de l'Emblème Légendaire",
   excerpt: "Découvrez l'histoire fascinante du Queens Park Rangers logo, l'un des écussons les plus emblématiques du football anglais. Analyse complète, évolution historique et téléchargement PNG haute définition.",
   date: "2024-04-14",
+  galleryImageId: 462,
   content: `# L'Histoire Emblématique du **Queens Park Rangers FC Logo**
 
 Le **Queens Park Rangers logo** représente l'une des identités visuelles les plus distinctives du football anglais. Club historique de l'ouest de Londres fondé en 1882, les "Hoops" ont développé au fil des décennies un écusson qui reflète parfaitement leur histoire et leurs valeurs.
@@ -142,5 +143,4 @@ Pour les supporters, qu'ils arborent fièrement le **Queens Park Rangers logo PN
   keywords: "queens park rangers fc logo, queens park rangers logo, queens park rangers logo png, logo club queens park rangers, logo queen park rangers, queen park rangers fts logo, queens park rangers new logo, qpr logo, qpr fc emblem, qpr badge, football logo london, championship club logo, hoops football logo",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 403
 };

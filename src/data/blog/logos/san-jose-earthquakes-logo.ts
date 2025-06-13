@@ -5,6 +5,7 @@ export const sanJoseEarthquakesLogoPost: BlogPost = {
   title: "**Logo San Jose Earthquakes** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo San Jose Earthquakes**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 501,
   content: `# L'Histoire Fascinante du **Logo San Jose Earthquakes**
 
 Le **san jose earthquakes logo** est l'un des emblèmes les plus historiques de la Major League Soccer (MLS). Depuis sa création, ce **logo san jose earthquakes** incarne non seulement l'identité d'une équipe de football, mais aussi l'esprit pionnier de la région de la Baie de San Francisco.
@@ -35,5 +36,4 @@ Le **logo san jose earthquakes** illustre parfaitement comment un design peut ra
   keywords: "san jose earthquakes logo:20, logo san jose earthquakes:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

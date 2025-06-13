@@ -6,6 +6,7 @@ export const royalAntwerpLogoPost: BlogPost = {
   title: "Logo Royal Antwerp : Histoire et Évolution de l'Emblème du Plus Ancien Club Belge [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Royal Antwerp FC, son design emblématique et son évolution au fil du temps. Téléchargez le logo Royal Antwerp FC en haute définition.",
   date: "2024-07-28", // Date de publication
+  galleryImageId: 492,
   content: `# L'Histoire Complète du **Royal Antwerp FC Logo**
 
 Le **royal antwerp logo** est l'un des emblèmes les plus historiques et respectés du football belge. Représentant le plus ancien club de Belgique, fondé en 1880, le **antwerp logo** reflète un riche héritage et une tradition profondément ancrée dans l'histoire du football européen. Cet article explore en profondeur l'évolution et la signification du **royal antwerp fc logo** au fil des décennies.
@@ -114,5 +115,4 @@ La force du **royal antwerp fc logo** réside finalement dans sa capacité à tr
   keywords: "antwerp fc logo, antwerp logo, logo royal antwerp, royal antwerp fc logo, royal antwerp football club logo, royal antwerp logo, royal antwerp logo png, logo antwerp, logo antwerp fc, logo royal antwerp fc, logo de foot antwerp",
   category: 'logos',
   subCategory: 'other-european-clubs',
-  galleryImageId: 305
 };

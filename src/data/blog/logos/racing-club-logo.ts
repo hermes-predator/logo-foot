@@ -6,6 +6,7 @@ export const racingClubLogoPost: BlogPost = {
   title: "**Logo Racing Club** : Histoire et Évolution de l'Emblème Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Racing Club logo**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de Racing Club**.",
   date: "2024-04-22",
+  galleryImageId: 463,
   content: `# L'Histoire Fascinante du **Logo Racing Club**
 
 Le **Racing Club logo** représente l'un des emblèmes les plus prestigieux du football argentin. Depuis sa création en 1903, le club d'Avellaneda a développé une identité visuelle forte qui reflète son histoire glorieuse et ses succès sportifs.

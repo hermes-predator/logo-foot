@@ -6,6 +6,7 @@ export const rayoVallecanoLogoPost: BlogPost = {
   title: "Logo Rayo Vallecano : Histoire et Design de l'Emblème Madrilène [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Rayo Vallecano : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club de Vallecas.",
   date: "2024-05-24",
+  galleryImageId: 467,
   content: `# L'Histoire Fascinante du **Logo Rayo Vallecano**
 
 Le **logo rayo vallecano** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité locale qui représente la fierté d'un quartier entier de Madrid et l'âme d'un club aux racines populaires profondes. Dans cet article, nous explorons l'histoire captivante du **rayo vallecano logo** et découvrons ce qui en fait un des designs les plus distinctifs et authentiques de La Liga.
@@ -52,5 +53,4 @@ Le **logo rayo vallecano foot** n'est donc pas simplement un design graphique, m
   keywords: "logo rayo vallecano, rayo vallecano logo, rayo vallecano logo png, logo png rayo vallecano, logo rayo vallecano foot, rayo vallecano foot logo, rayo vallecano logo foot",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 158
 };

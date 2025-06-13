@@ -6,6 +6,7 @@ export const rapidWienLogoPost: BlogPost = {
   title: "Logo Rapid Wien : Histoire, Signification et Évolution du Club Autrichien [2024]",
   excerpt: "Découvrez toute l’histoire et la symbolique du logo Rapid Wien, un blason incontournable du football viennois et européen, disponible en PNG haute qualité.",
   date: "2024-04-21",
+  galleryImageId: 466,
   content: `# L’héritage puissant du **logo rapid wien**
 
 Le **logo rapid wien** constitue aujourd’hui l’un des symboles les plus connus du football autrichien. À travers plus d’un siècle d’histoire, le **rapid wien logo** a évolué tout en conservant son inspiration d’origine et les éléments qui font toute la force de l’identité du SK Rapid. Porter fièrement le **logo sk rapid wien** sur le maillot, c’est défendre des couleurs, une institution et tout un peuple passionné, tant à Vienne qu’à travers l’Europe.
@@ -21,5 +22,4 @@ Qu’il soit utilisé pour illustrer des affiches, décorer des plateformes digi
   keywords: "logo rapid wien, rapid wien logo, logo sk rapid wien, logo rapid vienne, logo rapid vienne png, logo rapid vienne png qualité",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: undefined
 };

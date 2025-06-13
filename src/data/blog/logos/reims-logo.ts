@@ -6,6 +6,7 @@ export const reimsLogoPost: BlogPost = {
   title: "Logo Stade de Reims : Histoire et Design du Club Champenois [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade de Reims : origines, évolution et symbolisme de l'emblème emblématique du club champenois.",
   date: "2024-03-31",
+  galleryImageId: 480,
   content: `# L'Histoire Fascinante du **Logo Stade de Reims**
 
 Le **logo reims** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité régionale qui incarne l'histoire glorieuse et la tradition du football champenois. Plongez dans l'univers visuel captivant du **stade de reims logo**, un écusson qui a su évoluer tout en préservant ses racines profondes.
@@ -54,5 +55,4 @@ Alors que le Stade de Reims poursuit son développement sportif et institutionne
   keywords: "logo reims, logo stade de reims, stade de reims logo, reims football logo, blason reims, ecusson reims, reims foot logo, logo du stade de reims, reims logo, logo reims foot, logo stade de reims png, logo reims png, logo foot reims, logo de reims",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 47
 };

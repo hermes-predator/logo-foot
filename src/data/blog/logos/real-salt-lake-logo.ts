@@ -6,6 +6,7 @@ export const realSaltLakeLogoPost: BlogPost = {
   title: "**Logo Real Salt Lake** : Histoire et Design de l'Emblème de la MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Real Salt Lake**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 474,
   content: `# L'Histoire Fascinante du **Logo Real Salt Lake**
 
 Le **real salt lake logo** est l'un des emblèmes les plus distinctifs de la Major League Soccer (MLS), reflétant à la fois l'héritage du football mondial et l'identité unique de l'Utah. Depuis sa création en 2004, le **logo real salt lake** a su capturer l'essence d'un club qui, bien que relativement jeune dans le paysage du football américain, possède une identité visuelle forte et reconnaissable.
@@ -84,5 +85,4 @@ Que ce soit dans les tribunes du Rio Tinto Stadium, sur les réseaux sociaux ou 
   keywords: "logo real salt lake:20, real salt lake logo:20, logo de foot real salt lake:10, logo real salt lake png:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

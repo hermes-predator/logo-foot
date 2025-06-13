@@ -5,6 +5,7 @@ export const qatarStarsLeagueLogoPost: BlogPost = {
   id: 461,
   title: "**Qatar Stars League Logo** : L'Évolution d'un Emblème du Football Qatari",
   date: "2025-04-27",
+  galleryImageId: 461,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du **qatar stars league logo**, symbole d'excellence du football professionnel qatari. Une analyse approfondie de son design moderne et de sa signification.",
   content: `# L'Histoire du **Qatar Stars League Logo** : L'Excellence du Football Qatari
@@ -36,5 +37,4 @@ Le **qatar star league logo** est devenu un symbole reconnu du développement du
 Le **qatar stars league logo** symbolise la transformation du football qatari et son ambition internationale. Son design sophistiqué et sa symbolique riche en font un emblème parfait pour une ligue qui ne cesse de gagner en prestige et en reconnaissance mondiale.`,
   keywords: "qatar stars league logo, qatar stars league logo png, qatar star league logo, football qatari, championnat qatar",
   subCategory: "competition-logos",
-  galleryImageId: 463
 };

@@ -5,6 +5,7 @@ export const romaniaLogoPost: BlogPost = {
   title: "Logo Roumanie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Roumanie : des origines à aujourd'hui, évolution et signification de l'emblème du football roumain.",
   date: "2024-05-29",
+  galleryImageId: 487,
   content: `# L'Histoire Fascinante du **Logo Roumanie** Football
 
 Le **logo roumanie** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui incarne la fierté et la tradition du football roumain sur la scène internationale. L'évolution du **logo roumanie foot** raconte l'histoire d'un pays dont la passion pour le ballon rond est profondément ancrée dans sa culture sportive.

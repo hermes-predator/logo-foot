@@ -6,6 +6,7 @@ export const samsungsporLogoPost: BlogPost = {
   title: "**Logo Samsunspor** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Samsunspor**, symbole emblématique du club turc, son évolution et sa signification à travers les années.",
   date: "2024-04-21",
+  galleryImageId: 500,
   content: `# L'Histoire du **Logo Samsunspor**
 
 Le **logo samsunspor** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une ville entière et de sa passion pour le football. Le **samsunspor logo** incarne la fierté et l'identité d'un club historique du football turc.
@@ -72,5 +73,4 @@ Le **samsunspor logo** continue d'évoluer :
   keywords: "logo samsunspor, samsunspor logo, logo samsunspor png, football turc, super lig, emblème club turc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 572
 };

@@ -6,6 +6,7 @@ export const rajaCasablancaLogoPost: BlogPost = {
   title: "**Logo Raja Casablanca** : Histoire et Symbolique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Raja Casablanca**, son évolution et sa signification profonde dans le football marocain et africain.",
   date: "2024-04-15",
+  galleryImageId: 464,
   content: `# L'Histoire du **Logo Raja Casablanca**
 
 Le **logo Raja Casablanca** est bien plus qu'un simple emblème - c'est le symbole d'une institution footballistique marocaine légendaire. Fondé en 1949, le club incarne la passion et l'histoire du football nord-africain.
@@ -52,5 +53,4 @@ Le **logo Raja Casablanca PNG** transcende le simple emblème sportif - c'est un
   keywords: "logo de raja casablanca, logo raja casablanca, logo raja casablanca png, raja casablanca logo, raja casablanca logo png, logo du raja de casablanca, logo raja de casablanca",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 432
 };

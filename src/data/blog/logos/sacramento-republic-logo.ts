@@ -6,6 +6,7 @@ export const sacramentoRepublicLogoPost: BlogPost = {
   title: "Sacramento Republic Logo : Histoire et Signification de l'Emblème de MLS",
   excerpt: "Découvrez l'histoire fascinante du logo de Sacramento Republic FC, emblème distinctif de ce club américain avec sa symbolique californienne et son design moderne.",
   date: "2025-04-14",
+  galleryImageId: 495,
   content: `
 # L'Histoire du **Sacramento Republic Logo** : Un Emblème Californien Emblématique
 

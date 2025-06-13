@@ -6,6 +6,7 @@ export const salernitanaLogoPost: BlogPost = {
   title: "Logo Salernitana : Histoire et Design de l'Emblème Italien [2025]",
   excerpt: "Découvrez l'histoire complète du logo Salernitana : des origines à aujourd'hui, évolution et signification de l'emblème de ce club historique du football italien.",
   date: "2024-04-20",
+  galleryImageId: 498,
   content: `# L'Histoire Fascinante du Logo Salernitana
 
 Le **logo Salernitana** est bien plus qu'un simple emblème : c'est un symbole d'identité et de fierté pour un club aux racines profondément ancrées dans l'histoire du football italien. Plongeons dans l'évolution captivante de ce **salernitana logo** qui représente aujourd'hui l'une des identités visuelles les plus caractéristiques de la Serie A.
@@ -42,5 +43,4 @@ La présence digitale croissante du club donne au **logo salernitana** une visib
   keywords: "logo salernitana, salernitana fc logo, salernitana logo, us salernitana logo, logo salernitana 2025, emblème salernitana, blason salernitana, ecusson salernitana, salernitana football logo, symbole salernitana, logo us salernitana, salerno football club logo, club italien logo, serie a logo club",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 150
 };

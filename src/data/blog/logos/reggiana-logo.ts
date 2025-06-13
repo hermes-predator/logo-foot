@@ -6,6 +6,7 @@ export const reggianaLogoPost: BlogPost = {
   title: "Logo Reggiana : Histoire et Évolution de l'Emblème du Club Italien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Reggiana, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-17",
+  galleryImageId: 479,
   content: `# L'Histoire Fascinante du **Reggiana Logo** : Évolution et Symbolisme
 
 Le **reggiana logo** représente l'identité visuelle d'un club de football italien dont l'histoire est profondément ancrée dans la ville de Reggio Emilia. Dans cet article, nous explorerons en détail l'histoire, l'évolution et la signification symbolique du **logo reggiana** qui incarne l'âme et les traditions de cette équipe emblématique d'Émilie-Romagne.

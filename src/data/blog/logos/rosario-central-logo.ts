@@ -6,6 +6,7 @@ export const rosarioCentralLogoPost: BlogPost = {
   title: "**Logo Rosario Central** : Histoire de l'Emblème Canaya [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Rosario Central**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **Rosario Central logo**.",
   date: "2024-04-22",
+  galleryImageId: 488,
   content: `# L'Histoire Fascinante du **Logo Rosario Central**
 
 Le **logo Rosario Central** représente plus qu'un simple emblème sportif : c'est le symbole d'une institution centenaire du football argentin. Depuis sa création en 1889, le Club Atlético Rosario Central a développé une identité visuelle qui reflète son histoire riche et sa passion pour le football.

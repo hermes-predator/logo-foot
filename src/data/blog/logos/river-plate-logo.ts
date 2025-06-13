@@ -6,6 +6,7 @@ export const riverPlateLogoPost: BlogPost = {
   title: "Logo River Plate : Histoire et Évolution de l'Emblème Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de River Plate, l'un des plus emblématiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",
   date: "2025-04-09",
+  galleryImageId: 484,
   content: `# L'Histoire Fascinante du **Logo River Plate**
 
 Le **logo River Plate** est bien plus qu'un simple emblème de football : c'est un symbole d'identité, de tradition et d'excellence qui représente l'un des clubs les plus prestigieux d'Argentine et d'Amérique du Sud. Plongeons dans l'histoire captivante de ce **river plate logo** qui a traversé plus d'un siècle d'existence.
@@ -129,5 +130,4 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
   category: "logos",
   subCategory: "southAmericanClubs",
   keywords: "logo river plate, river plate logo, river plate logo png, logo de river plate, logo de foot river plate, logo river plate nouveau, river plate evolution logo",
-  galleryImageId: 544,
 };

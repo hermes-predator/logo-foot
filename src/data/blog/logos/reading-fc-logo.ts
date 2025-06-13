@@ -6,6 +6,7 @@ export const readingFcLogoPost: BlogPost = {
   title: "**Reading FC Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Reading Football Club**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
+  galleryImageId: 470,
   content: `
 # **Reading Football Club Logo** : Histoire et Symbolisme
 
@@ -77,5 +78,4 @@ Le **logo Reading** reste un symbole puissant qui transcende le simple cadre spo
   keywords: "**logo reading**:20, **reading fc logo**:20, **reading football club logo**:20, **reading logo**:20, **reading logo png**:20, **logo reading fc**:10, **reading club logo**:10, **reading fc logo png**:10, **reading logo football**:10",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 363
 };

@@ -6,6 +6,7 @@ export const sanktPauliLogoPost: BlogPost = {
   title: "Logo Sankt Pauli : Histoire et Symbolisme du FC St. Pauli",
   excerpt: "Découvrez l'histoire et la signification du logo Sankt Pauli, emblème de résistance et d'identité sociale du club allemand de Hambourg. Analyse complète de ce symbole fort du football allemand.",
   date: "2024-05-28",
+  galleryImageId: 503,
   content: `# Histoire et Signification du Logo Sankt Pauli
 
 Le **logo Sankt Pauli** est bien plus qu'un simple emblème sportif - c'est un symbole de contre-culture, de résistance et d'inclusivité qui transcende le cadre du football. Dans cet article, nous explorons l'histoire fascinante et la signification profonde derrière l'identité visuelle de ce club culte.

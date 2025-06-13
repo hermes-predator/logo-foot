@@ -21,16 +21,18 @@ const FloatingCTAContainer = () => {
 
   if (!visible || dismissed || !isAtBottom) return null;
 
-  // Calculate transform based on scroll progress for natural sliding
-  const translateY = Math.max(0, (1 - scrollProgress) * 100);
+  // Calculate transform with very slow sliding effect - more gradual curve
+  const translateY = Math.max(0, (1 - Math.pow(scrollProgress, 0.3)) * 100);
+  // Slow opacity fade-in that starts earlier
+  const opacity = Math.min(1, Math.pow(scrollProgress, 0.5) * 1.2);
 
   return (
     <div 
       className="fixed bottom-0 left-0 right-0 z-50 will-change-transform will-change-opacity"
       style={{
         transform: `translateY(${translateY}%)`,
-        opacity: Math.min(1, scrollProgress * 1.5),
-        transition: 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-out',
+        opacity: opacity,
+        transition: 'transform 1.2s cubic-bezier(0.23, 1, 0.32, 1), opacity 1.5s ease-out',
       }}
     >
       {/* Similar gradient to BlogHeader */}

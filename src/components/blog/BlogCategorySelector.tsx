@@ -23,9 +23,9 @@ const BlogCategorySelector = ({
         {/* Effet de brillance subtil */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_3s_ease-in-out_infinite] pointer-events-none"></div>
         
-        {/* Cercles décoratifs avec animation plus douce */}
-        <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full opacity-20 -mr-20 -mt-20 animate-floating"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10 animate-floating" style={{ animationDelay: '1s' }}></div>
+        {/* Cercles décoratifs statiques */}
+        <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full opacity-20 -mr-20 -mt-20"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10"></div>
         
         <h2 className="text-lg font-semibold text-gray-800 mb-4 text-left flex items-center gap-2 relative z-10">
           <BookOpen className="h-5 w-5 text-black" />
@@ -41,7 +41,7 @@ const BlogCategorySelector = ({
           ) : (
             <Link 
               to="/blog" 
-              className="px-4 py-2 rounded-full text-sm transition-all duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg hover:scale-105 hover:border-blue-200 hover:bg-blue-50"
+              className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg"
             >
               Tout
             </Link>
@@ -60,7 +60,7 @@ const BlogCategorySelector = ({
               <Link 
                 key={key} 
                 to={`/blog?category=${key}`} 
-                className="px-4 py-2 rounded-full text-sm transition-all duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg hover:scale-105 hover:border-blue-200 hover:bg-blue-50"
+                className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg"
               >
                 {category.name}
               </Link>

@@ -6,6 +6,7 @@ export const spartakTrnavaLogoPost: BlogPost = {
   title: "**Logo Spartak Trnava** : Histoire et Évolution de l'Emblème Slovaque [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Spartak Trnava logo**, son évolution à travers les années et la symbolique derrière cet emblème historique du football slovaque.",
   date: "2024-04-15",
+  galleryImageId: 535,
   content: `# L'Histoire du **Spartak Trnava Logo**
 
 Le **Spartak Trnava logo** représente l'un des clubs les plus titrés et les plus historiques du football slovaque. Fondé en 1923, le club a toujours porté fièrement ses couleurs rouge et noir qui se reflètent dans son emblème distinctif.
@@ -44,5 +45,4 @@ Le **Spartak Trnava logo** est plus qu'un simple emblème - c'est un symbole qui
   keywords: "spartak trnava logo, logo fc spartak trnava",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 430
 };

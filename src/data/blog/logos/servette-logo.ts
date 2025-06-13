@@ -6,6 +6,7 @@ export const servetteLogoPost: BlogPost = {
   title: "Logo Servette FC : Histoire et Signification de l'Emblème Genevois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Servette FC, son évolution depuis 1890 et la symbolique derrière l'emblème du plus ancien club de football suisse.",
   date: "2024-04-15",
+  galleryImageId: 517,
   content: `# L'Histoire Passionnante du Logo Servette FC
 
 Le **logo servette** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une institution historique du football suisse. Le **servette logo** incarne l'histoire et les traditions d'un club fondé en 1890, faisant du Servette FC l'un des plus anciens clubs de Suisse.
@@ -36,5 +37,4 @@ Le logo du Servette FC est plus qu'un simple emblème sportif : c'est un symbole
   keywords: "logo fc servette, logo servette, logo servette fc, servette fc logo, servette logo, servette logo png, fc servette logo, logo servette fc 1890, logo servette fc png, logo servette geneve, logo servette geneve fc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 421
 };

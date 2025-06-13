@@ -5,6 +5,7 @@ export const serbiaLogoPost: BlogPost = {
   title: "Logo Serbie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Serbie : des origines à aujourd'hui, évolution et signification de l'emblème du football serbe.",
   date: "2024-05-26",
+  galleryImageId: 515,
   content: `# L'Histoire Fascinante du **Logo Serbie** Football
 
 Le **logo serbie** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui représente la fierté et la tradition du football serbe sur la scène internationale. L'évolution du **serbie logo** raconte l'histoire d'un pays dont la passion pour le ballon rond est profondément ancrée dans sa culture.

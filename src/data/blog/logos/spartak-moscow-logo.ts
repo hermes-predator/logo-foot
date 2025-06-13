@@ -6,6 +6,7 @@ export const spartakMoscowLogoPost: BlogPost = {
   title: "**Logo Spartak Moscou** : Histoire et Symbolisme de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Spartak Moscou, un symbole emblématique du football russe qui incarne la tradition et la passion.",
   date: "2024-04-15",
+  galleryImageId: 534,
   content: `# Histoire du **Spartak Moscou Logo**
 
 Le **logo Spartak Moscou** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'histoire, les valeurs et la tradition d'un des clubs les plus prestigieux de Russie. Le **logo de foot Spartak Moscou Russie** représente l'identité d'une institution qui a marqué l'histoire du football européen.
@@ -76,5 +77,4 @@ Le **logo Spartak Moscou** s'adapte à de nombreux supports :
   keywords: "logo spartak moscou, spartak moscou logo, logo de foot spartak moscou russie, logo foot spartak moscou, logo spartak moscou png, emblème spartak moscou, écusson spartak moscou, spartak moscow logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 557
 };

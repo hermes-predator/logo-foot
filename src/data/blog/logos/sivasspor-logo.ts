@@ -6,6 +6,7 @@ export const sivassporLogoPost: BlogPost = {
   title: "**Logo Sivasspor** : Histoire et Évolution de l'Emblème du Club Turc [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Sivasspor**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
+  galleryImageId: 522,
   content: `# L'Histoire Fascinante du **Logo Sivasspor**
 
 Le **sivasspor logo** représente bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité et la fierté d'une ville entière. Le **logo sivasspor** raconte l'histoire d'un club qui s'est imposé comme l'une des forces majeures du football turc.
@@ -76,5 +77,4 @@ Le **logo sivasspor** s'exprime sur de multiples supports :
   keywords: "logo sivasspor, sivasspor logo, sivasspor logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 568
 };

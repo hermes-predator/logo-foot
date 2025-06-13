@@ -6,6 +6,7 @@ export const shakhtarDonetskLogoPost: BlogPost = {
   title: "Logo Shakhtar Donetsk : Histoire et Design de l'Emblème Ukrainien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Shakhtar Donetsk : des origines à aujourd'hui, évolution et signification de l'emblème orange et noir du club ukrainien.",
   date: "2024-06-18",
+  galleryImageId: 519,
   content: `# L'Histoire Fascinante du **Logo Shakhtar Donetsk**
 
 Le **logo Shakhtar Donetsk** est bien plus qu'un simple emblème de club de football : c'est un symbole qui représente l'identité, l'histoire et la résilience d'une équipe qui s'est imposée comme l'une des plus importantes d'Ukraine et d'Europe de l'Est. Dans cet article, nous explorons l'histoire fascinante du **shakhtar donetsk logo** et découvrons ce qui en fait un design aussi marquant dans le paysage footballistique européen.
@@ -64,5 +65,4 @@ Alors que le club continue d'écrire son histoire sur la scène nationale et eur
   keywords: "logo shakhtar donetsk, shakhtar donetsk logo, logo shakhtar, logo shakhtar donetsk png, logo shakhtar png, shakhtar donetsk logo png, shakhtar logo, shakhtar logo png, fc shakhtar donetsk logo png, logo shakhtar signification",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 280
 };

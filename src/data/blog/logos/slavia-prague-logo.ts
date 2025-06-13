@@ -6,6 +6,7 @@ export const slaviaPragueLogoPost: BlogPost = {
   title: "Analyse du Logo du Slavia Prague : Histoire et Symbolisme [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du Slavia Prague, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-05",
+  galleryImageId: 523,
   content: `# L'Histoire Fascinante du **Logo Slavia Prague**
 
 Le **Slavia Prague logo** est l'un des emblèmes les plus reconnaissables du football tchèque, représentant un club historique fondé en 1892. Ce symbole iconique incarne plus d'un siècle de tradition, de passion et d'excellence sportive. Plongeons dans l'univers passionnant du **logo Slavia Prague** pour comprendre sa riche histoire et son importance culturelle.

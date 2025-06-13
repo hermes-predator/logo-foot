@@ -6,6 +6,7 @@ export const slovanBratislavaLogoPost: BlogPost = {
   title: "Logo Slovan Bratislava : Histoire et Symbolisme de l'Emblème du Club Slovaque",
   excerpt: "Découvrez l'histoire et l'évolution du logo du Slovan Bratislava, le plus grand club de football slovaque, symbole de l'identité nationale et sportive du pays.",
   date: "2024-04-08",
+  galleryImageId: 525,
   content: `# Histoire et Évolution du **Logo Slovan Bratislava**
 
 Le **ŠK Slovan Bratislava** est le club le plus titré et le plus populaire de Slovaquie. Son emblème est reconnaissable dans tout le pays et représente une partie importante de l'héritage sportif slovaque. Dans cet article, nous allons explorer l'histoire fascinante et l'évolution du **logo Slovan Bratislava** au fil des années.
@@ -67,5 +68,4 @@ Pour les amateurs d'histoire du football et de design de logo, le **logo SK Slov
   keywords: "logo slovan bratislava, slovan bratislava logo, logo sk slovan bratislava, slovan bratislava logo png, šk slovan bratislava logo, hc slovan bratislava logo, emblème slovan bratislava, histoire logo slovan bratislava, symbole club football slovaque, équipe football slovaque",
   category: 'logos',
   subCategory: 'european-clubs',
-  galleryImageId: 51
 };

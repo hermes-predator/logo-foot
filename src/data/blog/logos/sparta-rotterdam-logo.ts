@@ -6,6 +6,7 @@ export const spartaRotterdamLogoPost: BlogPost = {
   title: "**Logo Sparta Rotterdam** : Histoire et Évolution de l'Emblème Historique [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Sparta Rotterdam logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
+  galleryImageId: 533,
   content: `# Histoire du **Logo Sparta Rotterdam**
 
 Le **logo Sparta Rotterdam** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité et l'héritage d'un club historique du football néerlandais. Reconnaissable entre tous, le **logo sparta rotterdam** représente la fierté d'une ville et d'une tradition footballistique riche.
@@ -83,5 +84,4 @@ Le **logo Sparta Rotterdam** reste un symbole puissant du football néerlandais,
   keywords: "logo sparta rotterdam, sparta rotterdam logo, logo sparta rotterdam png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9334
 };

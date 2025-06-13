@@ -5,6 +5,7 @@ export const saudiArabiaLogoPost: BlogPost = {
   id: 506,
   title: "**Logo Arabie Saoudite** : Histoire et Symbolisme de l'Emblème des Faucons Verts [2024]",
   date: '2025-04-26',
+  galleryImageId: 506,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Arabie Saoudite : un symbole puissant qui incarne la tradition et les ambitions du football saoudien.",
   content: `# L'Histoire Fascinante du **Logo Arabie Saoudite**

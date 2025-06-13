@@ -5,6 +5,7 @@ export const slovakiaLogoPost: BlogPost = {
   title: "Logo Slovaquie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Slovaquie : des origines à aujourd'hui, évolution et signification de l'emblème du football slovaque.",
   date: "2024-05-31",
+  galleryImageId: 524,
   content: `# L'Histoire Fascinante du **Logo Slovaquie** Football
 
 Le **logo slovaquie** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui incarne la fierté et la tradition du football slovaque sur la scène internationale. L'évolution du **logo slovaquie foot** raconte l'histoire d'un pays dont la passion pour le ballon rond s'est développée particulièrement depuis son indépendance en 1993.
@@ -53,5 +54,4 @@ Les joueurs qui portent fièrement le maillot orné du **logo slovaquie foot** s
   keywords: "logo slovaquie, logo foot slovaquie, logo slovaquie foot, logo club foot slovaquie, logo club football slovaquie, logo de la slovaquie",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 165
 };

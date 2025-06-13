@@ -6,6 +6,7 @@ export const scHeerenveenLogoPost: BlogPost = {
   title: "**Logo Heerenveen** : Histoire et Évolution de l'Emblème du SC Heerenveen [2024]",
   excerpt: "Découvrez l'histoire fascinante du **SC Heerenveen logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
+  galleryImageId: 509,
   content: `# Histoire du **Logo Heerenveen**
 
 Le **heerenveen logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs les plus emblématiques de la Frise, aux Pays-Bas. Le **logo heerenveen** incarne la fierté et la tradition d'une institution profondément ancrée dans sa région.
@@ -52,5 +53,4 @@ Le logo du SC Heerenveen est bien plus qu'un simple emblème - c'est le témoin 
   keywords: "heerenveen logo, logo heerenveen, sc heerenveen logo, logo sc heerenveen, sc heerenveen logo png, logo de foot heerenveen pays bas",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9335
 };

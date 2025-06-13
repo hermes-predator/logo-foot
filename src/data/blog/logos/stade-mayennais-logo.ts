@@ -6,6 +6,7 @@ export const stadeMayennaisLogoPost: BlogPost = {
   title: "**Logo Stade Mayennais** : Histoire et Évolution [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Stade Mayennais FC**, son évolution à travers les époques et son importance dans l'identité du club mayennais.",
   date: "2024-04-18",
+  galleryImageId: 540,
   content: `# Histoire du **Logo Stade Mayennais**
 
 Le **logo Stade Mayennais FC** représente l'identité visuelle d'un club historique du football français. À travers son design, il incarne les valeurs et l'héritage du club mayennais.
@@ -78,5 +79,4 @@ Le **logo Stade Mayennais FC** continue d'influencer :
 Le **logo Stade Mayennais** demeure un symbole fort de l'identité du club, conjuguant tradition et modernité dans son expression visuelle.`,
   keywords: "logo stade mayennais, logo stade mayennais fc",
   category: 'logos',
-  galleryImageId: 9325
 };

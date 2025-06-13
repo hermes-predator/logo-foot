@@ -5,6 +5,7 @@ export const southKoreaLogoPost: BlogPost = {
   title: "Logo Corée du Sud : Histoire et Symbolisme de l'Emblème du Football Coréen",
   excerpt: "Découvrez l'histoire fascinante du logo de la Corée du Sud : origines, évolution et symbolisme de cet emblème unique du football asiatique. Analyse complète du logo de la fédération coréenne.",
   date: "2024-05-12",
+  galleryImageId: 529,
   content: `# **Logo Corée du Sud** : L'Histoire de l'Emblème du Football Coréen
 
 ![**Logo Corée du Sud**](https://logo-foot.com/blog-images/511.png)

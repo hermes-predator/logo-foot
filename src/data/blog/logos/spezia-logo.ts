@@ -6,6 +6,7 @@ export const speziaLogoPost: BlogPost = {
   title: "Logo Spezia Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Spezia Calcio : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-12",
+  galleryImageId: 536,
   content: `# L'Histoire Fascinante du **Logo Spezia**
 
 Le **spezia logo** représente bien plus qu'un simple symbole visuel : il incarne l'identité, l'histoire et les valeurs d'un club de football italien aux racines profondes. Dans cet article, nous explorons l'évolution captivante du **logo la spezia** à travers les décennies et son importance pour les supporters du club ligure.
@@ -70,5 +71,4 @@ Pour les générations futures de supporters du Spezia, le **spezia logo png** c
   keywords: "logo la spezia, la spezia logo, logo spezia, logo spezia calcio, spezia calcio logo, spezia logo, spezia calcio logo png, spezia logo png, la spezia calcio logo, logo club de foot italien spezia, logo de foot la spezia, logo spezia png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 200
 };

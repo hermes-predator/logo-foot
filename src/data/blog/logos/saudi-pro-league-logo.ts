@@ -5,6 +5,7 @@ export const saudiProLeagueLogoPost: BlogPost = {
   title: "Le Logo Saudi Pro League : Histoire et Évolution du Championnat Saoudien [2024]",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Saudi Pro League, l'emblème du championnat de football le plus prestigieux d'Arabie Saoudite. Analyse complète de son design et de sa signification.",
   date: "2024-04-08",
+  galleryImageId: 508,
   content: `# **Logo Saudi Pro League** : Histoire et Évolution de l'Emblème du Football Saoudien
 
 ## L'histoire fascinante du **Saudi Pro League logo**

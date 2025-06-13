@@ -5,6 +5,7 @@ export const sheriffTiraspolLogoPost: BlogPost = {
   id: 521, // ID unique pour cet article
   title: "Sheriff Tiraspol Logo : Histoire et Signification de l'Emblème Moldave [2024]",
   date: "2025-04-11",
+  galleryImageId: 521,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
   excerpt: "Découvrez l'histoire fascinante et la signification du logo Sheriff Tiraspol, emblème emblématique du club de football moldave. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de ce club phare de Moldavie.",
@@ -158,5 +159,4 @@ La combinaison distinctive de jaune et noir, centrée sur une étoile de shérif
 
 À mesure que le club poursuit son ascension sportive, son emblème continuera d'évoluer tout en préservant l'essence qui en fait un design si particulier dans le paysage du football européen. Le **logo Sheriff Tiraspol** reste ainsi un parfait exemple de la façon dont un emblème sportif peut incarner l'âme et les aspirations d'un club, d'une ville et d'une région tout entière.`,
   keywords: "Sheriff Tiraspol logo, logo Sheriff Tiraspol, sheriff tiraspol logo png, logo club sheriff tiraspol, logo png sheriff tiraspol, sheriff tiraspol logo jpeg",
-  galleryImageId: null // À remplacer avec l'ID de l'image quand disponible
 };

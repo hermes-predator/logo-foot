@@ -6,6 +6,7 @@ export const schalke04LogoPost: BlogPost = {
   title: "Logo Schalke 04 : Histoire et Design de l'Emblème Allemand FC Schalke 04 [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Schalke 04 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-12",
+  galleryImageId: 510,
   content: `# L'Histoire Fascinante du Logo FC Schalke 04
 
 Le **schalke 04 logo** est l'un des emblèmes les plus reconnaissables du football allemand. Représentant un club historique de la Bundesliga, le **logo schalke 04** est bien plus qu'un simple design – c'est un symbole d'identité, de tradition et de fierté pour des millions de supporters à travers le monde.
@@ -60,5 +61,4 @@ Quelles que soient ces évolutions futures, le **logo fc schalke 04** restera ce
   keywords: "schalke 04 logo, logo schalke 04, fc schalke 04 logo, logo fc schalke 04, schalke 04 logo png, logo schalke 04 png, fc schalke 04 logo foot, fc schalke 04 logo png, logo de schalke 04, logo foot schalke 04, logo png schalke 04",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 92
 };

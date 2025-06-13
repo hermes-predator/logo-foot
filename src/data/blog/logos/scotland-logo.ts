@@ -5,6 +5,7 @@ export const scotlandLogoPost: BlogPost = {
   title: "Logo Ecosse : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ecosse : des origines à aujourd'hui, évolution et signification de l'emblème du football écossais.",
   date: "2024-05-28",
+  galleryImageId: 511,
   content: `# L'Histoire Fascinante du **Logo Ecosse** Football
 
 Le **logo ecosse** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en traditions et en émotions. Le **ecosse logo** représente l'âme d'un pays où le football est intimement lié à l'identité nationale et à la culture populaire.

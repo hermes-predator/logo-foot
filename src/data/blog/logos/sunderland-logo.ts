@@ -6,6 +6,7 @@ export const sunderlandLogoPost: BlogPost = {
   title: "Logo Sunderland AFC : Histoire et Design de l'Emblème des Black Cats [2024]",
   excerpt: "Découvrez l'histoire complète du logo Sunderland AFC : des origines à aujourd'hui, évolution et signification de l'emblème du club historique anglais.",
   date: "2024-05-22",
+  galleryImageId: 550,
   content: `# L'Histoire Fascinante du Logo Sunderland
 
 Le **sunderland logo** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'identité, les valeurs et l'histoire d'un club emblématique du football anglais. Plongeons dans l'histoire captivante de ce **sunderland afc logo** qui représente l'une des institutions les plus anciennes et respectées du football britannique.
@@ -48,5 +49,4 @@ Cette capacité à se réinventer tout en restant fidèle à ses racines fait du
   keywords: "sunderland afc logo, sunderland fc logo, sunderland logo, logo sunderland png, sunderland logo png, logo sunderland, sunderland afc logo png, equipe sunderland logo, nouveau logo sunderland, sunderland logo jpg",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 157
 };

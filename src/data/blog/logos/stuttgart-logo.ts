@@ -6,6 +6,7 @@ export const stuttgartLogoPost: BlogPost = {
   title: "Logo Stuttgart : Histoire et Évolution de l'Emblème VfB [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Stuttgart, l'évolution de l'emblème du VfB Stuttgart et la signification de ses symboles emblématiques du club allemand.",
   date: "2024-05-25",
+  galleryImageId: 549,
   content: `# L'Histoire Fascinante du **Logo Stuttgart**
 
 Le **logo stuttgart** est bien plus qu'un simple emblème sportif : c'est le symbole d'une riche tradition footballistique allemande et l'identité visuelle d'un club historique de la Bundesliga. À travers cet article, nous explorerons l'évolution et la signification du **stuttgart logo** qui représente fièrement le club depuis sa création.
@@ -64,5 +65,4 @@ Alors que le club poursuit son parcours dans l'élite du football allemand et eu
   keywords: "logo stuttgart, stuttgart logo, logo vfb stuttgart, vfb stuttgart logo, logo de stuttgart, logo stuttgart fc, logo stuttgart png, stuttgart fc logo, stuttgart logo png, vfb stuttgart logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 131
 };

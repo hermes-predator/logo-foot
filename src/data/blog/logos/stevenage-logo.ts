@@ -5,6 +5,7 @@ export const stevenageLogoPost: BlogPost = {
   id: 544,
   title: "**Logo Stevenage FC** : Histoire et Évolution de l'Emblème des Boro [2024]",
   date: "2025-04-13",
+  galleryImageId: 544,
   category: "logos",
   subCategory: "english-clubs",
   excerpt: "Découvrez l'histoire fascinante du **logo Stevenage**, son évolution et la symbolique de cet emblème unique du football anglais.",
@@ -41,5 +42,4 @@ Le **logo Stevenage** est utilisé dans divers contextes :
 
 Le **logo Stevenage FC** est un symbole vivant de l'histoire et de l'ambition du club.`,
   keywords: "stevenage logo:20, stevenage fc logo:10, logo stevenage fc:10, stevenage logo png:10",
-  galleryImageId: null
 };

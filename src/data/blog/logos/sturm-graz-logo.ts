@@ -5,6 +5,7 @@ export const sturmGrazLogoPost: BlogPost = {
   id: 548, // ID unique pour cet article
   title: "Sturm Graz Logo : Histoire et Signification de l'Emblème Autrichien [2024]",
   date: "2025-04-11",
+  galleryImageId: 548,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
   excerpt: "Découvrez l'histoire fascinante et la signification du logo Sturm Graz, emblème emblématique du club de football autrichien. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de ce club phare d'Autriche.",
@@ -158,5 +159,4 @@ La combinaison distinctive noir et blanc, centrée sur un design élégant et tr
 
 À mesure que le club poursuit son ascension sportive, son emblème continuera d'évoluer tout en préservant l'essence qui en fait un design si particulier dans le paysage du football européen. Le **logo sturm graz** reste ainsi un parfait exemple de la façon dont un emblème sportif peut incarner l'âme et les aspirations d'un club, d'une ville et d'une région tout entière.`,
   keywords: "logo sturm graz, sturm graz logo, logo sk sturm graz, sk sturm graz logo, sturm graz logo png, sk sturm graz logo png, sturm graz logos",
-  galleryImageId: null // À remplacer avec l'ID de l'image quand disponible
 };

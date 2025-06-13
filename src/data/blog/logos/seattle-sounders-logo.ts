@@ -6,6 +6,7 @@ export const seattleSoundersLogoPost: BlogPost = {
   title: "**Logo Seattle Sounders** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Seattle Sounders**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
+  galleryImageId: 513,
   content: `# L'Histoire Fascinante du **Logo Seattle Sounders**
 
 Le **seattle sounders logo** est devenu l'un des emblèmes les plus reconnaissables et appréciés de la Major League Soccer (MLS). Depuis la création du club en 2007 et son entrée en MLS en 2009, le **seattle sounders fc logo** a su capturer l'essence de la ville de Seattle et de sa passion pour le football, devenant un symbole culturel bien au-delà des terrains.
@@ -74,5 +75,4 @@ Plus qu'un simple emblème, le **seattle sounders logo png** est devenu un symbo
   keywords: "logo seattle sounders:20, seattle sounders fc logo:20, seattle sounders logo:20, seattle sounders logo png:20, logo de foot seattle sounders:20, seattle sounders logos:10, seattles sounders logo png:10",
   category: 'logos',
   subCategory: 'non-european-clubs',
-  galleryImageId: null
 };

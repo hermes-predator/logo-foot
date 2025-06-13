@@ -5,6 +5,7 @@ export const stockportCountyLogoPost: BlogPost = {
   id: 545,
   title: "**Stockport County Logo** : Histoire et Signification de l'Emblème [2024]",
   date: "2025-04-13",
+  galleryImageId: 545,
   category: "logos",
   subCategory: "club-logos",
   excerpt: "Découvrez l'histoire fascinante du **Stockport County logo**. Analyse détaillée de l'emblème emblématique du club anglais, symboles, couleurs et évolution du **Stockport County logo PNG** au fil des ans.",
@@ -98,6 +99,5 @@ Le **Stockport County logo** est bien plus qu'un simple dessin ou emblème - c'e
 
 À travers ses différentes itérations, le **Stockport County logo** a évolué tout en conservant son essence, témoignant de la capacité du club à s'adapter aux changements tout en honorant ses racines. Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les produits dérivés officiels, le **Stockport County logo PNG** continue de jouer un rôle central dans l'identité visuelle et émotionnelle de ce club historique du football anglais.`,
   keywords: "stockport county logo, stockport county logo png, stockport fc logo, stockport football club, hatters logo, stockport badge, stockport county badge, stockport county fc, stockport emblem, football logo design, english football club logos, greater manchester football clubs",
-  galleryImageId: null
 };
 

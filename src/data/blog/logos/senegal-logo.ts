@@ -5,6 +5,7 @@ export const senegalLogoPost: BlogPost = {
   title: "Logo Sénégal : Histoire et Design de l'Emblème des Lions de la Teranga [2024]",
   excerpt: "Découvrez l'histoire complète du logo Sénégal : des origines à aujourd'hui, évolution et signification de l'emblème des Lions de la Teranga, symbole du football sénégalais.",
   date: "2024-05-31",
+  galleryImageId: 514,
   content: `# L'Histoire Fascinante du **Logo Sénégal**
 
 Le **logo sénégal** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne la fierté nationale, l'excellence et l'identité d'une nation africaine qui s'est imposée comme l'une des puissances majeures du football continental. Dans cet article approfondi, nous explorons l'histoire captivante du **sénégal logo** et découvrons ce qui fait de ce blason un emblème si spécial pour le peuple sénégalais et les amateurs de football du monde entier.
@@ -67,5 +68,4 @@ Que ce soit dans sa version officielle utilisée par la fédération ou dans ses
   keywords: "logo sénégal, logo du sénégal, logo république du sénégal, logo sénégal png, sénégal logo, logo de l'équipe de football du sénégal, logo foot sénégal, logo football sénégal, sénégal foot logo, équipe du sénégal de football logo, équipe foot sénégal logo",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 166
 };

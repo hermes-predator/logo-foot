@@ -6,6 +6,7 @@ export const stadeBriochinLogoPost: BlogPost = {
   title: "Logo Stade Briochin : Histoire et Symbolisme du Blason Breton [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Stade Briochin : des origines à aujourd'hui, l'évolution de l'emblème du club breton et sa signification culturelle.",
   date: "2024-04-14",
+  galleryImageId: 539,
   content: `Guide Complet du **Logo Stade Briochin**
 
 Le **stade briochin logo** représente l'identité visuelle d'un club emblématique de Bretagne. Fondé en 1907, le Stade Briochin affiche fièrement un emblème qui symbolise l'histoire et les valeurs de cette institution sportive bretonne.

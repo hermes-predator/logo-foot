@@ -6,6 +6,7 @@ export const sevillaFcLogoPost: BlogPost = {
   title: "Logo FC Séville : Histoire et Design de l'Emblème Andalou [2024]",
   excerpt: "Découvrez l'histoire complète du logo du FC Séville : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club andalou.",
   date: "2024-05-28",
+  galleryImageId: 518,
   content: `# L'Histoire Fascinante du **Logo Séville**
 
 Le **fc séville logo** est bien plus qu'un simple emblème sportif : c'est un symbole riche d'histoire qui incarne la tradition, la passion et l'identité d'un des clubs les plus prestigieux d'Espagne. Dans cet article, nous explorons l'histoire captivante du **séville logo** et découvrons ce qui en fait un design emblématique du football européen.
@@ -60,6 +61,5 @@ Pour les spécialistes du branding sportif qui étudient le **logo foot fc sévi
   keywords: "fc séville logo, logo séville, séville logo, logo de séville, logo fc séville, logo fc séville png, logo foot fc séville, logo séville fc, logo séville png, séville logo png, fc séville logo hd",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 161
 };
 

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Loader, BookOpen } from 'lucide-react';
@@ -24,7 +25,7 @@ const BlogCategorySelector = ({
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-[shimmer_3s_ease-in-out_infinite] pointer-events-none"></div>
         
         {/* Cercles décoratifs statiques */}
-        <div className="absolute top-0 right-8 w-20 h-20 bg-indigo-200 rounded-full opacity-35 -mr-10 -mt-10"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-200 rounded-full opacity-35 -mr-10 -mt-10"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10"></div>
         
         
@@ -81,3 +82,4 @@ const BlogCategorySelector = ({
 };
 
 export default BlogCategorySelector;
+

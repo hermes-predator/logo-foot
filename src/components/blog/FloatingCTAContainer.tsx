@@ -23,11 +23,11 @@ const FloatingCTAContainer = () => {
 
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-700 ease-out will-change-transform will-change-opacity"
+      className={`fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-500 ease-out will-change-transform will-change-opacity ${
+        visible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+      }`}
       style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? 'translateY(0)' : 'translateY(100%)',
-        animation: visible ? 'slideInUp 0.7s ease-out forwards' : 'none',
+        animation: visible ? 'slideUpSmooth 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' : 'none',
       }}
     >
       {/* Similar gradient to BlogHeader */}

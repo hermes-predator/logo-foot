@@ -212,7 +212,7 @@
   will-change: opacity, transform;
 }
 
-/* Animation d'entrée pour la bannière CTA */
+/* Animation d'entrée pour la bannière CTA - ancienne version plus brusque */
 @keyframes slideInUp {
   0% {
     transform: translateY(100%);
@@ -227,6 +227,18 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Nouvelle animation plus douce pour la bannière CTA */
+@keyframes slideUpSmooth {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

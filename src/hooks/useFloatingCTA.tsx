@@ -25,16 +25,21 @@ export const useFloatingCTA = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Show banner with delay only when at bottom
+  // Show banner with smoother delay when at bottom
   useEffect(() => {
     if (isAtBottom && !dismissed) {
       const showBannerTimer = setTimeout(() => {
         setVisible(true);
-      }, 500);
+      }, 300); // Reduced delay for smoother experience
       
       return () => clearTimeout(showBannerTimer);
     } else {
-      setVisible(false);
+      // Add a small delay before hiding to avoid flickering
+      const hideBannerTimer = setTimeout(() => {
+        setVisible(false);
+      }, 100);
+      
+      return () => clearTimeout(hideBannerTimer);
     }
   }, [isAtBottom, dismissed]);
 

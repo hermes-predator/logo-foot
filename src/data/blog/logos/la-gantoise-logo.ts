@@ -6,6 +6,7 @@ export const laGantoiseLogoPost: BlogPost = {
   title: "Logo La Gantoise : Histoire et Signification de l'Emblème du KAA Gent [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo La Gantoise, son design emblématique et son évolution au fil du temps. Téléchargez le logo La Gantoise en haute définition.",
   date: "2024-07-29", // Publication date
+  galleryImageId: 337,
   content: `# L'Histoire Complète du **La Gantoise Logo**
 
 Le **logo la gantoise** est l'un des emblèmes les plus reconnaissables du football belge. Cette marque visuelle représente le KAA Gent, club historique fondé en 1864 et plus communément connu en français sous le nom de La Gantoise. Dans cet article, nous explorons en profondeur l'histoire, le design et la signification du **la gantoise logo**, symbole d'identité pour des générations de supporters.
@@ -154,5 +155,4 @@ Pour les supporters, le **la gantoise logo png** reste un symbole puissant d'app
   keywords: "la gantoise logo, logo la gantoise, la gantoise football logo, la gantoise logo png, la gantoise logo transparent, logo kaa la gantoise, logo la gantoise png",
   category: 'logos',
   subCategory: 'other-european-clubs',
-  galleryImageId: 306
 };

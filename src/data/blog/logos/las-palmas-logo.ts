@@ -6,6 +6,7 @@ export const lasPalmasLogoPost: BlogPost = {
   title: "Logo Las Palmas : Histoire et Évolution de l'Emblème du Club Canarien [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Las Palmas, ses significations et son évolution à travers les années. Analyse complète de l'emblème du club des îles Canaries.",
   date: "2024-05-27",
+  galleryImageId: 339,
   content: `# L'Histoire Fascinante du **Logo Las Palmas**
 
 Le **logo las palmas** est l'emblème emblématique d'un club qui représente fièrement les îles Canaries dans le football espagnol. Cet article vous propose une analyse approfondie du **las palmas logo**, son évolution et sa signification profonde qui résonne avec les supporters du club.
@@ -52,5 +53,4 @@ Le **logo las palmas** continue d'évoluer subtilement tout en préservant les �
   keywords: "logo las palmas, las palmas fc logo, las palmas logo, las palmas logo png, logo las palmas png, logo ud las palmas, ud las palmas logo, ud las palmas logo png, las palmas foot logo, las palmas foot logo png, logo las palmas foot",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 160
 };

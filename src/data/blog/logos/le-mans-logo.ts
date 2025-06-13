@@ -6,6 +6,7 @@ export const leMansFCLogoPost: BlogPost = {
   title: "Logo Le Mans FC : Histoire et Évolution de l'Emblème Manceau [2024]",
   excerpt: "Découvrez l'histoire complète et l'évolution du logo Le Mans FC. Analyse détaillée des couleurs, symboles et design de l'emblème du club sarthois.",
   date: "2024-05-12",
+  galleryImageId: 346,
   content: `# L'Histoire et l'Évolution du **Logo Le Mans FC**
 
 ## L'Identité Visuelle du Club Sarthois

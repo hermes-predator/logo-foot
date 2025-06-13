@@ -5,6 +5,7 @@ export const kosovoLogoPost: BlogPost = {
   title: "Logo Kosovo : Histoire et Symbolisme de l'Emblème National",
   excerpt: "Découvrez l'histoire et la signification du logo Kosovo pour l'équipe nationale de football. Analyse complète de ce symbole d'identité nationale et sportive.",
   date: "2024-05-10",
+  galleryImageId: 335,
   content: `# **Logo Kosovo** : L'Histoire de l'Emblème de la Fédération de Football
 
 ![**Logo Kosovo**](https://logo-foot.com/blog-images/510.png)

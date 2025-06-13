@@ -6,6 +6,7 @@ export const latviaLogoPost: BlogPost = {
   title: "**Logo Lettonie** : L'Histoire de l'Emblème des Dragons Baltes [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale lettonne : des origines à aujourd'hui, évolution et signification de l'emblème du football balte.",
   date: "2025-04-27",
+  galleryImageId: 341,
   category: "national-logos",
   subCategory: "national-logos",
   keywords: "logo lettonie, lettonie logo foot, logo club football lettonie, logo de football lettonie, logo football club lettonie",
@@ -32,5 +33,4 @@ Le **logo lettonie** continue d'évoluer, porté par les ambitions croissantes d
 ## Conclusion
 
 Le **logo club football lettonie** est bien plus qu'un simple design : c'est un véritable témoignage de l'identité footballistique lettonne. Il incarne la fierté d'une nation qui, à travers son football, exprime sa détermination à briller sur la scène internationale.`,
-  galleryImageId: 76
 };

@@ -6,6 +6,7 @@ export const karlsruheLogoPost: BlogPost = {
   title: "**Logo Karlsruhe** : Histoire et Évolution de l'Emblème [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Karlsruher SC**, un des clubs historiques du football allemand. Plongez dans l'évolution de cet emblème emblématique au fil des années.",
   date: "2024-04-21",
+  galleryImageId: 331,
   category: "logos",
   content: `# L'Histoire Fascinante du **Logo Karlsruhe**
 
@@ -48,5 +49,4 @@ L'influence du **logo Karlsruher SC** dépasse le cadre sportif. Il est devenu u
 Le **logo Karlsruhe** demeure un symbole fort du football allemand, témoignant de la capacité d'un club à évoluer tout en restant fidèle à ses racines. Le **Karlsruher SC logo** continue d'incarner les valeurs et l'ambition d'un club historique tourné vers l'avenir.`,
   keywords: "logo karlsruhe, karlsruhe logo, logo karlsruher sc, logo karlsruher sc png, karlsruher sc logo, football allemand, bundesliga, baden-württemberg",
   subCategory: "german-clubs",
-  galleryImageId: 469
 };

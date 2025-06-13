@@ -5,6 +5,7 @@ export const knvbBekerLogoPost: BlogPost = {
   title: "Le **KNVB Beker Logo** : Histoire et Symbolisme de la Coupe des Pays-Bas",
   excerpt: "Découvrez l'histoire fascinante du **KNVB Beker Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la célèbre coupe néerlandaise.",
   date: "2024-04-10",
+  galleryImageId: 333,
   content: `
 # L'Histoire et le Symbolisme du **KNVB Beker Logo**
 

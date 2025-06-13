@@ -6,6 +6,7 @@ export const leHavreLogoPost: BlogPost = {
   title: "Logo Le Havre : Histoire et Design de l'Emblème Normand [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Havre AC : évolution, symbolisme et design de l'emblème emblématique du plus ancien club de football français.",
   date: "2024-05-17",
+  galleryImageId: 345,
   content: `# L'Histoire Fascinante du **Le Havre Logo**
 
 Le **logo Le Havre** est bien plus qu'un simple emblème sportif : c'est un témoignage visuel de l'histoire du plus ancien club de football français. Le **Le Havre logo** incarne à lui seul plus de 150 ans d'histoire du football hexagonal, représentant un patrimoine sportif inestimable pour la Normandie et le football français dans son ensemble.

@@ -5,6 +5,7 @@ export const lePuyFootLogoPost: BlogPost = {
   id: 347,
   title: "**Logo Le Puy Foot** : Histoire et Design Complet [2024]",
   date: "2025-04-18",
+  galleryImageId: 347,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo le puy foot**, son évolution et sa signification. Guide complet sur l'emblème du club auvergnat avec analyse détaillée du **le puy foot 43 logo**.",
   content: `# Guide Complet du **Logo Le Puy Foot**
@@ -45,5 +46,4 @@ Le **logo thonon evian savoie foot logo** s'adapte à différents supports, des 
 
 Le **logo le puy football** transcende le simple design graphique. Il est le reflet d'une histoire, d'une passion et d'un territoire. Sa conception soignée et son évolution témoignent de la richesse et de la dynamique du football local.`,
   keywords: "logo le puy foot, le puy foot logo, le puy foot 43 logo, le puy foot logo png, le puy football 43 logo, le puy logo foot, logo le puy football",
-  galleryImageId: null
 };

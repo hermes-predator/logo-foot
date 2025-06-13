@@ -6,6 +6,7 @@ export const konyasporLogoPost: BlogPost = {
   title: "**Konyaspor Logo** : Histoire et Évolution de l'Emblème Anatolien [2024]",
   excerpt: "Découvrez l'histoire fascinante du **konyaspor logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
+  galleryImageId: 334,
   content: `# Histoire du **Konyaspor Logo**
 
 Le **konyaspor logo** représente l'identité d'un des clubs les plus emblématiques d'Anatolie centrale. Le **logo konyaspor** incarne parfaitement l'histoire et les traditions de cette équipe qui fait la fierté de la ville de Konya.
@@ -76,5 +77,4 @@ Le **konyaspor logo png** s'utilise sur de nombreux supports :
   keywords: "konyaspor logo, konyaspor logo png, logo konyaspor, logo de foot konyaspor turquie, logo foot konyaspor",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 3
 };

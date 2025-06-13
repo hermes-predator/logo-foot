@@ -5,6 +5,7 @@ export const lechPoznanLogoPost: BlogPost = {
   id: 349, // ID unique pour cet article
   title: "Lech Poznań Logo : Histoire et Évolution de l'Emblème du Club Polonais [2024]",
   date: "2025-04-11",
+  galleryImageId: 349,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
   excerpt: "Découvrez l'histoire fascinante du logo Lech Poznań, l'emblème emblématique du club polonais. Apprenez comment le blason du Lech Poznań s'est transformé au fil des années et ce que ses symboles représentent pour l'identité du club.",
@@ -166,5 +167,4 @@ La puissance évocatrice du **lech poznań logo png**, sa reconnaissance immédi
 
 Alors que le Lech Poznań continue d'écrire son histoire dans le football polonais et européen, son emblème continuera sans doute d'évoluer subtilement, mais restera fondamentalement ce symbole bleu et blanc distinctif qui fait battre le cœur des supporters et incarne l'âme de tout un club, de toute une ville, et d'une fière tradition footballistique polonaise.`,
   keywords: "lech poznań logo, logo lech poznań, lech poznań logo png, logo lecha poznań",
-  galleryImageId: null // À remplacer avec l'ID de l'image quand disponible
 };

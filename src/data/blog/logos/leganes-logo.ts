@@ -6,6 +6,7 @@ export const leganesLogoPost: BlogPost = {
   title: "Logo Leganés : Histoire et Symbolisme de l'Emblème du Club [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Leganés, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-06",
+  galleryImageId: 351,
   content: `# L'Histoire Emblématique du **Logo Leganés**
 
 Le **Leganés logo** est bien plus qu'un simple emblème de club de football : c'est une représentation visuelle de l'identité, de l'histoire et des valeurs d'un club de la banlieue madrilène qui a réussi à se faire une place dans l'élite du football espagnol. Plongeons dans l'univers fascinant du **logo Leganés** pour comprendre sa symbolique et son évolution au fil des années.

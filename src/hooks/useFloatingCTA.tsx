@@ -5,6 +5,7 @@ export const useFloatingCTA = () => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   
   // Detect scroll to know if we're at the bottom of the page
   useEffect(() => {
@@ -12,6 +13,13 @@ export const useFloatingCTA = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
+      
+      // Calculate scroll progress for the last 300px
+      const bottomThreshold = 300;
+      const distanceFromBottom = docHeight - (scrollTop + windowHeight);
+      const progress = Math.max(0, Math.min(1, (bottomThreshold - distanceFromBottom) / bottomThreshold));
+      
+      setScrollProgress(progress);
       
       // Consider we're "at bottom" when there's less than 200px left to scroll
       const isNearBottom = scrollTop + windowHeight >= docHeight - 200;
@@ -25,23 +33,24 @@ export const useFloatingCTA = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Show banner with smoother delay when at bottom
+  // Show banner progressively based on scroll progress
   useEffect(() => {
-    if (isAtBottom && !dismissed) {
+    if (isAtBottom && !dismissed && scrollProgress > 0.3) {
+      // Add a slight delay for smoother transition
       const showBannerTimer = setTimeout(() => {
         setVisible(true);
-      }, 300); // Reduced delay for smoother experience
+      }, 150);
       
       return () => clearTimeout(showBannerTimer);
-    } else {
-      // Add a small delay before hiding to avoid flickering
+    } else if (!isAtBottom || scrollProgress < 0.2) {
+      // Hide with a small delay to avoid flickering
       const hideBannerTimer = setTimeout(() => {
         setVisible(false);
       }, 100);
       
       return () => clearTimeout(hideBannerTimer);
     }
-  }, [isAtBottom, dismissed]);
+  }, [isAtBottom, dismissed, scrollProgress]);
 
   const handleDismiss = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -53,6 +62,7 @@ export const useFloatingCTA = () => {
     visible,
     dismissed,
     isAtBottom,
+    scrollProgress,
     handleDismiss
   };
 };

@@ -6,7 +6,7 @@ import FloatingCTAContent from './FloatingCTAContent';
 
 const FloatingCTAContainer = () => {
   const navigate = useNavigate();
-  const { visible, dismissed, isAtBottom, handleDismiss } = useFloatingCTA();
+  const { visible, dismissed, isAtBottom, scrollProgress, handleDismiss } = useFloatingCTA();
 
   const handleNavigateToHome = () => {
     navigate('/');
@@ -21,13 +21,16 @@ const FloatingCTAContainer = () => {
 
   if (!visible || dismissed || !isAtBottom) return null;
 
+  // Calculate transform based on scroll progress for natural sliding
+  const translateY = Math.max(0, (1 - scrollProgress) * 100);
+
   return (
     <div 
-      className={`fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-500 ease-out will-change-transform will-change-opacity ${
-        visible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
-      }`}
+      className="fixed bottom-0 left-0 right-0 z-50 will-change-transform will-change-opacity"
       style={{
-        animation: visible ? 'slideUpSmooth 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' : 'none',
+        transform: `translateY(${translateY}%)`,
+        opacity: Math.min(1, scrollProgress * 1.5),
+        transition: 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-out',
       }}
     >
       {/* Similar gradient to BlogHeader */}

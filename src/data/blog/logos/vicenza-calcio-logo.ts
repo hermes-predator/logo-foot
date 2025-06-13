@@ -6,6 +6,7 @@ export const vicenzaCalcioLogoPost: BlogPost = {
   title: "Logo Vicenza Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Vicenza Calcio : des origines à aujourd'hui, évolution et signification de l'emblème du club historique de Vénétie.",
   date: "2024-04-10",
+  galleryImageId: 583,
   content: `# L'Histoire Fascinante du Logo Vicenza Calcio
 
 Le **logo Vicenza Calcio** est l'un des emblèmes les plus emblématiques du football italien. Symbole d'une ville passionnée de football, le **Vicenza Calcio logo** représente non seulement un club de football historique, mais aussi tout l'héritage sportif d'une région entière. Explorons ensemble l'histoire et l'évolution de ce symbole iconique de la Vénétie.
@@ -44,5 +45,4 @@ En conclusion, le **logo Vicenza** est bien plus qu'un simple écusson de club :
   keywords: "logo vicenza calcio, vicenza calcio logo, vicenza logo, vicenza logo foot, emblème vicenza, blason vicenza, football vicenza, écusson vicenza, logo vicenza calcio vectoriel, histoire logo vicenza, vicenza emblème",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 50
 };

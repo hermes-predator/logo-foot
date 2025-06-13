@@ -6,6 +6,7 @@ export const vitoriaGuimaraesLogoPost: BlogPost = {
   title: "Logo Vitoria Guimaraes : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Vitoria Guimaraes : origines, évolution et signification du blason de ce club emblématique du football portugais.",
   date: "2024-08-30",
+  galleryImageId: 587,
   content: `# L'Histoire Captivante du **Logo Vitoria Guimaraes**
 
 Le **logo Vitoria Guimaraes** représente l'un des clubs les plus historiques et passionnants du football portugais. Fondé en 1922 dans la ville historique de Guimarães, considérée comme le berceau de la nation portugaise, le club porte fièrement un emblème qui reflète à la fois son héritage et ses ambitions.
@@ -66,6 +67,5 @@ Alors que le club continue d'écrire son histoire, son emblème distinctif reste
   keywords: "logo vitoria guimaraes, vitoria guimaraes logo, vitoria guimaraes logo png, logo foot vitoria guimaraes, vitoria de guimaraes logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: undefined
 };
 

@@ -6,6 +6,7 @@ export const zurichLogoPost: BlogPost = {
   title: "Logo Zurich : Histoire et Évolution de l'Emblème du FC Zurich [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo du FC Zurich, son évolution au fil des années et la signification de ses éléments emblématiques qui représentent l'identité du club suisse.",
   date: "2024-04-15",
+  galleryImageId: 609,
   content: `# L'Histoire Fascinante du Logo FC Zurich
 
 Le **logo zurich** est bien plus qu'un simple emblème pour le club suisse : il représente l'histoire et les traditions d'une des institutions les plus respectées du football helvétique. Le **zurich logo** a évolué au fil des décennies tout en conservant son essence et son identité distinctive.
@@ -35,5 +36,4 @@ Dans l'ère moderne du football, le logo du FC Zurich continue d'évoluer tout e
   keywords: "logo zurich, zurich logo, fc zurich logo, logo fc zurich, logo zurich png, zurich logo png, logo club zurich, zurich fc logo png, zurich football logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 420
 };

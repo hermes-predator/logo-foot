@@ -5,6 +5,7 @@ export const viktoriaPlzenLogoPost: BlogPost = {
   id: 585, // Unique ID for this new article
   title: "Viktoria Plzeň Logo : Histoire et Signification de l'Emblème Tchèque [2024]",
   date: "2025-04-11",
+  galleryImageId: 585,
   category: "logos",
   subCategory: "other-european", // European clubs outside the top 5 leagues
   excerpt: "Découvrez l'histoire fascinante et la signification du logo Viktoria Plzeň, emblème du club tchèque. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe de République Tchèque.",
@@ -157,5 +158,4 @@ La combinaison distinctive de rouge et de bleu, centrée sur le "V" stylisé, a 
 
 À mesure que le club poursuit son ascension sportive, son emblème continuera d'évoluer tout en préservant l'essence qui en fait un design si particulier dans le paysage du football européen. Le **viktoria plzeň logo** reste ainsi un parfait exemple de la façon dont un emblème sportif peut incarner l'âme et l'histoire d'un club, d'une ville et d'une région tout entière.`,
   keywords: "viktoria plzeň logo, logo fc viktoria plzeň",
-  galleryImageId: null // To be replaced with the image ID when available
 };

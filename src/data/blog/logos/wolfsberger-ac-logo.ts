@@ -6,6 +6,7 @@ export const wolfsbergerAcLogoPost: BlogPost = {
   title: "Logo Wolfsberger AC : Histoire et Signification",
   excerpt: "Découvrez l'histoire fascinante derrière le logo du Wolfsberger AC, un des clubs les plus emblématiques du football autrichien.",
   date: "2024-04-21",
+  galleryImageId: 597,
   category: "logos",
   content: `# Logo Wolfsberger AC : Histoire et Signification
 

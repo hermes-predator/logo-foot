@@ -5,6 +5,7 @@ export const youthLeagueLogoPost: BlogPost = {
   id: 605,
   title: "**UEFA Youth League Logo** : L'Histoire du Design de la Compétition des Jeunes Talents",
   date: "2025-04-25",
+  galleryImageId: 605,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo de l'UEFA Youth League, symbole de la future génération du football européen. Une analyse détaillée de son design innovant et de sa signification.",
   content: `# Histoire et Évolution du **Youth League Logo**

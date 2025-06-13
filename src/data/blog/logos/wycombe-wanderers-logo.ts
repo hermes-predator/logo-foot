@@ -6,6 +6,7 @@ export const wycombeWanderersLogoPost: BlogPost = {
   title: "**Wycombe Wanderers Logo** : Histoire et Évolution [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Wycombe Wanderers**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
+  galleryImageId: 603,
   content: `
 # **Wycombe Wanderers Logo** : Histoire et Symbolisme
 
@@ -77,5 +78,4 @@ Le **wycombe wanderers logo** reste un symbole puissant qui transcende le simple
   keywords: "**wycombe wanderers logo**:20, **wycombe wanderers fc logo**:10",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 366
 };

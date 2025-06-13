@@ -6,6 +6,7 @@ export const zulteWaregemLogoPost: BlogPost = {
   title: "**Logo Zulte Waregem** : Histoire et Signification [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Zulte Waregem**, son évolution et sa symbolique. Un emblème qui représente la fierté du football belge.",
   date: "2024-04-19",
+  galleryImageId: 608,
   content: `# Histoire du **Logo Zulte Waregem**
 
 Le **Zulte Waregem logo** est l'emblème d'un des clubs les plus dynamiques du football belge. Ce symbole représente l'histoire et les valeurs du SV Zulte Waregem.
@@ -79,5 +80,4 @@ Le **logo Zulte Waregem** reste un symbole fort du football belge, alliant tradi
   keywords: "logo zulte waregem, zulte waregem logo, logo de foot zulte waregem, logo foot zulte waregem, zulte waregem logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9329
 };

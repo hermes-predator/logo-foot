@@ -6,6 +6,7 @@ export const villarrealCfLogoPost: BlogPost = {
   title: "Logo Villarreal CF : Histoire et Évolution de l'Emblème du Sous-marin Jaune [2024]",
   excerpt: "Découvrez l'histoire complète du logo Villarreal CF : des origines à aujourd'hui, évolution et signification de l'emblème du Sous-marin Jaune de La Liga.",
   date: "2024-05-05",
+  galleryImageId: 586,
   content: `# L'Histoire Fascinante du Logo Villarreal CF
 
 Le **logo Villarreal CF** est bien plus qu'un simple emblème : c'est un symbole qui incarne l'esprit, les valeurs et l'identité profonde du "Sous-marin Jaune". Plongeons dans l'histoire captivante de ce **villarreal cf logo** qui s'est imposé comme l'une des identités visuelles les plus reconnaissables du football espagnol.
@@ -77,5 +78,4 @@ Le **villarreal cf logo png** officiel en haute résolution est disponible sur l
   keywords: "logo villarreal cf, villarreal fc logo, logo villarreal, villarreal logo, logo villarreal png, villarreal cf logo, villarreal logo png, villarreal cf logo png, logo de foot villarreal, logo fc villarreal, logo foot villarreal, nouveau logo villarreal, submarine amarillo logo, villarreal football logo, symbole villarreal, ecusson villarreal",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 153
 };

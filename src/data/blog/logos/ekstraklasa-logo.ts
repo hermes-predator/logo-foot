@@ -5,6 +5,7 @@ export const ekstraklasaLogoPost: BlogPost = {
   id: 230,
   title: "**Ekstraklasa Logo** : Histoire et Evolution du Championnat Polonais de Football",
   date: "2025-04-25",
+  galleryImageId: 230,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo Ekstraklasa, symbole du prestigieux championnat polonais. Une analyse détaillée de son design et de son évolution au fil des années.",
   content: `# Histoire et Evolution du **Ekstraklasa Logo**

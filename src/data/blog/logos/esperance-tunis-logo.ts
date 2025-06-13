@@ -6,6 +6,7 @@ export const esperanceTunisLogoPost: BlogPost = {
   title: "**Logo Espérance Sportive de Tunis** : Histoire et Signification [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Espérance Sportive de Tunis**, son évolution et sa symbolique qui représente l'un des plus grands clubs d'Afrique.",
   date: "2024-04-15",
+  galleryImageId: 239,
   content: `# L'Histoire du **Logo Espérance de Tunis**
 
 L'**Espérance Sportive de Tunis logo** est l'emblème d'un des clubs les plus titrés d'Afrique. Fondé en 1919, le club tunisien arbore fièrement son identité visuelle qui reflète son histoire riche et ses valeurs profondes.
@@ -49,5 +50,4 @@ Le **logo Espérance de Tunis PNG** est plus qu'un simple emblème - c'est un sy
   keywords: "esperance de tunis logo, esperance sportive de tunis logo, esperance sportive de tunis logo png, logo esperance de tunis, logo esperance sportive de tunis, logo espérance sportive de tunis, esperance de tunis logo png, espérance sportive de tunis logo png",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 431
 };

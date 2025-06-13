@@ -5,6 +5,7 @@ export const espanyolLogoPost: BlogPost = {
   id: 238, // ID unique pour ce nouvel article
   title: "Logo RCD Espanyol : Histoire et Évolution de l'Emblème du Club Catalan",
   date: "2025-04-11",
+  galleryImageId: 238,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo RCD Espanyol, club historique de Barcelone. Analyse complète des symboles et couleurs de l'écusson catalan.",
@@ -95,5 +96,4 @@ Que ce soit sous forme imprimée ou sous format **logo Espanyol PNG** numérique
 L'**Espanyol Barcelone logo** reste un témoignage visuel de l'héritage culturel et sportif catalan, un symbole qui continuera de fédérer les supporters "pericos" pour les générations à venir.
 `,
   keywords: "logo RCD Espanyol, logo Espanyol, Espanyol logo, Espanyol Barcelona logo, RCD Espanyol logo PNG, logo Espanyol Barcelone, logo Espanyol PNG, Espanyol FC logo, Espanyol Barcelone logo PNG, logo de foot Espanyol Barcelona, Espanyol foot logo, Espanyol Barcelone logo, RCD Espanyol logo",
-  galleryImageId: null, // A remplacer par l'ID de l'image quand elle sera disponible
 };

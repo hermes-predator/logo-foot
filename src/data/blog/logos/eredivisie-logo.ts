@@ -5,7 +5,7 @@ export const eredivisieLogoPost: BlogPost = {
   title: "Eredivisie Logo : Histoire et Évolution du Logo de la Ligue Néerlandaise [2024]",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Eredivisie, emblème du championnat de football néerlandais. Une analyse détaillée du design, des couleurs et de la symbolique du logo Eredivisie PNG à travers les époques.",
   date: "2024-06-02",
-  galleryImageId: 87,
+  galleryImageId: 236,
   content: `# L'Histoire Fascinante du **Eredivisie Logo**
 
 Le **logo Eredivisie** est bien plus qu'un simple emblème : c'est le symbole visuel du championnat de première division néerlandaise, reconnu comme l'une des ligues les plus respectées pour son style de jeu offensif et sa formation de talents. Cette identité visuelle emblématique incarne l'essence même du football néerlandais : innovante, distinctive et résolument tournée vers l'avenir.

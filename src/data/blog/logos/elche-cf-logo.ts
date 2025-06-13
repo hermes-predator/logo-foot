@@ -6,6 +6,7 @@ export const elcheCfLogoPost: BlogPost = {
   title: "Logo Elche CF : Histoire et Symbolisme de l'Emblème du Club Espagnol",
   excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Elche CF. Analyse complète de l'emblème du club espagnol de La Liga.",
   date: "2024-07-05",
+  galleryImageId: 231,
   content: `# **Logo Elche CF** : Histoire et Symbolisme de l'Emblème du Club Espagnol
 
 Le **logo Elche CF** est bien plus qu'un simple symbole pour ce club de football espagnol historique - c'est l'incarnation de l'identité, des traditions et de la fierté de la ville d'Elche. Reconnaissable par sa forme distinctive et ses couleurs blanc et vert, le **Elche logo** représente l'un des clubs les plus traditionnels du football espagnol. Dans cet article, nous analyserons en détail le **Elche logo png**, son histoire fascinante et sa signification culturelle profonde.

@@ -6,7 +6,7 @@ export const etoileRougeBelgradeLogoPost: BlogPost = {
   title: "Logo Étoile Rouge de Belgrade : Histoire et Symbolisme du Club Serbe [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'Étoile Rouge de Belgrade : origines, évolution et signification de l'emblème emblématique du club serbe le plus titré.",
   date: "2024-06-05",
-  galleryImageId: 111,
+  galleryImageId: 242,
   content: `# L'Histoire Fascinante du **Logo Étoile Rouge de Belgrade**
 
 Le **etoile rouge de belgrade logo** représente bien plus qu'un simple emblème sportif : c'est un symbole historique et culturel qui incarne l'âme d'un des clubs les plus prestigieux d'Europe de l'Est. Ce **logo etoile rouge de belgrade** emblématique est reconnaissable instantanément par sa forme distinctive et ses couleurs vibrantes qui racontent l'histoire riche d'un club profondément ancré dans l'identité nationale serbe.

@@ -8,7 +8,7 @@ export const equateurLogoPost: BlogPost = {
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 165,
+  galleryImageId: 235,
   content: `# L'Histoire Fascinante du **Logo Équateur**
 
 Le **équateur logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée où le football occupe une place centrale dans la culture populaire. Le **logo équateur** incarne l'identité et les aspirations d'un pays qui a su s'imposer comme une force montante du football sud-américain.

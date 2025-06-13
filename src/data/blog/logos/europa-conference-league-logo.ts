@@ -5,6 +5,7 @@ export const europaConferenceLeagueLogoPost: BlogPost = {
   id: 243,
   title: "**UEFA Europa Conference League Logo** : L'Histoire du Design de la Troisième Coupe d'Europe",
   date: "2025-04-26",
+  galleryImageId: 243,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo de l'UEFA Europa Conference League, la nouvelle compétition européenne. Une analyse détaillée de son design innovant et de sa signification symbolique.",
   content: `# Histoire et Design du **Logo Europa Conference League**

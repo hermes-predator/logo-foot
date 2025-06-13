@@ -5,6 +5,7 @@ export const europaLeagueLogoPost: BlogPost = {
   title: "Logo UEFA Europa League : Histoire & Évolution de l'Emblème Européen [2024]",
   excerpt: "Analyse complète du logo de l'UEFA Europa League : histoire, signification et design de l'emblème prestigieux de la seconde compétition européenne.",
   date: "2024-05-16",
+  galleryImageId: 244,
   content: `# L'Histoire Fascinante du **Logo Europa League**
 
 Le **europa league logo** est bien plus qu'un simple emblème graphique pour une compétition sportive. Il représente l'identité visuelle d'un tournoi qui, au fil des ans, s'est imposé comme la deuxième plus prestigieuse épreuve de clubs en Europe. Son design distinctif et ses évolutions successives racontent l'histoire d'une compétition en constante transformation.

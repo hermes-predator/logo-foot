@@ -5,6 +5,7 @@ export const eliteserienLogoPost: BlogPost = {
   id: 232,
   title: "**Eliteserien Logo** : L'Histoire du Design du Championnat Norvégien",
   date: "2025-04-25",
+  galleryImageId: 232,
   category: "competition-logos",
   excerpt: "Découvrez l'histoire fascinante du logo Eliteserien, emblème du championnat norvégien de football. Une analyse approfondie de son design distinctif et de son évolution.",
   content: `# Histoire et Evolution du **Eliteserien Logo**

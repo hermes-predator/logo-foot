@@ -6,7 +6,7 @@ export const empoliLogoPost: BlogPost = {
   title: "Logo Empoli FC : Histoire et Design de l'Emblème Toscan [2024]",
   excerpt: "Découvrez l'histoire complète du logo Empoli FC : origines, évolution et signification de l'emblème du club toscan de Serie A.",
   date: "2024-06-29",
-  galleryImageId: 152,
+  galleryImageId: 233,
   content: `# L'Histoire Fascinante du **Logo Empoli**
 
 Le **logo Empoli** représente bien plus qu'un simple emblème : c'est le symbole d'identité d'un club historique du football italien qui incarne les valeurs et les traditions de la Toscane. Plongeons dans l'histoire captivante de ce **Empoli logo** qui symbolise la fierté d'une ville entière.

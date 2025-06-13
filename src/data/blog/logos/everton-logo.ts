@@ -6,7 +6,7 @@ export const evertonLogoPost: BlogPost = {
   title: "Logo Everton : Histoire et Evolution de l'Emblème des Toffees [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo d'Everton FC : origines, évolution et symbolisme de l'emblème emblématique des Toffees de Liverpool.",
   date: "2024-04-13",
-  galleryImageId: 63,
+  galleryImageId: 245,
   content: `# L'Histoire Fascinante du **Logo Everton**
 
 Le **logo everton** est bien plus qu'un simple emblème sportif. Véritable symbole d'identité pour des millions de supporters, il incarne l'histoire riche et les valeurs profondes d'un club fondateur de la Football League.

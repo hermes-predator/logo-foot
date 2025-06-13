@@ -6,7 +6,7 @@ export const eintrachtFrankfurtLogoPost: BlogPost = {
   title: "Logo Eintracht Francfort : Histoire et Design de l'Aigle Allemand [2024]",
   excerpt: "Découvrez l'histoire complète du logo d'Eintracht Francfort : origines, évolution et symbolisme de l'emblème emblématique du club allemand.",
   date: "2024-05-21",
-  galleryImageId: 89,
+  galleryImageId: 229,
   content: `# L'Histoire Fascinante du **Logo Eintracht Francfort**
 
 Le **logo francfort** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité et de fierté régionale qui raconte l'histoire riche d'un des clubs les plus emblématiques d'Allemagne. Plongez dans l'univers visuel captivant de l'**eintracht francfort logo**, un écusson qui a su évoluer tout en préservant ses racines profondes.

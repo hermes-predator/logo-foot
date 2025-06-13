@@ -5,7 +5,7 @@ export const englandLogoPost: BlogPost = {
   title: "Logo Angleterre Football : Histoire et Évolution de l'Emblème des Three Lions [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe d'Angleterre : origines, signification et évolution de l'emblème emblématique des Three Lions à travers les époques.",
   date: "2024-04-19",
-  galleryImageId: 82,
+  galleryImageId: 234,
   content: `# L'Histoire Fascinante du **Logo Angleterre Football**
 
 Le **logo angleterre** est l'un des emblèmes les plus iconiques du football mondial. Avec ses trois lions emblématiques, ce **logo angleterre football** incarne des siècles d'histoire britannique et cristallise l'identité d'une nation profondément attachée au football. Plongeons dans l'histoire passionnante de ce **logo foot angleterre** qui est devenu le symbole d'une des plus prestigieuses sélections nationales.

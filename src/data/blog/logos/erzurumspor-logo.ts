@@ -6,6 +6,7 @@ export const erzurumsporLogoPost: BlogPost = {
   title: "Logo Erzurumspor : Histoire et Signification de l'Emblème du Club Turc",
   excerpt: "Découvrez l'histoire fascinante derrière le logo d'Erzurumspor, un design qui reflète l'identité et la fierté du football turc.",
   date: "2024-04-22",
+  galleryImageId: 237,
   category: "logos",
   content: `
 # Histoire et Analyse du Logo Erzurumspor

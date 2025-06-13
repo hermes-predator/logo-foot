@@ -6,7 +6,7 @@ export const estorilPraiaLogoPost: BlogPost = {
   title: "Logo Estoril Praia : Histoire et Symbolisme de l'Emblème Portugais [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Estoril Praia : origines, évolution et signification des symboles du club de football portugais.",
   date: "2024-09-01",
-  galleryImageId: 332,
+  galleryImageId: 241,
   content: `# L'Histoire Fascinante du **Logo Estoril Praia**
 
 Le **estoril logo** est l'un des emblèmes les plus distinctifs du football portugais, représentant fièrement un club à l'histoire riche et aux traditions bien ancrées. Situé dans la belle ville côtière d'Estoril, le Grupo Desportivo Estoril Praia, communément appelé Estoril Praia, arbore un **logo estoril praia** qui capture l'essence même de son identité.

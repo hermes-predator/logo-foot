@@ -5,6 +5,7 @@ export const israelLogoPost: BlogPost = {
   title: "Logo Israël : Histoire et Design de l'Emblème de la Sélection Nationale [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Israël : origines, évolution et signification de l'emblème officiel de la fédération israélienne de football.",
   date: "2024-05-20",
+  galleryImageId: 321,
   content: `# L'Histoire Passionnante du **Logo Israël**
 
 Le **logo Israël** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui incarne l'histoire et les aspirations d'un pays où le football occupe une place importante. Plongeons dans l'histoire fascinante de ce **israel logo** qui s'est imposé comme un élément emblématique du football international.

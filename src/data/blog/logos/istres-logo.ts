@@ -6,6 +6,7 @@ export const istresLogoPost: BlogPost = {
   title: "**Logo Istres FC** : Histoire et Evolution de l'Emblème Provençal [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Istres**, son évolution et la symbolique de cet emblème emblématique du football provençal.",
   date: "2024-04-18",
+  galleryImageId: 323,
   content: `# L'Histoire Fascinante du **Logo Istres**
 
 Le **logo istres** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité locale qui incarne l'histoire et les traditions du football provençal. Le **logo fc istres** a su évoluer au fil des années tout en conservant son authenticité et son ancrage territorial.
@@ -52,5 +53,4 @@ Le **logo istres fc** demeure un symbole fort du football provençal, incarnant 
   keywords: "logo istres:20, logo fc istres:20, logo istres fc:10, fc istres logo:10, istres foot logo:10, logo foot istres fc:10",
   category: 'logos',
   subCategory: 'french-clubs',
-  galleryImageId: 439
 };

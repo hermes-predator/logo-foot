@@ -5,6 +5,7 @@ export const irelandLogoPost: BlogPost = {
   title: "Logo Irlande : Histoire et Symbolisme de l'Emblème du Football Irlandais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Irlande : origines, évolution et signification de l'emblème qui représente la fierté du football irlandais.",
   date: "2024-04-14",
+  galleryImageId: 320,
   content: `# L'Histoire Fascinante du Logo Irlande de Football
 
 Le **logo irlande** représente bien plus qu'un simple emblème sportif : il incarne l'identité, l'histoire et la passion d'une nation pour le football. Plongeons dans l'univers captivant de ce **irlande logo** qui symbolise la fierté d'un peuple et son amour pour le ballon rond.

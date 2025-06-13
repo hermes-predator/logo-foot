@@ -4,6 +4,7 @@ export const iranLogoPost: BlogPost = {
   id: 318,
   title: "Logo Iran : Histoire et Symbolisme de l'Emblème du Football Iranien",
   date: '2025-04-26',
+  galleryImageId: 318,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire fascinante du logo de la fédération iranienne de football, un symbole qui incarne la riche tradition footballistique du pays.",
   content: `# Logo Iran : Histoire et Symbolisme de l'Emblème du Football Iranien

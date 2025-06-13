@@ -5,6 +5,7 @@ export const japanLogoPost: BlogPost = {
   title: "Logo Japon : Histoire et Évolution de l'Emblème du Samurai Blue [2024]",
   excerpt: "Découvrez l'histoire complète du logo Japon : des origines à aujourd'hui, évolution et signification de l'emblème du Samurai Blue, symbole du football japonais.",
   date: "2024-05-30",
+  galleryImageId: 326,
   content: `# L'Histoire Fascinante du **Logo Japon**
 
 Le **logo japon** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne parfaitement la fusion entre tradition millénaire et modernité qui caractérise si bien ce pays asiatique. Dans cet article approfondi, nous explorons l'histoire captivante du **logo japon foot** et découvrons l'évolution de cet emblème qui représente fièrement le football japonais sur la scène internationale.
@@ -67,5 +68,4 @@ Que ce soit dans sa version officielle utilisée par la fédération ou dans ses
   keywords: "logo japon, japon logo, logo japon foot, logo de japon, logo du japon, logo foot japon, logo japon football, logo japon png, japon logo foot",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 164
 };

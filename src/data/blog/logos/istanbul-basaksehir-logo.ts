@@ -6,6 +6,7 @@ export const istanbulBasaksehirLogoPost: BlogPost = {
   title: "Logo Istanbul Basaksehir : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire complète du logo Istanbul Basaksehir : origines, évolution et signification de l'emblème du club turc qui a révolutionné le paysage footballistique d'Istanbul.",
   date: "2024-04-06",
+  galleryImageId: 322,
   content: `# L'Histoire Fascinante du Logo Istanbul Basaksehir
 
 Le **logo Istanbul Basaksehir** est devenu l'un des symboles les plus reconnaissables du football turc moderne. Ce club relativement jeune a rapidement imposé son identité visuelle unique dans un paysage footballistique dominé par les géants traditionnels d'Istanbul. Examinons en détail l'histoire et l'évolution de ce **basaksehir logo** distinctif.
@@ -48,5 +49,4 @@ Alors que le club continue d'écrire son histoire sur les terrains turcs et euro
   keywords: "logo istanbul basaksehir, basaksehir logo, logo basaksehir, istanbul basaksehir logo, basaksehir logo png, logo istanbulbb, emblème basaksehir, écusson istanbul basaksehir, istanbul basaksehir emblème, basaksehir écusson, football turc logo, super lig logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 345
 };

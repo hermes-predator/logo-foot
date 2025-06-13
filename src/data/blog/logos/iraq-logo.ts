@@ -5,6 +5,7 @@ export const iraqLogoPost: BlogPost = {
   id: 319,
   title: "**Logo Iraq** : L'Histoire et le Symbolisme de l'Emblème du Football Irakien",
   date: '2025-04-26',
+  galleryImageId: 319,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire fascinante du logo de la fédération irakienne de football, un symbole qui incarne la passion et la résilience du football irakien.",
   content: `# Le **Logo Iraq** : Un Symbole de Fierté Nationale

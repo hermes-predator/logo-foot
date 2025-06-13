@@ -6,6 +6,7 @@ export const kaiserslauternLogoPost: BlogPost = {
   title: "**Logo Kaiserslautern** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Kaiserslautern**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire allemand.",
   date: "2025-04-14",
+  galleryImageId: 330,
   content: `# L'Histoire Fascinante du **Logo Kaiserslautern**
 
 Le **logo 1. FC Kaiserslautern** est l'un des emblèmes les plus emblématiques du football allemand. Cet écusson iconique, avec son "K" distinctif et ses couleurs rouge et blanc, raconte l'histoire riche d'un club qui a profondément marqué le paysage footballistique allemand.
@@ -73,5 +74,4 @@ Le **logo 1. FC Kaiserslautern** continuera sans doute d'évoluer subtilement po
   keywords: "logo kaiserslautern:20, logo 1 fc kaiserslautern:20, logo fc kaiserslautern:20, kaiserslautern logo:20, kaiserslautern fc logo:10",
   category: 'logos',
   subCategory: 'german-clubs',
-  galleryImageId: null
 };

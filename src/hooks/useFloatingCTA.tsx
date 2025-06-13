@@ -14,15 +14,15 @@ export const useFloatingCTA = () => {
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
       
-      // Calculate scroll progress for the last 400px with slower progression
-      const bottomThreshold = 400;
+      // Calculate scroll progress for the last 600px with much slower progression
+      const bottomThreshold = 600;
       const distanceFromBottom = docHeight - (scrollTop + windowHeight);
       const progress = Math.max(0, Math.min(1, (bottomThreshold - distanceFromBottom) / bottomThreshold));
       
       setScrollProgress(progress);
       
-      // Consider we're "at bottom" when there's less than 300px left to scroll
-      const isNearBottom = scrollTop + windowHeight >= docHeight - 300;
+      // Consider we're "at bottom" when there's less than 500px left to scroll
+      const isNearBottom = scrollTop + windowHeight >= docHeight - 500;
       setIsAtBottom(isNearBottom);
     };
 
@@ -35,18 +35,18 @@ export const useFloatingCTA = () => {
 
   // Show banner progressively based on scroll progress
   useEffect(() => {
-    if (isAtBottom && !dismissed && scrollProgress > 0.1) {
-      // Add a longer delay for very slow appearance
+    if (isAtBottom && !dismissed && scrollProgress > 0.05) {
+      // Add a much longer delay for extremely slow appearance
       const showBannerTimer = setTimeout(() => {
         setVisible(true);
-      }, 400);
+      }, 800);
       
       return () => clearTimeout(showBannerTimer);
-    } else if (!isAtBottom || scrollProgress < 0.05) {
+    } else if (!isAtBottom || scrollProgress < 0.02) {
       // Hide with a delay to avoid flickering
       const hideBannerTimer = setTimeout(() => {
         setVisible(false);
-      }, 200);
+      }, 400);
       
       return () => clearTimeout(hideBannerTimer);
     }

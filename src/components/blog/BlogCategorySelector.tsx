@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Loader, BookOpen } from 'lucide-react';
@@ -25,7 +24,9 @@ const BlogCategorySelector = ({
         
         {/* Cercles décoratifs statiques */}
         <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full opacity-20 -mr-20 -mt-20"></div>
+        <div className="absolute top-0 right-16 w-16 h-16 bg-indigo-100 rounded-full opacity-25 -mr-8 -mt-8"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-100 rounded-full opacity-30 -ml-10 -mb-10"></div>
+        
         
         <h2 className="text-lg font-semibold text-gray-800 mb-4 text-left flex items-center gap-2 relative z-10">
           <BookOpen className="h-5 w-5 text-black" />

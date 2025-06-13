@@ -5,6 +5,7 @@ export const maliLogoPost: BlogPost = {
   title: "Logo Mali : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Mali : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles.",
   date: "2024-05-31",
+  galleryImageId: 379,
   content: `# L'Histoire Fascinante du **Logo Mali** Football
 
 Le **logo mali** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière dont l'histoire footballistique est riche en traditions et en émotions. Le **logo du mali** représente l'âme d'un pays où le football est intimement lié à l'identité nationale et à la culture populaire.
@@ -53,5 +54,4 @@ Les joueurs qui portent fièrement le maillot orné du **mali football logo** so
   keywords: "logo mali, logo du mali, logo mali foot, logo republique du mali, logo mali football, mali foot logo, mali football logo, mali logo",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 165
 };

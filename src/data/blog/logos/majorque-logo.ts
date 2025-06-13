@@ -6,6 +6,7 @@ export const majorqueLogoPost: BlogPost = {
   title: "Logo Majorque : Histoire et Design de l'Emblème Baléare [2024]",
   excerpt: "Découvrez l'histoire complète du logo Majorque : des origines à aujourd'hui, évolution et signification de l'emblème de ce club emblématique des Baléares.",
   date: "2024-04-30",
+  galleryImageId: 377,
   content: `# L'Histoire Captivante du Logo Majorque
 
 Le **logo Majorque** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'histoire, la culture et l'identité d'un club profondément ancré dans l'archipel des Baléares. Plongeons dans l'histoire passionnante de ce **majorque logo** qui représente aujourd'hui l'une des identités visuelles les plus caractéristiques du football espagnol.
@@ -48,5 +49,4 @@ Le **logo club foot espagne majorque** reste un point d'ancrage pour les support
   keywords: "logo majorque, majorque logo, logo majorque foot, logo club foot espagne majorque, logo de majorque, logo majorque rcd png, rcd mallorca logo, majorque football logo, ecusson majorque, blason majorque, mallorca logo, logo rcd mallorca, club espagnol logo, la liga logo club",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 152
 };

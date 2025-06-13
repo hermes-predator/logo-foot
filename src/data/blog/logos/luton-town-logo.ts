@@ -6,6 +6,7 @@ export const lutonTownLogoPost: BlogPost = {
   title: "Logo Luton Town : Histoire et Évolution de l'Emblème des Hatters [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Luton Town, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
+  galleryImageId: 372,
   content: `# **Logo Luton Town** : L'Histoire d'un Emblème Britannique Unique
 
 Le **logo Luton Town** représente bien plus qu'un simple écusson sportif - c'est le symbole d'un club historique du football anglais dont les racines remontent à 1885. Dans cet article approfondi, découvrez l'évolution fascinante du **Luton Town logo** et ce qui rend cet emblème si particulier dans le paysage footballistique britannique.
@@ -85,5 +86,4 @@ En définitive, le **logo Luton Town** illustre remarquablement comment un embl�
   keywords: "logo luton town:20, luton town logo:20, luton town logo png:20, logo luton town fc:10, luton town logo transparent:10",
   category: 'logos',
   subCategory: 'english-clubs',
-  galleryImageId: 370
 };

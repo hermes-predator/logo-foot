@@ -6,6 +6,7 @@ export const lincolnCityLogoPost: BlogPost = {
   title: "**Lincoln City Logo** : Histoire et Évolution de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **Lincoln City FC logo**, emblème iconique du football anglais. Une analyse détaillée du **Lincoln City Football Club logo** et de son évolution au fil des années.",
   date: "2024-04-20",
+  galleryImageId: 364,
   category: "logos",
   content: `# L'Histoire du **Lincoln City Logo**
 
@@ -55,5 +56,4 @@ L'emblème devient un véritable outil stratégique. Les maillots officiels l'ar
 
 Le **lincoln city logo** demeure un symbole fort du football anglais, alliant histoire et modernité. Son évolution constante, tout en préservant son héritage centenaire, illustre parfaitement l'équilibre entre tradition et innovation dans l'identité visuelle d'un club historique.`,
   keywords: "lincoln city logo, lincoln city fc logo, lincoln city football club logo, lincoln city football logo, lincoln city fc logo png, lincoln city logo png",
-  galleryImageId: null
 };

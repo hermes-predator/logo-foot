@@ -6,6 +6,7 @@ export const malmoFFLogoPost: BlogPost = {
   title: "**Logo Malmö FF** : Histoire et Évolution de l'Emblème Suédois [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de Malmö FF, son évolution et la symbolique derrière l'emblème du club le plus titré de Suède.",
   date: "2024-04-15",
+  galleryImageId: 380,
   content: `# L'Histoire Fascinante du **Logo Malmo**
 
 Le **malmo logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'identité d'un des clubs les plus prestigieux de Suède. Le **logo malmo ff** incarne l'excellence et la tradition d'une institution qui a marqué l'histoire du football scandinave.
@@ -44,5 +45,4 @@ Le **logo club football malmo** est bien plus qu'un simple emblème - c'est le t
   keywords: "logo malmo, logo malmo ff, malmo logo, malmo logo png, logo club football malmo, logo foot malmo, malmo ff logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 429
 };

@@ -6,6 +6,7 @@ export const legiaVarsovieLogoPost: BlogPost = {
   title: "**Legia Varsovie Logo** : Histoire et Symbolique de l'Emblème du Club Polonais [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Legia Varsovie**, un symbole emblématique qui représente la fierté du football polonais et l'identité unique de ce club légendaire.",
   date: "2024-04-15", 
+  galleryImageId: 352,
   content: `# Histoire du **Legia Varsovie Logo**
 
 Le **legia varsovie logo** est l'emblème d'un club qui incarne la passion et l'histoire du football polonais moderne. Le **logo de foot legia varsovie** représente parfaitement l'identité unique d'une équipe qui a marqué le football de son pays.
@@ -76,5 +77,4 @@ Le **logo png legia varsovie** s'utilise sur différents supports :
   keywords: "legia varsovie logo, legia varsovie logo de foot, legia varsovie logo png, logo foot legia varsovie, logo legia varsovie, logo png legia varsovie",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 564
 };

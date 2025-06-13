@@ -6,6 +6,7 @@ export const liverpoolLogoPost: BlogPost = {
   title: "Logo Liverpool : Histoire et Design de l'Emblème des Reds [2024]",
   excerpt: "Découvrez l'histoire complète du logo de Liverpool FC : origines, symbolisme et évolution de l'emblème mythique des Reds à travers les années.",
   date: "2024-03-31",
+  galleryImageId: 366,
   content: `# L'Histoire Fascinante du **Logo Liverpool**
 
 Le **logo liverpool** est l'un des emblèmes les plus reconnaissables du football mondial. Son design, riche en histoire et en symbolisme, incarne parfaitement l'héritage et les valeurs de ce club légendaire de la Merseyside.
@@ -54,5 +55,4 @@ Alors que Liverpool FC continue d'écrire son histoire, son emblème iconique é
   keywords: "logo liverpool, liverpool club logo, liverpool logo, liverpool soccer logo, liverpool football club logo, liverpool football logo, logos liverpool, liverpool logo png, logo liverpool png, fc liverpool logo, logo de liverpool, logo fc liverpool, liverpool fc logo, logo liverpool fc, nouveau logo liverpool",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 49
 };

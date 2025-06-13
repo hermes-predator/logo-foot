@@ -5,6 +5,7 @@ export const lesHerbiersLogoPost: BlogPost = {
   id: 355,
   title: "**Logo Les Herbiers** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 355,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo les herbiers foot**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo club de foot les herbiers**.",
   content: `# Guide Complet du **Logo Les Herbiers**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **les herbiers foot logo** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du club herbretais.`,
   keywords: "les herbiers logo, logo les herbiers, logo les herbiers foot, club foot les herbiers logo, foot logo les herbiers, les herbiers foot logo, les herbiers logo png, logo club de foot les herbiers",
-  galleryImageId: null
 };

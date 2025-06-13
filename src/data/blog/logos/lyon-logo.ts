@@ -6,6 +6,7 @@ export const lyonLogoPost: BlogPost = {
   title: "Logo OL : Histoire et Design de l'Olympique Lyonnais [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'Olympique Lyonnais : origines, évolution et symbolisme de l'emblème emblématique du club rhodanien.",
   date: "2024-03-31",
+  galleryImageId: 374,
   content: `# L'Histoire Fascinante du **Logo OL**
 
 Le **logo ol** est bien plus qu'un simple emblème sportif : c'est un symbole puissant qui incarne l'histoire glorieuse et les ambitions du club rhodanien. Plongez dans l'univers visuel captivant du **ol logo**, un écusson qui a su évoluer tout en préservant les valeurs fondamentales qui font la grandeur de l'Olympique Lyonnais.
@@ -54,5 +55,4 @@ Alors que l'Olympique Lyonnais poursuit son développement sportif et institutio
   keywords: "logo ol, ol logo, logo ol png, ol logo png, logo lyon, logos olympique lyonnais, olympique lyonnais logo, logo olympique lyonnais, logo olympique lyonnais png, logo lyon foot, logo de lyon, lyon logo foot, logo lyon png, logo de l olympique lyonnais",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 44
 };

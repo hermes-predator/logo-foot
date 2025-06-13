@@ -6,6 +6,7 @@ export const louisvilleCityLogoPost: BlogPost = {
   title: "Louisville City Logo : Histoire et Design de l'Emblème du Club [2025]",
   excerpt: "Découvrez l'histoire et la signification du logo Louisville City FC, son évolution et sa symbolique. Analyse complète de l'emblème du club de football américain.",
   date: "2025-04-14",
+  galleryImageId: 370,
   content: `# L'Histoire Fascinante du **Louisville City Logo**
 
 Le **louisville city logo** est devenu l'un des symboles les plus distinctifs du football américain, représentant parfaitement l'identité et les valeurs de ce club ambitieux du Kentucky. Dans cet article, nous explorerons l'histoire, la signification et l'évolution de ce **louisville city fc logo** qui a su captiver les supporters et marquer le paysage footballistique américain.

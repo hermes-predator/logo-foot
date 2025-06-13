@@ -6,6 +6,7 @@ export const levskiSofiaLogoPost: BlogPost = {
   title: "**Levski Sofia Logo** : Histoire et Signification [Guide 2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Levski Sofia**, son évolution et sa symbolique. Un emblème qui incarne l'héritage du plus grand club bulgare.",
   date: "2024-04-18",
+  galleryImageId: 358,
   content: `# Histoire du **Levski Sofia Logo**
 
 Le **logo Levski Sofia** représente l'un des clubs les plus prestigieux de Bulgarie. Cet emblème historique incarne la fierté et les traditions d'une institution majeure du football bulgare.
@@ -79,5 +80,4 @@ Le **Levski Sofia logo** demeure un symbole puissant du football bulgare, conjug
   keywords: "levski sofia logo, logo levski sofia, levski sofia logo png, logo foot levski sofia",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 9326
 };

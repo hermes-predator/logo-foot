@@ -5,6 +5,7 @@ export const ludogoretsLogoPost: BlogPost = {
   id: 371, // ID unique pour ce nouvel article
   title: "Logo Ludogorets : Histoire et Évolution de l'Emblème Bulgare [2024]",
   date: "2025-04-11",
+  galleryImageId: 371,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Ludogorets, emblème du club bulgare. Analyse complète des symboles et des couleurs du blason de Ludogorets Razgrad.",
@@ -112,5 +113,4 @@ Pour les habitants de Razgrad et les supporters du club, le **logo ludogorets ra
 
 Le **logo foot ludogorets razgrad** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré sa jeunesse relative, a su se forger une place unique dans le paysage footballistique européen grâce à des valeurs fortes et un ancrage local profond.`,
   keywords: "logo ludogorets, ludogorets logo, ludogorets logo png, ludogorets razgrad logo, logo foot ludogorets razgrad, logo ludogorets razgrad",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

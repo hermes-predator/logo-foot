@@ -5,6 +5,7 @@ export const levanteUdLogoPost: BlogPost = {
   id: 356, // ID unique pour ce nouvel article
   title: "Logo Levante UD : Histoire et Symbolisme de l'Emblème Valencien",
   date: "2025-04-11",
+  galleryImageId: 356,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Levante UD, l'un des clubs emblématiques de Valence. Analyse complète des symboles et des couleurs du blason grenát.",
@@ -98,5 +99,4 @@ Que ce soit sous forme imprimée ou sous format **levante logo png** numérique,
 
 Le **levante ud logo** reste un témoignage visuel de l'héritage culturel et sportif valencien, un symbole qui continuera de fédérer les supporters "granota" pour les générations à venir.`,
   keywords: "levante logo, levante logo png, levante ud logo, logo levante, logo levante ud, logo levante png",
-  galleryImageId: null // À remplacer par l'ID de l'image quand elle sera disponible
 };

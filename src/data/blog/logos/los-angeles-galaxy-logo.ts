@@ -6,6 +6,7 @@ export const losAngelesGalaxyLogoPost: BlogPost = {
   title: "Logo Los Angeles Galaxy : Histoire et Symbolisme de l'Emblème du Club Américain [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Los Angeles Galaxy : origines, évolution et signification de l'emblème qui représente la fierté du football américain en MLS.",
   date: "2024-04-16",
+  galleryImageId: 369,
   content: `# L'Histoire Fascinante du Logo Los Angeles Galaxy
 
 Le **logo los angeles galaxy** représente bien plus qu'un simple emblème sportif : il incarne l'identité, l'histoire et la passion d'un club pionnier de la MLS. Plongeons dans l'univers captivant de ce **los angeles galaxy logo** qui symbolise la fierté du football américain et son évolution constante.
@@ -50,5 +51,4 @@ Dans un paysage sportif américain extrêmement concurrentiel, le **los angeles 
   keywords: "logo los angeles galaxy, los angeles galaxy logo, los angeles galaxy logo png, galaxy los angeles logo, logo de los angeles galaxy, logo fc galaxy de los angeles",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 59
 };

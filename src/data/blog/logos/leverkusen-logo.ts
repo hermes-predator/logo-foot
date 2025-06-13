@@ -6,6 +6,7 @@ export const leverkusenLogoPost: BlogPost = {
   title: "Logo Bayer Leverkusen : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et l'évolution du logo du Bayer Leverkusen, l'un des clubs les plus emblématiques de Bundesliga. Analyse complète de son design et sa symbolique.",
   date: "2024-05-21",
+  galleryImageId: 357,
   content: `# L'Histoire Fascinante du **Logo Bayer Leverkusen**
 
 Le **bayer leverkusen logo** est bien plus qu'un simple emblème sportif : c'est le symbole visuel d'une histoire unique dans le football allemand, celle d'un club né de l'industrie pharmaceutique pour devenir une référence du football européen. À travers une analyse détaillée, découvrons les origines, l'évolution et la signification profonde du **logo bayer leverkusen**.
@@ -70,5 +71,4 @@ En définitive, au fil de son histoire centenaire, le **bayer leverkusen equipe 
   keywords: "logo bayer leverkusen, bayer leverkusen logo, bayer leverkusen logo png, logo bayer leverkusen png, bayer 04 leverkusen logo, bayer 04 leverkusen logo png, logo bayer 04 leverkusen, bayer leverkusen png logo, bayer leverkusen equipe logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 260
 };

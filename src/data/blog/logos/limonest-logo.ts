@@ -5,6 +5,7 @@ export const limonestLogoPost: BlogPost = {
   id: 363,
   title: "**Logo Limonest** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
+  galleryImageId: 363,
   category: "logos",
   excerpt: "Découvrez l'histoire du **logo Limonest**, son évolution et sa signification. Guide complet sur l'emblème du **FC Limonest** avec analyse détaillée de son identité visuelle.",
   content: `# Guide Complet du **Logo Limonest**
@@ -37,5 +38,4 @@ Le logo s'adapte parfaitement à différents supports de communication, des mail
 
 Le **logo Limonest** transcende le simple design graphique. Il est le reflet d'une histoire riche, d'une passion pour le football et d'un territoire. Sa conception soignée et son évolution témoignent du dynamisme et de l'ambition du FC Limonest.`,
   keywords: "limonest logo, limonest foot logo, fc limonest logo",
-  galleryImageId: null
 };

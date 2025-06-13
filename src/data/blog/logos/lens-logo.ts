@@ -6,6 +6,7 @@ export const lensLogoPost: BlogPost = {
   title: "Logo RC Lens : Histoire et Évolution du Blason Sang et Or [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Racing Club de Lens : origines, symbolisme et évolution de l'emblème emblématique du club nordiste.",
   date: "2024-03-27",
+  galleryImageId: 354,
   content: `# Logo RC Lens : Histoire et Évolution du Blason Sang et Or
 
 Le **RC Lens** possède l'un des logos de football les plus caractéristiques de France. Son identité visuelle, aussi connue que ses couleurs sang et or, est emblématique du paysage footballistique français. Plongeons dans l'histoire fascinante du logo du Racing Club de Lens.

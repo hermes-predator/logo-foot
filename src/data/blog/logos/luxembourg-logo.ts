@@ -6,6 +6,7 @@ export const luxembourgLogoPost: BlogPost = {
   title: "**Logo Luxembourg** : L'Histoire de l'Emblème des Lions Rouges [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale luxembourgeoise : des origines à aujourd'hui, évolution et signification de l'emblème du Grand-Duché.",
   date: "2025-04-27",
+  galleryImageId: 373,
   category: "national-logos",
   subCategory: "national-logos",
   keywords: "logo luxembourg, luxembourg football logo, luxembourg logo, luxembourg logo png, logo luxembourg foot, luxembourg logo foot, club football logo luxembourg",
@@ -34,5 +35,4 @@ La modernisation progressive du **logo luxembourg foot** témoigne de l'ambition
 ## Conclusion
 
 Le **luxembourg football logo** est bien plus qu'un simple emblème : c'est le témoin visuel d'une histoire footballistique en constante évolution. Il incarne la fierté d'une nation qui, malgré sa taille modeste, continue de progresser et de surprendre dans le monde du football international, portée par des valeurs d'excellence et de détermination qui font la fierté de tout un pays.`,
-  galleryImageId: 77
 };

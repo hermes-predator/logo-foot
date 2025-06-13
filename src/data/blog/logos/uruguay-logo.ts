@@ -5,6 +5,7 @@ export const uruguayLogoPost: BlogPost = {
   title: "Logo Uruguay : Histoire et Design de l'Emblème du Football Uruguayen [2024]",
   excerpt: "Découvrez l'histoire complète du logo Uruguay : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-10",
+  galleryImageId: 574,
   content: `# L'Histoire Fascinante du Logo Uruguay
 
 Le **logo uruguay foot** est bien plus qu'un simple emblème sportif : c'est un symbole national qui incarne l'histoire, la passion et l'excellence du football uruguayen. Plongeons dans l'histoire captivante de ce **logo foot uruguay** qui représente l'une des nations les plus prestigieuses du football mondial.

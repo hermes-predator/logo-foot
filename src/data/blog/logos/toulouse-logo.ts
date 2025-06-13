@@ -6,6 +6,7 @@ export const toulouseLogoPost: BlogPost = {
   title: "Logo Toulouse FC : Histoire et Évolution du Design Violet [2024]",
   excerpt: "Découvrez l'histoire complète du logo du Toulouse Football Club : de ses origines à aujourd'hui, l'évolution de l'emblème du club de la ville rose.",
   date: "2024-04-04",
+  galleryImageId: 562,
   content: `Guide Complet du Logo Toulouse FC
 
 Le logo du Toulouse Football Club représente l'identité unique d'un club historique du Sud-Ouest de la France. Son design distinctif, dominé par la couleur violette emblématique, raconte l'histoire riche du club de la ville rose.

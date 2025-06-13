@@ -6,6 +6,7 @@ export const swanseaCityLogoPost: BlogPost = {
   title: "Logo Swansea City FC : Histoire et Symbolisme des Swans [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Swansea City, son évolution emblématique et la signification de ses symboles distinctifs dans cette analyse complète.",
   date: "2024-06-06",
+  galleryImageId: 552,
   content: `# L'Histoire Fascinante du **Logo Swansea City FC** à Travers les Âges
 
 Le **swansea city fc logo** représente bien plus qu'un simple emblème sportif - c'est le symbole d'une identité galloise fière, d'une riche tradition footballistique et d'une communauté passionnée. Dans cet article, nous explorons l'évolution remarquable du **logo swansea** et sa signification culturelle pour ce club emblématique du Pays de Galles.

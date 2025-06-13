@@ -5,6 +5,7 @@ export const usaLogoPost: BlogPost = {
   title: "Logo USA : Histoire et Évolution de l'Emblème de Team USA [2024]",
   excerpt: "Découvrez l'histoire complète du logo USA : des origines à aujourd'hui, évolution et signification de l'emblème de Team USA, symbole du football américain.",
   date: "2024-05-30",
+  galleryImageId: 576,
   content: `# L'Histoire Fascinante du **Logo USA**
 
 Le **logo usa** est bien plus qu'un simple emblème sportif : c'est un symbole qui incarne l'esprit pionnier, l'ambition et le dynamisme qui caractérisent si bien le football américain sur la scène internationale. Dans cet article approfondi, nous explorons l'histoire captivante du **usa logo** et découvrons l'évolution de cet emblème qui représente fièrement les États-Unis dans le monde du football.
@@ -67,5 +68,4 @@ Que ce soit dans sa version officielle utilisée par la fédération ou dans ses
   keywords: "logo usa, usa logo, logo team usa, team usa logo, logo foot usa, logo football usa, logo usa png, logo des etats unis, logo etats unis, logo etats unis foot",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 165
 };

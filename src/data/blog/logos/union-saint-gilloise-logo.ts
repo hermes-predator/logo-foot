@@ -6,6 +6,7 @@ export const unionSaintGilloiseLogoPost: BlogPost = {
   title: "**Logo Union Saint Gilloise** : Histoire et Design Complet de l'Emblème [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Union Saint Gilloise**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo Royale Union Saint-Gilloise** et de son évolution.",
   date: "2024-04-19",
+  galleryImageId: 573,
   category: "logos",
   content: `# Histoire du **Logo Union Saint Gilloise**
 
@@ -55,5 +56,4 @@ Le **logo Royale Union Saint-Gilloise** trouve diverses applications commerciale
 
 Le **logo Union Saint Gilloise** demeure un symbole fort du football belge, alliant histoire et modernité. Il continue d'évoluer tout en préservant son héritage centenaire, illustrant parfaitement l'équilibre entre tradition et innovation dans l'identité visuelle d'un club historique.`,
   keywords: "logo union saint gilloise, logo royale union saint-gilloise, logo union saint gilloise png, football belge, club belge, identité visuelle",
-  galleryImageId: null
 };

@@ -6,6 +6,7 @@ export const unibetLogoPost: BlogPost = {
   title: "Logo Unibet : Histoire et Design de l'Emblème du Bookmaker [2024]",
   excerpt: "Découvrez l'histoire complète du logo Unibet : des origines à aujourd'hui, évolution et signification de l'emblème vert du célèbre bookmaker sportif.",
   date: "2024-05-26",
+  galleryImageId: 571,
   content: `# L'Histoire Fascinante du **Logo Unibet**
 
 Le **logo unibet** est bien plus qu'un simple emblème commercial : c'est devenu un symbole reconnaissable dans l'univers des paris sportifs et du football en particulier. Dans cet article, nous explorons l'histoire captivante du **unibet logo** et découvrons ce qui en fait une marque emblématique qui accompagne les passionnés de sport et de football.
@@ -66,5 +67,4 @@ Des terrains de football aux plateformes digitales, le **logo unibet png** conti
   keywords: "logo unibet, unibet logo, logo unibet png, unibet logo png, logo png unibet",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 159
 };

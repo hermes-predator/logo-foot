@@ -6,6 +6,7 @@ export const velezSarsfieldLogoPost: BlogPost = {
   title: "**Logo Velez Sarsfield** : Histoire et Évolution de l'Emblème du Club Argentin [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Velez Sarsfield**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire argentin.",
   date: "2025-04-14",
+  galleryImageId: 581,
   content: `# L'Histoire Fascinante du **Logo Velez Sarsfield**
 
 Le **logo Velez Sarsfield** est l'un des emblèmes les plus emblématiques du football argentin. Cet écusson iconique, avec son "V" distinctif et ses couleurs bleu et blanc, raconte l'histoire riche d'un club qui a profondément marqué le paysage footballistique sud-américain.
@@ -73,5 +74,4 @@ Le **logo Velez Sarsfield** continuera sans doute d'évoluer subtilement pour r�
   keywords: "logo velez sarsfield:20, logo velez sarsfield png:10",
   category: 'logos',
   subCategory: 'south-american-clubs',
-  galleryImageId: null
 };

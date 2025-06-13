@@ -6,6 +6,7 @@ export const tigresUanlLogoPost: BlogPost = {
   title: "Logo Tigres UANL : Histoire et Analyse du Symbole Mexicain",
   excerpt: "Découvrez l'histoire et la signification du logo Tigres UANL, l'un des clubs les plus emblématiques du football mexicain. Analyse détaillée de son évolution et de son symbolisme.",
   date: "2025-04-07",
+  galleryImageId: 557,
   content: `# Logo Tigres UANL : L'Emblème du Club Mexicain
 
 Le **logo Tigres UANL** représente l'une des équipes les plus prestigieuses du football mexicain. Basé dans la ville de San Nicolás de los Garza, ce club fondé en 1960 est devenu une référence non seulement au Mexique mais dans toute l'Amérique du Nord. Dans cet article, nous allons explorer l'histoire fascinante du **logo Tigres UANL PNG** et sa signification profonde pour les supporters.

@@ -6,6 +6,7 @@ export const unionBerlinLogoPost: BlogPost = {
   title: "Logo FC Union Berlin : Histoire et Évolution d'un Symbole Allemand [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Union Berlin, symbole d'un club unique en Bundesliga. Analyse complète de son évolution et de sa signification culturelle.",
   date: "2024-04-15",
+  galleryImageId: 572,
   content: `# L'Histoire du **Logo Union Berlin** : Un Symbole d'Authenticité
 
 Le **logo Union Berlin** représente bien plus qu'un simple emblème sportif. Il incarne l'esprit unique d'un club qui a su préserver son authenticité dans le football moderne allemand.
@@ -31,5 +32,4 @@ Dans le paysage du football allemand, le **logo FC Union Berlin** est devenu syn
   keywords: "logo union berlin, union berlin logo, logo fc union berlin, fc union berlin logo, bundesliga logo",
   category: "logos",
   subCategory: "club-logos",
-  galleryImageId: 4
 };

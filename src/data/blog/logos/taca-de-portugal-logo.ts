@@ -5,7 +5,7 @@ export const tacaDePortugalLogoPost: BlogPost = {
   title: "Logo Taça de Portugal : Histoire et Évolution du Symbole Emblématique [2024]",
   excerpt: "Découvrez l'histoire complète du logo de la Taça de Portugal : origines, évolution et signification de ce symbole emblématique du football portugais.",
   date: "2024-06-25",
-  galleryImageId: 193,
+  galleryImageId: 555,
   content: `# L'Histoire Fascinante du **Logo Taça de Portugal**
 
 La **taça de portugal logo** est bien plus qu'un simple emblème sportif : c'est un symbole iconique qui représente la plus prestigieuse compétition de coupe au Portugal. Cette compétition historique, créée en 1938, s'est dotée au fil des décennies d'une identité visuelle distinctive qui reflète parfaitement le prestige et la tradition du football portugais.

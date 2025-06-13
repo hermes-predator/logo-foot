@@ -5,6 +5,7 @@ export const swedenLogoPost: BlogPost = {
   title: "Logo Suède : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Suède : des origines à aujourd'hui, évolution et signification de l'emblème du football suédois.",
   date: "2024-04-03",
+  galleryImageId: 553,
   content: `# L'Histoire Fascinante du Logo Suède Football
 
 Le **logo suede** est bien plus qu'un simple emblème sportif : c'est un symbole de fierté nationale qui représente l'identité unique du football suédois sur la scène internationale. L'évolution du **suede logo** témoigne de l'histoire riche et des traditions fortes qui caractérisent ce pays nordique dans le monde du ballon rond.
@@ -47,5 +48,4 @@ Les joueurs qui portent fièrement le maillot orné du **logo suede foot** sont 
   keywords: "logo suede, suede logo, logo suede foot, logo foot suede, logo club foot suede, equipe de foot suède logo, logo club football suede, logo suede football",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 52
 };

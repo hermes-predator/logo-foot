@@ -5,6 +5,7 @@ export const ukraineLogoPost: BlogPost = {
   title: "Logo Ukraine : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ukraine : des origines à aujourd'hui, évolution et signification de l'emblème du football ukrainien.",
   date: "2024-04-01",
+  galleryImageId: 570,
   content: `# L'Histoire Fascinante du Logo Ukraine Football
 
 Le **logo Ukraine** est bien plus qu'un simple symbole sportif : c'est une représentation de la fierté nationale, de l'identité culturelle et de la passion footballistique d'une nation entière. Plongeons dans l'univers captivant du **ukraine logo** qui incarne l'âme du football ukrainien.

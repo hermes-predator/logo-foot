@@ -5,6 +5,7 @@ export const valenciaCfLogoPost: BlogPost = {
   id: 578, // ID unique pour ce nouvel article
   title: "Logo Valence CF : Histoire et Symbolisme de l'Écusson Emblématique",
   date: "2025-04-11",
+  galleryImageId: 578,
   category: "logos",
   subCategory: "spanish",
   excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Valence CF, l'un des clubs les plus prestigieux d'Espagne. Analyse complète des symboles et de l'héritage du blason valencien.",
@@ -96,5 +97,4 @@ Que ce soit sous forme imprimée ou sous format numérique **valence logo png**,
 
 Le **logo FC Valence** reste un témoignage visuel de l'héritage culturel et sportif valencien, un symbole qui continuera d'inspirer les générations futures de supporters "Che" et de représenter les valeurs d'excellence, de tradition et de fierté régionale qui font la renommée du Valencia Club de Fútbol.`,
   keywords: "logo valence, valence logo, fc valence logo, logo de valence, logo fc valence, logo valence fc, logo valence foot, logo valence png, valence logo png",
-  galleryImageId: null
 };

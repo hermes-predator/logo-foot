@@ -6,6 +6,7 @@ export const torinoLogoPost: BlogPost = {
   title: "Logo Torino FC : Histoire et Évolution de l'Emblème du Taureau [2024]",
   excerpt: "Découvrez l'histoire fascinante du logo Torino, son évolution à travers les époques et la signification du taureau emblématique qui représente ce club historique du football italien.",
   date: "2024-05-28",
+  galleryImageId: 558,
   content: `# L'Histoire Fascinante du **Logo Torino**
 
 Le **torino logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une histoire riche, parfois tragique, mais toujours empreinte de passion et de résilience. En explorant l'évolution du **logo torino fc**, nous plongeons dans l'âme même de l'un des clubs les plus historiques du football italien.
@@ -60,5 +61,4 @@ Alors que le club poursuit son parcours dans l'élite du football italien, le **
   keywords: "logo torino, torino logo, logo torino calcio, logo torino fc, logo torino png, torino fc logo, torino logo png, fc torino logo, torino calcio logo",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 132
 };

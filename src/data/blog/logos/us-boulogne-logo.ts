@@ -6,6 +6,7 @@ export const usBoulogneLogoPost: BlogPost = {
   title: "Logo US Boulogne : Histoire et Symbolisme du Blason Nordiste [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'US Boulogne : des origines à aujourd'hui, toute l'évolution et la signification de l'emblème du club du Nord-Pas-de-Calais.",
   date: "2024-04-13",
+  galleryImageId: 575,
   content: `Guide Complet du **Logo US Boulogne**
 
 L'**US Boulogne logo** représente l'identité visuelle d'un club historique du football français. Fondé en 1898, l'Union Sportive Boulogne Côte d'Opale (USBCO) affiche un emblème distinctif qui symbolise ses racines maritimes et son héritage nordique.

@@ -5,6 +5,7 @@ export const tunisiaLogoPost: BlogPost = {
   title: "Logo Tunisie : Histoire et Symbolisme de l'Emblème du Football Tunisien [2024]",
   excerpt: "Découvrez l'histoire complète du logo Tunisie : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles de Carthage.",
   date: "2024-05-25",
+  galleryImageId: 567,
   content: `# L'Histoire Fascinante du **Logo Tunisie**
 
 Le **logo tunisie** représente bien plus qu'un simple emblème sportif pour les Tunisiens : c'est un symbole national qui incarne la fierté, l'histoire et l'identité d'une nation passionnée de football. Plongeons dans l'analyse détaillée du **tunisie logo** qui symbolise les Aigles de Carthage sur la scène internationale.
@@ -68,5 +69,4 @@ Le **logo tunisie** transcende son simple rôle d'identité visuelle pour deveni
   keywords: "logo tunisie, tunisie logo, logo tunisie foot, logo tunisie football, logo de la tunisie, logo de tunisie, logo equipe de foot tunisie, logo equipe national tunisie, logo equipe tunisie, logo foot tunisie, logo tunisie png, tunisie foot logo, tunisie logo foot",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 159
 };

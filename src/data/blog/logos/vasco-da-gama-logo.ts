@@ -6,6 +6,7 @@ export const vascoLogoPost: BlogPost = {
   title: "**Logo Vasco da Gama** : Histoire et Design de l'Emblème Légendaire [2024]",
   excerpt: "Découvrez l'histoire fascinante du **logo Vasco da Gama**, un symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Vasco da Gama logo**.",
   date: "2024-04-22",
+  galleryImageId: 580,
   content: `# L'Histoire Fascinante du **Logo Vasco da Gama**
 
 Le **Vasco da Gama logo** représente l'une des identités visuelles les plus emblématiques du football brésilien. Fondé en 1898, le club arbore fièrement un **Vasco da Gama logo PNG** qui raconte l'histoire riche des navigateurs portugais et du football brésilien.

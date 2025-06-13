@@ -31,8 +31,8 @@ const FloatingCTAContainer = () => {
       className="fixed bottom-0 left-0 right-0 z-50"
       style={{
         transform: `translateY(${translateY}%)`,
-        // Transition CSS encore plus lente pour un glissement très fluide
-        transition: 'transform 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+        // Transition CSS à 2,2 secondes pour un glissement très fluide
+        transition: 'transform 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
       }}
     >
       {/* Similar gradient to BlogHeader */}

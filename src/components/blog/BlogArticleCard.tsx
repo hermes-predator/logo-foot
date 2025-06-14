@@ -73,7 +73,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
               </div>
             </div>
             
-            <span className="text-blue-500 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-3 group-hover:translate-x-0 flex items-center gap-1">
+            <span className="text-blue-500 font-medium transition-all duration-300 group-hover:text-blue-600 flex items-center gap-1">
               Lire la suite →
             </span>
           </div>

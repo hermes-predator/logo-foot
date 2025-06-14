@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -23,7 +22,7 @@ const DisclaimerDialog = () => {
             Disclaimer
           </DialogTitle>
           <DialogDescription>
-            Avertissement important concernant l'utilisation des ressources proposées dans notre collection.
+            Clause de non-responsabilité concernant les ressources proposées dans notre collection.
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-6">

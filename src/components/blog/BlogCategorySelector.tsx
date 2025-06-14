@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Loader, BookOpen } from 'lucide-react';
@@ -36,14 +35,14 @@ const BlogCategorySelector = ({
         
         <div className="flex flex-wrap justify-center gap-3 px-4 relative z-10">
           {!currentCategory ? (
-            <span className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2 transition-all duration-300">
+            <span className="px-5 py-2.5 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2 transition-all duration-300">
               {isLoading && <Loader className="w-3 h-3 animate-spin" />}
               Tout
             </span>
           ) : (
             <Link 
               to="/blog" 
-              className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg"
+              className="px-5 py-2.5 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-md"
             >
               Tout
             </Link>
@@ -53,7 +52,7 @@ const BlogCategorySelector = ({
             currentCategory === key ? (
               <span 
                 key={key}
-                className="px-4 py-2 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2 transition-all duration-300"
+                className="px-5 py-2.5 rounded-full text-sm bg-blue-500 text-white font-medium shadow-md cursor-default whitespace-nowrap flex items-center gap-2 transition-all duration-300"
               >
                 {isLoading && <Loader className="w-3 h-3 animate-spin" />}
                 {category.name}
@@ -62,7 +61,7 @@ const BlogCategorySelector = ({
               <Link 
                 key={key} 
                 to={`/blog?category=${key}`} 
-                className="px-4 py-2 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-lg"
+                className="px-5 py-2.5 rounded-full text-sm transition-shadow duration-300 whitespace-nowrap bg-white text-gray-700 border border-gray-200 hover:shadow-md"
               >
                 {category.name}
               </Link>
@@ -82,4 +81,3 @@ const BlogCategorySelector = ({
 };
 
 export default BlogCategorySelector;
-

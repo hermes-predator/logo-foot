@@ -21,7 +21,7 @@ const CGVDialog = () => {
         <DialogHeader>
           <DialogTitle className="text-xl font-bold text-gray-800">Conditions générales de vente</DialogTitle>
           <DialogDescription>
-            Conditions régissant la vente de nos produits numériques et les droits et obligations de chaque partie.
+            Conditions régissant la vente de nos produits et les droits et obligations de chaque partie.
           </DialogDescription>
         </DialogHeader>
         <div className="mt-4 text-sm space-y-4">

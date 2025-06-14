@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle } from 'lucide-react';
 
@@ -66,4 +65,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

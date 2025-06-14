@@ -24,7 +24,7 @@ const Footer = () => {
               <DialogHeader>
                 <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
                 <DialogDescription>
-                  Formulaire de contact pour toute question ou demande d'assistance.
+                  Pour toute question ou demande d'assistance.
                 </DialogDescription>
               </DialogHeader>
               <div className="mt-4">

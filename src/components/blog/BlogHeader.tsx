@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -66,14 +64,14 @@ const BlogHeader = () => {
                         variant="outline" 
                         className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden"
                         style={{
-                          animation: 'subtlePulse 3.5s ease-in-out infinite'
+                          animation: 'subtlePulse 3s ease-in-out infinite'
                         }}
                       >
                         {/* Effet de brillance shimmer */}
                         <div 
                           className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full"
                           style={{
-                            animation: 'shimmer 3.5s ease-in-out infinite'
+                            animation: 'shimmer 3s ease-in-out infinite'
                           }}
                         ></div>
                         <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
@@ -172,4 +170,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

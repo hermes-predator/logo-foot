@@ -64,9 +64,17 @@ const BlogHeader = () => {
                       <Button 
                         variant="outline" 
                         className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden"
+                        style={{
+                          animation: 'subtlePulse 2.5s ease-in-out infinite'
+                        }}
                       >
-                        {/* Effet de brillance avec les couleurs du bouton */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/30 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></div>
+                        {/* Effet de brillance shimmer */}
+                        <div 
+                          className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full"
+                          style={{
+                            animation: 'shimmer 2.5s ease-in-out infinite'
+                          }}
+                        ></div>
                         <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
                         <span className="relative z-10">Voir le fichier</span>
                         <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
@@ -139,6 +147,18 @@ const BlogHeader = () => {
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
+        }
+        
+        @keyframes subtlePulse {
+          0%, 80% { 
+            box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
+          }
+          85% { 
+            box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.1);
+          }
+          100% { 
+            box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
+          }
         }
         `}
       </style>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -150,13 +149,13 @@ const BlogHeader = () => {
         }
         
         @keyframes subtlePulse {
-          0%, 30% { 
+          0%, 20% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
           }
-          40% { 
+          30% { 
             box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.1);
           }
-          50%, 100% { 
+          40%, 100% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
           }
         }

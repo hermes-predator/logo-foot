@@ -71,7 +71,7 @@ const BlogHeader = () => {
                         <div 
                           className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full"
                           style={{
-                            animation: 'shimmer 2.5s ease-in-out infinite'
+                            animation: 'shimmer 5s ease-in-out infinite'
                           }}
                         ></div>
                         <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
@@ -145,6 +145,7 @@ const BlogHeader = () => {
         
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
+          50% { transform: translateX(100%); }
           100% { transform: translateX(100%); }
         }
         
@@ -153,11 +154,11 @@ const BlogHeader = () => {
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             transform: scale(1);
           }
-          30% { 
+          50% { 
             box-shadow: 0 10px 40px 8px rgba(0, 0, 0, 0.6);
             transform: scale(1.02);
           }
-          40%, 100% { 
+          80%, 100% { 
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             transform: scale(1);
           }

@@ -63,9 +63,9 @@ const BlogHeader = () => {
                     <Link to="/">
                       <Button 
                         variant="outline" 
-                        className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden animate-pulse"
+                        className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden animate-[shimmer_2s_ease-in-out_infinite,subtle-pulse_2s_ease-in-out_2s_1]"
                       >
-                        {/* Effet de brillance avec pulsation combinée */}
+                        {/* Effet de brillance suivi d'une pulsation subtile */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/30 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]"></div>
                         <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
                         <span className="relative z-10">Voir le fichier</span>
@@ -139,6 +139,12 @@ const BlogHeader = () => {
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
+        }
+        
+        @keyframes subtle-pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.02); }
+          100% { transform: scale(1); }
         }
         `}
       </style>

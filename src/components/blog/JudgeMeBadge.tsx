@@ -19,7 +19,7 @@ const JudgeMeBadge = () => {
           <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
           <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
         </div>
-        <span className="text-base text-gray-200 font-medium ml-1 bg-yellow-400/20 px-2 py-1 rounded">4.9/5</span>
+        <span className="text-base text-gray-200 font-medium ml-1 bg-green-500/20 px-2 py-1 rounded">4.9/5</span>
       </div>
     </div>
   );

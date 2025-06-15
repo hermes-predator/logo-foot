@@ -150,13 +150,13 @@ const BlogHeader = () => {
         }
         
         @keyframes subtlePulse {
-          0%, 60% { 
+          0%, 50% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
           }
-          70% { 
+          60% { 
             box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.1);
           }
-          80%, 100% { 
+          70%, 100% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
           }
         }

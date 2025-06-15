@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -152,12 +153,15 @@ const BlogHeader = () => {
         @keyframes subtlePulse {
           0%, 12% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
+            transform: scale(1);
           }
           20% { 
-            box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.08);
+            box-shadow: 0 0 0 4px rgba(156, 163, 175, 0.12);
+            transform: scale(1.02);
           }
           28%, 100% { 
             box-shadow: 0 0 0 0 rgba(156, 163, 175, 0);
+            transform: scale(1);
           }
         }
         `}
@@ -167,3 +171,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

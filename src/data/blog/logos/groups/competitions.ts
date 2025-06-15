@@ -40,7 +40,6 @@ import { concacafLogoPost } from '../concacaf-logo';
 import { youthLeagueLogoPost } from '../youth-league-logo';
 import { europaConferenceLeagueLogoPost } from '../europa-conference-league-logo';
 import { copaLibertadoresLogoPost } from '../copa-libertadores-logo';
-import { copaSudamericanaLogoPost } from '../copa-sudamericana-logo';
 import { copaDoBasilLogoPost } from '../copa-do-brasil-logo';
 import { scottishCupLogoPost } from '../scottish-cup-logo';
 import { qatarStarsLeagueLogoPost } from '../qatar-stars-league-logo';
@@ -85,7 +84,6 @@ export const competitionPosts: BlogPost[] = [
   youthLeagueLogoPost,
   europaConferenceLeagueLogoPost,
   copaLibertadoresLogoPost,
-  copaSudamericanaLogoPost,
   copaDoBasilLogoPost,
   scottishCupLogoPost,
   qatarStarsLeagueLogoPost

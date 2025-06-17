@@ -15,7 +15,6 @@ import { creerLogoFootPost } from '../logos/creer-logo-foot';
 import { colorTheoryPost } from '../analysis/color-theory';
 import { footballEmblemsPost } from '../logos/football-emblems';
 import { footballLogosHistoryPost } from '../logos/football-logos-history';
-import { ecussonsClubFootEuropeenPost } from '../logos/ecussons-club-foot-europeen';
 import { logoMaillotFootPost } from './logo-maillot-foot';
 
 export const technicalPosts: BlogPost[] = [
@@ -34,6 +33,5 @@ export const technicalPosts: BlogPost[] = [
   colorTheoryPost,
   footballEmblemsPost,
   footballLogosHistoryPost,
-  ecussonsClubFootEuropeenPost,
   logoMaillotFootPost,
 ];

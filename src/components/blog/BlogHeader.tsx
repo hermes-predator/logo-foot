@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -115,12 +116,7 @@ const BlogHeader = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-800 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm">
               <p className="text-white text-base font-normal whitespace-nowrap relative z-10">
-                Aperçu de quelques collections : 
-                <Link to="/" className="inline-block ml-2 hover:opacity-80 transition-opacity duration-300">
-                  <span className="font-bold text-sm">
-                    ⦗FRONT-CLOUD⦘~ Football.zip
-                  </span>
-                </Link>
+                Aperçu de quelques collections
               </p>
             </div>
           </div>
@@ -166,3 +162,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

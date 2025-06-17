@@ -32,10 +32,10 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
-              <h1 className="text-2xl md:text-3xl font-bold mb-3">⦗FRONT-CLOUD⦘~ Football.zip</h1>
+              <h1 className="text-2xl md:text-3xl font-bold mb-3">Vous cherchez tous les logos de foot ?</h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
-                  <ArrowRight className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                  <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
@@ -51,23 +51,17 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Bouton et badge à droite - position ajustée légèrement plus bas */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 mt-4 lg:mt-6">
+            {/* Bouton et badge à droite - position ajustée */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button 
-                        variant="outline" 
-                        className="!bg-gray-800/90 !border-2 !border-gray-600/80 !text-white hover:!bg-gray-700/95 hover:!border-gray-500/90 hover:!text-white hover:!shadow-2xl !shadow-gray-700/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" 
-                        style={{
-                          animation: 'subtlePulse 2.5s ease-in-out infinite',
-                          backgroundColor: 'rgba(31, 41, 55, 0.9) !important',
-                          borderColor: 'rgba(75, 85, 99, 0.8) !important'
-                        }}
-                      >
+                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      animation: 'subtlePulse 2.5s ease-in-out infinite'
+                    }}>
                         {/* Effet de brillance shimmer */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300/15 to-transparent -translate-x-full" style={{
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
                         <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
@@ -154,7 +148,7 @@ const BlogHeader = () => {
             transform: scale(1);
           }
           50% { 
-            box-shadow: 0 10px 40px 8px rgba(31, 41, 55, 0.6);
+            box-shadow: 0 10px 40px 8px rgba(0, 0, 0, 0.6);
             transform: scale(1.02);
           }
           80%, 100% { 

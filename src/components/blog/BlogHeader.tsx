@@ -32,9 +32,14 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
-              {/* Encadré avec le nom du fichier - plus petit */}
-              <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
-                <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
+              {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md">
+                  <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                </div>
+                <Link to="/">
+                  <GoogleDriveBadge className="rounded-md" textOnly={true} />
+                </Link>
               </div>
               
               <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-2">
@@ -46,13 +51,6 @@ const BlogHeader = () => {
               <p className="text-sm md:text-base font-normal mb-5">
                 Obtenez toutes les ressources dans un fichier ZIP complet*
               </p>
-              
-              {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
-              <div className="flex justify-start mb-5">
-                <Link to="/">
-                  <GoogleDriveBadge className="rounded-md" textOnly={true} />
-                </Link>
-              </div>
             </div>
             
             {/* Bouton et badge à droite - position ajustée */}

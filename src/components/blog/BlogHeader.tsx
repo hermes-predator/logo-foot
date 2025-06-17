@@ -40,7 +40,7 @@ const BlogHeader = () => {
                 </span>
               </p>
               <p className="text-sm font-normal mb-5">
-                *Obtenez toutes les ressources dans un fichier ZIP complet
+                Obtenez toutes les ressources dans un fichier ZIP complet*
               </p>
               
               {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}

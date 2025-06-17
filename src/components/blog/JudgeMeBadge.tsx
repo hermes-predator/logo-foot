@@ -15,7 +15,12 @@ const JudgeMeBadge = () => {
   }, []);
 
   return (
-    <div className="flex items-center gap-4 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50 rounded-t-none rounded-b-sm">
+    <a 
+      href="https://judge.me/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center gap-4 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50 rounded-t-none rounded-b-sm hover:bg-gray-800/70 transition-colors duration-200 cursor-pointer"
+    >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">
         <img 
@@ -47,7 +52,7 @@ const JudgeMeBadge = () => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

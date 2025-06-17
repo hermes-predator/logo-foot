@@ -52,7 +52,7 @@ const BlogHeader = () => {
             </div>
             
             {/* Bouton et badge à droite - position ajustée */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 -mt-0 lg:-mt-1">
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

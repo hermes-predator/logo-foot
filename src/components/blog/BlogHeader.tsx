@@ -62,7 +62,7 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-600/95 border border-gray-400/80 text-white hover:bg-gray-500/95 hover:border-gray-300/80 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-gray-700/90 border border-gray-500/70 text-white hover:bg-gray-600/95 hover:border-gray-400/80 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}

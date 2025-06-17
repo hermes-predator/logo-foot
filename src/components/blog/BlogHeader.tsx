@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -52,12 +53,12 @@ const BlogHeader = () => {
             </div>
             
             {/* Bouton et badge à droite */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-2 pr-2 lg:pr-6">
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden" style={{
+                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
@@ -93,7 +94,7 @@ const BlogHeader = () => {
                 </Tooltip>
               </TooltipProvider>
               
-              {/* Badge Judge.me positionné juste en-dessous du bouton */}
+              {/* Badge Judge.me collé au bouton */}
               <JudgeMeBadge />
             </div>
           </div>
@@ -159,3 +160,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

@@ -56,7 +56,6 @@ import { sochauxLogoPost } from '../sochaux-logo';
 import { stadeRennaisLogoPost } from '../stade-rennais-logo';
 import { strasbourgLogoPost } from '../strasbourg-logo';
 import { toulouseFCLogoPost } from '../toulouse-fc-logo';
-import { toulouseLogoPost } from '../toulouse-logo';
 import { troyesLogoPost } from '../troyes-logo';
 import { valenciennesLogoPost } from '../valenciennes-logo';
 import { raonEtapeLogoPost } from '../raon-l-etape-logo';
@@ -118,7 +117,6 @@ export const frenchClubPosts: BlogPost[] = [
   stadeRennaisLogoPost,
   strasbourgLogoPost,
   toulouseFCLogoPost,
-  toulouseLogoPost,
   troyesLogoPost,
   valenciennesLogoPost,
   lePuyFootLogoPost,

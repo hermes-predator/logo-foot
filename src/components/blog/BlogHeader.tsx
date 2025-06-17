@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { Sparkles, Trophy, Shield, Star } from 'lucide-react';
-import ParticleBackground from './ParticleBackground';
-import ImageCarousel from './ImageCarousel';
+import FloatingParticles from './FloatingParticles';
+import BlogHeaderCarousel from './BlogHeaderCarousel';
 import JudgeMeBadge from './JudgeMeBadge';
 
 const BlogHeader = () => {
   return (
     <div className="relative min-h-[600px] overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-      <ParticleBackground />
+      <FloatingParticles />
       
       <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="text-center mb-16">
@@ -51,7 +51,7 @@ const BlogHeader = () => {
           </div>
         </div>
 
-        <ImageCarousel />
+        <BlogHeaderCarousel />
       </div>
     </div>
   );

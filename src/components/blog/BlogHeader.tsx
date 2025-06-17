@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -60,7 +61,7 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-gray-800/80 border border-gray-600/60 text-white hover:bg-gray-700/90 hover:border-gray-500/70 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}

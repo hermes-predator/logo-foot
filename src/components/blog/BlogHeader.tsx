@@ -32,7 +32,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
               {/* Encadré avec le nom du fichier - plus petit */}
-              <div className="inline-block bg-gray-900/60 border-2 border-gray-700/50 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
+              <div className="inline-block bg-gray-900/60 border border-gray-700/50 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
                 <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
               </div>
               

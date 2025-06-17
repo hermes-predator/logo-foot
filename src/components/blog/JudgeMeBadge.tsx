@@ -15,13 +15,13 @@ const JudgeMeBadge = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50">
+    <div className="flex flex-col items-center justify-center gap-3 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50">
       {/* Logo Judge.me et étoiles */}
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-4">
         <img 
           src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
           alt="Judge.me" 
-          className="h-6 w-auto opacity-80 brightness-105" 
+          className="h-8 w-auto opacity-80 brightness-105" 
           loading="lazy"
         />
         <div className="flex items-center gap-1">
@@ -36,8 +36,8 @@ const JudgeMeBadge = () => {
         </div>
       </div>
       
-      {/* Nombre de téléchargements */}
-      <div className="text-xs text-gray-300 font-medium">
+      {/* Nombre de téléchargements - légèrement décalé */}
+      <div className="text-xs text-gray-300 font-medium -mt-1">
         {downloadCount.toLocaleString('fr-FR')} téléchargements
       </div>
     </div>

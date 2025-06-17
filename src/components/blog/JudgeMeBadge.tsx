@@ -15,7 +15,7 @@ const JudgeMeBadge = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-3 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50">
+    <div className="flex flex-col items-center justify-center gap-4 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50 rounded-t-none rounded-b-md">
       {/* Logo Judge.me et étoiles */}
       <div className="flex items-center justify-center gap-4">
         <img 

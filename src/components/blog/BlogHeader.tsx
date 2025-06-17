@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -9,6 +10,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { Separator } from '@/components/ui/separator';
 import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const BlogHeader = () => {
   return <div className="w-full relative overflow-hidden rounded-b-3xl">
       {/* Gradient animé en arrière-plan */}
@@ -50,7 +52,7 @@ const BlogHeader = () => {
             </div>
             
             {/* Bouton et badge à droite */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-3 pr-2 lg:pr-6">
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-2 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -91,7 +93,7 @@ const BlogHeader = () => {
                 </Tooltip>
               </TooltipProvider>
               
-              {/* Badge Judge.me */}
+              {/* Badge Judge.me positionné juste en-dessous du bouton */}
               <JudgeMeBadge />
             </div>
           </div>
@@ -155,4 +157,5 @@ const BlogHeader = () => {
       </style>
     </div>;
 };
+
 export default BlogHeader;

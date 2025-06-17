@@ -60,7 +60,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Thomas D.",
     role: "Non renseigné",
-    content: "Vraiment heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
+    content: "Heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
     rating: 5
   },
   {

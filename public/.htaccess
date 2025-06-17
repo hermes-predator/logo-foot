@@ -3,15 +3,22 @@
   RewriteEngine On
   RewriteBase /
   
-  # Permettre explicitement les URLs avec paramètres de requête
+  # Gestion spécifique pour les routes du blog avec paramètres
+  RewriteCond %{REQUEST_URI} ^/blog$ [NC]
   RewriteCond %{QUERY_STRING} ^category=.+$ [NC]
-  RewriteRule ^blog$ /index.html [L,QSA]
+  RewriteRule . /index.html [L,QSA]
   
-  # Règles standards pour React Router
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
+  # Gestion des routes spécifiques du blog
+  RewriteRule ^blog/?$ /index.html [L,QSA]
+  RewriteRule ^blog/(.+)$ /index.html [L,QSA]
+  
+  # Permettre l'accès aux fichiers statiques existants
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d [OR]
+  RewriteCond %{REQUEST_FILENAME} -l
+  RewriteRule ^ - [L]
+  
+  # Rediriger toutes les autres requêtes vers index.html pour React Router
   RewriteRule . /index.html [L,QSA]
 </IfModule>
 

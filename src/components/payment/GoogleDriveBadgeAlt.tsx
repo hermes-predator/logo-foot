@@ -10,8 +10,8 @@ interface GoogleDriveBadgeAltProps {
 const GoogleDriveBadgeAlt = ({ className = '' }: GoogleDriveBadgeAltProps) => {
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-3 py-2 bg-gray-700/60 text-gray-200 border border-gray-600/50 
-        shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gray-600/70 hover:border-gray-500/60 
+      className={`inline-flex items-center gap-2 px-3 py-2 bg-white text-gray-700 border border-gray-200 
+        shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gray-50 hover:border-gray-300 
         backdrop-blur-sm font-medium text-xs ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"

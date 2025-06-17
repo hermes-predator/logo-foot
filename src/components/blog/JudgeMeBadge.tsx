@@ -15,33 +15,32 @@ const JudgeMeBadge = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-3 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50 rounded-t-none rounded-b-sm">
-      {/* Logo Judge.me - plus bas */}
-      <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center gap-2 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border border-gray-700/50 rounded-t-none rounded-b-sm">
+      {/* Logo Judge.me en haut */}
+      <div className="flex items-center justify-center mb-1">
         <img 
           src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
           alt="Judge.me" 
-          className="h-7 w-auto opacity-80 brightness-105" 
+          className="h-6 w-auto opacity-80 brightness-105" 
           loading="lazy"
         />
       </div>
       
-      {/* Étoiles, téléchargements et note sur la même ligne */}
-      <div className="flex items-center justify-center gap-3">
-        <div className="flex">
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-        </div>
-        
-        {/* Nombre de téléchargements au milieu */}
-        <div className="text-xs text-gray-300 font-medium">
+      {/* Étoiles centrées */}
+      <div className="flex items-center justify-center">
+        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+      </div>
+      
+      {/* Note et téléchargements sur la même ligne */}
+      <div className="flex items-center justify-center gap-3 text-xs">
+        <span className="text-gray-200 font-bold bg-teal-500/20 px-2 py-1 rounded">4.9/5</span>
+        <div className="text-gray-300 font-medium">
           {downloadCount.toLocaleString('fr-FR')} téléchargements
         </div>
-        
-        <span className="text-sm text-gray-200 font-bold bg-teal-500/20 px-2 py-1 rounded">4.9/5</span>
       </div>
     </div>
   );

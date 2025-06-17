@@ -33,11 +33,11 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-6">
               {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
               <div className="flex items-center gap-3 mb-4">
-                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md">
+                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-md">
                   <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </div>
                 <Link to="/">
-                  <GoogleDriveBadge className="rounded-md" textOnly={true} />
+                  <GoogleDriveBadge className="rounded" textOnly={true} />
                 </Link>
               </div>
               

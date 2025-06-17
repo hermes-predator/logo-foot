@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -58,11 +57,11 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-blue-600/80 border-2 border-blue-500/60 text-white hover:bg-blue-500/90 hover:border-blue-400/70 hover:text-white hover:shadow-2xl shadow-blue-600/20 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-gray-900/80 border-2 border-gray-700/60 text-white hover:bg-gray-800/90 hover:border-gray-600/70 hover:text-white hover:shadow-2xl shadow-gray-800/20 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent -translate-x-full" style={{
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
                         <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
@@ -149,7 +148,7 @@ const BlogHeader = () => {
             transform: scale(1);
           }
           50% { 
-            box-shadow: 0 10px 40px 8px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 40px 8px rgba(55, 65, 81, 0.4);
             transform: scale(1.02);
           }
           80%, 100% { 
@@ -163,4 +162,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

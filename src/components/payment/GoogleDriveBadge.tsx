@@ -28,7 +28,6 @@ const GoogleDriveBadge = ({
         aria-label="Stockable sur votre Google Drive"
       >
         <BadgeCheck className={`h-4 w-4 text-green-600 ${cursorHelp ? 'cursor-help' : ''}`} aria-hidden="true" />
-        <span className={`font-medium text-sm ${cursorHelp ? 'cursor-help' : ''}`}>Stockable sur votre</span>
         <img 
           src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
           alt="Google Drive" 

@@ -100,10 +100,13 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Ligne de séparation avec texte superposé */}
+      {/* Ligne de séparation avec texte superposé et effet de fondu aux extrémités */}
       <div className="relative z-20 px-4 mb-12">
         <div className="container mx-auto relative">
-          <Separator className="bg-white/30" />
+          {/* Ligne de séparation avec dégradé */}
+          <div className="relative h-px">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+          </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-800 px-6 py-2 rounded-full border border-white/20 shadow-lg backdrop-blur-sm">

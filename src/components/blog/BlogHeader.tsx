@@ -36,7 +36,7 @@ const BlogHeader = () => {
               <h1 className="text-2xl md:text-3xl font-bold mb-3">⦗FRONT-CLOUD⦘~ Football.zip</h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
-                  <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                  <ArrowRight className="h-4 w-4 text-blue-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
@@ -163,3 +163,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

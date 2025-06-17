@@ -1,6 +1,7 @@
 
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+import GoogleDriveBadgeAlt from '../payment/GoogleDriveBadgeAlt';
 import FloatingParticles from './FloatingParticles';
 import JudgeMeBadge from './JudgeMeBadge';
 import BlogHeaderCarousel from './BlogHeaderCarousel';
@@ -35,7 +36,7 @@ const BlogHeader = () => {
               <h1 className="text-2xl md:text-3xl font-bold mb-3">Vous cherchez tous les logos de foot ?</h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
-                  <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                  <ArrowRight className="h-4 w-4 text-blue-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
@@ -51,15 +52,15 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Bouton et badge à droite - position ajustée */}
+            {/* Bouton et badges à droite - position ajustée */}
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
                       <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
-                      animation: 'subtlePulse 2.5s ease-in-out infinite'
-                    }}>
+                        animation: 'subtlePulse 2.5s ease-in-out infinite'
+                      }}>
                         {/* Effet de brillance shimmer */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
@@ -93,7 +94,12 @@ const BlogHeader = () => {
                 </Tooltip>
               </TooltipProvider>
               
-              {/* Badge Judge.me collé au bouton */}
+              {/* Nouveau badge Google Drive alternatif */}
+              <div className="w-full flex justify-center">
+                <GoogleDriveBadgeAlt />
+              </div>
+              
+              {/* Badge Judge.me collé au nouveau badge */}
               <JudgeMeBadge />
             </div>
           </div>

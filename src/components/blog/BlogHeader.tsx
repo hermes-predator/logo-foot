@@ -57,16 +57,16 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
-                        <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
+                        <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
                         <span className="relative z-10">Voir le fichier</span>
-                        <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
+                        <ArrowRight className="h-9 w-9 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                       </Button>
                     </Link>
                   </TooltipTrigger>

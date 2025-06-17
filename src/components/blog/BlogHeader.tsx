@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -42,7 +43,7 @@ const BlogHeader = () => {
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
-              <p className="text-sm font-normal mb-5">
+              <p className="text-sm md:text-base font-normal mb-5">
                 Obtenez toutes les ressources dans un fichier ZIP complet*
               </p>
               

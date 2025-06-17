@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -32,6 +33,7 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
+              <h1 className="text-2xl md:text-3xl font-bold mb-3">⦗FRONT-CLOUD⦘~ Football.zip</h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />

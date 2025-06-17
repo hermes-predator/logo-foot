@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -10,19 +9,16 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { Separator } from '@/components/ui/separator';
 import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const BlogHeader = () => {
-  return (
-    <div className="w-full relative overflow-hidden rounded-b-3xl">
+  return <div className="w-full relative overflow-hidden rounded-b-3xl">
       {/* Gradient animé en arrière-plan */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800 rounded-b-3xl">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/10 to-gray-900/30 animate-pulse rounded-b-3xl"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-gray-800/50 via-transparent to-gray-900/40 rounded-b-3xl" 
-             style={{
-               background: 'linear-gradient(45deg, rgba(17,24,39,0.8) 0%, rgba(55,65,81,0.3) 25%, rgba(17,24,39,0.9) 50%, rgba(31,41,55,0.4) 75%, rgba(17,24,39,0.8) 100%)',
-               backgroundSize: '400% 400%',
-               animation: 'gradientShift 8s ease-in-out infinite'
-             }}></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-gray-800/50 via-transparent to-gray-900/40 rounded-b-3xl" style={{
+        background: 'linear-gradient(45deg, rgba(17,24,39,0.8) 0%, rgba(55,65,81,0.3) 25%, rgba(17,24,39,0.9) 50%, rgba(31,41,55,0.4) 75%, rgba(17,24,39,0.8) 100%)',
+        backgroundSize: '400% 400%',
+        animation: 'gradientShift 8s ease-in-out infinite'
+      }}></div>
       </div>
       
       {/* Particules flottantes */}
@@ -34,9 +30,7 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
-              <h1 className="text-2xl md:text-3xl font-bold mb-3">
-                Vous voulez tous les logos de foot ?
-              </h1>
+              <h1 className="text-2xl md:text-3xl font-bold mb-3">Vous cherchez tous les logos de foot ?</h1>
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-4 w-4 text-orange-500 flex-shrink-0" />
@@ -61,20 +55,13 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button 
-                        variant="outline" 
-                        className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden"
-                        style={{
-                          animation: 'subtlePulse 2.5s ease-in-out infinite'
-                        }}
-                      >
+                      <Button variant="outline" className="bg-gray-900/60 border-2 border-gray-700/50 text-white hover:bg-gray-800/70 hover:border-gray-600/60 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-20 px-8 py-5 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden" style={{
+                      animation: 'subtlePulse 2.5s ease-in-out infinite'
+                    }}>
                         {/* Effet de brillance shimmer */}
-                        <div 
-                          className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full"
-                          style={{
-                            animation: 'shimmer 2.5s ease-in-out infinite'
-                          }}
-                        ></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full" style={{
+                        animation: 'shimmer 2.5s ease-in-out infinite'
+                      }}></div>
                         <Folder className="!w-8 !h-8 transition-transform duration-200 relative z-10" />
                         <span className="relative z-10">Voir le fichier</span>
                         <ArrowRight className="h-8 w-8 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
@@ -166,8 +153,6 @@ const BlogHeader = () => {
         }
         `}
       </style>
-    </div>
-  );
+    </div>;
 };
-
 export default BlogHeader;

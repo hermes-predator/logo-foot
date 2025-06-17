@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -33,9 +32,11 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
-              {/* Encadré avec le nom du fichier - plus petit */}
-              <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
-                <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
+              {/* Badge Google Drive remplace l'encadré avec le nom du fichier */}
+              <div className="flex justify-start mb-3">
+                <Link to="/">
+                  <GoogleDriveBadge className="rounded-md" />
+                </Link>
               </div>
               
               <p className="text-base md:text-lg text-white max-w-3xl leading-relaxed mb-2">
@@ -47,13 +48,6 @@ const BlogHeader = () => {
               <p className="text-sm font-normal mb-5">
                 Obtenez toutes les ressources dans un fichier ZIP complet*
               </p>
-              
-              {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
-              <div className="flex justify-start mb-5">
-                <Link to="/">
-                  <GoogleDriveBadge className="rounded-md" />
-                </Link>
-              </div>
             </div>
             
             {/* Bouton et badge à droite - position ajustée */}
@@ -167,4 +161,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

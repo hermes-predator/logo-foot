@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -37,7 +36,7 @@ const BlogHeader = () => {
                 <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
               </div>
               
-              <p className="text-lg md:text-xl lg:text-2xl text-white max-w-3xl leading-relaxed mb-2">
+              <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>

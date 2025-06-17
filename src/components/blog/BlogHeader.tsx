@@ -27,7 +27,7 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-10 pb-6">
+        <div className="container mx-auto px-4 pt-8 pb-6">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-6">

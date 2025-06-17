@@ -17,7 +17,7 @@ const FloatingCTAButton = ({ onClick, size = 'sm', className = '' }: FloatingCTA
       className={`group relative overflow-hidden bg-white hover:bg-gray-100 ${className}`}
       size={size}
     >
-      <span className="font-medium relative z-10 text-blue-600">
+      <span className="font-bold relative z-10 text-blue-600">
         En savoir plus
       </span>
       <ArrowRight 

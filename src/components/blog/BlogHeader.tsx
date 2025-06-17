@@ -51,8 +51,8 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Bouton et badge à droite - remonté avec mt-4 */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 mt-4">
+            {/* Bouton et badge à droite - remonté davantage */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 -mt-2 lg:-mt-4">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

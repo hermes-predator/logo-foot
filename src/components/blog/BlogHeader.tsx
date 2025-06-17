@@ -28,12 +28,12 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-8 pb-6">
+        <div className="container mx-auto px-4 pt-12 pb-6">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 pl-2 lg:pl-6">
+            <div className="flex-1 pl-2 lg:pl-6 mt-6">
               {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-4">
                 <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md">
                   <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </div>
@@ -42,13 +42,13 @@ const BlogHeader = () => {
                 </Link>
               </div>
               
-              <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-2">
+              <p className="text-lg md:text-xl text-white max-w-3xl leading-relaxed mb-3">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span> organisés par pays.</span>
                 </span>
               </p>
-              <p className="text-sm md:text-base font-normal mb-5">
+              <p className="text-sm md:text-base font-normal mb-6">
                 Obtenez toutes les ressources dans un fichier ZIP complet*
               </p>
             </div>

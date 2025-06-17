@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -51,8 +50,8 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Bouton et badge à droite - position ajustée plus bas */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 mt-6 lg:mt-8">
+            {/* Bouton et badge à droite - position ajustée légèrement plus bas */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6 mt-4 lg:mt-6">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

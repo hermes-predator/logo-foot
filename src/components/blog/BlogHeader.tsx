@@ -50,7 +50,7 @@ const BlogHeader = () => {
               {/* Badge Google Drive avec léger arrondi et lien vers l'accueil */}
               <div className="flex justify-start mb-5">
                 <Link to="/">
-                  <GoogleDriveBadge className="rounded-md" />
+                  <GoogleDriveBadge className="rounded-md" textOnly={true} />
                 </Link>
               </div>
             </div>

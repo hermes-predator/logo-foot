@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -32,7 +33,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
               {/* Encadré avec le nom du fichier - plus petit */}
-              <div className="inline-block bg-gradient-to-r from-gray-900/80 via-black/80 to-gray-800/80 border border-white/20 px-2 py-1 rounded-md shadow-md backdrop-blur-sm mb-3">
+              <div className="inline-block bg-gradient-to-r from-gray-900/80 via-black/80 to-gray-800/80 border border-white/20 px-2 py-1 rounded-sm shadow-md backdrop-blur-sm mb-3">
                 <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
               </div>
               

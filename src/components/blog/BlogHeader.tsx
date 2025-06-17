@@ -57,11 +57,17 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-900/80 border-2 border-gray-700/60 text-white hover:bg-gray-800/90 hover:border-gray-600/70 hover:text-white hover:shadow-2xl shadow-gray-800/20 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
-                      animation: 'subtlePulse 2.5s ease-in-out infinite'
-                    }}>
+                      <Button 
+                        variant="outline" 
+                        className="!bg-gray-800/90 !border-2 !border-gray-600/80 !text-white hover:!bg-gray-700/95 hover:!border-gray-500/90 hover:!text-white hover:!shadow-2xl !shadow-gray-700/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" 
+                        style={{
+                          animation: 'subtlePulse 2.5s ease-in-out infinite',
+                          backgroundColor: 'rgba(31, 41, 55, 0.9) !important',
+                          borderColor: 'rgba(75, 85, 99, 0.8) !important'
+                        }}
+                      >
                         {/* Effet de brillance shimmer */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent -translate-x-full" style={{
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300/15 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
                         <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
@@ -148,7 +154,7 @@ const BlogHeader = () => {
             transform: scale(1);
           }
           50% { 
-            box-shadow: 0 10px 40px 8px rgba(55, 65, 81, 0.4);
+            box-shadow: 0 10px 40px 8px rgba(31, 41, 55, 0.6);
             transform: scale(1.02);
           }
           80%, 100% { 

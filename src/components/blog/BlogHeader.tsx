@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -33,7 +34,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6">
               {/* Encadré avec le nom du fichier - plus petit */}
-              <div className="inline-block bg-gray-900/60 border border-gray-700/50 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
+              <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm shadow-md backdrop-blur-md mb-3">
                 <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
               </div>
               
@@ -61,7 +62,7 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-800/80 border border-gray-600/60 text-white hover:bg-gray-700/90 hover:border-gray-500/70 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-gray-700/90 border border-gray-500/70 text-white hover:bg-gray-600/95 hover:border-gray-400/80 hover:text-white hover:shadow-2xl shadow-black/30 transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
@@ -166,3 +167,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

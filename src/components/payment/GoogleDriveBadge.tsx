@@ -25,10 +25,18 @@ const GoogleDriveBadge = ({
           shadow-[0_2px_5px_rgba(0,0,0,0.05)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.08)] 
           transition-all duration-300 hover:bg-gray-50 hover:border-gray-300/80 ${alwaysEnlarged ? hoverStyles : ''} ${cursorHelp ? 'cursor-help' : ''} ${className}`}
         role="status"
-        aria-label="Stockable sur votre"
+        aria-label="Stockable sur votre Google Drive"
       >
         <BadgeCheck className={`h-4 w-4 text-green-600 ${cursorHelp ? 'cursor-help' : ''}`} aria-hidden="true" />
         <span className={`font-medium text-sm ${cursorHelp ? 'cursor-help' : ''}`}>Stockable sur votre</span>
+        <img 
+          src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
+          alt="Google Drive" 
+          className={`h-6 w-auto object-contain ${cursorHelp ? 'cursor-help' : ''}`}
+          loading="lazy"
+          width="60"
+          height="24"
+        />
       </Badge>
     );
   }

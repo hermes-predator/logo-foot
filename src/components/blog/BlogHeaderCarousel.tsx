@@ -46,7 +46,7 @@ const BlogHeaderCarousel = () => {
       >
         <CarouselContent>
           {carouselImages.map((image, index) => (
-            <CarouselItem key={index} className="basis-1/3">
+            <CarouselItem key={index} className="basis-1/4">
               <div className="p-3">
                 <Link to="/" className="block">
                   <div className="rounded-lg overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-3xl">
@@ -57,7 +57,7 @@ const BlogHeaderCarousel = () => {
                       height={640}
                       aspectRatio={1}
                       className="w-full h-full object-cover drop-shadow-xl"
-                      priority={index < 3}
+                      priority={index < 4}
                     />
                   </div>
                 </Link>

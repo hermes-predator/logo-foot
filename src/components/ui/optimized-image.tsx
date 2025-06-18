@@ -102,10 +102,10 @@ export function OptimizedImage({
 
   return (
     <div className="relative overflow-hidden protected-content">
-      <AspectRatio ratio={aspectRatio} className="bg-muted/20">
+      <AspectRatio ratio={aspectRatio} className="bg-gray-900/95">
         {!isLoaded && <Skeleton className="absolute inset-0 z-10" />}
         {error ? (
-          <div className="flex items-center justify-center w-full h-full bg-muted/30 text-muted-foreground">
+          <div className="flex items-center justify-center w-full h-full bg-gray-900/95 text-muted-foreground">
             <span className="text-sm">Image unavailable</span>
           </div>
         ) : (

@@ -32,7 +32,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-6">
               {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-6">
                 <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm backdrop-blur-md">
                   <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </div>

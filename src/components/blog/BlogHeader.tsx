@@ -18,72 +18,67 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-12 pb-8">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+        <div className="container mx-auto px-4 pt-8 pb-6">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 pl-2 lg:pl-8 space-y-6">
-              {/* Container réduit pour le nom du fichier et badge Google Drive */}
-              <div className="relative">
-                <div className="inline-flex items-center gap-2 backdrop-blur-lg rounded-lg px-3 py-2 shadow-xl border border-white/10 bg-gradient-to-r from-white/5 to-white/10 hover:from-white/10 hover:to-white/15 transition-all duration-500 group">
+            <div className="flex-1 pl-2 lg:pl-6 mt-4">
+              {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
+              <div className="relative mb-4">
+                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-gray-700/30" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
                   
-                  <div className="relative z-10 border border-white/20 px-2 py-1.5 rounded-md backdrop-blur-sm bg-gradient-to-r from-black/20 to-black/30 group-hover:border-white/30 transition-all duration-300">
-                    <span className="text-xs font-bold text-white tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <div className="relative z-10 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-sm" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
+                    <span className="text-sm font-semibold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  <Link to="/" className="relative z-10 transform hover:scale-105 transition-transform duration-200">
-                    <GoogleDriveBadge className="rounded-md shadow-md scale-75" textOnly={true} />
+                  <Link to="/" className="relative z-10">
+                    <GoogleDriveBadge className="rounded" textOnly={true} />
                   </Link>
                 </div>
               </div>
               
-              {/* Texte principal avec design amélioré */}
-              <div className="space-y-3">
-                <p className="text-2xl md:text-3xl lg:text-4xl text-white max-w-4xl leading-relaxed">
-                  <span className="flex items-center gap-3">
-                    <ArrowRight className="h-6 w-6 md:h-7 md:w-7 text-orange-400 flex-shrink-0 animate-pulse" />
-                    <span className="font-semibold">Téléchargez <span className="font-black bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">+ de 8 600 LOGOS</span> de Clubs de Football</span>
-                  </span>
-                </p>
-                <p className="text-sm md:text-base font-light text-gray-200 ml-9 md:ml-10">
-                  Obtenez un fichier ZIP complet parfaitement organisé par pays*
-                </p>
-              </div>
+              
+              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-2">
+                <span className="flex items-center gap-2">
+                  <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                  <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
+                </span>
+              </p>
+              <p className="text-xs md:text-sm font-normal mb-6">
+                Obtenez un fichier ZIP complet parfaitement organisé par pays*
+              </p>
             </div>
             
-            {/* Section droite avec bouton et badge améliorés */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-8">
-              {/* Container unifié pour le bouton et le badge avec design premium */}
-              <div className="relative backdrop-blur-lg rounded-2xl shadow-2xl group hover:shadow-3xl transition-all duration-500 overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 to-white/10">
+            
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
+              {/* Container unifié pour le bouton et le badge */}
+              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border border-gray-700/20" style={{ backgroundColor: 'rgba(30, 29, 28, 0.7)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-transparent border-0 text-white hover:bg-white/10 hover:text-white transition-all duration-300 h-24 px-12 py-6 text-lg gap-4 group backdrop-blur-none font-bold relative overflow-hidden rounded-2xl rounded-b-none">
-                          <Folder className="!w-8 !h-8 transition-all duration-300 relative z-10 group-hover:scale-110" />
-                          <span className="relative z-10 text-lg">Voir le fichier</span>
-                          <ArrowRight className="h-8 w-8 group-hover:translate-x-2 transition-all duration-300 relative z-10" />
-                          
-                          {/* Effet de brillance au survol */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+                        <Button variant="outline" className="bg-transparent border-0 text-gray-200 hover:bg-gray-700/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none">
+                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
+                          <span className="relative z-10">Voir le fichier</span>
+                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                         </Button>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="right" className="border-white/20 text-white p-6 rounded-xl shadow-2xl" style={{ backgroundColor: 'rgb(20, 19, 18)' }}>
+                    <TooltipContent side="right" className="border-gray-700 text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)' }}>
                       <div className="text-sm">
-                        <div className="font-bold mb-4 text-center text-lg">⦗FRONT-CLOUD⦘~ Football.zip</div>
-                        <Separator className="bg-white/20 mb-4" />
-                        <div className="grid grid-cols-2 gap-3">
-                          <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg">
+                        <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                        <Separator className="bg-gray-700 mb-3" />
+                        <div className="grid grid-cols-2 gap-2">
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                             1 fichier ZIP
                           </Badge>
-                          <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg">
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                             66 collections
                           </Badge>
-                          <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg">
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                             8 774 logos
                           </Badge>
-                          <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg">
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
                             Format PNG
                           </Badge>
                         </div>
@@ -92,10 +87,10 @@ const BlogHeader = () => {
                   </Tooltip>
                 </TooltipProvider>
                 
-                {/* Ligne de séparation élégante */}
-                <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                {/* Ligne de séparation subtile */}
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-600/40 to-transparent"></div>
                 
-                {/* Badge Judge.me intégré avec design amélioré */}
+                {/* Badge Judge.me intégré */}
                 <JudgeMeBadge />
               </div>
             </div>
@@ -103,28 +98,26 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Ligne de séparation avec texte superposé et design premium */}
-      <div className="relative z-20 px-4 mb-16">
+      {/* Ligne de séparation avec texte superposé et effet de fondu aux extrémités */}
+      <div className="relative z-20 px-4 mb-12">
         <div className="container mx-auto relative">
-          {/* Ligne de séparation avec dégradé amélioré */}
+          {/* Ligne de séparation avec dégradé */}
           <div className="relative h-px">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
           </div>
-          {/* Texte centré sur la ligne avec design premium */}
+          {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative backdrop-blur-lg rounded-xl px-6 py-3 border border-white/20 bg-gradient-to-r from-black/30 to-black/40 shadow-2xl">
-              <p className="text-white text-sm md:text-base font-semibold whitespace-nowrap relative z-10">
+            <div className="relative backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
+              <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>
-              {/* Effet de brillance subtil */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse rounded-xl"></div>
             </div>
           </div>
         </div>
       </div>
       
       {/* Carrousel en superposition qui déborde légèrement - avec plus d'espace */}
-      <div className="relative z-20 pb-8">
+      <div className="relative z-20 pb-6">
         <BlogHeaderCarousel />
       </div>
     </div>;

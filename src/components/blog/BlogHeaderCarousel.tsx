@@ -4,38 +4,22 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import { Link } from 'react-router-dom';
 import type { CarouselApi } from '@/components/ui/carousel';
+import { generateGalleryItems } from '@/utils/galleryData';
 
 const BlogHeaderCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 
-  const carouselImages = [
-    {
-      src: "/lovable-uploads/42eae4e6-1176-4a6a-b811-98f89e509603.png",
-      alt: "Collections de logos - Image 1"
-    },
-    {
-      src: "/lovable-uploads/25a5462c-2f32-4a9a-8d6e-9c1f677fe604.png",
-      alt: "Collections de logos - Image 2"
-    },
-    {
-      src: "/lovable-uploads/437d5bd3-a26d-4459-970c-1297f805eb0b.png",
-      alt: "Collections de logos - Image 3"
-    },
-    {
-      src: "/lovable-uploads/00cc641d-2544-4371-a712-0537f57f8887.png",
-      alt: "Collections de logos - Image 4"
-    },
-    {
-      src: "/lovable-uploads/90dcc6ef-0dc7-4a03-8e58-609f031c23c4.png",
-      alt: "Collections de logos - Image 5"
-    },
-    {
-      src: "/lovable-uploads/6bcd6dd7-6a9c-46cc-b20b-2d1e84099b58.png",
-      alt: "Collections de logos - Image 6"
-    }
-  ];
+  // Utiliser les mêmes données que la galerie de la page d'accueil
+  const { clubItems } = generateGalleryItems();
+  
+  // Prendre les 6 premières images de la galerie
+  const carouselImages = clubItems.slice(0, 6).map(item => ({
+    src: item.imageUrl,
+    alt: item.altText,
+    title: item.title
+  }));
 
   useEffect(() => {
     if (!api) {

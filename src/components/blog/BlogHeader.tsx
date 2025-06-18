@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -34,9 +33,9 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
-              <div className="flex items-center gap-2 mb-6">
-                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm backdrop-blur-md">
-                  <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="inline-block bg-slate-700/90 border border-slate-500/70 px-2 py-1 rounded-sm backdrop-blur-md">
+                  <span className="text-sm font-semibold text-slate-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </div>
                 <Link to="/">
                   <GoogleDriveBadge className="rounded-sm" textOnly={true} />
@@ -61,11 +60,11 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-gray-800/80 border border-gray-600/60 text-white hover:bg-gray-700/90 hover:border-gray-500/70 hover:text-white transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-slate-700/90 border border-slate-500/70 text-slate-200 hover:bg-slate-600/90 hover:border-slate-400/80 hover:text-white transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-600/20 to-transparent -translate-x-full" style={{
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
                         <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
@@ -161,4 +160,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

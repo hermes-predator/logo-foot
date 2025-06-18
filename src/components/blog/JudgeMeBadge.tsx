@@ -19,7 +19,7 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 bg-gray-800/50 backdrop-blur-sm w-full border-l border-r border-b border-gray-700/50 rounded-t-none rounded-b-sm cursor-pointer"
+      className="flex items-center gap-4 px-4 py-3 bg-slate-700/60 backdrop-blur-sm w-full border-l border-r border-b border-slate-500/60 rounded-t-none rounded-b-sm cursor-pointer"
     >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">
@@ -42,12 +42,12 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
           </div>
-          <span className="text-gray-200 font-bold bg-teal-500/20 px-2 py-1 rounded text-xs">4.9/5</span>
+          <span className="text-slate-200 font-bold bg-orange-500/30 px-2 py-1 rounded text-xs">4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}
         <div className="flex items-center justify-center">
-          <div className="text-gray-300 font-medium text-xs">
+          <div className="text-slate-300 font-medium text-xs">
             {downloadCount.toLocaleString('fr-FR')} téléchargements
           </div>
         </div>

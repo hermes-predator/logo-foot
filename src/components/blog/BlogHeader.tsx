@@ -50,17 +50,17 @@ const BlogHeader = () => {
             
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              {/* Container unifié pour le bouton et le badge */}
-              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border border-gray-700/20" style={{ backgroundColor: 'rgba(30, 29, 28, 0.7)' }}>
+              {/* Container unifié pour le bouton et le badge avec meilleur contraste */}
+              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border-2 border-white/20" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-transparent border-0 text-gray-200 hover:bg-gray-700/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none">
-                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
-                          <span className="relative z-10">Voir le fichier</span>
-                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
+                        <Button variant="outline" className="bg-white/95 border-2 border-white text-gray-900 hover:bg-white hover:text-black transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg">
+                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10 text-gray-900" />
+                          <span className="relative z-10 text-gray-900">Voir le fichier</span>
+                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10 text-gray-900" />
                         </Button>
                       </Link>
                     </TooltipTrigger>
@@ -87,11 +87,13 @@ const BlogHeader = () => {
                   </Tooltip>
                 </TooltipProvider>
                 
-                {/* Ligne de séparation subtile */}
-                <div className="h-px bg-gradient-to-r from-transparent via-gray-600/40 to-transparent"></div>
+                {/* Ligne de séparation plus visible */}
+                <div className="h-px bg-white/30"></div>
                 
-                {/* Badge Judge.me intégré */}
-                <JudgeMeBadge />
+                {/* Badge Judge.me avec fond plus contrasté */}
+                <div className="bg-white/10 backdrop-blur-sm">
+                  <JudgeMeBadge />
+                </div>
               </div>
             </div>
           </div>

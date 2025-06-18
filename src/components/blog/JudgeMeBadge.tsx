@@ -19,15 +19,15 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 w-full border-0 rounded-none cursor-pointer transition-colors duration-300 rounded-b-lg hover:opacity-80"
-      style={{ backgroundColor: 'rgb(30, 29, 28)' }}
+      className="flex items-center gap-4 px-4 py-3 w-full border-0 rounded-none cursor-pointer transition-all duration-300 rounded-b-lg hover:bg-white/20"
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
     >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">
         <img 
           src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
           alt="Judge.me" 
-          className="h-8 w-auto opacity-80 brightness-105" 
+          className="h-8 w-auto opacity-90 brightness-110 contrast-110" 
           loading="lazy"
         />
       </div>
@@ -37,18 +37,18 @@ const JudgeMeBadge = () => {
         {/* Première ligne : Étoiles + Note */}
         <div className="flex items-center justify-center gap-2">
           <div className="flex items-center">
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
           </div>
-          <span className="text-white font-bold px-2 py-1 rounded text-xs" style={{ backgroundColor: 'rgb(40, 39, 37)' }}>4.9/5</span>
+          <span className="text-white font-bold px-2 py-1 rounded text-xs bg-green-600 shadow-sm">4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}
         <div className="flex items-center justify-center">
-          <div className="text-slate-300 font-medium text-xs">
+          <div className="text-white font-semibold text-xs drop-shadow-sm">
             {downloadCount.toLocaleString('fr-FR')} téléchargements
           </div>
         </div>

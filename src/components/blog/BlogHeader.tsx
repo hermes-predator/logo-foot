@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -34,13 +33,14 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-6">
               {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
               <div className="flex items-center gap-3 mb-4">
-                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded-sm backdrop-blur-md">
+                <div className="inline-block bg-gray-800/80 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-md">
                   <span className="text-sm font-semibold text-white">⦗FRONT-CLOUD⦘~ Football.zip</span>
                 </div>
                 <Link to="/">
-                  <GoogleDriveBadge className="rounded-sm" textOnly={true} />
+                  <GoogleDriveBadge className="rounded" textOnly={true} />
                 </Link>
               </div>
+              
               
               <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-3">
                 <span className="flex items-center gap-2">
@@ -53,7 +53,7 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Bouton et badge à droite - position ajustée */}
+            
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <TooltipProvider>
                 <Tooltip>

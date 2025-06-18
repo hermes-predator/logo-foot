@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -43,7 +44,7 @@ const BlogHeader = () => {
               </div>
               
               
-              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-1">
+              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-3">
                 <span className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
                   <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
@@ -160,3 +161,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

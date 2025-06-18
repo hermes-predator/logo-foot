@@ -25,7 +25,7 @@ const BlogHeader = () => {
               <div className="relative mb-4">
                 <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-lg px-2 py-2 shadow-lg" style={{ backgroundColor: 'rgba(50, 48, 46, 0.8)' }}>
                   
-                  <div className="relative z-10 px-4 py-2 rounded backdrop-blur-sm border border-gray-600/30" style={{ backgroundColor: 'rgba(40, 38, 36, 0.9)' }}>
+                  <div className="relative z-10 px-3 py-2 rounded backdrop-blur-sm border border-gray-600/30" style={{ backgroundColor: 'rgba(40, 38, 36, 0.9)' }}>
                     <span className="text-lg font-semibold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   

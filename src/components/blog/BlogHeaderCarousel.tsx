@@ -14,8 +14,8 @@ const BlogHeaderCarousel = () => {
   // Utiliser les mêmes données que la galerie de la page d'accueil
   const { clubItems } = generateGalleryItems();
   
-  // Prendre les 6 premières images de la galerie
-  const carouselImages = clubItems.slice(0, 6).map(item => ({
+  // Utiliser toutes les images de la galerie pour avoir plus de matière
+  const carouselImages = clubItems.map(item => ({
     src: item.imageUrl,
     alt: item.altText,
     title: item.title

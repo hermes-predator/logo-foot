@@ -30,9 +30,9 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
           </span>
           <div className="flex-1 min-w-0 text-left">
             <p className="text-white font-medium m-0 p-0 text-left">
-              <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 text-left ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
+              <span className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-100 block m-0 p-0 text-left ${isVerySmallScreen ? 'text-sm' : 'text-base'}`}>⦗FRONT-CLOUD⦘~ Football.zip</span>
               {!isVerySmallScreen && (
-                <span className="text-blue-100/90 font-light text-sm italic leading-relaxed block m-0 p-0 text-left">
+                <span className="text-gray-100/90 font-light text-sm italic leading-relaxed block m-0 p-0 text-left">
                   <u className="font-medium">8 600+ logos de foot</u>
                 </span>
               )}
@@ -110,8 +110,8 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
           </span>
           <div className="relative flex items-start flex-col text-left">
             <p className="text-white font-medium m-0 p-0 text-left">
-              <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 block m-0 p-0 text-left">⦗FRONT-CLOUD⦘~ Football.zip</span>
-              <span className="text-sm md:text-base text-blue-100/90 font-light italic leading-relaxed block m-0 p-0 text-left">
+              <span className="text-xl lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-100 block m-0 p-0 text-left">⦗FRONT-CLOUD⦘~ Football.zip</span>
+              <span className="text-sm md:text-base text-gray-100/90 font-light italic leading-relaxed block m-0 p-0 text-left">
                 Un fichier ZIP contenant <u className="font-medium">+ de 8 600 logos de foot</u> organisés par pays
               </span>
             </p>

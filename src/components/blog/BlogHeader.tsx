@@ -29,7 +29,7 @@ const BlogHeader = () => {
                     <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  <Link to="/" className="relative z-10 mr-0.5">
+                  <Link to="/" className="relative z-10">
                     <GoogleDriveBadge className="rounded" textOnly={true} />
                   </Link>
                 </div>

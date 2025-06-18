@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -34,7 +33,7 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-slate-600/30">
+                <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg">
                   {/* Effet de brillance subtil */}
                   <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 via-slate-600/5 to-slate-700/10 rounded-lg"></div>
                   

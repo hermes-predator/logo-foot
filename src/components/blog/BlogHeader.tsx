@@ -12,20 +12,7 @@ import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
-  return <div className="w-full relative overflow-hidden rounded-b-3xl">
-      {/* Gradient optimisé pour harmoniser avec vos visuels RGB(33,33,33) vers RGB(112,112,112) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black rounded-b-3xl">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/25 via-black/40 to-gray-700/25 animate-pulse rounded-b-3xl"></div>
-        <div 
-          className="absolute inset-0 rounded-b-3xl" 
-          style={{
-            backgroundImage: 'linear-gradient(45deg, rgba(0,0,0,0.97) 0%, rgba(45,45,45,0.3) 25%, rgba(20,20,20,0.85) 50%, rgba(80,80,80,0.25) 75%, rgba(0,0,0,0.97) 100%)',
-            backgroundSize: '400% 400%',
-            animation: 'gradientShift 8s ease-in-out infinite'
-          }}
-        ></div>
-      </div>
-      
+  return <div className="w-full relative overflow-hidden rounded-b-3xl" style={{ backgroundColor: 'rgb(30, 29, 28)' }}>
       {/* Particules flottantes */}
       <FloatingParticles />
       
@@ -37,11 +24,9 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 bg-gray-900/60 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-gray-700/30">
-                  {/* Effet de brillance subtil */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 via-gray-600/10 to-gray-800/20 rounded-lg"></div>
+                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-gray-700/30" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
                   
-                  <div className="relative z-10 bg-gray-800/90 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-sm">
+                  <div className="relative z-10 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-sm" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
                     <span className="text-sm font-semibold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
@@ -65,29 +50,21 @@ const BlogHeader = () => {
             
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              {/* Container unifié pour le bouton et le badge - effet incorporé */}
-              <div className="relative bg-gray-900/50 backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border border-gray-700/20">
-                {/* Effet de brillance subtil sur le container */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-800/30 via-gray-600/15 to-gray-800/30"></div>
+              {/* Container unifié pour le bouton et le badge */}
+              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border border-gray-700/20" style={{ backgroundColor: 'rgba(30, 29, 28, 0.7)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-transparent border-0 text-gray-200 hover:bg-gray-700/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none group-hover:bg-gray-700/30" style={{
-                        animation: 'subtlePulse 2.5s ease-in-out infinite'
-                      }}>
-                          {/* Effet de brillance shimmer */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400/30 to-transparent -translate-x-full" style={{
-                          animation: 'shimmer 2.5s ease-in-out infinite'
-                        }}></div>
+                        <Button variant="outline" className="bg-transparent border-0 text-gray-200 hover:bg-gray-700/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none">
                           <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
                           <span className="relative z-10">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                         </Button>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-4">
+                    <TooltipContent side="right" className="border-gray-700 text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)' }}>
                       <div className="text-sm">
                         <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
                         <Separator className="bg-gray-700 mb-3" />
@@ -130,9 +107,7 @@ const BlogHeader = () => {
           </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative bg-gray-900/60 backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30">
-              {/* Effet de brillance subtil */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 via-gray-600/10 to-gray-800/20 rounded-lg"></div>
+            <div className="relative backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>
@@ -145,37 +120,6 @@ const BlogHeader = () => {
       <div className="relative z-20 pb-6">
         <BlogHeaderCarousel />
       </div>
-      
-      <style>
-        {`
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        
-        @keyframes shimmer {
-          0% { transform: translateX(-100%); }
-          50% { transform: translateX(100%); }
-          100% { transform: translateX(100%); }
-        }
-        
-        @keyframes subtlePulse {
-          0%, 20% { 
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            transform: scale(1);
-          }
-          50% { 
-            box-shadow: 0 10px 40px 8px rgba(0, 0, 0, 0.6);
-            transform: scale(1.02);
-          }
-          80%, 100% { 
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            transform: scale(1);
-          }
-        }
-        `}
-      </style>
     </div>;
 };
 

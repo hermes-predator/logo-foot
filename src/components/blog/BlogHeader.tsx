@@ -30,7 +30,9 @@ const BlogHeader = () => {
                   </div>
                   
                   <Link to="/" className="relative z-10">
-                    <GoogleDriveBadge className="rounded" textOnly={true} />
+                    <div className="px-2 py-2.5">
+                      <GoogleDriveBadge className="rounded" textOnly={true} />
+                    </div>
                   </Link>
                 </div>
               </div>

@@ -60,16 +60,16 @@ const BlogHeader = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link to="/">
-                      <Button variant="outline" className="bg-slate-700/90 border border-slate-500/70 text-slate-200 hover:bg-slate-600/90 hover:border-slate-400/80 hover:text-white transition-all duration-300 h-24 px-10 py-6 text-xl gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
+                      <Button variant="outline" className="bg-slate-700/90 border border-slate-500/70 text-slate-200 hover:bg-slate-600/90 hover:border-slate-400/80 hover:text-white transition-all duration-300 h-16 px-10 py-4 text-lg gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
                       animation: 'subtlePulse 2.5s ease-in-out infinite'
                     }}>
                         {/* Effet de brillance shimmer */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/20 to-transparent -translate-x-full" style={{
                         animation: 'shimmer 2.5s ease-in-out infinite'
                       }}></div>
-                        <Folder className="!w-9 !h-9 transition-transform duration-200 relative z-10" />
+                        <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
                         <span className="relative z-10">Voir le fichier</span>
-                        <ArrowRight className="h-9 w-9 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
+                        <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                       </Button>
                     </Link>
                   </TooltipTrigger>

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -127,7 +128,7 @@ const BlogHeader = () => {
           </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative bg-slate-800/50 backdrop-blur-md rounded-lg px-4 py-2 border border-slate-500/30 shadow-lg">
+            <div className="relative bg-slate-800/50 backdrop-blur-md rounded-lg px-4 py-2 border border-slate-500/30">
               {/* Effet de brillance subtil */}
               <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 via-slate-600/5 to-slate-700/10 rounded-lg"></div>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
@@ -177,3 +178,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

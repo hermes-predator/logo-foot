@@ -14,23 +14,9 @@ const BlogHeaderCarousel = () => {
   // Utiliser les mêmes données que la galerie de la page d'accueil
   const { clubItems } = generateGalleryItems();
   
-  // Images placeholder temporaires pour démonstration
-  const placeholderImages = [
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=400&fit=crop', // Football stadium
-    'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop', // Soccer ball
-    'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&h=400&fit=crop', // Football field
-    'https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=400&fit=crop', // Soccer player
-    'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=400&fit=crop', // Football crowd
-    'https://images.unsplash.com/photo-1552667466-07770ae110d0?w=400&h=400&fit=crop', // Soccer tactics
-    'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=400&h=400&fit=crop', // Football boots
-    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop', // Stadium lights
-    'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop', // Football net
-    'https://images.unsplash.com/photo-1614632537190-23e4b2d5be43?w=400&h=400&fit=crop', // Soccer goal
-  ];
-  
-  // Utiliser toutes les images de la galerie avec des placeholders
-  const carouselImages = clubItems.map((item, index) => ({
-    src: placeholderImages[index % placeholderImages.length], // Répéter les placeholders
+  // Utiliser toutes les images de la galerie pour avoir plus de matière
+  const carouselImages = clubItems.map(item => ({
+    src: item.imageUrl,
     alt: item.altText,
     title: item.title
   }));

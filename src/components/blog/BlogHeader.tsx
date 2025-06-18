@@ -107,7 +107,7 @@ const BlogHeader = () => {
           </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
+            <div className="relative backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>

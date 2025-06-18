@@ -24,9 +24,9 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-gray-700/30" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
+                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg" style={{ backgroundColor: 'rgba(50, 48, 46, 0.8)' }}>
                   
-                  <div className="relative z-10 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-sm" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
+                  <div className="relative z-10 px-2 py-1 rounded backdrop-blur-sm" style={{ backgroundColor: 'rgba(40, 38, 36, 0.9)' }}>
                     <span className="text-sm font-semibold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
@@ -50,21 +50,21 @@ const BlogHeader = () => {
             
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              {/* Container unifié pour le bouton et le badge avec meilleur contraste */}
-              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border-2 border-white/20" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
+              {/* Container unifié pour le bouton et le badge avec harmonie des couleurs */}
+              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-white/95 border-2 border-white text-gray-900 hover:bg-white hover:text-black transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg">
-                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10 text-gray-900" />
-                          <span className="relative z-10 text-gray-900">Voir le fichier</span>
-                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10 text-gray-900" />
+                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 group font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg transition-all duration-300" style={{ backgroundColor: 'rgba(245, 158, 11, 0.9)', color: 'white', border: 'none' }}>
+                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10 text-white" />
+                          <span className="relative z-10 text-white">Voir le fichier</span>
+                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10 text-white" />
                         </Button>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="right" className="border-gray-700 text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)' }}>
+                    <TooltipContent side="right" className="text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)', border: 'none' }}>
                       <div className="text-sm">
                         <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
                         <Separator className="bg-gray-700 mb-3" />
@@ -87,11 +87,8 @@ const BlogHeader = () => {
                   </Tooltip>
                 </TooltipProvider>
                 
-                {/* Ligne de séparation plus visible */}
-                <div className="h-px bg-white/30"></div>
-                
-                {/* Badge Judge.me avec fond plus contrasté */}
-                <div className="bg-white/10 backdrop-blur-sm">
+                {/* Badge Judge.me avec couleurs harmonisées */}
+                <div style={{ backgroundColor: 'rgba(70, 66, 64, 0.6)' }}>
                   <JudgeMeBadge />
                 </div>
               </div>
@@ -109,7 +106,7 @@ const BlogHeader = () => {
           </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
+            <div className="relative backdrop-blur-md rounded-lg px-4 py-2" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>

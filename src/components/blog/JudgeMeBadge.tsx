@@ -19,8 +19,10 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 w-full border-0 rounded-none cursor-pointer transition-all duration-300 rounded-b-lg hover:bg-white/20"
-      style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+      className="flex items-center gap-4 px-4 py-3 w-full cursor-pointer transition-all duration-300 rounded-b-lg"
+      style={{ backgroundColor: 'transparent' }}
+      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(80, 76, 74, 0.5)'}
+      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
     >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">
@@ -43,12 +45,12 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />
           </div>
-          <span className="text-white font-bold px-2 py-1 rounded text-xs bg-green-600 shadow-sm">4.9/5</span>
+          <span className="text-white font-bold px-2 py-1 rounded text-xs shadow-sm" style={{ backgroundColor: 'rgba(34, 197, 94, 0.8)' }}>4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}
         <div className="flex items-center justify-center">
-          <div className="text-white font-semibold text-xs drop-shadow-sm">
+          <div className="text-gray-200 font-semibold text-xs drop-shadow-sm">
             {downloadCount.toLocaleString('fr-FR')} téléchargements
           </div>
         </div>

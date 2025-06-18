@@ -16,11 +16,14 @@ const BlogHeader = () => {
       {/* Gradient noir et gris sophistiqué en arrière-plan */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-gray-800 rounded-b-3xl">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-black/20 to-gray-700/40 animate-pulse rounded-b-3xl"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/70 via-transparent to-black/60 rounded-b-3xl" style={{
-        background: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
-        backgroundSize: '400% 400%',
-        animation: 'gradientShift 8s ease-in-out infinite'
-      }}></div>
+        <div 
+          className="absolute inset-0 rounded-b-3xl" 
+          style={{
+            backgroundImage: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
+            backgroundSize: '400% 400%',
+            animation: 'gradientShift 8s ease-in-out infinite'
+          }}
+        ></div>
       </div>
       
       {/* Particules flottantes */}

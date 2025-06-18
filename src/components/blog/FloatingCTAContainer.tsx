@@ -40,12 +40,14 @@ const FloatingCTAContainer = () => {
         {/* Animated gradient background - similar to BlogHeader */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-gray-800">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-black/20 to-gray-700/40 animate-pulse"></div>
-          <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/70 via-transparent to-black/60" 
-               style={{
-                 background: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
-                 backgroundSize: '400% 400%',
-                 animation: 'gradientShift 8s ease-in-out infinite'
-               }}></div>
+          <div 
+            className="absolute inset-0" 
+            style={{
+              backgroundImage: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
+              backgroundSize: '400% 400%',
+              animation: 'gradientShift 8s ease-in-out infinite'
+            }}
+          ></div>
         </div>
         
         <div className="relative z-10 py-2 md:py-4 px-2 md:px-6 border-t-2 border-white/20">

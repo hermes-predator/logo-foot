@@ -57,7 +57,7 @@ const BlogHeader = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 group font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg transition-all duration-300" style={{ backgroundColor: 'rgba(59, 130, 246, 0.9)', color: 'white', border: 'none' }}>
+                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 group font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg transition-all duration-300" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
                           <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10 text-white" />
@@ -69,16 +69,16 @@ const BlogHeader = () => {
                         <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
                         <Separator className="bg-gray-700 mb-3" />
                         <div className="grid grid-cols-2 gap-2">
-                          <Badge className="bg-blue-500 text-white hover:bg-blue-600">
+                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
                             1 fichier ZIP
                           </Badge>
-                          <Badge className="bg-blue-500 text-white hover:bg-blue-600">
+                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
                             66 collections
                           </Badge>
-                          <Badge className="bg-blue-500 text-white hover:bg-blue-600">
+                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
                             8 774 logos
                           </Badge>
-                          <Badge className="bg-blue-500 text-white hover:bg-blue-600">
+                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
                             Format PNG
                           </Badge>
                         </div>
@@ -88,7 +88,7 @@ const BlogHeader = () => {
                 </TooltipProvider>
                 
                 {/* Badge Judge.me avec couleurs harmonisées */}
-                <div style={{ backgroundColor: 'rgba(70, 90, 120, 0.6)' }}>
+                <div style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}>
                   <JudgeMeBadge />
                 </div>
               </div>

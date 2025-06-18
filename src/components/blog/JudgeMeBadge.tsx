@@ -21,7 +21,7 @@ const JudgeMeBadge = () => {
       rel="noopener noreferrer"
       className="flex items-center gap-4 px-4 py-3 w-full cursor-pointer transition-all duration-300 rounded-b-lg"
       style={{ backgroundColor: 'transparent' }}
-      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(80, 100, 130, 0.4)'}
+      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(55, 53, 51, 0.5)'}
       onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
     >
       {/* Logo Judge.me légèrement à droite */}
@@ -39,13 +39,13 @@ const JudgeMeBadge = () => {
         {/* Première ligne : Étoiles + Note */}
         <div className="flex items-center justify-center gap-2">
           <div className="flex items-center">
-            <Star className="w-4 h-4 text-blue-400 fill-blue-400 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-blue-400 fill-blue-400 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-blue-400 fill-blue-400 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-blue-400 fill-blue-400 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-blue-400 fill-blue-400 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
           </div>
-          <span className="text-white font-bold px-2 py-1 rounded text-xs shadow-sm" style={{ backgroundColor: 'rgba(59, 130, 246, 0.8)' }}>4.9/5</span>
+          <span className="text-white font-bold px-2 py-1 rounded text-xs shadow-sm" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}

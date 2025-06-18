@@ -18,7 +18,7 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
     return (
       <div className="relative px-2">              
         <div className="flex items-center mb-2">
-          <span className={`inline-block bg-white/30 p-1.5 rounded-full mr-2 relative overflow-hidden flex-shrink-0 ${isVerySmallScreen ? 'hidden' : ''}`}>
+          <span className={`inline-block p-1.5 rounded-full mr-2 relative overflow-hidden flex-shrink-0 ${isVerySmallScreen ? 'hidden' : ''}`} style={{ backgroundColor: 'rgba(255, 255, 255, 0.25)' }}>
             <Folder 
               className="h-4 w-4 text-white animate-bounce" 
               style={{ 
@@ -26,7 +26,7 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
                 filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
               }} 
             />
-            <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
+            <span className="absolute inset-0 rounded-full animate-ping opacity-75" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)', animationDuration: '1.5s' }}></span>
           </span>
           <div className="flex-1 min-w-0 text-left">
             <p className="text-white font-medium m-0 p-0 text-left">
@@ -49,7 +49,10 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
           
           <button 
             onClick={onDismiss}
-            className="ml-2 p-1.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+            className="ml-2 p-1.5 rounded-full transition-colors flex items-center justify-center"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.25)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'}
             aria-label="Fermer"
           >
             <X className="h-3 w-3 text-white" />
@@ -63,7 +66,7 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
     return (
       <div className="flex items-center justify-between px-3 gap-3">
         <div className="flex items-center flex-1 min-w-0">
-          <span className="inline-block bg-white/30 p-1.5 rounded-full mr-3 relative overflow-hidden flex-shrink-0">
+          <span className="inline-block p-1.5 rounded-full mr-3 relative overflow-hidden flex-shrink-0" style={{ backgroundColor: 'rgba(255, 255, 255, 0.25)' }}>
             <Folder 
               className="h-4 w-4 text-white animate-bounce" 
               style={{ animation: 'bounce 1.2s ease infinite' }} 
@@ -83,7 +86,10 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
           
           <button 
             onClick={onDismiss}
-            className="ml-2 p-1.5 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+            className="ml-2 p-1.5 rounded-full transition-colors flex items-center justify-center"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.25)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'}
             aria-label="Fermer"
           >
             <X className="h-3 w-3 text-white" />
@@ -98,7 +104,7 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
     <div className="flex flex-row items-center justify-between">
       <div className="flex items-center">
         <button onClick={onNavigateToHome} className="group flex items-center">
-          <span className="inline-block bg-white/30 p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden flex-shrink-0">
+          <span className="inline-block p-2.5 rounded-full mr-3 group-hover:bg-white/40 transition-colors relative overflow-hidden flex-shrink-0" style={{ backgroundColor: 'rgba(255, 255, 255, 0.25)' }}>
             <Folder 
               className="h-5 w-5 lg:h-6 lg:w-6 text-white animate-bounce" 
               style={{ 
@@ -106,7 +112,7 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
                 filter: 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))'
               }} 
             />
-            <span className="absolute inset-0 bg-white/20 rounded-full animate-ping opacity-75" style={{ animationDuration: '1.5s' }}></span>
+            <span className="absolute inset-0 rounded-full animate-ping opacity-75" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)', animationDuration: '1.5s' }}></span>
           </span>
           <div className="relative flex items-start flex-col text-left">
             <p className="text-white font-medium m-0 p-0 text-left">
@@ -128,7 +134,10 @@ const FloatingCTAContent = ({ onNavigateToHome, onDismiss }: FloatingCTAContentP
         
         <button 
           onClick={onDismiss}
-          className="ml-3 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center"
+          className="ml-3 p-2 rounded-full transition-colors flex items-center justify-center"
+          style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.25)'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'}
           aria-label="Fermer"
         >
           <X className="h-4 w-4 text-white" />

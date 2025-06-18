@@ -17,9 +17,14 @@ const BackToButton = ({ to, label, className = "" }: BackToButtonProps) => {
         variant="outline"
         size="sm"
         asChild
-        className="flex items-center gap-1 hover:bg-blue-50 transition-colors"
+        className="flex items-center gap-1 transition-colors border hover:shadow-md"
+        style={{ 
+          borderColor: 'rgb(209, 213, 219)',
+          backgroundColor: 'white',
+          color: 'rgb(55, 65, 81)'
+        }}
       >
-        <Link to={to}>
+        <Link to={to} className="hover:no-underline">
           <ArrowLeft className="h-4 w-4" />
           <span>{label}</span>
         </Link>

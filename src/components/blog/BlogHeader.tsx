@@ -13,13 +13,13 @@ import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   return <div className="w-full relative overflow-hidden rounded-b-3xl">
-      {/* Gradient noir et gris sophistiqué en arrière-plan */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-gray-800 rounded-b-3xl">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-black/20 to-gray-700/40 animate-pulse rounded-b-3xl"></div>
+      {/* Gradient noir et gris pur en arrière-plan */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black rounded-b-3xl">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-700/20 via-black/30 to-gray-600/20 animate-pulse rounded-b-3xl"></div>
         <div 
           className="absolute inset-0 rounded-b-3xl" 
           style={{
-            backgroundImage: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
+            backgroundImage: 'linear-gradient(45deg, rgba(0,0,0,0.95) 0%, rgba(64,64,64,0.4) 25%, rgba(32,32,32,0.8) 50%, rgba(96,96,96,0.3) 75%, rgba(0,0,0,0.95) 100%)',
             backgroundSize: '400% 400%',
             animation: 'gradientShift 8s ease-in-out infinite'
           }}

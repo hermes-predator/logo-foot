@@ -39,11 +39,11 @@ const JudgeMeBadge = () => {
         {/* Première ligne : Étoiles + Note */}
         <div className="flex items-center justify-center gap-2">
           <div className="flex items-center">
-            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
-            <Star className="w-4 h-4 text-gray-300 fill-gray-300 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
+            <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
           </div>
           <span className="text-white font-bold px-2 py-1 rounded text-xs shadow-sm" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>4.9/5</span>
         </div>

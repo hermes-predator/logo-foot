@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -30,7 +29,7 @@ const BlogHeader = () => {
                     <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  <Link to="/" className="relative z-10 mr-1">
+                  <Link to="/" className="relative z-10 mr-2">
                     <GoogleDriveBadge className="rounded" textOnly={true} />
                   </Link>
                 </div>

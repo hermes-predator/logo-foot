@@ -22,16 +22,16 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-8 space-y-6">
-              {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
+              {/* Container réduit pour le nom du fichier et badge Google Drive */}
               <div className="relative">
-                <div className="inline-flex items-center gap-3 backdrop-blur-lg rounded-xl px-4 py-3 shadow-2xl border border-white/10 bg-gradient-to-r from-white/5 to-white/10 hover:from-white/10 hover:to-white/15 transition-all duration-500 group">
+                <div className="inline-flex items-center gap-2 backdrop-blur-lg rounded-lg px-3 py-2 shadow-xl border border-white/10 bg-gradient-to-r from-white/5 to-white/10 hover:from-white/10 hover:to-white/15 transition-all duration-500 group">
                   
-                  <div className="relative z-10 border border-white/20 px-3 py-2 rounded-lg backdrop-blur-sm bg-gradient-to-r from-black/20 to-black/30 group-hover:border-white/30 transition-all duration-300">
-                    <span className="text-sm font-bold text-white tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <div className="relative z-10 border border-white/20 px-2 py-1.5 rounded-md backdrop-blur-sm bg-gradient-to-r from-black/20 to-black/30 group-hover:border-white/30 transition-all duration-300">
+                    <span className="text-xs font-bold text-white tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
                   <Link to="/" className="relative z-10 transform hover:scale-105 transition-transform duration-200">
-                    <GoogleDriveBadge className="rounded-lg shadow-lg" textOnly={true} />
+                    <GoogleDriveBadge className="rounded-md shadow-md scale-75" textOnly={true} />
                   </Link>
                 </div>
               </div>

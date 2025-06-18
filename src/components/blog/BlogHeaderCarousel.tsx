@@ -79,8 +79,8 @@ const BlogHeaderCarousel = () => {
                       />
                     )}
                     
-                    {/* Icône œil en bas à droite */}
-                    <div className="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* Icône œil visible par défaut avec effet de hover */}
+                    <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-70 group-hover:opacity-100 group-hover:bg-black/70 transition-all duration-300">
                       <Eye className="w-4 h-4 text-white" />
                     </div>
                   </div>

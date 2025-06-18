@@ -56,48 +56,51 @@ const BlogHeader = () => {
             
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link to="/">
-                      <Button variant="outline" className="bg-slate-700/90 border border-slate-500/70 text-slate-200 hover:bg-slate-600/90 hover:border-slate-400/80 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-md font-semibold relative overflow-hidden rounded-t-sm rounded-b-none" style={{
-                      animation: 'subtlePulse 2.5s ease-in-out infinite'
-                    }}>
-                        {/* Effet de brillance shimmer */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/20 to-transparent -translate-x-full" style={{
-                        animation: 'shimmer 2.5s ease-in-out infinite'
-                      }}></div>
-                        <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
-                        <span className="relative z-10">Voir le fichier</span>
-                        <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
-                      </Button>
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-4">
-                    <div className="text-sm">
-                      <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
-                      <Separator className="bg-gray-700 mb-3" />
-                      <div className="grid grid-cols-2 gap-2">
-                        <Badge className="bg-orange-500 text-white hover:bg-orange-600">
-                          1 fichier ZIP
-                        </Badge>
-                        <Badge className="bg-orange-500 text-white hover:bg-orange-600">
-                          66 collections
-                        </Badge>
-                        <Badge className="bg-orange-500 text-white hover:bg-orange-600">
-                          8 774 logos
-                        </Badge>
-                        <Badge className="bg-orange-500 text-white hover:bg-orange-600">
-                          Format PNG
-                        </Badge>
+              {/* Container unifié pour le bouton et le badge */}
+              <div className="relative bg-slate-700/60 backdrop-blur-sm border border-slate-500/60 rounded-sm shadow-lg group hover:shadow-xl transition-all duration-300">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link to="/">
+                        <Button variant="outline" className="bg-transparent border-0 text-slate-200 hover:bg-slate-600/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-t-sm rounded-b-none border-b border-slate-500/40 group-hover:border-slate-400/60" style={{
+                        animation: 'subtlePulse 2.5s ease-in-out infinite'
+                      }}>
+                          {/* Effet de brillance shimmer */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/20 to-transparent -translate-x-full" style={{
+                          animation: 'shimmer 2.5s ease-in-out infinite'
+                        }}></div>
+                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
+                          <span className="relative z-10">Voir le fichier</span>
+                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
+                        </Button>
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent side="right" className="bg-gray-900 border-gray-700 text-white p-4">
+                      <div className="text-sm">
+                        <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
+                        <Separator className="bg-gray-700 mb-3" />
+                        <div className="grid grid-cols-2 gap-2">
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                            1 fichier ZIP
+                          </Badge>
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                            66 collections
+                          </Badge>
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                            8 774 logos
+                          </Badge>
+                          <Badge className="bg-orange-500 text-white hover:bg-orange-600">
+                            Format PNG
+                          </Badge>
+                        </div>
                       </div>
-                    </div>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              
-              {/* Badge Judge.me collé au bouton */}
-              <JudgeMeBadge />
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                
+                {/* Badge Judge.me intégré */}
+                <JudgeMeBadge />
+              </div>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 bg-slate-700/60 backdrop-blur-sm w-full border-l border-r border-b border-slate-500/60 rounded-t-none rounded-b-sm cursor-pointer"
+      className="flex items-center gap-4 px-4 py-3 bg-transparent backdrop-blur-none w-full border-0 rounded-none cursor-pointer hover:bg-slate-600/20 transition-colors duration-300"
     >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">

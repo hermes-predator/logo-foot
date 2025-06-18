@@ -42,7 +42,7 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
           </div>
-          <span className="text-slate-200 font-bold bg-teal-500/30 px-2 py-1 rounded text-xs">4.9/5</span>
+          <span className="text-white font-bold bg-teal-500/30 px-2 py-1 rounded text-xs">4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}

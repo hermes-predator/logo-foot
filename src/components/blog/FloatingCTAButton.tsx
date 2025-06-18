@@ -16,8 +16,8 @@ const FloatingCTAButton = ({ onClick, size = 'sm', className = '' }: FloatingCTA
       variant="secondary" 
       className={`group relative overflow-hidden bg-white hover:bg-gray-50 border border-gray-800 ${className}`}
       style={{ 
-        backgroundColor: 'rgb(21,21,21)',
-        borderColor: 'rgb(21,21,21)',
+        backgroundColor: 'rgb(40, 39, 37)',
+        borderColor: 'rgb(40, 39, 37)',
         color: 'white'
       }}
       size={size}

@@ -32,14 +32,20 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
-              {/* Encadré avec le nom du fichier et badge Google Drive côte à côte */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="inline-block bg-slate-700/90 border border-slate-500/70 px-2 py-1 rounded-sm backdrop-blur-md">
-                  <span className="text-sm font-semibold text-slate-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+              {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
+              <div className="relative mb-4">
+                <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-slate-600/30">
+                  {/* Effet de brillance subtil */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 via-slate-600/5 to-slate-700/10 rounded-lg"></div>
+                  
+                  <div className="relative z-10 bg-slate-700/80 border border-slate-500/60 px-2 py-1 rounded backdrop-blur-sm">
+                    <span className="text-sm font-semibold text-slate-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  </div>
+                  
+                  <Link to="/" className="relative z-10">
+                    <GoogleDriveBadge className="rounded" textOnly={true} />
+                  </Link>
                 </div>
-                <Link to="/">
-                  <GoogleDriveBadge className="rounded-sm" textOnly={true} />
-                </Link>
               </div>
               
               

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import { Link } from 'react-router-dom';
+import { Eye } from 'lucide-react';
 import type { CarouselApi } from '@/components/ui/carousel';
 import { generateGalleryItems } from '@/utils/galleryData';
 
@@ -52,7 +53,7 @@ const BlogHeaderCarousel = () => {
               <div className="p-3">
                 <Link to="/" className="block">
                   <div 
-                    className="rounded-lg overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-3xl"
+                    className="relative rounded-lg overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-3xl group"
                     onMouseEnter={() => setHoveredItem(index)}
                     onMouseLeave={() => setHoveredItem(null)}
                   >
@@ -77,6 +78,11 @@ const BlogHeaderCarousel = () => {
                         priority={index < 4}
                       />
                     )}
+                    
+                    {/* Icône œil en bas à droite */}
+                    <div className="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Eye className="w-4 h-4 text-white" />
+                    </div>
                   </div>
                 </Link>
               </div>

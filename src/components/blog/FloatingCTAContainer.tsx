@@ -35,14 +35,14 @@ const FloatingCTAContainer = () => {
         transition: 'transform 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
       }}
     >
-      {/* Similar gradient to BlogHeader */}
+      {/* Gradient noir et gris similaire au BlogHeader */}
       <div className="relative overflow-hidden">
         {/* Animated gradient background - similar to BlogHeader */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/10 to-gray-900/30 animate-pulse"></div>
-          <div className="absolute inset-0 bg-gradient-to-tl from-gray-800/50 via-transparent to-gray-900/40" 
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-gray-800">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-black/20 to-gray-700/40 animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/70 via-transparent to-black/60" 
                style={{
-                 background: 'linear-gradient(45deg, rgba(17,24,39,0.8) 0%, rgba(55,65,81,0.3) 25%, rgba(17,24,39,0.9) 50%, rgba(31,41,55,0.4) 75%, rgba(17,24,39,0.8) 100%)',
+                 background: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
                  backgroundSize: '400% 400%',
                  animation: 'gradientShift 8s ease-in-out infinite'
                }}></div>

@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -14,11 +13,11 @@ import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
   return <div className="w-full relative overflow-hidden rounded-b-3xl">
-      {/* Gradient animé en arrière-plan */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800 rounded-b-3xl">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/10 to-gray-900/30 animate-pulse rounded-b-3xl"></div>
-        <div className="absolute inset-0 bg-gradient-to-tl from-gray-800/50 via-transparent to-gray-900/40 rounded-b-3xl" style={{
-        background: 'linear-gradient(45deg, rgba(17,24,39,0.8) 0%, rgba(55,65,81,0.3) 25%, rgba(17,24,39,0.9) 50%, rgba(31,41,55,0.4) 75%, rgba(17,24,39,0.8) 100%)',
+      {/* Gradient noir et gris sophistiqué en arrière-plan */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-gray-800 rounded-b-3xl">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 via-black/20 to-gray-700/40 animate-pulse rounded-b-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/70 via-transparent to-black/60 rounded-b-3xl" style={{
+        background: 'linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(55,65,81,0.4) 25%, rgba(17,24,39,0.8) 50%, rgba(75,85,99,0.3) 75%, rgba(0,0,0,0.9) 100%)',
         backgroundSize: '400% 400%',
         animation: 'gradientShift 8s ease-in-out infinite'
       }}></div>
@@ -35,12 +34,12 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg">
+                <div className="inline-flex items-center gap-2 bg-gray-900/60 backdrop-blur-md rounded-lg px-3 py-2 shadow-lg border border-gray-700/30">
                   {/* Effet de brillance subtil */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 via-slate-600/5 to-slate-700/10 rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 via-gray-600/10 to-gray-800/20 rounded-lg"></div>
                   
-                  <div className="relative z-10 bg-slate-700/80 border border-slate-500/60 px-2 py-1 rounded backdrop-blur-sm">
-                    <span className="text-sm font-semibold text-slate-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <div className="relative z-10 bg-gray-800/90 border border-gray-600/60 px-2 py-1 rounded backdrop-blur-sm">
+                    <span className="text-sm font-semibold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
                   <Link to="/" className="relative z-10">
@@ -64,19 +63,19 @@ const BlogHeader = () => {
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               {/* Container unifié pour le bouton et le badge - effet incorporé */}
-              <div className="relative bg-slate-800/40 backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden">
+              <div className="relative bg-gray-900/50 backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden border border-gray-700/20">
                 {/* Effet de brillance subtil sur le container */}
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-700/20 via-slate-600/10 to-slate-700/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-800/30 via-gray-600/15 to-gray-800/30"></div>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-transparent border-0 text-slate-200 hover:bg-slate-600/30 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none group-hover:bg-slate-600/20" style={{
+                        <Button variant="outline" className="bg-transparent border-0 text-gray-200 hover:bg-gray-700/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none group-hover:bg-gray-700/30" style={{
                         animation: 'subtlePulse 2.5s ease-in-out infinite'
                       }}>
                           {/* Effet de brillance shimmer */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/20 to-transparent -translate-x-full" style={{
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400/30 to-transparent -translate-x-full" style={{
                           animation: 'shimmer 2.5s ease-in-out infinite'
                         }}></div>
                           <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10" />
@@ -109,7 +108,7 @@ const BlogHeader = () => {
                 </TooltipProvider>
                 
                 {/* Ligne de séparation subtile */}
-                <div className="h-px bg-gradient-to-r from-transparent via-slate-500/30 to-transparent"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-600/40 to-transparent"></div>
                 
                 {/* Badge Judge.me intégré */}
                 <JudgeMeBadge />
@@ -128,9 +127,9 @@ const BlogHeader = () => {
           </div>
           {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative bg-slate-800/50 backdrop-blur-md rounded-lg px-4 py-2 border border-slate-500/30">
+            <div className="relative bg-gray-900/60 backdrop-blur-md rounded-lg px-4 py-2 border border-gray-600/30">
               {/* Effet de brillance subtil */}
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 via-slate-600/5 to-slate-700/10 rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 via-gray-600/10 to-gray-800/20 rounded-lg"></div>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>
@@ -178,4 +177,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

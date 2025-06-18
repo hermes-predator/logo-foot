@@ -49,7 +49,7 @@ const BlogHeader = () => {
                 </span>
               </p>
               <p className="text-xs md:text-sm font-normal mb-6">
-                Obtenez un fichier ZIP complet organisé par pays*
+                Obtenez un fichier ZIP complet parfaitement organisé par pays*
               </p>
             </div>
             

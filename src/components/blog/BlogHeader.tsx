@@ -56,13 +56,16 @@ const BlogHeader = () => {
             
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              {/* Container unifié pour le bouton et le badge */}
-              <div className="relative bg-slate-700/60 backdrop-blur-sm border border-slate-500/60 rounded-sm shadow-lg group hover:shadow-xl transition-all duration-300">
+              {/* Container unifié pour le bouton et le badge - effet incorporé */}
+              <div className="relative bg-slate-800/40 backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden">
+                {/* Effet de brillance subtil sur le container */}
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-700/20 via-slate-600/10 to-slate-700/20"></div>
+                
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="bg-transparent border-0 text-slate-200 hover:bg-slate-600/40 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-t-sm rounded-b-none border-b border-slate-500/40 group-hover:border-slate-400/60" style={{
+                        <Button variant="outline" className="bg-transparent border-0 text-slate-200 hover:bg-slate-600/30 hover:text-white transition-all duration-300 h-20 px-10 py-4 text-lg gap-4 group backdrop-blur-none font-semibold relative overflow-hidden rounded-lg rounded-b-none group-hover:bg-slate-600/20" style={{
                         animation: 'subtlePulse 2.5s ease-in-out infinite'
                       }}>
                           {/* Effet de brillance shimmer */}
@@ -97,6 +100,9 @@ const BlogHeader = () => {
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
+                
+                {/* Ligne de séparation subtile */}
+                <div className="h-px bg-gradient-to-r from-transparent via-slate-500/30 to-transparent"></div>
                 
                 {/* Badge Judge.me intégré */}
                 <JudgeMeBadge />

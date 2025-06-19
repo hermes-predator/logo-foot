@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { BadgeCheck } from 'lucide-react';
@@ -21,8 +20,8 @@ const GoogleDriveBadge = ({
   if (textOnly) {
     return (
       <Badge 
-        className={`inline-flex items-center gap-2 px-2 py-1 bg-white text-gray-600 border border-white/20 
-          hover:bg-white/90 hover:border-white/30 
+        className={`inline-flex items-center gap-2 px-3 py-2 bg-white text-gray-600 border border-white/20 
+          hover:bg-white/90 hover:border-white/30 scale-110
           transition-all duration-300 ${alwaysEnlarged ? hoverStyles : ''} ${cursorHelp ? 'cursor-help' : ''} ${className}`}
         role="status"
         aria-label="Stockable sur votre Google Drive"
@@ -30,14 +29,15 @@ const GoogleDriveBadge = ({
         <img 
           src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
           alt="Google Drive" 
-          className={`h-6 w-auto object-contain ${cursorHelp ? 'cursor-help' : ''}`}
+          className={`h-7 w-auto object-contain ${cursorHelp ? 'cursor-help' : ''}`}
           loading="lazy"
-          width="60"
-          height="24"
+          width="70"
+          height="28"
         />
       </Badge>
     );
   }
+  
   
   return (
     <Badge 

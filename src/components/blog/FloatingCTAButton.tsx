@@ -14,23 +14,24 @@ const FloatingCTAButton = ({ onClick, size = 'sm', className = '' }: FloatingCTA
     <Button 
       onClick={onClick}
       variant="secondary" 
-      className={`group relative overflow-hidden bg-white hover:bg-gray-50 border border-gray-800 ${className}`}
+      className={`group relative overflow-hidden bg-white hover:bg-gray-50 border border-white ${className}`}
       style={{ 
-        backgroundColor: 'rgb(40, 39, 37)',
-        borderColor: 'rgb(40, 39, 37)',
-        color: 'white'
+        backgroundColor: 'white',
+        borderColor: 'white',
+        color: '#3b82f6'
       }}
       size={size}
     >
-      <span className="font-semibold relative z-10 text-white">
+      <span className="font-semibold relative z-10" style={{ color: '#3b82f6' }}>
         En savoir plus
       </span>
       <ArrowRight 
-        className={`transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 text-white ${
+        className={`transform transition-transform duration-300 group-hover:translate-x-1 relative z-10 ${
           size === 'lg' ? 'h-4 w-4 md:h-5 md:w-5' : 'h-3 w-3'
         }`} 
+        style={{ color: '#3b82f6' }}
       />
-      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
+      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/20 to-transparent animate-shine" style={{ animationDuration: '2.5s' }}></span>
     </Button>
   );
 };

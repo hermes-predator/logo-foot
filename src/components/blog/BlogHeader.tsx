@@ -28,7 +28,7 @@ const BlogHeader = () => {
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
-                    <div className="px-4 py-2.5 flex items-center gap-2" 
+                    <div className="px-4 py-2.5 flex items-center gap-2 rounded-l-xl" 
                          style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
                       <Folder className="w-4 h-4 text-gray-300" />
                     </div>
@@ -39,7 +39,7 @@ const BlogHeader = () => {
                     </div>
                     
                     {/* Section Google Drive badge intégrée */}
-                    <div className="px-3 py-2 relative">
+                    <div className="px-3 py-2 relative rounded-r-xl">
                       <div className="relative z-10">
                         <GoogleDriveBadge 
                           className="border-0 bg-transparent" 

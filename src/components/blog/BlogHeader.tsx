@@ -33,8 +33,8 @@ const BlogHeader = () => {
                       <Folder className="w-4 h-4 text-gray-300" />
                     </div>
                     
-                    {/* Séparateur élégant */}
-                    <div className="relative">
+                    {/* Séparateur élégant centré */}
+                    <div className="relative flex items-center justify-center h-full">
                       <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50"></div>
                     </div>
                     

@@ -29,7 +29,7 @@ const BlogHeader = () => {
                   <div className="px-4 py-2.5 flex items-center gap-2 rounded-l-xl relative overflow-hidden" 
                        style={{ backgroundColor: 'rgba(60, 56, 54, 0.8)' }}>
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <span className="text-xs font-semibold text-gray-50 tracking-wider relative z-10 group-hover:text-white transition-colors duration-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                    <Folder className="w-4 h-4 text-gray-50 group-hover:text-white transition-colors duration-200 relative z-10" />
                   </div>
                   
                   {/* Séparateur avec animation subtile */}

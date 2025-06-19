@@ -28,7 +28,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   });
 
   return (
-    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500 active:scale-[0.98] hover:border-blue-200">
+    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500 active:scale-[0.98] hover:border-orange-400">
       <Link to={postUrl} className="block">
         <div className="relative overflow-hidden">
           <BlogImage 
@@ -51,7 +51,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
         </div>
         
         <div className="p-5">
-          <h3 className="font-semibold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+          <h3 className="font-semibold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-orange-600 transition-colors duration-300 leading-tight">
             {post.title}
           </h3>
           
@@ -73,7 +73,7 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
               </div>
             </div>
             
-            <span className="text-blue-500 font-medium transition-all duration-300 group-hover:text-blue-600 flex items-center gap-1">
+            <span className="text-orange-500 font-medium transition-all duration-300 group-hover:text-orange-600 flex items-center gap-1">
               Lire la suite →
             </span>
           </div>

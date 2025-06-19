@@ -20,9 +20,9 @@ const GoogleDriveBadge = ({
   if (textOnly) {
     return (
       <Badge 
-        className={`inline-flex items-center gap-2 px-3 py-2 bg-white text-gray-600 border border-white/20 
-          hover:bg-white/90 hover:border-white/30 scale-110
-          transition-all duration-300 ${cursorHelp ? 'cursor-help' : ''} ${className}`}
+        className={`inline-flex items-center gap-2 px-3 py-2 text-gray-600 border border-white/20
+          ${cursorHelp ? 'cursor-help' : ''} ${className}`}
+        style={{ backgroundColor: 'rgba(55, 53, 51, 0.8)' }}
         role="status"
         aria-label="Stockable sur votre Google Drive"
       >
@@ -42,7 +42,7 @@ const GoogleDriveBadge = ({
   return (
     <Badge 
       className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-300/80 
-        transition-all duration-300 ${cursorHelp ? 'cursor-help' : ''} ${className}`}
+        ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >

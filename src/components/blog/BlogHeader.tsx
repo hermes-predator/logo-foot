@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -22,30 +21,32 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             {/* Contenu principal à gauche */}
             <div className="flex-1 space-y-6">
-              {/* Container intégré folder + Google Drive - design unifié */}
+              {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative">
                 <Link to="/" className="group block">
-                  <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25" 
+                  <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25 transition-all duration-300 hover:shadow-2xl hover:border-gray-400/30" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
-                    {/* Section folder avec icône */}
-                    <div className="px-4 py-3.5 flex items-center gap-2 rounded-l-xl" 
+                    {/* Section folder avec icône - améliorée pour l'harmonie */}
+                    <div className="px-5 py-4 flex items-center gap-3 rounded-l-xl relative overflow-hidden" 
                          style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
-                      <Folder className="w-5 h-5 text-gray-300" />
+                      {/* Effet de brillance subtil pour le branding */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300 group-hover:text-white" />
                     </div>
                     
-                    {/* Séparateur élégant centré */}
-                    <div className="px-4 py-3.5">
+                    {/* Séparateur élégant centré - optimisé pour l'harmonie */}
+                    <div className="px-4 py-4 relative">
                       <div className="relative flex items-center justify-center h-full">
-                        <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50"></div>
+                        <div className="w-px h-7 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30 transition-all duration-300 group-hover:from-gray-400/40 group-hover:via-gray-300/70 group-hover:to-gray-400/40"></div>
                       </div>
                     </div>
                     
-                    {/* Section Google Drive badge intégrée */}
-                    <div className="px-3 py-3.5 relative rounded-r-xl">
+                    {/* Section Google Drive badge intégrée - équilibrée */}
+                    <div className="px-4 py-4 relative rounded-r-xl flex items-center">
                       <div className="relative z-10">
                         <GoogleDriveBadge 
-                          className="border-0 bg-transparent" 
+                          className="border-0 bg-transparent transition-transform duration-300 group-hover:scale-105" 
                           textOnly={true} 
                         />
                       </div>

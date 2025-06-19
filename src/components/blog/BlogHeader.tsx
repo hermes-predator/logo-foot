@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -41,7 +42,7 @@ const BlogHeader = () => {
                     </div>
                     
                     {/* Section Google Drive badge intégrée - parfaitement alignée */}
-                    <div className="px-3 py-2 rounded-r-xl flex items-center justify-center">
+                    <div className="pl-1 pr-3 py-2 rounded-r-xl flex items-center justify-center">
                       <div className="relative z-10">
                         <GoogleDriveBadge 
                           className="border-0 bg-transparent" 
@@ -138,3 +139,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

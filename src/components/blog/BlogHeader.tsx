@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -21,20 +22,26 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
-              {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
+              {/* Container intégré pour le fichier et Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-md px-1 py-1 shadow-lg" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
-                  
-                  <div className="relative z-10 px-2.5 py-2.5 rounded backdrop-blur-sm border border-gray-600/30 flex items-center justify-center" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
-                    <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                <div className="inline-flex items-center backdrop-blur-md rounded-lg shadow-lg overflow-hidden" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
+                  {/* Section fichier */}
+                  <div className="px-4 py-3 flex items-center gap-3" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span className="text-sm font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  <Link to="/" className="relative z-10 mr-0.5">
-                    <GoogleDriveBadge className="rounded" textOnly={true} />
-                  </Link>
+                  {/* Séparateur visuel */}
+                  <div className="w-px h-8 bg-gray-600/30"></div>
+                  
+                  {/* Section Google Drive */}
+                  <div className="px-3 py-2">
+                    <Link to="/" className="block">
+                      <GoogleDriveBadge className="rounded-md border-0 bg-transparent hover:bg-gray-700/30 transition-colors" textOnly={true} />
+                    </Link>
+                  </div>
                 </div>
               </div>
-              
               
               <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-2">
                 <span className="flex items-center gap-2">
@@ -47,9 +54,8 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            
+            {/* Bouton d'action à droite */}
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              {/* Container unifié pour le bouton et le badge avec harmonie des couleurs */}
               <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
                 <TooltipProvider>
@@ -86,7 +92,6 @@ const BlogHeader = () => {
                   </Tooltip>
                 </TooltipProvider>
                 
-                {/* Badge Judge.me avec couleurs harmonisées */}
                 <div style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}>
                   <JudgeMeBadge />
                 </div>
@@ -99,11 +104,9 @@ const BlogHeader = () => {
       {/* Ligne de séparation avec texte superposé et effet de fondu aux extrémités */}
       <div className="relative z-20 px-4 mb-12">
         <div className="container mx-auto relative">
-          {/* Ligne de séparation avec dégradé */}
           <div className="relative h-px">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
           </div>
-          {/* Texte centré sur la ligne */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative backdrop-blur-md rounded-lg px-4 py-2" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">

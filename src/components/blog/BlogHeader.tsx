@@ -22,7 +22,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
-              <div className="relative ml-6">
+              <div className="relative ml-8">
                 <Link to="/" className="group block">
                   <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25 transition-all duration-300 hover:shadow-2xl hover:border-gray-400/30" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
@@ -53,7 +53,7 @@ const BlogHeader = () => {
               </div>
               
               {/* Texte principal */}
-              <div className="space-y-3 ml-6">
+              <div className="space-y-3 ml-8">
                 <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed">
                   <span className="flex items-center gap-2">
                     <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />

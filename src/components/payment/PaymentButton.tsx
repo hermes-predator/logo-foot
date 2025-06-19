@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -13,6 +13,30 @@ import ButtonEffects from './ButtonEffects';
 const PaymentButton = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const { toast } = useToast();
+
+  // Détecter le retour sur la page pour remettre le bouton à l'état initial
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        setIsProcessing(false);
+      }
+    };
+
+    const handlePageShow = () => {
+      setIsProcessing(false);
+    };
+
+    // Écouter les changements de visibilité de la page
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+    // Écouter l'événement pageshow (navigation retour)
+    window.addEventListener('pageshow', handlePageShow);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pageshow', handlePageShow);
+    };
+  }, []);
 
   const handlePayment = () => {
     setIsProcessing(true);

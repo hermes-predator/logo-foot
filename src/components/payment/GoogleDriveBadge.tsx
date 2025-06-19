@@ -21,8 +21,8 @@ const GoogleDriveBadge = ({
   if (textOnly) {
     return (
       <Badge 
-        className={`inline-flex items-center gap-2 px-2 py-1 bg-gray-50 text-gray-600 border border-gray-200 
-          hover:bg-gray-50 hover:border-gray-300/80 
+        className={`inline-flex items-center gap-2 px-2 py-1 bg-white text-gray-600 border border-white/20 
+          hover:bg-white/90 hover:border-white/30 
           transition-all duration-300 ${alwaysEnlarged ? hoverStyles : ''} ${cursorHelp ? 'cursor-help' : ''} ${className}`}
         role="status"
         aria-label="Stockable sur votre Google Drive"

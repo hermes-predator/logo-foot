@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -21,21 +22,21 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-1 lg:pl-6 mt-4">
-              {/* Container intégré pour le fichier et Google Drive - plus petit */}
+              {/* Container intégré pour le fichier et Google Drive - optimisé */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center backdrop-blur-md rounded-md shadow-md overflow-hidden" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
+                <div className="inline-flex items-center backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-gray-600/20" style={{ backgroundColor: 'rgba(45, 43, 41, 0.95)' }}>
                   {/* Section fichier */}
-                  <div className="px-4 py-2 flex items-center gap-2 rounded-l-md" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
-                    <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <div className="px-3 py-2 flex items-center gap-2 rounded-l-lg" style={{ backgroundColor: 'rgba(30, 29, 28, 0.95)' }}>
+                    <span className="text-xs font-semibold text-gray-100 tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  {/* Séparateur visuel */}
-                  <div className="w-px h-6 bg-gray-600/30"></div>
+                  {/* Séparateur visuel affiné */}
+                  <div className="w-px h-5 bg-gradient-to-b from-gray-600/40 via-gray-500/30 to-gray-600/40"></div>
                   
                   {/* Section Google Drive */}
-                  <div className="px-2 py-1">
+                  <div className="px-2 py-1.5">
                     <Link to="/" className="block">
-                      <GoogleDriveBadge className="rounded-sm border-0 bg-transparent hover:bg-gray-700/30 transition-colors" textOnly={true} />
+                      <GoogleDriveBadge className="rounded border-0 bg-transparent hover:bg-gray-700/20 transition-all duration-200 scale-90" textOnly={true} />
                     </Link>
                   </div>
                 </div>

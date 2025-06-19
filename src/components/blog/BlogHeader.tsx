@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -24,7 +25,7 @@ const BlogHeader = () => {
               {/* Container intégré folder + Google Drive - design unifié */}
               <div className="relative mb-4">
                 <Link to="/" className="group block">
-                  <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25 hover:border-gray-400/30 transition-all duration-300" 
+                  <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
@@ -35,16 +36,14 @@ const BlogHeader = () => {
                     
                     {/* Séparateur élégant */}
                     <div className="relative">
-                      <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50 group-hover:from-gray-400/60 group-hover:via-gray-300/50 group-hover:to-gray-400/60 transition-all duration-300"></div>
-                      <div className="absolute inset-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50"></div>
                     </div>
                     
                     {/* Section Google Drive badge intégrée */}
                     <div className="px-3 py-2 relative">
-                      <div className="absolute inset-0 rounded-r-xl bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative z-10">
                         <GoogleDriveBadge 
-                          className="border-0 bg-transparent transition-all duration-300" 
+                          className="border-0 bg-transparent" 
                           textOnly={true} 
                         />
                       </div>
@@ -65,16 +64,16 @@ const BlogHeader = () => {
             </div>
             
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
-              <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
+              <div className="relative backdrop-blur-md rounded-lg shadow-2xl overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 group font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg transition-all duration-300" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
-                          <Folder className="!w-7 !h-7 transition-transform duration-200 relative z-10 text-white" />
+                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
+                          <Folder className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
-                          <ArrowRight className="h-7 w-7 group-hover:translate-x-1 transition-transform duration-200 relative z-10 text-white" />
+                          <ArrowRight className="h-7 w-7 relative z-10 text-white" />
                         </Button>
                       </Link>
                     </TooltipTrigger>

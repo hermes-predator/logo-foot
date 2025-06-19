@@ -82,7 +82,13 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div>
+                    <div className="inline-flex items-center justify-center bg-gray-50 border border-gray-300/80 hover:bg-gray-100/70 hover:border-gray-300/80 transition-all duration-300 rounded-full relative overflow-hidden group shadow-[0_3px_6px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_10px_rgba(0,0,100,0.12)] cursor-help">
+                      {/* Effet de pulse subtil */}
+                      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-100/30 rounded-full transition-all duration-300"></span>
+                      {/* Cercle d'animation au clic */}
+                      <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
+                        <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                      </span>
                       <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
                     </div>
                   </TooltipTrigger>

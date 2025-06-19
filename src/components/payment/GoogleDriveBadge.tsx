@@ -41,7 +41,7 @@ const GoogleDriveBadge = ({
   
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-300/80 hover:!bg-white transition-colors duration-300
+      className={`inline-flex items-center gap-2 px-4 py-2 bg-gray-50 text-gray-600 border border-gray-300/80 hover:bg-gray-100/70 transition-colors duration-300
         ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"

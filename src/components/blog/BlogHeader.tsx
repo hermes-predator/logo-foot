@@ -28,7 +28,7 @@ const BlogHeader = () => {
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
-                    <div className="px-4 py-3.5 flex items-center gap-2 rounded-l-xl ml-2" 
+                    <div className="px-4 py-3.5 flex items-center gap-2 rounded-l-xl rounded-r-xl ml-2" 
                          style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
                       <Folder className="w-4 h-4 text-gray-300" />
                     </div>

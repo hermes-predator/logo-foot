@@ -51,7 +51,7 @@ const PaymentButton = () => {
   };
 
   return (
-    <div className="space-y-4 mt-6 max-w-lg mx-auto">
+    <div className="space-y-4 mt-6">
       <Tooltip>
         <TooltipTrigger asChild>
           <Button 

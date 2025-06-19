@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -9,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
-import { Folder, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
@@ -23,17 +24,17 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pr-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 space-y-6">
-              {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
+              {/* Container intégré download + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8">
                 <Link to="/" className="group block">
                   <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
-                    {/* Section folder avec icône - sans couleur de fond */}
+                    {/* Section download avec icône - sans couleur de fond */}
                     <div className="px-3 py-2 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-5">
                       {/* Effet de brillance subtil pour le branding */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
+                      <Download className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
                     </div>
                     
                     {/* Séparateur élégant centré - parfaitement aligné */}
@@ -77,7 +78,7 @@ const BlogHeader = () => {
                     <TooltipTrigger asChild>
                       <Link to="/">
                         <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
-                          <Folder className="!w-7 !h-7 relative z-10 text-white" />
+                          <Download className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 relative z-10 text-white" />
                         </Button>
@@ -139,4 +140,5 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+
 

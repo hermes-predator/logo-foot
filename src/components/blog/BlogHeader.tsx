@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -26,7 +25,7 @@ const BlogHeader = () => {
               <div className="relative mb-4">
                 <div className="inline-flex items-center backdrop-blur-md rounded-lg shadow-lg overflow-hidden" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
                   {/* Section fichier */}
-                  <div className="px-4 py-3 flex items-center gap-3" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
+                  <div className="px-6 py-3 flex items-center gap-3" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
                     <span className="text-sm font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>

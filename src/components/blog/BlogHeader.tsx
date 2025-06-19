@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -21,7 +22,17 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
-              {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
+              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-2">
+                <span className="flex items-center gap-2">
+                  <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                  <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
+                </span>
+              </p>
+              <p className="text-xs md:text-sm font-normal mb-6">
+                Obtenez un fichier ZIP complet parfaitement organisé par pays*
+              </p>
+              
+              {/* Container harmonisé pour le nom du fichier et badge Google Drive - déplacé en dessous des textes */}
               <div className="relative mb-4">
                 <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-md px-1 py-1 shadow-lg" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
                   
@@ -34,17 +45,6 @@ const BlogHeader = () => {
                   </Link>
                 </div>
               </div>
-              
-              
-              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-2">
-                <span className="flex items-center gap-2">
-                  <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                  <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
-                </span>
-              </p>
-              <p className="text-xs md:text-sm font-normal mb-6">
-                Obtenez un fichier ZIP complet parfaitement organisé par pays*
-              </p>
             </div>
             
             

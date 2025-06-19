@@ -28,13 +28,13 @@ const BlogHeader = () => {
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
-                    <div className="px-4 py-2.5 flex items-center gap-2 rounded-l-xl ml-2" 
+                    <div className="px-4 py-2 flex items-center gap-2 rounded-l-xl ml-2" 
                          style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
                       <Folder className="w-4 h-4 text-gray-300" />
                     </div>
                     
                     {/* Espace pour séparer visuellement */}
-                    <div className="px-2">
+                    <div className="px-4 py-2">
                       {/* Séparateur élégant centré */}
                       <div className="relative flex items-center justify-center h-full">
                         <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50"></div>

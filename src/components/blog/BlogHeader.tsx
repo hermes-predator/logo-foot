@@ -23,9 +23,9 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container harmonisé pour le nom du fichier et badge Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-md px-1 py-1 shadow-lg" style={{ backgroundColor: 'rgba(50, 48, 46, 0.8)' }}>
+                <div className="inline-flex items-center gap-2 backdrop-blur-md rounded-md px-1 py-1 shadow-lg" style={{ backgroundColor: 'rgba(30, 29, 28, 0.8)' }}>
                   
-                  <div className="relative z-10 px-2.5 py-2.5 rounded backdrop-blur-sm border border-gray-600/30 flex items-center justify-center" style={{ backgroundColor: 'rgba(40, 38, 36, 0.9)' }}>
+                  <div className="relative z-10 px-2.5 py-2.5 rounded backdrop-blur-sm border border-gray-600/30 flex items-center justify-center" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
                     <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   

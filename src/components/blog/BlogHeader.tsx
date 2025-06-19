@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -23,14 +24,14 @@ const BlogHeader = () => {
             <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8">
-                <Link to="/" className="group block">
-                  <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden transition-all duration-300" 
+                <Link to="/" className="block">
+                  <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône - sans couleur de fond */}
                     <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
                       {/* Effet de brillance subtil pour le branding */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
                       <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
                     </div>
                     
@@ -68,13 +69,13 @@ const BlogHeader = () => {
             
             {/* Section droite - Button et JudgeMe */}
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 mr-4">
-              <div className="relative backdrop-blur-md rounded-lg shadow-2xl overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
+              <div className="relative backdrop-blur-md rounded-lg overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none shadow-lg" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
+                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)', color: 'white', border: 'none' }}>
                           <Folder className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 relative z-10 text-white" />

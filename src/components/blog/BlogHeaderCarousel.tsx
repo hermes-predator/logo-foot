@@ -53,7 +53,7 @@ const BlogHeaderCarousel = () => {
               <div className="p-3">
                 <Link to="/" className="block">
                   <div 
-                    className="relative rounded-lg overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 cursor-pointer hover:shadow-3xl group"
+                    className="relative rounded-lg overflow-hidden shadow-2xl bg-gray-900/95 backdrop-blur-sm hover:bg-gray-800/95 transition-all duration-300 cursor-pointer hover:shadow-3xl group"
                     onMouseEnter={() => setHoveredItem(index)}
                     onMouseLeave={() => setHoveredItem(null)}
                   >

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -22,21 +21,31 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 pl-1 lg:pl-6 mt-4">
-              {/* Container intégré pour le fichier et Google Drive - optimisé */}
+              {/* Container intégré pour le fichier et Google Drive - ultra raffiné */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-gray-600/20" style={{ backgroundColor: 'rgba(45, 43, 41, 0.95)' }}>
-                  {/* Section fichier */}
-                  <div className="px-3 py-2 flex items-center gap-2 rounded-l-lg" style={{ backgroundColor: 'rgba(30, 29, 28, 0.95)' }}>
-                    <span className="text-xs font-semibold text-gray-100 tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25 hover:border-gray-400/30 transition-all duration-300 group" 
+                     style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
+                  {/* Section fichier avec effet premium */}
+                  <div className="px-4 py-2.5 flex items-center gap-2 rounded-l-xl relative overflow-hidden" 
+                       style={{ backgroundColor: 'rgba(25, 24, 23, 0.98)' }}>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <span className="text-xs font-semibold text-gray-50 tracking-wider relative z-10 group-hover:text-white transition-colors duration-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
-                  {/* Séparateur visuel affiné */}
-                  <div className="w-px h-5 bg-gradient-to-b from-gray-600/40 via-gray-500/30 to-gray-600/40"></div>
+                  {/* Séparateur avec animation subtile */}
+                  <div className="relative">
+                    <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50 group-hover:from-gray-400/60 group-hover:via-gray-300/50 group-hover:to-gray-400/60 transition-all duration-300"></div>
+                    <div className="absolute inset-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
                   
-                  {/* Section Google Drive */}
-                  <div className="px-2 py-1.5">
-                    <Link to="/" className="block">
-                      <GoogleDriveBadge className="rounded border-0 bg-transparent hover:bg-gray-700/20 transition-all duration-200 scale-90" textOnly={true} />
+                  {/* Section Google Drive avec micro-animations */}
+                  <div className="px-3 py-2 relative">
+                    <div className="absolute inset-0 rounded-r-xl bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <Link to="/" className="block relative z-10">
+                      <GoogleDriveBadge 
+                        className="rounded-lg border-0 bg-transparent hover:bg-white/10 transition-all duration-300 scale-[0.85] hover:scale-90 group-hover:scale-90" 
+                        textOnly={true} 
+                      />
                     </Link>
                   </div>
                 </div>

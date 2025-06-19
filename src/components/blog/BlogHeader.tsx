@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -55,7 +53,7 @@ const BlogHeader = () => {
               </div>
               
               {/* Texte principal */}
-              <div className="space-y-3">
+              <div className="space-y-3 ml-6">
                 <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed">
                   <span className="flex items-center gap-2">
                     <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
@@ -139,4 +137,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

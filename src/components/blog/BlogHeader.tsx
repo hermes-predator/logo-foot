@@ -23,7 +23,7 @@ const BlogHeader = () => {
             <div className="flex-1 pl-2 lg:pl-6 mt-4">
               {/* Container intégré pour le fichier et Google Drive */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center backdrop-blur-md rounded-lg shadow-lg overflow-hidden" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
+                <div className="inline-flex items-center backdrop-blur-md rounded-lg shadow-lg overflow-hidden pl-3" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
                   {/* Section fichier */}
                   <div className="px-6 py-3 flex items-center gap-3" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>

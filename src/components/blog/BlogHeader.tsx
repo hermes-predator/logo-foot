@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -29,19 +28,19 @@ const BlogHeader = () => {
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône - sans couleur de fond */}
-                    <div className="px-3 py-2 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-5">
+                    <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
                       {/* Effet de brillance subtil pour le branding */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
                     </div>
                     
                     {/* Séparateur élégant centré - parfaitement aligné */}
-                    <div className="px-2 py-2 flex items-center justify-center">
+                    <div className="px-2 py-1.5 flex items-center justify-center">
                       <div className="w-px h-5 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30"></div>
                     </div>
                     
                     {/* Section Google Drive badge intégrée - parfaitement alignée */}
-                    <div className="pl-1 pr-2 py-2 rounded-r-xl flex items-center justify-center">
+                    <div className="pl-1 pr-1.5 py-1.5 rounded-r-xl flex items-center justify-center">
                       <div className="relative z-10">
                         <GoogleDriveBadge 
                           className="border-0 bg-transparent" 

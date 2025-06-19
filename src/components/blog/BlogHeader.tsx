@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -26,7 +25,7 @@ const BlogHeader = () => {
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8">
                 <Link to="/" className="group block">
-                  <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl" 
+                  <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden transition-all duration-300" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône - sans couleur de fond */}
@@ -139,4 +138,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

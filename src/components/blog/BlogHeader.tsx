@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -17,32 +18,31 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-8 pb-6">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+        <div className="container mx-auto px-4 pt-8 pb-8">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 pl-1 lg:pl-6 mt-4">
+            <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié */}
-              <div className="relative mb-4">
+              <div className="relative">
                 <Link to="/" className="group block">
                   <div className="inline-flex items-center backdrop-blur-md rounded-xl shadow-xl overflow-hidden border border-gray-500/25" 
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
-                    <div className="px-4 py-3.5 flex items-center gap-2 rounded-l-xl rounded-r-xl ml-2" 
+                    <div className="px-4 py-3.5 flex items-center gap-2 rounded-l-xl" 
                          style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
                       <Folder className="w-5 h-5 text-gray-300" />
                     </div>
                     
-                    {/* Espace pour séparer visuellement */}
+                    {/* Séparateur élégant centré */}
                     <div className="px-4 py-3.5">
-                      {/* Séparateur élégant centré */}
                       <div className="relative flex items-center justify-center h-full">
                         <div className="w-px h-6 bg-gradient-to-b from-gray-500/50 via-gray-400/40 to-gray-500/50"></div>
                       </div>
                     </div>
                     
                     {/* Section Google Drive badge intégrée */}
-                    <div className="px-3 py-3.5 relative rounded-r-xl mr-2">
+                    <div className="px-3 py-3.5 relative rounded-r-xl">
                       <div className="relative z-10">
                         <GoogleDriveBadge 
                           className="border-0 bg-transparent" 
@@ -54,18 +54,22 @@ const BlogHeader = () => {
                 </Link>
               </div>
               
-              <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed mb-2">
-                <span className="flex items-center gap-2">
-                  <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                  <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
-                </span>
-              </p>
-              <p className="text-xs md:text-sm font-normal mb-6">
-                Obtenez un fichier ZIP complet parfaitement organisé par pays*
-              </p>
+              {/* Texte principal */}
+              <div className="space-y-3">
+                <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed">
+                  <span className="flex items-center gap-2">
+                    <ArrowRight className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                    <span className="font-medium">Téléchargez <span className="font-bold underline text-white">+ de 8 600 LOGOS de Clubs de Football</span></span>
+                  </span>
+                </p>
+                <p className="text-xs md:text-sm font-normal text-gray-300">
+                  Obtenez un fichier ZIP complet parfaitement organisé par pays*
+                </p>
+              </div>
             </div>
             
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
+            {/* Section droite - Button et JudgeMe */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0">
               <div className="relative backdrop-blur-md rounded-lg shadow-2xl overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
                 <TooltipProvider>
@@ -111,13 +115,14 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      <div className="relative z-20 px-4 mb-12">
+      {/* Section séparateur avec ligne et texte centré */}
+      <div className="relative z-20 px-4 mb-8">
         <div className="container mx-auto relative">
           <div className="relative h-px">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative backdrop-blur-md rounded-lg px-4 py-2" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
+            <div className="relative backdrop-blur-md rounded-lg px-6 py-3" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP
               </p>
@@ -126,6 +131,7 @@ const BlogHeader = () => {
         </div>
       </div>
       
+      {/* Carrousel */}
       <div className="relative z-20 pb-6">
         <BlogHeaderCarousel />
       </div>

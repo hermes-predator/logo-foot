@@ -20,7 +20,7 @@ const GoogleDriveBadge = ({
   if (textOnly) {
     return (
       <Badge 
-        className={`inline-flex items-center gap-2 px-3 py-2 text-gray-600 border border-white/20
+        className={`inline-flex items-center gap-2 px-3 py-2 text-gray-600 border border-white/20 rounded-md
           ${cursorHelp ? 'cursor-help' : ''} ${className}`}
         style={{ backgroundColor: 'rgba(55, 53, 51, 0.8)' }}
         role="status"

@@ -28,10 +28,9 @@ const BlogHeader = () => {
                        style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                     
                     {/* Section folder avec icône */}
-                    <div className="px-3 py-2.5 flex items-center gap-2 relative overflow-hidden" 
-                         style={{ backgroundColor: 'rgba(60, 56, 54, 0.8)' }}>
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <Folder className="w-4 h-4 text-gray-50 group-hover:text-white transition-colors duration-200 relative z-10" />
+                    <div className="px-3 py-2.5 flex items-center gap-2" 
+                         style={{ backgroundColor: 'rgba(65, 63, 61, 0.8)' }}>
+                      <Folder className="w-4 h-4 text-gray-300" />
                     </div>
                     
                     {/* Séparateur élégant */}

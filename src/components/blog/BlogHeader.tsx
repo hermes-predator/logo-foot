@@ -45,7 +45,7 @@ const BlogHeader = () => {
                       <div className="absolute inset-0 rounded-r-xl bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative z-10">
                         <GoogleDriveBadge 
-                          className="border-0 bg-transparent transition-all duration-300 scale-[0.85] group-hover:scale-90" 
+                          className="border-0 bg-transparent transition-all duration-300" 
                           textOnly={true} 
                         />
                       </div>

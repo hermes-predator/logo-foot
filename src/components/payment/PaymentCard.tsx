@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Eye, ArrowLeft } from 'lucide-react';
 import { Folder, Cloud } from 'lucide-react';
@@ -88,7 +89,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                       <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
                         <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
                       </span>
-                      <GoogleDriveBadge textOnly={true} className="relative z-10" />
+                      <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="bg-white border border-gray-200/50 p-3 max-w-[350px] rounded-lg shadow-lg">
@@ -114,7 +115,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                       <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
                         <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
                       </span>
-                      <Eye className="h-4 w-4 sm:h-5 sm:w-5 relative z-10" />
+                      <Eye className="h-4 w-4 sm:h-5 sm:w-5" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>

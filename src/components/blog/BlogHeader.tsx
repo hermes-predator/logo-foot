@@ -19,45 +19,47 @@ const BlogHeader = () => {
       
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-8 pb-6">
-          {/* Conteneur principal avec design professionnel */}
-          <div className="relative backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden" 
+        <div className="container mx-auto px-4 pt-6 pb-4">
+          {/* Conteneur principal avec design professionnel compact */}
+          <div className="relative backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden" 
                style={{ backgroundColor: 'rgba(40, 38, 36, 0.6)' }}>
             
             {/* Effet de brillance subtil */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none"></div>
             
-            <div className="relative z-10 p-6 lg:p-8">
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
-                
-                {/* Section principale à gauche */}
-                <div className="flex-1 space-y-5">
-                  
-                  {/* Conteneur unifié pour le fichier et le badge Google Drive */}
-                  <div className="inline-flex items-center gap-4 backdrop-blur-sm rounded-xl px-5 py-3.5 border border-white/15 bg-white/5">
-                    <div className="flex items-center gap-3">
-                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-white/15">
-                        <span className="text-xs font-bold text-white">📁</span>
-                      </div>
-                      <span className="text-sm font-semibold text-white tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
+            <div className="relative z-10 p-5">
+              {/* Conteneur unifié centré pour le fichier et le badge Google Drive */}
+              <div className="flex justify-center mb-4">
+                <div className="inline-flex items-center gap-3 backdrop-blur-sm rounded-lg px-4 py-2.5 border border-white/15 bg-white/5">
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex items-center justify-center w-7 h-7 rounded-md bg-white/15">
+                      <span className="text-xs font-bold text-white">📁</span>
                     </div>
-                    
-                    <div className="h-5 w-px bg-white/20"></div>
-                    
-                    <Link to="/" className="inline-block">
-                      <GoogleDriveBadge className="shadow-sm hover:shadow-md transition-all duration-300" textOnly={true} />
-                    </Link>
+                    <span className="text-sm font-semibold text-white tracking-wide">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
+                  <div className="h-4 w-px bg-white/20"></div>
+                  
+                  <Link to="/" className="inline-block">
+                    <GoogleDriveBadge className="shadow-sm hover:shadow-md transition-all duration-300" textOnly={true} />
+                  </Link>
+                </div>
+              </div>
+              
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-5">
+                
+                {/* Section principale à gauche */}
+                <div className="flex-1 space-y-4">
+                  
                   {/* Titre principal avec design épuré */}
-                  <div className="space-y-3">
+                  <div className="space-y-2.5">
                     <div className="flex items-start gap-3">
-                      <ArrowRight className="h-6 w-6 text-orange-400 flex-shrink-0 mt-1" />
+                      <ArrowRight className="h-5 w-5 text-orange-400 flex-shrink-0 mt-1" />
                       <div>
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight tracking-tight">
                           Téléchargez <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent font-extrabold">+ de 8 600 LOGOS</span> de Clubs de Football
                         </h1>
-                        <p className="text-sm md:text-base text-gray-300 mt-3 font-medium leading-relaxed">
+                        <p className="text-sm text-gray-300 mt-2 font-medium leading-relaxed">
                           Obtenez un fichier ZIP complet parfaitement organisé par pays*
                         </p>
                       </div>
@@ -79,12 +81,12 @@ const BlogHeader = () => {
                           <Link to="/">
                             <Button 
                               variant="outline" 
-                              className="h-16 px-8 py-4 text-base gap-3 font-bold relative overflow-hidden rounded-xl rounded-b-none border-none transition-all duration-300 group" 
+                              className="h-14 px-6 py-3 text-sm gap-2.5 font-bold relative overflow-hidden rounded-xl rounded-b-none border-none transition-all duration-300 group" 
                               style={{ backgroundColor: 'rgba(60, 58, 56, 0.8)', color: 'white' }}
                             >
-                              <Folder className="w-5 h-5 relative z-10" />
+                              <Folder className="w-4 h-4 relative z-10" />
                               <span className="relative z-10">Voir le fichier</span>
-                              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+                              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
                             </Button>
                           </Link>
                         </TooltipTrigger>
@@ -124,13 +126,13 @@ const BlogHeader = () => {
       </div>
       
       {/* Ligne de séparation avec texte */}
-      <div className="relative z-20 px-4 mb-8 mt-6">
+      <div className="relative z-20 px-4 mb-6 mt-4">
         <div className="container mx-auto relative">
           <div className="relative h-px">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative backdrop-blur-sm rounded-lg px-6 py-2.5 border border-white/15" 
+            <div className="relative backdrop-blur-sm rounded-lg px-5 py-2 border border-white/15" 
                  style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
                 Aperçu de quelques collections du fichier ZIP

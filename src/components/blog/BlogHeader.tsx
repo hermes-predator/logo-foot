@@ -20,22 +20,22 @@ const BlogHeader = () => {
         <div className="container mx-auto px-4 pt-8 pb-6">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 pl-2 lg:pl-6 mt-4">
-              {/* Container intégré pour le fichier et Google Drive */}
+            <div className="flex-1 pl-1 lg:pl-6 mt-4">
+              {/* Container intégré pour le fichier et Google Drive - plus petit */}
               <div className="relative mb-4">
-                <div className="inline-flex items-center backdrop-blur-md rounded-lg shadow-lg overflow-hidden pl-1" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
+                <div className="inline-flex items-center backdrop-blur-md rounded-md shadow-md overflow-hidden" style={{ backgroundColor: 'rgba(45, 43, 41, 0.9)' }}>
                   {/* Section fichier */}
-                  <div className="px-6 py-3 flex items-center gap-3 rounded-l-lg" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
-                    <span className="text-sm font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <div className="px-4 py-2 flex items-center gap-2 rounded-l-md" style={{ backgroundColor: 'rgba(30, 29, 28, 0.9)' }}>
+                    <span className="text-xs font-bold text-gray-200">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   </div>
                   
                   {/* Séparateur visuel */}
-                  <div className="w-px h-8 bg-gray-600/30"></div>
+                  <div className="w-px h-6 bg-gray-600/30"></div>
                   
                   {/* Section Google Drive */}
-                  <div className="px-3 py-2">
+                  <div className="px-2 py-1">
                     <Link to="/" className="block">
-                      <GoogleDriveBadge className="rounded-md border-0 bg-transparent hover:bg-gray-700/30 transition-colors" textOnly={true} />
+                      <GoogleDriveBadge className="rounded-sm border-0 bg-transparent hover:bg-gray-700/30 transition-colors" textOnly={true} />
                     </Link>
                   </div>
                 </div>
@@ -52,7 +52,6 @@ const BlogHeader = () => {
               </p>
             </div>
             
-            {/* Bouton d'action à droite */}
             <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 pr-2 lg:pr-6">
               <div className="relative backdrop-blur-md rounded-lg shadow-2xl group hover:shadow-3xl transition-all duration-300 overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
                 
@@ -99,7 +98,6 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Ligne de séparation avec texte superposé et effet de fondu aux extrémités */}
       <div className="relative z-20 px-4 mb-12">
         <div className="container mx-auto relative">
           <div className="relative h-px">
@@ -115,7 +113,6 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Carrousel en superposition qui déborde légèrement - avec plus d'espace */}
       <div className="relative z-20 pb-6">
         <BlogHeaderCarousel />
       </div>

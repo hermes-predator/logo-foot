@@ -49,7 +49,7 @@ const BlogHeaderCarousel = () => {
       >
         <CarouselContent>
           {carouselImages.map((image, index) => (
-            <CarouselItem key={index} className="basis-1/4">
+            <CarouselItem key={index} className="basis-1/5">
               <div className="p-3">
                 <Link to="/" className="block">
                   <div 
@@ -75,7 +75,7 @@ const BlogHeaderCarousel = () => {
                         height={640}
                         aspectRatio={1}
                         className="w-full h-full object-cover drop-shadow-xl"
-                        priority={index < 4}
+                        priority={index < 5}
                       />
                     )}
                     

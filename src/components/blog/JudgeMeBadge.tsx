@@ -19,10 +19,8 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 w-full cursor-pointer transition-all duration-300 rounded-b-lg"
+      className="flex items-center gap-4 px-4 py-3 w-full cursor-pointer rounded-b-lg"
       style={{ backgroundColor: 'transparent' }}
-      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(55, 53, 51, 0.5)'}
-      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
     >
       {/* Logo Judge.me légèrement à droite */}
       <div className="flex items-center justify-center ml-2">

@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
-import { Folder, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
@@ -35,7 +35,7 @@ const BlogHeader = () => {
                           <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
                             {/* Effet de brillance subtil pour le branding */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
-                            <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
+                            <MapPin className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
                           </div>
                           
                           {/* Séparateur élégant centré - parfaitement aligné */}
@@ -89,7 +89,7 @@ const BlogHeader = () => {
                     <TooltipTrigger asChild>
                       <Link to="/">
                         <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none" style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)', color: 'white', border: 'none' }}>
-                          <Folder className="!w-7 !h-7 relative z-10 text-white" />
+                          <MapPin className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 relative z-10 text-white" />
                         </Button>

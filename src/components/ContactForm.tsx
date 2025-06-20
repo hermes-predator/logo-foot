@@ -24,7 +24,7 @@ const ContactForm = () => {
         
         {/* Informations sur les commandes intégrées */}
         <div className="mt-6 pt-8 border-t border-gray-200">
-          <p className="text-gray-800 font-bold mb-2 text-lg">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+          <p className="text-gray-800 font-bold mb-4 text-lg">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2 ml-1">
             <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">

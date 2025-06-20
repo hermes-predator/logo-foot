@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -118,6 +117,9 @@ const BlogHeader = () => {
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
+                
+                {/* Ligne de séparation subtile */}
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent"></div>
                 
                 <div style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}>
                   <JudgeMeBadge />

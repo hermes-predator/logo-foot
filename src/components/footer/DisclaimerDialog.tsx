@@ -29,8 +29,8 @@ const DisclaimerDialog = () => {
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <div className="bg-transparent p-3 rounded-md border border-gray-200 shadow-sm flex-shrink-0 group-hover:bg-blue-100/30 transition-colors">
-                <AlertTriangle className="w-6 h-6 text-blue-600 flex-shrink-0" />
+              <div className="bg-gradient-to-br from-orange-100 via-yellow-100 to-orange-200 rounded-md p-4 shadow-lg shadow-orange-200/30 flex items-center gap-2 backdrop-blur-sm border border-orange-200/50 flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-orange-600 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p>
@@ -42,8 +42,8 @@ const DisclaimerDialog = () => {
 
           <div className="mt-4 p-5 border border-gray-200/50 bg-gradient-to-br from-gray-50 to-slate-50/50 rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <div className="bg-transparent p-3 rounded-md border border-gray-200 shadow-sm flex-shrink-0 group-hover:bg-blue-100/30 transition-colors">
-                <Folder className="w-6 h-6 text-blue-600 flex-shrink-0" />
+              <div className="bg-gradient-to-br from-slate-100 via-gray-100 to-slate-200 rounded-md p-4 shadow-lg shadow-slate-200/30 flex items-center gap-2 backdrop-blur-sm border border-slate-200/50 flex-shrink-0">
+                <Folder className="w-6 h-6 text-slate-600 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-800 space-y-6">
                 <p>
@@ -54,15 +54,15 @@ const DisclaimerDialog = () => {
                   <span className="font-semibold text-gray-800 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <p className="mt-2 text-gray-700 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3 group hover:bg-white/80 rounded-md p-2 transition-colors">
-                      <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm group-hover:bg-blue-100/30 transition-colors">
-                        <Check className="w-4 h-4 text-green-600 flex-shrink-0 group-hover:text-green-600 transition-colors" />
+                      <div className="bg-gradient-to-br from-green-100 via-emerald-100 to-green-200 rounded-md p-1.5 shadow-lg shadow-green-200/30 backdrop-blur-sm border border-green-200/50 group-hover:shadow-green-300/40 transition-all">
+                        <Check className="w-4 h-4 text-green-600 drop-shadow-sm" />
                       </div>
                       <span>Une ressource indépendante, compilée et organisée.</span>
                     </div>
                     
                     <div className="flex items-start gap-2 group hover:bg-white/80 rounded-md p-2 transition-colors">
-                      <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm group-hover:bg-blue-100/30 transition-colors">
-                        <Check className="w-4 h-4 text-green-600 flex-shrink-0 group-hover:text-green-600 transition-colors" />
+                      <div className="bg-gradient-to-br from-green-100 via-emerald-100 to-green-200 rounded-md p-1.5 shadow-lg shadow-green-200/30 backdrop-blur-sm border border-green-200/50 group-hover:shadow-green-300/40 transition-all">
+                        <Check className="w-4 h-4 text-green-600 drop-shadow-sm" />
                       </div>
                       <span>Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
                     </div>

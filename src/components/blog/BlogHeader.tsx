@@ -103,7 +103,7 @@ const BlogHeader = () => {
                         >
                           <Folder className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
-                          <ArrowRight className="h-7 w-7 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                          <ArrowRight className="h-6 w-6 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
                         </button>
                       </Link>
                     </TooltipTrigger>

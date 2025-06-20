@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -23,7 +22,7 @@ const BlogHeader = () => {
             {/* Contenu principal à gauche */}
             <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
-              <div className="relative ml-8">
+              <div className="relative ml-8 -mt-2">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>

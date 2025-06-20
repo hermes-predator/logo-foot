@@ -55,7 +55,7 @@ const BlogHeader = () => {
                         </div>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="bottom" sideOffset={8} className="text-white p-3 border border-gray-600 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
+                    <TooltipContent side="bottom" sideOffset={12} align="center" className="text-white p-3 border border-gray-600 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
                       <div className="text-sm">
                         <div className="font-semibold mb-2">Accès direct au fichier</div>
                         <div className="text-gray-300">Ce fichier est organisé et immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou votre disque dur.</div>

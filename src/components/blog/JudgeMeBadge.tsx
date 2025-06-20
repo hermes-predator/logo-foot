@@ -19,7 +19,7 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-3 w-full cursor-pointer rounded-b-lg"
+      className="flex items-center gap-4 px-4 py-2 w-full cursor-pointer rounded-b-lg"
       style={{ backgroundColor: 'transparent' }}
     >
       {/* Logo Judge.me légèrement à droite */}
@@ -33,7 +33,7 @@ const JudgeMeBadge = () => {
       </div>
       
       {/* Informations à droite sur deux lignes */}
-      <div className="flex flex-col gap-1 flex-1">
+      <div className="flex flex-col gap-0.5 flex-1">
         {/* Première ligne : Étoiles + Note */}
         <div className="flex items-center justify-center gap-2">
           <div className="flex items-center">
@@ -43,7 +43,7 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
           </div>
-          <span className="text-white font-bold px-3 py-1.5 rounded-md text-sm shadow-lg" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)', backdropFilter: 'blur(4px)' }}>4.9/5</span>
+          <span className="text-white font-bold px-2.5 py-1 rounded-md text-sm shadow-lg" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)', backdropFilter: 'blur(4px)' }}>4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}

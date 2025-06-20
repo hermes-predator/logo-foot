@@ -88,14 +88,12 @@ const BlogHeader = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button 
-                          variant="outline" 
-                          className="group h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none transition-all duration-300 border-none"
+                        <button 
+                          className="group h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none transition-all duration-300 flex items-center justify-center text-white"
                           style={{ 
-                            backgroundColor: 'rgba(50, 48, 46, 0.6)', 
-                            color: 'white',
-                            '--hover-bg': 'rgba(70, 68, 66, 0.8)'
-                          } as React.CSSProperties & { '--hover-bg': string }}
+                            backgroundColor: 'rgba(50, 48, 46, 0.6)',
+                            border: 'none'
+                          }}
                           onMouseEnter={(e) => {
                             e.currentTarget.style.backgroundColor = 'rgba(70, 68, 66, 0.8)';
                           }}
@@ -106,7 +104,7 @@ const BlogHeader = () => {
                           <Folder className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-7 w-7 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
-                        </Button>
+                        </button>
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent side="right" className="text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)', border: 'none' }}>

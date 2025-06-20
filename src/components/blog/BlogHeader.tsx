@@ -24,45 +24,45 @@ const BlogHeader = () => {
             <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Link to="/" className="block">
-                        <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden" 
-                             style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
-                          
-                          {/* Section folder avec icône - sans couleur de fond */}
-                          <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
-                            {/* Effet de brillance subtil pour le branding */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
+                <Link to="/" className="block">
+                  <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden" 
+                       style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
+                    
+                    {/* Section folder avec icône - sans couleur de fond */}
+                    <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
+                      {/* Effet de brillance subtil pour le branding */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
                             <Folder className="w-5 h-5 text-gray-300 relative z-10 transition-colors duration-300" />
-                          </div>
-                          
-                          {/* Séparateur élégant centré - parfaitement aligné */}
-                          <div className="px-2 py-1.5 flex items-center justify-center">
-                            <div className="w-px h-5 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30"></div>
-                          </div>
-                          
-                          {/* Section Google Drive badge intégrée - parfaitement alignée */}
-                          <div className="pl-1 pr-1.5 py-1.5 rounded-r-xl flex items-center justify-center">
-                            <div className="relative z-10">
-                              <GoogleDriveBadge 
-                                className="border-0 bg-transparent" 
-                                textOnly={true} 
-                              />
+                          </TooltipTrigger>
+                          <TooltipContent side="bottom" sideOffset={12} align="center" className="text-white p-3 border border-gray-600 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
+                            <div className="text-sm">
+                              <div className="font-semibold mb-2">Accès direct au fichier</div>
+                              <div className="text-gray-300">Ce fichier est organisé et immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou votre disque dur.</div>
                             </div>
-                          </div>
-                        </div>
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom" sideOffset={12} align="center" className="text-white p-3 border border-gray-600 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
-                      <div className="text-sm">
-                        <div className="font-semibold mb-2">Accès direct au fichier</div>
-                        <div className="text-gray-300">Ce fichier est organisé et immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou votre disque dur.</div>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </div>
+                    
+                    {/* Séparateur élégant centré - parfaitement aligné */}
+                    <div className="px-2 py-1.5 flex items-center justify-center">
+                      <div className="w-px h-5 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30"></div>
+                    </div>
+                    
+                    {/* Section Google Drive badge intégrée - parfaitement alignée */}
+                    <div className="pl-1 pr-1.5 py-1.5 rounded-r-xl flex items-center justify-center">
+                      <div className="relative z-10">
+                        <GoogleDriveBadge 
+                          className="border-0 bg-transparent" 
+                          textOnly={true} 
+                        />
                       </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                    </div>
+                  </div>
+                </Link>
               </div>
               
               {/* Texte principal */}

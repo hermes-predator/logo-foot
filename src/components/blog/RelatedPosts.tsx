@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -42,13 +43,15 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
     similarPosts = [...similarPosts, ...popularPosts];
   }
   
-  const prevPost = post.previousPostId 
-    ? allPosts.find(p => p.id === post.previousPostId)
-    : similarPosts[0];
-    
-  const nextPost = post.nextPostId 
-    ? allPosts.find(p => p.id === post.nextPostId) 
-    : similarPosts[1];
+  // Fix navigation logic: find actual previous and next posts in chronological order
+  const sortedPosts = [...allPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const currentIndex = sortedPosts.findIndex(p => p.id === post.id);
+  
+  // Previous post is newer (comes before in sorted array)
+  const prevPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+  
+  // Next post is older (comes after in sorted array)
+  const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
   
   if (similarPosts.length === 0) {
     return null;

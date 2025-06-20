@@ -23,7 +23,7 @@ const ContactForm = () => {
         </div>
         
         {/* Informations sur les commandes intégrées */}
-        <div className="mt-6 pt-8 border-t border-gray-200">
+        <div className="mt-6 pt-7 border-t border-gray-200">
           <p className="text-gray-800 font-bold mb-4 text-lg">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2 ml-1">

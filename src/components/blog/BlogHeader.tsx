@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -144,7 +143,7 @@ const BlogHeader = () => {
       </div>
       
       {/* Section séparateur avec ligne et texte centré */}
-      <div className="relative z-20 px-4 mb-8">
+      <div className="relative z-20 px-4 mb-8 mt-6">
         <div className="container mx-auto relative">
           <div className="relative h-px">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
@@ -167,4 +166,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -29,8 +28,8 @@ const DisclaimerDialog = () => {
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <div className="bg-gradient-to-br from-orange-100 via-yellow-100 to-orange-200 rounded-md p-4 shadow-lg shadow-orange-200/30 flex items-center gap-2 backdrop-blur-sm border border-orange-200/50 flex-shrink-0">
-                <AlertTriangle className="w-6 h-6 text-orange-600 drop-shadow-sm" />
+              <div className="bg-gradient-to-br from-slate-100 via-gray-100 to-slate-200 rounded-md p-4 shadow-lg shadow-slate-200/30 flex items-center gap-2 backdrop-blur-sm border border-slate-200/50 flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-slate-600 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p>

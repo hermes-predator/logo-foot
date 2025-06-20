@@ -14,54 +14,52 @@ interface RelatedPostsProps {
 const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   const otherPosts = allPosts.filter(p => p.id !== post.id);
   
-  // Improved algorithm for better variety and SEO
+  // Fonction pour mélanger un tableau de manière aléatoire
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+  
+  // Algorithme randomisé pour une meilleure variété SEO
   let relatedPosts: BlogPost[] = [];
   
-  // 1. First priority: same subcategory (if exists) - maximum 1 post
-  if (post.subCategory) {
-    const sameSubCategory = otherPosts.filter(p => 
-      p.category === post.category && p.subCategory === post.subCategory
-    ).slice(0, 1);
-    relatedPosts = [...relatedPosts, ...sameSubCategory];
-  }
+  // 1. Mélanger tous les autres articles pour commencer
+  const shuffledOtherPosts = shuffleArray(otherPosts);
   
-  // 2. Second priority: same category but different subcategory - maximum 1 post
-  if (relatedPosts.length < maxPosts) {
-    const sameCategoryDifferentSub = otherPosts.filter(p => 
-      p.category === post.category && 
-      (!post.subCategory || p.subCategory !== post.subCategory) &&
-      !relatedPosts.find(rp => rp.id === p.id)
-    ).slice(0, 1);
-    relatedPosts = [...relatedPosts, ...sameCategoryDifferentSub];
-  }
+  // 2. Prendre quelques articles de la même catégorie (mais pas trop)
+  const sameCategoryPosts = shuffledOtherPosts
+    .filter(p => p.category === post.category)
+    .slice(0, Math.min(1, maxPosts)); // Maximum 1 de la même catégorie
   
-  // 3. Third priority: different categories for variety - prioritize recent posts
+  relatedPosts = [...relatedPosts, ...sameCategoryPosts];
+  
+  // 3. Compléter avec des articles de catégories différentes (priorité pour la diversité)
   if (relatedPosts.length < maxPosts) {
-    const differentCategories = otherPosts
+    const differentCategoryPosts = shuffledOtherPosts
       .filter(p => 
         p.category !== post.category &&
         !relatedPosts.find(rp => rp.id === p.id)
       )
-      .sort((a, b) => {
-        // Mix recent posts with those having gallery images for better engagement
-        const aScore = (a.galleryImageId ? 2 : 0) + (new Date(a.date).getTime() / 1000000000);
-        const bScore = (b.galleryImageId ? 2 : 0) + (new Date(b.date).getTime() / 1000000000);
-        return bScore - aScore;
-      })
       .slice(0, maxPosts - relatedPosts.length);
     
-    relatedPosts = [...relatedPosts, ...differentCategories];
+    relatedPosts = [...relatedPosts, ...differentCategoryPosts];
   }
   
-  // 4. Fallback: if still not enough, add more from any category
+  // 4. Si on n'a toujours pas assez, prendre n'importe quels autres articles
   if (relatedPosts.length < maxPosts) {
-    const remainingPosts = otherPosts
+    const remainingPosts = shuffledOtherPosts
       .filter(p => !relatedPosts.find(rp => rp.id === p.id))
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       .slice(0, maxPosts - relatedPosts.length);
     
     relatedPosts = [...relatedPosts, ...remainingPosts];
   }
+  
+  // Mélanger une dernière fois la sélection finale pour plus de randomisation
+  relatedPosts = shuffleArray(relatedPosts);
   
   // Fix navigation logic: find actual previous and next posts in chronological order
   const sortedPosts = [...allPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -139,7 +140,7 @@ const BlogHeader = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative backdrop-blur-md rounded-lg px-4 py-2" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
-                Aperçu de quelques collections du fichier ZIP
+                Aperçu de ⦗FRONT-CLOUD⦘~ Football.zip
               </p>
             </div>
           </div>
@@ -154,3 +155,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

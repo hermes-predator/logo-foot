@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle } from 'lucide-react';
 
@@ -7,7 +8,7 @@ const ContactForm = () => {
       {/* En-tête avec email de contact et informations sur les commandes combinés */}
       <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-t-lg rounded-br-none p-4 border border-gray-200 border-b-0">
         <h3 className="font-medium text-xl text-gray-900 mb-2 flex items-center gap-2">
-          <div className="bg-gradient-to-br from-sky-100 via-blue-100 to-blue-200 rounded-md p-3 shadow-lg shadow-blue-200/30 flex items-center gap-2 backdrop-blur-sm border border-blue-200/50">
+          <div className="bg-gradient-to-br from-sky-100 via-blue-100 to-blue-200 rounded-md p-3.5 shadow-lg shadow-blue-200/30 flex items-center gap-2 backdrop-blur-sm border border-blue-200/50">
             <MessageCircle className="w-7 h-7 text-blue-600 drop-shadow-sm" />
           </div>
           <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold ml-2 transition-colors duration-300 text-2xl">

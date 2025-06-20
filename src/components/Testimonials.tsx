@@ -1,6 +1,6 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 // Types for testimonial structure
 interface Testimonial {
@@ -84,28 +83,10 @@ const testimonials: Testimonial[] = [
 ];
 
 const Testimonials = () => {
-  const [visibleItems, setVisibleItems] = useState<number>(1);
-  // activeIndex initial à 0 pour démarrer sur Pierre M.
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [autoplay, setAutoplay] = useState<boolean>(true);
   const [api, setApi] = useState<CarouselApi>();
   const autoplayInterval = 5000;
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        setVisibleItems(3);
-      } else if (window.innerWidth >= 640) {
-        setVisibleItems(2);
-      } else {
-        setVisibleItems(1);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     if (!autoplay) return;
@@ -184,12 +165,10 @@ const Testimonials = () => {
                   className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform relative overflow-hidden group"
                   role="article"
                 >
-                  {/* Guillemets décoratifs en arrière-plan */}
                   <div className="absolute top-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
                     <Quote className="w-16 h-16 text-blue-500 rotate-12" aria-hidden="true" />
                   </div>
                   
-                  {/* Badge de vérification subtil */}
                   <div className="absolute top-3 left-3 opacity-80">
                     <div className="flex items-center gap-1 bg-gray-50 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white border border-gray-200 hover:border-gray-200 rounded-full px-2 py-1 transition-all duration-300">
                       <CircleCheck className="w-3 h-3 text-gray-600" aria-hidden="true" />
@@ -249,7 +228,6 @@ const Testimonials = () => {
             rel="noopener noreferrer" 
             className="inline-flex items-center gap-3 bg-transparent hover:bg-gradient-to-r hover:from-gray-50 hover:to-white px-5 py-3 rounded-sm border border-gray-100 hover:border-gray-200 transition-all duration-300 group relative overflow-hidden"
           >
-            {/* Effet de brillance subtil */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full group-hover:translate-x-full" />
             
             <img 

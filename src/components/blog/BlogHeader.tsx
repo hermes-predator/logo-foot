@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -39,7 +40,7 @@ const BlogHeader = () => {
                           </div>
                           
                           {/* Séparateur élégant centré - parfaitement aligné */}
-                          <div className="px-2 py-1.5 flex items-center justify-center">
+                          <div className="px-1 py-1.5 flex items-center justify-center">
                             <div className="w-px h-5 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30"></div>
                           </div>
                           
@@ -154,3 +155,4 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
+

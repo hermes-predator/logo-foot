@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -15,32 +14,53 @@ interface RelatedPostsProps {
 const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   const otherPosts = allPosts.filter(p => p.id !== post.id);
   
-  let similarPosts = otherPosts.filter(p => 
-    p.category === post.category && 
-    (post.subCategory && p.subCategory ? p.subCategory === post.subCategory : true)
-  );
+  // Improved algorithm for better variety and SEO
+  let relatedPosts: BlogPost[] = [];
   
-  if (similarPosts.length < maxPosts) {
-    const additionalPosts = otherPosts
-      .filter(p => p.category === post.category)
-      .filter(p => !similarPosts.find(sp => sp.id === p.id))
-      .slice(0, maxPosts - similarPosts.length);
-    
-    similarPosts = [...similarPosts, ...additionalPosts];
+  // 1. First priority: same subcategory (if exists) - maximum 1 post
+  if (post.subCategory) {
+    const sameSubCategory = otherPosts.filter(p => 
+      p.category === post.category && p.subCategory === post.subCategory
+    ).slice(0, 1);
+    relatedPosts = [...relatedPosts, ...sameSubCategory];
   }
   
-  if (similarPosts.length < maxPosts) {
-    const popularPosts = otherPosts
-      .filter(p => !similarPosts.find(sp => sp.id === p.id))
+  // 2. Second priority: same category but different subcategory - maximum 1 post
+  if (relatedPosts.length < maxPosts) {
+    const sameCategoryDifferentSub = otherPosts.filter(p => 
+      p.category === post.category && 
+      (!post.subCategory || p.subCategory !== post.subCategory) &&
+      !relatedPosts.find(rp => rp.id === p.id)
+    ).slice(0, 1);
+    relatedPosts = [...relatedPosts, ...sameCategoryDifferentSub];
+  }
+  
+  // 3. Third priority: different categories for variety - prioritize recent posts
+  if (relatedPosts.length < maxPosts) {
+    const differentCategories = otherPosts
+      .filter(p => 
+        p.category !== post.category &&
+        !relatedPosts.find(rp => rp.id === p.id)
+      )
       .sort((a, b) => {
-        if (a.galleryImageId && !b.galleryImageId) return -1;
-        if (!a.galleryImageId && b.galleryImageId) return 1;
-        
-        return new Date(b.date).getTime() - new Date(a.date).getTime();
+        // Mix recent posts with those having gallery images for better engagement
+        const aScore = (a.galleryImageId ? 2 : 0) + (new Date(a.date).getTime() / 1000000000);
+        const bScore = (b.galleryImageId ? 2 : 0) + (new Date(b.date).getTime() / 1000000000);
+        return bScore - aScore;
       })
-      .slice(0, maxPosts - similarPosts.length);
+      .slice(0, maxPosts - relatedPosts.length);
     
-    similarPosts = [...similarPosts, ...popularPosts];
+    relatedPosts = [...relatedPosts, ...differentCategories];
+  }
+  
+  // 4. Fallback: if still not enough, add more from any category
+  if (relatedPosts.length < maxPosts) {
+    const remainingPosts = otherPosts
+      .filter(p => !relatedPosts.find(rp => rp.id === p.id))
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, maxPosts - relatedPosts.length);
+    
+    relatedPosts = [...relatedPosts, ...remainingPosts];
   }
   
   // Fix navigation logic: find actual previous and next posts in chronological order
@@ -53,7 +73,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
   // Next post is older (comes after in sorted array)
   const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
   
-  if (similarPosts.length === 0) {
+  if (relatedPosts.length === 0) {
     return null;
   }
   
@@ -62,7 +82,7 @@ const RelatedPosts = ({ post, allPosts, maxPosts = 3 }: RelatedPostsProps) => {
       <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {similarPosts.slice(0, maxPosts).map(relatedPost => (
+        {relatedPosts.slice(0, maxPosts).map(relatedPost => (
           <Link 
             key={relatedPost.id} 
             to={`/blog/${relatedPost.id}`} 

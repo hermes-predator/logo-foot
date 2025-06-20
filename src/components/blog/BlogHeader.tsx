@@ -55,7 +55,7 @@ const BlogHeader = () => {
                         </div>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-white p-3" style={{ backgroundColor: 'rgb(30, 29, 28)', border: 'none' }}>
+                    <TooltipContent side="bottom" className="text-white p-3 border border-gray-600 shadow-lg" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
                       <div className="text-sm">
                         <div className="font-semibold mb-2">Accès direct au fichier</div>
                         <div className="text-gray-300">Cliquez pour accéder instantanément à votre collection de logos</div>

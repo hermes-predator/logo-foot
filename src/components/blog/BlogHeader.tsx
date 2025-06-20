@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -10,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
-import { Circle, ArrowRight, Folder } from 'lucide-react';
+import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogHeader = () => {
@@ -37,7 +34,7 @@ const BlogHeader = () => {
                           <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
                             {/* Effet de brillance subtil pour le branding */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
-                            <Circle className="w-4 h-4 relative z-10 transition-colors duration-300" fill="rgba(65, 63, 61, 0.8)" stroke="rgba(65, 63, 61, 0.8)" />
+                            <Folder className="w-4 h-4 relative z-10 transition-colors duration-300" fill="rgba(65, 63, 61, 0.8)" stroke="rgba(65, 63, 61, 0.8)" />
                           </div>
                           
                           {/* Séparateur élégant centré - parfaitement aligné */}
@@ -156,5 +153,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-
-

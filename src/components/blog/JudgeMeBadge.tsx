@@ -45,7 +45,7 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
           </div>
-          <span className="text-white font-bold px-3 py-1.5 rounded-md text-sm shadow-lg border border-orange-400/20" style={{ backgroundColor: 'rgba(255, 165, 0, 0.15)', backdropFilter: 'blur(4px)' }}>4.9/5</span>
+          <span className="text-white font-bold px-3 py-1.5 rounded-md text-sm shadow-lg" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)', backdropFilter: 'blur(4px)' }}>4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}

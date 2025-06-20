@@ -35,7 +35,7 @@ const BlogHeader = () => {
                           <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
                             {/* Effet de brillance subtil pour le branding */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
-                            <Folder className="w-5.5 h-5.5 relative z-10 transition-colors duration-300" fill="rgba(65, 63, 61, 0.8)" stroke="rgba(65, 63, 61, 0.8)" />
+                            <Folder className="w-5.5 h-5.5 relative z-10 transition-colors duration-300" fill="rgba(180, 160, 140, 0.8)" stroke="rgba(180, 160, 140, 0.8)" />
                           </div>
                           
                           {/* Séparateur élégant centré - parfaitement aligné */}
@@ -101,7 +101,7 @@ const BlogHeader = () => {
                             e.currentTarget.style.backgroundColor = 'rgba(50, 48, 46, 0.6)';
                           }}
                         >
-                          <Folder className="!w-7 !h-7 relative z-10 text-white" />
+                          <Folder className="!w-7 !h-7 relative z-10 text-white" fill="currentColor" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
                           <ArrowRight className="h-6 w-6 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
                         </button>

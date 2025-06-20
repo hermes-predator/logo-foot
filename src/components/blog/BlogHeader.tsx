@@ -88,10 +88,10 @@ const BlogHeader = () => {
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Link to="/">
-                        <Button variant="outline" className="h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none" style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)', color: 'white', border: 'none' }}>
+                        <Button variant="outline" className="group h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none" style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)', color: 'white', border: 'none' }}>
                           <Folder className="!w-7 !h-7 relative z-10 text-white" />
                           <span className="relative z-10 text-white">Voir le fichier</span>
-                          <ArrowRight className="h-7 w-7 relative z-10 text-white" />
+                          <ArrowRight className="h-7 w-7 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
                         </Button>
                       </Link>
                     </TooltipTrigger>

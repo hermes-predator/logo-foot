@@ -5,6 +5,7 @@ export const hungaryLogoPost: BlogPost = {
   title: "Logo Hongrie : Histoire et Évolution de l'Emblème National [2024]",
   excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Hongrie : des origines à aujourd'hui, évolution et signification de l'emblème du football hongrois.",
   date: "2024-05-25",
+  galleryImageId: 312,
   content: `# L'Histoire Fascinante du **Logo Hongrie** Football
 
 Le **logo hongrie** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité nationale qui représente une riche tradition footballistique et l'héritage d'un pays qui a écrit certaines des pages les plus mémorables de l'histoire du football mondial. Plongeons dans l'univers fascinant du **hongrie logo** qui incarne la fière histoire du Onze Magique hongrois.
@@ -47,5 +48,4 @@ Les joueurs qui portent fièrement le maillot orné du **logo hongrie de foot** 
   keywords: "logo hongrie, hongrie logo, hongrie foot logo, hongrie logo foot, logo foot hongrie, logo hongrie foot, logo d'hongrie, logo hongrie de foot",
   category: 'national-logos',
   subCategory: 'national-logos',
-  galleryImageId: 159
 };

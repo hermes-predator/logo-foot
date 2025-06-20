@@ -72,25 +72,47 @@ const Header = () => {
                 <div className="container mx-auto py-3 flex flex-col space-y-2">
                   <Link 
                     to="/" 
-                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                    className={`group flex items-center gap-3 transition-all px-4 py-3 rounded-lg relative overflow-hidden ${
                       currentPath === '/' 
-                        ? 'font-medium bg-gray-100/80 text-black' 
-                        : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                        ? 'font-medium bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 shadow-sm' 
+                        : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50/80'
                     }`}
                   >
-                    <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-black' : ''}`} />
-                    <span>Accueil</span>
+                    <div className={`p-1.5 rounded-md transition-all ${
+                      currentPath === '/' 
+                        ? 'bg-blue-100 text-blue-600' 
+                        : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-blue-500'
+                    }`}>
+                      <Home className="w-4 h-4" />
+                    </div>
+                    <span className="relative">
+                      Accueil
+                      {currentPath === '/' && (
+                        <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
+                      )}
+                    </span>
                   </Link>
                   <Link 
                     to="/blog" 
-                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                    className={`group flex items-center gap-3 transition-all px-4 py-3 rounded-lg relative overflow-hidden ${
                       currentPath.startsWith('/blog') 
-                        ? 'font-medium bg-gray-100/80 text-black' 
-                        : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                        ? 'font-medium bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-700 shadow-sm' 
+                        : 'text-gray-700 hover:text-emerald-600 hover:bg-gray-50/80'
                     }`}
                   >
-                    <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
-                    <span>Blog</span>
+                    <div className={`p-1.5 rounded-md transition-all ${
+                      currentPath.startsWith('/blog') 
+                        ? 'bg-emerald-100 text-emerald-600' 
+                        : 'bg-gray-100 text-gray-600 group-hover:bg-emerald-50 group-hover:text-emerald-500'
+                    }`}>
+                      <BookOpen className="w-4 h-4" />
+                    </div>
+                    <span className="relative">
+                      Blog
+                      {currentPath.startsWith('/blog') && (
+                        <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+                      )}
+                    </span>
                   </Link>
                   
                   {/* Divider */}
@@ -127,25 +149,51 @@ const Header = () => {
           <div className="flex items-center gap-6 sm:gap-8">
             <Link 
               to="/" 
-              className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
+              className={`group flex items-center gap-2.5 transition-all relative px-4 py-2.5 rounded-lg overflow-hidden ${
                 currentPath === '/' 
-                  ? 'font-medium bg-gray-100/80 text-black' 
-                  : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                  ? 'font-medium bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 shadow-sm ring-1 ring-blue-100' 
+                  : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50/80 hover:shadow-sm'
               }`}
             >
-              <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-black' : ''}`} />
-              <span>Accueil</span>
+              <div className={`p-1 rounded-md transition-all ${
+                currentPath === '/' 
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-blue-500'
+              }`}>
+                <Home className="w-4 h-4" />
+              </div>
+              <span className="relative">
+                Accueil
+                {currentPath === '/' && (
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
+                )}
+              </span>
+              {/* Effet de brillance subtile au survol */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-100%] group-hover:translate-x-[100%] duration-700"></div>
             </Link>
             <Link 
               to="/blog" 
-              className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
+              className={`group flex items-center gap-2.5 transition-all relative px-4 py-2.5 rounded-lg overflow-hidden ${
                 currentPath.startsWith('/blog') 
-                  ? 'font-medium bg-gray-100/80 text-black' 
-                  : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                  ? 'font-medium bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-700 shadow-sm ring-1 ring-emerald-100' 
+                  : 'text-gray-700 hover:text-emerald-600 hover:bg-gray-50/80 hover:shadow-sm'
               }`}
             >
-              <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
-              <span>Blog</span>
+              <div className={`p-1 rounded-md transition-all ${
+                currentPath.startsWith('/blog') 
+                  ? 'bg-emerald-100 text-emerald-600' 
+                  : 'bg-gray-100 text-gray-600 group-hover:bg-emerald-50 group-hover:text-emerald-500'
+              }`}>
+                <BookOpen className="w-4 h-4" />
+              </div>
+              <span className="relative">
+                Blog
+                {currentPath.startsWith('/blog') && (
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+                )}
+              </span>
+              {/* Effet de brillance subtile au survol */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-[-100%] group-hover:translate-x-[100%] duration-700"></div>
             </Link>
           </div>
         )}

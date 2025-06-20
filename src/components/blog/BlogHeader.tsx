@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
@@ -56,7 +54,7 @@ const BlogHeader = () => {
                         </div>
                       </Link>
                     </TooltipTrigger>
-                    <TooltipContent side="bottom" sideOffset={3} align="start" className="text-white p-3 border border-orange-400 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
+                    <TooltipContent side="bottom" sideOffset={3} align="start" className="text-white p-3 border border-gray-700 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)' }}>
                       <div className="text-sm">
                         <div className="font-semibold mb-2">Accès direct au fichier</div>
                         <div className="text-gray-300">Ce fichier est immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou votre disque dur.</div>
@@ -65,6 +63,7 @@ const BlogHeader = () => {
                   </Tooltip>
                 </TooltipProvider>
               </div>
+              
               
               {/* Texte principal */}
               <div className="space-y-3 ml-8">
@@ -151,4 +150,3 @@ const BlogHeader = () => {
 };
 
 export default BlogHeader;
-

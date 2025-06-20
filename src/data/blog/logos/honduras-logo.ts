@@ -5,6 +5,7 @@ export const hondurasLogoPost: BlogPost = {
   id: 307,
   title: "**Logo Honduras** : L'Histoire Fascinante de l'Emblème des Catrachos [2024]",
   date: '2025-04-26',
+  galleryImageId: 307,
   category: 'national-logos',
   excerpt: "Découvrez l'histoire captivante du logo de la sélection hondurienne de football, un symbole qui incarne la fierté et les ambitions d'une nation passionnée de football.",
   content: `# Le **Logo Honduras** : Un Symbole d'Identité Nationale

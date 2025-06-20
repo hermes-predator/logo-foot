@@ -6,6 +6,7 @@ export const hoffenheimLogoPost: BlogPost = {
   title: "Logo TSG Hoffenheim : Histoire et Évolution du Club Allemand [2024]",
   excerpt: "Découvrez l'histoire et la signification du logo TSG Hoffenheim, emblème moderne du football allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-18",
+  galleryImageId: 306,
   content: `# Histoire et Signification du Logo TSG Hoffenheim
 
 Le **logo Hoffenheim** est l'emblème d'un club qui, en quelques décennies, a réussi à s'imposer dans l'élite du football allemand. À travers cet article, nous explorerons l'histoire fascinante du **TSG Hoffenheim logo** et sa symbolique qui représente l'ascension fulgurante de ce club de la Bundesliga.
@@ -68,5 +69,4 @@ Dans un monde où l'identité visuelle joue un rôle de plus en plus important d
   keywords: "hoffenheim logo, logo hoffenheim, hoffenheim logo png, logo tsg hoffenheim, tsg hoffenheim logo, logo hoffenheim png, logo club foot hoffenheim, logo de foot hoffenheim, logo foot hoffenheim, logo foot hoffenheim png, logo hoffenheim fc",
   category: 'logos',
   subCategory: 'club-logos',
-  galleryImageId: 65
 };

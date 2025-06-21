@@ -72,10 +72,6 @@ const BlogPost: React.FC = () => {
   // URL canonique pour cet article spécifique
   const canonicalUrl = `https://logo-foot.com${generatePostUrl(post.id, post.title)}`;
 
-  // Diviser le contenu en deux parties pour insérer l'encadré au milieu
-  const contentSections = post.content.split('\n\n');
-  const midPoint = Math.floor(contentSections.length / 2);
-
   return (
     <>
       <PageLoader 
@@ -167,9 +163,16 @@ const BlogPost: React.FC = () => {
                   <span className="font-medium">Équipe Logo Foot</span>
                 </div>
               </div>
+
+              {/* Encadré "Articles Liés" juste après les métadonnées */}
+              <ArticleRecommendations 
+                currentPost={post} 
+                allPosts={blogPosts} 
+                position="middle" 
+              />
             </header>
 
-            {/* Contenu de l'article avec un seul encadré au milieu */}
+            {/* Contenu de l'article */}
             <div className="px-8 pb-10">
               <div className="prose prose-xl prose-gray max-w-none 
                              prose-headings:text-gray-900 prose-headings:font-bold prose-headings:tracking-tight
@@ -189,21 +192,8 @@ const BlogPost: React.FC = () => {
                              prose-img:rounded-lg prose-img:shadow-md
                              ">
                 
-                {/* Première moitié du contenu */}
                 <ReactMarkdown>
-                  {contentSections.slice(0, midPoint).join('\n\n')}
-                </ReactMarkdown>
-                
-                {/* Encadré "Articles Liés" au milieu - plus discret */}
-                <ArticleRecommendations 
-                  currentPost={post} 
-                  allPosts={blogPosts} 
-                  position="middle" 
-                />
-                
-                {/* Deuxième moitié du contenu */}
-                <ReactMarkdown>
-                  {contentSections.slice(midPoint).join('\n\n')}
+                  {post.content}
                 </ReactMarkdown>
               </div>
             </div>

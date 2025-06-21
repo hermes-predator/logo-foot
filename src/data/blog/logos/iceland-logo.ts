@@ -8,7 +8,7 @@ export const icelandLogoPost: BlogPost = {
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
-  galleryImageId: 166,
+  galleryImageId: 313,
   content: `# L'Histoire Fascinante du **Logo Islande**
 
 Le **islande logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation insulaire qui a su s'imposer sur la scène internationale du football malgré sa petite taille. Le **logo islande** incarne la résilience et la détermination d'un peuple passionné qui a écrit quelques-unes des plus belles pages de l'histoire récente du football européen.

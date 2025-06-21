@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState, useMemo } from 'react';
 import { useLazyLoading } from '@/hooks/useLazyLoading';
+import { useImageOptimization } from '@/hooks/useImageOptimization';
 import { AspectRatio } from './aspect-ratio';
 import { cn } from '@/lib/utils';
 import { Skeleton } from './skeleton';
@@ -15,6 +16,7 @@ interface OptimizedImageProps {
   aspectRatio?: number;
   priority?: boolean;
   objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+  quality?: number;
 }
 
 export function OptimizedImage({
@@ -23,81 +25,59 @@ export function OptimizedImage({
   className,
   width = 800,
   height = 800,
-  aspectRatio = 1, // Changé de 16/9 à 1 (carré)
+  aspectRatio = 1,
   priority = false,
   objectFit = 'cover',
+  quality = 80,
 }: OptimizedImageProps) {
   const { isInView, imgRef } = useLazyLoading();
   const [isLoaded, setIsLoaded] = useState(priority);
   const [error, setError] = useState(false);
   
+  // Utilisation du nouveau hook d'optimisation avec WebP automatique
+  const { optimizedSrc, supportsWebP, isOptimized } = useImageOptimization({
+    src,
+    width,
+    height,
+    quality,
+    format: 'auto' // Conversion automatique WebP si supporté
+  });
+  
   // Générer le srcSet pour différentes tailles d'écran
   const { srcSet, sizes } = useMemo(() => 
-    generateSrcSet(src, [320, 640, 768, 1024, 1280, 1536, width], 80),
-  [src, width]);
-  
-  // Optimize image URL with size and format parameters
-  const optimizedSrc = useMemo(() => {
-    if (src.startsWith('/') || src.includes('logo-foot.com')) {
-      const params = new URLSearchParams();
-      params.append('w', width.toString());
-      params.append('q', '80');
-      params.append('auto', 'format');
-      
-      // Add WebP support if available
-      if (window.navigator.userAgent.includes('Chrome') || 
-          window.navigator.userAgent.includes('Firefox') || 
-          window.navigator.userAgent.includes('Safari')) {
-        params.append('fm', 'webp');
-      }
-      
-      const separator = src.includes('?') ? '&' : '?';
-      return `${src}${separator}${params.toString()}`;
-    }
-    return src;
-  }, [src, width]);
+    generateSrcSet(optimizedSrc, [320, 640, 768, 1024, 1280, 1536, width], quality),
+  [optimizedSrc, width, quality]);
 
-  // Performance monitoring
+  // Performance monitoring avec info sur l'optimisation
   useEffect(() => {
     if (isLoaded && window.performance && window.performance.mark) {
       window.performance.mark(`image-loaded-${src}`);
       
-      // Report to analytics if needed
-      if (window.performance.getEntriesByName) {
-        const loadTime = window.performance.getEntriesByName(`image-loaded-${src}`)[0]?.duration;
-        if (loadTime && loadTime > 3000) {
-          console.warn(`Slow image load (${loadTime}ms):`, src);
-        }
+      // Log des optimisations appliquées
+      if (isOptimized) {
+        console.debug(`Image optimized: ${src} → ${optimizedSrc}`, {
+          webpSupport: supportsWebP,
+          originalSize: width + 'x' + height,
+          quality: quality
+        });
       }
     }
-  }, [isLoaded, src]);
+  }, [isLoaded, src, optimizedSrc, isOptimized, supportsWebP, width, height, quality]);
 
   const handleLoad = () => {
     setIsLoaded(true);
     
-    // Report to analytics
     if (window.performance && window.performance.mark) {
       window.performance.mark(`image-loaded-${src.split('/').pop()}`);
     }
   };
 
   const handleError = () => {
-    console.error(`Failed to load image: ${src}`);
+    console.error(`Failed to load image: ${optimizedSrc}`);
     setError(true);
     setIsLoaded(true);
   };
 
-  // Add protection against screen capture
-  useEffect(() => {
-    const imgElement = imgRef.current;
-    if (!imgElement) return;
-
-    if (isInView) {
-      // Protection logic here if needed
-    }
-  }, [isInView, imgRef]);
-
-  // If the image is priority, we want to load it right away
   const shouldLoad = priority || isInView;
 
   return (

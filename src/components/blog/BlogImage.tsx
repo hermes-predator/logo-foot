@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useLazyLoading } from '../../hooks/useLazyLoading';
-import { AspectRatio } from '../ui/aspect-ratio';
 import { useImageOptimization } from '../../hooks/useImageOptimization';
+import { AspectRatio } from '../ui/aspect-ratio';
 import { getBlogImagePath } from '../../utils/blogImagePaths';
 
 interface BlogImageProps {
@@ -15,6 +15,7 @@ interface BlogImageProps {
   title?: string;
   priority?: boolean;
   aspectRatio?: number;
+  quality?: number;
 }
 
 const BlogImage = ({ 
@@ -27,7 +28,8 @@ const BlogImage = ({
   height = 800,
   title,
   priority = false,
-  aspectRatio = 1
+  aspectRatio = 1,
+  quality = 85
 }: BlogImageProps) => {
   const { isInView, imgRef } = useLazyLoading();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -35,23 +37,18 @@ const BlogImage = ({
   // Déterminer la source de l'image
   const imageSrc = src || (galleryImageId ? getBlogImagePath(galleryImageId) : '/placeholder.svg');
   
-  const { optimizedSrc } = useImageOptimization({ 
+  // Utilisation du nouveau hook d'optimisation avec WebP automatique
+  const { optimizedSrc, supportsWebP, isOptimized } = useImageOptimization({ 
     src: imageSrc, 
     width, 
     height, 
-    quality: 85, 
-    format: 'webp'
+    quality, 
+    format: 'auto' // Conversion automatique
   });
   
   const imageTitle = title || alt;
   const fileName = imageSrc.split('/').pop() || 'image';
   const imageId = `img-${fileName.split('.')[0]}`;
-  
-  // Déterminer si l'image est un PNG
-  const isPng = imageSrc.toLowerCase().endsWith('.png');
-
-  // Si c'est un PNG, on n'applique pas la conversion WebP
-  const finalSrc = isPng ? imageSrc : optimizedSrc;
 
   // Extraire les dimensions pour le structured data
   const imageDimensions = {
@@ -83,12 +80,19 @@ const BlogImage = ({
     };
   }, []);
 
-  // Mesurer les performances de chargement
+  // Mesurer les performances de chargement avec info d'optimisation
   useEffect(() => {
     if (isInView && typeof window !== 'undefined') {
-      // Marquer le temps de chargement pour les Core Web Vitals
       if (window.performance && window.performance.mark) {
         window.performance.mark(`image-visible-${imageId}`);
+      }
+
+      // Log des optimisations pour le debug
+      if (isOptimized) {
+        console.debug(`Blog image optimized: ${imageSrc} → ${optimizedSrc}`, {
+          webpSupport: supportsWebP,
+          quality: quality
+        });
       }
 
       // Report to Largest Contentful Paint if this is an important image
@@ -102,7 +106,7 @@ const BlogImage = ({
         observer.observe({ type: 'largest-contentful-paint', buffered: true });
       }
     }
-  }, [isInView, imageId, priority]);
+  }, [isInView, imageId, priority, imageSrc, optimizedSrc, isOptimized, supportsWebP, quality]);
 
   // Préchargement pour les images prioritaires
   useEffect(() => {
@@ -110,7 +114,7 @@ const BlogImage = ({
       const link = document.createElement('link');
       link.rel = 'preload';
       link.as = 'image';
-      link.href = finalSrc;
+      link.href = optimizedSrc;
       link.fetchPriority = 'high';
       document.head.appendChild(link);
       
@@ -118,7 +122,7 @@ const BlogImage = ({
         document.head.removeChild(link);
       };
     }
-  }, [priority, finalSrc]);
+  }, [priority, optimizedSrc]);
 
   return (
     <div 
@@ -132,7 +136,7 @@ const BlogImage = ({
       <AspectRatio ratio={aspectRatio} className="overflow-hidden rounded-lg shadow-md bg-gradient-to-br from-gray-100 to-gray-200">
         <img
           ref={imgRef}
-          src={isInView || priority ? finalSrc : '/placeholder.svg'}
+          src={isInView || priority ? optimizedSrc : '/placeholder.svg'}
           alt={alt}
           title={imageTitle}
           width={imageDimensions.width}
@@ -153,7 +157,7 @@ const BlogImage = ({
       <meta itemProp="name" content={imageTitle} />
       <meta itemProp="description" content={alt} />
       <meta itemProp="representativeOfPage" content={isDefault ? "true" : "false"} />
-      <meta itemProp="encodingFormat" content={isPng ? "image/png" : "image/webp"} />
+      <meta itemProp="encodingFormat" content={optimizedSrc.toLowerCase().endsWith('.png') ? "image/png" : "image/webp"} />
       <meta itemProp="uploadDate" content={new Date().toISOString()} />
       <meta itemProp="copyrightYear" content={new Date().getFullYear().toString()} />
       

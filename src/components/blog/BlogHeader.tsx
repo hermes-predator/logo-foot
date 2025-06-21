@@ -24,10 +24,10 @@ const BlogHeader = () => {
             <div className="flex-1 space-y-6">
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8 -mt-2">
-                <TooltipProvider>
-                  <Tooltip delayDuration={300}>
-                    <TooltipTrigger asChild>
-                      <Link to="/" className="block">
+                <Link to="/" className="block">
+                  <TooltipProvider>
+                    <Tooltip delayDuration={300}>
+                      <TooltipTrigger asChild>
                         <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden hover:bg-opacity-90 transition-all duration-200" 
                              style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                           
@@ -53,16 +53,16 @@ const BlogHeader = () => {
                             </div>
                           </div>
                         </div>
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom" sideOffset={3} align="start" className="text-white p-3 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)', border: '1px solid rgba(55, 53, 51, 0.8)' }}>
-                      <div className="text-sm">
-                        <div className="font-semibold mb-2">Accès direct au fichier</div>
-                        <div className="text-gray-300">Ce fichier est immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou un disque dur.</div>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
+                      </TooltipTrigger>
+                      <TooltipContent side="bottom" sideOffset={3} align="start" className="text-white p-3 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)', border: '1px solid rgba(55, 53, 51, 0.8)' }}>
+                        <div className="text-sm">
+                          <div className="font-semibold mb-2">Accès direct au fichier</div>
+                          <div className="text-gray-300">Ce fichier est immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou un disque dur.</div>
+                        </div>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
               </div>
               
               

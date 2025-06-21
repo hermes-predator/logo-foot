@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -143,7 +142,7 @@ const RelatedArticlesBox = ({
             to={generatePostUrl(article.id, article.title)}
             className="group flex items-start gap-1.5 p-1 rounded transition-colors"
           >
-            <ExternalLink className="w-2.5 h-2.5 text-gray-300 mt-0.5 opacity-40" />
+            <ExternalLink className="w-3 h-3 text-gray-500 mt-0.5 opacity-80 group-hover:opacity-100 group-hover:text-blue-600 transition-all" />
             <div className="flex-1">
               <h4 className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors line-clamp-1 leading-relaxed">
                 {article.title.replace(/\*\*/g, '')}

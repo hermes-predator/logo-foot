@@ -20,29 +20,3 @@
   AddType text/css .css
   AddType image/svg+xml .svg
 </IfModule>
-
-# Protection basique contre le hotlinking des images UNIQUEMENT
-<IfModule mod_rewrite.c>
-  RewriteEngine on
-  
-  # Protection anti-hotlinking seulement pour les images avec referer externe
-  RewriteCond %{HTTP_REFERER} !^$
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?logo-foot\.com [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://localhost [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://127\.0\.0\.1 [NC]
-  RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,NC]
-</IfModule>
-
-# En-têtes de sécurité basiques
-<IfModule mod_headers.c>
-  Header always set X-Frame-Options "SAMEORIGIN"
-  Header always set X-XSS-Protection "1; mode=block"
-  Header always set X-Content-Type-Options "nosniff"
-  Header always set Referrer-Policy "strict-origin-when-cross-origin"
-</IfModule>
-
-# Empêcher l'accès aux fichiers sensibles
-<FilesMatch "(\.htaccess|\.htpasswd|\.git|\.env|\.gitignore|\.DS_Store|readme\.md|package\.json)$">
-  Order Allow,Deny
-  Deny from all
-</FilesMatch>

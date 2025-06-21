@@ -13,3 +13,5 @@ export { default as RelatedPosts } from './RelatedPosts';
 export { default as BackToButton } from './BackToButton';
 export { default as BlogCategorySelector } from './BlogCategorySelector';
 export { default as BlogContent } from './BlogContent';
+export { default as ArticleRecommendations } from './ArticleRecommendations';
+export { default as RelatedArticlesBox } from './RelatedArticlesBox';

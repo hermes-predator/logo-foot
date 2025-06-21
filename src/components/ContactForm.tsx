@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle } from 'lucide-react';
 
@@ -13,7 +14,7 @@ const ContactForm = () => {
           </div>
           <div className="ml-2">
             <p className="text-xs text-blue-600 mb-0 mt-1">Par e-mail</p>
-            <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
+            <a href="mailto:contact@logo-foot.com" className="text-black hover:underline font-semibold transition-colors duration-300 text-2xl">
               contact@logo-foot.com
             </a>
           </div>
@@ -68,3 +69,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

@@ -33,6 +33,13 @@
 # Protection contre le hotlinking des images et vidéos - MISE À JOUR avec moteurs de recherche
 <IfModule mod_rewrite.c>
   RewriteEngine on
+  
+  # Exclure les routes du blog de la protection anti-hotlinking
+  RewriteCond %{REQUEST_URI} !^/blog [NC]
+  RewriteCond %{REQUEST_URI} !^/$ [NC]
+  RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
+  
+  # Conditions anti-hotlinking pour les fichiers média uniquement
   RewriteCond %{HTTP_REFERER} !^$
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?logo-foot\.com [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://localhost [NC]

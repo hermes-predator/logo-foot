@@ -1,13 +1,7 @@
 
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # Gestion spécifique pour les routes du blog - CORRECTION
-  # Permettre l'accès direct aux routes du blog sans protection anti-hotlinking
-  RewriteCond %{REQUEST_URI} ^/blog/?.*$ [NC]
-  RewriteRule . /index.html [L,QSA]
   
   # Permettre l'accès aux fichiers statiques existants
   RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -27,61 +21,24 @@
   AddType image/svg+xml .svg
 </IfModule>
 
-# Protection contre le hotlinking des images et vidéos - SIMPLIFIÉE
+# Protection basique contre le hotlinking des images UNIQUEMENT
 <IfModule mod_rewrite.c>
   RewriteEngine on
   
-  # Protection anti-hotlinking UNIQUEMENT pour les fichiers média
-  # ET SEULEMENT si ce n'est PAS une route du blog
-  RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ [NC]
-  RewriteRule ^ - [L]
-  
-  # Si c'est un fichier média, vérifier le referrer
+  # Protection anti-hotlinking seulement pour les images avec referer externe
   RewriteCond %{HTTP_REFERER} !^$
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?logo-foot\.com [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://localhost [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://127\.0\.0\.1 [NC]
-  # Autoriser les moteurs de recherche et réseaux sociaux
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?bing\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yahoo\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?duckduckgo\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?twitter\. [NC]
-  RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?linkedin\. [NC]
-  RewriteRule \.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ - [F,NC]
+  RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,NC]
 </IfModule>
 
-# Bloquer les téléchargements directs
+# En-têtes de sécurité basiques
 <IfModule mod_headers.c>
-  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$">
-    Header set Content-Disposition "inline"
-    Header set X-Content-Type-Options "nosniff"
-  </FilesMatch>
-</IfModule>
-
-# En-têtes de sécurité
-<IfModule mod_headers.c>
-  # Protection contre le clickjacking
   Header always set X-Frame-Options "SAMEORIGIN"
-  
-  # Protection contre les attaques XSS
   Header always set X-XSS-Protection "1; mode=block"
-  
-  # Empêche le navigateur de détecter le type MIME
   Header always set X-Content-Type-Options "nosniff"
-  
-  # Politique de sécurité du contenu - mise à jour avec SumUp
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://cdn.gpteng.co https://gateway.sumup.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://api.sumup.com https://gateway.sumup.com; frame-ancestors 'self'"
-  
-  # Référer-Policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  
-  # HSTS - Forcer HTTPS (à décommenter après avoir testé le HTTPS)
-  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-  
-  # Permissions-Policy (remplace Feature-Policy)
-  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
 </IfModule>
 
 # Empêcher l'accès aux fichiers sensibles
@@ -89,12 +46,3 @@
   Order Allow,Deny
   Deny from all
 </FilesMatch>
-
-# Bloquer les requêtes malveillantes
-<IfModule mod_rewrite.c>
-  RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
-  RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
-  RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
-  RewriteRule .* index.php [F,L]
-</IfModule>
-

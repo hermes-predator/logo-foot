@@ -1,16 +1,13 @@
 
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
   
-  # Gestion spécifique pour les routes du blog avec paramètres
-  RewriteCond %{REQUEST_URI} ^/blog$ [NC]
-  RewriteCond %{QUERY_STRING} ^category=.+$ [NC]
+  # Gestion spécifique pour les routes du blog - CORRECTION
+  # Permettre l'accès direct aux routes du blog sans protection anti-hotlinking
+  RewriteCond %{REQUEST_URI} ^/blog/?.*$ [NC]
   RewriteRule . /index.html [L,QSA]
-  
-  # Gestion des routes spécifiques du blog
-  RewriteRule ^blog/?$ /index.html [L,QSA]
-  RewriteRule ^blog/(.+)$ /index.html [L,QSA]
   
   # Permettre l'accès aux fichiers statiques existants
   RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -30,16 +27,16 @@
   AddType image/svg+xml .svg
 </IfModule>
 
-# Protection contre le hotlinking des images et vidéos - MISE À JOUR avec moteurs de recherche
+# Protection contre le hotlinking des images et vidéos - SIMPLIFIÉE
 <IfModule mod_rewrite.c>
   RewriteEngine on
   
-  # Exclure les routes du blog de la protection anti-hotlinking
-  RewriteCond %{REQUEST_URI} !^/blog [NC]
-  RewriteCond %{REQUEST_URI} !^/$ [NC]
-  RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
+  # Protection anti-hotlinking UNIQUEMENT pour les fichiers média
+  # ET SEULEMENT si ce n'est PAS une route du blog
+  RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ [NC]
+  RewriteRule ^ - [L]
   
-  # Conditions anti-hotlinking pour les fichiers média uniquement
+  # Si c'est un fichier média, vérifier le referrer
   RewriteCond %{HTTP_REFERER} !^$
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?logo-foot\.com [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://localhost [NC]
@@ -52,7 +49,6 @@
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook\. [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?twitter\. [NC]
   RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?linkedin\. [NC]
-  RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ [NC]
   RewriteRule \.(jpg|jpeg|png|gif|webp|svg|mp4|webm)$ - [F,NC]
 </IfModule>
 
@@ -101,3 +97,4 @@
   RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
   RewriteRule .* index.php [F,L]
 </IfModule>
+

@@ -18,7 +18,7 @@ interface RelatedArticlesBoxProps {
 const RelatedArticlesBox = ({ 
   currentPost, 
   allPosts, 
-  title = "📖 À lire aussi :",
+  title = "À lire aussi :",
   icon: Icon = BookOpen,
   maxArticles = 2,
   filterBy = 'category',
@@ -133,22 +133,22 @@ const RelatedArticlesBox = ({
   }
   
   return (
-    <div className="my-6 p-4 bg-gray-50/80 border border-gray-200/60 rounded-lg">
-      <div className="flex items-center gap-2 mb-3">
-        <Icon className="w-4 h-4 text-gray-600" />
-        <h3 className="text-base font-medium text-gray-700">{title}</h3>
+    <div className="my-8 p-3 bg-gray-25/40 border-l-2 border-gray-200/40 rounded-r-md">
+      <div className="flex items-center gap-1.5 mb-2">
+        <Icon className="w-3 h-3 text-gray-400" />
+        <h3 className="text-xs font-normal text-gray-500 uppercase tracking-wide">{title}</h3>
       </div>
       
-      <div className="space-y-2">
+      <div className="space-y-1">
         {relatedArticles.map(article => (
           <Link 
             key={article.id}
             to={generatePostUrl(article.id, article.title)}
-            className="group flex items-start gap-2 p-2 rounded hover:bg-white/80 transition-all duration-200"
+            className="group flex items-start gap-1.5 p-1 rounded hover:bg-gray-50/60 transition-all duration-200"
           >
-            <ExternalLink className="w-3 h-3 text-gray-400 mt-1 opacity-60 group-hover:opacity-100" />
+            <ExternalLink className="w-2.5 h-2.5 text-gray-300 mt-0.5 opacity-40 group-hover:opacity-70" />
             <div className="flex-1">
-              <h4 className="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-1">
+              <h4 className="text-xs text-gray-600 group-hover:text-gray-800 transition-colors line-clamp-1 leading-relaxed">
                 {article.title.replace(/\*\*/g, '')}
               </h4>
             </div>

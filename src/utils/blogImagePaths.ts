@@ -3,7 +3,7 @@
  * Génère le chemin d'une image de blog à partir de son ID
  */
 export const getBlogImagePath = (imageId: number): string => {
-  return `/blog/p${imageId}.png`;
+  return `/ads/p${imageId}.png`;
 };
 
 /**

@@ -151,7 +151,7 @@ const BlogHeader = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative backdrop-blur-md rounded-lg px-4 py-2" style={{ backgroundColor: 'rgba(40, 39, 37, 0.8)' }}>
               <p className="text-white text-sm font-medium whitespace-nowrap relative z-10">
-                Aperçu de : ⦗FRONT-CLOUD⦘~ Football.zip
+                Aperçu : ⦗FRONT-CLOUD⦘~ Football.zip
               </p>
             </div>
           </div>

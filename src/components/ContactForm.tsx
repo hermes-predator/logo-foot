@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, User, Clock, Ticket, MessageCircle } from 'lucide-react';
+import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 
 const ContactForm = () => {
   return (
@@ -12,7 +12,10 @@ const ContactForm = () => {
             <MessageCircle className="w-7 h-7 text-blue-600 drop-shadow-sm" />
           </div>
           <div className="ml-2">
-            <p className="text-xs text-blue-500 mb-0 mt-1">Par e-mail</p>
+            <p className="text-xs text-blue-500 mb-0 mt-1 flex items-center gap-1">
+              <Mail className="w-3 h-3" />
+              Par e-mail
+            </p>
             <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
               contact@logo-foot.com
             </a>

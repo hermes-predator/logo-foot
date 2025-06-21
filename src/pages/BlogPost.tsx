@@ -72,10 +72,9 @@ const BlogPost: React.FC = () => {
   // URL canonique pour cet article spécifique
   const canonicalUrl = `https://logo-foot.com${generatePostUrl(post.id, post.title)}`;
 
-  // Diviser le contenu en sections pour insérer les encadrés
+  // Diviser le contenu en deux parties pour insérer l'encadré au milieu
   const contentSections = post.content.split('\n\n');
-  const firstThird = Math.floor(contentSections.length / 3);
-  const secondThird = Math.floor((contentSections.length * 2) / 3);
+  const midPoint = Math.floor(contentSections.length / 2);
 
   return (
     <>
@@ -170,7 +169,7 @@ const BlogPost: React.FC = () => {
               </div>
             </header>
 
-            {/* Contenu de l'article avec encadrés intégrés */}
+            {/* Contenu de l'article avec un seul encadré au milieu */}
             <div className="px-8 pb-10">
               <div className="prose prose-xl prose-gray max-w-none 
                              prose-headings:text-gray-900 prose-headings:font-bold prose-headings:tracking-tight
@@ -190,41 +189,22 @@ const BlogPost: React.FC = () => {
                              prose-img:rounded-lg prose-img:shadow-md
                              ">
                 
-                {/* Premier tiers du contenu */}
+                {/* Première moitié du contenu */}
                 <ReactMarkdown>
-                  {contentSections.slice(0, firstThird).join('\n\n')}
+                  {contentSections.slice(0, midPoint).join('\n\n')}
                 </ReactMarkdown>
                 
-                {/* Premier encadré "Articles Liés" */}
-                <ArticleRecommendations 
-                  currentPost={post} 
-                  allPosts={blogPosts} 
-                  position="top" 
-                />
-                
-                {/* Deuxième tiers du contenu */}
-                <ReactMarkdown>
-                  {contentSections.slice(firstThird, secondThird).join('\n\n')}
-                </ReactMarkdown>
-                
-                {/* Deuxième encadré "Articles Liés" */}
+                {/* Encadré "Articles Liés" au milieu - plus discret */}
                 <ArticleRecommendations 
                   currentPost={post} 
                   allPosts={blogPosts} 
                   position="middle" 
                 />
                 
-                {/* Dernier tiers du contenu */}
+                {/* Deuxième moitié du contenu */}
                 <ReactMarkdown>
-                  {contentSections.slice(secondThird).join('\n\n')}
+                  {contentSections.slice(midPoint).join('\n\n')}
                 </ReactMarkdown>
-                
-                {/* Troisième encadré "Articles Liés" */}
-                <ArticleRecommendations 
-                  currentPost={post} 
-                  allPosts={blogPosts} 
-                  position="bottom" 
-                />
               </div>
             </div>
           </article>

@@ -20,7 +20,7 @@ const RelatedArticlesBox = ({
   allPosts, 
   title = "📖 À lire aussi :",
   icon: Icon = BookOpen,
-  maxArticles = 3,
+  maxArticles = 2,
   filterBy = 'category',
   filterValue
 }: RelatedArticlesBoxProps) => {
@@ -133,36 +133,27 @@ const RelatedArticlesBox = ({
   }
   
   return (
-    <div className="my-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500 rounded-lg shadow-sm">
-      <div className="flex items-center gap-2 mb-4">
-        <Icon className="w-5 h-5 text-blue-600" />
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+    <div className="my-6 p-4 bg-gray-50/80 border border-gray-200/60 rounded-lg">
+      <div className="flex items-center gap-2 mb-3">
+        <Icon className="w-4 h-4 text-gray-600" />
+        <h3 className="text-base font-medium text-gray-700">{title}</h3>
       </div>
       
-      <div className="space-y-3">
+      <div className="space-y-2">
         {relatedArticles.map(article => (
           <Link 
             key={article.id}
             to={generatePostUrl(article.id, article.title)}
-            className="group flex items-start gap-3 p-3 rounded-lg hover:bg-white/60 transition-all duration-200 border border-transparent hover:border-blue-200"
+            className="group flex items-start gap-2 p-2 rounded hover:bg-white/80 transition-all duration-200"
           >
-            <ExternalLink className="w-4 h-4 text-blue-500 mt-1 opacity-60 group-hover:opacity-100" />
+            <ExternalLink className="w-3 h-3 text-gray-400 mt-1 opacity-60 group-hover:opacity-100" />
             <div className="flex-1">
-              <h4 className="font-medium text-gray-900 group-hover:text-blue-700 transition-colors line-clamp-1">
+              <h4 className="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-1">
                 {article.title.replace(/\*\*/g, '')}
               </h4>
-              <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                {article.excerpt.replace(/\*\*/g, '')}
-              </p>
             </div>
           </Link>
         ))}
-      </div>
-      
-      <div className="mt-4 pt-3 border-t border-blue-200">
-        <p className="text-xs text-gray-500 italic">
-          Articles sélectionnés automatiquement selon vos centres d'intérêt
-        </p>
       </div>
     </div>
   );

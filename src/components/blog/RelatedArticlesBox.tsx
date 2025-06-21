@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -156,7 +155,7 @@ const RelatedArticlesBox = ({
       <div className="mt-3 pt-2 border-t border-gray-200/50"></div>
       
       {/* Bordure horizontale dans le coin inférieur */}
-      <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gray-300/60"></div>
+      <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gray-200/40"></div>
     </div>
   );
 };

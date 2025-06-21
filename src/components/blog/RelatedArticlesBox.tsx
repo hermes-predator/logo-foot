@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -132,7 +130,7 @@ const RelatedArticlesBox = ({
   }
   
   return (
-    <div className="my-8 p-3 bg-gray-25/40 border-l-2 border-gray-200/40 rounded-r-md">
+    <div className="my-8 p-3 bg-gray-25/40 border-l-2 border-gray-200/40 rounded-r-md relative">
       <div className="mb-2">
         <h3 className="text-xs font-normal text-gray-500 uppercase tracking-wide">{title}</h3>
       </div>
@@ -154,11 +152,13 @@ const RelatedArticlesBox = ({
         ))}
       </div>
       
-      {/* Ligne de séparation verticale */}
+      {/* Ligne de séparation horizontale */}
       <div className="mt-3 pt-2 border-t border-gray-200/50"></div>
+      
+      {/* Bordure verticale dans le coin inférieur */}
+      <div className="absolute bottom-0 right-0 w-0.5 h-4 bg-gray-300/60"></div>
     </div>
   );
 };
 
 export default RelatedArticlesBox;
-

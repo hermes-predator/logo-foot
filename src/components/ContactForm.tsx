@@ -12,7 +12,7 @@ const ContactForm = () => {
             <MessageCircle className="w-7 h-7 text-blue-600 drop-shadow-sm" />
           </div>
           <div className="ml-2">
-            <p className="text-xs text-gray-500 mb-0.5">Par e-mail</p>
+            <p className="text-xs text-gray-500 mb-0">Par e-mail</p>
             <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
               contact@logo-foot.com
             </a>

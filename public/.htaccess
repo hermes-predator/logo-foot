@@ -1,27 +1,8 @@
 
+RewriteEngine On
+RewriteBase /
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  
-  # Empêcher la lecture des répertoires
-  Options -Indexes
-  
-  # Permettre l'accès aux fichiers statiques existants
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d [OR]
-  RewriteCond %{REQUEST_FILENAME} -l
-  RewriteRule ^ - [L]
-  
-  # Rediriger toutes les autres requêtes vers index.html pour React Router
-  RewriteRule . /index.html [L,QSA]
-</IfModule>
-
-# Force le bon type MIME pour les fichiers JavaScript
-<IfModule mod_mime.c>
-  AddType application/javascript .js
-  AddType application/javascript .mjs
-  AddType text/css .css
-  AddType image/svg+xml .svg
-</IfModule>
-
+# Rediriger toutes les requêtes vers index.html pour React Router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

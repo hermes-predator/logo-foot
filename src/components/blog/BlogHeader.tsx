@@ -25,10 +25,10 @@ const BlogHeader = () => {
               {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
               <div className="relative ml-8 -mt-2">
                 <TooltipProvider>
-                  <Tooltip>
+                  <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
                       <Link to="/" className="block">
-                        <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden" 
+                        <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden hover:bg-opacity-90 transition-all duration-200" 
                              style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
                           
                           {/* Section folder avec icône - sans couleur de fond */}

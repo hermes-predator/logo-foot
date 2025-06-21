@@ -39,7 +39,8 @@ export const useImageOptimization = ({
       if (supportsWebP && (src.toLowerCase().includes('.png') || src.toLowerCase().includes('.jpg') || src.toLowerCase().includes('.jpeg'))) {
         params.append('format', 'webp');
       }
-    } else if (format !== 'original') {
+    } else {
+      // Pour les formats spécifiques (webp, jpeg, png)
       params.append('format', format);
     }
     

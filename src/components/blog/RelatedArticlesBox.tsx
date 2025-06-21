@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
 import { generatePostUrl } from '../../utils/slugUtils';
-import { BookOpen, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 interface RelatedArticlesBoxProps {
   currentPost: BlogPost;
@@ -17,8 +17,7 @@ interface RelatedArticlesBoxProps {
 const RelatedArticlesBox = ({ 
   currentPost, 
   allPosts, 
-  title = "À lire aussi :",
-  icon: Icon = BookOpen,
+  title = "À lire aussi",
   maxArticles = 2,
   filterBy = 'category',
   filterValue
@@ -57,7 +56,7 @@ const RelatedArticlesBox = ({
         break;
         
       case 'color':
-        // Articles avec couleurs similaires (rouge, bleu, etc.)
+        // Articles avec couleurs similaires (rouge, bleu, vert, jaune, etc.)
         const colors = ['rouge', 'bleu', 'vert', 'jaune', 'blanc', 'noir'];
         const postColors = colors.filter(color => 
           currentPost.content.toLowerCase().includes(color) ||
@@ -133,8 +132,7 @@ const RelatedArticlesBox = ({
   
   return (
     <div className="my-8 p-3 bg-gray-25/40 border-l-2 border-gray-200/40 rounded-r-md">
-      <div className="flex items-center gap-1.5 mb-2">
-        <Icon className="w-3 h-3 text-gray-400" />
+      <div className="mb-2">
         <h3 className="text-xs font-normal text-gray-500 uppercase tracking-wide">{title}</h3>
       </div>
       

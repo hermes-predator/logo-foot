@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -141,19 +142,23 @@ const RelatedArticlesBox = ({
           <Link 
             key={article.id}
             to={generatePostUrl(article.id, article.title)}
-            className="group flex items-start gap-1.5 p-1 rounded transition-colors"
+            className="group flex items-start p-1 rounded transition-colors"
           >
             <div className="flex-1">
-              <h4 className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors line-clamp-1 leading-relaxed">
+              <h4 className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors line-clamp-1 leading-relaxed inline">
                 {article.title.replace(/\*\*/g, '')}
+                <ExternalLink className="w-3 h-3 text-gray-500 opacity-80 group-hover:opacity-100 group-hover:text-blue-600 transition-all inline ml-1" />
               </h4>
             </div>
-            <ExternalLink className="w-3 h-3 text-gray-500 mt-0.5 opacity-80 group-hover:opacity-100 group-hover:text-blue-600 transition-all" />
           </Link>
         ))}
       </div>
+      
+      {/* Ligne de séparation verticale */}
+      <div className="mt-3 pt-2 border-t border-gray-200/50"></div>
     </div>
   );
 };
 
 export default RelatedArticlesBox;
+

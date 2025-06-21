@@ -1,7 +1,11 @@
 
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  
+  # Empêcher la lecture des répertoires
+  Options -Indexes
   
   # Permettre l'accès aux fichiers statiques existants
   RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -20,3 +24,4 @@
   AddType text/css .css
   AddType image/svg+xml .svg
 </IfModule>
+

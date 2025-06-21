@@ -151,9 +151,6 @@ const RelatedArticlesBox = ({
         ))}
       </div>
       
-      {/* Ligne de séparation horizontale */}
-      <div className="mt-3 pt-2 border-t border-gray-200/50"></div>
-      
       {/* Bordure horizontale dans le coin inférieur */}
       <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gray-200/40"></div>
     </div>

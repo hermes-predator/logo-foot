@@ -60,12 +60,12 @@ const ProductGallery = () => {
       <div className="container mx-auto px-4 py-4 sm:py-8">
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div className="relative">
-            {/* Badge flottant discret */}
+            {/* Badge flottant discret - taille augmentée */}
             <div className="absolute top-2 right-0 z-10 transform translate-x-0 translate-y-2">
-              <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2">
-                <Eye className="w-3 h-3 opacity-70" />
+              <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-sm px-4 py-2.5 rounded-full border border-gray-200 flex items-center gap-2.5 shadow-sm">
+                <Eye className="w-4 h-4 opacity-70" />
                 <span className="font-medium">Survolez les dossiers</span>
-                <MousePointer className="w-3 h-3" />
+                <MousePointer className="w-4 h-4" />
               </div>
             </div>
 

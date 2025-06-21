@@ -95,7 +95,7 @@ const RelatedArticlesBox = ({
     return shuffleArray(relatedPosts).slice(0, maxArticles);
   };
   
-  // Fonction utilitaire pour extraire le pays d'un article
+  // Fonctions utilitaires pour extraire le pays et la ligue d'un article
   const extractCountryFromPost = (post: BlogPost): string => {
     const countries = ['france', 'espagne', 'italie', 'allemagne', 'angleterre', 'portugal', 'bresil', 'argentine'];
     return countries.find(country => 
@@ -104,7 +104,6 @@ const RelatedArticlesBox = ({
     ) || '';
   };
   
-  // Fonction utilitaire pour extraire la ligue d'un article
   const extractLeagueFromPost = (post: BlogPost): string => {
     const leagues = ['ligue 1', 'liga', 'serie a', 'bundesliga', 'premier league', 'championnat'];
     return leagues.find(league => 
@@ -155,8 +154,8 @@ const RelatedArticlesBox = ({
       {/* Ligne de séparation horizontale */}
       <div className="mt-3 pt-2 border-t border-gray-200/50"></div>
       
-      {/* Bordure verticale dans le coin inférieur */}
-      <div className="absolute bottom-0 right-0 w-0.5 h-4 bg-gray-300/60"></div>
+      {/* Bordure horizontale dans le coin inférieur */}
+      <div className="absolute bottom-0 right-0 h-0.5 w-4 bg-gray-300/60"></div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../../types/blog';
@@ -8,7 +9,6 @@ interface RelatedArticlesBoxProps {
   currentPost: BlogPost;
   allPosts: BlogPost[];
   title?: string;
-  icon?: React.ComponentType<any>;
   maxArticles?: number;
   filterBy?: 'category' | 'country' | 'league' | 'color' | 'club';
   filterValue?: string;
@@ -141,11 +141,11 @@ const RelatedArticlesBox = ({
           <Link 
             key={article.id}
             to={generatePostUrl(article.id, article.title)}
-            className="group flex items-start gap-1.5 p-1 rounded hover:bg-gray-50/60 transition-all duration-200"
+            className="group flex items-start gap-1.5 p-1 rounded transition-colors"
           >
-            <ExternalLink className="w-2.5 h-2.5 text-gray-300 mt-0.5 opacity-40 group-hover:opacity-70" />
+            <ExternalLink className="w-2.5 h-2.5 text-gray-300 mt-0.5 opacity-40" />
             <div className="flex-1">
-              <h4 className="text-xs text-gray-600 group-hover:text-gray-800 transition-colors line-clamp-1 leading-relaxed">
+              <h4 className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors line-clamp-1 leading-relaxed">
                 {article.title.replace(/\*\*/g, '')}
               </h4>
             </div>

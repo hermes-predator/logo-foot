@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import Footer from '../components/Footer';
 import BlogHeader from '../components/blog/BlogHeader';
 import BlogCategorySelector from '../components/blog/BlogCategorySelector';
@@ -20,6 +20,7 @@ import BlogPerformanceMonitor from '../components/blog/BlogPerformanceMonitor';
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
+  const location = useLocation();
   const categoryParam = searchParams.get('category');
   const { isLoading: isPageLoading, isCategoryChange, skipTransition } = usePageTransition();
   const categorySectionRef = useRef<HTMLDivElement>(null);
@@ -42,6 +43,21 @@ const Blog = () => {
     totalPages, 
     paginatedItems 
   } = usePagination(posts, POSTS_PER_PAGE);
+
+  // Force update du titre de la page lors du changement de route
+  useEffect(() => {
+    const title = categoryParam 
+      ? `Blog ${categoryParam} - Logo Foot`
+      : 'Blog - Logo Foot';
+    
+    document.title = title;
+    
+    // Force un re-render de Helmet
+    const helmet = document.querySelector('title');
+    if (helmet && helmet.textContent !== title) {
+      helmet.textContent = title;
+    }
+  }, [location.pathname, categoryParam]);
 
   useEffect(() => {
     if (isCategoryChange && categorySectionRef.current) {
@@ -76,10 +92,15 @@ const Blog = () => {
   // Combiner les états de chargement
   const isLoading = isPageLoading || isPostsLoading;
 
+  // Titre dynamique basé sur la catégorie
+  const pageTitle = categoryParam 
+    ? `Blog ${categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1)} - Logo Foot`
+    : 'Blog - Logo Foot';
+
   const content = (
     <div className="bg-gray-50 min-h-screen">
       <Helmet>
-        <title>Blog - Logo Foot</title>
+        <title>{pageTitle}</title>
         <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
         <meta name="keywords" content="logo foot, logo football, écussons foot, club foot, logo équipe foot" />
         <script type="application/ld+json">

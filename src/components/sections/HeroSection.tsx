@@ -110,9 +110,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </h2>
         
         {/* Description - Amélioré */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">
-          La plus grande collection de logos des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.
-        </p>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-2">La plus grande collection de logo des équipes de foot en haute qualité et uniforme. Plus de 8 600 logos de club de foot internationaux, les logos des compétitions... une couverture totale du football réunie dans un fichier ZIP arborescent.</p>
 
         {/* Testimonial Badge - Déplacé ici après la description */}
         <div className="flex justify-center pt-2">

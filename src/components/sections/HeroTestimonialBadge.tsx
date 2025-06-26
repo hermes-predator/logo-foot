@@ -5,7 +5,7 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: "Pierre M.",
-    content: "Plus besoin de chercher pendant des heures les logo des équipe de foot. Tout est là, bien organisé. Merci !",
+    content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
     rating: 5,
     initials: "PM",
     bgColor: "bg-blue-500"

@@ -1,4 +1,5 @@
 
+
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Eye, Maximize2 } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
@@ -94,7 +95,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       <Dialog>
         <DialogTrigger asChild>
           <button 
-            className="w-full h-full text-left"
+            className="w-full h-full text-left group"
             aria-label={`Voir ${item.title}`}
           >
             {isHovered ? (
@@ -129,8 +130,9 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   data-caption={item.title}
                   data-description={getSeoDescription(item)}
                 />
-                <div className="absolute bottom-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
-                  <Eye className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                {/* Icône œil avec le même style que BlogHeaderCarousel */}
+                <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-70 group-hover:opacity-100 group-hover:bg-black/70 transition-all duration-300">
+                  <Eye className="w-4 h-4 text-white" />
                 </div>
               </>
             )}
@@ -150,3 +152,4 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
 };
 
 export default GalleryItem;
+

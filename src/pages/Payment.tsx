@@ -1,0 +1,286 @@
+
+import React, { useState, useEffect, useRef } from 'react';
+import { useSearchParams, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { ArrowLeft, Loader2, CreditCard } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useToast } from "@/hooks/use-toast";
+
+// Types pour le widget SumUp
+declare global {
+  interface Window {
+    SumUpCard: {
+      mount: (config: {
+        id: string;
+        checkoutId: string;
+        onResponse: (type: string, body: any) => void;
+        onLoad?: () => void;
+        showSubmitButton?: boolean;
+        amount?: string;
+        currency?: string;
+        locale?: string;
+      }) => {
+        submit: () => void;
+        unmount: () => void;
+        update: (config: any) => void;
+      };
+    };
+  }
+}
+
+const Payment = () => {
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [isCreatingCheckout, setIsCreatingCheckout] = useState(false);
+  const [checkoutId, setCheckoutId] = useState<string | null>(null);
+  const [widgetMounted, setWidgetMounted] = useState(false);
+  const { toast } = useToast();
+  const sumupCardRef = useRef<any>(null);
+  const scriptLoadedRef = useRef(false);
+
+  // Récupérer le checkout_id depuis l'URL si présent
+  useEffect(() => {
+    const urlCheckoutId = searchParams.get('checkout_id');
+    if (urlCheckoutId) {
+      setCheckoutId(urlCheckoutId);
+    } else {
+      // Si pas de checkout_id, en créer un automatiquement
+      createCheckout();
+    }
+  }, [searchParams]);
+
+  // Charger le script SumUp
+  useEffect(() => {
+    if (scriptLoadedRef.current) return;
+
+    const script = document.createElement('script');
+    script.src = 'https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js';
+    script.async = true;
+    script.onload = () => {
+      console.log('Script SumUp chargé avec succès');
+      scriptLoadedRef.current = true;
+    };
+    script.onerror = () => {
+      console.error('Erreur lors du chargement du script SumUp');
+      toast({
+        title: "Erreur de chargement",
+        description: "Impossible de charger le système de paiement. Veuillez réessayer.",
+        variant: "destructive"
+      });
+    };
+    
+    document.head.appendChild(script);
+
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, [toast]);
+
+  // Créer un checkout SumUp
+  const createCheckout = async () => {
+    setIsCreatingCheckout(true);
+    
+    try {
+      console.log('Création du checkout SumUp...');
+      
+      const response = await fetch('https://api.sumup.com/v0.1/checkouts', {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          checkout_reference: `FC-${Date.now()}`,
+          amount: 9.00,
+          currency: 'EUR',
+          description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football',
+          merchant_code: 'MLMLFVAH',
+          return_url: window.location.origin + '/payment-success-token13061995'
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Erreur API SumUp:', errorData);
+        throw new Error(`Erreur lors de la création du checkout: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Checkout créé:', data);
+      setCheckoutId(data.id);
+      
+    } catch (error) {
+      console.error('Erreur création checkout:', error);
+      toast({
+        title: "Erreur",
+        description: "Impossible d'initialiser le paiement. Veuillez réessayer.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsCreatingCheckout(false);
+    }
+  };
+
+  // Monter le widget SumUp
+  const mountWidget = () => {
+    if (!window.SumUpCard || !checkoutId || widgetMounted) return;
+
+    try {
+      console.log('Montage du widget SumUp avec checkout:', checkoutId);
+      
+      sumupCardRef.current = window.SumUpCard.mount({
+        id: 'sumup-card-widget',
+        checkoutId: checkoutId,
+        amount: '9.00',
+        currency: 'EUR',
+        locale: 'fr-FR',
+        showSubmitButton: true,
+        onResponse: (type: string, body: any) => {
+          console.log('SumUp Response:', type, body);
+          
+          switch (type) {
+            case 'success':
+              window.location.href = `/payment-success-token13061995?checkout_id=${checkoutId}`;
+              break;
+              
+            case 'error':
+              setIsProcessing(false);
+              toast({
+                title: "Erreur de paiement",
+                description: "Une erreur est survenue lors du paiement. Veuillez réessayer.",
+                variant: "destructive"
+              });
+              break;
+              
+            case 'fail':
+              setIsProcessing(false);
+              toast({
+                title: "Paiement annulé",
+                description: "Le paiement a été annulé.",
+                variant: "destructive"
+              });
+              break;
+
+            case 'sent':
+              setIsProcessing(true);
+              toast({
+                title: "Paiement en cours",
+                description: "Votre paiement est en cours de traitement...",
+              });
+              break;
+          }
+        },
+        onLoad: () => {
+          console.log('Widget SumUp chargé');
+          setWidgetMounted(true);
+        }
+      });
+    } catch (error) {
+      console.error('Erreur montage widget:', error);
+      toast({
+        title: "Erreur",
+        description: "Impossible de charger le formulaire de paiement.",
+        variant: "destructive"
+      });
+    }
+  };
+
+  // Effet pour monter le widget quand tout est prêt
+  useEffect(() => {
+    if (checkoutId && scriptLoadedRef.current && window.SumUpCard && !widgetMounted) {
+      setTimeout(mountWidget, 100);
+    }
+  }, [checkoutId, widgetMounted]);
+
+  // Nettoyer le widget au démontage
+  useEffect(() => {
+    return () => {
+      if (sumupCardRef.current) {
+        sumupCardRef.current.unmount();
+      }
+    };
+  }, []);
+
+  return (
+    <>
+      <Helmet>
+        <title>Paiement sécurisé - Logo Foot</title>
+        <meta name="description" content="Finalisez votre achat de la collection de logos de football" />
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4">
+        <div className="container mx-auto max-w-2xl">
+          {/* Bouton retour */}
+          <Button
+            variant="ghost"
+            onClick={() => navigate('/')}
+            className="mb-6 text-gray-600 hover:text-gray-800"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Retour à l'accueil
+          </Button>
+
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl flex items-center justify-center gap-2">
+                <CreditCard className="h-6 w-6" />
+                Paiement sécurisé
+              </CardTitle>
+              <CardDescription>
+                Finalisez votre achat de la collection de logos de football pour 9,00 €
+              </CardDescription>
+            </CardHeader>
+
+            <CardContent className="space-y-6">
+              {/* Résumé de la commande */}
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-blue-800 mb-2">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                <p className="text-blue-700 text-sm mb-2">Collection de +1000 logos de football</p>
+                <div className="flex justify-between items-center font-semibold">
+                  <span>Total :</span>
+                  <span className="text-lg">9,00 €</span>
+                </div>
+              </div>
+
+              {/* État de chargement */}
+              {isCreatingCheckout && (
+                <div className="flex items-center justify-center py-8">
+                  <Loader2 className="h-8 w-8 animate-spin text-blue-500 mr-3" />
+                  <span>Initialisation du paiement...</span>
+                </div>
+              )}
+
+              {/* Widget de paiement */}
+              {checkoutId && !isCreatingCheckout && (
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Informations de paiement</h3>
+                  <div id="sumup-card-widget" className="min-h-[400px]"></div>
+                  
+                  {isProcessing && (
+                    <div className="flex items-center justify-center py-4">
+                      <Loader2 className="h-5 w-5 animate-spin text-blue-500 mr-2" />
+                      <span>Traitement du paiement en cours...</span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Informations de sécurité */}
+              <div className="text-center text-sm text-gray-600">
+                <p>🔒 Paiement 100% sécurisé par SumUp</p>
+                <p>Vos données de paiement sont chiffrées et protégées</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Payment;

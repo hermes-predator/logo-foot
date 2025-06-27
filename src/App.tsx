@@ -8,8 +8,9 @@ import Index from './pages/Index';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import BlogPostSEO from './pages/BlogPostSEO';
-import NotFound from './pages/NotFound';
+import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
+import NotFound from './pages/NotFound';
 import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
 
@@ -35,6 +36,7 @@ const App = () => {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
+              <Route path="/payment" element={<Payment />} />
               <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

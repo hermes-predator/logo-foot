@@ -75,12 +75,12 @@ const PaymentButton = () => {
     setIsCreatingCheckout(true);
     
     try {
-      // IMPORTANT: Vous devez remplacer cette partie par votre API
-      // ou créer un checkout via l'API SumUp côté serveur
+      console.log('Création du checkout SumUp...');
+      
       const response = await fetch('https://api.sumup.com/v0.1/checkouts', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer YOUR_ACCESS_TOKEN', // À configurer
+          'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -92,11 +92,16 @@ const PaymentButton = () => {
         }),
       });
 
+      console.log('Réponse SumUp:', response.status, response.statusText);
+
       if (!response.ok) {
-        throw new Error('Erreur lors de la création du checkout');
+        const errorData = await response.text();
+        console.error('Erreur API SumUp:', errorData);
+        throw new Error(`Erreur lors de la création du checkout: ${response.status}`);
       }
 
       const data = await response.json();
+      console.log('Checkout créé:', data);
       setCheckoutId(data.id);
       
       toast({
@@ -108,7 +113,7 @@ const PaymentButton = () => {
       console.error('Erreur création checkout:', error);
       toast({
         title: "Erreur",
-        description: "Impossible d'initialiser the paiement. Veuillez réessayer.",
+        description: "Impossible d'initialiser le paiement. Veuillez réessayer.",
         variant: "destructive"
       });
     } finally {
@@ -121,19 +126,20 @@ const PaymentButton = () => {
     if (!window.SumUpCard || !checkoutId || widgetMounted) return;
 
     try {
+      console.log('Montage du widget SumUp avec checkout:', checkoutId);
+      
       sumupCardRef.current = window.SumUpCard.mount({
         id: 'sumup-card-widget',
         checkoutId: checkoutId,
         amount: '9.00',
         currency: 'EUR',
         locale: 'fr-FR',
-        showSubmitButton: false, // On utilise notre propre bouton
+        showSubmitButton: false,
         onResponse: (type: string, body: any) => {
           console.log('SumUp Response:', type, body);
           
           switch (type) {
             case 'success':
-              // Redirection vers la page de succès avec le checkout_id
               window.location.href = `/payment-success-token13061995?checkout_id=${checkoutId}`;
               break;
               
@@ -182,7 +188,6 @@ const PaymentButton = () => {
   // Effet pour monter le widget quand tout est prêt
   useEffect(() => {
     if (checkoutId && scriptLoadedRef.current && window.SumUpCard && !widgetMounted) {
-      // Petit délai pour s'assurer que l'élément DOM est présent
       setTimeout(mountWidget, 100);
     }
   }, [checkoutId, widgetMounted]);
@@ -190,13 +195,11 @@ const PaymentButton = () => {
   // Gérer le clic sur le bouton de paiement
   const handlePayment = async () => {
     if (!checkoutId) {
-      // Créer d'abord un checkout
       await createCheckout();
       return;
     }
 
     if (sumupCardRef.current) {
-      // Soumettre le formulaire de paiement
       sumupCardRef.current.submit();
     } else {
       toast({

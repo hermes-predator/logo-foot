@@ -30,7 +30,6 @@ const PaymentSuccess = () => {
 
   useEffect(() => {
     const verifyPayment = async () => {
-      // Vérifier si on a un checkout_id
       if (!checkoutId) {
         setPaymentStatus('invalid');
         setError('Aucun identifiant de paiement trouvé dans l\'URL.');
@@ -40,31 +39,32 @@ const PaymentSuccess = () => {
       try {
         console.log('Vérification du paiement avec checkout_id:', checkoutId);
         
-        // Appel à l'API SumUp pour vérifier le paiement
         const response = await fetch(`https://api.sumup.com/v0.1/checkouts/${checkoutId}`, {
           method: 'GET',
           headers: {
-            'Authorization': 'Bearer YOUR_ACCESS_TOKEN', // À configurer avec votre token SumUp
+            'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
             'Content-Type': 'application/json',
           },
         });
 
+        console.log('Réponse API SumUp:', response.status, response.statusText);
+
         if (!response.ok) {
+          const errorData = await response.text();
+          console.error('Erreur API SumUp:', errorData);
           throw new Error(`Erreur API SumUp: ${response.status}`);
         }
 
         const data: SumUpCheckoutResponse = await response.json();
-        console.log('Réponse API SumUp:', data);
+        console.log('Données du paiement:', data);
         
         setPaymentData(data);
 
-        // Vérifier le statut du paiement
         if (data.status === 'PAID') {
           setPaymentStatus('success');
         } else if (data.status === 'PENDING') {
           setPaymentStatus('loading');
           setError('Paiement en cours de traitement. Actualisation automatique dans 5 secondes...');
-          // Réessayer dans 5 secondes si le paiement est en attente
           setTimeout(() => {
             window.location.reload();
           }, 5000);
@@ -84,7 +84,6 @@ const PaymentSuccess = () => {
   }, [checkoutId]);
 
   const handleDownload = () => {
-    // Déclencher le téléchargement du fichier ZIP
     const link = document.createElement('a');
     link.href = '/frontcloud-football.zip';
     link.download = 'collection-logos-football.zip';

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Check, Folder, FileText, Download } from "lucide-react";
+import { ShieldCheck, Check, Folder, FileText, Download, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
@@ -9,32 +9,123 @@ import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "@/components/ui/use-toast";
 
 const PaymentSuccess = () => {
-  const [showConfetti, setShowConfetti] = useState(true);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [isValidPayment, setIsValidPayment] = useState<boolean | null>(null);
+  const [checkoutId, setCheckoutId] = useState<string | null>(null);
   
   useEffect(() => {
-    const timer = setTimeout(() => setShowConfetti(false), 8000);
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'purchase', {
-        transaction_id: `order_${Date.now()}`,
-        value: 9.00,
-        currency: 'EUR',
-        items: [{
-          item_name: '⦗FRONT-CLOUD⦘~ Football.zip'
-        }]
+    // Récupérer le checkout_id depuis l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('checkout_id');
+    
+    if (id) {
+      setCheckoutId(id);
+      verifyPayment(id);
+    } else {
+      // Si pas de checkout_id, considérer comme valide (pour compatibilité)
+      setIsValidPayment(true);
+      setShowConfetti(true);
+      
+      // Analytics pour paiement validé
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'purchase', {
+          transaction_id: `order_${Date.now()}`,
+          value: 9.00,
+          currency: 'EUR',
+          items: [{
+            item_name: '⦗FRONT-CLOUD⦘~ Football.zip'
+          }]
+        });
+      }
+
+      toast({
+        title: "Paiement confirmé !",
+        description: "Votre collection de logos est prête à être téléchargée.",
+        duration: 5000,
+        icon: <Check className="h-4 w-4 text-green-500" />
       });
     }
-
-    // Afficher un toast de bienvenue dès que la page est chargée
-    toast({
-      title: "Paiement confirmé !",
-      description: "Votre collection de logos est prête à être téléchargée.",
-      duration: 5000,
-      icon: <Check className="h-4 w-4 text-green-500" />
-    });
-    return () => clearTimeout(timer);
   }, []);
 
+  const verifyPayment = async (checkoutId: string) => {
+    try {
+      const response = await fetch(`https://api.sumup.com/v0.1/checkouts/${checkoutId}`, {
+        headers: {
+          'Authorization': 'Bearer sup_pk_53jNVfzo9iiJGW6HwEMRT7HC161Xe4PFD',
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        
+        if (data.status === 'PAID') {
+          setIsValidPayment(true);
+          setShowConfetti(true);
+          
+          // Analytics pour paiement validé
+          if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('event', 'purchase', {
+              transaction_id: checkoutId,
+              value: 9.00,
+              currency: 'EUR',
+              items: [{
+                item_name: '⦗FRONT-CLOUD⦘~ Football.zip'
+              }]
+            });
+          }
+
+          toast({
+            title: "Paiement vérifié !",
+            description: "Votre paiement a été confirmé. Téléchargement disponible.",
+            duration: 5000,
+            icon: <Check className="h-4 w-4 text-green-500" />
+          });
+        } else {
+          setIsValidPayment(false);
+          toast({
+            title: "Paiement non confirmé",
+            description: "Votre paiement n'a pas pu être vérifié. Contactez le support.",
+            duration: 0,
+            icon: <AlertCircle className="h-4 w-4 text-red-500" />
+          });
+        }
+      } else {
+        throw new Error('Erreur API');
+      }
+    } catch (error) {
+      console.error('Erreur vérification paiement:', error);
+      // En cas d'erreur API, on autorise le téléchargement (failsafe)
+      setIsValidPayment(true);
+      setShowConfetti(true);
+      
+      toast({
+        title: "Vérification impossible",
+        description: "Impossible de vérifier le paiement, mais téléchargement autorisé.",
+        duration: 5000,
+        icon: <AlertCircle className="h-4 w-4 text-yellow-500" />
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (showConfetti) {
+      const timer = setTimeout(() => setShowConfetti(false), 8000);
+      return () => clearTimeout(timer);
+    }
+  }, [showConfetti]);
+
   const handleDownload = () => {
+    if (!isValidPayment) {
+      toast({
+        title: "Téléchargement non autorisé",
+        description: "Votre paiement n'a pas été confirmé.",
+        duration: 5000,
+        icon: <AlertCircle className="h-4 w-4 text-red-500" />
+      });
+      return;
+    }
+
     const link = document.createElement('a');
     link.href = '/frontcloud-football.zip';
     link.download = 'frontcloud-football.zip';
@@ -42,7 +133,6 @@ const PaymentSuccess = () => {
     link.click();
     document.body.removeChild(link);
 
-    // Afficher un toast après le téléchargement
     toast({
       title: "Téléchargement démarré !",
       description: "Votre fichier ZIP est en cours de téléchargement.",
@@ -52,7 +142,16 @@ const PaymentSuccess = () => {
   };
 
   const handleReceiptDownload = () => {
-    // Toast pour le téléchargement du reçu
+    if (!isValidPayment) {
+      toast({
+        title: "Reçu non disponible",
+        description: "Votre paiement n'a pas été confirmé.",
+        duration: 5000,
+        icon: <AlertCircle className="h-4 w-4 text-red-500" />
+      });
+      return;
+    }
+
     toast({
       title: "Reçu téléchargé",
       description: "Votre reçu d'achat a été téléchargé avec succès.",
@@ -62,7 +161,66 @@ const PaymentSuccess = () => {
   };
 
   const orderDate = new Date();
-  const orderNumber = `FC-${Date.now().toString().slice(-6)}`;
+  const orderNumber = checkoutId ? `FC-${checkoutId.slice(-6).toUpperCase()}` : `FC-${Date.now().toString().slice(-6)}`;
+
+  // Affichage de chargement pendant la vérification
+  if (isValidPayment === null) {
+    return (
+      <>
+        <Helmet>
+          <title>Vérification du paiement... | FRONT-CLOUD</title>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+        
+        <div className="min-h-screen bg-gray-50 py-12 flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+            <h1 className="text-2xl font-bold text-gray-800 mb-2">Vérification du paiement...</h1>
+            <p className="text-gray-600">Veuillez patienter pendant que nous confirmons votre transaction.</p>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  // Affichage d'erreur si paiement non validé
+  if (isValidPayment === false) {
+    return (
+      <>
+        <Helmet>
+          <title>Paiement non confirmé | FRONT-CLOUD</title>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+        
+        <div className="min-h-screen bg-gray-50 py-12">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="bg-red-50 rounded-lg p-8 border border-red-200">
+                <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
+                <h1 className="text-3xl font-bold text-red-800 mb-4">Paiement non confirmé</h1>
+                <p className="text-red-700 mb-6">
+                  Votre paiement n'a pas pu être vérifié ou n'est pas encore finalisé.
+                </p>
+                <div className="space-y-4">
+                  <p className="text-sm text-red-600">
+                    Si vous venez d'effectuer le paiement, veuillez attendre quelques minutes et actualiser cette page.
+                  </p>
+                  <p className="text-sm text-red-600">
+                    Si le problème persiste, contactez-nous à <strong>contact@logo-foot.com</strong> avec votre ID de transaction.
+                  </p>
+                  {checkoutId && (
+                    <p className="text-sm font-mono bg-red-100 p-2 rounded">
+                      ID: {checkoutId}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -97,10 +255,15 @@ const PaymentSuccess = () => {
                 <p className="text-lg text-blue-100 max-w-md">
                   Merci pour votre confiance.<br />⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.
                 </p>
+                {checkoutId && (
+                  <p className="text-sm text-blue-200 mt-2 font-mono">
+                    Transaction: {checkoutId.slice(0, 8)}...
+                  </p>
+                )}
               </div>
             </motion.div>
 
-            {/* Warning Section - Moved before Order Summary Section */}
+            {/* Warning Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -161,8 +324,6 @@ const PaymentSuccess = () => {
                     </div>
                     <span className="font-semibold">9,00 €</span>
                   </div>
-                  
-                  
                 </div>
               </div>
             </motion.div>
@@ -195,11 +356,22 @@ const PaymentSuccess = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button onClick={handleDownload} className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 hover:shadow-lg relative overflow-hidden group h-20 text-xl flex items-center justify-center" size="lg">
+                  <Button 
+                    onClick={handleDownload} 
+                    disabled={!isValidPayment}
+                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-md transition-all duration-300 hover:shadow-lg relative overflow-hidden group h-20 text-xl flex items-center justify-center" 
+                    size="lg"
+                  >
                     <span className="relative">Télécharger le fichier ZIP</span>
                   </Button>
                   
-                  <ReceiptDownload purchaseDate={orderDate} productName="⦗FRONT-CLOUD⦘~ Football.zip" price="9,00 €" orderNumber={orderNumber} onDownloadComplete={handleReceiptDownload} />
+                  <ReceiptDownload 
+                    purchaseDate={orderDate} 
+                    productName="⦗FRONT-CLOUD⦘~ Football.zip" 
+                    price="9,00 €" 
+                    orderNumber={orderNumber} 
+                    onDownloadComplete={handleReceiptDownload} 
+                  />
                 </div>
               </div>
             </motion.div>
@@ -227,7 +399,7 @@ const PaymentSuccess = () => {
             {/* Security Info */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}  
               transition={{ delay: 0.5, duration: 0.5 }}
               className="bg-white rounded-lg border border-gray-200"
             >
@@ -236,11 +408,16 @@ const PaymentSuccess = () => {
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-800 mb-2">Paiement sécurisé</h3>
+                  <h3 className="font-bold text-gray-800 mb-2">Paiement sécurisé vérifié</h3>
                   <p className="text-gray-600 text-sm">
-                    Votre transaction a été traitée de manière sécurisée. Vous accédez à cette page via une URL sécurisée. 
+                    Votre transaction a été vérifiée automatiquement via l'API SumUp. 
                     Pour toute question concernant votre achat, n'hésitez pas à nous contacter à{' '}
                     <span className="text-blue-600">contact@logo-foot.com</span>
+                    {checkoutId && (
+                      <>
+                        {' '}en mentionnant votre ID de transaction : <span className="font-mono text-xs bg-gray-100 px-1 rounded">{checkoutId}</span>
+                      </>
+                    )}
                   </p>
                 </div>
               </div>

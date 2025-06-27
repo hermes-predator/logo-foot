@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -44,9 +45,9 @@ const PaymentButton = () => {
       description: "Vous allez être redirigé vers notre page de paiement sécurisée.",
     });
     
-    // URL de retour fixe au lieu d'une URL dynamique
-    const returnUrl = "https://logo-foot.com/payment-success";
-    // Nouveau lien SumUp avec URL de retour fixe
+    // URL de retour sécurisée avec token
+    const returnUrl = "https://logo-foot.com/payment-success-token13061995";
+    // Nouveau lien SumUp avec URL de retour sécurisée
     window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
   };
 

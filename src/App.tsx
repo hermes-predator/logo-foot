@@ -35,7 +35,7 @@ const App = () => {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
-              <Route path="/payment-success" element={<PaymentSuccess />} />
+              <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>

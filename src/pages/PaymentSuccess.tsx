@@ -157,7 +157,12 @@ const PaymentSuccess = () => {
                   </ul>
                 </div>
 
-                <ReceiptDownload paymentData={paymentData} />
+                <ReceiptDownload 
+                  purchaseDate={paymentData?.date ? new Date(paymentData.date) : new Date()}
+                  productName="⦗FRONT-CLOUD⦘~ Football.zip"
+                  price={paymentData?.amount ? `${paymentData.amount},00 €` : "9,00 €"}
+                  orderNumber={checkoutId || `FC-${Date.now().toString().slice(-6)}`}
+                />
               </CardContent>
             </Card>
           </>

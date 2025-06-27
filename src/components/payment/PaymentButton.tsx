@@ -88,6 +88,7 @@ const PaymentButton = () => {
           amount: 9.00,
           currency: 'EUR',
           description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football',
+          merchant_code: 'MP2HS1MC',
           return_url: window.location.origin + '/payment-success-token13061995'
         }),
       });

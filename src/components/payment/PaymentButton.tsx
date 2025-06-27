@@ -173,6 +173,11 @@ const PaymentButton = () => {
         onLoad: () => {
           console.log('Widget SumUp chargé');
           setWidgetMounted(true);
+          // Afficher le widget une fois qu'il est chargé
+          const widgetElement = document.getElementById('sumup-card-widget');
+          if (widgetElement) {
+            widgetElement.style.display = 'block';
+          }
         }
       });
     } catch (error) {
@@ -231,7 +236,15 @@ const PaymentButton = () => {
   return (
     <div className="space-y-4 mt-6">
       {/* Widget SumUp (caché jusqu'à ce qu'il soit utilisé) */}
-      <div id="sumup-card-widget" style={{ display: 'none' }}></div>
+      <div id="sumup-card-widget" style={{ display: checkoutId ? 'none' : 'none' }}></div>
+      
+      {/* Afficher le widget seulement si un checkout est créé */}
+      {checkoutId && (
+        <div className="p-4 border rounded-lg bg-white">
+          <h3 className="text-lg font-semibold mb-2">Formulaire de paiement</h3>
+          <p className="text-sm text-gray-600 mb-4">Entrez vos informations de paiement ci-dessous :</p>
+        </div>
+      )}
       
       <Tooltip>
         <TooltipTrigger asChild>

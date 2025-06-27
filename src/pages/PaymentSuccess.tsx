@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
@@ -8,8 +7,10 @@ import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "@/components/ui/use-toast";
+
 const PaymentSuccess = () => {
   const [showConfetti, setShowConfetti] = useState(true);
+  
   useEffect(() => {
     const timer = setTimeout(() => setShowConfetti(false), 8000);
     if (typeof window !== 'undefined' && window.gtag) {
@@ -32,6 +33,7 @@ const PaymentSuccess = () => {
     });
     return () => clearTimeout(timer);
   }, []);
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/frontcloud-football.zip';
@@ -48,6 +50,7 @@ const PaymentSuccess = () => {
       icon: <Check className="h-4 w-4 text-blue-500" />
     });
   };
+
   const handleReceiptDownload = () => {
     // Toast pour le téléchargement du reçu
     toast({
@@ -57,81 +60,72 @@ const PaymentSuccess = () => {
       icon: <FileText className="h-4 w-4 text-indigo-500" />
     });
   };
+
   const orderDate = new Date();
   const orderNumber = `FC-${Date.now().toString().slice(-6)}`;
-  return <>
+
+  return (
+    <>
       <Helmet>
         <title>Téléchargement Prêt | Merci pour votre achat | FRONT-CLOUD</title>
         <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://logo-foot.com/payment-success-token13061995" />
       </Helmet>
       
       {showConfetti && <ConfettiCelebration duration={8000} />}
       
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 0.5
-        }} className="max-w-4xl mx-auto space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl mx-auto space-y-6"
+          >
             {/* Header Section */}
-            <motion.div initial={{
-            opacity: 0,
-            scale: 0.95
-          }} animate={{
-            opacity: 1,
-            scale: 1
-          }} transition={{
-            delay: 0.1,
-            duration: 0.5
-          }} className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg p-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg p-8 text-center"
+            >
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 text-green-500" />
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-bold mb-3">Paiement confirmé ! (9,00€)</h1>
-                <p className="text-lg text-blue-100 max-w-md">Merci pour votre confiance.<br />⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.</p>
+                <p className="text-lg text-blue-100 max-w-md">
+                  Merci pour votre confiance.<br />⦗FRONT-CLOUD⦘~ Football.zip est prêt à être téléchargé.
+                </p>
               </div>
             </motion.div>
 
             {/* Warning Section - Moved before Order Summary Section */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.2,
-            duration: 0.5
-          }} className="bg-amber-50 rounded-lg border border-amber-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="bg-amber-50 rounded-lg border border-amber-200"
+            >
               <div className="p-6">
                 <div>
                   <h2 className="text-xl font-bold text-amber-800 mb-2">
                     Avertissement
                   </h2>
                   <p className="text-amber-700">
-                    Télécharger sans attendre votre fichier ZIP avant de quitter cette page, vous êtes actuellement en invité(e).
+                    Téléchargez sans attendre votre fichier ZIP avant de quitter cette page, vous êtes actuellement en invité(e).
                   </p>
                 </div>
               </div>
             </motion.div>
 
             {/* Order Details Section */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.25,
-            duration: 0.5
-          }} className="bg-white rounded-lg border border-gray-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
               <div className="p-6">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Récapitulatif de la commande
@@ -174,16 +168,12 @@ const PaymentSuccess = () => {
             </motion.div>
 
             {/* Download Section */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.3,
-            duration: 0.5
-          }} className="bg-white rounded-lg border border-gray-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
               <div className="p-6">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">
                   Téléchargement
@@ -215,16 +205,12 @@ const PaymentSuccess = () => {
             </motion.div>
 
             {/* Instructions Section */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.4,
-            duration: 0.5
-          }} className="bg-white rounded-lg border border-gray-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
               <div className="p-6">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Instructions d'utilisation</h2>
                 <div className="space-y-3">
@@ -239,16 +225,12 @@ const PaymentSuccess = () => {
             </motion.div>
 
             {/* Security Info */}
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.5,
-            duration: 0.5
-          }} className="bg-white rounded-lg border border-gray-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="bg-white rounded-lg border border-gray-200"
+            >
               <div className="p-6 flex items-start">
                 <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-4 flex-shrink-0">
                   <ShieldCheck className="h-5 w-5" />
@@ -256,8 +238,9 @@ const PaymentSuccess = () => {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-2">Paiement sécurisé</h3>
                   <p className="text-gray-600 text-sm">
-                    Votre transaction a été traitée de manière sécurisée. Pour toute question concernant votre achat, 
-                    n'hésitez pas à nous contacter à <span className="text-blue-600">contact@logo-foot.com</span>
+                    Votre transaction a été traitée de manière sécurisée. Vous accédez à cette page via une URL sécurisée. 
+                    Pour toute question concernant votre achat, n'hésitez pas à nous contacter à{' '}
+                    <span className="text-blue-600">contact@logo-foot.com</span>
                   </p>
                 </div>
               </div>
@@ -265,6 +248,8 @@ const PaymentSuccess = () => {
           </motion.div>
         </div>
       </div>
-    </>;
+    </>
+  );
 };
+
 export default PaymentSuccess;

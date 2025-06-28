@@ -219,7 +219,7 @@ const Payment = () => {
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h3 className="font-semibold text-blue-800 mb-2">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                <p className="text-blue-700 text-sm mb-2">Collection de +1000 logos de football</p>
+                <p className="text-blue-700 text-sm mb-2">Un fichier ZIP de +8 600 logos de foot organisés</p>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>
                   <span className="text-lg">9,00 €</span>

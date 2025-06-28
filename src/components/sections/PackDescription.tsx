@@ -17,7 +17,7 @@ const PackDescription = () => {
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée."
     });
-    window.location.href = `window.location.href = '/payment'`;
+    window.location.href = '/payment';
   };
   return <div className="space-y-0.5 mt-1">
       {/* Removed the title section completely */}

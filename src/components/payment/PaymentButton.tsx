@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -20,7 +21,7 @@ const PaymentButton = () => {
         <TooltipTrigger asChild>
           <Button 
             onClick={handlePayment}
-            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-8 py-7 text-lg rounded-xl border-b-[3px] border-b-blue-900/70 border-l-[2px] border-l-blue-800/60 border-r-[2px] border-r-blue-800/60 hover:border-b-blue-900/80 hover:border-l-blue-800/70 hover:border-r-blue-800/70 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/80 active:translate-y-[2px] active:scale-[0.98] group h-22 relative overflow-hidden will-change-transform shadow-lg hover:shadow-xl"
+            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-8 py-7 text-lg rounded-xl border-b-[3px] border-b-blue-900/70 border-l-[1px] border-l-blue-800/60 border-r-[1px] border-r-blue-800/60 hover:border-b-blue-900/80 hover:border-l-blue-800/70 hover:border-r-blue-800/70 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/80 active:translate-y-[2px] active:scale-[0.98] group h-22 relative overflow-hidden will-change-transform shadow-lg hover:shadow-xl"
             style={{
               boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 1px 0 0 rgba(255, 255, 255, 0.08), inset -1px 0 0 rgba(255, 255, 255, 0.08), 0 3px 6px rgba(0, 0, 0, 0.12)',
               filter: 'drop-shadow(0 2px 4px rgba(59, 130, 246, 0.2))',

@@ -8,33 +8,44 @@ const ContactForm = () => {
   return (
     <div className="space-y-0">
       {/* En-tête avec email de contact avec le même style que les cartes de confiance */}
-      <div className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300 mb-4">
-        {/* Icône stylisée avec un effet de halo */}
-        <div className="mb-3 relative">
-          <div className="absolute inset-0 bg-blue-100 rounded-full blur-md opacity-20 scale-150"></div>
-          <div className="relative z-10 w-12 h-12 flex items-center justify-center bg-transparent rounded-full shadow-sm border border-gray-200">
-            <MessageCircle className="w-7 h-7 text-blue-600 drop-shadow-sm" />
+      <div className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300 mb-4 relative overflow-hidden">
+        {/* Background décoratif avec des bulles */}
+        <div className="absolute inset-0 opacity-5">
+          <MessageCircle className="absolute top-4 left-4 w-12 h-12 text-blue-600 rotate-12" />
+          <MessageCircle className="absolute top-8 right-6 w-8 h-8 text-blue-400 -rotate-6" />
+          <MessageCircle className="absolute bottom-6 left-8 w-6 h-6 text-blue-500 rotate-45" />
+          <MessageCircle className="absolute bottom-4 right-4 w-10 h-10 text-blue-300 -rotate-12" />
+          <MessageCircle className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-blue-200 rotate-6" />
+        </div>
+        
+        {/* Contenu au premier plan */}
+        <div className="relative z-10 flex flex-col items-center">
+          {/* Icône centrale avec effet plus subtil */}
+          <div className="mb-3">
+            <div className="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-full shadow-sm border border-blue-100">
+              <MessageCircle className="w-7 h-7 text-blue-600" />
+            </div>
           </div>
-        </div>
-        
-        {/* Séparateur décoratif */}
-        <Separator className="w-8 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
-        
-        {/* Titre avec style amélioré */}
-        <h3 className="font-semibold mb-1 text-gray-800 text-center">Par e-mail</h3>
-        
-        {/* Email de contact */}
-        <div className="text-center mb-3">
-          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-3xl">
-            contact@logo-foot.com
-          </a>
-        </div>
-        
-        {/* Note FAQ */}
-        <div className="text-center">
-          <p className="text-xs text-gray-600">
-            En cas de questions, veuillez d'abord consulter notre FAQ avant de nous contacter.
-          </p>
+          
+          {/* Séparateur décoratif */}
+          <Separator className="w-8 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
+          
+          {/* Titre avec style amélioré */}
+          <h3 className="font-semibold mb-1 text-gray-800 text-center">Par e-mail</h3>
+          
+          {/* Email de contact */}
+          <div className="text-center mb-3">
+            <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-3xl">
+              contact@logo-foot.com
+            </a>
+          </div>
+          
+          {/* Note FAQ */}
+          <div className="text-center">
+            <p className="text-xs text-gray-600">
+              En cas de questions, veuillez d'abord consulter notre FAQ avant de nous contacter.
+            </p>
+          </div>
         </div>
       </div>
       

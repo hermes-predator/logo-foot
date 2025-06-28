@@ -2,6 +2,7 @@
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
+
 const ContactForm = () => {
   return <div className="space-y-0">
       {/* En-tête avec email de contact avec le même style que les cartes de confiance */}
@@ -16,9 +17,6 @@ const ContactForm = () => {
         {/* Séparateur décoratif */}
         <Separator className="w-12 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
         
-        {/* Titre avec style amélioré */}
-        
-        
         {/* Email de contact */}
         <div className="text-center mb-3">
           <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
@@ -28,14 +26,13 @@ const ContactForm = () => {
         
         {/* Note FAQ */}
         <div className="text-center">
-          <p className="text-xs text-gray-600">En cas de questions, veuillez  consulter notre FAQ avant de nous contacter.</p>
+          <p className="text-xs text-gray-600">En cas de questions, veuillez consulter notre FAQ avant de nous contacter.</p>
         </div>
       </div>
       
-      {/* Container fusionné avec informations commande et mention RGPD */}
+      {/* Container fusionné avec informations commande et mention RGPD - sans espace */}
       <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-t-lg border border-gray-200 border-b-0 p-4">
         <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous avez passé commande ? Veuillez inclure ces informations :</p>
-        
         
         <div className="space-y-2 ml-1">
           <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
@@ -61,7 +58,7 @@ const ContactForm = () => {
         </div>
       </div>
       
-      
+      {/* Section RGPD directement collée sans espace */}
       <div className="p-5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 border-t-0 rounded-b-lg shadow-sm">
         <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-relaxed">
           <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
@@ -72,4 +69,5 @@ const ContactForm = () => {
       </div>
     </div>;
 };
+
 export default ContactForm;

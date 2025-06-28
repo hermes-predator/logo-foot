@@ -165,8 +165,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button onClick={() => {
-                      const returnUrl = `${window.location.origin}/payment-success`;
-                      window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+                      <Button variant="default" size="lg" onClick={() => {
+                        window.location.href = '/payment';
                     }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>

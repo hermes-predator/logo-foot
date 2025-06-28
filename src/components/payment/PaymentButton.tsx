@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -20,10 +19,10 @@ const PaymentButton = () => {
       description: "Vous allez être redirigé vers la page de paiement sécurisé",
     });
     
-    // Rediriger vers la page de paiement dédiée après un court délai
+    // Rediriger vers la page de paiement dédiée après un délai de 2 secondes
     setTimeout(() => {
       window.location.href = '/payment';
-    }, 1000);
+    }, 2000);
   };
 
   return (

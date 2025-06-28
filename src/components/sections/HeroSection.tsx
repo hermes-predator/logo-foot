@@ -7,9 +7,11 @@ import PackDescription from './PackDescription';
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
+
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
+
 const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToPayment
 }) => {
@@ -165,9 +167,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button onClick={() => {
-                      <Button variant="default" size="lg" onClick={() => {
                         window.location.href = '/payment';
-                    }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
+                      }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
                       </Button>
@@ -247,4 +248,5 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
     </section>;
 };
+
 export default HeroSection;

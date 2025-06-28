@@ -28,16 +28,17 @@ const ContactForm = ({
           
           {/* Email de contact */}
           <div className="text-center mb-3">
-            <div className="text-gray-700 text-lg font-medium mb-1">E-mail :</div>
-            <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
-              contact@logo-foot.com
-            </a>
+            <div className="text-gray-700 text-lg font-medium">
+              E-mail : <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
+                contact@logo-foot.com
+              </a>
+            </div>
           </div>
           
           {/* Note FAQ avec lien */}
           <div className="text-center mb-6">
             <div className="text-sm text-gray-600">
-              Une <FAQDialog asLink={true} onContactClose={onClose} /> est disponible pour répondre aux questions courantes.
+              Une <FAQDialog asLink={true} onContactClose={onClose} /> est aussi disponible pour répondre aux questions courantes.
             </div>
           </div>
         </div>

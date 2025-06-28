@@ -17,9 +17,7 @@ const PackDescription = () => {
       title: "Redirection vers le paiement",
       description: "Vous allez être redirigé vers notre page de paiement sécurisée."
     });
-    const returnUrl = `${window.location.origin}/payment-success`;
-    // Mise à jour du lien SumUp
-    window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
+    window.location.href = `window.location.href = '/payment'`;
   };
   return <div className="space-y-0.5 mt-1">
       {/* Removed the title section completely */}

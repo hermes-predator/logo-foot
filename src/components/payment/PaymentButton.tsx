@@ -41,7 +41,7 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-6 relative z-10">
               <ShoppingCart 
-                className="drop-shadow-sm flex-shrink-0 w-5 h-5"
+                className="drop-shadow-sm flex-shrink-0 w-6 h-6"
                 aria-hidden="true"
               />
               <div className="flex flex-col items-center">
@@ -50,7 +50,7 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="drop-shadow-sm flex-shrink-0 w-5 h-5"
+                className="drop-shadow-sm flex-shrink-0 w-6 h-6"
                 aria-hidden="true"
               />
             </div>

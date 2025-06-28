@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -28,7 +27,6 @@ declare global {
     };
   }
 }
-
 const Payment = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -36,7 +34,9 @@ const Payment = () => {
   const [isCreatingCheckout, setIsCreatingCheckout] = useState(false);
   const [checkoutId, setCheckoutId] = useState<string | null>(null);
   const [widgetMounted, setWidgetMounted] = useState(false);
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const sumupCardRef = useRef<any>(null);
   const scriptLoadedRef = useRef(false);
 
@@ -54,7 +54,6 @@ const Payment = () => {
   // Charger le script SumUp
   useEffect(() => {
     if (scriptLoadedRef.current) return;
-
     const script = document.createElement('script');
     script.src = 'https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js';
     script.async = true;
@@ -70,9 +69,7 @@ const Payment = () => {
         variant: "destructive"
       });
     };
-    
     document.head.appendChild(script);
-
     return () => {
       if (document.head.contains(script)) {
         document.head.removeChild(script);
@@ -83,15 +80,13 @@ const Payment = () => {
   // Créer un checkout SumUp
   const createCheckout = async () => {
     setIsCreatingCheckout(true);
-    
     try {
       console.log('Création du checkout SumUp...');
-      
       const response = await fetch('https://api.sumup.com/v0.1/checkouts', {
         method: 'POST',
         headers: {
           'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           checkout_reference: `FC-${Date.now()}`,
@@ -100,19 +95,16 @@ const Payment = () => {
           description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football',
           merchant_code: 'MLMLFVAH',
           return_url: window.location.origin + '/payment-success-token13061995'
-        }),
+        })
       });
-
       if (!response.ok) {
         const errorData = await response.text();
         console.error('Erreur API SumUp:', errorData);
         throw new Error(`Erreur lors de la création du checkout: ${response.status}`);
       }
-
       const data = await response.json();
       console.log('Checkout créé:', data);
       setCheckoutId(data.id);
-      
     } catch (error) {
       console.error('Erreur création checkout:', error);
       toast({
@@ -128,10 +120,8 @@ const Payment = () => {
   // Monter le widget SumUp
   const mountWidget = () => {
     if (!window.SumUpCard || !checkoutId || widgetMounted) return;
-
     try {
       console.log('Montage du widget SumUp avec checkout:', checkoutId);
-      
       sumupCardRef.current = window.SumUpCard.mount({
         id: 'sumup-card-widget',
         checkoutId: checkoutId,
@@ -141,12 +131,10 @@ const Payment = () => {
         showSubmitButton: true,
         onResponse: (type: string, body: any) => {
           console.log('SumUp Response:', type, body);
-          
           switch (type) {
             case 'success':
               window.location.href = `/payment-success-token13061995?checkout_id=${checkoutId}`;
               break;
-              
             case 'error':
               setIsProcessing(false);
               toast({
@@ -155,7 +143,6 @@ const Payment = () => {
                 variant: "destructive"
               });
               break;
-              
             case 'fail':
               setIsProcessing(false);
               toast({
@@ -164,12 +151,11 @@ const Payment = () => {
                 variant: "destructive"
               });
               break;
-
             case 'sent':
               setIsProcessing(true);
               toast({
                 title: "Paiement en cours",
-                description: "Votre paiement est en cours de traitement...",
+                description: "Votre paiement est en cours de traitement..."
               });
               break;
           }
@@ -204,9 +190,7 @@ const Payment = () => {
       }
     };
   }, []);
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Paiement sécurisé - Logo Foot</title>
         <meta name="description" content="Finalisez votre achat de la collection de logos de football" />
@@ -216,11 +200,7 @@ const Payment = () => {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4">
         <div className="container mx-auto max-w-2xl">
           {/* Bouton retour */}
-          <Button
-            variant="ghost"
-            onClick={() => navigate('/')}
-            className="mb-6 text-gray-600 hover:text-gray-800"
-          >
+          <Button variant="ghost" onClick={() => navigate('/')} className="mb-6 text-gray-600 hover:text-gray-800">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Retour à l'accueil
           </Button>
@@ -231,15 +211,13 @@ const Payment = () => {
                 <CreditCard className="h-6 w-6" />
                 Paiement sécurisé
               </CardTitle>
-              <CardDescription>
-                Finalisez votre achat de la collection de logos de football pour 9,00 €
-              </CardDescription>
+              <CardDescription>Finalisez votre transaction — ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</CardDescription>
             </CardHeader>
 
             <CardContent className="space-y-6">
               {/* Résumé de la commande */}
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-800 mb-2">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                <h3 className="font-semibold text-blue-800 mb-2">Transaction — ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</h3>
                 <p className="text-blue-700 text-sm mb-2">Collection de +1000 logos de football</p>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>
@@ -248,27 +226,21 @@ const Payment = () => {
               </div>
 
               {/* État de chargement */}
-              {isCreatingCheckout && (
-                <div className="flex items-center justify-center py-8">
+              {isCreatingCheckout && <div className="flex items-center justify-center py-8">
                   <Loader2 className="h-8 w-8 animate-spin text-blue-500 mr-3" />
                   <span>Initialisation du paiement...</span>
-                </div>
-              )}
+                </div>}
 
               {/* Widget de paiement */}
-              {checkoutId && !isCreatingCheckout && (
-                <div>
+              {checkoutId && !isCreatingCheckout && <div>
                   <h3 className="text-lg font-semibold mb-4">Informations de paiement</h3>
                   <div id="sumup-card-widget" className="min-h-[400px]"></div>
                   
-                  {isProcessing && (
-                    <div className="flex items-center justify-center py-4">
+                  {isProcessing && <div className="flex items-center justify-center py-4">
                       <Loader2 className="h-5 w-5 animate-spin text-blue-500 mr-2" />
                       <span>Traitement du paiement en cours...</span>
-                    </div>
-                  )}
-                </div>
-              )}
+                    </div>}
+                </div>}
 
               {/* Informations de sécurité */}
               <div className="text-center text-sm text-gray-600">
@@ -279,8 +251,6 @@ const Payment = () => {
           </Card>
         </div>
       </div>
-    </>
-  );
+    </>;
 };
-
 export default Payment;

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -26,7 +27,7 @@ const ContactForm = () => {
           </div>
           
           {/* Note FAQ */}
-          <div className="text-center">
+          <div className="text-center mb-6">
             <p className="text-xs text-gray-600">En cas de questions, veuillez consulter notre FAQ avant de nous contacter.</p>
           </div>
         </div>

@@ -13,7 +13,7 @@ const ContactForm = ({
       {/* Container fusionné : email + informations commande + RGPD */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
         {/* Section email de contact */}
-        <div className="flex flex-col items-center p-5 border-b border-gray-200">
+        <div className="flex flex-col items-center p-5">
           {/* Icône stylisée */}
           <div className="mb-3 relative">
             <div className="bg-gray-50 p-4 rounded-full border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
@@ -41,7 +41,7 @@ const ContactForm = ({
         
         {/* Section informations commande */}
         <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6">
-          <p className="text-gray-800 font-bold mb-4 text-lg italic ml-4">Vous êtes déjà client ? Veuillez inclure ces informations :</p>
+          <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous êtes déjà client ? Veuillez inclure vos informations :</p>
           
           <div className="space-y-2 ml-1">
             <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">

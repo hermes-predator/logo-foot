@@ -16,12 +16,15 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   
   const handleClick = () => {
     if (onContactClose) {
-      // D'abord ouvrir la FAQ
-      setIsOpen(true);
-      // Puis fermer le contact avec un petit délai
+      // D'abord fermer le contact
+      onContactClose();
+      // Puis ouvrir la FAQ avec un délai
       setTimeout(() => {
-        onContactClose();
-      }, 100);
+        setIsOpen(true);
+      }, 200);
+    } else {
+      // Si pas de contact à fermer, ouvrir directement
+      setIsOpen(true);
     }
   };
   

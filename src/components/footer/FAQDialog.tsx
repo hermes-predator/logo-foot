@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -29,7 +28,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   };
   
   const triggerContent = asLink ? (
-    <span className="text-gray-600 underline cursor-pointer font-bold">FAQ</span>
+    <span className="text-blue-600 underline cursor-pointer font-bold">FAQ</span>
   ) : (
     <span className={`flex items-center gap-2 transition-colors ${
       isMobile 

@@ -207,7 +207,7 @@ const Payment = () => {
 
           <Card>
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl font-bold flex items-center justify-center gap-2 tracking-wide">
+              <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2 tracking-wide">
                 
                 Paiement sécurisé
               </CardTitle>

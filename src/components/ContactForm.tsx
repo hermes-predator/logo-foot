@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -9,7 +10,7 @@ const ContactForm = () => {
       <div className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300 mb-4">
         {/* Icône stylisée avec le même style que les autres bulles */}
         <div className="mb-3 relative">
-          <div className="bg-gray-50 p-2 rounded-full border border-gray-200 shadow-sm">
+          <div className="bg-gray-50 p-3 rounded-full border border-gray-200 shadow-sm">
             <Mail className="w-8 h-8 text-gray-700" />
           </div>
         </div>
@@ -73,4 +74,5 @@ const ContactForm = () => {
     </div>;
 };
 export default ContactForm;
+
 

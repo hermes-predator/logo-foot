@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
@@ -11,8 +12,12 @@ import ButtonEffects from './ButtonEffects';
 
 const PaymentButton = () => {
   const { toast } = useToast();
+  const [isRedirecting, setIsRedirecting] = useState(false);
 
   const handlePayment = () => {
+    // Changer l'état du bouton
+    setIsRedirecting(true);
+    
     // Afficher le toast
     toast({
       title: "Redirection vers le paiement",
@@ -22,6 +27,11 @@ const PaymentButton = () => {
     // Rediriger vers la page de paiement dédiée après un délai de 2 secondes
     setTimeout(() => {
       window.location.href = '/payment';
+    }, 2000);
+
+    // Remettre le texte original après 2 secondes (au cas où la redirection échouerait)
+    setTimeout(() => {
+      setIsRedirecting(false);
     }, 2000);
   };
 
@@ -58,7 +68,7 @@ const PaymentButton = () => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
-                  Télécharger maintenant (9€)
+                  {isRedirecting ? "Redirection" : "Télécharger maintenant (9€)"}
                 </span>
               </div>
               <ArrowRight 

@@ -9,7 +9,7 @@ const ContactForm = () => {
         <div className="mb-3 relative">
           <div className="absolute inset-0 bg-blue-100 rounded-full blur-md opacity-20 scale-150"></div>
           <div className="relative z-10 w-16 h-16 flex items-center justify-center bg-transparent rounded-full shadow-sm border border-gray-200">
-            <MessageCircle className="w-7 h-7 text-gray-700 drop-shadow-sm" />
+            <MessageCircle className="w-8 h-8 text-gray-700 drop-shadow-sm" />
           </div>
         </div>
         

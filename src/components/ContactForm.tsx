@@ -32,11 +32,6 @@ const ContactForm = () => {
           </div>
         </div>
         
-        {/* Séparateur visuel entre les sections */}
-        <div className="bg-gradient-to-r from-blue-50 to-gray-100 px-4 py-1">
-          <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-        </div>
-        
         {/* Section informations commande */}
         <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4">
           <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous avez passé commande ? Veuillez inclure ces informations :</p>

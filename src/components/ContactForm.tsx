@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -14,7 +13,7 @@ const ContactForm = ({
       {/* Container fusionné : email + informations commande + RGPD */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
         {/* Section email de contact */}
-        <div className="flex flex-col items-center p-5 border-b border-gray-100">
+        <div className="flex flex-col items-center p-5 border-b border-gray-200">
           {/* Icône stylisée */}
           <div className="mb-3 relative">
             <div className="bg-gray-50 p-4 rounded-full border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)]">

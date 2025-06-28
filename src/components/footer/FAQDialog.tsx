@@ -28,7 +28,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   };
   
   const triggerContent = asLink ? (
-    <span className="text-blue-600 hover:underline cursor-pointer font-bold">FAQ</span>
+    <span className="text-blue-600 underline cursor-pointer font-bold">FAQ</span>
   ) : (
     <span className={`flex items-center gap-2 transition-colors ${
       isMobile 
@@ -39,6 +39,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
       <span>FAQ</span>
     </span>
   );
+  
   
   // Si on doit fermer le contact d'abord, on n'utilise pas DialogTrigger
   if (onContactClose) {

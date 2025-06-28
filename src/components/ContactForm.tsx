@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -36,7 +33,8 @@ const ContactForm = () => {
       
       {/* Container fusionné avec informations commande et mention RGPD */}
       <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-t-lg border border-gray-200 border-b-0 p-4">
-        <p className="text-gray-800 font-bold mb-4 text-lg">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+        <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+        
         
         <div className="space-y-2 ml-1">
           <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
@@ -62,7 +60,7 @@ const ContactForm = () => {
         </div>
       </div>
       
-      {/* Mention RGPD - partie basse du container fusionné */}
+      
       <div className="p-5 bg-gradient-to-r from-gray-50 to-white border border-gray-200 border-t-0 rounded-b-lg shadow-sm">
         <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-relaxed">
           <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
@@ -74,5 +72,3 @@ const ContactForm = () => {
     </div>;
 };
 export default ContactForm;
-
-

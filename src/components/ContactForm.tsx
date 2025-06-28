@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
-
 const ContactForm = () => {
   return <div className="space-y-0">
       {/* Container fusionné : email + informations commande + RGPD */}
@@ -28,7 +26,7 @@ const ContactForm = () => {
           
           {/* Note FAQ */}
           <div className="text-center mb-6">
-            <p className="text-xs text-gray-600">En cas de questions, veuillez consulter notre FAQ avant de nous contacter.</p>
+            <p className="text-xs text-gray-600">En cas de questions, une FAQ est disponible pour les questions courantes.</p>
           </div>
         </div>
         
@@ -72,5 +70,4 @@ const ContactForm = () => {
       </div>
     </div>;
 };
-
 export default ContactForm;

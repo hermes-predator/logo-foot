@@ -34,9 +34,9 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
           
           {/* Note FAQ avec lien */}
           <div className="text-center mb-6">
-            <p className="text-xs text-gray-600">
+            <div className="text-xs text-gray-600">
               Une <FAQDialog asLink={true} onContactClose={onClose} /> est disponible pour répondre aux questions courantes.
-            </p>
+            </div>
           </div>
         </div>
         

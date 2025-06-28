@@ -1,6 +1,5 @@
 
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { MessageCircle } from "lucide-react";
 import ContactForm from './ContactForm';
@@ -12,11 +11,13 @@ import DisclaimerDialog from './footer/DisclaimerDialog';
 import FAQDialog from './footer/FAQDialog';
 
 const Footer = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   return (
     <footer className="border-t mt-12 py-6 px-4 hidden md:block">
       <div className="container mx-auto">
         <div className="flex justify-center gap-8 text-sm text-gray-600">
-          <Dialog>
+          <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <MessageCircle className="w-4 h-4" />
               Contactez-nous
@@ -29,7 +30,7 @@ const Footer = () => {
                 </DialogDescription>
               </DialogHeader>
               <div className="mt-4">
-                <ContactForm />
+                <ContactForm onClose={() => setIsContactOpen(false)} />
               </div>
             </DialogContent>
           </Dialog>
@@ -45,4 +46,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

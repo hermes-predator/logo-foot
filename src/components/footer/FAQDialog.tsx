@@ -7,10 +7,17 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 interface FAQDialogProps {
   asLink?: boolean;
+  onContactClose?: () => void;
 }
 
-const FAQDialog = ({ asLink = false }: FAQDialogProps) => {
+const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   const isMobile = useIsMobile();
+  
+  const handleClick = () => {
+    if (onContactClose) {
+      onContactClose();
+    }
+  };
   
   const triggerContent = asLink ? (
     <span className="text-blue-600 hover:underline cursor-pointer font-bold">FAQ</span>
@@ -28,7 +35,7 @@ const FAQDialog = ({ asLink = false }: FAQDialogProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className={asLink ? "inline" : ""}>
+        <button className={asLink ? "inline" : ""} onClick={handleClick}>
           {triggerContent}
         </button>
       </DialogTrigger>

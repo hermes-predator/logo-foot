@@ -1,10 +1,15 @@
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import FAQDialog from './footer/FAQDialog';
 
-const ContactForm = () => {
+interface ContactFormProps {
+  onClose?: () => void;
+}
+
+const ContactForm = ({ onClose }: ContactFormProps) => {
   return <div className="space-y-0">
       {/* Container fusionné : email + informations commande + RGPD */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
@@ -30,7 +35,7 @@ const ContactForm = () => {
           {/* Note FAQ avec lien */}
           <div className="text-center mb-6">
             <p className="text-xs text-gray-600">
-              Une <FAQDialog asLink={true} /> est disponible pour répondre aux questions courantes.
+              Une <FAQDialog asLink={true} onContactClose={onClose} /> est disponible pour répondre aux questions courantes.
             </p>
           </div>
         </div>

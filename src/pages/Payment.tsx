@@ -217,7 +217,7 @@ const Payment = () => {
             <CardContent className="space-y-6">
               {/* Résumé de la commande */}
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-800 mb-2">Transaction — ⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</h3>
+                <h3 className="font-semibold text-blue-800 mb-2">⦗𝐅𝐑𝐎𝐍𝐓-𝐂𝐋𝐎𝐔𝐃⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</h3>
                 <p className="text-blue-700 text-sm mb-2">Collection de +1000 logos de football</p>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>

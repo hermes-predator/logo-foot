@@ -13,7 +13,7 @@ const FAQDialog = ({ asLink = false }: FAQDialogProps) => {
   const isMobile = useIsMobile();
   
   const triggerContent = asLink ? (
-    <span className="text-blue-600 hover:underline cursor-pointer font-medium">FAQ</span>
+    <span className="text-blue-600 hover:underline cursor-pointer font-bold">FAQ</span>
   ) : (
     <span className={`flex items-center gap-2 transition-colors ${
       isMobile 

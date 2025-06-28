@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Scroll } from "lucide-react";
@@ -18,7 +19,7 @@ const MentionsLegalesDialog = () => {
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-gray-800">Mentions légales</DialogTitle>
+          <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Mentions légales</DialogTitle>
           <DialogDescription>
             Informations légales obligatoires concernant l'éditeur du site et les conditions d'utilisation.
           </DialogDescription>

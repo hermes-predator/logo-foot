@@ -19,7 +19,7 @@ const CGVDialog = () => {
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-gray-800">Conditions générales de vente</DialogTitle>
+          <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Conditions générales de vente</DialogTitle>
           <DialogDescription>
             Conditions régissant la vente de nos produits et les droits et obligations de chaque partie.
           </DialogDescription>

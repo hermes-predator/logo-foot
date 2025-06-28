@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import FAQDialog from './footer/FAQDialog';
-
 interface ContactFormProps {
   onClose?: () => void;
 }
-
-const ContactForm = ({ onClose }: ContactFormProps) => {
+const ContactForm = ({
+  onClose
+}: ContactFormProps) => {
   return <div className="space-y-0">
       {/* Container fusionné : email + informations commande + RGPD */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
@@ -42,7 +41,7 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
         
         {/* Section informations commande */}
         <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6">
-          <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous avez passé commande ? Veuillez inclure ces informations :</p>
+          <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous êtes déjà client ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2 ml-1">
             <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
@@ -80,5 +79,4 @@ const ContactForm = ({ onClose }: ContactFormProps) => {
       </div>
     </div>;
 };
-
 export default ContactForm;

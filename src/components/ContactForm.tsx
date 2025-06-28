@@ -41,7 +41,7 @@ const ContactForm = ({
         
         {/* Section informations commande */}
         <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6">
-          <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous êtes déjà client ? Veuillez inclure ces informations :</p>
+          <p className="text-gray-800 font-bold mb-4 text-lg italic ml-4">Vous êtes déjà client ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2 ml-1">
             <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">

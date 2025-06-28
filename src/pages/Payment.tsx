@@ -224,7 +224,7 @@ const Payment = () => {
                   <div>
                     <h3 className="font-semibold text-blue-800 mb-1">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                    <p className="text-blue-700 text-sm">Un fichier ZIP de +8 600 logos de foot organisés</p>
+                    
                   </div>
                 </div>
                 <div className="flex justify-between items-center font-semibold">

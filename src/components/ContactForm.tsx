@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -23,7 +21,7 @@ const ContactForm = () => {
         
         {/* Email de contact */}
         <div className="text-center mb-3">
-          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-3xl">
+          <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-xl">
             contact@logo-foot.com
           </a>
         </div>
@@ -76,4 +74,3 @@ const ContactForm = () => {
     </div>;
 };
 export default ContactForm;
-

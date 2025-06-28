@@ -42,7 +42,7 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-6 relative z-10">
               <ShoppingCart 
-                className="drop-shadow-sm"
+                className="drop-shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12"
                 size={20}
                 aria-hidden="true"
                 style={{ minWidth: '20px', minHeight: '20px', width: '20px', height: '20px' }}
@@ -53,7 +53,7 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="drop-shadow-sm"
+                className="drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                 size={20}
                 aria-hidden="true"
                 style={{ minWidth: '20px', minHeight: '20px', width: '20px', height: '20px' }}

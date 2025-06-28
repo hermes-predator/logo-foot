@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -40,9 +41,10 @@ const PaymentButton = () => {
             
             <div className="flex items-center justify-center w-full gap-6 relative z-10">
               <ShoppingCart 
-                className="drop-shadow-sm flex-shrink-0"
-                size={32}
+                className="drop-shadow-sm"
+                size={40}
                 aria-hidden="true"
+                style={{ minWidth: '40px', minHeight: '40px', width: '40px', height: '40px' }}
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
@@ -50,9 +52,10 @@ const PaymentButton = () => {
                 </span>
               </div>
               <ArrowRight 
-                className="drop-shadow-sm flex-shrink-0"
-                size={32}
+                className="drop-shadow-sm"
+                size={40}
                 aria-hidden="true"
+                style={{ minWidth: '40px', minHeight: '40px', width: '40px', height: '40px' }}
               />
             </div>
           </Button>

@@ -222,7 +222,7 @@ const Payment = () => {
                     <Folder className="w-5 h-5 text-gray-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-blue-800 mb-1">
+                    <h3 className="font-semibold text-blue-800 mb-1 text-lg">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
                     
                   </div>

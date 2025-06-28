@@ -7,12 +7,23 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useToast } from "@/hooks/use-toast";
 import ButtonEffects from './ButtonEffects';
 
 const PaymentButton = () => {
+  const { toast } = useToast();
+
   const handlePayment = () => {
-    // Rediriger vers la page de paiement dédiée
-    window.location.href = '/payment';
+    // Afficher le toast
+    toast({
+      title: "Redirection vers le paiement",
+      description: "Vous allez être redirigé vers la page de paiement sécurisé",
+    });
+    
+    // Rediriger vers la page de paiement dédiée après un court délai
+    setTimeout(() => {
+      window.location.href = '/payment';
+    }, 1000);
   };
 
   return (

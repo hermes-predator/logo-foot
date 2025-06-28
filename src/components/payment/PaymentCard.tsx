@@ -47,12 +47,12 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
             ${isHovered ? 'shadow-2xl' : 'shadow-lg'} 
             transition-shadow duration-100 ease-out will-change-transform
-            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_8px_30px_rgba(135,206,235,0.12)] before:opacity-0 before:transition-opacity before:duration-100
+            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_8px_30px_rgba(100,149,237,0.15)] before:opacity-0 before:transition-opacity before:duration-100
             ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
           `}
           style={{
             boxShadow: isHovered ? 
-              '0 20px 50px -15px rgba(135, 206, 235, 0.15), 0 10px 25px -10px rgba(135, 206, 235, 0.10)' : 
+              '0 20px 50px -15px rgba(100, 149, 237, 0.18), 0 10px 25px -10px rgba(100, 149, 237, 0.12)' : 
               '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
             transform: isHovered && !isMobile ? 'translateY(-12px)' : 'translateY(0)',
             transitionProperty: 'transform, box-shadow',

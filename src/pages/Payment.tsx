@@ -221,8 +221,8 @@ const Payment = () => {
                   <div className="bg-gray-50 p-2 rounded border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0">
                     <Folder className="w-5 h-5 text-gray-700" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-blue-800 mb-1 text-lg text-center">
+                  <div>
+                    <h3 className="font-semibold text-blue-800 mb-1 text-lg">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
                     
                   </div>

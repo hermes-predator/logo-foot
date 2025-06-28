@@ -217,12 +217,12 @@ const Payment = () => {
             <CardContent className="space-y-6">
               {/* Résumé de la commande */}
               <div className="bg-blue-50 p-4 rounded-lg">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="bg-gray-50 p-2 rounded border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0 mt-0.5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="bg-gray-50 p-2 rounded border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0">
                     <Folder className="w-5 h-5 text-gray-700" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-blue-800 mb-1 text-lg">
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-blue-800 mb-1 text-lg text-center">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
                     
                   </div>

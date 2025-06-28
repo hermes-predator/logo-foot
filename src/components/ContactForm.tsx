@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -11,7 +8,7 @@ const ContactForm = () => {
         {/* Icône stylisée avec un effet de halo */}
         <div className="mb-3 relative">
           <div className="absolute inset-0 bg-blue-100 rounded-full blur-md opacity-20 scale-150"></div>
-          <div className="relative z-10 w-14 h-14 flex items-center justify-center bg-transparent rounded-full shadow-sm border border-gray-200">
+          <div className="relative z-10 w-16 h-16 flex items-center justify-center bg-transparent rounded-full shadow-sm border border-gray-200">
             <MessageCircle className="w-7 h-7 text-gray-700 drop-shadow-sm" />
           </div>
         </div>
@@ -77,5 +74,3 @@ const ContactForm = () => {
     </div>;
 };
 export default ContactForm;
-
-

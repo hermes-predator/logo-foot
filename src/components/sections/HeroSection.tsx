@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -186,11 +187,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           
           <Tooltip>
             <TooltipTrigger asChild>
-            <Button variant="default" size="lg" onClick={() => {
-  window.location.href = '/payment';
-}}>
-
-            }} className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-12 py-6 h-auto relative group overflow-hidden">
+              <Button variant="default" size="lg" onClick={() => {
+                window.location.href = '/payment';
+              }} className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-12 py-6 h-auto relative group overflow-hidden">
                 {/* Outer glow animation - Améliorée */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" style={{
                 animation: 'pulse 2s ease-in-out infinite'

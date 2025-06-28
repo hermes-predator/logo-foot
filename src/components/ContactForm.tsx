@@ -1,6 +1,10 @@
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import FAQDialog from './footer/FAQDialog';
+
 const ContactForm = () => {
   return <div className="space-y-0">
       {/* Container fusionné : email + informations commande + RGPD */}
@@ -24,9 +28,11 @@ const ContactForm = () => {
             </a>
           </div>
           
-          {/* Note FAQ */}
+          {/* Note FAQ avec lien */}
           <div className="text-center mb-6">
-            <p className="text-xs text-gray-600">Une FAQ est disponible pour répondre aux questions courantes.</p>
+            <p className="text-xs text-gray-600">
+              Une <FAQDialog /> est disponible pour répondre aux questions courantes.
+            </p>
           </div>
         </div>
         
@@ -70,4 +76,5 @@ const ContactForm = () => {
       </div>
     </div>;
 };
+
 export default ContactForm;

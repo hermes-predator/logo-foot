@@ -1,21 +1,36 @@
+
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-const FAQDialog = () => {
+interface FAQDialogProps {
+  asLink?: boolean;
+}
+
+const FAQDialog = ({ asLink = false }: FAQDialogProps) => {
   const isMobile = useIsMobile();
+  
+  const triggerContent = asLink ? (
+    <span className="text-blue-600 hover:underline cursor-pointer font-medium">FAQ</span>
+  ) : (
+    <span className={`flex items-center gap-2 transition-colors ${
+      isMobile 
+        ? 'px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
+        : 'hover:text-gray-900'
+    }`}>
+      <HelpCircle className="w-4 h-4" />
+      <span>FAQ</span>
+    </span>
+  );
   
   return (
     <Dialog>
-      <DialogTrigger className={`flex items-center gap-2 transition-colors ${
-        isMobile 
-          ? 'px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
-          : 'hover:text-gray-900'
-      }`}>
-        <HelpCircle className="w-4 h-4" />
-        <span>FAQ</span>
+      <DialogTrigger asChild>
+        <button className={asLink ? "inline" : ""}>
+          {triggerContent}
+        </button>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>

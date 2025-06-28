@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
@@ -12,10 +12,16 @@ interface FAQDialogProps {
 
 const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   const isMobile = useIsMobile();
+  const [isOpen, setIsOpen] = useState(false);
   
   const handleClick = () => {
     if (onContactClose) {
-      onContactClose();
+      // D'abord ouvrir la FAQ
+      setIsOpen(true);
+      // Puis fermer le contact avec un petit délai
+      setTimeout(() => {
+        onContactClose();
+      }, 100);
     }
   };
   
@@ -33,7 +39,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   );
   
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <button className={asLink ? "inline" : ""} onClick={handleClick}>
           {triggerContent}

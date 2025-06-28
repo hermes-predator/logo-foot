@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -15,7 +16,7 @@ const ContactForm = () => {
         </div>
         
         {/* Séparateur décoratif */}
-        <Separator className="w-10 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
+        <Separator className="w-12 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
         
         {/* Titre avec style amélioré */}
         
@@ -75,3 +76,4 @@ const ContactForm = () => {
     </div>;
 };
 export default ContactForm;
+

@@ -4,17 +4,18 @@ import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-re
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import FAQDialog from './footer/FAQDialog';
+
 interface ContactFormProps {
   onClose?: () => void;
 }
+
 const ContactForm = ({
   onClose
 }: ContactFormProps) => {
-  return <div className="space-y-0">
-      {/* Container fusionné : email + informations commande + RGPD */}
+  return <div className="space-y-4">
+      {/* Premier container : email de contact */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
-        {/* Section email de contact */}
-        <div className="flex flex-col items-center p-5 border-b border-gray-200">
+        <div className="flex flex-col items-center p-5">
           {/* Icône stylisée */}
           <div className="mb-3 relative">
             <div className="bg-gray-50 p-4 rounded-full border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
@@ -39,9 +40,12 @@ const ContactForm = ({
             </div>
           </div>
         </div>
-        
+      </div>
+      
+      {/* Deuxième container : informations commande + RGPD */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
         {/* Section informations commande */}
-        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6">
+        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6 rounded-t-xl">
           <p className="text-gray-800 font-bold mb-4 text-lg italic ml-4">Vous êtes déjà client ? Veuillez inclure vos informations :</p>
           
           <div className="space-y-2 ml-1">
@@ -80,4 +84,5 @@ const ContactForm = ({
       </div>
     </div>;
 };
+
 export default ContactForm;

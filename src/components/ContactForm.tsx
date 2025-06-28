@@ -1,10 +1,8 @@
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
-
 const ContactForm = () => {
-  return (
-    <div className="space-y-0">
+  return <div className="space-y-0">
       {/* En-tête avec email de contact avec le même style que les cartes de confiance */}
       <div className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300 mb-4">
         {/* Icône stylisée avec un effet de halo */}
@@ -19,7 +17,7 @@ const ContactForm = () => {
         <Separator className="w-8 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
         
         {/* Titre avec style amélioré */}
-        <h3 className="font-semibold mb-1 text-gray-800 text-center">Par e-mail</h3>
+        
         
         {/* Email de contact */}
         <div className="text-center mb-3">
@@ -73,8 +71,6 @@ const ContactForm = () => {
           </span>
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ContactForm;

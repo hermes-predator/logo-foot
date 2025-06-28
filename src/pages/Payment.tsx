@@ -245,7 +245,7 @@ const Payment = () => {
 
               {/* Informations de sécurité */}
               <div className="text-center text-sm text-gray-600">
-                <p>🔒 Paiement 100% sécurisé par SumUp</p>
+                <p>🔒 Paiement sécurisé via SumUp</p>
                 <p>Vos données de paiement sont chiffrées et protégées</p>
               </div>
             </CardContent>

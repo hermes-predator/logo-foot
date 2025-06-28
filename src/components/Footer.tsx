@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { MessageCircle } from "lucide-react";
@@ -22,7 +23,7 @@ const Footer = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl w-full">
               <DialogHeader>
-                <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '0.02em' }}>Contacter le Service Client</DialogTitle>
+                <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '0.01em' }}>Contacter le Service Client</DialogTitle>
                 <DialogDescription>
                   Pour toute question ou demande d'assistance.
                 </DialogDescription>
@@ -44,3 +45,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

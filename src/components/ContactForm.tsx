@@ -26,7 +26,7 @@ const ContactForm = () => {
           
           {/* Note FAQ */}
           <div className="text-center mb-6">
-            <p className="text-xs text-gray-600">En cas de questions, une FAQ est disponible pour les questions courantes.</p>
+            <p className="text-xs text-gray-600">Une FAQ est disponible pour répondre aux questions courantes.</p>
           </div>
         </div>
         

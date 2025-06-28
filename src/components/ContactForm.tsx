@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -33,7 +32,7 @@ const ContactForm = () => {
         </div>
         
         {/* Section informations commande */}
-        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4">
+        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6">
           <p className="text-gray-800 font-bold mb-4 text-lg italic">Vous avez passé commande ? Veuillez inclure ces informations :</p>
           
           <div className="space-y-2 ml-1">

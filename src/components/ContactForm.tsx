@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -5,11 +6,10 @@ const ContactForm = () => {
   return <div className="space-y-0">
       {/* En-tête avec email de contact avec le même style que les cartes de confiance */}
       <div className="flex flex-col items-center p-5 bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300 mb-4">
-        {/* Icône stylisée avec un effet de halo */}
+        {/* Icône stylisée avec le même style que les autres bulles */}
         <div className="mb-3 relative">
-          <div className="absolute inset-0 bg-blue-100 rounded-full blur-md opacity-20 scale-150"></div>
-          <div className="relative z-10 w-16 h-16 flex items-center justify-center bg-transparent rounded-full shadow-sm border border-gray-200">
-            <Mail className="w-8 h-8 text-gray-700 drop-shadow-sm" />
+          <div className="bg-transparent p-2 rounded-md border border-gray-200 shadow-sm">
+            <Mail className="w-8 h-8 text-gray-700" />
           </div>
         </div>
         

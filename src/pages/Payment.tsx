@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, Loader2, CreditCard } from 'lucide-react';
+import { ArrowLeft, Loader2, CreditCard, Folder } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
@@ -217,9 +217,16 @@ const Payment = () => {
             <CardContent className="space-y-6">
               {/* Résumé de la commande */}
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-800 mb-2">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-gray-50 p-2 rounded-full border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0 mt-0.5">
+                    <Folder className="w-5 h-5 text-gray-700" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-800 mb-1">
 ⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                <p className="text-blue-700 text-sm mb-2">Un fichier ZIP de +8 600 logos de foot organisés</p>
+                    <p className="text-blue-700 text-sm">Un fichier ZIP de +8 600 logos de foot organisés</p>
+                  </div>
+                </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>
                   <span className="text-lg">9,00 €</span>

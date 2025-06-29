@@ -198,8 +198,8 @@ const Payment = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4 flex flex-col">
-        <div className="container mx-auto max-w-2xl flex-grow">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4">
+        <div className="container mx-auto max-w-2xl">
           {/* Bouton retour */}
           <Button variant="ghost" onClick={() => navigate('/')} className="mb-4 text-gray-600 hover:text-gray-800 hover:bg-white">
             <ArrowLeft className="mr-2 h-4 w-4" />

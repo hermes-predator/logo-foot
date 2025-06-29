@@ -28,7 +28,7 @@ const ContactForm = ({
           
           {/* Email de contact */}
           <div className="text-center mb-3">
-            <div className="text-gray-700 text-lg font-semibold">
+            <div className="text-gray-700 text-xl font-semibold">
               <span className="underline">E-mail</span> : <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
                 contact@logo-foot.com
               </a>

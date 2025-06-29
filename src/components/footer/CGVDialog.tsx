@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { FileText } from "lucide-react";
@@ -46,7 +45,7 @@ const CGVDialog = () => {
             <h3 className="font-semibold mb-2">Article 5 - Livraison</h3>
             <p>
               La livraison s'effectue immédiatement après le paiement par téléchargement numérique.<br />
-              Un lien de téléchargement est automatiquement accessible.
+              Un lien de téléchargement est automatiquement rendu accessible.
             </p>
           </section>
           <section>

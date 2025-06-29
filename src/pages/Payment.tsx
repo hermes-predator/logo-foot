@@ -216,7 +216,7 @@ const Payment = () => {
               <CardDescription>Finalisez votre transaction — ⦗FRONT-CLOUD⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</CardDescription>
             </CardHeader>
 
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-4">
               {/* Résumé de la commande */}
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="flex items-center gap-3 mb-3">

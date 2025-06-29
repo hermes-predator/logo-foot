@@ -5,6 +5,7 @@ import { ArrowLeft, Loader2, CreditCard, Folder } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import Footer from '@/components/Footer';
 
 // Types pour le widget SumUp
 declare global {
@@ -197,8 +198,8 @@ const Payment = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4">
-        <div className="container mx-auto max-w-2xl">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4 flex flex-col">
+        <div className="container mx-auto max-w-2xl flex-grow">
           {/* Bouton retour */}
           <Button variant="ghost" onClick={() => navigate('/')} className="mb-4 text-gray-600 hover:text-gray-800 hover:bg-white">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -258,6 +259,8 @@ const Payment = () => {
             </CardContent>
           </Card>
         </div>
+        
+        <Footer />
       </div>
     </>;
 };

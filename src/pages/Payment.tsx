@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -28,6 +29,7 @@ declare global {
     };
   }
 }
+
 const Payment = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -35,9 +37,7 @@ const Payment = () => {
   const [isCreatingCheckout, setIsCreatingCheckout] = useState(false);
   const [checkoutId, setCheckoutId] = useState<string | null>(null);
   const [widgetMounted, setWidgetMounted] = useState(false);
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
   const sumupCardRef = useRef<any>(null);
   const scriptLoadedRef = useRef(false);
 
@@ -191,7 +191,9 @@ const Payment = () => {
       }
     };
   }, []);
-  return <>
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col">
       <Helmet>
         <title>Paiement sécurisé - Logo Foot</title>
         <meta name="description" content="Finalisez votre achat de la collection de logos de football" />
@@ -206,64 +208,69 @@ const Payment = () => {
             Retour à l'accueil
           </Button>
 
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-bold flex items-center justify-center gap-2 tracking-normal">
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl font-bold flex items-center justify-center gap-2 tracking-normal">
+                Paiement sécurisé
+              </CardTitle>
+              <CardDescription>Finalisez votre transaction — ⦗FRONT-CLOUD⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</CardDescription>
+            </CardHeader>
+
+            <CardContent className="space-y-6">
+              {/* Résumé de la commande */}
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="bg-gray-50 p-2 rounded border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0">
+                    <Folder className="w-5 h-5 text-gray-700" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-800 mb-1 text-lg mt-1">
+                      ⦗FRONT-CLOUD⦘~ Football.zip
+                    </h3>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center font-semibold">
+                  <span>Total :</span>
+                  <span className="text-lg">9,00 €</span>
+                </div>
+              </div>
+
+              {/* État de chargement */}
+              {isCreatingCheckout && (
+                <div className="flex items-center justify-center py-8">
+                  <Loader2 className="h-8 w-8 animate-spin text-blue-500 mr-3" />
+                  <span>Initialisation du paiement...</span>
+                </div>
+              )}
+
+              {/* Widget de paiement */}
+              {checkoutId && !isCreatingCheckout && (
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Informations de paiement</h3>
+                  <div id="sumup-card-widget" className="min-h-[400px]"></div>
                   
-                  Paiement sécurisé
-                </CardTitle>
-                <CardDescription>Finalisez votre transaction — ⦗FRONT-CLOUD⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</CardDescription>
-              </CardHeader>
-
-              <CardContent className="space-y-6">
-                {/* Résumé de la commande */}
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-gray-50 p-2 rounded border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)] flex-shrink-0">
-                      <Folder className="w-5 h-5 text-gray-700" />
+                  {isProcessing && (
+                    <div className="flex items-center justify-center py-4">
+                      <Loader2 className="h-5 w-5 animate-spin text-blue-500 mr-2" />
+                      <span>Traitement du paiement en cours...</span>
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-blue-800 mb-1 text-lg mt-1">
-⦗FRONT-CLOUD⦘~ Football.zip</h3>
-                      
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center font-semibold">
-                    <span>Total :</span>
-                    <span className="text-lg">9,00 €</span>
-                  </div>
+                  )}
                 </div>
+              )}
 
-                {/* État de chargement */}
-                {isCreatingCheckout && <div className="flex items-center justify-center py-8">
-                    <Loader2 className="h-8 w-8 animate-spin text-blue-500 mr-3" />
-                    <span>Initialisation du paiement...</span>
-                  </div>}
-
-                {/* Widget de paiement */}
-                {checkoutId && !isCreatingCheckout && <div>
-                    <h3 className="text-lg font-semibold mb-4">Informations de paiement</h3>
-                    <div id="sumup-card-widget" className="min-h-[400px]"></div>
-                    
-                    {isProcessing && <div className="flex items-center justify-center py-4">
-                        <Loader2 className="h-5 w-5 animate-spin text-blue-500 mr-2" />
-                        <span>Traitement du paiement en cours...</span>
-                      </div>}
-                  </div>}
-
-                {/* Informations de sécurité */}
-                <div className="text-center text-sm text-gray-600">
-                  <p>🔒 Paiement sécurisé via SumUp</p>
-                  <p>Vos données de paiement sont chiffrées et protégées</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+              {/* Informations de sécurité */}
+              <div className="text-center text-sm text-gray-600">
+                <p>🔒 Paiement sécurisé via SumUp</p>
+                <p>Vos données de paiement sont chiffrées et protégées</p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-        
-        <Footer />
       </div>
-    </>;
+      
+      <Footer />
+    </div>
+  );
 };
 
 export default Payment;

@@ -198,14 +198,13 @@ const Payment = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col">
-        <div className="flex-grow py-12 px-4">
-          <div className="container mx-auto max-w-2xl">
-            {/* Bouton retour */}
-            <Button variant="ghost" onClick={() => navigate('/')} className="mb-4 text-gray-600 hover:text-gray-800 hover:bg-white">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Retour à l'accueil
-            </Button>
+      <div className="flex-grow py-12 px-4">
+        <div className="container mx-auto max-w-2xl">
+          {/* Bouton retour */}
+          <Button variant="ghost" onClick={() => navigate('/')} className="mb-8 text-gray-600 hover:text-gray-800 hover:bg-white">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Retour à l'accueil
+          </Button>
 
             <Card>
               <CardHeader className="text-center">

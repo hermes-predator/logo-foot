@@ -29,7 +29,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   };
   
   const triggerContent = asLink ? (
-    <span className="text-gray-700 underline cursor-pointer font-bold">FAQ</span>
+    <span className="text-gray-700 cursor-pointer font-bold">FAQ</span>
   ) : (
     <span className={`flex items-center gap-2 transition-colors ${
       isMobile 

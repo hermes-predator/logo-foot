@@ -1,25 +1,19 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-
 const DisclaimerDialog = () => {
   const isMobile = useIsMobile();
-  
-  return (
-    <Dialog>
-      <DialogTrigger className={`flex items-center gap-2 transition-colors ${
-        isMobile 
-          ? 'px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
-          : 'hover:text-gray-900'
-      }`}>
+  return <Dialog>
+      <DialogTrigger className={`flex items-center gap-2 transition-colors ${isMobile ? 'px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' : 'hover:text-gray-900'}`}>
         <AlertTriangle className="w-4 h-4" />
         <span>Disclaimer</span>
       </DialogTrigger>
       <DialogContent className={`max-w-2xl ${isMobile ? 'max-h-[90vh] px-4' : 'max-h-[80vh]'} overflow-y-auto bg-gradient-to-b from-white to-gray-50 shadow-xl border-0`}>
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>
+          <DialogTitle className="text-xl font-bold text-gray-800" style={{
+          letterSpacing: '-0.01em'
+        }}>
             Disclaimer
           </DialogTitle>
           <DialogDescription>
@@ -51,7 +45,7 @@ const DisclaimerDialog = () => {
                 </p>
 
                 <div className="bg-gradient-to-r from-slate-100 to-gray-50 p-4 rounded-lg">
-                  <span className="font-semibold text-gray-800 text-lg">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  
                   <p className="mt-2 text-gray-700 text-xs sm:text-sm">
                     <div className="flex items-start gap-2 mb-3 group hover:bg-white/80 rounded-md p-2 transition-colors">
                       <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm group-hover:bg-blue-100/30 transition-colors">
@@ -73,8 +67,6 @@ const DisclaimerDialog = () => {
           </div>
         </div>
       </DialogContent>
-    </Dialog>
-  );
+    </Dialog>;
 };
-
 export default DisclaimerDialog;

@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -42,7 +41,7 @@ const DisclaimerDialog = () => {
                 <Folder className="w-6 h-6 text-gray-700 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-800 space-y-6">
-                <h3 className="text-lg font-semibold text-gray-900 text-center">
+                <h3 className="text-lg font-semibold text-gray-900">
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </h3>
 
@@ -72,4 +71,3 @@ const DisclaimerDialog = () => {
     </Dialog>;
 };
 export default DisclaimerDialog;
-

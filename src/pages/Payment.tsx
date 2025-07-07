@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -228,7 +226,7 @@ const Payment = () => {
                     <h3 className="font-semibold text-blue-800 text-lg">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-xs text-gray-600">
                       Quantité : 1
                     </p>
                   </div>

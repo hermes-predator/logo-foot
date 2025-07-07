@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -260,7 +259,7 @@ const Payment = () => {
 
               {/* Informations de sécurité */}
               <div className="text-center text-sm text-gray-600">
-                <p className="text-xs">🔒 Paiement sécurisé via SumUp</p>
+                <p className="text-sm">🔒 Paiement sécurisé via SumUp</p>
                 <p>Vos données de paiement sont chiffrées et protégées</p>
               </div>
             </CardContent>

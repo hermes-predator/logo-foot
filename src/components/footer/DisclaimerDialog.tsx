@@ -42,7 +42,7 @@ const DisclaimerDialog = () => {
                 <Folder className="w-6 h-6 text-gray-700 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-800 space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900 mt-4">
+                <h3 className="text-xl font-semibold text-gray-900 mt-4">
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </h3>
                 

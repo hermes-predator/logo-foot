@@ -228,7 +228,7 @@ const Payment = () => {
                     <h3 className="font-semibold text-blue-800 text-lg">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-sm text-gray-600">
                       Quantité : 1
                     </p>
                   </div>

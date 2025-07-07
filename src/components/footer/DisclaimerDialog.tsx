@@ -41,8 +41,8 @@ const DisclaimerDialog = () => {
               <div className="bg-gradient-to-r from-slate-100 to-gray-50 rounded-md p-4 shadow-lg shadow-gray-200/30 flex items-center gap-2 backdrop-blur-sm border border-gray-200/50 flex-shrink-0">
                 <Folder className="w-6 h-6 text-gray-700 drop-shadow-sm" />
               </div>
-              <div className="text-sm leading-relaxed text-gray-800 space-y-6">
-                <h3 className="text-lg font-semibold text-gray-900 text-center">
+              <div className="text-sm leading-relaxed text-gray-800 space-y-4">
+                <h3 className="text-lg font-semibold text-gray-900 text-center mb-4">
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </h3>
                 

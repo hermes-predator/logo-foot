@@ -100,14 +100,14 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipTrigger asChild>
                     <button 
                       onClick={handleFlip}
-                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-100/70 transition-colors duration-300 rounded-full relative overflow-hidden group shadow-[0_1px_4px_rgba(0,0,0,0.03),0_1px_2px_rgba(0,0,0,0.01)]"
+                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-50/60 transition-colors duration-300 rounded-full relative overflow-hidden group shadow-[0_1px_4px_rgba(0,0,0,0.03),0_1px_2px_rgba(0,0,0,0.01)]"
                       aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
                     >
                       {/* Effet de pulse subtil */}
-                      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-100/30 rounded-full transition-all duration-300"></span>
+                      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-50/10 rounded-full transition-all duration-300"></span>
                       {/* Cercle d'animation au clic */}
                       <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                        <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+                        <span className="absolute inset-0 rounded-full bg-blue-100/0 group-active:bg-blue-100/20 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
                       </span>
                       <Eye className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600" />
                     </button>

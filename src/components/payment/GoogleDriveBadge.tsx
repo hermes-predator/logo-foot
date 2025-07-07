@@ -41,17 +41,17 @@ const GoogleDriveBadge = ({
   
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-3 py-2 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-100/70 transition-colors duration-300 rounded-full relative overflow-hidden group
+      className={`inline-flex items-center gap-2 px-3 py-2 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-50/80 transition-colors duration-300 rounded-full relative overflow-hidden group
         shadow-[0_1px_4px_rgba(0,0,0,0.03),0_1px_2px_rgba(0,0,0,0.01)] 
         ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
       aria-label="Compatible avec Google Drive"
     >
       {/* Effet de pulse subtil */}
-      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-100/30 rounded-full transition-all duration-300"></span>
+      <span className="absolute inset-0 bg-blue-100/0 group-hover:bg-blue-50/20 rounded-full transition-all duration-300"></span>
       {/* Cercle d'animation au clic */}
       <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-        <span className="absolute inset-0 rounded-full bg-blue-200/0 group-active:bg-blue-200/40 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
+        <span className="absolute inset-0 rounded-full bg-blue-100/0 group-active:bg-blue-100/30 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
       </span>
       
       <BadgeCheck className={`h-4 w-4 text-green-600 ${cursorHelp ? 'cursor-help' : ''}`} aria-hidden="true" />

@@ -44,24 +44,22 @@ const DisclaimerDialog = () => {
                 <p>
                   Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
                 </p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-4 p-5 border border-gray-200/50 bg-white rounded-xl shadow-sm">
-            <div className="space-y-3">
-              <div className="flex items-center gap-4 p-2">
-                <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
-                  <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                
+                <div className="space-y-3 pt-4 border-t border-gray-200/50">
+                  <div className="flex items-center gap-4 p-2">
+                    <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                    </div>
+                    <span className="text-sm text-gray-700 italic">Ce fichier est une ressource indépendante, compilée et organisée.</span>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 p-2">
+                    <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
+                      <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                    </div>
+                    <span className="text-sm text-gray-700 italic">Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
+                  </div>
                 </div>
-                <span className="text-sm text-gray-700 italic">Ce fichier est une ressource indépendante, compilée et organisée.</span>
-              </div>
-              
-              <div className="flex items-start gap-4 p-2">
-                <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
-                  <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                </div>
-                <span className="text-sm text-gray-700 italic">Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
               </div>
             </div>
           </div>

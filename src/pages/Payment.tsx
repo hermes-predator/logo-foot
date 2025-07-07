@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -212,7 +213,7 @@ const Payment = () => {
               <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2 tracking-normal">
                 Paiement sécurisé
               </CardTitle>
-              <CardDescription>Finalisez votre transaction — ⦗FRONT-CLOUD⦘~ 𝐅𝐨𝐨𝐭𝐛𝐚𝐥𝐥.𝐳𝐢𝐩</CardDescription>
+              <CardDescription>Finalisez votre transaction</CardDescription>
             </CardHeader>
 
             <CardContent className="space-y-4">

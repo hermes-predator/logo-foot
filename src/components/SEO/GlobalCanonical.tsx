@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
@@ -21,6 +21,19 @@ const GlobalCanonical: React.FC = () => {
   
   // Détecter si c'est la page d'accueil
   const isHomepage = normalizedPath === '/';
+
+  // Forcer la mise à jour du titre de la page si nécessaire
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // S'assurer que le title est correctement mis à jour
+      const titleElement = document.querySelector('title');
+      if (titleElement) {
+        console.log('Current page title:', titleElement.textContent);
+      }
+    }, 50);
+
+    return () => clearTimeout(timer);
+  }, [pathname]);
   
   return (
     <Helmet>

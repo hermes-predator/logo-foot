@@ -214,7 +214,7 @@ const Payment = () => {
               <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2 tracking-normal">
                 Paiement sécurisé
               </CardTitle>
-              <CardDescription>Finalisez votre transaction —</CardDescription>
+              <CardDescription>Finalisez votre transaction — Téléchargement</CardDescription>
             </CardHeader>
 
             <CardContent className="space-y-4">

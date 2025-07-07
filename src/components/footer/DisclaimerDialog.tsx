@@ -41,7 +41,7 @@ const DisclaimerDialog = () => {
                 <AlertTriangle className="w-6 h-6 text-gray-700 drop-shadow-sm" />
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
-                <p>
+                <p className="text-base font-medium text-gray-800">
                   Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
                 </p>
                 
@@ -50,14 +50,14 @@ const DisclaimerDialog = () => {
                     <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
                       <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
                     </div>
-                    <span className="text-sm text-gray-700 italic">Ce fichier est une ressource indépendante, compilée et organisée.</span>
+                    <span className="text-sm text-gray-600 italic font-light">Ce fichier est une ressource indépendante, compilée et organisée.</span>
                   </div>
                   
                   <div className="flex items-start gap-4 p-2">
                     <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
                       <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
                     </div>
-                    <span className="text-sm text-gray-700 italic">Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
+                    <span className="text-sm text-gray-600 italic font-light">Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
                   </div>
                 </div>
               </div>

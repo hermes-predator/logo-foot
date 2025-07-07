@@ -36,19 +36,6 @@ const DisclaimerDialog = () => {
             </div>
           </div>
 
-          <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
-            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-              <div className="bg-gradient-to-r from-slate-100 to-gray-50 rounded-md p-4 shadow-lg shadow-gray-200/30 flex items-center gap-2 backdrop-blur-sm border border-gray-200/50 flex-shrink-0">
-                <AlertTriangle className="w-6 h-6 text-gray-700 drop-shadow-sm" />
-              </div>
-              <div className="text-sm leading-relaxed text-gray-700 space-y-6">
-                <p>
-                  Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
-                </p>
-              </div>
-            </div>
-          </div>
-          
           <div className="mt-4 p-5 border border-gray-200/50 bg-white rounded-xl shadow-sm">
             <div className="space-y-3">
               <div className="flex items-start gap-2 group hover:bg-white/80 rounded-md p-2 transition-colors">
@@ -63,6 +50,19 @@ const DisclaimerDialog = () => {
                   <Check className="w-4 h-4 text-green-600 flex-shrink-0 group-hover:text-green-600 transition-colors" />
                 </div>
                 <span className="text-sm text-gray-700">Aucune ressource présente dans ce fichier n'est vendue en tant que marque déposée, logo officiel ou fichier sous licence commerciale.</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 p-5 border border-gray-100 bg-white rounded-xl shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              <div className="bg-gradient-to-r from-slate-100 to-gray-50 rounded-md p-4 shadow-lg shadow-gray-200/30 flex items-center gap-2 backdrop-blur-sm border border-gray-200/50 flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-gray-700 drop-shadow-sm" />
+              </div>
+              <div className="text-sm leading-relaxed text-gray-700 space-y-6">
+                <p>
+                  Ce fichier a pour but de faire gagner du temps aux internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation, d'inspiration ou de création personnelle.
+                </p>
               </div>
             </div>
           </div>

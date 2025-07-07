@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -213,7 +214,7 @@ const Payment = () => {
               <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2 tracking-normal">
                 Paiement sécurisé
               </CardTitle>
-              <CardDescription>Finalisez votre transaction</CardDescription>
+              <CardDescription>Finalisez votre transaction —</CardDescription>
             </CardHeader>
 
             <CardContent className="space-y-4">
@@ -277,3 +278,4 @@ const Payment = () => {
 };
 
 export default Payment;
+

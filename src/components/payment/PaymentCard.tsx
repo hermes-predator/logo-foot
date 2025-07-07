@@ -54,7 +54,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             boxShadow: isHovered ? 
               '0 20px 50px -15px rgba(0, 0, 0, 0.12), 0 10px 25px -10px rgba(0, 0, 0, 0.08)' : 
               '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
-            transform: isHovered && !isMobile ? 'translateY(-6px)' : 'translateY(0)',
+            transform: isHovered && !isMobile ? 'translateY(-10px)' : 'translateY(0)',
             transitionProperty: 'transform, box-shadow',
             transitionDuration: '0.1s',
             transitionTimingFunction: 'ease-out'

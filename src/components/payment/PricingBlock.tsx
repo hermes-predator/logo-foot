@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RefreshCcw, Mail } from 'lucide-react';
 import {
@@ -23,6 +22,7 @@ const PricingBlock = () => {
           </div>
         </div>
         
+        {/* J'ai ajouté mt-4 pour déplacer le bouton vers le bas et pt-2 pour l'éloigner un peu plus */}
         <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 pl-2 md:pl-4 relative z-40 mt-6">
           <div className="flex flex-col md:flex-row items-center gap-3">
             <div>
@@ -57,7 +57,7 @@ const PricingBlock = () => {
                 </div>
               </TooltipTrigger>
               <TooltipContent className="z-[9999] max-w-[300px] p-4 space-y-2 text-sm bg-white border border-gray-200/70 shadow-md rounded-lg">
-                <p className="font-semibold text-emerald-700">Satisfait ou Remboursé</p>
+                <p className="font-semibold text-emerald-700">Garantie : Satisfait ou Remboursé</p>
                 <div className="space-y-2 text-gray-700">
                   <p>Vous pouvez nous contacter par e-mail dans les 14 jours suivant votre achat.</p>
                   <p>Veuillez noter qu'en matière de produits digitaux, nous n'avons pas d'obligations à proposer un remboursement (CGV).</p>

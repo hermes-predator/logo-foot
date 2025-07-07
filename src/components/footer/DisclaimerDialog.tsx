@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -51,7 +50,7 @@ const DisclaimerDialog = () => {
           
           <div className="mt-4 p-5 border border-gray-200/50 bg-white rounded-xl shadow-sm">
             <div className="space-y-3">
-              <div className="flex items-start gap-4 p-2">
+              <div className="flex items-center gap-4 p-2">
                 <div className="bg-transparent p-1.5 rounded-md border border-gray-200 shadow-sm">
                   <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
                 </div>
@@ -71,4 +70,3 @@ const DisclaimerDialog = () => {
     </Dialog>;
 };
 export default DisclaimerDialog;
-

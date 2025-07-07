@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -223,7 +224,7 @@ const Payment = () => {
                     <Folder className="w-5 h-5 text-gray-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-blue-800 mb-1 text-lg mt-1">
+                    <h3 className="font-semibold text-blue-800 text-lg">
                       ⦗FRONT-CLOUD⦘~ Football.zip
                     </h3>
                   </div>

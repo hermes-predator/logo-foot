@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Yassine B.",
     role: "Community Manager",
-    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
     rating: 5
   },
   {

@@ -59,7 +59,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Antoine R.",
     role: "Non renseigné",
-    content: "Super qualité des logos, exactement ce que je cherchais pour mes créations ! Le classement par pays est très pratique.",
+    content: "Très satisfait, tous les logos de football sont super bien organisés, ça fait plaisir à avoir.",
     rating: 5
   },
   {

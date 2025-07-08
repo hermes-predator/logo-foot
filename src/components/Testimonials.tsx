@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
 import {
@@ -89,7 +88,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Enzo D.",
     role: "Non renseigné",
-    content: "Interface super claire et logos de très bonne qualité. Parfait pour mes projets créatifs !",
+    content: "Très bon service, c'est vraiment super bien servi en logo de foot ^^.",
     rating: 5
   }
 ];

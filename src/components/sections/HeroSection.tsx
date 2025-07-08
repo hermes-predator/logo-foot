@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Crown, Folder, ShieldCheck, Lock, CheckCircle2, Download, Sparkles, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,11 +6,9 @@ import PackDescription from './PackDescription';
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
-
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
-
 const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToPayment
 }) => {
@@ -105,7 +102,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Main title - Amélioré */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">Logo des clubs de football</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-br from-purple-900 via-purple-700 to-indigo-800 bg-clip-text text-transparent px-4 py-2 drop-shadow-sm">Logos des clubs de football</h1>
 
         {/* Subtitle - Amélioré */}
         <h2 className="text-2xl md:text-3xl font-extrabold text-gray-700 italic mt-5">
@@ -167,8 +164,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button onClick={() => {
-                        window.location.href = '/payment';
-                      }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
+                      window.location.href = '/payment';
+                    }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
                         <Download className="h-3.5 w-3.5" />
                         <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
                       </Button>
@@ -189,8 +186,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Tooltip>
             <TooltipTrigger asChild>
               <Button variant="default" size="lg" onClick={() => {
-                window.location.href = '/payment';
-              }} className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-12 py-6 h-auto relative group overflow-hidden">
+              window.location.href = '/payment';
+            }} className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all duration-300 text-[22px] gap-5 hover:-translate-y-0.5 px-12 py-6 h-auto relative group overflow-hidden">
                 {/* Outer glow animation - Améliorée */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/30 via-yellow-300/30 to-amber-400/30 rounded-md blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300" style={{
                 animation: 'pulse 2s ease-in-out infinite'
@@ -248,5 +245,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
     </section>;
 };
-
 export default HeroSection;

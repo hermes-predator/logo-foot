@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
 import {
@@ -64,7 +65,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Nicolas P.",
     role: "Freelance",
-    content: "Excellent pour le prix. Je suis satisfait. Merci !",
+    content: "Logo foot m'a parfaitement aidé à trouver l'ensemble des logos des clubs de football. Merci encore.",
     rating: 5
   },
   {

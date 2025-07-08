@@ -85,6 +85,12 @@ const testimonials: Testimonial[] = [
     role: "Non renseigné",
     content: "Excellent pour le prix. Je suis satisfait. Merci Logo foot!",
     rating: 5
+  },
+  {
+    name: "Julien M.",
+    role: "Designer",
+    content: "Interface super claire et logos de très bonne qualité. Parfait pour mes projets créatifs !",
+    rating: 5
   }
 ];
 

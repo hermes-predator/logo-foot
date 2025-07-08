@@ -58,7 +58,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Antoine R.",
-    role: "Graphiste",
+    role: "Non renseigné",
     content: "Super qualité des logos, exactement ce que je cherchais pour mes créations ! Le classement par pays est très pratique.",
     rating: 5
   },

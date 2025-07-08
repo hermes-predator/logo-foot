@@ -89,7 +89,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Enzo D.",
     role: "Non renseigné",
-    content: "Très bien, c'est vraiment super bien servi en logo de foot ^^.",
+    content: "Super bien, c'est vraiment super bien servi en logos de foot ^^. On se rend mieux compte en vrai.",
     rating: 5
   }
 ];

@@ -47,35 +47,35 @@ const ContactForm = ({
       {/* Deuxième container : informations commande + RGPD */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
         {/* Section informations commande */}
-        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 pt-6 rounded-t-xl">
-          <p className="text-gray-800 font-bold mb-4 text-lg italic ml-4">Vous êtes déjà client ? Veuillez inclure vos informations :</p>
+        <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 rounded-t-xl">
+          <p className="text-gray-800 font-medium mb-3 text-base">Déjà client ? Merci d'inclure :</p>
           
-          <div className="space-y-2 ml-1">
-            <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <User className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-base">Votre nom et prénom</span>
+              <span className="font-medium text-gray-700 text-sm">Nom et prénom</span>
             </div>
             
-            <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <Clock className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-base">La date et l'heure d'achat</span>
+              <span className="font-medium text-gray-700 text-sm">Date et heure d'achat</span>
             </div>
             
-            <div className="flex items-center gap-2.5 p-2.5 rounded-md hover:bg-white/80 transition-colors group">
-              <div className="bg-transparent p-2 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
-                <Ticket className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
+              <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
+                <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-base">Votre preuve d'achat (reçu)</span>
+              <span className="font-medium text-gray-700 text-sm">Preuve d'achat (reçu)</span>
             </div>
           </div>
         </div>
         
         {/* Section RGPD intégrée */}
-        <div className="p-5 bg-gradient-to-r from-gray-50 to-white rounded-b-xl">
+        <div className="p-4 bg-gradient-to-r from-gray-50 to-white rounded-b-xl">
           <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-relaxed">
             <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
             <span>

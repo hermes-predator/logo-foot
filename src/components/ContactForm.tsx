@@ -42,25 +42,23 @@ const ContactForm = ({
           
           {/* Email de contact avec bouton copier */}
           <div className="text-center mb-3">
-            <div className="flex items-center gap-3 justify-center">
+            <div className="flex items-center gap-2 justify-center group">
               <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
                 {email}
               </a>
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button
-                      variant="outline"
-                      size="sm"
+                    <button
                       onClick={copyEmail}
-                      className="h-8 px-2 transition-all duration-200"
+                      className="ml-1 p-1.5 rounded-full hover:bg-blue-50 transition-all duration-200 opacity-60 hover:opacity-100 group-hover:opacity-100"
                     >
                       {copied ? (
                         <Check className="w-4 h-4 text-green-600" />
                       ) : (
-                        <Copy className="w-4 h-4" />
+                        <Copy className="w-4 h-4 text-blue-600" />
                       )}
-                    </Button>
+                    </button>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>{copied ? "Email copié !" : "Copier l'email"}</p>

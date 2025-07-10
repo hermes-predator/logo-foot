@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail, Copy, Check } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
@@ -16,6 +17,11 @@ const ContactForm = ({
   const [copied, setCopied] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
   const email = "contact@logo-foot.com";
+
+  // S'assurer que le tooltip est fermé au montage du composant
+  useEffect(() => {
+    setTooltipOpen(false);
+  }, []);
 
   const copyEmail = async () => {
     try {

@@ -16,12 +16,14 @@ const ContactForm = ({
   onClose
 }: ContactFormProps) => {
   const [copied, setCopied] = useState(false);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
   const email = "contact@logo-foot.com";
 
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
+      setTooltipOpen(false); // Fermer le tooltip lors du clic
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('Failed to copy email:', err);
@@ -49,10 +51,12 @@ const ContactForm = ({
                 {email}
               </a>
               <TooltipProvider>
-                <Tooltip>
+                <Tooltip open={tooltipOpen} onOpenChange={setTooltipOpen}>
                   <TooltipTrigger asChild>
                     <button
                       onClick={copyEmail}
+                      onMouseEnter={() => setTooltipOpen(true)}
+                      onMouseLeave={() => setTooltipOpen(false)}
                       className="ml-1 p-1.5 rounded-md bg-gray-100 hover:bg-blue-50 transition-all duration-200 opacity-70 hover:opacity-100 group-hover:opacity-100"
                     >
                       {copied ? (

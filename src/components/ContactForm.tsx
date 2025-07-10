@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail, Copy, Check } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import FAQDialog from './footer/FAQDialog';
 
 interface ContactFormProps {
@@ -46,18 +46,27 @@ const ContactForm = ({
               <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
                 {email}
               </a>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={copyEmail}
-                className="h-8 px-2 transition-all duration-200"
-              >
-                {copied ? (
-                  <Check className="w-4 h-4 text-green-600" />
-                ) : (
-                  <Copy className="w-4 h-4" />
-                )}
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={copyEmail}
+                      className="h-8 px-2 transition-all duration-200"
+                    >
+                      {copied ? (
+                        <Check className="w-4 h-4 text-green-600" />
+                      ) : (
+                        <Copy className="w-4 h-4" />
+                      )}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{copied ? "Email copié !" : "Copier l'email"}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
           

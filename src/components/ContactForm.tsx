@@ -48,28 +48,28 @@ const ContactForm = ({
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
         {/* Section informations commande */}
         <div className="bg-gradient-to-r from-blue-50 to-gray-100 p-4 rounded-t-xl">
-          <p className="text-gray-800 font-medium mb-3 text-base">Déjà client ? Merci d'inclure :</p>
+          <p className="text-gray-800 font-medium mb-3 text-base">Vous êtes déjà client ? Veuillez inclure vos informations :</p>
           
           <div className="space-y-1.5">
             <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
                 <User className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">Nom et prénom</span>
+              <span className="font-medium text-gray-700 text-sm">Votre nom et prénom</span>
             </div>
             
             <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
                 <Clock className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">Date et heure d'achat</span>
+              <span className="font-medium text-gray-700 text-sm">La date et l'heure d'achat</span>
             </div>
             
             <div className="flex items-center gap-2 p-2 rounded-md hover:bg-white/80 transition-colors group">
               <div className="bg-transparent p-1.5 rounded-md group-hover:bg-blue-100/30 transition-colors border border-gray-200 shadow-sm">
                 <Ticket className="w-4 h-4 text-gray-700 group-hover:text-blue-600 transition-colors" />
               </div>
-              <span className="font-medium text-gray-700 text-sm">Preuve d'achat (reçu)</span>
+              <span className="font-medium text-gray-700 text-sm">Votre preuve d'achat (reçu)</span>
             </div>
           </div>
         </div>

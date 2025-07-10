@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail, Copy, Check } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
@@ -51,7 +52,7 @@ const ContactForm = ({
                   <TooltipTrigger asChild>
                     <button
                       onClick={copyEmail}
-                      className="ml-1 p-1.5 rounded-full hover:bg-blue-50 transition-all duration-200 opacity-60 hover:opacity-100 group-hover:opacity-100"
+                      className="ml-1 p-1.5 rounded-md hover:bg-blue-50 transition-all duration-200 opacity-60 hover:opacity-100 group-hover:opacity-100"
                     >
                       {copied ? (
                         <Check className="w-4 h-4 text-green-600" />

@@ -1,8 +1,9 @@
 
-import React from 'react';
-import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
+import React, { useState } from 'react';
+import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail, Copy, Check } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import FAQDialog from './footer/FAQDialog';
 
 interface ContactFormProps {
@@ -12,6 +13,19 @@ interface ContactFormProps {
 const ContactForm = ({
   onClose
 }: ContactFormProps) => {
+  const [copied, setCopied] = useState(false);
+  const email = "contact@logo-foot.com";
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
+  };
+
   return <div className="space-y-4">
       {/* Premier container : email de contact */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 transition-all duration-300">
@@ -26,12 +40,24 @@ const ContactForm = ({
           {/* Séparateur décoratif */}
           <Separator className="w-12 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
           
-          {/* Email de contact */}
+          {/* Email de contact avec bouton copier */}
           <div className="text-center mb-3">
-            <div className="text-gray-700 text-xl font-semibold">
-              <a href="mailto:contact@logo-foot.com" className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
-                contact@logo-foot.com
+            <div className="flex items-center gap-3 justify-center">
+              <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
+                {email}
               </a>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={copyEmail}
+                className="h-8 px-2 transition-all duration-200"
+              >
+                {copied ? (
+                  <Check className="w-4 h-4 text-green-600" />
+                ) : (
+                  <Copy className="w-4 h-4" />
+                )}
+              </Button>
             </div>
           </div>
           

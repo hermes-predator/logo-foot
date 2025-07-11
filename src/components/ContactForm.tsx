@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail, Copy, Check } from 'lucide-react';
+import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import FAQDialog from './footer/FAQDialog';
 
 interface ContactFormProps {
@@ -13,25 +12,7 @@ interface ContactFormProps {
 const ContactForm = ({
   onClose
 }: ContactFormProps) => {
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
   const email = "contact@logo-foot.com";
-
-  // S'assurer que le tooltip est fermé au montage du composant
-  useEffect(() => {
-    setTooltipOpen(false);
-  }, []);
-
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(email);
-      setCopied(true);
-      setTooltipOpen(false); // Fermer le tooltip lors du clic
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy email:', err);
-    }
-  };
 
   return <div className="space-y-4">
       {/* Premier container : email de contact */}
@@ -47,34 +28,11 @@ const ContactForm = ({
           {/* Séparateur décoratif */}
           <Separator className="w-12 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-3" />
           
-          {/* Email de contact avec bouton copier */}
+          {/* Email de contact */}
           <div className="text-center mb-3">
-            <div className="flex items-center gap-2 justify-center group">
-              <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
-                {email}
-              </a>
-              <TooltipProvider>
-                <Tooltip open={tooltipOpen} onOpenChange={setTooltipOpen}>
-                  <TooltipTrigger asChild>
-                    <button
-                      onClick={copyEmail}
-                      onMouseEnter={() => !copied && setTooltipOpen(true)}
-                      onMouseLeave={() => setTooltipOpen(false)}
-                      className="ml-1 p-1.5 rounded-md bg-gray-100 hover:bg-blue-50 transition-all duration-200 opacity-70 hover:opacity-100 group-hover:opacity-100"
-                    >
-                      {copied ? (
-                        <Check className="w-4 h-4 text-green-600" />
-                      ) : (
-                        <Copy className="w-4 h-4 text-blue-600" />
-                      )}
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{copied ? "Email copié !" : "Copier l'email"}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </div>
+            <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
+              {email}
+            </a>
           </div>
           
           {/* Note FAQ avec lien */}

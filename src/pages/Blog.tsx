@@ -44,20 +44,7 @@ const Blog = () => {
     paginatedItems 
   } = usePagination(posts, POSTS_PER_PAGE);
 
-  // Force update du titre de la page lors du changement de route
-  useEffect(() => {
-    const title = categoryParam 
-      ? `Blog ${categoryParam} - Logo Foot`
-      : 'Blog - Logo Foot';
-    
-    document.title = title;
-    
-    // Force un re-render de Helmet
-    const helmet = document.querySelector('title');
-    if (helmet && helmet.textContent !== title) {
-      helmet.textContent = title;
-    }
-  }, [location.pathname, categoryParam]);
+  // Laisser react-helmet-async gérer le titre automatiquement
 
   useEffect(() => {
     if (isCategoryChange && categorySectionRef.current) {

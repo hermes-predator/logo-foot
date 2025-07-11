@@ -10,31 +10,17 @@ const MetaTagsManager = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Forcer la mise à jour des meta tags lors du changement de route
-    const updateMetaTags = () => {
-      // Nettoyer les anciens meta tags dynamiques
-      const existingMetas = document.querySelectorAll('meta[data-react-helmet]');
-      existingMetas.forEach(meta => {
-        if (meta.getAttribute('name') === 'description' || 
-            meta.getAttribute('property') === 'og:title' ||
-            meta.getAttribute('property') === 'og:description' ||
-            meta.getAttribute('name') === 'twitter:title' ||
-            meta.getAttribute('name') === 'twitter:description') {
-          // Ne pas supprimer, laisser react-helmet-async gérer
+    // Forcer la mise à jour du titre lors du changement de route
+    const timer = setTimeout(() => {
+      // Vérifier si on est sur la page d'accueil
+      if (location.pathname === '/') {
+        const titleElement = document.querySelector('title');
+        if (titleElement && titleElement.textContent !== 'Logo Foot - Collection de Logos de Football') {
+          // Forcer le titre de la page d'accueil
+          document.title = 'Logo Foot - Collection de Logos de Football';
         }
-      });
-
-      // Forcer un re-render des meta tags
-      const titleElement = document.querySelector('title');
-      if (titleElement && titleElement.getAttribute('data-react-helmet') === 'true') {
-        // Trigger une mise à jour
-        const event = new Event('helmet-update');
-        document.dispatchEvent(event);
       }
-    };
-
-    // Petit délai pour s'assurer que les composants sont montés
-    const timer = setTimeout(updateMetaTags, 100);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);

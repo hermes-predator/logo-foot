@@ -239,6 +239,13 @@ const Payment = () => {
                 </div>
               </div>
 
+              {/* Information de téléchargement */}
+              <div className="text-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200">
+                <p className="text-sm text-gray-600">
+                  📥 Le lien de téléchargement vous sera envoyé après confirmation du paiement
+                </p>
+              </div>
+
               {/* État de chargement */}
               {isCreatingCheckout && (
                 <div className="flex items-center justify-center py-8">

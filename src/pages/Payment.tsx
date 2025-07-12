@@ -240,9 +240,9 @@ const Payment = () => {
               </div>
 
               {/* Information de téléchargement */}
-              <div className="text-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200">
+              <div className="text-center py-3 px-4 bg-gray-50 rounded-lg">
                 <p className="text-sm text-gray-600">
-                  📥 Le lien de téléchargement vous sera envoyé après confirmation du paiement
+                  Le lien de téléchargement vous sera envoyé après confirmation du paiement
                 </p>
               </div>
 

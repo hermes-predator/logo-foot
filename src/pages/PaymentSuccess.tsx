@@ -32,7 +32,7 @@ const PaymentSuccess = () => {
     const verifyPayment = async () => {
       if (!checkoutId) {
         setPaymentStatus('invalid');
-        setError('Aucun identifiant de paiement trouvé dans l\'URL.');
+        setError('Identifiant de transaction manquant.');
         return;
       }
 
@@ -64,19 +64,19 @@ const PaymentSuccess = () => {
           setPaymentStatus('success');
         } else if (data.status === 'PENDING') {
           setPaymentStatus('loading');
-          setError('Paiement en cours de traitement. Actualisation automatique dans 5 secondes...');
+          setError('Transaction en cours. Vérification dans 5 secondes...');
           setTimeout(() => {
             window.location.reload();
           }, 5000);
         } else {
           setPaymentStatus('failed');
-          setError(`Paiement ${data.status.toLowerCase()}. Veuillez réessayer.`);
+          setError('Transaction non validée.');
         }
 
       } catch (error) {
         console.error('Erreur lors de la vérification du paiement:', error);
         setPaymentStatus('failed');
-        setError('Impossible de vérifier le paiement. Veuillez contacter le support.');
+        setError('Erreur de vérification. Contactez le support.');
       }
     };
 

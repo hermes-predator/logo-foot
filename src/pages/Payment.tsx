@@ -201,7 +201,7 @@ const Payment = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="flex-grow py-4 px-4">
+      <div className="flex-grow py-6 px-4">
         <div className="container mx-auto max-w-2xl">
           {/* Bouton retour */}
           <Button variant="ghost" onClick={() => navigate('/')} className="mb-4 text-gray-600 hover:text-gray-800 hover:bg-white">

@@ -15,9 +15,9 @@ const MetaTagsManager = () => {
       // Vérifier si on est sur la page d'accueil
       if (location.pathname === '/') {
         const titleElement = document.querySelector('title');
-        if (titleElement && titleElement.textContent !== 'Logo Foot | Fichier de +8600 Logo des Clubs de Foot') {
+        if (titleElement && titleElement.textContent !== 'Logo Foot | Fichier +8600 Logos des Clubs de Football') {
           // Forcer le titre de la page d'accueil
-          document.title = 'Logo Foot | Fichier de +8600 Logo des Clubs de Foot';
+          document.title = 'Logo Foot | Fichier +8600 Logos des Clubs de Football';
         }
       }
     }, 200);

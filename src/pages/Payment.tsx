@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, Loader2, CreditCard, Folder } from 'lucide-react';
+import { ArrowLeft, Loader2, CreditCard, Folder, Info } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
@@ -240,7 +240,8 @@ const Payment = () => {
               </div>
 
               {/* Information de téléchargement */}
-              <div className="text-center py-3 px-4 bg-gray-50 rounded-lg">
+              <div className="flex items-center justify-center gap-2 py-3 px-4 bg-gray-50 rounded-lg">
+                <Info className="w-4 h-4 text-gray-500" />
                 <p className="text-sm text-gray-600">
                   Le lien de téléchargement sera disponible après la confirmation du paiement
                 </p>

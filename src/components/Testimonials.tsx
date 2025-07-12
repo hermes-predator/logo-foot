@@ -98,17 +98,27 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [autoplay, setAutoplay] = useState<boolean>(true);
   const [api, setApi] = useState<CarouselApi>();
-  const autoplayInterval = 5000;
+  const autoplayInterval = 4000; // Réduit l'intervalle pour plus de dynamisme
 
+  // Effet pour gérer l'autoplay avec le carousel
   useEffect(() => {
-    if (!autoplay) return;
+    if (!api || !autoplay) return;
 
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
+      api.scrollNext();
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [autoplay]);
+  }, [api, autoplay]);
+
+  // Synchroniser activeIndex avec le carousel
+  useEffect(() => {
+    if (!api) return;
+
+    api.on("select", () => {
+      setActiveIndex(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   const pauseAutoplay = useCallback(() => setAutoplay(false), []);
   const resumeAutoplay = useCallback(() => setAutoplay(true), []);

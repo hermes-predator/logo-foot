@@ -57,6 +57,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Lucas M.",
+    role: "Designer",
+    content: "Exactement ce que je cherchais ! Tous les logos sont en haute qualité et bien organisés par pays.",
+    rating: 5
+  },
+  {
     name: "Emma L.",
     role: "Freelance",
     content: "Tout est parfait, merci :)",

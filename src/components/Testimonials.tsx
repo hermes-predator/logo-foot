@@ -45,6 +45,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Maxime L.",
+    role: "Graphiste",
+    content: "Parfait pour mes créations ! La qualité des logos est top et tout est bien classé. Je recommande vivement.",
+    rating: 5
+  },
+  {
     name: "Alex G.",
     role: "Community Manager",
     content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",

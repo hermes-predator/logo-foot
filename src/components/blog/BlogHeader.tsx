@@ -133,7 +133,16 @@ const BlogHeader = () => {
                 {/* Ligne de séparation subtile */}
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent"></div>
                 
-                <div className="group hover:bg-[rgba(50,48,46,0.6)] transition-all duration-300">
+                <div 
+                  className="group transition-all duration-300" 
+                  style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(70, 68, 66, 0.8)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(50, 48, 46, 0.6)';
+                  }}
+                >
                   <JudgeMeBadge />
                 </div>
               </div>

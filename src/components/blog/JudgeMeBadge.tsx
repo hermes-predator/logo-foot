@@ -19,7 +19,7 @@ const JudgeMeBadge = () => {
       href="https://judge.me/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="flex items-center gap-4 px-4 py-2 pb-3 w-full cursor-pointer rounded-b-lg"
+      className="group flex items-center gap-4 px-4 py-2 pb-3 w-full cursor-pointer rounded-b-lg transition-all duration-300"
       style={{ backgroundColor: 'transparent' }}
     >
       {/* Logo Judge.me légèrement à droite */}
@@ -43,7 +43,7 @@ const JudgeMeBadge = () => {
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
             <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
           </div>
-          <span className="text-gray-400 hover:text-white font-bold px-1.5 py-1 rounded text-sm transition-all duration-300 hover:shadow-lg hover:backdrop-blur-sm hover:bg-green-500/20">4.9/5</span>
+          <span className="text-gray-400 group-hover:text-white font-bold px-1.5 py-1 rounded text-sm transition-all duration-300 group-hover:shadow-lg group-hover:backdrop-blur-sm group-hover:bg-green-500/20">4.9/5</span>
         </div>
         
         {/* Deuxième ligne : Nombre de téléchargements */}

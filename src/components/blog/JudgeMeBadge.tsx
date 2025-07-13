@@ -43,7 +43,7 @@ const JudgeMeBadge = () => {
               <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
               <Star className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-sm" />
             </div>
-            <span className="text-gray-400 group-hover:text-white group-hover:bg-green-500/20 font-bold px-1.5 py-1 rounded text-sm transition-all duration-300 group-hover:shadow-lg group-hover:backdrop-blur-sm">
+            <span className="text-gray-400 group-hover:text-white font-bold px-1.5 py-1 rounded text-sm transition-colors duration-300">
               4.9/5
             </span>
           </div>

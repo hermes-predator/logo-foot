@@ -133,7 +133,7 @@ const BlogHeader = () => {
                 {/* Ligne de séparation subtile */}
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent"></div>
                 
-                <div style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}>
+                <div className="group hover:bg-[rgba(50,48,46,0.6)] transition-all duration-300">
                   <JudgeMeBadge />
                 </div>
               </div>

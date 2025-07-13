@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Florent P.",
     role: "Non renseigné",
-    content: "Le pack est très complet. J'ai pu l'ajouter sur mon Drive Google. Très satisfait.",
+    content: "Le dossier est très complet. Je recommande vivement.",
     rating: 5
   },
   {

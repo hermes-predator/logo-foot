@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Maxime L.",
     role: "Graphiste",
-    content: "Parfait pour mes créations ! La qualité des logos est top et tout est bien classé. Je recommande vivement.",
+    content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
     rating: 5
   },
   {

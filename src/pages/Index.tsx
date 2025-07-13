@@ -164,11 +164,11 @@ const Index = () => {
             />
           </div>
           
-          <div className="pt-2">
+          <div className="pt-2 pb-8">
             <ProductGallery />
           </div>
           
-          <div id="payment-section">
+          <div id="payment-section" className="pt-8">
             <Suspense fallback={<Skeleton className="w-full h-[500px] rounded-lg" />}>
               <LazyPaymentSection />
             </Suspense>

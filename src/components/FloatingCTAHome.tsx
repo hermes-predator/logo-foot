@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ShoppingCart, X } from 'lucide-react';
-import { useFloatingCTA } from '@/hooks/useFloatingCTA';
 import { Button } from '@/components/ui/button';
 
 interface FloatingCTAHomeProps {
@@ -8,53 +7,43 @@ interface FloatingCTAHomeProps {
 }
 
 const FloatingCTAHome = ({ onScrollToPayment }: FloatingCTAHomeProps) => {
-  const { visible, dismissed, isAtBottom, scrollProgress, handleDismiss } = useFloatingCTA();
+  const [dismissed, setDismissed] = useState(false);
 
   if (dismissed) return null;
 
-  // Calcul du glissement progressif
-  const translateY = isAtBottom ? (1 - scrollProgress) * 100 : 100;
+  const handleDismiss = () => {
+    setDismissed(true);
+  };
 
   return (
-    <div 
-      className="fixed bottom-0 left-0 right-0 z-50"
-      style={{
-        transform: `translateY(${translateY}%)`,
-        transition: 'transform 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-      }}
-    >
-      <div className="relative overflow-hidden bg-primary">
-        <div className="relative z-10 py-3 px-4 border-t-2 border-white/20">
-          <div className="container mx-auto flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <ShoppingCart className="h-5 w-5 text-white" />
-                <div className="text-white">
-                  <p className="font-semibold text-sm">Plus de 8600 logos disponibles</p>
-                  <p className="text-xs opacity-90">Obtenez votre collection complète maintenant</p>
-                </div>
+    <div className="fixed bottom-6 right-6 z-50">
+      <div className="bg-primary rounded-lg shadow-lg border border-white/20 overflow-hidden max-w-xs">
+        <div className="p-3">
+          <div className="flex items-start justify-between mb-2">
+            <div className="flex items-center space-x-2">
+              <ShoppingCart className="h-4 w-4 text-white flex-shrink-0" />
+              <div className="text-white">
+                <p className="font-semibold text-xs">8600+ logos</p>
               </div>
             </div>
             
-            <div className="flex items-center space-x-2">
-              <Button 
-                onClick={onScrollToPayment}
-                variant="secondary"
-                size="sm"
-                className="bg-white hover:bg-gray-100 text-primary font-semibold"
-              >
-                Acheter maintenant
-              </Button>
-              
-              <button
-                onClick={handleDismiss}
-                className="p-1 rounded-full hover:bg-white/20 transition-colors"
-                aria-label="Fermer"
-              >
-                <X className="h-4 w-4 text-white" />
-              </button>
-            </div>
+            <button
+              onClick={handleDismiss}
+              className="p-1 rounded-full hover:bg-white/20 transition-colors ml-2"
+              aria-label="Fermer"
+            >
+              <X className="h-3 w-3 text-white" />
+            </button>
           </div>
+          
+          <Button 
+            onClick={onScrollToPayment}
+            variant="secondary"
+            size="sm"
+            className="bg-white hover:bg-gray-100 text-primary font-semibold text-xs w-full"
+          >
+            Voir l'offre
+          </Button>
         </div>
       </div>
     </div>

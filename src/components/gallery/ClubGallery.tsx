@@ -20,7 +20,7 @@ interface ClubGalleryProps {
   isLoading: boolean;
 }
 
-const ITEMS_PER_PAGE = 40;
+const ITEMS_PER_PAGE = 36;
 
 const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -87,6 +87,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Sophie R.",
+    role: "Non renseigné",
+    content: "Excellent service, livraison rapide et fichier de qualité. Je recommande !",
+    rating: 5
+  },
+  {
     name: "Nicolas P.",
     role: "Freelance",
     content: "Logo foot m'a parfaitement aidé à trouver l'ensemble des logos des clubs de football. Merci encore.",

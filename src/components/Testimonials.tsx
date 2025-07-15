@@ -89,7 +89,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Sophie R.",
     role: "Non renseigné",
-    content: "Excellent service, livraison rapide et fichier de qualité. Je recommande !",
+    content: "Très bonne solution pour les logos club de foot",
     rating: 5
   },
   {

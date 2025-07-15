@@ -89,7 +89,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Julien R.",
     role: "Non renseigné",
-    content: "Très bonne solution pour les logos club de foot",
+    content: "Très bonne solution pour les logos club de foot.",
     rating: 5
   },
   {

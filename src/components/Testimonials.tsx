@@ -57,6 +57,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Mathieu K.",
+    role: "Développeur web",
+    content: "Parfait pour mes projets clients ! Qualité au top et livraison instantanée.",
+    rating: 5
+  },
+  {
     name: "Lucas M.",
     role: "Non renseigné",
     content: "Tout s'est bien passé, la collection de logo des clubs de foot est super bien organisé.",

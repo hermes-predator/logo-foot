@@ -63,6 +63,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Kevin T.",
+    role: "Non renseigné",
+    content: "Super pratique, tous les logos sont bien classés et de bonne qualité.",
+    rating: 5
+  },
+  {
     name: "Lucas M.",
     role: "Non renseigné",
     content: "Tout s'est bien passé, la collection de logo des clubs de foot est super bien organisé.",

@@ -6,7 +6,7 @@ import ProductGallery from '../components/ProductGallery';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
-import FloatingCTAHome from '../components/FloatingCTAHome';
+
 
 // Lazy load components that aren't needed for initial render
 const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSection'));
@@ -181,7 +181,7 @@ const Index = () => {
         </Suspense>
       </main>
       <Footer />
-      <FloatingCTAHome onScrollToPayment={scrollToPayment} />
+      
     </div>
   );
 };

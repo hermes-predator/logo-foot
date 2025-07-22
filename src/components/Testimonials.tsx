@@ -99,9 +99,9 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Marine F.",
+    name: "Sébastien M.",
     role: "Non renseigné",
-    content: "Téléchargement instantané, fichiers de qualité. Très recommandé !",
+    content: "Exactement ce que je cherchais, fichier bien structuré et complet.",
     rating: 5
   },
   {

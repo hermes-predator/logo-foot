@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { AlertTriangle, Info, Check, Folder } from "lucide-react";
@@ -17,9 +16,7 @@ const DisclaimerDialog = () => {
         }}>
             Disclaimer
           </DialogTitle>
-          <DialogDescription>
-            Clause de non-responsabilité concernant les ressources proposées dans notre collection.
-          </DialogDescription>
+          <DialogDescription>A propos du produit fourni par Logo-foot.com</DialogDescription>
         </DialogHeader>
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-200/50 bg-white rounded-xl shadow-sm">
@@ -42,7 +39,7 @@ const DisclaimerDialog = () => {
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p className="text-sm leading-relaxed text-gray-700">
-                  Ce fichier permet de rendre service aux internautes en regroupant, organisant et rendant accessibles des ressources éparses du football à des fins de consultation ou de création personnelle.
+                  Ce fichier permet d'aider les internautes en regroupant, organisant et rendant accessibles des ressources éparses à des fins de consultation ou de création personnelle.
                 </p>
                 
                 <div className="space-y-3 pt-4 border-t border-gray-200/50">

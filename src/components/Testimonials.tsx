@@ -87,6 +87,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Sophie M.",
+    role: "Graphiste",
+    content: "Collection complète et bien organisée, parfait pour mes projets créatifs.",
+    rating: 5
+  },
+  {
     name: "Damien L.",
     role: "Non renseigné",
     content: "Le fichier correspond à mes attentes. Son organisation globale est très bien réalisé.",

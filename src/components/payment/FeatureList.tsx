@@ -38,7 +38,7 @@ const FeatureList = () => {
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Accédez instantanément à tous les logos sans recherche fastidieuse"
+      description: "Accédez instantanément à tous les logos sans recherche fastidieuse."
     },
     {
       icon: Star,

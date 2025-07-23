@@ -108,7 +108,7 @@ const testimonials: Testimonial[] = [
     name: "Thomas D.",
     role: "Non renseigné",
     content: "Heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
-    rating: 5
+    rating: 4
   },
   {
     name: "Julien R.",
@@ -132,7 +132,7 @@ const testimonials: Testimonial[] = [
     name: "Sylvain B.",
     role: "Non renseigné",
     content: "Excellent pour le prix. Je suis satisfait. Merci Logo foot!",
-    rating: 4
+    rating: 5
   },
   {
     name: "Enzo D.",

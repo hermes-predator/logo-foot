@@ -88,7 +88,7 @@ const Blog = () => {
     <div className="bg-gray-50 min-h-screen">
       <Helmet>
         <title>{pageTitle}</title>
-        <meta name="description" content="Découvrez les logos des clubs de football du monde entier" />
+        <meta name="description" content="Explorez notre blog dédié aux logos des clubs de football. Recevez un fichier de + 8600 logos parfaitement organisé par pays." />
         <meta name="keywords" content="logo foot, logo football, écussons foot, club foot, logo équipe foot" />
         <script type="application/ld+json">
           {JSON.stringify(BlogListSchema({ post: posts[0] }))}

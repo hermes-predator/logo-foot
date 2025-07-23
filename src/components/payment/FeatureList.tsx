@@ -71,7 +71,7 @@ const FeatureList = () => {
     {
       icon: Heart,
       text: "Prix accessible",
-      description: "Un tarif simple afin d'offrir l'accès à cette ressource à un prix abordable (partage)."
+      description: "Un tarif simple permettant l'accès à cette ressource à un prix abordable (partage)."
     },
     {
       icon: Plus,

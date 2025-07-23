@@ -108,7 +108,12 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
                     dans un délai de 48h.
                   </AccordionContent>
                 </AccordionItem>
-              </Accordion>
+            </Accordion>
+            </div>
+            <div className="mt-6 pt-4 border-t border-gray-100">
+              <p className="text-xs text-gray-500 text-center">
+                © 2025 Logo-foot.com - Tous droits réservés
+              </p>
             </div>
           </DialogContent>
         </Dialog>
@@ -183,8 +188,13 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-        </div>
-      </DialogContent>
+          </div>
+          <div className="mt-6 pt-4 border-t border-gray-100">
+            <p className="text-xs text-gray-500 text-center">
+              © 2025 Logo-foot.com - Tous droits réservés
+            </p>
+          </div>
+        </DialogContent>
     </Dialog>
   );
 };

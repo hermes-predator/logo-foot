@@ -45,7 +45,7 @@ const FeatureList = () => {
       text: "Fichier unique sur le marché",
       className: "bg-blue-100",
       iconColor: "text-blue-600",
-      description: "Un fichier trouvable nulle part ailleurs. Vous pouvez le recevoir aujourd'hui"
+      description: "Un fichier trouvable nulle part ailleurs et une valeur incomparable à votre actif."
     },
     {
       icon: Plus,

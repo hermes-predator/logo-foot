@@ -16,7 +16,7 @@ const DisclaimerDialog = () => {
         }}>
             Disclaimer
           </DialogTitle>
-          <DialogDescription>Logo-foot.com : A propos de notre produit</DialogDescription>
+          <DialogDescription>A propos du produit fourni par Logo-foot.com</DialogDescription>
         </DialogHeader>
         <div className="space-y-6">
           <div className="mt-4 p-5 border border-gray-200/50 bg-white rounded-xl shadow-sm">

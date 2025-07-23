@@ -82,7 +82,7 @@ const Blog = () => {
   // Titre dynamique basé sur la catégorie
   const pageTitle = categoryParam 
     ? `Blog ${categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1)} - Logo Foot`
-    : 'Blog - Logo Foot';
+    : 'Logo Foot | Blog sur les Logos de Clubs de Football';
 
   const content = (
     <div className="bg-gray-50 min-h-screen">

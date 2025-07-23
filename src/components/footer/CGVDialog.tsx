@@ -108,6 +108,11 @@ const CGVDialog = () => {
             <p>Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut de résolution amiable, tout litige relatif à l'interprétation ou à l'exécution des présentes CGV sera de la compétence exclusive des tribunaux du ressort de Calais, France.</p>
           </section>
         </div>
+        <div className="mt-6 pt-4 border-t border-gray-100">
+          <p className="text-xs text-gray-500 text-center">
+            © 2025 Logo-foot.com - Tous droits réservés
+          </p>
+        </div>
       </DialogContent>
     </Dialog>
   );

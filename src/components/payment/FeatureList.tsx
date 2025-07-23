@@ -52,7 +52,7 @@ const FeatureList = () => {
       text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets"
+      description: "Boostez votre parcours personnel et gagnez en confiance pour vos projets."
     },
     {
       icon: BadgeCheck,
@@ -66,7 +66,7 @@ const FeatureList = () => {
       text: "Patrimoine numérique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Augmentez la valeur de votre patrimoine en stockant notre fichier spécialisé"
+      description: "Augmentez la valeur de votre patrimoine en stockant notre fichier spécialisé."
     },
     {
       icon: Heart,
@@ -78,7 +78,7 @@ const FeatureList = () => {
       text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Parfait pour les projets personnels spécialisés dans l'analyse sportive"
+      description: "Parfait pour les projets personnels spécialisés dans l'analyse sportive."
     }
   ];
 

@@ -92,7 +92,7 @@ const Payment = () => {
         },
         body: JSON.stringify({
           checkout_reference: `FC-${Date.now()}`,
-          amount: 9.00,
+          amount: 8.00,
           currency: 'EUR',
           description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football',
           merchant_code: 'MLMLFVAH',
@@ -127,7 +127,7 @@ const Payment = () => {
       sumupCardRef.current = window.SumUpCard.mount({
         id: 'sumup-card-widget',
         checkoutId: checkoutId,
-        amount: '9.00',
+        amount: '8.00',
         currency: 'EUR',
         locale: 'fr-FR',
         showSubmitButton: true,
@@ -235,7 +235,7 @@ const Payment = () => {
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>
-                  <span className="text-lg">9,00 €</span>
+                  <span className="text-lg">8,00 €</span>
                 </div>
               </div>
 

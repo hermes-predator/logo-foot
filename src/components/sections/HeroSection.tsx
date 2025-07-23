@@ -167,7 +167,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                       window.location.href = '/payment';
                     }} variant="outline" size="sm" className="h-8 bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-600 gap-1 mt-4">
                         <Download className="h-3.5 w-3.5" />
-                        <span className="text-xs font-medium">Télécharger ce fichier (9€)</span>
+                        <span className="text-xs font-medium">Télécharger ce fichier (8€)</span>
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
@@ -206,7 +206,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
                 
                 <span className="relative z-10 font-bold tracking-wide">
-                  Achat rapide ~ 9€
+                  Achat rapide ~ 8€
                 </span>
                 
                 {/* Shine effect - Amélioré */}

@@ -130,7 +130,7 @@ const PaymentSuccess = () => {
                   Paiement confirmé ! 🎉
                 </CardTitle>
                 <CardDescription className="text-lg">
-                  Votre paiement de {paymentData?.amount ? `${paymentData.amount}€` : '9€'} a été traité avec succès.
+                  Votre paiement de {paymentData?.amount ? `${paymentData.amount}€` : '8€'} a été traité avec succès.
                 </CardDescription>
               </CardHeader>
               
@@ -159,7 +159,7 @@ const PaymentSuccess = () => {
                 <ReceiptDownload 
                   purchaseDate={paymentData?.date ? new Date(paymentData.date) : new Date()}
                   productName="⦗FRONT-CLOUD⦘~ Football.zip"
-                  price={paymentData?.amount ? `${paymentData.amount},00 €` : "9,00 €"}
+                  price={paymentData?.amount ? `${paymentData.amount},00 €` : "8,00 €"}
                   orderNumber={checkoutId || `FC-${Date.now().toString().slice(-6)}`}
                 />
               </CardContent>

@@ -63,6 +63,11 @@ const MentionsLegalesDialog = () => {
             <p>En cas de litige, la législation française s'applique, une solution amiable sera recherchée avant toute action judiciaire. Le tribunal de commerce de Calais sera seul compétent en cas de litige non résolu à l'amiable.</p>
           </section>
         </div>
+        <div className="mt-6 pt-4 border-t border-gray-100">
+          <p className="text-xs text-gray-500 text-center">
+            © 2025 Logo-foot.com - Tous droits réservés
+          </p>
+        </div>
       </DialogContent>
     </Dialog>
   );

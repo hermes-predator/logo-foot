@@ -132,7 +132,7 @@ const testimonials: Testimonial[] = [
     name: "Sylvain B.",
     role: "Non renseigné",
     content: "Excellent pour le prix. Je suis satisfait. Merci Logo foot!",
-    rating: 5
+    rating: 4
   },
   {
     name: "Enzo D.",

@@ -61,7 +61,7 @@ const DisclaimerDialog = () => {
             </div>
           </div>
         </div>
-        <div className="mt-6 pt-4 border-t border-gray-100">
+        <div className="mt-6 pt-4">
           <p className="text-xs text-gray-500 text-center">
             © 2025 Logo-foot.com - Tous droits réservés
           </p>

@@ -110,7 +110,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
                 </AccordionItem>
             </Accordion>
             </div>
-            <div className="mt-6 pt-4 border-t border-gray-100">
+            <div className="mt-6">
               <p className="text-xs text-gray-500 text-center">
                 © 2025 Logo-foot.com - Tous droits réservés
               </p>
@@ -189,7 +189,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
             </AccordionItem>
           </Accordion>
           </div>
-          <div className="mt-6 pt-4 border-t border-gray-100">
+          <div className="mt-6">
             <p className="text-xs text-gray-500 text-center">
               © 2025 Logo-foot.com - Tous droits réservés
             </p>

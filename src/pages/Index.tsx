@@ -30,8 +30,30 @@ const Index = () => {
   // Meta description optimisée
   const metaDescription = "Recevez +8600 logo club de foot en un fichier parfaitement organisé par pays. Collection complète de logo des équipes de foot du monde entier.";
 
-  // Protection anti-copie au niveau de la page entière
+  // Protection anti-copie et test de synchronisation
   useEffect(() => {
+    // Test de synchronisation Supabase en arrière-plan
+    const testSync = async () => {
+      try {
+        const { blogPosts } = await import('../data/blog');
+        console.log(`🔄 Test sync: ${blogPosts.length} articles à synchroniser`);
+        
+        const response = await fetch('/api/sync-blog-posts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ blogPosts }),
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          console.log('✅ Sync réussie:', result.count, 'articles');
+        }
+      } catch (error) {
+        console.log('ℹ️ Sync sera disponible après déploiement');
+      }
+    };
+    
+    testSync();
     // Désactiver les combinaisons de touches courantes pour enregistrer/imprimer
     const handleKeyDown = (e: KeyboardEvent) => {
       if (

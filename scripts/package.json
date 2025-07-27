@@ -1,0 +1,11 @@
+{
+  "name": "logo-foot-scripts",
+  "scripts": {
+    "generate-sitemap": "node --loader tsx scripts/generate-sitemap.ts",
+    "build": "npm run generate-sitemap && vite build",
+    "build-production": "npm run generate-sitemap && vite build --mode production"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  }
+}

@@ -30,7 +30,7 @@ const ContactForm = ({
           
           {/* Email de contact */}
           <div className="text-center mb-3">
-            <a href={`mailto:${email}`} className="text-blue-600 hover:underline font-semibold transition-colors duration-300 text-2xl">
+            <a href={`mailto:${email}`} className="text-blue-600 underline hover:no-underline font-semibold transition-colors duration-300 text-2xl">
               {email}
             </a>
           </div>

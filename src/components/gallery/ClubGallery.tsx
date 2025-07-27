@@ -62,42 +62,77 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
         )}
       </div>
 
-      {/* Pagination */}
+      {/* Pagination avec indicateurs visuels améliorés */}
       {!isLoading && totalPages > 1 && (
-        <div className="flex justify-center mt-8">
-          <Pagination>
-            <PaginationContent>
-              {currentPage > 1 && (
-                <PaginationItem>
-                  <PaginationPrevious 
-                    onClick={() => setCurrentPage(currentPage - 1)}
-                    className="cursor-pointer"
-                  />
-                </PaginationItem>
-              )}
-              
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <PaginationItem key={page}>
-                  <PaginationLink
-                    isActive={page === currentPage}
-                    onClick={() => setCurrentPage(page)}
-                    className="cursor-pointer"
-                  >
-                    {page}
-                  </PaginationLink>
-                </PaginationItem>
-              ))}
-              
-              {currentPage < totalPages && (
-                <PaginationItem>
-                  <PaginationNext 
-                    onClick={() => setCurrentPage(currentPage + 1)}
-                    className="cursor-pointer"
-                  />
-                </PaginationItem>
-              )}
-            </PaginationContent>
-          </Pagination>
+        <div className="space-y-4">
+          {/* Indicateur de progression et statistiques */}
+          <div className="flex flex-col items-center space-y-2">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 px-6 py-3 rounded-full border border-primary/20">
+              <p className="text-sm font-medium text-primary">
+                <span className="font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="font-bold">{items.length} logos</span> disponibles
+              </p>
+            </div>
+            
+            {/* Barre de progression */}
+            <div className="w-full max-w-md bg-gray-200 rounded-full h-2 overflow-hidden">
+              <div 
+                className="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-500 ease-out"
+                style={{ width: `${(currentPage / totalPages) * 100}%` }}
+              />
+            </div>
+          </div>
+
+          {/* Pagination avec effet visuel */}
+          <div className="flex justify-center">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200 shadow-lg p-4 hover:shadow-xl transition-all duration-300">
+              <Pagination>
+                <PaginationContent className="gap-2">
+                  {currentPage > 1 && (
+                    <PaginationItem>
+                      <PaginationPrevious 
+                        onClick={() => setCurrentPage(currentPage - 1)}
+                        className="cursor-pointer hover:bg-primary hover:text-white transition-all duration-200 hover:scale-105"
+                      />
+                    </PaginationItem>
+                  )}
+                  
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <PaginationItem key={page}>
+                      <PaginationLink
+                        isActive={page === currentPage}
+                        onClick={() => setCurrentPage(page)}
+                        className={`cursor-pointer transition-all duration-200 hover:scale-105 ${
+                          page === currentPage 
+                            ? 'bg-primary text-white border-primary shadow-md scale-105' 
+                            : 'hover:bg-primary/10 hover:border-primary/50'
+                        }`}
+                      >
+                        {page}
+                      </PaginationLink>
+                    </PaginationItem>
+                  ))}
+                  
+                  {currentPage < totalPages && (
+                    <PaginationItem>
+                      <PaginationNext 
+                        onClick={() => setCurrentPage(currentPage + 1)}
+                        className="cursor-pointer hover:bg-primary hover:text-white transition-all duration-200 hover:scale-105"
+                      />
+                    </PaginationItem>
+                  )}
+                </PaginationContent>
+              </Pagination>
+            </div>
+          </div>
+
+          {/* Message d'encouragement pour continuer à explorer */}
+          {currentPage < totalPages && (
+            <div className="text-center animate-fade-in">
+              <p className="text-sm text-gray-600 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 inline-block">
+                🎯 <span className="font-medium">Découvrez encore {items.length - (currentPage * 12)} logos</span> dans les pages suivantes !
+              </p>
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -34,7 +34,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
   );
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       {/* Ajouter les schémas JSON-LD enrichis pour les 3 premières images */}
       <Helmet>
         {imageSchemas.map((schema, index) => (

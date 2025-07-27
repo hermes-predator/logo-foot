@@ -62,36 +62,36 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
         )}
       </div>
 
-      {/* Pagination avec indicateurs visuels améliorés */}
+      {/* Pagination avec style branded amélioré */}
       {!isLoading && totalPages > 1 && (
-        <div className="space-y-4">
+        <div className="space-y-6">
           {/* Indicateur de progression et statistiques */}
-          <div className="flex flex-col items-center space-y-2">
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 px-6 py-3 rounded-full border border-primary/20">
-              <p className="text-sm font-medium text-primary">
-                <span className="font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="font-bold">{items.length} logos</span> disponibles
+          <div className="flex flex-col items-center space-y-3">
+            <div className="bg-gradient-to-r from-slate-50 to-gray-50 px-8 py-4 rounded-2xl border border-slate-200 shadow-sm">
+              <p className="text-base font-semibold text-slate-700">
+                <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} logos</span> disponibles
               </p>
             </div>
             
-            {/* Barre de progression */}
-            <div className="w-full max-w-md bg-gray-200 rounded-full h-2 overflow-hidden">
+            {/* Barre de progression élégante */}
+            <div className="w-full max-w-lg bg-slate-200 rounded-full h-3 overflow-hidden shadow-inner">
               <div 
-                className="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-500 ease-out"
+                className="bg-gradient-to-r from-slate-800 to-black h-3 rounded-full transition-all duration-700 ease-out shadow-sm"
                 style={{ width: `${(currentPage / totalPages) * 100}%` }}
               />
             </div>
           </div>
 
-          {/* Pagination avec effet visuel */}
+          {/* Pagination avec design branded */}
           <div className="flex justify-center">
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200 shadow-lg p-4 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-6 hover:shadow-xl transition-all duration-300">
               <Pagination>
-                <PaginationContent className="gap-2">
+                <PaginationContent className="gap-3">
                   {currentPage > 1 && (
                     <PaginationItem>
                       <PaginationPrevious 
                         onClick={() => setCurrentPage(currentPage - 1)}
-                        className="cursor-pointer hover:bg-primary hover:text-white transition-all duration-200 hover:scale-105"
+                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}
@@ -101,10 +101,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                       <PaginationLink
                         isActive={page === currentPage}
                         onClick={() => setCurrentPage(page)}
-                        className={`cursor-pointer transition-all duration-200 hover:scale-105 ${
+                        className={`cursor-pointer transition-all duration-300 hover:scale-105 font-semibold px-4 py-2 rounded-xl min-w-[44px] ${
                           page === currentPage 
-                            ? 'bg-primary text-white border-primary shadow-md scale-105' 
-                            : 'hover:bg-primary/10 hover:border-primary/50'
+                            ? 'bg-black text-white border-black shadow-lg scale-105 ring-2 ring-black/20' 
+                            : 'bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-800'
                         }`}
                       >
                         {page}
@@ -116,7 +116,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationNext 
                         onClick={() => setCurrentPage(currentPage + 1)}
-                        className="cursor-pointer hover:bg-primary hover:text-white transition-all duration-200 hover:scale-105"
+                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}

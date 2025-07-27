@@ -124,15 +124,6 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
               </Pagination>
             </div>
           </div>
-
-          {/* Message d'encouragement pour continuer à explorer */}
-          {currentPage < totalPages && (
-            <div className="text-center animate-fade-in">
-              <p className="text-sm text-gray-600 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 inline-block">
-                🎯 <span className="font-medium">Découvrez encore {items.length - (currentPage * 12)} logos</span> dans les pages suivantes !
-              </p>
-            </div>
-          )}
         </div>
       )}
     </div>

@@ -56,7 +56,7 @@ const FeatureList = () => {
     },
     {
       icon: BadgeCheck,
-      text: "Qualité globale", 
+      text: "Haute qualité", 
       className: "bg-blue-100",
       iconColor: "text-blue-700",
       description: "Nos logos sont uniformes, nommés et triés pour un usage fiable et immédiat."

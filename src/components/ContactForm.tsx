@@ -20,7 +20,7 @@ const ContactForm = ({
         <div className="flex flex-col items-center p-5">
           {/* Icône stylisée */}
           <div className="mb-3 relative">
-            <div className="bg-gray-50 p-4 rounded-full border border-gray-200 shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
+            <div className="bg-gray-50 p-4 rounded-full border border-gray-200">
               <Mail className="w-8 h-8 text-gray-700" />
             </div>
           </div>

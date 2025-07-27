@@ -10,8 +10,8 @@ Disallow: /private/
 Disallow: /admin/
 Disallow: /api/
 
-# Sitemap Index
-Sitemap: https://logo-foot.com/sitemap-index.xml
+# Sitemap principal
+Sitemap: https://logo-foot.com/sitemap.xml
 
 # Protection contre les crawlers trop agressifs
 Crawl-delay: 2

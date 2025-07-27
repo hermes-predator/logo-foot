@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { GalleryItem as GalleryItemType } from '@/types/gallery';
 import GalleryItem from './GalleryItem';
@@ -89,7 +87,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationPrevious 
                         onClick={() => setCurrentPage(currentPage - 1)}
-                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
+                        className="cursor-pointer bg-slate-100 hover:bg-white hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}
@@ -102,7 +100,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                         className={`cursor-pointer transition-all duration-300 font-semibold px-4 py-2 rounded-xl min-w-[44px] ${
                           page === currentPage 
                             ? 'bg-black text-white border-black scale-105 hover:bg-black hover:text-white hover:border-black hover:scale-105' 
-                            : 'bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-800 hover:scale-105'
+                            : 'bg-slate-100 text-slate-700 border border-slate-300 hover:bg-white hover:border-black hover:scale-105'
                         }`}
                       >
                         {page}
@@ -114,7 +112,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationNext 
                         onClick={() => setCurrentPage(currentPage + 1)}
-                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
+                        className="cursor-pointer bg-slate-100 hover:bg-white hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}

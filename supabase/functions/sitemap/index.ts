@@ -1,7 +1,7 @@
 
 import { generateSitemap, generateSpecializedSitemap } from '../../../src/utils/sitemapGenerator';
 import { corsHeaders } from '../_shared/cors';
-import { blogPosts } from '../../../src/data/blog';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -9,11 +9,28 @@ Deno.serve(async (req) => {
   }
 
   try {
+    // Initialize Supabase client
+    const supabaseClient = createClient(
+      Deno.env.get('SUPABASE_URL') ?? '',
+      Deno.env.get('SUPABASE_ANON_KEY') ?? ''
+    )
+
+    // Fetch blog posts from database
+    const { data: blogPosts, error } = await supabaseClient
+      .from('blog_posts')
+      .select('id, title, date, category, sub_category, slug')
+      .order('date', { ascending: false })
+
+    if (error) {
+      console.error('Error fetching blog posts:', error)
+      throw error
+    }
+
     const url = new URL(req.url);
     const sitemapType = url.searchParams.get('type') || 'complete';
     
     console.log(`Generating ${sitemapType} sitemap...`);
-    console.log(`Found ${blogPosts.length} total blog posts`);
+    console.log(`Found ${blogPosts?.length || 0} total blog posts from database`);
     
     let sitemap: string;
     
@@ -35,7 +52,8 @@ Deno.serve(async (req) => {
         includePriority,
         priorityCalculation: true,
         includeNewsTag,
-        compressOutput
+        compressOutput,
+        blogPosts: blogPosts || []
       });
     } else {
       // Générer un sitemap spécialisé
@@ -43,14 +61,14 @@ Deno.serve(async (req) => {
       const type = validTypes.includes(sitemapType) ? sitemapType as any : 'main';
       
       console.log(`Generating specialized sitemap for: ${type}`);
-      sitemap = generateSpecializedSitemap(type);
+      sitemap = generateSpecializedSitemap(type, blogPosts || []);
     }
     
     const urlCount = sitemap.split('<url>').length - 1;
     console.log(`Sitemap generated successfully with ${urlCount} URLs`);
     
     // Récupérer les articles récents pour le log
-    const recentPosts = blogPosts
+    const recentPosts = (blogPosts || [])
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       .slice(0, 3);
     

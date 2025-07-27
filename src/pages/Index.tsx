@@ -6,6 +6,7 @@ import ProductGallery from '../components/ProductGallery';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
+import { SyncStatus } from '../components/SyncStatus';
 
 
 // Lazy load components that aren't needed for initial render
@@ -167,6 +168,11 @@ const Index = () => {
           
           <div className="pt-2 pb-6">
             <ProductGallery />
+          </div>
+          
+          {/* Composant de test pour la synchronisation Supabase */}
+          <div className="flex justify-center pb-6">
+            <SyncStatus />
           </div>
           
           <div id="payment-section" className="pt-6">

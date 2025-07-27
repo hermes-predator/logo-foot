@@ -1,5 +1,14 @@
 
-import { blogPosts } from '../data/blog';
+interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  subCategory?: string;
+  galleryImageId?: number;
+  slug?: string;
+}
 
 interface SitemapOptions {
   includeImages?: boolean;
@@ -9,6 +18,7 @@ interface SitemapOptions {
   priorityCalculation?: boolean;
   includeNewsTag?: boolean;
   compressOutput?: boolean;
+  blogPosts?: BlogPost[];
 }
 
 export const generateSitemap = (options: SitemapOptions = {}) => {
@@ -19,7 +29,8 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
     includePriority = true,
     priorityCalculation = true,
     includeNewsTag = false,
-    compressOutput = false
+    compressOutput = false,
+    blogPosts = []
   } = options;
   
   const today = new Date().toISOString().split('T')[0];
@@ -201,7 +212,7 @@ const formatDateForNews = (dateString: string): string => {
 };
 
 // Nouvelle fonction pour générer des sitemaps spécialisés
-export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competitions' | 'countries' | 'categories') => {
+export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competitions' | 'countries' | 'categories', blogPosts: BlogPost[] = []) => {
   const today = new Date().toISOString().split('T')[0];
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -214,10 +225,10 @@ export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competition
       xml += generateMainPages(today);
       break;
     case 'clubs':
-      xml += generateClubPages(today);
+      xml += generateClubPages(today, blogPosts);
       break;
     case 'competitions':
-      xml += generateCompetitionPages(today);
+      xml += generateCompetitionPages(today, blogPosts);
       break;
     case 'countries':
       xml += generateCountryPages(today);
@@ -257,9 +268,9 @@ const generateMainPages = (today: string) => {
 `;
 };
 
-const generateClubPages = (today: string) => {
+const generateClubPages = (today: string, blogPosts: BlogPost[]) => {
   // Récupérer les articles de clubs majeurs
-  const majorClubs = blogPosts.filter(post => 
+  const majorClubs = blogPosts.filter(post =>
     post.title.toLowerCase().includes('real madrid') ||
     post.title.toLowerCase().includes('barcelone') ||
     post.title.toLowerCase().includes('psg') ||
@@ -284,8 +295,8 @@ const generateClubPages = (today: string) => {
   </url>`).join('\n');
 };
 
-const generateCompetitionPages = (today: string) => {
-  const competitions = blogPosts.filter(post => 
+const generateCompetitionPages = (today: string, blogPosts: BlogPost[]) => {
+  const competitions = blogPosts.filter(post =>
     post.category === 'competition-logos' ||
     post.title.toLowerCase().includes('champions league') ||
     post.title.toLowerCase().includes('europa league') ||

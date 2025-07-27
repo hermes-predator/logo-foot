@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
+import { Lock, User, Clock, Ticket, MessageCircle, Mail } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -77,7 +77,7 @@ const ContactForm = ({
         {/* Section RGPD intégrée */}
         <div className="p-4 bg-gradient-to-r from-gray-50 to-white rounded-b-xl">
           <p className="text-xs text-gray-500 flex items-start gap-2.5 leading-relaxed">
-            <ShieldCheck className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
+            <Lock className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-blue-500" />
             <span>
               Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression.
             </span>

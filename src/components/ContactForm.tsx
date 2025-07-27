@@ -82,8 +82,14 @@ const ContactForm = ({
               Conformément au RGPD, vos données personnelles sont uniquement utilisées pour traiter votre demande et ne seront jamais partagées avec des tiers. Vous disposez d'un droit d'accès, de rectification et de suppression.
             </span>
           </p>
-        </div>
       </div>
+      
+      <div className="mt-6 pt-4">
+        <p className="text-xs text-gray-500 text-center">
+          © 2025 Logo-foot.com - Tous droits réservés
+        </p>
+      </div>
+    </div>
     </div>;
 };
 

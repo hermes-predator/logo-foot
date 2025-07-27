@@ -69,7 +69,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
           <div className="flex flex-col items-center space-y-3">
             <div className="bg-gradient-to-r from-slate-50 to-gray-50 px-8 py-4 rounded-2xl border border-slate-200 shadow-sm">
               <p className="text-base font-semibold text-slate-700">
-                <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} logos</span> disponibles
+                <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} dossiers</span> affichés
               </p>
             </div>
             

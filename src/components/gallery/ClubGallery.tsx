@@ -84,7 +84,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
           {/* Pagination avec design branded */}
           <div className="flex justify-center">
-            <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-none transition-all duration-300">
               <Pagination>
                 <PaginationContent className="gap-3">
                   {currentPage > 1 && (

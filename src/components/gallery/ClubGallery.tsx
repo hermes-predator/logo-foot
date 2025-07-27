@@ -64,32 +64,32 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
       {/* Pagination avec style branded amélioré */}
       {!isLoading && totalPages > 1 && (
-        <div className="space-y-8">
+        <div className="space-y-6">
           {/* Indicateur de progression et statistiques */}
-          <div className="flex flex-col items-center space-y-4">
-            <p className="text-base font-medium text-slate-600">
+          <div className="flex flex-col items-center space-y-3">
+            <p className="text-base font-semibold text-slate-600">
               <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} dossiers</span> affichés
             </p>
             
-            {/* Barre de progression élégante avec animation fluide */}
-            <div className="w-full max-w-md bg-slate-200 rounded-full h-2 overflow-hidden">
+            {/* Barre de progression élégante */}
+            <div className="w-full max-w-lg bg-slate-200 rounded-full h-3 overflow-hidden shadow-inner">
               <div 
-                className="bg-gradient-to-r from-slate-700 to-black h-2 rounded-full transition-all duration-500 ease-out"
+                className="bg-gradient-to-r from-slate-800 to-black h-3 rounded-full transition-all duration-700 ease-out shadow-sm"
                 style={{ width: `${(currentPage / totalPages) * 100}%` }}
               />
             </div>
           </div>
 
-          {/* Pagination avec design branded amélioré */}
+          {/* Pagination avec design branded */}
           <div className="flex justify-center">
-            <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-none transition-all duration-300">
               <Pagination>
-                <PaginationContent className="gap-2">
+                <PaginationContent className="gap-3">
                   {currentPage > 1 && (
                     <PaginationItem>
                       <PaginationPrevious 
                         onClick={() => setCurrentPage(currentPage - 1)}
-                        className="cursor-pointer bg-slate-50 hover:bg-black hover:text-white border border-slate-200 hover:border-black transition-all duration-200 active:scale-95 font-medium px-3 py-2 rounded-lg"
+                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}
@@ -99,10 +99,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                       <PaginationLink
                         isActive={page === currentPage}
                         onClick={() => setCurrentPage(page)}
-                        className={`cursor-pointer transition-all duration-200 active:scale-95 font-medium px-3 py-2 rounded-lg min-w-[40px] ${
+                        className={`cursor-pointer transition-all duration-300 hover:scale-105 font-semibold px-4 py-2 rounded-xl min-w-[44px] ${
                           page === currentPage 
-                            ? 'bg-black text-white border-black scale-[1.02]' 
-                            : 'bg-slate-50 text-slate-700 border border-slate-200 hover:bg-slate-800 hover:text-white hover:border-slate-800'
+                            ? 'bg-black text-white border-black scale-105' 
+                            : 'bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-800'
                         }`}
                       >
                         {page}
@@ -114,7 +114,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationNext 
                         onClick={() => setCurrentPage(currentPage + 1)}
-                        className="cursor-pointer bg-slate-50 hover:bg-black hover:text-white border border-slate-200 hover:border-black transition-all duration-200 active:scale-95 font-medium px-3 py-2 rounded-lg"
+                        className="cursor-pointer bg-slate-100 hover:bg-black hover:text-white border border-slate-300 hover:border-black transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
                       />
                     </PaginationItem>
                   )}

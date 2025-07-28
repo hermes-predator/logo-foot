@@ -151,6 +151,12 @@ const testimonials: Testimonial[] = [
     role: "Non renseigné",
     content: "Super bien, c'est vraiment bien servi en logos de foot. On se rend mieux compte en vrai.",
     rating: 5
+  },
+  {
+    name: "Olivier D.",
+    role: "Community Manager", 
+    content: "Super collection, tout est parfaitement classé !",
+    rating: 5
   }
 ];
 

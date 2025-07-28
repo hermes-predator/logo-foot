@@ -105,6 +105,12 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
+    name: "Raphaël B.",
+    role: "Graphiste",
+    content: "Collection parfaite pour mes créations, je recommande !",
+    rating: 5
+  },
+  {
     name: "Thomas D.",
     role: "Non renseigné",
     content: "Heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",

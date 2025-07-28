@@ -155,7 +155,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Olivier D.",
     role: "Community Manager", 
-    content: "Bonne solution pour les logo des clubs de football",
+    content: "Bonne solution pour les logo des clubs de football.",
     rating: 5
   }
 ];

@@ -95,7 +95,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Jonathan M.",
     role: "Non renseigné",
-    content: "Non renseigné",
+    content: "Merci pour la collection de logos de foot.",
     rating: 5
   },
   {

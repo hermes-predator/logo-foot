@@ -65,7 +65,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Vincent L.",
     role: "Freelance",
-    content: "Collection complète et bien organisée. Parfait pour mes projets de sites sportifs !",
+    content: "Top, tout les logos de clubs de football dans un fichier bien organisé.",
     rating: 5
   },
   {

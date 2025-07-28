@@ -95,7 +95,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Damien L.",
     role: "Non renseigné",
-    content: "Le fichier correspond à mes attentes. Son organisation globale est très bien réalisé.",
+    content: "Le fichier de logo de football idéal ! Encore merci à vous.",
     rating: 5
   },
   {

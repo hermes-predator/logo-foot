@@ -63,8 +63,8 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Sophie L.",
-    role: "Développeuse Web",
+    name: "Vincent L.",
+    role: "Freelance",
     content: "Collection complète et bien organisée. Parfait pour mes projets de sites sportifs !",
     rating: 5
   },

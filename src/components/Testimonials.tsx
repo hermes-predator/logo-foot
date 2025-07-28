@@ -83,7 +83,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Antoine R.",
     role: "Non renseigné",
-    content: "Très satisfait, tous les logos de football sont super bien organisés, ça fait plaisir à avoir.",
+    content: "Très satisfait, tous les logos de football sont super bien classés, ça fait plaisir à avoir.",
     rating: 5
   },
   {

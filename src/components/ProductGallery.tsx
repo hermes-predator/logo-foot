@@ -49,6 +49,23 @@ const ProductGallery = () => {
 
       <div className="container mx-auto px-4 py-4 sm:py-8">
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
+          {/* FlipBox placée au-dessus de tout */}
+          <FlipBox
+            frontTitle="Logo des Clubs de Foot"
+            frontDescription="Notre fichier contient plus de 8 600 logo des équipes de football uniformes, nommés et triés par pays"
+            backTitle="Collection Premium de Logos Football"
+            backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
+📁 Organisation parfaite par pays et championnat  
+🎨 Format PNG avec fond transparent professionnel
+⚽ Tous les grands clubs européens inclus (Premier League, Liga, Serie A, Bundesliga, Ligue 1)
+🌍 Couverture internationale complète
+📱 Optimisé pour tous supports (web, print, mobile)
+💼 Usage libre pour projets personnels
+🔄 Mise à jour régulière de la base de données
+✨ Qualité graphique exceptionnelle garantie`}
+            className="mb-6"
+          />
+
           <div className="relative">
             {/* Badge flottant discret - taille ajustée */}
             <div className="absolute top-2 right-0 z-10 transform translate-x-0 translate-y-2">
@@ -58,22 +75,6 @@ const ProductGallery = () => {
                 <MousePointer className="w-3.5 h-3.5" />
               </div>
             </div>
-
-            <FlipBox
-              frontTitle="Logo des Clubs de Foot"
-              frontDescription="Notre fichier contient plus de 8 600 logo des équipes de football uniformes, nommés et triés par pays"
-              backTitle="Collection Premium de Logos Football"
-              backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
-📁 Organisation parfaite par pays et championnat  
-🎨 Format PNG avec fond transparent professionnel
-⚽ Tous les grands clubs européens inclus (Premier League, Liga, Serie A, Bundesliga, Ligue 1)
-🌍 Couverture internationale complète
-📱 Optimisé pour tous supports (web, print, mobile)
-💼 Usage libre pour projets personnels
-🔄 Mise à jour régulière de la base de données
-✨ Qualité graphique exceptionnelle garantie`}
-              className="mb-8"
-            />
             
             <LazySection height="400px">
               <ClubGallery items={clubItems} isLoading={isLoading} />

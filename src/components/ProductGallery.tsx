@@ -47,9 +47,9 @@ const ProductGallery = () => {
         </script>
       </Helmet>
 
-      <div className="container mx-auto px-4 py-4 sm:py-8">
-        <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
-          {/* FlipBox placée au-dessus de tout */}
+      {/* FlipBox positionnée au-dessus de la galerie */}
+      <div className="container mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto">
           <FlipBox
             frontTitle="Logo des Clubs de Foot"
             frontDescription="Notre fichier contient plus de 8 600 logo des équipes de football uniformes, nommés et triés par pays"
@@ -63,11 +63,14 @@ const ProductGallery = () => {
 💼 Usage libre pour projets personnels
 🔄 Mise à jour régulière de la base de données
 ✨ Qualité graphique exceptionnelle garantie`}
-            className="mb-6"
           />
+        </div>
+      </div>
 
+      {/* Galerie des logos */}
+      <div className="container mx-auto px-4 py-4 sm:py-8">
+        <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div className="relative">
-            
             <LazySection height="400px">
               <ClubGallery items={clubItems} isLoading={isLoading} />
             </LazySection>

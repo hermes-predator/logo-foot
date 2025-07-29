@@ -68,7 +68,7 @@ const PaymentButton = () => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
-                  {isRedirecting ? "Redirection en cours..." : "Télécharger (8€)"}
+                  {isRedirecting ? "Redirection en cours..." : "Télécharger maintenant (8€)"}
                 </span>
               </div>
               <ArrowRight 

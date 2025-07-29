@@ -36,7 +36,7 @@ const PaymentCardBack = ({
       {/* Titre du fichier en grand dans le coin supérieur gauche */}
       <div className="absolute top-6 left-6 z-30">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h2>
-        <p className="text-sm sm:text-base text-gray-700 mt-1">Aperçu du fichier en toute transparence</p>
+        <p className="text-sm sm:text-base text-gray-700 mt-1">Capture vidéo : Aperçu du fichier en toute transparence</p>
       </div>
       
       {/* Bouton de retour dans le coin supérieur droit */}

@@ -21,7 +21,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       >
         {/* Face avant */}
         <div className={`w-full backface-hidden ${isFlipped ? 'hidden' : 'block'}`}>
-          <div className="relative p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[280px] flex flex-col">
+          <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
@@ -46,7 +46,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
 
         {/* Face arrière */}
         <div className={`w-full backface-hidden ${isFlipped ? 'block' : 'hidden'}`}>
-          <div className="relative p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[280px] flex flex-col">
+          <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">

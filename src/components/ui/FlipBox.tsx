@@ -20,8 +20,8 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         }`}
       >
         {/* Face avant */}
-        <div className="w-full backface-hidden">
-          <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
+        <div className={`w-full backface-hidden ${isFlipped ? 'hidden' : 'block'}`}>
+          <div className="relative p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[140px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2 z-10">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
@@ -32,7 +32,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
             
             <div className="flex items-center gap-2 mb-2 relative z-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{frontTitle}</h2>
               <button
                 onClick={() => setIsFlipped(true)}
                 className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
@@ -40,13 +40,13 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
                 <Info className="w-5 h-5" />
               </button>
             </div>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 flex-grow">{frontDescription}</p>
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 flex-grow">{frontDescription}</p>
           </div>
         </div>
 
         {/* Face arrière */}
-        <div className={`w-full backface-hidden absolute inset-0 rotate-y-180 ${isFlipped ? 'block' : 'hidden'}`}>
-          <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
+        <div className={`w-full backface-hidden ${isFlipped ? 'block' : 'hidden'}`}>
+          <div className="relative p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[140px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2 z-10">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
@@ -57,7 +57,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
             
             <div className="flex items-center gap-2 mb-2 relative z-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{frontTitle}</h2>
               <button
                 onClick={() => setIsFlipped(false)}
                 className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
@@ -65,7 +65,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
                 <RotateCcw className="w-5 h-5" />
               </button>
             </div>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 flex-grow">{frontDescription}</p>
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 flex-grow">{frontDescription}</p>
           </div>
         </div>
       </div>

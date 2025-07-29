@@ -72,7 +72,7 @@ const ProductGallery = () => {
 💼 Usage libre pour projets personnels
 🔄 Mise à jour régulière de la base de données
 ✨ Qualité graphique exceptionnelle garantie`}
-              className="mb-6"
+              className="mb-8"
             />
             
             <LazySection height="400px">

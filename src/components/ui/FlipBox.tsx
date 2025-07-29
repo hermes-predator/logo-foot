@@ -23,7 +23,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         <div className={`w-full backface-hidden ${isFlipped ? 'hidden' : 'block'}`}>
           <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
             {/* Badge dans la flip box */}
-            <div className="absolute top-2 right-2">
+            <div className="absolute top-2 right-2 z-10">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
                 <Eye className="w-3.5 h-3.5 opacity-70" />
                 <span className="font-medium">Survolez les dossiers</span>
@@ -31,7 +31,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </div>
             </div>
             
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between mb-2 relative z-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
               <button
                 onClick={() => setIsFlipped(true)}

@@ -5,7 +5,6 @@ import { generateGalleryItems } from '@/utils/galleryData';
 import { LazySection } from './ui/lazy-section';
 import { Helmet } from 'react-helmet-async';
 import { Eye, MousePointer } from 'lucide-react';
-import FlipBox from './ui/FlipBox';
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
   const {
@@ -47,27 +46,6 @@ const ProductGallery = () => {
         </script>
       </Helmet>
 
-      {/* FlipBox positionnée au-dessus de la galerie */}
-      <div className="container mx-auto px-4 py-4">
-        <div className="max-w-7xl mx-auto">
-          <FlipBox
-            frontTitle="Logo des Clubs de Foot"
-            frontDescription="Notre fichier contient plus de 8 600 logo des équipes de football uniformes, nommés et triés par pays"
-            backTitle="Collection Premium de Logos Football"
-            backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
-📁 Organisation parfaite par pays et championnat  
-🎨 Format PNG avec fond transparent professionnel
-⚽ Tous les grands clubs européens inclus (Premier League, Liga, Serie A, Bundesliga, Ligue 1)
-🌍 Couverture internationale complète
-📱 Optimisé pour tous supports (web, print, mobile)
-💼 Usage libre pour projets personnels
-🔄 Mise à jour régulière de la base de données
-✨ Qualité graphique exceptionnelle garantie`}
-          />
-        </div>
-      </div>
-
-      {/* Galerie des logos */}
       <div className="container mx-auto px-4 py-4 sm:py-8">
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
           <div className="relative">

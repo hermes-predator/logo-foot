@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import ProductGallery from '../components/ProductGallery';
+import FlipBox from '../components/ui/FlipBox';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -185,6 +186,28 @@ const Index = () => {
             <HeroSection 
               onScrollToPayment={scrollToPayment} 
             />
+          </div>
+          
+          {/* FlipBox séparée au-dessus de la galerie */}
+          <div className="pt-4 pb-2">
+            <div className="container mx-auto px-4">
+              <div className="max-w-7xl mx-auto">
+                <FlipBox
+                  frontTitle="Logo des Clubs de Foot"
+                  frontDescription="Notre fichier contient plus de 8 600 logo des équipes de football uniformes, nommés et triés par pays"
+                  backTitle="Collection Premium de Logos Football"
+                  backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
+📁 Organisation parfaite par pays et championnat  
+🎨 Format PNG avec fond transparent professionnel
+⚽ Tous les grands clubs européens inclus (Premier League, Liga, Serie A, Bundesliga, Ligue 1)
+🌍 Couverture internationale complète
+📱 Optimisé pour tous supports (web, print, mobile)
+💼 Usage libre pour projets personnels
+🔄 Mise à jour régulière de la base de données
+✨ Qualité graphique exceptionnelle garantie`}
+                />
+              </div>
+            </div>
           </div>
           
           <div className="pt-2 pb-6">

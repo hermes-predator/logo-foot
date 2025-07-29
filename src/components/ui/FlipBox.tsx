@@ -20,7 +20,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         }`}
       >
         {/* Face avant */}
-        <div className={`w-full backface-hidden ${isFlipped ? 'hidden' : 'block'}`}>
+        <div className="w-full backface-hidden absolute inset-0">
           <div className="relative p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[280px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2">
@@ -45,7 +45,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         </div>
 
         {/* Face arrière */}
-        <div className={`w-full backface-hidden ${isFlipped ? 'block' : 'hidden'}`}>
+        <div className="w-full backface-hidden absolute inset-0 rotate-y-180">
           <div className="relative p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-100 shadow-sm min-h-[280px] flex flex-col">
             <h3 className="text-xl font-bold text-gray-900 mb-3">{backTitle}</h3>
             <div className="text-sm text-gray-700 mb-4 leading-relaxed whitespace-pre-line flex-grow">

@@ -67,14 +67,6 @@ const ProductGallery = () => {
           />
 
           <div className="relative">
-            {/* Badge flottant discret - taille ajustée */}
-            <div className="absolute top-2 right-0 z-10 transform translate-x-0 translate-y-2">
-              <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
-                <Eye className="w-3.5 h-3.5 opacity-70" />
-                <span className="font-medium">Survolez les dossiers</span>
-                <MousePointer className="w-3.5 h-3.5" />
-              </div>
-            </div>
             
             <LazySection height="400px">
               <ClubGallery items={clubItems} isLoading={isLoading} />

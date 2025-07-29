@@ -48,7 +48,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         <div className={`w-full backface-hidden ${isFlipped ? 'block' : 'hidden'}`}>
           <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[180px] flex flex-col">
             {/* Badge dans la flip box */}
-            <div className="absolute top-2 right-2">
+            <div className="absolute top-2 right-2 z-10">
               <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
                 <Eye className="w-3.5 h-3.5 opacity-70" />
                 <span className="font-medium">Survolez les dossiers</span>
@@ -56,16 +56,16 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </div>
             </div>
             
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 pr-16">{frontTitle}</h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-4 flex-grow">{frontDescription}</p>
-            
-            <button
-              onClick={() => setIsFlipped(false)}
-              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors mt-auto"
-            >
-              <RotateCcw className="w-4 h-4" />
-              Retour
-            </button>
+            <div className="flex items-center gap-2 mb-4 relative z-20">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{backTitle}</h2>
+              <button
+                onClick={() => setIsFlipped(false)}
+                className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
+              >
+                <RotateCcw className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="text-sm sm:text-base text-gray-600 flex-grow">{backContent}</div>
           </div>
         </div>
       </div>

@@ -31,11 +31,11 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </div>
             </div>
             
-            <div className="flex items-start justify-between mb-2 pr-16">
+            <div className="flex items-center justify-between mb-2">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
               <button
                 onClick={() => setIsFlipped(true)}
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors ml-4 flex-shrink-0"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors flex-shrink-0"
               >
                 <Info className="w-4 h-4" />
                 En savoir plus

@@ -522,3 +522,21 @@ pre code {
   animation: floating 4s ease-in-out infinite;
   will-change: transform, opacity;
 }
+
+/* Styles pour les flip boxes 3D */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

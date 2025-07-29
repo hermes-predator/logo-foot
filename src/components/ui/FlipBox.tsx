@@ -13,14 +13,14 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className={`relative w-full h-auto perspective-1000 z-20 ${className}`}>
-      <div
+    <div className={`relative w-full h-auto perspective-1000 ${className}`}>
+      <div 
         className={`relative w-full transition-transform duration-700 transform-style-preserve-3d ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
       >
         {/* Face avant */}
-        <div className="w-full backface-hidden absolute inset-0">
+        <div className={`w-full backface-hidden ${isFlipped ? 'hidden' : 'block'}`}>
           <div className="relative p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[280px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2">
@@ -45,7 +45,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         </div>
 
         {/* Face arrière */}
-        <div className="w-full backface-hidden absolute inset-0 rotate-y-180">
+        <div className={`w-full backface-hidden ${isFlipped ? 'block' : 'hidden'}`}>
           <div className="relative p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[280px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2">

@@ -37,23 +37,6 @@ const PaymentCardBack = ({
       <div className="absolute top-6 left-6 z-30">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h2>
         <p className="text-sm sm:text-base text-gray-700 mt-1">La plus grande collection de logos de football en haute qualité</p>
-        <div className="mt-3 flex items-center justify-start">
-          <TooltipProvider delayDuration={100}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <div>
-                  <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
-                </div>
-              </TooltipTrigger>
-              <TooltipContent className="bg-gradient-to-b from-gray-50 to-white border border-blue-100/40 p-3 max-w-[350px] rounded-lg shadow-lg" side="bottom" align="center" sideOffset={5}>
-                <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
-                </p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </div>
       </div>
       
       {/* Bouton de retour dans le coin supérieur droit */}

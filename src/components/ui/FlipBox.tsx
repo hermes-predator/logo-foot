@@ -13,8 +13,8 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className={`relative w-full h-auto perspective-1000 ${className}`}>
-      <div 
+    <div className={`relative w-full h-auto perspective-1000 z-10 ${className}`}>
+      <div
         className={`relative w-full transition-transform duration-700 transform-style-preserve-3d ${
           isFlipped ? 'rotate-y-180' : ''
         }`}

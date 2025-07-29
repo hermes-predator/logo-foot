@@ -77,7 +77,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
             </div>
           
             {/* Google Drive Badge et bouton œil ensemble */}
-            <div className="mt-1.5 flex items-center gap-2">
+            <div className="mt-3 flex items-center gap-2">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

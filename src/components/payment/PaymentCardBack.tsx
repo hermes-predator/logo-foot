@@ -147,7 +147,7 @@ const PaymentCardBack = ({
           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
         }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Achat rapide (8€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (8€)</span>
             </button>
           </div>
         </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
@@ -225,7 +225,7 @@ const PaymentCardBack = ({
           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
         }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Achat rapide (8€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (8€)</span>
             </button>
           </div>
         </div>}

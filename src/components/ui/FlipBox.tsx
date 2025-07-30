@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RotateCcw, Info, Eye, MousePointer } from 'lucide-react';
+import { RotateCcw, HelpCircle, Eye, MousePointer } from 'lucide-react';
 
 interface FlipBoxProps {
   frontTitle: string;
@@ -30,9 +30,9 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-left">{frontTitle}</h2>
             <button
               onClick={() => setIsFlipped(true)}
-              className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
+              className="text-black hover:text-gray-700 transition-colors flex-shrink-0"
             >
-              <Info className="w-5 h-5" />
+              <HelpCircle className="w-5 h-5" />
             </button>
           </div>
           <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">{frontDescription}</p>

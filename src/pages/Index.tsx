@@ -210,7 +210,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="pt-0 pb-6">
+          <div className="pt-0 pb-6 -mt-8">
             <ProductGallery />
           </div>
           

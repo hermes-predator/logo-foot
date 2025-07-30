@@ -16,7 +16,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
     <div className={`relative w-full h-auto ${className}`}>
       {/* Face avant */}
       <div className={`w-full transition-opacity duration-300 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
-        <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl shadow-sm min-h-[75px] flex flex-col">
+        <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
           {/* Badge dans la flip box */}
           <div className="absolute top-2 right-2 z-10">
             <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">

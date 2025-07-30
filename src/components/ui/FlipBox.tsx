@@ -43,16 +43,18 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       <div className={`w-full absolute inset-0 transition-opacity duration-300 ${isFlipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="relative p-2 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[75px] flex flex-col">
           
-          <div className="flex items-center gap-2 mb-2 relative z-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
+          <div className="flex items-center justify-between mb-2 relative z-20">
+            <div className="text-right flex-grow">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
+            </div>
             <button
               onClick={() => setIsFlipped(false)}
-              className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
+              className="text-black hover:text-gray-700 transition-colors flex-shrink-0 ml-2"
             >
-              <RotateCcw className="w-5 h-5" />
+              <RotateCcw className="w-4 h-4" />
             </button>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow">{frontDescription}</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-right">{frontDescription}</p>
         </div>
       </div>
     </div>

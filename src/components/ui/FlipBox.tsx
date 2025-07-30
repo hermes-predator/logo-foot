@@ -44,7 +44,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         <div className="relative p-2 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[75px] flex flex-col">
           
           <div className="flex items-center justify-between mb-2 relative z-20">
-            <div className="text-left flex-grow">
+            <div className="text-left flex-grow -ml-1">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Vous cherchez tout les logo des equipe de foot ?</h2>
             </div>
             <div className="flex items-center gap-2">
@@ -57,7 +57,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </button>
             </div>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">En cas de besoin des logos de foot de l'angleterre, de l'allemagne, de l'espagne, de la France, de l'Italie et du reste du monde.</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left -ml-1">En cas de besoin des logos de foot de l'angleterre, de l'allemagne, de l'espagne, de la France, de l'Italie et du reste du monde.</p>
         </div>
       </div>
     </div>

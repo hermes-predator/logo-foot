@@ -44,7 +44,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         <div className="relative p-2 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[75px] flex flex-col">
           
           <div className="flex items-center justify-between mb-2 relative z-20">
-            <div className="text-right flex-grow">
+            <div className="text-left flex-grow">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
             </div>
             <button
@@ -54,7 +54,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               <RotateCcw className="w-4 h-4" />
             </button>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-right">{frontDescription}</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">{frontDescription}</p>
         </div>
       </div>
     </div>

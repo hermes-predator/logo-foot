@@ -45,7 +45,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
           
           <div className="flex items-center justify-between mb-2 relative z-20">
             <div className="text-left flex-grow">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Vous cherchez tout les logo des equipe de foot ?</h2>
             </div>
             <button
               onClick={() => setIsFlipped(false)}

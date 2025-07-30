@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Info, Eye, MousePointer } from 'lucide-react';
+import { RotateCcw, Info, Eye, MousePointer } from 'lucide-react';
 
 interface FlipBoxProps {
   frontTitle: string;
@@ -10,13 +10,17 @@ interface FlipBoxProps {
 }
 
 const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, className = '' }: FlipBoxProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className={`relative w-full h-auto ${className}`}>
-      <div className="relative w-full">
+    <div className={`relative w-full h-auto perspective-1000 ${className}`}>
+      <div 
+        className={`relative w-full transition-transform duration-700 transform-style-preserve-3d ${
+          isFlipped ? 'rotate-y-180' : ''
+        }`}
+      >
         {/* Face avant */}
-        <div className={`w-full transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`w-full backface-hidden absolute inset-0 ${isFlipped ? 'hidden' : 'block'}`}>
           <div className="relative pr-2 pt-2 pb-2 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[75px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2 z-10">
@@ -30,8 +34,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             <div className="flex items-center gap-2 mb-2 relative z-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-left">{frontTitle}</h2>
               <button
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                onClick={() => setIsFlipped(true)}
                 className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
               >
                 <Info className="w-5 h-5" />
@@ -42,7 +45,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
         </div>
 
         {/* Face arrière */}
-        <div className={`w-full absolute inset-0 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`w-full backface-hidden absolute inset-0 rotate-y-180 ${isFlipped ? 'block' : 'hidden'}`}>
           <div className="relative p-2 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 shadow-sm min-h-[75px] flex flex-col">
             {/* Badge dans la flip box */}
             <div className="absolute top-2 right-2 z-10">
@@ -54,16 +57,15 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
             
             <div className="flex items-center gap-2 mb-2 relative z-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{backTitle}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
               <button
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                onClick={() => setIsFlipped(false)}
                 className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
               >
-                <Info className="w-5 h-5" />
+                <RotateCcw className="w-5 h-5" />
               </button>
             </div>
-            <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow">{backContent}</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow">{frontDescription}</p>
           </div>
         </div>
       </div>

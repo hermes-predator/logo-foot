@@ -48,7 +48,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Vous cherchez tout les logo des equipe de foot ?</h2>
             </div>
             <div className="flex items-center gap-2">
-              <h3 className="text-sm font-medium text-gray-700">Guide</h3>
+              <h3 className="text-sm font-medium text-gray-700">Equipe de foot logo</h3>
               <button
                 onClick={() => setIsFlipped(false)}
                 className="text-black hover:text-gray-700 transition-colors flex-shrink-0"

@@ -57,7 +57,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
             
             <div className="flex items-center gap-2 mb-2 relative z-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{backTitle}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{frontTitle}</h2>
               <button
                 onClick={() => setIsFlipped(false)}
                 className="text-blue-600 hover:text-blue-800 transition-colors flex-shrink-0"
@@ -65,7 +65,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
                 <RotateCcw className="w-5 h-5" />
               </button>
             </div>
-            <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow">{backContent}</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow">{frontDescription}</p>
           </div>
         </div>
       </div>

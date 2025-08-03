@@ -135,7 +135,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Gros bloc des avis clients centré */}
         <div className="max-w-2xl mx-auto mb-8">
           <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
-            {/* Étoiles en haut */}
+            {/* Badge Judge.me en haut */}
+            <div className="flex justify-center mb-4">
+              <div className="w-16 h-16 bg-white rounded-full border-2 border-gray-200 flex items-center justify-center shadow-lg">
+                <img 
+                  src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+                  alt="Judge.me" 
+                  className="h-8 w-auto" 
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            
+            {/* Étoiles */}
             <div className="flex justify-center gap-1 mb-6">
               {[...Array(5)].map((_, i) => <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />)}
             </div>
@@ -166,7 +178,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Animation des témoignages */}
             <div>
-              <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              <HeroTestimonialBadge currentIndex={currentTestimonialIndex} showJudgeBadge={false} />
             </div>
           </div>
         </div>

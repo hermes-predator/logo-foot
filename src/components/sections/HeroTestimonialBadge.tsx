@@ -1,48 +1,56 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Quote } from 'lucide-react';
-const testimonials = [{
-  name: "Pierre M.",
-  content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
-  rating: 5,
-  initials: "PM",
-  bgColor: "bg-blue-500"
-}, {
-  name: "Yassine B.",
-  content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci pour le gain de temps",
-  rating: 5,
-  initials: "YB",
-  bgColor: "bg-green-500"
-}, {
-  name: "Emma L.",
-  content: "Tout est parfait, merci :)",
-  rating: 5,
-  initials: "EL",
-  bgColor: "bg-purple-500"
-}, {
-  name: "Thomas D.",
-  content: "Exactement ce qu'il me fallait pour mon site. Logos haute qualité et formats variés.",
-  rating: 5,
-  initials: "TD",
-  bgColor: "bg-orange-500"
-}, {
-  name: "Sarah K.",
-  content: "Super pratique, j'ai gagné des heures de travail. Je recommande !",
-  rating: 5,
-  initials: "SK",
-  bgColor: "bg-red-500"
-}, {
-  name: "Lucas R.",
-  content: "Collection complète et bien organisée. Parfait pour mes projets.",
-  rating: 5,
-  initials: "LR",
-  bgColor: "bg-teal-500"
-}, {
-  name: "Marie C.",
-  content: "Qualité professionnelle, livraison instantanée. Rien à redire !",
-  rating: 5,
-  initials: "MC",
-  bgColor: "bg-pink-500"
-}];
+const testimonials = [
+  {
+    name: "Pierre M.",
+    content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
+    rating: 5,
+    initials: "PM",
+    bgColor: "bg-blue-500"
+  },
+  {
+    name: "Yassine B.",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
+    rating: 5,
+    initials: "YB",
+    bgColor: "bg-green-500"
+  },
+  {
+    name: "Quentin D.",
+    content: "Tout s'est bien passé, je recommande, merci !",
+    rating: 5,
+    initials: "QD",
+    bgColor: "bg-purple-500"
+  },
+  {
+    name: "Florent P.",
+    content: "Très impressionné par le fichier, vaut son prix 👍.",
+    rating: 5,
+    initials: "FP",
+    bgColor: "bg-orange-500"
+  },
+  {
+    name: "Maxime L.",
+    content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
+    rating: 5,
+    initials: "ML",
+    bgColor: "bg-red-500"
+  },
+  {
+    name: "Alex G.",
+    content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
+    rating: 5,
+    initials: "AG",
+    bgColor: "bg-teal-500"
+  },
+  {
+    name: "Emma L.",
+    content: "Tout est parfait, merci :)",
+    rating: 5,
+    initials: "EL",
+    bgColor: "bg-pink-500"
+  }
+];
 interface HeroTestimonialBadgeProps {
   currentIndex: number;
 }

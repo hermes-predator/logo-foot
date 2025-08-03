@@ -7,7 +7,7 @@ import HeroTestimonialBadge from './HeroTestimonialBadge';
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
-// Données des témoignages partagées
+// Données des témoignages partagées (synchronisées avec Testimonials.tsx)
 const testimonials = [
   {
     name: "Pierre M.",
@@ -18,44 +18,44 @@ const testimonials = [
   },
   {
     name: "Yassine B.",
-    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci pour le gain de temps",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
     rating: 5,
     initials: "YB",
     bgColor: "bg-gradient-to-br from-green-400 to-green-600"
+  },
+  {
+    name: "Quentin D.",
+    content: "Tout s'est bien passé, je recommande, merci !",
+    rating: 5,
+    initials: "QD",
+    bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
+  },
+  {
+    name: "Florent P.",
+    content: "Très impressionné par le fichier, vaut son prix 👍.",
+    rating: 5,
+    initials: "FP",
+    bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
+  },
+  {
+    name: "Maxime L.",
+    content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
+    rating: 5,
+    initials: "ML",
+    bgColor: "bg-gradient-to-br from-red-400 to-red-600"
+  },
+  {
+    name: "Alex G.",
+    content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
+    rating: 5,
+    initials: "AG",
+    bgColor: "bg-gradient-to-br from-teal-400 to-teal-600"
   },
   {
     name: "Emma L.",
     content: "Tout est parfait, merci :)",
     rating: 5,
     initials: "EL",
-    bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
-  },
-  {
-    name: "Thomas D.",
-    content: "Exactement ce qu'il me fallait pour mon site. Logos haute qualité et formats variés.",
-    rating: 5,
-    initials: "TD",
-    bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
-  },
-  {
-    name: "Sarah K.",
-    content: "Super pratique, j'ai gagné des heures de travail. Je recommande !",
-    rating: 5,
-    initials: "SK",
-    bgColor: "bg-gradient-to-br from-red-400 to-red-600"
-  },
-  {
-    name: "Lucas R.",
-    content: "Collection complète et bien organisée. Parfait pour mes projets.",
-    rating: 5,
-    initials: "LR",
-    bgColor: "bg-gradient-to-br from-teal-400 to-teal-600"
-  },
-  {
-    name: "Marie C.",
-    content: "Qualité professionnelle, livraison instantanée. Rien à redire !",
-    rating: 5,
-    initials: "MC",
     bgColor: "bg-gradient-to-br from-pink-400 to-pink-600"
   }
 ];

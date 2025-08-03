@@ -37,22 +37,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-6">
             <HeroTestimonialBadge />
-            
-            {/* Points de confiance */}
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-                <CheckCircle2 className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Format professionnel</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-                <Shield className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-                <Download className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
-              </div>
-            </div>
           </div>
 
           {/* Colonne droite - Actions */}
@@ -91,6 +75,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               <ShoppingCart className="w-5 h-5 mr-2" />
               Télécharger (8€)
             </Button>
+          </div>
+        </div>
+
+        {/* Points de confiance - en dessous */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <CheckCircle2 className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Format professionnel</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <Shield className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <Download className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
           </div>
         </div>
 

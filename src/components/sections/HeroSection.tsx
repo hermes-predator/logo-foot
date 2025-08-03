@@ -29,6 +29,34 @@ const testimonials = [
     rating: 5,
     initials: "EL",
     bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
+  },
+  {
+    name: "Thomas D.",
+    content: "Exactement ce qu'il me fallait pour mon site. Logos haute qualité et formats variés.",
+    rating: 5,
+    initials: "TD",
+    bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
+  },
+  {
+    name: "Sarah K.",
+    content: "Super pratique, j'ai gagné des heures de travail. Je recommande !",
+    rating: 5,
+    initials: "SK",
+    bgColor: "bg-gradient-to-br from-red-400 to-red-600"
+  },
+  {
+    name: "Lucas R.",
+    content: "Collection complète et bien organisée. Parfait pour mes projets.",
+    rating: 5,
+    initials: "LR",
+    bgColor: "bg-gradient-to-br from-teal-400 to-teal-600"
+  },
+  {
+    name: "Marie C.",
+    content: "Qualité professionnelle, livraison instantanée. Rien à redire !",
+    rating: 5,
+    initials: "MC",
+    bgColor: "bg-gradient-to-br from-pink-400 to-pink-600"
   }
 ];
 

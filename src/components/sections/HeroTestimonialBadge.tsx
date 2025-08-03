@@ -23,6 +23,34 @@ const testimonials = [
     rating: 5,
     initials: "EL",
     bgColor: "bg-purple-500"
+  },
+  {
+    name: "Thomas D.",
+    content: "Exactement ce qu'il me fallait pour mon site. Logos haute qualité et formats variés.",
+    rating: 5,
+    initials: "TD",
+    bgColor: "bg-orange-500"
+  },
+  {
+    name: "Sarah K.",
+    content: "Super pratique, j'ai gagné des heures de travail. Je recommande !",
+    rating: 5,
+    initials: "SK",
+    bgColor: "bg-red-500"
+  },
+  {
+    name: "Lucas R.",
+    content: "Collection complète et bien organisée. Parfait pour mes projets.",
+    rating: 5,
+    initials: "LR",
+    bgColor: "bg-teal-500"
+  },
+  {
+    name: "Marie C.",
+    content: "Qualité professionnelle, livraison instantanée. Rien à redire !",
+    rating: 5,
+    initials: "MC",
+    bgColor: "bg-pink-500"
   }
 ];
 

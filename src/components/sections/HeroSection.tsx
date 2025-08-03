@@ -141,7 +141,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Avatars circulaires synchronisés */}
-            <div className="flex justify-center items-center gap-3 mb-6 flex-wrap">
+            <div className="flex justify-center items-center -space-x-2 mb-6 flex-wrap">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}

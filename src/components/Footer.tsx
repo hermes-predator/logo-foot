@@ -17,6 +17,7 @@ const Footer = () => {
     <footer className="border-t mt-12 py-6 px-4 hidden md:block">
       <div className="container mx-auto">
         <div className="flex justify-center gap-8 text-sm text-gray-600">
+          <span className="text-xs text-gray-500">© logo-foot.com</span>
           <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
             <DialogTrigger className="flex items-center gap-2 hover:text-gray-900 transition-colors">
               <MessageCircle className="w-4 h-4" />

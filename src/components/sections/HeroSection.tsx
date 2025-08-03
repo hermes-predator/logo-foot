@@ -1,8 +1,9 @@
 import React from 'react';
-import { Folder, Download, ShoppingCart, Star, Users, Award } from "lucide-react";
+import { Folder, Download, ShoppingCart, CheckCircle2, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
+import HeroTestimonialBadge from './HeroTestimonialBadge';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -10,104 +11,77 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
   return (
-    <section className="relative pt-16 pb-12 px-4 overflow-hidden bg-white">
-      {/* Background subtil */}
+    <section className="relative pt-20 pb-16 px-4 overflow-hidden">
+      {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-gradient-to-b from-gray-100/30 to-transparent rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-100/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-6xl mx-auto">
-        {/* Badge premium sobre */}
-        <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg">
-            <Award className="w-4 h-4" />
-            Collection Professionnelle
-          </div>
+      <div className="max-w-5xl mx-auto text-center">
+        {/* Badge premium simple */}
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-8 shadow-lg">
+          <Zap className="w-4 h-4" />
+          Solution complète de ressources football
         </div>
 
-        {/* Section principale avec promesse brandée */}
-        <div className="text-center mb-8">
-          <div className="mb-4">
-            <span className="text-base font-medium text-gray-600 tracking-wide uppercase">
-              La référence des ressources football
-            </span>
-          </div>
-          
-          {/* H1 avec promesse forte */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-6 leading-none tracking-tight">
-            Logos des clubs
-            <br />
-            <span className="text-gray-700">de football</span>
-          </h1>
+        {/* Titre principal - H1 avec le mot-clé important */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          Logos des clubs de football
+        </h1>
 
-          {/* Promesse de valeur claire */}
-          <div className="max-w-4xl mx-auto mb-6">
-            <p className="text-xl md:text-2xl font-light text-gray-800 mb-2 leading-relaxed">
-              8 600+ logos professionnels en un seul fichier
-            </p>
-            <p className="text-base text-gray-600 leading-relaxed">
-              Format uniforme • Haute résolution • Organisation parfaite • Couverture mondiale
-            </p>
-          </div>
+        {/* Sous-titre accrocheur */}
+        <div className="mb-8">
+          <p className="text-xl md:text-2xl text-gray-700 font-medium mb-2">
+            La solution simple pour obtenir tous les logos
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Fichier spécialisé sur les ressources numériques du football : plus de 8 600 logos en haute qualité, 
+            organisés et prêts à utiliser pour vos projets.
+          </p>
         </div>
 
-        {/* Badge de confiance sobre avec étoiles */}
-        <div className="flex justify-center mb-8">
-          <div className="bg-white border border-gray-200 rounded-2xl px-6 py-3 shadow-sm">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
-                  ))}
-                </div>
-                <span className="text-sm font-medium text-gray-700">4.9/5</span>
-              </div>
-              <div className="h-4 w-px bg-gray-300" />
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-gray-600" />
-                <span className="text-sm font-medium text-gray-700">1000+ utilisateurs</span>
-              </div>
-            </div>
-          </div>
+        {/* Badge témoignage */}
+        <div className="flex justify-center mb-10">
+          <HeroTestimonialBadge />
         </div>
 
-        {/* Statistiques compactes */}
-        <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-10">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-gray-900 mb-1">8 600+</div>
-            <div className="text-xs text-gray-600 font-medium">Logos inclus</div>
+        {/* Points de confiance */}
+        <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <CheckCircle2 className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Format professionnel</span>
           </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-gray-900 mb-1">200+</div>
-            <div className="text-xs text-gray-600 font-medium">Pays couverts</div>
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <Shield className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
           </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-gray-900 mb-1">100%</div>
-            <div className="text-xs text-gray-600 font-medium">Haute qualité</div>
+          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+            <Download className="w-5 h-5 text-green-600" />
+            <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
           </div>
         </div>
 
         {/* Boutons d'action */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Dialog>
             <DialogTrigger asChild>
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-800 font-semibold px-10 py-4 h-auto text-lg transition-all duration-300"
+                className="bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg"
               >
-                <Folder className="w-5 h-5 mr-3" />
-                Voir le contenu détaillé
+                <Folder className="w-5 h-5 mr-2" />
+                Descriptif du ZIP
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
               <DialogHeader>
                 <DialogTitle className="text-2xl font-bold text-gray-900">
-                  Contenu du fichier ZIP
+                  Descriptif du ZIP
                 </DialogTitle>
-                <div className="text-sm text-gray-600 mb-4 font-mono">
+                <div className="text-sm text-gray-600 mb-4">
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </div>
                 <DialogDescription>
@@ -120,23 +94,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <Button 
             size="lg" 
             onClick={onScrollToPayment}
-            className="bg-green-600 hover:bg-green-700 text-white font-bold px-12 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group"
+            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="flex items-center relative z-10">
-              <Download className="w-5 h-5 mr-3" />
-              Télécharger maintenant
-              <span className="ml-2 text-green-100">(8€)</span>
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <ShoppingCart className="w-5 h-5 mr-2" />
+            Télécharger (8€)
           </Button>
         </div>
 
-        {/* Garanties */}
-        <div className="text-center mt-6">
-          <p className="text-sm text-gray-500">
-            ✓ Accès immédiat après paiement  •  ✓ Fichiers organisés  •  ✓ Support technique inclus
-          </p>
-        </div>
+        {/* Note de confiance */}
+        <p className="text-sm text-gray-500 mt-6">
+          Téléchargement instantané après paiement • Fichiers organisés • Support inclus
+        </p>
       </div>
     </section>
   );

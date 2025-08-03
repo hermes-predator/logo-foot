@@ -40,9 +40,6 @@ const Footer = () => {
           <DisclaimerDialog />
           <FAQDialog />
         </div>
-        <div className="flex justify-center mt-6">
-          <span className="text-xs text-gray-500">© logo-foot.com</span>
-        </div>
       </div>
     </footer>
   );

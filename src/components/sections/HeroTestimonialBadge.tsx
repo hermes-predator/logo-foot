@@ -63,8 +63,8 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       
       {/* Témoignage à droite */}
       <div className="flex items-center gap-3 bg-gradient-to-r from-green-50/80 to-emerald-50/75 backdrop-blur-sm rounded-2xl px-6 py-4 border border-green-150/65 transition-all duration-500 hover:from-green-50/90 hover:to-emerald-50/85 hover:border-green-150 hover:scale-[1.02] transform">
-        {/* Badge Judge.me à gauche dans le container vert */}
-        <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full border-2 border-gray-200 flex items-center justify-center shadow-lg">
+        {/* Badge Judge.me à gauche dans le container vert - seulement l'image */}
+        <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
           <img src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" alt="Judge.me" className="h-6 w-auto" loading="lazy" />
         </div>
         

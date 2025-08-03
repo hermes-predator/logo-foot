@@ -31,16 +31,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           Logos des clubs de football
         </h1>
 
-        {/* Sous-titre accrocheur */}
-        <div className="mb-8">
-          <p className="text-xl md:text-2xl text-gray-700 font-medium mb-2">
-            La solution simple pour obtenir tous les logos
-          </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Fichier spécialisé sur les ressources numériques du football : plus de 8 600 logos en haute qualité, 
-            organisés et prêts à utiliser pour vos projets.
-          </p>
-        </div>
 
         {/* Badge témoignage */}
         <div className="flex justify-center mb-10">

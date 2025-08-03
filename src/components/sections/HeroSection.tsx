@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, ShoppingCart, CheckCircle2, Zap, Shield } from "lucide-react";
+import { Folder, Download, ShoppingCart, Star, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
@@ -134,11 +134,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Gros bloc des avis clients centré */}
         <div className="max-w-2xl mx-auto mb-8">
-          <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
-            {/* Étoiles en haut */}
-            <div className="flex justify-center gap-1 mb-6">
-              {[...Array(5)].map((_, i) => <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />)}
+        <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
+          {/* Étoiles et note en haut */}
+          <div className="flex justify-center items-center gap-3 mb-6">
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
             </div>
+            <span className="text-lg font-semibold text-gray-700">5/5</span>
+          </div>
             
             {/* Avatars circulaires synchronisés */}
             <div className="flex justify-center items-center -space-x-2 mb-6 flex-wrap">

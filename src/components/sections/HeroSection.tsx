@@ -75,11 +75,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                 nos packs de logos football <span className="font-semibold text-yellow-600">4,9/5</span>
               </p>
               
-              {/* Animation des témoignages */}
-              <HeroTestimonialBadge />
-              
               {/* Badge Judge.me */}
-              <div className="mt-4 flex justify-center">
+              <div className="flex justify-center mb-4">
                 <div className="flex items-center gap-2 bg-white rounded-full px-3 py-1 border border-gray-200 shadow-sm">
                   <img 
                     src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
@@ -90,6 +87,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   <span className="text-xs text-gray-600 font-medium">Avis vérifiés</span>
                 </div>
               </div>
+            </div>
+
+            {/* Animation des témoignages - Section séparée pour plus de visibilité */}
+            <div className="bg-white/90 rounded-xl p-4 border border-gray-200 shadow-md">
+              <HeroTestimonialBadge />
             </div>
           </div>
 

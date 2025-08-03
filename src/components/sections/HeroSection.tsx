@@ -36,33 +36,59 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-4">
-            {/* Section avis clients élargie */}
-            <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-200 flex items-center justify-center shadow-md">
-                  <img 
-                    src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
-                    alt="Judge.me" 
-                    className="h-6 w-auto" 
-                    loading="lazy"
-                  />
+            {/* Section avis clients inspirée du modèle */}
+            <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg text-center">
+              {/* Étoiles en haut */}
+              <div className="flex justify-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <CheckCircle2 key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+                ))}
+              </div>
+              
+              {/* Avatars circulaires */}
+              <div className="flex justify-center items-center gap-2 mb-4 flex-wrap">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  JM
                 </div>
-                <div>
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <CheckCircle2 key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-sm text-gray-600 font-medium">Avis clients vérifiés</p>
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  AL
+                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  SC
+                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  MC
+                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  TL
+                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
+                  +
                 </div>
               </div>
               
+              {/* Texte principal */}
+              <p className="text-lg font-semibold text-gray-800 mb-2">
+                <span className="text-green-600">+ 200</span> personnes ont téléchargé
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
+                nos packs de logos football <span className="font-semibold text-yellow-600">4,9/5</span>
+              </p>
+              
+              {/* Animation des témoignages */}
               <HeroTestimonialBadge />
               
-              <div className="mt-4 text-center">
-                <p className="text-xs text-gray-500">
-                  <span className="font-semibold text-gray-700">200+</span> clients satisfaits
-                </p>
+              {/* Badge Judge.me */}
+              <div className="mt-4 flex justify-center">
+                <div className="flex items-center gap-2 bg-white rounded-full px-3 py-1 border border-gray-200 shadow-sm">
+                  <img 
+                    src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+                    alt="Judge.me" 
+                    className="h-4 w-auto" 
+                    loading="lazy"
+                  />
+                  <span className="text-xs text-gray-600 font-medium">Avis vérifiés</span>
+                </div>
               </div>
             </div>
           </div>

@@ -26,17 +26,11 @@ const testimonials = [
   }
 ];
 
-const HeroTestimonialBadge = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface HeroTestimonialBadgeProps {
+  currentIndex: number;
+}
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({ currentIndex }) => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (

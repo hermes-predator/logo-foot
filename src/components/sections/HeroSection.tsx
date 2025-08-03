@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Folder, Download, ShoppingCart, CheckCircle2, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -7,9 +7,43 @@ import HeroTestimonialBadge from './HeroTestimonialBadge';
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
+// Données des témoignages partagées
+const testimonials = [
+  {
+    name: "Pierre M.",
+    content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
+    rating: 5,
+    initials: "PM",
+    bgColor: "bg-gradient-to-br from-blue-400 to-blue-600"
+  },
+  {
+    name: "Yassine B.",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci pour le gain de temps",
+    rating: 5,
+    initials: "YB",
+    bgColor: "bg-gradient-to-br from-green-400 to-green-600"
+  },
+  {
+    name: "Emma L.",
+    content: "Tout est parfait, merci :)",
+    rating: 5,
+    initials: "EL",
+    bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
+  }
+];
+
 const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToPayment
 }) => {
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
   return <section className="relative pt-20 pb-16 px-4 overflow-hidden">
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
@@ -78,23 +112,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {[...Array(5)].map((_, i) => <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />)}
             </div>
             
-            {/* Avatars circulaires plus grands */}
+            {/* Avatars circulaires synchronisés */}
             <div className="flex justify-center items-center gap-3 mb-6 flex-wrap">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                JM
-              </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                AL
-              </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                SC
-              </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                MC
-              </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                TL
-              </div>
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className={`w-16 h-16 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl transition-all duration-300 ${
+                    index === currentTestimonialIndex ? 'scale-110 ring-4 ring-blue-200' : 'scale-100'
+                  }`}
+                >
+                  {testimonial.initials}
+                </div>
+              ))}
               <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
                 +
               </div>
@@ -109,7 +138,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Animation des témoignages */}
             <div>
-              <HeroTestimonialBadge />
+              <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
             </div>
           </div>
         </div>

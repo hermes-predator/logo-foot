@@ -97,16 +97,48 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-4">
-            {/* Section avis clients inspirée du modèle */}
-            
+            {/* Bloc des avis clients déplacé ici */}
+            <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg text-center">
+              {/* Étoiles et note en haut */}
+              <div className="flex justify-center items-center gap-3 mb-4">
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+                </div>
+                <span className="text-base font-semibold text-gray-700">
+                  {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
+                </span>
+              </div>
+              
+              {/* Avatars circulaires synchronisés */}
+              <div className="flex justify-center items-center -space-x-2 mb-4 flex-wrap">
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className={`w-12 h-12 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
+                      index === currentTestimonialIndex ? 'scale-110 ring-4 ring-blue-200' : 'scale-100'
+                    }`}
+                  >
+                    {testimonial.initials}
+                  </div>
+                ))}
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+                  +
+                </div>
+              </div>
+              
+              {/* Animation des témoignages */}
+              <div>
+                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+            </div>
           </div>
 
-          {/* Colonne droite - Actions */}
+          {/* Colonne droite - Actions avec boutons plus petits */}
           <div className="space-y-4">
             <Dialog>
               <DialogTrigger asChild>
-                <Button variant="outline" size="lg" className="w-full bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg">
-                  <Folder className="w-5 h-5 mr-2" />
+                <Button variant="outline" size="lg" className="max-w-sm bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 h-auto text-base">
+                  <Folder className="w-4 h-4 mr-2" />
                   Descriptif du ZIP
                 </Button>
               </DialogTrigger>
@@ -125,56 +157,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </DialogContent>
             </Dialog>
             
-            <Button size="lg" onClick={onScrollToPayment} className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <ShoppingCart className="w-5 h-5 mr-2" />
+            <Button size="lg" onClick={onScrollToPayment} className="max-w-sm bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <ShoppingCart className="w-4 h-4 mr-2" />
               Télécharger (8€)
             </Button>
           </div>
         </div>
 
-        {/* Gros bloc des avis clients centré */}
-        <div className="max-w-2xl mx-auto mb-8">
-        <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
-          {/* Étoiles et note en haut */}
-          <div className="flex justify-center items-center gap-3 mb-6">
-            <div className="flex gap-1">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
-            </div>
-            <span className="text-lg font-semibold text-gray-700">
-              {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
-            </span>
-          </div>
-            
-            {/* Avatars circulaires synchronisés */}
-            <div className="flex justify-center items-center -space-x-2 mb-6 flex-wrap">
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className={`w-16 h-16 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl transition-all duration-300 ${
-                    index === currentTestimonialIndex ? 'scale-110 ring-4 ring-blue-200' : 'scale-100'
-                  }`}
-                >
-                  {testimonial.initials}
-                </div>
-              ))}
-              <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
-                +
-              </div>
-            </div>
-            
-            {/* Texte principal plus grand */}
-            
-            
-            
-            {/* Badge Judge.me */}
-            
-            
-            {/* Animation des témoignages */}
-            <div>
-              <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-            </div>
-          </div>
-        </div>
 
         {/* Note de confiance */}
         <p className="text-sm text-gray-500 mt-6">

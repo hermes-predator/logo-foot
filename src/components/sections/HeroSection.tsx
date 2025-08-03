@@ -87,11 +87,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
                   <span className="text-xs text-gray-600 font-medium">Avis vérifiés</span>
                 </div>
               </div>
-            </div>
-
-            {/* Animation des témoignages - Section séparée pour plus de visibilité */}
-            <div className="bg-white/90 rounded-xl p-4 border border-gray-200 shadow-md">
-              <HeroTestimonialBadge />
+              
+              {/* Animation des témoignages intégrée */}
+              <div className="mt-4">
+                <HeroTestimonialBadge />
+              </div>
             </div>
           </div>
 
@@ -134,19 +134,63 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           </div>
         </div>
 
-        {/* Points de confiance - en dessous */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <CheckCircle2 className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Format professionnel</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Shield className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Download className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
+        {/* Gros bloc des avis clients centré */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
+            {/* Étoiles en haut */}
+            <div className="flex justify-center gap-1 mb-6">
+              {[...Array(5)].map((_, i) => (
+                <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            
+            {/* Avatars circulaires plus grands */}
+            <div className="flex justify-center items-center gap-3 mb-6 flex-wrap">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                JM
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                AL
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                SC
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                MC
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                TL
+              </div>
+              <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-xl">
+                +
+              </div>
+            </div>
+            
+            {/* Texte principal plus grand */}
+            <p className="text-2xl font-bold text-gray-800 mb-3">
+              <span className="text-green-600">+ 200</span> personnes ont téléchargé
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              nos packs de logos football <span className="font-bold text-yellow-600">4,9/5</span>
+            </p>
+            
+            {/* Badge Judge.me */}
+            <div className="flex justify-center mb-6">
+              <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 border border-gray-200 shadow-sm">
+                <img 
+                  src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+                  alt="Judge.me" 
+                  className="h-5 w-auto" 
+                  loading="lazy"
+                />
+                <span className="text-sm text-gray-600 font-medium">Avis vérifiés</span>
+              </div>
+            </div>
+            
+            {/* Animation des témoignages */}
+            <div>
+              <HeroTestimonialBadge />
+            </div>
           </div>
         </div>
 

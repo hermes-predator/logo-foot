@@ -4,14 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
-
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
-
-const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
-  return (
-    <section className="relative pt-20 pb-16 px-4 overflow-hidden">
+const HeroSection: React.FC<HeroSectionProps> = ({
+  onScrollToPayment
+}) => {
+  return <section className="relative pt-20 pb-16 px-4 overflow-hidden">
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
@@ -37,73 +36,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-4">
             {/* Section avis clients inspirée du modèle */}
-            <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg text-center">
-              {/* Étoiles en haut */}
-              <div className="flex justify-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <CheckCircle2 key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-                ))}
-              </div>
-              
-              {/* Avatars circulaires */}
-              <div className="flex justify-center items-center gap-2 mb-4 flex-wrap">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  JM
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  AL
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  SC
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  MC
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  TL
-                </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-white shadow-lg">
-                  +
-                </div>
-              </div>
-              
-              {/* Texte principal */}
-              <p className="text-lg font-semibold text-gray-800 mb-2">
-                <span className="text-green-600">+ 200</span> personnes ont téléchargé
-              </p>
-              <p className="text-sm text-gray-600 mb-4">
-                nos packs de logos football <span className="font-semibold text-yellow-600">4,9/5</span>
-              </p>
-              
-              {/* Badge Judge.me */}
-              <div className="flex justify-center mb-4">
-                <div className="flex items-center gap-2 bg-white rounded-full px-3 py-1 border border-gray-200 shadow-sm">
-                  <img 
-                    src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
-                    alt="Judge.me" 
-                    className="h-4 w-auto" 
-                    loading="lazy"
-                  />
-                  <span className="text-xs text-gray-600 font-medium">Avis vérifiés</span>
-                </div>
-              </div>
-              
-              {/* Animation des témoignages intégrée */}
-              <div className="mt-4">
-                <HeroTestimonialBadge />
-              </div>
-            </div>
+            
           </div>
 
           {/* Colonne droite - Actions */}
           <div className="space-y-4">
             <Dialog>
               <DialogTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="w-full bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg"
-                >
+                <Button variant="outline" size="lg" className="w-full bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg">
                   <Folder className="w-5 h-5 mr-2" />
                   Descriptif du ZIP
                 </Button>
@@ -123,11 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
               </DialogContent>
             </Dialog>
             
-            <Button 
-              size="lg" 
-              onClick={onScrollToPayment}
-              className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
+            <Button size="lg" onClick={onScrollToPayment} className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <ShoppingCart className="w-5 h-5 mr-2" />
               Télécharger (8€)
             </Button>
@@ -139,9 +75,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           <div className="bg-white/80 rounded-2xl p-8 border border-gray-200 shadow-lg text-center">
             {/* Étoiles en haut */}
             <div className="flex justify-center gap-1 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />
-              ))}
+              {[...Array(5)].map((_, i) => <CheckCircle2 key={i} className="w-8 h-8 text-yellow-400 fill-yellow-400" />)}
             </div>
             
             {/* Avatars circulaires plus grands */}
@@ -167,25 +101,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
             </div>
             
             {/* Texte principal plus grand */}
-            <p className="text-2xl font-bold text-gray-800 mb-3">
-              <span className="text-green-600">+ 200</span> personnes ont téléchargé
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
-              nos packs de logos football <span className="font-bold text-yellow-600">4,9/5</span>
-            </p>
+            
+            
             
             {/* Badge Judge.me */}
-            <div className="flex justify-center mb-6">
-              <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 border border-gray-200 shadow-sm">
-                <img 
-                  src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
-                  alt="Judge.me" 
-                  className="h-5 w-auto" 
-                  loading="lazy"
-                />
-                <span className="text-sm text-gray-600 font-medium">Avis vérifiés</span>
-              </div>
-            </div>
+            
             
             {/* Animation des témoignages */}
             <div>
@@ -199,8 +119,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
           Téléchargement instantané après paiement • Fichiers organisés • Support inclus
         </p>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;

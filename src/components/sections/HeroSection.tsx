@@ -32,63 +32,66 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToPayment }) => {
         </h1>
 
 
-        {/* Badge témoignage */}
-        <div className="flex justify-center mb-10">
-          <HeroTestimonialBadge />
-        </div>
+        {/* Layout en deux colonnes */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
+          {/* Colonne gauche - Avis clients */}
+          <div className="space-y-6">
+            <HeroTestimonialBadge />
+            
+            {/* Points de confiance */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+                <CheckCircle2 className="w-5 h-5 text-green-600" />
+                <span className="text-sm font-medium text-gray-700">Format professionnel</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+                <Shield className="w-5 h-5 text-green-600" />
+                <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
+                <Download className="w-5 h-5 text-green-600" />
+                <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
+              </div>
+            </div>
+          </div>
 
-        {/* Points de confiance */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <CheckCircle2 className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Format professionnel</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Shield className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Paiement sécurisé</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200 shadow-sm">
-            <Download className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-medium text-gray-700">Accès immédiat</span>
-          </div>
-        </div>
-
-        {/* Boutons d'action */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg"
-              >
-                <Folder className="w-5 h-5 mr-2" />
-                Descriptif du ZIP
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold text-gray-900">
+          {/* Colonne droite - Actions */}
+          <div className="space-y-4">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="w-full bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-4 h-auto text-lg"
+                >
+                  <Folder className="w-5 h-5 mr-2" />
                   Descriptif du ZIP
-                </DialogTitle>
-                <div className="text-sm text-gray-600 mb-4">
-                  ⦗FRONT-CLOUD⦘~ Football.zip
-                </div>
-                <DialogDescription>
-                  <PackDescription />
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
-          
-          <Button 
-            size="lg" 
-            onClick={onScrollToPayment}
-            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-          >
-            <ShoppingCart className="w-5 h-5 mr-2" />
-            Télécharger (8€)
-          </Button>
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-gray-900">
+                    Descriptif du ZIP
+                  </DialogTitle>
+                  <div className="text-sm text-gray-600 mb-4">
+                    ⦗FRONT-CLOUD⦘~ Football.zip
+                  </div>
+                  <DialogDescription>
+                    <PackDescription />
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            
+            <Button 
+              size="lg" 
+              onClick={onScrollToPayment}
+              className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-10 py-4 h-auto text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <ShoppingCart className="w-5 h-5 mr-2" />
+              Télécharger (8€)
+            </Button>
+          </div>
         </div>
 
         {/* Note de confiance */}

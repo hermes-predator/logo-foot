@@ -140,7 +140,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
             </div>
-            <span className="text-lg font-semibold text-gray-700">5/5</span>
+            <span className="text-lg font-semibold text-gray-700">
+              {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
+            </span>
           </div>
             
             {/* Avatars circulaires synchronisés */}

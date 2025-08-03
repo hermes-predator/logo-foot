@@ -50,17 +50,14 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
   currentIndex
 }) => {
   const currentTestimonial = testimonials[currentIndex];
-  return <div className="flex items-center gap-4">
-      {/* Badge Judge.me rond à gauche */}
-      <div className="flex-shrink-0 w-16 h-16 bg-white rounded-full border-2 border-gray-200 flex items-center justify-center shadow-lg">
-        <img src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" alt="Judge.me" className="h-8 w-auto" loading="lazy" />
-      </div>
+  return <div className="flex items-center justify-center">
+      {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
       <div className="flex items-center gap-3 bg-gradient-to-r from-green-50/80 to-emerald-50/75 backdrop-blur-sm rounded-2xl px-6 py-4 border border-green-150/65 transition-all duration-500 hover:from-green-50/90 hover:to-emerald-50/85 hover:border-green-150 hover:scale-[1.02] transform">
-        {/* Avatars empilés */}
-        <div className="flex items-center -space-x-2">
-          {testimonials.map((testimonial, index) => {})}
+        {/* Badge Judge.me à gauche dans le container vert */}
+        <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full border-2 border-gray-200 flex items-center justify-center shadow-lg">
+          <img src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" alt="Judge.me" className="h-6 w-auto" loading="lazy" />
         </div>
         
         <div className="flex items-center gap-2 min-w-0">

@@ -128,12 +128,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Étoiles et note en dessous des avis clients avec Judge.me à gauche */}
             <div className="flex justify-center items-center gap-3 -mt-2">
               <img 
-                src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
+                src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
                 alt="Judge.me Badge" 
                 className="h-5"
-                onError={(e) => {
-                  e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
-                }}
               />
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}

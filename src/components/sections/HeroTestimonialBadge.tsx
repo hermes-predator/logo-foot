@@ -63,18 +63,6 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       
       {/* Témoignage à droite */}
       <div className="flex items-center gap-3 bg-white rounded-2xl px-6 py-4 transition-all duration-500 hover:scale-[1.02] transform w-full">
-        {/* Badge Judge.me à gauche dans le container vert - seulement l'image */}
-        <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-          <img 
-            src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
-            alt="Judge.me Badge" 
-            className="h-6 w-auto"
-            onError={(e) => {
-              e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
-            }}
-          />
-        </div>
-        
         <div className="flex items-center gap-2 min-w-0">
           <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400" />
           <div className="flex flex-col min-w-0">

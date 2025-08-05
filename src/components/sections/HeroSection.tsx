@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
     return () => clearInterval(interval);
   }, []);
-  return <section className="relative pt-20 pb-16 px-4 overflow-hidden">
+  return <section className="relative pt-12 pb-8 px-4 overflow-hidden">
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
@@ -82,25 +82,25 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="max-w-5xl mx-auto text-center">
         {/* Badge premium simple */}
-        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-8 shadow-lg">
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg">
           <Zap className="w-4 h-4" />
           Solution complète de ressources football
         </div>
 
         {/* Titre principal - H1 */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-gray-900">
           Logos des clubs de football
         </h1>
 
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center mb-4">
           {/* Colonne gauche - Avis clients */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-2xl p-6 text-center max-w-lg mx-auto">
+            <div className="bg-white/80 rounded-2xl p-4 text-center max-w-lg mx-auto">
               {/* Badge Judge.me seul */}
-              <div className="flex justify-center items-center mb-4">
+              <div className="flex justify-center items-center mb-2">
                 <div className="flex items-center">
                   <img 
                     src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
@@ -114,7 +114,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               
               {/* Avatars circulaires synchronisés */}
-              <div className="flex justify-center items-center -space-x-2 mb-3 flex-wrap">
+              <div className="flex justify-center items-center -space-x-2 mb-2 flex-wrap">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
@@ -149,7 +149,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Colonne droite - Actions avec boutons plus petits */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" size="lg" className="max-w-sm bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 h-auto text-base">
@@ -181,7 +181,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Note de confiance */}
-        <p className="text-sm text-gray-500 mt-6">
+        <p className="text-sm text-gray-500 mt-4">
           Téléchargement instantané après paiement • Fichiers organisés • Support inclus
         </p>
       </div>

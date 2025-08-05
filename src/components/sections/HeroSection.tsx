@@ -130,7 +130,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <img 
                 src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
                 alt="Judge.me Badge" 
-                className="h-5"
+                className="h-8"
               />
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}

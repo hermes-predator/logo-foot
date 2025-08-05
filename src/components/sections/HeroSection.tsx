@@ -87,15 +87,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           Solution complète de ressources football
         </div>
 
-        {/* Titre principal - H1 avec branding amélioré */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="bg-gradient-to-r from-blue-600 via-green-600 to-blue-700 bg-clip-text text-transparent">
-            Logos
-          </span>{" "}
-          <span className="text-gray-900">des clubs de</span>{" "}
-          <span className="bg-gradient-to-r from-green-600 via-blue-600 to-green-700 bg-clip-text text-transparent">
-            football
-          </span>
+        {/* Titre principal - H1 */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
+          Logos des clubs de football
         </h1>
 
 
@@ -143,7 +137,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Étoiles et note en dessous des avis clients */}
-            <div className="flex justify-center items-center gap-2 mb-4">
+            <div className="flex justify-center items-center gap-2 -mt-2">
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
               </div>

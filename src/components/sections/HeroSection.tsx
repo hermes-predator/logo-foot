@@ -87,9 +87,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           Solution complète de ressources football
         </div>
 
-        {/* Titre principal - H1 avec le mot-clé important */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-          Logos des clubs de football
+        {/* Titre principal - H1 avec branding amélioré */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <span className="bg-gradient-to-r from-blue-600 via-green-600 to-blue-700 bg-clip-text text-transparent">
+            Logos
+          </span>{" "}
+          <span className="text-gray-900">des clubs de</span>{" "}
+          <span className="bg-gradient-to-r from-green-600 via-blue-600 to-green-700 bg-clip-text text-transparent">
+            football
+          </span>
         </h1>
 
 

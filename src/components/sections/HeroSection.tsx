@@ -105,8 +105,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-4">
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-2xl p-6 text-center max-w-lg mx-auto">
-              {/* Badge Judge.me et étoiles */}
-              <div className="flex justify-center items-center gap-4 mb-4">
+              {/* Badge Judge.me seul */}
+              <div className="flex justify-center items-center mb-4">
                 <div className="flex items-center">
                   <img 
                     src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
@@ -116,9 +116,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                       e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
                     }}
                   />
-                </div>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
                 </div>
               </div>
               
@@ -139,12 +136,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
 
-              {/* Note déplacée en dessous des bulles */}
-              <div className="mb-4">
+              {/* Étoiles et note déplacées en dessous des bulles */}
+              <div className="flex justify-center items-center gap-2 mb-4">
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+                </div>
                 <span className="text-lg font-bold text-gray-700">
                   {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
                 </span>
-                <span className="text-sm text-gray-500 ml-1">({testimonials.length} avis)</span>
+                <span className="text-sm text-gray-500">({testimonials.length} avis)</span>
               </div>
               
               {/* Animation des témoignages */}

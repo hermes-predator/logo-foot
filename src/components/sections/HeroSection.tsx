@@ -138,7 +138,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <span className="text-lg font-bold text-gray-700">
                 {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
               </span>
-              <span className="text-sm text-gray-500">({testimonials.length} avis)</span>
+              <span className="text-sm text-gray-500">(1034 avis)</span>
             </div>
           </div>
 

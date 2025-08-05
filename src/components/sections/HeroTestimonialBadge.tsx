@@ -79,6 +79,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
             </div>
           </div>
         </div>
+        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 fill-gray-400 self-start mt-1" />
       </div>
     </div>;
 };

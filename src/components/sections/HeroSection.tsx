@@ -100,18 +100,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-2xl p-4 text-center max-w-lg mx-auto">
               {/* Badge Judge.me seul */}
-              <div className="flex justify-center items-center mb-2">
-                <div className="flex items-center">
-                  <img 
-                    src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
-                    alt="Judge.me Badge" 
-                    className="h-6"
-                    onError={(e) => {
-                      e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
-                    }}
-                  />
-                </div>
-              </div>
+              {/* Badge Judge.me déplacé avec les étoiles */}
               
               {/* Avatars circulaires synchronisés */}
               <div className="flex justify-center items-center -space-x-2 mb-2 flex-wrap">
@@ -136,8 +125,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
             
-            {/* Étoiles et note en dessous des avis clients */}
-            <div className="flex justify-center items-center gap-2 -mt-2">
+            {/* Étoiles et note en dessous des avis clients avec Judge.me à gauche */}
+            <div className="flex justify-center items-center gap-3 -mt-2">
+              <img 
+                src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
+                alt="Judge.me Badge" 
+                className="h-5"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
+                }}
+              />
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
               </div>

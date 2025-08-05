@@ -64,22 +64,24 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Témoignage à droite */}
       <div className="flex items-start justify-between gap-3 bg-white rounded-2xl px-8 py-6 w-full h-[100px]">
         <div className="flex items-start gap-2 min-w-0 h-full justify-center flex-col">
-          <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400" />
-          <div className="flex flex-col min-w-0">
-            <p className="text-sm text-gray-600 max-w-[500px] font-medium leading-relaxed line-clamp-2">
-              {currentTestimonial.content}
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-gray-400 font-medium">
-                - {currentTestimonial.name}
-              </span>
-              <div className="flex items-center gap-0.5">
-                {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />)}
+          <div className="flex items-start gap-2 min-w-0">
+            <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400 mt-0.5" />
+            <div className="flex flex-col min-w-0 flex-1">
+              <p className="text-sm text-gray-600 max-w-[500px] font-medium leading-relaxed line-clamp-2">
+                {currentTestimonial.content}
+              </p>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-gray-400 font-medium">
+                  - {currentTestimonial.name}
+                </span>
+                <div className="flex items-center gap-0.5">
+                  {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />)}
+                </div>
               </div>
             </div>
+            <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 fill-gray-400 mt-0.5" />
           </div>
         </div>
-        <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 fill-gray-400 self-start mt-1" />
       </div>
     </div>;
 };

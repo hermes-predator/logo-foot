@@ -136,21 +136,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
 
-              {/* Étoiles et note déplacées en dessous des bulles */}
-              <div className="flex justify-center items-center gap-2 mb-4">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
-                </div>
-                <span className="text-lg font-bold text-gray-700">
-                  {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
-                </span>
-                <span className="text-sm text-gray-500">({testimonials.length} avis)</span>
-              </div>
-              
               {/* Animation des témoignages */}
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
+            </div>
+            
+            {/* Étoiles et note en dessous des avis clients */}
+            <div className="flex justify-center items-center gap-2 mb-4">
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <span className="text-lg font-bold text-gray-700">
+                {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
+              </span>
+              <span className="text-sm text-gray-500">({testimonials.length} avis)</span>
             </div>
           </div>
 

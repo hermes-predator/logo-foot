@@ -99,8 +99,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-4">
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg text-center">
-              {/* Étoiles et note en haut */}
-              <div className="flex justify-center items-center gap-3 mb-4">
+              {/* Badge Judge.me et étoiles sur la même ligne */}
+              <div className="flex justify-center items-center gap-4 mb-4">
+                <div className="flex items-center">
+                  <img 
+                    src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
+                    alt="Judge.me Badge" 
+                    className="h-6"
+                  />
+                </div>
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
                 </div>

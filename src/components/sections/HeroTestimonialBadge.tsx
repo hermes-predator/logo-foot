@@ -66,15 +66,15 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
         <div className="flex items-center gap-2 min-w-0">
           <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400" />
           <div className="flex flex-col min-w-0">
-            <p className="text-xs text-gray-600 truncate max-w-[380px] font-medium">
+            <p className="text-sm text-gray-600 truncate max-w-[380px] font-medium">
               {currentTestimonial.content}
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-[10px] text-gray-400 font-medium">
+              <span className="text-xs text-gray-400 font-medium">
                 - {currentTestimonial.name}
               </span>
               <div className="flex items-center gap-0.5">
-                {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-2.5 h-2.5 text-yellow-400 fill-yellow-400" />)}
+                {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />)}
               </div>
             </div>
           </div>

@@ -98,7 +98,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-4">
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-2xl p-6 border border-gray-200 shadow-lg text-center">
+            <div className="bg-white/80 rounded-2xl p-6 text-center">
               {/* Badge Judge.me et étoiles sur la même ligne */}
               <div className="flex justify-center items-center gap-4 mb-4">
                 <div className="flex items-center">

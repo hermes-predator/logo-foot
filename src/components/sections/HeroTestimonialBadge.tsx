@@ -62,7 +62,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
-      <div className="flex items-center gap-3 bg-gradient-to-r from-green-50/80 to-emerald-50/75 backdrop-blur-sm rounded-2xl px-6 py-4 border border-green-150/65 transition-all duration-500 hover:from-green-50/90 hover:to-emerald-50/85 hover:border-green-150 hover:scale-[1.02] transform">
+      <div className="flex items-center gap-3 bg-white rounded-2xl px-6 py-4 transition-all duration-500 hover:scale-[1.02] transform">
         {/* Badge Judge.me à gauche dans le container vert - seulement l'image */}
         <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
           <img 

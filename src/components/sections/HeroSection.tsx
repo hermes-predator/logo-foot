@@ -136,7 +136,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
               </div>
               <span className="text-lg font-bold text-gray-700">
-                {(testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length).toFixed(1)}/5
+                4.9/5
               </span>
               <span className="text-sm text-gray-500">(1034 avis)</span>
             </div>

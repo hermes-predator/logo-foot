@@ -62,7 +62,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
-      <div className="flex items-center justify-center gap-3 bg-white rounded-2xl px-6 py-4 transition-all duration-500 hover:scale-[1.02] transform w-full">
+      <div className="flex items-center justify-center gap-3 bg-white rounded-2xl px-8 py-6 w-full">
         <div className="flex items-center gap-2 min-w-0">
           <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400" />
           <div className="flex flex-col min-w-0">

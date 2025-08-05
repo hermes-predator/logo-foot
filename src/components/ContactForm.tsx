@@ -40,7 +40,7 @@ const ContactForm = ({
             {/* Note FAQ avec lien */}
             <div className="text-center mb-6">
               <div className="text-sm text-gray-600">
-                Une <FAQDialog asLink={true} onContactClose={onClose} /> est disponible pour répondre aux questions les plus courantes.
+                Une <FAQDialog asLink={true} onContactClose={onClose} /> est disponible pour répondre aux questions fréquentes.
               </div>
             </div>
           </div>

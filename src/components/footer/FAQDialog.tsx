@@ -54,7 +54,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
             <DialogHeader>
               <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Questions fréquentes</DialogTitle>
               <DialogDescription>
-                Retrouvez les réponses aux questions les plus courantes concernant nos produits et services.
+                Retrouvez les réponses aux questions fréquentes concernant nos produits et services.
               </DialogDescription>
             </DialogHeader>
             <div className="mt-4">
@@ -133,7 +133,7 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
         <DialogHeader>
           <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Questions fréquentes</DialogTitle>
           <DialogDescription>
-            Retrouvez les réponses aux questions les plus courantes concernant nos produits et services.
+            Retrouvez les réponses aux questions fréquentes concernant nos produits et services.
           </DialogDescription>
         </DialogHeader>
         <div className="mt-4">

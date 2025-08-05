@@ -39,7 +39,7 @@ const DisclaimerDialog = () => {
               </div>
               <div className="text-sm leading-relaxed text-gray-700 space-y-6">
                 <p className="text-sm leading-relaxed text-gray-700">
-                  Notre fichier permet une aide aux internautes en regroupant, organisant et rendant accessibles des ressources éparses du football à des fins de consultation ou de création personnelle.
+                  Notre fichier offre une aide aux internautes en regroupant, organisant et rendant accessibles des ressources éparses du football à des fins de consultation ou de création personnelle.
                 </p>
                 
                 <div className="space-y-3 pt-4 border-t border-gray-200/50">

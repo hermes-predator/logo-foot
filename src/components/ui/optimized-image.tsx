@@ -94,7 +94,12 @@ export function OptimizedImage({
             {priority && <link rel="preload" as="image" href={optimizedSrc} />}
             
             <img
-              ref={imgRef}
+              ref={(el) => {
+                imgRef.current = el;
+                if (el && priority) {
+                  el.setAttribute('fetchpriority', 'high');
+                }
+              }}
               src={shouldLoad ? optimizedSrc : '/placeholder.svg'}
               srcSet={shouldLoad ? srcSet : ''}
               sizes={sizes}
@@ -105,7 +110,6 @@ export function OptimizedImage({
               onError={handleError}
               loading={priority ? 'eager' : 'lazy'}
               decoding={priority ? 'sync' : 'async'}
-              fetchPriority={priority ? 'high' : 'auto'}
               className={cn(
                 `w-full h-full transition-opacity duration-300 ${
                   isLoaded ? 'opacity-100' : 'opacity-0'

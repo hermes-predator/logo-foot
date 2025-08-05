@@ -115,7 +115,7 @@ const BlogImage = ({
       link.rel = 'preload';
       link.as = 'image';
       link.href = optimizedSrc;
-      link.fetchPriority = 'high';
+      link.setAttribute('fetchpriority', 'high');
       document.head.appendChild(link);
       
       return () => {
@@ -135,7 +135,12 @@ const BlogImage = ({
     >
       <AspectRatio ratio={aspectRatio} className="overflow-hidden rounded-lg shadow-md bg-gradient-to-br from-gray-100 to-gray-200">
         <img
-          ref={imgRef}
+          ref={(el) => {
+            imgRef.current = el;
+            if (el && priority) {
+              el.setAttribute('fetchpriority', 'high');
+            }
+          }}
           src={isInView || priority ? optimizedSrc : '/placeholder.svg'}
           alt={alt}
           title={imageTitle}
@@ -146,7 +151,6 @@ const BlogImage = ({
           } ${isDefault ? 'opacity-90' : ''} ${className}`}
           loading={priority ? "eager" : "lazy"}
           decoding={priority ? "sync" : "async"}
-          fetchPriority={priority ? "high" : "auto"}
           itemProp="contentUrl"
           onContextMenu={(e) => e.preventDefault()}
           draggable="false"

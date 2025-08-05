@@ -119,14 +119,18 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   <Skeleton className="w-full h-full absolute inset-0" />
                 )}
                 <img
-                  ref={imgRef}
+                  ref={(el) => {
+                    imgRef.current = el;
+                    if (el && isPriority) {
+                      el.setAttribute('fetchpriority', 'high');
+                    }
+                  }}
                   src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
                   alt={getSeoDescription(item)}
                   className="w-full h-full object-contain transition-opacity duration-300"
                   loading={isPriority ? "eager" : "lazy"}
                   decoding={isPriority ? "sync" : "async"}
                   itemProp={isPriority ? "image" : undefined}
-                  fetchPriority={isPriority ? "high" : "auto"}
                   data-caption={item.title}
                   data-description={getSeoDescription(item)}
                 />

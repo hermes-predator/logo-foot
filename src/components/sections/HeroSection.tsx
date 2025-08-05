@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-2 gap-8 items-center mb-4">
+        <div className="grid md:grid-cols-2 gap-8 items-center mb-4 relative">
           {/* Colonne gauche - Avis clients */}
           <div className="space-y-2">
             {/* Bloc des avis clients déplacé ici */}
@@ -144,6 +144,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <span className="text-sm text-gray-500">({testimonials.length} avis)</span>
             </div>
           </div>
+
+          {/* Trait de séparation vertical */}
+          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
           {/* Colonne droite - Actions avec boutons plus petits */}
           <div className="space-y-2">

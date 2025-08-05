@@ -106,6 +106,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     src="https://judge.me/reviews/badge_shop_preview?url=https%3A%2F%2Flogo-foot.fr%2F&color=%23FFD700" 
                     alt="Judge.me Badge" 
                     className="h-6"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=50&fit=crop&auto=format';
+                    }}
                   />
                 </div>
                 <div className="flex gap-1">

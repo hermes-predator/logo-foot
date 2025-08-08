@@ -63,7 +63,7 @@ const BlogPostSEO: React.FC = () => {
         </div>
       </div>
       
-      <CanonicalTag url={canonicalUrl} isDefault={true} />
+      <CanonicalTag url={canonicalUrl} />
       <HreflangTags languages={languages} defaultLanguage="fr" />
       <EnhancedOpenGraph 
         post={post}
@@ -75,31 +75,27 @@ const BlogPostSEO: React.FC = () => {
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={enhancedKeywords} />
+        
         <meta name="author" content="Logo Foot" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="language" content="fr-FR" />
         
         <meta name="geo.region" content="FR" />
         <meta name="geo.placename" content="France" />
-        <meta name="dc.language" content="fr" />
-        <meta name="dc.source" content={canonicalUrl} />
-        <meta name="dc.title" content={metaTitle} />
-        <meta name="dc.description" content={metaDescription} />
-        <meta name="dc.subject" content={post.keywords} />
-        <meta name="dc.publisher" content="Logo Foot" />
         
-        <meta name="citation_title" content={post.title} />
-        <meta name="citation_publication_date" content={post.date} />
-        <meta name="citation_author" content="Logo Foot" />
-        <meta name="citation_fulltext_html_url" content={canonicalUrl} />
         
-        {post.previousPostId && (
-          <link rel="prev" href={`https://logo-foot.com/blog/${post.previousPostId}`} />
-        )}
-        {post.nextPostId && (
-          <link rel="next" href={`https://logo-foot.com/blog/${post.nextPostId}`} />
-        )}
+         {post.previousPostId && (() => {
+           const p = blogPosts.find(p => p.id === post.previousPostId);
+           return p ? (
+             <link rel="prev" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+           ) : null;
+         })()}
+         {post.nextPostId && (() => {
+           const p = blogPosts.find(p => p.id === post.nextPostId);
+           return p ? (
+             <link rel="next" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+           ) : null;
+         })()}
       </Helmet>
       
       <BlogSchemaMarkup post={post} addBreadcrumbs={true} />

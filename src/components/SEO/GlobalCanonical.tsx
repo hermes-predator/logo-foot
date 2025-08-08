@@ -21,6 +21,8 @@ const GlobalCanonical: React.FC = () => {
   
   // Détecter si c'est la page d'accueil
   const isHomepage = normalizedPath === '/';
+  // Éviter les doublons: ne rien rendre sur les pages d'articles de blog qui gèrent déjà leur canonical
+  const isBlogPostPage = normalizedPath.startsWith('/blog/');
 
   // Forcer la mise à jour du titre de la page si nécessaire
   useEffect(() => {
@@ -35,10 +37,11 @@ const GlobalCanonical: React.FC = () => {
     return () => clearTimeout(timer);
   }, [pathname]);
   
+  if (isBlogPostPage) return null;
+  
   return (
     <Helmet>
       <link rel="canonical" href={canonicalUrl} />
-      
       {/* Les balises hreflang sont particulièrement importantes pour la page d'accueil */}
       {isHomepage && (
         <>

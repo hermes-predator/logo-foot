@@ -102,16 +102,21 @@ Deno.serve(async (req) => {
       Deno.env.get('SUPABASE_ANON_KEY') ?? ''
     )
 
-    // Fetch blog posts from database
-    const { data: blogPosts, error } = await supabaseClient
+  // Fetch blog posts from database (graceful fallback if unavailable)
+  let blogPosts: any[] = [];
+  try {
+    const { data, error } = await supabaseClient
       .from('blog_posts')
       .select('id, title, date, category, sub_category, slug')
-      .order('date', { ascending: false })
-
+      .order('date', { ascending: false });
     if (error) {
-      console.error('Error fetching blog posts:', error)
-      throw error
+      console.warn('Sitemap: DB fetch error, continuing with fallback:', error.message);
+    } else if (data) {
+      blogPosts = data as any[];
     }
+  } catch (e) {
+    console.warn('Sitemap: DB fetch threw, continuing with fallback:', (e as Error).message);
+  }
 
     const url = new URL(req.url);
     const sitemapType = url.searchParams.get('type') || 'complete';

@@ -34,7 +34,20 @@ Deno.serve(async (req) => {
     
     let sitemap: string;
     
-    if (sitemapType === 'complete') {
+    if (sitemapType === 'index') {
+      // Générer un sitemap INDEX qui référence les variantes dynamiques
+      const base = `${url.origin}${url.pathname}`;
+      const lastmod = new Date().toISOString().split('T')[0];
+      sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+        `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+        `  <sitemap><loc>${base}?type=main</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `  <sitemap><loc>${base}?type=clubs</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `  <sitemap><loc>${base}?type=competitions</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `  <sitemap><loc>${base}?type=countries</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `  <sitemap><loc>${base}?type=categories</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `  <sitemap><loc>${base}?type=complete</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+        `</sitemapindex>`;
+    } else if (sitemapType === 'complete') {
       // Générer le sitemap complet avec toutes les options
       const includeImages = url.searchParams.get('images') !== 'false';
       const includeHreflang = url.searchParams.get('hreflang') !== 'false';

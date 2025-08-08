@@ -11,7 +11,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap principal
-Sitemap: https://logo-foot.com/sitemap-index.xml
+Sitemap: https://awhmodyqxysnqkuczgss.functions.supabase.co/sitemap?type=index
 
 # Protection contre les crawlers trop agressifs
 Crawl-delay: 2

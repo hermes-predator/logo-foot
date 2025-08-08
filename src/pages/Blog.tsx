@@ -99,6 +99,7 @@ const Blog = () => {
       <BlogCanonical 
         category={categoryParam || undefined}
         page={currentPage}
+        totalPages={totalPages}
       />
 
       {/* Header avec présentation du blog */}

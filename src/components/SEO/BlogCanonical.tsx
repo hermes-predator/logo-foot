@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 interface BlogCanonicalProps {
   category?: string;
   page?: number;
+  totalPages?: number;
   baseUrl?: string;
 }
 
@@ -16,30 +17,23 @@ interface BlogCanonicalProps {
 const BlogCanonical: React.FC<BlogCanonicalProps> = ({
   category,
   page = 1,
+  totalPages,
   baseUrl = 'https://logo-foot.com'
 }) => {
-  const { pathname, search } = useLocation();
+  useLocation();
   
-  // Déterminer l'URL canonique en fonction du contexte
+  // Déterminer l'URL canonique en fonction du contexte (utilise des query params réels)
   let canonicalUrl = `${baseUrl}/blog`;
   
-  // Si une catégorie est spécifiée
+  // Si une catégorie est spécifiée, utiliser ?category= pour correspondre au routage réel
   if (category) {
-    canonicalUrl += `/category/${category}`;
+    canonicalUrl += `?category=${encodeURIComponent(category)}`;
   }
   
   // Si c'est une page de pagination autre que la première
   if (page > 1) {
-    // Si l'URL utilise déjà des paramètres query string
-    if (search && !search.includes('page=')) {
-      canonicalUrl += `${search}&page=${page}`;
-    } 
-    // Si l'URL n'a pas de query string
-    else if (!search) {
-      canonicalUrl += `?page=${page}`;
-    }
-    // Si l'URL a déjà un paramètre page, on ne fait rien car la page actuelle
-    // devrait rediriger vers la version canonique
+    const delimiter = canonicalUrl.includes('?') ? '&' : '?';
+    canonicalUrl += `${delimiter}page=${page}`;
   }
   
   // Pour les URLs alternatives (pagination), générer les balises prev/next
@@ -52,8 +46,16 @@ const BlogCanonical: React.FC<BlogCanonicalProps> = ({
       : canonicalUrl.replace(/page=\d+/, `page=${page - 1}`);
   }
   
-  // La valeur nextUrl est hypothétique - dans un cas réel, on vérifierait s'il y a une page suivante
-  nextUrl = canonicalUrl.replace(/page=\d+/, `page=${page + 1}`);
+  // Générer next uniquement si on n'est pas à la dernière page (si connue)
+  if (typeof totalPages === 'number') {
+    if (page < totalPages) {
+      nextUrl = canonicalUrl.includes('page=')
+        ? canonicalUrl.replace(/page=\d+/, `page=${page + 1}`)
+        : `${canonicalUrl}${canonicalUrl.includes('?') ? '&' : '?'}page=${page + 1}`;
+    }
+  } else {
+    nextUrl = canonicalUrl.replace(/page=\d+/, `page=${page + 1}`);
+  }
   
   return (
     <Helmet>

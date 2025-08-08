@@ -18,6 +18,7 @@ import PageLoader from '../components/ui/page-loader';
 import { formatDate } from '../utils/dateUtils';
 import ReactMarkdown from 'react-markdown';
 import FloatingCTA from '../components/blog/FloatingCTA';
+import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -84,6 +85,22 @@ const BlogPost: React.FC = () => {
         <meta name="description" content={post.excerpt} />
         
         <link rel="canonical" href={canonicalUrl} />
+        {post.galleryImageId && (
+          <link rel="preload" as="image" href={`https://logo-foot.com/blog-images/${post.id}.png`} />
+        )}
+        
+        {post.previousPostId && (() => {
+          const p = blogPosts.find(p => p.id === post.previousPostId);
+          return p ? (
+            <link rel="prev" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+          ) : null;
+        })()}
+        {post.nextPostId && (() => {
+          const p = blogPosts.find(p => p.id === post.nextPostId);
+          return p ? (
+            <link rel="next" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+          ) : null;
+        })()}
         
         {/* Open Graph */}
         <meta property="og:title" content={post.title} />
@@ -96,6 +113,8 @@ const BlogPost: React.FC = () => {
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
       </Helmet>
+
+      <BlogSchemaMarkup post={post} addBreadcrumbs={true} />
 
       {/* BlogHeader */}
       <BlogHeader />

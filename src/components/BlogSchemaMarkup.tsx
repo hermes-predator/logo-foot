@@ -5,6 +5,7 @@ import { FAQPageSchema } from "./schema/FAQPageSchema";
 import { extractFAQs } from "../utils/faqExtractor";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { generatePostUrl } from "../utils/slugUtils";
 
 interface BlogSchemaMarkupProps {
   post?: BlogPost;
@@ -57,7 +58,7 @@ const BlogSchemaMarkup = ({
   // Créer un schéma FAQ si des FAQs sont présentes
   const faqPageSchema = hasFAQs ? FAQPageSchema({ 
     faqSections,
-    mainEntity: `${baseUrl}/blog/${post.id}`,
+    mainEntity: `${baseUrl}${generatePostUrl(post.id, post.title)}`,
     about: post.title.split(':')[0].trim()
   }) : null;
 
@@ -83,13 +84,13 @@ const BlogSchemaMarkup = ({
         "@type": "ListItem",
         "position": 3,
         "name": post.category.charAt(0).toUpperCase() + post.category.slice(1),
-        "item": `${baseUrl}/blog/category/${post.category}`
+        "item": `${baseUrl}/blog?category=${post.category}`
       }] : []),
       {
         "@type": "ListItem",
         "position": post.category ? 4 : 3,
         "name": post.title,
-        "item": `${baseUrl}/blog/${post.id}`
+        "item": `${baseUrl}${generatePostUrl(post.id, post.title)}`
       }
     ]
   } : null;

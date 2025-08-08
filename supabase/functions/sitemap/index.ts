@@ -140,24 +140,19 @@ Deno.serve(async (req) => {
         `  <sitemap><loc>${base}?type=complete</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
         `</sitemapindex>`;
     } else if (sitemapType === 'complete') {
-      // Générer le sitemap complet avec toutes les options
+      // Générer le sitemap complet avec les options supportées
       const includeImages = url.searchParams.get('images') !== 'false';
       const includeHreflang = url.searchParams.get('hreflang') !== 'false';
       const includeLastmod = url.searchParams.get('lastmod') !== 'false';
       const includePriority = url.searchParams.get('priority') !== 'false';
-      const includeNewsTag = url.searchParams.get('news') === 'true';
-      const compressOutput = url.searchParams.get('compress') === 'true';
       
-      console.log(`Options: images=${includeImages}, hreflang=${includeHreflang}, news=${includeNewsTag}`);
+      console.log(`Options: images=${includeImages}, hreflang=${includeHreflang}, lastmod=${includeLastmod}, priority=${includePriority}`);
       
       sitemap = generateSitemap({
         includeImages,
         includeHreflang,
         includeLastmod,
         includePriority,
-        priorityCalculation: true,
-        includeNewsTag,
-        compressOutput,
         blogPosts: blogPosts || []
       });
     } else {

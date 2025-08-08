@@ -19,6 +19,9 @@ import { formatDate } from '../utils/dateUtils';
 import ReactMarkdown from 'react-markdown';
 import FloatingCTA from '../components/blog/FloatingCTA';
 import BlogSchemaMarkup from '../components/BlogSchemaMarkup';
+import EnhancedOpenGraph from '../components/SEO/EnhancedOpenGraph';
+import InlineCTA from '../components/blog/InlineCTA';
+import PostFAQ from '../components/blog/PostFAQ';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -102,17 +105,14 @@ const BlogPost: React.FC = () => {
           ) : null;
         })()}
         
-        {/* Open Graph */}
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="article" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.excerpt} />
       </Helmet>
+
+      <EnhancedOpenGraph 
+        post={post}
+        baseUrl="https://logo-foot.com"
+        siteName="Logo Foot"
+        twitterCard="summary_large_image"
+      />
 
       <BlogSchemaMarkup post={post} addBreadcrumbs={true} />
 
@@ -166,6 +166,8 @@ const BlogPost: React.FC = () => {
               <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
                 {post.excerpt}
               </p>
+
+              <InlineCTA />
               
               {/* Métadonnées de l'article */}
               <div className="flex flex-wrap items-center gap-8 text-sm text-gray-500 border-t border-gray-100 pt-6">
@@ -217,6 +219,9 @@ const BlogPost: React.FC = () => {
               </div>
             </div>
           </article>
+
+          <PostFAQ content={post.content} />
+          <InlineCTA />
 
           {/* Articles similaires */}
           <div className="mt-16">

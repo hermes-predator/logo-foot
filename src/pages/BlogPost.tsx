@@ -82,7 +82,7 @@ const BlogPost: React.FC = () => {
       <Helmet>
         <title>{post.title} | Logo Foot</title>
         <meta name="description" content={post.excerpt} />
-        <meta name="keywords" content={post.keywords} />
+        
         <link rel="canonical" href={canonicalUrl} />
         
         {/* Open Graph */}

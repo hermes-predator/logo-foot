@@ -22,7 +22,7 @@ const GlobalCanonical: React.FC = () => {
   // Détecter si c'est la page d'accueil
   const isHomepage = normalizedPath === '/';
   // Éviter les doublons: ne rien rendre sur les pages d'articles de blog qui gèrent déjà leur canonical
-  const isBlogPostPage = normalizedPath.startsWith('/blog/');
+  const isBlogPostPage = normalizedPath === '/blog' || normalizedPath.startsWith('/blog/');
 
   // Forcer la mise à jour du titre de la page si nécessaire
   useEffect(() => {

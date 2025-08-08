@@ -1,7 +1,94 @@
 
-import { generateSitemap, generateSpecializedSitemap } from '../../../src/utils/sitemapGenerator';
 import { corsHeaders } from '../_shared/cors';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+
+// Local sitemap generators (Edge Functions cannot import from src code)
+const BASE_URL = 'https://logo-foot.com';
+
+function slugify(text: string = ''): string {
+  return text
+    .normalize('NFD')
+    .replace(/\p{Diacritic}+/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80);
+}
+
+function escapeXml(s: string) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function urlEntry(loc: string, lastmod?: string, changefreq?: string, priority?: string) {
+  return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n${lastmod ? `    <lastmod>${lastmod}</lastmod>\n` : ''}${changefreq ? `    <changefreq>${changefreq}</changefreq>\n` : ''}${priority ? `    <priority>${priority}</priority>\n` : ''}  </url>`;
+}
+
+function generateSitemap({
+  blogPosts = [],
+  includeImages = true,
+  includeHreflang = true,
+  includeLastmod = true,
+  includePriority = true,
+}: {
+  blogPosts: any[];
+  includeImages?: boolean;
+  includeHreflang?: boolean;
+  includeLastmod?: boolean;
+  includePriority?: boolean;
+}): string {
+  const today = new Date().toISOString().split('T')[0];
+  const parts: string[] = [];
+  parts.push('<?xml version="1.0" encoding="UTF-8"?>');
+  parts.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"');
+  parts.push('        xmlns:xhtml="http://www.w3.org/1999/xhtml"');
+  if (includeImages) parts.push('        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"');
+  parts.push('>');
+
+  // Homepage
+  parts.push(urlEntry(`${BASE_URL}/`, today, 'weekly', includePriority ? '1.0' : undefined));
+  // Blog list
+  parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', includePriority ? '0.8' : undefined));
+
+  // Posts
+  for (const p of blogPosts) {
+    const slug = p.slug || slugify(p.title);
+    const loc = `${BASE_URL}/blog/${p.id}-${slug}`;
+    const last = includeLastmod && p.date ? new Date(p.date).toISOString().split('T')[0] : undefined;
+    parts.push(urlEntry(loc, last, 'weekly', includePriority ? '0.6' : undefined));
+  }
+
+  parts.push('</urlset>');
+  return parts.join('\n');
+}
+
+function generateSpecializedSitemap(
+  type: 'main' | 'clubs' | 'competitions' | 'countries' | 'categories',
+  blogPosts: any[] = []
+): string {
+  const today = new Date().toISOString().split('T')[0];
+  const parts: string[] = [];
+  parts.push('<?xml version="1.0" encoding="UTF-8"?>');
+  parts.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+
+  if (type === 'main') {
+    parts.push(urlEntry(`${BASE_URL}/`, today, 'weekly', '1.0'));
+    parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', '0.8'));
+  } else if (type === 'categories') {
+    const cats = Array.from(new Set(blogPosts.map((p: any) => p.category).filter(Boolean)));
+    for (const c of cats) {
+      parts.push(urlEntry(`${BASE_URL}/blog?category=${encodeURIComponent(c)}`, today, 'weekly', '0.7'));
+    }
+  } else {
+    // Fallback – include recent posts
+    for (const p of blogPosts.slice(0, 1000)) {
+      const slug = p.slug || slugify(p.title);
+      parts.push(urlEntry(`${BASE_URL}/blog/${p.id}-${slug}`, p.date ? new Date(p.date).toISOString().split('T')[0] : today, 'weekly', '0.6'));
+    }
+  }
+
+  parts.push('</urlset>');
+  return parts.join('\n');
+}
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {

@@ -83,28 +83,20 @@ const Payment = () => {
   const createCheckout = async () => {
     setIsCreatingCheckout(true);
     try {
-      console.log('Création du checkout SumUp...');
-      const response = await fetch('https://api.sumup.com/v0.1/checkouts', {
-        method: 'POST',
-        headers: {
-          'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
+      console.log('Création du checkout SumUp via Edge Function...');
+      const { supabase } = await import('@/integrations/supabase/client');
+      const { data, error } = await supabase.functions.invoke('handle-payment', {
+        body: {
           checkout_reference: `FC-${Date.now()}`,
           amount: 8.00,
           currency: 'EUR',
-          description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football',
-          merchant_code: 'MLMLFVAH',
-          return_url: window.location.origin + '/payment-success-token13061995'
-        })
+          description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football'
+        }
       });
-      if (!response.ok) {
-        const errorData = await response.text();
-        console.error('Erreur API SumUp:', errorData);
-        throw new Error(`Erreur lors de la création du checkout: ${response.status}`);
+      if (error) {
+        console.error('Erreur Edge Function handle-payment:', error);
+        throw new Error('Erreur lors de la création du checkout');
       }
-      const data = await response.json();
       console.log('Checkout créé:', data);
       setCheckoutId(data.id);
     } catch (error) {

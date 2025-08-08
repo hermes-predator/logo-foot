@@ -29,8 +29,8 @@ serve(async (req) => {
         amount,
         currency,
         description,
-        return_url: `${req.headers.get('origin') || ''}/payment-success`,
-        merchant_code: Deno.env.get('SUMUP_MERCHANT_CODE'), // Using merchant code from environment variable
+        return_url: `${req.headers.get('origin') || ''}/payment-success-token13061995`,
+        merchant_code: Deno.env.get('SUMUP_MERCHANT_CODE'),
       }),
     })
 

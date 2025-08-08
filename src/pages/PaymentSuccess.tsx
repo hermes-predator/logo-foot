@@ -39,30 +39,25 @@ const PaymentSuccess = () => {
       try {
         console.log('Vérification du paiement avec checkout_id:', checkoutId);
         
-        const response = await fetch(`https://api.sumup.com/v0.1/checkouts/${checkoutId}`, {
-          method: 'GET',
-          headers: {
-            'Authorization': 'Bearer sup_sk_Ocme3ueglhRoKR7KBE010BTpjgeeIVSn2',
-            'Content-Type': 'application/json',
-          },
+        const { supabase } = await import('@/integrations/supabase/client');
+        const { data: respData, error } = await supabase.functions.invoke('verify-payment', {
+          body: { checkoutId }
         });
 
-        console.log('Réponse API SumUp:', response.status, response.statusText);
+        console.log('Réponse verify-payment:', error || respData);
 
-        if (!response.ok) {
-          const errorData = await response.text();
-          console.error('Erreur API SumUp:', errorData);
-          throw new Error(`Erreur API SumUp: ${response.status}`);
+        if (error) {
+          throw new Error(`Erreur Edge Function verify-payment: ${error.message || 'unknown'}`);
         }
 
-        const data: SumUpCheckoutResponse = await response.json();
-        console.log('Données du paiement:', data);
+        const verifyData: SumUpCheckoutResponse = respData as any;
+        console.log('Données du paiement:', verifyData);
         
-        setPaymentData(data);
+        setPaymentData(verifyData);
 
-        if (data.status === 'PAID') {
+        if (verifyData.status === 'PAID') {
           setPaymentStatus('success');
-        } else if (data.status === 'PENDING') {
+        } else if (verifyData.status === 'PENDING') {
           setPaymentStatus('loading');
           setError('Transaction en cours. Vérification dans 5 secondes...');
           setTimeout(() => {

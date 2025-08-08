@@ -21,4 +21,9 @@
     <loc>https://logo-foot.com/sitemap-categories.xml</loc>
     <lastmod>2025-01-27</lastmod>
   </sitemap>
+  <!-- Inclure le sitemap complet des articles (statique de secours) -->
+  <sitemap>
+    <loc>https://logo-foot.com/sitemap.xml</loc>
+    <lastmod>2025-01-27</lastmod>
+  </sitemap>
 </sitemapindex>

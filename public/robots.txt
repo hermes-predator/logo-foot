@@ -11,7 +11,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap principal
-Sitemap: https://logo-foot.com/sitemap.xml
+Sitemap: https://logo-foot.com/sitemap-index.xml
 
 # Protection contre les crawlers trop agressifs
 Crawl-delay: 2

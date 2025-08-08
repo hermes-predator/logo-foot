@@ -1,5 +1,5 @@
 
-import { corsHeaders } from '../_shared/cors';
+import { corsHeaders } from '../_shared/cors.ts';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 // Local sitemap generators (Edge Functions cannot import from src code)

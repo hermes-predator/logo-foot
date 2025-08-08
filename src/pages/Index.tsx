@@ -146,6 +146,9 @@ const Index = () => {
         <link rel="preconnect" href="https://logo-foot.com" />
         <link rel="dns-prefetch" href="https://logo-foot.com" />
         <link rel="preload" href="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" as="image" />
+
+        {/* RSS feed */}
+        <link rel="alternate" type="application/rss+xml" title="Logo Foot RSS" href="https://awhmodyqxysnqkuczgss.functions.supabase.co/rss" />
         
         {/* Données structurées spécifiques à la page d'accueil */}
         <script type="application/ld+json">
@@ -177,6 +180,21 @@ const Index = () => {
         </script>
         <script type="application/ld+json">
           {JSON.stringify(productData)}
+        </script>
+
+        {/* WebSite + SearchAction for sitewide search intent */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://logo-foot.com/",
+            "name": "Logo Foot",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://logo-foot.com/blog?query={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
         </script>
       </Helmet>
       

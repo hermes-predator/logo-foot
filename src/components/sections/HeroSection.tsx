@@ -82,8 +82,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="max-w-5xl mx-auto text-center">
         {/* Badge premium simple */}
-        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg">
-          <Zap className="w-4 h-4" />
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium mb-4 border border-border bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50 text-foreground/80">
+          <Shield className="w-4 h-4 text-primary" />
           Bibliothèque tout‑en‑un
         </div>
 

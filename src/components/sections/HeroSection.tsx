@@ -88,9 +88,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Titre principal - H1 */}
-        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight text-gray-900 md:whitespace-nowrap flex items-center justify-center gap-3">
-          <Download aria-hidden="true" className="w-8 h-8 text-primary" />
-          Logos des clubs de football
+        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight text-gray-900">
+          Host - Logos des clubs de football
         </h1>
 
 

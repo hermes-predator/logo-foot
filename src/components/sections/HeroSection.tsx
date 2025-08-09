@@ -81,11 +81,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       <div className="max-w-5xl mx-auto text-center">
-        {/* Badge premium simple */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium mb-2 border border-border bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50 text-foreground/80">
-          <Download className="w-4 h-4 text-primary" />
-          Fichier téléchargeable tout-en-un
-        </div>
 
         {/* Titre principal - H1 */}
         <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight text-gray-900">

@@ -120,11 +120,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </DialogContent>
             </Dialog>
             
-            <Button size="lg" onClick={onScrollToPayment} title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)" className="group relative max-w-sm rounded-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-500 hover:to-green-800 text-white font-bold px-9 py-4 h-auto text-base shadow-lg hover:shadow-xl border border-white/10 ring-1 ring-green-700/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 before:absolute before:inset-x-1.5 before:top-1.5 before:h-1/2 before:rounded-full before:bg-white/10 before:content-[''] overflow-hidden">
+            <Button
+              size="lg"
+              onClick={onScrollToPayment}
+              title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
+              className="group relative max-w-sm w-full md:w-auto rounded-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-500 hover:to-green-800 text-white font-semibold px-9 py-4 h-auto text-base shadow-lg hover:shadow-xl border border-white/10 ring-1 ring-green-700/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 before:absolute before:inset-x-2 before:top-1.5 before:h-1/2 before:rounded-full before:bg-white/10 before:content-[''] overflow-hidden hover-scale"
+            >
               <Download className="w-5 h-5 mr-2" />
               Télécharger (8€)
             </Button>
-            <p className="max-w-sm mx-auto text-xs text-gray-600 mt-1">ZIP • 63 Mo • 8 774 éléments</p>
+            <p className="max-w-sm mx-auto text-sm text-gray-600 mt-2 animate-fade-in">ZIP • 63 Mo • 8 774 éléments</p>
           </div>
 
           {/* Trait de séparation vertical */}

@@ -162,7 +162,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Étoiles et note en dessous des avis clients avec Judge.me à gauche */}
-            <div className="flex justify-center items-center gap-3 -mt-4">
+            <div className="flex justify-center items-center gap-3 -mt-6">
               <img 
                 src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
                 alt="Judge.me Badge" 

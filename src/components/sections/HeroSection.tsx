@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
     return () => clearInterval(interval);
   }, []);
-  return <section className="relative pt-12 pb-8 px-4 overflow-hidden">
+  return <section className="relative pt-8 pb-6 px-4 overflow-hidden">
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
@@ -82,19 +82,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="max-w-5xl mx-auto text-center">
         {/* Badge premium simple */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium mb-4 border border-border bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50 text-foreground/80">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium mb-2 border border-border bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50 text-foreground/80">
           <Shield className="w-4 h-4 text-primary" />
           Bibliothèque tout‑en‑un
         </div>
 
         {/* Titre principal - H1 */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-gray-900">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-2 leading-tight text-gray-900">
           Obtenez tous les logos des clubs de football
         </h1>
 
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-2 gap-8 items-center mb-4 relative">
+        <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - Actions avec boutons plus petits */}
           <div className="space-y-2">
             <Dialog>
@@ -178,7 +178,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Note de confiance */}
-        <p className="text-sm text-gray-500 mt-4">
+        <p className="text-sm text-gray-500 mt-3">
           Téléchargement instantané après paiement • Fichiers organisés • Support inclus
         </p>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, ShoppingCart, Star, Shield } from "lucide-react";
+import { Folder, Download, ShoppingCart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
@@ -83,7 +83,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="max-w-5xl mx-auto text-center">
         {/* Badge premium simple */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium mb-2 border border-border bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50 text-foreground/80">
-          <Shield className="w-4 h-4 text-primary" />
+          <Download className="w-4 h-4 text-primary" />
           Fichier téléchargeable tout-en-un
         </div>
 

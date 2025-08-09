@@ -130,7 +130,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Download className="w-5 h-5 mr-2" />
               Télécharger (8€)
             </Button>
-            <p className="max-w-sm mx-auto text-sm text-gray-600 mt-2 animate-fade-in">Fichier ZIP prêt au téléchargement • 63 Mo • 8 774 éléments</p>
+            <p className="max-w-sm mx-auto text-sm text-gray-600 mt-2 animate-fade-in">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
           </div>
 
           {/* Trait de séparation vertical */}

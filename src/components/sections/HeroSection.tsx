@@ -91,9 +91,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - Actions avec boutons plus petits */}
-          <div className="space-y-2">
-            <h2 className="text-base md:text-lg lg:text-xl font-bold text-gray-800 mb-1">⦗FRONT-CLOUD⦘~ Football.zip</h2>
-            <p className="text-xs text-gray-600 mb-2 animate-fade-in">Tous les logos de clubs de foot dans un seul fichier organisé.</p>
+          <div className="space-y-4 md:space-y-5">
+            <h2 className="text-base md:text-lg lg:text-xl font-bold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</h2>
+            <p className="text-xs text-gray-600 animate-fade-in">Tous les logos de clubs de foot dans un seul fichier organisé.</p>
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" size="lg" className="max-w-sm bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 h-auto text-base">

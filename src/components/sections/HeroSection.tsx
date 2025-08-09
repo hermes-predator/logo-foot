@@ -183,7 +183,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Note de confiance */}
-        <p className="text-sm text-gray-500 mt-3">
+        <p className="text-sm text-gray-900 mt-3">
           Téléchargement instantané après paiement • Fichiers organisés • Support inclus
         </p>
       </div>

@@ -84,12 +84,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Badge premium simple */}
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg">
           <Zap className="w-4 h-4" />
-          Solution complète de ressources football
+          Bibliothèque tout‑en‑un
         </div>
 
         {/* Titre principal - H1 */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-gray-900">
-          Logos des clubs de football
+          Obtenez tous les logos des clubs de football
         </h1>
 
 

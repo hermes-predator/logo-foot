@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, ShoppingCart, Star } from "lucide-react";
+import { Folder, Download, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
@@ -121,9 +121,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </Dialog>
             
             <Button size="lg" onClick={onScrollToPayment} className="max-w-sm bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <ShoppingCart className="w-4 h-4 mr-2" />
+              <Download className="w-4 h-4 mr-2" />
               Télécharger (8€)
             </Button>
+            <p className="max-w-sm mx-auto text-xs text-gray-600 mt-1">ZIP • 63 Mo • 8 774 éléments</p>
           </div>
 
           {/* Trait de séparation vertical */}

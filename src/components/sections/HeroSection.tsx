@@ -95,7 +95,40 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-8 items-center mb-4 relative">
-          {/* Colonne gauche - Avis clients */}
+          {/* Colonne gauche - Actions avec boutons plus petits */}
+          <div className="space-y-2">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" size="lg" className="max-w-sm bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 h-auto text-base">
+                  <Folder className="w-4 h-4 mr-2" />
+                  Descriptif du ZIP
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-gray-900">
+                    Descriptif du ZIP
+                  </DialogTitle>
+                  <div className="text-sm text-gray-600 mb-4">
+                    ⦗FRONT-CLOUD⦘~ Football.zip
+                  </div>
+                  <DialogDescription>
+                    <PackDescription />
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            
+            <Button size="lg" onClick={onScrollToPayment} className="max-w-sm bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <ShoppingCart className="w-4 h-4 mr-2" />
+              Télécharger (8€)
+            </Button>
+          </div>
+
+          {/* Trait de séparation vertical */}
+          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+          {/* Colonne droite - Avis clients */}
           <div className="space-y-2">
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-2xl p-4 text-center max-w-lg mx-auto">
@@ -140,39 +173,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
               <span className="text-sm text-gray-500">(1034 avis)</span>
             </div>
-          </div>
-
-          {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-
-          {/* Colonne droite - Actions avec boutons plus petits */}
-          <div className="space-y-2">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" size="lg" className="max-w-sm bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 h-auto text-base">
-                  <Folder className="w-4 h-4 mr-2" />
-                  Descriptif du ZIP
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-gray-900">
-                    Descriptif du ZIP
-                  </DialogTitle>
-                  <div className="text-sm text-gray-600 mb-4">
-                    ⦗FRONT-CLOUD⦘~ Football.zip
-                  </div>
-                  <DialogDescription>
-                    <PackDescription />
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            
-            <Button size="lg" onClick={onScrollToPayment} className="max-w-sm bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold px-8 py-3 h-auto text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <ShoppingCart className="w-4 h-4 mr-2" />
-              Télécharger (8€)
-            </Button>
           </div>
         </div>
 

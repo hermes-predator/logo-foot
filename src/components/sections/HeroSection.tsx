@@ -120,7 +120,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               size="lg"
               onClick={onScrollToPayment}
               title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-              className="group relative max-w-sm w-full md:w-auto rounded-full bg-gradient-to-b from-green-500 to-green-700 hover:from-green-500 hover:to-green-800 text-white font-semibold px-9 py-4 h-auto text-base shadow-lg hover:shadow-xl border border-white/10 ring-1 ring-green-700/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 before:absolute before:inset-x-2 before:top-1.5 before:h-1/2 before:rounded-full before:bg-white/10 before:content-[''] overflow-hidden hover-scale"
+              className="group relative max-w-sm w-full md:w-auto rounded-md bg-gradient-to-b from-green-500 to-green-700 hover:from-green-500 hover:to-green-800 text-white font-semibold px-9 py-4 h-auto text-base shadow-lg hover:shadow-xl border border-white/10 ring-1 ring-green-700/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 before:absolute before:inset-x-2 before:top-1.5 before:h-1/2 before:rounded-md before:bg-white/10 before:content-[''] overflow-hidden hover-scale"
             >
               <Download className="w-5 h-5 mr-2" />
               Télécharger (8€)

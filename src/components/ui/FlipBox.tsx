@@ -57,7 +57,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </button>
             </div>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">En cas de besoin des logos des club de foot de l'angleterre, de l'allemagne, de l'espagne, de la France, de l'Italie et du reste du monde.</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">Retrouvez l'ensemble des logos des club de foot de l'Angleterre, de l'Allemagne, de l'Espagne, de la France, de l'Italie et du reste du monde.</p>
         </div>
       </div>
     </div>

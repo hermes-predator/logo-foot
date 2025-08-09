@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, ShoppingCart, Star, Zap, Shield } from "lucide-react";
+import { Folder, Download, ShoppingCart, Star, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
@@ -88,8 +88,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Titre principal - H1 */}
-        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight text-gray-900 md:whitespace-nowrap">
-          Obtenez tous les logos des clubs de football
+        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight text-gray-900 md:whitespace-nowrap flex items-center justify-center gap-3">
+          <Download aria-hidden="true" className="w-8 h-8 text-primary" />
+          Logos des clubs de football
         </h1>
 
 

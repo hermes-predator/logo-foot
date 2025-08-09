@@ -159,23 +159,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
+
+              {/* Badge Judge.me + note déplacés à l'intérieur */}
+              <div className="flex justify-center items-center gap-3 mt-3">
+                <img 
+                  src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+                  alt="Judge.me Badge" 
+                  className="h-8"
+                />
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+                </div>
+                <span className="text-lg font-bold text-gray-700">4.9/5</span>
+                <span className="text-sm text-gray-500">(1034 avis)</span>
+              </div>
             </div>
             
             {/* Étoiles et note en dessous des avis clients avec Judge.me à gauche */}
-            <div className="flex justify-center items-center gap-3 -mt-6">
-              <img 
-                src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
-                alt="Judge.me Badge" 
-                className="h-8"
-              />
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
-              </div>
-              <span className="text-lg font-bold text-gray-700">
-                4.9/5
-              </span>
-              <span className="text-sm text-gray-500">(1034 avis)</span>
-            </div>
           </div>
         </div>
 

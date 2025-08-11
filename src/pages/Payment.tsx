@@ -88,7 +88,7 @@ const Payment = () => {
       const { data, error } = await supabase.functions.invoke('handle-payment', {
         body: {
           checkout_reference: `FC-${Date.now()}`,
-          amount: 8.00,
+          amount: 6.90,
           currency: 'EUR',
           description: '⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football'
         }
@@ -119,7 +119,7 @@ const Payment = () => {
       sumupCardRef.current = window.SumUpCard.mount({
         id: 'sumup-card-widget',
         checkoutId: checkoutId,
-        amount: '8.00',
+        amount: '6.90',
         currency: 'EUR',
         locale: 'fr-FR',
         showSubmitButton: true,
@@ -227,7 +227,7 @@ const Payment = () => {
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span>Total :</span>
-                  <span className="text-lg">8,00 €</span>
+                  <span className="text-lg">6,90 €</span>
                 </div>
               </div>
 

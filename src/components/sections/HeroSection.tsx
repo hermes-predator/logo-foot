@@ -98,7 +98,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             <Dialog>
               <DialogTrigger asChild>
-                <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-7 py-4 h-auto text-base shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_2px_6px_rgba(0,0,0,0.06)] mb-2 md:mb-0" aria-label="Ouvrir le descriptif du ZIP">
+                <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-7 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),0_2px_6px_rgba(0,0,0,0.06)] mb-2 md:mb-0" aria-label="Ouvrir le descriptif du ZIP">
                   <Folder className="w-5 h-5 mr-2" />
                   Descriptif du ZIP
                 </Button>
@@ -122,7 +122,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               size="lg"
               onClick={onScrollToPayment}
               title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-              className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-green-500 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold px-7 py-4 h-auto text-base border-2 border-green-900/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_6px_16px_-6px_rgba(34,197,94,0.35),0_2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_24px_-8px_rgba(34,197,94,0.40),0_3px_8px_rgba(0,0,0,0.08)] ring-1 ring-green-900/10 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 overflow-hidden"
+              className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-green-500 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold px-7 py-4 h-auto text-base border-2 border-green-900/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),0_6px_16px_-6px_rgba(34,197,94,0.35),0_2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12),0_10px_24px_-8px_rgba(34,197,94,0.40),0_3px_8px_rgba(0,0,0,0.08)] ring-1 ring-green-900/10 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 overflow-hidden"
               aria-label="Télécharger le pack de logos de football"
             >
               <span className="relative z-10 flex items-center">

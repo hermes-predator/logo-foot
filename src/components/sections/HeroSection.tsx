@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
-import ButtonEffects from "@/components/payment/ButtonEffects";
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
@@ -123,10 +122,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               size="lg"
               onClick={onScrollToPayment}
               title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-              className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-800 text-white font-semibold px-9 py-4 h-auto text-base shadow-[0_10px_30px_-10px_rgba(16,185,129,0.6)] hover:shadow-[0_14px_40px_-10px_rgba(16,185,129,0.7)] border border-white/10 ring-1 ring-emerald-700/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 overflow-hidden"
+              className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-emerald-600 to-emerald-700 hover:from-emerald-600 hover:to-emerald-800 text-white font-semibold px-9 py-4 h-auto text-base border-2 border-emerald-900/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_6px_16px_-6px_rgba(16,185,129,0.45),0_2px_6px_rgba(0,0,0,0.08)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_24px_-8px_rgba(16,185,129,0.50),0_3px_8px_rgba(0,0,0,0.10)] ring-1 ring-emerald-900/10 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 overflow-hidden"
               aria-label="Télécharger le pack de logos de football"
             >
-              <ButtonEffects />
               <span className="relative z-10 flex items-center">
                 <Download className="w-5 h-5 mr-2" />
                 Télécharger (5,90€)

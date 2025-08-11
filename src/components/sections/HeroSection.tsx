@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-4 md:space-y-5">
             <div className="space-y-1">
               <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</h2>
-              <p className="text-xs md:text-sm text-gray-600 animate-fade-in">➥ Un fichier qui vous permet d'obtenir tous les logos de clubs de football dans un seul fichier organisé.</p>
+              <p className="text-xs md:text-sm text-gray-600 animate-fade-in">➥ Un fichier contenant tous les logos de clubs de football dans un seul fichier organisé.</p>
             </div>
             <Dialog>
               <DialogTrigger asChild>

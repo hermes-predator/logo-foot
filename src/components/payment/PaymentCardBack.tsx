@@ -109,7 +109,7 @@ const PaymentCardBack = ({
                       window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                     }} className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4">
                           <FileArchive className="h-3.5 w-3.5" />
-                           <span>Télécharger ce fichier (5.00€)</span>
+                           <span>Télécharger ce fichier (5,90€)</span>
                         </button>
                       </TooltipTrigger>
                       <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
@@ -130,7 +130,7 @@ const PaymentCardBack = ({
           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
         }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (5.00€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (5,90€)</span>
             </button>
           </div>
         </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
@@ -187,7 +187,7 @@ const PaymentCardBack = ({
                       window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
                     }} className="h-8 px-4 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-600 rounded text-xs font-medium flex items-center gap-1.5 mt-4">
                           <FileArchive className="h-3.5 w-3.5" />
-                          <span>Télécharger ce fichier (5.00€)</span>
+                          <span>Télécharger ce fichier (5,90€)</span>
                         </button>
                       </TooltipTrigger>
                       <TooltipContent side="left" align="end" className="max-w-[180px] text-center">
@@ -208,7 +208,7 @@ const PaymentCardBack = ({
           window.location.href = `https://pay.sumup.com/b2c/QHNJZZLI?return_url=${encodeURIComponent(returnUrl)}`;
         }} className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (5.00€)</span>
+              <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (5,90€)</span>
             </button>
           </div>
         </div>}

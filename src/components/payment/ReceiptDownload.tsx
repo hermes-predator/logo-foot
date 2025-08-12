@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { FileText } from "lucide-react";
+import { Ticket } from "lucide-react";
 import { jsPDF } from "jspdf";
 
 interface ReceiptDownloadProps {
@@ -15,7 +15,7 @@ interface ReceiptDownloadProps {
 const ReceiptDownload = ({
   purchaseDate = new Date(),
   productName = "⦗FRONT-CLOUD⦘~ Football.zip",
-  price = "5 €",
+  price = "5,90 €",
   orderNumber = `FC-${Date.now().toString().slice(-6)}`,
   onDownloadComplete
 }: ReceiptDownloadProps) => {
@@ -105,7 +105,7 @@ const ReceiptDownload = ({
       className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium rounded-md transition-all duration-300 hover:border-indigo-300 hover:text-indigo-600 shadow-sm group h-20 text-xl"
       size="lg"
     >
-      <FileText className="h-8 w-8 mr-3 text-gray-500 group-hover:text-indigo-500 transition-colors" />
+      <Ticket className="h-8 w-8 mr-3 text-gray-500 group-hover:text-indigo-500 transition-colors" />
       <span className="relative">Télécharger votre reçu</span>
     </Button>
   );

@@ -96,40 +96,42 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</h2>
               <p className="text-xs md:text-sm text-gray-600 animate-fade-in">➥ Tous les logos de clubs de football dans un seul fichier organisé.</p>
             </div>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)] mb-4" aria-label="Ouvrir le descriptif du ZIP">
-                  <Folder className="w-5 h-5 mr-2" />
-                  Descriptif du ZIP
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-gray-900">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                    <Folder className="w-5 h-5 mr-2" />
                     Descriptif du ZIP
-                  </DialogTitle>
-                  <div className="text-sm text-gray-600 mb-4">
-                    ⦗FRONT-CLOUD⦘~ Football.zip
-                  </div>
-                  <DialogDescription>
-                    <PackDescription />
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
-            
-            <Button
-              size="lg"
-              onClick={() => { window.location.href = '/payment'; }}
-              title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-              className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-green-500 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold px-5 py-4 h-auto text-base border-2 border-green-900/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(0,0,0,0.16),inset_0_-1px_0_rgba(255,255,255,0.30),0_6px_16px_-6px_rgba(34,197,94,0.30),0_2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.22),inset_0_-1px_0_rgba(255,255,255,0.40),0_10px_24px_-8px_rgba(34,197,94,0.35),0_3px_8px_rgba(0,0,0,0.08)] ring-1 ring-green-900/10 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 overflow-hidden"
-              aria-label="Télécharger le pack de logos de football"
-            >
-              <span className="relative z-10 flex items-center">
-                <Download className="w-5 h-5 mr-2" />
-                Télécharger – 5.90€
-              </span>
-            </Button>
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-gray-900">
+                      Descriptif du ZIP
+                    </DialogTitle>
+                    <div className="text-sm text-gray-600 mb-4">
+                      ⦗FRONT-CLOUD⦘~ Football.zip
+                    </div>
+                    <DialogDescription>
+                      <PackDescription />
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+              
+              <Button
+                size="lg"
+                onClick={() => { window.location.href = '/payment'; }}
+                title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
+                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-green-500 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold px-5 py-4 h-auto text-base border-2 border-green-900/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(0,0,0,0.16),inset_0_-1px_0_rgba(255,255,255,0.30),0_6px_16px_-6px_rgba(34,197,94,0.30),0_2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.22),inset_0_-1px_0_rgba(255,255,255,0.40),0_10px_24px_-8px_rgba(34,197,94,0.35),0_3px_8px_rgba(0,0,0,0.08)] ring-1 ring-green-900/10 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 overflow-hidden"
+                aria-label="Télécharger le pack de logos de football"
+              >
+                <span className="relative z-10 flex items-center">
+                  <Download className="w-5 h-5 mr-2" />
+                  Télécharger – 5.90€
+                </span>
+              </Button>
+            </div>
             <p className="max-w-sm mx-auto text-sm text-gray-600 mt-2 animate-fade-in">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
           </div>
 

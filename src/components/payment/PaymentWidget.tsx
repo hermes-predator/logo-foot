@@ -191,7 +191,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
         </div>
         <div className="flex justify-between items-center font-semibold">
           <span>Total :</span>
-          <span className="text-lg">5 €</span>
+          <span className="text-lg">5.00 €</span>
         </div>
       </div>
 

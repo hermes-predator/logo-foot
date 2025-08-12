@@ -15,24 +15,21 @@ const PaymentButton = () => {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   const handlePayment = () => {
-    // Changer l'état du bouton
     setIsRedirecting(true);
-    
-    // Afficher le toast
     toast({
-      title: "Redirection vers le paiement",
-      description: "Vous allez être redirigé vers la page de paiement sécurisé",
+      title: "Paiement sécurisé",
+      description: "Ouverture du module de paiement",
     });
-    
-    // Rediriger vers la page de paiement dédiée après un délai de 2 secondes
-    setTimeout(() => {
-      window.location.href = '/payment';
-    }, 2000);
 
-    // Remettre le texte original après 2 secondes (au cas où la redirection échouerait)
+    const url = new URL(window.location.href);
+    url.searchParams.set('pay', '1');
+    window.history.pushState({}, '', url.toString());
+
+    window.dispatchEvent(new CustomEvent('open-payment-modal'));
+
     setTimeout(() => {
       setIsRedirecting(false);
-    }, 2000);
+    }, 1200);
   };
 
   return (

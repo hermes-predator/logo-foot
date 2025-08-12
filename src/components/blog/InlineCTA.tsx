@@ -27,7 +27,7 @@ const InlineCTA: React.FC<InlineCTAProps> = ({
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
-            <Link to="/payment" aria-label="Accéder au paiement pour télécharger la collection">
+            <Link to="/?pay=1" aria-label="Accéder au paiement pour télécharger la collection">
               <Button className="inline-flex items-center gap-2">
                 <ShoppingBag className="w-4 h-4" />
                 Acheter maintenant

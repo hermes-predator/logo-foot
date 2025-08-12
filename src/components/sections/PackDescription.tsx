@@ -14,10 +14,13 @@ const PackDescription = () => {
   } = useToast();
   const handlePayment = () => {
     toast({
-      title: "Redirection vers le paiement",
-      description: "Vous allez être redirigé vers notre page de paiement sécurisée."
+      title: "Paiement sécurisé",
+      description: "Ouverture du module de paiement",
     });
-    window.location.href = '/payment';
+    const url = new URL(window.location.href);
+    url.searchParams.set('pay', '1');
+    window.history.pushState({}, '', url.toString());
+    window.dispatchEvent(new CustomEvent('open-payment-modal'));
   };
   return <div className="space-y-0.5 mt-1">
       {/* Removed the title section completely */}

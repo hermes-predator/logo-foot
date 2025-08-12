@@ -255,7 +255,7 @@ const PaymentSuccess = () => {
           {paymentStatus === 'success' && (
             <div className="text-center mt-8 text-gray-600">
               <p className="text-sm">
-                Besoin d'aide ? Contactez-nous à support@logo-foot.com
+                Besoin d'aide ? Contactez-nous à contact@logo-foot.com
               </p>
               <p className="text-xs mt-2">
                 Transaction ID: {checkoutId}

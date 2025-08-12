@@ -10,7 +10,8 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import ButtonEffects from './ButtonEffects';
 
-const PaymentButton = () => {
+interface PaymentButtonProps { label?: string; }
+const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
   const { toast } = useToast();
   const [isRedirecting, setIsRedirecting] = useState(false);
 
@@ -65,7 +66,7 @@ const PaymentButton = () => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
-                  {isRedirecting ? "Redirection en cours..." : "Télécharger (5.00€)"}
+                  {isRedirecting ? "Redirection en cours..." : (label ?? "Télécharger (5.00€)")}
                 </span>
               </div>
               <ArrowRight 

@@ -46,7 +46,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ open, onOpenChange }) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl">
+      <DialogContent className="sm:max-w-2xl max-h-[85dvh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl">Paiement sécurisé</DialogTitle>
         </DialogHeader>

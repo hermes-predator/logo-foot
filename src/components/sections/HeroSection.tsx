@@ -149,7 +149,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <div
                     key={index}
                     className={`w-12 h-12 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
-                      index === currentTestimonialIndex ? 'scale-110 ring-4 ring-blue-200' : 'scale-100'
+                      index === currentTestimonialIndex ? 'scale-110 ring-4 ring-black' : 'scale-100'
                     }`}
                   >
                     {testimonial.initials}

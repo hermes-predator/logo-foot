@@ -94,7 +94,7 @@ const PaymentSuccess = () => {
           <Card className="max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4">
-                <Loader2 className="h-16 w-16 animate-spin text-blue-500" />
+                <Loader2 className="h-16 w-16 animate-spin text-primary" />
               </div>
               <CardTitle className="text-2xl">Vérification du paiement...</CardTitle>
               <CardDescription>
@@ -119,9 +119,9 @@ const PaymentSuccess = () => {
             <Card className="max-w-2xl mx-auto">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
-                  <CheckCircle className="h-16 w-16 text-green-500" />
+                  <CheckCircle className="h-16 w-16 text-primary" />
                 </div>
-                <CardTitle className="text-3xl text-green-600 mb-2">
+                <CardTitle className="text-3xl text-primary mb-2">
                   Paiement confirmé ! 🎉
                 </CardTitle>
                 <CardDescription className="text-lg">
@@ -134,16 +134,16 @@ const PaymentSuccess = () => {
                   <Button 
                     onClick={handleDownload}
                     size="lg"
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg"
+                    className="w-full sm:w-auto"
                   >
                     <Download className="mr-2 h-5 w-5" />
                     Télécharger votre collection (ZIP)
                   </Button>
                 </div>
 
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-blue-800 mb-2">Détails de votre achat :</h3>
-                  <ul className="text-blue-700 space-y-1">
+                <div className="bg-muted p-4 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">Détails de votre achat :</h3>
+                  <ul className="text-muted-foreground space-y-1">
                     <li>• +1000 logos de football en PNG transparent</li>
                     <li>• Clubs européens, équipes nationales, compétitions</li>
                     <li>• Fichiers haute qualité prêts à utiliser</li>
@@ -167,9 +167,9 @@ const PaymentSuccess = () => {
           <Card className="max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4">
-                <XCircle className="h-16 w-16 text-red-500" />
+                <XCircle className="h-16 w-16 text-destructive" />
               </div>
-              <CardTitle className="text-2xl text-red-600">
+              <CardTitle className="text-2xl text-destructive">
                 Paiement non confirmé
               </CardTitle>
               <CardDescription>
@@ -191,9 +191,8 @@ const PaymentSuccess = () => {
                 >
                   Retour à l'accueil
                 </Button>
-                <Button 
+                 <Button 
                   onClick={() => window.location.reload()}
-                  className="bg-blue-500 hover:bg-blue-600"
                 >
                   Réessayer la vérification
                 </Button>
@@ -207,9 +206,9 @@ const PaymentSuccess = () => {
           <Card className="max-w-2xl mx-auto">
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4">
-                <AlertTriangle className="h-16 w-16 text-orange-500" />
+                <AlertTriangle className="h-16 w-16 text-foreground" />
               </div>
-              <CardTitle className="text-2xl text-orange-600">
+              <CardTitle className="text-2xl">
                 Accès non autorisé
               </CardTitle>
               <CardDescription>
@@ -248,12 +247,12 @@ const PaymentSuccess = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-12 px-4">
+      <div className="min-h-screen bg-background py-12 px-4">
         <div className="container mx-auto">
           {renderContent()}
           
           {paymentStatus === 'success' && (
-            <div className="text-center mt-8 text-gray-600">
+            <div className="text-center mt-8 text-muted-foreground">
               <p className="text-sm">
                 Besoin d'aide ? Contactez-nous à contact@logo-foot.com
               </p>

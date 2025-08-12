@@ -63,7 +63,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       
       {/* Témoignage à droite */}
       <div className="flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px]">
-        <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center">
+        <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-1">
           <div className="flex items-center justify-center gap-2 min-w-0">
             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400 mt-0.5" />
             <div className="flex flex-col min-w-0 flex-1 items-center text-center">

@@ -128,7 +128,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <span className="relative z-10 flex items-center">
                   <Download className="w-5 h-5 mr-2" />
-                  Télécharger – 5.90€
+                  Télécharger (5.90€)
                 </span>
               </Button>
             </div>

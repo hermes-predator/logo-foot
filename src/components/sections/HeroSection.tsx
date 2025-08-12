@@ -150,14 +150,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className={`w-12 h-12 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
+                    className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
                       index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
                     }`}
                   >
                     {testimonial.initials}
                   </div>
                 ))}
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
                   +
                 </div>
               </div>

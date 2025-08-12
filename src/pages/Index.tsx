@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect, lazy, Suspense, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
@@ -7,6 +7,7 @@ import FlipBox from '../components/ui/FlipBox';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
+import PaymentModal from '../components/payment/PaymentModal';
 
 
 // Lazy load components that aren't needed for initial render
@@ -14,9 +15,9 @@ const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSecti
 const LazyTestimonials = lazy(() => import('../components/Testimonials'));
 
 const Index = () => {
+  const [paymentOpen, setPaymentOpen] = useState(false);
   const scrollToPayment = () => {
-    const paymentSection = document.querySelector('#payment-section');
-    paymentSection?.scrollIntoView({ behavior: 'smooth' });
+    setPaymentOpen(true);
   };
 
   // Création des données structurées optimisées pour la page d'accueil
@@ -243,6 +244,7 @@ const Index = () => {
           <LazyTestimonials />
         </Suspense>
       </main>
+      <PaymentModal open={paymentOpen} onOpenChange={setPaymentOpen} />
       <Footer />
       
     </div>

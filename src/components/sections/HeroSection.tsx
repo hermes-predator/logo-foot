@@ -96,7 +96,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</h2>
               <p className="text-xs md:text-sm text-gray-600 animate-fade-in">➥ Tous les logos de clubs de football dans un seul fichier organisé.</p>
             </div>
-            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-3">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">

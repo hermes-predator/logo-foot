@@ -153,55 +153,54 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </article>
 
-          {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-
+          
           {/* Colonne droite - Avis clients */}
-          <div className="space-y-2">
-            {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-2xl p-4 text-center max-w-lg mx-auto">
-              {/* Badge Judge.me seul */}
-              {/* Badge Judge.me déplacé avec les étoiles */}
-              
-              {/* Avatars circulaires synchronisés */}
-              <div className="flex justify-center items-center -space-x-2 mb-1 mt-4 flex-wrap">
-                {testimonials.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
-                      index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
-                    }`}
-                  >
-                    {testimonial.initials}
+          <article className="animate-fade-in">
+            <div className="relative rounded-2xl border border-gray-200 bg-white/90 shadow-md overflow-hidden">
+              <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-blue-50/50 via-transparent to-transparent" />
+              <header className="flex items-center gap-2 p-3 border-b border-gray-200/60 bg-gradient-to-r from-blue-50/70 to-transparent">
+                <Star className="w-4 h-4 text-blue-700" />
+                <span className="text-xs font-semibold text-gray-700">Avis clients</span>
+              </header>
+              <div className="p-4 md:p-6 text-center">
+                {/* Avatars circulaires synchronisés */}
+                <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">
+                  {testimonials.map((testimonial, index) => (
+                    <div
+                      key={index}
+                      className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
+                        index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
+                      }`}
+                    >
+                      {testimonial.initials}
+                    </div>
+                  ))}
+                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+                    +
                   </div>
-                ))}
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
-                  +
                 </div>
-              </div>
 
-              {/* Animation des témoignages */}
-              <div>
-                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-              </div>
-
-              {/* Badge Judge.me + note déplacés à l'intérieur */}
-              <div className="flex justify-center items-center gap-3 mt-3">
-                <img 
-                  src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
-                  alt="Judge.me Badge" 
-                  className="h-8"
-                />
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+                {/* Animation des témoignages */}
+                <div className="mt-1">
+                  <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
                 </div>
-                <span className="text-lg font-bold text-gray-700">4.9/5</span>
-                <span className="text-sm text-gray-500">(1034 avis)</span>
+
+                {/* Badge Judge.me + note */}
+                <div className="flex justify-center items-center gap-3 mt-3">
+                  <img 
+                    src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+                    alt="Judge.me Badge" 
+                    className="h-8"
+                  />
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+                  </div>
+                  <span className="text-lg font-bold text-gray-700">4.9/5</span>
+                  <span className="text-sm text-gray-500">(1034 avis)</span>
+                </div>
               </div>
             </div>
-            
-            {/* Étoiles et note en dessous des avis clients avec Judge.me à gauche */}
-          </div>
+          </article>
         </div>
 
 

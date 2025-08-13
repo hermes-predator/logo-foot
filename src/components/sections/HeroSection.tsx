@@ -76,8 +76,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
-        <div className="absolute top-20 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-100/20 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-5xl mx-auto text-center">
@@ -92,115 +90,97 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - Actions avec boutons plus petits */}
             <article className="md:-mt-4 animate-fade-in">
-              <div className="relative rounded-2xl border border-gray-200 bg-white/90 shadow-md overflow-hidden">
-                <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-blue-50/50 via-transparent to-transparent" />
-                <header className="flex items-center gap-2 p-3 border-b border-gray-200/60 bg-gradient-to-r from-blue-50/70 to-transparent">
-                  <Folder className="w-4 h-4 text-blue-700" />
-                  <span className="text-xs font-semibold text-gray-700">Fichier produit</span>
-                </header>
-                <div className="p-4 md:p-6">
-                  <div className="space-y-1">
-                    <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">⦗FRONT-CLOUD⦘~ Football.zip</h2>
-                    <p className="text-xs md:text-sm text-gray-600">➥ Un fichier complet contenant tous les logos des clubs de football.</p>
-                  </div>
-
-                  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button
-                          variant="outline"
-                          size="lg"
-                          className="w-full rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base hover-scale"
-                          aria-label="Ouvrir le descriptif du ZIP"
-                        >
-                          <Folder className="w-5 h-5 mr-2" />
-                          Descriptif du ZIP
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-                        <DialogHeader>
-                          <DialogTitle className="text-2xl font-bold text-gray-900">
-                            Descriptif du ZIP
-                          </DialogTitle>
-                          <div className="text-sm text-gray-600 mb-4">
-                            ⦗FRONT-CLOUD⦘~ Football.zip
-                          </div>
-                          <DialogDescription>
-                            <PackDescription />
-                          </DialogDescription>
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
-
-                    <Button
-                      size="lg"
-                      onClick={onScrollToPayment}
-                      title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-                      className="w-full rounded-xl bg-gradient-to-b from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-5 py-4 h-auto text-base border-2 border-green-900/20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.25)] ring-1 ring-green-900/20 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 overflow-hidden hover-scale group"
-                      aria-label="Télécharger le pack de logos de football"
-                    >
-                      <span className="relative z-10 flex items-center">
-                        <Download className="w-5 h-5 mr-2" />
-                        Télécharger (5€)
-                      </span>
-                    </Button>
-                  </div>
-
-                  <p className="max-w-sm text-sm text-gray-600 mt-3 text-center md:text-left">
-                    Fichier téléchargeable • 63 Mo • 8 774 éléments
-                  </p>
-                </div>
+              <div className="text-left space-y-2">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h2>
+                <p className="text-xs md:text-sm text-gray-600">➥ Un fichier complet contenant tous les logos des clubs de football.</p>
               </div>
+
+              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="w-full rounded-xl bg-white/80 hover:bg-white border border-gray-200 text-gray-700 font-medium px-5 py-4 h-auto text-base hover-scale"
+                      aria-label="Ouvrir le descriptif du ZIP"
+                    >
+                      <Folder className="w-5 h-5 mr-2" />
+                      Descriptif du ZIP
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-bold text-gray-900">
+                        Descriptif du ZIP
+                      </DialogTitle>
+                      <div className="text-sm text-gray-600 mb-4">
+                        ⦗FRONT-CLOUD⦘~ Football.zip
+                      </div>
+                      <DialogDescription>
+                        <PackDescription />
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
+
+                <Button
+                  size="lg"
+                  onClick={onScrollToPayment}
+                  title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
+                  className="w-full rounded-xl bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-4 h-auto text-base transition-colors hover-scale group"
+                  aria-label="Télécharger le pack de logos de football"
+                >
+                  <span className="relative z-10 flex items-center">
+                    <Download className="w-5 h-5 mr-2" />
+                    Télécharger (5€)
+                  </span>
+                </Button>
+              </div>
+
+              <p className="max-w-sm text-sm text-gray-600 mt-3 text-center md:text-left">
+                Fichier téléchargeable • 63 Mo • 8 774 éléments
+              </p>
             </article>
 
           
           {/* Colonne droite - Avis clients */}
-          <article className="animate-fade-in">
-            <div className="relative rounded-2xl border border-gray-200 bg-white/90 shadow-md overflow-hidden">
-              <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-blue-50/50 via-transparent to-transparent" />
-              <header className="flex items-center gap-2 p-3 border-b border-gray-200/60 bg-gradient-to-r from-blue-50/70 to-transparent">
-                <Star className="w-4 h-4 text-blue-700" />
-                <span className="text-xs font-semibold text-gray-700">Avis clients</span>
-              </header>
-              <div className="p-4 md:p-6 text-center">
-                {/* Avatars circulaires synchronisés */}
-                <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">
-                  {testimonials.map((testimonial, index) => (
-                    <div
-                      key={index}
-                      className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
-                        index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
-                      }`}
-                    >
-                      {testimonial.initials}
-                    </div>
-                  ))}
-                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
-                    +
-                  </div>
+          <div className="text-center animate-fade-in">
+            {/* Avatars circulaires synchronisés */}
+            <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
+                    index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
+                  }`}
+                >
+                  {testimonial.initials}
                 </div>
-
-                {/* Animation des témoignages */}
-                <div className="mt-1">
-                  <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-                </div>
-
-                {/* Badge Judge.me + note */}
-                <div className="flex justify-center items-center gap-3 mt-3">
-                  <img 
-                    src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
-                    alt="Judge.me Badge" 
-                    className="h-8"
-                  />
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
-                  </div>
-                  <span className="text-lg font-bold text-gray-700">4.9/5</span>
-                  <span className="text-sm text-gray-500">(1034 avis)</span>
-                </div>
+              ))}
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+                +
               </div>
             </div>
-          </article>
+
+            {/* Animation des témoignages */}
+            <div className="mt-1">
+              <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+            </div>
+
+            {/* Badge Judge.me + note */}
+            <div className="flex justify-center items-center gap-3 mt-3">
+              <img 
+                src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+                alt="Judge.me Badge" 
+                className="h-8"
+              />
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <span className="text-lg font-bold text-gray-700">4.9/5</span>
+              <span className="text-sm text-gray-500">(1034 avis)</span>
+            </div>
+          </div>
         </div>
 
 

@@ -91,7 +91,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - Actions avec boutons plus petits */}
-          <div className="space-y-4 md:space-y-5 md:-mt-2">
+          <div className="space-y-4 md:space-y-5 md:mt-1">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
               <p className="text-xs md:text-sm text-gray-600 animate-fade-in">➥ Un fichier complet contenant tous les logos des clubs de football.</p>

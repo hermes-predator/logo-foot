@@ -215,7 +215,7 @@ const Index = () => {
               <div className="max-w-7xl mx-auto">
                 <FlipBox
                   frontTitle="Logos des Clubs de Foot"
-                  frontDescription="Notre fichier contient plus de 8 600 logos des clubs de football uniformes, nommés et triés par pays"
+                  frontDescription="⦗FRONT-CLOUD⦘~ Football.zip contient plus de 8 600 logos des clubs de football uniformes, nommés et triés par pays"
                   backTitle="Collection Premium de Logos Football"
                   backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
 📁 Organisation parfaite par pays et championnat  

@@ -93,7 +93,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne gauche - Actions avec boutons plus petits */}
           <div className="space-y-4 md:space-y-5 md:mt-1">
             <div className="space-y-1">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
               <p className="text-xs md:text-sm font-medium text-gray-600 animate-fade-in">➥ Un fichier complet contenant tous les logos des clubs de football.</p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8">

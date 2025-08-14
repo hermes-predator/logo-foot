@@ -81,16 +81,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="max-w-5xl mx-auto text-center">
 
         {/* Titre principal - H1 */}
-        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-1 leading-tight whitespace-nowrap text-gray-900">
+        <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-2 leading-tight whitespace-nowrap text-gray-900">
           FICHIER⎪Logos des clubs de football
         </h1>
 
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-2 gap-6 md:items-stretch items-start mb-2 relative">
+        <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           <div className="hidden md:block absolute left-1/2 inset-y-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent pointer-events-none"></div>
           {/* Colonne gauche - Actions avec boutons plus petits */}
-            <article className="md:col-span-1 animate-fade-in relative h-full flex flex-col justify-center">
+            <article className="md:col-span-1 self-center animate-fade-in relative">
               <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tr from-blue-50/60 to-transparent rounded-3xl" />
               <div className="text-left space-y-2">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h2>
@@ -139,20 +139,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </Button>
               </div>
 
-              <div className="flex items-center gap-3 mt-3 justify-center md:justify-start">
-                <img 
-                  src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
-                  alt="Badge Judge.me - 4.9/5 avis vérifiés" 
-                  className="h-8"
-                  loading="lazy"
-                />
-                <div className="flex gap-1" aria-label="Note moyenne 4.9 sur 5">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
-                </div>
-                <span className="text-lg font-bold text-gray-700">4.9/5</span>
-                <span className="text-sm text-gray-500">(1034 avis)</span>
-              </div>
-
               <p className="max-w-sm text-sm text-gray-600 mt-3 text-center md:text-left">
                 Fichier téléchargeable • 63 Mo • 8 774 éléments
               </p>
@@ -160,21 +146,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
           
           {/* Colonne droite - Avis clients */}
-          <div className="md:col-span-1 relative text-center animate-fade-in h-full flex flex-col justify-center">
+          <div className="md:col-span-1 relative text-center animate-fade-in">
             <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tl from-indigo-50/60 to-transparent rounded-3xl" />
             {/* Avatars circulaires synchronisés */}
             <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className={`w-9 h-9 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
+                  className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
                     index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
                   }`}
                 >
                   {testimonial.initials}
                 </div>
               ))}
-              <div className="w-9 h-9 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
                 +
               </div>
             </div>
@@ -185,6 +171,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Badge Judge.me + note */}
+            <div className="flex justify-center items-center gap-3 mt-3">
+              <img 
+                src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+                alt="Judge.me Badge" 
+                className="h-8"
+              />
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <span className="text-lg font-bold text-gray-700">4.9/5</span>
+              <span className="text-sm text-gray-500">(1034 avis)</span>
+            </div>
           </div>
         </div>
 

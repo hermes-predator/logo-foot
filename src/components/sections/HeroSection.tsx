@@ -168,7 +168,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
 
               {/* Badge Judge.me + note déplacés à l'intérieur */}
-              <div className="flex justify-center items-center gap-3 mt-3">
+              <div className="flex justify-center items-center gap-3 mt-1">
                 <img 
                   src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
                   alt="Judge.me Badge" 

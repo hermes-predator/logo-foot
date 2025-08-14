@@ -3,7 +3,7 @@ import { Minus, Plus, Eye, MousePointer } from 'lucide-react';
 
 interface FlipBoxProps {
   frontTitle: string;
-  frontDescription: string;
+  frontDescription: React.ReactNode;
   backTitle: string;
   backContent: string;
   className?: string;

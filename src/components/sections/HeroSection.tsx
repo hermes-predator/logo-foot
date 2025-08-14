@@ -147,6 +147,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           
           {/* Colonne droite - Avis clients */}
           <div className="relative text-center animate-fade-in">
+            <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tl from-indigo-50/60 to-transparent rounded-3xl" />
             {/* Avatars circulaires synchronisés */}
             <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">
               {testimonials.map((testimonial, index) => (

@@ -87,10 +87,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
-          <div className="hidden md:block absolute left-1/2 inset-y-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent pointer-events-none"></div>
+        <div className="grid md:grid-cols-5 gap-6 items-center mb-2 relative">
+          <div className="hidden md:block absolute left-[60%] inset-y-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent pointer-events-none"></div>
           {/* Colonne gauche - Actions avec boutons plus petits */}
-            <article className="md:-mt-4 animate-fade-in relative">
+            <article className="md:col-span-3 md:-mt-4 animate-fade-in relative">
               <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tr from-blue-50/60 to-transparent rounded-3xl" />
               <div className="text-left space-y-2">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h2>
@@ -146,7 +146,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
           
           {/* Colonne droite - Avis clients */}
-          <div className="relative text-center animate-fade-in">
+          <div className="md:col-span-2 relative text-center animate-fade-in">
             <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tl from-indigo-50/60 to-transparent rounded-3xl" />
             {/* Avatars circulaires synchronisés */}
             <div className="flex justify-center items-center -space-x-2 mb-1 mt-2 flex-wrap">

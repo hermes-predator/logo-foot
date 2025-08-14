@@ -24,7 +24,8 @@ const FloatingCTAHome = ({ onScrollToPayment }: FloatingCTAHomeProps) => {
             size="sm"
             className="bg-white hover:bg-gray-100 text-primary font-semibold text-xs w-full"
           >
-            Télécharger (5.00€)
+            <span className="font-semibold">Télécharger</span>
+            <span className="ml-1 font-normal">(5.00€)</span>
           </Button>
         </div>
       </div>

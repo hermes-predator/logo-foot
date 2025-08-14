@@ -90,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid md:grid-cols-5 gap-6 items-center mb-2 relative">
           <div className="hidden md:block absolute left-[60%] inset-y-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent pointer-events-none"></div>
           {/* Colonne gauche - Actions avec boutons plus petits */}
-            <article className="md:col-span-3 md:-mt-4 animate-fade-in relative">
+            <article className="md:col-span-3 self-center animate-fade-in relative">
               <div className="absolute -inset-2 md:-inset-3 -z-10 bg-gradient-to-tr from-blue-50/60 to-transparent rounded-3xl" />
               <div className="text-left space-y-2">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">⦗FRONT-CLOUD⦘~ Football.zip</h2>

@@ -30,7 +30,7 @@ const FeatureList = () => {
   const features = [
     {
       icon: Folder,
-      text: "Fichier de 8 600+ ressources",
+      text: "Fichier de 8 600+ logos",
       description: "Un fichier couvrant la majorité des besoins numériques du football."
     },
     {

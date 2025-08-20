@@ -4,9 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
+
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
+
 // Données des témoignages partagées (synchronisées avec Testimonials.tsx)
 const testimonials = [
   {
@@ -194,11 +196,41 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
 
+        {/* Nouvelles mentions décoratives centrées */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gray-600">
+          {/* Paiement Sécurisé SumUp */}
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+            {/* Placeholder pour l'image SumUp */}
+            <div className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
+            <span className="font-medium">Paiement Sécurisé SumUp</span>
+          </div>
 
-        {/* Note de confiance */}
-        <p className="text-sm text-gray-500 mt-3">
-          Création de compte non requise • Téléchargement instantané après paiement • Fichiers organisés • Support inclus
-        </p>
+          {/* Point de séparation */}
+          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+
+          {/* Fichier stockable sur Google Drive */}
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+            {/* Placeholder pour l'image Google Drive */}
+            <div className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
+            <span className="font-medium">Fichier stockable sur Google Drive</span>
+          </div>
+
+          {/* Point de séparation */}
+          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+
+          {/* Note Judge.me avec logo et étoiles */}
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+            <img 
+              src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+              alt="Judge.me" 
+              className="h-5"
+            />
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+            </div>
+            <span className="font-bold text-gray-700">4.9/5</span>
+          </div>
+        </div>
       </div>
     </section>;
 };

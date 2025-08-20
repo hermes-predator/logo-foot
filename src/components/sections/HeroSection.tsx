@@ -85,18 +85,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Titre principal - H1 */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-gray-900">
           Téléchargez{' '}
-          <span className="relative">
-            <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-              tous les logos
-            </span>
-            <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-pulse"></div>
+          <span className="font-black italic text-green-700">
+            tous les logos
           </span>
           {' '}des clubs de football{' '}
-          <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent font-extrabold">
-              en une fois
-            </span>
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-orange-400 to-red-400 rounded-full animate-ping"></div>
+          <span className="font-extrabold underline decoration-2 decoration-blue-600 underline-offset-4">
+            en une fois
           </span>
         </h1>
 

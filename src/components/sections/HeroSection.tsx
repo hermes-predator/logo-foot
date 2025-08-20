@@ -88,7 +88,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <span className="font-black italic">
             tous les logos
           </span>
-          {' '}des clubs de football{' '}
+          {' '}<span className="font-extrabold">des clubs de football</span>{' '}
           <span className="font-extrabold underline decoration-2 decoration-gray-800 underline-offset-4">
             en une fois
           </span>

@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Titre principal - H1 */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-gray-900">
-          Téléchargez un fichier complet contenant tous les logos des clubs de football
+          Téléchargez un fichier complet regroupant tous les logos des clubs de football
         </h1>
 
 
@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-4 md:space-y-5 md:mt-2">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
-              <p className="text-xs md:text-sm font-medium text-gray-600 animate-fade-in">➥ Un fichier complet contenant tous les logos des clubs de football.</p>
+              <p className="text-xs md:text-sm font-medium text-gray-600 animate-fade-in">➥ Un fichier complet regroupant tous les logos des clubs de football.</p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8">
               <Dialog>

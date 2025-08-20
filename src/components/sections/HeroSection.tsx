@@ -151,23 +151,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Avis clients */}
           <div className="space-y-2">
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-2xl p-4 text-center max-w-lg mx-auto">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
               {/* Badge Judge.me seul */}
               {/* Badge Judge.me déplacé avec les étoiles */}
               
               {/* Avatars circulaires synchronisés */}
-              <div className="flex justify-center items-center -space-x-2 mb-1 mt-4 flex-wrap">
+              <div className="flex justify-center items-center -space-x-1.5 mb-1 mt-3 flex-wrap">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className={`w-10 h-10 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl transition-all duration-300 ${
-                      index === currentTestimonialIndex ? 'scale-110 ring-4 ring-gray-600' : 'scale-100'
+                    className={`w-8 h-8 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg transition-all duration-300 ${
+                      index === currentTestimonialIndex ? 'scale-110 ring-3 ring-gray-600' : 'scale-100'
                     }`}
                   >
                     {testimonial.initials}
                   </div>
                 ))}
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-3 border-white shadow-xl">
+                <div className="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg">
                   +
                 </div>
               </div>

@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Titre principal - H1 */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-gray-900">
-          Téléchargez un fichier complet regroupant tous les logos des clubs de football
+          Téléchargez tous les logos des clubs de football en une fois
         </h1>
 
 

@@ -229,6 +229,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
             </div>
             <span className="font-bold text-gray-700">4.9/5</span>
+            <span className="text-sm text-gray-500">(1034 avis)</span>
           </div>
         </div>
       </div>

@@ -99,7 +99,41 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
-          {/* Colonne gauche - Actions avec boutons plus petits */}
+          {/* Colonne gauche - Avis clients */}
+          <div className="space-y-2">
+            {/* Bloc des avis clients déplacé ici */}
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
+              {/* Badge Judge.me seul */}
+              {/* Badge Judge.me déplacé avec les étoiles */}
+              
+              {/* Avatars circulaires synchronisés */}
+              <div className="flex justify-center items-center -space-x-1.5 mb-1 mt-3 flex-wrap">
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className={`w-8 h-8 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg transition-all duration-300 ${
+                      index === currentTestimonialIndex ? 'scale-110 ring-3 ring-gray-600' : 'scale-100'
+                    }`}
+                  >
+                    {testimonial.initials}
+                  </div>
+                ))}
+                <div className="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg">
+                  +
+                </div>
+              </div>
+
+              {/* Animation des témoignages */}
+              <div>
+                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+            </div>
+          </div>
+
+          {/* Trait de séparation vertical */}
+          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+          {/* Colonne droite - Actions avec boutons */}
           <div className="space-y-4 md:space-y-5 md:mt-2">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
@@ -143,40 +177,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
             <p className="max-w-sm mx-auto text-sm font-medium text-gray-600 mt-2 animate-fade-in">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
-          </div>
-
-          {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-
-          {/* Colonne droite - Avis clients */}
-          <div className="space-y-2">
-            {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
-              {/* Badge Judge.me seul */}
-              {/* Badge Judge.me déplacé avec les étoiles */}
-              
-              {/* Avatars circulaires synchronisés */}
-              <div className="flex justify-center items-center -space-x-1.5 mb-1 mt-3 flex-wrap">
-                {testimonials.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className={`w-8 h-8 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg transition-all duration-300 ${
-                      index === currentTestimonialIndex ? 'scale-110 ring-3 ring-gray-600' : 'scale-100'
-                    }`}
-                  >
-                    {testimonial.initials}
-                  </div>
-                ))}
-                <div className="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg">
-                  +
-                </div>
-              </div>
-
-              {/* Animation des témoignages */}
-              <div>
-                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-              </div>
-            </div>
           </div>
         </div>
 

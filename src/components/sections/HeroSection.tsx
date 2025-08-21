@@ -86,7 +86,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
-          {/* Colonne gauche - H1 et Avis clients */}
+          {/* Colonne gauche - H1 et Bénéfices produits */}
           <div className="space-y-4">
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
@@ -99,31 +99,40 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 en une fois
               </span>
             </h1>
-            {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
-              {/* Badge Judge.me seul */}
-              {/* Badge Judge.me déplacé avec les étoiles */}
-              
-              {/* Avatars circulaires synchronisés */}
-              <div className="flex justify-center items-center -space-x-1.5 mb-1 mt-3 flex-wrap">
-                {testimonials.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className={`w-8 h-8 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg transition-all duration-300 ${
-                      index === currentTestimonialIndex ? 'scale-110 ring-3 ring-gray-600' : 'scale-100'
-                    }`}
-                  >
-                    {testimonial.initials}
-                  </div>
-                ))}
-                <div className="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg">
-                  +
+            
+            {/* Liste des bénéfices produits */}
+            <div className="space-y-3 text-left">
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
+                <span className="text-gray-700 font-medium">Tous les logos en haute qualité</span>
               </div>
-
-              {/* Animation des témoignages */}
-              <div>
-                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="text-gray-700 font-medium">Formats PNG et SVG inclus</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="text-gray-700 font-medium">8 774 éléments organisés</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="text-gray-700 font-medium">Téléchargement immédiat</span>
               </div>
             </div>
           </div>
@@ -174,6 +183,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
             <p className="max-w-sm mx-auto text-sm font-medium text-gray-600 mt-2 animate-fade-in">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+            
+            {/* Bloc des avis clients déplacé ici */}
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">
+              {/* Avatars circulaires synchronisés */}
+              <div className="flex justify-center items-center -space-x-1.5 mb-1 mt-3 flex-wrap">
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className={`w-8 h-8 ${testimonial.bgColor} rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg transition-all duration-300 ${
+                      index === currentTestimonialIndex ? 'scale-110 ring-3 ring-gray-600' : 'scale-100'
+                    }`}
+                  >
+                    {testimonial.initials}
+                  </div>
+                ))}
+                <div className="w-8 h-8 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xs border-2 border-white shadow-lg">
+                  +
+                </div>
+              </div>
+
+              {/* Animation des témoignages */}
+              <div>
+                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+            </div>
           </div>
         </div>
 

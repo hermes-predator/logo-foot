@@ -84,23 +84,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="max-w-5xl mx-auto text-center">
 
-        {/* Titre principal - H1 */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900">
-          Téléchargez tous les{' '}
-          <span className="font-black">
-            logos des clubs de football
-          </span>
-          {' '}
-          <span className="underline decoration-2 decoration-gray-800 underline-offset-4">
-            en une fois
-          </span>
-        </h1>
-
-
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
-          {/* Colonne gauche - Avis clients */}
-          <div className="space-y-2">
+          {/* Colonne gauche - H1 et Avis clients */}
+          <div className="space-y-4">
+            {/* Titre principal - H1 */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
+              Téléchargez tous les{' '}
+              <span className="font-black">
+                logos des clubs de football
+              </span>
+              {' '}
+              <span className="underline decoration-2 decoration-gray-800 underline-offset-4">
+                en une fois
+              </span>
+            </h1>
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
               {/* Badge Judge.me seul */}

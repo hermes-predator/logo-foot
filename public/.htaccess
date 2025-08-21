@@ -2,6 +2,9 @@
 RewriteEngine On
 RewriteBase /
 
+# Redirection du sitemap vers l'edge function Supabase
+RewriteRule ^sitemap\.xml$ https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap [R=301,L]
+
 # Rediriger toutes les requêtes vers index.html pour React Router
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

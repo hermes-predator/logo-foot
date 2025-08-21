@@ -11,7 +11,7 @@ export const useSyncBlogPosts = () => {
     setError(null);
 
     try {
-      const response = await fetch('/api/sync-blog-posts', {
+      const response = await fetch('https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sync-blog-posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

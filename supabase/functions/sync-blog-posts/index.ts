@@ -2,117 +2,103 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 import { corsHeaders } from '../_shared/cors.ts'
 
 interface BlogPost {
-  id: number;
-  title: string;
-  excerpt: string;
-  content: string;
-  date: string;
-  galleryImageId?: number;
-  keywords?: string;
-  category: string;
-  subCategory?: string;
-}
-
-function generateSlug(title: string): string {
-  return title
-    .toLowerCase()
-    .replace(/[àáâãäå]/g, 'a')
-    .replace(/[èéêë]/g, 'e')
-    .replace(/[ìíîï]/g, 'i')
-    .replace(/[òóôõö]/g, 'o')
-    .replace(/[ùúûü]/g, 'u')
-    .replace(/[ç]/g, 'c')
-    .replace(/[ñ]/g, 'n')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+  id: number
+  title: string
+  excerpt: string
+  content: string
+  date: string
+  category: string
+  subCategory?: string
+  galleryImageId?: number
+  keywords?: string
+  slug: string
 }
 
 Deno.serve(async (req) => {
+  // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
-    return new Response('ok', { headers: corsHeaders })
+    return new Response(null, { headers: corsHeaders })
   }
 
   try {
-    const supabaseClient = createClient(
+    // Initialize Supabase client
+    const supabase = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     )
 
     if (req.method === 'POST') {
-      const { blogPosts }: { blogPosts: BlogPost[] } = await req.json()
+      const { blogPosts } = await req.json()
       
-      console.log(`Synchronizing ${blogPosts.length} blog posts...`)
+      console.log(`🔄 Début de synchronisation de ${blogPosts.length} articles`)
 
-      // Clear existing posts
-      await supabaseClient.from('blog_posts').delete().neq('id', 0)
-
-      // Insert new posts
-      const postsToInsert = blogPosts.map(post => ({
+      // Préparer les données pour Supabase
+      const postsForSupabase = blogPosts.map((post: BlogPost) => ({
         id: post.id,
         title: post.title,
         excerpt: post.excerpt,
         content: post.content,
         date: post.date,
-        gallery_image_id: post.galleryImageId || null,
-        keywords: post.keywords || null,
         category: post.category,
         sub_category: post.subCategory || null,
-        slug: generateSlug(post.title)
+        gallery_image_id: post.galleryImageId || null,
+        keywords: post.keywords || null,
+        slug: post.slug
       }))
 
-      const { error } = await supabaseClient
+      // Insérer tous les articles avec upsert
+      const { data, error } = await supabase
         .from('blog_posts')
-        .insert(postsToInsert)
+        .upsert(postsForSupabase, { onConflict: 'id' })
 
       if (error) {
-        console.error('Error inserting posts:', error)
-        throw error
+        console.error('❌ Erreur Supabase:', error)
+        return new Response(
+          JSON.stringify({ 
+            success: false, 
+            error: error.message,
+            details: error
+          }),
+          {
+            status: 500,
+            headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+          }
+        )
       }
 
-      console.log(`Successfully synchronized ${blogPosts.length} posts`)
+      console.log(`✅ ${blogPosts.length} articles synchronisés avec succès`)
 
       return new Response(
         JSON.stringify({ 
           success: true, 
-          message: `Synchronized ${blogPosts.length} blog posts`,
-          count: blogPosts.length
+          message: `${blogPosts.length} articles synchronisés`,
+          synced: blogPosts.length
         }),
-        { 
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-          status: 200
+        {
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
         }
       )
     }
 
-    if (req.method === 'GET') {
-      // Get all posts from database
-      const { data: posts, error } = await supabaseClient
-        .from('blog_posts')
-        .select('*')
-        .order('date', { ascending: false })
-
-      if (error) {
-        throw error
+    // Method not allowed
+    return new Response(
+      JSON.stringify({ error: 'Method not allowed' }),
+      {
+        status: 405,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
       }
-
-      return new Response(
-        JSON.stringify({ posts, count: posts?.length || 0 }),
-        { 
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-          status: 200
-        }
-      )
-    }
-
-    return new Response('Method not allowed', { status: 405, headers: corsHeaders })
+    )
 
   } catch (error) {
-    console.error('Error:', error)
+    console.error('❌ Erreur générale:', error)
     return new Response(
-      JSON.stringify({ error: error.message }),
-      { 
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-        status: 500
+      JSON.stringify({ 
+        success: false, 
+        error: error.message 
+      }),
+      {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
       }
     )
   }

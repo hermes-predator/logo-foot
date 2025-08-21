@@ -11,7 +11,7 @@ interface BlogPost {
   subCategory?: string
   galleryImageId?: number
   keywords?: string
-  slug: string
+  slug?: string
 }
 
 Deno.serve(async (req) => {
@@ -32,6 +32,18 @@ Deno.serve(async (req) => {
       
       console.log(`🔄 Début de synchronisation de ${blogPosts.length} articles`)
 
+      // Fonction pour générer un slug à partir du titre
+      const generateSlug = (title: string): string => {
+        return title
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '') // Supprimer les accents
+          .replace(/[^a-z0-9\s-]/g, '') // Garder seulement lettres, chiffres, espaces et tirets
+          .replace(/\s+/g, '-') // Remplacer espaces par tirets
+          .replace(/-+/g, '-') // Fusionner tirets multiples
+          .replace(/^-|-$/g, '') // Supprimer tirets en début/fin
+      }
+
       // Préparer les données pour Supabase
       const postsForSupabase = blogPosts.map((post: BlogPost) => ({
         id: post.id,
@@ -43,7 +55,7 @@ Deno.serve(async (req) => {
         sub_category: post.subCategory || null,
         gallery_image_id: post.galleryImageId || null,
         keywords: post.keywords || null,
-        slug: post.slug
+        slug: post.slug || generateSlug(post.title) // Générer slug si manquant
       }))
 
       // Insérer tous les articles avec upsert

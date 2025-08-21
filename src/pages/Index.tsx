@@ -7,7 +7,7 @@ import FlipBox from '../components/ui/FlipBox';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
-import { SyncStatus } from '../components/SyncStatus';
+
 
 
 
@@ -248,10 +248,6 @@ const Index = () => {
         </Suspense>
       </main>
       
-      {/* Composant de synchronisation temporaire */}
-      <div className="fixed bottom-4 right-4 z-50">
-        <SyncStatus />
-      </div>
       
       <Footer />
       

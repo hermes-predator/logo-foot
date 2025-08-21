@@ -7,6 +7,7 @@ import FlipBox from '../components/ui/FlipBox';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
+import { SyncStatus } from '../components/SyncStatus';
 
 
 
@@ -42,7 +43,7 @@ const Index = () => {
         const { blogPosts } = await import('../data/blog');
         console.log(`🔄 Test sync: ${blogPosts.length} articles à synchroniser`);
         
-        const response = await fetch('/api/sync-blog-posts', {
+        const response = await fetch('https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sync-blog-posts', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ blogPosts }),
@@ -246,6 +247,12 @@ const Index = () => {
           <LazyTestimonials />
         </Suspense>
       </main>
+      
+      {/* Composant de synchronisation temporaire */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <SyncStatus />
+      </div>
+      
       <Footer />
       
     </div>

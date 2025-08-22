@@ -100,6 +100,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
             </h1>
             
+            {/* Phrase marketing */}
+            <p className="text-lg md:text-xl text-gray-600 text-left mb-2 font-medium">
+              La collection la plus complète du web pour vos projets créatifs
+            </p>
+            
             {/* Liste des bénéfices produits */}
             <div className="space-y-3 text-left">
               <div className="flex items-center gap-3">

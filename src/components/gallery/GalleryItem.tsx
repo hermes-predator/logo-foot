@@ -64,6 +64,60 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       `Animation logo foot ${country}`;
   };
 
+  // Fonction pour obtenir le nombre de logos par fichier
+  const getLogoCount = (id: number): number => {
+    // Collections spéciales avec beaucoup de logos
+    if (id === 62) return 50; // Collection clubs populaires
+    if (id === 63) return 32; // Collection sélections nationales
+    if (id === 64) return 195; // Collection drapeaux mondiaux
+    if (id === 61) return 1; // Article Hugo Ekitike
+    
+    // Pour les autres pays, nombre approximatif de clubs par pays
+    const logoCountByCountry: { [key: string]: number } = {
+      'France': 20,
+      'Allemagne': 18,
+      'Espagne': 20,
+      'Italie': 20,
+      'Angleterre': 20,
+      'Portugal': 18,
+      'Pays-Bas': 18,
+      'Belgique': 16,
+      'Turquie': 18,
+      'Suisse': 12,
+      'Écosse': 12,
+      'Autriche': 12,
+      'Grèce': 14,
+      'Ukraine': 12,
+      'Russie': 16,
+      'Danemark': 12,
+      'Norvège': 16,
+      'Suède': 16,
+      'Pologne': 16,
+      'République Tchèque': 16,
+      'Croatie': 10,
+      'Serbie': 16,
+      'Roumanie': 14,
+      'Hongrie': 12,
+      'Bulgarie': 14,
+      'États-Unis': 28,
+      'Argentine': 20,
+      'Australie': 12,
+      'Arabie Saoudite': 16
+    };
+    
+    // Trouver le pays correspondant à cet ID
+    const countries = [
+      'France', 'Allemagne', 'Espagne', 'Italie', 'Angleterre', 'Portugal', 'Pays-Bas', 'Belgique',
+      'Turquie', 'Suisse', 'Écosse', 'Autriche', 'Grèce', 'Ukraine', 'Russie', 'Danemark',
+      'Norvège', 'Suède', 'Pologne', 'République Tchèque', 'Croatie', 'Serbie', 'Roumanie',
+      'Hongrie', 'Bulgarie', 'États-Unis', 'Argentine', 'Australie', 'Arabie Saoudite'
+    ];
+    
+    const countryIndex = (id - 1) % countries.length;
+    const country = countries[countryIndex];
+    return logoCountByCountry[country] || 12;
+  };
+
   // Fonction pour déterminer la description SEO appropriée
   const getSeoDescription = (item: GalleryItemProps['item']) => {
     // Description spécifique pour l'article n°62
@@ -148,9 +202,14 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           country={item.country}
         />
       </Dialog>
-      <p className="text-center mt-2 text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80">
-        {item.title}
-      </p>
+      <div className="text-center mt-2 space-y-1">
+        <p className="text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80">
+          {item.title}
+        </p>
+        <p className="text-xs text-gray-500 font-medium">
+          {getLogoCount(item.id)} logos inclus
+        </p>
+      </div>
     </div>
   );
 };

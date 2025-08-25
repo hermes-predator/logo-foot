@@ -182,72 +182,74 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   };
 
   return (
-    <div
-      className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
-      style={{
-        opacity: 0,
-        animation: `fadeIn 0.3s ease-out ${item.id * 0.05}s forwards`
-      }}
-      onMouseEnter={() => onHover(item.id)}
-      onMouseLeave={() => onHover(null)}
-    >
-      <Dialog>
-        <DialogTrigger asChild>
-          <button 
-            className="w-full h-full text-left group"
-            aria-label={`Voir ${item.title}`}
-          >
-            {isHovered ? (
-              <div className="w-full h-full">
-                <video
-                  src={item.videoUrl}
-                  className="absolute inset-0 w-full h-full object-contain bg-gray-900/95"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  title={getVideoTitle(item.country)}
-                />
-                <div className="absolute top-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
-                  <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+    <div className="space-y-2">
+      <div
+        className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
+        style={{
+          opacity: 0,
+          animation: `fadeIn 0.3s ease-out ${item.id * 0.05}s forwards`
+        }}
+        onMouseEnter={() => onHover(item.id)}
+        onMouseLeave={() => onHover(null)}
+      >
+        <Dialog>
+          <DialogTrigger asChild>
+            <button 
+              className="w-full h-full text-left group"
+              aria-label={`Voir ${item.title}`}
+            >
+              {isHovered ? (
+                <div className="w-full h-full">
+                  <video
+                    src={item.videoUrl}
+                    className="absolute inset-0 w-full h-full object-contain bg-gray-900/95"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    title={getVideoTitle(item.country)}
+                  />
+                  <div className="absolute top-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
+                    <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <>
-                {!isInView && !isPriority && (
-                  <Skeleton className="w-full h-full absolute inset-0" />
-                )}
-                <img
-                  ref={(el) => {
-                    imgRef.current = el;
-                    if (el && isPriority) {
-                      el.setAttribute('fetchpriority', 'high');
-                    }
-                  }}
-                  src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
-                  alt={getSeoDescription(item)}
-                  className="w-full h-full object-contain transition-opacity duration-300"
-                  loading={isPriority ? "eager" : "lazy"}
-                  decoding={isPriority ? "sync" : "async"}
-                  itemProp={isPriority ? "image" : undefined}
-                  data-caption={item.title}
-                  data-description={getSeoDescription(item)}
-                />
-                {/* Icône œil avec le même style que BlogHeaderCarousel */}
-                <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-70 group-hover:opacity-100 group-hover:bg-black/70 transition-all duration-300">
-                  <Eye className="w-4 h-4 text-white" />
-                </div>
-              </>
-            )}
-          </button>
-        </DialogTrigger>
-        <VideoPlayer 
-          videoUrl={item.videoUrl}
-          title={getVideoTitle(item.country)}
-          country={item.country}
-        />
-      </Dialog>
-      <div className="text-center mt-2 space-y-1">
+              ) : (
+                <>
+                  {!isInView && !isPriority && (
+                    <Skeleton className="w-full h-full absolute inset-0" />
+                  )}
+                  <img
+                    ref={(el) => {
+                      imgRef.current = el;
+                      if (el && isPriority) {
+                        el.setAttribute('fetchpriority', 'high');
+                      }
+                    }}
+                    src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
+                    alt={getSeoDescription(item)}
+                    className="w-full h-full object-contain transition-opacity duration-300"
+                    loading={isPriority ? "eager" : "lazy"}
+                    decoding={isPriority ? "sync" : "async"}
+                    itemProp={isPriority ? "image" : undefined}
+                    data-caption={item.title}
+                    data-description={getSeoDescription(item)}
+                  />
+                  {/* Icône œil avec le même style que BlogHeaderCarousel */}
+                  <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-70 group-hover:opacity-100 group-hover:bg-black/70 transition-all duration-300">
+                    <Eye className="w-4 h-4 text-white" />
+                  </div>
+                </>
+              )}
+            </button>
+          </DialogTrigger>
+          <VideoPlayer 
+            videoUrl={item.videoUrl}
+            title={getVideoTitle(item.country)}
+            country={item.country}
+          />
+        </Dialog>
+      </div>
+      <div className="text-center space-y-1">
         <p className="text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80">
           {item.title}
         </p>

@@ -224,7 +224,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <img 
               src="/lovable-uploads/3782738a-ab5e-478d-bb75-00935fbf7b69.png" 
               alt="Google Drive" 
-              className="h-4"
+              className="h-3"
             />
             <span className="font-medium">Fichier stockable sur Google Drive</span>
           </div>

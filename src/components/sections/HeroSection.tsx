@@ -188,6 +188,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
             
+            {/* Petit séparateur */}
+            <div className="flex justify-center mt-4 mb-2">
+              <div className="w-16 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+            </div>
             
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">

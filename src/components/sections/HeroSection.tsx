@@ -221,7 +221,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Fichier stockable sur Google Drive */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             {/* Placeholder pour l'image Google Drive */}
-            <div className="w-4 h-4 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
+            <img 
+              src="/lovable-uploads/5d724b63-b160-4849-955c-3dc166a55385.png" 
+              alt="Google Drive" 
+              className="h-4"
+            />
             <span className="font-medium">Fichier stockable sur Google Drive</span>
           </div>
 

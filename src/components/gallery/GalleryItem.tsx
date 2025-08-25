@@ -64,7 +64,52 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       `Animation logo foot ${country}`;
   };
 
-  // Fonction pour obtenir le nombre de logos par fichier
+  // Fonction pour obtenir le texte descriptif de la collection
+  const getCollectionText = (item: GalleryItemProps['item']): string => {
+    // Pour les collections spéciales (items 61-64)
+    if (item.id === 61) return "Article spécialisé Hugo Ekitike";
+    if (item.id === 62) return "Collection de 50 logos de clubs populaires";
+    if (item.id === 63) return "Collection de 32 logos de sélections nationales";
+    if (item.id === 64) return "Collection de 195 drapeaux mondiaux";
+    
+    // Pour les clubs (items 1-60)
+    const logoCountByCountry: { [key: string]: number } = {
+      'France': 450,
+      'Allemagne': 380,
+      'Espagne': 420,
+      'Italie': 400,
+      'Angleterre': 450,
+      'Portugal': 320,
+      'Pays-Bas': 340,
+      'Belgique': 280,
+      'Turquie': 320,
+      'Suisse': 240,
+      'Écosse': 240,
+      'Autriche': 220,
+      'Grèce': 260,
+      'Ukraine': 240,
+      'Russie': 300,
+      'Danemark': 220,
+      'Norvège': 280,
+      'Suède': 280,
+      'Pologne': 300,
+      'République Tchèque': 280,
+      'Croatie': 180,
+      'Serbie': 280,
+      'Roumanie': 260,
+      'Hongrie': 220,
+      'Bulgarie': 240,
+      'États-Unis': 500,
+      'Argentine': 380,
+      'Australie': 220,
+      'Arabie Saoudite': 280
+    };
+    
+    const logoCount = logoCountByCountry[item.country] || 240;
+    return `Collection de ${logoCount} logos de clubs ${item.country.toLowerCase()}`;
+  };
+
+  // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)
   const getLogoCount = (id: number): number => {
     // Collections spéciales avec beaucoup de logos
     if (id === 62) return 50; // Collection clubs populaires
@@ -207,7 +252,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           {item.title}
         </p>
         <p className="text-xs text-gray-500 font-medium">
-          {getLogoCount(item.id)} logos inclus
+          {getCollectionText(item)}
         </p>
       </div>
     </div>

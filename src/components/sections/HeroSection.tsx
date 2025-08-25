@@ -190,7 +190,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Petit séparateur */}
             <div className="flex justify-center mt-4 mb-2">
-              <div className="w-24 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+              <div className="w-48 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
             </div>
             
             {/* Bloc des avis clients déplacé ici */}

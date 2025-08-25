@@ -142,7 +142,13 @@ const Index = () => {
         <title>Logo Foot | Fichier +8700 Logos des Clubs de Football</title>
         {/* Meta tags optimisées pour éviter les doublons */}
         <meta name="description" content={metaDescription} />
+        <meta property="og:title" content="Logo Foot | Fichier +8700 Logos des Clubs de Football" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://logo-foot.com/" />
+        <meta property="og:image" content="https://logo-foot.com/og-image.png" />
         <meta property="og:description" content={metaDescription} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Logo Foot | Fichier +8700 Logos des Clubs de Football" />
         <meta name="twitter:description" content={metaDescription} />
         
         {/* Canonical URL absolue */}
@@ -176,7 +182,7 @@ const Index = () => {
             "mainEntity": {
               "@type": "Product",
               "name": "Pack Complet de Logos de Football",
-              "description": "Collection de plus de 8600 logos de clubs de football"
+              "description": "Collection de plus de 8700 logos de clubs de football"
             }
           })}
         </script>

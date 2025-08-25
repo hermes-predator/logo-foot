@@ -146,7 +146,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
           {/* Colonne droite - Actions avec boutons */}
-          <div className="space-y-4 md:space-y-5 md:mt-8">
+          <div className="space-y-4 md:space-y-5 md:mt-12">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
             </div>

@@ -207,8 +207,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
-            {/* Placeholder pour l'image SumUp */}
-            <div className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
+            <img 
+              src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
+              alt="SumUp - Paiement Sécurisé" 
+              className="h-6"
+            />
             <span className="font-medium">Paiement Sécurisé SumUp</span>
           </div>
 

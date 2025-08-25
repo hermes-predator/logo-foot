@@ -105,8 +105,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Arabie Saoudite': 280
     };
     
-    const logoCount = logoCountByCountry[item.country] || 240;
-    return `Collection de ${logoCount} logos de clubs ${item.country.toLowerCase()}`;
+    return `Collection - Logos ${item.country}`;
   };
 
   // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)

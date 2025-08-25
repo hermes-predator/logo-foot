@@ -187,7 +187,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
-            <p className="max-w-sm mx-auto text-sm font-medium text-gray-600 mt-2 animate-fade-in">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+            <p className="max-w-sm mx-auto text-sm font-medium text-gray-600 mt-2">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">

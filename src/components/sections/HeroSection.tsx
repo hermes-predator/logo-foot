@@ -183,7 +183,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <span className="relative z-10 flex items-center">
                   <Download className="w-5 h-5 mr-2" />
-                   <span className="font-semibold">Télécharger</span>
+                   <span className="font-semibold">Télécharger le ZIP</span>
                 </span>
               </Button>
             </div>

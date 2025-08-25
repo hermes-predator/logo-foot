@@ -82,7 +82,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Portugal': 200,
       'Pays-Bas': 300,
       'Belgique': 150,
-      'Turquie': 150,
+      'Turquie': 200,
       'Suisse': 150,
       'Écosse': 150,
       'Autriche': 150,

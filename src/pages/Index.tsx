@@ -139,7 +139,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Helmet>
         {/* Title tag optimisé pour la page d'accueil */}
-        <title>Logo Foot | Fichier +8600 Logos des Clubs de Football</title>
+        <title>Logo Foot | Fichier +8700 Logos des Clubs de Football</title>
         {/* Meta tags optimisées pour éviter les doublons */}
         <meta name="description" content={metaDescription} />
         <meta property="og:description" content={metaDescription} />

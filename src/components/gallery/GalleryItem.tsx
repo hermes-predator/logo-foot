@@ -286,8 +286,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         </Dialog>
       </div>
       <div className="text-center space-y-1">
-        <p className="text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80">
-          {item.title}
+        <p className="text-sm text-gray-600 transition-opacity duration-200 hover:opacity-100 opacity-80 font-semibold">
+          Collection - {item.title}
         </p>
         <p className="text-xs text-gray-500 font-medium">
           {getCollectionText(item)}

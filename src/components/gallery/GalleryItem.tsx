@@ -75,14 +75,14 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {
       'France': 450,
-      'Allemagne': 380,
-      'Espagne': 420,
+      'Allemagne': 450,
+      'Espagne': 450,
       'Italie': 400,
       'Angleterre': 450,
-      'Portugal': 320,
-      'Pays-Bas': 340,
+      'Portugal': 200,
+      'Pays-Bas': 300,
       'Belgique': 280,
-      'Turquie': 320,
+      'Turquie': 200,
       'Suisse': 240,
       'Écosse': 240,
       'Autriche': 220,
@@ -99,8 +99,9 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Roumanie': 260,
       'Hongrie': 220,
       'Bulgarie': 240,
-      'États-Unis': 500,
-      'Argentine': 380,
+      'États-Unis': 300,
+      'Argentine': 200,
+      'Brésil': 300,
       'Australie': 220,
       'Arabie Saoudite': 280
     };
@@ -134,6 +135,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Bulgarie': 'bulgares',
       'États-Unis': 'américains',
       'Argentine': 'argentins',
+      'Brésil': 'brésiliens',
       'Australie': 'australiens',
       'Arabie Saoudite': 'saoudiens'
     };

@@ -106,7 +106,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     };
     
     const logoCount = logoCountByCountry[item.country] || 240;
-    return `Fichier de +${logoCount} logos de clubs ${item.country === 'Angleterre' ? 'anglais' : item.country.toLowerCase()}`;
+    return `Fichier de + ${logoCount} logos de clubs ${item.country === 'Angleterre' ? 'anglais' : item.country.toLowerCase()}`;
   };
 
   // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)

@@ -206,11 +206,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Nouvelles mentions décoratives centrées */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             <img 
               src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
               alt="SumUp - Paiement Sécurisé" 
-              className="h-6"
+              className="h-4"
             />
             <span className="font-medium">Paiement Sécurisé SumUp</span>
           </div>
@@ -219,9 +219,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Fichier stockable sur Google Drive */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             {/* Placeholder pour l'image Google Drive */}
-            <div className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
+            <div className="w-4 h-4 bg-gray-200 rounded flex items-center justify-center text-xs">IMG</div>
             <span className="font-medium">Fichier stockable sur Google Drive</span>
           </div>
 
@@ -229,11 +229,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 
-              className="h-5"
+              className="h-4"
             />
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}

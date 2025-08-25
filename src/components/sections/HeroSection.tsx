@@ -129,7 +129,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Prix : 7.90€ TTC</span>
+                <span className="text-gray-700 font-medium">Prix : 4.90€ TTC</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
@@ -183,7 +183,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="relative z-10 flex items-center">
                   <Download className="w-5 h-5 mr-2" />
                   <span className="font-semibold">Télécharger</span>
-                  <span className="ml-1 font-normal opacity-90">(7.90€)</span>
+                  <span className="ml-1 font-normal opacity-90">(4.90€)</span>
                 </span>
               </Button>
             </div>

@@ -34,7 +34,7 @@ const PricingBlock = () => {
               
               {/* Nouveau prix avec meilleur contraste */}
               <div className="flex items-center gap-2">
-                <span className="text-4xl md:text-5xl font-extrabold text-gray-900">7.90€</span>
+                <span className="text-4xl md:text-5xl font-extrabold text-gray-900">4.90€</span>
                 <div className="flex flex-col items-start ml-2">
                   <span className="text-emerald-600 text-sm font-bold whitespace-nowrap">92% de réduction</span>
                   <span className="text-gray-600 text-sm whitespace-nowrap">TTC</span>

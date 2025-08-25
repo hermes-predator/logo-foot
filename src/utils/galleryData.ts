@@ -11,7 +11,7 @@ export const generateGalleryItems = () => {
       imageUrl: `/images/logo${index + 1}.png`,
       videoUrl: `/videos/video${index + 1}.mov`,
       country: country,
-      title: country,
+      title: `Collection - ${country}`,
       altText: getCountryDescription(country),
     };
   });

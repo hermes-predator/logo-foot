@@ -146,7 +146,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
           {/* Colonne droite - Actions avec boutons */}
-          <div className="space-y-4 md:space-y-5 md:mt-12">
+          <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
               <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
@@ -183,18 +183,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <span className="relative z-10 flex items-center">
                   <Download className="w-5 h-5 mr-2" />
-                   <span className="font-semibold">Télécharger le ZIP</span>
+                  <span className="font-semibold">Télécharger le ZIP</span>
                 </span>
               </Button>
             </div>
             
             {/* Petit séparateur */}
-            <div className="flex justify-center mt-4 mb-2">
+            <div className="flex justify-center mt-2 mb-1">
               <div className="w-48 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
             </div>
             
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
               {/* Animation des témoignages */}
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

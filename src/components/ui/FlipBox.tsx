@@ -17,8 +17,18 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       {/* Face avant */}
       <div className={`w-full transition-opacity duration-300 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
         <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
+          {/* Bouton + */}
+          <div className="absolute top-2 right-2 z-20">
+            <button
+              onClick={() => setIsFlipped(true)}
+              className="text-black hover:text-gray-700 transition-colors flex-shrink-0"
+            >
+              <Plus className="w-4 h-4" />
+            </button>
+          </div>
+
           {/* Badge dans la flip box */}
-          <div className="absolute top-6 right-2 z-10">
+          <div className="absolute top-12 right-2 z-10">
             <div className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm">
               <Eye className="w-3.5 h-3.5 opacity-70" />
               <span className="font-medium">Survolez les dossiers</span>
@@ -26,14 +36,8 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
           </div>
           
-          <div className="flex items-center gap-2 mb-2 relative z-20">
+          <div className="flex items-center mb-2 relative z-20">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-left">{frontTitle}</h2>
-            <button
-              onClick={() => setIsFlipped(true)}
-              className="text-black hover:text-gray-700 transition-colors flex-shrink-0"
-            >
-              <Plus className="w-4 h-4" />
-            </button>
           </div>
           <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">{frontDescription}</p>
         </div>

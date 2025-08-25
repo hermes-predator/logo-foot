@@ -149,6 +149,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-4 md:space-y-5 md:mt-12">
             <div className="space-y-1">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
+              <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8">
               <Dialog>
@@ -187,7 +188,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
-            <p className="max-w-sm mx-auto text-sm font-medium text-gray-600 mt-2">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+            
             
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">

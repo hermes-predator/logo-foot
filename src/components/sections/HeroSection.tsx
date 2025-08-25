@@ -102,7 +102,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Phrase marketing */}
             <p className="text-lg md:text-xl text-gray-600 text-left mb-2 font-medium">
-              Recevez l'ensemble des logos des club de foot de l'Angleterre, de l'Allemagne, de l'Espagne et du reste du monde.
+              Le fichier du football le plus complet du marché.
             </p>
             
             {/* Liste des bénéfices produits */}

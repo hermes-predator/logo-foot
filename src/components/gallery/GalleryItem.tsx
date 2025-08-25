@@ -104,9 +104,43 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Australie': 220,
       'Arabie Saoudite': 280
     };
+
+    // Conversion des noms de pays en adjectifs de nationalité
+    const countryToAdjective: { [key: string]: string } = {
+      'France': 'français',
+      'Allemagne': 'allemands',
+      'Espagne': 'espagnols',
+      'Italie': 'italiens',
+      'Angleterre': 'anglais',
+      'Portugal': 'portugais',
+      'Pays-Bas': 'néerlandais',
+      'Belgique': 'belges',
+      'Turquie': 'turcs',
+      'Suisse': 'suisses',
+      'Écosse': 'écossais',
+      'Autriche': 'autrichiens',
+      'Grèce': 'grecs',
+      'Ukraine': 'ukrainiens',
+      'Russie': 'russes',
+      'Danemark': 'danois',
+      'Norvège': 'norvégiens',
+      'Suède': 'suédois',
+      'Pologne': 'polonais',
+      'République Tchèque': 'tchèques',
+      'Croatie': 'croates',
+      'Serbie': 'serbes',
+      'Roumanie': 'roumains',
+      'Hongrie': 'hongrois',
+      'Bulgarie': 'bulgares',
+      'États-Unis': 'américains',
+      'Argentine': 'argentins',
+      'Australie': 'australiens',
+      'Arabie Saoudite': 'saoudiens'
+    };
     
     const logoCount = logoCountByCountry[item.country] || 240;
-    return `Fichier de + ${logoCount} logos de clubs ${item.country === 'Angleterre' ? 'anglais' : item.country.toLowerCase()}`;
+    const adjective = countryToAdjective[item.country] || item.country.toLowerCase();
+    return `Fichier de + ${logoCount} logos de clubs ${adjective}`;
   };
 
   // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)

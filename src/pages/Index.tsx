@@ -33,7 +33,7 @@ const Index = () => {
   });
 
   // Meta description optimisée
-  const metaDescription = "Recevez +8600 logo club de foot en un fichier parfaitement organisé par pays. Collection complète de logo des équipes de foot du monde entier.";
+  const metaDescription = "Téléchargez tous les logos des clubs de foot en une fois · Tous les logos des équipes de foot nommés et classés par pays · 8 774 logos classés · Format PNG.";
 
   // Protection anti-copie et test de synchronisation
   useEffect(() => {

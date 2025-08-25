@@ -18,10 +18,10 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       <div className={`w-full transition-opacity duration-300 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
         <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
           {/* Bouton + */}
-          <div className="absolute top-2 right-2 z-20">
+          <div className="absolute top-2 right-2 z-30">
             <button
               onClick={() => setIsFlipped(true)}
-              className="text-black hover:text-gray-700 transition-colors flex-shrink-0"
+              className="text-black hover:text-gray-700 transition-colors flex-shrink-0 p-1"
             >
               <Plus className="w-4 h-4" />
             </button>
@@ -36,7 +36,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </div>
           </div>
           
-          <div className="flex items-center mb-2 relative z-20">
+          <div className="flex items-center mb-2 relative z-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-left">{frontTitle}</h2>
           </div>
           <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">{frontDescription}</p>

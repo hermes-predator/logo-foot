@@ -72,16 +72,20 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
               </p>
               <div className="flex items-center justify-center gap-2">
                 <div className="flex items-center gap-1.5">
-                  {/* Affichage de toutes les bulles */}
-                  <div className="flex items-center gap-1">
+                  {/* Affichage de toutes les bulles avec chevauchement */}
+                  <div className="flex items-center relative">
                     {testimonials.map((testimonial, index) => (
                       <div 
                         key={index}
-                        className={`w-6 h-6 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                        className={`w-6 h-6 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 relative ${
                           index === currentIndex 
-                            ? 'shadow-lg ring-2 ring-white/40 scale-110 animate-pulse' 
-                            : 'shadow-md opacity-60 scale-90 hover:scale-100 hover:opacity-80'
+                            ? 'shadow-lg ring-2 ring-white/40 scale-125 z-10 animate-pulse' 
+                            : 'shadow-md opacity-70 scale-90 hover:scale-100 hover:opacity-90 z-0'
                         }`}
+                        style={{ 
+                          marginLeft: index > 0 ? '-8px' : '0px',
+                          zIndex: index === currentIndex ? 10 : testimonials.length - index
+                        }}
                       >
                         <span className="text-xs font-bold text-white drop-shadow-sm">
                           {testimonial.initials}

@@ -68,7 +68,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   const getCollectionText = (item: GalleryItemProps['item']): string => {
     // Pour les collections spéciales (items 61-64)
     if (item.id === 61) return "Fichier de + 100 logos de compétitions de football";
-    if (item.id === 62) return "Fichier de 70 couvertures (Wallet.Type) de clubs européens";
+    if (item.id === 62) return "Fichier de + 100 couvertures (Wallet.Type) de clubs européens";
     if (item.id === 63) return "Fichier de + 40 couvertures (Wallet.Type) de sélections nationales";
     if (item.id === 64) return "Collection de 195 drapeaux mondiaux";
     

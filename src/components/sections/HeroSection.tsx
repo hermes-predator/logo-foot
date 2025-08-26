@@ -166,39 +166,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="text-gray-700 font-medium">Livraison immédiate</span>
               </div>
             </div>
-          </div>
-
-          {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-full transform -translate-x-1/2 -translate-y-full w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-
-          {/* Colonne droite - Vidéo et actions */}
-          <div className="space-y-3 md:space-y-4 md:mt-12">
-            {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 transform -translate-y-6">
-              <video 
-                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                poster="/placeholder.svg"
-              >
-                <source src="/videos/preview-zip.mp4" type="video/mp4" />
-                <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
-                  <Folder className="w-12 h-12 text-gray-400" />
-                </div>
-              </video>
-              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                Aperçu du contenu ZIP
-              </div>
-            </div>
             
-            {/* Petit séparateur */}
-            <div className="flex justify-center transform -translate-y-20">
-              <div className="w-full max-w-xs md:max-w-sm lg:max-w-md h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-            </div>
-            
-            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8 transform -translate-y-14">
+            {/* Boutons déplacés dans la colonne de gauche */}
+            <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center mt-6">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
@@ -234,10 +204,35 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
+          </div>
+          {/* Trait de séparation vertical */}
+          <div className="hidden md:block absolute left-1/2 top-full transform -translate-x-1/2 -translate-y-full w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+          {/* Colonne droite - Vidéo uniquement */}
+          <div className="space-y-3 md:space-y-4 md:mt-12">
+            {/* Vidéo preview du contenu */}
+            <div className="relative mb-6 transform -translate-y-6">
+              <video 
+                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                poster="/placeholder.svg"
+              >
+                <source src="/videos/preview-zip.mp4" type="video/mp4" />
+                <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
+                  <Folder className="w-12 h-12 text-gray-400" />
+                </div>
+              </video>
+              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                Aperçu du contenu ZIP
+              </div>
+            </div>
             
-            {/* Informations du fichier ZIP déplacées ici */}
-            <div className="text-center -mt-6">
-              <p className="text-xs font-medium text-gray-500 -mt-14">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+            {/* Informations du fichier ZIP */}
+            <div className="text-center">
+              <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
           </div>
         </div>

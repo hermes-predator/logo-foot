@@ -118,8 +118,8 @@ export default {
           '100%': { transform: 'translateY(0px) rotate(0deg)' }
         },
 				'colorPulse': {
-					'0%, 100%': { color: 'rgb(17, 24, 39)' }, // gray-900
-					'50%': { color: 'rgb(156, 163, 175)' } // gray-400
+					'0%, 100%': { color: 'rgb(0, 0, 0)' }, // black
+					'50%': { color: 'rgb(229, 231, 235)' } // gray-200
 				}
 			},
 			animation: {

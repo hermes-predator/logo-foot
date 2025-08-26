@@ -160,7 +160,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <style>{`
                   @keyframes subtlePulse {
                     0%, 100% { transform: scale(1); }
-                    50% { transform: scale(1.01); }
+                    50% { transform: scale(1.02); }
                   }
                 `}</style>
               </h2>

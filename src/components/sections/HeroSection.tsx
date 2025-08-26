@@ -154,7 +154,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-8">
               {/* Icône utilisateurs et texte */}
               <div className="flex justify-center items-center gap-2 mb-1">
-                <Users className="w-3 h-3 text-gray-600" />
+                <Users className="w-3 h-3 text-gray-900" />
                 <span className="text-xs font-bold text-gray-900">Ce qu'en pensent nos clients</span>
               </div>
               {/* Animation des témoignages */}

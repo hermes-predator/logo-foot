@@ -147,6 +147,24 @@ const Header = () => {
               <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
               <span>Blog</span>
             </Link>
+            
+            <Dialog>
+              <DialogTrigger className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-all">
+                <MessageCircle className="w-4 h-4" />
+                <span>Contact</span>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl w-full">
+                <DialogHeader>
+                  <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                  <DialogDescription>
+                    Pour toute question ou demande d'assistance.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="mt-4">
+                  <ContactForm />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         )}
       </nav>

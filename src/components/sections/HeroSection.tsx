@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Folder, Download, Star, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
 
@@ -104,6 +105,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <p className="text-lg md:text-xl text-gray-600 text-left mb-2 font-bold">
               Le fichier du football le plus complet du marché.
             </p>
+            
+            {/* Ligne de séparation */}
+            <div className="flex justify-start mb-4">
+              <Separator className="w-24 bg-gray-300" />
+            </div>
             
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">

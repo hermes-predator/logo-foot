@@ -234,21 +234,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="text-center -mt-3">
               <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
+            
+            {/* Bloc des avis clients */}
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">
+              {/* Icône utilisateurs et texte */}
+              <div className="flex justify-center items-center gap-2 mb-1">
+                <Users className="w-3 h-3 text-gray-900" />
+                <span className="text-xs font-bold text-gray-900">Derniers avis clients</span>
+              </div>
+              {/* Animation des témoignages */}
+              <div>
+                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Bloc des avis clients déplacé ici */}
-        <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-6">
-          {/* Icône utilisateurs et texte */}
-          <div className="flex justify-center items-center gap-2 mb-1">
-            <Users className="w-3 h-3 text-gray-900" />
-            <span className="text-xs font-bold text-gray-900">Derniers avis clients</span>
-          </div>
-          {/* Animation des témoignages */}
-          <div>
-            <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-          </div>
-        </div>
 
         {/* Nouvelles mentions décoratives centrées */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-10 text-sm text-gray-600">

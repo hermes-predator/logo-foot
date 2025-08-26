@@ -72,26 +72,13 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
               </p>
               <div className="flex items-center justify-center gap-2">
                 <div className="flex items-center gap-1.5">
-                  {/* Affichage de toutes les bulles avec chevauchement */}
-                  <div className="flex items-center relative">
-                    {testimonials.map((testimonial, index) => (
-                      <div 
-                        key={index}
-                        className={`w-5 h-5 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-500 relative ${
-                          index === currentIndex 
-                            ? 'shadow-xl ring-2 ring-white/50 scale-125 z-10 brightness-110' 
-                            : 'shadow-md scale-90 hover:scale-100 z-0 brightness-75 hover:brightness-90'
-                        }`}
-                        style={{ 
-                          marginLeft: index > 0 ? '-8px' : '0px',
-                          zIndex: index === currentIndex ? 10 : testimonials.length - index
-                        }}
-                      >
-                        <span className="text-[10px] font-bold text-white drop-shadow-sm">
-                          {testimonial.initials}
-                        </span>
-                      </div>
-                    ))}
+                  {/* Affichage de la bulle du témoignage actuel */}
+                  <div className="flex items-center">
+                    <div className={`w-5 h-5 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg ring-2 ring-white/50 transition-transform duration-200 hover:scale-110`}>
+                      <span className="text-[10px] font-bold text-white drop-shadow-sm">
+                        {currentTestimonial.initials}
+                      </span>
+                    </div>
                   </div>
                   <span className="text-xs text-gray-400 font-medium ml-1">
                     {currentTestimonial.name}

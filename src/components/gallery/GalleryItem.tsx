@@ -84,10 +84,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Belgique': 150,
       'Turquie': 200,
       'Suisse': 150,
-      'Écosse': 150,
+      'Écosse': 100,
       'Autriche': 120,
       'Grèce': 150,
-      'Ukraine': 150,
+      'Ukraine': 100,
       'Russie': 150,
       'Danemark': 150,
       'Norvège': 150,
@@ -103,8 +103,12 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'États-Unis': 300,
       'Argentine': 200,
       'Brésil': 300,
-      'Australie': 220,
-      'Arabie Saoudite': 280
+      'Biélorussie': 100,
+      'Irlande': 100,
+      'Pays de Galles': 100,
+      'Finlande': 100,
+      'Australie': 80,
+      'Arabie Saoudite': 80
     };
 
     // Conversion des noms de pays en adjectifs de nationalité

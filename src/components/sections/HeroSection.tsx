@@ -151,6 +151,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold animate-pulse">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
               <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
+            {/* Bloc des avis clients déplacé ici */}
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
+              {/* Animation des témoignages */}
+              <div>
+                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+            </div>
+            
+            {/* Petit séparateur */}
+            <div className="flex justify-center mt-2 mb-1 transform translate-y-4">
+              <div className="w-full max-w-xs md:max-w-sm lg:max-w-md h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+            </div>
+            
             <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8">
               <Dialog>
                 <DialogTrigger asChild>
@@ -186,19 +199,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <span className="font-semibold">Télécharger le ZIP</span>
                 </span>
               </Button>
-            </div>
-            
-            {/* Petit séparateur */}
-            <div className="flex justify-center mt-2 mb-1 transform translate-y-4">
-              <div className="w-full max-w-xs md:max-w-sm lg:max-w-md h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-            </div>
-            
-            {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto">
-              {/* Animation des témoignages */}
-              <div>
-                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-              </div>
             </div>
           </div>
         </div>

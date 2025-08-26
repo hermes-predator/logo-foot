@@ -116,7 +116,11 @@ export default {
           '50%': { transform: 'translateY(-50px) rotate(0deg)' },
           '75%': { transform: 'translateY(-25px) rotate(-3deg)' },
           '100%': { transform: 'translateY(0px) rotate(0deg)' }
-        }
+        },
+				'colorPulse': {
+					'0%, 100%': { color: 'rgb(17, 24, 39)' }, // gray-900
+					'50%': { color: 'rgb(156, 163, 175)' } // gray-400
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -127,6 +131,7 @@ export default {
 				'bounce': 'bounce 1s infinite',
 				'glow': 'glow 1.5s infinite alternate',
 				'floating': 'floating 6s ease-in-out infinite',
+				'colorPulse': 'colorPulse 1s ease-in-out infinite',
 			}
 		}
 	},

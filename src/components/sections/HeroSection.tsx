@@ -149,9 +149,20 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1 transform -translate-y-8">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
-                <em className="italic font-extrabold text-gray-900 inline-block animate-pulsateScale">
+                <em 
+                  className="italic font-extrabold text-gray-900 inline-block"
+                  style={{
+                    animation: 'subtlePulse 3s ease-in-out infinite'
+                  }}
+                >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>
+                <style>{`
+                  @keyframes subtlePulse {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.01); }
+                  }
+                `}</style>
               </h2>
             </div>
             {/* Bloc des avis clients déplacé ici */}

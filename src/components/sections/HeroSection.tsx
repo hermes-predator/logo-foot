@@ -164,7 +164,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="w-full max-w-xs md:max-w-sm lg:max-w-md h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
             </div>
             
-            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8 transform -translate-y-6">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-4 items-stretch md:items-center md:ml-8 transform -translate-y-8">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">

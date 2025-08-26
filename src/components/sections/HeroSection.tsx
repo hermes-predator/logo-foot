@@ -106,10 +106,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               Le fichier du football le plus complet du marché.
             </p>
             
-            {/* Ligne de séparation */}
-            <div className="flex justify-start mb-4">
-              <Separator className="w-48 md:w-64 lg:w-80 bg-gray-300" />
-            </div>
             
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">

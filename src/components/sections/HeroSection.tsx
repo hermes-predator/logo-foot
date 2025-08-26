@@ -152,7 +152,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-2">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-4">
               {/* Animation des témoignages */}
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

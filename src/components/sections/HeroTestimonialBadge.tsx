@@ -72,8 +72,8 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
               </p>
               <div className="flex items-center justify-center gap-2">
                 <div className="flex items-center gap-1.5">
-                  <div className={`w-5 h-5 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0`}>
-                    <span className="text-xs font-bold text-white">
+                  <div className={`w-6 h-6 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg ring-2 ring-white/20 transition-transform duration-200 hover:scale-110`}>
+                    <span className="text-xs font-bold text-white drop-shadow-sm">
                       {currentTestimonial.initials}
                     </span>
                   </div>

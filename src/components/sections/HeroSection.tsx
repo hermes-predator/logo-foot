@@ -148,7 +148,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Actions avec boutons */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1 transform -translate-y-4">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold text-gray-900 animate-[glow_2s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(0,0,0,0.4)]">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold text-gray-900 animate-[pulse_1.5s_ease-in-out_infinite] transform-gpu">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
               <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             {/* Bloc des avis clients déplacé ici */}

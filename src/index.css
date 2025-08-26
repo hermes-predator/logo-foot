@@ -481,6 +481,16 @@ pre code {
   }
 }
 
+/* Animation de pulsation avec agrandissement */
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
 /* Styles pour l'animation de retournement */
 .perspective-1000 {
   perspective: 1000px;

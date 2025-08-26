@@ -155,7 +155,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Icône utilisateurs et texte */}
               <div className="flex justify-center items-center gap-2 mb-2">
                 <Users className="w-4 h-4 text-gray-600" />
-                <span className="text-sm font-bold text-gray-600">Derniers avis clients</span>
+                <span className="text-sm font-bold text-gray-600">Avis clients récents</span>
               </div>
               {/* Animation des témoignages */}
               <div>

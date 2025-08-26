@@ -120,6 +120,10 @@ export default {
 				'colorPulse': {
 					'0%, 100%': { color: 'rgb(0, 0, 0)' }, // black
 					'50%': { color: 'rgb(229, 231, 235)' } // gray-200
+				},
+				'pulsateScale': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.08)' }
 				}
 			},
 			animation: {
@@ -132,6 +136,7 @@ export default {
 				'glow': 'glow 1.5s infinite alternate',
 				'floating': 'floating 6s ease-in-out infinite',
 				'colorPulse': 'colorPulse 1s ease-in-out infinite',
+				'pulsateScale': 'pulsateScale 2s ease-in-out infinite',
 			}
 		}
 	},

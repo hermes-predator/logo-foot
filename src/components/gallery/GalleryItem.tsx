@@ -70,7 +70,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     if (item.id === 61) return "Fichier de + 100 logos de compétitions de football";
     if (item.id === 62) return "Fichier de + 100 couvertures (Wallet.Type) de clubs européens";
     if (item.id === 63) return "Fichier de + 50 couvertures (Wallet.Type) de sélections nationales";
-    if (item.id === 64) return "Collection de 195 drapeaux mondiaux";
+    if (item.id === 64) return "Fichier de + 270 logos de drapeaux mondiaux";
     
     // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {

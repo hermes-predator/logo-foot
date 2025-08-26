@@ -481,13 +481,13 @@ pre code {
   }
 }
 
-/* Animation de pulsation avec agrandissement très discret */
+/* Animation de pulsation avec agrandissement minimal */
 @keyframes pulseScale {
   0%, 100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 }
 

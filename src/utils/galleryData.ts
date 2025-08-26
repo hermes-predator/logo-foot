@@ -25,7 +25,7 @@ export const generateGalleryItems = () => {
     if (arrayIndex + 1 === 61) {
       title = "Collection - Compétitions de football";
     } else if (arrayIndex + 1 === 62) {
-      title = "Collection - Top Club Européens";
+      title = "Collection - Clubs Européens";
     } else if (arrayIndex + 1 === 63) {
       title = "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
     } else if (arrayIndex + 1 === 64) {

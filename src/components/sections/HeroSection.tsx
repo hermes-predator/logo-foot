@@ -143,7 +143,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-3/4 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+          <div className="hidden md:block absolute left-1/2 top-4/5 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
           {/* Colonne droite - Actions avec boutons */}
           <div className="space-y-3 md:space-y-4 md:mt-12">

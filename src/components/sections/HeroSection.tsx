@@ -108,7 +108,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Ligne de séparation */}
             <div className="flex justify-start mb-4">
-              <Separator className="w-24 bg-gray-300" />
+              <Separator className="w-48 md:w-64 lg:w-80 bg-gray-300" />
             </div>
             
             {/* Titre du produit déplacé ici */}

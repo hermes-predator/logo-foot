@@ -194,13 +194,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Button
                 size="lg"
                 onClick={onScrollToPayment}
-                title="Télécharger le pack ZIP (63 Mo, 8 774 éléments)"
-                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-5 py-4 h-auto text-base border-2 border-green-900/20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.25),0_-6px_16px_-6px_rgba(22,163,74,0.25),0_-2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.35),0_-10px_24px_-8px_rgba(22,163,74,0.30),0_-3px_8px_rgba(0,0,0,0.08)] ring-1 ring-green-900/20 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 overflow-hidden"
-                aria-label="Télécharger le pack de logos de football"
+                title="Paiement sécurisé avec SumUp - 5€"
+                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-5 py-4 h-auto text-base border-2 border-blue-900/20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.25),0_-6px_16px_-6px_rgba(59,130,246,0.25),0_-2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.35),0_-10px_24px_-8px_rgba(59,130,246,0.30),0_-3px_8px_rgba(0,0,0,0.08)] ring-1 ring-blue-900/20 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 overflow-hidden"
+                aria-label="Commande sécurisée via SumUp"
               >
-                <span className="relative z-10 flex items-center">
-                  <Download className="w-5 h-5 mr-2" />
-                  <span className="font-semibold">Télécharger le ZIP</span>
+                <span className="relative z-10 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
+                    alt="SumUp" 
+                    className="h-5 mr-2 brightness-0 invert"
+                  />
+                  <span className="font-semibold">Commande Sécurisée - 5€</span>
                 </span>
               </Button>
             </div>

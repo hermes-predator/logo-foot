@@ -185,18 +185,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 `}</style>
               </h2>
             </div>
-            {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-8">
-              {/* Icône utilisateurs et texte */}
-              <div className="flex justify-center items-center gap-2 mb-1">
-                <Users className="w-3 h-3 text-gray-900" />
-                <span className="text-xs font-bold text-gray-900">Derniers avis clients</span>
-              </div>
-              {/* Animation des témoignages */}
-              <div>
-                <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
-              </div>
-            </div>
             
             {/* Petit séparateur */}
             <div className="flex justify-center transform -translate-y-20">
@@ -244,6 +232,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="text-center -mt-6">
               <p className="text-xs font-medium text-gray-500 -mt-14">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
+          </div>
+        </div>
+
+        {/* Bloc des avis clients déplacé ici */}
+        <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-6">
+          {/* Icône utilisateurs et texte */}
+          <div className="flex justify-center items-center gap-2 mb-1">
+            <Users className="w-3 h-3 text-gray-900" />
+            <span className="text-xs font-bold text-gray-900">Derniers avis clients</span>
+          </div>
+          {/* Animation des témoignages */}
+          <div>
+            <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
           </div>
         </div>
 

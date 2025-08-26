@@ -77,10 +77,10 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                     {testimonials.map((testimonial, index) => (
                       <div 
                         key={index}
-                        className={`w-6 h-6 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 relative ${
+                        className={`w-6 h-6 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-500 relative ${
                           index === currentIndex 
-                            ? 'shadow-lg ring-2 ring-white/40 scale-125 z-10 animate-pulse' 
-                            : 'shadow-md opacity-70 scale-90 hover:scale-100 hover:opacity-90 z-0'
+                            ? 'shadow-xl ring-2 ring-white/50 scale-125 z-10 animate-bounce' 
+                            : 'shadow-md opacity-60 scale-90 hover:scale-100 hover:opacity-80 z-0'
                         }`}
                         style={{ 
                           marginLeft: index > 0 ? '-8px' : '0px',

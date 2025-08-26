@@ -67,7 +67,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   // Fonction pour obtenir le texte descriptif de la collection
   const getCollectionText = (item: GalleryItemProps['item']): string => {
     // Pour les collections spéciales (items 61-64)
-    if (item.id === 61) return "Article spécialisé Hugo Ekitike";
+    if (item.id === 61) return "Fichier de + 100 logos de compétitions de football";
     if (item.id === 62) return "Collection de 50 logos de clubs populaires";
     if (item.id === 63) return "Collection de 32 logos de sélections nationales";
     if (item.id === 64) return "Collection de 195 drapeaux mondiaux";

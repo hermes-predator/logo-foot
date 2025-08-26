@@ -79,7 +79,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                         key={index}
                         className={`w-6 h-6 ${testimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-500 relative ${
                           index === currentIndex 
-                            ? 'shadow-xl ring-2 ring-white/50 scale-125 z-10 brightness-110 animate-[ping_2s_ease-in-out_infinite]' 
+                            ? 'shadow-xl ring-2 ring-white/50 scale-125 z-10 brightness-110' 
                             : 'shadow-md scale-90 hover:scale-100 z-0 brightness-75 hover:brightness-90'
                         }`}
                         style={{ 

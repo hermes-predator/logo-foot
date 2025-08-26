@@ -149,7 +149,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1 transform -translate-y-8">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
-                <em className="italic font-extrabold text-gray-900 inline-block animate-ping">
+                <em className="italic font-extrabold text-gray-900 inline-block animate-pulsateScale">
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>
               </h2>

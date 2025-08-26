@@ -23,7 +23,7 @@ export const generateGalleryItems = () => {
     // Specific titles for collection items
     let title = "";
     if (arrayIndex + 1 === 61) {
-      title = "Collection - Compétitions";
+      title = "Collection - Compétitions de football";
     } else if (arrayIndex + 1 === 62) {
       title = "Collection complète des clubs de football populaire - PNG transparent - Wallet.Type";
     } else if (arrayIndex + 1 === 63) {

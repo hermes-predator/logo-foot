@@ -149,7 +149,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1 transform -translate-y-4">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold animate-[pulse_1s_ease-in-out_infinite] hover:animate-[bounce_0.5s_ease-in-out] transform-gpu hover:scale-110 transition-transform text-gray-900 animate-[colorPulse_1s_ease-in-out_infinite]">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
-              <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-4">
@@ -199,6 +198,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <span className="font-semibold">Télécharger le ZIP</span>
                 </span>
               </Button>
+            </div>
+            
+            {/* Informations du fichier ZIP déplacées ici */}
+            <div className="text-center mt-4">
+              <p className="text-sm font-medium text-gray-600">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
           </div>
         </div>

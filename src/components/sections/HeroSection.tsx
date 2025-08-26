@@ -86,28 +86,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
-          {/* Colonne gauche - Vidéo preview et bénéfices */}
+          {/* Colonne gauche - H1 et bénéfices */}
           <div className="space-y-4">
-            {/* Vidéo preview du contenu */}
-            <div className="relative mb-6">
-              <video 
-                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                poster="/placeholder.svg"
-              >
-                <source src="/videos/preview-zip.mp4" type="video/mp4" />
-                <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
-                  <Folder className="w-12 h-12 text-gray-400" />
-                </div>
-              </video>
-              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                Aperçu du contenu ZIP
-              </div>
-            </div>
-
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}
@@ -165,8 +145,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Trait de séparation vertical */}
           <div className="hidden md:block absolute left-1/2 top-full transform -translate-x-1/2 -translate-y-full w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
-          {/* Colonne droite - Actions avec boutons */}
+          {/* Colonne droite - Vidéo et actions */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
+            {/* Titre du produit */}
             <div className="space-y-1 transform -translate-y-8">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
                 <em 
@@ -184,6 +165,26 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   }
                 `}</style>
               </h2>
+            </div>
+
+            {/* Vidéo preview du contenu */}
+            <div className="relative mb-6 transform -translate-y-6">
+              <video 
+                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                poster="/placeholder.svg"
+              >
+                <source src="/videos/preview-zip.mp4" type="video/mp4" />
+                <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
+                  <Folder className="w-12 h-12 text-gray-400" />
+                </div>
+              </video>
+              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                Aperçu du contenu ZIP
+              </div>
             </div>
             
             {/* Petit séparateur */}

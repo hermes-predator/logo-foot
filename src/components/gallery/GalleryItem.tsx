@@ -85,7 +85,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Turquie': 200,
       'Suisse': 150,
       'Écosse': 150,
-      'Autriche': 150,
+      'Autriche': 120,
       'Grèce': 150,
       'Ukraine': 150,
       'Russie': 150,

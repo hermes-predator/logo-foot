@@ -87,7 +87,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                           zIndex: index === currentIndex ? 10 : testimonials.length - index
                         }}
                       >
-                        <span className="text-xs font-bold text-white drop-shadow-sm">
+                        <span className="text-[10px] font-bold text-white drop-shadow-sm">
                           {testimonial.initials}
                         </span>
                       </div>

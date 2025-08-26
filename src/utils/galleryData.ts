@@ -29,7 +29,7 @@ export const generateGalleryItems = () => {
     } else if (arrayIndex + 1 === 63) {
       title = "Collection - Sélections Nationales";
     } else if (arrayIndex + 1 === 64) {
-      title = "Collection complète des drapeaux mondiaux - PNG transparent";
+      title = "Collection - Drapeaux mondiaux";
     }
     
     return {

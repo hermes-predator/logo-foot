@@ -151,7 +151,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold animate-[pulse_1s_ease-in-out_infinite] hover:animate-[bounce_0.5s_ease-in-out] transform-gpu hover:scale-110 transition-transform text-gray-900 animate-[colorPulse_1s_ease-in-out_infinite]">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
             </div>
             {/* Bloc des avis clients déplacé ici */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-4">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-6">
               {/* Animation des témoignages */}
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

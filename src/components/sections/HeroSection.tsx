@@ -148,7 +148,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Actions avec boutons */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
             <div className="space-y-1 transform -translate-y-8">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold animate-[pulse_2s_ease-in-out_infinite] hover:animate-[bounce_0.5s_ease-in-out] transform-gpu hover:scale-110 transition-transform text-gray-900 animate-[pulsateScale_2s_ease-in-out_infinite]">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800"><em className="italic font-extrabold text-gray-900 animate-[pulsateScale_2s_ease-in-out_infinite] hover:scale-110 transition-transform">⦗FRONT-CLOUD⦘~ Football.zip</em></h2>
             </div>
             {/* Bloc des avis clients déplacé ici */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-8">

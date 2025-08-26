@@ -27,7 +27,7 @@ export const generateGalleryItems = () => {
     } else if (arrayIndex + 1 === 62) {
       title = "Collection - Clubs Européens";
     } else if (arrayIndex + 1 === 63) {
-      title = "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
+      title = "Collection - Sélections Nationales";
     } else if (arrayIndex + 1 === 64) {
       title = "Collection complète des drapeaux mondiaux - PNG transparent";
     }

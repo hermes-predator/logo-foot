@@ -120,7 +120,19 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Azerbaïdjan': 50,
       'Moldavie': 50,
       'Arménie': 40,
-      'Chypre': 40
+      'Chypre': 40,
+      'Estonie': 40,
+      'Géorgie': 40,
+      'Kazakhstan': 40,
+      'Kosovo': 40,
+      'Lettonie': 40,
+      'Lituanie': 40,
+      'Macédoine du Nord': 40,
+      'Monténégro': 40,
+      'Default': 20,
+      'Iles Féroés': 20,
+      'Qatar': 20,
+      'Gibraltar': 12
     };
 
     // Conversion des noms de pays en adjectifs de nationalité
@@ -167,6 +179,17 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       'Moldavie': 'moldaves',
       'Arménie': 'arméniens',
       'Chypre': 'chypriotes',
+      'Estonie': 'estoniens',
+      'Géorgie': 'géorgiens',
+      'Kazakhstan': 'kazakhs',
+      'Kosovo': 'kosovars',
+      'Lettonie': 'lettons',
+      'Lituanie': 'lituaniens',
+      'Macédoine du Nord': 'macédoniens',
+      'Monténégro': 'monténégrins',
+      'Iles Féroés': 'féroïens',
+      'Qatar': 'qataris',
+      'Gibraltar': 'gibraltariens',
       'États-Unis': 'américains',
       'Argentine': 'argentins',
       'Brésil': 'brésiliens',

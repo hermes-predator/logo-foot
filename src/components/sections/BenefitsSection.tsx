@@ -12,7 +12,7 @@ const benefits = [
   {
     icon: Download,
     title: "Accès Instantané",
-    description: "Téléchargement immédiat après paiement"
+    description: "Livré immédiatement par téléchargement"
   },
   {
     icon: Shield,

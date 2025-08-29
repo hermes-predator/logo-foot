@@ -153,7 +153,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Prix : 5€</span>
+                <span className="text-gray-700 font-medium">Prix : 5.90€</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
@@ -192,7 +192,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Button
                 size="lg"
                 onClick={onScrollToPayment}
-                title="Paiement sécurisé avec SumUp - 5€"
+                title="Paiement sécurisé avec SumUp - 5.90€"
                 className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12),inset_0_-1px_0_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.20),0_-10px_24px_-8px_rgba(0,0,0,0.30),0_-3px_8px_rgba(0,0,0,0.08)] ring-1 ring-gray-700/30 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >

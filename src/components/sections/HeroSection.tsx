@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Separator } from "@/components/ui/separator";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
+import { useRecentBuyers } from '@/hooks/useRecentBuyers';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -67,6 +68,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToPayment
 }) => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const recentBuyers = useRecentBuyers();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -212,7 +214,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-xs">
-                  <span className="font-semibold">47</span> personnes ont acheté dans les dernières 24h
+                  <span className="font-semibold">{recentBuyers}</span> personnes ont acheté dans les dernières 24h
                 </span>
               </div>
             </div>

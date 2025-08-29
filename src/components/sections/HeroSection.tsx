@@ -90,7 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne gauche - H1 et bénéfices */}
           <div className="transform -translate-y-12">{/* Ajustement de la position verticale pour remonter encore davantage */}
             {/* Container avec fond clair pour le branding */}
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-gray-100/60">{/* Container brandé */}
+            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 px-12 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}

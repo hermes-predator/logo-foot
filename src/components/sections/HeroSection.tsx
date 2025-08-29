@@ -210,7 +210,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Pastille d'urgence - Achats récents */}
-            <div className="mt-4 flex justify-start">
+            <div className="mt-8 flex justify-start">
               <div className="inline-flex items-center gap-2 text-gray-600 text-sm font-medium">
                 <div className="relative">
                   {/* Point vert principal */}

@@ -5,62 +5,74 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Separator } from "@/components/ui/separator";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
+
 interface HeroSectionProps {
   onScrollToPayment: () => void;
 }
 
 // Données des témoignages partagées (synchronisées avec Testimonials.tsx)
-const testimonials = [{
-  name: "Pierre M.",
-  content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
-  rating: 5,
-  initials: "PM",
-  bgColor: "bg-gradient-to-br from-blue-400 to-blue-600"
-}, {
-  name: "Yassine B.",
-  content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
-  rating: 5,
-  initials: "YB",
-  bgColor: "bg-gradient-to-br from-green-400 to-green-600"
-}, {
-  name: "Quentin D.",
-  content: "Tout s'est bien passé, je recommande, merci !",
-  rating: 5,
-  initials: "QD",
-  bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
-}, {
-  name: "Florent P.",
-  content: "Très impressionné par le fichier, vaut son prix 👍.",
-  rating: 5,
-  initials: "FP",
-  bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
-}, {
-  name: "Maxime L.",
-  content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
-  rating: 5,
-  initials: "ML",
-  bgColor: "bg-gradient-to-br from-red-400 to-red-600"
-}, {
-  name: "Alex G.",
-  content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
-  rating: 5,
-  initials: "AG",
-  bgColor: "bg-gradient-to-br from-teal-400 to-teal-600"
-}, {
-  name: "Emma L.",
-  content: "Tout est parfait, merci :)",
-  rating: 5,
-  initials: "EL",
-  bgColor: "bg-gradient-to-br from-pink-400 to-pink-600"
-}];
+const testimonials = [
+  {
+    name: "Pierre M.",
+    content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
+    rating: 5,
+    initials: "PM",
+    bgColor: "bg-gradient-to-br from-blue-400 to-blue-600"
+  },
+  {
+    name: "Yassine B.",
+    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
+    rating: 5,
+    initials: "YB",
+    bgColor: "bg-gradient-to-br from-green-400 to-green-600"
+  },
+  {
+    name: "Quentin D.",
+    content: "Tout s'est bien passé, je recommande, merci !",
+    rating: 5,
+    initials: "QD",
+    bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
+  },
+  {
+    name: "Florent P.",
+    content: "Très impressionné par le fichier, vaut son prix 👍.",
+    rating: 5,
+    initials: "FP",
+    bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
+  },
+  {
+    name: "Maxime L.",
+    content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
+    rating: 5,
+    initials: "ML",
+    bgColor: "bg-gradient-to-br from-red-400 to-red-600"
+  },
+  {
+    name: "Alex G.",
+    content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
+    rating: 5,
+    initials: "AG",
+    bgColor: "bg-gradient-to-br from-teal-400 to-teal-600"
+  },
+  {
+    name: "Emma L.",
+    content: "Tout est parfait, merci :)",
+    rating: 5,
+    initials: "EL",
+    bgColor: "bg-gradient-to-br from-pink-400 to-pink-600"
+  }
+];
+
 const HeroSection: React.FC<HeroSectionProps> = ({
   onScrollToPayment
 }) => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTestimonialIndex(prev => (prev + 1) % testimonials.length);
+      setCurrentTestimonialIndex((prev) => (prev + 1) % testimonials.length);
     }, 4000);
+
     return () => clearInterval(interval);
   }, []);
   return <section className="relative pt-8 pb-6 px-4 overflow-hidden">
@@ -76,9 +88,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-20">{/* Ajustement de la position verticale pour remonter encore davantage */}
+          <div className="transform -translate-y-12">{/* Ajustement de la position verticale pour remonter encore davantage */}
             {/* Container avec fond clair pour le branding */}
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-gray-100/60">{/* Container brandé */}
+            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}
@@ -100,9 +112,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
               <h2 className="text-xl md:text-2xl lg:text-2xl font-bold text-gray-800">
-                <em className="italic font-extrabold text-gray-900 inline-block" style={{
-                  animation: 'subtlePulse 3s ease-in-out infinite'
-                }}>
+                <em 
+                  className="italic font-extrabold text-gray-900 inline-block"
+                  style={{
+                    animation: 'subtlePulse 3s ease-in-out infinite'
+                  }}
+                >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>
                 <style>{`
@@ -138,7 +153,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Prix : 5€</span>
+                <span className="text-gray-700 font-medium">Prix : 5.90€</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
@@ -174,10 +189,20 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </DialogContent>
               </Dialog>
               
-              <Button size="lg" onClick={onScrollToPayment} title="Paiement sécurisé avec SumUp - 5€" className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12),inset_0_-1px_0_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.20),0_-10px_24px_-8px_rgba(0,0,0,0.30),0_-3px_8px_rgba(0,0,0,0.08)] ring-1 ring-gray-700/30 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden" aria-label="Commande sécurisée via SumUp">
+              <Button
+                size="lg"
+                onClick={onScrollToPayment}
+                title="Paiement sécurisé avec SumUp - 5.90€"
+                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12),inset_0_-1px_0_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.20),0_-10px_24px_-8px_rgba(0,0,0,0.30),0_-3px_8px_rgba(0,0,0,0.08)] ring-1 ring-gray-700/30 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                aria-label="Commande sécurisée via SumUp"
+              >
                 <span className="relative z-10 flex items-center justify-center">
                   <span className="font-semibold">Payer avec</span>
-                  <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-5 ml-2 brightness-0 invert" />
+                  <img 
+                    src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
+                    alt="SumUp" 
+                    className="h-5 ml-2 brightness-0 invert"
+                  />
                 </span>
               </Button>
             </div>
@@ -190,7 +215,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-3 md:space-y-4 md:mt-12">
             {/* Vidéo preview du contenu */}
             <div className="relative mb-6 transform -translate-y-12">
-              <video className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200" autoPlay muted loop playsInline poster="/placeholder.svg">
+              <video 
+                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                poster="/placeholder.svg"
+              >
                 <source src="/videos/preview-zip.mp4" type="video/mp4" />
                 <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
                   <Folder className="w-12 h-12 text-gray-400" />
@@ -202,16 +234,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Informations du fichier ZIP */}
-            <div className="text-center -mt-8 transform -translate-y-17">
+            <div className="text-center -mt-8 transform -translate-y-12">
               <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto mt-4">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-16">
               {/* Icône utilisateurs et texte */}
-              <div className="flex justify-center items-center gap-2 mb-1">
+              <div className="flex justify-center items-center gap-2 mb-1 transform translate-y-3">
                 <Users className="w-3 h-3 text-gray-900" />
-                
+                <span className="text-xs font-bold text-gray-900">Derniers avis clients</span>
               </div>
               {/* Animation des témoignages */}
               <div>
@@ -226,7 +258,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex flex-wrap items-center justify-center gap-4 mt-10 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
-            <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp - Paiement Sécurisé" className="h-4" />
+            <img 
+              src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
+              alt="SumUp - Paiement Sécurisé" 
+              className="h-4"
+            />
             <span className="font-medium">Paiement Sécurisé SumUp</span>
           </div>
 
@@ -236,7 +272,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Fichier stockable sur Google Drive */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             {/* Placeholder pour l'image Google Drive */}
-            <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-4" />
+            <img 
+              src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" 
+              alt="Google Drive" 
+              className="h-4"
+            />
             <span className="font-medium">Fichier stockable sur Google Drive</span>
           </div>
 
@@ -245,7 +285,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Note Judge.me avec logo et étoiles */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
-            <img src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" alt="Judge.me" className="h-4" />
+            <img 
+              src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
+              alt="Judge.me" 
+              className="h-4"
+            />
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
             </div>

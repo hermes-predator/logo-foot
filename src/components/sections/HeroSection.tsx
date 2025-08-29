@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, Star, Users } from "lucide-react";
+import { Folder, Download, Star, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -238,9 +238,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Bloc des avis clients */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-16">
-              {/* Icône utilisateurs */}
-              <div className="flex justify-center items-center gap-2 mb-1 transform translate-y-3">
-                <Users className="w-3 h-3 text-gray-900" />
+              {/* Texte "Avis récents" avec icône horloge */}
+              <div className="flex justify-center items-center gap-1 mb-2 text-xs text-gray-500">
+                <Clock className="w-3 h-3" />
+                <span>Avis récents</span>
               </div>
               {/* Animation des témoignages */}
               <div>

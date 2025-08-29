@@ -206,6 +206,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
+            
+            {/* Pastille d'urgence - Achats récents */}
+            <div className="mt-4 flex justify-center">
+              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-xs">
+                  <span className="font-semibold">47</span> personnes ont acheté dans les dernières 24h
+                </span>
+              </div>
+            </div>
             </div> {/* Fin du container brandé */}
           </div>
 

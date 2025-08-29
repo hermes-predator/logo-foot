@@ -85,7 +85,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       const { data, error } = await supabase.functions.invoke("handle-payment", {
         body: {
           checkout_reference: `FC-${Date.now()}`,
-          amount: 5.0,
+          amount: 5.90,
           currency: "EUR",
           description: "⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football",
         },

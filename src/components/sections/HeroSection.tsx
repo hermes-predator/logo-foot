@@ -211,7 +211,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Pastille d'urgence - Achats récents */}
             <div className="mt-12 flex justify-start ml-2">
-              <div className="inline-flex items-center gap-2 text-gray-600 text-sm font-medium">
+              <div className="inline-flex items-center gap-3 text-gray-600 text-sm font-medium">
                 <div className="relative">
                   {/* Point vert principal */}
                   <div className="w-2 h-2 bg-green-500 rounded-full relative z-10"></div>

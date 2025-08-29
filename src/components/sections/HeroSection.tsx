@@ -208,8 +208,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             </div> {/* Fin du container brandé */}
           </div>
-          {/* Trait de séparation vertical */}
-          <div className="hidden md:block absolute left-1/2 top-full transform -translate-x-1/2 -translate-y-full w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
 
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 md:mt-12">

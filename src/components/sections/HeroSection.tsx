@@ -239,7 +239,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto -mt-8">
+            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto -mt-12">
               {/* Icône utilisateurs et texte */}
               <div className="flex justify-center items-center gap-2 mb-1">
                 <Users className="w-3 h-3 text-gray-900" />

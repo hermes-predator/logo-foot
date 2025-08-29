@@ -161,7 +161,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Livré immédiatement par téléchargement</span>
+                <span className="text-gray-700 font-medium">Livraison immédiate incluse</span>
               </div>
             </div>
             

@@ -215,8 +215,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="relative">
                   {/* Point vert principal */}
                   <div className="w-2 h-2 bg-green-500 rounded-full relative z-10"></div>
-                  {/* Effet de pulsation */}
-                  <div className="absolute inset-0 w-2 h-2 bg-green-500/30 rounded-full animate-ping"></div>
+                  {/* Effet de pulsation plus visible */}
+                  <div className="absolute -inset-1 w-4 h-4 bg-green-400/60 rounded-full animate-ping"></div>
                 </div>
                 <span className="text-xs">
                   <span className="font-semibold">{recentBuyers}</span> personnes ont acheté dans les dernières 24h

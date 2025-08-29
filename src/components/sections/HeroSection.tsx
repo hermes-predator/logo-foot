@@ -88,7 +88,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-2 gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-20">{/* Ajustement de la position verticale pour remonter encore davantage */}
+          <div className="transform -translate-y-12">{/* Ajustement de la position verticale pour remonter encore davantage */}
             {/* Container avec fond clair pour le branding */}
             <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}

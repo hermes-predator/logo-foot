@@ -92,7 +92,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Container avec fond clair pour le branding */}
             <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-gray-900 text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}
               <span className="font-black">
                 logos des clubs de football

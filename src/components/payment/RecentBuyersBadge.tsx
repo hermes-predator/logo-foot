@@ -7,12 +7,12 @@ interface RecentBuyersBadgeProps {
 }
 
 const RecentBuyersBadge = ({ count }: RecentBuyersBadgeProps) => {
-  const [currentCount, setCurrentCount] = useState(count - 10);
+  const [currentCount, setCurrentCount] = useState(count);
   
-  // Effet pour augmenter progressivement le nombre
+  // Effet pour synchroniser avec le count
   useEffect(() => {
-    // Définir le compteur initial légèrement en dessous du compte final
-    setCurrentCount(Math.max(count - 10, 60));
+    // Utiliser directement le count pour être synchronisé
+    setCurrentCount(count);
     
     // Intervalle pour augmenter progressivement le nombre
     const interval = setInterval(() => {

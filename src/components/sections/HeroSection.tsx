@@ -256,7 +256,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Bloc des avis clients */}
             <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-16">
               {/* Texte "Derniers avis clients" avec icône utilisateurs */}
-              <div className="flex justify-center items-center gap-2 mb-2 text-xs text-black font-extrabold translate-y-5">
+              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-black font-extrabold translate-y-5">
                 <Users className="w-3 h-3" />
                 <span>Derniers avis clients</span>
               </div>

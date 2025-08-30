@@ -15,6 +15,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
 import MetaTagsManager from './components/SEO/MetaTagsManager';
 import PaymentModalHost from './components/payment/PaymentModalHost';
+import { RecentBuyersProvider } from './contexts/RecentBuyersContext';
 
 // Créer un client pour React Query
 const queryClient = new QueryClient({
@@ -31,21 +32,23 @@ const App = () => {
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <Router basename="/">
-            <MetaTagsManager />
-            <Header />
-            <PaymentModalHost />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
-              <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
-              <Route path="/payment" element={<Payment />} />
-              <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Router>
-          <Toaster />
+          <RecentBuyersProvider>
+            <Router basename="/">
+              <MetaTagsManager />
+              <Header />
+              <PaymentModalHost />
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
+                <Route path="/payment" element={<Payment />} />
+                <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Router>
+            <Toaster />
+          </RecentBuyersProvider>
         </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>

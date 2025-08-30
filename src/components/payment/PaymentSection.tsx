@@ -4,7 +4,7 @@ import PaymentTitle from './PaymentTitle';
 import TrustIndicators from './TrustIndicators';
 import { Skeleton } from '@/components/ui/skeleton';
 import { PerformanceWrapper } from '@/components/ui/performance-wrapper';
-import { useRecentBuyers } from '@/hooks/useRecentBuyers';
+import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 
 // Chargement paresseux des composants non-critiques
 const PaymentCard = lazy(() => import('./PaymentCard'));

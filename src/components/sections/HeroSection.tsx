@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Separator } from "@/components/ui/separator";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
-import { useRecentBuyers } from '@/hooks/useRecentBuyers';
+import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;

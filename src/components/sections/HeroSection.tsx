@@ -113,7 +113,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
-              <h2 className="text-xl md:text-2xl lg:text-2xl font-bold text-gray-800">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
                 <em 
                   className="italic font-extrabold text-gray-900 inline-block"
                   style={{

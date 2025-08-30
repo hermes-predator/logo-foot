@@ -261,7 +261,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <span>Derniers avis clients</span>
               </div>
               {/* Animation des témoignages */}
-              <div>
+              <div className="translate-y-2">
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
             </div>

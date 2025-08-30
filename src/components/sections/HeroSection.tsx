@@ -115,7 +115,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="text-left mb-4">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
                 <em 
-                  className="italic font-extrabold text-gray-900 inline-block"
+                  className="italic font-extrabold text-gray-900 inline-block whitespace-nowrap"
                   style={{
                     animation: 'subtlePulse 3s ease-in-out infinite'
                   }}

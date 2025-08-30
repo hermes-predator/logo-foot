@@ -219,7 +219,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <div className="absolute -inset-0.5 w-3 h-3 bg-green-400/60 rounded-full animate-[ping_2.5s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
                 </div>
                 <span className="text-xs">
-                  <span className="font-semibold">{recentBuyers}</span> personnes ont acheté récemment
+                  <span className="font-extrabold">{recentBuyers}</span> personnes ont acheté récemment
                 </span>
               </div>
             </div>

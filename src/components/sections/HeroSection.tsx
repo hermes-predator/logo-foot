@@ -165,7 +165,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-700 font-medium">Prix : </span>
-                  <span className="text-gray-400 line-through text-sm">100€</span>
+                  <span className="text-gray-400 line-through text-lg">100€</span>
                   <span className="text-gray-900 font-bold text-lg">5.90€</span>
                   <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded font-medium">-95%</span>
                 </div>

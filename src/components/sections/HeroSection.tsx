@@ -114,7 +114,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
               <h2 
-                className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 flex items-center gap-2"
+                className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
                   animation: 'subtlePulse 3s ease-in-out infinite'
                 }}

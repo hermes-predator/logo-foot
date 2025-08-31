@@ -120,7 +120,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 }}
               >
                 <Folder 
-                  className="w-6 h-6 text-gray-700 flex-shrink-0" 
+                  className="w-6 h-6 text-gray-900 flex-shrink-0" 
                   fill="currentColor"
                 />
                 <em 

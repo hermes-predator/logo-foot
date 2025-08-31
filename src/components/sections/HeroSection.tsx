@@ -116,8 +116,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
                 <Folder 
                   className="w-6 h-6 text-gray-700 flex-shrink-0" 
+                  fill="currentColor"
                   style={{
-                    animation: 'subtlePulseIcon 3s ease-in-out infinite'
+                    animation: 'subtlePulse 3s ease-in-out infinite'
                   }}
                 />
                 <em 
@@ -132,10 +133,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   @keyframes subtlePulse {
                     0%, 100% { transform: scale(1); }
                     50% { transform: scale(1.02); }
-                  }
-                  @keyframes subtlePulseIcon {
-                    0%, 100% { transform: scale(1) rotate(0deg); }
-                    50% { transform: scale(1.05) rotate(1deg); }
                   }
                 `}</style>
               </h2>

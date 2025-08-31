@@ -163,7 +163,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Prix : 5.90€</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-700 font-medium">Prix : </span>
+                  <span className="text-red-500 line-through text-sm font-medium">120€</span>
+                  <span className="text-green-600 font-bold text-lg">5.90€</span>
+                  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-semibold animate-pulse">-95%</span>
+                </div>
               </div>
             </div>
             

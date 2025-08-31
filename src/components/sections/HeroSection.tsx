@@ -113,7 +113,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+              <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
+                <Folder className="w-6 h-6 text-gray-700 flex-shrink-0" />
                 <em 
                   className="italic font-extrabold text-gray-900 inline-block whitespace-nowrap"
                   style={{

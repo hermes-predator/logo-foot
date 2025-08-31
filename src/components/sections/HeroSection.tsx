@@ -255,7 +255,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </video>
               <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                Aperçu du contenu
+                Aperçu du fichier
               </div>
             </div>
             

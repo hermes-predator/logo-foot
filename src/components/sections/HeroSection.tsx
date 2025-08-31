@@ -113,19 +113,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
-              <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
+              <h2 
+                className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
+                style={{
+                  animation: 'subtlePulse 3s ease-in-out infinite'
+                }}
+              >
                 <Folder 
                   className="w-6 h-6 text-gray-700 flex-shrink-0" 
                   fill="currentColor"
-                  style={{
-                    animation: 'subtlePulse 3s ease-in-out infinite'
-                  }}
                 />
                 <em 
                   className="italic font-extrabold text-gray-900 inline-block whitespace-nowrap"
-                  style={{
-                    animation: 'subtlePulse 3s ease-in-out infinite'
-                  }}
                 >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>

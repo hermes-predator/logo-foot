@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Separator } from "@/components/ui/separator";
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
+import JudgeMeBadge from '@/components/blog/JudgeMeBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 
 interface HeroSectionProps {
@@ -269,6 +270,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Animation des témoignages */}
               <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
+              </div>
+              
+              {/* Badge Judge.me intégré */}
+              <div className="mt-2 -mx-3">
+                <JudgeMeBadge />
               </div>
             </div>
           </div>

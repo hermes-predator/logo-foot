@@ -273,7 +273,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               
               {/* Logo Judge.me simple */}
-              <div className="mt-2 flex justify-center pb-3">
+              <div className="mt-1 flex justify-center pb-2">
                 <a 
                   href="https://judge.me/" 
                   target="_blank" 

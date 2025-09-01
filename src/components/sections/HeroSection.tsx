@@ -265,14 +265,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200/60 rounded-xl p-4 text-center max-w-md mx-auto transform -translate-y-12 shadow-sm">
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200/60 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-12 shadow-sm">
               {/* Texte "Derniers avis clients" avec icône utilisateurs */}
-              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-green-800 font-extrabold translate-y-3">
+              <div className="flex justify-center items-center gap-2 mb-1 text-xs text-green-800 font-extrabold">
                 <Users className="w-3 h-3" />
                 <span>Derniers avis clients</span>
               </div>
               {/* Animation des témoignages */}
-              <div className="translate-y-2">
+              <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
             </div>

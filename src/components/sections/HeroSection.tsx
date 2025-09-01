@@ -272,9 +272,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
               
-              {/* Badge Judge.me intégré */}
-              <div className="mt-2 -mx-3">
-                <JudgeMeBadge />
+              {/* Logo Judge.me simple */}
+              <div className="mt-2 flex justify-center pb-3">
+                <a 
+                  href="https://judge.me/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="opacity-60 hover:opacity-80 transition-opacity duration-300"
+                >
+                  <img 
+                    src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+                    alt="Judge.me" 
+                    className="h-6 w-auto" 
+                    loading="lazy"
+                  />
+                </a>
               </div>
             </div>
           </div>

@@ -238,9 +238,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Colonne droite - Vidéo uniquement */}
-          <div className="space-y-3 md:space-y-4 md:mt-12">
+          <div className="space-y-2 md:space-y-3 md:mt-6">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 transform -translate-y-12">
+            <div className="relative mb-4 transform -translate-y-6">
               <video 
                 className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
                 autoPlay 
@@ -260,19 +260,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Informations du fichier ZIP */}
-            <div className="text-center -mt-8 transform -translate-y-12">
+            <div className="text-center -mt-2 transform -translate-y-6">
               <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200/60 rounded-xl p-4 text-center max-w-md mx-auto transform -translate-y-12 shadow-sm">
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200/60 rounded-xl p-4 text-center max-w-md mx-auto transform -translate-y-4 shadow-sm">
               {/* Texte "Derniers avis clients" avec icône utilisateurs */}
-              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-green-800 font-extrabold translate-y-3">
+              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-green-800 font-extrabold">
                 <Users className="w-3 h-3" />
                 <span>Derniers avis clients</span>
               </div>
               {/* Animation des témoignages */}
-              <div className="translate-y-2">
+              <div>
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
               </div>
             </div>

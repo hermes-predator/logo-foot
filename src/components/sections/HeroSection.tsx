@@ -264,10 +264,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
-            {/* Bloc des avis clients */}
-            <div className="bg-white/80 rounded-xl p-3 text-center max-w-md mx-auto transform -translate-y-12">
+            {/* Bloc des avis clients avec container de confiance */}
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200/60 rounded-xl p-4 text-center max-w-md mx-auto transform -translate-y-12 shadow-sm">
               {/* Texte "Derniers avis clients" avec icône utilisateurs */}
-              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-gray-700 font-extrabold translate-y-5">
+              <div className="flex justify-center items-center gap-3 mb-2 text-xs text-green-800 font-extrabold translate-y-3">
                 <Users className="w-3 h-3" />
                 <span>Derniers avis clients</span>
               </div>

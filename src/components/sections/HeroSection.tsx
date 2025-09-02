@@ -74,7 +74,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonialIndex((prev) => (prev + 1) % testimonials.length);
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
@@ -278,7 +278,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   href="https://judge.me/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="opacity-60"
                 >
                   <img 
                     src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 

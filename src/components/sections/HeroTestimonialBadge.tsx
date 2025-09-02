@@ -80,13 +80,19 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                       </span>
                     </div>
                   </div>
-                  <span className="text-xs text-gray-400 font-medium ml-1">
-                    {currentTestimonial.name}
-                  </span>
-                </div>
-                <div className="flex items-center gap-0.5">
-                  {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />)}
-                </div>
+                   <span className="text-xs text-gray-400 font-medium ml-1">
+                     {currentTestimonial.name}
+                   </span>
+                 </div>
+                 <div className="flex items-center gap-1">
+                   {[...Array(currentTestimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />)}
+                   {/* Logo Judge.me à côté des étoiles */}
+                   <img 
+                     src="https://judge.me/api/v1/widget/stars?theme=white&size=30&show_rating=false&url_size=standard" 
+                     alt="Judge.me" 
+                     className="h-3 ml-1"
+                   />
+                 </div>
               </div>
             </div>
             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 fill-gray-400 mt-0.5" />

@@ -71,6 +71,9 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			translate: {
+				'17': '4.25rem',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {

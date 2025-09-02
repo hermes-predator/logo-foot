@@ -278,7 +278,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   href="https://judge.me/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="opacity-60 hover:opacity-80 transition-opacity duration-300"
+                  className="opacity-60"
                 >
                   <img 
                     src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 

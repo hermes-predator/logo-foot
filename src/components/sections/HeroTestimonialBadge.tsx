@@ -95,7 +95,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                      <img 
                        src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
                        alt="Judge.me" 
-                       className="h-4 w-auto" 
+                       className="h-6 w-auto" 
                      />
                    </a>
                  </div>

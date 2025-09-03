@@ -70,7 +70,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
               <p className="text-sm text-gray-600 max-w-[500px] font-medium leading-tight line-clamp-2 min-h-[48px]">
                 {currentTestimonial.content}
               </p>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 mt-1">
                 <div className="flex items-center gap-1.5">
                   {/* Affichage de la bulle du témoignage actuel */}
                   <div className="flex items-center">

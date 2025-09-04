@@ -91,7 +91,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-[11fr_9fr] gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-12">{/* Alignement ajusté avec le lecteur vidéo */}
+          <div className="transform -translate-y-6">{/* Alignement ajusté avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
             <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 px-12 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}
@@ -108,7 +108,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Phrase marketing */}
             <p className="text-lg md:text-xl text-gray-500 text-left mb-8 font-medium">
-              Nous avons créé le fichier sur la thématique du football le plus complet du marché.
+              Nous proposons le fichier sur la thématique du football le plus complet du marché.
             </p>
             
             

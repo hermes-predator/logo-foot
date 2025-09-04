@@ -241,7 +241,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 transform -translate-y-18">
+            <div className="relative mb-6" style={{ transform: 'translateY(-68px)' }}>
               <video 
                 className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
                 autoPlay 

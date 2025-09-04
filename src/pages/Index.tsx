@@ -225,16 +225,8 @@ const Index = () => {
                 <FlipBox
                   frontTitle="Besoin des logos des Clubs de Foot ?"
                   frontDescription={<>Le fichier contient plus de 8 600 logos des clubs de football uniformes, nommés et triés par pays</>}
-                  backTitle="Collection Premium de Logos Football"
-                  backContent={`🏆 Plus de 8 600 logos de clubs de football en haute qualité
-📁 Organisation parfaite par pays et championnat  
-🎨 Format PNG avec fond transparent professionnel
-⚽ Tous les grands clubs européens inclus (Premier League, Liga, Serie A, Bundesliga, Ligue 1)
-🌍 Couverture internationale complète
-📱 Optimisé pour tous supports (web, print, mobile)
-💼 Usage libre pour projets personnels
-🔄 Mise à jour régulière de la base de données
-✨ Qualité graphique exceptionnelle garantie`}
+                  backTitle="Logos des équipes de foot"
+                  backContent="Le fichier regroupe les logos des clubs de foot de l'Angleterre, de l'Allemagne, de l'Espagne et du reste du monde."
                 />
               </div>
             </div>

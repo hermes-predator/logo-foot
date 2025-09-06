@@ -107,7 +107,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </h1>
             
             {/* Phrase marketing */}
-            <p className="text-lg md:text-xl text-gray-500 text-left mb-8 font-medium">
+            <p className="text-lg md:text-xl text-gray-500 text-left mb-8 font-semibold">
               Nous proposons le fichier sur le thème du football le plus complet du marché.
             </p>
             

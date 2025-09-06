@@ -81,7 +81,7 @@ const PaymentCardBack = ({
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif</span>
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Fichier</span>
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
@@ -159,7 +159,7 @@ const PaymentCardBack = ({
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-blue-50/50 opacity-80"></div>
-                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Descriptif</span>
+                  <span className="relative z-10 font-bold text-[16px] text-gray-800 transition-colors duration-300">Fichier</span>
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">

@@ -211,7 +211,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aria-label="Commande sécurisée via SumUp"
               >
                 <span className="relative z-10 flex items-center justify-center">
-                  <span className="font-semibold">Télécharger</span>
+                  <span className="font-semibold">Télécharger via</span>
                   <img 
                     src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                     alt="SumUp" 

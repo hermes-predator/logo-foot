@@ -82,18 +82,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
-        <div className="absolute top-20 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-100/20 rounded-full blur-3xl" />
+        <div className="absolute top-10 md:top-20 left-0 w-48 h-48 md:w-96 md:h-96 bg-blue-100/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-48 h-48 md:w-96 md:h-96 bg-green-100/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center px-4">
 
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-[11fr_9fr] gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-9">{/* Alignement ajusté avec le lecteur vidéo */}
+          <div className="transform -translate-y-4 md:-translate-y-9">{/* Alignement ajusté avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-8 px-12 shadow-sm border border-gray-100/60">{/* Container brandé */}
+            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-4 md:p-8 px-6 md:px-12 shadow-sm border border-gray-100/60">{/* Container brandé */}
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}
@@ -241,7 +241,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6" style={{ transform: 'translateY(-68px)' }}>
+            <div className="relative mb-6" style={{ transform: 'translateY(-40px) translateY(-8vw)' }}>
               <video 
                 className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
                 autoPlay 
@@ -261,12 +261,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Informations du fichier ZIP */}
-            <div className="text-center -mt-8 transform -translate-y-[76px]">
+            <div className="text-center -mt-4 md:-mt-8 transform -translate-y-12 md:-translate-y-[76px]">
               <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl px-3 pt-1 pb-0 -mb-1 text-center max-w-md mx-auto transform -translate-y-17 shadow-sm">
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl px-3 pt-1 pb-0 -mb-1 text-center max-w-md mx-auto transform -translate-y-8 md:-translate-y-17 shadow-sm">
               {/* Animation des témoignages */}
               <div className="leading-tight">
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
@@ -278,9 +278,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Nouvelles mentions décoratives centrées */}
-        <div className="flex flex-wrap items-center justify-center gap-4 -mt-6 text-sm text-gray-600">
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 -mt-3 md:-mt-6 text-xs md:text-sm text-gray-600 px-2">
           {/* Paiement Sécurisé SumUp */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-2 md:px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[160px] md:min-w-[200px] h-10 md:h-12">
             <img 
               src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
               alt="SumUp - Paiement Sécurisé" 
@@ -293,7 +293,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Fichier stockable sur Google Drive */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-2 md:px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[160px] md:min-w-[200px] h-10 md:h-12">
             {/* Placeholder pour l'image Google Drive */}
             <img 
               src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" 
@@ -307,7 +307,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-2 md:px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[160px] md:min-w-[200px] h-10 md:h-12">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 

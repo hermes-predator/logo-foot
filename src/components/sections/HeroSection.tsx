@@ -301,7 +301,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               alt="Google Drive" 
               className="h-4"
             />
-            <span className="font-medium">Fichier stockable sur Google Drive</span>
+            <span className="font-medium">Fichier stockable sur votre Google Drive</span>
           </div>
 
           {/* Point de séparation */}

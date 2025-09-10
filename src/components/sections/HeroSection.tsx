@@ -279,7 +279,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
         {/* Nouvelles mentions décoratives centrées */}
-        <div className="flex flex-wrap items-center justify-center gap-4 -mt-8 text-sm text-gray-600">
+        <div className="flex flex-wrap items-center justify-center gap-4 -mt-12 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
             <img 

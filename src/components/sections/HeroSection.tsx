@@ -244,7 +244,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Vidéo preview du contenu */}
             <div className="relative mb-6" style={{ transform: 'translateY(-68px)' }}>
               <video 
-                className="w-full max-w-md mx-auto rounded-xl shadow-[0_4px_16px_rgba(0,0,0,0.06),0_2px_8px_rgba(0,0,0,0.04)] border border-white/50 ring-1 ring-gray-200/30"
+                className="w-full max-w-md mx-auto rounded-xl border border-white/50"
                 autoPlay 
                 muted 
                 loop 

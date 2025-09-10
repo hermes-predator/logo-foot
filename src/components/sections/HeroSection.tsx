@@ -243,21 +243,37 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="space-y-3 md:space-y-4 md:mt-12">
             {/* Vidéo preview du contenu */}
             <div className="relative mb-6 group" style={{ transform: 'translateY(-68px)' }}>
-              <video 
-                className="w-full max-w-md mx-auto rounded-xl shadow-[0_6px_24px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] border border-white/50 ring-1 ring-gray-200/30 group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12),0_6px_16px_rgba(0,0,0,0.06)] transition-all duration-300"
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                poster="/placeholder.svg"
-              >
-                <source src="/videos/preview-zip.mp4" type="video/mp4" />
-                <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
-                  <Folder className="w-12 h-12 text-gray-400" />
+              {/* Effet de glow animé autour de la vidéo */}
+              <div className="absolute -inset-3 bg-gradient-to-r from-blue-400/20 via-green-400/20 to-blue-400/20 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 animate-pulse transition-opacity duration-500"></div>
+              
+              {/* Container de la vidéo avec effet de focus */}
+              <div className="relative">
+                <video 
+                  className="w-full max-w-md mx-auto rounded-xl shadow-[0_4px_16px_rgba(0,0,0,0.06),0_2px_8px_rgba(0,0,0,0.04),0_0_40px_rgba(59,130,246,0.15)] border border-white/50 ring-1 ring-gray-200/30 group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.08),0_0_60px_rgba(59,130,246,0.2)] transition-all duration-500 relative z-10"
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  poster="/placeholder.svg"
+                >
+                  <source src="/videos/preview-zip.mp4" type="video/mp4" />
+                  <div className="w-full h-48 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <Folder className="w-12 h-12 text-gray-400" />
+                  </div>
+                </video>
+                
+                {/* Badge "Aperçu du fichier" amélioré */}
+                <div className="absolute bottom-3 left-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs px-3 py-1.5 rounded-lg font-medium shadow-lg backdrop-blur-sm border border-blue-500/50 flex items-center gap-1.5">
+                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
+                  Aperçu exclusif du contenu
                 </div>
-              </video>
-              <div className="absolute bottom-3 left-3 bg-gray-900/80 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg font-medium border border-gray-700/50">
-                Aperçu du fichier
+                
+                {/* Badge "Cliquez pour voir en grand" en hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-xl transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <div className="bg-white/90 backdrop-blur-sm text-gray-800 text-sm px-4 py-2 rounded-lg font-medium shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
+                    🔍 Voir le contenu complet
+                  </div>
+                </div>
               </div>
             </div>
             

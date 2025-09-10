@@ -244,7 +244,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Vidéo preview du contenu */}
             <div className="relative mb-6" style={{ transform: 'translateY(-68px)' }}>
               <video 
-                className="w-full max-w-md mx-auto rounded-xl shadow-lg border border-gray-200"
+                className="w-full max-w-md mx-auto rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.08)] border border-white/50 ring-1 ring-gray-200/30"
                 autoPlay 
                 muted 
                 loop 
@@ -267,7 +267,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem]">
+            <div className="relative bg-white/70 backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem] shadow-[0_8px_32px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.08)] border border-white/50 ring-1 ring-gray-200/30">
               {/* Animation des témoignages */}
               <div className="leading-tight">
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />
@@ -281,7 +281,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Nouvelles mentions décoratives centrées */}
         <div className="flex flex-wrap items-center justify-center gap-4 -mt-12 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_4px_16px_rgba(0,0,0,0.08)] min-w-[200px] h-12 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             <img 
               src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
               alt="SumUp - Paiement Sécurisé" 
@@ -294,7 +294,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Fichier stockable sur Google Drive */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_4px_16px_rgba(0,0,0,0.08)] min-w-[200px] h-12 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             {/* Placeholder pour l'image Google Drive */}
             <img 
               src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" 
@@ -308,7 +308,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/50 rounded-lg border border-gray-200/50 min-w-[200px] h-12">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_4px_16px_rgba(0,0,0,0.08)] min-w-[200px] h-12 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 

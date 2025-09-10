@@ -203,18 +203,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </DialogContent>
               </Dialog>
               
-              {/* Nouveau bouton échantillon gratuit */}
-              <Button
-                variant="outline" 
-                size="lg"
-                className="w-full md:w-auto rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 border-2 border-green-200 hover:border-green-300 text-green-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_12px_rgba(34,197,94,0.15)] transition-all duration-300"
-                onClick={() => window.open('/sample-logos.zip', '_blank')}
-                aria-label="Télécharger un échantillon gratuit de logos"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Échantillon gratuit
-              </Button>
-              
               <Button
                 size="lg"
                 onClick={onScrollToPayment}

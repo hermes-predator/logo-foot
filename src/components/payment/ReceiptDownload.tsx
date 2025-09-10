@@ -15,7 +15,7 @@ interface ReceiptDownloadProps {
 const ReceiptDownload = ({
   purchaseDate = new Date(),
   productName = "⦗FRONT-CLOUD⦘~ Football.zip",
-  price = "5.90€",
+  price = "7.90€",
   orderNumber = `FC-${Date.now().toString().slice(-6)}`,
   onDownloadComplete
 }: ReceiptDownloadProps) => {

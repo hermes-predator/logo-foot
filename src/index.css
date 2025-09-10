@@ -550,3 +550,13 @@ pre code {
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+/* Animation breathe pour le CTA principal */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}

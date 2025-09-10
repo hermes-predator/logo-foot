@@ -93,7 +93,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne gauche - H1 et bénéfices */}
           <div className="transform -translate-y-12">{/* Alignement ajusté avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
-            <div className="bg-gradient-to-br from-gray-50/90 to-white backdrop-blur-sm rounded-2xl p-8 px-12 shadow-sm border border-gray-100/60">{/* Container brandé */}
+            <div className="relative bg-white/60 backdrop-blur-lg rounded-2xl p-8 px-12 shadow-[0_8px_32px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/40 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/50 before:via-blue-100/30 before:to-green-100/30 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Téléchargez tous les{' '}

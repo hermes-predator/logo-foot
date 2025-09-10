@@ -62,25 +62,25 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
-      <div className="flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1">
+      <div className="flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-500 ease-in-out">
         <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-3">
           <div className="flex items-center justify-center gap-2 min-w-0">
             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400 -mt-6" />
             <div className="flex flex-col min-w-0 flex-1 items-center text-center mt-4">
-               <p className="text-sm text-gray-600 max-w-[500px] font-medium leading-tight line-clamp-3 min-h-[60px]">
+               <p className="text-sm text-gray-600 max-w-[500px] font-medium leading-tight line-clamp-3 min-h-[60px] transition-all duration-500 ease-in-out opacity-100 animate-fade-in">
                  {currentTestimonial.content}
                </p>
                <div className="flex items-center justify-center gap-2 mt-2">
                 <div className="flex items-center gap-1.5">
                   {/* Affichage de la bulle du témoignage actuel */}
                   <div className="flex items-center">
-                    <div className={`w-5 h-5 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg ring-2 ring-white/50 transition-transform duration-200 hover:scale-110`}>
+                    <div className={`w-5 h-5 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg ring-2 ring-white/50 transition-all duration-500 ease-in-out hover:scale-110 animate-scale-in`}>
                       <span className="text-[10px] font-bold text-white drop-shadow-sm">
                         {currentTestimonial.initials}
                       </span>
                     </div>
                   </div>
-                   <span className="text-xs text-gray-400 font-medium ml-1">
+                   <span className="text-xs text-gray-400 font-medium ml-1 transition-all duration-500 ease-in-out">
                      {currentTestimonial.name}
                    </span>
                  </div>

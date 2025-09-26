@@ -267,7 +267,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-white/70 backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem] shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] relative">
+            <div className="bg-green-50/90 backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem] shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-green-100/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-green-100/60 before:via-green-50/40 before:to-green-100/30 before:-z-10 before:m-[-1px] relative">
               {/* Animation des témoignages */}
               <div className="leading-tight">
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

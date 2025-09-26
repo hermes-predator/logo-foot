@@ -242,7 +242,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 md:mt-12">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6" style={{ transform: 'translateY(-68px)' }}>
+            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl p-4 shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]" style={{ transform: 'translateY(-68px)' }}>
               <video 
                 className="w-full max-w-md mx-auto rounded-xl border border-white/50"
                 autoPlay 
@@ -256,7 +256,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <Folder className="w-12 h-12 text-gray-400" />
                 </div>
               </video>
-              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+              <div className="absolute bottom-6 left-6 bg-black/70 text-white text-xs px-2 py-1 rounded">
                 Aperçu du fichier
               </div>
             </div>
@@ -267,7 +267,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem] border border-white/50">
+            <div className="bg-white/70 backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4.7rem] shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] relative">
               {/* Animation des témoignages */}
               <div className="leading-tight">
                 <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

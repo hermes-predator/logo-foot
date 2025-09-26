@@ -64,7 +64,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Témoignage à droite */}
       <div className="relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-500 ease-in-out">
         {/* Décoration avec icône utilisateurs en haut à droite */}
-        <div className="absolute -top-0 -right-0 bg-blue-500 text-white rounded-bl-xl rounded-tr-2xl px-2 py-1.5 shadow-lg ring-1 ring-white/20 hover:scale-105 transition-transform duration-300">
+        <div className="absolute top-0 right-0 bg-blue-500 text-white rounded-bl-xl rounded-tr-2xl px-1.5 py-1 shadow-lg ring-1 ring-white/20 hover:scale-105 transition-transform duration-300" style={{ margin: 0 }}>
           <Users className="w-3 h-3" />
         </div>
         <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-3">

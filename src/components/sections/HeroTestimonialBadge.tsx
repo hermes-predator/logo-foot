@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Users } from 'lucide-react';
 const testimonials = [
   {
     name: "Pierre M.",
@@ -62,7 +62,11 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
-      <div className="flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-500 ease-in-out">
+      <div className="relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-500 ease-in-out">
+        {/* Décoration avec icône utilisateurs en haut à droite */}
+        <div className="absolute -top-1 -right-1 bg-blue-500 text-white rounded-full p-1.5 shadow-lg ring-2 ring-white/50 hover:scale-110 transition-transform duration-300">
+          <Users className="w-3 h-3" />
+        </div>
         <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-3">
           <div className="flex items-center justify-center gap-2 min-w-0">
             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400 -mt-6" />

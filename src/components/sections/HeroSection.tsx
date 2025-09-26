@@ -308,7 +308,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
+          <div className="flex items-center gap-2 px-3 py-2 bg-green-50/90 backdrop-blur-sm rounded-lg border border-green-100/50 ring-1 ring-green-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 

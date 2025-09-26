@@ -18,7 +18,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       <div className={`w-full transition-opacity duration-300 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
         <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
           {/* Badge cliquable dans la flip box */}
-          <div className="absolute top-12 right-2 z-30">
+          <div className="absolute top-8 right-2 z-30">
             <button
               onClick={() => setIsFlipped(true)}
               className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm hover:bg-white hover:shadow-md transition-all duration-200 cursor-pointer"

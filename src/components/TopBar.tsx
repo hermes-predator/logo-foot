@@ -24,8 +24,8 @@ const TopBar = () => {
         </div>
         
         <span>•</span>
-        <span className="hidden sm:inline">Fichier "Football" le plus complet du marché</span>
-        <span className="sm:hidden">Le plus complet</span>
+        <span className="hidden sm:inline">Téléchargement instantanée</span>
+        <span className="sm:hidden">Instantané</span>
       </div>
 
       {/* Croix décorative (sans interaction) */}

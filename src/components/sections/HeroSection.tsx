@@ -171,7 +171,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </svg>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-700 font-medium">Pricing : </span>
+                  <span className="text-gray-700 font-medium">Prix réduit : </span>
                   <span className="text-gray-400 line-through text-lg">100€</span>
                   <span className="text-gray-900 font-bold text-lg">8€</span>
                   <span className="bg-gray-600 text-white text-xs px-2 py-1 rounded-full font-medium">-89%</span>

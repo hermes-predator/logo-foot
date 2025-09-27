@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
-import { X, Trophy, Star, Users } from 'lucide-react';
+import React from 'react';
+import { Trophy, Star } from 'lucide-react';
 
 const TopBar = () => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  if (!isVisible) return null;
-
   return (
     <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-3 px-4 text-center shadow-lg z-40">
       {/* Effet de brillance animé */}
@@ -31,15 +27,6 @@ const TopBar = () => {
         <span className="hidden sm:inline">Fichier le plus complet du marché</span>
         <span className="sm:hidden">Le plus complet</span>
       </div>
-
-      {/* Bouton de fermeture */}
-      <button
-        onClick={() => setIsVisible(false)}
-        className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 hover:bg-white/20 rounded-full transition-colors duration-200"
-        aria-label="Fermer la bannière promotionnelle"
-      >
-        <X className="w-4 h-4" />
-      </button>
     </div>
   );
 };

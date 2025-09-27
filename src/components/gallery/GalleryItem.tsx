@@ -343,7 +343,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         </Dialog>
       </div>
       <div className="text-center space-y-1">
-        <p className="text-sm text-gray-900 transition-opacity duration-200 hover:opacity-100 opacity-80 font-semibold">
+        <p className="text-sm text-gray-950 transition-opacity duration-200 hover:opacity-100 opacity-90 font-semibold">
           {item.title}
         </p>
         <p className="text-xs text-gray-500 font-medium">

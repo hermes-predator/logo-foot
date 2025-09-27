@@ -30,7 +30,7 @@ const FeatureList = () => {
   const features = [
     {
       icon: Folder,
-      text: "Fichier : 8 774 logos",
+      text: "Fichier - 8 774 logos",
       description: "Un fichier couvrant la majorité des besoins numériques du football."
     },
     {
@@ -42,7 +42,7 @@ const FeatureList = () => {
     },
     {
       icon: Star,
-      text: "Fichier : unique sur le marché",
+      text: "Fichier - unique sur le marché",
       className: "bg-blue-100",
       iconColor: "text-blue-600",
       description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
@@ -56,7 +56,7 @@ const FeatureList = () => {
     },
     {
       icon: BadgeCheck,
-      text: "Fichier : professionnel", 
+      text: "Fichier - professionnel", 
       className: "bg-blue-100",
       iconColor: "text-blue-700",
       description: "Nos logos sont uniformes, nommés et triés par pays pour un usage fiable."

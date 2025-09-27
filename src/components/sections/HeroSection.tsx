@@ -91,7 +91,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-[11fr_9fr] gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-12">{/* Alignement ajusté avec le lecteur vidéo */}
+          <div className="transform -translate-y-6">{/* Alignement ajusté avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
             <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl p-8 px-12 shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}

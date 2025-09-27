@@ -24,7 +24,7 @@ const TopBar = () => {
         </div>
         
         <span>•</span>
-        <span className="hidden sm:inline">Fichier le plus complet du marché</span>
+        <span className="hidden sm:inline">Fichier "Football" le plus complet du marché</span>
         <span className="sm:hidden">Le plus complet</span>
       </div>
 

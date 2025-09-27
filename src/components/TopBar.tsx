@@ -3,7 +3,7 @@ import { X, Trophy, Star } from 'lucide-react';
 
 const TopBar = () => {
   return (
-    <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-3 px-4 text-center shadow-lg z-40">
+    <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-2 px-4 text-center shadow-lg z-40">
       {/* Effet de brillance animé */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse opacity-50"></div>
       

@@ -118,7 +118,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
         <span>{title}</span>
       </h3>
       
-      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded-lg p-3 border border-gray-100/60`}>
+      <div className={`grid grid-cols-2 gap-3 ${colors.itemBg} rounded p-3 border border-gray-100/60`}>
         {items.map((item, index) => (
           <div key={index}>
             <p className={`font-semibold ${colors.label} text-sm`}>{item.label} :</p>
@@ -133,7 +133,7 @@ const FolderCard: React.FC<FolderCardProps> = ({
             <List className={`h-4 w-4 ${colors.icon} transition-colors duration-300 group-hover:${colors.iconHover}`} />
             Collections incluses :
           </p>
-          <p className={`text-xs leading-relaxed text-gray-700 ${colors.itemBg} rounded-lg p-3 border border-gray-100/60`}>
+          <p className={`text-xs leading-relaxed text-gray-700 ${colors.itemBg} rounded p-3 border border-gray-100/60`}>
             {collections}
           </p>
         </div>

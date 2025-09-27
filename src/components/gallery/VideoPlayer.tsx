@@ -19,27 +19,152 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     setError('Erreur lors du chargement de la vidéo');
   };
 
-  const getVideoDescription = (title: string, country: string) => {
-    if (title.includes("Hugo Ekitike")) {
-      return "Le talent français qui s'impose à l'Eintracht Francfort";
+  const getVideoTitle = (country: string) => {
+    return `Collection-${country}`;
+  };
+
+  const getVideoDescription = (country: string) => {
+    // Collections spéciales
+    if (country === 'Compétitions de football') {
+      return "Fichier de + 100 logos de compétitions de football";
     }
-    if (title.includes("Collection complète des clubs de football")) {
-      return "PNG transparent - Wallet.Type";
+    if (country === 'Clubs populaires') {
+      return "Fichier de + 100 couvertures (Wallet.Type) de clubs européens";
     }
-    if (title.includes("Collection complète des sélections nationales")) {
-      return "PNG transparent - Wallet.Type";
+    if (country === 'Sélections Nationales') {
+      return "Fichier de + 50 couvertures (Wallet.Type) de sélections nationales";
     }
-    if (title.includes("Collection complète des drapeaux mondiaux")) {
-      return "PNG transparent";
+    if (country === 'Drapeaux mondiaux') {
+      return "Fichier de + 270 logos de drapeaux mondiaux";
     }
     
-    if (country === 'Sélections Nationales') {
-      return `Animation logos des sélections nationales de football`;
-    }
-    if (country === 'Compétitions de football' || country === 'Compétitions internationales' || country === 'Coupes nationales') {
-      return `Animation des logos ${country.toLowerCase()}`;
-    }
-    return `Animation des logos de football ${country}`;
+    // Logos par pays avec adjectifs de nationalité
+    const logoCountByCountry: { [key: string]: number } = {
+      'France': 450,
+      'Allemagne': 450,
+      'Espagne': 450,
+      'Italie': 400,
+      'Angleterre': 450,
+      'Portugal': 200,
+      'Pays-Bas': 300,
+      'Belgique': 150,
+      'Turquie': 200,
+      'Suisse': 150,
+      'Écosse': 100,
+      'Autriche': 120,
+      'Grèce': 150,
+      'Ukraine': 100,
+      'Russie': 150,
+      'Danemark': 150,
+      'Norvège': 150,
+      'Suède': 150,
+      'Pologne': 150,
+      'République Tchèque': 150,
+      'Croatie': 120,
+      'Serbie': 120,
+      'Slovaquie': 120,
+      'Roumanie': 150,
+      'Hongrie': 120,
+      'Bulgarie': 120,
+      'États-Unis': 300,
+      'Argentine': 200,
+      'Brésil': 300,
+      'Biélorussie': 100,
+      'Irlande': 100,
+      'Pays de Galles': 100,
+      'Finlande': 100,
+      'Australie': 80,
+      'Arabie Saoudite': 80,
+      'Bosnie-Herzégovine': 80,
+      'Islande': 80,
+      'Israël': 80,
+      'Luxembourg': 80,
+      'Slovénie': 80,
+      'Albanie': 70,
+      'Irlande du Nord': 60,
+      'Malte': 60,
+      'Azerbaïdjan': 50,
+      'Moldavie': 50,
+      'Arménie': 40,
+      'Chypre': 40,
+      'Estonie': 40,
+      'Géorgie': 40,
+      'Kazakhstan': 40,
+      'Kosovo': 40,
+      'Lettonie': 40,
+      'Lituanie': 40,
+      'Macédoine du Nord': 40,
+      'Monténégro': 40,
+      'Default': 20,
+      'Iles Féroés': 20,
+      'Qatar': 20,
+      'Gibraltar': 12
+    };
+
+    const countryToAdjective: { [key: string]: string } = {
+      'France': 'français',
+      'Allemagne': 'allemands',
+      'Espagne': 'espagnols',
+      'Italie': 'italiens',
+      'Angleterre': 'anglais',
+      'Portugal': 'portugais',
+      'Pays-Bas': 'néerlandais',
+      'Belgique': 'belges',
+      'Turquie': 'turcs',
+      'Suisse': 'suisses',
+      'Écosse': 'écossais',
+      'Autriche': 'autrichiens',
+      'Grèce': 'grecs',
+      'Ukraine': 'ukrainiens',
+      'Russie': 'russes',
+      'Danemark': 'danois',
+      'Norvège': 'norvégiens',
+      'Suède': 'suédois',
+      'Pologne': 'polonais',
+      'République Tchèque': 'tchèques',
+      'Croatie': 'croates',
+      'Serbie': 'serbes',
+      'Roumanie': 'roumains',
+      'Hongrie': 'hongrois',
+      'Bulgarie': 'bulgares',
+      'Slovaquie': 'slovaques',
+      'Biélorussie': 'biélorusses',
+      'Irlande': 'irlandais',
+      'Pays de Galles': 'gallois',
+      'Finlande': 'finlandais',
+      'Bosnie-Herzégovine': 'bosniens',
+      'Islande': 'islandais',
+      'Israël': 'israéliens',
+      'Luxembourg': 'luxembourgeois',
+      'Slovénie': 'slovènes',
+      'Albanie': 'albanais',
+      'Irlande du Nord': 'nord-irlandais',
+      'Malte': 'maltais',
+      'Azerbaïdjan': 'azerbaïdjanais',
+      'Moldavie': 'moldaves',
+      'Arménie': 'arméniens',
+      'Chypre': 'chypriotes',
+      'Estonie': 'estoniens',
+      'Géorgie': 'géorgiens',
+      'Kazakhstan': 'kazakhs',
+      'Kosovo': 'kosovars',
+      'Lettonie': 'lettons',
+      'Lituanie': 'lituaniens',
+      'Macédoine du Nord': 'macédoniens',
+      'Monténégro': 'monténégrins',
+      'Iles Féroés': 'féroïens',
+      'Qatar': 'qataris',
+      'Gibraltar': 'gibraltariens',
+      'États-Unis': 'américains',
+      'Argentine': 'argentins',
+      'Brésil': 'brésiliens',
+      'Australie': 'australiens',
+      'Arabie Saoudite': 'saoudiens'
+    };
+    
+    const logoCount = logoCountByCountry[country] || 240;
+    const adjective = countryToAdjective[country] || country.toLowerCase();
+    return `Fichier de + ${logoCount} logos de clubs ${adjective}`;
   };
 
   return (
@@ -47,10 +172,10 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       <div className="flex flex-col h-full">
         <DialogHeader className="p-1 pb-1 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent">
           <DialogTitle className="text-gray-800 font-medium text-xs">
-            {title}
+            {getVideoTitle(country)}
           </DialogTitle>
           <DialogDescription className="text-gray-600 text-[10px] font-extralight">
-            {getVideoDescription(title, country)}
+            {getVideoDescription(country)}
           </DialogDescription>
         </DialogHeader>
         

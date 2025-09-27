@@ -20,23 +20,23 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   };
 
   const getVideoTitle = (country: string) => {
-    return `Collection-${country}`;
+    return `Collection - ${country}`;
   };
 
   const getVideoDescription = (country: string) => {
     // Collections spéciales
-    if (country === 'Compétitions de football') {
-      return "Fichier de + 100 logos de compétitions de football";
-    }
-    if (country === 'Clubs populaires') {
-      return "Fichier de + 100 couvertures (Wallet.Type) de clubs européens";
-    }
-    if (country === 'Sélections Nationales') {
-      return "Fichier de + 50 couvertures (Wallet.Type) de sélections nationales";
-    }
-    if (country === 'Drapeaux mondiaux') {
-      return "Fichier de + 270 logos de drapeaux mondiaux";
-    }
+     if (country === 'Compétitions de football') {
+       return "Aperçu du fichier de + 100 logos de compétitions de football";
+     }
+     if (country === 'Clubs populaires') {
+       return "Aperçu du fichier de + 100 couvertures (Wallet.Type) de clubs européens";
+     }
+     if (country === 'Sélections Nationales') {
+       return "Aperçu du fichier de + 50 couvertures (Wallet.Type) de sélections nationales";
+     }
+     if (country === 'Drapeaux mondiaux') {
+       return "Aperçu du fichier de + 270 logos de drapeaux mondiaux";
+     }
     
     // Logos par pays avec adjectifs de nationalité
     const logoCountByCountry: { [key: string]: number } = {
@@ -164,7 +164,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     
     const logoCount = logoCountByCountry[country] || 240;
     const adjective = countryToAdjective[country] || country.toLowerCase();
-    return `Fichier de + ${logoCount} logos de clubs ${adjective}`;
+    return `Aperçu du fichier de + ${logoCount} logos de clubs ${adjective}`;
   };
 
   return (

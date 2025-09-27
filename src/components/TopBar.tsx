@@ -24,7 +24,7 @@ const TopBar = () => {
         </div>
         
         <span>•</span>
-        <span className="hidden sm:inline">Téléchargement instantanée</span>
+        <span className="hidden sm:inline">Téléchargement instantanée ⚡️</span>
         <span className="sm:hidden">Instantané</span>
       </div>
 

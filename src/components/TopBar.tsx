@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Star } from 'lucide-react';
+import { X, Trophy, Star } from 'lucide-react';
 
 const TopBar = () => {
   return (
@@ -26,6 +26,11 @@ const TopBar = () => {
         <span>•</span>
         <span className="hidden sm:inline">Fichier le plus complet du marché</span>
         <span className="sm:hidden">Le plus complet</span>
+      </div>
+
+      {/* Croix décorative (sans interaction) */}
+      <div className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 opacity-70">
+        <X className="w-4 h-4" />
       </div>
     </div>
   );

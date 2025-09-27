@@ -46,7 +46,7 @@ const TopBar = () => {
         <span className="animate-bounce">🔥</span>
         
         <span className="font-bold">OFFRE LIMITÉE :</span>
-        <span>-89% sur le pack complet</span>
+        <span>Seulement 8€ au lieu de 100€</span>
         
         <div className="flex items-center gap-1 mx-2 px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm">
           <Clock className="w-4 h-4" />

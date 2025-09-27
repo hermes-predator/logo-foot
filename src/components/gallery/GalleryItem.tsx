@@ -277,7 +277,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   return (
     <div className="space-y-2">
       <div
-        className="relative aspect-square rounded-lg overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
+        className="relative aspect-square rounded overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl"
         style={{
           opacity: 0,
           animation: `fadeIn 0.3s ease-out ${item.id * 0.05}s forwards`

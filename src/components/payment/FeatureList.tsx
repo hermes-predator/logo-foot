@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck, Plus } from 'lucide-react';
+import { Folder, TrendingUp, Star, Heart, Zap, BadgeCheck, Plus, ThumbsUp } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -34,7 +34,7 @@ const FeatureList = () => {
       description: "Un fichier couvrant la majorité des besoins numériques du football."
     },
     {
-      icon: Plus,
+      icon: ThumbsUp,
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -48,7 +48,7 @@ const FeatureList = () => {
       description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
     },
     {
-      icon: Plus,
+      icon: ThumbsUp,
       text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -62,7 +62,7 @@ const FeatureList = () => {
       description: "Nos logos sont uniformes, nommés et triés par pays pour un usage fiable."
     },
     {
-      icon: Plus,
+      icon: ThumbsUp,
       text: "Patrimoine numérique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -74,7 +74,7 @@ const FeatureList = () => {
       description: "Un tarif simple permettant un accès à cette ressource pour un prix abordable."
     },
     {
-      icon: Plus,
+      icon: ThumbsUp,
       text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",

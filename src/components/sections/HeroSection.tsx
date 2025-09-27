@@ -207,7 +207,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 size="lg"
                 onClick={onScrollToPayment}
                 title="Paiement sécurisé avec SumUp - 11.90€"
-                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] ring-1 ring-gray-700/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden hover:scale-[1.01]"
+                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] ring-1 ring-gray-700/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >
                 <span className="relative z-10 flex items-center justify-center">

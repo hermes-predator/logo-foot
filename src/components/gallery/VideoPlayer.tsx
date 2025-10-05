@@ -20,7 +20,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   };
 
   const getVideoTitle = (country: string) => {
-    return `Collection - ${country}`;
+    return `Fichier - ${country}`;
   };
 
   const getVideoDescription = (country: string) => {

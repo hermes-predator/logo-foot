@@ -96,9 +96,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-12 shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
-              Tous les{' '}
               <span className="font-black">
-                logos des clubs de football
+                Tous les logos des clubs de football
               </span>
               {' '}
               <span className="underline decoration-2 decoration-gray-800 underline-offset-4">

@@ -268,7 +268,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Bloc des avis clients avec container de confiance */}
             <div className="backdrop-blur-lg rounded-xl px-3 pt-1 pb-3 -mb-1 text-center max-w-md mx-auto md:transform md:-translate-y-[3rem] mt-4 shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-green-100/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-green-100/60 before:via-green-50/40 before:to-green-100/30 before:-z-10 before:m-[-1px] relative" style={{backgroundColor: 'rgba(77, 166, 152, 0.08)'}}>
               {/* Décoration avec icône utilisateurs en haut à droite du container vert */}
-              <div className="absolute top-0 right-0 text-white rounded-bl-xl rounded-tr-xl px-2.5 py-2" style={{backgroundColor: 'rgb(77, 166, 152)'}}>
+              <div className="absolute top-0 right-0 text-white rounded-bl-xl rounded-tr-xl px-2.5 py-2" style={{backgroundColor: 'rgb(90, 180, 165)'}}>
                 <Users className="w-3 h-3" />
               </div>
               {/* Animation des témoignages */}

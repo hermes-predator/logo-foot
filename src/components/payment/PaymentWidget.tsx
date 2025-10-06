@@ -269,6 +269,11 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
             Support
           </a>
         </div>
+        <div className="text-center mt-3 pt-3 border-t border-gray-100">
+          <p className="text-xs text-gray-500">
+            SumUp Limited est un établissement de monnaie électronique réglementé par la Banque centrale d'Irlande (numéro de référence : n°C195030).
+          </p>
+        </div>
       </div>
     </div>
   );

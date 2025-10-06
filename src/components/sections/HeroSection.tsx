@@ -206,16 +206,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 size="lg"
                 onClick={onScrollToPayment}
                 title="Paiement sécurisé avec SumUp - 8€"
-                className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] ring-1 ring-gray-700/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_4px_14px_0_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.5)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600"
                 aria-label="Commande sécurisée via SumUp"
               >
-                <span className="relative z-10 flex flex-wrap items-center justify-center gap-1">
-                  <Download className="w-4 h-4 mr-1 sm:mr-2" />
-                  <span className="font-semibold whitespace-nowrap">Télécharger avec</span>
+                <span className="flex items-center justify-center gap-2">
+                  <Download className="w-5 h-5" />
+                  <span className="font-bold">Télécharger avec</span>
                   <img 
                     src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                     alt="SumUp" 
-                    className="h-4 sm:h-5 ml-1 brightness-0 invert"
+                    className="h-5 brightness-0 invert"
                   />
                 </span>
               </Button>

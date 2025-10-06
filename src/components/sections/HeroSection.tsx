@@ -91,11 +91,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-[11fr_9fr] gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="transform -translate-y-10">{/* Alignement ajusté avec le lecteur vidéo */}
+          <div className="md:transform md:-translate-y-10">{/* Alignement ajusté avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
-            <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl p-8 px-12 shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
+            <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-12 shadow-[0_2px_8px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 text-left">
               Tous les{' '}
               <span className="font-black">
                 logos des clubs de football
@@ -107,7 +107,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </h1>
             
             {/* Phrase marketing */}
-            <p className="text-lg md:text-xl text-gray-500 text-left mb-8 font-medium">
+            <p className="text-base sm:text-lg md:text-xl text-gray-500 text-left mb-6 sm:mb-8 font-medium">
               Nous offrons le fichier sur la thématique du football le plus complet du marché.
             </p>
             
@@ -115,17 +115,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Titre du produit déplacé ici */}
             <div className="text-left mb-4">
               <h2 
-                className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
                   animation: 'subtlePulse 3s ease-in-out infinite'
                 }}
               >
                 <Folder 
-                  className="w-6 h-6 text-gray-900 flex-shrink-0" 
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900 flex-shrink-0" 
                   fill="currentColor"
                 />
                 <em 
-                  className="italic font-extrabold text-gray-900 inline-block whitespace-nowrap"
+                  className="italic font-extrabold text-gray-900 inline-block text-sm sm:text-base md:text-lg lg:text-xl break-all sm:whitespace-nowrap"
                 >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>
@@ -139,52 +139,52 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Liste des bénéfices produits */}
-            <div className="space-y-3 text-left">
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="space-y-2 sm:space-y-3 text-left">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Fichier ≃ <span className="font-bold">8 800 logos football</span></span>
+                <span className="text-sm sm:text-base text-gray-700 font-medium">Fichier ≃ <span className="font-bold">8 800 logos football</span></span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Logos uniformes et classés par pays</span>
+                <span className="text-sm sm:text-base text-gray-700 font-medium">Logos uniformes et classés par pays</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">Livraison instantanée ⚡️</span>
+                <span className="text-sm sm:text-base text-gray-700 font-medium">Livraison instantanée ⚡️</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-700 font-medium">Prix du fichier : </span>
-                  <span className="text-gray-400 line-through text-lg">100€</span>
-                  <span className="text-gray-900 font-bold text-lg">8€</span>
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                  <span className="text-sm sm:text-base text-gray-700 font-medium">Prix du fichier : </span>
+                  <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+                  <span className="text-gray-900 font-bold text-base sm:text-lg">8€</span>
                   <span className="bg-gray-600 text-white text-xs px-2 py-1 rounded-full font-medium">-92%</span>
                 </div>
               </div>
             </div>
             
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center mt-6">
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="w-full md:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-5 py-4 h-auto text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
-                    <Folder className="w-6 h-6 mr-1" />
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                    <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
                     Fichier
                   </Button>
                 </DialogTrigger>
@@ -207,31 +207,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 size="lg"
                 onClick={onScrollToPayment}
                 title="Paiement sécurisé avec SumUp - 8€"
-                className="group relative max-w-sm w-full md:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-5 py-4 h-auto text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] ring-1 ring-gray-700/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base border-2 border-gray-700/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.15),0_-6px_16px_-6px_rgba(0,0,0,0.25),0_-2px_6px_rgba(0,0,0,0.06)] ring-1 ring-gray-700/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >
-                <span className="relative z-10 flex items-center justify-center">
-                  <Download className="w-4 h-4 mr-3" />
-                  <span className="font-semibold">Télécharger avec</span>
+                <span className="relative z-10 flex flex-wrap items-center justify-center gap-1">
+                  <Download className="w-4 h-4 mr-1 sm:mr-2" />
+                  <span className="font-semibold whitespace-nowrap">Télécharger avec</span>
                   <img 
                     src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                     alt="SumUp" 
-                    className="h-5 ml-2 brightness-0 invert"
+                    className="h-4 sm:h-5 ml-1 brightness-0 invert"
                   />
                 </span>
               </Button>
             </div>
             
             {/* Pastille d'urgence - Achats récents */}
-            <div className="mt-12 flex justify-start ml-2">
-              <div className="inline-flex items-center gap-3 text-gray-600 text-sm font-medium">
+            <div className="mt-6 sm:mt-8 md:mt-12 flex justify-start ml-2">
+              <div className="inline-flex items-center gap-2 sm:gap-3 text-gray-600 text-sm font-medium">
                 <div className="relative">
                   {/* Point vert principal */}
                   <div className="w-2 h-2 bg-green-500 rounded-full relative z-10"></div>
                   {/* Effet de pulsation plus lent et plus grand */}
                   <div className="absolute -inset-1 w-4 h-4 bg-green-400/60 rounded-full animate-[ping_2.5s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
                 </div>
-                <span className="text-xs">
+                <span className="text-xs sm:text-sm">
                   <span className="font-extrabold">{recentBuyers}</span> <span className="font-bold">personnes</span> ont acheté récemment
                 </span>
               </div>
@@ -240,9 +240,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Colonne droite - Vidéo uniquement */}
-          <div className="space-y-3 md:space-y-4 md:mt-12">
+          <div className="space-y-3 md:space-y-4 md:mt-12 mt-4">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]" style={{ transform: 'translateY(-68px)' }}>
+            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]" style={{ transform: 'md:translateY(-68px) translateY(0)' }}>
               <video 
                 className="w-full h-full object-cover"
                 autoPlay 
@@ -262,12 +262,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Informations du fichier ZIP */}
-            <div className="text-center -mt-8 transform -translate-y-[76px]">
-              <p className="text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+            <div className="text-center -mt-8 md:transform md:-translate-y-[76px]">
+              <p className="text-xs sm:text-sm font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="backdrop-blur-lg rounded-xl px-3 pt-1 pb-3 -mb-1 text-center max-w-md mx-auto transform translate-y-[-4rem] shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-green-100/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-green-100/60 before:via-green-50/40 before:to-green-100/30 before:-z-10 before:m-[-1px] relative" style={{backgroundColor: 'rgba(77, 166, 152, 0.08)'}}>
+            <div className="backdrop-blur-lg rounded-xl px-3 pt-1 pb-3 -mb-1 text-center max-w-md mx-auto md:transform md:translate-y-[-4rem] mt-4 shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-green-100/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-green-100/60 before:via-green-50/40 before:to-green-100/30 before:-z-10 before:m-[-1px] relative" style={{backgroundColor: 'rgba(77, 166, 152, 0.08)'}}>
               {/* Décoration avec icône utilisateurs en haut à droite du container vert */}
               <div className="absolute top-0 right-0 text-white rounded-bl-xl rounded-tr-xl px-2.5 py-2 shadow-lg" style={{backgroundColor: 'rgb(77, 166, 152)'}}>
                 <Users className="w-3 h-3" />

@@ -173,7 +173,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
       <div className="flex flex-col h-full">
         <DialogHeader className="p-1 pl-4 pb-1 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent space-y-0.5">
           <div className="flex items-start gap-2">
-            <Folder className="w-3.5 h-3.5 text-gray-500 mt-0.5 flex-shrink-0" />
+            <Folder className="w-3.5 h-3.5 text-gray-500 mt-1 flex-shrink-0" />
             <div className="flex flex-col space-y-0.5">
               <DialogTitle className="text-gray-800 font-medium text-xs">
                 {getVideoTitle(country)}

@@ -226,9 +226,49 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
         </div>
       )}
 
-      <div className="text-center text-sm text-gray-600 mt-3">
-        <p className="text-sm">🔒 Paiement sécurisé via SumUp</p>
-        <p>Vos données de paiement sont chiffrées et protégées</p>
+      {/* Footer SumUp */}
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <div className="text-center mb-3">
+          <p className="text-sm font-medium text-gray-700 mb-1">🔒 Paiement sécurisé via SumUp</p>
+          <p className="text-xs text-gray-600">Vos données de paiement sont chiffrées et protégées</p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-3 text-xs text-gray-500">
+          <a 
+            href="https://www.sumup.com/fr-fr/about-us/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors"
+          >
+            À propos de SumUp
+          </a>
+          <span className="text-gray-300">•</span>
+          <a 
+            href="https://www.sumup.com/fr-fr/security/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors"
+          >
+            Sécurité
+          </a>
+          <span className="text-gray-300">•</span>
+          <a 
+            href="https://www.sumup.com/fr-fr/privacy/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors"
+          >
+            Confidentialité
+          </a>
+          <span className="text-gray-300">•</span>
+          <a 
+            href="https://help.sumup.com/hc/fr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors"
+          >
+            Support
+          </a>
+        </div>
       </div>
     </div>
   );

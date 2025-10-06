@@ -262,7 +262,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Informations du fichier ZIP */}
             <div className="text-center -mt-8 md:transform md:-translate-y-[60px]">
-              <p className="text-[10px] sm:text-xs font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
+              <p className="text-[9px] sm:text-[10px] font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}

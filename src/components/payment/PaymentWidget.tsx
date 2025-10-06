@@ -229,7 +229,8 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       {/* Footer SumUp */}
       <div className="mt-6 pt-4 border-t border-gray-200">
         <div className="text-center mb-3">
-          <p className="text-sm font-medium text-gray-700">🔒 Paiement sécurisé via SumUp</p>
+          <p className="text-sm font-medium text-gray-700 mb-1">🔒 Paiement sécurisé via SumUp</p>
+          <p className="text-xs text-gray-600">Vos données de paiement sont chiffrées et protégées</p>
         </div>
         <div className="flex flex-wrap justify-center gap-3 text-xs text-gray-500">
           <a 
@@ -269,11 +270,8 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
           </a>
         </div>
         <div className="text-center mt-3 pt-3 border-t border-gray-100">
-          <p className="text-xs text-gray-500 mb-2">
+          <p className="text-xs text-gray-500">
             SumUp Limited est un établissement de monnaie électronique réglementé par la Banque centrale d'Irlande (numéro de référence : n°C195030).
-          </p>
-          <p className="text-xs text-gray-600">
-            Vos données de paiement sont chiffrées et protégées
           </p>
         </div>
       </div>

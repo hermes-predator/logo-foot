@@ -8,7 +8,7 @@ const TopBar = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse opacity-50"></div>
       
       <div className="relative z-10 flex items-center justify-center gap-2 text-sm md:text-base font-semibold">
-        <Trophy className="w-5 h-5 text-yellow-300 animate-bounce" />
+        <Trophy className="w-4 h-4 text-yellow-300 animate-bounce" />
         
         <span className="font-bold">Déjà +20000 clients satisfaits</span>
         <span>•</span>

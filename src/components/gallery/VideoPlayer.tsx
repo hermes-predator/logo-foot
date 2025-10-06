@@ -10,6 +10,7 @@ import {
 import { VideoPlayerProps } from "@/types/gallery";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
+import { Folder } from "lucide-react";
 
 const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -171,12 +172,17 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
     <DialogContent className="max-w-[540px] w-full overflow-hidden p-0 border-none shadow-2xl bg-gradient-to-br from-gray-100 via-gray-50 to-white">
       <div className="flex flex-col h-full">
         <DialogHeader className="p-1 pl-4 pb-1 bg-gradient-to-b from-gray-100/90 via-gray-50/50 to-transparent space-y-0.5">
-          <DialogTitle className="text-gray-800 font-medium text-xs">
-            {getVideoTitle(country)}
-          </DialogTitle>
-          <DialogDescription className="text-gray-600 text-[10px] font-extralight">
-            {getVideoDescription(country)}
-          </DialogDescription>
+          <div className="flex items-start gap-2">
+            <Folder className="w-3.5 h-3.5 text-gray-500 mt-0.5 flex-shrink-0" />
+            <div className="flex flex-col space-y-0.5">
+              <DialogTitle className="text-gray-800 font-medium text-xs">
+                {getVideoTitle(country)}
+              </DialogTitle>
+              <DialogDescription className="text-gray-600 text-[10px] font-extralight">
+                {getVideoDescription(country)}
+              </DialogDescription>
+            </div>
+          </div>
         </DialogHeader>
         
         <div className="w-full aspect-square max-w-[540px] bg-gradient-to-br from-gray-50 to-white flex items-center justify-center relative">

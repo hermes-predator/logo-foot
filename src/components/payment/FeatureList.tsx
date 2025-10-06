@@ -34,7 +34,7 @@ const FeatureList = () => {
       description: "Un fichier couvrant la majorité des besoins numériques du football."
     },
     {
-      icon: ThumbsUp,
+      icon: Plus,
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -48,7 +48,7 @@ const FeatureList = () => {
       description: "Un fichier trouvable nulle part ailleurs. Procurez-vous le sans attendre !"
     },
     {
-      icon: ThumbsUp,
+      icon: Plus,
       text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -62,7 +62,7 @@ const FeatureList = () => {
       description: "Nos logos sont uniformes, nommés et triés par pays pour un usage fiable."
     },
     {
-      icon: ThumbsUp,
+      icon: Plus,
       text: "Patrimoine numérique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
@@ -74,7 +74,7 @@ const FeatureList = () => {
       description: "Un tarif simple permettant un accès à cette ressource pour un prix abordable."
     },
     {
-      icon: ThumbsUp,
+      icon: Plus,
       text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",

@@ -284,7 +284,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Nouvelles mentions décoratives centrées */}
         <div className="flex flex-wrap items-center justify-center gap-4 -mt-8 text-sm text-gray-600">
           {/* Paiement Sécurisé SumUp */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-blue-100 ring-1 ring-gray-200/20 shadow-[0_1px_3px_rgba(0,0,0,0.015)] min-w-[200px] h-12 hover:shadow-[0_1px_6px_rgba(0,0,0,0.04)] transition-shadow duration-300">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_3px_rgba(0,0,0,0.015)] min-w-[200px] h-12 hover:shadow-[0_1px_6px_rgba(0,0,0,0.04)] transition-shadow duration-300">
             <img 
               src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
               alt="SumUp - Paiement Sécurisé" 
@@ -297,7 +297,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Fichier stockable sur Google Drive */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-blue-100 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
+          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
             {/* Placeholder pour l'image Google Drive */}
             <img 
               src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" 
@@ -311,7 +311,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-gradient-to-br from-white/80 via-white/70 to-gray-50/60 backdrop-blur-sm rounded-lg border border-blue-100 ring-1 ring-gray-200/30 shadow-[0_2px_6px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.6)] min-w-[200px] h-12 hover:shadow-[0_3px_10px_rgba(0,0,0,0.08)] transition-all duration-300 relative before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/20 before:to-transparent before:pointer-events-none">
+          <div className="flex items-center gap-2 px-3 py-2 bg-gradient-to-br from-white/80 via-white/70 to-gray-50/60 backdrop-blur-sm rounded-lg border border-white/60 ring-1 ring-gray-200/30 shadow-[0_2px_6px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.6)] min-w-[200px] h-12 hover:shadow-[0_3px_10px_rgba(0,0,0,0.08)] transition-all duration-300 relative before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/20 before:to-transparent before:pointer-events-none">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 

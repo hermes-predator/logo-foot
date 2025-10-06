@@ -311,17 +311,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
           {/* Note Judge.me avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
+          <div className="flex items-center gap-2 px-3 py-2 bg-gradient-to-br from-white/80 via-white/70 to-gray-50/60 backdrop-blur-sm rounded-lg border border-white/60 ring-1 ring-gray-200/30 shadow-[0_2px_6px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.6)] min-w-[200px] h-12 hover:shadow-[0_3px_10px_rgba(0,0,0,0.08)] transition-all duration-300 relative before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/20 before:to-transparent before:pointer-events-none">
             <img 
               src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
               alt="Judge.me" 
-              className="h-4"
+              className="h-4 relative z-10"
             />
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+            <div className="flex gap-0.5 relative z-10">
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />)}
             </div>
-            <span className="font-bold text-gray-700">4.9/5</span>
-            <span className="text-sm text-gray-500">(1034 avis)</span>
+            <span className="font-bold text-gray-700 relative z-10">4.9/5</span>
+            <span className="text-sm text-gray-500 relative z-10">(1034 avis)</span>
           </div>
         </div>
       </div>

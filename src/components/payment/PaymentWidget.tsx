@@ -227,7 +227,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       )}
 
       {/* Footer SumUp */}
-      <div className="mt-6 pt-6 pb-8 bg-gray-50 -mx-6 -mb-6 px-6 border-t border-gray-200">
+      <div className="mt-6 pt-6 pb-12 bg-gray-50 -mx-6 -mb-6 px-6 border-t border-gray-200">
         <div className="text-center mb-3">
           <p className="text-sm font-medium text-gray-700 mb-1">🔒 Paiement sécurisé via SumUp</p>
           <p className="text-xs text-gray-600">Vos données de paiement sont chiffrées et protégées</p>

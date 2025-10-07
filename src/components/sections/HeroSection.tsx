@@ -101,8 +101,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
               {' '}
               <span className="underline decoration-2 decoration-gray-800 underline-offset-4">
-                en un fichier 📁
+                en un fichier
               </span>
+              {' 📁'}
             </h1>
             
             {/* Phrase marketing */}

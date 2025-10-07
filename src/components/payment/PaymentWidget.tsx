@@ -230,7 +230,9 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       <div className="mt-6 pt-6 pb-12 bg-gray-50 -mx-6 -mb-6 px-6 border-t border-gray-300">
         <div className="text-center mb-3">
           <p className="text-sm font-medium text-gray-700 mb-1 flex items-center justify-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-gray-900" fill="currentColor" />
+            <span className="bg-gray-900 rounded-full p-0.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-white" />
+            </span>
             Paiement sécurisé via SumUp
           </p>
           <p className="text-xs text-gray-600">Vos données de paiement sont chiffrées et protégées</p>

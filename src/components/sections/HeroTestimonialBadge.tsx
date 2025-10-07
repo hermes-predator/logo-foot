@@ -79,7 +79,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
        <div className={`relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
          <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-3">
            <div className="flex items-center justify-center gap-2 min-w-0">
-             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 scale-x-[-1] fill-gray-400 -mt-6" />
+             <Quote className="w-3.5 h-3.5 text-teal-500 flex-shrink-0 scale-x-[-1] fill-teal-500/60 -mt-6" />
              <div className="flex flex-col min-w-0 flex-1 items-center text-center mt-4">
                 <p className={`text-sm text-gray-600 max-w-[500px] font-medium leading-tight line-clamp-3 min-h-[60px] transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                   {currentTestimonial.content}
@@ -115,7 +115,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
                   </div>
                </div>
              </div>
-             <Quote className="w-3.5 h-3.5 text-gray-400 flex-shrink-0 fill-gray-400 -mt-7" />
+             <Quote className="w-3.5 h-3.5 text-teal-500 flex-shrink-0 fill-teal-500/60 -mt-7" />
            </div>
          </div>
        </div>

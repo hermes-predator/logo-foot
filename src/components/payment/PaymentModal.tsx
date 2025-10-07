@@ -32,11 +32,11 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ open, onOpenChange }) => {
   if (isMobile) {
     return (
       <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent side="bottom" className="h-[90dvh] overflow-hidden flex flex-col">
-          <SheetHeader>
+        <SheetContent side="bottom" className="h-[90dvh] overflow-hidden flex flex-col p-0">
+          <SheetHeader className="px-6 pt-6">
             <SheetTitle className="text-2xl">Paiement sécurisé</SheetTitle>
           </SheetHeader>
-          <div className="mt-4 overflow-y-auto flex-1">
+          <div className="mt-4 overflow-y-auto flex-1 px-6">
             <PaymentWidget />
           </div>
         </SheetContent>
@@ -46,11 +46,11 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ open, onOpenChange }) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl max-h-[85dvh] overflow-hidden flex flex-col">
-        <DialogHeader>
+      <DialogContent className="sm:max-w-2xl max-h-[85dvh] overflow-hidden flex flex-col p-0">
+        <DialogHeader className="px-6 pt-6">
           <DialogTitle className="text-2xl">Paiement sécurisé</DialogTitle>
         </DialogHeader>
-        <div className="mt-2 overflow-y-auto flex-1">
+        <div className="mt-2 overflow-y-auto flex-1 px-6">
           <PaymentWidget />
         </div>
       </DialogContent>

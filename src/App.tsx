@@ -7,7 +7,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from './pages/Index';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
-import BlogPostSEO from './pages/BlogPostSEO';
 import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
 import NotFound from './pages/NotFound';
@@ -41,7 +40,6 @@ const App = () => {
                 <Route path="/" element={<Index />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
-                <Route path="/blog-seo/:slug" element={<BlogPostSEO />} />
                 <Route path="/payment" element={<Payment />} />
                 <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
                 <Route path="*" element={<NotFound />} />

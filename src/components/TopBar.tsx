@@ -10,7 +10,7 @@ const TopBar = () => {
       <div className="relative z-10 flex items-center justify-center gap-2 text-sm md:text-base font-semibold">
         <Trophy className="w-4 h-4 text-yellow-300 animate-bounce" />
         
-        <span className="font-bold">Déjà +20000 clients satisfaits</span>
+        <span className="font-bold">Déjà +20 000 clients satisfaits</span>
         <span>•</span>
         
         <div className="flex items-center gap-1">

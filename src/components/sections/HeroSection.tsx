@@ -291,7 +291,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               alt="SumUp - Paiement Sécurisé" 
               className="h-4"
             />
-            <span className="font-medium">Paiement Sécurisé SumUp</span>
+            <span className="font-medium">Paiement Sécurisé via SumUp</span>
           </div>
 
           {/* Point de séparation */}

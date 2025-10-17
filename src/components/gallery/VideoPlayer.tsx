@@ -33,7 +33,7 @@ const VideoPlayer = ({ videoUrl, title, country }: VideoPlayerProps) => {
        return "Aperçu du fichier de + 100 couvertures (Wallet.Type) de clubs européens";
      }
      if (country === 'Sélections Nationales') {
-       return "Aperçu du fichier de + 50 couvertures (Wallet.Type) de sélections nationales";
+       return "Aperçu du fichier de + 240 logos de sélections nationales";
      }
      if (country === 'Drapeaux mondiaux') {
        return "Aperçu du fichier de + 270 logos de drapeaux mondiaux";

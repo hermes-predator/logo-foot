@@ -11,7 +11,7 @@ export const generateGalleryItems = () => {
       imageUrl: `/images/logo${index + 1}.png`,
       videoUrl: `/videos/video${index + 1}.mov`,
       country: country,
-      title: `Fichier - ${country}`,
+      title: `Fichier : ${country}`,
       altText: getCountryDescription(country),
     };
   });
@@ -23,13 +23,13 @@ export const generateGalleryItems = () => {
     // Specific titles for collection items
     let title = "";
     if (arrayIndex + 1 === 61) {
-      title = "Fichier - Compétitions de football";
+      title = "Fichier : Compétitions de football";
     } else if (arrayIndex + 1 === 62) {
-      title = "Fichier - Clubs Européens";
+      title = "Fichier : Clubs Européens";
     } else if (arrayIndex + 1 === 63) {
-      title = "Fichier - Sélections Nationales";
+      title = "Fichier : Sélections Nationales";
     } else if (arrayIndex + 1 === 64) {
-      title = "Fichier - Drapeaux mondiaux";
+      title = "Fichier : Drapeaux mondiaux";
     }
     
     return {

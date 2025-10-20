@@ -179,10 +179,9 @@ Deno.serve(async (req) => {
     
     const headers = {
       ...corsHeaders,
-      'Content-Type': 'application/xml',
+      'Content-Type': 'text/xml; charset=utf-8',
       'Cache-Control': 'public, max-age=3600',
       'X-Robots-Tag': 'noindex',
-      'X-Content-Type-Options': 'nosniff',
       'X-Sitemap-Type': sitemapType,
       'X-URL-Count': urlCount.toString()
     };

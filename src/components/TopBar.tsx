@@ -22,7 +22,7 @@ const TopBar = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % messages.length);
-    }, 5000);
+    }, 7000);
     
     return () => clearInterval(interval);
   }, []);

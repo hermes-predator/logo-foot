@@ -14,7 +14,7 @@ const TopBar = () => {
       highlight: true
     },
     {
-      text: "⚡ Téléchargement instantané - Obtenez notre fichier aujourd'hui",
+      text: "⚡ Téléchargement instantané - Obtenez-le aujourd'hui",
       highlight: false
     }
   ];

@@ -12,7 +12,7 @@ const TopBar = () => {
     },
     {
       icon: Star,
-      text: "Noté 4.9/5 - Basé sur environ 1000 avis",
+      text: "Noté 4.9/5 - Un fichier qui améliore ton avancement personnel",
       highlight: true
     },
     {

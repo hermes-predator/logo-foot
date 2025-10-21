@@ -6,7 +6,7 @@ const TopBar = () => {
   
   const messages = [
     {
-      text: "👥 +20 000 clients satisfaits du fichier",
+      text: "✅ +20 000 clients satisfaits du fichier",
       highlight: true
     },
     {

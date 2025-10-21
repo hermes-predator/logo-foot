@@ -6,8 +6,7 @@ const TopBar = () => {
   
   const messages = [
     {
-      icon: Trophy,
-      text: "+20 000 clients satisfaits - Faites grandir votre cloud",
+      text: "🏆 +20 000 clients satisfaits - Un bon investissement pour votre croissance",
       highlight: true
     },
     {
@@ -43,7 +42,6 @@ const TopBar = () => {
       {/* Slider de messages */}
       <div className="relative z-10 h-6 flex items-center justify-center">
         {messages.map((message, index) => {
-          const Icon = message.icon;
           const isActive = index === currentSlide;
           
           return (
@@ -57,8 +55,6 @@ const TopBar = () => {
                     : 'opacity-0 translate-y-8'
               }`}
             >
-              <Icon className="w-4 h-4 text-yellow-300 fill-yellow-300 hidden md:inline" />
-              
               <span className={`${message.highlight ? "font-bold" : "font-semibold"} text-center px-2`}>
                 {message.text}
               </span>

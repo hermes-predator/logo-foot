@@ -22,7 +22,7 @@ const TopBar = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % messages.length);
-    }, 3500);
+    }, 5000);
     
     return () => clearInterval(interval);
   }, []);
@@ -40,10 +40,10 @@ const TopBar = () => {
           return (
             <div
               key={index}
-              className={`absolute flex items-center justify-center gap-2 text-xs md:text-sm transition-all duration-700 ${
+              className={`absolute flex items-center justify-center gap-2 text-xs md:text-sm transition-all duration-500 ${
                 isActive 
-                  ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 translate-x-full'
+                  ? 'opacity-100' 
+                  : 'opacity-0'
               }`}
             >
               <span className={`${message.highlight ? "font-semibold" : "font-medium"} text-center px-2`}>

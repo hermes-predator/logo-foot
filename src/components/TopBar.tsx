@@ -33,19 +33,19 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-2.5 px-4 text-center shadow-lg z-40 overflow-hidden">
+    <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-1.5 px-4 text-center shadow-lg z-40 overflow-hidden">
       {/* Effet de brillance animé */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[slide-in-right_3s_ease-in-out_infinite] opacity-50"></div>
       
       {/* Slider de messages */}
-      <div className="relative z-10 h-6 flex items-center justify-center">
+      <div className="relative z-10 h-5 flex items-center justify-center">
         {messages.map((message, index) => {
           const isActive = index === currentSlide;
           
           return (
             <div
               key={index}
-              className={`absolute flex items-center justify-center gap-2 text-sm md:text-base transition-all duration-700 ${
+              className={`absolute flex items-center justify-center gap-2 text-xs md:text-sm transition-all duration-700 ${
                 isActive 
                   ? 'opacity-100 translate-y-0' 
                   : index < currentSlide 

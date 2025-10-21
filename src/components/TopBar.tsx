@@ -43,9 +43,7 @@ const TopBar = () => {
               className={`absolute flex items-center justify-center gap-2 text-xs md:text-sm transition-all duration-700 ${
                 isActive 
                   ? 'opacity-100 translate-x-0' 
-                  : index < currentSlide 
-                    ? 'opacity-0 -translate-x-full' 
-                    : 'opacity-0 translate-x-full'
+                  : 'opacity-0 translate-x-full'
               }`}
             >
               <span className={`${message.highlight ? "font-semibold" : "font-medium"} text-center px-2`}>

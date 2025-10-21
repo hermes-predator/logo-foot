@@ -10,8 +10,7 @@ const TopBar = () => {
       highlight: true
     },
     {
-      icon: Star,
-      text: "Noté 4.9/5 - Un fichier qui améliore ton avancement personnel",
+      text: "⭐ Noté 4.9/5 - Un excellent investissement",
       highlight: true
     },
     {

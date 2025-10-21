@@ -6,15 +6,15 @@ const TopBar = () => {
   
   const messages = [
     {
-      text: "✅ +20 000 clients satisfaits provenant du monde entier",
+      text: "+20 000 clients satisfaits provenant du monde entier ✅",
       highlight: true
     },
     {
-      text: "⭐ Noté 4.9/5 - Basé sur + de 1 000 avis vérifiés",
+      text: "Noté 4.9/5 - Basé sur + de 1 000 avis vérifiés ⭐",
       highlight: true
     },
     {
-      text: "⚡ Téléchargement instantané et sécurisé",
+      text: "Téléchargement instantané et sécurisé ⚡",
       highlight: false
     }
   ];

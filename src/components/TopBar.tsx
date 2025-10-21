@@ -81,20 +81,6 @@ const TopBar = () => {
         })}
       </div>
 
-      {/* Indicateurs de slide */}
-      <div className="absolute bottom-0.5 left-1/2 transform -translate-x-1/2 flex gap-1.5 z-20">
-        {messages.map((_, index) => (
-          <div
-            key={index}
-            className={`h-0.5 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'w-4 bg-yellow-300' 
-                : 'w-1.5 bg-white/40'
-            }`}
-          />
-        ))}
-      </div>
-
       {/* Croix décorative (sans interaction) */}
       <div className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 opacity-70">
         <X className="w-4 h-4" />

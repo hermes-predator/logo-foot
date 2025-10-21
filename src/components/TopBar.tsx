@@ -6,7 +6,7 @@ const TopBar = () => {
   
   const messages = [
     {
-      text: "🏆 +20 000 clients satisfaits - Un bon investissement pour votre croissance",
+      text: "🏆 +20 000 clients satisfaits - Nous boostons le cloud de nos clients",
       highlight: true
     },
     {

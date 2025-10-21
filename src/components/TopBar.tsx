@@ -16,11 +16,6 @@ const TopBar = () => {
     {
       text: "⚡ Téléchargement instantané - Obtenez notre fichier aujourd'hui",
       highlight: false
-    },
-    {
-      icon: Download,
-      text: "🔥 8700+ logos HD - Mise à jour gratuite incluse",
-      highlight: false
     }
   ];
 

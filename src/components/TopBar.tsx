@@ -7,7 +7,7 @@ const TopBar = () => {
   const messages = [
     {
       icon: Trophy,
-      text: "🎉 +20 000 clients satisfaits - Collection #1 en France",
+      text: "+20 000 clients satisfaits - Collection #1 en France",
       highlight: true
     },
     {

@@ -57,7 +57,7 @@ const TopBar = () => {
                     : 'opacity-0 translate-y-8'
               }`}
             >
-              <Icon className="w-4 h-4 text-yellow-300 hidden md:inline" />
+              <Icon className="w-4 h-4 text-yellow-300 fill-yellow-300 hidden md:inline" />
               
               <span className={`${message.highlight ? "font-bold" : "font-semibold"} text-center px-2`}>
                 {message.text}

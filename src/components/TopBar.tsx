@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Trophy, Star, Zap, Download } from 'lucide-react';
+import { Award, Star, Zap, Download } from 'lucide-react';
 
 const TopBar = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const messages = [
     {
-      icon: Trophy,
+      icon: Award,
       text: "+20 000 clients satisfaits - Faites grandir votre cloud",
       highlight: true
     },

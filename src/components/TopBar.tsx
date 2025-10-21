@@ -14,8 +14,7 @@ const TopBar = () => {
       highlight: true
     },
     {
-      icon: Zap,
-      text: "⚡ Téléchargement instantané - Accès à vie garanti",
+      text: "⚡ Téléchargement instantané - Obtenez notre fichier aujourd'hui",
       highlight: false
     },
     {

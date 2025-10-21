@@ -10,7 +10,7 @@ const TopBar = () => {
       highlight: true
     },
     {
-      text: "⭐ Noté 4.9/5 - Un excellent investissement",
+      text: "⭐ Noté 4.9/5 - Basé sur + de 1 000 avis vérifiés",
       highlight: true
     },
     {

@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { X, Trophy, Star, Zap, Download, Users } from 'lucide-react';
+import { Trophy, Star, Zap, Download } from 'lucide-react';
 
 const TopBar = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const messages = [
     {
-      icon: Users,
-      text: "Déjà +20 000 clients satisfaits",
+      icon: Trophy,
+      text: "🎉 +20 000 clients satisfaits - Collection #1 en France",
       highlight: true
     },
     {
       icon: Star,
-      text: "Note 4.9/5",
-      stars: true
+      text: "⭐ Noté 4.9/5 - La meilleure qualité du marché",
+      highlight: true
     },
     {
       icon: Zap,
-      text: "Téléchargement instantané",
+      text: "⚡ Téléchargement instantané - Accès à vie garanti",
       highlight: false
     },
     {
       icon: Download,
-      text: "Accès illimité à vie",
+      text: "🔥 8700+ logos HD - Mise à jour gratuite incluse",
       highlight: false
     }
   ];
@@ -57,34 +57,16 @@ const TopBar = () => {
                     : 'opacity-0 translate-y-8'
               }`}
             >
-              <Icon className="w-4 h-4 text-yellow-300" />
+              <Icon className="w-4 h-4 text-yellow-300 hidden md:inline" />
               
-              {message.stars ? (
-                <div className="flex items-center gap-2">
-                  <span>Note</span>
-                  <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 text-yellow-300 fill-yellow-300" />
-                    ))}
-                  </div>
-                  <span className="font-bold">4.9/5</span>
-                </div>
-              ) : (
-                <span className={message.highlight ? "font-bold" : ""}>
-                  {message.text}
-                </span>
-              )}
-              
-              {message.text.includes("instantané") && <span>⚡️</span>}
+              <span className={`${message.highlight ? "font-bold" : "font-semibold"} text-center px-2`}>
+                {message.text}
+              </span>
             </div>
           );
         })}
       </div>
 
-      {/* Croix décorative (sans interaction) */}
-      <div className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 opacity-70">
-        <X className="w-4 h-4" />
-      </div>
     </div>
   );
 };

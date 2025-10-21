@@ -6,7 +6,7 @@ const TopBar = () => {
   
   const messages = [
     {
-      text: "✅ +20 000 clients satisfaits - Des clients provenant du monde entier",
+      text: "✅ +20 000 clients satisfaits provenant du monde entier",
       highlight: true
     },
     {

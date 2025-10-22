@@ -242,7 +242,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 mt-4">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] md:transform md:-translate-y-14">
+            <div className="relative mb-0 bg-white/70 backdrop-blur-lg rounded-t-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 border-b-0 before:absolute before:inset-0 before:rounded-t-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] md:transform md:-translate-y-14">
               <video 
                 className="w-full h-full object-cover"
                 autoPlay 
@@ -263,7 +263,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}
-            <div className="backdrop-blur-lg rounded-xl px-3 pt-1 pb-3 -mb-1 text-center max-w-md mx-auto md:transform md:-translate-y-[3rem] shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60">
+            <div className="backdrop-blur-lg rounded-b-xl px-3 pt-1 pb-3 text-center max-w-md mx-auto md:transform md:-translate-y-14 shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 border-t-0 before:absolute before:inset-0 before:rounded-b-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60">
               {/* Décoration avec icône utilisateurs en haut à droite du container vert */}
               <div className="absolute top-0 right-0 text-white rounded-bl-xl rounded-tr-xl px-2.5 py-2" style={{backgroundColor: 'rgb(90, 180, 165)'}}>
                 <Users className="w-3 h-3" />

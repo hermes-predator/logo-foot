@@ -91,7 +91,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Layout en deux colonnes */}
         <div className="grid md:grid-cols-[11fr_9fr] gap-6 items-center mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
-          <div className="md:transform md:-translate-y-[3.875rem]">{/* Alignement avec le lecteur vidéo */}
+          <div className="md:transform md:-translate-y-8">{/* Alignement avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
@@ -266,10 +266,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Bloc des avis clients avec container de confiance */}
               <div className="backdrop-blur-lg rounded-b-xl px-3 pt-1 pb-3 text-center max-w-md mx-auto shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 border-t-0 before:absolute before:inset-0 before:rounded-b-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60">
-                {/* Décoration avec icône utilisateurs en haut à droite du container vert */}
-                <div className="absolute top-0 right-0 text-white rounded-bl-xl px-2.5 py-2" style={{backgroundColor: 'rgb(90, 180, 165)'}}>
-                  <Users className="w-3 h-3" />
-                </div>
                 {/* Animation des témoignages */}
                 <div className="leading-tight">
                   <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

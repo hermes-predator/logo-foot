@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`w-full py-4 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full py-2 sm:py-3 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
           ? 'bg-white/70 shadow-sm' 
           : 'bg-white/50 border-gray-100/20'

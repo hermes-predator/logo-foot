@@ -256,14 +256,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   <Folder className="w-12 h-12 text-gray-400" />
                 </div>
               </video>
-              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                Aperçu du fichier
+              <div className="absolute bottom-2 left-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center justify-between">
+                <span>Aperçu du fichier</span>
+                <span className="text-[10px]">ZIP • 63 Mo • 8 774 éléments</span>
               </div>
-            </div>
-            
-            {/* Informations du fichier ZIP */}
-            <div className="text-center -mt-8 md:transform md:-translate-y-[60px]">
-              <p className="text-[9px] sm:text-[10px] font-medium text-gray-500">Fichier ZIP téléchargeable • 63 Mo • 8 774 éléments</p>
             </div>
             
             {/* Bloc des avis clients avec container de confiance */}

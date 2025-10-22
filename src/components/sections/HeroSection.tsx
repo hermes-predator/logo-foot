@@ -242,7 +242,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Colonne droite - Vidéo uniquement */}
           <div className="space-y-3 md:space-y-4 mt-4">
             {/* Vidéo preview du contenu */}
-            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] md:transform md:-translate-y-12">
+            <div className="relative mb-6 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] md:transform md:-translate-y-16">
               <video 
                 className="w-full h-full object-cover"
                 autoPlay 

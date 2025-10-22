@@ -61,10 +61,10 @@ const Header = () => {
           <>
             <button 
               aria-label="Menu" 
-              className="p-2 rounded-md text-gray-700 hover:bg-gray-100/80 transition-colors"
+              className="p-1.5 rounded-md text-gray-700 hover:bg-gray-100/80 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-5 h-5" />
             </button>
             
             {mobileMenuOpen && (
@@ -124,34 +124,34 @@ const Header = () => {
             )}
           </>
         ) : (
-          <div className="flex items-center gap-6 sm:gap-8">
+          <div className="flex items-center gap-4 sm:gap-6">
             <Link 
               to="/" 
-              className={`flex items-center gap-2 transition-all relative px-3 py-2 rounded-md ${
+              className={`flex items-center gap-1.5 transition-all relative px-2.5 py-1.5 rounded-md ${
                 currentPath === '/' 
                   ? 'font-medium bg-gray-100/80 text-black' 
                   : 'text-gray-700 hover:text-black hover:bg-gray-50'
               }`}
             >
-              <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-black' : ''}`} />
-              <span>Accueil</span>
+              <Home className={`w-3.5 h-3.5 ${currentPath === '/' ? 'text-black' : ''}`} />
+              <span className="text-sm">Accueil</span>
             </Link>
             <Link 
               to="/blog" 
-              className={`relative flex items-center gap-2 transition-all px-3 py-2 rounded-md ${
+              className={`relative flex items-center gap-1.5 transition-all px-2.5 py-1.5 rounded-md ${
                 currentPath.startsWith('/blog') 
                   ? 'font-medium bg-gray-100/80 text-black' 
                   : 'text-gray-700 hover:text-black hover:bg-gray-50'
               }`}
             >
-              <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
-              <span>Blog</span>
+              <BookOpen className={`w-3.5 h-3.5 ${currentPath.startsWith('/blog') ? 'text-black' : ''}`} />
+              <span className="text-sm">Blog</span>
             </Link>
             
             <Dialog>
-              <DialogTrigger className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-all">
-                <MessageCircle className="w-4 h-4" />
-                <span>Contact</span>
+              <DialogTrigger className="flex items-center gap-1.5 px-2.5 py-1.5 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-all">
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span className="text-sm">Contact</span>
               </DialogTrigger>
               <DialogContent className="max-w-2xl w-full">
                 <DialogHeader>

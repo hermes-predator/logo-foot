@@ -76,7 +76,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Le badge Judge.me est maintenant à l'intérieur du container vert */}
       
       {/* Témoignage à droite */}
-       <div className={`relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[119px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
+       <div className={`relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[120px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
             <div className="flex items-center gap-2 min-w-0 justify-center flex-col text-center -mt-3">
              <div className="flex items-center justify-center gap-2 min-w-0">
                <Quote className="w-3.5 h-3.5 flex-shrink-0 scale-x-[-1] -mt-9" style={{ color: 'rgb(90, 180, 165)', fill: 'rgb(90, 180, 165)' }} />

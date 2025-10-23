@@ -5,7 +5,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 
 const TrustIndicators = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 -mt-2">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
       <TrustCard 
         icon={<ShieldCheck className="text-gray-600" />}
         title="Paiement Sécurisé"

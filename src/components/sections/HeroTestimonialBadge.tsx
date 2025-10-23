@@ -77,8 +77,8 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
       {/* Témoignage avec Judge.me */}
       <div className={`relative flex flex-col items-center justify-center gap-2 rounded-2xl px-6 py-4 w-full max-w-md mx-auto h-[117px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
         <div className="flex flex-col items-center justify-center gap-2 min-w-0 text-center w-full">
-          {/* Nom, avatar, étoiles et Judge.me en haut */}
-          <div className={`flex items-center justify-center gap-2 flex-wrap transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          {/* Nom, avatar et étoiles en haut */}
+          <div className={`flex items-center justify-center gap-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <div className="flex items-center gap-1.5">
               <div className={`w-5 h-5 ${currentTestimonial.bgColor} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg ring-2 ring-white/50 transition-all duration-300 ease-in-out hover:scale-110`}>
                 <span className="text-[10px] font-bold text-white drop-shadow-sm">
@@ -93,28 +93,31 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
               {[...Array(currentTestimonial.rating)].map((_, i) => (
                 <Star key={i} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
               ))}
-              <a 
-                href="https://judge.me/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="ml-1"
-              >
-                <img 
-                  src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
-                  alt="Judge.me" 
-                  className="h-6 w-auto" 
-                />
-              </a>
             </div>
           </div>
 
-          {/* Commentaire avec quotes en dessous */}
+          {/* Commentaire avec quotes */}
           <div className="flex items-start justify-center gap-2 min-w-0 w-full">
             <Quote className="w-3.5 h-3.5 flex-shrink-0 scale-x-[-1] mt-0.5" style={{ color: 'rgb(90, 180, 165)', fill: 'rgb(90, 180, 165)' }} />
             <p className={`text-sm text-gray-600 max-w-[500px] font-medium leading-tight line-clamp-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
               {currentTestimonial.content}
             </p>
             <Quote className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style={{ color: 'rgb(90, 180, 165)', fill: 'rgb(90, 180, 165)' }} />
+          </div>
+
+          {/* Logo Judge.me en bas */}
+          <div className={`flex items-center justify-center transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <a 
+              href="https://judge.me/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
+                alt="Judge.me" 
+                className="h-6 w-auto" 
+              />
+            </a>
           </div>
         </div>
       </div>

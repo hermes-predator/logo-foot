@@ -106,7 +106,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
           </div>
 
           {/* Logo Judge.me en bas */}
-          <div className={`flex items-center justify-center gap-2 mt-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <div className={`flex items-center justify-center gap-2 mt-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <span className="text-[10px] text-gray-400 font-medium">Avis vérifiés basés sur 1034 avis</span>
             <a 
               href="https://judge.me/" 

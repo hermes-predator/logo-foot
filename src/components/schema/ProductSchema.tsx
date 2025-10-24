@@ -33,7 +33,7 @@ export const ProductSchema = ({
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://logo-foot.com",
+      "url": "https://www.logo-foot.com",
       "priceCurrency": currency,
       "price": price,
       "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],

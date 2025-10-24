@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap dynamique via Supabase Edge Function
-Sitemap: https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap
+Sitemap: https://www.logo-foot.com/sitemap.xml

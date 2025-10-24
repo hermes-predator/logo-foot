@@ -21,7 +21,7 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({
   defaultLanguage = 'fr'
 }) => {
   const { pathname } = useLocation();
-  const baseUrl = 'https://logo-foot.com';
+  const baseUrl = 'https://www.logo-foot.com';
   
   // Normalisation du chemin (suppression du slash final si présent)
   const normalizedPath = pathname.endsWith('/') && pathname !== '/' 

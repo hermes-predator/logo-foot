@@ -21,7 +21,7 @@ export const ImageObjectSchema = ({
   // Nettoyer l'URL de l'image - s'assurer qu'elle est absolue
   const fullImageUrl = imageUrl.startsWith('http') 
     ? imageUrl 
-    : `https://logo-foot.com${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`;
+    : `https://www.logo-foot.com${imageUrl.startsWith('/') ? '' : '/'}${imageUrl}`;
   
   // Extraire le nom du fichier pour l'identifiant
   const fileName = fullImageUrl.split('/').pop() || 'image';
@@ -36,7 +36,7 @@ export const ImageObjectSchema = ({
   return {
     "@context": "https://schema.org/",
     "@type": "ImageObject",
-    "@id": `https://logo-foot.com/image/${fileName}`,
+    "@id": `https://www.logo-foot.com/image/${fileName}`,
     "url": fullImageUrl,
     "width": width,
     "height": height,
@@ -48,7 +48,7 @@ export const ImageObjectSchema = ({
     "contentUrl": fullImageUrl,
     "encodingFormat": fullImageUrl.toLowerCase().endsWith('.png') ? "image/png" : "image/jpeg",
     "license": "https://creativecommons.org/licenses/by/4.0/",
-    "acquireLicensePage": "https://logo-foot.com/license",
+    "acquireLicensePage": "https://www.logo-foot.com/license",
     "creditText": authorName,
     "creator": {
       "@type": "Organization",

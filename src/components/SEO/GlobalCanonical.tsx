@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
  */
 const GlobalCanonical: React.FC = () => {
   const { pathname } = useLocation();
-  const baseUrl = 'https://logo-foot.com';
+  const baseUrl = 'https://www.logo-foot.com';
   
   // Normalisation du chemin (suppression du slash final si présent)
   const normalizedPath = pathname.endsWith('/') && pathname !== '/' 

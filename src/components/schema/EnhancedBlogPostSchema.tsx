@@ -20,12 +20,12 @@ interface EnhancedBlogPostSchemaProps {
 export const EnhancedBlogPostSchema = ({ 
   post, 
   imageUrl,
-  publisherLogo = "https://logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png",
+  publisherLogo = "https://www.logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png",
   publisherName = "FRONT-CLOUD",
   authorName = "FRONT-CLOUD",
   canonicalUrl,
   siteName = "Logo Foot",
-  baseUrl = "https://logo-foot.com"
+  baseUrl = "https://www.logo-foot.com"
 }: EnhancedBlogPostSchemaProps) => {
   // Extract the main title from the content
   const mainTitle = post.content.match(/# (.*?)(?:\n|$)/)?.[1] || post.title;
@@ -45,7 +45,7 @@ export const EnhancedBlogPostSchema = ({
     "@type": entityType,
     "name": post.title.split(':')[0].trim(),
     "sport": "Soccer",
-    "logo": imageUrl || "https://logo-foot.com/og-image.png"
+    "logo": imageUrl || "https://www.logo-foot.com/og-image.png"
   } : null;
 
   // We no longer use subCategory information since the structure was simplified
@@ -64,7 +64,7 @@ export const EnhancedBlogPostSchema = ({
 
   // Generate image object schema
   const imageObject = ImageObjectSchema({
-    imageUrl: imageUrl || "https://logo-foot.com/og-image.png",
+    imageUrl: imageUrl || "https://www.logo-foot.com/og-image.png",
     title: post.title
   });
 
@@ -76,7 +76,7 @@ export const EnhancedBlogPostSchema = ({
   const currentYear = new Date().getFullYear();
 
   // Generate the canonical URL
-  const postUrl = canonicalUrl || `https://logo-foot.com/blog/${post.id}`;
+  const postUrl = canonicalUrl || `https://www.logo-foot.com/blog/${post.id}`;
 
   // Construct the full schema
   const articleSchema = {

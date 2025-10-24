@@ -20,7 +20,7 @@ const BlogSchemaMarkup = ({
   isBlogList, 
   addBreadcrumbs = true,
   siteName = "Logo Foot",
-  baseUrl = "https://logo-foot.com"
+  baseUrl = "https://www.logo-foot.com"
 }: BlogSchemaMarkupProps) => {
   const location = useLocation();
 

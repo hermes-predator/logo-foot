@@ -18,7 +18,7 @@ const BlogCanonical: React.FC<BlogCanonicalProps> = ({
   category,
   page = 1,
   totalPages,
-  baseUrl = 'https://logo-foot.com'
+  baseUrl = 'https://www.logo-foot.com'
 }) => {
   useLocation();
   

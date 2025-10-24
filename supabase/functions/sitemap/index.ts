@@ -3,7 +3,7 @@ import { corsHeaders } from '../_shared/cors.ts';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 // Local sitemap generators (Edge Functions cannot import from src code)
-const BASE_URL = 'https://logo-foot.com';
+const BASE_URL = 'https://www.logo-foot.com';
 
 function slugify(text: string = ''): string {
   return text

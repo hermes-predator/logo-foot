@@ -31,7 +31,7 @@ export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
     "@type": entityType,
     "name": post.title.split(':')[0].trim(),
     "sport": "Soccer",
-    "logo": imageUrl || "https://logo-foot.com/og-image.png"
+    "logo": imageUrl || "https://www.logo-foot.com/og-image.png"
   } : null;
 
   // We no longer use subCategory information since the structure was simplified
@@ -50,7 +50,7 @@ export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
 
   // Generate image object schema
   const imageObject = ImageObjectSchema({
-    imageUrl: imageUrl || "https://logo-foot.com/og-image.png",
+    imageUrl: imageUrl || "https://www.logo-foot.com/og-image.png",
     title: post.title
   });
 
@@ -72,11 +72,11 @@ export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
     "dateModified": post.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://logo-foot.com/blog/${post.id}`
+      "@id": `https://www.logo-foot.com/blog/${post.id}`
     },
     "articleBody": post.content,
     "articleSection": sections,
-    "url": `https://logo-foot.com/blog/${post.id}`,
+    "url": `https://www.logo-foot.com/blog/${post.id}`,
     "author": {
       "@type": "Organization",
       "name": "FRONT-CLOUD"
@@ -86,7 +86,7 @@ export const BlogPostSchema = ({ post, imageUrl }: BlogPostSchemaProps) => {
       "name": "FRONT-CLOUD",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png"
+        "url": "https://www.logo-foot.com/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png"
       }
     },
     "keywords": keywordsArray,

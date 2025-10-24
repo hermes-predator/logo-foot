@@ -31,7 +31,7 @@ const EnhancedOpenGraph: React.FC<EnhancedOpenGraphProps> = ({
   siteName = 'Logo Foot',
   locale = 'fr_FR',
   post,
-  baseUrl = 'https://logo-foot.com',
+  baseUrl = 'https://www.logo-foot.com',
   twitterCard = 'summary_large_image',
   twitterSite = '@logofoot'
 }) => {

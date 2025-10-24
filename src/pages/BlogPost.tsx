@@ -74,7 +74,7 @@ const BlogPost: React.FC = () => {
   const readingTime = Math.ceil(wordCount / wordsPerMinute);
 
   // URL canonique pour cet article spécifique
-  const canonicalUrl = `https://logo-foot.com${generatePostUrl(post.id, post.title)}`;
+  const canonicalUrl = `https://www.logo-foot.com${generatePostUrl(post.id, post.title)}`;
 
   return (
     <>
@@ -89,19 +89,19 @@ const BlogPost: React.FC = () => {
         
         <link rel="canonical" href={canonicalUrl} />
         {post.galleryImageId && (
-          <link rel="preload" as="image" href={`https://logo-foot.com/blog-images/${post.id}.png`} />
+          <link rel="preload" as="image" href={`https://www.logo-foot.com/blog-images/${post.id}.png`} />
         )}
         
         {post.previousPostId && (() => {
           const p = blogPosts.find(p => p.id === post.previousPostId);
           return p ? (
-            <link rel="prev" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+            <link rel="prev" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title)}`} />
           ) : null;
         })()}
         {post.nextPostId && (() => {
           const p = blogPosts.find(p => p.id === post.nextPostId);
           return p ? (
-            <link rel="next" href={`https://logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+            <link rel="next" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title)}`} />
           ) : null;
         })()}
         
@@ -109,7 +109,7 @@ const BlogPost: React.FC = () => {
 
       <EnhancedOpenGraph 
         post={post}
-        baseUrl="https://logo-foot.com"
+        baseUrl="https://www.logo-foot.com"
         siteName="Logo Foot"
         twitterCard="summary_large_image"
       />

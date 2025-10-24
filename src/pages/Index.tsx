@@ -147,19 +147,19 @@ const Index = () => {
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content="Logo Foot | Fichier +8700 Logos des Clubs de Football" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://logo-foot.com/" />
-        <meta property="og:image" content="https://logo-foot.com/og-image.png" />
+        <meta property="og:url" content="https://www.logo-foot.com" />
+        <meta property="og:image" content="https://www.logo-foot.com/og-image.png" />
         <meta property="og:description" content={metaDescription} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Logo Foot | Fichier +8700 Logos des Clubs de Football" />
         <meta name="twitter:description" content={metaDescription} />
         
         {/* Canonical URL absolue */}
-        <link rel="canonical" href="https://logo-foot.com/" />
+        <link rel="canonical" href="https://www.logo-foot.com" />
         
         {/* Performance hints */}
-        <link rel="preconnect" href="https://logo-foot.com" />
-        <link rel="dns-prefetch" href="https://logo-foot.com" />
+        <link rel="preconnect" href="https://www.logo-foot.com" />
+        <link rel="dns-prefetch" href="https://www.logo-foot.com" />
         <link rel="preload" href="/lovable-uploads/df7b24e2-8ed1-41e2-a959-f2a9db473237.png" as="image" />
 
         {/* RSS feed */}
@@ -170,17 +170,17 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://logo-foot.com/#webpage",
-            "url": "https://logo-foot.com/",
+            "@id": "https://www.logo-foot.com/#webpage",
+            "url": "https://www.logo-foot.com",
             "name": "Logo Foot - Collection de Logos de Football",
             "description": metaDescription,
             "isPartOf": {
               "@type": "WebSite",
-              "@id": "https://logo-foot.com/#website"
+              "@id": "https://www.logo-foot.com/#website"
             },
             "primaryImageOfPage": {
               "@type": "ImageObject",
-              "url": "https://logo-foot.com/og-image.png"
+              "url": "https://www.logo-foot.com/og-image.png"
             },
             "mainEntity": {
               "@type": "Product",
@@ -202,11 +202,11 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "url": "https://logo-foot.com/",
+            "url": "https://www.logo-foot.com",
             "name": "Logo Foot",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://logo-foot.com/blog?query={search_term_string}",
+              "target": "https://www.logo-foot.com/blog?query={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })}

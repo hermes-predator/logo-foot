@@ -16,7 +16,7 @@ const CanonicalTag: React.FC<CanonicalTagProps> = ({
   isDefault = false 
 }) => {
   // Construit l'URL canonique en utilisant soit l'URL fournie, soit l'URL actuelle
-  const baseUrl = 'https://logo-foot.com';
+  const baseUrl = 'https://www.logo-foot.com';
   const currentPath = window.location.pathname;
   
   // Si aucune URL n'est fournie, utiliser l'URL actuelle

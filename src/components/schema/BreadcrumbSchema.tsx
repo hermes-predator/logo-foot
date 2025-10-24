@@ -12,7 +12,7 @@ interface BreadcrumbSchemaProps {
 
 export const BreadcrumbSchema = ({ 
   items, 
-  baseUrl = "https://logo-foot.com" 
+  baseUrl = "https://www.logo-foot.com" 
 }: BreadcrumbSchemaProps) => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",

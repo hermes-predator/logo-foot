@@ -29,8 +29,12 @@ const Index = () => {
   const productData = ProductSchema({
     name: "Pack Complet de Logos de Football",
     description: "Accédez à plus de 8600 logos de football en haute qualité. Inclut les clubs de Ligue 1, Premier League, Liga, Serie A, Bundesliga et les équipes nationales.",
-    image: "https://logo-foot.com/og-image.png",
-    price: "29.90"
+    image: "https://www.logo-foot.com/og-image.png",
+    price: "29.90",
+    aggregateRating: {
+      ratingValue: "4.8",
+      reviewCount: "127"
+    }
   });
 
   // Meta description optimisée

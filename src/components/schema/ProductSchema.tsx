@@ -8,6 +8,10 @@ interface ProductSchemaProps {
   sku?: string;
   availability?: "InStock" | "OutOfStock" | "PreOrder";
   brand?: string;
+  aggregateRating?: {
+    ratingValue: string;
+    reviewCount: string;
+  };
 }
 
 export const ProductSchema = ({
@@ -18,9 +22,10 @@ export const ProductSchema = ({
   currency = "EUR",
   sku = "LOGOPCK1",
   availability = "InStock",
-  brand = "FRONT-CLOUD"
+  brand = "FRONT-CLOUD",
+  aggregateRating
 }: ProductSchemaProps) => {
-  return {
+  const schema: any = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": name,
@@ -44,4 +49,14 @@ export const ProductSchema = ({
       }
     }
   };
+
+  if (aggregateRating) {
+    schema.aggregateRating = {
+      "@type": "AggregateRating",
+      "ratingValue": aggregateRating.ratingValue,
+      "reviewCount": aggregateRating.reviewCount
+    };
+  }
+
+  return schema;
 };

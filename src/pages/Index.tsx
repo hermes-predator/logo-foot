@@ -159,7 +159,11 @@ const Index = () => {
         <meta name="twitter:description" content={metaDescription} />
         
         {/* Canonical URL absolue */}
-        <link rel="canonical" href="https://www.logo-foot.com" />
+        <link rel="canonical" href="https://www.logo-foot.com/" />
+        
+        {/* Balise hreflang pour indiquer la langue */}
+        <link rel="alternate" href="https://www.logo-foot.com/" hrefLang="fr" />
+        <link rel="alternate" href="https://www.logo-foot.com/" hrefLang="x-default" />
         
         {/* Performance hints */}
         <link rel="preconnect" href="https://www.logo-foot.com" />

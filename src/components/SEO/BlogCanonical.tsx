@@ -63,6 +63,9 @@ const BlogCanonical: React.FC<BlogCanonicalProps> = ({
       {prevUrl && <link rel="prev" href={prevUrl} />}
       {nextUrl && <link rel="next" href={nextUrl} />}
       
+      {/* Empêcher l'indexation des pages de pagination sauf la première */}
+      {page > 1 && <meta name="robots" content="noindex,follow" />}
+      
       <link rel="alternate" href={canonicalUrl} hrefLang="fr" />
       <link rel="alternate" href={canonicalUrl} hrefLang="x-default" />
     </Helmet>

@@ -1,5 +1,15 @@
 User-agent: *
 Allow: /
 
+# Bloquer les pages dupliquées et les paramètres inutiles
+Disallow: /*?*
+Disallow: /*.json
+Disallow: /*.xml
+Disallow: /api/
+Disallow: /payment-success-token13061995
+
 # Sitemap dynamique via Supabase Edge Function
 Sitemap: https://www.logo-foot.com/sitemap.xml
+
+# Crawl-delay pour ne pas surcharger le serveur
+Crawl-delay: 1

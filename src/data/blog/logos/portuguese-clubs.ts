@@ -14,19 +14,19 @@ Le Portugal, nation passionnée de football, possède une riche histoire d'ident
 
 Au sommet du football portugais trônent les "três grandes" (trois grands) : Benfica, Porto et Sporting. Chacun possède un **logo de club portugais** immédiatement reconnaissable dans le monde entier.
 
-### [Benfica](blog/292) : L'Aigle Majestueux
+### Benfica : L'Aigle Majestueux
 
 Le **logo Benfica** est dominé par un aigle majestueux survolant un écu. Cet emblème, dont les couleurs principales sont le rouge et le blanc, symbolise la puissance et la vision. L'aigle, choisi comme mascotte dès la fondation du club en 1904, représente l'ambition de s'élever au-dessus des autres, tandis que la devise "E Pluribus Unum" (De plusieurs, un seul) souligne l'unité au sein du club lisboète.
 
 L'évolution du **logo du Benfica** a consisté principalement en des simplifications et modernisations tout en conservant l'aigle comme élément central. Cette continuité visuelle témoigne du respect profond du club pour ses traditions.
 
-### [FC Porto](blog/293) : Le Dragon Protecteur
+### FC Porto : Le Dragon Protecteur
 
 Le **logo FC Porto** présente un dragon mythique, symbole de la ville de Porto. Les couleurs bleu et blanc dominent cet emblème qui incarne la force et la détermination. Le dragon, figure protectrice de la ville, est associé à une légende selon laquelle il veille sur les trésors de Porto.
 
 Au fil des années, le **logo Porto** a connu plusieurs raffinements, mais la présence imposante du dragon est restée intacte, renforçant l'identité visuelle forte du club du nord du Portugal.
 
-### [Sporting CP](blog/294) : Le Lion Courageux
+### Sporting CP : Le Lion Courageux
 
 Le **logo Sporting** se distingue par son lion rugissant, symbole de courage et de noblesse. Les couleurs vert et blanc, représentatives du club lisboète, encadrent ce félin qui incarne parfaitement les valeurs sportives défendues par le club.
 
@@ -36,15 +36,15 @@ Le **logo Sporting Clube Portugal** a conservé son lion au fil des modernisatio
 
 Au-delà des trois géants, le Portugal compte de nombreux clubs avec des **logos de clubs portugais** tout aussi riches en symbolisme et en histoire.
 
-### [Sporting Braga](blog/295) : Entre Tradition et Modernité
+### Sporting Braga : Entre Tradition et Modernité
 
 Le **logo SC Braga** a connu l'une des évolutions les plus radicales du football portugais. Originellement similaire à celui de l'Arsenal de Londres (ce qui lui valait le surnom des "Arsenalistas"), le club a adopté en 2004 un emblème beaucoup plus moderne et distinctif, avec un écu épuré aux couleurs rouge et blanc, reflétant son désir de forger sa propre identité.
 
-### [Vitória Guimarães](blog/329) : Le Berceau du Portugal
+### Vitória Guimarães : Le Berceau du Portugal
 
 Le **logo Vitória Guimarães** symbolise l'importance historique de la ville, considérée comme le "berceau du Portugal". Son emblème en noir et blanc présente des éléments héraldiques qui rendent hommage à l'histoire portugaise et à la fondation de la nation.
 
-### [Rio Ave FC](blog/330) : L'Influence Maritime
+### Rio Ave FC : L'Influence Maritime
 
 Le **logo Rio Ave** reflète la situation géographique du club, situé à l'embouchure du fleuve Ave. Les couleurs vert et blanc et les éléments graphiques évoquant l'eau soulignent ce lien profond avec l'environnement naturel de Vila do Conde.
 

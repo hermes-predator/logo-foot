@@ -30,11 +30,11 @@ Chaque composant du **logo foot vitoria guimaraes** a été soigneusement conçu
 
 ## Rivaux et Comparaisons dans le Paysage Portugais
 
-Dans l'univers des emblèmes du football portugais, le **vitoria guimaraes logo** occupe une place distinctive. Contrairement à son rival régional, le [Sporting Braga](blog/295), qui arbore du rouge et du blanc, Vitoria se distingue par son élégant noir et blanc. Cette différence chromatique illustre parfaitement la rivalité historique entre ces deux clubs du nord du Portugal.
+Dans l'univers des emblèmes du football portugais, le **vitoria guimaraes logo** occupe une place distinctive. Contrairement à son rival régional, le Sporting Braga, qui arbore du rouge et du blanc, Vitoria se distingue par son élégant noir et blanc. Cette différence chromatique illustre parfaitement la rivalité historique entre ces deux clubs du nord du Portugal.
 
-Le design du **logo Vitoria Guimaraes** présente également des contrastes intéressants avec d'autres clubs comme le [Benfica](blog/292), le [FC Porto](blog/293) ou le [Sporting CP](blog/294). Alors que ces géants utilisent des aigles, des dragons ou des lions comme symboles centraux, le Vitoria mise davantage sur une élégance minimaliste et des éléments héraldiques plus traditionnels.
+Le design du **logo Vitoria Guimaraes** présente également des contrastes intéressants avec d'autres clubs comme le Benfica, le FC Porto ou le Sporting CP. Alors que ces géants utilisent des aigles, des dragons ou des lions comme symboles centraux, le Vitoria mise davantage sur une élégance minimaliste et des éléments héraldiques plus traditionnels.
 
-Cette approche plus sobre rappelle celle du [Rio Ave FC](blog/330), autre club portugais qui privilégie également une identité visuelle épurée mais forte en symbolisme local.
+Cette approche plus sobre rappelle celle du Rio Ave FC, autre club portugais qui privilégie également une identité visuelle épurée mais forte en symbolisme local.
 
 ## Le **Vitoria de Guimaraes Logo PNG** dans l'Ère Digitale
 

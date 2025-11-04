@@ -58,15 +58,8 @@ const BlogPost: React.FC = () => {
     return <Navigate to="/404" replace />;
   }
 
-  // Vérifier si l'URL actuelle est l'URL canonique
-  const currentPath = window.location.pathname;
-  const isCanonical = isCanonicalPostUrl(currentPath, post.title);
-  
-  // Si l'URL n'est pas canonique, rediriger
-  if (!isCanonical) {
-    const canonicalPath = generatePostUrl(post.id, post.title);
-    return <Navigate to={canonicalPath} replace />;
-  }
+  // Note: Les redirections sont maintenant gérées côté serveur (.htaccess)
+  // pour éviter les problèmes d'indexation avec Google Search Console
 
   // Calculer le temps de lecture estimé
   const wordsPerMinute = 200;

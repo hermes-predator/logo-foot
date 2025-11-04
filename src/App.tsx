@@ -13,7 +13,6 @@ import NotFound from './pages/NotFound';
 import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
 import MetaTagsManager from './components/SEO/MetaTagsManager';
-import TrailingSlashRedirect from './components/SEO/TrailingSlashRedirect';
 import PaymentModalHost from './components/payment/PaymentModalHost';
 import { RecentBuyersProvider } from './contexts/RecentBuyersContext';
 
@@ -35,7 +34,6 @@ const App = () => {
           <RecentBuyersProvider>
             <Router basename="/">
               <MetaTagsManager />
-              <TrailingSlashRedirect />
               <Header />
               <PaymentModalHost />
               <Routes>

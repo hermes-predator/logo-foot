@@ -34,7 +34,7 @@ Dans l'univers des emblèmes du football portugais, le **vitoria guimaraes logo*
 
 Le design du **logo Vitoria Guimaraes** présente également des contrastes intéressants avec d'autres clubs comme le Benfica, le FC Porto ou le Sporting CP. Alors que ces géants utilisent des aigles, des dragons ou des lions comme symboles centraux, le Vitoria mise davantage sur une élégance minimaliste et des éléments héraldiques plus traditionnels.
 
-Cette approche plus sobre rappelle celle du Rio Ave FC, autre club portugais qui privilégie également une identité visuelle épurée mais forte en symbolisme local.
+Cette approche plus sobre rappelle celle du Rio Ave FC, autre club portugais qui privilégie également une identité visuelle épurée mais forte en symbolisme local. Découvrez plus sur le [logo Rio Ave](/blog/483-logo-rio-ave-histoire).
 
 ## Le **Vitoria de Guimaraes Logo PNG** dans l'Ère Digitale
 

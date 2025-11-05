@@ -57,7 +57,7 @@ Le **Rio Ave logo** s'inscrit dans la riche tradition des emblèmes du football 
 
 Contrairement au logo du Sporting Braga, qui mise sur des couleurs rouge et blanc et des éléments plus modernes, le **Rio Ave logo PNG** conserve une approche plus traditionnelle tout en intégrant des éléments distinctifs liés à son environnement géographique.
 
-Cette coexistence d'emblèmes variés, du Vitoria Guimaraes au Rio Ave FC, illustre la richesse et la diversité du paysage footballistique portugais, où chaque club exprime visuellement son histoire et ses valeurs spécifiques.
+Cette coexistence d'emblèmes variés, du Vitoria Guimaraes au Rio Ave FC, illustre la richesse et la diversité du paysage footballistique portugais, où chaque club exprime visuellement son histoire et ses valeurs spécifiques. Découvrez plus sur le [logo Vitória Guimarães](/blog/587-logo-vitoria-guimaraes-histoire).
 
 ## Le **Logo Rio Ave** comme Élément d'Identité Communautaire
 

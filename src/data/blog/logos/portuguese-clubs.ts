@@ -20,17 +20,23 @@ Le **logo Benfica** est dominé par un aigle majestueux survolant un écu. Cet e
 
 L'évolution du **logo du Benfica** a consisté principalement en des simplifications et modernisations tout en conservant l'aigle comme élément central. Cette continuité visuelle témoigne du respect profond du club pour ses traditions.
 
+Pour une analyse complète, découvrez notre article détaillé sur le [logo Benfica](/blog/110-logo-benfica-histoire-symbolisme).
+
 ### FC Porto : Le Dragon Protecteur
 
 Le **logo FC Porto** présente un dragon mythique, symbole de la ville de Porto. Les couleurs bleu et blanc dominent cet emblème qui incarne la force et la détermination. Le dragon, figure protectrice de la ville, est associé à une légende selon laquelle il veille sur les trésors de Porto.
 
 Au fil des années, le **logo Porto** a connu plusieurs raffinements, mais la présence imposante du dragon est restée intacte, renforçant l'identité visuelle forte du club du nord du Portugal.
 
+En savoir plus sur le [logo FC Porto](/blog/449-logo-porto-histoire-symbolisme) et sa signification.
+
 ### Sporting CP : Le Lion Courageux
 
 Le **logo Sporting** se distingue par son lion rugissant, symbole de courage et de noblesse. Les couleurs vert et blanc, représentatives du club lisboète, encadrent ce félin qui incarne parfaitement les valeurs sportives défendues par le club.
 
 Le **logo Sporting Clube Portugal** a conservé son lion au fil des modernisations successives, témoignant de la fidélité du club à ses origines et à son identité fondamentale.
+
+Consultez l'article complet sur le [logo Sporting CP](/blog/538-logo-sporting-histoire-symbolisme).
 
 ## La Richesse des Emblèmes Régionaux
 
@@ -44,9 +50,13 @@ Le **logo SC Braga** a connu l'une des évolutions les plus radicales du footbal
 
 Le **logo Vitória Guimarães** symbolise l'importance historique de la ville, considérée comme le "berceau du Portugal". Son emblème en noir et blanc présente des éléments héraldiques qui rendent hommage à l'histoire portugaise et à la fondation de la nation.
 
+Explorez l'histoire détaillée du [logo Vitória Guimarães](/blog/587-logo-vitoria-guimaraes-histoire).
+
 ### Rio Ave FC : L'Influence Maritime
 
 Le **logo Rio Ave** reflète la situation géographique du club, situé à l'embouchure du fleuve Ave. Les couleurs vert et blanc et les éléments graphiques évoquant l'eau soulignent ce lien profond avec l'environnement naturel de Vila do Conde.
+
+Découvrez tous les détails du [logo Rio Ave](/blog/483-logo-rio-ave-histoire).
 
 ## Évolution des **Logos des Clubs Portugais** : Tradition vs. Modernisation
 

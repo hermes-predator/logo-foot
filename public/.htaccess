@@ -6,6 +6,10 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^logo-foot\.com$ [NC]
 RewriteRule ^(.*)$ https://www.logo-foot.com/$1 [R=301,L]
 
+# Redirection des pages de langue non existantes (Soft 404)
+RewriteRule ^en/?$ https://www.logo-foot.com/ [R=301,L]
+RewriteRule ^ar/?$ https://www.logo-foot.com/ [R=301,L]
+
 # Redirection du sitemap vers l'edge function Supabase
 RewriteRule ^sitemap\.xml$ https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap [R=301,L]
 

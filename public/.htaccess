@@ -10,8 +10,8 @@ RewriteRule ^(.*)$ https://www.logo-foot.com/$1 [R=301,L]
 RewriteRule ^en/?$ https://www.logo-foot.com/ [R=301,L]
 RewriteRule ^ar/?$ https://www.logo-foot.com/ [R=301,L]
 
-# Redirection du sitemap vers l'edge function Supabase
-RewriteRule ^sitemap\.xml$ https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap [R=301,L]
+# Proxy du sitemap vers l'edge function Supabase (pas de redirection visible)
+RewriteRule ^sitemap\.xml$ https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap [P,L]
 
 # Bloquer les paramètres d'URL inutiles (évite le contenu dupliqué)
 RewriteCond %{QUERY_STRING} !^$

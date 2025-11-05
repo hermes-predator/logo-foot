@@ -49,41 +49,12 @@ function generateSitemap({
   // Blog list
   parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', includePriority ? '0.8' : undefined));
 
-  // Posts
+  // Posts - URLs propres sans paramètres
   for (const p of blogPosts) {
     const slug = p.slug || slugify(p.title);
     const loc = `${BASE_URL}/blog/${p.id}-${slug}`;
     const last = includeLastmod && p.date ? new Date(p.date).toISOString().split('T')[0] : undefined;
     parts.push(urlEntry(loc, last, 'weekly', includePriority ? '0.6' : undefined));
-  }
-
-  parts.push('</urlset>');
-  return parts.join('\n');
-}
-
-function generateSpecializedSitemap(
-  type: 'main' | 'clubs' | 'competitions' | 'countries' | 'categories',
-  blogPosts: any[] = []
-): string {
-  const today = new Date().toISOString().split('T')[0];
-  const parts: string[] = [];
-  parts.push('<?xml version="1.0" encoding="UTF-8"?>');
-  parts.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
-
-  if (type === 'main') {
-    parts.push(urlEntry(`${BASE_URL}/`, today, 'weekly', '1.0'));
-    parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', '0.8'));
-  } else if (type === 'categories') {
-    const cats = Array.from(new Set(blogPosts.map((p: any) => p.category).filter(Boolean)));
-    for (const c of cats) {
-      parts.push(urlEntry(`${BASE_URL}/blog?category=${encodeURIComponent(c)}`, today, 'weekly', '0.7'));
-    }
-  } else {
-    // Fallback – include recent posts
-    for (const p of blogPosts.slice(0, 1000)) {
-      const slug = p.slug || slugify(p.title);
-      parts.push(urlEntry(`${BASE_URL}/blog/${p.id}-${slug}`, p.date ? new Date(p.date).toISOString().split('T')[0] : today, 'weekly', '0.6'));
-    }
   }
 
   parts.push('</urlset>');
@@ -108,7 +79,8 @@ Deno.serve(async (req) => {
     const { data, error } = await supabaseClient
       .from('blog_posts')
       .select('id, title, date, category, sub_category, slug')
-      .order('date', { ascending: false });
+      .order('date', { ascending: false })
+      .limit(400); // Limiter à 400 articles les plus récents pour éviter le budget crawl
     if (error) {
       console.warn('Sitemap: DB fetch error, continuing with fallback:', error.message);
     } else if (data) {
@@ -119,70 +91,34 @@ Deno.serve(async (req) => {
   }
 
     const url = new URL(req.url);
-    const sitemapType = url.searchParams.get('type') || 'complete';
     
-    console.log(`Generating ${sitemapType} sitemap...`);
-    console.log(`Found ${blogPosts?.length || 0} total blog posts from database`);
+    // Sitemap simple et propre - pas de paramètres pour éviter les redirections
+    console.log(`Generating clean sitemap...`);
+    console.log(`Found ${blogPosts?.length || 0} blog posts from database (limited to most recent)`);
     
-    let sitemap: string;
-    
-    if (sitemapType === 'index') {
-      // Générer un sitemap INDEX qui référence les variantes dynamiques
-      const base = `${url.origin}${url.pathname}`;
-      const lastmod = new Date().toISOString().split('T')[0];
-      sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
-        `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-        `  <sitemap><loc>${base}?type=main</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `  <sitemap><loc>${base}?type=clubs</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `  <sitemap><loc>${base}?type=competitions</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `  <sitemap><loc>${base}?type=countries</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `  <sitemap><loc>${base}?type=categories</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `  <sitemap><loc>${base}?type=complete</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
-        `</sitemapindex>`;
-    } else if (sitemapType === 'complete') {
-      // Générer le sitemap complet avec les options supportées
-      const includeImages = url.searchParams.get('images') !== 'false';
-      const includeHreflang = url.searchParams.get('hreflang') !== 'false';
-      const includeLastmod = url.searchParams.get('lastmod') !== 'false';
-      const includePriority = url.searchParams.get('priority') !== 'false';
-      
-      console.log(`Options: images=${includeImages}, hreflang=${includeHreflang}, lastmod=${includeLastmod}, priority=${includePriority}`);
-      
-      sitemap = generateSitemap({
-        includeImages,
-        includeHreflang,
-        includeLastmod,
-        includePriority,
-        blogPosts: blogPosts || []
-      });
-    } else {
-      // Générer un sitemap spécialisé
-      const validTypes = ['main', 'clubs', 'competitions', 'countries', 'categories'];
-      const type = validTypes.includes(sitemapType) ? sitemapType as any : 'main';
-      
-      console.log(`Generating specialized sitemap for: ${type}`);
-      sitemap = generateSpecializedSitemap(type, blogPosts || []);
-    }
+    const sitemap = generateSitemap({
+      includeImages: false, // Désactiver les images pour alléger
+      includeHreflang: false, // Désactiver hreflang (géré dans les pages)
+      includeLastmod: true,
+      includePriority: true,
+      blogPosts: blogPosts || []
+    });
     
     const urlCount = sitemap.split('<url>').length - 1;
-    console.log(`Sitemap generated successfully with ${urlCount} URLs`);
+    console.log(`✅ Sitemap optimisé généré: ${urlCount} URLs propres`);
     
     // Récupérer les articles récents pour le log
-    const recentPosts = (blogPosts || [])
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 3);
+    const recentPosts = (blogPosts || []).slice(0, 3);
     
-    console.log("Latest posts included:");
+    console.log("📝 Derniers articles inclus:");
     recentPosts.forEach(post => {
-      console.log(`- ID ${post.id}: ${post.title.substring(0, 50)}... (${post.date})`);
+      console.log(`  - ID ${post.id}: ${post.title.substring(0, 50)}... (${post.date})`);
     });
     
     const headers = {
       ...corsHeaders,
       'Content-Type': 'text/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600',
-      'X-Robots-Tag': 'noindex',
-      'X-Sitemap-Type': sitemapType,
+      'Cache-Control': 'public, max-age=7200', // Cache plus long (2h)
       'X-URL-Count': urlCount.toString()
     };
     

@@ -108,6 +108,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {' 📁'}
             </h1>
 
+            <Separator className="my-4 bg-gray-200" />
+
             {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-4">
               <h2 

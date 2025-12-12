@@ -172,7 +172,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </svg>
                 </div>
                 <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-                  <span className="text-sm sm:text-base text-gray-700 font-medium">Prix du fichier : </span>
+                  <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
                   <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
                   <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
                   <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>

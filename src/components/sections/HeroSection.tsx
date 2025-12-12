@@ -138,7 +138,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left mb-4">
+            <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-4">
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos de football</div>
@@ -150,6 +150,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">🎨</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">PNG + SVG</div>
               </div>
             </div>
             

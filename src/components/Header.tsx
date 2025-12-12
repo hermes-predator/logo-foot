@@ -148,8 +148,6 @@ const Header = () => {
               <span className="text-sm">Blog</span>
             </Link>
             
-            <FAQDialog />
-            
             <Dialog>
               <DialogTrigger className="flex items-center gap-1.5 px-2.5 py-1.5 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md transition-all">
                 <MessageCircle className="w-3.5 h-3.5" />
@@ -167,6 +165,8 @@ const Header = () => {
                 </div>
               </DialogContent>
             </Dialog>
+            
+            <FAQDialog />
           </div>
         )}
       </nav>

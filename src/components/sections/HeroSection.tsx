@@ -145,17 +145,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Carrés visuels des bénéfices */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
-              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
-                <div className="text-xl sm:text-2xl font-bold text-white mb-1">8 800</div>
-                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Logos football</div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos football</div>
               </div>
-              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
-                <div className="text-xl sm:text-2xl font-bold text-white mb-1">📁</div>
-                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Classés par pays</div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Classés par pays</div>
               </div>
-              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
-                <div className="text-xl sm:text-2xl font-bold text-white mb-1">⚡️</div>
-                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Livraison instantanée</div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
               </div>
             </div>
             

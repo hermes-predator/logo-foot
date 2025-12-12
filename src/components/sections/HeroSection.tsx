@@ -287,7 +287,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               alt="SumUp - Paiement Sécurisé" 
               className="h-4"
             />
-            <span className="font-medium whitespace-nowrap">Paiement Sécurisé SumUp</span>
+            <span className="font-medium whitespace-nowrap">Paiement Sécurisé via SumUp</span>
           </div>
 
           {/* Point de séparation */}
@@ -300,7 +300,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               alt="Google Drive" 
               className="h-4"
             />
-            <span className="font-medium whitespace-nowrap">Stockable sur Google Drive</span>
+            <span className="font-medium whitespace-nowrap">Fichier stockable sur votre Google Drive</span>
           </div>
 
           {/* Point de séparation */}

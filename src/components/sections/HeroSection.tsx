@@ -103,7 +103,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
               <br />
               <span className="underline decoration-2 decoration-gray-800 underline-offset-4">
-                en un fichier
+                en un fichier complet
               </span>
               {' 📁'}
             </h1>

@@ -155,7 +155,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={6} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-sm sm:text-base text-gray-700 font-medium">Logos uniformes et classés par pays</span>
+                <span className="text-sm sm:text-base text-gray-700 font-medium">Logos uniformes et classés</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">

@@ -7,6 +7,7 @@ import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
 import JudgeMeBadge from '@/components/blog/JudgeMeBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
+import trustpilotLogo from '@/assets/trustpilot-logo.png';
 
 interface HeroSectionProps {
   onScrollToPayment: () => void;
@@ -306,17 +307,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Point de séparation */}
           <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
 
-          {/* Note Judge.me avec logo et étoiles */}
+          {/* Note TrustPilot avec logo et étoiles */}
           <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] min-w-[200px] h-12 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
             <img 
-              src="/lovable-uploads/fa482252-63e9-474f-8ef0-f601a343d074.png" 
-              alt="Judge.me" 
+              src={trustpilotLogo} 
+              alt="TrustPilot" 
               className="h-4"
             />
             <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" />)}
+              {[...Array(5)].map((_, i) => (
+                <div key={i} className="w-4 h-4 bg-[#00b67a] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-2.5 h-2.5 text-white fill-current">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </div>
+              ))}
             </div>
-            <span className="font-bold text-gray-700">4.9/5</span>
+            <span className="font-bold text-gray-700">4.8/5</span>
             <span className="text-sm text-gray-500">(1034 avis)</span>
           </div>
         </div>

@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Star, ExternalLink, UserRound, Quote, CircleCheck } from 'lucide-react';
+import { Star, UserRound, Quote, CircleCheck } from 'lucide-react';
+import TrustPilotBadge from './TrustPilotBadge';
 import {
   Carousel,
   CarouselContent,
@@ -322,42 +323,7 @@ const Testimonials = () => {
         </Carousel>
 
         <div className="flex items-center justify-center mt-8 mb-8 md:mb-0">
-          <a 
-            href="https://judge.me" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white px-5 py-3 rounded-sm border border-gray-100 hover:border-gray-200 transition-all duration-300 group relative overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full group-hover:translate-x-full" />
-            
-            <img 
-              src="/lovable-uploads/0e31da73-efe5-4f8a-9edc-581fa5d23995.png" 
-              alt="Judge.me Reviews" 
-              className="h-7 relative z-10" 
-              loading="lazy"
-            />
-            <div className="flex flex-col relative z-10">
-              <span className="text-sm font-medium text-gray-500 tracking-wide">
-                Avis vérifiés basés sur 1034 avis
-              </span>
-              <div className="flex items-center gap-2">
-                <div className="flex" aria-label={`Note moyenne: ${formattedAvgRating} sur 5`}>
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 drop-shadow-sm" aria-hidden="true" />
-                </div>
-                <span className="text-base font-bold text-gray-700 bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
-                  {formattedAvgRating}/5
-                </span>
-              </div>
-            </div>
-            <ExternalLink 
-              className="w-5 h-5 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10" 
-              aria-hidden="true"
-            />
-          </a>
+          <TrustPilotBadge reviewCount={1034} rating={4.8} />
         </div>
       </div>
     </section>

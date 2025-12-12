@@ -136,13 +136,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </h2>
             </div>
             
-            {/* 3. Bloc prix - Impact immédiat */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
-              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
-              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
-              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
-            </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left mb-4">
@@ -206,8 +199,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
             
+            {/* Bloc prix */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mt-6 sm:mt-8 md:mt-10 mb-2">
+              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
+              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
+              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
+            </div>
+
             {/* Pastille d'urgence - Achats récents */}
-            <div className="mt-6 sm:mt-8 md:mt-12 flex justify-start ml-2">
+            <div className="flex justify-start ml-2">
               <div className="inline-flex items-center gap-2 sm:gap-3 text-gray-600 text-sm font-medium">
                 <div className="relative">
                   {/* Point vert principal */}

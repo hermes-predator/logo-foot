@@ -271,7 +271,7 @@ const Testimonials = () => {
       />
 
       <div className="w-full px-4 sm:px-2 relative">
-        <h2 className="text-xl font-bold text-gray-900 text-center mb-6">Avis concernant notre service</h2>
+        <h2 className="text-xl font-bold text-gray-900 text-center mb-6">Avis collectés concernant notre service</h2>
         <Carousel
           opts={{
             align: "start",

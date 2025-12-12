@@ -104,8 +104,8 @@ export default {
 					'50%': { transform: 'translateY(-25%)' }
 				},
 				'glow': {
-					'0%': { filter: 'brightness(100%)' },
-					'100%': { filter: 'brightness(150%) drop-shadow(0 0 3px rgba(255, 255, 255, 0.6))' }
+					'0%, 100%': { boxShadow: '0 2px 8px 0 rgba(0,0,0,0.25)' },
+					'50%': { boxShadow: '0 4px 20px 0 rgba(0,0,0,0.4), 0 0 15px rgba(255,255,255,0.1)' }
 				},
 				'ping': {
 					'75%, 100%': {

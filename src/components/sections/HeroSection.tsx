@@ -212,12 +212,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <span className="flex items-center justify-center gap-2">
                   <Download className="w-5 h-5" />
-                  <span className="font-bold">Télécharger avec</span>
-                  <img 
-                    src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
-                    alt="SumUp" 
-                    className="h-5 brightness-0 invert"
-                  />
+                  <span className="font-bold">Télécharger maintenant</span>
                 </span>
               </Button>
             </div>

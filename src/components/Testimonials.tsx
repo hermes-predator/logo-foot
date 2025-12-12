@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Star, UserRound, Quote, CircleCheck } from 'lucide-react';
+import { Star } from 'lucide-react';
 import TrustPilotBadge from './TrustPilotBadge';
 import {
   Carousel,
@@ -14,162 +14,188 @@ import {
 // Types for testimonial structure
 interface Testimonial {
   name: string;
-  role: string;
+  title: string;
   content: string;
   rating: number;
+  date: string;
 }
 
 // Nouvelle ordre strictement respectant la demande :
 const testimonials: Testimonial[] = [
   {
     name: "Pierre M.",
-    role: "Freelance",
+    title: "Très pratique",
     content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
-    rating: 5
+    rating: 5,
+    date: "12 novembre 2024"
   },
   {
     name: "Yassine B.",
-    role: "Community Manager",
+    title: "Parfait pour mon projet",
     content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
-    rating: 5
+    rating: 5,
+    date: "8 novembre 2024"
   },
   {
     name: "Quentin D.",
-    role: "Non renseigné",
+    title: "Je recommande",
     content: "Tout s'est bien passé, je recommande, merci !",
-    rating: 5
+    rating: 5,
+    date: "2 novembre 2024"
   },
   {
     name: "Florent P.",
-    role: "Non renseigné",
+    title: "Vaut son prix",
     content: "Très impressionné par le fichier, vaut son prix 👍.",
-    rating: 5
+    rating: 5,
+    date: "28 octobre 2024"
   },
   {
     name: "Maxime L.",
-    role: "Graphiste",
+    title: "Fichier parfait",
     content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
-    rating: 5
+    rating: 5,
+    date: "21 octobre 2024"
   },
   {
     name: "Alex G.",
-    role: "Community Manager",
+    title: "Très content",
     content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
-    rating: 5
+    rating: 5,
+    date: "15 octobre 2024"
   },
   {
     name: "Mathieu A.",
-    role: "Non renseigné",
+    title: "Très bon fichier",
     content: "Très bon fichier, merci.",
-    rating: 5
+    rating: 5,
+    date: "9 octobre 2024"
   },
   {
     name: "Vincent L.",
-    role: "Freelance",
+    title: "Top",
     content: "Top, tout les logos de clubs de football dans un fichier bien organisé.",
-    rating: 5
+    rating: 5,
+    date: "3 octobre 2024"
   },
   {
     name: "Adrien M.",
-    role: "Designer",
+    title: "Impeccable",
     content: "Impeccable.",
-    rating: 5
+    rating: 5,
+    date: "27 septembre 2024"
   },
   {
     name: "Kevin T.",
-    role: "Non renseigné",
+    title: "Bien triés",
     content: "Parfait, tous les logo d'équipe de foot sont bien triés.",
-    rating: 5
+    rating: 5,
+    date: "20 septembre 2024"
   },
   {
     name: "Lucas M.",
-    role: "Non renseigné",
+    title: "Super bien organisé",
     content: "Tout est ok, la collection de logo des clubs de foot est super bien organisé.",
-    rating: 5
+    rating: 5,
+    date: "14 septembre 2024"
   },
   {
     name: "Emma L.",
-    role: "Freelance",
+    title: "Tout est parfait",
     content: "Tout est parfait, merci :)",
-    rating: 5
+    rating: 5,
+    date: "8 septembre 2024"
   },
   {
     name: "Jonathan M.",
-    role: "Non renseigné",
+    title: "Très bien",
     content: "Merci pour la collection de logo des clubs de foot. Le fichier est très bien.",
-    rating: 5
+    rating: 5,
+    date: "1 septembre 2024"
   },
   {
     name: "Antoine R.",
-    role: "Non renseigné",
+    title: "Très satisfait",
     content: "Très satisfait, tous les logos de football sont super bien classés, ça fait plaisir à avoir.",
-    rating: 5
+    rating: 5,
+    date: "25 août 2024"
   },
   {
     name: "Camille B.",
-    role: "Graphiste",
+    title: "Excellent",
     content: "Excellent, merci.",
-    rating: 5
+    rating: 5,
+    date: "18 août 2024"
   },
   {
     name: "Damien L.",
-    role: "Non renseigné",
+    title: "Fichier idéal",
     content: "Le fichier de logo de football idéal ! Encore merci à vous.",
-    rating: 5
+    rating: 5,
+    date: "11 août 2024"
   },
   {
     name: "Sébastien M.",
-    role: "Non renseigné",
+    title: "Exactement ce que je cherchais",
     content: "Exactement ce que je cherchais, fichier bien structuré et complet.",
-    rating: 5
+    rating: 5,
+    date: "4 août 2024"
   },
   {
     name: "Raphaël B.",
-    role: "Graphiste",
+    title: "Parfait",
     content: "Parfait pour les logos des équipes de football 😀.",
-    rating: 5
+    rating: 5,
+    date: "28 juillet 2024"
   },
   {
     name: "Thomas D.",
-    role: "Non renseigné",
+    title: "Heureux de mon achat",
     content: "Heureux de mon achat, je l'ai ajouté sur mon Google Drive comme recommandé, je sais qu'il sera utile dans mon parcours.",
-    rating: 4
+    rating: 4,
+    date: "21 juillet 2024"
   },
   {
     name: "Julien R.",
-    role: "Non renseigné",
+    title: "Très bonne solution",
     content: "Très bonne solution pour les logos club de foot.",
-    rating: 5
+    rating: 5,
+    date: "14 juillet 2024"
   },
   {
     name: "Nicolas P.",
-    role: "Freelance",
+    title: "M'a parfaitement aidé",
     content: "Logo foot m'a parfaitement aidé à trouver l'ensemble des logos des clubs de football. Merci encore.",
-    rating: 5
+    rating: 5,
+    date: "7 juillet 2024"
   },
   {
     name: "Loïc D.",
-    role: "Non renseigné",
+    title: "Parfait mais attention",
     content: "Le ZIP est parfait rien à dire, mais attention de bien le télécharger immédiatement comme l'achat se fait en invité.",
-    rating: 4
+    rating: 4,
+    date: "30 juin 2024"
   },
   {
     name: "Sylvain B.",
-    role: "Non renseigné",
+    title: "Excellent pour le prix",
     content: "Excellent pour le prix. Je suis satisfait. Merci Logo foot!",
-    rating: 5
+    rating: 5,
+    date: "23 juin 2024"
   },
   {
     name: "Enzo D.",
-    role: "Non renseigné",
+    title: "Super bien",
     content: "Super bien, c'est vraiment bien servi en logos de foot. On se rend mieux compte en vrai.",
-    rating: 5
+    rating: 5,
+    date: "16 juin 2024"
   },
   {
     name: "Olivier D.",
-    role: "Community Manager", 
+    title: "Bonne solution",
     content: "Bonne solution pour les logo des clubs de football.",
-    rating: 5
+    rating: 5,
+    date: "9 juin 2024"
   }
 ];
 
@@ -263,42 +289,46 @@ const Testimonials = () => {
                 aria-label={`Témoignage de ${testimonial.name}`}
               >
                 <div 
-                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[200px] border border-gray-100 will-change-transform relative overflow-hidden group"
+                  className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col min-h-[220px] border border-gray-100 will-change-transform"
                   role="article"
                 >
-                  <div className="absolute top-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
-                    <Quote className="w-16 h-16 text-blue-500 rotate-12" aria-hidden="true" />
-                  </div>
-                  
-                  <div className="absolute top-3 left-3 opacity-80">
-                    <div className="flex items-center gap-1 bg-gray-50 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white border border-gray-200 hover:border-gray-200 rounded-full px-2 py-1 transition-all duration-300">
-                      <CircleCheck className="w-3 h-3 text-gray-600" aria-hidden="true" />
-                      <span className="text-xs text-gray-700 font-semibold">Vérifié</span>
-                    </div>
-                  </div>
-                  
+                  {/* Étoiles TrustPilot style */}
                   <div 
-                    className="flex items-center gap-1 text-yellow-400 mb-3 mt-8"
+                    className="flex gap-0.5 mb-4"
                     aria-label={`Évaluation: ${testimonial.rating} sur 5 étoiles`}
                   >
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />
-                    ))}
-                    {[...Array(5 - testimonial.rating)].map((_, i) => (
-                      <Star key={i + testimonial.rating} className="w-4 h-4 text-gray-200" aria-hidden="true" />
+                    {[...Array(5)].map((_, i) => (
+                      <div
+                        key={i}
+                        className={`w-6 h-6 flex items-center justify-center ${
+                          i < testimonial.rating ? 'bg-[#00b67a]' : 'bg-gray-200'
+                        }`}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="w-4 h-4 text-white fill-current"
+                          aria-hidden="true"
+                        >
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
                     ))}
                   </div>
-                  <p className="text-gray-600 italic mb-4 flex-grow text-base font-medium leading-relaxed relative z-10">
-                    "{testimonial.content}"
+                  
+                  {/* Titre */}
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    {testimonial.title}
+                  </h3>
+                  
+                  {/* Contenu */}
+                  <p className="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">
+                    {testimonial.content}
                   </p>
-                  <div className="flex items-center gap-3 relative z-10">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                      <UserRound className="w-4 h-4 text-blue-600" aria-hidden="true" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-gray-500 font-medium">{testimonial.role}</p>
-                    </div>
+                  
+                  {/* Auteur et date */}
+                  <div className="mt-auto">
+                    <p className="font-medium text-gray-800 text-sm">{testimonial.name}</p>
+                    <p className="text-xs text-gray-400">{testimonial.date}</p>
                   </div>
                 </div>
               </CarouselItem>

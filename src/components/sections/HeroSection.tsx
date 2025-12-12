@@ -244,7 +244,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Container fusionné : Vidéo + Judge.me */}
             <div className="md:transform md:-translate-y-14">
               {/* Vidéo preview du contenu */}
-              <div className="relative bg-white/70 backdrop-blur-lg rounded-t-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 border-b-0 before:absolute before:inset-0 before:rounded-t-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">
+              <div className="relative bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">
                 <video 
                   className="w-full h-full object-cover"
                   autoPlay 
@@ -265,7 +265,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               
               {/* Bloc des avis clients avec container de confiance */}
-              <div className="backdrop-blur-lg rounded-b-xl px-3 pt-4 pb-3 text-center max-w-md mx-auto shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 border-t-0 before:absolute before:inset-0 before:rounded-b-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60 mt-3">
+              <div className="backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 text-center max-w-md mx-auto shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60 mt-3">
                 {/* Animation des témoignages */}
                 <div className="leading-tight">
                   <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

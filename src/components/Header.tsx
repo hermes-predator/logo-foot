@@ -78,7 +78,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <Home className={`w-4 h-4 ${currentPath === '/' ? 'text-[#00b67a]' : ''}`} />
+                    <Home className="w-4 h-4" />
                     <span>Accueil</span>
                   </Link>
                   <Link 
@@ -89,7 +89,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <BookOpen className={`w-4 h-4 ${currentPath.startsWith('/blog') ? 'text-[#00b67a]' : ''}`} />
+                    <BookOpen className="w-4 h-4" />
                     <span>Blog</span>
                   </Link>
                   
@@ -133,7 +133,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white hover:bg-white/5'
               }`}
             >
-              <Home className={`w-3.5 h-3.5 ${currentPath === '/' ? 'text-[#00b67a]' : ''}`} />
+              <Home className="w-3.5 h-3.5" />
               <span className="text-sm">Accueil</span>
             </Link>
             <Link 
@@ -144,7 +144,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white hover:bg-white/5'
               }`}
             >
-              <BookOpen className={`w-3.5 h-3.5 ${currentPath.startsWith('/blog') ? 'text-[#00b67a]' : ''}`} />
+              <BookOpen className="w-3.5 h-3.5" />
               <span className="text-sm">Blog</span>
             </Link>
             

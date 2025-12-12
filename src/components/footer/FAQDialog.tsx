@@ -33,8 +33,8 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   ) : (
     <span className={`flex items-center transition-all ${
       isMobile 
-        ? 'gap-2 px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
-        : 'gap-1.5 px-2.5 py-1.5 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md'
+        ? 'gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md text-left w-full' 
+        : 'gap-1.5 px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-white/5 rounded-md'
     }`}>
       <HelpCircle className={isMobile ? "w-4 h-4" : "w-3.5 h-3.5"} />
       <span className={isMobile ? "" : "text-sm"}>FAQ</span>

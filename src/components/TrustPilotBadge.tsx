@@ -49,13 +49,24 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
         
         {/* Étoiles TrustPilot + Note */}
         <div className="flex items-center gap-2">
-          {/* Image des étoiles TrustPilot */}
-          <img 
-            src="/images/trustpilot-stars.png" 
-            alt="TrustPilot 5 étoiles" 
-            className="h-5 w-auto"
-            loading="lazy"
-          />
+          {/* 5 étoiles TrustPilot style */}
+          <div className="flex gap-0.5">
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={i}
+                className={`w-5 h-5 flex items-center justify-center ${
+                  i < Math.floor(rating) ? 'bg-[#00b67a]' : 'bg-gray-200'
+                }`}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-3.5 h-3.5 text-white fill-current"
+                >
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+            ))}
+          </div>
           
           {/* Texte Excellent + Note */}
           <span className="text-sm font-semibold text-gray-700">

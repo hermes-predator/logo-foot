@@ -96,7 +96,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Container avec fond clair pour le branding */}
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 leading-tight text-gray-900 text-left">
+            {/* 1. H1 - Accroche principale */}
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-gray-900 text-left">
               <span className="font-black">
                 Tous les logos des clubs de football
               </span>
@@ -107,25 +108,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {' 📁'}
             </h1>
 
-
-            {/* Carrés visuels des bénéfices */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos football</div>
-              </div>
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Classés par pays</div>
-              </div>
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
-              </div>
+            {/* 2. Bloc prix - Impact immédiat */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
+              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
+              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
+              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
             </div>
             
-            {/* Nom du fichier */}
-            <div className="text-left mt-6 mb-2">
+            {/* 3. Nom du fichier - Concrétise l'offre */}
+            <div className="text-left mb-4">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
@@ -149,13 +141,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 `}</style>
               </h2>
             </div>
-            
-            {/* Bloc prix au-dessus des boutons */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-3">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
-              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
-              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
-              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
+
+            {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left mb-4">
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos football</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Classés par pays</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
+              </div>
             </div>
             
             {/* Boutons déplacés dans la colonne de gauche */}

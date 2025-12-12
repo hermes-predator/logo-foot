@@ -110,7 +110,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             
             
             {/* Titre du produit déplacé ici */}
-            <div className="text-left mb-4">
+            <div className="text-left mb-2">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
@@ -133,6 +133,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   }
                 `}</style>
               </h2>
+            </div>
+            
+            {/* Bloc prix sous le nom du fichier */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
+              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
+              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
+              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
             </div>
             
             {/* Liste des bénéfices produits */}
@@ -160,19 +168,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-gray-700 font-medium">Livraison instantanée ⚡️</span>
-              </div>
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={6} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-                  <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
-                  <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
-                  <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
-                  <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
-                </div>
               </div>
             </div>
             

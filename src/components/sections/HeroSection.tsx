@@ -108,15 +108,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {' 📁'}
             </h1>
 
-            {/* 2. Bloc prix - Impact immédiat */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
-              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
-              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
-              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
-            </div>
-            
-            {/* 3. Nom du fichier - Concrétise l'offre */}
+            {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-4">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
@@ -140,6 +132,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   }
                 `}</style>
               </h2>
+            </div>
+            
+            {/* 3. Bloc prix - Impact immédiat */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
+              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
+              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
+              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
             </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}

@@ -260,7 +260,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </video>
                 <div className="absolute bottom-2 left-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center justify-between">
                   <span>Aperçu du fichier</span>
-                  <span className="text-[10px]">ZIP • 63 Mo • 8 774 éléments</span>
+                  <span className="text-[10px]">ZIP • 8 774 éléments</span>
                 </div>
               </div>
               

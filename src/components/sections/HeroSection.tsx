@@ -143,31 +143,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
             </div>
             
-            {/* Liste des bénéfices produits */}
-            <div className="space-y-2 sm:space-y-3 text-left">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={6} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-sm sm:text-base text-gray-700 font-medium">Fichier : <span className="font-bold">8 800 logos football</span></span>
+            {/* Carrés visuels des bénéfices */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-white mb-1">8 800</div>
+                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Logos football</div>
               </div>
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={6} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-sm sm:text-base text-gray-700 font-medium">Logos uniformes et classés</span>
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-white mb-1">📁</div>
+                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Classés par pays</div>
               </div>
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={6} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <span className="text-sm sm:text-base text-gray-700 font-medium">Livraison instantanée ⚡️</span>
+              <div className="bg-gray-900 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-white mb-1">⚡️</div>
+                <div className="text-[10px] sm:text-xs text-gray-300 font-medium">Livraison instantanée</div>
               </div>
             </div>
             

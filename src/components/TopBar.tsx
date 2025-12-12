@@ -28,7 +28,7 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="relative bg-[#f5f1eb] text-gray-800 py-1.5 px-4 text-center z-40 overflow-hidden">
+    <div className="relative bg-[#f5f1eb] text-gray-800 py-1.5 px-4 text-center z-40 overflow-hidden border-b border-gray-200/50">
       
       {/* Slider de messages */}
       <div className="relative z-10 h-5 flex items-center justify-center">

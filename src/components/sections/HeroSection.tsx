@@ -98,7 +98,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Titre principal - H1 */}
             {/* 1. H1 - Accroche principale */}
             <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-4 leading-tight text-gray-900 text-left">
-              <span className="font-black">
+              <span>
                 Tous les logos des clubs de football :
               </span>
               <br />

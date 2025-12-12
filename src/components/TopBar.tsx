@@ -28,9 +28,7 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 text-white py-1.5 px-4 text-center shadow-lg z-40 overflow-hidden">
-      {/* Effet de brillance animé */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[slide-in-right_3s_ease-in-out_infinite] opacity-50"></div>
+    <div className="relative bg-[#f5f1eb] text-gray-800 py-1.5 px-4 text-center z-40 overflow-hidden border-b border-gray-200/50">
       
       {/* Slider de messages */}
       <div className="relative z-10 h-5 flex items-center justify-center">

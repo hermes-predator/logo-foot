@@ -106,11 +106,26 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
               {' 📁'}
             </h1>
+
+
+            {/* Carrés visuels des bénéfices */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos football</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Classés par pays</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
+              </div>
+            </div>
             
-            
-            
-            {/* Titre du produit déplacé ici */}
-            <div className="text-left mb-2">
+            {/* Nom du fichier */}
+            <div className="text-left mt-6 mb-2">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
@@ -135,24 +150,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </h2>
             </div>
             
-            {/* Carrés visuels des bénéfices */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">8 800</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos football</div>
-              </div>
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Classés par pays</div>
-              </div>
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">⚡️</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Livraison instantanée</div>
-              </div>
-            </div>
-            
             {/* Bloc prix au-dessus des boutons */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mt-6 mb-3">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-3">
               <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
               <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
               <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>

@@ -135,14 +135,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </h2>
             </div>
             
-            {/* Bloc prix sous le nom du fichier */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mb-4">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
-              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
-              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
-              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
-            </div>
-            
             {/* Carrés visuels des bénéfices */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 text-left">
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
@@ -159,8 +151,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
             
+            {/* Bloc prix au-dessus des boutons */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-left mt-6 mb-3">
+              <span className="text-sm sm:text-base text-gray-700 font-medium">Valeur du fichier : </span>
+              <span className="text-gray-400 line-through text-base sm:text-lg">100€</span>
+              <span className="text-gray-900 font-bold text-base sm:text-lg">9€</span>
+              <span className="bg-black/70 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Meilleur prix</span>
+            </div>
+            
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-6">
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">

@@ -101,12 +101,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <span>
                 Tous les logos des clubs de football :
               </span>
-              <br />
-              <span className="underline decoration-2 decoration-gray-800 underline-offset-4">
-                un fichier rare à recevoir
-              </span>
-              {' 📁'}
             </h1>
+
+            {/* Prix block */}
+            <div className="text-left mb-2">
+              <div className="text-xs sm:text-sm text-gray-600 font-medium mb-1">Valeur du fichier :</div>
+              <div className="flex items-center gap-2">
+                <span className="text-lg sm:text-xl text-gray-400 line-through font-medium">100€</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-gray-900">9€</span>
+                <span className="bg-green-100 text-green-700 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full">Meilleur prix</span>
+              </div>
+            </div>
 
             <Separator className="my-4 bg-gray-200" />
 

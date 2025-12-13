@@ -71,7 +71,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
   
   return (
     <div className="flex items-center justify-center">
-      <div className={`relative flex flex-col items-center justify-center gap-0 rounded-2xl px-2 py-0.5 w-full max-w-md mx-auto min-h-[60px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
+      <div className={`relative flex flex-col items-center justify-center gap-0 rounded-2xl px-2 w-full max-w-md mx-auto h-[60px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
         
         {/* Étoiles TrustPilot style */}
         <div className={`flex gap-0.5 mb-0.5 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>

@@ -1,5 +1,5 @@
 
-import { BookOpen, Home, Menu, MessageCircle, FileText, Scroll, AlertTriangle, HelpCircle, ShoppingCart } from "lucide-react";
+import { BookOpen, Home, Menu, MessageCircle, FileText, Scroll, AlertTriangle, HelpCircle, Download } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -178,7 +178,7 @@ const Header = () => {
             variant="outline"
             className="flex items-center gap-2 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-4 py-2 rounded-md transition-all"
           >
-            <ShoppingCart className="w-4 h-4" />
+            <Download className="w-4 h-4" />
             <span>Télécharger</span>
           </Button>
         )}

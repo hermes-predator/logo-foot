@@ -128,7 +128,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   fill="currentColor"
                 />
                 <em 
-                  className="italic font-extrabold text-gray-900 inline-block text-lg sm:text-xl md:text-2xl lg:text-3xl break-all sm:whitespace-nowrap"
+                  className="italic font-extrabold text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"
                 >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </em>

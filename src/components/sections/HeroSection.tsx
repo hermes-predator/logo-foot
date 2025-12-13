@@ -208,16 +208,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
             
-            {/* Bloc prix */}
-            <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 text-left mt-4 sm:mt-6 mb-1 ml-2">
-              <span className="text-xs sm:text-sm text-gray-500 font-medium">Valeur du fichier : </span>
-              <span className="text-gray-400 line-through text-xs sm:text-sm">100€</span>
-              <span className="text-gray-700 font-bold text-xs sm:text-sm">9€</span>
-              <span className="bg-black/60 text-white text-[10px] px-2 py-0.5 rounded-full font-medium">Meilleur prix</span>
-            </div>
-
             {/* Pastille d'urgence - Achats récents */}
-            <div className="flex justify-start ml-2">
+            <div className="flex justify-start ml-2 mt-4 sm:mt-6">
               <div className="inline-flex items-center gap-2 sm:gap-3 text-gray-600 text-sm font-medium">
                 <div className="relative">
                   {/* Point vert principal */}

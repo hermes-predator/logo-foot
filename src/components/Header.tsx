@@ -175,7 +175,8 @@ const Header = () => {
         {!isMobile && (
           <Button
             onClick={() => window.dispatchEvent(new CustomEvent("open-payment-modal"))}
-            className="flex items-center gap-2 bg-[#00b67a] hover:bg-[#00a06a] text-white font-medium px-4 py-2 rounded-md transition-all"
+            variant="outline"
+            className="flex items-center gap-2 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-4 py-2 rounded-md transition-all"
           >
             <ShoppingCart className="w-4 h-4" />
             <span>Télécharger</span>

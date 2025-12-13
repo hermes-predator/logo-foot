@@ -8,9 +8,10 @@ import { useIsMobile } from "@/hooks/use-mobile";
 interface FAQDialogProps {
   asLink?: boolean;
   onContactClose?: () => void;
+  variant?: 'header' | 'footer';
 }
 
-const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
+const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDialogProps) => {
   const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
   
@@ -27,17 +28,25 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
       setIsOpen(true);
     }
   };
+
+  const getStyles = () => {
+    if (variant === 'header') {
+      return isMobile 
+        ? 'gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md text-left w-full' 
+        : 'gap-1.5 px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-white/5 rounded-md';
+    }
+    // footer variant
+    return isMobile 
+      ? 'gap-2 px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
+      : 'gap-1.5 hover:text-gray-900';
+  };
   
   const triggerContent = asLink ? (
     <span className="text-gray-700 cursor-pointer font-bold">FAQ</span>
   ) : (
-    <span className={`flex items-center transition-colors ${
-      isMobile 
-        ? 'gap-2 px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
-        : 'gap-1.5 hover:text-gray-900'
-    }`}>
+    <span className={`flex items-center transition-colors ${getStyles()}`}>
       <HelpCircle className="w-4 h-4" />
-      <span>FAQ</span>
+      <span className={variant === 'header' && !isMobile ? 'text-sm' : ''}>FAQ</span>
     </span>
   );
   

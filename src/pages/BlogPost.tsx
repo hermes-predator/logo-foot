@@ -58,8 +58,12 @@ const BlogPost: React.FC = () => {
     return <Navigate to="/404" replace />;
   }
 
-  // Note: Les redirections sont maintenant gérées côté serveur (.htaccess)
-  // pour éviter les problèmes d'indexation avec Google Search Console
+  // Rediriger vers l'URL canonique si l'URL actuelle n'est pas correcte
+  const canonicalPath = generatePostUrl(post.id, post.title);
+  const currentPath = `/blog/${slug}`;
+  if (currentPath !== canonicalPath) {
+    return <Navigate to={canonicalPath} replace />;
+  }
 
   // Calculer le temps de lecture estimé
   const wordsPerMinute = 200;

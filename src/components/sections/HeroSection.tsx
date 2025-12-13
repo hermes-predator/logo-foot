@@ -106,7 +106,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Prix block */}
             <div className="text-left mb-1">
               <div className="text-[10px] sm:text-xs text-gray-600 font-medium mb-0.5 flex items-center gap-1.5">
-                Valeur réelle du fichier : <span className="text-sm sm:text-base text-gray-400 line-through">100€</span>
+                Valeur réelle du fichier : <span className="text-base sm:text-lg text-gray-400 line-through">100€</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="text-xl sm:text-2xl font-extrabold text-gray-900">9€</span>

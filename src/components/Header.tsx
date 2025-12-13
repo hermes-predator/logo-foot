@@ -124,7 +124,7 @@ const Header = () => {
             )}
           </>
         ) : (
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6">
             <Link 
               to="/" 
               className={`flex items-center gap-1.5 transition-all relative px-2.5 py-1.5 rounded-md ${

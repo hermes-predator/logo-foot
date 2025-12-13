@@ -3,18 +3,6 @@ import trustpilotLogo from '@/assets/trustpilot-logo.png';
 
 const testimonials = [
   {
-    name: "Pierre M.",
-    content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !",
-    rating: 5,
-    initials: "PM"
-  },
-  {
-    name: "Yassine B.",
-    content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.",
-    rating: 5,
-    initials: "YB"
-  },
-  {
     name: "Quentin D.",
     content: "Tout s'est bien passé, je recommande, merci !",
     rating: 5,
@@ -27,22 +15,16 @@ const testimonials = [
     initials: "FP"
   },
   {
-    name: "Maxime L.",
-    content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++",
-    rating: 5,
-    initials: "ML"
-  },
-  {
-    name: "Alex G.",
-    content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci",
-    rating: 5,
-    initials: "AG"
-  },
-  {
     name: "Emma L.",
     content: "Tout est parfait, merci :)",
     rating: 5,
     initials: "EL"
+  },
+  {
+    name: "Yassine B.",
+    content: "Ça m'a beaucoup aidé pour un projet, merci.",
+    rating: 5,
+    initials: "YB"
   }
 ];
 

@@ -31,13 +31,13 @@ const FAQDialog = ({ asLink = false, onContactClose }: FAQDialogProps) => {
   const triggerContent = asLink ? (
     <span className="text-gray-700 cursor-pointer font-bold">FAQ</span>
   ) : (
-    <span className={`flex items-center transition-all ${
+    <span className={`flex items-center transition-colors ${
       isMobile 
-        ? 'gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md text-left w-full' 
-        : 'gap-1.5 px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-white/5 rounded-md'
+        ? 'gap-2 px-4 py-3 text-gray-700 hover:text-black hover:bg-gray-50 rounded-md text-left w-full' 
+        : 'gap-1.5 hover:text-gray-900'
     }`}>
-      <HelpCircle className={isMobile ? "w-4 h-4" : "w-3.5 h-3.5"} />
-      <span className={isMobile ? "" : "text-sm"}>FAQ</span>
+      <HelpCircle className="w-4 h-4" />
+      <span>FAQ</span>
     </span>
   );
   

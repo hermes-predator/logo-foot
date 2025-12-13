@@ -211,7 +211,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-3 text-[10px] sm:text-xs text-gray-500 text-left">
               <div className="font-medium text-gray-600">Bon à savoir :</div>
-              <div><span className="text-[8px]">*</span>Le fichier est délivré immédiatement et en toute sécurité</div>
+              <div>(*) Le fichier est délivré immédiatement et en toute sécurité</div>
             </div>
             
             {/* Pastille d'urgence - Achats récents */}

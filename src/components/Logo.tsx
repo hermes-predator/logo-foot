@@ -6,7 +6,7 @@ const Logo = () => {
     <img 
       src={logoFoot} 
       alt="Logo-foot.com - Logos de clubs de football" 
-      className="h-7 w-auto"
+      className="h-8 w-auto"
     />
   );
 };

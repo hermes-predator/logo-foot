@@ -118,7 +118,7 @@ const Header = () => {
                   <CGVDialog />
                   <MentionsLegalesDialog />
                   <DisclaimerDialog />
-                  <FAQDialog />
+                  <FAQDialog variant="header" />
                 </div>
               </div>
             )}
@@ -166,7 +166,7 @@ const Header = () => {
               </DialogContent>
             </Dialog>
             
-            <FAQDialog />
+            <FAQDialog variant="header" />
           </div>
         )}
       </nav>

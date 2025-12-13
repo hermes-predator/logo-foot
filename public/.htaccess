@@ -10,8 +10,17 @@ RewriteRule ^(.*)$ https://www.logo-foot.com/$1 [R=301,L]
 RewriteRule ^en/?$ https://www.logo-foot.com/ [R=301,L]
 RewriteRule ^ar/?$ https://www.logo-foot.com/ [R=301,L]
 
-# Proxy du sitemap vers l'edge function Supabase (pas de redirection visible)
+# Proxy du sitemap vers l'edge function Supabase
 RewriteRule ^sitemap\.xml$ https://awhmodyqxysnqkuczgss.supabase.co/functions/v1/sitemap [P,L]
+
+# ============================================
+# REDIRECTIONS SEO - URLs blog non-canoniques
+# ============================================
+
+# Rediriger /blog/ID (sans slug) vers /blog/ID-article
+# Note: La redirection finale vers le bon slug se fait côté React
+RewriteCond %{REQUEST_URI} ^/blog/([0-9]+)/?$
+RewriteRule ^blog/([0-9]+)/?$ /blog/$1-article [R=301,L]
 
 # Bloquer les paramètres d'URL inutiles (évite le contenu dupliqué)
 RewriteCond %{QUERY_STRING} !^$

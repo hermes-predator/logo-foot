@@ -211,7 +211,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-3 text-[10px] sm:text-xs text-gray-500 text-left">
               <div className="font-medium text-gray-600">Bon à savoir :</div>
-              <div>(*) Le fichier est délivré immédiatement et en toute sécurité</div>
+              <div>* Le fichier est délivré immédiatement et en toute sécurité</div>
               <div>* En cas de difficulté avec votre téléchargement : contact@logo-foot.com</div>
             </div>
             

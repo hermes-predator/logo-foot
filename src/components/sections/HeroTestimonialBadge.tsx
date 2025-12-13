@@ -35,14 +35,16 @@ interface HeroTestimonialBadgeProps {
 const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
   currentIndex
 }) => {
+  const safeIndex = currentIndex % testimonials.length;
   const [isVisible, setIsVisible] = React.useState(true);
-  const [displayIndex, setDisplayIndex] = React.useState(currentIndex);
+  const [displayIndex, setDisplayIndex] = React.useState(safeIndex);
 
   React.useEffect(() => {
-    if (currentIndex !== displayIndex) {
+    const newSafeIndex = currentIndex % testimonials.length;
+    if (newSafeIndex !== displayIndex) {
       setIsVisible(false);
       const timer = setTimeout(() => {
-        setDisplayIndex(currentIndex);
+        setDisplayIndex(newSafeIndex);
         setIsVisible(true);
       }, 150);
       return () => clearTimeout(timer);

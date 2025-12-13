@@ -9,6 +9,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
+import Sitemap from './pages/Sitemap';
 import NotFound from './pages/NotFound';
 import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
@@ -42,6 +43,8 @@ const App = () => {
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/payment" element={<Payment />} />
                 <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
+                <Route path="/sitemap" element={<Sitemap />} />
+                <Route path="/sitemap.xml" element={<Sitemap />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Router>

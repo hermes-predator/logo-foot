@@ -94,7 +94,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
         </div>
 
         {/* Commentaire */}
-        <p className={`text-xs text-gray-600 max-w-[400px] font-medium leading-tight text-center line-clamp-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <p className={`text-[11px] text-gray-600 max-w-[400px] font-medium leading-tight text-center line-clamp-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           "{currentTestimonial.content}"
         </p>
 

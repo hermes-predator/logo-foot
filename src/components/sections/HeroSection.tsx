@@ -194,7 +194,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aria-label="Commande sécurisée via SumUp"
               >
                 <span className="flex items-center justify-center gap-2">
-                  <ShoppingCart className="w-5 h-5 group-hover:animate-bounce" />
+                  <ShoppingCart className="w-5 h-5 animate-[bounce_2s_ease-in-out_infinite]" />
                   <span className="font-bold">Télécharger maintenant</span>
                   <svg 
                     className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 

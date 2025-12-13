@@ -153,12 +153,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Pays de football</div>
               </div>
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
-                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">🎨</div>
-                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos uniformes</div>
-              </div>
-              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Fichier structuré</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
+                <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">🎨</div>
+                <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos uniformes</div>
               </div>
             </div>
             

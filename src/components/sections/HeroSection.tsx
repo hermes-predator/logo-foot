@@ -209,11 +209,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Texte de réassurance sous les boutons */}
-            <div className="flex flex-wrap items-center justify-start gap-x-4 gap-y-1 mt-3 text-[10px] sm:text-xs text-gray-500">
-              <span className="font-medium text-gray-600">Bon à savoir :</span>
-              <span>✓ Paiement sécurisé</span>
-              <span>✓ Accès instantané</span>
-              <span>✓ Téléchargement illimité</span>
+            <div className="mt-3 text-[10px] sm:text-xs text-gray-500">
+              <span className="font-medium text-gray-600">Bon à savoir :</span> Le fichier est délivré immédiatement et en toute sécurité
             </div>
             
             {/* Pastille d'urgence - Achats récents */}

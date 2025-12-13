@@ -15,24 +15,24 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
       href="https://www.trustpilot.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-4 px-5 py-3 rounded-lg hover:bg-gray-50/50 transition-all duration-300 group"
+      className="inline-flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-50/50 transition-all duration-300 group"
     >
       {/* Logo TrustPilot */}
       <img 
         src={trustpilotLogo} 
         alt="TrustPilot" 
-        className="h-5 w-auto"
+        className="h-4 w-auto"
       />
 
       {/* Contenu principal */}
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-0.5">
         {/* Nombre de clients */}
-        <span className="text-lg font-bold text-gray-800">
+        <span className="text-base font-bold text-gray-800">
           {reviewCount.toLocaleString('fr-FR')}+ clients satisfaits
         </span>
         
         {/* Étoiles TrustPilot + Note */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           {/* 5 étoiles TrustPilot style */}
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => {
@@ -42,7 +42,7 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
               return (
                 <div
                   key={i}
-                  className="w-5 h-5 flex items-center justify-center relative overflow-hidden"
+                  className="w-4 h-4 flex items-center justify-center relative overflow-hidden"
                 >
                   {/* Fond gris */}
                   <div className="absolute inset-0 bg-gray-200" />

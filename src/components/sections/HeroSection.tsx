@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, Star, Users, Clock } from "lucide-react";
+import { Folder, ShoppingCart, Star, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -194,7 +194,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aria-label="Commande sécurisée via SumUp"
               >
                 <span className="flex items-center justify-center gap-2">
-                  <Download className="w-5 h-5 group-hover:animate-bounce" />
+                  <ShoppingCart className="w-5 h-5 group-hover:animate-bounce" />
                   <span className="font-bold">Télécharger maintenant</span>
                   <svg 
                     className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 

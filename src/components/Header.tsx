@@ -178,7 +178,7 @@ const Header = () => {
             className="flex items-center gap-2 bg-[#00b67a] hover:bg-[#00a06a] text-white font-medium px-4 py-2 rounded-md transition-all"
           >
             <ShoppingCart className="w-4 h-4" />
-            <span>Acheter</span>
+            <span>Télécharger</span>
           </Button>
         )}
       </nav>

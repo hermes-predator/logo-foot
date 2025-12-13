@@ -71,7 +71,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
   
   return (
     <div className="flex items-center justify-center">
-      <div className={`relative flex flex-col items-center justify-center gap-0.5 rounded-2xl px-4 py-1.5 w-full max-w-md mx-auto h-[80px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
+      <div className={`relative flex flex-col items-center justify-center gap-0 rounded-2xl px-2 py-1 w-full max-w-md mx-auto min-h-[68px] transform -translate-y-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
         
         {/* Étoiles TrustPilot style */}
         <div className={`flex gap-0.5 mb-1 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
@@ -94,7 +94,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = ({
         </div>
 
         {/* Commentaire */}
-        <p className={`text-[11px] text-gray-600 max-w-[400px] font-medium leading-tight text-center line-clamp-2 transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <p className={`text-[11px] text-gray-600 max-w-[400px] font-medium leading-tight text-center transition-all duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           "{currentTestimonial.content}"
         </p>
 

@@ -110,7 +110,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Meilleure offre</span>
                 <span className="w-px h-5 bg-gray-300"></span>
                 <span className="text-xl sm:text-2xl font-extrabold text-red-500 line-through">100€</span>
-                <span className="text-[10px] sm:text-xs text-gray-500 font-medium">(Valeur réelle)</span>
+                <span className="bg-red-100 text-red-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Valeur réelle</span>
               </div>
             </div>
 

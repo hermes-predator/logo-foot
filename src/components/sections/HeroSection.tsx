@@ -124,7 +124,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   animation: 'subtlePulse 3s ease-in-out infinite'
                 }}
               >
-                <FolderArchive 
+                <Folder 
                   className="w-7 h-7 sm:w-8 sm:h-8 text-gray-900 flex-shrink-0" 
                   strokeWidth={1.5}
                 />

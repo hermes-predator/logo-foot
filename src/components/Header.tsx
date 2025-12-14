@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`w-full py-2 sm:py-3 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full py-1.5 sm:py-2 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
           ? 'bg-[#191919] shadow-lg border-gray-800' 
           : 'bg-[#191919] border-gray-800'
@@ -62,10 +62,10 @@ const Header = () => {
           <>
             <button 
               aria-label="Menu" 
-              className="p-1.5 rounded-md text-white hover:bg-white/10 transition-colors"
+              className="p-1 rounded-md text-white hover:bg-white/10 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-4 h-4" />
             </button>
             
             {mobileMenuOpen && (
@@ -125,34 +125,34 @@ const Header = () => {
             )}
           </>
         ) : (
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-5">
             <Link 
               to="/" 
-              className={`flex items-center gap-1.5 transition-all relative px-2.5 py-1.5 rounded-md ${
+              className={`flex items-center gap-1 transition-all relative px-2 py-1 rounded-md ${
                 currentPath === '/' 
                   ? 'font-medium bg-white/10 text-white' 
                   : 'text-gray-300 hover:text-white hover:bg-white/5'
               }`}
             >
-              <Home className="w-3.5 h-3.5" />
-              <span className="text-sm">Accueil</span>
+              <Home className="w-3 h-3" />
+              <span className="text-xs">Accueil</span>
             </Link>
             <Link 
               to="/blog" 
-              className={`relative flex items-center gap-1.5 transition-all px-2.5 py-1.5 rounded-md ${
+              className={`relative flex items-center gap-1 transition-all px-2 py-1 rounded-md ${
                 currentPath.startsWith('/blog') 
                   ? 'font-medium bg-white/10 text-white' 
                   : 'text-gray-300 hover:text-white hover:bg-white/5'
               }`}
             >
-              <BookOpen className="w-3.5 h-3.5" />
-              <span className="text-sm">Blog</span>
+              <BookOpen className="w-3 h-3" />
+              <span className="text-xs">Blog</span>
             </Link>
             
             <Dialog>
-              <DialogTrigger className="flex items-center gap-1.5 px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-white/5 rounded-md transition-all">
-                <MessageCircle className="w-3.5 h-3.5" />
-                <span className="text-sm">Contact</span>
+              <DialogTrigger className="flex items-center gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-white/5 rounded-md transition-all">
+                <MessageCircle className="w-3 h-3" />
+                <span className="text-xs">Contact</span>
               </DialogTrigger>
               <DialogContent className="max-w-2xl w-full">
                 <DialogHeader>
@@ -176,9 +176,9 @@ const Header = () => {
           <Button
             onClick={() => window.dispatchEvent(new CustomEvent("open-payment-modal"))}
             variant="outline"
-            className="flex items-center gap-2 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-4 py-2 rounded-md transition-all"
+            className="flex items-center gap-1.5 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-3 py-1.5 text-xs rounded-md transition-all"
           >
-            <Download className="w-4 h-4" />
+            <Download className="w-3.5 h-3.5" />
             <span>Télécharger</span>
           </Button>
         )}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, Download, Star, Users, Clock } from "lucide-react";
+import { Folder, FolderOpen, Download, Star, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -124,9 +124,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   animation: 'subtlePulse 3s ease-in-out infinite'
                 }}
               >
-                <Folder 
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-gray-900 flex-shrink-0" 
-                  fill="currentColor"
+                <FolderOpen 
+                  className="w-7 h-7 sm:w-8 sm:h-8 text-amber-600 flex-shrink-0" 
+                  strokeWidth={1.5}
                 />
                 <em 
                   className="italic font-extrabold text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"

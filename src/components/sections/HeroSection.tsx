@@ -106,7 +106,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Prix block */}
             <div className="text-left mb-1">
               <div className="flex items-center gap-3">
-                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">9€</span>
+                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">9.90€</span>
                 <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Meilleur prix</span>
                 <span className="text-[10px] sm:text-xs text-gray-500 font-medium flex items-center gap-1">
                   Valeur réelle : <span className="text-sm sm:text-base text-gray-400 line-through">100€</span>
@@ -190,7 +190,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Button
                 size="lg"
                 onClick={onScrollToPayment}
-                title="Paiement sécurisé avec SumUp - 9€"
+                title="Paiement sécurisé avec SumUp - 9.90€"
                 className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600"
                 aria-label="Commande sécurisée via SumUp"
               >

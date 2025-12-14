@@ -33,7 +33,7 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
     if (variant === 'header') {
       return isMobile 
         ? 'gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md text-left w-full' 
-        : 'gap-1.5 px-2.5 py-1.5 text-gray-300 hover:text-white hover:bg-white/5 rounded-md';
+        : 'gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-white/5 rounded-md';
     }
     // footer variant
     return isMobile 
@@ -45,8 +45,8 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
     <span className="text-gray-700 cursor-pointer font-bold">FAQ</span>
   ) : (
     <span className={`flex items-center transition-colors ${getStyles()}`}>
-      <HelpCircle className="w-4 h-4" />
-      <span className={variant === 'header' && !isMobile ? 'text-sm' : ''}>FAQ</span>
+      <HelpCircle className={variant === 'header' && !isMobile ? 'w-3 h-3' : 'w-4 h-4'} />
+      <span className={variant === 'header' && !isMobile ? 'text-xs' : ''}>FAQ</span>
     </span>
   );
   

@@ -33,7 +33,7 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
     if (variant === 'header') {
       return isMobile 
         ? 'gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md text-left w-full' 
-        : 'gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-white/5 rounded-md';
+        : 'gap-1.5 px-4 h-full text-gray-300 hover:text-white border-b-2 border-transparent';
     }
     // footer variant
     return isMobile 

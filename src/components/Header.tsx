@@ -179,7 +179,7 @@ const Header = () => {
             className="flex items-center gap-1 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-2.5 py-1 text-[11px] rounded-md transition-all h-auto"
           >
             <Download className="w-3 h-3" />
-            <span>Je le veux</span>
+            <span>Acheter</span>
           </Button>
         )}
       </nav>

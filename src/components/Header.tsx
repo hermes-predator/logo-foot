@@ -125,34 +125,34 @@ const Header = () => {
             )}
           </>
         ) : (
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-5">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center h-full">
             <Link 
               to="/" 
-              className={`flex items-center gap-1 transition-all relative px-2 py-1 rounded-md ${
+              className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 ${
                 currentPath === '/' 
-                  ? 'font-medium bg-white/10 text-white' 
-                  : 'text-gray-300 hover:text-white hover:bg-white/5'
+                  ? 'font-medium text-white border-white' 
+                  : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
               <Home className="w-3 h-3" />
-              <span className="text-xs">Accueil</span>
+              <span>Accueil</span>
             </Link>
             <Link 
               to="/blog" 
-              className={`relative flex items-center gap-1 transition-all px-2 py-1 rounded-md ${
+              className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 ${
                 currentPath.startsWith('/blog') 
-                  ? 'font-medium bg-white/10 text-white' 
-                  : 'text-gray-300 hover:text-white hover:bg-white/5'
+                  ? 'font-medium text-white border-white' 
+                  : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
               <BookOpen className="w-3 h-3" />
-              <span className="text-xs">Blog</span>
+              <span>Blog</span>
             </Link>
             
             <Dialog>
-              <DialogTrigger className="flex items-center gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-white/5 rounded-md transition-all">
+              <DialogTrigger className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 border-transparent text-gray-300 hover:text-white`}>
                 <MessageCircle className="w-3 h-3" />
-                <span className="text-xs">Contact</span>
+                <span>Contact</span>
               </DialogTrigger>
               <DialogContent className="max-w-2xl w-full">
                 <DialogHeader>

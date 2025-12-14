@@ -176,9 +176,9 @@ const Header = () => {
           <Button
             onClick={() => window.dispatchEvent(new CustomEvent("open-payment-modal"))}
             variant="outline"
-            className="flex items-center gap-1.5 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-3 py-1.5 text-xs rounded-md transition-all"
+            className="flex items-center gap-1 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-2.5 py-1 text-[11px] rounded-md transition-all h-auto"
           >
-            <Download className="w-3.5 h-3.5" />
+            <Download className="w-3 h-3" />
             <span>Télécharger</span>
           </Button>
         )}

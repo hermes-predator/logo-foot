@@ -2,7 +2,7 @@
 import React from 'react';
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
 import FloatingParticles from './FloatingParticles';
-import JudgeMeBadge from './JudgeMeBadge';
+import TrustPilotBadge from '../TrustPilotBadge';
 import BlogHeaderCarousel from './BlogHeaderCarousel';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -134,10 +134,10 @@ const BlogHeader = () => {
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent"></div>
                 
                 <div 
-                  className="group" 
+                  className="group px-4 py-2" 
                   style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}
                 >
-                  <JudgeMeBadge />
+                  <TrustPilotBadge variant="dark" />
                 </div>
               </div>
             </div>

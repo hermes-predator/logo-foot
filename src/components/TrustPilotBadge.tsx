@@ -4,18 +4,21 @@ import trustpilotLogo from '@/assets/trustpilot-logo.png';
 interface TrustPilotBadgeProps {
   reviewCount?: number;
   rating?: number;
+  variant?: 'light' | 'dark';
 }
 
 const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({ 
   reviewCount = 1034, 
-  rating = 4.8 
+  rating = 4.8,
+  variant = 'light'
 }) => {
+  const isDark = variant === 'dark';
   return (
     <a
       href="https://www.trustpilot.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-50/50 transition-all duration-300 group"
+      className={`inline-flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-300 group ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-50/50'}`}
     >
       {/* Logo TrustPilot */}
       <img 
@@ -27,7 +30,7 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
       {/* Contenu principal */}
       <div className="flex flex-col gap-0.5">
         {/* Nombre de clients */}
-        <span className="text-base font-bold text-gray-800">
+        <span className={`text-base font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>
           {reviewCount.toLocaleString('fr-FR')}+ clients satisfaits
         </span>
         
@@ -68,7 +71,7 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
           </div>
           
           {/* Texte Excellent + Note */}
-          <span className="text-sm font-semibold text-gray-700">
+          <span className={`text-sm font-semibold ${isDark ? 'text-gray-200' : 'text-gray-700'}`}>
             Excellent {rating}
           </span>
         </div>

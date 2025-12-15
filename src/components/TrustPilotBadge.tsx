@@ -24,7 +24,7 @@ const TrustPilotBadge: React.FC<TrustPilotBadgeProps> = ({
       <img 
         src={trustpilotLogo} 
         alt="TrustPilot" 
-        className="h-4 w-auto"
+        className={`h-4 w-auto ${isDark ? 'brightness-0 invert' : ''}`}
       />
 
       {/* Contenu principal */}

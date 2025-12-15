@@ -40,7 +40,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       <div className={`w-full absolute inset-0 transition-opacity duration-300 ${isFlipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
           
-          <div className="flex items-center justify-between mb-2 relative z-20">
+          <div className="flex items-center justify-between mb-1 relative z-20">
             <div className="text-left flex-grow">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Logos des équipes de foot</h2>
             </div>

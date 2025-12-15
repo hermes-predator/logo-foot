@@ -87,9 +87,9 @@ const BlogHeader = () => {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Link to="/">
+                      <Link to="/" className="block w-full">
                         <button 
-                          className="group h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none transition-all duration-300 flex items-center justify-center text-white"
+                          className="group w-full h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none transition-all duration-300 flex items-center justify-center text-white"
                           style={{ 
                             backgroundColor: 'rgba(50, 48, 46, 0.6)',
                             border: 'none'

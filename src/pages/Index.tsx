@@ -230,7 +230,7 @@ const Index = () => {
           </div>
           
           {/* FlipBox indépendante juste au-dessus de la galerie */}
-          <div className="pb-0 mt-8">
+          <div className="pb-0 mt-4">
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-auto">
                 <FlipBox
@@ -243,7 +243,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="pt-0 pb-6 -mt-8">
+          <div className="pt-0 pb-4 -mt-10">
             <ProductGallery />
           </div>
           

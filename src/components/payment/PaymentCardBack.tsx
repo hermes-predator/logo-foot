@@ -88,7 +88,7 @@ const PaymentCardBack = ({
                 <DialogHeader className="pb-0">
                   <div className="flex flex-col mb-0">
                     <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
-                      Descriptif du fichier ZIP
+                      Descriptif du ZIP
                     </DialogTitle>
                     
                     <div className="relative mt-1 mb-1">
@@ -166,7 +166,7 @@ const PaymentCardBack = ({
                 <DialogHeader className="pb-0">
                   <div className="flex flex-col mb-0">
                     <DialogTitle className="text-2xl font-bold text-black text-left mb-0">
-                      Descriptif du fichier ZIP
+                      Descriptif du ZIP
                     </DialogTitle>
                     
                     <div className="relative mt-1 mb-1">

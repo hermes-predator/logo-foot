@@ -176,7 +176,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
                   <DialogHeader>
                     <DialogTitle className="text-2xl font-bold text-gray-900">
-                      Descriptif du fichier ZIP
+                      Descriptif du ZIP
                     </DialogTitle>
                      <div className="text-sm text-gray-600 mb-4">
                        <em className="italic">⦗FRONT-CLOUD⦘~ Football.zip</em>

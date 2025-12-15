@@ -74,6 +74,8 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                     Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
                     Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
                     Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
+                    <br /><br />
+                    En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
@@ -153,6 +155,8 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                 Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
                 Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
                 Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
+                <br /><br />
+                En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">

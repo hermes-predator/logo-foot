@@ -22,7 +22,7 @@ const FloatingCTAButton = ({ onClick, size = 'sm', className = '' }: FloatingCTA
       }}
       size={size}
     >
-      <span className="font-semibold relative z-10" style={{ color: '#3b82f6' }}>
+      <span className="font-semibold relative z-10" style={{ color: '#00b67a' }}>
         En savoir plus
       </span>
       <ArrowRight 

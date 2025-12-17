@@ -9,19 +9,17 @@ const PaymentTitle = () => {
         <span className="relative inline-block font-bold">
           <span className="relative z-10">seulement 8€</span>
           <span 
-            className="absolute bottom-[-2px] left-0 h-3 bg-blue-200/60 -rotate-1 -z-0 animate-highlight-draw"
+            className="absolute bottom-[-2px] left-0 h-3 bg-blue-200/60 -rotate-1 -z-0"
             style={{
-              animation: 'highlight-draw 1.5s ease-out forwards',
-              animationDelay: '0.5s',
-              width: '0%'
+              animation: 'highlight-draw 2s ease-in-out infinite',
             }}
           />
         </span>
       </p>
       <style>{`
         @keyframes highlight-draw {
-          0% { width: 0%; }
-          100% { width: 100%; }
+          0%, 100% { width: 0%; }
+          20%, 80% { width: 100%; }
         }
       `}</style>
     </div>

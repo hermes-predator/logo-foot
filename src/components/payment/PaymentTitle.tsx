@@ -11,7 +11,7 @@ const PaymentTitle = () => {
           <span 
             className="absolute bottom-[-2px] left-0 h-3 bg-blue-200/60 -rotate-1 -z-0"
             style={{
-              animation: 'highlight-draw 2s ease-in-out infinite',
+              animation: 'highlight-draw 4s ease-in-out infinite',
             }}
           />
         </span>

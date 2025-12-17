@@ -1,6 +1,6 @@
 
 import { BookOpen, Home, Menu, MessageCircle, FileText, Scroll, AlertTriangle, HelpCircle, Download } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
@@ -14,6 +14,7 @@ import FAQDialog from './footer/FAQDialog';
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const currentPath = location.pathname;
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -174,7 +175,7 @@ const Header = () => {
         {/* Bouton Acheter à droite */}
         {!isMobile && (
           <Button
-            onClick={() => window.dispatchEvent(new CustomEvent("open-payment-modal"))}
+            onClick={() => navigate('/?pay=1')}
             variant="outline"
             className="flex items-center gap-1 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-2.5 py-1 text-[11px] rounded-md transition-all h-auto"
           >

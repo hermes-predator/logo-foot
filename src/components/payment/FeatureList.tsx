@@ -63,7 +63,7 @@ const FeatureList = () => {
     },
     {
       icon: Plus,
-      text: "Patrimoine numérique",
+      text: "Patrimoine",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Hausse de valeur de votre patrimoine."
@@ -75,7 +75,7 @@ const FeatureList = () => {
     },
     {
       icon: Plus,
-      text: "Utilité stratégique",
+      text: "Utilité",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
       description: "Parfait pour vos projets personnels."

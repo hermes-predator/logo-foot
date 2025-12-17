@@ -59,7 +59,7 @@ const FeatureList = () => {
       text: "Fichier : Professionnel", 
       className: "bg-blue-100",
       iconColor: "text-blue-700",
-      description: "Nos logos sont uniformes, nommés et triés par pays pour un usage fiable."
+      description: "Logos uniformes, nommés et triés par pays."
     },
     {
       icon: Plus,

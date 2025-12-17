@@ -70,7 +70,7 @@ const FeatureList = () => {
     },
     {
       icon: Heart,
-      text: "Prix accessible",
+      text: "Offre grand public",
       description: "Un tarif simple permettant un accès à cette ressource pour un prix abordable."
     },
     {

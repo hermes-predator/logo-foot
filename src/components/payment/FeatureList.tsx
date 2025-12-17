@@ -66,7 +66,7 @@ const FeatureList = () => {
       text: "Patrimoine",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Hausse de valeur de votre patrimoine."
+      description: "Progression de votre valeur digitale."
     },
     {
       icon: Heart,

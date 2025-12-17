@@ -66,7 +66,7 @@ const FeatureList = () => {
       text: "Patrimoine numérique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Augmentez la valeur de votre patrimoine en stockant notre fichier spécialisé."
+      description: "Hausse de valeur de votre patrimoine."
     },
     {
       icon: Heart,
@@ -78,7 +78,7 @@ const FeatureList = () => {
       text: "Utilité stratégique",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Parfait pour les projets personnels spécialisés dans l'analyse sportive."
+      description: "Parfait pour vos projets personnels."
     }
   ];
 

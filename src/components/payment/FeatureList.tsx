@@ -78,7 +78,7 @@ const FeatureList = () => {
       text: "Utilité",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Parfait pour vos projets personnels."
+      description: "Pour vos projets personnels football."
     }
   ];
 

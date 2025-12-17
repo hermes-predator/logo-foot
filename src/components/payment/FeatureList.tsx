@@ -71,7 +71,7 @@ const FeatureList = () => {
     {
       icon: Heart,
       text: "Offre de valeur",
-      description: "Une offre généreuse, simple et abordable."
+      description: "Une offre généreuse, simple et accessible."
     },
     {
       icon: Plus,

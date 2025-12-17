@@ -52,7 +52,7 @@ const FeatureList = () => {
       text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Un actif qui booste votre parcours personnel"
+      description: "Boostez votre parcours personnel."
     },
     {
       icon: BadgeCheck,

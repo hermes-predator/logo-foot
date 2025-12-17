@@ -40,18 +40,18 @@ const TrustCard = ({ icon, title, description, hoverContent }: TrustCardProps) =
     <HoverCard>
       <HoverCardTrigger asChild>
         <div 
-          className="flex flex-col items-center p-3 bg-white rounded-lg shadow-sm border border-blue-100 transition-all duration-300 hover:shadow-md hover:border-blue-200 cursor-pointer"
+          className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-blue-100 transition-all duration-300 hover:shadow-md hover:border-blue-200 cursor-pointer"
           role="article"
           aria-label={`Information sur ${title}`}
         >
-          <div className="mb-2 relative">
+          <div className="mb-2.5 relative">
             <div className="absolute inset-0 bg-blue-100 rounded-full blur-sm opacity-20 scale-125"></div>
-            <div className="relative z-10 w-9 h-9 flex items-center justify-center bg-gradient-to-b from-blue-50 to-white rounded-full shadow-sm border border-blue-100">
+            <div className="relative z-10 w-10 h-10 flex items-center justify-center bg-gradient-to-b from-blue-50 to-white rounded-full shadow-sm border border-blue-100">
               {icon}
             </div>
           </div>
           
-          <Separator className="w-6 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-2" />
+          <Separator className="w-7 h-0.5 rounded-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-2.5" />
           
           <h3 className="font-semibold text-sm mb-0.5 text-gray-800 text-center">{title}</h3>
           <p className="text-xs text-gray-600 text-center">{description}</p>

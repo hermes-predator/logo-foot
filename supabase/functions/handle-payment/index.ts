@@ -10,12 +10,39 @@ serve(async (req) => {
   }
 
   try {
-    const { amount, currency, description } = await req.json()
+    const body = await req.json()
+    console.log('Request body:', JSON.stringify(body))
+    
+    const { amount, currency, description } = body
     const sumupKey = Deno.env.get('SUMUP_SECRET_KEY')
+    const merchantCode = Deno.env.get('SUMUP_MERCHANT_CODE')
 
     if (!sumupKey) {
       throw new Error('La clé API SumUp n\'est pas configurée')
     }
+
+    if (!merchantCode) {
+      throw new Error('Le code marchand SumUp n\'est pas configuré')
+    }
+
+    // Générer une référence alphanumérique simple (SumUp n'accepte pas les caractères spéciaux)
+    const checkoutReference = `FC${Date.now()}`
+    
+    // Nettoyer la description (enlever les caractères spéciaux)
+    const cleanDescription = description 
+      ? description.replace(/[^\w\s\-\.]/g, '').substring(0, 100)
+      : 'Football.zip - Collection de logos'
+
+    const checkoutPayload = {
+      checkout_reference: checkoutReference,
+      amount: Number(amount),
+      currency: currency || 'EUR',
+      description: cleanDescription,
+      return_url: `${req.headers.get('origin') || 'https://www.logo-foot.com'}/payment-success-token13061995`,
+      merchant_code: merchantCode,
+    }
+
+    console.log('SumUp checkout payload:', JSON.stringify(checkoutPayload))
 
     // Création du checkout SumUp
     const checkoutResponse = await fetch(`${SUMUP_API_URL}/checkouts`, {
@@ -24,22 +51,25 @@ serve(async (req) => {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${sumupKey}`,
       },
-      body: JSON.stringify({
-        checkout_reference: `order_${Date.now()}`,
-        amount,
-        currency,
-        description,
-        return_url: `${req.headers.get('origin') || ''}/payment-success-token13061995`,
-        merchant_code: Deno.env.get('SUMUP_MERCHANT_CODE'),
-      }),
+      body: JSON.stringify(checkoutPayload),
     })
 
+    const responseText = await checkoutResponse.text()
+    console.log('SumUp response status:', checkoutResponse.status)
+    console.log('SumUp response body:', responseText)
+
     if (!checkoutResponse.ok) {
-      const errorData = await checkoutResponse.json()
-      throw new Error(errorData.message || 'Erreur lors de la création du checkout SumUp')
+      let errorMessage = 'Erreur lors de la création du checkout SumUp'
+      try {
+        const errorData = JSON.parse(responseText)
+        errorMessage = errorData.message || errorData.error_message || errorMessage
+      } catch {
+        errorMessage = responseText || errorMessage
+      }
+      throw new Error(errorMessage)
     }
 
-    const checkoutData = await checkoutResponse.json()
+    const checkoutData = JSON.parse(responseText)
 
     return new Response(
       JSON.stringify(checkoutData),

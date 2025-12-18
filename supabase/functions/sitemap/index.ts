@@ -5,14 +5,34 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 // Local sitemap generators (Edge Functions cannot import from src code)
 const BASE_URL = 'https://www.logo-foot.com';
 
-function slugify(text: string = ''): string {
-  return text
-    .normalize('NFD')
-    .replace(/\p{Diacritic}+/gu, '')
+// Liste de mots à filtrer (même logique que slugUtils.ts)
+const STOP_WORDS = [
+  'de', 'du', 'des', 'le', 'la', 'les', 'un', 'une', 'et', 'ou', 'a', 
+  'dans', 'pour', 'par', 'sur', 'avec', 'sans', 'sous'
+];
+
+/**
+ * Génère un slug COURT canonique (max 3 mots significatifs)
+ * DOIT être identique à generateSlug() dans slugUtils.ts
+ */
+function generateShortSlug(title: string = ''): string {
+  if (!title) return 'article';
+  
+  const words = title
     .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Enlève les accents
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
-    .slice(0, 80);
+    .replace(/-{2,}/g, '-')
+    .split('-')
+    .filter(word => word.length > 2 && !STOP_WORDS.includes(word));
+  
+  // Prendre exactement les 3 premiers mots significatifs
+  const slug = words.slice(0, 3).join('-');
+  
+  return slug.length < 3 ? 'article' : 
+         slug.length > 50 ? slug.substring(0, 50) : slug;
 }
 
 function escapeXml(s: string) {
@@ -49,10 +69,11 @@ function generateSitemap({
   // Blog list
   parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', includePriority ? '0.8' : undefined));
 
-  // Posts - URLs propres sans paramètres
+  // Posts - Utiliser UNIQUEMENT le format court canonique
   for (const p of blogPosts) {
-    const slug = p.slug || slugify(p.title);
-    const loc = `${BASE_URL}/blog/${p.id}-${slug}`;
+    // IMPORTANT: Toujours générer un slug court à partir du titre, ignorer p.slug de la DB
+    const shortSlug = generateShortSlug(p.title);
+    const loc = `${BASE_URL}/blog/${p.id}-${shortSlug}`;
     const last = includeLastmod && p.date ? new Date(p.date).toISOString().split('T')[0] : undefined;
     parts.push(urlEntry(loc, last, 'weekly', includePriority ? '0.6' : undefined));
   }

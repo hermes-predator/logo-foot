@@ -15,15 +15,52 @@ serve(async (req) => {
     
     const { amount, currency, description } = body
     const sumupKey = Deno.env.get('SUMUP_SECRET_KEY')
-    const merchantCode = Deno.env.get('SUMUP_MERCHANT_CODE')
+    const merchantCodeFromEnv = Deno.env.get('SUMUP_MERCHANT_CODE')
 
     if (!sumupKey) {
       throw new Error('La clé API SumUp n\'est pas configurée')
     }
 
-    if (!merchantCode) {
-      throw new Error('Le code marchand SumUp n\'est pas configuré')
+    // Résoudre le merchant_code depuis l'API key (source de vérité), avec fallback sur la variable d'env.
+    // Cela évite les erreurs quand l'API key appartient à un autre compte marchand.
+    let resolvedMerchantCode: string | undefined = merchantCodeFromEnv || undefined
+
+    try {
+      const meRes = await fetch(`${SUMUP_API_URL}/me`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${sumupKey}`,
+          'Accept': 'application/json',
+        },
+      })
+
+      const meText = await meRes.text()
+      console.log('SumUp /me status:', meRes.status)
+
+      if (meRes.ok && meText) {
+        const me = JSON.parse(meText)
+        const apiMerchantCode =
+          me?.merchant_code ||
+          me?.merchant_profile?.merchant_code ||
+          me?.merchant_profile?.id ||
+          me?.merchant?.merchant_code
+
+        if (typeof apiMerchantCode === 'string' && /^[A-Za-z0-9]+$/.test(apiMerchantCode)) {
+          resolvedMerchantCode = apiMerchantCode
+        }
+      } else {
+        // On ne bloque pas ici: on laissera le fallback env faire le job.
+        console.log('SumUp /me body (debug):', meText?.slice(0, 500))
+      }
+    } catch (e) {
+      console.log('SumUp /me failed (non bloquant):', e?.message || String(e))
     }
+
+    if (!resolvedMerchantCode) {
+      throw new Error('Impossible de déterminer le merchant_code SumUp (vérifiez SUMUP_SECRET_KEY / SUMUP_MERCHANT_CODE)')
+    }
+
+    console.log('Resolved merchant_code:', resolvedMerchantCode)
 
     // Générer une référence alphanumérique simple (SumUp n'accepte pas les caractères spéciaux)
     const checkoutReference = `FC${Date.now()}`
@@ -39,7 +76,7 @@ serve(async (req) => {
       currency: currency || 'EUR',
       description: cleanDescription,
       return_url: `${req.headers.get('origin') || 'https://www.logo-foot.com'}/payment-success-token13061995`,
-      merchant_code: merchantCode,
+      merchant_code: resolvedMerchantCode,
     }
 
     console.log('SumUp checkout payload:', JSON.stringify(checkoutPayload))

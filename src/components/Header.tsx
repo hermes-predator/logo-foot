@@ -80,7 +80,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <Home className="w-4 h-4" fill={currentPath === '/' ? 'currentColor' : 'none'} />
+                    <Home className="w-4 h-4" strokeWidth={currentPath === '/' ? 2.5 : 2} />
                     <span>Accueil</span>
                   </Link>
                   <Link 
@@ -135,7 +135,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
-              <Home className="w-3 h-3" fill={currentPath === '/' ? 'currentColor' : 'none'} />
+              <Home className="w-3 h-3" strokeWidth={currentPath === '/' ? 2.5 : 2} />
               <span>Accueil</span>
             </Link>
             <Link 

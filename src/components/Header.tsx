@@ -80,7 +80,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <Home className="w-4 h-4" />
+                    <Home className="w-4 h-4" fill={currentPath === '/' ? 'currentColor' : 'none'} />
                     <span>Accueil</span>
                   </Link>
                   <Link 
@@ -91,7 +91,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <BookOpen className="w-4 h-4" />
+                    <BookOpen className="w-4 h-4" fill={currentPath.startsWith('/blog') ? 'currentColor' : 'none'} />
                     <span>Blog</span>
                   </Link>
                   
@@ -135,7 +135,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
-              <Home className="w-3 h-3" />
+              <Home className="w-3 h-3" fill={currentPath === '/' ? 'currentColor' : 'none'} />
               <span>Accueil</span>
             </Link>
             <Link 
@@ -146,7 +146,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
-              <BookOpen className="w-3 h-3" />
+              <BookOpen className="w-3 h-3" fill={currentPath.startsWith('/blog') ? 'currentColor' : 'none'} />
               <span>Blog</span>
             </Link>
             

@@ -97,7 +97,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
             {/* 1. H1 - Accroche principale */}
-            <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 leading-tight text-gray-900 text-left">
+            <h1 className="text-xs sm:text-sm md:text-base font-bold mb-2 leading-tight text-gray-900 text-left">
               <span>
                 Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
               </span>
@@ -155,11 +155,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Prix block - juste avant les boutons */}
             <div className="text-left mb-4">
               <div className="flex items-center gap-3">
-                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">8€</span>
-                <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Offre actuelle</span>
-                <span className="w-px h-5 bg-gray-300"></span>
                 <span className="text-xl sm:text-2xl font-medium text-gray-400 line-through">100€</span>
                 <span className="bg-red-100 text-red-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Valeur réelle</span>
+                <span className="w-px h-5 bg-gray-300"></span>
+                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">8€</span>
+                <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Offre actuelle</span>
               </div>
             </div>
             

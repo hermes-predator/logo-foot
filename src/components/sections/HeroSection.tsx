@@ -200,13 +200,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background: 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.15) 45%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.15) 55%, transparent 60%)',
-                    animation: 'shine 4s ease-in-out infinite',
+                    animation: 'shine 5s ease-in-out infinite',
                   }}
                 />
                 <style>{`
                   @keyframes shine {
-                    0%, 100% { transform: translateX(-150%); }
-                    50% { transform: translateX(150%); }
+                    0% { transform: translateX(-150%); }
+                    100% { transform: translateX(150%); }
                   }
                 `}</style>
                 <span className="relative flex items-center justify-center gap-2">

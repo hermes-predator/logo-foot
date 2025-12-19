@@ -130,10 +130,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </h2>
             </div>
 
-            <Separator className="my-4 bg-gray-200" />
-
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-4">
+            <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-4 mt-4">
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Fichier structuré</div>
@@ -151,6 +149,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos uniformes</div>
               </div>
             </div>
+
+            <Separator className="my-4 bg-gray-200" />
 
             {/* Prix block - juste avant les boutons */}
             <div className="text-left mb-4">

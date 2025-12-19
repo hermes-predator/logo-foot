@@ -277,7 +277,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Carrousel des avis clients */}
-        <div className="w-full mt-2 mb-6">
+        <div className="w-full mt-6 mb-6">
           <HeroTestimonialBadge />
         </div>
 

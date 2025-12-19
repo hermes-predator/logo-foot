@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Folder, FolderArchive, Download, Star, Users, Clock } from "lucide-react";
+import { Folder, FolderArchive, ShoppingCart, ArrowRight, Star, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -209,17 +209,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     100% { transform: translateX(150%); }
                   }
                 `}</style>
-                <span className="relative flex items-center justify-center gap-2">
-                  <Download className="w-5 h-5 animate-[bounce_2s_ease-in-out_infinite]" />
+                <span className="relative flex items-center justify-center gap-4 w-full">
+                  <ShoppingCart 
+                    className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12"
+                  />
                   <span className="font-bold">Télécharger maintenant</span>
-                  <svg 
-                    className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight 
+                    className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
+                  />
                 </span>
               </Button>
             </div>

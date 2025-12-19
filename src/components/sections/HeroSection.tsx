@@ -95,14 +95,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="md:transform md:-translate-y-[3rem]">{/* Alignement avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
-            {/* Titre principal - H1 */}
-            {/* 1. H1 - Accroche principale */}
-            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left">
-              <span>
-                Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
-              </span>
-            </h1>
-
 
             {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-1">
@@ -196,8 +188,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </Button>
             </div>
 
-            {/* Prix block - sous le bouton */}
-            <div className="text-left mt-3">
+            {/* Titre + Prix block - sous le bouton */}
+            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left mt-3">
+              <span>
+                Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
+              </span>
+            </h1>
+            <div className="text-left">
               <div className="flex items-center gap-1.5">
                 <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
                 <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>

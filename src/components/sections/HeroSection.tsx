@@ -209,7 +209,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="font-bold text-gray-600">Bon à savoir :</div>
               <div>* Logo-foot.com est un site français fiable et sécurisé</div>
               <div>* Le fichier est délivré immédiatement par téléchargement, aucune inscription n'est requise</div>
-              <div>* En cas de difficulté avec votre téléchargement : contact@logo-foot.com</div>
+              <div>* En cas de difficulté avec votre téléchargement : <span className="font-bold">contact@logo-foot.com</span></div>
             </div>
 
             {/* Badges de confiance minimalistes */}

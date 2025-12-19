@@ -79,7 +79,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
     return () => clearInterval(interval);
   }, []);
-  return <section className="relative pt-4 pb-6 px-2 overflow-hidden">
+  return <section className="relative pt-4 pb-2 px-2 overflow-hidden">
       {/* Background avec dégradé simple et professionnel */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-green-50/60" />
@@ -277,7 +277,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Carrousel des avis clients */}
-        <div className="w-full mt-4 mb-6">
+        <div className="w-full mt-4 mb-2">
           <HeroTestimonialBadge />
         </div>
 

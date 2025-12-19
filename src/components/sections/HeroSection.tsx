@@ -291,27 +291,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             />
             <span className="font-medium whitespace-nowrap">Fichier stockable sur votre Google Drive</span>
           </div>
+        </div>
 
-          {/* Point de séparation */}
-          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-
-          {/* Note TrustPilot avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] h-10 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
+        {/* Note TrustPilot avec logo et étoiles - Pleine largeur */}
+        <div className="flex items-center justify-center gap-3 mt-3 w-full">
+          <div className="flex items-center gap-3 px-6 py-3 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300 w-full max-w-2xl justify-center">
             <img 
               src={trustpilotLogo} 
               alt="TrustPilot" 
-              className="h-4"
+              className="h-5"
             />
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <div key={i} className="w-3.5 h-3.5 bg-[#00b67a] flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-2 h-2 text-white fill-current">
+                <div key={i} className="w-4 h-4 bg-[#00b67a] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-2.5 h-2.5 text-white fill-current">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
               ))}
             </div>
-            <span className="font-bold text-gray-700 whitespace-nowrap">4.8/5</span>
+            <span className="font-bold text-gray-700 text-lg">4.8/5</span>
+            <span className="text-gray-500 text-sm">basé sur 1034 avis</span>
           </div>
         </div>
       </div>

@@ -211,6 +211,24 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div>* Le fichier est délivré immédiatement par téléchargement, aucune inscription n'est requise</div>
               <div>* En cas de difficulté avec votre téléchargement : contact@logo-foot.com</div>
             </div>
+
+            {/* Badges de confiance minimalistes */}
+            <div className="flex flex-wrap items-center gap-2 mt-4 text-[9px] sm:text-[10px] text-gray-500">
+              <div className="flex items-center gap-1.5">
+                <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3" />
+                <span>Paiement Sécurisé</span>
+              </div>
+              <span className="text-gray-300">•</span>
+              <div className="flex items-center gap-1.5">
+                <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3" />
+                <span>Stockable sur Drive</span>
+              </div>
+              <span className="text-gray-300">•</span>
+              <div className="flex items-center gap-1">
+                <img src={trustpilotLogo} alt="TrustPilot" className="h-3" />
+                <span className="font-medium">4.8/5</span>
+              </div>
+            </div>
             
             {/* Pastille d'urgence - Achats récents */}
             <div className="flex justify-start ml-2 mt-4 sm:mt-6">
@@ -267,53 +285,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
 
-        {/* Nouvelles mentions décoratives centrées */}
-        <div className="flex flex-nowrap items-center justify-center gap-3 -mt-10 text-sm text-gray-600">
-          {/* Paiement Sécurisé SumUp */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_3px_rgba(0,0,0,0.015)] h-10 hover:shadow-[0_1px_6px_rgba(0,0,0,0.04)] transition-shadow duration-300">
-            <img 
-              src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
-              alt="SumUp - Paiement Sécurisé" 
-              className="h-4"
-            />
-            <span className="font-medium whitespace-nowrap">Paiement Sécurisé via SumUp</span>
-          </div>
-
-          {/* Point de séparation */}
-          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-
-          {/* Fichier stockable sur Google Drive */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] h-10 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
-            <img 
-              src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" 
-              alt="Google Drive" 
-              className="h-4"
-            />
-            <span className="font-medium whitespace-nowrap">Fichier stockable sur votre Google Drive</span>
-          </div>
-
-          {/* Point de séparation */}
-          <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-
-          {/* Note TrustPilot avec logo et étoiles */}
-          <div className="flex items-center gap-2 px-3 py-2 bg-white/70 backdrop-blur-sm rounded-lg border border-white/50 ring-1 ring-gray-200/20 shadow-[0_1px_4px_rgba(0,0,0,0.02)] h-10 hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-300">
-            <img 
-              src={trustpilotLogo} 
-              alt="TrustPilot" 
-              className="h-4"
-            />
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <div key={i} className="w-3.5 h-3.5 bg-[#00b67a] flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-2 h-2 text-white fill-current">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                </div>
-              ))}
-            </div>
-            <span className="font-bold text-gray-700 whitespace-nowrap">4.8/5</span>
-          </div>
-        </div>
       </div>
     </section>;
 };

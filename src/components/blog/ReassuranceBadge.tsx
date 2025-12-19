@@ -33,7 +33,7 @@ const ReassuranceBadge = () => {
       
       {/* Petite ligne de confiance avec élément clignotant modifié */}
       <p className="text-center text-sm text-gray-600 font-medium">
-        <span className="font-bold">✓</span> Fichier organisé et prêt à l'emploi • <span className="font-bold">✓</span> Compatible tous supports • <span className="font-bold">✓</span> Satisfaction garantie
+        <span className="font-bold">📁</span> Fichier organisé et prêt à l'emploi • <span className="font-bold">✓</span> Compatible tous supports • <span className="font-bold">✓</span> Satisfaction garantie
       </p>
       
       {/* Élément clignotant modifié */}

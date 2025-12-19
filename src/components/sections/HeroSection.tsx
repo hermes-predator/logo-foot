@@ -126,8 +126,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
             <div className="grid grid-cols-4 gap-1.5 sm:gap-2 text-left mb-3 mt-3">
               <div className="bg-white rounded-md p-2 sm:p-2.5 text-center border border-gray-200 shadow-sm">
-                <div className="text-base sm:text-lg font-bold text-gray-900 mb-0.5">⚡</div>
-                <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">Fichier structuré</div>
+                <div className="text-base sm:text-lg font-bold text-gray-900 mb-0.5">🎁</div>
+                <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">Autres bonus</div>
               </div>
               <div className="bg-white rounded-md p-2 sm:p-2.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-base sm:text-lg font-bold text-gray-900 mb-0.5">8 800</div>

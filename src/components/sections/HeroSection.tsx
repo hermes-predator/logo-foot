@@ -103,18 +103,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
             </h1>
 
-            {/* Prix block - juste après le titre */}
-            <div className="text-left mb-2">
-              <div className="flex items-center gap-1.5">
-                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
-                <span className="w-px h-3 bg-gray-300"></span>
-                <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
-              </div>
-            </div>
-
-            <Separator className="my-3 bg-gray-200" />
 
             {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-1">
@@ -207,7 +195,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
-            
+
+            {/* Prix block - sous le bouton */}
+            <div className="text-left mt-3">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
+                <span className="w-px h-3 bg-gray-300"></span>
+                <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
+              </div>
+            </div>
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-12 text-[8px] sm:text-[10px] text-gray-500 text-left">
               <div className="font-bold text-gray-600">Bon à savoir :</div>

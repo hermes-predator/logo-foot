@@ -143,8 +143,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
 
+            {/* Ligne de séparation entre bénéfices et boutons */}
+            <Separator className="my-3" />
+
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-3">
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">

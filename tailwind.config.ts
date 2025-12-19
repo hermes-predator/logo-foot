@@ -127,6 +127,10 @@ export default {
 				'pulsateScale': {
 					'0%, 100%': { transform: 'scale(1)' },
 					'50%': { transform: 'scale(1.15)' }
+				},
+				'scroll-reviews': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' }
 				}
 			},
 			animation: {
@@ -140,6 +144,7 @@ export default {
 				'floating': 'floating 6s ease-in-out infinite',
 				'colorPulse': 'colorPulse 1s ease-in-out infinite',
 				'pulsateScale': 'pulsateScale 2s ease-in-out infinite',
+				'scroll-reviews': 'scroll-reviews 30s linear infinite',
 			}
 		}
 	},

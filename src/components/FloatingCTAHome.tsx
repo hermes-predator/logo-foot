@@ -11,11 +11,12 @@ const FloatingCTAHome = ({ onScrollToPayment }: FloatingCTAHomeProps) => {
     <div className="fixed bottom-6 right-6 z-50">
       <div className="bg-primary rounded-lg shadow-lg border border-white/20 overflow-hidden max-w-xs">
         <div className="p-3">
-          <div className="flex items-center space-x-2 mb-2">
-            <ShoppingCart className="h-4 w-4 text-white flex-shrink-0" />
-            <div className="text-white">
-              <p className="font-semibold text-sm">⦗FRONT-CLOUD⦘~ Football.zip</p>
+          <div className="mb-2">
+            <div className="flex items-center space-x-1 mb-1">
+              <ShoppingCart className="h-4 w-4 text-white flex-shrink-0" />
+              <span className="text-white font-semibold text-sm">Football.zip</span>
             </div>
+            <p className="text-white/90 text-xs leading-tight">Recevez instantanément tous les logos de clubs de football uniformes, nommés et triés par pays</p>
           </div>
           
           <Button 

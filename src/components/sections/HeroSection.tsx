@@ -143,22 +143,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
 
-            {/* Titre + Prix block - entre les bénéfices et les boutons */}
-            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left mt-7">
-              <span>
-                Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
-              </span>
-            </h1>
-            <div className="text-left">
-              <div className="flex items-center gap-1.5">
-                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
-                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
-                <span className="w-px h-3 bg-gray-300"></span>
-                <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
-              </div>
-            </div>
-            
             {/* Boutons déplacés dans la colonne de gauche */}
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-3">
               <Dialog>
@@ -203,6 +187,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </Button>
             </div>
+
+            {/* Titre + Prix block - en dessous des boutons */}
+            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left mt-4">
+              <span>
+                Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
+              </span>
+            </h1>
+            <div className="text-left">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
+                <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
+                <span className="w-px h-3 bg-gray-300"></span>
+                <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
+              </div>
+            </div>
+
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-12 text-[8px] sm:text-[10px] text-gray-500 text-left">
               <div className="font-bold text-gray-600">Bon à savoir :</div>

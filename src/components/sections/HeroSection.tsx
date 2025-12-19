@@ -277,7 +277,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Bloc des avis clients - pleine largeur sous les deux colonnes */}
-        <div className="backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 text-center w-full shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60 -mt-8 mb-6">
+        <div className="backdrop-blur-lg rounded-xl px-3 pt-4 pb-3 text-center w-full shadow-[0_1px_3px_rgba(0,0,0,0.015),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-teal-100/40 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-teal-100/30 before:via-green-100/40 before:to-emerald-200/50 before:-z-10 before:m-[-1px] relative bg-gradient-to-br from-teal-50/40 via-green-50/50 to-emerald-50/60 mt-2 mb-6">
           {/* Animation des témoignages */}
           <div className="leading-tight">
             <HeroTestimonialBadge currentIndex={currentTestimonialIndex} />

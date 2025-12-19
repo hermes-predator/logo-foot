@@ -195,20 +195,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >
-                {/* Effet de lumière réfléchissante */}
-                <span 
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.15) 45%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.15) 55%, transparent 60%)',
-                    animation: 'shine 5s ease-in-out infinite',
-                  }}
-                />
-                <style>{`
-                  @keyframes shine {
-                    0% { transform: translateX(-150%); }
-                    100% { transform: translateX(150%); }
-                  }
-                `}</style>
+                {/* Effet de lumière réfléchissante - identique à PaymentButton */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                 <span className="relative flex items-center justify-center gap-4 w-full">
                   <ShoppingCart 
                     className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12"

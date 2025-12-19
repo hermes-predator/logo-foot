@@ -144,7 +144,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Titre + Prix block - entre les bénéfices et les boutons */}
-            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left mt-5">
+            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left mt-7">
               <span>
                 Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
               </span>
@@ -163,7 +163,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-3">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="w-[calc(25%-0.375rem)] sm:w-[calc(25%-0.5rem)] rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-2 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
                     <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
                     Fichier
                   </Button>

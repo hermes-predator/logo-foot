@@ -196,7 +196,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aria-label="Commande sécurisée via SumUp"
               >
                 {/* Effet de lumière réfléchissante - identique à PaymentButton */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                 <span className="relative flex items-center justify-center gap-4 w-full">
                   <ShoppingCart 
                     className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12"

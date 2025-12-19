@@ -101,7 +101,7 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = () => {
           alt="TrustPilot" 
           className="h-4 w-auto"
         />
-        <span className="text-xs text-gray-500 font-medium">4.8/5 sur 1034 avis</span>
+        <span className="text-xs text-gray-500 font-medium">4.8/5 sur 1034 avis vérifiés</span>
       </div>
     </div>
   );

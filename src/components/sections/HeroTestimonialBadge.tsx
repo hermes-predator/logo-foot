@@ -50,16 +50,6 @@ interface HeroTestimonialBadgeProps {
 const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = () => {
   return (
     <div className="relative overflow-hidden w-full">
-      {/* En-tête Trustpilot */}
-      <div className="flex items-center justify-center gap-2 mb-2">
-        <img 
-          src={trustpilotLogo} 
-          alt="TrustPilot" 
-          className="h-4 w-auto"
-        />
-        <span className="text-xs text-gray-500 font-medium">4.8/5 sur 1034 avis</span>
-      </div>
-      
       {/* Carrousel avec défilement infini */}
       <div className="flex animate-scroll-reviews gap-4">
         {duplicatedTestimonials.map((testimonial, index) => (
@@ -101,8 +91,18 @@ const HeroTestimonialBadge: React.FC<HeroTestimonialBadgeProps> = () => {
       </div>
       
       {/* Dégradés sur les côtés */}
-      <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-teal-50/80 to-transparent pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-teal-50/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-white/80 to-transparent pointer-events-none" />
+      
+      {/* Badge Trustpilot en dessous */}
+      <div className="flex items-center justify-center gap-2 mt-3">
+        <img 
+          src={trustpilotLogo} 
+          alt="TrustPilot" 
+          className="h-4 w-auto"
+        />
+        <span className="text-xs text-gray-500 font-medium">4.8/5 sur 1034 avis</span>
+      </div>
     </div>
   );
 };

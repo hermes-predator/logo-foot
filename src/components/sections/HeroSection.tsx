@@ -97,11 +97,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
             {/* 1. H1 - Accroche principale */}
-            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-2 leading-tight text-gray-900 text-left">
+            <h1 className="text-[10px] sm:text-xs md:text-sm font-bold mb-1 leading-tight text-gray-900 text-left">
               <span>
                 Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
               </span>
             </h1>
+
+            {/* Prix block - juste après le titre */}
+            <div className="text-left mb-3">
+              <div className="flex items-center gap-2">
+                <span className="text-base sm:text-lg font-medium text-gray-400 line-through">100€</span>
+                <span className="bg-red-100 text-red-700 text-[8px] sm:text-[9px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
+                <span className="w-px h-4 bg-gray-300"></span>
+                <span className="text-base sm:text-lg font-extrabold text-gray-900">8€</span>
+                <span className="bg-green-100 text-green-700 text-[8px] sm:text-[9px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
+              </div>
+            </div>
 
             {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-1">
@@ -147,17 +158,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="bg-white rounded-md p-2 sm:p-2.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-base sm:text-lg font-bold text-gray-900 mb-0.5">🎨</div>
                 <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">Logos uniformes</div>
-              </div>
-            </div>
-
-            {/* Prix block - juste avant les boutons */}
-            <div className="text-left mb-4">
-              <div className="flex items-center gap-2">
-                <span className="text-base sm:text-lg font-medium text-gray-400 line-through">100€</span>
-                <span className="bg-red-100 text-red-700 text-[8px] sm:text-[9px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
-                <span className="w-px h-4 bg-gray-300"></span>
-                <span className="text-base sm:text-lg font-extrabold text-gray-900">8€</span>
-                <span className="bg-green-100 text-green-700 text-[8px] sm:text-[9px] font-bold px-1 py-0.5 rounded-full">Offre actuelle</span>
               </div>
             </div>
             

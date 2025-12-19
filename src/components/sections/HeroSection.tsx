@@ -103,21 +103,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
             </h1>
 
-            {/* Prix block */}
-            <div className="text-left mb-1">
-              <div className="flex items-center gap-3">
-                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">8€</span>
-                <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Offre actuelle</span>
-                <span className="w-px h-5 bg-gray-300"></span>
-                <span className="text-xl sm:text-2xl font-medium text-gray-400 line-through">100€</span>
-                <span className="bg-red-100 text-red-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Valeur réelle</span>
-              </div>
-            </div>
-
-            <Separator className="my-4 bg-gray-200" />
-
             {/* 2. Nom du fichier - Concrétise l'offre */}
-            <div className="text-left mb-4">
+            <div className="text-left mb-1">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
@@ -142,7 +129,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 `}</style>
               </h2>
             </div>
-            
+
+            <Separator className="my-4 bg-gray-200" />
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
             <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-4">
@@ -161,6 +149,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">🎨</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Logos uniformes</div>
+              </div>
+            </div>
+
+            {/* Prix block - juste avant les boutons */}
+            <div className="text-left mb-4">
+              <div className="flex items-center gap-3">
+                <span className="text-xl sm:text-2xl font-extrabold text-gray-900">8€</span>
+                <span className="bg-green-100 text-green-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Offre actuelle</span>
+                <span className="w-px h-5 bg-gray-300"></span>
+                <span className="text-xl sm:text-2xl font-medium text-gray-400 line-through">100€</span>
+                <span className="bg-red-100 text-red-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Valeur réelle</span>
               </div>
             </div>
             

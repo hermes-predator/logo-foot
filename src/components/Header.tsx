@@ -91,7 +91,7 @@ const Header = () => {
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
-                    <BookOpen className="w-4 h-4" fill={currentPath.startsWith('/blog') ? 'currentColor' : 'none'} />
+                    <BookOpen className="w-4 h-4" strokeWidth={currentPath.startsWith('/blog') ? 2.5 : 2} />
                     <span>Blog</span>
                   </Link>
                   
@@ -146,7 +146,7 @@ const Header = () => {
                   : 'text-gray-300 hover:text-white border-transparent'
               }`}
             >
-              <BookOpen className="w-3 h-3" fill={currentPath.startsWith('/blog') ? 'currentColor' : 'none'} />
+              <BookOpen className="w-3 h-3" strokeWidth={currentPath.startsWith('/blog') ? 2.5 : 2} />
               <span>Blog</span>
             </Link>
             

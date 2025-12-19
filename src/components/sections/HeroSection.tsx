@@ -97,14 +97,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-4 sm:p-6 md:p-8 md:px-10 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
             {/* Titre principal - H1 */}
             {/* 1. H1 - Accroche principale */}
-            <h1 className="text-xs sm:text-sm md:text-base font-bold mb-2 leading-tight text-gray-900 text-left">
+            <h1 className="text-xs sm:text-sm md:text-base font-bold mb-1 leading-tight text-gray-900 text-left">
               <span>
                 Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
               </span>
             </h1>
 
             {/* 2. Nom du fichier - Concrétise l'offre */}
-            <div className="text-left mb-1">
+            <div className="text-left mb-3">
               <h2 
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
                 style={{
@@ -131,7 +131,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-4 mt-4">
+            <div className="grid grid-cols-4 gap-2 sm:gap-3 text-left mb-3">
               <div className="bg-white rounded-lg p-3 sm:p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">📁</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 font-medium">Fichier structuré</div>
@@ -150,10 +150,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
 
-            <Separator className="my-4 bg-gray-200" />
-
             {/* Prix block - juste avant les boutons */}
-            <div className="text-left mb-4">
+            <div className="text-left mb-3">
               <div className="flex items-center gap-3">
                 <span className="text-xl sm:text-2xl font-medium text-gray-400 line-through">100€</span>
                 <span className="bg-red-100 text-red-700 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full">Valeur réelle</span>
@@ -164,7 +162,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-6">
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-4 sm:px-5 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">

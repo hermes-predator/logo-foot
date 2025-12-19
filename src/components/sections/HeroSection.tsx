@@ -204,16 +204,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
 
-            {/* Texte de réassurance sous les boutons */}
-            <div className="mt-6 text-[8px] sm:text-[10px] text-gray-500 text-left">
-              <div className="font-bold text-gray-600">Bon à savoir :</div>
-              <div>* Logo-foot.com est un site français fiable et sécurisé</div>
-              <div>* Le fichier est délivré immédiatement par téléchargement, aucune inscription n'est requise</div>
-              <div>* En cas de difficulté avec votre téléchargement : contact@logo-foot.com</div>
-            </div>
-
             {/* Badges de confiance minimalistes */}
-            <div className="flex flex-wrap items-center gap-2 mt-4 text-[9px] sm:text-[10px] text-gray-500">
+            <div className="flex flex-wrap items-center gap-2 mt-6 text-[9px] sm:text-[10px] text-gray-500">
               <div className="flex items-center gap-1.5">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3" />
                 <span>Paiement Sécurisé</span>
@@ -228,6 +220,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <img src={trustpilotLogo} alt="TrustPilot" className="h-3" />
                 <span className="font-medium">4.8/5</span>
               </div>
+            </div>
+
+            {/* Texte de réassurance sous les badges */}
+            <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left">
+              <div className="font-bold text-gray-600">Bon à savoir :</div>
+              <div>* Logo-foot.com est un site français fiable et sécurisé</div>
+              <div>* Le fichier est délivré immédiatement par téléchargement, aucune inscription n'est requise</div>
+              <div>* En cas de difficulté avec votre téléchargement : contact@logo-foot.com</div>
             </div>
             
             {/* Pastille d'urgence - Achats récents */}

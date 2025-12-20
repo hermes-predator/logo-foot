@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -8,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
+import CheckoutProgressBar from '@/components/payment/CheckoutProgressBar';
 import { clearPersistedSumupCheckoutId, persistSumupCheckoutId, readPersistedSumupCheckoutId } from '@/lib/sumup-checkout';
 
 type PaymentStatus = 'loading' | 'success' | 'failed' | 'invalid';
@@ -264,9 +264,12 @@ const PaymentSuccess = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background py-12 px-4">
-        <div className="container mx-auto">
-          {renderContent()}
+        <div className="container mx-auto max-w-xl">
+          {/* Progress bar - étape 3 quand succès, étape 2 sinon */}
+          <CheckoutProgressBar currentStep={paymentStatus === 'success' ? 3 : 2} />
           
+          {renderContent()}
+
           {paymentStatus === 'success' && (
             <div className="text-center mt-8 text-muted-foreground">
               <p className="text-sm">

@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import ConfettiCelebration from '@/components/effects/ConfettiCelebration';
 import ReceiptDownload from '@/components/payment/ReceiptDownload';
+import { clearPersistedSumupCheckoutId, persistSumupCheckoutId, readPersistedSumupCheckoutId } from '@/lib/sumup-checkout';
 
 type PaymentStatus = 'loading' | 'success' | 'failed' | 'invalid';
 
@@ -32,23 +33,14 @@ const PaymentSuccess = () => {
   useEffect(() => {
     if (checkoutIdFromQuery) {
       setEffectiveCheckoutId(checkoutIdFromQuery);
+      // Conserve l'ID pour un refresh / retour 3DS
+      persistSumupCheckoutId(checkoutIdFromQuery);
       return;
     }
 
-    // Fallback si SumUp ne renvoie pas le paramètre (ex: 3DS)
-    try {
-      const storedId = localStorage.getItem("sumup_last_checkout_id");
-      const ts = Number(localStorage.getItem("sumup_last_checkout_ts") || 0);
-
-      // On accepte uniquement un checkout récent (2h)
-      if (storedId && ts && Date.now() - ts < 2 * 60 * 60 * 1000) {
-        setEffectiveCheckoutId(storedId);
-      } else {
-        setEffectiveCheckoutId(null);
-      }
-    } catch {
-      setEffectiveCheckoutId(null);
-    }
+    // Fallback si SumUp ne renvoie pas le paramètre (ex: 3DS / redirection)
+    const storedId = readPersistedSumupCheckoutId();
+    setEffectiveCheckoutId(storedId);
   }, [checkoutIdFromQuery]);
 
   useEffect(() => {
@@ -80,13 +72,9 @@ const PaymentSuccess = () => {
 
         if (verifyData.status === "PAID") {
           setPaymentStatus("success");
-          try {
-            localStorage.removeItem("sumup_last_checkout_id");
-            localStorage.removeItem("sumup_last_checkout_ts");
-          } catch {
-            // ignore
-          }
+          clearPersistedSumupCheckoutId();
         } else if (verifyData.status === "PENDING") {
+
           setPaymentStatus("loading");
           setError("Transaction en cours. Vérification dans 5 secondes...");
           setTimeout(() => {

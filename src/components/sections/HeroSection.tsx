@@ -195,7 +195,7 @@ const HeroSection: React.FC = () => {
             </h1>
             <div className="text-left">
               <div className="flex items-center gap-1.5">
-                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">100€</span>
+                <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">86€</span>
                 <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
                 <span className="w-px h-3 bg-gray-300"></span>
                 <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>

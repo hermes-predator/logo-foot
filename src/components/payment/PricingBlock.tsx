@@ -28,7 +28,7 @@ const PricingBlock = () => {
             <div>
               {/* Prix normal barré avec meilleur contraste */}
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-gray-500 text-2xl line-through font-medium">100,00€</span>
+                <span className="text-gray-500 text-2xl line-through font-medium">86,00€</span>
                 <span className="bg-red-100 text-red-800 px-2 py-0.5 rounded-md text-xs font-semibold border border-red-200 shadow-sm">Valeur réelle</span>
               </div>
               

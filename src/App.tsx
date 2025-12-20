@@ -14,7 +14,7 @@ import NotFound from './pages/NotFound';
 import { Toaster } from "@/components/ui/toaster";
 import Header from './components/Header';
 import MetaTagsManager from './components/SEO/MetaTagsManager';
-import PaymentModalHost from './components/payment/PaymentModalHost';
+
 import { RecentBuyersProvider } from './contexts/RecentBuyersContext';
 
 // Créer un client pour React Query
@@ -36,7 +36,7 @@ const App = () => {
             <Router basename="/">
               <MetaTagsManager />
               <Header />
-              <PaymentModalHost />
+              
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/blog" element={<Blog />} />

@@ -175,7 +175,7 @@ const Header = () => {
         {/* Bouton Acheter à droite */}
         {!isMobile && (
           <Button
-            onClick={() => navigate('/?pay=1')}
+            onClick={() => navigate('/payment')}
             variant="outline"
             className="flex items-center gap-1 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-2.5 py-1 text-[11px] rounded-sm transition-all h-auto"
           >

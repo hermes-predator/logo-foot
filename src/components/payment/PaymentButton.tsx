@@ -1,5 +1,5 @@
-
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ShoppingCart, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
@@ -7,30 +7,15 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useToast } from "@/hooks/use-toast";
 import ButtonEffects from './ButtonEffects';
 
 interface PaymentButtonProps { label?: string; }
+
 const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
-  const { toast } = useToast();
-  const [isRedirecting, setIsRedirecting] = useState(false);
+  const navigate = useNavigate();
 
   const handlePayment = () => {
-    setIsRedirecting(true);
-    toast({
-      title: "Paiement sécurisé",
-      description: "Ouverture du module de paiement",
-    });
-
-    const url = new URL(window.location.href);
-    url.searchParams.set('pay', '1');
-    window.history.pushState({}, '', url.toString());
-
-    window.dispatchEvent(new CustomEvent('open-payment-modal'));
-
-    setTimeout(() => {
-      setIsRedirecting(false);
-    }, 1200);
+    navigate('/payment');
   };
 
   return (
@@ -66,7 +51,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
-                  {isRedirecting ? "Redirection en cours..." : (label ?? "Télécharger (8€)")}
+                  {label ?? "Télécharger (8€)"}
                 </span>
               </div>
               <ArrowRight 

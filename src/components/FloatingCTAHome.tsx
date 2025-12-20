@@ -1,12 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-interface FloatingCTAHomeProps {
-  onScrollToPayment: () => void;
-}
+const FloatingCTAHome: React.FC = () => {
+  const navigate = useNavigate();
 
-const FloatingCTAHome = ({ onScrollToPayment }: FloatingCTAHomeProps) => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <div className="bg-primary rounded-lg shadow-lg border border-white/20 overflow-hidden max-w-xs">
@@ -20,7 +19,7 @@ const FloatingCTAHome = ({ onScrollToPayment }: FloatingCTAHomeProps) => {
           </div>
           
           <Button 
-            onClick={onScrollToPayment}
+            onClick={() => navigate('/payment')}
             variant="secondary"
             size="sm"
             className="bg-white hover:bg-gray-100 text-primary font-semibold text-xs w-full"

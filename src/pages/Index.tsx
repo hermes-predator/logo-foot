@@ -17,12 +17,6 @@ const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSecti
 const LazyTestimonials = lazy(() => import('../components/Testimonials'));
 
 const Index = () => {
-  const scrollToPayment = () => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('pay', '1');
-    window.history.pushState({}, '', url.toString());
-    window.dispatchEvent(new CustomEvent('open-payment-modal'));
-  };
 
   // Création des données structurées optimisées pour la page d'accueil
   const localBusinessData = LocalBusinessSchema({});
@@ -224,11 +218,9 @@ const Index = () => {
       <main>
         <div className="container mx-auto">
           <div className="pb-0">
-            <HeroSection 
-              onScrollToPayment={scrollToPayment} 
-            />
+            <HeroSection />
           </div>
-          
+
           {/* FlipBox indépendante juste au-dessus de la galerie */}
           <div className="pb-0 mt-4">
             <div className="container mx-auto px-4">

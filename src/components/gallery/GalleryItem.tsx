@@ -67,10 +67,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   // Fonction pour obtenir le texte descriptif de la collection et la valeur estimée
   const getCollectionData = (item: GalleryItemProps['item']): { text: string; estimatedValue: number } => {
     // Pour les collections spéciales (items 61-64)
-    if (item.id === 61) return { text: "Fichier de + 100 logos de compétitions de football", estimatedValue: 25 };
-    if (item.id === 62) return { text: "Fichier de + 100 couvertures (Wallet.Type) de clubs européens", estimatedValue: 30 };
-    if (item.id === 63) return { text: "Fichier de + 100 couvertures (Wallet.Type) de sélections nationales", estimatedValue: 30 };
-    if (item.id === 64) return { text: "Fichier de + 270 logos de drapeaux mondiaux", estimatedValue: 35 };
+    if (item.id === 61) return { text: "Fichier de + 100 logos de compétitions de football", estimatedValue: 1 };
+    if (item.id === 62) return { text: "Fichier de + 100 couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
+    if (item.id === 63) return { text: "Fichier de + 100 couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
+    if (item.id === 64) return { text: "Fichier de + 270 logos de drapeaux mondiaux", estimatedValue: 2.70 };
     
     // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {
@@ -200,8 +200,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     const logoCount = logoCountByCountry[item.country] || 240;
     const adjective = countryToAdjective[item.country] || item.country.toLowerCase();
     
-    // Calcul de la valeur estimée basée sur le nombre de logos (environ 0.10€ par logo)
-    const estimatedValue = Math.round(logoCount * 0.1);
+    // Calcul de la valeur estimée basée sur le nombre de logos (0.01€ par logo)
+    const estimatedValue = Math.round(logoCount * 0.01 * 100) / 100;
     
     return { text: `Fichier de + ${logoCount} logos de clubs ${adjective}`, estimatedValue };
   };
@@ -354,7 +354,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           {getCollectionData(item).text}
         </p>
         <p className="text-xs text-emerald-600 font-semibold">
-          Valeur estimée : {getCollectionData(item).estimatedValue}€
+          Valeur estimée : {getCollectionData(item).estimatedValue}€ <span className="text-gray-400 font-normal">(soit 0.01€/logo)</span>
         </p>
       </div>
     </div>

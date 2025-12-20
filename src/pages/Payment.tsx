@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ShieldCheck } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import PaymentWidget from '@/components/payment/PaymentWidget';
 
 const Payment = () => {
@@ -25,10 +25,6 @@ const Payment = () => {
 
           {/* Titre */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 text-green-700 bg-green-50 px-3 py-1.5 rounded-full text-sm font-medium mb-3">
-              <ShieldCheck className="w-4 h-4" />
-              Paiement 100% sécurisé
-            </div>
             <h1 className="text-2xl font-bold text-gray-900">Finaliser votre achat</h1>
           </div>
 

@@ -70,12 +70,13 @@ serve(async (req) => {
       ? description.replace(/[^\w\s\-\.]/g, '').substring(0, 100)
       : 'Football.zip - Collection de logos'
 
+    const baseReturnUrl = `${req.headers.get('origin') || 'https://www.logo-foot.com'}/payment-success-token13061995`
+
     const checkoutPayload = {
       checkout_reference: checkoutReference,
       amount: Number(amount),
       currency: currency || 'EUR',
       description: cleanDescription,
-      return_url: `${req.headers.get('origin') || 'https://www.logo-foot.com'}/payment-success-token13061995`,
       merchant_code: resolvedMerchantCode,
     }
 
@@ -107,6 +108,28 @@ serve(async (req) => {
     }
 
     const checkoutData = JSON.parse(responseText)
+    
+    // Ajouter le checkout_id à la return_url pour que la page de succès puisse vérifier le paiement
+    const returnUrlWithCheckoutId = `${baseReturnUrl}?checkout_id=${checkoutData.id}`
+    
+    // Mettre à jour le checkout avec la return_url contenant le checkout_id
+    const updateResponse = await fetch(`${SUMUP_API_URL}/checkouts/${checkoutData.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${sumupKey}`,
+      },
+      body: JSON.stringify({
+        return_url: returnUrlWithCheckoutId,
+      }),
+    })
+    
+    if (updateResponse.ok) {
+      console.log('Return URL mise à jour avec checkout_id:', returnUrlWithCheckoutId)
+      checkoutData.return_url = returnUrlWithCheckoutId
+    } else {
+      console.log('Impossible de mettre à jour return_url, utilisation de la redirection côté client')
+    }
 
     return new Response(
       JSON.stringify(checkoutData),

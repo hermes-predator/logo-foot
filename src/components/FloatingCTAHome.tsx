@@ -25,7 +25,7 @@ const FloatingCTAHome: React.FC = () => {
             className="bg-white hover:bg-gray-100 text-primary font-semibold text-xs w-full"
           >
             <span className="font-semibold">Télécharger</span>
-            <span className="ml-1 font-normal">(1€)</span>
+            <span className="ml-1 font-normal">(8€)</span>
           </Button>
         </div>
       </div>

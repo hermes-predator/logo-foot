@@ -146,6 +146,27 @@ const PaymentSuccess = () => {
               </CardHeader>
               
               <CardContent className="space-y-6">
+                {/* Résumé de l'achat */}
+                <div className="bg-muted/50 p-4 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Download className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-primary">⦗FRONT-CLOUD⦘~ Football.zip</h3>
+                      <p className="text-sm text-muted-foreground">Quantité : 1</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center mt-4 pt-3 border-t border-border">
+                    <span className="font-semibold text-foreground">Total :</span>
+                    <span className="font-bold text-primary text-lg">
+                      {paymentData?.amount !== undefined 
+                        ? new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount) + ' €' 
+                        : '1.00 €'}
+                    </span>
+                  </div>
+                </div>
+
                 <div className="text-center">
                   <Button 
                     onClick={handleDownload}
@@ -153,18 +174,8 @@ const PaymentSuccess = () => {
                     className="w-full sm:w-auto"
                   >
                     <Download className="mr-2 h-5 w-5" />
-                    Télécharger votre collection (ZIP)
+                    Télécharger le fichier (ZIP)
                   </Button>
-                </div>
-
-                <div className="bg-muted p-4 rounded-lg">
-                  <h3 className="font-semibold text-foreground mb-2">Détails de votre achat :</h3>
-                  <ul className="text-muted-foreground space-y-1">
-                    <li>• +1000 logos de football en PNG transparent</li>
-                    <li>• Clubs européens, équipes nationales, compétitions</li>
-                    <li>• Fichiers haute qualité prêts à utiliser</li>
-                    <li>• Licence d'utilisation incluse</li>
-                  </ul>
                 </div>
 
                 <ReceiptDownload 

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Loader2, Folder, Info, ShieldCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { persistSumupCheckoutId } from "@/lib/sumup-checkout";
 
 // Types pour le widget SumUp
 declare global {
@@ -100,12 +101,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       }
 
       // Fallback anti-perte de checkout_id (ex: 3DS / redirection SumUp)
-      try {
-        localStorage.setItem("sumup_last_checkout_id", id);
-        localStorage.setItem("sumup_last_checkout_ts", String(Date.now()));
-      } catch {
-        // ignore
-      }
+      persistSumupCheckoutId(id);
 
       setCheckoutId(id);
     } catch (error) {

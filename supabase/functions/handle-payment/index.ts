@@ -13,7 +13,7 @@ serve(async (req) => {
     const body = await req.json()
     console.log('Request body:', JSON.stringify(body))
     
-    const { amount, currency, description } = body
+    const { amount, currency, description, returnUrlBase } = body
     const sumupKey = Deno.env.get('SUMUP_SECRET_KEY')
     const merchantCodeFromEnv = Deno.env.get('SUMUP_MERCHANT_CODE')
 
@@ -70,7 +70,10 @@ serve(async (req) => {
       ? description.replace(/[^\w\s\-\.]/g, '').substring(0, 100)
       : 'Football.zip - Collection de logos'
 
-    const baseReturnUrl = `${req.headers.get('origin') || 'https://www.logo-foot.com'}/payment-success-token13061995`
+    const origin = req.headers.get('origin') || 'https://www.logo-foot.com'
+    const baseReturnUrl = (typeof returnUrlBase === 'string' && returnUrlBase.startsWith(origin))
+      ? returnUrlBase
+      : `${origin}/payment-success-token13061995`
 
     const checkoutPayload = {
       checkout_reference: checkoutReference,

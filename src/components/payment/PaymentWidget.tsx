@@ -88,6 +88,8 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
           amount: 8.0,
           currency: "EUR",
           description: "⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football",
+          // Assure que SumUp renvoie sur EXACTEMENT le même domaine (évite perte du checkout_id/localStorage)
+          returnUrlBase: `${window.location.origin}/payment-success-token13061995`,
         },
       });
       if (error) throw error;

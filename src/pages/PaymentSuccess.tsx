@@ -162,7 +162,7 @@ const PaymentSuccess = () => {
                     <span className="font-bold text-primary text-lg">
                       {paymentData?.amount !== undefined 
                         ? new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount) + ' €' 
-                        : '1.00 €'}
+                        : '8.00 €'}
                     </span>
                   </div>
                 </div>

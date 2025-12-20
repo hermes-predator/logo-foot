@@ -12,8 +12,8 @@ serve(async (req) => {
   try {
     const body = await req.json()
     console.log('Request body:', JSON.stringify(body))
-    
-    const { amount, currency, description, returnUrlBase } = body
+
+    const { amount, currency, description, returnUrlBase, checkout_reference } = body
     const sumupKey = Deno.env.get('SUMUP_SECRET_KEY')
     const merchantCodeFromEnv = Deno.env.get('SUMUP_MERCHANT_CODE')
 
@@ -62,9 +62,10 @@ serve(async (req) => {
 
     console.log('Resolved merchant_code:', resolvedMerchantCode)
 
-    // Générer une référence alphanumérique simple (SumUp n'accepte pas les caractères spéciaux)
-    const checkoutReference = `FC${Date.now()}`
-    
+    // Référence du checkout (doit être alphanumérique)
+    const incomingRef = typeof checkout_reference === 'string' ? checkout_reference : `FC-${Date.now()}`
+    const checkoutReference = incomingRef.replace(/[^A-Za-z0-9]/g, '').slice(0, 64) || `FC${Date.now()}`
+
     // Nettoyer la description (enlever les caractères spéciaux)
     const cleanDescription = description 
       ? description.replace(/[^\w\s\-\.]/g, '').substring(0, 100)
@@ -80,7 +81,7 @@ serve(async (req) => {
       amount: Number(amount),
       currency: currency || 'EUR',
       description: cleanDescription,
-      // Important pour les redirections / 3DS (même si on n'a pas le checkout_id dans l'URL)
+      // Important pour les redirections / 3DS
       return_url: baseReturnUrl,
       merchant_code: resolvedMerchantCode,
     }
@@ -118,15 +119,22 @@ serve(async (req) => {
     const returnUrlWithCheckoutId = `${baseReturnUrl}?checkout_id=${checkoutData.id}`
 
     // Mettre à jour le checkout avec la return_url contenant le checkout_id (si l'API SumUp l'autorise)
+    // NOTE: l'endpoint Update peut exiger des champs obligatoires (ex: payment_type), on renvoie donc un payload complet.
+    const updatePayload = {
+      ...checkoutPayload,
+      return_url: returnUrlWithCheckoutId,
+      payment_type: 'card',
+    }
+
+    console.log('SumUp update return_url payload:', JSON.stringify(updatePayload))
+
     const updateResponse = await fetch(`${SUMUP_API_URL}/checkouts/${checkoutData.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${sumupKey}`,
       },
-      body: JSON.stringify({
-        return_url: returnUrlWithCheckoutId,
-      }),
+      body: JSON.stringify(updatePayload),
     })
 
     const updateText = await updateResponse.text().catch(() => '')

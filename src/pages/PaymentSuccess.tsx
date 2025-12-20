@@ -200,16 +200,7 @@ const PaymentSuccess = () => {
               </Alert>
               
               <div className="text-center">
-                <Button 
-                  onClick={() => window.location.href = '/'}
-                  variant="outline"
-                  className="mr-4"
-                >
-                  Retour à l'accueil
-                </Button>
-                 <Button 
-                  onClick={() => window.location.reload()}
-                >
+                <Button onClick={() => window.location.reload()}>
                   Réessayer la vérification
                 </Button>
               </div>
@@ -238,14 +229,7 @@ const PaymentSuccess = () => {
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
               
-              <div className="text-center">
-                <Button 
-                  onClick={() => window.location.href = '/'}
-                  className="bg-blue-500 hover:bg-blue-600"
-                >
-                  Retour à l'accueil
-                </Button>
-              </div>
+              {/* Pas de bouton "Retour à l'accueil" ici (demande UX) */}
             </CardContent>
           </Card>
         );

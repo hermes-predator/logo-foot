@@ -20,11 +20,12 @@ function setCookie(value: string, maxAgeSeconds: number) {
     const host = window.location.hostname;
     const base = `${COOKIE_NAME}=${encodeURIComponent(value)}; Path=/; Max-Age=${maxAgeSeconds}; SameSite=Lax; Secure`;
 
-    // Partage entre www et racine (ex: www.logo-foot.com / logo-foot.com)
+    // Toujours écrire le cookie "hôte" (www ou racine)
+    document.cookie = base;
+
+    // Et aussi un cookie cross-subdomain quand on est sur logo-foot.com
     if (host.endsWith("logo-foot.com")) {
       document.cookie = `${base}; Domain=.logo-foot.com`;
-    } else {
-      document.cookie = base;
     }
   } catch {
     // ignore

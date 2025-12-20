@@ -77,6 +77,8 @@ serve(async (req) => {
       amount: Number(amount),
       currency: currency || 'EUR',
       description: cleanDescription,
+      // Important pour les redirections / 3DS (même si on n'a pas le checkout_id dans l'URL)
+      return_url: baseReturnUrl,
       merchant_code: resolvedMerchantCode,
     }
 
@@ -108,11 +110,11 @@ serve(async (req) => {
     }
 
     const checkoutData = JSON.parse(responseText)
-    
+
     // Ajouter le checkout_id à la return_url pour que la page de succès puisse vérifier le paiement
     const returnUrlWithCheckoutId = `${baseReturnUrl}?checkout_id=${checkoutData.id}`
-    
-    // Mettre à jour le checkout avec la return_url contenant le checkout_id
+
+    // Mettre à jour le checkout avec la return_url contenant le checkout_id (si l'API SumUp l'autorise)
     const updateResponse = await fetch(`${SUMUP_API_URL}/checkouts/${checkoutData.id}`, {
       method: 'PUT',
       headers: {
@@ -123,7 +125,11 @@ serve(async (req) => {
         return_url: returnUrlWithCheckoutId,
       }),
     })
-    
+
+    const updateText = await updateResponse.text().catch(() => '')
+    console.log('SumUp update return_url status:', updateResponse.status)
+    if (updateText) console.log('SumUp update return_url body:', updateText.slice(0, 500))
+
     if (updateResponse.ok) {
       console.log('Return URL mise à jour avec checkout_id:', returnUrlWithCheckoutId)
       checkoutData.return_url = returnUrlWithCheckoutId

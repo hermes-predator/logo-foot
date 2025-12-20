@@ -22,61 +22,89 @@ interface SumUpCheckoutResponse {
 
 const PaymentSuccess = () => {
   const [searchParams] = useSearchParams();
-  const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>('loading');
+  const [paymentStatus, setPaymentStatus] = useState<PaymentStatus>("loading");
   const [paymentData, setPaymentData] = useState<SumUpCheckoutResponse | null>(null);
-  const [error, setError] = useState<string>('');
+  const [error, setError] = useState<string>("");
 
-  const checkoutId = searchParams.get('checkout_id');
+  const checkoutIdFromQuery = searchParams.get("checkout_id");
+  const [effectiveCheckoutId, setEffectiveCheckoutId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (checkoutIdFromQuery) {
+      setEffectiveCheckoutId(checkoutIdFromQuery);
+      return;
+    }
+
+    // Fallback si SumUp ne renvoie pas le paramètre (ex: 3DS)
+    try {
+      const storedId = localStorage.getItem("sumup_last_checkout_id");
+      const ts = Number(localStorage.getItem("sumup_last_checkout_ts") || 0);
+
+      // On accepte uniquement un checkout récent (2h)
+      if (storedId && ts && Date.now() - ts < 2 * 60 * 60 * 1000) {
+        setEffectiveCheckoutId(storedId);
+      } else {
+        setEffectiveCheckoutId(null);
+      }
+    } catch {
+      setEffectiveCheckoutId(null);
+    }
+  }, [checkoutIdFromQuery]);
 
   useEffect(() => {
     const verifyPayment = async () => {
-      if (!checkoutId) {
-        setPaymentStatus('invalid');
-        setError('Identifiant de transaction manquant.');
+      if (!effectiveCheckoutId) {
+        setPaymentStatus("invalid");
+        setError("Identifiant de transaction manquant.");
         return;
       }
 
       try {
-        console.log('Vérification du paiement avec checkout_id:', checkoutId);
-        
-        const { supabase } = await import('@/integrations/supabase/client');
-        const { data: respData, error } = await supabase.functions.invoke('verify-payment', {
-          body: { checkoutId }
+        console.log("Vérification du paiement avec checkout_id:", effectiveCheckoutId);
+
+        const { supabase } = await import("@/integrations/supabase/client");
+        const { data: respData, error } = await supabase.functions.invoke("verify-payment", {
+          body: { checkoutId: effectiveCheckoutId },
         });
 
-        console.log('Réponse verify-payment:', error || respData);
+        console.log("Réponse verify-payment:", error || respData);
 
         if (error) {
-          throw new Error(`Erreur Edge Function verify-payment: ${error.message || 'unknown'}`);
+          throw new Error(`Erreur Edge Function verify-payment: ${error.message || "unknown"}`);
         }
 
         const verifyData: SumUpCheckoutResponse = respData as any;
-        console.log('Données du paiement:', verifyData);
-        
+        console.log("Données du paiement:", verifyData);
+
         setPaymentData(verifyData);
 
-        if (verifyData.status === 'PAID') {
-          setPaymentStatus('success');
-        } else if (verifyData.status === 'PENDING') {
-          setPaymentStatus('loading');
-          setError('Transaction en cours. Vérification dans 5 secondes...');
+        if (verifyData.status === "PAID") {
+          setPaymentStatus("success");
+          try {
+            localStorage.removeItem("sumup_last_checkout_id");
+            localStorage.removeItem("sumup_last_checkout_ts");
+          } catch {
+            // ignore
+          }
+        } else if (verifyData.status === "PENDING") {
+          setPaymentStatus("loading");
+          setError("Transaction en cours. Vérification dans 5 secondes...");
           setTimeout(() => {
             window.location.reload();
           }, 5000);
         } else {
-          setPaymentStatus('failed');
-          setError('Transaction non validée.');
+          setPaymentStatus("failed");
+          setError("Transaction non validée.");
         }
-
       } catch (error) {
-        console.error('Erreur lors de la vérification du paiement:', error);
-        setPaymentStatus('failed');
-        setError('Erreur de vérification. Contactez le support.');
+        console.error("Erreur lors de la vérification du paiement:", error);
+        setPaymentStatus("failed");
+        setError("Erreur de vérification. Contactez le support.");
       }
     };
 
     verifyPayment();
-  }, [checkoutId]);
+  }, [effectiveCheckoutId]);
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -155,7 +183,7 @@ const PaymentSuccess = () => {
                   purchaseDate={paymentData?.date ? new Date(paymentData.date) : new Date()}
                   productName="⦗FRONT-CLOUD⦘~ Football.zip"
                   price={paymentData?.amount !== undefined ? `${new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount)} €` : "5 €"}
-                  orderNumber={checkoutId || `FC-${Date.now().toString().slice(-6)}`}
+                  orderNumber={effectiveCheckoutId || `FC-${Date.now().toString().slice(-6)}`}
                 />
               </CardContent>
             </Card>
@@ -257,7 +285,7 @@ const PaymentSuccess = () => {
                 Besoin d'aide ? Contactez-nous à contact@logo-foot.com
               </p>
               <p className="text-xs mt-2">
-                Transaction ID: {checkoutId}
+                Transaction ID: {effectiveCheckoutId}
               </p>
             </div>
           )}

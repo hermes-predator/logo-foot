@@ -85,13 +85,27 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       const { data, error } = await supabase.functions.invoke("handle-payment", {
         body: {
           checkout_reference: `FC-${Date.now()}`,
-          amount: 8.00,
+          amount: 8.0,
           currency: "EUR",
           description: "⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football",
         },
       });
       if (error) throw error;
-      setCheckoutId(data.id);
+
+      const id = data?.id as string | undefined;
+      if (!id) {
+        throw new Error("Checkout ID manquant");
+      }
+
+      // Fallback anti-perte de checkout_id (ex: 3DS / redirection SumUp)
+      try {
+        localStorage.setItem("sumup_last_checkout_id", id);
+        localStorage.setItem("sumup_last_checkout_ts", String(Date.now()));
+      } catch {
+        // ignore
+      }
+
+      setCheckoutId(id);
     } catch (error) {
       toast({
         title: "Erreur",

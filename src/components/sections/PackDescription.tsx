@@ -1,27 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ShoppingCart, ArrowRight, Folder, Globe, Cloud, RefreshCw, Star, Shield, Trophy, Flag, Image, Coins, Download, Users, Check, Package, FileArchive, BadgeDollarSign, Circle, Sparkles, HelpCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FolderCard from './folders/FolderCard';
-import { useToast } from "@/hooks/use-toast";
 import { DialogClose } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+
 const PackDescription = () => {
-  const {
-    toast
-  } = useToast();
+  const navigate = useNavigate();
+
   const handlePayment = () => {
-    toast({
-      title: "Paiement sécurisé",
-      description: "Ouverture du module de paiement",
-    });
-    const url = new URL(window.location.href);
-    url.searchParams.set('pay', '1');
-    window.history.pushState({}, '', url.toString());
-    window.dispatchEvent(new CustomEvent('open-payment-modal'));
+    navigate('/payment');
   };
+
   return <div className="space-y-0.5 mt-1">
       {/* Removed the title section completely */}
       
@@ -246,4 +240,5 @@ const PackDescription = () => {
       </div>
     </div>;
 };
+
 export default PackDescription;

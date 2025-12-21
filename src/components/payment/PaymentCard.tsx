@@ -120,7 +120,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <div className="relative z-10">
             <FeatureList />
             <PricingBlock />
-            <PaymentButton label="Télécharger maintenant (8€)" />
+            <PaymentButton label="Télécharger maintenant (12,90€)" />
           </div>
         </div>
         

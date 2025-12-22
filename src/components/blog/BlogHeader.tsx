@@ -10,6 +10,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { Separator } from '@/components/ui/separator';
 import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import trustpilotLogo from '@/assets/trustpilot-logo.png';
 
 const BlogHeader = () => {
   return <div className="w-full relative overflow-hidden rounded-b-3xl" style={{ backgroundColor: 'rgb(30, 29, 28)' }}>
@@ -21,26 +22,7 @@ const BlogHeader = () => {
         <div className="container mx-auto px-4 pt-8 pb-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pr-4">
             {/* Contenu principal à gauche */}
-            <div className="flex-1 space-y-6">
-              {/* Badges de confiance minimalistes */}
-              <div className="flex flex-wrap items-center gap-3 ml-8 -mt-2 text-[11px] sm:text-xs text-gray-400">
-                <div className="flex items-center gap-1.5">
-                  <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5 opacity-80" />
-                  <span>Paiement Sécurisé</span>
-                </div>
-                <span className="text-gray-600">•</span>
-                <div className="flex items-center gap-1.5">
-                  <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5 opacity-80" />
-                  <span>Stockable sur Drive</span>
-                </div>
-                <span className="text-gray-600">•</span>
-                <div className="flex items-center gap-1">
-                  <img src="/lovable-uploads/c29c7e48-870f-4f9d-a090-7bc0cf0ae498.png" alt="TrustPilot" className="h-3.5 opacity-80" />
-                  <span className="font-medium">4.8/5</span>
-                </div>
-              </div>
-              
-              
+            <div className="flex-1 space-y-4">
               {/* Texte principal */}
               <div className="space-y-3 ml-8">
                 <p className="text-xl md:text-2xl text-white max-w-3xl leading-relaxed">
@@ -52,6 +34,24 @@ const BlogHeader = () => {
                 <p className="text-xs md:text-sm font-normal text-gray-300">
                   Obtenez un fichier ZIP complet parfaitement organisé par pays*
                 </p>
+                
+                {/* Badges de confiance minimalistes - sous les textes */}
+                <div className="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs text-gray-400 pt-2">
+                  <div className="flex items-center gap-1.5">
+                    <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5 opacity-80" />
+                    <span>Paiement Sécurisé</span>
+                  </div>
+                  <span className="text-gray-600">•</span>
+                  <div className="flex items-center gap-1.5">
+                    <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5 opacity-80" />
+                    <span>Stockable sur Drive</span>
+                  </div>
+                  <span className="text-gray-600">•</span>
+                  <div className="flex items-center gap-1">
+                    <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5 opacity-80" />
+                    <span className="font-medium">4.8/5</span>
+                  </div>
+                </div>
               </div>
             </div>
             

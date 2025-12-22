@@ -76,7 +76,7 @@ const BlogHeader = () => {
                     </div>
                   ))}
                 </div>
-                <span className="text-gray-300 font-medium">4.8</span>
+                <span className="text-gray-300 font-medium">4.8/5 sur 1034 avis vérifiés</span>
               </div>
             </div>
           </div>

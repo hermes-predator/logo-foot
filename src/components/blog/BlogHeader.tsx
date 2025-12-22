@@ -1,6 +1,6 @@
 
 import React from 'react';
-import GoogleDriveBadge from '../payment/GoogleDriveBadge';
+
 import FloatingParticles from './FloatingParticles';
 import TrustPilotBadge from '../TrustPilotBadge';
 import BlogHeaderCarousel from './BlogHeaderCarousel';
@@ -22,47 +22,22 @@ const BlogHeader = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pr-4">
             {/* Contenu principal à gauche */}
             <div className="flex-1 space-y-6">
-              {/* Container intégré folder + Google Drive - design unifié et harmonieux */}
-              <div className="relative ml-8 -mt-2">
-                <Link to="/" className="block">
-                  <TooltipProvider>
-                    <Tooltip delayDuration={300}>
-                      <TooltipTrigger asChild>
-                        <div className="inline-flex items-center backdrop-blur-md rounded-xl overflow-hidden hover:bg-opacity-90 transition-all duration-200" 
-                             style={{ backgroundColor: 'rgba(40, 38, 36, 0.98)' }}>
-                          
-                          {/* Section folder avec icône - sans couleur de fond */}
-                          <div className="px-2.5 py-1.5 flex items-center justify-center rounded-l-xl relative overflow-hidden pl-4">
-                            {/* Effet de brillance subtil pour le branding */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-500"></div>
-                            <Folder className="w-5.5 h-5.5 relative z-10 transition-colors duration-300" fill="rgba(65, 63, 61, 0.8)" stroke="rgba(65, 63, 61, 0.8)" />
-                          </div>
-                          
-                          {/* Séparateur élégant centré - parfaitement aligné */}
-                          <div className="px-1 py-1.5 flex items-center justify-center">
-                            <div className="w-px h-5 bg-gradient-to-b from-gray-500/30 via-gray-400/60 to-gray-500/30"></div>
-                          </div>
-                          
-                          {/* Section Google Drive badge intégrée - parfaitement alignée */}
-                          <div className="pl-1 pr-1.5 py-1.5 rounded-r-xl flex items-center justify-center">
-                            <div className="relative z-10">
-                              <GoogleDriveBadge 
-                                className="border-0 bg-transparent" 
-                                textOnly={true} 
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent side="bottom" sideOffset={3} align="start" className="text-white p-3 shadow-lg max-w-xs" style={{ backgroundColor: 'rgb(45, 43, 41)', border: '1px solid rgba(55, 53, 51, 0.8)' }}>
-                        <div className="text-sm">
-                          <div className="font-semibold mb-2">Accès direct au fichier</div>
-                          <div className="text-gray-300">Ce fichier est immédiatement utilisable. Stockage sur votre Google Drive, votre ordinateur ou un disque dur.</div>
-                        </div>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+              {/* Badges de confiance minimalistes */}
+              <div className="flex flex-wrap items-center gap-3 ml-8 -mt-2 text-[11px] sm:text-xs text-gray-400">
+                <div className="flex items-center gap-1.5">
+                  <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5 opacity-80" />
+                  <span>Paiement Sécurisé</span>
+                </div>
+                <span className="text-gray-600">•</span>
+                <div className="flex items-center gap-1.5">
+                  <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5 opacity-80" />
+                  <span>Stockable sur Drive</span>
+                </div>
+                <span className="text-gray-600">•</span>
+                <div className="flex items-center gap-1">
+                  <img src="/lovable-uploads/c29c7e48-870f-4f9d-a090-7bc0cf0ae498.png" alt="TrustPilot" className="h-3.5 opacity-80" />
+                  <span className="font-medium">4.8/5</span>
+                </div>
               </div>
               
               

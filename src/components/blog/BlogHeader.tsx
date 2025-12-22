@@ -58,7 +58,7 @@ const BlogHeader = () => {
                   style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
                 >
                   <Folder className="w-5 h-5" />
-                  <span>⦗FRONT-CLOUD⦘~ Football.zip (+8 800 Logos de football)</span>
+                  <span>⦗FRONT-CLOUD⦘~ Football.zip</span>
                   <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
               </Link>

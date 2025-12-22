@@ -353,9 +353,12 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         <p className="text-xs text-gray-500 font-medium">
           {getCollectionData(item).text}
         </p>
-        <p className="text-xs text-emerald-600 font-semibold">
-          Valeur estimée : {getCollectionData(item).estimatedValue}€ <span className="text-gray-400 font-normal">(soit 0.01€/logo)</span>
-        </p>
+        <div className="flex items-center justify-center gap-1.5">
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold">
+            Valeur : {getCollectionData(item).estimatedValue}€
+          </span>
+          <span className="text-gray-400 text-[10px] font-normal">(0.01€/logo)</span>
+        </div>
       </div>
     </div>
   );

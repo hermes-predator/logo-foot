@@ -258,9 +258,9 @@ const HeroSection: React.FC = () => {
                   muted 
                   loop 
                   playsInline
-                  poster="/placeholder.svg"
+                  preload="auto"
                 >
-                  <source src="/videos/preview-zip.mp4" type="video/mp4" />
+                  <source src="https://www.logo-foot.com/videos/preview-zip.mp4" type="video/mp4" />
                   <div className="w-full h-48 bg-gray-100 flex items-center justify-center">
                     <Folder className="w-12 h-12 text-gray-400" />
                   </div>

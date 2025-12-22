@@ -36,19 +36,19 @@ const BlogHeader = () => {
                 </p>
                 
                 {/* Badges de confiance minimalistes - sous les textes */}
-                <div className="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs text-gray-400 pt-2">
+                <div className="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs text-gray-300 pt-2">
                   <div className="flex items-center gap-1.5">
-                    <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5 opacity-80" />
+                    <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5 brightness-0 invert opacity-70" />
                     <span>Paiement Sécurisé</span>
                   </div>
-                  <span className="text-gray-600">•</span>
+                  <span className="text-gray-500">•</span>
                   <div className="flex items-center gap-1.5">
-                    <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5 opacity-80" />
+                    <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5 opacity-90" />
                     <span>Stockable sur Drive</span>
                   </div>
-                  <span className="text-gray-600">•</span>
+                  <span className="text-gray-500">•</span>
                   <div className="flex items-center gap-1">
-                    <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5 opacity-80" />
+                    <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5 brightness-0 invert opacity-70" />
                     <span className="font-medium">4.8/5</span>
                   </div>
                 </div>

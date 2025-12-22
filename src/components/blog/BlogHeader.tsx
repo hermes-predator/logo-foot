@@ -2,12 +2,7 @@
 import React from 'react';
 
 import FloatingParticles from './FloatingParticles';
-import TrustPilotBadge from '../TrustPilotBadge';
 import BlogHeaderCarousel from './BlogHeaderCarousel';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Separator } from '@/components/ui/separator';
 import { Folder, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
@@ -55,65 +50,23 @@ const BlogHeader = () => {
               </div>
             </div>
             
-            {/* Section droite - Button et JudgeMe */}
-            <div className="lg:flex-shrink-0 flex flex-col items-center gap-0 mr-4">
-              <div className="relative backdrop-blur-md rounded-lg overflow-hidden" style={{ backgroundColor: 'rgba(60, 56, 54, 0.4)' }}>
-                
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Link to="/" className="block w-full">
-                        <button 
-                          className="group w-full h-20 px-10 py-4 text-lg gap-4 font-bold relative overflow-hidden rounded-lg rounded-b-none transition-all duration-300 flex items-center justify-center text-white"
-                          style={{ 
-                            backgroundColor: 'rgba(50, 48, 46, 0.6)',
-                            border: 'none'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor = 'rgba(70, 68, 66, 0.8)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.backgroundColor = 'rgba(50, 48, 46, 0.6)';
-                          }}
-                        >
-                          <Folder className="!w-7 !h-7 relative z-10 text-white" />
-                          <span className="relative z-10 text-white">Voir le fichier</span>
-                          <ArrowRight className="h-6 w-6 relative z-10 text-white transition-transform duration-300 group-hover:translate-x-1" />
-                        </button>
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent side="right" className="text-white p-4" style={{ backgroundColor: 'rgb(30, 29, 28)', border: 'none' }}>
-                      <div className="text-sm">
-                        <div className="font-semibold mb-3 text-center">⦗FRONT-CLOUD⦘~ Football.zip</div>
-                        <Separator className="bg-gray-700 mb-3" />
-                        <div className="grid grid-cols-2 gap-2">
-                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
-                            1 fichier ZIP
-                          </Badge>
-                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
-                            66 collections
-                          </Badge>
-                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
-                            8 774 logos
-                          </Badge>
-                          <Badge className="text-white" style={{ backgroundColor: 'rgba(45, 43, 41, 0.8)' }}>
-                            Format PNG
-                          </Badge>
-                        </div>
-                      </div>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-                
-                {/* Ligne de séparation subtile */}
-                <div className="h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent"></div>
-                
-                <div 
-                  className="group px-4 py-2" 
-                  style={{ backgroundColor: 'rgba(50, 48, 46, 0.6)' }}
+            {/* Section droite - CTA simplifié */}
+            <div className="lg:flex-shrink-0 flex flex-col items-center gap-3 mr-4">
+              <Link to="/" className="block">
+                <button 
+                  className="group px-8 py-4 text-base font-semibold rounded-xl transition-all duration-300 flex items-center gap-3 text-white border border-white/20 hover:border-white/40 hover:bg-white/10"
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
                 >
-                  <TrustPilotBadge variant="dark" />
-                </div>
+                  <Folder className="w-5 h-5" />
+                  <span>Voir le fichier</span>
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </button>
+              </Link>
+              
+              {/* TrustPilot discret */}
+              <div className="flex items-center gap-2 text-xs text-gray-400">
+                <img src={trustpilotLogo} alt="TrustPilot" className="h-4 brightness-0 invert opacity-60" />
+                <span>4.8/5 • +1000 avis</span>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ interface InlineCTAProps {
 }
 
 const InlineCTA: React.FC<InlineCTAProps> = ({
-  title = "Découvrez +8600 logos de football en un seul fichier",
+  title = "Découvrez +8800 logos de football en un seul fichier",
   description = "Collection premium triée par pays et compétitions — idéale pour vos projets."
 }) => {
   return (

@@ -63,17 +63,20 @@ const BlogHeader = () => {
                 </button>
               </Link>
               
-              {/* TrustPilot avec étoiles */}
+              {/* TrustPilot avec étoiles originales */}
               <div className="flex items-center gap-2 text-xs text-gray-400">
-                <img src={trustpilotLogo} alt="TrustPilot" className="h-4 brightness-0 invert opacity-60" />
-                <div className="flex items-center gap-0.5">
+                <img src={trustpilotLogo} alt="TrustPilot" className="h-4 brightness-0 invert opacity-70" />
+                <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="#00b67a">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
+                    <div key={i} className="w-4 h-4 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-[#00b67a]" />
+                      <svg viewBox="0 0 24 24" className="w-3 h-3 text-white fill-current relative z-10">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                      </svg>
+                    </div>
                   ))}
                 </div>
-                <span className="text-gray-300">4.8/5</span>
+                <span className="text-gray-300 font-medium">4.8</span>
               </div>
             </div>
           </div>

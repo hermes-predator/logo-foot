@@ -7,7 +7,7 @@ const PaymentTitle = () => {
       <p className="text-gray-700 text-lg mb-16">
         Recevez notre fichier ZIP instantanément pour{' '}
         <span className="relative inline-block font-bold">
-          <span className="relative z-10">seulement 8€</span>
+          <span className="relative z-10">seulement 5€</span>
           <span 
             className="absolute bottom-[-2px] left-0 h-3 bg-blue-200/60 -rotate-1 -z-0"
             style={{

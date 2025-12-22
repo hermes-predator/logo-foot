@@ -38,7 +38,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
               e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 1px 0 0 rgba(255, 255, 255, 0.08), inset -1px 0 0 rgba(255, 255, 255, 0.08), 0 3px 6px rgba(0, 0, 0, 0.12)';
               e.currentTarget.style.filter = 'drop-shadow(0 2px 4px rgba(59, 130, 246, 0.2))';
             }}
-            aria-label="Procéder au paiement sécurisé de 8€"
+            aria-label="Procéder au paiement sécurisé de 5€"
           >
             <ButtonEffects />
             
@@ -51,7 +51,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
               />
               <div className="flex flex-col items-center">
                 <span className="text-center font-semibold text-[1.6rem] drop-shadow-sm">
-                  {label ?? "Télécharger (8€)"}
+                  {label ?? "Télécharger (5€)"}
                 </span>
               </div>
               <ArrowRight 
@@ -76,7 +76,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
       </Tooltip>
       
       <div className="sr-only">
-        Ce bouton vous permet d'acheter et télécharger immédiatement la collection de logos de football pour 8€. 
+        Ce bouton vous permet d'acheter et télécharger immédiatement la collection de logos de football pour 5€. 
         Après paiement, vous aurez un accès instantané aux fichiers.
       </div>
     </div>

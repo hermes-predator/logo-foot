@@ -20,7 +20,7 @@ const PostFAQ: React.FC<PostFAQProps> = ({ content }) => {
                 <span className="font-semibold text-gray-900">{faq.question}</span>
                 <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
               </summary>
-              <div className="mt-3 text-gray-700 leading-relaxed text-sm">
+              <div className="mt-3 text-gray-700 leading-relaxed text-xs">
                 {faq.answer}
               </div>
             </details>

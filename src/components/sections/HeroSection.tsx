@@ -169,7 +169,7 @@ const HeroSection: React.FC = () => {
               <Button
                 size="lg"
                 onClick={goToPayment}
-                title="Paiement sécurisé avec SumUp - 8€"
+                title="Paiement sécurisé avec SumUp - 5€"
                 className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >
@@ -198,7 +198,7 @@ const HeroSection: React.FC = () => {
                 <span className="text-xs sm:text-sm font-medium text-gray-400 line-through">86€</span>
                 <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
                 <span className="w-px h-3 bg-gray-300"></span>
-                <span className="text-xs sm:text-sm font-extrabold text-gray-900">8€</span>
+                <span className="text-xs sm:text-sm font-extrabold text-gray-900">5€</span>
                 <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Cotation actuelle</span>
               </div>
             </div>

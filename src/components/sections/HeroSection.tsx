@@ -188,7 +188,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* Titre + Prix block - en dessous des boutons */}
-            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-900 text-left mt-4">
+            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-600 text-left mt-4">
               <span>
                 Tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
               </span>

@@ -150,6 +150,8 @@ const Header = () => {
               <span>Blog</span>
             </Link>
             
+            <FAQDialog variant="header" />
+            
             <Dialog>
               <DialogTrigger className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 border-transparent text-gray-300 hover:text-white`}>
                 <MessageCircle className="w-3 h-3" />
@@ -167,8 +169,6 @@ const Header = () => {
                 </div>
               </DialogContent>
             </Dialog>
-            
-            <FAQDialog variant="header" />
           </div>
         )}
 

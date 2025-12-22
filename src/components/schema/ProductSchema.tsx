@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 
 interface ProductSchemaProps {
   name: string;
@@ -23,9 +24,12 @@ export const ProductSchema = ({
   sku = "LOGOPCK1",
   availability = "InStock",
   brand = "FRONT-CLOUD",
-  aggregateRating
+  aggregateRating = {
+    ratingValue: "4.8",
+    reviewCount: "127"
+  }
 }: ProductSchemaProps) => {
-  const schema: any = {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": name,
@@ -47,16 +51,21 @@ export const ProductSchema = ({
         "@type": "Organization",
         "name": brand
       }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": aggregateRating.ratingValue,
+      "reviewCount": aggregateRating.reviewCount,
+      "bestRating": "5",
+      "worstRating": "1"
     }
   };
 
-  if (aggregateRating) {
-    schema.aggregateRating = {
-      "@type": "AggregateRating",
-      "ratingValue": aggregateRating.ratingValue,
-      "reviewCount": aggregateRating.reviewCount
-    };
-  }
-
-  return schema;
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
 };

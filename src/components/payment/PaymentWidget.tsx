@@ -86,7 +86,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       const { data, error } = await supabase.functions.invoke("handle-payment", {
         body: {
           checkout_reference: `FC-${Date.now()}`,
-          amount: 8.0,
+          amount: 5.0,
           currency: "EUR",
           description: "⦗FRONT-CLOUD⦘~ Football.zip - Collection de logos de football",
           // Assure que SumUp renvoie sur EXACTEMENT le même domaine (évite perte du checkout_id/localStorage)
@@ -122,7 +122,7 @@ const PaymentWidget: React.FC<PaymentWidgetProps> = ({ onSuccess, className }) =
       sumupCardRef.current = window.SumUpCard.mount({
         id: widgetId,
         checkoutId,
-        amount: "8.00",
+        amount: "5.00",
         currency: "EUR",
         locale: "fr-FR",
         showSubmitButton: true,

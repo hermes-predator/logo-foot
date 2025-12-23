@@ -123,7 +123,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
-            <div className="grid grid-cols-4 gap-2.5 sm:gap-3 mb-2 mt-2 max-w-[380px] sm:max-w-[450px]">
+            <div className="grid grid-cols-4 gap-2 sm:gap-2.5 mb-2 mt-2 max-w-[380px] sm:max-w-[450px]">
               <div className="bg-white rounded px-8 py-1.5 border border-gray-200 shadow-sm flex flex-col items-center justify-center">
                 <div className="text-sm sm:text-base font-bold text-gray-900">📁</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Fichier structuré</div>

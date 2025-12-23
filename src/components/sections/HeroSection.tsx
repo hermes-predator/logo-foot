@@ -124,19 +124,19 @@ const HeroSection: React.FC = () => {
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
             <div className="grid grid-cols-4 gap-1 sm:gap-1.5 text-left mb-2 mt-2">
-              <div className="bg-white rounded px-1 py-1.5 sm:px-1.5 sm:py-1.5 text-center border border-gray-200 shadow-sm">
+              <div className="bg-white rounded px-0.5 py-1.5 sm:px-1 sm:py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900 mb-0.5">+8 800</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium">Logos de football</div>
               </div>
-              <div className="bg-white rounded px-1 py-1.5 sm:px-1.5 sm:py-1.5 text-center border border-gray-200 shadow-sm">
+              <div className="bg-white rounded px-0.5 py-1.5 sm:px-1 sm:py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900 mb-0.5">+60</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium">Pays de football</div>
               </div>
-              <div className="bg-white rounded px-1 py-1.5 sm:px-1.5 sm:py-1.5 text-center border border-gray-200 shadow-sm">
+              <div className="bg-white rounded px-0.5 py-1.5 sm:px-1 sm:py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900 mb-0.5">🎨</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium">Logos uniformes</div>
               </div>
-              <div className="bg-white rounded px-1 py-1.5 sm:px-1.5 sm:py-1.5 text-center border border-gray-200 shadow-sm">
+              <div className="bg-white rounded px-0.5 py-1.5 sm:px-1 sm:py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900 mb-0.5">📁</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium">Fichier structuré</div>
               </div>

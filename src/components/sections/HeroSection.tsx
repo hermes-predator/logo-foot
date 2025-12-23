@@ -129,16 +129,16 @@ const HeroSection: React.FC = () => {
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Fichier structuré</div>
               </div>
               <div className="bg-white rounded px-2 py-1.5 text-center border border-gray-200 shadow-sm">
+                <div className="text-sm sm:text-base font-bold text-gray-900">🎨</div>
+                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Logos uniformes</div>
+              </div>
+              <div className="bg-white rounded px-2 py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900">+8 800</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Logos de football</div>
               </div>
               <div className="bg-white rounded px-2 py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-sm sm:text-base font-bold text-gray-900">+60</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Pays de football</div>
-              </div>
-              <div className="bg-white rounded px-2 py-1.5 text-center border border-gray-200 shadow-sm">
-                <div className="text-sm sm:text-base font-bold text-gray-900">🎨</div>
-                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Logos uniformes</div>
               </div>
             </div>
 

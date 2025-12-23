@@ -146,7 +146,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-4 mb-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 sm:px-10 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
                     <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
                     Fichier
                   </Button>

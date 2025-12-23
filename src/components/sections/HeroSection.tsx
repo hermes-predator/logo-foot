@@ -123,7 +123,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}
-            <div className="grid grid-cols-4 gap-0.5 sm:gap-1 mb-2 mt-2 max-w-[320px] sm:max-w-[360px]">
+            <div className="grid grid-cols-4 gap-0.5 sm:gap-1 mb-2 mt-2 max-w-[340px] sm:max-w-[390px]">
               <div className="bg-white rounded px-2 py-1.5 text-center border border-gray-200 shadow-sm">
                 <div className="text-xs sm:text-sm font-bold text-gray-900">+8 800</div>
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight">Logos de football</div>

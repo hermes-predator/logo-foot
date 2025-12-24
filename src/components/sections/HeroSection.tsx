@@ -137,8 +137,8 @@ const HeroSection: React.FC = () => {
                 <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Pays de football</div>
               </div>
               <div className="bg-white rounded px-8 py-1.5 border border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                <div className="text-sm sm:text-base font-bold text-gray-900">🎨</div>
-                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Logos uniformes</div>
+                <div className="text-sm sm:text-base font-bold text-gray-900">BONUS</div>
+                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Fichiers connexes</div>
               </div>
             </div>
 

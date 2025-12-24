@@ -144,7 +144,7 @@ export default {
 				'floating': 'floating 6s ease-in-out infinite',
 				'colorPulse': 'colorPulse 1s ease-in-out infinite',
 				'pulsateScale': 'pulsateScale 2s ease-in-out infinite',
-				'scroll-reviews': 'scroll-reviews 30s linear infinite',
+				'scroll-reviews': 'scroll-reviews 45s linear infinite',
 			}
 		}
 	},

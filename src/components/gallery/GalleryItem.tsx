@@ -354,7 +354,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           {getCollectionData(item).text}
         </p>
         <div className="flex items-center justify-center gap-1.5">
-          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-semibold">
+          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 text-[9px] font-semibold">
             Valeur : {getCollectionData(item).estimatedValue}€
           </span>
           <span className="text-gray-400 text-[10px] font-normal">(0.01€/logo)</span>

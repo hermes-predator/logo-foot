@@ -176,9 +176,7 @@ const HeroSection: React.FC = () => {
                 {/* Effet de lumière réfléchissante - identique à PaymentButton */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                 <span className="relative flex items-center justify-center gap-4 w-full">
-                  <Download 
-                    className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-y-0.5 group-hover:scale-110"
-                  />
+                  <Download className="w-6 h-6" />
                   <span className="font-bold">Télécharger maintenant</span>
                   <ArrowRight 
                     className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, FolderArchive, ShoppingCart, ArrowRight, Star, Users, Clock } from "lucide-react";
+import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -176,7 +176,7 @@ const HeroSection: React.FC = () => {
                 {/* Effet de lumière réfléchissante - identique à PaymentButton */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                 <span className="relative flex items-center justify-center gap-4 w-full">
-                  <ShoppingCart 
+                  <Download 
                     className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12"
                   />
                   <span className="font-bold">Télécharger maintenant</span>

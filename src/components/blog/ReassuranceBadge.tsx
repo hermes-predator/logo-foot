@@ -39,7 +39,7 @@ const ReassuranceBadge = () => {
       {/* Élément clignotant modifié */}
       <div className="text-center -mt-2">
         <span 
-          className="inline-block text-white px-4 py-2 rounded-md font-bold text-base shadow-md"
+          className="inline-block text-white px-4 py-2 rounded-md font-medium text-base shadow-md"
           style={{
             backgroundColor: 'rgb(40, 39, 37)',
             animation: 'fastBlink 0.8s ease-in-out infinite'

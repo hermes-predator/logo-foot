@@ -109,7 +109,7 @@ const HeroSection: React.FC = () => {
                   strokeWidth={1.5}
                 />
                 <span 
-                  className="font-normal not-italic text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"
+                  className="font-bold not-italic text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"
                 >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </span>
@@ -157,7 +157,7 @@ const HeroSection: React.FC = () => {
                       Descriptif du ZIP
                     </DialogTitle>
                      <div className="text-sm text-gray-600 mb-4">
-                       <span className="font-normal not-italic">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                       <span className="font-bold not-italic">⦗FRONT-CLOUD⦘~ Football.zip</span>
                      </div>
                     <DialogDescription>
                       <PackDescription />

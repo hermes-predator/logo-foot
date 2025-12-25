@@ -15,7 +15,7 @@ const FloatingCTAHome: React.FC = () => {
               <ShoppingCart className="h-4 w-4 text-white flex-shrink-0" />
               <span className="text-white font-semibold text-sm">Football.zip</span>
             </div>
-            <p className="text-white/90 text-xs leading-tight">Recevez instantanément tous les logos de clubs de football uniformes, nommés et triés par pays</p>
+            <p className="text-white/90 text-xs leading-tight">Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays</p>
           </div>
           
           <Button 

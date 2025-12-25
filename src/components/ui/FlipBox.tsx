@@ -32,7 +32,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
           <div className="flex items-center mb-1 relative z-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-left">{frontTitle}</h2>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">Recevez instantanément tous les logos de clubs de football uniformes, nommés et triés par pays</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays</p>
         </div>
       </div>
 

@@ -41,11 +41,11 @@ const FeatureList = () => {
       description: "Accédez instantanément à tous les logos."
     },
     {
-      icon: Star,
-      text: "Fichier : Rare sur le marché",
+      icon: BadgeCheck,
+      text: "Fichier : Professionnel", 
       className: "bg-blue-100",
-      iconColor: "text-blue-600",
-      description: "Un fichier trouvable nulle part ailleurs."
+      iconColor: "text-blue-700",
+      description: "Logos uniformes, nommés et triés."
     },
     {
       icon: Plus,
@@ -55,11 +55,11 @@ const FeatureList = () => {
       description: "Un actif qui booste votre parcours."
     },
     {
-      icon: BadgeCheck,
-      text: "Fichier : Professionnel", 
+      icon: Star,
+      text: "Fichier : Rare sur le marché",
       className: "bg-blue-100",
-      iconColor: "text-blue-700",
-      description: "Logos uniformes, nommés et triés."
+      iconColor: "text-blue-600",
+      description: "Un fichier trouvable nulle part ailleurs."
     },
     {
       icon: Plus,

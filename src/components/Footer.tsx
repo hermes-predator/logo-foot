@@ -24,7 +24,7 @@ const Footer = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl w-full">
               <DialogHeader>
-                <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Contacter le Service Client</DialogTitle>
+                <DialogTitle className="text-xl font-bold text-gray-800" style={{ letterSpacing: '-0.01em' }}>Contacter notre Service Client</DialogTitle>
                 <DialogDescription>
                   Pour toute question ou demande d'assistance.
                 </DialogDescription>

@@ -32,16 +32,20 @@ Deno.serve(async (req) => {
       
       console.log(`🔄 Début de synchronisation de ${blogPosts.length} articles`)
 
-      // Fonction pour générer un slug à partir du titre
-      const generateSlug = (title: string): string => {
-        return title
+      // Fonction pour générer un slug à partir du titre (fallback uniquement)
+      const generateSlugFromTitle = (title: string): string => {
+        const stopWords = ['de', 'du', 'des', 'le', 'la', 'les', 'un', 'une', 'et', 'ou', 'a', 'dans', 'pour', 'par', 'sur', 'avec', 'sans', 'sous'];
+        const words = title
           .toLowerCase()
           .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '') // Supprimer les accents
-          .replace(/[^a-z0-9\s-]/g, '') // Garder seulement lettres, chiffres, espaces et tirets
-          .replace(/\s+/g, '-') // Remplacer espaces par tirets
-          .replace(/-+/g, '-') // Fusionner tirets multiples
-          .replace(/^-|-$/g, '') // Supprimer tirets en début/fin
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+          .replace(/-{2,}/g, '-')
+          .split('-')
+          .filter(word => word.length > 2 && !stopWords.includes(word));
+        const slug = words.slice(0, 3).join('-');
+        return slug.length < 3 ? 'article' : slug.substring(0, 50);
       }
 
       // Préparer les données pour Supabase
@@ -55,7 +59,8 @@ Deno.serve(async (req) => {
         sub_category: post.subCategory || null,
         gallery_image_id: post.galleryImageId || null,
         keywords: post.keywords || null,
-        slug: post.slug || generateSlug(post.title) // Générer slug si manquant
+        // PRIORITÉ au slug manuel, sinon générer depuis le titre
+        slug: post.slug && post.slug.trim() !== '' ? post.slug.trim() : generateSlugFromTitle(post.title)
       }))
 
       // Insérer tous les articles avec upsert

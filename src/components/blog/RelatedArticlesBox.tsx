@@ -139,7 +139,7 @@ const RelatedArticlesBox = ({
         {relatedArticles.map(article => (
           <Link 
             key={article.id}
-            to={generatePostUrl(article.id, article.title)}
+            to={generatePostUrl(article.id, article.title, article.slug)}
             className="group flex items-start p-1 rounded transition-colors"
           >
             <div className="flex-1">

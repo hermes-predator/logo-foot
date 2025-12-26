@@ -58,7 +58,7 @@ const BlogSchemaMarkup = ({
   // Créer un schéma FAQ si des FAQs sont présentes
   const faqPageSchema = hasFAQs ? FAQPageSchema({ 
     faqSections,
-    mainEntity: `${baseUrl}${generatePostUrl(post.id, post.title)}`,
+    mainEntity: `${baseUrl}${generatePostUrl(post.id, post.title, post.slug)}`,
     about: post.title.split(':')[0].trim()
   }) : null;
 
@@ -90,7 +90,7 @@ const BlogSchemaMarkup = ({
         "@type": "ListItem",
         "position": post.category ? 4 : 3,
         "name": post.title,
-        "item": `${baseUrl}${generatePostUrl(post.id, post.title)}`
+        "item": `${baseUrl}${generatePostUrl(post.id, post.title, post.slug)}`
       }
     ]
   } : null;

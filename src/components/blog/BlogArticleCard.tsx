@@ -16,7 +16,7 @@ interface BlogArticleCardProps {
 }
 
 const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
-  const postUrl = generatePostUrl(post.id, post.title);
+  const postUrl = generatePostUrl(post.id, post.title, post.slug);
   const readingTime = useReadingTime(post.content);
   const categoryInfo = BLOG_CATEGORIES[post.category];
   

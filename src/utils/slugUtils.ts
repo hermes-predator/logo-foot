@@ -33,14 +33,19 @@ export function generateSlug(title: string): string {
          slug.length > 50 ? slug.substring(0, 50) : slug;
 }
 
-export function generatePostUrl(id: number, title: string): string {
-  // Vérification de sécurité pour id et title
+export function generatePostUrl(id: number, title: string, manualSlug?: string): string {
+  // Vérification de sécurité pour id
   if (!id) {
     console.error('ID manquant pour la génération d\'URL d\'article');
     return '/blog';
   }
   
-  // Utiliser un titre par défaut si vide ou non défini
+  // Si un slug manuel est fourni, l'utiliser directement (PRIORITÉ)
+  if (manualSlug && manualSlug.trim() !== '') {
+    return `/blog/${id}-${manualSlug.trim()}`;
+  }
+  
+  // Sinon, générer depuis le titre (fallback)
   const sanitizedTitle = title ? title : 'article-de-blog';
   const slug = generateSlug(sanitizedTitle);
   
@@ -76,13 +81,13 @@ export function extractPostIdFromUrl(url: string): number | null {
 }
 
 // Fonction pour vérifier si une URL d'article est dans le format canonique
-export function isCanonicalPostUrl(url: string, title: string): boolean {
+export function isCanonicalPostUrl(url: string, title: string, manualSlug?: string): boolean {
   if (!title) return true; // Si pas de titre, considérer comme canonique
   
   const id = extractPostIdFromUrl(url);
   if (!id) return false;
   
-  const canonicalUrl = generatePostUrl(id, title);
+  const canonicalUrl = generatePostUrl(id, title, manualSlug);
   
   // Normaliser les URLs avant comparaison (enlever trailing slashes, etc.)
   const normalizedUrl = url.replace(/\/$/, '');

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Folder, TrendingUp, Star, Heart, Zap, ClipboardCheck, Plus, ThumbsUp } from 'lucide-react';
+import { Folder, TrendingUp, Star, Heart, Zap, FlaskConical, Plus, ThumbsUp } from 'lucide-react';
 
 interface FeatureProps {
   icon: React.ElementType;
@@ -41,7 +41,7 @@ const FeatureList = () => {
       description: "Accédez instantanément à tous les logos."
     },
     {
-      icon: ClipboardCheck,
+      icon: FlaskConical,
       text: "Fichier : Professionnel", 
       className: "bg-blue-100",
       iconColor: "text-blue-700",

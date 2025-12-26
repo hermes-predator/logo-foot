@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const championsLeagueAnalysis: BlogPost = {
   id: 8,
+  slug: "champions-league-identity", //
   title: "Analyse des Logos en Ligue des Champions : Innovation et Tradition [2024]",
-  excerpt: "Découvrez comment les clubs de la Ligue des Champions équilibrent tradition et modernité dans leurs identités visuelles. Focus sur les stratégies de marque en Europe.",
+  excerpt:
+    "Découvrez comment les clubs de la Ligue des Champions équilibrent tradition et modernité dans leurs identités visuelles. Focus sur les stratégies de marque en Europe.",
   date: "2024-03-05",
   galleryImageId: 8,
   content: `Design et Branding en Ligue des Champions
@@ -66,6 +67,7 @@ Innovations UCL 2024
 - Web3 integration
 - Digital assets
 - Brand evolution`,
-  keywords: "logos ligue des champions, design champions league, branding ucl, analyse logos europe, identité visuelle champions league",
-  category: 'logos'
+  keywords:
+    "logos ligue des champions, design champions league, branding ucl, analyse logos europe, identité visuelle champions league",
+  category: "logos",
 };

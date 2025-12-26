@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const colorTheoryPost: BlogPost = {
   id: 9,
+  slug: "logo-foot-color", //
   title: "Couleurs Logo Foot : Guide Complet Design [2024]",
-  excerpt: "Guide expert sur les couleurs des logos foot. Découvrez comment choisir les meilleures couleurs pour votre écusson de football professionnel.",
+  excerpt:
+    "Guide expert sur les couleurs des logos foot. Découvrez comment choisir les meilleures couleurs pour votre écusson de football professionnel.",
   date: "2024-03-15",
   galleryImageId: 9,
   content: `Guide Couleurs Logo Foot
@@ -67,6 +68,6 @@ Tech Couleur Logo
 - Social fit
 - Web pro`,
   keywords: "couleur logo foot, palette écusson foot, design logo football, choix couleur foot, création logo foot",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  category: "technical",
+  subCategory: "design-guidelines",
 };

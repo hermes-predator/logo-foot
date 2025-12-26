@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bukayoSakaPost: BlogPost = {
   id: 6,
+  slug: "bukayo-saka", //
   title: "Bukayo Saka : L'Étoile Montante d'Arsenal et de l'Angleterre",
-  excerpt: "Analyse approfondie de Bukayo Saka, son parcours impressionnant, ses statistiques exceptionnelles et comment il est devenu l'un des meilleurs ailiers du football mondial.",
+  excerpt:
+    "Analyse approfondie de Bukayo Saka, son parcours impressionnant, ses statistiques exceptionnelles et comment il est devenu l'un des meilleurs ailiers du football mondial.",
   date: "2024-04-06",
   galleryImageId: 6,
   content: `# Bukayo Saka : Le Prodige d'Arsenal Qui Enflamme la Premier League
@@ -38,6 +39,7 @@ Son humilité, son travail acharné et son professionnalisme font de lui un exem
 À seulement 22 ans, **Bukayo Saka** a déjà accompli de grandes choses dans sa carrière. Son talent, sa polyvalence et son état d'esprit irréprochable lui promettent un avenir radieux. S'il continue sur cette voie, il a le potentiel pour devenir l'un des meilleurs joueurs du monde à son poste.
 
 Les supporters d'Arsenal et de l'Angleterre peuvent se réjouir de pouvoir compter sur un joueur aussi talentueux et attachant. **Bukayo Saka** est bien plus qu'un simple footballeur, c'est un véritable modèle pour la jeunesse et une source d'inspiration pour tous les amoureux du ballon rond.`,
-  keywords: "bukayo saka, saka arsenal, saka angleterre, statistiques de bukayo saka, saka premier league, saka arteta, saka technique, saka dribble, saka but, saka passe, saka euro, saka coupe du monde, saka jeune, saka salaire, saka contrat, saka transfert, saka famille, saka académie, saka hale end, saka potentiel",
-  category: 'players'
+  keywords:
+    "bukayo saka, saka arsenal, saka angleterre, statistiques de bukayo saka, saka premier league, saka arteta, saka technique, saka dribble, saka but, saka passe, saka euro, saka coupe du monde, saka jeune, saka salaire, saka contrat, saka transfert, saka famille, saka académie, saka hale end, saka potentiel",
+  category: "players",
 };

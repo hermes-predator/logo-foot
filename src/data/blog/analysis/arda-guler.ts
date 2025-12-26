@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ardaGulerPost: BlogPost = {
   id: 3,
+  slug: "arda-guler", //
   title: "Arda Güler : Le Prodige Turc qui Fascine le Real Madrid",
-  excerpt: "Découvrez l'analyse complète d'Arda Güler, le talent précoce qui impressionne au Real Madrid et en équipe nationale turque. Portrait d'un des joueurs les plus prometteurs du football mondial.",
+  excerpt:
+    "Découvrez l'analyse complète d'Arda Güler, le talent précoce qui impressionne au Real Madrid et en équipe nationale turque. Portrait d'un des joueurs les plus prometteurs du football mondial.",
   date: "2024-06-28",
   galleryImageId: 3,
   content: `# Arda Güler : Le Prodige Turc qui Fascine le Real Madrid
@@ -75,6 +76,7 @@ En raison de son style de jeu technique et de sa petite taille, Arda Güler a é
 ## Conclusion
 
 Arda Güler est un joueur exceptionnel avec un avenir prometteur. Son talent, sa détermination et son éthique de travail lui permettront de surmonter les défis et de réaliser son plein potentiel. Les fans de football du monde entier attendent avec impatience de voir ce que l'avenir lui réserve.`,
-  keywords: "arda guler, guler real madrid, guler turquie, guler fenerbahce, guler technique, guler jeune, guler talent, guler euro 2024, guler ancelotti, guler passes, guler but, guler dribble, guler transfert, guler avenir, guler statistiques, guler blessure, guler salaire, guler potentiel, guler champions league, guler messi turc",
-  category: 'players'
+  keywords:
+    "arda guler, guler real madrid, guler turquie, guler fenerbahce, guler technique, guler jeune, guler talent, guler euro 2024, guler ancelotti, guler passes, guler but, guler dribble, guler transfert, guler avenir, guler statistiques, guler blessure, guler salaire, guler potentiel, guler champions league, guler messi turc",
+  category: "players",
 };

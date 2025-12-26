@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bradleyBarcolaPost: BlogPost = {
   id: 5,
+  slug: "bradley-barcola", //
   title: "Bradley Barcola : Analyse Complète de la Pépite Française du PSG",
-  excerpt: "Découvrez Bradley Barcola, son parcours exceptionnel, ses statistiques, son style de jeu et pourquoi il est considéré comme l'un des talents les plus prometteurs du football français.",
+  excerpt:
+    "Découvrez Bradley Barcola, son parcours exceptionnel, ses statistiques, son style de jeu et pourquoi il est considéré comme l'un des talents les plus prometteurs du football français.",
   date: "2024-08-28",
   galleryImageId: 5,
   content: `# **Bradley Barcola** : L'Ascension d'une Nouvelle Étoile du Football Français
@@ -85,6 +86,7 @@ Les **Barcola origine** sont françaises, ce qui renforce son attachement à son
 
 **Bradley Barcola** est un joueur exceptionnel, doté d'un talent immense et d'un potentiel illimité. Son parcours, ses qualités techniques, ses statistiques et son avenir prometteur en font l'un des joueurs les plus passionnants à suivre dans le monde du football actuel. Que ce soit au PSG ou en équipe de France, il a toutes les cartes en main pour marquer l'histoire de son sport.
 `,
-  keywords: "bradley barcola, barcola psg, barcola equipe france, barcola lyon, barcola statistiques, barcola transfert, barcola technique, barcola luis enrique, barcola jeux olympiques, barcola espoirs, barcola vitesse, barcola but, barcola ailier, barcola mbappé, barcola salaire, barcola famille, barcola origine, barcola avenir, barcola potentiel, barcola talent",
-  category: 'players'
+  keywords:
+    "bradley barcola, barcola psg, barcola equipe france, barcola lyon, barcola statistiques, barcola transfert, barcola technique, barcola luis enrique, barcola jeux olympiques, barcola espoirs, barcola vitesse, barcola but, barcola ailier, barcola mbappé, barcola salaire, barcola famille, barcola origine, barcola avenir, barcola potentiel, barcola talent",
+  category: "players",
 };

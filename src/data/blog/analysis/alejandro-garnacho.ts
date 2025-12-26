@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alejandroGarnachoPost: BlogPost = {
   id: 2,
+  slug: "alejandro-garnacho", //
   title: "Alejandro Garnacho : Le Nouveau Joyau de Manchester United et de l'Argentine",
-  excerpt: "Découvrez l'analyse complète d'Alejandro Garnacho, sa technique éblouissante, son parcours, son potentiel et comment il devient rapidement l'un des joueurs les plus excitants de Premier League.",
+  excerpt:
+    "Découvrez l'analyse complète d'Alejandro Garnacho, sa technique éblouissante, son parcours, son potentiel et comment il devient rapidement l'un des joueurs les plus excitants de Premier League.",
   date: "2024-06-30",
   galleryImageId: 2,
   content: `# Alejandro Garnacho : Le Nouveau Joyau de Manchester United et de l'Argentine
@@ -45,6 +46,7 @@ Alejandro Garnacho a également le potentiel pour devenir un joueur important de
 ## Conclusion
 
 Alejandro Garnacho est un joueur exceptionnel, qui a le potentiel pour marquer l'histoire du football. Il est encore jeune et a beaucoup à apprendre, mais il possède déjà toutes les qualités pour réussir au plus haut niveau. Son avenir s'annonce radieux, tant à Manchester United qu'en sélection argentine. Les supporters du monde entier attendent avec impatience de voir ce que l'avenir lui réserve.`,
-  keywords: "alejandro garnacho, garnacho manchester united, garnacho argentine, garnacho statistiques, garnacho technique, garnacho dribble, garnacho but, garnacho ten hag, garnacho messi, garnacho ronaldo, garnacho jeune, garnacho potentiel, garnacho transfert, garnacho contrat, garnacho salaire, garnacho fifa, garnacho celebration, garnacho talents, garnacho avenir, garnacho skills",
-  category: 'players'
+  keywords:
+    "alejandro garnacho, garnacho manchester united, garnacho argentine, garnacho statistiques, garnacho technique, garnacho dribble, garnacho but, garnacho ten hag, garnacho messi, garnacho ronaldo, garnacho jeune, garnacho potentiel, garnacho transfert, garnacho contrat, garnacho salaire, garnacho fifa, garnacho celebration, garnacho talents, garnacho avenir, garnacho skills",
+  category: "players",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const benjaminSeskoPost: BlogPost = {
   id: 4,
+  slug: "benjamin-sesko", //
   title: "Benjamin Šeško : Le Géant Slovène qui Domine la Bundesliga",
-  excerpt: "Découvrez l'analyse complète de Benjamin Šeško, l'attaquant slovène qui impressionne à Leipzig et attire l'attention des plus grands clubs européens. Portrait d'un buteur d'exception.",
+  excerpt:
+    "Découvrez l'analyse complète de Benjamin Šeško, l'attaquant slovène qui impressionne à Leipzig et attire l'attention des plus grands clubs européens. Portrait d'un buteur d'exception.",
   date: "2024-06-29",
   galleryImageId: 4,
   content: `# **Benjamin Šeško** : L'Ascension d'un Prodige Slovène
@@ -101,6 +103,7 @@ Malgré l'intérêt d'**Arsenal**, plusieurs obstacles pourraient compliquer un 
 
 Que ce soit à **Leipzig**, à **Arsenal** ou ailleurs, l'avenir de **Benjamin Sesko** s'annonce passionnant et il sera intéressant de suivre son parcours dans les prochaines années. Une chose est sûre : son nom est désormais sur toutes les lèvres et il faudra compter sur lui pour marquer l'histoire du football.
 `,
-  keywords: "benjamin sesko, sesko leipzig, sesko slovenie, sesko statistiques, sesko but, sesko transfert, sesko salaire, sesko arsenal, sesko manchester, sesko techniques, sesko psg, sesko bundesliga, sesko salzbourg, sesko euro, sesko champions league, sesko haaland, sesko taille, sesko physique, sesko avenir, sesko potentiel",
-  category: 'players'
+  keywords:
+    "benjamin sesko, sesko leipzig, sesko slovenie, sesko statistiques, sesko but, sesko transfert, sesko salaire, sesko arsenal, sesko manchester, sesko techniques, sesko psg, sesko bundesliga, sesko salzbourg, sesko euro, sesko champions league, sesko haaland, sesko taille, sesko physique, sesko avenir, sesko potentiel",
+  category: "players",
 };

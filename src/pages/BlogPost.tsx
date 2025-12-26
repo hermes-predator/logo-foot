@@ -59,7 +59,7 @@ const BlogPost: React.FC = () => {
   }
 
   // Rediriger vers l'URL canonique si l'URL actuelle n'est pas correcte
-  const canonicalPath = generatePostUrl(post.id, post.title);
+  const canonicalPath = generatePostUrl(post.id, post.title, post.slug);
   const currentPath = `/blog/${slug}`;
   if (currentPath !== canonicalPath) {
     return <Navigate to={canonicalPath} replace />;
@@ -71,7 +71,7 @@ const BlogPost: React.FC = () => {
   const readingTime = Math.ceil(wordCount / wordsPerMinute);
 
   // URL canonique pour cet article spécifique
-  const canonicalUrl = `https://www.logo-foot.com${generatePostUrl(post.id, post.title)}`;
+  const canonicalUrl = `https://www.logo-foot.com${generatePostUrl(post.id, post.title, post.slug)}`;
 
   return (
     <>
@@ -92,13 +92,13 @@ const BlogPost: React.FC = () => {
         {post.previousPostId && (() => {
           const p = blogPosts.find(p => p.id === post.previousPostId);
           return p ? (
-            <link rel="prev" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+            <link rel="prev" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title, p.slug)}`} />
           ) : null;
         })()}
         {post.nextPostId && (() => {
           const p = blogPosts.find(p => p.id === post.nextPostId);
           return p ? (
-            <link rel="next" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title)}`} />
+            <link rel="next" href={`https://www.logo-foot.com${generatePostUrl(p.id, p.title, p.slug)}`} />
           ) : null;
         })()}
         

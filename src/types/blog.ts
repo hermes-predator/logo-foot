@@ -1,6 +1,7 @@
 
 export interface BlogPost {
   id: number,
+  slug?: string,  // URL manuelle (ex: "gremio-logo") - si absent, généré depuis le titre
   title: string,
   excerpt: string,
   date: string,

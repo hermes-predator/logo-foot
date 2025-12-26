@@ -69,11 +69,11 @@ function generateSitemap({
   // Blog list
   parts.push(urlEntry(`${BASE_URL}/blog`, today, 'daily', includePriority ? '0.8' : undefined));
 
-  // Posts - Utiliser UNIQUEMENT le format court canonique
+  // Posts - Utiliser le slug de la DB en priorité (slug manuel)
   for (const p of blogPosts) {
-    // IMPORTANT: Toujours générer un slug court à partir du titre, ignorer p.slug de la DB
-    const shortSlug = generateShortSlug(p.title);
-    const loc = `${BASE_URL}/blog/${p.id}-${shortSlug}`;
+    // PRIORITÉ au slug de la DB (défini manuellement), sinon générer depuis le titre
+    const slug = p.slug && p.slug.trim() !== '' ? p.slug.trim() : generateShortSlug(p.title);
+    const loc = `${BASE_URL}/blog/${p.id}-${slug}`;
     const last = includeLastmod && p.date ? new Date(p.date).toISOString().split('T')[0] : undefined;
     parts.push(urlEntry(loc, last, 'weekly', includePriority ? '0.6' : undefined));
   }

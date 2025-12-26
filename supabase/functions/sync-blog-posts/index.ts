@@ -49,19 +49,26 @@ Deno.serve(async (req) => {
       }
 
       // Préparer les données pour Supabase
-      const postsForSupabase = blogPosts.map((post: BlogPost) => ({
-        id: post.id,
-        title: post.title,
-        excerpt: post.excerpt,
-        content: post.content,
-        date: post.date,
-        category: post.category,
-        sub_category: post.subCategory || null,
-        gallery_image_id: post.galleryImageId || null,
-        keywords: post.keywords || null,
-        // PRIORITÉ au slug manuel, sinon générer depuis le titre
-        slug: post.slug && post.slug.trim() !== '' ? post.slug.trim() : generateSlugFromTitle(post.title)
-      }))
+      const postsForSupabase = blogPosts.map((post: BlogPost) => {
+        // PRIORITÉ au slug manuel, sinon générer depuis le titre + ID pour unicité
+        const baseSlug = post.slug && post.slug.trim() !== '' 
+          ? post.slug.trim() 
+          : generateSlugFromTitle(post.title)
+        
+        return {
+          id: post.id,
+          title: post.title,
+          excerpt: post.excerpt,
+          content: post.content,
+          date: post.date,
+          category: post.category,
+          sub_category: post.subCategory || null,
+          gallery_image_id: post.galleryImageId || null,
+          keywords: post.keywords || null,
+          // Ajouter l'ID au slug généré pour garantir l'unicité (pas pour les slugs manuels)
+          slug: post.slug && post.slug.trim() !== '' ? baseSlug : `${baseSlug}-${post.id}`
+        }
+      })
 
       // Insérer tous les articles avec upsert
       const { data, error } = await supabase

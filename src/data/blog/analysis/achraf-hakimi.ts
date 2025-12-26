@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const achrafHakimiPost: BlogPost = {
   id: 1,
+  slug: "achraf-hakimi", //
   title: "Achraf Hakimi : Analyse Complète du Latéral Marocain du PSG [2024]",
-  excerpt: "Découvrez l'analyse détaillée d'Achraf Hakimi, son parcours, ses qualités techniques, son impact au PSG et en équipe nationale du Maroc. Portrait complet d'un des meilleurs latéraux du monde.",
+  excerpt:
+    "Découvrez l'analyse détaillée d'Achraf Hakimi, son parcours, ses qualités techniques, son impact au PSG et en équipe nationale du Maroc. Portrait complet d'un des meilleurs latéraux du monde.",
   date: "2024-08-20",
   galleryImageId: 1,
   content: `# **Achraf Hakimi** : Le Talent Marocain qui Brille au PSG
@@ -75,6 +77,7 @@ Le **salaire de Achraf Hakimi** au PSG est estimé à plusieurs millions d'euros
 ## Conclusion
 
 **Achraf Hakimi** est un joueur exceptionnel qui a su conquérir le cœur des supporters grâce à son talent et à sa personnalité attachante. Son parcours, ses qualités techniques et son impact sur le jeu font de lui l'un des meilleurs latéraux du monde. Son avenir s'annonce radieux, tant en club qu'en sélection.`,
-  keywords: "achraf hakimi, hakimi psg, hakimi maroc, statistiques hakimi, hakimi real madrid, hakimi inter, hakimi dortmund, hakimi vitesse, hakimi technique, hakimi défense, hakimi attaque, hakimi salaire, hakimi transfert, hakimi coupe du monde, hakimi can, hakimi champions league, hakimi ligue 1, hakimi luis enrique, hakimi mbappé, hakimi famille",
-  category: 'players'
+  keywords:
+    "achraf hakimi, hakimi psg, hakimi maroc, statistiques hakimi, hakimi real madrid, hakimi inter, hakimi dortmund, hakimi vitesse, hakimi technique, hakimi défense, hakimi attaque, hakimi salaire, hakimi transfert, hakimi coupe du monde, hakimi can, hakimi champions league, hakimi ligue 1, hakimi luis enrique, hakimi mbappé, hakimi famille",
+  category: "players",
 };

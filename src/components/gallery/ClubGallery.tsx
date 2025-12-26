@@ -66,7 +66,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
           {/* Indicateur de progression et statistiques */}
           <div className="flex flex-col items-center space-y-3">
             <p className="text-base font-semibold text-slate-600">
-              <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} dossiers</span> affichés
+              <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} fichiers</span> affichés
             </p>
             
             {/* Barre de progression élégante */}

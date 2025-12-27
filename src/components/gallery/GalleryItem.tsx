@@ -351,8 +351,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           {item.title}
         </p>
         <p className="text-xs text-gray-500 font-medium flex items-center justify-center gap-0.5">
-          <Plus className="w-3 h-3 text-green-600 stroke-[3]" />
-          <span className="text-green-600 font-bold">{getCollectionData(item).count}</span>
+          <Plus className="w-3 h-3 text-gray-800 stroke-[3]" />
+          <span className="text-gray-800 font-bold">{getCollectionData(item).count}</span>
           <span className="ml-0.5">{getCollectionData(item).text}</span>
         </p>
         <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-red-100 text-red-700 text-[9px] font-semibold">

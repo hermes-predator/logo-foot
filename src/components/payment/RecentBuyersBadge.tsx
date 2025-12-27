@@ -32,9 +32,10 @@ const RecentBuyersBadge = ({ count }: RecentBuyersBadgeProps) => {
   }, [count]);
 
   return (
-    <div className="absolute top-0 right-0 bg-green-600 text-white px-3 py-1.5 rounded-bl-lg rounded-tr-xl text-sm font-semibold shadow-md flex items-center gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
-      <Users className="h-3.5 w-3.5" />
-      <span>{currentCount} <span className="font-bold">personnes</span> ont acheté récemment</span>
+    <div className="absolute top-0 right-0 bg-green-600 text-white px-2 sm:px-3 py-1 sm:py-1.5 rounded-bl-lg rounded-tr-xl text-[10px] sm:text-sm font-semibold shadow-md flex items-center gap-1 sm:gap-1.5 animate-[fastBlink_1s_ease-in-out_infinite]">
+      <Users className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+      <span className="hidden sm:inline">{currentCount} <span className="font-bold">personnes</span> ont acheté récemment</span>
+      <span className="sm:hidden">{currentCount} acheteurs</span>
     </div>
   );
 };

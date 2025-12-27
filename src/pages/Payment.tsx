@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import PaymentWidget from '@/components/payment/PaymentWidget';
 import CheckoutProgressBar from '@/components/payment/CheckoutProgressBar';
+import TrustPilotBadge from '@/components/TrustPilotBadge';
 
 const Payment = () => {
   return (
@@ -30,6 +31,11 @@ const Payment = () => {
           <p className="text-center text-xs text-gray-500 mt-6">
             En procédant au paiement, vous acceptez nos conditions générales de vente.
           </p>
+
+          {/* TrustPilot Badge */}
+          <div className="flex justify-center mt-6">
+            <TrustPilotBadge />
+          </div>
         </div>
       </div>
     </>

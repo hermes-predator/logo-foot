@@ -185,13 +185,13 @@ const HeroSection: React.FC = () => {
                         className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                       />
                     </span>
-                    <span className="flex items-center gap-1.5 text-[9px] text-white/50 font-normal -mt-1">
+                    <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal -mt-1">
                       <Download className="!w-[10px] !h-[10px]" />
                       {downloadCount.toLocaleString('fr-FR')} téléchargements via
                       <img 
-                        src="https://developer.sumup.com/images/sumup-logo.svg" 
+                        src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                         alt="SumUp" 
-                        className="h-3 brightness-0 invert opacity-60"
+                        className="h-2.5 brightness-0 invert opacity-70"
                       />
                     </span>
                   </span>

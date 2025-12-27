@@ -186,7 +186,7 @@ const HeroSection: React.FC = () => {
                       />
                     </span>
                     <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal mt-0.5">
-                      <Download className="w-2 h-2" />
+                      <Download className="w-[7px] h-[7px]" />
                       {downloadCount.toLocaleString('fr-FR')} téléchargements
                     </span>
                   </span>

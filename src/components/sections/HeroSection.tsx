@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock, Shield, Zap, Mail } from "lucide-react";
+import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock, Globe, Zap, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -214,7 +214,7 @@ const HeroSection: React.FC = () => {
             <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
               <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
               <div className="flex items-center gap-1.5">
-                <Shield className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
+                <Globe className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
                 <span>Logo-foot.com est un site français fiable et sécurisé</span>
               </div>
               <div className="flex items-center gap-1.5">

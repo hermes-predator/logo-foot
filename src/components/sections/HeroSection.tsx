@@ -185,7 +185,8 @@ const HeroSection: React.FC = () => {
                         className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                       />
                     </span>
-                    <span className="text-[9px] text-white/50 font-normal mt-0.5">
+                    <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal mt-0.5">
+                      <Download className="w-2.5 h-2.5" />
                       {downloadCount.toLocaleString('fr-FR')} téléchargements
                     </span>
                   </span>

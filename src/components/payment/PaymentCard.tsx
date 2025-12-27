@@ -35,9 +35,9 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
   };
 
   return (
-    <div className="perspective-1000 px-3 sm:px-0">
+    <div className="perspective-1000 px-2 sm:px-0">
       <div 
-        className={`relative transform-style-3d transition-transform duration-700 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+        className={`relative transform-style-3d transition-transform duration-700 min-h-[600px] sm:min-h-[650px] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
         onMouseEnter={() => !isMobile && setIsHovered(true)}
         onMouseLeave={() => !isMobile && setIsHovered(false)}
         onTouchStart={() => isMobile && setIsHovered(true)}

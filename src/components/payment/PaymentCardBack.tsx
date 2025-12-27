@@ -29,14 +29,14 @@ const PaymentCardBack = ({
     }
   }, []);
 
-  return <div className="absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)]" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+  return <div className="absolute inset-0 min-h-[600px] sm:min-h-[650px] w-full bg-gradient-to-b from-blue-50/90 to-white rounded-2xl backface-hidden [transform:rotateY(180deg)] border border-blue-100/60" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       {/* Effet de lueur subtil sur le bord supérieur */}
       <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
       
       {/* Titre du fichier en grand dans le coin supérieur gauche */}
-      <div className="absolute top-6 left-6 z-30">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h2>
-        <p className="text-sm sm:text-base text-gray-700 mt-1">Capture vidéo : Aperçu global du fichier.</p>
+      <div className="absolute top-4 sm:top-6 left-4 sm:left-6 z-30 pr-12">
+        <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-black">⦗FRONT-CLOUD⦘~ Football.zip</h2>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-1">Capture vidéo : Aperçu global du fichier.</p>
       </div>
       
       {/* Bouton de retour dans le coin supérieur droit */}
@@ -50,8 +50,8 @@ const PaymentCardBack = ({
         </button>
       </div>
 
-      {!videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
-          <div className="aspect-square w-full max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
+      {!videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-3 sm:p-4 pt-24 sm:pt-36">
+          <div className="aspect-square w-full max-w-[280px] sm:max-w-[400px] md:max-w-[560px] relative rounded-lg overflow-hidden border-4 border-blue-200/50">
             {/* État de préchargement */}
             {isLoading && <div className="absolute inset-0 bg-blue-50 flex flex-col items-center justify-center z-20">
                 <div className="flex flex-col items-center">
@@ -71,12 +71,12 @@ const PaymentCardBack = ({
           </div>
 
           {/* Information sur la taille sous la vidéo */}
-          <div className="mt-4 py-2 px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
-            <span className="text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
+          <div className="mt-3 sm:mt-4 py-1.5 sm:py-2 px-4 sm:px-6 rounded-full shadow-sm bg-gradient-to-r from-blue-50 via-blue-50/90 to-blue-50 border border-blue-100/80">
+            <span className="text-xs sm:text-sm font-medium text-blue-700">63 Mo • 8 774 éléments</span>
           </div>
 
           {/* Boutons de CTA et Descriptif du ZIP en dessous de la taille */}
-          <div className="mt-8 flex items-center gap-4 justify-center">
+          <div className="mt-4 sm:mt-8 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">
@@ -133,8 +133,8 @@ const PaymentCardBack = ({
                   <span className="relative z-10 font-bold text-[16px] text-white transition-colors duration-300">Télécharger (5€)</span>
             </button>
           </div>
-        </div> : <div className="w-full h-full flex flex-col items-center justify-center p-4 pt-36">
-          <div className="aspect-square w-full max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-5 relative overflow-hidden">
+        </div> : <div className="w-full h-full flex flex-col items-center justify-center p-3 sm:p-4 pt-24 sm:pt-36">
+          <div className="aspect-square w-full max-w-[280px] sm:max-w-[400px] md:max-w-[560px] bg-blue-50 rounded-lg border-4 border-blue-200/50 flex flex-col items-center justify-center p-4 sm:p-5 relative overflow-hidden">
             <div className="absolute inset-0 border-8 border-dashed border-blue-100 m-4 rounded-lg pointer-events-none"></div>
             
             <Folder className="h-16 w-16 text-blue-400/70 mb-4" />
@@ -154,7 +154,7 @@ const PaymentCardBack = ({
           </div>
           
           {/* Boutons de CTA et Descriptif du ZIP également disponibles en cas d'erreur vidéo */}
-          <div className="mt-8 flex items-center gap-4 justify-center">
+          <div className="mt-4 sm:mt-8 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>
                 <button className="group flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200/80 hover:border-gray-300 transition-all duration-300 hover:shadow-md relative overflow-hidden">

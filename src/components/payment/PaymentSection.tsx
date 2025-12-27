@@ -14,7 +14,7 @@ const PaymentSection = () => {
   const recentBuyers = useRecentBuyers();
   
   return (
-    <div className="max-w-5xl mx-auto px-4 py-6 -mt-4">
+    <div className="max-w-5xl mx-auto px-2 sm:px-4 py-4 sm:py-6 -mt-2 sm:-mt-4">
       <PaymentTitle />
       <TrustIndicators />
 

@@ -185,13 +185,13 @@ const HeroSection: React.FC = () => {
                         className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                       />
                     </span>
-                    <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal -mt-1">
+                    <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal mt-0.5">
                       <Download className="!w-[10px] !h-[10px]" />
                       {downloadCount.toLocaleString('fr-FR')} downloads •
                       <img 
                         src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                         alt="SumUp" 
-                        className="h-2.5 brightness-0 invert"
+                        className="h-3.5 brightness-0 invert"
                       />
                     </span>
                   </span>

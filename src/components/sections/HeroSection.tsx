@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
           {/* Colonne gauche - H1 et bénéfices */}
           <div>{/* Alignement naturel avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}
-            <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded-2xl p-[14px] sm:p-5 md:p-6 md:px-7 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
+            <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded p-[14px] sm:p-5 md:p-6 md:px-7 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
 
             {/* 2. Nom du fichier - Concrétise l'offre */}
             <div className="text-left mb-1">
@@ -146,7 +146,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-4 mb-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-xl bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
                     <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
                     Fichier
                   </Button>
@@ -170,7 +170,7 @@ const HeroSection: React.FC = () => {
                 size="lg"
                 onClick={goToPayment}
                 title="Paiement sécurisé avec SumUp - 5€"
-                className="group relative max-w-sm w-full sm:w-auto rounded-xl bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                className="group relative max-w-sm w-full sm:w-auto rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                 aria-label="Commande sécurisée via SumUp"
               >
                 {/* Effet de lumière réfléchissante - identique à PaymentButton */}
@@ -248,7 +248,7 @@ const HeroSection: React.FC = () => {
             {/* Container fusionné : Vidéo + Judge.me */}
             <div className="h-full flex flex-col">
               {/* Vidéo preview du contenu */}
-              <div className="relative flex-1 bg-white/70 backdrop-blur-lg rounded-xl overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded-xl before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">
+              <div className="relative flex-1 bg-white/70 backdrop-blur-lg rounded overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">
                 <video 
                   className="w-full h-full object-cover"
                   autoPlay 

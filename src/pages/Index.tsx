@@ -225,7 +225,7 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-7xl mx-auto">
                 <FlipBox
-                  frontTitle="Besoin des logos des Clubs de Foot ?"
+                  frontTitle="Vous cherchez les logos des Clubs de Foot ?"
                   frontDescription={<>Recevez instantanément tous les logos de clubs de football uniformes, nommés et triés par pays</>}
                   backTitle="Logos des équipes de foot"
                   backContent="Le fichier regroupe les logos des clubs de foot de l'Angleterre, de l'Allemagne, de l'Espagne et du reste du monde."

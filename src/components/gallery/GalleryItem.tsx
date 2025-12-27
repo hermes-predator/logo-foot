@@ -346,7 +346,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           />
         </Dialog>
       </div>
-      <div className="bg-gray-50 rounded p-2.5 border border-gray-100 shadow-sm space-y-1.5 text-center">
+      <div className="bg-gray-50 rounded p-2.5 space-y-1.5 text-center">
         <p className="text-sm text-gray-950 font-semibold leading-tight">
           {item.title}
         </p>

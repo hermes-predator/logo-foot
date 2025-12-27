@@ -214,15 +214,15 @@ const HeroSection: React.FC = () => {
             <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
               <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
               <div className="flex items-center gap-1.5">
-                <Shield className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <Shield className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
                 <span>Logo-foot.com est un site français fiable et sécurisé</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Zap className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <Zap className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
                 <span>Le fichier est délivré immédiatement, inscription non requise</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Mail className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <Mail className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
                 <span>En cas de difficulté : <span className="font-bold">contact@logo-foot.com</span></span>
               </div>
             </div>

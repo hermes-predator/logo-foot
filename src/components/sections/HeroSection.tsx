@@ -149,7 +149,7 @@ const HeroSection: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline" size="lg" className="w-full sm:w-[220px] rounded bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto rounded bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-5 h-[60px] text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
                       <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
                       Fichier
                     </Button>
@@ -173,7 +173,7 @@ const HeroSection: React.FC = () => {
                   size="lg"
                   onClick={goToPayment}
                   title="Paiement sécurisé avec SumUp - 5€"
-                  className="group relative w-full sm:w-[220px] rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                  className="group relative w-full sm:w-auto rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-[60px] text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                   aria-label="Commande sécurisée via SumUp"
                 >
                   {/* Effet de lumière réfléchissante - identique à PaymentButton */}

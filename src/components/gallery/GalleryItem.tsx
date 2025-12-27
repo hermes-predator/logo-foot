@@ -357,7 +357,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         </p>
         <div className="flex justify-center">
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-[10px] font-semibold">
-            Valeur : {getCollectionData(item).estimatedValue}€
+            Valeur réelle : {getCollectionData(item).estimatedValue}€
           </span>
         </div>
       </div>

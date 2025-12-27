@@ -200,7 +200,7 @@ const HeroSection: React.FC = () => {
               
             </div>
             {/* Titre + Prix block - en dessous des boutons */}
-            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
+            <h1 className="text-[9px] sm:text-[10px] md:text-[11px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
               <span>
                 Télécharger tous les <span className="underline">logos des clubs de football</span> en 2 MINS ⏱️:
               </span>
@@ -217,7 +217,7 @@ const HeroSection: React.FC = () => {
 
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
-              <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
+              <div className="font-bold text-gray-700 mb-1 text-[9px] sm:text-[11px]">Bon à savoir :</div>
               <div>*Logo-foot.com est un site français fiable et sécurisé : <span className="font-bold">contact@logo-foot.com</span></div>
               <div>*Le fichier est délivré immédiatement, inscription non requise</div>
             </div>

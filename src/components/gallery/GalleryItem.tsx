@@ -346,7 +346,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           />
         </Dialog>
       </div>
-      <div className="bg-gray-50 rounded-lg p-2.5 border border-gray-100 shadow-sm space-y-1.5">
+      <div className="bg-gray-50 rounded p-2.5 border border-gray-100 shadow-sm space-y-1.5 text-center">
         <p className="text-sm text-gray-950 font-semibold leading-tight">
           {item.title}
         </p>
@@ -355,9 +355,11 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           <span className="text-gray-800 font-bold">{getCollectionData(item).count}</span>
           <span className="ml-0.5">{getCollectionData(item).text}</span>
         </p>
-        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-[10px] font-semibold">
-          Valeur : {getCollectionData(item).estimatedValue}€
-        </span>
+        <div className="flex justify-center">
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-[10px] font-semibold">
+            Valeur : {getCollectionData(item).estimatedValue}€
+          </span>
+        </div>
       </div>
     </div>
   );

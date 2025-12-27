@@ -187,16 +187,15 @@ const HeroSection: React.FC = () => {
                 </Button>
               </div>
               
-              {/* Compteur de téléchargements */}
-              <div className="flex items-center gap-1 text-[10px] text-gray-400 mt-1">
-                <Download className="w-3 h-3" />
-                <span>{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
-              </div>
             </div>
             {/* Titre + Prix block - en dessous des boutons */}
-            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
+            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4 flex items-center gap-2 flex-wrap">
               <span>
                 Télécharger tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
+              </span>
+              <span className="flex items-center gap-1 text-gray-400 font-normal">
+                <Download className="w-2.5 h-2.5" />
+                <span>{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
               </span>
             </h1>
             <div className="text-left">

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const florianWirtzPost: BlogPost = {
   id: 13,
+  slug: "florian-wirtz", //
   title: "Florian Wirtz : Analyse Complète du Prodige Allemand [2024]",
-  excerpt: "Découvrez l'analyse complète de Florian Wirtz, sa carrière, ses statistiques, ses performances avec le Bayer Leverkusen et ses perspectives de transfert vers les plus grands clubs européens.",
+  excerpt:
+    "Découvrez l'analyse complète de Florian Wirtz, sa carrière, ses statistiques, ses performances avec le Bayer Leverkusen et ses perspectives de transfert vers les plus grands clubs européens.",
   date: "2024-05-29",
   galleryImageId: 13,
   content: `# Analyse Complète de **Florian Wirtz**, le Joyau du Football Allemand
@@ -52,6 +53,7 @@ Concernant l'aspect financier, le **Florian Wirtz salaire** reflète son statut 
 Que son avenir s'écrive au **Bayer Leverkusen** ou dans l'un des grands clubs européens qui le courtisent, **Wirtz Florian** possède tous les atouts pour marquer durablement le football mondial. Son intelligence de jeu, sa technique et sa capacité d'adaptation font de lui un joueur complet, capable de s'imposer dans n'importe quel championnat majeur.
 
 Dans un football moderne qui valorise de plus en plus les créateurs de jeu polyvalents, **Florian Wirtz** représente le prototype parfait du milieu offensif de demain : technique, intelligent et décisif. Les prochaines années nous diront jusqu'où son immense talent pourra le porter, mais une chose est certaine : le monde du football n'a pas fini d'entendre parler de lui.`,
-  keywords: "florian wirtz, statistiques de florian wirtz, wirtz florian, florian wirtz girlfriend, florian wirtz stats, florian wirtz transfermarkt, florian wirtz psg, florian wirtz transfert, florian wirtz allemagne, florian wirtz manchester city, matchs de florian wirtz, florian wirtz real madrid, florian wirtz âge, but florian wirtz, florian wirtz bayer leverkusen, florian wirtz blessure, florian wirtz salaire, florian wirtz barca",
-  category: 'players'
+  keywords:
+    "florian wirtz, statistiques de florian wirtz, wirtz florian, florian wirtz girlfriend, florian wirtz stats, florian wirtz transfermarkt, florian wirtz psg, florian wirtz transfert, florian wirtz allemagne, florian wirtz manchester city, matchs de florian wirtz, florian wirtz real madrid, florian wirtz âge, but florian wirtz, florian wirtz bayer leverkusen, florian wirtz blessure, florian wirtz salaire, florian wirtz barca",
+  category: "players",
 };

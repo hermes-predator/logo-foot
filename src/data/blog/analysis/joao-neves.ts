@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const joaoNevesPost: BlogPost = {
   id: 17,
+  slug: "joao-neves", //
   title: "João Neves : Le Nouveau Joyau Portugais qui Illumine l'Europe",
-  excerpt: "Découvrez l'analyse complète de João Neves, son parcours, ses qualités techniques exceptionnelles et pourquoi les plus grands clubs européens se battent pour le recruter.",
+  excerpt:
+    "Découvrez l'analyse complète de João Neves, son parcours, ses qualités techniques exceptionnelles et pourquoi les plus grands clubs européens se battent pour le recruter.",
   date: "2024-06-26",
   galleryImageId: 17,
   content: `# João Neves : Le Prodige Portugais Qui Affole l'Europe
@@ -88,6 +89,7 @@ Son potentiel de progression est immense. Avec l'expérience, il devrait encore 
 ## Conclusion
 
 João Neves est un joueur exceptionnel, doté d'un talent rare et d'une maturité impressionnante. Son avenir s'annonce radieux, tant en club qu'en sélection nationale. Les amateurs de football du monde entier suivront avec attention l'évolution de ce prodige portugais, qui a tout pour marquer l'histoire de son sport.`,
-  keywords: "joão neves, neves benfica, neves portugal, neves psg, neves manchester, neves statistiques, neves techniques, neves transfert, neves salaire, neves milieu, neves jeune, neves talent, neves formation, neves champions league, neves sélection, neves euro, neves avenir, neves potentiel, neves comparaison, neves style",
-  category: 'players'
+  keywords:
+    "joão neves, neves benfica, neves portugal, neves psg, neves manchester, neves statistiques, neves techniques, neves transfert, neves salaire, neves milieu, neves jeune, neves talent, neves formation, neves champions league, neves sélection, neves euro, neves avenir, neves potentiel, neves comparaison, neves style",
+  category: "players",
 };

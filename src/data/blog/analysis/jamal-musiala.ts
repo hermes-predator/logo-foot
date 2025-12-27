@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const jamalMusialaPost: BlogPost = {
   id: 16,
+  slug: "jamal-musiala", //
   title: "Jamal Musiala : Le Prodige du Bayern Munich Qui Révolutionne le Football",
-  excerpt: "Découvrez l'ascension fulgurante de Jamal Musiala, son parcours unique, ses origines, ses statistiques impressionnantes et tout ce qui fait de ce jeune talent l'un des footballeurs les plus prometteurs de sa génération.",
+  excerpt:
+    "Découvrez l'ascension fulgurante de Jamal Musiala, son parcours unique, ses origines, ses statistiques impressionnantes et tout ce qui fait de ce jeune talent l'un des footballeurs les plus prometteurs de sa génération.",
   date: "2024-04-04",
   galleryImageId: 16,
   content: `# Jamal Musiala : Le Diamant du Bayern Munich
@@ -48,6 +49,7 @@ Le Bayern Munich, conscient du joyau qu'il possède, a sécurisé l'avenir du jo
 En quelques années seulement, **Jamal Musiala** s'est imposé comme l'un des joueurs les plus prometteurs de sa génération. Ses **origines** multiculturelles, son parcours atypique et son talent brut font de lui un joueur unique en son genre. À mesure que sa carrière progresse, le monde du football observe avec fascination l'éclosion d'un talent qui pourrait marquer son époque.
 
 Les **statistiques** impressionnantes et les performances éblouissantes de ce jeune prodige ne sont probablement que les prémices d'une carrière exceptionnelle qui s'annonce riche en succès et en moments de magie sur les terrains européens.`,
-  keywords: "jamal musiala, jamal musiala origine, statistiques de jamal musiala, jamal musiala parents, jamal musiala âge, jamal.musiala, jamal musiala origine arabe, jamal musiala religion, origine jamal musiala, jamal musiala père, matchs de jamal musiala",
-  category: 'players'
+  keywords:
+    "jamal musiala, jamal musiala origine, statistiques de jamal musiala, jamal musiala parents, jamal musiala âge, jamal.musiala, jamal musiala origine arabe, jamal musiala religion, origine jamal musiala, jamal musiala père, matchs de jamal musiala",
+  category: "players",
 };

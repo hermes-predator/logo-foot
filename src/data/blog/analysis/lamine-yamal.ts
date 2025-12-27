@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lamineYamalPost: BlogPost = {
   id: 23,
+  slug: "lamine-yamal", //
   title: "Lamine Yamal : Analyse du Phénomène et son Parcours Extraordinaire [2024]",
-  excerpt: "Découvrez l'analyse complète de Lamine Yamal, prodige du FC Barcelone, son parcours impressionnant, ses statistiques et tout ce qu'il faut savoir sur cette future star du football mondial.",
+  excerpt:
+    "Découvrez l'analyse complète de Lamine Yamal, prodige du FC Barcelone, son parcours impressionnant, ses statistiques et tout ce qu'il faut savoir sur cette future star du football mondial.",
   date: "2024-05-28",
   galleryImageId: 23,
   content: `# **Lamine Yamal** : L'Ascension Fulgurante d'un Prodige
@@ -73,6 +74,7 @@ Son style de jeu est caractérisé par :
 
 
 `,
-  keywords: "lamine yamal, lamine yamal origin, lamine yamal statistiques, lamine yamal barcelona, lamine yamal spain, lamine yamal parents, lamine yamal salary, lamine yamal transfer, lamine yamal height, lamine yamal messi, lamine yamal skills, lamine yamal age, lamine yamal goals, lamine yamal assists, lamine yamal record, lamine yamal euro, lamine yamal future, lamine yamal la masia, lamine yamal debut, lamine yamal celebration",
-  category: 'players'
+  keywords:
+    "lamine yamal, lamine yamal origin, lamine yamal statistiques, lamine yamal barcelona, lamine yamal spain, lamine yamal parents, lamine yamal salary, lamine yamal transfer, lamine yamal height, lamine yamal messi, lamine yamal skills, lamine yamal age, lamine yamal goals, lamine yamal assists, lamine yamal record, lamine yamal euro, lamine yamal future, lamine yamal la masia, lamine yamal debut, lamine yamal celebration",
+  category: "players",
 };

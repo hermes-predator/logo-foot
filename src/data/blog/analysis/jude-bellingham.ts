@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const judeBellinghamPost: BlogPost = {
   id: 18,
+  slug: "jude-bellingham", //
   title: "Jude Bellingham : L'étoile anglaise qui brille au Real Madrid",
   date: "2025-02-12",
   galleryImageId: 18,
   category: "players",
-  excerpt: "Découvrez tout sur Jude Bellingham, la sensation anglaise du Real Madrid. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son impact sur le football mondial.",
+  excerpt:
+    "Découvrez tout sur Jude Bellingham, la sensation anglaise du Real Madrid. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son impact sur le football mondial.",
   content: `# Jude Bellingham : Le phénomène anglais qui révolutionne le Real Madrid
 
 ![Jude Bellingham](https://logo-foot.com/blog-images/jude-bellingham.jpg)
@@ -53,5 +54,5 @@ Ces chiffres exceptionnels témoignent de sa polyvalence et de son impact imméd
 - Un volume de jeu impressionnant
 - Une efficacité devant le but
 
-Son aisance technique et sa compréhension tactique en font un joueur complet, capable d'exceller dans toutes les phases de jeu.`
+Son aisance technique et sa compréhension tactique en font un joueur complet, capable d'exceller dans toutes les phases de jeu.`,
 };

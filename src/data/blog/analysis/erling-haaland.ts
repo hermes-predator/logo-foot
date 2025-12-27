@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const erlingHaalandPost: BlogPost = {
   id: 12,
+  slug: "erling-haaland", //
   title: "Erling Haaland : Analyse Complète du Robot-Buteur de Manchester City",
-  excerpt: "Découvrez notre analyse approfondie d'Erling Haaland, son parcours impressionnant, son style de jeu dévastateur, ses statistiques records et son impact sur le football moderne.",
+  excerpt:
+    "Découvrez notre analyse approfondie d'Erling Haaland, son parcours impressionnant, son style de jeu dévastateur, ses statistiques records et son impact sur le football moderne.",
   date: "2024-04-05",
   galleryImageId: 12,
   content: `# Erling Haaland : La Machine à Buts Qui Redéfinit le Rôle d'Attaquant
@@ -88,6 +90,7 @@ Son avenir s'annonce radieux. S'il continue sur cette voie, il pourrait bien dev
 
 Son talent, son physique, sa mentalité et son professionnalisme sont autant d'atouts qui lui permettent de viser les sommets. Les supporters de Manchester City et les amoureux du football du monde entier attendent avec impatience de voir ce que l'avenir réserve à ce cyborg du football.
 `,
-  keywords: "erling haaland, haaland erling, statistiques de erling haaland, erling haaland manchester city, erling haaland records, erling haaland but, haaland borussia dortmund, haaland norvège, haaland salaire, haaland physique, haaland vitesse, haaland taille, haaland transfert, haaland ligue des champions, haaland premier league, haaland pep guardiola, haaland père, haaland famille, haaland technique, haaland célébration",
-  category: 'players'
+  keywords:
+    "erling haaland, haaland erling, statistiques de erling haaland, erling haaland manchester city, erling haaland records, erling haaland but, haaland borussia dortmund, haaland norvège, haaland salaire, haaland physique, haaland vitesse, haaland taille, haaland transfert, haaland ligue des champions, haaland premier league, haaland pep guardiola, haaland père, haaland famille, haaland technique, haaland célébration",
+  category: "players",
 };

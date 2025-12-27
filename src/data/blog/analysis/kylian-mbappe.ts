@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const kylianMbappePost: BlogPost = {
   id: 20,
+  slug: "kylian-mbappe", //
   title: "Kylian Mbappé : Analyse Complète du Phénomène Français",
-  excerpt: "Découvrez notre analyse détaillée de Kylian Mbappé, son parcours exceptionnel, son style de jeu unique, ses statistiques impressionnantes et son avenir au sommet du football mondial.",
+  excerpt:
+    "Découvrez notre analyse détaillée de Kylian Mbappé, son parcours exceptionnel, son style de jeu unique, ses statistiques impressionnantes et son avenir au sommet du football mondial.",
   date: "2024-04-01",
   galleryImageId: 20,
   content: `# Kylian Mbappé : Le Prodige Qui Révolutionne le Football Mondial
@@ -58,6 +59,7 @@ Ces chiffres impressionnants sont d'autant plus remarquables qu'il évolue princ
 L'avenir s'annonce radieux pour ce talent d'exception. Que ce soit avec le Paris Saint-Germain ou avec l'équipe de France, il semble promis à une carrière exceptionnelle jalonnée de trophées et de distinctions individuelles. Certains observateurs n'hésitent d'ailleurs pas à le comparer aux plus grands joueurs de l'histoire du football, estimant qu'il pourrait même dépasser des légendes comme Pelé ou Diego Maradona.
 
 Les **statistiques de mbappé**, son impact sur le jeu, sa maturité précoce et son potentiel encore inexploité laissent présager que nous n'avons encore vu qu'un aperçu des capacités de ce joueur d'exception. Le "Roi Kylian", comme le surnomment affectueusement les supporters du Paris Saint-Germain, n'a certainement pas fini de nous surprendre.`,
-  keywords: "kylian mbappé, mbappé kylian, statistiques de kylian mbappé, kylian mbappé real madrid, kylian mbappé psg, kylian mbappé équipe de france, mbappé records, mbappé vitesse, mbappé contrat, mbappé transfer, mbappé champions league, mbappé coupe du monde, mbappé ligue 1, mbappé sponsors, mbappé salaire, mbappé famille, mbappé origine, mbappé technique, mbappé jeune, mbappé monaco",
-  category: 'players'
+  keywords:
+    "kylian mbappé, mbappé kylian, statistiques de kylian mbappé, kylian mbappé real madrid, kylian mbappé psg, kylian mbappé équipe de france, mbappé records, mbappé vitesse, mbappé contrat, mbappé transfer, mbappé champions league, mbappé coupe du monde, mbappé ligue 1, mbappé sponsors, mbappé salaire, mbappé famille, mbappé origine, mbappé technique, mbappé jeune, mbappé monaco",
+  category: "players",
 };

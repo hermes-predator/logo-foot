@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hugoEkitikePost: BlogPost = {
   id: 15,
+  slug: "hugo-ekitike", //
   title: "Hugo Ekitike : Le talent français qui s'impose à l'Eintracht Francfort",
   date: "2025-04-10",
   galleryImageId: 15,
   category: "players",
   subCategory: "player",
-  excerpt: "Découvrez tout sur Hugo Ekitike, le jeune attaquant français qui brille à l'Eintracht Francfort. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son avenir prometteur.",
+  excerpt:
+    "Découvrez tout sur Hugo Ekitike, le jeune attaquant français qui brille à l'Eintracht Francfort. Son parcours, ses statistiques impressionnantes, son style de jeu unique et son avenir prometteur.",
   content: `# Hugo Ekitike : Un talent français à l'ascension fulgurante
 
 ![Hugo Ekitike](https://logo-foot.com/blog-images/hugo-ekitike.jpg)
@@ -102,5 +103,6 @@ Le **salaire** de **Hugo Ekitike** à l'**Eintracht Frankfurt** est estimé à e
 
 ### Comment s'est passé le transfert de Hugo Ekitike à Francfort ?
 Le **transfert** de **Hugo Ekitike** à **Francfort** s'est conclu sur un montant d'environ 16 millions d'euros, un investissement qui s'est révélé judicieux au vu de ses performances depuis son arrivée.`,
-  keywords: "Hugo Ekitike, statistiques de Hugo Ekitike, Hugo Ekitike origine, Hugo Ekitike transfert, Hugo Ekitike Eintracht Frankfurt, Hugo Ekitike Francfort, Hugo Ekitike salaire, Hugo Ekitike but, matchs de Hugo Ekitike, Hugo Ekitike stats, Hugo Ekitike mère, Hugo Ekitike agent, Hugo Ekitike Cameroun, Frankfurt Hugo Ekitike"
+  keywords:
+    "Hugo Ekitike, statistiques de Hugo Ekitike, Hugo Ekitike origine, Hugo Ekitike transfert, Hugo Ekitike Eintracht Frankfurt, Hugo Ekitike Francfort, Hugo Ekitike salaire, Hugo Ekitike but, matchs de Hugo Ekitike, Hugo Ekitike stats, Hugo Ekitike mère, Hugo Ekitike agent, Hugo Ekitike Cameroun, Frankfurt Hugo Ekitike",
 };

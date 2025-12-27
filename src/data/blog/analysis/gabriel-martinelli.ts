@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gabrielMartinelliPost: BlogPost = {
   id: 14,
+  slug: "gabriel-martinelli", //
   title: "Gabriel Martinelli : Le Prodige Brésilien d'Arsenal Qui Enflamme la Premier League",
-  excerpt: "Découvrez tout sur Gabriel Martinelli, son parcours exceptionnel, ses origines, ses statistiques impressionnantes et son avenir prometteur dans le monde du football.",
+  excerpt:
+    "Découvrez tout sur Gabriel Martinelli, son parcours exceptionnel, ses origines, ses statistiques impressionnantes et son avenir prometteur dans le monde du football.",
   date: "2024-04-04",
   galleryImageId: 14,
   content: `# Gabriel Martinelli : L'Étoile Montante d'Arsenal
@@ -46,6 +47,7 @@ Son développement à Arsenal se poursuit sous la houlette de Mikel Arteta, qui 
 En quelques saisons seulement, **Gabriel Martinelli** est passé du statut de jeune espoir à celui de star confirmée de la Premier League. Son parcours inspirant, des terrains poussiéreux du Brésil aux projecteurs de l'Emirates Stadium, témoigne de sa détermination et de son talent exceptionnel.
 
 Les **statistiques de Gabriel Martinelli** ne cessent de s'améliorer, et à mesure que sa carrière progresse, le monde du football observe avec fascination l'éclosion d'un talent qui pourrait marquer son époque. Que ce soit à Arsenal, au **PSG**, à **Barcelona** ou ailleurs, l'ailier brésilien possède tous les atouts pour s'imposer comme l'un des meilleurs joueurs de sa génération.`,
-  keywords: "gabriel martinelli, gabrielle martinelli, statistiques de gabriel martinelli, martinelli gabriel, arsenal gabriel martinelli, gabriel martinelli arsenal, gabriel martinelli origine, gabriel martinelli position, gabriel martinelli psg, gabriel martinelli barcelona",
-  category: 'players'
+  keywords:
+    "gabriel martinelli, gabrielle martinelli, statistiques de gabriel martinelli, martinelli gabriel, arsenal gabriel martinelli, gabriel martinelli arsenal, gabriel martinelli origine, gabriel martinelli position, gabriel martinelli psg, gabriel martinelli barcelona",
+  category: "players",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const kenanYildizPost: BlogPost = {
   id: 19,
+  slug: "kenan-yildiz", //
   title: "Kenan Yıldız : Le Prodige Turc qui Brille à la Juventus",
-  excerpt: "Découvrez l'analyse complète de Kenan Yıldız, son parcours atypique, ses qualités techniques exceptionnelles et pourquoi il est considéré comme l'avenir du football turc et italien.",
+  excerpt:
+    "Découvrez l'analyse complète de Kenan Yıldız, son parcours atypique, ses qualités techniques exceptionnelles et pourquoi il est considéré comme l'avenir du football turc et italien.",
   date: "2024-06-27",
   galleryImageId: 19,
   content: `# Kenan Yıldız : L'Étoile Montante Turque Qui Fascine la Juventus
@@ -77,6 +78,7 @@ Bien que les chiffres exacts ne soient pas publics, le salaire de Kenan Yıldız
 
 Kenan Yıldız est un talent exceptionnel qui a tout pour réussir au plus haut niveau. Son parcours atypique, sa technique, sa vision du jeu et sa détermination en font un joueur à suivre de près dans les années à venir. Que ce soit à la Juventus ou en équipe nationale turque, il est appelé à jouer un rôle majeur et à marquer l'histoire du football.
 `,
-  keywords: "kenan yildiz, yildiz juventus, yildiz turquie, yildiz bayern, yildiz technique, yildiz dribble, yildiz but, yildiz statistiques, yildiz transfert, yildiz thiago motta, yildiz serie a, yildiz champions league, yildiz euro, yildiz talent, yildiz avenir, yildiz potentiel, yildiz salaire, yildiz comparaison, yildiz style, yildiz formation",
-  category: 'players'
+  keywords:
+    "kenan yildiz, yildiz juventus, yildiz turquie, yildiz bayern, yildiz technique, yildiz dribble, yildiz but, yildiz statistiques, yildiz transfert, yildiz thiago motta, yildiz serie a, yildiz champions league, yildiz euro, yildiz talent, yildiz avenir, yildiz potentiel, yildiz salaire, yildiz comparaison, yildiz style, yildiz formation",
+  category: "players",
 };

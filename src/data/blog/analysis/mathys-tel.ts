@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const mathysTelPost: BlogPost = {
   id: 27, // Assurons-nous que cet ID est unique
+  slug: "mathys-tel", //
   title: "Mathys Tel : Le phénomène français qui illumine le Bayern Munich",
-  excerpt: "Découvrez tout sur la carrière prometteuse de Mathys Tel, le jeune prodige français du Bayern Munich. Parcours, statistiques, origine et avenir de ce talent d'exception.",
+  excerpt:
+    "Découvrez tout sur la carrière prometteuse de Mathys Tel, le jeune prodige français du Bayern Munich. Parcours, statistiques, origine et avenir de ce talent d'exception.",
   date: "2025-04-09T08:00:00Z",
   galleryImageId: 27,
   content: `
@@ -106,7 +107,8 @@ Si le jeune Français continue sur cette trajectoire, il pourrait bien devenir l
 
 Le football français tient assurément en **Mathys Tel** l'une de ses futures stars, capable de briller tant en club qu'en sélection nationale.
 `,
-  keywords: "Mathys Tel, Bayern Munich, statistiques de Mathys Tel, Tel Mathys, Mathys Tel OM, Mathys Tel origine, Mathys Tel Bayern, Mathys Tel origine parents, Mathys Tel salaire, Mathys Tel FC 25, Mathys Tel PSG, Mathys Tel stats, Mathys Tel Arsenal, Mathys Tel famille, Mathys Tel fiche, Mathys Tel poste, salaire Mathys Tel, maillot Mathys Tel",
+  keywords:
+    "Mathys Tel, Bayern Munich, statistiques de Mathys Tel, Tel Mathys, Mathys Tel OM, Mathys Tel origine, Mathys Tel Bayern, Mathys Tel origine parents, Mathys Tel salaire, Mathys Tel FC 25, Mathys Tel PSG, Mathys Tel stats, Mathys Tel Arsenal, Mathys Tel famille, Mathys Tel fiche, Mathys Tel poste, salaire Mathys Tel, maillot Mathys Tel",
   category: "players",
-  subCategory: "case-studies"
+  subCategory: "case-studies",
 };

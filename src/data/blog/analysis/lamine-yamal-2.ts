@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lamineYamal2Post: BlogPost = {
   id: 22,
+  slug: "lamine-yamal-aitana", //
   title: "Lamine Yamal et Aitana Bonmatí : Les Joyaux Catalans qui Dominent le Football",
-  excerpt: "Analyse comparative entre Lamine Yamal et Aitana Bonmatí, les deux stars du FC Barcelone qui brillent tant en club qu'en sélection espagnole, représentant le présent et l'avenir du football catalan.",
+  excerpt:
+    "Analyse comparative entre Lamine Yamal et Aitana Bonmatí, les deux stars du FC Barcelone qui brillent tant en club qu'en sélection espagnole, représentant le présent et l'avenir du football catalan.",
   date: "2024-04-15",
   galleryImageId: 22,
   content: `# Lamine Yamal et Aitana Bonmatí : Les Nouveaux Visages du FC Barcelone
@@ -51,5 +52,5 @@ Avec Lamine Yamal et Aitana Bonmatí, le FC Barcelone et la sélection espagnole
 
 Lamine Yamal et Aitana Bonmatí sont deux joyaux catalans qui dominent le football actuel. Leur talent, leur travail et leur humilité en font des modèles pour les jeunes générations. Il ne fait aucun doute qu'ils sont promis à un avenir radieux et qu'ils continueront à faire briller les couleurs du FC Barcelone et de la sélection espagnole pendant de nombreuses années.
 `,
-  category: 'players'
+  category: "players",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lionelMessiPost: BlogPost = {
   id: 25,
+  slug: "lionel-messi", //
   title: "Lionel Messi : Analyse Complète du Plus Grand Joueur de Tous les Temps",
-  excerpt: "Découvrez notre analyse approfondie de Lionel Messi, sa carrière légendaire, ses records incroyables, son style de jeu unique et son impact sur l'histoire du football mondial.",
+  excerpt:
+    "Découvrez notre analyse approfondie de Lionel Messi, sa carrière légendaire, ses records incroyables, son style de jeu unique et son impact sur l'histoire du football mondial.",
   date: "2024-04-02",
   galleryImageId: 25,
   content: `# Lionel Messi : Le Génie Qui a Réinventé le Football
@@ -103,6 +105,7 @@ Sa place dans l'histoire du football est assurée. Il est considéré comme l'un
 
 En conclusion, **Lionel Messi** est bien plus qu'un simple footballeur. C'est un artiste, un magicien, un génie qui a réinventé le football et qui continue de nous émerveiller à chaque match. Son héritage est immense et son influence sur le sport restera à jamais gravée dans les mémoires.
 `,
-  keywords: "lionel messi, messi lionel, statistiques de lionel messi, lionel messi carrière, lionel messi barcelona, lionel messi records, lionel messi ballon d'or, messi argentine, messi psg, messi inter miami, messi vs ronaldo, messi trophées, messi technique, messi meilleur buteur, messi passes décisives, messi coupe du monde, messi famille, messi salaire, messi contrat, messi transfert",
-  category: 'players'
+  keywords:
+    "lionel messi, messi lionel, statistiques de lionel messi, lionel messi carrière, lionel messi barcelona, lionel messi records, lionel messi ballon d'or, messi argentine, messi psg, messi inter miami, messi vs ronaldo, messi trophées, messi technique, messi meilleur buteur, messi passes décisives, messi coupe du monde, messi famille, messi salaire, messi contrat, messi transfert",
+  category: "players",
 };

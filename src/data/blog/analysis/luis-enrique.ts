@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const luisEnriquePost: BlogPost = {
   id: 26,
+  slug: "luis-enrique", //
   title: "Luis Enrique : L'Architecte de la Renaissance du PSG [Analyse 2024]",
-  excerpt: "Découvrez notre analyse approfondie de Luis Enrique, sa philosophie de jeu, ses méthodes d'entraînement et comment il transforme le Paris Saint-Germain en une équipe plus collective et conquérante.",
+  excerpt:
+    "Découvrez notre analyse approfondie de Luis Enrique, sa philosophie de jeu, ses méthodes d'entraînement et comment il transforme le Paris Saint-Germain en une équipe plus collective et conquérante.",
   date: "2024-06-15",
   galleryImageId: 26,
   content: `# Luis Enrique : L'Architecte de la Renaissance du PSG [Analyse 2024]
@@ -99,6 +101,7 @@ Les supporters du PSG sont parmi les plus exigeants du monde. Ils attendent de l
 En conclusion, l'arrivée de **Luis Enrique** au PSG constitue un atout majeur pour le club parisien. Son expérience, sa philosophie de jeu, ses méthodes d'entraînement et son management basé sur la confiance et le dialogue en font l'homme idéal pour transformer le PSG en une véritable machine à gagner.
 
 Bien sûr, il devra relever plusieurs défis pour atteindre les objectifs fixés, mais il possède toutes les qualités requises pour réussir. Les supporters du PSG peuvent être optimistes : avec **Luis Enrique** à la barre, l'avenir s'annonce radieux.`,
-  keywords: "luis enrique, enrique psg, enrique tactique, enrique entraineur, enrique philosophie, enrique formation, enrique champions league, enrique ligue 1, enrique barcelone, enrique espagne, enrique mbappé, enrique dembélé, enrique leadership, enrique pressing, enrique possession, enrique jeunes, enrique transferts, enrique qatar, enrique al-khelaïfi, enrique projet",
-  category: 'players'
+  keywords:
+    "luis enrique, enrique psg, enrique tactique, enrique entraineur, enrique philosophie, enrique formation, enrique champions league, enrique ligue 1, enrique barcelone, enrique espagne, enrique mbappé, enrique dembélé, enrique leadership, enrique pressing, enrique possession, enrique jeunes, enrique transferts, enrique qatar, enrique al-khelaïfi, enrique projet",
+  category: "players",
 };

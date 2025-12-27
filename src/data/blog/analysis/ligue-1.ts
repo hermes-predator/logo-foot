@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ligue1Analysis: BlogPost = {
   id: 24,
+  slug: "ligue-1-identity", //
   title: "Stratégies de Marque en Ligue 1 : Analyse Marketing 2024",
-  excerpt: "Étude approfondie des stratégies de marque des clubs de Ligue 1. Focus sur l'innovation digitale et le marketing international du football français.",
+  excerpt:
+    "Étude approfondie des stratégies de marque des clubs de Ligue 1. Focus sur l'innovation digitale et le marketing international du football français.",
   date: "2024-02-14",
   galleryImageId: 24,
   content: `Marketing et Design en Ligue 1 : L'Innovation Française
@@ -80,6 +81,7 @@ Innovations Marketing
 - Digital merchandise
 - Web3 integration
 - Fan ownership`,
-  keywords: "stratégie marque ligue 1, marketing clubs français, branding football français, innovation digitale football, design clubs ligue 1",
-  category: 'logos'
+  keywords:
+    "stratégie marque ligue 1, marketing clubs français, branding football français, innovation digitale football, design clubs ligue 1",
+  category: "logos",
 };

@@ -220,7 +220,6 @@ const HeroSection: React.FC = () => {
               <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
               <div>* Logo-foot.com est un site français fiable et sécurisé</div>
               <div>* Le fichier est délivré immédiatement, inscription non requise</div>
-              <div>* En cas de difficulté : <span className="font-bold">contact@logo-foot.com</span></div>
             </div>
 
             {/* Badges de confiance minimalistes */}

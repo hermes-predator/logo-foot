@@ -8,6 +8,7 @@ import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
 import JudgeMeBadge from '@/components/blog/JudgeMeBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
+import { useDownloadCount } from '@/contexts/DownloadCountContext';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
 
 // Données des témoignages partagées (synchronisées avec Testimonials.tsx)
@@ -70,6 +71,7 @@ const HeroSection: React.FC = () => {
   const goToPayment = () => navigate('/payment');
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const recentBuyers = useRecentBuyers();
+  const downloadCount = useDownloadCount();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -182,8 +184,13 @@ const HeroSection: React.FC = () => {
                   />
                 </span>
               </Button>
+              
+              {/* Compteur de téléchargements */}
+              <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs text-gray-500">
+                <Download className="w-3.5 h-3.5" />
+                <span className="font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
+              </div>
             </div>
-
             {/* Titre + Prix block - en dessous des boutons */}
             <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
               <span>

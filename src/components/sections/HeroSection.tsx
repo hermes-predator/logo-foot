@@ -209,16 +209,8 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Texte de réassurance sous les boutons */}
-            <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left">
-              <div className="font-bold text-gray-700">Bon à savoir :</div>
-              <div>* Logo-foot.com est un site français fiable et sécurisé</div>
-              <div>* Notre fichier est délivré immédiatement par téléchargement, inscription non requise</div>
-              <div>* En cas de difficulté avec votre téléchargement : <span className="font-bold">contact@logo-foot.com</span></div>
-            </div>
-
             {/* Badges de confiance minimalistes */}
-            <div className="flex flex-wrap items-center gap-2.5 mt-5 text-[10px] sm:text-[11px] text-gray-500">
+            <div className="flex flex-wrap items-center gap-2.5 mt-4 text-[10px] sm:text-[11px] text-gray-500">
               <div className="flex items-center gap-1.5">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5" />
                 <span>Paiement Sécurisé</span>
@@ -233,6 +225,14 @@ const HeroSection: React.FC = () => {
                 <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5" />
                 <span className="font-medium">4.8/5</span>
               </div>
+            </div>
+
+            {/* Texte de réassurance sous les boutons */}
+            <div className="mt-3 text-[8px] sm:text-[10px] text-gray-500 text-left">
+              <div className="font-bold text-gray-700">Bon à savoir :</div>
+              <div>* Logo-foot.com est un site français fiable et sécurisé</div>
+              <div>* Notre fichier est délivré immédiatement par téléchargement, inscription non requise</div>
+              <div>* En cas de difficulté avec votre téléchargement : <span className="font-bold">contact@logo-foot.com</span></div>
             </div>
             
             {/* Pastille d'urgence - Achats récents */}

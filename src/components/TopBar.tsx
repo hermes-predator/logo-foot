@@ -52,7 +52,7 @@ const TopBar = () => {
       <div className="flex justify-center items-center gap-2 whitespace-nowrap">
         <span className="text-[9px] md:text-[10px] font-bold flex items-center gap-2">
           ⟨ <LiveDot /> 
-          <span className="inline-block min-w-[280px] md:min-w-[420px] text-center">
+          <span className="inline-block">
             {displayedText}
             <span className="animate-pulse">|</span>
           </span>

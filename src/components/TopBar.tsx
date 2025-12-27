@@ -34,7 +34,7 @@ const TopBar = () => {
         <span className="text-[9px] md:text-[10px] font-bold flex items-center gap-2">
           ⟨ <LiveDot /> 
           <span 
-            className={`transition-all duration-300 ${isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'}`}
+            className={`transition-all duration-500 ease-out ${isAnimating ? 'opacity-0 -translate-x-4 scale-95' : 'opacity-100 translate-x-0 scale-100'}`}
           >
             {messages[currentIndex]}
           </span>

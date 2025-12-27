@@ -188,9 +188,9 @@ const HeroSection: React.FC = () => {
               </div>
               
               {/* Compteur de téléchargements */}
-              <div className="flex items-center gap-1.5 text-xs text-gray-500">
-                <Download className="w-3.5 h-3.5" />
-                <span className="font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
+              <div className="flex items-center gap-1 text-[10px] text-gray-400 mt-1">
+                <Download className="w-3 h-3" />
+                <span>{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
               </div>
             </div>
             {/* Titre + Prix block - en dessous des boutons */}

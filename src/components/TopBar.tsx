@@ -9,7 +9,7 @@ const LiveDot = () => (
 
 const messages = [
   "Ajoutez le meilleur fichier sur le thème du FOOTBALL à votre collection",
-  "Vous obtenez tous les logos de football pour vos projets"
+  "Vous n'aurez plus besoin de chercher les logos de football pour vos projets"
 ];
 
 const TopBar = () => {

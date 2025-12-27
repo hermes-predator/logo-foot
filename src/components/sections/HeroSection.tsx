@@ -187,7 +187,7 @@ const HeroSection: React.FC = () => {
                     </span>
                     <span className="flex items-center gap-1 text-[9px] text-white/50 font-normal -mt-1">
                       <Download className="!w-[10px] !h-[10px]" />
-                      {downloadCount.toLocaleString('fr-FR')} downloads with
+                      {downloadCount.toLocaleString('fr-FR')} téléchargements avec
                       <img 
                         src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" 
                         alt="SumUp" 

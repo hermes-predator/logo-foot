@@ -1,7 +1,7 @@
 
 
 import { Dialog, DialogTrigger } from "../ui/dialog";
-import { Eye, Maximize2 } from "lucide-react";
+import { Eye, Maximize2, Plus } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { GalleryItemProps } from "@/types/gallery";
 import { useLazyLoading } from "@/hooks/useLazyLoading";
@@ -65,12 +65,12 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   };
 
   // Fonction pour obtenir le texte descriptif de la collection et la valeur estimée
-  const getCollectionData = (item: GalleryItemProps['item']): { text: string; estimatedValue: number } => {
+  const getCollectionData = (item: GalleryItemProps['item']): { count: number; text: string; estimatedValue: number } => {
     // Pour les collections spéciales (items 61-64)
-    if (item.id === 61) return { text: "📁 +100 logos de compétitions de football", estimatedValue: 1 };
-    if (item.id === 62) return { text: "📁 +100 couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
-    if (item.id === 63) return { text: "📁 +100 couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
-    if (item.id === 64) return { text: "📁 +270 logos de drapeaux mondiaux", estimatedValue: 2.70 };
+    if (item.id === 61) return { count: 100, text: "logos de compétitions de football", estimatedValue: 1 };
+    if (item.id === 62) return { count: 100, text: "couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
+    if (item.id === 63) return { count: 100, text: "couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
+    if (item.id === 64) return { count: 270, text: "logos de drapeaux mondiaux", estimatedValue: 2.70 };
     
     // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {
@@ -203,7 +203,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     // Calcul de la valeur estimée basée sur le nombre de logos (0.01€ par logo)
     const estimatedValue = Math.round(logoCount * 0.01 * 100) / 100;
     
-    return { text: `📁 +${logoCount} logos de clubs ${adjective}`, estimatedValue };
+    return { count: logoCount, text: `logos de clubs ${adjective}`, estimatedValue };
   };
 
   // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)
@@ -350,8 +350,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         <p className="text-sm text-gray-950 transition-opacity duration-200 hover:opacity-100 opacity-90 font-semibold">
           {item.title}
         </p>
-        <p className="text-xs text-gray-500 font-medium">
-          {getCollectionData(item).text}
+        <p className="text-xs text-gray-500 font-medium flex items-center justify-center gap-0.5">
+          <Plus className="w-3 h-3 text-green-600 stroke-[3]" />
+          <span className="text-green-600 font-bold">{getCollectionData(item).count}</span>
+          <span className="ml-0.5">{getCollectionData(item).text}</span>
         </p>
         <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-red-100 text-red-700 text-[9px] font-semibold">
           Valeur : {getCollectionData(item).estimatedValue}€

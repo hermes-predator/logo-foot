@@ -67,10 +67,10 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   // Fonction pour obtenir le texte descriptif de la collection et la valeur estimée
   const getCollectionData = (item: GalleryItemProps['item']): { text: string; estimatedValue: number } => {
     // Pour les collections spéciales (items 61-64)
-    if (item.id === 61) return { text: "Fichier de + 100 logos de compétitions de football", estimatedValue: 1 };
-    if (item.id === 62) return { text: "Fichier de + 100 couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
-    if (item.id === 63) return { text: "Fichier de + 100 couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
-    if (item.id === 64) return { text: "Fichier de + 270 logos de drapeaux mondiaux", estimatedValue: 2.70 };
+    if (item.id === 61) return { text: "📁+ 100 logos de compétitions de football", estimatedValue: 1 };
+    if (item.id === 62) return { text: "📁+ 100 couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
+    if (item.id === 63) return { text: "📁+ 100 couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
+    if (item.id === 64) return { text: "📁+ 270 logos de drapeaux mondiaux", estimatedValue: 2.70 };
     
     // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {
@@ -203,7 +203,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     // Calcul de la valeur estimée basée sur le nombre de logos (0.01€ par logo)
     const estimatedValue = Math.round(logoCount * 0.01 * 100) / 100;
     
-    return { text: `Fichier de + ${logoCount} logos de clubs ${adjective}`, estimatedValue };
+    return { text: `📁+ ${logoCount} logos de clubs ${adjective}`, estimatedValue };
   };
 
   // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)

@@ -145,48 +145,50 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-4 mb-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto rounded bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
-                    <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
-                    Fichier
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
-                  <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-gray-900">
-                      Descriptif du ZIP
-                    </DialogTitle>
-                     <div className="text-sm text-gray-600 mb-4">
-                       <span className="font-extrabold not-italic">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                     </div>
-                    <DialogDescription>
-                      <PackDescription />
-                    </DialogDescription>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
-              
-              <Button
-                size="lg"
-                onClick={goToPayment}
-                title="Paiement sécurisé avec SumUp - 5€"
-                className="group relative max-w-sm w-full sm:w-auto rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
-                aria-label="Commande sécurisée via SumUp"
-              >
-                {/* Effet de lumière réfléchissante - identique à PaymentButton */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
-                <span className="relative flex items-center justify-center gap-3 w-full">
-                  <span className="font-bold">Télécharger maintenant</span>
-                  <ArrowRight 
-                    className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
-                  />
-                </span>
-              </Button>
+            <div className="flex flex-col gap-3 mt-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto rounded bg-white hover:bg-gray-50 border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 sm:px-7 py-3 sm:py-4 h-auto text-sm sm:text-base shadow-[inset_0_0_0_1px_rgba(255,255,255,0.10),inset_0_1px_0_rgba(0,0,0,0.12),inset_0_-1px_0_rgba(255,255,255,0.50),0_2px_6px_rgba(0,0,0,0.06)]" aria-label="Ouvrir le descriptif du ZIP">
+                      <Folder className="w-5 h-5 sm:w-6 sm:h-6 mr-1" />
+                      Fichier
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[800px] max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-bold text-gray-900">
+                        Descriptif du ZIP
+                      </DialogTitle>
+                       <div className="text-sm text-gray-600 mb-4">
+                         <span className="font-extrabold not-italic">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                       </div>
+                      <DialogDescription>
+                        <PackDescription />
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
+                
+                <Button
+                  size="lg"
+                  onClick={goToPayment}
+                  title="Paiement sécurisé avec SumUp - 5€"
+                  className="group relative max-w-sm w-full sm:w-auto rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-6 py-4 h-auto text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
+                  aria-label="Commande sécurisée via SumUp"
+                >
+                  {/* Effet de lumière réfléchissante - identique à PaymentButton */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
+                  <span className="relative flex items-center justify-center gap-3 w-full">
+                    <span className="font-bold">Télécharger maintenant</span>
+                    <ArrowRight 
+                      className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
+                    />
+                  </span>
+                </Button>
+              </div>
               
               {/* Compteur de téléchargements */}
-              <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs text-gray-500">
+              <div className="flex items-center gap-1.5 text-xs text-gray-500">
                 <Download className="w-3.5 h-3.5" />
                 <span className="font-medium">{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
               </div>

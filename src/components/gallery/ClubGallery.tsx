@@ -62,17 +62,17 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
       {/* Pagination avec style branded amélioré */}
       {!isLoading && totalPages > 1 && (
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {/* Indicateur de progression et statistiques */}
-          <div className="flex flex-col items-center space-y-3">
-            <p className="text-base font-semibold text-slate-600">
+          <div className="flex flex-col items-center space-y-2 sm:space-y-3">
+            <p className="text-sm sm:text-base font-semibold text-slate-600">
               <span className="text-black font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-black font-bold">{items.length} fichiers</span> affichés
             </p>
             
             {/* Barre de progression élégante */}
-            <div className="w-full max-w-lg bg-slate-200 rounded-full h-3 overflow-hidden shadow-inner">
+            <div className="w-full max-w-xs sm:max-w-lg bg-slate-200 rounded-full h-2 sm:h-3 overflow-hidden shadow-inner">
               <div 
-                className="bg-gradient-to-r from-slate-800 to-black h-3 rounded-full transition-all duration-700 ease-out shadow-sm"
+                className="bg-gradient-to-r from-slate-800 to-black h-2 sm:h-3 rounded-full transition-all duration-700 ease-out shadow-sm"
                 style={{ width: `${(currentPage / totalPages) * 100}%` }}
               />
             </div>
@@ -80,14 +80,14 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
 
           {/* Pagination avec design branded */}
           <div className="flex justify-center">
-            <div className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-none transition-all duration-300">
+            <div className="bg-white rounded-xl sm:rounded-2xl border border-slate-200 p-3 sm:p-6 hover:shadow-none transition-all duration-300">
               <Pagination>
-                <PaginationContent className="gap-3">
+                <PaginationContent className="gap-1.5 sm:gap-3">
                   {currentPage > 1 && (
                     <PaginationItem>
                       <PaginationPrevious 
                         onClick={() => setCurrentPage(currentPage - 1)}
-                        className="cursor-pointer bg-slate-100 hover:bg-slate-100 hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
+                        className="cursor-pointer bg-slate-100 hover:bg-slate-100 hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm"
                       />
                     </PaginationItem>
                   )}
@@ -97,7 +97,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                       <PaginationLink
                         isActive={page === currentPage}
                         onClick={() => setCurrentPage(page)}
-                        className={`cursor-pointer transition-all duration-300 font-semibold px-4 py-2 rounded-xl min-w-[44px] ${
+                        className={`cursor-pointer transition-all duration-300 font-semibold px-2.5 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl min-w-[32px] sm:min-w-[44px] text-xs sm:text-sm ${
                           page === currentPage 
                             ? 'bg-black text-white border-black scale-105 hover:bg-black hover:text-white hover:border-black hover:scale-105' 
                             : 'bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-100 hover:border-black hover:scale-105'
@@ -112,7 +112,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationNext 
                         onClick={() => setCurrentPage(currentPage + 1)}
-                        className="cursor-pointer bg-slate-100 hover:bg-slate-100 hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-4 py-2 rounded-xl"
+                        className="cursor-pointer bg-slate-100 hover:bg-slate-100 hover:border-black border border-slate-300 transition-all duration-300 hover:scale-105 font-medium px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm"
                       />
                     </PaginationItem>
                   )}

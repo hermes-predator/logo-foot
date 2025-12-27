@@ -178,24 +178,25 @@ const HeroSection: React.FC = () => {
                 >
                   {/* Effet de lumière réfléchissante - identique à PaymentButton */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
-                  <span className="relative flex items-center justify-center gap-3 w-full">
-                    <span className="font-bold">Télécharger maintenant</span>
-                    <ArrowRight 
-                      className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
-                    />
+                  <span className="relative flex flex-col items-center justify-center w-full">
+                    <span className="flex items-center gap-3">
+                      <span className="font-bold">Télécharger maintenant</span>
+                      <ArrowRight 
+                        className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
+                      />
+                    </span>
+                    <span className="text-[9px] text-white/50 font-normal mt-0.5">
+                      {downloadCount.toLocaleString('fr-FR')} téléchargements
+                    </span>
                   </span>
                 </Button>
               </div>
               
             </div>
             {/* Titre + Prix block - en dessous des boutons */}
-            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4 flex items-center gap-2 flex-wrap">
+            <h1 className="text-[8px] sm:text-[9px] md:text-[10px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
               <span>
                 Télécharger tous les <span className="underline">logos des clubs de football</span> en 1 MIN ⏱️:
-              </span>
-              <span className="flex items-center gap-1 text-gray-400 font-normal">
-                <Download className="w-2.5 h-2.5" />
-                <span>{downloadCount.toLocaleString('fr-FR')} téléchargements</span>
               </span>
             </h1>
             <div className="text-left">

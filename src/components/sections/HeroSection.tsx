@@ -219,7 +219,7 @@ const HeroSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5">
                 <Zap className="w-3 h-3 text-gray-400 flex-shrink-0" />
-                <span>Fichier délivré immédiatement, inscription non requise</span>
+                <span>Le fichier est délivré immédiatement, inscription non requise</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Mail className="w-3 h-3 text-gray-400 flex-shrink-0" />

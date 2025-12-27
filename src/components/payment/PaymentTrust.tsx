@@ -1,22 +1,9 @@
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Download } from 'lucide-react';
+import { useDownloadCount } from '@/contexts/DownloadCountContext';
 
 const PaymentTrust = () => {
-  const [downloadCount, setDownloadCount] = useState(25287);
-  
-  // Effet pour augmenter progressivement le nombre de téléchargements
-  useEffect(() => {
-    // Intervalle pour augmenter progressivement le nombre
-    const interval = setInterval(() => {
-      setDownloadCount(prevCount => {
-        // Augmenter de 1 toutes les quelques minutes
-        return prevCount + 1;
-      });
-    }, 3 * 60 * 1000); // Augmente toutes les 3 minutes
-    
-    return () => clearInterval(interval);
-  }, []);
+  const downloadCount = useDownloadCount();
 
   return (
     <div className="flex items-center justify-center mt-4 flex-wrap gap-1.5">

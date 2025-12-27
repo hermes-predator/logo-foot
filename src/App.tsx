@@ -16,6 +16,7 @@ import Header from './components/Header';
 import MetaTagsManager from './components/SEO/MetaTagsManager';
 
 import { RecentBuyersProvider } from './contexts/RecentBuyersContext';
+import { DownloadCountProvider } from './contexts/DownloadCountContext';
 
 // Créer un client pour React Query
 const queryClient = new QueryClient({
@@ -33,22 +34,24 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <RecentBuyersProvider>
-            <Router basename="/">
-              <MetaTagsManager />
-              <Header />
-              
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:slug" element={<BlogPost />} />
-                <Route path="/payment" element={<Payment />} />
-                <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
-                <Route path="/sitemap" element={<Sitemap />} />
-                <Route path="/sitemap.xml" element={<Sitemap />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Router>
-            <Toaster />
+            <DownloadCountProvider>
+              <Router basename="/">
+                <MetaTagsManager />
+                <Header />
+                
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/blog/:slug" element={<BlogPost />} />
+                  <Route path="/payment" element={<Payment />} />
+                  <Route path="/payment-success-token13061995" element={<PaymentSuccess />} />
+                  <Route path="/sitemap" element={<Sitemap />} />
+                  <Route path="/sitemap.xml" element={<Sitemap />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Router>
+              <Toaster />
+            </DownloadCountProvider>
           </RecentBuyersProvider>
         </TooltipProvider>
       </QueryClientProvider>

@@ -71,13 +71,13 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           <SparkleEffects isHovered={isHovered} />
           <RecentBuyersBadge count={recentBuyers} />
           
-          <div className="mb-3 relative z-10 mt-0">
+          <div className="mb-2 sm:mb-3 relative z-10 mt-5 sm:mt-0">
             <div className="flex items-center gap-2">
-              <h3 className={`${isSmallMobile ? "text-lg" : isMobile ? "text-xl" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'}`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <h3 className={`${isSmallMobile ? "text-base" : isMobile ? "text-lg" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'} leading-tight`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
             </div>
           
             {/* Google Drive Badge et bouton œil ensemble */}
-            <div className="mt-3 flex items-center gap-2">
+            <div className="mt-2 sm:mt-3 flex items-center gap-1.5 sm:gap-2">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>

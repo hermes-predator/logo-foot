@@ -41,7 +41,7 @@ const GoogleDriveBadge = ({
   
   return (
     <Badge 
-      className={`inline-flex items-center gap-2 px-3 py-2 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-50/60 transition-colors duration-300 rounded-full relative overflow-hidden group
+      className={`inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-50/60 transition-colors duration-300 rounded-full relative overflow-hidden group
         shadow-[0_1px_4px_rgba(0,0,0,0.03),0_1px_2px_rgba(0,0,0,0.01)] 
         ${cursorHelp ? 'cursor-help' : ''} ${className}`}
       role="status"
@@ -52,12 +52,12 @@ const GoogleDriveBadge = ({
         <span className="absolute inset-0 rounded-full bg-blue-100/0 group-active:bg-blue-100/20 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
       </span>
       
-      <BadgeCheck className={`h-4 w-4 text-green-600 ${cursorHelp ? 'cursor-help' : ''}`} aria-hidden="true" />
-      <span className={`font-medium text-sm text-gray-600 ${cursorHelp ? 'cursor-help' : ''}`}>Fichier stockable sur votre</span>
+      <BadgeCheck className={`h-3.5 w-3.5 sm:h-4 sm:w-4 text-green-600 ${cursorHelp ? 'cursor-help' : ''}`} aria-hidden="true" />
+      <span className={`font-medium text-[10px] sm:text-sm text-gray-600 ${cursorHelp ? 'cursor-help' : ''} hidden xs:inline`}>Stockable sur</span>
       <img 
         src="/lovable-uploads/0962b530-529a-4878-85cb-a1720e91e2ad.png" 
         alt="Google Drive" 
-        className={`h-6 w-auto object-contain ${cursorHelp ? 'cursor-help' : ''}`}
+        className={`h-4 sm:h-6 w-auto object-contain ${cursorHelp ? 'cursor-help' : ''}`}
         loading="lazy"
         width="60"
         height="24"

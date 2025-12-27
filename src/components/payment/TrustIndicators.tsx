@@ -9,19 +9,19 @@ const TrustIndicators = () => {
       <TrustCard 
         icon={<ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />}
         title="Paiement Sécurisé"
-        description="Via SumUp"
+        description="Transactions via SumUp"
         hoverContent="Notre système de paiement est entièrement sécurisé avec un cryptage SSL et respecte les normes PCI DSS."
       />
       <TrustCard 
         icon={<Download className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />}
-        title="Téléchargement"
-        description="Instantané"
+        title="Téléchargement Instantané"
+        description="Page d'après-paiement"
         hoverContent="Accédez immédiatement à votre fichier après paiement, sans délai d'attente ou procédure complexe."
       />
       <TrustCard 
         icon={<HandHeart className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />}
-        title="Support"
-        description="Par e-mail"
+        title="Support Client"
+        description="E-mail : contact@logo-foot.com"
         hoverContent="Notre équipe de support est disponible pour répondre à vos questions et vous aider en cas de besoin."
       />
     </div>

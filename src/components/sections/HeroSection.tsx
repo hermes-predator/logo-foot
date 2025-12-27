@@ -210,8 +210,25 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
 
+            {/* Texte de réassurance sous les boutons */}
+            <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
+              <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
+              <div className="flex items-center gap-1.5">
+                <Shield className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <span>Logo-foot.com est un site français fiable et sécurisé</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Zap className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <span>Fichier délivré immédiatement, inscription non requise</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Mail className="w-3 h-3 text-gray-400 flex-shrink-0" />
+                <span>En cas de difficulté : <span className="font-bold">contact@logo-foot.com</span></span>
+              </div>
+            </div>
+
             {/* Badges de confiance minimalistes */}
-            <div className="flex flex-wrap items-center gap-2.5 mt-4 text-[10px] sm:text-[11px] text-gray-500">
+            <div className="flex flex-wrap items-center gap-2.5 mt-3 text-[10px] sm:text-[11px] text-gray-500">
               <div className="flex items-center gap-1.5">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5" />
                 <span>Paiement Sécurisé</span>
@@ -225,23 +242,6 @@ const HeroSection: React.FC = () => {
               <div className="flex items-center gap-1">
                 <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5" />
                 <span className="font-medium">4.8/5</span>
-              </div>
-            </div>
-
-            {/* Texte de réassurance sous les boutons */}
-            <div className="mt-3 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
-              <div className="font-bold text-gray-700 mb-1">Bon à savoir :</div>
-              <div className="flex items-center gap-1.5">
-                <Shield className="w-3 h-3 text-gray-400 flex-shrink-0" />
-                <span>Logo-foot.com est un site français fiable et sécurisé</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Zap className="w-3 h-3 text-gray-400 flex-shrink-0" />
-                <span>Fichier délivré immédiatement, inscription non requise</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Mail className="w-3 h-3 text-gray-400 flex-shrink-0" />
-                <span>En cas de difficulté : <span className="font-bold">contact@logo-foot.com</span></span>
               </div>
             </div>
             

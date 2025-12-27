@@ -24,7 +24,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
         <TooltipTrigger asChild>
           <Button 
             onClick={handlePayment}
-            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-3 sm:px-8 py-4 sm:py-7 text-sm sm:text-lg rounded-xl border-b-[3px] border-b-blue-900/70 border-l-[1px] border-l-blue-800/60 border-r-[1px] border-r-blue-800/60 hover:border-b-blue-900/80 hover:border-l-blue-800/70 hover:border-r-blue-800/70 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/80 active:translate-y-[2px] active:scale-[0.98] group h-14 sm:h-22 relative overflow-hidden will-change-transform shadow-lg hover:shadow-xl"
+            className="w-full bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 text-white px-3 sm:px-8 py-4 sm:py-7 text-sm sm:text-lg rounded-xl border-b-[3px] border-b-blue-900/70 border-l-[1px] border-l-blue-800/60 border-r-[1px] border-r-blue-800/60 hover:border-b-blue-900/80 hover:border-l-blue-800/70 hover:border-r-blue-800/70 transition-all duration-300 active:border-b-[1px] active:border-b-blue-900/80 active:translate-y-[2px] active:scale-[0.98] group h-14 sm:h-[88px] relative overflow-hidden will-change-transform shadow-lg hover:shadow-xl"
             style={{
               boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 1px 0 0 rgba(255, 255, 255, 0.08), inset -1px 0 0 rgba(255, 255, 255, 0.08), 0 3px 6px rgba(0, 0, 0, 0.12)',
               filter: 'drop-shadow(0 2px 4px rgba(59, 130, 246, 0.2))',
@@ -55,10 +55,8 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
                 </span>
               </div>
               <ArrowRight 
-                className="drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
-                size={18}
+                className="h-4 w-4 sm:h-5 sm:w-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                 aria-hidden="true"
-                style={{ minWidth: '18px', minHeight: '18px', width: '18px', height: '18px' }}
               />
             </div>
           </Button>

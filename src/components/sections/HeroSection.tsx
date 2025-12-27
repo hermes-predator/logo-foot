@@ -226,18 +226,11 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Pastille d'urgence - Achats récents */}
-            <div className="flex justify-start ml-2 mt-4 sm:mt-6">
-              <div className="inline-flex items-center gap-2 sm:gap-3 text-gray-600 text-sm font-medium">
-                <div className="relative">
-                  {/* Point vert principal */}
-                  <div className="w-2 h-2 bg-green-500 rounded-full relative z-10"></div>
-                  {/* Effet de pulsation plus lent et plus grand */}
-                  <div className="absolute -inset-1 w-4 h-4 bg-green-400/60 rounded-full animate-[ping_2.5s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
-                </div>
-                <span className="text-xs sm:text-sm">
-                  <span className="font-extrabold">{recentBuyers}</span> <span className="font-bold">personnes</span> ont téléchargé récemment
-                </span>
+            {/* Compteur de téléchargements discret */}
+            <div className="flex justify-start mt-4 sm:mt-5">
+              <div className="inline-flex items-center gap-1.5 text-gray-500 text-[10px] sm:text-xs">
+                <Download className="w-3 h-3" />
+                <span><span className="font-semibold text-gray-700">2 847</span> téléchargements</span>
               </div>
             </div>
             </div> {/* Fin du container brandé */}

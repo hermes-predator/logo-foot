@@ -12,14 +12,14 @@ interface FeatureProps {
 
 const Feature = ({ icon: Icon, text, description, className, iconColor }: FeatureProps) => {
   return (
-    <div className="relative flex items-center gap-4 text-gray-800 p-2 rounded-lg">
-      <div className={`relative z-10 p-2.5 rounded-full ${className || 'bg-blue-100'}`}>
-        <Icon className={`h-5 w-5 ${iconColor || 'text-blue-600'}`} />
+    <div className="relative flex items-center gap-2 sm:gap-4 text-gray-800 p-1.5 sm:p-2 rounded-lg">
+      <div className={`relative z-10 p-1.5 sm:p-2.5 rounded-full flex-shrink-0 ${className || 'bg-blue-100'}`}>
+        <Icon className={`h-4 w-4 sm:h-5 sm:w-5 ${iconColor || 'text-blue-600'}`} />
       </div>
-      <div className="relative z-10">
-        <span className="text-[15px] font-semibold">{text}</span>
+      <div className="relative z-10 min-w-0">
+        <span className="text-[13px] sm:text-[15px] font-semibold block truncate">{text}</span>
         {description && (
-          <p className="text-xs text-gray-500 mt-0.5 leading-tight max-w-[240px]">{description}</p>
+          <p className="text-[10px] sm:text-xs text-gray-500 mt-0.5 leading-tight line-clamp-2">{description}</p>
         )}
       </div>
     </div>
@@ -83,7 +83,7 @@ const FeatureList = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-x-8 gap-y-3 mb-7 pt-4 mt-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-1 sm:gap-y-3 mb-4 sm:mb-7 pt-2 sm:pt-4 mt-1 sm:mt-2">
       {features.map((feature, index) => (
         <Feature 
           key={index} 

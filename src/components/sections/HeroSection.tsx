@@ -218,8 +218,8 @@ const HeroSection: React.FC = () => {
             {/* Texte de réassurance sous les boutons */}
             <div className="mt-4 text-[8px] sm:text-[10px] text-gray-500 text-left space-y-0.5">
               <div className="font-bold text-gray-700 mb-1 text-[9px] sm:text-[11px]">Bon à savoir :</div>
-              <div>• Logo-foot.com est un site français fiable et sécurisé : <span className="font-bold">contact@logo-foot.com</span></div>
-              <div>• Le fichier est délivré immédiatement, inscription non requise</div>
+              <div>➥ Logo-foot.com est un site français fiable et sécurisé : <span className="font-bold">contact@logo-foot.com</span></div>
+              <div>➥ Le fichier est délivré immédiatement, inscription non requise</div>
             </div>
 
             {/* Badges de confiance minimalistes */}

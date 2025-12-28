@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const adanaDemirsporLogoPost: BlogPost = {
   id: 48,
+  slug: "adana-demirspor-logo", //
   title: "**Logo Adana Demirspor** : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Adana Demirspor**, un symbole d'identité et de fierté du football turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Adana Demirspor**, un symbole d'identité et de fierté du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",
   galleryImageId: 48,
   content: `# L'Histoire Fascinante du **Logo Adana Demirspor**
@@ -70,8 +71,8 @@ L'emblème trouve de multiples applications :
 ## Héritage et Avenir
 
 Le **logo Adana Demirspor** continue d'évoluer tout en préservant son essence historique, symbolisant la modernisation du club tout en honorant ses racines.`,
-  keywords: "logo adana demirspor, adana demirspor logo, adana demirspor logo png, football turc, super lig, emblème club turc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo adana demirspor, adana demirspor logo, adana demirspor logo png, football turc, super lig, emblème club turc",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

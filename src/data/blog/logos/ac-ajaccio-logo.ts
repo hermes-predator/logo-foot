@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const acAjaccioLogoPost: BlogPost = {
   id: 47, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  slug: "ac-ajaccio-logo", //
   title: "Logo AC Ajaccio : Histoire et Évolution de l'Emblème Corse [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'AC Ajaccio : origines, évolution et symbolisme de l'emblème emblématique du club corse.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'AC Ajaccio : origines, évolution et symbolisme de l'emblème emblématique du club corse.",
   date: "2024-06-09",
   galleryImageId: 47,
   content: `# L'Histoire Fascinante du **AC Ajaccio Logo**
@@ -54,7 +55,8 @@ Au-delà de sa fonction d'identification, le **logo ac ajaccio** incarne les val
 Alors que l'ACA poursuit son parcours, alternant entre les différentes divisions professionnelles mais toujours avec la même détermination, le **ajaccio logo png** reste le témoin visuel de ses moments de gloire et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la fierté d'une ville et d'une région qui vivent intensément leur passion pour le football.
 
 Le **logo ac ajaccio png**, dans toutes ses déclinaisons et évolutions, demeure ainsi le gardien d'une identité footballistique unique, profondément ancrée dans la culture corse, et prête à affronter les défis futurs avec le caractère et la passion qui ont toujours défini ce club emblématique de l'île de Beauté.`,
-  keywords: "ac ajaccio logo, logo ac ajaccio, logo ajaccio, ajaccio logo, ac ajaccio logo png, ajaccio foot logo, logo ajaccio foot, ajaccio logo png, logo ac ajaccio png, logo ajaccio png, nouveau logo ac ajaccio",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "ac ajaccio logo, logo ac ajaccio, logo ajaccio, ajaccio logo, ac ajaccio logo png, ajaccio foot logo, logo ajaccio foot, ajaccio logo png, logo ac ajaccio png, logo ajaccio png, nouveau logo ac ajaccio",
+  category: "logos",
+  subCategory: "club-logos",
 };

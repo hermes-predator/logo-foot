@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const logosFootPdfPost: BlogPost = {
   id: 45,
+  slug: "1001-logos-des-clubs-de-foot-pdf", //
   title: "1001 logos des clubs de foot PDF : Guide complet des ressources disponibles",
-  excerpt: "Découvrez notre analyse des collections de logos de football au format PDF, leurs limites et pourquoi notre pack premium offre une meilleure alternative que les '1001 logos des clubs de foot PDF' gratuits.",
+  excerpt:
+    "Découvrez notre analyse des collections de logos de football au format PDF, leurs limites et pourquoi notre pack premium offre une meilleure alternative que les '1001 logos des clubs de foot PDF' gratuits.",
   date: "2023-10-18",
   galleryImageId: 45,
   content: `
@@ -115,7 +117,8 @@ Pour des ressources de qualité professionnelle, notre pack premium de logos de 
 
 N'hésitez pas à nous contacter pour plus d'informations sur notre collection de logos de football et comment elle peut répondre à vos besoins spécifiques bien mieux que n'importe quelle compilation de **1001 logos des clubs de foot PDF**.
 `,
-  keywords: "1001 logos des clubs de foot pdf, logos football pdf, collection logos football, télécharger logos foot, pack logos football, logos clubs football vectoriel, logos football haute qualité",
+  keywords:
+    "1001 logos des clubs de foot pdf, logos football pdf, collection logos football, télécharger logos foot, pack logos football, logos clubs football vectoriel, logos football haute qualité",
   category: "technical",
-  subCategory: "technical-logos"
+  subCategory: "technical-logos",
 };

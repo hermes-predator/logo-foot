@@ -279,8 +279,8 @@ const HeroSection: React.FC = () => {
                 
                 {/* Overlay cadenas - disparaît au survol */}
                 <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px] flex items-center justify-center transition-all duration-300 opacity-100 group-hover:opacity-0 group-hover:pointer-events-none">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 shadow-lg">
-                    <Lock className="w-8 h-8 text-gray-600" />
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 shadow-lg animate-[bounce_2s_ease-in-out_infinite]">
+                    <Lock className="w-8 h-8 text-gray-600 animate-[pulse_1.5s_ease-in-out_infinite]" />
                   </div>
                 </div>
                 

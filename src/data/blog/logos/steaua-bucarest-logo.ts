@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const steauaBucarestLogoPost: BlogPost = {
   id: 543, // ID unique pour cet article
+  slug: "steaua-bucarest-logo", //
   title: "Steaua Bucarest Logo : Histoire et Signification de l'Emblème Roumain [2024]",
   date: "2025-04-11",
   galleryImageId: 543,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo Steaua Bucarest, emblème emblématique du club de football roumain. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de ce club historique de Roumanie.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo Steaua Bucarest, emblème emblématique du club de football roumain. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de ce club historique de Roumanie.",
   content: `# L'Histoire Fascinante du **Logo Steaua Bucarest**
 
 Le **steaua bucarest logo** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les traditions et l'identité d'un des clubs les plus emblématiques du football roumain. Dans cet article approfondi, nous explorerons l'histoire, la signification et l'évolution du **logo steaua bucarest**, un emblème qui représente la fierté d'une ville et l'ambition d'un club aux racines profondes.
@@ -169,5 +170,6 @@ Le **logo steaua bucarest** représente bien plus qu'une simple identité visuel
 La combinaison distinctive de l'étoile et des couleurs rouge et bleu, centrée sur un design élégant et traditionnel, a permis au Steaua Bucarest de se construire une identité visuelle reconnaissable et mémorable. Cette identité transcende le cadre sportif pour s'inscrire dans un contexte culturel et national plus large, faisant du **steaua bucarest logo png** un véritable symbole de tradition et d'ambition.
 
 À mesure que le club poursuit son ascension sportive et que les questions juridiques trouvent progressivement leur résolution, son emblème continuera d'évoluer tout en préservant l'essence qui en fait un design si particulier dans le paysage du football européen. Le **steaue bucarest logo png** reste ainsi un parfait exemple de la façon dont un emblème sportif peut incarner l'âme et les aspirations d'un club, d'une ville et d'une nation tout entière.`,
-  keywords: "logo steaua bucarest, steaua bucarest logo, bucarest steaua logo, logo fc steaua bucarest, logo foot steaua bucarest, steaua bucarest logo png, steaue bucarest logo png",
+  keywords:
+    "logo steaua bucarest, steaua bucarest logo, bucarest steaua logo, logo fc steaua bucarest, logo foot steaua bucarest, steaua bucarest logo png, steaue bucarest logo png",
 };

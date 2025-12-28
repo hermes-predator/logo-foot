@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const stokeCityLogoPost: BlogPost = {
   id: 546,
+  slug: "stoke-city-logo", //
   title: "Logo Stoke City : Histoire et Évolution de l'Emblème des Potters [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Stoke City : des origines à aujourd'hui, évolution et signification de l'emblème emblématique des Potters.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Stoke City : des origines à aujourd'hui, évolution et signification de l'emblème emblématique des Potters.",
   date: "2024-04-20",
   galleryImageId: 546,
   content: `# L'Histoire Fascinante du **Logo Stoke City**
@@ -52,7 +53,8 @@ Alors que Stoke City FC poursuit son parcours dans le football anglais, son **lo
 Les futures évolutions du **logo stoke city png** s'inscriront probablement dans cette même philosophie, avec des ajustements mineurs destinés à optimiser sa performance digitale sans altérer ses composantes symboliques fondamentales. Cette approche progressive garantit que le **nouveau logo stoke city** restera toujours fidèle à l'esprit et aux valeurs du club, tout en s'adaptant aux nouveaux défis visuels de l'ère numérique.
 
 Pour les générations futures de supporters, le **logo foot stoke city** continuera d'incarner la fierté, la résilience et l'esprit communautaire qui définissent ce club historique. Dans un monde footballistique en perpétuelle mutation, cet emblème demeure un point d'ancrage stable – un symbole visuel qui relie le passé glorieux aux ambitions futures de Stoke City FC.`,
-  keywords: "stoke city logo, logo stoke city png, nouveau logo stoke city, stoke city logo png, logo stoke city fc, equipe stoke city logo, logo de foot stoke city, logo foot stoke city, logo png stoke city, logo stoke city",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "stoke city logo, logo stoke city png, nouveau logo stoke city, stoke city logo png, logo stoke city fc, equipe stoke city logo, logo de foot stoke city, logo foot stoke city, logo png stoke city, logo stoke city",
+  category: "logos",
+  subCategory: "club-logos",
 };

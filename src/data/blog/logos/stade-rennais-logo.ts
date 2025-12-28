@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const stadeRennaisLogoPost: BlogPost = {
   id: 541,
+  slug: "stade-rennais-logo", //
   title: "Logo Stade Rennais : Histoire et Évolution du Symbole Breton [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Stade Rennais : ses origines, son évolution et sa signification dans l'identité du club breton.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Stade Rennais : ses origines, son évolution et sa signification dans l'identité du club breton.",
   date: "2024-03-25",
   galleryImageId: 541,
   content: `# L'Histoire Fascinante du **Logo Stade Rennais**
@@ -72,7 +73,8 @@ Le **logo Stade Rennais** représente bien plus qu'un simple identifiant visuel 
 La force du **logo Rennes** réside précisément dans cette capacité à évoluer tout en restant fidèle à ses racines. Qu'il apparaisse sur un maillot, un drapeau dans les tribunes du Roazhon Park ou en version **logo Stade Rennais PNG** sur un écran de smartphone, il continue de susciter fierté et passion chez les supporters du club breton.
 
 À l'avenir, le **logo du Stade Rennais** continuera sans doute de se réinventer, mais toujours en portant les valeurs et l'identité profonde qui font la singularité de ce club pas comme les autres dans le paysage du football français.`,
-  keywords: "logo stade rennais, stade rennais logo, logo du stade rennais, logo stade rennais png, logo rennes, rennes logo, logo rennes foot, logo de rennes",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo stade rennais, stade rennais logo, logo du stade rennais, logo stade rennais png, logo rennes, rennes logo, logo rennes foot, logo de rennes",
+  category: "logos",
+  subCategory: "club-logos",
 };

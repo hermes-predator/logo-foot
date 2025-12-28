@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const standardDeLiegeLogoPost: BlogPost = {
   id: 542, // Unique ID for this article
+  slug: "standard-de-liege-logo", //
   title: "Logo Standard de Liège : Histoire et Signification de l'Emblème Emblématique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Standard de Liège, son design emblématique et son évolution au fil du temps. Téléchargez le logo Standard de Liège en haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Standard de Liège, son design emblématique et son évolution au fil du temps. Téléchargez le logo Standard de Liège en haute définition.",
   date: "2024-07-30", // Publication date
   galleryImageId: 542,
   content: `# L'Histoire Complète du **Logo Standard de Liège**
@@ -158,8 +159,8 @@ En conclusion, le **logo standard de liège** représente bien plus qu'une simpl
 De ses origines relativement modestes à sa forme contemporaine reconnue internationalement, le **standard liege logo** a évolué tout en préservant son essence distinctive. Le rouge vif de l'écusson et les lettres SL emblématiques du **logo standard liege** continuent d'inspirer passion et fierté chez des générations de supporters.
 
 Dans un paysage footballistique en constante évolution, le **logo standard de liège** reste un point d'ancrage visuel stable qui relie le passé glorieux, le présent dynamique et l'avenir prometteur du Royal Standard de Liège. Qu'il s'agisse du **logo officiel du standard de liege** brodé sur les maillots des joueurs ou du **logo standard liege png** affiché sur les écrans des supporters du monde entier, cet emblème continue de symboliser l'une des institutions sportives les plus respectées de Belgique.`,
-  keywords: "logo standard de liege, logo standard de liège, logo standard liege, standard de liege logo, standard de liège logo, standard liege logo, logo du standard de liège, logo standard liège, standard liege logo png, gantoise standard liège logo, logo officiel du standard de liege, logo png standard de liège, logo standard liege png",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  keywords:
+    "logo standard de liege, logo standard de liège, logo standard liege, standard de liege logo, standard de liège logo, standard liege logo, logo du standard de liège, logo standard liège, standard liege logo png, gantoise standard liège logo, logo officiel du standard de liege, logo png standard de liège, logo standard liege png",
+  category: "logos",
+  subCategory: "other-european-clubs",
 };
-

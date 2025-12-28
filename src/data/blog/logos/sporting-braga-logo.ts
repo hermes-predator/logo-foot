@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sportingBragaLogoPost: BlogPost = {
   id: 537,
+  slug: "sporting-braga-logo", //
   title: "Logo Sporting Braga : Histoire et Évolution de l'Emblème du Club Portugais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Sporting Braga. Analyse détaillée de l'emblème, son évolution au fil des années et sa signification pour le club portugais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Sporting Braga. Analyse détaillée de l'emblème, son évolution au fil des années et sa signification pour le club portugais.",
   date: "2024-05-15",
   galleryImageId: 537,
   content: `# L'Histoire et l'Évolution du **Logo Sporting Braga**
@@ -141,7 +142,8 @@ Le défi pour les futures itérations du **logo Sporting Braga** sera de mainten
 Le **logo de Sporting Braga** représente bien plus qu'une simple identité visuelle—il est le symbole d'un club qui a su s'élever parmi l'élite du football portugais tout en restant fidèle à ses origines. De ses débuts modestes à sa version contemporaine sophistiquée, le **Braga FC logo** témoigne de l'évolution d'un club en constante ascension.
 
 Alors que le SC Braga continue de défier les grands clubs traditionnels du Portugal et de se faire un nom sur la scène européenne, son **SC Braga logo PNG** reste un symbole puissant de fierté régionale, d'ambition sportive et d'identité distincte dans le paysage du football européen.`,
-  keywords: "logo Sporting Braga, Sporting Braga logo, logo de Sporting Braga, logo foot Sporting Braga, logo Braga, Braga FC logo, Braga logo, Braga logo PNG, logo de Braga, logo SC Braga, SC Braga logo, SC Braga logo PNG, football portugais, Liga Portugal",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo Sporting Braga, Sporting Braga logo, logo de Sporting Braga, logo foot Sporting Braga, logo Braga, Braga FC logo, Braga logo, Braga logo PNG, logo de Braga, logo SC Braga, SC Braga logo, SC Braga logo PNG, football portugais, Liga Portugal",
+  category: "logos",
+  subCategory: "club-logos",
 };

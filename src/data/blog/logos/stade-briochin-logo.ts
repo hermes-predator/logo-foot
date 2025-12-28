@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const stadeBriochinLogoPost: BlogPost = {
   id: 539,
+  slug: "stade-briochin-logo", //
   title: "Logo Stade Briochin : Histoire et Symbolisme du Blason Breton [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Stade Briochin : des origines à aujourd'hui, l'évolution de l'emblème du club breton et sa signification culturelle.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Stade Briochin : des origines à aujourd'hui, l'évolution de l'emblème du club breton et sa signification culturelle.",
   date: "2024-04-14",
   galleryImageId: 539,
   content: `Guide Complet du **Logo Stade Briochin**
@@ -80,7 +81,8 @@ Cette approche équilibrée permet au **logo stade briochin** de rester pertinen
 Conclusion sur le **Logo Stade Briochin**
 
 L'emblème du Stade Briochin représente parfaitement l'alliance entre tradition bretonne et modernité footballistique. À travers ses couleurs, ses symboles et son design, le **stade briochin logo** incarne l'identité profonde d'un club historique du football breton, tout en s'adaptant aux exigences visuelles contemporaines.`,
-  keywords: "logo stade briochin, stade briochin logo, logo stade briochin png, blason stade briochin, écusson stade briochin, emblème stade briochin",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo stade briochin, stade briochin logo, logo stade briochin png, blason stade briochin, écusson stade briochin, emblème stade briochin",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -9,7 +9,7 @@ const LiveDot = () => (
 
 const messages = [
   { bold: "OFFRE EN COURS", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL" },
-  { bold: "LIVRAISON", rest: " : Téléchargez notre fichier juste après votre paiement" }
+  { bold: "LIVRAISON", rest: " : Téléchargez notre fichier IMMÉDIATEMENT en page d'après-paiement" }
 ];
 
 const TopBar = () => {

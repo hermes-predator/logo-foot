@@ -132,6 +132,14 @@ export default {
 				'scroll-reviews': {
 					'0%': { transform: 'translateX(0)' },
 					'100%': { transform: 'translateX(-50%)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-8px)' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
 				}
 			},
 			animation: {
@@ -146,6 +154,8 @@ export default {
 				'colorPulse': 'colorPulse 1s ease-in-out infinite',
 				'pulsateScale': 'pulsateScale 2s ease-in-out infinite',
 				'scroll-reviews': 'scroll-reviews 45s linear infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite',
 			}
 		}
 	},

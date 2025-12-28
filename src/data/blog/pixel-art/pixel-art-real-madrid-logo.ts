@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const pixelArtRealMadridLogoPost: BlogPost = {
   id: 613,
+  slug: "real-madrid-logo-pixel-art", //
   title: "**Pixel Art Logo Real Madrid** : Guide Complet & Histoire [2024]",
   date: "2025-04-12",
   galleryImageId: 613,
   category: "pixel-art",
   subCategory: "team-pixel-art",
-  excerpt: "Découvrez l'art de créer un **pixel art logo foot real madrid** authentique. Guide détaillé pour capturer l'essence royale du club espagnol en format pixellisé.",
+  excerpt:
+    "Découvrez l'art de créer un **pixel art logo foot real madrid** authentique. Guide détaillé pour capturer l'essence royale du club espagnol en format pixellisé.",
   content: `# **Pixel Art Logo Real Madrid** : Guide Complet de Création
 
 ## Introduction au **Pixel Art Logo Foot Real Madrid**
@@ -134,5 +135,6 @@ Pour accompagner ce guide écrit, voici les étapes clés qui seraient présent�
 Le **pixel art logo real madrid** représente bien plus qu'un simple exercice graphique. C'est une célébration de l'héritage du club à travers un médium artistique contemporain qui établit un pont entre l'histoire glorieuse du Real Madrid et la culture numérique moderne.
 
 Que vous soyez un supporter passionné, un artiste numérique ou simplement curieux de l'esthétique pixel art, la création d'un **pixel art foot real madrid** offre une expérience créative satisfaisante qui rend hommage à l'un des clubs les plus emblématiques du football mondial.`,
-  keywords: "pixel art logo real madrid, pixel art logo foot real madrid, pixel art real madrid, pixel art foot real madrid, logo foot real madrid, pixel art foot, logo real madrid"
+  keywords:
+    "pixel art logo real madrid, pixel art logo foot real madrid, pixel art real madrid, pixel art foot real madrid, logo foot real madrid, pixel art foot, logo real madrid",
 };

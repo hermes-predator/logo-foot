@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const manchesterCityPixelArtLogoPost: BlogPost = {
   id: 610,
+  slug: "manchester-city-logo-pixel-art", //
   title: "**Pixel Art Logo Foot Manchester City** : Guide Complet de Création & Signification [2024]",
   date: "2025-04-12",
   galleryImageId: 610,
   category: "pixel-art",
   subCategory: "team-pixel-art",
-  excerpt: "Découvrez l'art de créer un **pixel art logo foot manchester city** unique. Guide détaillé pour transformer l'emblème des Citizens en chef-d'œuvre pixellisé reconnaissable.",
+  excerpt:
+    "Découvrez l'art de créer un **pixel art logo foot manchester city** unique. Guide détaillé pour transformer l'emblème des Citizens en chef-d'œuvre pixellisé reconnaissable.",
   content: `# **Pixel Art Logo Foot Manchester City** : L'Art Numérique des Citizens
 
 ## Introduction au **Pixel Art Logo Manchester City**
@@ -132,5 +133,6 @@ La création de **pixel art logo foot** est devenue une véritable sous-culture 
 Le **pixel art manchester city** représente plus qu'un simple exercice artistique – c'est une célébration de l'héritage du club à travers le prisme de la culture numérique. En transformant l'emblème moderne des Citizens en création pixellisée, les créateurs établissent un pont entre l'histoire riche du club et l'ère numérique contemporaine.
 
 Que vous soyez un supporter passionné, un artiste numérique ou simplement curieux de l'esthétique pixel art, la création d'un **pixel art logo foot manchester city** offre une façon unique et créative de célébrer l'identité de ce club emblématique de Premier League.`,
-  keywords: "pixel art logo foot manchester city, pixel art manchester city, pixel art logo manchester, logo foot manchester city, pixel art logo foot, logo pixel manchester city"
+  keywords:
+    "pixel art logo foot manchester city, pixel art manchester city, pixel art logo manchester, logo foot manchester city, pixel art logo foot, logo pixel manchester city",
 };

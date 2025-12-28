@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const evolutionHistory: BlogPost = {
   id: 43,
+  slug: "logos-de-football-evolution", //
   title: "Histoire des Logos de Football : Évolution des Emblèmes de 1900 à 2024",
-  excerpt: "Voyagez à travers l'histoire des logos de football depuis 1900. Découvrez l'évolution fascinante des emblèmes qui ont marqué l'identité visuelle du football.",
+  excerpt:
+    "Voyagez à travers l'histoire des logos de football depuis 1900. Découvrez l'évolution fascinante des emblèmes qui ont marqué l'identité visuelle du football.",
   date: "2024-02-23",
   galleryImageId: 43,
   content: `L'histoire fascinante des logos de football, de leurs origines modestes aux designs contemporains sophistiqués.
@@ -78,6 +79,7 @@ L'Avenir des Logos
 - Valeurs du club
 - Identité préservée
 - Tradition respectée`,
-  keywords: "histoire logos foot, évolution logos football, design logo football, emblèmes historiques foot, logos club football histoire, chronologie logos foot",
-  category: 'legacy'
+  keywords:
+    "histoire logos foot, évolution logos football, design logo football, emblèmes historiques foot, logos club football histoire, chronologie logos foot",
+  category: "legacy",
 };

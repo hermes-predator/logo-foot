@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coupeFranceLogoPost: BlogPost = {
   id: 41,
+  slug: "logo-coupe-de-france", //
   title: "Logo Coupe de France : Histoire et Évolution du Symbole Emblématique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Coupe de France de football. Origines, évolution et symbolisme de l'emblème de la plus ancienne compétition française.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Coupe de France de football. Origines, évolution et symbolisme de l'emblème de la plus ancienne compétition française.",
   date: "2024-04-15",
   galleryImageId: 41,
   content: `# L'Histoire Fascinante du **Logo Coupe de France**
@@ -92,7 +94,8 @@ Le développement futur du **logo coupe de france de football** s'inscrira proba
 Le **logo coupe de france** représente bien plus qu'un simple identifiant visuel – c'est un témoin de l'histoire riche du football français, un symbole de fierté nationale et un pilier de l'identité culturelle sportive de l'Hexagone. À travers ses évolutions successives, il a su préserver l'essence de ce que signifie cette compétition unique, tout en s'adaptant aux exigences changeantes du sport moderne.
 
 Cette capacité à évoluer tout en restant fidèle à ses racines fait du blason de la Coupe de France un exemple fascinant d'identité visuelle sportive, reflétant parfaitement les valeurs et l'histoire d'une compétition qui continue d'écrire certaines des plus belles pages du football français, avec une identité visuelle distinctive et authentique incarnée par son **coupe de france logo png**.`,
-  keywords: "logo coupe de france, coupe de france logo, logo coupe de france png, coupe de france logo png, logo coupe de france de football, emblème coupe de france, histoire logo coupe de france, FFF coupe logo, design coupe de france",
-  category: 'legacy',
-  subCategory: 'iconic-designs'
+  keywords:
+    "logo coupe de france, coupe de france logo, logo coupe de france png, coupe de france logo png, logo coupe de france de football, emblème coupe de france, histoire logo coupe de france, FFF coupe logo, design coupe de france",
+  category: "legacy",
+  subCategory: "iconic-designs",
 };

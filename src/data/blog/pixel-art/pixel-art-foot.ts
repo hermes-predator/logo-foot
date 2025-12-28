@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const pixelArtFootGeneralPost: BlogPost = {
   id: 9135,
+  slug: "pixel-art-foot", //
   title: "**Pixel Art Foot** : Guide Complet & Créations [2024]",
   date: "2025-04-12",
   galleryImageId: 9135,
   category: "pixel-art",
   subCategory: "football-pixel-art",
-  excerpt: "Découvrez l'univers du **pixel art foot** : techniques, outils et créations. Guide complet pour maîtriser l'art pixellisé appliqué au football.",
+  excerpt:
+    "Découvrez l'univers du **pixel art foot** : techniques, outils et créations. Guide complet pour maîtriser l'art pixellisé appliqué au football.",
   content: `# **Pixel Art Foot** : L'Art Numérique du Football
 
 ## Introduction au **Pixel Art Foot**
@@ -248,5 +249,6 @@ Participation aux événements communautaires :
 Le **pixel art foot** représente bien plus qu'une simple nostalgie des jeux rétro. C'est un médium artistique à part entière qui continue d'évoluer et de séduire de nouveaux créateurs. Que vous soyez un fan de football, un artiste numérique ou un développeur de jeux, cette forme d'expression offre des possibilités créatives infinies.
 
 La clé du succès dans le **pixel art football** réside dans la compréhension des contraintes techniques historiques, tout en y apportant une vision moderne et personnelle. N'hésitez pas à expérimenter, à partager vos créations avec la communauté et à vous inspirer de l'univers riche et passionnant du football.`,
-  keywords: "pixel art foot, pixel art football, pixel art foot creation, football pixel art, pixel art soccer, pixel art sport"
+  keywords:
+    "pixel art foot, pixel art football, pixel art foot creation, football pixel art, pixel art soccer, pixel art sport",
 };

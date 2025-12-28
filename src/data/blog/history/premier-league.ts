@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const premierLeagueHistory: BlogPost = {
   id: 44,
+  slug: "premier-league-history-of-club", //
   title: "L'Histoire des Clubs de Premier League : De 1888 à 2024",
-  excerpt: "Retracez l'histoire fascinante des clubs de Premier League depuis la création de la Football League en 1888 jusqu'à l'ère moderne du football anglais.",
+  excerpt:
+    "Retracez l'histoire fascinante des clubs de Premier League depuis la création de la Football League en 1888 jusqu'à l'ère moderne du football anglais.",
   date: "2024-02-18",
   galleryImageId: 44,
   content: `L'Histoire Fascinante des Clubs de Premier League
@@ -37,6 +39,7 @@ Vers le Futur
 La Premier League regarde vers l'avenir sans oublier ses racines. L'engagement communautaire reste fort, la formation des jeunes une priorité, et l'atmosphère des matchs toujours aussi électrique. Le football anglais continue d'innover tout en préservant ce qui fait sa magie depuis plus d'un siècle.
 
 De Goodison Park à l'Etihad Stadium, des tribunes populaires aux loges VIP, l'histoire de la Premier League est celle d'une évolution constante, portée par la passion inébranlable des supporters anglais pour leur sport national.`,
-  keywords: "histoire premier league, football league histoire, création premier league, clubs historiques anglais, évolution football anglais, histoire football angleterre",
-  category: 'legacy'
+  keywords:
+    "histoire premier league, football league histoire, création premier league, clubs historiques anglais, évolution football anglais, histoire football angleterre",
+  category: "legacy",
 };

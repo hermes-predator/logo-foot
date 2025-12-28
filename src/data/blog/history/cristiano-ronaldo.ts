@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cristianoRonaldoPost: BlogPost = {
   id: 42,
+  slug: "cristiano-ronaldo", //
   title: "Cristiano Ronaldo : L'Histoire Complète d'une Légende du Football",
-  excerpt: "Découvrez le parcours exceptionnel de Cristiano Ronaldo, de ses débuts modestes à Madère jusqu'à son statut de légende mondiale du football. Records, clubs, trophées et impact culturel d'un des plus grands joueurs de tous les temps.",
+  excerpt:
+    "Découvrez le parcours exceptionnel de Cristiano Ronaldo, de ses débuts modestes à Madère jusqu'à son statut de légende mondiale du football. Records, clubs, trophées et impact culturel d'un des plus grands joueurs de tous les temps.",
   date: "2024-03-01",
   galleryImageId: 42,
   content: `# Cristiano Ronaldo : L'Ascension d'une Légende Intemporelle
@@ -82,6 +83,7 @@ Le débat sur le "GOAT" (Greatest Of All Time) entre **Ronaldo** et Messi contin
 Qu'on l'adore ou qu'on le critique, impossible de nier l'impact colossal de **Cristiano Ronaldo** sur le football moderne. Son parcours, des rues de Funchal aux plus grands stades de la planète, incarne le rêve ultime et prouve que la détermination, combinée à un talent exceptionnel, peut soulever des montagnes.
 
 À l'approche de la fin de sa carrière, Ronaldo a déjà assuré son immortalité dans le panthéon du football mondial. Quand les lumières s'éteindront sur sa carrière de joueur, son influence continuera de rayonner, inspirant des générations de footballeurs qui rêveront d'imiter son parcours extraordinaire.`,
-  keywords: "Cristiano Ronaldo, CR7, carrière Cristiano Ronaldo, trophées Ronaldo, Real Madrid Ronaldo, Manchester United Ronaldo, Juventus Ronaldo, Portugal Ronaldo, Al-Nassr, Ballon d'Or Ronaldo, records Cristiano Ronaldo",
-  category: 'players'
+  keywords:
+    "Cristiano Ronaldo, CR7, carrière Cristiano Ronaldo, trophées Ronaldo, Real Madrid Ronaldo, Manchester United Ronaldo, Juventus Ronaldo, Portugal Ronaldo, Al-Nassr, Ballon d'Or Ronaldo, records Cristiano Ronaldo",
+  category: "players",
 };

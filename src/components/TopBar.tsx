@@ -8,8 +8,8 @@ const LiveDot = () => (
 );
 
 const messages = [
-  "OFFRE EN COURS : -95% sur notre fichier spécialisé sur le FOOTBALL",
-  "LIVRAISON : Téléchargez notre fichier juste après votre paiement"
+  { bold: "OFFRE EN COURS", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL" },
+  { bold: "LIVRAISON", rest: " : Téléchargez notre fichier juste après votre paiement" }
 ];
 
 const TopBar = () => {
@@ -19,15 +19,15 @@ const TopBar = () => {
 
   useEffect(() => {
     const currentMessage = messages[currentIndex];
+    const fullText = currentMessage.bold + currentMessage.rest;
     
     if (isTyping) {
-      if (displayedText.length < currentMessage.length) {
+      if (displayedText.length < fullText.length) {
         const timeout = setTimeout(() => {
-          setDisplayedText(currentMessage.slice(0, displayedText.length + 1));
+          setDisplayedText(fullText.slice(0, displayedText.length + 1));
         }, 35);
         return () => clearTimeout(timeout);
       } else {
-        // Message complete, wait then start erasing
         const timeout = setTimeout(() => {
           setIsTyping(false);
         }, 7000);
@@ -40,20 +40,25 @@ const TopBar = () => {
         }, 15);
         return () => clearTimeout(timeout);
       } else {
-        // Text erased, switch to next message
         setCurrentIndex((prev) => (prev + 1) % messages.length);
         setIsTyping(true);
       }
     }
   }, [displayedText, isTyping, currentIndex]);
 
+  const currentMessage = messages[currentIndex];
+  const boldLength = currentMessage.bold.length;
+  const displayedBold = displayedText.slice(0, boldLength);
+  const displayedRest = displayedText.slice(boldLength);
+
   return (
     <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 text-gray-800 py-1 overflow-hidden z-40 border-b border-gray-200/50">
       <div className="flex justify-center items-center gap-2 whitespace-nowrap">
-        <span className="text-[9px] md:text-[10px] font-bold flex items-center gap-2">
+        <span className="text-[9px] md:text-[10px] flex items-center gap-2">
           ⟨ <LiveDot /> 
           <span className="inline-block">
-            {displayedText}
+            <span className="font-bold">{displayedBold}</span>
+            <span>{displayedRest}</span>
             <span className="animate-pulse">|</span>
           </span>
           <LiveDot /> ⟩

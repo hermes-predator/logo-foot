@@ -57,8 +57,8 @@ const TopBar = () => {
         <span className="text-[9px] md:text-[10px] flex items-center gap-2">
           ⟨ <LiveDot /> 
           <span className="inline-block">
-            <span className="font-bold">{displayedBold}</span>
-            <span>{displayedRest}</span>
+            <span className="font-extrabold">{displayedBold}</span>
+            <span className="font-semibold">{displayedRest}</span>
             <span className="animate-pulse">|</span>
           </span>
           <LiveDot /> ⟩

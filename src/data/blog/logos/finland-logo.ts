@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const finlandLogoPost: BlogPost = {
   id: 258,
+  slug: "finlande-logo", //
   title: "**Logo Finlande** : Histoire et Évolution de l'Emblème des Aigles du Nord [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale finlandaise : des origines à aujourd'hui, évolution et signification de cet emblème unique du football nordique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale finlandaise : des origines à aujourd'hui, évolution et signification de cet emblème unique du football nordique.",
   date: "2024-06-25",
   category: "national-logos",
   subCategory: "national-logos",
@@ -38,6 +39,6 @@ Ce **logo finlande football** capture l'attention, raconte une histoire de déte
 ## Conclusion : Un Héritage Visuel Unique
 
 Le **logo finlande** demeure un témoignage puissant de l'identité footballistique finlandaise. Il connecte chaque match de l'équipe nationale à l'histoire, à la culture et aux aspirations d'un pays qui refuse de se laisser définir par sa taille, mais par sa détermination et son esprit innovant.`,
-  keywords: "logo finlande, finlande logo, logo finlande foot, logo finlande football, finlande foot logo, logo club foot finlande, finland football federation logo, finlande logo footbal, logo finland foot"
+  keywords:
+    "logo finlande, finlande logo, logo finlande foot, logo finlande football, finlande foot logo, logo club foot finlande, finland football federation logo, finlande logo footbal, logo finland foot",
 };
-

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fcUtrechtLogoPost: BlogPost = {
   id: 254,
+  slug: "utrecht-logo", //
   title: "**Logo Utrecht** : Histoire et Évolution de l'Emblème du FC Utrecht [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **FC Utrecht logo**, son évolution et sa signification. Un symbole fort du football néerlandais qui incarne la fierté de toute une ville.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **FC Utrecht logo**, son évolution et sa signification. Un symbole fort du football néerlandais qui incarne la fierté de toute une ville.",
   date: "2024-04-19",
   galleryImageId: 254,
   content: `# Histoire du **Logo Utrecht**
@@ -81,7 +82,8 @@ Le **utrecht logo png** actuel se distingue par :
 ## Conclusion
 
 Le **logo FC Utrecht** reste un symbole puissant du football néerlandais, incarnant parfaitement l'histoire, les valeurs et les ambitions d'un club majeur de l'Eredivisie.`,
-  keywords: "logo utrecht, fc utrecht logo, logo fc utrecht, utrecht logo png, logo de foot utrecht pays bas, logo png utrecht",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo utrecht, fc utrecht logo, logo fc utrecht, utrecht logo png, logo de foot utrecht pays bas, logo png utrecht",
+  category: "logos",
+  subCategory: "club-logos",
 };

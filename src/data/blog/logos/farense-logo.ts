@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const farenseLogoPost: BlogPost = {
   id: 249,
+  slug: "farense-logo", //
   title: "**Farense Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Farense**, son évolution et sa symbolique unique dans le football portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Farense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
   galleryImageId: 249,
   content: `# Histoire et Signification du **Farense Logo**
@@ -69,7 +70,6 @@ Dans l'ère moderne du football, le **SC Farense logo** continue de :
 
 Le **logo Farense** est devenu un symbole reconnaissable du football portugais, incarnant l'histoire riche et les ambitions d'un club profondément ancré dans sa région.`,
   keywords: "farense logo, logo farense, logo sc farense, sc farense logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };
-

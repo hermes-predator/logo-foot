@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const faCupLogoPost: BlogPost = {
   id: 247,
+  slug: "fa-cup-logo", //
   title: "Logo FA Cup : Histoire et Design de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire complète du logo FA Cup : origines, évolution et signification de l'emblème emblématique de la plus ancienne compétition de football au monde.",
+  excerpt:
+    "Découvrez l'histoire complète du logo FA Cup : origines, évolution et signification de l'emblème emblématique de la plus ancienne compétition de football au monde.",
   date: "2024-06-03",
   galleryImageId: 247,
   content: `# L'Histoire Fascinante du **Logo FA Cup**
@@ -59,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **the fa cup logo** incarne les vale
 Alors que la FA Cup continue d'écrire son histoire, offrant chaque saison son lot de surprises et de moments inoubliables, son emblème iconique reste ce point de repère stable qui traverse les époques. La continuité visuelle du **england fa cup logo** à travers les décennies a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **logo fa cup** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec l'histoire glorieuse de la plus ancienne compétition de football au monde.`,
-  keywords: "logo fa cup, fa cup logo, fa cup logo png, logo fa cup png, emirates fa cup logo, the emirates fa cup logo, the emirates fa cup logo png, the fa cup logo, england fa cup logo",
+  keywords:
+    "logo fa cup, fa cup logo, fa cup logo png, logo fa cup png, emirates fa cup logo, the emirates fa cup logo, the emirates fa cup logo png, the fa cup logo, england fa cup logo",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

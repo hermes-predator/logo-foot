@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const feyenoordLogoPost: BlogPost = {
   id: 257,
+  slug: "feyenoord-logo", //
   title: "Logo Feyenoord : Histoire et Symbolisme de l'Emblème de Rotterdam [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Feyenoord, son évolution au fil du temps et la signification des symboles qui représentent fièrement le club de Rotterdam.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Feyenoord, son évolution au fil du temps et la signification des symboles qui représentent fièrement le club de Rotterdam.",
   date: "2024-05-10",
   galleryImageId: 257,
   content: `# Logo Feyenoord : L'Histoire de l'Emblème de Rotterdam
@@ -108,8 +109,8 @@ Des maillots aux goodies en passant par les publications officielles, le **logo 
 Le **logo Feyenoord** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les valeurs et l'esprit combatif d'un club légendaire et de toute une ville. À travers ses initiales entrelacées et ses couleurs vibrantes, il continue de représenter la passion et la détermination d'une institution qui a marqué l'histoire du football européen.
 
 L'évolution mesurée de ce logo au fil des décennies illustre parfaitement comment un club peut rester fidèle à ses racines tout en s'adaptant aux évolutions esthétiques et aux exigences marketing de chaque époque. La force du **logo Feyenoord** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments intemporels qui résonnent auprès des supporters de génération en génération.`,
-  keywords: "logo feyenoord, feyenoord logo, feyenoord logo png, emblème feyenoord, feyenoord rotterdam logo, monogramme feyenoord",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo feyenoord, feyenoord logo, feyenoord logo png, emblème feyenoord, feyenoord rotterdam logo, monogramme feyenoord",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

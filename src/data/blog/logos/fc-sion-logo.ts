@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fcSionLogoPost: BlogPost = {
   id: 252,
+  slug: "sion-logo", //
   title: "**Logo FC Sion** : Histoire et Signématique de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de FC Sion, son évolution et la symbolique de cet emblème unique du football suisse.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de FC Sion, son évolution et la symbolique de cet emblème unique du football suisse.",
   date: "2024-04-15",
   galleryImageId: 252,
   content: `# L'Histoire du **Logo FC Sion**
@@ -31,6 +32,6 @@ L'emblème actuel reflète parfaitement l'héritage historique du club tout en a
 
 Le logo est devenu un véritable symbole de la tradition footballistique suisse, représentant non seulement un club mais aussi toute une région et sa passion pour le football. Il incarne la fierté et l'attachement des supporters à leur club.`,
   keywords: "fc sion logo, fc sion logo png, logo fc sion, fc sion logo foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

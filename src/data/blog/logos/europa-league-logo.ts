@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const europaLeagueLogoPost: BlogPost = {
   id: 244,
+  slug: "uefa-europa-league-logo", //
   title: "Logo UEFA Europa League : Histoire & Évolution de l'Emblème Européen [2024]",
-  excerpt: "Analyse complète du logo de l'UEFA Europa League : histoire, signification et design de l'emblème prestigieux de la seconde compétition européenne.",
+  excerpt:
+    "Analyse complète du logo de l'UEFA Europa League : histoire, signification et design de l'emblème prestigieux de la seconde compétition européenne.",
   date: "2024-05-16",
   galleryImageId: 244,
   content: `# L'Histoire Fascinante du **Logo Europa League**
@@ -91,7 +93,8 @@ Malgré ces possibles évolutions techniques, la force du **logo de la europa le
 Le **logo europa league**, par sa conception soignée et son évolution réfléchie, illustre parfaitement comment un symbole sportif peut transcender sa fonction première pour devenir un repère culturel significatif. Il représente aujourd'hui bien plus qu'une simple compétition : il incarne une vision du football européen où tradition et modernité se rencontrent, où clubs établis et formations émergentes peuvent rêver d'écrire leur nom dans l'histoire continentale.
 
 La présence du **logo uefa europa league png** continuera d'illuminer les soirées européennes, accompagnant les moments d'émotion et d'excellence que nous offre cette compétition devenue incontournable dans le paysage footballistique mondial. Et lorsque le **europa league logo 2025** sera éventuellement dévoilé, il portera sans doute l'héritage de cette identité visuelle qui a su capturer l'essence d'une compétition européenne prestigieuse.`,
-  keywords: "logo europa league, europa league logo, logo uefa europa league, uel logo, europa league emblem, logo ligue europa, europa league logo 2025, logo europa league png, europa league logo png, logo de la europa league, logo png europa league, logo uefa europa league png",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo europa league, europa league logo, logo uefa europa league, uel logo, europa league emblem, logo ligue europa, europa league logo 2025, logo europa league png, europa league logo png, logo de la europa league, logo png europa league, logo uefa europa league png",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

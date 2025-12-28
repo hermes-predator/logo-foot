@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const evertonLogoPost: BlogPost = {
   id: 245,
+  slug: "everton-logo", //
   title: "Logo Everton : Histoire et Evolution de l'Emblème des Toffees [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo d'Everton FC : origines, évolution et symbolisme de l'emblème emblématique des Toffees de Liverpool.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo d'Everton FC : origines, évolution et symbolisme de l'emblème emblématique des Toffees de Liverpool.",
   date: "2024-04-13",
   galleryImageId: 245,
   content: `# L'Histoire Fascinante du **Logo Everton**
@@ -76,7 +77,8 @@ La participation des supporters dans l'évolution de l'identité visuelle rester
 De nouvelles applications technologiques du **logo everton fc** verront certainement le jour, des réalités augmentées aux expériences immersives dans le nouveau stade, ouvrant de nouvelles façons pour les supporters d'interagir avec ce symbole emblématique.
 
 Le **logo everton** représente bien plus qu'un simple identifiant visuel – c'est un témoin de l'histoire riche du club, un symbole de fierté pour ses supporters et un pilier de son identité culturelle. À travers ses évolutions successives, il a su préserver l'essence de ce que signifie être un Toffee, tout en s'adaptant aux exigences changeantes du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du blason d'Everton l'un des emblèmes les plus respectés et authentiques du football mondial.`,
-  keywords: "logo everton, everton logo, everton football club logo, everton fc logo, everton fc logo png, everton logo png, logo de everton, logo everton fc, logo everton png, toffees logo, emblème everton, blason everton",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo everton, everton logo, everton football club logo, everton fc logo, everton fc logo png, everton logo png, logo de everton, logo everton fc, logo everton png, toffees logo, emblème everton, blason everton",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fcGroningenLogoPost: BlogPost = {
   id: 251,
+  slug: "groningen-logo", //
   title: "**Logo FC Groningen** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **FC Groningen logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **FC Groningen logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
   galleryImageId: 251,
   content: `# Histoire du **Logo FC Groningen**
@@ -34,7 +35,8 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 ## Conclusion
 
 Le logo de FC Groningen est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
-  keywords: "**groningen logo**, **fc groningen logo**, **logo fc groningen**, **groningen logo png**, **fc groningen logos**, **logo de foot groningen pays bas**, **logo fc groningen png**",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "**groningen logo**, **fc groningen logo**, **logo fc groningen**, **groningen logo png**, **fc groningen logos**, **logo de foot groningen pays bas**, **logo fc groningen png**",
+  category: "logos",
+  subCategory: "club-logos",
 };

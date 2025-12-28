@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fenerbahceLogoPost: BlogPost = {
   id: 255,
+  slug: "fenerbahce-logo", //
   title: "Logo Fenerbahçe : Histoire et Évolution de l'Emblème Turc [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Fenerbahçe : origines, symbolisme et évolution de l'emblème emblématique du club stambouliote.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Fenerbahçe : origines, symbolisme et évolution de l'emblème emblématique du club stambouliote.",
   date: "2024-04-19",
   galleryImageId: 255,
   content: `# L'Histoire Fascinante du **Logo Fenerbahçe**
@@ -60,7 +61,8 @@ Comme toute marque vivante, le **logo fenerbahce** pourrait continuer d'évoluer
 Ces évolutions potentielles du **logo fenerbahce png** devront cependant relever plusieurs défis importants. Maintenir l'équilibre entre tradition et modernité restera une préoccupation constante, de même que la nécessité de poursuivre l'expansion internationale tout en préservant l'authenticité de la marque. La lutte contre les utilisations non autorisées du **fenerbahce logo** représentera également un défi continu à l'ère du digital.
 
 En définitive, peu d'emblèmes sportifs peuvent se targuer d'avoir atteint le statut culturel et l'impact émotionnel du **logo fenerbahce**. À travers ses couleurs vibrantes, ses éléments symboliques distinctifs et son design élégant, il raconte l'histoire d'un club qui a su transformer un sport en expression nationale, devenant au passage l'incarnation même de la passion footballistique turque dans toute sa splendeur.`,
-  keywords: "logo fenerbahce, fenerbahce logo, logo fenerbahce png, emblème fenerbahce, ecusson fenerbahce, fenerbahce sk logo, fenerbahce football logo, logo club turc",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo fenerbahce, fenerbahce logo, logo fenerbahce png, emblème fenerbahce, ecusson fenerbahce, fenerbahce sk logo, fenerbahce football logo, logo club turc",
+  category: "logos",
+  subCategory: "club-logos",
 };

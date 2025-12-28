@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const europaConferenceLeagueLogoPost: BlogPost = {
   id: 243,
+  slug: "uefa-europa-conference-league-logo", //
   title: "**UEFA Europa Conference League Logo** : L'Histoire du Design de la Troisième Coupe d'Europe",
   date: "2025-04-26",
   galleryImageId: 243,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'UEFA Europa Conference League, la nouvelle compétition européenne. Une analyse détaillée de son design innovant et de sa signification symbolique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'UEFA Europa Conference League, la nouvelle compétition européenne. Une analyse détaillée de son design innovant et de sa signification symbolique.",
   content: `# Histoire et Design du **Logo Europa Conference League**
 
 Le **europa conference league logo** représente l'identité visuelle d'une compétition qui a su rapidement s'imposer dans le paysage du football européen. Cette nouvelle compétition de l'UEFA, lancée en 2021, arbore une identité visuelle distinctive qui reflète parfaitement son positionnement unique dans l'écosystème du football continental.
@@ -31,5 +32,6 @@ Le **uefa europa conference league logo png** réussit le défi complexe de cré
 ## Conclusion
 
 Le **logo europa conference league** est devenu en peu de temps un symbole reconnaissable qui incarne parfaitement l'esprit de cette nouvelle compétition européenne. Son design équilibré entre tradition et modernité en fait un excellent exemple d'identité visuelle sportive contemporaine.`,
-  keywords: "logo europa conference league, europa conference league logo, europa conference league logo png, uefa europa conference league logo, logo europa league conference, uefa europa conference league logo png, design football, compétition européenne"
+  keywords:
+    "logo europa conference league, europa conference league logo, europa conference league logo png, uefa europa conference league logo, logo europa league conference, uefa europa conference league logo png, design football, compétition européenne",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const xaviSimonsPost: BlogPost = {
   id: 40,
+  slug: "xavi-simons", //
   title: "Xavi Simons : Analyse Complète du Prodige Néerlandais du PSG et Leipzig [2024]",
-  excerpt: "Découvrez tout sur Xavi Simons : son parcours, ses statistiques, son salaire, son style de jeu unique et son avenir prometteur. Portrait complet du talent qui impressionne l'Europe.",
+  excerpt:
+    "Découvrez tout sur Xavi Simons : son parcours, ses statistiques, son salaire, son style de jeu unique et son avenir prometteur. Portrait complet du talent qui impressionne l'Europe.",
   date: "2024-06-25",
   galleryImageId: 40,
   content: `# **Xavi Simons** : Le Joyau Néerlandais qui Brille en Europe
@@ -79,6 +81,7 @@ Son statut d'international avec les **Xavi Simons Pays-Bas** lui apporte une dim
 Les projections sur son avenir sont unanimement positives. Sa polyvalence, sa technique, sa vision du jeu et son efficacité devant le but en font un joueur au potentiel exceptionnel. S'il continue sur sa lancée, il pourrait bien s'imposer comme l'un des meilleurs joueurs de sa génération.
 
 Que ce soit au PSG, à Leipzig ou dans un autre grand club européen, l'avenir de **Xavi Simons** s'annonce radieux. Les supporteurs de football peuvent se réjouir de pouvoir suivre l'évolution d'un talent aussi pur, dont la carrière ne fait que commencer mais promet déjà tant.`,
-  keywords: "xavi simons, xavi simons psg, simons xavi, statistiques de xavi simons, xavi simons origine, age xavi simons, psg xavi simons, xavi simons dates d'inscription, xavi simons taille, xavi simons age, xavi simons barcelona, xavi simons salaire, xavi simons stats, xavi simons équipes actuelles, xavi simons barça, xavi simons club, xavi simons leipzig, xavi simons parents, xavi simons pays bas, xavi simons numero, xavi simons transfert, xavi simons barca, xavi simons club actuel, but xavi simons, maillot xavi simons, xavi simons blessure, xavi simons copine, matchs de xavi simons, où joue xavi simons, xavi simons poste, xavi simons psv, salaire xavi simons",
-  category: 'players'
+  keywords:
+    "xavi simons, xavi simons psg, simons xavi, statistiques de xavi simons, xavi simons origine, age xavi simons, psg xavi simons, xavi simons dates d'inscription, xavi simons taille, xavi simons age, xavi simons barcelona, xavi simons salaire, xavi simons stats, xavi simons équipes actuelles, xavi simons barça, xavi simons club, xavi simons leipzig, xavi simons parents, xavi simons pays bas, xavi simons numero, xavi simons transfert, xavi simons barca, xavi simons club actuel, but xavi simons, maillot xavi simons, xavi simons blessure, xavi simons copine, matchs de xavi simons, où joue xavi simons, xavi simons poste, xavi simons psv, salaire xavi simons",
+  category: "players",
 };

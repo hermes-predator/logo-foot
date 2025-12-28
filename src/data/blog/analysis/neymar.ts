@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const neymarPost: BlogPost = {
   id: 29,
+  slug: "neymar-jr", //
   title: "Neymar Jr : Biographie Complète, Carrière, Statistiques et Vie Personnelle [2024]",
-  excerpt: "Découvrez notre analyse complète de Neymar Jr, sa carrière au Santos, Barcelone, PSG et Al-Hilal, ses statistiques impressionnantes, son salaire et sa vie personnelle.",
+  excerpt:
+    "Découvrez notre analyse complète de Neymar Jr, sa carrière au Santos, Barcelone, PSG et Al-Hilal, ses statistiques impressionnantes, son salaire et sa vie personnelle.",
   date: "2024-06-18",
   galleryImageId: 29,
   content: `# Tout savoir sur **Neymar** en 2024
@@ -93,6 +95,7 @@ La carrière de **Neymar Jr** suscite des avis contrastés parmi les observateur
 Pour d'autres, les **statistiques de Neymar** parlent d'elles-mêmes : plus de 400 buts en carrière, des titres majeurs avec chacun de ses clubs, un impact décisif sur le jeu de chaque équipe qu'il a intégrée. S'il n'a pas (encore) remporté le Ballon d'Or ni la Coupe du Monde avec le **Brésil**, son talent exceptionnel reste indéniable.
 
 Quoi qu'il en soit, **Neymar** aura marqué son époque par un style unique, faisant rêver des millions de fans à travers le monde avec ses gestes techniques d'exception. Des plages de Santos aux stades ultramodernes d'Arabie Saoudite, en passant par le Camp Nou et le Parc des Princes, le "Joga Bonito" incarné par **Neymar Jr** continue d'inspirer toute une génération de jeunes footballeurs.`,
-  keywords: "neymar, neymar jr, neymar al hilal, neymar psg, neymar santos, neymar age, neymar enfant, neymar gros, neymar salaire, neymar âge, salaire neymar, statistiques de neymar, age neymar, neymar barca, neymar club, neymar taille, photo neymar, taille neymar, maillot neymar, crampon neymar, image neymar, maillot santos neymar, neymar bresil, neymar en photo, neymar enfance, neymar femme, neymar football photos, neymar photoshoot, neymar prime, coupe de cheveux de neymar, maillot bresil neymar, neymar coupe de cheveux, neymar fils",
-  category: 'players'
+  keywords:
+    "neymar, neymar jr, neymar al hilal, neymar psg, neymar santos, neymar age, neymar enfant, neymar gros, neymar salaire, neymar âge, salaire neymar, statistiques de neymar, age neymar, neymar barca, neymar club, neymar taille, photo neymar, taille neymar, maillot neymar, crampon neymar, image neymar, maillot santos neymar, neymar bresil, neymar en photo, neymar enfance, neymar femme, neymar football photos, neymar photoshoot, neymar prime, coupe de cheveux de neymar, maillot bresil neymar, neymar coupe de cheveux, neymar fils",
+  category: "players",
 };

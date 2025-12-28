@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const serieAAnalysis: BlogPost = {
   id: 34,
+  slug: "serie-a-identity", //
   title: "Analyse Marketing des Logos de Serie A : Stratégies de Marque 2024",
-  excerpt: "Découvrez comment les clubs de Serie A modernisent leur identité visuelle et développent leur stratégie de marque pour conquérir le marché mondial.",
+  excerpt:
+    "Découvrez comment les clubs de Serie A modernisent leur identité visuelle et développent leur stratégie de marque pour conquérir le marché mondial.",
   date: "2024-02-15",
   galleryImageId: 34,
   content: `L'Innovation Italienne dans le Design Football
@@ -31,6 +33,7 @@ L'Avenir du Design Football Italien
 La Serie A trace sa voie entre tradition et innovation. Les expériences en réalité augmentée font revivre les moments mythiques du calcio, pendant que les tokens des supporters donnent une nouvelle dimension à la passion des tifosi. Le design italien continue d'inspirer le monde du football, prouvant que la beauté du jeu peut aussi être visuelle.
 
 Au cœur de cette révolution, une certitude demeure : le football italien conserve cette touche d'élégance qui le caractérise depuis toujours. Les logos et les marques évoluent, mais la passion reste intacte, aussi brûlante que les fumigènes des ultras un soir de derby.`,
-  keywords: "analyse marketing serie a, branding clubs italiens, stratégie digitale calcio, design logos serie a, marketing football italien",
-  category: 'logos'
+  keywords:
+    "analyse marketing serie a, branding clubs italiens, stratégie digitale calcio, design logos serie a, marketing football italien",
+  category: "logos",
 };

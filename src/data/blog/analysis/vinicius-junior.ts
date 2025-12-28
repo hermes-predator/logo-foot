@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const viniciusJuniorPost: BlogPost = {
   id: 36,
+  slug: "vinicius-junior", //
   title: "Vinicius Junior : Le Prodige Brésilien du Real Madrid - Analyse Complète",
-  excerpt: "Découvrez tout sur Vinicius Junior, son parcours fascinant, son style de jeu électrisant, ses statistiques impressionnantes et sa vie en dehors des terrains.",
+  excerpt:
+    "Découvrez tout sur Vinicius Junior, son parcours fascinant, son style de jeu électrisant, ses statistiques impressionnantes et sa vie en dehors des terrains.",
   date: "2024-04-04",
   galleryImageId: 36,
   content: `# Vinicius Junior : Le Phénomène Brésilien Qui Révolutionne le Football Mondial
@@ -63,6 +65,7 @@ Le lien entre **Junior Vinicius** et le Real Madrid semble suffisamment solide p
 L'avenir s'annonce radieux pour le prodige brésilien qui n'a probablement pas encore atteint son plein potentiel. Son influence grandissante sur le terrain et son impact culturel croissant en dehors font de lui bien plus qu'un simple footballeur : une véritable icône globale dont la trajectoire continuera de fasciner les amateurs de football pour les années à venir.
 
 La relation privilégiée qu'il entretient avec les supporters madrilènes, qui voient en lui le digne héritier de légendes brésiliennes comme Ronaldo ou Roberto Carlos, témoigne de l'empreinte qu'il a déjà laissée dans l'histoire du club le plus titré d'Europe.`,
-  keywords: "vinicius junior, vinicius junior origine africaine, vinicius junior stats, fond d'écran vinicius junior, vinicius junior et son fils, vinicius junior real madrid, psg vinicius junior, vinicius junior origine parents, fond d'écran vinicius junior 4k, vinicius junior age, vinicius junior et sa copine, junior vinicius, la maison de vinicius junior, pointure vinicius junior, agent de vinicius junior, vinicius junior coupe de cheveux, coloriage vinicius junior, crampon nike vinicius junior, crampon vinicius junior, photos de vinicius junior, vinicius junior celebration, coupe vinicius junior",
-  category: 'players'
+  keywords:
+    "vinicius junior, vinicius junior origine africaine, vinicius junior stats, fond d'écran vinicius junior, vinicius junior et son fils, vinicius junior real madrid, psg vinicius junior, vinicius junior origine parents, fond d'écran vinicius junior 4k, vinicius junior age, vinicius junior et sa copine, junior vinicius, la maison de vinicius junior, pointure vinicius junior, agent de vinicius junior, vinicius junior coupe de cheveux, coloriage vinicius junior, crampon nike vinicius junior, crampon vinicius junior, photos de vinicius junior, vinicius junior celebration, coupe vinicius junior",
+  category: "players",
 };

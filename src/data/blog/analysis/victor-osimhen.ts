@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const victorOsimhenPost: BlogPost = {
   id: 35,
+  slug: "victor-osimhen", //
   title: "Victor Osimhen : Analyse Complète du Parcours et des Statistiques [2024]",
-  excerpt: "Découvrez notre analyse approfondie de Victor Osimhen, ses statistiques impressionnantes, son parcours, ses rumeurs de transfert au PSG et à Galatasaray, son salaire actuel et ses origines.",
+  excerpt:
+    "Découvrez notre analyse approfondie de Victor Osimhen, ses statistiques impressionnantes, son parcours, ses rumeurs de transfert au PSG et à Galatasaray, son salaire actuel et ses origines.",
   date: "2024-06-01",
   galleryImageId: 35,
   content: `# Tout savoir sur **Victor Osimhen** en 2024
@@ -84,6 +86,7 @@ L'histoire de **Victor Osimhen** est celle d'un talent exceptionnel doublé d'un
 À seulement 25 ans, **Osimhen Victor** n'a probablement pas atteint son plein potentiel. Les prochaines années s'annoncent déterminantes pour sa carrière, avec un probable transfert vers un club encore plus prestigieux et des défis sportifs de plus en plus relevés. Si sa progression se poursuit sur cette trajectoire, il pourrait s'inscrire durablement parmi les meilleurs attaquants de sa génération et marquer l'histoire du football africain et mondial.
 
 Que ce soit au PSG, en Premier League ou ailleurs, l'avenir de **Victor Osimhen** sera passionnant à suivre. Une chose est certaine : ce buteur d'exception n'a pas fini de faire parler de lui, tant par ses performances sportives que par son impact en dehors des terrains.`,
-  keywords: "victor osimhen, statistiques de victor osimhen, victor osimhen psg, victor osimhen galatasaray, victor osimhen salaire, victor osimhen transfert, victor osimhen religion, osimhen victor, attaquant nigérian, buteur naples, football nigeria, transfert naples, mercato 2024, ligue des champions, serie a",
-  category: 'players'
+  keywords:
+    "victor osimhen, statistiques de victor osimhen, victor osimhen psg, victor osimhen galatasaray, victor osimhen salaire, victor osimhen transfert, victor osimhen religion, osimhen victor, attaquant nigérian, buteur naples, football nigeria, transfert naples, mercato 2024, ligue des champions, serie a",
+  category: "players",
 };

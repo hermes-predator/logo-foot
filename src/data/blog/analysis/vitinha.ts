@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const vitinhaPost: BlogPost = {
   id: 37,
+  slug: "vitinha", //
   title: "Vitinha : Le Maestro Portugais qui Révolutionne le Milieu du PSG [2024]",
-  excerpt: "Découvrez notre analyse approfondie de Vitinha, son parcours, son évolution technique et tactique au PSG, et comment il est devenu l'un des meilleurs milieux de terrain d'Europe.",
+  excerpt:
+    "Découvrez notre analyse approfondie de Vitinha, son parcours, son évolution technique et tactique au PSG, et comment il est devenu l'un des meilleurs milieux de terrain d'Europe.",
   date: "2024-06-10",
   galleryImageId: 37,
   content: `# Vitinha : Le Maestro Portugais qui Révolutionne le Milieu du PSG [2024]
@@ -48,6 +49,7 @@ Son talent, sa détermination et son éthique de travail font de lui un joueur e
 Vitinha est un joueur exceptionnel, doté d'un talent rare et d'une mentalité irréprochable. Son parcours, de ses débuts prometteurs au FC Porto à son éclosion au PSG, témoigne de sa détermination et de sa capacité à surmonter les défis.
 
 Son avenir s'annonce radieux, et il ne fait aucun doute qu'il continuera à impressionner les observateurs et à ravir les supporters par ses performances exceptionnelles. Vitinha est un joueur à suivre de très près, car il a tout pour devenir une légende du football portugais et mondial.`,
-  keywords: "vitinha, vitinha psg, vitinha portugal, vitinha luis enrique, vitinha statistiques, vitinha technique, vitinha passes, vitinha porto, vitinha ligue 1, vitinha champions league, vitinha euro, vitinha tactique, vitinha milieu, vitinha comparaison, vitinha progression, vitinha style, vitinha salaire, vitinha transfert, vitinha sélection, vitinha avenir",
-  category: 'players'
+  keywords:
+    "vitinha, vitinha psg, vitinha portugal, vitinha luis enrique, vitinha statistiques, vitinha technique, vitinha passes, vitinha porto, vitinha ligue 1, vitinha champions league, vitinha euro, vitinha tactique, vitinha milieu, vitinha comparaison, vitinha progression, vitinha style, vitinha salaire, vitinha transfert, vitinha sélection, vitinha avenir",
+  category: "players",
 };

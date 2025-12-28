@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const psgRumeursTransfertPost: BlogPost = {
   id: 32,
+  slug: "psg-rumeurs-transferts", //
   title: "PSG Rumeurs Transfert : Toutes les Actualités du Mercato Parisien [2024]",
-  excerpt: "Découvrez toutes les dernières rumeurs et informations sur les transferts du PSG : arrivées potentielles, départs annoncés et stratégie du club parisien pour le mercato.",
+  excerpt:
+    "Découvrez toutes les dernières rumeurs et informations sur les transferts du PSG : arrivées potentielles, départs annoncés et stratégie du club parisien pour le mercato.",
   date: "2024-04-08",
   galleryImageId: 32,
   content: `# PSG Rumeurs Transfert : L'Actualité du Mercato Parisien
@@ -52,7 +53,8 @@ Les **psg rumeurs transferts** les plus crédibles sont souvent celles qui tienn
 Le prochain mercato s'annonce crucial pour l'avenir du PSG. Les **transfert foot au psg** qui seront réalisés détermineront en grande partie la capacité du club à rester compétitif au plus haut niveau européen, notamment en Ligue des Champions.
 
 Les **psg rumeurs transfert** qui se concrétiseront donneront également des indications précieuses sur la vision à long terme des propriétaires qataris. Après plus d'une décennie d'investissements massifs, le projet sportif parisien semble entrer dans une nouvelle phase, plus mature et plus réfléchie.`,
-  keywords: "psg rumeurs transfert, psg rumeurs transferts, transfert foot au psg, mercato psg, recrutement psg, transferts paris saint-germain, psg mercato rumeurs, psg actualités transferts, psg signature joueurs, transferts football psg",
-  category: 'technical',
-  subCategory: 'club-analysis'
+  keywords:
+    "psg rumeurs transfert, psg rumeurs transferts, transfert foot au psg, mercato psg, recrutement psg, transferts paris saint-germain, psg mercato rumeurs, psg actualités transferts, psg signature joueurs, transferts football psg",
+  category: "technical",
+  subCategory: "club-analysis",
 };

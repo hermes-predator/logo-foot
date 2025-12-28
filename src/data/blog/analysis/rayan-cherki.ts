@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rayanCherkiPost: BlogPost = {
   id: 33, // Numéro unique pour cet article
+  slug: "rayan-cherki", //
   title: "Rayan Cherki : Analyse Complète du Jeune Prodige du Football Français [2024]",
-  excerpt: "Découvrez l'analyse détaillée de Rayan Cherki, son style de jeu, ses statistiques, son parcours et son potentiel. Un regard approfondi sur l'un des plus grands talents du football français.",
+  excerpt:
+    "Découvrez l'analyse détaillée de Rayan Cherki, son style de jeu, ses statistiques, son parcours et son potentiel. Un regard approfondi sur l'un des plus grands talents du football français.",
   date: "2024-08-25", // Date de publication
   galleryImageId: 33,
   content: `# **Rayan Cherki** : Portrait Complet d'un Talent Exceptionnel
@@ -129,6 +131,7 @@ En réalité, le prénom officiel du joueur est bien **Rayan Cherki** et non **R
 Les prochaines saisons seront déterminantes pour confirmer les immenses espoirs placés en lui. Que ce soit à Lyon, au **Rayan Cherki PSG** ou dans un autre grand club européen, l'avenir s'annonce radieux pour ce joyau du football français. De même, son choix entre l'équipe de France et l'**Rayan Cherki Algérie** sera un tournant majeur dans sa carrière internationale.
 
 Une chose est certaine : les amateurs de beau jeu continueront de suivre avec attention l'évolution de ce talent d'exception, dont les arabesques techniques et la vision du jeu promettent encore de nombreux moments de magie sur les terrains. **Rayan Cherki** a tout pour devenir l'une des figures majeures du football mondial dans les années à venir.`,
-  keywords: "Rayan Cherki, Cherki Rayan, statistiques de Rayan Cherki, Rayan Cherki origine, age Rayan Cherki, PSG Rayan Cherki, Rayan Cherki dates d'inscription, Rayan Cherki taille, Rayan Cherki age, Rayan Cherki OL, Rayan Cherki salaire, Rayan Cherki stats, Rayan Cherki équipes actuelles, Rayan Cherki Lyon, Rayan Cherki club, Rayan Cherki marseillaise, Rayan Cherki parents, Rayan Cherki France, Rayan Cherki numero, Rayan Cherki transfert, Rayan Cherki algerie, Rayan Cherki club actuel, but Rayan Cherki, maillot Rayan Cherki, Rayan Cherki agent, Rayan Cherki origine parents, Rayan Cherki Algérie",
-  category: 'players'
+  keywords:
+    "Rayan Cherki, Cherki Rayan, statistiques de Rayan Cherki, Rayan Cherki origine, age Rayan Cherki, PSG Rayan Cherki, Rayan Cherki dates d'inscription, Rayan Cherki taille, Rayan Cherki age, Rayan Cherki OL, Rayan Cherki salaire, Rayan Cherki stats, Rayan Cherki équipes actuelles, Rayan Cherki Lyon, Rayan Cherki club, Rayan Cherki marseillaise, Rayan Cherki parents, Rayan Cherki France, Rayan Cherki numero, Rayan Cherki transfert, Rayan Cherki algerie, Rayan Cherki club actuel, but Rayan Cherki, maillot Rayan Cherki, Rayan Cherki agent, Rayan Cherki origine parents, Rayan Cherki Algérie",
+  category: "players",
 };

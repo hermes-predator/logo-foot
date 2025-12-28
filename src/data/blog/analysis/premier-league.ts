@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const premierLeagueAnalysis: BlogPost = {
   id: 31,
+  slug: "premier-league-identity", //
   title: "Analyse des Logos de Premier League : Design et Marketing [2024]",
-  excerpt: "Découvrez l'analyse détaillée des logos des clubs de Premier League. Design, stratégie marketing et évolution des identités visuelles des clubs anglais.",
+  excerpt:
+    "Découvrez l'analyse détaillée des logos des clubs de Premier League. Design, stratégie marketing et évolution des identités visuelles des clubs anglais.",
   date: "2024-02-18",
   galleryImageId: 31,
   content: `# Analyse des Identités Visuelles en Premier League
@@ -96,6 +97,7 @@ L'ensemble des clubs anglais suit plusieurs directions créatives communes :
 Les logos des clubs de Premier League illustrent parfaitement l'équilibre délicat entre respect de l'héritage historique et nécessité d'innovation dans un environnement médiatique en constante évolution. La dimension internationale du championnat anglais pousse les clubs à développer des identités visuelles capables de résonner au-delà des frontières culturelles traditionnelles.
 
 L'avenir du design dans le football anglais semble clairement orienté vers des systèmes identitaires flexibles, permettant des adaptations contextuelles tout en maintenant une cohérence globale forte. Cette approche reflète la complexité croissante de l'écosystème médiatique dans lequel évoluent ces marques sportives d'envergure mondiale.`,
-  keywords: "analyse logos premier league, design clubs anglais, marketing football anglais, branding premier league, identité visuelle football, logos clubs anglais, premier league football logos",
-  category: 'logos'
+  keywords:
+    "analyse logos premier league, design clubs anglais, marketing football anglais, branding premier league, identité visuelle football, logos clubs anglais, premier league football logos",
+  category: "logos",
 };

@@ -8,7 +8,7 @@ const LiveDot = () => (
 );
 
 const messages = [
-  "OFFRE LIMITÉE : -95% sur notre fichier FOOTBALL",
+  "OFFRE LIMITÉE : -95% sur notre fichier spécialisé sur le FOOTBALL",
   "LIVRAISON DIRECTE : Téléchargez notre fichier en page d'après-paiement"
 ];
 

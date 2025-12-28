@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const almeriaLogoPost: BlogPost = {
   id: 64, // ID unique pour ce nouvel article
+  slug: "almeria-logo", //
   title: "Logo Almeria : Histoire et Évolution de l'Emblème du Club Andalou [2024]",
   date: "2025-04-11",
   galleryImageId: 64,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Almeria, emblème du club andalou. Analyse complète des symboles et des couleurs du blason d'UD Almeria.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Almeria, emblème du club andalou. Analyse complète des symboles et des couleurs du blason d'UD Almeria.",
   content: `# L'Histoire Fascinante du **Logo Almeria**
 
 Le **almeria logo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les ambitions d'un club andalou aux racines profondes. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **logo almeria**, ce blason qui fait la fierté des supporters de la province d'Almería.

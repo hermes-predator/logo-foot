@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const anderlechtLogoPost: BlogPost = {
   id: 71,
+  slug: "anderlecht-logo", //
   title: "Logo Anderlecht : Histoire et Signification du RSC Anderlecht Logo [2024]",
-  excerpt: "Découvrez l'histoire complète du logo RSC Anderlecht : origines, évolution et symbolisme de l'emblème du club belge le plus titré.",
+  excerpt:
+    "Découvrez l'histoire complète du logo RSC Anderlecht : origines, évolution et symbolisme de l'emblème du club belge le plus titré.",
   date: "2024-04-10",
   galleryImageId: 71,
   content: `# L'Histoire Fascinante du **Logo Anderlecht**
@@ -50,7 +51,8 @@ Dans les quartiers de Bruxelles et bien au-delà, le **logo foot anderlecht** s'
 Les responsables de l'identité visuelle du club veillent constamment à maintenir un équilibre délicat entre tradition et modernité, permettant au **anderlecht logo** de rester pertinent dans un paysage médiatique en constante mutation. Cette approche stratégique garantit que le **logo anderlecht png** conservera sa force évocatrice et son pouvoir d'identification pour les années à venir.
 
 En définitive, le **logo anderlecht** est bien plus qu'un simple emblème sportif : c'est le gardien de l'héritage d'un club historique, le témoin de ses succès passés et l'inspiration pour ses ambitions futures. À travers chaque reproduction du **rsc anderlecht logo**, c'est toute l'âme d'une institution sportive majeure qui continue de rayonner dans le football belge et européen, perpétuant une tradition d'excellence qui a fait la renommée du club bruxellois.`,
-  keywords: "anderlecht logo, logo anderlecht, anderlecht logo png, logo anderlecht png, logo rsc anderlecht, rsc anderlecht logo, rsc anderlecht logo png, anderlecht logo jpg, logo de foot anderlecht, logo foot anderlecht, logo png anderlecht",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "anderlecht logo, logo anderlecht, anderlecht logo png, logo anderlecht png, logo rsc anderlecht, rsc anderlecht logo, rsc anderlecht logo png, anderlecht logo jpg, logo de foot anderlecht, logo foot anderlecht, logo png anderlecht",
+  category: "logos",
+  subCategory: "club-logos",
 };

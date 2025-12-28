@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ancienLogoInterMilanPost: BlogPost = {
   id: 66,
+  slug: "ancien-logo-inter-milan", //
   title: "**Ancien Logo Inter Milan** : L'Évolution d'une Icône du Calcio [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante de l'**ancien logo de l'Inter Milan**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
+  excerpt:
+    "Découvrez l'histoire fascinante de l'**ancien logo de l'Inter Milan**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
   date: "2024-04-15",
   galleryImageId: 66,
   content: `# Histoire et Évolution de l'**Ancien Logo Inter Milan**
@@ -77,7 +78,8 @@ Le **logo inter milan ancien** continue d'inspirer :
 ## Conclusion
 
 L'**ancien logo inter milan** demeure un témoin précieux de l'histoire du club, incarnant les valeurs et l'évolution d'une institution qui a profondément marqué le football mondial.`,
-  keywords: "ancien logo inter milan, inter milan ancien logo, logo inter milan ancien, ancien logo de l'inter milan, inter milan logo ancien",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "ancien logo inter milan, inter milan ancien logo, logo inter milan ancien, ancien logo de l'inter milan, inter milan logo ancien",
+  category: "logos",
+  subCategory: "club-logos",
 };

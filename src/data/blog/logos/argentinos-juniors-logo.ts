@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const argentinosJuniorsLogoPost: BlogPost = {
   id: 78,
+  slug: "argentinos-juniors-logo", //
   title: "**Logo Argentinos Juniors** : Histoire et Symbolisme [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Argentinos Juniors logo**, emblème historique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo Argentinos Junior**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Argentinos Juniors logo**, emblème historique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo Argentinos Junior**.",
   date: "2024-04-22",
   galleryImageId: 78,
   content: `# L'Histoire du **Logo Argentinos Juniors**
@@ -42,7 +43,8 @@ Le **logo de foot Argentinos Juniors Argentine** continue d'inspirer les nouvell
 ## Conclusion
 
 Le **logo Argentinos Juniors** représente bien plus qu'un simple emblème sportif. C'est un symbole qui incarne l'histoire d'un club formateur, ses valeurs et son importance dans le football argentin. Le **logo Argentinos Junior** continue de rayonner comme un témoignage de l'héritage durable du club.`,
-  keywords: "logo argentinos juniors, argentinos juniors logo, logo argentinos junior, logo argentinos juniors png, logo de foot argentinos juniors argentine, football argentin, club argentin",
+  keywords:
+    "logo argentinos juniors, argentinos juniors logo, logo argentinos junior, logo argentinos juniors png, logo de foot argentinos juniors argentine, football argentin, club argentin",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const astonVillaLogoPost: BlogPost = {
   id: 85,
+  slug: "aston-villa-logo", //
   title: "Logo Aston Villa : Histoire et Evolution du Design Emblématique [2024]",
-  excerpt: "Découvrez l'histoire complète du logo d'Aston Villa FC : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Birmingham.",
+  excerpt:
+    "Découvrez l'histoire complète du logo d'Aston Villa FC : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Birmingham.",
   date: "2024-04-05",
   galleryImageId: 85,
   content: `# L'Histoire Fascinante du **Logo Aston Villa**
@@ -64,7 +65,8 @@ Le **logo Aston Villa** s'adapte parfaitement aux nouvelles technologies. Les ex
 La reconnaissance du **Aston Villa logo** s'étend à de nouveaux territoires. La présence renforcée sur les marchés internationaux grâce à une identité visuelle forte, les adaptations culturelles spécifiques qui respectent l'essence du **logo Aston Villa PNG**, les collaborations créatives avec des artistes internationaux et la narration immersive autour de l'héritage du club et de son emblème iconique participent à cette expansion mondiale.
 
 Le **logo Aston Villa** demeure un symbole puissant du football anglais, incarnant parfaitement l'équilibre entre tradition séculaire et ambitions contemporaines. L'**Aston Villa Football Club logo** continue d'inspirer joueurs et supporters, tout en portant l'héritage d'un club fondateur du football moderne vers de nouveaux sommets d'excellence et de reconnaissance mondiale.`,
-  keywords: "aston villa football club logo, aston villa logo, aston villa fc logo, logo aston villa, aston villa fc logo png, aston villa logo png, logo aston villa png, emblème aston villa, blason aston villa, villa park logo, lion aston villa",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "aston villa football club logo, aston villa logo, aston villa fc logo, logo aston villa, aston villa fc logo png, aston villa logo png, logo aston villa png, emblème aston villa, blason aston villa, villa park logo, lion aston villa",
+  category: "logos",
+  subCategory: "club-logos",
 };

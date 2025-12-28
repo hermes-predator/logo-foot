@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const annecyLogoPost: BlogPost = {
   id: 74,
+  slug: "annecy-logo", //
   title: "Logo Annecy : Histoire et Évolution de l'Emblème du FC Annecy [2024]",
-  excerpt: "Découvrez l'histoire complète du logo d'Annecy : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club haut-savoyard.",
+  excerpt:
+    "Découvrez l'histoire complète du logo d'Annecy : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club haut-savoyard.",
   date: "2024-04-22",
   galleryImageId: 74,
   content: `# L'Histoire Fascinante du **Logo Annecy**
@@ -52,7 +53,8 @@ Alors que le club poursuit son développement sportif et structurel, son **logo 
 Les éventuelles futures évolutions du **logo annecy png** s'inscriront probablement dans cette même philosophie d'équilibre entre tradition et innovation, avec le souci constant de représenter fidèlement les valeurs du club et son ancrage territorial unique entre lac et montagnes.
 
 Pour les décennies à venir, le **logo foot annecy** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club haut-savoyard.`,
-  keywords: "logo annecy, annecy logo, fc annecy logo, logo fc annecy, logo annecy foot, annecy fc logo, logo annecy fc, logo foot annecy, annecy logo png, fc annecy logo png, logo annecy png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo annecy, annecy logo, fc annecy logo, logo fc annecy, logo annecy foot, annecy fc logo, logo annecy fc, logo foot annecy, annecy logo png, fc annecy logo png, logo annecy png",
+  category: "logos",
+  subCategory: "club-logos",
 };

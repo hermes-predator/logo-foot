@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ancienLogoPsgPost: BlogPost = {
   id: 69,
+  slug: "ancien-logo-psg", //
   title: "Ancien Logo PSG : Histoire et Évolution des Logos Historiques [2024]",
-  excerpt: "Découvrez l'histoire complète des anciens logos du PSG : origines, évolution et signification des emblèmes historiques du Paris Saint-Germain depuis sa création.",
+  excerpt:
+    "Découvrez l'histoire complète des anciens logos du PSG : origines, évolution et signification des emblèmes historiques du Paris Saint-Germain depuis sa création.",
   date: "2024-06-01",
   galleryImageId: 69,
   content: `# L'Histoire Fascinante des **Ancien Logo PSG**
@@ -64,8 +65,8 @@ Cette fascination pour les **logo psg ancien** témoigne de leur importance cult
 Bien que le club ait adopté un nouveau design épuré en 2013, les **ancien logo psg** continuent de vivre à travers diverses expressions de la culture supporter et dans les initiatives du club lui-même. Régulièrement, des collections hommage ou des campagnes spéciales revisitent ces symboles historiques, démontrant leur importance persistante dans l'ADN visuel du Paris Saint-Germain.
 
 La coexistence du logo moderne avec les références aux **psg ancien logo** illustre parfaitement la dualité qui caractérise le PSG contemporain : un club résolument tourné vers l'avenir et les marchés internationaux, mais qui reste conscient de l'importance de son héritage et de ses racines parisiennes. Cette tension créative entre modernité et tradition, incarnée par le dialogue entre le logo actuel et les **ancien logo du psg** historiques, constitue l'une des forces identitaires du club de la capitale française.`,
-  keywords: "ancien logo psg, logo psg ancien, psg ancien logo, ancien logo du psg, drapeau psg ancien logo, psg logo ancien",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "ancien logo psg, logo psg ancien, psg ancien logo, ancien logo du psg, drapeau psg ancien logo, psg logo ancien",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

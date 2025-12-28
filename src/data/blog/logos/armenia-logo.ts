@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const armeniaLogoPost: BlogPost = {
   id: 79,
+  slug: "armenie-logo", //
   title: "**Logo Arménie** : Histoire et Signification de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale arménienne : des origines à aujourd'hui, évolution et signification de cet emblème unique du football caucasien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale arménienne : des origines à aujourd'hui, évolution et signification de cet emblème unique du football caucasien.",
   date: "2024-07-01",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,6 +33,6 @@ Les récentes adaptations de l'emblème reflètent la modernisation du football 
 ## Conclusion
 
 Le logo de la sélection arménienne reste un symbole fort du football national, incarnant à la fois l'histoire, les traditions et les ambitions futures du pays. À chaque compétition internationale, il rappelle au monde la passion et la détermination d'une nation qui continue de développer sa culture footballistique avec fierté et ambition.`,
-  keywords: "logo armenie, armenie logo, armenie football logo, armenie logo foot, arménie foot logo, arménie logo, logo armenie foot, logo foot arménie, équipe d'arménie de football logos"
+  keywords:
+    "logo armenie, armenie logo, armenie football logo, armenie logo foot, arménie foot logo, arménie logo, logo armenie foot, logo foot arménie, équipe d'arménie de football logos",
 };
-

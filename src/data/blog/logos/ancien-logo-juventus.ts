@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ancienLogoJuventusPost: BlogPost = {
   id: 67,
+  slug: "ancien-logo-juventus", //
   title: "Ancien Logo Juventus : Histoire et Évolution de l'Emblème Historique [2024]",
-  excerpt: "Découvrez l'histoire fascinante de l'ancien logo de la Juventus, son héritage emblématique et son évolution avant la révolution de 2017.",
+  excerpt:
+    "Découvrez l'histoire fascinante de l'ancien logo de la Juventus, son héritage emblématique et son évolution avant la révolution de 2017.",
   date: "2024-05-12",
   galleryImageId: 67,
   content: `# L'Histoire Fascinante de l'**Ancien Logo Juventus**
@@ -98,8 +99,8 @@ Si le nouveau logo de la Juventus symbolise l'audace et la vision d'avenir du cl
 Pour les millions de supporters à travers le monde, l'**ancien logo de la juventus** reste gravé dans les cœurs comme l'emblème des grandes heures du club, des victoires mémorables et des légendes qui ont porté avec fierté le maillot rayé noir et blanc.
 
 À l'heure où le football moderne est en constante évolution, le souvenir de l'**ancien logo juventus** nous rappelle l'importance des traditions et des symboles qui construisent l'identité profonde des institutions sportives, par-delà les considérations marketing et les tendances éphémères du design contemporain.`,
-  keywords: "ancien logo juventus, juventus ancien logo, logo juventus ancien, ancien logo de la juventus, ancien logo de juventus, juventus logo ancien, ancien logo juventus turin",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "ancien logo juventus, juventus ancien logo, logo juventus ancien, ancien logo de la juventus, ancien logo de juventus, juventus logo ancien, ancien logo juventus turin",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

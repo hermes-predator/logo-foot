@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const asRomaLogoPost: BlogPost = {
   id: 83,
+  slug: "as-roma-logo", //
   title: "Logo AS Roma : Histoire et Evolution de l'Emblème Giallorossi [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'AS Roma : origines, évolution et symbolisme de l'écusson emblématique du club de la capitale italienne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'AS Roma : origines, évolution et symbolisme de l'écusson emblématique du club de la capitale italienne.",
   date: "2024-04-22",
   galleryImageId: 83,
   content: `# L'Histoire Passionnante du **Logo AS Roma**
@@ -66,7 +67,8 @@ Comme tout emblème historique, le **logo as roma** continuera sans doute d'évo
 Les débats entre puristes et modernistes sur les futures itérations du **as roma fc logo** témoignent de l'attachement profond que lui portent les millions de supporters à travers le monde. Ces discussions passionnées autour du **roma football club logo** illustrent parfaitement la dimension culturelle et identitaire que peut revêtir un emblème sportif.
 
 Que ce soit dans sa version classique avec la louve capitoline détaillée ou dans son itération contemporaine plus minimaliste, le **logo as roma** demeure un symbole puissant qui transcende le simple cadre sportif pour s'inscrire dans le patrimoine culturel italien. Son évolution future continuera sans doute de susciter débats et passions, témoignant de l'importance capitale de cette identité visuelle dans le cœur des tifosi romains.`,
-  keywords: "logo as roma, as roma fc logo, as roma logo, logo roma, logos roma, roma fc logo, roma football club logo, roma logo, roma soccer logo, logo rome, rome logo, as roma logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo as roma, as roma fc logo, as roma logo, logo roma, logos roma, roma fc logo, roma football club logo, roma logo, roma soccer logo, logo rome, rome logo, as roma logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

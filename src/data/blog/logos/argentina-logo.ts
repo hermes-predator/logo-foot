@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const argentinaLogoPost: BlogPost = {
   id: 77,
+  slug: "argentine-logo", //
   title: "Logo Argentine : Histoire et Évolution de l'Emblème de l'Albiceleste [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Argentine, son évolution et sa signification. Analyse détaillée de l'emblème de la sélection championne du monde et téléchargez le logo Argentine foot en PNG haute qualité.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Argentine, son évolution et sa signification. Analyse détaillée de l'emblème de la sélection championne du monde et téléchargez le logo Argentine foot en PNG haute qualité.",
   date: "2024-05-28",
   galleryImageId: 77,
   content: `# L'Histoire Passionnante du **Logo Argentine**
@@ -75,7 +77,8 @@ Pour les supporters et passionnés du football argentin, il est possible de tél
 Le **logo foot argentine** disponible en version png offre l'avantage de la transparence, permettant de l'intégrer facilement sur différents fonds ou supports. Cette flexibilité fait du **logo argentine png** un format privilégié pour les créations graphiques des supporters ou pour une utilisation sur les réseaux sociaux.
 
 Pour un usage respectueux de l'image de la sélection argentine, il est recommandé de se tourner vers ces canaux officiels plutôt que vers des sources tierces qui pourraient proposer des versions modifiées ou de qualité inférieure du **logo argentine**. Le respect de l'intégrité visuelle de l'emblème contribue à préserver sa valeur symbolique et son impact visuel unique dans l'univers du football mondial.`,
-  keywords: "logo argentine, argentine logo, logo argentine foot, argentina logo, logo argentina, logo foot argentine, argentine foot logo, argentine logo foot, logo de l'argentine, argentina football logo, argentina logo png, argentine logo png",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo argentine, argentine logo, logo argentine foot, argentina logo, logo argentina, logo foot argentine, argentine foot logo, argentine logo foot, logo de l'argentine, argentina football logo, argentina logo png, argentine logo png",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

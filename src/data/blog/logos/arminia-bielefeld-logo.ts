@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const arminiaBielefeldLogoPost: BlogPost = {
   id: 80,
+  slug: "arminia-bielefeld-logo", //
   title: "**Logo Arminia Bielefeld** : Histoire et Design de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Arminia Bielefeld**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Arminia Bielefeld**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
   date: "2025-04-14",
   galleryImageId: 80,
   content: `# L'Histoire du **Logo Arminia Bielefeld**
@@ -93,7 +94,8 @@ Le **logo de foot arminia bielefeld en allemagne** continuera sans doute d'évol
 Le **logo arminia bielefeld** demeure l'un des emblèmes les plus distinctifs et respectés du football allemand. De sa conception initiale à sa version numérique moderne en **arminia bielefeld logo png**, l'emblème d'Arminia Bielefeld a su évoluer tout en préservant son essence et sa reconnaissance immédiate.
 
 Alors que le club traverse les différentes phases de son histoire sportive, entre succès et défis, son **arminia bielefeld logos** reste un point d'ancrage identitaire puissant, unissant supporters, joueurs et dirigeants autour d'un symbole commun qui transcende les générations et les résultats sportifs.`,
-  keywords: "arminia bielefeld logo:20, logo arminia bielefeld:20, arminia bielefeld logo png:10, arminia bielefeld logos:10, logo de foot arminia bielefeld en allemagne:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  keywords:
+    "arminia bielefeld logo:20, logo arminia bielefeld:20, arminia bielefeld logo png:10, arminia bielefeld logos:10, logo de foot arminia bielefeld en allemagne:10",
+  category: "logos",
+  subCategory: "german-clubs",
 };

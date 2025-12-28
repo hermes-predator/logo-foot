@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const amiensLogoPost: BlogPost = {
   id: 65,
+  slug: "amiens-logo", //
   title: "Logo Amiens : Histoire et Design de l'Emblème Picard [2024]",
-  excerpt: "Découvrez l'histoire complète du logo d'Amiens SC : évolution, symbolisme et design de l'emblème emblématique du club picard, un des emblèmes les plus reconnaissables du football français.",
+  excerpt:
+    "Découvrez l'histoire complète du logo d'Amiens SC : évolution, symbolisme et design de l'emblème emblématique du club picard, un des emblèmes les plus reconnaissables du football français.",
   date: "2024-05-18",
   galleryImageId: 65,
   content: `# L'Histoire Fascinante du **Logo Amiens**
@@ -42,7 +43,8 @@ Pour les supporters de l'ASC, le **logo amiens foot** est un objet de fierté qu
 Si le **amiens sc logo** a su s'adapter aux exigences graphiques modernes, il a toujours préservé son essence et les valeurs qu'il incarne. Cette continuité visuelle est l'une des grandes forces du **logo amiens**, créant un pont entre les différentes générations de supporters qui se transmettent leur passion pour le club picard.
 
 Aujourd'hui, alors que le club poursuit son aventure dans le football professionnel français, le **logo amiens sc** continue de briller comme un symbole d'histoire et de tradition dans un sport en constante évolution. Plus qu'un simple emblème sportif, le **amiens logo** reste un témoin vivant de l'histoire du football français et un symbole d'identité pour toute une région.`,
-  keywords: "logo amiens, amiens logo, logo amiens sc, amiens sc logo, amiens foot logo, amiens sc nouveau logo, logo amiens foot, logo amiens sc football, logo foot amiens, amiens logo foot, amiens logo png, logo amiens png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo amiens, amiens logo, logo amiens sc, amiens sc logo, amiens foot logo, amiens sc nouveau logo, logo amiens foot, logo amiens sc football, logo foot amiens, amiens logo foot, amiens logo png, logo amiens png",
+  category: "logos",
+  subCategory: "club-logos",
 };

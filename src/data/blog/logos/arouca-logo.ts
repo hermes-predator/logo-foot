@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const aroucaLogoPost: BlogPost = {
   id: 81,
+  slug: "arouca-logo", //
   title: "**Logo Arouca** : Histoire et Évolution de l'Emblème [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Arouca**, son évolution et sa symbolique unique dans le football portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Arouca**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
   galleryImageId: 81,
   content: `# Histoire et Signification du **Logo Arouca**
@@ -69,6 +70,6 @@ Dans le contexte actuel du football, le **logo Arouca transparent** continue de 
 
 Le **logo Arouca** est devenu un symbole puissant du football portugais, incarnant l'histoire et les ambitions d'un club en constante évolution. Sa présence dans l'élite du football portugais témoigne du parcours remarquable du FC Arouca.`,
   keywords: "arouca logo, logo arouca, arouca logo png, fc arouca logo, logo arouca transparent, logo fc arouca",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

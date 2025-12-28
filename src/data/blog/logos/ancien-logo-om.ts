@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ancienLogoOmPost: BlogPost = {
   id: 68,
+  slug: "ancien-logo-marseille", //
   title: "Ancien Logo OM : Histoire et Évolution des Emblèmes Historiques de Marseille [2024]",
-  excerpt: "Découvrez l'histoire complète de l'ancien logo OM : des origines à aujourd'hui, évolution et signification des emblèmes historiques de l'Olympique de Marseille.",
+  excerpt:
+    "Découvrez l'histoire complète de l'ancien logo OM : des origines à aujourd'hui, évolution et signification des emblèmes historiques de l'Olympique de Marseille.",
   date: "2024-07-17",
   galleryImageId: 68,
   content: `# L'Histoire Fascinante des **Ancien Logo OM**
@@ -101,7 +102,8 @@ Oui, le club commercialise régulièrement des collections "Heritage" ou "Vintag
 
 **Pourquoi l'OM a-t-il changé son logo au fil du temps?**
 Comme de nombreux clubs, l'OM a fait évoluer son **ancien logo de l'om** pour refléter les changements d'époque, les évolutions du club, mais aussi pour des raisons de marketing et de modernisation de son image.`,
-  keywords: "ancien logo om, logo om ancien, ancien logo de l'om, om ancien logo, om logo ancien, ancien logo l'om, logo de l om ancien, ancien logo marseille, ancien logo de marseille, logo marseille ancien",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "ancien logo om, logo om ancien, ancien logo de l'om, om ancien logo, om logo ancien, ancien logo l'om, logo de l om ancien, ancien logo marseille, ancien logo de marseille, logo marseille ancien",
+  category: "logos",
+  subCategory: "club-logos",
 };

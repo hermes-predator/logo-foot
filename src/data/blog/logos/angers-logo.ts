@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const angersLogoPost: BlogPost = {
   id: 72,
+  slug: "angers-logo", //
   title: "Logo Angers SCO : Histoire et Évolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Angers SCO, son symbolisme et comment l'emblème représente l'identité du club angevin au fil des années.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Angers SCO, son symbolisme et comment l'emblème représente l'identité du club angevin au fil des années.",
   date: "2024-04-20",
   galleryImageId: 72,
   content: `# L'Histoire Fascinante du **Logo Angers**
@@ -88,7 +89,8 @@ Ces évolutions potentielles témoignent de la nature dynamique du club et de sa
 Le **logo angers** représente bien plus qu'un simple symbole graphique pour un club de football. C'est le témoin visuel d'une histoire centenaire, le porte-étendard d'une communauté passionnée et l'incarnation des valeurs qui définissent l'identité du SCO Angers.
 
 À travers ses couleurs emblématiques et sa composition distinctive, l'**angers logo foot** continue de rassembler les générations de supporters autour d'une même passion. Qu'il soit brodé sur un maillot, flottant sur un drapeau ou affiché sur les réseaux sociaux, ce logo est et restera le symbole intemporel d'un club qui a su écrire son nom dans l'histoire du football français.`,
-  keywords: "logo angers, angers logo, logo angers sco, logo sco angers, angers sco logo, sco angers logo, angers fc logo, angers sco logo png, logo angers foot, logo angers png, angers logo foot, angers logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo angers, angers logo, logo angers sco, logo sco angers, angers sco logo, sco angers logo, angers fc logo, angers sco logo png, logo angers foot, logo angers png, angers logo foot, angers logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

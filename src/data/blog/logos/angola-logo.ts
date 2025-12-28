@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const angolaLogoPost: BlogPost = {
   id: 73,
+  slug: "angola-logo", //
   title: "**Logo Angola** : Histoire et Symbolisme des Palancas Negras [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale angolaise : origines, évolution et signification de cet emblème africain emblématique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale angolaise : origines, évolution et signification de cet emblème africain emblématique.",
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Le **angola foot logo** est devenu un symbole reconnaissable sur la scène afric
 ## L'Héritage et l'Avenir
 
 Plus qu'un simple emblème sportif, le **logo angola** est devenu un puissant vecteur d'unité nationale. Sur les maillots des joueurs comme dans le cœur des supporters, le **angola logo foot** incarne la passion d'un peuple pour le football et son attachement à ses couleurs. Les **logos federation football angola** continuent d'évoluer tout en restant fidèles à leurs racines, symbolisant parfaitement le développement constant du football dans ce pays d'Afrique australe.`,
-  keywords: "logo angola, angola logo, logo angola foot, angola foot logo, angola logo foot, equipe foot angola logo, logos federation football angola"
+  keywords:
+    "logo angola, angola logo, logo angola foot, angola foot logo, angola logo foot, equipe foot angola logo, logos federation football angola",
 };

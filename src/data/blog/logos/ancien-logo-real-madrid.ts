@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ancienLogoRealMadridPost: BlogPost = {
   id: 70,
+  slug: "ancien-logo-real-madrid", //
   title: "**Ancien Logo Real Madrid** : L'Évolution d'une Légende [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante de l'**ancien logo du Real Madrid**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
+  excerpt:
+    "Découvrez l'histoire fascinante de l'**ancien logo du Real Madrid**, son évolution à travers les époques et son héritage dans l'identité visuelle du club.",
   date: "2024-04-15",
   galleryImageId: 70,
   content: `# Histoire et Évolution de l'**Ancien Logo Real Madrid**
@@ -77,7 +78,8 @@ Le **real madrid logo ancien** continue d'influencer :
 ## Conclusion
 
 L'**ancien logo real madrid** reste un témoin précieux de l'histoire du club, incarnant les valeurs et l'évolution d'une institution qui a défini l'excellence dans le football mondial.`,
-  keywords: "ancien logo real madrid, ancien logo du real madrid, logo real madrid ancien, real madrid ancien logo, real madrid logo ancien",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "ancien logo real madrid, ancien logo du real madrid, logo real madrid ancien, real madrid ancien logo, real madrid logo ancien",
+  category: "logos",
+  subCategory: "club-logos",
 };

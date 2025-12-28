@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const chineseSuperLeagueLogoPost: BlogPost = {
   id: 168, // Using a unique ID that hasn't been used yet
+  slug: "chinese-super-league-logo", //
   title: "Logo Chinese Super League : Histoire et Évolution de l'Emblème du Football Chinois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Chinese Super League : symboles, évolution et signification de l'emblème du championnat de football le plus prestigieux de Chine.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Chinese Super League : symboles, évolution et signification de l'emblème du championnat de football le plus prestigieux de Chine.",
   date: "2024-05-01",
   galleryImageId: 168,
   content: `# Histoire Fascinante du **Logo Chinese Super League**
@@ -217,7 +219,8 @@ Pour les millions de fans qui suivent passionnément le **classement chinese sup
 À mesure que la **chinese football association super league** continue de se développer et d'accroître son influence, son logo évoluera sans doute également. Mais quelle que soit sa forme future, il restera un témoignage visuel fascinant de l'ascension du football chinois sur la scène mondiale, et un exemple remarquable de la façon dont une identité visuelle peut accompagner et même catalyser le développement d'une compétition sportive ambitieuse.
 
 Le **chinese super league logo** nous rappelle ainsi que dans l'univers du sport moderne, les symboles visuels ne sont pas de simples ornements, mais des vecteurs essentiels de sens, d'identité et d'émotion qui contribuent pleinement au récit collectif que représente le football.`,
-  keywords: "china chinese super league, chinese football association super league, classement chinese super league, chinese super league, chinese super league football, matchs de chinese super league, chinese super league games, chinese super league logo, chinese super league results",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "china chinese super league, chinese football association super league, classement chinese super league, chinese super league, chinese super league football, matchs de chinese super league, chinese super league games, chinese super league logo, chinese super league results",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

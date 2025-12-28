@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const clubHistoryPost: BlogPost = {
   id: 173,
+  slug: "history-ecussons-logo-foot", //
   title: "Logo Foot : Histoire des Écussons de 1900 à 2024",
-  excerpt: "Découvrez l'évolution des logos foot à travers l'histoire. Guide complet sur les origines et transformations des écussons de football.",
+  excerpt:
+    "Découvrez l'évolution des logos foot à travers l'histoire. Guide complet sur les origines et transformations des écussons de football.",
   date: "2024-02-27",
   galleryImageId: 173,
   content: `# L'Histoire Fascinante des **Logo Foot** à Travers les Âges
@@ -119,7 +121,8 @@ Les **logo foot** sont bien plus que de simples images ou marques commerciales -
 Les **foot logo** d'aujourd'hui, avec leur équilibre délicat entre héritage et modernité, témoignent de cette tension créative qui pousse le football à évoluer tout en restant fidèle à ses racines. Ils nous rappellent que, dans un monde en perpétuel changement, certaines passions restent immuables.
 
 Alors que nous contemplons l'avenir des **logos foot**, une chose est certaine : quelle que soit leur forme future, ces symboles continueront de rassembler les générations, de susciter des émotions profondes et d'incarner les valeurs qui font la beauté universelle du football. Les **logos de foot** sont, et resteront, les témoins privilégiés de cette histoire d'amour entre un sport et ses passionnés.`,
-  keywords: "logo foot, foot logo, histoire logo foot, écusson foot, design logo football, emblème club foot, évolution logo foot, logos foot, logos de foot",
-  category: 'technical',
-  subCategory: 'design'
+  keywords:
+    "logo foot, foot logo, histoire logo foot, écusson foot, design logo football, emblème club foot, évolution logo foot, logos foot, logos de foot",
+  category: "technical",
+  subCategory: "design",
 };

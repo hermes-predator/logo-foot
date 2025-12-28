@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const charlotteFcLogoPost: BlogPost = {
   id: 163,
+  slug: "charlotte-fc-logo", //
   title: "Logo Charlotte FC : Histoire et Design de l'Emblème Américain [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Charlotte FC : des origines à aujourd'hui, évolution et signification de l'emblème du club de MLS.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Charlotte FC : des origines à aujourd'hui, évolution et signification de l'emblème du club de MLS.",
   date: "2024-04-10",
   galleryImageId: 163,
   content: `# L'Histoire Fascinante du Logo Charlotte FC
@@ -36,7 +37,8 @@ Le **charlotte fc logo** incarne les valeurs fondamentales du club : l'excellenc
 Pour les jeunes supporters du club, le **charlotte fc logo** représente bien plus qu'une simple marque : c'est un symbole d'appartenance et de fierté régionale. À mesure que le club continue d'écrire son histoire dans le championnat américain, le **charlotte fc logo png** reste au cœur de son identité, un repère visuel fort autour duquel se rassemble toute une communauté de passionnés.
 
 En conclusion, le **charlotte fc logo** illustre parfaitement comment un design sportif moderne peut à la fois honorer l'héritage d'une région tout en projetant une vision résolument tournée vers l'avenir. À travers sa présence visuelle distinctive, le **charlotte fc logo png** continuera d'incarner les aspirations d'un club et d'une ville qui ont définitivement trouvé leur place sur la carte du football mondial.`,
-  keywords: "charlotte fc logo, charlotte fc logo png, charlotte fc emblème, blason charlotte fc, football charlotte, écusson charlotte fc, logo charlotte fc vectoriel, histoire logo charlotte fc, charlotte fc badge, mls charlotte logo, charlotte soccer logo, charlotte fc symbols, design logo charlotte fc, charlotte fc branding",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "charlotte fc logo, charlotte fc logo png, charlotte fc emblème, blason charlotte fc, football charlotte, écusson charlotte fc, logo charlotte fc vectoriel, histoire logo charlotte fc, charlotte fc badge, mls charlotte logo, charlotte soccer logo, charlotte fc symbols, design logo charlotte fc, charlotte fc branding",
+  category: "logos",
+  subCategory: "club-logos",
 };

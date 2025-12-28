@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const chicagoFireLogoPost: BlogPost = {
   id: 166,
+  slug: "chicago-fire-logo", //
   title: "**Chicago Fire FC Logo** : Histoire et Design de l'Emblème Flamboyant [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Chicago Fire**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Chicago Fire**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 166,
   content: `# L'Histoire Fascinante du **Logo Chicago Fire FC**
@@ -71,7 +72,8 @@ La présence du **Chicago Fire logo** dans le paysage urbain contribue à renfor
 Le **Chicago Fire FC logo** illustre parfaitement comment un emblème sportif peut transcender sa fonction première pour devenir un véritable symbole culturel chargé d'histoire et d'émotion. À travers ses évolutions successives, il a su conserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles attentes visuelles.
 
 Pour les supporters comme pour les observateurs du football américain, le **logo de Chicago Fire** représente non seulement un club, mais aussi l'histoire d'une ville et sa capacité à renaître de ses cendres - une métaphore puissante qui continue d'inspirer les générations de fans.`,
-  keywords: "chicago fire fc logo:20, chicago fire logo:20, chicago fire logo png:20, logo de chicago fire:20, chicago fire fc logo png:10, chicago fire fc new logo:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "chicago fire fc logo:20, chicago fire logo:20, chicago fire logo png:20, logo de chicago fire:20, chicago fire fc logo png:10, chicago fire fc new logo:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

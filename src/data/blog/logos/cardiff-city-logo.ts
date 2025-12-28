@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cardiffCityLogoPost: BlogPost = {
   id: 153, // ID unique qui n'est pas déjà utilisé
+  slug: "cardiff-city-logo", //
   title: "Logo Cardiff City FC : Histoire et Évolution de l'Emblème des Bluebirds [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Cardiff City FC, ses origines galloises et l'évolution de cet emblème emblématique des Bluebirds dans cette analyse complète.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Cardiff City FC, ses origines galloises et l'évolution de cet emblème emblématique des Bluebirds dans cette analyse complète.",
   date: "2024-06-08",
   galleryImageId: 153,
   content: `# L'Histoire Fascinante du **Cardiff City FC Logo** à Travers les Âges
@@ -64,7 +65,8 @@ En définitive, le **cardiff city football club logo** représente bien plus qu'
 À travers ses multiples évolutions, le **logo cardiff city** a su préserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles réalités du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du **cardiff city fc logo** un cas d'étude fascinant dans le domaine des identités visuelles sportives.
 
 Que vous soyez un supporter passionné des Bluebirds ou simplement un amateur de design sportif, le **cardiff city logo** mérite d'être apprécié pour sa richesse symbolique et son importance culturelle dans l'histoire du football gallois et britannique.`,
-  keywords: "cardiff city fc logo, cardiff city football club logo, cardiff city logo, cardiff city logo png, logo cardiff city, cardiff city new logo, logo cardiff city fc, logo cardiff city png, logo de foot cardiff city",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cardiff city fc logo, cardiff city football club logo, cardiff city logo, cardiff city logo png, logo cardiff city, cardiff city new logo, logo cardiff city fc, logo cardiff city png, logo de foot cardiff city",
+  category: "logos",
+  subCategory: "club-logos",
 };

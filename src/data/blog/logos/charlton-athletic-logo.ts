@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const charltonAthleticLogoPost: BlogPost = {
   id: 164,
+  slug: "charlton-athletic-logo", //
   title: "Logo Charlton Athletic : Histoire et Évolution de l'Emblème des Addicks [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Charlton Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique londonien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Charlton Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique londonien.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
@@ -112,5 +113,5 @@ Des versions officielles du **charlton fc logo png** peuvent être trouvées sur
 Oui, les couleurs rouge et blanc ont toujours été associées à Charlton Athletic depuis sa fondation, et elles sont restées des éléments constants dans toutes les versions du **charlton athletic logo** au fil des ans.
 `,
   keywords: "charlton athletic logo, charlton logo, logo charlton, charlton fc logo, charlton fc logo png",
-  readingTime: 12
+  readingTime: 12,
 };

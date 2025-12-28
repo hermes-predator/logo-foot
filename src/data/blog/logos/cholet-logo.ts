@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const choletLogoPost: BlogPost = {
   id: 169,
+  slug: "cholet-logo", //
   title: "Logo Cholet : Histoire et Évolution de l'Écusson du SO Cholet [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Cholet, un emblème qui représente la fierté du football des Mauges depuis des décennies.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Cholet, un emblème qui représente la fierté du football des Mauges depuis des décennies.",
   date: "2024-04-15",
   galleryImageId: 169,
   category: "logos",
@@ -73,5 +74,6 @@ Le **Cholet football logo** s'adapte à différents usages :
 - Protection des zones
 - Utilisations autorisées
 - Variations permises`,
-  keywords: "logo cholet, cholet logo, cholet foot logo, cholet football logo, so cholet logo, football cholet, club foot cholet, cholet sport",
+  keywords:
+    "logo cholet, cholet logo, cholet foot logo, cholet football logo, so cholet logo, football cholet, club foot cholet, cholet sport",
 };

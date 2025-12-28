@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cesenaLogoPost: BlogPost = {
   id: 157, // ID unique qui n'est pas déjà utilisé
+  slug: "cesena-logo", //
   title: "Logo Cesena : Histoire et Évolution de l'Emblème du Club Romagnol [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Cesena, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Cesena, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-04",
   galleryImageId: 157,
   content: `# L'Histoire Fascinante du **Cesena Logo** : Évolution et Symbolisme
@@ -72,7 +73,8 @@ En définitive, le **logo cesena** représente bien plus qu'un simple emblème s
 Que vous soyez un supporter de longue date ou simplement un amateur de design sportif, le **logo ac cesena** offre un fascinant exemple de la façon dont les emblèmes sportifs peuvent devenir de puissants vecteurs d'identité collective. Le **cesena fc logo**, avec son hippocampe distinctif et ses couleurs noir et blanc, continue de représenter avec fierté un club qui, malgré les hauts et les bas inhérents au football, reste fidèle à son héritage et à ses supporters.
 
 Dans le vaste paysage des logos de football italien, le **logo cesena** occupe ainsi une place unique et mérite d'être reconnu pour sa richesse symbolique et son authenticité - des qualités qui font écho à l'essence même du club qu'il représente.`,
-  keywords: "cesena logo, logo cesena, cesena fc logo, logo ac cesena, logo football cesena, cesena calcio logo, embleme cesena, ecusson cesena fc, hippocampe cesena logo, cesena football club logo, ac cesena emblem, logo cesena serie a, cesena fc emblem, stemma cesena fc, cesena club logo histoire",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cesena logo, logo cesena, cesena fc logo, logo ac cesena, logo football cesena, cesena calcio logo, embleme cesena, ecusson cesena fc, hippocampe cesena logo, cesena football club logo, ac cesena emblem, logo cesena serie a, cesena fc emblem, stemma cesena fc, cesena club logo histoire",
+  category: "logos",
+  subCategory: "club-logos",
 };

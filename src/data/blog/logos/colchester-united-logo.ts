@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const colchesterUnitedLogoPost: BlogPost = {
   id: 174,
+  slug: "colchester-united-logo", //
   title: "**Logo Colchester United** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Colchester United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Colchester United à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Colchester United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Colchester United à travers les années.",
   date: "2024-04-20",
   galleryImageId: 174,
   category: "logos",
@@ -46,5 +47,6 @@ L'emblème est devenu un symbole de fierté pour les générations de supporters
 ## Conclusion
 
 Le **logo Colchester United** est bien plus qu'un simple identifiant visuel : c'est le gardien d'une histoire riche, le symbole d'une communauté unie et le porte-étendard des ambitions du club. Son design équilibré entre tradition et modernité en fait un emblème intemporel qui continuera d'inspirer les générations futures de supporters.`,
-  keywords: "**logo colchester united**:10, **colchester united logo**:10, **colchester united fc logo**:10, logo colchester united",
+  keywords:
+    "**logo colchester united**:10, **colchester united logo**:10, **colchester united fc logo**:10, logo colchester united",
 };

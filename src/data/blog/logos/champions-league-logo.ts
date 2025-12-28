@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const championsLeagueLogoPost: BlogPost = {
   id: 159,
+  slug: "uefa-champions-league-logo", //
   title: "Logo UEFA Champions League : Histoire & Design de l'Emblème Européen [2024]",
-  excerpt: "Analyse complète du logo de l'UEFA Champions League : histoire, signification et évolution de l'emblème le plus prestigieux du football européen.",
+  excerpt:
+    "Analyse complète du logo de l'UEFA Champions League : histoire, signification et évolution de l'emblème le plus prestigieux du football européen.",
   date: "2024-05-15",
   galleryImageId: 159,
   content: `# L'Histoire Fascinante du **Logo Ligue des Champions**
@@ -71,6 +73,7 @@ Les innovations technologiques offriront de nouvelles possibilités d'expression
 Malgré ces évolutions techniques inévitables, la force du **logo ligue des champions png** réside dans sa capacité à transmettre des émotions et des valeurs qui transcendent les générations. L'héritage symbolique accumulé au fil des décennies continuera d'être préservé, même lorsque des adaptations formelles seront nécessaires pour répondre aux nouvelles sensibilités visuelles.
 
 Le **logo uefa ligue des champions**, dans sa simplicité magistrale et sa force symbolique, transcende aujourd'hui largement le cadre sportif. Il est devenu l'emblème universel de l'excellence et de l'accomplissement, un symbole que les plus grands clubs européens rêvent d'arborer sur leur maillot. Son design intemporel continuera sans doute d'inspirer et de faire rêver les générations futures de passionnés de football à travers le monde entier.`,
-  keywords: "logo champions league, champions league logo, logo uefa champions league, ucl logo, champions league emblem, logo ligue des champions",
-  category: 'competition-logos'
+  keywords:
+    "logo champions league, champions league logo, logo uefa champions league, ucl logo, champions league emblem, logo ligue des champions",
+  category: "competition-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cittadellaLogoPost: BlogPost = {
   id: 170, // ID unique qui n'est pas déjà utilisé
+  slug: "cittadella-logo", //
   title: "Logo Cittadella : Histoire et Évolution de l'Emblème du Club Italien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Cittadella, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Cittadella, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-11",
   galleryImageId: 170,
   content: `# L'Histoire Fascinante du **Cittadella Logo** : Évolution et Symbolisme
@@ -80,7 +81,8 @@ En définitive, le **cittadella logo** représente bien plus qu'un simple emblè
 Que vous soyez un supporter de longue date ou simplement un amateur de design sportif, le **cittadella calcio logo** offre un fascinant exemple de la façon dont les emblèmes sportifs peuvent devenir de puissants vecteurs d'identité collective. Le **logo as cittadella**, avec ses murailles distinctives et ses couleurs grenat et bleu, continue de représenter avec fierté un club qui, malgré les hauts et les bas inhérents au football, reste fidèle à son héritage et à ses supporters.
 
 Dans le vaste paysage des logos de football italien, le **logo de foot cittadella** occupe ainsi une place unique et mérite d'être reconnu pour sa richesse symbolique et son authenticité - des qualités qui font écho à l'essence même du club qu'il représente. Le **nuovo logo cittadella calcio** continue cette tradition tout en portant l'identité visuelle du club vers l'avenir.`,
-  keywords: "cittadella logo, cittadella logo png, logo cittadella, cittadella calcio logo, logo as cittadella, logo de foot cittadella, nuovo logo cittadella calcio, embleme cittadella, ecusson cittadella calcio, cittadella football club logo, calcio cittadella emblem, logo cittadella serie b, cittadella fc emblem, stemma cittadella calcio, cittadella club logo histoire",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cittadella logo, cittadella logo png, logo cittadella, cittadella calcio logo, logo as cittadella, logo de foot cittadella, nuovo logo cittadella calcio, embleme cittadella, ecusson cittadella calcio, cittadella football club logo, calcio cittadella emblem, logo cittadella serie b, cittadella fc emblem, stemma cittadella calcio, cittadella club logo histoire",
+  category: "logos",
+  subCategory: "club-logos",
 };

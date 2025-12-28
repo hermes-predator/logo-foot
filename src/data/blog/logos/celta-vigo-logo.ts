@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const celtaVigoLogoPost: BlogPost = {
   id: 154, // ID unique qui n'est pas déjà utilisé
+  slug: "celta-vigo-logo", //
   title: "Logo Celta Vigo : Histoire et Design de l'Emblème Galicien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Celta Vigo : origines, symbolisme et évolution de l'emblème emblématique du club galicien de football espagnol.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Celta Vigo : origines, symbolisme et évolution de l'emblème emblématique du club galicien de football espagnol.",
   date: "2024-05-17",
   galleryImageId: 154,
   content: `# L'Histoire Fascinante du **Logo Celta Vigo**
@@ -65,7 +66,8 @@ L'approche du club concernant l'évolution future du **logo celta vigo** semble 
 À travers les époques et les générations, le **logo celta vigo** a su s'imposer comme l'un des emblèmes les plus distinctifs du football espagnol. Sa combinaison unique d'éléments traditionnels galiciens et de design contemporain fait du **celta vigo logo png** un cas d'étude fascinant dans l'univers des identités visuelles sportives.
 
 Pour les passionnés de football et de design sportif, comprendre la symbolique et l'évolution du **logo celta vigo** offre un aperçu précieux de la façon dont un emblème sportif peut transcender sa fonction première pour devenir un véritable marqueur culturel et identitaire. Plus qu'un simple identifiant visuel, le **celta de vigo logo** reste un témoignage vivant de l'âme et des valeurs d'un club historique du football espagnol.`,
-  keywords: "logo celta vigo, celta de vigo logo, celta vigo logo, celta vigo logo png, logo celta vigo png, celta vigo logo foot, logo de foot celta vigo, logo foot celta vigo, logo png celta vigo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo celta vigo, celta de vigo logo, celta vigo logo, celta vigo logo png, logo celta vigo png, celta vigo logo foot, logo de foot celta vigo, logo foot celta vigo, logo png celta vigo",
+  category: "logos",
+  subCategory: "club-logos",
 };

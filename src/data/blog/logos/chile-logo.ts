@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const chileLogoPost: BlogPost = {
   id: 167,
+  slug: "chili-logo", //
   title: "Logo Chili : Histoire et Symbolisme de l'Emblème du Football Chilien",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale du Chili, sa symbolique et son évolution à travers les décennies dans cette analyse complète.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale du Chili, sa symbolique et son évolution à travers les décennies dans cette analyse complète.",
   date: "2024-06-05",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   galleryImageId: 167,
   content: `# **Logo Chili** : L'Histoire de l'Emblème de La Roja
 
@@ -88,5 +89,6 @@ Les futures itérations du **chile logo png** devront relever le défi de rester
 Le **logo chili** transcende largement sa fonction première d'identifiant visuel pour devenir un véritable symbole culturel qui résonne profondément avec l'identité nationale chilienne. À travers ses évolutions successives, cet emblème a su préserver son essence tout en s'adaptant aux exigences de chaque époque.
 
 Pour les joueurs qui le portent sur leurs maillots, les supporters qui l'arborent fièrement et les millions de Chiliens qui suivent passionnément les exploits de La Roja, le **logo du chili foot** représente un héritage précieux et un symbole d'unité nationale. Plus qu'un simple design, c'est le gardien visuel d'une riche tradition footballistique qui continue d'inspirer les générations futures.`,
-  keywords: "logo chili, chile logo, logo du chili, logo chile, logo foot chili, logo chili foot, chile logo png, logo du chili foot, chile football logo, logo chili foot png"
+  keywords:
+    "logo chili, chile logo, logo du chili, logo chile, logo foot chili, logo chili foot, chile logo png, logo du chili foot, chile football logo, logo chili foot png",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const chapecoenseLogoPost: BlogPost = {
   id: 161,
+  slug: "chapecoense-logo", //
   title: "**Logo Chapecoense** : Histoire et Signification de l'Emblème du Club Brésilien [2024]",
-  excerpt: "Découvrez l'histoire émouvante du **logo Chapecoense**, un symbole de résilience et de renaissance dans le football brésilien. Une analyse détaillée de l'évolution du **Chapecoense logo**.",
+  excerpt:
+    "Découvrez l'histoire émouvante du **logo Chapecoense**, un symbole de résilience et de renaissance dans le football brésilien. Une analyse détaillée de l'évolution du **Chapecoense logo**.",
   date: "2024-04-22",
   galleryImageId: 161,
   content: `# L'Histoire Émouvante du **Logo Chapecoense**
@@ -38,7 +39,8 @@ Le **logo noir chapecoense** aujourd'hui symbolise un renouveau constant. Il ref
 ## Conclusion
 
 Le **logo chapecoense** transcende son rôle d'emblème sportif pour devenir un symbole universel de résilience et d'espoir dans le football brésilien. Il continue d'inspirer les générations de supporters et de rappeler l'importance des valeurs humaines dans le sport.`,
-  keywords: "logo chapecoense, chapecoense logo, chapecoense logo png, logo chapecoense png, logo noir chapecoense, football brésilien, club brésilien",
+  keywords:
+    "logo chapecoense, chapecoense logo, chapecoense logo png, logo chapecoense png, logo noir chapecoense, football brésilien, club brésilien",
   category: "logos",
-  subCategory: "brazilian-clubs"
+  subCategory: "brazilian-clubs",
 };

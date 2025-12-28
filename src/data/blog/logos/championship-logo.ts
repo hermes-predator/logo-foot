@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const championshipLogoPost: BlogPost = {
   id: 160,
+  slug: "championship-logo", //
   title: "Logo Championship : Histoire et Design de l'Emblème de la Ligue Anglaise [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Championship : origines, évolution et symbolisme de l'emblème de la prestigieuse deuxième division anglaise.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Championship : origines, évolution et symbolisme de l'emblème de la prestigieuse deuxième division anglaise.",
   date: "2024-05-15",
   galleryImageId: 160,
   content: `# L'Histoire Fascinante du **Logo Championship**
@@ -54,7 +55,8 @@ Cette rigueur dans l'application garantit que le **football championship logo** 
 Les **championship team logos** qui accompagnent l'emblème de la compétition forment un écosystème visuel riche et diversifié. Chaque club apporte sa propre histoire et identité, créant une mosaïque visuelle qui reflète la richesse et la diversité de cette compétition historique.
 
 Alors que le Championship poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines dans le football anglais, fait du **logo championship** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football britannique.`,
-  keywords: "logo championship, championship logo, championship team logos, efl championship logo, logo championship png, logo efl championship, the championship logo, football championship logo",
+  keywords:
+    "logo championship, championship logo, championship team logos, efl championship logo, logo championship png, logo efl championship, the championship logo, football championship logo",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

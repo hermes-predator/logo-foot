@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const chelseaLogoPost: BlogPost = {
   id: 165,
+  slug: "chelsea-logo", //
   title: "Logo Chelsea : Histoire et Evolution du Design [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Chelsea : origines, évolution et signification de l'emblème emblématique du club londonien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Chelsea : origines, évolution et signification de l'emblème emblématique du club londonien.",
   date: "2024-04-05",
   galleryImageId: 165,
   content: `# L'Histoire Fascinante du **Logo Chelsea**
@@ -62,8 +63,8 @@ Cette continuité visuelle du **logo Chelsea Football Club** a permis de mainten
 Aujourd'hui, lorsqu'un supporter arbore fièrement le **logo Chelsea** sur un maillot ou une écharpe, il ne s'agit pas seulement d'afficher son soutien à une équipe de football, mais de s'inscrire dans une tradition centenaire et de partager des valeurs communes avec des millions d'autres fans à travers le monde.
 
 Le **logo Chelsea** continue ainsi d'écrire son histoire, évoluant subtilement au fil des années tout en restant fidèle à ses racines, à l'image d'un club qui a su se transformer en puissance mondiale tout en préservant son identité londonienne distincte représentée par le **logo de Chelsea**.`,
-  keywords: "logo chelsea, chelsea logo, logo chelsea fc, fc chelsea logo, logos chelsea, logo chelsea football club, logo of chelsea, chelsea fc logo, chelsea fc logo png, chelsea football club logo png, chelsea logo png, logo chelsea png, chelsea football club logo, chelsea club logo, chelsea football logo, logo de chelsea",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo chelsea, chelsea logo, logo chelsea fc, fc chelsea logo, logos chelsea, logo chelsea football club, logo of chelsea, chelsea fc logo, chelsea fc logo png, chelsea football club logo png, chelsea logo png, logo chelsea png, chelsea football club logo, chelsea club logo, chelsea football logo, logo de chelsea",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

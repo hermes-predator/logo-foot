@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const celticGlasgowLogoPost: BlogPost = {
   id: 155,
+  slug: "celtic-glasgow-logo", //
   title: "Logo Celtic Glasgow : Histoire et Evolution de l'Emblème Mythique Écossais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Celtic Glasgow : origines, évolution et symbolisme de l'emblème emblématique du club écossais à la riche tradition.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Celtic Glasgow : origines, évolution et symbolisme de l'emblème emblématique du club écossais à la riche tradition.",
   date: "2024-05-25",
   galleryImageId: 155,
   content: `# L'Histoire Fascinante du **Logo Celtic Glasgow**
@@ -102,7 +103,8 @@ Le **logo Celtic Glasgow** est bien plus qu'un simple emblème sportif – c'est
 Sa capacité à évoluer tout en préservant son essence est remarquable et témoigne de l'équilibre parfait entre respect des traditions et adaptation aux exigences modernes. Pour les millions de supporters à travers le monde, ce n'est pas seulement un logo – c'est l'incarnation graphique d'une passion et d'une fierté qui se transmet de génération en génération.
 
 Que ce soit brodé sur le maillot d'un joueur, affiché fièrement au Celtic Park ou recherché en ligne sous forme de **logo Celtic Glasgow png**, cet emblème continuera sans aucun doute à symboliser l'excellence, la fierté et les valeurs d'un club dont l'héritage dépasse largement le cadre du football.`,
-  keywords: "logo celtic glasgow, glasgow celtic logo, logo glasgow celtic, celtic glasgow logo, celtic glasgow fc logo, celtic glasgow football club logo, celtic glasgow logo png, emblème celtic glasgow, écusson celtic glasgow",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo celtic glasgow, glasgow celtic logo, logo glasgow celtic, celtic glasgow logo, celtic glasgow fc logo, celtic glasgow football club logo, celtic glasgow logo png, emblème celtic glasgow, écusson celtic glasgow",
+  category: "logos",
+  subCategory: "club-logos",
 };

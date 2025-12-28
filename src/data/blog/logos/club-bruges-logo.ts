@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const clubBrugesLogoPost: BlogPost = {
   id: 172, // ID unique pour ce nouvel article
+  slug: "club-bruges-logo", //
   title: "Logo Club Bruges : Histoire et Évolution de l'Emblème du Club Belge [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Club Bruges, ses origines et son évolution. Téléchargez le logo Club Bruges PNG et explorez la symbolique de cet emblème iconique du football belge.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Club Bruges, ses origines et son évolution. Téléchargez le logo Club Bruges PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-26", // Date de publication
   galleryImageId: 172,
   content: `# L'Histoire Complète du **Logo Club Bruges**
@@ -102,7 +103,8 @@ La gestion de l'équilibre entre commercialisation et préservation de l'authent
 En définitive, le **club bruges logo** incarne parfaitement la dualité essentielle de tout grand emblème sportif : il est à la fois un repère stable dans un monde en perpétuel changement et une entité vivante qui évolue avec son temps. Cette capacité à transcender les époques tout en restant pertinent fait du **logo club bruges png** un exemple remarquable de design sportif réussi.
 
 Pour les générations de supporters passées, présentes et futures, le **logo club de bruges** continuera de représenter bien plus qu'un simple graphisme - il restera ce point focal autour duquel se cristallisent les émotions collectives, les souvenirs de victoires mémorables et l'espoir de succès futurs. Dans le cœur des fans comme sur les maillots des joueurs, le **logo png club bruges** poursuivra sa mission essentielle : incarner visuellement l'âme d'un club de football historique qui a marqué et continue de marquer l'histoire du sport belge.`,
-  keywords: "club bruges logo, logo club bruges, club bruges logo png, logo club de bruges, logo png club bruges, écusson club bruges, histoire logo club bruges, emblème club bruges, télécharger logo club bruges",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  keywords:
+    "club bruges logo, logo club bruges, club bruges logo png, logo club de bruges, logo png club bruges, écusson club bruges, histoire logo club bruges, emblème club bruges, télécharger logo club bruges",
+  category: "logos",
+  subCategory: "other-european-clubs",
 };

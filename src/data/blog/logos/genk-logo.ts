@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const genkLogoPost: BlogPost = {
   id: 277, // ID unique pour ce nouvel article
+  slug: "genk-krc-logo", //
   title: "Logo KRC Genk : Histoire et Évolution de l'Emblème du Club Belge [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo KRC Genk, ses origines et son évolution. Téléchargez le logo Genk PNG et explorez la symbolique de cet emblème iconique du football belge.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo KRC Genk, ses origines et son évolution. Téléchargez le logo Genk PNG et explorez la symbolique de cet emblème iconique du football belge.",
   date: "2024-07-27", // Date de publication
   galleryImageId: 277,
   content: `# L'Histoire Complète du **KRC Genk Logo**
@@ -104,7 +105,8 @@ En définitive, le **krc genk logo** représente un excellent exemple de la faç
 Pour les générations actuelles et futures de supporters, le **logo genk** continuera d'incarner les valeurs d'un club ambitieux et fier de ses origines. Qu'il s'agisse du **racing genk logo** brodé sur un maillot officiel ou du **logo de foot genk** affiché sur un écran de smartphone, cet emblème restera le point de ralliement visuel d'une communauté passionnée unie par son amour pour le Racing Genk.
 
 La force du **logo krc genk** réside finalement dans sa capacité à évoquer instantanément un sentiment d'appartenance et de fierté chez ceux qui s'identifient au club. C'est cette dimension émotionnelle, au-delà des considérations purement esthétiques, qui fait du **logo png genk** un élément central et indispensable de l'identité du Racing Genk dans le paysage footballistique belge et européen.`,
-  keywords: "krc genk logo, genk logo, logo genk, logo krc genk, racing genk logo, logo genk png, genk fc logo png, logo de foot genk, logo krc genk png, logo png genk, logo racing genk",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  keywords:
+    "krc genk logo, genk logo, logo genk, logo krc genk, racing genk logo, logo genk png, genk fc logo png, logo de foot genk, logo krc genk png, logo png genk, logo racing genk",
+  category: "logos",
+  subCategory: "other-european-clubs",
 };

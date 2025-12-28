@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const flamengoLogoPost: BlogPost = {
   id: 260,
+  slug: "flamengo-logo", //
   title: "Logo Flamengo : Histoire et Évolution de l'Emblème du Club Brésilien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Flamengo : des origines à aujourd'hui, évolution et signification de l'emblème du club le plus populaire du Brésil, symbole du football brésilien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Flamengo : des origines à aujourd'hui, évolution et signification de l'emblème du club le plus populaire du Brésil, symbole du football brésilien.",
   date: "2024-06-02",
   galleryImageId: 260,
   content: `# L'Histoire Fascinante du **Flamengo Logo**
@@ -74,7 +75,8 @@ Le **logo flamengo** a parcouru un chemin remarquable, depuis ses premières inc
 Pour les générations futures de footballeurs et supporters brésiliens, le **flamengo logo png** continuera d'incarner l'excellence, la passion et la fierté nationale. Alors que le club poursuit son développement vers de nouveaux sommets, son emblème distinctif restera le témoin visuel de cette aventure sportive exceptionnelle qui a déjà marqué l'histoire du football mondial.
 
 Que ce soit dans sa version officielle utilisée par le club ou dans ses nombreuses déclinaisons comme le **logo flamengo fc**, l'emblème du Clube de Regatas do Flamengo a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, témoignant de la capacité d'un club brésilien à créer un symbole sportif puissant, durable et mondialement reconnu.`,
-  keywords: "flamengo logo, logo flamengo, flamengo logo png, logo de flamengo, logo flamengo fc, equipe de foot flamengo logo, flamengo football logo, logo club foot flamengo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "flamengo logo, logo flamengo, flamengo logo png, logo de flamengo, logo flamengo fc, equipe de foot flamengo logo, flamengo football logo, logo club foot flamengo",
+  category: "logos",
+  subCategory: "club-logos",
 };

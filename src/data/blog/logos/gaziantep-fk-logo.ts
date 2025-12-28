@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gaziantepFkLogoPost: BlogPost = {
   id: 276,
+  slug: "gaziantep-fk-logo", //
   title: "**Gaziantep FK Logo** : Histoire et Évolution de l'Emblème du Club Anatolien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Gaziantep FK logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Gaziantep FK logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
   galleryImageId: 276,
   content: `# Histoire du **Gaziantep FK Logo**
@@ -75,6 +76,6 @@ Le **logo gaziantep** s'utilise sur de nombreux supports :
 - Adaptabilité multiformat
 - Protection de la marque`,
   keywords: "gaziantep fk logo, gaziantep logo, logo gaziantep fk",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

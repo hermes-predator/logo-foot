@@ -1,14 +1,16 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const frosinoneLogoPost: BlogPost = {
   id: 273, // ID unique pour cet article
+  slug: "frosinone-logo", //
   title: "Logo Frosinone Calcio : Histoire et Évolution de l'Emblème du Club Italien",
   date: "2024-07-18",
   category: "logos",
   subCategory: "club-logos",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Frosinone Calcio, emblème du club de football italien de Serie A qui représente fièrement la ville de Frosinone.",
-  keywords: "frosinone calcio logo, frosinone logo, logo frosinone, logo frosinone calcio, frosinone logo png, logo de foot frosinone, logo png frosinone, club italien, Serie A, canaris, jaune et bleu",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Frosinone Calcio, emblème du club de football italien de Serie A qui représente fièrement la ville de Frosinone.",
+  keywords:
+    "frosinone calcio logo, frosinone logo, logo frosinone, logo frosinone calcio, frosinone logo png, logo de foot frosinone, logo png frosinone, club italien, Serie A, canaris, jaune et bleu",
   galleryImageId: 273,
   content: `
 # L'Histoire du **Logo Frosinone Calcio** : Une Identité Visuelle Jaune et Bleue
@@ -120,5 +122,5 @@ Alors que Frosinone Calcio continue d'écrire son histoire dans le football ital
 À l'avenir, le **logo Frosinone Calcio** pourrait connaître de nouvelles évolutions pour s'adapter aux tendances du design et aux besoins marketing du club. Cependant, on peut s'attendre à ce que les éléments fondamentaux - les couleurs jaune et bleu, la référence à l'année de fondation, et l'attachement à la ville de Frosinone - restent au cœur de toute future version du **logo Frosinone**.
 
 Que vous soyez un supporter de longue date ou simplement curieux de découvrir les emblèmes du football italien, le **logo Frosinone** représente un exemple fascinant de la façon dont un symbole visuel peut incarner l'histoire, les valeurs et les aspirations d'un club de football.
-`
+`,
 };

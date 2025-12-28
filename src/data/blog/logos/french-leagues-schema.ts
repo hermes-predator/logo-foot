@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const frenchLeaguesSchemaPost: BlogPost = {
   id: 270,
+  slug: "french-league-logo-organisation", //
   title: "Schéma des Ligues Françaises de Football : Structure et Organisation [2024]",
-  excerpt: "Découvrez l'organisation pyramidale complète du football français: divisions, promotions, relégations et connections entre les différents niveaux du football hexagonal.",
+  excerpt:
+    "Découvrez l'organisation pyramidale complète du football français: divisions, promotions, relégations et connections entre les différents niveaux du football hexagonal.",
   date: "2024-04-20",
   galleryImageId: 270,
   content: `# Le **Schéma des Ligues Françaises** de Football : Une Organisation Pyramidale Complexe
@@ -58,30 +59,32 @@ Le **schéma des ligues françaises** représente un équilibre remarquable entr
 Si des ajustements continueront certainement d'être nécessaires pour adapter ce **schéma français** aux réalités économiques et sportives contemporaines, les principes fondamentaux de cette **organisation du football français** - mérite sportif, fluidité entre les niveaux, et accessibilité pour tous - demeurent des valeurs cardinales qui font la force du modèle hexagonal.
 
 Cette structure, enviée par de nombreux pays, constitue l'un des atouts majeurs du **football français organisation**, contribuant à la fois au rayonnement de l'élite et à la vitalité du football amateur, véritable poumon de ce sport en France.`,
-  keywords: "schéma des ligues françaises, schéma du football français, hiérarchie du football français, organisation du football en France, schéma des compétitions françaises, organisation des ligues françaises, pyramide du football français, structure du football français, schéma des divisions françaises, organisation des championnats français, schéma organisationnel du football français, football français organisation, schéma du championnat français, football en france organisation, schéma français de football, pyramide française de football, schéma des coupes françaises, structure organisationnelle du football français, schéma français du football, schéma économique du football français, organisation du football professionnel français, schéma actuel du football français, système français de football, schéma organisationnel français, organisation économique du football français, schéma français, pyramide du football en France, organisation de la ligue française, organisation pyramidale française",
-  category: 'logos',
-  subCategory: 'league-logos'
+  keywords:
+    "schéma des ligues françaises, schéma du football français, hiérarchie du football français, organisation du football en France, schéma des compétitions françaises, organisation des ligues françaises, pyramide du football français, structure du football français, schéma des divisions françaises, organisation des championnats français, schéma organisationnel du football français, football français organisation, schéma du championnat français, football en france organisation, schéma français de football, pyramide française de football, schéma des coupes françaises, structure organisationnelle du football français, schéma français du football, schéma économique du football français, organisation du football professionnel français, schéma actuel du football français, système français de football, schéma organisationnel français, organisation économique du football français, schéma français, pyramide du football en France, organisation de la ligue française, organisation pyramidale française",
+  category: "logos",
+  subCategory: "league-logos",
 };
 
 // Export the schema data
 export const ligue1LogoSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Logo Ligue 1 : Histoire Complète et Evolution du Design",
-  "description": "Découvrez l'histoire fascinante du logo Ligue 1 : son évolution à travers les époques, de la première division au partenariat avec Uber Eats.",
-  "image": "https://logo-foot.com/blog-images/31.png",
-  "author": {
+  headline: "Logo Ligue 1 : Histoire Complète et Evolution du Design",
+  description:
+    "Découvrez l'histoire fascinante du logo Ligue 1 : son évolution à travers les époques, de la première division au partenariat avec Uber Eats.",
+  image: "https://logo-foot.com/blog-images/31.png",
+  author: {
     "@type": "Organization",
-    "name": "Logo Foot"
+    name: "Logo Foot",
   },
-  "publisher": {
+  publisher: {
     "@type": "Organization",
-    "name": "Logo Foot",
-    "logo": {
+    name: "Logo Foot",
+    logo: {
       "@type": "ImageObject",
-      "url": "https://logo-foot.com/favicon.ico"
-    }
+      url: "https://logo-foot.com/favicon.ico",
+    },
   },
-  "datePublished": "2024-03-18",
-  "dateModified": "2024-07-10"
+  datePublished: "2024-03-18",
+  dateModified: "2024-07-10",
 };

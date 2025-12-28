@@ -1,13 +1,15 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gabonLogoPost: BlogPost = {
   id: 274,
+  slug: "gabon-logo", //
   title: "**Logo Gabon Foot** : Histoire et Signification de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire complète du **logo Gabon**, ses couleurs et sa signification. Analyse détaillée de l'évolution du **logo du Gabon** à travers les années et son impact sur l'identité footballistique nationale.",
+  excerpt:
+    "Découvrez l'histoire complète du **logo Gabon**, ses couleurs et sa signification. Analyse détaillée de l'évolution du **logo du Gabon** à travers les années et son impact sur l'identité footballistique nationale.",
   date: "2024-03-28",
   galleryImageId: 274,
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   content: `# **Logo Gabon Foot** : Histoire et Symbolisme de l'Emblème National
 
 ![**Logo Gabon**](https://logo-foot.com/blog-images/42.png)
@@ -138,5 +140,6 @@ Ces évolutions potentielles permettront au **logo du Gabon** de rester pertinen
 Le **logo Gabon** de football transcende sa fonction première d'emblème sportif pour devenir un puissant symbole d'identité nationale. À travers ses couleurs, son symbolisme et son évolution, le **logo du Gabon** raconte l'histoire d'un pays et de sa passion pour le football.
 
 Alors que le **Gabon foot logo PNG** continue de circuler sur les plateformes numériques et que l'équipe nationale poursuit son parcours international, cet emblème reste au cœur de l'identité footballistique gabonaise, un point de ralliement pour les supporters et un symbole de fierté pour toute une nation.`,
-  keywords: "logo gabon, logo du gabon, gabon logo, gabon foot logo, gabon football logo, logo gabon foot, gabon foot logo png, gabon logo png",
+  keywords:
+    "logo gabon, logo du gabon, gabon logo, gabon foot logo, gabon football logo, logo gabon foot, gabon foot logo png, gabon logo png",
 };

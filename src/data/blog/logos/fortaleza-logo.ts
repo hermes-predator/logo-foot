@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fortalezaLogoPost: BlogPost = {
   id: 266,
+  slug: "fortaleza-logo", //
   title: "**Logo Fortaleza** : Histoire et Design de l'Emblème du Leão [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Fortaleza**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **logo do Fortaleza**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Fortaleza**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **logo do Fortaleza**.",
   date: "2024-04-22",
   galleryImageId: 266,
   content: `# L'Histoire Passionnante du **Logo Fortaleza**
@@ -42,7 +43,8 @@ Aujourd'hui, le **Fortaleza logo** est au cœur d'une stratégie de marque conte
 ## Conclusion
 
 Le **logo Fortaleza** transcende son rôle d'emblème sportif pour devenir un symbole culturel fort. Il continue d'inspirer les générations de supporters et incarne les valeurs fondamentales du club : tradition, passion et excellence.`,
-  keywords: "logo fortaleza, fortaleza logo, fortaleza logo png, logo do fortaleza, football brésilien, clube do ceara, emblème fortaleza",
+  keywords:
+    "logo fortaleza, fortaleza logo, fortaleza logo png, logo do fortaleza, football brésilien, clube do ceara, emblème fortaleza",
   category: "logos",
-  subCategory: "brazilian-clubs"
+  subCategory: "brazilian-clubs",
 };

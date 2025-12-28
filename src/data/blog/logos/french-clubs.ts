@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const frenchClubsPost: BlogPost = {
   id: 269,
+  slug: "french-club-logo", //
   title: "Histoire des Logos du Football Français : PSG, OM, OL et Plus [2024]",
-  excerpt: "Découvrez l'histoire des logos du football français. Des blasons historiques aux designs modernes, explorez l'évolution des écussons de la Ligue 1.",
+  excerpt:
+    "Découvrez l'histoire des logos du football français. Des blasons historiques aux designs modernes, explorez l'évolution des écussons de la Ligue 1.",
   date: "2024-03-01",
   galleryImageId: 269,
   content: `Les Logos du Football Français
@@ -94,6 +95,7 @@ Tendances Design Ligue 1
 - Expériences AR/VR
 - Fan tokens
 - Digital merchandising`,
-  keywords: "logo club foot francais, logo foot france, france foot logo, logo clubs français, logo ligue 1, logo foot png, logo equipe france",
-  category: 'logos'
+  keywords:
+    "logo club foot francais, logo foot france, france foot logo, logo clubs français, logo ligue 1, logo foot png, logo equipe france",
+  category: "logos",
 };

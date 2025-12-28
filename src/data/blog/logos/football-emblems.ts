@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const footballEmblemsPost: BlogPost = {
   id: 264,
+  slug: "football-emblems-signification-logo", //
   title: "Football Emblems : Histoire et Signification des Écussons de Clubs [Guide 2024]",
-  excerpt: "Découvrez l'histoire, la signification et l'évolution des emblèmes de football à travers les époques. Un guide complet sur les écussons qui définissent l'identité des clubs.",
+  excerpt:
+    "Découvrez l'histoire, la signification et l'évolution des emblèmes de football à travers les époques. Un guide complet sur les écussons qui définissent l'identité des clubs.",
   date: "2024-09-05",
   galleryImageId: 264,
   content: `# L'Univers Fascinant des **Football Emblems** : Histoire et Symbolisme
@@ -315,6 +317,6 @@ Ce qui est certain, c'est que ces symboles visuels resteront au cœur de l'expé
 
 Dans un monde où l'attention est de plus en plus fragmentée et où les loyautés sont constamment remises en question, la capacité d'un **football emblem** à susciter instantanément un sentiment d'appartenance et de fierté demeure l'un des atouts les plus précieux du sport le plus populaire de la planète.`,
   keywords: "football club emblems, french football emblem, football emblem, football emblem design, embleme football",
-  category: 'technical',  // Changement de 'logos' à 'technical'
-  subCategory: 'technical',  // Modification du sous-catégorie également
+  category: "technical", // Changement de 'logos' à 'technical'
+  subCategory: "technical", // Modification du sous-catégorie également
 };

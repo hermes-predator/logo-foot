@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const germanClubsPost: BlogPost = {
   id: 280,
+  slug: "german-clubs-logo-history", //
   title: "Logos du Football Allemand : Histoire et Design de la Bundesliga [2024]",
-  excerpt: "Découvrez l'histoire des logos du football allemand. Du Bayern Munich à Dortmund, explorez l'évolution des emblèmes de la Bundesliga et leur signification.",
+  excerpt:
+    "Découvrez l'histoire des logos du football allemand. Du Bayern Munich à Dortmund, explorez l'évolution des emblèmes de la Bundesliga et leur signification.",
   date: "2024-03-10",
   galleryImageId: 280, // Adding gallery image reference
   content: `# Logos du Football Allemand : Tradition et Innovation
@@ -166,7 +167,8 @@ Cette dualité illustre parfaitement l'approche allemande : respect des traditio
 - Communautés mondiales
 
 Les logos des clubs allemands et le logo Bundesliga lui-même continueront d'évoluer, combinant héritage footballistique allemand et innovation constante, pour rester à la pointe du design sportif mondial.`,
-  keywords: "logos bundesliga, logo allemagne foot, club foot allemand logo, logo club allemand foot, logo foot allemagne, design bundesliga, logo bundesliga",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logos bundesliga, logo allemagne foot, club foot allemand logo, logo club allemand foot, logo foot allemagne, design bundesliga, logo bundesliga",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fluminenseLogoPost: BlogPost = {
   id: 263,
+  slug: "fluminense-logo", //
   title: "**Fluminense Logo** : Histoire et Évolution de l'Emblème Carioca [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Fluminense**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Fluminense logo PNG**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Fluminense**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Fluminense logo PNG**.",
   date: "2024-04-22",
   galleryImageId: 263,
   content: `# L'Histoire Fascinante du **Fluminense Logo**
@@ -42,7 +43,8 @@ Le **club foot logo Fluminense** continue d'évoluer tout en préservant son ess
 ## Conclusion
 
 Le **Fluminense logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une institution centenaire qui a marqué l'histoire du football brésilien et continue d'inspirer les nouvelles générations de supporters.`,
-  keywords: "logo fluminense, fluminense logo, fluminense logo png, logo fluminense png, fluminense logo vector, logo de fluminense, logo fluminense fc, club foot logo fluminense, football brésilien, club brésilien",
+  keywords:
+    "logo fluminense, fluminense logo, fluminense logo png, logo fluminense png, fluminense logo vector, logo de fluminense, logo fluminense fc, club foot logo fluminense, football brésilien, club brésilien",
   category: "logos",
   subCategory: "non-european-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fribourgLogoPost: BlogPost = {
   id: 271,
+  slug: "fribourg-logo", //
   title: "Logo SC Fribourg : Histoire et Symboles du Club de Bundesliga [2024]",
-  excerpt: "Découvrez l'histoire et la signification du logo SC Fribourg, emblème de ce club historique de la Bundesliga allemande. Analyse complète du design et de l'évolution de cet écusson emblématique.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo SC Fribourg, emblème de ce club historique de la Bundesliga allemande. Analyse complète du design et de l'évolution de cet écusson emblématique.",
   date: "2024-04-16",
   galleryImageId: 271,
   content: `# L'Histoire Fascinante du Logo SC Fribourg
@@ -66,7 +67,8 @@ Le **logo SC Fribourg** incarne parfaitement l'identité unique de ce club qui a
 L'évolution mesurée du **logo Fribourg** au fil des années témoigne d'une gestion équilibrée entre respect du patrimoine et adaptation aux exigences modernes. Cette approche réfléchie se reflète également dans la philosophie générale du club.
 
 Alors que le SC Fribourg continue d'écrire son histoire sur les terrains allemands et européens, son emblème distinctive continuera d'être un point de ralliement pour ses supporters et un symbole de fierté pour toute une région, prouvant qu'il est possible de préserver son âme tout en évoluant avec son temps.`,
-  keywords: "fribourg logo, logo fribourg, fc fribourg logo png, fribourg logo foot, fribourg logo png, logo de foot fribourg, logo png fribourg, logo sc fribourg",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "fribourg logo, logo fribourg, fc fribourg logo png, fribourg logo foot, fribourg logo png, logo de foot fribourg, logo png fribourg, logo sc fribourg",
+  category: "logos",
+  subCategory: "club-logos",
 };

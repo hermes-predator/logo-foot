@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const fiorentinaLogoPost: BlogPost = {
   id: 259,
+  slug: "fiorentina-logo", //
   title: "Logo Fiorentina : Histoire et Évolution du Symbole Violet [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Fiorentina : origines, évolution et signification de l'emblème emblématique du club de Florence.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Fiorentina : origines, évolution et signification de l'emblème emblématique du club de Florence.",
   date: "2024-04-08",
   galleryImageId: 259,
   content: `# L'Histoire Fascinante du **Logo Fiorentina**
@@ -64,7 +65,8 @@ Cette continuité visuelle a permis de maintenir un lien émotionnel fort avec l
 Aujourd'hui, lorsqu'un supporter arbore fièrement le **logo fiorentina** sur un maillot ou une écharpe, il ne s'agit pas seulement d'afficher son soutien à une équipe de football, mais de s'inscrire dans une tradition centenaire et de partager l'héritage culturel florentin avec le monde entier.
 
 Le **fiorentina logo** continue ainsi d'évoluer, s'adaptant aux tendances contemporaines tout en honorant son histoire, à l'image d'un club qui cultive sa singularité dans le paysage footballistique italien. Entre tradition et modernité, le giglio violet reste un symbole puissant qui incarne l'âme de Florence et la passion de ses supporters.`,
-  keywords: "logo fiorentina, fiorentina logo, acf fiorentina logo, fiorentina logo png, logo acf fiorentina, logo de fiorentina, logo de la fiorentina, logo fiorentina png, logo png fiorentina, la viola logo, emblème fiorentina, giglio fiorentina, écusson fiorentina",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo fiorentina, fiorentina logo, acf fiorentina logo, fiorentina logo png, logo acf fiorentina, logo de fiorentina, logo de la fiorentina, logo fiorentina png, logo png fiorentina, la viola logo, emblème fiorentina, giglio fiorentina, écusson fiorentina",
+  category: "logos",
+  subCategory: "club-logos",
 };

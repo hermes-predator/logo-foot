@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const getafeLogoPost: BlogPost = {
   id: 282,
+  slug: "getafe-logo", //
   title: "Logo Getafe CF : Histoire et Design de l'Emblème Azulón [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Getafe CF : des origines à aujourd'hui, évolution et signification de l'emblème du club madrilène de Liga.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Getafe CF : des origines à aujourd'hui, évolution et signification de l'emblème du club madrilène de Liga.",
   date: "2024-05-20",
   galleryImageId: 282,
   content: `# L'Histoire Fascinante du Logo Getafe
@@ -46,7 +47,8 @@ Cette notoriété internationale croissante du **logo de foot getafe** témoigne
 Tout en conservant ses éléments fondamentaux, le **logo getafe foot** continue d'évoluer subtilement pour répondre aux défis du football moderne. Les récentes versions du **getafe logo** montrent une tendance vers une simplification graphique qui facilite son utilisation sur les supports digitaux tout en renforçant son impact visuel instantané.
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo getafe cf** un exemple intéressant de continuité dans le design sportif. Alors que de nombreux clubs optent pour des ruptures radicales dans leur identité visuelle, le **logo getafe png** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire récente tout en regardant vers l'avenir.`,
-  keywords: "getafe logo, getafe logo png, logo getafe, logo getafe png, logo getafe cf, logo de foot getafe, logo getafe foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "getafe logo, getafe logo png, logo getafe, logo getafe png, logo getafe cf, logo de foot getafe, logo getafe foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

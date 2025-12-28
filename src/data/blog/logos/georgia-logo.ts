@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const georgiaLogoPost: BlogPost = {
   id: 279,
+  slug: "georgie-logo", //
   title: "**Logo Géorgie** : Histoire et Évolution de l'Emblème des Kremlin Warriors [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale géorgienne : des origines à aujourd'hui, évolution et signification de cet emblème du Caucase.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale géorgienne : des origines à aujourd'hui, évolution et signification de cet emblème du Caucase.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Le **logo géorgie foot** intègre subtilement des références à l'histoire et
 ## Un Symbole d'Unité Nationale
 
 Plus qu'un simple emblème sportif, le **géorgie logo** est devenu un puissant symbole d'unité nationale. Dans un pays où le football joue un rôle social crucial, le **logo géorgie** représente les valeurs de collaboration, de persévérance et d'excellence qui sont au cœur de l'identité géorgienne. Sur les maillots des joueurs comme dans le cœur des supporters, ce logo incarne les rêves et les aspirations d'un peuple passionné.`,
-  keywords: "logo géorgie, géorgie logo, logo géorgie foot, géorgie logo png, georgia logo, georgia football logo, georgia logo png"
+  keywords:
+    "logo géorgie, géorgie logo, logo géorgie foot, géorgie logo png, georgia logo, georgia football logo, georgia logo png",
 };

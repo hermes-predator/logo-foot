@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const genoaLogoPost: BlogPost = {
   id: 278,
+  slug: "genoa-logo", //
   title: "Logo Genoa FC : Histoire et Évolution de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Genoa FC : des origines à aujourd'hui, évolution et signification de l'emblème du plus ancien club de football italien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Genoa FC : des origines à aujourd'hui, évolution et signification de l'emblème du plus ancien club de football italien.",
   date: "2024-05-29",
   galleryImageId: 278,
   content: `# L'Histoire Fascinante du **Logo Genoa**
@@ -74,7 +75,8 @@ En conclusion, le **logo genoa** représente bien plus qu'une simple identité v
 À travers ses évolutions successives, le **genoa logo** a su rester fidèle à son essence tout en s'adaptant aux changements de son environnement. Cette capacité à évoluer sans se dénaturer est peut-être la plus grande force du **logo genoa fc** et le secret de sa pertinence continue dans un monde sportif en constante mutation.
 
 Pour les générations futures de supporters du Genoa, le **logo genoa png** continuera d'incarner les valeurs fondamentales du club : passion, résilience et fierté d'appartenance à la plus ancienne institution footballistique d'Italie. Dans les tribunes du stade Luigi Ferraris comme sur les écrans des supporters du monde entier, le griffon rouge et bleu du **genoa logo foot** poursuivra sa mission de rassembler et d'inspirer tous ceux qui partagent l'amour du plus ancien club de football italien.`,
-  keywords: "genoa fc logo, genoa logo, logo genoa, logo genoa fc, genoa logo png, logo genoa png, genoa calcio logo, genoa fc logo png, logo genoa calcio, genoa logo foot, logo club genoa, logo de foot genoa",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "genoa fc logo, genoa logo, logo genoa, logo genoa fc, genoa logo png, logo genoa png, genoa calcio logo, genoa fc logo png, logo genoa calcio, genoa logo foot, logo club genoa, logo de foot genoa",
+  category: "logos",
+  subCategory: "club-logos",
 };

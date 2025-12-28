@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const germanyLogoPost: BlogPost = {
   id: 281,
+  slug: "allemagne-logo", //
   title: "Logo Allemagne : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Allemagne, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus grandes nations du football.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Allemagne, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus grandes nations du football.",
   date: "2024-05-12",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   galleryImageId: 281,
   content: `# Logo Allemagne : L'Histoire de l'Emblème National Allemand
 
@@ -110,5 +111,6 @@ Le **logo equipe allemagne foot** est bien plus qu'un simple emblème sportif �
 L'évolution mesurée de cet emblème au fil des décennies illustre parfaitement comment une fédération peut embrasser la modernité tout en honorant son patrimoine historique. La force du **logo Allemagne** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments nationaux intemporels.
 
 Dans un monde du football où l'identité nationale est parfois diluée face à la mondialisation, l'emblème allemand rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde.`,
-  keywords: "logo allemagne, allemagne logo, logo allemagne foot, logo foot allemagne, allemagne foot logo, logo football allemagne, allemagne logo foot, logo de l'allemagne, logo equipe allemagne, logo allemagne football, logo equipe allemagne foot, logo equipe d'allemagne, allemagne logo png",
+  keywords:
+    "logo allemagne, allemagne logo, logo allemagne foot, logo foot allemagne, allemagne foot logo, logo football allemagne, allemagne logo foot, logo de l'allemagne, logo equipe allemagne, logo allemagne football, logo equipe allemagne foot, logo equipe d'allemagne, allemagne logo png",
 };

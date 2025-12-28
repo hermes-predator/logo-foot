@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const footballLogosHistoryPost: BlogPost = {
   id: 265,
+  slug: "tous-les-logos-de-foot-history", //
   title: "Tous les Logos de Foot : Histoire et Évolution des Emblèmes de Football [2024]",
-  excerpt: "Découvrez l'histoire fascinante de tous les logos de foot : origines, évolution et signification des emblèmes qui représentent l'identité visuelle des clubs à travers le monde.",
+  excerpt:
+    "Découvrez l'histoire fascinante de tous les logos de foot : origines, évolution et signification des emblèmes qui représentent l'identité visuelle des clubs à travers le monde.",
   date: "2024-06-01",
   galleryImageId: 265,
   content: `# Guide Complet sur **Tous les Logos de Foot** en 2024
@@ -91,7 +93,8 @@ Les considérations environnementales et sociales influencent également l'évol
 Les **tous les logos de foot** sont bien plus que de simples designs : ils sont des symboles d'identité, des gardiens d'histoire et des vecteurs d'émotions pour des communautés entières de supporters. À travers leurs couleurs, leurs formes et leurs symboles, les **tous les logo de club de foot du monde** racontent des histoires de passion, de tradition et d'appartenance qui transcendent le simple cadre sportif.
 
 Dans un monde en constante évolution, ces **logo tous les logos foot** continuent de jouer un rôle essentiel dans le maintien du lien émotionnel entre les clubs et leurs supporters. Qu'ils évoluent subtilement ou restent fidèles à leur design historique, les **tous les logos de foot du monde** demeurent l'incarnation visuelle de valeurs et d'histoires partagées qui font la richesse unique du football mondial.`,
-  keywords: "tous les logo de foot, tous les logos de foot, logo de tous les club de foot, tous les logos des clubs de foot, tous les clubs de foot logo, logos tous les logos foot, logo de tous les club de foot nouveau, logo de tous les plus grand clubs de foot mondial, logo tous les logo de foot, logo tous les logos foot, logos tous les logos club foot, tous les clubs et logo de foot en europe, tous les logo de club de foot du monde, tous les logos de foot du monde, logo foot, foot logo, logo de foot, logo club de foot, equipe de foot logo, logo des equipe de foot, logo des club de foot, logo des équipes de foot, club logo equipe de foot",
-  category: 'technical', // Changement de 'logos' à 'technical'
-  subCategory: 'design'
+  keywords:
+    "tous les logo de foot, tous les logos de foot, logo de tous les club de foot, tous les logos des clubs de foot, tous les clubs de foot logo, logos tous les logos foot, logo de tous les club de foot nouveau, logo de tous les plus grand clubs de foot mondial, logo tous les logo de foot, logo tous les logos foot, logos tous les logos club foot, tous les clubs et logo de foot en europe, tous les logo de club de foot du monde, tous les logos de foot du monde, logo foot, foot logo, logo de foot, logo club de foot, equipe de foot logo, logo des equipe de foot, logo des club de foot, logo des équipes de foot, club logo equipe de foot",
+  category: "technical", // Changement de 'logos' à 'technical'
+  subCategory: "design",
 };

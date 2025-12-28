@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const frontCloudPost: BlogPost = {
   id: 272,
+  slug: "front-cloud-guide-logo", //
   title: "Création Logo Foot : Guide Expert Design [2024]",
-  excerpt: "Guide complet pour créer un logo foot professionnel. Découvrez nos conseils d'experts pour concevoir l'écusson parfait pour votre club.",
+  excerpt:
+    "Guide complet pour créer un logo foot professionnel. Découvrez nos conseils d'experts pour concevoir l'écusson parfait pour votre club.",
   date: "2024-03-01",
   galleryImageId: 272,
   content: `Imaginez-vous assis devant votre écran, prêt à donner vie à l'identité visuelle de votre club de football. La création d'un logo foot est un voyage passionnant, une aventure où chaque trait, chaque couleur raconte une histoire unique. Laissez-moi vous guider à travers ce processus créatif qui transformera votre vision en réalité.
@@ -90,7 +91,8 @@ Comme un phare guidant les navires, votre logo éclairera l'avenir de votre club
 - Transmettez vos valeurs
 - Inspirez les générations futures
 - Créez un symbole intemporel`,
-  keywords: "création logo foot, design logo football, conception écusson foot, logo club football, création écusson foot",
-  category: 'logos',
-  subCategory: 'design'
+  keywords:
+    "création logo foot, design logo football, conception écusson foot, logo club football, création écusson foot",
+  category: "logos",
+  subCategory: "design",
 };

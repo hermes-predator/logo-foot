@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const galatasarayLogoPost: BlogPost = {
   id: 275,
+  slug: "galatasaray-logo", //
   title: "Logo Galatasaray : Histoire et Évolution de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Galatasaray : origines, signification et évolution de cet emblème emblématique du football turc à travers les âges.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Galatasaray : origines, signification et évolution de cet emblème emblématique du football turc à travers les âges.",
   date: "2024-04-18",
   galleryImageId: 275,
   content: `# L'Histoire Fascinante du **Logo Galatasaray**
@@ -46,8 +47,8 @@ Le **logo de galatasaray** reste ainsi un exemple remarquable de la façon dont 
 Le futur du **logo galatasaray** s'inscrit dans une continuité dynamique. Tout en respectant scrupuleusement son héritage historique, le club continue d'explorer les possibilités d'évolution subtile pour rester en phase avec son temps. Les innovations technologiques offrent de nouvelles perspectives passionnantes, comme l'intégration de l'emblème dans des expériences interactives pour les supporters.
 
 Cette capacité à évoluer tout en restant fidèle à ses racines est peut-être la plus grande force du **galatasaray logo**. Dans un monde du football en constante mutation, où les identités visuelles tendent parfois vers une uniformisation globalisée, l'emblème du club stambouliote continue de se distinguer par son caractère unique et son ancrage culturel profond.`,
-  keywords: "galatasaray logo, logo galatasaray, galatasaray logo png, emblème galatasaray, écusson galatasaray, histoire logo galatasaray, logo gs, gs logo, logo de galatasaray, galatasaray fc logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "galatasaray logo, logo galatasaray, galatasaray logo png, emblème galatasaray, écusson galatasaray, histoire logo galatasaray, logo gs, gs logo, logo de galatasaray, galatasaray fc logo",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

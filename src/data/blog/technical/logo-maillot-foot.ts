@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const logoMaillotFootPost: BlogPost = {
   id: 619,
+  slug: "logo-maillot-de-foot", //
   title: "Logo Maillot de Foot : Guide Complet des Designs [2024]",
-  excerpt: "Découvrez notre guide expert sur les logos de maillots de foot. Apprenez comment sont créés, positionnés et intégrés les logos sur les maillots de football professionnels.",
+  excerpt:
+    "Découvrez notre guide expert sur les logos de maillots de foot. Apprenez comment sont créés, positionnés et intégrés les logos sur les maillots de football professionnels.",
   date: "2024-04-09",
   content: `
 # **Logo Maillot de Foot** : L'Art et la Technique des Écussons sur les Tenues
@@ -177,7 +178,8 @@ L'avenir verra probablement l'émergence de **logos sur maillot de foot** encore
 
 Pour les professionnels du design, du marketing sportif ou les passionnés de football, disposer d'une collection complète de **logos maillot de foot** de haute qualité est un atout inestimable. Notre pack premium offre précisément cette ressource, bien supérieure aux collections de PDF gratuites disponibles en ligne.
 `,
-  keywords: "logo maillot de foot, logos maillot foot, logo sur maillot de foot, logos de maillot de foot, logos sur maillot de foot, écusson maillot, design maillot football, broderie logo football, logos clubs maillots",
-  category: 'technical',
-  subCategory: 'technical-logos'
+  keywords:
+    "logo maillot de foot, logos maillot foot, logo sur maillot de foot, logos de maillot de foot, logos sur maillot de foot, écusson maillot, design maillot football, broderie logo football, logos clubs maillots",
+  category: "technical",
+  subCategory: "technical-logos",
 };

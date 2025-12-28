@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const footballDesignGuide: BlogPost = {
   id: 616,
+  slug: "football-design-guide", //
   title: "Guide Complet du Football Design : Principes et Tendances 2024",
-  excerpt: "Découvrez les fondamentaux du football design moderne. Principes, tendances et méthodologies pour créer une identité visuelle percutante pour les clubs de football.",
+  excerpt:
+    "Découvrez les fondamentaux du football design moderne. Principes, tendances et méthodologies pour créer une identité visuelle percutante pour les clubs de football.",
   date: "2024-04-13",
   content: `# Guide Complet du **Football Design** en 2024
 
@@ -132,7 +133,8 @@ Le **football design** moderne transcende largement l'esthétique pour devenir u
 Un **football club design** réussi combine harmonieusement héritage et innovation, tout en s'adaptant aux multiples contextes d'utilisation contemporains. Le **design logo football** n'est plus une simple représentation statique, mais un écosystème visuel vivant qui évolue avec son temps tout en préservant l'essence de l'identité qu'il représente.
 
 Dans un sport où l'émotion et l'appartenance sont centrales, le **football design** joue un rôle essentiel pour traduire visuellement ces valeurs et créer des connexions durables avec les supporters du monde entier.`,
-  keywords: "football design, football club design, design logo football, identité visuelle foot, branding sportif, logo club football, tendances design football, charte graphique football, design maillot foot, football moderne design",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "football design, football club design, design logo football, identité visuelle foot, branding sportif, logo club football, tendances design football, charte graphique football, design maillot foot, football moderne design",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

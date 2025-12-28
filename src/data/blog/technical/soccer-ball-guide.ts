@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const soccerBallGuide: BlogPost = {
   id: 622,
+  slug: "comment-dessiner-ballon-de-foot", //
   title: "Comment Dessiner un Ballon de Foot : Guide Complet [2024]",
-  excerpt: "Guide détaillé pour apprendre à dessiner un ballon de football : techniques, proportions, et astuces pour créer des designs réalistes et stylisés.",
+  excerpt:
+    "Guide détaillé pour apprendre à dessiner un ballon de football : techniques, proportions, et astuces pour créer des designs réalistes et stylisés.",
   date: "2024-03-23",
   galleryImageId: 622,
   content: `Guide du Dessin de Ballon de Football
@@ -65,7 +67,8 @@ Guide Pratique
 - Astuces pros
 - Outils conseillés
 - Techniques rapides`,
-  keywords: "dessin ballon de foot, dessin de ballon de foot, dessiner ballon football, dessin football, technique dessin ballon, ballon foot dessin, comment dessiner ballon foot",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "dessin ballon de foot, dessin de ballon de foot, dessiner ballon football, dessin football, technique dessin ballon, ballon foot dessin, comment dessiner ballon foot",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

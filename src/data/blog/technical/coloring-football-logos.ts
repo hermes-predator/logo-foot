@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coloringFootballLogos: BlogPost = {
   id: 614,
+  slug: "coloriage-logo-foot", //
   title: "**Coloriage Logo Foot** : Techniques et Astuces [Guide 2024]",
-  excerpt: "Guide complet pour réaliser des **coloriage logo foot** parfaits. Techniques, astuces et modèles pour **dessiner logo foot** de la Ligue 1 et des grands clubs européens.",
+  excerpt:
+    "Guide complet pour réaliser des **coloriage logo foot** parfaits. Techniques, astuces et modèles pour **dessiner logo foot** de la Ligue 1 et des grands clubs européens.",
   date: "2024-03-25",
   content: `# **Coloriage Logo Foot** : Guide Ultime pour Tous les Passionnés
 
@@ -171,7 +172,8 @@ Le **coloriage logo foot** est bien plus qu'un simple passe-temps. C'est une fa�
 Que vous soyez intéressé par le **coloriage logo foot Ligue 1** ou par les emblèmes des clubs internationaux, que vous préfériez le **dessin logo foot facile** ou les reproductions détaillées, cette activité vous permettra de vous connecter différemment à votre sport favori.
 
 Alors sortez vos crayons, choisissez votre équipe préférée, et lancez-vous dans l'aventure du **coloriage logo de foot** !`,
-  keywords: "coloriage foot logo, coloriage logo foot, coloriage logo foot ligue 1, coloriage logo de foot, dessin logo foot, dessin logo foot facile",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "coloriage foot logo, coloriage logo foot, coloriage logo foot ligue 1, coloriage logo de foot, dessin logo foot, dessin logo foot facile",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

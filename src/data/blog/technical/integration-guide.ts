@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const integrationGuide: BlogPost = {
   id: 618,
+  slug: "integration-logos-football", //
   title: "Intégration des Logos Football HD : Guide Technique Complet [2024]",
-  excerpt: "Guide technique détaillé pour intégrer des logos de football HD dans vos projets. Optimisation, formats, résolutions et meilleures pratiques pour un rendu professionnel.",
+  excerpt:
+    "Guide technique détaillé pour intégrer des logos de football HD dans vos projets. Optimisation, formats, résolutions et meilleures pratiques pour un rendu professionnel.",
   date: "2024-02-25",
   content: `Guide pratique pour utiliser efficacement les logos de football haute définition dans vos projets digitaux et print.
 
@@ -81,7 +82,8 @@ Astuces et Conseils
 Conclusion
 
 L'utilisation professionnelle des logos de football nécessite une approche méthodique et des outils adaptés pour garantir une qualité optimale sur tous les supports.`,
-  keywords: "logos HD football, logos haute définition foot, intégration logos foot, logos football qualité, pack logo foot, écusson foot HD, guide technique logos",
-  category: 'technical',
-  subCategory: 'file-formats'
+  keywords:
+    "logos HD football, logos haute définition foot, intégration logos foot, logos football qualité, pack logo foot, écusson foot HD, guide technique logos",
+  category: "technical",
+  subCategory: "file-formats",
 };

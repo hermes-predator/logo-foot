@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const howToDrawSoccerBall: BlogPost = {
   id: 617,
+  slug: "dessiner-ballon-de-foot", //
   title: "Comment Dessiner un Ballon de Foot : Guide Complet et Facile [2024]",
-  excerpt: "Apprenez à dessiner un ballon de football facilement étape par étape avec notre guide détaillé : techniques professionnelles, astuces simples et méthodes pour créer un dessin de ballon réaliste.",
+  excerpt:
+    "Apprenez à dessiner un ballon de football facilement étape par étape avec notre guide détaillé : techniques professionnelles, astuces simples et méthodes pour créer un dessin de ballon réaliste.",
   date: "2024-05-28",
   content: `# Guide Complet pour **Dessiner un Ballon de Foot**
 
@@ -147,8 +148,9 @@ Même en suivant un guide détaillé sur **comment dessiner un ballon de foot fa
 Apprendre à **dessiner un ballon de foot** est un voyage qui combine compréhension géométrique, sens artistique et patience. En suivant ce guide étape par étape, vous avez maintenant toutes les clés pour créer des illustrations de ballons de football impressionnantes, qu'elles soient réalistes ou stylisées.
 
 La pratique régulière est essentielle pour perfectionner votre technique. N'hésitez pas à expérimenter différents styles et approches pour trouver celle qui vous convient le mieux. Avec de la persévérance, vous maîtriserez parfaitement **comment dessiner un ballon de foot facilement** et pourrez partager votre talent avec fierté.`,
-  keywords: "dessiner un ballon de foot, comment dessiner un ballon de foot, dessin d un ballon de foot, comment dessiner un ballon de foot facile, comment dessiner un ballon de foot facilement",
-  category: 'technical',
-  subCategory: 'design-guidelines',
-  galleryImageId: 159
+  keywords:
+    "dessiner un ballon de foot, comment dessiner un ballon de foot, dessin d un ballon de foot, comment dessiner un ballon de foot facile, comment dessiner un ballon de foot facilement",
+  category: "technical",
+  subCategory: "design-guidelines",
+  galleryImageId: 159,
 };

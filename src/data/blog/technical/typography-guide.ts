@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const typographyGuide: BlogPost = {
   id: 624,
+  slug: "typographie-logos-football", //
   title: "Guide Complet : Typographie des Logos de Football [2024]",
-  excerpt: "Découvrez les secrets de la typographie dans les logos de football. Police de caractères, lisibilité et impact visuel pour un design de logo réussi.",
+  excerpt:
+    "Découvrez les secrets de la typographie dans les logos de football. Police de caractères, lisibilité et impact visuel pour un design de logo réussi.",
   date: "2024-03-13",
   galleryImageId: 624,
   content: `La Typographie dans les Logos de Football
@@ -54,7 +55,8 @@ Tendances Actuelles
 - Cross-platform
 
 L'importance d'une typographie bien pensée ne peut être sous-estimée dans la création d'une identité de marque forte pour les clubs de football.`,
-  keywords: "typographie logo foot, police caractère football, design typographique sport, fonts logo football, typographie club foot",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "typographie logo foot, police caractère football, design typographique sport, fonts logo football, typographie club foot",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const motionDesignGuide: BlogPost = {
   id: 621,
+  slug: "motion-design-logos-football", //
   title: "Motion Design pour Logos de Football : Guide Technique [2024]",
-  excerpt: "Guide complet sur l'animation des logos de football. Découvrez les techniques et principes du motion design appliqués aux identités visuelles sportives.",
+  excerpt:
+    "Guide complet sur l'animation des logos de football. Découvrez les techniques et principes du motion design appliqués aux identités visuelles sportives.",
   date: "2024-03-07",
   content: `Motion Design et Logos de Football
 
@@ -93,7 +94,8 @@ Innovation 2024
 - Interactive logos
 - Dynamic systems
 - Smart animation`,
-  keywords: "motion design football, animation logo foot, logos animés football, motion graphics sport, animation emblèmes foot",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "motion design football, animation logo foot, logos animés football, motion graphics sport, animation emblèmes foot",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

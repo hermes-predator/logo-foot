@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const minimalDesignGuide: BlogPost = {
   id: 620,
+  slug: "design-minimalist-football", //
   title: "Design Minimaliste dans le Football : Guide Technique [2024]",
-  excerpt: "Guide complet sur l'approche minimaliste dans le design des logos de football. De la Juventus à l'Inter Milan, découvrez les principes du minimalisme appliqué aux marques sportives.",
+  excerpt:
+    "Guide complet sur l'approche minimaliste dans le design des logos de football. De la Juventus à l'Inter Milan, découvrez les principes du minimalisme appliqué aux marques sportives.",
   date: "2024-03-09",
   content: `Design Minimaliste dans le Football
 
@@ -93,7 +94,8 @@ Future Trends
 - NFT design
 - Web3 adaptation
 - Métaverse use`,
-  keywords: "design minimaliste football, logo minimal foot, design épuré football, simplicité logo sport, minimalisme foot, guide design minimal",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "design minimaliste football, logo minimal foot, design épuré football, simplicité logo sport, minimalisme foot, guide design minimal",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

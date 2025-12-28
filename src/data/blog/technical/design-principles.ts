@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const designPrinciples: BlogPost = {
   id: 615,
+  slug: "design-logo-foot", //
   title: "Principes de Design des Logos de Football : Guide Technique 2024",
-  excerpt: "Guide technique complet sur les principes de design des logos de football. De la conception à l'application, maîtrisez les fondamentaux du design sportif.",
+  excerpt:
+    "Guide technique complet sur les principes de design des logos de football. De la conception à l'application, maîtrisez les fondamentaux du design sportif.",
   date: "2024-03-04",
   content: `Principes Fondamentaux du Design de Logo Football
 
@@ -79,7 +80,8 @@ Perspectives Futures
 - Technologies nouvelles
 - Marchés émergents
 - Besoins digitaux`,
-  keywords: "design logo football, principes design sport, création logo foot, guide technique logo, conception emblème foot",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "design logo football, principes design sport, création logo foot, guide technique logo, conception emblème foot",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

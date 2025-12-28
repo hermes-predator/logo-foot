@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const soccerGuidePost: BlogPost = {
   id: 623,
+  slug: "soccer-vs-football", //
   title: "Soccer vs Football: Understanding International Football Terms [2024]",
-  excerpt: "Complete guide to understand soccer and football terminology differences between American and European football cultures.",
+  excerpt:
+    "Complete guide to understand soccer and football terminology differences between American and European football cultures.",
   date: "2024-03-22",
   galleryImageId: 623,
   content: `Soccer Term Guide
@@ -66,7 +67,8 @@ Professional Context
 - UEFA vocabulary
 - FIFA standards
 - Global events`,
-  keywords: "soccer term, soccer vs football, football soccer, soccer meaning, soccer definition, soccer football difference, soccer vocabulary, soccer terms guide",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "soccer term, soccer vs football, football soccer, soccer meaning, soccer definition, soccer football difference, soccer vocabulary, soccer terms guide",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

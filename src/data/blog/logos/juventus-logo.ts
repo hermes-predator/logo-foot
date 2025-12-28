@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const juventusLogoPost: BlogPost = {
   id: 329,
+  slug: "juventus-logo", //
   title: "Logo Juventus : Histoire Complète et Evolution du Design [2024]",
-  excerpt: "Plongez dans l'histoire fascinante du logo Juventus, un voyage à travers le temps qui révèle comment un simple écusson est devenu l'un des symboles les plus audacieux du football moderne.",
+  excerpt:
+    "Plongez dans l'histoire fascinante du logo Juventus, un voyage à travers le temps qui révèle comment un simple écusson est devenu l'un des symboles les plus audacieux du football moderne.",
   date: "2024-04-03",
   galleryImageId: 329,
   content: `# L'Histoire Fascinante du **Logo Juventus**
@@ -56,7 +57,8 @@ Plus qu'un simple emblème, le **logo juventus** actuel incarne la vision strat�
 À l'image de sa devise "Fino Alla Fine" (Jusqu'au bout), la Juventus a osé pousser les limites du design sportif traditionnel pour créer un **juventus fc logo** qui, bien que controversé, restera dans l'histoire comme l'un des rebranding les plus audacieux du monde sportif.
 
 Le **logo juventus** d'aujourd'hui n'est pas simplement un symbole graphique, c'est la manifestation visuelle d'une philosophie, d'une ambition et d'une vision qui dépassent largement les frontières du terrain de jeu, propulsant le **juventus football club logo** dans une dimension résolument contemporaine et internationale.`,
-  keywords: "logo juventus, juventus logo, juventus fc logo, juventus football club logo, logos juventus, logo juventus fc, logo fc juventus, logo de la juventus, juventus logo png, logo juventus png, juventus logos, nouveau logo juventus, logo de juventus",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo juventus, juventus logo, juventus fc logo, juventus football club logo, logos juventus, logo juventus fc, logo fc juventus, logo de la juventus, juventus logo png, logo juventus png, juventus logos, nouveau logo juventus, logo de juventus",
+  category: "logos",
+  subCategory: "club-logos",
 };

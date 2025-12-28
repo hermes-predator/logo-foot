@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const krasnodarLogoPost: BlogPost = {
   id: 336,
+  slug: "krasnodar-logo", //
   title: "**Krasnodar Logo** : Histoire et Évolution de l'Emblème du Club Russe [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Krasnodar**, son évolution et la symbolique unique de cet emblème emblématique du football russe.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Krasnodar**, son évolution et la symbolique unique de cet emblème emblématique du football russe.",
   date: "2024-04-15",
   galleryImageId: 336,
   content: `# Histoire du **Krasnodar Logo**
@@ -74,7 +75,8 @@ Le **logo krasnodar fc** s'adapte parfaitement à tous les supports :
 - Guidelines précises
 - Versions adaptables
 - Protection de la marque`,
-  keywords: "krasnodar logo, logo krasnodar, fc krasnodar logo, krasnodar fc logo, logo de foot krasnodar russie, logo fk krasnodar, logo foot krasnodar, logo krasnodar fc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "krasnodar logo, logo krasnodar, fc krasnodar logo, krasnodar fc logo, logo de foot krasnodar russie, logo fk krasnodar, logo foot krasnodar, logo krasnodar fc",
+  category: "logos",
+  subCategory: "club-logos",
 };

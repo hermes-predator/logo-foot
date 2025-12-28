@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const laLigaLogoPost: BlogPost = {
   id: 338,
+  slug: "la-liga-logo", //
   title: "Logo La Liga : L'Évolution de l'Emblème du Football Espagnol [2024]",
-  excerpt: "Découvrez l'histoire complète du logo La Liga, son évolution au fil des années et la symbolique derrière l'identité visuelle de la prestigieuse ligue espagnole de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo La Liga, son évolution au fil des années et la symbolique derrière l'identité visuelle de la prestigieuse ligue espagnole de football.",
   date: "2024-05-13",
   galleryImageId: 338,
   content: `# L'Histoire Fascinante du Logo La Liga
@@ -39,7 +41,8 @@ Utilisé dans des animations 3D, des applications mobiles ou des jeux vidéo, le
 Au-delà de sa fonction d'identification, le **logo La Liga** incarne les valeurs fondamentales du football espagnol : excellence technique, passion, créativité et fair-play. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'une compétition qui a donné au monde certains des plus grands joueurs et clubs de l'histoire du football.
 
 Alors que La Liga continue d'écrire son histoire et de renforcer sa position parmi les championnats d'élite, le **LaLiga logo** reste le témoin visuel de son héritage glorieux et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel mondial.`,
-  keywords: "logo la liga, la liga logo, la liga logo png, logo de la liga, la liga nouveau logo, la liga logo png, logo la liga png, liga española logo, logo liga española, football espagnol logo, laliga santander logo, emblème liga, design football espagnol",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo la liga, la liga logo, la liga logo png, logo de la liga, la liga nouveau logo, la liga logo png, logo la liga png, liga española logo, logo liga española, football espagnol logo, laliga santander logo, emblème liga, design football espagnol",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

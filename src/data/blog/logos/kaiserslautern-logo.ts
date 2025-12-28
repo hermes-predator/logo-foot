@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const kaiserslauternLogoPost: BlogPost = {
   id: 330,
+  slug: "kaiserslautern-logo", //
   title: "**Logo Kaiserslautern** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Kaiserslautern**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire allemand.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Kaiserslautern**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire allemand.",
   date: "2025-04-14",
   galleryImageId: 330,
   content: `# L'Histoire Fascinante du **Logo Kaiserslautern**
@@ -71,7 +72,8 @@ Alors que le 1. FC Kaiserslautern continue d'écrire son histoire sur les terrai
 Pour des millions de supporters en Allemagne et à travers le monde, le **Kaiserslautern logo** représente bien plus qu'un simple emblème sportif – il incarne une passion, une tradition et une fierté qui transcendent le simple cadre footballistique.
 
 Le **logo 1. FC Kaiserslautern** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – le "K" emblématique et les couleurs rouge et blanc – restera un symbole intemporel du football allemand et de l'héritage culturel de la ville de Kaiserslautern.`,
-  keywords: "logo kaiserslautern:20, logo 1 fc kaiserslautern:20, logo fc kaiserslautern:20, kaiserslautern logo:20, kaiserslautern fc logo:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  keywords:
+    "logo kaiserslautern:20, logo 1 fc kaiserslautern:20, logo fc kaiserslautern:20, kaiserslautern logo:20, kaiserslautern fc logo:10",
+  category: "logos",
+  subCategory: "german-clubs",
 };

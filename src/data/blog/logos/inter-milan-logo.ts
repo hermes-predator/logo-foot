@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const interMilanLogoPost: BlogPost = {
   id: 316,
+  slug: "inter-milan-logo", //
   title: "Logo Inter Milan : Histoire et Evolution du Design [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'Inter Milan : origines, évolution et signification de l'emblème mythique du club nerazzurri.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'Inter Milan : origines, évolution et signification de l'emblème mythique du club nerazzurri.",
   date: "2024-04-04",
   galleryImageId: 316,
   content: `# L'Histoire Fascinante du **Logo Inter Milan**
@@ -58,7 +59,8 @@ Plus qu'un simple emblème, le **logo inter milan** actuel incarne la vision str
 À l'image de ses valeurs d'excellence et d'innovation, l'Inter Milan a su faire évoluer son **logo inter milan** pour répondre aux défis du 21e siècle tout en honorant son riche héritage. Le **inter milan football club logo** d'aujourd'hui n'est pas simplement un symbole graphique, c'est la manifestation visuelle d'une histoire centenaire, d'une ambition et d'une vision qui dépassent largement les frontières du terrain de jeu.
 
 Que ce soit arboré fièrement par les tifosi dans les tribunes du Giuseppe Meazza, affiché sur les réseaux sociaux ou imprimé sur des produits lifestyle à travers le monde, le **inter milan logo** continue de symboliser l'excellence, la passion et l'héritage unique du club nerazzurri, propulsant le **logo inter fc** dans une dimension résolument internationale.`,
-  keywords: "logo inter milan, inter milan fc logo, inter milan logo, inter milan football club logo, inter milan logo png, logo de inter de milan, logo inter de milan, logo inter milan png, inter de milan logo, logo inter fc, fc inter logo, inter fc logo, inter logo, logo inter",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo inter milan, inter milan fc logo, inter milan logo, inter milan football club logo, inter milan logo png, logo de inter de milan, logo inter de milan, logo inter milan png, inter de milan logo, logo inter fc, fc inter logo, inter fc logo, inter logo, logo inter",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const istanbulBasaksehirLogoPost: BlogPost = {
   id: 322,
+  slug: "istanbul-basaksehir-logo", //
   title: "Logo Istanbul Basaksehir : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Istanbul Basaksehir : origines, évolution et signification de l'emblème du club turc qui a révolutionné le paysage footballistique d'Istanbul.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Istanbul Basaksehir : origines, évolution et signification de l'emblème du club turc qui a révolutionné le paysage footballistique d'Istanbul.",
   date: "2024-04-06",
   galleryImageId: 322,
   content: `# L'Histoire Fascinante du Logo Istanbul Basaksehir
@@ -46,7 +47,8 @@ Cette reconnaissance internationale est un atout précieux pour le développemen
 Le **logo istanbul basaksehir** représente parfaitement l'histoire récente mais intense de ce club turc. De sa conception moderne à sa palette de couleurs distinctive, chaque aspect du **basaksehir logo** a été pensé pour refléter l'ambition et la vision progressive de l'Istanbul Başakşehir FK.
 
 Alors que le club continue d'écrire son histoire sur les terrains turcs et européens, son emblème continuera d'évoluer et de gagner en reconnaissance. Le **istanbul basaksehir logo** n'est pas seulement un symbole graphique, mais la représentation visuelle d'un projet sportif qui a déjà bouleversé la hiérarchie traditionnelle du football turc.`,
-  keywords: "logo istanbul basaksehir, basaksehir logo, logo basaksehir, istanbul basaksehir logo, basaksehir logo png, logo istanbulbb, emblème basaksehir, écusson istanbul basaksehir, istanbul basaksehir emblème, basaksehir écusson, football turc logo, super lig logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo istanbul basaksehir, basaksehir logo, logo basaksehir, istanbul basaksehir logo, basaksehir logo png, logo istanbulbb, emblème basaksehir, écusson istanbul basaksehir, istanbul basaksehir emblème, basaksehir écusson, football turc logo, super lig logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

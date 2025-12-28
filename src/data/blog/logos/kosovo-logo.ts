@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const kosovoLogoPost: BlogPost = {
   id: 335,
+  slug: "kosovo-logo", //
   title: "Logo Kosovo : Histoire et Symbolisme de l'Emblème National",
-  excerpt: "Découvrez l'histoire et la signification du logo Kosovo pour l'équipe nationale de football. Analyse complète de ce symbole d'identité nationale et sportive.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo Kosovo pour l'équipe nationale de football. Analyse complète de ce symbole d'identité nationale et sportive.",
   date: "2024-05-10",
   galleryImageId: 335,
   content: `# **Logo Kosovo** : L'Histoire de l'Emblème de la Fédération de Football
@@ -72,7 +74,8 @@ Le **Kosovo logo foot** continuera sans doute d'incarner les valeurs et l'histoi
 ## Conclusion
 
 Le **logo Kosovo** est bien plus qu'un simple emblème sportif - c'est un puissant symbole d'identité nationale pour cette jeune nation. Son design moderne et significatif incarne parfaitement les aspirations sportives et culturelles du Kosovo sur la scène internationale.`,
-  keywords: "logo kosovo, kosovo logo, kosovo national football team logo, kosovo foot logo, kosovo logo foot, logo du kosovo, emblème kosovo football, fédération football kosovo",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo kosovo, kosovo logo, kosovo national football team logo, kosovo foot logo, kosovo logo foot, logo du kosovo, emblème kosovo football, fédération football kosovo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

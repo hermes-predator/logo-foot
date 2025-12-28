@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ipswichTownLogoPost: BlogPost = {
   id: 317,
+  slug: "ipswich-town-logo", //
   title: "Ipswich Town Logo : Histoire et Évolution de l'Emblème des Tractors Boys [2024]",
-  excerpt: "Découvrez l'histoire complète du logo d'Ipswich Town : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais historique.",
+  excerpt:
+    "Découvrez l'histoire complète du logo d'Ipswich Town : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais historique.",
   date: "2024-07-18",
   content: `# L'Histoire Fascinante du **Ipswich Town Logo**
 
@@ -89,7 +90,7 @@ Des versions officielles de l'**ipswich town logo png** sont disponibles sur le 
 **Le surnom "Tractor Boys" est-il lié au logo du club?**
 Le surnom "Tractor Boys" fait référence aux racines rurales et agricoles de la région du Suffolk, un héritage également représenté dans l'**ipswich town logo** par le cheval Suffolk Punch, créant ainsi une cohérence entre l'identité verbale et visuelle du club.`,
   keywords: "ipswich town logo, ipswich town logo png, logo ipswich town, ipswich town football logo",
-  category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 408
+  category: "logos",
+  subCategory: "club-logos",
+  galleryImageId: 408,
 };

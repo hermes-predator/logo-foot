@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lasPalmasLogoPost: BlogPost = {
   id: 339,
+  slug: "las-palmas-logo", //
   title: "Logo Las Palmas : Histoire et Évolution de l'Emblème du Club Canarien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Las Palmas, ses significations et son évolution à travers les années. Analyse complète de l'emblème du club des îles Canaries.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Las Palmas, ses significations et son évolution à travers les années. Analyse complète de l'emblème du club des îles Canaries.",
   date: "2024-05-27",
   galleryImageId: 339,
   content: `# L'Histoire Fascinante du **Logo Las Palmas**
@@ -50,7 +51,8 @@ Les couleurs vives du **ud las palmas logo** se retrouvent partout dans la ville
 Le **logo las palmas** continue d'évoluer subtilement tout en préservant les éléments fondamentaux qui le rendent instantanément reconnaissable. Cette capacité d'adaptation progressive sans rupture drastique témoigne d'une approche réfléchie de la gestion de l'identité visuelle du club.
 
 À travers son histoire, le **ud las palmas logo** est devenu plus qu'un simple écusson : c'est un symbole qui incarne l'esprit des îles Canaries et la passion de ses habitants pour le football. Dans un monde où les logos sportifs tendent parfois à s'uniformiser, le **las palmas logo** conserve sa singularité et son ancrage territorial, faisant la fierté de ses supporters et contribuant au rayonnement culturel de l'archipel canarien sur la scène footballistique espagnole et internationale.`,
-  keywords: "logo las palmas, las palmas fc logo, las palmas logo, las palmas logo png, logo las palmas png, logo ud las palmas, ud las palmas logo, ud las palmas logo png, las palmas foot logo, las palmas foot logo png, logo las palmas foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo las palmas, las palmas fc logo, las palmas logo, las palmas logo png, logo las palmas png, logo ud las palmas, ud las palmas logo, ud las palmas logo png, las palmas foot logo, las palmas foot logo png, logo las palmas foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

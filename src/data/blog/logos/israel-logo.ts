@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const israelLogoPost: BlogPost = {
   id: 321,
+  slug: "israel-logo", //
   title: "Logo Israël : Histoire et Design de l'Emblème de la Sélection Nationale [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Israël : origines, évolution et signification de l'emblème officiel de la fédération israélienne de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale d'Israël : origines, évolution et signification de l'emblème officiel de la fédération israélienne de football.",
   date: "2024-05-20",
   galleryImageId: 321,
   content: `# L'Histoire Passionnante du **Logo Israël**
@@ -91,7 +93,8 @@ On observe une tendance générale à la simplification des logos sportifs pour 
 Le **logo Israël** représente bien plus qu'une simple marque visuelle pour une fédération sportive - c'est un puissant symbole d'identité nationale qui s'exprime à travers le langage universel du football. De ses origines historiques à ses adaptations numériques contemporaines, le **israel logo foot** témoigne de la capacité d'un emblème sportif à incarner des valeurs collectives et à évoluer avec son temps.
 
 Alors que l'équipe nationale d'Israël continue de participer aux compétitions internationales, son **logo israel foot** reste un symbole de fierté nationale et d'aspiration sportive, facilement reconnaissable sur les terrains du monde entier.`,
-  keywords: "logo Israël, israel logo, logo of israel, logo israel foot, israel football logo, logo israel png, israel logo foot, foot israel logo, israel equipe de foot logos, emblème Israël, football israélien, sélection Israël",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo Israël, israel logo, logo of israel, logo israel foot, israel football logo, logo israel png, israel logo foot, foot israel logo, israel equipe de foot logos, emblème Israël, football israélien, sélection Israël",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

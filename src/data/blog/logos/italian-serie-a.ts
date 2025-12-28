@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const italianSerieAPost: BlogPost = {
   id: 324,
+  slug: "serie-a-italienne-logo", //
   title: "Serie A Italienne : Histoire et Organisation du Championnat [2024]",
-  excerpt: "Découvrez l'histoire fascinante de la Serie A italienne, son organisation actuelle, ses clubs emblématiques et son impact sur le football mondial.",
+  excerpt:
+    "Découvrez l'histoire fascinante de la Serie A italienne, son organisation actuelle, ses clubs emblématiques et son impact sur le football mondial.",
   date: "2024-04-21",
   galleryImageId: 324,
   content: `# **Serie A Italienne** : Histoire et Organisation du Plus Prestigieux Championnat d'Italie
@@ -66,7 +67,8 @@ Le **championnat Italien Serie A** transcende largement le cadre sportif pour s'
 Si les défis contemporains sont réels, la capacité de réinvention du **football Italien** et sa richesse technique intrinsèque garantissent que le **championnat de foot Italien** continuera d'occuper une place prépondérante dans le panthéon footballistique mondial. La passion inébranlable des tifosi et l'excellence tactique qui caractérise le **Serie A italian championship** constituent un héritage éternel que les évolutions modernes ne font qu'enrichir sans jamais le dénaturer.
 
 Dans un monde footballistique en constante évolution, la **Serie A italienne** demeure un pilier fondamental, un championnat où tradition et innovation se conjuguent pour offrir un spectacle unique qui continue de faire vibrer des millions de supporters à travers le monde.`,
-  keywords: "Serie A italienne, Serie A Italie, calcio italien, championnat italien Serie A, Serie A Italia, championnat d'Italie Serie A, Serie A de football, foot italien Serie A, Serie A championnat, calcio Serie A, ligue italienne Serie A, championnat italien, foot Serie A, Serie A foot, Serie A Italy, championnat italien de football, calcio italien Serie A, Serie A Italie foot, ligue Serie A, Serie A football italien, championnat Serie A Italien, foot italien, Serie A Italien, championnat Italien Serie A, scudetti Serie A, football Italien Serie A, Serie A Italian, championnat d'Italie de football, football Serie A, Serie A italia, Serie A championnat italien, Serie A Football, calcio Serie A italien, serie A Italie, championnat de Serie A, foot italien championnat, Serie A calcio, football Serie A Italien, championnat Italien de football, Serie A football, championnat italien foot, football italien championnat, Serie A championship, ligue italienne, championnat d'Italie Serie A, Serie A Italy football, Serie A Italian league, Serie A de Italie, football Serie A, Serie A Italy league, football italien Serie A, Serie A championnat italian, Serie A italian, Serie A italian championship",
-  category: 'logos',
-  subCategory: 'league-logos'
+  keywords:
+    "Serie A italienne, Serie A Italie, calcio italien, championnat italien Serie A, Serie A Italia, championnat d'Italie Serie A, Serie A de football, foot italien Serie A, Serie A championnat, calcio Serie A, ligue italienne Serie A, championnat italien, foot Serie A, Serie A foot, Serie A Italy, championnat italien de football, calcio italien Serie A, Serie A Italie foot, ligue Serie A, Serie A football italien, championnat Serie A Italien, foot italien, Serie A Italien, championnat Italien Serie A, scudetti Serie A, football Italien Serie A, Serie A Italian, championnat d'Italie de football, football Serie A, Serie A italia, Serie A championnat italien, Serie A Football, calcio Serie A italien, serie A Italie, championnat de Serie A, foot italien championnat, Serie A calcio, football Serie A Italien, championnat Italien de football, Serie A football, championnat italien foot, football italien championnat, Serie A championship, ligue italienne, championnat d'Italie Serie A, Serie A Italy football, Serie A Italian league, Serie A de Italie, football Serie A, Serie A Italy league, football italien Serie A, Serie A championnat italian, Serie A italian, Serie A italian championship",
+  category: "logos",
+  subCategory: "league-logos",
 };

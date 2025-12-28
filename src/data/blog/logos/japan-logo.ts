@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const japanLogoPost: BlogPost = {
   id: 326,
+  slug: "japon-logo", //
   title: "Logo Japon : Histoire et Évolution de l'Emblème du Samurai Blue [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Japon : des origines à aujourd'hui, évolution et signification de l'emblème du Samurai Blue, symbole du football japonais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Japon : des origines à aujourd'hui, évolution et signification de l'emblème du Samurai Blue, symbole du football japonais.",
   date: "2024-05-30",
   galleryImageId: 326,
   content: `# L'Histoire Fascinante du **Logo Japon**
@@ -65,7 +67,8 @@ Le **logo japon** a parcouru un chemin remarquable, depuis ses premières incarn
 Pour les générations futures de footballeurs et supporters japonais, le **japon logo** continuera d'incarner l'excellence, la persévérance et la fierté nationale. Alors que le football japonais poursuit son développement vers de nouveaux sommets, son emblème distinctif restera le témoin visuel de cette aventure sportive exceptionnelle.
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo japon png**, l'emblème national du football japonais a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, rappelant qu'une nation peut conjuguer parfaitement respect des traditions et innovation visuelle pour créer un symbole sportif puissant et durable.`,
-  keywords: "logo japon, japon logo, logo japon foot, logo de japon, logo du japon, logo foot japon, logo japon football, logo japon png, japon logo foot",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo japon, japon logo, logo japon foot, logo de japon, logo du japon, logo foot japon, logo japon football, logo japon png, japon logo foot",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

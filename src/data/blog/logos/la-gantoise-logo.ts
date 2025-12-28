@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const laGantoiseLogoPost: BlogPost = {
   id: 337, // Unique ID for this article
+  slug: "la-gantoise-logo", //
   title: "Logo La Gantoise : Histoire et Signification de l'Emblème du KAA Gent [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo La Gantoise, son design emblématique et son évolution au fil du temps. Téléchargez le logo La Gantoise en haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo La Gantoise, son design emblématique et son évolution au fil du temps. Téléchargez le logo La Gantoise en haute définition.",
   date: "2024-07-29", // Publication date
   galleryImageId: 337,
   content: `# L'Histoire Complète du **La Gantoise Logo**
@@ -152,7 +153,8 @@ En conclusion, le **logo la gantoise** représente un équilibre délicat entre 
 Le **logo kaa la gantoise** continue de servir sa fonction première - unifier et identifier une communauté de supporters - tout en s'adaptant aux nouvelles réalités du football professionnel et de la communication visuelle. Sa force réside précisément dans cette capacité à évoluer sans perdre son âme.
 
 Pour les supporters, le **la gantoise logo png** reste un symbole puissant d'appartenance et de fierté, un emblème qui transcende le simple cadre sportif pour devenir un élément de patrimoine culturel partagé. Dans un monde du football en constante évolution, le **la gantoise logo transparent** demeure un ancrage visuel stable qui relie passé, présent et futur du club gantois.`,
-  keywords: "la gantoise logo, logo la gantoise, la gantoise football logo, la gantoise logo png, la gantoise logo transparent, logo kaa la gantoise, logo la gantoise png",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  keywords:
+    "la gantoise logo, logo la gantoise, la gantoise football logo, la gantoise logo png, la gantoise logo transparent, logo kaa la gantoise, logo la gantoise png",
+  category: "logos",
+  subCategory: "other-european-clubs",
 };

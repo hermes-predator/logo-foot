@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const iraqLogoPost: BlogPost = {
   id: 319,
+  slug: "iraq-logo", //
   title: "**Logo Iraq** : L'Histoire et le Symbolisme de l'Emblème du Football Irakien",
-  date: '2025-04-26',
+  date: "2025-04-26",
   galleryImageId: 319,
-  category: 'national-logos',
-  excerpt: "Découvrez l'histoire fascinante du logo de la fédération irakienne de football, un symbole qui incarne la passion et la résilience du football irakien.",
+  category: "national-logos",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la fédération irakienne de football, un symbole qui incarne la passion et la résilience du football irakien.",
   content: `# Le **Logo Iraq** : Un Symbole de Fierté Nationale
 
 Le **logo Iraq** représente bien plus qu'un simple emblème sportif. C'est un témoignage visuel de l'histoire, de la culture et de la passion du football dans un pays qui a traversé de nombreux défis. Le **logo federation foot irak** capture l'essence de la détermination et de l'esprit de résilience qui caractérisent le football irakien.
@@ -31,6 +32,5 @@ Au fil des années, le **logo irak** est devenu bien plus qu'un simple insigne. 
 ## Conclusion
 
 Le logo de l'équipe nationale irakienne de football est un témoignage puissant de l'histoire et de l'esprit du pays. Il continue d'inspirer les générations de footballeurs et de supporters, rappelant à chacun la force et la beauté du football comme langage universel.`,
-  keywords: '**logo irak**, **logo federation foot irak**, **logo football club irak**, **logo irak png**',
+  keywords: "**logo irak**, **logo federation foot irak**, **logo football club irak**, **logo irak png**",
 };
-

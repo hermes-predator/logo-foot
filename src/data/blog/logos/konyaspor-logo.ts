@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const konyasporLogoPost: BlogPost = {
   id: 334,
+  slug: "konyaspor-logo", //
   title: "**Konyaspor Logo** : Histoire et Évolution de l'Emblème Anatolien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **konyaspor logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **konyaspor logo**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
   galleryImageId: 334,
   content: `# Histoire du **Konyaspor Logo**
@@ -75,6 +76,6 @@ Le **konyaspor logo png** s'utilise sur de nombreux supports :
 - Adaptabilité multiformat
 - Protection de la marque`,
   keywords: "konyaspor logo, konyaspor logo png, logo konyaspor, logo de foot konyaspor turquie, logo foot konyaspor",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

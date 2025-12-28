@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const irelandLogoPost: BlogPost = {
   id: 320,
+  slug: "irlande-logo", //
   title: "Logo Irlande : Histoire et Symbolisme de l'Emblème du Football Irlandais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Irlande : origines, évolution et signification de l'emblème qui représente la fierté du football irlandais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale d'Irlande : origines, évolution et signification de l'emblème qui représente la fierté du football irlandais.",
   date: "2024-04-14",
   galleryImageId: 320,
   content: `# L'Histoire Fascinante du Logo Irlande de Football
@@ -47,7 +49,8 @@ Au fil des générations, le **logo irlande** a su évoluer tout en conservant s
 Les jeunes joueurs qui rêvent de porter le maillot national s'identifient à ce **logo irlandais** bien avant leurs débuts professionnels. Pour eux comme pour les vétérans du football irlandais, cet emblème incarne l'essence même de leur passion pour le jeu et leur fierté nationale.
 
 Alors que le football irlandais continue d'écrire son histoire sur la scène internationale, le **logo irlande** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les **irlande equipe de foot logos** qui se succéderont dans le futur, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football irlandais.`,
-  keywords: "logo irlande, irlande logo, logo irlandais, logo irlande foot, logo foot irlande, logo irlande du nord, club irlandais football logo, irlande equipe de foot logos",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo irlande, irlande logo, logo irlandais, logo irlande foot, logo foot irlande, logo irlande du nord, club irlandais football logo, irlande equipe de foot logos",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

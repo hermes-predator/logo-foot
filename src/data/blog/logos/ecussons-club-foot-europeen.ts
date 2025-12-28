@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ecussonsClubFootEuropeenPost: BlogPost = {
   id: 223,
+  slug: "ecusson-club-de-foot-europeen-logo", //
   title: "Écussons Club de Foot Européen : Histoire et Design [Guide 2024]",
-  excerpt: "Découvrez l'histoire et le design des écussons club de foot européens. Analyse complète des emblèmes anglais, italiens et portugais qui font l'identité visuelle du football.",
+  excerpt:
+    "Découvrez l'histoire et le design des écussons club de foot européens. Analyse complète des emblèmes anglais, italiens et portugais qui font l'identité visuelle du football.",
   date: "2024-04-10",
   galleryImageId: 223,
   content: `# L'Art des Écussons Club de Foot Européen
@@ -113,7 +115,8 @@ Les **écussons de club de foot** européens représentent bien plus que de simp
 Qu'il s'agisse des **écussons club de foot anglais** empreints de tradition, des **écussons équipe de foot Italie** artistiques ou des **écussons équipe de foot Portugal** riches en symbolisme, chaque emblème raconte une histoire unique qui résonne avec des millions de supporters à travers le monde.
 
 Dans un football européen en constante évolution commerciale et médiatique, les **écussons des équipes de foot** demeurent des ancrages identitaires essentiels, reliant le passé glorieux des clubs à leur futur ambitieux.`,
-  keywords: "écusson club de foot, écusson de club de foot, écusson des équipes de foot, écusson équipe de foot, écusson de foot, écusson club de foot anglais, écusson équipe de foot italie, écusson équipe de foot portugal, écusson club de foot européen",
-  category: 'technical',
-  subCategory: 'design-guidelines'
+  keywords:
+    "écusson club de foot, écusson de club de foot, écusson des équipes de foot, écusson équipe de foot, écusson de foot, écusson club de foot anglais, écusson équipe de foot italie, écusson équipe de foot portugal, écusson club de foot européen",
+  category: "technical",
+  subCategory: "design-guidelines",
 };

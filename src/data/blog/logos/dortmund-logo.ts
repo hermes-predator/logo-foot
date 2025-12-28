@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dortmundLogoPost: BlogPost = {
   id: 219,
+  slug: "dortmund-logo", //
   title: "Logo Borussia Dortmund : Histoire et Design de l'Emblème BVB [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Borussia Dortmund : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du BVB.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Borussia Dortmund : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du BVB.",
   date: "2024-04-02",
   galleryImageId: 219,
   content: `# L'Histoire Passionnante du **Logo Borussia Dortmund**
@@ -57,7 +58,8 @@ Innovation Créative: Expériences AR immersives, NFTs exclusifs, digital first 
 Vision Future: Expansion internationale, guidelines evolving, brand excellence, legacy preservation.
 
 Le **logo borussia dortmund** reste un symbole fort du football allemand, incarnant parfaitement l'équilibre entre tradition locale et rayonnement mondial. Il continue d'inspirer et de faire vibrer des millions de supporters à travers le monde, tout en restant profondément ancré dans l'histoire de la Ruhr.`,
-  keywords: "dortmund logo, logo dortmund, dortmund logo png, logo dortmund png, bvb logo, borussia dortmund logo, bvb 09 logo, ballspielverein borussia logo, logo borussia dortmund, logo bvb, logo de dortmund, bvb dortmund logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "dortmund logo, logo dortmund, dortmund logo png, logo dortmund png, bvb logo, borussia dortmund logo, bvb 09 logo, ballspielverein borussia logo, logo borussia dortmund, logo bvb, logo de dortmund, bvb dortmund logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ecussonsFootballPost: BlogPost = {
   id: 224,
+  slug: "ecusson-de-football-bart", //
   title: "Écussons de Football : Histoire et Symboles des Clubs [Guide 2024]",
-  excerpt: "Découvrez l'histoire et la signification des écussons de football. Analyse complète des symboles et des designs qui font l'identité visuelle des clubs de foot.",
+  excerpt:
+    "Découvrez l'histoire et la signification des écussons de football. Analyse complète des symboles et des designs qui font l'identité visuelle des clubs de foot.",
   date: "2024-04-09",
   galleryImageId: 224,
   content: `# L'Univers Fascinant des Écussons de Football
@@ -103,7 +104,8 @@ Les **écussons équipe de foot** sont bien plus que de simples designs graphiqu
 Un **écusson de foot** réussi transcende sa fonction première pour devenir un véritable emblème, capable de fédérer des millions de personnes autour de valeurs et d'aspirations communes.
 
 Dans un monde du football de plus en plus globalisé et commercialisé, ces **écussons des équipes de foot** restent des ancrages d'authenticité et d'appartenance, reliant le passé glorieux des clubs à leur futur ambitieux.`,
-  keywords: "écusson club de foot, écusson de club de foot, écusson des équipes de foot, écusson équipe de foot, écusson de foot, emblème football, logo club football, design écusson foot, histoire écussons football",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "écusson club de foot, écusson de club de foot, écusson des équipes de foot, écusson équipe de foot, écusson de foot, emblème football, logo club football, design écusson foot, histoire écussons football",
+  category: "logos",
+  subCategory: "club-logos",
 };

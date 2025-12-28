@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dynamoDresdenLogoPost: BlogPost = {
   id: 222,
+  slug: "dynamo-dresden-logo", //
   title: "**Logo Dynamo Dresden** : Histoire et Design de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Dynamo Dresden**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Dynamo Dresden**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand historique.",
   date: "2025-04-14",
   galleryImageId: 222,
   content: `# L'Histoire du **Logo Dynamo Dresden**
@@ -46,7 +47,8 @@ Le **logo dynamo dresden** dépasse largement le cadre sportif pour s'inscrire p
 ## Conclusion
 
 Le **logo dynamo dresden** demeure l'un des emblèmes les plus distinctifs et respectés du football allemand. De sa conception initiale à sa version numérique moderne, l'emblème de Dynamo Dresden a su évoluer tout en préservant son essence et sa reconnaissance immédiate.`,
-  keywords: "dynamo dresden logo:20, logo dynamo dresden:20, dynamo dresden logos:10, logo de foot dynamo dresden en allemagne:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  keywords:
+    "dynamo dresden logo:20, logo dynamo dresden:20, dynamo dresden logos:10, logo de foot dynamo dresden en allemagne:10",
+  category: "logos",
+  subCategory: "german-clubs",
 };

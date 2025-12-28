@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ekstraklasaLogoPost: BlogPost = {
   id: 230,
+  slug: "ekstraklasa-logo", //
   title: "**Ekstraklasa Logo** : Histoire et Evolution du Championnat Polonais de Football",
   date: "2025-04-25",
   galleryImageId: 230,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo Ekstraklasa, symbole du prestigieux championnat polonais. Une analyse détaillée de son design et de son évolution au fil des années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Ekstraklasa, symbole du prestigieux championnat polonais. Une analyse détaillée de son design et de son évolution au fil des années.",
   content: `# Histoire et Evolution du **Ekstraklasa Logo**
 
 Le **logo ekstraklasa** représente l'identité visuelle du plus prestigieux championnat de football polonais. Cette marque emblématique incarne l'excellence et la tradition du football polonais, tout en reflétant sa modernisation constante et son ambition internationale.
@@ -31,5 +32,6 @@ L'évolution du **ekstraklasa logo png** reflète la progression constante du ch
 ## Conclusion
 
 Le **logo ekstraklasa** demeure un élément central de l'identité du football polonais. Il symbolise non seulement l'excellence sportive du championnat, mais aussi son ambition de se positionner parmi les compétitions majeures du football européen.`,
-  keywords: "ekstraklasa logo, logo ekstraklasa, ekstraklasa logo png, poland ekstraklasa logo, championnat polonais, football polonais, design logo football"
+  keywords:
+    "ekstraklasa logo, logo ekstraklasa, ekstraklasa logo png, poland ekstraklasa logo, championnat polonais, football polonais, design logo football",
 };

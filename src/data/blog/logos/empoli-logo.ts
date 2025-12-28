@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const empoliLogoPost: BlogPost = {
   id: 233,
+  slug: "empoli-logo", //
   title: "Logo Empoli FC : Histoire et Design de l'Emblème Toscan [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Empoli FC : origines, évolution et signification de l'emblème du club toscan de Serie A.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Empoli FC : origines, évolution et signification de l'emblème du club toscan de Serie A.",
   date: "2024-06-29",
   galleryImageId: 233,
   content: `# L'Histoire Fascinante du **Logo Empoli**
@@ -54,7 +55,8 @@ Ces éléments s'harmonisent parfaitement pour créer une identité visuelle coh
 Au-delà de sa fonction d'identification, le **logo Empoli FC** incarne les valeurs fondamentales du club : persévérance, tradition et ancrage territorial. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui, malgré les hauts et les bas inhérents au football, a toujours su rester fidèle à son identité.
 
 Alors que le club continue d'écrire son histoire dans le calcio italien, le **logo Empoli foot** reste le témoin visuel de ses racines profondes et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la fierté d'une institution sportive intimement liée à l'identité culturelle et sociale de sa région.`,
-  keywords: "empoli fc logo, empoli logo, empoli logo png, logo empoli, logo empoli fc, empoli fc logo png, empoli logos, logo d'empoli, logo de foot empoli, logo empoli calcio, logo empoli calcio png, logo empoli foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "empoli fc logo, empoli logo, empoli logo png, logo empoli, logo empoli fc, empoli fc logo png, empoli logos, logo d'empoli, logo de foot empoli, logo empoli calcio, logo empoli calcio png, logo empoli foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const eintrachtFrankfurtLogoPost: BlogPost = {
   id: 229,
+  slug: "eintracht-francfort-logo", //
   title: "Logo Eintracht Francfort : Histoire et Design de l'Aigle Allemand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo d'Eintracht Francfort : origines, évolution et symbolisme de l'emblème emblématique du club allemand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo d'Eintracht Francfort : origines, évolution et symbolisme de l'emblème emblématique du club allemand.",
   date: "2024-05-21",
   galleryImageId: 229,
   content: `# L'Histoire Fascinante du **Logo Eintracht Francfort**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo foot francfort** incarne les 
 Alors que l'Eintracht Francfort continue d'écrire son histoire sur les terrains nationaux et européens, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo francfort fc** à travers les décennies a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **francfort foot logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son histoire glorieuse.`,
-  keywords: "logo francfort, eintracht francfort logo, francfort foot logo, francfort logo, logo eintracht francfort, logo foot francfort, logo francfort fc, logo francfort png, francfort foot logo png, francfort logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo francfort, eintracht francfort logo, francfort foot logo, francfort logo, logo eintracht francfort, logo foot francfort, logo francfort fc, logo francfort png, francfort foot logo png, francfort logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

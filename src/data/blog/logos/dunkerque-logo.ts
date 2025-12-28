@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dunkerqueLogoPost: BlogPost = {
   id: 221,
+  slug: "dunkerque-logo", //
   title: "Logo Dunkerque : Histoire et Évolution de l'Emblème du Nord [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'USL Dunkerque : origines, évolution et symbolisme de l'emblème emblématique du club nordiste.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'USL Dunkerque : origines, évolution et symbolisme de l'emblème emblématique du club nordiste.",
   date: "2024-06-17",
   galleryImageId: 221,
   content: `# L'Histoire Fascinante du **logo dunkerque**
@@ -61,7 +62,8 @@ Au-delà de sa fonction identificatrice, le **logo dunkerque** incarne les valeu
 Alors que l'USL Dunkerque continue d'écrire son histoire sur les terrains nationaux, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **dunkerque logo** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **logo dunkerque** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo dunkerque, dunkerque logo, logo dunkerque foot, dunkerque fc logo, dunkerque foot logo, dunkerque logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo dunkerque, dunkerque logo, logo dunkerque foot, dunkerque fc logo, dunkerque foot logo, dunkerque logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

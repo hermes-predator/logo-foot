@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const eibarLogoPost: BlogPost = {
   id: 228, // ID unique pour ce nouvel article
+  slug: "eibar-logo", //
   title: "Logo SD Eibar : Histoire et Évolution de l'Emblème Basque [2024]",
   date: "2025-04-11",
   galleryImageId: 228,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo SD Eibar, emblème du club basque. Analyse complète des symboles et des couleurs du blason de cette équipe emblématique de Liga.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo SD Eibar, emblème du club basque. Analyse complète des symboles et des couleurs du blason de cette équipe emblématique de Liga.",
   content: `# L'Histoire Fascinante du **Logo Eibar**
 
 Le **eibar logo** est bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club profondément ancré dans la région basque. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **logo eibar**, ce blason qui fait la fierté des supporters de cette équipe modeste mais emblématique.
@@ -101,5 +102,6 @@ Le **logo eibar** est bien plus qu'un simple emblème sportif : c'est un symbole
 Pour les habitants d'Eibar et les supporters du club, le **sd eibar logo** représente un héritage précieux qui transcende le simple cadre sportif. Il incarne la fierté d'une ville et d'une région, tout en portant les ambitions d'un club qui continue d'écrire son histoire dans le football espagnol.
 
 Le **logo eibar png** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré sa taille modeste, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
-  keywords: "eibar logo, logo eibar, sd eibar logo, eibar logo png, logo eibar png, logo sd eibar, liga espagnol eibar logo, logo de foot eibar, logo png eibar, sd eibar fc logo png",
+  keywords:
+    "eibar logo, logo eibar, sd eibar logo, eibar logo png, logo eibar png, logo sd eibar, liga espagnol eibar logo, logo de foot eibar, logo png eibar, sd eibar fc logo png",
 };

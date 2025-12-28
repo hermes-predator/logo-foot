@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const elcheCfLogoPost: BlogPost = {
   id: 231,
+  slug: "elche-cf-logo", //
   title: "Logo Elche CF : Histoire et Symbolisme de l'Emblème du Club Espagnol",
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Elche CF. Analyse complète de l'emblème du club espagnol de La Liga.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo de l'Elche CF. Analyse complète de l'emblème du club espagnol de La Liga.",
   date: "2024-07-05",
   galleryImageId: 231,
   content: `# **Logo Elche CF** : Histoire et Symbolisme de l'Emblème du Club Espagnol
@@ -144,7 +145,8 @@ Non, le **logo Elche CF png** n'a pas subi de changement significatif récemment
 
 **Quelle est la particularité du logo d'Elche par rapport aux autres clubs espagnols?**
 La particularité du **logo Elche espagne** réside dans sa représentation distinctive du palmier, un symbole unique qui distingue immédiatement le club et fait référence au patrimoine UNESCO de la ville.`,
-  keywords: "logo Elche CF, Elche logo, Elche logo png, logo Elche espagne, logo de Elche, football espagnol, logo Elche, Liga, palmier, emblème, écusson, bouclier, Elche, club espagnol, patrimoine UNESCO",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo Elche CF, Elche logo, Elche logo png, logo Elche espagne, logo de Elche, football espagnol, logo Elche, Liga, palmier, emblème, écusson, bouclier, Elche, club espagnol, patrimoine UNESCO",
+  category: "logos",
+  subCategory: "club-logos",
 };

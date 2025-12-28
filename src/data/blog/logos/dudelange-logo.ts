@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dudelangeLogoPost: BlogPost = {
   id: 220,
+  slug: "dudelange-logo", //
   title: "**Dudelange Logo** : Histoire et Symbolisme de l'Emblème [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Dudelange**, son évolution et sa symbolique unique dans le football luxembourgeois.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Dudelange**, son évolution et sa symbolique unique dans le football luxembourgeois.",
   date: "2024-04-15",
   galleryImageId: 220,
   content: `# Histoire et Signification du **Dudelange Logo**
@@ -68,8 +69,8 @@ Dans l'ère moderne du football, le **FC Dudelange logo PNG** continue de :
 ## Conclusion
 
 Le **logo Dudelange** est devenu un symbole reconnaissable du football luxembourgeois, incarnant l'histoire riche et les ambitions d'un club profondément ancré dans sa région.`,
-  keywords: "dudelange logo, dudelange fc logo, dudelange logo png, logo dudelange, logo fc dudelange, logo png dudelange",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "dudelange logo, dudelange fc logo, dudelange logo png, logo dudelange, logo fc dudelange, logo png dudelange",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

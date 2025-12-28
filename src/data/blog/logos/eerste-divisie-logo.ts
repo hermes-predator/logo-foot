@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const eersteDivisieLogoPost: BlogPost = {
   id: 225,
+  slug: "eerste-divisie-logo", //
   title: "L'**Eerste Divisie Logo** : Histoire et Évolution de l'Emblème du Second Niveau Néerlandais",
-  excerpt: "Découvrez l'histoire fascinante de l'**Eerste Divisie Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la deuxième division néerlandaise.",
+  excerpt:
+    "Découvrez l'histoire fascinante de l'**Eerste Divisie Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la deuxième division néerlandaise.",
   date: "2024-04-18",
   galleryImageId: 225,
   content: `
@@ -92,7 +94,8 @@ Que ce soit dans sa version physique sur les maillots des arbitres ou dans sa fo
 
 L'**Eerste Divisie logo** est plus qu'un simple emblème graphique – c'est un symbole qui représente l'histoire, les aspirations et l'avenir du football néerlandais de deuxième division, jouant un rôle crucial dans la promotion et la valorisation de cette compétition passionnante.
 `,
-  keywords: "eerste divisie logo, logo eerste divisie, football néerlandais, eredivisie, ligue néerlandaise, compétition néerlandaise, keuken kampioen divisie, jupiter league, deuxième division, eerste divisie, pays-bas football",
+  keywords:
+    "eerste divisie logo, logo eerste divisie, football néerlandais, eredivisie, ligue néerlandaise, compétition néerlandaise, keuken kampioen divisie, jupiter league, deuxième division, eerste divisie, pays-bas football",
   category: "competition-logos",
   subCategory: "competition-logos",
 };

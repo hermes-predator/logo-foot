@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const equateurLogoPost: BlogPost = {
   id: 235,
+  slug: "equateur-logo", //
   title: "**Logo Équateur** : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale équatorienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale équatorienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -28,5 +29,6 @@ Le **logo de l'équateur** est devenu un symbole reconnu sur la scène internati
 ## Un Symbole d'Unité Nationale
 
 Plus qu'un simple logo sportif, le **équateur logo** est devenu un puissant symbole d'unité nationale. Il représente la fusion entre tradition et modernité, entre l'héritage culturel équatorien et les ambitions futures du football national. Sur les maillots des joueurs comme dans le cœur des supporters, cet emblème incarne la fierté et les espoirs de toute une nation.`,
-  keywords: "logo équateur, équateur logo, équateur logo foot, logo équateur foot, logo de l'équateur, logo équateur png"
+  keywords:
+    "logo équateur, équateur logo, équateur logo foot, logo équateur foot, logo de l'équateur, logo équateur png",
 };

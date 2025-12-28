@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const englandLogoPost: BlogPost = {
   id: 234,
+  slug: "angleterre-logo-football", //
   title: "Logo Angleterre Football : Histoire et Évolution de l'Emblème des Three Lions [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe d'Angleterre : origines, signification et évolution de l'emblème emblématique des Three Lions à travers les époques.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe d'Angleterre : origines, signification et évolution de l'emblème emblématique des Three Lions à travers les époques.",
   date: "2024-04-19",
   galleryImageId: 234,
   content: `# L'Histoire Fascinante du **Logo Angleterre Football**
@@ -55,7 +57,8 @@ Ces innovations s'accompagnent d'une réflexion sur l'inclusivité du symbole, a
 Le **logo angleterre** illustre parfaitement comment un symbole sportif peut transcender sa fonction première pour devenir un véritable emblème national chargé d'histoire, d'émotion et d'identité collective. À travers ses trois lions légendaires, le **logo angleterre football** connecte chaque match de l'équipe nationale à près de mille ans d'histoire britannique.
 
 Dans un monde où les identités visuelles sportives tendent parfois vers l'uniformisation et la simplification excessive, le **logo angleterre foot** se distingue par sa profondeur historique et sa puissance évocatrice. Ce **angleterre logo** continue de faire la fierté de millions de supporters qui voient dans ces trois lions bien plus qu'un simple écusson sportif : l'incarnation visuelle de leur passion nationale pour le football.`,
-  keywords: "logo angleterre, angleterre logo, logo angleterre foot, logo angleterre football, logo foot angleterre, angleterre foot logo, angleterre logo foot, logo de l'angleterre, logo angleterre foot png, logo equipe angleterre foot, logo angleterre png, logo club foot angleterre, logo equipe de foot angleterre, logo equipe foot angleterre, three lions logo, emblème angleterre football, écusson angleterre, england football logo",
-  category: 'national-logos', // Updated category to national-logos
-  subCategory: 'national-logos' // Kept national-logos as subcategory
+  keywords:
+    "logo angleterre, angleterre logo, logo angleterre foot, logo angleterre football, logo foot angleterre, angleterre foot logo, angleterre logo foot, logo de l'angleterre, logo angleterre foot png, logo equipe angleterre foot, logo angleterre png, logo club foot angleterre, logo equipe de foot angleterre, logo equipe foot angleterre, three lions logo, emblème angleterre football, écusson angleterre, england football logo",
+  category: "national-logos", // Updated category to national-logos
+  subCategory: "national-logos", // Kept national-logos as subcategory
 };

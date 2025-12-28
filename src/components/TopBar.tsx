@@ -8,7 +8,7 @@ const LiveDot = () => (
 );
 
 const messages = [
-  "OFFRE LIMITÉE : -95% sur notre fichier FOOTBALL : ⦗FRONT-CLOUD⦘~ Football.zip",
+  "OFFRE LIMITÉE : -95% sur notre fichier FOOTBALL",
   "LIVRAISON DIRECTE : Téléchargez notre fichier en page d'après-paiement"
 ];
 

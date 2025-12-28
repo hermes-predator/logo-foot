@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const parisFCLogoPost: BlogPost = {
   id: 436,
+  slug: "paris-fc-logo", //
   title: "Logo Paris FC : Histoire et Évolution de l'Emblème du Club Parisien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Paris FC, son évolution au fil des années et la signification de ses éléments symboliques dans l'identité visuelle du club de la capitale.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Paris FC, son évolution au fil des années et la signification de ses éléments symboliques dans l'identité visuelle du club de la capitale.",
   date: "2024-04-14",
   galleryImageId: 436,
   content: `# L'Histoire Fascinante du **Logo Paris FC**
@@ -93,7 +94,8 @@ Le développement futur du **logo paris fc foot** s'inscrira probablement dans u
 Le **logo paris fc** représente bien plus qu'un simple identifiant visuel – c'est un témoin de l'histoire riche du club, un symbole de fierté pour ses supporters et un pilier de son identité culturelle. À travers ses évolutions successives, il a su préserver l'essence de ce que signifie représenter la capitale française dans le monde du football, tout en s'adaptant aux exigences changeantes du sport moderne.
 
 Cette capacité à évoluer tout en restant fidèle à ses racines fait du blason du Paris FC un exemple fascinant d'identité visuelle sportive, reflétant parfaitement les valeurs et l'histoire d'un club qui continue de tracer son propre chemin dans l'ombre du géant PSG, avec une identité visuelle distinctive et authentique incarnée par son **paris fc logo png**.`,
-  keywords: "logo paris fc, paris fc logo, paris fc logo png, logo paris fc png, fc paris logo, emblème paris fc, écusson paris fc, histoire logo paris fc, design logo paris fc, identité visuelle paris fc, logo du paris fc, logo paris fc foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo paris fc, paris fc logo, paris fc logo png, logo paris fc png, fc paris logo, emblème paris fc, écusson paris fc, histoire logo paris fc, design logo paris fc, identité visuelle paris fc, logo du paris fc, logo paris fc foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

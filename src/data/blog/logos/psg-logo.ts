@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const psgLogoPost: BlogPost = {
   id: 456,
+  slug: "psg-logo", //
   title: "Logo PSG : Histoire et Évolution du Paris Saint-Germain [2024]",
-  excerpt: "Histoire complète et détaillée du logo du PSG : origines, évolution et signification de l'emblème du Paris Saint-Germain. Téléchargez le logo PSG PNG stylé en haute résolution.",
+  excerpt:
+    "Histoire complète et détaillée du logo du PSG : origines, évolution et signification de l'emblème du Paris Saint-Germain. Téléchargez le logo PSG PNG stylé en haute résolution.",
   date: "2024-03-24",
   galleryImageId: 456,
   content: `# L'Histoire Complète du **Logo PSG** en 2024
@@ -70,7 +71,8 @@ Pour les supporters et passionnés du club parisien, télécharger un **logo psg
 Le **logo du paris saint-germain** officiel, disponible sur le site du club, garantit une utilisation respectueuse des droits et de l'**image du logo du psg**. Les versions officielles du **logo psg format png** assurent une qualité optimale et une conformité avec la charte graphique du club.
 
 Que vous recherchiez le **paris saint germain nouveau logo**, des versions historiques des **logos du psg**, ou simplement **le logo de paris saint germain** dans sa forme actuelle, il est recommandé de se tourner vers des sources officielles. Ces ressources garantissent l'accès à des fichiers de qualité qui respectent les standards établis par le **le logo du paris-saint-germain**.`,
-  keywords: "logo psg, psg logo, logo psg png, psg logo png, logo du psg, logos du psg, dessin logo psg, logo psg dessin, nouveau logo psg, psg nouveau logo, image du logo du psg, image du logo psg, image psg logo, logo foot psg, psg football club logo, logo de psg, paris psg logo, le logo du psg, logo psg foot, logo psg football, logo psg sans fond, paris saint germain logo, logo paris saint germain, paris saint germain logos, logo du paris saint germain, paris saint-germain logo, logo paris saint-germain, paris saint germain nouveau logo, logo du paris-saint-germain, logo de paris saint germain, logo de paris saint-germain, le logo du paris-saint-germain, le logo de paris saint germain, logo foot paris saint germain",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo psg, psg logo, logo psg png, psg logo png, logo du psg, logos du psg, dessin logo psg, logo psg dessin, nouveau logo psg, psg nouveau logo, image du logo du psg, image du logo psg, image psg logo, logo foot psg, psg football club logo, logo de psg, paris psg logo, le logo du psg, logo psg foot, logo psg football, logo psg sans fond, paris saint germain logo, logo paris saint germain, paris saint germain logos, logo du paris saint germain, paris saint-germain logo, logo paris saint-germain, paris saint germain nouveau logo, logo du paris-saint-germain, logo de paris saint germain, logo de paris saint-germain, le logo du paris-saint-germain, le logo de paris saint germain, logo foot paris saint germain",
+  category: "logos",
+  subCategory: "club-logos",
 };

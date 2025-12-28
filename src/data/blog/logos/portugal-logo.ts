@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portugalLogoPost: BlogPost = {
   id: 451,
+  slug: "portugal-logo", //
   title: "Logo Portugal : Histoire et Évolution de l'Emblème de la Seleção [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Portugal, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus prestigieuses sélections du football européen.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Portugal, son évolution au fil du temps et la signification des symboles qui représentent l'une des plus prestigieuses sélections du football européen.",
   date: "2024-05-16",
   galleryImageId: 451,
   content: `# Logo Portugal : L'Histoire de l'Emblème de la Seleção
@@ -141,7 +143,8 @@ Le logo de l'équipe nationale portugaise transcende sa fonction première d'ide
 L'évolution mesurée de cet emblème au fil des décennies illustre parfaitement comment une fédération peut embrasser la modernité tout en honorant son patrimoine historique. La force du **logo Portugal** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte.
 
 Dans un monde du football où l'identité nationale est parfois diluée face à la mondialisation, l'emblème portugais rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde.`,
-  keywords: "logo portugal, portugal logo, logo portugal foot, logo du portugal, logo portugais, logo foot portugal, portugal logo foot, logo portugal png, portugal foot logo, logo du portugal foot, logo equipe portugal, logo football portugal, logo portugal foot png, portugal football logo, portugal logo football, portugal logo png, portugal team logo",
-  category: 'national-logos', // Updated from 'logos'
-  subCategory: 'national-logos' // Kept consistent with other national team logos
+  keywords:
+    "logo portugal, portugal logo, logo portugal foot, logo du portugal, logo portugais, logo foot portugal, portugal logo foot, logo portugal png, portugal foot logo, logo du portugal foot, logo equipe portugal, logo football portugal, logo portugal foot png, portugal football logo, portugal logo football, portugal logo png, portugal team logo",
+  category: "national-logos", // Updated from 'logos'
+  subCategory: "national-logos", // Kept consistent with other national team logos
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const phoenixRisingLogoPost: BlogPost = {
   id: 442,
+  slug: "phoenix-rising-logo", //
   title: "**Logo Phoenix Rising** : Histoire et Design de l'Emblème du Football Américain [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Phoenix Rising**, son évolution et la symbolique de cet emblème unique du football américain dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Phoenix Rising**, son évolution et la symbolique de cet emblème unique du football américain dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 442,
   content: `# L'Histoire Fascinante du **Logo Phoenix Rising**
@@ -35,6 +36,6 @@ Le logo est bien plus qu'un simple emblème sportif. Il est devenu un symbole d'
 
 Le **logo phoenix rising** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
   keywords: "phoenix rising logo:20, phoenix rising fc logo:10, rising phoenix logo:10, logo phoenix rising fc:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

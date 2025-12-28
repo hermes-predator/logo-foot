@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const pixelArtFootPost: BlogPost = {
   id: 444, // ID unique pour cet article
+  slug: "pixel-art-football-logo", //
   title: "Pixel Art Logo Foot France: L'Art Rétro des Emblèmes de la Ligue 1 [2024]",
   date: "2025-04-12",
   galleryImageId: 444,
   category: "pixel-art",
-  excerpt: "Découvrez l'univers fascinant du pixel art appliqué aux logos du football français. Explorez comment les emblèmes de la Ligue 1 prennent vie dans un style rétro et nostalgique qui séduit les fans du monde entier.",
+  excerpt:
+    "Découvrez l'univers fascinant du pixel art appliqué aux logos du football français. Explorez comment les emblèmes de la Ligue 1 prennent vie dans un style rétro et nostalgique qui séduit les fans du monde entier.",
   content: `# Le Phénomène **Pixel Art Logo Foot France** : Quand la Nostalgie Rencontre le Football Moderne
 
 Le **pixel art logo foot france** est devenu un véritable phénomène culturel, mêlant habilement nostalgie rétro-gaming et passion du football hexagonal. Dans cet article approfondi, nous explorons comment cette forme d'art digitale réinvente les emblèmes des clubs français et transforme notre perception des identités visuelles sportives.

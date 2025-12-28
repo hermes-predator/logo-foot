@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portValeLogoPost: BlogPost = {
   id: 447,
+  slug: "port-vale-logo", //
   title: "**Logo Port Vale** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Port Vale FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Port Vale à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Port Vale FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Port Vale à travers les années.",
   date: "2024-04-20",
   galleryImageId: 447,
   category: "logos",

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const pauFCLogoPost: BlogPost = {
   id: 439,
+  slug: "pau-logo", //
   title: "Logo Pau FC : Histoire et Design de l'Emblème Béarnais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Pau FC : origines, évolution et signification de l'emblème emblématique du club béarnais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Pau FC : origines, évolution et signification de l'emblème emblématique du club béarnais.",
   date: "2024-06-02",
   galleryImageId: 439,
   content: `# L'Histoire Fascinante du **Logo Pau FC**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo pau foot** incarne les valeur
 Alors que le Pau FC continue d'écrire son histoire sur les terrains nationaux, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo pau fc png** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **logo pau fc** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo pau fc, logo pau, pau fc logo, pau logo, logo de pau, logo fc pau, logo pau foot, pau fc logo png, pau fc nouveau logo, pau logo png, logo pau fc png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo pau fc, logo pau, pau fc logo, pau logo, logo de pau, logo fc pau, logo pau foot, pau fc logo png, pau fc nouveau logo, pau logo png, logo pau fc png",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const polandLogoPost: BlogPost = {
   id: 446,
+  slug: "pologne-logo", //
   title: "Logo Pologne : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Pologne : des origines à aujourd'hui, évolution et signification de l'emblème du football polonais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Pologne : des origines à aujourd'hui, évolution et signification de l'emblème du football polonais.",
   date: "2024-05-28",
   galleryImageId: 446,
   content: `# L'Histoire Fascinante du **Logo Pologne** Football
@@ -51,7 +53,8 @@ Les joueurs qui portent fièrement le maillot orné du **logo pologne foot** son
 Les **logo club de foot pologne** ont joué un rôle crucial dans le développement d'une identité visuelle footballistique cohérente à l'échelle nationale. Les clubs historiques comme Górnik Zabrze ou Wisła Cracovie ont contribué à forger une tradition esthétique distinctive qui se reflète dans le **logo pologne**.
 
 Cette réciprocité d'influence entre le **logo pologne foot** et les **logo club foot pologne** témoigne d'une culture footballistique intégrée où les différents niveaux du football polonais partagent des valeurs visuelles communes, renforçant ainsi l'identité nationale à travers un langage graphique cohérent qui transcende les rivalités locales.`,
-  keywords: "logo pologne, logo pologne foot, logo foot pologne, pologne logo, logo de la pologne, logo pologne png, logo club de foot pologne, logo club foot pologne",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo pologne, logo pologne foot, logo foot pologne, pologne logo, logo de la pologne, logo pologne png, logo club de foot pologne, logo club foot pologne",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portlandTimbersLogoPost: BlogPost = {
   id: 448,
+  slug: "portland-timbers-logo", //
   title: "**Logo Portland Timbers** : Histoire et Design de l'Emblème de la MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Portland Timbers**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Portland Timbers**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 448,
   content: `# L'Histoire Fascinante du **Logo Portland Timbers**
@@ -34,7 +35,8 @@ Le **portland timbers logo png** est bien plus qu'un simple emblème sportif. Il
 ## Conclusion
 
 Le **logo portland timbers** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
-  keywords: "logo portland timbers:20, portland timbers logo:20, portland timbers logo png:10, logo de foot portland timbers:10, portland timbers logos:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo portland timbers:20, portland timbers logo:20, portland timbers logo png:10, logo de foot portland timbers:10, portland timbers logos:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

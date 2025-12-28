@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const parmaLogoPost: BlogPost = {
   id: 437,
+  slug: "parme-logo", //
   title: "Logo Parma Calcio : Histoire et Design de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Parma Calcio : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Parme.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Parma Calcio : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de Parme.",
   date: "2024-06-14",
   galleryImageId: 437,
   content: `# L'Histoire Passionnante du **Logo Parma**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo parma calcio** incarne les va
 Alors que le Parma continue d'écrire son histoire sur les terrains de Serie A, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **parme logo** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **parma fc logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo parma, logo parma png, logo parme, logos parma, parma calcio logo, parma fc logo, parma logo, parma logo png, parme logo, logo fc parma, logo club football parme, logo de foot parme",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo parma, logo parma png, logo parme, logos parma, parma calcio logo, parma fc logo, parma logo, parma logo png, parme logo, logo fc parma, logo club football parme, logo de foot parme",
+  category: "logos",
+  subCategory: "club-logos",
 };

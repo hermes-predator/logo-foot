@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const peruLogoPost: BlogPost = {
   id: 441,
+  slug: "perou-logo", //
   title: "**Logo Pérou** : Histoire et Évolution de l'Emblème des Incas [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale péruvienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale péruvienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-28",
   category: "national-logos",
   subCategory: "national-logos",
@@ -36,5 +37,6 @@ Plus qu'un simple **logo pérou soccer**, l'emblème est devenu un puissant cata
 ## Conclusion
 
 Le **logo pérou png** continue d'évoluer tout en restant fidèle à ses racines. Il symbolise non seulement l'excellence footballistique du pays, mais aussi les valeurs et l'identité d'une nation fière de son héritage. Chaque apparition du **logo pérou** sur la scène internationale rappelle la riche histoire du football péruvien et ses ambitions pour l'avenir.`,
-  keywords: "logo pérou, logo du pérou, logo equipe du pérou, logo foot pérou, logo pérou png, logo pérou soccer, pérou logo foot"
+  keywords:
+    "logo pérou, logo du pérou, logo equipe du pérou, logo foot pérou, logo pérou png, logo pérou soccer, pérou logo foot",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const psvEindhovenLogoPost: BlogPost = {
   id: 458,
+  slug: "psv-eindhoven-logo", //
   title: "Logo PSV Eindhoven : Histoire et Design de l'Emblème Néerlandais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du PSV Eindhoven : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club néerlandais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du PSV Eindhoven : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club néerlandais.",
   date: "2024-05-16",
   galleryImageId: 458,
   content: `# L'Histoire Fascinante du **Logo PSV Eindhoven**
@@ -52,7 +53,8 @@ Alors que le club poursuit son développement sportif et structurel, son **logo 
 Les éventuelles futures évolutions du **logo psv eindhoven png** s'inscriront probablement dans cette même philosophie d'équilibre entre tradition et innovation, avec le souci constant de représenter fidèlement les valeurs du club et son ancrage territorial unique dans la ville d'Eindhoven et la région du Brabant.
 
 Pour les décennies à venir, le **logo de foot psv eindhoven** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club dans le paysage footballistique européen.`,
-  keywords: "logo psv eindhoven, psv eindhoven logo, logo psv eindhoven png, psv eindhoven logo png, logo de foot psv eindhoven, logo foot psv eindhoven",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo psv eindhoven, psv eindhoven logo, logo psv eindhoven png, psv eindhoven logo png, logo de foot psv eindhoven, logo foot psv eindhoven",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portsmouthLogoPost: BlogPost = {
   id: 450,
+  slug: "portsmouth-logo", //
   title: "Logo Portsmouth : Histoire et Design de l'Emblème des Pompey [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Portsmouth FC : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais aux couleurs bleu et or.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Portsmouth FC : des origines à aujourd'hui, évolution et signification de l'emblème du club anglais aux couleurs bleu et or.",
   date: "2024-04-13",
   galleryImageId: 450,
   content: `# L'Histoire Fascinante du **Logo Portsmouth**
@@ -52,7 +53,8 @@ En définitive, le **portsmouth football club logo** incarne parfaitement l'âme
 Qu'il soit brodé sur le maillot des joueurs, imprimé sur des souvenirs ou partagé numériquement via le **portsmouth f.c logo png**, cet emblème continue de porter les valeurs de passion, d'engagement et de fierté locale qui définissent Portsmouth Football Club depuis plus d'un siècle.
 
 Pour les générations actuelles et futures de supporters, le **logo portsmouth foot** restera ce symbole puissant qui rassemble une communauté entière autour d'une passion commune, dépassant largement le cadre du simple divertissement sportif pour devenir un véritable marqueur identitaire régional et un héritage visuel précieux du football anglais.`,
-  keywords: "portsmouth football logo, logo portsmouth, logo portsmouth fc, portsmouth fc logo, portsmouth football club logo, portsmouth logo, portsmouth fc logo png, fc portsmouth logo, portsmouth f.c logo png, portsmouth logo foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "portsmouth football logo, logo portsmouth, logo portsmouth fc, portsmouth fc logo, portsmouth football club logo, portsmouth logo, portsmouth fc logo png, fc portsmouth logo, portsmouth f.c logo png, portsmouth logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

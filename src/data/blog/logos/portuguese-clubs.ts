@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portugueseLogosPost: BlogPost = {
   id: 452,
+  slug: "portuguese-clubs-logo", //
   title: "Logos des Clubs Portugais : Histoire et Évolution des Emblèmes [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution des logos des clubs portugais de football. Analyse complète des emblèmes des plus grands clubs du Portugal.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution des logos des clubs portugais de football. Analyse complète des emblèmes des plus grands clubs du Portugal.",
   date: "2024-07-15",
   galleryImageId: 452,
   content: `# Histoire et Évolution des **Logos des Clubs Portugais** de Football
@@ -100,7 +102,8 @@ Les **logos des clubs portugais** constituent un patrimoine visuel d'une richess
 Alors que le football devient toujours plus globalisé, ces emblèmes demeurent des ancres identitaires fortes, rappelant aux supporters leurs racines et leur appartenance. L'évolution prudente et respectueuse de ces symboles témoigne de la volonté des clubs portugais de rester fidèles à leur histoire tout en s'adaptant aux défis du football moderne.
 
 Qu'il s'agisse de l'aigle majestueux de Benfica, du dragon protecteur de Porto, du lion courageux du Sporting ou des emblèmes régionaux riches en symbolisme comme ceux de Braga, Guimarães ou Rio Ave, les **logos des clubs portugais** continueront de faire battre le cœur des aficionados et d'incarner l'âme du football lusitanien pour les générations futures.`,
-  keywords: "logos des clubs portugais, logo de club portugais, logos de clubs de football portugais, logo Benfica, logo FC Porto, logo Sporting, logo SC Braga",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logos des clubs portugais, logo de club portugais, logos de clubs de football portugais, logo Benfica, logo FC Porto, logo Sporting, logo SC Braga",
+  category: "logos",
+  subCategory: "club-logos",
 };

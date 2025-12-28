@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const pisaLogoPost: BlogPost = {
   id: 443,
+  slug: "pise-logo", //
   title: "Logo Pisa : Histoire et Design de l'Emblème du Club Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Pisa : origines, évolution et signification de l'emblème emblématique du club italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Pisa : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-02",
   galleryImageId: 443,
   content: `# L'Histoire Fascinante du **Logo Pisa**
@@ -55,7 +56,8 @@ Alors que le Pisa SC poursuit son parcours dans le football italien avec l'objec
 Pour les nouvelles générations de supporters, le **logo de foot pise en italie** continuera d'incarner les valeurs de persévérance, de fierté locale et d'ambition qui caractérisent ce club pas comme les autres. Dans un paysage footballistique de plus en plus globalisé, le **pise logo italie** représente l'importance de maintenir une identité forte et authentique enracinée dans un territoire et une histoire spécifiques.
 
 L'histoire du **pisa logo png** est encore en cours d'écriture, et les prochaines années verront certainement de nouvelles évolutions subtiles qui accompagneront le développement sportif et institutionnel du club. Ces futurs ajustements s'inscriront sans doute dans la continuité d'une identité visuelle qui a su trouver le parfait équilibre entre respect des traditions et ambitions futures.`,
-  keywords: "logo pisa, pisa logo, pise logo, logo pisa calcio, logo pise, pisa calcio logo, pisa logo png, logo ac pisa 1909, logo ac pise 1909, logo de foot pise, logo de foot pise en italie, logo de pise, logo pise png, pise logo italie",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo pisa, pisa logo, pise logo, logo pisa calcio, logo pise, pisa calcio logo, pisa logo png, logo ac pisa 1909, logo ac pise 1909, logo de foot pise, logo de foot pise en italie, logo de pise, logo pise png, pise logo italie",
+  category: "logos",
+  subCategory: "club-logos",
 };

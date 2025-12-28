@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const prestonNorthEndLogoPost: BlogPost = {
   id: 454,
+  slug: "preston-north-end-logo", //
   title: "Logo Preston North End : Histoire et Évolution d'un Emblème Historique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Preston North End, son évolution à travers les années et la signification de cet emblème pionnier du football anglais. Analyse complète et téléchargement PNG haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Preston North End, son évolution à travers les années et la signification de cet emblème pionnier du football anglais. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",
   galleryImageId: 454,
   content: `# L'Histoire Emblématique du **Logo Preston North End**
@@ -140,7 +141,8 @@ Pour les supporters de toutes générations, le **logo de foot preston north end
 En définitive, le **preston north end logo** incarne parfaitement l'âme d'un club dont l'importance historique dans le développement du football professionnel est incontestable. Premier champion d'Angleterre, inventeur du "passing game" (jeu de passes) qui allait révolutionner ce sport, Preston North End possède un emblème à la hauteur de son héritage.
 
 À travers ses évolutions successives, le **preston north end fc logo** a su préserver l'essentiel tout en s'adaptant aux exigences de chaque époque. Cette capacité à incarner simultanément tradition et contemporanéité fait de cet emblème l'un des plus respectés du football anglais, admiré même par les supporters d'autres clubs pour sa signification historique et son élégance intemporelle.`,
-  keywords: "logo preston north end, preston north end logo, preston north end fc logo, logo de foot preston north end, emblème preston north end, pne logo, deepdale logo, lilywhites logo, football league founders logo, lancashire football club logo, championship team logo, oldest football club logo, agneau pascal logo foot, the invincibles logo",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "logo preston north end, preston north end logo, preston north end fc logo, logo de foot preston north end, emblème preston north end, pne logo, deepdale logo, lilywhites logo, football league founders logo, lancashire football club logo, championship team logo, oldest football club logo, agneau pascal logo foot, the invincibles logo",
+  category: "logos",
+  subCategory: "english-clubs",
 };

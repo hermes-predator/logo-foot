@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const primeiraLigaPost: BlogPost = {
   id: 455,
+  slug: "championnat-du-portugal-de-football", //
   title: "Championnat du Portugal de Football : Histoire et Évolution de la Primeira Liga [2024]",
-  excerpt: "Découvrez l'histoire complète du championnat du Portugal de football. Analyse détaillée de la Primeira Liga, son classement, ses équipes emblématiques et son logo.",
+  excerpt:
+    "Découvrez l'histoire complète du championnat du Portugal de football. Analyse détaillée de la Primeira Liga, son classement, ses équipes emblématiques et son logo.",
   date: "2024-05-14",
   galleryImageId: 455,
   content: `# L'Histoire et l'Évolution du **Championnat du Portugal de Football**
@@ -104,7 +105,8 @@ La couverture médiatique du **championnat de football portugais** s'est consid�
 Le **championnat du Portugal de football** représente bien plus qu'une simple compétition sportive. C'est un élément central de la culture portugaise et une vitrine internationale pour le pays. Malgré les défis économiques et la concurrence des grandes ligues européennes, la Primeira Liga continue d'évoluer et de produire un football de qualité reconnu mondialement.
 
 Sa capacité à former des talents exceptionnels et à proposer un football attractif en fait une ligue suivie par les passionnés du monde entier. Le **Primeira Liga logo** symbolise cette tradition d'excellence qui perdure depuis près de 90 ans dans le **championnat portugais de football**.`,
-  keywords: "championnat du Portugal de football, championnat de football portugais, classement équipe du Portugal de football, championnat de Portugal de football, championnat portugais de football, Primeira Liga logo, Primeira Liga, football portugais, liga portugal, football portugal",
+  keywords:
+    "championnat du Portugal de football, championnat de football portugais, classement équipe du Portugal de football, championnat de Portugal de football, championnat portugais de football, Primeira Liga logo, Primeira Liga, football portugais, liga portugal, football portugal",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

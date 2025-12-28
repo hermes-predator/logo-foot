@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const partizanBelgradeLogoPost: BlogPost = {
   id: 438, // ID unique pour ce nouvel article
+  slug: "partizan-belgrade-logo", //
   title: "Logo Partizan Belgrade : Histoire et Évolution de l'Emblème Serbe [2024]",
   date: "2025-04-11",
   galleryImageId: 438,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Partizan Belgrade, emblème du club serbe. Analyse complète des symboles et des couleurs du blason historique du FK Partizan.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Partizan Belgrade, emblème du club serbe. Analyse complète des symboles et des couleurs du blason historique du FK Partizan.",
   content: `# L'Histoire Fascinante du **Logo Partizan Belgrade**
 
 Le **partizan belgrade logo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club profondément ancré dans la culture serbe. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **logo partizan belgrade**, ce blason qui fait la fierté des supporters du club noir et blanc de la capitale serbe.
@@ -101,5 +102,6 @@ Le **logo partizan belgrade** est bien plus qu'un simple emblème sportif : c'es
 Pour les habitants de Belgrade et les supporters du club, le **logo partizan de belgrade** représente un héritage précieux qui transcende le simple cadre sportif. Il incarne la fierté d'une ville et d'un pays, tout en portant les ambitions d'un club qui continue d'écrire son histoire dans le football européen.
 
 Le **fk partizan belgrade logo** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré les défis politiques et économiques traversés au fil des ans, a su se forger une place unique dans le paysage footballistique européen grâce à des valeurs fortes et un ancrage local profond.`,
-  keywords: "logo partizan belgrade, partizan belgrade logo, partizan belgrade logo png, fk partizan belgrade logo, logo partizan de belgrade",
+  keywords:
+    "logo partizan belgrade, partizan belgrade logo, partizan belgrade logo png, fk partizan belgrade logo, logo partizan de belgrade",
 };

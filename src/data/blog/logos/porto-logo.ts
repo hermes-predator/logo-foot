@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const portoLogoPost: BlogPost = {
   id: 449,
+  slug: "porto-logo", //
   title: "Logo FC Porto : Histoire et Symbolisme du Dragon Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo FC Porto, son évolution au fil des décennies et la signification du dragon emblématique qui symbolise la puissance du club portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo FC Porto, son évolution au fil des décennies et la signification du dragon emblématique qui symbolise la puissance du club portugais.",
   date: "2024-04-28",
   galleryImageId: 449,
   content: `# L'Histoire Passionnante du **Logo FC Porto**
@@ -40,7 +41,8 @@ Utilisé dans des animations 3D, des applications mobiles ou des jeux vidéo, le
 Au-delà de son rôle d'identification, le **logo porto** incarne les valeurs fondamentales du club : excellence, élégance, tradition et ambition. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui a défini les standards d'excellence dans le football portugais et européen.
 
 Alors que le club continue d'écrire son histoire, le **logo fc porto** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel au Portugal et dans le monde entier.`,
-  keywords: "logo porto, porto logo, porto logos, fc porto logo, logo fc porto, logo porto foot, fc porto logo png, logo de porto, logo fc porto png, logo porto fc, logo porto png, porto fc logo, porto logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo porto, porto logo, porto logos, fc porto logo, logo fc porto, logo porto foot, fc porto logo png, logo de porto, logo fc porto png, logo porto fc, logo porto png, porto fc logo, porto logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

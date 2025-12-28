@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const psgUltrasPost: BlogPost = {
   id: 457,
+  slug: "psg-ultras-logo", //
   title: "Ultras du PSG : Histoire des Supporters et Chants Emblématiques [2024]",
-  excerpt: "Découvrez l'univers passionnant des ultras du PSG : leur histoire, leurs chants emblématiques, leurs traditions et leur rôle essentiel dans l'identité du club parisien.",
+  excerpt:
+    "Découvrez l'univers passionnant des ultras du PSG : leur histoire, leurs chants emblématiques, leurs traditions et leur rôle essentiel dans l'identité du club parisien.",
   date: "2024-06-10",
   galleryImageId: 457,
   content: `# L'histoire fascinante des **ultra du psg** : passion et dévotion
@@ -62,7 +63,8 @@ La capacité d'adaptation des **ultras du psg** constituera sans doute leur plus
 Le dialogue entre le club et ses **ultra du psg** demeure essentiel pour préserver cette culture supporter unique. La reconnaissance mutuelle de leur importance respective dans l'écosystème du PSG permettra de construire un avenir où tradition et modernité coexistent harmonieusement, pour que continue de résonner la voix passionnée des tribunes parisiennes.
 
 Pour les joueurs comme pour les dirigeants, comprendre et respecter l'importance des **ultra du psg** dans l'identité du club constitue une clé essentielle pour maintenir ce lien unique entre une équipe et ses supporters les plus fidèles - ceux qui, match après match, saison après saison, incarnent l'âme véritable du Paris Saint-Germain.`,
-  keywords: "ultra du psg, psg ultras la chanson du psg, les ultras du psg, ultras du psg, chanson des ultras du psg, comment faire parti des ultras du psg, qui sont les ultras du psg, adherer aux ultras du psg, au coeur des ultras du psg, avec les ultras du psg, chanson les ultras du psg, chansons des ultras du psg, chant des ultras du psg",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "ultra du psg, psg ultras la chanson du psg, les ultras du psg, ultras du psg, chanson des ultras du psg, comment faire parti des ultras du psg, qui sont les ultras du psg, adherer aux ultras du psg, au coeur des ultras du psg, avec les ultras du psg, chanson les ultras du psg, chansons des ultras du psg, chant des ultras du psg",
+  category: "logos",
+  subCategory: "club-logos",
 };

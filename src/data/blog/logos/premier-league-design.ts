@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const premierLeagueLogoPost: BlogPost = {
   id: 453,
+  slug: "premier-league-emblems-logo", //
   title: "Football Premier League Logo : Histoire et Évolution du Logo Premiership [2024]",
-  excerpt: "Analyse détaillée du logo Premier League (Premiership) et son évolution. Découvrez l'histoire, le design et la symbolique du logo English Premier League et son impact sur le football anglais.",
+  excerpt:
+    "Analyse détaillée du logo Premier League (Premiership) et son évolution. Découvrez l'histoire, le design et la symbolique du logo English Premier League et son impact sur le football anglais.",
   date: "2024-05-29",
   galleryImageId: 453,
   content: `# L'Histoire Fascinante du **Football Premier League Logo**
@@ -171,7 +173,8 @@ Le **football premier league logo** transcende aujourd'hui largement sa fonction
 Que ce soit dans sa version animée lors des diffusions télévisuelles suivies par des milliards de téléspectateurs, sa présence omniprésente sur les réseaux sociaux, ou ses déclinaisons techniques officielles comme le **premier league logo png**, l'emblème du championnat anglais continue de rayonner comme la référence absolue du design dans l'univers footballistique mondial.
 
 À travers son évolution stratégique permanente et sa capacité remarquable d'adaptation aux environnements médiatiques émergents, le **logo premier league** illustre parfaitement comment une identité visuelle sportive peut transcender sa mission fondamentale pour devenir un actif stratégique inestimable, véritable pierre angulaire dans l'architecture globale du football contemporain.`,
-  keywords: "football premier league logo, premier league football logos, english premier league logo, logo barclays premier league, premier league logo, logo premier league, logos premier league, premier league logo png, english premier league logo png, logo premier league png, logo premier league teams, premier league logo club, barclays premier league logo, barclays premier league logo png, logo de la premier league, logo club premier league, logo football premier league, logo premier league club",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "football premier league logo, premier league football logos, english premier league logo, logo barclays premier league, premier league logo, logo premier league, logos premier league, premier league logo png, english premier league logo png, logo premier league png, logo premier league teams, premier league logo club, barclays premier league logo, barclays premier league logo png, logo de la premier league, logo club premier league, logo football premier league, logo premier league club",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

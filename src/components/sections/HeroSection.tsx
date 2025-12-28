@@ -145,7 +145,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* Boutons déplacés dans la colonne de gauche */}
-            <div className="flex flex-col gap-3 mt-4 mb-6">
+            <div className="flex flex-col gap-3 mt-4 mb-4">
               <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
                 <Dialog>
                   <DialogTrigger asChild>
@@ -199,8 +199,27 @@ const HeroSection: React.FC = () => {
               </div>
               
             </div>
-            {/* Titre + Prix block - en dessous des boutons */}
-            <h1 className="text-[9px] sm:text-[10px] md:text-[11px] font-bold mb-1 leading-tight text-gray-700 text-left mt-4">
+
+            {/* Badges de confiance minimalistes - sous les boutons */}
+            <div className="flex flex-wrap items-center gap-2.5 mb-4 text-[10px] sm:text-[11px] text-gray-500">
+              <div className="flex items-center gap-1.5">
+                <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5" />
+                <span>Paiement Sécurisé</span>
+              </div>
+              <span className="text-gray-300">•</span>
+              <div className="flex items-center gap-1.5">
+                <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5" />
+                <span>Stockable sur Drive</span>
+              </div>
+              <span className="text-gray-300">•</span>
+              <div className="flex items-center gap-1">
+                <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5" />
+                <span className="font-medium">4.8/5</span>
+              </div>
+            </div>
+
+            {/* Titre + Prix block - en dessous des badges */}
+            <h1 className="text-[9px] sm:text-[10px] md:text-[11px] font-bold mb-1 leading-tight text-gray-700 text-left">
               <span>
                 Télécharger tous les <span className="underline">logos des clubs de football</span> en 2 MINS ⏱️:
               </span>
@@ -220,24 +239,6 @@ const HeroSection: React.FC = () => {
               <div className="font-bold text-gray-700 text-[9px] sm:text-[11px]">Bon à savoir :</div>
               <div>◼︎ Le fichier est délivré dans l'immédiat, inscription non requise</div>
               <div>◼︎ Logo-foot.com est un site français sécurisé : <span className="font-bold">contact@logo-foot.com</span></div>
-            </div>
-
-            {/* Badges de confiance minimalistes */}
-            <div className="flex flex-wrap items-center gap-2.5 mt-3 text-[10px] sm:text-[11px] text-gray-500">
-              <div className="flex items-center gap-1.5">
-                <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5" />
-                <span>Paiement Sécurisé</span>
-              </div>
-              <span className="text-gray-300">•</span>
-              <div className="flex items-center gap-1.5">
-                <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-3.5" />
-                <span>Stockable sur Drive</span>
-              </div>
-              <span className="text-gray-300">•</span>
-              <div className="flex items-center gap-1">
-                <img src={trustpilotLogo} alt="TrustPilot" className="h-3.5" />
-                <span className="font-medium">4.8/5</span>
-              </div>
             </div>
             
             {/* Pastille d'urgence - Achats récents */}

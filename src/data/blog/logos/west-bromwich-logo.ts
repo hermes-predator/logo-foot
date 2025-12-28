@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const westBromwichLogoPost: BlogPost = {
   id: 591, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  slug: "west-bromwich-logo", //
   title: "Logo West Bromwich Albion : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de West Bromwich Albion: origines, signification et évolution de l'emblème emblématique des Baggies.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de West Bromwich Albion: origines, signification et évolution de l'emblème emblématique des Baggies.",
   date: "2024-05-04",
   galleryImageId: 591,
   content: `# L'Histoire Fascinante du **Logo West Bromwich Albion**
@@ -69,7 +70,8 @@ La participation des supporters dans l'évolution de l'identité visuelle rester
 De nouvelles applications technologiques du **west bromwich albion fc logo** verront certainement le jour, des réalités augmentées aux expériences immersives dans le stade, ouvrant de nouvelles façons pour les supporters d'interagir avec ce symbole emblématique des Midlands.
 
 Le **logo west bromwich albion** représente bien plus qu'un simple identifiant visuel – c'est un témoin de l'histoire riche du club, un symbole de fierté pour ses supporters et un pilier de son identité culturelle. À travers ses évolutions successives, il a su préserver l'essence de ce que signifie être un "Baggie", tout en s'adaptant aux exigences changeantes du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du blason de West Bromwich Albion l'un des emblèmes les plus respectés et authentiques du football anglais.`,
-  keywords: "logo west bromwich, logo west bromwich albion, west bromwich albion fc logo, west bromwich albion logo, west bromwich logo, west bromwich albion logo png, logo west bromwich albion 1963, logo west bromwich albion png, logo west bromwich png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo west bromwich, logo west bromwich albion, west bromwich albion fc logo, west bromwich albion logo, west bromwich logo, west bromwich albion logo png, logo west bromwich albion 1963, logo west bromwich albion png, logo west bromwich png",
+  category: "logos",
+  subCategory: "club-logos",
 };

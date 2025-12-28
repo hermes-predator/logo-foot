@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tigresUanlLogoPost: BlogPost = {
   id: 557,
+  slug: "tigres-uanl-logo", //
   title: "Logo Tigres UANL : Histoire et Analyse du Symbole Mexicain",
-  excerpt: "Découvrez l'histoire et la signification du logo Tigres UANL, l'un des clubs les plus emblématiques du football mexicain. Analyse détaillée de son évolution et de son symbolisme.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo Tigres UANL, l'un des clubs les plus emblématiques du football mexicain. Analyse détaillée de son évolution et de son symbolisme.",
   date: "2025-04-07",
   galleryImageId: 557,
   content: `# Logo Tigres UANL : L'Emblème du Club Mexicain
@@ -71,7 +72,8 @@ Le **logo Tigres UANL PNG** officiel est disponible sur le site web du club et p
 
 ### Quelle est la signification des couleurs du logo de los Tigres de la UANL?
 Dans le **logo de los Tigres de la UANL**, le jaune représente la gloire et l'excellence, tandis que le bleu symbolise la loyauté et la stabilité, des valeurs chères au club.`,
-  keywords: "logo Tigres UANL, Tigres UANL logo, logo Tigres UANL PNG, Autenticos Tigres UANL logo, logo de los Tigres de la UANL, logo UANL Tigres, tigre UANL logo, Tigres logo UANL, football mexicain, Liga MX",
-  category: 'logos',
-  subCategory: 'non-european-clubs'
+  keywords:
+    "logo Tigres UANL, Tigres UANL logo, logo Tigres UANL PNG, Autenticos Tigres UANL logo, logo de los Tigres de la UANL, logo UANL Tigres, tigre UANL logo, Tigres logo UANL, football mexicain, Liga MX",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

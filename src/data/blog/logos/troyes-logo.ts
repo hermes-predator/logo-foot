@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const troyesLogoPost: BlogPost = {
   id: 566,
+  slug: "troyes-logo", //
   title: "Logo Troyes : Histoire et Design de l'Emblème Aubois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Troyes, son évolution au fil du temps et la signification des symboles qui représentent ce club historique de Champagne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Troyes, son évolution au fil du temps et la signification des symboles qui représentent ce club historique de Champagne.",
   date: "2024-05-15",
   galleryImageId: 566,
   content: `# L'Histoire Fascinante du Logo Troyes
@@ -40,7 +41,8 @@ Utilisé dans des animations 3D, des applications mobiles ou des jeux vidéo, le
 Au-delà de sa fonction d'identification, le **logo Troyes** incarne les valeurs fondamentales du club : persévérance, ambition et ancrage territorial. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui, malgré les hauts et les bas inhérents au football, a toujours su rester fidèle à son identité.
 
 Alors que le club continue d'écrire son histoire, alternant entre première et deuxième division, le **logo ESTAC Troyes** reste le témoin visuel de ses racines profondes et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la fierté d'une institution sportive intimement liée à l'identité culturelle et sociale de sa région.`,
-  keywords: "logo troyes, troyes logo, logo estac troyes, estac troyes logo, logo troyes png, troyes fc logo, troyes logo png, logo esc troyes",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo troyes, troyes logo, logo estac troyes, estac troyes logo, logo troyes png, troyes fc logo, troyes logo png, logo esc troyes",
+  category: "logos",
+  subCategory: "club-logos",
 };

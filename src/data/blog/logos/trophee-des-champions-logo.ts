@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tropheeDesChampionsLogoPost: BlogPost = {
   id: 565,
+  slug: "trophee-des-champions-logo", //
   title: "Logo Trophée des Champions : Histoire et Design de l'Emblème LFP [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Trophée des Champions : origines, évolution et signification de l'emblème officiel de la compétition française.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Trophée des Champions : origines, évolution et signification de l'emblème officiel de la compétition française.",
   date: "2024-06-28",
   galleryImageId: 565,
   content: `# L'Histoire Fascinante du **logo Trophée des Champions**
@@ -67,7 +69,8 @@ Alors que le Trophée des Champions continue de s'affirmer comme un événement 
 Les futures itérations du **logo du Trophée des Champions** conserveront certainement les éléments qui ont fait son succès, tout en intégrant subtilement les innovations visuelles nécessaires pour maintenir sa pertinence dans un environnement médiatique en constante mutation.
 
 Le **logo Trophée des Champions PNG** restera ainsi un symbole fort de cette compétition d'ouverture, continuant à représenter efficacement les valeurs d'excellence et de spectacle qui définissent ce rendez-vous désormais incontournable du football français, tant sur la scène nationale qu'internationale.`,
-  keywords: "logo Trophée des Champions, Trophée des Champions logo, logo du Trophée des Champions, Trophée des Champions logo png, Trophées des Champions logo, logo Trophée des Champions png",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo Trophée des Champions, Trophée des Champions logo, logo du Trophée des Champions, Trophée des Champions logo png, Trophées des Champions logo, logo Trophée des Champions png",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

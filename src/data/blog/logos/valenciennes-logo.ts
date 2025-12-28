@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const valenciennesLogoPost: BlogPost = {
   id: 579,
+  slug: "valenciennes-logo", //
   title: "Logo Valenciennes : Histoire et Design de l'Emblème du VAFC [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Valenciennes FC, son évolution au fil des années et la signification des symboles qui représentent l'identité visuelle du club nordiste.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Valenciennes FC, son évolution au fil des années et la signification des symboles qui représentent l'identité visuelle du club nordiste.",
   date: "2024-05-15",
   galleryImageId: 579,
   content: `# L'Histoire Fascinante du **Logo Valenciennes**
@@ -76,7 +77,8 @@ Le **logo valenciennes** est bien plus qu'un simple symbole graphique – c'est 
 Son efficacité réside dans sa capacité à incarner à la fois l'héritage historique du club et ses ambitions contemporaines. Le **logo valenciennes fc** continue ainsi de jouer son rôle essentiel de trait d'union entre le passé glorieux du club, son présent et les aspirations qu'il nourrit pour l'avenir.
 
 Pour les supporters, le **logo valenciennes foot** représente un point de ralliement émotionnel, un symbole de fierté qui transcende les performances sportives fluctuantes pour incarner un attachement durable à des couleurs et à des valeurs. C'est cette dimension affective qui fait du **logo de valenciennes** non pas un simple emblème, mais un véritable patrimoine partagé.`,
-  keywords: "logo valenciennes, logo valenciennes foot, logo valenciennes fc, valenciennes logo, valenciennes fc logo, logo de valenciennes, logo francais football",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo valenciennes, logo valenciennes foot, logo valenciennes fc, valenciennes logo, valenciennes fc logo, logo de valenciennes, logo francais football",
+  category: "logos",
+  subCategory: "club-logos",
 };

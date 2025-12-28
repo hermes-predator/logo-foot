@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const velezSarsfieldLogoPost: BlogPost = {
   id: 581,
+  slug: "velez-sarsfield-logo", //
   title: "**Logo Velez Sarsfield** : Histoire et Évolution de l'Emblème du Club Argentin [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Velez Sarsfield**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire argentin.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Velez Sarsfield**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire argentin.",
   date: "2025-04-14",
   galleryImageId: 581,
   content: `# L'Histoire Fascinante du **Logo Velez Sarsfield**
@@ -72,6 +73,6 @@ Pour des millions de supporters en Argentine et à travers le monde, le **logo V
 
 Le **logo Velez Sarsfield** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – le "V" emblématique et les couleurs bleu et blanc – restera un symbole intemporel du football argentin et de l'héritage culturel de Buenos Aires.`,
   keywords: "logo velez sarsfield:20, logo velez sarsfield png:10",
-  category: 'logos',
-  subCategory: 'south-american-clubs',
+  category: "logos",
+  subCategory: "south-american-clubs",
 };

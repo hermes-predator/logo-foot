@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const udineseLogoPost: BlogPost = {
   id: 569,
+  slug: "udinese-logo", //
   title: "Logo Udinese : Histoire et Évolution de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'Udinese : origines, évolution et symbolisme de l'emblème emblématique du club du Frioul-Vénétie julienne.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'Udinese : origines, évolution et symbolisme de l'emblème emblématique du club du Frioul-Vénétie julienne.",
   date: "2024-06-12",
   galleryImageId: 569,
   content: `# L'Histoire Fascinante du **Logo Udinese**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo udinese calcio** incarne les 
 Alors que l'Udinese continue d'écrire son histoire sur les terrains de Serie A, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo udinese** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **udinese logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo udinese, udinese logo, logo udinese calcio, logo udinese png, udinese logo png, logo club foot udinese, logo de foot udinese calcio, logo png udinese, logo udinese foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo udinese, udinese logo, logo udinese calcio, logo udinese png, udinese logo png, logo club foot udinese, logo de foot udinese calcio, logo png udinese, logo udinese foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

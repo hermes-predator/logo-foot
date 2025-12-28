@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tanzaniaLogoPost: BlogPost = {
   id: 556,
+  slug: "tanzanie-logo", //
   title: "**Logo Tanzanie** : L'Histoire de l'Emblème des Taifa Stars [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale tanzanienne : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football tanzanien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale tanzanienne : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football tanzanien.",
   date: "2025-04-27",
   galleryImageId: 556,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "logo tanzanie, tanzanie logo, equipe foot tanzanie logo, logo de l'équipe de football tanzanie, logos federation football tanzanie",
+  keywords:
+    "logo tanzanie, tanzanie logo, equipe foot tanzanie logo, logo de l'équipe de football tanzanie, logos federation football tanzanie",
   content: `# L'Histoire Fascinante du **Logo Tanzanie**
 
 Le **logo tanzanie** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée de football, dont l'histoire est profondément ancrée dans la culture et les traditions de l'Afrique de l'Est. Le **tanzanie logo** incarne l'identité unique d'un pays qui a su développer sa propre signature dans le monde du football international.

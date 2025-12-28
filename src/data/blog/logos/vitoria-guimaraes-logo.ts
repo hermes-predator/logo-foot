@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const vitoriaGuimaraesLogoPost: BlogPost = {
   id: 587,
+  slug: "vitoria-guimaraes-logo", //
   title: "Logo Vitoria Guimaraes : Histoire et Symbolisme de l'Emblème Portugais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Vitoria Guimaraes : origines, évolution et signification du blason de ce club emblématique du football portugais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Vitoria Guimaraes : origines, évolution et signification du blason de ce club emblématique du football portugais.",
   date: "2024-08-30",
   galleryImageId: 587,
   content: `# L'Histoire Captivante du **Logo Vitoria Guimaraes**
@@ -64,8 +65,8 @@ Ces valeurs font écho à l'histoire d'un club qui, bien que n'ayant pas les res
 Le **vitoria guimaraes logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une communauté, d'une ville historique et d'une passion pour le football qui unit des générations de supporters. Sa simplicité graphique, alliée à sa profonde charge symbolique, en fait l'un des logos les plus respectés du football portugais.
 
 Alors que le club continue d'écrire son histoire, son emblème distinctif reste le témoin visuel de ses traditions et de ses aspirations futures. Pour les supporters qui arborent fièrement le **vitoria de guimaraes logo png** sur leurs drapeaux, vêtements ou écrans, il représente un héritage footballistique riche et une identité forte qui transcende les simples résultats sportifs.`,
-  keywords: "logo vitoria guimaraes, vitoria guimaraes logo, vitoria guimaraes logo png, logo foot vitoria guimaraes, vitoria de guimaraes logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo vitoria guimaraes, vitoria guimaraes logo, vitoria guimaraes logo png, logo foot vitoria guimaraes, vitoria de guimaraes logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

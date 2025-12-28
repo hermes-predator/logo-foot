@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const walsallLogoPost: BlogPost = {
   id: 589,
+  slug: "walsall-logo", //
   title: "**Logo Walsall** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Walsall FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Walsall à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Walsall FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Walsall à travers les années.",
   date: "2024-04-20",
   galleryImageId: 589,
   category: "logos",

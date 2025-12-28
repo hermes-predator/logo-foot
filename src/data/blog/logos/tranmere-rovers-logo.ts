@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tranmereRoversLogoPost: BlogPost = {
   id: 564,
+  slug: "tranmere-rovers-logo", //
   title: "**Logo Tranmere Rovers** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Tranmere Rovers FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Tranmere Rovers à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Tranmere Rovers FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Tranmere Rovers à travers les années.",
   date: "2024-04-20",
   galleryImageId: 564,
   category: "logos",

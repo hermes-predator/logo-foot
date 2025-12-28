@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const unibetLogoPost: BlogPost = {
   id: 571, // ID unique qui n'est pas déjà utilisé
+  slug: "unibet-logo", //
   title: "Logo Unibet : Histoire et Design de l'Emblème du Bookmaker [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Unibet : des origines à aujourd'hui, évolution et signification de l'emblème vert du célèbre bookmaker sportif.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Unibet : des origines à aujourd'hui, évolution et signification de l'emblème vert du célèbre bookmaker sportif.",
   date: "2024-05-26",
   galleryImageId: 571,
   content: `# L'Histoire Fascinante du **Logo Unibet**
@@ -65,6 +66,6 @@ Le **logo unibet** représente bien plus qu'une simple signature visuelle : c'es
 
 Des terrains de football aux plateformes digitales, le **logo unibet png** continue de jouer un rôle crucial dans la stratégie de communication de l'entreprise, démontrant la puissance d'une identité visuelle cohérente et évolutive. Pour tous ceux qui s'intéressent au branding sportif, le parcours du **unibet logo** offre des enseignements précieux sur l'art de construire et de faire évoluer une marque mondiale.`,
   keywords: "logo unibet, unibet logo, logo unibet png, unibet logo png, logo png unibet",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

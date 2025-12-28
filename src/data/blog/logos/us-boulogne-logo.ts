@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const usBoulogneLogoPost: BlogPost = {
   id: 575,
+  slug: "us-boulogne-logo", //
   title: "Logo US Boulogne : Histoire et Symbolisme du Blason Nordiste [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'US Boulogne : des origines à aujourd'hui, toute l'évolution et la signification de l'emblème du club du Nord-Pas-de-Calais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'US Boulogne : des origines à aujourd'hui, toute l'évolution et la signification de l'emblème du club du Nord-Pas-de-Calais.",
   date: "2024-04-13",
   galleryImageId: 575,
   content: `Guide Complet du **Logo US Boulogne**
@@ -81,6 +82,6 @@ Conclusion sur le **Logo US Boulogne**
 
 L'emblème de l'US Boulogne représente parfaitement l'alliance entre tradition maritime nordiste et modernité footballistique. À travers ses couleurs, ses symboles et son design, le **US Boulogne logo** incarne l'identité profonde d'un club historique du football français, tout en s'adaptant aux exigences visuelles contemporaines.`,
   keywords: "us boulogne logo, logo us boulogne, usbco logo, logo usbco, emblème boulogne, blason us boulogne",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };

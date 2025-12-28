@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const trabzonsporLogoPost: BlogPost = {
   id: 563,
+  slug: "trabzonspor-logo", //
   title: "Trabzonspor Logo : Histoire et Évolution de l'Emblème Turc [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Trabzonspor : origines, signification et évolution de l'emblème du club emblématique de la Super Lig turque.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Trabzonspor : origines, signification et évolution de l'emblème du club emblématique de la Super Lig turque.",
   date: "2024-05-29",
   galleryImageId: 563,
   content: `# L'Histoire Fascinante du **Trabzonspor Logo**
@@ -56,7 +57,8 @@ Le **trabzonspor logo** continue d'évoluer tout en préservant son essence et s
 Que ce soit dans sa version classique ou dans sa déclinaison numérique optimisée sous forme de **trabzonspor logo png**, l'emblème de Trabzonspor continuera de représenter les valeurs et l'identité unique de ce club emblématique du football turc, tout en s'adaptant aux défis visuels et médiatiques de demain.
 
 Ainsi, le **logo trabzonspor** perpétue sa mission essentielle : relier le passé glorieux du club à son avenir ambitieux, tout en servant de symbole unificateur pour des générations de supporters passionnés.`,
-  keywords: "trabzonspor logo, logo trabzonspor, trabzonspor logo png, trabzonspor png logo, trabzonspor basaksehir logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "trabzonspor logo, logo trabzonspor, trabzonspor logo png, trabzonspor png logo, trabzonspor basaksehir logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

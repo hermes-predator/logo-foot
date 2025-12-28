@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const valenciaCfLogoPost: BlogPost = {
   id: 578, // ID unique pour ce nouvel article
+  slug: "valence-logo", //
   title: "Logo Valence CF : Histoire et Symbolisme de l'Écusson Emblématique",
   date: "2025-04-11",
   galleryImageId: 578,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Valence CF, l'un des clubs les plus prestigieux d'Espagne. Analyse complète des symboles et de l'héritage du blason valencien.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Valence CF, l'un des clubs les plus prestigieux d'Espagne. Analyse complète des symboles et de l'héritage du blason valencien.",
   content: `# L'Histoire Fascinante du **Logo Valence**
 
 Le **logo Valence** est l'un des emblèmes les plus reconnaissables du football espagnol. Représentant le Valencia Club de Fútbol, fondé en 1919, ce **valence logo** incarne l'histoire riche et la tradition d'un club qui compte parmi les plus titrés d'Espagne. Dans cet article, nous allons explorer en profondeur l'histoire, le symbolisme et l'évolution de cet écusson emblématique.
@@ -96,5 +97,6 @@ Le **logo valence** est un symbole puissant qui incarne l'histoire, la tradition
 Que ce soit sous forme imprimée ou sous format numérique **valence logo png**, cet emblème continue de représenter fièrement l'un des clubs les plus historiques et titrés de La Liga espagnole, tout en maintenant une connexion profonde avec la culture et l'identité de la ville de Valence.
 
 Le **logo FC Valence** reste un témoignage visuel de l'héritage culturel et sportif valencien, un symbole qui continuera d'inspirer les générations futures de supporters "Che" et de représenter les valeurs d'excellence, de tradition et de fierté régionale qui font la renommée du Valencia Club de Fútbol.`,
-  keywords: "logo valence, valence logo, fc valence logo, logo de valence, logo fc valence, logo valence fc, logo valence foot, logo valence png, valence logo png",
+  keywords:
+    "logo valence, valence logo, fc valence logo, logo de valence, logo fc valence, logo valence fc, logo valence foot, logo valence png, valence logo png",
 };

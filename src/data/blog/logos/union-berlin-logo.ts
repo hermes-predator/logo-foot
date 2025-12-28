@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const unionBerlinLogoPost: BlogPost = {
   id: 572,
+  slug: "union-berlin-logo", //
   title: "Logo FC Union Berlin : Histoire et Évolution d'un Symbole Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Union Berlin, symbole d'un club unique en Bundesliga. Analyse complète de son évolution et de sa signification culturelle.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Union Berlin, symbole d'un club unique en Bundesliga. Analyse complète de son évolution et de sa signification culturelle.",
   date: "2024-04-15",
   galleryImageId: 572,
   content: `# L'Histoire du **Logo Union Berlin** : Un Symbole d'Authenticité

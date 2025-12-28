@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const torquayUnitedLogoPost: BlogPost = {
   id: 559,
+  slug: "torquay-united-logo", //
   title: "**Logo Torquay United** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Torquay United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Torquay United à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Torquay United FC logo**, symbole d'identité du club anglais. Une analyse détaillée de l'emblème de Torquay United à travers les années.",
   date: "2024-04-20",
   galleryImageId: 559,
   category: "logos",
@@ -46,5 +47,6 @@ L'emblème est devenu un symbole de fierté pour les générations de supporters
 ## Conclusion
 
 Le **logo Torquay United** est bien plus qu'un simple identifiant visuel : c'est le gardien d'une histoire riche, le symbole d'une communauté unie et le porte-étendard des ambitions du club. Son design équilibré entre tradition et modernité en fait un emblème intemporel qui continuera d'inspirer les générations futures de supporters.`,
-  keywords: "**logo torquay united**:10, **torquay united logo**:10, **torquay united fc logo**:10, **torquay united logo png**:10",
+  keywords:
+    "**logo torquay united**:10, **torquay united logo**:10, **torquay united fc logo**:10, **torquay united logo png**:10",
 };

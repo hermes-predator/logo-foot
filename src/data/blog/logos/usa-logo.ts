@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const usaLogoPost: BlogPost = {
   id: 576,
+  slug: "usa-logo", //
   title: "Logo USA : Histoire et Évolution de l'Emblème de Team USA [2024]",
-  excerpt: "Découvrez l'histoire complète du logo USA : des origines à aujourd'hui, évolution et signification de l'emblème de Team USA, symbole du football américain.",
+  excerpt:
+    "Découvrez l'histoire complète du logo USA : des origines à aujourd'hui, évolution et signification de l'emblème de Team USA, symbole du football américain.",
   date: "2024-05-30",
   galleryImageId: 576,
   content: `# L'Histoire Fascinante du **Logo USA**
@@ -65,7 +67,8 @@ Le **logo usa** a parcouru un chemin remarquable, depuis ses premières incarnat
 Pour les générations futures de footballeurs et supporters américains, le **logo etats unis** continuera d'incarner l'excellence, la persévérance et la fierté nationale. Alors que le football américain poursuit son développement vers de nouveaux sommets, son emblème distinctif restera le témoin visuel de cette aventure sportive exceptionnelle.
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo usa png**, l'emblème national du football américain a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, rappelant que la nation américaine peut conjuguer parfaitement respect des traditions et innovation visuelle pour créer un symbole sportif puissant et durable.`,
-  keywords: "logo usa, usa logo, logo team usa, team usa logo, logo foot usa, logo football usa, logo usa png, logo des etats unis, logo etats unis, logo etats unis foot",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo usa, usa logo, logo team usa, team usa logo, logo foot usa, logo football usa, logo usa png, logo des etats unis, logo etats unis, logo etats unis foot",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

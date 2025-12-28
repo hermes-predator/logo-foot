@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const venezuelaLogoPost: BlogPost = {
   id: 582,
+  slug: "venezuela-logo", //
   title: "**Logo Venezuela** : Histoire et Signification de l'Emblème de la Vinotinto [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale vénézuélienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale vénézuélienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-27",
   category: "national-logos",
   subCategory: "national-logos",
@@ -42,5 +43,6 @@ Le **logo de venezuela** continue d'évoluer, tout comme le football vénézuél
 ## Conclusion : Un Symbole en Constante Évolution
 
 Le **logo club football venezuela** reste un témoin vivant de l'évolution du football vénézuélien. Il incarne les espoirs et les ambitions d'une nation qui, pas à pas, construit son identité footballistique et aspire à se faire une place parmi les grandes nations du football sud-américain.`,
-  keywords: "logo venezuela, venezuela logo, logo venezuela futbol, logo de venezuela, logo club football venezuela, logo venezuela png"
+  keywords:
+    "logo venezuela, venezuela logo, logo venezuela futbol, logo de venezuela, logo club football venezuela, logo venezuela png",
 };

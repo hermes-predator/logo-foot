@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const vascoLogoPost: BlogPost = {
   id: 580,
+  slug: "vasco-da-gama-logo", //
   title: "**Logo Vasco da Gama** : Histoire et Design de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Vasco da Gama**, un symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Vasco da Gama logo**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Vasco da Gama**, un symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Vasco da Gama logo**.",
   date: "2024-04-22",
   galleryImageId: 580,
   content: `# L'Histoire Fascinante du **Logo Vasco da Gama**
@@ -62,7 +63,8 @@ Le **logo Vasco da Gama** aujourd'hui :
 ## Conclusion
 
 Le **logo Vasco da Gama** transcende son rôle d'emblème sportif pour incarner l'histoire, la tradition et la passion du football brésilien. Il reste un symbole puissant qui continue d'inspirer les générations de supporters.`,
-  keywords: "logo vasco da gama, vasco da gama logo, vasco da gama logo png, football brésilien, clube carioca, emblème vasco",
+  keywords:
+    "logo vasco da gama, vasco da gama logo, vasco da gama logo png, football brésilien, clube carioca, emblème vasco",
   category: "logos",
-  subCategory: "brazilian-clubs"
+  subCategory: "brazilian-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const westerloLogoPost: BlogPost = {
   id: 593,
+  slug: "westerlo-logo", //
   title: "**Logo Westerlo** : Histoire et Évolution de l'Emblème du KVC [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Westerlo**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo KVC Westerlo** et de son évolution.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Westerlo**, symbole d'identité et de tradition dans le football belge. Une analyse détaillée du **logo KVC Westerlo** et de son évolution.",
   date: "2024-04-19",
   galleryImageId: 593,
   category: "logos",
@@ -55,5 +56,6 @@ Le **logo Westerlo** trouve de nombreuses applications marketing. Les maillots o
 ## Conclusion
 
 Le **logo Westerlo** reste un symbole fort du football belge, alliant tradition et modernité dans son expression visuelle. Le **logo KVC Westerlo** continue d'évoluer tout en préservant son essence historique.`,
-  keywords: "logo westerlo, westerlo logo, logo kvc westerlo, logo kv westerlo, kvc westerlo logo png, football belge, club belge, identité visuelle",
+  keywords:
+    "logo westerlo, westerlo logo, logo kvc westerlo, logo kv westerlo, kvc westerlo logo png, football belge, club belge, identité visuelle",
 };

@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const turkeyLogoPost: BlogPost = {
   id: 568,
+  slug: "turquie-logo", //
   title: "Logo Turquie : Histoire et Symbolisme de l'Emblème du Football Turc",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale turque de football, ses origines et son évolution à travers les décennies dans cette analyse complète. Plongez dans les détails de cet emblème qui représente la fierté d'une nation.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale turque de football, ses origines et son évolution à travers les décennies dans cette analyse complète. Plongez dans les détails de cet emblème qui représente la fierté d'une nation.",
   date: "2024-06-06",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   galleryImageId: 568,
   content: `# Histoire Fascinante du **Logo Turquie**
 
@@ -38,5 +39,6 @@ Le **logo foot équipe de la turquie** est devenu un symbole reconnaissable dans
 Le succès croissant du football turc, tant au niveau des clubs que de la sélection nationale, a également contribué à la modernisation continue du **logo turquie**. Les récentes modifications subtiles apportées au design reflètent l'ambition d'une fédération qui cherche à allier tradition et innovation, tout en préservant l'essence même de son identité.
 
 À travers son histoire, le **logo turquie** est devenu bien plus qu'un simple insigne sportif - c'est un symbole d'unité et de fierté nationale qui continue d'inspirer les générations futures de footballeurs turcs. Son évolution reflète parfaitement le développement constant du football turc et sa capacité à s'adapter tout en préservant ses traditions séculaires. C'est un emblème qui raconte l'histoire d'une nation passionnée, unie par son amour du football et sa quête d'excellence sur la scène internationale.`,
-  keywords: "logo turquie, turquie logo, logo turquie foot, turquie foot logo, logo club foot turquie, logo de la turquie, logo foot turquie, logo turquie png, logo equipe turquie, logo turquie football, turquie logo png, logo club de foot turquie, logo foot équipe de la turquie"
+  keywords:
+    "logo turquie, turquie logo, logo turquie foot, turquie foot logo, logo club foot turquie, logo de la turquie, logo foot turquie, logo turquie png, logo equipe turquie, logo turquie football, turquie logo png, logo club de foot turquie, logo foot équipe de la turquie",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const uruguayLogoPost: BlogPost = {
   id: 574,
+  slug: "uruguay-logo", //
   title: "Logo Uruguay : Histoire et Design de l'Emblème du Football Uruguayen [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Uruguay : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Uruguay : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-10",
   galleryImageId: 574,
   content: `# L'Histoire Fascinante du Logo Uruguay
@@ -45,7 +47,8 @@ Cette notoriété internationale du **logo club de foot uruguay** témoigne du p
 Tout en conservant ses éléments fondamentaux, le **logo uruguay foot** continue d'évoluer subtilement pour répondre aux défis du football moderne. Les récentes versions du **uruguay soccer logo** montrent une tendance vers une simplification graphique qui facilite son utilisation sur les supports digitaux tout en renforçant son impact visuel instantané.
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo foot uruguay** un exemple remarquable de continuité dans le design sportif. Alors que de nombreuses fédérations optent pour des ruptures radicales dans leur identité visuelle, l'**uruguay logo png** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
-  keywords: "logo uruguay foot, logo foot uruguay, logo uruguay, logo uruguay football, logo uruguay png, uruguay foot logo, uruguay football logo, uruguay logo, uruguay logo foot, uruguay logo png, uruguay soccer logo, logo uruguay futbol, uruguay logo football, uruguay png logo, equipe d'uruguay logo, logo club de foot uruguay, logo de l uruguay",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo uruguay foot, logo foot uruguay, logo uruguay, logo uruguay football, logo uruguay png, uruguay foot logo, uruguay football logo, uruguay logo, uruguay logo foot, uruguay logo png, uruguay soccer logo, logo uruguay futbol, uruguay logo football, uruguay png logo, equipe d'uruguay logo, logo club de foot uruguay, logo de l uruguay",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

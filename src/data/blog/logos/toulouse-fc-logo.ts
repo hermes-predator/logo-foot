@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const toulouseFCLogoPost: BlogPost = {
   id: 561, // Updated to a unique ID
+  slug: "toulouse-logo", //
   title: "Logo Toulouse FC : Histoire et Évolution du Design Violet [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Toulouse Football Club : origines, symbolisme et évolution de l'emblème violet emblématique du club de la ville rose.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Toulouse Football Club : origines, symbolisme et évolution de l'emblème violet emblématique du club de la ville rose.",
   date: "2024-04-15",
   galleryImageId: 561,
   content: `# Histoire et Évolution du **Logo Toulouse FC**
@@ -84,7 +85,8 @@ Extension de l'Écosystème Visuel : Au-delà du **logo toulouse fc** lui-même,
 Le **logo toulouse** représente bien plus qu'un simple identifiant visuel - c'est l'incarnation graphique d'une histoire riche, d'une identité régionale forte et d'une passion partagée par des milliers de supporters. Du **logo toulouse fc** originel aux versions contemporaines du **logo tfc**, cette évolution témoigne de la capacité du club à honorer son héritage tout en embrassant la modernité.
 
 À travers sa couleur violette distinctive, sa croix occitane emblématique et son design équilibré, le **toulouse football club logo** continue de symboliser fièrement l'âme d'un club qui occupe une place unique dans le paysage du football français. Que ce soit sur les maillots des joueurs, dans les rues de la ville rose ou sur les écrans du monde entier, le **logo toulouse** demeure un symbole puissant d'identité, de tradition et d'ambition.`,
-  keywords: "logo toulouse, logo toulouse football club, toulouse logo, toulouse football club logo, logo toulouse fc, toulouse fc logo, logo de toulouse, logo toulouse foot, fc toulouse logo, logo tfc, tfc logo, logo tfc png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo toulouse, logo toulouse football club, toulouse logo, toulouse football club logo, logo toulouse fc, toulouse fc logo, logo de toulouse, logo toulouse foot, fc toulouse logo, logo tfc, tfc logo, logo tfc png",
+  category: "logos",
+  subCategory: "club-logos",
 };

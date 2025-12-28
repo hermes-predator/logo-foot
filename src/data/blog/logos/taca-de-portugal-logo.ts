@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tacaDePortugalLogoPost: BlogPost = {
   id: 555, // Keeping ID 193 as it seems to be the one referenced in the URL
+  slug: "taca-de-portugal-logo", //
   title: "Logo Taça de Portugal : Histoire et Évolution du Symbole Emblématique [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la Taça de Portugal : origines, évolution et signification de ce symbole emblématique du football portugais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la Taça de Portugal : origines, évolution et signification de ce symbole emblématique du football portugais.",
   date: "2024-06-25",
   galleryImageId: 555,
   content: `# L'Histoire Fascinante du **Logo Taça de Portugal**
@@ -65,7 +67,8 @@ Alors que le football continue d'évoluer à l'ère du digital et de la mondiali
 Les campagnes marketing futures utiliseront probablement le **logo taca de portugal** comme pierre angulaire de leur stratégie communicationnelle, exploitant sa forte reconnaissance et les émotions positives qu'il suscite auprès des supporters. La dimension digitale prendra une importance croissante, avec des animations et des déclinaisons dynamiques de l'emblème adaptées aux différentes plateformes.
 
 Dans ce contexte d'évolution permanente, le **taça de portugal logo** continuera sans doute à représenter l'excellence du football portugais, servant de trait d'union entre le riche passé de cette compétition historique et son avenir prometteur dans un paysage footballistique en constante mutation.`,
-  keywords: "logo taça de portugal, taca de portugal logo, taça de portugal logo, logo taca de portugal, logo taça de portugal png, coupe portugal logo, embleme taça de portugal, symbole taca de portugal, football portugais logo, federation portugaise logo",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo taça de portugal, taca de portugal logo, taça de portugal logo, logo taca de portugal, logo taça de portugal png, coupe portugal logo, embleme taça de portugal, symbole taca de portugal, football portugais logo, federation portugaise logo",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

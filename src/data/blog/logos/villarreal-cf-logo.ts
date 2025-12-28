@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const villarrealCfLogoPost: BlogPost = {
   id: 586,
+  slug: "villarreal-logo", //
   title: "Logo Villarreal CF : Histoire et Évolution de l'Emblème du Sous-marin Jaune [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Villarreal CF : des origines à aujourd'hui, évolution et signification de l'emblème du Sous-marin Jaune de La Liga.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Villarreal CF : des origines à aujourd'hui, évolution et signification de l'emblème du Sous-marin Jaune de La Liga.",
   date: "2024-05-05",
   galleryImageId: 586,
   content: `# L'Histoire Fascinante du Logo Villarreal CF
@@ -75,7 +76,8 @@ Le château stylisé parfois présent dans certaines versions du **villarreal lo
 
 **Où peut-on trouver le logo Villarreal officiel en haute résolution ?**
 Le **villarreal cf logo png** officiel en haute résolution est disponible sur le site web du club, ainsi que dans la section médias dédiée aux partenaires et à la presse.`,
-  keywords: "logo villarreal cf, villarreal fc logo, logo villarreal, villarreal logo, logo villarreal png, villarreal cf logo, villarreal logo png, villarreal cf logo png, logo de foot villarreal, logo fc villarreal, logo foot villarreal, nouveau logo villarreal, submarine amarillo logo, villarreal football logo, symbole villarreal, ecusson villarreal",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo villarreal cf, villarreal fc logo, logo villarreal, villarreal logo, logo villarreal png, villarreal cf logo, villarreal logo png, villarreal cf logo png, logo de foot villarreal, logo fc villarreal, logo foot villarreal, nouveau logo villarreal, submarine amarillo logo, villarreal football logo, symbole villarreal, ecusson villarreal",
+  category: "logos",
+  subCategory: "club-logos",
 };

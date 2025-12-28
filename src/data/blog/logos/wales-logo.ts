@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const walesLogoPost: BlogPost = {
   id: 588,
+  slug: "pays-de-galles-logo", //
   title: "**Logo Pays de Galles** : Histoire et Évolution du Dragon Rouge [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale galloise : des origines à aujourd'hui, évolution et signification de l'emblème du dragon rouge.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale galloise : des origines à aujourd'hui, évolution et signification de l'emblème du dragon rouge.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -30,5 +31,6 @@ La modernité du design actuel du **pays de galle foot logo** ne fait pas oublie
 Le **logo pays de galles** est devenu au fil du temps un véritable symbole d'unité nationale. Sur les terrains comme dans les tribunes, il incarne la passion d'un peuple pour le football et son attachement à ses traditions. Cette double dimension fait du **logo foot pays de galles** un emblème particulièrement significatif dans le paysage du football international.
 
 L'influence grandissante du football gallois sur la scène européenne a contribué à renforcer la reconnaissance du **logo pays de galles foot** bien au-delà des frontières nationales. Les performances remarquables de l'équipe lors des récentes compétitions internationales ont donné une nouvelle dimension à cet emblème qui incarne désormais l'excellence du football gallois.`,
-  keywords: "logo pays de galles, pays de galles logo, logo foot pays de galles, logo pays de galles foot, foot logo pays de galles, logo club football pays de galles, logo equipe du pays de galles, logo pays de galles football, pays de galle foot logo, pays de galle logo foot"
+  keywords:
+    "logo pays de galles, pays de galles logo, logo foot pays de galles, logo pays de galles foot, foot logo pays de galles, logo club football pays de galles, logo equipe du pays de galles, logo pays de galles football, pays de galle foot logo, pays de galle logo foot",
 };

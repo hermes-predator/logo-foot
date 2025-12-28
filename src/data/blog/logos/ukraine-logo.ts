@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ukraineLogoPost: BlogPost = {
   id: 570,
+  slug: "ukraine-logo", //
   title: "Logo Ukraine : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ukraine : des origines à aujourd'hui, évolution et signification de l'emblème du football ukrainien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale d'Ukraine : des origines à aujourd'hui, évolution et signification de l'emblème du football ukrainien.",
   date: "2024-04-01",
   galleryImageId: 570,
   content: `# L'Histoire Fascinante du Logo Ukraine Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **logo ukraine football** ont égalemen
 Au-delà de sa dimension sportive, le **logo ukraine** est devenu un puissant symbole d'unité nationale et de résilience, particulièrement dans les moments difficiles que traverse le pays. Sur les terrains internationaux, le **logo foot ukraine** représente bien plus qu'une équipe de football : il incarne l'esprit de tout un peuple.
 
 Les joueurs qui portent fièrement le maillot orné du **ukraine football logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également les valeurs et l'espoir de toute une nation qui se reconnaît dans ce symbole emblématique.`,
-  keywords: "logo ukraine, ukraine logo, logo ukraine foot, logo ukraine football, logo de l'ukraine, logo foot ukraine, ukraine football logo, ukraine logo foot, ukraine logo png, logo club ukraine",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo ukraine, ukraine logo, logo ukraine foot, logo ukraine football, logo de l'ukraine, logo foot ukraine, ukraine football logo, ukraine logo foot, ukraine logo png, logo club ukraine",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const westHamLogoPost: BlogPost = {
   id: 592,
+  slug: "west-ham-logo", //
   title: "Logo West Ham United : Histoire et Evolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de West Ham United, son évolution au fil des années et la signification de ses symboles emblématiques dans cette analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de West Ham United, son évolution au fil des années et la signification de ses symboles emblématiques dans cette analyse détaillée.",
   date: "2024-04-15",
   galleryImageId: 592,
   content: `# L'Histoire Passionnante du **Logo West Ham United**
@@ -46,7 +47,8 @@ Pour la communauté mondiale des supporters des Hammers, le **west ham fc logo**
 Qu'il soit arboré sur un maillot, un drapeau ou un écran de téléphone, le **logo west ham united png** continue d'incarner des valeurs fortes comme le travail, la persévérance et la fierté locale, faisant de cet emblème l'un des plus respectés du football anglais.
 
 Le **west ham united logo** est véritablement devenu un témoin visuel de l'évolution d'un club qui, tout en embrassant la modernité du football contemporain, n'a jamais oublié ses racines et son identité distinctive ancrée dans l'histoire industrielle de Londres.`,
-  keywords: "logo west ham, west ham fc logo, west ham football club logo, west ham logo, west ham united logo, logo west ham united, logo de west ham, logo west ham png, west ham logo png, logo west ham united png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo west ham, west ham fc logo, west ham football club logo, west ham logo, west ham united logo, logo west ham united, logo de west ham, logo west ham png, west ham logo png, logo west ham united png",
+  category: "logos",
+  subCategory: "club-logos",
 };

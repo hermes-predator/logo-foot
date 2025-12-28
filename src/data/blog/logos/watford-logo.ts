@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const watfordLogoPost: BlogPost = {
   id: 590, // Using a unique ID that isn't already used
+  slug: "watford-logo", //
   title: "Logo Watford : Histoire et Design de l'Emblème des Hornets [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Watford FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Watford FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-11",
   galleryImageId: 590,
   content: `# L'Histoire Fascinante du **Logo Watford**
@@ -52,7 +53,8 @@ Le défi pour les futures versions du **logo de foot watford** sera de maintenir
 Le **logo watford** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **watford football club logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **logo watford png** continuera de faire briller les couleurs jaunes et noires des Hornets sur les terrains de football et au-delà.`,
-  keywords: "watford fc logo, watford football club logo, watford logo, logo watford png, watford logo png, logo watford fc, logo de foot angleterre watford, logo de foot watford, logo watford",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "watford fc logo, watford football club logo, watford logo, logo watford png, watford logo png, logo watford fc, logo de foot angleterre watford, logo de foot watford, logo watford",
+  category: "logos",
+  subCategory: "club-logos",
 };

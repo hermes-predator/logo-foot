@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const vierzonLogoPost: BlogPost = {
   id: 584,
+  slug: "vierzon-logo", //
   title: "**Logo Vierzon FC** : Histoire et Evolution de l'Emblème Régional [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Vierzon**, son évolution et la symbolique de cet emblème emblématique du football berrichon.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Vierzon**, son évolution et la symbolique de cet emblème emblématique du football berrichon.",
   date: "2024-04-18",
   galleryImageId: 584,
   content: `# L'Histoire Fascinante du **Logo Vierzon**
@@ -62,7 +63,8 @@ Le **logo vierzon** continue d'évoluer tout en restant fidèle à ses racines. 
 ## Conclusion
 
 Le **football logo vierzon** demeure un symbole fort du football berrichon, incarnant à la fois l'histoire d'un club, l'identité d'une ville et les aspirations d'une communauté passionnée. À travers ses évolutions, le **logo vierzon** continue de porter les valeurs et l'ambition d'une institution sportive ancrée dans son territoire.`,
-  keywords: "logo vierzon:20, vierzon logo:20, fc vierzon logo:10, football logo vierzon:10, logo de vierzon:10, logo vierzon fc:10",
-  category: 'logos',
-  subCategory: 'french-clubs',
+  keywords:
+    "logo vierzon:20, vierzon logo:20, fc vierzon logo:10, football logo vierzon:10, logo de vierzon:10, logo vierzon fc:10",
+  category: "logos",
+  subCategory: "french-clubs",
 };

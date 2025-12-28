@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const tottenhamLogoPost: BlogPost = {
   id: 560,
+  slug: "tottenham-logo", //
   title: "Logo Tottenham : L'Histoire du Coq Légendaire des Spurs [2024]",
-  excerpt: "Plongez dans l'histoire fascinante du logo Tottenham, symbole d'audace et de fierté. Découvrez l'évolution de l'emblème mythique des Spurs de Londres.",
+  excerpt:
+    "Plongez dans l'histoire fascinante du logo Tottenham, symbole d'audace et de fierté. Découvrez l'évolution de l'emblème mythique des Spurs de Londres.",
   date: "2024-04-06",
   galleryImageId: 560,
   content: `# L'Histoire Fascinante du **Logo Tottenham**
@@ -78,7 +79,8 @@ Les innovations technologiques offrent de nouvelles possibilités d'expression p
 Le magnifique nouveau stade inaugéré en 2019 intègre le **Tottenham Logo PNG** de façon monumentale dans son architecture, avec un emblème géant illuminant la façade principale et des variations du logo ornant les espaces intérieurs, renforçant ainsi la présence visuelle de ce symbole iconique.
 
 Le **logo Tottenham Hotspur** demeure ainsi un symbole puissant du football anglais, incarnant parfaitement l'équilibre entre tradition centenaire et ambitions contemporaines. Le **Tottenham Hotspur FC Logo** continue d'inspirer joueurs et supporters, tout en portant l'héritage d'un club singulier aux racines profondes vers de nouveaux sommets d'excellence et de reconnaissance mondiale.`,
-  keywords: "logo tottenham, tottenham club logo, tottenham football club logo, tottenham fc logo, tottenham hotspur f.c. logo, tottenham hotspur football club logo, tottenham hotspur fc logo, tottenham hotspur logo, tottenham logo, tottenham spurs logo, logo tottenham hotspur png, tottenham logo png, tottenham hotspur logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo tottenham, tottenham club logo, tottenham football club logo, tottenham fc logo, tottenham hotspur f.c. logo, tottenham hotspur football club logo, tottenham hotspur fc logo, tottenham hotspur logo, tottenham logo, tottenham spurs logo, logo tottenham hotspur png, tottenham logo png, tottenham hotspur logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const usmAlgerLogoPost: BlogPost = {
   id: 577,
+  slug: "usm-alger-logo", //
   title: "**Logo USM Alger** : Histoire et Évolution de l'Emblème du Club Algérien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo USM Alger**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo USM Alger**, symbole d'identité et de fierté du club algérien, à travers son évolution et sa signification profonde.",
   date: "2024-04-16",
   galleryImageId: 577,
   content: `# L'Histoire Fascinante du **Logo USM Alger**
@@ -75,6 +76,6 @@ Le **logo usm alger** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "usm alger logo, logo usm alger, logo png usm alger",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

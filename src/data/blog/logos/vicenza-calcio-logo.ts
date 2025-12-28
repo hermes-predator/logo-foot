@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const vicenzaCalcioLogoPost: BlogPost = {
   id: 583,
+  slug: "vicenza-logo", //
   title: "Logo Vicenza Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Vicenza Calcio : des origines à aujourd'hui, évolution et signification de l'emblème du club historique de Vénétie.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Vicenza Calcio : des origines à aujourd'hui, évolution et signification de l'emblème du club historique de Vénétie.",
   date: "2024-04-10",
   galleryImageId: 583,
   content: `# L'Histoire Fascinante du Logo Vicenza Calcio
@@ -42,7 +43,8 @@ Le **Vicenza logo** incarne les valeurs fondamentales du club : passion, déterm
 Pour les jeunes supporters du club, le **Vicenza logo foot** représente un lien avec l'histoire glorieuse du club, notamment sa victoire en Coupe d'Italie en 1997. Ce succès majeur a contribué à graver le **Vicenza Calcio logo** dans la mémoire collective des amateurs de football italiens, faisant de cet emblème un symbole de persévérance et de réussite sportive.
 
 En conclusion, le **logo Vicenza** est bien plus qu'un simple écusson de club : c'est un symbole d'identité régionale, un repère visuel pour des générations de supporters et un élément central de l'histoire du football italien. À travers ses évolutions subtiles au fil des décennies, le **Vicenza Calcio logo** a su rester fidèle à ses origines tout en s'adaptant aux exigences modernes, faisant de lui l'un des emblèmes les plus respectés du calcio italien.`,
-  keywords: "logo vicenza calcio, vicenza calcio logo, vicenza logo, vicenza logo foot, emblème vicenza, blason vicenza, football vicenza, écusson vicenza, logo vicenza calcio vectoriel, histoire logo vicenza, vicenza emblème",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo vicenza calcio, vicenza calcio logo, vicenza logo, vicenza logo foot, emblème vicenza, blason vicenza, football vicenza, écusson vicenza, logo vicenza calcio vectoriel, histoire logo vicenza, vicenza emblème",
+  category: "logos",
+  subCategory: "club-logos",
 };

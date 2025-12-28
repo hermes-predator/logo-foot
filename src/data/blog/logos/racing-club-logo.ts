@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const racingClubLogoPost: BlogPost = {
   id: 463,
+  slug: "racing-club-logo", //
   title: "**Logo Racing Club** : Histoire et Évolution de l'Emblème Argentin [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Racing Club logo**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de Racing Club**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Racing Club logo**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de Racing Club**.",
   date: "2024-04-22",
   galleryImageId: 463,
   content: `# L'Histoire Fascinante du **Logo Racing Club**
@@ -42,7 +43,8 @@ Le **Racing Club logo** continue d'évoluer tout en préservant son essence. C'e
 ## Conclusion
 
 Le **logo Racing Club** est bien plus qu'un simple emblème sportif : c'est un symbole qui raconte l'histoire d'un club centenaire, de sa ville et de ses supporters. À travers les années, il a su évoluer tout en conservant son authenticité et sa force symbolique dans le football argentin.`,
-  keywords: "logo racing club, racing club logo, logo de racing club, ecusson racing club, blason racing club, embleme racing club, club argentin, football argentin",
+  keywords:
+    "logo racing club, racing club logo, logo de racing club, ecusson racing club, blason racing club, embleme racing club, club argentin, football argentin",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

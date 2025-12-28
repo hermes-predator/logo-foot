@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const realBetisLogoPost: BlogPost = {
   id: 471, // ID unique qui n'est pas déjà utilisé
+  slug: "real-betis-logo", //
   title: "Logo Real Betis : Histoire et Design de l'Emblème Andalou [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Real Betis : des origines à aujourd'hui, évolution et signification de l'emblème vert et blanc du club andalou.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Real Betis : des origines à aujourd'hui, évolution et signification de l'emblème vert et blanc du club andalou.",
   date: "2024-05-22",
   galleryImageId: 471,
   content: `# L'Histoire Passionnante du **Logo Real Betis**
@@ -50,7 +51,8 @@ Au-delà de son rôle d'identification, le **logo real betis** incarne les valeu
 Alors que le club continue d'écrire son histoire entre gloires et défis, le **logo club foot real betis** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la fierté d'appartenir à une institution qui a su conserver son identité unique dans un football de plus en plus globalisé.
 
 Le **logo de foot real betis** n'est donc pas simplement un design graphique, mais un véritable patrimoine culturel qui se transmet de génération en génération, perpétuant ainsi l'héritage d'un club qui a toujours placé les valeurs sportives et l'attachement à ses racines au cœur de son identité.`,
-  keywords: "logo real betis, logo real betis png, real betis logo, logo de real betis, logo club foot real betis, logo de foot real betis, real betis logo foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo real betis, logo real betis png, real betis logo, logo de real betis, logo club foot real betis, logo de foot real betis, real betis logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

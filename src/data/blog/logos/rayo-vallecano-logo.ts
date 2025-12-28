@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rayoVallecanoLogoPost: BlogPost = {
   id: 467, // ID unique qui n'est pas déjà utilisé
+  slug: "rayo-vallecano-logo", //
   title: "Logo Rayo Vallecano : Histoire et Design de l'Emblème Madrilène [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Rayo Vallecano : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club de Vallecas.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Rayo Vallecano : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club de Vallecas.",
   date: "2024-05-24",
   galleryImageId: 467,
   content: `# L'Histoire Fascinante du **Logo Rayo Vallecano**
@@ -50,7 +51,8 @@ Au-delà de son rôle d'identification, le **logo rayo vallecano** incarne les v
 Alors que le club continue d'écrire son histoire entre passages en première division et retours en deuxième division, le **rayo vallecano logo foot** reste le témoin visuel de ses luttes passées et de ses aspirations futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la fierté d'appartenir à une institution qui a su conserver son identité unique dans un football de plus en plus globalisé et commercialisé.
 
 Le **logo rayo vallecano foot** n'est donc pas simplement un design graphique, mais un véritable patrimoine culturel qui se transmet de génération en génération, perpétuant ainsi l'héritage d'un club qui a toujours placé les valeurs humaines et l'attachement à ses racines au cœur de son identité.`,
-  keywords: "logo rayo vallecano, rayo vallecano logo, rayo vallecano logo png, logo png rayo vallecano, logo rayo vallecano foot, rayo vallecano foot logo, rayo vallecano logo foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo rayo vallecano, rayo vallecano logo, rayo vallecano logo png, logo png rayo vallecano, logo rayo vallecano foot, rayo vallecano foot logo, rayo vallecano logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

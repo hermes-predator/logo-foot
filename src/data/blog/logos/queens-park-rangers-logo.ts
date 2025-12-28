@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const queensParkRangersLogoPost: BlogPost = {
   id: 462,
+  slug: "queens-park-rangers-logo", //
   title: "Queens Park Rangers FC Logo : Histoire et Évolution de l'Emblème Légendaire",
-  excerpt: "Découvrez l'histoire fascinante du Queens Park Rangers logo, l'un des écussons les plus emblématiques du football anglais. Analyse complète, évolution historique et téléchargement PNG haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du Queens Park Rangers logo, l'un des écussons les plus emblématiques du football anglais. Analyse complète, évolution historique et téléchargement PNG haute définition.",
   date: "2024-04-14",
   galleryImageId: 462,
   content: `# L'Histoire Emblématique du **Queens Park Rangers FC Logo**
@@ -140,7 +141,8 @@ Le **Queens Park Rangers FC logo** actuel représente un équilibre réussi entr
 Alors que de nombreux clubs continuent de modifier régulièrement leurs identités visuelles, le **Queens Park Rangers logo** semble avoir atteint une forme d'équilibre qui pourrait perdurer. La force d'un bon design réside dans sa capacité à rester pertinent malgré l'évolution des tendances graphiques, et le **logo Queen Park Rangers** actuel possède certainement cette qualité.
 
 Pour les supporters, qu'ils arborent fièrement le **Queens Park Rangers logo PNG** sur leurs créations numériques ou le **Queen Park Rangers FTS logo** dans leurs jeux vidéo, cet emblème continuera de représenter la passion et l'attachement à un club qui, bien que n'étant pas parmi les plus titrés d'Angleterre, possède une identité visuelle parmi les plus distinctives et mémorables du football britannique.`,
-  keywords: "queens park rangers fc logo, queens park rangers logo, queens park rangers logo png, logo club queens park rangers, logo queen park rangers, queen park rangers fts logo, queens park rangers new logo, qpr logo, qpr fc emblem, qpr badge, football logo london, championship club logo, hoops football logo",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "queens park rangers fc logo, queens park rangers logo, queens park rangers logo png, logo club queens park rangers, logo queen park rangers, queen park rangers fts logo, queens park rangers new logo, qpr logo, qpr fc emblem, qpr badge, football logo london, championship club logo, hoops football logo",
+  category: "logos",
+  subCategory: "english-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const realMadridLogoPost: BlogPost = {
   id: 472,
+  slug: "real-madrid-logo", //
   title: "Logo Real Madrid : Histoire et Design de l'Emblème Royal [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Real Madrid : des origines à aujourd'hui, évolution et signification de l'emblème du plus grand club de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Real Madrid : des origines à aujourd'hui, évolution et signification de l'emblème du plus grand club de football.",
   date: "2024-03-31",
   galleryImageId: 472,
   content: `# L'Histoire Passionnante du Logo Real Madrid
@@ -40,7 +41,8 @@ Utilisé dans des animations 3D, des applications mobiles ou des jeux vidéo, le
 Au-delà de son rôle d'identification, le **logo Real Madrid** incarne les valeurs fondamentales du club : excellence, élégance, tradition et ambition. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui a défini les standards d'excellence dans le football mondial.
 
 Alors que le club continue d'écrire son histoire, le **logo Real Madrid FC** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel mondial.`,
-  keywords: "logo real madrid, real madrid logo, soccer real madrid logo, logo real madrid fc, real madrid logo football, real madrid football club logo, ecusson real madrid, blason real madrid, real madrid football logo, logo du real madrid, real madrid logo png, logo real madrid png, logo madrid real, logo de real madrid",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo real madrid, real madrid logo, soccer real madrid logo, logo real madrid fc, real madrid logo football, real madrid football club logo, ecusson real madrid, blason real madrid, real madrid football logo, logo du real madrid, real madrid logo png, logo real madrid png, logo madrid real, logo de real madrid",
+  category: "logos",
+  subCategory: "club-logos",
 };

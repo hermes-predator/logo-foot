@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const readingFcLogoPost: BlogPost = {
   id: 470,
+  slug: "fc-reading-logo", //
   title: "**Reading FC Logo** : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Reading Football Club**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Reading Football Club**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
   galleryImageId: 470,
   content: `
@@ -75,7 +76,8 @@ Les designs du **logo Reading FC** sont protégés et leur utilisation est régl
 
 Le **logo Reading** reste un symbole puissant qui transcende le simple cadre sportif pour devenir un véritable emblème culturel, unissant les supporters autour d'une identité visuelle commune et reconnaissable. À travers ses évolutions, le **Reading FC logo** a su conserver l'essence du club tout en s'adaptant aux exigences modernes du marketing sportif et de la communication digitale.
   `,
-  keywords: "**logo reading**:20, **reading fc logo**:20, **reading football club logo**:20, **reading logo**:20, **reading logo png**:20, **logo reading fc**:10, **reading club logo**:10, **reading fc logo png**:10, **reading logo football**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "**logo reading**:20, **reading fc logo**:20, **reading football club logo**:20, **reading logo**:20, **reading logo png**:20, **logo reading fc**:10, **reading club logo**:10, **reading fc logo png**:10, **reading logo football**:10",
+  category: "logos",
+  subCategory: "club-logos",
 };

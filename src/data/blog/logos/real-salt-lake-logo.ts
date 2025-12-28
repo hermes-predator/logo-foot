@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const realSaltLakeLogoPost: BlogPost = {
   id: 474,
+  slug: "real-salt-lake-logo", //
   title: "**Logo Real Salt Lake** : Histoire et Design de l'Emblème de la MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Real Salt Lake**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Real Salt Lake**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 474,
   content: `# L'Histoire Fascinante du **Logo Real Salt Lake**
@@ -82,7 +83,8 @@ Le **real salt lake logo** illustre parfaitement comment un emblème sportif peu
 Plus qu'un simple emblème corporatif, le **logo de foot real salt lake** est devenu un symbole d'appartenance et de fierté qui unit une communauté diverse autour d'une passion commune pour le football. Sa capacité à évoluer tout en préservant son essence fondamentale témoigne de la qualité de sa conception initiale et augure bien de sa pertinence continue dans les années à venir.
 
 Que ce soit dans les tribunes du Rio Tinto Stadium, sur les réseaux sociaux ou dans les rues de Salt Lake City, le **real salt lake logo** continue de jouer son rôle essentiel : celui de rallier les supporters et d'incarner les valeurs et aspirations d'un club qui, bien que jeune, a déjà tissé des liens profonds avec sa communauté et s'est forgé une place légitime dans le paysage du football nord-américain.`,
-  keywords: "logo real salt lake:20, real salt lake logo:20, logo de foot real salt lake:10, logo real salt lake png:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo real salt lake:20, real salt lake logo:20, logo de foot real salt lake:10, logo real salt lake png:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

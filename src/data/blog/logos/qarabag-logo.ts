@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const qarabagLogoPost: BlogPost = {
   id: 459, // Unique ID pour ce nouvel article
+  slug: "qarabag-logo", //
   title: "Qarabag Logo : Histoire et Signification de l'Emblème Azerbaïdjanais [2024]",
   date: "2025-04-11",
   galleryImageId: 459,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo Qarabag FK, emblème du club azerbaïdjanais. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe du Caucase.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo Qarabag FK, emblème du club azerbaïdjanais. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe du Caucase.",
   content: `# L'Histoire Fascinante du **Qarabag Logo**
 
 Le **qarabag logo** est bien plus qu'un simple emblème de football – c'est un symbole de résilience, d'identité nationale et d'espoir pour l'Azerbaïdjan tout entier. Dans cet article approfondi, nous explorerons l'histoire, la signification et l'évolution du **logo qarabag**, un emblème qui porte en lui une charge émotionnelle et culturelle considérable pour ses supporters.

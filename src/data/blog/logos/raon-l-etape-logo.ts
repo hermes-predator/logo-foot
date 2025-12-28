@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const raonEtapeLogoPost: BlogPost = {
   id: 465,
+  slug: "raon-letape-logo", //
   title: "**Logo Raon l'Étape** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   galleryImageId: 465,
   category: "logos",
-  excerpt: "Découvrez l'histoire du **logo Raon l'Étape**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo de Raon l'Étape**.",
+  excerpt:
+    "Découvrez l'histoire du **logo Raon l'Étape**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo de Raon l'Étape**.",
   content: `# Guide Complet du **Logo Raon l'Étape**
 
 L'histoire du **logo Raon l'Étape** représente l'identité visuelle d'un club important du football français. Cette analyse détaillée explore les différents aspects de cet emblème qui incarne les valeurs et l'histoire du club.

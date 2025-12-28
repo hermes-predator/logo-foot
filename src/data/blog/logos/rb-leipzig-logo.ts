@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rbLeipzigLogoPost: BlogPost = {
   id: 468,
+  slug: "rb-leipzig-logo", //
   title: "Logo Leipzig : Histoire et Design de l'Emblème RB Leipzig [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Leipzig (RB Leipzig), son évolution et la symbolique derrière l'écusson de ce club montant du football allemand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Leipzig (RB Leipzig), son évolution et la symbolique derrière l'écusson de ce club montant du football allemand.",
   date: "2024-05-15",
   galleryImageId: 468,
   content: `# L'Histoire Fascinante du **Logo Leipzig**
@@ -58,7 +59,8 @@ Cette dimension symbolique confère au **logo RB Leipzig** une importance qui d�
 Le **logo Leipzig** incarne parfaitement l'ADN d'un club qui a choisi de tracer sa propre voie dans le paysage footballistique allemand. Sa conception moderne, son impact visuel et sa capacité à s'adapter aux exigences contemporaines font du **RB Leipzig logo** un cas d'école en matière d'identité visuelle sportive.
 
 Qu'on apprécie ou non le modèle économique qu'il représente, le **Leipzig logo PNG** a indéniablement réussi son pari : créer en peu de temps une identité forte et reconnaissable dans un univers ultra-compétitif. Pour les designers sportifs ou les responsables marketing à la recherche d'exemples réussis de création d'identité visuelle ex nihilo, le **logo de Leipzig** offre un cas d'étude particulièrement instructif sur la façon dont une nouvelle marque peut s'imposer rapidement dans un secteur traditionnellement dominé par des institutions historiques.`,
-  keywords: "logo leipzig, leipzig logo, rb leipzig logo, logo rb leipzig, leipzig fc logo, leipzig foot logo, leipzig logo png, logo de leipzig, logo leipzig png, logo rb leipzig png, rb leipzig logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo leipzig, leipzig logo, rb leipzig logo, logo rb leipzig, leipzig fc logo, leipzig foot logo, leipzig logo png, logo de leipzig, logo leipzig png, logo rb leipzig png, rb leipzig logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

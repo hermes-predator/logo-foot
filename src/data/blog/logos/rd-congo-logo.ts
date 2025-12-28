@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rdCongoLogoPost: BlogPost = {
   id: 469,
+  slug: "rd-congo-logo", //
   title: "**Logo RD Congo** : Histoire et Signification de l'Emblème des Léopards [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale congolaise : des origines à aujourd'hui, évolution et signification de cet emblème africain unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale congolaise : des origines à aujourd'hui, évolution et signification de cet emblème africain unique.",
   date: "2024-06-30",
   category: "national-logos",
   subCategory: "national-logos",
@@ -40,5 +41,6 @@ Plus qu'un simple logo, cet emblème est devenu un puissant catalyseur d'unité 
 ## Conclusion
 
 Le **rd congo logo foot** reste un symbole fort du football congolais, incarnant à la fois l'histoire, les traditions et les ambitions futures du pays. À chaque compétition internationale, il rappelle au monde la passion et le talent d'une nation qui continue de porter haut les couleurs du football africain.`,
-  keywords: "logo rd congo, rd congo logo, equipe foot rd congo logo, logo congo rd foot, logo de la rd congo, logo rd congo foot, logo rd congo png, rd congo foot logo, rd congo logo foot, rd congo logo jpeg"
+  keywords:
+    "logo rd congo, rd congo logo, equipe foot rd congo logo, logo congo rd foot, logo de la rd congo, logo rd congo foot, logo rd congo png, rd congo foot logo, rd congo logo foot, rd congo logo jpeg",
 };

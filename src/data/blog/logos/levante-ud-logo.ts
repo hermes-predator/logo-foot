@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const levanteUdLogoPost: BlogPost = {
   id: 356, // ID unique pour ce nouvel article
+  slug: "levante-logo", //
   title: "Logo Levante UD : Histoire et Symbolisme de l'Emblème Valencien",
   date: "2025-04-11",
   galleryImageId: 356,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Levante UD, l'un des clubs emblématiques de Valence. Analyse complète des symboles et des couleurs du blason grenát.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Levante UD, l'un des clubs emblématiques de Valence. Analyse complète des symboles et des couleurs du blason grenát.",
   content: `# L'Histoire Fascinante du **Logo Levante**
 
 Le **levante logo** représente bien plus qu'un simple emblème sportif. Il incarne l'histoire et l'identité d'un des clubs les plus anciens d'Espagne, fondé en 1909. Dans cet article, plongeons dans l'univers du **levante ud logo** pour découvrir son évolution et sa signification profonde.

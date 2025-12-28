@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lensLogoPost: BlogPost = {
   id: 354,
+  slug: "lens-logo", //
   title: "Logo RC Lens : Histoire et Évolution du Blason Sang et Or [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Racing Club de Lens : origines, symbolisme et évolution de l'emblème emblématique du club nordiste.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Racing Club de Lens : origines, symbolisme et évolution de l'emblème emblématique du club nordiste.",
   date: "2024-03-27",
   galleryImageId: 354,
   content: `# Logo RC Lens : Histoire et Évolution du Blason Sang et Or
@@ -58,7 +59,8 @@ Les futurs logos lens pourront connaître des ajustements mineurs pour s'adapter
 Le logo du Racing Club de Lens transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le logo RC Lens reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le logo lens png, le lens logo, le rc lens logo, le blason rc lens, l'écusson lens, le racing club lens logo, le logo lens foot, les lens logos, le logo de lens, le logo lens png, le logo rc lens png, et le logo rc lens 2024 continueront de faire briller les couleurs sang et or du club sur les terrains de football et au-delà.`,
-  keywords: "logo lens, logo rc lens, lens logo, rc lens logo, blason rc lens, ecusson lens, racing club lens logo, logo lens foot, lens logos, logo de lens, logo lens png, logo rc lens png, rc lens nouveau logo, logo rc lens 2024, lens logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo lens, logo rc lens, lens logo, rc lens logo, blason rc lens, ecusson lens, racing club lens logo, logo lens foot, lens logos, logo de lens, logo lens png, logo rc lens png, rc lens nouveau logo, logo rc lens 2024, lens logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

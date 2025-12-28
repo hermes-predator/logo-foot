@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leicesterLogoPost: BlogPost = {
   id: 353, // Using a unique ID that hasn't been used yet
+  slug: "leicester-logo", //
   title: "Logo Leicester : Histoire et Design de l'Emblème des Foxes [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Leicester City : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Leicester City : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-15",
   galleryImageId: 353,
   content: `# L'Histoire Fascinante du **Logo Leicester**
@@ -58,7 +59,8 @@ Le défi pour les futures versions du **logo leicester city** sera de maintenir 
 Le **logo leicester** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **leicester city football club logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **logo leicester** continuera de faire briller les couleurs bleues des Foxes sur les terrains de football et au-delà.`,
-  keywords: "leicester logo, logo leicester, leicester fc logo, leicester city football club logo, leicester city logo, leicester city logo png, leicester logo png, logo de leicester city, logo leicester png, leicester png logo, logo leicester city, logo leicester city png, leicester city fc logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "leicester logo, logo leicester, leicester fc logo, leicester city football club logo, leicester city logo, leicester city logo png, leicester logo png, logo de leicester city, logo leicester png, leicester png logo, logo leicester city, logo leicester city png, leicester city fc logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

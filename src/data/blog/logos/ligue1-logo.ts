@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ligue1LogoPost: BlogPost = {
   id: 360,
+  slug: "ligue-1-logo", //
   title: "Logo Ligue 1 : Histoire Complète et Evolution du Design [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Ligue 1 : son évolution à travers les époques, de la première division au partenariat avec Uber Eats. Analyse complète du design et de la symbolique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Ligue 1 : son évolution à travers les époques, de la première division au partenariat avec Uber Eats. Analyse complète du design et de la symbolique.",
   date: "2024-03-18",
   galleryImageId: 360,
   content: `# L'Histoire Passionnante du **Logo Ligue 1**
@@ -59,5 +60,5 @@ Le défi principal pour les évolutions futures du **logo clubs ligue 1** sera d
 
 Que ce soit dans sa version animée sur les écrans de télévision, sa déclinaison imprimée sur les produits officiels ou sa présence digitale optimisée, le **logo ligue 1** continuera d'incarner l'excellence du football français et son ambition de rayonner sur la scène internationale.`,
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lorientLogoPost: BlogPost = {
   id: 368,
+  slug: "lorient-logo", //
   title: "Logo FC Lorient : Histoire et Evolution du Design [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du FC Lorient : des origines à aujourd'hui, l'évolution de l'emblème des Merlus et sa symbolique maritime.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du FC Lorient : des origines à aujourd'hui, l'évolution de l'emblème des Merlus et sa symbolique maritime.",
   date: "2024-04-07",
   galleryImageId: 368,
   content: `# L'Histoire Fascinante du **Logo Lorient**
@@ -68,7 +69,8 @@ L'attachement des supporters au **lorient logo png** témoigne de la réussite d
 Le **logo lorient** incarne parfaitement l'identité d'un club qui a su rester fidèle à ses racines tout en évoluant avec son temps. À travers ses transformations successives, le **fc lorient logo** a toujours maintenu ce lien essentiel avec l'héritage maritime de la ville et les valeurs qui animent le club.
 
 Symbole d'appartenance pour les supporters et emblème reconnaissable pour tous les amateurs de football, le **lorient fc logo** continue de porter l'identité visuelle d'un club qui occupe une place unique dans le paysage footballistique français. Avec son design distinctif et ses couleurs vibrantes, le **logo fc lorient** reste un exemple réussi d'identité visuelle sportive, alliant tradition et modernité.`,
-  keywords: "logo lorient, lorient logo, logo fc lorient, fc lorient logo, logo lorient foot, fc lorient logo png, lorient football club logo, merlus logo, logo lorient png, lorient fc logo, lorient logo png, logo de lorient, logo du fc lorient, logo lorient fc",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo lorient, lorient logo, logo fc lorient, fc lorient logo, logo lorient foot, fc lorient logo png, lorient football club logo, merlus logo, logo lorient png, lorient fc logo, lorient logo png, logo de lorient, logo du fc lorient, logo lorient fc",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lithuaniaLogoPost: BlogPost = {
   id: 365,
+  slug: "lituanie-logo", //
   title: "**Logo Lituanie** : L'Histoire de l'Emblème des Guerriers Baltes [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale lituanienne : des origines à aujourd'hui, évolution et signification de l'emblème du football balte.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale lituanienne : des origines à aujourd'hui, évolution et signification de l'emblème du football balte.",
   date: "2025-04-27",
   galleryImageId: 365,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "logo lituanie, equipe national lituanie logo, logo foot lituanie, logo football club lituanie, logo lituanie foot",
+  keywords:
+    "logo lituanie, equipe national lituanie logo, logo foot lituanie, logo football club lituanie, logo lituanie foot",
   content: `# L'Histoire du **Logo Lituanie** : Un Symbole d'Excellence Sportive
 
 Le **logo lituanie** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation fière de son héritage et de ses traditions footballistiques. Cet emblème incarne l'âme d'un pays passionné par le sport et déterminé à laisser sa marque dans le monde du football.

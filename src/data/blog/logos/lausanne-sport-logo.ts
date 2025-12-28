@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lausanneSportLogoPost: BlogPost = {
   id: 342,
+  slug: "lausanne-sport-logo", //
   title: "Logo FC Lausanne-Sport : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du FC Lausanne-Sport, son évolution et la signification de son identité visuelle unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du FC Lausanne-Sport, son évolution et la signification de son identité visuelle unique.",
   date: "2024-04-15",
   galleryImageId: 342,
   content: `# L'Histoire du Logo FC Lausanne-Sport
@@ -29,7 +31,8 @@ Le **logo fc lausanne-sport** est devenu bien plus qu'un simple emblème : c'est
 ## Une Histoire Vivante
 
 Chaque version du logo raconte une partie de l'histoire du FC Lausanne-Sport, capturant l'esprit d'une équipe qui a traversé les décennies avec fierté et détermination.`,
-  keywords: "lausanne sport logo, logo lausanne sport, fc lausanne sport logo, lausanne sport nouveau logo, logo fc lausanne sports, logo fc lausanne-sport",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "lausanne sport logo, logo lausanne sport, fc lausanne sport logo, lausanne sport nouveau logo, logo fc lausanne sports, logo fc lausanne-sport",
+  category: "logos",
+  subCategory: "club-logos",
 };

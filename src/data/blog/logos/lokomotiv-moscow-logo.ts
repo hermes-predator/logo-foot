@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lokomotivMoscowLogoPost: BlogPost = {
   id: 367,
+  slug: "lokomotiv-moscou-logo", //
   title: "**Lokomotiv Moscou Logo** : Histoire et Design de l'Emblème Ferroviaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Lokomotiv Moscou**, un symbole emblématique qui représente la fierté du football russe et son héritage ferroviaire unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Lokomotiv Moscou**, un symbole emblématique qui représente la fierté du football russe et son héritage ferroviaire unique.",
   date: "2024-04-15",
   galleryImageId: 367,
   content: `# Histoire du **Lokomotiv Moscou Logo**
@@ -74,7 +75,8 @@ Le **logo foot lokomotiv moscou** s'utilise sur différents supports :
 - Codes couleurs officiels
 - Versions adaptatives
 - Protection du design`,
-  keywords: "logo foot lokomotiv moscou, logo lokomotiv moscou, logo lokomotiv moscou png, logo png lokomotiv moscou, lokomotiv moscou logo, lokomotiv moscou logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo foot lokomotiv moscou, logo lokomotiv moscou, logo lokomotiv moscou png, logo png lokomotiv moscou, lokomotiv moscou logo, lokomotiv moscou logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

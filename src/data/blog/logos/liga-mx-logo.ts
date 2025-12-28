@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ligaMxLogoPost: BlogPost = {
   id: 359,
+  slug: "liga-mx-logo", //
   title: "Liga MX Logo : Histoire et Évolution de l'Emblème du Football Mexicain [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la Liga MX : origines, évolution et signification de l'emblème emblématique du championnat mexicain de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la Liga MX : origines, évolution et signification de l'emblème emblématique du championnat mexicain de football.",
   date: "2024-05-10",
   galleryImageId: 359,
   content: `# L'Histoire Passionnante du **Liga MX Logo**
@@ -55,6 +57,6 @@ Alors que la Liga MX continue de se développer et d'accroître sa visibilité i
 Les campagnes marketing futures continueront probablement d'utiliser le **logo liga mx** comme pilier central de la communication de la ligue, renforçant ainsi sa reconnaissance à l'échelle mondiale et contribuant à positionner le championnat mexicain parmi les compétitions majeures du football international.
 
 Dans ce contexte d'expansion et de modernisation, le **liga mx logos** restera un symbole fort de l'identité footballistique mexicaine, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui ne cesse de gagner en prestige et en attractivité sur la scène mondiale du football.`,
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

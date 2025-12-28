@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lillLogoPost: BlogPost = {
   id: 362,
+  slug: "lille-logo", //
   title: "Logo LOSC : Histoire et Design de l'Emblème Lillois [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du LOSC : origines, évolution et symbolisme de l'emblème emblématique du club lillois à travers les années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du LOSC : origines, évolution et symbolisme de l'emblème emblématique du club lillois à travers les années.",
   date: "2024-03-30",
   galleryImageId: 362,
   content: `# L'Histoire Fascinante du **Logo LOSC**
@@ -43,6 +44,6 @@ L'avenir du **logo de LOSC** s'annonce prometteur, avec une reconnaissance toujo
 
 Le **logo LOSC** restera sans aucun doute un symbole fort du football français et de l'identité culturelle du Nord, continuant à rassembler des générations de supporters autour des valeurs de passion, de détermination et d'excellence qui définissent ce club historique.`,
   keywords: "logo losc, logo du losc, losc logo, lille osc logo, blason losc, ecusson lille, lille logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

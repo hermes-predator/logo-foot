@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const limonestLogoPost: BlogPost = {
   id: 363,
+  slug: "limonest-logo", //
   title: "**Logo Limonest** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   galleryImageId: 363,
   category: "logos",
-  excerpt: "Découvrez l'histoire du **logo Limonest**, son évolution et sa signification. Guide complet sur l'emblème du **FC Limonest** avec analyse détaillée de son identité visuelle.",
+  excerpt:
+    "Découvrez l'histoire du **logo Limonest**, son évolution et sa signification. Guide complet sur l'emblème du **FC Limonest** avec analyse détaillée de son identité visuelle.",
   content: `# Guide Complet du **Logo Limonest**
 
 L'histoire du **logo Limonest** représente l'identité visuelle d'un club important du football français. Cette analyse détaillée explore les différents aspects de cet emblème qui incarne les valeurs et l'histoire du **FC Limonest**.

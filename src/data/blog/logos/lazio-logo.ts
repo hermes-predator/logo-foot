@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lazioLogoPost: BlogPost = {
   id: 344,
+  slug: "lazio-rome-logo", //
   title: "Logo SS Lazio : Histoire et Évolution de l'Emblème du Club Romain [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Lazio Rome, son évolution à travers les années et la symbolique de l'aigle emblématique qui représente le club.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Lazio Rome, son évolution à travers les années et la symbolique de l'aigle emblématique qui représente le club.",
   date: "2024-04-24",
   galleryImageId: 344,
   content: `# L'Histoire Fascinante du **Logo SS Lazio**
@@ -62,7 +63,8 @@ Alors que le club continue d'écrire son histoire au XXIe siècle, le **lazio ro
 Les débats entre tradition et modernité qui entourent souvent l'évolution des logos de clubs de football touchent également le **logo de la lazio**. Ces discussions passionnées témoignent de l'importance capitale que revêt cette identité visuelle pour l'ensemble de la communauté laziale.
 
 À l'heure où la Società Sportiva Lazio poursuit sa quête d'excellence sur les terrains d'Italie et d'Europe, le **logo ss lazio** continue d'incarner les valeurs fondamentales qui ont fait la réputation du club : tradition, ambition, indépendance et fierté romaine. Ces principes, profondément ancrés dans l'ADN du club, continueront sans aucun doute de se refléter dans les futures itérations du **logo lazio png**, quel que soit leur design.`,
-  keywords: "lazio logo, logo lazio, logo ss lazio, ss lazio logo, lazio rome logo, logo lazio rome, lazio logo png, logo de la lazio, logo lazio png, logo png lazio",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "lazio logo, logo lazio, logo ss lazio, ss lazio logo, lazio rome logo, logo lazio rome, lazio logo png, logo de la lazio, logo lazio png, logo png lazio",
+  category: "logos",
+  subCategory: "club-logos",
 };

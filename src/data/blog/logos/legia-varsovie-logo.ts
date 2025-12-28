@@ -1,11 +1,12 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const legiaVarsovieLogoPost: BlogPost = {
   id: 352,
+  slug: "legia-varsovie-logo", //
   title: "**Legia Varsovie Logo** : Histoire et Symbolique de l'Emblème du Club Polonais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Legia Varsovie**, un symbole emblématique qui représente la fierté du football polonais et l'identité unique de ce club légendaire.",
-  date: "2024-04-15", 
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Legia Varsovie**, un symbole emblématique qui représente la fierté du football polonais et l'identité unique de ce club légendaire.",
+  date: "2024-04-15",
   galleryImageId: 352,
   content: `# Histoire du **Legia Varsovie Logo**
 
@@ -74,7 +75,8 @@ Le **logo png legia varsovie** s'utilise sur différents supports :
 - Respect des proportions
 - Adaptabilité aux supports
 - Protection de la marque`,
-  keywords: "legia varsovie logo, legia varsovie logo de foot, legia varsovie logo png, logo foot legia varsovie, logo legia varsovie, logo png legia varsovie",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "legia varsovie logo, legia varsovie logo de foot, legia varsovie logo png, logo foot legia varsovie, logo legia varsovie, logo png legia varsovie",
+  category: "logos",
+  subCategory: "club-logos",
 };

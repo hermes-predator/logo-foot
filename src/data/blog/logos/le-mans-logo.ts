@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leMansFCLogoPost: BlogPost = {
   id: 346,
+  slug: "le-mans-logo", //
   title: "Logo Le Mans FC : Histoire et Évolution de l'Emblème Manceau [2024]",
-  excerpt: "Découvrez l'histoire complète et l'évolution du logo Le Mans FC. Analyse détaillée des couleurs, symboles et design de l'emblème du club sarthois.",
+  excerpt:
+    "Découvrez l'histoire complète et l'évolution du logo Le Mans FC. Analyse détaillée des couleurs, symboles et design de l'emblème du club sarthois.",
   date: "2024-05-12",
   galleryImageId: 346,
   content: `# L'Histoire et l'Évolution du **Logo Le Mans FC**
@@ -73,7 +74,8 @@ Pour les supporters souhaitant utiliser le **Le Mans logo PNG** pour un usage pe
 ## Conclusion
 
 Le **Le Mans FC logo** représente parfaitement l'identité d'un club ancré dans son territoire mais tourné vers l'avenir. Son évolution au fil des années témoigne de l'histoire riche et parfois tumultueuse du football manceau. Que ce soit dans sa version historique ou contemporaine, le **logo Le Mans** continue de faire battre le cœur des supporters sarthois.`,
-  keywords: "le mans foot logo, logo le mans fc, le mans fc logo, logo le mans, le mans logo, le mans logo png, emblème Le Mans, écusson manceau, histoire logo Le Mans",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "le mans foot logo, logo le mans fc, le mans fc logo, logo le mans, le mans logo, le mans logo png, emblème Le Mans, écusson manceau, histoire logo Le Mans",
+  category: "logos",
+  subCategory: "club-logos",
 };

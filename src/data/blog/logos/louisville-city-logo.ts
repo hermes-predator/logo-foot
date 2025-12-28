@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const louisvilleCityLogoPost: BlogPost = {
   id: 370,
+  slug: "louisville-city-logo", //
   title: "Louisville City Logo : Histoire et Design de l'Emblème du Club [2025]",
-  excerpt: "Découvrez l'histoire et la signification du logo Louisville City FC, son évolution et sa symbolique. Analyse complète de l'emblème du club de football américain.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo Louisville City FC, son évolution et sa symbolique. Analyse complète de l'emblème du club de football américain.",
   date: "2025-04-14",
   galleryImageId: 370,
   content: `# L'Histoire Fascinante du **Louisville City Logo**
@@ -51,7 +52,8 @@ Le **louisville city fc logo** est ainsi devenu un puissant vecteur de communica
 Le **louisville city football club logo** continue d'évoluer tout en préservant son essence, illustrant parfaitement comment une identité visuelle forte peut contribuer au succès d'un club de football. Alors que Louisville City FC poursuit son ascension dans le monde du football américain, son emblème restera un symbole puissant de ses racines, de ses ambitions et de la passion de ses supporters.
 
 Que ce soit dans sa version originale ou dans son incarnation plus récente avec le **louisville city fc new logo**, cet emblème continuera de représenter fièrement l'équipe sur la scène nationale et peut-être un jour internationale, portant avec lui l'histoire et les aspirations de tout un club.`,
-  category: 'logos',
-  subCategory: 'club-logos',
-  keywords: "louisville city logo, louisville city fc logo, louisville city fc new logo, louisville city soccer logo, louisville city football club logo, emblème louisville city, logo club américain, design logo football, usl championship logo"
+  category: "logos",
+  subCategory: "club-logos",
+  keywords:
+    "louisville city logo, louisville city fc logo, louisville city fc new logo, louisville city soccer logo, louisville city football club logo, emblème louisville city, logo club américain, design logo football, usl championship logo",
 };

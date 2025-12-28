@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const liverpoolLogoPost: BlogPost = {
   id: 366,
+  slug: "liverpool-logo", //
   title: "Logo Liverpool : Histoire et Design de l'Emblème des Reds [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Liverpool FC : origines, symbolisme et évolution de l'emblème mythique des Reds à travers les années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Liverpool FC : origines, symbolisme et évolution de l'emblème mythique des Reds à travers les années.",
   date: "2024-03-31",
   galleryImageId: 366,
   content: `# L'Histoire Fascinante du **Logo Liverpool**
@@ -52,7 +53,8 @@ Le service de design du club a développé un système complet d'identité visue
 Cette cohérence dans l'application garantit que le **logo man city** conserve son impact et son intégrité visuelle dans toutes ses manifestations. Le club poursuit constamment l'optimisation de son identité visuelle pour répondre aux exigences modernes tout en préservant son riche héritage historique.
 
 Alors que Liverpool FC continue d'écrire son histoire, son emblème iconique évolue subtilement tout en restant fidèle à ses origines. Cette capacité à maintenir un équilibre parfait entre tradition et modernité fait du **liverpool logo** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football mondial.`,
-  keywords: "logo liverpool, liverpool club logo, liverpool logo, liverpool soccer logo, liverpool football club logo, liverpool football logo, logos liverpool, liverpool logo png, logo liverpool png, fc liverpool logo, logo de liverpool, logo fc liverpool, liverpool fc logo, logo liverpool fc, nouveau logo liverpool",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo liverpool, liverpool club logo, liverpool logo, liverpool soccer logo, liverpool football club logo, liverpool football logo, logos liverpool, liverpool logo png, logo liverpool png, fc liverpool logo, logo de liverpool, logo fc liverpool, liverpool fc logo, logo liverpool fc, nouveau logo liverpool",
+  category: "logos",
+  subCategory: "club-logos",
 };

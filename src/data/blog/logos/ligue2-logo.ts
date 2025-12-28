@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ligue2LogoPost: BlogPost = {
   id: 361,
+  slug: "ligue-2-logo", //
   title: "Logo Ligue 2 BKT : Histoire et Évolution du Design [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la Ligue 2 BKT : origines, évolution et signification du design du deuxième échelon du football français.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la Ligue 2 BKT : origines, évolution et signification du design du deuxième échelon du football français.",
   date: "2024-04-10",
   galleryImageId: 361,
   content: `# L'Histoire Fascinante du **Logo Ligue 2**
@@ -88,7 +90,8 @@ Le parcours du **logo ligue 2**, de ses origines modestes à sa version actuelle
 À l'image des clubs qui y évoluent, aspirant à rejoindre l'élite tout en développant leur propre identité, le **logo ligue 2** a trouvé un équilibre entre appartenance à la famille LFP et affirmation d'une personnalité distincte.
 
 Le **logo ligue 2 bkt** d'aujourd'hui n'est pas simplement un symbole graphique, c'est la manifestation visuelle d'une compétition qui a gagné ses lettres de noblesse et s'affirme comme un championnat majeur du paysage footballistique français et européen.`,
-  keywords: "logo ligue 2, ligue 2 logo, logo ligue 2 bkt, logo ligue 2 png, ligue 2 bkt logo, logo foot ligue 2, ligue 2 logo png, embleme ligue 2, écusson ligue 2, design ligue 2, ligue 2 football",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo ligue 2, ligue 2 logo, logo ligue 2 bkt, logo ligue 2 png, ligue 2 bkt logo, logo foot ligue 2, ligue 2 logo png, embleme ligue 2, écusson ligue 2, design ligue 2, ligue 2 football",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const losAngelesGalaxyLogoPost: BlogPost = {
   id: 369,
+  slug: "los-angeles-galaxy-logo", //
   title: "Logo Los Angeles Galaxy : Histoire et Symbolisme de l'Emblème du Club Américain [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Los Angeles Galaxy : origines, évolution et signification de l'emblème qui représente la fierté du football américain en MLS.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Los Angeles Galaxy : origines, évolution et signification de l'emblème qui représente la fierté du football américain en MLS.",
   date: "2024-04-16",
   galleryImageId: 369,
   content: `# L'Histoire Fascinante du Logo Los Angeles Galaxy
@@ -48,7 +49,8 @@ Alors que le football continue de gagner en popularité aux États-Unis, le **lo
 Le **logo de los angeles galaxy** actuel, avec son design épuré et ses lignes contemporaines, incarne parfaitement cette dualité entre tradition et modernité. Il reste suffisamment fidèle à ses origines pour maintenir la connexion émotionnelle avec les fans historiques, tout en étant assez dynamique pour séduire de nouveaux supporters.
 
 Dans un paysage sportif américain extrêmement concurrentiel, le **los angeles galaxy logo png** se distingue par son élégance et sa capacité à représenter à la fois les valeurs du club et l'esprit californien. Pour le **logo fc galaxy de los angeles**, le défi sera de continuer à évoluer tout en préservant cette identité unique qui a fait le succès de la franchise depuis près de trois décennies.`,
-  keywords: "logo los angeles galaxy, los angeles galaxy logo, los angeles galaxy logo png, galaxy los angeles logo, logo de los angeles galaxy, logo fc galaxy de los angeles",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo los angeles galaxy, los angeles galaxy logo, los angeles galaxy logo png, galaxy los angeles logo, logo de los angeles galaxy, logo fc galaxy de los angeles",
+  category: "logos",
+  subCategory: "club-logos",
 };

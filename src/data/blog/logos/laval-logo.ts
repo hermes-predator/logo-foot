@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lavalLogoPost: BlogPost = {
   id: 343,
+  slug: "laval-logo", //
   title: "Logo Stade Lavallois : Histoire et Évolution de l'Emblème Mayennais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Stade Lavallois : origines, évolution et symbolisme de l'emblème emblématique du club mayennais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Stade Lavallois : origines, évolution et symbolisme de l'emblème emblématique du club mayennais.",
   date: "2024-06-16",
   galleryImageId: 343,
   content: `# L'Histoire Fascinante du **logo stade lavallois**
@@ -61,7 +62,8 @@ Au-delà de sa fonction identificatrice, le **logo laval** incarne les valeurs f
 Alors que le Stade Lavallois continue d'écrire son histoire sur les terrains nationaux, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo stade lavallois** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **laval logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "laval logo, logo laval, logo de laval, logo laval foot, laval logo png, logo laval png, logo stade lavallois, stade lavallois logo, stade lavallois logo png, image logo stade lavallois, logo stade lavallois png, stade lavallois logo png tranparent",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "laval logo, logo laval, logo de laval, logo laval foot, laval logo png, logo laval png, logo stade lavallois, stade lavallois logo, stade lavallois logo png, image logo stade lavallois, logo stade lavallois png, stade lavallois logo png tranparent",
+  category: "logos",
+  subCategory: "club-logos",
 };

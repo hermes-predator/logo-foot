@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leverkusenLogoPost: BlogPost = {
   id: 357,
+  slug: "bayer-leverkusen-logo", //
   title: "Logo Bayer Leverkusen : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo du Bayer Leverkusen, l'un des clubs les plus emblématiques de Bundesliga. Analyse complète de son design et sa symbolique.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo du Bayer Leverkusen, l'un des clubs les plus emblématiques de Bundesliga. Analyse complète de son design et sa symbolique.",
   date: "2024-05-21",
   galleryImageId: 357,
   content: `# L'Histoire Fascinante du **Logo Bayer Leverkusen**
@@ -68,7 +69,8 @@ Les futures itérations du **bayer leverkusen logo png** devront relever le déf
 L'héritage visuel unique du **logo bayer 04 leverkusen** restera toutefois un atout majeur pour le club, permettant de se différencier dans un univers footballistique de plus en plus concurrentiel et saturé de stimuli visuels.
 
 En définitive, au fil de son histoire centenaire, le **bayer leverkusen equipe logo** s'est imposé comme bien plus qu'un simple emblème sportif : c'est un symbole d'excellence, d'innovation et de passion qui continue d'incarner l'identité unique d'un club aux origines industrielles devenu une référence du football européen.`,
-  keywords: "logo bayer leverkusen, bayer leverkusen logo, bayer leverkusen logo png, logo bayer leverkusen png, bayer 04 leverkusen logo, bayer 04 leverkusen logo png, logo bayer 04 leverkusen, bayer leverkusen png logo, bayer leverkusen equipe logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo bayer leverkusen, bayer leverkusen logo, bayer leverkusen logo png, logo bayer leverkusen png, bayer 04 leverkusen logo, bayer 04 leverkusen logo png, logo bayer 04 leverkusen, bayer leverkusen png logo, bayer leverkusen equipe logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

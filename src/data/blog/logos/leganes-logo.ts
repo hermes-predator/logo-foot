@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leganesLogoPost: BlogPost = {
   id: 351,
+  slug: "leganes-logo", //
   title: "Logo Leganés : Histoire et Symbolisme de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Leganés, ses éléments symboliques et son évolution à travers les décennies.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Leganés, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-06",
   galleryImageId: 351,
   content: `# L'Histoire Emblématique du **Logo Leganés**
@@ -60,7 +61,8 @@ Le **logo Leganés** est bien plus qu'un simple emblème sportif : c'est un symb
 L'originalité et la force symbolique du **logo de foot Leganés** constituent des atouts précieux pour ce club qui continue de se battre pour sa place dans l'élite du football espagnol. Le crocodile vert, emblème distinctif du **logo Leganés PNG**, représente parfaitement l'esprit combatif et la détermination d'un club qui, malgré des moyens limités, refuse de se laisser intimider par les grands d'Espagne.
 
 Pour les années à venir, le **Leganés logo** continuera sans doute d'évoluer subtilement pour s'adapter aux nouvelles tendances graphiques et aux exigences des supports de communication, tout en préservant son essence et sa signification profonde pour tous ceux qui se reconnaissent dans les couleurs bleu et blanc du club de la banlieue sud de Madrid.`,
-  keywords: "leganes logo, leganes logo png, logo leganes, logo leganes png, leganes logo foot, logo de foot leganes, logo leganes foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "leganes logo, leganes logo png, logo leganes, logo leganes png, leganes logo foot, logo de foot leganes, logo leganes foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

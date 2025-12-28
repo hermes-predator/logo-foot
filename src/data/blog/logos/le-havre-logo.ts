@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leHavreLogoPost: BlogPost = {
   id: 345,
+  slug: "le-havre-logo", //
   title: "Logo Le Havre : Histoire et Design de l'Emblème Normand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Havre AC : évolution, symbolisme et design de l'emblème emblématique du plus ancien club de football français.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Havre AC : évolution, symbolisme et design de l'emblème emblématique du plus ancien club de football français.",
   date: "2024-05-17",
   galleryImageId: 345,
   content: `# L'Histoire Fascinante du **Le Havre Logo**
@@ -40,7 +41,8 @@ Pour les supporters du HAC, le **Le Havre logo foot** est un objet de fierté qu
 Si le **Le Havre AC logo** a su s'adapter aux exigences graphiques modernes, il a toujours préservé son essence et les valeurs qu'il incarne. Cette continuité visuelle est l'une des grandes forces du **logo Le Havre**, créant un pont entre les différentes générations de supporters qui se transmettent leur passion pour le club doyen.
 
 Aujourd'hui, alors que le club poursuit son aventure dans le football professionnel français, le **logo Le Havre foot** continue de briller comme un symbole d'histoire et de tradition dans un sport en constante évolution. Plus qu'un simple emblème sportif, le **Le Havre logo** reste un témoin vivant de l'histoire du football français et un symbole d'identité pour toute une région.`,
-  keywords: "le havre logo, logo le havre, logo le havre foot, le havre ac logo, le havre fc logo, le havre logo png, logo le havre ac, le havre foot logo, le havre logo foot, logo foot le havre, logo le havre foot png, logo le havre png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "le havre logo, logo le havre, logo le havre foot, le havre ac logo, le havre fc logo, le havre logo png, logo le havre ac, le havre foot logo, le havre logo foot, logo foot le havre, logo le havre foot png, logo le havre png",
+  category: "logos",
+  subCategory: "club-logos",
 };

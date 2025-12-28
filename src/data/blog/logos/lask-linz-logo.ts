@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const laskLinzLogoPost: BlogPost = {
   id: 340, // ID unique pour ce nouvel article
+  slug: "lask-linz-logo", //
   title: "LASK Linz Logo : Histoire et Signification du Blason Autrichien [2024]",
   date: "2025-04-11",
   galleryImageId: 340,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo LASK Linz, emblème emblématique du club de football autrichien. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe historique de Linz.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo LASK Linz, emblème emblématique du club de football autrichien. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe historique de Linz.",
   content: `# L'Histoire Fascinante du **LASK Linz Logo**
 
 Le **logo lask linz** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les traditions et les valeurs d'un des clubs les plus anciens d'Autriche. Dans cet article approfondi, nous explorerons l'histoire, la signification et l'évolution du **lask linz logo png**, un emblème qui représente la fierté de toute une ville et la passion de générations de supporters.

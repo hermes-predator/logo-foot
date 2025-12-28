@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const zurichLogoPost: BlogPost = {
   id: 609,
+  slug: "zurich-logo", //
   title: "Logo Zurich : Histoire et Évolution de l'Emblème du FC Zurich [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du FC Zurich, son évolution au fil des années et la signification de ses éléments emblématiques qui représentent l'identité du club suisse.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du FC Zurich, son évolution au fil des années et la signification de ses éléments emblématiques qui représentent l'identité du club suisse.",
   date: "2024-04-15",
   galleryImageId: 609,
   content: `# L'Histoire Fascinante du Logo FC Zurich
@@ -33,7 +34,8 @@ Le **zurich football logo** intègre plusieurs éléments distinctifs :
 ## Un Emblème Tourné vers l'Avenir
 
 Dans l'ère moderne du football, le logo du FC Zurich continue d'évoluer tout en préservant son essence historique. Sa version digitale est optimisée pour tous les supports numériques, des réseaux sociaux aux applications mobiles, tout en maintenant son caractère distinctif et sa reconnaissance instantanée.`,
-  keywords: "logo zurich, zurich logo, fc zurich logo, logo fc zurich, logo zurich png, zurich logo png, logo club zurich, zurich fc logo png, zurich football logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo zurich, zurich logo, fc zurich logo, logo fc zurich, logo zurich png, zurich logo png, logo club zurich, zurich fc logo png, zurich football logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

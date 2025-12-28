@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const leedsUnitedLogoPost: BlogPost = {
   id: 350,
+  slug: "leeds-united-logo", //
   title: "Logo Leeds United : Histoire et Design de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Leeds United : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Leeds United : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-04-12",
   galleryImageId: 350,
   content: `# L'Histoire Passionnante du **Logo Leeds United**
@@ -53,7 +54,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **leeds united logo png** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **leeds football logo**.
 
 Alors que Leeds United poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines dans le Yorkshire, fait du **logo leeds** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football anglais.`,
-  keywords: "leeds football logo, logo leeds, leeds logo, leeds logo png, leeds united logo, leeds united logo png, logo leeds png, logo leeds united",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "leeds football logo, logo leeds, leeds logo, leeds logo png, leeds united logo, leeds united logo png, logo leeds png, logo leeds united",
+  category: "logos",
+  subCategory: "club-logos",
 };

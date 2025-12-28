@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const estoniaLogoPost: BlogPost = {
   id: 240,
+  slug: "estonie-logo", //
   title: "**Logo Estonie** : L'Emblème Footballistique des Lions Bleus [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale estonienne : des origines à aujourd'hui, évolution et signification de l'emblème des Lions Bleus.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale estonienne : des origines à aujourd'hui, évolution et signification de l'emblème des Lions Bleus.",
   date: "2025-04-27",
   galleryImageId: 240,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "**logo estonie**, **equipe estonie football logo**, **estonie logo foot**, **logo club football estonie**, **logo federation football estonie**, **logo foot estonie**, **logo football club estonie**",
+  keywords:
+    "**logo estonie**, **equipe estonie football logo**, **estonie logo foot**, **logo club football estonie**, **logo federation football estonie**, **logo foot estonie**, **logo football club estonie**",
   content: `# L'Histoire du **Logo Estonie** : Un Symbole de Fierté Nationale
 
 Le **logo estonie** représente bien plus qu'un simple emblème sportif : c'est un véritable récit visuel de l'identité footballistique d'un pays qui a su forger sa propre histoire sur la scène internationale. L'**equipe estonie football logo** incarne la détermination et l'esprit d'une nation qui continue de progresser dans le monde du football.

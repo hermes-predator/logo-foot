@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const espanyolLogoPost: BlogPost = {
   id: 238, // ID unique pour ce nouvel article
+  slug: "espanyol-rcd-logo", //
   title: "Logo RCD Espanyol : Histoire et Évolution de l'Emblème du Club Catalan",
   date: "2025-04-11",
   galleryImageId: 238,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo RCD Espanyol, club historique de Barcelone. Analyse complète des symboles et couleurs de l'écusson catalan.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo RCD Espanyol, club historique de Barcelone. Analyse complète des symboles et couleurs de l'écusson catalan.",
   content: `# Histoire et Évolution du **Logo RCD Espanyol**
 
 Le **RCD Espanyol**, également connu sous le nom d'**Espanyol Barcelone**, est l'un des clubs historiques du football espagnol. Fondé en 1900, ce club catalan possède une identité visuelle forte et reconnaissable. Dans cet article, nous allons explorer l'histoire et l'évolution du **logo Espanyol** à travers les décennies.
@@ -95,5 +96,6 @@ Que ce soit sous forme imprimée ou sous format **logo Espanyol PNG** numérique
 
 L'**Espanyol Barcelone logo** reste un témoignage visuel de l'héritage culturel et sportif catalan, un symbole qui continuera de fédérer les supporters "pericos" pour les générations à venir.
 `,
-  keywords: "logo RCD Espanyol, logo Espanyol, Espanyol logo, Espanyol Barcelona logo, RCD Espanyol logo PNG, logo Espanyol Barcelone, logo Espanyol PNG, Espanyol FC logo, Espanyol Barcelone logo PNG, logo de foot Espanyol Barcelona, Espanyol foot logo, Espanyol Barcelone logo, RCD Espanyol logo",
+  keywords:
+    "logo RCD Espanyol, logo Espanyol, Espanyol logo, Espanyol Barcelona logo, RCD Espanyol logo PNG, logo Espanyol Barcelone, logo Espanyol PNG, Espanyol FC logo, Espanyol Barcelone logo PNG, logo de foot Espanyol Barcelona, Espanyol foot logo, Espanyol Barcelone logo, RCD Espanyol logo",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const esperanceTunisLogoPost: BlogPost = {
   id: 239,
+  slug: "esperance-de-tunis-logo", //
   title: "**Logo Espérance Sportive de Tunis** : Histoire et Signification [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Espérance Sportive de Tunis**, son évolution et sa symbolique qui représente l'un des plus grands clubs d'Afrique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Espérance Sportive de Tunis**, son évolution et sa symbolique qui représente l'un des plus grands clubs d'Afrique.",
   date: "2024-04-15",
   galleryImageId: 239,
   content: `# L'Histoire du **Logo Espérance de Tunis**
@@ -47,7 +48,8 @@ Le design actuel du **logo Espérance Sportive de Tunis** combine :
 ## Conclusion
 
 Le **logo Espérance de Tunis PNG** est plus qu'un simple emblème - c'est un symbole d'excellence et de tradition qui continue d'inspirer les générations de supporters tunisiens et africains.`,
-  keywords: "esperance de tunis logo, esperance sportive de tunis logo, esperance sportive de tunis logo png, logo esperance de tunis, logo esperance sportive de tunis, logo espérance sportive de tunis, esperance de tunis logo png, espérance sportive de tunis logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "esperance de tunis logo, esperance sportive de tunis logo, esperance sportive de tunis logo png, logo esperance de tunis, logo esperance sportive de tunis, logo espérance sportive de tunis, esperance de tunis logo png, espérance sportive de tunis logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

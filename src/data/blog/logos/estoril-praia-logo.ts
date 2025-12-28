@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const estorilPraiaLogoPost: BlogPost = {
   id: 241, // ID unique qui n'est pas encore utilisé
+  slug: "estoril-praia-logo", //
   title: "Logo Estoril Praia : Histoire et Symbolisme de l'Emblème Portugais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Estoril Praia : origines, évolution et signification des symboles du club de football portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Estoril Praia : origines, évolution et signification des symboles du club de football portugais.",
   date: "2024-09-01",
   galleryImageId: 241,
   content: `# L'Histoire Fascinante du **Logo Estoril Praia**
@@ -117,7 +118,8 @@ Le défi pour l'avenir du **logo de foot estoril praia** sera de maintenir l'éq
 Le **estoril logo** représente bien plus qu'un simple signe graphique – il est le reflet d'une histoire sportive riche, d'une identité géographique unique et d'une communauté passionnée. À travers ses couleurs vibrantes et ses éléments symboliques, le **logo estoril praia** capture l'essence même d'un club qui, malgré des ressources plus modestes que certains géants du football portugais, a su se forger une identité visuelle distinctive et mémorable.
 
 Que ce soit sous forme imprimée traditionnelle ou en version numérique **estoril praia logo png**, cet emblème continue de faire la fierté des supporters et d'incarner les valeurs d'un club profondément ancré dans son territoire. Le **logo de foot estoril praia** demeure ainsi un magnifique exemple de la façon dont un symbole sportif peut transcender le cadre du football pour devenir un véritable marqueur culturel et identitaire.`,
-  keywords: "estoril logo, estoril praia logo, logo estoril, logo estoril praia, estoril praia logo png, logo de foot estoril praia",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "estoril logo, estoril praia logo, logo estoril, logo estoril praia, estoril praia logo png, logo de foot estoril praia",
+  category: "logos",
+  subCategory: "club-logos",
 };

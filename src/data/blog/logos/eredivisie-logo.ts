@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const eredivisieLogoPost: BlogPost = {
   id: 236,
+  slug: "eredivisie-logo", //
   title: "Eredivisie Logo : Histoire et Évolution du Logo de la Ligue Néerlandaise [2024]",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Eredivisie, emblème du championnat de football néerlandais. Une analyse détaillée du design, des couleurs et de la symbolique du logo Eredivisie PNG à travers les époques.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Eredivisie, emblème du championnat de football néerlandais. Une analyse détaillée du design, des couleurs et de la symbolique du logo Eredivisie PNG à travers les époques.",
   date: "2024-06-02",
   galleryImageId: 236,
   content: `# L'Histoire Fascinante du **Eredivisie Logo**
@@ -87,7 +89,8 @@ L'étoile emblématique, qu'elle apparaisse dans sa version complète ou dans le
 Dans un paysage footballistique mondial de plus en plus homogénéisé, l'identité visuelle distinctive de l'**Eredivisie** contribue activement à préserver le caractère unique du championnat néerlandais. Cette cohérence entre l'expérience footballistique proposée – technique, offensive, formatrice – et son expression visuelle constitue sans doute la plus grande réussite stratégique de la ligue.
 
 Alors que le football continue sa transformation digitale accélérée, le **logo Eredivisie PNG** démontre qu'une identité visuelle forte et cohérente peut constituer un véritable actif stratégique dans la compétition mondiale que se livrent les ligues pour l'attention des fans et la valorisation médiatique.`,
-  keywords: "eredivisie logo, logo eredivisie, eredivisie logo png, logo eredivisie png, ligue néerlandaise logo, football néerlandais logo, championnat pays-bas football",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "eredivisie logo, logo eredivisie, eredivisie logo png, logo eredivisie png, ligue néerlandaise logo, football néerlandais logo, championnat pays-bas football",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

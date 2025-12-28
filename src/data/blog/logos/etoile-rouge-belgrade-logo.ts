@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const etoileRougeBelgradeLogoPost: BlogPost = {
   id: 242,
+  slug: "etoile-rouge-de-belgrade-logo", //
   title: "Logo Étoile Rouge de Belgrade : Histoire et Symbolisme du Club Serbe [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'Étoile Rouge de Belgrade : origines, évolution et signification de l'emblème emblématique du club serbe le plus titré.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'Étoile Rouge de Belgrade : origines, évolution et signification de l'emblème emblématique du club serbe le plus titré.",
   date: "2024-06-05",
   galleryImageId: 242,
   content: `# L'Histoire Fascinante du **Logo Étoile Rouge de Belgrade**
@@ -49,7 +50,8 @@ Alors que l'Étoile Rouge continue d'écrire son histoire dans le football europ
 Les futures évolutions du **logo png etoiles rouge de belgrade** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec l'histoire glorieuse du club.
 
 Qu'il s'agisse du **etoile rouge de belgrade logo** brodé sur les maillots officiels, du **logo etoile rouge de belgrade** flottant sur les drapeaux des supporters ou du **logo png etoiles rouge de belgrade** partagé sur les plateformes numériques, cet emblème reste un puissant vecteur d'identité qui incarne l'âme d'un club et l'esprit de tout un pays.`,
-  keywords: "etoile rouge de belgrade logo, logo etoile rouge de belgrade, le logo du etoile rouge de belgrade, logo png etoiles rouge de belgrade, emblème étoile rouge belgrade, symbole étoile rouge belgrade, blason étoile rouge belgrade, écusson étoile rouge belgrade, crvena zvezda logo, red star belgrade logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "etoile rouge de belgrade logo, logo etoile rouge de belgrade, le logo du etoile rouge de belgrade, logo png etoiles rouge de belgrade, emblème étoile rouge belgrade, symbole étoile rouge belgrade, blason étoile rouge belgrade, écusson étoile rouge belgrade, crvena zvezda logo, red star belgrade logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -8,7 +8,7 @@ const LiveDot = () => (
 );
 
 const messages = [
-  "PROMOTION À DURÉE LIMITÉE : Obtenez notre fichier complet sur le thème du FOOTBALL",
+  "PROMOTION LIMITÉE : -95% sur notre fichier complet spécialisé sur le football",
   "Plus besoin de chercher les logos de football pour vos projets"
 ];
 

@@ -9,7 +9,7 @@ const LiveDot = () => (
 
 const messages = [
   "OFFRE LIMITÉE : -95% sur notre fichier FOOTBALL : ⦗FRONT-CLOUD⦘~ Football.zip",
-  "LIVRAISON INSTANTANÉE : Téléchargez notre fichier directement en page d'après-paiement"
+  "LIVRAISON DIRECTE : Téléchargez notre fichier en page d'après-paiement"
 ];
 
 const TopBar = () => {

@@ -211,7 +211,7 @@ const HeroSection: React.FC = () => {
                 <span className="bg-red-100 text-red-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Valeur réelle</span>
                 <span className="w-px h-3 bg-gray-300"></span>
                 <span className="font-serif text-base sm:text-lg font-bold text-gray-900 tracking-tight">5€</span>
-                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Prix du fichier</span>
+                <span className="bg-green-100 text-green-700 text-[7px] sm:text-[8px] font-bold px-1 py-0.5 rounded-full">Cotation actuelle</span>
               </div>
             </div>
 

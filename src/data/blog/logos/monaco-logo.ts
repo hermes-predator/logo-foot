@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const monacoLogoPost: BlogPost = {
   id: 394,
+  slug: "monaco-logo", //
   title: "Logo AS Monaco : Histoire du Blason Princier [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'AS Monaco : origines, symbolisme et évolution de l'emblème mythique du club de la Principauté.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'AS Monaco : origines, symbolisme et évolution de l'emblème mythique du club de la Principauté.",
   date: "2024-03-28",
   galleryImageId: 394,
   content: `# Logo AS Monaco : L'Histoire Fascinante d'un Emblème Princier
@@ -46,7 +47,8 @@ Le **logo de monaco** est ainsi devenu un symbole intemporel qui traverse les g�
 En définitive, le **logo monaco** représente bien plus qu'un simple design : c'est l'incarnation visuelle d'une institution sportive majeure. À travers son **as monaco logo**, le club a su créer une identité visuelle qui transcende le cadre sportif pour devenir un symbole culturel associé au prestige et à l'excellence.
 
 Que ce soit sur les maillots des joueurs, les produits dérivés ou les communications officielles, le **logo as monaco png** continue de porter haut les couleurs d'un club dont l'histoire s'écrit en lettres d'or dans le grand livre du football européen. Le **logo monaco png** n'est pas simplement un emblème sportif – c'est le témoin visuel d'une histoire riche qui continue de s'écrire sous les couleurs rouge et blanche de la Principauté.`,
-  keywords: "logo monaco, monaco logo, as monaco logo, logo as monaco, as monaco fc logo, logo as monaco fc, logo monaco foot, logo de monaco, logo monaco png, logo as monaco png, as monaco fc logo, logo as monaco png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo monaco, monaco logo, as monaco logo, logo as monaco, as monaco fc logo, logo as monaco fc, logo monaco foot, logo de monaco, logo monaco png, logo as monaco png, as monaco fc logo, logo as monaco png",
+  category: "logos",
+  subCategory: "club-logos",
 };

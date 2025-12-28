@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const metzLogoPost: BlogPost = {
   id: 385,
+  slug: "metz-logo", //
   title: "Logo FC Metz : Histoire et Evolution de l'Emblème Grenat [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du FC Metz : origines, évolution et symbolisme de l'emblème emblématique du club lorrain.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du FC Metz : origines, évolution et symbolisme de l'emblème emblématique du club lorrain.",
   date: "2024-04-09",
   galleryImageId: 385,
   content: `# L'Histoire Passionnante du Logo FC Metz
@@ -62,7 +63,8 @@ Cette adaptabilité témoigne de la vision moderne du club, qui a su faire évol
 Alors que le club continue d'écrire son histoire, son **logo fc metz** reste un élément central de son identité. Les futures évolutions respecteront certainement l'héritage visuel tout en intégrant les innovations nécessaires pour rester pertinent dans un monde en constante évolution.
 
 Le **logo metz** du FC Metz continuera d'être ce trait d'union entre passé et futur, entre tradition et innovation, incarnant l'âme d'un club profondément ancré dans sa région mais résolument tourné vers l'avenir. Plus qu'un simple emblème sportif, il restera ce symbole puissant qui unit les générations de supporters autour d'une passion commune pour le club grenat.`,
-  keywords: "logo fc metz, logo du fc metz, fc metz logo, metz football club logo, emblème fc metz, blason metz foot, ecusson metz, logo les grenats",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo fc metz, logo du fc metz, fc metz logo, metz football club logo, emblème fc metz, blason metz foot, ecusson metz, logo les grenats",
+  category: "logos",
+  subCategory: "club-logos",
 };

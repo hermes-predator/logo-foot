@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const martiguesLogoPost: BlogPost = {
   id: 383,
+  slug: "martigues-logo", //
   title: "Logo Martigues : Histoire et Évolution de l'Emblème Provençal [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Martigues : origines, évolution et symbolisme de l'emblème emblématique du club provençal.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Martigues : origines, évolution et symbolisme de l'emblème emblématique du club provençal.",
   date: "2024-06-15",
   galleryImageId: 383,
   content: `# L'Histoire Fascinante du **logo martigues**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo martigues** incarne les valeu
 Alors que le FC Martigues continue d'écrire son histoire sur les terrains nationaux, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo fc martigues** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **fc martigues logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo martigues, logo fc martigues, fc martigues logo, logo martigues foot, martigues foot logo, martigues logo, fc martigues nouveau logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo martigues, logo fc martigues, fc martigues logo, logo martigues foot, martigues foot logo, martigues logo, fc martigues nouveau logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

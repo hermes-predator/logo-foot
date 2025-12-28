@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const madagascarLogoPost: BlogPost = {
   id: 376,
+  slug: "madagascar-logo", //
   title: "**Logo Madagascar** : L'Histoire de l'Emblème des Barea [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale malgache : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football malgache.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale malgache : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football malgache.",
   date: "2025-04-27",
   galleryImageId: 376,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "logo madagascar, logo de madagascar, logo madagascar png, madagascar logo, madagascar logo png, logo madagascar foot, equipe foot madagascar logo",
+  keywords:
+    "logo madagascar, logo de madagascar, logo madagascar png, madagascar logo, madagascar logo png, logo madagascar foot, equipe foot madagascar logo",
   content: `# L'Histoire Fascinante du **Logo Madagascar**
 
 Le **logo madagascar** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée de football, dont l'histoire est profondément ancrée dans la culture et les traditions de la Grande Île. Le **logo de madagascar** incarne l'identité unique d'un pays qui a su émerger sur la scène footballistique africaine avec une détermination remarquable.

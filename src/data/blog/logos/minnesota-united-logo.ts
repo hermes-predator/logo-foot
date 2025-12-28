@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const minnesotaUnitedLogoPost: BlogPost = {
   id: 390,
+  slug: "minnesota-united-logo", //
   title: "**Logo Minnesota United** : Histoire et Design de l'Emblème de la MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Minnesota United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Minnesota United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 390,
   content: `# L'Histoire Fascinante du **Logo Minnesota United**
@@ -34,7 +35,8 @@ Le **minnesota united logo png** est bien plus qu'un simple emblème sportif. Il
 ## Conclusion
 
 Le **logo minnesota united** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole culturel. À travers ses lignes élégantes et son symbolisme profond, il raconte l'histoire d'une équipe, d'une ville et d'une communauté passionnée.`,
-  keywords: "minnesota united logo:20, logo minnesota united:10, minnesota united fc logo:10, minnesota united logo png:10, logo de foot minnesota united:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "minnesota united logo:20, logo minnesota united:10, minnesota united fc logo:10, minnesota united logo png:10, logo de foot minnesota united:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

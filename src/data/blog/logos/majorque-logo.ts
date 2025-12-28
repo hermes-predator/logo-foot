@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const majorqueLogoPost: BlogPost = {
   id: 377,
+  slug: "majorque-logo", //
   title: "Logo Majorque : Histoire et Design de l'Emblème Baléare [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Majorque : des origines à aujourd'hui, évolution et signification de l'emblème de ce club emblématique des Baléares.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Majorque : des origines à aujourd'hui, évolution et signification de l'emblème de ce club emblématique des Baléares.",
   date: "2024-04-30",
   galleryImageId: 377,
   content: `# L'Histoire Captivante du Logo Majorque
@@ -46,7 +47,8 @@ Cette visibilité internationale du **logo majorque rcd png** a contribué à fa
 Alors que le club poursuit son parcours dans le paysage footballistique espagnol, le **majorque logo** continue d'évoluer subtilement pour répondre aux défis futurs tout en honorant son riche passé. Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo majorque** un exemple remarquable de continuité dans le design sportif.
 
 Le **logo club foot espagne majorque** reste un point d'ancrage pour les supporters et un symbole reconnaissable pour les amateurs de football, incarnant l'âme d'un club qui, malgré les défis sportifs et économiques, continue de porter haut les couleurs et l'identité de l'île de Majorque sur la scène footballistique nationale et internationale.`,
-  keywords: "logo majorque, majorque logo, logo majorque foot, logo club foot espagne majorque, logo de majorque, logo majorque rcd png, rcd mallorca logo, majorque football logo, ecusson majorque, blason majorque, mallorca logo, logo rcd mallorca, club espagnol logo, la liga logo club",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo majorque, majorque logo, logo majorque foot, logo club foot espagne majorque, logo de majorque, logo majorque rcd png, rcd mallorca logo, majorque football logo, ecusson majorque, blason majorque, mallorca logo, logo rcd mallorca, club espagnol logo, la liga logo club",
+  category: "logos",
+  subCategory: "club-logos",
 };

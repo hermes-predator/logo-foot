@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const manchesterCityLogoPost: BlogPost = {
   id: 381,
+  slug: "manchester-city-logo", //
   title: "Logo Manchester City : Histoire et Evolution du Design [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Manchester City : origines, symbolisme et évolution de l'emblème emblématique des Citizens à travers les années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Manchester City : origines, symbolisme et évolution de l'emblème emblématique des Citizens à travers les années.",
   date: "2024-03-31",
   galleryImageId: 381,
   content: `# L'Histoire Fascinante du **Logo Manchester City**
@@ -54,7 +55,8 @@ Cette cohérence d'application garantit que le **man city fc logo** conserve son
 Alors que Manchester City continue son parcours d'excellence sur le terrain, son **logo manchester city** reste un pilier stable de son identité visuelle. La décision audacieuse de revenir à un design plus traditionnel tout en l'adaptant aux exigences modernes a créé un emblème qui transcende le simple rôle d'identification pour devenir un véritable symbole culturel.
 
 Le **man city logo** actuel semble parfaitement positionné pour accompagner le club dans son avenir brillant, incarnant à la fois son héritage historique et ses ambitions internationales. Pour des millions de supporters à travers le monde, cet emblème continuera d'être bien plus qu'un simple logo : un symbole d'appartenance et de fierté qui résonne bien au-delà des terrains de football.`,
-  keywords: "logo manchester city, manchester city logo, manchester city football club logo, manchester city fc logo, logos manchester city, logo de manchester city, ancien logo manchester city, manchester city logo png, logo manchester city png, logo manchester city style, man city fc logo, man city logo, logo man city, man city logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo manchester city, manchester city logo, manchester city football club logo, manchester city fc logo, logos manchester city, logo de manchester city, ancien logo manchester city, manchester city logo png, logo manchester city png, logo manchester city style, man city fc logo, man city logo, logo man city, man city logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

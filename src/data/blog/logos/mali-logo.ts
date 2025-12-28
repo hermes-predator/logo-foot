@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const maliLogoPost: BlogPost = {
   id: 379,
+  slug: "mali-logo", //
   title: "Logo Mali : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Mali : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale du Mali : des origines à aujourd'hui, évolution et signification de l'emblème des Aigles.",
   date: "2024-05-31",
   galleryImageId: 379,
   content: `# L'Histoire Fascinante du **Logo Mali** Football
@@ -51,7 +53,8 @@ La Fédération Malienne de Football utilise stratégiquement le **logo republiq
 Le **logo mali** a su évoluer au fil du temps tout en conservant son essence et sa symbolique forte. Cette capacité d'adaptation tout en préservant une continuité visuelle a permis au **logo mali football** de rester pertinent et de toucher différentes générations de supporters et de joueurs, créant ainsi un héritage visuel durable dans l'histoire du football malien.
 
 Les joueurs qui portent fièrement le maillot orné du **mali football logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football africain et dont le **logo du mali** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo mali, logo du mali, logo mali foot, logo republique du mali, logo mali football, mali foot logo, mali football logo, mali logo",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo mali, logo du mali, logo mali foot, logo republique du mali, logo mali football, mali foot logo, mali football logo, mali logo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

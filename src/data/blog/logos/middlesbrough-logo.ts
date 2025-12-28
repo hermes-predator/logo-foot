@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const middlesbroughLogoPost: BlogPost = {
   id: 387,
+  slug: "middlesbrough-logo", //
   title: "**Logo Middlesbrough FC** : Histoire et Évolution de l'Emblème des Teessiders [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Middlesbrough**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Middlesbrough**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 387,
   content: `# **Logo Middlesbrough** : L'Histoire d'un Emblème Emblématique du Football Anglais
@@ -47,7 +48,8 @@ Le **logo de Middlesbrough** fait l'objet de nombreuses applications qui témoig
 ## Conclusion
 
 Le **logo Middlesbrough FC** illustre parfaitement comment un emblème sportif peut évoluer tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire l'histoire du club.`,
-  keywords: "logo middlesbrough:20, middlesbrough fc logo:20, middlesbrough logo:20, middlesbrough logo png:20, logo design middlesbrough:10, logos middlesbrough fc:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "logo middlesbrough:20, middlesbrough fc logo:20, middlesbrough logo:20, middlesbrough logo png:20, logo design middlesbrough:10, logos middlesbrough fc:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

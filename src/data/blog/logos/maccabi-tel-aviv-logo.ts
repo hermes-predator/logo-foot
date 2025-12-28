@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const maccabiTelAvivLogoPost: BlogPost = {
   id: 375,
+  slug: "maccabi-tel-aviv-logo", //
   title: "**Maccabi Tel Aviv Logo** : Histoire et Évolution de l'Emblème du Club Israélien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **maccabi tel aviv logo**, son symbolisme unique et son évolution à travers les décennies.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **maccabi tel aviv logo**, son symbolisme unique et son évolution à travers les décennies.",
   date: "2024-04-12", // Added the date property
   galleryImageId: 375,
   content: `
@@ -81,6 +82,6 @@ De la simplicité du premier **logo foot maccabi tel aviv** à la sophistication
 Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les écrans des fans du monde entier, le **maccabi tel aviv logo png** reste un symbole de passion, d'excellence et d'identité culturelle qui transcende largement le cadre du sport pour s'inscrire dans l'histoire d'une nation et d'un peuple.
   `,
   keywords: "maccabi tel aviv logo, maccabi tel aviv logo png, logo foot maccabi tel aviv",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  category: "logos",
+  subCategory: "other-european-clubs",
 };

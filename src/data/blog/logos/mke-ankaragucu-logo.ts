@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const mkeAnkaragucuLogoPost: BlogPost = {
   id: 392,
+  slug: "mke-ankaragucu-logo", //
   title: "**Logo MKE Ankaragücü** : Histoire et Symbolisme de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo MKE Ankaragücü**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo MKE Ankaragücü**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-22",
   galleryImageId: 392,
   content: `# L'Histoire du **Logo MKE Ankaragücü**
@@ -34,7 +35,8 @@ Aujourd'hui, le **MKE Ankaragücü logo** trouve sa place dans de multiples cont
 ## Perspectives d'Avenir
 
 Le **logo MKE Ankaragücü png** poursuit son évolution constante. Entre adaptations technologiques, innovations graphiques, respect de l'héritage et modernisation continue, il demeure un symbole vivant et dynamique du football turc.`,
-  keywords: "logo MKE Ankaragücü, logo MKE Ankaragücü png, MKE Ankaragücü logo, football turc, super lig, ankara football",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo MKE Ankaragücü, logo MKE Ankaragücü png, MKE Ankaragücü logo, football turc, super lig, ankara football",
+  category: "logos",
+  subCategory: "club-logos",
 };

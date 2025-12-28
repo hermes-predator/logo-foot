@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const milanLogoPost: BlogPost = {
   id: 388,
+  slug: "ac-milan-logo", //
   title: "Logo AC Milan : Histoire et Évolution du Design Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo AC Milan : origines, évolution et signification de l'emblème mythique du club rossonero qui symbolise l'excellence italienne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo AC Milan : origines, évolution et signification de l'emblème mythique du club rossonero qui symbolise l'excellence italienne.",
   date: "2024-04-03",
   galleryImageId: 388,
   content: `# L'Histoire Fascinante du Logo AC Milan à Travers les Âges
@@ -71,7 +72,8 @@ L'histoire du **logo Milan** est celle d'une évolution respectueuse, où chaque
 Le **AC Milan logo** incarne à la perfection la philosophie d'un club qui a su rester fidèle à ses racines tout en embrassant la modernité. Sa présence sur les maillots des légendes qui ont écrit l'histoire du football européen – de Baresi à Maldini, de Van Basten à Kaká – a contribué à en faire un symbole respecté bien au-delà des frontières italiennes.
 
 Pour les passionnés de football et les collectionneurs, posséder le **logo AC Milan PNG** en haute résolution permet d'afficher leur attachement à ce club historique dont l'emblème transcende largement le cadre sportif pour s'inscrire dans le patrimoine visuel mondial.`,
-  keywords: "logo ac milan, ac milan logo, logo milan ac, milan football logo, milan fc logo, milan ac logo, logo milan, milan logo, a.c. milan logo, ac milan fc logo, ac milan logo png, a.c. milan logo png, logo ac milan png, logos ac milan, logo du milan ac",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo ac milan, ac milan logo, logo milan ac, milan football logo, milan fc logo, milan ac logo, logo milan, milan logo, a.c. milan logo, ac milan fc logo, ac milan logo png, a.c. milan logo png, logo ac milan png, logos ac milan, logo du milan ac",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const mlsLogoPost: BlogPost = {
   id: 393,
+  slug: "mls-logo", //
   title: "Logo MLS : Histoire et Design du Football Américain [2024]",
-  excerpt: "Découvrez l'histoire complète des logos de la Major League Soccer (MLS) : évolution, design et symbolisme des emblèmes du football américain.",
+  excerpt:
+    "Découvrez l'histoire complète des logos de la Major League Soccer (MLS) : évolution, design et symbolisme des emblèmes du football américain.",
   date: "2024-03-26",
   galleryImageId: 393,
   content: `# Logo MLS : Guide Complet des Emblèmes du Football Américain
@@ -78,7 +80,8 @@ L'avenir des logos MLS s'oriente vers plus d'innovation :
 - Expériences de réalité augmentée
 
 La MLS continue de repousser les limites du design sportif, combinant héritage américain et influence internationale dans une identité visuelle en constante évolution.`,
-  keywords: "logo mls, logo mls soccer, mls football logos, mls logo, major league soccer logo, football américain logo, soccer usa logo, logo club mls",
-  category: 'competition-logos',
-  subCategory: 'competition-logos',
+  keywords:
+    "logo mls, logo mls soccer, mls football logos, mls logo, major league soccer logo, football américain logo, soccer usa logo, logo club mls",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

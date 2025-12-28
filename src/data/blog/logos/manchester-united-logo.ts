@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const manchesterUnitedLogoPost: BlogPost = {
   id: 382,
+  slug: "manchester-united-logo", //
   title: "Logo Manchester United : Histoire et Evolution du Symbole des Red Devils [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Manchester United : origines, évolutions et symbolisme de l'emblème légendaire des Red Devils qui fait vibrer Old Trafford.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Manchester United : origines, évolutions et symbolisme de l'emblème légendaire des Red Devils qui fait vibrer Old Trafford.",
   date: "2024-04-10",
   galleryImageId: 382,
   content: `# L'Histoire Fascinante du **Logo Manchester United**
@@ -52,7 +53,8 @@ Alors que le football continue d'évoluer dans un environnement toujours plus gl
 Les prochaines années verront probablement des adaptations subtiles du **manchester united fc logo** pour répondre aux exigences techniques des nouveaux médias, mais l'essence du blason restera inchangée. Car au-delà de sa fonction identificatrice, le **logo de manchester united** est devenu un symbole culturel qui transcende le sport - une icône qui raconte l'histoire d'un club, d'une ville, et d'une passion partagée par des millions de personnes à travers le monde.
 
 Chaque fois qu'un joueur enfile le maillot frappé de cet emblème légendaire, il ne porte pas simplement les couleurs d'un club de football - il devient le gardien temporaire d'un héritage visuel qui inspire et unit des générations de supporters. Dans un monde en perpétuel changement, le **manchester united logo** reste un symbole intemporel d'excellence et d'ambition.`,
-  keywords: "logo manchester united, manchester united logo, manchester united football logo, manchester united soccer logo, logos manchester united, manchester united f.c. logo, manchester united fc logo, manchester united football club logo, logo de manchester united, manchester united logo png, logo manchester united png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo manchester united, manchester united logo, manchester united football logo, manchester united soccer logo, logos manchester united, manchester united f.c. logo, manchester united fc logo, manchester united football club logo, logo de manchester united, manchester united logo png, logo manchester united png",
+  category: "logos",
+  subCategory: "club-logos",
 };

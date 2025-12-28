@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const malagaLogoPost: BlogPost = {
   id: 378, // ID unique pour ce nouvel article
+  slug: "malaga-logo", //
   title: "Logo Malaga : Histoire et Évolution de l'Emblème Andalou [2024]",
   date: "2025-04-11",
   galleryImageId: 378,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Malaga, emblème du club andalou. Analyse complète des symboles et des couleurs du blason historique du Málaga CF.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Malaga, emblème du club andalou. Analyse complète des symboles et des couleurs du blason historique du Málaga CF.",
   content: `# L'Histoire Fascinante du **Logo Malaga**
 
 Le **malaga logo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club profondément ancré dans la région andalouse. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **logo malaga**, ce blason qui fait la fierté des supporters du club de la Costa del Sol.
@@ -101,5 +102,6 @@ Le **malaga logo** est bien plus qu'un simple emblème sportif : c'est un symbol
 Pour les habitants de Málaga et les supporters du club, le **malaga cf logo** représente un héritage précieux qui transcende le simple cadre sportif. Il incarne la fierté d'une ville et d'une région, tout en portant les ambitions d'un club qui continue d'écrire son histoire dans le football espagnol.
 
 Le **malaga logo png** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré les difficultés traversées au fil des ans, a su se forger une place unique dans le paysage footballistique espagnol grâce à des valeurs fortes et un ancrage local profond.`,
-  keywords: "logo malaga, malaga logo, logo malaga cf, malaga cf logo, malaga logo png, logo de malaga, logo malaga png, malaga cf logo png, malaga fc logo, fc malaga logo, logo club espagnol malaga, logo club foot espagnol malaga",
+  keywords:
+    "logo malaga, malaga logo, logo malaga cf, malaga cf logo, malaga logo png, logo de malaga, logo malaga png, malaga cf logo png, malaga fc logo, fc malaga logo, logo club espagnol malaga, logo club foot espagnol malaga",
 };

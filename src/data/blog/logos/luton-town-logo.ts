@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lutonTownLogoPost: BlogPost = {
   id: 372,
+  slug: "luton-town-logo", //
   title: "Logo Luton Town : Histoire et Évolution de l'Emblème des Hatters [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Luton Town, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Luton Town, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 372,
   content: `# **Logo Luton Town** : L'Histoire d'un Emblème Britannique Unique
@@ -83,7 +84,8 @@ Ces évolutions contrôlées témoignent d'une gestion avisée de l'actif immat�
 Le **logo Luton Town transparent** représente à cet égard un atout stratégique précieux, offrant la flexibilité nécessaire pour explorer de nouvelles applications créatives sans compromettre la reconnaissance instantanée de l'emblème. Cette version du **logo Luton Town FC** incarne parfaitement l'équilibre délicat entre tradition et innovation que le club s'efforce de maintenir.
 
 En définitive, le **logo Luton Town** illustre remarquablement comment un emblème sportif peut évoluer organiquement tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire son histoire parallèlement à celle du club qu'il représente.`,
-  keywords: "logo luton town:20, luton town logo:20, luton town logo png:20, logo luton town fc:10, luton town logo transparent:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "logo luton town:20, luton town logo:20, luton town logo png:20, logo luton town fc:10, luton town logo transparent:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

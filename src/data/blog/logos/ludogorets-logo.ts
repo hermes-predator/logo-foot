@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ludogoretsLogoPost: BlogPost = {
   id: 371, // ID unique pour ce nouvel article
+  slug: "ludogorets-logo", //
   title: "Logo Ludogorets : Histoire et Évolution de l'Emblème Bulgare [2024]",
   date: "2025-04-11",
   galleryImageId: 371,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Ludogorets, emblème du club bulgare. Analyse complète des symboles et des couleurs du blason de Ludogorets Razgrad.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Ludogorets, emblème du club bulgare. Analyse complète des symboles et des couleurs du blason de Ludogorets Razgrad.",
   content: `# L'Histoire Fascinante du **Logo Ludogorets**
 
 Le **logo ludogorets** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club qui a rapidement gravi les échelons du football bulgare et européen. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **ludogorets logo**, ce blason qui fait la fierté des supporters du club vert de Razgrad.
@@ -112,5 +113,6 @@ Le **logo ludogorets** est bien plus qu'un simple emblème sportif : c'est un sy
 Pour les habitants de Razgrad et les supporters du club, le **logo ludogorets razgrad** représente un héritage précieux qui transcende le simple cadre sportif. Il incarne la fierté d'une ville et d'une région, tout en portant les ambitions d'un club qui continue d'écrire son histoire dans le football européen.
 
 Le **logo foot ludogorets razgrad** reste ainsi un témoignage visuel de l'identité d'un club authentique qui, malgré sa jeunesse relative, a su se forger une place unique dans le paysage footballistique européen grâce à des valeurs fortes et un ancrage local profond.`,
-  keywords: "logo ludogorets, ludogorets logo, ludogorets logo png, ludogorets razgrad logo, logo foot ludogorets razgrad, logo ludogorets razgrad",
+  keywords:
+    "logo ludogorets, ludogorets logo, ludogorets logo png, ludogorets razgrad logo, logo foot ludogorets razgrad, logo ludogorets razgrad",
 };

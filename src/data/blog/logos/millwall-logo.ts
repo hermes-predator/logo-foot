@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const millwallLogoPost: BlogPost = {
   id: 389,
+  slug: "millwall-logo", //
   title: "**Logo Millwall FC** : Histoire et Évolution de l'Emblème des Lions [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Millwall**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Millwall**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 389,
   content: `# **Logo Millwall FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
@@ -57,7 +58,8 @@ Le **logo de foot Millwall** fait l'objet de nombreuses applications et adaptati
 ## Conclusion
 
 L'emblème du **Millwall FC logo** illustre remarquablement comment un logo sportif peut évoluer organiquement tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire l'histoire du club.`,
-  keywords: "logo millwall:20, logo millwall fc:20, millwall fc logo:20, millwall logo:20, millwall logo png:20, millwall fc logo png:10, logo de foot millwall:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "logo millwall:20, logo millwall fc:20, millwall fc logo:20, millwall logo:20, millwall logo png:20, millwall fc logo png:10, logo de foot millwall:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const montpellierLogoPost: BlogPost = {
   id: 396,
+  slug: "montpellier-logo", //
   title: "Logo Montpellier HSC : Histoire et Évolution de l'Emblème Orange et Bleu [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Montpellier HSC : origines, évolution et symbolisme de l'écusson emblématique du club héraultais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Montpellier HSC : origines, évolution et symbolisme de l'écusson emblématique du club héraultais.",
   date: "2024-05-07",
   galleryImageId: 396,
   content: `# L'Histoire Fascinante du **Logo Montpellier**
@@ -68,8 +69,8 @@ Pour chaque génération de supporters, une version spécifique du **montpellier
 Le **logo montpellier** a su traverser les époques tout en conservant son essence et sa pertinence. À chaque étape de son évolution, le **logo montpellier foot** a reflété l'identité du club, ses ambitions et son ancrage territorial. Dans un monde du football en perpétuelle mutation, le **logo foot montpellier** demeure un point de repère stable pour les supporters, un symbole reconnaissable qui incarne les valeurs et l'histoire d'un club profondément lié à sa région.
 
 Alors que le MHSC continue d'écrire son histoire sur les terrains de Ligue 1, son **montpellier logo** continuera d'évoluer subtilement, comme il l'a toujours fait, pour rester en phase avec son époque tout en préservant l'héritage précieux du passé. Le **montpellier foot logo** n'est pas simplement un design graphique : c'est le gardien visuel d'une passion partagée par des générations de supporters héraultais, un emblème qui continue de rassembler la communauté orange et bleu autour de valeurs communes et d'une fierté régionale indéfectible.`,
-  keywords: "logo montpellier, montpellier logo, logo montpellier foot, logo foot montpellier, mhsc logo, écusson montpellier, blason montpellier hsc, emblème mhsc, montpellier foot logo, logo de montpellier, nouveau logo montpellier foot, logo montpellier png, montpellier logo foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo montpellier, montpellier logo, logo montpellier foot, logo foot montpellier, mhsc logo, écusson montpellier, blason montpellier hsc, emblème mhsc, montpellier foot logo, logo de montpellier, nouveau logo montpellier foot, logo montpellier png, montpellier logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

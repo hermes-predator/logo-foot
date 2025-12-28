@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const lyonLogoPost: BlogPost = {
   id: 374,
+  slug: "lens-lyon", //
   title: "Logo OL : Histoire et Design de l'Olympique Lyonnais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'Olympique Lyonnais : origines, évolution et symbolisme de l'emblème emblématique du club rhodanien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'Olympique Lyonnais : origines, évolution et symbolisme de l'emblème emblématique du club rhodanien.",
   date: "2024-03-31",
   galleryImageId: 374,
   content: `# L'Histoire Fascinante du **Logo OL**
@@ -52,7 +53,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **lyon logo foot** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **logo ol png**.
 
 Alors que l'Olympique Lyonnais poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines lyonnaises, fait du **logo lyon foot** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football français.`,
-  keywords: "logo ol, ol logo, logo ol png, ol logo png, logo lyon, logos olympique lyonnais, olympique lyonnais logo, logo olympique lyonnais, logo olympique lyonnais png, logo lyon foot, logo de lyon, lyon logo foot, logo lyon png, logo de l olympique lyonnais",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo ol, ol logo, logo ol png, ol logo png, logo lyon, logos olympique lyonnais, olympique lyonnais logo, logo olympique lyonnais, logo olympique lyonnais png, logo lyon foot, logo de lyon, lyon logo foot, logo lyon png, logo de l olympique lyonnais",
+  category: "logos",
+  subCategory: "club-logos",
 };

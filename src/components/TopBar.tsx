@@ -30,7 +30,7 @@ const TopBar = () => {
         // Message complete, wait then start erasing
         const timeout = setTimeout(() => {
           setIsTyping(false);
-        }, 6000);
+        }, 7000);
         return () => clearTimeout(timeout);
       }
     } else {

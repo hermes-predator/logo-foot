@@ -1,14 +1,17 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const albaniaLogoPost: BlogPost = {
   id: 60,
+  slug: "albanie-logo", //
   title: "Logo Albanie : Histoire et Signification de l'Emblème des Aigles Rouges [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Albanie : origines, évolution et symbolisme de l'emblème des Aigles Rouges, équipe nationale emblématique des Balkans.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Albanie : origines, évolution et symbolisme de l'emblème des Aigles Rouges, équipe nationale emblématique des Balkans.",
   date: "2024-07-20",
   category: "national-logos", // Changed from "logos"
   subCategory: "national-logos", // Kept the same
   galleryImageId: 60,
-  keywords: "logo albanie, albanie foot logo, albanie logo, logo albanie foot, albanie logo foot, logo albanie png, logo foot albanie, emblème Albanie, écusson Albanie football, FSHF logo",
+  keywords:
+    "logo albanie, albanie foot logo, albanie logo, logo albanie foot, albanie logo foot, logo albanie png, logo foot albanie, emblème Albanie, écusson Albanie football, FSHF logo",
   content: `
 # L'Histoire Fascinante du **Logo Albanie** : Symbole d'une Nation
 
@@ -146,5 +149,5 @@ Le **logo albanie** est bien plus qu'un simple emblème sportif - c'est un puiss
 Pour les supporters albanais, le **logo albanie foot** représente un point de ralliement, un symbole d'appartenance qui transcende les frontières et unit la diaspora albanaise à travers le monde. Sur les maillots des joueurs, sur les drapeaux dans les stades ou en version digitale **logo albanie png** sur les écrans, cet emblème est devenu indissociable de l'identité footballistique albanaise.
 
 Alors que l'équipe nationale continue de progresser et de se faire une place dans le football européen, le **albanie logo** l'accompagne comme un témoin silencieux mais éloquent de ce parcours, portant avec lui les espoirs et la fierté de tout un peuple uni par la passion du football.
-`
+`,
 };

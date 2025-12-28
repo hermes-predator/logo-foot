@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alNassrLogoPost: BlogPost = {
   id: 57,
+  slug: "al-nassr-logo", //
   title: "Logo Al Nassr : Histoire et Évolution de l'Emblème Saoudien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Al Nassr : origines, signification et évolution de l'emblème du célèbre club saoudien de football. Analyse détaillée avec téléchargement PNG.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Al Nassr : origines, signification et évolution de l'emblème du célèbre club saoudien de football. Analyse détaillée avec téléchargement PNG.",
   date: "2024-04-15",
   galleryImageId: 57,
   content: `# L'Histoire Fascinante du Logo Al Nassr
@@ -54,7 +55,8 @@ Pour les designers graphiques et les passionnés de football, le **Al Nassr logo
 Le **logo Al Nassr** transcende aujourd'hui sa fonction première d'identification d'un club de football pour devenir un symbole culturel et un ambassadeur du sport saoudien dans le monde. Son évolution reflète parfaitement le parcours d'un club qui a su transformer son image pour s'adapter aux exigences du football moderne tout en honorant son riche héritage.
 
 La trajectoire future du **Al-Nassr logo** sera sans doute aussi fascinante que son histoire, continuant d'évoluer au rythme des ambitions croissantes du club sur la scène internationale. Que vous soyez un supporter de longue date ou un nouveau fan attiré par les récentes acquisitions de stars, le **logo Al Nassr PNG** continuera d'être un symbole puissant d'excellence sportive et d'ambition globale.`,
-  keywords: "logo al nassr, al nassr logo, al nassr logo png, al-nassr fc logo, logo al nassr fc, logo al nassr png, logo de al nassr, al-nassr logo, football saoudien, emblème al nassr, club saoudien, design logo football",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo al nassr, al nassr logo, al nassr logo png, al-nassr fc logo, logo al nassr fc, logo al nassr png, logo de al nassr, al-nassr logo, football saoudien, emblème al nassr, club saoudien, design logo football",
+  category: "logos",
+  subCategory: "club-logos",
 };

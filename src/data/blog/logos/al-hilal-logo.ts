@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alHilalLogoPost: BlogPost = {
   id: 54,
+  slug: "al-hilal-logo", //
   title: "Le Logo Al-Hilal : Histoire et Design de l'Emblème du Géant Saoudien",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Al-Hilal, le plus grand club d'Arabie Saoudite. Analyse complète du design, des couleurs et de la signification de l'emblème du club.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Al-Hilal, le plus grand club d'Arabie Saoudite. Analyse complète du design, des couleurs et de la signification de l'emblème du club.",
   date: "2024-04-07",
   galleryImageId: 54,
   content: `# **Logo Al-Hilal** : Histoire et Evolution du Symbole du Club Saoudien
@@ -126,7 +127,8 @@ Le **logo Al Hilal** transcende sa fonction d'emblème sportif pour devenir un v
 Que vous soyez un fervent supporter recherchant le **logo Al Hilal PNG** pour votre fond d'écran, un designer étudiant l'évolution du **Al Hilal new logo**, ou simplement un amateur de football intéressé par les emblèmes des grandes équipes mondiales, le **logo Al Hilal FC** reste un exemple fascinant de design sportif alliant identité culturelle et ambition internationale.
 
 À travers ses succès continentaux et sa présence grandissante sur la scène mondiale, le bleu profond et le croissant distinctif du **logo Al Hilal** continuent de gagner en reconnaissance, faisant de cet emblème l'un des trésors visuels du football asiatique.`,
-  keywords: "al hilal logo, logo al-hilal, logo al hilal, al hilal fc logo, al hilal logo png, al hilal new logo, logo al hilal png, logo al hilal fc, al hilal fc new logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "al hilal logo, logo al-hilal, logo al hilal, al hilal fc logo, al hilal logo png, al hilal new logo, logo al hilal png, logo al hilal fc, al hilal fc new logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

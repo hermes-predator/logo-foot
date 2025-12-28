@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const africanClubsPost: BlogPost = {
   id: 50,
+  slug: "logos-football-africain", //
   title: "Les Logos du Football Africain : Tradition et Modernité [2024]",
-  excerpt: "Découvrez les designs uniques des logos du football africain. Des clubs historiques comme Al Ahly aux équipes émergentes, explorez l'art et l'identité du football continental.",
+  excerpt:
+    "Découvrez les designs uniques des logos du football africain. Des clubs historiques comme Al Ahly aux équipes émergentes, explorez l'art et l'identité du football continental.",
   date: "2024-03-08",
   galleryImageId: 50,
   content: `Design et Identité du Football Africain
@@ -82,7 +83,8 @@ Tendances Design CAF
 - Fan engagement
 
 Le futur du design africain combine richement tradition ancestrale et innovation digitale.`,
-  keywords: "logos football africain, design clubs africains, emblèmes foot afrique, écusson al ahly, logo tp mazembe, design wydad, foot africain",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logos football africain, design clubs africains, emblèmes foot afrique, écusson al ahly, logo tp mazembe, design wydad, foot africain",
+  category: "logos",
+  subCategory: "club-logos",
 };

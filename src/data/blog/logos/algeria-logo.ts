@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const algeriaLogoPost: BlogPost = {
   id: 61, // Using a unique ID that's not already used
+  slug: "algerie-logo", //
   title: "Logo Algérie : Histoire et Évolution de l'Emblème des Fennecs [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Algérie : des origines à aujourd'hui, évolution et signification de l'emblème des Fennecs.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Algérie : des origines à aujourd'hui, évolution et signification de l'emblème des Fennecs.",
   date: "2024-06-02", // Using a recent date
   galleryImageId: 61, // Using an ID for the gallery image
   content: `# L'Histoire Fascinante du **Logo Algérie**
@@ -129,7 +131,8 @@ Le **logo algerie** est bien plus qu'un simple emblème sportif – c'est un sym
 L'évolution mesurée de ce **algerie logo foot** au fil des décennies illustre parfaitement comment une fédération peut embrasser la modernité tout en honorant son patrimoine historique et culturel. La force du **logo algérie** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par des éléments nationaux intemporels.
 
 Dans un monde du football où l'identité nationale reste fondamentale malgré la mondialisation, le **logo algerie football** rappelle l'importance des symboles fédérateurs et de l'héritage culturel. Plus qu'un simple logo, il est le gardien d'une tradition footballistique qui continue de faire vibrer des millions de supporters à travers le monde, des stades algériens aux communautés de la diaspora.`,
-  keywords: "logo algerie, algerie logo, logo algerie foot, logo algerie football, algerie foot logo, fennec algerie logo, logo algérie, algerie logo foot, logo foot algerie, logo de l'algérie, logo algerie foot png, algerie foot logo png, algerie logo png, algérie foot logo, algérie logo, algérie logo foot, le logo de l'algérie, logo algérie png, logo d'algérie",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo algerie, algerie logo, logo algerie foot, logo algerie football, algerie foot logo, fennec algerie logo, logo algérie, algerie logo foot, logo foot algerie, logo de l'algérie, logo algerie foot png, algerie foot logo png, algerie logo png, algérie foot logo, algérie logo, algérie logo foot, le logo de l'algérie, logo algérie png, logo d'algérie",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alAhliLogoPost: BlogPost = {
   id: 52,
+  slug: "al-ahli-logo", //
   title: "Logo Al Ahli : Histoire et Évolution de l'Emblème du Club Saoudien [2025]",
-  excerpt: "Découvrez l'histoire fascinante du logo Al Ahli, son évolution au fil des ans et la signification de ses symboles pour ce grand club saoudien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Al Ahli, son évolution au fil des ans et la signification de ses symboles pour ce grand club saoudien.",
   date: "2025-04-08",
   galleryImageId: 52,
   content: `# L'Histoire Fascinante du Logo Al Ahli Saudi
@@ -42,7 +43,8 @@ Cette adaptabilité exemplaire du **logo al ahli sc** témoigne de la vision mod
 Au-delà de sa fonction d'identification, le **logo Al Ahli** incarne les valeurs fondamentales du club : excellence, persévérance, fierté nationale et ambition. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui continue de marquer l'histoire du football saoudien et arabe.
 
 Alors que le club poursuit son développement et sa quête de nouveaux succès, le **al ahly logo** reste le témoin visuel de son illustre passé et le symbole de ses ambitions futures. Pour les générations actuelles et à venir de supporters, ce **logo al ahli saudi club** continuera de représenter la grandeur d'une institution qui a transcendé le cadre sportif pour devenir un véritable phénomène culturel en Arabie Saoudite.`,
-  keywords: "logo al ahli, al ahly logo, al ahly logo png, al ahli saudi logo club, logo al ahli sc, emblème al ahli, écusson al ahli, al ahli football logo, club al ahli logo, al ahli sc, al ahli saudi fc logo, logo du club al ahli, al ahli jeddah logo, saudi arabian club logos",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo al ahli, al ahly logo, al ahly logo png, al ahli saudi logo club, logo al ahli sc, emblème al ahli, écusson al ahli, al ahli football logo, club al ahli logo, al ahli sc, al ahli saudi fc logo, logo du club al ahli, al ahli jeddah logo, saudi arabian club logos",
+  category: "logos",
+  subCategory: "club-logos",
 };

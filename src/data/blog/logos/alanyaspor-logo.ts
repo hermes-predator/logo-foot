@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alanyasporLogoPost: BlogPost = {
   id: 59,
+  slug: "al-alanyaspor-logo", //
   title: "**Logo Alanyaspor** : Histoire et Symbolisme de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Alanyaspor**, symbole d'identité du football turc moderne, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Alanyaspor**, symbole d'identité du football turc moderne, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",
   galleryImageId: 59,
   content: `# L'Histoire du **Logo Alanyaspor**
@@ -80,7 +81,8 @@ Le **alanyaspor eski logo** continue d'évoluer vers :
 - Nouvelles applications
 - Respect de l'héritage
 - Innovation constante`,
-  keywords: "logo alanyaspor, alanyaspor logo, alanyaspor logo png, alanyaspor eski logo, logo alanyaspor png, logo png alanyaspor, football turc, super lig",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo alanyaspor, alanyaspor logo, alanyaspor logo png, alanyaspor eski logo, logo alanyaspor png, logo png alanyaspor, football turc, super lig",
+  category: "logos",
+  subCategory: "club-logos",
 };

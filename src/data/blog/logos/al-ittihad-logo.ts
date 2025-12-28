@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alIttihadLogoPost: BlogPost = {
   id: 55,
+  slug: "al-ittihad-logo", //
   title: "Logo Al-Ittihad : Histoire et Symboles de l'Emblème du Club Saoudien [2025]",
-  excerpt: "Découvrez l'histoire fascinante du logo Al-Ittihad, son évolution au fil des ans et la signification de ses symboles pour ce prestigieux club saoudien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Al-Ittihad, son évolution au fil des ans et la signification de ses symboles pour ce prestigieux club saoudien.",
   date: "2025-04-08",
   galleryImageId: 55,
   content: `# L'Histoire Fascinante du **Logo Al-Ittihad**
@@ -64,7 +65,8 @@ Le **al-ittihad club logo** est également omniprésent dans la ville de Djeddah
 Le **al-ittihad logo** incarne parfaitement les valeurs fondamentales du club: excellence, persévérance, fierté nationale et ambition. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui continue de marquer l'histoire du football saoudien et asiatique.
 
 Alors que le club poursuit son développement et sa quête de nouveaux succès, le **logo al ittihad** reste le témoin visuel de son illustre passé et le symbole de ses ambitions futures. Pour les générations actuelles et à venir de supporters, le **al-ittihad club logo** continuera de représenter la grandeur d'une institution qui a transcendé le cadre sportif pour devenir un véritable phénomène culturel en Arabie Saoudite.`,
-  keywords: "al-ittihad logo, al-ittihad club logo, al-ittihad logo png, logo al ittihad, al ittihad logo, al ittihad new logo, al ittihad club logo, logo al ittihad png, emblème al-ittihad, écusson al-ittihad, tigres de l'asie logo, club saoudien logo, al-ittihad jeddah logo, saudi arabian club logos",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "al-ittihad logo, al-ittihad club logo, al-ittihad logo png, logo al ittihad, al ittihad logo, al ittihad new logo, al ittihad club logo, logo al ittihad png, emblème al-ittihad, écusson al-ittihad, tigres de l'asie logo, club saoudien logo, al-ittihad jeddah logo, saudi arabian club logos",
+  category: "logos",
+  subCategory: "club-logos",
 };

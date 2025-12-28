@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alKhaleejLogoPost: BlogPost = {
   id: 56,
+  slug: "al-khaleej-logo", //
   title: "**Al Khaleej Logo** : L'Emblème d'un Club Ambitieux [Guide 2024]",
-  excerpt: "Découvrez l'histoire et la signification du **Al Khaleej logo**, symbole d'un club en pleine ascension dans le football saoudien. Une analyse détaillée de son design unique.",
+  excerpt:
+    "Découvrez l'histoire et la signification du **Al Khaleej logo**, symbole d'un club en pleine ascension dans le football saoudien. Une analyse détaillée de son design unique.",
   date: "2024-04-22",
   galleryImageId: 56,
   content: `# L'Histoire Fascinante du **Al Khaleej Logo**
@@ -38,7 +39,8 @@ Alors que le club continue son développement, le **Al Khaleej logo** reste un p
 ## Conclusion
 
 Le **Al Khaleej logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'un club qui conjugue tradition et modernité, tout en portant fièrement les couleurs et les valeurs qui font sa force dans le football saoudien.`,
-  keywords: "al khaleej logo, logo al khaleej, al khaleej logo png, logo png al khaleej, football saoudien, saudi pro league, design logo football",
+  keywords:
+    "al khaleej logo, logo al khaleej, al khaleej logo png, logo png al khaleej, football saoudien, saudi pro league, design logo football",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

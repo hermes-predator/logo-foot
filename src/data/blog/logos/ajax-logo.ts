@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ajaxLogoPost: BlogPost = {
   id: 51,
+  slug: "ajax-amsterdam-logo", //
   title: "Logo Ajax Amsterdam : Histoire et Symbolisme [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo d'Ajax Amsterdam, son évolution au fil des années et la signification du célèbre portrait du héros grec Ajax.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo d'Ajax Amsterdam, son évolution au fil des années et la signification du célèbre portrait du héros grec Ajax.",
   date: "2024-05-01",
   galleryImageId: 51,
   content: `# L'Histoire Passionnante du **Logo Ajax Amsterdam**
@@ -40,7 +41,8 @@ Utilisé dans des animations 3D, des applications mobiles ou des jeux vidéo, le
 Au-delà de son rôle d'identification, le **ajax logo** incarne les valeurs fondamentales du club : excellence, élégance, innovation et ambition. Chaque élément de sa composition a été soigneusement pensé pour représenter l'ADN d'un club qui a défini les standards d'excellence dans le football néerlandais et européen.
 
 Alors que le club continue d'écrire son histoire, le **logo ajax amsterdam** reste le témoin visuel de ses triomphes passés et de ses ambitions futures. Pour les générations de supporters actuelles et futures, ce symbole continuera de représenter la grandeur d'une institution qui a transcendé le simple cadre sportif pour devenir un phénomène culturel aux Pays-Bas et dans le monde entier.`,
-  keywords: "ajax amsterdam lofos, ajax football club logo, afc ajax logo, ajax amsterdam logo, ajax fc logo, ajax football logo, ajax logo, amsterdam ajax logo, logo afc ajax, logo ajax, logo ajax amsterdam, ajax logos, ajax amsterdam logo png, ajax logo png, logo ajax amsterdam png, logo ajax png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "ajax amsterdam lofos, ajax football club logo, afc ajax logo, ajax amsterdam logo, ajax fc logo, ajax football logo, ajax logo, amsterdam ajax logo, logo afc ajax, logo ajax, logo ajax amsterdam, ajax logos, ajax amsterdam logo png, ajax logo png, logo ajax amsterdam png, logo ajax png",
+  category: "logos",
+  subCategory: "club-logos",
 };

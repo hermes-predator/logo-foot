@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const aekAthensLogoPost: BlogPost = {
   id: 49,
+  slug: "aek-athens-logo", //
   title: "Logo AEK Athens : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
-  excerpt: "Découvrez l'histoire complète et la signification du logo de l'AEK Athènes : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
+  excerpt:
+    "Découvrez l'histoire complète et la signification du logo de l'AEK Athènes : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",
   galleryImageId: 49,
   content: `# L'Histoire Fascinante du **Logo AEK Athens**
@@ -72,7 +73,8 @@ Le **AEK Athens logo** demeure l'un des emblèmes les plus historiques et symbol
 À travers ses couleurs distinctives et son iconographie puissante, le **logo AEK Athènes** continue d'inspirer joueurs et supporters, perpétuant ainsi une tradition footballistique centenaire. Le **logo foot AEK Athenes** reste un témoignage visuel de la résilience culturelle et de l'excellence sportive que le club s'efforce de maintenir.
 
 Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou en version numérique **logo PNG AEK Athenes**, l'emblème de l'AEK Athènes continue de raconter une histoire fascinante qui dépasse largement le cadre du football pour s'inscrire dans le patrimoine culturel grec.`,
-  keywords: "aek athens logo, logo aek athens, aek athens logo png, aek athenes logo, aek athens fc logo, aek athens logo foot, aek athens png logo, aek athènes logo png, athènes aek logo, logo aek athenes, logo aek athènes, logo foot aek athenes, logo foot aek athènes, logo png aek athenes, logo png aek athens",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "aek athens logo, logo aek athens, aek athens logo png, aek athenes logo, aek athens fc logo, aek athens logo foot, aek athens png logo, aek athènes logo png, athènes aek logo, logo aek athenes, logo aek athènes, logo foot aek athenes, logo foot aek athènes, logo png aek athenes, logo png aek athens",
+  category: "logos",
+  subCategory: "club-logos",
 };

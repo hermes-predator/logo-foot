@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const allsvenskanLogoPost: BlogPost = {
   id: 62,
+  slug: "allsvenskan-logo", //
   title: "Logo Allsvenskan : Histoire et Évolution du Design du Championnat Suédois",
   date: "2025-04-25",
   galleryImageId: 62,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo Allsvenskan, symbole du prestigieux championnat de football suédois. Une analyse détaillée de son design et de son évolution au fil des années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Allsvenskan, symbole du prestigieux championnat de football suédois. Une analyse détaillée de son design et de son évolution au fil des années.",
   content: `# Logo Allsvenskan : Histoire et Évolution du Design du Championnat Suédois
 
 Le **logo Allsvenskan** est bien plus qu'un simple emblème pour le championnat de première division suédoise. Il représente l'héritage et le prestige d'une des compétitions les plus anciennes d'Europe du Nord. Dans cet article, nous explorerons l'histoire fascinante de ce design emblématique et son importance dans le football scandinave.
@@ -27,5 +28,6 @@ L'influence du **logo Allsvenskan PNG** s'étend bien au-delà des frontières d
 ## Conclusion
 
 Le **logo Allsvenskan** témoigne de l'évolution constante du football suédois tout en restant fidèle à ses racines. Sa présence sur les maillots des équipes comme le **Sirius Allsvenskan** rappelle l'importance de cette compétition dans le paysage footballistique européen. C'est un exemple parfait de la façon dont un design peut incarner l'histoire, les valeurs et les ambitions d'une compétition sportive majeure.`,
-  keywords: "allsvenskan logo, logo allsvenskan png, championnat suédois, football suédois, sirius allsvenskan, design logo football, logo championnat, identité visuelle football",
+  keywords:
+    "allsvenskan logo, logo allsvenskan png, championnat suédois, football suédois, sirius allsvenskan, design logo football, logo championnat, identité visuelle football",
 };

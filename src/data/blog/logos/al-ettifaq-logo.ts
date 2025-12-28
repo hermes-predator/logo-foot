@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alEttifaqLogoPost: BlogPost = {
   id: 53,
+  slug: "al-ettifaq-logo", //
   title: "**Logo Al Ettifaq** : Histoire et Évolution de l'Emblème du Club Saoudien [2024]",
-  excerpt: "Plongez dans l'histoire fascinante du **logo Al Ettifaq**, ses transformations au fil des années et sa symbolique dans le football saoudien dans notre analyse détaillée de cet emblème distinctif.",
+  excerpt:
+    "Plongez dans l'histoire fascinante du **logo Al Ettifaq**, ses transformations au fil des années et sa symbolique dans le football saoudien dans notre analyse détaillée de cet emblème distinctif.",
   date: "2025-04-14",
   galleryImageId: 53,
   content: `# L'Histoire du **Logo Al Ettifaq**
@@ -61,6 +62,6 @@ Le **logo al ettifaq** représente plus qu'un simple emblème sportif : c'est l'
 
 En téléchargeant le **al ettifaq logo png**, les supporters peuvent facilement afficher leur affiliation et leur soutien au club sur diverses plateformes numériques, perpétuant ainsi la présence visuelle et l'héritage de ce club historique.`,
   keywords: "al ettifaq logo png:20, logo al ettifaq:10, al-ettifaq club logo:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

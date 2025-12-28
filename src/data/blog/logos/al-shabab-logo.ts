@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const alShababLogoPost: BlogPost = {
   id: 58,
+  slug: "al-shabab-logo", //
   title: "Logo Al Shabab FC: Histoire, Signification et Evolution [2024]",
-  excerpt: "Découvrez tout sur le logo d'Al Shabab FC, le club emblématique saoudien. Analyse complète de son design, son histoire et téléchargez le logo Al Shabab FC PNG en haute définition.",
+  excerpt:
+    "Découvrez tout sur le logo d'Al Shabab FC, le club emblématique saoudien. Analyse complète de son design, son histoire et téléchargez le logo Al Shabab FC PNG en haute définition.",
   date: "2025-04-14",
   galleryImageId: 58,
   content: `# L'histoire fascinante du **logo Al Shabab**
@@ -75,7 +76,8 @@ Pour obtenir une version officielle et de haute qualité du **logo Al Shabab FC 
 ## Conclusion
 
 Le **logo Al Shabab** est bien plus qu'un simple emblème sportif - c'est un symbole d'identité, d'histoire et de passion. Son évolution témoigne de la progression du club tout en maintenant un lien fort avec ses origines et ses valeurs fondamentales.`,
-  keywords: "logo Al Shabab, Al Shabab FC logo PNG, logo club saoudien, emblème Al Shabab, design logo football, Saudi Pro League logos, club football Riyadh",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo Al Shabab, Al Shabab FC logo PNG, logo club saoudien, emblème Al Shabab, design logo football, Saudi Pro League logos, club football Riyadh",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

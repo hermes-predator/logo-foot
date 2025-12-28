@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const almereCityLogoPost: BlogPost = {
   id: 63,
+  slug: "almere-city-logo", //
   title: "**Logo Almere City FC** : Histoire et Design Complet [2024]",
   date: "2025-04-19",
   galleryImageId: 63,
   category: "logos",
-  excerpt: "Découvrez l'histoire fascinante du **logo Almere City**, un symbole de modernité et d'ambition dans le football néerlandais. Analyse complète du design et de son évolution.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Almere City**, un symbole de modernité et d'ambition dans le football néerlandais. Analyse complète du design et de son évolution.",
   content: `# **Logo Almere City** : Histoire et Design Complet
 
 ## Introduction au **Logo Almere City FC**
@@ -57,5 +58,6 @@ Le **Almere City logo** trouve son application sur les maillots et équipements,
 ## Conclusion
 
 Le **logo Almere City** symbolise parfaitement l'identité moderne et ambitieuse du club. Son design équilibré et sa symbolique forte en font un excellent exemple de branding sportif contemporain. Le **logo Almere City FC** continue d'évoluer avec le club, marquant son ascension dans le football néerlandais.`,
-  keywords: "logo almere city, almere city logo, almere city fc logo, logo almere city fc, design logo football, identité visuelle club, branding sportif",
+  keywords:
+    "logo almere city, almere city logo, almere city fc logo, logo almere city fc, design logo football, identité visuelle club, branding sportif",
 };

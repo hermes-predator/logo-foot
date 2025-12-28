@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nancyLogoPost: BlogPost = {
   id: 403,
+  slug: "nancy-logo", //
   title: "Logo AS Nancy Lorraine : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo de l'AS Nancy Lorraine, ses symboles et sa signification. Analyse complète de l'emblème du club lorrain.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo de l'AS Nancy Lorraine, ses symboles et sa signification. Analyse complète de l'emblème du club lorrain.",
   date: "2024-04-10",
   galleryImageId: 403,
   content: `# Logo AS Nancy Lorraine : Histoire et Évolution
@@ -105,6 +106,7 @@ Le **logo nancy** représente bien plus qu'une simple identité graphique pour l
 L'emblème au chardon reste un symbole fort d'identification pour les supporters et incarne parfaitement l'esprit combatif et la fierté régionale qui caractérisent ce club historique du football français.
 
 Le **logo as nancy foot** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
-  keywords: "logo nancy, nancy logo, logo nancy foot, as nancy logo, as nancy lorraine logo, logo as nancy, logo as nancy lorraine, logo de nancy, nancy fc logo, logo nancy png, nancy logo png, nouveau logo nancy, as nancy football logo, as nancy logo foot, as nancy logo png",
-  category: 'logos'
+  keywords:
+    "logo nancy, nancy logo, logo nancy foot, as nancy logo, as nancy lorraine logo, logo as nancy, logo as nancy lorraine, logo de nancy, nancy fc logo, logo nancy png, nancy logo png, nouveau logo nancy, as nancy football logo, as nancy logo foot, as nancy logo png",
+  category: "logos",
 };

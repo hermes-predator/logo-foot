@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const newYorkRedBullsLogoPost: BlogPost = {
   id: 412,
+  slug: "new-york-red-bulls-logo", //
   title: "**Logo New York Red Bulls** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo New York Red Bulls**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo New York Red Bulls**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 412,
   content: `# L'Histoire Fascinante du **Logo New York Red Bulls**
@@ -34,7 +35,8 @@ Le **red bull new york logo** est bien plus qu'un simple emblème sportif. Il es
 ## Conclusion
 
 Le **logo New York Red Bulls** illustre parfaitement comment un design peut transcender sa fonction première pour devenir un véritable symbole d'identité et d'innovation. À travers ses lignes dynamiques et son symbolisme fort, il raconte l'histoire d'une équipe unique dans le paysage du football américain.`,
-  keywords: "logo new york red bull:20, logo red bull new york:20, new york red bulls logo:20, new york red bulls logo png:20, new york red bull logo:10, new york red bull logo png:10, red bull new york logo:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo new york red bull:20, logo red bull new york:20, new york red bulls logo:20, new york red bulls logo png:20, new york red bull logo:10, new york red bull logo png:10, red bull new york logo:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

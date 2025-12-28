@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nantesLogoPost: BlogPost = {
   id: 404,
+  slug: "nantes-logo", //
   title: "Logo FC Nantes : Histoire et Design du Mythique Canari [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Nantes : origines, évolution et symbolisme de l'emblème emblématique des Canaris.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Nantes : origines, évolution et symbolisme de l'emblème emblématique des Canaris.",
   date: "2024-03-31",
   galleryImageId: 404,
   content: `# L'Histoire Fascinante du **Logo FC Nantes**
@@ -52,7 +53,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **logo nantes foot** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **logo fc nantes**.
 
 Alors que le FC Nantes poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines ligériennes, fait du **logo du fc nantes** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football français.`,
-  keywords: "logo fc nantes, fc nantes logo, logo du fc nantes, logos fc nantes, logo nantes, nantes logo, logo nantes foot, logo fc nantes png, logo de nantes, logo foot nantes",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo fc nantes, fc nantes logo, logo du fc nantes, logos fc nantes, logo nantes, nantes logo, logo nantes foot, logo fc nantes png, logo de nantes, logo foot nantes",
+  category: "logos",
+  subCategory: "club-logos",
 };

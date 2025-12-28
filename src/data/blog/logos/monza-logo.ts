@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const monzaLogoPost: BlogPost = {
   id: 397,
+  slug: "monza-logo", //
   title: "Logo Monza : Histoire et Design de l'Emblème Lombard [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Monza : origines, évolution et signification de l'emblème du club lombard récemment promu en Serie A.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Monza : origines, évolution et signification de l'emblème du club lombard récemment promu en Serie A.",
   date: "2024-06-30",
   galleryImageId: 397,
   content: `# L'Histoire Fascinante du **Logo Monza**
@@ -55,6 +56,6 @@ Au-delà de sa fonction d'identification, le **monza logo** incarne les valeurs 
 
 Alors que le club continue d'écrire son histoire dans le calcio italien, le **logo monza png** reste le témoin visuel de ses racines profondes et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la fierté d'une institution sportive intimement liée à l'identité culturelle et sociale de sa région.`,
   keywords: "logo monza, logo monza png, monza logo, monza logo png, logo monza calcio, ss monza logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };

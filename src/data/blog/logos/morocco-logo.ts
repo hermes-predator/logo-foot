@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const moroccoLogoPost: BlogPost = {
   id: 400,
+  slug: "maroc-logo", //
   title: "Le Logo du Maroc : Histoire et Symbolisme du Lion de l'Atlas",
-  excerpt: "Découvrez l'évolution et la signification du logo de l'équipe nationale du Maroc de football, symbole de fierté et d'identité pour les Lions de l'Atlas.",
+  excerpt:
+    "Découvrez l'évolution et la signification du logo de l'équipe nationale du Maroc de football, symbole de fierté et d'identité pour les Lions de l'Atlas.",
   date: "2024-03-08",
   galleryImageId: 400,
   content: `# Histoire et Symbolisme du **Logo Maroc**
@@ -63,7 +65,8 @@ Directives strictes concernant les modifications du **logo du maroc foot**
 ## Conclusion
 
 Le **logo foot Maroc** transcende son simple rôle d'identité visuelle pour devenir un véritable symbole national. À travers les performances exceptionnelles de l'équipe lors de la Coupe du Monde 2022, le **logo de l'équipe du Maroc** a gagné en notoriété mondiale, incarnant désormais l'excellence du football africain et arabe.`,
-  keywords: "logo maroc, logo du maroc, maroc logo, logo maroc foot, lion de l'atlas maroc logo, equipe du maroc logo, logo foot maroc, logo maroc foot png, maroc logo png, logo maroc png, maroc logo foot, logo football maroc, maroc foot logo, equipe nationale maroc logo, le logo du maroc, logo de l'équipe du maroc, logo du maroc foot, logo equipe de foot maroc, logo equipe du maroc, logo equipe foot maroc, logo equipe nationale maroc",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo maroc, logo du maroc, maroc logo, logo maroc foot, lion de l'atlas maroc logo, equipe du maroc logo, logo foot maroc, logo maroc foot png, maroc logo png, logo maroc png, maroc logo foot, logo football maroc, maroc foot logo, equipe nationale maroc logo, le logo du maroc, logo de l'équipe du maroc, logo du maroc foot, logo equipe de foot maroc, logo equipe du maroc, logo equipe foot maroc, logo equipe nationale maroc",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

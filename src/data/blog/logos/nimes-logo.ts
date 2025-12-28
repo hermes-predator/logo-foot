@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nimesLogoPost: BlogPost = {
   id: 416,
+  slug: "nimes-logo", //
   title: "Logo Nîmes : Histoire et Design de l'Emblème des Crocodiles [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Nîmes Olympique : évolution, signification et symbolisme de l'emblème emblématique du club gardois.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Nîmes Olympique : évolution, signification et symbolisme de l'emblème emblématique du club gardois.",
   date: "2024-05-28",
   galleryImageId: 416,
   content: `# L'Histoire Fascinante du **Logo Nîmes**
@@ -78,7 +79,8 @@ Le **logo nimes** est bien plus qu'un simple symbole graphique – c'est le gard
 Son efficacité réside dans sa capacité à incarner à la fois l'héritage historique du club et ses ambitions contemporaines. Le **logo nimes olympique** continue ainsi de jouer son rôle essentiel de trait d'union entre le passé glorieux du club, son présent et les aspirations qu'il nourrit pour l'avenir.
 
 Pour les supporters, le **logos nimes** représente un point de ralliement émotionnel, un symbole de fierté qui transcende les performances sportives fluctuantes pour incarner un attachement durable à des couleurs et à des valeurs. C'est cette dimension affective qui fait du **nimes olympique logo** non pas un simple emblème, mais un véritable patrimoine partagé.`,
-  keywords: "logo nimes, logos nimes, logo nimes olympique, nimes logo, nimes olympique logo, logo nimes png, logo nimes foot, nimes logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo nimes, logos nimes, logo nimes olympique, nimes logo, nimes olympique logo, logo nimes png, logo nimes foot, nimes logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

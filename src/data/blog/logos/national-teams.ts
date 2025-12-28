@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nationalTeamsPost: BlogPost = {
   id: 406,
+  slug: "equipes-nationalesfootball-logo", //
   title: "Les Logos des Équipes Nationales : Symboles et Identités",
-  excerpt: "Analyse approfondie des logos des sélections nationales de football. Histoire, symbolisme et évolution des emblèmes qui représentent les nations du football.",
+  excerpt:
+    "Analyse approfondie des logos des sélections nationales de football. Histoire, symbolisme et évolution des emblèmes qui représentent les nations du football.",
   date: "2024-02-26",
   galleryImageId: 406,
   content: `Les Logos des Équipes Nationales de Football
@@ -69,6 +70,6 @@ Innovations Design
 
 L'avenir des emblèmes nationaux continuera d'évoluer tout en préservant l'essence patriotique qui les caractérise.`,
   keywords: "logos équipes nationales, écusson sélection football, emblème équipe nationale, design maillot foot",
-  category: 'logos',
-  subCategory: 'national-logos'
+  category: "logos",
+  subCategory: "national-logos",
 };

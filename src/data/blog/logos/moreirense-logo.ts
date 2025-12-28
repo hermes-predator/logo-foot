@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const moreirenseLogoPost: BlogPost = {
   id: 399,
+  slug: "moreirense-logo", //
   title: "**Logo Moreirense** : Histoire et Design de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Moreirense**, son évolution et sa symbolique unique dans le football portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Moreirense**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
   galleryImageId: 399,
   content: `# L'Histoire Fascinante du **Logo Moreirense**
@@ -63,6 +64,6 @@ Dans l'ère numérique moderne, le **logo Moreirense** continue de :
 
 Le **logo Moreirense** est devenu un symbole fort du football portugais, représentant la fierté d'une ville et l'ambition d'un club en constante évolution.`,
   keywords: "logo moreirense, moreirense fc logo, logo moreirense png, logo png moreirense",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

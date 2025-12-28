@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const newYorkCityFcLogoPost: BlogPost = {
   id: 411,
+  slug: "new-york-city-fc-logo", //
   title: "**Logo New York City FC** : Histoire et Design de l'Emblème Emblématique de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo New York City**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo New York City**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 411,
   content: `# L'Histoire Fascinante du **Logo New York City FC**
@@ -72,8 +73,8 @@ Les boutiques officielles du club proposent une large gamme de produits arborant
 Le **logo new york city** illustre parfaitement comment une franchise sportive récente peut créer une identité visuelle forte, capable de s'imposer dans un paysage culturel aussi dense que celui de New York. En combinant habilement références footballistiques traditionnelles et éléments visuels new-yorkais, le **new york city fc logo** a réussi à créer un emblème authentique qui résonne auprès des habitants de la ville comme des amateurs de football du monde entier.
 
 Plus qu'un simple emblème, le **logo new york city png** est devenu un symbole d'appartenance pour une communauté de supporters en pleine croissance et un ambassadeur visuel pour la ville de New York dans l'univers du football international. Sa conception soignée et sa pertinence continue font du **new york city official logo** un cas d'étude fascinant dans le domaine du design sportif et un exemple que de nombreuses nouvelles franchises cherchent à suivre.`,
-  keywords: "logo new york city:140, logo new york city fc:20, new york city fc logo:20, new york city football club logo:20, new york city logo:20, new york city logo png:20, new york city official logo:20, logo de new york city:10, logo de foot new york city:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo new york city:140, logo new york city fc:20, new york city fc logo:20, new york city football club logo:20, new york city logo:20, new york city logo png:20, new york city official logo:20, logo de new york city:10, logo de foot new york city:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };
-

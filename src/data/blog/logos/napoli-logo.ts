@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const napoliLogoPost: BlogPost = {
   id: 405,
+  slug: "naples-logo", //
   title: "Logo Napoli : Histoire de l'Emblème du SSC Napoli [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Napoli (SSC Napoli), son évolution et la symbolique derrière l'écusson de ce club emblématique du football italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Napoli (SSC Napoli), son évolution et la symbolique derrière l'écusson de ce club emblématique du football italien.",
   date: "2024-05-14",
   galleryImageId: 405,
   content: `# L'Histoire Passionnante du **Logo Napoli**
@@ -58,7 +59,8 @@ Alors que le club poursuit son parcours sportif, le **logo de napoli** continue 
 Les tendances actuelles en matière de design de logos sportifs laissent présager une possible évolution vers un minimalisme plus accentué pour le **naples fc logo**, facilitant son utilisation sur les plateformes numériques. Cependant, toute modification du **logo napoli ssc** devra naviguer avec précaution entre modernité et tradition, les supporters étant souvent très attachés aux éléments historiques de l'identité visuelle de leur club.
 
 Quelles que soient ses évolutions futures, le **logo napoli** continuera d'incarner l'âme de Naples et la passion de ses habitants pour le football. Symbole de résilience, de fierté et d'excellence sportive, le **logo naples** restera un emblème intemporel du football italien et un témoin visuel des moments de gloire que le club partagera avec ses supporters dans les années à venir.`,
-  keywords: "logo napoli, logo ssc napoli, napoli logo, ssc napoli logo, logo napoli ssc, napoli fc logo, napoli ssc logo, napoli logo png, histoire logo napoli, écusson napoli, emblème ssc napoli, logo naples, logo naple, naples logo, naples foot logo, logo de naples, logo foot naples, logo naples foot, logo naples png, naples fc logo, naples logo png, logo de napoli, logo napoli foot, logo napoli png, logo ssc napoli png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo napoli, logo ssc napoli, napoli logo, ssc napoli logo, logo napoli ssc, napoli fc logo, napoli ssc logo, napoli logo png, histoire logo napoli, écusson napoli, emblème ssc napoli, logo naples, logo naple, naples logo, naples foot logo, logo de naples, logo foot naples, logo naples foot, logo naples png, naples fc logo, naples logo png, logo de napoli, logo napoli foot, logo napoli png, logo ssc napoli png",
+  category: "logos",
+  subCategory: "club-logos",
 };

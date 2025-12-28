@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nationsLeagueLogoPost: BlogPost = {
   id: 407,
+  slug: "ligue-des-nations-logo", //
   title: "Logo Ligue des Nations : Histoire et Analyse de l'Emblème UEFA [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Ligue des Nations : origines, signification et évolution de l'emblème officiel de la compétition UEFA.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Ligue des Nations : origines, signification et évolution de l'emblème officiel de la compétition UEFA.",
   date: "2024-06-27",
   galleryImageId: 407,
   content: `# L'Histoire Fascinante du **logo Ligue des Nations**
@@ -85,7 +87,8 @@ Alors que la compétition continue de s'établir dans le calendrier internationa
 Les futures itérations du **Ligue des Nations logo png** conserveront probablement les éléments qui ont fait son succès, tout en intégrant subtilement les innovations graphiques contemporaines pour maintenir sa pertinence dans un environnement visuel en constante évolution.
 
 Le **logo badge Ligue des Nations** restera ainsi un symbole fort de cette compétition innovante, continuant à représenter efficacement les valeurs de prestige et d'excellence qui définissent ce tournoi désormais incontournable du football européen.`,
-  keywords: "logo Ligue des Nations, Ligue des Nations logo, Ligue des Nations logo png, logo Ligue des Nations png, Ligue des Nation logo, logo badge Ligue des Nations",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo Ligue des Nations, Ligue des Nations logo, Ligue des Nations logo png, logo Ligue des Nations png, Ligue des Nation logo, logo badge Ligue des Nations",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

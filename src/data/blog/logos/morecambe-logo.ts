@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const morecambeLogoPost: BlogPost = {
   id: 398,
+  slug: "morecambe-logo", //
   title: "**Logo Morecambe FC** : Histoire et Design de l'Emblème des Shrimps [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **morecambe logo**, son évolution et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **morecambe logo**, son évolution et la symbolique de cet emblème unique du football anglais.",
   date: "2025-04-18",
   galleryImageId: 398,
   content: `# L'Histoire Fascinante du **Logo Morecambe FC**
@@ -35,6 +36,6 @@ Le logo est devenu un symbole important pour la communauté de Morecambe, repré
 
 Le **morecambe logo** est bien plus qu'un simple emblème sportif - c'est un symbole qui capture l'essence d'une ville côtière et de son club de football historique.`,
   keywords: "morecambe logo:20, logo morecambe:10, morecambe fc logo:10, morecambe logo png:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  category: "logos",
+  subCategory: "english-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const newEnglandRevolutionLogoPost: BlogPost = {
   id: 410,
+  slug: "new-england-revolution-logo", //
   title: "**New England Revolution Logo** : Histoire et Evolution de l'Emblème de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo New England Revolution**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo New England Revolution**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",
   galleryImageId: 410,
   content: `# L'Histoire Fascinante du **Logo New England Revolution**
@@ -42,7 +43,8 @@ Dans le paysage de la MLS, le **new england revolution logo png** s'est forgé u
 ## Conclusion
 
 Le **new england revolution logo** demeure un symbole fort du football américain, incarnant à la fois l'histoire d'un club, l'identité d'une région et les aspirations d'une communauté passionnée.`,
-  keywords: "logo new england revolution:20, new england revolution logo:20, new england revolution new logo:20, new england revolution logo png:10, new england revolution logos:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo new england revolution:20, new england revolution logo:20, new england revolution new logo:20, new england revolution logo png:10, new england revolution logos:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

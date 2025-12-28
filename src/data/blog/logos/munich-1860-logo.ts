@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const munich1860LogoPost: BlogPost = {
   id: 401,
+  slug: "munich-1860-logo", //
   title: "**Logo Munich 1860** : Histoire et Évolution [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo TSV Munich 1860**, un des clubs les plus anciens d'Allemagne. Plongez dans l'évolution de cet emblème historique du football allemand.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo TSV Munich 1860**, un des clubs les plus anciens d'Allemagne. Plongez dans l'évolution de cet emblème historique du football allemand.",
   date: "2024-04-21",
   category: "logos",
   galleryImageId: 401,
@@ -47,6 +48,7 @@ Le **logo TSV Munich 1860** continue d'inspirer. Il influence le design sportif 
 ## Conclusion
 
 Le **Munich 1860 logo png** reste un symbole fort du football allemand, alliant tradition bavaroise et modernité dans son expression visuelle.`,
-  keywords: "logo munich 1860, 1860 munich logo, 1860 munich logo foot, logo png munich 1860, logo tsv munich 1860, munich 1860 logo png, football allemand, bundesliga, tradition bavaroise",
+  keywords:
+    "logo munich 1860, 1860 munich logo, 1860 munich logo foot, logo png munich 1860, logo tsv munich 1860, munich 1860 logo png, football allemand, bundesliga, tradition bavaroise",
   subCategory: "club-logos",
 };

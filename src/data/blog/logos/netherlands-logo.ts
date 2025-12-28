@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const netherlandsLogoPost: BlogPost = {
   id: 408, // Using a unique ID that's not already used
+  slug: "pays-bas-logo", //
   title: "Logo Pays-Bas : Histoire et Évolution de l'Emblème Oranje [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo des Pays-Bas : origines, évolution et symbolisme du célèbre lion orange qui représente la sélection néerlandaise de football.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo des Pays-Bas : origines, évolution et symbolisme du célèbre lion orange qui représente la sélection néerlandaise de football.",
   date: "2024-05-30",
   galleryImageId: 408,
   content: `# L'Histoire Fascinante du **Logo Pays-Bas**
@@ -69,7 +71,8 @@ Comme toute identité visuelle vivante, le **logo pays bas** pourrait continuer 
 Le **logo pays bas** est bien plus qu'un simple emblème sportif – c'est un symbole qui incarne l'histoire, les valeurs et l'approche unique du football néerlandais. À travers son lion orange majestueux et son design épuré, il continue de représenter la grandeur et l'innovation d'une nation qui a profondément marqué l'histoire du football mondial.
 
 L'évolution de ce **logo pays bas foot** au fil des décennies illustre parfaitement comment un symbole national peut rester fidèle à son essence tout en s'adaptant aux évolutions esthétiques et techniques de chaque époque. La force du **logo foot pays bas** réside précisément dans cette capacité à évoluer tout en maintenant une continuité symbolique forte, incarnée par le lion orange qui continue de rugir fièrement sur les terrains du monde entier.`,
-  keywords: "logo pays bas, logo pays bas foot, logo foot pays bas, logo club pays bas, pays bas logo, emblème pays bas, oranje logo, knvb logo, lion orange pays bas, pays bas foot logo, logo equipe de foot pays bas, logo du pays bas",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo pays bas, logo pays bas foot, logo foot pays bas, logo club pays bas, pays bas logo, emblème pays bas, oranje logo, knvb logo, lion orange pays bas, pays bas foot logo, logo equipe de foot pays bas, logo du pays bas",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

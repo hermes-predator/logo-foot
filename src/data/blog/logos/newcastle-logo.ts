@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const newcastleLogoPost: BlogPost = {
   id: 413,
+  slug: "newcastle-logo", //
   title: "Logo Newcastle : L'Histoire des Magpies à Travers leur Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Newcastle United, un symbole d'identité et de fierté du Nord de l'Angleterre, de ses origines à aujourd'hui.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Newcastle United, un symbole d'identité et de fierté du Nord de l'Angleterre, de ses origines à aujourd'hui.",
   date: "2024-04-08",
   galleryImageId: 413,
   content: `# L'Histoire Fascinante du **Logo Newcastle United**
@@ -50,7 +51,8 @@ L'emblème noir et blanc accompagne les supporters dans les moments de gloire co
 À l'avenir, le **newcastle united logo** continuera probablement d'évoluer pour répondre aux exigences d'un monde en constante mutation, mais toujours dans le respect de son essence historique. Car au-delà des considérations esthétiques ou marketing, ce symbole représente l'âme même d'un club profondément enraciné dans sa communauté et dans l'histoire du football anglais.
 
 Pour les millions de supporters des Magpies à travers le monde, ce n'est pas simplement un **logo newcastle foot** – c'est le cœur battant d'une passion partagée, un lien intergénérationnel qui unit les fans d'hier, d'aujourd'hui et de demain sous les mêmes couleurs noir et blanc légendaires.`,
-  keywords: "logo newcastle, logo newcastle united, newcastle logo, newcastle united logo, logo de newcastle, logo newcastle png, logo png newcastle, newcastle fc logo, newcastle united fc logo, newcastle united logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo newcastle, logo newcastle united, newcastle logo, newcastle united logo, logo de newcastle, logo newcastle png, logo png newcastle, newcastle fc logo, newcastle united fc logo, newcastle united logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

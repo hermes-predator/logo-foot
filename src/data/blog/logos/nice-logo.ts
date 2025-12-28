@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const niceLogoPost: BlogPost = {
   id: 414,
+  slug: "nice-logo", //
   title: "Logo OGC Nice : Histoire et Design de l'Aigle Rouge et Noir [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'OGC Nice : origines, évolution et symbolisme de l'emblème emblématique du club azuréen.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'OGC Nice : origines, évolution et symbolisme de l'emblème emblématique du club azuréen.",
   date: "2024-03-31",
   galleryImageId: 414,
   content: `# L'Histoire Fascinante du **Logo OGC Nice**
@@ -53,6 +54,6 @@ Cette rigueur dans l'application garantit que le **ogc nice logo** conserve sa c
 
 Alors que l'OGC Nice poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines azuréennes, fait du **logo nice** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football français.`,
   keywords: "logo nice, logo ogc nice, nice logo, ogc nice logo, logo nice foot, logo ogc nice png, logo nice png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -128,7 +128,7 @@ const HeroSection: React.FC = () => {
             <div className="grid grid-cols-4 gap-1.5 sm:gap-2 mb-2 mt-2 max-w-[380px] sm:max-w-[450px]">
               <div className="bg-white rounded px-8 py-1.5 border border-gray-200 shadow-sm flex flex-col items-center justify-center">
                 <div className="text-sm sm:text-base font-bold text-gray-900">+1</div>
-                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Fichier complet</div>
+                <div className="text-[7px] sm:text-[9px] text-gray-600 font-medium leading-tight whitespace-nowrap">Fichier général</div>
               </div>
               <div className="bg-white rounded px-8 py-1.5 border border-gray-200 shadow-sm flex flex-col items-center justify-center">
                 <div className="text-sm sm:text-base font-bold text-gray-900 whitespace-nowrap">+8 800</div>

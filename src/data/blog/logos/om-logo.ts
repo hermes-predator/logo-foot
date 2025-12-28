@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const omLogoPost: BlogPost = {
   id: 423,
+  slug: "om-logo", //
   title: "Logo OM : Histoire et Évolution de l'Olympique de Marseille [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'OM : origines, signification et évolution de l'emblème de l'Olympique de Marseille à travers les années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'OM : origines, signification et évolution de l'emblème de l'Olympique de Marseille à travers les années.",
   date: "2024-03-25",
   galleryImageId: 423,
   content: `# L'Histoire Passionnante du Logo de l'OM
@@ -36,7 +37,8 @@ Au fil des années, le **logo de l'OM** a connu des évolutions subtiles mais to
 Aujourd'hui, le **marseillais logo** continue d'évoluer dans son utilisation, notamment sur les supports digitaux, tout en conservant son essence. Que ce soit sous forme d'**écusson OM** ou d'**emblème OM**, il incarne parfaitement l'alliance entre tradition et modernité, entre passion locale et rayonnement international, faisant du **logo OM** l'un des logos les plus emblématiques du football mondial.
 
 Pour les supporters et collectionneurs, avoir le **logo OM PNG** ou le **logo Olympique de Marseille PNG** en haute définition permet d'afficher fièrement son attachement à ce club historique du football français, dont l'emblème transcende largement le cadre sportif.`,
-  keywords: "logo om, om logo, logo marseille, marseille logo, logo om png, logo de l'om, marseillais logo, om logo png, logo olympique de marseille, logo de marseille, logo olympique marseille, foot logo om, logo marseille foot, logo olympique de marseille png, ecusson om, embleme om",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo om, om logo, logo marseille, marseille logo, logo om png, logo de l'om, marseillais logo, om logo png, logo olympique de marseille, logo de marseille, logo olympique marseille, foot logo om, logo marseille foot, logo olympique de marseille png, ecusson om, embleme om",
+  category: "logos",
+  subCategory: "club-logos",
 };

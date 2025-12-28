@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const orleansLogoPost: BlogPost = {
   id: 426,
+  slug: "orleans-logo", //
   title: "Logo AS Orléans : Histoire et Évolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo de l'AS Orléans, ses symboles et sa signification. Une analyse complète de l'emblème du club du Loiret.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo de l'AS Orléans, ses symboles et sa signification. Une analyse complète de l'emblème du club du Loiret.",
   date: "2024-04-12",
   galleryImageId: 426,
   content: `# **Logo AS Orléans** : Histoire et Évolution
@@ -112,6 +113,7 @@ L'efficacité du **Orléans logo** se mesure à sa capacité à véhiculer les v
 Le **logo Orléans** représente bien plus qu'une simple identité graphique pour le club. À travers ses évolutions, il a su préserver l'essence et les valeurs fondamentales de l'AS Orléans tout en s'adaptant aux tendances esthétiques contemporaines.
 
 L'emblème aux couleurs rouge et jaune reste un symbole fort d'identification pour les supporters et incarne parfaitement l'esprit combatif et la fierté régionale qui caractérisent ce club du Centre-Val de Loire. Le **AS Orléans logo** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
-  keywords: "logo orléans, orléans logo, as orléans logo, us orléans logo, logo us orléans, emblème orléans foot, écusson orléans, orléans fc logo, logo orléans football",
-  category: 'logos'
+  keywords:
+    "logo orléans, orléans logo, as orléans logo, us orléans logo, logo us orléans, emblème orléans foot, écusson orléans, orléans fc logo, logo orléans football",
+  category: "logos",
 };

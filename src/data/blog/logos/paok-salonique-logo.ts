@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const paokSaloniqueLogoPost: BlogPost = {
   id: 434,
+  slug: "paok-salonique-logo", //
   title: "**Logo PAOK Salonique** : Histoire et Symbolisme de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de PAOK Salonique, son évolution et la signification de cet emblème emblématique du football grec.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de PAOK Salonique, son évolution et la signification de cet emblème emblématique du football grec.",
   date: "2024-04-15",
   galleryImageId: 434,
   content: `# L'Histoire Fascinante du **Logo PAOK Salonique**
@@ -42,7 +43,8 @@ Le **paok salonique logo** est devenu un symbole reconnaissable bien au-delà de
 ## Conclusion
 
 Plus qu'un simple logo, le **logo club PAOK Salonique** est un véritable récit visuel. Il capture l'essence d'un club qui a traversé l'histoire, défiant les obstacles et inspirant des générations de supporters.`,
-  keywords: "logo paok salonique, logo club paok salonique, paok salonic logo, paok salonique logo, paok salonique logo foot, paok salonique logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo paok salonique, logo club paok salonique, paok salonic logo, paok salonique logo, paok salonique logo foot, paok salonique logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

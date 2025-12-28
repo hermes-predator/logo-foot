@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const panathinaikosLogoPost: BlogPost = {
   id: 433,
+  slug: "panathinaikos-logo", //
   title: "Logo Panathinaikos : Histoire et Symbolisme de l'Emblème du Club Grec [2024]",
-  excerpt: "Découvrez l'histoire complète et la signification du logo du Panathinaikos : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
+  excerpt:
+    "Découvrez l'histoire complète et la signification du logo du Panathinaikos : origines, évolution et symbolisme de l'emblème du prestigieux club grec de football.",
   date: "2024-04-11",
   galleryImageId: 433,
   content: `# L'Histoire Fascinante du **Logo Panathinaikos**
@@ -60,7 +61,8 @@ Au terme de cette exploration de l'histoire et de la symbolique du **logo panath
 À travers ses évolutions successives, le **panathinaikos fc logo** a su préserver son essence tout en restant pertinent dans un monde en constante mutation. Cette capacité d'adaptation, couplée à la puissance intemporelle de son symbolisme, garantit que le **panathinaikos logo png** continuera de fasciner et de rassembler les générations futures de supporters.
 
 Que ce soit sur les terrains de football, dans les rues d'Athènes ou sur les écrans du monde entier, le trèfle vert du **logo panathinaikos** demeure un symbole de fierté, d'excellence et de passion, témoignant de la grandeur d'un club qui a marqué l'histoire du football grec et européen.`,
-  keywords: "logo panathinaikos, panathinaikos logo, panathinaikos fc logo, panathinaikos logo png, panathinaikos athènes logo png, panathinaikos foot logo, panathinaikos logo foot",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo panathinaikos, panathinaikos logo, panathinaikos fc logo, panathinaikos logo png, panathinaikos athènes logo png, panathinaikos foot logo, panathinaikos logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

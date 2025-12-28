@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const olympiakosLogoPost: BlogPost = {
   id: 422,
+  slug: "olympiakos-logo", //
   title: "Logo Olympiakos : Histoire et Évolution de l'Emblème Grec Emblématique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo d'Olympiakos, son évolution à travers le temps et la signification des symboles qui composent l'emblème du club grec le plus titré.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo d'Olympiakos, son évolution à travers le temps et la signification des symboles qui composent l'emblème du club grec le plus titré.",
   date: "2024-05-22",
   galleryImageId: 422,
   content: `# L'Histoire Fascinante du **Logo Olympiakos**
@@ -88,7 +89,8 @@ L'équilibre entre tradition et modernité restera le défi central des futurs d
 Les nouvelles technologies immersives (réalité augmentée, expériences virtuelles, etc.) offriront de nouvelles opportunités pour explorer et enrichir l'expérience du **olympiakos logo**, créant des interactions inédites entre l'emblème et les supporters.
 
 En définitive, le **logo olympiakos** représente bien plus qu'un simple design – c'est un témoignage visuel d'une histoire centenaire, un symbole vivant qui continue d'inspirer et d'unir des générations de passionnés autour des valeurs d'excellence, de persévérance et de fierté qui définissent ce club légendaire du football grec et européen.`,
-  keywords: "logo olympiakos, olympiakos logo, logo olympiakos png, olympiakos logo png, logo foot olympiakos, logo olympiakos le pirée, olympiakos football logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo olympiakos, olympiakos logo, logo olympiakos png, olympiakos logo png, logo foot olympiakos, logo olympiakos le pirée, olympiakos football logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

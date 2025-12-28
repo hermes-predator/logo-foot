@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const omUltrasPost: BlogPost = {
   id: 424,
+  slug: "om-ultras-logo", //
   title: "Ultras OM : Histoire et Culture des Groupes Ultras de Marseille [2024]",
-  excerpt: "Découvrez l'histoire complète des Ultras OM : du virage sud aux commandos ultra, l'univers des supporters ultras de l'Olympique de Marseille, leur histoire, organisation et influence.",
+  excerpt:
+    "Découvrez l'histoire complète des Ultras OM : du virage sud aux commandos ultra, l'univers des supporters ultras de l'Olympique de Marseille, leur histoire, organisation et influence.",
   date: "2024-07-18",
   galleryImageId: 424,
   content: `# L'Histoire Passionnante des **Ultras OM**
@@ -104,7 +105,8 @@ Cette influence culturelle s'observe également dans l'attrait que suscite l'**a
 Les **ultras OM** représentent bien plus qu'un simple phénomène supportériste. Ils sont les gardiens d'une tradition, les porteurs d'une flamme qui brûle sans discontinuer depuis des décennies. À travers les victoires comme les défaites, ils incarnent cette passion marseillaise qui fait la réputation du club à travers le monde.
 
 Qu'il s'agisse du **commando ultras om**, des South Winners ou des autres groupes qui composent cette mosaïque vibrante, tous participent à leur manière à écrire cette histoire continue qui lie indéfectiblement la ville de Marseille à son club. Une histoire de passion, d'engagement et de fierté collective qui continue de fasciner bien au-delà des cercles du football.`,
-  keywords: "ultras om, ultra om, om ultras, om ultra, boutique ultras om, abonnement ultra om, boutique ultra om, drapeau om ultra, echarpe ultra om, echarpe ultras om, abonnement om ultras, abonnement om virage sud ultras, abonnement ultras om, boutique om ultras, chant ultra om, chant ultras om, chef des ultras om, chef ultra om, commando ultra om, commando ultras om, drapeau ultra om, groupe ultra om yankee, logo ultra om",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "ultras om, ultra om, om ultras, om ultra, boutique ultras om, abonnement ultra om, boutique ultra om, drapeau om ultra, echarpe ultra om, echarpe ultras om, abonnement om ultras, abonnement om virage sud ultras, abonnement ultras om, boutique om ultras, chant ultra om, chant ultras om, chef des ultras om, chef ultra om, commando ultra om, commando ultras om, drapeau ultra om, groupe ultra om yankee, logo ultra om",
+  category: "logos",
+  subCategory: "club-logos",
 };

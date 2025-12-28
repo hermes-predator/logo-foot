@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const paderbornLogoPost: BlogPost = {
   id: 429,
+  slug: "paderborn-logo", //
   title: "Logo Paderborn : Histoire et Design de l'Emblème Allemand SC Paderborn 07 [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du SC Paderborn 07 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du SC Paderborn 07 : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-11",
   galleryImageId: 429,
   content: `# L'Histoire Fascinante du Logo SC Paderborn 07
@@ -59,6 +60,6 @@ Les tendances en matière de design de logos sportifs suggèrent une simplificat
 
 Quelle que soit son évolution future, le **paderborn logo png** restera un symbole important pour les supporters et un élément central de l'identité visuelle du club allemand, témoignant de son histoire unique et de ses ambitions dans le paysage footballistique allemand.`,
   keywords: "logo paderborn, paderborn logo, paderborn logo png, logo sc paderborn 07",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const norwichLogoPost: BlogPost = {
   id: 419, // Using a unique ID that hasn't been used yet
+  slug: "norwich-logo", //
   title: "Logo Norwich : Histoire et Design de l'Emblème des Canaries [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Norwich City : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Norwich City : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-17",
   galleryImageId: 419,
   content: `# L'Histoire Fascinante du **Logo Norwich**
@@ -52,7 +53,8 @@ Cette adaptabilité fait du **logo norwich city png** un atout marketing précie
 Le **logo norwich** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **norwich city logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une communauté. Le **logo norwich** continuera de faire briller les couleurs jaune et vert des Canaries sur les terrains de football et au-delà.`,
-  keywords: "logo norwich, logo norwich city, logo norwich png, norwich city logo, norwich city logo png, norwich fc logo, norwich logo, norwich logo png, logo norwich city png, logo de foot norwich city",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo norwich, logo norwich city, logo norwich png, norwich city logo, norwich city logo png, norwich fc logo, norwich logo, norwich logo png, logo norwich city png, logo de foot norwich city",
+  category: "logos",
+  subCategory: "club-logos",
 };

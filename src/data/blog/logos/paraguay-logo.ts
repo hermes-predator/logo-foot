@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const paraguayLogoPost: BlogPost = {
   id: 435,
+  slug: "paraguay-logo", //
   title: "**Logo Paraguay** : Histoire et Signification de l'Emblème de l'Albirroja [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale paraguayenne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale paraguayenne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-26",
   category: "national-logos",
   subCategory: "national-logos",
@@ -34,5 +35,6 @@ Sur la scène internationale, le **paraguay logo** s'est forgé une réputation 
 ## Conclusion : Un Héritage Pour l'Avenir
 
 Le **logo paraguay football** continue d'évoluer tout en préservant son essence historique. Il reste un symbole puissant qui inspire les nouvelles générations de footballeurs paraguayens et unit les supporters autour d'une passion commune pour le football et leur nation.`,
-  keywords: "logo paraguay, paraguay logo, paraguay logo png, logo club football paraguay, logo paraguay football, logo paraguay futbol, logos federation football paraguay, paraguay logo foot"
+  keywords:
+    "logo paraguay, paraguay logo, paraguay logo png, logo club football paraguay, logo paraguay football, logo paraguay futbol, logos federation football paraguay, paraguay logo foot",
 };

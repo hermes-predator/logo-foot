@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const oxfordUnitedLogoPost: BlogPost = {
   id: 428,
+  slug: "oxford-united-logo", //
   title: "Oxford United FC Logo : Histoire et Évolution d'un Emblème Iconique",
-  excerpt: "Découvrez l'histoire fascinante du logo Oxford United, son évolution à travers les années et l'importance de cet emblème pour le club. Analyse complète et téléchargement PNG haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Oxford United, son évolution à travers les années et l'importance de cet emblème pour le club. Analyse complète et téléchargement PNG haute définition.",
   date: "2025-04-13",
   galleryImageId: 428,
   content: `# L'Histoire Emblématique du **Logo Oxford United**
@@ -161,7 +162,8 @@ Le **Oxford United FC logo PNG** actuel représente un équilibre réussi entre 
 Alors que de nombreux clubs cèdent à la tentation de redesigns fréquents, le **logo oxford united** semble avoir atteint une forme d'équilibre qui pourrait perdurer. La force d'un bon design réside dans sa capacité à rester pertinent malgré l'évolution des tendances graphiques, et le **Oxford United logo** actuel possède certainement cette qualité.
 
 Pour les supporters, qu'ils arborent fièrement le **oxford united logo png** sur leurs créations ou leurs vêtements, cet emblème continuera de représenter la passion et l'attachement à un club dont l'identité visuelle compte parmi les plus distinctives et mémorables du football anglais.`,
-  keywords: "logo oxford united, oxford united logo, oxford united fc logo png, oxford united logo png, oxford united badge, oxford united emblem, oxford united crest, yellow and blue logo, the u's logo, league one team logo, kassam stadium logo, headington united, football club logo, english football logo",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "logo oxford united, oxford united logo, oxford united fc logo png, oxford united logo png, oxford united badge, oxford united emblem, oxford united crest, yellow and blue logo, the u's logo, league one team logo, kassam stadium logo, headington united, football club logo, english football logo",
+  category: "logos",
+  subCategory: "english-clubs",
 };

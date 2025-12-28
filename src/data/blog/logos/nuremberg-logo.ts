@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const nurembergLogoPost: BlogPost = {
   id: 420,
+  slug: "nuremberg-logo", //
   title: "**Logo Nuremberg** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Nuremberg**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Nuremberg**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
   galleryImageId: 420,
   content: `# L'Histoire Fascinante du **Logo Nuremberg**
@@ -77,7 +78,8 @@ Alors que le 1. FC Nuremberg continue d'écrire son histoire sur les terrains al
 Pour des milliers de supporters en Allemagne, le **logo Nuremberg foot** représente bien plus qu'un simple emblème sportif – il incarne une passion, une tradition et une fierté qui transcendent le simple cadre footballistique.
 
 Le **Nuremberg club foot logo** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – les initiales emblématiques et les couleurs rouge et noir – restera un symbole intemporel du football allemand et de l'héritage culturel de la ville de Nuremberg.`,
-  keywords: "nuremberg logo:20, 1 fc nuremberg logo:10, fc nuremberg logo:10, logo 1 fc nuremberg:10, logo nuremberg foot:10, nuremberg club foot logo:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  keywords:
+    "nuremberg logo:20, 1 fc nuremberg logo:10, fc nuremberg logo:10, logo 1 fc nuremberg:10, logo nuremberg foot:10, nuremberg club foot logo:10",
+  category: "logos",
+  subCategory: "german-clubs",
 };

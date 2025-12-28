@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const panamaLogoPost: BlogPost = {
   id: 432,
+  slug: "panama-logo", //
   title: "**Logo Panama** : L'Histoire et l'Évolution de l'Emblème des Canaleros [2024]",
-  date: '2025-04-26',
+  date: "2025-04-26",
   galleryImageId: 432,
-  category: 'national-logos',
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale du Panama : un symbole puissant qui représente l'identité et les ambitions du football panaméen.",
+  category: "national-logos",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale du Panama : un symbole puissant qui représente l'identité et les ambitions du football panaméen.",
   content: `# L'Histoire Fascinante du **Logo Panama**
 
 Le **panama logo** est bien plus qu'un simple emblème sportif : c'est le symbole d'une nation en pleine ascension dans le monde du football. Le **logo de panama** raconte l'histoire d'un pays qui a su se forger une identité unique sur la scène internationale du football.
@@ -35,5 +36,6 @@ Plus qu'un simple emblème sportif, le **panama logo futbol** est devenu un puis
 ## Conclusion
 
 Le logo de la sélection panaméenne est devenu un symbole fort qui incarne la progression et les ambitions du football national. Il continue d'inspirer les nouvelles générations de joueurs et de supporters, portant avec fierté les couleurs et les espoirs d'une nation passionnée de football.`,
-  keywords: 'logo panama, panama football logo, panama logo, panama logo png, logo de panama, panama logo futbol, logo foot panama, logo football panama'
+  keywords:
+    "logo panama, panama football logo, panama logo, panama logo png, logo de panama, panama logo futbol, logo foot panama, logo football panama",
 };

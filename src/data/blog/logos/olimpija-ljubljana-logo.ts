@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const olimpijaLjubljanalogoPost: BlogPost = {
   id: 421,
+  slug: "olimpija-ljubljana-logo", //
   title: "**Logo Olimpija Ljubljana** : Histoire et Symbolique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Olimpija Ljubljana**, son évolution et sa signification profonde dans le football slovène.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Olimpija Ljubljana**, son évolution et sa signification profonde dans le football slovène.",
   date: "2024-04-15",
   galleryImageId: 421,
   content: `# L'Histoire du **Logo Olimpija Ljubljana**
@@ -50,6 +52,6 @@ Le design actuel du **logo Olimpija Ljubljana** combine :
 
 Le **logo Olimpija Ljubljana** transcende le simple emblème sportif - c'est un symbole d'identité, de passion et d'histoire qui continue d'inspirer des générations de supporters.`,
   keywords: "olimpija ljubljana logo, logo olimpija ljubljana fc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

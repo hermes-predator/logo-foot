@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const osasunaLogoPost: BlogPost = {
   id: 427, // ID unique qui n'est pas déjà utilisé
+  slug: "osasuna-logo", //
   title: "Logo Osasuna : Histoire et Design de l'Emblème du Club Navarrais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Osasuna : des origines à aujourd'hui, évolution et signification de l'emblème rouge du club emblématique de Pampelune.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Osasuna : des origines à aujourd'hui, évolution et signification de l'emblème rouge du club emblématique de Pampelune.",
   date: "2024-05-27",
   galleryImageId: 427,
   content: `# L'Histoire Fascinante du **Logo Osasuna**
@@ -64,7 +65,8 @@ Pour les spécialistes du branding sportif qui étudient le **osasuna fc logo**,
 Le **logo osasuna** représente bien plus qu'une simple identification visuelle pour un club de football : c'est un symbole culturel qui incarne l'identité, l'histoire et les valeurs d'une région entière. Sa présence dans le paysage sportif espagnol a largement dépassé les frontières du football pour devenir un emblème reconnu internationalement.
 
 Des terrains de jeu aux plateformes digitales, le **osasuna logo png** continue de jouer un rôle crucial dans la connexion émotionnelle entre le club et ses supporters, démontrant la puissance durable d'un design authentique et significatif. Pour tous ceux qui s'intéressent à l'art des emblèmes sportifs, le **logo ca osasuna** offre un exemple éloquent de la manière dont un symbole visuel peut capturer l'âme d'une communauté sportive.`,
-  keywords: "logo osasuna, logo osasuna png, osasuna logo, osasuna logo png, ca osasuna logo, osasuna fc logo, ca osasuna logo foot, logo ca osasuna, logo png osasuna",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo osasuna, logo osasuna png, osasuna logo, osasuna logo png, ca osasuna logo, osasuna fc logo, ca osasuna logo foot, logo ca osasuna, logo png osasuna",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rotherhamUnitedLogoPost: BlogPost = {
   id: 490,
+  slug: "rotherham-united-logo", //
   title: "**Logo Rotherham United** : Histoire et Analyse Complète [2024]",
   date: "2025-04-13",
   galleryImageId: 490,
   category: "logos",
   subCategory: "club-logos",
-  excerpt: "Découvrez l'histoire fascinante du **logo Rotherham United**. Analyse détaillée de l'écusson emblématique du club anglais, symboles, couleurs et évolution du **Rotherham United logo** au fil des ans.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Rotherham United**. Analyse détaillée de l'écusson emblématique du club anglais, symboles, couleurs et évolution du **Rotherham United logo** au fil des ans.",
   content: `# Le **Logo Rotherham United** : Histoire et Analyse Complète
 
 ## Introduction au **Rotherham United Logo**
@@ -98,5 +99,6 @@ Quelle que soit l'évolution future, certains éléments du **Rotherham logo PNG
 Le **logo Rotherham United** est bien plus qu'un simple dessin ou emblème - c'est un symbole qui incarne l'histoire, les valeurs et l'identité d'un club profondément ancré dans sa communauté. Le **Rotherham logo PNG** sert de point de ralliement pour les supporters et de représentation visuelle de la fierté locale.
 
 À travers ses différentes itérations, le **logo Rotherham United** a évolué tout en conservant son essence, témoignant de la capacité du club à s'adapter aux changements tout en honorant ses racines. Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les produits dérivés officiels, le **Rotherham logo PNG** continue de jouer un rôle central dans l'identité visuelle et émotionnelle du club.`,
-  keywords: "logo rotherham united, rotherham united logo, rotherham logo png, écusson rotherham, rotherham fc, millers logo, football logo design, english football club logos, yorkshire football clubs",
+  keywords:
+    "logo rotherham united, rotherham united logo, rotherham logo png, écusson rotherham, rotherham fc, millers logo, football logo design, english football club logos, yorkshire football clubs",
 };

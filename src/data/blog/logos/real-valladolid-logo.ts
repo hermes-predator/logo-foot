@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const realValladolidLogoPost: BlogPost = {
   id: 476, // Using a unique ID that isn't already used
+  slug: "real-valladolid-logo", //
   title: "Logo Real Valladolid : Histoire et Évolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Real Valladolid : origines, signification et évolution de l'emblème emblématique du club espagnol au fil des années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Real Valladolid : origines, signification et évolution de l'emblème emblématique du club espagnol au fil des années.",
   date: "2024-06-18",
   galleryImageId: 476,
   content: `# L'Histoire Fascinante du **Logo Real Valladolid**
@@ -64,7 +65,8 @@ Au terme de cette exploration de l'histoire et de la signification du **logo rea
 Alors que le club continue d'écrire son histoire sur les terrains, son **logo real valladolid** continuera probablement d'évoluer subtilementpour refléter cette progression, tout en maintenant les éléments fondamentaux qui le rendent instantanément reconnaissable pour les supporters du monde entier.
 
 Qu'il soit brodé sur les maillots des joueurs, affiché fièrement dans le stade José Zorrilla ou partagé numériquement par les millions de fans sur les réseaux sociaux, le **real valladolid logo png** reste un symbole puissant d'identité, d'appartenance et de passion pour le football. C'est un témoignage visuel de la riche histoire d'un club qui continue de faire la fierté de toute une région.`,
-  keywords: "logo real valladolid, real valladolid logo, real valladolid logo png, real valladolid cf, ecusson real valladolid, blason real valladolid, club espagnol logo, la liga logo, football espagnol embleme",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo real valladolid, real valladolid logo, real valladolid logo png, real valladolid cf, ecusson real valladolid, blason real valladolid, club espagnol logo, la liga logo, football espagnol embleme",
+  category: "logos",
+  subCategory: "club-logos",
 };

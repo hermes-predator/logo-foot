@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const redBullSalzburgLogoPost: BlogPost = {
   id: 477,
+  slug: "red-bull-salzbourg-logo", //
   title: "Logo Salzbourg : Histoire, Signification et Fichiers PNG du Club Red Bull [2024]",
-  excerpt: "Plongez dans l’histoire du logo Salzbourg, aussi appelé logo Red Bull Salzbourg ou RB Salzbourg logo, avec tous les fichiers PNG et les secrets de son design.",
+  excerpt:
+    "Plongez dans l’histoire du logo Salzbourg, aussi appelé logo Red Bull Salzbourg ou RB Salzbourg logo, avec tous les fichiers PNG et les secrets de son design.",
   date: "2024-04-21",
   galleryImageId: 477,
   content: `# Tout savoir sur le **logo salzbourg**
@@ -34,7 +35,8 @@ Que vous recherchiez l’évolution du **fc salzbourg logo**, la signification d
 **Mots-clés** :  
 **logo salzbourg**, **salzbourg logo**, **fc salzbourg logo**, **club foot logo red bull salzbourg**, **logo foot salzbourg**, **logo rb salzbourg**, **logo red bull salzbourg**, **logo redbull salzbourg**, **logo salzbourg foot**, **logo salzbourg football png**, **rb salzbourg logo**, **rb salzbourg logo png**, **red bull salzbourg logo png**
 `,
-  keywords: "logo salzbourg, salzbourg logo, fc salzbourg logo, club foot logo red bull salzbourg, logo foot salzbourg, logo rb salzbourg, logo red bull salzbourg, logo redbull salzbourg, logo salzbourg foot, logo salzbourg football png, rb salzbourg logo, rb salzbourg logo png, red bull salzbourg logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo salzbourg, salzbourg logo, fc salzbourg logo, club foot logo red bull salzbourg, logo foot salzbourg, logo rb salzbourg, logo red bull salzbourg, logo redbull salzbourg, logo salzbourg foot, logo salzbourg football png, rb salzbourg logo, rb salzbourg logo png, red bull salzbourg logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

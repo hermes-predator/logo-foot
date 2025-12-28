@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sanktPauliLogoPost: BlogPost = {
   id: 503,
+  slug: "sankt-pauli-logo", //
   title: "Logo Sankt Pauli : Histoire et Symbolisme du FC St. Pauli",
-  excerpt: "Découvrez l'histoire et la signification du logo Sankt Pauli, emblème de résistance et d'identité sociale du club allemand de Hambourg. Analyse complète de ce symbole fort du football allemand.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo Sankt Pauli, emblème de résistance et d'identité sociale du club allemand de Hambourg. Analyse complète de ce symbole fort du football allemand.",
   date: "2024-05-28",
   galleryImageId: 503,
   content: `# Histoire et Signification du Logo Sankt Pauli
@@ -64,7 +65,8 @@ L'emblème pirate du **logo Sankt Pauli Fussball Club** est devenu un véritable
 Le **logo de foot Sankt Pauli en Allemagne** représente l'un des exemples les plus fascinants de la façon dont un emblème sportif peut transcender son rôle initial pour devenir un puissant symbole culturel et politique. Au-delà de son esthétique distinctive, ce logo incarne un ensemble de valeurs et une vision alternative du football et de la société.
 
 Que vous soyez fan de football ou simplement intéressé par les phénomènes culturels, le **logo Sankt Pauli** mérite d'être reconnu comme l'un des symboles les plus significatifs et influents du sport moderne.`,
-  keywords: "logo Sankt Pauli, logo de foot Sankt Pauli, logo de foot Sankt Pauli en Allemagne, logo FC Sankt Pauli, logo Sankt Pauli Fussball Club, Sankt Pauli logo, FC St. Pauli, emblème pirate, football allemand, Hambourg",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo Sankt Pauli, logo de foot Sankt Pauli, logo de foot Sankt Pauli en Allemagne, logo FC Sankt Pauli, logo Sankt Pauli Fussball Club, Sankt Pauli logo, FC St. Pauli, emblème pirate, football allemand, Hambourg",
+  category: "logos",
+  subCategory: "club-logos",
 };

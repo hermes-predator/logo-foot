@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sampdoriaLogoPost: BlogPost = {
   id: 499,
+  slug: "sampdoria-logo", //
   title: "Logo Sampdoria : Histoire et Évolution de l'Emblème de Gênes [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la Sampdoria : origines, évolution et symbolisme de l'emblème emblématique du club génois.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la Sampdoria : origines, évolution et symbolisme de l'emblème emblématique du club génois.",
   date: "2024-06-18",
   galleryImageId: 499,
   content: `# L'Histoire Fascinante du **logo sampdoria**
@@ -61,7 +62,8 @@ Au-delà de sa fonction identificatrice, le **sampdoria logo** incarne les valeu
 Alors que la Sampdoria continue d'écrire son histoire sur les terrains nationaux et européens, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo sampdoria** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **sampdoria fc logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo sampdoria, sampdoria logo, u.c. sampdoria logo, uc sampdoria logo, logo sampdoria png, sampdoria fc logo, logo png la sampdoria, logo sampdoria de gênes",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo sampdoria, sampdoria logo, u.c. sampdoria logo, uc sampdoria logo, logo sampdoria png, sampdoria fc logo, logo png la sampdoria, logo sampdoria de gênes",
+  category: "logos",
+  subCategory: "club-logos",
 };

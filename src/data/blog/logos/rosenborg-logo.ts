@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rosenborgLogoPost: BlogPost = {
   id: 489,
+  slug: "rosenborg-logo", //
   title: "**Logo Rosenborg** : Histoire et Signification de l'Emblème Norvégien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Rosenborg BK, son évolution et la signification de cet emblème emblématique du football norvégien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Rosenborg BK, son évolution et la signification de cet emblème emblématique du football norvégien.",
   date: "2024-04-15",
   galleryImageId: 489,
   content: `# L'Histoire Fascinante du **Logo Rosenborg**
@@ -41,7 +42,8 @@ Le **rosenborg bk logo** est devenu un symbole reconnaissable bien au-delà des 
 ## Conclusion
 
 Plus qu'un simple logo, le **logo rosenborg** est un véritable récit visuel. Il capture l'essence d'un club qui a traversé l'histoire, dominant le football norvégien et inspirant des générations de supporters.`,
-  keywords: "logo rosenborg, rosenborg bk logo, rosenborg logo, rosenborg logo png, logo club rosenborg, logo foot norvegien rosenborg, logo foot rosenborg, logo rosenborg bk",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo rosenborg, rosenborg bk logo, rosenborg logo, rosenborg logo png, logo club rosenborg, logo foot norvegien rosenborg, logo foot rosenborg, logo rosenborg bk",
+  category: "logos",
+  subCategory: "club-logos",
 };

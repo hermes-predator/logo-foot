@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const reimsLogoPost: BlogPost = {
   id: 480,
+  slug: "reims-logo", //
   title: "Logo Stade de Reims : Histoire et Design du Club Champenois [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Stade de Reims : origines, évolution et symbolisme de l'emblème emblématique du club champenois.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Stade de Reims : origines, évolution et symbolisme de l'emblème emblématique du club champenois.",
   date: "2024-03-31",
   galleryImageId: 480,
   content: `# L'Histoire Fascinante du **Logo Stade de Reims**
@@ -52,7 +53,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **stade de reims logo** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **logo reims foot**.
 
 Alors que le Stade de Reims poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines champenoises, fait du **logo de reims** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football français.`,
-  keywords: "logo reims, logo stade de reims, stade de reims logo, reims football logo, blason reims, ecusson reims, reims foot logo, logo du stade de reims, reims logo, logo reims foot, logo stade de reims png, logo reims png, logo foot reims, logo de reims",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo reims, logo stade de reims, stade de reims logo, reims football logo, blason reims, ecusson reims, reims foot logo, logo du stade de reims, reims logo, logo reims foot, logo stade de reims png, logo reims png, logo foot reims, logo de reims",
+  category: "logos",
+  subCategory: "club-logos",
 };

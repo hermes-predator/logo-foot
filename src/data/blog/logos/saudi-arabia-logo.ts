@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const saudiArabiaLogoPost: BlogPost = {
   id: 506,
+  slug: "saudi-arabia-logo", //
   title: "**Logo Arabie Saoudite** : Histoire et Symbolisme de l'Emblème des Faucons Verts [2024]",
-  date: '2025-04-26',
+  date: "2025-04-26",
   galleryImageId: 506,
-  category: 'national-logos',
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Arabie Saoudite : un symbole puissant qui incarne la tradition et les ambitions du football saoudien.",
+  category: "national-logos",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale d'Arabie Saoudite : un symbole puissant qui incarne la tradition et les ambitions du football saoudien.",
   content: `# L'Histoire Fascinante du **Logo Arabie Saoudite**
 
 Le **logo arabie saoudite** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée de football dont l'influence ne cesse de croître sur la scène internationale. Le **arabie saoudite logo** incarne la fierté et les traditions d'un pays qui a su faire du football un vecteur de développement et de rayonnement international.
@@ -35,6 +36,6 @@ Le **logo arabie saoudite football** incarne les ambitions croissantes du footba
 ## Conclusion
 
 Le logo de la sélection saoudienne est bien plus qu'un simple emblème : c'est le reflet d'une nation qui allie tradition et modernité dans sa quête d'excellence footballistique. Il continue d'inspirer les générations futures de footballeurs saoudiens tout en rappelant au monde l'engagement du royaume dans le développement du football.`,
-  keywords: 'logo arabie saoudite, arabie saoudite logo, logo arabie saoudite foot, logo foot arabie saoudite, arabie saoudite foot logo, arabie saoudite football logo, arabie saoudite football logo png, arabie saoudite logo foot, equipe de foot arabie saoudite logo, logo arabie saoudite de football, logo arabie saoudite football, logo federation foot arabie saoudite, logo fédération arabie saoudite, logo fédération football arabie saoudite, logo officiel arabie saoudite football, logo équipe d\'arabie saoudite de football'
+  keywords:
+    "logo arabie saoudite, arabie saoudite logo, logo arabie saoudite foot, logo foot arabie saoudite, arabie saoudite foot logo, arabie saoudite football logo, arabie saoudite football logo png, arabie saoudite logo foot, equipe de foot arabie saoudite logo, logo arabie saoudite de football, logo arabie saoudite football, logo federation foot arabie saoudite, logo fédération arabie saoudite, logo fédération football arabie saoudite, logo officiel arabie saoudite football, logo équipe d'arabie saoudite de football",
 };
-

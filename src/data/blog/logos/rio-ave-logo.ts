@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rioAveLogoPost: BlogPost = {
   id: 483,
+  slug: "rio-ave-logo", //
   title: "Logo Rio Ave : Histoire et Signification de l'Emblème du Club Portugais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Rio Ave FC, son évolution à travers le temps et la signification des éléments qui composent l'emblème du club portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Rio Ave FC, son évolution à travers le temps et la signification des éléments qui composent l'emblème du club portugais.",
   date: "2024-09-01",
   galleryImageId: 483,
   content: `# L'Histoire Fascinante du **Logo Rio Ave**
@@ -75,7 +76,6 @@ Alors que le Rio Ave FC continue d'écrire son histoire dans le football portuga
 
 Pour les générations actuelles et futures de supporters, le **logo Rio Ave FC** continuera d'incarner cette passion partagée pour un club qui, malgré sa taille modeste comparée aux géants de Lisbonne ou Porto, ne cesse de prouver qu'avec détermination et vision, il est possible de se faire une place au plus haut niveau du football portugais.`,
   keywords: "logo rio ave, rio ave logo, rio ave logo png, logo rio ave png, logo rio ave fc",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };
-

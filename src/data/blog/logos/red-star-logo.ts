@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const redStarLogoPost: BlogPost = {
   id: 478,
+  slug: "red-star-logo", //
   title: "Logo Red Star : Histoire et Symbolisme de l'Étoile Rouge [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Red Star FC : origines, évolution et signification de l'emblème emblématique du club parisien historique.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Red Star FC : origines, évolution et signification de l'emblème emblématique du club parisien historique.",
   date: "2024-06-01",
   galleryImageId: 478,
   content: `# L'Histoire Fascinante du **Logo Red Star**
@@ -47,7 +48,8 @@ Au-delà de sa fonction identificatrice, le **logo red star** incarne les valeur
 Alors que le Red Star FC continue d'écrire son histoire, alternant entre différentes divisions professionnelles, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **red star fc logo png** à travers les décennies a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **logo red star** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec l'histoire glorieuse du club, l'un des plus anciens du football français.`,
-  keywords: "logo red star, star logo red, red star logo, red star fc logo, logo red star fc, logo red star png, red star logo png, red star fc logo png, club foot logo red star, logo club football red star, logo de foot du red star",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo red star, star logo red, red star logo, red star fc logo, logo red star fc, logo red star png, red star logo png, red star fc logo png, club foot logo red star, logo club football red star, logo de foot du red star",
+  category: "logos",
+  subCategory: "club-logos",
 };

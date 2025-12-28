@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sacramentoRepublicLogoPost: BlogPost = {
   id: 495,
+  slug: "sacramento-republic-logo", //
   title: "Sacramento Republic Logo : Histoire et Signification de l'Emblème de MLS",
-  excerpt: "Découvrez l'histoire fascinante du logo de Sacramento Republic FC, emblème distinctif de ce club américain avec sa symbolique californienne et son design moderne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Sacramento Republic FC, emblème distinctif de ce club américain avec sa symbolique californienne et son design moderne.",
   date: "2025-04-14",
   galleryImageId: 495,
   content: `
@@ -85,6 +86,7 @@ Le **Sacramento Republic logo** représente plus qu'un simple emblème de club d
 
 À mesure que le club poursuit son développement, le **logo Sacramento Republic FC** évolue tout en préservant son essence, démontrant comment un design fort peut transcender le sport pour devenir un véritable symbole culturel régional. Que ce soit comme **Sacramento Republic MLS logo** ou dans son format actuel, cet emblème continuera sans doute à représenter fièrement la capitale californienne sur la scène footballistique nationale et internationale.
 `,
-  category: 'logos',
-  keywords: "Sacramento Republic logo, Sacramento Republic FC logo, logo Sacramento Republic FC, Sacramento Republic MLS logo, design logo football, emblème club américain, logo club californien, histoire Sacramento Republic"
+  category: "logos",
+  keywords:
+    "Sacramento Republic logo, Sacramento Republic FC logo, logo Sacramento Republic FC, Sacramento Republic MLS logo, design logo football, emblème club américain, logo club californien, histoire Sacramento Republic",
 };

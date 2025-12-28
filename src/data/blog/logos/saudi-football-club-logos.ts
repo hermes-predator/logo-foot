@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const saudiFootballClubLogosPost: BlogPost = {
   id: 507, // ID unique pour ce post
+  slug: "saudi-football-club-logo", //
   title: "Les logos des clubs de football saoudiens : Histoire et évolution visuelle",
-  excerpt: "Découvrez l'histoire fascinante des logos des clubs de football saoudiens, leur évolution au fil du temps et la signification symbolique derrière ces emblèmes iconiques.",
+  excerpt:
+    "Découvrez l'histoire fascinante des logos des clubs de football saoudiens, leur évolution au fil du temps et la signification symbolique derrière ces emblèmes iconiques.",
   date: "2025-04-08",
   galleryImageId: 507,
   content: `
@@ -97,7 +98,8 @@ Les logos des clubs de football saoudiens représentent bien plus que de simples
 
 Que vous soyez passionné par le football, le design ou simplement curieux de découvrir la culture saoudienne à travers ses expressions visuelles sportives, l'étude de ces logos offre une fenêtre fascinante sur un monde en pleine transformation.
 `,
-  keywords: "saudi football club logos, logos clubs saoudiens, Al-Hilal logo, Al-Nassr logo, Saudi Pro League, emblèmes football saoudien, Al-Ittihad logo, Al-Ahli logo, design logos arabes, football Arabie Saoudite",
+  keywords:
+    "saudi football club logos, logos clubs saoudiens, Al-Hilal logo, Al-Nassr logo, Saudi Pro League, emblèmes football saoudien, Al-Ittihad logo, Al-Ahli logo, design logos arabes, football Arabie Saoudite",
   category: "logos",
   subCategory: "club-logos",
 };

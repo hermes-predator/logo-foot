@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const saintEtienneLogoPost: BlogPost = {
   id: 496,
+  slug: "saint-etienne-logo", //
   title: "Logo Saint-Étienne : Histoire de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire du logo de l'AS Saint-Étienne : évolution et symbolisme de l'emblème mythique des Verts, club le plus titré du football français.",
+  excerpt:
+    "Découvrez l'histoire du logo de l'AS Saint-Étienne : évolution et symbolisme de l'emblème mythique des Verts, club le plus titré du football français.",
   date: "2024-04-06",
   galleryImageId: 496,
   content: `# L'Histoire Fascinante du **Logo Saint-Étienne**
@@ -90,7 +91,8 @@ Alors que le club continue d'écrire son histoire, parfois tumultueuse mais touj
 Dans un sport en constante mutation, où les identités visuelles sont régulièrement actualisées pour répondre à des logiques commerciales, le **logos saint etienne** reste un symbole fort de ce que le football français a de plus authentique : une passion populaire enracinée dans un territoire et une histoire communes.
 
 Quels que soient les défis sportifs et économiques qui attendent le club dans les années à venir, le **logo saint etienne** continuera de briller comme un phare vert dans le paysage footballistique, symbole d'espoir et de fierté pour tous ceux qui portent les Verts dans leur cœur.`,
-  keywords: "logo saint etienne, logos saint etienne, saint etienne logo, logo saint etienne foot, logo as saint etienne, logo de saint etienne, logo foot saint etienne, logo saint etienne png, saint etienne foot logo, as saint etienne logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo saint etienne, logos saint etienne, saint etienne logo, logo saint etienne foot, logo as saint etienne, logo de saint etienne, logo foot saint etienne, logo saint etienne png, saint etienne foot logo, as saint etienne logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

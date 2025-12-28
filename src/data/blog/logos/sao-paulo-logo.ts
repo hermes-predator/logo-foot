@@ -1,11 +1,13 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const saoPauloLogoPost: BlogPost = {
   id: 504,
+  slug: "sao-paulo-logo", //
   title: "**Logo São Paulo FC** : Histoire et Design de l'Emblème Iconique du Football Brésilien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo São Paulo**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo São Paulo**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
   date: "2025-04-13",
-galleryImageId: 504,
+  galleryImageId: 504,
   content: `# L'Histoire Fascinante du **Logo São Paulo**
 
 Le **são paulo logo** est l'un des emblèmes les plus prestigieux et reconnaissables du football brésilien. Depuis sa création, ce **logo são paulo fc** incarne non seulement l'identité d'un club légendaire, mais aussi l'histoire et la passion du football à São Paulo.
@@ -33,7 +35,8 @@ Le **logo são paulo futebol clube** est bien plus qu'un simple emblème sportif
 ## Conclusion
 
 Le **logo são paulo fc** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée, transcendant le simple statut d'emblème sportif.`,
-  keywords: "são paulo logo:30, logo são paulo:20, logo do são paulo png:10, logo são paulo fc:10, são paulo fc logo:10, são paulo futebol clube logo:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "são paulo logo:30, logo são paulo:20, logo do são paulo png:10, logo são paulo fc:10, são paulo fc logo:10, são paulo futebol clube logo:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

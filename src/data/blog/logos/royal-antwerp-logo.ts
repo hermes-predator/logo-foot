@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const royalAntwerpLogoPost: BlogPost = {
   id: 492, // ID unique pour ce nouvel article
+  slug: "royal-antwerp-logo", //
   title: "Logo Royal Antwerp : Histoire et Évolution de l'Emblème du Plus Ancien Club Belge [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Royal Antwerp FC, son design emblématique et son évolution au fil du temps. Téléchargez le logo Royal Antwerp FC en haute définition.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Royal Antwerp FC, son design emblématique et son évolution au fil du temps. Téléchargez le logo Royal Antwerp FC en haute définition.",
   date: "2024-07-28", // Date de publication
   galleryImageId: 492,
   content: `# L'Histoire Complète du **Royal Antwerp FC Logo**
@@ -112,7 +113,8 @@ En définitive, le **royal antwerp logo** incarne parfaitement l'équilibre dél
 Pour les générations actuelles et futures de supporters, le **logo antwerp** continuera d'incarner la fierté d'appartenir à la communauté du plus ancien club de Belgique. Qu'il s'agisse du **logo royal antwerp png** brodé sur un maillot de collection ou du **logo de foot antwerp** affiché sur un écran de smartphone, cet emblème restera le point de ralliement visuel d'une passion partagée.
 
 La force du **royal antwerp fc logo** réside finalement dans sa capacité à transcender sa fonction première d'identification pour devenir un véritable symbole culturel, porteur de l'histoire et des valeurs d'un club centenaire. C'est cette dimension qui fait du **logo royal antwerp football club** un élément central et indispensable de l'identité du Royal Antwerp FC dans le paysage footballistique belge et européen.`,
-  keywords: "antwerp fc logo, antwerp logo, logo royal antwerp, royal antwerp fc logo, royal antwerp football club logo, royal antwerp logo, royal antwerp logo png, logo antwerp, logo antwerp fc, logo royal antwerp fc, logo de foot antwerp",
-  category: 'logos',
-  subCategory: 'other-european-clubs',
+  keywords:
+    "antwerp fc logo, antwerp logo, logo royal antwerp, royal antwerp fc logo, royal antwerp football club logo, royal antwerp logo, royal antwerp logo png, logo antwerp, logo antwerp fc, logo royal antwerp fc, logo de foot antwerp",
+  category: "logos",
+  subCategory: "other-european-clubs",
 };

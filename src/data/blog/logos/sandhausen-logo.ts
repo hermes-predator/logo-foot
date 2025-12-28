@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sandhausenLogoPost: BlogPost = {
   id: 502,
+  slug: "sandhausen-logo", //
   title: "**Logo SV Sandhausen** : Histoire et Design de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Sandhausen**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Sandhausen**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",
   galleryImageId: 502,
   content: `# L'Histoire du **Logo SV Sandhausen**
@@ -40,6 +42,6 @@ Le logo dépasse le simple cadre sportif, devenant un symbole d'identité local 
 
 Le **logo sandhausen** représente plus qu'un simple emblème : c'est l'histoire d'un club, de ses supporters et de sa région.`,
   keywords: "logo sandhausen:10, logo sv sandhausen:10, logo de foot sandhausen:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  category: "logos",
+  subCategory: "german-clubs",
 };

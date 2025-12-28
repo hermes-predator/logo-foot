@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sassuoloLogoPost: BlogPost = {
   id: 505,
+  slug: "sassuolo-logo", //
   title: "Logo Sassuolo : Histoire et Design de l'Emblème du Club Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Sassuolo : origines, évolution et signification de l'emblème emblématique du club italien de Serie A.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Sassuolo : origines, évolution et signification de l'emblème emblématique du club italien de Serie A.",
   date: "2024-07-01",
   galleryImageId: 505,
   content: `# L'Histoire Fascinante du **Logo Sassuolo**
@@ -55,7 +56,8 @@ Alors que Sassuolo continue d'écrire son histoire dans le football italien, son
 Pour les générations futures de supporters, le **logo sassuolo png** continuera d'incarner les valeurs d'ambition, de persévérance et d'innovation qui caractérisent ce club pas comme les autres. Dans un paysage footballistique italien dominé par des institutions centenaires, le **us sassuolo logo** représente une vision moderne et dynamique du football qui a transformé un petit club provincial en une référence nationale.
 
 L'histoire du **logo sassuolo calcio** est loin d'être terminée, et les prochaines années verront certainement de nouvelles évolutions subtiles qui accompagneront le développement sportif et institutionnel du club. Ces futurs ajustements s'inscriront sans doute dans la continuité d'une identité visuelle qui a su trouver le parfait équilibre entre respect des traditions et ambitions futures.`,
-  keywords: "logo sassuolo, sassuolo logo, sassuolo logo png, logo sassuolo calcio, logo sassuolo png, fc sassuolo logo, logo de foot sassuolo, logo de foot u s sassuolo, logo du fc sassuolo, logo sassuolo football, logo us sassuolo, us sassuolo logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo sassuolo, sassuolo logo, sassuolo logo png, logo sassuolo calcio, logo sassuolo png, fc sassuolo logo, logo de foot sassuolo, logo de foot u s sassuolo, logo du fc sassuolo, logo sassuolo football, logo us sassuolo, us sassuolo logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rosarioCentralLogoPost: BlogPost = {
   id: 488,
+  slug: "rosario-central-logo", //
   title: "**Logo Rosario Central** : Histoire de l'Emblème Canaya [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Rosario Central**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **Rosario Central logo**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Rosario Central**, symbole emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **Rosario Central logo**.",
   date: "2024-04-22",
   galleryImageId: 488,
   content: `# L'Histoire Fascinante du **Logo Rosario Central**
@@ -42,7 +43,8 @@ Le **logo Rosario Central** continue d'évoluer tout en préservant son essence.
 ## Conclusion
 
 Le **logo de Rosario Central** est bien plus qu'un simple emblème sportif : c'est un symbole qui raconte l'histoire d'un club centenaire, de sa ville et de ses supporters. À travers les années, il a su évoluer tout en conservant son authenticité et sa force symbolique dans le football argentin.`,
-  keywords: "logo rosario central, rosario central logo, logo de foot rosario central argentine, logo de rosario central, logos de rosario central, ecusson rosario central, blason rosario central, embleme rosario central, club argentin, football argentin",
+  keywords:
+    "logo rosario central, rosario central logo, logo de foot rosario central argentine, logo de rosario central, logos de rosario central, ecusson rosario central, blason rosario central, embleme rosario central, club argentin, football argentin",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

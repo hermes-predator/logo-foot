@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const saudiProLeagueLogoPost: BlogPost = {
   id: 508,
+  slug: "saudi-pro-league-logo", //
   title: "Le Logo Saudi Pro League : Histoire et Évolution du Championnat Saoudien [2024]",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Saudi Pro League, l'emblème du championnat de football le plus prestigieux d'Arabie Saoudite. Analyse complète de son design et de sa signification.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Saudi Pro League, l'emblème du championnat de football le plus prestigieux d'Arabie Saoudite. Analyse complète de son design et de sa signification.",
   date: "2024-04-08",
   galleryImageId: 508,
   content: `# **Logo Saudi Pro League** : Histoire et Évolution de l'Emblème du Football Saoudien
@@ -118,7 +120,8 @@ Le **logo Saudi Pro League** incarne parfaitement l'évolution remarquable du fo
 Alors que la ligue continue d'attirer des talents mondiaux et d'accroître sa visibilité internationale, le **Saudi Pro League logo PNG** jouera un rôle crucial dans sa stratégie de marque. Plus qu'un simple emblème sportif, il est devenu un symbole de la transformation et des ambitions du Royaume dans le paysage footballistique mondial.
 
 L'histoire du **logo Saudi Pro League** n'est certainement qu'à ses débuts, et ses prochaines évolutions reflèteront sans doute le parcours passionnant de cette compétition qui aspire à se hisser parmi les grandes ligues mondiales du football.`,
-  keywords: "logo saudi pro league, saudi pro league logo, saudi pro league logo png, saudi pro league team logos, championnat saoudien, football saoudien, roshn saudi league, emblème football, design logo football",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo saudi pro league, saudi pro league logo, saudi pro league logo png, saudi pro league team logos, championnat saoudien, football saoudien, roshn saudi league, emblème football, design logo football",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

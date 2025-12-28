@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rouenLogoPost: BlogPost = {
   id: 491,
+  slug: "rouen-logo", //
   title: "Logo FC Rouen : Histoire et Évolution du Blason Normand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Rouen : des origines à aujourd'hui, l'évolution de l'emblème emblématique du club normand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Rouen : des origines à aujourd'hui, l'évolution de l'emblème emblématique du club normand.",
   date: "2024-04-12",
   galleryImageId: 491,
   content: `Guide Complet du **Logo FC Rouen**
@@ -78,6 +79,6 @@ Le FC Rouen continue de développer son identité visuelle :
 
 L'emblème du FC Rouen symbolise parfaitement l'alliance entre tradition normande et modernité, représentant fièrement l'identité d'un club historique du football français.`,
   keywords: "logo rouen, rouen logo, logo fc rouen, fc rouen logo, logo rouen foot, logo de rouen",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };

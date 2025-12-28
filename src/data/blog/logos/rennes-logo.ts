@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rennesLogoPost: BlogPost = {
   id: 481,
+  slug: "rennes-logo", //
   title: "Logo Stade Rennais : Histoire et Évolution de l'Emblème Breton [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Stade Rennais : origines bretonnes, évolution historique et analyse du design de l'emblème emblématique du club rennais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Stade Rennais : origines bretonnes, évolution historique et analyse du design de l'emblème emblématique du club rennais.",
   date: "2024-03-29",
   galleryImageId: 481,
   content: `# Histoire Complète du Logo Stade Rennais
@@ -94,8 +95,8 @@ L'adaptation aux nouvelles technologies représente un autre défi majeur pour l
 Le logo stade rennais représente bien plus qu'un simple design graphique - c'est l'incarnation visuelle d'une histoire centenaire, d'un territoire et d'une communauté passionnée. À travers ses évolutions successives, il a su préserver son essence tout en s'adaptant aux exigences de la communication moderne, illustrant parfaitement la devise "Progresser sans renier".
 
 Que ce soit dans sa version imprimée sur les maillots rouge et noir, sa déclinaison animée sur les écrans du stade ou sa présence digitale optimisée comme le logo stade rennais png, l'emblème du club breton continue de porter fièrement les couleurs d'une institution qui puise sa force dans ses racines tout en regardant vers l'avenir. Le logo rennes reste ainsi un élément central de l'identité du club, un trait d'union entre son histoire glorieuse et ses ambitions futures.`,
-  keywords: "logo stade rennais, stade rennais logo, logo du stade rennais, logo stade rennais png, logo rennes, rennes logo, logo rennes foot, logo de rennes",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo stade rennais, stade rennais logo, logo du stade rennais, logo stade rennais png, logo rennes, rennes logo, logo rennes foot, logo de rennes",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

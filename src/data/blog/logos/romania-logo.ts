@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const romaniaLogoPost: BlogPost = {
   id: 487,
+  slug: "roumanie-logo", //
   title: "Logo Roumanie : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Roumanie : des origines à aujourd'hui, évolution et signification de l'emblème du football roumain.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Roumanie : des origines à aujourd'hui, évolution et signification de l'emblème du football roumain.",
   date: "2024-05-29",
   galleryImageId: 487,
   content: `# L'Histoire Fascinante du **Logo Roumanie** Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **roumanie logo** ont également fait l
 Au-delà de sa dimension sportive, le **logo roumanie** est devenu un puissant symbole des ambitions retrouvées du football roumain sur la scène internationale. Le **football roumanie logo** représente désormais une nouvelle génération de talents roumains qui aspirent à renouer avec les succès passés et à écrire de nouvelles pages glorieuses dans l'histoire du football national.
 
 Les joueurs qui portent fièrement le maillot orné du **logo roumanie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **logo club football roumanie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo roumanie foot, logo roumanie, roumanie logo, logo foot roumanie, football roumanie logo, logo club de foot roumanie, logo club foot roumanie, logo club football roumanie, logo equipe foot roumanie, logo federation football roumanie",
-  category: 'national-logos',  // Changed from 'logos' to 'national-logos'
-  subCategory: 'national-logos'
+  keywords:
+    "logo roumanie foot, logo roumanie, roumanie logo, logo foot roumanie, football roumanie logo, logo club de foot roumanie, logo club foot roumanie, logo club football roumanie, logo equipe foot roumanie, logo federation football roumanie",
+  category: "national-logos", // Changed from 'logos' to 'national-logos'
+  subCategory: "national-logos",
 };

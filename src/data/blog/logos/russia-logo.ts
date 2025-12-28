@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const russiaLogoPost: BlogPost = {
   id: 494,
+  slug: "russie-logo", //
   title: "Logo Russie : Histoire et Design de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Russie : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Russie : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football.",
   date: "2024-05-26",
   galleryImageId: 494,
   category: "national-logos", // Changed from 'logos'
@@ -53,5 +55,6 @@ Cette connexion émotionnelle explique pourquoi chaque modification de l'emblèm
 Dans un contexte sportif en constante évolution, on peut s'interroger sur l'avenir du **logo russie foot**. Les tendances en design d'emblèmes sportifs privilégient aujourd'hui épuration et adaptabilité digitale. Comment le **logo foot russie** évoluera-t-il pour répondre à ces exigences tout en préservant son héritage historique ?
 
 Les leçons tirées des **logo club foot russe** contemporains, qui ont pour la plupart modernisé leurs identités visuelles ces dernières années, pourraient influencer la direction future de l'emblème national. Une chose est certaine : quelle que soit son évolution, le **logo russie** continuera de symboliser la passion et l'ambition d'une nation profondément attachée au football.`,
-  keywords: "logo russie, logo club foot russe, logo club russe, logo de la russie, logo foot russie, logo russie foot, russie logo, logo club de foot russie, club russe football logo, equipe de foot russie logo, equipe de foot de russie logo png",
+  keywords:
+    "logo russie, logo club foot russe, logo club russe, logo de la russie, logo foot russie, logo russie foot, russie logo, logo club de foot russie, club russe football logo, equipe de foot russie logo, equipe de foot de russie logo png",
 };

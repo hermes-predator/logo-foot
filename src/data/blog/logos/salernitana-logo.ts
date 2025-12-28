@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const salernitanaLogoPost: BlogPost = {
   id: 498,
+  slug: "salernitana-logo", //
   title: "Logo Salernitana : Histoire et Design de l'Emblème Italien [2025]",
-  excerpt: "Découvrez l'histoire complète du logo Salernitana : des origines à aujourd'hui, évolution et signification de l'emblème de ce club historique du football italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Salernitana : des origines à aujourd'hui, évolution et signification de l'emblème de ce club historique du football italien.",
   date: "2024-04-20",
   galleryImageId: 498,
   content: `# L'Histoire Fascinante du Logo Salernitana
@@ -40,7 +41,8 @@ Cette connexion émotionnelle explique pourquoi chaque évolution du **salernita
 Alors que le club poursuit son parcours dans l'élite du football italien, le **US Salernitana logo** continue d'évoluer subtilement pour répondre aux défis futurs tout en honorant son riche passé. Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **salernitana fc logo** un exemple remarquable de continuité dans le design sportif.
 
 La présence digitale croissante du club donne au **logo salernitana** une visibilité internationale inédite, transformant ce symbole local en une marque reconnue au-delà des frontières italiennes. Le **logo salernitana 2025** est ainsi parfaitement positionné pour accompagner le club dans cette nouvelle ère où l'identité visuelle joue un rôle crucial dans le rayonnement global d'une institution sportive.`,
-  keywords: "logo salernitana, salernitana fc logo, salernitana logo, us salernitana logo, logo salernitana 2025, emblème salernitana, blason salernitana, ecusson salernitana, salernitana football logo, symbole salernitana, logo us salernitana, salerno football club logo, club italien logo, serie a logo club",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo salernitana, salernitana fc logo, salernitana logo, us salernitana logo, logo salernitana 2025, emblème salernitana, blason salernitana, ecusson salernitana, salernitana football logo, symbole salernitana, logo us salernitana, salerno football club logo, club italien logo, serie a logo club",
+  category: "logos",
+  subCategory: "club-logos",
 };

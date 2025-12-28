@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rodezLogoPost: BlogPost = {
   id: 486,
+  slug: "rodez-logo", //
   title: "Logo Rodez : Histoire et Évolution de l'Emblème du RAF [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Rodez : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club aveyronnais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Rodez : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club aveyronnais.",
   date: "2024-04-21",
   galleryImageId: 486,
   content: `# L'Histoire Fascinante du **Logo Rodez**
@@ -53,6 +54,6 @@ Les éventuelles futures évolutions du **rodez logo png** s'inscriront probable
 
 Pour les décennies à venir, le **logo rodez** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club aveyronnais.`,
   keywords: "logo rodez, logo rodez foot, rodez logo, logo rodez png, rodez foot logo, rodez logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };

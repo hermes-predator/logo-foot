@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const realSociedadLogoPost: BlogPost = {
   id: 475, // Using a unique ID that isn't already used
+  slug: "real-sociedad-logo", //
   title: "Logo Real Sociedad : Histoire et Évolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Real Sociedad : origines, signification et évolution de l'emblème emblématique du club basque espagnol au fil des années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Real Sociedad : origines, signification et évolution de l'emblème emblématique du club basque espagnol au fil des années.",
   date: "2024-06-19",
   galleryImageId: 475,
   content: `# L'Histoire Fascinante du **Logo Real Sociedad**
@@ -64,7 +65,8 @@ Au terme de cette exploration de l'histoire et de la signification du **logo rea
 Alors que le club continue d'écrire son histoire sur les terrains, son **logo de foot real sociedad** continuera probablement d'évoluer subtilement pour refléter cette progression, tout en maintenant les éléments fondamentaux qui le rendent instantanément reconnaissable pour les supporters du monde entier.
 
 Qu'il soit brodé sur les maillots des joueurs, affiché fièrement dans le stade d'Anoeta ou partagé numériquement par les millions de fans sur les réseaux sociaux, le **logo real sociedad foot** reste un symbole puissant d'identité, d'appartenance et de passion pour le football. C'est un témoignage visuel de la riche histoire d'un club qui continue de faire la fierté de toute une région.`,
-  keywords: "logo real sociedad, real sociedad logo, logo real sociedad png, real sociedad logo png, logo de real sociedad, logo de la real sociedad, club de foot logo real sociedad, logo de foot real sociedad, logo foot real sociedad, logo real sociedad foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo real sociedad, real sociedad logo, logo real sociedad png, real sociedad logo png, logo de real sociedad, logo de la real sociedad, club de foot logo real sociedad, logo de foot real sociedad, logo foot real sociedad, logo real sociedad foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const samsungsporLogoPost: BlogPost = {
   id: 500,
+  slug: "samsunspor-logo", //
   title: "**Logo Samsunspor** : Histoire et Évolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Samsunspor**, symbole emblématique du club turc, son évolution et sa signification à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Samsunspor**, symbole emblématique du club turc, son évolution et sa signification à travers les années.",
   date: "2024-04-21",
   galleryImageId: 500,
   content: `# L'Histoire du **Logo Samsunspor**
@@ -71,6 +72,6 @@ Le **samsunspor logo** continue d'évoluer :
 - Respect des traditions
 - Vision d'avenir`,
   keywords: "logo samsunspor, samsunspor logo, logo samsunspor png, football turc, super lig, emblème club turc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

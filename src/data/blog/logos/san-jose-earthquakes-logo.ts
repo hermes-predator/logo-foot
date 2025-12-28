@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sanJoseEarthquakesLogoPost: BlogPost = {
   id: 501,
+  slug: "san-jose-earthquakes-logo", //
   title: "**Logo San Jose Earthquakes** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo San Jose Earthquakes**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo San Jose Earthquakes**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 501,
   content: `# L'Histoire Fascinante du **Logo San Jose Earthquakes**
@@ -34,6 +36,6 @@ Le **san jose earthquakes logo** est bien plus qu'un simple emblème sportif. Il
 
 Le **logo san jose earthquakes** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée.`,
   keywords: "san jose earthquakes logo:20, logo san jose earthquakes:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

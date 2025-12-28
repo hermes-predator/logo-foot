@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const rkcWaalwijkLogoPost: BlogPost = {
   id: 485,
+  slug: "rkc-waalwijk-logo", //
   title: "**Logo RKC Waalwijk** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **RKC Waalwijk logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **RKC Waalwijk logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
   galleryImageId: 485,
   content: `# Histoire du **Logo RKC Waalwijk**
@@ -35,6 +36,6 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 
 Le logo de RKC Waalwijk est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "**logo rkc waalwijk**, **rkc waalwijk logo**, **logo waalwijk**",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

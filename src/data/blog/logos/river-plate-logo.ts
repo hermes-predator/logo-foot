@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const riverPlateLogoPost: BlogPost = {
   id: 484,
+  slug: "river-plate-logo", //
   title: "Logo River Plate : Histoire et Évolution de l'Emblème Argentin [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de River Plate, l'un des plus emblématiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de River Plate, l'un des plus emblématiques du football sud-américain. Analyse complète de son évolution et sa symbolique.",
   date: "2025-04-09",
   galleryImageId: 484,
   content: `# L'Histoire Fascinante du **Logo River Plate**
@@ -129,5 +130,6 @@ Pour les fans et les collectionneurs, posséder des images officielles du **logo
 `,
   category: "logos",
   subCategory: "southAmericanClubs",
-  keywords: "logo river plate, river plate logo, river plate logo png, logo de river plate, logo de foot river plate, logo river plate nouveau, river plate evolution logo",
+  keywords:
+    "logo river plate, river plate logo, river plate logo png, logo de river plate, logo de foot river plate, logo river plate nouveau, river plate evolution logo",
 };

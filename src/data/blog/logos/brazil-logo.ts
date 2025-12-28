@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brazilLogoPost: BlogPost = {
   id: 131,
+  slug: "bresil-logo", //
   title: "Logo Brésil : Histoire et Évolution de l'Emblème Auriverde [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la sélection brésilienne de football : origines, symbolisme et évolution d'un des emblèmes les plus reconnaissables du football mondial.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la sélection brésilienne de football : origines, symbolisme et évolution d'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-04-17",
   galleryImageId: 131,
   content: `# L'Histoire Fascinante du **Logo Brésil**
@@ -47,7 +49,8 @@ Le **logo brésil** incarne une tradition d'excellence qui continue d'inspirer l
 Alors que la Seleção poursuit sa quête d'un sixième titre mondial, le **logo du brésil** reste le témoin visuel de ses triomphes passés et le symbole de ses ambitions futures. Pour les millions de supporters à travers le monde, ce **brésil foot logo** est bien plus qu'un simple emblème – c'est une promesse de football spectaculaire, créatif et victorieux qui continue de faire rêver les amateurs du beau jeu.
 
 En définitive, peu d'emblèmes sportifs peuvent se targuer d'avoir atteint le statut culturel et l'impact émotionnel du **logo brésil football**. À travers ses étoiles dorées, ses couleurs vibrantes et son design distinctif, il raconte l'histoire d'un pays qui a transformé un sport en expression nationale, devenant au passage l'incarnation même de ce que le football peut offrir de plus beau et de plus inspirant.`,
-  keywords: "logo brésil, logo du brésil, logo brésil football, logo brésil foot, brésil logo, le logo du brésil, logo brésil png, logo du brésil foot, logo foot brésil, brésil foot logo",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo brésil, logo du brésil, logo brésil football, logo brésil foot, brésil logo, le logo du brésil, logo brésil png, logo du brésil foot, logo foot brésil, brésil foot logo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const botafogoLogoPost: BlogPost = {
   id: 127,
+  slug: "botafogo-logo", //
   title: "**Logo Botafogo** : Histoire et Évolution de l'Emblème Légendaire du Club Brésilien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Botafogo**, ses transformations et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire de Rio de Janeiro.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Botafogo**, ses transformations et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club légendaire de Rio de Janeiro.",
   date: "2025-04-13",
   galleryImageId: 127,
   content: `# L'Histoire Fascinante du **Logo Botafogo**
@@ -72,6 +73,6 @@ Pour des millions de supporters au Brésil et à travers le monde, le **botafogo
 
 Le **botafogo logo png** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – l'étoile solitaire brillant au-dessus des lettres BFR sur fond noir et blanc – restera un symbole intemporel du football brésilien et de l'héritage culturel de Rio de Janeiro.`,
   keywords: "botafogo logo:20, logo botafogo:20, botafogo f.c logo:10, botafogo logo png:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

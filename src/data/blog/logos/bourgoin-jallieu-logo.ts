@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bourgoinjaillieuLogoPost: BlogPost = {
   id: 128,
+  slug: "bourgoin-jallieu-logo", //
   title: "**Logo Bourgoin-Jallieu** : Histoire et Evolution de l'Emblème Isérois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Bourgoin Jallieu**, son évolution et la symbolique de cet emblème emblématique du football isérois.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Bourgoin Jallieu**, son évolution et la symbolique de cet emblème emblématique du football isérois.",
   date: "2024-04-18",
   galleryImageId: 128,
   content: `# L'Histoire Fascinante du **Logo Bourgoin Jallieu**
@@ -62,7 +63,8 @@ Le **logo bourgoin jallieu** continue d'évoluer tout en restant fidèle à ses 
 ## Conclusion
 
 Le **logo fc bourgoin jallieu** demeure un symbole fort du football isérois, incarnant à la fois l'histoire d'un club, l'identité d'une ville et les aspirations d'une communauté passionnée. À travers ses évolutions, le **logo bourgoin jallieu** continue de porter les valeurs et l'ambition d'une institution sportive ancrée dans son territoire.`,
-  keywords: "logo bourgoin jallieu:30, bourgoin jallieu logo:30, logo bourgoin jallieu foot:10, fc bourgoin jallieu logo:10, football club bourgoin jallieu logo:10, logo fc bourgoin jallieu:10",
-  category: 'logos',
-  subCategory: 'french-clubs',
+  keywords:
+    "logo bourgoin jallieu:30, bourgoin jallieu logo:30, logo bourgoin jallieu foot:10, fc bourgoin jallieu logo:10, football club bourgoin jallieu logo:10, logo fc bourgoin jallieu:10",
+  category: "logos",
+  subCategory: "french-clubs",
 };

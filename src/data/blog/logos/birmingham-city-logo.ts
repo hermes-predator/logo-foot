@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const birminghamCityLogoPost: BlogPost = {
   id: 113,
+  slug: "birmingham-city-logo", //
   title: "**Birmingham City Football Club Logo** : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Birmingham City**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Birmingham City**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
   galleryImageId: 113,
   content: `
@@ -75,7 +76,8 @@ Les **Birmingham City FC logos** sont protégés et leur utilisation est réglem
 
 Le **logo Birmingham City** reste un symbole puissant qui transcende le simple cadre sportif pour devenir un véritable emblème culturel, unissant les supporters autour d'une identité visuelle commune et reconnaissable.
   `,
-  keywords: "**birmingham city football club logo**:20, **birmingham city logo**:20, **birmingham city logo png**:20, **logo birmingham city**:20, **birmingham city fc logo**:10, **logo birmingham city fc**:10, **birmingham city fc logos**:10, **birmingham city football logo**:10, **birmingham city new logo**:10, **logo birmingham city png**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "**birmingham city football club logo**:20, **birmingham city logo**:20, **birmingham city logo png**:20, **logo birmingham city**:20, **birmingham city fc logo**:10, **logo birmingham city fc**:10, **birmingham city fc logos**:10, **birmingham city football logo**:10, **birmingham city new logo**:10, **logo birmingham city png**:10",
+  category: "logos",
+  subCategory: "club-logos",
 };

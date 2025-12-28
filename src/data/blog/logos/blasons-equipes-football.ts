@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const blasonsEquipesFootballPost: BlogPost = {
   id: 116,
+  slug: "blasons-equipe-de-foot", //
   title: "Blasons Équipe de Foot : Histoire et Symbolisme [Guide Complet 2024]",
-  excerpt: "Découvrez l'histoire fascinante des blasons équipe de foot à travers l'Europe. Analyse détaillée des symboles et designs qui définissent l'identité des clubs de football.",
+  excerpt:
+    "Découvrez l'histoire fascinante des blasons équipe de foot à travers l'Europe. Analyse détaillée des symboles et designs qui définissent l'identité des clubs de football.",
   date: "2024-04-12",
   galleryImageId: 116,
   content: `# Les Blasons Équipe de Foot : Symboles d'Histoire et d'Identité
@@ -148,7 +150,8 @@ Les **blasons équipe de foot** représentent bien plus que de simples designs g
 Qu'il s'agisse des **blasons club de foot anglais** chargés de tradition, des **blasons équipe de foot France** élégants ou des créations contemporaines d'autres ligues européennes, ces emblèmes constituent le cœur visuel du football mondial.
 
 Dans un sport en constante évolution commerciale et médiatique, les **blasons de foot** demeurent des ancrages identitaires essentiels, reliant le passé glorieux des clubs à leur futur ambitieux, tout en nourrissant la passion de millions de supporters à travers le monde.`,
-  keywords: "blason équipe de foot, blason club de foot, blason de foot, blason equipe de foot anglaise, blason equipe de foot france, blason club de foot anglais, écusson foot, emblème football, logo club foot, histoire blason football",
-  category: 'technical',
-  subCategory: 'design'
+  keywords:
+    "blason équipe de foot, blason club de foot, blason de foot, blason equipe de foot anglaise, blason equipe de foot france, blason club de foot anglais, écusson foot, emblème football, logo club foot, histoire blason football",
+  category: "technical",
+  subCategory: "design",
 };

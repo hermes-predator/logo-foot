@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const boavistaLogoPost: BlogPost = {
   id: 117, // Utiliser un ID unique qui n'est pas encore utilisé
+  slug: "boavista-logo", //
   title: "Logo Boavista FC : Histoire et Symbolisme de l'Emblème Portugais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Boavista FC : origines, évolution et signification des symboles de l'emblème du club à l'échiquier noir et blanc.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Boavista FC : origines, évolution et signification des symboles de l'emblème du club à l'échiquier noir et blanc.",
   date: "2024-08-31",
   galleryImageId: 117,
   content: `# L'Histoire Emblématique du **Logo Boavista FC**
@@ -71,7 +72,8 @@ Les futurs ajustements du **logo boavista png** devront trouver le juste équili
 Le **logo boavista fc** transcende sa simple fonction d'emblème sportif pour devenir un véritable symbole d'identité culturelle et communautaire. Son design unique et immédiatement reconnaissable a contribué à faire du Boavista FC l'un des clubs les plus distinctifs du football portugais.
 
 À travers son évolution mesurée et respectueuse des traditions, le **logo boavista** illustre parfaitement comment un symbole sportif peut préserver son essence historique tout en restant pertinent dans le monde moderne du football. Le **boavista fc logo png** continuera sans doute de représenter fièrement les valeurs et l'héritage de ce club emblématique pour les générations futures de supporters.`,
-  keywords: "boavista fc logo, boavista logo, boavista logo png, boavista fc logo png, logo boavista png, logo boavista, logo boavista fc, logo de foot boavista fc",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "boavista fc logo, boavista logo, boavista logo png, boavista fc logo png, logo boavista png, logo boavista, logo boavista fc, logo de foot boavista fc",
+  category: "logos",
+  subCategory: "club-logos",
 };

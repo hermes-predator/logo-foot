@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bochumLogoPost: BlogPost = {
   id: 119,
+  slug: "bochum-logo", //
   title: "Logo VfL Bochum : Histoire et Évolution de l'Emblème Allemand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du VfL Bochum : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du VfL Bochum : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-23",
   galleryImageId: 119,
   content: `# L'Histoire Fascinante du **Logo Bochum**
@@ -52,7 +53,8 @@ Alors que le club poursuit son développement sportif et structurel, son **logo 
 Les éventuelles futures évolutions du **logo bochum club png** s'inscriront probablement dans cette même philosophie d'équilibre entre tradition et innovation, avec le souci constant de représenter fidèlement les valeurs du club et son ancrage territorial unique dans la région industrielle de la Ruhr.
 
 Pour les décennies à venir, le **logo vfl bochum** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme du club de Bochum dans le paysage footballistique allemand.`,
-  keywords: "logo bochum, logo vfl bochum, vfl bochum logo, logo bochum club, logo bochum club png, logo de foot vfl bochum",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo bochum, logo vfl bochum, vfl bochum logo, logo bochum club, logo bochum club png, logo de foot vfl bochum",
+  category: "logos",
+  subCategory: "club-logos",
 };

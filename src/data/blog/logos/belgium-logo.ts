@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const belgiumLogoPost: BlogPost = {
   id: 109, // Using a unique ID that's not already used
+  slug: "belgique-logo", //
   title: "Logo Belgique : Histoire et Évolution de l'Emblème des Diables Rouges [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Belgique : origines, évolution et symbolisme du célèbre écusson des Diables Rouges, l'une des sélections les plus talentueuses d'Europe.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Belgique : origines, évolution et symbolisme du célèbre écusson des Diables Rouges, l'une des sélections les plus talentueuses d'Europe.",
   date: "2024-06-05",
   galleryImageId: 109,
   content: `# Logo Belgique : L'Histoire de l'Emblème des Diables Rouges
@@ -97,7 +99,8 @@ Le **logo belgique** est bien plus qu'un simple emblème sportif – c'est un sy
 L'évolution de ce logo illustre parfaitement comment un symbole national peut se moderniser tout en préservant ses racines historiques. La force du logo belge réside précisément dans cette capacité à évoluer avec son temps tout en maintenant une continuité symbolique forte, incarnée par le diable rouge qui continue de représenter fièrement les aspirations du football belge sur la scène internationale.
 
 Qu'il s'agisse du **belgique logo** traditionnel ou de ses déclinaisons modernes, l'emblème des Diables Rouges demeure l'un des designs sportifs les plus réussis et les plus reconnaissables du panorama footballistique contemporain.`,
-  keywords: "logo belgique, belgique logo, logo belgique foot, logo foot belgique, belgique foot logo, belgique logo foot, logo belgique foot png, emblème diables rouges, écusson belgique football, urbsfa logo",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo belgique, belgique logo, logo belgique foot, logo foot belgique, belgique foot logo, belgique logo foot, logo belgique foot png, emblème diables rouges, écusson belgique football, urbsfa logo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

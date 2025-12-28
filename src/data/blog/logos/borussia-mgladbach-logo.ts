@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const borussiaMonchengladbachLogoPost: BlogPost = {
   id: 125,
+  slug: "borussia-monchengladbach-logo", //
   title: "Logo Borussia Mönchengladbach : Histoire et Analyse du Design [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Borussia Mönchengladbach : origines, évolutions et signification de l'emblème du club allemand de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Borussia Mönchengladbach : origines, évolutions et signification de l'emblème du club allemand de football.",
   date: "2024-04-14",
   galleryImageId: 125,
   content: `# L'Histoire Fascinante du **Logo Borussia M'Gladbach**
@@ -84,7 +85,8 @@ Le **borussia m'gladbach logo** est bien plus qu'un simple emblème sportif - c'
 Qu'il s'agisse de sa version classique ou de sa déclinaison digitale en **borussia m'gladbach logo png**, cet emblème continuera sans doute d'accompagner le club et ses supporters dans les décennies à venir, en s'adaptant aux nouveaux supports et aux nouvelles formes de communication sans perdre son âme et sa signification profonde.
 
 Le **logo foot borussia m gladbach** reste ainsi un exemple parfait de la façon dont un symbole visuel peut transcender sa fonction première pour devenir un véritable marqueur culturel et identitaire, capable de fédérer des générations de supporters autour de valeurs et d'une passion communes.`,
-  keywords: "borussia m'gladbach logo png, borussia m gladbach logo, borussia m'gladbach logo, logo foot borussia m gladbach, logo m'gladbach png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "borussia m'gladbach logo png, borussia m gladbach logo, borussia m'gladbach logo, logo foot borussia m gladbach, logo m'gladbach png",
+  category: "logos",
+  subCategory: "club-logos",
 };

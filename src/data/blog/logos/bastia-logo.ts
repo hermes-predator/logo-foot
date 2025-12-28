@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bastiaLogoPost: BlogPost = {
   id: 104,
+  slug: "bastia-logo", //
   title: "Logo Bastia : Histoire et Design de l'Emblème Corse [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du SC Bastia : évolution, symbolisme et design de l'emblème emblématique du club de football corse.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du SC Bastia : évolution, symbolisme et design de l'emblème emblématique du club de football corse.",
   date: "2024-05-16",
   galleryImageId: 104,
   content: `# L'Histoire Fascinante du **Logo Bastia**
@@ -42,7 +43,8 @@ Dans le monde numérique, le **logo sc bastia png** continue de se propager sur 
 Si le **logo sporting club bastia** a su s'adapter aux exigences graphiques modernes, il a toujours préservé son essence et les valeurs qu'il incarne. Cette continuité visuelle est l'une des grandes forces du **logo bastia foot**, créant un pont entre les différentes générations de supporters qui se transmettent leur passion.
 
 Aujourd'hui, alors que le club poursuit son aventure sportive, le **logo de bastia** continue de briller comme un phare d'identité corse dans le paysage du football français. Plus qu'un simple emblème sportif, le **bastia logo** reste un symbole vivant d'appartenance et de fierté qui transcende largement le cadre du football.`,
-  keywords: "logo bastia, bastia logo, logo sc bastia, logo sporting club bastia, sc bastia logo, bastia logo png, logo bastia foot, logo de bastia, logo sc bastia png, sc bastia logo png, logo bastia png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo bastia, bastia logo, logo sc bastia, logo sporting club bastia, sc bastia logo, bastia logo png, logo bastia foot, logo de bastia, logo sc bastia png, sc bastia logo png, logo bastia png",
+  category: "logos",
+  subCategory: "club-logos",
 };

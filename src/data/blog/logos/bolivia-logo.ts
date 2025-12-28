@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const boliviaLogoPost: BlogPost = {
   id: 121,
+  slug: "bolivie-logo", //
   title: "**Logo Bolivie** : Histoire et Signification de l'Emblème du Football Bolivien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale bolivienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale bolivienne : des origines à aujourd'hui, évolution et signification de cet emblème sud-américain unique.",
   date: "2024-06-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -40,5 +41,6 @@ Plus qu'un simple logo, cet emblème est devenu un puissant catalyseur d'unité 
 ## Conclusion
 
 Le **bolivie logo foot** reste un symbole fort du football bolivien, incarnant à la fois l'histoire, les traditions et les ambitions futures du pays. À chaque compétition internationale, il rappelle au monde la fierté et la passion d'une nation pour le football, tout en portant les espoirs de tout un peuple vers de nouveaux succès sportifs.`,
-  keywords: "logo bolivie, bolivie foot logo, bolivie logo, bolivie logo foot, logo club football bolivie, logo de l'équipe de football bolivie, logo federation olympique bolivie, logos federation football bolivie"
+  keywords:
+    "logo bolivie, bolivie foot logo, bolivie logo, bolivie logo foot, logo club football bolivie, logo de l'équipe de football bolivie, logo federation olympique bolivie, logos federation football bolivie",
 };

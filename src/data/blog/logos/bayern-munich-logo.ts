@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bayernMunichLogoPost: BlogPost = {
   id: 106,
+  slug: "bayern-munich-logo", //
   title: "Logo Bayern Munich : Histoire et Evolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Bayern Munich : symboles, évolution et signification de l'un des emblèmes les plus reconnaissables du football mondial.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Bayern Munich : symboles, évolution et signification de l'un des emblèmes les plus reconnaissables du football mondial.",
   date: "2024-03-31",
   galleryImageId: 106,
   content: `# L'Histoire Impressionnante du **Bayern Munich Logo**
@@ -64,8 +65,8 @@ Cette capacité d'adaptation tout en préservant son essence fait du **bayern mu
 Alors que le football continue d'évoluer, le **bayern munich logo** reste un pilier stable de l'identité du club. Sa capacité à évoquer instantanément des valeurs de tradition, d'excellence et d'ambition en fait un outil de communication extrêmement puissant pour le club bavarois.
 
 Les générations futures de supporters continueront de s'identifier à ce symbole emblématique, perpétuant ainsi l'héritage visuel d'un club qui a transcendé les frontières du sport pour devenir une véritable institution culturelle mondiale.`,
-  keywords: "logo bayern munich, bayern munich logo, logo bayern, bayern logo, logo of bayern munich, logos bayern munich, logos bayern, bayern logo png, logo du bayern, fc bayern logo, logo bayern png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo bayern munich, bayern munich logo, logo bayern, bayern logo, logo of bayern munich, logos bayern munich, logos bayern, bayern logo png, logo du bayern, fc bayern logo, logo bayern png",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

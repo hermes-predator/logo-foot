@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const belarusLogoPost: BlogPost = {
   id: 107,
+  slug: "bielorussie-logo", //
   title: "**Logo Biélorussie** : L'Histoire de l'Emblème des Ailes Blanches [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale biélorusse : des origines à aujourd'hui, évolution et signification de l'emblème qui incarne la fierté du football biélorusse.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale biélorusse : des origines à aujourd'hui, évolution et signification de l'emblème qui incarne la fierté du football biélorusse.",
   date: "2025-04-27",
   galleryImageId: 107,
   category: "national-logos",

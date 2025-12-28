@@ -1,11 +1,12 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bateBorisoVLogoPost: BlogPost = {
   id: 105,
+  slug: "bate-borisov-logo", //
   title: "**BATE Borisov Logo** : Histoire et Design de l'Emblème Footballistique Biélorusse [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo BATE Borisov**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club légendaire.",
-  date: "2024-04-15", 
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo BATE Borisov**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club légendaire.",
+  date: "2024-04-15",
   galleryImageId: 105,
   content: `# Histoire du **BATE Borisov Logo**
 
@@ -74,7 +75,8 @@ Le **logo foot bate borisov** s'utilise sur différents supports :
 - Respect des proportions
 - Adaptabilité aux supports
 - Protection de la marque`,
-  keywords: "logo bate borisov, bate borisov logo, bate borisov logo png, logo fk bate borisov, logo foot bate borisov, logo png bate borisov",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo bate borisov, bate borisov logo, bate borisov logo png, logo fk bate borisov, logo foot bate borisov, logo png bate borisov",
+  category: "logos",
+  subCategory: "club-logos",
 };

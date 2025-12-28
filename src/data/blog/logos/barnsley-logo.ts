@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const barnsleyLogoPost: BlogPost = {
   id: 102,
+  slug: "barnsley-logo", //
   title: "Logo Barnsley FC : Histoire et Évolution du Symbole des Tykes [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Barnsley FC, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Barnsley FC, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
@@ -112,6 +113,5 @@ Des versions officielles du **Barnsley logo PNG** peuvent être trouvées sur le
 Oui, les couleurs rouge et blanc ont toujours été associées à Barnsley FC depuis sa fondation, et elles sont restées des éléments constants dans toutes les versions du **logo Barnsley** au fil des ans.
 `,
   keywords: "logo barnsley, barnsley logo, barnsley fc logo, logo barnsley fc, barnsley logo png",
-  readingTime: 12
+  readingTime: 12,
 };
-

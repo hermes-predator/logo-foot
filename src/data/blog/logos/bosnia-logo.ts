@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bosniaLogoPost: BlogPost = {
   id: 126,
+  slug: "bosnie-logo", //
   title: "**Logo Bosnia** : Histoire et Évolution du Blason National [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale de Bosnie-Herzégovine : des origines à aujourd'hui, signification et évolution de cet emblème balkanique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale de Bosnie-Herzégovine : des origines à aujourd'hui, signification et évolution de cet emblème balkanique.",
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,5 @@ L'équipe nationale bosnienne, arborant fièrement le **bosnia logo**, a su se f
 ## Un Symbole d'Unité et d'Espoir
 
 Plus qu'un simple emblème sportif, le **bosnia logo** est devenu un puissant vecteur d'unité nationale. Sur les maillots des Dragons, surnom de l'équipe nationale, le **bosnia soccer logo** représente les aspirations et les rêves de tout un peuple. Les succès de l'équipe nationale ont permis au **bosnia logo foot** de transcender le sport pour devenir un symbole de fierté et d'appartenance pour tous les Bosniens.`,
-  keywords: "logo bosnia, bosnia logo, bosnia logo foot, bosnia and herzegovina soccer logo, bosnia soccer logo"
+  keywords: "logo bosnia, bosnia logo, bosnia logo foot, bosnia and herzegovina soccer logo, bosnia soccer logo",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bournemouthLogoPost: BlogPost = {
   id: 129,
+  slug: "bournemouth-logo", //
   title: "Logo Bournemouth FC : Histoire et Évolution AFC Bournemouth [2024]",
-  excerpt: "Découvrez l'histoire complète du logo AFC Bournemouth : évolution, design et symbolisme de l'emblème des Cherries depuis les origines jusqu'au design moderne.",
+  excerpt:
+    "Découvrez l'histoire complète du logo AFC Bournemouth : évolution, design et symbolisme de l'emblème des Cherries depuis les origines jusqu'au design moderne.",
   date: "2024-04-09",
   galleryImageId: 129,
   content: `# L'Histoire Fascinante du **Bournemouth FC Logo**
@@ -88,7 +89,8 @@ Avec la diffusion mondiale de la Premier League, le **bournemouth fc logo** gagn
 Le **afc bournemouth logo png** est devenu un témoin visuel de l'ascension remarquable du club. Pour les générations futures de supporters, le **logo bournemouth fc** représentera toujours cette histoire inspirante de progression contre toute attente.
 
 Le **bournemouth logo** incarne parfaitement l'esprit d'un club qui a gravi les échelons du football anglais avec détermination et ambition. De ses origines modestes à son statut actuel, le **logo bournemouth** reste un symbole visuel puissant qui unit les générations de supporters des Cherries dans leur passion commune.`,
-  keywords: "bournemouth fc logo, bournemouth logo, afc bournemouth logo, logo bournemouth, logo bournemouth fc, afc bournemouth logo png, bournemouth logo png, logo afc bournemouth, logo bournemouth png, the cherries logo, premier league bournemouth logo, cherries football club logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "bournemouth fc logo, bournemouth logo, afc bournemouth logo, logo bournemouth, logo bournemouth fc, afc bournemouth logo png, bournemouth logo png, logo afc bournemouth, logo bournemouth png, the cherries logo, premier league bournemouth logo, cherries football club logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const besiktasLogoPost: BlogPost = {
   id: 112, // Using a unique ID that's not already used
+  slug: "besiktas-logo", //
   title: "Logo Beşiktaş : Histoire et Design de l'Emblème du Club Turc [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Beşiktaş : symbolisme, évolution et signification de l'emblème du club stambouliote, l'un des plus prestigieux de Turquie.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Beşiktaş : symbolisme, évolution et signification de l'emblème du club stambouliote, l'un des plus prestigieux de Turquie.",
   date: "2024-04-25",
   galleryImageId: 112,
   content: `# Histoire et Évolution du **Logo Beşiktaş** JK
@@ -88,7 +89,8 @@ Néanmoins, la force de ce **besiktas jk logo** réside dans sa continuité et s
 Le **logo besiktas** représente bien plus qu'une simple identité visuelle sportive - c'est un symbole qui incarne l'histoire, les valeurs et l'identité d'un club profondément ancré dans la culture turque. Son aigle noir majestueux continue de planer au-dessus du Bosphore comme un emblème de fierté, d'ambition et de passion pour des millions de supporters.
 
 À travers ses éléments distinctifs et sa palette chromatique intemporelle, il a su préserver son essence tout en évoluant avec son époque, témoignant de la capacité du club à honorer son héritage tout en regardant vers l'avenir.`,
-  keywords: "logo besiktas, besiktas logo, logo besiktas png, besiktas jk logo, emblème besiktas, aigle noir besiktas, kara kartal logo, écusson besiktas, bjk logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo besiktas, besiktas logo, logo besiktas png, besiktas jk logo, emblème besiktas, aigle noir besiktas, kara kartal logo, écusson besiktas, bjk logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

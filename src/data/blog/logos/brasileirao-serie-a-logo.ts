@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brasileiraoSerieALogoPost: BlogPost = {
   id: 130,
+  slug: "brasileirao-serie-a-logo", //
   title: "Logo Brasileirão Série A : Histoire et Design du Plus Grand Championnat Sud-Américain",
   date: "2025-04-25",
   galleryImageId: 130,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo du Brasileirão Série A, symbole du prestigieux championnat brésilien. Une analyse approfondie de son design unique et de son évolution au fil des années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Brasileirão Série A, symbole du prestigieux championnat brésilien. Une analyse approfondie de son design unique et de son évolution au fil des années.",
   content: `# Logo Brasileirão Série A : Histoire et Design du Plus Grand Championnat Sud-Américain
 
 Le **Brasileirão Série A logo** représente bien plus qu'une simple identité visuelle pour le championnat brésilien. Il incarne l'essence même du football auriverde, sa passion débordante et son style de jeu unique. Ce symbole est devenu au fil des années une véritable icône du football sud-américain, reconnaissable dans le monde entier.
@@ -27,5 +28,6 @@ L'influence du **Brasileirão Série A logo** dépasse largement les frontières
 ## Conclusion
 
 Le **logo do Brasileirão Série A** représente parfaitement l'évolution et l'ambition du football brésilien. Son design sophistiqué et sa symbolique profonde en font un exemple remarquable d'identité visuelle sportive. Il continue d'incarner les valeurs et la passion qui font la renommée du football brésilien à travers le monde.`,
-  keywords: "brasileirão série a logo, brasileirão série a logo png, logo do brasileirão série a, championnat brésilien, football brésilien, design logo football, identité visuelle football"
+  keywords:
+    "brasileirão série a logo, brasileirão série a logo png, logo do brasileirão série a, championnat brésilien, football brésilien, design logo football, identité visuelle football",
 };

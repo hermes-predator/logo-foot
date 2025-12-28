@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const boltonWanderersLogoPost: BlogPost = {
   id: 123,
+  slug: "bolton-wanderers-logo", //
   title: "**Bolton Wanderers Logo** : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Bolton Wanderers logo**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Bolton Wanderers logo**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
   galleryImageId: 123,
   content: `
@@ -76,6 +77,6 @@ Les designs du **logo Bolton Wanderers** sont protégés et leur utilisation est
 Le **Bolton Wanderers logo** reste un symbole puissant qui transcende le simple cadre sportif pour devenir un véritable emblème culturel, unissant les supporters autour d'une identité visuelle commune et reconnaissable. À travers ses évolutions, le **logo Bolton Wanderers** a su conserver l'essence du club tout en s'adaptant aux exigences modernes du marketing sportif et de la communication digitale.
   `,
   keywords: "**bolton wanderers logo**:20, **logo bolton wanderers**:20, **bolton wanderers logo png**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const benficaLogoPost: BlogPost = {
   id: 110,
+  slug: "benfica-lisbonne-logo", //
   title: "Logo Benfica : Histoire et Symbolisme de l'Aigle Glorieux [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Benfica, son évolution au fil du temps et la signification de l'aigle emblématique qui représente fièrement le club portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Benfica, son évolution au fil du temps et la signification de l'aigle emblématique qui représente fièrement le club portugais.",
   date: "2024-04-26",
   galleryImageId: 110,
   content: `# L'Histoire Fascinante du **Logo Benfica**
@@ -62,7 +63,8 @@ Alors que le club continue d'écrire son histoire au XXIe siècle, le **benfica 
 Les débats entre tradition et modernité qui entourent souvent l'évolution des logos de clubs de football touchent également le **logo de benfica**. Ces discussions passionnées témoignent de l'importance capitale que revêt cette identité visuelle pour l'ensemble de la communauté benfiquiste.
 
 À l'heure où le Sport Lisboa e Benfica poursuit sa quête d'excellence sur les terrains d'Europe, le **benfica logo** continue d'incarner les valeurs fondamentales qui ont fait la réputation du club : tradition, ambition, passion et excellence. Ces principes, profondément ancrés dans l'ADN du club, continueront sans aucun doute de se refléter dans les futures itérations du **logo benfica lisbonne**, quel que soit leur design.`,
-  keywords: "logo benfica, benfica logo, benfica logos, logos benfica, logo du benfica, benfica logo png, logo benfica lisbonne, logo benfica png, logo de benfica, benfica fc logo, benfica lisbonne logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo benfica, benfica logo, benfica logos, logos benfica, logo du benfica, benfica logo png, logo benfica lisbonne, logo benfica png, logo de benfica, benfica fc logo, benfica lisbonne logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

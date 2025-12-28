@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bodoGlimtLogoPost: BlogPost = {
   id: 120, // Unique ID for this new article
+  slug: "bodo-glimt-logo", //
   title: "Bodø/Glimt Logo : Histoire et Signification de l'Emblème Norvégien [2024]",
   date: "2025-04-11",
   galleryImageId: 120,
   category: "logos",
   subCategory: "other-european", // European clubs outside the top 5 leagues
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo Bodø/Glimt, emblème du club norvégien. Une analyse complète des couleurs jaune et noir et des symboles qui définissent l'identité visuelle du champion de Norvège.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo Bodø/Glimt, emblème du club norvégien. Une analyse complète des couleurs jaune et noir et des symboles qui définissent l'identité visuelle du champion de Norvège.",
   content: `# L'Histoire Fascinante du **Bodo Glimt Logo**
 
 Le **bodo glimt logo** est devenu ces dernières années l'un des emblèmes les plus reconnaissables du football nordique, symbolisant l'ascension remarquable d'un club norvégien sur la scène européenne. Dans cet article, nous explorerons en profondeur l'histoire, la signification et l'évolution de ce blason distinctif aux couleurs jaune et noir qui incarne l'identité du FK Bodø/Glimt.

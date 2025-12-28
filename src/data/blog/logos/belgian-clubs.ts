@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const belgianClubsPost: BlogPost = {
   id: 108,
+  slug: "logos-football-belge", //
   title: "Logos du Football Belge : Design et Histoire [2024]",
-  excerpt: "Explorez l'histoire des logos du football belge. D'Anderlecht au Club Bruges, découvrez l'évolution des emblèmes de la Jupiler Pro League.",
+  excerpt:
+    "Explorez l'histoire des logos du football belge. D'Anderlecht au Club Bruges, découvrez l'évolution des emblèmes de la Jupiler Pro League.",
   date: "2024-03-12",
   galleryImageId: 108,
   content: `Design et Tradition en Belgique
@@ -80,7 +81,8 @@ Tendances Pro League
 - AR experiences
 - Métaverse ready
 - Digital merchandise`,
-  keywords: "logo belgique foot, logos pro league, emblèmes foot belge, écusson club belge, design foot belge, logos clubs belges",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo belgique foot, logos pro league, emblèmes foot belge, écusson club belge, design foot belge, logos clubs belges",
+  category: "logos",
+  subCategory: "club-logos",
 };

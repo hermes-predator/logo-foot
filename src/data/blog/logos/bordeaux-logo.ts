@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bordeauxLogoPost: BlogPost = {
   id: 124, // Using an ID that's not yet used in the existing posts
+  slug: "bordeaux-girondins-logo", //
   title: "Logo Girondins de Bordeaux : Histoire du Scapulaire Iconique [2024]",
-  excerpt: "Découvrez l'histoire complète du logo des Girondins de Bordeaux : origines, évolutions et signification du célèbre scapulaire qui symbolise ce club historique du football français.",
+  excerpt:
+    "Découvrez l'histoire complète du logo des Girondins de Bordeaux : origines, évolutions et signification du célèbre scapulaire qui symbolise ce club historique du football français.",
   date: "2024-05-11",
   galleryImageId: 124,
   content: `# L'Histoire Fascinante du **Logo Bordeaux**
@@ -96,7 +97,8 @@ Dans un monde où de nombreux clubs cèdent à la tentation de simplifier radica
 Le **bordeaux logo** représente bien plus qu'une simple identité visuelle pour un club de football. Il incarne l'héritage d'une institution sportive centenaire, l'identité d'une région fière de son histoire et la passion de générations de supporters. À travers ses évolutions successives, le **girondins de bordeaux logo** a su préserver son essence tout en s'adaptant aux changements du monde du football et de la société.
 
 Alors que le club continue d'écrire son histoire, parfois tumultueuse mais toujours passionnante, son **logo des girondins de bordeaux** demeure un repère stable et rassurant pour tous ceux qui portent les couleurs marine et blanc dans leur cœur. Comme un phare dans la nuit, le **girondin de bordeaux logo** continue de briller, portant les valeurs d'excellence, d'élégance et de tradition qui ont toujours caractérisé ce grand club du football français.`,
-  keywords: "bordeaux logo, logo bordeaux, logo girondins de bordeaux, girondins de bordeaux logo, logo des girondins de bordeaux, logos girondins de bordeaux, girondin de bordeaux logo, logo girondin de bordeaux, logo bordeaux foot, logo foot bordeaux, logo de bordeaux, bordeaux fc logo, bordeaux foot logo, bordeaux logo png, bordeaux logo foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "bordeaux logo, logo bordeaux, logo girondins de bordeaux, girondins de bordeaux logo, logo des girondins de bordeaux, logos girondins de bordeaux, girondin de bordeaux logo, logo girondin de bordeaux, logo bordeaux foot, logo foot bordeaux, logo de bordeaux, bordeaux fc logo, bordeaux foot logo, bordeaux logo png, bordeaux logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

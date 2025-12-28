@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const blackpoolLogoPost: BlogPost = {
   id: 115,
+  slug: "blackpool-logo", //
   title: "**Blackpool FC Logo** : Histoire et Évolution de l'Emblème des Tangerines [2024]",
   date: "2025-04-13",
   galleryImageId: 115,
   category: "logos",
   subCategory: "club-logos",
-  excerpt: "Découvrez l'histoire fascinante du **logo Blackpool**. Analyse détaillée de l'emblème emblématique du club anglais, symboles, couleurs et évolution du **Blackpool logo PNG** au fil des ans.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Blackpool**. Analyse détaillée de l'emblème emblématique du club anglais, symboles, couleurs et évolution du **Blackpool logo PNG** au fil des ans.",
   content: `# L'Histoire Fascinante du **Blackpool FC Logo**
 
 ## Introduction au **Logo Blackpool**
@@ -98,5 +99,6 @@ Quelle que soit l'évolution future, certains éléments du **Blackpool logo PNG
 Le **Blackpool FC logo** est bien plus qu'un simple dessin ou emblème - c'est un symbole qui incarne l'histoire, les valeurs et l'identité d'un club profondément ancré dans sa communauté. Le **logo Blackpool PNG** sert de point de ralliement pour les supporters et de représentation visuelle de la fierté locale.
 
 À travers ses différentes itérations, le **Blackpool football club logo** a évolué tout en conservant son essence, témoignant de la capacité du club à s'adapter aux changements tout en honorant ses racines. Que ce soit sur les maillots des joueurs, les drapeaux des supporters ou les produits dérivés officiels, le **logo Blackpool** continue de jouer un rôle central dans l'identité visuelle et émotionnelle de ce club historique du football anglais.`,
-  keywords: "blackpool fc logo, blackpool logo, blackpool logo png, logo blackpool, blackpool football club logo, logo blackpool fc, blackpool fc design logo, logo equipe de foot blackpool, tangerines logo, logo football club, blackpool fc badge, english football club logos",
+  keywords:
+    "blackpool fc logo, blackpool logo, blackpool logo png, logo blackpool, blackpool football club logo, logo blackpool fc, blackpool fc design logo, logo equipe de foot blackpool, tangerines logo, logo football club, blackpool fc badge, english football club logos",
 };

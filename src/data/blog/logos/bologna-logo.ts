@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bolognaLogoPost: BlogPost = {
   id: 122,
+  slug: "bologne-logo", //
   title: "Logo Bologne : Histoire et Évolution de l'Emblème du FC Bologna [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Bologne (Bologna FC) : origines, évolution et signification de l'emblème emblématique du club italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Bologne (Bologna FC) : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-05",
   galleryImageId: 122,
   content: `# L'Histoire Fascinante du **Logo Bologne**
@@ -59,7 +60,8 @@ Pour les nouvelles générations de supporters, le **logo bologne** représente 
 Le **logo bologna calcio** incarne parfaitement cette dualité entre respect de la tradition et ouverture vers la modernité qui caractérise les clubs de football historiques. En préservant les éléments emblématiques qui font sa spécificité tout en s'adaptant aux exigences du football contemporain, le **logo de foot bologne** démontre qu'il est possible d'évoluer sans renier ses origines.
 
 Dans les années à venir, le **bologna logo png** continuera sans doute d'évoluer subtilement, accompagnant le développement sportif et institutionnel du club. Ces futures adaptations s'inscriront probablement dans la continuité d'une identité visuelle qui a su, au fil des décennies, trouver le parfait équilibre entre tradition et innovation.`,
-  keywords: "logo bologne, bologna fc logo, bologna logo, bologna logo png, bologne logo, logo bologna, logo bologna fc, bologne logo png, logo bologna calcio, logo bologne fc, logo bologne png, bologne fc logo, logo bologne foot, logo de foot bologne",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo bologne, bologna fc logo, bologna logo, bologna logo png, bologne logo, logo bologna, logo bologna fc, bologne logo png, logo bologna calcio, logo bologne fc, logo bologne png, bologne fc logo, logo bologne foot, logo de foot bologne",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const blackburnRoversLogoPost: BlogPost = {
   id: 114,
+  slug: "blackburn-rovers-logo", //
   title: "**Logo Blackburn Rovers FC** : Histoire et Evolution de l'Emblème des Blues [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Blackburn Rovers**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Blackburn Rovers**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 114,
   content: `# **Logo Blackburn Rovers FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
@@ -47,7 +48,8 @@ Le **logo Blackburn Rovers** fait l'objet de nombreuses applications et adaptati
 ## Conclusion
 
 L'emblème du **Blackburn Rovers FC** illustre remarquablement comment un logo sportif peut évoluer organiquement tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire l'histoire du club.`,
-  keywords: "blackburn logo:20, blackburn rovers fc logo:20, blackburn rovers logo:20, logo blackburn:20, logo blackburn rovers:20, blackburn club foot logo:10, blackburn foot logo:10, blackburn rovers new logo:10, logo blackburn fc:10, logo de foot blackburn:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "blackburn logo:20, blackburn rovers fc logo:20, blackburn rovers logo:20, logo blackburn:20, logo blackburn rovers:20, blackburn club foot logo:10, blackburn foot logo:10, blackburn rovers new logo:10, logo blackburn fc:10, logo de foot blackburn:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

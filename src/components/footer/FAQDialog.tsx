@@ -71,8 +71,10 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
                   <AccordionContent>
-                    Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
-                    Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
+                    Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne.
+                    <br /><br />
+                    Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes.
+                    <br /><br />
                     Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
                     <br /><br />
                     En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.
@@ -152,8 +154,10 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
             <AccordionItem value="item-1">
               <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
               <AccordionContent>
-                Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne. 
-                Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes. 
+                Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne.
+                <br /><br />
+                Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes.
+                <br /><br />
                 Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
                 <br /><br />
                 En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.

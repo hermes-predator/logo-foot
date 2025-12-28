@@ -72,9 +72,9 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                   <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
                   <AccordionContent>
                     Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne.
-                    <br /><br />
+                    <br />
                     Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes.
-                    <br /><br />
+                    <br />
                     Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
                     <br /><br />
                     En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.
@@ -83,42 +83,57 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
                   <AccordionContent>
-                    C'est simple et instantané ! Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement. 
+                    C'est simple et instantané !
+                    <br />
+                    Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement.
+                    <br />
                     Le fichier ZIP est disponible immédiatement.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
                   <AccordionContent>
-                    Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant : 
-                    Les logos des clubs de football de plus de 60 pays • Les logos des principales compétitions • Les drapeaux nationaux • Les logos des bookmakers et bien plus... 
+                    Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
+                    <br />
+                    • Les logos des clubs de football de plus de 60 pays
+                    <br />
+                    • Les logos des principales compétitions
+                    <br />
+                    • Les drapeaux nationaux
+                    <br />
+                    • Les logos des bookmakers et bien plus...
+                    <br /><br />
                     Tous les fichiers sont en PNG avec fond transparent, parfaitement optimisés pour une utilisation web.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger>Comment puis-je utiliser ces logos ?</AccordionTrigger>
                   <AccordionContent>
-                    Les logos peuvent être utilisés pour vos projets web personnels. Notre pack est spécialement 
-                    conçu pour une utilisation web avec des fichiers optimisés et homogènes. Vous bénéficiez 
-                    d'une collection complète et professionnelle, prête à l'emploi.
+                    Les logos peuvent être utilisés pour vos projets web personnels.
+                    <br />
+                    Notre pack est spécialement conçu pour une utilisation web avec des fichiers optimisés et homogènes.
+                    <br />
+                    Vous bénéficiez d'une collection complète et professionnelle, prête à l'emploi.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
                   <AccordionTrigger>Un problème ? Nous sommes là pour vous aider</AccordionTrigger>
                   <AccordionContent>
-                    Notre service client est disponible 7j/7 pour vous accompagner. En cas de question ou de 
-                    difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com. Nous vous 
-                    répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
+                    Notre service client est disponible 7j/7 pour vous accompagner.
+                    <br />
+                    En cas de question ou de difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com.
+                    <br />
+                    Nous vous répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
                   <AccordionTrigger>Comment obtenir ma facture ou preuve d'achat ?</AccordionTrigger>
                   <AccordionContent>
-                    Un reçu au format HTML ou PDF est automatiquement généré après votre paiement et 
-                    disponible sur la page de confirmation. Vous pouvez le télécharger immédiatement. 
-                    Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous 
-                    à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons 
-                    dans un délai de 48h.
+                    Un reçu au format HTML ou PDF est automatiquement généré après votre paiement et disponible sur la page de confirmation.
+                    <br />
+                    Vous pouvez le télécharger immédiatement.
+                    <br />
+                    Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons dans un délai de 48h.
                   </AccordionContent>
                 </AccordionItem>
             </Accordion>
@@ -155,9 +170,9 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
               <AccordionTrigger>Le paiement est-il sécurisé ?</AccordionTrigger>
               <AccordionContent>
                 Absolument ! Nous utilisons SumUp, l'un des leaders européens du paiement en ligne.
-                <br /><br />
+                <br />
                 Toutes les transactions sont cryptées et sécurisées selon les normes bancaires les plus strictes.
-                <br /><br />
+                <br />
                 Vous pouvez payer en toute confiance avec votre carte bancaire ou Google Pay.
                 <br /><br />
                 En cas de doutes persistants, vous pouvez aussi utiliser une carte éphémère à usage unique.
@@ -166,42 +181,57 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
             <AccordionItem value="item-2">
               <AccordionTrigger>Comment se déroule le téléchargement ?</AccordionTrigger>
               <AccordionContent>
-                C'est simple et instantané ! Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement. 
+                C'est simple et instantané !
+                <br />
+                Après votre paiement, vous êtes redirigé vers la page d'après-paiement contenant le lien de téléchargement.
+                <br />
                 Le fichier ZIP est disponible immédiatement.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
               <AccordionContent>
-                Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant : 
-                Les logos des clubs de football de plus de 60 pays • Les logos des principales compétitions • Les drapeaux nationaux • Les logos des bookmakers et bien plus... 
+                Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
+                <br />
+                • Les logos des clubs de football de plus de 60 pays
+                <br />
+                • Les logos des principales compétitions
+                <br />
+                • Les drapeaux nationaux
+                <br />
+                • Les logos des bookmakers et bien plus...
+                <br /><br />
                 Tous les fichiers sont en PNG avec fond transparent, parfaitement optimisés pour une utilisation web.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>Comment puis-je utiliser ces logos ?</AccordionTrigger>
               <AccordionContent>
-                Les logos peuvent être utilisés pour vos projets web personnels. Notre pack est spécialement 
-                conçu pour une utilisation web avec des fichiers optimisés et homogènes. Vous bénéficiez 
-                d'une collection complète et professionnelle, prête à l'emploi.
+                Les logos peuvent être utilisés pour vos projets web personnels.
+                <br />
+                Notre pack est spécialement conçu pour une utilisation web avec des fichiers optimisés et homogènes.
+                <br />
+                Vous bénéficiez d'une collection complète et professionnelle, prête à l'emploi.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger>Un problème ? Nous sommes là pour vous aider</AccordionTrigger>
               <AccordionContent>
-                Notre service client est disponible 7j/7 pour vous accompagner. En cas de question ou de 
-                difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com. Nous vous 
-                répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
+                Notre service client est disponible 7j/7 pour vous accompagner.
+                <br />
+                En cas de question ou de difficulté avec votre téléchargement, contactez-nous à contact@logo-foot.com.
+                <br />
+                Nous vous répondrons dans les plus brefs délais pour vous assurer une expérience parfaite.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
               <AccordionTrigger>Comment obtenir ma facture ou preuve d'achat ?</AccordionTrigger>
               <AccordionContent>
-                Un reçu au format HTML ou PDF est automatiquement généré après votre paiement et 
-                disponible sur la page de confirmation. Vous pouvez le télécharger immédiatement. 
-                Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous 
-                à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons 
-                dans un délai de 48h.
+                Un reçu au format HTML ou PDF est automatiquement généré après votre paiement et disponible sur la page de confirmation.
+                <br />
+                Vous pouvez le télécharger immédiatement.
+                <br />
+                Si vous avez besoin d'une facture formelle ou d'une copie de votre reçu, contactez-nous à contact@logo-foot.com en précisant la date de votre achat et nous vous l'enverrons dans un délai de 48h.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

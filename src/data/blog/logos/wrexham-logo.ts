@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wrexhamLogoPost: BlogPost = {
   id: 602,
+  slug: "wrexham-logo", //
   title: "Logo Wrexham AFC : Histoire et Design du Symbole du Club Gallois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Wrexham AFC, son évolution à travers les années et la signification derrière le design emblématique du club gallois le plus ancien du pays.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Wrexham AFC, son évolution à travers les années et la signification derrière le design emblématique du club gallois le plus ancien du pays.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
@@ -98,6 +100,7 @@ Contrairement à certains autres clubs gallois qui ont adopté des designs plus 
 ### Le **Wrexham logo** est-il protégé par des droits d'auteur?
 Oui, le **Wrexham logo** est une marque déposée et protégée, particulièrement depuis que le club a gagné en popularité internationale.
 `,
-  keywords: "logo wrexham, wrexham logo, wrexham new logo, logo design wrexham, wrexham, logo, football, design, dragon, pays de galles",
-  readingTime: 12
+  keywords:
+    "logo wrexham, wrexham logo, wrexham new logo, logo design wrexham, wrexham, logo, football, design, dragon, pays de galles",
+  readingTime: 12,
 };

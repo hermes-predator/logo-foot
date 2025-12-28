@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const worldCupPost: BlogPost = {
   id: 601,
+  slug: "world-cup-logo", //
   title: "Logo Coupe du Monde : Histoire et Évolution des Emblèmes de la FIFA [2024]",
-  excerpt: "Découvrez l'histoire fascinante des logos de la Coupe du Monde de football : leur évolution, leur symbolisme et comment ils reflètent la culture des pays hôtes à travers les décennies.",
+  excerpt:
+    "Découvrez l'histoire fascinante des logos de la Coupe du Monde de football : leur évolution, leur symbolisme et comment ils reflètent la culture des pays hôtes à travers les décennies.",
   date: "2024-04-22",
   galleryImageId: 601,
   content: `# L'Histoire Fascinante des **Logos Coupe du Monde** de Football
@@ -66,7 +67,8 @@ Les **logos de la coupe du monde de football** sont bien plus que de simples mar
 À travers ces emblèmes, nous voyons non seulement l'évolution des techniques de design, mais aussi les transformations des valeurs et aspirations qui entourent le football. De simples identifiants, les **logos coupe du monde fifa** sont devenus des œuvres culturelles qui condensent les rêves et émotions de millions de fans à travers le monde.
 
 Alors que nous anticipons les futures éditions du tournoi, les **logos world cup** continueront certainement d'évoluer, intégrant nouvelles technologies et sensibilités culturelles, tout en préservant cette capacité unique à unir les passionnés de football autour d'un symbole visuel partagé qui transcende langues et frontières.`,
-  keywords: "logos coupe du monde, logos world cup, logos coupe du monde football, logos world cup football, logos de la coupe du monde, logo world cup 1970, logo coupe du monde fifa, logos mondial football, logos coupe monde, logos de coupe du monde, logo coupe monde 1982, logo coupe du monde 1994, logo world cup usa, logo coupe du monde 1998, logo france 98, logos coupes du monde, logos mondiaux de football, logo world cup 2002, logo coupe du monde de football, logo coupe monde foot, logos mondial, logo world cup 2014, logo coupe du monde russie, logos coupe du monde de foot, logo coupe du monde 2022, logo qatar 2022, logos coupes du monde de football, logo world cup 2026, logos de coupe du monde fifa, logo des coupes du monde, logos coupe du monde de football, logos coupe monde de foot, logo france coupe du monde, logo de la coupe du monde, logos world cup fifa, logos de mondial, logos coupe du monde football fifa, logos coupes du monde, logos world cup",
-  category: 'logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logos coupe du monde, logos world cup, logos coupe du monde football, logos world cup football, logos de la coupe du monde, logo world cup 1970, logo coupe du monde fifa, logos mondial football, logos coupe monde, logos de coupe du monde, logo coupe monde 1982, logo coupe du monde 1994, logo world cup usa, logo coupe du monde 1998, logo france 98, logos coupes du monde, logos mondiaux de football, logo world cup 2002, logo coupe du monde de football, logo coupe monde foot, logos mondial, logo world cup 2014, logo coupe du monde russie, logos coupe du monde de foot, logo coupe du monde 2022, logo qatar 2022, logos coupes du monde de football, logo world cup 2026, logos de coupe du monde fifa, logo des coupes du monde, logos coupe du monde de football, logos coupe monde de foot, logo france coupe du monde, logo de la coupe du monde, logos world cup fifa, logos de mondial, logos coupe du monde football fifa, logos coupes du monde, logos world cup",
+  category: "logos",
+  subCategory: "competition-logos",
 };

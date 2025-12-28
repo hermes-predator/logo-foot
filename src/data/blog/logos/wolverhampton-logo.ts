@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wolverhamptonLogoPost: BlogPost = {
   id: 599, // Using a unique ID that isn't already used
+  slug: "wolverhampton-logo", //
   title: "Logo Wolverhampton : Histoire et Design de l'Emblème des Wolves [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Wolverhampton Wanderers : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Wolverhampton Wanderers : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-14",
   galleryImageId: 599,
   content: `# L'Histoire Fascinante du **Logo Wolverhampton**
@@ -52,7 +53,8 @@ Le défi pour les futures versions du **logo wolverhampton fc** sera de mainteni
 Le **logo wolverhampton** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **wolverhampton wanderers fc logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **logo de wolverhampton** continuera de faire briller les couleurs or et noir des Wolves sur les terrains de football et au-delà.`,
-  keywords: "logo wolverhampton, logo de wolverhampton, logo wolverhampton png, logo wolverhampton wanderers, wolverhampton fc logo, wolverhampton logo, wolverhampton logo png, wolverhampton wanderers fc logo, wolverhampton wanderers logo, logo wolverhampton fc, wolverhampton wanderers football club logo, wolverhampton wanderers logo png, logo foot wolverhampton, wolverhampton foot logo, wolverhampton football club logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo wolverhampton, logo de wolverhampton, logo wolverhampton png, logo wolverhampton wanderers, wolverhampton fc logo, wolverhampton logo, wolverhampton logo png, wolverhampton wanderers fc logo, wolverhampton wanderers logo, logo wolverhampton fc, wolverhampton wanderers football club logo, wolverhampton wanderers logo png, logo foot wolverhampton, wolverhampton foot logo, wolverhampton football club logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

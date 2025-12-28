@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wycombeWanderersLogoPost: BlogPost = {
   id: 603,
+  slug: "wycombe-wanderers-logo", //
   title: "**Wycombe Wanderers Logo** : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Wycombe Wanderers**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Wycombe Wanderers**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
   galleryImageId: 603,
   content: `
@@ -76,6 +77,6 @@ Les designs du **logo wycombe wanderers** sont protégés et leur utilisation es
 Le **wycombe wanderers logo** reste un symbole puissant qui transcende le simple cadre sportif pour devenir un véritable emblème culturel, unissant les supporters autour d'une identité visuelle commune et reconnaissable. À travers ses évolutions, le **wycombe wanderers fc logo** a su conserver l'essence du club tout en s'adaptant aux exigences modernes du marketing sportif et de la communication digitale.
   `,
   keywords: "**wycombe wanderers logo**:20, **wycombe wanderers fc logo**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const youngBoysLogoPost: BlogPost = {
   id: 604, // ID unique pour cet article
+  slug: "young-boys-logo", //
   title: "BSC Young Boys Logo: Histoire et Évolution de l'Emblème du Club Suisse [2024]",
   date: "2025-04-11",
   galleryImageId: 604,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante du logo BSC Young Boys, l'emblème emblématique du club suisse. Apprenez comment le blason des Young Boys s'est transformé au fil des années et ce que ses symboles représentent pour l'identité du club.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo BSC Young Boys, l'emblème emblématique du club suisse. Apprenez comment le blason des Young Boys s'est transformé au fil des années et ce que ses symboles représentent pour l'identité du club.",
   content: `# Histoire et Évolution du **Logo BSC Young Boys**
 
 Le **young boys logo** est l'un des emblèmes les plus reconnaissables du football suisse, représentant un club à l'histoire riche et aux traditions bien ancrées. Dans cet article approfondi, nous allons explorer l'évolution, la signification et l'influence culturelle du **logo young boys**, symbole d'excellence footballistique helvétique depuis plus d'un siècle.
@@ -166,5 +167,6 @@ Le **logo young boys** représente bien plus qu'une simple identité visuelle sp
 La puissance évocatrice du **logo foot young boys berne**, sa reconnaissance immédiate et sa charge symbolique en font un exemple remarquable de design d'emblème sportif réussi, capable de susciter un fort sentiment d'appartenance et de fierté parmi les supporters tout en servant efficacement les objectifs commerciaux et médiatiques du club.
 
 Alors que le BSC Young Boys continue d'écrire son histoire dans le football suisse et européen, son emblème continuera sans doute d'évoluer subtilement, mais restera fondamentalement ce symbole jaune et noir distinctif qui fait battre le cœur des supporters et incarne l'âme de tout un club, de toute une ville, et d'une fière tradition footballistique suisse.`,
-  keywords: "young boys logo, logo young boys, young boys logo png, logo bsc young boys, logo club young boys, logo foot young boys berne, logo png young boys berne, young boys berne logo png, young boys fc logo",
+  keywords:
+    "young boys logo, logo young boys, young boys logo png, logo bsc young boys, logo club young boys, logo foot young boys berne, logo png young boys berne, young boys berne logo png, young boys fc logo",
 };

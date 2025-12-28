@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const worldCupLogoPost: BlogPost = {
   id: 600,
+  slug: "coupe-du-monde-logo", //
   title: "Logo Coupe du Monde : Histoire et Évolution de l'Emblème du Football [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la Coupe du Monde de football : des origines à 2026, évolution et signification de l'emblème emblématique du tournoi mondial.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la Coupe du Monde de football : des origines à 2026, évolution et signification de l'emblème emblématique du tournoi mondial.",
   date: "2024-05-20",
   galleryImageId: 600,
   content: `# L'Histoire Fascinante du **Logo Coupe du Monde**
@@ -51,6 +53,6 @@ Alors que le tournoi poursuit son développement et son expansion, le **logo cou
 Les futures évolutions du **logo coupe du monde 2026** s'inscriront probablement dans cette même philosophie d'équilibre entre tradition et innovation, avec le souci constant de représenter fidèlement les valeurs du tournoi et sa dimension véritablement internationale qui fait sa spécificité et sa grandeur incomparable.
 
 Pour les décennies à venir, **le logo de la coupe du monde 2026** restera un symbole fédérateur, capable de traverser les générations en s'adaptant aux nouveaux supports et aux nouvelles formes de communication, tout en conservant cette essence unique qui fait la spécificité et le charme de l'événement sportif le plus suivi de la planète.`,
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

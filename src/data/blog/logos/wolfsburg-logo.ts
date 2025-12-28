@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wolfsburgLogoPost: BlogPost = {
   id: 598,
+  slug: "wolfsburg-logo", //
   title: "Logo Wolfsburg : Histoire et Design du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire et la signification du logo VfL Wolfsburg, emblème iconique du club de Bundesliga. Analyse complète du design et de l'évolution de cet écusson distinctif.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo VfL Wolfsburg, emblème iconique du club de Bundesliga. Analyse complète du design et de l'évolution de cet écusson distinctif.",
   date: "2024-04-20",
   galleryImageId: 598,
   content: `# Histoire et Signification du Logo Wolfsburg
@@ -71,7 +72,8 @@ Le **logo wolfsburg** incarne parfaitement l'identité d'un club qui a su se con
 Alors que le VfL Wolfsburg continue d'écrire son histoire dans le football allemand et européen, son **vfl wolfsburg logo png** continuera d'évoluer tout en préservant les éléments qui en font un symbole reconnaissable et apprécié par ses supporters.
 
 Dans un monde où l'identité visuelle joue un rôle de plus en plus important dans la stratégie globale des clubs de football, le **wolfsburg logo png** représente un exemple réussi d'équilibre entre modernité, clarté et fidélité aux valeurs fondamentales du club qu'il représente.`,
-  keywords: "logo wolfsburg, wolfsburg logo, logo vfl wolfsburg, logo wolfsburg png, vfl wolfsburg logo, vfl wolfsburg logo png, wolfsburg logo png, logo de wolfsburg, logo png wolfsburg, logo foot wolfsburg transparent",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo wolfsburg, wolfsburg logo, logo vfl wolfsburg, logo wolfsburg png, vfl wolfsburg logo, vfl wolfsburg logo png, wolfsburg logo png, logo de wolfsburg, logo png wolfsburg, logo foot wolfsburg transparent",
+  category: "logos",
+  subCategory: "club-logos",
 };

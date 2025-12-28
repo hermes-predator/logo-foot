@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wiganAthleticLogoPost: BlogPost = {
   id: 594,
+  slug: "wigan-athletic-logo", //
   title: "Logo Wigan Athletic : Histoire et Évolution de l'Emblème des Latics [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Wigan Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Wigan Athletic, son évolution au fil des années et la signification des éléments emblématiques qui composent l'identité visuelle de ce club historique d'Angleterre.",
   date: "2024-04-13",
   category: "logos",
   subCategory: "club-logos",
@@ -115,6 +116,7 @@ Des versions officielles du **wigan logo png** peuvent être trouvées sur le si
 ### Le **logo wigan athletic** a-t-il toujours comporté les couleurs bleu et blanc?
 Oui, les couleurs bleu et blanc ont toujours été associées à Wigan Athletic depuis sa fondation, et elles sont restées des éléments constants dans toutes les versions du **logo wigan** au fil des ans.
 `,
-  keywords: "logo wigan, logo wigan athletic, wigan athletic logo, wigan logo, wigan athletic logo png, wigan logo png, logo de foot wigan, logo de foot wigan en angleterre, logo wigan png, wigan club foot logo, wigan logo foot",
-  readingTime: 12
+  keywords:
+    "logo wigan, logo wigan athletic, wigan athletic logo, wigan logo, wigan athletic logo png, wigan logo png, logo de foot wigan, logo de foot wigan en angleterre, logo wigan png, wigan club foot logo, wigan logo foot",
+  readingTime: 12,
 };

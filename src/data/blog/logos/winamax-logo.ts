@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const winamaxLogoPost: BlogPost = {
   id: 596,
+  slug: "winamax-logo", //
   title: "Logo Winamax : Histoire et Analyse du Design de la Marque de Paris Sportifs [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Winamax, comment la célèbre marque de paris sportifs a développé son identité visuelle distinctive au fil des années.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Winamax, comment la célèbre marque de paris sportifs a développé son identité visuelle distinctive au fil des années.",
   date: "2024-04-12",
   galleryImageId: 596,
   content: `L'Histoire Fascinante du Logo Winamax
@@ -83,7 +84,8 @@ Le logo Winamax représente un cas d'étude fascinant en matière de design de m
 À travers sa présence croissante dans l'univers du football, le logo rouge emblématique est devenu un élément familier du paysage sportif français. Sa conception équilibrée entre simplicité et caractère distinctif lui permet de se démarquer tout en s'intégrant harmonieusement dans les divers contextes de son utilisation.
 
 Dans un secteur où la confiance et la reconnaissance instantanée sont cruciales, Winamax a su créer une identité visuelle qui incarne parfaitement ses valeurs et soutient efficacement sa stratégie de développement. Le logo Winamax illustre parfaitement comment un design bien pensé peut devenir un véritable actif stratégique pour une marque ambitieuse.`,
-  keywords: "logo winamax, winamax logo, logo paris sportif winamax, winamax logo png, design logo winamax, emblème winamax, winamax branding, identité visuelle winamax",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo winamax, winamax logo, logo paris sportif winamax, winamax logo png, design logo winamax, emblème winamax, winamax branding, identité visuelle winamax",
+  category: "logos",
+  subCategory: "club-logos",
 };

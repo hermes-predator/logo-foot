@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const youthLeagueLogoPost: BlogPost = {
   id: 605,
+  slug: "uefa-youth-league-logo", //
   title: "**UEFA Youth League Logo** : L'Histoire du Design de la Compétition des Jeunes Talents",
   date: "2025-04-25",
   galleryImageId: 605,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'UEFA Youth League, symbole de la future génération du football européen. Une analyse détaillée de son design innovant et de sa signification.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'UEFA Youth League, symbole de la future génération du football européen. Une analyse détaillée de son design innovant et de sa signification.",
   content: `# Histoire et Évolution du **Youth League Logo**
 
 Le **logo youth league** représente bien plus qu'une simple identité visuelle pour la compétition des jeunes talents européens. Il incarne l'espoir, l'ambition et le dynamisme d'une nouvelle génération de footballeurs qui façonnera l'avenir du sport roi en Europe.
@@ -35,5 +36,6 @@ Depuis sa création, le **youth league logo** a su évoluer subtilement pour res
 ## Conclusion
 
 Le **uefa youth league logo** demeure un excellent exemple de design sportif moderne, alliant tradition et innovation. Il illustre parfaitement comment une identité visuelle peut capturer l'essence d'une compétition tout en inspirant les nouvelles générations de footballeurs.`,
-  keywords: "youth league logo, logo youth league, uefa youth league logo, logo uefa youth league, uefa youth league png logo, youth league football fc logo, football européen, jeunes talents, design sportif"
+  keywords:
+    "youth league logo, logo youth league, uefa youth league logo, logo uefa youth league, uefa youth league png logo, youth league football fc logo, football européen, jeunes talents, design sportif",
 };

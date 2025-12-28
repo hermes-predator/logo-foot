@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const willemIiLogoPost: BlogPost = {
   id: 595,
+  slug: "willem-ii-logo", //
   title: "**Logo Willem II** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Willem II logo**, son évolution et sa signification dans le football néerlandais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Willem II logo**, son évolution et sa signification dans le football néerlandais.",
   date: "2024-04-19",
   galleryImageId: 595,
   content: `# Histoire du **Logo Willem II**
@@ -34,7 +35,8 @@ Le logo est devenu un symbole reconnu qui représente l'excellence du football n
 ## Conclusion
 
 Le logo de Willem II est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
-  keywords: "**logo willem ii**, **willem ii logo**, **logo de foot willem ii pays bas**, **logo willem ii png**, **willem ii new logo**",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "**logo willem ii**, **willem ii logo**, **logo de foot willem ii pays bas**, **logo willem ii png**, **willem ii new logo**",
+  category: "logos",
+  subCategory: "club-logos",
 };

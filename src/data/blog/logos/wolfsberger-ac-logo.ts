@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const wolfsbergerAcLogoPost: BlogPost = {
   id: 597,
+  slug: "wolfsberger-logo", //
   title: "Logo Wolfsberger AC : Histoire et Signification",
-  excerpt: "Découvrez l'histoire fascinante derrière le logo du Wolfsberger AC, un des clubs les plus emblématiques du football autrichien.",
+  excerpt:
+    "Découvrez l'histoire fascinante derrière le logo du Wolfsberger AC, un des clubs les plus emblématiques du football autrichien.",
   date: "2024-04-21",
   galleryImageId: 597,
   category: "logos",
@@ -46,6 +47,6 @@ Le logo est utilisé sur différents supports :
 ## Impact et Reconnaissance
 
 Le logo est devenu un symbole fort du football autrichien, reconnaissable instantanément par les supporters et les passionnés du football. Il incarne les valeurs du club : tradition, force et détermination.`,
-  keywords: "logo wolfsberger, logo foot wolfsberger ac, wolfsberger ac logo, logo wolfsberger ac, wolfsberger logo png, football autrichien, bundesliga autrichienne, WAC"
+  keywords:
+    "logo wolfsberger, logo foot wolfsberger ac, wolfsberger ac logo, logo wolfsberger ac, wolfsberger logo png, football autrichien, bundesliga autrichienne, WAC",
 };
-

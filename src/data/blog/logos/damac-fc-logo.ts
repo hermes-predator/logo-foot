@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const damacFcLogoPost: BlogPost = {
   id: 207,
+  slug: "damac-fc-logo", //
   title: "Logo Damac FC : Histoire et Évolution de l'Emblème du Club Saoudien",
-  excerpt: "Découvrez l'histoire fascinante du logo Damac FC, l'un des clubs montants du football saoudien. Analyse complète de son design et de son évolution visuelle au fil des années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Damac FC, l'un des clubs montants du football saoudien. Analyse complète de son design et de son évolution visuelle au fil des années.",
   date: "2024-04-22",
   galleryImageId: 207,
   content: `# L'Histoire du **Logo Damac** : Un Symbole d'Ambition
@@ -34,8 +35,8 @@ Alors que le club continue son développement, le **logo Damac** reste un symbol
 ## Conclusion
 
 Le **logo Damac** est bien plus qu'un simple emblème : c'est le symbole d'un club en pleine ascension dans le football saoudien. Sa présence forte et son design distinctif en font un élément clé de l'identité du club, reconnaissable instantanément par les supporters et respecté par les adversaires.`,
-  keywords: "logo damac, damac logo, damac logo png, football saoudien, saudi pro league, emblème damac, design logo football, clubs saoudiens",
+  keywords:
+    "logo damac, damac logo, damac logo png, football saoudien, saudi pro league, emblème damac, design logo football, clubs saoudiens",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };
-

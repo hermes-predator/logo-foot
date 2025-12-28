@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dijonLogoPost: BlogPost = {
   id: 213, // Using a unique ID that's not already used
+  slug: "dijon-logo", //
   title: "Logo Dijon : Histoire et Évolution de l'Emblème du DFCO [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Dijon FCO : origines, évolution et symbolisme de l'emblème bourguignon du football français.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Dijon FCO : origines, évolution et symbolisme de l'emblème bourguignon du football français.",
   date: "2024-06-08",
   galleryImageId: 213,
   content: `# L'Histoire Fascinante du **Logo Dijon**
@@ -52,7 +53,8 @@ Au-delà de sa fonction d'identification, le **logo dijon** incarne les valeurs 
 Alors que le DFCO poursuit son parcours, alternant entre les différentes divisions professionnelles mais toujours avec la même détermination, le **dijon fco logo** reste le témoin visuel de ses moments de gloire et de ses ambitions futures. Pour les générations de supporters actuelles et à venir, ce symbole continuera de représenter la fierté d'une ville et d'une région qui vivent intensément leur passion pour le football.
 
 Le **logo dijon png**, dans toutes ses déclinaisons et évolutions, demeure ainsi le gardien d'une identité footballistique unique, profondément ancrée dans la culture bourguignonne, et prête à affronter les défis futurs avec le caractère qui a toujours défini ce club pas comme les autres.`,
-  keywords: "logo dijon, dijon logo, dijon fco logo, logo de dijon, logo dijon foot, logo dijon png, dijon foot logo, dijon logo png, logo dijon fco, DFCO logo, emblème Dijon foot, écusson DFCO",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo dijon, dijon logo, dijon fco logo, logo de dijon, logo dijon foot, logo dijon png, dijon foot logo, dijon logo png, logo dijon fco, DFCO logo, emblème Dijon foot, écusson DFCO",
+  category: "logos",
+  subCategory: "club-logos",
 };

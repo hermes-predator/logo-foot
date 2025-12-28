@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const costaRicaLogoPost: BlogPost = {
   id: 193,
+  slug: "costa-rica-logo", //
   title: "**Logo Costa Rica** : Histoire et Évolution de l'Emblème des Ticos [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale costaricienne : des origines à aujourd'hui, évolution et signification de cet emblème d'Amérique centrale.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale costaricienne : des origines à aujourd'hui, évolution et signification de cet emblème d'Amérique centrale.",
   date: "2024-05-30",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Le **costa rica football logo png** intègre subtilement des références à l'h
 ## Un Symbole d'Unité Nationale
 
 Plus qu'un simple emblème sportif, le **costa rica logo** est devenu un puissant symbole d'unité nationale. Dans un pays où le football joue un rôle social crucial, le **costa rica football logo** représente les valeurs de collaboration, de persévérance et d'excellence qui sont au cœur de l'identité costaricienne. Sur les maillots des joueurs comme dans le cœur des supporters, ce logo incarne les rêves et les aspirations d'un peuple passionné.`,
-  keywords: "logo costa rica, costa rica logo, costa rica logo png, logo costa rica foot, logo de costa rica, logo foot costa rica, costa rica football logo, costa rica football federation logo, costa rica football logo png, costa rica football team logo, costa rica soccer logo"
+  keywords:
+    "logo costa rica, costa rica logo, costa rica logo png, logo costa rica foot, logo de costa rica, logo foot costa rica, costa rica football logo, costa rica football federation logo, costa rica football logo png, costa rica football team logo, costa rica soccer logo",
 };

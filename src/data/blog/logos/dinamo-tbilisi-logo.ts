@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dinamoTbilisiLogoPost: BlogPost = {
   id: 215,
+  slug: "dinamo-tbilissi-logo", //
   title: "**Logo Dinamo Tbilissi** : Histoire et Évolution de l'Emblème Emblématique du Club Géorgien",
-  excerpt: "Découvrez l'histoire fascinante du **logo Dinamo Tbilissi**, son symbolisme unique et son évolution à travers les décennies.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Dinamo Tbilissi**, son symbolisme unique et son évolution à travers les décennies.",
   content: `
 # **Logo Dinamo Tbilissi** : Un Symbole de Fierté Géorgienne
 
@@ -44,9 +46,10 @@ Les versions modernes du **logo Dinamo Tbilissi** mettent en valeur :
 
 Le **logo Dinamo Tbilissi** raconte plus qu'une simple histoire de football. C'est le récit d'une nation, de sa culture et de sa passion.
   `,
-  category: 'logos',
-  subCategory: 'national-teams',
-  date: '2024-04-12',
+  category: "logos",
+  subCategory: "national-teams",
+  date: "2024-04-12",
   galleryImageId: 215,
-  keywords: '**logo Dinamo Tbilissi**, **dinamo tbilisi logo**, **dinamo tbilisi logo png**, football géorgien, histoire des logos, design de logo sportif',
+  keywords:
+    "**logo Dinamo Tbilissi**, **dinamo tbilisi logo**, **dinamo tbilisi logo png**, football géorgien, histoire des logos, design de logo sportif",
 };

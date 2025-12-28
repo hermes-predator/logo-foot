@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cskaMoscowLogoPost: BlogPost = {
   id: 202,
+  slug: "cska-moscou-logo", //
   title: "**CSKA Moscou Logo** : Histoire et Évolution de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo CSKA Moscou**, un symbole emblématique du football russe qui incarne la tradition militaire et sportive.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo CSKA Moscou**, un symbole emblématique du football russe qui incarne la tradition militaire et sportive.",
   date: "2024-04-15",
   galleryImageId: 202,
   content: `# Histoire du **CSKA Moscou Logo**
@@ -74,7 +75,8 @@ Le **logo foot CSKA Moscou** s'adapte à de nombreux supports :
 - Normes graphiques
 - Utilisations officielles
 - Versions autorisées`,
-  keywords: "logo cska moscou, cska moscou logo, logo club foot cska moscou, logo cska moscou png, logo de foot cska moscou, logo foot cska moscou",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo cska moscou, cska moscou logo, logo club foot cska moscou, logo cska moscou png, logo de foot cska moscou, logo foot cska moscou",
+  category: "logos",
+  subCategory: "club-logos",
 };

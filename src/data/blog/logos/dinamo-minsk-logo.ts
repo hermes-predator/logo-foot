@@ -1,11 +1,12 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dinamoMinskLogoPost: BlogPost = {
   id: 214,
+  slug: "dinamo-minsk-logo", //
   title: "**Dinamo Minsk Logo** : Histoire et Design de l'Emblème du Club Biélorusse [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Dinamo Minsk**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club historique.",
-  date: "2024-04-15", 
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Dinamo Minsk**, un symbole emblématique qui représente la fierté du football biélorusse et l'identité unique de ce club historique.",
+  date: "2024-04-15",
   galleryImageId: 214,
   content: `# Histoire du **Dinamo Minsk Logo**
 
@@ -75,6 +76,6 @@ Le **logo png dinamo minsk** s'utilise sur différents supports :
 - Adaptabilité aux supports
 - Protection de la marque`,
   keywords: "logo dinamo minsk, logo png dinamo minsk",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

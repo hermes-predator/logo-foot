@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const denmarkLogoPost: BlogPost = {
   id: 208,
+  slug: "danemark-logo", //
   title: "Logo Danemark : Histoire et Design de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Danemark : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football scandinave.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Danemark : des origines à aujourd'hui, évolution et signification de l'emblème de cette grande nation du football scandinave.",
   date: "2024-05-24",
   galleryImageId: 208,
   content: `# L'Histoire Fascinante du **Logo Danemark**
@@ -45,7 +47,8 @@ Cette notoriété internationale croissante du **logo danemark foot** témoigne 
 Au fil des décennies, l'**equipe danemark football logo** a connu plusieurs évolutions significatives qui reflètent les changements stylistiques dans le design sportif. Des premiers emblèmes relativement simples aux versions plus modernes et épurées, le **logo club de foot danemark** a toujours conservé certains éléments distinctifs qui permettent son identification immédiate.
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo club de foot danemark** un exemple intéressant de continuité dans le design sportif. Alors que de nombreuses fédérations optent pour des ruptures radicales dans leur identité visuelle, le **danemark foot logo** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
-  keywords: "logo danemark, logo danemark foot, danemark logo, danemark logo foot, logo foot danemark, danemark foot logo, danemark football logo, equipe danemark football logo, le logo du danemark, logo club de foot danemark",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo danemark, logo danemark foot, danemark logo, danemark logo foot, logo foot danemark, danemark foot logo, danemark football logo, equipe danemark football logo, le logo du danemark, logo club de foot danemark",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

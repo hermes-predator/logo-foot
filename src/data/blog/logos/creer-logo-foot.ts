@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const creerLogoFootPost: BlogPost = {
   id: 198,
+  slug: "comment-creer-un-logo-de-foot-2025", //
   title: "Comment Créer un Logo de Foot : Guide Professionnel [2024]",
-  excerpt: "Guide complet pour créer un logo de foot professionnel. Découvrez comment concevoir gratuitement l'emblème parfait pour votre club de football.",
+  excerpt:
+    "Guide complet pour créer un logo de foot professionnel. Découvrez comment concevoir gratuitement l'emblème parfait pour votre club de football.",
   date: "2024-04-10",
   galleryImageId: 198,
   content: `# **Créer un Logo de Foot** : Guide Complet et Professionnel
@@ -137,7 +139,8 @@ Une fois que vous avez réussi à **créer un logo de foot gratuit**, n'oubliez 
 Avec les ressources gratuites disponibles aujourd'hui, chacun peut **créer un logo de club de foot gratuit** de qualité professionnelle. L'important est de prendre le temps nécessaire pour développer un concept qui représente véritablement l'essence de votre club.
 
 Alors, prêt à **crée un logo de foot** qui marquera l'histoire de votre équipe et restera dans les mémoires des supporters ?`,
-  keywords: "créer un logo de foot, comment créer un logo de foot, créer un logo club de foot, créer un logo club de foot gratuit, créer un logo de club de foot, créer un logo de foot gratuit, créer un logo pour un club de foot gratuit, comment crée un logo de foot, crée un logo de foot, crée un logo equipe de foot, créer un logo d'un club de foot",
-  category: 'technical',
-  subCategory: 'design'
+  keywords:
+    "créer un logo de foot, comment créer un logo de foot, créer un logo club de foot, créer un logo club de foot gratuit, créer un logo de club de foot, créer un logo de foot gratuit, créer un logo pour un club de foot gratuit, comment crée un logo de foot, crée un logo de foot, crée un logo equipe de foot, créer un logo d'un club de foot",
+  category: "technical",
+  subCategory: "design",
 };

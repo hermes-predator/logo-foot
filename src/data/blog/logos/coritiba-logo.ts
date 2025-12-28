@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coritibaLogoPost: BlogPost = {
   id: 191,
+  slug: "coritiba-logo", //
   title: "**Logo Coritiba** : Histoire et Design de l'Emblème Emblématique [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Coritiba**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Coritiba logo**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Coritiba**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Coritiba logo**.",
   date: "2024-04-22",
   galleryImageId: 191,
   content: `# L'Histoire Passionnante du **Logo Coritiba**
@@ -44,5 +45,5 @@ Aujourd'hui, le **logo Coritiba** est au cœur d'une stratégie de marque modern
 Le **logo Coritiba** transcende son rôle d'emblème sportif pour devenir un symbole culturel fort. Il continue d'inspirer les générations de supporters et incarne les valeurs fondamentales du club : tradition, passion et excellence.`,
   keywords: "logo coritiba, coritiba logo, coritiba logo png, football brésilien, clube do paraná, emblème coritiba",
   category: "logos",
-  subCategory: "brazilian-clubs"
+  subCategory: "brazilian-clubs",
 };

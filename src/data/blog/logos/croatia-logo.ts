@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const croatiaLogoPost: BlogPost = {
   id: 200,
+  slug: "croatie-logo", //
   title: "Logo Croatie : Histoire et Design de l'Emblème à Damier [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Croatie : des origines à aujourd'hui, évolution et signification de l'emblème à damier rouge et blanc, symbole du football croate.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Croatie : des origines à aujourd'hui, évolution et signification de l'emblème à damier rouge et blanc, symbole du football croate.",
   date: "2024-05-30",
   galleryImageId: 200,
   content: `# L'Histoire Fascinante du **Logo Croatie**
@@ -63,7 +65,8 @@ Le **logo croatie** a parcouru un chemin remarquable, depuis les armoiries médi
 Pour les générations futures de footballeurs et supporters croates, le **croatie foot logo** continuera d'incarner l'excellence, la persévérance et la fierté nationale. Alors que le football croate poursuit son chemin vers de nouveaux sommets, son emblème emblématique à damier rouge et blanc restera le témoin visuel de cette aventure sportive exceptionnelle.
 
 Que ce soit dans sa version officielle utilisée par la fédération ou dans ses nombreuses déclinaisons numériques comme le **logo croatie png**, l'emblème national du football croate a définitivement conquis sa place dans le panthéon des grands logos sportifs internationaux, rappelant qu'une petite nation peut laisser une empreinte visuelle majeure sur le sport le plus populaire de la planète.`,
-  keywords: "logo croatie, logo croatie foot, croatie foot logo, croatie logo, logo croatie png, logo de la croatie, logo foot croatie, croatie logo png, logo croatie football, club foot croatie logo, club football logo croatie, equipe croatie football logo, equipe de croatie logo",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo croatie, logo croatie foot, croatie foot logo, croatie logo, logo croatie png, logo de la croatie, logo foot croatie, croatie logo png, logo croatie football, club foot croatie logo, club football logo croatie, equipe croatie football logo, equipe de croatie logo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

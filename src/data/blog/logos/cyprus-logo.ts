@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cyprusLogoPost: BlogPost = {
   id: 204,
+  slug: "chypre-logo", //
   title: "**Logo Chypre** : L'Histoire de l'Emblème des Aigles Méditerranéens [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale chypriote : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football chypriote.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale chypriote : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football chypriote.",
   date: "2025-04-27",
   galleryImageId: 204,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "logo chypre, chypre logo, chypre foot logo, equipe chypre football logo, logo club de foot chypre, logo club football chypre, logo federation football chypre, logo ligue de foot de chypre",
+  keywords:
+    "logo chypre, chypre logo, chypre foot logo, equipe chypre football logo, logo club de foot chypre, logo club football chypre, logo federation football chypre, logo ligue de foot de chypre",
   content: `# L'Histoire Fascinante du **Logo Chypre**
 
 Le **chypre logo** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation insulaire passionnée de football, dont l'histoire est profondément ancrée dans la culture méditerranéenne. Le **chypre foot logo** incarne l'identité unique d'un pays qui a su développer sa propre signature dans le monde du football international.

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cremoneseLogoPost: BlogPost = {
   id: 199, // Using a unique ID that isn't already used
+  slug: "cremonese-logo", //
   title: "Logo Cremonese : Histoire et Évolution de l'Emblème Grigiorosso [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Cremonese, son évolution et la signification des éléments qui composent l'emblème iconique du club lombard.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Cremonese, son évolution et la signification des éléments qui composent l'emblème iconique du club lombard.",
   date: "2024-06-03",
   galleryImageId: 199,
   content: `# L'Histoire Passionnante du **Cremonese Logo**
@@ -54,7 +55,8 @@ Les produits dérivés ornés du **logo us cremonese** sont particulièrement pr
 Le **cremonese logo** continue d'évoluer tout en préservant son essence, incarnant parfaitement l'équilibre entre respect des traditions et adaptation aux enjeux contemporains. Dans l'univers des **logos tous les logos club foot** italiens, celui de l'US Cremonese se distingue par sa capacité à représenter à la fois l'histoire d'un club centenaire et ses ambitions futures.
 
 Que vous soyez un supporter passionné du club lombard ou simplement un amateur de design sportif, le **cremonese calcio logo** offre un fascinant exemple de la façon dont les emblèmes de football peuvent devenir de véritables symboles culturels et identitaires, trouvant ainsi leur place légitime parmi **tous les logos de foot du monde**.`,
-  keywords: "cremonese logo, cremonese calcio logo, logo de foot cremonese, logo us cremonese, us cremonese logo png, tous les logo de foot, tous les logos de foot, logo de tous les club de foot, tous les logos des clubs de foot, tous les clubs de foot logo, logos tous les logos foot, logo de tous les club de foot nouveau, logo de tous les plus grand clubs de foot mondial, tous les logo de club de foot du monde, tous les logos de foot du monde, tous les clubs et logo de foot en europe, logos tous les logos club foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cremonese logo, cremonese calcio logo, logo de foot cremonese, logo us cremonese, us cremonese logo png, tous les logo de foot, tous les logos de foot, logo de tous les club de foot, tous les logos des clubs de foot, tous les clubs de foot logo, logos tous les logos foot, logo de tous les club de foot nouveau, logo de tous les plus grand clubs de foot mondial, tous les logo de club de foot du monde, tous les logos de foot du monde, tous les clubs et logo de foot en europe, logos tous les logos club foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

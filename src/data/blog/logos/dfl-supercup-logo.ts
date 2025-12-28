@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dflSupercupLogoPost: BlogPost = {
   id: 212, // ID unique qui n'est pas déjà utilisé
+  slug: "dfl-supercup-logo", //
   title: "DFL Supercup Logo : Histoire et Évolution de l'Emblème Allemand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de la DFL Supercup : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Allemagne.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de la DFL Supercup : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Allemagne.",
   date: "2024-06-22",
   galleryImageId: 212,
   content: `# L'Histoire Fascinante du **DFL Supercup Logo**
@@ -55,7 +57,8 @@ Alors que la DFL Supercup continue de se développer et d'accroître sa visibili
 Les campagnes marketing futures continueront probablement d'utiliser le **logo dfl supercup** comme pilier central de la communication de la compétition, renforçant ainsi sa reconnaissance à l'échelle mondiale et contribuant à positionner ce match d'ouverture parmi les événements incontournables du calendrier footballistique européen.
 
 Dans ce contexte d'expansion et de modernisation, le **dfl supercup logo png** restera un symbole fort de l'identité footballistique allemande, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui continue de gagner en prestige et en attractivité sur la scène mondiale du football.`,
-  keywords: "dfl supercup logo, dfl supercup logo png, logo dfl supercup, supercoupe allemagne logo, bundesliga supercup emblème, football allemand logo, dfl logo, supercup allemagne design, emblème supercoupe allemande",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "dfl supercup logo, dfl supercup logo png, logo dfl supercup, supercoupe allemagne logo, bundesliga supercup emblème, football allemand logo, dfl logo, supercup allemagne design, emblème supercoupe allemande",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

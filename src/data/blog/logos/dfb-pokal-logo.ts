@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dfbPokalLogoPost: BlogPost = {
   id: 211,
+  slug: "dfb-pokal-logo", //
   title: "Le **DFB Pokal Logo** : Histoire et Symbolisme de la Coupe d'Allemagne",
-  excerpt: "Découvrez l'histoire fascinante du **DFB Pokal Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la célèbre coupe allemande.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **DFB Pokal Logo**, son évolution et la signification de ses éléments emblématiques dans cette analyse complète du design de la célèbre coupe allemande.",
   date: "2024-04-15",
   galleryImageId: 211,
   content: `
@@ -77,7 +79,8 @@ Avec la popularité croissante du football allemand à l'échelle mondiale, le *
 
 Le **DFB Pokal Logo PNG** est ainsi devenu un symbole reconnu par les amateurs de football bien au-delà des frontières allemandes, contribuant au rayonnement du football allemand à l'échelle mondiale.
 `,
-  keywords: "dfb pokal logo, dfb pokal logo png, coupe d'allemagne, football allemand, dfb, trophée dfb pokal, bundesliga, compétition allemande, coupe allemande, emblème dfb pokal, design dfb pokal",
+  keywords:
+    "dfb pokal logo, dfb pokal logo png, coupe d'allemagne, football allemand, dfb, trophée dfb pokal, bundesliga, compétition allemande, coupe allemande, emblème dfb pokal, design dfb pokal",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

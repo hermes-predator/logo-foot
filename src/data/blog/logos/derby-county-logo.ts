@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const derbyCountyLogoPost: BlogPost = {
   id: 210,
+  slug: "derby-county-logo", //
   title: "**Logo Derby County FC** : Histoire et Évolution de l'Emblème des Rams [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Derby County**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Derby County**, son évolution au fil des décennies et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 210,
   content: `# **Logo Derby County** : L'Histoire d'un Emblème Emblématique du Football Anglais
@@ -57,7 +58,8 @@ Le **logo Derby County FC** fait l'objet de nombreuses applications et adaptatio
 ## Conclusion
 
 L'emblème du **Derby County FC logo** illustre remarquablement comment un logo sportif peut évoluer organiquement tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire l'histoire du club.`,
-  keywords: "derby county fc logo:20, derby county football club logo:20, derby county logo:20, derby county logo png:20, logo derby county:20, logo derby county png:10, derby county logo download:10, logo derby county fc:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "derby county fc logo:20, derby county football club logo:20, derby county logo:20, derby county logo png:20, logo derby county:20, logo derby county png:10, derby county logo download:10, logo derby county fc:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

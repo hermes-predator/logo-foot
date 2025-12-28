@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const d1ArkemaLogoPost: BlogPost = {
   id: 206,
+  slug: "d1-arkema-logo", //
   title: "D1 Arkema Logo : Histoire et évolution de l'identité visuelle du championnat féminin français",
-  excerpt: "Découvrez l'histoire et l'évolution du logo D1 Arkema, emblème du championnat de football féminin français. Analyse complète du design et des symboliques.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo D1 Arkema, emblème du championnat de football féminin français. Analyse complète du design et des symboliques.",
   date: "2023-08-25",
   galleryImageId: 206,
   content: `
@@ -78,7 +80,8 @@ Le **logo D1 Arkema** a connu quelques ajustements mineurs depuis 2019, mais a c
 ### Quelle est la signification des couleurs du **logo D1 Arkema**?
 Les couleurs principales du **logo D1 Arkema PNG** représentent les couleurs nationales françaises et symbolisent l'excellence et le prestige du championnat.
 `,
-  keywords: "D1 Arkema logo, logo D1 Arkema, D1 Arkema logo PNG, D1 féminine Arkema logo, logo D1 Arkema PNG, football féminin, championnat français, identité visuelle, design sportif",
+  keywords:
+    "D1 Arkema logo, logo D1 Arkema, D1 Arkema logo PNG, D1 féminine Arkema logo, logo D1 Arkema PNG, football féminin, championnat français, identité visuelle, design sportif",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

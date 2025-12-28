@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const dinamoZagrebLogoPost: BlogPost = {
   id: 216, // Utilisation d'un ID unique qui n'est pas déjà utilisé
+  slug: "dinamo-zagreb-logo", //
   title: "Logo Dinamo Zagreb : Histoire et Design de l'Emblème Croate [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Dinamo Zagreb : origines, évolution et symbolisme de l'emblème emblématique du club croate.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Dinamo Zagreb : origines, évolution et symbolisme de l'emblème emblématique du club croate.",
   date: "2024-06-18",
   galleryImageId: 216,
   content: `# L'Histoire Fascinante du **Logo Dinamo Zagreb**
@@ -61,7 +62,8 @@ Cette rigueur dans l'application garantit que le **dinamo zagreb logo png** cons
 Alors que le Dinamo Zagreb poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines croates, fait du **dinamo zagreb logo officiel** un cas d'étude fascinant en matière d'identité visuelle sportive.
 
 Le **logo football dinamo zagreb** est ainsi bien plus qu'un simple écusson de club : c'est un symbole vivant qui incarne l'héritage, les valeurs et les ambitions d'une institution sportive majeure en Croatie et en Europe. Sa capacité à traverser les époques tout en maintenant sa pertinence témoigne de la force d'une identité visuelle qui a su transcender le cadre strictement sportif pour devenir un véritable patrimoine culturel.`,
-  keywords: "logo dinamo zagreb, dinamo zagreb logo, dinamo zagreb logo png, logo dinamo zagreb png, dinamo zagreb logo officiel, logo foot dinamo zagreb, logo football dinamo zagreb, logo png dinamo zagreb",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo dinamo zagreb, dinamo zagreb logo, dinamo zagreb logo png, logo dinamo zagreb png, dinamo zagreb logo officiel, logo foot dinamo zagreb, logo football dinamo zagreb, logo png dinamo zagreb",
+  category: "logos",
+  subCategory: "club-logos",
 };

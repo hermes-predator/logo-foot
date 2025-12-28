@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const djurgardensIfLogoPost: BlogPost = {
   id: 217,
+  slug: "djurgardens-if-logo", //
   title: "**Logo Djurgårdens IF** : Histoire et Signification de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Djurgårdens IF**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **Djurgården logo** et de son évolution.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Djurgårdens IF**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **Djurgården logo** et de son évolution.",
   date: "2024-04-22",
   galleryImageId: 217,
   content: `# L'Histoire Fascinante du **Logo Djurgårdens IF**
@@ -46,8 +47,8 @@ Aujourd'hui, le **Djurgårdens IF logo PNG** s'adapte parfaitement aux exigences
 ## Conclusion
 
 Le **logo Djurgårdens IF** transcende son rôle d'emblème sportif pour devenir un véritable symbole culturel. Il continue d'inspirer les générations de supporters et incarne les valeurs fondamentales du club : tradition, excellence et fierté.`,
-  keywords: "logo djurgårdens if, djurgårdens if logo, djurgården logo, djurgårdens if logo png, djurgården fencing club logo, football suédois, emblème djurgården, club stockholm",
+  keywords:
+    "logo djurgårdens if, djurgårdens if logo, djurgården logo, djurgårdens if logo png, djurgården fencing club logo, football suédois, emblème djurgården, club stockholm",
   category: "logos",
-  subCategory: "other-european-clubs"
+  subCategory: "other-european-clubs",
 };
-

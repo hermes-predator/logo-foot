@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coteIvoireLogoPost: BlogPost = {
   id: 194,
+  slug: "cote-d-ivoire-logo", //
   title: "**Logo Côte d'Ivoire** : Histoire et Évolution de l'Emblème des Éléphants [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale de Côte d'Ivoire : des origines à aujourd'hui, évolution et signification de l'emblème des Éléphants.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale de Côte d'Ivoire : des origines à aujourd'hui, évolution et signification de l'emblème des Éléphants.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Sous la bannière de ce **logo de la côte d'ivoire**, l'équipe nationale a con
 ## L'Impact du Logo sur le Football Ivoirien
 
 L'influence du **côte d'ivoire foot logo** s'étend bien au-delà des terrains de football. Il est devenu une source d'inspiration pour les jeunes générations et un symbole de fierté nationale. Le **logo de la côte d'ivoire** continue d'évoluer tout en préservant son essence et sa symbolique forte, incarnant les valeurs de courage, de détermination et d'excellence qui caractérisent le football ivoirien.`,
-  keywords: "logo côte d'ivoire, côte d'ivoire logo, logo de la côte d'ivoire, le logo de la côte d'ivoire, côte d'ivoire foot logo, ivory coast logo, ivory coast football logo, equipe foot ivory coast logo"
+  keywords:
+    "logo côte d'ivoire, côte d'ivoire logo, logo de la côte d'ivoire, le logo de la côte d'ivoire, côte d'ivoire foot logo, ivory coast logo, ivory coast football logo, equipe foot ivory coast logo",
 };

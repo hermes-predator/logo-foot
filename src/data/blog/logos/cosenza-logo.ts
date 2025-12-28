@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cosenzaLogoPost: BlogPost = {
   id: 192, // ID unique qui n'est pas déjà utilisé
+  slug: "cosenza-logo", //
   title: "Logo Cosenza : Histoire et Évolution de l'Emblème du Club Italien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Cosenza, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Cosenza, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",
   galleryImageId: 192,
   content: `# L'Histoire Fascinante du **Cosenza Logo** : Évolution et Symbolisme
@@ -72,7 +73,8 @@ En définitive, le **logo cosenza calcio** représente bien plus qu'un simple em
 Que vous soyez un supporter de longue date ou simplement un amateur de design sportif, le **logo de foot cosenza calcio** offre un fascinant exemple de la façon dont les emblèmes sportifs peuvent devenir de puissants vecteurs d'identité collective. Le **cosenza logo**, avec son loup distinctif et ses couleurs rouge et bleu, continue de représenter avec fierté un club qui, malgré les hauts et les bas inhérents au football, reste fidèle à son héritage et à ses supporters.
 
 Dans le vaste paysage des logos de football italien, le **logo cosenza calcio** occupe ainsi une place unique et mérite d'être reconnu pour sa richesse symbolique et son authenticité - des qualités qui font écho à l'essence même du club qu'il représente.`,
-  keywords: "cosenza logo, logo cosenza, cosenza calcio logo, logo cosenza calcio, logo de foot cosenza calcio, embleme cosenza, ecusson cosenza calcio, loup cosenza logo, cosenza football club logo, calcio cosenza emblem, logo cosenza serie b, cosenza fc emblem, stemma cosenza calcio, cosenza club logo histoire",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cosenza logo, logo cosenza, cosenza calcio logo, logo cosenza calcio, logo de foot cosenza calcio, embleme cosenza, ecusson cosenza calcio, loup cosenza logo, cosenza football club logo, calcio cosenza emblem, logo cosenza serie b, cosenza fc emblem, stemma cosenza calcio, cosenza club logo histoire",
+  category: "logos",
+  subCategory: "club-logos",
 };

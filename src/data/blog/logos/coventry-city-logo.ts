@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coventryCityLogoPost: BlogPost = {
   id: 196, // ID unique qui n'est pas déjà utilisé
+  slug: "coventry-city-logo", //
   title: "Logo Coventry City : Histoire et Évolution de l'Emblème des Sky Blues [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Coventry City, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Coventry City, son évolution au fil des années et la signification de ses éléments distinctifs dans cet article complet.",
   date: "2024-06-05",
   galleryImageId: 196,
   content: `# L'Histoire Captivante du **Coventry City Logo** à Travers les Décennies
@@ -74,7 +75,8 @@ En définitive, le **coventry city logo** représente bien plus qu'un simple des
 À travers ses multiples évolutions, le **logo coventry city fc** a su préserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles réalités du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du **coventry football club logo** un cas d'étude fascinant dans le domaine des identités visuelles sportives.
 
 Que vous soyez un supporter de longue date ou simplement un amateur de design sportif, le **coventry logo** mérite d'être apprécié pour sa richesse symbolique et son importance culturelle dans l'histoire du football anglais.`,
-  keywords: "coventry football club logo, coventry city fc logo, coventry city logo, coventry fc logo, coventry logo, coventry logo png, logo coventry, logo coventry city, coventry city logo png, coventry city football club logo, coventry logo foot, logo coventry city fc, coventry city fc, écusson coventry, emblème coventry, sky blues logo, coventry city badge, histoire logo coventry, coventry crest, coventry city emblem",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "coventry football club logo, coventry city fc logo, coventry city logo, coventry fc logo, coventry logo, coventry logo png, logo coventry, logo coventry city, coventry city logo png, coventry city football club logo, coventry logo foot, logo coventry city fc, coventry city fc, écusson coventry, emblème coventry, sky blues logo, coventry city badge, histoire logo coventry, coventry crest, coventry city emblem",
+  category: "logos",
+  subCategory: "club-logos",
 };

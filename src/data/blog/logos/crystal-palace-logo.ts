@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const crystalPalaceLogoPost: BlogPost = {
   id: 201,
+  slug: "crystal-palace-logo", //
   title: "Logo Crystal Palace FC : Histoire et Evolution de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Crystal Palace FC, ses symboles et comment l'aigle emblématique est devenu l'identité visuelle du club londonien.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Crystal Palace FC, ses symboles et comment l'aigle emblématique est devenu l'identité visuelle du club londonien.",
   date: "2024-04-23",
   galleryImageId: 201,
   content: `# L'Histoire Fascinante du **Logo Crystal Palace**
@@ -50,7 +51,8 @@ Comme toute marque vivante, le **logo crystal palace** pourrait continuer d'évo
 Les débats passionnés qui entourent souvent l'évolution des logos de clubs de football témoignent de l'importance capitale que revêt le **crystal palace fc logo** pour la communauté des supporters. Chaque potentielle modification fait l'objet d'analyses minutieuses, illustrant le lien émotionnel profond qui unit les fans à cet emblème.
 
 Quelle que soit son évolution future, le **logo de crystal palace** continuera sans doute de symboliser les valeurs fondamentales du club : détermination, courage et fierté. À l'image de l'aigle qui le caractérise, cet emblème iconique devrait continuer de planer au-dessus du paysage du football anglais, représentant l'ambition et l'identité unique de Crystal Palace FC pour les générations futures de supporters.`,
-  keywords: "logo crystal palace, crystal palace logo, logo crystal palace fc, crystal palace fc logo, crystal palace logo png, crystal palace fc logo png, logo de crystal palace, emblème crystal palace, écusson crystal palace, aigle crystal palace",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo crystal palace, crystal palace logo, logo crystal palace fc, crystal palace fc logo, crystal palace logo png, crystal palace fc logo png, logo de crystal palace, emblème crystal palace, écusson crystal palace, aigle crystal palace",
+  category: "logos",
+  subCategory: "club-logos",
 };

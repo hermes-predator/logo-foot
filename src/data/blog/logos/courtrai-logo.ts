@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const courtraiLogoPost: BlogPost = {
   id: 195,
+  slug: "courtrai-logo", //
   title: "**Logo Courtrai** : Histoire et Design du KV Courtrai [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Courtrai** et son évolution à travers les années. Un emblème qui symbolise la fierté du football belge.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Courtrai** et son évolution à travers les années. Un emblème qui symbolise la fierté du football belge.",
   date: "2024-04-19",
   galleryImageId: 195,
   content: `# Histoire du **Logo Courtrai**
@@ -77,7 +78,8 @@ Le logo continue d'inspirer :
 ## Conclusion
 
 Le **KV Courtrai logo** reste un symbole fort du football belge, alliant histoire et modernité dans son expression visuelle.`,
-  keywords: "logo courtrai, kv courtrai logo, logo de foot courtrai, logo kv courtrai, logo kv courtrai png, logo png courtrai",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo courtrai, kv courtrai logo, logo de foot courtrai, logo kv courtrai, logo kv courtrai png, logo png courtrai",
+  category: "logos",
+  subCategory: "club-logos",
 };

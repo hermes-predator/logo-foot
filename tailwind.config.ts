@@ -138,8 +138,8 @@ export default {
 					'50%': { transform: 'translateY(-8px)' }
 				},
 				'wiggle': {
-					'0%, 100%': { transform: 'rotate(-3deg)' },
-					'50%': { transform: 'rotate(3deg)' }
+					'0%, 100%': { transform: 'rotate(-8deg)' },
+					'50%': { transform: 'rotate(8deg)' }
 				}
 			},
 			animation: {

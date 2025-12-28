@@ -89,6 +89,29 @@ if (duplicateTitles.length > 0) {
   console.log('✅ Tous les titres sont uniques');
 }
 
+// Vérification des slugs en double
+const slugCounts = new Map<string, number>();
+const duplicatesBySlug: { [key: string]: BlogPost[] } = {};
+
+blogPosts.forEach(post => {
+  slugCounts.set(post.slug, (slugCounts.get(post.slug) || 0) + 1);
+  
+  if (!duplicatesBySlug[post.slug]) {
+    duplicatesBySlug[post.slug] = [];
+  }
+  duplicatesBySlug[post.slug].push(post);
+});
+
+const duplicateSlugs = Array.from(slugCounts.entries()).filter(([slug, count]) => count > 1);
+if (duplicateSlugs.length > 0) {
+  console.error('🔴 SLUGS EN DOUBLE DÉTECTÉS:', duplicateSlugs.length);
+  duplicateSlugs.forEach(([slug, count]) => {
+    console.error(`Slug "${slug}" (${count} fois):`, duplicatesBySlug[slug].map(p => ({ id: p.id, title: p.title })));
+  });
+} else {
+  console.log('✅ Tous les slugs sont uniques');
+}
+
 // Statistiques par catégorie
 const categoryStats = {
   logos: blogPosts.filter(p => p.category === 'logos').length,

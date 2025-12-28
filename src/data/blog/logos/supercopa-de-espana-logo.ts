@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const supercopaDeEspanaLogoPost: BlogPost = {
   id: 551,
+  slug: "supercopa-de-espana-logo", //
   title: "Supercopa de España Logo : Histoire et Symbolisme de l'Emblème Espagnol",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Supercopa de España, son évolution au fil des ans et la signification de ses éléments symboliques dans cette analyse complète.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Supercopa de España, son évolution au fil des ans et la signification de ses éléments symboliques dans cette analyse complète.",
   date: "2024-04-10",
   galleryImageId: 551,
   content: `
@@ -73,7 +75,8 @@ Le **supercopa de españa logo** a parcouru un long chemin depuis sa création, 
 
 Que ce soit dans sa version physique ornant le trophée convoité ou dans sa version numérique sur les plateformes médiatiques, le **logo supercopa de españa** continue de symboliser l'excellence du football espagnol et l'importance culturelle de cette compétition dans le paysage sportif national et international.
 `,
-  keywords: "supercopa de españa logo, logo supercopa de españa, supercoupe d'espagne, compétition espagnole, rfef, trophée supercopa, football espagnol, supercoupe logo, supercopa emblème, design supercoupe",
+  keywords:
+    "supercopa de españa logo, logo supercopa de españa, supercoupe d'espagne, compétition espagnole, rfef, trophée supercopa, football espagnol, supercoupe logo, supercopa emblème, design supercoupe",
   category: "competition-logos",
-  subCategory: "competition-logos"
+  subCategory: "competition-logos",
 };

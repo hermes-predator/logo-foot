@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sunderlandLogoPost: BlogPost = {
   id: 550,
+  slug: "sunderland-logo", //
   title: "Logo Sunderland AFC : Histoire et Design de l'Emblème des Black Cats [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Sunderland AFC : des origines à aujourd'hui, évolution et signification de l'emblème du club historique anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Sunderland AFC : des origines à aujourd'hui, évolution et signification de l'emblème du club historique anglais.",
   date: "2024-05-22",
   galleryImageId: 550,
   content: `# L'Histoire Fascinante du Logo Sunderland
@@ -46,7 +47,8 @@ Cette notoriété internationale croissante du **sunderland fc logo** témoigne 
 Tout en conservant ses éléments fondamentaux, le **sunderland afc logo** continue d'évoluer subtilement pour répondre aux défis du football moderne. Les récentes versions du **sunderland logo png** montrent une tendance vers une simplification graphique qui facilite son utilisation sur les supports digitaux tout en renforçant son impact visuel instantané.
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo sunderland png** un exemple intéressant de continuité dans le design sportif. Alors que de nombreux clubs optent pour des ruptures radicales dans leur identité visuelle, le **sunderland fc logo** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
-  keywords: "sunderland afc logo, sunderland fc logo, sunderland logo, logo sunderland png, sunderland logo png, logo sunderland, sunderland afc logo png, equipe sunderland logo, nouveau logo sunderland, sunderland logo jpg",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "sunderland afc logo, sunderland fc logo, sunderland logo, logo sunderland png, sunderland logo png, logo sunderland, sunderland afc logo png, equipe sunderland logo, nouveau logo sunderland, sunderland logo jpg",
+  category: "logos",
+  subCategory: "club-logos",
 };

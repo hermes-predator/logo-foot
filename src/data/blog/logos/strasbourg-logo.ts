@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const strasbourgLogoPost: BlogPost = {
   id: 547,
+  slug: "strasbourg-logo", //
   title: "Logo RC Strasbourg : Histoire et Évolution de l'Emblème Alsacien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo RC Strasbourg, son évolution au fil du temps et la signification des symboles alsaciens qui composent l'emblème emblématique du club.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo RC Strasbourg, son évolution au fil du temps et la signification des symboles alsaciens qui composent l'emblème emblématique du club.",
   date: "2024-05-08",
   galleryImageId: 547,
   content: `# L'Histoire Fascinante du **Logo Strasbourg**
@@ -87,7 +88,8 @@ Si certains clubs ont radicalement modernisé leur emblème, le **logo racing cl
 Le **logo strasbourg** a traversé les époques en conservant son essence et sa pertinence. À chaque étape de son évolution, le **logo rc strasbourg** a reflété l'identité du club, ses ambitions et son ancrage territorial. Dans un monde du football en perpétuelle mutation, le **logo strasbourg foot** demeure un point de repère stable pour les supporters, un symbole reconnaissable qui incarne les valeurs et l'histoire d'un club profondément lié à sa région.
 
 Alors que le Racing continue d'écrire son histoire sur les terrains de Ligue 1, son **logo racing strasbourg** continuera d'évoluer subtilement, comme il l'a toujours fait, pour rester en phase avec son époque tout en préservant l'héritage précieux du passé. Le **rc strasbourg logo** n'est pas simplement un design graphique : c'est le gardien visuel d'une passion partagée par des générations de supporters alsaciens, un emblème qui continue de rassembler la communauté bleu et blanc autour de valeurs communes et d'une fierté régionale indéfectible.`,
-  keywords: "logo strasbourg, strasbourg logo, logo racing strasbourg, logo rc strasbourg, logo strasbourg foot, logo racing club de strasbourg, logo racing club strasbourg, rc strasbourg logo, racing club de strasbourg logo, logo strasbourg png, racing strasbourg logo, logo de strasbourg, logo rc strasbourg png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo strasbourg, strasbourg logo, logo racing strasbourg, logo rc strasbourg, logo strasbourg foot, logo racing club de strasbourg, logo racing club strasbourg, rc strasbourg logo, racing club de strasbourg logo, logo strasbourg png, racing strasbourg logo, logo de strasbourg, logo rc strasbourg png",
+  category: "logos",
+  subCategory: "club-logos",
 };

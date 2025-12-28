@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const swanseaCityLogoPost: BlogPost = {
   id: 552, // ID unique qui n'est pas déjà utilisé
+  slug: "swansea-logo", //
   title: "Logo Swansea City FC : Histoire et Symbolisme des Swans [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Swansea City, son évolution emblématique et la signification de ses symboles distinctifs dans cette analyse complète.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Swansea City, son évolution emblématique et la signification de ses symboles distinctifs dans cette analyse complète.",
   date: "2024-06-06",
   galleryImageId: 552,
   content: `# L'Histoire Fascinante du **Logo Swansea City FC** à Travers les Âges
@@ -56,8 +57,8 @@ En définitive, le **swansea city fc logo** représente bien plus qu'un simple d
 À travers ses multiples évolutions, le **logo swansea city** a su préserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles réalités du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du **swansea fc logo** un cas d'étude fascinant dans le domaine des identités visuelles sportives.
 
 Que vous soyez un supporter passionné des Swans ou simplement un amateur de design sportif, le **swansea logo** mérite d'être apprécié pour sa richesse symbolique et son importance culturelle dans l'histoire du football gallois et britannique.`,
-  keywords: "swansea city fc logo, logo swansea, logo swansea city, swansea city afc logo, swansea city logo, swansea city logo png, swansea fc logo, swansea logo, swansea logo png, logo de foot angleterre swansea, logo de foot swansea, logo de foot swansea angleterre, logo png swansea, swansea fc new logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "swansea city fc logo, logo swansea, logo swansea city, swansea city afc logo, swansea city logo, swansea city logo png, swansea fc logo, swansea logo, swansea logo png, logo de foot angleterre swansea, logo de foot swansea, logo de foot swansea angleterre, logo png swansea, swansea fc new logo",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

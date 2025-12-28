@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const stuttgartLogoPost: BlogPost = {
   id: 549,
+  slug: "stuttgart-logo", //
   title: "Logo Stuttgart : Histoire et Évolution de l'Emblème VfB [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Stuttgart, l'évolution de l'emblème du VfB Stuttgart et la signification de ses symboles emblématiques du club allemand.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Stuttgart, l'évolution de l'emblème du VfB Stuttgart et la signification de ses symboles emblématiques du club allemand.",
   date: "2024-05-25",
   galleryImageId: 549,
   content: `# L'Histoire Fascinante du **Logo Stuttgart**
@@ -62,7 +63,8 @@ Le **logo stuttgart** représente un parfait équilibre entre respect des tradit
 Pour les générations futures de supporters, le **logo vfb stuttgart** continuera d'incarner les valeurs fondamentales du club : tradition, excellence et passion. Que ce soit sur les maillots des joueurs, dans les rues de Stuttgart ou sur les écrans du monde entier, le **stuttgart fc logo** demeure un symbole puissant qui transcende le simple cadre sportif pour devenir une véritable icône culturelle.
 
 Alors que le club poursuit son parcours dans l'élite du football allemand et européen, le **stuttgart logo png** continuera d'évoluer subtilement tout en restant fidèle à ses racines historiques, assurant ainsi la continuité visuelle d'une des identités les plus reconnaissables du football allemand.`,
-  keywords: "logo stuttgart, stuttgart logo, logo vfb stuttgart, vfb stuttgart logo, logo de stuttgart, logo stuttgart fc, logo stuttgart png, stuttgart fc logo, stuttgart logo png, vfb stuttgart logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo stuttgart, stuttgart logo, logo vfb stuttgart, vfb stuttgart logo, logo de stuttgart, logo stuttgart fc, logo stuttgart png, stuttgart fc logo, stuttgart logo png, vfb stuttgart logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

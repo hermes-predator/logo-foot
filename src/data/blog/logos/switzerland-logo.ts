@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const switzerlandLogoPost: BlogPost = {
   id: 554,
+  slug: "suisse-logo", //
   title: "Le **Logo Suisse** de Football : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire et la signification du **logo suisse football**. Analyse complète du **logo foot suisse**, symbole d'excellence et de précision helvétique.",
+  excerpt:
+    "Découvrez l'histoire et la signification du **logo suisse football**. Analyse complète du **logo foot suisse**, symbole d'excellence et de précision helvétique.",
   date: "2024-04-15",
   galleryImageId: 554,
   content: `# Le **Logo Suisse** de Football : Histoire et Design
@@ -68,7 +70,8 @@ Le **logo suisse png** est particulièrement utilisé pour les applications digi
 4. Un design à la fois traditionnel et moderne
 
 Cette perception positive renforce l'image de marque du **suisse foot logo** et contribue au rayonnement du football helvétique à l'échelle mondiale.`,
-  keywords: "logo suisse, logo suisse foot, suisse logo, logo suisse football, logo foot suisse, suisse foot logo, logo club foot suisse, logo suisse png, équipe nationale suisse, croix suisse football, emblème suisse foot, drapeau suisse foot",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo suisse, logo suisse foot, suisse logo, logo suisse football, logo foot suisse, suisse foot logo, logo club foot suisse, logo suisse png, équipe nationale suisse, croix suisse football, emblème suisse foot, drapeau suisse foot",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

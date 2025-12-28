@@ -1,11 +1,12 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bursasporLogoPost: BlogPost = {
   id: 142,
+  slug: "bursaspor-logo", //
   title: "**Bursaspor Logo** : Histoire et Symbolique de l'Emblème du Club Turc [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Bursaspor**, un symbole emblématique qui représente la fierté du football turc et l'identité unique de ce club légendaire.",
-  date: "2024-04-15", 
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Bursaspor**, un symbole emblématique qui représente la fierté du football turc et l'identité unique de ce club légendaire.",
+  date: "2024-04-15",
   galleryImageId: 142,
   content: `# Histoire du **Bursaspor Logo**
 
@@ -75,6 +76,6 @@ Le **bursaspor logo** s'utilise sur différents supports :
 - Adaptabilité aux supports
 - Protection de la marque`,
   keywords: "bursaspor logo, logo bursaspor, logo bursaspor png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

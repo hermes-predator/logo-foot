@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cadizLogoPost: BlogPost = {
   id: 145, // ID unique pour ce nouvel article
+  slug: "cadix-logo", //
   title: "Logo Cadix : Histoire et Évolution de l'Emblème Andalou [2024]",
   date: "2025-04-11",
   galleryImageId: 145,
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo Cadix, emblème du club andalou. Analyse complète des symboles et des couleurs du blason historique du Cádiz CF.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo Cadix, emblème du club andalou. Analyse complète des symboles et des couleurs du blason historique du Cádiz CF.",
   content: `# L'Histoire Fascinante du **Logo Cadix**
 
 Le **cadix logo** représente bien plus qu'un simple emblème sportif : c'est un symbole d'identité qui incarne l'histoire et les valeurs d'un club profondément ancré dans la région andalouse. Dans cet article, nous explorerons en détail l'histoire et l'évolution du **logo cadix**, ce blason qui fait la fierté des supporters du club jaune et bleu.

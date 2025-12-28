@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brightonLogoPost: BlogPost = {
   id: 135, // Using a unique ID that isn't already used
+  slug: "brighton-logo", //
   title: "Logo Brighton : Histoire et Design de l'Emblème des Seagulls [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Brighton & Hove Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Brighton & Hove Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-12",
   galleryImageId: 135,
   content: `# L'Histoire Fascinante du **Logo Brighton**
@@ -52,7 +53,8 @@ Le défi pour les futures versions du **logo brighton & hove albion** sera de ma
 Le **logo brighton** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **brighton & hove albion fc logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **brighton albion logo** continuera de faire briller les couleurs bleues et blanches des Seagulls sur les terrains de football et au-delà.`,
-  keywords: "logo brighton, brighton logo, brighton & hove albion logo, brighton and hove albion logo, brighton and hove logo, brighton fc logo, brighton hove albion logo, brighton logo png, logo brighton & hove albion, logo brighton png, logo de brighton, brighton & hove albion fc logo, brighton & hove albion logo png, brighton albion logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo brighton, brighton logo, brighton & hove albion logo, brighton and hove albion logo, brighton and hove logo, brighton fc logo, brighton hove albion logo, brighton logo png, logo brighton & hove albion, logo brighton png, logo de brighton, brighton & hove albion fc logo, brighton & hove albion logo png, brighton albion logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

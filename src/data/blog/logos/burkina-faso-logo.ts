@@ -1,14 +1,17 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const burkinaFasoLogoPost: BlogPost = {
   id: 140,
+  slug: "burkina-faso-logo", //
   title: "Logo Burkina Faso : Histoire et Symbolisme de l'Emblème des Étalons",
-  excerpt: "Tout ce que vous devez savoir sur le logo de l'équipe nationale du Burkina Faso. Découvrez l'histoire, la signification et l'évolution du blason des Étalons.",
+  excerpt:
+    "Tout ce que vous devez savoir sur le logo de l'équipe nationale du Burkina Faso. Découvrez l'histoire, la signification et l'évolution du blason des Étalons.",
   date: "2024-07-03",
   category: "national-logos", // Changed from 'logos'
   subCategory: "national-logos", // Kept the same
   galleryImageId: 140,
-  keywords: "logo Burkina Faso, Burkina Faso foot logo, Burkina Faso logo, logo du Burkina Faso, Burkina Faso logo png, Burkina Faso foot logo png, Burkina Faso logo foot, équipe nationale, étalons, football africain, emblème sportif",
+  keywords:
+    "logo Burkina Faso, Burkina Faso foot logo, Burkina Faso logo, logo du Burkina Faso, Burkina Faso logo png, Burkina Faso foot logo png, Burkina Faso logo foot, équipe nationale, étalons, football africain, emblème sportif",
   content: `# Logo Burkina Faso : Histoire et Symbolisme de l'Emblème des Étalons
 
 Le **logo Burkina Faso** représente l'identité visuelle et les valeurs de l'équipe nationale de football surnommée "Les Étalons". Dans cet article, nous analyserons en détail le **logo du Burkina Faso**, son histoire, sa symbolique et son évolution au fil des années.
@@ -111,5 +114,5 @@ Le **logo du Burkina Faso** n'a pas subi de changement majeur récemment, mais d
 
 **Quelles sont les différences entre l'ancien et le nouveau logo Burkina Faso?**
 Les principales différences entre l'ancien et le nouveau **Burkina Faso foot logo** concernent principalement la clarté des détails, la typographie et l'optimisation pour les plateformes digitales.
-`
+`,
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bwinLogoPost: BlogPost = {
   id: 144, // Using a unique ID that isn't already used
+  slug: "bwin-logo", //
   title: "Logo Bwin : Histoire et Design de l'Emblème du Bookmaker [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Bwin : origines, évolution et analyse du design de l'emblème emblématique du célèbre bookmaker sportif.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Bwin : origines, évolution et analyse du design de l'emblème emblématique du célèbre bookmaker sportif.",
   date: "2024-06-17",
   galleryImageId: 144,
   content: `# L'Histoire Fascinante du **Logo Bwin**
@@ -48,7 +49,8 @@ Alors que le paysage des paris sportifs continue d'évoluer avec l'émergence de
 Pour les années à venir, on peut s'attendre à ce que le **bwin.com logo** continue de s'adapter subtilement aux tendances du design tout en conservant ses éléments distinctifs. Cette évolution mesurée est caractéristique des logos les plus durables, qui parviennent à rester pertinents tout en maintenant une continuité visuelle rassurante pour leur public.
 
 Le **bwin logo png** continuera sans doute à occuper une place importante dans l'imaginaire collectif des amateurs de sport et de paris, témoignant de la capacité des symboles visuels à transcender leur fonction première pour devenir de véritables icônes culturelles associées à des expériences et des émotions partagées par une communauté mondiale.`,
-  keywords: "bwin logo, bwin logo png, logo bwin, logo bwin png, bwin com logo, bwin.com logo, bookmaker logo, paris sportifs logo, sponsor football logo, bwin brand",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "bwin logo, bwin logo png, logo bwin, logo bwin png, bwin com logo, bwin.com logo, bookmaker logo, paris sportifs logo, sponsor football logo, bwin brand",
+  category: "logos",
+  subCategory: "club-logos",
 };

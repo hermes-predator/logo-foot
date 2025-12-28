@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brondbyLogoPost: BlogPost = {
   id: 137,
+  slug: "brondby-logo", //
   title: "Brøndby IF Logo : Histoire et Signification de l'Emblème Jaune et Bleu",
-  excerpt: "Découvrez l'histoire fascinante du logo de Brøndby IF, emblème iconique du club danois avec ses couleurs jaune et bleu distinctives et sa symbolique profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Brøndby IF, emblème iconique du club danois avec ses couleurs jaune et bleu distinctives et sa symbolique profonde.",
   date: "2025-04-12",
   galleryImageId: 137,
   content: `
@@ -76,6 +77,7 @@ Le **Brøndby IF logo** est plus qu'un simple emblème de club de football. Il r
 
 Au fil des années, le **logo Brøndby IF** a évolué tout en conservant son essence, démontrant comment un design fort peut traverser les époques tout en restant pertinent et significatif. C'est un exemple parfait de la façon dont un logo sportif peut transcender sa fonction première pour devenir un véritable symbole culturel.
 `,
-  category: 'logos',
-  keywords: "Brøndby logo, Brøndby IF logo, logo Brøndby IF, emblème Brøndby, football danois, couleurs jaune et bleu, design logo football, histoire Brøndby, identité visuelle club"
+  category: "logos",
+  keywords:
+    "Brøndby logo, Brøndby IF logo, logo Brøndby IF, emblème Brøndby, football danois, couleurs jaune et bleu, design logo football, histoire Brøndby, identité visuelle club",
 };

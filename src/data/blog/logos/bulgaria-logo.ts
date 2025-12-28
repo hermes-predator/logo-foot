@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bulgariaLogoPost: BlogPost = {
   id: 138,
+  slug: "bulgarie-logo", //
   title: "Analyse du Logo de la Bulgarie : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la sélection bulgare de football, ses couleurs emblématiques et son évolution à travers les années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la sélection bulgare de football, ses couleurs emblématiques et son évolution à travers les années.",
   date: "2024-05-04",
   galleryImageId: 138,
   content: `# L'Histoire du **Logo Bulgarie** à Travers les Âges
@@ -70,7 +72,8 @@ Alors que la Bulgarie continue d'écrire son histoire footballistique, son **log
 Le **Bulgarie foot logo** représente un parfait équilibre entre tradition et modernité, incarnant l'âme d'une nation passionnée de football. À travers les victoires et les défis, ce symbole continuera de rassembler les supporters bulgares sous une bannière commune, témoignant de la force unificatrice du sport le plus populaire au monde.
 
 Que l'avenir réserve au football bulgare, son **logo Bulgari PNG** restera un élément central de son identité, évoluant peut-être dans sa forme mais conservant toujours son essence et sa signification profonde pour le peuple bulgare.`,
-  keywords: "logo bulgarie, bulgarie logo, logo bulgarie foot, logo foot bulgarie, bulgarie foot logo, logo bulgari foot",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo bulgarie, bulgarie logo, logo bulgarie foot, logo foot bulgarie, bulgarie foot logo, logo bulgari foot",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

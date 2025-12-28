@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const burtonAlbionLogoPost: BlogPost = {
   id: 143, // Using a unique ID
+  slug: "burton-albion-logo", //
   title: "**Logo Burton Albion** : Histoire et Design de l'Emblème des Brewers [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Burton Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Burton Albion : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-15",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  category: "logos",
+  subCategory: "english-clubs",
   galleryImageId: 143,
   content: `# L'Histoire Fascinante du **Logo Burton Albion**
 
@@ -34,5 +35,6 @@ Au-delà de sa dimension sportive, le **logo burton albion** est devenu un véri
 Le **logo burton albion png** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **logo burton albion** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région.`,
-  keywords: "**burton albion logo**:20, **burton albion logo png**:10, **logo burton albion**:10, **logo burton albion png**:10"
+  keywords:
+    "**burton albion logo**:20, **burton albion logo png**:10, **logo burton albion**:10, **logo burton albion png**:10",
 };

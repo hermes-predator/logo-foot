@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cambridgeUnitedLogoPost: BlogPost = {
   id: 148,
+  slug: "cambridge-united-logo", //
   title: "**Logo Cambridge United** : Histoire et Design de l'Emblème des U's [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **cambridge united logo**, son évolution et la symbolique de cet emblème emblématique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **cambridge united logo**, son évolution et la symbolique de cet emblème emblématique du football anglais.",
   date: "2025-04-18",
   galleryImageId: 148,
   content: `# L'Histoire Fascinante du **Logo Cambridge United**
@@ -35,6 +36,6 @@ Le logo est devenu un symbole important pour la communauté de Cambridge, repré
 
 Le **cambridge united logo** est bien plus qu'un simple emblème sportif - c'est un symbole qui capture l'essence d'une ville universitaire et de son club de football historique.`,
   keywords: "cambridge united logo:20, cambridge united logo png:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  category: "logos",
+  subCategory: "english-clubs",
 };

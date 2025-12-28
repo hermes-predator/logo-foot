@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const burnleyLogoPost: BlogPost = {
   id: 141,
+  slug: "burnley-logo", //
   title: "Logo Burnley : Histoire et Design de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Burnley : origines, évolution et symbolisme de l'emblème emblématique des Clarets.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Burnley : origines, évolution et symbolisme de l'emblème emblématique des Clarets.",
   date: "2024-04-14",
   galleryImageId: 141,
   content: `# L'Histoire Passionnante du **Logo Burnley**
@@ -53,7 +54,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **logo burnley png** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **burnley football club logo**.
 
 Le **burnley foot nouveau logo** témoigne de la capacité du club à évoluer avec son temps. Alors que Burnley FC poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines dans le Lancashire, fait du **logo burnley fc** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football anglais.`,
-  keywords: "burnley logo, logo burnley, burnley fc logo, burnley football club logo, burnley logo png, logo burnley fc, logo burnley png, burnley fc logo png, burnley foot nouveau logo",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "burnley logo, logo burnley, burnley fc logo, burnley football club logo, burnley logo png, logo burnley fc, logo burnley png, burnley fc logo png, burnley foot nouveau logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

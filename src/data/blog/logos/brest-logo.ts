@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brestLogoPost: BlogPost = {
   id: 134,
+  slug: "brest-logo", //
   title: "Logo Stade Brestois : Histoire et Design de l'Emblème Breton [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Stade Brestois : origines, évolution et symbolisme de l'emblème emblématique du club finistérien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Stade Brestois : origines, évolution et symbolisme de l'emblème emblématique du club finistérien.",
   date: "2024-03-31",
   galleryImageId: 134,
   content: `# L'Histoire Fascinante du **Logo Stade Brestois**
@@ -52,7 +53,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **logo brest png** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **logo brest foot**.
 
 Alors que le Stade Brestois poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines bretonnes, fait du **logo stade brestois** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football breton.`,
-  keywords: "logo brest, brest logo, logo brest foot, logo brest png, logo stade brestois, stade brestois logo, logo stade brestois 29, logo stade brestois png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo brest, brest logo, logo brest foot, logo brest png, logo stade brestois, stade brestois logo, logo stade brestois 29, logo stade brestois png",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bresciaLogoPost: BlogPost = {
   id: 133,
+  slug: "brescia-logo", //
   title: "Logo Brescia : Histoire et Évolution de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Brescia Calcio : des origines à aujourd'hui, évolution et signification de cet emblème emblématique du football italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Brescia Calcio : des origines à aujourd'hui, évolution et signification de cet emblème emblématique du football italien.",
   date: "2024-05-15",
   galleryImageId: 133,
   content: `# L'Histoire Fascinante du **Logo Brescia**
@@ -64,7 +65,8 @@ Alors que le club continue d'écrire son histoire, le **logo brescia** pourrait 
 Les technologies émergentes offriront probablement de nouvelles possibilités d'expression pour le **brescia fc logo**, notamment dans les environnements immersifs et les expériences digitales interactives qui pourraient transformer la façon dont les supporters interagissent avec l'emblème de leur club.
 
 Quelle que soit son évolution future, le **logo brescia calcio** restera un pilier fondamental de l'identité du club, un symbole rassembleur qui transcende les générations et incarne l'esprit unique du football bresciain dans le panorama sportif italien et international.`,
-  keywords: "brescia calcio logo, brescia logo, logo brescia, logo brescia calcio, brescia fc logo, brescia logo png, logo brescia png, brescia foot logo, brescia football club official logo, brescia italie logo, brescia italie logo foot",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "brescia calcio logo, brescia logo, logo brescia, logo brescia calcio, brescia fc logo, brescia logo png, logo brescia png, brescia foot logo, brescia football club official logo, brescia italie logo, brescia italie logo foot",
+  category: "logos",
+  subCategory: "club-logos",
 };

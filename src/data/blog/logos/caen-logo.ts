@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const caenLogoPost: BlogPost = {
   id: 146,
+  slug: "caen-logo", //
   title: "Logo Caen : Histoire et Design de l'Emblème Normand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo SM Caen, son évolution, sa symbolique et comment l'écusson du Stade Malherbe représente l'identité normande.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo SM Caen, son évolution, sa symbolique et comment l'écusson du Stade Malherbe représente l'identité normande.",
   date: "2024-05-16",
   galleryImageId: 146,
   content: `# L'Histoire Fascinante du **Logo Caen**
@@ -72,7 +73,8 @@ Le **logo caen** est bien plus qu'un simple symbole graphique – c'est le gardi
 Son efficacité réside dans sa capacité à incarner à la fois l'héritage historique du club et ses ambitions contemporaines. Le **stade malherbe caen logo** continue ainsi de jouer son rôle essentiel de trait d'union entre le passé glorieux du club, son présent et les aspirations qu'il nourrit pour l'avenir.
 
 Pour les supporters, le **logo stade malherbe caen** représente un point de ralliement émotionnel, un symbole de fierté qui transcende les performances sportives fluctuantes pour incarner un attachement durable à des couleurs et à des valeurs. C'est cette dimension affective qui fait du **logo caen foot** non pas un simple emblème, mais un véritable patrimoine partagé qui unit des générations de Normands dans leur passion pour le football.`,
-  keywords: "logo caen, logo sm caen, sm caen logo, stade malherbe caen logo, logo stade malherbe caen, caen logo, logo caen foot, logo stade malherbe de caen, caen fc logo, caen foot logo, caen logo png, logo du stade malherbe de caen, logo foot caen, logo sm caen png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo caen, logo sm caen, sm caen logo, stade malherbe caen logo, logo stade malherbe caen, caen logo, logo caen foot, logo stade malherbe de caen, caen fc logo, caen foot logo, caen logo png, logo du stade malherbe de caen, logo foot caen, logo sm caen png",
+  category: "logos",
+  subCategory: "club-logos",
 };

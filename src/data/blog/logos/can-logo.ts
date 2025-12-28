@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const canLogoPost: BlogPost = {
   id: 150,
+  slug: "can-logo", //
   title: "Logo CAN : Histoire et Design de l'Emblème de la Coupe d'Afrique [2025]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la CAN 2025, son évolution, sa symbolique et comment l'emblème de la Coupe d'Afrique des Nations représente le football africain.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la CAN 2025, son évolution, sa symbolique et comment l'emblème de la Coupe d'Afrique des Nations représente le football africain.",
   date: "2024-05-20",
   galleryImageId: 150,
   content: `# L'Histoire Fascinante du **Logo CAN**
@@ -60,6 +62,6 @@ Pour les millions de supporters à travers l'Afrique et au-delà, le **logo can 
 
 Alors que nous attendons avec impatience les futures éditions de ce tournoi emblématique, une chose est certaine : le **logo can png** continuera d'évoluer, d'inspirer et de captiver, tout comme le beau jeu qu'il représente si fièrement.`,
   keywords: "logo can, logo can 2025, can logo, can 2025 logo, can logo png, logo can png",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

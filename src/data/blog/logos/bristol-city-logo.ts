@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bristolCityLogoPost: BlogPost = {
   id: 136,
+  slug: "bristol-city-logo", //
   title: "**Logo Bristol City FC** : Histoire et Evolution de l'Emblème des Robins [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Bristol City**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Bristol City**, son évolution au fil des années et la symbolique de cet emblème unique du football anglais.",
   date: "2024-04-12",
   galleryImageId: 136,
   content: `# **Logo Bristol City FC** : L'Histoire d'un Emblème Emblématique du Football Anglais
@@ -81,7 +82,8 @@ Dans le contexte de l'évolution récente du club, le **logo de foot Bristol Cit
 Alors que le club poursuit son développement sportif et institutionnel, le **logo Bristol City** continue d'évoluer subtilement pour s'adapter aux exigences contemporaines tout en préservant son essence historique. Ces évolutions contrôlées témoignent d'une gestion avisée de l'actif immatériel majeur que constitue le **Bristol City Football Club logo** pour le club.
 
 En définitive, le **logo Bristol City** illustre remarquablement comment un emblème sportif peut évoluer organiquement tout en conservant son pouvoir fédérateur et sa résonance émotionnelle. Bien plus qu'un simple élément graphique, il constitue un véritable patrimoine vivant qui continue d'écrire son histoire parallèlement à celle du club qu'il représente.`,
-  keywords: "bristol city fc logo:20, bristol city football club logo:20, bristol city logo:20, logo bristol city:20, bristol city new logo:10, logo de foot bristol city angleterre:10, logo fc bristol city:10",
-  category: 'logos',
-  subCategory: 'english-clubs',
+  keywords:
+    "bristol city fc logo:20, bristol city football club logo:20, bristol city logo:20, logo bristol city:20, bristol city new logo:10, logo de foot bristol city angleterre:10, logo fc bristol city:10",
+  category: "logos",
+  subCategory: "english-clubs",
 };

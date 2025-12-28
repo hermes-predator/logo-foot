@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const brentfordLogoPost: BlogPost = {
   id: 132, // Using a unique ID that hasn't been used yet
+  slug: "brentford-logo", //
   title: "Logo Brentford : Histoire et Design de l'Emblème des Bees [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Brentford FC : origines, évolution et symbolisme de l'emblème emblématique du club londonien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Brentford FC : origines, évolution et symbolisme de l'emblème emblématique du club londonien.",
   date: "2024-06-16",
   galleryImageId: 132,
   content: `# L'Histoire Fascinante du **Logo Brentford**
@@ -58,7 +59,8 @@ Le défi pour les futures versions du **logo brentford fc** sera de maintenir ce
 Le **brentford logo** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **brentford football club logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une communauté. Le **logo brentford** continuera de faire briller les couleurs rouge et blanc des Bees sur les terrains de football et au-delà.`,
-  keywords: "brentford fc logo, brentford football club logo, brentford logo, logo brentford, brentford logo png, logo brentford fc, logo brentford png, brentford fc logo png, brentford football logo, logo de brentford",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "brentford fc logo, brentford football club logo, brentford logo, logo brentford, brentford logo png, logo brentford fc, logo brentford png, brentford fc logo png, brentford football logo, logo de brentford",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,12 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const canadaLogoPost: BlogPost = {
   id: 151,
-  title: "**Logo Canada** : Le Symbole Dynamique du Football Canadien - Une Odyssée Visuelle de Passion et de Réussite [2024]",
-  excerpt: "Plongez dans l'histoire épique du logo de l'équipe nationale canadienne de football, un emblème qui raconte plus qu'une simple identité visuelle - c'est le récit d'une nation qui transcende les frontières du sport.",
+  slug: "canada-logo", //
+  title:
+    "**Logo Canada** : Le Symbole Dynamique du Football Canadien - Une Odyssée Visuelle de Passion et de Réussite [2024]",
+  excerpt:
+    "Plongez dans l'histoire épique du logo de l'équipe nationale canadienne de football, un emblème qui raconte plus qu'une simple identité visuelle - c'est le récit d'une nation qui transcende les frontières du sport.",
   date: "2024-05-15",
   category: "national-logos",
   subCategory: "national-logos",
@@ -38,5 +40,6 @@ Le design contemporain du **logo canada foot** reflète plus qu'une identité vi
 ## Conclusion : **Un Symbole en Mouvement**
 
 Le **logo canada** est devenu bien plus qu'un simple emblème. C'est le récit vivant d'une nation qui a choisi de réinventer sa relation avec le football, une histoire dessinée avec passion, courage et une vision résolument tournée vers l'avenir.`,
-  keywords: "canada logo, logo canada, logo canada foot, canada football logo, canada logo png, canada logo vector, canada soccer logo, logo canada png, logo du canada, canada soccer team logo, football canada logo, logo canada soccer"
+  keywords:
+    "canada logo, logo canada, logo canada foot, canada football logo, canada logo png, canada logo vector, canada soccer logo, logo canada png, logo du canada, canada soccer team logo, football canada logo, logo canada soccer",
 };

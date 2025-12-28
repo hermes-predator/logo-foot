@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const bundesligaLogoPost: BlogPost = {
   id: 139,
+  slug: "bundesliga-logo-brand", //
   title: "Logo Bundesliga : Analyse Design Football Allemand [2024]",
-  excerpt: "Découvrez l'analyse complète du logo Bundesliga. Histoire, évolution et signification du symbole du championnat allemand de football.",
+  excerpt:
+    "Découvrez l'analyse complète du logo Bundesliga. Histoire, évolution et signification du symbole du championnat allemand de football.",
   date: "2024-03-20",
   galleryImageId: 139,
   content: `# L'Histoire Fascinante du **Logo Bundesliga**
@@ -57,7 +59,8 @@ Le **logo bundesliga** constitue un exemple remarquable de design sportif effica
 Que ce soit dans sa version imprimée sur les produits officiels, sa déclinaison animée sur les écrans du stade ou sa version optimisée pour le digital (**logo bundesliga png**), l'emblème du championnat allemand continue de porter fièrement les valeurs d'une compétition parmi les plus respectées au monde.
 
 À mesure que la Bundesliga poursuit son développement international, son logo demeure un atout stratégique majeur, un symbole instantanément reconnaissable qui transcende les barrières linguistiques et culturelles pour unir des millions de passionnés autour d'une même passion : le football allemand dans toute sa splendeur.`,
-  keywords: "logo bundesliga, bundesliga logo, bundesliga logo png, logos bundesliga, bundesliga logo club, bundesliga logo evolution, logo bundesliga club, logo bundesliga png, logo de bundesliga, logo de la bundesliga",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "logo bundesliga, bundesliga logo, bundesliga logo png, logos bundesliga, bundesliga logo club, bundesliga logo evolution, logo bundesliga club, logo bundesliga png, logo de bundesliga, logo de la bundesliga",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

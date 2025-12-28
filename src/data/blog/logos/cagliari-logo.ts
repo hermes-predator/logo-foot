@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cagliariLogoPost: BlogPost = {
   id: 147,
+  slug: "cagliari-logo", //
   title: "Logo Cagliari : Histoire et Évolution de l'Emblème Sarde [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Cagliari Calcio : origines, évolution et symbolisme de l'emblème emblématique du club sarde.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Cagliari Calcio : origines, évolution et symbolisme de l'emblème emblématique du club sarde.",
   date: "2024-06-13",
   galleryImageId: 147,
   content: `# L'Histoire Fascinante du **Logo Cagliari**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo cagliari calcio** incarne les
 Alors que le Cagliari continue d'écrire son histoire sur les terrains de Serie A, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo cagliari** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **cagliari logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "cagliari calcio logo, cagliari logo, cagliari logo png, logo cagliari, logo cagliari calcio, logo cagliari png, cagliari foot logo, logo club cagliari, logo club de foot cagliari, logo de foot cagliari, logo png cagliari, logo png cagliari football",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "cagliari calcio logo, cagliari logo, cagliari logo png, logo cagliari, logo cagliari calcio, logo cagliari png, cagliari foot logo, logo club cagliari, logo club de foot cagliari, logo de foot cagliari, logo png cagliari, logo png cagliari football",
+  category: "logos",
+  subCategory: "club-logos",
 };

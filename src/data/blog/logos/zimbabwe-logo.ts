@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const zimbabweLogoPost: BlogPost = {
   id: 607,
+  slug: "zimbabwe-logo", //
   title: "**Logo Zimbabwe** : Histoire et Symbolisme des Warriors [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale zimbabwéenne : des origines à aujourd'hui, signification et évolution de cet emblème africain emblématique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale zimbabwéenne : des origines à aujourd'hui, signification et évolution de cet emblème africain emblématique.",
   date: "2024-04-27",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Plus qu'un simple emblème sportif, le **zimbabwe football logo** est devenu un 
 ## Une Vision Tournée vers l'Avenir
 
 Le **logo de l'équipe de football zimbabwe** continue d'évoluer tout en préservant son essence. Les **logos federation football zimbabwe** s'adaptent aux standards modernes du design sportif tout en maintenant un lien fort avec l'héritage culturel du pays. Cette approche équilibrée fait du **zimbabwe logo png** un symbole intemporel qui inspire les générations actuelles et futures de footballeurs zimbabwéens.`,
-  keywords: "logo zimbabwe, zimbabwe logo, zimbabwe logo png, zimbabwe football logo, equipe foot zimbabwe logo, logo de l'équipe de football zimbabwe, logos federation football zimbabwe"
+  keywords:
+    "logo zimbabwe, zimbabwe logo, zimbabwe logo png, zimbabwe football logo, equipe foot zimbabwe logo, logo de l'équipe de football zimbabwe, logos federation football zimbabwe",
 };

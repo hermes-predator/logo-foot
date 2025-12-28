@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const scotlandLogoPost: BlogPost = {
   id: 511,
+  slug: "ecosse-logo", //
   title: "Logo Ecosse : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Ecosse : des origines à aujourd'hui, évolution et signification de l'emblème du football écossais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale d'Ecosse : des origines à aujourd'hui, évolution et signification de l'emblème du football écossais.",
   date: "2024-05-28",
   galleryImageId: 511,
   content: `# L'Histoire Fascinante du **Logo Ecosse** Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **ecosse logo png** ont également fait
 Au-delà de sa dimension sportive, le **logo ecosse foot** est devenu un puissant symbole de la fierté nationale écossaise. Il représente bien plus qu'une équipe de football : il incarne une philosophie de jeu, un esprit combatif et des valeurs de détermination qui caractérisent l'approche écossaise du sport le plus populaire au monde.
 
 Les joueurs qui portent fièrement le maillot orné du **logo ecosse foot png** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a contribué de manière significative à l'histoire du football mondial et dont le **ecosse logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo ecosse, ecosse logo, logo ecosse foot, logo ecosse foot png, ecosse logo foot, logo foot ecosse, ecosse logo png, foot logo ecosse",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo ecosse, ecosse logo, logo ecosse foot, logo ecosse foot png, ecosse logo foot, logo foot ecosse, ecosse logo png, foot logo ecosse",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

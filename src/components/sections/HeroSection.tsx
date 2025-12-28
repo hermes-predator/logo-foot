@@ -223,7 +223,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* Badges de confiance minimalistes */}
-            <div className="flex flex-wrap items-center gap-2.5 mt-3 text-[10px] sm:text-[11px] text-gray-500">
+            <div className="flex flex-wrap items-center gap-2.5 mt-6 text-[10px] sm:text-[11px] text-gray-500">
               <div className="flex items-center gap-1.5">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-3.5" />
                 <span>Paiement Sécurisé</span>

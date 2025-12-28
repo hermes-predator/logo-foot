@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const slovakiaLogoPost: BlogPost = {
   id: 524,
+  slug: "slovaquie-logo", //
   title: "Logo Slovaquie : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Slovaquie : des origines à aujourd'hui, évolution et signification de l'emblème du football slovaque.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Slovaquie : des origines à aujourd'hui, évolution et signification de l'emblème du football slovaque.",
   date: "2024-05-31",
   galleryImageId: 524,
   content: `# L'Histoire Fascinante du **Logo Slovaquie** Football
@@ -51,7 +53,8 @@ Des versions animées et interactives du **logo slovaquie** ont également fait 
 Au-delà de sa dimension sportive, le **logo de la slovaquie** est devenu un puissant symbole des ambitions du football slovaque sur la scène internationale. Le logo représente désormais une nouvelle génération de talents slovaques qui aspirent à renouer avec les succès passés et à écrire de nouvelles pages glorieuses dans l'histoire du football national.
 
 Les joueurs qui portent fièrement le maillot orné du **logo slovaquie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays dont la passion pour le football ne cesse de grandir et dont le **logo club football slovaquie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo slovaquie, logo foot slovaquie, logo slovaquie foot, logo club foot slovaquie, logo club football slovaquie, logo de la slovaquie",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo slovaquie, logo foot slovaquie, logo slovaquie foot, logo club foot slovaquie, logo club football slovaquie, logo de la slovaquie",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

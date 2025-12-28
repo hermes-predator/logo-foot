@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const seattleSoundersLogoPost: BlogPost = {
   id: 513,
+  slug: "seattle-sounders-logo", //
   title: "**Logo Seattle Sounders** : Histoire et Design de l'Emblème Iconique de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Seattle Sounders**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Seattle Sounders**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 513,
   content: `# L'Histoire Fascinante du **Logo Seattle Sounders**
@@ -72,7 +73,8 @@ Les boutiques officielles du club proposent une large gamme de produits arborant
 Le **seattle sounders logo** illustre parfaitement comment une franchise sportive relativement jeune peut créer une identité visuelle forte, capable de s'imposer dans un paysage culturel compétitif. En combinant habilement références locales et design contemporain, le **seattle sounders fc logo** a réussi à créer un emblème authentique qui résonne auprès des habitants de Seattle comme des amateurs de football du monde entier.
 
 Plus qu'un simple emblème, le **seattle sounders logo png** est devenu un symbole d'appartenance pour une communauté de supporters passionnés et un ambassadeur visuel pour la ville de Seattle dans l'univers du football international. Sa conception soignée et sa pertinence continue font du **logo de foot seattle sounders** un cas d'étude fascinant dans le domaine du design sportif et un exemple que de nombreuses nouvelles franchises cherchent à suivre.`,
-  keywords: "logo seattle sounders:20, seattle sounders fc logo:20, seattle sounders logo:20, seattle sounders logo png:20, logo de foot seattle sounders:20, seattle sounders logos:10, seattles sounders logo png:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "logo seattle sounders:20, seattle sounders fc logo:20, seattle sounders logo:20, seattle sounders logo png:20, logo de foot seattle sounders:20, seattle sounders logos:10, seattles sounders logo png:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

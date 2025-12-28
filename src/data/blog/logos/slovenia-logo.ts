@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sloveniaLogoPost: BlogPost = {
   id: 526,
+  slug: "slovenie-logo", //
   title: "**Logo Slovénie** : Histoire et Évolution de l'Emblème des Dragons [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale slovène : des origines à aujourd'hui, évolution et signification de cet emblème unique des Balkans.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale slovène : des origines à aujourd'hui, évolution et signification de cet emblème unique des Balkans.",
   date: "2024-06-20",
   category: "national-logos",
   subCategory: "national-logos",
@@ -28,5 +29,6 @@ Depuis sa première qualification à l'Euro 2000 et à la Coupe du Monde 2002, l
 ## Un Emblème qui Transcende le Sport
 
 Plus qu'un simple symbole sportif, le **logo slovenie** est devenu un véritable ambassadeur culturel. Il représente non seulement l'excellence sportive slovène, mais aussi les valeurs fondamentales du pays : la persévérance, l'innovation et l'unité. Sur les maillots des joueurs comme dans le cœur des supporters, cet emblème incarne la fierté d'une nation qui continue de surprendre et d'inspirer sur la scène footballistique internationale.`,
-  keywords: "logo slovénie, logo slovenie, logo foot slovénie, logo slovenie foot, slovenie foot logo, club foot slovenie logo, equipe slovenie logo, logo de slovenie, logo slovénie png, slovenia logo, slovenia football logo"
+  keywords:
+    "logo slovénie, logo slovenie, logo foot slovénie, logo slovenie foot, slovenie foot logo, club foot slovenie logo, equipe slovenie logo, logo de slovenie, logo slovénie png, slovenia logo, slovenia football logo",
 };

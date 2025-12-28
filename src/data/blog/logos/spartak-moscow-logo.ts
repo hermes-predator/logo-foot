@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const spartakMoscowLogoPost: BlogPost = {
   id: 534,
+  slug: "spartak-moscou-logo", //
   title: "**Logo Spartak Moscou** : Histoire et Symbolisme de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Spartak Moscou, un symbole emblématique du football russe qui incarne la tradition et la passion.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Spartak Moscou, un symbole emblématique du football russe qui incarne la tradition et la passion.",
   date: "2024-04-15",
   galleryImageId: 534,
   content: `# Histoire du **Spartak Moscou Logo**
@@ -74,7 +75,8 @@ Le **logo Spartak Moscou** s'adapte à de nombreux supports :
 - Normes graphiques
 - Utilisations officielles
 - Versions autorisées`,
-  keywords: "logo spartak moscou, spartak moscou logo, logo de foot spartak moscou russie, logo foot spartak moscou, logo spartak moscou png, emblème spartak moscou, écusson spartak moscou, spartak moscow logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo spartak moscou, spartak moscou logo, logo de foot spartak moscou russie, logo foot spartak moscou, logo spartak moscou png, emblème spartak moscou, écusson spartak moscou, spartak moscow logo",
+  category: "logos",
+  subCategory: "club-logos",
 };

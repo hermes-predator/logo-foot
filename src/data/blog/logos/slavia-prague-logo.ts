@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const slaviaPragueLogoPost: BlogPost = {
   id: 523,
+  slug: "slavia-prague-logo", //
   title: "Analyse du Logo du Slavia Prague : Histoire et Symbolisme [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Slavia Prague, ses éléments symboliques et son évolution à travers les décennies.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Slavia Prague, ses éléments symboliques et son évolution à travers les décennies.",
   date: "2024-05-05",
   galleryImageId: 523,
   content: `# L'Histoire Fascinante du **Logo Slavia Prague**
@@ -58,7 +59,8 @@ Le **logo Slavia Prague** a traversé plus d'un siècle d'histoire en conservant
 Alors que le football moderne est souvent marqué par des changements fréquents d'identité visuelle, le **Slavia Prague logo PNG** se distingue par sa constance et son authenticité. Cette fidélité aux origines fait du **logo foot Slavia Prague** un cas d'étude fascinant dans l'univers des identités visuelles sportives.
 
 Pour les décennies à venir, le **Slavia Prague logo** continuera sans doute à représenter l'excellence sportive, l'héritage culturel et la passion inébranlable des supporters pour ce club historique du football européen.`,
-  keywords: "logo slavia prague, slavia prague logo, slavia prague logo png, logo slavia prague png, logo foot slavia prague",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo slavia prague, slavia prague logo, slavia prague logo png, logo slavia prague png, logo foot slavia prague",
+  category: "logos",
+  subCategory: "club-logos",
 };

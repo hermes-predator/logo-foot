@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const speziaLogoPost: BlogPost = {
   id: 536,
+  slug: "spezia-logo", //
   title: "Logo Spezia Calcio : Histoire et Évolution de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Spezia Calcio : origines, évolution et signification de l'emblème emblématique du club italien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Spezia Calcio : origines, évolution et signification de l'emblème emblématique du club italien.",
   date: "2024-07-12",
   galleryImageId: 536,
   content: `# L'Histoire Fascinante du **Logo Spezia**
@@ -68,7 +69,8 @@ En conclusion, le **spezia logo** représente bien plus qu'une simple identité 
 À travers ses évolutions successives, le **spezia calcio logo** a su rester fidèle à son essence tout en s'adaptant aux changements de son environnement. Cette capacité à évoluer sans se dénaturer est peut-être la plus grande force du **logo spezia** et le secret de sa pertinence continue dans un monde sportif en constante mutation.
 
 Pour les générations futures de supporters du Spezia, le **spezia logo png** continuera d'incarner les valeurs fondamentales du club : fierté régionale, détermination et passion. Sur les tribunes du stade Alberto Picco comme sur les écrans des supporters du monde entier, l'aigle emblématique du **logo spezia calcio** poursuivra sa mission de rassembler et d'inspirer tous ceux qui partagent l'amour de ce club ligure au riche héritage.`,
-  keywords: "logo la spezia, la spezia logo, logo spezia, logo spezia calcio, spezia calcio logo, spezia logo, spezia calcio logo png, spezia logo png, la spezia calcio logo, logo club de foot italien spezia, logo de foot la spezia, logo spezia png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo la spezia, la spezia logo, logo spezia, logo spezia calcio, spezia calcio logo, spezia logo, spezia calcio logo png, spezia logo png, la spezia calcio logo, logo club de foot italien spezia, logo de foot la spezia, logo spezia png",
+  category: "logos",
+  subCategory: "club-logos",
 };

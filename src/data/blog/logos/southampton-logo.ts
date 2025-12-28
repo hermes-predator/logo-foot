@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const southamptonLogoPost: BlogPost = {
   id: 530, // Using a unique ID that isn't already used
+  slug: "southampton-logo", //
   title: "Logo Southampton : Histoire et Design de l'Emblème des Saints [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Southampton FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Southampton FC : origines, évolution et symbolisme de l'emblème emblématique du club anglais.",
   date: "2024-06-13",
   galleryImageId: 530,
   content: `# L'Histoire Fascinante du **Logo Southampton**
@@ -52,7 +53,8 @@ Le défi pour les futures versions du **logo southampton fc** sera de maintenir 
 Le **logo southampton** transcende sa simple fonction d'emblème sportif pour devenir un symbole culturel, historique et identitaire fort. Son évolution au fil des décennies illustre parfaitement comment un club de football peut moderniser son image tout en restant profondément fidèle à ses racines et à son histoire.
 
 Pour les passionnés de football et les amateurs de design, le **southampton football club logo** reste un exemple fascinant de la façon dont un emblème sportif peut incarner l'âme et les valeurs d'un club et de toute une région. Le **logo southampton** continuera de faire briller les couleurs rouge et blanche des Saints sur les terrains de football et au-delà.`,
-  keywords: "logo southampton, southampton football logo, southampton logo, logo southampton fc, southampton fc logo, southampton football club logo, southampton logo png, logo southampton png, southampton fc logo png, logo de foot southampton",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo southampton, southampton football logo, southampton logo, logo southampton fc, southampton fc logo, southampton football club logo, southampton logo png, logo southampton png, southampton fc logo png, logo de foot southampton",
+  category: "logos",
+  subCategory: "club-logos",
 };

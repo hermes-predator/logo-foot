@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const shakhtarDonetskLogoPost: BlogPost = {
   id: 519,
+  slug: "shakhtar-donetsk-logo", //
   title: "Logo Shakhtar Donetsk : Histoire et Design de l'Emblème Ukrainien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Shakhtar Donetsk : des origines à aujourd'hui, évolution et signification de l'emblème orange et noir du club ukrainien.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Shakhtar Donetsk : des origines à aujourd'hui, évolution et signification de l'emblème orange et noir du club ukrainien.",
   date: "2024-06-18",
   galleryImageId: 519,
   content: `# L'Histoire Fascinante du **Logo Shakhtar Donetsk**
@@ -62,7 +63,8 @@ Le **logo shakhtar donetsk** est bien plus qu'un simple design graphique : c'est
 Pour les millions de supporters à travers l'Ukraine et le monde, le **logo shakhtar png** représente bien plus qu'une équipe de football : c'est un symbole de fierté, de résilience et d'appartenance. Dans les moments difficiles que traverse la région depuis 2014, le **shakhtar logo** est devenu un point de ralliement émotionnel, rappelant les jours glorieux de la Donbass Arena et portant l'espoir de jours meilleurs.
 
 Alors que le club continue d'écrire son histoire sur la scène nationale et européenne, le **logo shakhtar donetsk png** reste le témoin visuel de ses racines, de ses valeurs et de ses ambitions. Pour les générations actuelles et futures de supporters, cet emblème continuera de représenter la passion orange et noire qui anime le cœur du football ukrainien.`,
-  keywords: "logo shakhtar donetsk, shakhtar donetsk logo, logo shakhtar, logo shakhtar donetsk png, logo shakhtar png, shakhtar donetsk logo png, shakhtar logo, shakhtar logo png, fc shakhtar donetsk logo png, logo shakhtar signification",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo shakhtar donetsk, shakhtar donetsk logo, logo shakhtar, logo shakhtar donetsk png, logo shakhtar png, shakhtar donetsk logo png, shakhtar logo, shakhtar logo png, fc shakhtar donetsk logo png, logo shakhtar signification",
+  category: "logos",
+  subCategory: "club-logos",
 };

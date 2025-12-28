@@ -1,14 +1,15 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const spartaPragueLogoPost: BlogPost = {
   id: 532, // ID unique pour ce nouvel article
+  slug: "sparta-prague-logo", //
   title: "Sparta Prague Logo : Histoire et Signification du Blason Tchèque [2024]",
   date: "2025-04-11",
   galleryImageId: 532,
   category: "logos",
   subCategory: "other-european", // Clubs européens hors des 5 grands championnats
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo Sparta Prague, emblème emblématique du club de football tchèque. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe légendaire de Prague.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo Sparta Prague, emblème emblématique du club de football tchèque. Une analyse complète des symboles, couleurs et de l'évolution du blason qui représente l'identité de cette équipe légendaire de Prague.",
   content: `# L'Histoire Fascinante du **Sparta Prague Logo**
 
 Le **sparta prague logo** est bien plus qu'un simple emblème de football – c'est un symbole chargé d'histoire, de tradition et de fierté nationale qui représente l'un des clubs les plus anciens et les plus titrés de République Tchèque. Dans cet article approfondi, nous explorerons l'histoire, la signification et l'évolution du **logo sparta prague**, un blason qui incarne l'esprit combatif et l'héritage glorieux du club pragois.

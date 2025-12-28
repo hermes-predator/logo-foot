@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const serieALogoPost: BlogPost = {
   id: 516,
+  slug: "serie-a-logo", //
   title: "Logo Serie A : Design & Histoire du Football Italien [2024]",
-  excerpt: "Analyse complète du logo Serie A : histoire, évolution et signification du design du championnat italien de football.",
+  excerpt:
+    "Analyse complète du logo Serie A : histoire, évolution et signification du design du championnat italien de football.",
   date: "2024-03-21",
   galleryImageId: 516,
   content: `# L'Histoire Fascinante du **Logo Serie A**
@@ -113,7 +115,8 @@ Le **logo club serie a** continuera d'incarner l'excellence créative italienne,
 Le **logo serie a** est bien plus qu'un simple emblème graphique : il est le gardien visuel d'une tradition footballistique centenaire et le porte-étendard d'un championnat d'élite mondiale. À travers ses évolutions successives, le **italian serie a logo** a su préserver l'essence du calcio italien tout en s'adaptant aux exigences changeantes du monde du football.
 
 Alors que le championnat italien continue d'écrire son histoire et de conquérir de nouvelles audiences internationales, son **logo serie a** restera un pilier fondamental de son identité et un symbole universellement reconnu d'excellence footballistique. Cette capacité à évoluer tout en préservant ses racines fait du **logo serie a** un cas d'étude fascinant dans l'univers des identités visuelles sportives.`,
-  keywords: "serie a logo, italian serie a logo, italy serie a logo, logo serie a, logos serie a, italian serie a team logos, logo club serie a, logo png serie a, logo serie a png, logo serie a tim, logo série a, calcio logo, football italien logo",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "serie a logo, italian serie a logo, italy serie a logo, logo serie a, logos serie a, italian serie a team logos, logo club serie a, logo png serie a, logo serie a png, logo serie a tim, logo série a, calcio logo, football italien logo",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

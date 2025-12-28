@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const scottishCupLogoPost: BlogPost = {
   id: 512,
+  slug: "scottish-cup-logo", //
   title: "**Scottish Cup Logo** : L'Histoire d'un Emblème Centenaire du Football Écossais",
   date: "2025-04-27",
   galleryImageId: 512,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du **scottish cup logo**, symbole historique du plus ancien trophée de football au monde. Une analyse détaillée de son design emblématique et de son évolution.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **scottish cup logo**, symbole historique du plus ancien trophée de football au monde. Une analyse détaillée de son design emblématique et de son évolution.",
   content: `# L'Histoire du **Scottish Cup Logo** : Un Héritage Footballistique Unique
 
 La **scottish cup logo** représente bien plus qu'une simple identité visuelle - c'est le symbole de la plus ancienne compétition de football au monde. Créée en 1873, cette coupe prestigieuse a vu son emblème évoluer tout en préservant son caractère historique unique.

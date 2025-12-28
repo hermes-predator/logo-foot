@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const slovanBratislavaLogoPost: BlogPost = {
   id: 525,
+  slug: "slovan-bratislava-logo", //
   title: "Logo Slovan Bratislava : Histoire et Symbolisme de l'Emblème du Club Slovaque",
-  excerpt: "Découvrez l'histoire et l'évolution du logo du Slovan Bratislava, le plus grand club de football slovaque, symbole de l'identité nationale et sportive du pays.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo du Slovan Bratislava, le plus grand club de football slovaque, symbole de l'identité nationale et sportive du pays.",
   date: "2024-04-08",
   galleryImageId: 525,
   content: `# Histoire et Évolution du **Logo Slovan Bratislava**
@@ -65,7 +66,8 @@ Le **logo Slovan Bratislava** est bien plus qu'un simple emblème de club de foo
 Que ce soit sous forme de **Slovan Bratislava logo PNG** sur internet, brodé sur les maillots des joueurs ou peint sur les visages des supporters lors des matchs importants, ce symbole continue de jouer un rôle crucial dans l'identité du club et dans la culture footballistique slovaque.
 
 Pour les amateurs d'histoire du football et de design de logo, le **logo SK Slovan Bratislava** offre un fascinant aperçu de la façon dont les symboles sportifs évoluent parallèlement aux changements sociétaux et culturels, tout en maintenant leur essence fondamentale.`,
-  keywords: "logo slovan bratislava, slovan bratislava logo, logo sk slovan bratislava, slovan bratislava logo png, šk slovan bratislava logo, hc slovan bratislava logo, emblème slovan bratislava, histoire logo slovan bratislava, symbole club football slovaque, équipe football slovaque",
-  category: 'logos',
-  subCategory: 'european-clubs',
+  keywords:
+    "logo slovan bratislava, slovan bratislava logo, logo sk slovan bratislava, slovan bratislava logo png, šk slovan bratislava logo, hc slovan bratislava logo, emblème slovan bratislava, histoire logo slovan bratislava, symbole club football slovaque, équipe football slovaque",
+  category: "logos",
+  subCategory: "european-clubs",
 };

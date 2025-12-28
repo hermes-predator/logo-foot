@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sivassporLogoPost: BlogPost = {
   id: 522,
+  slug: "sivasspor-logo", //
   title: "**Logo Sivasspor** : Histoire et Évolution de l'Emblème du Club Turc [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Sivasspor**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Sivasspor**, symbole d'identité et de fierté du club turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-15",
   galleryImageId: 522,
   content: `# L'Histoire Fascinante du **Logo Sivasspor**
@@ -75,6 +76,6 @@ Le **logo sivasspor** s'exprime sur de multiples supports :
 - Adaptabilité technique
 - Protection visuelle`,
   keywords: "logo sivasspor, sivasspor logo, sivasspor logo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

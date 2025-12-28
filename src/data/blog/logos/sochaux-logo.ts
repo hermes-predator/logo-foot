@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sochauxLogoPost: BlogPost = {
   id: 527,
+  slug: "sochaux-logo", //
   title: "Logo FC Sochaux : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo FC Sochaux-Montbéliard, ses symboles et sa signification. Une analyse complète de l'emblème iconique du club franc-comtois.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo FC Sochaux-Montbéliard, ses symboles et sa signification. Une analyse complète de l'emblème iconique du club franc-comtois.",
   date: "2024-04-14",
   galleryImageId: 527,
   content: `# **Logo FC Sochaux** : Histoire et Évolution
@@ -111,6 +112,7 @@ Le **logo FC Sochaux** représente bien plus qu'une simple identité graphique p
 L'emblème au lion reste un symbole fort d'identification pour les supporters et incarne parfaitement l'esprit combatif et la fierté régionale qui caractérisent ce club historique du football français.
 
 Le **logo Sochaux foot** continue d'évoluer, comme le club lui-même, tout en maintenant ce lien essentiel avec son histoire et son territoire, assurant ainsi la pérennité d'une identité visuelle unique dans le paysage footballistique français.`,
-  keywords: "logo sochaux, sochaux logo, logo fc sochaux, fc sochaux logo, logo de sochaux, logo sochaux foot, nouveau logo sochaux, sochaux foot logo, logo sochaux fc, logo sochaux png, sochaux logo png, fc sochaux logo png, fc sochaux montbeliard logo, fc sochaux montbéliard logo, foot sochaux logo, logo de foot sochaux, logo fc sochaux png",
-  category: 'logos'
+  keywords:
+    "logo sochaux, sochaux logo, logo fc sochaux, fc sochaux logo, logo de sochaux, logo sochaux foot, nouveau logo sochaux, sochaux foot logo, logo sochaux fc, logo sochaux png, sochaux logo png, fc sochaux logo png, fc sochaux montbeliard logo, fc sochaux montbéliard logo, foot sochaux logo, logo de foot sochaux, logo fc sochaux png",
+  category: "logos",
 };

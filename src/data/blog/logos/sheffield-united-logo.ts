@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sheffieldUnitedLogoPost: BlogPost = {
   id: 520,
+  slug: "sheffield-united-logo", //
   title: "Logo Sheffield United : Histoire et Design de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Sheffield United : origines, évolution et symbolisme de l'emblème emblématique des Blades.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Sheffield United : origines, évolution et symbolisme de l'emblème emblématique des Blades.",
   date: "2024-04-10",
   galleryImageId: 520,
   content: `# L'Histoire Passionnante du **Logo Sheffield United**
@@ -52,7 +53,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **logo sheffield united png** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **sheffield football club logo**.
 
 Alors que Sheffield United poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines yorkoises, fait du **logo sheffield** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football anglais.`,
-  keywords: "logo sheffield united, sheffield united logo, logo sheffield, logo sheffield fc, sheffield fc logo, sheffield football club logo, sheffield logo, sheffield logo png, sheffield united football club logo, sheffield united logo png, logo sheffield united png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo sheffield united, sheffield united logo, logo sheffield, logo sheffield fc, sheffield fc logo, sheffield football club logo, sheffield logo, sheffield logo png, sheffield united football club logo, sheffield united logo png, logo sheffield united png",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const southAfricaLogoPost: BlogPost = {
   id: 528,
+  slug: "afrique-du-sud-logo", //
   title: "**Logo Afrique du Sud** : Histoire et Évolution de l'Emblème des Bafana Bafana [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale sud-africaine : des origines à aujourd'hui, évolution et signification de cet emblème arc-en-ciel.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale sud-africaine : des origines à aujourd'hui, évolution et signification de cet emblème arc-en-ciel.",
   date: "2024-06-15",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,6 @@ Le **football afrique du sud logo** intègre subtilement des références à l'h
 ## Un Symbole d'Unité Nationale
 
 Plus qu'un simple emblème sportif, le **logos federation football afrique du sud** est devenu un puissant symbole d'unité nationale. Dans un pays où le football joue un rôle social crucial, le **logo football club afrique du sud** représente les valeurs de collaboration, de persévérance et d'excellence qui sont au cœur de l'identité sud-africaine. Sur les maillots des joueurs comme dans le cœur des supporters, ce logo incarne les rêves et les aspirations d'un peuple passionné.`,
-  keywords: "logo afrique du sud, afrique du sud logo, logo de l'afrique du sud, afrique du sud foot logo, afrique du sud football logo, afrique du sud logo foot, afrique du sud soccer logo, afrique du sud team logo, club football logo afrique du sud, football afrique du sud logo, logo afrique du sud foot, logo football club afrique du sud, logos federation football afrique du sud"
+  keywords:
+    "logo afrique du sud, afrique du sud logo, logo de l'afrique du sud, afrique du sud foot logo, afrique du sud football logo, afrique du sud logo foot, afrique du sud soccer logo, afrique du sud team logo, club football logo afrique du sud, football afrique du sud logo, logo afrique du sud foot, logo football club afrique du sud, logos federation football afrique du sud",
 };

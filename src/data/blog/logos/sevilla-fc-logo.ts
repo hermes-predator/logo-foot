@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const sevillaFcLogoPost: BlogPost = {
   id: 518, // ID unique qui n'est pas déjà utilisé
+  slug: "seville-logo", //
   title: "Logo FC Séville : Histoire et Design de l'Emblème Andalou [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Séville : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club andalou.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Séville : des origines à aujourd'hui, évolution et signification de l'emblème rouge et blanc du club andalou.",
   date: "2024-05-28",
   galleryImageId: 518,
   content: `# L'Histoire Fascinante du **Logo Séville**
@@ -58,8 +59,8 @@ Comme toute marque vivante, le **logo séville** continuera probablement à conn
 Les futures itérations du **logo séville fc** devront relever le défi d'équilibrer modernité et tradition, innovation et respect du patrimoine. Cette tension créative garantira que le **logo de séville** reste pertinent pour les nouvelles générations de supporters tout en honorant la riche histoire qu'il représente.
 
 Pour les spécialistes du branding sportif qui étudient le **logo foot fc séville**, l'emblème du club andalou offre un cas d'étude fascinant sur la manière dont une identité visuelle peut rester ancrée dans ses racines culturelles tout en évoluant avec son temps, un équilibre que de nombreuses institutions sportives cherchent à atteindre.`,
-  keywords: "fc séville logo, logo séville, séville logo, logo de séville, logo fc séville, logo fc séville png, logo foot fc séville, logo séville fc, logo séville png, séville logo png, fc séville logo hd",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "fc séville logo, logo séville, séville logo, logo de séville, logo fc séville, logo fc séville png, logo foot fc séville, logo séville fc, logo séville png, séville logo png, fc séville logo hd",
+  category: "logos",
+  subCategory: "club-logos",
 };
-

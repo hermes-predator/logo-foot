@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const southKoreaLogoPost: BlogPost = {
   id: 529,
+  slug: "coree-du-sud-logo", //
   title: "Logo Corée du Sud : Histoire et Symbolisme de l'Emblème du Football Coréen",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Corée du Sud : origines, évolution et symbolisme de cet emblème unique du football asiatique. Analyse complète du logo de la fédération coréenne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Corée du Sud : origines, évolution et symbolisme de cet emblème unique du football asiatique. Analyse complète du logo de la fédération coréenne.",
   date: "2024-05-12",
   galleryImageId: 529,
   content: `# **Logo Corée du Sud** : L'Histoire de l'Emblème du Football Coréen
@@ -131,7 +133,8 @@ Le **logo corée du sud** est bien plus qu'un simple emblème sportif – c'est 
 L'évolution de ce **corée du sud logo foot** illustre parfaitement comment un symbole national peut se moderniser tout en préservant ses racines historiques et culturelles. La force du logo sud-coréen réside précisément dans cette capacité à évoluer avec son temps tout en maintenant une continuité symbolique forte.
 
 Qu'il s'agisse du **logo corée du sud transparent** traditionnel ou de ses déclinaisons modernes, l'emblème des Guerriers Taeguk demeure l'un des designs sportifs les plus réussis et les plus reconnaissables du panorama footballistique asiatique contemporain.`,
-  keywords: "logo corée du sud, corée du sud foot logo, logo corée du sud foot, corée du sud logo, corée du sud football logo, corée du sud logo foot, equipe de foot corée du sud logo, logo corée du sud transparent",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo corée du sud, corée du sud foot logo, logo corée du sud foot, corée du sud logo, corée du sud football logo, corée du sud logo foot, equipe de foot corée du sud logo, logo corée du sud transparent",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const spartakTrnavaLogoPost: BlogPost = {
   id: 535,
+  slug: "spartak-trnava-logo", //
   title: "**Logo Spartak Trnava** : Histoire et Évolution de l'Emblème Slovaque [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Spartak Trnava logo**, son évolution à travers les années et la symbolique derrière cet emblème historique du football slovaque.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Spartak Trnava logo**, son évolution à travers les années et la symbolique derrière cet emblème historique du football slovaque.",
   date: "2024-04-15",
   galleryImageId: 535,
   content: `# L'Histoire du **Spartak Trnava Logo**
@@ -43,6 +44,6 @@ Grâce à ses performances en Coupe d'Europe, notamment dans les années 1970, l
 
 Le **Spartak Trnava logo** est plus qu'un simple emblème - c'est un symbole qui incarne l'histoire, la tradition et les ambitions d'un des clubs les plus prestigieux du football slovaque.`,
   keywords: "spartak trnava logo, logo fc spartak trnava",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

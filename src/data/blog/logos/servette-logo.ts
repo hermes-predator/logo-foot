@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const servetteLogoPost: BlogPost = {
   id: 517,
+  slug: "servette-logo", //
   title: "Logo Servette FC : Histoire et Signification de l'Emblème Genevois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo du Servette FC, son évolution depuis 1890 et la symbolique derrière l'emblème du plus ancien club de football suisse.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo du Servette FC, son évolution depuis 1890 et la symbolique derrière l'emblème du plus ancien club de football suisse.",
   date: "2024-04-15",
   galleryImageId: 517,
   content: `# L'Histoire Passionnante du Logo Servette FC
@@ -34,7 +35,8 @@ Le **logo servette geneve fc** continue d'évoluer avec son temps tout en restan
 ## Un Héritage pour l'Avenir
 
 Le logo du Servette FC est plus qu'un simple emblème sportif : c'est un symbole qui unit les générations de supporters. Chaque élément de sa composition a été soigneusement préservé et adapté au fil du temps, créant un équilibre parfait entre tradition et modernité.`,
-  keywords: "logo fc servette, logo servette, logo servette fc, servette fc logo, servette logo, servette logo png, fc servette logo, logo servette fc 1890, logo servette fc png, logo servette geneve, logo servette geneve fc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo fc servette, logo servette, logo servette fc, servette fc logo, servette logo, servette logo png, fc servette logo, logo servette fc 1890, logo servette fc png, logo servette geneve, logo servette geneve fc",
+  category: "logos",
+  subCategory: "club-logos",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const serbiaLogoPost: BlogPost = {
   id: 515,
+  slug: "serbie-logo", //
   title: "Logo Serbie : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Serbie : des origines à aujourd'hui, évolution et signification de l'emblème du football serbe.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Serbie : des origines à aujourd'hui, évolution et signification de l'emblème du football serbe.",
   date: "2024-05-26",
   galleryImageId: 515,
   content: `# L'Histoire Fascinante du **Logo Serbie** Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **logo de la serbie** ont également fa
 Au-delà de sa dimension sportive, le **logo serbie** est devenu un puissant symbole des ambitions du football serbe sur la scène internationale. Le **logo du football serbe** représente bien plus qu'une équipe de football : il incarne une philosophie de jeu et des valeurs sportives qui ont façonné la réputation du football serbe.
 
 Les joueurs qui portent fièrement le maillot orné du **logo serbie foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **logo de serbie** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo serbie, logo serbie foot, logo foot serbie, serbie logo, serb logo png, logo club serbie, logo de la serbie, logo de serbie, logo du football serbe",
-  category: 'national-logos',
-  subCategory: 'national-logos'
+  keywords:
+    "logo serbie, logo serbie foot, logo foot serbie, serbie logo, serb logo png, logo club serbie, logo de la serbie, logo de serbie, logo du football serbe",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

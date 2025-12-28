@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const atalantaLogoPost: BlogPost = {
   id: 86,
+  slug: "atalanta-logo", //
   title: "Logo Atalanta : L'Histoire de la Déesse de Bergame [2024]",
-  excerpt: "Plongez dans l'histoire fascinante du logo Atalanta, symbole mythologique du club de Bergame. Découvrez l'évolution de cet emblème légendaire du calcio italien.",
+  excerpt:
+    "Plongez dans l'histoire fascinante du logo Atalanta, symbole mythologique du club de Bergame. Découvrez l'évolution de cet emblème légendaire du calcio italien.",
   date: "2024-04-05",
   galleryImageId: 86,
   content: `# L'Histoire Fascinante du **Logo Atalanta**
@@ -68,7 +69,8 @@ La stratégie de marque internationale du club accorde une place centrale au **l
 Les collaborations créatives avec des artistes et designers contemporains explorent régulièrement de nouvelles interprétations du **logo PNG Atalanta**, démontrant la capacité de ce symbole historique à inspirer l'innovation tout en restant fidèle à ses origines mythologiques.
 
 Le **logo Atalanta** demeure ainsi un symbole puissant du football italien, incarnant parfaitement l'équilibre entre tradition séculaire et ambitions contemporaines. L'**Atalanta Bergame logo** continue d'inspirer joueurs et supporters, tout en portant l'héritage d'un club singulier vers de nouveaux sommets d'excellence et de reconnaissance mondiale.`,
-  keywords: "logo atalanta, atalanta logo, atalanta logo png, atalanta bergame logo, atalanta bc logo, logo atalanta bergame, dea bergame, nerazzurri bergame, logo atalanta png, logo png atalanta",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo atalanta, atalanta logo, atalanta logo png, atalanta bergame logo, atalanta bc logo, logo atalanta bergame, dea bergame, nerazzurri bergame, logo atalanta png, logo png atalanta",
+  category: "logos",
+  subCategory: "club-logos",
 };

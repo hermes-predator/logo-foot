@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const auxerreLogoPost: BlogPost = {
   id: 96,
+  slug: "aj-auxerre-logo", //
   title: "Logo AJ Auxerre : Histoire et Design de l'Emblème Bourguignon [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'AJ Auxerre : évolution, signification et design de l'emblème du club bourguignon depuis sa création jusqu'à aujourd'hui.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'AJ Auxerre : évolution, signification et design de l'emblème du club bourguignon depuis sa création jusqu'à aujourd'hui.",
   date: "2024-05-02",
   galleryImageId: 96,
   content: `# L'Histoire Passionnante du **Logo AJ Auxerre**
@@ -58,7 +59,8 @@ Comme tout emblème historique, le **auxerre logo** pourrait connaître de futur
 Les débats entre tradition et modernité qui entourent souvent l'évolution des logos de clubs de football touchent également le **aj auxerre logo png**. Ces discussions passionnées témoignent de l'importance capitale que revêt cette identité visuelle pour l'ensemble de la communauté AJA.
 
 À l'heure où le club bourguignon écrit de nouveaux chapitres de son histoire, le **logo auxerre png** continue d'incarner les valeurs fondamentales qui ont fait la réputation de l'AJA : formation, travail, humilité et esprit collectif. Ces principes, profondément ancrés dans l'ADN du club, continueront sans aucun doute de se refléter dans les futures itérations du **logo auxerre foot**, quel que soit leur design.`,
-  keywords: "auxerre logo, logo auxerre, logo aj auxerre, aj auxerre logo, logo auxerre foot, aj auxerre logo png, auxerre foot logo, auxerre logo png, logo aj auxerre png, logo auxerre png, logo foot auxerre",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "auxerre logo, logo auxerre, logo aj auxerre, aj auxerre logo, logo auxerre foot, aj auxerre logo png, auxerre foot logo, auxerre logo png, logo aj auxerre png, logo auxerre png, logo foot auxerre",
+  category: "logos",
+  subCategory: "club-logos",
 };

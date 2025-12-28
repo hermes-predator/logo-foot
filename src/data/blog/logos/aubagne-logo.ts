@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const aubagneLogoPost: BlogPost = {
   id: 90,
+  slug: "aubagne-logo", //
   title: "**Logo Aubagne** : Histoire et Évolution Complète [2024]",
   date: "2025-04-18",
   galleryImageId: 90,
   category: "logos",
-  excerpt: "Découvrez l'histoire du **logo Aubagne FC**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo aubagne**.",
+  excerpt:
+    "Découvrez l'histoire du **logo Aubagne FC**, son évolution et sa signification. Guide complet sur l'emblème du club avec analyse détaillée du **logo aubagne**.",
   content: `# Guide Complet du **Logo Aubagne**
 
 L'histoire du **logo Aubagne** représente l'identité visuelle d'un club important du football français. Cette analyse détaillée explore les différents aspects de cet emblème qui incarne les valeurs et l'histoire du club.

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ballonDorLogoPost: BlogPost = {
   id: 99,
+  slug: "ballon-dor-logo", //
   title: "Logo Ballon d'Or : Histoire et Évolution du Symbole du Football",
-  excerpt: "Découvrez l'histoire complète et l'évolution du logo Ballon d'Or, le symbole le plus prestigieux des récompenses individuelles du football mondial.",
+  excerpt:
+    "Découvrez l'histoire complète et l'évolution du logo Ballon d'Or, le symbole le plus prestigieux des récompenses individuelles du football mondial.",
   date: "2025-04-10",
   galleryImageId: 99,
   content: `# **Logo Ballon d'Or** : L'Emblème du Prestige Footballistique
@@ -119,8 +120,8 @@ Le **ballon d'or logo png** est devenu un symbole culturel important car il repr
 
 ### Qui détient les droits sur le **logo fifa ballon d'or**?
 Depuis 2016, les droits sur le **logo ballon d'or** appartiennent exclusivement à France Football et à son groupe de presse, après la fin de la collaboration avec la FIFA qui avait donné naissance au **logo fifa ballon d'or** entre 2010 et 2016.`,
-  keywords: "ballon d'or logo, ballon d or logo, logo ballon d or, ballon d'or logo png, logo ballon d'or, fifa ballon d'or logo, logo du ballon d'or, logo fifa ballon d'or, trophée ballon d'or, histoire ballon d'or, football awards, meilleur joueur mondial",
-  category: 'logos',
-  subCategory: 'competitions'
+  keywords:
+    "ballon d'or logo, ballon d or logo, logo ballon d or, ballon d'or logo png, logo ballon d'or, fifa ballon d'or logo, logo du ballon d'or, logo fifa ballon d'or, trophée ballon d'or, histoire ballon d'or, football awards, meilleur joueur mondial",
+  category: "logos",
+  subCategory: "competitions",
 };
-

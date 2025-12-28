@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const austinFcLogoPost: BlogPost = {
   id: 92,
+  slug: "austin-fc-logo", //
   title: "**Logo Austin FC** : Histoire et Evolution de l'Emblème de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Austin FC**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Austin FC**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",
   galleryImageId: 92,
   content: `# L'Histoire Fascinante du **Logo Austin FC**
@@ -46,6 +47,6 @@ Dans le paysage de la MLS, le logo d'Austin FC s'est imposé comme :
 
 Le **austin fc logo** incarne parfaitement l'identité moderne du club, son innovation et ses ambitions futures dans le football américain.`,
   keywords: "logo austin fc, austin fc logo, austin fc logo png, logo austin fc png",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

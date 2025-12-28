@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const atleticoMadridLogoPost: BlogPost = {
   id: 89,
+  slug: "atletico-madrid-logo", //
   title: "Logo Atlético Madrid : L'Histoire de l'Ours et l'Arbousier [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Atlético Madrid, son évolution au fil du temps et la signification de l'ours et l'arbousier qui symbolisent l'identité du club madrilène.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Atlético Madrid, son évolution au fil du temps et la signification de l'ours et l'arbousier qui symbolisent l'identité du club madrilène.",
   date: "2024-05-06",
   galleryImageId: 89,
   content: `# L'Histoire Passionnante du **Logo Atlético Madrid**
@@ -78,7 +79,8 @@ Le nouveau stade Metropolitano a d'ailleurs été l'occasion d'intégrer le **lo
 Le **logo atletico madrid** représente bien plus qu'un simple identifiant visuel - c'est l'incarnation graphique d'une histoire riche, d'une identité madrilène authentique et d'une philosophie sportive distinctive.
 
 À travers l'ours et l'arbousier, emblèmes historiques de Madrid, le **atletico madrid logo** continue de symboliser fièrement l'âme d'un club qui occupe une place unique dans le paysage du football espagnol et européen. Que ce soit sur les maillots des joueurs, dans les rues de Madrid ou sur les écrans du monde entier, le **logo atletico madrid** demeure un symbole puissant d'identité, de tradition et d'ambition.`,
-  keywords: "logo atletico madrid, atletico madrid logo, logo atletico, atletico de madrid logo, logo atletico de madrid, atletico logo, logo de atletico madrid, atletico madrid logo png, atletico madrid logos, logo atletico madrid png, atletico de madrid logo png, atletico logo png, logo atletico png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo atletico madrid, atletico madrid logo, logo atletico, atletico de madrid logo, logo atletico de madrid, atletico logo, logo de atletico madrid, atletico madrid logo png, atletico madrid logos, logo atletico madrid png, atletico de madrid logo png, atletico logo png, logo atletico png",
+  category: "logos",
+  subCategory: "club-logos",
 };

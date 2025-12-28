@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const athleticBilbaoLogoPost: BlogPost = {
   id: 87,
+  slug: "athletic-bilbao-logo", //
   title: "Logo Athletic Bilbao : Histoire et Symbolisme de l'Emblème Basque",
-  excerpt: "Découvrez l'histoire fascinante et la signification du logo de l'Athletic Bilbao. Analyse complète de l'emblème du club basque historique de la Liga.",
+  excerpt:
+    "Découvrez l'histoire fascinante et la signification du logo de l'Athletic Bilbao. Analyse complète de l'emblème du club basque historique de la Liga.",
   date: "2024-07-04",
   galleryImageId: 87,
   content: `# **Logo Athletic Bilbao** : Histoire et Symbolisme de l'Emblème Basque
@@ -142,7 +143,8 @@ Non, le **Athletic Bilbao logo png** n'a pas subi de changement significatif ré
 
 **Quelle est la différence entre le logo Athletic Bilbao et Atletico Bilbao?**
 Il n'existe pas de logo "**Atletico Bilbao logo**" officiel - c'est une erreur commune. Le nom correct est Athletic Club (ou Athletic Bilbao), et non Atletico Bilbao.`,
-  keywords: "logo Athletic Bilbao, Athletic Bilbao logo, Bilbao logo, Athletic Bilbao logo png, Bilbao logo png, logo Athletic Bilbao png, logo Bilbao, logo Bilbao png, logo de Bilbao, Bilbao FC logo, Atletico Bilbao logo, football espagnol, club basque, emblème basque, Liga",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo Athletic Bilbao, Athletic Bilbao logo, Bilbao logo, Athletic Bilbao logo png, Bilbao logo png, logo Athletic Bilbao png, logo Bilbao, logo Bilbao png, logo de Bilbao, Bilbao FC logo, Atletico Bilbao logo, football espagnol, club basque, emblème basque, Liga",
+  category: "logos",
+  subCategory: "club-logos",
 };

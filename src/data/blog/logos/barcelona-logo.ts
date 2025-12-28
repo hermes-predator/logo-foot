@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const barcelonaLogoPost: BlogPost = {
   id: 101,
+  slug: "barcelone-logo", //
   title: "Logo FC Barcelone : Histoire et Design de l'Emblème Catalan [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Barcelone : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club catalan.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Barcelone : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club catalan.",
   date: "2024-04-02",
   galleryImageId: 101,
   content: `# L'Histoire Fascinante du Logo FC Barcelone
@@ -46,7 +47,8 @@ Les versions numériques du **logo barcelone foot** sont soigneusement optimisé
 Pour la communauté mondiale des supporters du Barça, le **logo foot Barcelone** représente bien plus qu'un simple signe distinctif : c'est un symbole d'appartenance et de passion partagée. L'émotionnel attachement au **logo Barcelone FC** transcende les générations et les frontières, unissant des millions de fans dans leur amour pour les couleurs blaugrana.
 
 Qu'il soit arboré sur un maillot, un drapeau ou un écran de téléphone, le **logo du FC Barcelone** continue d'incarner des valeurs fortes et une histoire riche, faisant de cet emblème l'un des plus puissants et respectés du monde sportif.`,
-  keywords: "logo barcelone, barcelone logo, logo fc barcelone, fc barcelone logo, barcelona logo, fc barcelona logo, logo du fc barcelone, logo barcelona, logo du barcelone, barcelone fc logo, barcelona logo png, logo barcelona png, logo barcelone fc, logo barcelone foot, logo foot barcelone, logo barcelone png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo barcelone, barcelone logo, logo fc barcelone, fc barcelone logo, barcelona logo, fc barcelona logo, logo du fc barcelone, logo barcelona, logo du barcelone, barcelone fc logo, barcelona logo png, logo barcelona png, logo barcelone fc, logo barcelone foot, logo foot barcelone, logo barcelone png",
+  category: "logos",
+  subCategory: "club-logos",
 };

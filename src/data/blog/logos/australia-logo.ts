@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const australiaLogoPost: BlogPost = {
   id: 93,
+  slug: "australie-logo", //
   title: "Logo Australie : Histoire et Signification de l'Emblème des Socceroos [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale d'Australie : des origines à aujourd'hui, évolution et signification de l'emblème des Socceroos.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale d'Australie : des origines à aujourd'hui, évolution et signification de l'emblème des Socceroos.",
   date: "2024-04-02",
   galleryImageId: 93,
   content: `# L'Histoire Fascinante du Logo Australie Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **logo australie football** ont égalem
 Au-delà de sa dimension sportive, le **logo australie** est devenu un puissant symbole des ambitions croissantes du football australien. Sur les terrains internationaux, l'emblème représente bien plus qu'une équipe de football : il incarne la détermination d'un pays relativement jeune sur la scène footballistique mondiale mais animé par de grandes ambitions.
 
 Les joueurs qui portent fièrement le maillot orné du **australie logo** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également les valeurs et l'espoir de toute une nation qui se reconnaît dans ce symbole emblématique qui continue d'écrire son histoire dans le football mondial.`,
-  keywords: "logo australie, australie logo, logo australie foot, logo australie football, logo foot australie, australie foot logo, australie football logo",
-  category: 'national-logos',  // Changed from 'logos' to 'national-logos'
-  subCategory: 'national-logos'
+  keywords:
+    "logo australie, australie logo, logo australie foot, logo australie football, logo foot australie, australie foot logo, australie football logo",
+  category: "national-logos", // Changed from 'logos' to 'national-logos'
+  subCategory: "national-logos",
 };

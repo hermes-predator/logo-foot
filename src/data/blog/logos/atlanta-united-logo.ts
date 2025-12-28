@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const atlantaUnitedLogoPost: BlogPost = {
   id: 88,
+  slug: "atlanta-united-logo", //
   title: "**Atlanta United Logo** : Histoire et Design de l'Emblème Emblématique de MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Atlanta United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Atlanta United**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 88,
   content: `# L'Histoire Fascinante du **Logo Atlanta United**
@@ -67,7 +68,8 @@ Cette modernité intrinsèque du **atlanta united logo** lui confère un avantag
 Le **atlanta united logo** illustre parfaitement comment une franchise sportive récente peut créer une identité visuelle forte, capable de rivaliser avec des clubs bien plus anciens en termes d'impact et de reconnaissance. En combinant habilement modernité et références traditionnelles au football, le **atlanta united fc logo** a réussi à capturer l'essence d'un club ambitieux et à galvaniser une base de supporters passionnés.
 
 Plus qu'un simple emblème, le **logo atlanta united** est devenu un symbole de fierté pour toute une ville et une région, transcendant le cadre sportif pour s'imposer comme un élément culturel significatif. Sa conception soignée et sa pertinence continue font du **atlanta united logo png** un cas d'étude fascinant dans le domaine du design sportif et un exemple que de nombreuses nouvelles franchises cherchent à suivre.`,
-  keywords: "atlanta united logo:20, logo atlanta united:20, atlanta united fc logo:10, atlanta united fc logo png:10, atlanta united logo png:10, logo png atlanta united:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "atlanta united logo:20, logo atlanta united:20, atlanta united fc logo:10, atlanta united fc logo png:10, atlanta united logo png:10, logo png atlanta united:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const heidenheimLogoPost: BlogPost = {
   id: 302,
+  slug: "heidenheim-logo", //
   title: "Logo FC Heidenheim : Histoire et Design du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire et la signification du logo FC Heidenheim, l'emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo FC Heidenheim, l'emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-24",
   galleryImageId: 302,
   content: `# Histoire et Signification du Logo FC Heidenheim
@@ -69,7 +70,8 @@ Le **logo fc heidenheim** incarne parfaitement l'identité d'un club qui a su se
 Alors que le FC Heidenheim continue d'écrire son histoire dans le football allemand, son **logo de foot heidenheim** continuera d'évoluer tout en préservant les éléments qui en font un symbole reconnaissable et apprécié par ses supporters.
 
 Dans un monde où l'identité visuelle joue un rôle de plus en plus important dans la stratégie globale des clubs de football, le **logo de foot fc heidenheim** représente un exemple réussi d'équilibre entre modernité, clarté et fidélité aux valeurs fondamentales d'un club qui incarne la réussite par l'effort et la persévérance.`,
-  keywords: "logo fc heidenheim, heidenheim logo, logo de foot fc heidenheim, logo de foot heidenheim, logo de foot heidenheim en allemagne, logo heidenheim",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo fc heidenheim, heidenheim logo, logo de foot fc heidenheim, logo de foot heidenheim, logo de foot heidenheim en allemagne, logo heidenheim",
+  category: "logos",
+  subCategory: "club-logos",
 };

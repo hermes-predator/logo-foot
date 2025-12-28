@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const icelandLogoPost: BlogPost = {
   id: 313,
+  slug: "islande-logo", //
   title: "**Logo Islande** : Histoire et Évolution de l'Emblème des Strákarnir okkar [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale islandaise : des origines à aujourd'hui, évolution et signification de cet emblème nordique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale islandaise : des origines à aujourd'hui, évolution et signification de cet emblème nordique.",
   date: "2024-05-29",
   category: "national-logos",
   subCategory: "national-logos",
@@ -32,5 +33,5 @@ Le **logo islande foot** intègre subtilement des références à l'héritage vi
 ## Un Symbole d'Unité Nationale
 
 Plus qu'un simple emblème sportif, le **islande logo** est devenu un puissant symbole d'unité nationale. Dans un pays où le football joue un rôle social crucial, le **logo islande foot** représente les valeurs de collaboration, de persévérance et d'excellence qui sont au cœur de l'identité islandaise. Sur les maillots des joueurs comme dans le cœur des supporters, ce logo incarne les rêves et les aspirations de toute une nation.`,
-  keywords: "islande logo, logo islande, logo islande foot, logo islande png"
+  keywords: "islande logo, logo islande, logo islande foot, logo islande png",
 };

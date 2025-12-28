@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const huescaLogoPost: BlogPost = {
   id: 310, // ID unique pour ce nouvel article
+  slug: "huesca-logo", //
   title: "Logo SD Huesca : Histoire et Symbolisme de l'Emblème Aragonais",
   date: "2025-04-11",
   category: "logos",
   subCategory: "spanish",
-  excerpt: "Découvrez l'histoire fascinante et l'évolution du logo SD Huesca, club emblématique d'Aragon. Analyse complète des symboles et couleurs de l'écusson du club espagnol.",
+  excerpt:
+    "Découvrez l'histoire fascinante et l'évolution du logo SD Huesca, club emblématique d'Aragon. Analyse complète des symboles et couleurs de l'écusson du club espagnol.",
   content: `# L'Histoire et le Symbolisme du **Logo Huesca**
 
 Le **SD Huesca logo** représente l'identité visuelle d'un club qui, bien que relativement jeune par rapport aux géants du football espagnol, possède une histoire riche et une identité régionale forte. Dans cet article, nous allons explorer en profondeur l'évolution, la signification et les éléments distinctifs du **logo Huesca**.
@@ -104,6 +105,7 @@ Le **logo huesca** est un symbole puissant qui incarne l'histoire, la tradition 
 Que ce soit sous forme imprimée ou sous format numérique **logo huesca png**, cet emblème continue de représenter fièrement l'un des clubs les plus prometteurs d'Aragon sur la scène nationale du football espagnol.
 
 Le **SD Huesca logo** reste un témoignage visuel de l'héritage culturel et sportif oscense, un symbole qui continuera de fédérer les supporters bleu et rouge pour les générations à venir, tout en portant les valeurs et l'identité de cette région fière d'Espagne.`,
-  keywords: "huesca logo, logo huesca, sd huesca logo, huesca club foot logo, logo club huesca, logo de foot huesca, logo huesca png, logo sd huesca",
-  galleryImageId: null // A remplacer par l'ID de l'image quand elle sera disponible
+  keywords:
+    "huesca logo, logo huesca, sd huesca logo, huesca club foot logo, logo club huesca, logo de foot huesca, logo huesca png, logo sd huesca",
+  galleryImageId: null, // A remplacer par l'ID de l'image quand elle sera disponible
 };

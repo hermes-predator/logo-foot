@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const heraclesAlmeloLogoPost: BlogPost = {
   id: 304,
+  slug: "heracles-almelo-logo", //
   title: "**Logo Heracles Almelo** : Histoire et Évolution de l'Emblème du Club Néerlandais [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Heracles Almelo logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Heracles Almelo logo**, son évolution et sa signification. Un symbole emblématique du football néerlandais.",
   date: "2024-04-19",
   galleryImageId: 304,
   content: `# Histoire du **Logo Heracles Almelo**
@@ -51,6 +52,6 @@ Le logo est devenu un symbole reconnu qui représente :
 
 Le logo de Heracles Almelo est bien plus qu'un simple emblème - c'est le témoin visuel d'une histoire riche et d'une tradition sportive qui continue d'inspirer les générations de supporters.`,
   keywords: "logo heracles almelo, heracles almelo logo, logo heracles almelo png",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

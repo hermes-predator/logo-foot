@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hambourgSvLogoPost: BlogPost = {
   id: 299,
+  slug: "hambourg-sv-logo", //
   title: "Logo Hambourg SV : Histoire et Design du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire et la signification du logo Hambourg SV, emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson historique.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo Hambourg SV, emblème distinctif du club allemand. Analyse complète du design et de l'évolution de cet écusson historique.",
   date: "2024-04-25",
   galleryImageId: 299,
   content: `# Histoire et Signification du Logo Hambourg SV
@@ -134,6 +135,6 @@ Alors que le club traverse les différentes phases de son histoire sportive, son
 
 Cette capacité du **logo hambourg** à incarner à la fois l'histoire glorieuse du club, son ancrage territorial fort et ses ambitions futures en fait un exemple remarquable de design sportif réussi, alliant tradition respectée et adaptation contemporaine au service d'une des institutions les plus emblématiques du football allemand.`,
   keywords: "hambourg sv logo, logo hambourg, logo hambourg foot, hambourg logo png, hambourg sv 1982 logo",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

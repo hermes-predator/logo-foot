@@ -1,10 +1,11 @@
-
 import { BlogPost } from "../../../types/blog";
 
 export const guangzhouLogoPost: BlogPost = {
   id: 295,
+  slug: "guangzhou-logo", //
   title: "**Logo Guangzhou FC** : Histoire et Évolution de l'Emblème Chinois [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Guangzhou**, un symbole emblématique du football chinois qui incarne la tradition et la modernité.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Guangzhou**, un symbole emblématique du football chinois qui incarne la tradition et la modernité.",
   date: "2024-04-22",
   galleryImageId: 295,
   category: "logos",
@@ -51,5 +52,6 @@ Le **guangzhou fc logo** est devenu :
 
 Le **logo de foot guangzhou** incarne parfaitement la fusion entre tradition chinoise et modernité footballistique, faisant de lui un symbole incontournable du football asiatique.
   `,
-  keywords: "**logo guangzhou**:20, **guangzhou logo**:20, **guangzhou fc logo**:10, **logo de foot guangzhou**:10, football chinois, super league chinoise",
+  keywords:
+    "**logo guangzhou**:20, **guangzhou logo**:20, **guangzhou fc logo**:10, **logo de foot guangzhou**:10, football chinois, super league chinoise",
 };

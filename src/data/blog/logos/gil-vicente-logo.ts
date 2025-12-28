@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gilVicenteLogoPost: BlogPost = {
   id: 284,
+  slug: "gil-vicente-logo", //
   title: "**Gil Vicente Logo** : Histoire et Signification de l'Emblème [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Gil Vicente**, son évolution et sa symbolique unique dans le football portugais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Gil Vicente**, son évolution et sa symbolique unique dans le football portugais.",
   date: "2024-04-15",
   galleryImageId: 284,
   content: `# Histoire et Signification du **Gil Vicente Logo**
@@ -69,6 +70,6 @@ Dans l'ère moderne du football, le **logo Gil Vicente FC** continue de :
 
 Le **logo Gil Vicente** est devenu un symbole reconnaissable du football portugais, incarnant l'histoire riche et les ambitions d'un club profondément ancré dans sa région.`,
   keywords: "gil vicente logo, logo gil vicente, logo de gil vicente, logo gil vicente fc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

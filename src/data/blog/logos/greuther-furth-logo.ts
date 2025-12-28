@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const greutherFurthLogoPost: BlogPost = {
   id: 294,
+  slug: "greuther-furth-logo", //
   title: "**Logo Greuther Fürth** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Greuther Fürth**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Greuther Fürth**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand.",
   date: "2025-04-14",
   galleryImageId: 294,
   content: `# L'Histoire Fascinante du **Logo Greuther Fürth**
@@ -74,6 +75,6 @@ Pour des milliers de supporters en Allemagne, le **Greuther Fürth logo** repré
 
 Le **logo Greuther Fürth** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – le trèfle emblématique et les couleurs vert et blanc – restera un symbole intemporel du football allemand et de l'héritage culturel de la ville de Fürth.`,
   keywords: "logo greuther furth:20, greuther furth logo:20, greuther furth logo png:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  category: "logos",
+  subCategory: "german-clubs",
 };

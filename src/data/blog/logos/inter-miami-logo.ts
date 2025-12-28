@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const interMiamiLogoPost: BlogPost = {
   id: 315,
+  slug: "inter-miami-logo", //
   title: "Logo Inter Miami : Histoire et Design de l'Emblème Rose [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Inter Miami : symbolisme, design et évolution de l'emblème rose distinctif du club de MLS fondé par David Beckham.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Inter Miami : symbolisme, design et évolution de l'emblème rose distinctif du club de MLS fondé par David Beckham.",
   date: "2024-04-23",
   content: `# L'Histoire Fascinante du **Logo Inter Miami**
 
@@ -57,8 +58,9 @@ L'influence du **logo inter miami** sur les tendances du design sportif aux Éta
 L'adoption du rose comme couleur principale dans le **logo inter de miami** a brisé des conventions de longue date concernant les couleurs "acceptables" pour les équipes masculines professionnelles. Ce choix audacieux a contribué à élargir la palette chromatique utilisée dans le sport professionnel américain, ouvrant la voie à des choix plus diversifiés et créatifs.
 
 À mesure que le club continue de développer son héritage sur et en dehors du terrain, son **logo inter miami** rose emblématique reste au cœur de son identité, symbole d'une vision ambitieuse qui transcende les frontières traditionnelles du sport américain pour s'inscrire dans la grande tradition du football mondial.`,
-  keywords: "logo inter miami, inter miami logo, inter miami cf logo, inter miami logo png, logo de l'inter miami, logo inter de miami, logo inter miami fc, inter miami fc logo, emblème inter miami, écusson inter miami, logo beckham miami, logo mls miami",
-  category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 85
+  keywords:
+    "logo inter miami, inter miami logo, inter miami cf logo, inter miami logo png, logo de l'inter miami, logo inter de miami, logo inter miami fc, inter miami fc logo, emblème inter miami, écusson inter miami, logo beckham miami, logo mls miami",
+  category: "logos",
+  subCategory: "club-logos",
+  galleryImageId: 85,
 };

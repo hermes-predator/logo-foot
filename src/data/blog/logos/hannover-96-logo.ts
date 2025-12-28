@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hannover96LogoPost: BlogPost = {
   id: 300,
+  slug: "hanovre-96-logo", //
   title: "**Logo Hannover 96** : Histoire et Design de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Hannover 96**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Hannover 96**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
   galleryImageId: 300,
   content: `# L'Histoire Fascinante du **Logo Hannover 96**
@@ -63,7 +64,6 @@ Alors que le Hannover 96 continue d'écrire son histoire sur les terrains allema
 
 Le **logo Hannover 96** continuera sans doute d'évoluer subtilement pour répondre aux exigences du monde moderne, mais son essence – les initiales emblématiques et les couleurs rouge et blanc – restera un symbole intemporel du football allemand et de l'héritage culturel de la ville de Hanovre.`,
   keywords: "logo hanovre:20, logo hanovre 96:10, logo hanovre 96 png:10, logo de hanovre en allemagne:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  category: "logos",
+  subCategory: "german-clubs",
 };
-

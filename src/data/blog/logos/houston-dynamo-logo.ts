@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const houstonDynamoLogoPost: BlogPost = {
   id: 308,
+  slug: "houston-dynamo-logo", //
   title: "**Logo Houston Dynamo** : Histoire et Evolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **houston dynamo logo**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **houston dynamo logo**, son évolution et la symbolique de cet emblème unique de la Major League Soccer.",
   date: "2024-04-18",
   content: `# L'Histoire Fascinante du **Logo Houston Dynamo**
 
@@ -43,8 +45,9 @@ Dans le paysage de la MLS, le logo du Houston Dynamo s'est imposé comme :
 ## Conclusion
 
 Le **houston dynamo logo** incarne parfaitement l'identité unique du club, son histoire riche et ses ambitions futures dans le football américain.`,
-  keywords: "logo houston dynamo:20, houston dynamo logo:20, houston dynamo fc logo:10, houston dynamo logo png:10, logo dynamo houston:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
-  galleryImageId: 567
+  keywords:
+    "logo houston dynamo:20, houston dynamo logo:20, houston dynamo fc logo:10, houston dynamo logo png:10, logo dynamo houston:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
+  galleryImageId: 567,
 };

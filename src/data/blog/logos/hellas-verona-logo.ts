@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hellasVeronaLogoPost: BlogPost = {
   id: 303,
+  slug: "hellas-verone-logo", //
   title: "Logo Hellas Verona : Histoire et Design de l'Emblème Italien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Hellas Verona : origines, évolution et signification de l'emblème emblématique du club italien de Série A.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Hellas Verona : origines, évolution et signification de l'emblème emblématique du club italien de Série A.",
   date: "2024-06-05",
   galleryImageId: 303,
   content: `# L'Histoire Fascinante du **Logo Hellas Verona**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **hellas verona fc logo** incarne le
 Alors que l'Hellas Verona continue d'écrire son histoire sur les terrains de Serie A, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo hellas verona** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **hellas verone logo** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "hellas verona fc logo, hellas verona logo, hellas verona logo png, logo hellas verona, logo hellas verona png, hellas verone logo, logo hellas verone, logo de foot hellas verona, logo de foot hellas verone",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "hellas verona fc logo, hellas verona logo, hellas verona logo png, logo hellas verona, logo hellas verona png, hellas verone logo, logo hellas verone, logo de foot hellas verona, logo de foot hellas verone",
+  category: "logos",
+  subCategory: "club-logos",
 };

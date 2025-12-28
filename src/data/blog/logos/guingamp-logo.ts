@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const guingampLogoPost: BlogPost = {
   id: 297,
+  slug: "guingamp-logo", //
   title: "Logo Guingamp : Histoire et Design de l'Emblème Breton [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Guingamp : origines, évolution et signification de l'emblème emblématique du club breton de l'En Avant.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Guingamp : origines, évolution et signification de l'emblème emblématique du club breton de l'En Avant.",
   date: "2024-06-04",
   galleryImageId: 297,
   content: `# L'Histoire Fascinante du **Logo Guingamp**
@@ -60,7 +61,8 @@ Au-delà de sa fonction identificatrice, le **logo guingamp foot** incarne les v
 Alors que l'EAG continue d'écrire son histoire sur les terrains nationaux, son emblème iconique reste ce point de repère stable qui traverse les générations. La continuité visuelle du **logo guingamp** à travers les années a créé un puissant sentiment d'appartenance transgénérationnel, reliant les supporters d'hier à ceux d'aujourd'hui dans une même passion.
 
 Les prochaines évolutions du **logo ea guingamp** s'inscriront probablement dans cette même philosophie d'équilibre entre respect des traditions et adaptation contemporaine. Ce processus d'évolution maîtrisée garantit que l'emblème continuera de résonner auprès des nouvelles générations de supporters tout en préservant le lien émotionnel avec son territoire d'origine.`,
-  keywords: "logo guingamp, logo en avant guingamp, eag guingamp logo, en avant guingamp logo, guingamp logo, guingamp logo png, logo de guingamp, logo ea guingamp, logo en avant de guingamp, logo guingamp foot, ea guingamp logo, en avant de guingamp logo, guingamp foot logo, logo guingamp png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo guingamp, logo en avant guingamp, eag guingamp logo, en avant guingamp logo, guingamp logo, guingamp logo png, logo de guingamp, logo ea guingamp, logo en avant de guingamp, logo guingamp foot, ea guingamp logo, en avant de guingamp logo, guingamp foot logo, logo guingamp png",
+  category: "logos",
+  subCategory: "club-logos",
 };

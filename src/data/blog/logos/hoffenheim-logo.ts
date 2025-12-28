@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hoffenheimLogoPost: BlogPost = {
   id: 306,
+  slug: "hoffenheim-logo", //
   title: "Logo TSG Hoffenheim : Histoire et Évolution du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire et la signification du logo TSG Hoffenheim, emblème moderne du football allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
+  excerpt:
+    "Découvrez l'histoire et la signification du logo TSG Hoffenheim, emblème moderne du football allemand. Analyse complète du design et de l'évolution de cet écusson de Bundesliga.",
   date: "2024-04-18",
   galleryImageId: 306,
   content: `# Histoire et Signification du Logo TSG Hoffenheim
@@ -66,7 +67,8 @@ Le **logo TSG Hoffenheim** incarne parfaitement l'identité d'un club qui a su s
 Alors que le TSG Hoffenheim continue d'écrire son histoire dans le football allemand et européen, son **logo Hoffenheim png** continuera d'évoluer tout en préservant les éléments qui en font un symbole reconnaissable et apprécié par ses supporters.
 
 Dans un monde où l'identité visuelle joue un rôle de plus en plus important dans la stratégie globale des clubs de football, le **Hoffenheim logo** représente un exemple réussi d'équilibre entre modernité, clarté et fidélité aux valeurs fondamentales du club qu'il représente.`,
-  keywords: "hoffenheim logo, logo hoffenheim, hoffenheim logo png, logo tsg hoffenheim, tsg hoffenheim logo, logo hoffenheim png, logo club foot hoffenheim, logo de foot hoffenheim, logo foot hoffenheim, logo foot hoffenheim png, logo hoffenheim fc",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "hoffenheim logo, logo hoffenheim, hoffenheim logo png, logo tsg hoffenheim, tsg hoffenheim logo, logo hoffenheim png, logo club foot hoffenheim, logo de foot hoffenheim, logo foot hoffenheim, logo foot hoffenheim png, logo hoffenheim fc",
+  category: "logos",
+  subCategory: "club-logos",
 };

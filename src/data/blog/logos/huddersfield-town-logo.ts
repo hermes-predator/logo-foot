@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const huddersfieldTownLogoPost: BlogPost = {
   id: 309,
+  slug: "huddersfield-town-logo", //
   title: "**Huddersfield Town Logo** : Histoire et Évolution [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Huddersfield Town**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Huddersfield Town**, son symbolisme unique et son évolution à travers les décennies dans le football anglais.",
   date: "2024-04-13",
   content: `
 # **Huddersfield Town Logo** : Histoire et Symbolisme
@@ -74,8 +75,9 @@ Les designs du **logo foot huddersfield town png** sont protégés et leur utili
 
 Le **huddersfield town logo** reste un symbole puissant qui transcende le simple cadre sportif pour devenir un véritable emblème culturel, unissant les supporters autour d'une identité visuelle commune et reconnaissable. À travers ses évolutions, le **huddersfield town logo png** a su conserver l'essence du club tout en s'adaptant aux exigences modernes du marketing sportif et de la communication digitale.
   `,
-  keywords: "**huddersfield town logo**:20, **huddersfield town logo png**:20, **logo huddersfield town**:20, **logo foot huddersfield town png**:10",
-  category: 'logos',
-  subCategory: 'club-logos',
-  galleryImageId: 365
+  keywords:
+    "**huddersfield town logo**:20, **huddersfield town logo png**:20, **logo huddersfield town**:20, **logo foot huddersfield town png**:10",
+  category: "logos",
+  subCategory: "club-logos",
+  galleryImageId: 365,
 };

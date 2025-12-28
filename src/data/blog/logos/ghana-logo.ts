@@ -1,12 +1,14 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ghanaLogoPost: BlogPost = {
   id: 283,
+  slug: "ghana-logo", //
   title: "Logo Ghana : Histoire et Symbolisme de l'Emblème du Football Ghanéen [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale du Ghana : origines, évolution et signification de l'emblème qui représente la fierté du football ghanéen.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale du Ghana : origines, évolution et signification de l'emblème qui représente la fierté du football ghanéen.",
   date: "2024-04-15",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
   galleryImageId: 283,
   content: `# L'Histoire Fascinante du Logo Ghana de Football
 
@@ -48,7 +50,7 @@ Au fil des générations, le **logo ghana** a su évoluer tout en conservant son
 
 Les jeunes joueurs qui rêvent de porter le maillot national s'identifient à ce **ghana national team logo** bien avant leurs débuts professionnels. Pour eux comme pour les vétérans du football ghanéen, cet emblème incarne l'essence même de leur passion pour le jeu et leur fierté nationale.
 
-Alors que le football ghanéen continue d'écrire son histoire sur la scène internationale, le **ghana logo foot** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les futures versions du **logo foot ghana** qui se succéderont, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football ghanéen.`
-  ,
-  keywords: "ghana football association logo, ghana football logo, ghana logo, logo foot ghana, logo ghana, logo ghana foot, ghana logo png, equipe foot ghana logo, ghana football federation logo, ghana logo foot, ghana national team logo",
+Alors que le football ghanéen continue d'écrire son histoire sur la scène internationale, le **ghana logo foot** reste le témoin visuel de ses triomphes, de ses défis et de sa résilience. Pour les futures versions du **logo foot ghana** qui se succéderont, le défi sera de poursuivre cette tradition tout en apportant une touche de modernité à ce symbole intemporel du football ghanéen.`,
+  keywords:
+    "ghana football association logo, ghana football logo, ghana logo, logo foot ghana, logo ghana, logo ghana foot, ghana logo png, equipe foot ghana logo, ghana football federation logo, ghana logo foot, ghana national team logo",
 };

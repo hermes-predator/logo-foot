@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const godoyCruzLogoPost: BlogPost = {
   id: 288,
+  slug: "godoy-cruz-logo", //
   title: "**Godoy Cruz Logo** : Histoire et Symbolisme du Club Argentin [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **Godoy Cruz logo**, emblème emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de foot Godoy Cruz**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **Godoy Cruz logo**, emblème emblématique du football argentin. Une analyse détaillée de l'évolution et de la signification du **logo de foot Godoy Cruz**.",
   date: "2024-04-22",
   galleryImageId: 288,
   content: `# L'Histoire du **Godoy Cruz Logo**
@@ -35,5 +37,5 @@ Le club a réussi à transcender les frontières régionales, faisant du **Godoy
 Plus qu'un simple logo, le **Godoy Cruz logo** est un récit visuel de l'histoire, de la passion et de l'identité d'un club qui continue d'inspirer des générations de supporters.`,
   keywords: "godoy cruz logo, logo de foot godoy cruz argentine, football argentin, club de mendoza, logo sportif",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const greeceLogoPost: BlogPost = {
   id: 291,
+  slug: "grece-logo", //
   title: "Logo Grèce : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Grèce : des origines à aujourd'hui, évolution et signification de l'emblème du football grec.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Grèce : des origines à aujourd'hui, évolution et signification de l'emblème du football grec.",
   date: "2024-05-30",
   galleryImageId: 291,
   content: `# L'Histoire Fascinante du **Logo Grèce** Football
@@ -51,7 +53,8 @@ Des versions animées et interactives du logo ont également fait leur apparitio
 Au-delà de sa dimension sportive, le **logo grece** est devenu un puissant symbole des ambitions retrouvées du football grec sur la scène internationale. Après une période moins glorieuse suivant le succès de 2004, le logo représente désormais une nouvelle génération de talents grecs qui aspirent à renouer avec les succès passés et à écrire de nouvelles pages glorieuses dans l'histoire du football national.
 
 Les joueurs qui portent fièrement le maillot orné du **logo foot grece** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a non seulement contribué immensément à la civilisation mondiale, mais qui a aussi démontré sa capacité à atteindre les sommets du football mondial contre toute attente.`,
-  keywords: "logo grece, logo club foot grec, logo club football grec, logo club grec, logo foot grece, club de foot grec logo",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo grece, logo club foot grec, logo club football grec, logo club grec, logo foot grece, club de foot grec logo",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

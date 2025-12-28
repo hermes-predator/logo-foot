@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const grasshopperLogoPost: BlogPost = {
   id: 290,
+  slug: "grasshopper-logo", //
   title: "Logo Grasshopper Club Zürich : Histoire et Symbolique de l'Emblème [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de Grasshopper Club Zürich, le club le plus titré de Suisse, et la signification de son emblème iconique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de Grasshopper Club Zürich, le club le plus titré de Suisse, et la signification de son emblème iconique.",
   date: "2024-04-15",
   galleryImageId: 290,
   content: `# L'Histoire du Logo Grasshopper Club Zürich
@@ -33,7 +35,8 @@ Les **grasshoppers foot logo** ont su évoluer avec leur temps tout en préserva
 ## Un Héritage Perpétuel
 
 L'emblème de Grasshopper Club Zürich est plus qu'un simple logo : c'est un symbole qui unit des générations de supporters et incarne l'esprit d'un club légendaire du football suisse.`,
-  keywords: "grasshopper logo, grasshopper logo png, logo grasshopper, logo grasshopper club zürich, fc zurich grasshopper logo, grasshoppers foot logo, grasshoppers zurich logo png, logo grasshopper zurich",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "grasshopper logo, grasshopper logo png, logo grasshopper, logo grasshopper club zürich, fc zurich grasshopper logo, grasshoppers foot logo, grasshoppers zurich logo png, logo grasshopper zurich",
+  category: "logos",
+  subCategory: "club-logos",
 };

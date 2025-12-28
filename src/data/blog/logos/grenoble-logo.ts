@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const grenobleLogoPost: BlogPost = {
   id: 293,
+  slug: "grenoble-logo", //
   title: "Logo Grenoble : Histoire et Design de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Grenoble : origines, évolution et symbolisme de l'emblème emblématique du club isérois.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Grenoble : origines, évolution et symbolisme de l'emblème emblématique du club isérois.",
   date: "2024-04-16",
   galleryImageId: 293,
   content: `# L'Histoire Passionnante du **Logo Grenoble**
@@ -53,7 +54,8 @@ Les équipes créatives du club ont développé un système complet d'identité 
 Cette rigueur dans l'application garantit que le **logo grenoble foot** conserve sa cohérence et son impact visuel dans toutes ses manifestations. Le club continue d'optimiser son identité visuelle pour répondre aux exigences des supports modernes tout en préservant l'âme du **grenoble foot 38 logo**.
 
 Alors que Grenoble poursuit son développement sportif et institutionnel, son emblème iconique continue d'évoluer subtilement pour refléter ces transformations. Cette capacité d'adaptation, tout en restant fidèle à ses racines iséroises, fait du **logo grenoble** un cas d'étude fascinant en matière d'identité visuelle sportive et un symbole intemporel du football alpin français.`,
-  keywords: "logo grenoble, logos grenoble, grenoble logo, logo grenoble foot, grenoble foot logo, logo de grenoble, grenoble foot 38 logo, grenoble logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo grenoble, logos grenoble, grenoble logo, logo grenoble foot, grenoble foot logo, logo de grenoble, grenoble foot 38 logo, grenoble logo png",
+  category: "logos",
+  subCategory: "club-logos",
 };

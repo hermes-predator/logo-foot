@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hondurasLogoPost: BlogPost = {
   id: 307,
+  slug: "honduras-logo", //
   title: "**Logo Honduras** : L'Histoire Fascinante de l'Emblème des Catrachos [2024]",
-  date: '2025-04-26',
+  date: "2025-04-26",
   galleryImageId: 307,
-  category: 'national-logos',
-  excerpt: "Découvrez l'histoire captivante du logo de la sélection hondurienne de football, un symbole qui incarne la fierté et les ambitions d'une nation passionnée de football.",
+  category: "national-logos",
+  excerpt:
+    "Découvrez l'histoire captivante du logo de la sélection hondurienne de football, un symbole qui incarne la fierté et les ambitions d'une nation passionnée de football.",
   content: `# Le **Logo Honduras** : Un Symbole d'Identité Nationale
 
 Le **honduras logo** représente bien plus qu'un simple emblème sportif : c'est le reflet de l'âme d'une nation où le football occupe une place centrale dans la culture populaire. Le **logo du honduras** incarne la fierté et les aspirations d'un peuple passionné par le ballon rond.
@@ -35,5 +36,6 @@ Plus qu'un simple logo, cet emblème est devenu un puissant symbole d'unité nat
 ## Conclusion
 
 Le logo de la sélection hondurienne est un témoignage visuel de la passion du pays pour le football. Il continue d'inspirer les nouvelles générations de joueurs et de supporters, portant avec fierté les couleurs et les espoirs d'une nation tout entière.`,
-  keywords: 'logo honduras, honduras logo, honduras football logo, honduras logo foot, honduras soccer logo png, logo club foot honduras, logo du honduras, logo foot honduras, logos federation football honduras'
+  keywords:
+    "logo honduras, honduras logo, honduras football logo, honduras logo foot, honduras soccer logo png, logo club foot honduras, logo du honduras, logo foot honduras, logos federation football honduras",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gironaLogoPost: BlogPost = {
   id: 285, // Using a unique ID that isn't already used
+  slug: "girona-logo", //
   title: "Logo Girona FC : Histoire et Évolution de l'Emblème du Club Catalan [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Girona FC : origines, signification et évolution de l'emblème emblématique du club catalan espagnol au fil des années.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Girona FC : origines, signification et évolution de l'emblème emblématique du club catalan espagnol au fil des années.",
   date: "2024-06-22",
   galleryImageId: 285,
   content: `# L'Histoire Fascinante du **Logo Girona**
@@ -64,7 +65,8 @@ Au terme de cette exploration de l'histoire et de la signification du **logo gir
 Alors que Girona FC continue son ascension sportive impressionnante, son **logo girona fc** continuera probablement d'évoluer subtilement pour refléter cette progression, tout en maintenant les éléments fondamentaux qui le rendent instantanément reconnaissable pour les supporters du monde entier.
 
 Qu'il soit brodé sur les maillots des joueurs, affiché fièrement dans le stade de Montilivi ou partagé numériquement par les millions de fans sur les réseaux sociaux, le **girona fc logo png** reste un symbole puissant d'identité, d'appartenance et de passion pour le football. C'est un témoignage visuel de la riche histoire d'un club qui continue de faire la fierté de toute une région.`,
-  keywords: "logo girona, girona logo, girona logo png, girona fc logo, logo girona png, girona fc logo png, logo girona fc, girone logo, logo de girona, logo png girona, gerona logo, logo gerone png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo girona, girona logo, girona logo png, girona fc logo, logo girona png, girona fc logo png, logo girona fc, girone logo, logo de girona, logo png girona, gerona logo, logo gerone png",
+  category: "logos",
+  subCategory: "club-logos",
 };

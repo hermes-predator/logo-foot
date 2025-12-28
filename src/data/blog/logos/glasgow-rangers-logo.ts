@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const glasgowRangersLogoPost: BlogPost = {
   id: 286,
+  slug: "glasgow-rangers-logo", //
   title: "Logo Glasgow Rangers : Histoire et Evolution de l'Emblème Écossais [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Glasgow Rangers : origines, évolution et symbolisme de l'emblème emblématique du club écossais le plus titré.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Glasgow Rangers : origines, évolution et symbolisme de l'emblème emblématique du club écossais le plus titré.",
   date: "2024-05-20",
   galleryImageId: 286,
   content: `# Logo Glasgow Rangers : L'Histoire et le Design d'un Emblème Légendaire
@@ -142,7 +143,8 @@ Le **logo Glasgow Rangers** est bien plus qu'un simple emblème sportif – c'es
 Sa capacité à évoluer tout en préservant son essence est remarquable et témoigne de l'équilibre parfait entre respect des traditions et adaptation aux exigences modernes. Pour les millions de supporters à travers le monde, ce n'est pas seulement un logo – c'est l'incarnation graphique d'une passion et d'une fierté qui se transmet de génération en génération.
 
 Que ce soit brodé sur le maillot d'un joueur, affiché fièrement à l'Ibrox Stadium ou recherché en ligne sous forme de **logo Glasgow Rangers png**, cet emblème continuera sans aucun doute à symboliser l'excellence, la fierté et la détermination qui caractérisent les **Glasgow Rangers Football Club**.`,
-  keywords: "logo glasgow rangers, glasgow rangers logo, glasgow rangers fc logo, glasgow rangers football club logo, logo glasgow rangers, glasgow rangers logo png, rangers fc logo, emblème glasgow rangers, écusson glasgow rangers",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "logo glasgow rangers, glasgow rangers logo, glasgow rangers fc logo, glasgow rangers football club logo, logo glasgow rangers, glasgow rangers logo png, rangers fc logo, emblème glasgow rangers, écusson glasgow rangers",
+  category: "logos",
+  subCategory: "club-logos",
 };

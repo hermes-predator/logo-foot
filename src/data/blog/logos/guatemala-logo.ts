@@ -1,15 +1,17 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const guatemalaLogoPost: BlogPost = {
   id: 296,
+  slug: "guatemala-logo", //
   title: "**Logo Guatemala** : L'Histoire de l'Emblème des Chapines [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de l'équipe nationale guatémaltèque : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football guatémaltèque.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de l'équipe nationale guatémaltèque : des origines à aujourd'hui, évolution et signification de l'emblème qui représente le football guatémaltèque.",
   date: "2025-04-27",
   galleryImageId: 296,
   category: "national-logos",
   subCategory: "national-logos",
-  keywords: "logo guatemala, guatemala logo, logo de guatemala, guatemala football logo, logo federation football guatemala",
+  keywords:
+    "logo guatemala, guatemala logo, logo de guatemala, guatemala football logo, logo federation football guatemala",
   content: `# L'Histoire Fascinante du **Logo Guatemala**
 
 Le **logo guatemala** représente bien plus qu'un simple emblème sportif : c'est le symbole d'une nation passionnée de football, dont l'histoire est profondément ancrée dans la culture et les traditions de l'Amérique centrale. Le **guatemala logo** incarne l'identité unique d'un pays qui allie fierté nationale et ambitions footballistiques.

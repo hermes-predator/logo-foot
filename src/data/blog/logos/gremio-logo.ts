@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const gremioLogoPost: BlogPost = {
   id: 292,
+  slug: "gremio-logo", //
   title: "**Grêmio Logo** : Histoire et Symbolisme de l'Emblème Gaúcho [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Grêmio**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Grêmio logo PNG**.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Grêmio**, symbole emblématique du football brésilien. Une analyse détaillée de l'évolution et de la signification du **Grêmio logo PNG**.",
   date: "2024-04-22",
   galleryImageId: 292,
   content: `# L'Histoire Emblématique du **Grêmio Logo**
@@ -42,7 +43,8 @@ Le logo continue d'évoluer tout en préservant son essence. C'est un symbole qu
 ## Conclusion
 
 Le **logo Grêmio** est bien plus qu'un simple emblème sportif : c'est le symbole d'une institution centenaire qui a marqué l'histoire du football brésilien et continue d'inspirer les nouvelles générations de supporters.`,
-  keywords: "logo grêmio, grêmio logo, logo grêmio png, football brésilien, club du rio grande do sul, histoire du football",
+  keywords:
+    "logo grêmio, grêmio logo, logo grêmio png, football brésilien, club du rio grande do sul, histoire du football",
   category: "logos",
-  subCategory: "non-european-clubs"
+  subCategory: "non-european-clubs",
 };

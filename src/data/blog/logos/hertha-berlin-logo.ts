@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const herthaBerlinLogoPost: BlogPost = {
   id: 305,
+  slug: "hertha-berlin-logo", //
   title: "**Logo Hertha Berlin** : Histoire et Évolution de l'Emblème du Club Allemand [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Hertha Berlin**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Hertha Berlin**, ses transformations à travers les années et sa symbolique unique dans notre analyse détaillée de l'emblème de ce club allemand emblématique.",
   date: "2025-04-14",
   galleryImageId: 305,
   content: `# L'Histoire Fascinante du **Logo Hertha Berlin**
@@ -93,7 +94,8 @@ Le **logo hertha berlin** continuera sans doute d'évoluer subtilement pour rép
 Le **logo hertha bsc** demeure l'un des emblèmes les plus distinctifs et respectés du football allemand. De sa conception initiale à sa version numérique moderne en **hertha berlin logo png**, l'emblème du Hertha BSC a su évoluer tout en préservant son essence et sa reconnaissance immédiate.
 
 Alors que le club traverse les différentes phases de son histoire sportive, entre succès et défis, son **logo foot hertha berlin** reste un point d'ancrage identitaire puissant, unissant supporters, joueurs et dirigeants autour d'un symbole commun qui transcende les générations et les résultats sportifs.`,
-  keywords: "hertha berlin logo:20, hertha berlin logo png:20, logo hertha berlin:20, logo hertha berlin png:10, logo hertha bsc berlin:10, logo foot hertha berlin:10, hertha bsc logo:20, logo hertha bsc:20, logo hertha bsc berlin:10",
-  category: 'logos',
-  subCategory: 'german-clubs',
+  keywords:
+    "hertha berlin logo:20, hertha berlin logo png:20, logo hertha berlin:20, logo hertha berlin png:10, logo hertha bsc berlin:10, logo foot hertha berlin:10, hertha bsc logo:20, logo hertha bsc:20, logo hertha bsc berlin:10",
+  category: "logos",
+  subCategory: "german-clubs",
 };

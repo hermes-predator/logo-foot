@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hungaryLogoPost: BlogPost = {
   id: 312,
+  slug: "hongrie-logo", //
   title: "Logo Hongrie : Histoire et Évolution de l'Emblème National [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de l'équipe nationale de Hongrie : des origines à aujourd'hui, évolution et signification de l'emblème du football hongrois.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de l'équipe nationale de Hongrie : des origines à aujourd'hui, évolution et signification de l'emblème du football hongrois.",
   date: "2024-05-25",
   galleryImageId: 312,
   content: `# L'Histoire Fascinante du **Logo Hongrie** Football
@@ -45,7 +47,8 @@ Des versions animées et interactives du **logo hongrie foot** ont également fa
 Au-delà de sa dimension sportive, le **logo hongrie** est devenu un puissant symbole des ambitions retrouvées du football hongrois. Après des décennies d'ombre relative suivant l'âge d'or des années 1950, la Hongrie connaît une renaissance footballistique, et le **logo foot hongrie** incarne cette volonté de renouer avec un prestigieux passé.
 
 Les joueurs qui portent fièrement le maillot orné du **logo hongrie de foot** sont conscients de cette responsabilité particulière. Ils ne défendent pas seulement les couleurs d'une équipe, mais également l'héritage d'un pays qui a produit des légendes du football mondial et dont le **hongrie foot logo** est devenu emblématique tant pour sa simplicité que pour sa force symbolique.`,
-  keywords: "logo hongrie, hongrie logo, hongrie foot logo, hongrie logo foot, logo foot hongrie, logo hongrie foot, logo d'hongrie, logo hongrie de foot",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  keywords:
+    "logo hongrie, hongrie logo, hongrie foot logo, hongrie logo foot, logo foot hongrie, logo hongrie foot, logo d'hongrie, logo hongrie de foot",
+  category: "national-logos",
+  subCategory: "national-logos",
 };

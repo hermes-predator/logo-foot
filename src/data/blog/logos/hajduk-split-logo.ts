@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hajdukSplitLogoPost: BlogPost = {
   id: 298, // ID unique qui n'est pas déjà utilisé
+  slug: "hajduk-split-logo", //
   title: "Hajduk Split Logo : Histoire et Évolution de l'Emblème Croate [2024]",
-  excerpt: "Découvrez l'histoire complète du logo de Hajduk Split : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de football croate.",
+  excerpt:
+    "Découvrez l'histoire complète du logo de Hajduk Split : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club de football croate.",
   date: "2024-06-20",
   galleryImageId: 298,
   content: `# L'Histoire Fascinante du **Hajduk Split Logo**
@@ -49,6 +50,6 @@ Alors que le club continue d'écrire son histoire, le **hajduk split logo png** 
 
 Le **hajduk split logo** n'est donc pas simplement un design graphique, mais un véritable patrimoine culturel qui se transmet de génération en génération, perpétuant ainsi l'héritage d'un club qui a toujours placé les valeurs sportives et l'attachement à ses racines au cœur de son identité.`,
   keywords: "hajduk split logo, hajduk split logo png",
-  category: 'logos',
-  subCategory: 'club-logos'
+  category: "logos",
+  subCategory: "club-logos",
 };

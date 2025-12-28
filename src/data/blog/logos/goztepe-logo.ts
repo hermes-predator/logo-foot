@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const goztepeLogoPost: BlogPost = {
   id: 289,
+  slug: "goztepe-logo", //
   title: "**Göztepe Logo** : Histoire et Évolution de l'Emblème du Club [2024]",
-  excerpt: "Découvrez l'histoire passionnante du **göztepe logo**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
+  excerpt:
+    "Découvrez l'histoire passionnante du **göztepe logo**, symbole emblématique du football turc, à travers son évolution et sa signification profonde.",
   date: "2024-04-21",
   galleryImageId: 289,
   content: `# L'Histoire du **Göztepe Logo**
@@ -71,6 +72,6 @@ Le **göztepe logo** continue d'évoluer :
 - Respect des traditions
 - Vision moderne`,
   keywords: "göztepe logo, göztepe logo png, logo göztepe sk, football turc, super lig",
-  category: 'logos',
-  subCategory: 'club-logos',
+  category: "logos",
+  subCategory: "club-logos",
 };

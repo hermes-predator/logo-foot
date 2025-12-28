@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const hullCityLogoPost: BlogPost = {
   id: 311, // ID unique qui n'est pas déjà utilisé
+  slug: "hull-city-logo", //
   title: "Logo Hull City : Histoire et Évolution de l'Emblème des Tigers [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo Hull City, son évolution au fil des années et la signification de ses éléments distinctifs dans cette analyse complète.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo Hull City, son évolution au fil des années et la signification de ses éléments distinctifs dans cette analyse complète.",
   date: "2024-06-07",
   content: `# L'Histoire Remarquable du **Hull City Logo** à Travers les Décennies
 
@@ -87,7 +88,8 @@ En définitive, le **hull city logo** représente bien plus qu'un simple design 
 À travers ses multiples évolutions, le **logo hull city** a su préserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles réalités du football moderne. Cette capacité à évoluer tout en restant fidèle à ses racines fait du **hull city afc logo** un cas d'étude fascinant dans le domaine des identités visuelles sportives.
 
 Que vous soyez un supporter passionné des "Tigers" ou simplement un amateur de design sportif, le **logo hull city png** mérite d'être apprécié pour sa richesse symbolique et son importance culturelle dans l'histoire du football anglais.`,
-  keywords: "hull city afc logo, hull city logo, hull city logo png, logo hull city, hull city fc logo, logo hull city png, hull city fc logo png, hull city football logo, logo de foot hull city, logo hull city afc",
-  category: 'logos',
-  subCategory: 'club-logos'
+  keywords:
+    "hull city afc logo, hull city logo, hull city logo png, logo hull city, hull city fc logo, logo hull city png, hull city fc logo png, hull city football logo, logo de foot hull city, logo hull city afc",
+  category: "logos",
+  subCategory: "club-logos",
 };

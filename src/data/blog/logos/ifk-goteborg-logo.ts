@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const ifkGoteborgLogoPost: BlogPost = {
   id: 314,
+  slug: "ifk-goteborg-logo", //
   title: "**Göteborg Logo** : Histoire et Évolution de l'Emblème Légendaire [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **IFK Göteborg logo**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **logo IFK Göteborg** et de son évolution au fil des années.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **IFK Göteborg logo**, l'un des clubs les plus prestigieux de Suède. Une analyse détaillée du **logo IFK Göteborg** et de son évolution au fil des années.",
   date: "2024-04-22",
   content: `# L'Histoire Fascinante du **Göteborg Logo**
 
@@ -50,6 +51,7 @@ Le **Göteborg logo** d'aujourd'hui combine habilement :
 
 Le **logo Göteborg AIS** transcende son rôle d'emblème sportif pour devenir un véritable symbole culturel. Il continue d'inspirer les générations de supporters et représente l'essence même du football suédois.`,
   category: "logos",
-  keywords: "göteborg logo, ifk göteborg logo, logo ifk göteborg, logo göteborg ais, football suédois, emblème göteborg, club suédois",
-  subCategory: "other-european-clubs"
+  keywords:
+    "göteborg logo, ifk göteborg logo, logo ifk göteborg, logo göteborg ais, football suédois, emblème göteborg, club suédois",
+  subCategory: "other-european-clubs",
 };

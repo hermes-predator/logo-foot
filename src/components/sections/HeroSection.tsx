@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock } from "lucide-react";
+import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -262,7 +262,7 @@ const HeroSection: React.FC = () => {
             {/* Container fusionné : Vidéo + Judge.me */}
             <div className="h-full flex flex-col">
               {/* Vidéo preview du contenu */}
-              <div className="relative flex-1 bg-white/70 backdrop-blur-lg rounded overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px]">
+              <div className="relative flex-1 bg-white/70 backdrop-blur-lg rounded overflow-hidden shadow-[0_1px_6px_rgba(0,0,0,0.03),0_1px_3px_rgba(0,0,0,0.015),inset_0_1px_0_rgba(255,255,255,0.8)] border border-white/50 before:absolute before:inset-0 before:rounded before:p-[1px] before:bg-gradient-to-br before:from-white/60 before:via-gray-100/40 before:to-white/30 before:-z-10 before:m-[-1px] group">
                 <video 
                   className="w-full h-full object-cover"
                   autoPlay 
@@ -276,6 +276,14 @@ const HeroSection: React.FC = () => {
                     <Folder className="w-12 h-12 text-gray-400" />
                   </div>
                 </video>
+                
+                {/* Overlay cadenas - disparaît au survol */}
+                <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px] flex items-center justify-center transition-all duration-300 opacity-100 group-hover:opacity-0 group-hover:pointer-events-none">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 shadow-lg">
+                    <Lock className="w-8 h-8 text-gray-600" />
+                  </div>
+                </div>
+                
                 <div className="absolute bottom-2 left-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center justify-between">
                   <span>Aperçu du fichier</span>
                   <span className="text-[10px]">ZIP • 8 774 éléments</span>

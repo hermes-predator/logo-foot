@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const colombiaLogoPost: BlogPost = {
   id: 176,
+  slug: "colombie-logo", //
   title: "Logo Colombie : Histoire et Design de l'Emblème du Football Colombien [2024]",
-  excerpt: "Découvrez l'histoire complète du logo Colombie : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
+  excerpt:
+    "Découvrez l'histoire complète du logo Colombie : des origines à aujourd'hui, évolution et signification de l'emblème de cette équipe nationale emblématique.",
   date: "2024-05-15",
   galleryImageId: 176,
   content: `# L'Histoire Fascinante du Logo Colombie
@@ -46,6 +48,6 @@ Tout en conservant ses éléments fondamentaux, le **colombie logo** continue d'
 
 Cette capacité à se réinventer tout en restant fidèle à ses racines fait du **logo colombie foot** un exemple remarquable de continuité dans le design sportif. Alors que de nombreuses fédérations optent pour des ruptures radicales dans leur identité visuelle, le **logo foot colombie** témoigne d'une approche plus évolutive qui préserve le lien avec l'histoire tout en regardant vers l'avenir.`,
   keywords: "logo colombie foot, colombie logo, logo colombie, logo foot colombie, colombie logo foot",
-  category: 'national-logos',
-  subCategory: 'national-logos',
+  category: "national-logos",
+  subCategory: "national-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coloradoRapidsLogoPost: BlogPost = {
   id: 178,
+  slug: "colorado-rapids-logo", //
   title: "**Logo Colorado Rapids** : Histoire et Design de l'Emblème de la MLS [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Colorado Rapids**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Colorado Rapids**, son évolution et la symbolique de cet emblème unique de la MLS dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 178,
   content: `# L'Histoire Fascinante du **Logo Colorado Rapids**
@@ -72,7 +73,8 @@ Le succès commercial des produits arborant le **logo rapids colorado** témoign
 Le **colorado rapids logo** illustre parfaitement comment un emblème sportif peut transcender sa fonction première pour devenir un véritable symbole culturel et identitaire. À travers ses évolutions successives, il a su préserver son essence tout en s'adaptant aux changements d'époque et aux nouvelles attentes visuelles.
 
 Pour les supporters comme pour les observateurs du football américain, le **logo colorado rapids png** représente non seulement un club de la MLS, mais aussi l'esprit d'une région entière - ses montagnes majestueuses, ses rivières tumultueuses et sa communauté passionnée. Cette capacité à incarner à la fois un territoire et une passion sportive fait du **mls logo colorado rapids** l'un des designs les plus réussis et significatifs du football nord-américain.`,
-  keywords: "colorado rapids logo:20, colorado rapids logo png:10, logo colorado rapids:10, logo de foot colorado rapids:10, logo rapids colorado:10, mls logo colorado rapids:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "colorado rapids logo:20, colorado rapids logo png:10, logo colorado rapids:10, logo de foot colorado rapids:10, logo rapids colorado:10, mls logo colorado rapids:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

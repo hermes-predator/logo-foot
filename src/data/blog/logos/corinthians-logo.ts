@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const corinthiansLogoPost: BlogPost = {
   id: 190,
+  slug: "corinthians-logo", //
   title: "**Logo Corinthians** : Histoire et Design de l'Emblème Iconique du Football Brésilien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du **logo Corinthians**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **logo Corinthians**, son évolution et la symbolique de cet emblème unique du football brésilien dans notre analyse détaillée.",
   date: "2025-04-13",
   galleryImageId: 190,
   content: `# L'Histoire Fascinante du **Logo Corinthians**
@@ -34,7 +35,8 @@ Le **logo de foot corinthians** est bien plus qu'un simple emblème sportif. Il 
 ## Conclusion
 
 Le **logos do corinthians png** illustre parfaitement comment un design peut raconter l'histoire d'un club, de sa ville et de sa communauté passionnée.`,
-  keywords: "corinthians logo:20, corinthians logo png:20, logo corinthians:20, logo corinthians png:20, logo do corinthians:20, logo do corinthians png:20, corinthians fc logo:10, corinthian logo:10, logo corinthians football:10, logo de foot corinthians:10, logo png corinthians:10, logos do corinthians png:10",
-  category: 'logos',
-  subCategory: 'non-european-clubs',
+  keywords:
+    "corinthians logo:20, corinthians logo png:20, logo corinthians:20, logo corinthians png:20, logo do corinthians:20, logo do corinthians png:20, corinthians fc logo:10, corinthian logo:10, logo corinthians football:10, logo de foot corinthians:10, logo png corinthians:10, logos do corinthians png:10",
+  category: "logos",
+  subCategory: "non-european-clubs",
 };

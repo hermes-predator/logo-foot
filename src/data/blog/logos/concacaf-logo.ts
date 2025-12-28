@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const concacafLogoPost: BlogPost = {
   id: 182,
+  slug: "concacaf-logo", //
   title: "**CONCACAF Logo** : Histoire et Évolution d'un Symbole du Football Nord-Américain",
   date: "2025-04-25",
   galleryImageId: 182,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo de la CONCACAF, symbole du football nord et centre-américain. Une analyse détaillée de son design emblématique et de son évolution au fil des ans.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la CONCACAF, symbole du football nord et centre-américain. Une analyse détaillée de son design emblématique et de son évolution au fil des ans.",
   content: `# L'Histoire du **CONCACAF Logo** : Un Symbole d'Unité Continentale
 
 Le **logo concacaf** représente bien plus qu'une simple identité visuelle pour la confédération de football d'Amérique du Nord, Centrale et des Caraïbes. Il incarne l'unité et la diversité d'une région passionnée par le football, tout en symbolisant l'excellence et le professionnalisme de ses compétitions.
@@ -31,5 +32,6 @@ Le **concacaf logo** joue un rôle crucial dans la promotion du football nord-am
 ## Conclusion
 
 L'évolution du **logo concacaf** témoigne de la volonté constante de la confédération de se moderniser tout en respectant son héritage. Cette identité visuelle forte continue d'incarner les valeurs d'excellence et d'unité qui caractérisent le football nord-américain.`,
-  keywords: "concacaf logo, logo concacaf, concacaf logo png, concacaf champions league logo, logo concacaf champions league, concacaf new logo, concacaf nations league logo, football nord-américain, design logo football"
+  keywords:
+    "concacaf logo, logo concacaf, concacaf logo png, concacaf champions league logo, logo concacaf champions league, concacaf new logo, concacaf nations league logo, football nord-américain, design logo football",
 };

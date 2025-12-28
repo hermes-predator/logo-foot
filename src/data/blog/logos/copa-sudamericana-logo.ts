@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const copaSudamericanaLogoPost: BlogPost = {
   id: 187,
+  slug: "copa-sudamericana-logo", //
   title: "**Logo Copa Sudamericana** : Histoire et Symbolisme de l'Emblème du Football Sud-Américain",
   date: "2025-04-26",
   galleryImageId: 187,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Copa Sudamericana, une compétition prestigieuse qui incarne la passion du football sud-américain. Une analyse détaillée de son design emblématique et de sa signification historique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Copa Sudamericana, une compétition prestigieuse qui incarne la passion du football sud-américain. Une analyse détaillée de son design emblématique et de sa signification historique.",
   content: `# Histoire et Évolution du **Logo Copa Sudamericana**
 
 Le **logo copa sudamericana** est bien plus qu'un simple emblème sportif - c'est un symbole qui capture l'essence même du football sud-américain et sa riche tradition compétitive. Cette compétition, créée pour mettre en valeur les talents des clubs du continent, arbore une identité visuelle qui raconte une histoire bien plus profonde que de simples lignes et de couleurs.
@@ -35,5 +36,6 @@ La conception du logo met l'accent sur la lisibilité et l'impact. Que ce soit s
 ## Conclusion
 
 Le **logo copa sudamericana** demeure un témoignage parfait de l'art du design sportif, alliant tradition et modernité. Il représente plus qu'une simple identité visuelle - c'est un récit graphique de la passion, de l'histoire et de l'avenir du football sud-américain.`,
-  keywords: "logo copa sudamericana, copa sudamericana logo, copa sudamericana logo png, logo copa sudamericana png, logo da copa sudamericana, football sud-américain, conmebol, design sportif"
+  keywords:
+    "logo copa sudamericana, copa sudamericana logo, copa sudamericana logo png, logo copa sudamericana png, logo da copa sudamericana, football sud-américain, conmebol, design sportif",
 };

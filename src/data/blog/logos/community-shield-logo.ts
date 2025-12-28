@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const communityShieldLogoPost: BlogPost = {
   id: 181,
+  slug: "community-shield-logo", //
   title: "Community Shield Logo : Histoire et Design de l'Emblème Britannique [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du Community Shield : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Angleterre.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du Community Shield : origines, évolution et signification de l'emblème emblématique de la Supercoupe d'Angleterre.",
   date: "2024-06-23",
   galleryImageId: 181,
   content: `# L'Histoire Fascinante du **Community Shield Logo**
@@ -57,7 +59,8 @@ Alors que le Community Shield continue de se développer et d'accroître sa visi
 Les campagnes marketing futures continueront probablement d'utiliser le **logo community shield** comme pilier central de la communication de la compétition, renforçant ainsi sa reconnaissance à l'échelle mondiale et contribuant à positionner ce match d'ouverture parmi les événements incontournables du calendrier footballistique européen.
 
 Dans ce contexte d'expansion et de modernisation, le **the fa community shield logo** restera un symbole fort de l'identité footballistique anglaise, un point de ralliement pour des millions de supporters et l'emblème d'une compétition qui continue de gagner en prestige et en attractivité sur la scène mondiale du football.`,
-  keywords: "community shield logo, fa community shield logo, fa community shield logo png, community shield logo png, logo community shield, the fa community shield logo, supercoupe angleterre logo, community shield trophy logo, fa shield logo, english supercup logo",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "community shield logo, fa community shield logo, fa community shield logo png, community shield logo png, logo community shield, the fa community shield logo, supercoupe angleterre logo, community shield trophy logo, fa shield logo, english supercup logo",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

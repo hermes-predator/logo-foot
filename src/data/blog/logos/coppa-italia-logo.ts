@@ -1,9 +1,11 @@
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const coppaItaliaLogoPost: BlogPost = {
   id: 189, // ID unique qui n'est pas encore utilisé
+  slug: "coppa-italia-logo", //
   title: "Logo Coppa Italia : Histoire et Symbolisme de l'Emblème du Football Italien [2024]",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Coppa Italia : origines, évolution et signification des symboles de la prestigieuse coupe nationale italienne.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Coppa Italia : origines, évolution et signification des symboles de la prestigieuse coupe nationale italienne.",
   date: "2024-09-02",
   galleryImageId: 189,
   content: `# L'Histoire Fascinante du **Logo Coppa Italia**
@@ -153,7 +155,8 @@ Le **logo coppa italia** représente bien plus qu'un simple emblème graphique �
 Son équilibre remarquable entre tradition et innovation fait du **logo coppa italia vector** un exemple fascinant d'identité visuelle sportive réussie. En tant que symbole immédiatement reconnaissable, le **logo coppa italia calcio** continue de galvaniser les passions et d'unir les générations autour d'une compétition qui, saison après saison, écrit de nouvelles pages glorieuses dans l'histoire du football italien.
 
 Que ce soit dans sa version imprimée traditionnelle ou dans sa déclinaison numérique moderne, le **coppa italia logo** demeure un puissant vecteur d'émotions et de souvenirs pour des millions de supporters, incarnant parfaitement la devise non officielle mais profondément ressentie du football italien : "Più di un gioco" – plus qu'un jeu.`,
-  keywords: "coppa italia logo, coppa italia logo png, logo coppa italia, logo coppa italia png, coppa italia logo vector, logo coppa italia calcio",
-  category: 'competition-logos',
-  subCategory: 'competition-logos'
+  keywords:
+    "coppa italia logo, coppa italia logo png, logo coppa italia, logo coppa italia png, coppa italia logo vector, logo coppa italia calcio",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const copaDoBasilLogoPost: BlogPost = {
   id: 185,
+  slug: "copa-do-brasil-logo", //
   title: "**Logo da Copa do Brasil** : Histoire et Évolution du Design [Guide 2024]",
-  excerpt: "Découvrez l'histoire fascinante du **copa do brasil logo**, son évolution à travers les époques et son impact sur l'identité visuelle du football brésilien.",
+  excerpt:
+    "Découvrez l'histoire fascinante du **copa do brasil logo**, son évolution à travers les époques et son impact sur l'identité visuelle du football brésilien.",
   date: "2024-04-27",
   galleryImageId: 185,
   content: `# Histoire et Évolution du **Logo da Copa do Brasil**
@@ -42,8 +43,8 @@ L'évolution du **logo da copa do brasil** continue de refléter la modernisatio
 ## Conclusion
 
 Le **copa do brasil logo** incarne parfaitement l'histoire et le prestige de cette compétition majeure. Son évolution témoigne de la capacité du football brésilien à se réinventer tout en préservant ses traditions.`,
-  keywords: "logo da copa do brasil, copa do brasil logo, logo copa do brasil, copa do brasill logo, logo copa do brasil png",
-  category: 'competition-logos',
-  subCategory: 'competition-logos',
+  keywords:
+    "logo da copa do brasil, copa do brasil logo, logo copa do brasil, copa do brasill logo, logo copa do brasil png",
+  category: "competition-logos",
+  subCategory: "competition-logos",
 };
-

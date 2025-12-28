@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const cologneLogoPost: BlogPost = {
   id: 175,
+  slug: "cologne-logo", //
   title: "Logo FC Cologne : Histoire et Design de l'Emblème Allemand [2024]",
-  excerpt: "Découvrez l'histoire complète du logo du FC Cologne : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
+  excerpt:
+    "Découvrez l'histoire complète du logo du FC Cologne : des origines à aujourd'hui, évolution et signification de l'emblème emblématique du club allemand.",
   date: "2024-04-10",
   galleryImageId: 175,
   content: `# L'Histoire Fascinante du Logo FC Cologne
@@ -40,7 +41,8 @@ Cette capacité d'adaptation du **logo de cologne** aux nouvelles technologies t
 Le **logo foot cologne** est aujourd'hui bien plus qu'un simple identifiant visuel – c'est un héritage culturel qui se transmet de génération en génération. Pour les jeunes supporters, arborer le **logo de foot cologne en allemagne** est une façon de s'approprier l'histoire riche d'un club qui a marqué le football allemand depuis plus de sept décennies.
 
 Alors que le club continue d'écrire son histoire sportive, le **fc cologne logo** reste le témoin visuel de ses traditions, de ses valeurs et de ses ambitions. Dans un monde footballistique en constante évolution, la pérennité et la force symbolique du **cologne logo** constituent un ancrage essentiel pour préserver l'âme authentique d'un club profondément enraciné dans sa communauté.`,
-  keywords: "cologne logo, cologne logo png, logo cologne, fc cologne logo, logo cologne foot, logo cologne format png, logo de cologne, logo de foot cologne en allemagne, logo fc cologne, logo foot cologne",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "cologne logo, cologne logo png, logo cologne, fc cologne logo, logo cologne foot, logo cologne format png, logo de cologne, logo de foot cologne en allemagne, logo fc cologne, logo foot cologne",
+  category: "logos",
+  subCategory: "club-logos",
 };

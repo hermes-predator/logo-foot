@@ -1,13 +1,14 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const copaLibertadoresLogoPost: BlogPost = {
   id: 186,
+  slug: "copa-libertadores-logo", //
   title: "**Logo Copa Libertadores** : L'Emblème Mythique qui Raconte l'Âme du Football Sud-Américain",
   date: "2025-04-26",
   galleryImageId: 186,
   category: "competition-logos",
-  excerpt: "Découvrez l'histoire fascinante du logo de la Copa Libertadores, la plus prestigieuse compétition de clubs d'Amérique du Sud. Une analyse détaillée de son design emblématique et de sa signification historique.",
+  excerpt:
+    "Découvrez l'histoire fascinante du logo de la Copa Libertadores, la plus prestigieuse compétition de clubs d'Amérique du Sud. Une analyse détaillée de son design emblématique et de sa signification historique.",
   content: `# La Saga Visuelle de la **Copa Libertadores** : Un Logo, Mille Histoires
 
 ## Naissance d'un Symbole : Le **Logo Copa Libertadores** dans l'Histoire du Football
@@ -37,6 +38,7 @@ Comment le **logo de copa libertadores** parvient-il à capturer l'imagination d
 ## Conclusion : Un Logo, Un Héritage
 
 Le **copa libertadores logo** continue d'évoluer, mais son essence reste inchangée : célébrer le football comme une expression ultime de la culture sud-américaine.`,
-  keywords: "logo copa libertadores, copa libertadores logo, copa libertadores logo png, logo copa libertadores png, logo de copa libertadores, logos copa libertadores, football sud-américain, conmebol, design sportif",
-  subCategory: "competition-logos"
+  keywords:
+    "logo copa libertadores, copa libertadores logo, copa libertadores logo png, logo copa libertadores png, logo de copa libertadores, logos copa libertadores, football sud-américain, conmebol, design sportif",
+  subCategory: "competition-logos",
 };

@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const copenhagenLogoPost: BlogPost = {
   id: 188,
+  slug: "copenhague-logo", //
   title: "Logo Copenhague : Histoire et Signification du FC Copenhague Logo [2024]",
-  excerpt: "Découvrez l'histoire complète du logo FC Copenhague : origines, évolution et symbolisme de l'emblème du plus grand club danois de football.",
+  excerpt:
+    "Découvrez l'histoire complète du logo FC Copenhague : origines, évolution et symbolisme de l'emblème du plus grand club danois de football.",
   date: "2024-04-07",
   galleryImageId: 188,
   content: `# L'Histoire Fascinante du Logo Copenhague
@@ -42,7 +43,8 @@ Les fans recherchent régulièrement le **Copenhague logo PNG** pour créer leur
 Alors que le football continue d'évoluer, le **logo FC Copenhague** s'adapte tout en préservant son essence. Les responsables marketing du club ont su maintenir un équilibre délicat entre tradition et modernité, permettant au **logo de foot Copenhague** de rester pertinent dans un paysage sportif en constante évolution.
 
 Le **Copenhague logo** est plus qu'un simple symbole graphique : c'est le gardien de l'histoire du club, le témoin de ses succès et l'inspiration pour ses ambitions futures. Il continuera d'incarner l'identité d'un club qui, malgré sa relative jeunesse institutionnelle, a su se forger une place de choix dans le cœur des supporters et dans l'histoire du football scandinave.`,
-  keywords: "logo copenhague, copenhague logo, fc copenhague logo, logo fc copenhague, copenhague logo png, fc copenhague logo png, logo de foot copenhague",
-  category: 'logos',
-  subCategory: 'club-logos',
+  keywords:
+    "logo copenhague, copenhague logo, fc copenhague logo, logo fc copenhague, copenhague logo png, fc copenhague logo png, logo de foot copenhague",
+  category: "logos",
+  subCategory: "club-logos",
 };

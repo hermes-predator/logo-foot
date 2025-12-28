@@ -1,10 +1,11 @@
-
-import { BlogPost } from '../../../types/blog';
+import { BlogPost } from "../../../types/blog";
 
 export const concarneauLogoPost: BlogPost = {
   id: 183,
+  slug: "concarneau-logo", //
   title: "Logo Concarneau : Histoire et Évolution de l'Emblème du Club [Guide 2024]",
-  excerpt: "Découvrez l'histoire et l'évolution du logo Concarneau, ses symboles et sa signification. Une analyse complète de l'emblème du club breton de l'US Concarneau.",
+  excerpt:
+    "Découvrez l'histoire et l'évolution du logo Concarneau, ses symboles et sa signification. Une analyse complète de l'emblème du club breton de l'US Concarneau.",
   date: "2024-05-28",
   galleryImageId: 183,
   content: `# **Logo Concarneau** : Histoire et Évolution
@@ -113,6 +114,7 @@ Le **logo Concarneau** représente bien plus qu'un simple symbole graphique : c'
 Le **Concarneau logo** témoigne de la capacité du club breton à honorer son héritage tout en regardant vers l'avenir. Dans un monde du football où l'identité visuelle joue un rôle de plus en plus crucial, l'US Concarneau a su se doter d'un emblème distinctif qui porte fièrement ses couleurs et son histoire.
 
 Que ce soit sur les maillots des joueurs, dans les travées du stade Guy-Piriou ou sur les écrans des supporters, le **logo de Concarneau** continuera d'incarner la passion et la fierté d'une ville et d'une région pour son club de football, symbole vivant des valeurs du sport et de l'identité bretonne.`,
-  keywords: "logo concarneau, concarneau logo, nouveau logo concarneau, concarneau nouveau logo, logo concarneau nouveau, logo de concarneau, logo us concarneau, nouveau logo de concarneau, us concarneau logo, ancien logo concarneau, concarneau foot logo, logo concarneau foot, as concarneau logo, logo foot concarneau",
-  category: 'logos'
+  keywords:
+    "logo concarneau, concarneau logo, nouveau logo concarneau, concarneau nouveau logo, logo concarneau nouveau, logo de concarneau, logo us concarneau, nouveau logo de concarneau, us concarneau logo, ancien logo concarneau, concarneau foot logo, logo concarneau foot, as concarneau logo, logo foot concarneau",
+  category: "logos",
 };

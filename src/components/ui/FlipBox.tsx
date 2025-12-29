@@ -29,10 +29,10 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
             </button>
           </div>
           
-          <div className="flex items-center mb-1 relative z-10">
+          <div className="flex items-center mb-0 relative z-10">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-left">{frontTitle}</h2>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left leading-tight">Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays</p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
       <div className={`w-full absolute inset-0 transition-opacity duration-300 ${isFlipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
           
-          <div className="flex items-center justify-between mb-1 relative z-20">
+          <div className="flex items-center justify-between mb-0 relative z-20">
             <div className="text-left flex-grow">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Logos des équipes de foot</h2>
             </div>
@@ -54,7 +54,7 @@ const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, classNa
               </button>
             </div>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left">{backContent}</p>
+          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left leading-tight">{backContent}</p>
         </div>
       </div>
     </div>

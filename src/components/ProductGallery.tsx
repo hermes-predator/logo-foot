@@ -56,8 +56,8 @@ const ProductGallery = () => {
 
           <LazySection height="350px" className="pt-8" rootMargin="200px">
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Logos de foot - Autres logos de football [ Bonus offert 🎁 ]</h2>
-              <p className="text-sm sm:text-base text-gray-600 mb-6">Logos des compétitions de foot majeures, drapeaux mondiaux et beaucoup d'autres logos de football (Voir le Descriptif du ZIP)</p>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-0">Logos de foot - Autres logos de football [ Bonus offert 🎁 ]</h2>
+              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-tight">Logos des compétitions de foot majeures, drapeaux mondiaux et beaucoup d'autres logos de football (Voir le Descriptif du ZIP)</p>
               <CompetitionGallery items={competitionItems} isLoading={isLoading} />
             </div>
           </LazySection>

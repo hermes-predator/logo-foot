@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
       <div className="max-w-5xl mx-auto text-center">
 
         {/* Layout en deux colonnes */}
-        <div className="grid md:grid-cols-[12fr_8fr] gap-4 items-stretch mb-2 relative">
+        <div className="grid md:grid-cols-[13fr_7fr] gap-4 items-stretch mb-2 relative">
           {/* Colonne gauche - H1 et bénéfices */}
           <div>{/* Alignement naturel avec le lecteur vidéo */}
             {/* Container avec fond clair pour le branding */}

@@ -491,6 +491,40 @@ pre code {
   }
 }
 
+/* Animation GTA pickup style - flottement + rotation */
+@keyframes gtaFloat {
+  0%, 100% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateY(180deg);
+  }
+}
+
+@keyframes gtaGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px 5px rgba(34, 197, 94, 0.4),
+                0 0 40px 10px rgba(34, 197, 94, 0.2),
+                inset 0 0 15px rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(34, 197, 94, 0.6),
+                0 0 60px 20px rgba(34, 197, 94, 0.3),
+                inset 0 0 20px rgba(34, 197, 94, 0.2);
+  }
+}
+
+.gta-pickup {
+  animation: gtaFloat 3s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.gta-glow {
+  animation: gtaGlow 2s ease-in-out infinite;
+  border-radius: 8px;
+}
+
 /* Styles pour l'animation de retournement */
 .perspective-1000 {
   perspective: 1000px;

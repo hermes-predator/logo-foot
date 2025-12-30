@@ -525,7 +525,7 @@ pre code {
 }
 
 .gta-float-spin {
-  animation: gtaFloatSpin 15s linear infinite;
+  animation: gtaFloatSpin 25s linear infinite;
   transform-style: preserve-3d;
 }
 

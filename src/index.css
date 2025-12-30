@@ -491,38 +491,46 @@ pre code {
   }
 }
 
-/* Animation GTA pickup style - flottement + rotation */
-@keyframes gtaFloat {
-  0%, 100% {
+/* Animation GTA pickup style - flottement + rotation 360° lente */
+@keyframes gtaFloatSpin {
+  0% {
     transform: translateY(0) rotateY(0deg);
   }
+  25% {
+    transform: translateY(-6px) rotateY(90deg);
+  }
   50% {
-    transform: translateY(-8px) rotateY(180deg);
+    transform: translateY(0) rotateY(180deg);
+  }
+  75% {
+    transform: translateY(-6px) rotateY(270deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg);
   }
 }
 
-@keyframes gtaGlow {
+/* Halo lumineux pulsant sur le texte */
+@keyframes gtaTextGlow {
   0%, 100% {
-    box-shadow: 0 0 20px 5px rgba(34, 197, 94, 0.4),
-                0 0 40px 10px rgba(34, 197, 94, 0.2),
-                inset 0 0 15px rgba(34, 197, 94, 0.1);
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.6))
+            drop-shadow(0 0 20px rgba(34, 197, 94, 0.4))
+            drop-shadow(0 0 40px rgba(34, 197, 94, 0.2));
   }
   50% {
-    box-shadow: 0 0 30px 10px rgba(34, 197, 94, 0.6),
-                0 0 60px 20px rgba(34, 197, 94, 0.3),
-                inset 0 0 20px rgba(34, 197, 94, 0.2);
+    filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.8))
+            drop-shadow(0 0 30px rgba(34, 197, 94, 0.5))
+            drop-shadow(0 0 60px rgba(34, 197, 94, 0.3));
   }
 }
 
-.gta-pickup {
-  animation: gtaFloat 3s ease-in-out infinite;
+.gta-float-spin {
+  animation: gtaFloatSpin 6s linear infinite;
   transform-style: preserve-3d;
-  perspective: 1000px;
 }
 
-.gta-glow {
-  animation: gtaGlow 2s ease-in-out infinite;
-  border-radius: 8px;
+.gta-text-glow {
+  animation: gtaTextGlow 2s ease-in-out infinite;
 }
 
 /* Styles pour l'animation de retournement */

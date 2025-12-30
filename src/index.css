@@ -513,14 +513,14 @@ pre code {
 /* Halo lumineux pulsant sur le texte */
 @keyframes gtaTextGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.6))
-            drop-shadow(0 0 20px rgba(34, 197, 94, 0.4))
-            drop-shadow(0 0 40px rgba(34, 197, 94, 0.2));
+    filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.6))
+            drop-shadow(0 0 20px rgba(250, 204, 21, 0.4))
+            drop-shadow(0 0 40px rgba(250, 204, 21, 0.2));
   }
   50% {
-    filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.8))
-            drop-shadow(0 0 30px rgba(34, 197, 94, 0.5))
-            drop-shadow(0 0 60px rgba(34, 197, 94, 0.3));
+    filter: drop-shadow(0 0 12px rgba(250, 204, 21, 0.8))
+            drop-shadow(0 0 30px rgba(250, 204, 21, 0.5))
+            drop-shadow(0 0 60px rgba(250, 204, 21, 0.3));
   }
 }
 

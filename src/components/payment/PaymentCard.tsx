@@ -8,6 +8,7 @@ import PricingBlock from './PricingBlock';
 import SparkleEffects from './SparkleEffects';
 import RecentBuyersBadge from './RecentBuyersBadge';
 import GoogleDriveBadge from './GoogleDriveBadge';
+import Folder3DImage from './Folder3DImage';
 import { measurePerformance } from '@/lib/performance';
 import { useIsMobile, useIsSmallMobile } from '@/hooks/use-mobile';
 import PaymentCardBack from './PaymentCardBack';
@@ -63,10 +64,8 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
           {/* Effet de lueur subtil sur le bord supérieur */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
           
-          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
-          <div className={`absolute top-14 right-8 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
-            <Folder size={95} />
-          </div>
+          {/* Image 3D du dossier avec effet de halo */}
+          <Folder3DImage isHovered={isHovered} />
           
           <SparkleEffects isHovered={isHovered} />
           <RecentBuyersBadge count={recentBuyers} />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Folder, FolderArchive, Download, ArrowRight, Star, Users, Clock, Lock } from "lucide-react";
+import footballFolderIcon from '@/assets/football-folder.png';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
@@ -105,10 +106,10 @@ const HeroSection: React.FC = () => {
                   animation: 'subtlePulse 3s ease-in-out infinite'
                 }}
               >
-                <Folder 
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-black flex-shrink-0" 
-                  fill="black"
-                  strokeWidth={1.5}
+                <img 
+                  src={footballFolderIcon} 
+                  alt="Dossier Football" 
+                  className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 object-contain"
                 />
                 <span 
                   className="font-extrabold not-italic text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"

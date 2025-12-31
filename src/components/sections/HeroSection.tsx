@@ -97,19 +97,31 @@ const HeroSection: React.FC = () => {
             {/* Container avec fond clair pour le branding */}
             <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 backdrop-blur-lg rounded p-[14px] sm:p-5 md:p-6 md:px-7 shadow-[0_1px_4px_rgba(0,0,0,0.02),0_1px_2px_rgba(0,0,0,0.01),inset_0_1px_0_rgba(255,255,255,0.8)] border border-gray-100 before:absolute before:inset-0 before:rounded before:p-[1px] before:bg-gradient-to-br before:from-white/70 before:via-gray-100/50 before:to-gray-50/40 before:-z-10 before:m-[-1px]">{/* Container brandé avec glassmorphism */}
 
-            {/* 2. Nom du fichier - Effet GTA pickup flottant + rotation */}
-            <div className="text-left mb-1 flex justify-start perspective-1000">
-              <div className="gta-float-spin inline-flex items-center gap-2">
-                <FolderArchive 
-                  className="w-6 h-6 sm:w-7 sm:h-7 text-gray-800 flex-shrink-0 gta-text-glow" 
-                  strokeWidth={2}
+            {/* 2. Nom du fichier - Concrétise l'offre */}
+            <div className="text-left mb-1">
+              <h2 
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 flex items-center gap-2"
+                style={{
+                  animation: 'subtlePulse 3s ease-in-out infinite'
+                }}
+              >
+                <Folder 
+                  className="w-7 h-7 sm:w-8 sm:h-8 text-black flex-shrink-0" 
+                  fill="black"
+                  strokeWidth={1.5}
                 />
                 <span 
-                  className="font-extrabold text-gray-900 text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap gta-text-glow"
+                  className="font-extrabold not-italic text-gray-900 inline-block text-base sm:text-lg md:text-xl lg:text-2xl break-all sm:whitespace-nowrap"
                 >
                   ⦗FRONT-CLOUD⦘~ Football.zip
                 </span>
-              </div>
+                <style>{`
+                  @keyframes subtlePulse {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.02); }
+                  }
+                `}</style>
+              </h2>
             </div>
 
             {/* 4. Carrés visuels des bénéfices - Rassure avant l'action */}

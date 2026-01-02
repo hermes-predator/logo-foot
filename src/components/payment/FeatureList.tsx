@@ -38,7 +38,7 @@ const FeatureList = () => {
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Un actif qui booste votre parcours."
+      description: "Des mois entiers de travail économisés."
     },
     {
       icon: ClipboardCheck,

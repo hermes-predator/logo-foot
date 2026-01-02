@@ -141,7 +141,7 @@ const PaymentSuccess = () => {
                   Paiement confirmé ! 🎉
                 </CardTitle>
                 <CardDescription className="text-lg">
-                  Votre paiement de {paymentData?.amount !== undefined ? new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount) + '€' : '5€'} a été traité avec succès.
+                  Votre paiement de {paymentData?.amount !== undefined ? new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount) + '€' : '8€'} a été traité avec succès.
                 </CardDescription>
               </CardHeader>
               
@@ -181,7 +181,7 @@ const PaymentSuccess = () => {
                 <ReceiptDownload 
                   purchaseDate={paymentData?.date ? new Date(paymentData.date) : new Date()}
                   productName="⦗FRONT-CLOUD⦘~ Football.zip"
-                  price={paymentData?.amount !== undefined ? `${new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount)} €` : "5 €"}
+                  price={paymentData?.amount !== undefined ? `${new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount)} €` : "8 €"}
                   orderNumber={effectiveCheckoutId || `FC-${Date.now().toString().slice(-6)}`}
                 />
               </CardContent>

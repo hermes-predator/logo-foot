@@ -19,7 +19,7 @@ const Feature = ({ icon: Icon, text, description, className, iconColor }: Featur
       <div className="relative z-10 min-w-0">
         <span className="text-[13px] sm:text-[15px] font-semibold block truncate">{text}</span>
         {description && (
-          <p className="text-[10px] sm:text-xs text-gray-500 mt-0.5 leading-tight line-clamp-2">{description}</p>
+          <p className="text-[10px] sm:text-xs text-gray-500 leading-tight line-clamp-2">{description}</p>
         )}
       </div>
     </div>

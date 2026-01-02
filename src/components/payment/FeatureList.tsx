@@ -52,7 +52,7 @@ const FeatureList = () => {
       text: "Gain de confiance",
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "Accédez instantanément à tous les logos."
+      description: "Obtenez instantanément tous les logos."
     },
     {
       icon: Star,

@@ -38,7 +38,7 @@ const FeatureList = () => {
       text: "Gain de temps", 
       className: "bg-emerald-100",
       iconColor: "text-emerald-600",
-      description: "6 à 12 mois de travail économisés."
+      description: "De 6 à 12 mois de travail économisés minimum."
     },
     {
       icon: ClipboardCheck,

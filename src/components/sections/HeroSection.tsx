@@ -181,7 +181,7 @@ const HeroSection: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                   <span className="relative flex flex-col items-center justify-center w-full">
                     <span className="flex items-center gap-3">
-                      <span className="font-bold">Télécharger maintenant</span>
+                      <span className="font-bold text-[17px]">Télécharger maintenant</span>
                       <ArrowRight 
                         className="w-5 h-5 drop-shadow-sm transition-all duration-300 group-hover:translate-x-1"
                       />

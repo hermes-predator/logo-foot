@@ -177,8 +177,6 @@ const HeroSection: React.FC = () => {
                   className="group relative w-full sm:w-auto sm:min-w-[297px] rounded bg-gradient-to-b from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold px-8 py-4 h-[72px] text-base shadow-[0_2px_8px_0_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_3px_12px_rgba(0,0,0,0.3)] border border-gray-800/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 overflow-hidden"
                   aria-label="Commande sécurisée via SumUp"
                 >
-                  {/* Effet de lumière réfléchissante - identique à PaymentButton */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-[shine_2.5s_ease-in-out_infinite]"></div>
                   <span className="relative flex flex-col items-center justify-center w-full">
                     <span className="flex items-center gap-3">
                       <span className="font-bold text-[17px]">Télécharger maintenant</span>

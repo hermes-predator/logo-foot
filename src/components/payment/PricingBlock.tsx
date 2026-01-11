@@ -63,7 +63,7 @@ const PricingBlock = () => {
                   <p>Si vous estimez que le produit ne vous convient pas, nous pouvons émettre un remboursement intégral, sur simple demande.</p>
                   <div className="mt-4 text-gray-600">
                     <p className="text-sm text-gray-500 mb-2">Pour cela, contactez-nous par e-mail en incluant :</p>
-                    <ul className="list-disc ml-4 mt-2 space-y-2 text-gray-500 text-xs">
+                    <ul className="list-disc ml-4 mt-2 space-y-1 text-gray-500 text-xs">
                       <li>Votre nom et prénom</li>
                       <li>La date et l'heure d'achat</li>
                       <li>Votre preuve d'achat (reçu)</li>

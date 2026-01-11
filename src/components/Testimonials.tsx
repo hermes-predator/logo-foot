@@ -246,12 +246,32 @@ const Testimonials = () => {
             "@context": "https://schema.org/",
             "@type": "Product",
             "name": "Pack Complet de Logos de Football",
+            "description": "Collection complète de plus de 8700 logos de clubs de football en haute qualité PNG",
+            "image": "https://www.logo-foot.com/og-image.png",
+            "sku": "LOGOPCK1",
+            "brand": {
+              "@type": "Brand",
+              "name": "FRONT-CLOUD"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://www.logo-foot.com",
+              "priceCurrency": "EUR",
+              "price": "9.99",
+              "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "FRONT-CLOUD"
+              }
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": formattedAvgRating,
               "ratingCount": testimonials.length,
               "reviewCount": "1034",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             },
             "review": testimonials.map(t => ({
               "@type": "Review",

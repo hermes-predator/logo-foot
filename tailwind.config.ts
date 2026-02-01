@@ -17,7 +17,7 @@ export default {
 				'2xl': '1400px'
 			}
 		},
-		extend: {
+	extend: {
 		fontFamily: {
 			'sans': ['Inter', 'system-ui', 'sans-serif'],
 			'serif': ['Libre Baskerville', 'Georgia', 'serif'],
@@ -65,6 +65,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors pour le design AgentFrancais
+				lime: {
+					DEFAULT: 'hsl(72, 100%, 50%)',
+					50: 'hsl(72, 100%, 95%)',
+					100: 'hsl(72, 100%, 90%)',
+					500: 'hsl(72, 100%, 50%)',
+					600: 'hsl(72, 100%, 45%)',
+				},
+				navy: {
+					DEFAULT: 'hsl(220, 20%, 18%)',
+					light: 'hsl(220, 15%, 25%)',
+					dark: 'hsl(220, 25%, 12%)',
 				}
 			},
 			borderRadius: {

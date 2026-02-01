@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-const LiveDot = () => (
-  <span className="relative flex h-2 w-2">
-    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
-    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
-  </span>
-);
-
 const messages = [
   { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL" },
   { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement" }
@@ -52,16 +45,25 @@ const TopBar = () => {
   const displayedRest = displayedText.slice(boldLength);
 
   return (
-    <div className="relative bg-gradient-to-br from-white/85 via-gray-50/40 to-white/70 text-gray-800 py-1 overflow-hidden z-40 border-b border-gray-200/50">
-      <div className="flex justify-center items-center gap-2 whitespace-nowrap">
-        <span className="text-[9px] md:text-[10px] flex items-center gap-2">
-          ⟨ <LiveDot /> 
-          <span className="inline-block">
-            <span className="font-extrabold">{displayedBold}</span>
-            <span className="font-semibold">{displayedRest}</span>
-            <span className="animate-pulse">|</span>
-          </span>
-          <LiveDot /> ⟩
+    <div className="w-full bg-navy py-2.5 px-4 border-b border-navy-light">
+      <div className="container mx-auto flex justify-center items-center gap-3">
+        {/* Live indicator */}
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
+        </span>
+        
+        {/* Message animé */}
+        <p className="text-sm text-white/90 font-medium">
+          <span className="text-lime-400 font-bold">{displayedBold}</span>
+          <span>{displayedRest}</span>
+          <span className="animate-pulse text-lime-400">|</span>
+        </p>
+        
+        {/* Live indicator */}
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
         </span>
       </div>
     </div>

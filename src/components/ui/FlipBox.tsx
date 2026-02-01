@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Minus, Plus, Eye, MousePointer } from 'lucide-react';
+import React from 'react';
+import { Eye, MousePointer, ChevronDown } from 'lucide-react';
 
 interface FlipBoxProps {
   frontTitle: string;
@@ -10,51 +10,54 @@ interface FlipBoxProps {
 }
 
 const FlipBox = ({ frontTitle, frontDescription, backTitle, backContent, className = '' }: FlipBoxProps) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = React.useState(false);
 
   return (
-    <div className={`relative w-full h-auto ${className}`}>
-      {/* Face avant */}
-      <div className={`w-full transition-opacity duration-300 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
-        <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
-          {/* Badge cliquable dans la flip box */}
-          <div className="absolute top-9 right-2 z-30">
-            <button
-              onClick={() => setIsFlipped(true)}
-              className="bg-white/95 backdrop-blur-sm text-gray-700 text-xs px-3 py-2 rounded-full border border-gray-200 flex items-center gap-2 shadow-sm hover:bg-white hover:shadow-md transition-all duration-200 cursor-pointer"
-            >
-              <Eye className="w-3.5 h-3.5 opacity-70" />
-              <span className="font-medium">Survolez les dossiers</span>
-              <MousePointer className="w-3.5 h-3.5" />
-            </button>
+    <div className={`relative w-full ${className}`}>
+      {/* Container principal avec style moderne */}
+      <div 
+        className={`
+          relative bg-card rounded-2xl border border-border p-6 
+          transition-all duration-300 hover:shadow-lg hover:border-lime-200
+          ${isFlipped ? 'bg-lime-50/50' : ''}
+        `}
+      >
+        {/* Header avec toggle */}
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
+              {isFlipped ? backTitle : frontTitle}
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              {isFlipped ? backContent : "Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays"}
+            </p>
           </div>
           
-          <div className="flex items-center mb-0 relative z-10">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-left">{frontTitle}</h2>
-          </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left leading-tight">Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays</p>
-        </div>
-      </div>
-
-      {/* Face arrière */}
-      <div className={`w-full absolute inset-0 transition-opacity duration-300 ${isFlipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <div className="relative pr-2 pt-2 pb-2 bg-white rounded-xl min-h-[75px] flex flex-col">
-          
-          <div className="flex items-center justify-between mb-0 relative z-20">
-            <div className="text-left flex-grow">
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Logos des équipes de foot</h2>
-            </div>
-            <div className="flex items-center gap-2">
-              <h3 className="text-sm font-medium text-gray-700">Equipe de foot logo</h3>
-              <button
-                onClick={() => setIsFlipped(false)}
-                className="text-black hover:text-gray-700 transition-colors flex-shrink-0"
-              >
-                <Minus className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-          <p className="text-sm sm:text-base text-gray-600 mb-3 flex-grow text-left leading-tight">{backContent}</p>
+          {/* Toggle button */}
+          <button
+            onClick={() => setIsFlipped(!isFlipped)}
+            className={`
+              flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium
+              transition-all duration-300
+              ${isFlipped 
+                ? 'bg-navy text-white hover:bg-navy-light' 
+                : 'bg-muted hover:bg-lime-100 text-foreground border border-border hover:border-lime-300'
+              }
+            `}
+          >
+            {isFlipped ? (
+              <>
+                <ChevronDown className="w-4 h-4 rotate-180" />
+                <span>Fermer</span>
+              </>
+            ) : (
+              <>
+                <Eye className="w-4 h-4" />
+                <span className="hidden sm:inline">Survolez les dossiers</span>
+                <MousePointer className="w-4 h-4" />
+              </>
+            )}
+          </button>
         </div>
       </div>
     </div>

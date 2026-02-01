@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { Eye, ArrowLeft } from 'lucide-react';
-import { Folder, Cloud } from 'lucide-react';
+import { Eye, Folder } from 'lucide-react';
 import FeatureList from './FeatureList';
 import PaymentButton from './PaymentButton';
 import PricingBlock from './PricingBlock';
@@ -44,40 +43,34 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         onTouchEnd={() => isMobile && setTimeout(() => setIsHovered(false), 500)}
       >
         <div 
-          className={`relative backface-hidden p-3 sm:p-5 md:p-7 pb-0 rounded-2xl bg-gradient-to-b from-blue-50/90 to-white border border-blue-100/60 
-            ${isHovered ? 'shadow-2xl' : 'shadow-lg'} 
-            transition-shadow duration-100 ease-out will-change-transform
-            before:absolute before:inset-0 before:rounded-2xl before:shadow-[0_8px_30px_rgba(0,0,0,0.08)] before:opacity-0 before:transition-opacity before:duration-100
-            ${isHovered ? 'before:opacity-100' : 'before:opacity-0'}
+          className={`relative backface-hidden p-4 sm:p-6 md:p-8 pb-0 rounded-2xl bg-card border border-border
+            ${isHovered ? 'shadow-xl border-lime-200' : 'shadow-lg'} 
+            transition-all duration-300 ease-out
           `}
           style={{
-            boxShadow: isHovered ? 
-              '0 20px 50px -15px rgba(0, 0, 0, 0.12), 0 10px 25px -10px rgba(0, 0, 0, 0.08)' : 
-              '0 4px 12px -4px rgba(0, 0, 100, 0.08), 0 2px 6px -2px rgba(0, 0, 100, 0.04)',
-            transform: isHovered && !isMobile ? 'translateY(-10px)' : 'translateY(0)',
-            transitionProperty: 'transform, box-shadow',
-            transitionDuration: '0.1s',
-            transitionTimingFunction: 'ease-out'
+            transform: isHovered && !isMobile ? 'translateY(-8px)' : 'translateY(0)',
           }}
         >
-          {/* Effet de lueur subtil sur le bord supérieur */}
-          <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-300/30 to-transparent"></div>
+          {/* Bande lime en haut */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lime-400 via-lime-500 to-lime-400 rounded-t-2xl"></div>
           
-          {/* Dossier décoratif dans le coin supérieur DROIT avec animation subtile, ajusté vers le bas */}
-          <div className={`absolute top-14 right-8 opacity-10 text-blue-900 hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
+          {/* Dossier décoratif */}
+          <div className={`absolute top-14 right-8 opacity-5 text-navy hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>
             <Folder size={95} />
           </div>
           
           <SparkleEffects isHovered={isHovered} />
           <RecentBuyersBadge count={recentBuyers} />
           
-          <div className="mb-2 sm:mb-3 relative z-10 mt-5 sm:mt-0">
+          <div className="mb-4 relative z-10 mt-6 sm:mt-2">
             <div className="flex items-center gap-2">
-              <h3 className={`${isSmallMobile ? "text-base" : isMobile ? "text-lg" : "text-2xl md:text-3xl"} font-extrabold text-black/90 transition-colors duration-500 ${isHovered ? 'text-black' : 'text-black/90'} leading-tight`}>⦗FRONT-CLOUD⦘~ Football.zip</h3>
+              <h3 className={`${isSmallMobile ? "text-lg" : isMobile ? "text-xl" : "text-2xl md:text-3xl"} font-bold text-navy leading-tight`}>
+                ⦗FRONT-CLOUD⦘~ Football.zip
+              </h3>
             </div>
           
-            {/* Google Drive Badge et bouton œil ensemble */}
-            <div className="mt-2 sm:mt-3 flex items-center gap-1.5 sm:gap-2">
+            {/* Google Drive Badge et bouton œil */}
+            <div className="mt-4 flex items-center gap-2">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -85,10 +78,10 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                       <GoogleDriveBadge cursorHelp={true} alwaysEnlarged={true} />
                     </div>
                   </TooltipTrigger>
-                  <TooltipContent className="bg-white border border-gray-200/50 p-3 max-w-[350px] rounded-lg shadow-lg">
-                    <p className="text-gray-700 font-bold text-sm mb-1">Utilisation immédiate</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel, sans aucune autre modification.
+                  <TooltipContent className="bg-card border border-border p-3 max-w-[350px] rounded-xl shadow-lg">
+                    <p className="text-foreground font-bold text-sm mb-1">Utilisation immédiate</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Ce fichier est parfaitement organisé et immédiatement utilisable. Vous pouvez le stocker directement sur votre Google Drive, votre ordinateur, votre disque dur et l'utiliser tel quel.
                     </p>
                   </TooltipContent>
                 </Tooltip>
@@ -99,14 +92,10 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipTrigger asChild>
                     <button 
                       onClick={handleFlip}
-                      className="inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 bg-gray-50 text-gray-600 border border-gray-200/80 hover:bg-gray-50/60 transition-colors duration-300 rounded-full relative overflow-hidden group shadow-[0_1px_4px_rgba(0,0,0,0.03),0_1px_2px_rgba(0,0,0,0.01)]"
+                      className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 bg-muted text-muted-foreground border border-border hover:bg-lime-50 hover:border-lime-200 transition-all duration-300 rounded-xl group"
                       aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
                     >
-                      {/* Cercle d'animation au clic seulement */}
-                      <span className="absolute inset-0 rounded-full pointer-events-none overflow-hidden">
-                        <span className="absolute inset-0 rounded-full bg-blue-100/0 group-active:bg-blue-100/20 transition-all duration-300 group-active:scale-[2.5] opacity-0 group-active:opacity-100"></span>
-                      </span>
-                      <Eye className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600" />
+                      <Eye className="h-4 w-4 sm:h-5 sm:w-5 group-hover:text-lime-600 transition-colors" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>

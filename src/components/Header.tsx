@@ -77,11 +77,11 @@ const Header = () => {
               <Link to="/blog" className={navLinkClass(currentPath.startsWith('/blog'))}>
                 Blog
               </Link>
-              <button onClick={() => scrollToSection('contact-section')} className={navLinkClass(false)}>
-                Contact
-              </button>
               <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
                 FAQ
+              </button>
+              <button onClick={() => scrollToSection('contact-section')} className={navLinkClass(false)}>
+                Contact
               </button>
             </div>
           )}
@@ -115,16 +115,16 @@ const Header = () => {
                 Blog
               </Link>
               <button 
-                onClick={() => scrollToSection('contact-section')}
-                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
-              >
-                Contact
-              </button>
-              <button 
                 onClick={() => scrollToSection('faq-section')}
                 className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
               >
                 FAQ
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact-section')}
+                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
+              >
+                Contact
               </button>
             </div>
           </div>

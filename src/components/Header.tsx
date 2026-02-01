@@ -1,5 +1,5 @@
 
-import { BookOpen, Home, Menu, MessageCircle, Download, ChevronRight } from "lucide-react";
+import { BookOpen, Home, Menu, MessageCircle, ChevronRight, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,6 @@ import ContactForm from './ContactForm';
 import CGVDialog from './footer/CGVDialog';
 import MentionsLegalesDialog from './footer/MentionsLegalesDialog';
 import DisclaimerDialog from './footer/DisclaimerDialog';
-import FAQDialog from './footer/FAQDialog';
 
 const Header = () => {
   const location = useLocation();
@@ -23,7 +22,7 @@ const Header = () => {
   // Effet pour détecter le défilement
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 50);
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -37,13 +36,19 @@ const Header = () => {
 
   return (
     <header 
-      className={`w-full py-3 sm:py-4 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full fixed top-0 z-50 transition-all duration-500 ease-out ${
         scrolled 
-          ? 'bg-white/95 shadow-sm border-border' 
-          : 'bg-white border-border/50'
+          ? 'py-2 px-4 sm:px-6' 
+          : 'py-4 px-4 sm:px-6'
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between gap-4 sm:gap-8">
+      <nav 
+        className={`mx-auto flex items-center justify-between gap-4 sm:gap-8 transition-all duration-500 ease-out ${
+          scrolled 
+            ? 'max-w-4xl bg-white/95 backdrop-blur-md shadow-lg border border-border/50 rounded-full px-4 sm:px-6 py-2' 
+            : 'container bg-transparent px-0 py-0'
+        }`}
+      >
         <Link 
           to="/" 
           className="hover:opacity-80 transition-opacity"
@@ -55,20 +60,24 @@ const Header = () => {
           <>
             <button 
               aria-label="Menu" 
-              className="p-2 rounded-lg text-foreground hover:bg-muted transition-colors"
+              className={`p-2 rounded-full transition-colors ${
+                scrolled 
+                  ? 'text-foreground hover:bg-muted' 
+                  : 'text-foreground hover:bg-white/50'
+              }`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <Menu className="w-5 h-5" />
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
             
             {mobileMenuOpen && (
-              <div className="absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-b border-border animate-in fade-in slide-in-from-top-5">
-                <div className="container mx-auto py-4 flex flex-col space-y-1">
+              <div className={`absolute top-full left-4 right-4 mt-2 bg-white shadow-xl z-50 border border-border rounded-2xl animate-in fade-in slide-in-from-top-2 overflow-hidden`}>
+                <div className="py-3 flex flex-col">
                   <Link 
                     to="/" 
-                    className={`flex items-center gap-3 transition-all px-4 py-3 rounded-xl ${
+                    className={`flex items-center gap-3 transition-all px-4 py-3 ${
                       currentPath === '/' 
-                        ? 'font-medium bg-lime-50 text-foreground' 
+                        ? 'font-medium bg-lime/10 text-foreground' 
                         : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
@@ -77,9 +86,9 @@ const Header = () => {
                   </Link>
                   <Link 
                     to="/blog" 
-                    className={`flex items-center gap-3 transition-all px-4 py-3 rounded-xl ${
+                    className={`flex items-center gap-3 transition-all px-4 py-3 ${
                       currentPath.startsWith('/blog') 
-                        ? 'font-medium bg-lime-50 text-foreground' 
+                        ? 'font-medium bg-lime/10 text-foreground' 
                         : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
@@ -88,11 +97,11 @@ const Header = () => {
                   </Link>
                   
                   {/* Divider */}
-                  <div className="border-t border-border my-3"></div>
+                  <div className="border-t border-border my-2 mx-4"></div>
                   
                   {/* Footer links in mobile menu */}
                   <Dialog>
-                    <DialogTrigger className="flex items-center gap-3 px-4 py-3 text-muted-foreground hover:text-foreground hover:bg-muted rounded-xl transition-all text-left">
+                    <DialogTrigger className="flex items-center gap-3 px-4 py-3 text-muted-foreground hover:text-foreground hover:bg-muted transition-all text-left">
                       <MessageCircle className="w-4 h-4" />
                       <span>Contactez-nous</span>
                     </DialogTrigger>
@@ -112,16 +121,15 @@ const Header = () => {
                   <CGVDialog />
                   <MentionsLegalesDialog />
                   <DisclaimerDialog />
-                  <FAQDialog variant="header" />
                 </div>
               </div>
             )}
           </>
         ) : (
-        <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1">
             <Link 
               to="/" 
-              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-all ${
                 currentPath === '/' 
                   ? 'font-medium text-foreground bg-muted' 
                   : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
@@ -132,7 +140,7 @@ const Header = () => {
             </Link>
             <Link 
               to="/blog" 
-              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-all ${
                 currentPath.startsWith('/blog') 
                   ? 'font-medium text-foreground bg-muted' 
                   : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
@@ -142,10 +150,8 @@ const Header = () => {
               <span>Blog</span>
             </Link>
             
-            <FAQDialog variant="header" />
-            
             <Dialog>
-              <DialogTrigger className="flex items-center gap-2 px-4 py-2 text-sm rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all">
+              <DialogTrigger className="flex items-center gap-2 px-4 py-2 text-sm rounded-full text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all">
                 <MessageCircle className="w-4 h-4" />
                 <span>Contact</span>
               </DialogTrigger>
@@ -168,7 +174,11 @@ const Header = () => {
         {!isMobile && (
           <Button
             onClick={() => navigate('/payment')}
-            className="flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-navy font-semibold px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md"
+            className={`flex items-center gap-2 font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md ${
+              scrolled 
+                ? 'bg-navy hover:bg-navy/90 text-white' 
+                : 'bg-navy hover:bg-navy/90 text-white'
+            }`}
           >
             <span>Je veux ce fichier</span>
             <ChevronRight className="w-4 h-4" />

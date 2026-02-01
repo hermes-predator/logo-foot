@@ -5,12 +5,11 @@ import HeroSection from '../components/sections/HeroSection';
 import ProductGallery from '../components/ProductGallery';
 import FlipBox from '../components/ui/FlipBox';
 import TopBar from '../components/TopBar';
+import Header from '../components/Header';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
-
-
-
+import FAQSection from '../components/sections/FAQSection';
 
 // Lazy load components that aren't needed for initial render
 const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSection'));
@@ -214,7 +213,7 @@ const Index = () => {
         }}
       />
       
-      <main>
+      <main className="pt-20">
         <div className="container mx-auto">
           <div className="pb-0">
             <HeroSection />
@@ -248,8 +247,10 @@ const Index = () => {
         <Suspense fallback={<Skeleton className="w-full h-80 rounded-lg" />}>
           <LazyTestimonials />
         </Suspense>
+
+        {/* FAQ Section */}
+        <FAQSection />
       </main>
-      
       
       <Footer />
       

@@ -5,26 +5,37 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Nouvelle palette inspirée AgentFrancais - Clean & Modern */
+    --background: 0 0% 98%;
+    --foreground: 220 15% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 220 15% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 220 15% 15%;
+    
+    /* Accent vert lime comme AgentFrancais */
+    --primary: 72 100% 50%;
+    --primary-foreground: 220 15% 15%;
+    
+    /* Navy pour sections dark */
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 72 100% 50%;
+    --accent-foreground: 220 15% 15%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 220 10% 92%;
+    --input: 220 10% 92%;
+    --ring: 72 100% 50%;
     --radius: 0.75rem;
+    
+    /* Custom tokens pour le design AgentFrancais */
+    --lime: 72 100% 50%;
+    --navy: 220 20% 18%;
+    --navy-light: 220 15% 25%;
   }
 
   * {
@@ -37,6 +48,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "cv11", "ss01";
   }
 }
 
@@ -71,7 +83,7 @@
   }
 }
 
-/* Animation d'entrée pour chaque élément avec un délai progressif - optimisée pour utiliser opacity et transform uniquement */
+/* Animation d'entrée pour chaque élément avec un délai progressif */
 @keyframes elementFadeIn {
   0% {
     opacity: 0;
@@ -180,7 +192,7 @@
   100% { transform: translateY(0); }
 }
 
-/* Shine effect animation - améliorée avec des variations */
+/* Shine effect animation */
 @keyframes shine {
   0% {
     left: -100%;
@@ -212,7 +224,7 @@
   will-change: opacity, transform;
 }
 
-/* Animation d'entrée pour la bannière CTA - ancienne version plus brusque */
+/* Animation d'entrée pour la bannière CTA */
 @keyframes slideInUp {
   0% {
     transform: translateY(100%);
@@ -354,7 +366,6 @@ button a, a button {
 /* Add group class support for hover effects */
 button, .btn, a.btn, [role="button"] {
   @apply cursor-pointer;
-  /* We're applying the group class directly in HTML/JSX instead of using @apply */
 }
 
 /* Protection contre le clic droit sur les images et vidéos */
@@ -405,19 +416,19 @@ blockquote {
 }
 
 blockquote::before {
-  content: """";
-  @apply absolute -left-2 -top-2 text-4xl text-gray-300 opacity-50 font-serif;
+  content: open-quote;
+  @apply absolute -left-2 -top-2 text-4xl text-muted-foreground/30 font-serif;
 }
 
 /* Enhanced list styling */
 ul.fancy-list li::before {
-  content: "•";
-  @apply text-gray-500 inline-block w-4 -ml-4;
+  content: "\2022";
+  @apply text-muted-foreground inline-block w-4 -ml-4;
 }
 
-/* Glass effect for cards */
+/* Glass effect for cards - AgentFrancais style */
 .glass-card {
-  @apply bg-white/80 backdrop-blur-sm border border-white/50 shadow-sm;
+  @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm;
 }
 
 /* Article card hover effect - optimisé */
@@ -428,11 +439,11 @@ ul.fancy-list li::before {
 
 /* Table of contents styling */
 .toc {
-  @apply bg-gray-50/50 p-4 rounded-lg mb-6 border border-gray-100;
+  @apply bg-muted/50 p-4 rounded-lg mb-6 border border-border;
 }
 
 .toc-title {
-  @apply font-semibold text-lg mb-2 text-gray-800;
+  @apply font-semibold text-lg mb-2 text-foreground;
 }
 
 .toc-list {
@@ -440,31 +451,31 @@ ul.fancy-list li::before {
 }
 
 .toc-item {
-  @apply pl-2 border-l-2 border-gray-200 hover:border-gray-500 transition-colors duration-200;
+  @apply pl-2 border-l-2 border-border hover:border-primary transition-colors duration-200;
 }
 
 .toc-link {
-  @apply text-gray-700 hover:text-gray-900 no-underline block py-1 text-sm;
+  @apply text-muted-foreground hover:text-foreground no-underline block py-1 text-sm;
 }
 
 /* Enhanced image captions */
 .image-caption {
-  @apply text-sm text-center text-gray-500 mt-2 italic;
+  @apply text-sm text-center text-muted-foreground mt-2 italic;
 }
 
 /* Article section dividers */
 .section-divider {
-  @apply my-10 border-t-2 border-gray-100 relative;
+  @apply my-10 border-t-2 border-border relative;
 }
 
 .section-divider::after {
-  content: "✦";
-  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-gray-300;
+  content: "\2726";
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-background px-4 text-muted-foreground/50;
 }
 
 /* Code block styling */
 pre {
-  @apply bg-gray-800 text-gray-100 p-4 rounded-md overflow-x-auto my-6;
+  @apply bg-secondary text-secondary-foreground p-4 rounded-md overflow-x-auto my-6;
 }
 
 pre code {
@@ -504,72 +515,61 @@ pre code {
   backface-visibility: hidden;
 }
 
-/* Animation floating améliorée - plus mobile et variée */
-@keyframes floating {
-  0% { 
-    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
-    opacity: 0.3;
-  }
-  25% { 
-    transform: translateY(-15px) translateX(5px) rotate(90deg) scale(1.1);
-    opacity: 0.6;
-  }
-  50% { 
-    transform: translateY(-30px) translateX(-3px) rotate(180deg) scale(0.9);
-    opacity: 0.8;
-  }
-  75% { 
-    transform: translateY(-15px) translateX(-8px) rotate(270deg) scale(1.05);
-    opacity: 0.4;
-  }
-  100% { 
-    transform: translateY(0px) translateX(0px) rotate(360deg) scale(1);
-    opacity: 0.3;
-  }
-}
-
-.animate-floating {
-  animation: floating 4s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-/* Styles pour les flip boxes 3D */
-.perspective-1000 {
-  perspective: 1000px;
-}
-
-.transform-style-preserve-3d {
-  transform-style: preserve-3d;
-}
-
-.backface-hidden {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
+/* Rotate animations for flip effect */
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
 
-/* Animation breathe pour le CTA principal */
-@keyframes breathe {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
+/* Classe de conteneur de flipping */
+.flip-container {
+  perspective: 1000px;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.flip-card {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-.animate-marquee {
-  animation: marquee 20s linear infinite;
+/* Classes utilitaires additionnelles AgentFrancais style */
+.btn-lime {
+  @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+  @apply hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5;
+}
+
+.btn-outline-dark {
+  @apply bg-secondary text-secondary-foreground font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+  @apply hover:bg-secondary/90;
+}
+
+/* Floating card style comme AgentFrancais */
+.floating-card {
+  @apply bg-card rounded-xl border border-border shadow-sm;
+  @apply hover:shadow-md transition-all duration-300;
+}
+
+/* Pattern dot pour les backgrounds */
+.dot-pattern {
+  background-image: radial-gradient(circle, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Navy section pour contraste */
+.section-dark {
+  @apply bg-secondary text-secondary-foreground;
+}
+
+/* Subtle gradient background */
+.bg-subtle-gradient {
+  background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+}
+
+/* Badge pill style */
+.badge-pill {
+  @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium;
+  @apply bg-muted text-muted-foreground border border-border;
+}
+
+.badge-pill-lime {
+  @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium;
+  @apply bg-primary/10 text-primary-foreground border border-primary/20;
 }

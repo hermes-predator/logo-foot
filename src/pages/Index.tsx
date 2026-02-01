@@ -125,7 +125,7 @@ const Index = () => {
   }, []);
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-background">
       {/* TopBar promotionnelle en premier */}
       <TopBar />
       <Helmet>

@@ -1,5 +1,5 @@
 
-import { BookOpen, Home, Menu, MessageCircle, FileText, Scroll, AlertTriangle, HelpCircle, Download } from "lucide-react";
+import { BookOpen, Home, Menu, MessageCircle, Download, ChevronRight } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -20,14 +20,6 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
 
-  // Fonction pour déterminer si le lien est actif
-  const isActive = (path: string) => {
-    if (path === '/') {
-      return currentPath === path;
-    }
-    return currentPath.startsWith(path);
-  };
-
   // Effet pour détecter le défilement
   useEffect(() => {
     const handleScroll = () => {
@@ -45,10 +37,10 @@ const Header = () => {
 
   return (
     <header 
-      className={`w-full py-1.5 sm:py-2 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full py-3 sm:py-4 px-4 sm:px-6 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-[#191919] shadow-lg border-gray-800' 
-          : 'bg-[#191919] border-gray-800'
+          ? 'bg-white/95 shadow-sm border-border' 
+          : 'bg-white border-border/50'
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between gap-4 sm:gap-8">
@@ -63,21 +55,21 @@ const Header = () => {
           <>
             <button 
               aria-label="Menu" 
-              className="p-1 rounded-md text-white hover:bg-white/10 transition-colors"
+              className="p-2 rounded-lg text-foreground hover:bg-muted transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <Menu className="w-4 h-4" />
+              <Menu className="w-5 h-5" />
             </button>
             
             {mobileMenuOpen && (
-              <div className="absolute top-full left-0 right-0 bg-[#191919] shadow-md z-50 border-b border-gray-800 animate-in fade-in slide-in-from-top-5">
-                <div className="container mx-auto py-3 flex flex-col space-y-2">
+              <div className="absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-b border-border animate-in fade-in slide-in-from-top-5">
+                <div className="container mx-auto py-4 flex flex-col space-y-1">
                   <Link 
                     to="/" 
-                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                    className={`flex items-center gap-3 transition-all px-4 py-3 rounded-xl ${
                       currentPath === '/' 
-                        ? 'font-medium bg-white/10 text-white' 
-                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                        ? 'font-medium bg-lime-50 text-foreground' 
+                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
                     <Home className="w-4 h-4" strokeWidth={currentPath === '/' ? 2.5 : 2} />
@@ -85,10 +77,10 @@ const Header = () => {
                   </Link>
                   <Link 
                     to="/blog" 
-                    className={`flex items-center gap-2 transition-all px-4 py-3 rounded-md ${
+                    className={`flex items-center gap-3 transition-all px-4 py-3 rounded-xl ${
                       currentPath.startsWith('/blog') 
-                        ? 'font-medium bg-white/10 text-white' 
-                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                        ? 'font-medium bg-lime-50 text-foreground' 
+                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
                     <BookOpen className="w-4 h-4" strokeWidth={currentPath.startsWith('/blog') ? 2.5 : 2} />
@@ -96,17 +88,17 @@ const Header = () => {
                   </Link>
                   
                   {/* Divider */}
-                  <div className="border-t border-gray-700 my-2"></div>
+                  <div className="border-t border-border my-3"></div>
                   
                   {/* Footer links in mobile menu */}
                   <Dialog>
-                    <DialogTrigger className="flex items-center gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-md transition-all text-left">
+                    <DialogTrigger className="flex items-center gap-3 px-4 py-3 text-muted-foreground hover:text-foreground hover:bg-muted rounded-xl transition-all text-left">
                       <MessageCircle className="w-4 h-4" />
                       <span>Contactez-nous</span>
                     </DialogTrigger>
                     <DialogContent className="max-w-2xl w-full">
                       <DialogHeader>
-                        <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                        <DialogTitle className="text-xl font-bold text-foreground">Contacter le Service Client</DialogTitle>
                         <DialogDescription>
                           Pour toute question ou demande d'assistance.
                         </DialogDescription>
@@ -126,40 +118,40 @@ const Header = () => {
             )}
           </>
         ) : (
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center h-full">
+        <div className="flex items-center gap-1">
             <Link 
               to="/" 
-              className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all ${
                 currentPath === '/' 
-                  ? 'font-medium text-white border-white' 
-                  : 'text-gray-300 hover:text-white border-transparent'
+                  ? 'font-medium text-foreground bg-muted' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
               }`}
             >
-              <Home className="w-3 h-3" strokeWidth={currentPath === '/' ? 2.5 : 2} />
+              <Home className="w-4 h-4" strokeWidth={currentPath === '/' ? 2.5 : 2} />
               <span>Accueil</span>
             </Link>
             <Link 
               to="/blog" 
-              className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all ${
                 currentPath.startsWith('/blog') 
-                  ? 'font-medium text-white border-white' 
-                  : 'text-gray-300 hover:text-white border-transparent'
+                  ? 'font-medium text-foreground bg-muted' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
               }`}
             >
-              <BookOpen className="w-3 h-3" strokeWidth={currentPath.startsWith('/blog') ? 2.5 : 2} />
+              <BookOpen className="w-4 h-4" strokeWidth={currentPath.startsWith('/blog') ? 2.5 : 2} />
               <span>Blog</span>
             </Link>
             
             <FAQDialog variant="header" />
             
             <Dialog>
-              <DialogTrigger className={`flex items-center gap-1.5 px-4 h-full text-xs transition-colors border-b-2 border-transparent text-gray-300 hover:text-white`}>
-                <MessageCircle className="w-3 h-3" />
+              <DialogTrigger className="flex items-center gap-2 px-4 py-2 text-sm rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all">
+                <MessageCircle className="w-4 h-4" />
                 <span>Contact</span>
               </DialogTrigger>
               <DialogContent className="max-w-2xl w-full">
                 <DialogHeader>
-                  <DialogTitle className="text-xl font-bold text-gray-800">Contacter le Service Client</DialogTitle>
+                  <DialogTitle className="text-xl font-bold text-foreground">Contacter le Service Client</DialogTitle>
                   <DialogDescription>
                     Pour toute question ou demande d'assistance.
                   </DialogDescription>
@@ -172,15 +164,14 @@ const Header = () => {
           </div>
         )}
 
-        {/* Bouton Acheter à droite */}
+        {/* Bouton CTA à droite - Style AgentFrancais */}
         {!isMobile && (
           <Button
             onClick={() => navigate('/payment')}
-            variant="outline"
-            className="flex items-center gap-1 border-white/30 bg-transparent text-white hover:bg-white hover:text-[#191919] font-medium px-2.5 py-1 text-[11px] rounded-sm transition-all h-auto"
+            className="flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-navy font-semibold px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md"
           >
-            <Download className="w-3 h-3" />
             <span>Je veux ce fichier</span>
+            <ChevronRight className="w-4 h-4" />
           </Button>
         )}
       </nav>

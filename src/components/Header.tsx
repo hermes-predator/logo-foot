@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
-import ContactForm from './ContactForm';
 
 const Header = () => {
   const location = useLocation();
@@ -28,10 +26,10 @@ const Header = () => {
     setMobileMenuOpen(false);
   }, [currentPath]);
 
-  const scrollToFAQ = () => {
-    const faqSection = document.getElementById('faq-section');
-    if (faqSection) {
-      faqSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
     setMobileMenuOpen(false);
   };
@@ -79,23 +77,10 @@ const Header = () => {
               <Link to="/blog" className={navLinkClass(currentPath.startsWith('/blog'))}>
                 Blog
               </Link>
-              <Dialog>
-                <DialogTrigger className={navLinkClass(false)}>
-                  Contact
-                </DialogTrigger>
-                <DialogContent className="max-w-2xl w-full">
-                  <DialogHeader>
-                    <DialogTitle className="text-xl font-bold text-foreground">Contacter le Service Client</DialogTitle>
-                    <DialogDescription>
-                      Pour toute question ou demande d'assistance.
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="mt-4">
-                    <ContactForm />
-                  </div>
-                </DialogContent>
-              </Dialog>
-              <button onClick={scrollToFAQ} className={navLinkClass(false)}>
+              <button onClick={() => scrollToSection('contact-section')} className={navLinkClass(false)}>
+                Contact
+              </button>
+              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
                 FAQ
               </button>
             </div>
@@ -129,24 +114,14 @@ const Header = () => {
               >
                 Blog
               </Link>
-              <Dialog>
-                <DialogTrigger className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left">
-                  Contact
-                </DialogTrigger>
-                <DialogContent className="max-w-2xl w-full">
-                  <DialogHeader>
-                    <DialogTitle className="text-xl font-bold text-foreground">Contacter le Service Client</DialogTitle>
-                    <DialogDescription>
-                      Pour toute question ou demande d'assistance.
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="mt-4">
-                    <ContactForm />
-                  </div>
-                </DialogContent>
-              </Dialog>
               <button 
-                onClick={scrollToFAQ}
+                onClick={() => scrollToSection('contact-section')}
+                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
+              >
+                Contact
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq-section')}
                 className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
               >
                 FAQ

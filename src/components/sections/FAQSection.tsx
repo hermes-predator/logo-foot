@@ -38,7 +38,7 @@ const faqItems = [
 
 const FAQSection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-background">
+    <section id="faq-section" className="py-16 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Header */}

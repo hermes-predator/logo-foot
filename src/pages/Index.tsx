@@ -10,6 +10,7 @@ import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
 import { Skeleton } from '@/components/ui/skeleton';
 import FAQSection from '../components/sections/FAQSection';
+import ContactSection from '../components/sections/ContactSection';
 
 // Lazy load components that aren't needed for initial render
 const LazyPaymentSection = lazy(() => import('../components/payment/PaymentSection'));
@@ -250,6 +251,9 @@ const Index = () => {
 
         {/* FAQ Section */}
         <FAQSection />
+
+        {/* Contact Section */}
+        <ContactSection />
       </main>
       
       <Footer />

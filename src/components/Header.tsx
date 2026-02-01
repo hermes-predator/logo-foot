@@ -1,4 +1,4 @@
-import { Menu, ChevronRight, X } from "lucide-react";
+import { Menu, ChevronsRight, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -134,10 +134,10 @@ const Header = () => {
         {!isMobile && (
           <Button
             onClick={() => navigate('/payment')}
-            className="flex items-center gap-2 font-semibold px-5 py-2.5 rounded-full bg-navy hover:bg-navy/90 text-white shadow-sm hover:shadow-md transition-all"
+            className="flex items-center gap-3 font-medium px-6 py-2.5 rounded-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-sm hover:shadow-md transition-all"
           >
             <span>Je veux ce fichier</span>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronsRight className="w-5 h-5" />
           </Button>
         )}
       </nav>

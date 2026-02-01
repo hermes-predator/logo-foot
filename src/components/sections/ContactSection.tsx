@@ -1,30 +1,45 @@
 import React from "react";
-import { Mail } from "lucide-react";
-import ContactForm from "../ContactForm";
+import { ChevronRight, Mail } from "lucide-react";
 
 const ContactSection = () => {
-  return (
-    <section id="contact-section" className="py-16 sm:py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime/20 text-navy font-medium text-sm mb-4">
-              <Mail className="w-4 h-4" />
-              <span>Contact</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Contactez-nous
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Une question ? Notre équipe vous répond rapidement.
-            </p>
-          </div>
+  const email = "contact@logo-foot.com";
 
-          {/* Contact Form Card */}
-          <div className="bg-white rounded-2xl border border-border shadow-sm p-6 sm:p-8">
-            <ContactForm />
-          </div>
+  return (
+    <section id="contact-section" className="relative py-24 sm:py-32 bg-secondary overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/10" />
+        <div className="absolute top-1/2 right-[-100px] -translate-y-1/2 w-[500px] h-[500px] rounded-full border border-white/10" />
+        <div className="absolute top-1/2 right-[-200px] -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-white/5 dot-pattern" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Heading */}
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+            Une question ?
+          </h2>
+
+          {/* Subtitle */}
+          <p className="text-white/70 text-lg sm:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+            Notre équipe est disponible pour répondre à toutes vos questions concernant nos produits et services.
+          </p>
+
+          {/* CTA Button */}
+          <a
+            href={`mailto:${email}`}
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 text-lg"
+          >
+            <Mail className="w-5 h-5" />
+            Nous contacter
+            <ChevronRight className="w-5 h-5" />
+          </a>
+
+          {/* Email display */}
+          <p className="mt-6 text-white/50 text-sm">
+            ou écrivez-nous directement à{" "}
+            <span className="text-primary font-medium">{email}</span>
+          </p>
         </div>
       </div>
     </section>

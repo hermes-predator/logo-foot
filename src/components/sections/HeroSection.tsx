@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               {/* CTA Principal avec conteneur externe */}
-              <div className="relative p-1.5 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-border">
+              <div className="relative p-2 bg-gradient-to-br from-white/60 to-white/40 backdrop-blur-md rounded-2xl shadow-xl border border-white/50 ring-1 ring-black/5">
                 <Button
                   size="lg"
                   onClick={goToPayment}

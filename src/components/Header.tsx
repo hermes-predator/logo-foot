@@ -134,7 +134,7 @@ const Header = () => {
         {!isMobile && (
           <Button
             onClick={() => navigate('/payment')}
-            className="flex items-center gap-3 font-medium px-6 py-2.5 rounded-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-sm hover:shadow-md transition-all"
+            className="flex items-center gap-3 font-medium px-6 py-2.5 rounded-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg hover:shadow-xl transition-all"
           >
             <span>Je veux ce fichier</span>
             <ChevronsRight className="w-5 h-5" />

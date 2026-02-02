@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Percent, Download, Zap } from 'lucide-react';
+import { Percent, Download, Circle } from 'lucide-react';
 
 const messages = [
+  { bold: "⦗FRONT-CLOUD⦘~ Football.zip", rest: " : Un fichier complet sur le foot", icon: Circle },
   { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL", icon: Percent },
   { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement", icon: Download },
 ];

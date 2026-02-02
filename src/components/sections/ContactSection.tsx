@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronsRight } from "lucide-react";
+
 
 const ContactSection = () => {
   const email = "contact@logo-foot.com";
@@ -24,26 +24,12 @@ const ContactSection = () => {
             Notre équipe est disponible pour répondre à toutes vos questions.
           </p>
 
-          {/* CTA Button with hexagon pattern */}
-          <a
-            href={`mailto:${email}`}
-            className="group relative inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-1.5 pr-2 transition-all duration-300 hover:bg-white/15"
-          >
-            {/* Inner lime button with hexagon pattern */}
-            <span className="relative overflow-hidden bg-lime text-secondary font-semibold px-8 py-3.5 rounded-full text-lg flex items-center gap-2">
-              {/* Hexagon pattern overlay */}
-              <span className="absolute inset-0 opacity-30" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.15'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              }} />
-              <span className="relative">Contacter un agent</span>
-              <ChevronsRight className="relative w-5 h-5 transition-transform group-hover:translate-x-0.5" />
-            </span>
-          </a>
-
           {/* Email display */}
-          <p className="mt-6 text-white/50 text-sm">
-            ou écrivez-nous directement à{" "}
-            <span className="text-lime font-medium">{email}</span>
+          <p className="text-white/60 text-base">
+            Écrivez-nous à{" "}
+            <a href={`mailto:${email}`} className="text-lime font-semibold hover:underline transition-colors">
+              {email}
+            </a>
           </p>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import ProductGallery from '../components/ProductGallery';
 import FlipBox from '../components/ui/FlipBox';
+import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
 import { ProductSchema } from '../components/schema/ProductSchema';
@@ -125,6 +126,8 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background">
+      {/* TopBar promotionnelle en premier */}
+      <TopBar />
       <Helmet>
         {/* Title tag optimisé pour la page d'accueil */}
         <title>Logo Foot | Fichier +8700 Logos des Clubs de Football</title>

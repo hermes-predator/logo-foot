@@ -9,7 +9,6 @@ import HeroTestimonialBadge from './HeroTestimonialBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 import { useDownloadCount } from '@/contexts/DownloadCountContext';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
-import TopBar from '@/components/TopBar';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -18,15 +17,11 @@ const HeroSection: React.FC = () => {
   const downloadCount = useDownloadCount();
 
   return (
-    <section className="relative pt-4 pb-6 px-4 overflow-hidden">
+    <section className="relative pt-8 pb-6 px-4 overflow-hidden">
       {/* Background pattern subtil */}
       <div className="absolute inset-0 -z-10 dot-pattern opacity-30" />
       
       <div className="max-w-6xl mx-auto">
-        {/* Barre d'annonce intégrée */}
-        <div className="mb-6">
-          <TopBar />
-        </div>
         {/* Layout principal */}
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 items-center">
           

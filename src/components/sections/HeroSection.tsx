@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, Download, Lock, Users, Zap, Shield, RefreshCw, ChevronsRight } from "lucide-react";
+import { Folder, Download, ChevronRight, Lock, Users, Zap, Shield, RefreshCw } from "lucide-react";
 import footballFolderIcon from '@/assets/football-folder.png';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -65,21 +65,16 @@ const HeroSection: React.FC = () => {
 
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <button
+              <Button
+                size="lg"
                 onClick={goToPayment}
-                className="group relative inline-flex items-center bg-white border border-border shadow-md rounded-full p-2 transition-all duration-300 hover:shadow-xl"
+                className="group relative bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl shadow-lg hover:shadow-xl hover:shadow-lime-500/25 transition-all duration-300"
               >
-                {/* Inner lime button with hexagon pattern */}
-                <span className="relative overflow-hidden bg-lime text-secondary font-bold px-8 py-4 rounded-full text-lg flex items-center gap-2">
-                  {/* Hexagon pattern overlay */}
-                  <span className="absolute inset-0 opacity-40" style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='43' viewBox='0 0 50 43'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M25 0l25 14.4v28.8L25 43 0 28.6V14.4L25 0zm0 4.8L4.2 16.2v21.6L25 48.2l20.8-10.4V16.2L25 4.8z'/%3E%3C/svg%3E")`,
-                    backgroundSize: '50px 43px',
-                  }} />
-                  <span className="relative">Télécharger pour 5€</span>
-                  <ChevronsRight className="relative w-5 h-5 transition-transform group-hover:translate-x-0.5" />
+                <span className="flex items-center gap-3">
+                  <span>Télécharger pour 8€</span>
+                  <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </span>
-              </button>
+              </Button>
               
               <Dialog>
                 <DialogTrigger asChild>

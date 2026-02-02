@@ -7,7 +7,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import PackDescription from './PackDescription';
 import HeroTestimonialBadge from './HeroTestimonialBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
-import { useDownloadCount } from '@/contexts/DownloadCountContext';
+
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
 import HeroDecorations from './HeroDecorations';
 import TypewriterBadge from './TypewriterBadge';
@@ -16,7 +16,6 @@ const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   const goToPayment = () => navigate('/payment');
   const recentBuyers = useRecentBuyers();
-  const downloadCount = useDownloadCount();
 
   return (
     <section className="relative pt-8 pb-6 px-4 overflow-hidden">
@@ -96,22 +95,19 @@ const HeroSection: React.FC = () => {
               </Dialog>
             </div>
 
-            {/* Trustpilot et downloads */}
-            <div className="flex items-center gap-4 pt-2">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            {/* Badges de confiance - une seule ligne */}
+            <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
                 <img src={trustpilotLogo} alt="TrustPilot" className="h-4" />
                 <span className="font-medium">4.8/5</span>
-                <span className="text-muted-foreground/60">• {downloadCount.toLocaleString('fr-FR')} downloads</span>
               </div>
-            </div>
-
-            {/* Badges de confiance */}
-            <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-border">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="w-px h-4 bg-border" />
+              <div className="flex items-center gap-2">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-5" />
                 <span>Paiement Sécurisé</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="w-px h-4 bg-border" />
+              <div className="flex items-center gap-2">
                 <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-5" />
                 <span>Stockable sur Drive</span>
               </div>

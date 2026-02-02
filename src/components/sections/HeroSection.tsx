@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, Download, ChevronRight, Lock, Users, Zap, Shield, RefreshCw } from "lucide-react";
+import { Folder, Download, Lock, Users, Zap, Shield, RefreshCw, ChevronsRight } from "lucide-react";
 import footballFolderIcon from '@/assets/football-folder.png';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -65,16 +65,20 @@ const HeroSection: React.FC = () => {
 
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button
-                size="lg"
+              <button
                 onClick={goToPayment}
-                className="group relative bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl shadow-lg hover:shadow-xl hover:shadow-lime-500/25 transition-all duration-300"
+                className="group relative inline-flex items-center bg-white/80 backdrop-blur-sm border border-border rounded-full p-1.5 pr-2 transition-all duration-300 hover:bg-white hover:shadow-lg"
               >
-                <span className="flex items-center gap-3">
-                  <span>Télécharger pour 8€</span>
-                  <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                {/* Inner lime button with hexagon pattern */}
+                <span className="relative overflow-hidden bg-lime text-secondary font-bold px-8 py-4 rounded-full text-lg flex items-center gap-2">
+                  {/* Hexagon pattern overlay */}
+                  <span className="absolute inset-0 opacity-30" style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.15'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                  }} />
+                  <span className="relative">Télécharger pour 5€</span>
+                  <ChevronsRight className="relative w-5 h-5 transition-transform group-hover:translate-x-0.5" />
                 </span>
-              </Button>
+              </button>
               
               <Dialog>
                 <DialogTrigger asChild>

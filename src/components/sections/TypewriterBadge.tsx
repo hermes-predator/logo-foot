@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Tag, Download, Circle } from 'lucide-react';
+import { Tag, Package, Circle } from 'lucide-react';
 
 const messages = [
   { bold: "⦗FRONT-CLOUD⦘~ Football.zip", rest: " : Un fichier complet sur le foot", icon: Circle },
   { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL", icon: Tag },
-  { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement", icon: Download },
+  { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement", icon: Package },
 ];
 
 const TypewriterBadge: React.FC = () => {

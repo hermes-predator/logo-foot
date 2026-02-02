@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
             {/* Titre principal - Style AgentFrancais */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-tight tracking-tight">
-                Tous les logos de foot,<br />
+                Logos des clubs de football,<br />
                 <span className="text-navy/80">en un seul fichier.</span>
               </h1>
               

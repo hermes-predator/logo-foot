@@ -27,13 +27,14 @@ const ContactSection = () => {
           {/* CTA Button with hexagon pattern */}
           <a
             href={`mailto:${email}`}
-            className="group relative inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-1.5 pr-2 transition-all duration-300 hover:bg-white/15"
+            className="group relative inline-flex items-center bg-white/20 backdrop-blur-sm border border-white/30 shadow-md rounded-full p-2 transition-all duration-300 hover:bg-white/30 hover:shadow-xl"
           >
             {/* Inner lime button with hexagon pattern */}
             <span className="relative overflow-hidden bg-lime text-secondary font-semibold px-8 py-3.5 rounded-full text-lg flex items-center gap-2">
               {/* Hexagon pattern overlay */}
-              <span className="absolute inset-0 opacity-30" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.15'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              <span className="absolute inset-0 opacity-40" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='43' viewBox='0 0 50 43'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M25 0l25 14.4v28.8L25 43 0 28.6V14.4L25 0zm0 4.8L4.2 16.2v21.6L25 48.2l20.8-10.4V16.2L25 4.8z'/%3E%3C/svg%3E")`,
+                backgroundSize: '50px 43px',
               }} />
               <span className="relative">Contacter un agent</span>
               <ChevronsRight className="relative w-5 h-5 transition-transform group-hover:translate-x-0.5" />

@@ -37,14 +37,14 @@ const HeroSection: React.FC = () => {
 
             {/* Titre principal - Style AgentFrancais */}
             <div className="space-y-4">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-tight tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy leading-tight tracking-tight">
                 Tous les logos des clubs de football,<br />
                 <span className="text-navy/80">en un seul fichier.</span>
-              </div>
-              
-              <h1 className="text-lg text-muted-foreground max-w-xl font-normal">
-                Téléchargez plus de 8 700 logos de clubs de football uniformes, nommés et triés par pays.
               </h1>
+              
+              <p className="text-lg text-muted-foreground max-w-xl">
+                Téléchargez plus de 8 700 logos de clubs de football uniformes, nommés et triés par pays.
+              </p>
             </div>
 
             {/* Tags des bénéfices - Style AgentFrancais */}

@@ -45,23 +45,23 @@ const TypewriterBadge: React.FC = () => {
   const displayedRest = displayedText.slice(boldLength);
 
   return (
-    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-navy border border-navy-light">
+    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border">
       {/* Live indicator */}
       <span className="relative flex h-2 w-2">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
       </span>
       
       {/* Message animé */}
-      <p className="text-sm text-white/90 font-medium">
-        <span className="text-lime-400 font-bold">{displayedBold}</span>
+      <p className="text-sm text-foreground font-medium">
+        <span className="text-lime-600 font-bold">{displayedBold}</span>
         <span>{displayedRest}</span>
-        <span className="animate-pulse text-lime-400">|</span>
+        <span className="animate-pulse text-lime-600">|</span>
       </p>
       
       {/* Live indicator */}
       <span className="relative flex h-2 w-2">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
       </span>
     </div>

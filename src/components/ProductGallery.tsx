@@ -4,7 +4,7 @@ import CompetitionGallery from './gallery/CompetitionGallery';
 import { generateGalleryItems } from '@/utils/galleryData';
 import { LazySection } from './ui/lazy-section';
 import { Helmet } from 'react-helmet-async';
-import { Gift } from 'lucide-react';
+import { Gift, Folder } from 'lucide-react';
 
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +21,19 @@ const ProductGallery = () => {
   const bestSellerItems = clubItems.slice(0, 3);
   
   return (
-    <section className="w-full py-12 bg-background">
+    <section className="w-full py-16 bg-navy relative overflow-hidden">
+      {/* Pattern de fond subtil */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(205, 255, 0, 0.15) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
+
+      {/* Décorations géométriques */}
+      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-lime-500/5 blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-48 h-48 rounded-full bg-lime-500/5 blur-3xl" />
+      
       <Helmet>
         {bestSellerItems.map((item, index) => (
           <link key={`preload-${index}`} rel="preload" href={item.imageUrl} as="image" />
@@ -45,8 +57,23 @@ const ProductGallery = () => {
         </script>
       </Helmet>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto space-y-16">
+          
+          {/* Header de la section */}
+          <div className="text-center space-y-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
+              <Folder className="w-4 h-4 text-lime-400" />
+              <span className="text-sm font-medium text-slate-300">Aperçu du contenu</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              60 pays inclus dans le fichier
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              Parcourez les collections de logos classées par pays. Chaque collection contient des logos uniformes, nommés et en haute qualité.
+            </p>
+          </div>
+
           {/* Section principale des clubs */}
           <div className="relative">
             <LazySection height="400px">
@@ -54,19 +81,19 @@ const ProductGallery = () => {
             </LazySection>
           </div>
 
-          {/* Section bonus avec style différent */}
+          {/* Section bonus */}
           <LazySection height="350px" rootMargin="200px">
             <div className="relative">
               {/* Badge bonus */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-lime-100 border border-lime-200 mb-6">
-                <Gift className="w-5 h-5 text-lime-600" />
-                <span className="text-sm font-semibold text-navy">Bonus offert</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-lime-500/10 border border-lime-500/30 mb-6">
+                <Gift className="w-5 h-5 text-lime-400" />
+                <span className="text-sm font-semibold text-lime-400">Bonus offert</span>
               </div>
               
-              <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
                 Autres logos de football
               </h2>
-              <p className="text-muted-foreground mb-8 max-w-2xl">
+              <p className="text-slate-400 mb-8 max-w-2xl">
                 Logos des compétitions majeures, drapeaux mondiaux et autres logos de football inclus dans le fichier.
               </p>
               

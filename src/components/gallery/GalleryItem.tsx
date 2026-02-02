@@ -1,5 +1,4 @@
 
-
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Eye, Maximize2, Plus } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
@@ -11,7 +10,6 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
   const { isInView, imgRef } = useLazyLoading();
 
   const getVideoTitle = (country: string) => {
-    // Titres spécifiques pour les articles 62, 63 et 64
     if (item.id === 62) {
       return 'Collection complète des clubs de football populaire - PNG transparent - Wallet.Type';
     }
@@ -21,7 +19,6 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     if (item.id === 64) {
       return 'Collection complète des drapeaux mondiaux - PNG transparent';
     }
-    // Titres pour les autres articles
     if (country === 'Sélections Nationales') {
       return 'Animation logos des sélections nationales de football';
     }
@@ -64,227 +61,68 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
       `Animation logo foot ${country}`;
   };
 
-  // Fonction pour obtenir le texte descriptif de la collection et la valeur estimée
   const getCollectionData = (item: GalleryItemProps['item']): { count: number; text: string; estimatedValue: number } => {
-    // Pour les collections spéciales (items 61-64)
     if (item.id === 61) return { count: 100, text: "logos de compétitions de football", estimatedValue: 1 };
     if (item.id === 62) return { count: 100, text: "couvertures (Wallet.Type) de clubs européens", estimatedValue: 1 };
     if (item.id === 63) return { count: 100, text: "couvertures (Wallet.Type) de sélections nationales", estimatedValue: 1 };
     if (item.id === 64) return { count: 270, text: "logos de drapeaux mondiaux", estimatedValue: 2.70 };
     
-    // Pour les clubs (items 1-60)
     const logoCountByCountry: { [key: string]: number } = {
-      'France': 450,
-      'Allemagne': 450,
-      'Espagne': 450,
-      'Italie': 400,
-      'Angleterre': 450,
-      'Portugal': 200,
-      'Pays-Bas': 300,
-      'Belgique': 150,
-      'Turquie': 200,
-      'Suisse': 150,
-      'Écosse': 100,
-      'Autriche': 120,
-      'Grèce': 150,
-      'Ukraine': 100,
-      'Russie': 150,
-      'Danemark': 150,
-      'Norvège': 150,
-      'Suède': 150,
-      'Pologne': 150,
-      'République Tchèque': 150,
-      'Croatie': 120,
-      'Serbie': 120,
-      'Slovaquie': 120,
-      'Roumanie': 150,
-      'Hongrie': 120,
-      'Bulgarie': 120,
-      'États-Unis': 300,
-      'Argentine': 200,
-      'Brésil': 300,
-      'Biélorussie': 100,
-      'Irlande': 100,
-      'Pays de Galles': 100,
-      'Finlande': 100,
-      'Australie': 80,
-      'Arabie Saoudite': 80,
-      'Bosnie-Herzégovine': 80,
-      'Islande': 80,
-      'Israël': 80,
-      'Luxembourg': 80,
-      'Slovénie': 80,
-      'Albanie': 70,
-      'Irlande du Nord': 60,
-      'Malte': 60,
-      'Azerbaïdjan': 50,
-      'Moldavie': 50,
-      'Arménie': 40,
-      'Chypre': 40,
-      'Estonie': 40,
-      'Géorgie': 40,
-      'Kazakhstan': 40,
-      'Kosovo': 40,
-      'Lettonie': 40,
-      'Lituanie': 40,
-      'Macédoine du Nord': 40,
-      'Monténégro': 40,
-      'Default': 20,
-      'Iles Féroés': 20,
-      'Qatar': 20,
-      'Gibraltar': 12
+      'France': 450, 'Allemagne': 450, 'Espagne': 450, 'Italie': 400, 'Angleterre': 450,
+      'Portugal': 200, 'Pays-Bas': 300, 'Belgique': 150, 'Turquie': 200, 'Suisse': 150,
+      'Écosse': 100, 'Autriche': 120, 'Grèce': 150, 'Ukraine': 100, 'Russie': 150,
+      'Danemark': 150, 'Norvège': 150, 'Suède': 150, 'Pologne': 150, 'République Tchèque': 150,
+      'Croatie': 120, 'Serbie': 120, 'Slovaquie': 120, 'Roumanie': 150, 'Hongrie': 120,
+      'Bulgarie': 120, 'États-Unis': 300, 'Argentine': 200, 'Brésil': 300, 'Biélorussie': 100,
+      'Irlande': 100, 'Pays de Galles': 100, 'Finlande': 100, 'Australie': 80, 'Arabie Saoudite': 80,
+      'Bosnie-Herzégovine': 80, 'Islande': 80, 'Israël': 80, 'Luxembourg': 80, 'Slovénie': 80,
+      'Albanie': 70, 'Irlande du Nord': 60, 'Malte': 60, 'Azerbaïdjan': 50, 'Moldavie': 50,
+      'Arménie': 40, 'Chypre': 40, 'Estonie': 40, 'Géorgie': 40, 'Kazakhstan': 40,
+      'Kosovo': 40, 'Lettonie': 40, 'Lituanie': 40, 'Macédoine du Nord': 40, 'Monténégro': 40,
+      'Default': 20, 'Iles Féroés': 20, 'Qatar': 20, 'Gibraltar': 12
     };
 
-    // Conversion des noms de pays en adjectifs de nationalité
     const countryToAdjective: { [key: string]: string } = {
-      'France': 'français',
-      'Allemagne': 'allemands',
-      'Espagne': 'espagnols',
-      'Italie': 'italiens',
-      'Angleterre': 'anglais',
-      'Portugal': 'portugais',
-      'Pays-Bas': 'néerlandais',
-      'Belgique': 'belges',
-      'Turquie': 'turcs',
-      'Suisse': 'suisses',
-      'Écosse': 'écossais',
-      'Autriche': 'autrichiens',
-      'Grèce': 'grecs',
-      'Ukraine': 'ukrainiens',
-      'Russie': 'russes',
-      'Danemark': 'danois',
-      'Norvège': 'norvégiens',
-      'Suède': 'suédois',
-      'Pologne': 'polonais',
-      'République Tchèque': 'tchèques',
-      'Croatie': 'croates',
-      'Serbie': 'serbes',
-      'Roumanie': 'roumains',
-      'Hongrie': 'hongrois',
-      'Bulgarie': 'bulgares',
-      'Slovaquie': 'slovaques',
-      'Biélorussie': 'biélorusses',
-      'Irlande': 'irlandais',
-      'Pays de Galles': 'gallois',
-      'Finlande': 'finlandais',
-      'Bosnie-Herzégovine': 'bosniens',
-      'Islande': 'islandais',
-      'Israël': 'israéliens',
-      'Luxembourg': 'luxembourgeois',
-      'Slovénie': 'slovènes',
-      'Albanie': 'albanais',
-      'Irlande du Nord': 'nord-irlandais',
-      'Malte': 'maltais',
-      'Azerbaïdjan': 'azerbaïdjanais',
-      'Moldavie': 'moldaves',
-      'Arménie': 'arméniens',
-      'Chypre': 'chypriotes',
-      'Estonie': 'estoniens',
-      'Géorgie': 'géorgiens',
-      'Kazakhstan': 'kazakhs',
-      'Kosovo': 'kosovars',
-      'Lettonie': 'lettons',
-      'Lituanie': 'lituaniens',
-      'Macédoine du Nord': 'macédoniens',
-      'Monténégro': 'monténégrins',
-      'Iles Féroés': 'féroïens',
-      'Qatar': 'qataris',
-      'Gibraltar': 'gibraltariens',
-      'États-Unis': 'américains',
-      'Argentine': 'argentins',
-      'Brésil': 'brésiliens',
-      'Australie': 'australiens',
-      'Arabie Saoudite': 'saoudiens'
+      'France': 'français', 'Allemagne': 'allemands', 'Espagne': 'espagnols', 'Italie': 'italiens',
+      'Angleterre': 'anglais', 'Portugal': 'portugais', 'Pays-Bas': 'néerlandais', 'Belgique': 'belges',
+      'Turquie': 'turcs', 'Suisse': 'suisses', 'Écosse': 'écossais', 'Autriche': 'autrichiens',
+      'Grèce': 'grecs', 'Ukraine': 'ukrainiens', 'Russie': 'russes', 'Danemark': 'danois',
+      'Norvège': 'norvégiens', 'Suède': 'suédois', 'Pologne': 'polonais', 'République Tchèque': 'tchèques',
+      'Croatie': 'croates', 'Serbie': 'serbes', 'Roumanie': 'roumains', 'Hongrie': 'hongrois',
+      'Bulgarie': 'bulgares', 'Slovaquie': 'slovaques', 'Biélorussie': 'biélorusses', 'Irlande': 'irlandais',
+      'Pays de Galles': 'gallois', 'Finlande': 'finlandais', 'Bosnie-Herzégovine': 'bosniens',
+      'Islande': 'islandais', 'Israël': 'israéliens', 'Luxembourg': 'luxembourgeois', 'Slovénie': 'slovènes',
+      'Albanie': 'albanais', 'Irlande du Nord': 'nord-irlandais', 'Malte': 'maltais',
+      'Azerbaïdjan': 'azerbaïdjanais', 'Moldavie': 'moldaves', 'Arménie': 'arméniens', 'Chypre': 'chypriotes',
+      'Estonie': 'estoniens', 'Géorgie': 'géorgiens', 'Kazakhstan': 'kazakhs', 'Kosovo': 'kosovars',
+      'Lettonie': 'lettons', 'Lituanie': 'lituaniens', 'Macédoine du Nord': 'macédoniens',
+      'Monténégro': 'monténégrins', 'Iles Féroés': 'féroïens', 'Qatar': 'qataris', 'Gibraltar': 'gibraltariens',
+      'États-Unis': 'américains', 'Argentine': 'argentins', 'Brésil': 'brésiliens',
+      'Australie': 'australiens', 'Arabie Saoudite': 'saoudiens'
     };
     
     const logoCount = logoCountByCountry[item.country] || 240;
     const adjective = countryToAdjective[item.country] || item.country.toLowerCase();
-    
-    // Calcul de la valeur estimée basée sur le nombre de logos (0.01€ par logo)
     const estimatedValue = Math.round(logoCount * 0.01 * 100) / 100;
     
     return { count: logoCount, text: `logos de clubs ${adjective}`, estimatedValue };
   };
 
-  // Fonction pour obtenir le nombre de logos par fichier (pour l'ancien texte)
-  const getLogoCount = (id: number): number => {
-    // Collections spéciales avec beaucoup de logos
-    if (id === 62) return 50; // Collection clubs populaires
-    if (id === 63) return 32; // Collection sélections nationales
-    if (id === 64) return 195; // Collection drapeaux mondiaux
-    if (id === 61) return 1; // Article Hugo Ekitike
-    
-    // Pour les autres pays, nombre approximatif de clubs par pays
-    const logoCountByCountry: { [key: string]: number } = {
-      'France': 20,
-      'Allemagne': 18,
-      'Espagne': 20,
-      'Italie': 20,
-      'Angleterre': 20,
-      'Portugal': 18,
-      'Pays-Bas': 18,
-      'Belgique': 16,
-      'Turquie': 18,
-      'Suisse': 12,
-      'Écosse': 12,
-      'Autriche': 12,
-      'Grèce': 14,
-      'Ukraine': 12,
-      'Russie': 16,
-      'Danemark': 12,
-      'Norvège': 16,
-      'Suède': 16,
-      'Pologne': 16,
-      'République Tchèque': 16,
-      'Croatie': 10,
-      'Serbie': 16,
-      'Roumanie': 14,
-      'Hongrie': 12,
-      'Bulgarie': 14,
-      'États-Unis': 28,
-      'Argentine': 20,
-      'Australie': 12,
-      'Arabie Saoudite': 16
-    };
-    
-    // Trouver le pays correspondant à cet ID
-    const countries = [
-      'France', 'Allemagne', 'Espagne', 'Italie', 'Angleterre', 'Portugal', 'Pays-Bas', 'Belgique',
-      'Turquie', 'Suisse', 'Écosse', 'Autriche', 'Grèce', 'Ukraine', 'Russie', 'Danemark',
-      'Norvège', 'Suède', 'Pologne', 'République Tchèque', 'Croatie', 'Serbie', 'Roumanie',
-      'Hongrie', 'Bulgarie', 'États-Unis', 'Argentine', 'Australie', 'Arabie Saoudite'
-    ];
-    
-    const countryIndex = (id - 1) % countries.length;
-    const country = countries[countryIndex];
-    return logoCountByCountry[country] || 12;
-  };
-
-  // Fonction pour déterminer la description SEO appropriée
   const getSeoDescription = (item: GalleryItemProps['item']) => {
-    // Description spécifique pour l'article n°62
-    if (item.id === 62) {
-      return "Collection complète des clubs de football populaire - PNG transparent - Wallet.Type";
-    }
-    // Description spécifique pour l'article n°63
-    if (item.id === 63) {
-      return "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
-    }
-    // Description spécifique pour l'article n°64
-    if (item.id === 64) {
-      return "Collection complète des drapeaux mondiaux - PNG transparent";
-    }
-    // Pour les autres éléments, utiliser la description existante
+    if (item.id === 62) return "Collection complète des clubs de football populaire - PNG transparent - Wallet.Type";
+    if (item.id === 63) return "Collection complète des sélections nationales - PNG transparent - Wallet.Type";
+    if (item.id === 64) return "Collection complète des drapeaux mondiaux - PNG transparent";
     return item.altText;
   };
 
   return (
-    <div className="space-y-2">
+    <div className="group">
+      {/* Carte avec style glassmorphism sur fond sombre */}
       <div
-        className="relative aspect-square rounded overflow-hidden transform transition-all duration-300 ease-out shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:scale-[1.02] hover:shadow-xl"
+        className="relative rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 transition-all duration-300 hover:border-lime-500/50 hover:shadow-[0_0_30px_rgba(205,255,0,0.15)]"
         style={{
           opacity: 0,
-          animation: `fadeIn 0.3s ease-out ${item.id * 0.05}s forwards`
+          animation: `fadeIn 0.4s ease-out ${item.id * 0.03}s forwards`
         }}
         onMouseEnter={() => onHover(item.id)}
         onMouseLeave={() => onHover(null)}
@@ -292,51 +130,71 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
         <Dialog>
           <DialogTrigger asChild>
             <button 
-              className="w-full h-full text-left group"
+              className="w-full text-left"
               aria-label={`Voir ${item.title}`}
             >
-              {isHovered ? (
-                <div className="w-full h-full">
-                  <video
-                    src={item.videoUrl}
-                    className="absolute inset-0 w-full h-full object-contain bg-gray-900/95"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    title={getVideoTitle(item.country)}
-                  />
-                  <div className="absolute top-2 right-2 transform transition-all duration-200 ease-out hover:scale-110">
-                    <Maximize2 className="w-6 h-6 text-white drop-shadow-lg opacity-70" />
+              {/* Image/Video container */}
+              <div className="relative aspect-square">
+                {isHovered ? (
+                  <div className="w-full h-full">
+                    <video
+                      src={item.videoUrl}
+                      className="absolute inset-0 w-full h-full object-contain bg-slate-900"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      title={getVideoTitle(item.country)}
+                    />
+                    <div className="absolute top-3 right-3 transform transition-all duration-200 ease-out hover:scale-110">
+                      <Maximize2 className="w-5 h-5 text-white drop-shadow-lg opacity-80" />
+                    </div>
                   </div>
+                ) : (
+                  <>
+                    {!isInView && !isPriority && (
+                      <Skeleton className="w-full h-full absolute inset-0 bg-slate-700" />
+                    )}
+                    <img
+                      ref={(el) => {
+                        imgRef.current = el;
+                        if (el && isPriority) {
+                          el.setAttribute('fetchpriority', 'high');
+                        }
+                      }}
+                      src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
+                      alt={getSeoDescription(item)}
+                      className="w-full h-full object-contain transition-opacity duration-300 p-2"
+                      loading={isPriority ? "eager" : "lazy"}
+                      decoding={isPriority ? "sync" : "async"}
+                      itemProp={isPriority ? "image" : undefined}
+                      data-caption={item.title}
+                      data-description={getSeoDescription(item)}
+                    />
+                    {/* Icône œil */}
+                    <div className="absolute bottom-3 right-3 bg-slate-900/70 backdrop-blur-sm rounded-full p-2 opacity-60 group-hover:opacity-100 group-hover:bg-lime-500/90 transition-all duration-300">
+                      <Eye className="w-4 h-4 text-white" />
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* Contenu texte */}
+              <div className="p-4 space-y-2">
+                <p className="text-sm font-semibold text-white leading-tight">
+                  {item.title}
+                </p>
+                <p className="text-xs text-slate-400 font-medium flex items-center gap-1">
+                  <Plus className="w-3 h-3 text-lime-400 stroke-[3]" />
+                  <span className="text-lime-400 font-bold">{getCollectionData(item).count}</span>
+                  <span className="ml-0.5 truncate">{getCollectionData(item).text}</span>
+                </p>
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-500/20 text-red-400 text-[10px] font-semibold border border-red-500/30">
+                    Valeur : {getCollectionData(item).estimatedValue}€
+                  </span>
                 </div>
-              ) : (
-                <>
-                  {!isInView && !isPriority && (
-                    <Skeleton className="w-full h-full absolute inset-0" />
-                  )}
-                  <img
-                    ref={(el) => {
-                      imgRef.current = el;
-                      if (el && isPriority) {
-                        el.setAttribute('fetchpriority', 'high');
-                      }
-                    }}
-                    src={(isInView || isPriority) ? item.imageUrl : '/placeholder.svg'}
-                    alt={getSeoDescription(item)}
-                    className="w-full h-full object-contain transition-opacity duration-300"
-                    loading={isPriority ? "eager" : "lazy"}
-                    decoding={isPriority ? "sync" : "async"}
-                    itemProp={isPriority ? "image" : undefined}
-                    data-caption={item.title}
-                    data-description={getSeoDescription(item)}
-                  />
-                  {/* Icône œil avec le même style que BlogHeaderCarousel */}
-                  <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-70 group-hover:opacity-100 group-hover:bg-black/70 transition-all duration-300">
-                    <Eye className="w-4 h-4 text-white" />
-                  </div>
-                </>
-              )}
+              </div>
             </button>
           </DialogTrigger>
           <VideoPlayer 
@@ -346,24 +204,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
           />
         </Dialog>
       </div>
-      <div className="bg-gray-50 rounded p-2.5 space-y-1.5 text-center">
-        <p className="text-sm text-gray-950 font-semibold leading-tight">
-          {item.title}
-        </p>
-        <p className="text-xs text-gray-500 font-medium flex items-center justify-center gap-0.5">
-          <Plus className="w-3 h-3 text-gray-800 stroke-[3]" />
-          <span className="text-gray-800 font-bold">{getCollectionData(item).count}</span>
-          <span className="ml-0.5">{getCollectionData(item).text}</span>
-        </p>
-        <div className="flex justify-center">
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-[10px] font-semibold">
-            Valeur : {getCollectionData(item).estimatedValue}€
-          </span>
-        </div>
-      </div>
     </div>
   );
 };
 
 export default GalleryItem;
-

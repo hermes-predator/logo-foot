@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
                 className="group relative bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl shadow-lg hover:shadow-xl hover:shadow-lime-500/25 transition-all duration-300"
               >
                 <span className="flex items-center gap-3">
-                  <span>Télécharger pour 8€</span>
+                  <span>Télécharger maintenant</span>
                   <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </span>
               </Button>

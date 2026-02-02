@@ -34,6 +34,14 @@ const Header = () => {
     setMobileMenuOpen(false);
   };
 
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (currentPath === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false);
+  };
+
   const navLinkClass = (isActive: boolean) => 
     `text-sm font-medium transition-colors ${
       isActive 
@@ -61,6 +69,7 @@ const Header = () => {
           <Link 
             to="/" 
             className="hover:opacity-80 transition-opacity"
+            onClick={handleHomeClick}
           >
             <Logo />
           </Link>
@@ -71,7 +80,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           {!isMobile && (
             <div className="hidden md:flex items-center gap-6">
-              <Link to="/" className={navLinkClass(currentPath === '/')}>
+              <Link to="/" className={navLinkClass(currentPath === '/')} onClick={handleHomeClick}>
                 Accueil
               </Link>
               <Link to="/blog" className={navLinkClass(currentPath.startsWith('/blog'))}>
@@ -105,6 +114,7 @@ const Header = () => {
               <Link 
                 to="/" 
                 className={`px-4 py-3 text-sm ${currentPath === '/' ? 'font-medium bg-lime/10 text-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'}`}
+                onClick={handleHomeClick}
               >
                 Accueil
               </Link>

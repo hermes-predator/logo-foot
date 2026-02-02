@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Folder, Download, ChevronRight, Lock, Users, Zap, Shield, RefreshCw } from "lucide-react";
+import { Folder, ChevronRight, Lock } from "lucide-react";
 import footballFolderIcon from '@/assets/football-folder.png';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -47,20 +47,13 @@ const HeroSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Tags des bénéfices - Style AgentFrancais */}
-            <div className="flex flex-wrap gap-3">
-              <div className="badge-pill">
-                <Zap className="w-4 h-4" />
-                <span>Livraison instantanée</span>
-              </div>
-              <div className="badge-pill">
-                <Shield className="w-4 h-4" />
-                <span>Paiement sécurisé</span>
-              </div>
-              <div className="badge-pill">
-                <RefreshCw className="w-4 h-4" />
-                <span>MAJ régulières</span>
-              </div>
+            {/* Prix barré et offre actuelle */}
+            <div className="flex items-center gap-4">
+              <span className="text-lg text-muted-foreground line-through">86€</span>
+              <span className="text-xs px-2 py-1 bg-red-100 text-red-700 font-semibold rounded-full">Valeur réelle</span>
+              <div className="w-px h-6 bg-border" />
+              <span className="text-2xl font-bold text-navy">8€</span>
+              <span className="text-xs px-2 py-1 bg-lime-100 text-lime-700 font-semibold rounded-full">Offre actuelle</span>
             </div>
 
             {/* Boutons CTA */}
@@ -103,13 +96,8 @@ const HeroSection: React.FC = () => {
               </Dialog>
             </div>
 
-            {/* Prix barré et réassurance */}
+            {/* Trustpilot et downloads */}
             <div className="flex items-center gap-4 pt-2">
-              <div className="flex items-center gap-2">
-                <span className="text-lg text-muted-foreground line-through">86€</span>
-                <span className="text-xs px-2 py-1 bg-red-100 text-red-700 font-semibold rounded-full">-90%</span>
-              </div>
-              <div className="w-px h-5 bg-border" />
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <img src={trustpilotLogo} alt="TrustPilot" className="h-4" />
                 <span className="font-medium">4.8/5</span>

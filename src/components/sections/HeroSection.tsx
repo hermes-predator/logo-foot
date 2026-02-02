@@ -9,6 +9,7 @@ import HeroTestimonialBadge from './HeroTestimonialBadge';
 import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 import { useDownloadCount } from '@/contexts/DownloadCountContext';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
+import HeroDecorations from './HeroDecorations';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -20,6 +21,9 @@ const HeroSection: React.FC = () => {
     <section className="relative pt-8 pb-6 px-4 overflow-hidden">
       {/* Background pattern subtil */}
       <div className="absolute inset-0 -z-10 dot-pattern opacity-30" />
+      
+      {/* Décorations style AgentFrancais */}
+      <HeroDecorations />
       
       <div className="max-w-6xl mx-auto">
         {/* Layout principal */}

@@ -21,7 +21,7 @@ const ProductGallery = () => {
   const bestSellerItems = clubItems.slice(0, 3);
   
   return (
-    <section className="w-full py-16 bg-navy relative overflow-hidden">
+    <section className="w-full py-16 mx-4 sm:mx-8 lg:mx-16 rounded-3xl bg-navy relative overflow-hidden">
       {/* Pattern de fond subtil */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0" style={{

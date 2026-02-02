@@ -57,28 +57,16 @@ const HeroSection: React.FC = () => {
 
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              {/* CTA Principal avec conteneur externe */}
-              <div className="relative p-1.5 bg-muted/80 rounded-2xl shadow-md border border-border/50">
-                <Button
-                  size="lg"
-                  onClick={goToPayment}
-                  className="group relative bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 overflow-hidden"
-                >
-                  {/* Motif hexagonal */}
-                  <div className="absolute inset-0 opacity-20">
-                    <svg className="w-full h-full" viewBox="0 0 100 60" preserveAspectRatio="xMidYMid slice">
-                      <pattern id="hexPattern" x="0" y="0" width="20" height="17.32" patternUnits="userSpaceOnUse">
-                        <polygon points="10,0 20,5 20,15 10,20 0,15 0,5" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-navy/40"/>
-                      </pattern>
-                      <rect width="100%" height="100%" fill="url(#hexPattern)" />
-                    </svg>
-                  </div>
-                  <span className="flex items-center gap-3 relative z-10">
-                    <span>Télécharger maintenant</span>
-                    <ChevronsRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </Button>
-              </div>
+              <Button
+                size="lg"
+                onClick={goToPayment}
+                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300"
+              >
+                <span className="flex items-center gap-3">
+                  <span>Télécharger maintenant</span>
+                  <ChevronsRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Button>
               
               <Dialog>
                 <DialogTrigger asChild>

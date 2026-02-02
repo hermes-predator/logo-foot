@@ -10,6 +10,7 @@ import { useRecentBuyers } from '@/contexts/RecentBuyersContext';
 import { useDownloadCount } from '@/contexts/DownloadCountContext';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
 import HeroDecorations from './HeroDecorations';
+import TypewriterBadge from './TypewriterBadge';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -31,11 +32,8 @@ const HeroSection: React.FC = () => {
           
           {/* Colonne gauche - Contenu */}
           <div className="space-y-6">
-            {/* Badge de confiance */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lime-100 border border-lime-200">
-              <div className="w-2 h-2 bg-lime-500 rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-navy">+{recentBuyers} téléchargements récents</span>
-            </div>
+            {/* Typewriter Badge - style TopBar */}
+            <TypewriterBadge />
 
             {/* Titre principal - Style AgentFrancais */}
             <div className="space-y-4">

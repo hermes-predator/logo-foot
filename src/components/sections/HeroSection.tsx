@@ -132,25 +132,10 @@ const HeroSection: React.FC = () => {
 
           {/* Colonne droite - Vidéo preview */}
           <div className="relative">
-            {/* Floating cards autour de la vidéo */}
-            <div className="hidden lg:block absolute -top-4 -right-4 z-20">
-              <div className="floating-card px-4 py-3 flex items-center gap-2">
-                <Users className="w-4 h-4 text-lime-600" />
-                <span className="text-sm font-medium">+8 700 logos</span>
-              </div>
-            </div>
-            
-            <div className="hidden lg:block absolute -bottom-4 -left-4 z-20">
-              <div className="floating-card px-4 py-3 flex items-center gap-2">
-                <Download className="w-4 h-4 text-lime-600" />
-                <span className="text-sm font-medium">Téléchargement instant</span>
-              </div>
-            </div>
-
             {/* Container vidéo */}
             <div className="relative bg-card rounded-2xl overflow-hidden border border-border shadow-xl group">
               <video 
-                className="w-full aspect-video object-cover"
+                className="w-full aspect-[4/3] object-cover"
                 autoPlay 
                 muted 
                 loop 

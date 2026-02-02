@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Percent, Download, Zap } from 'lucide-react';
 
 const messages = [
-  { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL" },
-  { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement" }
+  { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL", icon: Percent },
+  { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement", icon: Download },
 ];
 
 const TypewriterBadge: React.FC = () => {
@@ -43,6 +44,7 @@ const TypewriterBadge: React.FC = () => {
   const boldLength = currentMessage.bold.length;
   const displayedBold = displayedText.slice(0, boldLength);
   const displayedRest = displayedText.slice(boldLength);
+  const Icon = currentMessage.icon;
 
   return (
     <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border">
@@ -51,6 +53,9 @@ const TypewriterBadge: React.FC = () => {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
       </span>
+      
+      {/* Icône du message */}
+      <Icon className="w-4 h-4 text-lime-600" />
       
       {/* Message animé */}
       <p className="text-sm text-foreground font-medium">

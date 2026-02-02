@@ -98,11 +98,6 @@ const HeroSection: React.FC = () => {
             {/* Badges de confiance - une seule ligne */}
             <div className="flex flex-wrap items-center gap-4 pt-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <img src={trustpilotLogo} alt="TrustPilot" className="h-4" />
-                <span className="font-medium">4.8/5</span>
-              </div>
-              <div className="w-px h-4 bg-border" />
-              <div className="flex items-center gap-2">
                 <img src="/lovable-uploads/158cf2a6-67ff-42e3-8af1-c42f1ac874b8.png" alt="SumUp" className="h-5" />
                 <span>Paiement Sécurisé</span>
               </div>
@@ -110,6 +105,11 @@ const HeroSection: React.FC = () => {
               <div className="flex items-center gap-2">
                 <img src="/lovable-uploads/91043604-de74-45c7-bcbf-6621a40a1109.png" alt="Google Drive" className="h-5" />
                 <span>Stockable sur Drive</span>
+              </div>
+              <div className="w-px h-4 bg-border" />
+              <div className="flex items-center gap-2">
+                <img src={trustpilotLogo} alt="TrustPilot" className="h-4" />
+                <span className="font-medium">4.8/5</span>
               </div>
             </div>
           </div>

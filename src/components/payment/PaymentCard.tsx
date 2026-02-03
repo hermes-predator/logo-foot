@@ -43,7 +43,7 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
         onTouchEnd={() => isMobile && setTimeout(() => setIsHovered(false), 500)}
       >
         <div 
-          className={`relative backface-hidden p-4 sm:p-6 md:p-8 pb-0 rounded-2xl bg-card border border-border
+          className={`relative backface-hidden p-4 sm:p-6 md:p-8 pb-0 rounded-2xl bg-gradient-to-br from-blue-50/50 via-white to-emerald-50/30 border border-border
             ${isHovered ? 'shadow-xl' : 'shadow-lg'} 
             transition-all duration-300 ease-out
           `}

@@ -109,7 +109,7 @@ const ProductGallery = () => {
               </div>
               
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-                Autres logos de football
+                Logos de foot - Autres logos de football
               </h2>
               <p className="text-slate-400 mb-8 max-w-2xl">
                 Logos des compétitions majeures, drapeaux mondiaux et autres logos de football inclus dans le fichier.

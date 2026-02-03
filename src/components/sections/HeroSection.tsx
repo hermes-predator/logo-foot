@@ -159,7 +159,7 @@ const HeroSection: React.FC = () => {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                 </span>
                 <span className="text-sm">
-                  <span className="font-bold text-foreground">451 personnes</span> ont téléchargé récemment
+                  <span className="font-bold text-foreground">{recentBuyers} personnes</span> ont téléchargé récemment
                 </span>
               </div>
             </div>

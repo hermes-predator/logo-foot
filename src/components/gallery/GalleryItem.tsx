@@ -119,7 +119,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
     <div className="group">
       {/* Carte avec style glassmorphism sur fond sombre */}
       <div
-        className="relative rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 transition-all duration-300 hover:border-lime-500/50 hover:shadow-[0_0_30px_rgba(205,255,0,0.15)]"
+        className="relative rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 transition-all duration-300 hover:border-blue-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
         style={{
           opacity: 0,
           animation: `fadeIn 0.4s ease-out ${item.id * 0.03}s forwards`
@@ -172,7 +172,7 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                       data-description={getSeoDescription(item)}
                     />
                     {/* Icône œil */}
-                    <div className="absolute bottom-3 right-3 bg-slate-900/70 backdrop-blur-sm rounded-full p-2 opacity-60 group-hover:opacity-100 group-hover:bg-lime-500/90 transition-all duration-300">
+                    <div className="absolute bottom-3 right-3 bg-slate-900/70 backdrop-blur-sm rounded-full p-2 opacity-60 group-hover:opacity-100 group-hover:bg-blue-500/90 transition-all duration-300">
                       <Eye className="w-4 h-4 text-white" />
                     </div>
                   </>
@@ -185,8 +185,8 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   {item.title}
                 </p>
                 <p className="text-xs text-slate-400 font-medium flex items-center gap-1">
-                  <Plus className="w-3 h-3 text-lime-400 stroke-[3]" />
-                  <span className="text-lime-400 font-bold">{getCollectionData(item).count}</span>
+                  <Plus className="w-3 h-3 text-blue-400 stroke-[3]" />
+                  <span className="text-blue-400 font-bold">{getCollectionData(item).count}</span>
                   <span className="ml-0.5 truncate">{getCollectionData(item).text}</span>
                 </p>
                 <div className="flex items-center gap-2">

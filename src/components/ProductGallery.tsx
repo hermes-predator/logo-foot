@@ -26,14 +26,14 @@ const ProductGallery = () => {
       {/* Pattern de fond subtil */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(205, 255, 0, 0.15) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.15) 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }} />
       </div>
 
       {/* Décorations géométriques */}
-      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-lime-500/5 blur-3xl" />
-      <div className="absolute bottom-40 right-10 w-48 h-48 rounded-full bg-lime-500/5 blur-3xl" />
+      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-blue-500/5 blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-48 h-48 rounded-full bg-blue-500/5 blur-3xl" />
       
       <Helmet>
         {bestSellerItems.map((item, index) => (
@@ -64,14 +64,14 @@ const ProductGallery = () => {
           {/* Header de la section avec flip */}
           <div className="text-center space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
-              <Folder className="w-4 h-4 text-lime-400" />
+              <Folder className="w-4 h-4 text-blue-400" />
               <span className="text-sm font-extrabold not-italic text-slate-300">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </div>
             
             {/* Titre cliquable pour flip */}
             <h2 
               onClick={() => setIsFlipped(!isFlipped)}
-              className="text-3xl sm:text-4xl font-bold text-white cursor-pointer hover:text-lime-400 transition-colors duration-300"
+              className="text-3xl sm:text-4xl font-bold text-white cursor-pointer hover:text-blue-400 transition-colors duration-300"
             >
               {isFlipped ? "Logos des équipes de foot" : "Vous cherchez les logos des Clubs de Foot ?"}
             </h2>
@@ -86,9 +86,9 @@ const ProductGallery = () => {
             
             {/* Bouton indicateur */}
             <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 text-slate-300 mt-4">
-              <MousePointer className="w-4 h-4 text-lime-400" />
+              <MousePointer className="w-4 h-4 text-blue-400" />
               <span className="hidden sm:inline">Survolez les dossiers pour voir le contenu</span>
-              <Eye className="w-4 h-4 text-lime-400" />
+              <Eye className="w-4 h-4 text-blue-400" />
             </div>
           </div>
 
@@ -103,9 +103,9 @@ const ProductGallery = () => {
           <LazySection height="350px" rootMargin="200px">
             <div className="relative text-center">
               {/* Badge bonus */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-lime-500/10 border border-lime-500/30 mb-6">
-                <Gift className="w-5 h-5 text-lime-400" />
-                <span className="text-sm font-semibold text-lime-400">Bonus offert</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-500/10 border border-blue-500/30 mb-6">
+                <Gift className="w-5 h-5 text-blue-400" />
+                <span className="text-sm font-semibold text-blue-400">Bonus offert</span>
               </div>
               
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">

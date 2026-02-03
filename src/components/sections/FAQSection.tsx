@@ -37,29 +37,29 @@ const faqItems = [
 
 const FAQSection = () => {
   return (
-    <section id="faq-section" className="py-16 sm:py-24 bg-background">
+    <section id="faq-section" className="py-12 sm:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-12 items-start">
           
           {/* Colonne gauche - Titre et CTA */}
           <div className="lg:sticky lg:top-32">
             {/* Badge F.A.Q */}
-            <div className="inline-flex items-center px-3 py-1.5 rounded border-l-2 border-navy bg-transparent mb-6">
+            <div className="inline-flex items-center px-3 py-1 rounded border-l-2 border-navy bg-transparent mb-4">
               <span className="text-sm font-semibold text-navy tracking-wide">F.A.Q</span>
             </div>
             
             {/* Titre */}
-            <h2 className="text-4xl sm:text-5xl font-bold text-navy leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy leading-tight mb-3">
               Les questions<br />fréquentes
             </h2>
             
             {/* Texte disponibilité */}
-            <p className="text-muted-foreground text-lg mb-2 max-w-md">
+            <p className="text-muted-foreground mb-1 max-w-md">
               Notre équipe est disponible pour répondre à toutes vos questions.
             </p>
             
             {/* Email de contact */}
-            <p className="text-muted-foreground text-lg mb-8 max-w-md">
+            <p className="text-muted-foreground mb-6 max-w-md">
               Écrivez-nous à{" "}
               <a href="mailto:contact@logo-foot.com" className="text-navy font-semibold hover:underline">
                 contact@logo-foot.com
@@ -69,8 +69,8 @@ const FAQSection = () => {
             {/* CTA Button */}
             <Button
               variant="outline"
-              size="lg"
-              className="rounded-full border-2 border-navy text-navy font-semibold px-8 hover:bg-navy hover:text-white transition-all"
+              size="default"
+              className="rounded-full border-2 border-navy text-navy font-semibold px-6 hover:bg-navy hover:text-white transition-all"
               onClick={() => window.location.href = 'mailto:contact@logo-foot.com'}
             >
               Contactez-nous
@@ -78,20 +78,20 @@ const FAQSection = () => {
           </div>
 
           {/* Colonne droite - Accordion */}
-          <div className="space-y-3">
-            <Accordion type="single" collapsible className="w-full space-y-3">
+          <div className="space-y-2">
+            <Accordion type="single" collapsible className="w-full space-y-2">
               {faqItems.map((item) => (
                 <AccordionItem 
                   key={item.id} 
                   value={item.id}
-                  className="bg-white rounded-xl border border-border shadow-sm px-6 data-[state=open]:shadow-md transition-shadow"
+                  className="bg-white rounded-xl border border-border shadow-sm px-5 data-[state=open]:shadow-md transition-shadow"
                 >
-                  <AccordionTrigger className="py-5 text-left hover:no-underline group">
-                    <span className="font-medium text-foreground group-hover:text-navy transition-colors pr-4 text-base">
+                  <AccordionTrigger className="py-4 text-left hover:no-underline group">
+                    <span className="font-medium text-foreground group-hover:text-navy transition-colors pr-4 text-sm">
                       {item.question}
                     </span>
                   </AccordionTrigger>
-                  <AccordionContent className="pb-5 text-muted-foreground leading-relaxed">
+                  <AccordionContent className="pb-4 text-muted-foreground text-sm leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>

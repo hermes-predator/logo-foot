@@ -67,7 +67,7 @@ const ProductGallery = () => {
               <span className="text-sm font-extrabold not-italic text-slate-300">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              60 pays inclus dans le fichier
+              Vous cherchez les logos des Clubs de Foot ?
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
               Parcourez les collections de logos classées par pays. Chaque collection contient des logos uniformes, nommés et en haute qualité.

@@ -49,13 +49,13 @@ const FAQSection = () => {
             </div>
             
             {/* Titre */}
-            <h2 className="text-4xl sm:text-5xl font-bold text-navy leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-navy leading-tight mb-4">
               Les questions<br />fréquentes
             </h2>
             
-            {/* Sous-titre */}
+            {/* Texte disponibilité */}
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
-              Notre équipe est disponible pour répondre à toutes vos questions. Contactez-nous par email en cliquant sur le bouton ci-dessous.
+              Notre équipe est disponible pour répondre à toutes vos questions.
             </p>
             
             {/* CTA Button */}

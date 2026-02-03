@@ -23,7 +23,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
         <TooltipTrigger asChild>
           <Button 
             onClick={handlePayment}
-            className="w-full bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-7 text-lg rounded-xl transition-all duration-300 group h-16 sm:h-20 relative overflow-hidden shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-7 text-lg rounded-xl transition-all duration-300 group h-16 sm:h-20 relative overflow-hidden shadow-lg hover:shadow-xl hover:shadow-blue-500/25"
             aria-label="Procéder au paiement sécurisé de 8€"
           >
             {/* Shine effect */}

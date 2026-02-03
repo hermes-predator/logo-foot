@@ -234,6 +234,19 @@ const Index = () => {
           <LazyTestimonials />
         </Suspense>
 
+        {/* Branded Separator */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center gap-4">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-navy/20 to-navy/40" />
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-navy/30" />
+              <div className="w-3 h-3 rounded-full bg-navy" />
+              <div className="w-2 h-2 rounded-full bg-navy/30" />
+            </div>
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent via-navy/20 to-navy/40" />
+          </div>
+        </div>
+
         {/* FAQ Section */}
         <FAQSection />
       </main>

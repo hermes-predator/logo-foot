@@ -57,17 +57,6 @@ const HeroSection: React.FC = () => {
 
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button
-                size="lg"
-                onClick={goToPayment}
-                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
-              >
-                <span className="flex items-center gap-3">
-                  <span>Télécharger maintenant</span>
-                  <ChevronsRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Button>
-              
               <Dialog>
                 <DialogTrigger asChild>
                   <Button 
@@ -93,6 +82,17 @@ const HeroSection: React.FC = () => {
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
+              
+              <Button
+                size="lg"
+                onClick={goToPayment}
+                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
+              >
+                <span className="flex items-center gap-3">
+                  <span>Télécharger maintenant</span>
+                  <ChevronsRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Button>
             </div>
 
             {/* Badges de confiance - une seule ligne */}

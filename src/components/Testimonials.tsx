@@ -62,7 +62,7 @@ const Testimonials = () => {
 
   return (
     <section 
-      className="w-full py-16 bg-navy"
+      className="w-full py-16 bg-background"
       onMouseEnter={pauseAutoplay}
       onMouseLeave={resumeAutoplay}
       onFocus={pauseAutoplay}
@@ -106,9 +106,9 @@ const Testimonials = () => {
         }}
       />
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+          <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-2">
             Avis collectés concernant notre service
           </h2>
           
@@ -126,14 +126,14 @@ const Testimonials = () => {
                 key={index} 
                 className="pl-4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-navy-light/50 backdrop-blur-sm p-6 rounded-2xl border border-white/10 h-full flex flex-col min-h-[200px]">
+                <div className="bg-white p-6 rounded-2xl border border-border shadow-sm h-full flex flex-col min-h-[200px]">
                   {/* Étoiles */}
                   <div className="flex gap-0.5 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <div
                         key={i}
                         className="w-5 h-5 flex items-center justify-center rounded"
-                        style={{ backgroundColor: i < testimonial.rating ? '#00b67a' : 'rgba(255,255,255,0.2)' }}
+                        style={{ backgroundColor: i < testimonial.rating ? '#00b67a' : 'rgba(0,0,0,0.1)' }}
                       >
                         <svg viewBox="0 0 24 24" className="w-3 h-3 text-white fill-current">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -142,27 +142,27 @@ const Testimonials = () => {
                     ))}
                   </div>
                   
-                  <h3 className="text-lg font-bold text-white mb-2">{testimonial.title}</h3>
-                  <p className="text-white/70 mb-4 flex-grow text-sm leading-relaxed">{testimonial.content}</p>
+                  <h3 className="text-lg font-bold text-navy mb-2">{testimonial.title}</h3>
+                  <p className="text-muted-foreground mb-4 flex-grow text-sm leading-relaxed">{testimonial.content}</p>
                   
-                  <div className="mt-auto pt-4 border-t border-white/10">
-                    <p className="font-medium text-white text-sm">{testimonial.name}</p>
-                    <p className="text-xs text-white/40">{testimonial.date}</p>
+                  <div className="mt-auto pt-4 border-t border-border">
+                    <p className="font-medium text-foreground text-sm">{testimonial.name}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.date}</p>
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="hidden md:flex -left-5 bg-white/10 border-white/20 text-white hover:bg-white/20" />
-          <CarouselNext className="hidden md:flex -right-5 bg-white/10 border-white/20 text-white hover:bg-white/20" />
+          <CarouselPrevious className="hidden md:flex -left-5 bg-navy/10 border-navy/20 text-navy hover:bg-navy/20" />
+          <CarouselNext className="hidden md:flex -right-5 bg-navy/10 border-navy/20 text-navy hover:bg-navy/20" />
 
           <div className="flex justify-center gap-1.5 mt-6 md:hidden">
             {testimonials.slice(0, 6).map((_, idx) => (
               <button
                 key={idx}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  idx === activeIndex % 6 ? 'bg-lime-500 w-6' : 'bg-white/30'
+                  idx === activeIndex % 6 ? 'bg-navy w-6' : 'bg-navy/30'
                 }`}
                 aria-label={`Aller au témoignage ${idx + 1}`}
                 onClick={() => api?.scrollTo(idx)}
@@ -172,7 +172,7 @@ const Testimonials = () => {
         </Carousel>
 
         <div className="flex items-center justify-center mt-10">
-          <div className="bg-white rounded-lg">
+          <div className="bg-white rounded-lg shadow-sm border border-border">
             <TrustPilotBadge reviewCount={1034} rating={4.8} />
           </div>
         </div>

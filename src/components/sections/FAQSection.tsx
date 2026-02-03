@@ -55,7 +55,7 @@ const FAQSection = () => {
             
             {/* Sous-titre */}
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
-              Vous avez d'autres questions ? Contactez-nous par email en cliquant sur le bouton ci-dessous.
+              Notre équipe est disponible pour répondre à toutes vos questions. Contactez-nous par email en cliquant sur le bouton ci-dessous.
             </p>
             
             {/* CTA Button */}

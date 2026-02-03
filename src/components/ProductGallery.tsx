@@ -70,7 +70,7 @@ const ProductGallery = () => {
               Vous cherchez les logos des Clubs de Foot ?
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Parcourez les collections de logos classées par pays. Chaque collection contient des logos uniformes, nommés et en haute qualité.
+              Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays
             </p>
           </div>
 

@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Colonne droite - Vidéo preview */}
-          <div className="relative flex flex-col lg:-mt-4">
+          <div className="relative flex flex-col lg:-mt-4 h-full">
             {/* Container vidéo */}
             <div className="relative bg-card rounded-2xl overflow-hidden border border-border shadow-xl group">
               <video 
@@ -151,15 +151,17 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Indicateur téléchargements récents */}
-            <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-              </span>
-              <span className="text-sm">
-                <span className="font-bold text-foreground">451 personnes</span> ont téléchargé récemment
-              </span>
+            {/* Indicateur téléchargements récents - aligné avec les badges de confiance */}
+            <div className="flex-grow flex items-end">
+              <div className="flex items-center justify-center gap-2 w-full pt-4 text-muted-foreground">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                </span>
+                <span className="text-sm">
+                  <span className="font-bold text-foreground">451 personnes</span> ont téléchargé récemment
+                </span>
+              </div>
             </div>
           </div>
         </div>

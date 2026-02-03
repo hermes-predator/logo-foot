@@ -158,7 +158,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Carrousel des avis clients */}
-        <div className="w-full mt-10">
+        <div className="w-full mt-6">
           <HeroTestimonialBadge />
         </div>
       </div>

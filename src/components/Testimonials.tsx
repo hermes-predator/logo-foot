@@ -172,7 +172,9 @@ const Testimonials = () => {
         </Carousel>
 
         <div className="flex items-center justify-center mt-10">
-          <TrustPilotBadge reviewCount={1034} rating={4.8} />
+          <div className="bg-white rounded-lg">
+            <TrustPilotBadge reviewCount={1034} rating={4.8} />
+          </div>
         </div>
       </div>
     </section>

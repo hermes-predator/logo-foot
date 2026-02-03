@@ -69,7 +69,7 @@ const ProductGallery = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
               Vous cherchez les logos des Clubs de Foot ?
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-slate-400 whitespace-nowrap">
               Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays
             </p>
           </div>

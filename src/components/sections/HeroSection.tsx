@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
 
             {/* Prix barré et offre actuelle */}
             <div className="flex items-center gap-4">
-              <span className="text-lg text-muted-foreground line-through">86€</span>
+              <span className="text-2xl text-muted-foreground line-through">86€</span>
               <span className="text-xs px-2 py-1 bg-red-100 text-red-700 font-semibold rounded-full">Valeur réelle</span>
               <div className="w-px h-6 bg-border" />
               <span className="text-2xl font-bold text-navy">8€</span>
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
               <Button
                 size="lg"
                 onClick={goToPayment}
-                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300"
+                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
               >
                 <span className="flex items-center gap-3">
                   <span>Télécharger maintenant</span>

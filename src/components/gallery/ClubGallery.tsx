@@ -70,10 +70,10 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
               <span className="text-white font-bold">{(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, items.length)}</span> sur <span className="text-white font-bold">{items.length} fichiers</span>
             </p>
             
-            {/* Barre de progression lime */}
+            {/* Barre de progression */}
             <div className="w-full max-w-[200px] sm:max-w-md bg-slate-700/50 rounded-full h-1.5 sm:h-2 overflow-hidden">
               <div 
-                className="bg-gradient-to-r from-lime-500 to-lime-400 h-full rounded-full transition-all duration-700 ease-out"
+                className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full transition-all duration-700 ease-out"
                 style={{ width: `${(currentPage / totalPages) * 100}%` }}
               />
             </div>
@@ -88,7 +88,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationPrevious 
                         onClick={() => setCurrentPage(currentPage - 1)}
-                        className="cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 hover:border-lime-500/50 border border-slate-600/50 text-white transition-all duration-300 font-medium px-2 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-sm"
+                        className="cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 hover:border-blue-500/50 border border-slate-600/50 text-white transition-all duration-300 font-medium px-2 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-sm"
                       />
                     </PaginationItem>
                   )}
@@ -100,8 +100,8 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                         onClick={() => setCurrentPage(page)}
                         className={`cursor-pointer transition-all duration-300 font-semibold px-2.5 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl min-w-[28px] sm:min-w-[40px] text-[10px] sm:text-sm ${
                           page === currentPage 
-                            ? 'bg-lime-500 text-navy border-lime-500 hover:bg-lime-500 hover:text-navy' 
-                            : 'bg-slate-700/50 text-slate-300 border border-slate-600/50 hover:bg-slate-600/50 hover:border-lime-500/50 hover:text-white'
+                            ? 'bg-blue-500 text-white border-blue-500 hover:bg-blue-500 hover:text-white' 
+                            : 'bg-slate-700/50 text-slate-300 border border-slate-600/50 hover:bg-slate-600/50 hover:border-blue-500/50 hover:text-white'
                         }`}
                       >
                         {page}
@@ -113,7 +113,7 @@ const ClubGallery = ({ items, isLoading }: ClubGalleryProps) => {
                     <PaginationItem>
                       <PaginationNext 
                         onClick={() => setCurrentPage(currentPage + 1)}
-                        className="cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 hover:border-lime-500/50 border border-slate-600/50 text-white transition-all duration-300 font-medium px-2 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-sm"
+                        className="cursor-pointer bg-slate-700/50 hover:bg-slate-600/50 hover:border-blue-500/50 border border-slate-600/50 text-white transition-all duration-300 font-medium px-2 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-sm"
                       />
                     </PaginationItem>
                   )}

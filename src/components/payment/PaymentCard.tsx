@@ -44,15 +44,13 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
       >
         <div 
           className={`relative backface-hidden p-4 sm:p-6 md:p-8 pb-0 rounded-2xl bg-card border border-border
-            ${isHovered ? 'shadow-xl border-lime-200' : 'shadow-lg'} 
+            ${isHovered ? 'shadow-xl' : 'shadow-lg'} 
             transition-all duration-300 ease-out
           `}
           style={{
             transform: isHovered && !isMobile ? 'translateY(-8px)' : 'translateY(0)',
           }}
         >
-          {/* Bande lime en haut */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lime-400 via-lime-500 to-lime-400 rounded-t-2xl"></div>
           
           {/* Dossier décoratif */}
           <div className={`absolute top-14 right-8 opacity-5 text-navy hidden sm:block transition-transform duration-700 ${isHovered ? 'rotate-[-8deg] scale-110' : '-rotate-12'}`}>

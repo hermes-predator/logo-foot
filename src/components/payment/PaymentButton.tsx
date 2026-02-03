@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronRight, Download } from 'lucide-react';
+import { ArrowRight, ShoppingCart } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
   Tooltip,
@@ -35,11 +35,11 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({ label }) => {
             </div>
             
             <div className="flex items-center justify-center w-full gap-4 relative z-10">
-              <Download className="w-5 h-5 sm:w-6 sm:h-6" />
+              <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />
               <span className="text-center font-bold text-base sm:text-xl">
                 {label ?? "Télécharger maintenant (8€)"}
               </span>
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </Button>
         </TooltipTrigger>

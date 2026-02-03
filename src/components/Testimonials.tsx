@@ -111,7 +111,7 @@ const Testimonials = () => {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
             Avis collectés concernant notre service
           </h2>
-          <p className="text-white/60">Plus de 1000 clients satisfaits</p>
+          
         </div>
         
         <Carousel
@@ -126,7 +126,7 @@ const Testimonials = () => {
                 key={index} 
                 className="pl-4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-navy-light/50 backdrop-blur-sm p-6 rounded-2xl border border-white/10 h-full flex flex-col min-h-[200px] hover:border-lime-500/30 transition-all duration-300">
+                <div className="bg-navy-light/50 backdrop-blur-sm p-6 rounded-2xl border border-white/10 h-full flex flex-col min-h-[200px]">
                   {/* Étoiles */}
                   <div className="flex gap-0.5 mb-4">
                     {[...Array(5)].map((_, i) => (

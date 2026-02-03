@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Colonne droite - Vidéo preview */}
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col lg:-mt-4">
             {/* Container vidéo */}
             <div className="relative bg-card rounded-2xl overflow-hidden border border-border shadow-xl group">
               <video 

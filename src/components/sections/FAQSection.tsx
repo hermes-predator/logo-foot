@@ -54,8 +54,16 @@ const FAQSection = () => {
             </h2>
             
             {/* Texte disponibilité */}
-            <p className="text-muted-foreground text-lg mb-8 max-w-md">
+            <p className="text-muted-foreground text-lg mb-2 max-w-md">
               Notre équipe est disponible pour répondre à toutes vos questions.
+            </p>
+            
+            {/* Email de contact */}
+            <p className="text-muted-foreground text-lg mb-8 max-w-md">
+              Écrivez-nous à{" "}
+              <a href="mailto:contact@logo-foot.com" className="text-navy font-semibold hover:underline">
+                contact@logo-foot.com
+              </a>
             </p>
             
             {/* CTA Button */}

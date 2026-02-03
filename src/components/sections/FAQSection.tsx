@@ -38,7 +38,7 @@ const faqItems = [
 const FAQSection = () => {
   return (
     <section id="faq-section" className="py-12 sm:py-16 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-12 items-start">
           
           {/* Colonne gauche - Titre et CTA */}

@@ -20,7 +20,7 @@ const HeroTestimonialBadge: React.FC = () => {
         {duplicatedTestimonials.map((testimonial, index) => (
           <div
             key={`${testimonial.initials}-${index}`}
-            className="flex-shrink-0 bg-card rounded-xl px-4 py-3 border border-border shadow-sm min-w-[220px] max-w-[240px] hover:border-lime-200 transition-all duration-300"
+            className="flex-shrink-0 bg-card rounded-xl px-4 py-3 border border-border shadow-sm min-w-[220px] max-w-[240px]"
           >
             {/* Étoiles */}
             <div className="flex gap-0.5 mb-2">

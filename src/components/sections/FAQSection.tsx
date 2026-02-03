@@ -44,8 +44,8 @@ const FAQSection = () => {
           {/* Colonne gauche - Titre et CTA */}
           <div className="lg:sticky lg:top-32">
             {/* Badge F.A.Q */}
-            <div className="inline-flex items-center px-3 py-1.5 rounded border-l-2 border-navy bg-transparent mb-5">
-              <span className="text-sm font-semibold text-navy tracking-wide">F.A.Q</span>
+            <div className="inline-flex items-center px-5 py-2 rounded-lg bg-navy mb-5">
+              <span className="text-sm font-semibold text-white tracking-wide">F.A.Q</span>
             </div>
             
             {/* Titre */}

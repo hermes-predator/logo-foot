@@ -10,11 +10,6 @@ const ContactSection = () => {
     <section id="contact-section" className="relative py-10 sm:py-12 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center">
-          {/* Heading */}
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-4">
-            Prêt à télécharger ?
-          </h2>
-
           {/* CTA Button */}
           <Button
             size="lg"

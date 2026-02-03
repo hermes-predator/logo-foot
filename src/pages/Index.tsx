@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import ProductGallery from '../components/ProductGallery';
-import FlipBox from '../components/ui/FlipBox';
+
 
 import Header from '../components/Header';
 import { LocalBusinessSchema } from '../components/schema/LocalBusinessSchema';
@@ -218,19 +218,6 @@ const Index = () => {
             <HeroSection />
           </div>
 
-          {/* FlipBox indépendante juste au-dessus de la galerie */}
-          <div className="pb-0 mt-4">
-            <div className="container mx-auto px-4">
-              <div className="max-w-7xl mx-auto">
-                <FlipBox
-                  frontTitle="Vous cherchez les logos des Clubs de Foot ?"
-                  frontDescription={<>Recevez instantanément tous les logos de clubs de football uniformes, nommés et triés par pays</>}
-                  backTitle="Logos des équipes de foot"
-                  backContent="Le fichier regroupe les logos des clubs de foot de l'Angleterre, de l'Allemagne, de l'Espagne et du reste du monde."
-                />
-              </div>
-            </div>
-          </div>
           
           <div className="pt-0 pb-4 -mt-8">
             <ProductGallery />

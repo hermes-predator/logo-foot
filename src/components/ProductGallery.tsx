@@ -75,9 +75,9 @@ const ProductGallery = () => {
             
             {/* Bouton indicateur */}
             <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 text-slate-300 mt-4">
-              <Eye className="w-4 h-4 text-lime-400" />
-              <span className="hidden sm:inline">Survolez les dossiers pour voir le contenu</span>
               <MousePointer className="w-4 h-4 text-lime-400" />
+              <span className="hidden sm:inline">Survolez les dossiers pour voir le contenu</span>
+              <Eye className="w-4 h-4 text-lime-400" />
             </div>
           </div>
 

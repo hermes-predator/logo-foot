@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Tag, Package, Download } from 'lucide-react';
 
 const messages = [
-  { bold: "⦗FRONT-CLOUD⦘~ Football.zip", rest: " : Un fichier complet sur le foot", icon: Download },
+  { bold: "⦗FRONT-CLOUD⦘~ Football.zip", rest: " : Un fichier complet sur le football", icon: Download },
   { bold: "OFFRE LIMITÉE", rest: " : -95% sur notre fichier spécialisé sur le FOOTBALL", icon: Tag },
   { bold: "LIVRAISON", rest: " : Obtenez notre fichier IMMÉDIATEMENT par téléchargement", icon: Package },
 ];

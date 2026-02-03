@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
               </h1>
               
               <p className="text-lg text-muted-foreground max-w-xl">
-                Téléchargez plus de 8 800 logos de clubs de football uniformes.
+                Téléchargez plus de 8 800 logos de clubs de football.
               </p>
             </div>
 

@@ -8,6 +8,7 @@ import { Gift, Folder, Eye, MousePointer } from 'lucide-react';
 
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isFlipped, setIsFlipped] = useState(false);
   const { clubItems, competitionItems } = generateGalleryItems();
   
   React.useEffect(() => {
@@ -60,17 +61,27 @@ const ProductGallery = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto space-y-16">
           
-          {/* Header de la section */}
+          {/* Header de la section avec flip */}
           <div className="text-center space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
               <Folder className="w-4 h-4 text-lime-400" />
               <span className="text-sm font-extrabold not-italic text-slate-300">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Vous cherchez les logos des Clubs de Foot ?
+            
+            {/* Titre cliquable pour flip */}
+            <h2 
+              onClick={() => setIsFlipped(!isFlipped)}
+              className="text-3xl sm:text-4xl font-bold text-white cursor-pointer hover:text-lime-400 transition-colors duration-300"
+            >
+              {isFlipped ? "Logos des équipes de foot" : "Vous cherchez les logos des Clubs de Foot ?"}
             </h2>
-            <p className="text-slate-400 whitespace-nowrap">
-              Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays
+            
+            {/* Description avec contenu SEO */}
+            <p className={`text-slate-400 transition-all duration-300 ${isFlipped ? 'max-w-2xl mx-auto' : 'whitespace-nowrap'}`}>
+              {isFlipped 
+                ? "Le fichier regroupe les logos des clubs de foot de l'Angleterre, de l'Allemagne, de l'Espagne et du reste du monde."
+                : "Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays"
+              }
             </p>
             
             {/* Bouton indicateur */}

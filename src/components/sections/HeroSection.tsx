@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
               <Button
                 size="lg"
                 onClick={goToPayment}
-                className="group bg-lime-500 hover:bg-lime-600 text-navy font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
+                className="group bg-navy hover:bg-navy/90 text-white font-bold px-8 py-6 h-auto text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-navy/25"
               >
                 <span className="flex items-center gap-3">
                   <span>Télécharger maintenant</span>

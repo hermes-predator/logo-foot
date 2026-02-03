@@ -119,7 +119,7 @@ const HeroSection: React.FC = () => {
             {/* Container vidéo */}
             <div className="relative bg-card rounded-2xl overflow-hidden border border-border shadow-xl group">
               <video 
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[4/5] object-cover"
                 autoPlay 
                 muted 
                 loop 

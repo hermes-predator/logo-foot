@@ -1,9 +1,10 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { ChevronsRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ContactSection = () => {
-  const email = "contact@logo-foot.com";
+  const navigate = useNavigate();
 
   return (
     <section id="contact-section" className="relative py-10 sm:py-12 bg-secondary overflow-hidden">
@@ -11,17 +12,17 @@ const ContactSection = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Heading */}
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-4">
-            Une question ?
+            Prêt à télécharger ?
           </h2>
 
           {/* CTA Button */}
           <Button
             size="lg"
-            className="rounded-full bg-lime text-navy font-semibold px-8 hover:bg-lime/90 transition-all shadow-lg hover:shadow-xl"
-            onClick={() => window.location.href = `mailto:${email}`}
+            className="rounded-full bg-lime text-navy font-semibold px-8 hover:bg-lime/90 transition-all shadow-lg hover:shadow-xl hover:shadow-lime-500/25"
+            onClick={() => navigate('/payment')}
           >
-            <Mail className="w-4 h-4 mr-2" />
-            Contactez-nous
+            Télécharger le fichier
+            <ChevronsRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </div>

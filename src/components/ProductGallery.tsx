@@ -64,7 +64,7 @@ const ProductGallery = () => {
           <div className="text-center space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
               <Folder className="w-4 h-4 text-lime-400" />
-              <span className="text-sm font-medium text-slate-300">Aperçu du contenu</span>
+              <span className="text-sm font-extrabold not-italic text-slate-300">⦗FRONT-CLOUD⦘~ Football.zip</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
               60 pays inclus dans le fichier

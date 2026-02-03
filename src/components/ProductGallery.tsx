@@ -4,7 +4,7 @@ import CompetitionGallery from './gallery/CompetitionGallery';
 import { generateGalleryItems } from '@/utils/galleryData';
 import { LazySection } from './ui/lazy-section';
 import { Helmet } from 'react-helmet-async';
-import { Gift, Folder } from 'lucide-react';
+import { Gift, Folder, Eye, MousePointer } from 'lucide-react';
 
 const ProductGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -72,6 +72,13 @@ const ProductGallery = () => {
             <p className="text-slate-400 whitespace-nowrap">
               Notre fichier contient tous les logos de clubs de football uniformes, nommés et triés par pays
             </p>
+            
+            {/* Bouton indicateur */}
+            <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 text-slate-300 mt-4">
+              <Eye className="w-4 h-4 text-lime-400" />
+              <span className="hidden sm:inline">Survolez les dossiers</span>
+              <MousePointer className="w-4 h-4 text-lime-400" />
+            </div>
           </div>
 
           {/* Section principale des clubs */}

@@ -40,10 +40,6 @@ const HeroSection: React.FC = () => {
                 Tous les logos des clubs de football,<br />
                 <span className="text-navy/80">en un seul fichier.</span>
               </h1>
-              
-              <p className="text-lg text-muted-foreground max-w-xl">
-                Téléchargez plus de 8 800 logos de clubs de football.
-              </p>
             </div>
 
             {/* Prix barré et offre actuelle */}

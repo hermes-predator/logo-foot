@@ -101,7 +101,7 @@ const ProductGallery = () => {
 
           {/* Section bonus */}
           <LazySection height="350px" rootMargin="200px">
-            <div className="relative">
+            <div className="relative text-center">
               {/* Badge bonus */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-lime-500/10 border border-lime-500/30 mb-6">
                 <Gift className="w-5 h-5 text-lime-400" />
@@ -111,8 +111,8 @@ const ProductGallery = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
                 Logos de foot - Autres logos de football
               </h2>
-              <p className="text-slate-400 mb-8 max-w-2xl">
-                Logos des compétitions majeures, drapeaux mondiaux et autres logos de football inclus dans le fichier.
+              <p className="text-slate-400 mb-8">
+                Compétitions, drapeaux et autres logos inclus dans le fichier.
               </p>
               
               <CompetitionGallery items={competitionItems} isLoading={isLoading} />

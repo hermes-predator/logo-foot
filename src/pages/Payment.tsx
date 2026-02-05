@@ -12,7 +12,7 @@ const Payment = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 px-4">
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-8 px-4">
         <div className="container mx-auto max-w-lg">
           {/* Progress bar */}
           <CheckoutProgressBar currentStep={2} />

@@ -11,7 +11,7 @@ interface BlogArticleListProps {
 const BlogArticleList = ({ articles, isLoading = false }: BlogArticleListProps) => {
   if (isLoading) {
     return (
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 px-4">
+      <div className="grid gap-3 grid-cols-1 lg:grid-cols-2 mb-5 px-4">
         {[...Array(6)].map((_, i) => (
           <div 
             key={`skeleton-${i}`} 
@@ -34,7 +34,7 @@ const BlogArticleList = ({ articles, isLoading = false }: BlogArticleListProps) 
 
   return (
     <section 
-      className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 px-4" 
+      className="grid gap-3 grid-cols-1 lg:grid-cols-2 mb-5 px-4" 
       aria-label="Liste des articles"
     >
       {articles.map((post, index) => (

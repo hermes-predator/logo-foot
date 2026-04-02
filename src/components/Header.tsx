@@ -89,12 +89,16 @@ const Header = () => {
               <Link to="/blog" className={navLinkClass(currentPath.startsWith('/blog'))}>
                 Blog
               </Link>
-              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
-                FAQ
-              </button>
-              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
-                Contact
-              </button>
+              {!isBlog && (
+                <>
+                  <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
+                    FAQ
+                  </button>
+                  <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
+                    Contact
+                  </button>
+                </>
+              )}
             </div>
           )}
         </div>

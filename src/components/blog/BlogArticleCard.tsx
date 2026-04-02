@@ -20,7 +20,6 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   const readingTime = useReadingTime(post.content);
   const categoryInfo = BLOG_CATEGORIES[post.category];
   
-  // Utiliser le hook pour gérer les deux types d'images
   const { imageSrc } = useContextualImage({
     customSrc: post.coverImage,
     imageId: post.galleryImageId || undefined,
@@ -28,53 +27,54 @@ const BlogArticleCard = ({ post }: BlogArticleCardProps) => {
   });
 
   return (
-    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500 active:scale-[0.98] hover:border-black">
-      <Link to={postUrl} className="block">
-        <div className="relative overflow-hidden">
+    <article className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:border-black">
+      <Link to={postUrl} className="flex flex-row items-stretch">
+        {/* Miniature */}
+        <div className="relative overflow-hidden flex-shrink-0 w-28 sm:w-36">
           <BlogImage 
             src={imageSrc}
             alt={post.title}
-            className="w-full object-cover transition-all duration-500 group-hover:scale-102 group-hover:brightness-110"
+            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
             aspectRatio={1}
-            width={400}
-            height={400}
+            width={150}
+            height={150}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          
-          {/* Badge catégorie superposé */}
-          <div className="absolute top-3 left-3">
-            <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-gray-700 text-xs font-medium px-2 py-1 shadow-sm">
-              <Folder className="w-3 h-3 mr-1" />
-              {categoryInfo.name}
-            </Badge>
-          </div>
         </div>
         
-        <div className="p-5">
-          <h3 className="font-semibold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-black transition-colors duration-300 leading-tight">
-            {post.title}
-          </h3>
+        {/* Contenu */}
+        <div className="flex-1 p-3 sm:p-4 flex flex-col justify-between min-w-0">
+          <div>
+            <div className="flex items-center gap-2 mb-1.5">
+              <Badge variant="secondary" className="bg-gray-100 text-gray-600 text-[10px] font-medium px-1.5 py-0.5">
+                <Folder className="w-2.5 h-2.5 mr-0.5" />
+                {categoryInfo.name}
+              </Badge>
+            </div>
+            
+            <h3 className="font-semibold text-sm text-gray-900 line-clamp-2 group-hover:text-black transition-colors leading-snug mb-1">
+              {post.title}
+            </h3>
+            
+            <p className="text-gray-500 text-xs line-clamp-2 leading-relaxed hidden sm:block">
+              {post.excerpt}
+            </p>
+          </div>
           
-          <p className="text-gray-600 text-sm line-clamp-3 mb-4 leading-relaxed">
-            {post.excerpt}
-          </p>
-          
-          <div className="flex items-center justify-between text-xs text-gray-500">
-            <div className="flex items-center gap-3">
+          <div className="flex items-center justify-between text-[10px] text-gray-400 mt-2">
+            <div className="flex items-center gap-2">
               {post.date && (
-                <time dateTime={post.date} className="group-hover:text-gray-700 transition-colors duration-200 flex items-center gap-1">
+                <time dateTime={post.date}>
                   {formatDate(post.date)}
                 </time>
               )}
-              
-              <div className="flex items-center gap-1 group-hover:text-gray-700 transition-colors duration-200">
-                <Clock className="w-3 h-3" />
+              <div className="flex items-center gap-0.5">
+                <Clock className="w-2.5 h-2.5" />
                 <span>{readingTime} min</span>
               </div>
             </div>
             
-            <span className="text-gray-700 font-medium transition-all duration-300 group-hover:text-black flex items-center gap-1">
-              Lire la suite →
+            <span className="text-gray-600 font-medium group-hover:text-black transition-colors">
+              Lire →
             </span>
           </div>
         </div>

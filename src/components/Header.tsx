@@ -50,8 +50,10 @@ const Header = () => {
         : 'text-muted-foreground hover:text-foreground'
     }`;
 
+  if (isBlog) return null;
+
   return (
-    <header 
+    <header
       className={`w-full fixed top-0 z-50 transition-all duration-500 ease-out ${
         scrolled 
           ? 'py-2 px-4 sm:px-6' 

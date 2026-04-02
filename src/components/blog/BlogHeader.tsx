@@ -12,7 +12,7 @@ const BlogHeader = () => {
         {/* Navigation intégrée */}
         <div className="container mx-auto px-4 pt-4 pb-0">
           <div className="flex items-center justify-between max-w-5xl mx-auto">
-            <Link to="/" className="hover:opacity-80 transition-opacity brightness-0 invert">
+            <Link to="/" className="hover:opacity-80 transition-opacity">
               <Logo />
             </Link>
             <div className="flex items-center gap-6">

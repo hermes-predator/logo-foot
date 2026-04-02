@@ -1,17 +1,13 @@
 
 import React from 'react';
-import FloatingParticles from './FloatingParticles';
-import BlogHeaderCarousel from './BlogHeaderCarousel';
-import { Folder, ChevronRight } from 'lucide-react';
+import { Folder, ChevronRight, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
+import footballFolderIcon from '@/assets/football-folder-icon.png';
 
 const BlogHeader = () => {
   return (
     <div className="w-full relative overflow-hidden rounded-b-3xl bg-navy">
-      {/* Particules flottantes */}
-      <FloatingParticles />
-      
       {/* Contenu principal */}
       <div className="relative z-10 text-white">
         <div className="container mx-auto px-4 pt-10 pb-8">
@@ -75,25 +71,39 @@ const BlogHeader = () => {
         </div>
       </div>
       
-      {/* Section séparateur */}
-      <div className="relative z-20 px-4 mb-8 mt-2">
-        <div className="container mx-auto relative">
-          <div className="relative h-px">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative bg-navy-light/80 backdrop-blur-md rounded-lg px-4 py-2 border border-white/10">
-              <p className="text-white text-sm font-medium whitespace-nowrap">
-                Aperçu : ⦗FRONT-CLOUD⦘~ Football.zip
-              </p>
+      {/* Vidéo preview */}
+      <div className="relative z-20 px-4 pb-8">
+        <div className="container mx-auto max-w-3xl">
+          <div className="relative bg-card rounded-2xl overflow-hidden border border-white/10 shadow-xl group">
+            <video 
+              className="w-full aspect-[6/5] object-cover"
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              preload="auto"
+            >
+              <source src="https://www.logo-foot.com/videos/preview-zip.mp4" type="video/mp4" />
+            </video>
+            
+            {/* Overlay cadenas */}
+            <div className="absolute inset-0 bg-navy/30 backdrop-blur-[2px] flex items-center justify-center transition-all duration-300 opacity-100 group-hover:opacity-0 group-hover:pointer-events-none">
+              <div className="bg-white rounded-full p-5 shadow-xl">
+                <Lock className="w-8 h-8 text-navy" />
+              </div>
+            </div>
+            
+            {/* Label en bas */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy/90 to-transparent p-4">
+              <div className="flex items-center justify-between text-white">
+                <div className="flex items-center gap-2">
+                  <img src={footballFolderIcon} alt="Dossier Football" className="w-6 h-6 object-contain" />
+                  <span className="text-sm font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Carrousel */}
-      <div className="relative z-20 pb-8">
-        <BlogHeaderCarousel />
       </div>
     </div>
   );

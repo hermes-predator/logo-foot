@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
               <span className="text-xs px-2 py-1 bg-red-100 text-red-700 font-semibold rounded-full">Valeur cumulée</span>
               <div className="w-px h-6 bg-border" />
               <span className="text-lg font-bold text-navy">8€</span>
-              <span className="text-xs px-2 py-1 bg-lime-100 text-lime-700 font-semibold rounded-full">Offre actuelle</span>
+              <span className="text-xs px-2 py-1 bg-lime-100 text-lime-700 font-semibold rounded-full">Paiement unique</span>
             </div>
 
             {/* Boutons CTA */}

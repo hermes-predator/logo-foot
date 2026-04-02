@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
       
       <div className="max-w-6xl mx-auto">
         {/* Layout principal */}
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 gap-8 items-center max-w-3xl mx-auto">
           
           {/* Colonne gauche - Contenu */}
           <div className="space-y-6">

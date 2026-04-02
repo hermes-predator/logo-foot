@@ -3,7 +3,6 @@ import React from 'react';
 import { Folder, ChevronRight, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
-import footballFolderIcon from '@/assets/football-folder-icon.png';
 
 const BlogHeader = () => {
   return (
@@ -47,7 +46,7 @@ const BlogHeader = () => {
               <Link to="/" className="block">
                 <button className="group px-6 py-4 text-sm font-semibold rounded-xl transition-all duration-300 flex items-center gap-3 bg-lime-500 hover:bg-lime-600 text-navy shadow-lg hover:shadow-xl hover:shadow-lime-500/25">
                   <Folder className="w-5 h-5" />
-                  <span>⦗FRONT-CLOUD⦘~ Football.zip</span>
+                  <span>Découvrir le produit</span>
                   <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
               </Link>
@@ -95,11 +94,9 @@ const BlogHeader = () => {
             
             {/* Label en bas */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy/90 to-transparent p-4">
-              <div className="flex items-center justify-between text-white">
-                <div className="flex items-center gap-2">
-                  <img src={footballFolderIcon} alt="Dossier Football" className="w-6 h-6 object-contain" />
-                  <span className="text-sm font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
-                </div>
+              <div className="flex items-center gap-2 text-white">
+                <Folder className="w-5 h-5" />
+                <span className="text-sm font-medium">⦗FRONT-CLOUD⦘~ Football.zip</span>
               </div>
             </div>
           </div>

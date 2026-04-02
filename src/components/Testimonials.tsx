@@ -19,18 +19,18 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  { name: "Pierre M.", title: "Très pratique", content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !", rating: 5, date: "12 novembre 2024" },
-  { name: "Yassine B.", title: "Parfait pour mon projet", content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.", rating: 5, date: "8 novembre 2024" },
-  { name: "Quentin D.", title: "Je recommande", content: "Tout s'est bien passé, je recommande, merci !", rating: 5, date: "2 novembre 2024" },
-  { name: "Florent P.", title: "Vaut son prix", content: "Très impressionné par le fichier, vaut son prix 👍.", rating: 5, date: "28 octobre 2024" },
-  { name: "Maxime L.", title: "Fichier parfait", content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++", rating: 5, date: "21 octobre 2024" },
-  { name: "Alex G.", title: "Très content", content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci", rating: 5, date: "15 octobre 2024" },
-  { name: "Mathieu A.", title: "Très bon fichier", content: "Très bon fichier, merci.", rating: 5, date: "9 octobre 2024" },
-  { name: "Vincent L.", title: "Top", content: "Top, tout les logos de clubs de football dans un fichier bien organisé.", rating: 5, date: "3 octobre 2024" },
-  { name: "Adrien M.", title: "Impeccable", content: "Impeccable.", rating: 5, date: "27 septembre 2024" },
-  { name: "Kevin T.", title: "Bien triés", content: "Parfait, tous les logo d'équipe de foot sont bien triés.", rating: 5, date: "20 septembre 2024" },
-  { name: "Lucas M.", title: "Super bien organisé", content: "Tout est ok, la collection de logo des clubs de foot est super bien organisé.", rating: 5, date: "14 septembre 2024" },
-  { name: "Emma L.", title: "Tout est parfait", content: "Tout est parfait, merci :)", rating: 5, date: "8 septembre 2024" },
+  { name: "Pierre M.", title: "Très pratique", content: "Plus besoin de chercher pendant des heures les logo des club de foot. Tout est là, bien organisé. Merci !", rating: 5, date: "12 novembre 2025" },
+  { name: "Yassine B.", title: "Parfait pour mon projet", content: "Ça m'a beaucoup aidé pour mon projet de paris sportifs, merci.", rating: 5, date: "8 novembre 2025" },
+  { name: "Quentin D.", title: "Je recommande", content: "Tout s'est bien passé, je recommande, merci !", rating: 5, date: "2 novembre 2025" },
+  { name: "Florent P.", title: "Vaut son prix", content: "Très impressionné par le fichier, vaut son prix 👍.", rating: 5, date: "28 octobre 2025" },
+  { name: "Maxime L.", title: "Fichier parfait", content: "J'avais besoin des logo des equipe de foot pour un projet. Le fichier est parfait. Que du +++", rating: 5, date: "21 octobre 2025" },
+  { name: "Alex G.", title: "Très content", content: "Vraiment très content de l'avoir acheter, je recommande Logo Foot ! Merci", rating: 5, date: "15 octobre 2025" },
+  { name: "Mathieu A.", title: "Très bon fichier", content: "Très bon fichier, merci.", rating: 5, date: "9 octobre 2025" },
+  { name: "Vincent L.", title: "Top", content: "Top, tout les logos de clubs de football dans un fichier bien organisé.", rating: 5, date: "3 octobre 2025" },
+  { name: "Adrien M.", title: "Impeccable", content: "Impeccable.", rating: 5, date: "27 septembre 2025" },
+  { name: "Kevin T.", title: "Bien triés", content: "Parfait, tous les logo d'équipe de foot sont bien triés.", rating: 5, date: "20 septembre 2025" },
+  { name: "Lucas M.", title: "Super bien organisé", content: "Tout est ok, la collection de logo des clubs de foot est super bien organisé.", rating: 5, date: "14 septembre 2025" },
+  { name: "Emma L.", title: "Tout est parfait", content: "Tout est parfait, merci :)", rating: 5, date: "8 septembre 2025" },
 ];
 
 const Testimonials = () => {

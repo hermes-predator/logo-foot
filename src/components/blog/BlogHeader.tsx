@@ -3,12 +3,37 @@ import React from 'react';
 import { Folder, ChevronRight, Lock, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import trustpilotLogo from '@/assets/trustpilot-logo.png';
+import Logo from '../Logo';
 
 const BlogHeader = () => {
   return (
     <div className="w-full relative overflow-hidden rounded-b-3xl bg-navy">
       <div className="relative z-10 text-white">
-        <div className="container mx-auto px-4 pt-10 pb-10">
+        {/* Navigation intégrée */}
+        <div className="container mx-auto px-4 pt-4 pb-0">
+          <div className="flex items-center justify-between max-w-5xl mx-auto">
+            <Link to="/" className="hover:opacity-80 transition-opacity brightness-0 invert">
+              <Logo />
+            </Link>
+            <div className="flex items-center gap-6">
+              <Link to="/" className="text-sm text-white/60 hover:text-white transition-colors">
+                Accueil
+              </Link>
+              <Link to="/blog" className="text-sm text-white font-medium transition-colors">
+                Blog
+              </Link>
+              <Link to="/">
+                <button className="group px-4 py-2 text-xs font-semibold rounded-full transition-all duration-300 flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-navy">
+                  <span>Je veux ce fichier</span>
+                  <ChevronRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Contenu principal */}
+        <div className="container mx-auto px-4 pt-8 pb-10">
           <div className="flex flex-col lg:flex-row lg:items-center gap-8 max-w-5xl mx-auto">
             
             {/* Vidéo - côté gauche */}

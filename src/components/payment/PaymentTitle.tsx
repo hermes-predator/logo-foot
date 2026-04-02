@@ -7,16 +7,7 @@ const PaymentTitle = () => {
         Prêt à tout recevoir ?
       </h2>
       <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-        Recevez notre fichier ZIP instantanément pour{' '}
-        <span className="relative inline-block font-bold text-navy">
-          <span className="relative z-10">seulement 8€</span>
-          <span 
-            className="absolute bottom-0 left-0 h-3 bg-lime-300/60 -rotate-1 -z-0"
-            style={{
-              animation: 'highlight-draw 5s ease-in-out infinite',
-            }}
-          />
-        </span>
+        Recevez notre fichier ZIP instantanément après paiement
       </p>
       <style>{`
         @keyframes highlight-draw {

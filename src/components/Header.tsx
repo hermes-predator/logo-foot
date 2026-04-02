@@ -62,7 +62,9 @@ const Header = () => {
         className={`mx-auto flex items-center justify-between transition-all duration-500 ease-out ${
           scrolled 
             ? 'max-w-4xl bg-white/95 backdrop-blur-md shadow-lg border border-border/50 rounded-full px-6 py-2.5' 
-            : 'container bg-transparent px-0 py-0'
+            : isBlog
+              ? 'container bg-white/95 backdrop-blur-md shadow-sm border border-border/50 rounded-full px-6 py-2.5'
+              : 'container bg-transparent px-0 py-0'
         }`}
       >
         {/* Logo + Separator + Nav Links */}

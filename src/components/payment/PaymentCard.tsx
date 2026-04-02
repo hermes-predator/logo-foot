@@ -90,10 +90,10 @@ const PaymentCard = ({ recentBuyers }: PaymentCardProps) => {
                   <TooltipTrigger asChild>
                     <button 
                       onClick={handleFlip}
-                      className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 bg-muted text-muted-foreground border border-border hover:bg-lime-50 hover:border-lime-200 transition-all duration-300 rounded-xl group"
+                      className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 bg-muted text-muted-foreground border border-border hover:bg-[rgba(55,53,51,0.8)] hover:text-white hover:border-[rgba(55,53,51,0.8)] transition-all duration-300 rounded-xl group"
                       aria-label={isFlipped ? "Retour à la vue principale" : "Voir l'aperçu"}
                     >
-                      <Eye className="h-4 w-4 sm:h-5 sm:w-5 group-hover:text-lime-600 transition-colors" />
+                      <Eye className="h-4 w-4 sm:h-5 sm:w-5 transition-colors" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>

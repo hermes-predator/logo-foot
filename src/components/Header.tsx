@@ -12,6 +12,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const isBlog = currentPath.startsWith('/blog');
 
   useEffect(() => {
     const handleScroll = () => {

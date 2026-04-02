@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
 
             {/* Prix barré et offre actuelle */}
             <div className="flex items-center gap-4">
-              <span className="text-lg font-bold text-muted-foreground">86€</span>
+              <span className="text-lg font-bold text-muted-foreground line-through">86€</span>
               <span className="text-xs px-2 py-1 bg-red-100 text-red-700 font-semibold rounded-full">Valeur cumulée</span>
               <div className="w-px h-6 bg-border" />
               <span className="text-lg font-bold text-navy">8€</span>

@@ -12,6 +12,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const isBlog = currentPath.startsWith('/blog');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +62,9 @@ const Header = () => {
         className={`mx-auto flex items-center justify-between transition-all duration-500 ease-out ${
           scrolled 
             ? 'max-w-4xl bg-white/95 backdrop-blur-md shadow-lg border border-border/50 rounded-full px-6 py-2.5' 
-            : 'container bg-transparent px-0 py-0'
+            : isBlog
+              ? 'container bg-white/95 backdrop-blur-md shadow-sm border border-border/50 rounded-full px-6 py-2.5'
+              : 'container bg-transparent px-0 py-0'
         }`}
       >
         {/* Logo + Separator + Nav Links */}
@@ -86,12 +89,16 @@ const Header = () => {
               <Link to="/blog" className={navLinkClass(currentPath.startsWith('/blog'))}>
                 Blog
               </Link>
-              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
-                FAQ
-              </button>
-              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
-                Contact
-              </button>
+              {!isBlog && (
+                <>
+                  <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
+                    FAQ
+                  </button>
+                  <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
+                    Contact
+                  </button>
+                </>
+              )}
             </div>
           )}
         </div>
@@ -124,18 +131,22 @@ const Header = () => {
               >
                 Blog
               </Link>
-              <button 
-                onClick={() => scrollToSection('faq-section')}
-                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
-              >
-                FAQ
-              </button>
-              <button 
-                onClick={() => scrollToSection('faq-section')}
-                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
-              >
-                Contact
-              </button>
+              {!isBlog && (
+                <>
+                  <button 
+                    onClick={() => scrollToSection('faq-section')}
+                    className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
+                  >
+                    FAQ
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('faq-section')}
+                    className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-muted text-left"
+                  >
+                    Contact
+                  </button>
+                </>
+              )}
             </div>
           </div>
         )}

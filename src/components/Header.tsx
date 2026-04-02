@@ -89,7 +89,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
                 FAQ
               </button>
-              <button onClick={() => scrollToSection('contact-section')} className={navLinkClass(false)}>
+              <button onClick={() => scrollToSection('faq-section')} className={navLinkClass(false)}>
                 Contact
               </button>
             </div>

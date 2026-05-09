@@ -68,11 +68,11 @@ const FeatureList = () => {
       iconColor: "text-emerald-600",
       description: "Progression de votre valeur digitale."
     },
-    {
-      icon: Heart,
-      text: "Valeur élevée - Prix faible",
-      description: "Une proposition généreuse."
-    },
+     {
+       icon: Heart,
+       text: "Valeur élevée",
+       description: "Une proposition généreuse."
+     },
     {
       icon: Plus,
       text: "Utilité",

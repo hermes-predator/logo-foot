@@ -93,7 +93,7 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
                   <AccordionContent>
-                    Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
+                    Notre pack premium contient plus de 8 800 logos de football en haute qualité, incluant :
                     <br />
                     • Les logos des clubs de football de plus de 60 pays
                     <br />
@@ -191,7 +191,7 @@ const FAQDialog = ({ asLink = false, onContactClose, variant = 'footer' }: FAQDi
             <AccordionItem value="item-3">
               <AccordionTrigger>Que contient exactement le paquet ?</AccordionTrigger>
               <AccordionContent>
-                Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant :
+                Notre pack premium contient plus de 8 800 logos de football en haute qualité, incluant :
                 <br />
                 • Les logos des clubs de football de plus de 60 pays
                 <br />

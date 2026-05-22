@@ -16,7 +16,7 @@ const faqItems = [
   {
     id: "item-3",
     question: "Que contient exactement le paquet ?",
-    answer: "Notre pack premium contient plus de 8 600 logos de football en haute qualité, incluant : les logos des clubs de football de plus de 60 pays, les logos des principales compétitions, les drapeaux nationaux, et bien plus..."
+    answer: "Notre pack premium contient plus de 8 800 logos de football en haute qualité, incluant : les logos des clubs de football de plus de 60 pays, les logos des principales compétitions, les drapeaux nationaux, et bien plus..."
   },
   {
     id: "item-4",

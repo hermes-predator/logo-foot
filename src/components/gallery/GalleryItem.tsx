@@ -189,11 +189,6 @@ const GalleryItem = ({ item, onHover, isHovered, isPriority = false }: GalleryIt
                   <span className="text-blue-400 font-bold">{getCollectionData(item).count}</span>
                   <span className="ml-0.5 truncate">{getCollectionData(item).text}</span>
                 </p>
-                <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-500/20 text-red-400 text-[10px] font-semibold border border-red-500/30">
-                    Valeur : {getCollectionData(item).estimatedValue}€
-                  </span>
-                </div>
               </div>
             </button>
           </DialogTrigger>

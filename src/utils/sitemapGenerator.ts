@@ -244,7 +244,6 @@ export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competition
 const generateMainPages = (today: string) => {
   return `  <url>
     <loc>https://logo-foot.com/</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/" />
@@ -252,14 +251,12 @@ const generateMainPages = (today: string) => {
   </url>
   <url>
     <loc>https://logo-foot.com/blog</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog" />
   </url>
   <url>
     <loc>https://logo-foot.com/gallery</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -338,7 +335,6 @@ const generateCategoryPages = (today: string) => {
   
   return categories.map(cat => `  <url>
     <loc>https://logo-foot.com/blog/category/${cat.name}</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${cat.priority}</priority>
     <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/${cat.name}" />

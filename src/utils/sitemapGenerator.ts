@@ -58,20 +58,20 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
   
   // Pages statiques avec dates réalistes
   const staticPages = [
-    { url: 'https://logo-foot.com/', priority: '1.0', changefreq: 'weekly', lastmod: undefined as string | undefined },
-    { url: 'https://logo-foot.com/blog', priority: '0.8', changefreq: 'daily', lastmod: undefined as string | undefined },
-    { url: 'https://logo-foot.com/blog/category/logos', priority: '0.8', changefreq: 'weekly', lastmod: '2024-12-01' },
-    { url: 'https://logo-foot.com/blog/category/technical', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-15' },
-    { url: 'https://logo-foot.com/blog/category/history', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-10' },
-    { url: 'https://logo-foot.com/blog/category/analysis', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-20' },
-    { url: 'https://logo-foot.com/gallery/country/france', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/england', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/spain', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/italy', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/germany', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/netherlands', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/portugal', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
-    { url: 'https://logo-foot.com/gallery/country/belgium', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/', priority: '1.0', changefreq: 'weekly', lastmod: undefined as string | undefined },
+    { url: 'https://www.logo-foot.com/blog', priority: '0.8', changefreq: 'daily', lastmod: undefined as string | undefined },
+    { url: 'https://www.logo-foot.com/blog/category/logos', priority: '0.8', changefreq: 'weekly', lastmod: '2024-12-01' },
+    { url: 'https://www.logo-foot.com/blog/category/technical', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-15' },
+    { url: 'https://www.logo-foot.com/blog/category/history', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-10' },
+    { url: 'https://www.logo-foot.com/blog/category/analysis', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-20' },
+    { url: 'https://www.logo-foot.com/gallery/country/france', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/england', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/spain', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/italy', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/germany', priority: '0.7', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/netherlands', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/portugal', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
+    { url: 'https://www.logo-foot.com/gallery/country/belgium', priority: '0.6', changefreq: 'monthly', lastmod: '2024-10-15' },
   ];
   
   // Ajouter les pages statiques
@@ -93,8 +93,7 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
       xml += `    <xhtml:link rel="alternate" hrefLang="fr" href="${page.url}" />\n`;
       
       // Ajouter d'autres langues pour les pages principales
-      if (page.url === 'https://logo-foot.com/' || page.url === 'https://logo-foot.com/blog') {
-        xml += `    <xhtml:link rel="alternate" hrefLang="en" href="${page.url.replace('.com', '.com/en')}" />\n`;
+      if (page.url === 'https://www.logo-foot.com/' || page.url === 'https://www.logo-foot.com/blog') {
         xml += `    <xhtml:link rel="alternate" hrefLang="x-default" href="${page.url}" />\n`;
       }
     }
@@ -104,11 +103,11 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
   
   // Ajouter les articles de blog
   for (const post of sortedPosts) {
-    const postUrl = `https://logo-foot.com/blog/${post.id}`;
+    const postUrl = `https://www.logo-foot.com/blog/${post.id}`;
     const postDate = new Date(post.date).toISOString().split('T')[0];
     const imageUrl = post.galleryImageId ? 
-      `https://logo-foot.com/blog-images/${post.id}.png` : 
-      'https://logo-foot.com/og-image.png';
+      `https://www.logo-foot.com/blog-images/${post.id}.png` : 
+      'https://www.logo-foot.com/og-image.png';
     
     // Déterminer la priorité en fonction du contenu
     let priority = '0.5';
@@ -243,20 +242,20 @@ export const generateSpecializedSitemap = (type: 'main' | 'clubs' | 'competition
 // Fonctions utilitaires pour générer chaque type de sitemap
 const generateMainPages = (today: string) => {
   return `  <url>
-    <loc>https://logo-foot.com/</loc>
+    <loc>https://www.logo-foot.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/" />
-    <xhtml:link rel="alternate" hrefLang="x-default" href="https://logo-foot.com/" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/" />
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://www.logo-foot.com/" />
   </url>
   <url>
-    <loc>https://logo-foot.com/blog</loc>
+    <loc>https://www.logo-foot.com/blog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/blog" />
   </url>
   <url>
-    <loc>https://logo-foot.com/gallery</loc>
+    <loc>https://www.logo-foot.com/gallery</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -278,13 +277,13 @@ const generateClubPages = (today: string, blogPosts: BlogPost[]) => {
   ).slice(0, 20); // Limiter à 20 clubs majeurs
   
   return majorClubs.map(post => `  <url>
-    <loc>https://logo-foot.com/blog/${post.id}</loc>
+    <loc>https://www.logo-foot.com/blog/${post.id}</loc>
     <lastmod>${post.date}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/${post.id}" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/blog/${post.id}" />
     <image:image>
-      <image:loc>https://logo-foot.com/blog-images/${post.id}.png</image:loc>
+      <image:loc>https://www.logo-foot.com/blog-images/${post.id}.png</image:loc>
       <image:title>${post.title.split(':')[0].trim()}</image:title>
     </image:image>
   </url>`).join('\n');
@@ -299,11 +298,11 @@ const generateCompetitionPages = (today: string, blogPosts: BlogPost[]) => {
   ).slice(0, 15);
   
   return competitions.map(post => `  <url>
-    <loc>https://logo-foot.com/blog/${post.id}</loc>
+    <loc>https://www.logo-foot.com/blog/${post.id}</loc>
     <lastmod>${post.date}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/${post.id}" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/blog/${post.id}" />
   </url>`).join('\n');
 };
 
@@ -311,13 +310,13 @@ const generateCountryPages = (today: string) => {
   const countries = ['france', 'england', 'spain', 'italy', 'germany', 'netherlands', 'portugal', 'belgium'];
   
   return countries.map(country => `  <url>
-    <loc>https://logo-foot.com/gallery/country/${country}</loc>
+    <loc>https://www.logo-foot.com/gallery/country/${country}</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/gallery/country/${country}" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/gallery/country/${country}" />
     <image:image>
-      <image:loc>https://logo-foot.com/country-images/${country}.png</image:loc>
+      <image:loc>https://www.logo-foot.com/country-images/${country}.png</image:loc>
       <image:title>Logos des clubs ${country === 'france' ? 'français' : country === 'england' ? 'anglais' : country === 'spain' ? 'espagnols' : country}</image:title>
     </image:image>
   </url>`).join('\n');
@@ -334,9 +333,9 @@ const generateCategoryPages = (today: string) => {
   ];
   
   return categories.map(cat => `  <url>
-    <loc>https://logo-foot.com/blog/category/${cat.name}</loc>
+    <loc>https://www.logo-foot.com/blog/category/${cat.name}</loc>
     <changefreq>weekly</changefreq>
     <priority>${cat.priority}</priority>
-    <xhtml:link rel="alternate" hrefLang="fr" href="https://logo-foot.com/blog/category/${cat.name}" />
+    <xhtml:link rel="alternate" hrefLang="fr" href="https://www.logo-foot.com/blog/category/${cat.name}" />
   </url>`).join('\n');
 };

@@ -74,9 +74,9 @@ const BlogHeader = () => {
                   <Download className="w-3.5 h-3.5" />
                   <span>+8 800 logos disponibles</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold text-white leading-tight">
+                <h1 className="text-xl md:text-2xl font-bold text-white leading-tight">
                   Tous les logos des clubs de football, en un fichier.
-                </h2>
+                </h1>
                 <p className="text-sm text-white/50 leading-relaxed">
                   Fichier ZIP parfaitement organisé par pays. Téléchargement instantané après paiement.
                 </p>

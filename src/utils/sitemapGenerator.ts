@@ -33,8 +33,6 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
     blogPosts = []
   } = options;
   
-  const today = new Date().toISOString().split('T')[0];
-  
   // Trier les articles par date
   const sortedPosts = [...blogPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -60,8 +58,8 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
   
   // Pages statiques avec dates réalistes
   const staticPages = [
-    { url: 'https://logo-foot.com/', priority: '1.0', changefreq: 'weekly', lastmod: today },
-    { url: 'https://logo-foot.com/blog', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { url: 'https://logo-foot.com/', priority: '1.0', changefreq: 'weekly', lastmod: undefined as string | undefined },
+    { url: 'https://logo-foot.com/blog', priority: '0.8', changefreq: 'daily', lastmod: undefined as string | undefined },
     { url: 'https://logo-foot.com/blog/category/logos', priority: '0.8', changefreq: 'weekly', lastmod: '2024-12-01' },
     { url: 'https://logo-foot.com/blog/category/technical', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-15' },
     { url: 'https://logo-foot.com/blog/category/history', priority: '0.7', changefreq: 'weekly', lastmod: '2024-11-10' },
@@ -81,7 +79,7 @@ export const generateSitemap = (options: SitemapOptions = {}) => {
     xml += '  <url>\n';
     xml += `    <loc>${page.url}</loc>\n`;
     
-    if (includeLastmod) {
+    if (includeLastmod && page.lastmod) {
       xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
     }
     

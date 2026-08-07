@@ -137,9 +137,9 @@ const PaymentSuccess = () => {
                 <div className="flex justify-center mb-4">
                   <CheckCircle className="h-16 w-16 text-primary" />
                 </div>
-                <CardTitle className="text-3xl text-primary mb-2">
+                <h1 className="text-3xl font-semibold leading-none tracking-tight text-primary mb-2">
                   Paiement confirmé ! 🎉
-                </CardTitle>
+                </h1>
                 <CardDescription className="text-lg">
                   Votre paiement de {paymentData?.amount !== undefined ? new Intl.NumberFormat('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(paymentData.amount) + '€' : '8€'} a été traité avec succès.
                 </CardDescription>
